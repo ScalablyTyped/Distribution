@@ -20,7 +20,7 @@ object libContextMod {
   @js.native
   val ArtboardContext: Context[State] = js.native
   
-  inline def ArtboardProvider(hasChildrenViewportStyle: ArtboardProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ArtboardProvider")(hasChildrenViewportStyle.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def ArtboardProvider(param0: ArtboardProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ArtboardProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def useWindowDimensions(): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowDimensions")().asInstanceOf[Scale]
   

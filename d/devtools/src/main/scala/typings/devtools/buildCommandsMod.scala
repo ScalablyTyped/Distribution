@@ -41,43 +41,43 @@ object buildCommandsMod {
   
   inline def acceptAlert(): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("acceptAlert")().asInstanceOf[js.Promise[Null]]
   
-  inline def addCookie(hasCookie: Cookie): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("addCookie")(hasCookie.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def addCookie(param1: Cookie): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("addCookie")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
   
   inline def back(): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("back")().asInstanceOf[js.Promise[Null]]
   
   inline def closeWindow(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeWindow")().asInstanceOf[js.Promise[String]]
   
-  inline def createWindow(hasType: Type): js.Promise[Handle] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWindow")(hasType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Handle]]
+  inline def createWindow(param1: Type): js.Promise[Handle] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWindow")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Handle]]
   
   inline def deleteAllCookies(): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAllCookies")().asInstanceOf[js.Promise[Null]]
   
-  inline def deleteCookie(hasName: Name): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteCookie")(hasName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def deleteCookie(param1: Name): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteCookie")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
   
   inline def deleteSession(): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteSession")().asInstanceOf[js.Promise[Null]]
   
   inline def dismissAlert(): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAlert")().asInstanceOf[js.Promise[Null]]
   
-  inline def elementClear(hasElementId: ElementId): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("elementClear")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def elementClear(param1: ElementId): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("elementClear")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
   
-  inline def elementClick(hasElementId: ElementId): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("elementClick")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def elementClick(param1: ElementId): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("elementClick")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
-  inline def elementSendKeys(hasElementIdText: Text): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("elementSendKeys")(hasElementIdText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def elementSendKeys(param1: Text): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("elementSendKeys")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
   
-  inline def executeAsyncScript(hasScriptArgs: Args): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeAsyncScript")(hasScriptArgs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def executeAsyncScript(param1: Args): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeAsyncScript")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
-  inline def executeScript(hasScriptArgs: Args): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(hasScriptArgs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def executeScript(param1: Args): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
-  inline def findElement(hasUsingValue: Using): js.Promise[ElementReference | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(hasUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementReference | js.Error]]
+  inline def findElement(param1: Using): js.Promise[ElementReference | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementReference | js.Error]]
   
-  inline def findElementFromElement(hasElementIdUsingValue: Value): js.Promise[ElementReference | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElementFromElement")(hasElementIdUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementReference | js.Error]]
+  inline def findElementFromElement(param1: Value): js.Promise[ElementReference | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElementFromElement")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementReference | js.Error]]
   
-  inline def findElementFromShadowRoot(hasShadowIdUsingValue: ShadowId): js.Promise[ElementReference | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElementFromShadowRoot")(hasShadowIdUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementReference | js.Error]]
+  inline def findElementFromShadowRoot(param1: ShadowId): js.Promise[ElementReference | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElementFromShadowRoot")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementReference | js.Error]]
   
-  inline def findElements(hasUsingValue: Using): js.Promise[js.Array[ElementReference]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElements")(hasUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ElementReference]]]
+  inline def findElements(param1: Using): js.Promise[js.Array[ElementReference]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElements")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ElementReference]]]
   
-  inline def findElementsFromElement(hasElementIdUsingValue: Value): js.Promise[js.Array[ElementReference]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElementsFromElement")(hasElementIdUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ElementReference]]]
+  inline def findElementsFromElement(param1: Value): js.Promise[js.Array[ElementReference]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElementsFromElement")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ElementReference]]]
   
-  inline def findElementsFromShadowRoot(hasShadowIdUsingValue: ShadowId): js.Promise[js.Array[ElementReference]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElementsFromShadowRoot")(hasShadowIdUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ElementReference]]]
+  inline def findElementsFromShadowRoot(param1: ShadowId): js.Promise[js.Array[ElementReference]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findElementsFromShadowRoot")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ElementReference]]]
   
   inline def forward(): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")().asInstanceOf[js.Promise[Null]]
   
@@ -87,25 +87,25 @@ object buildCommandsMod {
   
   inline def getAllCookies(): js.Promise[js.Array[typings.devtoolsProtocol.mod.Protocol.Network.Cookie]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllCookies")().asInstanceOf[js.Promise[js.Array[typings.devtoolsProtocol.mod.Protocol.Network.Cookie]]]
   
-  inline def getElementAttribute(hasElementIdName: ElementIdName): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementAttribute")(hasElementIdName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
+  inline def getElementAttribute(param1: ElementIdName): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementAttribute")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
   
-  inline def getElementCSSValue(hasElementIdPropertyName: PropertyName): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementCSSValue")(hasElementIdPropertyName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getElementCSSValue(param1: PropertyName): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementCSSValue")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  inline def getElementComputedLabel(hasElementId: ElementId): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementComputedLabel")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def getElementComputedLabel(param1: ElementId): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementComputedLabel")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  inline def getElementComputedRole(hasElementId: ElementId): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementComputedRole")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getElementComputedRole(param1: ElementId): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementComputedRole")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  inline def getElementProperty(hasElementIdName: ElementIdName): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementProperty")(hasElementIdName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def getElementProperty(param1: ElementIdName): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementProperty")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
-  inline def getElementRect(hasElementId: ElementId): js.Promise[Height] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementRect")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Height]]
+  inline def getElementRect(param1: ElementId): js.Promise[Height] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementRect")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Height]]
   
-  inline def getElementShadowRoot(hasElementId: ElementId): js.Promise[Shadow606611e4a52e4f735466cecf] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementShadowRoot")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Shadow606611e4a52e4f735466cecf]]
+  inline def getElementShadowRoot(param1: ElementId): js.Promise[Shadow606611e4a52e4f735466cecf] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementShadowRoot")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Shadow606611e4a52e4f735466cecf]]
   
-  inline def getElementTagName(hasElementId: ElementId): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementTagName")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getElementTagName(param1: ElementId): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementTagName")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  inline def getElementText(hasElementId: ElementId): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementText")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getElementText(param1: ElementId): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementText")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  inline def getNamedCookie(hasName: Name): js.Promise[typings.devtoolsProtocol.mod.Protocol.Network.Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamedCookie")(hasName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.devtoolsProtocol.mod.Protocol.Network.Cookie]]
+  inline def getNamedCookie(param1: Name): js.Promise[typings.devtoolsProtocol.mod.Protocol.Network.Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamedCookie")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.devtoolsProtocol.mod.Protocol.Network.Cookie]]
   
   inline def getPageSource(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageSource")().asInstanceOf[js.Promise[String]]
   
@@ -121,35 +121,35 @@ object buildCommandsMod {
   
   inline def getWindowRect(): js.Promise[Width] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowRect")().asInstanceOf[js.Promise[Width]]
   
-  inline def isElementEnabled(hasElementId: ElementId): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementEnabled")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def isElementEnabled(param1: ElementId): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementEnabled")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  inline def isElementSelected(hasElementId: ElementId): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementSelected")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def isElementSelected(param1: ElementId): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementSelected")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  inline def navigateTo(hasUrl: Url): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(hasUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def navigateTo(param1: Url): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
   
-  inline def newSession(hasCapabilities: Capabilities): js.Promise[SessionId] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(hasCapabilities.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SessionId]]
+  inline def newSession(param1: Capabilities): js.Promise[SessionId] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SessionId]]
   
-  inline def performActions(hasActions: Actions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("performActions")(hasActions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def performActions(param1: Actions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("performActions")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def refresh(): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[js.Promise[Null]]
   
   inline def releaseActions(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseActions")().asInstanceOf[js.Promise[Unit]]
   
-  inline def sendAlertText(hasText: TextString): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAlertText")(hasText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def sendAlertText(param1: TextString): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAlertText")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
   
-  inline def setTimeouts(hasImplicitPageLoadScript: PageLoad): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("setTimeouts")(hasImplicitPageLoadScript.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def setTimeouts(param1: PageLoad): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("setTimeouts")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
   
   inline def setWindowRect(params: HeightWidth): js.Promise[HeightWidth] = ^.asInstanceOf[js.Dynamic].applyDynamic("setWindowRect")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HeightWidth]]
   
   inline def status(): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("status")().asInstanceOf[js.Promise[Message]]
   
-  inline def switchToFrame(hasId: Id): js.Promise[IdNull | Id] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchToFrame")(hasId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IdNull | Id]]
+  inline def switchToFrame(param1: Id): js.Promise[IdNull | Id] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchToFrame")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IdNull | Id]]
   
   inline def switchToParentFrame(): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchToParentFrame")().asInstanceOf[js.Promise[Null]]
   
-  inline def switchToWindow(hasHandle: HandleString): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchToWindow")(hasHandle.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def switchToWindow(param1: HandleString): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchToWindow")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  inline def takeElementScreenshot(hasElementId: ElementId): js.Promise[String | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeElementScreenshot")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Buffer]]
+  inline def takeElementScreenshot(param1: ElementId): js.Promise[String | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeElementScreenshot")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Buffer]]
   
   inline def takeScreenshot(): js.Promise[String | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeScreenshot")().asInstanceOf[js.Promise[String | Buffer]]
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "use-sync-external-store"
-version := "0.0-dt-20220624Z-5d9da2"
-scalaVersion := "3.1.2"
+version := "0.0-dt-20220624Z-977f2f"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -14,7 +14,7 @@ object mod {
   inline def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   
   inline def detect(): js.Promise[PM] = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")().asInstanceOf[js.Promise[PM]]
-  inline def detect(hasCwd: Cwd): js.Promise[PM] = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(hasCwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PM]]
+  inline def detect(param0: Cwd): js.Promise[PM] = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PM]]
   
   inline def getNpmVersion(pm: PM): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNpmVersion")(pm.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   

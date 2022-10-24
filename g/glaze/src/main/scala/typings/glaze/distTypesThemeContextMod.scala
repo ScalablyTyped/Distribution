@@ -13,7 +13,7 @@ object distTypesThemeContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ThemeProvider(hasThemeChildren: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasThemeChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ThemeProvider(param0: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useTheme(): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[RuntimeTheme]
   

@@ -18,7 +18,7 @@ object libHeaderHeaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RecordType](hasStickyOffsetsColumnsFlattenColumnsOnHeaderRow: HeaderProps[RecordType]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStickyOffsetsColumnsFlattenColumnsOnHeaderRow.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default[RecordType](param0: HeaderProps[RecordType]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait HeaderProps[RecordType] extends StObject {
     

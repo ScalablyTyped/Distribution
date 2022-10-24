@@ -12,7 +12,5 @@ object mapMarkerPinHeadMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasSizeLabelStartEnhancerEndEnhancerColorBackgroundTypeAnchorTypeNeedleLabelEnhancerContentLabelEnhancerPositionBadgeEnhancerSizeBadgeEnhancerContentOverrides: PinHeadProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSizeLabelStartEnhancerEndEnhancerColorBackgroundTypeAnchorTypeNeedleLabelEnhancerContentLabelEnhancerPositionBadgeEnhancerSizeBadgeEnhancerContentOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: PinHeadProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

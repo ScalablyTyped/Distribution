@@ -20,7 +20,7 @@ object libTypescriptSrcLinkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[ParamList /* <: RootParamList */](hasToActionRest: Props[ParamList]): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToActionRest.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
+  inline def default[ParamList /* <: RootParamList */](param0: Props[ParamList]): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
   
   trait Props[ParamList /* <: RootParamList */]
     extends StObject

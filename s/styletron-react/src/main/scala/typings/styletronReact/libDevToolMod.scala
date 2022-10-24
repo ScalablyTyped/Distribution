@@ -20,7 +20,7 @@ object libDevToolMod {
     
     /* private */ var counter: Any = js.native
     
-    def debug(hasStackIndexStackInfo: StackIndex): String = js.native
+    def debug(param0: StackIndex): String = js.native
     
     /* private */ var worker: Any = js.native
   }

@@ -17,7 +17,7 @@ object distImageSrcSvgImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerSvgImage(hasSrcSizeWidthHeightStrokeFillAriaLabelForwardedRefRest: InnerSvgImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerSvgImage")(hasSrcSizeWidthHeightStrokeFillAriaLabelForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerSvgImage(param0: InnerSvgImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerSvgImage")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/image/src/SvgImage", "SvgImage")
   @js.native

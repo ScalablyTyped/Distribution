@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.swcCore.typesMod.UmdConfig
   - typings.swcCore.typesMod.AmdConfig
   - typings.swcCore.typesMod.NodeNextConfig
+  - typings.swcCore.typesMod.SystemjsConfig
 */
 trait ModuleConfig extends StObject
 object ModuleConfig {
@@ -36,6 +37,12 @@ object ModuleConfig {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("nodenext")
     __obj.asInstanceOf[typings.swcCore.typesMod.NodeNextConfig]
+  }
+  
+  inline def SystemjsConfig(): typings.swcCore.typesMod.SystemjsConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("systemjs")
+    __obj.asInstanceOf[typings.swcCore.typesMod.SystemjsConfig]
   }
   
   inline def UmdConfig(): typings.swcCore.typesMod.UmdConfig = {

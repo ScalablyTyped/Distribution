@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "registry-auth-token"
-version := "5.0.1-09b42e"
-scalaVersion := "3.1.2"
+version := "5.0.1-523a21"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

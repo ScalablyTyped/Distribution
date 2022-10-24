@@ -11,7 +11,7 @@ object libIntegrationsCordovaProjectMod {
   val ^ : js.Any = js.native
   
   inline def getPackagePath(appName: String, platform: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackagePath")(appName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def getPackagePath(appName: String, platform: String, hasEmulatorRelease: GetPackagePathOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackagePath")(appName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], hasEmulatorRelease.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getPackagePath(appName: String, platform: String, param2: GetPackagePathOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackagePath")(appName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def getPlatforms(projectDir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   

@@ -21,7 +21,7 @@ object esmPopupMod extends Shortcut {
   
   @JSImport("react-widgets/esm/Popup", "StaticContainer")
   @js.native
-  val StaticContainer: MemoExoticComponent[js.Function1[/* hasChildren */ StaticContainerProps, ReactElement]] = js.native
+  val StaticContainer: MemoExoticComponent[js.Function1[/* param0 */ StaticContainerProps, ReactElement]] = js.native
   
   trait PopupProps
     extends StObject

@@ -70,11 +70,11 @@ inline def HotkeysContext: Context[HotkeysContextInstance] = ^.asInstanceOf[js.D
 
 inline def HotkeysDialog2: FC[HotkeysDialog2Props] = ^.asInstanceOf[js.Dynamic].selectDynamic("HotkeysDialog2").asInstanceOf[FC[HotkeysDialog2Props]]
 
-inline def HotkeysProvider(hasChildrenDialogPropsRenderDialogValue: HotkeysProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysProvider")(hasChildrenDialogPropsRenderDialogValue.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def HotkeysProvider(param0: HotkeysProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 inline def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): DisplayName & T = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[DisplayName & T]
 
-inline def HotkeysTarget2(hasChildrenHotkeysOptions: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(hasChildrenHotkeysOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def HotkeysTarget2(param0: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 inline def Label: FC[HTMLPropsHTMLLabelElement] = ^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[FC[HTMLPropsHTMLLabelElement]]
 
@@ -84,7 +84,7 @@ inline def PanelStack2: PanelStack2Component = ^.asInstanceOf[js.Dynamic].select
 
 inline def PortalContext: Context[PortalContextOptions] = ^.asInstanceOf[js.Dynamic].selectDynamic("PortalContext").asInstanceOf[Context[PortalContextOptions]]
 
-inline def PortalProvider(hasChildrenOptions: PropsWithChildren[PortalContextOptions]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PortalProvider")(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def PortalProvider(param0: PropsWithChildren[PortalContextOptions]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PortalProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 inline def Pre: FC[HTMLPropsHTMLElementIElem] = ^.asInstanceOf[js.Dynamic].selectDynamic("Pre").asInstanceOf[FC[HTMLPropsHTMLElementIElem]]
 

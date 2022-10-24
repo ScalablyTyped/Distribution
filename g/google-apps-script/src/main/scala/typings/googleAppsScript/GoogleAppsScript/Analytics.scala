@@ -383,149 +383,6 @@ object Analytics {
     __obj.asInstanceOf[Analytics]
   }
   
-  extension [Self <: Analytics](x: Self) {
-    
-    inline def setData(value: DataCollection): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
-    
-    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
-    
-    inline def setManagement(value: ManagementCollection): Self = StObject.set(x, "Management", value.asInstanceOf[js.Any])
-    
-    inline def setManagementUndefined: Self = StObject.set(x, "Management", js.undefined)
-    
-    inline def setMetadata(value: MetadataCollection): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
-    
-    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
-    
-    inline def setNewAccount(value: () => Account): Self = StObject.set(x, "newAccount", js.Any.fromFunction0(value))
-    
-    inline def setNewAccountChildLink(value: () => AccountChildLink): Self = StObject.set(x, "newAccountChildLink", js.Any.fromFunction0(value))
-    
-    inline def setNewAccountPermissions(value: () => AccountPermissions): Self = StObject.set(x, "newAccountPermissions", js.Any.fromFunction0(value))
-    
-    inline def setNewAccountRef(value: () => AccountRef): Self = StObject.set(x, "newAccountRef", js.Any.fromFunction0(value))
-    
-    inline def setNewAccountTicket(value: () => AccountTicket): Self = StObject.set(x, "newAccountTicket", js.Any.fromFunction0(value))
-    
-    inline def setNewAccountTreeRequest(value: () => AccountTreeRequest): Self = StObject.set(x, "newAccountTreeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAdWordsAccount(value: () => AdWordsAccount): Self = StObject.set(x, "newAdWordsAccount", js.Any.fromFunction0(value))
-    
-    inline def setNewAnalyticsDataimportDeleteUploadDataRequest(value: () => AnalyticsDataimportDeleteUploadDataRequest): Self = StObject.set(x, "newAnalyticsDataimportDeleteUploadDataRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCustomDimension(value: () => CustomDimension): Self = StObject.set(x, "newCustomDimension", js.Any.fromFunction0(value))
-    
-    inline def setNewCustomDimensionParentLink(value: () => CustomDimensionParentLink): Self = StObject.set(x, "newCustomDimensionParentLink", js.Any.fromFunction0(value))
-    
-    inline def setNewCustomMetric(value: () => CustomMetric): Self = StObject.set(x, "newCustomMetric", js.Any.fromFunction0(value))
-    
-    inline def setNewCustomMetricParentLink(value: () => CustomMetricParentLink): Self = StObject.set(x, "newCustomMetricParentLink", js.Any.fromFunction0(value))
-    
-    inline def setNewEntityAdWordsLink(value: () => EntityAdWordsLink): Self = StObject.set(x, "newEntityAdWordsLink", js.Any.fromFunction0(value))
-    
-    inline def setNewEntityAdWordsLinkEntity(value: () => EntityAdWordsLinkEntity): Self = StObject.set(x, "newEntityAdWordsLinkEntity", js.Any.fromFunction0(value))
-    
-    inline def setNewEntityUserLink(value: () => EntityUserLink): Self = StObject.set(x, "newEntityUserLink", js.Any.fromFunction0(value))
-    
-    inline def setNewEntityUserLinkEntity(value: () => EntityUserLinkEntity): Self = StObject.set(x, "newEntityUserLinkEntity", js.Any.fromFunction0(value))
-    
-    inline def setNewEntityUserLinkPermissions(value: () => EntityUserLinkPermissions): Self = StObject.set(x, "newEntityUserLinkPermissions", js.Any.fromFunction0(value))
-    
-    inline def setNewExperiment(value: () => Experiment): Self = StObject.set(x, "newExperiment", js.Any.fromFunction0(value))
-    
-    inline def setNewExperimentParentLink(value: () => ExperimentParentLink): Self = StObject.set(x, "newExperimentParentLink", js.Any.fromFunction0(value))
-    
-    inline def setNewExperimentVariations(value: () => ExperimentVariations): Self = StObject.set(x, "newExperimentVariations", js.Any.fromFunction0(value))
-    
-    inline def setNewFilter(value: () => Filter): Self = StObject.set(x, "newFilter", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterAdvancedDetails(value: () => FilterAdvancedDetails): Self = StObject.set(x, "newFilterAdvancedDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "newFilterExpression", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterLowercaseDetails(value: () => FilterLowercaseDetails): Self = StObject.set(x, "newFilterLowercaseDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterParentLink(value: () => FilterParentLink): Self = StObject.set(x, "newFilterParentLink", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterRef(value: () => FilterRef): Self = StObject.set(x, "newFilterRef", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterSearchAndReplaceDetails(value: () => FilterSearchAndReplaceDetails): Self = StObject.set(x, "newFilterSearchAndReplaceDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterUppercaseDetails(value: () => FilterUppercaseDetails): Self = StObject.set(x, "newFilterUppercaseDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewGoal(value: () => Goal): Self = StObject.set(x, "newGoal", js.Any.fromFunction0(value))
-    
-    inline def setNewGoalEventDetails(value: () => GoalEventDetails): Self = StObject.set(x, "newGoalEventDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewGoalEventDetailsEventConditions(value: () => GoalEventDetailsEventConditions): Self = StObject.set(x, "newGoalEventDetailsEventConditions", js.Any.fromFunction0(value))
-    
-    inline def setNewGoalParentLink(value: () => GoalParentLink): Self = StObject.set(x, "newGoalParentLink", js.Any.fromFunction0(value))
-    
-    inline def setNewGoalUrlDestinationDetails(value: () => GoalUrlDestinationDetails): Self = StObject.set(x, "newGoalUrlDestinationDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewGoalUrlDestinationDetailsSteps(value: () => GoalUrlDestinationDetailsSteps): Self = StObject.set(x, "newGoalUrlDestinationDetailsSteps", js.Any.fromFunction0(value))
-    
-    inline def setNewGoalVisitNumPagesDetails(value: () => GoalVisitNumPagesDetails): Self = StObject.set(x, "newGoalVisitNumPagesDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewGoalVisitTimeOnSiteDetails(value: () => GoalVisitTimeOnSiteDetails): Self = StObject.set(x, "newGoalVisitTimeOnSiteDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewHashClientIdRequest(value: () => HashClientIdRequest): Self = StObject.set(x, "newHashClientIdRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewIncludeConditions(value: () => IncludeConditions): Self = StObject.set(x, "newIncludeConditions", js.Any.fromFunction0(value))
-    
-    inline def setNewLinkedForeignAccount(value: () => LinkedForeignAccount): Self = StObject.set(x, "newLinkedForeignAccount", js.Any.fromFunction0(value))
-    
-    inline def setNewProfile(value: () => Profile): Self = StObject.set(x, "newProfile", js.Any.fromFunction0(value))
-    
-    inline def setNewProfileChildLink(value: () => ProfileChildLink): Self = StObject.set(x, "newProfileChildLink", js.Any.fromFunction0(value))
-    
-    inline def setNewProfileFilterLink(value: () => ProfileFilterLink): Self = StObject.set(x, "newProfileFilterLink", js.Any.fromFunction0(value))
-    
-    inline def setNewProfileParentLink(value: () => ProfileParentLink): Self = StObject.set(x, "newProfileParentLink", js.Any.fromFunction0(value))
-    
-    inline def setNewProfilePermissions(value: () => ProfilePermissions): Self = StObject.set(x, "newProfilePermissions", js.Any.fromFunction0(value))
-    
-    inline def setNewProfileRef(value: () => ProfileRef): Self = StObject.set(x, "newProfileRef", js.Any.fromFunction0(value))
-    
-    inline def setNewRemarketingAudience(value: () => RemarketingAudience): Self = StObject.set(x, "newRemarketingAudience", js.Any.fromFunction0(value))
-    
-    inline def setNewRemarketingAudienceAudienceDefinition(value: () => RemarketingAudienceAudienceDefinition): Self = StObject.set(x, "newRemarketingAudienceAudienceDefinition", js.Any.fromFunction0(value))
-    
-    inline def setNewRemarketingAudienceStateBasedAudienceDefinition(value: () => RemarketingAudienceStateBasedAudienceDefinition): Self = StObject.set(x, "newRemarketingAudienceStateBasedAudienceDefinition", js.Any.fromFunction0(value))
-    
-    inline def setNewRemarketingAudienceStateBasedAudienceDefinitionExcludeConditions(value: () => RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions): Self = StObject.set(x, "newRemarketingAudienceStateBasedAudienceDefinitionExcludeConditions", js.Any.fromFunction0(value))
-    
-    inline def setNewUnsampledReport(value: () => UnsampledReport): Self = StObject.set(x, "newUnsampledReport", js.Any.fromFunction0(value))
-    
-    inline def setNewUnsampledReportCloudStorageDownloadDetails(value: () => UnsampledReportCloudStorageDownloadDetails): Self = StObject.set(x, "newUnsampledReportCloudStorageDownloadDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewUnsampledReportDriveDownloadDetails(value: () => UnsampledReportDriveDownloadDetails): Self = StObject.set(x, "newUnsampledReportDriveDownloadDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewUserDeletionRequest(value: () => UserDeletionRequest): Self = StObject.set(x, "newUserDeletionRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUserDeletionRequestId(value: () => UserDeletionRequestId): Self = StObject.set(x, "newUserDeletionRequestId", js.Any.fromFunction0(value))
-    
-    inline def setNewUserRef(value: () => UserRef): Self = StObject.set(x, "newUserRef", js.Any.fromFunction0(value))
-    
-    inline def setNewWebPropertyRef(value: () => WebPropertyRef): Self = StObject.set(x, "newWebPropertyRef", js.Any.fromFunction0(value))
-    
-    inline def setNewWebproperty(value: () => Webproperty): Self = StObject.set(x, "newWebproperty", js.Any.fromFunction0(value))
-    
-    inline def setNewWebpropertyChildLink(value: () => WebpropertyChildLink): Self = StObject.set(x, "newWebpropertyChildLink", js.Any.fromFunction0(value))
-    
-    inline def setNewWebpropertyParentLink(value: () => WebpropertyParentLink): Self = StObject.set(x, "newWebpropertyParentLink", js.Any.fromFunction0(value))
-    
-    inline def setNewWebpropertyPermissions(value: () => WebpropertyPermissions): Self = StObject.set(x, "newWebpropertyPermissions", js.Any.fromFunction0(value))
-    
-    inline def setProvisioning(value: ProvisioningCollection): Self = StObject.set(x, "Provisioning", value.asInstanceOf[js.Any])
-    
-    inline def setProvisioningUndefined: Self = StObject.set(x, "Provisioning", js.undefined)
-    
-    inline def setUserDeletion(value: UserDeletionCollection): Self = StObject.set(x, "UserDeletion", value.asInstanceOf[js.Any])
-    
-    inline def setUserDeletionUndefined: Self = StObject.set(x, "UserDeletion", js.undefined)
-  }
-  
   object Collection {
     
     object Data {
@@ -1288,6 +1145,149 @@ object Analytics {
         inline def setUserDeletionRequestUndefined: Self = StObject.set(x, "UserDeletionRequest", js.undefined)
       }
     }
+  }
+  
+  extension [Self <: Analytics](x: Self) {
+    
+    inline def setData(value: DataCollection): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    
+    inline def setManagement(value: ManagementCollection): Self = StObject.set(x, "Management", value.asInstanceOf[js.Any])
+    
+    inline def setManagementUndefined: Self = StObject.set(x, "Management", js.undefined)
+    
+    inline def setMetadata(value: MetadataCollection): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    
+    inline def setNewAccount(value: () => Account): Self = StObject.set(x, "newAccount", js.Any.fromFunction0(value))
+    
+    inline def setNewAccountChildLink(value: () => AccountChildLink): Self = StObject.set(x, "newAccountChildLink", js.Any.fromFunction0(value))
+    
+    inline def setNewAccountPermissions(value: () => AccountPermissions): Self = StObject.set(x, "newAccountPermissions", js.Any.fromFunction0(value))
+    
+    inline def setNewAccountRef(value: () => AccountRef): Self = StObject.set(x, "newAccountRef", js.Any.fromFunction0(value))
+    
+    inline def setNewAccountTicket(value: () => AccountTicket): Self = StObject.set(x, "newAccountTicket", js.Any.fromFunction0(value))
+    
+    inline def setNewAccountTreeRequest(value: () => AccountTreeRequest): Self = StObject.set(x, "newAccountTreeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAdWordsAccount(value: () => AdWordsAccount): Self = StObject.set(x, "newAdWordsAccount", js.Any.fromFunction0(value))
+    
+    inline def setNewAnalyticsDataimportDeleteUploadDataRequest(value: () => AnalyticsDataimportDeleteUploadDataRequest): Self = StObject.set(x, "newAnalyticsDataimportDeleteUploadDataRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCustomDimension(value: () => CustomDimension): Self = StObject.set(x, "newCustomDimension", js.Any.fromFunction0(value))
+    
+    inline def setNewCustomDimensionParentLink(value: () => CustomDimensionParentLink): Self = StObject.set(x, "newCustomDimensionParentLink", js.Any.fromFunction0(value))
+    
+    inline def setNewCustomMetric(value: () => CustomMetric): Self = StObject.set(x, "newCustomMetric", js.Any.fromFunction0(value))
+    
+    inline def setNewCustomMetricParentLink(value: () => CustomMetricParentLink): Self = StObject.set(x, "newCustomMetricParentLink", js.Any.fromFunction0(value))
+    
+    inline def setNewEntityAdWordsLink(value: () => EntityAdWordsLink): Self = StObject.set(x, "newEntityAdWordsLink", js.Any.fromFunction0(value))
+    
+    inline def setNewEntityAdWordsLinkEntity(value: () => EntityAdWordsLinkEntity): Self = StObject.set(x, "newEntityAdWordsLinkEntity", js.Any.fromFunction0(value))
+    
+    inline def setNewEntityUserLink(value: () => EntityUserLink): Self = StObject.set(x, "newEntityUserLink", js.Any.fromFunction0(value))
+    
+    inline def setNewEntityUserLinkEntity(value: () => EntityUserLinkEntity): Self = StObject.set(x, "newEntityUserLinkEntity", js.Any.fromFunction0(value))
+    
+    inline def setNewEntityUserLinkPermissions(value: () => EntityUserLinkPermissions): Self = StObject.set(x, "newEntityUserLinkPermissions", js.Any.fromFunction0(value))
+    
+    inline def setNewExperiment(value: () => Experiment): Self = StObject.set(x, "newExperiment", js.Any.fromFunction0(value))
+    
+    inline def setNewExperimentParentLink(value: () => ExperimentParentLink): Self = StObject.set(x, "newExperimentParentLink", js.Any.fromFunction0(value))
+    
+    inline def setNewExperimentVariations(value: () => ExperimentVariations): Self = StObject.set(x, "newExperimentVariations", js.Any.fromFunction0(value))
+    
+    inline def setNewFilter(value: () => Filter): Self = StObject.set(x, "newFilter", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterAdvancedDetails(value: () => FilterAdvancedDetails): Self = StObject.set(x, "newFilterAdvancedDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "newFilterExpression", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterLowercaseDetails(value: () => FilterLowercaseDetails): Self = StObject.set(x, "newFilterLowercaseDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterParentLink(value: () => FilterParentLink): Self = StObject.set(x, "newFilterParentLink", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterRef(value: () => FilterRef): Self = StObject.set(x, "newFilterRef", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterSearchAndReplaceDetails(value: () => FilterSearchAndReplaceDetails): Self = StObject.set(x, "newFilterSearchAndReplaceDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterUppercaseDetails(value: () => FilterUppercaseDetails): Self = StObject.set(x, "newFilterUppercaseDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewGoal(value: () => Goal): Self = StObject.set(x, "newGoal", js.Any.fromFunction0(value))
+    
+    inline def setNewGoalEventDetails(value: () => GoalEventDetails): Self = StObject.set(x, "newGoalEventDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewGoalEventDetailsEventConditions(value: () => GoalEventDetailsEventConditions): Self = StObject.set(x, "newGoalEventDetailsEventConditions", js.Any.fromFunction0(value))
+    
+    inline def setNewGoalParentLink(value: () => GoalParentLink): Self = StObject.set(x, "newGoalParentLink", js.Any.fromFunction0(value))
+    
+    inline def setNewGoalUrlDestinationDetails(value: () => GoalUrlDestinationDetails): Self = StObject.set(x, "newGoalUrlDestinationDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewGoalUrlDestinationDetailsSteps(value: () => GoalUrlDestinationDetailsSteps): Self = StObject.set(x, "newGoalUrlDestinationDetailsSteps", js.Any.fromFunction0(value))
+    
+    inline def setNewGoalVisitNumPagesDetails(value: () => GoalVisitNumPagesDetails): Self = StObject.set(x, "newGoalVisitNumPagesDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewGoalVisitTimeOnSiteDetails(value: () => GoalVisitTimeOnSiteDetails): Self = StObject.set(x, "newGoalVisitTimeOnSiteDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewHashClientIdRequest(value: () => HashClientIdRequest): Self = StObject.set(x, "newHashClientIdRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewIncludeConditions(value: () => IncludeConditions): Self = StObject.set(x, "newIncludeConditions", js.Any.fromFunction0(value))
+    
+    inline def setNewLinkedForeignAccount(value: () => LinkedForeignAccount): Self = StObject.set(x, "newLinkedForeignAccount", js.Any.fromFunction0(value))
+    
+    inline def setNewProfile(value: () => Profile): Self = StObject.set(x, "newProfile", js.Any.fromFunction0(value))
+    
+    inline def setNewProfileChildLink(value: () => ProfileChildLink): Self = StObject.set(x, "newProfileChildLink", js.Any.fromFunction0(value))
+    
+    inline def setNewProfileFilterLink(value: () => ProfileFilterLink): Self = StObject.set(x, "newProfileFilterLink", js.Any.fromFunction0(value))
+    
+    inline def setNewProfileParentLink(value: () => ProfileParentLink): Self = StObject.set(x, "newProfileParentLink", js.Any.fromFunction0(value))
+    
+    inline def setNewProfilePermissions(value: () => ProfilePermissions): Self = StObject.set(x, "newProfilePermissions", js.Any.fromFunction0(value))
+    
+    inline def setNewProfileRef(value: () => ProfileRef): Self = StObject.set(x, "newProfileRef", js.Any.fromFunction0(value))
+    
+    inline def setNewRemarketingAudience(value: () => RemarketingAudience): Self = StObject.set(x, "newRemarketingAudience", js.Any.fromFunction0(value))
+    
+    inline def setNewRemarketingAudienceAudienceDefinition(value: () => RemarketingAudienceAudienceDefinition): Self = StObject.set(x, "newRemarketingAudienceAudienceDefinition", js.Any.fromFunction0(value))
+    
+    inline def setNewRemarketingAudienceStateBasedAudienceDefinition(value: () => RemarketingAudienceStateBasedAudienceDefinition): Self = StObject.set(x, "newRemarketingAudienceStateBasedAudienceDefinition", js.Any.fromFunction0(value))
+    
+    inline def setNewRemarketingAudienceStateBasedAudienceDefinitionExcludeConditions(value: () => RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions): Self = StObject.set(x, "newRemarketingAudienceStateBasedAudienceDefinitionExcludeConditions", js.Any.fromFunction0(value))
+    
+    inline def setNewUnsampledReport(value: () => UnsampledReport): Self = StObject.set(x, "newUnsampledReport", js.Any.fromFunction0(value))
+    
+    inline def setNewUnsampledReportCloudStorageDownloadDetails(value: () => UnsampledReportCloudStorageDownloadDetails): Self = StObject.set(x, "newUnsampledReportCloudStorageDownloadDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewUnsampledReportDriveDownloadDetails(value: () => UnsampledReportDriveDownloadDetails): Self = StObject.set(x, "newUnsampledReportDriveDownloadDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewUserDeletionRequest(value: () => UserDeletionRequest): Self = StObject.set(x, "newUserDeletionRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUserDeletionRequestId(value: () => UserDeletionRequestId): Self = StObject.set(x, "newUserDeletionRequestId", js.Any.fromFunction0(value))
+    
+    inline def setNewUserRef(value: () => UserRef): Self = StObject.set(x, "newUserRef", js.Any.fromFunction0(value))
+    
+    inline def setNewWebPropertyRef(value: () => WebPropertyRef): Self = StObject.set(x, "newWebPropertyRef", js.Any.fromFunction0(value))
+    
+    inline def setNewWebproperty(value: () => Webproperty): Self = StObject.set(x, "newWebproperty", js.Any.fromFunction0(value))
+    
+    inline def setNewWebpropertyChildLink(value: () => WebpropertyChildLink): Self = StObject.set(x, "newWebpropertyChildLink", js.Any.fromFunction0(value))
+    
+    inline def setNewWebpropertyParentLink(value: () => WebpropertyParentLink): Self = StObject.set(x, "newWebpropertyParentLink", js.Any.fromFunction0(value))
+    
+    inline def setNewWebpropertyPermissions(value: () => WebpropertyPermissions): Self = StObject.set(x, "newWebpropertyPermissions", js.Any.fromFunction0(value))
+    
+    inline def setProvisioning(value: ProvisioningCollection): Self = StObject.set(x, "Provisioning", value.asInstanceOf[js.Any])
+    
+    inline def setProvisioningUndefined: Self = StObject.set(x, "Provisioning", js.undefined)
+    
+    inline def setUserDeletion(value: UserDeletionCollection): Self = StObject.set(x, "UserDeletion", value.asInstanceOf[js.Any])
+    
+    inline def setUserDeletionUndefined: Self = StObject.set(x, "UserDeletion", js.undefined)
   }
   
   object Schema {

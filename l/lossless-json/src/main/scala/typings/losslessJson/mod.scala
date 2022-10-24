@@ -28,7 +28,7 @@ object mod {
   }
   
   inline def config(): CircularRefsBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[CircularRefsBoolean]
-  inline def config(hasCircularRefs: CircularRefs): CircularRefsBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(hasCircularRefs.asInstanceOf[js.Any]).asInstanceOf[CircularRefsBoolean]
+  inline def config(param0: CircularRefs): CircularRefsBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(param0.asInstanceOf[js.Any]).asInstanceOf[CircularRefsBoolean]
   
   inline def parse(text: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]

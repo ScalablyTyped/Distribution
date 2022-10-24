@@ -12,7 +12,7 @@ object esItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Item(hasChildrenSetRef: ItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(hasChildrenSetRef.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Item(param0: ItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait ItemProps extends StObject {
     

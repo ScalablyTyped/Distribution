@@ -12,5 +12,5 @@ object libModuleJsonUtilsHotspotLayerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def hotspotLayer(hasTargetIdTargetAnimationType: Target): FlowAny = ^.asInstanceOf[js.Dynamic].applyDynamic("hotspotLayer")(hasTargetIdTargetAnimationType.asInstanceOf[js.Any]).asInstanceOf[FlowAny]
+  inline def hotspotLayer(param0: Target): FlowAny = ^.asInstanceOf[js.Dynamic].applyDynamic("hotspotLayer")(param0.asInstanceOf[js.Any]).asInstanceOf[FlowAny]
 }

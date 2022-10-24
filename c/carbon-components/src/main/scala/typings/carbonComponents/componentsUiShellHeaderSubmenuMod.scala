@@ -94,7 +94,7 @@ object componentsUiShellHeaderSubmenuMod {
     
     def _handleKeyDown(event: KeyboardEvent): Unit = js.native
     
-    def _setState(hasShouldBeExpandedShouldFocusOnOpen: ShouldBeExpanded): Unit = js.native
+    def _setState(param0: ShouldBeExpanded): Unit = js.native
     
     def getCurrentNavigation(): Null | Element = js.native
     

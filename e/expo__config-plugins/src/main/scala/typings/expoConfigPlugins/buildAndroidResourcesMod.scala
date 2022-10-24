@@ -22,7 +22,7 @@ object buildAndroidResourcesMod {
   
   inline def buildResourceGroup(parent: Items): ResourceGroupXML = ^.asInstanceOf[js.Dynamic].applyDynamic("buildResourceGroup")(parent.asInstanceOf[js.Any]).asInstanceOf[ResourceGroupXML]
   
-  inline def buildResourceItem(hasNameValueTargetApiTranslatable: TargetApi): ResourceItemXML = ^.asInstanceOf[js.Dynamic].applyDynamic("buildResourceItem")(hasNameValueTargetApiTranslatable.asInstanceOf[js.Any]).asInstanceOf[ResourceItemXML]
+  inline def buildResourceItem(param0: TargetApi): ResourceItemXML = ^.asInstanceOf[js.Dynamic].applyDynamic("buildResourceItem")(param0.asInstanceOf[js.Any]).asInstanceOf[ResourceItemXML]
   
   inline def ensureDefaultResourceXML(xml: XMLObject): ResourceXML = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDefaultResourceXML")(xml.asInstanceOf[js.Any]).asInstanceOf[ResourceXML]
   
@@ -35,7 +35,7 @@ object buildAndroidResourcesMod {
   
   inline def getResourceItemsAsObject(xml: js.Array[ResourceItemXML]): (Record[String, String]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceItemsAsObject")(xml.asInstanceOf[js.Any]).asInstanceOf[(Record[String, String]) | Null]
   
-  inline def readResourcesXMLAsync(hasPathFallback: Fallback): js.Promise[ResourceXML] = ^.asInstanceOf[js.Dynamic].applyDynamic("readResourcesXMLAsync")(hasPathFallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResourceXML]]
+  inline def readResourcesXMLAsync(param0: Fallback): js.Promise[ResourceXML] = ^.asInstanceOf[js.Dynamic].applyDynamic("readResourcesXMLAsync")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResourceXML]]
   
   trait ResourceGroupXML extends StObject {
     

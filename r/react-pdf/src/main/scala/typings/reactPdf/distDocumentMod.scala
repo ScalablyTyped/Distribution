@@ -113,7 +113,7 @@ object distDocumentMod {
       * Function called when an outline item has been clicked.
       * Usually, you would like to use this callback to move the user wherever they requested to.
       */
-    var onItemClick: js.UndefOr[js.Function1[/* hasPageNumber */ PageNumber, Unit]] = js.undefined
+    var onItemClick: js.UndefOr[js.Function1[/* param0 */ PageNumber, Unit]] = js.undefined
     
     /**
       * Function called in case of an error while loading a document.
@@ -223,7 +223,7 @@ object distDocumentMod {
       
       inline def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
       
-      inline def setOnItemClick(value: /* hasPageNumber */ PageNumber => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      inline def setOnItemClick(value: /* param0 */ PageNumber => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
       inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       

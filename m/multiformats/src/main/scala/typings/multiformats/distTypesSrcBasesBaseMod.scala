@@ -100,16 +100,16 @@ object distTypesSrcBasesBaseMod {
     var prefix: Prefix = js.native
   }
   
-  inline def baseX[Base /* <: String */, Prefix /* <: String */](hasPrefixNameAlphabet: Alphabet[Base, Prefix]): Codec[Base, Prefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("baseX")(hasPrefixNameAlphabet.asInstanceOf[js.Any]).asInstanceOf[Codec[Base, Prefix]]
+  inline def baseX[Base /* <: String */, Prefix /* <: String */](param0: Alphabet[Base, Prefix]): Codec[Base, Prefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("baseX")(param0.asInstanceOf[js.Any]).asInstanceOf[Codec[Base, Prefix]]
   
-  inline def from[Base /* <: String */, Prefix /* <: String */](hasNamePrefixEncodeDecode: Decode[Base, Prefix]): Codec[Base, Prefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(hasNamePrefixEncodeDecode.asInstanceOf[js.Any]).asInstanceOf[Codec[Base, Prefix]]
+  inline def from[Base /* <: String */, Prefix /* <: String */](param0: Decode[Base, Prefix]): Codec[Base, Prefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(param0.asInstanceOf[js.Any]).asInstanceOf[Codec[Base, Prefix]]
   
   inline def or[L /* <: String */, R /* <: String */](left: CombobaseDecoder[L], right: CombobaseDecoder[R]): ComposedDecoder[L | R] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[ComposedDecoder[L | R]]
   inline def or[L /* <: String */, R /* <: String */](left: CombobaseDecoder[L], right: UnibaseDecoder[R]): ComposedDecoder[L | R] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[ComposedDecoder[L | R]]
   inline def or[L /* <: String */, R /* <: String */](left: UnibaseDecoder[L], right: CombobaseDecoder[R]): ComposedDecoder[L | R] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[ComposedDecoder[L | R]]
   inline def or[L /* <: String */, R /* <: String */](left: UnibaseDecoder[L], right: UnibaseDecoder[R]): ComposedDecoder[L | R] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[ComposedDecoder[L | R]]
   
-  inline def rfc4648[Base /* <: String */, Prefix /* <: String */](hasNamePrefixBitsPerCharAlphabet: BitsPerChar[Base, Prefix]): Codec[Base, Prefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("rfc4648")(hasNamePrefixBitsPerCharAlphabet.asInstanceOf[js.Any]).asInstanceOf[Codec[Base, Prefix]]
+  inline def rfc4648[Base /* <: String */, Prefix /* <: String */](param0: BitsPerChar[Base, Prefix]): Codec[Base, Prefix] = ^.asInstanceOf[js.Dynamic].applyDynamic("rfc4648")(param0.asInstanceOf[js.Any]).asInstanceOf[Codec[Base, Prefix]]
   
   /**
     * @template {string} Prefix

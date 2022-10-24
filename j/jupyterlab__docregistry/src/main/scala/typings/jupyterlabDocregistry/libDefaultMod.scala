@@ -419,7 +419,7 @@ object libDefaultMod {
   - typings.luminoMessaging.mod.IMessageHandler because Already inherited
   - typings.luminoWidgets.typesWidgetMod.Widget because Already inherited
   - typings.luminoWidgets.mod.Widget because Already inherited
-  - typings.jupyterlabDocregistry.libRegistryMod.IDocumentWidget because var conflicts: _disposed, _flags, _hiddenMode, _layout, _parent, content, hiddenMode, id, layout, parent, revealed, toolbar. Inlined context, setFragment */ @JSImport("@jupyterlab/docregistry/lib/default", "DocumentWidget")
+  - typings.jupyterlabDocregistry.libRegistryMod.IDocumentWidget because var conflicts: _disposed, _flags, _hiddenMode, _layout, _parent, content, hiddenMode, id, layout, parent, revealed, toolbar. Inlined context, isUntitled, setFragment */ @JSImport("@jupyterlab/docregistry/lib/default", "DocumentWidget")
   @js.native
   open class DocumentWidget[T /* <: Widget */, U /* <: IModel */] protected () extends MainAreaWidget[T] {
     def this(options: IOptions[T, U]) = this()
@@ -445,6 +445,15 @@ object libDefaultMod {
     /* private */ var _onTitleChanged: Any = js.native
     
     val context: IContext[U] = js.native
+    
+    /**
+      * Whether the document has an auto-generated name or not.
+      *
+      * #### Notes
+      * A document has auto-generated name if its name is untitled and up
+      * to the instant the user saves it manually for the first time.
+      */
+    var isUntitled: js.UndefOr[Boolean] = js.native
     
     /**
       * Set URI fragment identifier.

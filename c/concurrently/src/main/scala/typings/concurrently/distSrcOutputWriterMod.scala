@@ -11,7 +11,7 @@ object distSrcOutputWriterMod {
   @JSImport("concurrently/dist/src/output-writer", "OutputWriter")
   @js.native
   open class OutputWriter protected () extends StObject {
-    def this(hasOutputStreamGroupCommands: Group) = this()
+    def this(param0: Group) = this()
     
     var activeCommandIndex: Double = js.native
     

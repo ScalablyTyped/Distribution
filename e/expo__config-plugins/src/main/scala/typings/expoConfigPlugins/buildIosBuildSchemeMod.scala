@@ -17,7 +17,7 @@ object buildIosBuildSchemeMod {
   inline def getArchiveBuildConfigurationForSchemeAsync(projectRoot: String, scheme: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getArchiveBuildConfigurationForSchemeAsync")(projectRoot.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def getRunnableSchemesFromXcodeproj(projectRoot: String): js.Array[OsType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRunnableSchemesFromXcodeproj")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Array[OsType]]
-  inline def getRunnableSchemesFromXcodeproj(projectRoot: String, hasConfiguration: Configuration): js.Array[OsType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRunnableSchemesFromXcodeproj")(projectRoot.asInstanceOf[js.Any], hasConfiguration.asInstanceOf[js.Any])).asInstanceOf[js.Array[OsType]]
+  inline def getRunnableSchemesFromXcodeproj(projectRoot: String, param1: Configuration): js.Array[OsType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRunnableSchemesFromXcodeproj")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[OsType]]
   
   inline def getSchemesFromXcodeproj(projectRoot: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemesFromXcodeproj")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

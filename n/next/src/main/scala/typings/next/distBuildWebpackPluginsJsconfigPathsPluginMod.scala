@@ -40,7 +40,7 @@ object distBuildWebpackPluginsJsconfigPathsPluginMod {
   
   inline def pathIsRelative(testPath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pathIsRelative")(testPath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def patternText(hasPrefixSuffix: Pattern): String = ^.asInstanceOf[js.Dynamic].applyDynamic("patternText")(hasPrefixSuffix.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def patternText(param0: Pattern): String = ^.asInstanceOf[js.Dynamic].applyDynamic("patternText")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def tryParsePattern(pattern: String): js.UndefOr[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParsePattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Pattern]]
   

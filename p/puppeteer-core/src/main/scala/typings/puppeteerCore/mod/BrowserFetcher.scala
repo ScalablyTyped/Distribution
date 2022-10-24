@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("puppeteer-core", "BrowserFetcher")
 @js.native
-/**
-  * Constructs a browser fetcher for the given options.
-  */
-open class BrowserFetcher () extends StObject {
+open class BrowserFetcher protected () extends StObject {
+  /**
+    * Constructs a browser fetcher for the given options.
+    */
   def this(options: BrowserFetcherOptions) = this()
   
   /**
@@ -43,10 +43,10 @@ open class BrowserFetcher () extends StObject {
   /**
     * @remarks
     * This method is affected by the current `product`.
-    * @returns A promise with a list of all revision strings (for the current `product`)
+    * @returns A list of all revision strings (for the current `product`)
     * available locally on disk.
     */
-  def localRevisions(): js.Promise[js.Array[String]] = js.native
+  def localRevisions(): js.Array[String] = js.native
   
   /**
     * @returns Returns the current `Platform`, which is one of `mac`, `linux`,

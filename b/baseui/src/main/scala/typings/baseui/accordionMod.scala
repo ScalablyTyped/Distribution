@@ -83,7 +83,7 @@ object accordionMod {
     }
   }
   
-  inline def StatelessAccordion(hasAccordionChildrenDisabledExpandedOnChangeOverridesRenderAll: StatelessAccordionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StatelessAccordion")(hasAccordionChildrenDisabledExpandedOnChangeOverridesRenderAll.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StatelessAccordion(param0: StatelessAccordionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StatelessAccordion")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/accordion", "StyledContent")
   @js.native

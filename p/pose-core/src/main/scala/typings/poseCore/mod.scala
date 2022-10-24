@@ -13,7 +13,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[V, A, C, P, TD](
-    hasGetDefaultPropsDefaultTransitionsBindOnChangeStartActionStopActionReadValueReadValueFromSourceResolveTargetSetValueSetValueNativeCreateValueConvertValueGetInstantTransitionGetTransitionPropsAddActionDelaySelectValueToReadConvertTransitionDefinitionTransformPosePosePriorityForceRenderExtendAPI: PoseFactoryConfig[V, A, C, P, TD]
-  ): js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetDefaultPropsDefaultTransitionsBindOnChangeStartActionStopActionReadValueReadValueFromSourceResolveTargetSetValueSetValueNativeCreateValueConvertValueGetInstantTransitionGetTransitionPropsAddActionDelaySelectValueToReadConvertTransitionDefinitionTransformPosePosePriorityForceRenderExtendAPI.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]]]
+  inline def default[V, A, C, P, TD](param0: PoseFactoryConfig[V, A, C, P, TD]): js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]]]
 }

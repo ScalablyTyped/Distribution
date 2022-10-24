@@ -14,9 +14,7 @@ object distComponentsFileUploadButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FileUploadButton(
-    hasDisabledMultipleChildrenHandleFilesAcceptsResetOnChange: PropsWithChildren[FileUploadButtonProps]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileUploadButton")(hasDisabledMultipleChildrenHandleFilesAcceptsResetOnChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileUploadButton(param0: PropsWithChildren[FileUploadButtonProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileUploadButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @js.native
   trait FileUploadButtonProps extends StObject {

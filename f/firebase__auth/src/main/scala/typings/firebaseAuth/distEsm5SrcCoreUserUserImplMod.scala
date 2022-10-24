@@ -16,7 +16,7 @@ object distEsm5SrcCoreUserUserImplMod {
   open class UserImpl protected ()
     extends StObject
        with UserInternal {
-    def this(hasUidAuthStsTokenManagerOpt: UserParameters) = this()
+    def this(param0: UserParameters) = this()
     
     /* private */ var accessToken: Any = js.native
     

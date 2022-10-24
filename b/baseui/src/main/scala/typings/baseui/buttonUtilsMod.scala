@@ -12,5 +12,5 @@ object buttonUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getSharedProps(hasColorsDisabledIsLoadingIsSelectedKindShapeSize: ButtonProps): PartialSharedStyleProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getSharedProps")(hasColorsDisabledIsLoadingIsSelectedKindShapeSize.asInstanceOf[js.Any]).asInstanceOf[PartialSharedStyleProps]
+  inline def getSharedProps(param0: ButtonProps): PartialSharedStyleProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getSharedProps")(param0.asInstanceOf[js.Any]).asInstanceOf[PartialSharedStyleProps]
 }

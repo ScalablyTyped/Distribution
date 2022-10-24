@@ -11,7 +11,7 @@ object distTypesSrcTraversalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def walk(hasCidLoadSeen: Load): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(hasCidLoadSeen.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def walk(param0: Load): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   type BlockView[T, C, A, V] = typings.multiformats.distTypesSrcBlockInterfaceMod.BlockView[T, C, A, V]
   

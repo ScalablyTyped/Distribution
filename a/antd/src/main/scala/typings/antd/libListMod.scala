@@ -18,9 +18,7 @@ object libListMod {
   
   object default {
     
-    inline def apply[T](
-      hasPaginationCustomizePrefixClsBorderedSplitClassNameChildrenItemLayoutLoadMoreGridDataSourceSizeHeaderFooterLoadingRowKeyRenderItemLocaleRest: ListProps[T]
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasPaginationCustomizePrefixClsBorderedSplitClassNameChildrenItemLayoutLoadMoreGridDataSourceSizeHeaderFooterLoadingRowKeyRenderItemLocaleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[T](param0: ListProps[T]): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd/lib/list", JSImport.Default)
     @js.native

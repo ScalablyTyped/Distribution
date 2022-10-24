@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "braintree__sanitize-url"
-version := "6.0.1-9f0900"
-scalaVersion := "3.1.2"
+version := "6.0.1-fd86a7"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

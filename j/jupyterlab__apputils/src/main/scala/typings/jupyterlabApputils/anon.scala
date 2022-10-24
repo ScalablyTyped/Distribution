@@ -2,7 +2,10 @@ package typings.jupyterlabApputils
 
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.default
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.warn
+import typings.jupyterlabApputils.libDialogMod.Dialog.Header
+import typings.jupyterlabApputils.libDialogMod.Dialog.IRenderer
 import typings.jupyterlabApputils.libHoverboxMod.OutOfViewDisplay
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,6 +99,74 @@ object anon {
     }
   }
   
+  /* Inlined std.Omit<@jupyterlab/apputils.@jupyterlab/apputils/lib/inputdialog.InputDialog.ITextOptions, 'selectionRange'> */
+  trait OmitITextOptionsselection extends StObject {
+    
+    var cancelLabel: js.UndefOr[String] = js.undefined
+    
+    var checkbox: js.UndefOr[PartialICheckbox | Null] = js.undefined
+    
+    var host: js.UndefOr[HTMLElement] = js.undefined
+    
+    var label: js.UndefOr[String] = js.undefined
+    
+    var okLabel: js.UndefOr[String] = js.undefined
+    
+    var placeholder: js.UndefOr[String] = js.undefined
+    
+    var renderer: js.UndefOr[IRenderer] = js.undefined
+    
+    var text: js.UndefOr[String] = js.undefined
+    
+    var title: Header
+  }
+  object OmitITextOptionsselection {
+    
+    inline def apply(title: Header): OmitITextOptionsselection = {
+      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OmitITextOptionsselection]
+    }
+    
+    extension [Self <: OmitITextOptionsselection](x: Self) {
+      
+      inline def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
+      
+      inline def setCheckbox(value: PartialICheckbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+      
+      inline def setCheckboxNull: Self = StObject.set(x, "checkbox", null)
+      
+      inline def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
+      
+      inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setOkLabel(value: String): Self = StObject.set(x, "okLabel", value.asInstanceOf[js.Any])
+      
+      inline def setOkLabelUndefined: Self = StObject.set(x, "okLabel", js.undefined)
+      
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
+      inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      
+      inline def setTitle(value: Header): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Inlined std.Partial<@jupyterlab/apputils.@jupyterlab/apputils/lib/dialog.Dialog.IButton> */
   trait PartialIButton extends StObject {
     
@@ -153,6 +224,44 @@ object anon {
       inline def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
       
       inline def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
+      
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<@jupyterlab/apputils.@jupyterlab/apputils/lib/dialog.Dialog.ICheckbox> */
+  trait PartialICheckbox extends StObject {
+    
+    var caption: js.UndefOr[String] = js.undefined
+    
+    var checked: js.UndefOr[Boolean] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
+    
+    var label: js.UndefOr[String] = js.undefined
+  }
+  object PartialICheckbox {
+    
+    inline def apply(): PartialICheckbox = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialICheckbox]
+    }
+    
+    extension [Self <: PartialICheckbox](x: Self) {
+      
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

@@ -82,7 +82,7 @@ object typesUtilsMod {
   inline def setAutoClose(embedId: String, autoClose: Double, closeCallback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAutoClose")(embedId.asInstanceOf[js.Any], autoClose.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setAutoClose(embedId: String, autoClose: Unit, closeCallback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAutoClose")(embedId.asInstanceOf[js.Any], autoClose.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setElementSize(element: HTMLElement, hasWidthHeight: ElementSize): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("setElementSize")(element.asInstanceOf[js.Any], hasWidthHeight.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def setElementSize(element: HTMLElement, param1: ElementSize): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("setElementSize")(element.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   inline def setupGaInstance(iframe: HTMLIFrameElement, embedId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupGaInstance")(iframe.asInstanceOf[js.Any], embedId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setupGaInstance(iframe: HTMLIFrameElement, embedId: String, shareGaInstance: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupGaInstance")(iframe.asInstanceOf[js.Any], embedId.asInstanceOf[js.Any], shareGaInstance.asInstanceOf[js.Any])).asInstanceOf[Unit]

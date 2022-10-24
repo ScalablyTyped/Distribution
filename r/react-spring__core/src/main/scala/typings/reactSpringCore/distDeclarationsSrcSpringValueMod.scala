@@ -110,8 +110,8 @@ object distDeclarationsSrcSpringValueMod {
     /* protected */ def _stop(goal: Unit, cancel: Boolean): Unit = js.native
     
     /** Every update is processed by this method before merging. */
-    /* protected */ def _update(hasProps: SpringProps[T]): js.Promise[AnimationResult[SpringValue[T]]] = js.native
-    /* protected */ def _update(hasProps: SpringProps[T], isLoop: Boolean): js.Promise[AnimationResult[SpringValue[T]]] = js.native
+    /* protected */ def _update(param0: SpringProps[T]): js.Promise[AnimationResult[SpringValue[T]]] = js.native
+    /* protected */ def _update(param0: SpringProps[T], isLoop: Boolean): js.Promise[AnimationResult[SpringValue[T]]] = js.native
     
     /** The animation state */
     var animation: Animation[T] = js.native

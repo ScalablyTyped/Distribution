@@ -12,5 +12,5 @@ object distTs3Dot9ClientDocsLibDefaultValuesGenerateArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateArray(hasInferredTypeAst: InspectionResult): PropDefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("generateArray")(hasInferredTypeAst.asInstanceOf[js.Any]).asInstanceOf[PropDefaultValue]
+  inline def generateArray(param0: InspectionResult): PropDefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("generateArray")(param0.asInstanceOf[js.Any]).asInstanceOf[PropDefaultValue]
 }

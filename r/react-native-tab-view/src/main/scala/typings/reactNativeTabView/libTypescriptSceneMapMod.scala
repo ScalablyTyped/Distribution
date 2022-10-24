@@ -14,7 +14,7 @@ object libTypescriptSceneMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* hasRouteJumpToPosition */ SceneProps, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scenes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasRouteJumpToPosition */ SceneProps, Element]]
+  inline def default[T /* <: Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* param0 */ SceneProps, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scenes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param0 */ SceneProps, Element]]
   
   /* Inlined {  route :any} & std.Omit<react-native-tab-view.react-native-tab-view/lib/typescript/types.SceneRendererProps, 'layout'> */
   trait SceneProps extends StObject {

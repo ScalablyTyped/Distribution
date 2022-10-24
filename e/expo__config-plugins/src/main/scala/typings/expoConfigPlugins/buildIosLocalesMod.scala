@@ -20,9 +20,9 @@ object buildIosLocalesMod {
   
   inline def getResolvedLocalesAsync(projectRoot: String, input: ExpoConfigLocales): js.Promise[ResolvedLocalesJson] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolvedLocalesAsync")(projectRoot.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolvedLocalesJson]]
   
-  inline def setLocalesAsync(config: PickExpoConfiglocales, hasProjectRootProject: ProjectProjectRoot): js.Promise[
+  inline def setLocalesAsync(config: PickExpoConfiglocales, param1: ProjectProjectRoot): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocalesAsync")(config.asInstanceOf[js.Any], hasProjectRootProject.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocalesAsync")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any
   ]]
   

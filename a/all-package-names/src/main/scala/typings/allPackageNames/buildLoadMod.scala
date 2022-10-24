@@ -10,8 +10,8 @@ object buildLoadMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isFresh(hasTimestamp: Save_): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFresh")(hasTimestamp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isFresh(hasTimestamp: Save_, maxAge: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFresh")(hasTimestamp.asInstanceOf[js.Any], maxAge.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isFresh(param0: Save_): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFresh")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFresh(param0: Save_, maxAge: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFresh")(param0.asInstanceOf[js.Any], maxAge.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def load(): js.Promise[Save_] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Promise[Save_]]
   inline def load(options: LoadOptions): js.Promise[Save_] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Save_]]

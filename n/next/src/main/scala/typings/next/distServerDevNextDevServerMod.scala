@@ -44,7 +44,7 @@ object distServerDevNextDevServerMod {
     
     /* private */ var edgeFunctions: Any = js.native
     
-    /* protected */ def findPageComponents(hasPathnameQueryParamsIsAppPathAppPaths: Pathname): js.Promise[FindComponentsResult | Null] = js.native
+    /* protected */ def findPageComponents(param0: Pathname): js.Promise[FindComponentsResult | Null] = js.native
     
     def getCompilationError(page: String): js.Promise[Any] = js.native
     

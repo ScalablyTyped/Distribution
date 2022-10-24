@@ -39,12 +39,10 @@ object distTypesCirclePackingHtmlMod {
   val ^ : js.Any = js.native
   
   inline def CirclePackingHtml[RawDatum](
-    hasThemeIsInteractiveAnimateMotionConfigOtherProps: (Partial[Omit[CirclePackingHtmlProps[RawDatum], data | height | width]]) & (Pick[CirclePackingHtmlProps[RawDatum], data | height | width])
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePackingHtml")(hasThemeIsInteractiveAnimateMotionConfigOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    param0: (Partial[Omit[CirclePackingHtmlProps[RawDatum], data | height | width]]) & (Pick[CirclePackingHtmlProps[RawDatum], data | height | width])
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePackingHtml")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerCirclePackingHtml[RawDatum](
-    hasDataIdValueValueFormatWidthHeightPartialMarginPaddingLeavesOnlyColorsColorByInheritColorFromParentChildColorBorderWidthBorderColorCircleComponentEnableLabelsLabelLabelsFilterLabelsSkipRadiusLabelTextColorLabelComponentLayersIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltipZoomedIdRole: InnerCirclePackingHtmlProps[RawDatum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCirclePackingHtml")(hasDataIdValueValueFormatWidthHeightPartialMarginPaddingLeavesOnlyColorsColorByInheritColorFromParentChildColorBorderWidthBorderColorCircleComponentEnableLabelsLabelLabelsFilterLabelsSkipRadiusLabelTextColorLabelComponentLayersIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltipZoomedIdRole.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerCirclePackingHtml[RawDatum](param0: InnerCirclePackingHtmlProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCirclePackingHtml")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Partial<std.Omit<@nivo/circle-packing.@nivo/circle-packing/dist/types/types.CirclePackingHtmlProps<RawDatum>, 'data' | 'width' | 'height' | 'isInteractive' | 'animate' | 'motionConfig'>> & std.Pick<@nivo/circle-packing.@nivo/circle-packing/dist/types/types.CirclePackingHtmlProps<RawDatum>, 'data' | 'width' | 'height' | 'isInteractive'> */
   trait InnerCirclePackingHtmlProps[RawDatum] extends StObject {

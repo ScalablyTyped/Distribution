@@ -17,18 +17,18 @@ object libTypescriptComponentsAppbarMod extends Shortcut {
   @JSImport("react-native-paper/lib/typescript/components/Appbar", JSImport.Default)
   @js.native
   val default: ComponentType[PickPartialViewPropsRefAt] & (NonReactStatics[
-    ComponentType[PartialViewPropsRefAttrib] & (js.Function1[/* hasChildrenDarkStyleThemeRest */ Props, Element]), 
+    ComponentType[PartialViewPropsRefAttrib] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) & Action = js.native
   
   type _To = ComponentType[PickPartialViewPropsRefAt] & (NonReactStatics[
-    ComponentType[PartialViewPropsRefAttrib] & (js.Function1[/* hasChildrenDarkStyleThemeRest */ Props, Element]), 
+    ComponentType[PartialViewPropsRefAttrib] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) & Action
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsAppbarMod.foo` */
   override def _to: ComponentType[PickPartialViewPropsRefAt] & (NonReactStatics[
-    ComponentType[PartialViewPropsRefAttrib] & (js.Function1[/* hasChildrenDarkStyleThemeRest */ Props, Element]), 
+    ComponentType[PartialViewPropsRefAttrib] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) & Action = default
 }

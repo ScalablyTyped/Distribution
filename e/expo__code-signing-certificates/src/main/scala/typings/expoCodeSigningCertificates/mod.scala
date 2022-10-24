@@ -24,7 +24,7 @@ object mod {
   
   inline def convertCertificateToCertificatePEM(certificate: Certificate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCertificateToCertificatePEM")(certificate.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def convertKeyPairPEMToKeyPair(hasPrivateKeyPEMPublicKeyPEM: PrivateKeyPEM): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKeyPairPEMToKeyPair")(hasPrivateKeyPEMPublicKeyPEM.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
+  inline def convertKeyPairPEMToKeyPair(param0: PrivateKeyPEM): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKeyPairPEMToKeyPair")(param0.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
   
   inline def convertKeyPairToPEM(keyPair: KeyPair): PrivateKeyPEM = ^.asInstanceOf[js.Dynamic].applyDynamic("convertKeyPairToPEM")(keyPair.asInstanceOf[js.Any]).asInstanceOf[PrivateKeyPEM]
   
@@ -48,7 +48,7 @@ object mod {
   
   inline def generateKeyPair(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[KeyPair]
   
-  inline def generateSelfSignedCodeSigningCertificate(hasHasPublicKeyPrivateKeyValidityNotBeforeValidityNotAfterCommonName: GenerateParameters): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSelfSignedCodeSigningCertificate")(hasHasPublicKeyPrivateKeyValidityNotBeforeValidityNotAfterCommonName.asInstanceOf[js.Any]).asInstanceOf[Certificate]
+  inline def generateSelfSignedCodeSigningCertificate(param0: GenerateParameters): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSelfSignedCodeSigningCertificate")(param0.asInstanceOf[js.Any]).asInstanceOf[Certificate]
   
   inline def signStringRSASHA256AndVerify(privateKey: PrivateKey, certificate: Certificate, stringToSign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signStringRSASHA256AndVerify")(privateKey.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], stringToSign.asInstanceOf[js.Any])).asInstanceOf[String]
   

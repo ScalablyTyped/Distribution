@@ -22,7 +22,7 @@ object mod {
   inline def getExternalIPv4Interfaces(): js.Array[NetworkInterface] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExternalIPv4Interfaces")().asInstanceOf[js.Array[NetworkInterface]]
   
   inline def isHostConnectable(host: String, port: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isHostConnectable")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  inline def isHostConnectable(host: String, port: Double, hasTimeout: Timeout): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isHostConnectable")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], hasTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def isHostConnectable(host: String, port: Double, param2: Timeout): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isHostConnectable")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   inline def isPortAvailable(port: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortAvailable")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   

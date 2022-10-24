@@ -16,7 +16,7 @@ object distDisplayObjectsHtmlMod {
   @JSImport("@antv/g-lite/dist/display-objects/HTML", "HTML")
   @js.native
   open class HTML () extends DisplayObject[HTMLStyleProps, ParsedHTMLStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[HTMLStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[HTMLStyleProps]) = this()
     
     /**
       * return wrapper HTMLElement

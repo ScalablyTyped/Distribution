@@ -28,7 +28,7 @@ object distEsmSrcClientRetryingClientMod {
       *
       * @throws any non-retriable errors.
       */
-    def attemptFetch(request: FetchRequest, hasThrottleEndTimeMillisBackoffCount: ThrottleMetadata): js.Promise[FetchResponse] = js.native
+    def attemptFetch(request: FetchRequest, param1: ThrottleMetadata): js.Promise[FetchResponse] = js.native
     
     /* private */ val client: Any = js.native
     

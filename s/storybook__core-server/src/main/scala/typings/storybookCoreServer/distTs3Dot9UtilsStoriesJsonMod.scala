@@ -18,7 +18,5 @@ object distTs3Dot9UtilsStoriesJsonMod {
   
   inline def extractStoriesJson(outputFile: String, initializedStoryIndexGenerator: js.Promise[StoryIndexGenerator]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractStoriesJson")(outputFile.asInstanceOf[js.Any], initializedStoryIndexGenerator.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def useStoriesJson(
-    hasRouterInitializedStoryIndexGeneratorWorkingDirServerChannelNormalizedStories: InitializedStoryIndexGenerator
-  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useStoriesJson")(hasRouterInitializedStoryIndexGeneratorWorkingDirServerChannelNormalizedStories.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useStoriesJson(param0: InitializedStoryIndexGenerator): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useStoriesJson")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -39,16 +39,16 @@ object libIconLabiconMod {
     /** *********
       * members *
       ***********/
-    def this(hasNameSvgstrRenderUnrender_loading: IOptionsloadingbooleanund) = this()
+    def this(param0: IOptionsloadingbooleanund) = this()
     
     /* protected */ var _className: String = js.native
     
     /* protected */ def _initReact(displayName: String): ForwardRefExoticComponent[IReactProps] = js.native
     
-    /* protected */ def _initRender(hasRenderUnrender: PartialIRenderer): Unit = js.native
+    /* protected */ def _initRender(param0: PartialIRenderer): Unit = js.native
     
     /* protected */ def _initSvg(): HTMLElement | Null = js.native
-    /* protected */ def _initSvg(hasTitleUuid: Title): HTMLElement | Null = js.native
+    /* protected */ def _initSvg(param0: Title): HTMLElement | Null = js.native
     
     /* protected */ var _loading: Boolean = js.native
     
@@ -227,7 +227,7 @@ object libIconLabiconMod {
       *
       * @returns a LabIcon instance
       */
-    inline def resolve(hasIcon: Icon): LabIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hasIcon.asInstanceOf[js.Any]).asInstanceOf[LabIcon]
+    inline def resolve(param0: Icon): LabIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(param0.asInstanceOf[js.Any]).asInstanceOf[LabIcon]
     
     /**
       * Resolve an icon name or a {name, svgstr} pair into a DOM element.
@@ -250,7 +250,7 @@ object libIconLabiconMod {
       *
       * @returns a DOM node with the resolved icon rendered into it
       */
-    inline def resolveElement(hasIconIconClassFallbackProps: PartialIResolverPropsIPro): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveElement")(hasIconIconClassFallbackProps.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+    inline def resolveElement(param0: PartialIResolverPropsIPro): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveElement")(param0.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
     /**
       * Resolve an icon name or a {name, svgstr} pair into a React component.
@@ -273,12 +273,12 @@ object libIconLabiconMod {
       *
       * @returns a React component that will render the resolved icon
       */
-    inline def resolveReact(hasIconIconClassFallbackProps: PartialIResolverPropsIRea): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveReact")(hasIconIconClassFallbackProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def resolveReact(param0: PartialIResolverPropsIRea): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveReact")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /**
       * Resolve a {name, svgstr} pair into an actual svg node.
       */
-    inline def resolveSvg(hasNameSvgstr: IIcon): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSvg")(hasNameSvgstr.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+    inline def resolveSvg(param0: IIcon): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
     
     /**
       * Toggle icon debug from off-to-on, or vice-versa.

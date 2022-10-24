@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "mapbox__sphericalmercator"
-version := "1.2-dt-20220421Z-8d5289"
-scalaVersion := "3.1.2"
+version := "1.2-dt-20220421Z-5b7af0"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

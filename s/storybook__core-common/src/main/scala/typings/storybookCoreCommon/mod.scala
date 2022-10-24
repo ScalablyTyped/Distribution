@@ -48,7 +48,7 @@ object mod {
   @js.native
   val cache: FileSystemCache = js.native
   
-  inline def checkAddonOrder(hasBeforeAfterConfigFileGetConfig: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAddonOrder")(hasBeforeAfterConfigFileGetConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def checkAddonOrder(param0: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAddonOrder")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def checkWebpackVersion(webpack: Version, specifier: String, caption: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkWebpackVersion")(webpack.asInstanceOf[js.Any], specifier.asInstanceOf[js.Any], caption.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -60,7 +60,7 @@ object mod {
   
   inline def findDistEsm(cwd: String, relativePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("findDistEsm")(cwd.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getDirectoryFromWorkingDir(hasConfigDirWorkingDirDirectory: NormalizeOptionsdirectory): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectoryFromWorkingDir")(hasConfigDirWorkingDirDirectory.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDirectoryFromWorkingDir(param0: NormalizeOptionsdirectory): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectoryFromWorkingDir")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getInterpretedFile(pathToFile: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getInterpretedFile")(pathToFile.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -83,7 +83,7 @@ object mod {
   inline def getProjectRoot(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectRoot")().asInstanceOf[String]
   
   inline def getStorybookBabelConfig(): TransformOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookBabelConfig")().asInstanceOf[TransformOptions]
-  inline def getStorybookBabelConfig(hasLocal: Local): TransformOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookBabelConfig")(hasLocal.asInstanceOf[js.Any]).asInstanceOf[TransformOptions]
+  inline def getStorybookBabelConfig(param0: Local): TransformOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookBabelConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[TransformOptions]
   
   inline def getStorybookBabelDependencies(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookBabelDependencies")().asInstanceOf[js.Array[String]]
   
@@ -99,20 +99,20 @@ object mod {
   
   inline def loadCustomBabelConfig(configDir: String, getDefaultConfig: js.Function0[TransformOptions]): js.Promise[TransformOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCustomBabelConfig")(configDir.asInstanceOf[js.Any], getDefaultConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TransformOptions]]
   
-  inline def loadCustomPresets(hasConfigDir: ConfigDir): js.Array[PresetConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCustomPresets")(hasConfigDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[PresetConfig]]
+  inline def loadCustomPresets(param0: ConfigDir): js.Array[PresetConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCustomPresets")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[PresetConfig]]
   
   inline def loadCustomWebpackConfig(configDir: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCustomWebpackConfig")(configDir.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def loadEnvs(): Raw = ^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvs")().asInstanceOf[Raw]
   inline def loadEnvs(options: Production): Raw = ^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvs")(options.asInstanceOf[js.Any]).asInstanceOf[Raw]
   
-  inline def loadMainConfig(hasConfigDir: ConfigDir): StorybookConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("loadMainConfig")(hasConfigDir.asInstanceOf[js.Any]).asInstanceOf[StorybookConfig]
+  inline def loadMainConfig(param0: ConfigDir): StorybookConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("loadMainConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[StorybookConfig]
   
-  inline def loadManagerOrAddonsFile(hasConfigDir: ConfigDir): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadManagerOrAddonsFile")(hasConfigDir.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def loadManagerOrAddonsFile(param0: ConfigDir): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadManagerOrAddonsFile")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def loadPreset(input: PresetConfig, level: Double, storybookOptions: InterPresetOptions): js.Array[LoadedPreset] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadPreset")(input.asInstanceOf[js.Any], level.asInstanceOf[js.Any], storybookOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[LoadedPreset]]
   
-  inline def loadPreviewOrConfigFile(hasConfigDir: ConfigDir): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPreviewOrConfigFile")(hasConfigDir.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def loadPreviewOrConfigFile(param0: ConfigDir): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPreviewOrConfigFile")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def logConfig(caption: Any, config: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logConfig")(caption.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -122,7 +122,7 @@ object mod {
   
   inline def normalizeStories(entries: js.Array[StoriesEntry], options: NormalizeOptions): js.Array[NormalizedStoriesSpecifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStories")(entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NormalizedStoriesSpecifier]]
   
-  inline def normalizeStoriesEntry(entry: StoriesEntry, hasConfigDirWorkingDir: NormalizeOptions): NormalizedStoriesSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStoriesEntry")(entry.asInstanceOf[js.Any], hasConfigDirWorkingDir.asInstanceOf[js.Any])).asInstanceOf[NormalizedStoriesSpecifier]
+  inline def normalizeStoriesEntry(entry: StoriesEntry, param1: NormalizeOptions): NormalizedStoriesSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStoriesEntry")(entry.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[NormalizedStoriesSpecifier]
   
   inline def normalizeStoryPath(filename: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStoryPath")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
   

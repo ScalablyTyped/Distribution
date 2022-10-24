@@ -18,7 +18,7 @@ object declarationAnimationAnimationManagerMod {
   /* note: abstract class */ @JSImport("@egjs/axes/declaration/animation/AnimationManager", "AnimationManager")
   @js.native
   open class AnimationManager protected () extends StObject {
-    def this(hasOptionsInterruptManagerEventManagerAxisManager: AxisManager) = this()
+    def this(param0: AxisManager) = this()
     
     /* private */ var _animateLoop: Any = js.native
     

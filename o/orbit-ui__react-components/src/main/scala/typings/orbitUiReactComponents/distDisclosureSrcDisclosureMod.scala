@@ -24,7 +24,7 @@ object distDisclosureSrcDisclosureMod {
   @js.native
   val Disclosure: OrbitComponent[HTMLElement, InnerDisclosureProps] = js.native
   
-  inline def InnerDisclosure(hasIdOpenDefaultOpenOnOpenChangeAsChildrenForwardedRefRest: InnerDisclosureProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDisclosure")(hasIdOpenDefaultOpenOnOpenChangeAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDisclosure(param0: InnerDisclosureProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDisclosure")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type DisclosureProps = ComponentProps[OrbitComponent[HTMLElement, InnerDisclosureProps]]
   

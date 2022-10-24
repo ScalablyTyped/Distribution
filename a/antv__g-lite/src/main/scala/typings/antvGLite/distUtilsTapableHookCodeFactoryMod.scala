@@ -17,15 +17,15 @@ object distUtilsTapableHookCodeFactoryMod {
     def this(config: Any) = this()
     
     def args(): Any = js.native
-    def args(hasBeforeAfter: After): Any = js.native
+    def args(param0: After): Any = js.native
     
-    def callTap(tapIndex: Any, hasOnErrorOnResultOnDoneRethrowIfPossible: OnDone): String = js.native
+    def callTap(tapIndex: Any, param1: OnDone): String = js.native
     
-    def callTapsLooping(hasOnErrorOnDoneRethrowIfPossible: OnError): Any = js.native
+    def callTapsLooping(param0: OnError): Any = js.native
     
-    def callTapsParallel(hasOnErrorOnResultOnDoneRethrowIfPossibleOnTap: OnResult): Any = js.native
+    def callTapsParallel(param0: OnResult): Any = js.native
     
-    def callTapsSeries(hasOnErrorOnResultResultReturnsOnDoneDoneReturnsRethrowIfPossible: DoneReturns): Any = js.native
+    def callTapsSeries(param0: DoneReturns): Any = js.native
     
     def contentWithInterceptors(options: Any): Any = js.native
     

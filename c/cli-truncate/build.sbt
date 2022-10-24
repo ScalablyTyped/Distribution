@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cli-truncate"
-version := "3.1.0-489b08"
-scalaVersion := "3.1.2"
+version := "3.1.0-92e9ca"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

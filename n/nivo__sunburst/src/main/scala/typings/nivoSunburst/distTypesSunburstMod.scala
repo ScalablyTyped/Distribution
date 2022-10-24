@@ -19,6 +19,6 @@ object distTypesSunburstMod {
   val ^ : js.Any = js.native
   
   inline def Sunburst[RawDatum](
-    hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: (Partial[Omit[SunburstSvgProps[RawDatum], data | height | width]]) & (Pick[SunburstSvgProps[RawDatum], data | height | width])
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Sunburst")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    param0: (Partial[Omit[SunburstSvgProps[RawDatum], data | height | width]]) & (Pick[SunburstSvgProps[RawDatum], data | height | width])
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Sunburst")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

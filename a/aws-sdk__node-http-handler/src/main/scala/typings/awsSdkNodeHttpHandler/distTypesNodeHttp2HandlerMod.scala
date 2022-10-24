@@ -51,7 +51,7 @@ object distTypesNodeHttp2HandlerMod {
     /* private */ var getSession: Any = js.native
     
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest): js.Promise[Response] = js.native
-    def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, hasAbortSignal: HttpHandlerOptions): js.Promise[Response] = js.native
+    def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, param1: HttpHandlerOptions): js.Promise[Response] = js.native
     
     @JSName("metadata")
     val metadata_NodeHttp2Handler: HandlerProtocol = js.native

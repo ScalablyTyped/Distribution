@@ -8,10 +8,10 @@ import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.anon.CallHasLeftRightTitleDescriptionChildrenThemeTitleStyleDescriptionStyleTitleNumberOfLinesDescriptionNumberOfLinesStyleIdTestIDOnPressOnLongPressExpandedPropAccessibilityLabel
 import typings.reactNativePaper.anon.ColorString
 import typings.reactNativePaper.anon.IsExpanded
 import typings.reactNativePaper.anon.PickPropsstyletitlechildr
+import typings.reactNativePaper.anon.`19`
 import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,10 +21,7 @@ object libTypescriptComponentsListListAccordionMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/List/ListAccordion", JSImport.Default)
   @js.native
-  val default: ComponentType[PickPropsstyletitlechildr] & (NonReactStatics[
-    ComponentType[Props] & CallHasLeftRightTitleDescriptionChildrenThemeTitleStyleDescriptionStyleTitleNumberOfLinesDescriptionNumberOfLinesStyleIdTestIDOnPressOnLongPressExpandedPropAccessibilityLabel, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickPropsstyletitlechildr] & (NonReactStatics[ComponentType[Props] & `19`, js.Object]) = js.native
   
   trait Props extends StObject {
     
@@ -200,14 +197,8 @@ object libTypescriptComponentsListListAccordionMod extends Shortcut {
     }
   }
   
-  type _To = ComponentType[PickPropsstyletitlechildr] & (NonReactStatics[
-    ComponentType[Props] & CallHasLeftRightTitleDescriptionChildrenThemeTitleStyleDescriptionStyleTitleNumberOfLinesDescriptionNumberOfLinesStyleIdTestIDOnPressOnLongPressExpandedPropAccessibilityLabel, 
-    js.Object
-  ])
+  type _To = ComponentType[PickPropsstyletitlechildr] & (NonReactStatics[ComponentType[Props] & `19`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsListListAccordionMod.foo` */
-  override def _to: ComponentType[PickPropsstyletitlechildr] & (NonReactStatics[
-    ComponentType[Props] & CallHasLeftRightTitleDescriptionChildrenThemeTitleStyleDescriptionStyleTitleNumberOfLinesDescriptionNumberOfLinesStyleIdTestIDOnPressOnLongPressExpandedPropAccessibilityLabel, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickPropsstyletitlechildr] & (NonReactStatics[ComponentType[Props] & `19`, js.Object]) = default
 }

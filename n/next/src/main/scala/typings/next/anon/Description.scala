@@ -19,7 +19,7 @@ trait Description extends StObject {
       /* buffer */ js.typedarray.Uint8Array, 
       /* width */ Double, 
       /* height */ Double, 
-      /* hasNumRotations */ RotateOptions, 
+      /* param3 */ RotateOptions, 
       js.Promise[default]
     ]
   ]
@@ -35,7 +35,7 @@ object Description {
         /* buffer */ js.typedarray.Uint8Array, 
         /* width */ Double, 
         /* height */ Double, 
-        /* hasNumRotations */ RotateOptions, 
+        /* param3 */ RotateOptions, 
         js.Promise[default]
       ]
     ]
@@ -56,7 +56,7 @@ object Description {
             /* buffer */ js.typedarray.Uint8Array, 
             /* width */ Double, 
             /* height */ Double, 
-            /* hasNumRotations */ RotateOptions, 
+            /* param3 */ RotateOptions, 
             js.Promise[default]
           ]
         ]

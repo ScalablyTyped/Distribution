@@ -14,13 +14,13 @@ object distSrcPinRemoteUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decodePin(hasNameStatusCid: Cid): Pin = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePin")(hasNameStatusCid.asInstanceOf[js.Any]).asInstanceOf[Pin]
+  inline def decodePin(param0: Cid): Pin = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePin")(param0.asInstanceOf[js.Any]).asInstanceOf[Pin]
   
-  inline def encodeAddParams(hasCidServiceBackgroundNameOrigins: AddOptions & CidCID): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeAddParams")(hasCidServiceBackgroundNameOrigins.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
+  inline def encodeAddParams(param0: AddOptions & CidCID): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeAddParams")(param0.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
   
   inline def encodeCID(cid: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeCID")(cid.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def encodeQuery(hasServiceCidNameStatusAll: Query & All): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeQuery")(hasServiceCidNameStatusAll.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
+  inline def encodeQuery(param0: Query & All): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeQuery")(param0.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
   
   inline def encodeService(service: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeService")(service.asInstanceOf[js.Any]).asInstanceOf[String]
   

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "babel__plugin-transform-runtime"
-version := "7.9-dt-20211202Z-60375c"
-scalaVersion := "3.1.2"
+version := "7.9-dt-20211202Z-e1f747"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

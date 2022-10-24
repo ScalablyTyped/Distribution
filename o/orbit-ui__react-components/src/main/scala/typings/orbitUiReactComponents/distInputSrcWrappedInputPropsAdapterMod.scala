@@ -13,7 +13,7 @@ object distInputSrcWrappedInputPropsAdapterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def wrappedInputPropsAdapter[P /* <: `3` */](hasClassNameRest: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(hasClassNameRest.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
+  inline def wrappedInputPropsAdapter[P /* <: `3` */](param0: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(param0.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
   
   trait AdaptedWrappedInputProps extends StObject {
     

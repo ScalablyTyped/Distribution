@@ -59,13 +59,9 @@ object mod {
     /* "up" */ val Up: typings.nukaCarousel.libTypesMod.Directions.Up & String = js.native
   }
   
-  inline def NextButton(
-    hasNextSlideHasNextButtonClassNameNextButtonStyleNextButtonTextNextButtonOnClickDisabledOnUserNavigation: ControlProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NextButton")(hasNextSlideHasNextButtonClassNameNextButtonStyleNextButtonTextNextButtonOnClickDisabledOnUserNavigation.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NextButton(param0: ControlProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NextButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def PagingDots(
-    hasPagingDotsIndicesHasPagingDotsContainerClassNamePagingDotsClassNamePagingDotsStylePagingDotsOnClickCurrentSlideOnUserNavigationSlideCountGoToSlide: ControlProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PagingDots")(hasPagingDotsIndicesHasPagingDotsContainerClassNamePagingDotsClassNamePagingDotsStylePagingDotsOnClickCurrentSlideOnUserNavigationSlideCountGoToSlide.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PagingDots(param0: ControlProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PagingDots")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("nuka-carousel", "Positions")
   @js.native
@@ -93,9 +89,7 @@ object mod {
     /* "TopRight" */ val TopRight: typings.nukaCarousel.libTypesMod.Positions.TopRight & String = js.native
   }
   
-  inline def PreviousButton(
-    hasPreviousSlideHasPrevButtonClassNamePrevButtonStylePrevButtonTextPrevButtonOnClickOnUserNavigationDisabled: ControlProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PreviousButton")(hasPreviousSlideHasPrevButtonClassNamePrevButtonStylePrevButtonTextPrevButtonOnClickOnUserNavigationDisabled.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PreviousButton(param0: ControlProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PreviousButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("nuka-carousel", "ScrollMode")
   @js.native

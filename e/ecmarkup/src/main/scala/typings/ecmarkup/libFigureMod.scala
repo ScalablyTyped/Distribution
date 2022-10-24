@@ -46,7 +46,7 @@ object libFigureMod {
     def elements: js.Array[String] = js.native
     inline def elements_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
-    inline def enter(hasSpecNode: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enter")(hasSpecNode.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def enter(param0: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enter")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 

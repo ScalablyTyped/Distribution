@@ -12,5 +12,5 @@ object distServerPostProcessMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def postProcessHTML(pathname: String, content: String, renderOpts: RenderOpts, hasInAmpModeHybridAmp: HybridAmp): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("postProcessHTML")(pathname.asInstanceOf[js.Any], content.asInstanceOf[js.Any], renderOpts.asInstanceOf[js.Any], hasInAmpModeHybridAmp.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def postProcessHTML(pathname: String, content: String, renderOpts: RenderOpts, param3: HybridAmp): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("postProcessHTML")(pathname.asInstanceOf[js.Any], content.asInstanceOf[js.Any], renderOpts.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

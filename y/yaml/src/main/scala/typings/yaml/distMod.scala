@@ -295,7 +295,7 @@ object distMod {
   @js.native
   open class Schema protected ()
     extends typings.yaml.distSchemaSchemaMod.Schema {
-    def this(hasCompatCustomTagsMergeResolveKnownTagsSchemaSortMapEntriesToStringDefaults: SchemaOptions) = this()
+    def this(param0: SchemaOptions) = this()
   }
   
   @JSImport("yaml/dist", "YAMLError")

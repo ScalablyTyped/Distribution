@@ -32,7 +32,7 @@ object buildIosMapsMod {
   
   inline def removeMapsCocoaPods(src: String): MergeResults = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMapsCocoaPods")(src.asInstanceOf[js.Any]).asInstanceOf[MergeResults]
   
-  inline def setGoogleMapsApiKey(config: PickExpoConfigios, hasGMSApiKeyInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleMapsApiKey")(config.asInstanceOf[js.Any], hasGMSApiKeyInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+  inline def setGoogleMapsApiKey(config: PickExpoConfigios, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleMapsApiKey")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
   
   @JSImport("@expo/config-plugins/build/ios/Maps", "withMaps")
   @js.native

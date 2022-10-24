@@ -21,7 +21,7 @@ object distLibEslintRunLintCheckMod {
       /* eslintrcFile */ String | Null, 
       /* pkgJsonPath */ String | Null, 
       /* hasAppDir */ Boolean, 
-      /* hasLintDuringBuildEslintOptionsReportErrorsOnlyMaxWarningsFormatterOutputFile */ Formatter, 
+      /* param5 */ Formatter, 
       js.Promise[String | Null | EventInfo]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("runLintCheck")(baseDir.asInstanceOf[js.Any], lintDirs.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
@@ -31,7 +31,7 @@ object distLibEslintRunLintCheckMod {
       /* eslintrcFile */ String | Null, 
       /* pkgJsonPath */ String | Null, 
       /* hasAppDir */ Boolean, 
-      /* hasLintDuringBuildEslintOptionsReportErrorsOnlyMaxWarningsFormatterOutputFile */ Formatter, 
+      /* param5 */ Formatter, 
       js.Promise[String | Null | EventInfo]
     ]
   ]]

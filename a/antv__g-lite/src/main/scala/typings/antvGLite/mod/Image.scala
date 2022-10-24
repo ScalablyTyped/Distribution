@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Image ()
   extends typings.antvGLite.distDisplayObjectsMod.Image {
-  def this(hasStyleRest: DisplayObjectConfig[ImageStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[ImageStyleProps]) = this()
 }

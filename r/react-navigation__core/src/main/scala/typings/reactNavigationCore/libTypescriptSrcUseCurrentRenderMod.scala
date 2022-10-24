@@ -18,7 +18,7 @@ object libTypescriptSrcUseCurrentRenderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasStateNavigationDescriptors: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateNavigationDescriptors.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(param0: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     

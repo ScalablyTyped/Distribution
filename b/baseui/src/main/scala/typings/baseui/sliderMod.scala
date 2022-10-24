@@ -19,9 +19,7 @@ object sliderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Slider(
-    hasOverridesDisabledMarksOnChangeOnFinalChangeMinMaxStepPersistentThumbValueToLabelProvidedValue: SliderProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Slider")(hasOverridesDisabledMarksOnChangeOnFinalChangeMinMaxStepPersistentThumbValueToLabelProvidedValue.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Slider(param0: SliderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Slider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/slider", "StatefulContainer")
   @js.native

@@ -15,10 +15,10 @@ object distTypesResizingHeightMod {
   
   inline def default(opts: ResizingHeightOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def ResizingHeight(hasChildrenProps: ResizingHeightOptschildre): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizingHeight")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def ResizingHeight(param0: ResizingHeightOptschildre): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizingHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
   
   inline def useResizingHeight(): RefCallbackRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizingHeight")().asInstanceOf[RefCallbackRef]
-  inline def useResizingHeight(hasCalcDurationCalcTimingFunction: ResizingHeightOpts): RefCallbackRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizingHeight")(hasCalcDurationCalcTimingFunction.asInstanceOf[js.Any]).asInstanceOf[RefCallbackRef]
+  inline def useResizingHeight(param0: ResizingHeightOpts): RefCallbackRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizingHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[RefCallbackRef]
   
   trait ResizingHeightOpts extends StObject {
     

@@ -15,5 +15,5 @@ object distLibOutputThemesDefaultPartialsMemberDotsignatureDottitleMod {
   val ^ : js.Any = js.native
   
   inline def memberSignatureTitle(context: DefaultThemeRenderContext, props: SignatureReflection): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("memberSignatureTitle")(context.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
-  inline def memberSignatureTitle(context: DefaultThemeRenderContext, props: SignatureReflection, hasHideNameArrowStyle: ArrowStyle): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("memberSignatureTitle")(context.asInstanceOf[js.Any], props.asInstanceOf[js.Any], hasHideNameArrowStyle.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
+  inline def memberSignatureTitle(context: DefaultThemeRenderContext, props: SignatureReflection, param2: ArrowStyle): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("memberSignatureTitle")(context.asInstanceOf[js.Any], props.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
 }

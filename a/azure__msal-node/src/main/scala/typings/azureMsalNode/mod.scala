@@ -1132,7 +1132,7 @@ object mod {
     def this(tokenCache: ISerializableTokenCache, hasChanged: Boolean) = this()
   }
   
-  inline def buildAppConfiguration(hasAuthCacheSystemTelemetry: Configuration): NodeConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAppConfiguration")(hasAuthCacheSystemTelemetry.asInstanceOf[js.Any]).asInstanceOf[NodeConfiguration]
+  inline def buildAppConfiguration(param0: Configuration): NodeConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAppConfiguration")(param0.asInstanceOf[js.Any]).asInstanceOf[NodeConfiguration]
   
   @JSImport("@azure/msal-node", "version")
   @js.native

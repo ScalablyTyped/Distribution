@@ -88,7 +88,7 @@ object libTransferListMod {
     
     var defaultListBodyRef: RefObject[typings.antd.libTransferListBodyMod.default[RecordType]] = js.native
     
-    def getCheckBox(hasFilteredItemsOnItemSelectAllDisabledPrefixCls: Disabled[RecordType]): `false` | Element = js.native
+    def getCheckBox(param0: Disabled[RecordType]): `false` | Element = js.native
     
     def getCheckStatus(filteredItems: js.Array[RecordType]): none | all | part = js.native
     

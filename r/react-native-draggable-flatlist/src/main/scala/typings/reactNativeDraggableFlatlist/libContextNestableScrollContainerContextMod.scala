@@ -13,7 +13,7 @@ object libContextNestableScrollContainerContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def NestableScrollContainerProvider(hasChildren: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NestableScrollContainerProvider")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NestableScrollContainerProvider(param0: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NestableScrollContainerProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useNestableScrollContainerContext(): ContainerRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestableScrollContainerContext")().asInstanceOf[ContainerRef]
 }

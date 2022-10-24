@@ -59,7 +59,7 @@ object inertiaPluginMod extends Shortcut {
     
     var one_ve_v0: js.UndefOr[Double] = js.native
     
-    def resume(hasPointerEventEventTarget: PointerArgPropstypedown): Unit = js.native
+    def resume(param0: PointerArgPropstypedown): Unit = js.native
     
     var smoothEnd: Boolean = js.native
     

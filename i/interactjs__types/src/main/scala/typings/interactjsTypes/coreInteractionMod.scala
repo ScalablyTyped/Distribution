@@ -116,14 +116,14 @@ object coreInteractionMod {
   @js.native
   open class default[T /* <: ActionName | Null */] protected () extends Interaction[T] {
     /** */
-    def this(hasPointerTypeScopeFire: ScopeFire) = this()
+    def this(param0: ScopeFire) = this()
   }
   
   @JSImport("@interactjs/core/Interaction", "Interaction")
   @js.native
   open class Interaction[T /* <: ActionName | Null */] protected () extends StObject {
     /** */
-    def this(hasPointerTypeScopeFire: ScopeFire) = this()
+    def this(param0: ScopeFire) = this()
     
     @JSName("_createPreparedEvent")
     def _createPreparedEvent_end(event: PointerEventType, phase: end): InteractEvent[T, end] = js.native

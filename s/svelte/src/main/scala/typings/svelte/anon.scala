@@ -745,8 +745,8 @@ object anon {
     
     def render(): Css = js.native
     def render(props: js.Object): Css = js.native
-    def render(props: js.Object, hasDollarDollarslotsContext: Context): Css = js.native
-    def render(props: Unit, hasDollarDollarslotsContext: Context): Css = js.native
+    def render(props: js.Object, param1: Context): Css = js.native
+    def render(props: Unit, param1: Context): Css = js.native
   }
   
   /* Inlined std.SVGElement & {getTotalLength (): number} */

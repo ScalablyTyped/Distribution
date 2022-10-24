@@ -11,5 +11,5 @@ object distBuildWebpackConfigBlocksCssLoadersClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getClientStyleLoader(hasIsAppDirIsDevelopmentAssetPrefix: IsAppDir): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientStyleLoader")(hasIsAppDirIsDevelopmentAssetPrefix.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getClientStyleLoader(param0: IsAppDir): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientStyleLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

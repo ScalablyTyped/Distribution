@@ -50,7 +50,7 @@ object componentsUiShellNavigationMenuMod {
     
     def _handleKeyDown(event: KeyboardEvent): Unit = js.native
     
-    def changeNavSubmenuState(hasMatchesNavSubmenuShouldBeCollapsed: MatchesNavSubmenu): Unit = js.native
+    def changeNavSubmenuState(param0: MatchesNavSubmenu): Unit = js.native
     
     def getCurrentNavigation(): Element = js.native
     

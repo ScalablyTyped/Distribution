@@ -19,6 +19,6 @@ object distTypesCirclePackingCanvasMod {
   val ^ : js.Any = js.native
   
   inline def CirclePackingCanvas[RawDatum](
-    hasIsInteractiveThemeOtherProps: (Partial[Omit[CirclePackingCanvasProps[RawDatum], data | height | width]]) & (Pick[CirclePackingCanvasProps[RawDatum], data | height | width])
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePackingCanvas")(hasIsInteractiveThemeOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    param0: (Partial[Omit[CirclePackingCanvasProps[RawDatum], data | height | width]]) & (Pick[CirclePackingCanvasProps[RawDatum], data | height | width])
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePackingCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "append-field"
-version := "2.0.0-b44942"
-scalaVersion := "3.1.2"
+version := "2.0.0-2f61ab"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

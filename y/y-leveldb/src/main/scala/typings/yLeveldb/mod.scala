@@ -28,7 +28,7 @@ object mod {
       * @param {object} [opts.levelOptions] Options that are passed down to the level instance
       */
     def this(location: String) = this()
-    def this(location: String, hasLevelLevelOptions: Level) = this()
+    def this(location: String, param1: Level) = this()
     
     /**
       * Execute an transaction on a database. This will ensure that other processes are currently not writing.

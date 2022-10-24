@@ -11,5 +11,5 @@ object distTypesComponentsGridLineMod {
   
   @JSImport("@nivo/axes/dist/types/components/GridLine", "GridLine")
   @js.native
-  val GridLine: MemoExoticComponent[js.Function1[/* hasAnimatedProps */ AnimatedProps, Element]] = js.native
+  val GridLine: MemoExoticComponent[js.Function1[/* param0 */ AnimatedProps, Element]] = js.native
 }

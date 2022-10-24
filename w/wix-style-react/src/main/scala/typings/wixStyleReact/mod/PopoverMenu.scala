@@ -1,16 +1,16 @@
 package typings.wixStyleReact.mod
 
 import typings.react.mod.ReactElement
-import typings.wixStyleReact.popoverMenuMod.PopoverMenuDividerProps
-import typings.wixStyleReact.popoverMenuMod.PopoverMenuItemProps
-import typings.wixStyleReact.popoverMenuMod.default
+import typings.wixStyleReact.distTypesPopoverMenuMod.PopoverMenuDividerProps
+import typings.wixStyleReact.distTypesPopoverMenuMod.PopoverMenuItemProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "PopoverMenu")
 @js.native
-class PopoverMenu () extends default
+open class PopoverMenu ()
+  extends typings.wixStyleReact.distTypesPopoverMenuMod.default
 /* static members */
 object PopoverMenu {
   

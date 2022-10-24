@@ -59,7 +59,7 @@ object distTypesSrcHashesHasherMod {
     var name_Hasher: Name = js.native
   }
   
-  inline def from[Name /* <: String */, Code /* <: Double */](hasNameCodeEncode: Encode[Name, Code]): Hasher[Name, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(hasNameCodeEncode.asInstanceOf[js.Any]).asInstanceOf[Hasher[Name, Code]]
+  inline def from[Name /* <: String */, Code /* <: Double */](param0: Encode[Name, Code]): Hasher[Name, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(param0.asInstanceOf[js.Any]).asInstanceOf[Hasher[Name, Code]]
   
   type Await[T] = js.Promise[T] | T
   

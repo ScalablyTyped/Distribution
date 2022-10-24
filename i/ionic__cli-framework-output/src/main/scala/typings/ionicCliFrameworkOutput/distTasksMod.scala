@@ -38,7 +38,7 @@ object distTasksMod {
   @JSImport("@ionic/cli-framework-output/dist/tasks", "Task")
   @js.native
   open class Task () extends EventEmitter {
-    def this(hasMsgTickInterval: TaskOptions) = this()
+    def this(param0: TaskOptions) = this()
     
     /* protected */ var _msg: String = js.native
     
@@ -97,7 +97,7 @@ object distTasksMod {
   @JSImport("@ionic/cli-framework-output/dist/tasks", "TaskChain")
   @js.native
   open class TaskChain () extends EventEmitter {
-    def this(hasTaskOptions: TaskChainOptions) = this()
+    def this(param0: TaskChainOptions) = this()
     
     def cleanup(): this.type = js.native
     

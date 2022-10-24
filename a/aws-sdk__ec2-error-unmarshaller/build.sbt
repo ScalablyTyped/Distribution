@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__ec2-error-unmarshaller"
-version := "0.1.0-preview.2-504d9e"
-scalaVersion := "3.1.2"
+version := "0.1.0-preview.2-902a08"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

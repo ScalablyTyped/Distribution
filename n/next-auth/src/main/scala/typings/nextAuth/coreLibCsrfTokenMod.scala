@@ -12,7 +12,7 @@ object coreLibCsrfTokenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createCSRFToken(hasOptionsCookieValueIsPostBodyValue: CreateCSRFTokenParams): Cookie | CsrfToken = ^.asInstanceOf[js.Dynamic].applyDynamic("createCSRFToken")(hasOptionsCookieValueIsPostBodyValue.asInstanceOf[js.Any]).asInstanceOf[Cookie | CsrfToken]
+  inline def createCSRFToken(param0: CreateCSRFTokenParams): Cookie | CsrfToken = ^.asInstanceOf[js.Dynamic].applyDynamic("createCSRFToken")(param0.asInstanceOf[js.Any]).asInstanceOf[Cookie | CsrfToken]
   
   trait CreateCSRFTokenParams extends StObject {
     

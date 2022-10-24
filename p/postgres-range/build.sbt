@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "postgres-range"
-version := "1.1.3-a0ce62"
-scalaVersion := "3.1.2"
+version := "1.1.3-402725"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

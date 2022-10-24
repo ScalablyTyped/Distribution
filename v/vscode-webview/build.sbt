@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "vscode-webview"
-version := "1.57-dt-20220829Z-110087"
-scalaVersion := "3.1.2"
+version := "1.57-dt-20220829Z-54f214"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

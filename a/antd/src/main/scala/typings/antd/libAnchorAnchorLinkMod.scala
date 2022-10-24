@@ -51,7 +51,7 @@ object libAnchorAnchorLinkMod {
     def componentDidMount_MAnchorLink(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MAnchorLink(hasPrevHref: AnchorLinkProps): Unit = js.native
+    def componentDidUpdate_MAnchorLink(param0: AnchorLinkProps): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MAnchorLink(): Unit = js.native
@@ -61,7 +61,7 @@ object libAnchorAnchorLinkMod {
     
     def handleClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
     
-    def renderAnchorLink(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+    def renderAnchorLink(param0: ConfigConsumerProps): Element = js.native
   }
   
   trait AnchorLinkProps extends StObject {

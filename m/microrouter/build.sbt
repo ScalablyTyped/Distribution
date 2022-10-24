@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "microrouter"
-version := "3.1-dt-20220614Z-4a7cb2"
-scalaVersion := "3.1.2"
+version := "3.1-dt-20220614Z-48825f"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "micro" % "7.3-dt-20220301Z-f56b11",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "url-pattern" % "1.0.3-b13e9f")
+  "org.scalablytyped" %%% "micro" % "7.3-dt-20220301Z-8cfe67",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "url-pattern" % "1.0.3-0f7e31")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

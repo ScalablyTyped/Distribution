@@ -14,7 +14,7 @@ object distTypesCoreServicesGroupProjectsMod {
   @JSImport("gitlab/dist/types/core/services/GroupProjects", "GroupProjects")
   @js.native
   open class GroupProjects () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def add(groupId: String, projectId: String): js.Promise[js.Object] = js.native
     def add(groupId: String, projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native

@@ -39,7 +39,7 @@ object mod {
   
   inline def sleepForever(): js.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleepForever")().asInstanceOf[js.Promise[scala.Nothing]]
   
-  inline def sleepUntil(predicate: js.Function0[Boolean], hasIntervalTimeout: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sleepUntil")(predicate.asInstanceOf[js.Any], hasIntervalTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def sleepUntil(predicate: js.Function0[Boolean], param1: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sleepUntil")(predicate.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   type ExitFn = js.Function0[js.Promise[Unit]]
 }

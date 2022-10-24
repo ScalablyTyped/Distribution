@@ -32,7 +32,7 @@ object libConfigProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /* Inlined react.react.FC<antd.antd/lib/config-provider.ConfigProviderProps> & {  ConfigContext :react.react.Context<antd.antd/lib/config-provider/context.ConfigConsumerProps>,   SizeContext :react.react.Context<antd.antd/lib/config-provider/SizeContext.SizeType>,   config :(hasPrefixClsIconPrefixClsTheme : std.Pick<antd.antd/lib/config-provider.ConfigProviderProps, 'prefixCls' | 'iconPrefixCls'> & {  theme :antd.antd/lib/config-provider/context.Theme | undefined}): void} */
+  /* Inlined react.react.FC<antd.antd/lib/config-provider.ConfigProviderProps> & {  ConfigContext :react.react.Context<antd.antd/lib/config-provider/context.ConfigConsumerProps>,   SizeContext :react.react.Context<antd.antd/lib/config-provider/SizeContext.SizeType>,   config :(param0 : std.Pick<antd.antd/lib/config-provider.ConfigProviderProps, 'prefixCls' | 'iconPrefixCls'> & {  theme :antd.antd/lib/config-provider/context.Theme | undefined}): void} */
   object default {
     
     inline def apply(props: ConfigProviderProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
@@ -54,8 +54,8 @@ object libConfigProviderMod {
     
     @JSImport("antd/lib/config-provider", "default.config")
     @js.native
-    def config: js.Function1[/* hasPrefixClsIconPrefixClsTheme */ PickConfigProviderPropspr, Unit] = js.native
-    inline def config_=(x: js.Function1[/* hasPrefixClsIconPrefixClsTheme */ PickConfigProviderPropspr, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
+    def config: js.Function1[/* param0 */ PickConfigProviderPropspr, Unit] = js.native
+    inline def config_=(x: js.Function1[/* param0 */ PickConfigProviderPropspr, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/config-provider", "default.contextTypes")
     @js.native

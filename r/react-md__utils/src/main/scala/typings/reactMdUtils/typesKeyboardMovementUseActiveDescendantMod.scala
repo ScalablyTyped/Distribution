@@ -13,7 +13,7 @@ object typesKeyboardMovementUseActiveDescendantMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useActiveDescendant[E /* <: HTMLElement */](hasIdRef: ActiveDescendantHookOptions[E]): ActiveDescendantHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendant")(hasIdRef.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantHookReturnValue[E]]
+  inline def useActiveDescendant[E /* <: HTMLElement */](param0: ActiveDescendantHookOptions[E]): ActiveDescendantHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendant")(param0.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantHookReturnValue[E]]
   
   trait ActiveDescendantHookOptions[E /* <: HTMLElement */] extends StObject {
     

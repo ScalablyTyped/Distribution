@@ -17,9 +17,7 @@ object distTypesTreeMapNodesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TreeMapNodes[Datum /* <: js.Object */](
-    hasNodesNodeComponentBorderWidthEnableLabelLabelSkipSizeEnableParentLabelIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltip: TreeMapNodesProps[Datum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapNodes")(hasNodesNodeComponentBorderWidthEnableLabelLabelSkipSizeEnableParentLabelIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltip.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TreeMapNodes[Datum /* <: js.Object */](param0: TreeMapNodesProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapNodes")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TreeMapNodesProps[Datum /* <: js.Object */] extends StObject {
     

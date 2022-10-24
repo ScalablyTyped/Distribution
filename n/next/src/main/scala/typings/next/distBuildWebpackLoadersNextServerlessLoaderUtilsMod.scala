@@ -18,7 +18,7 @@ object distBuildWebpackLoadersNextServerlessLoaderUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getUtils(hasPageI18nBasePathRewritesPageIsDynamicTrailingSlash: BasePath): DefaultRouteMatches = ^.asInstanceOf[js.Dynamic].applyDynamic("getUtils")(hasPageI18nBasePathRewritesPageIsDynamicTrailingSlash.asInstanceOf[js.Any]).asInstanceOf[DefaultRouteMatches]
+  inline def getUtils(param0: BasePath): DefaultRouteMatches = ^.asInstanceOf[js.Dynamic].applyDynamic("getUtils")(param0.asInstanceOf[js.Any]).asInstanceOf[DefaultRouteMatches]
   
   inline def interpolateDynamicPath(
     pathname: String,

@@ -449,7 +449,7 @@ object mod {
   
   inline def commandCallStructure(commandName: String, args: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("commandCallStructure")(commandName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def devtoolsEnvironmentDetector(hasBrowserName: Capabilities): IsChrome = ^.asInstanceOf[js.Dynamic].applyDynamic("devtoolsEnvironmentDetector")(hasBrowserName.asInstanceOf[js.Any]).asInstanceOf[IsChrome]
+  inline def devtoolsEnvironmentDetector(param0: Capabilities): IsChrome = ^.asInstanceOf[js.Dynamic].applyDynamic("devtoolsEnvironmentDetector")(param0.asInstanceOf[js.Any]).asInstanceOf[IsChrome]
   
   /**
     * execute test or hook asynchronously
@@ -605,7 +605,7 @@ object mod {
   
   inline def safeRequire(name: String): ServicePlugin | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("safeRequire")(name.asInstanceOf[js.Any]).asInstanceOf[ServicePlugin | Null]
   
-  inline def sessionEnvironmentDetector(hasCapabilitiesRequestedCapabilities: typings.wdioUtils.anon.Capabilities): IsFirefox = ^.asInstanceOf[js.Dynamic].applyDynamic("sessionEnvironmentDetector")(hasCapabilitiesRequestedCapabilities.asInstanceOf[js.Any]).asInstanceOf[IsFirefox]
+  inline def sessionEnvironmentDetector(param0: typings.wdioUtils.anon.Capabilities): IsFirefox = ^.asInstanceOf[js.Dynamic].applyDynamic("sessionEnvironmentDetector")(param0.asInstanceOf[js.Any]).asInstanceOf[IsFirefox]
   
   inline def sleep(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")().asInstanceOf[js.Promise[Any]]
   inline def sleep(ms: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]

@@ -37,7 +37,7 @@ open class Context protected () extends StObject {
   
   var blendFunc: BlendFunc = js.native
   
-  def clear(hasColorDepth: ClearArgs): scala.Unit = js.native
+  def clear(param0: ClearArgs): scala.Unit = js.native
   
   var clearColor: ClearColor = js.native
   

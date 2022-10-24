@@ -6,29 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Bottom extends StObject {
   
-  var bottom: Double
+  var bottom: Any
   
-  var left: Double
+  var left: Any
   
-  var right: Double
+  var right: Any
   
-  var top: Double
+  var top: Any
 }
 object Bottom {
   
-  inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
+  inline def apply(bottom: Any, left: Any, right: Any, top: Any): Bottom = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bottom]
   }
   
   extension [Self <: Bottom](x: Self) {
     
-    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Any): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

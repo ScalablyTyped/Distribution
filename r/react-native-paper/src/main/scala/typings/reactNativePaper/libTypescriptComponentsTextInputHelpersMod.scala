@@ -18,13 +18,13 @@ object libTypescriptComponentsTextInputHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def adjustPaddingFlat(hasPadScaleMultilineLabelHeightOffsetDenseFontSizeIsAndroidStyles: AdjProps): Padding = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustPaddingFlat")(hasPadScaleMultilineLabelHeightOffsetDenseFontSizeIsAndroidStyles.asInstanceOf[js.Any]).asInstanceOf[Padding]
+  inline def adjustPaddingFlat(param0: AdjProps): Padding = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustPaddingFlat")(param0.asInstanceOf[js.Any]).asInstanceOf[Padding]
   
-  inline def adjustPaddingOut(hasPadMultilineLabelScaleHeightFontSizeLineHeightDenseOffsetIsAndroid: AdjProps): Padding = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustPaddingOut")(hasPadMultilineLabelScaleHeightFontSizeLineHeightDenseOffsetIsAndroid.asInstanceOf[js.Any]).asInstanceOf[Padding]
+  inline def adjustPaddingOut(param0: AdjProps): Padding = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustPaddingOut")(param0.asInstanceOf[js.Any]).asInstanceOf[Padding]
   
-  inline def calculateFlatAffixTopPosition(hasHeightPaddingTopPaddingBottomAffixHeight: AffixHeight): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateFlatAffixTopPosition")(hasHeightPaddingTopPaddingBottomAffixHeight.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculateFlatAffixTopPosition(param0: AffixHeight): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateFlatAffixTopPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def calculateFlatInputHorizontalPadding(hasAdornmentConfig: AdornmentConfigArray): PaddingRight = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateFlatInputHorizontalPadding")(hasAdornmentConfig.asInstanceOf[js.Any]).asInstanceOf[PaddingRight]
+  inline def calculateFlatInputHorizontalPadding(param0: AdornmentConfigArray): PaddingRight = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateFlatInputHorizontalPadding")(param0.asInstanceOf[js.Any]).asInstanceOf[PaddingRight]
   
   inline def calculateInputHeight(labelHeight: Double, height: Any, minHeight: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateInputHeight")(labelHeight.asInstanceOf[js.Any], height.asInstanceOf[js.Any], minHeight.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -33,7 +33,7 @@ object libTypescriptComponentsTextInputHelpersMod {
   inline def calculateLabelTopPosition(labelHeight: Double, height: Double, optionalPadding: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLabelTopPosition")(labelHeight.asInstanceOf[js.Any], height.asInstanceOf[js.Any], optionalPadding.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def calculateLabelTopPosition(labelHeight: Double, height: Unit, optionalPadding: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateLabelTopPosition")(labelHeight.asInstanceOf[js.Any], height.asInstanceOf[js.Any], optionalPadding.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def calculateOutlinedIconAndAffixTopPosition(hasHeightAffixHeightLabelYOffset: LabelYOffset): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateOutlinedIconAndAffixTopPosition")(hasHeightAffixHeightLabelYOffset.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculateOutlinedIconAndAffixTopPosition(param0: LabelYOffset): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateOutlinedIconAndAffixTopPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def calculatePadding(props: PaddingProps): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePadding")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
   

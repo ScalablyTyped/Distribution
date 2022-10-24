@@ -32,10 +32,10 @@ object typesHoverMod {
   @js.native
   val HoverModeContextProvider: Provider[HoverModeContext] = js.native
   
-  inline def HoverModeProvider(hasChildrenDisabledDefaultVisibleInTimeDeactivateTime: HoverModeProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HoverModeProvider")(hasChildrenDisabledDefaultVisibleInTimeDeactivateTime.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def HoverModeProvider(param0: HoverModeProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HoverModeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useHoverMode(): HoverModeHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverMode")().asInstanceOf[HoverModeHookReturnValue]
-  inline def useHoverMode(hasDisabledDefaultVisibleExitVisibilityDelay: HoverModeOptions): HoverModeHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverMode")(hasDisabledDefaultVisibleExitVisibilityDelay.asInstanceOf[js.Any]).asInstanceOf[HoverModeHookReturnValue]
+  inline def useHoverMode(param0: HoverModeOptions): HoverModeHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverMode")(param0.asInstanceOf[js.Any]).asInstanceOf[HoverModeHookReturnValue]
   
   inline def useHoverModeContext(): HoverModeContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverModeContext")().asInstanceOf[HoverModeContext]
 }

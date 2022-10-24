@@ -135,11 +135,9 @@ object mapMarkerMod {
     val small: small_ = js.native
   }
   
-  inline def FixedMarker(
-    hasSizeNeedleLabelStartEnhancerEndEnhancerKindDraggingOverridesLabelEnhancerContentLabelEnhancerPositionBadgeEnhancerSizeBadgeEnhancerContentRestProps: FixedMarkerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FixedMarker")(hasSizeNeedleLabelStartEnhancerEndEnhancerKindDraggingOverridesLabelEnhancerContentLabelEnhancerPositionBadgeEnhancerSizeBadgeEnhancerContentRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FixedMarker(param0: FixedMarkerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FixedMarker")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FloatingMarker(hasLabelSizeAnchorEndEnhancerStartEnhancerAnchorTypeOverrides: FloatingMarkerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FloatingMarker")(hasLabelSizeAnchorEndEnhancerStartEnhancerAnchorTypeOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FloatingMarker(param0: FloatingMarkerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FloatingMarker")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Readonly<{ readonly default :'default',  readonly accent :'accent',  readonly negative :'negative'}> */
   object KIND extends Shortcut {
@@ -214,7 +212,7 @@ object mapMarkerMod {
     val earner: typings.baseui.baseuiStrings.earner = js.native
   }
   
-  inline def LocationPuck(hasSizeHeadingShowHeadingConfidenceRadiusTypeOverrides: LocationPuckProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LocationPuck")(hasSizeHeadingShowHeadingConfidenceRadiusTypeOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LocationPuck(param0: LocationPuckProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LocationPuck")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Readonly<{ readonly none :'none',  readonly short :'short',  readonly medium :'medium',  readonly tall :'tall'}> */
   object NEEDLE_SIZES {

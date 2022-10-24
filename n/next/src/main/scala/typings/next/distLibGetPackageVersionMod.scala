@@ -11,5 +11,5 @@ object distLibGetPackageVersionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getPackageVersion(hasCwdName: Cwd): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageVersion")(hasCwdName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
+  inline def getPackageVersion(param0: Cwd): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageVersion")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
 }

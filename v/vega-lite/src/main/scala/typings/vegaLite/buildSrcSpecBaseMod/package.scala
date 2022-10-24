@@ -16,7 +16,7 @@ inline def DEFAULT_SPACING: /* 20 */ Double = ^.asInstanceOf[js.Dynamic].selectD
 
 inline def extractCompositionLayout(spec: NormalizedSpec, specType: facet | concat, config: CompositionConfigMixins): GenericCompositionLayoutWithColumns = (^.asInstanceOf[js.Dynamic].applyDynamic("extractCompositionLayout")(spec.asInstanceOf[js.Any], specType.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[GenericCompositionLayoutWithColumns]
 
-inline def getStepFor(hasStepOffsetIsDiscrete: OffsetIsDiscrete): StepFor = ^.asInstanceOf[js.Dynamic].applyDynamic("getStepFor")(hasStepOffsetIsDiscrete.asInstanceOf[js.Any]).asInstanceOf[StepFor]
+inline def getStepFor(param0: OffsetIsDiscrete): StepFor = ^.asInstanceOf[js.Dynamic].applyDynamic("getStepFor")(param0.asInstanceOf[js.Any]).asInstanceOf[StepFor]
 
 inline def isFrameMixins(o: Any): /* is vega-lite.vega-lite/build/src/spec/base.FrameMixins<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFrameMixins")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/base.FrameMixins<any> */ Boolean]
 

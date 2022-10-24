@@ -223,6 +223,11 @@ object libTokensMod {
     def rename(oldPath: String, newPath: String): js.Promise[typings.jupyterlabServices.libContentsMod.Contents.IModel] = js.native
     
     /**
+      * Whether to ask the user to rename untitled file on first manual save.
+      */
+    var renameUntitledFileOnSave: Boolean = js.native
+    
+    /**
       * The service manager used by the manager.
       */
     val services: IManager = js.native

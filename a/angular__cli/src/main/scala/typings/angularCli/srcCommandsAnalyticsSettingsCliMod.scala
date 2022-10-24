@@ -127,6 +127,14 @@ object srcCommandsAnalyticsSettingsCliMod {
     
     /* private */ val optionsWithAnalytics: Any = js.native
     
+    /**
+      * Flush on an interval (if the event loop is waiting).
+      *
+      * @returns a method that when called will terminate the periodic
+      * flush and call flush one last time.
+      */
+    /* private */ var periodicAnalyticsFlush: Any = js.native
+    
     def reportAnalytics(options: (OptionsAnalyticsCommandAr & OtherOptions) | OtherOptions): js.Promise[Unit] = js.native
     def reportAnalytics(options: (OptionsAnalyticsCommandAr & OtherOptions) | OtherOptions, paths: js.Array[String]): js.Promise[Unit] = js.native
     def reportAnalytics(
@@ -136,12 +144,36 @@ object srcCommandsAnalyticsSettingsCliMod {
     ): js.Promise[Unit] = js.native
     def reportAnalytics(
       options: (OptionsAnalyticsCommandAr & OtherOptions) | OtherOptions,
+      paths: js.Array[String],
+      dimensions: js.Array[Boolean | Double | String],
+      title: String
+    ): js.Promise[Unit] = js.native
+    def reportAnalytics(
+      options: (OptionsAnalyticsCommandAr & OtherOptions) | OtherOptions,
+      paths: js.Array[String],
+      dimensions: Unit,
+      title: String
+    ): js.Promise[Unit] = js.native
+    def reportAnalytics(
+      options: (OptionsAnalyticsCommandAr & OtherOptions) | OtherOptions,
       paths: Unit,
       dimensions: js.Array[Boolean | Double | String]
     ): js.Promise[Unit] = js.native
+    def reportAnalytics(
+      options: (OptionsAnalyticsCommandAr & OtherOptions) | OtherOptions,
+      paths: Unit,
+      dimensions: js.Array[Boolean | Double | String],
+      title: String
+    ): js.Promise[Unit] = js.native
+    def reportAnalytics(
+      options: (OptionsAnalyticsCommandAr & OtherOptions) | OtherOptions,
+      paths: Unit,
+      dimensions: Unit,
+      title: String
+    ): js.Promise[Unit] = js.native
     
-    def run(hasGlobal: OptionsAnalyticsCommandAr): js.Promise[Unit] = js.native
     def run(options: OptionsAnalyticsCommandAr & OtherOptions): (js.Promise[Double | Unit]) | Double | Unit = js.native
+    def run(param0: OptionsAnalyticsCommandAr): js.Promise[Unit] = js.native
     
     /** Scope in which the command can be executed in. */
     val scope: CommandScope = js.native

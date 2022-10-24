@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nearest-periodic-value"
-version := "1.2-dt-20211223Z-eb73ab"
-scalaVersion := "3.1.2"
+version := "1.2-dt-20211223Z-72c88a"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

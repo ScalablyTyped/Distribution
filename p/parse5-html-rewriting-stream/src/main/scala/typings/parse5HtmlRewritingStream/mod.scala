@@ -40,7 +40,7 @@ object mod {
     def emitStartTag(token: StartTag): Unit = js.native
     
     /** Emits a serialized text token into the output stream. */
-    def emitText(hasText: Text): Unit = js.native
+    def emitText(param0: Text): Unit = js.native
     
     /** Raised when rewriter encounters a comment. */
     @JSName("on")

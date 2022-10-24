@@ -1,13 +1,17 @@
 package typings.wixStyleReact.anon
 
-import typings.wixStyleReact.iconButtonMod.IconButtonPriority
-import typings.wixStyleReact.iconButtonMod.IconButtonSize
-import typings.wixStyleReact.iconButtonMod.IconButtonSkin
+import typings.wixStyleReact.distTypesIconButtonMod.IconButtonPriority
+import typings.wixStyleReact.distTypesIconButtonMod.IconButtonSize
+import typings.wixStyleReact.distTypesIconButtonMod.IconButtonSkin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Priority extends StObject {
+  
+  var ariaLabel: js.UndefOr[String] = js.undefined
+  
+  var ariaLabelledBy: js.UndefOr[String] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -29,6 +33,14 @@ object Priority {
   }
   
   extension [Self <: Priority](x: Self) {
+    
+    inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+    
+    inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

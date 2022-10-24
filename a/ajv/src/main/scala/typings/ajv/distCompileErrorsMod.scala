@@ -15,7 +15,7 @@ object distCompileErrorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def extendErrors(hasGenKeywordSchemaValueDataErrsCountIt: KeywordErrorCxt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendErrors")(hasGenKeywordSchemaValueDataErrsCountIt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def extendErrors(param0: KeywordErrorCxt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendErrors")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("ajv/dist/compile/errors", "keyword$DataError")
   @js.native

@@ -103,7 +103,7 @@ object cjsListOptionMod {
   
   object default {
     
-    inline def apply[TDataItem](hasClassNameChildrenDataItemSelectedDisabledOnSelect_Props: ListOptionProps[TDataItem]): Element = ^.asInstanceOf[js.Dynamic].apply(hasClassNameChildrenDataItemSelectedDisabledOnSelect_Props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[TDataItem](param0: ListOptionProps[TDataItem]): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-widgets/cjs/ListOption", JSImport.Default)
     @js.native

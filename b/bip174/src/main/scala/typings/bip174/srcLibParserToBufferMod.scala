@@ -13,7 +13,7 @@ object srcLibParserToBufferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def psbtToBuffer(hasGlobalMapInputsOutputs: PsbtAttributes): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("psbtToBuffer")(hasGlobalMapInputsOutputs.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def psbtToBuffer(param0: PsbtAttributes): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("psbtToBuffer")(param0.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  inline def psbtToKeyVals(hasGlobalMapInputsOutputs: PsbtAttributes): GlobalKeyVals = ^.asInstanceOf[js.Dynamic].applyDynamic("psbtToKeyVals")(hasGlobalMapInputsOutputs.asInstanceOf[js.Any]).asInstanceOf[GlobalKeyVals]
+  inline def psbtToKeyVals(param0: PsbtAttributes): GlobalKeyVals = ^.asInstanceOf[js.Dynamic].applyDynamic("psbtToKeyVals")(param0.asInstanceOf[js.Any]).asInstanceOf[GlobalKeyVals]
 }

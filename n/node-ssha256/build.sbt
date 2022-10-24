@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "node-ssha256"
-version := "0.1-dt-20211202Z-d56a92"
-scalaVersion := "3.1.2"
+version := "0.1-dt-20211202Z-88223a"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

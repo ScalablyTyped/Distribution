@@ -13,5 +13,5 @@ object distTypesBarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Bar[RawDatum /* <: BarDatum */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: BarSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bar")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Bar[RawDatum /* <: BarDatum */](param0: BarSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "detect-indent"
-version := "7.0.1-0908d7"
-scalaVersion := "3.1.2"
+version := "7.0.1-3f4568"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

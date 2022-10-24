@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "add2home"
-version := "v2.0.5-dt-20220818Z-71fa7c"
-scalaVersion := "3.1.2"
+version := "v2.0.5-dt-20220818Z-6bddca"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

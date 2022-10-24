@@ -130,11 +130,6 @@ object SemanticUI {
         __obj.asInstanceOf[ErrorSettings]
       }
       
-      extension [Self <: ErrorSettings](x: Self) {
-        
-        inline def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
-      }
-      
       trait Impl extends StObject {
         
         /**
@@ -153,6 +148,11 @@ object SemanticUI {
           
           inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         }
+      }
+      
+      extension [Self <: ErrorSettings](x: Self) {
+        
+        inline def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       }
       
       /* Inlined std.Pick<semantic-ui-rating.SemanticUI.Rating.ErrorSettings._Impl, 'action'> & std.Partial<std.Pick<semantic-ui-rating.SemanticUI.Rating.ErrorSettings._Impl, keyof semantic-ui-rating.SemanticUI.Rating.ErrorSettings._Impl>> */
@@ -206,6 +206,11 @@ object SemanticUI {
         }
       }
       
+      extension [Self <: SelectorSettings](x: Self) {
+        
+        inline def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      }
+      
       /* Inlined std.Pick<semantic-ui-rating.SemanticUI.Rating.SelectorSettings._Impl, 'icon'> & std.Partial<std.Pick<semantic-ui-rating.SemanticUI.Rating.SelectorSettings._Impl, keyof semantic-ui-rating.SemanticUI.Rating.SelectorSettings._Impl>> */
       trait Param extends StObject {
         
@@ -222,11 +227,6 @@ object SemanticUI {
           
           inline def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         }
-      }
-      
-      extension [Self <: SelectorSettings](x: Self) {
-        
-        inline def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       }
     }
   }

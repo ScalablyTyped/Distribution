@@ -15,12 +15,7 @@ object distTypesChordArcsMod {
   
   @JSImport("@nivo/chord/dist/types/ChordArcs", "ChordArcs")
   @js.native
-  val ChordArcs: MemoExoticComponent[
-    js.Function1[
-      /* hasArcsBorderWidthBorderColorGetOpacityArcGeneratorSetCurrentIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltip */ ChordArcsProps, 
-      Element
-    ]
-  ] = js.native
+  val ChordArcs: MemoExoticComponent[js.Function1[/* param0 */ ChordArcsProps, Element]] = js.native
   
   @js.native
   trait ChordArcsProps extends StObject {

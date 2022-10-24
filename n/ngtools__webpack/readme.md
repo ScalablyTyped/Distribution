@@ -1,7 +1,7 @@
 
 # Scala.js typings for ngtools__webpack
 
-Typings are for version 14.2.3
+Typings are for version 14.2.6
 
 ## Library description:
 Webpack plugin that AoT compiles your Angular components and modules.

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class SignedDataVerifyError protected ()
   extends StObject
      with Error {
-  def this(hasMessageCodeDateSignatureVerifiedSignerCertificateSignerCertificateVerifiedTimestampSerialCertificatePath: SignedDataVerifyErrorParams) = this()
+  def this(param0: SignedDataVerifyErrorParams) = this()
   
   var certificatePath: js.Array[Certificate] = js.native
   

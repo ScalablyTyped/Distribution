@@ -28,7 +28,7 @@ object distAvatarSrcAvatarGroupMod {
   @js.native
   val AvatarGroup: OrbitComponent[HTMLElement, InnerAvatarGroupProps] = js.native
   
-  inline def InnerAvatarGroup(hasSizeAsChildrenForwardedRefRest: InnerAvatarGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAvatarGroup")(hasSizeAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAvatarGroup(param0: InnerAvatarGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAvatarGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type AvatarGroupProps = ComponentProps[OrbitComponent[HTMLElement, InnerAvatarGroupProps]]
   

@@ -37,7 +37,7 @@ object distCjsAsarUtilsMod {
   
   inline def generateAsarIntegrity(asarPath: String): Algorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAsarIntegrity")(asarPath.asInstanceOf[js.Any]).asInstanceOf[Algorithm]
   
-  inline def mergeASARs(hasX64AsarPathArm64AsarPathOutputAsarPathSingleArchFiles: MergeASARsOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeASARs")(hasX64AsarPathArm64AsarPathOutputAsarPathSingleArchFiles.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def mergeASARs(param0: MergeASARsOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeASARs")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait MergeASARsOptions extends StObject {
     

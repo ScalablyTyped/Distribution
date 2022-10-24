@@ -12,8 +12,8 @@ object typesRuntimeAnimateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def flip(node: Element, hasFromTo: From): AnimationConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("flip")(node.asInstanceOf[js.Any], hasFromTo.asInstanceOf[js.Any])).asInstanceOf[AnimationConfig]
-  inline def flip(node: Element, hasFromTo: From, params: FlipParams): AnimationConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("flip")(node.asInstanceOf[js.Any], hasFromTo.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[AnimationConfig]
+  inline def flip(node: Element, param1: From): AnimationConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("flip")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[AnimationConfig]
+  inline def flip(node: Element, param1: From, params: FlipParams): AnimationConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("flip")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[AnimationConfig]
   
   trait AnimationConfig extends StObject {
     

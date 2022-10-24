@@ -12,7 +12,7 @@ trait Action extends StObject {
   
   var Action: DisplayName
   
-  var BackAction: CallHasAccessibilityLabelRest
+  var BackAction: CallParam0
   
   var Content: ComponentType[PickRemoveChildrenforceToAccessibilityActions] & (NonReactStatics[(ComponentType[RemoveChildren[TypeofView] & OnPress]) & CallDisplayName, js.Object])
   
@@ -24,7 +24,7 @@ object Action {
   
   inline def apply(
     Action: DisplayName,
-    BackAction: CallHasAccessibilityLabelRest,
+    BackAction: CallParam0,
     Content: ComponentType[PickRemoveChildrenforceToAccessibilityActions] & (NonReactStatics[(ComponentType[RemoveChildren[TypeofView] & OnPress]) & CallDisplayName, js.Object]),
     Header: (ComponentType[
       PickthemeDeepPartialThemeAccessibilityElementsHidden | PickthemeDeepPartialThemeAccessibilityHint
@@ -38,7 +38,7 @@ object Action {
     
     inline def setAction(value: DisplayName): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    inline def setBackAction(value: CallHasAccessibilityLabelRest): Self = StObject.set(x, "BackAction", value.asInstanceOf[js.Any])
+    inline def setBackAction(value: CallParam0): Self = StObject.set(x, "BackAction", value.asInstanceOf[js.Any])
     
     inline def setContent(
       value: ComponentType[PickRemoveChildrenforceToAccessibilityActions] & (NonReactStatics[(ComponentType[RemoveChildren[TypeofView] & OnPress]) & CallDisplayName, js.Object])

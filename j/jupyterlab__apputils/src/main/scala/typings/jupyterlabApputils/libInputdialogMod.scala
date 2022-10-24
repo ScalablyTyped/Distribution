@@ -1,5 +1,7 @@
 package typings.jupyterlabApputils
 
+import typings.jupyterlabApputils.anon.OmitITextOptionsselection
+import typings.jupyterlabApputils.anon.PartialICheckbox
 import typings.jupyterlabApputils.libDialogMod.Dialog.Header
 import typings.jupyterlabApputils.libDialogMod.Dialog.IRenderer
 import typings.jupyterlabApputils.libDialogMod.Dialog.IResult
@@ -50,7 +52,7 @@ object libInputdialogMod {
       *
       * @returns A promise that resolves with whether the dialog was accepted
       */
-    inline def getPassword(options: ITextOptions): js.Promise[IResult[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPassword")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[String]]]
+    inline def getPassword(options: OmitITextOptionsselection): js.Promise[IResult[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPassword")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[String]]]
     
     /**
       * Create and show a input dialog for a text.
@@ -183,6 +185,11 @@ object libInputdialogMod {
       var cancelLabel: js.UndefOr[String] = js.undefined
       
       /**
+        * The checkbox to display in the footer. Defaults no checkbox.
+        */
+      var checkbox: js.UndefOr[PartialICheckbox | Null] = js.undefined
+      
+      /**
         * The host element for the dialog. Defaults to `document.body`.
         */
       var host: js.UndefOr[HTMLElement] = js.undefined
@@ -198,13 +205,13 @@ object libInputdialogMod {
       var okLabel: js.UndefOr[String] = js.undefined
       
       /**
-        * An optional renderer for dialog items.  Defaults to a shared
+        * An optional renderer for dialog items. Defaults to a shared
         * default renderer.
         */
       var renderer: js.UndefOr[IRenderer] = js.undefined
       
       /**
-        * The top level text for the dialog.  Defaults to an empty string.
+        * The top level text for the dialog. Defaults to an empty string.
         */
       var title: Header
     }
@@ -220,6 +227,12 @@ object libInputdialogMod {
         inline def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
         
         inline def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
+        
+        inline def setCheckbox(value: PartialICheckbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+        
+        inline def setCheckboxNull: Self = StObject.set(x, "checkbox", null)
+        
+        inline def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
         
         inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -254,6 +267,14 @@ object libInputdialogMod {
       var placeholder: js.UndefOr[String] = js.undefined
       
       /**
+        * Selection range
+        *
+        * Number of characters to pre-select when dialog opens.
+        * Default is to select the whole input text if present.
+        */
+      var selectionRange: js.UndefOr[Double] = js.undefined
+      
+      /**
         * Default input text
         */
       var text: js.UndefOr[String] = js.undefined
@@ -270,6 +291,10 @@ object libInputdialogMod {
         inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         
         inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+        
+        inline def setSelectionRange(value: Double): Self = StObject.set(x, "selectionRange", value.asInstanceOf[js.Any])
+        
+        inline def setSelectionRangeUndefined: Self = StObject.set(x, "selectionRange", js.undefined)
         
         inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         

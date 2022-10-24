@@ -151,15 +151,13 @@ object mod {
   @js.native
   val ActiveDescendantContextProvider: Provider[ActiveDescendantContext] = js.native
   
-  inline def ActiveDescendantMovementProvider(hasChildrenActiveIdSetActiveId: ActiveDescendantMovementProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ActiveDescendantMovementProvider")(hasChildrenActiveIdSetActiveId.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ActiveDescendantMovementProvider(param0: ActiveDescendantMovementProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ActiveDescendantMovementProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/utils", "AppSizeContext")
   @js.native
   val AppSizeContext: Context[AppSizeinitializedboolean] = js.native
   
-  inline def AppSizeListener(
-    hasChildrenOnChangePhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize: AppSizeListenerProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("AppSizeListener")(hasChildrenOnChangePhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def AppSizeListener(param0: AppSizeListenerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("AppSizeListener")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/utils", "BELOW_CENTER_ANCHOR")
   @js.native
@@ -387,9 +385,9 @@ object mod {
   @js.native
   val DEFAULT_VALUE_KEY: /* "value" */ String = js.native
   
-  inline def DesktopOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("DesktopOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def DesktopOnly(param0: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("DesktopOnly")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def Dir(hasChildrenDefaultDir: DirProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Dir")(hasChildrenDefaultDir.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Dir(param0: DirProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Dir")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/utils", "FOCUSABLE_ELEMENTS")
   @js.native
@@ -431,7 +429,7 @@ object mod {
   @js.native
   val HoverModeContextProvider: Provider[HoverModeContext] = js.native
   
-  inline def HoverModeProvider(hasChildrenDisabledDefaultVisibleInTimeDeactivateTime: HoverModeProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HoverModeProvider")(hasChildrenDisabledDefaultVisibleInTimeDeactivateTime.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def HoverModeProvider(param0: HoverModeProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HoverModeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/utils", "IncrementMovementKey")
   @js.native
@@ -505,15 +503,13 @@ object mod {
   @js.native
   val KeyboardMovementContextProvider: Provider[KeyboardFocusContext] = js.native
   
-  inline def KeyboardMovementProvider(
-    hasChildrenLoopableSearchableHorizontalIncludeDisabledPropIncrementKeysPropDecrementKeysPropJumpToFirstKeysPropJumpToLastKeys: KeyboardMovementProviderProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("KeyboardMovementProvider")(hasChildrenLoopableSearchableHorizontalIncludeDisabledPropIncrementKeysPropDecrementKeysPropJumpToFirstKeysPropJumpToLastKeys.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def KeyboardMovementProvider(param0: KeyboardMovementProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("KeyboardMovementProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/utils", "LARGE_TEXT_CONTRAST_RATIO")
   @js.native
   val LARGE_TEXT_CONTRAST_RATIO: /* 3 */ Double = js.native
   
-  inline def MobileOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MobileOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def MobileOnly(param0: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MobileOnly")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   object MovementPresets {
     
@@ -566,7 +562,7 @@ object mod {
   @js.native
   val PROGRAMATICALLY_FOCUSABLE: String = js.native
   
-  inline def PhoneOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PhoneOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def PhoneOnly(param0: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PhoneOnly")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   @JSImport("@react-md/utils", "RadioGroup")
   @js.native
@@ -576,7 +572,7 @@ object mod {
   @js.native
   val RadioWidget: ForwardRefExoticComponent[RadioWidgetProps & RefAttributes[HTMLSpanElement]] = js.native
   
-  inline def ResizeListener(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizeListener")(hasOnResizeOptionsImmediate.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def ResizeListener(param0: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizeListener")(param0.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   inline def ScrollListener(props: ScrollListenerProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollListener")(props.asInstanceOf[js.Any]).asInstanceOf[Null]
   
@@ -604,9 +600,9 @@ object mod {
   @js.native
   val TOP_RIGHT_ANCHOR: PositionAnchor = js.native
   
-  inline def TabletOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("TabletOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def TabletOnly(param0: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("TabletOnly")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def UserInteractionModeListener(hasChildren: UserInteractionModeListenerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("UserInteractionModeListener")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def UserInteractionModeListener(param0: UserInteractionModeListenerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("UserInteractionModeListener")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def applyRef[E](): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyRef")().asInstanceOf[Unit]
   inline def applyRef[E](instance: E): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyRef")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -746,9 +742,7 @@ object mod {
   inline def getElementRect(element: HTMLElement): DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementRect")(element.asInstanceOf[js.Any]).asInstanceOf[DOMRect]
   inline def getElementRect(element: HTMLElement, coords: Coords): DOMRect = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementRect")(element.asInstanceOf[js.Any], coords.asInstanceOf[js.Any])).asInstanceOf[DOMRect]
   
-  inline def getFixedPosition(
-    hasContainerElementAnchorInitialXInitialYVwMarginVhMarginXMarginYMarginWidthTypePreventOverlapTransformOriginPropDisableSwappingDisableVHBounds: FixedPositionOptions
-  ): FixedPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedPosition")(hasContainerElementAnchorInitialXInitialYVwMarginVhMarginXMarginYMarginWidthTypePreventOverlapTransformOriginPropDisableSwappingDisableVHBounds.asInstanceOf[js.Any]).asInstanceOf[FixedPosition]
+  inline def getFixedPosition(param0: FixedPositionOptions): FixedPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[FixedPosition]
   
   inline def getFocusableElements(container: Document): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableElements")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
   inline def getFocusableElements(container: Document, programatic: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableElements")(container.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
@@ -764,7 +758,7 @@ object mod {
   
   inline def getOrientationType(): OrientationType = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrientationType")().asInstanceOf[OrientationType]
   
-  inline def getPercentage(hasMinMaxValueValidate: GetPercentageOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPercentage")(hasMinMaxValueValidate.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getPercentage(param0: GetPercentageOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPercentage")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def getRadioItemValue(value: RadioItem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRadioItemValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -792,7 +786,7 @@ object mod {
   inline def isFocusable(element: Window): /* is std.HTMLElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocusable")(element.asInstanceOf[js.Any]).asInstanceOf[/* is std.HTMLElement */ Boolean]
   inline def isFocusable(element: Window, `type`: ElementFocusType): /* is std.HTMLElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFocusable")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is std.HTMLElement */ Boolean]
   
-  inline def loop(hasValueMinMaxIncrementMinmax: LoopOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loop")(hasValueMinMaxIncrementMinmax.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def loop(param0: LoopOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loop")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def nearest(value: Double, min: Double, max: Double, steps: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("nearest")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def nearest(value: Double, min: Double, max: Double, steps: Double, range: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("nearest")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -816,28 +810,24 @@ object mod {
   inline def unitToNumber(unit: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def unitToNumber(unit: Double, options: UnitToNumberOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unitToNumber")(unit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def useActiveDescendant[E /* <: HTMLElement */](hasIdRef: ActiveDescendantHookOptions[E]): ActiveDescendantHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendant")(hasIdRef.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantHookReturnValue[E]]
+  inline def useActiveDescendant[E /* <: HTMLElement */](param0: ActiveDescendantHookOptions[E]): ActiveDescendantHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendant")(param0.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantHookReturnValue[E]]
   
   inline def useActiveDescendantContext(): ReadonlyActiveDescendantC = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendantContext")().asInstanceOf[ReadonlyActiveDescendantC]
   
   inline def useActiveDescendantFocus[E /* <: HTMLElement */](): ActiveDescendantFocusHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendantFocus")().asInstanceOf[ActiveDescendantFocusHookReturnValue[E]]
-  inline def useActiveDescendantFocus[E /* <: HTMLElement */](hasDefaultActiveIdOptions: ActiveDescendantFocusHookOptions[E]): ActiveDescendantFocusHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendantFocus")(hasDefaultActiveIdOptions.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantFocusHookReturnValue[E]]
+  inline def useActiveDescendantFocus[E /* <: HTMLElement */](param0: ActiveDescendantFocusHookOptions[E]): ActiveDescendantFocusHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendantFocus")(param0.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantFocusHookReturnValue[E]]
   
-  inline def useActiveDescendantMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
-    hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions: ActiveDescendantOptions[D, CE, IE]
-  ): ActiveDescendantMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendantMovement")(hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantMovementProviders[CE, IE]]
+  inline def useActiveDescendantMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](param0: ActiveDescendantOptions[D, CE, IE]): ActiveDescendantMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendantMovement")(param0.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantMovementProviders[CE, IE]]
   
   inline def useAppSize(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSize")().asInstanceOf[AppSize]
   
   inline def useAppSizeMedia(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")().asInstanceOf[AppSize]
-  inline def useAppSizeMedia(
-    hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize: AppSizeOptions
-  ): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")(hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize.asInstanceOf[js.Any]).asInstanceOf[AppSize]
+  inline def useAppSizeMedia(param0: AppSizeOptions): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")(param0.asInstanceOf[js.Any]).asInstanceOf[AppSize]
   
   inline def useCloseOnEscape[E /* <: HTMLElement */](onRequestClose: js.Function0[Unit], disabled: Boolean): js.UndefOr[KeyboardEventHandler[E]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCloseOnEscape")(onRequestClose.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
   inline def useCloseOnEscape[E /* <: HTMLElement */](onRequestClose: js.Function0[Unit], disabled: Boolean, onKeyDown: KeyboardEventHandler[E]): js.UndefOr[KeyboardEventHandler[E]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCloseOnEscape")(onRequestClose.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], onKeyDown.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
   
-  inline def useCloseOnOutsideClick[E /* <: HTMLElement */](hasEnabledElementOnOutsideClick: CloseOnOutsideClickOptions[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useCloseOnOutsideClick")(hasEnabledElementOnOutsideClick.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useCloseOnOutsideClick[E /* <: HTMLElement */](param0: CloseOnOutsideClickOptions[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useCloseOnOutsideClick")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def useDir(): WritingDirectionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useDir")().asInstanceOf[WritingDirectionContext]
   
@@ -846,7 +836,7 @@ object mod {
   inline def useEnsuredRef[E /* <: HTMLElement */](): EnsuredRefs[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useEnsuredRef")().asInstanceOf[EnsuredRefs[E]]
   inline def useEnsuredRef[E /* <: HTMLElement */](propRef: Ref[E | Null]): EnsuredRefs[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useEnsuredRef")(propRef.asInstanceOf[js.Any]).asInstanceOf[EnsuredRefs[E]]
   
-  inline def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](hasDefaultFocusedIndexOnChangeOptions: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusMovement")(hasDefaultFocusedIndexOnChangeOptions.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
+  inline def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](param0: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusMovement")(param0.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
   
   inline def useFocusOnMount(refOrInstance: RefOrInstance, defaultFocus: Focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useFocusOnMount(refOrInstance: RefOrInstance, defaultFocus: Focus, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -882,14 +872,12 @@ object mod {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], programmatic.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useGridList[E /* <: HTMLElement */](): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")().asInstanceOf[UseGridListReturnValue[E]]
-  inline def useGridList[E /* <: HTMLElement */](
-    hasPropRefStyleClassNameCellMarginDefaultSizeMaxCellSizeDisableHeightDisableWidthContainerPadding: PropsWithRef[UseGridListOptions, E]
-  ): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")(hasPropRefStyleClassNameCellMarginDefaultSizeMaxCellSizeDisableHeightDisableWidthContainerPadding.asInstanceOf[js.Any]).asInstanceOf[UseGridListReturnValue[E]]
+  inline def useGridList[E /* <: HTMLElement */](param0: PropsWithRef[UseGridListOptions, E]): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")(param0.asInstanceOf[js.Any]).asInstanceOf[UseGridListReturnValue[E]]
   
   inline def useGridListSize(): GridListSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridListSize")().asInstanceOf[GridListSize]
   
   inline def useHoverMode(): HoverModeHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverMode")().asInstanceOf[HoverModeHookReturnValue]
-  inline def useHoverMode(hasDisabledDefaultVisibleExitVisibilityDelay: HoverModeOptions): HoverModeHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverMode")(hasDisabledDefaultVisibleExitVisibilityDelay.asInstanceOf[js.Any]).asInstanceOf[HoverModeHookReturnValue]
+  inline def useHoverMode(param0: HoverModeOptions): HoverModeHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverMode")(param0.asInstanceOf[js.Any]).asInstanceOf[HoverModeHookReturnValue]
   
   inline def useHoverModeContext(): HoverModeContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverModeContext")().asInstanceOf[HoverModeContext]
   
@@ -913,13 +901,9 @@ object mod {
   inline def useKeyboardFocusableElement[E /* <: HTMLElement */](): RefCallback[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardFocusableElement")().asInstanceOf[RefCallback[E]]
   inline def useKeyboardFocusableElement[E /* <: HTMLElement */](ref: Ref[E]): RefCallback[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardFocusableElement")(ref.asInstanceOf[js.Any]).asInstanceOf[RefCallback[E]]
   
-  inline def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
-    hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue: KeyboardMovementOptions[D, CE, IE]
-  ): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardMovement")(hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
+  inline def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](param0: KeyboardMovementOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardMovement")(param0.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
   
-  inline def useKeyboardSearch[D, E /* <: HTMLElement */](
-    hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex: KeyboardSearchOptions[D, E]
-  ): typings.reactMdUtils.typesSearchUseKeyboardSearchMod.ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardSearch")(hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.typesSearchUseKeyboardSearchMod.ReturnValue[E]]
+  inline def useKeyboardSearch[D, E /* <: HTMLElement */](param0: KeyboardSearchOptions[D, E]): typings.reactMdUtils.typesSearchUseKeyboardSearchMod.ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardSearch")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.typesSearchUseKeyboardSearchMod.ReturnValue[E]]
   
   inline def useMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def useMediaQuery(query: String, defaultValue: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -942,12 +926,12 @@ object mod {
   
   inline def useRefCache[T](cacheable: T): Current[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefCache")(cacheable.asInstanceOf[js.Any]).asInstanceOf[Current[T]]
   
-  inline def useResizeListener(hasOnResizeOptionsImmediateEnabled: ResizeListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeListener")(hasOnResizeOptionsImmediateEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useResizeListener(param0: ResizeListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeListener")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E]): EnsuredRefs[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any]).asInstanceOf[EnsuredRefs[E]]
   inline def useResizeObserver[E /* <: HTMLElement */](onResize: OnResizeObserverChange[E], options: UseResizeObserverOptions[E]): EnsuredRefs[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EnsuredRefs[E]]
   
-  inline def useScrollListener(hasOncePassiveSignalCaptureEnabledOnScroll: ScrollListenerHookOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollListener")(hasOncePassiveSignalCaptureEnabledOnScroll.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useScrollListener(param0: ScrollListenerHookOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollListener")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def useScrollLock(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollLock")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def useScrollLock(enabled: Boolean, selectorOrElement: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollLock")(enabled.asInstanceOf[js.Any], selectorOrElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -966,7 +950,7 @@ object mod {
   
   inline def useUserInteractionMode(): UserInteractionMode = ^.asInstanceOf[js.Dynamic].applyDynamic("useUserInteractionMode")().asInstanceOf[UserInteractionMode]
   
-  inline def useWidthMediaQuery(hasMinMax: WidthMediaQuery & WidthMediaQuerys): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useWidthMediaQuery")(hasMinMax.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def useWidthMediaQuery(param0: WidthMediaQuery & WidthMediaQuerys): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useWidthMediaQuery")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def withinRange(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("withinRange")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def withinRange(value: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("withinRange")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]

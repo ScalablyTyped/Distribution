@@ -11,7 +11,7 @@ object distTypesCrosshairMod {
   
   @JSImport("@nivo/tooltip/dist/types/Crosshair", "Crosshair")
   @js.native
-  val Crosshair: MemoExoticComponent[js.Function1[/* hasWidthHeightTypeXY */ CrosshairProps, Element]] = js.native
+  val Crosshair: MemoExoticComponent[js.Function1[/* param0 */ CrosshairProps, Element]] = js.native
   
   trait CrosshairProps extends StObject {
     

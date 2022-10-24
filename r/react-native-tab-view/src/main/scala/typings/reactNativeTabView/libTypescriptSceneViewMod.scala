@@ -22,7 +22,7 @@ object libTypescriptSceneViewMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: Route */](hasChildrenNavigationStateLazyLayoutIndexLazyPreloadDistanceAddEnterListenerStyle: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenNavigationStateLazyLayoutIndexLazyPreloadDistanceAddEnterListenerStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[T /* <: Route */](param0: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props[T /* <: Route */]
     extends StObject

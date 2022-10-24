@@ -304,169 +304,6 @@ object AdminDirectory {
     __obj.asInstanceOf[AdminDirectory]
   }
   
-  extension [Self <: AdminDirectory](x: Self) {
-    
-    inline def setAsps(value: AspsCollection): Self = StObject.set(x, "Asps", value.asInstanceOf[js.Any])
-    
-    inline def setAspsUndefined: Self = StObject.set(x, "Asps", js.undefined)
-    
-    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
-    
-    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
-    
-    inline def setChromeosdevices(value: ChromeosdevicesCollection): Self = StObject.set(x, "Chromeosdevices", value.asInstanceOf[js.Any])
-    
-    inline def setChromeosdevicesUndefined: Self = StObject.set(x, "Chromeosdevices", js.undefined)
-    
-    inline def setCustomers(value: CustomersCollection): Self = StObject.set(x, "Customers", value.asInstanceOf[js.Any])
-    
-    inline def setCustomersUndefined: Self = StObject.set(x, "Customers", js.undefined)
-    
-    inline def setDomainAliases(value: DomainAliasesCollection): Self = StObject.set(x, "DomainAliases", value.asInstanceOf[js.Any])
-    
-    inline def setDomainAliasesUndefined: Self = StObject.set(x, "DomainAliases", js.undefined)
-    
-    inline def setDomains(value: DomainsCollection): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
-    
-    inline def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
-    
-    inline def setGroups(value: GroupsCollection): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
-    
-    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
-    
-    inline def setMembers(value: MembersCollection): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
-    
-    inline def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
-    
-    inline def setMobiledevices(value: MobiledevicesCollection): Self = StObject.set(x, "Mobiledevices", value.asInstanceOf[js.Any])
-    
-    inline def setMobiledevicesUndefined: Self = StObject.set(x, "Mobiledevices", js.undefined)
-    
-    inline def setNewAlias(value: () => Alias): Self = StObject.set(x, "newAlias", js.Any.fromFunction0(value))
-    
-    inline def setNewBuilding(value: () => Building): Self = StObject.set(x, "newBuilding", js.Any.fromFunction0(value))
-    
-    inline def setNewBuildingAddress(value: () => BuildingAddress): Self = StObject.set(x, "newBuildingAddress", js.Any.fromFunction0(value))
-    
-    inline def setNewBuildingCoordinates(value: () => BuildingCoordinates): Self = StObject.set(x, "newBuildingCoordinates", js.Any.fromFunction0(value))
-    
-    inline def setNewCalendarResource(value: () => CalendarResource): Self = StObject.set(x, "newCalendarResource", js.Any.fromFunction0(value))
-    
-    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDevice(value: () => ChromeOsDevice): Self = StObject.set(x, "newChromeOsDevice", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceAction(value: () => ChromeOsDeviceAction): Self = StObject.set(x, "newChromeOsDeviceAction", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceActiveTimeRanges(value: () => ChromeOsDeviceActiveTimeRanges): Self = StObject.set(x, "newChromeOsDeviceActiveTimeRanges", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceCpuStatusReports(value: () => ChromeOsDeviceCpuStatusReports): Self = StObject.set(x, "newChromeOsDeviceCpuStatusReports", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceCpuStatusReportsCpuTemperatureInfo(value: () => ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo): Self = StObject.set(x, "newChromeOsDeviceCpuStatusReportsCpuTemperatureInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceDeviceFiles(value: () => ChromeOsDeviceDeviceFiles): Self = StObject.set(x, "newChromeOsDeviceDeviceFiles", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceDiskVolumeReports(value: () => ChromeOsDeviceDiskVolumeReports): Self = StObject.set(x, "newChromeOsDeviceDiskVolumeReports", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceDiskVolumeReportsVolumeInfo(value: () => ChromeOsDeviceDiskVolumeReportsVolumeInfo): Self = StObject.set(x, "newChromeOsDeviceDiskVolumeReportsVolumeInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceRecentUsers(value: () => ChromeOsDeviceRecentUsers): Self = StObject.set(x, "newChromeOsDeviceRecentUsers", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceSystemRamFreeReports(value: () => ChromeOsDeviceSystemRamFreeReports): Self = StObject.set(x, "newChromeOsDeviceSystemRamFreeReports", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsDeviceTpmVersionInfo(value: () => ChromeOsDeviceTpmVersionInfo): Self = StObject.set(x, "newChromeOsDeviceTpmVersionInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewChromeOsMoveDevicesToOu(value: () => ChromeOsMoveDevicesToOu): Self = StObject.set(x, "newChromeOsMoveDevicesToOu", js.Any.fromFunction0(value))
-    
-    inline def setNewCustomer(value: () => Customer): Self = StObject.set(x, "newCustomer", js.Any.fromFunction0(value))
-    
-    inline def setNewCustomerPostalAddress(value: () => CustomerPostalAddress): Self = StObject.set(x, "newCustomerPostalAddress", js.Any.fromFunction0(value))
-    
-    inline def setNewDomainAlias(value: () => DomainAlias): Self = StObject.set(x, "newDomainAlias", js.Any.fromFunction0(value))
-    
-    inline def setNewDomains(value: () => Domains): Self = StObject.set(x, "newDomains", js.Any.fromFunction0(value))
-    
-    inline def setNewFeature(value: () => Feature): Self = StObject.set(x, "newFeature", js.Any.fromFunction0(value))
-    
-    inline def setNewFeatureRename(value: () => FeatureRename): Self = StObject.set(x, "newFeatureRename", js.Any.fromFunction0(value))
-    
-    inline def setNewGroup(value: () => Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
-    
-    inline def setNewMember(value: () => Member): Self = StObject.set(x, "newMember", js.Any.fromFunction0(value))
-    
-    inline def setNewMobileDeviceAction(value: () => MobileDeviceAction): Self = StObject.set(x, "newMobileDeviceAction", js.Any.fromFunction0(value))
-    
-    inline def setNewNotification(value: () => Notification): Self = StObject.set(x, "newNotification", js.Any.fromFunction0(value))
-    
-    inline def setNewOrgUnit(value: () => OrgUnit): Self = StObject.set(x, "newOrgUnit", js.Any.fromFunction0(value))
-    
-    inline def setNewRole(value: () => Role): Self = StObject.set(x, "newRole", js.Any.fromFunction0(value))
-    
-    inline def setNewRoleAssignment(value: () => RoleAssignment): Self = StObject.set(x, "newRoleAssignment", js.Any.fromFunction0(value))
-    
-    inline def setNewRoleRolePrivileges(value: () => RoleRolePrivileges): Self = StObject.set(x, "newRoleRolePrivileges", js.Any.fromFunction0(value))
-    
-    inline def setNewSchema(value: () => Schema): Self = StObject.set(x, "newSchema", js.Any.fromFunction0(value))
-    
-    inline def setNewSchemaFieldSpec(value: () => SchemaFieldSpec): Self = StObject.set(x, "newSchemaFieldSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewSchemaFieldSpecNumericIndexingSpec(value: () => SchemaFieldSpecNumericIndexingSpec): Self = StObject.set(x, "newSchemaFieldSpecNumericIndexingSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewUser(value: () => User): Self = StObject.set(x, "newUser", js.Any.fromFunction0(value))
-    
-    inline def setNewUserMakeAdmin(value: () => UserMakeAdmin): Self = StObject.set(x, "newUserMakeAdmin", js.Any.fromFunction0(value))
-    
-    inline def setNewUserName(value: () => UserName): Self = StObject.set(x, "newUserName", js.Any.fromFunction0(value))
-    
-    inline def setNewUserPhoto(value: () => UserPhoto): Self = StObject.set(x, "newUserPhoto", js.Any.fromFunction0(value))
-    
-    inline def setNewUserUndelete(value: () => UserUndelete): Self = StObject.set(x, "newUserUndelete", js.Any.fromFunction0(value))
-    
-    inline def setNotifications(value: NotificationsCollection): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
-    
-    inline def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
-    
-    inline def setOrgunits(value: OrgunitsCollection): Self = StObject.set(x, "Orgunits", value.asInstanceOf[js.Any])
-    
-    inline def setOrgunitsUndefined: Self = StObject.set(x, "Orgunits", js.undefined)
-    
-    inline def setPrivileges(value: PrivilegesCollection): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
-    
-    inline def setPrivilegesUndefined: Self = StObject.set(x, "Privileges", js.undefined)
-    
-    inline def setResolvedAppAccessSettings(value: ResolvedAppAccessSettingsCollection): Self = StObject.set(x, "ResolvedAppAccessSettings", value.asInstanceOf[js.Any])
-    
-    inline def setResolvedAppAccessSettingsUndefined: Self = StObject.set(x, "ResolvedAppAccessSettings", js.undefined)
-    
-    inline def setResources(value: ResourcesCollection): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
-    
-    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
-    
-    inline def setRoleAssignments(value: RoleAssignmentsCollection): Self = StObject.set(x, "RoleAssignments", value.asInstanceOf[js.Any])
-    
-    inline def setRoleAssignmentsUndefined: Self = StObject.set(x, "RoleAssignments", js.undefined)
-    
-    inline def setRoles(value: RolesCollection): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
-    
-    inline def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
-    
-    inline def setSchemas(value: SchemasCollection): Self = StObject.set(x, "Schemas", value.asInstanceOf[js.Any])
-    
-    inline def setSchemasUndefined: Self = StObject.set(x, "Schemas", js.undefined)
-    
-    inline def setTokens(value: TokensCollection): Self = StObject.set(x, "Tokens", value.asInstanceOf[js.Any])
-    
-    inline def setTokensUndefined: Self = StObject.set(x, "Tokens", js.undefined)
-    
-    inline def setUsers(value: UsersCollection): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
-    
-    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
-    
-    inline def setVerificationCodes(value: VerificationCodesCollection): Self = StObject.set(x, "VerificationCodes", value.asInstanceOf[js.Any])
-    
-    inline def setVerificationCodesUndefined: Self = StObject.set(x, "VerificationCodes", js.undefined)
-  }
-  
   object Collection {
     
     trait AspsCollection extends StObject {
@@ -1191,6 +1028,169 @@ object AdminDirectory {
         inline def setList(value: String => VerificationCodes): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       }
     }
+  }
+  
+  extension [Self <: AdminDirectory](x: Self) {
+    
+    inline def setAsps(value: AspsCollection): Self = StObject.set(x, "Asps", value.asInstanceOf[js.Any])
+    
+    inline def setAspsUndefined: Self = StObject.set(x, "Asps", js.undefined)
+    
+    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    
+    inline def setChromeosdevices(value: ChromeosdevicesCollection): Self = StObject.set(x, "Chromeosdevices", value.asInstanceOf[js.Any])
+    
+    inline def setChromeosdevicesUndefined: Self = StObject.set(x, "Chromeosdevices", js.undefined)
+    
+    inline def setCustomers(value: CustomersCollection): Self = StObject.set(x, "Customers", value.asInstanceOf[js.Any])
+    
+    inline def setCustomersUndefined: Self = StObject.set(x, "Customers", js.undefined)
+    
+    inline def setDomainAliases(value: DomainAliasesCollection): Self = StObject.set(x, "DomainAliases", value.asInstanceOf[js.Any])
+    
+    inline def setDomainAliasesUndefined: Self = StObject.set(x, "DomainAliases", js.undefined)
+    
+    inline def setDomains(value: DomainsCollection): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
+    
+    inline def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
+    
+    inline def setGroups(value: GroupsCollection): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    
+    inline def setMembers(value: MembersCollection): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
+    
+    inline def setMobiledevices(value: MobiledevicesCollection): Self = StObject.set(x, "Mobiledevices", value.asInstanceOf[js.Any])
+    
+    inline def setMobiledevicesUndefined: Self = StObject.set(x, "Mobiledevices", js.undefined)
+    
+    inline def setNewAlias(value: () => Alias): Self = StObject.set(x, "newAlias", js.Any.fromFunction0(value))
+    
+    inline def setNewBuilding(value: () => Building): Self = StObject.set(x, "newBuilding", js.Any.fromFunction0(value))
+    
+    inline def setNewBuildingAddress(value: () => BuildingAddress): Self = StObject.set(x, "newBuildingAddress", js.Any.fromFunction0(value))
+    
+    inline def setNewBuildingCoordinates(value: () => BuildingCoordinates): Self = StObject.set(x, "newBuildingCoordinates", js.Any.fromFunction0(value))
+    
+    inline def setNewCalendarResource(value: () => CalendarResource): Self = StObject.set(x, "newCalendarResource", js.Any.fromFunction0(value))
+    
+    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDevice(value: () => ChromeOsDevice): Self = StObject.set(x, "newChromeOsDevice", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceAction(value: () => ChromeOsDeviceAction): Self = StObject.set(x, "newChromeOsDeviceAction", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceActiveTimeRanges(value: () => ChromeOsDeviceActiveTimeRanges): Self = StObject.set(x, "newChromeOsDeviceActiveTimeRanges", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceCpuStatusReports(value: () => ChromeOsDeviceCpuStatusReports): Self = StObject.set(x, "newChromeOsDeviceCpuStatusReports", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceCpuStatusReportsCpuTemperatureInfo(value: () => ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo): Self = StObject.set(x, "newChromeOsDeviceCpuStatusReportsCpuTemperatureInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceDeviceFiles(value: () => ChromeOsDeviceDeviceFiles): Self = StObject.set(x, "newChromeOsDeviceDeviceFiles", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceDiskVolumeReports(value: () => ChromeOsDeviceDiskVolumeReports): Self = StObject.set(x, "newChromeOsDeviceDiskVolumeReports", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceDiskVolumeReportsVolumeInfo(value: () => ChromeOsDeviceDiskVolumeReportsVolumeInfo): Self = StObject.set(x, "newChromeOsDeviceDiskVolumeReportsVolumeInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceRecentUsers(value: () => ChromeOsDeviceRecentUsers): Self = StObject.set(x, "newChromeOsDeviceRecentUsers", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceSystemRamFreeReports(value: () => ChromeOsDeviceSystemRamFreeReports): Self = StObject.set(x, "newChromeOsDeviceSystemRamFreeReports", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsDeviceTpmVersionInfo(value: () => ChromeOsDeviceTpmVersionInfo): Self = StObject.set(x, "newChromeOsDeviceTpmVersionInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewChromeOsMoveDevicesToOu(value: () => ChromeOsMoveDevicesToOu): Self = StObject.set(x, "newChromeOsMoveDevicesToOu", js.Any.fromFunction0(value))
+    
+    inline def setNewCustomer(value: () => Customer): Self = StObject.set(x, "newCustomer", js.Any.fromFunction0(value))
+    
+    inline def setNewCustomerPostalAddress(value: () => CustomerPostalAddress): Self = StObject.set(x, "newCustomerPostalAddress", js.Any.fromFunction0(value))
+    
+    inline def setNewDomainAlias(value: () => DomainAlias): Self = StObject.set(x, "newDomainAlias", js.Any.fromFunction0(value))
+    
+    inline def setNewDomains(value: () => Domains): Self = StObject.set(x, "newDomains", js.Any.fromFunction0(value))
+    
+    inline def setNewFeature(value: () => Feature): Self = StObject.set(x, "newFeature", js.Any.fromFunction0(value))
+    
+    inline def setNewFeatureRename(value: () => FeatureRename): Self = StObject.set(x, "newFeatureRename", js.Any.fromFunction0(value))
+    
+    inline def setNewGroup(value: () => Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
+    
+    inline def setNewMember(value: () => Member): Self = StObject.set(x, "newMember", js.Any.fromFunction0(value))
+    
+    inline def setNewMobileDeviceAction(value: () => MobileDeviceAction): Self = StObject.set(x, "newMobileDeviceAction", js.Any.fromFunction0(value))
+    
+    inline def setNewNotification(value: () => Notification): Self = StObject.set(x, "newNotification", js.Any.fromFunction0(value))
+    
+    inline def setNewOrgUnit(value: () => OrgUnit): Self = StObject.set(x, "newOrgUnit", js.Any.fromFunction0(value))
+    
+    inline def setNewRole(value: () => Role): Self = StObject.set(x, "newRole", js.Any.fromFunction0(value))
+    
+    inline def setNewRoleAssignment(value: () => RoleAssignment): Self = StObject.set(x, "newRoleAssignment", js.Any.fromFunction0(value))
+    
+    inline def setNewRoleRolePrivileges(value: () => RoleRolePrivileges): Self = StObject.set(x, "newRoleRolePrivileges", js.Any.fromFunction0(value))
+    
+    inline def setNewSchema(value: () => Schema): Self = StObject.set(x, "newSchema", js.Any.fromFunction0(value))
+    
+    inline def setNewSchemaFieldSpec(value: () => SchemaFieldSpec): Self = StObject.set(x, "newSchemaFieldSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewSchemaFieldSpecNumericIndexingSpec(value: () => SchemaFieldSpecNumericIndexingSpec): Self = StObject.set(x, "newSchemaFieldSpecNumericIndexingSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewUser(value: () => User): Self = StObject.set(x, "newUser", js.Any.fromFunction0(value))
+    
+    inline def setNewUserMakeAdmin(value: () => UserMakeAdmin): Self = StObject.set(x, "newUserMakeAdmin", js.Any.fromFunction0(value))
+    
+    inline def setNewUserName(value: () => UserName): Self = StObject.set(x, "newUserName", js.Any.fromFunction0(value))
+    
+    inline def setNewUserPhoto(value: () => UserPhoto): Self = StObject.set(x, "newUserPhoto", js.Any.fromFunction0(value))
+    
+    inline def setNewUserUndelete(value: () => UserUndelete): Self = StObject.set(x, "newUserUndelete", js.Any.fromFunction0(value))
+    
+    inline def setNotifications(value: NotificationsCollection): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
+    
+    inline def setOrgunits(value: OrgunitsCollection): Self = StObject.set(x, "Orgunits", value.asInstanceOf[js.Any])
+    
+    inline def setOrgunitsUndefined: Self = StObject.set(x, "Orgunits", js.undefined)
+    
+    inline def setPrivileges(value: PrivilegesCollection): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
+    
+    inline def setPrivilegesUndefined: Self = StObject.set(x, "Privileges", js.undefined)
+    
+    inline def setResolvedAppAccessSettings(value: ResolvedAppAccessSettingsCollection): Self = StObject.set(x, "ResolvedAppAccessSettings", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedAppAccessSettingsUndefined: Self = StObject.set(x, "ResolvedAppAccessSettings", js.undefined)
+    
+    inline def setResources(value: ResourcesCollection): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    
+    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
+    
+    inline def setRoleAssignments(value: RoleAssignmentsCollection): Self = StObject.set(x, "RoleAssignments", value.asInstanceOf[js.Any])
+    
+    inline def setRoleAssignmentsUndefined: Self = StObject.set(x, "RoleAssignments", js.undefined)
+    
+    inline def setRoles(value: RolesCollection): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
+    
+    inline def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
+    
+    inline def setSchemas(value: SchemasCollection): Self = StObject.set(x, "Schemas", value.asInstanceOf[js.Any])
+    
+    inline def setSchemasUndefined: Self = StObject.set(x, "Schemas", js.undefined)
+    
+    inline def setTokens(value: TokensCollection): Self = StObject.set(x, "Tokens", value.asInstanceOf[js.Any])
+    
+    inline def setTokensUndefined: Self = StObject.set(x, "Tokens", js.undefined)
+    
+    inline def setUsers(value: UsersCollection): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    
+    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
+    
+    inline def setVerificationCodes(value: VerificationCodesCollection): Self = StObject.set(x, "VerificationCodes", value.asInstanceOf[js.Any])
+    
+    inline def setVerificationCodesUndefined: Self = StObject.set(x, "VerificationCodes", js.undefined)
   }
   
   object Schema {

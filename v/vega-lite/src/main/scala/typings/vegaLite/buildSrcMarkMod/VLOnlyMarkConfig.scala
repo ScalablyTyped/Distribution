@@ -1,7 +1,6 @@
 package typings.vegaLite.buildSrcMarkMod
 
 import typings.vegaLite.buildSrcExprMod.ExprRef
-import typings.vegaLite.vegaLiteStrings.filter
 import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VLOnlyMarkConfig[ES /* <: ExprRef | SignalRef */]
   extends StObject
-     with ColorMixins[ES] {
+     with ColorMixins[ES]
+     with MarkInvalidMixins {
   
   /**
     * Whether the mark's color should be used as fill color instead of stroke color.
@@ -20,13 +20,6 @@ trait VLOnlyMarkConfig[ES /* <: ExprRef | SignalRef */]
     *
     */
   var filled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Defines how Vega-Lite should handle marks for invalid values (`null` and `NaN`).
-    * - If set to `"filter"` (default), all data items with null values will be skipped (for line, trail, and area marks) or filtered (for other marks).
-    * - If `null`, all data items are included. In this case, invalid values will be interpreted as zeroes.
-    */
-  var invalid: js.UndefOr[filter | Hide | Null] = js.undefined
   
   /**
     * For line and trail marks, this `order` property can be set to `null` or `false` to make the lines use the original order in the data sources.
@@ -70,12 +63,6 @@ object VLOnlyMarkConfig {
     inline def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
     inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
-    
-    inline def setInvalid(value: filter | Hide): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
-    
-    inline def setInvalidNull: Self = StObject.set(x, "invalid", null)
-    
-    inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
     inline def setOrder(value: Boolean): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

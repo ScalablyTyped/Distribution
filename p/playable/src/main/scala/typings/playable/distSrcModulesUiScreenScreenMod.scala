@@ -17,7 +17,7 @@ object distSrcModulesUiScreenScreenMod {
   open class default protected ()
     extends StObject
        with Screen {
-    def this(hasConfigEventEmitterEngineFullScreenManagerInteractionIndicatorRootContainer: InteractionIndicator) = this()
+    def this(param0: InteractionIndicator) = this()
     
     /* CompleteClass */
     override def destroy(): Unit = js.native

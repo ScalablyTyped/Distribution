@@ -12,5 +12,5 @@ object buildCommandsFindElementsFromElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasElementIdUsingValue: Value): js.Promise[js.Array[ElementReference]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementIdUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ElementReference]]]
+  inline def default(param1: Value): js.Promise[js.Array[ElementReference]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ElementReference]]]
 }

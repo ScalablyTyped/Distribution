@@ -29,8 +29,8 @@ trait Instantiable
     * @param data snapshot string
     * @param cmd command object
     */
-  def buildSnapshotDeploy(data: String, cmd: Command, hasVersion: Version): String = js.native
-  def buildSnapshotDeploy(data: String, cmd: Command, hasVersion: Version, snapshotVersion: String): String = js.native
+  def buildSnapshotDeploy(data: String, cmd: Command, param2: Version): String = js.native
+  def buildSnapshotDeploy(data: String, cmd: Command, param2: Version, snapshotVersion: String): String = js.native
   
   /** escapes a string */
   def escape(str: String): String = js.native
@@ -67,7 +67,7 @@ trait Instantiable
     * parses a query response
     * @param data the query response received
     */
-  def parse(hasRaw: PickParserArgumentraw): Response = js.native
+  def parse(param0: PickParserArgumentraw): Response = js.native
   
   /**
     * parses a number
@@ -93,7 +93,7 @@ trait Instantiable
     * parses a snapshot create request
     * @param param0 the custom snapshot response parser
     */
-  def parseSnapshotCreate(hasRaw: PickParserArgumentraw): Response = js.native
+  def parseSnapshotCreate(param0: PickParserArgumentraw): Response = js.native
   
   /**
     * parses a string value

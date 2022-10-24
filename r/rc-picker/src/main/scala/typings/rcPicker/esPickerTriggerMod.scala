@@ -17,9 +17,7 @@ object esPickerTriggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasPrefixClsPopupElementPopupStyleVisibleDropdownClassNameDropdownAlignTransitionNameGetPopupContainerChildrenRangePopupPlacementDirection: PickerTriggerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsPopupElementPopupStyleVisibleDropdownClassNameDropdownAlignTransitionNameGetPopupContainerChildrenRangePopupPlacementDirection.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: PickerTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PickerTriggerProps extends StObject {
     

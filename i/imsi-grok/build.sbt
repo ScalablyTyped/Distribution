@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "imsi-grok"
-version := "1.0-dt-20211202Z-ce73f7"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-f2be03"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

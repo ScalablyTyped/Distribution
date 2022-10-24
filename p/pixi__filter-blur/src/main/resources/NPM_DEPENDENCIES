@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/filter-blur" : "6.5.7"
+      "@pixi/filter-blur" : "6.5.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/filter-blur" : "6.5.7"
+      "@pixi/filter-blur" : "6.5.8"
     }
   ],
   "compile-devDependencies" : [

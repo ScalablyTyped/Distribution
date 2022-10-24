@@ -16,7 +16,7 @@ object distTypesFromSharedConfigFilesMod {
   val ^ : js.Any = js.native
   
   inline def fromSharedConfigFiles[T](configSelector: GetterFromConfig[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")(configSelector.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
-  inline def fromSharedConfigFiles[T](configSelector: GetterFromConfig[T], hasPreferredFileInit: SharedConfigInit): Provider[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")(configSelector.asInstanceOf[js.Any], hasPreferredFileInit.asInstanceOf[js.Any])).asInstanceOf[Provider[T]]
+  inline def fromSharedConfigFiles[T](configSelector: GetterFromConfig[T], param1: SharedConfigInit): Provider[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")(configSelector.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Provider[T]]
   
   type GetterFromConfig[T] = js.Function1[/* profile */ Profile, js.UndefOr[T]]
   

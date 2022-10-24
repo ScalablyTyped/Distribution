@@ -13,7 +13,7 @@ object distTypesCellTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CellTooltip[RawDatum /* <: Datum */](hasCell: TooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CellTooltip")(hasCell.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CellTooltip[RawDatum /* <: Datum */](param0: TooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CellTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TooltipProps[RawDatum /* <: Datum */] extends StObject {
     

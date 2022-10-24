@@ -30,7 +30,7 @@ object buildJimpMod {
   inline def jimpAsync(options: JimpGlobalOptions): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("jimpAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   inline def jimpAsync(options: JimpGlobalOptions, commands: js.Array[SharpCommandOptions]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("jimpAsync")(options.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  inline def resize(hasInputQuality: JimpGlobalOptions, hasBackgroundPositionFitWidthHeight: OmitResizeOptionsoperatio): js.Promise[Jimp] = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(hasInputQuality.asInstanceOf[js.Any], hasBackgroundPositionFitWidthHeight.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Jimp]]
+  inline def resize(param0: JimpGlobalOptions, param1: OmitResizeOptionsoperatio): js.Promise[Jimp] = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(param0.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Jimp]]
   
   inline def resizeBufferAsync(buffer: Buffer, sizes: js.Array[Double]): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBufferAsync")(buffer.asInstanceOf[js.Any], sizes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
   

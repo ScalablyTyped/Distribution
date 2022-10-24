@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/polyfill" : "6.5.7"
+      "@pixi/polyfill" : "6.5.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/polyfill" : "6.5.7"
+      "@pixi/polyfill" : "6.5.8"
     }
   ],
   "compile-devDependencies" : [

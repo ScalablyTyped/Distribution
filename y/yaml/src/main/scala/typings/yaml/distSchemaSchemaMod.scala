@@ -15,7 +15,7 @@ object distSchemaSchemaMod {
   @JSImport("yaml/dist/schema/Schema", "Schema")
   @js.native
   open class Schema protected () extends StObject {
-    def this(hasCompatCustomTagsMergeResolveKnownTagsSchemaSortMapEntriesToStringDefaults: SchemaOptions) = this()
+    def this(param0: SchemaOptions) = this()
     
     var compat: (js.Array[CollectionTag | ScalarTag]) | Null = js.native
     

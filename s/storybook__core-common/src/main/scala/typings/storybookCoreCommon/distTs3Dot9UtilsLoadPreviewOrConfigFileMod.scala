@@ -11,5 +11,5 @@ object distTs3Dot9UtilsLoadPreviewOrConfigFileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loadPreviewOrConfigFile(hasConfigDir: ConfigDir): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPreviewOrConfigFile")(hasConfigDir.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def loadPreviewOrConfigFile(param0: ConfigDir): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPreviewOrConfigFile")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

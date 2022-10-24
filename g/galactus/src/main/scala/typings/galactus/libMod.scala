@@ -38,7 +38,7 @@ object libMod {
   @js.native
   open class DestroyerOfModules protected ()
     extends typings.galactus.libDestroyerOfModulesMod.DestroyerOfModules {
-    def this(hasRootDirectoryWalkerShouldKeepModuleTest: RootDirectory) = this()
+    def this(param0: RootDirectory) = this()
   }
   
   @JSImport("galactus/lib", "Walker")

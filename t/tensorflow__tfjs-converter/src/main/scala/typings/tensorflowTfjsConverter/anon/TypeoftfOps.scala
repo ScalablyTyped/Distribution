@@ -517,11 +517,11 @@ trait TypeoftfOps extends StObject {
   def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](): js.Array[T] = js.native
   def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: T | TensorLike): js.Array[T] = js.native
   def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: T | TensorLike, y: T | TensorLike): js.Array[T] = js.native
-  def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: T | TensorLike, y: T | TensorLike, hasIndexing: Indexing): js.Array[T] = js.native
-  def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: T | TensorLike, y: Unit, hasIndexing: Indexing): js.Array[T] = js.native
+  def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: T | TensorLike, y: T | TensorLike, param2: Indexing): js.Array[T] = js.native
+  def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: T | TensorLike, y: Unit, param2: Indexing): js.Array[T] = js.native
   def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: Unit, y: T | TensorLike): js.Array[T] = js.native
-  def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: Unit, y: T | TensorLike, hasIndexing: Indexing): js.Array[T] = js.native
-  def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: Unit, y: Unit, hasIndexing: Indexing): js.Array[T] = js.native
+  def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: Unit, y: T | TensorLike, param2: Indexing): js.Array[T] = js.native
+  def meshgrid[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](x: Unit, y: Unit, param2: Indexing): js.Array[T] = js.native
   
   val min: Typeofmin = js.native
   

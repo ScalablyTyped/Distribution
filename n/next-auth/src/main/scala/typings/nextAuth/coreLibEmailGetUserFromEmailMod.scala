@@ -12,5 +12,5 @@ object coreLibEmailGetUserFromEmailMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasEmailAdapter: Adapter): js.Promise[AdapterUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasEmailAdapter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdapterUser]]
+  inline def default(param0: Adapter): js.Promise[AdapterUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdapterUser]]
 }

@@ -28,9 +28,7 @@ object mod {
   }
   
   inline def loremIpsum(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loremIpsum")().asInstanceOf[String]
-  inline def loremIpsum(
-    hasCountFormatParagraphLowerBoundParagraphUpperBoundRandomSentenceLowerBoundSentenceUpperBoundUnitsWordsSuffix: ILoremIpsumParams
-  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loremIpsum")(hasCountFormatParagraphLowerBoundParagraphUpperBoundRandomSentenceLowerBoundSentenceUpperBoundUnitsWordsSuffix.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def loremIpsum(param0: ILoremIpsumParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loremIpsum")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait ILoremIpsumParams extends StObject {
     

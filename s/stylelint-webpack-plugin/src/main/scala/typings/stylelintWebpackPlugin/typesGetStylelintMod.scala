@@ -27,8 +27,8 @@ object typesGetStylelintMod {
     * @param {Options} options
     * @returns {Linter}
     */
-  inline def apply(key: String, hasThreadsOptions: Options): Linter = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], hasThreadsOptions.asInstanceOf[js.Any])).asInstanceOf[Linter]
-  inline def apply(key: Unit, hasThreadsOptions: Options): Linter = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], hasThreadsOptions.asInstanceOf[js.Any])).asInstanceOf[Linter]
+  inline def apply(key: String, param1: Options): Linter = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Linter]
+  inline def apply(key: Unit, param1: Options): Linter = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Linter]
   
   @JSImport("stylelint-webpack-plugin/types/getStylelint", JSImport.Namespace)
   @js.native

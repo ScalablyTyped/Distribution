@@ -58,7 +58,7 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply[V](hasFromToEaseOffsetDuration: KeyframeOptions[Double]): Animation[Double | String] = js.native
+    def apply[V](param0: KeyframeOptions[Double]): Animation[Double | String] = js.native
   }
   
   trait Start extends StObject {
@@ -102,7 +102,7 @@ object anon {
   @js.native
   trait Typeofspring extends StObject {
     
-    def apply(hasFromToRestSpeedRestDeltaOptions: SpringOptions): Animation[Double] = js.native
+    def apply(param0: SpringOptions): Animation[Double] = js.native
     
     def needsInterpolation(a: Any, b: Any): Boolean = js.native
     @JSName("needsInterpolation")

@@ -25,8 +25,8 @@ object distTs3Dot9ArgsMod {
   inline def deepDiff(value: Any, update: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepDiff")(value.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def groupArgsByTarget[TArgs](
-    hasArgsArgTypes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContext<AnyFramework, TArgs> */ Any
-  ): Record[String, Partial[TArgs]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupArgsByTarget")(hasArgsArgTypes.asInstanceOf[js.Any]).asInstanceOf[Record[String, Partial[TArgs]]]
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContext<AnyFramework, TArgs> */ Any
+  ): Record[String, Partial[TArgs]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupArgsByTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[Record[String, Partial[TArgs]]]
   
   inline def mapArgsToTypes(
     args: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any,

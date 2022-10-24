@@ -18,7 +18,7 @@ object distTypesStyleInjectorContextMod {
   @js.native
   val StyleInjectorContext: Context[StyleInjector] = js.native
   
-  inline def StyleInjectorProvider(hasChildrenInjector: StyleInjectorProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleInjectorProvider")(hasChildrenInjector.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StyleInjectorProvider(param0: StyleInjectorProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleInjectorProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait StyleInjectorProviderProps extends StObject {
     

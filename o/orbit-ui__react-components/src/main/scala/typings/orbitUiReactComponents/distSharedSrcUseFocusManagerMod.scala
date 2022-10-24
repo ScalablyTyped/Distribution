@@ -19,7 +19,7 @@ object distSharedSrcUseFocusManagerMod {
   @js.native
   open class ElementIterator[T] protected () extends StObject {
     def this(elements: js.Array[T]) = this()
-    def this(elements: js.Array[T], hasFrom: From) = this()
+    def this(elements: js.Array[T], param1: From) = this()
     
     def currentIndex: Double = js.native
     
@@ -32,33 +32,33 @@ object distSharedSrcUseFocusManagerMod {
     def previous(): T = js.native
     
     def reset(): Unit = js.native
-    def reset(hasFrom: From): Unit = js.native
+    def reset(param0: From): Unit = js.native
   }
   
   @JSImport("@orbit-ui/react-components/dist/shared/src/useFocusManager", "FocusManager")
   @js.native
   open class FocusManager protected () extends StObject {
     def this(scope: DomScope) = this()
-    def this(scope: DomScope, hasIsVirtualKeyPropOnFocus: FocusManagerOptions) = this()
+    def this(scope: DomScope, param1: FocusManagerOptions) = this()
     
     def elements: js.Array[HTMLElement] = js.native
     
     /* private */ var focusElement: Any = js.native
     
     def focusFirst(): HTMLElement = js.native
-    def focusFirst(hasCanFocusOptions: FocusOptions): HTMLElement = js.native
+    def focusFirst(param0: FocusOptions): HTMLElement = js.native
     
     def focusKey(key: String): HTMLElement = js.native
     def focusKey(key: String, options: FocusOptions): HTMLElement = js.native
     
     def focusLast(): HTMLElement = js.native
-    def focusLast(hasCanFocusOptions: FocusOptions): HTMLElement = js.native
+    def focusLast(param0: FocusOptions): HTMLElement = js.native
     
     def focusNext(): HTMLElement = js.native
-    def focusNext(hasCanFocusOptions: FocusOptions): HTMLElement = js.native
+    def focusNext(param0: FocusOptions): HTMLElement = js.native
     
     def focusPrevious(): HTMLElement = js.native
-    def focusPrevious(hasCanFocusOptions: FocusOptions): HTMLElement = js.native
+    def focusPrevious(param0: FocusOptions): HTMLElement = js.native
     
     def focusTarget(target: String): HTMLElement = js.native
     def focusTarget(target: String, options: FocusOptions): HTMLElement = js.native
@@ -84,7 +84,7 @@ object distSharedSrcUseFocusManagerMod {
   val VirtualFocusCssClass: /* "o-ui-focus" */ String = js.native
   
   inline def useFocusManager(scope: DomScope): FocusManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any]).asInstanceOf[FocusManager]
-  inline def useFocusManager(scope: DomScope, hasIsVirtualKeyPropOnFocus: FocusManagerOptions): FocusManager = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any], hasIsVirtualKeyPropOnFocus.asInstanceOf[js.Any])).asInstanceOf[FocusManager]
+  inline def useFocusManager(scope: DomScope, param1: FocusManagerOptions): FocusManager = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[FocusManager]
   
   trait FocusManagerOptions extends StObject {
     

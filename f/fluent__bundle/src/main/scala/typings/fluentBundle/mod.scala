@@ -44,8 +44,8 @@ object mod {
       */
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
-    def this(locales: String, hasFunctionsUseIsolatingTransform: Functions) = this()
-    def this(locales: js.Array[String], hasFunctionsUseIsolatingTransform: Functions) = this()
+    def this(locales: String, param1: Functions) = this()
+    def this(locales: js.Array[String], param1: Functions) = this()
   }
   
   @JSImport("@fluent/bundle", "FluentDateTime")

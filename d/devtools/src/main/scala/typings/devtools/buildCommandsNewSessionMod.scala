@@ -12,5 +12,5 @@ object buildCommandsNewSessionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasCapabilities: Capabilities): js.Promise[SessionId] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasCapabilities.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SessionId]]
+  inline def default(param1: Capabilities): js.Promise[SessionId] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SessionId]]
 }

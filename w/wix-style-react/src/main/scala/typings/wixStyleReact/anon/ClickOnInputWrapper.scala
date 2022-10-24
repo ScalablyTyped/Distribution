@@ -1,7 +1,7 @@
 package typings.wixStyleReact.anon
 
 import typings.std.HTMLElement
-import typings.wixStyleReact.tagDriverMod.TagDriver
+import typings.wixStyleReact.distTypesTagTagDotdriverMod.TagDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

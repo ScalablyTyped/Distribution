@@ -14,5 +14,5 @@ object distTypesCloneRequestMod {
   
   inline def cloneQuery(query: QueryParameterBag): QueryParameterBag = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneQuery")(query.asInstanceOf[js.Any]).asInstanceOf[QueryParameterBag]
   
-  inline def cloneRequest(hasHeadersQueryRest: HttpRequest): HttpRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneRequest")(hasHeadersQueryRest.asInstanceOf[js.Any]).asInstanceOf[HttpRequest]
+  inline def cloneRequest(param0: HttpRequest): HttpRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneRequest")(param0.asInstanceOf[js.Any]).asInstanceOf[HttpRequest]
 }

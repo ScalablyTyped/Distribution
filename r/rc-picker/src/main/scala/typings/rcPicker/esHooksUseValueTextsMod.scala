@@ -13,8 +13,8 @@ object esHooksUseValueTextsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[DateType](value: DateType, hasFormatListGenerateConfigLocale: ValueTextConfig[DateType]): js.Tuple2[js.Array[String], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], hasFormatListGenerateConfigLocale.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[String], String]]
-  inline def default[DateType](value: Null, hasFormatListGenerateConfigLocale: ValueTextConfig[DateType]): js.Tuple2[js.Array[String], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], hasFormatListGenerateConfigLocale.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[String], String]]
+  inline def default[DateType](value: DateType, param1: ValueTextConfig[DateType]): js.Tuple2[js.Array[String], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[String], String]]
+  inline def default[DateType](value: Null, param1: ValueTextConfig[DateType]): js.Tuple2[js.Array[String], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[String], String]]
   
   trait ValueTextConfig[DateType] extends StObject {
     

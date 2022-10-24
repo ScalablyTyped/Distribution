@@ -13,7 +13,7 @@ object libContextAnimatedValueContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildren: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useAnimatedValues(): ActivationDistance = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedValues")().asInstanceOf[ActivationDistance]
 }

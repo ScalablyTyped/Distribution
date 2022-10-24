@@ -11,7 +11,7 @@ object typesUseWindowBlurPauseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useWindowBlurPause(hasStartTimerStopTimerVisibleMessageDisabled: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowBlurPause")(hasStartTimerStopTimerVisibleMessageDisabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useWindowBlurPause(param0: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowBlurPause")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     

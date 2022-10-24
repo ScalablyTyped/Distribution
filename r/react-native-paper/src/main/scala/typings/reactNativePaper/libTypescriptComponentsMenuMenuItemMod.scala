@@ -8,9 +8,9 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.anon.CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme
 import typings.reactNativePaper.anon.IconPropscolorstring
 import typings.reactNativePaper.anon.PickPropsstyletitleonPresAccessibilityLabel
+import typings.reactNativePaper.anon.`23`
 import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
 import org.scalablytyped.runtime.StObject
@@ -21,10 +21,7 @@ object libTypescriptComponentsMenuMenuItemMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/Menu/MenuItem", JSImport.Default)
   @js.native
-  val default: ComponentType[PickPropsstyletitleonPresAccessibilityLabel] & (NonReactStatics[
-    ComponentType[Props] & CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickPropsstyletitleonPresAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `23`, js.Object]) = js.native
   
   trait Props extends StObject {
     
@@ -131,14 +128,8 @@ object libTypescriptComponentsMenuMenuItemMod extends Shortcut {
     }
   }
   
-  type _To = ComponentType[PickPropsstyletitleonPresAccessibilityLabel] & (NonReactStatics[
-    ComponentType[Props] & CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme, 
-    js.Object
-  ])
+  type _To = ComponentType[PickPropsstyletitleonPresAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `23`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsMenuMenuItemMod.foo` */
-  override def _to: ComponentType[PickPropsstyletitleonPresAccessibilityLabel] & (NonReactStatics[
-    ComponentType[Props] & CallHasIconTitleDisabledOnPressStyleContentStyleTestIDTitleStyleAccessibilityLabelTheme, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickPropsstyletitleonPresAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `23`, js.Object]) = default
 }

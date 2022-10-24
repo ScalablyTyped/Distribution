@@ -12,13 +12,13 @@ object distEsmMod {
   @js.native
   open class RateLimiter protected ()
     extends typings.limiter.distEsmRateLimiterMod.RateLimiter {
-    def this(hasTokensPerIntervalIntervalFireImmediately: RateLimiterOpts) = this()
+    def this(param0: RateLimiterOpts) = this()
   }
   
   @JSImport("limiter/dist/esm", "TokenBucket")
   @js.native
   open class TokenBucket protected ()
     extends typings.limiter.distEsmTokenBucketMod.TokenBucket {
-    def this(hasBucketSizeTokensPerIntervalIntervalParentBucket: TokenBucketOpts) = this()
+    def this(param0: TokenBucketOpts) = this()
   }
 }

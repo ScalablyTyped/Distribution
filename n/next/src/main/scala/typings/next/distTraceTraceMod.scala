@@ -16,7 +16,7 @@ object distTraceTraceMod {
   @JSImport("next/dist/trace/trace", "Span")
   @js.native
   open class Span protected () extends StObject {
-    def this(hasNameParentIdAttrsStartTime: ParentId) = this()
+    def this(param0: ParentId) = this()
     
     var _start: js.BigInt = js.native
     

@@ -95,7 +95,7 @@ object distLibMonitorDevCountAnalysisMod {
   inline def execShell(cmd: String, workingDirectory: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("execShell")(cmd.asInstanceOf[js.Any], workingDirectory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def getContributors(): js.Promise[js.Array[Contributor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContributors")().asInstanceOf[js.Promise[js.Array[Contributor]]]
-  inline def getContributors(hasEndDatePeriodDaysRepoPath: EndDate): js.Promise[js.Array[Contributor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContributors")(hasEndDatePeriodDaysRepoPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Contributor]]]
+  inline def getContributors(param0: EndDate): js.Promise[js.Array[Contributor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContributors")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Contributor]]]
   
   inline def getTimestampStartOfContributingDevTimeframe(dNow: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimestampStartOfContributingDevTimeframe")(dNow.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def getTimestampStartOfContributingDevTimeframe(dNow: js.Date, timespanInDays: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimestampStartOfContributingDevTimeframe")(dNow.asInstanceOf[js.Any], timespanInDays.asInstanceOf[js.Any])).asInstanceOf[Double]

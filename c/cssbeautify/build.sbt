@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cssbeautify"
-version := "v0.3.1-dt-20220818Z-debcf0"
-scalaVersion := "3.1.2"
+version := "v0.3.1-dt-20220818Z-a28ad1"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

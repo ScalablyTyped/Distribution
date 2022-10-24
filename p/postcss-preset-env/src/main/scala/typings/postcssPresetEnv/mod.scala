@@ -126,6 +126,51 @@ object mod extends Shortcut {
       __obj.asInstanceOf[pluginOptions]
     }
     
+    extension [Self <: pluginOptions](x: Self) {
+      
+      inline def setAutoprefixer(value: Boolean | Options): Self = StObject.set(x, "autoprefixer", value.asInstanceOf[js.Any])
+      
+      inline def setAutoprefixerUndefined: Self = StObject.set(x, "autoprefixer", js.undefined)
+      
+      inline def setBrowsers(value: String | js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+      
+      inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
+      
+      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value*))
+      
+      inline def setExportTo(value: String | js.Array[Any]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
+      
+      inline def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
+      
+      inline def setExportToVarargs(value: Any*): Self = StObject.set(x, "exportTo", js.Array(value*))
+      
+      inline def setFeatures(value: features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      
+      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+      
+      inline def setImportFrom(value: String | js.Array[Any]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
+      
+      inline def setImportFromUndefined: Self = StObject.set(x, "importFrom", js.undefined)
+      
+      inline def setImportFromVarargs(value: Any*): Self = StObject.set(x, "importFrom", js.Array(value*))
+      
+      inline def setInsertAfter(value: js.Object): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
+      
+      inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
+      
+      inline def setInsertBefore(value: js.Object): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
+      
+      inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
+      
+      inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
+      
+      inline def setStage(value: Double): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      
+      inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    }
+    
     trait features extends StObject {
       
       var `all-property`: js.UndefOr[Boolean | js.Object] = js.undefined
@@ -335,51 +380,6 @@ object mod extends Shortcut {
         
         inline def `setSystem-ui-font-familyUndefined`: Self = StObject.set(x, "system-ui-font-family", js.undefined)
       }
-    }
-    
-    extension [Self <: pluginOptions](x: Self) {
-      
-      inline def setAutoprefixer(value: Boolean | Options): Self = StObject.set(x, "autoprefixer", value.asInstanceOf[js.Any])
-      
-      inline def setAutoprefixerUndefined: Self = StObject.set(x, "autoprefixer", js.undefined)
-      
-      inline def setBrowsers(value: String | js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
-      
-      inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
-      
-      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value*))
-      
-      inline def setExportTo(value: String | js.Array[Any]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
-      
-      inline def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
-      
-      inline def setExportToVarargs(value: Any*): Self = StObject.set(x, "exportTo", js.Array(value*))
-      
-      inline def setFeatures(value: features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
-      
-      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
-      
-      inline def setImportFrom(value: String | js.Array[Any]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
-      
-      inline def setImportFromUndefined: Self = StObject.set(x, "importFrom", js.undefined)
-      
-      inline def setImportFromVarargs(value: Any*): Self = StObject.set(x, "importFrom", js.Array(value*))
-      
-      inline def setInsertAfter(value: js.Object): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
-      
-      inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
-      
-      inline def setInsertBefore(value: js.Object): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
-      
-      inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
-      
-      inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
-      
-      inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
-      
-      inline def setStage(value: Double): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
-      
-      inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     }
   }
 }

@@ -12,7 +12,7 @@ object distDeclarationsSrcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TreatProvider(hasThemeChildren: TreatProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreatProvider")(hasThemeChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TreatProvider(param0: TreatProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreatProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useClassName(
     classRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClassRef */ Any

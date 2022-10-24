@@ -13,5 +13,5 @@ object distTs3Dot9ContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createContext(hasApiState: Combo): Context[Api] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(hasApiState.asInstanceOf[js.Any]).asInstanceOf[Context[Api]]
+  inline def createContext(param0: Combo): Context[Api] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(param0.asInstanceOf[js.Any]).asInstanceOf[Context[Api]]
 }

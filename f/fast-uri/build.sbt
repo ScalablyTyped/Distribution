@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "fast-uri"
-version := "2.1.0-4f6579"
-scalaVersion := "3.1.2"
+version := "2.1.0-593d74"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

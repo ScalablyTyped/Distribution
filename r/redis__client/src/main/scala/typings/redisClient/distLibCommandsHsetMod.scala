@@ -19,8 +19,8 @@ object distLibCommandsHsetMod {
   val FIRST_KEY_INDEX: /* 1 */ Double = js.native
   
   inline def transformArguments(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasKeyValueFieldValue because its type SingleFieldArguments | MultipleFieldsArguments is not an array type */ hasKeyValueFieldValue: MultipleFieldsArguments | SingleFieldArguments
-  ): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(hasKeyValueFieldValue.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type SingleFieldArguments | MultipleFieldsArguments is not an array type */ param0: MultipleFieldsArguments | SingleFieldArguments
+  ): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(param0.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
   
   inline def transformReply(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")().asInstanceOf[Double]
   

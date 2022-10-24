@@ -8,7 +8,7 @@ import typings.vueRuntimeCore.mod.ConcreteComponent
 import typings.vueRuntimeCore.mod.MethodOptions
 import typings.vueTestUtils.distConfigMod.Pluggable
 import typings.vueTestUtils.distDomWrapperMod.DOMWrapper
-import typings.vueTestUtils.distStubsMod.CustomCreateStub
+import typings.vueTestUtils.distVnodeTransformersStubComponentsTransformerMod.CustomCreateStub
 import typings.vueTestUtils.distVueWrapperMod.VueWrapper
 import typings.vueTestUtils.vueTestUtilsBooleans.`false`
 import org.scalablytyped.runtime.StObject

@@ -152,8 +152,8 @@ object libLabelsMod {
           /* labels */ Labels[T], 
           Unit
         ],
-      hasOnNoLanguageName: ForEachOptions
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(labels.asInstanceOf[js.Any], fun.asInstanceOf[js.Any], hasOnNoLanguageName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      param2: ForEachOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(labels.asInstanceOf[js.Any], fun.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def fromPromises[T](labels: Labels[js.Promise[T]]): js.Promise[Labels[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromises")(labels.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Labels[T]]]
     inline def fromPromises[T](labels: WithLanguageName[js.Promise[T]]): js.Promise[WithLanguageName[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromises")(labels.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WithLanguageName[T]]]
@@ -525,8 +525,8 @@ object libLabelsMod {
           /* labels */ Labels[T], 
           Unit
         ],
-      hasOnNoLanguageName: ForEachOptions
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(labels.asInstanceOf[js.Any], fun.asInstanceOf[js.Any], hasOnNoLanguageName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      param2: ForEachOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(labels.asInstanceOf[js.Any], fun.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def fromPromises[T](labels: Labels[js.Promise[T]]): js.Promise[Labels[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromises")(labels.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Labels[T]]]
     inline def fromPromises[T](labels: WithLanguageName[js.Promise[T]]): js.Promise[WithLanguageName[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromises")(labels.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WithLanguageName[T]]]
@@ -771,23 +771,6 @@ object libLabelsMod {
       }
     }
     
-    extension [Self <: Labels[?], T](x: Self & Labels[T]) {
-      
-      inline def setAgree(value: T): Self = StObject.set(x, "agree", value.asInstanceOf[js.Any])
-      
-      inline def setDisagree(value: T): Self = StObject.set(x, "disagree", value.asInstanceOf[js.Any])
-      
-      inline def setLanguageName(value: T): Self = StObject.set(x, "languageName", value.asInstanceOf[js.Any])
-      
-      inline def setLanguageNameUndefined: Self = StObject.set(x, "languageName", js.undefined)
-      
-      inline def setMessage(value: T): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      inline def setPrint(value: T): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
-      
-      inline def setSave(value: T): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
-    }
-    
     trait MapOptions[T, U] extends StObject {
       
       var onNoLanguageName: js.UndefOr[js.Function0[U]] = js.undefined
@@ -805,6 +788,23 @@ object libLabelsMod {
         
         inline def setOnNoLanguageNameUndefined: Self = StObject.set(x, "onNoLanguageName", js.undefined)
       }
+    }
+    
+    extension [Self <: Labels[?], T](x: Self & Labels[T]) {
+      
+      inline def setAgree(value: T): Self = StObject.set(x, "agree", value.asInstanceOf[js.Any])
+      
+      inline def setDisagree(value: T): Self = StObject.set(x, "disagree", value.asInstanceOf[js.Any])
+      
+      inline def setLanguageName(value: T): Self = StObject.set(x, "languageName", value.asInstanceOf[js.Any])
+      
+      inline def setLanguageNameUndefined: Self = StObject.set(x, "languageName", js.undefined)
+      
+      inline def setMessage(value: T): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setPrint(value: T): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      
+      inline def setSave(value: T): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     }
     
     trait WithLanguageName[T]

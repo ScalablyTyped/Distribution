@@ -43,7 +43,7 @@ object mod {
   
   inline def useMode(): js.Array[bottom | top] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMode")().asInstanceOf[js.Array[bottom | top]]
   
-  inline def useObserveScrollPosition(observer: js.Function1[/* hasScrollTop */ ScrollTop, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useObserveScrollPosition")(observer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useObserveScrollPosition(observer: js.Function1[/* param0 */ ScrollTop, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useObserveScrollPosition")(observer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def useObserveScrollPosition_false(observer: `false`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useObserveScrollPosition")(observer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

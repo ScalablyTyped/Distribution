@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "rate-limit-redis"
-version := "1.7-dt-20220106Z-4adf03"
-scalaVersion := "3.1.2"
+version := "1.7-dt-20220106Z-d2fd67"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "denque" % "2.1.0-c1b49a",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-eec5d4",
-  "org.scalablytyped" %%% "express-rate-limit" % "6.6.0-7a8af2",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-693358",
-  "org.scalablytyped" %%% "ioredis" % "5.2.3-1b3ca0",
-  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-9884c6",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-76627f",
-  "org.scalablytyped" %%% "redis-errors" % "1.2-dt-20211202Z-815df1",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-91f487",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "denque" % "2.1.0-758dab",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-a77eec",
+  "org.scalablytyped" %%% "express-rate-limit" % "6.6.0-3d6611",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-80f63d",
+  "org.scalablytyped" %%% "ioredis" % "5.2.3-db92aa",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
+  "org.scalablytyped" %%% "redis-errors" % "1.2-dt-20211202Z-181495",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-5b9e43",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

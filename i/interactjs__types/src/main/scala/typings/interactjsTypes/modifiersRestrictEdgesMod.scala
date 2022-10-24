@@ -63,15 +63,15 @@ object modifiersRestrictEdgesMod {
     
     @JSImport("@interactjs/modifiers/restrict/edges", "restrictEdges.set")
     @js.native
-    def set: js.Function1[/* hasCoordsEdgesInteractionState */ ModifierArg[RestrictEdgesState], Unit] = js.native
-    inline def set(hasCoordsEdgesInteractionState: ModifierArg[RestrictEdgesState]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(hasCoordsEdgesInteractionState.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def set_=(x: js.Function1[/* hasCoordsEdgesInteractionState */ ModifierArg[RestrictEdgesState], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
+    def set: js.Function1[/* param0 */ ModifierArg[RestrictEdgesState], Unit] = js.native
+    inline def set(param0: ModifierArg[RestrictEdgesState]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def set_=(x: js.Function1[/* param0 */ ModifierArg[RestrictEdgesState], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
     
     @JSImport("@interactjs/modifiers/restrict/edges", "restrictEdges.start")
     @js.native
-    def start: js.Function1[/* hasInteractionStartOffsetState */ ModifierArg[RestrictEdgesState], Unit] = js.native
-    inline def start(hasInteractionStartOffsetState: ModifierArg[RestrictEdgesState]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(hasInteractionStartOffsetState.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def start_=(x: js.Function1[/* hasInteractionStartOffsetState */ ModifierArg[RestrictEdgesState], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
+    def start: js.Function1[/* param0 */ ModifierArg[RestrictEdgesState], Unit] = js.native
+    inline def start(param0: ModifierArg[RestrictEdgesState]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def start_=(x: js.Function1[/* param0 */ ModifierArg[RestrictEdgesState], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
   }
   
   trait RestrictEdgesOptions extends StObject {

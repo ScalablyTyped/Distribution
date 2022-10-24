@@ -15,7 +15,7 @@ object libTableHooksUseFilterFilterSearchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RecordType](hasValueOnChangeFilterSearchTablePrefixClsLocale: FilterSearchProps[RecordType]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasValueOnChangeFilterSearchTablePrefixClsLocale.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default[RecordType](param0: FilterSearchProps[RecordType]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait FilterSearchProps[RecordType] extends StObject {
     

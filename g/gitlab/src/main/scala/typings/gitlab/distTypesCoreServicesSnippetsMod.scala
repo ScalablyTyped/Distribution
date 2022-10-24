@@ -15,9 +15,9 @@ object distTypesCoreServicesSnippetsMod {
   @JSImport("gitlab/dist/types/core/services/Snippets", "Snippets")
   @js.native
   open class Snippets () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
-    def all(hasPOptions: publicbooleanPaginatedReq): js.Promise[GetResponse] = js.native
+    def all(param0: publicbooleanPaginatedReq): js.Promise[GetResponse] = js.native
     
     def content(snippetId: Double): js.Promise[GetResponse] = js.native
     def content(snippetId: Double, options: Sudo): js.Promise[GetResponse] = js.native

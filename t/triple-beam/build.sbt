@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "triple-beam"
-version := "1.3-dt-20211202Z-2b864b"
-scalaVersion := "3.1.2"
+version := "1.3-dt-20211202Z-b3ce47"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

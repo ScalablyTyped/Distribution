@@ -25,7 +25,7 @@ object esTabNavListWrapperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasRenderTabBarRestProps: TabNavListWrapperProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRenderTabBarRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: TabNavListWrapperProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Required<std.Omit<rc-tabs.rc-tabs/es/TabNavList.TabNavListProps, 'children' | 'className'>> & rc-tabs.rc-tabs/es/TabNavList.TabNavListProps */
   @js.native

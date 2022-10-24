@@ -16,6 +16,6 @@ object distVocabulariesJtdMetadataMod {
   @js.native
   val default: CodeKeywordDefinition = js.native
   
-  inline def checkMetadata(hasItKeyword: KeywordCxt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkMetadata")(hasItKeyword.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def checkMetadata(hasItKeyword: KeywordCxt, metadata: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkMetadata")(hasItKeyword.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkMetadata(param0: KeywordCxt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkMetadata")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkMetadata(param0: KeywordCxt, metadata: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkMetadata")(param0.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

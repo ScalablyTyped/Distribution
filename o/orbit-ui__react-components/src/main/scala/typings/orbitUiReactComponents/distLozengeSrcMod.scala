@@ -14,7 +14,7 @@ object distLozengeSrcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerLozenge(hasColorSizeAsChildrenForwardedRefRest: InnerLozengeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerLozenge")(hasColorSizeAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerLozenge(param0: InnerLozengeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerLozenge")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/lozenge/src", "Lozenge")
   @js.native

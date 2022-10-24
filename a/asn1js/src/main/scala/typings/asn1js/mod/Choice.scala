@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.asn1js.mod.IChoice because var conflicts: name, optional. Inlined value */ @JSImport("asn1js", "Choice")
 @js.native
 open class Choice () extends Any {
-  def this(hasValueParameters: ChoiceParams) = this()
+  def this(param0: ChoiceParams) = this()
   
   var value: js.Array[BaseBlock[ValueBlock, ValueBlockJson]] = js.native
 }

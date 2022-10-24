@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "workbox-navigation-preload"
-version := "4.3-dt-20211202Z-a98ae7"
-scalaVersion := "3.1.2"
+version := "4.3-dt-20211202Z-9380b9"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

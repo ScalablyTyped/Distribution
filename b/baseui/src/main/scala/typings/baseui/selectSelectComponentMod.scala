@@ -289,7 +289,7 @@ object selectSelectComponentMod {
     
     var focusAfterClear: Boolean = js.native
     
-    def getOptionLabel(locale: Locale, hasOption: typings.baseui.anon.Option): ReactNode = js.native
+    def getOptionLabel(locale: Locale, param1: typings.baseui.anon.Option): ReactNode = js.native
     
     def getSharedProps(): Clearable = js.native
     
@@ -298,7 +298,7 @@ object selectSelectComponentMod {
       */
     def getValueArray(value: Value): js.Array[Option] = js.native
     
-    def getValueLabel(hasOption: OptionOption): ReactNode = js.native
+    def getValueLabel(param0: OptionOption): ReactNode = js.native
     
     def handleActiveDescendantChange(): Unit = js.native
     def handleActiveDescendantChange(id: String): Unit = js.native
@@ -361,7 +361,7 @@ object selectSelectComponentMod {
     
     def renderValue(valueArray: Value): js.UndefOr[ReactNode | Null | (js.Array[js.UndefOr[ReactNode | Null]])] = js.native
     
-    def selectValue(hasItem: ItemOption): Unit = js.native
+    def selectValue(param0: ItemOption): Unit = js.native
     
     def setValue(value: Value, option: Null, `type`: ChangeAction): Unit = js.native
     def setValue(value: Value, option: Unit, `type`: ChangeAction): Unit = js.native

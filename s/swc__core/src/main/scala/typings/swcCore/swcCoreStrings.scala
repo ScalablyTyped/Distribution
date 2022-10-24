@@ -1218,6 +1218,10 @@ object swcCoreStrings {
   inline def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
+  sealed trait systemjs extends StObject
+  inline def systemjs: systemjs = "systemjs".asInstanceOf[systemjs]
+  
+  @js.native
   sealed trait traceEvent extends StObject
   inline def traceEvent: traceEvent = "traceEvent".asInstanceOf[traceEvent]
   

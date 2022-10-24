@@ -25,5 +25,5 @@ object distMod {
   inline def useDebouncedCallback[T /* <: js.Function1[/* args */ Any, ReturnType[T]] */](func: T, wait: Unit, options: Options): DebouncedState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useDebouncedCallback")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebouncedState[T]]
   
   inline def useThrottledCallback[T /* <: js.Function1[/* repeated */ Any, ReturnType[T]] */](func: T, wait: Double): DebouncedState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThrottledCallback")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[DebouncedState[T]]
-  inline def useThrottledCallback[T /* <: js.Function1[/* repeated */ Any, ReturnType[T]] */](func: T, wait: Double, hasLeadingTrailing: CallOptions): DebouncedState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThrottledCallback")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], hasLeadingTrailing.asInstanceOf[js.Any])).asInstanceOf[DebouncedState[T]]
+  inline def useThrottledCallback[T /* <: js.Function1[/* repeated */ Any, ReturnType[T]] */](func: T, wait: Double, param2: CallOptions): DebouncedState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThrottledCallback")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[DebouncedState[T]]
 }

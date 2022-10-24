@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class PipelineSchedules ()
   extends typings.gitlab.distTypesCoreServicesPipelineSchedulesMod.PipelineSchedules {
-  def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+  def this(param0: BaseServiceOptions) = this()
 }

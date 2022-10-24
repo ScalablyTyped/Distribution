@@ -23,7 +23,7 @@ object typingsModulesStateMod {
   inline def resetState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetState")().asInstanceOf[Unit]
   
   inline def setActionOptionsFor(buttonKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActionOptionsFor")(buttonKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def setActionOptionsFor(buttonKey: String, hasCloseModal: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setActionOptionsFor")(buttonKey.asInstanceOf[js.Any], hasCloseModal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setActionOptionsFor(buttonKey: String, param1: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setActionOptionsFor")(buttonKey.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setActionValue(opts: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActionValue")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setActionValue(opts: ActionOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActionValue")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]

@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @internal
   */
 open class BrowserContext ()
-  extends typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.BrowserContext
+  extends typings.puppeteerCore.libEsmPuppeteerApiBrowserContextMod.BrowserContext

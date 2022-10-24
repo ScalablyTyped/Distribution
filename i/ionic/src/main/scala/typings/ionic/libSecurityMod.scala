@@ -15,7 +15,7 @@ object libSecurityMod {
   open class SecurityClient protected ()
     extends ResourceClient
        with ResourceClientLoad[SecurityProfile] {
-    def this(hasClientToken: SecurityClientDeps) = this()
+    def this(param0: SecurityClientDeps) = this()
     
     /* protected */ val client: IClient = js.native
     

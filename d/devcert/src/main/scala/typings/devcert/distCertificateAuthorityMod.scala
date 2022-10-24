@@ -20,5 +20,5 @@ object distCertificateAuthorityMod {
   
   inline def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
   
-  inline def withCertificateAuthorityCredentials(cb: js.Function1[/* hasCaKeyPathCaCertPath */ CaCertPath, js.Promise[Unit] | Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("withCertificateAuthorityCredentials")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def withCertificateAuthorityCredentials(cb: js.Function1[/* param0 */ CaCertPath, js.Promise[Unit] | Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("withCertificateAuthorityCredentials")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

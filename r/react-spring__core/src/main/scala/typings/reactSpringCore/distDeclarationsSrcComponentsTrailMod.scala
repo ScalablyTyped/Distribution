@@ -15,7 +15,7 @@ object distDeclarationsSrcComponentsTrailMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Trail[Item, Props /* <: TrailComponentProps[Item, Any] */](hasItemsChildrenProps: Props & (Valid[Props, TrailComponentProps[Item, Props]])): js.Array[js.UndefOr[String | Double | Boolean | ReactElement | ReactFragment | Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Trail")(hasItemsChildrenProps.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.UndefOr[String | Double | Boolean | ReactElement | ReactFragment | Null]]]
+  inline def Trail[Item, Props /* <: TrailComponentProps[Item, Any] */](param0: Props & (Valid[Props, TrailComponentProps[Item, Props]])): js.Array[js.UndefOr[String | Double | Boolean | ReactElement | ReactFragment | Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Trail")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.UndefOr[String | Double | Boolean | ReactElement | ReactFragment | Null]]]
   
   type TrailComponentProps[Item, Props /* <: js.Object */] = Any & UseSpringProps[Props] & (Items[Item, Props])
 }

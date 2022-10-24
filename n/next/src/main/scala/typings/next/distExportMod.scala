@@ -25,12 +25,7 @@ object distExportMod {
     
     var endWorker: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
     
-    var exportPageWorker: js.UndefOr[
-        js.Function1[
-          /* hasParentSpanIdPathPathMapDistDirOutDirPagesDataDirRenderOptsBuildExportServerRuntimeConfigSubFoldersServerlessOptimizeFontsOptimizeCssDisableOptimizedLoadingHttpAgentOptionsServerComponents */ ExportPageInput, 
-          js.Promise[ExportPageResults]
-        ]
-      ] = js.undefined
+    var exportPageWorker: js.UndefOr[js.Function1[/* param0 */ ExportPageInput, js.Promise[ExportPageResults]]] = js.undefined
     
     var outdir: String
     
@@ -65,9 +60,7 @@ object distExportMod {
       
       inline def setEndWorkerUndefined: Self = StObject.set(x, "endWorker", js.undefined)
       
-      inline def setExportPageWorker(
-        value: /* hasParentSpanIdPathPathMapDistDirOutDirPagesDataDirRenderOptsBuildExportServerRuntimeConfigSubFoldersServerlessOptimizeFontsOptimizeCssDisableOptimizedLoadingHttpAgentOptionsServerComponents */ ExportPageInput => js.Promise[ExportPageResults]
-      ): Self = StObject.set(x, "exportPageWorker", js.Any.fromFunction1(value))
+      inline def setExportPageWorker(value: /* param0 */ ExportPageInput => js.Promise[ExportPageResults]): Self = StObject.set(x, "exportPageWorker", js.Any.fromFunction1(value))
       
       inline def setExportPageWorkerUndefined: Self = StObject.set(x, "exportPageWorker", js.undefined)
       

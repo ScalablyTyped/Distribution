@@ -2,6 +2,10 @@ package typings.vegaLite.anon
 
 import typings.vegaLite.buildSrcBinMod.BinParams
 import typings.vegaLite.buildSrcCompositemarkMod.CompositeAggregate
+import typings.vegaLite.buildSrcDatetimeMod.DateTime
+import typings.vegaLite.buildSrcSortMod.EncodingSortField
+import typings.vegaLite.buildSrcSortMod.SortArray
+import typings.vegaLite.buildSrcSortMod.SortOrder
 import typings.vegaLite.buildSrcTimeunitMod.TimeUnitParams
 import typings.vegaLite.buildSrcTypeMod.StandardType
 import typings.vegaTypings.typesSpecEncodeMod.Text
@@ -57,7 +61,9 @@ trait Field extends StObject {
     */
   var field: js.UndefOr[String] = js.undefined
   
-  var sort: Order
+  var header: FormatType
+  
+  var sort: js.UndefOr[SortOrder | SortArray | EncodingSortField[String]] = js.undefined
   
   /**
     * Time unit (e.g., `year`, `yearmonth`, `month`, `hours`) for a temporal field.
@@ -105,8 +111,8 @@ trait Field extends StObject {
 }
 object Field {
   
-  inline def apply(sort: Order): Field = {
-    val __obj = js.Dynamic.literal(sort = sort.asInstanceOf[js.Any])
+  inline def apply(header: FormatType): Field = {
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
   
@@ -128,7 +134,13 @@ object Field {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setSort(value: Order): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setHeader(value: FormatType): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setSort(value: SortOrder | SortArray | EncodingSortField[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setSortVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setTimeUnit(value: typings.vegaLite.buildSrcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     

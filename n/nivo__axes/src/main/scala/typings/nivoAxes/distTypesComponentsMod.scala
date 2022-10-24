@@ -22,33 +22,21 @@ object distTypesComponentsMod {
   
   @JSImport("@nivo/axes/dist/types/components", "Axes")
   @js.native
-  val Axes: MemoExoticComponent[
-    js.Function1[
-      /* hasXScaleYScaleWidthHeightTopRightBottomLeft */ Left[ScaleValue, ScaleValue], 
-      Element
-    ]
-  ] = js.native
+  val Axes: MemoExoticComponent[js.Function1[/* param0 */ Left[ScaleValue, ScaleValue], Element]] = js.native
   
-  inline def Axis[Value /* <: ScaleValue */](
-    hasAxisScaleXYLengthTicksPositionTickValuesTickSizeTickPaddingTickRotationFormatRenderTickLegendLegendPositionLegendOffsetOnClickAriaHidden: AxisProps[Value] & Length[Value]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Axis")(hasAxisScaleXYLengthTicksPositionTickValuesTickSizeTickPaddingTickRotationFormatRenderTickLegendLegendPositionLegendOffsetOnClickAriaHidden.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Axis[Value /* <: ScaleValue */](param0: AxisProps[Value] & Length[Value]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Axis")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def AxisTick[Value /* <: ScaleValue */](has_valueFormatLineXLineYOnClickTextBaselineTextAnchorAnimatedProps: AxisTickProps[Value]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AxisTick")(has_valueFormatLineXLineYOnClickTextBaselineTextAnchorAnimatedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def AxisTick[Value /* <: ScaleValue */](param0: AxisTickProps[Value]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AxisTick")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@nivo/axes/dist/types/components", "Grid")
   @js.native
-  val Grid: MemoExoticComponent[
-    js.Function1[
-      /* hasWidthHeightXScaleYScaleXValuesYValues */ Width[ScaleValue, ScaleValue], 
-      Element
-    ]
-  ] = js.native
+  val Grid: MemoExoticComponent[js.Function1[/* param0 */ Width[ScaleValue, ScaleValue], Element]] = js.native
   
   @JSImport("@nivo/axes/dist/types/components", "GridLine")
   @js.native
-  val GridLine: MemoExoticComponent[js.Function1[/* hasAnimatedProps */ AnimatedProps, Element]] = js.native
+  val GridLine: MemoExoticComponent[js.Function1[/* param0 */ AnimatedProps, Element]] = js.native
   
   @JSImport("@nivo/axes/dist/types/components", "GridLines")
   @js.native
-  val GridLines: MemoExoticComponent[js.Function1[/* hasLines */ Lines, Element]] = js.native
+  val GridLines: MemoExoticComponent[js.Function1[/* param0 */ Lines, Element]] = js.native
 }

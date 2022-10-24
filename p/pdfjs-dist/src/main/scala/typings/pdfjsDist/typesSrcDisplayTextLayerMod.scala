@@ -21,7 +21,7 @@ object typesSrcDisplayTextLayerMod {
   @JSImport("pdfjs-dist/types/src/display/text_layer", "TextLayerRenderTask")
   @js.native
   open class TextLayerRenderTask protected () extends StObject {
-    def this(hasTextContentTextContentStreamContainerViewportTextDivsTextContentItemsStrEnhanceTextSelection: Container) = this()
+    def this(param0: Container) = this()
     
     var _bounds: js.Array[Any] = js.native
     

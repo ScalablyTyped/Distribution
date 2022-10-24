@@ -12,6 +12,7 @@ import typings.puppeteer.mod.PageEmittedEvents
 import typings.puppeteer.mod.Permission
 import typings.puppeteer.mod.Platform
 import typings.puppeteer.mod.Product
+import typings.puppeteer.mod.Product2
 import typings.puppeteer.mod.ProtocolLifeCycleEvent
 import typings.puppeteer.mod.PuppeteerLifeCycleEvent
 import typings.puppeteer.mod._KeyInput
@@ -3660,6 +3661,7 @@ object puppeteerStrings {
     extends StObject
        with ChromeReleaseChannel
        with Product
+       with Product2
   inline def chrome: chrome = "chrome".asInstanceOf[chrome]
   
   @js.native
@@ -3834,6 +3836,7 @@ object puppeteerStrings {
   sealed trait firefox
     extends StObject
        with Product
+       with Product2
   inline def firefox: firefox = "firefox".asInstanceOf[firefox]
   
   @js.native
@@ -4219,6 +4222,10 @@ object puppeteerStrings {
   inline def shared_worker: shared_worker = "shared_worker".asInstanceOf[shared_worker]
   
   @js.native
+  sealed trait silent extends StObject
+  inline def silent: silent = "silent".asInstanceOf[silent]
+  
+  @js.native
   sealed trait startGroup
     extends StObject
        with ConsoleMessageType
@@ -4314,6 +4321,10 @@ object puppeteerStrings {
     extends StObject
        with _KeyInput
   inline def w_ : w_ = "w".asInstanceOf[w_]
+  
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
   sealed trait warning

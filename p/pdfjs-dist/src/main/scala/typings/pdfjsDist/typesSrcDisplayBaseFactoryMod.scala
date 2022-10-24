@@ -14,7 +14,7 @@ object typesSrcDisplayBaseFactoryMod {
   @JSImport("pdfjs-dist/types/src/display/base_factory", "BaseCMapReaderFactory")
   @js.native
   open class BaseCMapReaderFactory protected () extends StObject {
-    def this(hasBaseUrlIsCompressed: BaseUrl) = this()
+    def this(param0: BaseUrl) = this()
     
     /**
       * @ignore
@@ -23,7 +23,7 @@ object typesSrcDisplayBaseFactoryMod {
     
     var baseUrl: Any = js.native
     
-    def fetch(hasName: NameAny): js.Promise[Any] = js.native
+    def fetch(param0: NameAny): js.Promise[Any] = js.native
     
     var isCompressed: Boolean = js.native
   }
@@ -62,7 +62,7 @@ object typesSrcDisplayBaseFactoryMod {
   @JSImport("pdfjs-dist/types/src/display/base_factory", "BaseStandardFontDataFactory")
   @js.native
   open class BaseStandardFontDataFactory protected () extends StObject {
-    def this(hasBaseUrl: `0`) = this()
+    def this(param0: `0`) = this()
     
     /**
       * @ignore
@@ -71,6 +71,6 @@ object typesSrcDisplayBaseFactoryMod {
     
     var baseUrl: Any = js.native
     
-    def fetch(hasFilename: Filename): js.Promise[Any] = js.native
+    def fetch(param0: Filename): js.Promise[Any] = js.native
   }
 }

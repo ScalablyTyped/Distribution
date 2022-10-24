@@ -60,7 +60,7 @@ object distTs3Dot9PreviewMod {
     
     var importFn: js.UndefOr[ModuleImportFn] = js.native
     
-    def initialize(hasGetStoryIndexImportFnGetProjectAnnotations: GetProjectAnnotations[TFramework]): js.Promise[Unit] = js.native
+    def initialize(param0: GetProjectAnnotations[TFramework]): js.Promise[Unit] = js.native
     
     def initializeWithProjectAnnotations(projectAnnotations: WebProjectAnnotations[TFramework]): js.Promise[Unit] = js.native
     
@@ -72,19 +72,19 @@ object distTs3Dot9PreviewMod {
     
     def onForceReRender(): js.Promise[Unit] = js.native
     
-    def onForceRemount(hasStoryId: StoryIdAny): js.Promise[Unit] = js.native
+    def onForceRemount(param0: StoryIdAny): js.Promise[Unit] = js.native
     
-    def onGetProjectAnnotationsChanged(hasGetProjectAnnotations: `0`): js.Promise[Unit] = js.native
+    def onGetProjectAnnotationsChanged(param0: `0`): js.Promise[Unit] = js.native
     
-    def onResetArgs(hasStoryIdArgNames: ArgNames): js.Promise[Unit] = js.native
+    def onResetArgs(param0: ArgNames): js.Promise[Unit] = js.native
     
-    def onStoriesChanged(hasImportFnStoryIndex: ImportFn): js.Promise[Unit] = js.native
+    def onStoriesChanged(param0: ImportFn): js.Promise[Unit] = js.native
     
     def onStoryIndexChanged(): js.Promise[Unit] = js.native
     
-    def onUpdateArgs(hasStoryIdUpdatedArgs: StoryId): js.Promise[Unit] = js.native
+    def onUpdateArgs(param0: StoryId): js.Promise[Unit] = js.native
     
-    def onUpdateGlobals(hasGlobals: Globals): js.Promise[Unit] = js.native
+    def onUpdateGlobals(param0: Globals): js.Promise[Unit] = js.native
     
     var previewEntryError: js.UndefOr[js.Error] = js.native
     
@@ -111,9 +111,9 @@ object distTs3Dot9PreviewMod {
     var storyStore: StoryStore[TFramework] = js.native
     
     def teardownRender(render: DocsRender[TFramework]): js.Promise[Unit] = js.native
-    def teardownRender(render: DocsRender[TFramework], hasViewModeChanged: ViewModeChanged): js.Promise[Unit] = js.native
+    def teardownRender(render: DocsRender[TFramework], param1: ViewModeChanged): js.Promise[Unit] = js.native
     def teardownRender(render: StoryRender[TFramework]): js.Promise[Unit] = js.native
-    def teardownRender(render: StoryRender[TFramework], hasViewModeChanged: ViewModeChanged): js.Promise[Unit] = js.native
+    def teardownRender(render: StoryRender[TFramework], param1: ViewModeChanged): js.Promise[Unit] = js.native
   }
   
   type MaybePromise[T] = js.Promise[T] | T

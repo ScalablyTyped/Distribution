@@ -20,7 +20,7 @@ object mod {
   @JSImport("@jridgewell/gen-mapping", "GenMapping")
   @js.native
   open class GenMapping () extends StObject {
-    def this(hasFileSourceRoot: Options) = this()
+    def this(param0: Options) = this()
     
     /* private */ var _mappings: Any = js.native
     

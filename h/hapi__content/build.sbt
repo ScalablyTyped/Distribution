@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "hapi__content"
-version := "6.0-dt-20220607Z-5b3ba0"
-scalaVersion := "3.1.2"
+version := "6.0-dt-20220607Z-1d3313"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

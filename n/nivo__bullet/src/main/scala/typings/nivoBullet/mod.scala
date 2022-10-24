@@ -36,9 +36,7 @@ object mod {
   
   inline def Bullet(props: BulletSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bullet")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def BulletItem(
-    hasIdScaleLayoutReverseAxisPositionXYWidthHeightTitleTitlePositionTitleAlignTitleOffsetXTitleOffsetYTitleRotationTooltipRangeBorderColorRangeBorderWidthRangeComponentRangeColorsRangesMeasureBorderColorMeasureBorderWidthMeasureComponentMeasureHeightMeasureColorsMeasuresMarkerComponentMarkerColorsMarkerHeightMarkersOnRangeClickOnMeasureClickOnMarkerClick: BulletItemProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletItem")(hasIdScaleLayoutReverseAxisPositionXYWidthHeightTitleTitlePositionTitleAlignTitleOffsetXTitleOffsetYTitleRotationTooltipRangeBorderColorRangeBorderWidthRangeComponentRangeColorsRangesMeasureBorderColorMeasureBorderWidthMeasureComponentMeasureHeightMeasureColorsMeasuresMarkerComponentMarkerColorsMarkerHeightMarkersOnRangeClickOnMeasureClickOnMarkerClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BulletItem(param0: BulletItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def ResponsiveBullet(props: OmitBulletSvgPropsheightw): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveBullet")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -72,7 +70,7 @@ object mod {
     @js.native
     val markerColors: seqColonred_purple = js.native
     
-    inline def markerComponent(hasHasColorTransformXY1Y2DataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: BulletMarkersItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("markerComponent")(hasHasColorTransformXY1Y2DataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def markerComponent(param0: BulletMarkersItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("markerComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/bullet", "defaultProps.markerSize")
     @js.native
@@ -98,9 +96,7 @@ object mod {
     @js.native
     val measureColors: seqColonred_purple = js.native
     
-    inline def measureComponent(
-      hasHasXYWidthHeightColorBorderColorBorderWidthDataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: BulletRectsItemProps
-    ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("measureComponent")(hasHasXYWidthHeightColorBorderColorBorderWidthDataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def measureComponent(param0: BulletRectsItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("measureComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/bullet", "defaultProps.measureSize")
     @js.native
@@ -126,9 +122,7 @@ object mod {
     @js.native
     val rangeColors: seqColoncool = js.native
     
-    inline def rangeComponent(
-      hasHasXYWidthHeightColorBorderColorBorderWidthDataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: BulletRectsItemProps
-    ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeComponent")(hasHasXYWidthHeightColorBorderColorBorderWidthDataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def rangeComponent(param0: BulletRectsItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/bullet", "defaultProps.reverse")
     @js.native
@@ -162,6 +156,6 @@ object mod {
     @js.native
     val titleRotation: `0` = js.native
     
-    inline def tooltip(hasColorV0V1: BulletTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasColorV0V1.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip(param0: BulletTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
 }

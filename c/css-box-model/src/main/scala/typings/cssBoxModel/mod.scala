@@ -22,7 +22,7 @@ object mod {
   
   inline def getBox(el: Element): BoxModel = ^.asInstanceOf[js.Dynamic].applyDynamic("getBox")(el.asInstanceOf[js.Any]).asInstanceOf[BoxModel]
   
-  inline def getRect(hasTopRightBottomLeft: Spacing): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("getRect")(hasTopRightBottomLeft.asInstanceOf[js.Any]).asInstanceOf[Rect]
+  inline def getRect(param0: Spacing): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("getRect")(param0.asInstanceOf[js.Any]).asInstanceOf[Rect]
   
   inline def offset(original: BoxModel, change: Position): BoxModel = (^.asInstanceOf[js.Dynamic].applyDynamic("offset")(original.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[BoxModel]
   

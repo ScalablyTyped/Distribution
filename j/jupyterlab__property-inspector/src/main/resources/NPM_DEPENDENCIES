@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/property-inspector" : "3.4.8"
+      "@jupyterlab/property-inspector" : "3.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/property-inspector" : "3.4.8"
+      "@jupyterlab/property-inspector" : "3.5.0"
     }
   ],
   "compile-devDependencies" : [

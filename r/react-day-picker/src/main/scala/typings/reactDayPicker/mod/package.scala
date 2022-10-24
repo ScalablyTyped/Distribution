@@ -234,7 +234,7 @@ inline def SelectMultipleContext: Context[js.UndefOr[SelectMultipleContextValue]
 /** Provides the values for the {@link SelectMultipleContext}. */
 inline def SelectMultipleProvider(props: SelectMultipleProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectMultipleProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def SelectMultipleProviderInternal(hasInitialPropsChildren: SelectMultipleProviderInternalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectMultipleProviderInternal")(hasInitialPropsChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def SelectMultipleProviderInternal(param0: SelectMultipleProviderInternalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectMultipleProviderInternal")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 /**
   * The SelectRange context shares details about the selected days when in
@@ -247,7 +247,7 @@ inline def SelectRangeContext: Context[js.UndefOr[SelectRangeContextValue]] = ^.
 /** Provides the values for the {@link SelectRangeProvider}. */
 inline def SelectRangeProvider(props: SelectRangeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectRangeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def SelectRangeProviderInternal(hasInitialPropsChildren: SelectRangeProviderInternalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectRangeProviderInternal")(hasInitialPropsChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def SelectRangeProviderInternal(param0: SelectRangeProviderInternalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectRangeProviderInternal")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 /**
   * The SelectSingle context shares details about the selected days when in

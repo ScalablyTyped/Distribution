@@ -13,5 +13,5 @@ object coreLibOauthAuthorizationUrlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasOptionsQuery: Query): js.Promise[Redirect | CookiesRedirect] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOptionsQuery.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Redirect | CookiesRedirect]]
+  inline def default(param0: Query): js.Promise[Redirect | CookiesRedirect] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Redirect | CookiesRedirect]]
 }

@@ -13,7 +13,7 @@ object distSrcServersStorybookStaticsServerMod {
     
     /* private */ var server: Any = js.native
     
-    def start(hasPort: Port): js.Promise[Any] = js.native
+    def start(param0: Port): js.Promise[Any] = js.native
     
     def stop(): js.Promise[Any] = js.native
   }

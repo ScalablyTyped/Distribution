@@ -15,10 +15,10 @@ object distCollectionSrcUseCollectionSearchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useCollectionSearch(children: ReactNode, hasOnSearch: UseCollectionSearchOptions): js.Tuple2[
+  inline def useCollectionSearch(children: ReactNode, param1: UseCollectionSearchOptions): js.Tuple2[
     js.Array[CollectionNode], 
     js.Function2[/* event */ SyntheticEvent[Element, Event], /* query */ String, Unit]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollectionSearch")(children.asInstanceOf[js.Any], hasOnSearch.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollectionSearch")(children.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
     js.Array[CollectionNode], 
     js.Function2[/* event */ SyntheticEvent[Element, Event], /* query */ String, Unit]
   ]]

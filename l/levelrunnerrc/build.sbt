@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "levelrunnerrc"
-version := "1.0-dt-20220720Z-32fe26"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220720Z-dd9e14"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

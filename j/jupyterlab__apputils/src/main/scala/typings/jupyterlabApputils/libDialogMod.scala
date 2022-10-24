@@ -1,6 +1,7 @@
 package typings.jupyterlabApputils
 
 import typings.jupyterlabApputils.anon.PartialIButton
+import typings.jupyterlabApputils.anon.PartialICheckbox
 import typings.jupyterlabApputils.anon.ReadonlyIButton
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.default
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.warn
@@ -41,6 +42,8 @@ object libDialogMod {
     /* private */ var _buttonNodes: Any = js.native
     
     /* private */ var _buttons: Any = js.native
+    
+    /* private */ var _checkboxNode: Any = js.native
     
     /* private */ var _defaultButton: Any = js.native
     
@@ -165,13 +168,24 @@ object libDialogMod {
       def createButtonNode(button: IButton): HTMLElement = js.native
       
       /**
+        * Create a checkbox node for the dialog.
+        *
+        * @param checkbox - The checkbox data.
+        *
+        * @returns A node for the checkbox.
+        */
+      def createCheckboxNode(checkbox: ICheckbox): HTMLElement = js.native
+      
+      /**
         * Create the footer of the dialog.
         *
-        * @param buttonNodes - The buttons nodes to add to the footer.
+        * @param buttons - The buttons nodes to add to the footer.
+        * @param checkbox - The checkbox node to add to the footer.
         *
         * @returns A widget for the footer.
         */
       def createFooter(buttons: js.Array[HTMLElement]): Widget = js.native
+      def createFooter(buttons: js.Array[HTMLElement], checkbox: HTMLElement): Widget = js.native
       
       /**
         * Create the header of the dialog.
@@ -374,6 +388,50 @@ object libDialogMod {
     }
     
     /**
+      * The options used to make a checkbox item.
+      */
+    trait ICheckbox extends StObject {
+      
+      /**
+        * The caption for the checkbox.
+        */
+      var caption: String
+      
+      /**
+        * The initial checkbox state.
+        */
+      var checked: Boolean
+      
+      /**
+        * The extra class name for the checkbox.
+        */
+      var className: String
+      
+      /**
+        * The label for the checkbox.
+        */
+      var label: String
+    }
+    object ICheckbox {
+      
+      inline def apply(caption: String, checked: Boolean, className: String, label: String): ICheckbox = {
+        val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], checked = checked.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ICheckbox]
+      }
+      
+      extension [Self <: ICheckbox](x: Self) {
+        
+        inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+        
+        inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+        
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    /**
       * The options used to create a dialog.
       */
     trait IOptions[T] extends StObject {
@@ -396,6 +454,11 @@ object libDialogMod {
         * The buttons to display. Defaults to cancel and accept buttons.
         */
       var buttons: js.Array[IButton]
+      
+      /**
+        * The checkbox to display in the footer. Defaults no checkbox.
+        */
+      var checkbox: PartialICheckbox | Null
       
       /**
         * The index of the default button.  Defaults to the last button.
@@ -443,7 +506,7 @@ object libDialogMod {
         renderer: IRenderer,
         title: Header
       ): IOptions[T] = {
-        val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], defaultButton = defaultButton.asInstanceOf[js.Any], focusNodeSelector = focusNodeSelector.asInstanceOf[js.Any], hasClose = hasClose.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], defaultButton = defaultButton.asInstanceOf[js.Any], focusNodeSelector = focusNodeSelector.asInstanceOf[js.Any], hasClose = hasClose.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], checkbox = null)
         __obj.asInstanceOf[IOptions[T]]
       }
       
@@ -454,6 +517,10 @@ object libDialogMod {
         inline def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
         inline def setButtonsVarargs(value: IButton*): Self = StObject.set(x, "buttons", js.Array(value*))
+        
+        inline def setCheckbox(value: PartialICheckbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+        
+        inline def setCheckboxNull: Self = StObject.set(x, "checkbox", null)
         
         inline def setDefaultButton(value: Double): Self = StObject.set(x, "defaultButton", value.asInstanceOf[js.Any])
         
@@ -472,16 +539,17 @@ object libDialogMod {
     /**
       * A dialog renderer.
       */
+    @js.native
     trait IRenderer extends StObject {
       
       /**
         * Create the body of the dialog.
         *
-        * @param value - The input value for the body.
+        * @param body - The input value for the body.
         *
         * @returns A widget for the body.
         */
-      def createBody(body: Body[Any]): Widget
+      def createBody(body: Body[Any]): Widget = js.native
       
       /**
         * Create a button node for the dialog.
@@ -490,16 +558,27 @@ object libDialogMod {
         *
         * @returns A node for the button.
         */
-      def createButtonNode(button: IButton): HTMLElement
+      def createButtonNode(button: IButton): HTMLElement = js.native
+      
+      /**
+        * Create a checkbox node for the dialog.
+        *
+        * @param checkbox - The checkbox data.
+        *
+        * @returns A node for the checkbox.
+        */
+      def createCheckboxNode(checkbox: ICheckbox): HTMLElement = js.native
       
       /**
         * Create the footer of the dialog.
         *
         * @param buttons - The button nodes to add to the footer.
+        * @param checkbox - The checkbox node to add to the footer.
         *
         * @returns A widget for the footer.
         */
-      def createFooter(buttons: js.Array[HTMLElement]): Widget
+      def createFooter(buttons: js.Array[HTMLElement]): Widget = js.native
+      def createFooter(buttons: js.Array[HTMLElement], checkbox: HTMLElement): Widget = js.native
       
       /**
         * Create the header of the dialog.
@@ -508,30 +587,7 @@ object libDialogMod {
         *
         * @returns A widget for the dialog header.
         */
-      def createHeader[T](title: Header, reject: js.Function0[Unit], options: Partial[IOptions[T]]): Widget
-    }
-    object IRenderer {
-      
-      inline def apply(
-        createBody: Body[Any] => Widget,
-        createButtonNode: IButton => HTMLElement,
-        createFooter: js.Array[HTMLElement] => Widget,
-        createHeader: (Header, js.Function0[Unit], Partial[IOptions[Any]]) => Widget
-      ): IRenderer = {
-        val __obj = js.Dynamic.literal(createBody = js.Any.fromFunction1(createBody), createButtonNode = js.Any.fromFunction1(createButtonNode), createFooter = js.Any.fromFunction1(createFooter), createHeader = js.Any.fromFunction3(createHeader))
-        __obj.asInstanceOf[IRenderer]
-      }
-      
-      extension [Self <: IRenderer](x: Self) {
-        
-        inline def setCreateBody(value: Body[Any] => Widget): Self = StObject.set(x, "createBody", js.Any.fromFunction1(value))
-        
-        inline def setCreateButtonNode(value: IButton => HTMLElement): Self = StObject.set(x, "createButtonNode", js.Any.fromFunction1(value))
-        
-        inline def setCreateFooter(value: js.Array[HTMLElement] => Widget): Self = StObject.set(x, "createFooter", js.Any.fromFunction1(value))
-        
-        inline def setCreateHeader(value: (Header, js.Function0[Unit], Partial[IOptions[Any]]) => Widget): Self = StObject.set(x, "createHeader", js.Any.fromFunction3(value))
-      }
+      def createHeader[T](title: Header, reject: js.Function0[Unit], options: Partial[IOptions[T]]): Widget = js.native
     }
     
     /**
@@ -545,6 +601,14 @@ object libDialogMod {
       var button: IButton
       
       /**
+        * State of the dialog checkbox.
+        *
+        * #### Notes
+        * It will be null if no checkbox is defined for the dialog.
+        */
+      var isChecked: Boolean | Null
+      
+      /**
         * The value retrieved from `.getValue()` if given on the widget.
         */
       var value: T | Null
@@ -552,13 +616,17 @@ object libDialogMod {
     object IResult {
       
       inline def apply[T](button: IButton): IResult[T] = {
-        val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], value = null)
+        val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], isChecked = null, value = null)
         __obj.asInstanceOf[IResult[T]]
       }
       
       extension [Self <: IResult[?], T](x: Self & IResult[T]) {
         
         inline def setButton(value: IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+        
+        inline def setIsChecked(value: Boolean): Self = StObject.set(x, "isChecked", value.asInstanceOf[js.Any])
+        
+        inline def setIsCheckedNull: Self = StObject.set(x, "isChecked", null)
         
         inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         

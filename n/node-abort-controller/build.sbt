@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "node-abort-controller"
-version := "3.0.1-8874ea"
-scalaVersion := "3.1.2"
+version := "3.0.1-879d06"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

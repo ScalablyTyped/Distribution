@@ -21,7 +21,7 @@ object distIconsSrcIconListMod {
   @js.native
   val IconList: OrbitComponent[HTMLElement, InnerIconListProps] = js.native
   
-  inline def InnerIconList(hasSizeDisabledChildrenAsForwardedRefRest: InnerIconListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIconList")(hasSizeDisabledChildrenAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerIconList(param0: InnerIconListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIconList")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type IconListProps = ComponentProps[OrbitComponent[HTMLElement, InnerIconListProps]]
   

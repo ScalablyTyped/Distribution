@@ -25,7 +25,7 @@ object distTypesEventStreamCodecMod {
       * Convert a structured JavaScript object with tagged headers into a binary
       * event stream message.
       */
-    def encode(hasRawHeadersBody: Message): js.typedarray.Uint8Array = js.native
+    def encode(param0: Message): js.typedarray.Uint8Array = js.native
     
     /**
       * Convert a structured JavaScript object with tagged headers into a binary

@@ -75,11 +75,11 @@ object chipSetFoundationMod {
     /** Returns the unique selected indexes of the chips. */
     def getSelectedChipIndexes(): ReadonlySet[Double] = js.native
     
-    def handleChipAnimation(hasDetail: ChipAnimationEvent): Unit = js.native
+    def handleChipAnimation(param0: ChipAnimationEvent): Unit = js.native
     
-    def handleChipInteraction(hasDetail: ChipInteractionEvent): Unit = js.native
+    def handleChipInteraction(param0: ChipInteractionEvent): Unit = js.native
     
-    def handleChipNavigation(hasDetail: ChipNavigationEvent): Unit = js.native
+    def handleChipNavigation(param0: ChipNavigationEvent): Unit = js.native
     
     /** Returns the selected state of the chip at the given index and action. */
     def isChipSelected(index: Double, action: MDCChipActionType): Boolean = js.native

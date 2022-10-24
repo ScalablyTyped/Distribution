@@ -12,5 +12,5 @@ object accordionStatelessAccordionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasAccordionChildrenDisabledExpandedOnChangeOverridesRenderAll: StatelessAccordionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasAccordionChildrenDisabledExpandedOnChangeOverridesRenderAll.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: StatelessAccordionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

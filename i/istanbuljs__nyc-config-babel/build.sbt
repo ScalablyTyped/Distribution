@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "istanbuljs__nyc-config-babel"
-version := "3.0-dt-20220510Z-364700"
-scalaVersion := "3.1.2"
+version := "3.0-dt-20220510Z-6966e4"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

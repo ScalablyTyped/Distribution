@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery-focusable"
-version := "1.0-dt-20211202Z-c3c888"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-d49806"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -154,9 +154,9 @@ object mod {
     inline def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
   }
   
-  inline def DrawerRouter(hasDefaultStatusRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(hasDefaultStatusRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
+  inline def DrawerRouter(param0: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
-  inline def Link[ParamList /* <: RootParamList */](hasToActionRest: Props[ParamList]): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(hasToActionRest.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
+  inline def Link[ParamList /* <: RootParamList */](param0: Props[ParamList]): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(param0.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
   
   @JSImport("@react-navigation/native", "LinkingContext")
   @js.native
@@ -208,7 +208,7 @@ object mod {
   @js.native
   val PreventRemoveContext: Context[js.UndefOr[PreventedRoutes]] = js.native
   
-  inline def PreventRemoveProvider(hasChildren: typings.reactNavigationCore.libTypescriptSrcPreventRemoveProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PreventRemoveProvider")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PreventRemoveProvider(param0: typings.reactNavigationCore.libTypescriptSrcPreventRemoveProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PreventRemoveProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@react-navigation/native", "PrivateValueStore")
   @js.native
@@ -256,9 +256,9 @@ object mod {
     inline def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
   }
   
-  inline def TabRouter(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[TabNavigationState[ParamListBase], Action | TabActionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[TabNavigationState[ParamListBase], Action | TabActionType]]
+  inline def TabRouter(param0: TabRouterOptions): Router[TabNavigationState[ParamListBase], Action | TabActionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Router[TabNavigationState[ParamListBase], Action | TabActionType]]
   
-  inline def ThemeProvider(hasValueChildren: typings.reactNavigationNative.libTypescriptSrcThemingThemeProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasValueChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ThemeProvider(param0: typings.reactNavigationNative.libTypescriptSrcThemingThemeProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def UNSTABLEUsePreventRemove(preventRemove: Boolean, callback: js.Function1[/* options */ Data, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSTABLE_usePreventRemove")(preventRemove.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -298,7 +298,7 @@ object mod {
   
   inline def useLinkBuilder(): js.Function2[/* name */ String, /* params */ js.UndefOr[js.Object], js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkBuilder")().asInstanceOf[js.Function2[/* name */ String, /* params */ js.UndefOr[js.Object], js.UndefOr[String]]]
   
-  inline def useLinkProps[ParamList /* <: RootParamList */](hasToAction: typings.reactNavigationNative.libTypescriptSrcUseLinkPropsMod.Props[ParamList]): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkProps")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
+  inline def useLinkProps[ParamList /* <: RootParamList */](param0: typings.reactNavigationNative.libTypescriptSrcUseLinkPropsMod.Props[ParamList]): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkProps")(param0.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
   
   inline def useLinkTo[ParamList /* <: RootParamList */](): js.Function1[/* to */ To[ParamList, /* keyof ParamList */ String], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkTo")().asInstanceOf[js.Function1[/* to */ To[ParamList, /* keyof ParamList */ String], Unit]]
   

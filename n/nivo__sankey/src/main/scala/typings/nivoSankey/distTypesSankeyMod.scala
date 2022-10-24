@@ -14,5 +14,5 @@ object distTypesSankeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Sankey[N /* <: DefaultNode */, L /* <: DefaultLink */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: SankeySvgProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Sankey")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Sankey[N /* <: DefaultNode */, L /* <: DefaultLink */](param0: SankeySvgProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Sankey")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

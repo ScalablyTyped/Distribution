@@ -24,9 +24,7 @@ object distClientImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasSrcSizesUnoptimizedPriorityLoadingLazyRootLazyBoundaryClassNameQualityWidthHeightStyleObjectFitObjectPositionOnLoadingCompletePlaceholderBlurDataURLAll: ImageProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSrcSizesUnoptimizedPriorityLoadingLazyRootLazyBoundaryClassNameQualityWidthHeightStyleObjectFitObjectPositionOnLoadingCompletePlaceholderBlurDataURLAll.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ImageLoader = js.Function1[/* resolverProps */ ImageLoaderProps, String]
   

@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "emotion__native"
-version := "11.10.0-e8468e"
-scalaVersion := "3.1.2"
+version := "11.10.0-47f68b"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "emotion__react" % "11.10.4-a4b0aa",
-  "org.scalablytyped" %%% "emotion__serialize" % "1.1.0-a24573",
-  "org.scalablytyped" %%% "emotion__utils" % "1.2.0-48b99a",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
+  "org.scalablytyped" %%% "emotion__react" % "11.10.4-5789d9",
+  "org.scalablytyped" %%% "emotion__serialize" % "1.1.0-73f928",
+  "org.scalablytyped" %%% "emotion__utils" % "1.2.0-86e76d",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-847179",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

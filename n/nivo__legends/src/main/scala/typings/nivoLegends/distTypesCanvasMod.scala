@@ -13,13 +13,7 @@ object distTypesCanvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def renderContinuousColorLegendToCanvas(
-    ctx: CanvasRenderingContext2D,
-    hasContainerWidthContainerHeightAnchorTranslateXTranslateYScaleLengthThicknessDirection_ticksTickPositionTickSizeTickSpacingTickOverlapTickFormatTitleTitleAlignTitleOffsetTheme: anchorLegendAnchortransla
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderContinuousColorLegendToCanvas")(ctx.asInstanceOf[js.Any], hasContainerWidthContainerHeightAnchorTranslateXTranslateYScaleLengthThicknessDirection_ticksTickPositionTickSizeTickSpacingTickOverlapTickFormatTitleTitleAlignTitleOffsetTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderContinuousColorLegendToCanvas(ctx: CanvasRenderingContext2D, param1: anchorLegendAnchortransla): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderContinuousColorLegendToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderLegendToCanvas(
-    ctx: CanvasRenderingContext2D,
-    hasDataContainerWidthContainerHeightTranslateXTranslateYAnchorDirection_paddingJustifyItemsSpacingItemWidthItemHeightItemDirectionItemTextColorSymbolSizeSymbolSpacingTheme: LegendCanvasProps
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLegendToCanvas")(ctx.asInstanceOf[js.Any], hasDataContainerWidthContainerHeightTranslateXTranslateYAnchorDirection_paddingJustifyItemsSpacingItemWidthItemHeightItemDirectionItemTextColorSymbolSizeSymbolSpacingTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderLegendToCanvas(ctx: CanvasRenderingContext2D, param1: LegendCanvasProps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLegendToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

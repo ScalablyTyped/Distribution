@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EnsurePage extends StObject {
   
-  def ensurePage(hasPageClientOnlyAppPaths: ClientOnly): js.Promise[Unit]
+  def ensurePage(param0: ClientOnly): js.Promise[Unit]
   
   def onHMR(client: WebSocket): Unit
 }

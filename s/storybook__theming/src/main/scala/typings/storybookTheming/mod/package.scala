@@ -71,9 +71,9 @@ inline def create(vars: ThemeVars, rest: Rest): ThemeVars = (^.asInstanceOf[js.D
 
 inline def createCache(options: Options): EmotionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("createCache")(options.asInstanceOf[js.Any]).asInstanceOf[EmotionCache]
 
-inline def createGlobal(hasColorBackgroundTypography: Color): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(hasColorBackgroundTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
+inline def createGlobal(param0: Color): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(param0.asInstanceOf[js.Any]).asInstanceOf[Return]
 
-inline def createReset(hasTypography: Typography): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createReset")(hasTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
+inline def createReset(param0: Typography): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createReset")(param0.asInstanceOf[js.Any]).asInstanceOf[Return]
 
 inline def css(args: CSSInterpolation*): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SerializedStyles]
 inline def css(template: TemplateStringsArray, args: CSSInterpolation*): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(scala.List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SerializedStyles]

@@ -15,13 +15,13 @@ object buildIosSwiftMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createBridgingHeaderFile(hasProjectRootProjectNameProjectBridgingHeader: BridgingHeader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBridgingHeaderFile")(hasProjectRootProjectNameProjectBridgingHeader.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createBridgingHeaderFile(param0: BridgingHeader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def ensureSwiftBridgingHeaderSetup(hasProjectRootProject: ProjectProjectRoot): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureSwiftBridgingHeaderSetup")(hasProjectRootProject.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def ensureSwiftBridgingHeaderSetup(param0: ProjectProjectRoot): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureSwiftBridgingHeaderSetup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getDesignatedSwiftBridgingHeaderFileReference(hasProject: Project): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDesignatedSwiftBridgingHeaderFileReference")(hasProject.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getDesignatedSwiftBridgingHeaderFileReference(param0: Project): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDesignatedSwiftBridgingHeaderFileReference")(param0.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def linkBridgingHeaderFile(hasProjectBridgingHeader: BridgingHeaderProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("linkBridgingHeaderFile")(hasProjectBridgingHeader.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def linkBridgingHeaderFile(param0: BridgingHeaderProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("linkBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@expo/config-plugins/build/ios/Swift", "withNoopSwiftFile")
   @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nrwl__devkit
 
-Typings are for version 14.7.8
+Typings are for version 15.0.1
 
 ## Library description:
 The Nx Devkit is used to customize Nx for different technologies and use cases. It contains many utility functions for reading and writing files, updating configuration, working with Abstract Syntax Trees(ASTs), and more.

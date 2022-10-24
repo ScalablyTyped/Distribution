@@ -128,21 +128,21 @@ object distTs3Dot9ModulesReactRouterDomIndexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BrowserRouter(hasBasenameChildrenWindow: BrowserRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BrowserRouter")(hasBasenameChildrenWindow.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BrowserRouter(param0: BrowserRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BrowserRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def HashRouter(hasBasenameChildrenWindow: HashRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HashRouter")(hasBasenameChildrenWindow.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HashRouter(param0: HashRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HashRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@storybook/router/dist/ts3.9/_modules/react-router-dom-index", "Link")
   @js.native
   val Link: ForwardRefExoticComponent[LinkProps & RefAttributes[HTMLAnchorElement]] = js.native
   
-  inline def MemoryRouter(hasBasenameChildrenInitialEntriesInitialIndex: MemoryRouterProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MemoryRouter")(hasBasenameChildrenInitialEntriesInitialIndex.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MemoryRouter(param0: MemoryRouterProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MemoryRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@storybook/router/dist/ts3.9/_modules/react-router-dom-index", "NavLink")
   @js.native
   val NavLink: ForwardRefExoticComponent[NavLinkProps & RefAttributes[HTMLAnchorElement]] = js.native
   
-  inline def Navigate(hasToReplaceState: NavigateProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Navigate")(hasToReplaceState.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def Navigate(param0: NavigateProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Navigate")(param0.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   @JSImport("@storybook/router/dist/ts3.9/_modules/react-router-dom-index", "NavigationType")
   @js.native
@@ -164,9 +164,9 @@ object distTs3Dot9ModulesReactRouterDomIndexMod {
   inline def Route(_props: LayoutRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   inline def Route(_props: PathRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def Router(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp: RouterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Router(param0: RouterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def Routes(hasChildrenLocation: RoutesProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Routes")(hasChildrenLocation.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Routes(param0: RoutesProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Routes")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   inline def createRoutesFromChildren(children: ReactNode): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromChildren")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
   
@@ -195,7 +195,7 @@ object distTs3Dot9ModulesReactRouterDomIndexMod {
   inline def useInRouterContext(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useInRouterContext")().asInstanceOf[Boolean]
   
   inline def useLinkClickHandler[E /* <: typings.std.Element */](to: To): js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkClickHandler")(to.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit]]
-  inline def useLinkClickHandler[E /* <: typings.std.Element */](to: To, hasTargetReplacePropState: Replace): js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLinkClickHandler")(to.asInstanceOf[js.Any], hasTargetReplacePropState.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit]]
+  inline def useLinkClickHandler[E /* <: typings.std.Element */](to: To, param1: Replace): js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLinkClickHandler")(to.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit]]
   
   inline def useLocation(): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[Location]
   

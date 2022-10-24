@@ -15,8 +15,8 @@ object buildPluginsUnversionedExpoAdsAdmobWithIosAdMobMod {
   
   inline def setGoogleMobileAdsAppId(
     config: PickExpoConfigios,
-    hasGADApplicationIdentifierInfoPlist: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleMobileAdsAppId")(config.asInstanceOf[js.Any], hasGADApplicationIdentifierInfoPlist.asInstanceOf[js.Any])).asInstanceOf[Any]
+    param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleMobileAdsAppId")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("@expo/prebuild-config/build/plugins/unversioned/expo-ads-admob/withIosAdMob", "withIosAdMob")
   @js.native

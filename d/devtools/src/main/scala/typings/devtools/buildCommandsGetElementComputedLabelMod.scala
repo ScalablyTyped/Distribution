@@ -11,5 +11,5 @@ object buildCommandsGetElementComputedLabelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasElementId: ElementId): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def default(param1: ElementId): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
 }

@@ -732,6 +732,17 @@ object Seatsio {
     }
   }
   
+  extension [Self <: Seatsio](x: Self) {
+    
+    inline def setChartManager(value: ChartManager): Self = StObject.set(x, "ChartManager", value.asInstanceOf[js.Any])
+    
+    inline def setEventManager(value: EventManager): Self = StObject.set(x, "EventManager", value.asInstanceOf[js.Any])
+    
+    inline def setSeatingChart(value: SeatingChart): Self = StObject.set(x, "SeatingChart", value.asInstanceOf[js.Any])
+    
+    inline def setSeatingChartDesigner(value: SeatingChartDesigner): Self = StObject.set(x, "SeatingChartDesigner", value.asInstanceOf[js.Any])
+  }
+  
   trait Pricing extends StObject {
     
     var formattedPrice: String
@@ -1525,17 +1536,6 @@ object Seatsio {
       
       inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }
-  }
-  
-  extension [Self <: Seatsio](x: Self) {
-    
-    inline def setChartManager(value: ChartManager): Self = StObject.set(x, "ChartManager", value.asInstanceOf[js.Any])
-    
-    inline def setEventManager(value: EventManager): Self = StObject.set(x, "EventManager", value.asInstanceOf[js.Any])
-    
-    inline def setSeatingChart(value: SeatingChart): Self = StObject.set(x, "SeatingChart", value.asInstanceOf[js.Any])
-    
-    inline def setSeatingChartDesigner(value: SeatingChartDesigner): Self = StObject.set(x, "SeatingChartDesigner", value.asInstanceOf[js.Any])
   }
   
   @js.native

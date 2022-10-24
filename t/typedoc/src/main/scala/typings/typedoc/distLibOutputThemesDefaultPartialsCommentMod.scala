@@ -13,5 +13,5 @@ object distLibOutputThemesDefaultPartialsCommentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def comment(hasMarkdown: DefaultThemeRenderContext, props: Reflection): js.UndefOr[JsxElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(hasMarkdown.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[JsxElement]]
+  inline def comment(param0: DefaultThemeRenderContext, props: Reflection): js.UndefOr[JsxElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("comment")(param0.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[JsxElement]]
 }

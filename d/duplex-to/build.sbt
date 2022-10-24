@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "duplex-to"
-version := "1.0-dt-20211202Z-25ccbd"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-3fb126"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20220717Z-fe777d",
-  "org.scalablytyped" %%% "safe-buffer" % "5.2.1-823b4d",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20220717Z-4310cd",
+  "org.scalablytyped" %%% "safe-buffer" % "5.2.1-14a7cf",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -38,7 +38,7 @@ object distLayoutSrcInlineMod {
   @js.native
   val Inline: OrbitComponent[HTMLElement, InnerInlineProps] = js.native
   
-  inline def InnerInline(hasAlignVerticalAlignChildrenGapWrapForwardedRefRest: InnerInlineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerInline")(hasAlignVerticalAlignChildrenGapWrapForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerInline(param0: InnerInlineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerInline")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type InlineProps = ComponentProps[OrbitComponent[HTMLElement, InnerInlineProps]]
   

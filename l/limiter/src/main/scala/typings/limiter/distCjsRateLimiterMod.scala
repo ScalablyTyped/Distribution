@@ -11,7 +11,7 @@ object distCjsRateLimiterMod {
   @JSImport("limiter/dist/cjs/RateLimiter", "RateLimiter")
   @js.native
   open class RateLimiter protected () extends StObject {
-    def this(hasTokensPerIntervalIntervalFireImmediately: RateLimiterOpts) = this()
+    def this(param0: RateLimiterOpts) = this()
     
     var curIntervalStart: Double = js.native
     

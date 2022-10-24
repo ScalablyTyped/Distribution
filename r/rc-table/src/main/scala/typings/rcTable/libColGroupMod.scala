@@ -12,7 +12,7 @@ object libColGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RecordType](hasColWidthsColumnsColumCount: ColGroupProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColWidthsColumnsColumCount.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[RecordType](param0: ColGroupProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ColGroupProps[RecordType] extends StObject {
     

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "decache"
-version := "4.6.1-11a52e"
-scalaVersion := "3.1.2"
+version := "4.6.1-90a63d"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

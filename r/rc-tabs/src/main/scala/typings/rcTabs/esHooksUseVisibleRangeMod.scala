@@ -19,12 +19,12 @@ object esHooksUseVisibleRangeMod {
     tabContentNodeSizeInfo: SizeInfo,
     addNodeSizeInfo: SizeInfo,
     operationNodeSizeInfo: SizeInfo,
-    hasTabsTabPositionRtl: tabsArrayTabTabNavListPro
+    param5: tabsArrayTabTabNavListPro
   ): js.Tuple3[
     /* visibleStart */ Double, 
     /* visibleEnd */ Double, 
     /* visibleTabContentSize */ Double
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tabOffsets.asInstanceOf[js.Any], containerSizeInfo.asInstanceOf[js.Any], tabContentNodeSizeInfo.asInstanceOf[js.Any], addNodeSizeInfo.asInstanceOf[js.Any], operationNodeSizeInfo.asInstanceOf[js.Any], hasTabsTabPositionRtl.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tabOffsets.asInstanceOf[js.Any], containerSizeInfo.asInstanceOf[js.Any], tabContentNodeSizeInfo.asInstanceOf[js.Any], addNodeSizeInfo.asInstanceOf[js.Any], operationNodeSizeInfo.asInstanceOf[js.Any], param5.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
     /* visibleStart */ Double, 
     /* visibleEnd */ Double, 
     /* visibleTabContentSize */ Double

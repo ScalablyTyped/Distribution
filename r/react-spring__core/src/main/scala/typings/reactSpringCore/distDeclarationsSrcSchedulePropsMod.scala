@@ -18,7 +18,7 @@ object distDeclarationsSrcSchedulePropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def scheduleProps[T /* <: AnimationTarget[Any] */](callId: Double, hasKeyPropsDefaultPropsStateActions: ScheduledProps[T]): js.Promise[AnimationResult[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleProps")(callId.asInstanceOf[js.Any], hasKeyPropsDefaultPropsStateActions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnimationResult[T]]]
+  inline def scheduleProps[T /* <: AnimationTarget[Any] */](callId: Double, param1: ScheduledProps[T]): js.Promise[AnimationResult[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleProps")(callId.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AnimationResult[T]]]
   
   trait DefaultProps[T] extends StObject {
     

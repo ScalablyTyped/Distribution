@@ -32,7 +32,7 @@ inline def compileModsAsync(config: ExportedConfig, props: AssertMissingModProvi
 inline def createRunOncePlugin[T](plugin: ConfigPlugin[T], name: String): ConfigPlugin[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRunOncePlugin")(plugin.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ConfigPlugin[T]]
 inline def createRunOncePlugin[T](plugin: ConfigPlugin[T], name: String, version: String): ConfigPlugin[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRunOncePlugin")(plugin.asInstanceOf[js.Any], name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[ConfigPlugin[T]]
 
-inline def evalModsAsync(config: ExportedConfig, hasProjectRootIntrospectPlatformsAssertMissingModProviders: Introspect): js.Promise[ExportedConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("evalModsAsync")(config.asInstanceOf[js.Any], hasProjectRootIntrospectPlatformsAssertMissingModProviders.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExportedConfig]]
+inline def evalModsAsync(config: ExportedConfig, param1: Introspect): js.Promise[ExportedConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("evalModsAsync")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExportedConfig]]
 
 inline def withAndroidColors: ConfigPlugin[Mod[ResourceXML]] = ^.asInstanceOf[js.Dynamic].selectDynamic("withAndroidColors").asInstanceOf[ConfigPlugin[Mod[ResourceXML]]]
 
@@ -46,10 +46,7 @@ inline def withAppBuildGradle: ConfigPlugin[Mod[GradleProjectFile]] = ^.asInstan
 
 inline def withAppDelegate: ConfigPlugin[Mod[AppDelegateProjectFile]] = ^.asInstanceOf[js.Dynamic].selectDynamic("withAppDelegate").asInstanceOf[ConfigPlugin[Mod[AppDelegateProjectFile]]]
 
-inline def withBaseMod[T](
-  config: ExportedConfig,
-  hasPlatformModActionSkipEmptyModIsProviderIsIntrospectiveSaveToInternal: BaseModOptions & Action[T]
-): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withBaseMod")(config.asInstanceOf[js.Any], hasPlatformModActionSkipEmptyModIsProviderIsIntrospectiveSaveToInternal.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+inline def withBaseMod[T](config: ExportedConfig, param1: BaseModOptions & Action[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withBaseMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
 
 inline def withDangerousMod: ConfigPlugin[js.Tuple2[ModPlatform, Mod[Any]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("withDangerousMod").asInstanceOf[ConfigPlugin[js.Tuple2[ModPlatform, Mod[Any]]]]
 
@@ -74,7 +71,7 @@ inline def withMainActivity: ConfigPlugin[Mod[ApplicationProjectFile]] = ^.asIns
 
 inline def withMainApplication: ConfigPlugin[Mod[ApplicationProjectFile]] = ^.asInstanceOf[js.Dynamic].selectDynamic("withMainApplication").asInstanceOf[ConfigPlugin[Mod[ApplicationProjectFile]]]
 
-inline def withMod[T](config: ExportedConfig, hasPlatformModAction: typings.expoConfigPlugins.anon.Mod[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withMod")(config.asInstanceOf[js.Any], hasPlatformModAction.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+inline def withMod[T](config: ExportedConfig, param1: typings.expoConfigPlugins.anon.Mod[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
 
 inline def withPlugins: ConfigPlugin[js.Array[StaticPlugin[Any] | ConfigPlugin[Unit] | String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("withPlugins").asInstanceOf[ConfigPlugin[js.Array[StaticPlugin[Any] | ConfigPlugin[Unit] | String]]]
 

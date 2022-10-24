@@ -4,10 +4,6 @@ import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonRea
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import typings.reactNativePaper.anon.Call
-import typings.reactNativePaper.anon.CallHasChildrenTitleTitleStyleStyleRest
-import typings.reactNativePaper.anon.CallHasLeftRightTitleDescriptionChildrenThemeTitleStyleDescriptionStyleTitleNumberOfLinesDescriptionNumberOfLinesStyleIdTestIDOnPressOnLongPressExpandedPropAccessibilityLabel
-import typings.reactNativePaper.anon.CallHasLeftRightTitleDescriptionOnPressThemeStyleTitleStyleTitleNumberOfLinesDescriptionNumberOfLinesTitleEllipsizeModeDescriptionEllipsizeModeDescriptionStyleRest
-import typings.reactNativePaper.anon.CallHasStyleThemeRest
 import typings.reactNativePaper.anon.Description
 import typings.reactNativePaper.anon.PickPropsstyletitlechildr
 import typings.reactNativePaper.anon.PickRemoveChildrenComponeAccessibilityViewIsModal
@@ -17,6 +13,10 @@ import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAdjustsFontSizeToF
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAllowFontScaling
 import typings.reactNativePaper.anon.TouchableWithoutFeedbackP
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityState
+import typings.reactNativePaper.anon.`19`
+import typings.reactNativePaper.anon.`20`
+import typings.reactNativePaper.anon.`21`
+import typings.reactNativePaper.anon.`22`
 import typings.reactNativePaper.libTypescriptComponentsListListAccordionMod.Props
 import typings.reactNativePaper.libTypescriptTypesMod.RemoveChildren
 import org.scalablytyped.runtime.StObject
@@ -27,10 +27,7 @@ object libTypescriptComponentsListListMod {
   
   @JSImport("react-native-paper/lib/typescript/components/List/List", "Accordion")
   @js.native
-  val Accordion: ComponentType[PickPropsstyletitlechildr] & (NonReactStatics[
-    ComponentType[Props] & CallHasLeftRightTitleDescriptionChildrenThemeTitleStyleDescriptionStyleTitleNumberOfLinesDescriptionNumberOfLinesStyleIdTestIDOnPressOnLongPressExpandedPropAccessibilityLabel, 
-    js.Object
-  ]) = js.native
+  val Accordion: ComponentType[PickPropsstyletitlechildr] & (NonReactStatics[ComponentType[Props] & `19`, js.Object]) = js.native
   
   /**
     * List.AccordionGroup allows to control a group of List Accordions. `id` prop for List.Accordion is required in order for group to work.
@@ -71,9 +68,7 @@ object libTypescriptComponentsListListMod {
     */
   object AccordionGroup {
     
-    inline def apply(
-      hasExpandedIdPropOnAccordionPressChildren: typings.reactNativePaper.libTypescriptComponentsListListAccordionGroupMod.Props
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasExpandedIdPropOnAccordionPressChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: typings.reactNativePaper.libTypescriptComponentsListListAccordionGroupMod.Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/List/List", "AccordionGroup")
     @js.native
@@ -112,7 +107,7 @@ object libTypescriptComponentsListListMod {
     */
   object Icon {
     
-    inline def apply(hasIconIconColorStyle: typings.reactNativePaper.libTypescriptComponentsListListIconMod.Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasIconIconColorStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: typings.reactNativePaper.libTypescriptComponentsListListIconMod.Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/List/List", "Icon")
     @js.native
@@ -131,23 +126,20 @@ object libTypescriptComponentsListListMod {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & Description
-    ]) & CallHasLeftRightTitleDescriptionOnPressThemeStyleTitleStyleTitleNumberOfLinesDescriptionNumberOfLinesTitleEllipsizeModeDescriptionEllipsizeModeDescriptionStyleRest, 
+    ]) & `20`, 
     js.Object
   ]) = js.native
   
   @JSImport("react-native-paper/lib/typescript/components/List/List", "Section")
   @js.native
-  val Section: ComponentType[PickViewPropsRefAttributeAccessibilityValue] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityState] & CallHasChildrenTitleTitleStyleStyleRest, 
-    js.Object
-  ]) = js.native
+  val Section: ComponentType[PickViewPropsRefAttributeAccessibilityValue] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityState] & `21`, js.Object]) = js.native
   
   @JSImport("react-native-paper/lib/typescript/components/List/List", "Subheader")
   @js.native
   val Subheader: (ComponentType[
     PickthemeDeepPartialThemeAdjustsFontSizeToFit | PickthemeDeepPartialThemeAllowFontScaling
   ]) & (NonReactStatics[
-    ComponentType[typings.reactNativePaper.libTypescriptComponentsListListSubheaderMod.Props] & CallHasStyleThemeRest, 
+    ComponentType[typings.reactNativePaper.libTypescriptComponentsListListSubheaderMod.Props] & `22`, 
     js.Object
   ]) = js.native
 }

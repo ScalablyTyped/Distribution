@@ -1,12 +1,13 @@
 package typings.wixStyleReact.anon
 
 import typings.react.mod.ReactNode
-import typings.wixStyleReact.badgeMod.BadgeSkin
+import typings.wixStyleReact.distTypesBadgeMod.BadgeSkin
+import typings.wixStyleReact.distTypesBadgeSelectItemMod.BadgeSelectItemSizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<wix-style-react.wix-style-react/dist/es/src/BadgeSelectItem.BadgeSelectItem> */
+/* Inlined std.Partial<wix-style-react.wix-style-react/dist/types/BadgeSelectItem.BadgeSelectItem> */
 trait PartialBadgeSelectItem extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
@@ -23,9 +24,13 @@ trait PartialBadgeSelectItem extends StObject {
   
   var selected: js.UndefOr[Boolean] = js.undefined
   
+  var size: js.UndefOr[BadgeSelectItemSizes] = js.undefined
+  
   var skin: js.UndefOr[BadgeSkin] = js.undefined
   
   var subtitle: js.UndefOr[String] = js.undefined
+  
+  var suffix: js.UndefOr[ReactNode] = js.undefined
   
   var text: js.UndefOr[ReactNode] = js.undefined
 }
@@ -66,6 +71,10 @@ object PartialBadgeSelectItem {
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
+    inline def setSize(value: BadgeSelectItemSizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
     inline def setSkin(value: BadgeSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
     
     inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
@@ -73,6 +82,10 @@ object PartialBadgeSelectItem {
     inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    
+    inline def setSuffix(value: ReactNode): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     
     inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

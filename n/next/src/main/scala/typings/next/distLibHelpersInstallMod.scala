@@ -10,12 +10,8 @@ object distLibHelpersInstallMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def install(
-    root: String,
-    dependencies: js.Array[String],
-    hasPackageManagerIsOnlineDevDependencies: InstallArgs
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(root.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], hasPackageManagerIsOnlineDevDependencies.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def install(root: String, dependencies: Null, hasPackageManagerIsOnlineDevDependencies: InstallArgs): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(root.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], hasPackageManagerIsOnlineDevDependencies.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def install(root: String, dependencies: js.Array[String], param2: InstallArgs): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(root.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def install(root: String, dependencies: Null, param2: InstallArgs): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(root.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait InstallArgs extends StObject {
     

@@ -14,7 +14,7 @@ trait TypeofHostAddress
   
   def fromHostPort(host: String, port: Double): HostAddress = js.native
   
-  def fromSrvRecord(hasNamePort: SrvRecord): HostAddress = js.native
+  def fromSrvRecord(param0: SrvRecord): HostAddress = js.native
   
   def fromString(s: String): HostAddress = js.native
 }

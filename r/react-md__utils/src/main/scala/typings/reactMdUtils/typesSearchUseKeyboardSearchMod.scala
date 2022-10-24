@@ -15,9 +15,7 @@ object typesSearchUseKeyboardSearchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useKeyboardSearch[D, E /* <: HTMLElement */](
-    hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex: KeyboardSearchOptions[D, E]
-  ): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardSearch")(hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  inline def useKeyboardSearch[D, E /* <: HTMLElement */](param0: KeyboardSearchOptions[D, E]): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardSearch")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
   
   trait BaseKeyboardSearchOptions[D, E /* <: HTMLElement */]
     extends StObject

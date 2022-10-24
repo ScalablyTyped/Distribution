@@ -28,8 +28,8 @@ object distSrcUtilsMod {
   
   inline def isCellInRange(
     cell: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CellCoordinates */ Any,
-    hasTopLeftBottomRight: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RangeCoordinate */ Any
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCellInRange")(cell.asInstanceOf[js.Any], hasTopLeftBottomRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RangeCoordinate */ Any
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCellInRange")(cell.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def sequence(start: Double, end: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   

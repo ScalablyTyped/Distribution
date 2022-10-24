@@ -24,13 +24,11 @@ object distDeclarationsSrcComponentsContainersMod {
   
   inline def ValueContainer[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: ValueContainerProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueContainer")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def containerCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsDisabledIsRtl: ContainerProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("containerCSS")(hasIsDisabledIsRtl.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def containerCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: ContainerProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("containerCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
   inline def indicatorsContainerCSS(): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("indicatorsContainerCSS")().asInstanceOf[CSSObjectWithLabel]
   
-  inline def valueContainerCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
-    hasHasSpacingIsMultiHasValueHasControlShouldRenderValue: ValueContainerProps[Option, IsMulti, Group]
-  ): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("valueContainerCSS")(hasHasSpacingIsMultiHasValueHasControlShouldRenderValue.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def valueContainerCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: ValueContainerProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("valueContainerCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
   @js.native
   trait ContainerProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]

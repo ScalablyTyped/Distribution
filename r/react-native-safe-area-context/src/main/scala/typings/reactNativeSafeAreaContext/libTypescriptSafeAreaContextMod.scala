@@ -37,7 +37,7 @@ object libTypescriptSafeAreaContextMod {
   @js.native
   val SafeAreaInsetsContext: Context[EdgeInsets | Null] = js.native
   
-  inline def SafeAreaProvider(hasChildrenInitialMetricsInitialSafeAreaInsetsStyleOthers: SafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaProvider")(hasChildrenInitialMetricsInitialSafeAreaInsetsStyleOthers.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SafeAreaProvider(param0: SafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useSafeArea(): EdgeInsets = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeArea")().asInstanceOf[EdgeInsets]
   

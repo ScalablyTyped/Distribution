@@ -19,9 +19,7 @@ object typesWiaAriaMovementUseKeyboardMovementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
-    hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue: KeyboardMovementOptions[D, CE, IE]
-  ): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardMovement")(hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
+  inline def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](param0: KeyboardMovementOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardMovement")(param0.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
   
   /* Inlined parent std.Omit<@react-md/utils.@react-md/utils/types/search/useKeyboardSearch.BaseKeyboardSearchOptions<D, CE>, 'onChange'> */
   /* Inlined parent @react-md/utils.@react-md/utils/types/wia-aria/movement/types.MovementConfig */

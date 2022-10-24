@@ -1,6 +1,6 @@
 package typings.wixStyleReact
 
-import typings.wixUiTestUtils.baseDriverMod.BaseUniDriver
+import typings.wixUiTestUtils.distSrcBaseDriverMod.BaseUniDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait FilePickerUniDriver
   
   def getMainLabel(): js.Promise[String]
   
-  def getName(): js.Promise[js.Any]
+  def getName(): js.Promise[Any]
   
   def getSubLabel(): js.Promise[String]
   
@@ -23,11 +23,11 @@ object FilePickerUniDriver {
   
   inline def apply(
     click: () => js.Promise[Unit],
-    element: () => js.Promise[js.Any],
+    element: () => js.Promise[Any],
     errorMessage: () => js.Promise[String],
     exists: () => js.Promise[Boolean],
     getMainLabel: () => js.Promise[String],
-    getName: () => js.Promise[js.Any],
+    getName: () => js.Promise[Any],
     getSubLabel: () => js.Promise[String],
     hasError: () => js.Promise[Boolean]
   ): FilePickerUniDriver = {
@@ -41,7 +41,7 @@ object FilePickerUniDriver {
     
     inline def setGetMainLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getMainLabel", js.Any.fromFunction0(value))
     
-    inline def setGetName(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => js.Promise[Any]): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     inline def setGetSubLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getSubLabel", js.Any.fromFunction0(value))
     

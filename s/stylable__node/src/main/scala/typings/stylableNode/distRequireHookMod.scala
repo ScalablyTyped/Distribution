@@ -13,7 +13,7 @@ object distRequireHookMod {
   val ^ : js.Any = js.native
   
   inline def attachHook(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHook")().asInstanceOf[Unit]
-  inline def attachHook(hasMatcherAfterCompileStylableConfigRuntimePathIgnoreJSModules: PartialOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHook")(hasMatcherAfterCompileStylableConfigRuntimePathIgnoreJSModules.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def attachHook(param0: PartialOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHook")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     

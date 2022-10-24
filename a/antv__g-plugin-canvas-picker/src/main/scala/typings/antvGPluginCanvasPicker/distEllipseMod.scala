@@ -13,5 +13,5 @@ object distEllipseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isPointInPath(displayObject: DisplayObject[EllipseStyleProps, Any], hasXY: X): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointInPath")(displayObject.asInstanceOf[js.Any], hasXY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPointInPath(displayObject: DisplayObject[EllipseStyleProps, Any], param1: X): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointInPath")(displayObject.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

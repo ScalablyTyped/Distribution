@@ -199,13 +199,13 @@ object distDeclarationsSrcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ThemeProvider(hasThemeChildren: ThemeProviderProps): FunctionComponentElement[ThemeUIInternalBaseThemeProviderProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasThemeChildren.asInstanceOf[js.Any]).asInstanceOf[FunctionComponentElement[ThemeUIInternalBaseThemeProviderProps]]
+  inline def ThemeProvider(param0: ThemeProviderProps): FunctionComponentElement[ThemeUIInternalBaseThemeProviderProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[FunctionComponentElement[ThemeUIInternalBaseThemeProviderProps]]
   
   @JSImport("@theme-ui/core/dist/declarations/src", "__ThemeUIContext")
   @js.native
   val ThemeUIContext: Context[ThemeUIContextValue] = js.native
   
-  inline def ThemeUIInternalBaseThemeProvider(hasContextChildren: ThemeUIInternalBaseThemeProviderProps): FunctionComponentElement[ProviderProps[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("__ThemeUIInternalBaseThemeProvider")(hasContextChildren.asInstanceOf[js.Any]).asInstanceOf[FunctionComponentElement[ProviderProps[js.Object]]]
+  inline def ThemeUIInternalBaseThemeProvider(param0: ThemeUIInternalBaseThemeProviderProps): FunctionComponentElement[ProviderProps[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("__ThemeUIInternalBaseThemeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[FunctionComponentElement[ProviderProps[js.Object]]]
   
   @JSImport("@theme-ui/core/dist/declarations/src", "createElement")
   @js.native

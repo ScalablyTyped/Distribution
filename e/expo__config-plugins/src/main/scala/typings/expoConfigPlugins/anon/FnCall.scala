@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCall extends StObject {
   
-  def apply[ModName /* <: String */](config: ExportedConfig, hasPlatformProvidersProps: ForwardedBaseModOptions & Platform[ModName]): ExportedConfig = js.native
+  def apply[ModName /* <: String */](config: ExportedConfig, param1: ForwardedBaseModOptions & Platform[ModName]): ExportedConfig = js.native
 }

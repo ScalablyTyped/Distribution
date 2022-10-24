@@ -13,10 +13,5 @@ object distServerSendHtmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def sendHTML(
-    req: IncomingMessage,
-    res: ServerResponse[IncomingMessage],
-    html: String,
-    hasGenerateEtagsPoweredByHeader: GenerateEtags
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendHTML")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], html.asInstanceOf[js.Any], hasGenerateEtagsPoweredByHeader.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendHTML(req: IncomingMessage, res: ServerResponse[IncomingMessage], html: String, param3: GenerateEtags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendHTML")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], html.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

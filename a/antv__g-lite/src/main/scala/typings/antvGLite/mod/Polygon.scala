@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Polygon ()
   extends typings.antvGLite.distDisplayObjectsMod.Polygon {
-  def this(hasStyleRest: DisplayObjectConfig[PolygonStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[PolygonStyleProps]) = this()
 }

@@ -15,16 +15,16 @@ object distTypesCoreServicesUserKeysMod {
   @JSImport("gitlab/dist/types/core/services/UserKeys", "UserKeys")
   @js.native
   open class UserKeys () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native
-    def all(hasUserIdOptions: userIdnumberundefinedPagi): js.Promise[GetResponse] = js.native
+    def all(param0: userIdnumberundefinedPagi): js.Promise[GetResponse] = js.native
     
     def create(title: Any, key: Any): js.Promise[js.Object] = js.native
-    def create(title: Any, key: Any, hasUserIdOptions: userIdnumberundefinedBase): js.Promise[js.Object] = js.native
+    def create(title: Any, key: Any, param2: userIdnumberundefinedBase): js.Promise[js.Object] = js.native
     
     def remove(keyId: Any): js.Promise[js.Object] = js.native
-    def remove(keyId: Any, hasUserIdOptions: userIdnumberundefinedBase): js.Promise[js.Object] = js.native
+    def remove(keyId: Any, param1: userIdnumberundefinedBase): js.Promise[js.Object] = js.native
     
     def show(keyId: Any): js.Promise[GetResponse] = js.native
     def show(keyId: Any, options: BaseRequestOptions): js.Promise[GetResponse] = js.native

@@ -60,7 +60,7 @@ object libUtilsMod {
   
   inline def debug(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def getActiveIndex(hasStartIndexItemsCountInfinite: Infinite): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveIndex")(hasStartIndexItemsCountInfinite.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getActiveIndex(param0: Infinite): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveIndex")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def getActiveSlideDotsLength(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveSlideDotsLength")().asInstanceOf[Double]
   inline def getActiveSlideDotsLength(slidesLength: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveSlideDotsLength")(slidesLength.asInstanceOf[js.Any]).asInstanceOf[Double]

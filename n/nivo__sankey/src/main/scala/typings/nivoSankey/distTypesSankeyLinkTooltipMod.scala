@@ -14,7 +14,7 @@ object distTypesSankeyLinkTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SankeyLinkTooltip[N /* <: DefaultNode */, L /* <: DefaultLink */](hasLink: SankeyLinkTooltipProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SankeyLinkTooltip")(hasLink.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SankeyLinkTooltip[N /* <: DefaultNode */, L /* <: DefaultLink */](param0: SankeyLinkTooltipProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SankeyLinkTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait SankeyLinkTooltipProps[N /* <: DefaultNode */, L /* <: DefaultLink */] extends StObject {
     

@@ -14,5 +14,5 @@ object distRecordLayerOrderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def recordLayerOrder(root: Container[ChildNode], model: Model, hasResultOptions: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordLayerOrder")(root.asInstanceOf[js.Any], model.asInstanceOf[js.Any], hasResultOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def recordLayerOrder(root: Container[ChildNode], model: Model, param2: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordLayerOrder")(root.asInstanceOf[js.Any], model.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -16,5 +16,5 @@ object linkerBabelMod {
   
   inline def default(api: ConfigAPI, options: PartialLinkerOptions): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(api.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   
-  inline def createEs2015LinkerPlugin(hasFileSystemLoggerOptions: LinkerPluginOptions): PluginObj = ^.asInstanceOf[js.Dynamic].applyDynamic("createEs2015LinkerPlugin")(hasFileSystemLoggerOptions.asInstanceOf[js.Any]).asInstanceOf[PluginObj]
+  inline def createEs2015LinkerPlugin(param0: LinkerPluginOptions): PluginObj = ^.asInstanceOf[js.Dynamic].applyDynamic("createEs2015LinkerPlugin")(param0.asInstanceOf[js.Any]).asInstanceOf[PluginObj]
 }

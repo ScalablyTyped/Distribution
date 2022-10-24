@@ -18,7 +18,7 @@ object distTabsSrcTabPanelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerTabPanel(hasHasKeyTabIdPanelIdAsChildrenForwardedRefRest: InnerTabPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabPanel")(hasHasKeyTabIdPanelIdAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTabPanel(param0: InnerTabPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabPanel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/tabs/src/TabPanel", "TabPanel")
   @js.native

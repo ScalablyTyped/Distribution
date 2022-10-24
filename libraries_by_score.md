@@ -1494,6 +1494,7 @@
 | 0.7721788752452723 | [retry-request](./r/retry-request) | Retry a request.
 | 0.7721761557741191 | [istanbul-lib-instrument](./i/istanbul-lib-instrument) | Core istanbul API for JS code coverage
 | 0.7721150317232826 | [d3-voronoi](./d/d3-voronoi) | Compute the Voronoi diagram of a set of two-dimens
+| 0.771933908862093 | [react-aria__ssr](./r/react-aria__ssr) | Spectrum UI components in React
 | 0.7718928866859236 | [d3-collection](./d/d3-collection) | Handy data structures for elements keyed by string
 | 0.7716483695705457 | [umd](./u/umd) | Universal Module Definition for use in automated b
 | 0.7715673453519578 | [npmcli__ci-detect](./n/npmcli__ci-detect) | Detect what kind of CI environment the program is 
@@ -1768,6 +1769,7 @@
 | 0.7595107823029481 | [markdown-it-anchor](./m/markdown-it-anchor) | Header anchors for markdown-it.
 | 0.7593816673322856 | [electron](./e/electron) | Build cross platform desktop apps with JavaScript,
 | 0.7593648174250369 | [redis](./r/redis) | A modern, high performance Redis client
+| 0.7593610473191243 | [react-aria__utils](./r/react-aria__utils) | Spectrum UI components in React
 | 0.7593354234544437 | [lodash_dot_max](./l/lodash_dot_max) | The lodash method _.max exported as a module.
 | 0.7592623818156001 | [imagesloaded](./i/imagesloaded) | JavaScript is all like _You images done yet or wha
 | 0.7592437848255287 | [inferno-create-element](./i/inferno-create-element) | Provides methods to create Inferno VNodes
@@ -1806,6 +1808,7 @@
 | 0.7577530057879511 | [aws-sdk__middleware-sdk-a](./a/aws-sdk__middleware-sdk-api-gateway) | -
 | 0.7576817113545606 | [co-body](./c/co-body) | request body parsing for co
 | 0.7576729615927398 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect
+| 0.7575346120827423 | [react-aria__interactions](./r/react-aria__interactions) | Spectrum UI components in React
 | 0.757525979103387 | [recoil](./r/recoil) | Recoil - A state management library for React
 | 0.7575126449271476 | [execall](./e/execall) | Find multiple RegExp matches in a string
 | 0.7575016441565605 | [lodash_dot_result](./l/lodash_dot_result) | The lodash method _.result exported as a module.
@@ -1839,6 +1842,7 @@
 | 0.7559895213676115 | [array-find-index](./a/array-find-index) | ES2015 Array
 | 0.7559147604099621 | [issue-parser](./i/issue-parser) | Parser for Github, GitLab and Bitbucket issues act
 | 0.7559096114372503 | [cypress-cucumber-preproce](./c/cypress-cucumber-preprocessor) | Run gherkin-syntaxed specs with cypress.io
+| 0.7557093919642965 | [react-stately__utils](./r/react-stately__utils) | Spectrum UI components in React
 | 0.755676129859746 | [tmp-promise](./t/tmp-promise) | The tmp package with promises support and disposer
 | 0.7556745453338691 | [app-module-path](./a/app-module-path) | Simple module to add additional directories to the
 | 0.7556620265626599 | [aws-crypto__sha256-browse](./a/aws-crypto__sha256-browser) | SHA256 wrapper for browsers that prefers window.cr
@@ -1879,6 +1883,7 @@
 | 0.7543127555456143 | [expo__metro-config](./e/expo__metro-config) | A Metro config for running React Native projects w
 | 0.7542682607195667 | [ts-toolbelt](./t/ts-toolbelt) | TypeScript's largest utility library
 | 0.7542389857355081 | [ajv-keywords](./a/ajv-keywords) | Additional JSON-Schema keywords for Ajv JSON valid
+| 0.7541311673269097 | [react-types__shared](./r/react-types__shared) | Spectrum UI components in React
 | 0.7541168859024864 | [lodash_dot_unset](./l/lodash_dot_unset) | The lodash method _.unset exported as a module.
 | 0.7541083137403028 | [mdast-util-gfm-strikethro](./m/mdast-util-gfm-strikethrough) | mdast extension to parse and serialize GFM striket
 | 0.7541079093890454 | [wonka](./w/wonka) | A tiny but capable push & pull stream library for 
@@ -2382,6 +2387,7 @@
 | 0.7307744580326868 | [load-script](./l/load-script) | Dynamic script loading for browser
 | 0.7307602880403125 | [stdout-stream](./s/stdout-stream) | Non-blocking stdout stream
 | 0.7307034874610101 | [mdast-util-mdx-expression](./m/mdast-util-mdx-expression) | mdast extension to parse and serialize MDX (or MDX
+| 0.7306634185702359 | [dasherize](./d/dasherize) | recursively transform key strings to dash-case
 | 0.7306586749196085 | [detect-it](./d/detect-it) | Detect if a device is mouse only, touch only, or h
 | 0.7306572299708503 | [ethersproject__keccak256](./e/ethersproject__keccak256) | The keccak256 hash function for ethers.
 | 0.7306470510669776 | [jsrender](./j/jsrender) | Best-of-breed templating in browser or on Node.js 
@@ -3142,7 +3148,6 @@
 | 0.7082704355167599 | [rc-segmented](./r/rc-segmented) | React segmented controls used in ant.design
 | 0.7082676941001456 | [empower](./e/empower) | Power Assert feature enhancer for assert function/
 | 0.7081949710506517 | [node-abort-controller](./n/node-abort-controller) | AbortController for Node based on EventEmitter
-| 0.7081644043608262 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.7081411005412502 | [ranges-apply](./r/ranges-apply) | Take an array of string index ranges, delete/repla
 | 0.7080424574077693 | [cassandra-driver](./c/cassandra-driver) | DataStax Node.js Driver for Apache Cassandra
 | 0.7080408055692131 | [qr-image](./q/qr-image) | QR Code generator (png, svg, pdf, eps)
@@ -4058,6 +4063,7 @@
 | 0.6840852913918103 | [delete-empty](./d/delete-empty) | Recursively delete all empty folders in a director
 | 0.6840709122721884 | [openapi-request-validator](./o/openapi-request-validator) | Validate request properties against an OpenAPI spe
 | 0.6840601771701782 | [passport-steam](./p/passport-steam) | Steam (OpenID 2) authentication strategy for Passp
+| 0.6840346575800967 | [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node
 | 0.6840140055189972 | [react-no-ssr](./r/react-no-ssr) | React component to wrap non SSR components.
 | 0.6840139024157877 | [vega-expression](./v/vega-expression) | Vega expression parser and code generator.
 | 0.6840057747936023 | [uuid-apikey](./u/uuid-apikey) | A Base32-Crockford encoded API Key generator, vali
@@ -4344,6 +4350,7 @@
 | 0.6773153896609754 | [datadog__native-appsec](./d/datadog__native-appsec) | Node.js bindings for libddwaf
 | 0.6772865071646477 | [it-pair](./i/it-pair) | pair a source async iterable stream and a sink asy
 | 0.6771881051851015 | [whoops](./w/whoops) | It makes simple throw qualified errors.
+| 0.6771252614604799 | [yarnpkg__parsers](./y/yarnpkg__parsers) | -
 | 0.6771242613387414 | [is-image](./i/is-image) | Check if a file path is an image
 | 0.6770593087037104 | [wasm-feature-detect](./w/wasm-feature-detect) | A small library to detect which features of WebAss
 | 0.6770460233066411 | [testing-library__testcafe](./t/testing-library__testcafe) |  testcafe-testing-library
@@ -5382,6 +5389,7 @@
 | 0.6538493270938367 | [mqtt](./m/mqtt) | A library for the MQTT protocol
 | 0.6538449772615398 | [vec2](./v/vec2) | manipulate vectors in 2d
 | 0.6538395028480307 | [unique-hash-stream](./u/unique-hash-stream) | Remove duplicates from a stream based on a hashing
+| 0.653800634785273 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.6537780824236122 | [superagent-bunyan](./s/superagent-bunyan) | a plugin for superagent that uses bunyan to log th
 | 0.6537568181251388 | [generic-pool](./g/generic-pool) | Generic resource pooling for Node.JS
 | 0.653751723904862 | [typed-undo](./t/typed-undo) | A low memory UndoManager for TypeScript (and JavaS
@@ -6142,6 +6150,7 @@
 | 0.6321627940036069 | [brainhubeu__react-carouse](./b/brainhubeu__react-carousel) | Carousel component for React
 | 0.6321285594102065 | [xml-js](./x/xml-js) | A convertor between XML text and Javascript object
 | 0.6321135360861455 | [json3](./j/json3) | A JSON polyfill for older JavaScript platforms.
+| 0.632111236420621 | [newsemitter](./n/newsemitter) | An event emitter that emits only new events.
 | 0.6320882873420308 | [highcharts](./h/highcharts) | JavaScript charting framework
 | 0.6320390758304375 | [ringbufferjs](./r/ringbufferjs) | a simple ring buffer data structure
 | 0.6320157294484859 | [ckeditor__ckeditor5-autos](./c/ckeditor__ckeditor5-autosave) | Autosave feature for CKEditor 5.
@@ -8373,6 +8382,7 @@
 | 0.51865377039315 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne
 | 0.5186456954880554 | [geojson](./g/geojson) | Turn your geo data into GeoJSON
 | 0.5186105162537533 | [jotform-css_dot_js](./j/jotform-css_dot_js) | A lightweight, battle tested, fast, CSS parser in 
+| 0.5185871962660882 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
 | 0.5185458565617317 | [fs-promise](./f/fs-promise) | -
 | 0.5185200730022734 | [angular-gridster](./a/angular-gridster) | This directive gives you gridster behavior
 | 0.5185134170674351 | [use-it__event-listener](./u/use-it__event-listener) | A custom React Hook that provides a useEventListen
@@ -8580,6 +8590,7 @@
 | 0.5073184517108326 | [osmtogeojson](./o/osmtogeojson) | convert OSM to geojson
 | 0.5068995222078896 | [smoothie](./s/smoothie) | Smoothie Charts: smooooooth JavaScript charts for 
 | 0.5067207925249471 | [buffers](./b/buffers) | Treat a collection of Buffers as a single contiguo
+| 0.5065720229096784 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.5065605862408005 | [leaflet-routing-machine](./l/leaflet-routing-machine) | Routing for Leaflet
 | 0.5065405491789425 | [gulp-rev-all](./g/gulp-rev-all) | Static asset revisioning by appending content hash
 | 0.5065247770777704 | [black-engine](./b/black-engine) |               
@@ -8727,6 +8738,7 @@
 | 0.4982570926423745 | [epilogue](./e/epilogue) | Create REST resources and controllers with Sequeli
 | 0.49824797758575234 | [d3-cloud](./d/d3-cloud) | Generate word clouds in JavaScript.
 | 0.4982170711344593 | [input-moment](./i/input-moment) | React datetime picker powered by momentjs
+| 0.49815883544649664 | [parallax-js](./p/parallax-js) | Parallax Engine that reacts to the orientation of 
 | 0.498148913907689 | [d3-hexbin](./d/d3-hexbin) | Group two-dimensional points into hexagonal bins.
 | 0.498133115339888 | [dv](./d/dv) | DocumentVision is a node.js library for processing
 | 0.49809356820548134 | [typo-js](./t/typo-js) | A Hunspell-style spellchecker.
@@ -9949,6 +9961,7 @@
 | 0.4031938959710164 | [react-s-alert](./r/react-s-alert) | Alerts / Notifications for React with rich configu
 | 0.4031763763274754 | [halogenium](./h/halogenium) | A collection of loading spinners with React.js bas
 | 0.4028897478119984 | [line-segments-intersect](./l/line-segments-intersect) | Determine if two line segments intersect each othe
+| 0.40287451803008295 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.40284197522511733 | [tinycon](./t/tinycon) | Add notification bubbles in the favicon
 | 0.4026790896090161 | [pollyjs__persister-fs](./p/pollyjs__persister-fs) | File system persister for @pollyjs
 | 0.4026522832682514 | [simple-xml](./s/simple-xml) | A naive XML parser and builder based on libxmljs
@@ -10216,7 +10229,6 @@
 | 0.3739087522238116 | [parameterize](./p/parameterize) | This repository adds node.js and npm support for p
 | 0.3738057460546391 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
 | 0.3737619916214192 | [bootpag](./b/bootpag) | bootpag - dynamic pagination jQuery plugin. Works 
-| 0.3736559415506839 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.37363208075520415 | [gatsby-sharp](./g/gatsby-sharp) | -
 | 0.37356372618117983 | [documentdb](./d/documentdb) | Azure Cosmos DB Service Node.js SDK for SQL API
 | 0.3734709524247766 | [rpi-ws281x-native](./r/rpi-ws281x-native) | (raspberry-pi *only*) native bindings to control a
@@ -10828,6 +10840,7 @@
 | 0.2538728975471253 | [leaflet-imageoverlay-rota](./l/leaflet-imageoverlay-rotated) | Displays rotated/slanted image overlays in Leaflet
 | 0.25385025214243184 | [zdf](./z/zdf) | ZDF Mediathek Downloader
 | 0.25353493595430443 | [sharepoint](./s/sharepoint) | SharePoint client for Node.js
+| 0.2534360783368035 | [react-aria__focus](./r/react-aria__focus) | Spectrum UI components in React
 | 0.2534333033717048 | [jweixin](./j/jweixin) | wechat js-sdk
 | 0.2533070296562412 | [mta-h5-analysis](./m/mta-h5-analysis) | this is wechat-h5 data analysis js sdk from MTA pl
 | 0.25324259113208863 | [cucumber__html-formatter](./c/cucumber__html-formatter) | HTML formatter for Cucumber
@@ -11007,6 +11020,7 @@
 | 0.21098397732884033 | [rx-angular](./r/rx-angular) | Library for bridging between RxJS and AngularJS.
 | 0.2108329056549989 | [react-pose](./r/react-pose) | A declarative animation library for React
 | 0.21048964970433454 | [uifabric__styling](./u/uifabric__styling) | Styling helpers for Fluent UI React.
+| 0.21025033913807165 | [wix-style-react](./w/wix-style-react) | wix-style-react
 | 0.20989033991363096 | [jquery-knob](./j/jquery-knob) | Nice, downward compatible, touchable, jQuery dial
 | 0.2098720569091037 | [cwise](./c/cwise) | Component-wise operations on ndarrays
 | 0.2098105554189153 | [x-editable](./x/x-editable) | In-place editing with Twitter Bootstrap, jQuery UI
@@ -11312,7 +11326,6 @@
 | 0.17948216205889722 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_compute) | TypeScript typings for Compute Engine API v1
 | 0.1794622728626326 | [metrostations](./m/metrostations) | JSONs of metro stations and lines.
 | 0.17938446594731672 | [fragmented-store](./f/fragmented-store) | Small library to manage the (P)React state
-| 0.17938237856804978 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.17935334294200223 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_remotebuildexecution) | TypeScript typings for Remote Build Execution API 
 | 0.1792596690757141 | [timelinejs3](./t/timelinejs3) | TimelineJS v3: A Storytelling Timeline built in Ja
 | 0.17899586210258164 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet

@@ -14,5 +14,5 @@ object distLibOutputThemesDefaultTemplatesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def indexTemplate(hasMarkdown: DefaultThemeRenderContext, props: PageEvent[ProjectReflection]): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("indexTemplate")(hasMarkdown.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
+  inline def indexTemplate(param0: DefaultThemeRenderContext, props: PageEvent[ProjectReflection]): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("indexTemplate")(param0.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
 }

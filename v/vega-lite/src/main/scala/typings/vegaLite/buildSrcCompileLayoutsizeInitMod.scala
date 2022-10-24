@@ -12,5 +12,5 @@ object buildSrcCompileLayoutsizeInitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def initLayoutSize(hasEncodingSize: Size): LayoutSizeMixins = ^.asInstanceOf[js.Dynamic].applyDynamic("initLayoutSize")(hasEncodingSize.asInstanceOf[js.Any]).asInstanceOf[LayoutSizeMixins]
+  inline def initLayoutSize(param0: Size): LayoutSizeMixins = ^.asInstanceOf[js.Dynamic].applyDynamic("initLayoutSize")(param0.asInstanceOf[js.Any]).asInstanceOf[LayoutSizeMixins]
 }

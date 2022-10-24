@@ -18,7 +18,7 @@ object libTypescriptTabBarIndicatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: Route */](hasGetTabWidthLayoutNavigationStatePositionWidthGapStyle: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetTabWidthLayoutNavigationStatePositionWidthGapStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[T /* <: Route */](param0: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type GetTabWidth = js.Function1[/* index */ Double, Double]
   

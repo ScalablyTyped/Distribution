@@ -12,5 +12,5 @@ object distTypesLabelHtmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def LabelHtml[RawDatum](hasNodeLabelStyle: LabelProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LabelHtml")(hasNodeLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LabelHtml[RawDatum](param0: LabelProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LabelHtml")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

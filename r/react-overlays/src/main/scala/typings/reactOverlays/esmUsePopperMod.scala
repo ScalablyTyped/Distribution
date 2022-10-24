@@ -36,55 +36,19 @@ object esmUsePopperMod {
     * @returns {UsePopperState} The popper state
     */
   inline def default(): UsePopperState = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[UsePopperState]
-  inline def default(
-    referenceElement: Null,
-    popperElement: Null,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  inline def default(
-    referenceElement: Null,
-    popperElement: Unit,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(referenceElement: Null, popperElement: Null, param2: UsePopperOptions): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(referenceElement: Null, popperElement: Unit, param2: UsePopperOptions): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
   inline def default(referenceElement: Null, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  inline def default(
-    referenceElement: Null,
-    popperElement: HTMLElement,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  inline def default(
-    referenceElement: Unit,
-    popperElement: Null,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  inline def default(
-    referenceElement: Unit,
-    popperElement: Unit,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(referenceElement: Null, popperElement: HTMLElement, param2: UsePopperOptions): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(referenceElement: Unit, popperElement: Null, param2: UsePopperOptions): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(referenceElement: Unit, popperElement: Unit, param2: UsePopperOptions): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
   inline def default(referenceElement: Unit, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  inline def default(
-    referenceElement: Unit,
-    popperElement: HTMLElement,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(referenceElement: Unit, popperElement: HTMLElement, param2: UsePopperOptions): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
   inline def default(referenceElement: VirtualElement): UsePopperState = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any]).asInstanceOf[UsePopperState]
-  inline def default(
-    referenceElement: VirtualElement,
-    popperElement: Null,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  inline def default(
-    referenceElement: VirtualElement,
-    popperElement: Unit,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(referenceElement: VirtualElement, popperElement: Null, param2: UsePopperOptions): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(referenceElement: VirtualElement, popperElement: Unit, param2: UsePopperOptions): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
   inline def default(referenceElement: VirtualElement, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
-  inline def default(
-    referenceElement: VirtualElement,
-    popperElement: HTMLElement,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  inline def default(referenceElement: VirtualElement, popperElement: HTMLElement, param2: UsePopperOptions): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
   
   type Instance = typings.popperjsCore.libTypesMod.Instance
   

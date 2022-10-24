@@ -55,7 +55,7 @@ object mod {
     
     var bulletClass: js.UndefOr[String] = js.undefined
     
-    var bulletOnClick: js.UndefOr[js.Function1[/* hasItemItemIndexCurrentIndex */ CurrentIndex, Unit]] = js.undefined
+    var bulletOnClick: js.UndefOr[js.Function1[/* param0 */ CurrentIndex, Unit]] = js.undefined
     
     var description: js.UndefOr[String] = js.undefined
     
@@ -110,7 +110,7 @@ object mod {
       
       inline def setBulletClassUndefined: Self = StObject.set(x, "bulletClass", js.undefined)
       
-      inline def setBulletOnClick(value: /* hasItemItemIndexCurrentIndex */ CurrentIndex => Unit): Self = StObject.set(x, "bulletOnClick", js.Any.fromFunction1(value))
+      inline def setBulletOnClick(value: /* param0 */ CurrentIndex => Unit): Self = StObject.set(x, "bulletOnClick", js.Any.fromFunction1(value))
       
       inline def setBulletOnClickUndefined: Self = StObject.set(x, "bulletOnClick", js.undefined)
       

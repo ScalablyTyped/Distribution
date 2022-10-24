@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "videojs-playlist-ui"
-version := "4.0-dt-20220210Z-0d4d52"
-scalaVersion := "3.1.2"
+version := "4.0-dt-20220210Z-efcb00"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

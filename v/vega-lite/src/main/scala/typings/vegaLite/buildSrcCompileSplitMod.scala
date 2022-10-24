@@ -28,7 +28,7 @@ object buildSrcCompileSplitMod {
     
     def copyKeyFromObject[S /* <: T */](key: /* keyof T */ String, s: Partial[S]): Unit = js.native
     
-    def copyKeyFromSplit[S /* <: T */](key: /* keyof T */ String, hasExplicitImplicit: Split[S]): Unit = js.native
+    def copyKeyFromSplit[S /* <: T */](key: /* keyof T */ String, param1: Split[S]): Unit = js.native
     
     val explicit: Partial[T] = js.native
     
@@ -48,7 +48,7 @@ object buildSrcCompileSplitMod {
     
     def setWithExplicit[K /* <: /* keyof T */ String */](
       key: K,
-      hasValueExplicit: Explicit[
+      param1: Explicit[
           /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): Unit = js.native

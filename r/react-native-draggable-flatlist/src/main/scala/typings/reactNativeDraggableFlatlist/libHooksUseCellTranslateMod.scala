@@ -11,7 +11,7 @@ object libHooksUseCellTranslateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useCellTranslate(hasCellIndexCellSizeCellOffset: Params): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("useCellTranslate")(hasCellIndexCellSizeCellOffset.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def useCellTranslate(param0: Params): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("useCellTranslate")(param0.asInstanceOf[js.Any]).asInstanceOf[Value]
   
   trait Params extends StObject {
     

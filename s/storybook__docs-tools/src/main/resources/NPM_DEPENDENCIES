@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/docs-tools" : "6.5.12"
+      "@storybook/docs-tools" : "6.5.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/docs-tools" : "6.5.12"
+      "@storybook/docs-tools" : "6.5.13"
     }
   ],
   "compile-devDependencies" : [

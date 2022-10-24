@@ -17,7 +17,7 @@ object distTypesMeshMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Mesh[RawDatum /* <: ScatterPlotDatum */](hasNodesWidthHeightOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltipDebug: MeshProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Mesh")(hasNodesWidthHeightOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltipDebug.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Mesh[RawDatum /* <: ScatterPlotDatum */](param0: MeshProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Mesh")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait MeshProps[RawDatum /* <: ScatterPlotDatum */] extends StObject {
     

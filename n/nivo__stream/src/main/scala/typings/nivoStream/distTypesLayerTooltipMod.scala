@@ -12,5 +12,5 @@ object distTypesLayerTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def LayerTooltip(hasLayer: TooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LayerTooltip")(hasLayer.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LayerTooltip(param0: TooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LayerTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

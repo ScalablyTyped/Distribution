@@ -61,5 +61,5 @@ object distCliCommandsTestIacLocalExecutionLocalCacheMod {
   inline def getLocalCachePath(engineType: EngineType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalCachePath")(engineType.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def initLocalCache(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initLocalCache")().asInstanceOf[js.Promise[Unit]]
-  inline def initLocalCache(hasCustomRulesPath: CustomRulesPath): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initLocalCache")(hasCustomRulesPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def initLocalCache(param0: CustomRulesPath): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initLocalCache")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

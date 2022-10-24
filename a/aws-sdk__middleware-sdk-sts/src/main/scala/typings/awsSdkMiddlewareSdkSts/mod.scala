@@ -20,7 +20,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def resolveStsAuthConfig[T](input: T & PreviouslyResolved & StsAuthInputConfig, hasStsClientCtor: StsAuthConfigOptions): T & StsAuthResolvedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStsAuthConfig")(input.asInstanceOf[js.Any], hasStsClientCtor.asInstanceOf[js.Any])).asInstanceOf[T & StsAuthResolvedConfig]
+  inline def resolveStsAuthConfig[T](input: T & PreviouslyResolved & StsAuthInputConfig, param1: StsAuthConfigOptions): T & StsAuthResolvedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStsAuthConfig")(input.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[T & StsAuthResolvedConfig]
   
   trait PreviouslyResolved extends StObject {
     

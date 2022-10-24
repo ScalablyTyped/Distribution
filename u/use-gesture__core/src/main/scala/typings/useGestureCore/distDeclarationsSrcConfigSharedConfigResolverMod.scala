@@ -21,7 +21,7 @@ object distDeclarationsSrcConfigSharedConfigResolverMod {
     inline def enabled(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("enabled")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def eventOptions(): CapturePassive = ^.asInstanceOf[js.Dynamic].applyDynamic("eventOptions")().asInstanceOf[CapturePassive]
-    inline def eventOptions(hasPassiveCapture: Passive): CapturePassive = ^.asInstanceOf[js.Dynamic].applyDynamic("eventOptions")(hasPassiveCapture.asInstanceOf[js.Any]).asInstanceOf[CapturePassive]
+    inline def eventOptions(param0: Passive): CapturePassive = ^.asInstanceOf[js.Dynamic].applyDynamic("eventOptions")(param0.asInstanceOf[js.Any]).asInstanceOf[CapturePassive]
     
     inline def target(value: Target): js.UndefOr[js.Function0[EventTarget | Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("target")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Function0[EventTarget | Null]]]
     

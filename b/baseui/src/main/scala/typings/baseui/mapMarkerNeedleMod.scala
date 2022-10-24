@@ -12,5 +12,5 @@ object mapMarkerNeedleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasSizeBackgroundOverrides: NeedleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSizeBackgroundOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: NeedleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

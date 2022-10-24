@@ -13,5 +13,5 @@ object distJoinArraysMod {
   val ^ : js.Any = js.native
   
   inline def default(): js.Function3[/* a */ Any, /* b */ Any, /* k */ Key, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function3[/* a */ Any, /* b */ Any, /* k */ Key, Any]]
-  inline def default(hasCustomizeArrayCustomizeObjectKey: CustomizeArray): js.Function3[/* a */ Any, /* b */ Any, /* k */ Key, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasCustomizeArrayCustomizeObjectKey.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a */ Any, /* b */ Any, /* k */ Key, Any]]
+  inline def default(param0: CustomizeArray): js.Function3[/* a */ Any, /* b */ Any, /* k */ Key, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a */ Any, /* b */ Any, /* k */ Key, Any]]
 }

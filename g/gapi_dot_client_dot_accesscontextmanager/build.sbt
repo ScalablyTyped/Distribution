@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_accesscontextmanager"
-version := "1.0-dt-20220912Z-2e0be2"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220912Z-20b9f7"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

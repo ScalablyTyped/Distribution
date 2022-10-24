@@ -20,9 +20,7 @@ object distTypesArcsLayerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ArcsLayer[Datum /* <: DatumWithArcAndColor */](
-    hasCenterDataArcGeneratorBorderWidthBorderColorOnClickOnMouseEnterOnMouseMoveOnMouseLeaveTransitionModeComponent: ArcsLayerProps[Datum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcsLayer")(hasCenterDataArcGeneratorBorderWidthBorderColorOnClickOnMouseEnterOnMouseMoveOnMouseLeaveTransitionModeComponent.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcsLayer[Datum /* <: DatumWithArcAndColor */](param0: ArcsLayerProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcsLayer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ArcComponent[Datum /* <: DatumWithArcAndColor */] = js.Function1[/* props */ ArcShapeProps[Datum], Element]
   

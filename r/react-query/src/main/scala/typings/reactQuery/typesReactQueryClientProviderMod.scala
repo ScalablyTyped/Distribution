@@ -14,7 +14,7 @@ object typesReactQueryClientProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def QueryClientProvider(hasClientContextSharingChildren: QueryClientProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryClientProvider")(hasClientContextSharingChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def QueryClientProvider(param0: QueryClientProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryClientProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useQueryClient(): QueryClient = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryClient")().asInstanceOf[QueryClient]
   

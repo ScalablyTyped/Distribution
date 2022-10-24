@@ -12,6 +12,6 @@ object distTs3Dot9CsfNormalizeProjectAnnotationsMod {
   val ^ : js.Any = js.native
   
   inline def normalizeProjectAnnotations[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
-    hasArgTypesGlobalTypesArgTypesEnhancersAnnotations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectAnnotations<TFramework> */ Any
-  ): NormalizedProjectAnnotations[TFramework] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeProjectAnnotations")(hasArgTypesGlobalTypesArgTypesEnhancersAnnotations.asInstanceOf[js.Any]).asInstanceOf[NormalizedProjectAnnotations[TFramework]]
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectAnnotations<TFramework> */ Any
+  ): NormalizedProjectAnnotations[TFramework] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeProjectAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[NormalizedProjectAnnotations[TFramework]]
 }

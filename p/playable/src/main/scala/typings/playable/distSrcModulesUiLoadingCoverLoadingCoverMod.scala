@@ -15,7 +15,7 @@ object distSrcModulesUiLoadingCoverLoadingCoverMod {
   open class default protected ()
     extends StObject
        with LoadingCover {
-    def this(hasEventEmitterEngineBottomBlockRootContainer: BottomBlockEngine) = this()
+    def this(param0: BottomBlockEngine) = this()
     
     /* private */ /* CompleteClass */
     var _bindEvents: Any = js.native

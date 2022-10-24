@@ -44,6 +44,8 @@ object typesRuntimeInternalDevMod {
     def $inject_state(): Unit = js.native
     
     @JSName("$on")
+    def $on(event: String): js.Function0[Unit] = js.native
+    @JSName("$on")
     def $on(event: String, callback: js.Function1[/* event */ Any, Unit]): js.Function0[Unit] = js.native
     
     @JSName("$set")
@@ -84,6 +86,8 @@ object typesRuntimeInternalDevMod {
   open class SvelteComponentTyped[Props /* <: Record[String, Any] */, Events /* <: Record[String, Any] */, Slots /* <: Record[String, Any] */] protected () extends SvelteComponentDev {
     def this(options: ComponentConstructorOptions[Props]) = this()
     
+    @JSName("$on")
+    def $on[K /* <: Extract[/* keyof Events */ String, String] */](`type`: K): js.Function0[Unit] = js.native
     @JSName("$on")
     def $on[K /* <: Extract[/* keyof Events */ String, String] */](
       `type`: K,
@@ -127,6 +131,8 @@ object typesRuntimeInternalDevMod {
   
   inline def attrDev(node: Element, attribute: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attr_dev")(node.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def attrDev(node: Element, attribute: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attr_dev")(node.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def constructSvelteComponentDev(component: Any, props: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct_svelte_component_dev")(component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def datasetDev(node: HTMLElement, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dataset_dev")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def datasetDev(node: HTMLElement, property: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dataset_dev")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]

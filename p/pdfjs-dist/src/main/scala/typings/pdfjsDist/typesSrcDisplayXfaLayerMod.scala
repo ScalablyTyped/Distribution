@@ -26,7 +26,7 @@ object typesSrcDisplayXfaLayerMod {
       */
     inline def render(parameters: XfaLayerParameters): TextDivs = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(parameters.asInstanceOf[js.Any]).asInstanceOf[TextDivs]
     
-    inline def setAttributes(hasHtmlElementStorageIntentLinkService: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAttributes")(hasHtmlElementStorageIntentLinkService.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setAttributes(param0: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAttributes")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def setupStorage(html: Any, id: Any, element: Any, storage: Any, intent: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupStorage")(html.asInstanceOf[js.Any], id.asInstanceOf[js.Any], element.asInstanceOf[js.Any], storage.asInstanceOf[js.Any], intent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     

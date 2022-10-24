@@ -29,7 +29,7 @@ object mod {
   @js.native
   open class Channel ()
     extends typings.storybookAddons.distTs3Dot9Mod.Channel {
-    def this(hasTransportAsync: ChannelArgs) = this()
+    def this(param0: ChannelArgs) = this()
   }
   
   @JSImport("@storybook/addons", "HooksContext")
@@ -47,7 +47,7 @@ object mod {
   
   inline def isSupportedType(`type`: Types_): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def makeDecorator(hasNameParameterNameWrapperSkipIfNoParametersOrOptions: MakeDecoratorOptions): MakeDecoratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDecorator")(hasNameParameterNameWrapperSkipIfNoParametersOrOptions.asInstanceOf[js.Any]).asInstanceOf[MakeDecoratorResult]
+  inline def makeDecorator(param0: MakeDecoratorOptions): MakeDecoratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDecorator")(param0.asInstanceOf[js.Any]).asInstanceOf[MakeDecoratorResult]
   
   inline def mockChannel(): typings.storybookChannels.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("mockChannel")().asInstanceOf[typings.storybookChannels.mod.default]
   

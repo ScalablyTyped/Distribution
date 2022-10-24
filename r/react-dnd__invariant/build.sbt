@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-dnd__invariant"
-version := "4.0.2-21ddb4"
-scalaVersion := "3.1.2"
+version := "4.0.2-3aade3"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

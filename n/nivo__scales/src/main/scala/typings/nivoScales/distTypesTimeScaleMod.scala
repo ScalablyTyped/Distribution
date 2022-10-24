@@ -14,9 +14,5 @@ object distTypesTimeScaleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createTimeScale[Input /* <: js.Date | NumberValue */](
-    hasFormatPrecisionMinMaxUseUTCNice: ScaleTimeSpec,
-    data: ComputedSerieAxis[String | js.Date],
-    size: Double
-  ): ScaleTime[Input] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimeScale")(hasFormatPrecisionMinMaxUseUTCNice.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ScaleTime[Input]]
+  inline def createTimeScale[Input /* <: js.Date | NumberValue */](param0: ScaleTimeSpec, data: ComputedSerieAxis[String | js.Date], size: Double): ScaleTime[Input] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimeScale")(param0.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ScaleTime[Input]]
 }

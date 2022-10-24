@@ -11,5 +11,5 @@ object distTypesChordRibbonTooltipMod {
   
   @JSImport("@nivo/chord/dist/types/ChordRibbonTooltip", "ChordRibbonTooltip")
   @js.native
-  val ChordRibbonTooltip: MemoExoticComponent[js.Function1[/* hasRibbon */ RibbonTooltipComponentProps, Element]] = js.native
+  val ChordRibbonTooltip: MemoExoticComponent[js.Function1[/* param0 */ RibbonTooltipComponentProps, Element]] = js.native
 }

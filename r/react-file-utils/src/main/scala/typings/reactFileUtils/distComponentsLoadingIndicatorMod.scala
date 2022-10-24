@@ -11,7 +11,7 @@ object distComponentsLoadingIndicatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def LoadingIndicator(hasSizeWidthBackgroundColorColor: LoadingIndicatorProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingIndicator")(hasSizeWidthBackgroundColorColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LoadingIndicator(param0: LoadingIndicatorProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingIndicator")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait LoadingIndicatorProps extends StObject {
     

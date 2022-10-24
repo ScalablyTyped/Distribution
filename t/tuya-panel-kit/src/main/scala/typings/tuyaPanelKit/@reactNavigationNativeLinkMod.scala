@@ -18,7 +18,7 @@ object `@reactNavigationNativeLinkMod` {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasToActionRest: Props): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToActionRest.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
+  inline def default(param0: Props): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
   
   // tslint:disable-next-line strict-export-declare-modifiers
   trait Props

@@ -276,7 +276,7 @@ object helperMod {
     }
   }
   
-  inline def UnstableHelperSteps(hasIndexLengthOnFinishOnPrevOnNext: HelperStepsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Unstable_HelperSteps")(hasIndexLengthOnFinishOnPrevOnNext.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def UnstableHelperSteps(param0: HelperStepsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Unstable_HelperSteps")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object UnstableStatefulHelper {
     

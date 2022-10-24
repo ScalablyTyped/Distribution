@@ -16,7 +16,7 @@ object libHeaderHeaderRowMod {
   
   object default {
     
-    inline def apply[RecordType](hasCellsStickyOffsetsFlattenColumnsRowComponentCellComponentOnHeaderRowIndex: RowProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(hasCellsStickyOffsetsFlattenColumnsRowComponentCellComponentOnHeaderRowIndex.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[RecordType](param0: RowProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("rc-table/lib/Header/HeaderRow", JSImport.Default)
     @js.native

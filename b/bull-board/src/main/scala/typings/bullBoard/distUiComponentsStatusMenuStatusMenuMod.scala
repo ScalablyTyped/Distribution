@@ -12,5 +12,5 @@ object distUiComponentsStatusMenuStatusMenuMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def StatusMenu(hasQueue: Queue): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StatusMenu")(hasQueue.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StatusMenu(param0: Queue): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StatusMenu")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

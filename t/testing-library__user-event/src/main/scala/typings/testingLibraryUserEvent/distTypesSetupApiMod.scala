@@ -46,16 +46,12 @@ object distTypesSetupApiMod {
   inline def selectOptions(select: Element, values: HTMLElement): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(select.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def tab(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("tab")().asInstanceOf[js.Promise[Unit]]
-  inline def tab(hasShift: Shift): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("tab")(hasShift.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def tab(param1: Shift): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("tab")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def tripleClick(element: Element): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("tripleClick")(element.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def `type`(element: Element, text: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def `type`(
-    element: Element,
-    text: String,
-    hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd: typeOptions
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def `type`(element: Element, text: String, param3: typeOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def unhover(element: Element): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unhover")(element.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   

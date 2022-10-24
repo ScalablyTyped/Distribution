@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "remove-accents"
-version := "0.4.3-cde60f"
-scalaVersion := "3.1.2"
+version := "0.4.3-6f1021"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -12,7 +12,7 @@ object libJsonldSiteLinksSearchBoxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverridePotentialActionsRest: SiteLinksSearchBoxJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverridePotentialActionsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: SiteLinksSearchBoxJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PotentialAction extends StObject {
     

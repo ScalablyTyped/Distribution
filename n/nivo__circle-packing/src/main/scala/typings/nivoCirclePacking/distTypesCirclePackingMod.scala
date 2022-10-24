@@ -19,6 +19,6 @@ object distTypesCirclePackingMod {
   val ^ : js.Any = js.native
   
   inline def CirclePacking[RawDatum](
-    hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps: (Partial[Omit[CirclePackingSvgProps[RawDatum], data | height | width]]) & (Pick[CirclePackingSvgProps[RawDatum], data | height | width])
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePacking")(hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    param0: (Partial[Omit[CirclePackingSvgProps[RawDatum], data | height | width]]) & (Pick[CirclePackingSvgProps[RawDatum], data | height | width])
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePacking")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

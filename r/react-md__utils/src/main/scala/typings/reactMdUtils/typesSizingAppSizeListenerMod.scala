@@ -14,9 +14,7 @@ object typesSizingAppSizeListenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def AppSizeListener(
-    hasChildrenOnChangePhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize: AppSizeListenerProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("AppSizeListener")(hasChildrenOnChangePhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def AppSizeListener(param0: AppSizeListenerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("AppSizeListener")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait AppSizeListenerProps
     extends StObject

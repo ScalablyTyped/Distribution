@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-jest
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 React storybook addon that show component jest report

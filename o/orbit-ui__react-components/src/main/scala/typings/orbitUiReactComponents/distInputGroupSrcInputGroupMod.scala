@@ -17,7 +17,7 @@ object distInputGroupSrcInputGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerInputGroup(hasFluidDisabledReadOnlyAsChildrenForwardedRefRest: InnerInputGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerInputGroup")(hasFluidDisabledReadOnlyAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerInputGroup(param0: InnerInputGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerInputGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/input-group/src/InputGroup", "InputGroup")
   @js.native

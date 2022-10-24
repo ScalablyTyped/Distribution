@@ -81,7 +81,7 @@ object distServerApiUtilsMod {
   
   inline def sendStatusCode(res: NextApiResponse[Any], statusCode: Double): NextApiResponse[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendStatusCode")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[Any]]
   
-  inline def setLazyProp[T](hasReq: LazyProps, prop: String, getter: js.Function0[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLazyProp")(hasReq.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setLazyProp[T](param0: LazyProps, prop: String, getter: js.Function0[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLazyProp")(param0.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ApiPreviewProps extends StObject {
     

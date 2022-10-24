@@ -11,5 +11,5 @@ object buildCommandsNavigateToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasUrl: Url): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def default(param1: Url): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
 }

@@ -13,8 +13,5 @@ object distEsmSrcFunctionsGenerateAuthTokenRequestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateAuthTokenRequest(
-    hasAppConfigHeartbeatServiceProvider: FirebaseInstallationsImpl,
-    installationEntry: RegisteredInstallationEntry
-  ): js.Promise[CompletedAuthToken] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthTokenRequest")(hasAppConfigHeartbeatServiceProvider.asInstanceOf[js.Any], installationEntry.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CompletedAuthToken]]
+  inline def generateAuthTokenRequest(param0: FirebaseInstallationsImpl, installationEntry: RegisteredInstallationEntry): js.Promise[CompletedAuthToken] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthTokenRequest")(param0.asInstanceOf[js.Any], installationEntry.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CompletedAuthToken]]
 }

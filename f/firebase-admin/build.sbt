@@ -1,29 +1,29 @@
 organization := "org.scalablytyped"
 name := "firebase-admin"
-version := "11.2.0-afb64c"
-scalaVersion := "3.1.2"
+version := "11.2.0-0e0ebe"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.8.0-7e39e4",
-  "org.scalablytyped" %%% "firebase__database-types" % "0.9.16-efbe00",
-  "org.scalablytyped" %%% "firebase__logger" % "0.3.3-fcc6c3",
-  "org.scalablytyped" %%% "firebase__util" % "1.7.2-632c97",
-  "org.scalablytyped" %%% "gaxios" % "5.0.2-87b97a",
-  "org.scalablytyped" %%% "google-auth-library" % "8.6.0-23a902",
-  "org.scalablytyped" %%% "google-cloud__firestore" % "6.4.0-76afd9",
-  "org.scalablytyped" %%% "google-cloud__storage" % "6.5.4-103f7c",
-  "org.scalablytyped" %%% "google-gax" % "3.5.2-bcbb02",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.2-37f04e",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-20a3df",
-  "org.scalablytyped" %%% "gtoken" % "6.1.2-b396ed",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-e81379",
-  "org.scalablytyped" %%% "long" % "5.2.0-dc3994",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-e03382",
-  "org.scalablytyped" %%% "protobufjs" % "7.1.2-41b6ae",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "teeny-request" % "8.0.2-19161e")
+  "org.scalablytyped" %%% "firebase__app-types" % "0.8.0-e8c69b",
+  "org.scalablytyped" %%% "firebase__database-types" % "0.9.16-1e7729",
+  "org.scalablytyped" %%% "firebase__logger" % "0.3.3-947469",
+  "org.scalablytyped" %%% "firebase__util" % "1.7.2-341bcd",
+  "org.scalablytyped" %%% "gaxios" % "5.0.2-4cd399",
+  "org.scalablytyped" %%% "google-auth-library" % "8.6.0-2470e7",
+  "org.scalablytyped" %%% "google-cloud__firestore" % "6.4.0-447107",
+  "org.scalablytyped" %%% "google-cloud__storage" % "6.5.4-f143b8",
+  "org.scalablytyped" %%% "google-gax" % "3.5.2-586329",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.2-7d94fa",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-43d7de",
+  "org.scalablytyped" %%% "gtoken" % "6.1.2-864b57",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-1b5e93",
+  "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-665e8e",
+  "org.scalablytyped" %%% "protobufjs" % "7.1.2-fe2613",
+  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "teeny-request" % "8.0.2-846e66")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

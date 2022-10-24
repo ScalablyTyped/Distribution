@@ -16,7 +16,7 @@ object libTypescriptWebHammerUtilsMod {
   inline def TEST_MIN_IF_NOT_NAN(value: Double, limit: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TEST_MIN_IF_NOT_NAN")(value.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def VEC_LEN_SQ(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("VEC_LEN_SQ")().asInstanceOf[Double]
-  inline def VEC_LEN_SQ(hasXY: XY): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("VEC_LEN_SQ")(hasXY.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def VEC_LEN_SQ(param0: XY): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("VEC_LEN_SQ")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def fireAfterInterval(method: js.Function0[Unit]): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fireAfterInterval")(method.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   inline def fireAfterInterval(method: js.Function0[Unit], interval: Boolean): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fireAfterInterval")(method.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Double | Null]

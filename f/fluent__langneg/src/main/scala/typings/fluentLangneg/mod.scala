@@ -21,6 +21,6 @@ object mod {
   inline def negotiateLanguages(
     requestedLocales: ReadonlyArraystring,
     availableLocales: ReadonlyArraystring,
-    hasStrategyDefaultLocale: NegotiateLanguagesOptions
-  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("negotiateLanguages")(requestedLocales.asInstanceOf[js.Any], availableLocales.asInstanceOf[js.Any], hasStrategyDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    param2: NegotiateLanguagesOptions
+  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("negotiateLanguages")(requestedLocales.asInstanceOf[js.Any], availableLocales.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

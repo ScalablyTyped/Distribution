@@ -14,7 +14,7 @@ object buildPnpmPackageManagerMod {
   @JSImport("@expo/package-manager/build/PnpmPackageManager", "PnpmPackageManager")
   @js.native
   open class PnpmPackageManager protected () extends StObject {
-    def this(hasCwdLogSilent: Log) = this()
+    def this(param0: Log) = this()
     
     /* private */ var _runAsync: Any = js.native
     

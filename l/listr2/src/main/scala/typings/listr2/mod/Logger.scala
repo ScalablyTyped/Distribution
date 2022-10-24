@@ -17,7 +17,7 @@ open class Logger () extends StObject {
   
   def fail(message: String): Unit = js.native
   
-  /* protected */ def logColoring(hasLevelMessage: Level): String = js.native
+  /* protected */ def logColoring(param0: Level): String = js.native
   
   /* private */ var options: Any = js.native
   

@@ -14,7 +14,7 @@ object distTypesRadarGridLevelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RadarGridLevels[D /* <: Record[String, Any] */](hasShapeProps: RadarGridLevelsProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarGridLevels")(hasShapeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RadarGridLevels[D /* <: Record[String, Any] */](param0: RadarGridLevelsProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarGridLevels")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RadarGridLevelsProps[D /* <: Record[String, Any] */] extends StObject {
     

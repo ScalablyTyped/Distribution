@@ -22,7 +22,7 @@ object buildMainLibMongoStoreMod {
   @JSImport("connect-mongo/build/main/lib/MongoStore", JSImport.Default)
   @js.native
   open class default protected () extends MongoStore {
-    def this(hasCollectionNameTtlMongoOptionsAutoRemoveAutoRemoveIntervalTouchAfterStringifyCryptoRequired: ConnectMongoOptions) = this()
+    def this(param0: ConnectMongoOptions) = this()
   }
   /* static members */
   object default {

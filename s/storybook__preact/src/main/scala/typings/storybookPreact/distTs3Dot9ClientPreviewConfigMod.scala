@@ -25,8 +25,5 @@ object distTs3Dot9ClientPreviewConfigMod {
     inline def framework_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("framework")(x.asInstanceOf[js.Any])
   }
   
-  inline def renderToDOM(
-    hasStoryFnTitleNameShowMainShowErrorForceRemount: RenderContext[PreactFramework],
-    domElement: HTMLElement
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToDOM")(hasStoryFnTitleNameShowMainShowErrorForceRemount.asInstanceOf[js.Any], domElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderToDOM(param0: RenderContext[PreactFramework], domElement: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToDOM")(param0.asInstanceOf[js.Any], domElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

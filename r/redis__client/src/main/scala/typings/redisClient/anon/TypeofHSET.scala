@@ -13,7 +13,7 @@ trait TypeofHSET extends StObject {
   val FIRST_KEY_INDEX: /* 1 */ Double = js.native
   
   def transformArguments(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasKeyValueFieldValue because its type SingleFieldArguments | MultipleFieldsArguments is not an array type */ hasKeyValueFieldValue: MultipleFieldsArguments | SingleFieldArguments
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type SingleFieldArguments | MultipleFieldsArguments is not an array type */ param0: MultipleFieldsArguments | SingleFieldArguments
   ): RedisCommandArguments = js.native
   
   def transformReply(): Double = js.native

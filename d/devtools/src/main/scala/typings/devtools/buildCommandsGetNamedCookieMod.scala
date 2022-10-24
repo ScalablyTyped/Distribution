@@ -12,5 +12,5 @@ object buildCommandsGetNamedCookieMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasName: Name): js.Promise[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookie]]
+  inline def default(param1: Name): js.Promise[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookie]]
 }

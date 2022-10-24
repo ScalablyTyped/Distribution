@@ -19,25 +19,25 @@ object buildIosUtilsXcodeprojMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addBuildSourceFileToGroup(hasFilepathGroupNameProjectVerboseTargetUuid: Filepath): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBuildSourceFileToGroup")(hasFilepathGroupNameProjectVerboseTargetUuid.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def addBuildSourceFileToGroup(param0: Filepath): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBuildSourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def addFileToGroupAndLink(hasFilepathGroupNameProjectVerboseAddFileToProjectTargetUuid: AddFileToProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFileToGroupAndLink")(hasFilepathGroupNameProjectVerboseAddFileToProjectTargetUuid.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def addFileToGroupAndLink(param0: AddFileToProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFileToGroupAndLink")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def addFramework(hasProjectProjectNameFramework: Framework): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFramework")(hasProjectProjectNameFramework.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def addFramework(param0: Framework): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFramework")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def addResourceFileToGroup(hasFilepathGroupNameIsBuildFileProjectVerboseTargetUuid: GroupName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addResourceFileToGroup")(hasFilepathGroupNameIsBuildFileProjectVerboseTargetUuid.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def addResourceFileToGroup(param0: GroupName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addResourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def ensureGroupRecursively(
     project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
     filepath: String
   ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXGroup */ Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureGroupRecursively")(project.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXGroup */ Any) | Null]
   
-  inline def getApplicationNativeTarget(hasProjectProjectName: ProjectName): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationNativeTarget")(hasProjectProjectName.asInstanceOf[js.Any]).asInstanceOf[Target]
+  inline def getApplicationNativeTarget(param0: ProjectName): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationNativeTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[Target]
   
   inline def getBuildConfigurationForListIdAndName(
     project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
-    hasConfigurationListIdBuildConfiguration: ConfigurationListId
-  ): ConfigurationSectionEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("getBuildConfigurationForListIdAndName")(project.asInstanceOf[js.Any], hasConfigurationListIdBuildConfiguration.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSectionEntry]
+    param1: ConfigurationListId
+  ): ConfigurationSectionEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("getBuildConfigurationForListIdAndName")(project.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSectionEntry]
   
   inline def getBuildConfigurationsForListId(
     project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
@@ -68,13 +68,13 @@ object buildIosUtilsXcodeprojMod {
     project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any
   ): js.Array[ConfigurationListEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getXCConfigurationListEntries")(project.asInstanceOf[js.Any]).asInstanceOf[js.Array[ConfigurationListEntry]]
   
-  inline def isBuildConfig(hasSectionItem: ConfigurationSectionEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuildConfig")(hasSectionItem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBuildConfig(param0: ConfigurationSectionEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuildConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isNotComment(
-    hasKey: ConfigurationListEntry | ConfigurationSectionEntry | NativeTargetSectionEntry | ProjectSectionEntry
-  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotComment")(hasKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    param0: ConfigurationListEntry | ConfigurationSectionEntry | NativeTargetSectionEntry | ProjectSectionEntry
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotComment")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isNotTestHost(hasSectionItem: ConfigurationSectionEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotTestHost")(hasSectionItem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNotTestHost(param0: ConfigurationSectionEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotTestHost")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def resolvePathOrProject(projectRootOrProject: String): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePathOrProject")(projectRootOrProject.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any) | Null]
   inline def resolvePathOrProject(

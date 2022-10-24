@@ -619,7 +619,7 @@ object distTypesMod {
   
   type SlotDictionary = StringDictionary[Slot]
   
-  type Stub = Boolean | (Component[Any, Any, Any, ComputedOptions, MethodOptions])
+  type Stub = Boolean | (Component[Any, Any, Any, ComputedOptions, MethodOptions]) | (Directive[Any, Any])
   
   type Stubs = (Record[String, Stub]) | js.Array[String]
   

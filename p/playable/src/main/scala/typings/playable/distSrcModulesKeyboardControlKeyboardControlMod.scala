@@ -14,7 +14,7 @@ object distSrcModulesKeyboardControlKeyboardControlMod {
   open class default protected ()
     extends StObject
        with KeyboardControl {
-    def this(hasConfigEventEmitterRootContainerEngine: EventEmitter) = this()
+    def this(param0: EventEmitter) = this()
     
     /* private */ /* CompleteClass */
     var _attachDefaultControls: Any = js.native

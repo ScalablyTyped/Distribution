@@ -11,7 +11,7 @@ object distParserMod {
   @JSImport("canvg/dist/Parser", "Parser")
   @js.native
   open class Parser () extends StObject {
-    def this(hasFetchDOMParser: IParserOptions) = this()
+    def this(param0: IParserOptions) = this()
     
     /* private */ val DOMParser: Any = js.native
     

@@ -15,13 +15,10 @@ object distSharedSrcUseAutoFocusMod {
   val ^ : js.Any = js.native
   
   inline def useAutoFocus(targetRef: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useAutoFocus(targetRef: RefObject[HTMLElement], hasIsDisabledDelayOnFocus: AutoFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any], hasIsDisabledDelayOnFocus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useAutoFocus(targetRef: RefObject[HTMLElement], param1: AutoFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useAutoFocusChild(focusManager: FocusManager): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useAutoFocusChild(
-    focusManager: FocusManager,
-    hasTargetIsDisabledDelayCanFocusOnFocusOnNotFound: AutoFocusChildOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any], hasTargetIsDisabledDelayCanFocusOnFocusOnNotFound.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useAutoFocusChild(focusManager: FocusManager, param1: AutoFocusChildOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AbstractAutoFocusOptions extends StObject {
     

@@ -47,15 +47,15 @@ object distDeclarationsSrcComponentsIndicatorsMod {
     inline def defaultProps_=(x: Size): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  inline def clearIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsFocusedHasHasBaseUnitColors: ClearIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIndicatorCSS")(hasIsFocusedHasHasBaseUnitColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
-  inline def clearIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsFocusedHasHasBaseUnitColors: DropdownIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIndicatorCSS")(hasIsFocusedHasHasBaseUnitColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def clearIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: ClearIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIndicatorCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def clearIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: DropdownIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIndicatorCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
-  inline def dropdownIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsFocusedHasHasBaseUnitColors: ClearIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownIndicatorCSS")(hasIsFocusedHasHasBaseUnitColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
-  inline def dropdownIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsFocusedHasHasBaseUnitColors: DropdownIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownIndicatorCSS")(hasIsFocusedHasHasBaseUnitColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def dropdownIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: ClearIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownIndicatorCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def dropdownIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: DropdownIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("dropdownIndicatorCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
-  inline def indicatorSeparatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsDisabledHasHasBaseUnitColors: IndicatorSeparatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("indicatorSeparatorCSS")(hasIsDisabledHasHasBaseUnitColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def indicatorSeparatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: IndicatorSeparatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("indicatorSeparatorCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
-  inline def loadingIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsFocusedSizeHasColorsHasBaseUnit: LoadingIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingIndicatorCSS")(hasIsFocusedSizeHasColorsHasBaseUnit.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def loadingIndicatorCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: LoadingIndicatorProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingIndicatorCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
   @js.native
   trait ClearIndicatorProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]

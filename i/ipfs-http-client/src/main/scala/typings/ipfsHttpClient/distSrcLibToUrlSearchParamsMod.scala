@@ -12,5 +12,5 @@ object distSrcLibToUrlSearchParamsMod {
   val ^ : js.Any = js.native
   
   inline def toUrlSearchParams(): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("toUrlSearchParams")().asInstanceOf[URLSearchParams]
-  inline def toUrlSearchParams(hasArgSearchParamsHashAlgMtimeModeOptions: Any): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("toUrlSearchParams")(hasArgSearchParamsHashAlgMtimeModeOptions.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
+  inline def toUrlSearchParams(param0: Any): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("toUrlSearchParams")(param0.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
 }

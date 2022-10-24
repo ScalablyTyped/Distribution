@@ -23,9 +23,7 @@ object distDialogSrcDialogTriggerMod {
   @js.native
   val DialogTrigger: OrbitComponent[HTMLElement, InnerDialogTriggerProps] = js.native
   
-  inline def InnerDialogTrigger(
-    hasOpenPropDefaultOpenOnOpenChangeDismissableZIndexAsChildrenForwardedRefRest: InnerDialogTriggerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialogTrigger")(hasOpenPropDefaultOpenOnOpenChangeDismissableZIndexAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDialogTrigger(param0: InnerDialogTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialogTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type DialogTriggerProps = ComponentProps[OrbitComponent[HTMLElement, InnerDialogTriggerProps]]
   

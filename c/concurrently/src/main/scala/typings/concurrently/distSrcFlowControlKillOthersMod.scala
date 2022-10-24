@@ -15,7 +15,7 @@ object distSrcFlowControlKillOthersMod {
   open class KillOthers protected ()
     extends StObject
        with FlowController {
-    def this(hasLoggerConditions: Conditions) = this()
+    def this(param0: Conditions) = this()
     
     /* private */ val conditions: Any = js.native
     

@@ -11,9 +11,9 @@ object buildPluginsUnversionedExpoSplashScreenWithIosSplashXcodeProjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def setSplashStoryboardAsync(hasProjectNameProject: Project): js.Promise[
+  inline def setSplashStoryboardAsync(param0: Project): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSplashStoryboardAsync")(hasProjectNameProject.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSplashStoryboardAsync")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any
   ]]
   

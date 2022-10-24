@@ -1,64 +1,74 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.ReactNode
-import typings.wixStyleReact.badgeSelectItemMod.BadgeSelectItemSkin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClassName extends StObject {
   
-  var className: js.UndefOr[String] = js.undefined
+  var className: Any
   
-  var dataHook: js.UndefOr[String] = js.undefined
+  var dataHook: Any
   
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: Any
   
-  var ellipsis: js.UndefOr[Boolean] = js.undefined
+  var displayLabel: Any
   
-  var id: String | Double
+  var id: Any
   
-  var skin: BadgeSelectItemSkin
+  var mainLabel: Any
   
-  var subtitle: js.UndefOr[String] = js.undefined
+  var onClick: Any
   
-  var text: ReactNode
+  var optionLayout: Any
+  
+  var prefix: Any
+  
+  var secondaryLabel: Any
+  
+  var suffix: Any
 }
 object ClassName {
   
-  inline def apply(id: String | Double, skin: BadgeSelectItemSkin): ClassName = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], skin = skin.asInstanceOf[js.Any])
+  inline def apply(
+    className: Any,
+    dataHook: Any,
+    disabled: Any,
+    displayLabel: Any,
+    id: Any,
+    mainLabel: Any,
+    onClick: Any,
+    optionLayout: Any,
+    prefix: Any,
+    secondaryLabel: Any,
+    suffix: Any
+  ): ClassName = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], dataHook = dataHook.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayLabel = displayLabel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mainLabel = mainLabel.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any], optionLayout = optionLayout.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], secondaryLabel = secondaryLabel.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassName]
   }
   
   extension [Self <: ClassName](x: Self) {
     
-    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setDataHook(value: Any): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Any): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+    inline def setDisplayLabel(value: Any): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
     
-    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setMainLabel(value: Any): Self = StObject.set(x, "mainLabel", value.asInstanceOf[js.Any])
     
-    inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: Any): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
-    inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+    inline def setOptionLayout(value: Any): Self = StObject.set(x, "optionLayout", value.asInstanceOf[js.Any])
     
-    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    inline def setSkin(value: BadgeSelectItemSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+    inline def setSecondaryLabel(value: Any): Self = StObject.set(x, "secondaryLabel", value.asInstanceOf[js.Any])
     
-    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
-    
-    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
-    
-    inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-    
-    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setSuffix(value: Any): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
   }
 }

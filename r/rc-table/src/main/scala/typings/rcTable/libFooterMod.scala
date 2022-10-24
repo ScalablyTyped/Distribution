@@ -17,14 +17,14 @@ object libFooterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RecordType](hasChildrenStickyOffsetsFlattenColumns: FooterProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenStickyOffsetsFlattenColumns.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[RecordType](param0: FooterProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object FooterComponents {
     
     /**
       * Syntactic sugar. Do not support HOC.
       */
-    inline def apply(hasChildren: SummaryProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(param0: SummaryProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("rc-table/lib/Footer", "FooterComponents")
     @js.native

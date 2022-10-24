@@ -12,5 +12,5 @@ object libAnimationsGeneratorsDecayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decay(hasVelocityFromPowerTimeConstantRestDeltaModifyTarget: DecayOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decay")(hasVelocityFromPowerTimeConstantRestDeltaModifyTarget.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
+  inline def decay(param0: DecayOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decay")(param0.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
 }

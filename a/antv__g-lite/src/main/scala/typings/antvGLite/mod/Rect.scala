@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Rect ()
   extends typings.antvGLite.distDisplayObjectsMod.Rect {
-  def this(hasStyleRest: DisplayObjectConfig[RectStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[RectStyleProps]) = this()
 }

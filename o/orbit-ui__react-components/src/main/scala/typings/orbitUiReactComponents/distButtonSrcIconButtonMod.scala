@@ -46,7 +46,7 @@ object distButtonSrcIconButtonMod {
   
   inline def InnerIconButton(props: InnerIconButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIconButton")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def embedIconButton[Props /* <: Size & (Record[String, Any]) */](element: ReactElement, hasSizeProps: Props): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("embedIconButton")(element.asInstanceOf[js.Any], hasSizeProps.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def embedIconButton[Props /* <: Size & (Record[String, Any]) */](element: ReactElement, param1: Props): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("embedIconButton")(element.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
   type IconButtonProps = ComponentProps[OrbitComponent[button, InnerIconButtonProps]]
   

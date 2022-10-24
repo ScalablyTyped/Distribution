@@ -12,9 +12,7 @@ object libJsonldRecipeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasTypeKeyOverrideAuthorNameImagesYieldsCategoryCuisineCaloriesAggregateRatingVideoIngredientsInstructionsRest: RecipeJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideAuthorNameImagesYieldsCategoryCuisineCaloriesAggregateRatingVideoIngredientsInstructionsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: RecipeJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RecipeJsonLdProps
     extends StObject

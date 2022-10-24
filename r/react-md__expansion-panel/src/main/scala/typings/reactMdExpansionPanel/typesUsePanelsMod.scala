@@ -16,7 +16,7 @@ object typesUsePanelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def usePanels(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex: UsePanelsOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("usePanels")(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def usePanels(param0: UsePanelsOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("usePanels")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   type CreateExpandById = js.Function1[/* panelId */ String, js.Function0[Unit]]
   

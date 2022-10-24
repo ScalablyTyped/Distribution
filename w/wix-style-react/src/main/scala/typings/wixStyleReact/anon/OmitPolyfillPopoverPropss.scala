@@ -7,24 +7,32 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
-import typings.wixStyleReact.popoverMod.PopoverTheme
-import typings.wixUiCore.anon.Enter
-import typings.wixUiCore.getModifiersMod.MoveBy
-import typings.wixUiCore.popoverPopoverMod.Placement
+import typings.wixStyleReact.distTypesPopoverPopoverCoreUtilsGetModifiersMod.MoveBy
+import typings.wixStyleReact.distTypesPopoverPopoverDottypesMod.PopoverTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined wix-style-react.wix-style-react/dist/es/src/common.OmitPolyfill<wix-style-react.wix-style-react/dist/es/src/Popover.PopoverProps, 'showArrow' | 'fixed' | 'dataHook' | 'shown' | 'placement' | 'appendTo' | 'onClickOutside'> */
+/* Inlined wix-style-react.wix-style-react/dist/types/common.OmitPolyfill<wix-style-react.wix-style-react/dist/types/Popover.PopoverProps, 'showArrow' | 'fixed' | 'dataHook' | 'shown' | 'placement' | 'appendTo' | 'onClickOutside'> */
 trait OmitPolyfillPopoverPropss extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.undefined
   
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
+  
+  var `aria-label`: js.UndefOr[String] = js.undefined
+  
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
   
-  var customArrow: js.UndefOr[js.Function2[/* placement */ Placement, /* arrowProps */ js.Object, ReactNode]] = js.undefined
-  
-  var `data-hook`: js.UndefOr[String] = js.undefined
+  var customArrow: js.UndefOr[
+    js.Function2[
+      /* placement */ typings.wixStyleReact.distTypesPopoverPopoverDottypesMod.Placement, 
+      /* arrowProps */ js.Object, 
+      ReactNode
+    ]
+  ] = js.undefined
   
   var disableClickOutsideWhenClosed: js.UndefOr[Boolean] = js.undefined
   
@@ -50,11 +58,15 @@ trait OmitPolyfillPopoverPropss extends StObject {
   
   var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
+  var onEscPress: js.UndefOr[js.Function] = js.undefined
+  
   var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
   var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  
+  var onTabOut: js.UndefOr[js.Function] = js.undefined
   
   var role: js.UndefOr[String] = js.undefined
   
@@ -62,9 +74,11 @@ trait OmitPolyfillPopoverPropss extends StObject {
   
   var style: js.UndefOr[js.Object] = js.undefined
   
+  var tabIndex: js.UndefOr[Double] = js.undefined
+  
   var theme: js.UndefOr[PopoverTheme] = js.undefined
   
-  var timeout: js.UndefOr[Double | Enter] = js.undefined
+  var timeout: js.UndefOr[Double | Exit] = js.undefined
   
   var width: js.UndefOr[Double | String] = js.undefined
   
@@ -83,17 +97,27 @@ object OmitPolyfillPopoverPropss {
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
+    inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+    
+    inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+    
+    inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+    
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setCustomArrow(value: (/* placement */ Placement, /* arrowProps */ js.Object) => ReactNode): Self = StObject.set(x, "customArrow", js.Any.fromFunction2(value))
+    inline def setCustomArrow(
+      value: (/* placement */ typings.wixStyleReact.distTypesPopoverPopoverDottypesMod.Placement, /* arrowProps */ js.Object) => ReactNode
+    ): Self = StObject.set(x, "customArrow", js.Any.fromFunction2(value))
     
     inline def setCustomArrowUndefined: Self = StObject.set(x, "customArrow", js.undefined)
-    
-    inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
-    
-    inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
     
     inline def setDisableClickOutsideWhenClosed(value: Boolean): Self = StObject.set(x, "disableClickOutsideWhenClosed", value.asInstanceOf[js.Any])
     
@@ -143,6 +167,10 @@ object OmitPolyfillPopoverPropss {
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
+    inline def setOnEscPress(value: js.Function): Self = StObject.set(x, "onEscPress", value.asInstanceOf[js.Any])
+    
+    inline def setOnEscPressUndefined: Self = StObject.set(x, "onEscPress", js.undefined)
+    
     inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
@@ -154,6 +182,10 @@ object OmitPolyfillPopoverPropss {
     inline def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    
+    inline def setOnTabOut(value: js.Function): Self = StObject.set(x, "onTabOut", value.asInstanceOf[js.Any])
+    
+    inline def setOnTabOutUndefined: Self = StObject.set(x, "onTabOut", js.undefined)
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -167,11 +199,15 @@ object OmitPolyfillPopoverPropss {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    
     inline def setTheme(value: PopoverTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    inline def setTimeout(value: Double | Enter): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double | Exit): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     

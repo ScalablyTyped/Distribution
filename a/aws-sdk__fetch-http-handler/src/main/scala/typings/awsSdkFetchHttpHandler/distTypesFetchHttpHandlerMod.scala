@@ -28,7 +28,7 @@ object distTypesFetchHttpHandlerMod {
     def destroy_MFetchHttpHandler(): Unit = js.native
     
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest): js.Promise[Response] = js.native
-    def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, hasAbortSignal: HttpHandlerOptions): js.Promise[Response] = js.native
+    def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, param1: HttpHandlerOptions): js.Promise[Response] = js.native
   }
   
   trait FetchHttpHandlerOptions extends StObject {

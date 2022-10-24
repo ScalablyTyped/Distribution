@@ -28,17 +28,15 @@ object libTypescriptWebHammerPressGestureHandlerMod {
     
     def sendGestureStartedEvent(ev: HammerInputExt): Unit = js.native
     
-    def shouldDelayTouchForEvent(hasPointerType: HammerInputExt): Boolean = js.native
+    def shouldDelayTouchForEvent(param0: HammerInputExt): Boolean = js.native
     
     var shouldDelayTouches: Boolean = js.native
     
     def simulateCancelEvent(inputData: HammerInputExt): Unit = js.native
     
-    def updateGestureConfig(
-      hasShouldActivateOnStartDisallowInterruptionShouldCancelWhenOutsideMinDurationMsMaxDistMinPointersMaxPointersProps: DisallowInterruption
-    ): PartialenabledbooleanminP = js.native
+    def updateGestureConfig(param0: DisallowInterruption): PartialenabledbooleanminP = js.native
     
-    def updateHasCustomActivationCriteria(hasShouldCancelWhenOutsideMaxDistSq: ConfigshouldCancelWhenOut): Boolean = js.native
+    def updateHasCustomActivationCriteria(param0: ConfigshouldCancelWhenOut): Boolean = js.native
     
     /* private */ var visualFeedbackTimer: Any = js.native
   }

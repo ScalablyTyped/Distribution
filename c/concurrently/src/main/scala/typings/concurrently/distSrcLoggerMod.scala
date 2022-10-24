@@ -13,7 +13,7 @@ object distSrcLoggerMod {
   @JSImport("concurrently/dist/src/logger", "Logger")
   @js.native
   open class Logger protected () extends StObject {
-    def this(hasHidePrefixFormatPrefixLengthRawTimestampFormat: Hide) = this()
+    def this(param0: Hide) = this()
     
     def colorText(command: Command, text: String): String = js.native
     

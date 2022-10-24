@@ -14,7 +14,7 @@ object distDateInputSrcMenuPresetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def MenuPresets(hasValuesSelectedIndexOnSelectionChange: MenuPresetsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPresets")(hasValuesSelectedIndexOnSelectionChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MenuPresets(param0: MenuPresetsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPresets")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait MenuPresetsProps
     extends StObject

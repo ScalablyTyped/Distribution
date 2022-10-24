@@ -23,9 +23,7 @@ trait Nightwatch extends StObject {
   def client(settings: NightwatchOptions, reporter: Any, argv: js.Object): this.type = js.native
   def client(settings: NightwatchOptions, reporter: Unit, argv: js.Object): this.type = js.native
   
-  def createClient(
-    hasHeadlessSilentOutputUseAsyncEnvTimeoutParallelReporterBrowserNameGlobalsDevtoolsDebugEnable_global_apisConfig: CreateClientParams
-  ): this.type = js.native
+  def createClient(param0: CreateClientParams): this.type = js.native
   
   var expect: Expect = js.native
   

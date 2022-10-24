@@ -1183,6 +1183,11 @@ object Dropdown {
       }
     }
     
+    extension [Self <: RegExpSettings](x: Self) {
+      
+      inline def setEscape(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+    }
+    
     /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.RegExpSettings._Impl, 'escape'> & std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.RegExpSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.RegExpSettings._Impl>> */
     trait Param extends StObject {
       
@@ -1199,11 +1204,6 @@ object Dropdown {
         
         inline def setEscape(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       }
-    }
-    
-    extension [Self <: RegExpSettings](x: Self) {
-      
-      inline def setEscape(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     }
   }
   

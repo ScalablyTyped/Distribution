@@ -13,7 +13,5 @@ object distTypesBarItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BarItem[RawDatum /* <: BarDatum */](
-    hasHasDataBarHasBorderColorColorHeightLabelColorLabelOpacityLabelXLabelYTransformWidthBorderRadiusBorderWidthLabelShouldRenderLabelIsInteractiveOnClickOnMouseEnterOnMouseLeaveTooltipIsFocusableAriaLabelAriaLabelledByAriaDescribedBy: BarItemProps[RawDatum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarItem")(hasHasDataBarHasBorderColorColorHeightLabelColorLabelOpacityLabelXLabelYTransformWidthBorderRadiusBorderWidthLabelShouldRenderLabelIsInteractiveOnClickOnMouseEnterOnMouseLeaveTooltipIsFocusableAriaLabelAriaLabelledByAriaDescribedBy.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BarItem[RawDatum /* <: BarDatum */](param0: BarItemProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

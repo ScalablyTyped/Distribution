@@ -13,5 +13,5 @@ object distTypesUtilsCallFunctionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def callFunction(hasFnArgv: FunctionObject, options: EvaluateOptions): FunctionReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("callFunction")(hasFnArgv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionReturn]
+  inline def callFunction(param0: FunctionObject, options: EvaluateOptions): FunctionReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("callFunction")(param0.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionReturn]
 }

@@ -49,7 +49,7 @@ object distDeclarationsSrcAnimatedTransitionsMod {
     var transition: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in react-transition-group.react-transition-group/Transition.TransitionStatus ]:? react.react.CSSProperties} */ js.Any = js.native
   }
   
-  inline def Fade[ComponentProps /* <: js.Object */](hasTagDurationInPropOnExitedProps: FadeProps[ComponentProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Fade")(hasTagDurationInPropOnExitedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Fade[ComponentProps /* <: js.Object */](param0: FadeProps[ComponentProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Fade")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-select/dist/declarations/src/animated/transitions", "collapseDuration")
   @js.native

@@ -36,7 +36,7 @@ object pluginsOverscrollGlowMod {
     
     def recordTouch(event: TouchEvent): Unit = js.native
     
-    def render(hasXY: X, color: String): Unit = js.native
+    def render(param0: X, color: String): Unit = js.native
     
     def unmount(): Unit = js.native
   }

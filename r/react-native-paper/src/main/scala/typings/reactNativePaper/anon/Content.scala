@@ -13,21 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Content extends StObject {
   
-  def apply(
-    hasCardElevationOnLongPressOnPressCardModeChildrenStyleThemeTestIDAccessibleRest: OutlinedCardProps & Props & ElevatedCardProps
-  ): Element = js.native
+  def apply(param0: OutlinedCardProps & Props & ElevatedCardProps): Element = js.native
   
-  var Actions: DisplayNameString = js.native
+  var Actions: CallPropsDisplayNameString = js.native
   
-  var Content: CallHasIndexTotalSiblingsStyleRest = js.native
+  var Content: `1` = js.native
   
-  var Cover: ComponentType[PickImagePropsRefAttribut] & (NonReactStatics[
-    ComponentType[ImagePropsRefAttributesIm] & CallHasIndexTotalStyleThemeRest, 
-    js.Object
-  ]) = js.native
+  var Cover: ComponentType[PickImagePropsRefAttribut] & (NonReactStatics[ComponentType[ImagePropsRefAttributesIm] & `2`, js.Object]) = js.native
   
-  var Title: ComponentType[PickViewPropsRefAttributeAccessibilityLabel] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLabel] & CallHasTitleTitleStyleTitleNumberOfLinesSubtitleSubtitleStyleSubtitleNumberOfLinesLeftLeftStyleRightRightStyleStyle, 
-    js.Object
-  ]) = js.native
+  var Title: ComponentType[PickViewPropsRefAttributeAccessibilityLabel] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLabel] & `3`, js.Object]) = js.native
 }

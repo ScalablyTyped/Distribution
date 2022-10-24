@@ -16,7 +16,7 @@ object mod {
   inline def createPromptChoiceSeparator(): Separator = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptChoiceSeparator")().asInstanceOf[Separator]
   
   inline def createPromptModule(): js.Promise[PromptModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")().asInstanceOf[js.Promise[PromptModule]]
-  inline def createPromptModule(hasInteractiveOnFallback: CreatePromptModuleOptions): js.Promise[PromptModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")(hasInteractiveOnFallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromptModule]]
+  inline def createPromptModule(param0: CreatePromptModuleOptions): js.Promise[PromptModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromptModule]]
   
   trait CreatePromptModuleOptions extends StObject {
     

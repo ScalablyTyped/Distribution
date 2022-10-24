@@ -125,8 +125,8 @@ object distTs3Dot9CsfMod {
   ): /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StrictArgTypes */ Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeInputTypes")(inputTypes.asInstanceOf[js.Any]).asInstanceOf[/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StrictArgTypes */ Any]
   
   inline def normalizeProjectAnnotations[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
-    hasArgTypesGlobalTypesArgTypesEnhancersAnnotations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectAnnotations<TFramework> */ Any
-  ): NormalizedProjectAnnotations[TFramework] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeProjectAnnotations")(hasArgTypesGlobalTypesArgTypesEnhancersAnnotations.asInstanceOf[js.Any]).asInstanceOf[NormalizedProjectAnnotations[TFramework]]
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectAnnotations<TFramework> */ Any
+  ): NormalizedProjectAnnotations[TFramework] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeProjectAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[NormalizedProjectAnnotations[TFramework]]
   
   inline def normalizeStory[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
     key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,

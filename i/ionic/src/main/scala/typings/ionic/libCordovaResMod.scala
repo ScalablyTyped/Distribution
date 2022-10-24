@@ -21,9 +21,9 @@ object libCordovaResMod {
   @js.native
   val SUPPORTED_PLATFORMS: js.Array[String] = js.native
   
-  inline def checkCordovaRes(hasConfig: CheckCordovaResDeps): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkCordovaRes")(hasConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def checkCordovaRes(param0: CheckCordovaResDeps): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkCordovaRes")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def createCordovaResArgs(hasPlatform: CordovaResSchema, options: CommandLineOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCordovaResArgs")(hasPlatform.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def createCordovaResArgs(param0: CordovaResSchema, options: CommandLineOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCordovaResArgs")(param0.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def createCordovaResNotFoundError(npmClient: NpmClient): js.Promise[FatalException] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCordovaResNotFoundError")(npmClient.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FatalException]]
   
@@ -31,8 +31,8 @@ object libCordovaResMod {
   
   inline def findCordovaRes(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findCordovaRes")().asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  inline def runCordovaRes(hasConfigLogShell: RunCordovaResDeps, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCordovaRes")(hasConfigLogShell.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def runCordovaRes(hasConfigLogShell: RunCordovaResDeps, args: js.Array[String], options: IShellRunOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCordovaRes")(hasConfigLogShell.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def runCordovaRes(param0: RunCordovaResDeps, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCordovaRes")(param0.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def runCordovaRes(param0: RunCordovaResDeps, args: js.Array[String], options: IShellRunOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCordovaRes")(param0.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait CheckCordovaResDeps extends StObject {
     

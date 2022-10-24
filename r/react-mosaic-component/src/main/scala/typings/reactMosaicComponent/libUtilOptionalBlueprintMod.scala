@@ -13,7 +13,7 @@ object libUtilOptionalBlueprintMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def Icon(hasIconClassNameSize: typings.reactMosaicComponent.anon.Icon): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Icon")(hasIconClassNameSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def Icon(param0: typings.reactMosaicComponent.anon.Icon): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Icon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def getClasses(blueprintNamespace: String, names: BlueprintClass*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClasses")(scala.List(blueprintNamespace.asInstanceOf[js.Any]).`++`(names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     

@@ -18,9 +18,7 @@ object distTypesRadarDotsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RadarDots[D /* <: Record[String, Any] */](
-    hasDataKeysGetIndexColorByKeyRadiusScaleRotationAngleStepSymbolSizeColorBorderWidthBorderColorEnableLabelLabelFormatValueLabelYOffset: RadarDotsProps[D]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarDots")(hasDataKeysGetIndexColorByKeyRadiusScaleRotationAngleStepSymbolSizeColorBorderWidthBorderColorEnableLabelLabelFormatValueLabelYOffset.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RadarDots[D /* <: Record[String, Any] */](param0: RadarDotsProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarDots")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RadarDotsProps[D /* <: Record[String, Any] */] extends StObject {
     

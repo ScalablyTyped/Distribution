@@ -19,7 +19,7 @@ object typesHoverUseHoverModeMod {
   val ^ : js.Any = js.native
   
   inline def useHoverMode(): HoverModeHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverMode")().asInstanceOf[HoverModeHookReturnValue]
-  inline def useHoverMode(hasDisabledDefaultVisibleExitVisibilityDelay: HoverModeOptions): HoverModeHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverMode")(hasDisabledDefaultVisibleExitVisibilityDelay.asInstanceOf[js.Any]).asInstanceOf[HoverModeHookReturnValue]
+  inline def useHoverMode(param0: HoverModeOptions): HoverModeHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHoverMode")(param0.asInstanceOf[js.Any]).asInstanceOf[HoverModeHookReturnValue]
   
   trait HoverModeEventHandlers
     extends StObject

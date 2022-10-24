@@ -5,12 +5,12 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
-import typings.wixStyleReact.listItemSectionMod.ListItemSectionTypes
+import typings.wixStyleReact.distTypesListItemSectionMod.ListItemSectionTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<wix-style-react.wix-style-react/dist/es/src/ListItemSection.ListItemSectionProps> */
+/* Inlined std.Partial<wix-style-react.wix-style-react/dist/types/ListItemSection.ListItemSectionProps> */
 trait PartialListItemSectionPro extends StObject {
   
   var className: js.UndefOr[String] = js.undefined

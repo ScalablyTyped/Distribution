@@ -27,8 +27,8 @@ object distTypesComputeLegendsMod {
   val ^ : js.Any = js.native
   
   inline def getLegendData[RawDatum /* <: BarDatum */](
-    hasBarsDirectionFromGroupModeLayoutLegendLabelReverse: (Pick[Required[BarSvgProps[RawDatum]], groupMode | layout | reverse]) & Direction[RawDatum]
-  ): js.Array[LegendData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegendData")(hasBarsDirectionFromGroupModeLayoutLegendLabelReverse.asInstanceOf[js.Any]).asInstanceOf[js.Array[LegendData]]
+    param0: (Pick[Required[BarSvgProps[RawDatum]], groupMode | layout | reverse]) & Direction[RawDatum]
+  ): js.Array[LegendData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegendData")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[LegendData]]
   
   inline def getLegendDataForIndexes[RawDatum /* <: BarDatum */](
     bars: BarsWithHidden[RawDatum],

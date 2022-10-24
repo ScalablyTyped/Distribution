@@ -90,6 +90,8 @@ object libManagerMod {
     
     /* private */ var _opener: Any = js.native
     
+    /* private */ var _renameUntitledFileOnSave: Any = js.native
+    
     /* private */ var _setBusy: Any = js.native
     
     /* private */ var _when: Any = js.native
@@ -152,6 +154,12 @@ object libManagerMod {
       */
     def lastModifiedCheckMargin: Double = js.native
     def lastModifiedCheckMargin_=(value: Double): Unit = js.native
+    
+    /**
+      * Whether to ask the user to rename untitled file on first manual save.
+      */
+    @JSName("renameUntitledFileOnSave")
+    def renameUntitledFileOnSave_MDocumentManager: Boolean = js.native
     
     /* protected */ var translator: ITranslator = js.native
   }

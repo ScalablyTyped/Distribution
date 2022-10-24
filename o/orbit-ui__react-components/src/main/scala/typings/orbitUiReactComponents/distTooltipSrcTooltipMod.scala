@@ -17,7 +17,7 @@ object distTooltipSrcTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerTooltip(hasAsChildrenForwardedRefRest: InnerTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTooltip")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTooltip(param0: InnerTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/tooltip/src/Tooltip", "Tooltip")
   @js.native

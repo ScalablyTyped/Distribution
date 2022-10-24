@@ -57,7 +57,7 @@ trait Bin extends StObject {
     */
   var field: js.UndefOr[String] = js.undefined
   
-  var sort: Encoding
+  var sort: Order
   
   /**
     * Time unit (e.g., `year`, `yearmonth`, `month`, `hours`) for a temporal field.
@@ -105,7 +105,7 @@ trait Bin extends StObject {
 }
 object Bin {
   
-  inline def apply(sort: Encoding): Bin = {
+  inline def apply(sort: Order): Bin = {
     val __obj = js.Dynamic.literal(sort = sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bin]
   }
@@ -128,7 +128,7 @@ object Bin {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setSort(value: Encoding): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Order): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     inline def setTimeUnit(value: typings.vegaLite.buildSrcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     

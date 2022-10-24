@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__metapackage"
-version := "3.4.8-43f163"
-scalaVersion := "3.1.2"
+version := "3.5.0-ff1068"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

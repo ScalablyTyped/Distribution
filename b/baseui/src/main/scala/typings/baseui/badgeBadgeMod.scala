@@ -12,7 +12,5 @@ object badgeBadgeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasChildrenContentColorShapePlacementHierarchyHorizontalOffsetVerticalOffsetHiddenOverrides: BadgeProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenContentColorShapePlacementHierarchyHorizontalOffsetVerticalOffsetHiddenOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: BadgeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

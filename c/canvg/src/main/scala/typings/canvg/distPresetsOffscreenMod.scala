@@ -13,7 +13,7 @@ object distPresetsOffscreenMod {
   val ^ : js.Any = js.native
   
   inline def offscreen(): CreateImage = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")().asInstanceOf[CreateImage]
-  inline def offscreen(hasDOMParserFallback: IConfig): CreateImage = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")(hasDOMParserFallback.asInstanceOf[js.Any]).asInstanceOf[CreateImage]
+  inline def offscreen(param0: IConfig): CreateImage = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")(param0.asInstanceOf[js.Any]).asInstanceOf[CreateImage]
   
   trait IConfig extends StObject {
     

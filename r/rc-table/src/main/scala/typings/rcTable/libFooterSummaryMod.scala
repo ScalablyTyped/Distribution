@@ -18,17 +18,17 @@ object libFooterSummaryMod {
     /**
       * Syntactic sugar. Do not support HOC.
       */
-    inline def apply(hasChildren: SummaryProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(param0: SummaryProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("rc-table/lib/Footer/Summary", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* was `typeof imported_Cell.default` */
-    inline def Cell(hasClassNameIndexChildrenColSpanRowSpanAlign: SummaryCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(hasClassNameIndexChildrenColSpanRowSpanAlign.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def Cell(param0: SummaryCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /* was `typeof imported_Row.default` */
-    inline def Row(hasChildrenProps: FooterRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def Row(param0: FooterRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
   
   trait SummaryProps extends StObject {

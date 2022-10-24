@@ -18,7 +18,7 @@ object libTypescriptSrcUseNavigationCacheMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, Any] */](hasStateGetStateNavigationSetOptionsRouterEmitter: Options[State, EventMap]): NavigationCache[State, ScreenOptions, EventMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateGetStateNavigationSetOptionsRouterEmitter.asInstanceOf[js.Any]).asInstanceOf[NavigationCache[State, ScreenOptions, EventMap]]
+  inline def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, Any] */](param0: Options[State, EventMap]): NavigationCache[State, ScreenOptions, EventMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[NavigationCache[State, ScreenOptions, EventMap]]
   
   type NavigationCache[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, Any] */] = Record[
     String, 

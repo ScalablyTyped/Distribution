@@ -12,7 +12,7 @@ object distDateInputSrcUseMaskedInputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useMaskedInput(hasInputElementMask: UseMaskedInputProps): OnChange = ^.asInstanceOf[js.Dynamic].applyDynamic("useMaskedInput")(hasInputElementMask.asInstanceOf[js.Any]).asInstanceOf[OnChange]
+  inline def useMaskedInput(param0: UseMaskedInputProps): OnChange = ^.asInstanceOf[js.Dynamic].applyDynamic("useMaskedInput")(param0.asInstanceOf[js.Any]).asInstanceOf[OnChange]
   
   trait UseMaskedInputProps extends StObject {
     

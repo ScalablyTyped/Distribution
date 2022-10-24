@@ -49,9 +49,7 @@ object distConfigClientConfigurationMod {
     inline def tokenRenewalOffsetSeconds_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tokenRenewalOffsetSeconds")(x.asInstanceOf[js.Any])
   }
   
-  inline def buildClientConfiguration(
-    hasUserAuthOptionsUserSystemOptionsUserLoggerOptionStorageImplementationNetworkImplementationCryptoImplementationClientCredentialsLibraryInfoTelemetryServerTelemetryManagerPersistencePluginSerializableCache: ClientConfiguration
-  ): CommonClientConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClientConfiguration")(hasUserAuthOptionsUserSystemOptionsUserLoggerOptionStorageImplementationNetworkImplementationCryptoImplementationClientCredentialsLibraryInfoTelemetryServerTelemetryManagerPersistencePluginSerializableCache.asInstanceOf[js.Any]).asInstanceOf[CommonClientConfiguration]
+  inline def buildClientConfiguration(param0: ClientConfiguration): CommonClientConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClientConfiguration")(param0.asInstanceOf[js.Any]).asInstanceOf[CommonClientConfiguration]
   
   trait ApplicationTelemetry extends StObject {
     

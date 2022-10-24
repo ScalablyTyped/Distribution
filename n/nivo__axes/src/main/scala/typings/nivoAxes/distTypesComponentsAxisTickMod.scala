@@ -13,5 +13,5 @@ object distTypesComponentsAxisTickMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def AxisTick[Value /* <: ScaleValue */](has_valueFormatLineXLineYOnClickTextBaselineTextAnchorAnimatedProps: AxisTickProps[Value]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AxisTick")(has_valueFormatLineXLineYOnClickTextBaselineTextAnchorAnimatedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def AxisTick[Value /* <: ScaleValue */](param0: AxisTickProps[Value]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AxisTick")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

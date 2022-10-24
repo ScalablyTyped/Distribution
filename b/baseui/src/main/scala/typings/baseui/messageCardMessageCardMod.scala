@@ -12,7 +12,5 @@ object messageCardMessageCardMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasBackgroundColorBackgroundColorTypePropButtonKindButtonLabelHeadingImageOnClickOverridesParagraph: MessageCardProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasBackgroundColorBackgroundColorTypePropButtonKindButtonLabelHeadingImageOnClickOverridesParagraph.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: MessageCardProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

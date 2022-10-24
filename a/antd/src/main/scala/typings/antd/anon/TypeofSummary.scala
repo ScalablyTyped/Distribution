@@ -12,5 +12,5 @@ trait TypeofSummary extends StObject {
   /**
     * Syntactic sugar. Do not support HOC.
     */
-  def apply(hasChildren: SummaryProps): ReactElement = js.native
+  def apply(param0: SummaryProps): ReactElement = js.native
 }

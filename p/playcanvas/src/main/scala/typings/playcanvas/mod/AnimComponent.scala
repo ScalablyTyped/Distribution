@@ -26,7 +26,7 @@ open class AnimComponent protected () extends Component {
   
   var _activate: Boolean = js.native
   
-  def _addLayer(hasNameStatesTransitionsWeightMaskBlendType: BlendType): Any = js.native
+  def _addLayer(param0: BlendType): Any = js.native
   
   var _consumedTriggers: Set[Any] = js.native
   

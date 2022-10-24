@@ -1,7 +1,7 @@
 
 # Scala.js typings for diff2html
 
-Typings are for version 3.4.19
+Typings are for version 3.4.21
 
 ## Library description:
 Fast Diff to colorized HTML

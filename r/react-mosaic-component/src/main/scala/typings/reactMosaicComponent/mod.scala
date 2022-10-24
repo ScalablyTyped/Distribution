@@ -58,7 +58,7 @@ object mod {
   @js.native
   val DEFAULT_CONTROLS_WITH_CREATION: js.Array[String | Double | ReactElement | ReactFragment | ReactPortal] = js.native
   
-  inline def DefaultToolbarButton(hasTitleClassNameOnClickText: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultToolbarButton")(hasTitleClassNameOnClickText.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DefaultToolbarButton(param0: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultToolbarButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-mosaic-component", "ExpandButton")
   @js.native

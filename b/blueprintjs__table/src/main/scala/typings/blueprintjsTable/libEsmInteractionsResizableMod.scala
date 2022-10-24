@@ -49,8 +49,8 @@ object libEsmInteractionsResizableMod {
     def defaultProps: IsResizable = js.native
     inline def defaultProps_=(x: IsResizable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(hasSize: IResizableProps): Size | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSize.asInstanceOf[js.Any]).asInstanceOf[Size | Null]
-    inline def getDerivedStateFromProps(hasSize: IResizableProps, prevState: IResizeableState): Size | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSize.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[Size | Null]
+    inline def getDerivedStateFromProps(param0: IResizableProps): Size | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(param0.asInstanceOf[js.Any]).asInstanceOf[Size | Null]
+    inline def getDerivedStateFromProps(param0: IResizableProps, prevState: IResizeableState): Size | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(param0.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[Size | Null]
   }
   
   type IIndexedResizeCallback = js.Function2[/* index */ Double, /* size */ Double, Unit]

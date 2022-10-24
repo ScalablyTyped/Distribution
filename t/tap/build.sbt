@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "tap"
-version := "15.0-dt-20220424Z-644ee7"
-scalaVersion := "3.1.2"
+version := "15.0-dt-20220424Z-c650e6"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

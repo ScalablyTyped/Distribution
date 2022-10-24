@@ -13,12 +13,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasUrlAsyncOnError: CreateChannelArgs): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUrlAsyncOnError.asInstanceOf[js.Any]).asInstanceOf[Channel]
+  inline def default(param0: CreateChannelArgs): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Channel]
   
   @JSImport("@storybook/channel-websocket", "WebsocketTransport")
   @js.native
   open class WebsocketTransport protected () extends StObject {
-    def this(hasUrlOnError: WebsocketTransportArgs) = this()
+    def this(param0: WebsocketTransportArgs) = this()
     
     /* private */ var buffer: Any = js.native
     

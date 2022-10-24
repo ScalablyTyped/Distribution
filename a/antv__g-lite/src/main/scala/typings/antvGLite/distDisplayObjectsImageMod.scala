@@ -15,7 +15,7 @@ object distDisplayObjectsImageMod {
   @JSImport("@antv/g-lite/dist/display-objects/Image", "Image")
   @js.native
   open class Image () extends DisplayObject[ImageStyleProps, ParsedImageStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[ImageStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[ImageStyleProps]) = this()
   }
   
   trait ImageStyleProps

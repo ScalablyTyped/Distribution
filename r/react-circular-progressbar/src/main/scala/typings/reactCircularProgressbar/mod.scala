@@ -34,7 +34,5 @@ object mod {
   
   inline def CircularProgressbarWithChildren(props: CircularProgressbarWithChildrenProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircularProgressbarWithChildren")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def buildStyles(
-    hasRotationStrokeLinecapTextColorTextSizePathColorPathTransitionPathTransitionDurationTrailColorBackgroundColor: BackgroundColor
-  ): CircularProgressbarStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStyles")(hasRotationStrokeLinecapTextColorTextSizePathColorPathTransitionPathTransitionDurationTrailColorBackgroundColor.asInstanceOf[js.Any]).asInstanceOf[CircularProgressbarStyles]
+  inline def buildStyles(param0: BackgroundColor): CircularProgressbarStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[CircularProgressbarStyles]
 }

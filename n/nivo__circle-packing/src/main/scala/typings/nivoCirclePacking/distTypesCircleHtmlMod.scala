@@ -12,7 +12,7 @@ object distTypesCircleHtmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CircleHtml[RawDatum](hasNodeStyleOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: CircleProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleHtml")(hasNodeStyleOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CircleHtml[RawDatum](param0: CircleProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleHtml")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def interpolateBorderWidth(
     borderWidth: Double,

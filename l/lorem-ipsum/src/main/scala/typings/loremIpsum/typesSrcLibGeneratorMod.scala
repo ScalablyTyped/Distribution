@@ -12,7 +12,7 @@ object typesSrcLibGeneratorMod {
   open class default ()
     extends StObject
        with Generator {
-    def this(hasSentencesPerParagraphWordsPerSentenceRandomSeedWords: IGeneratorOptions) = this()
+    def this(param0: IGeneratorOptions) = this()
   }
   
   @js.native

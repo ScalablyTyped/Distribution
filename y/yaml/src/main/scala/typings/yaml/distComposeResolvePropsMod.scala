@@ -22,7 +22,7 @@ object distComposeResolvePropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def resolveProps(tokens: js.Array[SourceToken], hasFlowIndicatorNextOffsetOnErrorStartOnNewline: ResolvePropsArg): Anchor = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProps")(tokens.asInstanceOf[js.Any], hasFlowIndicatorNextOffsetOnErrorStartOnNewline.asInstanceOf[js.Any])).asInstanceOf[Anchor]
+  inline def resolveProps(tokens: js.Array[SourceToken], param1: ResolvePropsArg): Anchor = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProps")(tokens.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Anchor]
   
   trait ResolvePropsArg extends StObject {
     

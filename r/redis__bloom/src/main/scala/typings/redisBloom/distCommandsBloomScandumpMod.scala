@@ -20,7 +20,7 @@ object distCommandsBloomScandumpMod {
   
   inline def transformArguments(key: String, iterator: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(key.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def transformReply(hasIteratorChunk: ScanDumpRawReply): ScanDumpReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(hasIteratorChunk.asInstanceOf[js.Any]).asInstanceOf[ScanDumpReply]
+  inline def transformReply(param0: ScanDumpRawReply): ScanDumpReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(param0.asInstanceOf[js.Any]).asInstanceOf[ScanDumpReply]
   
   type ScanDumpRawReply = js.Tuple2[/* iterator */ Double, /* chunk */ String]
   

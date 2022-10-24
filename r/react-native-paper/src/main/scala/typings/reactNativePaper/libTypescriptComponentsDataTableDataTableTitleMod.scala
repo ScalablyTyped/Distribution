@@ -7,10 +7,10 @@ import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.TouchableWithoutFeedback
-import typings.reactNativePaper.anon.CallHasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest
 import typings.reactNativePaper.anon.NumberOfLines
 import typings.reactNativePaper.anon.PickTouchableWithoutFeedbAccessibilityHint
 import typings.reactNativePaper.anon.TouchableWithoutFeedbackPAccessibilityActions
+import typings.reactNativePaper.anon.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,10 +19,7 @@ object libTypescriptComponentsDataTableDataTableTitleMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTableTitle", JSImport.Default)
   @js.native
-  val default: ComponentType[PickTouchableWithoutFeedbAccessibilityHint] & (NonReactStatics[
-    ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & CallHasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickTouchableWithoutFeedbAccessibilityHint] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & `8`, js.Object]) = js.native
   
   /**
     * A component to display title in table header.
@@ -58,7 +55,7 @@ object libTypescriptComponentsDataTableDataTableTitleMod extends Shortcut {
     */
   object DataTableTitle {
     
-    inline def apply(hasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTableTitle", "DataTableTitle")
     @js.native
@@ -72,14 +69,8 @@ object libTypescriptComponentsDataTableDataTableTitleMod extends Shortcut {
   
   type Props = ComponentPropsWithRef[Instantiable0[TouchableWithoutFeedback]] & NumberOfLines
   
-  type _To = ComponentType[PickTouchableWithoutFeedbAccessibilityHint] & (NonReactStatics[
-    ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & CallHasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest, 
-    js.Object
-  ])
+  type _To = ComponentType[PickTouchableWithoutFeedbAccessibilityHint] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & `8`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsDataTableDataTableTitleMod.foo` */
-  override def _to: ComponentType[PickTouchableWithoutFeedbAccessibilityHint] & (NonReactStatics[
-    ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & CallHasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickTouchableWithoutFeedbAccessibilityHint] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & `8`, js.Object]) = default
 }

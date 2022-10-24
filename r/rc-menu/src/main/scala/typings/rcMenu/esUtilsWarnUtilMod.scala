@@ -11,5 +11,5 @@ object esUtilsWarnUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def warnItemProp[T /* <: Item */](hasItemRestInfo: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("warnItemProp")(hasItemRestInfo.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def warnItemProp[T /* <: Item */](param0: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("warnItemProp")(param0.asInstanceOf[js.Any]).asInstanceOf[T]
 }

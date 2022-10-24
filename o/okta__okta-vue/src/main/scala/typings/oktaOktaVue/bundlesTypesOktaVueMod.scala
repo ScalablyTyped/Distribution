@@ -22,20 +22,10 @@ object bundlesTypesOktaVueMod {
     
     @JSImport("@okta/okta-vue/bundles/types/okta-vue", "default.install")
     @js.native
-    def install: js.Function2[
-        /* app */ App[Any], 
-        /* hasOktaAuthOnAuthRequiredOnAuthResume */ js.UndefOr[OktaVueOptions], 
-        Unit
-      ] = js.native
+    def install: js.Function2[/* app */ App[Any], /* param1 */ js.UndefOr[OktaVueOptions], Unit] = js.native
     inline def install(app: App[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def install(app: App[Any], hasOktaAuthOnAuthRequiredOnAuthResume: OktaVueOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(app.asInstanceOf[js.Any], hasOktaAuthOnAuthRequiredOnAuthResume.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def install_=(
-      x: js.Function2[
-          /* app */ App[Any], 
-          /* hasOktaAuthOnAuthRequiredOnAuthResume */ js.UndefOr[OktaVueOptions], 
-          Unit
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
+    inline def install(app: App[Any], param1: OktaVueOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(app.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def install_=(x: js.Function2[/* app */ App[Any], /* param1 */ js.UndefOr[OktaVueOptions], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
   }
   
   inline def navigationGuard(to: RouteLocationNormalized): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigationGuard")(to.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]

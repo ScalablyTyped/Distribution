@@ -18,9 +18,7 @@ object distTypesArcsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Arcs[RawDatum](
-    hasCenterDataArcGeneratorBorderWidthBorderColorIsInteractiveOnClickOnMouseEnterOnMouseMoveOnMouseLeaveTooltipTransitionMode: ArcsProps[RawDatum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Arcs")(hasCenterDataArcGeneratorBorderWidthBorderColorIsInteractiveOnClickOnMouseEnterOnMouseMoveOnMouseLeaveTooltipTransitionMode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Arcs[RawDatum](param0: ArcsProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Arcs")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ArcsProps[RawDatum] extends StObject {
     

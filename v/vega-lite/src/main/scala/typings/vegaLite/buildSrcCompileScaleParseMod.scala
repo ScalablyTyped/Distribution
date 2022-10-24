@@ -15,5 +15,5 @@ object buildSrcCompileScaleParseMod {
   inline def parseScaleCore(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScaleCore")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def parseScales(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScales")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def parseScales(model: Model, hasIgnoreRange: IgnoreRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScales")(model.asInstanceOf[js.Any], hasIgnoreRange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parseScales(model: Model, param1: IgnoreRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScales")(model.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

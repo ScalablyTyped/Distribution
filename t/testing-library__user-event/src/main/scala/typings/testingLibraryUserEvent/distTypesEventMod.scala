@@ -1140,10 +1140,10 @@ object distTypesEventMod {
   
   inline def isAllSelected(target: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllSelected")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def modifySelectionPerMouseMove(selectionRange: Range, hasDocumentTargetNodeOffset: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelectionPerMouseMove")(selectionRange.asInstanceOf[js.Any], hasDocumentTargetNodeOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def modifySelectionPerMouseMove(selectionRange: SelectionRange, hasDocumentTargetNodeOffset: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelectionPerMouseMove")(selectionRange.asInstanceOf[js.Any], hasDocumentTargetNodeOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def modifySelectionPerMouseMove(selectionRange: Range, param1: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelectionPerMouseMove")(selectionRange.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def modifySelectionPerMouseMove(selectionRange: SelectionRange, param1: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelectionPerMouseMove")(selectionRange.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def selectAll(target: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setSelectionPerMouseDown(hasDocumentTargetClickCountNodeOffset: ClickCount): js.UndefOr[Range | SelectionRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelectionPerMouseDown")(hasDocumentTargetClickCountNodeOffset.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Range | SelectionRange]]
+  inline def setSelectionPerMouseDown(param0: ClickCount): js.UndefOr[Range | SelectionRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelectionPerMouseDown")(param0.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Range | SelectionRange]]
 }

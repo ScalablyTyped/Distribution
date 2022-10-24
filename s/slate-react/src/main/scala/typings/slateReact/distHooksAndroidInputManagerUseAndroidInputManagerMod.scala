@@ -14,7 +14,7 @@ object distHooksAndroidInputManagerUseAndroidInputManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useAndroidInputManager(hasNodeOptions: UseAndroidInputManagerOptions): AndroidInputManager | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useAndroidInputManager")(hasNodeOptions.asInstanceOf[js.Any]).asInstanceOf[AndroidInputManager | Null]
+  inline def useAndroidInputManager(param0: UseAndroidInputManagerOptions): AndroidInputManager | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useAndroidInputManager")(param0.asInstanceOf[js.Any]).asInstanceOf[AndroidInputManager | Null]
   
   /* Inlined {  node :react.react.RefObject<std.HTMLElement>} & std.Omit<slate-react.slate-react/dist/hooks/android-input-manager/android-input-manager.CreateAndroidInputManagerOptions, 'editor' | 'onUserInput' | 'receivedUserInput'> */
   trait UseAndroidInputManagerOptions extends StObject {

@@ -23,9 +23,7 @@ object distTabsSrcTabsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerTabs(
-    hasIdSelectedKeyPropDefaultSelectedKeyOnSelectionChangeManualAutoFocusFluidOrientationAriaLabelChildrenForwardedRefRest: InnerTabsProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabs")(hasIdSelectedKeyPropDefaultSelectedKeyOnSelectionChangeManualAutoFocusFluidOrientationAriaLabelChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTabs(param0: InnerTabsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabs")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/tabs/src/Tabs", "Tabs")
   @js.native

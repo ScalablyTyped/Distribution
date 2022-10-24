@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ebongarde-root"
-version := "1.7-dt-20211223Z-b314a1"
-scalaVersion := "3.1.2"
+version := "1.7-dt-20211223Z-a544b9"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

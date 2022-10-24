@@ -43,6 +43,8 @@ object distAxePuppeteerMod {
     
     /* private */ var disabledFrameSelectors: Any = js.native
     
+    /* private */ var errorUrl: Any = js.native
+    
     def exclude(selector: String): this.type = js.native
     def exclude(selector: js.Array[String]): this.type = js.native
     

@@ -1,22 +1,20 @@
 package typings.wixStyleReact.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.wixStyleReact.anon.PartialPageFooterProps
 import typings.wixStyleReact.anon.WeakValidationMapPageFoot
-import typings.wixStyleReact.centerMod.default
-import typings.wixStyleReact.pageFooterMod.PageFooterProps
+import typings.wixStyleReact.distTypesPageFooterMod.PageFooterProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/es/src/PageFooter.PageFooterProps> & {  Start :new (): wix-style-react.wix-style-react/dist/es/src/PageFooter/Start.default,   Center :new (): wix-style-react.wix-style-react/dist/es/src/PageFooter/Center.default,   End :new (): wix-style-react.wix-style-react/dist/es/src/PageFooter/End.default} */
+/* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/types/PageFooter.PageFooterProps> & {  Start :new (): wix-style-react.wix-style-react/dist/types/PageFooter/Start.default,   Center :new (): wix-style-react.wix-style-react/dist/types/PageFooter/Center.default,   End :new (): wix-style-react.wix-style-react/dist/types/PageFooter/End.default} */
 object PageFooter {
   
-  inline def apply(props: PropsWithChildren[PageFooterProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def apply(props: PropsWithChildren[PageFooterProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def apply(props: PageFooterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def apply(props: PageFooterProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
   @JSImport("wix-style-react", "PageFooter")
   @js.native
@@ -25,36 +23,37 @@ object PageFooter {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("wix-style-react", "PageFooter.Center")
   @js.native
-  class Center () extends default
+  open class Center ()
+    extends typings.wixStyleReact.distTypesPageFooterCenterMod.default
   @JSImport("wix-style-react", "PageFooter.Center")
   @js.native
-  def Center: Instantiable0[default] = js.native
-  inline def Center_=(x: Instantiable0[default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
+  def Center: Instantiable0[typings.wixStyleReact.distTypesPageFooterCenterMod.default] = js.native
+  inline def Center_=(x: Instantiable0[typings.wixStyleReact.distTypesPageFooterCenterMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("wix-style-react", "PageFooter.End")
   @js.native
-  class End ()
-    extends typings.wixStyleReact.endMod.default
+  open class End ()
+    extends typings.wixStyleReact.distTypesPageFooterEndMod.default
   @JSImport("wix-style-react", "PageFooter.End")
   @js.native
-  def End: Instantiable0[typings.wixStyleReact.endMod.default] = js.native
-  inline def End_=(x: Instantiable0[typings.wixStyleReact.endMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("End")(x.asInstanceOf[js.Any])
+  def End: Instantiable0[typings.wixStyleReact.distTypesPageFooterEndMod.default] = js.native
+  inline def End_=(x: Instantiable0[typings.wixStyleReact.distTypesPageFooterEndMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("End")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("wix-style-react", "PageFooter.Start")
   @js.native
-  class Start ()
-    extends typings.wixStyleReact.startMod.default
+  open class Start ()
+    extends typings.wixStyleReact.distTypesPageFooterStartMod.default
   @JSImport("wix-style-react", "PageFooter.Start")
   @js.native
-  def Start: Instantiable0[typings.wixStyleReact.startMod.default] = js.native
-  inline def Start_=(x: Instantiable0[typings.wixStyleReact.startMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Start")(x.asInstanceOf[js.Any])
+  def Start: Instantiable0[typings.wixStyleReact.distTypesPageFooterStartMod.default] = js.native
+  inline def Start_=(x: Instantiable0[typings.wixStyleReact.distTypesPageFooterStartMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Start")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "PageFooter.contextTypes")
   @js.native
-  def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-  inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+  inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "PageFooter.defaultProps")
   @js.native

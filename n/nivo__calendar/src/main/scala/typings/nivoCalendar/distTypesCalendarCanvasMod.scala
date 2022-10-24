@@ -12,5 +12,5 @@ object distTypesCalendarCanvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CalendarCanvas(hasIsInteractiveRenderWrapperThemeProps: CalendarCanvasProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CalendarCanvas")(hasIsInteractiveRenderWrapperThemeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CalendarCanvas(param0: CalendarCanvasProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CalendarCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

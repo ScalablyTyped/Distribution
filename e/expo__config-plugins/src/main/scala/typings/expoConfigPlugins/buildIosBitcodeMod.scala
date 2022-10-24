@@ -15,9 +15,9 @@ object buildIosBitcodeMod {
   
   inline def getBitcode(config: PickExpoConfigios): Bitcode = ^.asInstanceOf[js.Dynamic].applyDynamic("getBitcode")(config.asInstanceOf[js.Any]).asInstanceOf[Bitcode]
   
-  inline def setBitcode(bitcode: Bitcode, hasProject: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcode")(bitcode.asInstanceOf[js.Any], hasProject.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def setBitcode(bitcode: Bitcode, param1: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcode")(bitcode.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def setBitcodeWithConfig(config: PickExpoConfigios, hasProject: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcodeWithConfig")(config.asInstanceOf[js.Any], hasProject.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def setBitcodeWithConfig(config: PickExpoConfigios, param1: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcodeWithConfig")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("@expo/config-plugins/build/ios/Bitcode", "withBitcode")
   @js.native

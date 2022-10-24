@@ -64,7 +64,7 @@ object libPageconfigMod {
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
-    inline def getNBConvertURL(hasPathFormatDownload: Download): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNBConvertURL")(hasPathFormatDownload.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getNBConvertURL(param0: Download): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNBConvertURL")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the Notebook version info [major, minor, patch].

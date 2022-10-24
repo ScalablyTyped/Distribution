@@ -5,11 +5,11 @@ import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonRea
 import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.reactNativePaper.anon.CallHasTitleTitleStyleTitleNumberOfLinesSubtitleSubtitleStyleSubtitleNumberOfLinesLeftLeftStyleRightRightStyleStyle
 import typings.reactNativePaper.anon.Left
 import typings.reactNativePaper.anon.PickViewPropsRefAttributeAccessibilityLabelledBy
 import typings.reactNativePaper.anon.TypeofView
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityLabel
+import typings.reactNativePaper.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +18,7 @@ object libTypescriptComponentsCardCardTitleMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/Card/CardTitle", JSImport.Default)
   @js.native
-  val default: ComponentType[PickViewPropsRefAttributeAccessibilityLabelledBy] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLabel] & CallHasTitleTitleStyleTitleNumberOfLinesSubtitleSubtitleStyleSubtitleNumberOfLinesLeftLeftStyleRightRightStyleStyle, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickViewPropsRefAttributeAccessibilityLabelledBy] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLabel] & `3`, js.Object]) = js.native
   
   /**
     * A component to show a title, subtitle and an avatar inside a Card.
@@ -49,9 +46,7 @@ object libTypescriptComponentsCardCardTitleMod extends Shortcut {
     */
   object CardTitle {
     
-    inline def apply(
-      hasTitleTitleStyleTitleNumberOfLinesSubtitleSubtitleStyleSubtitleNumberOfLinesLeftLeftStyleRightRightStyleStyle: Props
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasTitleTitleStyleTitleNumberOfLinesSubtitleSubtitleStyleSubtitleNumberOfLinesLeftLeftStyleRightRightStyleStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/Card/CardTitle", "CardTitle")
     @js.native
@@ -65,14 +60,8 @@ object libTypescriptComponentsCardCardTitleMod extends Shortcut {
   
   type Props = ComponentPropsWithRef[TypeofView] & Left
   
-  type _To = ComponentType[PickViewPropsRefAttributeAccessibilityLabelledBy] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLabel] & CallHasTitleTitleStyleTitleNumberOfLinesSubtitleSubtitleStyleSubtitleNumberOfLinesLeftLeftStyleRightRightStyleStyle, 
-    js.Object
-  ])
+  type _To = ComponentType[PickViewPropsRefAttributeAccessibilityLabelledBy] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLabel] & `3`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsCardCardTitleMod.foo` */
-  override def _to: ComponentType[PickViewPropsRefAttributeAccessibilityLabelledBy] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLabel] & CallHasTitleTitleStyleTitleNumberOfLinesSubtitleSubtitleStyleSubtitleNumberOfLinesLeftLeftStyleRightRightStyleStyle, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickViewPropsRefAttributeAccessibilityLabelledBy] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLabel] & `3`, js.Object]) = default
 }

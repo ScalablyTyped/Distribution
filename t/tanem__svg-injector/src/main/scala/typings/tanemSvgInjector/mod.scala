@@ -13,8 +13,5 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def SVGInjector(elements: Elements): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SVGInjector")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def SVGInjector(
-    elements: Elements,
-    hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsHttpRequestWithCredentialsRenumerateIRIElements: OptionalArgs
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SVGInjector")(elements.asInstanceOf[js.Any], hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsHttpRequestWithCredentialsRenumerateIRIElements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def SVGInjector(elements: Elements, param1: OptionalArgs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SVGInjector")(elements.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

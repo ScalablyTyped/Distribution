@@ -12,5 +12,5 @@ object distUiComponentsAppMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def App(hasApi: Api): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("App")(hasApi.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def App(param0: Api): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("App")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

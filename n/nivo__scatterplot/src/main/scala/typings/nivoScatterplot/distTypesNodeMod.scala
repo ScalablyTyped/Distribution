@@ -13,7 +13,5 @@ object distTypesNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Node[RawDatum /* <: ScatterPlotDatum */](
-    hasNodeStyleBlendModeIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: ScatterPlotNodeProps[RawDatum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Node")(hasNodeStyleBlendModeIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Node[RawDatum /* <: ScatterPlotDatum */](param0: ScatterPlotNodeProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Node")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

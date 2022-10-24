@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "assert-never"
-version := "1.2.1-d02f9f"
-scalaVersion := "3.1.2"
+version := "1.2.1-714c9b"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

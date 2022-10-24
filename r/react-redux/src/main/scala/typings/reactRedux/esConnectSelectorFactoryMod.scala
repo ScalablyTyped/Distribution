@@ -16,16 +16,16 @@ object esConnectSelectorFactoryMod {
   
   inline def default[TStateProps, TOwnProps, TDispatchProps, TMergedProps, State](
     dispatch: Dispatch[Action[Any]],
-    hasInitMapStateToPropsInitMapDispatchToPropsInitMergePropsOptions: SelectorFactoryOptions[TStateProps, TOwnProps, TDispatchProps, TMergedProps, State]
-  ): js.Function2[/* nextState */ State, /* nextOwnProps */ TOwnProps, TMergedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dispatch.asInstanceOf[js.Any], hasInitMapStateToPropsInitMapDispatchToPropsInitMergePropsOptions.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* nextState */ State, /* nextOwnProps */ TOwnProps, TMergedProps]]
+    param1: SelectorFactoryOptions[TStateProps, TOwnProps, TDispatchProps, TMergedProps, State]
+  ): js.Function2[/* nextState */ State, /* nextOwnProps */ TOwnProps, TMergedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dispatch.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* nextState */ State, /* nextOwnProps */ TOwnProps, TMergedProps]]
   
   inline def pureFinalPropsSelectorFactory[TStateProps, TOwnProps, TDispatchProps, TMergedProps, State](
     mapStateToProps: WrappedMapStateToProps[TStateProps, TOwnProps, State],
     mapDispatchToProps: WrappedMapDispatchToProps[TDispatchProps, TOwnProps],
     mergeProps: MergeProps[TStateProps, TDispatchProps, TOwnProps, TMergedProps],
     dispatch: Dispatch[Action[Any]],
-    hasAreStatesEqualAreOwnPropsEqualAreStatePropsEqual: PureSelectorFactoryComparisonOptions[TStateProps, TOwnProps, State]
-  ): js.Function2[/* nextState */ State, /* nextOwnProps */ TOwnProps, TMergedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("pureFinalPropsSelectorFactory")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], hasAreStatesEqualAreOwnPropsEqualAreStatePropsEqual.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* nextState */ State, /* nextOwnProps */ TOwnProps, TMergedProps]]
+    param4: PureSelectorFactoryComparisonOptions[TStateProps, TOwnProps, State]
+  ): js.Function2[/* nextState */ State, /* nextOwnProps */ TOwnProps, TMergedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("pureFinalPropsSelectorFactory")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any], mergeProps.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], param4.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* nextState */ State, /* nextOwnProps */ TOwnProps, TMergedProps]]
   
   trait InitOptions[TStateProps, TOwnProps, TMergedProps, State]
     extends StObject

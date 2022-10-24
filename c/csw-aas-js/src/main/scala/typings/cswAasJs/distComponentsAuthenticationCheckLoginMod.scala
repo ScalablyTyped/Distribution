@@ -12,7 +12,7 @@ object distComponentsAuthenticationCheckLoginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildrenError: CheckLoginProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: CheckLoginProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CheckLoginProps extends StObject {
     

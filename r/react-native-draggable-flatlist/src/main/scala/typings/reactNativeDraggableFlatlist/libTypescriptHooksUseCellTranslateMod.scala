@@ -12,7 +12,7 @@ object libTypescriptHooksUseCellTranslateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useCellTranslate(hasCellIndexCellSizeCellOffset: Params): ReadonlySharedValuenumber = ^.asInstanceOf[js.Dynamic].applyDynamic("useCellTranslate")(hasCellIndexCellSizeCellOffset.asInstanceOf[js.Any]).asInstanceOf[ReadonlySharedValuenumber]
+  inline def useCellTranslate(param0: Params): ReadonlySharedValuenumber = ^.asInstanceOf[js.Dynamic].applyDynamic("useCellTranslate")(param0.asInstanceOf[js.Any]).asInstanceOf[ReadonlySharedValuenumber]
   
   trait Params extends StObject {
     

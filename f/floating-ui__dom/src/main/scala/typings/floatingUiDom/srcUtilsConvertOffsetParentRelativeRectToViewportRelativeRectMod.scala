@@ -11,5 +11,5 @@ object srcUtilsConvertOffsetParentRelativeRectToViewportRelativeRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def convertOffsetParentRelativeRectToViewportRelativeRect(hasRectOffsetParentStrategy: Rect): typings.floatingUiCore.srcTypesMod.Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("convertOffsetParentRelativeRectToViewportRelativeRect")(hasRectOffsetParentStrategy.asInstanceOf[js.Any]).asInstanceOf[typings.floatingUiCore.srcTypesMod.Rect]
+  inline def convertOffsetParentRelativeRectToViewportRelativeRect(param0: Rect): typings.floatingUiCore.srcTypesMod.Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("convertOffsetParentRelativeRectToViewportRelativeRect")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.floatingUiCore.srcTypesMod.Rect]
 }

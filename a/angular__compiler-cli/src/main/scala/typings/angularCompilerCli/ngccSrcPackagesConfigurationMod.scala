@@ -108,11 +108,7 @@ object ngccSrcPackagesConfigurationMod {
   - Dropped {[ P in std.Exclude<keyof @angular/compiler-cli.@angular/compiler-cli/ngcc/src/packages/configuration.RawNgccPackageConfig, 'entryPoints'> ]: @angular/compiler-cli.@angular/compiler-cli/ngcc/src/packages/configuration.RawNgccPackageConfig[P]} */ @JSImport("@angular/compiler-cli/ngcc/src/packages/configuration", "ProcessedNgccPackageConfig")
   @js.native
   open class ProcessedNgccPackageConfig protected () extends StObject {
-    def this(
-      fs: PathManipulation,
-      packagePath: AbsoluteFsPath,
-      hasEntryPointsIgnorableDeepImportMatchers: RawNgccPackageConfig
-    ) = this()
+    def this(fs: PathManipulation, packagePath: AbsoluteFsPath, param2: RawNgccPackageConfig) = this()
     
     /**
       * The entry-points to configure for this package.

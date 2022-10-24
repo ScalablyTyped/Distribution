@@ -22,9 +22,7 @@ object typesMenuSheetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def MenuSheet(
-    hasIdChildrenHeaderFooterHorizontalMenuRefMenuPropsListStyleListClassNameListPropsPositionVerticalSizeOnClickOverlayPropsOnRequestCloseProps: LabelRequiredForA11y[MenuSheetProps]
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuSheet")(hasIdChildrenHeaderFooterHorizontalMenuRefMenuPropsListStyleListClassNameListPropsPositionVerticalSizeOnClickOverlayPropsOnRequestCloseProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuSheet(param0: LabelRequiredForA11y[MenuSheetProps]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuSheet")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.reactMdUtils.typesKeyboardMovementUseKeyboardFocusMod.KeyboardFocusCallbacks because var conflicts: onFocus, onKeyDown. Inlined onJumpToFirst, onSearch, onIncrement, onDecrement, onJumpToLast

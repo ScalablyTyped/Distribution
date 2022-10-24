@@ -10,7 +10,7 @@ object distTypesRegionInfoGetResolvedHostnameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getResolvedHostname(resolvedRegion: String, hasRegionHostnamePartitionHostname: GetResolvedHostnameOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolvedHostname")(resolvedRegion.asInstanceOf[js.Any], hasRegionHostnamePartitionHostname.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def getResolvedHostname(resolvedRegion: String, param1: GetResolvedHostnameOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolvedHostname")(resolvedRegion.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   trait GetResolvedHostnameOptions extends StObject {
     

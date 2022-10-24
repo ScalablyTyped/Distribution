@@ -13,7 +13,7 @@ object distCompileCodegenScopeMod {
   @JSImport("ajv/dist/compile/codegen/scope", "Scope")
   @js.native
   open class Scope () extends StObject {
-    def this(hasPrefixesParent: ScopeOptions) = this()
+    def this(param0: ScopeOptions) = this()
     
     /* private */ var _nameGroup: Any = js.native
     
@@ -120,7 +120,7 @@ object distCompileCodegenScopeMod {
     
     var scopePath: js.UndefOr[Code] = js.native
     
-    def setValue(value: NameValue, hasPropertyItemIndex: ScopePath): Unit = js.native
+    def setValue(value: NameValue, param1: ScopePath): Unit = js.native
     
     var value: js.UndefOr[NameValue] = js.native
   }

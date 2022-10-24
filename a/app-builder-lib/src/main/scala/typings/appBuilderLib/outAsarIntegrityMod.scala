@@ -14,7 +14,7 @@ object outAsarIntegrityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeData(hasResourcesPathResourcesRelativePath: AsarIntegrityOptions): js.Promise[AsarIntegrity] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeData")(hasResourcesPathResourcesRelativePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AsarIntegrity]]
+  inline def computeData(param0: AsarIntegrityOptions): js.Promise[AsarIntegrity] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeData")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AsarIntegrity]]
   
   inline def hashFile(file: String): js.Promise[NodeIntegrity] = ^.asInstanceOf[js.Dynamic].applyDynamic("hashFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NodeIntegrity]]
   inline def hashFile(file: String, blockSize: Double): js.Promise[NodeIntegrity] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashFile")(file.asInstanceOf[js.Any], blockSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NodeIntegrity]]

@@ -40,13 +40,13 @@ object componentsDataTableDataTableMod {
     override def _keydownHandler(evt: KeyboardEvent): Unit = js.native
     
     /* CompleteClass */
-    override def _rowExpandToggle(hasElementForceExpand: ForceExpand): Unit = js.native
+    override def _rowExpandToggle(param0: ForceExpand): Unit = js.native
     
     /* CompleteClass */
-    override def _rowExpandToggleAll(hasElement: Element): Unit = js.native
+    override def _rowExpandToggleAll(param0: Element): Unit = js.native
     
     /* CompleteClass */
-    override def _selectAllToggle(hasElement: Element): Unit = js.native
+    override def _selectAllToggle(param0: Element): Unit = js.native
     
     /* CompleteClass */
     override def _selectToggle(detail: Detail): Unit = js.native
@@ -136,11 +136,11 @@ object componentsDataTableDataTableMod {
     
     def _keydownHandler(evt: KeyboardEvent): Unit
     
-    def _rowExpandToggle(hasElementForceExpand: ForceExpand): Unit
+    def _rowExpandToggle(param0: ForceExpand): Unit
     
-    def _rowExpandToggleAll(hasElement: Element): Unit
+    def _rowExpandToggleAll(param0: Element): Unit
     
-    def _selectAllToggle(hasElement: Element): Unit
+    def _selectAllToggle(param0: Element): Unit
     
     def _selectToggle(detail: Detail): Unit
     

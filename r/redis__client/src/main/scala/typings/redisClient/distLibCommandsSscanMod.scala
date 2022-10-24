@@ -24,7 +24,7 @@ object distLibCommandsSscanMod {
   inline def transformArguments(key: RedisCommandArgument, cursor: Double): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(key.asInstanceOf[js.Any], cursor.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   inline def transformArguments(key: RedisCommandArgument, cursor: Double, options: ScanOptions): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(key.asInstanceOf[js.Any], cursor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   
-  inline def transformReply(hasCursorMembers: SScanRawReply): SScanReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(hasCursorMembers.asInstanceOf[js.Any]).asInstanceOf[SScanReply]
+  inline def transformReply(param0: SScanRawReply): SScanReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(param0.asInstanceOf[js.Any]).asInstanceOf[SScanReply]
   
   type SScanRawReply = js.Tuple2[String, js.Array[RedisCommandArgument]]
   

@@ -12,7 +12,7 @@ object distSrcCompletionListenerMod {
   @JSImport("concurrently/dist/src/completion-listener", "CompletionListener")
   @js.native
   open class CompletionListener protected () extends StObject {
-    def this(hasSuccessConditionScheduler: Scheduler) = this()
+    def this(param0: Scheduler) = this()
     
     /* private */ var isSuccess: Any = js.native
     

@@ -19,18 +19,18 @@ object libNativeRunMod {
   @js.native
   val SUPPORTED_PLATFORMS: js.Array[String] = js.native
   
-  inline def checkNativeRun(hasConfig: CheckNativeRunDeps): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkNativeRun")(hasConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def checkNativeRun(param0: CheckNativeRunDeps): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkNativeRun")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def createNativeRunArgs(hasPackagePathPlatformForwardedPorts: NativeRunSchema, options: CommandLineOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNativeRunArgs")(hasPackagePathPlatformForwardedPorts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def createNativeRunArgs(param0: NativeRunSchema, options: CommandLineOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNativeRunArgs")(param0.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def createNativeRunListArgs(inputs: js.Array[String], options: CommandLineOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNativeRunListArgs")(inputs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def findNativeRun(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findNativeRun")().asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  inline def getNativeTargets(hasLogShell: RunNativeRunDeps, platform: String): js.Promise[NativeTargetPlatform] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeTargets")(hasLogShell.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NativeTargetPlatform]]
+  inline def getNativeTargets(param0: RunNativeRunDeps, platform: String): js.Promise[NativeTargetPlatform] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeTargets")(param0.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NativeTargetPlatform]]
   
-  inline def runNativeRun(hasConfigLogShell: RunNativeRunDeps, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runNativeRun")(hasConfigLogShell.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def runNativeRun(hasConfigLogShell: RunNativeRunDeps, args: js.Array[String], options: IShellRunOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runNativeRun")(hasConfigLogShell.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def runNativeRun(param0: RunNativeRunDeps, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runNativeRun")(param0.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def runNativeRun(param0: RunNativeRunDeps, args: js.Array[String], options: IShellRunOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runNativeRun")(param0.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait CheckNativeRunDeps extends StObject {
     

@@ -35,7 +35,7 @@ object libUtilsMod {
   
   inline def getStepDecimals(step: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStepDecimals")(step.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def getTrackBackground(hasValuesColorsMinMaxDirectionRtl: ITrackBackground): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrackBackground")(hasValuesColorsMinMaxDirectionRtl.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTrackBackground(param0: ITrackBackground): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrackBackground")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def isStepDivisible(min: Double, max: Double, step: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStepDivisible")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

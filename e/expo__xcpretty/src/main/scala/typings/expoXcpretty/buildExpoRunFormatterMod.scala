@@ -36,7 +36,7 @@ object buildExpoRunFormatterMod {
     val ^ : js.Any = js.native
     
     inline def create(projectRoot: String): ExpoRunFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[ExpoRunFormatter]
-    inline def create(projectRoot: String, hasXcodeProjectIsDebug: xcodeProjectnamestringund): ExpoRunFormatter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any], hasXcodeProjectIsDebug.asInstanceOf[js.Any])).asInstanceOf[ExpoRunFormatter]
+    inline def create(projectRoot: String, param1: xcodeProjectnamestringund): ExpoRunFormatter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExpoRunFormatter]
   }
   
   trait ExpoRunFormatterProps extends StObject {

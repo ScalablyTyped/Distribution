@@ -226,9 +226,9 @@ object buildSrcCodecMod {
     
     @JSImport("@google-cloud/spanner/build/src/codec", "codec.convertProtoTimestampToDate")
     @js.native
-    def convertProtoTimestampToDate: js.Function1[/* hasNanosSeconds */ ITimestamp, js.Date] = js.native
-    inline def convertProtoTimestampToDate(hasNanosSeconds: ITimestamp): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("convertProtoTimestampToDate")(hasNanosSeconds.asInstanceOf[js.Any]).asInstanceOf[js.Date]
-    inline def convertProtoTimestampToDate_=(x: js.Function1[/* hasNanosSeconds */ ITimestamp, js.Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("convertProtoTimestampToDate")(x.asInstanceOf[js.Any])
+    def convertProtoTimestampToDate: js.Function1[/* param0 */ ITimestamp, js.Date] = js.native
+    inline def convertProtoTimestampToDate(param0: ITimestamp): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("convertProtoTimestampToDate")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def convertProtoTimestampToDate_=(x: js.Function1[/* param0 */ ITimestamp, js.Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("convertProtoTimestampToDate")(x.asInstanceOf[js.Any])
     
     @JSImport("@google-cloud/spanner/build/src/codec", "codec.convertToListValue")
     @js.native

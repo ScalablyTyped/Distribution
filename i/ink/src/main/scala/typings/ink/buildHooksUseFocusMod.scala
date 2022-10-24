@@ -19,7 +19,7 @@ object buildHooksUseFocusMod {
     * determines if this component is focused or not.
     */
   inline def default(): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Output]
-  inline def default(hasIsActiveAutoFocusCustomId: Input): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIsActiveAutoFocusCustomId.asInstanceOf[js.Any]).asInstanceOf[Output]
+  inline def default(param0: Input): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Output]
   
   trait Input extends StObject {
     

@@ -441,6 +441,11 @@ object Progress {
       }
     }
     
+    extension [Self <: RegExpSettings](x: Self) {
+      
+      inline def setVariable(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    }
+    
     /* Inlined std.Pick<semantic-ui-progress.SemanticUI.Progress.RegExpSettings._Impl, 'variable'> & std.Partial<std.Pick<semantic-ui-progress.SemanticUI.Progress.RegExpSettings._Impl, keyof semantic-ui-progress.SemanticUI.Progress.RegExpSettings._Impl>> */
     trait Param extends StObject {
       
@@ -457,11 +462,6 @@ object Progress {
         
         inline def setVariable(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
       }
-    }
-    
-    extension [Self <: RegExpSettings](x: Self) {
-      
-      inline def setVariable(value: js.RegExp & js.UndefOr[js.RegExp]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "win-version-info"
-version := "3.1-dt-20211202Z-e7ac7b"
-scalaVersion := "3.1.2"
+version := "3.1-dt-20211202Z-b500f5"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

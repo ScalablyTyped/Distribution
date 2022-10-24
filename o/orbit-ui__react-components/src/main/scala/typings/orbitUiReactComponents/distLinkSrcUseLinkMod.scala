@@ -14,9 +14,7 @@ object distLinkSrcUseLinkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useLink(
-    hasModuleColorUnderlineShapeExternalAutoFocusActiveFocusHoverDisabledVisitedTargetRelForwardedRef: UseLinkProps
-  ): LinkProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useLink")(hasModuleColorUnderlineShapeExternalAutoFocusActiveFocusHoverDisabledVisitedTargetRelForwardedRef.asInstanceOf[js.Any]).asInstanceOf[LinkProps]
+  inline def useLink(param0: UseLinkProps): LinkProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useLink")(param0.asInstanceOf[js.Any]).asInstanceOf[LinkProps]
   
   trait UseLinkProps
     extends StObject

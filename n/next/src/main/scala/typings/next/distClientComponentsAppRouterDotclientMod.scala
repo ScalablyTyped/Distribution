@@ -16,7 +16,7 @@ object distClientComponentsAppRouterDotclientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasInitialTreeInitialCanonicalUrlChildrenHotReloader: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasInitialTreeInitialCanonicalUrlChildrenHotReloader.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def fetchServerResponse(url: URL, flightRouterState: FlightRouterState): js.Promise[js.Array[/* FlightData */ FlightData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchServerResponse")(url.asInstanceOf[js.Any], flightRouterState.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[/* FlightData */ FlightData]]]
   

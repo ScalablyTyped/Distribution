@@ -16,9 +16,7 @@ object distTypesArcLabelsArcLabelsLayerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ArcLabelsLayer[Datum /* <: DatumWithArcAndColor */](
-    hasCenterDataTransitionModeLabelAccessorRadiusOffsetSkipAngleTextColorComponent: ArcLabelsLayerProps[Datum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLabelsLayer")(hasCenterDataTransitionModeLabelAccessorRadiusOffsetSkipAngleTextColorComponent.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcLabelsLayer[Datum /* <: DatumWithArcAndColor */](param0: ArcLabelsLayerProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLabelsLayer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ArcLabelComponent[Datum /* <: DatumWithArcAndColor */] = js.Function1[/* props */ ArcLabelProps[Datum], Element]
   

@@ -44,7 +44,7 @@ trait BarsWithValue[RawDatum /* <: BarDatum */] extends StObject {
   
   var legendsWithData: js.Array[js.Tuple2[BarLegendProps, js.Array[LegendData]]]
   
-  def shouldRenderBarLabel(hasWidthHeight: Height): Boolean
+  def shouldRenderBarLabel(param0: Height): Boolean
   
   def toggleSerie(id: Any): Unit
   

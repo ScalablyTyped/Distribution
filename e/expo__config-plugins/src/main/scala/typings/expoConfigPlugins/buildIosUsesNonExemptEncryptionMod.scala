@@ -15,7 +15,7 @@ object buildIosUsesNonExemptEncryptionMod {
   
   inline def getUsesNonExemptEncryption(config: PickExpoConfigios): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsesNonExemptEncryption")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
   
-  inline def setUsesNonExemptEncryption(config: PickExpoConfigios, hasITSAppUsesNonExemptEncryptionInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setUsesNonExemptEncryption")(config.asInstanceOf[js.Any], hasITSAppUsesNonExemptEncryptionInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+  inline def setUsesNonExemptEncryption(config: PickExpoConfigios, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setUsesNonExemptEncryption")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
   
   @JSImport("@expo/config-plugins/build/ios/UsesNonExemptEncryption", "withUsesNonExemptEncryption")
   @js.native

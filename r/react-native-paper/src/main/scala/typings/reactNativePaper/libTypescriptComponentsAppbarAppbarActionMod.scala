@@ -54,7 +54,7 @@ object libTypescriptComponentsAppbarAppbarActionMod {
     */
   object default {
     
-    inline def apply(hasSizeIconColorIconDisabledOnPressAccessibilityLabelRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasSizeIconColorIconDisabledOnPressAccessibilityLabelRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/Appbar/AppbarAction", JSImport.Default)
     @js.native
@@ -103,7 +103,7 @@ object libTypescriptComponentsAppbarAppbarActionMod {
     */
   object AppbarAction {
     
-    inline def apply(hasSizeIconColorIconDisabledOnPressAccessibilityLabelRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasSizeIconColorIconDisabledOnPressAccessibilityLabelRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/Appbar/AppbarAction", "AppbarAction")
     @js.native
@@ -122,7 +122,7 @@ object libTypescriptComponentsAppbarAppbarActionMod {
           ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
         ]) & AccessibilityLabel
       ]) & (js.Function1[
-        /* hasIconCustomColorSizeAccessibilityLabelDisabledOnPressAnimatedThemeStyleRest */ typings.reactNativePaper.libTypescriptComponentsIconButtonMod.Props, 
+        /* param0 */ typings.reactNativePaper.libTypescriptComponentsIconButtonMod.Props, 
         Element
       ]), 
       js.Object

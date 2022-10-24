@@ -33,9 +33,7 @@ object typesUseTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useTooltip[E /* <: HTMLElement */](
-    hasBaseIdPropStyleDescribedByDenseSpacingDenseSpacingDeterminedPositionDefaultPositionVwMarginVhMarginThresholdTouchTimeFocusTimePropOnFocusPropOnBlurPropOnKeyDownOnClickOnMouseEnterOnMouseLeavePropOnTouchStartPropOnContextMenuOnEnterOnEnteringOnEnteredOnExitedDisabledDisableSwappingPropDisableHoverModeDisableAutoSpacing: TooltipHookOptions[E]
-  ): TooltipHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltip")(hasBaseIdPropStyleDescribedByDenseSpacingDenseSpacingDeterminedPositionDefaultPositionVwMarginVhMarginThresholdTouchTimeFocusTimePropOnFocusPropOnBlurPropOnKeyDownOnClickOnMouseEnterOnMouseLeavePropOnTouchStartPropOnContextMenuOnEnterOnEnteringOnEnteredOnExitedDisabledDisableSwappingPropDisableHoverModeDisableAutoSpacing.asInstanceOf[js.Any]).asInstanceOf[TooltipHookReturnValue[E]]
+  inline def useTooltip[E /* <: HTMLElement */](param0: TooltipHookOptions[E]): TooltipHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[TooltipHookReturnValue[E]]
   
   trait BaseTooltipHookOptions[E /* <: HTMLElement */]
     extends StObject

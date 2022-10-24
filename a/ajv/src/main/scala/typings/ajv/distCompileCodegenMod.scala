@@ -248,7 +248,7 @@ object distCompileCodegenMod {
   @js.native
   open class Scope ()
     extends typings.ajv.distCompileCodegenScopeMod.Scope {
-    def this(hasPrefixesParent: ScopeOptions) = this()
+    def this(param0: ScopeOptions) = this()
   }
   
   @JSImport("ajv/dist/compile/codegen", "ValueScope")

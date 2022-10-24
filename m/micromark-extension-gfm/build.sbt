@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "micromark-extension-gfm"
-version := "2.0.1-c698b0"
-scalaVersion := "3.1.2"
+version := "2.0.1-e8682c"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "micromark-extension-gfm-footnote" % "1.0.4-1b0a2d",
-  "org.scalablytyped" %%% "micromark-extension-gfm-strikethrough" % "1.0.4-f6fc30",
-  "org.scalablytyped" %%% "micromark-util-types" % "1.0.2-5edda3",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "micromark-extension-gfm-footnote" % "1.0.4-b79f4b",
+  "org.scalablytyped" %%% "micromark-extension-gfm-strikethrough" % "1.0.4-c13264",
+  "org.scalablytyped" %%% "micromark-util-types" % "1.0.2-bd4ab8",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

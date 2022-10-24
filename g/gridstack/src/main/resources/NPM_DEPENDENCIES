@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gridstack" : "7.0.1"
+      "gridstack" : "7.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gridstack" : "7.0.1"
+      "gridstack" : "7.1.0"
     }
   ],
   "compile-devDependencies" : [

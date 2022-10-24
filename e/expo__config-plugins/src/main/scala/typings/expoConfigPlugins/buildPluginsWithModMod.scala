@@ -14,12 +14,9 @@ object buildPluginsWithModMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def withBaseMod[T](
-    config: ExportedConfig,
-    hasPlatformModActionSkipEmptyModIsProviderIsIntrospectiveSaveToInternal: BaseModOptions & Action[T]
-  ): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withBaseMod")(config.asInstanceOf[js.Any], hasPlatformModActionSkipEmptyModIsProviderIsIntrospectiveSaveToInternal.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withBaseMod[T](config: ExportedConfig, param1: BaseModOptions & Action[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withBaseMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   
-  inline def withMod[T](config: ExportedConfig, hasPlatformModAction: Mod[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withMod")(config.asInstanceOf[js.Any], hasPlatformModAction.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withMod[T](config: ExportedConfig, param1: Mod[T]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withMod")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   
   trait BaseModOptions extends StObject {
     

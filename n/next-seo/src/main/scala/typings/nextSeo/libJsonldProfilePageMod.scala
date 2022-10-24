@@ -12,7 +12,7 @@ object libJsonldProfilePageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideBreadcrumbRest: ProfilePageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideBreadcrumbRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ProfilePageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ProfilePageJsonLdProps
     extends StObject

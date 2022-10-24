@@ -18,7 +18,7 @@ object distDeclarationsSrcComponentsInputMod {
   
   inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: InputProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def inputCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsDisabledValueHasSpacingColors: InputProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("inputCSS")(hasIsDisabledValueHasSpacingColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def inputCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: InputProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("inputCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
   type InputProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] = InputSpecificProps[Option, IsMulti, Group]
   

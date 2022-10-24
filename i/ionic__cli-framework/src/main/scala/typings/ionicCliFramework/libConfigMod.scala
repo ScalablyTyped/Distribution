@@ -12,7 +12,7 @@ object libConfigMod {
   @js.native
   open class BaseConfig[T /* <: js.Object */] protected () extends StObject {
     def this(p: String) = this()
-    def this(p: String, hasSpacesPathPrefix: BaseConfigOptions) = this()
+    def this(p: String, param1: BaseConfigOptions) = this()
     
     /* private */ var _getFile: Any = js.native
     

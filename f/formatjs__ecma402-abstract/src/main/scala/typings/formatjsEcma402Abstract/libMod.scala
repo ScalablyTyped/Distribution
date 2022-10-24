@@ -69,18 +69,18 @@ object libMod {
   inline def CanonicalizeLocaleList(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeLocaleList")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def CanonicalizeLocaleList(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeLocaleList")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def CanonicalizeTimeZoneName(tz: String, hasTzDataUppercaseLinks: TzData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeTimeZoneName")(tz.asInstanceOf[js.Any], hasTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def CanonicalizeTimeZoneName(tz: String, param1: TzData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeTimeZoneName")(tz.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def CoerceOptionsToObject[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("CoerceOptionsToObject")().asInstanceOf[T]
   inline def CoerceOptionsToObject[T](options: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("CoerceOptionsToObject")(options.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def CollapseNumberRange[T](result: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("CollapseNumberRange")(result.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def ComputeExponent(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `0`): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponent")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def ComputeExponent(numberFormat: NumberFormat, x: Double, param2: `0`): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponent")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  inline def ComputeExponentForMagnitude(numberFormat: NumberFormat, magnitude: Double, hasGetInternalSlots: `0`): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponentForMagnitude")(numberFormat.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def ComputeExponentForMagnitude(numberFormat: NumberFormat, magnitude: Double, param2: `0`): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponentForMagnitude")(numberFormat.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def CurrencyDigits(c: String, hasCurrencyDigitsData: CurrencyDigitsData): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CurrencyDigits")(c.asInstanceOf[js.Any], hasCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def CurrencyDigits(c: String, param1: CurrencyDigitsData): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CurrencyDigits")(c.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def DateFromTime(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DateFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
@@ -92,7 +92,7 @@ object libMod {
   
   inline def DaysInYear(y: Double): `365` | `366` = ^.asInstanceOf[js.Dynamic].applyDynamic("DaysInYear")(y.asInstanceOf[js.Any]).asInstanceOf[`365` | `366`]
   
-  inline def FormatApproximately(numberFormat: NumberFormat, result: js.Array[NumberFormatPart], hasGetInternalSlots: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatApproximately")(numberFormat.asInstanceOf[js.Any], result.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
+  inline def FormatApproximately(numberFormat: NumberFormat, result: js.Array[NumberFormatPart], param2: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatApproximately")(numberFormat.asInstanceOf[js.Any], result.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
   inline def FormatNumericToParts(nf: NumberFormat, x: Double, implDetails: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatNumericToParts")(nf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
@@ -272,46 +272,16 @@ object libMod {
   
   inline def InLeapYear(t: Double): typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0` | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("InLeapYear")(t.asInstanceOf[js.Any]).asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0` | `1`]
   
-  inline def InitializeNumberFormat(
-    nf: NumberFormat,
-    locales: String,
-    opts: Unit,
-    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: GetDefaultLocale
-  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  inline def InitializeNumberFormat(
-    nf: NumberFormat,
-    locales: String,
-    opts: NumberFormatOptions,
-    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: GetDefaultLocale
-  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  inline def InitializeNumberFormat(
-    nf: NumberFormat,
-    locales: js.Array[String],
-    opts: Unit,
-    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: GetDefaultLocale
-  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  inline def InitializeNumberFormat(
-    nf: NumberFormat,
-    locales: js.Array[String],
-    opts: NumberFormatOptions,
-    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: GetDefaultLocale
-  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  inline def InitializeNumberFormat(
-    nf: NumberFormat,
-    locales: Unit,
-    opts: Unit,
-    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: GetDefaultLocale
-  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  inline def InitializeNumberFormat(
-    nf: NumberFormat,
-    locales: Unit,
-    opts: NumberFormatOptions,
-    hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: GetDefaultLocale
-  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  inline def InitializeNumberFormat(nf: NumberFormat, locales: String, opts: Unit, param3: GetDefaultLocale): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  inline def InitializeNumberFormat(nf: NumberFormat, locales: String, opts: NumberFormatOptions, param3: GetDefaultLocale): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  inline def InitializeNumberFormat(nf: NumberFormat, locales: js.Array[String], opts: Unit, param3: GetDefaultLocale): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  inline def InitializeNumberFormat(nf: NumberFormat, locales: js.Array[String], opts: NumberFormatOptions, param3: GetDefaultLocale): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  inline def InitializeNumberFormat(nf: NumberFormat, locales: Unit, opts: Unit, param3: GetDefaultLocale): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  inline def InitializeNumberFormat(nf: NumberFormat, locales: Unit, opts: NumberFormatOptions, param3: GetDefaultLocale): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
   
   inline def IsSanctionedSimpleUnitIdentifier(unitIdentifier: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSanctionedSimpleUnitIdentifier")(unitIdentifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def IsValidTimeZoneName(tz: String, hasTzDataUppercaseLinks: TzData): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsValidTimeZoneName")(tz.asInstanceOf[js.Any], hasTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def IsValidTimeZoneName(tz: String, param1: TzData): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsValidTimeZoneName")(tz.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def IsWellFormedCurrencyCode(currency: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsWellFormedCurrencyCode")(currency.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -324,9 +294,9 @@ object libMod {
   inline def OrdinaryHasInstance(C: js.Object, O: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("OrdinaryHasInstance")(C.asInstanceOf[js.Any], O.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def OrdinaryHasInstance(C: js.Object, O: Any, internalSlots: BoundTargetFunction): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("OrdinaryHasInstance")(C.asInstanceOf[js.Any], O.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def PartitionNumberPattern(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `0`): js.Array[typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberPattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatPart]]
+  inline def PartitionNumberPattern(numberFormat: NumberFormat, x: Double, param2: `0`): js.Array[typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberPattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatPart]]
   
-  inline def PartitionNumberRangePattern(numberFormat: NumberFormat, x: Double, y: Double, hasGetInternalSlots: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberRangePattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
+  inline def PartitionNumberRangePattern(numberFormat: NumberFormat, x: Double, y: Double, param3: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberRangePattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
   inline def PartitionPattern[T /* <: String */](pattern: String): js.Array[Type[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("PartitionPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[Type[T]]]
   
@@ -364,8 +334,8 @@ object libMod {
     notation: NumberFormatNotation
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatDigitOptions")(internalSlots.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], mnfdDefault.asInstanceOf[js.Any], mxfdDefault.asInstanceOf[js.Any], notation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def SetNumberFormatUnitOptions(nf: NumberFormat, options: Unit, hasGetInternalSlots: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def SetNumberFormatUnitOptions(nf: NumberFormat, options: NumberFormatOptions, hasGetInternalSlots: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def SetNumberFormatUnitOptions(nf: NumberFormat, options: Unit, param2: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def SetNumberFormatUnitOptions(nf: NumberFormat, options: NumberFormatOptions, param2: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def SupportedLocales(availableLocales: Set[String], requestedLocales: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("SupportedLocales")(availableLocales.asInstanceOf[js.Any], requestedLocales.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def SupportedLocales(availableLocales: Set[String], requestedLocales: js.Array[String], options: LocaleMatcher): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("SupportedLocales")(availableLocales.asInstanceOf[js.Any], requestedLocales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
@@ -394,8 +364,8 @@ object libMod {
   
   inline def YearFromTime(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("YearFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def defineProperty[T /* <: js.Object */](target: T, name: String, hasValue: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], hasValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def defineProperty[T /* <: js.Object */](target: T, name: js.Symbol, hasValue: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], hasValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineProperty[T /* <: js.Object */](target: T, name: String, param2: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineProperty[T /* <: js.Object */](target: T, name: js.Symbol, param2: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def formatToParts(
     numberResult: NumberResult,

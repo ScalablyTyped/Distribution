@@ -14,7 +14,7 @@ object distTs3Dot9MakeDecoratorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def makeDecorator(hasNameParameterNameWrapperSkipIfNoParametersOrOptions: MakeDecoratorOptions): MakeDecoratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDecorator")(hasNameParameterNameWrapperSkipIfNoParametersOrOptions.asInstanceOf[js.Any]).asInstanceOf[MakeDecoratorResult]
+  inline def makeDecorator(param0: MakeDecoratorOptions): MakeDecoratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDecorator")(param0.asInstanceOf[js.Any]).asInstanceOf[MakeDecoratorResult]
   
   trait MakeDecoratorOptions extends StObject {
     

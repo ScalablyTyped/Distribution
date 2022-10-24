@@ -12,7 +12,5 @@ object dataTableDataTableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DataTable(
-    hasBatchActionsColumnsFiltersEmptyMessageLoadingLoadingMessageOnIncludedRowsChangeOnRowHighlightChangeOnSelectManyOnSelectNoneOnSelectOneOnSortResizableColumnWidthsAllRowsRowActionsRowHeightRowHighlightIndexControlledSelectedRowIdsSortIndexSortDirectionTextQueryControlRef: DataTableProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DataTable")(hasBatchActionsColumnsFiltersEmptyMessageLoadingLoadingMessageOnIncludedRowsChangeOnRowHighlightChangeOnSelectManyOnSelectNoneOnSelectOneOnSortResizableColumnWidthsAllRowsRowActionsRowHeightRowHighlightIndexControlledSelectedRowIdsSortIndexSortDirectionTextQueryControlRef.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DataTable(param0: DataTableProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DataTable")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

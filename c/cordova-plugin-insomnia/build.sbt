@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-insomnia"
-version := "v4.0.1-dt-20220818Z-9d4aed"
-scalaVersion := "3.1.2"
+version := "v4.0.1-dt-20220818Z-1e89fc"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

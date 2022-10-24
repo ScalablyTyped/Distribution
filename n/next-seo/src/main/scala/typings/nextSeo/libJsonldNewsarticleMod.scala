@@ -12,9 +12,7 @@ object libJsonldNewsarticleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasTypeKeyOverrideUrlTitleImagesSectionDateCreatedDatePublishedDateModifiedAuthorNamePublisherNamePublisherLogoBodyRest: NewsArticleJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideUrlTitleImagesSectionDateCreatedDatePublishedDateModifiedAuthorNamePublisherNamePublisherLogoBodyRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: NewsArticleJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait NewsArticleJsonLdProps
     extends StObject

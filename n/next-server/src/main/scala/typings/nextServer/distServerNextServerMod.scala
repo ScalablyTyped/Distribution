@@ -16,7 +16,7 @@ object distServerNextServerMod {
   open class default ()
     extends StObject
        with Server {
-    def this(hasDirStaticMarkupQuietConf: ServerConstructor) = this()
+    def this(param0: ServerConstructor) = this()
   }
   
   type NextConfig = Any
@@ -156,14 +156,14 @@ object distServerNextServerMod {
       res: ServerResponse[IncomingMessage],
       pathname: String,
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
-      hasAmphtmlDataOnlyHasAmp: Amphtml
+      param4: Amphtml
     ): js.Promise[String | Null] = js.native
     def renderToHTML(
       req: IncomingMessage,
       res: ServerResponse[IncomingMessage],
       pathname: String,
       query: Unit,
-      hasAmphtmlDataOnlyHasAmp: Amphtml
+      param4: Amphtml
     ): js.Promise[String | Null] = js.native
     
     /* private */ var renderToHTMLWithComponents: Any = js.native

@@ -22,9 +22,9 @@ object distHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createCombinatorAst_space(hasValueTypeStartEnd: CSSSelectorToken & (Token[space | Plussign | Greaterthansign | Tilde])): Combinator = ^.asInstanceOf[js.Dynamic].applyDynamic("createCombinatorAst")(hasValueTypeStartEnd.asInstanceOf[js.Any]).asInstanceOf[Combinator]
+  inline def createCombinatorAst_space(param0: CSSSelectorToken & (Token[space | Plussign | Greaterthansign | Tilde])): Combinator = ^.asInstanceOf[js.Dynamic].applyDynamic("createCombinatorAst")(param0.asInstanceOf[js.Any]).asInstanceOf[Combinator]
   
-  inline def createCommentAst(hasValueStartEnd: CSSSelectorToken): Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommentAst")(hasValueStartEnd.asInstanceOf[js.Any]).asInstanceOf[Comment]
+  inline def createCommentAst(param0: CSSSelectorToken): Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommentAst")(param0.asInstanceOf[js.Any]).asInstanceOf[Comment]
   
   inline def createEmptyNth(): Nth = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyNth")().asInstanceOf[Nth]
   

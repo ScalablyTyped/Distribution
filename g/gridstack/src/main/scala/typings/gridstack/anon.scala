@@ -82,7 +82,7 @@ object anon {
     /** return the closest parent (or itself) matching the given class */
     def closestUpByClass(el: HTMLElement, name: String): HTMLElement = js.native
     
-    /** copies over b size & position (GridStackPosition), and possibly min/max as well */
+    /** copies over b size & position (GridStackPosition), and optionally min/max as well */
     def copyPos(a: GridStackWidget, b: GridStackWidget): GridStackWidget = js.native
     def copyPos(a: GridStackWidget, b: GridStackWidget, doMinMax: Boolean): GridStackWidget = js.native
     
@@ -195,7 +195,7 @@ object anon {
     /** return the closest parent (or itself) matching the given class */
     def closestUpByClass(el: HTMLElement, name: String): HTMLElement = js.native
     
-    /** copies over b size & position (GridStackPosition), and possibly min/max as well */
+    /** copies over b size & position (GridStackPosition), and optionally min/max as well */
     def copyPos(
       a: typings.gridstack.distTypesMod.GridStackWidget,
       b: typings.gridstack.distTypesMod.GridStackWidget

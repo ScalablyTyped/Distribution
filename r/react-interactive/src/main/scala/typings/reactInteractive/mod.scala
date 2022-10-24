@@ -116,7 +116,7 @@ object mod {
     
     var mouseActiveStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var onStateChange: js.UndefOr[js.Function1[/* hasStatePrevState */ InteractiveStateChange, Unit]] = js.undefined
+    var onStateChange: js.UndefOr[js.Function1[/* param0 */ InteractiveStateChange, Unit]] = js.undefined
     
     var touchActiveClassName: js.UndefOr[String] = js.undefined
     
@@ -215,7 +215,7 @@ object mod {
       
       inline def setMouseActiveStyleUndefined: Self = StObject.set(x, "mouseActiveStyle", js.undefined)
       
-      inline def setOnStateChange(value: /* hasStatePrevState */ InteractiveStateChange => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
+      inline def setOnStateChange(value: /* param0 */ InteractiveStateChange => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
       
       inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
       

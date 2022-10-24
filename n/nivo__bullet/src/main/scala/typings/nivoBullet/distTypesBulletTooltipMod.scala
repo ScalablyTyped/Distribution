@@ -12,5 +12,5 @@ object distTypesBulletTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BulletTooltip(hasColorV0V1: BulletTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletTooltip")(hasColorV0V1.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BulletTooltip(param0: BulletTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

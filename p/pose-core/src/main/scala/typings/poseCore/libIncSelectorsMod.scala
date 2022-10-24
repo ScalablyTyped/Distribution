@@ -16,11 +16,9 @@ object libIncSelectorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getPoseValues[A, TD](
-    hasTransitionFlipDelayDelayChildrenStaggerChildrenStaggerDirectionAfterChildrenBeforeChildrenPreTransitionApplyAtStartApplyAtEndProps: Pose[A, TD]
-  ): Pose[A, TD] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPoseValues")(hasTransitionFlipDelayDelayChildrenStaggerChildrenStaggerDirectionAfterChildrenBeforeChildrenPreTransitionApplyAtStartApplyAtEndProps.asInstanceOf[js.Any]).asInstanceOf[Pose[A, TD]]
+  inline def getPoseValues[A, TD](param0: Pose[A, TD]): Pose[A, TD] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPoseValues")(param0.asInstanceOf[js.Any]).asInstanceOf[Pose[A, TD]]
   
   inline def selectAllValues[V](values: Map[String, V], selectValue: SelectValueToRead[V]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectAllValues")(values.asInstanceOf[js.Any], selectValue.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
-  inline def selectPoses[V, A, TD](hasLabelPropsValuesParentValuesAncestorValuesOnChangePassiveInitialPosePoses: PoserConfig[V]): PoseMap[A, TD] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectPoses")(hasLabelPropsValuesParentValuesAncestorValuesOnChangePassiveInitialPosePoses.asInstanceOf[js.Any]).asInstanceOf[PoseMap[A, TD]]
+  inline def selectPoses[V, A, TD](param0: PoserConfig[V]): PoseMap[A, TD] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectPoses")(param0.asInstanceOf[js.Any]).asInstanceOf[PoseMap[A, TD]]
 }

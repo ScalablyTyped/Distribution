@@ -18,7 +18,7 @@ object distDdsketchDdsketchMod {
   open class DDSketch ()
     extends StObject
        with BaseDDSketch {
-    def this(hasRelativeAccuracy: SketchConfig) = this()
+    def this(param0: SketchConfig) = this()
   }
   
   @JSImport("@datadog/sketches-js/dist/ddsketch/DDSketch", "LogCollapsingHighestDenseDDSketch")
@@ -32,7 +32,7 @@ object distDdsketchDdsketchMod {
   open class LogCollapsingHighestDenseDDSketch ()
     extends StObject
        with BaseDDSketch {
-    def this(hasRelativeAccuracyBinLimit: LogCollapsingSketchConfig) = this()
+    def this(param0: LogCollapsingSketchConfig) = this()
   }
   
   @JSImport("@datadog/sketches-js/dist/ddsketch/DDSketch", "LogCollapsingLowestDenseDDSketch")
@@ -46,7 +46,7 @@ object distDdsketchDdsketchMod {
   open class LogCollapsingLowestDenseDDSketch ()
     extends StObject
        with BaseDDSketch {
-    def this(hasRelativeAccuracyBinLimit: LogCollapsingSketchConfig) = this()
+    def this(param0: LogCollapsingSketchConfig) = this()
   }
   
   /** Base class for DDSketch*/

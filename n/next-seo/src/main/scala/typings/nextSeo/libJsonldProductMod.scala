@@ -12,9 +12,7 @@ object libJsonldProductMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasTypeKeyOverrideImagesBrandReviewsAggregateRatingManufacturerLogoManufacturerNameOffersAggregateOfferProductNameRest: ProductJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideImagesBrandReviewsAggregateRatingManufacturerLogoManufacturerNameOffersAggregateOfferProductNameRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ProductJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ProductJsonLdProps
     extends StObject

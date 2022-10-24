@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery-lazyload"
-version := "1.9-dt-20211202Z-9008c8"
-scalaVersion := "3.1.2"
+version := "1.9-dt-20211202Z-e6d375"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

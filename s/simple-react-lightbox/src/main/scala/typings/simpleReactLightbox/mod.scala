@@ -22,9 +22,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildren: Children): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+  inline def default(param0: Children): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
   
-  inline def SRLWrapper(hasOptionsCallbacksElementsChildren: SRLWrapperProps): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SRLWrapper")(hasOptionsCallbacksElementsChildren.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+  inline def SRLWrapper(param0: SRLWrapperProps): typings.react.mod.global.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SRLWrapper")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
   
   inline def useLightbox(): CloseLightbox = ^.asInstanceOf[js.Dynamic].applyDynamic("useLightbox")().asInstanceOf[CloseLightbox]
   
@@ -93,15 +93,13 @@ object mod {
   
   trait Callbacks extends StObject {
     
-    var onCountSlides: js.UndefOr[js.Function1[/* hasTotalSlide */ ReadonlyCallbackCountSlid, Unit]] = js.undefined
+    var onCountSlides: js.UndefOr[js.Function1[/* param0 */ ReadonlyCallbackCountSlid, Unit]] = js.undefined
     
-    var onLightboxClosed: js.UndefOr[js.Function1[/* hasCurrentSlideOpened */ ReadonlyCallbackOpen, Unit]] = js.undefined
+    var onLightboxClosed: js.UndefOr[js.Function1[/* param0 */ ReadonlyCallbackOpen, Unit]] = js.undefined
     
-    var onLightboxOpened: js.UndefOr[js.Function1[/* hasCurrentSlideOpened */ ReadonlyCallbackOpen, Unit]] = js.undefined
+    var onLightboxOpened: js.UndefOr[js.Function1[/* param0 */ ReadonlyCallbackOpen, Unit]] = js.undefined
     
-    var onSlideChange: js.UndefOr[
-        js.Function1[/* hasIndexActionHasPreviousNextCurrent */ ReadonlyCallbackSlideChan, Unit]
-      ] = js.undefined
+    var onSlideChange: js.UndefOr[js.Function1[/* param0 */ ReadonlyCallbackSlideChan, Unit]] = js.undefined
   }
   object Callbacks {
     
@@ -112,19 +110,19 @@ object mod {
     
     extension [Self <: Callbacks](x: Self) {
       
-      inline def setOnCountSlides(value: /* hasTotalSlide */ ReadonlyCallbackCountSlid => Unit): Self = StObject.set(x, "onCountSlides", js.Any.fromFunction1(value))
+      inline def setOnCountSlides(value: /* param0 */ ReadonlyCallbackCountSlid => Unit): Self = StObject.set(x, "onCountSlides", js.Any.fromFunction1(value))
       
       inline def setOnCountSlidesUndefined: Self = StObject.set(x, "onCountSlides", js.undefined)
       
-      inline def setOnLightboxClosed(value: /* hasCurrentSlideOpened */ ReadonlyCallbackOpen => Unit): Self = StObject.set(x, "onLightboxClosed", js.Any.fromFunction1(value))
+      inline def setOnLightboxClosed(value: /* param0 */ ReadonlyCallbackOpen => Unit): Self = StObject.set(x, "onLightboxClosed", js.Any.fromFunction1(value))
       
       inline def setOnLightboxClosedUndefined: Self = StObject.set(x, "onLightboxClosed", js.undefined)
       
-      inline def setOnLightboxOpened(value: /* hasCurrentSlideOpened */ ReadonlyCallbackOpen => Unit): Self = StObject.set(x, "onLightboxOpened", js.Any.fromFunction1(value))
+      inline def setOnLightboxOpened(value: /* param0 */ ReadonlyCallbackOpen => Unit): Self = StObject.set(x, "onLightboxOpened", js.Any.fromFunction1(value))
       
       inline def setOnLightboxOpenedUndefined: Self = StObject.set(x, "onLightboxOpened", js.undefined)
       
-      inline def setOnSlideChange(value: /* hasIndexActionHasPreviousNextCurrent */ ReadonlyCallbackSlideChan => Unit): Self = StObject.set(x, "onSlideChange", js.Any.fromFunction1(value))
+      inline def setOnSlideChange(value: /* param0 */ ReadonlyCallbackSlideChan => Unit): Self = StObject.set(x, "onSlideChange", js.Any.fromFunction1(value))
       
       inline def setOnSlideChangeUndefined: Self = StObject.set(x, "onSlideChange", js.undefined)
     }

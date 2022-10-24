@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ungap__global-this"
-version := "0.3-dt-20211202Z-897a75"
-scalaVersion := "3.1.2"
+version := "0.3-dt-20211202Z-1342d9"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

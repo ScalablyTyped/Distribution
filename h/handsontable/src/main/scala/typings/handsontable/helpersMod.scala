@@ -331,7 +331,7 @@ object helpersMod {
   inline def isIOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[Boolean]
   
   inline def isIpadOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIpadOS")().asInstanceOf[Boolean]
-  inline def isIpadOS(hasMaxTouchPoints: MaxTouchPoints): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIpadOS")(hasMaxTouchPoints.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIpadOS(param0: MaxTouchPoints): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIpadOS")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isKey(keyCode: Double, baseCode: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(keyCode.asInstanceOf[js.Any], baseCode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -400,10 +400,10 @@ object helpersMod {
   inline def sanitize(string: String, options: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def setBrowserMeta(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBrowserMeta")().asInstanceOf[Unit]
-  inline def setBrowserMeta(hasUserAgentVendor: UserAgent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBrowserMeta")(hasUserAgentVendor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBrowserMeta(param0: UserAgent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBrowserMeta")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setPlatformMeta(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPlatformMeta")().asInstanceOf[Unit]
-  inline def setPlatformMeta(hasPlatform: Platform): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPlatformMeta")(hasPlatform.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPlatformMeta(param0: Platform): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPlatformMeta")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setProperty(`object`: js.Object, name: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperty")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

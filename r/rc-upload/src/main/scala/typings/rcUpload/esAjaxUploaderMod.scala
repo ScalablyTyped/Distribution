@@ -49,7 +49,7 @@ object esAjaxUploaderMod {
     
     def onKeyDown(e: KeyboardEvent[HTMLDivElement]): Unit = js.native
     
-    def post(hasDataOriginActionParsedFile: ParsedFileInfo): Unit = js.native
+    def post(param0: ParsedFileInfo): Unit = js.native
     
     /**
       * Process file before upload. When all the file is ready, we start upload.

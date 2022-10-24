@@ -24,9 +24,7 @@ object distTileSrcTileGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerTileGroup(
-    hasValueDefaultValueSelectionModeRowSizeOnChangeOrientationDisabledChildrenForwardedRefRest: InnerTileGroupProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTileGroup")(hasValueDefaultValueSelectionModeRowSizeOnChangeOrientationDisabledChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTileGroup(param0: InnerTileGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTileGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/tile/src/TileGroup", "TileGroup")
   @js.native

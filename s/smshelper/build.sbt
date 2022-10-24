@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "smshelper"
-version := "0.1-dt-20211202Z-3bc3f1"
-scalaVersion := "3.1.2"
+version := "0.1-dt-20211202Z-c90f4a"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

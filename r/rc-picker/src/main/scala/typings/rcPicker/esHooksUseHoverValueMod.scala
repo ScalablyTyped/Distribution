@@ -11,11 +11,11 @@ object esHooksUseHoverValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[DateType](valueText: String, hasFormatListGenerateConfigLocale: ValueTextConfig[DateType]): js.Tuple3[
+  inline def default[DateType](valueText: String, param1: ValueTextConfig[DateType]): js.Tuple3[
     String, 
     js.Function1[/* date */ DateType, Unit], 
     js.Function1[/* immediately */ js.UndefOr[Boolean], Unit]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(valueText.asInstanceOf[js.Any], hasFormatListGenerateConfigLocale.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(valueText.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
     String, 
     js.Function1[/* date */ DateType, Unit], 
     js.Function1[/* immediately */ js.UndefOr[Boolean], Unit]

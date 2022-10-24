@@ -1,33 +1,39 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DisabledId extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: Any
   
-  var id: String | Double
+  var id: Any
   
-  def value(data: Partialselectedboolean): ReactNode
+  var overrideOptionStyle: Boolean
+  
+  def value(param0: Hovered): typings.react.mod.global.JSX.Element
 }
 object DisabledId {
   
-  inline def apply(id: String | Double, value: Partialselectedboolean => ReactNode): DisabledId = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = js.Any.fromFunction1(value))
+  inline def apply(
+    disabled: Any,
+    id: Any,
+    overrideOptionStyle: Boolean,
+    value: Hovered => typings.react.mod.global.JSX.Element
+  ): DisabledId = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], overrideOptionStyle = overrideOptionStyle.asInstanceOf[js.Any], value = js.Any.fromFunction1(value))
     __obj.asInstanceOf[DisabledId]
   }
   
   extension [Self <: DisabledId](x: Self) {
     
-    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Any): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setOverrideOptionStyle(value: Boolean): Self = StObject.set(x, "overrideOptionStyle", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: Partialselectedboolean => ReactNode): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+    inline def setValue(value: Hovered => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

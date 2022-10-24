@@ -53,7 +53,7 @@ object distSrcUtilsPermanentUserDataMod {
       * @param {function(Transaction, DeleteSet):boolean} [conf.filter]
       */
     def setUserMapping(doc: Doc, clientid: Double, userDescription: String): Unit = js.native
-    def setUserMapping(doc: Doc, clientid: Double, userDescription: String, hasFilter: Filter): Unit = js.native
+    def setUserMapping(doc: Doc, clientid: Double, userDescription: String, param3: Filter): Unit = js.native
     
     var yusers: YMap[Any] = js.native
   }

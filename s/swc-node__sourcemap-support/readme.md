@@ -1,7 +1,7 @@
 
 # Scala.js typings for swc-node__sourcemap-support
 
-Typings are for version 0.2.0
+Typings are for version 0.2.2
 
 ## Library description:
 Runtime sourcemap support in NodeJS

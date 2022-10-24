@@ -16,7 +16,7 @@ object distSrcModulesUiControlsFullScreenFullScreenMod {
   open class default protected ()
     extends StObject
        with FullScreenControl {
-    def this(hasEventEmitterFullScreenManagerTextMapTooltipServiceTheme: FullScreenManager) = this()
+    def this(param0: FullScreenManager) = this()
     
     /* private */ /* CompleteClass */
     var _bindCallbacks: Any = js.native

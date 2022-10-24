@@ -172,7 +172,7 @@ object distTypesPropsMod {
     def reverse: Boolean = js.native
     inline def reverse_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reverse")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum](hasColorLabelData: BarTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasColorLabelData.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum](param0: BarTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def tooltipLabel[RawDatum_1](datum: ComputedDatum[RawDatum_1]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltipLabel")(datum.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -324,7 +324,7 @@ object distTypesPropsMod {
     def reverse: Boolean = js.native
     inline def reverse_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reverse")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum](hasColorLabelData: BarTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasColorLabelData.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum](param0: BarTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def tooltipLabel[RawDatum_1](datum: ComputedDatum[RawDatum_1]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltipLabel")(datum.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -350,9 +350,7 @@ object distTypesPropsMod {
     def annotations: js.Array[scala.Nothing] = js.native
     inline def annotations_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("annotations")(x.asInstanceOf[js.Any])
     
-    inline def barComponent[RawDatum /* <: BarDatum */](
-      hasHasDataBarHasBorderColorColorHeightLabelColorLabelOpacityLabelXLabelYTransformWidthBorderRadiusBorderWidthLabelShouldRenderLabelIsInteractiveOnClickOnMouseEnterOnMouseLeaveTooltipIsFocusableAriaLabelAriaLabelledByAriaDescribedBy: BarItemProps[RawDatum]
-    ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("barComponent")(hasHasDataBarHasBorderColorColorHeightLabelColorLabelOpacityLabelXLabelYTransformWidthBorderRadiusBorderWidthLabelShouldRenderLabelIsInteractiveOnClickOnMouseEnterOnMouseLeaveTooltipIsFocusableAriaLabelAriaLabelledByAriaDescribedBy.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def barComponent[RawDatum /* <: BarDatum */](param0: BarItemProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("barComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/bar/dist/types/props", "svgDefaultProps.borderColor")
     @js.native
@@ -515,7 +513,7 @@ object distTypesPropsMod {
     def role: String = js.native
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum](hasColorLabelData: BarTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasColorLabelData.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum](param0: BarTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def tooltipLabel[RawDatum_1](datum: ComputedDatum[RawDatum_1]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltipLabel")(datum.asInstanceOf[js.Any]).asInstanceOf[String]
     

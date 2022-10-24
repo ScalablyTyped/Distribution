@@ -13,7 +13,7 @@ object libTypescriptComponentsFabAnimatedFABUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getCombinedStyles(hasIsAnimatedFromRightIsIconStaticDistanceAnimFAB: GetCombinedStylesProps): CombinedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCombinedStyles")(hasIsAnimatedFromRightIsIconStaticDistanceAnimFAB.asInstanceOf[js.Any]).asInstanceOf[CombinedStyles]
+  inline def getCombinedStyles(param0: GetCombinedStylesProps): CombinedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCombinedStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[CombinedStyles]
   
   trait CombinedStyles extends StObject {
     

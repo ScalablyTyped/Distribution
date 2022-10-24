@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "coinify__currency"
-version := "1.3-dt-20220413Z-eff607"
-scalaVersion := "3.1.2"
+version := "1.3-dt-20220413Z-8aafbb"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

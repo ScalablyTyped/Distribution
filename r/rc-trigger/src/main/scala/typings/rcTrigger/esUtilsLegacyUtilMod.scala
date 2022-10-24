@@ -13,7 +13,7 @@ object esUtilsLegacyUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getMotion(hasPrefixClsMotionAnimationTransitionName: GetMotionProps): CSSMotionProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getMotion")(hasPrefixClsMotionAnimationTransitionName.asInstanceOf[js.Any]).asInstanceOf[CSSMotionProps]
+  inline def getMotion(param0: GetMotionProps): CSSMotionProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getMotion")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSMotionProps]
   
   trait GetMotionProps extends StObject {
     

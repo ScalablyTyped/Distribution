@@ -12,5 +12,5 @@ object distSrcGetSpawnOptsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getSpawnOpts(hasColorSupportCwdProcessRawEnv: ColorSupport): SpawnOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpawnOpts")(hasColorSupportCwdProcessRawEnv.asInstanceOf[js.Any]).asInstanceOf[SpawnOptions]
+  inline def getSpawnOpts(param0: ColorSupport): SpawnOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpawnOpts")(param0.asInstanceOf[js.Any]).asInstanceOf[SpawnOptions]
 }

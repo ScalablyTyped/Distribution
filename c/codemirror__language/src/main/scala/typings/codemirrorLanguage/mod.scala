@@ -464,7 +464,7 @@ object mod {
   `units` option.
   */
   inline def continuedIndent(): js.Function1[/* context */ TreeIndentContext, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("continuedIndent")().asInstanceOf[js.Function1[/* context */ TreeIndentContext, Double]]
-  inline def continuedIndent(hasExceptUnits: Except): js.Function1[/* context */ TreeIndentContext, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("continuedIndent")(hasExceptUnits.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* context */ TreeIndentContext, Double]]
+  inline def continuedIndent(param0: Except): js.Function1[/* context */ TreeIndentContext, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("continuedIndent")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* context */ TreeIndentContext, Double]]
   
   /**
   A default highlight style (works well with light themes).
@@ -494,7 +494,7 @@ object mod {
     foo(bar,
     baz)
   */
-  inline def delimitedIndent(hasClosingAlignUnits: Align): js.Function1[/* context */ TreeIndentContext, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("delimitedIndent")(hasClosingAlignUnits.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* context */ TreeIndentContext, Double]]
+  inline def delimitedIndent(param0: Align): js.Function1[/* context */ TreeIndentContext, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("delimitedIndent")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* context */ TreeIndentContext, Double]]
   
   /**
   Try to get a parse tree that spans at least up to `upto`. The

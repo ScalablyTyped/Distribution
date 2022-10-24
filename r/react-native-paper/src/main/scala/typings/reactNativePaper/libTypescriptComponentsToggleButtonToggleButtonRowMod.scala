@@ -41,7 +41,7 @@ object libTypescriptComponentsToggleButtonToggleButtonRowMod {
     */
   object default {
     
-    inline def apply(hasValueOnValueChangeChildrenStyle: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasValueOnValueChangeChildrenStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/ToggleButton/ToggleButtonRow", JSImport.Default)
     @js.native
@@ -84,7 +84,7 @@ object libTypescriptComponentsToggleButtonToggleButtonRowMod {
     */
   object ToggleButtonRow {
     
-    inline def apply(hasValueOnValueChangeChildrenStyle: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasValueOnValueChangeChildrenStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/ToggleButton/ToggleButtonRow", "ToggleButtonRow")
     @js.native

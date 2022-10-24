@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "electron-is-accelerator"
-version := "0.2.0-2d3bd9"
-scalaVersion := "3.1.2"
+version := "0.2.0-c6a5ae"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

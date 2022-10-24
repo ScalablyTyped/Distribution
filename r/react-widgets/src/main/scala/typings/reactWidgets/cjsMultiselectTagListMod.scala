@@ -21,9 +21,7 @@ object cjsMultiselectTagListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[TDataItem](
-    hasIdValueTextAccessorLabelDisabledReadOnlyOnDeleteChildrenClearTagIconRenderTagValueTagOption: MultiselectTagListProps[TDataItem]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIdValueTextAccessorLabelDisabledReadOnlyOnDeleteChildrenClearTagIconRenderTagValueTagOption.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[TDataItem](param0: MultiselectTagListProps[TDataItem]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait MultiselectTagListProps[TDataItem] extends StObject {
     

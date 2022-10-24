@@ -16,9 +16,9 @@ object mod {
   
   inline def addChecksumHeaders(Sha256: HashConstructor, fromUtf8: Decoder): js.Function1[
     /* next */ BuildHandler[Any, Any], 
-    js.Function1[/* hasHasBodyHeadersRequestRestRest */ BuildHandlerArguments[Any], js.Promise[Any]]
+    js.Function1[/* param0 */ BuildHandlerArguments[Any], js.Promise[Any]]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("addChecksumHeaders")(Sha256.asInstanceOf[js.Any], fromUtf8.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* next */ BuildHandler[Any, Any], 
-    js.Function1[/* hasHasBodyHeadersRequestRestRest */ BuildHandlerArguments[Any], js.Promise[Any]]
+    js.Function1[/* param0 */ BuildHandlerArguments[Any], js.Promise[Any]]
   ]]
 }

@@ -12,9 +12,9 @@ object distMatlabRgb2grayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def rgb2gray(hasDWidthHeight: ImageData): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-  inline def rgb2gray(hasDWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def rgb2gray(param0: ImageData): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(param0.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def rgb2gray(param0: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2gray")(param0.asInstanceOf[js.Any]).asInstanceOf[Matrix]
   
-  inline def rgb2grayInteger(hasDWidthHeight: ImageData): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2grayInteger")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-  inline def rgb2grayInteger(hasDWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2grayInteger")(hasDWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def rgb2grayInteger(param0: ImageData): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2grayInteger")(param0.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def rgb2grayInteger(param0: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2grayInteger")(param0.asInstanceOf[js.Any]).asInstanceOf[Matrix]
 }

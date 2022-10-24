@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofCONFIGSET extends StObject {
   
   def transformArguments(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasParameterOrConfigValue because its type SingleParameter | MultipleParameters is not an array type */ hasParameterOrConfigValue: MultipleParameters
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type SingleParameter | MultipleParameters is not an array type */ param0: MultipleParameters
   ): RedisCommandArguments = js.native
   def transformArguments(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasParameterOrConfigValue because its type SingleParameter | MultipleParameters is not an array type */ hasParameterOrConfigValue: SingleParameter
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type SingleParameter | MultipleParameters is not an array type */ param0: SingleParameter
   ): RedisCommandArguments = js.native
   
   def transformReply(): String = js.native

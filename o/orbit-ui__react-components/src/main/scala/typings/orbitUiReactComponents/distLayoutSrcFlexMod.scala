@@ -57,9 +57,7 @@ object distLayoutSrcFlexMod {
   @js.native
   val Flex: OrbitComponent[HTMLElement, InnerFlexProps] = js.native
   
-  inline def InnerFlex(
-    hasDirectionInlineReverseAlignContentAlignItemsJustifyContentGapWrapFluidHasWidthHeightStyleChildrenForwardedRefRest: InnerFlexProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFlex")(hasDirectionInlineReverseAlignContentAlignItemsJustifyContentGapWrapFluidHasWidthHeightStyleChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerFlex(param0: InnerFlexProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFlex")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type FlexProps = ComponentProps[OrbitComponent[HTMLElement, InnerFlexProps]]
   

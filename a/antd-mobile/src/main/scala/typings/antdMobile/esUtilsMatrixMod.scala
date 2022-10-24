@@ -10,7 +10,7 @@ object esUtilsMatrixMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def apply(m: Matrix, hasOxOy: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(m.asInstanceOf[js.Any], hasOxOy.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def apply(m: Matrix, param1: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(m.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
   inline def create(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Matrix]
   

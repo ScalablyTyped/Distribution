@@ -9,13 +9,13 @@ object mod {
   @JSImport("@storybook/channels", JSImport.Default)
   @js.native
   open class default () extends Channel {
-    def this(hasTransportAsync: ChannelArgs) = this()
+    def this(param0: ChannelArgs) = this()
   }
   
   @JSImport("@storybook/channels", "Channel")
   @js.native
   open class Channel () extends StObject {
-    def this(hasTransportAsync: ChannelArgs) = this()
+    def this(param0: ChannelArgs) = this()
     
     def addListener(eventName: String, listener: Listener): Unit = js.native
     

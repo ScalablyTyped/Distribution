@@ -20,9 +20,7 @@ object distFormikMod {
   
   inline def prepareDataForValidation[T /* <: FormikValues */](values: T): FormikValues = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareDataForValidation")(values.asInstanceOf[js.Any]).asInstanceOf[FormikValues]
   
-  inline def useFormik[Values /* <: FormikValues */](
-    hasValidateOnChangeValidateOnBlurValidateOnMountIsInitialValidEnableReinitializeOnSubmitRest: FormikConfig[Values]
-  ): Dirty[Values] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormik")(hasValidateOnChangeValidateOnBlurValidateOnMountIsInitialValidEnableReinitializeOnSubmitRest.asInstanceOf[js.Any]).asInstanceOf[Dirty[Values]]
+  inline def useFormik[Values /* <: FormikValues */](param0: FormikConfig[Values]): Dirty[Values] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormik")(param0.asInstanceOf[js.Any]).asInstanceOf[Dirty[Values]]
   
   inline def validateYupSchema[T /* <: FormikValues */](values: T, schema: Any): js.Promise[Partial[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateYupSchema")(values.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Partial[T]]]
   inline def validateYupSchema[T /* <: FormikValues */](values: T, schema: Any, sync: Boolean): js.Promise[Partial[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateYupSchema")(values.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], sync.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Partial[T]]]

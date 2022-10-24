@@ -10,12 +10,12 @@ object mod {
   
   inline def apply(coords: String): CoordsObject = ^.asInstanceOf[js.Dynamic].apply(coords.asInstanceOf[js.Any]).asInstanceOf[CoordsObject]
   inline def apply(coords: Lat): CoordsObject = ^.asInstanceOf[js.Dynamic].apply(coords.asInstanceOf[js.Any]).asInstanceOf[CoordsObject]
-  inline def apply(hasLatLon: js.Tuple2[Double, Double]): CoordsObject = ^.asInstanceOf[js.Dynamic].apply(hasLatLon.asInstanceOf[js.Any]).asInstanceOf[CoordsObject]
-  inline def apply(hasLatLon: js.Tuple2[Double, Double], latlonSwapped: Boolean): CoordsObject = (^.asInstanceOf[js.Dynamic].apply(hasLatLon.asInstanceOf[js.Any], latlonSwapped.asInstanceOf[js.Any])).asInstanceOf[CoordsObject]
   inline def apply(lat: Double): CoordsObject = ^.asInstanceOf[js.Dynamic].apply(lat.asInstanceOf[js.Any]).asInstanceOf[CoordsObject]
   inline def apply(lat: Double, lon: Double): CoordsObject = (^.asInstanceOf[js.Dynamic].apply(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[CoordsObject]
   inline def apply(lat: Double, lon: Double, latlonSwapped: Boolean): CoordsObject = (^.asInstanceOf[js.Dynamic].apply(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], latlonSwapped.asInstanceOf[js.Any])).asInstanceOf[CoordsObject]
   inline def apply(lat: Double, lon: Unit, latlonSwapped: Boolean): CoordsObject = (^.asInstanceOf[js.Dynamic].apply(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any], latlonSwapped.asInstanceOf[js.Any])).asInstanceOf[CoordsObject]
+  inline def apply(param0: js.Tuple2[Double, Double]): CoordsObject = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[CoordsObject]
+  inline def apply(param0: js.Tuple2[Double, Double], latlonSwapped: Boolean): CoordsObject = (^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any], latlonSwapped.asInstanceOf[js.Any])).asInstanceOf[CoordsObject]
   
   @JSImport("formatcoords", JSImport.Namespace)
   @js.native

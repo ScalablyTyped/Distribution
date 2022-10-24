@@ -28,13 +28,13 @@ object typesSrcDisplayDisplayUtilsMod {
   @JSImport("pdfjs-dist/types/src/display/display_utils", "DOMCMapReaderFactory")
   @js.native
   open class DOMCMapReaderFactory protected () extends BaseCMapReaderFactory {
-    def this(hasBaseUrlIsCompressed: BaseUrl) = this()
+    def this(param0: BaseUrl) = this()
   }
   
   @JSImport("pdfjs-dist/types/src/display/display_utils", "DOMCanvasFactory")
   @js.native
   open class DOMCanvasFactory () extends BaseCanvasFactory {
-    def this(hasOwnerDocument: OwnerDocument) = this()
+    def this(param0: OwnerDocument) = this()
     
     var _document: Document = js.native
   }
@@ -46,7 +46,7 @@ object typesSrcDisplayDisplayUtilsMod {
   @JSImport("pdfjs-dist/types/src/display/display_utils", "DOMStandardFontDataFactory")
   @js.native
   open class DOMStandardFontDataFactory protected () extends BaseStandardFontDataFactory {
-    def this(hasBaseUrl: `0`) = this()
+    def this(param0: `0`) = this()
   }
   
   @JSImport("pdfjs-dist/types/src/display/display_utils", "PDFDateString")
@@ -84,9 +84,9 @@ object typesSrcDisplayDisplayUtilsMod {
     /**
       * @param {PageViewportParameters}
       */
-    def this(hasViewBoxScaleRotationOffsetXOffsetYDontFlip: PageViewportParameters) = this()
+    def this(param0: PageViewportParameters) = this()
     
-    def clone(hasScaleRotationOffsetXOffsetYDontFlip: PageViewportCloneParameters): PageViewport = js.native
+    def clone(param0: PageViewportCloneParameters): PageViewport = js.native
     
     /**
       * Converts viewport coordinates to the PDF location. For examples, useful
@@ -202,7 +202,7 @@ object typesSrcDisplayDisplayUtilsMod {
   
   inline def getRGB(color: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRGB")(color.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getXfaPageViewport(xfaPage: Any, hasScaleRotation: Rotation): PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], hasScaleRotation.asInstanceOf[js.Any])).asInstanceOf[PageViewport]
+  inline def getXfaPageViewport(xfaPage: Any, param1: Rotation): PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[PageViewport]
   
   inline def isDataScheme(url: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataScheme")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

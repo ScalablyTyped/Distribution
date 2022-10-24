@@ -20,11 +20,11 @@ object esConnectMapStateToPropsMod {
   
   inline def mapStateToPropsFactory[TStateProps, TOwnProps, State](mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State]): (js.Function1[/* dispatch */ Dispatch[AnyAction], Call]) | (js.Function2[
     /* dispatch */ Dispatch[Action[Any] | AnyAction], 
-    (/* hasDisplayName */ DisplayName) | (/* options */ WrappedComponentName), 
+    (/* param1 */ DisplayName) | (/* options */ WrappedComponentName), 
     MapToProps | scala.Nothing
   ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("mapStateToPropsFactory")(mapStateToProps.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* dispatch */ Dispatch[AnyAction], Call]) | (js.Function2[
     /* dispatch */ Dispatch[Action[Any] | AnyAction], 
-    (/* hasDisplayName */ DisplayName) | (/* options */ WrappedComponentName), 
+    (/* param1 */ DisplayName) | (/* options */ WrappedComponentName), 
     MapToProps | scala.Nothing
   ])]
 }

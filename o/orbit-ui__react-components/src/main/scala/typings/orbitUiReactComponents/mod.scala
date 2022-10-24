@@ -420,7 +420,7 @@ object mod {
   @js.native
   val ChevronIcon32: OrbitComponent[svg, OmitInnerIconPropssrc] = js.native
   
-  inline def ClearFieldContext(hasChildren: ClearFieldContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearFieldContext")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ClearFieldContext(param0: ClearFieldContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearFieldContext")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components", "ClearFilterIcon")
   @js.native
@@ -434,9 +434,9 @@ object mod {
   @js.native
   val ClearFilterIcon32: OrbitComponent[svg, OmitInnerIconPropssrc] = js.native
   
-  inline def ClearInputGroupContext(hasChildren: ClearInputGroupContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearInputGroupContext")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ClearInputGroupContext(param0: ClearInputGroupContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearInputGroupContext")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ClearToolbar(hasChildren: ClearToolbarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearToolbar")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ClearToolbar(param0: ClearToolbarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearToolbar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components", "CollectionBuilder")
   @js.native
@@ -572,7 +572,7 @@ object mod {
   open class ElementIterator[T] protected ()
     extends typings.orbitUiReactComponents.distSharedMod.ElementIterator[T] {
     def this(elements: js.Array[T]) = this()
-    def this(elements: js.Array[T], hasFrom: From) = this()
+    def this(elements: js.Array[T], param1: From) = this()
   }
   
   @JSImport("@orbit-ui/react-components", "EmailIcon")
@@ -601,7 +601,7 @@ object mod {
   
   object EmbeddedIcon {
     
-    inline def apply(hasSizeChildrenRest: EmbeddedIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasSizeChildrenRest.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(param0: EmbeddedIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@orbit-ui/react-components", "EmbeddedIcon")
     @js.native
@@ -688,7 +688,7 @@ object mod {
     def this(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope) = this()
     def this(
       scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
-      hasIsVirtualKeyPropOnFocus: FocusManagerOptions
+      param1: FocusManagerOptions
     ) = this()
   }
   
@@ -838,7 +838,7 @@ object mod {
   
   object HiddenAutocomplete {
     
-    inline def apply(hasNameValueRequiredValidationStateRest: HiddenAutocompleteProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasNameValueRequiredValidationStateRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: HiddenAutocompleteProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@orbit-ui/react-components", "HiddenAutocomplete")
     @js.native
@@ -852,7 +852,7 @@ object mod {
   
   object HiddenSelect {
     
-    inline def apply(hasNameSelectedKeyRequiredValidationStateRest: HiddenSelectProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasNameSelectedKeyRequiredValidationStateRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: HiddenSelectProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@orbit-ui/react-components", "HiddenSelect")
     @js.native
@@ -928,27 +928,23 @@ object mod {
   @js.native
   val Inline: OrbitComponent[HTMLElement, InnerInlineProps] = js.native
   
-  inline def InnerAccordion(
-    hasIdExpandedKeysPropDefaultExpandedKeysOnExpansionChangeExpansionModeAutoFocusVariantAsChildrenForwardedRefRest: InnerAccordionProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAccordion")(hasIdExpandedKeysPropDefaultExpandedKeysOnExpansionChangeExpansionModeAutoFocusVariantAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAccordion(param0: InnerAccordionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAccordion")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerAccordionHeader(props: InnerAccordionHeaderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAccordionHeader")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerAccordionPanel(props: InnerAccordionPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAccordionPanel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerAlert(
-    hasVariantPrimaryButtonLabelPrimaryButtonDisabledSecondaryButtonLabelSecondaryButtonDisabledCancelButtonLabelAutoFocusButtonOnPrimaryButtonClickOnSecondaryButtonClickOnCancelButtonClickZIndexChildrenForwardedRefRest: InnerAlertProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlert")(hasVariantPrimaryButtonLabelPrimaryButtonDisabledSecondaryButtonLabelSecondaryButtonDisabledCancelButtonLabelAutoFocusButtonOnPrimaryButtonClickOnSecondaryButtonClickOnCancelButtonClickZIndexChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAlert(param0: InnerAlertProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlert")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerAlertTrigger(hasForwardedRefRest: InnerAlertTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlertTrigger")(hasForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAlertTrigger(param0: InnerAlertTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlertTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerAutocomplete(props: InnerAutocompleteProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAutocomplete")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerAvatar(hasNameSrcRetryCountSizeAriaLabelAsForwardedRefRest: InnerAvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAvatar")(hasNameSrcRetryCountSizeAriaLabelAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAvatar(param0: InnerAvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAvatar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerAvatarGroup(hasSizeAsChildrenForwardedRefRest: InnerAvatarGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAvatarGroup")(hasSizeAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAvatarGroup(param0: InnerAvatarGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAvatarGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerBadge(hasVariantOverlapAsChildrenForwardedRefRest: InnerBadgeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerBadge")(hasVariantOverlapAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerBadge(param0: InnerBadgeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerBadge")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerBox(props: InnerBoxProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerBox")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -956,37 +952,31 @@ object mod {
   
   inline def InnerButtonGroup(props: InnerButtonGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerButtonGroup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerCard(hasOrientationSizeFluidAsChildrenForwardedRefRest: InnerCardProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCard")(hasOrientationSizeFluidAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerCard(param0: InnerCardProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCard")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerCheckbox(props: InnerCheckboxProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCheckbox")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerCheckboxGroup(props: InnerCheckboxGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCheckboxGroup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerContent(hasAsChildrenForwardedRefRest: InnerContentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerContent")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerContent(param0: InnerContentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerContent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerCounter(props: InnerCounterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCounter")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerCrossButton(hasForwardedRefRest: InnerCrossButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCrossButton")(hasForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerCrossButton(param0: InnerCrossButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCrossButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerDateInput(
-    hasValuePropDefaultValuePlaceholderOnDateChangePresetsPresetsVariantFluidWrapperPropsDisabledReadOnlyClassNameStyleAsForwardedRefRest: InnerDateInputProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDateInput")(hasValuePropDefaultValuePlaceholderOnDateChangePresetsPresetsVariantFluidWrapperPropsDisabledReadOnlyClassNameStyleAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDateInput(param0: InnerDateInputProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDateInput")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerDateRangeInput(props: InnerDateRangeInputProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDateRangeInput")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerDialog(
-    hasIdRoleSizeDismissableFocusZIndexAriaLabelAriaLabelledByAriaDescribedByWrapperPropsAsChildrenForwardedRefRest: InnerDialogProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialog")(hasIdRoleSizeDismissableFocusZIndexAriaLabelAriaLabelledByAriaDescribedByWrapperPropsAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDialog(param0: InnerDialogProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialog")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerDialogTrigger(
-    hasOpenPropDefaultOpenOnOpenChangeDismissableZIndexAsChildrenForwardedRefRest: InnerDialogTriggerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialogTrigger")(hasOpenPropDefaultOpenOnOpenChangeDismissableZIndexAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDialogTrigger(param0: InnerDialogTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialogTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerDisclosure(hasIdOpenDefaultOpenOnOpenChangeAsChildrenForwardedRefRest: InnerDisclosureProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDisclosure")(hasIdOpenDefaultOpenOnOpenChangeAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDisclosure(param0: InnerDisclosureProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDisclosure")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerDisclosureArrow(hasOpenForwardedRefRest: InnerDisclosureArrowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDisclosureArrow")(hasOpenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDisclosureArrow(param0: InnerDisclosureArrowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDisclosureArrow")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerDivider(hasOrientationAsChildrenForwardedRefRest: InnerDividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDivider")(hasOrientationAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDivider(param0: InnerDividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDivider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerDot(props: InnerDotProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDot")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -994,21 +984,19 @@ object mod {
   
   inline def InnerField(props: InnerFieldProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerField")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerFieldset(hasIdLabelAsChildrenForwardedRefRest: InnerFieldsetProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFieldset")(hasIdLabelAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerFieldset(param0: InnerFieldsetProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFieldset")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerFlex(
-    hasDirectionInlineReverseAlignContentAlignItemsJustifyContentGapWrapFluidHasWidthHeightStyleChildrenForwardedRefRest: InnerFlexProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFlex")(hasDirectionInlineReverseAlignContentAlignItemsJustifyContentGapWrapFluidHasWidthHeightStyleChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerFlex(param0: InnerFlexProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFlex")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerFooter(hasAsChildrenForwardedRefRest: InnerFooterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFooter")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerFooter(param0: InnerFooterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFooter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerForm(props: InnerFormProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerForm")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerGroup(hasOrientationAlignVerticalAlignWrapChildrenForwardedRefRest: InnerGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerGroup")(hasOrientationAlignVerticalAlignWrapChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerGroup(param0: InnerGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerGroupField(props: InnerGroupFieldProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerGroupField")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerHeader(hasAsChildrenForwardedRefRest: InnerHeaderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerHeader")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerHeader(param0: InnerHeaderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerHeader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerHeading(props: InnerHeadingProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerHeading")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -1020,15 +1008,15 @@ object mod {
   
   inline def InnerIconLink(props: InnerIconLinkProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIconLink")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerIconList(hasSizeDisabledChildrenAsForwardedRefRest: InnerIconListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIconList")(hasSizeDisabledChildrenAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerIconList(param0: InnerIconListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIconList")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerIllustration(hasOrientationShapeColorAsChildrenForwardedRefRest: InnerIllustrationProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIllustration")(hasOrientationShapeColorAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerIllustration(param0: InnerIllustrationProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIllustration")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerImage(hasShapeSizeWidthHeightFitPositionAsForwardedRefRest: InnerImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerImage")(hasShapeSizeWidthHeightFitPositionAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerImage(param0: InnerImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerImage")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerInline(hasAlignVerticalAlignChildrenGapWrapForwardedRefRest: InnerInlineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerInline")(hasAlignVerticalAlignChildrenGapWrapForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerInline(param0: InnerInlineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerInline")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerInputGroup(hasFluidDisabledReadOnlyAsChildrenForwardedRefRest: InnerInputGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerInputGroup")(hasFluidDisabledReadOnlyAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerInputGroup(param0: InnerInputGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerInputGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerItem(props: InnerItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerItem")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -1036,53 +1024,47 @@ object mod {
   
   inline def InnerLink(props: InnerLinkProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerLink")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerListItem(hasSizeAsChildrenForwardedRefRest: InnerListItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerListItem")(hasSizeAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerListItem(param0: InnerListItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerListItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerListbox(
-    hasIdSelectedKeysPropDefaultSelectedKeysValidationStateOnSelectionChangeOnFocusChangeSelectionModeNodesPropAutoFocusDefaultFocusTargetFocusOnHoverUseVirtualFocusTabbableFluidAriaLabelAriaLabelledByAsChildrenForwardedRefRest: InnerListboxProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerListbox")(hasIdSelectedKeysPropDefaultSelectedKeysValidationStateOnSelectionChangeOnFocusChangeSelectionModeNodesPropAutoFocusDefaultFocusTargetFocusOnHoverUseVirtualFocusTabbableFluidAriaLabelAriaLabelledByAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerListbox(param0: InnerListboxProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerListbox")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerListboxOption(hasHasKeyTooltipIdDisabledActiveFocusHoverAsChildrenForwardedRefRest: InnerListboxOptionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerListboxOption")(hasHasKeyTooltipIdDisabledActiveFocusHoverAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerListboxOption(param0: InnerListboxOptionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerListboxOption")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerListboxSection(hasIdTitleAsChildrenForwardedRefRest: InnerListboxSectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerListboxSection")(hasIdTitleAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerListboxSection(param0: InnerListboxSectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerListboxSection")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerLozenge(hasColorSizeAsChildrenForwardedRefRest: InnerLozengeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerLozenge")(hasColorSizeAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerLozenge(param0: InnerLozengeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerLozenge")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerMenu(
-    hasIdSelectedKeysPropDefaultSelectedKeysValidationStateOnSelectionChangeSelectionModeNodesPropAutoFocusDefaultFocusTargetFluidAriaLabelAriaLabelledByAsChildrenForwardedRefRest: InnerMenuProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMenu")(hasIdSelectedKeysPropDefaultSelectedKeysValidationStateOnSelectionChangeSelectionModeNodesPropAutoFocusDefaultFocusTargetFluidAriaLabelAriaLabelledByAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerMenu(param0: InnerMenuProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMenu")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerMenuItem(hasHasKeyTooltipIdDisabledActiveFocusHoverAsChildrenForwardedRefRest: InnerMenuItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMenuItem")(hasHasKeyTooltipIdDisabledActiveFocusHoverAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerMenuItem(param0: InnerMenuItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMenuItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerMenuSection(hasIdTitleAsChildrenForwardedRefRest: InnerMenuSectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMenuSection")(hasIdTitleAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerMenuSection(param0: InnerMenuSectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMenuSection")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerMenuTrigger(props: InnerMenuTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMenuTrigger")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerMessage(hasShowVariantOnDismissRolePropAsChildrenForwardedRefRest: InnerMessageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMessage")(hasShowVariantOnDismissRolePropAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerMessage(param0: InnerMessageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMessage")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerModal(hasFullscreenDismissableZIndexChildrenForwardedRefRest: InnerModalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerModal")(hasFullscreenDismissableZIndexChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerModal(param0: InnerModalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerModal")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerModalTrigger(hasDismissableForwardedRefRest: InnerModalTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerModalTrigger")(hasDismissableForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerModalTrigger(param0: InnerModalTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerModalTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerMultiVariantIcon(hasComponent24Component32SizeForwardedRefRest: InnerMultiVariantIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMultiVariantIcon")(hasComponent24Component32SizeForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerMultiVariantIcon(param0: InnerMultiVariantIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMultiVariantIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerNumberInput(props: InnerNumberInputProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerNumberInput")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerOrderedList(hasAsForwardedRefRest: InnerListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerOrderedList")(hasAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerOrderedList(param0: InnerListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerOrderedList")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerOverlay(hasShowBorderOffsetContainerElementZIndexAsChildrenForwardedRefRest: InnerOverlayProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerOverlay")(hasShowBorderOffsetContainerElementZIndexAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerOverlay(param0: InnerOverlayProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerOverlay")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerOverlayArrow(hasAsForwardedRefRest: InnerOverlayArrowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerOverlayArrow")(hasAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerOverlayArrow(param0: InnerOverlayArrowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerOverlayArrow")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerParagraph(props: InnerParagraphProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerParagraph")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerPasswordInput(props: InnerPasswordInputProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerPasswordInput")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerPopover(hasIdFocusAriaLabelAriaLabelledByAsChildrenForwardedRefRest: InnerPopoverProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerPopover")(hasIdFocusAriaLabelAriaLabelledByAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerPopover(param0: InnerPopoverProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerPopover")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerPopoverTrigger(
-    hasIdOpenDefaultOpenPositionPropOnOpenChangeDismissableAllowFlipAllowPreventOverflowContainerElementZIndexAsChildrenForwardedRefRest: InnerPopoverTriggerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerPopoverTrigger")(hasIdOpenDefaultOpenPositionPropOnOpenChangeDismissableAllowFlipAllowPreventOverflowContainerElementZIndexAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerPopoverTrigger(param0: InnerPopoverTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerPopoverTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerRadio(props: InnerRadioProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerRadio")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -1096,25 +1078,23 @@ object mod {
   
   inline def InnerSelect(props: InnerSelectProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerSelect")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerStack(hasAlignVerticalAlignGapWrapChildrenForwardedRefRest: InnerStackProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerStack")(hasAlignVerticalAlignGapWrapChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerStack(param0: InnerStackProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerStack")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerSvgImage(hasSrcSizeWidthHeightStrokeFillAriaLabelForwardedRefRest: InnerSvgImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerSvgImage")(hasSrcSizeWidthHeightStrokeFillAriaLabelForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerSvgImage(param0: InnerSvgImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerSvgImage")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerSwitch(props: InnerSwitchProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerSwitch")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTab(hasHasKeyTabIdPanelIdDisabledActiveFocusHoverAsChildrenForwardedRefRest: InnerTabProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTab")(hasHasKeyTabIdPanelIdDisabledActiveFocusHoverAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTab(param0: InnerTabProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTab")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTabList(hasTabsAutoFocusForwardedRefRest: InnerTabListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabList")(hasTabsAutoFocusForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTabList(param0: InnerTabListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabList")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTabPanel(hasHasKeyTabIdPanelIdAsChildrenForwardedRefRest: InnerTabPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabPanel")(hasHasKeyTabIdPanelIdAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTabPanel(param0: InnerTabPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabPanel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTabs(
-    hasIdSelectedKeyPropDefaultSelectedKeyOnSelectionChangeManualAutoFocusFluidOrientationAriaLabelChildrenForwardedRefRest: InnerTabsProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabs")(hasIdSelectedKeyPropDefaultSelectedKeyOnSelectionChangeManualAutoFocusFluidOrientationAriaLabelChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTabs(param0: InnerTabsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTabs")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTag(hasVariantOnRemoveDisabledFluidSizeActiveFocusHoverAsChildrenForwardedRefRest: InnerTagProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTag")(hasVariantOnRemoveDisabledFluidSizeActiveFocusHoverAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTag(param0: InnerTagProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTag")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTagList(hasSizeOnRemoveOnClearReadOnlyAsForwardedRefChildrenRest: InnerTagListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTagList")(hasSizeOnRemoveOnClearReadOnlyAsForwardedRefChildrenRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTagList(param0: InnerTagListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTagList")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerText(props: InnerTextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerText")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -1128,33 +1108,27 @@ object mod {
   
   inline def InnerTile(props: InnerTileProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTile")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTileGroup(
-    hasValueDefaultValueSelectionModeRowSizeOnChangeOrientationDisabledChildrenForwardedRefRest: InnerTileGroupProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTileGroup")(hasValueDefaultValueSelectionModeRowSizeOnChangeOrientationDisabledChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTileGroup(param0: InnerTileGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTileGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTileLink(hasOrientationDisabledActiveFocusHoverChildrenForwardedRefRest: InnerTileLinkProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTileLink")(hasOrientationDisabledActiveFocusHoverChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTileLink(param0: InnerTileLinkProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTileLink")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerToggleButton(props: InnerToggleButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerToggleButton")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerToggleIconButton(props: InnerToggleIconButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerToggleIconButton")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerToolbar(
-    hasAutoFocusOrientationAlignVerticalAlignGapWrapDisabledAsChildrenForwardedRefRest: InnerToolbarProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerToolbar")(hasAutoFocusOrientationAlignVerticalAlignGapWrapDisabledAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerToolbar(param0: InnerToolbarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerToolbar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTooltip(hasAsChildrenForwardedRefRest: InnerTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTooltip")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTooltip(param0: InnerTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTooltipTrigger(
-    hasOpenDefaultOpenPositionPropOnOpenChangeDisabledAllowFlipAllowPreventOverflowContainerElementZIndexAsChildrenForwardedRefRest: InnerTooltipTriggerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTooltipTrigger")(hasOpenDefaultOpenPositionPropOnOpenChangeDisabledAllowFlipAllowPreventOverflowContainerElementZIndexAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTooltipTrigger(param0: InnerTooltipTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTooltipTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerTransition(hasShowAnimateFirstRenderEnterLeaveAsChildrenForwardedRefRest: InnerTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTransition")(hasShowAnimateFirstRenderEnterLeaveAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTransition(param0: InnerTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerUnderlay(hasZIndexAsForwardedRefRest: InnerUnderlayProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerUnderlay")(hasZIndexAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerUnderlay(param0: InnerUnderlayProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerUnderlay")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerValidMessage(props: InnerValidMessageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerValidMessage")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerVisuallyHidden(hasAsChildrenForwardedRefRest: InnerVisuallyHiddenProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerVisuallyHidden")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerVisuallyHidden(param0: InnerVisuallyHiddenProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerVisuallyHidden")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components", "InputGroup")
   @js.native
@@ -1530,7 +1504,7 @@ object mod {
   
   object TabPanels {
     
-    inline def apply(hasPanelsRest: TabPanelsProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasPanelsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: TabPanelsProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@orbit-ui/react-components", "TabPanels")
     @js.native
@@ -1593,7 +1567,7 @@ object mod {
   @js.native
   val ThemeContext: Context[ThemeContextType] = js.native
   
-  inline def ThemeProvider(hasThemeColorSchemeDefaultColorSchemeChildrenAsRest: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasThemeColorSchemeDefaultColorSchemeChildrenAsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ThemeProvider(param0: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components", "Tile")
   @js.native
@@ -1756,14 +1730,14 @@ object mod {
   
   inline def createChainedFunction_false[T /* <: ChainableFunction */](funcs: (T | `false`)*): ChainableFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createChainedFunction")(funcs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ChainableFunction]
   
-  inline def createCollectionItem(hasKeyIndexElementTypeRefContentProps: CollectionItem): typings.orbitUiReactComponents.anon.Content = ^.asInstanceOf[js.Dynamic].applyDynamic("createCollectionItem")(hasKeyIndexElementTypeRefContentProps.asInstanceOf[js.Any]).asInstanceOf[typings.orbitUiReactComponents.anon.Content]
+  inline def createCollectionItem(param0: CollectionItem): typings.orbitUiReactComponents.anon.Content = ^.asInstanceOf[js.Dynamic].applyDynamic("createCollectionItem")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.orbitUiReactComponents.anon.Content]
   
   inline def createDisposables(): Add = ^.asInstanceOf[js.Dynamic].applyDynamic("createDisposables")().asInstanceOf[Add]
   
-  inline def createEmbeddableAdapter[T /* <: Size */](sizeAdapter: SizeAdapter[T]): js.Function2[/* element */ ReactElement, /* hasSizeProps */ RecordWithSize, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmbeddableAdapter")(sizeAdapter.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* element */ ReactElement, /* hasSizeProps */ RecordWithSize, ReactElement]]
+  inline def createEmbeddableAdapter[T /* <: Size */](sizeAdapter: SizeAdapter[T]): js.Function2[/* element */ ReactElement, /* param1 */ RecordWithSize, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmbeddableAdapter")(sizeAdapter.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* element */ ReactElement, /* param1 */ RecordWithSize, ReactElement]]
   
   inline def createFocusableTreeWalker(root: HTMLElement): TreeWalker = ^.asInstanceOf[js.Dynamic].applyDynamic("createFocusableTreeWalker")(root.asInstanceOf[js.Any]).asInstanceOf[TreeWalker]
-  inline def createFocusableTreeWalker(root: HTMLElement, hasTabbable: FocusableTreeWalkerOptions): TreeWalker = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusableTreeWalker")(root.asInstanceOf[js.Any], hasTabbable.asInstanceOf[js.Any])).asInstanceOf[TreeWalker]
+  inline def createFocusableTreeWalker(root: HTMLElement, param1: FocusableTreeWalkerOptions): TreeWalker = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusableTreeWalker")(root.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TreeWalker]
   
   inline def createIcon(src: ElementType[Any]): OrbitComponent[svg, OmitInnerIconPropssrc] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(src.asInstanceOf[js.Any]).asInstanceOf[OrbitComponent[svg, OmitInnerIconPropssrc]]
   
@@ -1773,7 +1747,7 @@ object mod {
   
   inline def cssModule_false(moduleName: String, values: (`false` | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssModule")(scala.List(moduleName.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
-  inline def embedIconButton[Props /* <: typings.orbitUiReactComponents.anon.Size & (Record[String, Any]) */](element: ReactElement, hasSizeProps: Props): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("embedIconButton")(element.asInstanceOf[js.Any], hasSizeProps.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def embedIconButton[Props /* <: typings.orbitUiReactComponents.anon.Size & (Record[String, Any]) */](element: ReactElement, param1: Props): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("embedIconButton")(element.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
   inline def embeddedIconSize(size: Size): `2xs` | xs | sm | md | lg | inherit = ^.asInstanceOf[js.Dynamic].applyDynamic("embeddedIconSize")(size.asInstanceOf[js.Any]).asInstanceOf[`2xs` | xs | sm | md | lg | inherit]
   
@@ -1785,7 +1759,7 @@ object mod {
   
   inline def getSlotKey(element: ReactElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSlotKey")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getSlots[T /* <: SlotOptions */](children: ReactNode, has_Slots: T): GetSlotsReturn[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlots")(children.asInstanceOf[js.Any], has_Slots.asInstanceOf[js.Any])).asInstanceOf[GetSlotsReturn[T]]
+  inline def getSlots[T /* <: SlotOptions */](children: ReactNode, param1: T): GetSlotsReturn[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlots")(children.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[GetSlotsReturn[T]]
   
   inline def isArray[T](value: Any): /* is std.Array<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<T> */ Boolean]
   
@@ -1852,30 +1826,28 @@ object mod {
   inline def useAsyncSearch[T](load: js.Function2[/* query */ String, /* signal */ AbortSignal, js.Promise[js.Array[T]]]): IsLoading[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsyncSearch")(load.asInstanceOf[js.Any]).asInstanceOf[IsLoading[T]]
   
   inline def useAutoFocus(targetRef: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useAutoFocus(targetRef: RefObject[HTMLElement], hasIsDisabledDelayOnFocus: AutoFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any], hasIsDisabledDelayOnFocus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useAutoFocus(targetRef: RefObject[HTMLElement], param1: AutoFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useAutoFocusChild(focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def useAutoFocusChild(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
-    hasTargetIsDisabledDelayCanFocusOnFocusOnNotFound: AutoFocusChildOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any], hasTargetIsDisabledDelayCanFocusOnFocusOnNotFound.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    param1: AutoFocusChildOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useChainedEventCallback_false[T /* <: ChainableFunction */](callbacks: (T | `false`)*): ChainableFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("useChainedEventCallback")(callbacks.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ChainableFunction]
   
   inline def useCheckableContext(): js.Tuple2[CheckableContextType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableContext")().asInstanceOf[js.Tuple2[CheckableContextType, Boolean]]
   
-  inline def useCheckableProps(hasValue: `0`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(hasValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
+  inline def useCheckableProps(param0: `0`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
   
-  inline def useCheckbox(
-    hasModuleIsInFieldIdCheckedDefaultCheckedIndeterminateDefaultIndeterminateAutoFocusRequiredValidationStateOnChangeSizeReverseNameTabIndexActiveFocusHoverDisabledAriaLabelAriaLabelledByForwardedRef: UseCheckboxProps
-  ): UseCheckboxReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckbox")(hasModuleIsInFieldIdCheckedDefaultCheckedIndeterminateDefaultIndeterminateAutoFocusRequiredValidationStateOnChangeSizeReverseNameTabIndexActiveFocusHoverDisabledAriaLabelAriaLabelledByForwardedRef.asInstanceOf[js.Any]).asInstanceOf[UseCheckboxReturn]
+  inline def useCheckbox(param0: UseCheckboxProps): UseCheckboxReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckbox")(param0.asInstanceOf[js.Any]).asInstanceOf[UseCheckboxReturn]
   
   inline def useCollection(children: ReactNode): js.Array[CollectionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollection")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[CollectionNode]]
   
-  inline def useCollectionSearch(children: ReactNode, hasOnSearch: UseCollectionSearchOptions): js.Tuple2[
+  inline def useCollectionSearch(children: ReactNode, param1: UseCollectionSearchOptions): js.Tuple2[
     js.Array[CollectionNode], 
     js.Function2[/* event */ SyntheticEvent[typings.std.Element, Event], /* query */ String, Unit]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollectionSearch")(children.asInstanceOf[js.Any], hasOnSearch.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollectionSearch")(children.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
     js.Array[CollectionNode], 
     js.Function2[/* event */ SyntheticEvent[typings.std.Element, Event], /* query */ String, Unit]
   ]]
@@ -1888,38 +1860,18 @@ object mod {
   inline def useControllableState[T](controlledValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: T, initialValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: T, hasOnChange: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: Unit, hasOnChange: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: T, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: Unit, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: T, initialValue: Unit, defaultValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](controlledValue: T, initialValue: Unit, defaultValue: T, hasOnChange: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](
-    controlledValue: T,
-    initialValue: Unit,
-    defaultValue: Unit,
-    hasOnChange: ControllableStateOptions[T]
-  ): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: T, initialValue: Unit, defaultValue: T, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: T, initialValue: Unit, defaultValue: Unit, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: Unit, initialValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: Unit, initialValue: T, defaultValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](controlledValue: Unit, initialValue: T, defaultValue: T, hasOnChange: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](
-    controlledValue: Unit,
-    initialValue: T,
-    defaultValue: Unit,
-    hasOnChange: ControllableStateOptions[T]
-  ): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: Unit, initialValue: T, defaultValue: T, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: Unit, initialValue: T, defaultValue: Unit, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: Unit, initialValue: Unit, defaultValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](
-    controlledValue: Unit,
-    initialValue: Unit,
-    defaultValue: T,
-    hasOnChange: ControllableStateOptions[T]
-  ): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](
-    controlledValue: Unit,
-    initialValue: Unit,
-    defaultValue: Unit,
-    hasOnChange: ControllableStateOptions[T]
-  ): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: Unit, initialValue: Unit, defaultValue: T, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: Unit, initialValue: Unit, defaultValue: Unit, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   
   inline def useDialogTriggerContext(): DialogTriggerContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useDialogTriggerContext")().asInstanceOf[DialogTriggerContextType]
   
@@ -2080,7 +2032,7 @@ object mod {
   
   inline def useFieldInputProps(): js.Tuple2[UseFieldInputPropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFieldInputProps")().asInstanceOf[js.Tuple2[UseFieldInputPropsReturn, Boolean]]
   
-  inline def useFieldLabelProps(hasAsProp: UseFieldLabelProps_): js.Tuple2[UseFieldLabelPropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFieldLabelProps")(hasAsProp.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseFieldLabelPropsReturn, Boolean]]
+  inline def useFieldLabelProps(param0: UseFieldLabelProps_): js.Tuple2[UseFieldLabelPropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFieldLabelProps")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseFieldLabelPropsReturn, Boolean]]
   
   inline def useFieldMessageProps(): js.Tuple2[UseFieldMessagePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFieldMessageProps")().asInstanceOf[js.Tuple2[UseFieldMessagePropsReturn, Boolean]]
   
@@ -2091,8 +2043,8 @@ object mod {
   inline def useFocusManager(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope): typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any]).asInstanceOf[typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager]
   inline def useFocusManager(
     scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
-    hasIsVirtualKeyPropOnFocus: FocusManagerOptions
-  ): typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any], hasIsVirtualKeyPropOnFocus.asInstanceOf[js.Any])).asInstanceOf[typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager]
+    param1: FocusManagerOptions
+  ): typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager]
   
   inline def useFocusScope(): js.Tuple2[
     typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, 
@@ -2103,7 +2055,7 @@ object mod {
   ]]
   
   inline def useFocusWithin(): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnFocus | OnBlurOnFocus]
-  inline def useFocusWithin(hasOnFocusOnBlurIsDisabled: UseFocusWithinOptions): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(hasOnFocusOnBlurIsDisabled.asInstanceOf[js.Any]).asInstanceOf[OnFocus | OnBlurOnFocus]
+  inline def useFocusWithin(param0: UseFocusWithinOptions): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(param0.asInstanceOf[js.Any]).asInstanceOf[OnFocus | OnBlurOnFocus]
   
   inline def useForceRender(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceRender")().asInstanceOf[js.Function0[Unit]]
   
@@ -2115,9 +2067,7 @@ object mod {
   
   inline def useForwardInputApi(inputRef: RefObject[HTMLInputElement]): js.Function1[/* targetRef */ RefObject[HTMLInputElement], HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForwardInputApi")(inputRef.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* targetRef */ RefObject[HTMLInputElement], HTMLInputElement]]
   
-  inline def useGroupInput(
-    hasRoleModuleRequiredValidationStateOrientationGapWrapSizeReverseDisabledIsInFieldGroupRef: UseGroupInputProps
-  ): UseGroupInputReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useGroupInput")(hasRoleModuleRequiredValidationStateOrientationGapWrapSizeReverseDisabledIsInFieldGroupRef.asInstanceOf[js.Any]).asInstanceOf[UseGroupInputReturn]
+  inline def useGroupInput(param0: UseGroupInputProps): UseGroupInputReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useGroupInput")(param0.asInstanceOf[js.Any]).asInstanceOf[UseGroupInputReturn]
   
   inline def useHasChild(querySelector: String, rootRef: RefObject[HTMLElement]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useHasChild")(querySelector.asInstanceOf[js.Any], rootRef.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -2128,9 +2078,7 @@ object mod {
   inline def useId(userId: String, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useId")(userId.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def useId(userId: Unit, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useId")(userId.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def useInput(
-    hasModuleIdValuePlaceholderRequiredValidationStateOnChangeTypeAutoFocusDisabledReadOnlyFluidLoadingActiveFocusHoverForwardedRef: UseInputProps
-  ): InputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useInput")(hasModuleIdValuePlaceholderRequiredValidationStateOnChangeTypeAutoFocusDisabledReadOnlyFluidLoadingActiveFocusHoverForwardedRef.asInstanceOf[js.Any]).asInstanceOf[InputProps]
+  inline def useInput(param0: UseInputProps): InputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useInput")(param0.asInstanceOf[js.Any]).asInstanceOf[InputProps]
   
   inline def useInputButton(button: ReactElement, isActive: Boolean): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("useInputButton")(button.asInstanceOf[js.Any], isActive.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   inline def useInputButton(button: ReactElement, isActive: Boolean, props: Record[String, Any]): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("useInputButton")(button.asInstanceOf[js.Any], isActive.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
@@ -2156,20 +2104,20 @@ object mod {
   
   inline def useKeyboardNavigation(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
-    hasPreviousNextFirstLast: KeyboardNavigationBindings
-  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+    param1: KeyboardNavigationBindings
+  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
   inline def useKeyboardNavigation(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
-    hasPreviousNextFirstLast: KeyboardNavigationBindings,
-    hasOnSelect: KeyboardNavigationOptions
-  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any], hasOnSelect.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+    param1: KeyboardNavigationBindings,
+    param2: KeyboardNavigationOptions
+  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
   
   inline def useKeyedRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, currentKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useKeyedRovingFocus(
     scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
     currentKey: String,
-    hasKeyPropIsDisabled: IsDisabled
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any], hasKeyPropIsDisabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    param2: IsDisabled
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useListboxContext(): ListboxContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useListboxContext")().asInstanceOf[ListboxContextType]
   
@@ -2186,27 +2134,21 @@ object mod {
   inline def useOnlyCollectionItems(nodes: js.Array[CollectionNode]): js.Array[CollectionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnlyCollectionItems")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[CollectionItem]]
   
   inline def useOverlayFocusRing(): ClassNameString = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayFocusRing")().asInstanceOf[ClassNameString]
-  inline def useOverlayFocusRing(hasFocus: UseOverlayFocusRingProps): ClassNameString = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayFocusRing")(hasFocus.asInstanceOf[js.Any]).asInstanceOf[ClassNameString]
+  inline def useOverlayFocusRing(param0: UseOverlayFocusRingProps): ClassNameString = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayFocusRing")(param0.asInstanceOf[js.Any]).asInstanceOf[ClassNameString]
   
   inline def useOverlayLightDismiss(overlayRef: RefObject[HTMLElement]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayLightDismiss")(overlayRef.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  inline def useOverlayLightDismiss(
-    overlayRef: RefObject[HTMLElement],
-    hasTriggerOnHideHideOnEscapeHideOnLeaveHideOnOutsideClick: UseOverlayLightDismissOptions
-  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayLightDismiss")(overlayRef.asInstanceOf[js.Any], hasTriggerOnHideHideOnEscapeHideOnLeaveHideOnOutsideClick.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def useOverlayLightDismiss(overlayRef: RefObject[HTMLElement], param1: UseOverlayLightDismissOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayLightDismiss")(overlayRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   inline def useOverlayPosition(): ArrowRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayPosition")().asInstanceOf[ArrowRef]
-  inline def useOverlayPosition(hasPositionOffsetAllowFlipAllowPreventOverflowBoundaryElementHasArrow: UseOverlayPositionOptions): ArrowRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayPosition")(hasPositionOffsetAllowFlipAllowPreventOverflowBoundaryElementHasArrow.asInstanceOf[js.Any]).asInstanceOf[ArrowRef]
+  inline def useOverlayPosition(param0: UseOverlayPositionOptions): ArrowRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[ArrowRef]
   
   inline def useOverlayTrigger(isOpen: Boolean): OnClick | OnKeyUp | OnMouseEnter = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any]).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
-  inline def useOverlayTrigger(isOpen: Boolean, hasHideOnLeaveTriggerOnShowOnHideIsDisabled: UseOverlayTriggerOptions): OnClick | OnKeyUp | OnMouseEnter = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], hasHideOnLeaveTriggerOnShowOnHideIsDisabled.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
+  inline def useOverlayTrigger(isOpen: Boolean, param1: UseOverlayTriggerOptions): OnClick | OnKeyUp | OnMouseEnter = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayTrigger")(isOpen.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnClick | OnKeyUp | OnMouseEnter]
   
   inline def usePopoverTriggerContext(): PopoverTriggerContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopoverTriggerContext")().asInstanceOf[PopoverTriggerContextType]
   
   inline def usePopup(`type`: menu | listbox | dialog): ArrowProps = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopup")(`type`.asInstanceOf[js.Any]).asInstanceOf[ArrowProps]
-  inline def usePopup(
-    `type`: menu | listbox | dialog,
-    hasIdOpenDefaultOpenOnOpenChangeHideOnEscapeHideOnLeaveHideOnOutsideClickRestoreFocusTriggerHasArrowPositionOffsetDisabledAllowFlipAllowPreventOverflowBoundaryElementKeyProp: UsePopupOptions
-  ): ArrowProps = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopup")(`type`.asInstanceOf[js.Any], hasIdOpenDefaultOpenOnOpenChangeHideOnEscapeHideOnLeaveHideOnOutsideClickRestoreFocusTriggerHasArrowPositionOffsetDisabledAllowFlipAllowPreventOverflowBoundaryElementKeyProp.asInstanceOf[js.Any])).asInstanceOf[ArrowProps]
+  inline def usePopup(`type`: menu | listbox | dialog, param1: UsePopupOptions): ArrowProps = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopup")(`type`.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ArrowProps]
   
   inline def useRawSlots(children: ReactNode, slots: js.Array[String]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRawSlots")(children.asInstanceOf[js.Any], slots.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   
@@ -2226,30 +2168,18 @@ object mod {
   ]]
   
   inline def useResizeObserver(onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit]): RefCallback[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any]).asInstanceOf[RefCallback[HTMLElement]]
-  inline def useResizeObserver(
-    onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit],
-    hasIsDisabledBox: UseResizeObserverOptions
-  ): RefCallback[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], hasIsDisabledBox.asInstanceOf[js.Any])).asInstanceOf[RefCallback[HTMLElement]]
+  inline def useResizeObserver(onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit], param1: UseResizeObserverOptions): RefCallback[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RefCallback[HTMLElement]]
   
   inline def useRestoreFocus(scope: typings.orbitUiReactComponents.distSharedMod.DomScope): OnKeyDownUndefined | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("useRestoreFocus")(scope.asInstanceOf[js.Any]).asInstanceOf[OnKeyDownUndefined | `1`]
-  inline def useRestoreFocus(
-    scope: typings.orbitUiReactComponents.distSharedMod.DomScope,
-    hasIsDisabled: UseRestoreFocusOptions
-  ): OnKeyDownUndefined | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("useRestoreFocus")(scope.asInstanceOf[js.Any], hasIsDisabled.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownUndefined | `1`]
+  inline def useRestoreFocus(scope: typings.orbitUiReactComponents.distSharedMod.DomScope, param1: UseRestoreFocusOptions): OnKeyDownUndefined | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("useRestoreFocus")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDownUndefined | `1`]
   
   inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, hasIsDisabled: `2`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], hasIsDisabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, param1: `2`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useScrollableCollection(containerRef: RefObject[typings.std.Element]): Style | StyleHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any]).asInstanceOf[Style | StyleHeight]
-  inline def useScrollableCollection(
-    containerRef: RefObject[typings.std.Element],
-    hasMaxHeightBorderHeightPaddingHeightItemSelectorSectionSelectorDividerSelectorDisabled: UseScrollableCollectionOptions
-  ): Style | StyleHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any], hasMaxHeightBorderHeightPaddingHeightItemSelectorSectionSelectorDividerSelectorDisabled.asInstanceOf[js.Any])).asInstanceOf[Style | StyleHeight]
+  inline def useScrollableCollection(containerRef: RefObject[typings.std.Element], param1: UseScrollableCollectionOptions): Style | StyleHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Style | StyleHeight]
   
-  inline def useSelect(
-    children: ReactNode,
-    hasIdOpenPropDefaultOpenSelectedKeyPropDefaultSelectedKeyValidationStateOnSelectionChangeOnOpenChangeDirectionAlignAutoFocusDisabledReadOnlyAllowFlipAllowPreventOverflowAllowResponsiveMenuWidthAriaLabelAriaLabelledByAriaDescribedByHasMenuIdHasMenuWidthMenuStyleMenuPropsRef: UseSelectProps
-  ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("useSelect")(children.asInstanceOf[js.Any], hasIdOpenPropDefaultOpenSelectedKeyPropDefaultSelectedKeyValidationStateOnSelectionChangeOnOpenChangeDirectionAlignAutoFocusDisabledReadOnlyAllowFlipAllowPreventOverflowAllowResponsiveMenuWidthAriaLabelAriaLabelledByAriaDescribedByHasMenuIdHasMenuWidthMenuStyleMenuPropsRef.asInstanceOf[js.Any])).asInstanceOf[Close]
+  inline def useSelect(children: ReactNode, param1: UseSelectProps): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("useSelect")(children.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Close]
   
   inline def useSlots[T /* <: SlotOptions */](children: ReactNode, slots: T): UseSlotsReturn[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useSlots")(children.asInstanceOf[js.Any], slots.asInstanceOf[js.Any])).asInstanceOf[UseSlotsReturn[T]]
   
@@ -2272,7 +2202,7 @@ object mod {
   inline def useTrapFocus(focusManager: typings.orbitUiReactComponents.distSharedMod.FocusManager): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useTrapFocus")(focusManager.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def useTriggerWidth(): js.Tuple2[RefCallback[HTMLElement], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTriggerWidth")().asInstanceOf[js.Tuple2[RefCallback[HTMLElement], String]]
-  inline def useTriggerWidth(hasIsDisabled: UseTriggerWidthOptions): js.Tuple2[RefCallback[HTMLElement], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTriggerWidth")(hasIsDisabled.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[RefCallback[HTMLElement], String]]
+  inline def useTriggerWidth(param0: UseTriggerWidthOptions): js.Tuple2[RefCallback[HTMLElement], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTriggerWidth")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[RefCallback[HTMLElement], String]]
   
   inline def useWindowListener(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def useWindowListener(eventName: String, listener: Null, active: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useWindowListener")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], active.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2302,5 +2232,5 @@ object mod {
     onElement: js.Function2[/* element */ typings.std.Element, /* index */ js.UndefOr[Double], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkFocusableElements")(root.asInstanceOf[js.Any], onElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def wrappedInputPropsAdapter[P /* <: `3` */](hasClassNameRest: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(hasClassNameRest.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
+  inline def wrappedInputPropsAdapter[P /* <: `3` */](param0: P): (Omit[P, className]) & AdaptedWrappedInputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappedInputPropsAdapter")(param0.asInstanceOf[js.Any]).asInstanceOf[(Omit[P, className]) & AdaptedWrappedInputProps]
 }

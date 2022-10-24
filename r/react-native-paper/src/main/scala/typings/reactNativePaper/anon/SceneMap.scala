@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SceneMap extends StObject {
   
-  def apply(
-    hasNavigationStateRenderSceneRenderIconRenderLabelRenderTouchableGetLabelTextGetBadgeGetColorGetAccessibilityLabelGetTestIDActiveColorInactiveColorKeyboardHidesNavigationBarBarStyleLabeledStyleThemeSceneAnimationEnabledOnTabPressOnIndexChangeShiftingSafeAreaInsetsLabelMaxFontSizeMultiplier: Props
-  ): Element = js.native
+  def apply(param0: Props): Element = js.native
   
   /**
     * Function which takes a map of route keys to components.
     * Pure components are used to minimize re-rendering of the pages.
     * This drastically improves the animation performance.
     */
-  def SceneMap(scenes: StringDictionary[ComponentType[JumpTo]]): js.Function1[/* hasRouteJumpTo */ JumpTo, Element] = js.native
+  def SceneMap(scenes: StringDictionary[ComponentType[JumpTo]]): js.Function1[/* param0 */ JumpTo, Element] = js.native
 }

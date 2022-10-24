@@ -35,7 +35,7 @@ object libModulesHelpersMod {
   
   inline def isMobile(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobile")().asInstanceOf[Boolean]
   
-  inline def log(hasDataDebugTitle: LogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(hasDataDebugTitle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log(param0: LogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def mergeModifier(modifier: PartialModifieranyany): PartialModifieranyany = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeModifier")(modifier.asInstanceOf[js.Any]).asInstanceOf[PartialModifieranyany]
   inline def mergeModifier(modifier: PartialModifieranyany, customModifier: PartialModifieranyany): PartialModifieranyany = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeModifier")(modifier.asInstanceOf[js.Any], customModifier.asInstanceOf[js.Any])).asInstanceOf[PartialModifieranyany]

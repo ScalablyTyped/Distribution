@@ -12,7 +12,5 @@ object libSlideMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasCountChildrenCurrentSlideIndexIsCurrentSlideTypeOfSlideWrapAroundCellSpacingAnimationSpeedSlidesToShowZoomScaleCellAlignOnVisibleSlideHeightChangeAdaptiveHeightInitializedAdaptiveHeight: AdaptiveHeight
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasCountChildrenCurrentSlideIndexIsCurrentSlideTypeOfSlideWrapAroundCellSpacingAnimationSpeedSlidesToShowZoomScaleCellAlignOnVisibleSlideHeightChangeAdaptiveHeightInitializedAdaptiveHeight.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: AdaptiveHeight): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

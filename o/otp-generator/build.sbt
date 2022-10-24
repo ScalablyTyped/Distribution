@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "otp-generator"
-version := "4.0-dt-20220228Z-031ce6"
-scalaVersion := "3.1.2"
+version := "4.0-dt-20220228Z-b71012"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

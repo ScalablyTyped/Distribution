@@ -15,7 +15,7 @@ object distModalSrcModalTriggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerModalTrigger(hasDismissableForwardedRefRest: InnerModalTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerModalTrigger")(hasDismissableForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerModalTrigger(param0: InnerModalTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerModalTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/modal/src/ModalTrigger", "ModalTrigger")
   @js.native

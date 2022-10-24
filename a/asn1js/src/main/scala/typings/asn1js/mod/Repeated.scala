@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.asn1js.mod._AsnSchemaType because Already inherited */ @JSImport("asn1js", "Repeated")
 @js.native
 open class Repeated () extends Any {
-  def this(hasValueLocalParameters: RepeatedParams) = this()
+  def this(param0: RepeatedParams) = this()
   
   var local: scala.Boolean = js.native
   

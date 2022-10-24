@@ -1,7 +1,7 @@
 
 # Scala.js typings for ranges-merge
 
-Typings are for version 8.2.3
+Typings are for version 8.2.4
 
 ## Library description:
 Merge and sort string index ranges

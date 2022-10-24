@@ -81,8 +81,8 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     
     def compileFull(
       node: ClassDeclaration[DeclarationNode],
-      hasInjModFacClassMetadataDeclarationsRemoteScopesMayRequireCycleProtection: ReadonlyNgModuleAnalysis,
-      hasInjectorImports: ReadonlyNgModuleResolutio
+      param1: ReadonlyNgModuleAnalysis,
+      param2: ReadonlyNgModuleResolutio
     ): js.Array[CompileResult] = js.native
     
     /* private */ var compileNgModule: Any = js.native
@@ -90,8 +90,8 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     @JSName("compilePartial")
     def compilePartial_MNgModuleDecoratorHandler(
       node: ClassDeclaration[DeclarationNode],
-      hasInjFacModClassMetadata: ReadonlyNgModuleAnalysis,
-      hasInjectorImports: ReadonlyNgModuleResolutio
+      param1: ReadonlyNgModuleAnalysis,
+      param2: ReadonlyNgModuleResolutio
     ): js.Array[CompileResult] = js.native
     
     /* private */ var evaluator: Any = js.native

@@ -43,7 +43,7 @@ object `libEsm@ExamplesFilmsMod` {
   @js.native
   val filterFilm: ItemPredicate[Film] = js.native
   
-  inline def getFilmItemProps(film: Film, hasHandleClickHandleFocusModifiersQuery: ItemRendererProps): MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilmItemProps")(film.asInstanceOf[js.Any], hasHandleClickHandleFocusModifiersQuery.asInstanceOf[js.Any])).asInstanceOf[MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement]]
+  inline def getFilmItemProps(film: Film, param1: ItemRendererProps): MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilmItemProps")(film.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement]]
   
   inline def maybeAddCreatedFilmToArrays(items: js.Array[Film], createdItems: js.Array[Film], film: Film): CreatedItems = (^.asInstanceOf[js.Dynamic].applyDynamic("maybeAddCreatedFilmToArrays")(items.asInstanceOf[js.Any], createdItems.asInstanceOf[js.Any], film.asInstanceOf[js.Any])).asInstanceOf[CreatedItems]
   

@@ -29,7 +29,7 @@ object buildMetroDevServerMod {
     def this(logger: typings.expoBunyan.mod.^, reportEvent: js.Function1[/* event */ Any, Unit]) = this()
   }
   
-  inline def attachInspectorProxy(projectRoot: String, hasServerMiddleware: Middleware): InspectorProxy = (^.asInstanceOf[js.Dynamic].applyDynamic("attachInspectorProxy")(projectRoot.asInstanceOf[js.Any], hasServerMiddleware.asInstanceOf[js.Any])).asInstanceOf[InspectorProxy]
+  inline def attachInspectorProxy(projectRoot: String, param1: Middleware): InspectorProxy = (^.asInstanceOf[js.Dynamic].applyDynamic("attachInspectorProxy")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InspectorProxy]
   
   inline def bundleAsync(
     projectRoot: String,
@@ -40,7 +40,7 @@ object buildMetroDevServerMod {
   
   inline def closeJsInspector(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJsInspector")().asInstanceOf[Unit]
   
-  inline def createDevServerMiddleware(projectRoot: String, hasWatchFoldersPortLogger: Logger): AttachToServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createDevServerMiddleware")(projectRoot.asInstanceOf[js.Any], hasWatchFoldersPortLogger.asInstanceOf[js.Any])).asInstanceOf[AttachToServer]
+  inline def createDevServerMiddleware(projectRoot: String, param1: Logger): AttachToServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createDevServerMiddleware")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[AttachToServer]
   
   inline def openJsInspector(app: MetroInspectorProxyApp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openJsInspector")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

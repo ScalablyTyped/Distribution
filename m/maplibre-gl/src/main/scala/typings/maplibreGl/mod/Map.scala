@@ -250,13 +250,9 @@ open class Map protected () extends Camera {
   def addControl(control: IControl, position: ControlPosition): this.type = js.native
   
   def addImage(id: String, image: Data): this.type = js.native
-  def addImage(id: String, image: Data, hasPixelRatioSdfStretchXStretchYContent: PartialStyleImageMetadata): this.type = js.native
+  def addImage(id: String, image: Data, param2: PartialStyleImageMetadata): this.type = js.native
   def addImage(id: String, image: StyleImageInterface): this.type = js.native
-  def addImage(
-    id: String,
-    image: StyleImageInterface,
-    hasPixelRatioSdfStretchXStretchYContent: PartialStyleImageMetadata
-  ): this.type = js.native
+  def addImage(id: String, image: StyleImageInterface, param2: PartialStyleImageMetadata): this.type = js.native
   /**
   	 * Add an image to the style. This image can be displayed on the map like any other icon in the style's
   	 * sprite using the image's ID with
@@ -303,15 +299,11 @@ open class Map protected () extends Camera {
   	 * @see Use `ImageData`: [Add a generated icon to the map](https://maplibre.org/maplibre-gl-js-docs/example/add-image-generated/)
   	 */
   def addImage(id: String, image: HTMLImageElement): this.type = js.native
-  def addImage(
-    id: String,
-    image: HTMLImageElement,
-    hasPixelRatioSdfStretchXStretchYContent: PartialStyleImageMetadata
-  ): this.type = js.native
+  def addImage(id: String, image: HTMLImageElement, param2: PartialStyleImageMetadata): this.type = js.native
   def addImage(id: String, image: ImageBitmap): this.type = js.native
-  def addImage(id: String, image: ImageBitmap, hasPixelRatioSdfStretchXStretchYContent: PartialStyleImageMetadata): this.type = js.native
+  def addImage(id: String, image: ImageBitmap, param2: PartialStyleImageMetadata): this.type = js.native
   def addImage(id: String, image: ImageData): this.type = js.native
-  def addImage(id: String, image: ImageData, hasPixelRatioSdfStretchXStretchYContent: PartialStyleImageMetadata): this.type = js.native
+  def addImage(id: String, image: ImageData, param2: PartialStyleImageMetadata): this.type = js.native
   
   /**
   	 * Adds a [MapLibre style layer](https://maplibre.org/maplibre-gl-js-docs/style-spec/#layers)

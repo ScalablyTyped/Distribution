@@ -26975,6 +26975,13 @@ object JQuery {
       __obj.asInstanceOf[Transport]
     }
     
+    extension [Self <: Transport](x: Self) {
+      
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      
+      inline def setSend(value: (PlainObject[Any], SuccessCallback) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    }
+    
     type SuccessCallback = js.Function4[
         /* status */ Double, 
         /* statusText */ TextStatus, 
@@ -26982,13 +26989,6 @@ object JQuery {
         /* headers */ js.UndefOr[String], 
         Unit
       ]
-    
-    extension [Self <: Transport](x: Self) {
-      
-      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
-      
-      inline def setSend(value: (PlainObject[Any], SuccessCallback) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
-    }
   }
   
   // #endregion

@@ -17,9 +17,7 @@ object distButtonSrcUseToggleButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useToggleButton[Shape](
-    hasVariantShapeCheckedDefaultCheckedValueOnChangeOnCheckActiveIsCheckableForwardedRef: UseToggleButtonProps[Shape]
-  ): ButtonProps[Shape] = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggleButton")(hasVariantShapeCheckedDefaultCheckedValueOnChangeOnCheckActiveIsCheckableForwardedRef.asInstanceOf[js.Any]).asInstanceOf[ButtonProps[Shape]]
+  inline def useToggleButton[Shape](param0: UseToggleButtonProps[Shape]): ButtonProps[Shape] = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggleButton")(param0.asInstanceOf[js.Any]).asInstanceOf[ButtonProps[Shape]]
   
   trait UseToggleButtonProps[Shape] extends StObject {
     

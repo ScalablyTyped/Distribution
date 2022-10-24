@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "svg-path-bbox"
-version := "1.2.2-fa44af"
-scalaVersion := "3.1.2"
+version := "1.2.2-94c7e2"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

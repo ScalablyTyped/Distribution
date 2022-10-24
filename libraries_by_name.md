@@ -2008,6 +2008,7 @@
 | [danmarshall__jscad-typing](./d/danmarshall__jscad-typings) | TypeScript typings for Jscad | - |
 | [dargs](./d/dargs) | Reverse minimist. Convert an object of options int | reverse, minimist, options, arguments, args, flags, cli, nopt, commander, binary, command, inverse, opposite, invert, switch, construct, parse, parser, argv |
 | [dashdash](./d/dashdash) | A light, featureful and explicit option parsing li | option, parser, parsing, cli, command, args, bash, completion |
+| [dasherize](./d/dasherize) | recursively transform key strings to dash-case | dash-case, json, transform |
 | [dashify](./d/dashify) | Convert a camelcase or space-separated string to a | dash, dashcase, dasherize, dashify, slug, slugify |
 | [dashjs](./d/dashjs) | A reference client implementation for the playback | - |
 | [dat_dot_gui](./d/dat_dot_gui) | A lightweight graphical user interface for changin | - |
@@ -4596,7 +4597,6 @@
 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler. | mustache, template |
 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com | react |
 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir | images, placeholders, client-side, canvas, generation, development, svg |
-| [homeworks](./h/homeworks) | Front End framework that supported view binding. | Frontend Framework, Material, IGAWorks, homeworks, framework, PIGNOSE |
 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io | - |
 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st | patch, hook, function, debug, aop |
 | [hookrouter](./h/hookrouter) | A hook based router for React | - |
@@ -7141,9 +7141,17 @@
 | [metascraper-youtube](./m/metascraper-youtube) | Metascraper integration with YouTube | metascraper, video, youtube |
 | [meteor](./m/meteor) | Install Meteor | - |
 | [meteor-accounts-phone](./m/meteor-accounts-phone) | - | - |
+| [meteor-astronomy](./m/meteor-astronomy) | - | - |
 | [meteor-collection-hooks](./m/meteor-collection-hooks) | - | - |
+| [meteor-dburles-collection](./m/meteor-dburles-collection-helpers) | - | - |
 | [meteor-jboulhous-dev](./m/meteor-jboulhous-dev) | - | - |
+| [meteor-mdg-validated-meth](./m/meteor-mdg-validated-method) | - | - |
+| [meteor-mdg-validation-err](./m/meteor-mdg-validation-error) | - | - |
 | [meteor-percolate-migratio](./m/meteor-percolate-migrations) | - | - |
+| [meteor-persistent-session](./m/meteor-persistent-session) | - | - |
+| [meteor-prime8consulting-o](./m/meteor-prime8consulting-oauth2) | - | - |
+| [meteor-publish-composite](./m/meteor-publish-composite) | - | - |
+| [meteor-roles](./m/meteor-roles) | - | - |
 | [meteor-sjobs](./m/meteor-sjobs) | - | - |
 | [meteor-synced-cron](./m/meteor-synced-cron) | Since I'm no longer actively developing an app tha | - |
 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor | - |
@@ -7221,6 +7229,7 @@
 | [microsoftteams](./m/microsoftteams) | - | - |
 | [microtime](./m/microtime) | Get the current time in microseconds | microtime, microseconds, gettimeofday |
 | [midi](./m/midi) | MIDI hardware IO | - |
+| [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node | migrate mongo mongodb migrations database |
 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js. | milkcocoa, realtime |
 | [millisecond](./m/millisecond) | Convert time strings to milliseconds | ms, millisecond, milisecond, mili, milli, second, parse, time, string |
 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t | time, conversion, milliseconds |
@@ -7351,8 +7360,11 @@
 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR | password, prompt, tty |
 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without  | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
+| [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB. | mongodb, queue |
 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs. | mongodb, uri, url, parser, formatter, mongoose |
 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily | MongoDB, Mongoose, seeder |
+| [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM. | mongo, mongodb, odm |
+| [mongration](./m/mongration) | Node.js mongodb migration framework | mongration, mongodb, migration, database, node mongodb migration framework |
 | [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript | typescript, functional-programming, optics, lens, fp-ts |
 | [month-days](./m/month-days) | Get the number of days in a month | month, days, year, date, utc, number, count |
@@ -7548,6 +7560,7 @@
 | [newman](./n/newman) | Command-line companion utility for Postman | newman, postman, api, testing, ci, rest-client, rest |
 | [newrelic](./n/newrelic) | New Relic agent | apm, performance, monitoring, instrumentation, debugging, profiling |
 | [newrelic__winston-enriche](./n/newrelic__winston-enricher) | New Relic log enricher for the winston package. Al | - |
+| [newsemitter](./n/newsemitter) | An event emitter that emits only new events. | event, emitter, event emitter, publish, subscribe, pubsub |
 | [newtype-ts](./n/newtype-ts) | Implementation of newtypes in TypeScript | typescript, newtype, functional-programming |
 | [nexpect](./n/nexpect) | Spawns and interacts with child processes using sp | nexpect, spawn, child process, terminal |
 | [next](./n/next) | The React Framework | - |
@@ -7569,7 +7582,6 @@
 | [ng-grid](./n/ng-grid) | __Contributors:__ | angular, ng-grid, nggrid, grid, angularjs, slickgrid, kogrid |
 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne | - |
 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi | AngularJS, App, notify, Provider, notification, alert, notice |
-| [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P | apf, angular-package-format, angular, angular-library, angular-components, component-library, typescript, css, scss |
 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS | - |
 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS | AngularJS, STOMP, websocket |
 | [ng-table](./n/ng-table) | Table + AngularJS =================  | - |
@@ -7595,7 +7607,6 @@
 | [ngtoaster](./n/ngtoaster) | - | - |
 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp | angular, Angular CLI, devkit, sdk, Angular DevKit, webpack, plugin, aot |
 | [ngwysiwyg](./n/ngwysiwyg) | - | - |
-| [ngx-infinite-scroll](./n/ngx-infinite-scroll) | - | - |
 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises | nhs, validator, validation |
 | [nib](./n/nib) | Stylus mixins and utilities | - |
 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js | nice, priority |
@@ -7705,6 +7716,7 @@
 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server | rtmp, flv, server |
 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and | - |
 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin | microphone, alsa, mic, record, audio, sox, capture, node-microphone, arecord, input |
+| [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures | mongodb, fixtures, loader, tests, unit-tests, unloader, schema |
 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m | node-mysql-wrapper, node-mysql, mysql, mysql-wrapper |
 | [node-netstat](./n/node-netstat) | programmatic netstat utility | netstat, utility |
 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays | hash, object, hash-object, object-hash, es6, crypto |
@@ -8159,6 +8171,7 @@
 | [papaparse](./p/papaparse) | Fast and powerful CSV parser for the browser that  | csv, parser, parse, parsing, delimited, text, data, auto-detect, comma, tab, pipe, file, filereader, stream, worker, workers, thread, threading, multi-threaded, jquery-plugin |
 | [paper](./p/paper) | The Swiss Army Knife of Vector Graphics Scripting | vector, graphic, graphics, 2d, geometry, bezier, curve, curves, path, paths, canvas, svg, paper, paper.js, paperjs |
 | [paradisebotsapi_dot_js](./p/paradisebotsapi_dot_js) | The main wrapper for paradise bot list to post ser | Discord, Bot, List, API, Wrapper |
+| [parallax-js](./p/parallax-js) | Parallax Engine that reacts to the orientation of  | parallax, gyroscope, jquery, javascript, library |
 | [parallel-transform](./p/parallel-transform) | Transform stream that allows you to run your trans | transform, stream, parallel, preserve, order |
 | [paralleljs](./p/paralleljs) | parallel.js enables easy multi-thread processing i | parallel, spawn, map, thread, parallel.js, workers, webworkers |
 | [param-case](./p/param-case) | Transform into a lower cased string with dashes be | param, case, kebab, hyphen, dash, dash-case, param-case, convert, transform |
@@ -9107,6 +9120,10 @@
 | [react-aria-live](./r/react-aria-live) | Add aria-live messaging to your React app | react-component |
 | [react-aria-menubutton](./r/react-aria-menubutton) | A fully accessible and flexible React-powered menu | react, reactjs, react-component, aria, accessibility, menu, dropdown, widget |
 | [react-aria-modal](./r/react-aria-modal) | A fully accessible and flexible React modal built  | react, react-component, modal, accessibility, accessible, dialog |
+| [react-aria__focus](./r/react-aria__focus) | Spectrum UI components in React | - |
+| [react-aria__interactions](./r/react-aria__interactions) | Spectrum UI components in React | - |
+| [react-aria__ssr](./r/react-aria__ssr) | Spectrum UI components in React | - |
+| [react-aria__utils](./r/react-aria__utils) | Spectrum UI components in React | - |
 | [react-async](./r/react-async) | React component for declarative promise resolution | react, async, promise, fetch, hook |
 | [react-async-script](./r/react-async-script) | A composition mixin for loading scripts asynchrono | react, asynchronous, script-loader |
 | [react-audio-player](./r/react-audio-player) | A simple React wrapper for the audio tag | react, audio, player, wrapper, simple |
@@ -9793,6 +9810,7 @@
 | [react-star-rating-compone](./r/react-star-rating-component) | React component for star (or any other icon based) | react, component, star, rating, rate, input |
 | [react-star-ratings](./r/react-star-ratings) | A customizable star rating component for selecting | react, component, star, stars, rating, ratings, star ratings, star rating, rate, input, svg, SVG, star rating component, svg icons, react star rating component |
 | [react-stars](./r/react-stars) | Simple star rating component for your React projec | star, rating, react, star, rating, component, raty |
+| [react-stately__utils](./r/react-stately__utils) | Spectrum UI components in React | - |
 | [react-sticky](./r/react-sticky) | Sticky component for React | react-component, React, Sticky |
 | [react-sticky-box](./r/react-sticky-box) | Boxes that behave nicely while scrolling | react, scroll, sticky, fixed |
 | [react-sticky-el](./r/react-sticky-el) | Sticky component for React | react, reactjs, sticky, fixed, react-sticky |
@@ -9855,6 +9873,7 @@
 | [react-twitter-conversion-](./r/react-twitter-conversion-tracker) | React JS component for Twitter's conversion tracki | react, reactjs, react-component, twitter, conversion, tracking, website tag |
 | [react-twitter-conversion-](./r/react-twitter-conversion-tracker-plus) | React JS component for Twitter's conversion tracki | react, reactjs, react-component, twitter, conversion, tracking, website tag |
 | [react-type-animation](./r/react-type-animation) | Customizable React typing animation component base | react, reactjs, animation, typing, typewriter, typing animation, type animation, react typing animation, react type effect, type effect, text animation |
+| [react-types__shared](./r/react-types__shared) | Spectrum UI components in React | - |
 | [react-typical](./r/react-typical) | React Animated typing in ~400 bytes 🐡 of JavaScri | - |
 | [react-typing-animation](./r/react-typing-animation) | - | react, typing, animation, animated, typewriter, typist, typer |
 | [react-typing-effect](./r/react-typing-effect) | Simulates typing effect, eraser effect and blinkin | - |
@@ -12428,6 +12447,7 @@
 | [wix-design-systems-locale](./w/wix-design-systems-locale-utils) | > A common utils used within the wix-design-system | - |
 | [wix-design-systems-provid](./w/wix-design-systems-providers) | A common providers library used within the wix-des | - |
 | [wix-eventually](./w/wix-eventually) | retrying execution of function for tests | - |
+| [wix-style-react](./w/wix-style-react) | wix-style-react | - |
 | [wix-ui-icons-common](./w/wix-ui-icons-common) | - | - |
 | [wix-ui-test-utils](./w/wix-ui-test-utils) | > A common test utils used within the different wi | - |
 | [wix__wix-ui-icons-common](./w/wix__wix-ui-icons-common) | A set of commonly used icons for the Wix UI design | - |
@@ -12642,6 +12662,7 @@
 | [yargs-parser](./y/yargs-parser) | the mighty option parser used by yargs | argument, parser, yargs, command, cli, parsing, option, args, argument |
 | [yargs-unparser](./y/yargs-unparser) | Converts back a yargs argv object to its original  | yargs, unparse, expand, inverse, argv |
 | [yarnpkg__lockfile](./y/yarnpkg__lockfile) | The parser/stringifier for Yarn lockfiles. | yarn, yarnpkg, lockfile, dependency, npm |
+| [yarnpkg__parsers](./y/yarnpkg__parsers) | - | - |
 | [yauzl](./y/yauzl) | yet another unzip library for node | unzip, zip, stream, archive, file |
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |

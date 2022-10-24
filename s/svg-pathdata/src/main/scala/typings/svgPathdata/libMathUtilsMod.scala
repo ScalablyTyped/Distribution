@@ -32,5 +32,5 @@ object libMathUtilsMod {
   
   inline def lerp(a: Double, b: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def rotate(hasXY: js.Tuple2[Double, Double], rad: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(hasXY.asInstanceOf[js.Any], rad.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def rotate(param0: js.Tuple2[Double, Double], rad: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(param0.asInstanceOf[js.Any], rad.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

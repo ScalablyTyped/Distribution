@@ -12,5 +12,5 @@ object libMixinsRadialGradientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColorStopsExtentFallbackPositionShape.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(param0: RadialGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

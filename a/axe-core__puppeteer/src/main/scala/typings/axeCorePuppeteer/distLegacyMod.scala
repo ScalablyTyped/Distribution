@@ -13,8 +13,8 @@ object distLegacyMod {
   
   inline def iframeSelector(disabledFrameSelectors: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iframeSelector")(disabledFrameSelectors.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def injectJS(frame: Unit, hasSourceSelectorLogOnErrorArgs: IInjectAxeArgs): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("injectJS")(frame.asInstanceOf[js.Any], hasSourceSelectorLogOnErrorArgs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def injectJS(frame: Frame, hasSourceSelectorLogOnErrorArgs: IInjectAxeArgs): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("injectJS")(frame.asInstanceOf[js.Any], hasSourceSelectorLogOnErrorArgs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def injectJS(frame: Unit, param1: IInjectAxeArgs): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("injectJS")(frame.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def injectJS(frame: Frame, param1: IInjectAxeArgs): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("injectJS")(frame.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait IInjectAxeArgs extends StObject {
     

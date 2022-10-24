@@ -13,8 +13,5 @@ object distTs3Dot9ClientPreviewRenderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def renderToDOM(
-    hasStoryFnKindNameShowMainShowErrorForceRemount: RenderContext[HtmlFramework],
-    domElement: HTMLElement
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToDOM")(hasStoryFnKindNameShowMainShowErrorForceRemount.asInstanceOf[js.Any], domElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderToDOM(param0: RenderContext[HtmlFramework], domElement: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToDOM")(param0.asInstanceOf[js.Any], domElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

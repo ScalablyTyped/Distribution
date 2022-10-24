@@ -31,9 +31,7 @@ object distButtonSrcUseButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useButton(
-    hasModuleVariantColorShapeAutoFocusFluidLoadingSizeActiveFocusHoverTypeAsForwardedRef: UseButtonProps
-  ): UseButtonReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useButton")(hasModuleVariantColorShapeAutoFocusFluidLoadingSizeActiveFocusHoverTypeAsForwardedRef.asInstanceOf[js.Any]).asInstanceOf[UseButtonReturn]
+  inline def useButton(param0: UseButtonProps): UseButtonReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useButton")(param0.asInstanceOf[js.Any]).asInstanceOf[UseButtonReturn]
   
   trait UseButtonProps
     extends StObject

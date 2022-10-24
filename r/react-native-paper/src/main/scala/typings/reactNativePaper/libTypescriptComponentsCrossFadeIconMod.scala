@@ -18,10 +18,7 @@ object libTypescriptComponentsCrossFadeIconMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/CrossFadeIcon", JSImport.Default)
   @js.native
-  val default: ComponentType[PickPropssourcecolorsizet] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[/* hasColorSizeSourceTheme */ Props, Element]), 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickPropssourcecolorsizet] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) = js.native
   
   trait Props extends StObject {
     
@@ -68,14 +65,8 @@ object libTypescriptComponentsCrossFadeIconMod extends Shortcut {
     }
   }
   
-  type _To = ComponentType[PickPropssourcecolorsizet] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[/* hasColorSizeSourceTheme */ Props, Element]), 
-    js.Object
-  ])
+  type _To = ComponentType[PickPropssourcecolorsizet] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsCrossFadeIconMod.foo` */
-  override def _to: ComponentType[PickPropssourcecolorsizet] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[/* hasColorSizeSourceTheme */ Props, Element]), 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickPropssourcecolorsizet] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) = default
 }

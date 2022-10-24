@@ -12,5 +12,5 @@ object typesSrcSharedImageUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def applyMaskImageData(hasSrcSrcPosDestDestPosWidthHeightInverseDecode: Dest): DestPos = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMaskImageData")(hasSrcSrcPosDestDestPosWidthHeightInverseDecode.asInstanceOf[js.Any]).asInstanceOf[DestPos]
+  inline def applyMaskImageData(param0: Dest): DestPos = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMaskImageData")(param0.asInstanceOf[js.Any]).asInstanceOf[DestPos]
 }

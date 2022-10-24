@@ -18,7 +18,7 @@ object buildAndroidVersionMod {
   
   inline def getVersionName(config: PickExpoConfigversion): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersionName")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def setMinBuildScriptExtVersion(buildGradle: String, hasNameMinVersion: MinVersion): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setMinBuildScriptExtVersion")(buildGradle.asInstanceOf[js.Any], hasNameMinVersion.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def setMinBuildScriptExtVersion(buildGradle: String, param1: MinVersion): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setMinBuildScriptExtVersion")(buildGradle.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def setVersionCode(config: PickExpoConfigandroid, buildGradle: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setVersionCode")(config.asInstanceOf[js.Any], buildGradle.asInstanceOf[js.Any])).asInstanceOf[String]
   

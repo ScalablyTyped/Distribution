@@ -259,7 +259,7 @@ object mod {
     /**
       * CustomHelper component
       */
-    var CustomHelper: js.UndefOr[js.Function1[/* hasProps */ CustomHelperProps, ReactElement]] = js.undefined
+    var CustomHelper: js.UndefOr[js.Function1[/* param0 */ CustomHelperProps, ReactElement]] = js.undefined
     
     /**
       * Change `--reactour-accent` _(defaults to accentColor on IE)_ css custom prop to apply color in _Helper_, number, dots, etc
@@ -494,7 +494,7 @@ object mod {
       
       inline def setCloseWithMaskUndefined: Self = StObject.set(x, "closeWithMask", js.undefined)
       
-      inline def setCustomHelper(value: /* hasProps */ CustomHelperProps => ReactElement): Self = StObject.set(x, "CustomHelper", js.Any.fromFunction1(value))
+      inline def setCustomHelper(value: /* param0 */ CustomHelperProps => ReactElement): Self = StObject.set(x, "CustomHelper", js.Any.fromFunction1(value))
       
       inline def setCustomHelperUndefined: Self = StObject.set(x, "CustomHelper", js.undefined)
       

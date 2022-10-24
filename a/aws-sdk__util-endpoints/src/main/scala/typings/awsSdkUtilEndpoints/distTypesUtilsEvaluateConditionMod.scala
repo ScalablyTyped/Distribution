@@ -13,5 +13,5 @@ object distTypesUtilsEvaluateConditionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def evaluateCondition(hasAssignFnArgs: ConditionObject, options: EvaluateOptions): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateCondition")(hasAssignFnArgs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def evaluateCondition(param0: ConditionObject, options: EvaluateOptions): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateCondition")(param0.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
 }

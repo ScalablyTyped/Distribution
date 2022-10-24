@@ -13,7 +13,7 @@ object libSrcFormatterExpressionFormatterMod {
   open class default protected ()
     extends StObject
        with ExpressionFormatter {
-    def this(hasCfgDialectCfgParamsLayoutInline: ExpressionFormatterParams) = this()
+    def this(param0: ExpressionFormatterParams) = this()
     
     /* private */ /* CompleteClass */
     var cfg: Any = js.native

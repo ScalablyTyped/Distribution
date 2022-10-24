@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Ellipse ()
   extends typings.antvGLite.distDisplayObjectsMod.Ellipse {
-  def this(hasStyleRest: DisplayObjectConfig[EllipseStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[EllipseStyleProps]) = this()
 }

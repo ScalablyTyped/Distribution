@@ -19,7 +19,7 @@ object distTypesTimeHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createDateNormalizer(hasFormatPrecisionUseUTC: Format): js.Function1[/* value */ js.UndefOr[js.Date | String], js.UndefOr[js.Date]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateNormalizer")(hasFormatPrecisionUseUTC.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ js.UndefOr[js.Date | String], js.UndefOr[js.Date]]]
+  inline def createDateNormalizer(param0: Format): js.Function1[/* value */ js.UndefOr[js.Date | String], js.UndefOr[js.Date]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateNormalizer")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ js.UndefOr[js.Date | String], js.UndefOr[js.Date]]]
   
   inline def createPrecisionMethod(precision: TIME_PRECISION): js.Function1[/* date */ js.Date, js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrecisionMethod")(precision.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ js.Date, js.Date]]
   

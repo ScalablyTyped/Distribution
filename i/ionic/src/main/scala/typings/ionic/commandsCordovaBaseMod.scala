@@ -35,13 +35,13 @@ object commandsCordovaBaseMod {
     /* protected */ def checkCordova(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     
     /* protected */ def checkForPlatformInstallation(platform: String): js.Promise[Unit] = js.native
-    /* protected */ def checkForPlatformInstallation(platform: String, hasPromptToInstallPromptToInstallRefusalMsg: PromptToInstall): js.Promise[Unit] = js.native
+    /* protected */ def checkForPlatformInstallation(platform: String, param1: PromptToInstall): js.Promise[Unit] = js.native
     
     /* protected */ def integration: RequiredProjectIntegratio = js.native
     
     /* protected */ def preRunChecks(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     
     /* protected */ def runCordova(argList: js.Array[String]): js.Promise[Unit] = js.native
-    /* protected */ def runCordova(argList: js.Array[String], hasFatalOnNotFoundTruncateErrorOutputOptions: IShellRunOptions): js.Promise[Unit] = js.native
+    /* protected */ def runCordova(argList: js.Array[String], param1: IShellRunOptions): js.Promise[Unit] = js.native
   }
 }

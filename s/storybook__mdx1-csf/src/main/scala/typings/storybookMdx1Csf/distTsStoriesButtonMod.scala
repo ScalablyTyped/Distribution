@@ -14,7 +14,7 @@ object distTsStoriesButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Button(hasPrimarySizeBackgroundColorLabelProps: ButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(hasPrimarySizeBackgroundColorLabelProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Button(param0: ButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ButtonProps extends StObject {
     

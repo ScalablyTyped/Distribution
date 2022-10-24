@@ -15,7 +15,7 @@ object distSrcModulesUiPreviewThumbnailPreviewThumbnailMod {
   open class default protected ()
     extends StObject
        with PreviewThumbnail {
-    def this(hasPreviewService: PreviewServiceIPreviewService) = this()
+    def this(param0: PreviewServiceIPreviewService) = this()
     
     /* private */ /* CompleteClass */
     var _currentFrames: Any = js.native

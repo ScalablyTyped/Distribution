@@ -18,14 +18,12 @@ object distTypesArcLinkLabelsUseArcLinkLabelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useArcLinkLabels[Datum /* <: DatumWithArcAndColor */](
-    hasDataSkipAngleOffsetDiagonalLengthStraightLengthTextOffsetLabelLinkColorTextColor: DiagonalLength[Datum]
-  ): js.Array[
+  inline def useArcLinkLabels[Datum /* <: DatumWithArcAndColor */](param0: DiagonalLength[Datum]): js.Array[
     ArcLinkWithDatum[Datum] & (Omit[
       ArcLinkLabel[Datum], 
       /* keyof @nivo/arcs.@nivo/arcs/dist/types/arc_link_labels/types.ArcLinkWithDatum<Datum> */ data | side | points
     ])
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLinkLabels")(hasDataSkipAngleOffsetDiagonalLengthStraightLengthTextOffsetLabelLinkColorTextColor.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLinkLabels")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[
     ArcLinkWithDatum[Datum] & (Omit[
       ArcLinkLabel[Datum], 
       /* keyof @nivo/arcs.@nivo/arcs/dist/types/arc_link_labels/types.ArcLinkWithDatum<Datum> */ data | side | points

@@ -43,7 +43,7 @@ object distTs3Dot9StoryStoreMod {
     
     def cleanupStory(story: Story[TFramework]): Unit = js.native
     
-    def componentStoriesFromCSFFile(hasCsfFile: CsfFileCSFFile[TFramework]): js.Array[Story[TFramework]] = js.native
+    def componentStoriesFromCSFFile(param0: CsfFileCSFFile[TFramework]): js.Array[Story[TFramework]] = js.native
     
     def extract(): Record[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any, 
@@ -78,7 +78,7 @@ object distTs3Dot9StoryStoreMod {
     
     var initializationPromise: SynchronousPromise[Unit] = js.native
     
-    def initialize(hasStoryIndexImportFnCache: Cache): PromiseLike[Unit] = js.native
+    def initialize(param0: Cache): PromiseLike[Unit] = js.native
     
     def loadAllCSFFiles(): PromiseLike[js.UndefOr[Record[Path, CSFFile[TFramework]]]] = js.native
     
@@ -86,9 +86,9 @@ object distTs3Dot9StoryStoreMod {
       storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
     ): PromiseLike[CSFFile[TFramework]] = js.native
     
-    def loadStory(hasStoryId: StoryId): js.Promise[Story[TFramework]] = js.native
+    def loadStory(param0: StoryId): js.Promise[Story[TFramework]] = js.native
     
-    def onStoriesChanged(hasImportFnStoryIndex: ImportFn): js.Promise[Unit] = js.native
+    def onStoriesChanged(param0: ImportFn): js.Promise[Unit] = js.native
     
     var prepareStoryWithCache: FnCallStoryAnnotationsComponentAnnotationsProjectAnnotations = js.native
     
@@ -104,7 +104,7 @@ object distTs3Dot9StoryStoreMod {
       projectAnnotations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectAnnotations<TFramework> */ Any
     ): Unit = js.native
     
-    def storyFromCSFFile(hasStoryIdCsfFile: CsfFile[TFramework]): Story[TFramework] = js.native
+    def storyFromCSFFile(param0: CsfFile[TFramework]): Story[TFramework] = js.native
     
     var storyIndex: StoryIndexStore = js.native
   }

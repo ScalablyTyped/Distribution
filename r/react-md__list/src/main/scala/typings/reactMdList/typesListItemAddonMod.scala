@@ -12,7 +12,7 @@ object typesListItemAddonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ListItemAddon(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps: ListItemAddonProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemAddon")(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ListItemAddon(param0: ListItemAddonProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemAddon")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdList.reactMdListStrings.top

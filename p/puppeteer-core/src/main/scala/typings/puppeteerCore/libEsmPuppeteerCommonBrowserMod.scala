@@ -1,9 +1,9 @@
 package typings.puppeteerCore
 
 import typings.node.childProcessMod.ChildProcess
+import typings.puppeteerCore.libEsmPuppeteerApiBrowserContextMod.BrowserContext
 import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.Browser
 import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.BrowserCloseCallback
-import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.BrowserContext
 import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.IsPageTargetCallback
 import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.TargetFilterCallback
 import typings.puppeteerCore.libEsmPuppeteerCommonConnectionMod.Connection

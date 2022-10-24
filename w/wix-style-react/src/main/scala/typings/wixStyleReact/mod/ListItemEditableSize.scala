@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ListItemEditableSize extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.wixStyleReact.listItemEditableMod.ListItemEditableSize & String] = js.native
+  def apply(value: String): js.UndefOr[typings.wixStyleReact.distTypesListItemEditableMod.ListItemEditableSize & String] = js.native
   
-  /* "medium" */ val MEDIUM: typings.wixStyleReact.listItemEditableMod.ListItemEditableSize.MEDIUM & String = js.native
+  /* "medium" */ val MEDIUM: typings.wixStyleReact.distTypesListItemEditableMod.ListItemEditableSize.MEDIUM & String = js.native
   
-  /* "small" */ val SMALL: typings.wixStyleReact.listItemEditableMod.ListItemEditableSize.SMALL & String = js.native
+  /* "small" */ val SMALL: typings.wixStyleReact.distTypesListItemEditableMod.ListItemEditableSize.SMALL & String = js.native
 }

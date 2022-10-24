@@ -12,7 +12,7 @@ object distClientPortalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Portal(hasChildrenType: PortalProps): ReactPortal | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(hasChildrenType.asInstanceOf[js.Any]).asInstanceOf[ReactPortal | Null]
+  inline def Portal(param0: PortalProps): ReactPortal | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactPortal | Null]
   
   trait PortalProps extends StObject {
     

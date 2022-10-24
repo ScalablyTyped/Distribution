@@ -12,5 +12,5 @@ object distTypesCalendarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Calendar(hasIsInteractiveRenderWrapperThemeProps: CalendarSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Calendar")(hasIsInteractiveRenderWrapperThemeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Calendar(param0: CalendarSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Calendar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

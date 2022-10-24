@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/codeeditor" : "3.4.8"
+      "@jupyterlab/codeeditor" : "3.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/codeeditor" : "3.4.8"
+      "@jupyterlab/codeeditor" : "3.5.0"
     }
   ],
   "compile-devDependencies" : [

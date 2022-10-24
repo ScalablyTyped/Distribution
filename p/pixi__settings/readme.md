@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__settings
 
-Typings are for version 6.5.7
+Typings are for version 6.5.8
 
 ## Library description:
 Collecting of user configurable settings used throughout PixiJS

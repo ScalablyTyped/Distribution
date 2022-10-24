@@ -13,7 +13,7 @@ object libHooksUseOnCellActiveAnimationMod {
   val ^ : js.Any = js.native
   
   inline def useOnCellActiveAnimation(): IsActive = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnCellActiveAnimation")().asInstanceOf[IsActive]
-  inline def useOnCellActiveAnimation(hasAnimationConfig: Params): IsActive = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnCellActiveAnimation")(hasAnimationConfig.asInstanceOf[js.Any]).asInstanceOf[IsActive]
+  inline def useOnCellActiveAnimation(param0: Params): IsActive = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnCellActiveAnimation")(param0.asInstanceOf[js.Any]).asInstanceOf[IsActive]
   
   trait Params extends StObject {
     

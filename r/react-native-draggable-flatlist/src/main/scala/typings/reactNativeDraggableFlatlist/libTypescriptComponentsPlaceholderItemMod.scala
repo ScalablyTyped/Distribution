@@ -14,7 +14,7 @@ object libTypescriptComponentsPlaceholderItemMod {
   val ^ : js.Any = js.native
   
   /* was `typeof PlaceholderItem` */
-  inline def default[T](hasRenderPlaceholder: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRenderPlaceholder.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[T](param0: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props[T] extends StObject {
     

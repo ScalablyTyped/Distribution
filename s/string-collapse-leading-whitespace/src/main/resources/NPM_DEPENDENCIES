@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "string-collapse-leading-whitespace" : "6.1.3"
+      "string-collapse-leading-whitespace" : "6.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "string-collapse-leading-whitespace" : "6.1.3"
+      "string-collapse-leading-whitespace" : "6.1.4"
     }
   ],
   "compile-devDependencies" : [

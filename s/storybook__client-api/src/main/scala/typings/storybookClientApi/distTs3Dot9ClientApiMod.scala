@@ -24,7 +24,7 @@ object distTs3Dot9ClientApiMod {
   @JSImport("@storybook/client-api/dist/ts3.9/ClientApi", "ClientApi")
   @js.native
   open class ClientApi[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] () extends StObject {
-    def this(hasStoryStore: StoryStore[TFramework]) = this()
+    def this(param0: StoryStore[TFramework]) = this()
     
     def _storyStore: typings.storybookStore.mod.StoryStore[TFramework] = js.native
     
@@ -52,7 +52,7 @@ object distTs3Dot9ClientApiMod {
       loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LoaderFunction<TFramework> */ Any
     ): Unit = js.native
     
-    def addParameters(hasGlobalsGlobalTypesParameters: (Parameters[js.Function1[/* args */ Any, Any]]) & GlobalTypes): Unit = js.native
+    def addParameters(param0: (Parameters[js.Function1[/* args */ Any, Any]]) & GlobalTypes): Unit = js.native
     
     /* private */ var addons: Any = js.native
     
@@ -68,7 +68,7 @@ object distTs3Dot9ClientApiMod {
     
     /* private */ var lastFileName: Any = js.native
     
-    var onImportFnChanged: js.UndefOr[js.Function1[/* hasImportFn */ ImportFn, Unit]] = js.native
+    var onImportFnChanged: js.UndefOr[js.Function1[/* param0 */ ImportFn, Unit]] = js.native
     
     def raw(): js.Array[BoundStory[TFramework]] = js.native
     

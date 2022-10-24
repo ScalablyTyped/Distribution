@@ -12,5 +12,5 @@ object distUiComponentsJobCardButtonButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Button(hasChildrenClassNameIsActiveRest: ClassAttributesHTMLButton): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(hasChildrenClassNameIsActiveRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Button(param0: ClassAttributesHTMLButton): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

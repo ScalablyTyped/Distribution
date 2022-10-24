@@ -45,7 +45,7 @@ object libCreateClassFromSpecMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasModeSpec: Mode): Constructor[PureComponent[FixedVegaChartProps, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasModeSpec.asInstanceOf[js.Any]).asInstanceOf[Constructor[PureComponent[FixedVegaChartProps, js.Object, Any]]]
+  inline def default(param0: Mode): Constructor[PureComponent[FixedVegaChartProps, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Constructor[PureComponent[FixedVegaChartProps, js.Object, Any]]]
   
   @js.native
   trait Constructor[T]

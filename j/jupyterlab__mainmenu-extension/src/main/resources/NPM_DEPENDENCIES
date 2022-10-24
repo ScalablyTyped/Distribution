@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/mainmenu-extension" : "3.4.8"
+      "@jupyterlab/mainmenu-extension" : "3.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/mainmenu-extension" : "3.4.8"
+      "@jupyterlab/mainmenu-extension" : "3.5.0"
     }
   ],
   "compile-devDependencies" : [

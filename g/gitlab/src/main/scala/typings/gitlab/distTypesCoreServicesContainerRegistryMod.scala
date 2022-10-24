@@ -15,7 +15,7 @@ object distTypesCoreServicesContainerRegistryMod {
   @JSImport("gitlab/dist/types/core/services/ContainerRegistry", "ContainerRegistry")
   @js.native
   open class ContainerRegistry () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def removeRepository(projectId: String, repositoryId: Double): js.Promise[js.Object] = js.native
     def removeRepository(projectId: String, repositoryId: Double, options: Sudo): js.Promise[js.Object] = js.native

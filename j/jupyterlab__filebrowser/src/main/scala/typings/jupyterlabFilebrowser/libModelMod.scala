@@ -356,6 +356,14 @@ object libModelMod {
     
     /* private */ var _filter: Any = js.native
     
+    /* private */ var _filterDirectories: Any = js.native
+    
+    /**
+      * Whether to filter directories.
+      */
+    def filterDirectories: Boolean = js.native
+    def filterDirectories_=(value: Boolean): Unit = js.native
+    
     def setFilter(filter: js.Function1[/* value */ IModel, Boolean | PartialIScore | Null]): Unit = js.native
   }
   object FilterFileBrowserModel {
@@ -371,6 +379,11 @@ object libModelMod {
         * Filter function on file browser item model
         */
       var filter: js.UndefOr[js.Function1[/* value */ IModel, Boolean | PartialIScore | Null]] = js.undefined
+      
+      /**
+        * Filter directories
+        */
+      var filterDirectories: js.UndefOr[Boolean] = js.undefined
     }
     object IOptions {
       
@@ -382,6 +395,10 @@ object libModelMod {
       extension [Self <: typings.jupyterlabFilebrowser.libModelMod.FilterFileBrowserModel.IOptions](x: Self) {
         
         inline def setFilter(value: /* value */ IModel => Boolean | PartialIScore | Null): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+        
+        inline def setFilterDirectories(value: Boolean): Self = StObject.set(x, "filterDirectories", value.asInstanceOf[js.Any])
+        
+        inline def setFilterDirectoriesUndefined: Self = StObject.set(x, "filterDirectories", js.undefined)
         
         inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       }

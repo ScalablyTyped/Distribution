@@ -69,7 +69,7 @@ trait TimelineController
   
   /* private */ var nonNativeCaptionsTracks: Any
   
-  def onBufferFlushing(event: BUFFER_FLUSHING, hasStartOffsetEndOffsetEndOffsetSubtitlesType: BufferFlushingData): Unit
+  def onBufferFlushing(event: BUFFER_FLUSHING, param1: BufferFlushingData): Unit
   
   /* private */ var onFragDecrypted: Any
   

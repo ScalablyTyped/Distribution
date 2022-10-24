@@ -16,6 +16,6 @@ object distGetOptionsOverridesMod {
   
   inline def createFilter(context: RollupContext, pluginOptions: IOptions, parsedConfig: ParsedCommandLine): js.Function1[/* id */ Any, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(context.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any], parsedConfig.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* id */ Any, Boolean]]
   
-  inline def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRoot: IOptions): CompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(hasUseTsconfigDeclarationDirCacheRoot.asInstanceOf[js.Any]).asInstanceOf[CompilerOptions]
-  inline def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRoot: IOptions, preParsedTsconfig: ParsedCommandLine): CompilerOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(hasUseTsconfigDeclarationDirCacheRoot.asInstanceOf[js.Any], preParsedTsconfig.asInstanceOf[js.Any])).asInstanceOf[CompilerOptions]
+  inline def getOptionsOverrides(param0: IOptions): CompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(param0.asInstanceOf[js.Any]).asInstanceOf[CompilerOptions]
+  inline def getOptionsOverrides(param0: IOptions, preParsedTsconfig: ParsedCommandLine): CompilerOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(param0.asInstanceOf[js.Any], preParsedTsconfig.asInstanceOf[js.Any])).asInstanceOf[CompilerOptions]
 }

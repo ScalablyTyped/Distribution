@@ -29,7 +29,7 @@ object distServerLoadComponentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loadComponents(hasDistDirPathnameServerlessHasServerComponentsIsAppPath: Serverless): js.Promise[LoadComponentsReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(hasDistDirPathnameServerlessHasServerComponentsIsAppPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LoadComponentsReturnType]]
+  inline def loadComponents(param0: Serverless): js.Promise[LoadComponentsReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LoadComponentsReturnType]]
   
   inline def loadDefaultErrorComponents(distDir: String): js.Promise[BuildManifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDefaultErrorComponents")(distDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildManifest]]
   

@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class CustomElement[CustomElementStyleProps] ()
   extends typings.antvGLite.distDisplayObjectsMod.CustomElement[CustomElementStyleProps] {
-  def this(hasStyleRest: DisplayObjectConfig[CustomElementStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[CustomElementStyleProps]) = this()
 }

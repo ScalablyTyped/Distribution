@@ -24,9 +24,7 @@ object distInputSrcUseInputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useInput(
-    hasModuleIdValuePlaceholderRequiredValidationStateOnChangeTypeAutoFocusDisabledReadOnlyFluidLoadingActiveFocusHoverForwardedRef: UseInputProps
-  ): InputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useInput")(hasModuleIdValuePlaceholderRequiredValidationStateOnChangeTypeAutoFocusDisabledReadOnlyFluidLoadingActiveFocusHoverForwardedRef.asInstanceOf[js.Any]).asInstanceOf[InputProps]
+  inline def useInput(param0: UseInputProps): InputProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useInput")(param0.asInstanceOf[js.Any]).asInstanceOf[InputProps]
   
   trait UseInputProps extends StObject {
     

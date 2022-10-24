@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "mobx-devtools-mst"
-version := "0.9.30-2f59da"
-scalaVersion := "3.1.2"
+version := "0.9.30-1737da"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

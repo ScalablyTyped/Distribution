@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "wry__equality"
-version := "0.5.3-2418fa"
-scalaVersion := "3.1.2"
+version := "0.5.3-81be18"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

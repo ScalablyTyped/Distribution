@@ -13,7 +13,7 @@ object distTypesSankeyMod {
   val ^ : js.Any = js.native
   
   inline def generateSankeyData(): Nodes = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSankeyData")().asInstanceOf[Nodes]
-  inline def generateSankeyData(hasNodeCountMaxIterations: MaxIterations): Nodes = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSankeyData")(hasNodeCountMaxIterations.asInstanceOf[js.Any]).asInstanceOf[Nodes]
+  inline def generateSankeyData(param0: MaxIterations): Nodes = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSankeyData")(param0.asInstanceOf[js.Any]).asInstanceOf[Nodes]
   
   trait Link extends StObject {
     

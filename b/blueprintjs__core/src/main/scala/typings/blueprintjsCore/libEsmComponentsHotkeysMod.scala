@@ -81,7 +81,7 @@ object libEsmComponentsHotkeysMod {
   
   inline def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): DisplayName & T = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[DisplayName & T]
   
-  inline def HotkeysTarget2(hasChildrenHotkeysOptions: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(hasChildrenHotkeysOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HotkeysTarget2(param0: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys", "KeyCombo")
   @js.native

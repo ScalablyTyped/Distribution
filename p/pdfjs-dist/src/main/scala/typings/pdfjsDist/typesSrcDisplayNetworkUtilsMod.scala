@@ -18,7 +18,7 @@ object typesSrcDisplayNetworkUtilsMod {
   
   inline def extractFilenameFromHeader(getResponseHeader: Any): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractFilenameFromHeader")(getResponseHeader.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def validateRangeRequestCapabilities(hasGetResponseHeaderIsHttpRangeChunkSizeDisableRange: DisableRange): AllowRangeRequests = ^.asInstanceOf[js.Dynamic].applyDynamic("validateRangeRequestCapabilities")(hasGetResponseHeaderIsHttpRangeChunkSizeDisableRange.asInstanceOf[js.Any]).asInstanceOf[AllowRangeRequests]
+  inline def validateRangeRequestCapabilities(param0: DisableRange): AllowRangeRequests = ^.asInstanceOf[js.Dynamic].applyDynamic("validateRangeRequestCapabilities")(param0.asInstanceOf[js.Any]).asInstanceOf[AllowRangeRequests]
   
   inline def validateResponseStatus(status: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateResponseStatus")(status.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

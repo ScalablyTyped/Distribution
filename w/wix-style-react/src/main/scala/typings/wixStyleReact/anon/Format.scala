@@ -1,30 +1,35 @@
 package typings.wixStyleReact.anon
 
+import typings.wixStyleReact.wixStyleReactStrings.formatError
+import typings.wixStyleReact.wixStyleReactStrings.outOfBoundsError
+import typings.wixStyleReact.wixStyleReactStrings.valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Format extends StObject {
   
-  var distanceInWords: js.UndefOr[js.Object] = js.undefined
+  var format: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[js.Object] = js.undefined
+  var validationType: outOfBoundsError | formatError | valid
+  
+  var value: String
 }
 object Format {
   
-  inline def apply(): Format = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(validationType: outOfBoundsError | formatError | valid, value: String): Format = {
+    val __obj = js.Dynamic.literal(validationType = validationType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
   
   extension [Self <: Format](x: Self) {
     
-    inline def setDistanceInWords(value: js.Object): Self = StObject.set(x, "distanceInWords", value.asInstanceOf[js.Any])
-    
-    inline def setDistanceInWordsUndefined: Self = StObject.set(x, "distanceInWords", js.undefined)
-    
-    inline def setFormat(value: js.Object): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setValidationType(value: outOfBoundsError | formatError | valid): Self = StObject.set(x, "validationType", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

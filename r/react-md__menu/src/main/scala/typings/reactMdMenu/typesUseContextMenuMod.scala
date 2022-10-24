@@ -30,9 +30,7 @@ object typesUseContextMenuMod {
   val ^ : js.Any = js.native
   
   inline def useContextMenu(): ContextMenuHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ContextMenuHookReturnValue]
-  inline def useContextMenu(
-    hasAnchorBaseIdMenuLabelFixedPositionOptionsOnContextMenuPreventScrollOptions: ContextMenuHookOptions
-  ): ContextMenuHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasAnchorBaseIdMenuLabelFixedPositionOptionsOnContextMenuPreventScrollOptions.asInstanceOf[js.Any]).asInstanceOf[ContextMenuHookReturnValue]
+  inline def useContextMenu(param0: ContextMenuHookOptions): ContextMenuHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(param0.asInstanceOf[js.Any]).asInstanceOf[ContextMenuHookReturnValue]
   
   /* Inlined parent std.Omit<@react-md/menu.@react-md/menu/types/types.BaseMenuHookOptions, 'baseId' | 'visible' | 'setVisible'> */
   trait ContextMenuHookOptions extends StObject {

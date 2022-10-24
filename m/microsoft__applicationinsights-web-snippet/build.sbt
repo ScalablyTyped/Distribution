@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "microsoft__applicationinsights-web-snippet"
-version := "1.0.1-c222e4"
-scalaVersion := "3.1.2"
+version := "1.0.1-f5c215"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

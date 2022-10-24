@@ -139,18 +139,18 @@ object mod {
     
     var FooterCell: js.UndefOr[js.Function1[/* props */ Record[String, Any], ReactNode]] = js.undefined
     
-    var FooterCells: js.UndefOr[js.Function1[/* hasColumnsComponents */ Columns, ReactNode]] = js.undefined
+    var FooterCells: js.UndefOr[js.Function1[/* param0 */ Columns, ReactNode]] = js.undefined
     
     // Same as above.
     var HeaderCell: js.UndefOr[js.Function1[/* props */ Record[String, Any], ReactNode]] = js.undefined
     
-    var HeaderCells: js.UndefOr[js.Function1[/* hasColumnsComponents */ Columns, ReactNode]] = js.undefined
+    var HeaderCells: js.UndefOr[js.Function1[/* param0 */ Columns, ReactNode]] = js.undefined
     
     // "/* To prevent double memoization in case of HOC usage */"
-    var OriginalRow: js.UndefOr[js.Function1[/* hasII2ModelData */ Data, ReactNode]] = js.undefined
+    var OriginalRow: js.UndefOr[js.Function1[/* param0 */ Data, ReactNode]] = js.undefined
     
     // Row rendering function
-    var Row: js.UndefOr[js.Function1[/* hasII2ModelData */ Data, ReactNode]] = js.undefined
+    var Row: js.UndefOr[js.Function1[/* param0 */ Data, ReactNode]] = js.undefined
     
     // For the basic table elements, you can use a string for dom elements
     // Otherwise, a function that accepts a props object for the specific table element and returns a react element
@@ -211,7 +211,7 @@ object mod {
       
       inline def setFooterCellUndefined: Self = StObject.set(x, "FooterCell", js.undefined)
       
-      inline def setFooterCells(value: /* hasColumnsComponents */ Columns => ReactNode): Self = StObject.set(x, "FooterCells", js.Any.fromFunction1(value))
+      inline def setFooterCells(value: /* param0 */ Columns => ReactNode): Self = StObject.set(x, "FooterCells", js.Any.fromFunction1(value))
       
       inline def setFooterCellsUndefined: Self = StObject.set(x, "FooterCells", js.undefined)
       
@@ -219,15 +219,15 @@ object mod {
       
       inline def setHeaderCellUndefined: Self = StObject.set(x, "HeaderCell", js.undefined)
       
-      inline def setHeaderCells(value: /* hasColumnsComponents */ Columns => ReactNode): Self = StObject.set(x, "HeaderCells", js.Any.fromFunction1(value))
+      inline def setHeaderCells(value: /* param0 */ Columns => ReactNode): Self = StObject.set(x, "HeaderCells", js.Any.fromFunction1(value))
       
       inline def setHeaderCellsUndefined: Self = StObject.set(x, "HeaderCells", js.undefined)
       
-      inline def setOriginalRow(value: /* hasII2ModelData */ Data => ReactNode): Self = StObject.set(x, "OriginalRow", js.Any.fromFunction1(value))
+      inline def setOriginalRow(value: /* param0 */ Data => ReactNode): Self = StObject.set(x, "OriginalRow", js.Any.fromFunction1(value))
       
       inline def setOriginalRowUndefined: Self = StObject.set(x, "OriginalRow", js.undefined)
       
-      inline def setRow(value: /* hasII2ModelData */ Data => ReactNode): Self = StObject.set(x, "Row", js.Any.fromFunction1(value))
+      inline def setRow(value: /* param0 */ Data => ReactNode): Self = StObject.set(x, "Row", js.Any.fromFunction1(value))
       
       inline def setRowUndefined: Self = StObject.set(x, "Row", js.undefined)
       

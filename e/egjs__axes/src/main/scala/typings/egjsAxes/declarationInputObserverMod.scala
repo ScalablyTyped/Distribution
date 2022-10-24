@@ -13,7 +13,7 @@ object declarationInputObserverMod {
   open class InputObserver protected ()
     extends StObject
        with InputTypeObserver {
-    def this(hasOptionsInterruptManagerEventManagerAxisManagerAnimationManager: AnimationManager) = this()
+    def this(param0: AnimationManager) = this()
     
     /* private */ var _animationManager: Any = js.native
     

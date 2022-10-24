@@ -18,7 +18,7 @@ object libSrcMessageMod {
   val formatMessage: FormatMessageFn[Any] = js.native
   
   type FormatMessageFn[T] = js.Function5[
-    /* hasLocaleFormatsMessagesDefaultLocaleDefaultFormatsFallbackOnEmptyStringOnErrorTimeZoneDefaultRichTextElements */ DefaultFormats[T], 
+    /* param0 */ DefaultFormats[T], 
     /* state */ FormattersPickFormattersg, 
     /* messageDescriptor */ MessageDescriptor, 
     /* values */ js.UndefOr[

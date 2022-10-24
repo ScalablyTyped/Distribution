@@ -59,10 +59,7 @@ object mod {
   
   inline def last[T](arr: js.Array[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(arr.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
-  inline def tokenize[T /* <: Token[Any] */](
-    source: String,
-    hasIsDelimiterIsStringDelimiterIsWhitespaceShouldAddTokenCreateTokenGetCommentStartTypeIsCommentEndGetUnclosedCommentOffset: TokyOptions[T]
-  ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(source.asInstanceOf[js.Any], hasIsDelimiterIsStringDelimiterIsWhitespaceShouldAddTokenCreateTokenGetCommentStartTypeIsCommentEndGetUnclosedCommentOffset.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def tokenize[T /* <: Token[Any] */](source: String, param1: TokyOptions[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(source.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def trimTokens[Tokens /* <: js.Array[Token[Any]] */](tokens: Tokens, shouldTrimToken: js.Function1[/* token */ Token[Any], Boolean]): js.Array[Token[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("trimTokens")(tokens.asInstanceOf[js.Any], shouldTrimToken.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token[Any]]]
 }

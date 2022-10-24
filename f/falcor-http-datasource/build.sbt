@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "falcor-http-datasource"
-version := "0.1.3-dt-20220818Z-b0c85c"
-scalaVersion := "3.1.2"
+version := "0.1.3-dt-20220818Z-32836e"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

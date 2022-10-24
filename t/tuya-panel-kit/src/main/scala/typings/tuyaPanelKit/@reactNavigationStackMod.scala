@@ -47,19 +47,19 @@ object `@reactNavigationStackMod` {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def forFadeFromBottomAndroid(hasCurrentInvertedHasScreenClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFadeFromBottomAndroid")(hasCurrentInvertedHasScreenClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    inline def forFadeFromBottomAndroid(param0: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFadeFromBottomAndroid")(param0.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    inline def forHorizontalIOS(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forHorizontalIOS")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    inline def forHorizontalIOS(param0: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forHorizontalIOS")(param0.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    inline def forModalPresentationIOS(hasIndexCurrentNextInvertedHasScreenInsets: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forModalPresentationIOS")(hasIndexCurrentNextInvertedHasScreenInsets.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    inline def forModalPresentationIOS(param0: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forModalPresentationIOS")(param0.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
     inline def forNoAnimation(): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackCardInterpolatedStyle]
     
-    inline def forRevealFromBottomAndroid(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forRevealFromBottomAndroid")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    inline def forRevealFromBottomAndroid(param0: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forRevealFromBottomAndroid")(param0.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    inline def forScaleFromCenterAndroid(hasCurrentNextClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forScaleFromCenterAndroid")(hasCurrentNextClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    inline def forScaleFromCenterAndroid(param0: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forScaleFromCenterAndroid")(param0.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    inline def forVerticalIOS(hasCurrentInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forVerticalIOS")(hasCurrentInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    inline def forVerticalIOS(param0: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forVerticalIOS")(param0.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
   }
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "GestureHandlerRefContext")
@@ -70,11 +70,9 @@ object `@reactNavigationStackMod` {
   @js.native
   val Header: NamedExoticComponent[StackHeaderProps] = js.native
   
-  inline def HeaderBackButton(
-    hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle: Props
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackButton")(hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeaderBackButton(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def HeaderBackground(hasStyleRest: typings.tuyaPanelKit.`@reactNavigationStackViewsHeaderHeaderBackgroundMod`.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackground")(hasStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeaderBackground(param0: typings.tuyaPanelKit.`@reactNavigationStackViewsHeaderHeaderBackgroundMod`.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackground")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderHeightContext")
   @js.native
@@ -86,20 +84,20 @@ object `@reactNavigationStackMod` {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def forFade(hasCurrentNext: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFade")(hasCurrentNext.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    inline def forFade(param0: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFade")(param0.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
     inline def forNoAnimation(): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackHeaderInterpolatedStyle]
     
-    inline def forSlideLeft(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideLeft")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    inline def forSlideLeft(param0: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideLeft")(param0.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
-    inline def forSlideRight(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideRight")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    inline def forSlideRight(param0: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideRight")(param0.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
-    inline def forSlideUp(hasCurrentNextHasHeader: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideUp")(hasCurrentNextHasHeader.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    inline def forSlideUp(param0: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideUp")(param0.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
-    inline def forUIKit(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forUIKit")(hasCurrentNextLayouts.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    inline def forUIKit(param0: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forUIKit")(param0.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
   }
   
-  inline def HeaderTitle(hasTintColorStyleRest: typings.tuyaPanelKit.`@reactNavigationStackViewsHeaderHeaderTitleMod`.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderTitle")(hasTintColorStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeaderTitle(param0: typings.tuyaPanelKit.`@reactNavigationStackViewsHeaderHeaderTitleMod`.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderTitle")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "StackView")
   @js.native
@@ -179,7 +177,7 @@ object `@reactNavigationStackMod` {
     StackNavigationOptions, 
     StackNavigationEventMap, 
     js.Function1[
-      /* hasInitialRouteNameChildrenScreenOptionsRest */ typings.tuyaPanelKit.`@reactNavigationStackNavigatorsCreateStackNavigatorMod`.Props, 
+      /* param0 */ typings.tuyaPanelKit.`@reactNavigationStackNavigatorsCreateStackNavigatorMod`.Props, 
       Element
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStackNavigator")().asInstanceOf[TypedNavigator[
@@ -188,7 +186,7 @@ object `@reactNavigationStackMod` {
     StackNavigationOptions, 
     StackNavigationEventMap, 
     js.Function1[
-      /* hasInitialRouteNameChildrenScreenOptionsRest */ typings.tuyaPanelKit.`@reactNavigationStackNavigatorsCreateStackNavigatorMod`.Props, 
+      /* param0 */ typings.tuyaPanelKit.`@reactNavigationStackNavigatorsCreateStackNavigatorMod`.Props, 
       Element
     ]
   ]]

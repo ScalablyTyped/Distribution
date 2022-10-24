@@ -17,8 +17,8 @@ trait ReadableStreamEW[R] extends StObject {
   
   val locked: Boolean = js.native
   
-  def pipeThrough[T](hasWritableReadable: Readable[R, T]): ReadableStreamEW[T] = js.native
-  def pipeThrough[T](hasWritableReadable: Readable[R, T], options: PipeOptions): ReadableStreamEW[T] = js.native
+  def pipeThrough[T](param0: Readable[R, T]): ReadableStreamEW[T] = js.native
+  def pipeThrough[T](param0: Readable[R, T], options: PipeOptions): ReadableStreamEW[T] = js.native
   
   def pipeTo(dest: WritableStreamEW[R]): js.Promise[Unit] = js.native
   def pipeTo(dest: WritableStreamEW[R], options: PipeOptions): js.Promise[Unit] = js.native

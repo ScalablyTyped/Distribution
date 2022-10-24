@@ -255,6 +255,87 @@ object mod {
       __obj.asInstanceOf[PerfectScrollbar]
     }
     
+    extension [Self <: PerfectScrollbar](x: Self) {
+      
+      inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
+      
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      
+      inline def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
+      
+      inline def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+      
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      
+      inline def setIsAlive(value: Boolean): Self = StObject.set(x, "isAlive", value.asInstanceOf[js.Any])
+      
+      inline def setIsNegativeScroll(value: Boolean): Self = StObject.set(x, "isNegativeScroll", value.asInstanceOf[js.Any])
+      
+      inline def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
+      
+      inline def setIsScrollbarXUsingBottom(value: Boolean): Self = StObject.set(x, "isScrollbarXUsingBottom", value.asInstanceOf[js.Any])
+      
+      inline def setIsScrollbarYUsingBottom(value: Boolean): Self = StObject.set(x, "isScrollbarYUsingBottom", value.asInstanceOf[js.Any])
+      
+      inline def setLastScrollLeft(value: Boolean): Self = StObject.set(x, "lastScrollLeft", value.asInstanceOf[js.Any])
+      
+      inline def setLastScrollTop(value: Boolean): Self = StObject.set(x, "lastScrollTop", value.asInstanceOf[js.Any])
+      
+      inline def setNegativeScrollAdjustment(value: Double): Self = StObject.set(x, "negativeScrollAdjustment", value.asInstanceOf[js.Any])
+      
+      inline def setRailBorderXWidth(value: Double): Self = StObject.set(x, "railBorderXWidth", value.asInstanceOf[js.Any])
+      
+      inline def setRailBorderYWidth(value: Double): Self = StObject.set(x, "railBorderYWidth", value.asInstanceOf[js.Any])
+      
+      inline def setRailXMarginWidth(value: Double): Self = StObject.set(x, "railXMarginWidth", value.asInstanceOf[js.Any])
+      
+      inline def setRailXRatio(value: Double): Self = StObject.set(x, "railXRatio", value.asInstanceOf[js.Any])
+      
+      inline def setRailXWidth(value: Double): Self = StObject.set(x, "railXWidth", value.asInstanceOf[js.Any])
+      
+      inline def setRailYHeight(value: Double): Self = StObject.set(x, "railYHeight", value.asInstanceOf[js.Any])
+      
+      inline def setRailYMarginHeight(value: Double): Self = StObject.set(x, "railYMarginHeight", value.asInstanceOf[js.Any])
+      
+      inline def setRailYRatio(value: Double): Self = StObject.set(x, "railYRatio", value.asInstanceOf[js.Any])
+      
+      inline def setReach(value: X): Self = StObject.set(x, "reach", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarX(value: HTMLElement): Self = StObject.set(x, "scrollbarX", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarXActive(value: Boolean): Self = StObject.set(x, "scrollbarXActive", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarXBottom(value: Double): Self = StObject.set(x, "scrollbarXBottom", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarXLeft(value: Double): Self = StObject.set(x, "scrollbarXLeft", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarXRail(value: HTMLElement): Self = StObject.set(x, "scrollbarXRail", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarXWidth(value: Double): Self = StObject.set(x, "scrollbarXWidth", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarY(value: HTMLElement): Self = StObject.set(x, "scrollbarY", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarYActive(value: Boolean): Self = StObject.set(x, "scrollbarYActive", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarYHeight(value: Double): Self = StObject.set(x, "scrollbarYHeight", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarYOuterWidth(value: Double): Self = StObject.set(x, "scrollbarYOuterWidth", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarYOuterWidthUndefined: Self = StObject.set(x, "scrollbarYOuterWidth", js.undefined)
+      
+      inline def setScrollbarYRail(value: HTMLElement): Self = StObject.set(x, "scrollbarYRail", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarYRight(value: Double): Self = StObject.set(x, "scrollbarYRight", value.asInstanceOf[js.Any])
+      
+      inline def setScrollbarYTop(value: Double): Self = StObject.set(x, "scrollbarYTop", value.asInstanceOf[js.Any])
+      
+      inline def setSettings(value: Options): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    }
+    
     trait Options extends StObject {
       
       var handlers: js.UndefOr[js.Array[String]] = js.undefined
@@ -340,87 +421,6 @@ object mod {
         
         inline def setWheelSpeedUndefined: Self = StObject.set(x, "wheelSpeed", js.undefined)
       }
-    }
-    
-    extension [Self <: PerfectScrollbar](x: Self) {
-      
-      inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
-      
-      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
-      
-      inline def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
-      
-      inline def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
-      
-      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-      
-      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-      
-      inline def setIsAlive(value: Boolean): Self = StObject.set(x, "isAlive", value.asInstanceOf[js.Any])
-      
-      inline def setIsNegativeScroll(value: Boolean): Self = StObject.set(x, "isNegativeScroll", value.asInstanceOf[js.Any])
-      
-      inline def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
-      
-      inline def setIsScrollbarXUsingBottom(value: Boolean): Self = StObject.set(x, "isScrollbarXUsingBottom", value.asInstanceOf[js.Any])
-      
-      inline def setIsScrollbarYUsingBottom(value: Boolean): Self = StObject.set(x, "isScrollbarYUsingBottom", value.asInstanceOf[js.Any])
-      
-      inline def setLastScrollLeft(value: Boolean): Self = StObject.set(x, "lastScrollLeft", value.asInstanceOf[js.Any])
-      
-      inline def setLastScrollTop(value: Boolean): Self = StObject.set(x, "lastScrollTop", value.asInstanceOf[js.Any])
-      
-      inline def setNegativeScrollAdjustment(value: Double): Self = StObject.set(x, "negativeScrollAdjustment", value.asInstanceOf[js.Any])
-      
-      inline def setRailBorderXWidth(value: Double): Self = StObject.set(x, "railBorderXWidth", value.asInstanceOf[js.Any])
-      
-      inline def setRailBorderYWidth(value: Double): Self = StObject.set(x, "railBorderYWidth", value.asInstanceOf[js.Any])
-      
-      inline def setRailXMarginWidth(value: Double): Self = StObject.set(x, "railXMarginWidth", value.asInstanceOf[js.Any])
-      
-      inline def setRailXRatio(value: Double): Self = StObject.set(x, "railXRatio", value.asInstanceOf[js.Any])
-      
-      inline def setRailXWidth(value: Double): Self = StObject.set(x, "railXWidth", value.asInstanceOf[js.Any])
-      
-      inline def setRailYHeight(value: Double): Self = StObject.set(x, "railYHeight", value.asInstanceOf[js.Any])
-      
-      inline def setRailYMarginHeight(value: Double): Self = StObject.set(x, "railYMarginHeight", value.asInstanceOf[js.Any])
-      
-      inline def setRailYRatio(value: Double): Self = StObject.set(x, "railYRatio", value.asInstanceOf[js.Any])
-      
-      inline def setReach(value: X): Self = StObject.set(x, "reach", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarX(value: HTMLElement): Self = StObject.set(x, "scrollbarX", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarXActive(value: Boolean): Self = StObject.set(x, "scrollbarXActive", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarXBottom(value: Double): Self = StObject.set(x, "scrollbarXBottom", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarXLeft(value: Double): Self = StObject.set(x, "scrollbarXLeft", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarXRail(value: HTMLElement): Self = StObject.set(x, "scrollbarXRail", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarXWidth(value: Double): Self = StObject.set(x, "scrollbarXWidth", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarY(value: HTMLElement): Self = StObject.set(x, "scrollbarY", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarYActive(value: Boolean): Self = StObject.set(x, "scrollbarYActive", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarYHeight(value: Double): Self = StObject.set(x, "scrollbarYHeight", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarYOuterWidth(value: Double): Self = StObject.set(x, "scrollbarYOuterWidth", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarYOuterWidthUndefined: Self = StObject.set(x, "scrollbarYOuterWidth", js.undefined)
-      
-      inline def setScrollbarYRail(value: HTMLElement): Self = StObject.set(x, "scrollbarYRail", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarYRight(value: Double): Self = StObject.set(x, "scrollbarYRight", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarYTop(value: Double): Self = StObject.set(x, "scrollbarYTop", value.asInstanceOf[js.Any])
-      
-      inline def setSettings(value: Options): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
-      
-      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
 }

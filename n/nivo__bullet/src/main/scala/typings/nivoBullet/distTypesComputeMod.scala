@@ -20,9 +20,9 @@ object distTypesComputeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeRects(hasDataLayoutReverseScaleHeight: PickBulletRectsPropsdataC): js.Array[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeRects")(hasDataLayoutReverseScaleHeight.asInstanceOf[js.Any]).asInstanceOf[js.Array[Data]]
+  inline def computeRects(param0: PickBulletRectsPropsdataC): js.Array[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeRects")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Data]]
   
-  inline def getComputeRect(hasLayoutReverseScaleHeight: ComputeRect): js.Function1[/* d */ ComputedRangeDatum, Height] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComputeRect")(hasLayoutReverseScaleHeight.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* d */ ComputedRangeDatum, Height]]
+  inline def getComputeRect(param0: ComputeRect): js.Function1[/* d */ ComputedRangeDatum, Height] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComputeRect")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* d */ ComputedRangeDatum, Height]]
   
   inline def stackValues(
     values: js.Array[Double],

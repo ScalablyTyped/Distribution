@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/core", "\u0275NoopNgZone")
 @js.native
 open class ɵNoopNgZone protected () extends NgZone {
-  def this(hasEnableLongStackTraceShouldCoalesceEventChangeDetectionShouldCoalesceRunChangeDetection: EnableLongStackTrace) = this()
+  def this(param0: EnableLongStackTrace) = this()
   
   def run[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Any, applyArgs: Any): T = js.native
   def run[T](fn: js.Function1[/* repeated */ Any, T], applyThis: Unit, applyArgs: Any): T = js.native

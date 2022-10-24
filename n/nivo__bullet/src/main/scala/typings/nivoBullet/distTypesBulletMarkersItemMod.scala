@@ -12,5 +12,5 @@ object distTypesBulletMarkersItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BulletMarkersItem(hasHasColorTransformXY1Y2DataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: BulletMarkersItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletMarkersItem")(hasHasColorTransformXY1Y2DataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BulletMarkersItem(param0: BulletMarkersItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletMarkersItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

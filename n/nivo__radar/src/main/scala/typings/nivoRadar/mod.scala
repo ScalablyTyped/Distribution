@@ -27,11 +27,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Radar[D /* <: Record[String, Any] */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: RadarSvgProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Radar")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Radar[D /* <: Record[String, Any] */](param0: RadarSvgProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Radar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def RadarDots[D /* <: Record[String, Any] */](
-    hasDataKeysGetIndexColorByKeyRadiusScaleRotationAngleStepSymbolSizeColorBorderWidthBorderColorEnableLabelLabelFormatValueLabelYOffset: RadarDotsProps[D]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarDots")(hasDataKeysGetIndexColorByKeyRadiusScaleRotationAngleStepSymbolSizeColorBorderWidthBorderColorEnableLabelLabelFormatValueLabelYOffset.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RadarDots[D /* <: Record[String, Any] */](param0: RadarDotsProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarDots")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def ResponsiveRadar[D /* <: Record[String, Any] */](props: Omit[RadarSvgProps[D], height | width]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveRadar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -128,7 +126,7 @@ object mod {
     
     inline def fill_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
     
-    inline def gridLabel(hasIdAnchorAnimatedProps: GridLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("gridLabel")(hasIdAnchorAnimatedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def gridLabel(param0: GridLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("gridLabel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/radar", "svgDefaultProps.gridLabelOffset")
     @js.native
@@ -180,6 +178,6 @@ object mod {
     def rotation: Double = js.native
     inline def rotation_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rotation")(x.asInstanceOf[js.Any])
     
-    inline def sliceTooltip(hasIndexData: RadarSliceTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("sliceTooltip")(hasIndexData.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def sliceTooltip(param0: RadarSliceTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("sliceTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
 }

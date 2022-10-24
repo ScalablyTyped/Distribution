@@ -13,7 +13,7 @@ object distThemeProviderSrcThemeProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ThemeProvider(hasThemeColorSchemeDefaultColorSchemeChildrenAsRest: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasThemeColorSchemeDefaultColorSchemeChildrenAsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ThemeProvider(param0: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.orbitUiReactComponents.orbitUiReactComponentsStrings.light

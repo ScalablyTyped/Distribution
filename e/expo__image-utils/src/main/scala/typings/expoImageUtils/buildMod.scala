@@ -37,7 +37,7 @@ object buildMod {
     inline def getImageFromCacheAsync(fileName: String, cacheKey: String): js.Promise[Null | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageFromCacheAsync")(fileName.asInstanceOf[js.Any], cacheKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Null | Buffer]]
   }
   
-  inline def compositeImagesAsync(hasForegroundBackgroundXY: Background): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("compositeImagesAsync")(hasForegroundBackgroundXY.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def compositeImagesAsync(param0: Background): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("compositeImagesAsync")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   
   inline def findSharpInstanceAsync(): js.Promise[Any | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSharpInstanceAsync")().asInstanceOf[js.Promise[Any | Null]]
   

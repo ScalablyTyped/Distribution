@@ -1443,6 +1443,24 @@ object Content {
     }
   }
   
+  /**
+    * Service for returning text content from a script.
+    *
+    * You can serve up text in various forms. For example, publish this script as a web app.
+    *
+    *     function doGet() {
+    *       return ContentService.createTextOutput("Hello World");
+    *     }
+    */
+  @js.native
+  trait ContentService extends StObject {
+    
+    var MimeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MimeType */ Any = js.native
+    
+    def createTextOutput(): TextOutput = js.native
+    def createTextOutput(content: String): TextOutput = js.native
+  }
+  
   extension [Self <: Content](x: Self) {
     
     inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
@@ -1802,24 +1820,6 @@ object Content {
     inline def setShippingsettings(value: ShippingsettingsCollection): Self = StObject.set(x, "Shippingsettings", value.asInstanceOf[js.Any])
     
     inline def setShippingsettingsUndefined: Self = StObject.set(x, "Shippingsettings", js.undefined)
-  }
-  
-  /**
-    * Service for returning text content from a script.
-    *
-    * You can serve up text in various forms. For example, publish this script as a web app.
-    *
-    *     function doGet() {
-    *       return ContentService.createTextOutput("Hello World");
-    *     }
-    */
-  @js.native
-  trait ContentService extends StObject {
-    
-    var MimeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MimeType */ Any = js.native
-    
-    def createTextOutput(): TextOutput = js.native
-    def createTextOutput(content: String): TextOutput = js.native
   }
   
   object Schema {

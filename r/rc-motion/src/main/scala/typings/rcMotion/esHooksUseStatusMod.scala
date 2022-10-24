@@ -19,6 +19,6 @@ object esHooksUseStatusMod {
     supportMotion: Boolean,
     visible: Boolean,
     getElement: js.Function0[HTMLElement],
-    hasMotionEnterMotionAppearMotionLeaveMotionDeadlineMotionLeaveImmediatelyOnAppearPrepareOnEnterPrepareOnLeavePrepareOnAppearStartOnEnterStartOnLeaveStartOnAppearActiveOnEnterActiveOnLeaveActiveOnAppearEndOnEnterEndOnLeaveEndOnVisibleChanged: CSSMotionProps
-  ): js.Tuple4[MotionStatus, StepStatus, CSSProperties, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(supportMotion.asInstanceOf[js.Any], visible.asInstanceOf[js.Any], getElement.asInstanceOf[js.Any], hasMotionEnterMotionAppearMotionLeaveMotionDeadlineMotionLeaveImmediatelyOnAppearPrepareOnEnterPrepareOnLeavePrepareOnAppearStartOnEnterStartOnLeaveStartOnAppearActiveOnEnterActiveOnLeaveActiveOnAppearEndOnEnterEndOnLeaveEndOnVisibleChanged.asInstanceOf[js.Any])).asInstanceOf[js.Tuple4[MotionStatus, StepStatus, CSSProperties, Boolean]]
+    param3: CSSMotionProps
+  ): js.Tuple4[MotionStatus, StepStatus, CSSProperties, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(supportMotion.asInstanceOf[js.Any], visible.asInstanceOf[js.Any], getElement.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple4[MotionStatus, StepStatus, CSSProperties, Boolean]]
 }

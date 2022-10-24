@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Doc ()
   extends typings.yjs.distSrcUtilsDocMod.Doc {
-  def this(hasGuidCollectionidGcGcFilterMetaAutoLoadShouldLoad: DocOpts) = this()
+  def this(param0: DocOpts) = this()
 }

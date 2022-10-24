@@ -37,7 +37,7 @@ object typesUseMessageQueueMod {
   
   inline def resetQueue(): ResetQueueAction = ^.asInstanceOf[js.Dynamic].applyDynamic("resetQueue")().asInstanceOf[ResetQueueAction]
   
-  inline def useMessageQueue[M /* <: Message */](hasTimeoutDuplicatesDefaultQueue: MessageQueueOptions[M]): MessageQueueResult[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageQueue")(hasTimeoutDuplicatesDefaultQueue.asInstanceOf[js.Any]).asInstanceOf[MessageQueueResult[M]]
+  inline def useMessageQueue[M /* <: Message */](param0: MessageQueueOptions[M]): MessageQueueResult[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageQueue")(param0.asInstanceOf[js.Any]).asInstanceOf[MessageQueueResult[M]]
   
   trait AddMessageAction[M /* <: Message */]
     extends StObject

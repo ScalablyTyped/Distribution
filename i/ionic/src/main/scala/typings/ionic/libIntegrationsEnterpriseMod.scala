@@ -17,7 +17,7 @@ object libIntegrationsEnterpriseMod {
   @js.native
   open class EnterpriseIntegrationConfig protected () extends BaseConfig[EnterpriseProjectIntegration] {
     def this(p: String) = this()
-    def this(p: String, hasSpacesPathPrefix: BaseConfigOptions) = this()
+    def this(p: String, param1: BaseConfigOptions) = this()
     
     def provideDefaults(c: PartialReadonlyEnterprise): EnterpriseProjectIntegration = js.native
   }

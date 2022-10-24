@@ -34,7 +34,7 @@ object esmDropdownMenuMod {
       * @displayName DropdownMenu
       * @memberOf Dropdown
       */
-    inline def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-overlays/esm/DropdownMenu", JSImport.Default)
     @js.native

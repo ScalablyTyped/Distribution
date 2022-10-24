@@ -31,11 +31,11 @@ object distTs3Dot9PresetsCommonPresetMod {
   
   inline def managerMainTemplate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("managerMainTemplate")().asInstanceOf[String]
   
-  inline def previewBody(base: Any, hasConfigDirPresets: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("previewBody")(base.asInstanceOf[js.Any], hasConfigDirPresets.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def previewBody(base: Any, param1: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("previewBody")(base.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def previewEntries(entries: js.Array[Any], options: Modern): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("previewEntries")(entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def previewHead(base: Any, hasConfigDirPresets: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("previewHead")(base.asInstanceOf[js.Any], hasConfigDirPresets.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def previewHead(base: Any, param1: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("previewHead")(base.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def previewMainTemplate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("previewMainTemplate")().asInstanceOf[String]
   

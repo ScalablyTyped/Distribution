@@ -17,7 +17,7 @@ object mod {
     */
   open class DDSketch ()
     extends typings.datadogSketchesJs.distDdsketchMod.DDSketch {
-    def this(hasRelativeAccuracy: SketchConfig) = this()
+    def this(param0: SketchConfig) = this()
   }
   
   @JSImport("@datadog/sketches-js", "LogCollapsingHighestDenseDDSketch")
@@ -30,7 +30,7 @@ object mod {
     */
   open class LogCollapsingHighestDenseDDSketch ()
     extends typings.datadogSketchesJs.distDdsketchMod.LogCollapsingHighestDenseDDSketch {
-    def this(hasRelativeAccuracyBinLimit: LogCollapsingSketchConfig) = this()
+    def this(param0: LogCollapsingSketchConfig) = this()
   }
   
   @JSImport("@datadog/sketches-js", "LogCollapsingLowestDenseDDSketch")
@@ -43,6 +43,6 @@ object mod {
     */
   open class LogCollapsingLowestDenseDDSketch ()
     extends typings.datadogSketchesJs.distDdsketchMod.LogCollapsingLowestDenseDDSketch {
-    def this(hasRelativeAccuracyBinLimit: LogCollapsingSketchConfig) = this()
+    def this(param0: LogCollapsingSketchConfig) = this()
   }
 }

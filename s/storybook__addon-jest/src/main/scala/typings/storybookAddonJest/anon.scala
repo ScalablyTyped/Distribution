@@ -119,7 +119,7 @@ object anon {
     
     var mounted: Boolean = js.native
     
-    def onAddTests(hasKindStoryNameTests: HocState): Unit = js.native
+    def onAddTests(param0: HocState): Unit = js.native
     
     val props: ReadonlyHocPropsReadonlyc = js.native
     

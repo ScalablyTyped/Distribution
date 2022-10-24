@@ -13,7 +13,7 @@ object distTypesCoreServicesLicenceMod {
   @JSImport("gitlab/dist/types/core/services/Licence", "Licence")
   @js.native
   open class Licence () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native
     def all(options: Sudo): js.Promise[GetResponse] = js.native

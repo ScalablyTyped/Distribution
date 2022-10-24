@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasDataFilenameDelimiterHeaders: CsvDownloadProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDataFilenameDelimiterHeaders.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(param0: CsvDownloadProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait CsvDownloadProps extends StObject {
     

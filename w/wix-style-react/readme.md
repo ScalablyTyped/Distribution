@@ -1,8 +1,23 @@
 
 # Scala.js typings for wix-style-react
 
-Typings are for version 9.42.0
+Typings are for version 10.58.3
 
+## Library description:
+wix-style-react
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | wix-style-react |
+| Keywords           | - |
+| # releases         | 197 |
+| # dependents       | 0.0 |
+| # downloads        | 26500.666666666668 |
+| # stars            | ? |
+
+## Links
+- [Npm](https://www.npmjs.com/package/wix-style-react)
+    
 
 
 ## Note

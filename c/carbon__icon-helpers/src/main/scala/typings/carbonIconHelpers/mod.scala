@@ -33,7 +33,7 @@ object mod {
   inline def formatAttributes(attrs: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatAttributes")(attrs.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getAttributes(): Focusable = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributes")().asInstanceOf[Focusable]
-  inline def getAttributes(hasWidthHeightViewBoxAttributes: Height): Focusable = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributes")(hasWidthHeightViewBoxAttributes.asInstanceOf[js.Any]).asInstanceOf[Focusable]
+  inline def getAttributes(param0: Height): Focusable = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributes")(param0.asInstanceOf[js.Any]).asInstanceOf[Focusable]
   
   inline def toSVG(descriptor: Any): SVGSVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(descriptor.asInstanceOf[js.Any]).asInstanceOf[SVGSVGElement]
   

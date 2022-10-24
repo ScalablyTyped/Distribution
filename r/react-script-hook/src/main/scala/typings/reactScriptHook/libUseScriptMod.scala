@@ -13,7 +13,7 @@ object libUseScriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasSrcCheckForExistingAttributes: ScriptProps): js.Tuple2[Boolean, ErrorState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSrcCheckForExistingAttributes.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, ErrorState]]
+  inline def default(param0: ScriptProps): js.Tuple2[Boolean, ErrorState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, ErrorState]]
   
   @JSImport("react-script-hook/lib/use-script", "scripts")
   @js.native

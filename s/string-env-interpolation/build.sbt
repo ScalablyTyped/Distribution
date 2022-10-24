@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "string-env-interpolation"
-version := "1.0.1-31bf3a"
-scalaVersion := "3.1.2"
+version := "1.0.1-d70558"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

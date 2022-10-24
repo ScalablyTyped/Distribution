@@ -134,7 +134,7 @@ object mod {
     inline def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
   }
   
-  inline def DrawerRouter(hasDefaultStatusRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(hasDefaultStatusRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
+  inline def DrawerRouter(param0: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
   /**
     * Context which holds the route prop for a screen.
@@ -180,7 +180,7 @@ object mod {
   @js.native
   val PreventRemoveContext: Context[js.UndefOr[PreventedRoutes]] = js.native
   
-  inline def PreventRemoveProvider(hasChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PreventRemoveProvider")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PreventRemoveProvider(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PreventRemoveProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@react-navigation/core", "PrivateValueStore")
   @js.native
@@ -217,7 +217,7 @@ object mod {
     inline def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
   }
   
-  inline def TabRouter(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[TabNavigationState[ParamListBase], Action | TabActionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[TabNavigationState[ParamListBase], Action | TabActionType]]
+  inline def TabRouter(param0: TabRouterOptions): Router[TabNavigationState[ParamListBase], Action | TabActionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Router[TabNavigationState[ParamListBase], Action | TabActionType]]
   
   inline def UNSTABLEUsePreventRemove(preventRemove: Boolean, callback: js.Function1[/* options */ Data, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSTABLE_usePreventRemove")(preventRemove.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

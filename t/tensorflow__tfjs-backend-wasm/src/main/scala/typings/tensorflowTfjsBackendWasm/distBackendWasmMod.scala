@@ -41,7 +41,7 @@ object distBackendWasmMod {
     def readSync(dataId: DataId, start: Double, end: Double): BackendValues = js.native
     def readSync(dataId: DataId, start: Unit, end: Double): BackendValues = js.native
     
-    def typedArrayFromHeap(hasShapeDtypeDataId: TensorInfo): TypedArray = js.native
+    def typedArrayFromHeap(param0: TensorInfo): TypedArray = js.native
     
     var wasm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BackendWasmModule */ Any = js.native
   }

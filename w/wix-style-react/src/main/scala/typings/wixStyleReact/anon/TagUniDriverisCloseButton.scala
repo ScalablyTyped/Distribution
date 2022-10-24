@@ -1,19 +1,19 @@
 package typings.wixStyleReact.anon
 
-import typings.wixStyleReact.textMod.TextSize
-import typings.wixStyleReact.textMod.TextWeight
+import typings.wixStyleReact.distTypesTextMod.TextSize
+import typings.wixStyleReact.distTypesTextMod.TextWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined wix-style-react.wix-style-react/dist/es/src/Tag/Tag.uni.driver.TagUniDriver & {isCloseButtonSmall (): std.Promise<boolean>, isCloseButtonLarge (): std.Promise<boolean>, getTextSize (): wix-style-react.wix-style-react/dist/es/src/Text.TextSize, getTextWeight (): wix-style-react.wix-style-react/dist/es/src/Text.TextWeight, isClickable (): std.Promise<boolean>} */
+/* Inlined wix-style-react.wix-style-react/dist/types/Tag/Tag.uni.driver.TagUniDriver & {isCloseButtonSmall (): std.Promise<boolean>, isCloseButtonLarge (): std.Promise<boolean>, getTextSize (): wix-style-react.wix-style-react/dist/types/Text.TextSize, getTextWeight (): wix-style-react.wix-style-react/dist/types/Text.TextWeight, isClickable (): std.Promise<boolean>} */
 trait TagUniDriverisCloseButton extends StObject {
   
   /** click on the element */
   def click(): js.Promise[Unit]
   
   /** returns the component element */
-  def element(): js.Promise[js.Any]
+  def element(): js.Promise[Any]
   
   /** returns true if component exists */
   def exists(): js.Promise[Boolean]
@@ -46,6 +46,8 @@ trait TagUniDriverisCloseButton extends StObject {
   
   def isStandardTheme(): js.Promise[Boolean]
   
+  def isSuccessTheme(): js.Promise[Boolean]
+  
   def isThumbExists(): js.Promise[Boolean]
   
   def isTiny(): js.Promise[Boolean]
@@ -58,7 +60,7 @@ object TagUniDriverisCloseButton {
   
   inline def apply(
     click: () => js.Promise[Unit],
-    element: () => js.Promise[js.Any],
+    element: () => js.Promise[Any],
     exists: () => js.Promise[Boolean],
     getLabel: () => js.Promise[String],
     getTextSize: () => TextSize,
@@ -74,12 +76,13 @@ object TagUniDriverisCloseButton {
     isRemovable: () => js.Promise[Boolean],
     isSmall: () => js.Promise[Boolean],
     isStandardTheme: () => js.Promise[Boolean],
+    isSuccessTheme: () => js.Promise[Boolean],
     isThumbExists: () => js.Promise[Boolean],
     isTiny: () => js.Promise[Boolean],
     isWarningTheme: () => js.Promise[Boolean],
     removeTag: () => js.Promise[Unit]
   ): TagUniDriverisCloseButton = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction0(click), element = js.Any.fromFunction0(element), exists = js.Any.fromFunction0(exists), getLabel = js.Any.fromFunction0(getLabel), getTextSize = js.Any.fromFunction0(getTextSize), getTextWeight = js.Any.fromFunction0(getTextWeight), isClickable = js.Any.fromFunction0(isClickable), isCloseButtonLarge = js.Any.fromFunction0(isCloseButtonLarge), isCloseButtonSmall = js.Any.fromFunction0(isCloseButtonSmall), isDarkTheme = js.Any.fromFunction0(isDarkTheme), isDisabled = js.Any.fromFunction0(isDisabled), isErrorTheme = js.Any.fromFunction0(isErrorTheme), isLarge = js.Any.fromFunction0(isLarge), isMedium = js.Any.fromFunction0(isMedium), isRemovable = js.Any.fromFunction0(isRemovable), isSmall = js.Any.fromFunction0(isSmall), isStandardTheme = js.Any.fromFunction0(isStandardTheme), isThumbExists = js.Any.fromFunction0(isThumbExists), isTiny = js.Any.fromFunction0(isTiny), isWarningTheme = js.Any.fromFunction0(isWarningTheme), removeTag = js.Any.fromFunction0(removeTag))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction0(click), element = js.Any.fromFunction0(element), exists = js.Any.fromFunction0(exists), getLabel = js.Any.fromFunction0(getLabel), getTextSize = js.Any.fromFunction0(getTextSize), getTextWeight = js.Any.fromFunction0(getTextWeight), isClickable = js.Any.fromFunction0(isClickable), isCloseButtonLarge = js.Any.fromFunction0(isCloseButtonLarge), isCloseButtonSmall = js.Any.fromFunction0(isCloseButtonSmall), isDarkTheme = js.Any.fromFunction0(isDarkTheme), isDisabled = js.Any.fromFunction0(isDisabled), isErrorTheme = js.Any.fromFunction0(isErrorTheme), isLarge = js.Any.fromFunction0(isLarge), isMedium = js.Any.fromFunction0(isMedium), isRemovable = js.Any.fromFunction0(isRemovable), isSmall = js.Any.fromFunction0(isSmall), isStandardTheme = js.Any.fromFunction0(isStandardTheme), isSuccessTheme = js.Any.fromFunction0(isSuccessTheme), isThumbExists = js.Any.fromFunction0(isThumbExists), isTiny = js.Any.fromFunction0(isTiny), isWarningTheme = js.Any.fromFunction0(isWarningTheme), removeTag = js.Any.fromFunction0(removeTag))
     __obj.asInstanceOf[TagUniDriverisCloseButton]
   }
   
@@ -87,7 +90,7 @@ object TagUniDriverisCloseButton {
     
     inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    inline def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+    inline def setElement(value: () => js.Promise[Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     
     inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
@@ -118,6 +121,8 @@ object TagUniDriverisCloseButton {
     inline def setIsSmall(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSmall", js.Any.fromFunction0(value))
     
     inline def setIsStandardTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isStandardTheme", js.Any.fromFunction0(value))
+    
+    inline def setIsSuccessTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSuccessTheme", js.Any.fromFunction0(value))
     
     inline def setIsThumbExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isThumbExists", js.Any.fromFunction0(value))
     

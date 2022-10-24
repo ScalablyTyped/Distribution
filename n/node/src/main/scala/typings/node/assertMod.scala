@@ -103,6 +103,28 @@ object assertMod {
     def calls_Func_Func[Func /* <: js.Function1[/* repeated */ Any, Any] */](): Func = js.native
     
     /**
+      * Example:
+      *
+      * ```js
+      * import assert from 'node:assert';
+      *
+      * const tracker = new assert.CallTracker();
+      *
+      * function func() {}
+      * const callsfunc = tracker.calls(func);
+      * callsfunc(1, 2, 3);
+      *
+      * assert.deepStrictEqual(tracker.getCalls(callsfunc),
+      *                        [{ thisArg: this, arguments: [1, 2, 3 ] }]);
+      * ```
+      *
+      * @since v18.8.0, v16.18.0
+      * @params fn
+      * @returns An Array with the calls to a tracked function.
+      */
+    def getCalls(fn: js.Function): js.Array[CallTrackerCall] = js.native
+    
+    /**
       * The arrays contains information about the expected and actual number of calls of
       * the functions that have not been called the expected number of times.
       *
@@ -137,6 +159,33 @@ object assertMod {
       * @return of objects containing information about the wrapper functions returned by `calls`.
       */
     def report(): js.Array[CallTrackerReportInformation] = js.native
+    
+    /**
+      * Reset calls of the call tracker.
+      * If a tracked function is passed as an argument, the calls will be reset for it.
+      * If no arguments are passed, all tracked functions will be reset.
+      *
+      * ```js
+      * import assert from 'node:assert';
+      *
+      * const tracker = new assert.CallTracker();
+      *
+      * function func() {}
+      * const callsfunc = tracker.calls(func);
+      *
+      * callsfunc();
+      * // Tracker was called once
+      * tracker.getCalls(callsfunc).length === 1;
+      *
+      * tracker.reset(callsfunc);
+      * tracker.getCalls(callsfunc).length === 0;
+      * ```
+      *
+      * @since v18.8.0, v16.18.0
+      * @param fn a tracked function to reset.
+      */
+    def reset(): Unit = js.native
+    def reset(fn: js.Function): Unit = js.native
     
     /**
       * Iterates through the list of functions passed to `tracker.calls()` and will throw an error for functions that
@@ -1037,6 +1086,29 @@ object assertMod {
   inline def throws(block: js.Function0[Any], message: js.Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type AssertPredicate = js.RegExp | Instantiable0[js.Object] | (js.Function1[/* thrown */ Any, Boolean]) | js.Object | js.Error
+  
+  trait CallTrackerCall extends StObject {
+    
+    var arguments: js.Array[Any]
+    
+    var thisArg: js.Object
+  }
+  object CallTrackerCall {
+    
+    inline def apply(arguments: js.Array[Any], thisArg: js.Object): CallTrackerCall = {
+      val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], thisArg = thisArg.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CallTrackerCall]
+    }
+    
+    extension [Self <: CallTrackerCall](x: Self) {
+      
+      inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      
+      inline def setArgumentsVarargs(value: Any*): Self = StObject.set(x, "arguments", js.Array(value*))
+      
+      inline def setThisArg(value: js.Object): Self = StObject.set(x, "thisArg", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait CallTrackerReportInformation extends StObject {
     

@@ -57,7 +57,7 @@ object mod {
   trait JsftpOpts extends StObject {
     
     var createSocket: js.UndefOr[
-        js.Function2[/* hasPortHost */ Host, /* firstAction */ js.Function0[js.Object], Socket]
+        js.Function2[/* param0 */ Host, /* firstAction */ js.Function0[js.Object], Socket]
       ] = js.undefined
     
     var host: js.UndefOr[String] = js.undefined
@@ -79,7 +79,7 @@ object mod {
     
     extension [Self <: JsftpOpts](x: Self) {
       
-      inline def setCreateSocket(value: (/* hasPortHost */ Host, /* firstAction */ js.Function0[js.Object]) => Socket): Self = StObject.set(x, "createSocket", js.Any.fromFunction2(value))
+      inline def setCreateSocket(value: (/* param0 */ Host, /* firstAction */ js.Function0[js.Object]) => Socket): Self = StObject.set(x, "createSocket", js.Any.fromFunction2(value))
       
       inline def setCreateSocketUndefined: Self = StObject.set(x, "createSocket", js.undefined)
       

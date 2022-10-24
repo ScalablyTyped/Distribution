@@ -13,7 +13,7 @@ object distTypesArcLineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ArcLine(hasAnimatedPropsRest: ArcLineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLine")(hasAnimatedPropsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcLine(param0: ArcLineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLine")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ArcLineProps = Animated & (ExtractProps[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof animated.path */ Any

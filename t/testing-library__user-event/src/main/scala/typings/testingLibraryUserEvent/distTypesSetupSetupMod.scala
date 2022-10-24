@@ -46,14 +46,11 @@ object distTypesSetupSetupMod {
   inline def createInstance(config: Config, system: System): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(config.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[Api]
   
   inline def setupDirect(): typings.testingLibraryUserEvent.anon.System = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")().asInstanceOf[typings.testingLibraryUserEvent.anon.System]
-  inline def setupDirect(hasKeyboardStatePointerStateOptions: Unit, // backward-compatibility
-  node: Node): typings.testingLibraryUserEvent.anon.System = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(hasKeyboardStatePointerStateOptions.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[typings.testingLibraryUserEvent.anon.System]
-  inline def setupDirect(hasKeyboardStatePointerStateOptions: DirectOptionskeyboardStat): typings.testingLibraryUserEvent.anon.System = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(hasKeyboardStatePointerStateOptions.asInstanceOf[js.Any]).asInstanceOf[typings.testingLibraryUserEvent.anon.System]
-  inline def setupDirect(
-    hasKeyboardStatePointerStateOptions: DirectOptionskeyboardStat,
-    // backward-compatibility
-  node: Node
-  ): typings.testingLibraryUserEvent.anon.System = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(hasKeyboardStatePointerStateOptions.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[typings.testingLibraryUserEvent.anon.System]
+  inline def setupDirect(param0: Unit, // backward-compatibility
+  node: Node): typings.testingLibraryUserEvent.anon.System = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(param0.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[typings.testingLibraryUserEvent.anon.System]
+  inline def setupDirect(param0: DirectOptionskeyboardStat): typings.testingLibraryUserEvent.anon.System = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.testingLibraryUserEvent.anon.System]
+  inline def setupDirect(param0: DirectOptionskeyboardStat, // backward-compatibility
+  node: Node): typings.testingLibraryUserEvent.anon.System = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDirect")(param0.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[typings.testingLibraryUserEvent.anon.System]
   
   inline def setupMain(): UserEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("setupMain")().asInstanceOf[UserEvent]
   inline def setupMain(options: Options): UserEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("setupMain")(options.asInstanceOf[js.Any]).asInstanceOf[UserEvent]
@@ -260,10 +257,10 @@ object distTypesSetupSetupMod {
     
     def tab(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<UserEventApi[k]> is not an array type */ args: Parameters[
-          js.ThisFunction1[/* this */ Instance, /* hasShift */ js.UndefOr[Shift], js.Promise[Unit]]
+          js.ThisFunction1[/* this */ Instance, /* param1 */ js.UndefOr[Shift], js.Promise[Unit]]
         ]
     ): ReturnType[
-        js.ThisFunction1[/* this */ Instance, /* hasShift */ js.UndefOr[Shift], js.Promise[Unit]]
+        js.ThisFunction1[/* this */ Instance, /* param1 */ js.UndefOr[Shift], js.Promise[Unit]]
       ]
     
     def tripleClick(
@@ -276,7 +273,7 @@ object distTypesSetupSetupMod {
             /* this */ Instance, 
             /* element */ Element, 
             /* text */ String, 
-            /* hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd */ js.UndefOr[typeOptions], 
+            /* param3 */ js.UndefOr[typeOptions], 
             js.Promise[Unit]
           ]
         ]
@@ -285,7 +282,7 @@ object distTypesSetupSetupMod {
           /* this */ Instance, 
           /* element */ Element, 
           /* text */ String, 
-          /* hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd */ js.UndefOr[typeOptions], 
+          /* param3 */ js.UndefOr[typeOptions], 
           js.Promise[Unit]
         ]
       ]
@@ -372,9 +369,9 @@ object distTypesSetupSetupMod {
         ],
       setup: Parameters[js.ThisFunction1[/* this */ Instance, /* options */ Options, UserEvent]] => UserEvent,
       tab: Parameters[
-          js.ThisFunction1[/* this */ Instance, /* hasShift */ js.UndefOr[Shift], js.Promise[Unit]]
+          js.ThisFunction1[/* this */ Instance, /* param1 */ js.UndefOr[Shift], js.Promise[Unit]]
         ] => ReturnType[
-          js.ThisFunction1[/* this */ Instance, /* hasShift */ js.UndefOr[Shift], js.Promise[Unit]]
+          js.ThisFunction1[/* this */ Instance, /* param1 */ js.UndefOr[Shift], js.Promise[Unit]]
         ],
       tripleClick: Parameters[js.ThisFunction1[/* this */ Instance, /* element */ Element, js.Promise[Unit]]] => ReturnType[js.ThisFunction1[/* this */ Instance, /* element */ Element, js.Promise[Unit]]],
       `type`: Parameters[
@@ -382,7 +379,7 @@ object distTypesSetupSetupMod {
             /* this */ Instance, 
             /* element */ Element, 
             /* text */ String, 
-            /* hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd */ js.UndefOr[typeOptions], 
+            /* param3 */ js.UndefOr[typeOptions], 
             js.Promise[Unit]
           ]
         ] => ReturnType[
@@ -390,7 +387,7 @@ object distTypesSetupSetupMod {
             /* this */ Instance, 
             /* element */ Element, 
             /* text */ String, 
-            /* hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd */ js.UndefOr[typeOptions], 
+            /* param3 */ js.UndefOr[typeOptions], 
             js.Promise[Unit]
           ]
         ],
@@ -512,9 +509,9 @@ object distTypesSetupSetupMod {
       
       inline def setTab(
         value: Parameters[
-              js.ThisFunction1[/* this */ Instance, /* hasShift */ js.UndefOr[Shift], js.Promise[Unit]]
+              js.ThisFunction1[/* this */ Instance, /* param1 */ js.UndefOr[Shift], js.Promise[Unit]]
             ] => ReturnType[
-              js.ThisFunction1[/* this */ Instance, /* hasShift */ js.UndefOr[Shift], js.Promise[Unit]]
+              js.ThisFunction1[/* this */ Instance, /* param1 */ js.UndefOr[Shift], js.Promise[Unit]]
             ]
       ): Self = StObject.set(x, "tab", js.Any.fromFunction1(value))
       
@@ -528,7 +525,7 @@ object distTypesSetupSetupMod {
                 /* this */ Instance, 
                 /* element */ Element, 
                 /* text */ String, 
-                /* hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd */ js.UndefOr[typeOptions], 
+                /* param3 */ js.UndefOr[typeOptions], 
                 js.Promise[Unit]
               ]
             ] => ReturnType[
@@ -536,7 +533,7 @@ object distTypesSetupSetupMod {
                 /* this */ Instance, 
                 /* element */ Element, 
                 /* text */ String, 
-                /* hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd */ js.UndefOr[typeOptions], 
+                /* param3 */ js.UndefOr[typeOptions], 
                 js.Promise[Unit]
               ]
             ]
@@ -598,16 +595,12 @@ object distTypesSetupSetupMod {
     def selectOptions(select: Element, values: HTMLElement): js.Promise[Unit] = js.native
     
     def tab(): js.Promise[Unit] = js.native
-    def tab(hasShift: Shift): js.Promise[Unit] = js.native
+    def tab(param1: Shift): js.Promise[Unit] = js.native
     
     def tripleClick(element: Element): js.Promise[Unit] = js.native
     
     def `type`(element: Element, text: String): js.Promise[Unit] = js.native
-    def `type`(
-      element: Element,
-      text: String,
-      hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd: typeOptions
-    ): js.Promise[Unit] = js.native
+    def `type`(element: Element, text: String, param3: typeOptions): js.Promise[Unit] = js.native
     
     def unhover(element: Element): js.Promise[Unit] = js.native
     

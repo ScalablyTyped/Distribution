@@ -18,7 +18,7 @@ object mod {
   
   inline def parseWithComments(docblock: String): Comments = ^.asInstanceOf[js.Dynamic].applyDynamic("parseWithComments")(docblock.asInstanceOf[js.Any]).asInstanceOf[Comments]
   
-  inline def print(hasCommentsPragmas: typings.jestDocblock.anon.Pragmas): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(hasCommentsPragmas.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def print(param0: typings.jestDocblock.anon.Pragmas): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def strip(contents: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(contents.asInstanceOf[js.Any]).asInstanceOf[String]
   

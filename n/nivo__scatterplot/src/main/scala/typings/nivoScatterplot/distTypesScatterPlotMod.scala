@@ -13,5 +13,5 @@ object distTypesScatterPlotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ScatterPlot[RawDatum /* <: ScatterPlotDatum */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: ScatterPlotSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ScatterPlot")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ScatterPlot[RawDatum /* <: ScatterPlotDatum */](param0: ScatterPlotSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ScatterPlot")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

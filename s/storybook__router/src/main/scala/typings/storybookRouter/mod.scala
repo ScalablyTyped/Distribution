@@ -23,10 +23,7 @@ object mod {
   
   @JSImport("@storybook/router", "BaseLocationProvider")
   @js.native
-  val BaseLocationProvider: js.Function1[
-    /* hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp */ RouterProps, 
-    ReactElement | Null
-  ] = js.native
+  val BaseLocationProvider: js.Function1[/* param0 */ RouterProps, ReactElement | Null] = js.native
   
   @JSImport("@storybook/router", "DEEPLY_EQUAL")
   @js.native
@@ -34,7 +31,7 @@ object mod {
   
   object Link {
     
-    inline def apply(hasToChildrenRest: LinkProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasToChildrenRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: LinkProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@storybook/router", "Link")
     @js.native
@@ -48,7 +45,7 @@ object mod {
   
   object Location {
     
-    inline def apply(hasChildren: LocationProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: LocationProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@storybook/router", "Location")
     @js.native
@@ -62,7 +59,7 @@ object mod {
   
   @JSImport("@storybook/router", "LocationProvider")
   @js.native
-  val LocationProvider: js.Function1[/* hasBasenameChildrenWindow */ BrowserRouterProps, Element] = js.native
+  val LocationProvider: js.Function1[/* param0 */ BrowserRouterProps, Element] = js.native
   
   trait Match extends StObject {
     
@@ -70,7 +67,7 @@ object mod {
   }
   object Match {
     
-    inline def apply(hasChildrenTargetPathStartsWith: MatchProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenTargetPathStartsWith.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: MatchProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@storybook/router", "Match")
     @js.native
@@ -89,7 +86,7 @@ object mod {
   
   object Route {
     
-    inline def apply(hasPathChildrenStartsWithHideOnly: RouteProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasPathChildrenStartsWithHideOnly.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: RouteProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@storybook/router", "Route")
     @js.native
@@ -117,7 +114,7 @@ object mod {
   
   inline def stringifyQuery(query: Query): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyQuery")(query.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def useNavigate(): js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigate")().asInstanceOf[js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]]
+  inline def useNavigate(): js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigate")().asInstanceOf[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
   
   type Args = StringDictionary[Any]
   
@@ -323,9 +320,7 @@ object mod {
     var location: PartialLocationAncestorOrigins
     
     var navigate: ReturnType[
-        js.Function0[
-          js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-        ]
+        js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
       ]
   }
   object RouterData {
@@ -333,9 +328,7 @@ object mod {
     inline def apply(
       location: PartialLocationAncestorOrigins,
       navigate: ReturnType[
-          js.Function0[
-            js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-          ]
+          js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
         ],
       path: String
     ): RouterData = {
@@ -349,9 +342,7 @@ object mod {
       
       inline def setNavigate(
         value: ReturnType[
-              js.Function0[
-                js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-              ]
+              js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
             ]
       ): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
     }

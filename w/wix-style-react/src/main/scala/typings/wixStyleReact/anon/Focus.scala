@@ -4,31 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Focus extends StObject {
   
-  def blur(): js.Promise[Unit] = js.native
+  var focus: Boolean
   
-  def exists(): js.Promise[Boolean] = js.native
+  var value: Any
+}
+object Focus {
   
-  def focus(): js.Promise[Unit] = js.native
+  inline def apply(focus: Boolean, value: Any): Focus = {
+    val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Focus]
+  }
   
-  /** @deprecated  Should be private */
-  def inputWrapper(): js.Promise[js.Any] = js.native
-  
-  var isDisabled: js.Function0[js.Promise[Boolean]] = js.native
-  
-  def isEditable(): js.Promise[Boolean] = js.native
-  
-  def isOptionWrappedToHighlighter(optionId: String): js.Promise[Boolean] = js.native
-  def isOptionWrappedToHighlighter(optionId: Double): js.Promise[Boolean] = js.native
-  
-  var isReadOnly: js.Function0[js.Promise[js.Any]] = js.native
-  
-  def outsideClick(): js.Promise[Unit] = js.native
-  
-  def pressKey(key: String): js.Promise[Unit] = js.native
-  
-  def selectOptionById(id: String): js.Promise[Unit] = js.native
-  def selectOptionById(id: Double): js.Promise[Unit] = js.native
+  extension [Self <: Focus](x: Self) {
+    
+    inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }

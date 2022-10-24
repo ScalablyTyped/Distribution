@@ -15,7 +15,7 @@ object distInputGroupSrcInputGroupContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ClearInputGroupContext(hasChildren: ClearInputGroupContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearInputGroupContext")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ClearInputGroupContext(param0: ClearInputGroupContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearInputGroupContext")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/input-group/src/InputGroupContext", "InputGroupContext")
   @js.native

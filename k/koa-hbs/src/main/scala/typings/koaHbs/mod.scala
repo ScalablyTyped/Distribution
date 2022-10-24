@@ -51,17 +51,6 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Hbs]
     }
     
-    extension [Self <: Hbs](x: Self) {
-      
-      inline def setMiddleware(value: Middleware => Any): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
-      
-      inline def setRegisterHelper(value: FnCall): Self = StObject.set(x, "registerHelper", value.asInstanceOf[js.Any])
-      
-      inline def setSafeString(value: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString]): Self = StObject.set(x, "SafeString", value.asInstanceOf[js.Any])
-      
-      inline def setUtils(value: TypeofUtils): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
-    }
-    
     trait Middleware extends StObject {
       
       var blockHelperName: js.UndefOr[String] = js.undefined
@@ -135,6 +124,17 @@ object mod extends Shortcut {
         
         inline def setViewPathVarargs(value: String*): Self = StObject.set(x, "viewPath", js.Array(value*))
       }
+    }
+    
+    extension [Self <: Hbs](x: Self) {
+      
+      inline def setMiddleware(value: Middleware => Any): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
+      
+      inline def setRegisterHelper(value: FnCall): Self = StObject.set(x, "registerHelper", value.asInstanceOf[js.Any])
+      
+      inline def setSafeString(value: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString]): Self = StObject.set(x, "SafeString", value.asInstanceOf[js.Any])
+      
+      inline def setUtils(value: TypeofUtils): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
     }
   }
   

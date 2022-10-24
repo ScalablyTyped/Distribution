@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "xml-name-validator"
-version := "4.0-dt-20220913Z-4032fb"
-scalaVersion := "3.1.2"
+version := "4.0-dt-20220913Z-c3b44b"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -99,8 +99,8 @@ object mod {
       */
     def parse(): ParsedArgv = js.native
     def parse(argv: js.Array[String]): ParsedArgv = js.native
-    def parse(argv: js.Array[String], hasRun: Run): ParsedArgv = js.native
-    def parse(argv: Unit, hasRun: Run): ParsedArgv = js.native
+    def parse(argv: js.Array[String], param1: Run): ParsedArgv = js.native
+    def parse(argv: Unit, param1: Run): ParsedArgv = js.native
     
     /**
       * Raw CLI arguments

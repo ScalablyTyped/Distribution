@@ -244,11 +244,8 @@ object mod {
       * see http://gridstackjs.com/demo/serialization.html
       **/
     def load(layout: js.Array[GridStackWidget]): GridStack = js.native
-    def load(
-      layout: js.Array[GridStackWidget],
-      addAndRemove: js.Function3[/* g */ this.type, /* w */ GridStackWidget, /* add */ Boolean, GridItemHTMLElement]
-    ): GridStack = js.native
     def load(layout: js.Array[GridStackWidget], addAndRemove: Boolean): GridStack = js.native
+    def load(layout: js.Array[GridStackWidget], addAndRemove: AddRemoveFcn): GridStack = js.native
     
     /**
       * Convert an existing gridItem element into a sub-grid with the given (optional) options, else inherit them
@@ -570,7 +567,7 @@ object mod {
     /** return the closest parent (or itself) matching the given class */
     inline def closestUpByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestUpByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    /** copies over b size & position (GridStackPosition), and possibly min/max as well */
+    /** copies over b size & position (GridStackPosition), and optionally min/max as well */
     inline def copyPos(a: GridStackWidget, b: GridStackWidget): GridStackWidget = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[GridStackWidget]
     inline def copyPos(a: GridStackWidget, b: GridStackWidget, doMinMax: Boolean): GridStackWidget = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], doMinMax.asInstanceOf[js.Any])).asInstanceOf[GridStackWidget]
     
@@ -660,6 +657,8 @@ object mod {
   inline def obsoleteOpts(opts: GridStackOptions, oldName: String, newName: String, rev: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteOpts")(opts.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def obsoleteOptsDel(opts: GridStackOptions, oldName: String, rev: String, info: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteOptsDel")(opts.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  type AddRemoveFcn = js.Function3[/* g */ GridStack, /* w */ GridStackWidget, /* add */ Boolean, GridItemHTMLElement]
   
   trait CellPosition extends StObject {
     

@@ -12,7 +12,5 @@ object typesPositioningGetFixedPositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getFixedPosition(
-    hasContainerElementAnchorInitialXInitialYVwMarginVhMarginXMarginYMarginWidthTypePreventOverlapTransformOriginPropDisableSwappingDisableVHBounds: FixedPositionOptions
-  ): FixedPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedPosition")(hasContainerElementAnchorInitialXInitialYVwMarginVhMarginXMarginYMarginWidthTypePreventOverlapTransformOriginPropDisableSwappingDisableVHBounds.asInstanceOf[js.Any]).asInstanceOf[FixedPosition]
+  inline def getFixedPosition(param0: FixedPositionOptions): FixedPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[FixedPosition]
 }

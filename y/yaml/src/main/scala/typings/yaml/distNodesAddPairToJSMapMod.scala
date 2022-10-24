@@ -13,6 +13,6 @@ object distNodesAddPairToJSMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addPairToJSMap(ctx: Unit, map: MapLike, hasKeyValue: Pair[Any, Any]): MapLike = (^.asInstanceOf[js.Dynamic].applyDynamic("addPairToJSMap")(ctx.asInstanceOf[js.Any], map.asInstanceOf[js.Any], hasKeyValue.asInstanceOf[js.Any])).asInstanceOf[MapLike]
-  inline def addPairToJSMap(ctx: ToJSContext, map: MapLike, hasKeyValue: Pair[Any, Any]): MapLike = (^.asInstanceOf[js.Dynamic].applyDynamic("addPairToJSMap")(ctx.asInstanceOf[js.Any], map.asInstanceOf[js.Any], hasKeyValue.asInstanceOf[js.Any])).asInstanceOf[MapLike]
+  inline def addPairToJSMap(ctx: Unit, map: MapLike, param2: Pair[Any, Any]): MapLike = (^.asInstanceOf[js.Dynamic].applyDynamic("addPairToJSMap")(ctx.asInstanceOf[js.Any], map.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[MapLike]
+  inline def addPairToJSMap(ctx: ToJSContext, map: MapLike, param2: Pair[Any, Any]): MapLike = (^.asInstanceOf[js.Dynamic].applyDynamic("addPairToJSMap")(ctx.asInstanceOf[js.Any], map.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[MapLike]
 }

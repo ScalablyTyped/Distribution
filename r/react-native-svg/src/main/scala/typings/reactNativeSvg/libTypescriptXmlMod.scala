@@ -21,7 +21,7 @@ object libTypescriptXmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SvgAst(hasAstOverride: AstProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgAst")(hasAstOverride.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def SvgAst(param0: AstProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgAst")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   @JSImport("react-native-svg/lib/typescript/xml", "SvgFromUri")
   @js.native

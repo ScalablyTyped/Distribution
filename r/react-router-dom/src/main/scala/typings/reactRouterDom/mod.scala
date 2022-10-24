@@ -167,27 +167,27 @@ object mod {
   open class AbortedDeferredError ()
     extends typings.reactRouter.mod.AbortedDeferredError
   
-  inline def Await(hasChildrenErrorElementResolve: AwaitProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Await")(hasChildrenErrorElementResolve.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Await(param0: AwaitProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Await")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def BrowserRouter(hasBasenameChildrenWindow: BrowserRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BrowserRouter")(hasBasenameChildrenWindow.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BrowserRouter(param0: BrowserRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BrowserRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-router-dom", "Form")
   @js.native
   val Form: ForwardRefExoticComponent[FormProps & RefAttributes[HTMLFormElement]] = js.native
   
-  inline def HashRouter(hasBasenameChildrenWindow: HashRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HashRouter")(hasBasenameChildrenWindow.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HashRouter(param0: HashRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HashRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-router-dom", "Link")
   @js.native
   val Link: ForwardRefExoticComponent[LinkProps & RefAttributes[HTMLAnchorElement]] = js.native
   
-  inline def MemoryRouter(hasBasenameChildrenInitialEntriesInitialIndex: MemoryRouterProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MemoryRouter")(hasBasenameChildrenInitialEntriesInitialIndex.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MemoryRouter(param0: MemoryRouterProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MemoryRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("react-router-dom", "NavLink")
   @js.native
   val NavLink: ForwardRefExoticComponent[NavLinkProps & RefAttributes[HTMLAnchorElement]] = js.native
   
-  inline def Navigate(hasToReplaceStateRelative: NavigateProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Navigate")(hasToReplaceStateRelative.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def Navigate(param0: NavigateProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Navigate")(param0.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   @JSImport("react-router-dom", "NavigationType")
   @js.native
@@ -207,15 +207,15 @@ object mod {
   
   inline def Route(_props: RouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def Router(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp: RouterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Router(param0: RouterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def RouterProvider(hasFallbackElementRouter: RouterProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("RouterProvider")(hasFallbackElementRouter.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def RouterProvider(param0: RouterProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("RouterProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def Routes(hasChildrenLocation: RoutesProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Routes")(hasChildrenLocation.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Routes(param0: RoutesProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Routes")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   object ScrollRestoration {
     
-    inline def apply(hasGetKeyStorageKey: ScrollRestorationProps): Null = ^.asInstanceOf[js.Dynamic].apply(hasGetKeyStorageKey.asInstanceOf[js.Any]).asInstanceOf[Null]
+    inline def apply(param0: ScrollRestorationProps): Null = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Null]
     
     @JSImport("react-router-dom", "ScrollRestoration")
     @js.native
@@ -262,7 +262,7 @@ object mod {
   inline def createMemoryRouter(routes: js.Array[RouteObject]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryRouter")(routes.asInstanceOf[js.Any]).asInstanceOf[Router]
   inline def createMemoryRouter(routes: js.Array[RouteObject], opts: typings.reactRouter.anon.Basename): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryRouter")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
   
-  inline def createPath(hasPathnameSearchHash: PartialPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(hasPathnameSearchHash.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createPath(param0: PartialPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def createRoutesFromChildren(children: ReactNode): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromChildren")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
   inline def createRoutesFromChildren(children: ReactNode, parentPath: js.Array[Double]): js.Array[RouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromChildren")(children.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[RouteObject]]
@@ -324,7 +324,7 @@ object mod {
       * two versions of the history library to your bundles unless you use the same
       * version of the history library that React Router uses internally.
       */
-    inline def apply(hasBasenameChildrenHistory: HistoryRouterProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasBasenameChildrenHistory.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: HistoryRouterProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-router-dom", "unstable_HistoryRouter")
     @js.native
@@ -348,16 +348,16 @@ object mod {
   
   inline def useFormAction(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormAction")().asInstanceOf[String]
   inline def useFormAction(action: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormAction")(action.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def useFormAction(action: String, hasRelative: Relative): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useFormAction")(action.asInstanceOf[js.Any], hasRelative.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def useFormAction(action: Unit, hasRelative: Relative): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useFormAction")(action.asInstanceOf[js.Any], hasRelative.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def useFormAction(action: String, param1: Relative): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useFormAction")(action.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def useFormAction(action: Unit, param1: Relative): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useFormAction")(action.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def useHref(to: To): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useHref")(to.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def useHref(to: To, hasRelative: typings.reactRouter.anon.Relative): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useHref")(to.asInstanceOf[js.Any], hasRelative.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def useHref(to: To, param1: typings.reactRouter.anon.Relative): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useHref")(to.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def useInRouterContext(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useInRouterContext")().asInstanceOf[Boolean]
   
   inline def useLinkClickHandler[E /* <: typings.std.Element */](to: To): js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkClickHandler")(to.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit]]
-  inline def useLinkClickHandler[E /* <: typings.std.Element */](to: To, hasTargetReplacePropStatePreventScrollResetRelative: PreventScrollReset): js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLinkClickHandler")(to.asInstanceOf[js.Any], hasTargetReplacePropStatePreventScrollResetRelative.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit]]
+  inline def useLinkClickHandler[E /* <: typings.std.Element */](to: To, param1: PreventScrollReset): js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLinkClickHandler")(to.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ typings.react.mod.MouseEvent[E, MouseEvent], Unit]]
   
   inline def useLoaderData(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoaderData")().asInstanceOf[Any]
   
@@ -382,7 +382,7 @@ object mod {
   inline def useParams[ParamsOrKey /* <: String | (Record[String, js.UndefOr[String]]) */](): /* import warning: importer.ImportType#apply Failed type conversion: [ParamsOrKey] extends [string] ? @remix-run/router.@remix-run/router/dist/utils.Params<ParamsOrKey> : std.Partial<ParamsOrKey> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: [ParamsOrKey] extends [string] ? @remix-run/router.@remix-run/router/dist/utils.Params<ParamsOrKey> : std.Partial<ParamsOrKey> */ js.Any]
   
   inline def useResolvedPath(to: To): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("useResolvedPath")(to.asInstanceOf[js.Any]).asInstanceOf[Path]
-  inline def useResolvedPath(to: To, hasRelative: typings.reactRouter.anon.Relative): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("useResolvedPath")(to.asInstanceOf[js.Any], hasRelative.asInstanceOf[js.Any])).asInstanceOf[Path]
+  inline def useResolvedPath(to: To, param1: typings.reactRouter.anon.Relative): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("useResolvedPath")(to.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Path]
   
   inline def useRevalidator(): Revalidate = ^.asInstanceOf[js.Dynamic].applyDynamic("useRevalidator")().asInstanceOf[Revalidate]
   

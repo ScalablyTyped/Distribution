@@ -15,7 +15,7 @@ object mod {
   open class BasicAuthInterceptor protected () extends StObject {
     def this(options: BasicAuthInterceptorConfig) = this()
     
-    def getHeader(hasUsernamePassword: Password): Authorization = js.native
+    def getHeader(param0: Password): Authorization = js.native
     
     def interceptor(config: Any): Any = js.native
   }

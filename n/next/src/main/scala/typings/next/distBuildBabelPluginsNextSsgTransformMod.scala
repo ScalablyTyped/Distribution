@@ -12,7 +12,7 @@ object distBuildBabelPluginsNextSsgTransformMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasT: Types): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasT.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def default(param0: Types): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("next/dist/build/babel/plugins/next-ssg-transform", "EXPORT_NAME_GET_SERVER_PROPS")
   @js.native

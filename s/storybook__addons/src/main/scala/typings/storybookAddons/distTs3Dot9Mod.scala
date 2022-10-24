@@ -64,7 +64,7 @@ object distTs3Dot9Mod {
   @js.native
   open class Channel ()
     extends typings.storybookChannels.mod.Channel {
-    def this(hasTransportAsync: ChannelArgs) = this()
+    def this(param0: ChannelArgs) = this()
   }
   
   @JSImport("@storybook/addons/dist/ts3.9", "addons")

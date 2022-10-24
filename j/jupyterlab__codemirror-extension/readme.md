@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__codemirror-extension
 
-Typings are for version 3.4.8
+Typings are for version 3.5.0
 
 ## Library description:
 JupyterLab - CodeMirror Provider Extension

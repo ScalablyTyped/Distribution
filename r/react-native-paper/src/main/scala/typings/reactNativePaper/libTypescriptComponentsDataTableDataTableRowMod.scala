@@ -5,12 +5,12 @@ import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonRea
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import typings.reactNativePaper.anon.Call
-import typings.reactNativePaper.anon.CallHasOnPressStyleThemeChildrenPointerEventsRest
 import typings.reactNativePaper.anon.ChildrenOnPress
 import typings.reactNativePaper.anon.PickRemoveChildrenComponeAccessibilityRole
 import typings.reactNativePaper.anon.PickTouchableWithoutFeedb
 import typings.reactNativePaper.anon.PointerEvents
 import typings.reactNativePaper.anon.TouchableWithoutFeedbackP
+import typings.reactNativePaper.anon.`9`
 import typings.reactNativePaper.libTypescriptTypesMod.RemoveChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +25,7 @@ object libTypescriptComponentsDataTableDataTableRowMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & PointerEvents
-    ]) & CallHasOnPressStyleThemeChildrenPointerEventsRest, 
+    ]) & `9`, 
     js.Object
   ]) = js.native
   
@@ -58,7 +58,7 @@ object libTypescriptComponentsDataTableDataTableRowMod extends Shortcut {
     */
   object DataTableRow {
     
-    inline def apply(hasOnPressStyleThemeChildrenPointerEventsRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasOnPressStyleThemeChildrenPointerEventsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTableRow", "DataTableRow")
     @js.native
@@ -79,7 +79,7 @@ object libTypescriptComponentsDataTableDataTableRowMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & PointerEvents
-    ]) & CallHasOnPressStyleThemeChildrenPointerEventsRest, 
+    ]) & `9`, 
     js.Object
   ])
   
@@ -89,7 +89,7 @@ object libTypescriptComponentsDataTableDataTableRowMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & PointerEvents
-    ]) & CallHasOnPressStyleThemeChildrenPointerEventsRest, 
+    ]) & `9`, 
     js.Object
   ]) = default
 }

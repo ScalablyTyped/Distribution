@@ -93,7 +93,7 @@ object distTypesComponentsTreeTreeMod {
     
     def renderItems(): js.Array[ReactNode] = js.native
     
-    def renderTreeItem(hasFlatItemPathProvidedSnapshot: FlatItem): Element = js.native
+    def renderTreeItem(param0: FlatItem): Element = js.native
     
     def setItemRef(itemId: ItemId): Unit = js.native
     def setItemRef(itemId: ItemId, el: HTMLElement): Unit = js.native

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "just-throttle"
-version := "4.1.1-ab1458"
-scalaVersion := "3.1.2"
+version := "4.1.1-eac1c6"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "words-to-time-converter"
-version := "1.0-dt-20211202Z-54fcd0"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-d85326"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

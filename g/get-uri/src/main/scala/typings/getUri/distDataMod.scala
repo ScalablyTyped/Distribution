@@ -13,7 +13,7 @@ object distDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasUri: UrlWithStringQuery, hasCache: DataOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUri.asInstanceOf[js.Any], hasCache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  inline def default(param0: UrlWithStringQuery, param1: DataOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
   
   trait DataOptions
     extends StObject

@@ -28,9 +28,7 @@ object typesSliderUseSliderControlsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useSliderControls(
-    hasRefPropThumb1RefPropThumb2RefMinMaxStepDisabledVerticalOnBlurOnKeyDownOnMouseDownOnTouchStartAnimationDurationControls: SliderControlsOptions
-  ): SliderAndRangeSliderControls = ^.asInstanceOf[js.Dynamic].applyDynamic("useSliderControls")(hasRefPropThumb1RefPropThumb2RefMinMaxStepDisabledVerticalOnBlurOnKeyDownOnMouseDownOnTouchStartAnimationDurationControls.asInstanceOf[js.Any]).asInstanceOf[SliderAndRangeSliderControls]
+  inline def useSliderControls(param0: SliderControlsOptions): SliderAndRangeSliderControls = ^.asInstanceOf[js.Dynamic].applyDynamic("useSliderControls")(param0.asInstanceOf[js.Any]).asInstanceOf[SliderAndRangeSliderControls]
   
   trait SliderAndRangeSliderControls extends StObject {
     

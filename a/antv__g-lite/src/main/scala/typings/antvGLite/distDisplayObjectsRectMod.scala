@@ -14,7 +14,7 @@ object distDisplayObjectsRectMod {
   @JSImport("@antv/g-lite/dist/display-objects/Rect", "Rect")
   @js.native
   open class Rect () extends DisplayObject[RectStyleProps, ParsedRectStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[RectStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[RectStyleProps]) = this()
   }
   
   trait ParsedRectStyleProps

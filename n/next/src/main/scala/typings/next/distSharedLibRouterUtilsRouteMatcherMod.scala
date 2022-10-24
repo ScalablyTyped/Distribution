@@ -13,7 +13,7 @@ object distSharedLibRouterUtilsRouteMatcherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getRouteMatcher(hasReGroups: RouteRegex): RouteMatch = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteMatcher")(hasReGroups.asInstanceOf[js.Any]).asInstanceOf[RouteMatch]
+  inline def getRouteMatcher(param0: RouteRegex): RouteMatch = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteMatcher")(param0.asInstanceOf[js.Any]).asInstanceOf[RouteMatch]
   
   type Params = StringDictionary[Any]
   

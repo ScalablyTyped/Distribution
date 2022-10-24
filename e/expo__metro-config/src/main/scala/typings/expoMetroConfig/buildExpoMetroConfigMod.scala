@@ -26,7 +26,7 @@ object buildExpoMetroConfigMod {
   inline def getDefaultConfig(projectRoot: String, options: DefaultConfigOptions): InputConfigT = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConfig")(projectRoot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[InputConfigT]
   
   inline def loadAsync(projectRoot: String): js.Promise[ConfigT] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ConfigT]]
-  inline def loadAsync(projectRoot: String, hasReporterTargetMetroOptions: LoadOptions): js.Promise[ConfigT] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(projectRoot.asInstanceOf[js.Any], hasReporterTargetMetroOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ConfigT]]
+  inline def loadAsync(projectRoot: String, param1: LoadOptions): js.Promise[ConfigT] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ConfigT]]
   
   trait DefaultConfigOptions extends StObject {
     

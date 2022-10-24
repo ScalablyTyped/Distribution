@@ -14,7 +14,7 @@ object distUiComponentsJobCardDetailsDetailsContentDetailsContentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DetailsContent(hasSelectedTabHasStacktraceDataReturnValueOptsFailedReasonActions: DetailsContentProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("DetailsContent")(hasSelectedTabHasStacktraceDataReturnValueOptsFailedReasonActions.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def DetailsContent(param0: DetailsContentProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("DetailsContent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait DetailsContentProps extends StObject {
     

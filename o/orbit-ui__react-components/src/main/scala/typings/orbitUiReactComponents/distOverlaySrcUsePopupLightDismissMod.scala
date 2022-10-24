@@ -18,6 +18,6 @@ object distOverlaySrcUsePopupLightDismissMod {
   inline def usePopupLightDismiss(
     triggerRef: RefObject[HTMLElement],
     overlayRef: RefObject[HTMLElement],
-    hasTriggerOnHideHideOnEscapeHideOnLeaveHideOnOutsideClick: UseOverlayLightDismissOptions
-  ): `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopupLightDismiss")(triggerRef.asInstanceOf[js.Any], overlayRef.asInstanceOf[js.Any], hasTriggerOnHideHideOnEscapeHideOnLeaveHideOnOutsideClick.asInstanceOf[js.Any])).asInstanceOf[`1`]
+    param2: UseOverlayLightDismissOptions
+  ): `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("usePopupLightDismiss")(triggerRef.asInstanceOf[js.Any], overlayRef.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[`1`]
 }

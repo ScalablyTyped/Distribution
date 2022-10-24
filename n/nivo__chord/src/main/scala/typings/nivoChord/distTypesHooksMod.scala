@@ -22,17 +22,15 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useChord(hasDataKeysLabelValueFormatWidthHeightInnerRadiusRatioInnerRadiusOffsetPadAngleColors: Colors): GetColor = ^.asInstanceOf[js.Dynamic].applyDynamic("useChord")(hasDataKeysLabelValueFormatWidthHeightInnerRadiusRatioInnerRadiusOffsetPadAngleColors.asInstanceOf[js.Any]).asInstanceOf[GetColor]
+  inline def useChord(param0: Colors): GetColor = ^.asInstanceOf[js.Dynamic].applyDynamic("useChord")(param0.asInstanceOf[js.Any]).asInstanceOf[GetColor]
   
-  inline def useChordArcsAndRibbons(hasChordGetColorKeysDataGetLabelFormatValue: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordArcsAndRibbons")(hasChordGetColorKeysDataGetLabelFormatValue.asInstanceOf[js.Any]).asInstanceOf[Arcs]
+  inline def useChordArcsAndRibbons(param0: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordArcsAndRibbons")(param0.asInstanceOf[js.Any]).asInstanceOf[Arcs]
   
-  inline def useChordGenerators(hasWidthHeightInnerRadiusRatioInnerRadiusOffset: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordGenerators")(hasWidthHeightInnerRadiusRatioInnerRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[Center]
+  inline def useChordGenerators(param0: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordGenerators")(param0.asInstanceOf[js.Any]).asInstanceOf[Center]
   
-  inline def useChordLayout(hasPadAngle: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordLayout")(hasPadAngle.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
+  inline def useChordLayout(param0: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
   
-  inline def useChordSelection(
-    hasArcOpacityActiveArcOpacityInactiveArcOpacityRibbonsRibbonOpacityActiveRibbonOpacityInactiveRibbonOpacity: ActiveArcOpacity
-  ): CurrentArc = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordSelection")(hasArcOpacityActiveArcOpacityInactiveArcOpacityRibbonsRibbonOpacityActiveRibbonOpacityInactiveRibbonOpacity.asInstanceOf[js.Any]).asInstanceOf[CurrentArc]
+  inline def useChordSelection(param0: ActiveArcOpacity): CurrentArc = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordSelection")(param0.asInstanceOf[js.Any]).asInstanceOf[CurrentArc]
   
-  inline def useCustomLayerProps(hasCenterRadiusArcsArcGeneratorRibbonsRibbonGenerator: Radius): CustomLayerProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomLayerProps")(hasCenterRadiusArcsArcGeneratorRibbonsRibbonGenerator.asInstanceOf[js.Any]).asInstanceOf[CustomLayerProps]
+  inline def useCustomLayerProps(param0: Radius): CustomLayerProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomLayerProps")(param0.asInstanceOf[js.Any]).asInstanceOf[CustomLayerProps]
 }

@@ -60,5 +60,5 @@ object distMod {
   inline def getMessageFromCode(code: Double, fallbackMessage: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessageFromCode")(code.asInstanceOf[js.Any], fallbackMessage.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def serializeError(error: Any): SerializedEthereumRpcError = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeError")(error.asInstanceOf[js.Any]).asInstanceOf[SerializedEthereumRpcError]
-  inline def serializeError(error: Any, hasFallbackErrorShouldIncludeStack: FallbackError): SerializedEthereumRpcError = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeError")(error.asInstanceOf[js.Any], hasFallbackErrorShouldIncludeStack.asInstanceOf[js.Any])).asInstanceOf[SerializedEthereumRpcError]
+  inline def serializeError(error: Any, param1: FallbackError): SerializedEthereumRpcError = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeError")(error.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[SerializedEthereumRpcError]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BackIndex extends StObject {
   
-  def backIndex(hasPath: Path): Double
+  def backIndex(param0: Path): Double
   
   def get(index: Double): HistoryRecord
   
@@ -17,9 +17,9 @@ trait BackIndex extends StObject {
   
   def listen(listener: js.Function0[Unit]): js.Function0[Unit]
   
-  def push(hasPathState: State): Unit
+  def push(param0: State): Unit
   
-  def replace(hasPathState: State): Unit
+  def replace(param0: State): Unit
 }
 object BackIndex {
   

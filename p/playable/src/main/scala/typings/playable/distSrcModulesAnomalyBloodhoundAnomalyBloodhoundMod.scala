@@ -16,7 +16,7 @@ object distSrcModulesAnomalyBloodhoundAnomalyBloodhoundMod {
   open class default protected ()
     extends StObject
        with AnomalyBloodhound {
-    def this(hasEngineEventEmitter: Engine) = this()
+    def this(param0: Engine) = this()
     
     /* private */ /* CompleteClass */
     var _bindEvents: Any = js.native
@@ -46,7 +46,7 @@ object distSrcModulesAnomalyBloodhoundAnomalyBloodhoundMod {
     override def isDelayedReportExist(`type`: IReportType): Boolean = js.native
     
     /* CompleteClass */
-    override def reportDebugInfo(hasReasonStartTSEndTS: EndTS): Unit = js.native
+    override def reportDebugInfo(param0: EndTS): Unit = js.native
     
     /* CompleteClass */
     override def setAnomalyCallback(callback: js.Function1[/* anomalyData */ Any, Unit]): Unit = js.native
@@ -106,7 +106,7 @@ object distSrcModulesAnomalyBloodhoundAnomalyBloodhoundMod {
     
     def isDelayedReportExist(`type`: IReportType): Boolean
     
-    def reportDebugInfo(hasReasonStartTSEndTS: EndTS): Unit
+    def reportDebugInfo(param0: EndTS): Unit
     
     def setAnomalyCallback(callback: js.Function1[/* anomalyData */ Any, Unit]): Unit
     

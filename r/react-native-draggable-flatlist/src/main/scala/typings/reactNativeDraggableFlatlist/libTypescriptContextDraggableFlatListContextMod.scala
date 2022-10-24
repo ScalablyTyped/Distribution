@@ -12,7 +12,7 @@ object libTypescriptContextDraggableFlatListContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](hasActiveKeyKeyExtractorHorizontalChildren: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasActiveKeyKeyExtractorHorizontalChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[T](param0: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useDraggableFlatListContext[T](): DraggableFlatListContextValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDraggableFlatListContext")().asInstanceOf[DraggableFlatListContextValue[T]]
   

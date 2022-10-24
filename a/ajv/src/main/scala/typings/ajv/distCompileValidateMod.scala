@@ -134,7 +134,7 @@ object distCompileValidateMod {
     def subschema(appl: SubschemaArgs, valid: Name): SchemaCxt = js.native
   }
   
-  inline def getData($data: String, hasDataLevelDataNamesDataPathArr: SchemaCxt): Code | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")($data.asInstanceOf[js.Any], hasDataLevelDataNamesDataPathArr.asInstanceOf[js.Any])).asInstanceOf[Code | Double]
+  inline def getData($data: String, param1: SchemaCxt): Code | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")($data.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Code | Double]
   
   inline def validateFunctionCode(it: SchemaCxt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateFunctionCode")(it.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

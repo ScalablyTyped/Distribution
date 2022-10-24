@@ -17,8 +17,8 @@ import typings.puppeteerCore.anon.RunBeforeUnload
 import typings.puppeteerCore.anon.Timeout
 import typings.puppeteerCore.anon.Title
 import typings.puppeteerCore.anon.WaitForOptionsrefererstriReferer
+import typings.puppeteerCore.libEsmPuppeteerApiBrowserContextMod.BrowserContext
 import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.Browser
-import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.BrowserContext
 import typings.puppeteerCore.libEsmPuppeteerCommonAccessibilityMod.Accessibility
 import typings.puppeteerCore.libEsmPuppeteerCommonConsoleMessageMod.ConsoleMessage
 import typings.puppeteerCore.libEsmPuppeteerCommonCoverageMod.Coverage

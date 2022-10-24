@@ -16,7 +16,7 @@ object mod {
   @js.native
   open class Asset protected ()
     extends typings.expoAsset.buildAssetMod.Asset {
-    def this(hasNameTypeHashUriWidthHeight: AssetDescriptor) = this()
+    def this(param0: AssetDescriptor) = this()
   }
   /* static members */
   object Asset {

@@ -18,7 +18,7 @@ object distTypesUtilsColorDetectionMod {
   
   inline def getBoxShadow(rawShadow: js.Array[Opacity]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxShadow")(rawShadow.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getLuminance(hasRGB: G): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLuminance")(hasRGB.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getLuminance(param0: G): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLuminance")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def getTextColorForBackground(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextColorForBackground")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getTextColorForBackground(hex: String, opts: HardcodedSurface): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextColorForBackground")(hex.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]

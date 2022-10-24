@@ -39,8 +39,8 @@ object mod {
   inline def ResponsiveSunburst[RawDatum](props: ResponsiveSunburstProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveSunburst")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Sunburst[RawDatum](
-    hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: (Partial[Omit[SunburstSvgProps[RawDatum], data | height | width]]) & (Pick[SunburstSvgProps[RawDatum], data | height | width])
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Sunburst")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    param0: (Partial[Omit[SunburstSvgProps[RawDatum], data | height | width]]) & (Pick[SunburstSvgProps[RawDatum], data | height | width])
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Sunburst")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object defaultProps {
     
@@ -148,7 +148,7 @@ object mod {
     def role: String = js.native
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum](hasIdFormattedValueColor: ComputedDatum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasIdFormattedValueColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum](param0: ComputedDatum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/sunburst", "defaultProps.transitionMode")
     @js.native
@@ -163,9 +163,7 @@ object mod {
     inline def value_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
-  inline def useSunburst[RawDatum](
-    hasDataIdValueValueFormatRadiusCornerRadiusColorsColorByInheritColorFromParentChildColor: ChildColor[RawDatum]
-  ): ArcGenerator[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSunburst")(hasDataIdValueValueFormatRadiusCornerRadiusColorsColorByInheritColorFromParentChildColor.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator[RawDatum]]
+  inline def useSunburst[RawDatum](param0: ChildColor[RawDatum]): ArcGenerator[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSunburst")(param0.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator[RawDatum]]
   
-  inline def useSunburstLayerContext[RawDatum](hasNodesArcGeneratorCenterXCenterYRadius: SunburstCustomLayerProps[RawDatum]): SunburstCustomLayerProps[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSunburstLayerContext")(hasNodesArcGeneratorCenterXCenterYRadius.asInstanceOf[js.Any]).asInstanceOf[SunburstCustomLayerProps[RawDatum]]
+  inline def useSunburstLayerContext[RawDatum](param0: SunburstCustomLayerProps[RawDatum]): SunburstCustomLayerProps[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSunburstLayerContext")(param0.asInstanceOf[js.Any]).asInstanceOf[SunburstCustomLayerProps[RawDatum]]
 }

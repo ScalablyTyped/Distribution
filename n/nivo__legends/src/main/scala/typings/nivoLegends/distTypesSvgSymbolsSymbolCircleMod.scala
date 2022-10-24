@@ -12,5 +12,5 @@ object distTypesSvgSymbolsSymbolCircleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SymbolCircle(hasXYSizeFillOpacityBorderWidthBorderColor: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolCircle")(hasXYSizeFillOpacityBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SymbolCircle(param0: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolCircle")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -16,7 +16,7 @@ object distOverlaySrcOverlayArrowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerOverlayArrow(hasAsForwardedRefRest: InnerOverlayArrowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerOverlayArrow")(hasAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerOverlayArrow(param0: InnerOverlayArrowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerOverlayArrow")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/overlay/src/OverlayArrow", "OverlayArrow")
   @js.native

@@ -132,9 +132,9 @@ object mod {
   inline def parseTargetString(targetString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTargetString")(targetString.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def readTargetOptions[T](
-    hasProjectTargetConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Target */ Any,
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Target */ Any,
     context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExecutorContext */ Any
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("readTargetOptions")(hasProjectTargetConfiguration.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("readTargetOptions")(param0.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def removeDependenciesFromPackageJson(
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ Any,
@@ -149,8 +149,8 @@ object mod {
   ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDependenciesFromPackageJson")(tree.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], devDependencies.asInstanceOf[js.Any], packageJsonPath.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def targetToTargetString(
-    hasProjectTargetConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Target */ Any
-  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("targetToTargetString")(hasProjectTargetConfiguration.asInstanceOf[js.Any]).asInstanceOf[String]
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Target */ Any
+  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("targetToTargetString")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def toJS(
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ Any

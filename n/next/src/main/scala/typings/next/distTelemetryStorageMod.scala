@@ -11,7 +11,7 @@ object distTelemetryStorageMod {
   @JSImport("next/dist/telemetry/storage", "Telemetry")
   @js.native
   open class Telemetry protected () extends StObject {
-    def this(hasDistDir: DistDirString) = this()
+    def this(param0: DistDirString) = this()
     
     /* private */ var NEXT_TELEMETRY_DEBUG: Any = js.native
     

@@ -47,6 +47,12 @@ open class BitmapText protected () extends Container[DisplayObject] {
   var _autoResolution: Boolean = js.native
   
   /**
+    * Private tracker for the current font.
+    * @private
+    */
+  /* protected */ var _font: js.UndefOr[BitmapFont] = js.native
+  
+  /**
     * Private tracker for the current font name.
     * @private
     */
@@ -56,7 +62,7 @@ open class BitmapText protected () extends Container[DisplayObject] {
     * Private tracker for the current font size.
     * @private
     */
-  /* protected */ var _fontSize: Double = js.native
+  /* protected */ var _fontSize: js.UndefOr[Double] = js.native
   
   /**
     * Letter spacing. This is useful for setting the space between characters.
@@ -149,7 +155,7 @@ open class BitmapText protected () extends Container[DisplayObject] {
   
   /** The size of the font to display. */
   def fontSize: Double = js.native
-  def fontSize_=(value: Double): Unit = js.native
+  def fontSize_=(value: js.UndefOr[Double]): Unit = js.native
   
   /** Additional space between characters. */
   def letterSpacing: Double = js.native

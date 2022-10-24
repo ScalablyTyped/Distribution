@@ -19,7 +19,7 @@ object distTypesRemoteProviderRemoteProviderInitMod {
   @js.native
   val DEFAULT_TIMEOUT: /* 1000 */ Double = js.native
   
-  inline def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(hasMaxRetriesTimeout.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
+  inline def providerConfigFromInit(param0: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(param0.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
   
   trait RemoteProviderConfig extends StObject {
     

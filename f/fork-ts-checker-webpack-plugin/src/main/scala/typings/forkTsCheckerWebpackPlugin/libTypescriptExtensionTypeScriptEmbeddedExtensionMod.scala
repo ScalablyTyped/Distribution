@@ -22,7 +22,7 @@ object libTypescriptExtensionTypeScriptEmbeddedExtensionMod {
     * @param getEmbeddedSource  Function that returns embedded TypeScript source text and extension that this file
     *                           would have if it would be a regular TypeScript file
     */
-  inline def createTypeScriptEmbeddedExtension(hasEmbeddedExtensionsGetEmbeddedSource: TypeScriptEmbeddedExtensionHost): TypeScriptExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptEmbeddedExtension")(hasEmbeddedExtensionsGetEmbeddedSource.asInstanceOf[js.Any]).asInstanceOf[TypeScriptExtension]
+  inline def createTypeScriptEmbeddedExtension(param0: TypeScriptEmbeddedExtensionHost): TypeScriptExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptEmbeddedExtension")(param0.asInstanceOf[js.Any]).asInstanceOf[TypeScriptExtension]
   
   trait TypeScriptEmbeddedExtensionHost extends StObject {
     

@@ -159,8 +159,8 @@ object libMenuMod {
     /* was `typeof ItemGroup` */
     @JSImport("antd/lib/menu", "default.ItemGroup")
     @js.native
-    def ItemGroup: js.Function1[/* hasChildrenProps */ MenuItemGroupProps, ReactElement] = js.native
-    inline def ItemGroup_=(x: js.Function1[/* hasChildrenProps */ MenuItemGroupProps, ReactElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
+    def ItemGroup: js.Function1[/* param0 */ MenuItemGroupProps, ReactElement] = js.native
+    inline def ItemGroup_=(x: js.Function1[/* param0 */ MenuItemGroupProps, ReactElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
     
     /* static member */
     /* was `typeof SubMenu` */

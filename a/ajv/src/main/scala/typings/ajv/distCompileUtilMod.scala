@@ -92,10 +92,10 @@ object distCompileUtilMod {
   
   inline def schemaHasRulesButRef(schema: AnySchema, RULES: ValidationRules): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaHasRulesButRef")(schema.asInstanceOf[js.Any], RULES.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def schemaRefOrVal(hasTopSchemaRefSchemaPath: SchemaObjCxt, schema: Any, keyword: String): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(hasTopSchemaRefSchemaPath.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
-  inline def schemaRefOrVal(hasTopSchemaRefSchemaPath: SchemaObjCxt, schema: Any, keyword: String, $data: String): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(hasTopSchemaRefSchemaPath.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any], $data.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
+  inline def schemaRefOrVal(param0: SchemaObjCxt, schema: Any, keyword: String): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(param0.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
+  inline def schemaRefOrVal(param0: SchemaObjCxt, schema: Any, keyword: String, $data: String): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(param0.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any], $data.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
   
-  inline def schemaRefOrVal_false(hasTopSchemaRefSchemaPath: SchemaObjCxt, schema: Any, keyword: String, $data: `false`): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(hasTopSchemaRefSchemaPath.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any], $data.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
+  inline def schemaRefOrVal_false(param0: SchemaObjCxt, schema: Any, keyword: String, $data: `false`): Code | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaRefOrVal")(param0.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any], $data.asInstanceOf[js.Any])).asInstanceOf[Code | Double | Boolean]
   
   inline def setEvaluated_true(
     gen: CodeGen,

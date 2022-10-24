@@ -24,9 +24,7 @@ object typesDevtoolsDevtoolsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ReactQueryDevtools(
-    hasInitialIsOpenPanelPropsCloseButtonPropsToggleButtonPropsPositionContainerStyleNonce: DevtoolsOptions
-  ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ReactQueryDevtools")(hasInitialIsOpenPanelPropsCloseButtonPropsToggleButtonPropsPositionContainerStyleNonce.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def ReactQueryDevtools(param0: DevtoolsOptions): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ReactQueryDevtools")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   @JSImport("react-query/types/devtools/devtools", "ReactQueryDevtoolsPanel")
   @js.native

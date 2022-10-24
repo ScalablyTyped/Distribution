@@ -37,11 +37,11 @@ object buildUtilsMod {
     var name: String = js.native
   }
   
-  inline def getEnvironmentVars(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsFirefoxIsSauceIsSeleniumStandalone: PartialSessionFlags): IsAndroid = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentVars")(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsFirefoxIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[IsAndroid]
+  inline def getEnvironmentVars(param0: PartialSessionFlags): IsAndroid = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentVars")(param0.asInstanceOf[js.Any]).asInstanceOf[IsAndroid]
   
   inline def getErrorFromResponseBody(body: Any, requestOptions: Any): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getErrorFromResponseBody")(body.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
-  inline def getPrototype(hasIsW3CIsChromeIsFirefoxIsMobileIsSauceIsSeleniumStandalone: PartialSessionFlags): Record[String, js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototype")(hasIsW3CIsChromeIsFirefoxIsMobileIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.PropertyDescriptor]]
+  inline def getPrototype(param0: PartialSessionFlags): Record[String, js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototype")(param0.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.PropertyDescriptor]]
   
   inline def getSessionError(err: JSONWPCommandError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionError")(err.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getSessionError(err: JSONWPCommandError, params: PartialWebDriver): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSessionError")(err.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]

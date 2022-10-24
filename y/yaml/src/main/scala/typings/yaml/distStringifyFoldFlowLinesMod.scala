@@ -23,19 +23,9 @@ object distStringifyFoldFlowLinesMod {
   val FOLD_QUOTED: /* "quoted" */ String = js.native
   
   inline def foldFlowLines(text: String, indent: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def foldFlowLines(
-    text: String,
-    indent: String,
-    mode: Unit,
-    hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow: FoldOptions
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def foldFlowLines(text: String, indent: String, mode: Unit, param3: FoldOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def foldFlowLines(text: String, indent: String, mode: FoldMode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def foldFlowLines(
-    text: String,
-    indent: String,
-    mode: FoldMode,
-    hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow: FoldOptions
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def foldFlowLines(text: String, indent: String, mode: FoldMode, param3: FoldOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.yaml.yamlStrings.flow

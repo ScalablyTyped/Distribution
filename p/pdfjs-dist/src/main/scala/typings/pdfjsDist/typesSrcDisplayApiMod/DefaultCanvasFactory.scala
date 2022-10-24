@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pdfjs-dist/types/src/display/api", "DefaultCanvasFactory")
 @js.native
 open class DefaultCanvasFactory () extends DOMCanvasFactory {
-  def this(hasOwnerDocument: OwnerDocument) = this()
+  def this(param0: OwnerDocument) = this()
 }
 object DefaultCanvasFactory {
   
-  inline def apply: Instantiable1[/* hasOwnerDocument */ js.UndefOr[OwnerDocument], DOMCanvasFactory] = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultCanvasFactory").asInstanceOf[Instantiable1[/* hasOwnerDocument */ js.UndefOr[OwnerDocument], DOMCanvasFactory]]
+  inline def apply: Instantiable1[/* param0 */ js.UndefOr[OwnerDocument], DOMCanvasFactory] = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultCanvasFactory").asInstanceOf[Instantiable1[/* param0 */ js.UndefOr[OwnerDocument], DOMCanvasFactory]]
 }

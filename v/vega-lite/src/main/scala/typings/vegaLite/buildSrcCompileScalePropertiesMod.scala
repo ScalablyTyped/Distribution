@@ -876,16 +876,20 @@ object buildSrcCompileScalePropertiesMod {
     fieldDef: ScaleDatumDef[String],
     specifiedDomain: Domain,
     markDef: MarkDef[Mark, ExprRef | SignalRef],
-    scaleType: ScaleType
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("zero")(channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    scaleType: ScaleType,
+    scaleConfig: ScaleConfig[SignalRef],
+    hasSecondaryRangeChannel: Boolean
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("zero")(channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], hasSecondaryRangeChannel.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def zero_binned(
     channel: ScaleChannel,
     fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null],
     specifiedDomain: Domain,
     markDef: MarkDef[Mark, ExprRef | SignalRef],
-    scaleType: ScaleType
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("zero")(channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    scaleType: ScaleType,
+    scaleConfig: ScaleConfig[SignalRef],
+    hasSecondaryRangeChannel: Boolean
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("zero")(channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], hasSecondaryRangeChannel.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait ScaleRuleParams extends StObject {
     
@@ -902,6 +906,8 @@ object buildSrcCompileScalePropertiesMod {
     var fieldOrDatumDef: (ScaleFieldDef[String, Type, Boolean | BinParams | Null]) | ScaleDatumDef[String]
     
     var hasNestedOffsetScale: Boolean
+    
+    var hasSecondaryRangeChannel: Boolean
     
     var markDef: MarkDef[Mark, SignalRef]
     
@@ -921,13 +927,14 @@ object buildSrcCompileScalePropertiesMod {
       domain: Domain,
       fieldOrDatumDef: (ScaleFieldDef[String, Type, Boolean | BinParams | Null]) | ScaleDatumDef[String],
       hasNestedOffsetScale: Boolean,
+      hasSecondaryRangeChannel: Boolean,
       markDef: MarkDef[Mark, SignalRef],
       model: Model,
       scalePadding: Double | SignalRef,
       scalePaddingInner: Double | SignalRef,
       scaleType: ScaleType
     ): ScaleRuleParams = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], hasNestedOffsetScale = hasNestedOffsetScale.asInstanceOf[js.Any], markDef = markDef.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], scalePadding = scalePadding.asInstanceOf[js.Any], scalePaddingInner = scalePaddingInner.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], hasNestedOffsetScale = hasNestedOffsetScale.asInstanceOf[js.Any], hasSecondaryRangeChannel = hasSecondaryRangeChannel.asInstanceOf[js.Any], markDef = markDef.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], scalePadding = scalePadding.asInstanceOf[js.Any], scalePaddingInner = scalePaddingInner.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScaleRuleParams]
     }
     
@@ -952,6 +959,8 @@ object buildSrcCompileScalePropertiesMod {
       inline def setFieldOrDatumDef(value: (ScaleFieldDef[String, Type, Boolean | BinParams | Null]) | ScaleDatumDef[String]): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
       
       inline def setHasNestedOffsetScale(value: Boolean): Self = StObject.set(x, "hasNestedOffsetScale", value.asInstanceOf[js.Any])
+      
+      inline def setHasSecondaryRangeChannel(value: Boolean): Self = StObject.set(x, "hasSecondaryRangeChannel", value.asInstanceOf[js.Any])
       
       inline def setMarkDef(value: MarkDef[Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
       

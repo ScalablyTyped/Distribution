@@ -16,7 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeStorybookMetadata(hasPackageJsonMainConfig: MainConfig): js.Promise[StorybookMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeStorybookMetadata")(hasPackageJsonMainConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StorybookMetadata]]
+  inline def computeStorybookMetadata(param0: MainConfig): js.Promise[StorybookMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeStorybookMetadata")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StorybookMetadata]]
   
   inline def getStorybookMetadata(_configDir: String): js.Promise[StorybookMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookMetadata")(_configDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StorybookMetadata]]
   

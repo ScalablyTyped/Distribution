@@ -10,7 +10,7 @@ object distTypesRegionInfoGetResolvedSigningRegionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getResolvedSigningRegion(hostname: String, hasSigningRegionRegionRegexUseFipsEndpoint: GetResolvedSigningRegionOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolvedSigningRegion")(hostname.asInstanceOf[js.Any], hasSigningRegionRegionRegexUseFipsEndpoint.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def getResolvedSigningRegion(hostname: String, param1: GetResolvedSigningRegionOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolvedSigningRegion")(hostname.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   trait GetResolvedSigningRegionOptions extends StObject {
     

@@ -102,7 +102,7 @@ object distTypesPropsMod {
     
     @JSImport("@nivo/calendar/dist/types/props", "calendarCanvasDefaultProps.tooltip")
     @js.native
-    val tooltip: MemoExoticComponent[js.Function1[/* hasValueDayColor */ CalendarTooltipProps, Element | Null]] = js.native
+    val tooltip: MemoExoticComponent[js.Function1[/* param0 */ CalendarTooltipProps, Element | Null]] = js.native
     
     inline def yearLegend(year: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("yearLegend")(year.asInstanceOf[js.Any]).asInstanceOf[Double]
     
@@ -197,7 +197,7 @@ object distTypesPropsMod {
     
     @JSImport("@nivo/calendar/dist/types/props", "calendarDefaultProps.tooltip")
     @js.native
-    val tooltip: MemoExoticComponent[js.Function1[/* hasValueDayColor */ CalendarTooltipProps, Element | Null]] = js.native
+    val tooltip: MemoExoticComponent[js.Function1[/* param0 */ CalendarTooltipProps, Element | Null]] = js.native
     
     inline def yearLegend(year: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("yearLegend")(year.asInstanceOf[js.Any]).asInstanceOf[Double]
     
@@ -300,7 +300,7 @@ object distTypesPropsMod {
     
     @JSImport("@nivo/calendar/dist/types/props", "timeRangeDefaultProps.tooltip")
     @js.native
-    val tooltip: MemoExoticComponent[js.Function1[/* hasValueDayColor */ CalendarTooltipProps, Element | Null]] = js.native
+    val tooltip: MemoExoticComponent[js.Function1[/* param0 */ CalendarTooltipProps, Element | Null]] = js.native
     
     @JSImport("@nivo/calendar/dist/types/props", "timeRangeDefaultProps.weekdayLegendOffset")
     @js.native

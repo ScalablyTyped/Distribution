@@ -19,11 +19,11 @@ object typesUtilsMod {
   inline def getElementSizing(): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")().asInstanceOf[CollapseSizing]
   inline def getElementSizing(element: HTMLElement): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")(element.asInstanceOf[js.Any]).asInstanceOf[CollapseSizing]
   
-  inline def getTransitionClassNames(hasClassNamesTimeoutOptions: TransitionClassNamesOptions): ReadonlyRequiredCSSTransi = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionClassNames")(hasClassNamesTimeoutOptions.asInstanceOf[js.Any]).asInstanceOf[ReadonlyRequiredCSSTransi]
+  inline def getTransitionClassNames(param0: TransitionClassNamesOptions): ReadonlyRequiredCSSTransi = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionClassNames")(param0.asInstanceOf[js.Any]).asInstanceOf[ReadonlyRequiredCSSTransi]
   
-  inline def getTransitionTimeout(hasTimeoutAppearEnterExit: ReadonlyTransitionTimeoutAppear): ReadonlyRequiredTransitio = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionTimeout")(hasTimeoutAppearEnterExit.asInstanceOf[js.Any]).asInstanceOf[ReadonlyRequiredTransitio]
+  inline def getTransitionTimeout(param0: ReadonlyTransitionTimeoutAppear): ReadonlyRequiredTransitio = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionTimeout")(param0.asInstanceOf[js.Any]).asInstanceOf[ReadonlyRequiredTransitio]
   
-  inline def isWithinViewport(hasFixedElementFixedToElement: IsWithinViewportOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWithinViewport")(hasFixedElementFixedToElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWithinViewport(param0: IsWithinViewportOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWithinViewport")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait CollapseSizing extends StObject {
     

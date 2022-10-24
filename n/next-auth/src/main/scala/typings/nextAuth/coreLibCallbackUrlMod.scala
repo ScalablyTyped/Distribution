@@ -11,7 +11,7 @@ object coreLibCallbackUrlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createCallbackUrl(hasOptionsParamValueCookieValue: CreateCallbackUrlParams): js.Promise[CallbackUrl] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallbackUrl")(hasOptionsParamValueCookieValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CallbackUrl]]
+  inline def createCallbackUrl(param0: CreateCallbackUrlParams): js.Promise[CallbackUrl] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallbackUrl")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CallbackUrl]]
   
   trait CreateCallbackUrlParams extends StObject {
     

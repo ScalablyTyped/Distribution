@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@swc-node/sourcemap-support" : "0.2.0"
+      "@swc-node/sourcemap-support" : "0.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@swc-node/sourcemap-support" : "0.2.0"
+      "@swc-node/sourcemap-support" : "0.2.2"
     }
   ],
   "compile-devDependencies" : [

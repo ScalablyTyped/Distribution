@@ -13,6 +13,6 @@ object srcComputeCoordsFromPlacementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeCoordsFromPlacement(hasReferenceFloating: ElementRects, placement: Placement): Coords = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCoordsFromPlacement")(hasReferenceFloating.asInstanceOf[js.Any], placement.asInstanceOf[js.Any])).asInstanceOf[Coords]
-  inline def computeCoordsFromPlacement(hasReferenceFloating: ElementRects, placement: Placement, rtl: Boolean): Coords = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCoordsFromPlacement")(hasReferenceFloating.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Coords]
+  inline def computeCoordsFromPlacement(param0: ElementRects, placement: Placement): Coords = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCoordsFromPlacement")(param0.asInstanceOf[js.Any], placement.asInstanceOf[js.Any])).asInstanceOf[Coords]
+  inline def computeCoordsFromPlacement(param0: ElementRects, placement: Placement, rtl: Boolean): Coords = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCoordsFromPlacement")(param0.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Coords]
 }

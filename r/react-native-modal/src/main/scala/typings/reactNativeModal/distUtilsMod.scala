@@ -13,7 +13,7 @@ object distUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buildAnimations(hasAnimationInAnimationOut: AnimationOut): Animations = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAnimations")(hasAnimationInAnimationOut.asInstanceOf[js.Any]).asInstanceOf[Animations]
+  inline def buildAnimations(param0: AnimationOut): Animations = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAnimations")(param0.asInstanceOf[js.Any]).asInstanceOf[Animations]
   
   inline def initializeAnimations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeAnimations")().asInstanceOf[Unit]
   

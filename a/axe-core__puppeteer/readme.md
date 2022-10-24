@@ -1,7 +1,7 @@
 
 # Scala.js typings for axe-core__puppeteer
 
-Typings are for version 4.4.4
+Typings are for version 4.4.5
 
 ## Library description:
 Provides a chainable axe API for Puppeteer and automatically injects into all frames

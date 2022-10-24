@@ -589,7 +589,7 @@ object mod {
       }
     }
     
-    inline def trackNonHotLinkedPhotoView(hasAppId: AppId): js.Function1[/* hasPhotoId */ typings.unsplashJs.anon.PhotoId, js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trackNonHotLinkedPhotoView")(hasAppId.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasPhotoId */ typings.unsplashJs.anon.PhotoId, js.Promise[Response]]]
+    inline def trackNonHotLinkedPhotoView(param0: AppId): js.Function1[/* param0 */ typings.unsplashJs.anon.PhotoId, js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trackNonHotLinkedPhotoView")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param0 */ typings.unsplashJs.anon.PhotoId, js.Promise[Response]]]
     
     object users {
       

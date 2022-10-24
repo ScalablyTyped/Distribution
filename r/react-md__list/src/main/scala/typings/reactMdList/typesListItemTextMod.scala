@@ -12,7 +12,7 @@ object typesListItemTextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ListItemText(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemText")(hasClassNameSecondaryTextClassNameSecondaryTextChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ListItemText(param0: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemText")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait ListItemTextProps extends StObject {
     

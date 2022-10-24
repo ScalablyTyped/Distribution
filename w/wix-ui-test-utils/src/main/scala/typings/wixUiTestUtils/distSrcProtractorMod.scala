@@ -41,7 +41,7 @@ object distSrcProtractorMod {
     inline def specs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specs")(x.asInstanceOf[js.Any])
   }
   
-  inline def createStoryUrl(hasKindStoryWithExamples: StoryUrlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoryUrl")(hasKindStoryWithExamples.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createStoryUrl(param0: StoryUrlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoryUrl")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getElementByDataHook(dataHook: String): ElementFinder = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementByDataHook")(dataHook.asInstanceOf[js.Any]).asInstanceOf[ElementFinder]
   

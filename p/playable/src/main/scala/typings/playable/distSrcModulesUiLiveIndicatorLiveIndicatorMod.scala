@@ -16,7 +16,7 @@ object distSrcModulesUiLiveIndicatorLiveIndicatorMod {
   open class default protected ()
     extends StObject
        with LiveIndicator {
-    def this(hasEngineEventEmitterTextMapTooltipService: EventEmitterTextMap) = this()
+    def this(param0: EventEmitterTextMap) = this()
     
     /* CompleteClass */
     override def destroy(): Unit = js.native

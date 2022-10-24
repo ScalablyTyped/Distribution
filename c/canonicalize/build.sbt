@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "canonicalize"
-version := "1.0.8-f52111"
-scalaVersion := "3.1.2"
+version := "1.0.8-3e1da6"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "dialog-node"
-version := "0.2-dt-20220112Z-d012eb"
-scalaVersion := "3.1.2"
+version := "0.2-dt-20220112Z-e0de58"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

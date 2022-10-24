@@ -15,7 +15,7 @@ object typesScaleTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ScaleTransition[E /* <: HTMLElement */](hasPortalPortalIntoPortalIntoIdChildrenClassNameOptions: ScaleTransitionProps[E]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ScaleTransition")(hasPortalPortalIntoPortalIntoIdChildrenClassNameOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ScaleTransition[E /* <: HTMLElement */](param0: ScaleTransitionProps[E]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ScaleTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait ScaleTransitionProps[E /* <: HTMLElement */]
     extends StObject

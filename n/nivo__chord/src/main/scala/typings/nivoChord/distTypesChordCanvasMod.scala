@@ -12,5 +12,5 @@ object distTypesChordCanvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ChordCanvas(hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps: ChordCanvasProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ChordCanvas")(hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ChordCanvas(param0: ChordCanvasProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ChordCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -106,7 +106,7 @@ object mod {
     * determines if this component is focused or not.
     */
   inline def useFocus(): typings.ink.buildHooksUseFocusMod.Output = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")().asInstanceOf[typings.ink.buildHooksUseFocusMod.Output]
-  inline def useFocus(hasIsActiveAutoFocusCustomId: Input): typings.ink.buildHooksUseFocusMod.Output = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")(hasIsActiveAutoFocusCustomId.asInstanceOf[js.Any]).asInstanceOf[typings.ink.buildHooksUseFocusMod.Output]
+  inline def useFocus(param0: Input): typings.ink.buildHooksUseFocusMod.Output = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.ink.buildHooksUseFocusMod.Output]
   
   /**
     * This hook exposes methods to enable or disable focus management for all

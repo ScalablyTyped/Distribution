@@ -12,5 +12,5 @@ object distTypesRadarSliceTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RadarSliceTooltip(hasIndexData: RadarSliceTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarSliceTooltip")(hasIndexData.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RadarSliceTooltip(param0: RadarSliceTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarSliceTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

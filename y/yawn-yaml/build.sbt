@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "yawn-yaml"
-version := "1.4-dt-20211202Z-a428a6"
-scalaVersion := "3.1.2"
+version := "1.4-dt-20211202Z-32b3e9"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

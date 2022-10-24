@@ -259,9 +259,9 @@ object esTypesMod {
       onSwipedRight: /* eventData */ SwipeEventData => Unit,
       onSwipedUp: /* eventData */ SwipeEventData => Unit,
       onSwiping: /* eventData */ SwipeEventData => Unit,
-      onTap: /* hasEvent */ Event => Unit,
-      onTouchEndOrOnMouseUp: /* hasEvent */ Event => Unit,
-      onTouchStartOrOnMouseDown: /* hasEvent */ Event => Unit
+      onTap: /* param0 */ Event => Unit,
+      onTouchEndOrOnMouseUp: /* param0 */ Event => Unit,
+      onTouchStartOrOnMouseDown: /* param0 */ Event => Unit
     ): SwipeableCallbacks = {
       val __obj = js.Dynamic.literal(onSwipeStart = js.Any.fromFunction1(onSwipeStart), onSwiped = js.Any.fromFunction1(onSwiped), onSwipedDown = js.Any.fromFunction1(onSwipedDown), onSwipedLeft = js.Any.fromFunction1(onSwipedLeft), onSwipedRight = js.Any.fromFunction1(onSwipedRight), onSwipedUp = js.Any.fromFunction1(onSwipedUp), onSwiping = js.Any.fromFunction1(onSwiping), onTap = js.Any.fromFunction1(onTap), onTouchEndOrOnMouseUp = js.Any.fromFunction1(onTouchEndOrOnMouseUp), onTouchStartOrOnMouseDown = js.Any.fromFunction1(onTouchStartOrOnMouseDown))
       __obj.asInstanceOf[SwipeableCallbacks]
@@ -275,11 +275,11 @@ object esTypesMod {
       
       inline def setOnSwiping(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
       
-      inline def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+      inline def setOnTap(value: /* param0 */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       
-      inline def setOnTouchEndOrOnMouseUp(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.Any.fromFunction1(value))
+      inline def setOnTouchEndOrOnMouseUp(value: /* param0 */ Event => Unit): Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.Any.fromFunction1(value))
       
-      inline def setOnTouchStartOrOnMouseDown(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.Any.fromFunction1(value))
+      inline def setOnTouchStartOrOnMouseDown(value: /* param0 */ Event => Unit): Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.Any.fromFunction1(value))
     }
   }
   
@@ -416,15 +416,15 @@ object esTypesMod {
       
       inline def setOnSwipingUndefined: Self = StObject.set(x, "onSwiping", js.undefined)
       
-      inline def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+      inline def setOnTap(value: /* param0 */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       
       inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
       
-      inline def setOnTouchEndOrOnMouseUp(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.Any.fromFunction1(value))
+      inline def setOnTouchEndOrOnMouseUp(value: /* param0 */ Event => Unit): Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.Any.fromFunction1(value))
       
       inline def setOnTouchEndOrOnMouseUpUndefined: Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.undefined)
       
-      inline def setOnTouchStartOrOnMouseDown(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.Any.fromFunction1(value))
+      inline def setOnTouchStartOrOnMouseDown(value: /* param0 */ Event => Unit): Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.Any.fromFunction1(value))
       
       inline def setOnTouchStartOrOnMouseDownUndefined: Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.undefined)
       
@@ -559,15 +559,15 @@ object esTypesMod {
       
       inline def setOnSwipingUndefined: Self = StObject.set(x, "onSwiping", js.undefined)
       
-      inline def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+      inline def setOnTap(value: /* param0 */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       
       inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
       
-      inline def setOnTouchEndOrOnMouseUp(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.Any.fromFunction1(value))
+      inline def setOnTouchEndOrOnMouseUp(value: /* param0 */ Event => Unit): Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.Any.fromFunction1(value))
       
       inline def setOnTouchEndOrOnMouseUpUndefined: Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.undefined)
       
-      inline def setOnTouchStartOrOnMouseDown(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.Any.fromFunction1(value))
+      inline def setOnTouchStartOrOnMouseDown(value: /* param0 */ Event => Unit): Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.Any.fromFunction1(value))
       
       inline def setOnTouchStartOrOnMouseDownUndefined: Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.undefined)
       
@@ -636,7 +636,7 @@ object esTypesMod {
     }
   }
   
-  type TapCallback = js.Function1[/* hasEvent */ Event, Unit]
+  type TapCallback = js.Function1[/* param0 */ Event, Unit]
   
   type Vector2 = js.Tuple2[Double, Double]
 }

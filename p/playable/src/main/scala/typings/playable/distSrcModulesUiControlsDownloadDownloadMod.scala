@@ -16,7 +16,7 @@ object distSrcModulesUiControlsDownloadDownloadMod {
   open class default protected ()
     extends StObject
        with DownloadButton {
-    def this(hasEventEmitterTextMapTooltipServiceTheme: TextMap) = this()
+    def this(param0: TextMap) = this()
     
     /* private */ /* CompleteClass */
     var _bindCallbacks: Any = js.native

@@ -47,11 +47,11 @@ object mod {
   
   inline def ResponsiveTreeMapHtml[Datum /* <: js.Object */](props: Omit[TreeMapHtmlProps[Datum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveTreeMapHtml")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def TreeMap[Datum /* <: js.Object */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: TreeMapSvgProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMap")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TreeMap[Datum /* <: js.Object */](param0: TreeMapSvgProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMap")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def TreeMapCanvas[Datum /* <: js.Object */](hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps: TreeMapCanvasProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapCanvas")(hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TreeMapCanvas[Datum /* <: js.Object */](param0: TreeMapCanvasProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def TreeMapHtml[Datum /* <: js.Object */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: TreeMapHtmlProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapHtml")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TreeMapHtml[Datum /* <: js.Object */](param0: TreeMapHtmlProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapHtml")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object canvasDefaultProps {
     
@@ -486,7 +486,7 @@ object mod {
     def motionConfig: js.UndefOr[String | PartialAnimationConfig] = js.native
     inline def motionConfig_=(x: js.UndefOr[String | PartialAnimationConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
-    inline def nodeComponent[Datum /* <: js.Object */](hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def nodeComponent[Datum /* <: js.Object */](param0: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/treemap", "htmlDefaultProps.nodeOpacity")
     @js.native
@@ -676,7 +676,7 @@ object mod {
     def motionConfig: js.UndefOr[String | PartialAnimationConfig] = js.native
     inline def motionConfig_=(x: js.UndefOr[String | PartialAnimationConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
-    inline def nodeComponent[Datum /* <: js.Object */](hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def nodeComponent[Datum /* <: js.Object */](param0: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/treemap", "svgDefaultProps.nodeOpacity")
     @js.native

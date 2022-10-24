@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCall extends StObject {
   
-  def apply[Values](hasNameRestProps: FieldProps[Values]): Element = js.native
+  def apply[Values](param0: FieldProps[Values]): Element = js.native
 }

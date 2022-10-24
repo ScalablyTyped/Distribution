@@ -13,9 +13,9 @@ object headingHeadingLevelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildren: HeadingLevelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: HeadingLevelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def HeadingLevel(hasChildren: HeadingLevelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeadingLevel")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeadingLevel(param0: HeadingLevelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeadingLevel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/heading/heading-level", "LevelContext")
   @js.native

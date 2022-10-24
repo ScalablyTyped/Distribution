@@ -13,7 +13,7 @@ object distSrcModulesPictureInPicturePictureInPictureMod {
   open class default protected ()
     extends StObject
        with PictureInPicture {
-    def this(hasEventEmitterEngine: Engine) = this()
+    def this(param0: Engine) = this()
     
     /* CompleteClass */
     override def destroy(): Unit = js.native

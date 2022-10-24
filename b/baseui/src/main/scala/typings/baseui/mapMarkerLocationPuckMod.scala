@@ -12,5 +12,5 @@ object mapMarkerLocationPuckMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasSizeHeadingShowHeadingConfidenceRadiusTypeOverrides: LocationPuckProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSizeHeadingShowHeadingConfidenceRadiusTypeOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: LocationPuckProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

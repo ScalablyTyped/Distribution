@@ -15,7 +15,7 @@ object buildPathsExtensionsMod {
   
   inline def getExtensions(platforms: js.Array[String], extensions: js.Array[String], workflows: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtensions")(platforms.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], workflows.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def getLanguageExtensionsInOrder(hasIsTSIsModernIsReact: LanguageOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageExtensionsInOrder")(hasIsTSIsModernIsReact.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getLanguageExtensionsInOrder(param0: LanguageOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageExtensionsInOrder")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def getManagedExtensions(platforms: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getManagedExtensions")(platforms.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def getManagedExtensions(platforms: js.Array[String], languageOptions: LanguageOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getManagedExtensions")(platforms.asInstanceOf[js.Any], languageOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]

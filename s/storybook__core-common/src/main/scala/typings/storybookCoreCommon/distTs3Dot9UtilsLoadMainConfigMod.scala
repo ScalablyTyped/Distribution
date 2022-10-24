@@ -12,5 +12,5 @@ object distTs3Dot9UtilsLoadMainConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loadMainConfig(hasConfigDir: ConfigDir): StorybookConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("loadMainConfig")(hasConfigDir.asInstanceOf[js.Any]).asInstanceOf[StorybookConfig]
+  inline def loadMainConfig(param0: ConfigDir): StorybookConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("loadMainConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[StorybookConfig]
 }

@@ -11,5 +11,5 @@ object buildCommandsElementSendKeysMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasElementIdText: Text): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementIdText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def default(param1: Text): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
 }

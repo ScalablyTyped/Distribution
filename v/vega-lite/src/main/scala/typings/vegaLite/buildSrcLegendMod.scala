@@ -36,7 +36,7 @@ object buildSrcLegendMod {
   @JSImport("vega-lite/build/src/legend", "LEGEND_PROPERTIES")
   @js.native
   val LEGEND_PROPERTIES: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.vegaLite.vegaLiteStrings.values, typings.vegaLite.vegaLiteStrings.description, typings.vegaLite.vegaLiteStrings.`type` */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.vegaLite.vegaLiteStrings.values, typings.vegaLite.vegaLiteStrings.`type`, typings.vegaLite.vegaLiteStrings.offset */ Any
   ] = js.native
   
   @JSImport("vega-lite/build/src/legend", "LEGEND_SCALE_CHANNELS")

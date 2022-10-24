@@ -31,7 +31,7 @@ object progressBarMod {
   @js.native
   val ProgressBar: ForwardRefExoticComponent[PartialProgressBarPropsRe] = js.native
   
-  inline def ProgressBarRounded(hasProgressSizeAnimateInlineOverridesRestProps: ProgressBarRoundedProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBarRounded")(hasProgressSizeAnimateInlineOverridesRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ProgressBarRounded(param0: ProgressBarRoundedProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBarRounded")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object SIZE {
     

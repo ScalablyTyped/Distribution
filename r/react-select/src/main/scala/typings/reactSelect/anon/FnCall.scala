@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCall extends StObject {
   
-  def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasChildrenInnerProps: MultiValueRemoveProps[Option, IsMulti, Group]): Element = js.native
+  def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueRemoveProps[Option, IsMulti, Group]): Element = js.native
 }

@@ -79,9 +79,9 @@ object snackbarMod {
     val topRight: typings.baseui.baseuiStrings.topRight = js.native
   }
   
-  inline def SnackbarElement(hasActionMessageActionOnClickFocusMessageOverridesProgressStartEnhancer: SnackbarElementProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SnackbarElement")(hasActionMessageActionOnClickFocusMessageOverridesProgressStartEnhancer.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SnackbarElement(param0: SnackbarElementProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SnackbarElement")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def SnackbarProvider(hasChildrenOverridesPlacementDefaultDuration: SnackbarProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SnackbarProvider")(hasChildrenOverridesPlacementDefaultDuration.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SnackbarProvider(param0: SnackbarProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SnackbarProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/snackbar", "StyledActionButtonContainer")
   @js.native

@@ -12,7 +12,5 @@ object libAnimationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def animate[V](
-    hasFromAutoplayDriverElapsedRepeatMaxRepeatTypeRepeatDelayOnPlayOnStopOnCompleteOnRepeatOnUpdateOptions: AnimationOptions[V]
-  ): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")(hasFromAutoplayDriverElapsedRepeatMaxRepeatTypeRepeatDelayOnPlayOnStopOnCompleteOnRepeatOnUpdateOptions.asInstanceOf[js.Any]).asInstanceOf[Stop]
+  inline def animate[V](param0: AnimationOptions[V]): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")(param0.asInstanceOf[js.Any]).asInstanceOf[Stop]
 }

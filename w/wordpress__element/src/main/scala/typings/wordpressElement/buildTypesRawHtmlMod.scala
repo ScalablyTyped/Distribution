@@ -14,7 +14,7 @@ object buildTypesRawHtmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildrenProps: RawHTMLProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: RawHTMLProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type RawHTMLProps = Children & ComponentPropsWithoutRef[div]
 }

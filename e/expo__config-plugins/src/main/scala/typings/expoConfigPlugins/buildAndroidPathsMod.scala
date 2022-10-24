@@ -39,7 +39,7 @@ object buildAndroidPathsMod {
   
   inline def getResourceFolderAsync(projectRoot: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceFolderAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  inline def getResourceXMLPathAsync(projectRoot: String, hasKindName: KindName): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourceXMLPathAsync")(projectRoot.asInstanceOf[js.Any], hasKindName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getResourceXMLPathAsync(projectRoot: String, param1: KindName): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourceXMLPathAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def getSettingsGradleAsync(projectRoot: String): js.Promise[GradleProjectFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettingsGradleAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GradleProjectFile]]
   

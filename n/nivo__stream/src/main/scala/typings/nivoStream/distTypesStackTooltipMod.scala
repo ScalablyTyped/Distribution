@@ -12,5 +12,5 @@ object distTypesStackTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def StackTooltip(hasSlice: StackTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StackTooltip")(hasSlice.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StackTooltip(param0: StackTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StackTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

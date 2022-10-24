@@ -40,5 +40,5 @@ object typesEventsMod {
     options: AddEventListenerOptions
   ): DelegatedEventHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("delegateEvent")(eventType.asInstanceOf[js.Any], eventTarget.asInstanceOf[js.Any], throttle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DelegatedEventHandler]
   
-  inline def useScrollListener(hasOncePassiveSignalCaptureEnabledOnScroll: ScrollListenerHookOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollListener")(hasOncePassiveSignalCaptureEnabledOnScroll.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useScrollListener(param0: ScrollListenerHookOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollListener")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

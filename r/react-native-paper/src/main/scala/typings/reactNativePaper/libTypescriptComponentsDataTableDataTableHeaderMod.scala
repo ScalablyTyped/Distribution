@@ -5,11 +5,11 @@ import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonRea
 import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.reactNativePaper.anon.CallHasChildrenStyleThemeRest
 import typings.reactNativePaper.anon.ChildrenStyle
 import typings.reactNativePaper.anon.PickViewPropsRefAttributeAccessibilityIgnoresInvertColors
 import typings.reactNativePaper.anon.TypeofView
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityLabelledBy
+import typings.reactNativePaper.anon.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +18,7 @@ object libTypescriptComponentsDataTableDataTableHeaderMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTableHeader", JSImport.Default)
   @js.native
-  val default: ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & CallHasChildrenStyleThemeRest, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & `7`, js.Object]) = js.native
   
   /**
     * A component to display title in table header.
@@ -57,7 +54,7 @@ object libTypescriptComponentsDataTableDataTableHeaderMod extends Shortcut {
     */
   object DataTableHeader {
     
-    inline def apply(hasChildrenStyleThemeRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenStyleThemeRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTableHeader", "DataTableHeader")
     @js.native
@@ -71,14 +68,8 @@ object libTypescriptComponentsDataTableDataTableHeaderMod extends Shortcut {
   
   type Props = ComponentPropsWithRef[TypeofView] & ChildrenStyle
   
-  type _To = ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & CallHasChildrenStyleThemeRest, 
-    js.Object
-  ])
+  type _To = ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & `7`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsDataTableDataTableHeaderMod.foo` */
-  override def _to: ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & CallHasChildrenStyleThemeRest, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & `7`, js.Object]) = default
 }

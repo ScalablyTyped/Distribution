@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "combine-source-map"
-version := "0.8-dt-20211202Z-fb30e1"
-scalaVersion := "3.1.2"
+version := "0.8-dt-20211202Z-86943f"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

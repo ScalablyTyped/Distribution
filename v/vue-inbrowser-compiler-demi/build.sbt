@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "vue-inbrowser-compiler-demi"
-version := "4.44.23-8146dd"
-scalaVersion := "3.1.2"
+version := "4.44.23-07bf3e"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

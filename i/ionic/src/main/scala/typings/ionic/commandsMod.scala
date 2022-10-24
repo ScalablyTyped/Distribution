@@ -12,7 +12,7 @@ object commandsMod {
   @JSImport("ionic/commands", "IonicNamespace")
   @js.native
   open class IonicNamespace protected () extends Namespace {
-    def this(hasEnvProject: IonicEnvironmentDeps) = this()
+    def this(param0: IonicEnvironmentDeps) = this()
     
     /* protected */ var _env: IonicEnvironment = js.native
     

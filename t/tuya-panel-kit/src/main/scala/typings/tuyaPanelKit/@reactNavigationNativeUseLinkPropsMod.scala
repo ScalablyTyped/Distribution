@@ -12,7 +12,7 @@ object `@reactNavigationNativeUseLinkPropsMod` {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasToAction: Props): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
+  inline def default(param0: Props): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
   
   // tslint:disable-next-line strict-export-declare-modifiers interface-over-type-literal
   trait Props extends StObject {

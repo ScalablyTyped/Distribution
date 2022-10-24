@@ -25,15 +25,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Mesh[Datum](hasNodesWidthHeightXYOnMouseEnterOnMouseMoveOnMouseLeaveOnClickDebug: MeshProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Mesh")(hasNodesWidthHeightXYOnMouseEnterOnMouseMoveOnMouseLeaveOnClickDebug.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Mesh[Datum](param0: MeshProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Mesh")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def ResponsiveVoronoi(props: ResponsiveVoronoiProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveVoronoi")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def Voronoi(hasThemeOtherProps: PartialOmitVoronoiSvgProp): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Voronoi")(hasThemeOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Voronoi(param0: PartialOmitVoronoiSvgProp): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Voronoi")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def computeMesh(hasPointsWidthHeightDebug: Debug): Delaunay = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMesh")(hasPointsWidthHeightDebug.asInstanceOf[js.Any]).asInstanceOf[Delaunay]
+  inline def computeMesh(param0: Debug): Delaunay = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMesh")(param0.asInstanceOf[js.Any]).asInstanceOf[Delaunay]
   
-  inline def computeMeshPoints[Datum](hasPointsXY: Points[Datum]): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMeshPoints")(hasPointsXY.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+  inline def computeMeshPoints[Datum](param0: Points[Datum]): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMeshPoints")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
   
   object defaultVoronoiProps {
     
@@ -111,9 +111,9 @@ object mod {
   
   inline def renderVoronoiToCanvas(ctx: CanvasRenderingContext2D, voronoi: Voronoi[Point]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderVoronoiToCanvas")(ctx.asInstanceOf[js.Any], voronoi.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def useVoronoi(hasDataWidthHeightXDomainYDomain: Data): typings.nivoVoronoi.anon.Voronoi = ^.asInstanceOf[js.Dynamic].applyDynamic("useVoronoi")(hasDataWidthHeightXDomainYDomain.asInstanceOf[js.Any]).asInstanceOf[typings.nivoVoronoi.anon.Voronoi]
+  inline def useVoronoi(param0: Data): typings.nivoVoronoi.anon.Voronoi = ^.asInstanceOf[js.Dynamic].applyDynamic("useVoronoi")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.nivoVoronoi.anon.Voronoi]
   
-  inline def useVoronoiLayerContext(hasPointsDelaunayVoronoi: VoronoiCustomLayerProps): VoronoiCustomLayerProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useVoronoiLayerContext")(hasPointsDelaunayVoronoi.asInstanceOf[js.Any]).asInstanceOf[VoronoiCustomLayerProps]
+  inline def useVoronoiLayerContext(param0: VoronoiCustomLayerProps): VoronoiCustomLayerProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useVoronoiLayerContext")(param0.asInstanceOf[js.Any]).asInstanceOf[VoronoiCustomLayerProps]
   
-  inline def useVoronoiMesh[Datum](hasPointsXYWidthHeightDebug: Height[Datum]): Delaunay = ^.asInstanceOf[js.Dynamic].applyDynamic("useVoronoiMesh")(hasPointsXYWidthHeightDebug.asInstanceOf[js.Any]).asInstanceOf[Delaunay]
+  inline def useVoronoiMesh[Datum](param0: Height[Datum]): Delaunay = ^.asInstanceOf[js.Dynamic].applyDynamic("useVoronoiMesh")(param0.asInstanceOf[js.Any]).asInstanceOf[Delaunay]
 }

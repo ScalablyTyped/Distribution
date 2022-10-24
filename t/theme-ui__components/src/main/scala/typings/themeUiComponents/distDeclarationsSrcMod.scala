@@ -163,7 +163,7 @@ object distDeclarationsSrcMod {
   @js.native
   val MenuButton: ForwardRef[HTMLButtonElement, MenuButtonProps] = js.native
   
-  inline def MenuIcon(hasSize: Size): typings.emotionReact.mod.jsx.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(hasSize.asInstanceOf[js.Any]).asInstanceOf[typings.emotionReact.mod.jsx.JSX.Element]
+  inline def MenuIcon(param0: Size): typings.emotionReact.mod.jsx.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.emotionReact.mod.jsx.JSX.Element]
   
   @JSImport("@theme-ui/components/dist/declarations/src", "Message")
   @js.native

@@ -12,5 +12,5 @@ object distTs3Dot9ClientDocsLibDefaultValuesGenerateObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateObject(hasInferredTypeAst: InspectionResult): PropDefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("generateObject")(hasInferredTypeAst.asInstanceOf[js.Any]).asInstanceOf[PropDefaultValue]
+  inline def generateObject(param0: InspectionResult): PropDefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("generateObject")(param0.asInstanceOf[js.Any]).asInstanceOf[PropDefaultValue]
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "robust-segment-intersect"
-version := "1.0-dt-20220624Z-755d85"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220624Z-eaf1ac"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

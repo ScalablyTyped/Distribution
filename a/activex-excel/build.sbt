@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "activex-excel"
-version := "14.0-dt-20220705Z-2be763"
-scalaVersion := "3.1.2"
+version := "14.0-dt-20220705Z-fb1c4c"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "activex-adodb" % "6.1-dt-20220705Z-03c09f",
-  "org.scalablytyped" %%% "activex-dao" % "16.0-dt-20220705Z-007df2",
-  "org.scalablytyped" %%% "activex-office" % "16.0-dt-20220705Z-56118f",
-  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20220705Z-d95f16",
-  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20220705Z-197cd0",
-  "org.scalablytyped" %%% "activex-vbide" % "14.0-dt-20220705Z-e49a47",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "activex-adodb" % "6.1-dt-20220705Z-8a9f82",
+  "org.scalablytyped" %%% "activex-dao" % "16.0-dt-20220705Z-d1402b",
+  "org.scalablytyped" %%% "activex-office" % "16.0-dt-20220705Z-0977f1",
+  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20220705Z-204539",
+  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20220705Z-b0f446",
+  "org.scalablytyped" %%% "activex-vbide" % "14.0-dt-20220705Z-b180f8",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

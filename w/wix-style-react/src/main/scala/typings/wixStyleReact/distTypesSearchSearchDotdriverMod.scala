@@ -1,0 +1,47 @@
+package typings.wixStyleReact
+
+import typings.wixStyleReact.anon.InputWrapper
+import typings.wixStyleReact.anon.IsCollapsed
+import typings.wixStyleReact.distTypesDropdownLayoutDropdownLayoutDotdriverMod.DropdownLayoutDriver
+import typings.wixStyleReact.distTypesInputInputDotdriverMod.InputDriver
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distTypesSearchSearchDotdriverMod {
+  
+  /* Inlined parent wix-style-react.wix-style-react/dist/types/common.OmitPolyfill<wix-style-react.wix-style-react/dist/types/InputWithOptions/InputWithOptions.driver.InputWithOptionsDriver, 'driver'> */
+  trait SearchDriver extends StObject {
+    
+    var driver: InputWrapper & IsCollapsed
+    
+    var dropdownLayoutDriver: DropdownLayoutDriver
+    
+    var exists: js.Function0[Boolean]
+    
+    var inputDriver: InputDriver
+  }
+  object SearchDriver {
+    
+    inline def apply(
+      driver: InputWrapper & IsCollapsed,
+      dropdownLayoutDriver: DropdownLayoutDriver,
+      exists: () => Boolean,
+      inputDriver: InputDriver
+    ): SearchDriver = {
+      val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any], dropdownLayoutDriver = dropdownLayoutDriver.asInstanceOf[js.Any], exists = js.Any.fromFunction0(exists), inputDriver = inputDriver.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SearchDriver]
+    }
+    
+    extension [Self <: SearchDriver](x: Self) {
+      
+      inline def setDriver(value: InputWrapper & IsCollapsed): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      
+      inline def setDropdownLayoutDriver(value: DropdownLayoutDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
+      
+      inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      
+      inline def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
+    }
+  }
+}

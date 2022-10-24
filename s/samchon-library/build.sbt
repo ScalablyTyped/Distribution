@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "samchon-library"
-version := "0.1.0-3ade5f"
-scalaVersion := "3.1.2"
+version := "0.1.0-974219"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -330,10 +330,10 @@ object anon {
     val FIRST_KEY_INDEX: /* 1 */ Double = js.native
     
     def transformArguments(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasKeyPathOrAppendAppend because its type AppendArguments | AppendWithPathArguments is not an array type */ hasKeyPathOrAppendAppend: AppendArguments
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type AppendArguments | AppendWithPathArguments is not an array type */ param0: AppendArguments
     ): js.Array[String] = js.native
     def transformArguments(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasKeyPathOrAppendAppend because its type AppendArguments | AppendWithPathArguments is not an array type */ hasKeyPathOrAppendAppend: AppendWithPathArguments
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type AppendArguments | AppendWithPathArguments is not an array type */ param0: AppendWithPathArguments
     ): js.Array[String] = js.native
     
     def transformReply(): Double | js.Array[Double] = js.native

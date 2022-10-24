@@ -70,7 +70,7 @@ object esmInfernoMod {
     def this(props: Unit, context: Any) = this()
   }
   
-  inline def Portal(hasContainerChildren: PortalProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(hasContainerChildren.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def Portal(param0: PortalProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def createContext[T](defaultValue: T): DefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[DefaultValue]
   

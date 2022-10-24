@@ -12,5 +12,5 @@ object distTypesSunburstTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SunburstTooltip[RawDatum](hasIdFormattedValueColor: ComputedDatum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SunburstTooltip")(hasIdFormattedValueColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SunburstTooltip[RawDatum](param0: ComputedDatum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SunburstTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

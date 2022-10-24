@@ -12,8 +12,5 @@ object distBuildWebpackConfigMod_ {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def build(
-    config: Configuration,
-    hasSupportedBrowsersRootDirectoryCustomAppFileIsDevelopmentIsServerIsEdgeRuntimeTargetWebAssetPrefixSassOptionsProductionBrowserSourceMapsFutureExperimentalDisableStaticImages: CustomAppFile
-  ): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(config.asInstanceOf[js.Any], hasSupportedBrowsersRootDirectoryCustomAppFileIsDevelopmentIsServerIsEdgeRuntimeTargetWebAssetPrefixSassOptionsProductionBrowserSourceMapsFutureExperimentalDisableStaticImages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
+  inline def build(config: Configuration, param1: CustomAppFile): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
 }

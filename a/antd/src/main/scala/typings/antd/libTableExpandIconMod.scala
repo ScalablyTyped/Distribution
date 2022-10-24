@@ -15,13 +15,7 @@ object libTableExpandIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(locale: TableLocale): js.Function1[
-    /* hasPrefixClsOnExpandRecordExpandedExpandable */ DefaultExpandIconProps[Any], 
-    Element
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* hasPrefixClsOnExpandRecordExpandedExpandable */ DefaultExpandIconProps[Any], 
-    Element
-  ]]
+  inline def default(locale: TableLocale): js.Function1[/* param0 */ DefaultExpandIconProps[Any], Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param0 */ DefaultExpandIconProps[Any], Element]]
   
   trait DefaultExpandIconProps[RecordType] extends StObject {
     

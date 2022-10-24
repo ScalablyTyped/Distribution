@@ -14,8 +14,8 @@ object Zoom {
   
   @JSImport("@storybook/components", "Zoom.Element")
   @js.native
-  def Element: js.Function1[/* hasScaleChildren */ ZoomProps, typings.react.mod.global.JSX.Element] = js.native
-  inline def Element_=(x: js.Function1[/* hasScaleChildren */ ZoomProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
+  def Element: js.Function1[/* param0 */ ZoomProps, typings.react.mod.global.JSX.Element] = js.native
+  inline def Element_=(x: js.Function1[/* param0 */ ZoomProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
   
   @JSImport("@storybook/components", "Zoom.IFrame")
   @js.native

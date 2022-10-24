@@ -11,5 +11,5 @@ object distTypesCalendarMonthLegendsMod {
   
   @JSImport("@nivo/calendar/dist/types/CalendarMonthLegends", "CalendarMonthLegends")
   @js.native
-  val CalendarMonthLegends: MemoExoticComponent[js.Function1[/* hasMonthsLegendTheme */ CalendarMonthLegendsProps, Element]] = js.native
+  val CalendarMonthLegends: MemoExoticComponent[js.Function1[/* param0 */ CalendarMonthLegendsProps, Element]] = js.native
 }

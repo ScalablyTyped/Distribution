@@ -19,8 +19,8 @@ object libUseLongPressMod {
   inline def default(
     onLongPress: js.Function1[/* event */ EventType, Unit],
     target: BasicTarget[Element],
-    hasDelayMoveThresholdOnClickOnLongPressEnd: Options
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(onLongPress.asInstanceOf[js.Any], target.asInstanceOf[js.Any], hasDelayMoveThresholdOnClickOnLongPressEnd.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    param2: Options
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(onLongPress.asInstanceOf[js.Any], target.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type EventType = MouseEvent | TouchEvent
   

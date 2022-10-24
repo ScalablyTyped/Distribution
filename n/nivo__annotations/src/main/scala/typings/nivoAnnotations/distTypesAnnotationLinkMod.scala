@@ -12,5 +12,5 @@ object distTypesAnnotationLinkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def AnnotationLink(hasPointsIsOutline: IsOutline): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("AnnotationLink")(hasPointsIsOutline.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def AnnotationLink(param0: IsOutline): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("AnnotationLink")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
 }

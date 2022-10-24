@@ -89,7 +89,7 @@ object libWidgetMod {
   @JSImport("@jupyterlab/logconsole/lib/widget", "ScrollingWidget")
   @js.native
   open class ScrollingWidget[T /* <: Widget */] protected () extends Widget {
-    def this(hasContentOptions: IOptions[T]) = this()
+    def this(param0: IOptions[T]) = this()
     
     /* private */ var _content: Any = js.native
     

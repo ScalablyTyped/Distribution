@@ -43,7 +43,7 @@ object componentMod {
       *   is set before component initialization.
       */
     def initialize(): Unit = js.native
-    def initialize(hasSkipInitialUIUpdate: SkipInitialUIUpdate): Unit = js.native
+    def initialize(param0: SkipInitialUIUpdate): Unit = js.native
     
     /* private */ var inputs: Any = js.native
     

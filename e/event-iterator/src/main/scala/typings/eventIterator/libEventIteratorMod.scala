@@ -12,7 +12,7 @@ object libEventIteratorMod {
   @js.native
   open class default[T] protected () extends EventIterator[T] {
     def this(listen: ListenHandler[T]) = this()
-    def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
+    def this(listen: ListenHandler[T], param1: PartialEventIteratorOptio) = this()
   }
   
   @JSImport("event-iterator/lib/event-iterator", "EventIterator")
@@ -21,7 +21,7 @@ object libEventIteratorMod {
     extends StObject
        with AsyncIterable[T] {
     def this(listen: ListenHandler[T]) = this()
-    def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
+    def this(listen: ListenHandler[T], param1: PartialEventIteratorOptio) = this()
   }
   
   trait EventHandlers extends StObject {

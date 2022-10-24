@@ -15,7 +15,7 @@ object distSrcFlowControlKillOnSignalMod {
   open class KillOnSignal protected ()
     extends StObject
        with FlowController {
-    def this(hasProcess: Process) = this()
+    def this(param0: Process) = this()
     
     /* CompleteClass */
     override def handle(commands: js.Array[Command]): Commands = js.native

@@ -13,7 +13,7 @@ object typesSizingResizeListenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ResizeListener(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizeListener")(hasOnResizeOptionsImmediate.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def ResizeListener(param0: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizeListener")(param0.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   /* Inlined std.Omit<@react-md/utils.@react-md/utils/types/sizing/useResizeListener.ResizeListenerOptions, 'enabled'> */
   trait ResizeListenerProps extends StObject {

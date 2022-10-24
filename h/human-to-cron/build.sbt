@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "human-to-cron"
-version := "0.3-dt-20211202Z-7a0593"
-scalaVersion := "3.1.2"
+version := "0.3-dt-20211202Z-80fcea"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

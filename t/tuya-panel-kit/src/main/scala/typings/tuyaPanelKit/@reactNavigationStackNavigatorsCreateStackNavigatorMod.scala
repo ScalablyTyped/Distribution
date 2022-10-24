@@ -25,13 +25,13 @@ object `@reactNavigationStackNavigatorsCreateStackNavigatorMod` {
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     StackNavigationOptions, 
     StackNavigationEventMap, 
-    js.Function1[/* hasInitialRouteNameChildrenScreenOptionsRest */ Props, Element]
+    js.Function1[/* param0 */ Props, Element]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TypedNavigator[
     ParamList, 
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     StackNavigationOptions, 
     StackNavigationEventMap, 
-    js.Function1[/* hasInitialRouteNameChildrenScreenOptionsRest */ Props, Element]
+    js.Function1[/* param0 */ Props, Element]
   ]]
   
   // tslint:disable-next-line strict-export-declare-modifiers

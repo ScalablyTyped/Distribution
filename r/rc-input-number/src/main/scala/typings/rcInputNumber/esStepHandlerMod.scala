@@ -12,7 +12,7 @@ object esStepHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasPrefixClsUpNodeDownNodeUpDisabledDownDisabledOnStep: StepHandlerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsUpNodeDownNodeUpDisabledDownDisabledOnStep.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: StepHandlerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait StepHandlerProps extends StObject {
     

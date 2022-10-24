@@ -124,7 +124,7 @@ object distTypesPropsMod {
     def role: String = js.native
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum](hasIdFormattedValueColor: ComputedDatum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasIdFormattedValueColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum](param0: ComputedDatum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/circle-packing/dist/types/props", "defaultProps.value")
     @js.native

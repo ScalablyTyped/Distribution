@@ -11,7 +11,7 @@ object distSelectSrcHiddenSelectMod {
   
   object HiddenSelect {
     
-    inline def apply(hasNameSelectedKeyRequiredValidationStateRest: HiddenSelectProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasNameSelectedKeyRequiredValidationStateRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: HiddenSelectProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@orbit-ui/react-components/dist/select/src/HiddenSelect", "HiddenSelect")
     @js.native

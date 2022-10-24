@@ -20,18 +20,12 @@ object libTypescriptComponentsButtonMod extends Shortcut {
   @js.native
   val default: (ComponentType[
     PickthemeDeepPartialThemeAccessibilityLabelledBy | PickthemeDeepPartialThemeAccessibilityLanguage
-  ]) & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ]) = js.native
+  ]) & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) = js.native
   
   type Props = (ComponentProps[
     ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
       ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-        /* hasStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+        /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
         Element
       ]), 
       js.Object
@@ -40,22 +34,10 @@ object libTypescriptComponentsButtonMod extends Shortcut {
   
   type _To = (ComponentType[
     PickthemeDeepPartialThemeAccessibilityLabelledBy | PickthemeDeepPartialThemeAccessibilityLanguage
-  ]) & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ])
+  ]) & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsButtonMod.foo` */
   override def _to: (ComponentType[
     PickthemeDeepPartialThemeAccessibilityLabelledBy | PickthemeDeepPartialThemeAccessibilityLanguage
-  ]) & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ]) = default
+  ]) & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) = default
 }

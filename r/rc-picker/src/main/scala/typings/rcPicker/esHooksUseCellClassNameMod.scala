@@ -12,7 +12,5 @@ object esHooksUseCellClassNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[DateType](
-    hasCellPrefixClsGenerateConfigRangedValueHoverRangedValueIsInViewIsSameCellOffsetCellTodayValue: CellPrefixCls[DateType]
-  ): js.Function1[/* currentDate */ DateType, StringDictionary[Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasCellPrefixClsGenerateConfigRangedValueHoverRangedValueIsInViewIsSameCellOffsetCellTodayValue.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* currentDate */ DateType, StringDictionary[Boolean]]]
+  inline def default[DateType](param0: CellPrefixCls[DateType]): js.Function1[/* currentDate */ DateType, StringDictionary[Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* currentDate */ DateType, StringDictionary[Boolean]]]
 }

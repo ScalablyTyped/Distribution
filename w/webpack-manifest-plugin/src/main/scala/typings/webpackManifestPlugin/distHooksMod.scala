@@ -18,16 +18,13 @@ object distHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def beforeRunHook(hasEmitCountMapManifestFileName: BeforeRunHookArgs, _underscore: Compiler, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeRunHook")(hasEmitCountMapManifestFileName.asInstanceOf[js.Any], _underscore.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeRunHook(param0: BeforeRunHookArgs, _underscore: Compiler, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeRunHook")(param0.asInstanceOf[js.Any], _underscore.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def emitHook(
-    hasCompilerEmitCountMapManifestAssetIdManifestFileNameModuleAssetsOptions: EmitHookArgs,
-    compilation: Compilation
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitHook")(hasCompilerEmitCountMapManifestAssetIdManifestFileNameModuleAssetsOptions.asInstanceOf[js.Any], compilation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def emitHook(param0: EmitHookArgs, compilation: Compilation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitHook")(param0.asInstanceOf[js.Any], compilation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getCompilerHooks(compiler: Compiler): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompilerHooks")(compiler.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def normalModuleLoaderHook(hasModuleAssets: ModuleAssets, loaderContext: LoaderContext[Any], module: LegacyModule): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalModuleLoaderHook")(hasModuleAssets.asInstanceOf[js.Any], loaderContext.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalModuleLoaderHook(param0: ModuleAssets, loaderContext: LoaderContext[Any], module: LegacyModule): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalModuleLoaderHook")(param0.asInstanceOf[js.Any], loaderContext.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait BeforeRunHookArgs extends StObject {
     

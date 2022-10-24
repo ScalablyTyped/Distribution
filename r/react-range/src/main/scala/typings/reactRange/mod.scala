@@ -89,7 +89,7 @@ object mod {
   
   inline def checkValuesAgainstBoundaries(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("checkValuesAgainstBoundaries")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def getTrackBackground(hasValuesColorsMinMaxDirectionRtl: ITrackBackground): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrackBackground")(hasValuesColorsMinMaxDirectionRtl.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTrackBackground(param0: ITrackBackground): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrackBackground")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def relativeValue(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeValue")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   

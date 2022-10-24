@@ -13,7 +13,7 @@ object libTypescriptHooksUseOnCellActiveAnimationMod {
   val ^ : js.Any = js.native
   
   inline def useOnCellActiveAnimation(): OnActiveAnim = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnCellActiveAnimation")().asInstanceOf[OnActiveAnim]
-  inline def useOnCellActiveAnimation(hasAnimationConfig: Params): OnActiveAnim = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnCellActiveAnimation")(hasAnimationConfig.asInstanceOf[js.Any]).asInstanceOf[OnActiveAnim]
+  inline def useOnCellActiveAnimation(param0: Params): OnActiveAnim = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnCellActiveAnimation")(param0.asInstanceOf[js.Any]).asInstanceOf[OnActiveAnim]
   
   trait Params extends StObject {
     

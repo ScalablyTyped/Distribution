@@ -22,7 +22,7 @@ object distLibRouterRouterMod {
       pathname: String,
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
       as: String,
-      hasInitialPropsPageLoaderAppWrapAppComponentErrSubscription: App
+      param3: App
     ) = this()
     
     /* CompleteClass */

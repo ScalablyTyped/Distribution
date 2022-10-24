@@ -18,13 +18,11 @@ object distTypesComputeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeContinuousColorsLegend(
-    hasScaleTicksLengthThicknessDirectionTickPositionTickSizeTickSpacingTickOverlapTickFormatTitleTitleAlignTitleOffset: ContinuousColorsLegendProps
-  ): ColorStops = ^.asInstanceOf[js.Dynamic].applyDynamic("computeContinuousColorsLegend")(hasScaleTicksLengthThicknessDirectionTickPositionTickSizeTickSpacingTickOverlapTickFormatTitleTitleAlignTitleOffset.asInstanceOf[js.Any]).asInstanceOf[ColorStops]
+  inline def computeContinuousColorsLegend(param0: ContinuousColorsLegendProps): ColorStops = ^.asInstanceOf[js.Dynamic].applyDynamic("computeContinuousColorsLegend")(param0.asInstanceOf[js.Any]).asInstanceOf[ColorStops]
   
-  inline def computeDimensions(hasDirectionItemsSpacing_paddingItemCountItemWidthItemHeight: PickBoxLegendSvgPropsdire): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("computeDimensions")(hasDirectionItemsSpacing_paddingItemCountItemWidthItemHeight.asInstanceOf[js.Any]).asInstanceOf[Height]
+  inline def computeDimensions(param0: PickBoxLegendSvgPropsdire): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("computeDimensions")(param0.asInstanceOf[js.Any]).asInstanceOf[Height]
   
-  inline def computeItemLayout(hasDirectionJustifySymbolSizeSymbolSpacingWidthHeight: directionLegendItemDirect): LabelAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("computeItemLayout")(hasDirectionJustifySymbolSizeSymbolSpacingWidthHeight.asInstanceOf[js.Any]).asInstanceOf[LabelAlignment]
+  inline def computeItemLayout(param0: directionLegendItemDirect): LabelAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("computeItemLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[LabelAlignment]
   
-  inline def computePositionFromAnchor(hasAnchorTranslateXTranslateYContainerWidthContainerHeightWidthHeight: anchorLegendAnchorRecordt): X = ^.asInstanceOf[js.Dynamic].applyDynamic("computePositionFromAnchor")(hasAnchorTranslateXTranslateYContainerWidthContainerHeightWidthHeight.asInstanceOf[js.Any]).asInstanceOf[X]
+  inline def computePositionFromAnchor(param0: anchorLegendAnchorRecordt): X = ^.asInstanceOf[js.Dynamic].applyDynamic("computePositionFromAnchor")(param0.asInstanceOf[js.Any]).asInstanceOf[X]
 }

@@ -27,9 +27,7 @@ object typesFileInputUseFileUploadMod {
   val ^ : js.Any = js.native
   
   inline def useFileUpload[E /* <: HTMLElement */, CustomError](): FileUploadHookReturnValue[E, CustomError] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFileUpload")().asInstanceOf[FileUploadHookReturnValue[E, CustomError]]
-  inline def useFileUpload[E /* <: HTMLElement */, CustomError](
-    hasMaxFilesExtensionsMinFileSizeMaxFileSizeTotalFileSizeConcurrencyPropOnDropPropOnChangeValidateFilesGetFileParserIsValidFileName: FileUploadOptions[E, CustomError]
-  ): FileUploadHookReturnValue[E, CustomError] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFileUpload")(hasMaxFilesExtensionsMinFileSizeMaxFileSizeTotalFileSizeConcurrencyPropOnDropPropOnChangeValidateFilesGetFileParserIsValidFileName.asInstanceOf[js.Any]).asInstanceOf[FileUploadHookReturnValue[E, CustomError]]
+  inline def useFileUpload[E /* <: HTMLElement */, CustomError](param0: FileUploadOptions[E, CustomError]): FileUploadHookReturnValue[E, CustomError] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFileUpload")(param0.asInstanceOf[js.Any]).asInstanceOf[FileUploadHookReturnValue[E, CustomError]]
   
   @js.native
   trait FileUploadActions extends StObject {

@@ -29,7 +29,7 @@ object mod {
   @JSImport("rolling-rate-limiter", "RateLimiter")
   @js.native
   open class RateLimiter protected () extends StObject {
-    def this(hasIntervalMaxInIntervalMinDifference: RateLimiterOptions) = this()
+    def this(param0: RateLimiterOptions) = this()
     
     /**
       * Given a list of timestamps, computes the RateLimitingInfo. The last item in the list is the
@@ -79,7 +79,7 @@ object mod {
   @JSImport("rolling-rate-limiter", "RedisRateLimiter")
   @js.native
   open class RedisRateLimiter protected () extends RateLimiter {
-    def this(hasClientNamespaceBaseOptions: RedisRateLimiterOptions) = this()
+    def this(param0: RedisRateLimiterOptions) = this()
     
     var client: RedisClient = js.native
     

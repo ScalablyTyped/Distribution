@@ -12,7 +12,5 @@ object distTypesSvgAnchoredContinuousColorsLegendSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def AnchoredContinuousColorsLegendSvg(
-    hasContainerWidthContainerHeightAnchorTranslateXTranslateYLengthThicknessDirectionLegendProps: AnchoredContinuousColorsLegendProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AnchoredContinuousColorsLegendSvg")(hasContainerWidthContainerHeightAnchorTranslateXTranslateYLengthThicknessDirectionLegendProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def AnchoredContinuousColorsLegendSvg(param0: AnchoredContinuousColorsLegendProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AnchoredContinuousColorsLegendSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -16,10 +16,5 @@ object distComposeResolveFlowCollectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def resolveFlowCollection(
-    hasComposeNodeComposeEmptyNode: ComposeNode_,
-    ctx: ComposeContext,
-    fc: FlowCollection,
-    onError: ComposeErrorHandler
-  ): (Parsed[ParsedNode, ParsedNode | Null]) | typings.yaml.distNodesYamlseqMod.YAMLSeq.Parsed[ParsedNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFlowCollection")(hasComposeNodeComposeEmptyNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], fc.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[(Parsed[ParsedNode, ParsedNode | Null]) | typings.yaml.distNodesYamlseqMod.YAMLSeq.Parsed[ParsedNode]]
+  inline def resolveFlowCollection(param0: ComposeNode_, ctx: ComposeContext, fc: FlowCollection, onError: ComposeErrorHandler): (Parsed[ParsedNode, ParsedNode | Null]) | typings.yaml.distNodesYamlseqMod.YAMLSeq.Parsed[ParsedNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFlowCollection")(param0.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], fc.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[(Parsed[ParsedNode, ParsedNode | Null]) | typings.yaml.distNodesYamlseqMod.YAMLSeq.Parsed[ParsedNode]]
 }

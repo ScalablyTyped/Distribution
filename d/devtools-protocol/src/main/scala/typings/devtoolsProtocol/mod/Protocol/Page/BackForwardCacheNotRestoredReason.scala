@@ -101,6 +101,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestDirectSocket
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedJavascript
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedStyleSheet
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.KeepaliveRequest
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Dummy
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityHandler
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ContentWebAuthenticationAPI
@@ -248,6 +249,8 @@ object BackForwardCacheNotRestoredReason {
   inline def InjectedStyleSheet: typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedStyleSheet = "InjectedStyleSheet".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedStyleSheet]
   
   inline def JavaScriptExecution: typings.devtoolsProtocol.devtoolsProtocolStrings.JavaScriptExecution = "JavaScriptExecution".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.JavaScriptExecution]
+  
+  inline def KeepaliveRequest: typings.devtoolsProtocol.devtoolsProtocolStrings.KeepaliveRequest = "KeepaliveRequest".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.KeepaliveRequest]
   
   inline def KeyboardLock: typings.devtoolsProtocol.devtoolsProtocolStrings.KeyboardLock = "KeyboardLock".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.KeyboardLock]
   

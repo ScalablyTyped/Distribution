@@ -24,7 +24,7 @@ object distIconsSrcMultiVariantIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerMultiVariantIcon(hasComponent24Component32SizeForwardedRefRest: InnerMultiVariantIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMultiVariantIcon")(hasComponent24Component32SizeForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerMultiVariantIcon(param0: InnerMultiVariantIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMultiVariantIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/icons/src/MultiVariantIcon", "MultiVariantIcon")
   @js.native

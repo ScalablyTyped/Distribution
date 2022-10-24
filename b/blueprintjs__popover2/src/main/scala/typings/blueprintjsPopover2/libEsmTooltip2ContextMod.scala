@@ -18,7 +18,7 @@ object libEsmTooltip2ContextMod {
   @js.native
   val Tooltip2Context: Context[js.Tuple2[Tooltip2ContextState, Dispatch[Tooltip2Action]]] = js.native
   
-  inline def Tooltip2Provider(hasChildrenForceDisable: Tooltip2ProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip2Provider")(hasChildrenForceDisable.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Tooltip2Provider(param0: Tooltip2ProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip2Provider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.blueprintjsPopover2.anon.Type

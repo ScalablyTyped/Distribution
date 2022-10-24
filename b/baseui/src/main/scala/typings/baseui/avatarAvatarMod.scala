@@ -12,5 +12,5 @@ object avatarAvatarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasInitialsNameOverridesSizeSrc: AvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasInitialsNameOverridesSizeSrc.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: AvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -19,7 +19,7 @@ object distLibHeadMod {
       * This component injects elements to `<head>` of your page.
       * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
       */
-    inline def apply(hasChildren: Children): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Children): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("next-server/dist/lib/head", JSImport.Default)
     @js.native

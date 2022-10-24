@@ -365,7 +365,7 @@ object soundmanager {
     var muted: Boolean = js.native
     
     // clearOnPosition(): void;
-    def onPosition(mescOffest: Double, callback: js.Object, has: Any): SMSound = js.native
+    def onPosition(mescOffest: Double, callback: js.Object, param2: Any): SMSound = js.native
     
     // Events
     var onbufferchange: js.UndefOr[js.Function0[Unit]] = js.native

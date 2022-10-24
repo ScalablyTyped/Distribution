@@ -13,7 +13,7 @@ trait Cookies extends StObject {
   
   def getCookies(externalCookies: js.Array[ExternalCookies], urls: js.Array[String]): js.Promise[js.Array[ExternalCookies]]
   
-  def getHeader(hasUrlHostname: Hostname): String | Null
+  def getHeader(param0: Hostname): String | Null
   
   def setCookies(externalCookies: js.Array[ExternalCookies], url: String): js.Promise[Unit]
 }

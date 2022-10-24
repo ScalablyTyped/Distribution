@@ -25,7 +25,7 @@ object outCodeSignMacCodeSignMod {
   @js.native
   val appleCertificatePrefixes: js.Array[String] = js.native
   
-  inline def createKeychain(hasTmpDirCscLinkCscKeyPasswordCscILinkCscIKeyPasswordCurrentDir: CreateKeychainOptions): js.Promise[CodeSigningInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeychain")(hasTmpDirCscLinkCscKeyPasswordCscILinkCscIKeyPasswordCurrentDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CodeSigningInfo]]
+  inline def createKeychain(param0: CreateKeychainOptions): js.Promise[CodeSigningInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeychain")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CodeSigningInfo]]
   
   inline def findIdentity(certType: CertType): js.Promise[Identity | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIdentity")(certType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Identity | Null]]
   inline def findIdentity(certType: CertType, qualifier: String): js.Promise[Identity | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIdentity")(certType.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Identity | Null]]

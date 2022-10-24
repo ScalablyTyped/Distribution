@@ -17,7 +17,7 @@ object libComponentsChartChartHelperMod {
   trait ChartHelper
     extends typings.antvEventEmitter.mod.default {
     
-    def adapterOptions(hasDataOthers: Dictx): StringDictionary[Any] = js.native
+    def adapterOptions(param0: Dictx): StringDictionary[Any] = js.native
     
     var chart: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify G2Chart */ Any = js.native
     

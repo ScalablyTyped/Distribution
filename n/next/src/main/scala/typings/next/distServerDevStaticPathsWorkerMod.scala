@@ -12,9 +12,7 @@ object distServerDevStaticPathsWorkerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loadStaticPaths(
-    hasDistDirPathnameServerlessConfigHttpAgentOptionsLocalesDefaultLocaleIsAppPathOriginalAppPath: HttpAgentOptions
-  ): js.Promise[EncodedPathsFallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadStaticPaths")(hasDistDirPathnameServerlessConfigHttpAgentOptionsLocalesDefaultLocaleIsAppPathOriginalAppPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EncodedPathsFallback]]
+  inline def loadStaticPaths(param0: HttpAgentOptions): js.Promise[EncodedPathsFallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadStaticPaths")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EncodedPathsFallback]]
   
   type RuntimeConfig = Any
 }

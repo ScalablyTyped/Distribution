@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ip1sms__is-disposable-phone-number"
-version := "1.1-dt-20220812Z-d329fd"
-scalaVersion := "3.1.2"
+version := "1.1-dt-20220812Z-7ea176"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

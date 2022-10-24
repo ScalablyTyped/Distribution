@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Config extends StObject {
   
-  var config: js.Function1[/* hasRootPrefixCls */ RootPrefixCls, Unit]
+  var config: js.Function1[/* param0 */ RootPrefixCls, Unit]
   
   def destroyAll(): Unit
   
@@ -19,7 +19,7 @@ trait Config extends StObject {
 object Config {
   
   inline def apply(
-    config: /* hasRootPrefixCls */ RootPrefixCls => Unit,
+    config: /* param0 */ RootPrefixCls => Unit,
     destroyAll: () => Unit,
     useModal: () => js.Tuple2[Omit[ModalStaticFunctions, warn], ReactElement]
   ): Config = {
@@ -29,7 +29,7 @@ object Config {
   
   extension [Self <: Config](x: Self) {
     
-    inline def setConfig(value: /* hasRootPrefixCls */ RootPrefixCls => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
+    inline def setConfig(value: /* param0 */ RootPrefixCls => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
     
     inline def setDestroyAll(value: () => Unit): Self = StObject.set(x, "destroyAll", js.Any.fromFunction0(value))
     

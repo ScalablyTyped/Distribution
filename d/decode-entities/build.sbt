@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "decode-entities"
-version := "1.0-dt-20211202Z-19a186"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-eb5eef"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

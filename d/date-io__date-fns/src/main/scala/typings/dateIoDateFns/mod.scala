@@ -11,6 +11,6 @@ object mod {
   @js.native
   open class default ()
     extends typings.dateIoDateFns.buildDateFnsUtilsMod.default {
-    def this(hasLocaleFormats: Formats) = this()
+    def this(param0: Formats) = this()
   }
 }

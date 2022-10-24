@@ -12,7 +12,7 @@ object distTypesXySeriesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateXYSeries(hasSerieIdsXY: SerieIds): js.Array[DataId] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateXYSeries")(hasSerieIdsXY.asInstanceOf[js.Any]).asInstanceOf[js.Array[DataId]]
+  inline def generateXYSeries(param0: SerieIds): js.Array[DataId] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateXYSeries")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[DataId]]
   
   trait XYRandomNumericValues
     extends StObject

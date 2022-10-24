@@ -8,7 +8,7 @@ trait AddedIndex extends StObject {
   
   var addedIndex: Double | String
   
-  var id: js.Any
+  var id: Any
   
   var item: js.Object
   
@@ -16,7 +16,7 @@ trait AddedIndex extends StObject {
 }
 object AddedIndex {
   
-  inline def apply(addedIndex: Double | String, id: js.Any, item: js.Object, removedIndex: Double | String): AddedIndex = {
+  inline def apply(addedIndex: Double | String, id: Any, item: js.Object, removedIndex: Double | String): AddedIndex = {
     val __obj = js.Dynamic.literal(addedIndex = addedIndex.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], removedIndex = removedIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddedIndex]
   }
@@ -25,7 +25,7 @@ object AddedIndex {
     
     inline def setAddedIndex(value: Double | String): Self = StObject.set(x, "addedIndex", value.asInstanceOf[js.Any])
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

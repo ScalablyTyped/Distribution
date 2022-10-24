@@ -1,14 +1,14 @@
 package typings.wixStyleReact.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.wixStyleReact.sidePanelMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "SidePanel")
 @js.native
-class SidePanel () extends default
+open class SidePanel ()
+  extends typings.wixStyleReact.distTypesSidePanelMod.default
 /* static members */
 object SidePanel {
   
@@ -18,21 +18,21 @@ object SidePanel {
   
   @JSImport("wix-style-react", "SidePanel.Content")
   @js.native
-  def Content: Instantiable0[typings.wixStyleReact.sidePanelContentMod.default] = js.native
-  inline def Content_=(x: Instantiable0[typings.wixStyleReact.sidePanelContentMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  def Content: Instantiable0[typings.wixStyleReact.distTypesSidePanelContentMod.default] = js.native
+  inline def Content_=(x: Instantiable0[typings.wixStyleReact.distTypesSidePanelContentMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "SidePanel.Divider")
   @js.native
-  def Divider: Instantiable0[typings.wixStyleReact.sidePanelDividerMod.default] = js.native
-  inline def Divider_=(x: Instantiable0[typings.wixStyleReact.sidePanelDividerMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
+  def Divider: Instantiable0[typings.wixStyleReact.distTypesSidePanelDividerMod.default] = js.native
+  inline def Divider_=(x: Instantiable0[typings.wixStyleReact.distTypesSidePanelDividerMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "SidePanel.Footer")
   @js.native
-  def Footer: Instantiable0[typings.wixStyleReact.sidePanelFooterMod.default] = js.native
-  inline def Footer_=(x: Instantiable0[typings.wixStyleReact.sidePanelFooterMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+  def Footer: Instantiable0[typings.wixStyleReact.distTypesSidePanelFooterMod.default] = js.native
+  inline def Footer_=(x: Instantiable0[typings.wixStyleReact.distTypesSidePanelFooterMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "SidePanel.Header")
   @js.native
-  def Header: Instantiable0[typings.wixStyleReact.sidePanelHeaderMod.default] = js.native
-  inline def Header_=(x: Instantiable0[typings.wixStyleReact.sidePanelHeaderMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  def Header: Instantiable0[typings.wixStyleReact.distTypesSidePanelHeaderMod.default] = js.native
+  inline def Header_=(x: Instantiable0[typings.wixStyleReact.distTypesSidePanelHeaderMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
 }

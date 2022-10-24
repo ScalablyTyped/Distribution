@@ -11,7 +11,7 @@ object esHooksUseAccessibilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasVisibleSetTriggerVisibleTriggerRefOnVisibleChangeAutoFocus: UseAccessibilityProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasVisibleSetTriggerVisibleTriggerRefOnVisibleChangeAutoFocus.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(param0: UseAccessibilityProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait UseAccessibilityProps extends StObject {
     

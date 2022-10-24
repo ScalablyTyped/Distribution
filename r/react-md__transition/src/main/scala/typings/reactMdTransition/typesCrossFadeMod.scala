@@ -14,7 +14,7 @@ object typesCrossFadeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CrossFade[E /* <: HTMLElement */](hasAppearTransitionInChildrenClassNameOptions: CrossFadeProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CrossFade")(hasAppearTransitionInChildrenClassNameOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def CrossFade[E /* <: HTMLElement */](param0: CrossFadeProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CrossFade")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait CrossFadeProps[E /* <: HTMLElement */]
     extends StObject

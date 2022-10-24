@@ -19,5 +19,5 @@ trait TypeofHSCAN extends StObject {
   def transformArguments(key: RedisCommandArgument, cursor: Double): RedisCommandArguments = js.native
   def transformArguments(key: RedisCommandArgument, cursor: Double, options: ScanOptions): RedisCommandArguments = js.native
   
-  def transformReply(hasCursorRawTuples: HScanRawReply): HScanReply = js.native
+  def transformReply(param0: HScanRawReply): HScanReply = js.native
 }

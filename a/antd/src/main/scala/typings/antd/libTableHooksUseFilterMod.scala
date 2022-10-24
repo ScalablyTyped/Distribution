@@ -22,13 +22,11 @@ object libTableHooksUseFilterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RecordType](
-    hasPrefixClsDropdownPrefixClsMergedColumnsOnFilterChangeGetPopupContainerTableLocale: FilterConfig[RecordType]
-  ): js.Tuple3[
+  inline def default[RecordType](param0: FilterConfig[RecordType]): js.Tuple3[
     TransformColumns[RecordType], 
     js.Array[FilterState[RecordType]], 
     Record[String, FilterValue | Null]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsDropdownPrefixClsMergedColumnsOnFilterChangeGetPopupContainerTableLocale.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
     TransformColumns[RecordType], 
     js.Array[FilterState[RecordType]], 
     Record[String, FilterValue | Null]

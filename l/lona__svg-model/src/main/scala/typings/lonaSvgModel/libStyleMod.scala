@@ -12,7 +12,7 @@ object libStyleMod {
   val ^ : js.Any = js.native
   
   inline def style(): Style_ = ^.asInstanceOf[js.Dynamic].applyDynamic("style")().asInstanceOf[Style_]
-  inline def style(hasFillFillOpacityFillRuleStrokeStrokeWidthStrokeLineCapStrokeOpacity: Fill): Style_ = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(hasFillFillOpacityFillRuleStrokeStrokeWidthStrokeLineCapStrokeOpacity.asInstanceOf[js.Any]).asInstanceOf[Style_]
+  inline def style(param0: Fill): Style_ = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(param0.asInstanceOf[js.Any]).asInstanceOf[Style_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.lonaSvgModel.lonaSvgModelStrings.nonzero

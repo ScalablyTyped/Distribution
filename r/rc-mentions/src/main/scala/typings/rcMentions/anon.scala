@@ -254,9 +254,7 @@ object anon {
     
     var dropdownClassName: js.UndefOr[String] = js.undefined
     
-    var filterOption: js.UndefOr[
-        `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])
-      ] = js.undefined
+    var filterOption: js.UndefOr[`false` | (js.Function2[/* input */ String, /* param1 */ OptionProps, Boolean])] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
@@ -819,9 +817,9 @@ object anon {
       
       inline def setDropdownClassNameUndefined: Self = StObject.set(x, "dropdownClassName", js.undefined)
       
-      inline def setFilterOption(value: `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
+      inline def setFilterOption(value: `false` | (js.Function2[/* input */ String, /* param1 */ OptionProps, Boolean])): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
       
-      inline def setFilterOptionFunction2(value: (/* input */ String, /* hasValue */ OptionProps) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
+      inline def setFilterOptionFunction2(value: (/* input */ String, /* param1 */ OptionProps) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
       
       inline def setFilterOptionUndefined: Self = StObject.set(x, "filterOption", js.undefined)
       
@@ -1672,7 +1670,7 @@ object anon {
       ] = js.undefined
     
     var filterOption: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: null extends false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined ? react.react.Validator<false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined | null | undefined> : undefined extends false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined ? react.react.Validator<false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined | null | undefined> : react.react.Validator<false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined> */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined ? react.react.Validator<false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined | null | undefined> : undefined extends false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined ? react.react.Validator<false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined | null | undefined> : react.react.Validator<false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined> */ js.Any
       ] = js.undefined
     
     var form: js.UndefOr[
@@ -2641,7 +2639,7 @@ object anon {
       inline def setDropdownClassNameUndefined: Self = StObject.set(x, "dropdownClassName", js.undefined)
       
       inline def setFilterOption(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined ? react.react.Validator<false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined | null | undefined> : undefined extends false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined ? react.react.Validator<false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined | null | undefined> : react.react.Validator<false | (input : string, hasValue : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined> */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined ? react.react.Validator<false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined | null | undefined> : undefined extends false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined ? react.react.Validator<false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined | null | undefined> : react.react.Validator<false | (input : string, param1 : rc-mentions.rc-mentions/es/Option.OptionProps): boolean | undefined> */ js.Any
       ): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
       
       inline def setFilterOptionUndefined: Self = StObject.set(x, "filterOption", js.undefined)

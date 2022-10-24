@@ -23,33 +23,33 @@ object distComposeComposeNodeMod {
     offset: Double,
     before: js.Array[Token],
     pos: Double,
-    hasSpaceBeforeCommentAnchorTagEnd: Props,
+    param4: Props,
     onError: ComposeErrorHandler
-  ): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("composeEmptyNode")(ctx.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], before.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], hasSpaceBeforeCommentAnchorTagEnd.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed]
+  ): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("composeEmptyNode")(ctx.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], before.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], param4.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed]
   inline def composeEmptyNode(
     ctx: ComposeContext,
     offset: Double,
     before: js.Array[Token],
     pos: Null,
-    hasSpaceBeforeCommentAnchorTagEnd: Props,
+    param4: Props,
     onError: ComposeErrorHandler
-  ): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("composeEmptyNode")(ctx.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], before.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], hasSpaceBeforeCommentAnchorTagEnd.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed]
+  ): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("composeEmptyNode")(ctx.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], before.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], param4.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed]
   inline def composeEmptyNode(
     ctx: ComposeContext,
     offset: Double,
     before: Unit,
     pos: Double,
-    hasSpaceBeforeCommentAnchorTagEnd: Props,
+    param4: Props,
     onError: ComposeErrorHandler
-  ): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("composeEmptyNode")(ctx.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], before.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], hasSpaceBeforeCommentAnchorTagEnd.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed]
+  ): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("composeEmptyNode")(ctx.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], before.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], param4.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed]
   inline def composeEmptyNode(
     ctx: ComposeContext,
     offset: Double,
     before: Unit,
     pos: Null,
-    hasSpaceBeforeCommentAnchorTagEnd: Props,
+    param4: Props,
     onError: ComposeErrorHandler
-  ): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("composeEmptyNode")(ctx.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], before.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], hasSpaceBeforeCommentAnchorTagEnd.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed]
+  ): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("composeEmptyNode")(ctx.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], before.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], param4.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed]
   
   inline def composeNode(ctx: ComposeContext, token: Token, props: Props, onError: ComposeErrorHandler): ParsedNode = (^.asInstanceOf[js.Dynamic].applyDynamic("composeNode")(ctx.asInstanceOf[js.Any], token.asInstanceOf[js.Any], props.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[ParsedNode]
   

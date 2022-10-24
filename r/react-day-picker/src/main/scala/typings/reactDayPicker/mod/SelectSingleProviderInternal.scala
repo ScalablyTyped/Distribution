@@ -16,7 +16,7 @@ object SelectSingleProviderInternal {
   
   @JSImport("react-day-picker", "SelectSingleProviderInternal")
   @js.native
-  def apply(hasInitialPropsChildren: SelectSingleProviderInternal): Element = js.native
+  def apply(param0: SelectSingleProviderInternal): Element = js.native
   
   extension [Self <: SelectSingleProviderInternal](x: Self) {
     

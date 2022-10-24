@@ -14,7 +14,7 @@ object distTypesTooltipProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TooltipProvider(hasContainerChildren: PropsWithChildren[TooltipProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TooltipProvider")(hasContainerChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TooltipProvider(param0: PropsWithChildren[TooltipProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TooltipProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TooltipProviderProps extends StObject {
     

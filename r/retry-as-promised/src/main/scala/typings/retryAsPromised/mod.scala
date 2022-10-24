@@ -87,7 +87,7 @@ object mod extends Shortcut {
     typings.bluebird.mod.^[Any]
   ]
   
-  type RetryCallback[T] = js.Function1[/* hasCurrent */ Current, Thenable[T]]
+  type RetryCallback[T] = js.Function1[/* param0 */ Current, Thenable[T]]
   
   type _To = RetryAsPromisedStatic
   

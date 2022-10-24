@@ -13,7 +13,5 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useBar[RawDatum /* <: BarDatum */](
-    hasIndexByKeysLabelTooltipLabelValueFormatColorsColorByBorderColorLabelTextColorGroupModeLayoutReverseDataMinValueMaxValueMarginWidthHeightPaddingInnerPaddingValueScaleIndexScaleInitialHiddenIdsEnableLabelLabelSkipWidthLabelSkipHeightLegendsLegendLabel: BorderColor[RawDatum]
-  ): BarsWithValue[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useBar")(hasIndexByKeysLabelTooltipLabelValueFormatColorsColorByBorderColorLabelTextColorGroupModeLayoutReverseDataMinValueMaxValueMarginWidthHeightPaddingInnerPaddingValueScaleIndexScaleInitialHiddenIdsEnableLabelLabelSkipWidthLabelSkipHeightLegendsLegendLabel.asInstanceOf[js.Any]).asInstanceOf[BarsWithValue[RawDatum]]
+  inline def useBar[RawDatum /* <: BarDatum */](param0: BorderColor[RawDatum]): BarsWithValue[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useBar")(param0.asInstanceOf[js.Any]).asInstanceOf[BarsWithValue[RawDatum]]
 }

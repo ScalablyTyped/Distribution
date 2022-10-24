@@ -13,7 +13,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
-  inline def default(hasIncludeExcludeReadFile: SourcemapsPluginOptions): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIncludeExcludeReadFile.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def default(param0: SourcemapsPluginOptions): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   trait SourcemapsPluginOptions extends StObject {
     

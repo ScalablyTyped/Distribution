@@ -29,31 +29,27 @@ object mod {
   
   inline def FileIcon(props: FileIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileIcon")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FilePreviewer(hasFileIconPropsUploadsHandleRemoveHandleRetry: FilePreviewerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePreviewer")(hasFileIconPropsUploadsHandleRemoveHandleRetry.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FilePreviewer(param0: FilePreviewerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePreviewer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileUploadButton(
-    hasDisabledMultipleChildrenHandleFilesAcceptsResetOnChange: PropsWithChildren[FileUploadButtonProps]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileUploadButton")(hasDisabledMultipleChildrenHandleFilesAcceptsResetOnChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileUploadButton(param0: PropsWithChildren[FileUploadButtonProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileUploadButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def IconButton(hasOnClickChildren: PropsWithChildren[IconButtonProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IconButton")(hasOnClickChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def IconButton(param0: PropsWithChildren[IconButtonProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IconButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ImageDropzone(
-    hasHandleFilesMaxNumberOfFilesChildrenAcceptMultipleDisabled: PropsWithChildren[ImageDropzoneProps]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImageDropzone")(hasHandleFilesMaxNumberOfFilesChildrenAcceptMultipleDisabled.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ImageDropzone(param0: PropsWithChildren[ImageDropzoneProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImageDropzone")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ImagePreviewer(hasMultipleDisabledImageUploadsHandleRemoveHandleRetryHandleFiles: ImagePreviewerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImagePreviewer")(hasMultipleDisabledImageUploadsHandleRemoveHandleRetryHandleFiles.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ImagePreviewer(param0: ImagePreviewerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImagePreviewer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ImageUploadButton(hasMultipleDisabledHandleFilesChildrenResetOnChange: PropsWithChildren[ImageUploadButtonProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImageUploadButton")(hasMultipleDisabledHandleFilesChildrenResetOnChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ImageUploadButton(param0: PropsWithChildren[ImageUploadButtonProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImageUploadButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def LoadingIndicator(hasSizeWidthBackgroundColorColor: LoadingIndicatorProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingIndicator")(hasSizeWidthBackgroundColorColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LoadingIndicator(param0: LoadingIndicatorProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingIndicator")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def PictureIcon(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PictureIcon")().asInstanceOf[Element]
   
-  inline def Thumbnail(hasImageSizeHandleCloseAlt: ThumbnailProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Thumbnail")(hasImageSizeHandleCloseAlt.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Thumbnail(param0: ThumbnailProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Thumbnail")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ThumbnailPlaceholder(hasMultipleHandleFiles: ThumbnailPlaceholderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThumbnailPlaceholder")(hasMultipleHandleFiles.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ThumbnailPlaceholder(param0: ThumbnailPlaceholderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThumbnailPlaceholder")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def UploadButton(hasResetOnChangeOnFileChangeRest: UploadButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("UploadButton")(hasResetOnChangeOnFileChangeRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def UploadButton(param0: UploadButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("UploadButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def dataTransferItemsHaveFiles(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsHaveFiles")().asInstanceOf[Boolean]
   inline def dataTransferItemsHaveFiles(items: js.Array[DataTransferItem]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dataTransferItemsHaveFiles")(items.asInstanceOf[js.Any]).asInstanceOf[Boolean]

@@ -35,7 +35,7 @@ object mod {
     def getCalculatedMetrics(body: CalculatedMetricFilter): js.Promise[Any] = js.native
     
     def getCollectionById(rsid: Any): js.Promise[Any] = js.native
-    def getCollectionById(rsid: Any, hasExpansion: ExpansionAny): js.Promise[Any] = js.native
+    def getCollectionById(rsid: Any, param1: ExpansionAny): js.Promise[Any] = js.native
     
     def getCollections(): js.Promise[Any] = js.native
     def getCollections(body: Page): js.Promise[Any] = js.native

@@ -116,7 +116,7 @@ object libTabsMod {
   
   object default {
     
-    inline def apply(hasTypeClassNamePropSizeOnEditHideAddCenteredAddIconChildrenItemsAnimatedProps: TabsProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasTypeClassNamePropSizeOnEditHideAddCenteredAddIconChildrenItemsAnimatedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: TabsProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd/lib/tabs", JSImport.Default)
     @js.native

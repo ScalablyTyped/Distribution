@@ -39,7 +39,7 @@ object distSrcModelsNodeModelMod {
     
     def setPosition(x: Any, y: Any): Unit = js.native
     
-    def updateDimensions(hasWidthHeight: Width): Unit = js.native
+    def updateDimensions(param0: Width): Unit = js.native
     
     var width: Double = js.native
     

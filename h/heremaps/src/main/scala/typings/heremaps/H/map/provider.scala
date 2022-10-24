@@ -133,6 +133,11 @@ object provider {
            with Flag
     }
     
+    /**
+      * The invalidation mark represents a counter which is increased whenever an invalidation takes place.
+      */
+    type Mark = Any
+    
     extension [Self <: Invalidations](x: Self) {
       
       inline def setGetMark(value: () => Mark): Self = StObject.set(x, "getMark", js.Any.fromFunction0(value))
@@ -151,11 +156,6 @@ object provider {
       
       inline def setUpdate(value: (Mark, BitMask) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }
-    
-    /**
-      * The invalidation mark represents a counter which is increased whenever an invalidation takes place.
-      */
-    type Mark = Any
   }
   
   /**

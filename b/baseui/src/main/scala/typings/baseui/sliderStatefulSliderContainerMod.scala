@@ -61,7 +61,7 @@ object sliderStatefulSliderContainerMod {
   @js.native
   trait StatefulSliderContainer extends Component[StatefulContainerProps, State, Any] {
     
-    def internalSetState(`type`: ChangeAction, hasValue: Params): Unit = js.native
+    def internalSetState(`type`: ChangeAction, param1: Params): Unit = js.native
     
     def onChange(params: `256`): Any = js.native
     

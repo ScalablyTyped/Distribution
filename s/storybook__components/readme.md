@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__components
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 Core Storybook Components

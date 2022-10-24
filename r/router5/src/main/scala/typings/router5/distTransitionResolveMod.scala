@@ -11,5 +11,5 @@ object distTransitionResolveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(functions: Any, hasIsCancelledToStateFromStateErrorKey: ErrorKey, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(functions.asInstanceOf[js.Any], hasIsCancelledToStateFromStateErrorKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(functions: Any, param1: ErrorKey, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(functions.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

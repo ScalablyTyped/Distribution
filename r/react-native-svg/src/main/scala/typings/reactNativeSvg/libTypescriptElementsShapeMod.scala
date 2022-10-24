@@ -84,7 +84,7 @@ object libTypescriptElementsShapeMod {
     var y: Double = js.native
   }
   
-  inline def invert(hasABCDEF: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(hasABCDEF.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def invert(param0: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(param0.asInstanceOf[js.Any]).asInstanceOf[Matrix]
   
   inline def matrixTransform(matrix: Matrix, point: Point): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("matrixTransform")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Point]
   

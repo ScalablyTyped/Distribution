@@ -11,10 +11,7 @@ object distCoreMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def tokenize[T /* <: Token[Any] */](
-    source: String,
-    hasIsDelimiterIsStringDelimiterIsWhitespaceShouldAddTokenCreateTokenGetCommentStartTypeIsCommentEndGetUnclosedCommentOffset: TokyOptions[T]
-  ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(source.asInstanceOf[js.Any], hasIsDelimiterIsStringDelimiterIsWhitespaceShouldAddTokenCreateTokenGetCommentStartTypeIsCommentEndGetUnclosedCommentOffset.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def tokenize[T /* <: Token[Any] */](source: String, param1: TokyOptions[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(source.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   trait TokyOptions[T /* <: Token[Any] */] extends StObject {
     

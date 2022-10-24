@@ -27,7 +27,7 @@ object mod {
   @js.native
   val DEFAULT_RIPPLE_TIMEOUT: TransitionTimeout = js.native
   
-  inline def StatesConfig(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren: StatesConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("StatesConfig")(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def StatesConfig(param0: StatesConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("StatesConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/states", "StatesConfigContext")
   @js.native

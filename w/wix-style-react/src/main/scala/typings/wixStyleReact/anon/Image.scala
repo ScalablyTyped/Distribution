@@ -1,45 +1,32 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.FC
+import typings.propTypes.mod.ReactNodeLike
+import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Image extends StObject {
   
-  var image: FC[js.Object]
+  var image: Requireable[ReactNodeLike]
   
-  var large: FC[js.Object]
+  var text: Requireable[String]
   
-  var medium: FC[js.Object]
-  
-  var small: FC[js.Object]
-  
-  var tiny: FC[js.Object]
+  var title: Requireable[String]
 }
 object Image {
   
-  inline def apply(
-    image: FC[js.Object],
-    large: FC[js.Object],
-    medium: FC[js.Object],
-    small: FC[js.Object],
-    tiny: FC[js.Object]
-  ): Image = {
-    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], large = large.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], tiny = tiny.asInstanceOf[js.Any])
+  inline def apply(image: Requireable[ReactNodeLike], text: Requireable[String], title: Requireable[String]): Image = {
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
   
   extension [Self <: Image](x: Self) {
     
-    inline def setImage(value: FC[js.Object]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    inline def setLarge(value: FC[js.Object]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setText(value: Requireable[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setMedium(value: FC[js.Object]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
-    
-    inline def setSmall(value: FC[js.Object]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
-    
-    inline def setTiny(value: FC[js.Object]): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Requireable[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

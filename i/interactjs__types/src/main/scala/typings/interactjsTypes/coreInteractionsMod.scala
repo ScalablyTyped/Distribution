@@ -29,7 +29,7 @@ object coreInteractionsMod extends Shortcut {
     trait Scope extends StObject {
       
       var Interaction: Instantiable1[
-            /* hasPointerTypeScopeFire */ ScopeFire, 
+            /* param0 */ ScopeFire, 
             typings.interactjsTypes.coreInteractionMod.Interaction[ActionName | Null]
           ]
       
@@ -40,7 +40,7 @@ object coreInteractionsMod extends Shortcut {
     object Scope {
       
       inline def apply(
-        Interaction: Instantiable1[/* hasPointerTypeScopeFire */ ScopeFire, Interaction[ActionName | Null]],
+        Interaction: Instantiable1[/* param0 */ ScopeFire, Interaction[ActionName | Null]],
         interactions: DocEvents,
         prevTouchTime: Double
       ): Scope = {
@@ -50,7 +50,7 @@ object coreInteractionsMod extends Shortcut {
       
       extension [Self <: Scope](x: Self) {
         
-        inline def setInteraction(value: Instantiable1[/* hasPointerTypeScopeFire */ ScopeFire, Interaction[ActionName | Null]]): Self = StObject.set(x, "Interaction", value.asInstanceOf[js.Any])
+        inline def setInteraction(value: Instantiable1[/* param0 */ ScopeFire, Interaction[ActionName | Null]]): Self = StObject.set(x, "Interaction", value.asInstanceOf[js.Any])
         
         inline def setInteractions(value: DocEvents): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
         

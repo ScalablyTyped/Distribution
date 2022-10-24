@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "mozjpeg"
-version := "5.0-dt-20211202Z-1d2e5e"
-scalaVersion := "3.1.2"
+version := "5.0-dt-20211202Z-53311b"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

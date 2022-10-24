@@ -719,7 +719,7 @@ object mod {
   inline def getFileChecksums(p: String): js.Promise[js.Tuple2[String, js.UndefOr[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileChecksums")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[String, js.UndefOr[String]]]]
   
   inline def getFileTree[RE, DE](dir: String): js.Promise[(RegularFileNode & RE) | (DirectoryNode & DE)] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileTree")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[(RegularFileNode & RE) | (DirectoryNode & DE)]]
-  inline def getFileTree[RE, DE](dir: String, hasOnErrorOnFileNodeOnDirectoryNodeWalkerOptions: GetFileTreeOptions[RE, DE]): js.Promise[(RegularFileNode & RE) | (DirectoryNode & DE)] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileTree")(dir.asInstanceOf[js.Any], hasOnErrorOnFileNodeOnDirectoryNodeWalkerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[(RegularFileNode & RE) | (DirectoryNode & DE)]]
+  inline def getFileTree[RE, DE](dir: String, param1: GetFileTreeOptions[RE, DE]): js.Promise[(RegularFileNode & RE) | (DirectoryNode & DE)] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileTree")(dir.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[(RegularFileNode & RE) | (DirectoryNode & DE)]]
   
   inline def isExecutableFile(filePath: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isExecutableFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
@@ -2708,7 +2708,7 @@ object mod {
   inline def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   
   inline def readdirp(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirp")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def readdirp(dir: String, hasFilterOnErrorWalkerOptions: ReaddirPOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirp")(dir.asInstanceOf[js.Any], hasFilterOnErrorWalkerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def readdirp(dir: String, param1: ReaddirPOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirp")(dir.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   inline def readlink(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def readlink(

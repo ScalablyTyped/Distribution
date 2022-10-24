@@ -12,5 +12,5 @@ object distTypesVoronoiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Voronoi(hasThemeOtherProps: PartialOmitVoronoiSvgProp): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Voronoi")(hasThemeOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Voronoi(param0: PartialOmitVoronoiSvgProp): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Voronoi")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

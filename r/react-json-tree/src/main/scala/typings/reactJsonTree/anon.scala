@@ -239,7 +239,7 @@ object anon {
     
     var keyPath: js.Array[String]
     
-    def labelRenderer(hasLabel: js.Array[String | Double]): Element
+    def labelRenderer(param0: js.Array[String | Double]): Element
     
     def postprocessValue(value: Any): Any
     

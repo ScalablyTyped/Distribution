@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "canvas-color-tracker"
-version := "1.1.6-d04902"
-scalaVersion := "3.1.2"
+version := "1.1.6-a3e527"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

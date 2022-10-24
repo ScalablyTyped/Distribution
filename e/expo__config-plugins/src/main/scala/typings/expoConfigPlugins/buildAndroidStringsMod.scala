@@ -14,7 +14,7 @@ object buildAndroidStringsMod {
   val ^ : js.Any = js.native
   
   inline def getProjectStringsXMLPathAsync(projectRoot: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectStringsXMLPathAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def getProjectStringsXMLPathAsync(projectRoot: String, hasKind: Kind): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectStringsXMLPathAsync")(projectRoot.asInstanceOf[js.Any], hasKind.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getProjectStringsXMLPathAsync(projectRoot: String, param1: Kind): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectStringsXMLPathAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def removeStringItem(named: String, stringFileContentsJSON: ResourceXML): ResourceXML = (^.asInstanceOf[js.Dynamic].applyDynamic("removeStringItem")(named.asInstanceOf[js.Any], stringFileContentsJSON.asInstanceOf[js.Any])).asInstanceOf[ResourceXML]
   

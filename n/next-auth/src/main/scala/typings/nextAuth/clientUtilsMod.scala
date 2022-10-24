@@ -23,7 +23,7 @@ object clientUtilsMod {
   inline def apiBaseUrl(__NEXTAUTH: NextAuthClientConfig): String = ^.asInstanceOf[js.Dynamic].applyDynamic("apiBaseUrl")(__NEXTAUTH.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def fetchData[T](path: String, __NEXTAUTH: NextAuthClientConfig, logger: LoggerInstance): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchData")(path.asInstanceOf[js.Any], __NEXTAUTH.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
-  inline def fetchData[T](path: String, __NEXTAUTH: NextAuthClientConfig, logger: LoggerInstance, hasCtxReq: CtxOrReq): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchData")(path.asInstanceOf[js.Any], __NEXTAUTH.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], hasCtxReq.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
+  inline def fetchData[T](path: String, __NEXTAUTH: NextAuthClientConfig, logger: LoggerInstance, param3: CtxOrReq): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchData")(path.asInstanceOf[js.Any], __NEXTAUTH.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
   
   inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   

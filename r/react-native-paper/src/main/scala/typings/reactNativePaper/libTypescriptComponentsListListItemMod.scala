@@ -5,11 +5,11 @@ import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonRea
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.reactNativePaper.anon.Call
-import typings.reactNativePaper.anon.CallHasLeftRightTitleDescriptionOnPressThemeStyleTitleStyleTitleNumberOfLinesDescriptionNumberOfLinesTitleEllipsizeModeDescriptionEllipsizeModeDescriptionStyleRest
 import typings.reactNativePaper.anon.EllipsizeMode
 import typings.reactNativePaper.anon.PickRemoveChildrenComponeAccessibilityViewIsModal
 import typings.reactNativePaper.anon.PickTouchableWithoutFeedb
 import typings.reactNativePaper.anon.TouchableWithoutFeedbackP
+import typings.reactNativePaper.anon.`20`
 import typings.reactNativePaper.libTypescriptTypesMod.RemoveChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object libTypescriptComponentsListListItemMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & typings.reactNativePaper.anon.Description
-    ]) & CallHasLeftRightTitleDescriptionOnPressThemeStyleTitleStyleTitleNumberOfLinesDescriptionNumberOfLinesTitleEllipsizeModeDescriptionEllipsizeModeDescriptionStyleRest, 
+    ]) & `20`, 
     js.Object
   ]) = js.native
   
@@ -41,7 +41,7 @@ object libTypescriptComponentsListListItemMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & typings.reactNativePaper.anon.Description
-    ]) & CallHasLeftRightTitleDescriptionOnPressThemeStyleTitleStyleTitleNumberOfLinesDescriptionNumberOfLinesTitleEllipsizeModeDescriptionEllipsizeModeDescriptionStyleRest, 
+    ]) & `20`, 
     js.Object
   ])
   
@@ -51,7 +51,7 @@ object libTypescriptComponentsListListItemMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & typings.reactNativePaper.anon.Description
-    ]) & CallHasLeftRightTitleDescriptionOnPressThemeStyleTitleStyleTitleNumberOfLinesDescriptionNumberOfLinesTitleEllipsizeModeDescriptionEllipsizeModeDescriptionStyleRest, 
+    ]) & `20`, 
     js.Object
   ]) = default
 }

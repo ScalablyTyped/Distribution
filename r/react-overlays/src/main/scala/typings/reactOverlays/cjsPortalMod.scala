@@ -17,7 +17,7 @@ object cjsPortalMod {
     */
   object default {
     
-    inline def apply(hasContainerChildrenOnRendered: PortalProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(hasContainerChildrenOnRendered.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    inline def apply(param0: PortalProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
     
     @JSImport("react-overlays/cjs/Portal", JSImport.Default)
     @js.native

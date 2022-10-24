@@ -1,5 +1,6 @@
 package typings.antDesignProProvider
 
+import typings.antDesignCssinjs.mod.Theme
 import typings.antDesignProProvider.anon.Blue
 import typings.antDesignProProvider.anon.HashId
 import org.scalablytyped.runtime.StObject
@@ -2035,6 +2036,13 @@ object esUseStyleTokenMod {
     inline def zIndexPopupBase_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zIndexPopupBase")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@ant-design/pro-provider/es/useStyle/token", "emptyTheme")
+  @js.native
+  val emptyTheme: Theme[Any, Any] = js.native
+  
+  inline def hashCode_(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashCode")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def hashCode_(str: String, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hashCode")(str.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   object token {
     
     @JSImport("@ant-design/pro-provider/es/useStyle/token", "token")
@@ -2048,8 +2056,8 @@ object esUseStyleTokenMod {
     
     @JSImport("@ant-design/pro-provider/es/useStyle/token", "token.theme")
     @js.native
-    def theme: Any = js.native
-    inline def theme_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
+    def theme: Theme[Any, Any] = js.native
+    inline def theme_=(x: Theme[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-provider/es/useStyle/token", "token.token")
     @js.native

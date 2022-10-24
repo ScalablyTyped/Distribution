@@ -12,5 +12,5 @@ object bannerBannerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Banner(hasActionArtworkChildrenHierarchyKindOverridesNestedTitle: BannerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Banner")(hasActionArtworkChildrenHierarchyKindOverridesNestedTitle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Banner(param0: BannerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Banner")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -13,5 +13,5 @@ object distTypesResolveSSOCredentialsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def resolveSSOCredentials(hasSsoStartUrlSsoAccountIdSsoRegionSsoRoleNameSsoClient: FromSSOInit & SsoCredentialsParameters): js.Promise[Credentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSSOCredentials")(hasSsoStartUrlSsoAccountIdSsoRegionSsoRoleNameSsoClient.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Credentials]]
+  inline def resolveSSOCredentials(param0: FromSSOInit & SsoCredentialsParameters): js.Promise[Credentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSSOCredentials")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Credentials]]
 }

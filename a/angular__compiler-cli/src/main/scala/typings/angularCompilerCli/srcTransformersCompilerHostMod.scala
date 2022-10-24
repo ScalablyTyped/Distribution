@@ -12,7 +12,7 @@ object srcTransformersCompilerHostMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createCompilerHost(hasOptionsTsHost: Options): CompilerHost = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerHost")(hasOptionsTsHost.asInstanceOf[js.Any]).asInstanceOf[CompilerHost]
+  inline def createCompilerHost(param0: Options): CompilerHost = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerHost")(param0.asInstanceOf[js.Any]).asInstanceOf[CompilerHost]
   
   inline def setWrapHostForTest(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWrapHostForTest")().asInstanceOf[Unit]
   inline def setWrapHostForTest(

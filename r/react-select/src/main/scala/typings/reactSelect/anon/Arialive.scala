@@ -72,7 +72,7 @@ trait Arialive extends StObject {
   
   var placeholder: String
   
-  def screenReaderStatus(hasCount: Count): String
+  def screenReaderStatus(param0: Count): String
   
   var tabIndex: Double
   

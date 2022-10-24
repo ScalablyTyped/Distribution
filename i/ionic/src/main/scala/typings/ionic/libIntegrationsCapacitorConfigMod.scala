@@ -17,7 +17,7 @@ object libIntegrationsCapacitorConfigMod {
   @js.native
   open class CapacitorConfig protected () extends BaseConfig[CapacitorConfigFile] {
     def this(p: String) = this()
-    def this(p: String, hasSpacesPathPrefix: BaseConfigOptions) = this()
+    def this(p: String, param1: BaseConfigOptions) = this()
     
     def resetServerUrl(): Unit = js.native
     

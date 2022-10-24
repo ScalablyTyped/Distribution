@@ -41,6 +41,23 @@ object Stats {
     __obj.asInstanceOf[Stats]
   }
   
+  extension [Self <: Stats](x: Self) {
+    
+    inline def setAddPanel(value: Panel => Panel): Self = StObject.set(x, "addPanel", js.Any.fromFunction1(value))
+    
+    inline def setBegin(value: () => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction0(value))
+    
+    inline def setDom(value: HTMLDivElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+    
+    inline def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    
+    inline def setREVISION(value: Double): Self = StObject.set(x, "REVISION", value.asInstanceOf[js.Any])
+    
+    inline def setShowPanel(value: Double => Unit): Self = StObject.set(x, "showPanel", js.Any.fromFunction1(value))
+    
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+  }
+  
   trait Panel extends StObject {
     
     var dom: HTMLCanvasElement
@@ -60,22 +77,5 @@ object Stats {
       
       inline def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }
-  }
-  
-  extension [Self <: Stats](x: Self) {
-    
-    inline def setAddPanel(value: Panel => Panel): Self = StObject.set(x, "addPanel", js.Any.fromFunction1(value))
-    
-    inline def setBegin(value: () => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction0(value))
-    
-    inline def setDom(value: HTMLDivElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
-    
-    inline def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
-    
-    inline def setREVISION(value: Double): Self = StObject.set(x, "REVISION", value.asInstanceOf[js.Any])
-    
-    inline def setShowPanel(value: Double => Unit): Self = StObject.set(x, "showPanel", js.Any.fromFunction1(value))
-    
-    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

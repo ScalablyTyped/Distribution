@@ -24,13 +24,13 @@ trait AnchorEl[T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: 
   
   def getListboxProps(): js.Object
   
-  def getOptionProps(hasOptionIndex: Option[T]): js.Object
+  def getOptionProps(param0: Option[T]): js.Object
   
   def getPopupIndicatorProps(): js.Object
   
   def getRootProps(): js.Object
   
-  def getTagProps(hasIndex: Index): js.Object
+  def getTagProps(param0: Index): js.Object
   
   var groupedOptions: js.Array[T]
   

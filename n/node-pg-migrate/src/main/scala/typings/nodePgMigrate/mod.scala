@@ -28,18 +28,18 @@ object mod {
   @js.native
   open class Migration protected ()
     extends typings.nodePgMigrate.distMigrationMod.Migration {
-    def this(db: DBConnection, migrationPath: String, hasUpDown: MigrationBuilderActions, options: RunnerOption) = this()
+    def this(db: DBConnection, migrationPath: String, param2: MigrationBuilderActions, options: RunnerOption) = this()
     def this(
       db: DBConnection,
       migrationPath: String,
-      hasUpDown: MigrationBuilderActions,
+      param2: MigrationBuilderActions,
       options: RunnerOption,
       typeShorthands: ColumnDefinitions
     ) = this()
     def this(
       db: DBConnection,
       migrationPath: String,
-      hasUpDown: MigrationBuilderActions,
+      param2: MigrationBuilderActions,
       options: RunnerOption,
       typeShorthands: Unit,
       logger: Logger
@@ -47,7 +47,7 @@ object mod {
     def this(
       db: DBConnection,
       migrationPath: String,
-      hasUpDown: MigrationBuilderActions,
+      param2: MigrationBuilderActions,
       options: RunnerOption,
       typeShorthands: ColumnDefinitions,
       logger: Logger

@@ -18,7 +18,7 @@ object mod {
   
   inline def buildDevStandalone(options: CLIOptions & LoadOptions & BuilderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildDevStandalone")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def buildStatic(hasPackageJsonLoadOptions: LoadOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStatic")(hasPackageJsonLoadOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def buildStatic(param0: LoadOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStatic")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def buildStaticStandalone(options: CLIOptions & LoadOptions & BuilderOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStaticStandalone")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   

@@ -12,7 +12,7 @@ object cjsCanShowCreateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(allowCreate: AllowCreate, hasSearchTermDataDataItemsAccessors: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(allowCreate.asInstanceOf[js.Any], hasSearchTermDataDataItemsAccessors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(allowCreate: AllowCreate, param1: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(allowCreate.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait Options extends StObject {
     

@@ -51,7 +51,7 @@ object foundationMod {
     /**
       * Handles data table row click event.
       */
-    def handleRowClick(hasRowIdRow: RowClickEventData): Unit = js.native
+    def handleRowClick(param0: RowClickEventData): Unit = js.native
     
     /**
       * Handles sort action on sortable header cell.

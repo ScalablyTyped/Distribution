@@ -30,5 +30,5 @@ object mod {
   @js.native
   val UnstyledButton: ForwardRefExoticComponent[UnstyledButtonProps & RefAttributes[HTMLButtonElement]] = js.native
   
-  inline def buttonThemeClassNames(hasPropThemeThemeTypeButtonTypePropDisabledClassName: ButtonThemeProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonThemeClassNames")(hasPropThemeThemeTypeButtonTypePropDisabledClassName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buttonThemeClassNames(param0: ButtonThemeProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonThemeClassNames")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

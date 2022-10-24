@@ -50,7 +50,7 @@ object mod {
   @js.native
   val FadeIn: FC[FadeKeyframesMotionProps] = js.native
   
-  inline def ResizingHeight(hasChildrenProps: ResizingHeightOptschildre): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizingHeight")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def ResizingHeight(param0: ResizingHeightOptschildre): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizingHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
   
   /**
     * __ShrinkOut__
@@ -144,7 +144,7 @@ object mod {
   inline def useIsReducedMotion(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsReducedMotion")().asInstanceOf[Boolean]
   
   inline def useResizingHeight(): RefCallbackRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizingHeight")().asInstanceOf[RefCallbackRef]
-  inline def useResizingHeight(hasCalcDurationCalcTimingFunction: ResizingHeightOpts): RefCallbackRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizingHeight")(hasCalcDurationCalcTimingFunction.asInstanceOf[js.Any]).asInstanceOf[RefCallbackRef]
+  inline def useResizingHeight(param0: ResizingHeightOpts): RefCallbackRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizingHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[RefCallbackRef]
   
   inline def zoomInAnimation(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomInAnimation")().asInstanceOf[Any]
 }

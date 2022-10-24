@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "doge-seed"
-version := "1.0-dt-20211202Z-1a7e9c"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-860d8c"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

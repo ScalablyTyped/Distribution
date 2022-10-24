@@ -11,5 +11,5 @@ object distTypesEventSelectionModifySelectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def modifySelection(hasFocusNodeFocusOffset: FocusNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modifySelection")(hasFocusNodeFocusOffset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def modifySelection(param0: FocusNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modifySelection")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

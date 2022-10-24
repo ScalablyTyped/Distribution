@@ -13,5 +13,5 @@ object typesUseCSSTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useCSSTransition[E /* <: HTMLElement */](hasClassNameClassNamesAppearEnterExitTimeoutOptions: CSSTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCSSTransition")(hasClassNameClassNamesAppearEnterExitTimeoutOptions.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
+  inline def useCSSTransition[E /* <: HTMLElement */](param0: CSSTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCSSTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
 }

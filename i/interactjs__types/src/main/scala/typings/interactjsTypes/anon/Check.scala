@@ -29,10 +29,10 @@ trait Check extends StObject {
   
   def now(): Double = js.native
   
-  def onInteractionMove(hasInteractionPointer: InteractionInteraction): Unit = js.native
-  def onInteractionMove(hasInteractionPointer: InteractionInteractionPointerPointerType): Unit = js.native
-  def onInteractionMove(hasInteractionPointer: InteractionPointer): Unit = js.native
-  def onInteractionMove(hasInteractionPointer: PointerPointerType): Unit = js.native
+  def onInteractionMove(param0: InteractionInteraction): Unit = js.native
+  def onInteractionMove(param0: InteractionInteractionPointerPointerType): Unit = js.native
+  def onInteractionMove(param0: InteractionPointer): Unit = js.native
+  def onInteractionMove(param0: PointerPointerType): Unit = js.native
   
   var prevTime: Double = js.native
   

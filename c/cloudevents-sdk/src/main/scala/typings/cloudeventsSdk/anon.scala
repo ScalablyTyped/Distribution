@@ -61,7 +61,7 @@ object anon {
   @js.native
   trait TypeofHTTPEmitter
     extends StObject
-       with Instantiable1[/* hasUrlVersion */ Url, HTTPEmitter] {
+       with Instantiable1[/* param0 */ Url, HTTPEmitter] {
     
     var headers: js.Function = js.native
   }

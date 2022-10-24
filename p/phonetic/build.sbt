@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "phonetic"
-version := "0.1-dt-20220624Z-01f7fb"
-scalaVersion := "3.1.2"
+version := "0.1-dt-20220624Z-85fd3f"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

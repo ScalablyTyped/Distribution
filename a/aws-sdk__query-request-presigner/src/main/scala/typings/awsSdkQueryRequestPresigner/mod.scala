@@ -13,10 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def presignRequestQuery(
-    request: HttpRequest,
-    hasCredentialsSha256SigningNameSigningRegionEndpointExpireTime: PresignOption
-  ): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("presignRequestQuery")(request.asInstanceOf[js.Any], hasCredentialsSha256SigningNameSigningRegionEndpointExpireTime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
+  inline def presignRequestQuery(request: HttpRequest, param1: PresignOption): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("presignRequestQuery")(request.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
   trait PresignOption extends StObject {
     

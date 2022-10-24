@@ -74,13 +74,6 @@ object libTokensMod {
       var standby: Boolean = js.native
     }
     
-    extension [Self <: IInspector](x: Self) {
-      
-      inline def setSource(value: IInspectable): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-      
-      inline def setSourceNull: Self = StObject.set(x, "source", null)
-    }
-    
     /**
       * An update value for code inspectors.
       */
@@ -104,6 +97,13 @@ object libTokensMod {
         
         inline def setContentNull: Self = StObject.set(x, "content", null)
       }
+    }
+    
+    extension [Self <: IInspector](x: Self) {
+      
+      inline def setSource(value: IInspectable): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSourceNull: Self = StObject.set(x, "source", null)
     }
     
     type _To = Token[IInspector]

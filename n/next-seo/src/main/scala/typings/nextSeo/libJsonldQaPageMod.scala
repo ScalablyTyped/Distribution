@@ -12,7 +12,7 @@ object libJsonldQaPageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideMainEntityRest: QAPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideMainEntityRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: QAPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait QAPageJsonLdProps
     extends StObject

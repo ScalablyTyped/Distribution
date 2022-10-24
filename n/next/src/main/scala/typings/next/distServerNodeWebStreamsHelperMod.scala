@@ -17,10 +17,7 @@ object distServerNodeWebStreamsHelperMod {
   
   inline def chainStreams[T](streams: js.Array[ReadableStream[T]]): ReadableStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainStreams")(streams.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[T]]
   
-  inline def continueFromInitialStream(
-    renderStream: ReactReadableStream,
-    hasSuffixDataStreamGenerateStaticHTMLFlushEffectHandlerFlushEffectsToHead: DataStream
-  ): js.Promise[ReadableStream[js.typedarray.Uint8Array]] = (^.asInstanceOf[js.Dynamic].applyDynamic("continueFromInitialStream")(renderStream.asInstanceOf[js.Any], hasSuffixDataStreamGenerateStaticHTMLFlushEffectHandlerFlushEffectsToHead.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream[js.typedarray.Uint8Array]]]
+  inline def continueFromInitialStream(renderStream: ReactReadableStream, param1: DataStream): js.Promise[ReadableStream[js.typedarray.Uint8Array]] = (^.asInstanceOf[js.Dynamic].applyDynamic("continueFromInitialStream")(renderStream.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream[js.typedarray.Uint8Array]]]
   
   inline def createBufferedTransformStream(): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBufferedTransformStream")().asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
   inline def createBufferedTransformStream(transform: js.Function1[/* v */ String, String | js.Promise[String]]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBufferedTransformStream")(transform.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
@@ -44,7 +41,7 @@ object distServerNodeWebStreamsHelperMod {
   
   inline def readableStreamTee[T](readable: ReadableStream[T]): js.Tuple2[ReadableStream[T], ReadableStream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readableStreamTee")(readable.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[ReadableStream[T], ReadableStream[T]]]
   
-  inline def renderToInitialStream(hasReactDOMServerElementStreamOptions: Element): js.Promise[ReactReadableStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToInitialStream")(hasReactDOMServerElementStreamOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReactReadableStream]]
+  inline def renderToInitialStream(param0: Element): js.Promise[ReactReadableStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToInitialStream")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReactReadableStream]]
   
   inline def streamFromArray(strings: js.Array[String]): ReadableStream[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("streamFromArray")(strings.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[js.typedarray.Uint8Array]]
   

@@ -14,7 +14,7 @@ object distUiComponentsQueueActionsQueueActionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def QueueActions(hasStatusActionsQueue: QueueActionProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("QueueActions")(hasStatusActionsQueue.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def QueueActions(param0: QueueActionProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("QueueActions")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait QueueActionProps extends StObject {
     

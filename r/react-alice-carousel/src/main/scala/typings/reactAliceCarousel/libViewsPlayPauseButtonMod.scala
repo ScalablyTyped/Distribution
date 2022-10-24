@@ -12,7 +12,7 @@ object libViewsPlayPauseButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def PlayPauseButton(hasIsPlayingOnClickRenderPlayPauseButton: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PlayPauseButton")(hasIsPlayingOnClickRenderPlayPauseButton.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PlayPauseButton(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PlayPauseButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -20,7 +20,7 @@ object libViewsPlayPauseButtonMod {
     
     def onClick(e: Any): Unit
     
-    var renderPlayPauseButton: js.UndefOr[js.Function1[/* hasIsPlaying */ IsPlaying, Any]] = js.undefined
+    var renderPlayPauseButton: js.UndefOr[js.Function1[/* param0 */ IsPlaying, Any]] = js.undefined
   }
   object Props {
     
@@ -35,7 +35,7 @@ object libViewsPlayPauseButtonMod {
       
       inline def setOnClick(value: Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      inline def setRenderPlayPauseButton(value: /* hasIsPlaying */ IsPlaying => Any): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
+      inline def setRenderPlayPauseButton(value: /* param0 */ IsPlaying => Any): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
       
       inline def setRenderPlayPauseButtonUndefined: Self = StObject.set(x, "renderPlayPauseButton", js.undefined)
     }

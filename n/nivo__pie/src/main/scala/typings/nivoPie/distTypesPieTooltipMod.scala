@@ -12,7 +12,7 @@ object distTypesPieTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RawDatum](hasDatum: Datum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDatum.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[RawDatum](param0: Datum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def PieTooltip[RawDatum](hasDatum: Datum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PieTooltip")(hasDatum.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PieTooltip[RawDatum](param0: Datum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PieTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

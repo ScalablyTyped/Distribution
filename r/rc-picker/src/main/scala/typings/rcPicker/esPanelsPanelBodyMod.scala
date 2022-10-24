@@ -15,9 +15,7 @@ object esPanelsPanelBodyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[DateType](
-    hasPrefixClsDisabledDateOnSelectPickerRowNumColNumPrefixColumnRowClassNameBaseDateGetCellClassNameGetCellTextGetCellNodeGetCellDateGenerateConfigTitleCellHeaderCells: PanelBodyProps[DateType]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsDisabledDateOnSelectPickerRowNumColNumPrefixColumnRowClassNameBaseDateGetCellClassNameGetCellTextGetCellNodeGetCellDateGenerateConfigTitleCellHeaderCells.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[DateType](param0: PanelBodyProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PanelBodyProps[DateType] extends StObject {
     

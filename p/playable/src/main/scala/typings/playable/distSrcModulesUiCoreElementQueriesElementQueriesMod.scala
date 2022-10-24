@@ -14,7 +14,7 @@ object distSrcModulesUiCoreElementQueriesElementQueriesMod {
     extends StObject
        with ElementQueries {
     def this(element: HTMLElement) = this()
-    def this(element: HTMLElement, hasPrefix: Prefix) = this()
+    def this(element: HTMLElement, param1: Prefix) = this()
     
     /* private */ /* CompleteClass */
     var _element: Any = js.native

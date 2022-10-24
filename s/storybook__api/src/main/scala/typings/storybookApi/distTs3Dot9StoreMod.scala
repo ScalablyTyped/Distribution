@@ -28,7 +28,7 @@ object distTs3Dot9StoreMod {
   open class default protected ()
     extends StObject
        with Store {
-    def this(hasSetStateGetState: Upstream) = this()
+    def this(param0: Upstream) = this()
   }
   
   @JSImport("@storybook/api/dist/ts3.9/store", "STORAGE_KEY")
@@ -83,9 +83,7 @@ object distTs3Dot9StoreMod {
     
     var navigate: js.UndefOr[
         ReturnType[
-          js.Function0[
-            js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-          ]
+          js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
         ]
       ] = js.undefined
     
@@ -168,9 +166,7 @@ object distTs3Dot9StoreMod {
       
       inline def setNavigate(
         value: ReturnType[
-              js.Function0[
-                js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-              ]
+              js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
             ]
       ): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,7 @@ object libEsmComponentsHotkeysHotkeysTarget2Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HotkeysTarget2(hasChildrenHotkeysOptions: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(hasChildrenHotkeysOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HotkeysTarget2(param0: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait HotkeysTarget2Props extends StObject {
     

@@ -11,5 +11,5 @@ object distMatlabTransposeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def transpose(hasRefWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(hasRefWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def transpose(param0: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(param0.asInstanceOf[js.Any]).asInstanceOf[Matrix]
 }

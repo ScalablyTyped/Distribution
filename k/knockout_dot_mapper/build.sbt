@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_mapper"
-version := "0.0-unknown-dt-20220818Z-cd69da"
-scalaVersion := "3.1.2"
+version := "0.0-unknown-dt-20220818Z-a2ae9a"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

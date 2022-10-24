@@ -1,7 +1,7 @@
 
 # Scala.js typings for nrwl__tao
 
-Typings are for version 14.7.8
+Typings are for version 15.0.1
 
 ## Library description:
 CLI for generating code and running commands

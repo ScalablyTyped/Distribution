@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__nbformat
 
-Typings are for version 3.4.8
+Typings are for version 3.5.0
 
 ## Library description:
 Notebook format interfaces

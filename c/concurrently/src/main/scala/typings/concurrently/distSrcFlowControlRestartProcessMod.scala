@@ -15,7 +15,7 @@ object distSrcFlowControlRestartProcessMod {
   open class RestartProcess protected ()
     extends StObject
        with FlowController {
-    def this(hasDelayTriesLoggerScheduler: Delay) = this()
+    def this(param0: Delay) = this()
     
     val delay: Double = js.native
     

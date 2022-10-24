@@ -82,7 +82,7 @@ trait BufferController
   
   /* protected */ def onFragParsed(event: FRAG_PARSED, data: FragParsedData): Unit
   
-  /* protected */ def onLevelUpdated(event: LEVEL_UPDATED, hasDetails: LevelUpdatedData): Unit
+  /* protected */ def onLevelUpdated(event: LEVEL_UPDATED, param1: LevelUpdatedData): Unit
   
   /* protected */ def onManifestParsed(event: MANIFEST_PARSED, data: ManifestParsedData): Unit
   

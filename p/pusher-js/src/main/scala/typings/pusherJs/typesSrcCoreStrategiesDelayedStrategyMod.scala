@@ -15,7 +15,7 @@ object typesSrcCoreStrategiesDelayedStrategyMod {
   open class default protected ()
     extends StObject
        with DelayedStrategy {
-    def this(strategy: Strategy, hasNumber: Delay) = this()
+    def this(strategy: Strategy, param1: Delay) = this()
     
     /* CompleteClass */
     override def connect(minPriority: Double, callback: js.Function): StrategyRunner = js.native

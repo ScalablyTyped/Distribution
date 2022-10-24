@@ -28,6 +28,6 @@ object distTs3Dot9DecoratorsMod {
   
   inline def sanitizeStoryContextUpdate(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeStoryContextUpdate")().asInstanceOf[Any]
   inline def sanitizeStoryContextUpdate(
-    hasComponentIdTitleKindIdNameStoryParametersInitialArgsArgTypesUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContextUpdate */ Any
-  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeStoryContextUpdate")(hasComponentIdTitleKindIdNameStoryParametersInitialArgsArgTypesUpdate.asInstanceOf[js.Any]).asInstanceOf[Any]
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContextUpdate */ Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeStoryContextUpdate")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

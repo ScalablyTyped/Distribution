@@ -82,8 +82,8 @@ object buildIosTargetMod {
   ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getXCBuildConfigurationFromPbxproj")(project.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null]
   inline def getXCBuildConfigurationFromPbxproj(
     project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
-    hasTargetNameBuildConfiguration: BuildConfiguration
-  ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getXCBuildConfigurationFromPbxproj")(project.asInstanceOf[js.Any], hasTargetNameBuildConfiguration.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null]
+    param1: BuildConfiguration
+  ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getXCBuildConfigurationFromPbxproj")(project.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null]
   
   inline def isTargetOfType(
     target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXNativeTarget */ Any,

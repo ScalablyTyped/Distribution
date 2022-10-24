@@ -429,8 +429,8 @@ object mod {
   inline def createDOMCompilerError(code: DOMErrorCodes): DOMCompilerError = ^.asInstanceOf[js.Dynamic].applyDynamic("createDOMCompilerError")(code.asInstanceOf[js.Any]).asInstanceOf[DOMCompilerError]
   inline def createDOMCompilerError(code: DOMErrorCodes, loc: SourceLocation): DOMCompilerError = (^.asInstanceOf[js.Dynamic].applyDynamic("createDOMCompilerError")(code.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[DOMCompilerError]
   
-  inline def createForLoopParams(hasValueKeyIndex: ForParseResult): js.Array[ExpressionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForLoopParams")(hasValueKeyIndex.asInstanceOf[js.Any]).asInstanceOf[js.Array[ExpressionNode]]
-  inline def createForLoopParams(hasValueKeyIndex: ForParseResult, memoArgs: js.Array[ExpressionNode]): js.Array[ExpressionNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("createForLoopParams")(hasValueKeyIndex.asInstanceOf[js.Any], memoArgs.asInstanceOf[js.Any])).asInstanceOf[js.Array[ExpressionNode]]
+  inline def createForLoopParams(param0: ForParseResult): js.Array[ExpressionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForLoopParams")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[ExpressionNode]]
+  inline def createForLoopParams(param0: ForParseResult, memoArgs: js.Array[ExpressionNode]): js.Array[ExpressionNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("createForLoopParams")(param0.asInstanceOf[js.Any], memoArgs.asInstanceOf[js.Any])).asInstanceOf[js.Array[ExpressionNode]]
   
   inline def createFunctionExpression(
     params: js.UndefOr[ExpressionNode | String | (js.Array[ExpressionNode | String])],
@@ -477,10 +477,7 @@ object mod {
   
   inline def createTemplateLiteral(elements: js.Array[String | JSChildNode]): TemplateLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateLiteral")(elements.asInstanceOf[js.Any]).asInstanceOf[TemplateLiteral]
   
-  inline def createTransformContext(
-    root: RootNode,
-    hasFilenamePrefixIdentifiersHoistStaticCacheHandlersNodeTransformsDirectiveTransformsTransformHoistIsBuiltInComponentIsCustomElementExpressionPluginsScopeIdSlottedSsrInSSRSsrCssVarsBindingMetadataInlineIsTSOnErrorOnWarnCompatConfig: TransformOptions
-  ): TransformContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransformContext")(root.asInstanceOf[js.Any], hasFilenamePrefixIdentifiersHoistStaticCacheHandlersNodeTransformsDirectiveTransformsTransformHoistIsBuiltInComponentIsCustomElementExpressionPluginsScopeIdSlottedSsrInSSRSsrCssVarsBindingMetadataInlineIsTSOnErrorOnWarnCompatConfig.asInstanceOf[js.Any])).asInstanceOf[TransformContext]
+  inline def createTransformContext(root: RootNode, param1: TransformOptions): TransformContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransformContext")(root.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TransformContext]
   
   inline def createVNodeCall(
     context: TransformContext | Null,
@@ -608,7 +605,7 @@ object mod {
   @js.native
   val locStub: SourceLocation = js.native
   
-  inline def makeBlock(node: VNodeCall, hasHelperRemoveHelperInSSR: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeBlock")(node.asInstanceOf[js.Any], hasHelperRemoveHelperInSSR.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def makeBlock(node: VNodeCall, param1: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeBlock")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@vue/compiler-dom", "noopDirectiveTransform")
   @js.native

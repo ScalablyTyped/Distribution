@@ -30,7 +30,7 @@ object distPreviewComponentsOnDeviceUIMod {
     
     def handleToggleTab(newTabOpen: Double): Unit = js.native
     
-    def onLayout(hasPreviewWidthPreviewHeight: PreviewDimens): Unit = js.native
+    def onLayout(param0: PreviewDimens): Unit = js.native
   }
   
   trait OnDeviceUIProps extends StObject {

@@ -20,15 +20,6 @@ object AttributeFilterOperator {
     __obj.asInstanceOf[AttributeFilterOperator[D]]
   }
   
-  extension [Self <: AttributeFilterOperator[?], D](x: Self & AttributeFilterOperator[D]) {
-    
-    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
-    
-    inline def setOp(value: AttributeOperator): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
-    
-    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-  }
-  
   /* Rewritten from type alias, can be one of: 
     - typings.oracleOraclejet.oracleOraclejetStrings.$co
     - typings.oracleOraclejet.oracleOraclejetStrings.$eq
@@ -66,5 +57,14 @@ object AttributeFilterOperator {
     inline def $regex: typings.oracleOraclejet.oracleOraclejetStrings.$regex = "$regex".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$regex]
     
     inline def $sw: typings.oracleOraclejet.oracleOraclejetStrings.$sw = "$sw".asInstanceOf[typings.oracleOraclejet.oracleOraclejetStrings.$sw]
+  }
+  
+  extension [Self <: AttributeFilterOperator[?], D](x: Self & AttributeFilterOperator[D]) {
+    
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    
+    inline def setOp(value: AttributeOperator): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

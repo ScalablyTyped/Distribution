@@ -12,9 +12,7 @@ object esPanelsHeaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasPrefixClsPrevIconNextIconSuperPrevIconSuperNextIconOnSuperPrevOnSuperNextOnPrevOnNextChildren: HeaderProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsPrevIconNextIconSuperPrevIconSuperNextIconOnSuperPrevOnSuperNextOnPrevOnNextChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: HeaderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait HeaderProps extends StObject {
     

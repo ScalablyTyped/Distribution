@@ -12,5 +12,5 @@ object distTs3Dot9ArgTypesDocgenTypeScriptCreateTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createType(hasTsTypeRequired: DocgenInfo): PropType = ^.asInstanceOf[js.Dynamic].applyDynamic("createType")(hasTsTypeRequired.asInstanceOf[js.Any]).asInstanceOf[PropType]
+  inline def createType(param0: DocgenInfo): PropType = ^.asInstanceOf[js.Dynamic].applyDynamic("createType")(param0.asInstanceOf[js.Any]).asInstanceOf[PropType]
 }

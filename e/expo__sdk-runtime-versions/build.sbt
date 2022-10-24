@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "expo__sdk-runtime-versions"
-version := "1.0.0-3f72dc"
-scalaVersion := "3.1.2"
+version := "1.0.0-2ba479"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

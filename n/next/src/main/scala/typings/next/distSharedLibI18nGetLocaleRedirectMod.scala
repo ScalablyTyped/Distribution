@@ -14,7 +14,7 @@ object distSharedLibI18nGetLocaleRedirectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getLocaleRedirect(hasDefaultLocaleDomainLocalePathLocaleHeadersNextConfigUrlParsed: Options): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleRedirect")(hasDefaultLocaleDomainLocalePathLocaleHeadersNextConfigUrlParsed.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def getLocaleRedirect(param0: Options): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleRedirect")(param0.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   trait Options extends StObject {
     

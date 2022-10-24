@@ -59,7 +59,7 @@ inline def A: StyledComponent[AnchorHTMLAttributesHTMLA, Theme, typings.storyboo
 
 inline def ActionBar: FunctionComponent[ActionBarProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ActionBar").asInstanceOf[FunctionComponent[ActionBarProps]]
 
-inline def AddonPanel(hasActiveChildren: AddonPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AddonPanel")(hasActiveChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def AddonPanel(param0: AddonPanelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AddonPanel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 inline def ArgsTable: FC[ArgsTableProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ArgsTable").asInstanceOf[FC[ArgsTableProps]]
 
@@ -94,14 +94,14 @@ ComponentProps[
 ]]]
 
 inline def Code(
-  hasClassNameChildrenProps: ComponentProps[
+  param0: ComponentProps[
   StyledComponent[
     DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
     Theme, 
     typings.storybookTheming.mod.Theme
   ]
 ]
-): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Code")(hasClassNameChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Code")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 inline def ColorControl(props: ComponentProps[LazyExoticComponent[FC[ColorControlProps]]]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ColorControl")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
@@ -436,7 +436,7 @@ inline def getStoryHref(baseUrl: String, storyId: String, additionalParams: Reco
 
 inline def interleaveSeparators(list: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interleaveSeparators")(list.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def nameSpaceClassNames(hasProps: StringDictionary[Any], key: String): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("nameSpaceClassNames")(hasProps.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+inline def nameSpaceClassNames(param0: StringDictionary[Any], key: String): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("nameSpaceClassNames")(param0.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
 
 inline def parse(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 

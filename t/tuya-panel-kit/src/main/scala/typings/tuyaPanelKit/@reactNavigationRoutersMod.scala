@@ -89,7 +89,7 @@ object `@reactNavigationRoutersMod` {
     inline def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
   }
   
-  inline def DrawerRouter(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(hasOpenByDefaultRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
+  inline def DrawerRouter(param0: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
   object StackActions {
     
@@ -130,10 +130,10 @@ object `@reactNavigationRoutersMod` {
     inline def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
   }
   
-  inline def TabRouter(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[
+  inline def TabRouter(param0: TabRouterOptions): Router[
     TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | TabActionType
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Router[
     TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | TabActionType
   ]]

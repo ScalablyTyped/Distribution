@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Supported extends StObject {
   
-  def apply(hasStyleBackgroundBorderlessDisabledPropRippleColorUnderlayColorChildrenThemeRest: Props): Element = js.native
+  def apply(param0: Props): Element = js.native
   
   var supported: Boolean = js.native
 }

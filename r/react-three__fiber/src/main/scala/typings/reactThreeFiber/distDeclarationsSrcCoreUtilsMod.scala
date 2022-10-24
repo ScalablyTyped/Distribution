@@ -39,7 +39,7 @@ object distDeclarationsSrcCoreUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Block(hasSet: OmitUnblockPropschildren): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Block")(hasSet.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def Block(param0: OmitUnblockPropschildren): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Block")(param0.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   @JSImport("@react-three/fiber/dist/declarations/src/core/utils", "DEFAULT")
   @js.native
@@ -79,15 +79,10 @@ object distDeclarationsSrcCoreUtilsMod {
   
   inline def detach(parent: Instance, child: Instance, `type`: AttachType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def diffProps(instance: Instance, hasCNKNRNProps: InstanceProps): DiffSet = (^.asInstanceOf[js.Dynamic].applyDynamic("diffProps")(instance.asInstanceOf[js.Any], hasCNKNRNProps.asInstanceOf[js.Any])).asInstanceOf[DiffSet]
-  inline def diffProps(instance: Instance, hasCNKNRNProps: InstanceProps, hasCPKPRPPrevious: Unit, remove: Boolean): DiffSet = (^.asInstanceOf[js.Dynamic].applyDynamic("diffProps")(instance.asInstanceOf[js.Any], hasCNKNRNProps.asInstanceOf[js.Any], hasCPKPRPPrevious.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[DiffSet]
-  inline def diffProps(instance: Instance, hasCNKNRNProps: InstanceProps, hasCPKPRPPrevious: InstanceProps): DiffSet = (^.asInstanceOf[js.Dynamic].applyDynamic("diffProps")(instance.asInstanceOf[js.Any], hasCNKNRNProps.asInstanceOf[js.Any], hasCPKPRPPrevious.asInstanceOf[js.Any])).asInstanceOf[DiffSet]
-  inline def diffProps(
-    instance: Instance,
-    hasCNKNRNProps: InstanceProps,
-    hasCPKPRPPrevious: InstanceProps,
-    remove: Boolean
-  ): DiffSet = (^.asInstanceOf[js.Dynamic].applyDynamic("diffProps")(instance.asInstanceOf[js.Any], hasCNKNRNProps.asInstanceOf[js.Any], hasCPKPRPPrevious.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[DiffSet]
+  inline def diffProps(instance: Instance, param1: InstanceProps): DiffSet = (^.asInstanceOf[js.Dynamic].applyDynamic("diffProps")(instance.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[DiffSet]
+  inline def diffProps(instance: Instance, param1: InstanceProps, param2: Unit, remove: Boolean): DiffSet = (^.asInstanceOf[js.Dynamic].applyDynamic("diffProps")(instance.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[DiffSet]
+  inline def diffProps(instance: Instance, param1: InstanceProps, param2: InstanceProps): DiffSet = (^.asInstanceOf[js.Dynamic].applyDynamic("diffProps")(instance.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[DiffSet]
+  inline def diffProps(instance: Instance, param1: InstanceProps, param2: InstanceProps, remove: Boolean): DiffSet = (^.asInstanceOf[js.Dynamic].applyDynamic("diffProps")(instance.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[DiffSet]
   
   inline def dispose[TObj /* <: Dictkey */](obj: TObj): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -106,7 +101,7 @@ object distDeclarationsSrcCoreUtilsMod {
     inline def boo(a: Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boo")(a.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
     
     inline def equ(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equ")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def equ(a: Any, b: Any, hasArraysObjectsStrict: EquConfig): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equ")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], hasArraysObjectsStrict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equ(a: Any, b: Any, param2: EquConfig): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equ")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def fun(a: Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fun")(a.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
     

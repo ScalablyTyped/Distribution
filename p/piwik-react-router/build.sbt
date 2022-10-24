@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "piwik-react-router"
-version := "0.12-dt-20211214Z-d0e791"
-scalaVersion := "3.1.2"
+version := "0.12-dt-20211214Z-11f09c"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

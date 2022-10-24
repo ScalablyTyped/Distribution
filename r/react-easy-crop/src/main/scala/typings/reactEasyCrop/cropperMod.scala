@@ -178,9 +178,9 @@ object cropperMod {
     
     def getCropData(): CroppedAreaPercentages | Null = js.native
     
-    def getPointOnContainer(hasXY: Point): X = js.native
+    def getPointOnContainer(param0: Point): X = js.native
     
-    def getPointOnMedia(hasXY: Point): X = js.native
+    def getPointOnMedia(param0: Point): X = js.native
     
     var imageRef: RefObject[HTMLImageElement] = js.native
     
@@ -192,9 +192,9 @@ object cropperMod {
     
     var mediaSize: MediaSize = js.native
     
-    def onDrag(hasXY: Point): Unit = js.native
+    def onDrag(param0: Point): Unit = js.native
     
-    def onDragStart(hasXY: Point): Unit = js.native
+    def onDragStart(param0: Point): Unit = js.native
     
     def onDragStopped(): Unit = js.native
     
@@ -231,7 +231,7 @@ object cropperMod {
     def setInitialCrop(cropSize: Size): Unit = js.native
     
     def setNewZoom(zoom: Double, point: Point): Unit = js.native
-    def setNewZoom(zoom: Double, point: Point, hasShouldUpdatePosition: ShouldUpdatePosition): Unit = js.native
+    def setNewZoom(zoom: Double, point: Point, param2: ShouldUpdatePosition): Unit = js.native
     
     var styleRef: HTMLStyleElement | Null = js.native
     

@@ -15,5 +15,5 @@ object libTypescriptSrcUseDocumentTitleMod {
   val ^ : js.Any = js.native
   
   inline def default(ref: RefObject[NavigationContainerRef[ParamListBase]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def default(ref: RefObject[NavigationContainerRef[ParamListBase]], hasEnabledFormatter: DocumentTitleOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], hasEnabledFormatter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(ref: RefObject[NavigationContainerRef[ParamListBase]], param1: DocumentTitleOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

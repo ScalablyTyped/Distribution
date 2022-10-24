@@ -16,9 +16,7 @@ object typesSizingUseAppSizeMediaMod {
   val DEFAULT_APP_SIZE: AppSize = js.native
   
   inline def useAppSizeMedia(): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")().asInstanceOf[AppSize]
-  inline def useAppSizeMedia(
-    hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize: AppSizeOptions
-  ): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")(hasPhoneMaxWidthTabletMinWidthTabletMaxWidthDesktopMinWidthDesktopLargeMinWidthDefaultSize.asInstanceOf[js.Any]).asInstanceOf[AppSize]
+  inline def useAppSizeMedia(param0: AppSizeOptions): AppSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useAppSizeMedia")(param0.asInstanceOf[js.Any]).asInstanceOf[AppSize]
   
   trait AppSize extends StObject {
     

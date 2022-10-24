@@ -14,7 +14,7 @@ object distComponentsFilePreviewerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FilePreviewer(hasFileIconPropsUploadsHandleRemoveHandleRetry: FilePreviewerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePreviewer")(hasFileIconPropsUploadsHandleRemoveHandleRetry.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FilePreviewer(param0: FilePreviewerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePreviewer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait FilePreviewerProps extends StObject {
     

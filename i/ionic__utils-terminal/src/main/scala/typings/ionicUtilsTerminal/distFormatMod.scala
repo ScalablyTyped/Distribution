@@ -15,7 +15,7 @@ object distFormatMod {
   @js.native
   val TTY_WIDTH: Double = js.native
   
-  inline def columnar(rows: js.Array[js.Array[String]], hasHsepVsepHeaders: ColumnarOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("columnar")(rows.asInstanceOf[js.Any], hasHsepVsepHeaders.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def columnar(rows: js.Array[js.Array[String]], param1: ColumnarOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("columnar")(rows.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def expandPath(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("expandPath")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -58,7 +58,7 @@ object distFormatMod {
     inline def default(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  inline def wordWrap(msg: String, hasWidthIndentationAppend: WordWrapOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(msg.asInstanceOf[js.Any], hasWidthIndentationAppend.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def wordWrap(msg: String, param1: WordWrapOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(msg.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ColumnarOptions extends StObject {
     

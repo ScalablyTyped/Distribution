@@ -12,5 +12,5 @@ object srcTransformersProgramMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createProgram(hasRootNamesOptionsHostOldProgram: Host): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(hasRootNamesOptionsHostOldProgram.asInstanceOf[js.Any]).asInstanceOf[Program]
+  inline def createProgram(param0: Host): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(param0.asInstanceOf[js.Any]).asInstanceOf[Program]
 }

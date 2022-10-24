@@ -14,7 +14,7 @@ object distUiComponentsJobCardDetailsDetailsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Details(hasStatusJobActions: DetailsProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Details")(hasStatusJobActions.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def Details(param0: DetailsProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Details")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait DetailsProps extends StObject {
     

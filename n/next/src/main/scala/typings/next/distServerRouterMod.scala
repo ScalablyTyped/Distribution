@@ -20,7 +20,7 @@ object distServerRouterMod {
   open class default protected ()
     extends StObject
        with Router {
-    def this(hasHeadersFsRoutesRewritesRedirectsCatchAllRouteCatchAllMiddlewareDynamicRoutesPageCheckerUseFileSystemPublicRoutesNextConfig: typings.next.anon.DynamicRoutes) = this()
+    def this(param0: typings.next.anon.DynamicRoutes) = this()
   }
   
   type DynamicRoutes = js.Array[Match]

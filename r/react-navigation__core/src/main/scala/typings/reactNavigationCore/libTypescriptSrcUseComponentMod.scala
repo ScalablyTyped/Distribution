@@ -13,7 +13,7 @@ object libTypescriptSrcUseComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(render: Render): js.Function1[/* hasChildren */ Children, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(render.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasChildren */ Children, Element]]
+  inline def default(render: Render): js.Function1[/* param0 */ Children, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(render.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param0 */ Children, Element]]
   
   type Render = js.Function1[/* children */ ReactNode, Element]
 }

@@ -13,7 +13,7 @@ object typesModeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def UserInteractionModeListener(hasChildren: UserInteractionModeListenerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("UserInteractionModeListener")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def UserInteractionModeListener(param0: UserInteractionModeListenerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("UserInteractionModeListener")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useIsUserInteractionMode(mode: UserInteractionMode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsUserInteractionMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

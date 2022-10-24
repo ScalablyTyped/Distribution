@@ -53,7 +53,7 @@ object distSrcModelsPortModelMod {
     
     def setMaximumLinks(maximumLinks: Double): Unit = js.native
     
-    def updateCoords(hasXYWidthHeight: Height): Unit = js.native
+    def updateCoords(param0: Height): Unit = js.native
     
     var width: Double = js.native
     

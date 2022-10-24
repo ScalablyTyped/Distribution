@@ -59,6 +59,14 @@ object srcCommandBuilderCommandModuleMod {
     
     /* private */ val optionsWithAnalytics: Any = js.native
     
+    /**
+      * Flush on an interval (if the event loop is waiting).
+      *
+      * @returns a method that when called will terminate the periodic
+      * flush and call flush one last time.
+      */
+    /* private */ var periodicAnalyticsFlush: Any = js.native
+    
     def reportAnalytics(options: (Options[T] & OtherOptions) | OtherOptions): js.Promise[Unit] = js.native
     def reportAnalytics(options: (Options[T] & OtherOptions) | OtherOptions, paths: js.Array[String]): js.Promise[Unit] = js.native
     def reportAnalytics(
@@ -68,9 +76,28 @@ object srcCommandBuilderCommandModuleMod {
     ): js.Promise[Unit] = js.native
     def reportAnalytics(
       options: (Options[T] & OtherOptions) | OtherOptions,
+      paths: js.Array[String],
+      dimensions: js.Array[Boolean | Double | String],
+      title: String
+    ): js.Promise[Unit] = js.native
+    def reportAnalytics(
+      options: (Options[T] & OtherOptions) | OtherOptions,
+      paths: js.Array[String],
+      dimensions: Unit,
+      title: String
+    ): js.Promise[Unit] = js.native
+    def reportAnalytics(
+      options: (Options[T] & OtherOptions) | OtherOptions,
       paths: Unit,
       dimensions: js.Array[Boolean | Double | String]
     ): js.Promise[Unit] = js.native
+    def reportAnalytics(
+      options: (Options[T] & OtherOptions) | OtherOptions,
+      paths: Unit,
+      dimensions: js.Array[Boolean | Double | String],
+      title: String
+    ): js.Promise[Unit] = js.native
+    def reportAnalytics(options: (Options[T] & OtherOptions) | OtherOptions, paths: Unit, dimensions: Unit, title: String): js.Promise[Unit] = js.native
     
     /** A function which will be passed the parsed argv. */
     /* CompleteClass */

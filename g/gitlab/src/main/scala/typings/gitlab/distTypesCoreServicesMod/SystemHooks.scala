@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class SystemHooks ()
   extends typings.gitlab.distTypesCoreServicesSystemHooksMod.SystemHooks {
-  def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+  def this(param0: BaseServiceOptions) = this()
 }

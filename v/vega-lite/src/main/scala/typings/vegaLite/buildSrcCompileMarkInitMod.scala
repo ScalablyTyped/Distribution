@@ -31,7 +31,7 @@ object buildSrcCompileMarkInitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def defaultFilled(markDef: MarkDef[Mark, ExprRef | SignalRef], config: Config[SignalRef], hasGraticule: Graticule): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultFilled")(markDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasGraticule.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def defaultFilled(markDef: MarkDef[Mark, ExprRef | SignalRef], config: Config[SignalRef], param2: Graticule): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultFilled")(markDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def initMarkdef(
     originalMarkDef: MarkDef[Mark, ExprRef | SignalRef],

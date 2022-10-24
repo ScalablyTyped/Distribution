@@ -27,7 +27,7 @@ object commandsLinkMod {
     
     def connectGithub(app: App, repoId: Double, branches: js.Array[String]): js.Promise[js.UndefOr[String]] = js.native
     
-    def createApp(hasName: NameString, runinfo: CommandInstanceInfo): js.Promise[String] = js.native
+    def createApp(param0: NameString, runinfo: CommandInstanceInfo): js.Promise[String] = js.native
     
     def formatRepoName(fullName: String): String = js.native
     

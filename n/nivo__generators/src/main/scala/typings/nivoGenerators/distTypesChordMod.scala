@@ -13,5 +13,5 @@ object distTypesChordMod {
   val ^ : js.Any = js.native
   
   inline def generateChordData(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("generateChordData")().asInstanceOf[Matrix]
-  inline def generateChordData(hasKeysSizeMinValueMaxValue: Keys): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("generateChordData")(hasKeysSizeMinValueMaxValue.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def generateChordData(param0: Keys): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("generateChordData")(param0.asInstanceOf[js.Any]).asInstanceOf[Matrix]
 }

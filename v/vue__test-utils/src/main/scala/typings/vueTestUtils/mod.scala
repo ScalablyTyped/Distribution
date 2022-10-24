@@ -53,7 +53,7 @@ object mod {
   /* note: abstract class */ @JSImport("@vue/test-utils", "BaseWrapper")
   @js.native
   open class BaseWrapper[ElementType /* <: Node */] protected () extends default[ElementType] {
-    def this(element: ElementType) = this()
+    /* protected */ def this(element: ElementType) = this()
   }
   
   @JSImport("@vue/test-utils", "DOMWrapper")

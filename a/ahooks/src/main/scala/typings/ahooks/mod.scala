@@ -1326,8 +1326,8 @@ object mod {
   inline def useLongPress(
     onLongPress: js.Function1[/* event */ EventType, Unit],
     target: BasicTarget[Element],
-    hasDelayMoveThresholdOnClickOnLongPressEnd: typings.ahooks.libUseLongPressMod.Options
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useLongPress")(onLongPress.asInstanceOf[js.Any], target.asInstanceOf[js.Any], hasDelayMoveThresholdOnClickOnLongPressEnd.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    param2: typings.ahooks.libUseLongPressMod.Options
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useLongPress")(onLongPress.asInstanceOf[js.Any], target.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useMap[K, T](): js.Tuple2[Map[K, T], Get[K, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMap")().asInstanceOf[js.Tuple2[Map[K, T], Get[K, T]]]
   inline def useMap[K, T](initialValue: js.Iterable[js.Tuple2[K, T]]): js.Tuple2[Map[K, T], Get[K, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMap")(initialValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Map[K, T], Get[K, T]]]

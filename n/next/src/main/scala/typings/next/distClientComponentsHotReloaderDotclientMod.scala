@@ -11,5 +11,5 @@ object distClientComponentsHotReloaderDotclientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasAssetPrefix: AssetPrefix): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasAssetPrefix.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def default(param0: AssetPrefix): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Null]
 }

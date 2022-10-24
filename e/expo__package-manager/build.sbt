@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "expo__package-manager"
-version := "0.0.56-ab1570"
-scalaVersion := "3.1.2"
+version := "0.0.56-73d2d8"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cli-spinners" % "2.7.0-2c1c27",
-  "org.scalablytyped" %%% "expo__spawn-async" % "1.7.0-293352",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "ora" % "6.1.2-cc9310",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "cli-spinners" % "2.7.0-475712",
+  "org.scalablytyped" %%% "expo__spawn-async" % "1.7.0-2160d4",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "ora" % "6.1.2-0c3a61",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

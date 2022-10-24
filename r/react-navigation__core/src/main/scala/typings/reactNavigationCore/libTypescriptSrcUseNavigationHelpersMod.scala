@@ -19,7 +19,7 @@ object libTypescriptSrcUseNavigationHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[State /* <: NavigationState[ParamListBase] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, Action /* <: NavigationAction */, EventMap /* <: Record[String, Any] */](hasNavigatorIdOnActionGetStateEmitterRouter: Options[State, Action]): GetState & (PrivateValueStore[js.Tuple3[ParamListBase, Any, Any]]) & EventEmitter[EventMap] & ActionHelpers = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNavigatorIdOnActionGetStateEmitterRouter.asInstanceOf[js.Any]).asInstanceOf[GetState & (PrivateValueStore[js.Tuple3[ParamListBase, Any, Any]]) & EventEmitter[EventMap] & ActionHelpers]
+  inline def default[State /* <: NavigationState[ParamListBase] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, Action /* <: NavigationAction */, EventMap /* <: Record[String, Any] */](param0: Options[State, Action]): GetState & (PrivateValueStore[js.Tuple3[ParamListBase, Any, Any]]) & EventEmitter[EventMap] & ActionHelpers = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[GetState & (PrivateValueStore[js.Tuple3[ParamListBase, Any, Any]]) & EventEmitter[EventMap] & ActionHelpers]
   
   trait Options[State /* <: NavigationState[ParamListBase] */, Action /* <: NavigationAction */] extends StObject {
     

@@ -12,7 +12,5 @@ object distBuildStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasRotationStrokeLinecapTextColorTextSizePathColorPathTransitionPathTransitionDurationTrailColorBackgroundColor: BackgroundColor
-  ): CircularProgressbarStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRotationStrokeLinecapTextColorTextSizePathColorPathTransitionPathTransitionDurationTrailColorBackgroundColor.asInstanceOf[js.Any]).asInstanceOf[CircularProgressbarStyles]
+  inline def default(param0: BackgroundColor): CircularProgressbarStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[CircularProgressbarStyles]
 }

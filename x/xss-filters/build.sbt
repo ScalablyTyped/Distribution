@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "xss-filters"
-version := "0.0-unknown-dt-20220818Z-dcb705"
-scalaVersion := "3.1.2"
+version := "0.0-unknown-dt-20220818Z-436cd8"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

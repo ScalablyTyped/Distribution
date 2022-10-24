@@ -14,7 +14,7 @@ object libPromptsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createOnFallback(hasHasConfirmLog: CreateOnFallbackOptions): js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnFallback")(hasHasConfirmLog.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox]]
+  inline def createOnFallback(param0: CreateOnFallbackOptions): js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnFallback")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox]]
   
   trait CreateOnFallbackOptions extends StObject {
     

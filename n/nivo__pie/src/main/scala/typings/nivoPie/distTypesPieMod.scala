@@ -12,5 +12,5 @@ object distTypesPieMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Pie[RawDatum](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: PieSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pie")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Pie[RawDatum](param0: PieSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pie")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

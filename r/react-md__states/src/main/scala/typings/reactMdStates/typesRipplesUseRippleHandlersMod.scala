@@ -13,7 +13,7 @@ object typesRipplesUseRippleHandlersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useRippleHandlers[E /* <: HTMLElement */](hasCreateReleaseCancelHandlersPropDisabledDisableRippleDisableProgrammaticRipple: Options[E]): MergableRippleHandlers[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRippleHandlers")(hasCreateReleaseCancelHandlersPropDisabledDisableRippleDisableProgrammaticRipple.asInstanceOf[js.Any]).asInstanceOf[MergableRippleHandlers[E]]
+  inline def useRippleHandlers[E /* <: HTMLElement */](param0: Options[E]): MergableRippleHandlers[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRippleHandlers")(param0.asInstanceOf[js.Any]).asInstanceOf[MergableRippleHandlers[E]]
   
   trait Options[E /* <: HTMLElement */] extends StObject {
     

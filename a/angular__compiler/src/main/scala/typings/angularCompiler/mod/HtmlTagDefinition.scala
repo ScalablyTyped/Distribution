@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class HtmlTagDefinition ()
   extends StObject
      with TagDefinition {
-  def this(hasClosedByChildrenImplicitNamespacePrefixContentTypeClosedByParentIsVoidIgnoreFirstLfPreventNamespaceInheritance: ClosedByChildren) = this()
+  def this(param0: ClosedByChildren) = this()
   
   /* private */ var closedByChildren: Any = js.native
   

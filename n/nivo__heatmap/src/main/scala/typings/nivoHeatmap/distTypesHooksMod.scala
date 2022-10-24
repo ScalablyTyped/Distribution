@@ -43,18 +43,18 @@ object distTypesHooksMod {
   ): js.Array[BoundAnnotation[ComputedCell[Datum]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCellAnnotations")(cells.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any])).asInstanceOf[js.Array[BoundAnnotation[ComputedCell[Datum]]]]
   
   inline def useComputeCells[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasDataWidthHeightXInnerPaddingXOuterPaddingYInnerPaddingYOuterPaddingForceSquare: (Data[Datum, ExtraProps]) & (Pick[
+    param0: (Data[Datum, ExtraProps]) & (Pick[
       HeatMapCommonProps[Datum], 
       forceSquare | xInnerPadding | xOuterPadding | yInnerPadding | yOuterPadding
     ])
-  ): Cells[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useComputeCells")(hasDataWidthHeightXInnerPaddingXOuterPaddingYInnerPaddingYOuterPaddingForceSquare.asInstanceOf[js.Any]).asInstanceOf[Cells[Datum]]
+  ): Cells[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useComputeCells")(param0.asInstanceOf[js.Any]).asInstanceOf[Cells[Datum]]
   
   inline def useHeatMap[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasDataValueFormat_width_heightXOuterPaddingXInnerPaddingYOuterPaddingYInnerPaddingForceSquareSizeVariationColorsEmptyColorOpacityActiveOpacityInactiveOpacityBorderColorLabelLabelTextColorHoverTarget: (Width[Datum, ExtraProps]) & (Partial[
+    param0: (Width[Datum, ExtraProps]) & (Partial[
       Pick[
         HeatMapCommonProps[Datum], 
         borderColor | opacity | label | labelTextColor | valueFormat | forceSquare | sizeVariation | xInnerPadding | xOuterPadding | yInnerPadding | yOuterPadding | activeOpacity | inactiveOpacity | colors | emptyColor | hoverTarget
       ]
     ])
-  ): ActiveCell[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHeatMap")(hasDataValueFormat_width_heightXOuterPaddingXInnerPaddingYOuterPaddingYInnerPaddingForceSquareSizeVariationColorsEmptyColorOpacityActiveOpacityInactiveOpacityBorderColorLabelLabelTextColorHoverTarget.asInstanceOf[js.Any]).asInstanceOf[ActiveCell[Datum]]
+  ): ActiveCell[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHeatMap")(param0.asInstanceOf[js.Any]).asInstanceOf[ActiveCell[Datum]]
 }

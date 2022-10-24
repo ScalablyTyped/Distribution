@@ -21,7 +21,7 @@ object distWebsocketMod {
       * @param {'arraybuffer' | 'blob' | null} [opts.binaryType] Set `ws.binaryType`
       */
     def this(url: String) = this()
-    def this(url: String, hasBinaryType: BinaryType) = this()
+    def this(url: String, param1: BinaryType) = this()
     
     var _checkInterval: Timer = js.native
     

@@ -15,10 +15,7 @@ object distCollectionSrcUseScrollableCollectionMod {
   val ^ : js.Any = js.native
   
   inline def useScrollableCollection(containerRef: RefObject[Element]): Style | StyleHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any]).asInstanceOf[Style | StyleHeight]
-  inline def useScrollableCollection(
-    containerRef: RefObject[Element],
-    hasMaxHeightBorderHeightPaddingHeightItemSelectorSectionSelectorDividerSelectorDisabled: UseScrollableCollectionOptions
-  ): Style | StyleHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any], hasMaxHeightBorderHeightPaddingHeightItemSelectorSectionSelectorDividerSelectorDisabled.asInstanceOf[js.Any])).asInstanceOf[Style | StyleHeight]
+  inline def useScrollableCollection(containerRef: RefObject[Element], param1: UseScrollableCollectionOptions): Style | StyleHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Style | StyleHeight]
   
   trait UseScrollableCollectionOptions extends StObject {
     

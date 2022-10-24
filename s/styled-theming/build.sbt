@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "styled-theming"
-version := "2.2-dt-20220624Z-694fa8"
-scalaVersion := "3.1.2"
+version := "2.2-dt-20220624Z-eeb876"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

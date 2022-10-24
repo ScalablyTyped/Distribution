@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "mindbox__redux-helpers"
-version := "1.0.11-a8b995"
-scalaVersion := "3.1.2"
+version := "1.0.11-bbd7b0"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

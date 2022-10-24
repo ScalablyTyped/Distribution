@@ -16,7 +16,7 @@ object toolsSrcExtractTranslationFilesXmlFileMod {
     /* private */ var elements: Any = js.native
     
     def endTag(name: String): this.type = js.native
-    def endTag(name: String, hasPreserveWhitespace: Options): this.type = js.native
+    def endTag(name: String, param1: Options): this.type = js.native
     
     /* private */ var incIndent: Any = js.native
     
@@ -29,13 +29,9 @@ object toolsSrcExtractTranslationFilesXmlFileMod {
     def rawText(str: String): this.type = js.native
     
     def startTag(name: String): this.type = js.native
-    def startTag(name: String, attributes: Unit, hasSelfClosingPreserveWhitespace: Options): this.type = js.native
+    def startTag(name: String, attributes: Unit, param2: Options): this.type = js.native
     def startTag(name: String, attributes: Record[String, js.UndefOr[String]]): this.type = js.native
-    def startTag(
-      name: String,
-      attributes: Record[String, js.UndefOr[String]],
-      hasSelfClosingPreserveWhitespace: Options
-    ): this.type = js.native
+    def startTag(name: String, attributes: Record[String, js.UndefOr[String]], param2: Options): this.type = js.native
     
     def text(str: String): this.type = js.native
   }

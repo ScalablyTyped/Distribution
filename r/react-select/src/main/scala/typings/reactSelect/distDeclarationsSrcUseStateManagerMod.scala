@@ -18,12 +18,10 @@ object distDeclarationsSrcUseStateManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](
-    hasDefaultInputValueDefaultMenuIsOpenDefaultValuePropsInputValuePropsMenuIsOpenPropsOnChangePropsOnInputChangePropsOnMenuClosePropsOnMenuOpenPropsValueRestSelectProps: (StateManagerProps[Option, IsMulti, Group]) & AdditionalProps
-  ): (PublicBaseSelectProps[Option, IsMulti, Group]) & (Omit[
+  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](param0: (StateManagerProps[Option, IsMulti, Group]) & AdditionalProps): (PublicBaseSelectProps[Option, IsMulti, Group]) & (Omit[
     AdditionalProps, 
     defaultInputValue | defaultMenuIsOpen | defaultValue | StateManagedPropKeys
-  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDefaultInputValueDefaultMenuIsOpenDefaultValuePropsInputValuePropsMenuIsOpenPropsOnChangePropsOnInputChangePropsOnMenuClosePropsOnMenuOpenPropsValueRestSelectProps.asInstanceOf[js.Any]).asInstanceOf[(PublicBaseSelectProps[Option, IsMulti, Group]) & (Omit[
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[(PublicBaseSelectProps[Option, IsMulti, Group]) & (Omit[
     AdditionalProps, 
     defaultInputValue | defaultMenuIsOpen | defaultValue | StateManagedPropKeys
   ])]

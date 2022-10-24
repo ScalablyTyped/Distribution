@@ -11,13 +11,13 @@ object typesSizingMediaOnlyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DesktopOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("DesktopOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def DesktopOnly(param0: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("DesktopOnly")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def MobileOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MobileOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def MobileOnly(param0: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MobileOnly")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def PhoneOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PhoneOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def PhoneOnly(param0: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PhoneOnly")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def TabletOnly(hasChildrenFallback: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("TabletOnly")(hasChildrenFallback.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def TabletOnly(param0: MediaOnlyProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("TabletOnly")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait MediaOnlyProps extends StObject {
     

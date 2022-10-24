@@ -19,12 +19,15 @@ object distConfigMod {
     
     var plugins: CreateStubs
     
-    var renderStubDefaultSlot: Boolean
+    /**
+      * @deprecated use global.
+      */
+    var renderStubDefaultSlot: js.UndefOr[Boolean] = js.undefined
   }
   object GlobalConfigOptions {
     
-    inline def apply(global: RequiredOmitGlobalMountOp, plugins: CreateStubs, renderStubDefaultSlot: Boolean): GlobalConfigOptions = {
-      val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], renderStubDefaultSlot = renderStubDefaultSlot.asInstanceOf[js.Any])
+    inline def apply(global: RequiredOmitGlobalMountOp, plugins: CreateStubs): GlobalConfigOptions = {
+      val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalConfigOptions]
     }
     
@@ -35,6 +38,8 @@ object distConfigMod {
       inline def setPlugins(value: CreateStubs): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setRenderStubDefaultSlot(value: Boolean): Self = StObject.set(x, "renderStubDefaultSlot", value.asInstanceOf[js.Any])
+      
+      inline def setRenderStubDefaultSlotUndefined: Self = StObject.set(x, "renderStubDefaultSlot", js.undefined)
     }
   }
   

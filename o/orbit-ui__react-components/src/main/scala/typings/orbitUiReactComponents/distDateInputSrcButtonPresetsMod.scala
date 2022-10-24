@@ -14,7 +14,7 @@ object distDateInputSrcButtonPresetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ButtonPresets(hasValuesSelectedIndexOnSelectionChange: ButtonPresetsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ButtonPresets")(hasValuesSelectedIndexOnSelectionChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ButtonPresets(param0: ButtonPresetsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ButtonPresets")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ButtonPresetsProps
     extends StObject

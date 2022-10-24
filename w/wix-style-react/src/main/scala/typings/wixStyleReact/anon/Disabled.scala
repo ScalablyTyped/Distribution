@@ -1,20 +1,30 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.ReactNode
-import typings.wixStyleReact.wixStyleReactBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabled extends StObject {
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var id: String | Double = js.native
+  var id: String
   
-  var overrideOptionStyle: `true` = js.native
+  def value(): typings.react.mod.global.JSX.Element
+}
+object Disabled {
   
-  def value(): ReactNode = js.native
-  def value(props: PartialBadgeSelectItem): ReactNode = js.native
+  inline def apply(disabled: Boolean, id: String, value: () => typings.react.mod.global.JSX.Element): Disabled = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], value = js.Any.fromFunction0(value))
+    __obj.asInstanceOf[Disabled]
+  }
+  
+  extension [Self <: Disabled](x: Self) {
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: () => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+  }
 }

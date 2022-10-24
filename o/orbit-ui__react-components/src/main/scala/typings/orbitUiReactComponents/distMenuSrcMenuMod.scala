@@ -23,9 +23,7 @@ object distMenuSrcMenuMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerMenu(
-    hasIdSelectedKeysPropDefaultSelectedKeysValidationStateOnSelectionChangeSelectionModeNodesPropAutoFocusDefaultFocusTargetFluidAriaLabelAriaLabelledByAsChildrenForwardedRefRest: InnerMenuProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMenu")(hasIdSelectedKeysPropDefaultSelectedKeysValidationStateOnSelectionChangeSelectionModeNodesPropAutoFocusDefaultFocusTargetFluidAriaLabelAriaLabelledByAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerMenu(param0: InnerMenuProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMenu")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/menu/src/Menu", "ItemKeyProp")
   @js.native

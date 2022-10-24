@@ -15,7 +15,7 @@ object distDisplayObjectsGroupMod {
   @JSImport("@antv/g-lite/dist/display-objects/Group", "Group")
   @js.native
   open class Group () extends DisplayObject[Any, Any] {
-    def this(hasStyleRest: DisplayObjectConfig[GroupStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[GroupStyleProps]) = this()
   }
   
   trait GroupStyleProps

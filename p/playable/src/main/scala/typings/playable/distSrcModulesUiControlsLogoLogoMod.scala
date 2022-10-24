@@ -15,7 +15,7 @@ object distSrcModulesUiControlsLogoLogoMod {
   open class default protected ()
     extends StObject
        with Logo {
-    def this(hasEventEmitterTextMapTooltipServiceTheme: TextMap) = this()
+    def this(param0: TextMap) = this()
   }
   object default {
     

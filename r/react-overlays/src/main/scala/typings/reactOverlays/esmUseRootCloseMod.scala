@@ -14,17 +14,9 @@ object esmUseRootCloseMod {
   val ^ : js.Any = js.native
   
   inline def default(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(
-    ref: Null,
-    onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit], param2: RootCloseOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(ref: Unit, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(
-    ref: Unit,
-    onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(ref: Unit, onRootClose: js.Function1[/* e */ Event, Unit], param2: RootCloseOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * The `useRootClose` hook registers your callback on the document
     * when rendered. Powers the `<Overlay/>` component. This is used achieve modal
@@ -38,17 +30,9 @@ object esmUseRootCloseMod {
     * @param {string=}  options.clickTrigger The DOM event name (click, mousedown, etc) to attach listeners on
     */
   inline def default(ref: RefObject[Element], onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(
-    ref: RefObject[Element],
-    onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(ref: RefObject[Element], onRootClose: js.Function1[/* e */ Event, Unit], param2: RootCloseOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(ref: Element, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(
-    ref: Element,
-    onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(ref: Element, onRootClose: js.Function1[/* e */ Event, Unit], param2: RootCloseOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type MouseEvents = /* import warning: importer.ImportType#apply Failed type conversion: std.TransitionEvent extends std.MouseEvent ? 'transitionrun' : never */ js.Any
   

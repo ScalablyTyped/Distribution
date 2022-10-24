@@ -33,7 +33,7 @@ object distAvatarSrcAvatarMod {
   
   inline def AvatarText(props: AvatarTextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AvatarText")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerAvatar(hasNameSrcRetryCountSizeAriaLabelAsForwardedRefRest: InnerAvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAvatar")(hasNameSrcRetryCountSizeAriaLabelAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAvatar(param0: InnerAvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAvatar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type AvatarProps = ComponentProps[OrbitComponent[HTMLElement, InnerAvatarProps]]
   

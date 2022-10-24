@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "devextreme-quill"
-version := "1.5.18-c21e40"
-scalaVersion := "3.1.2"
+version := "1.5.18-8cb294"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

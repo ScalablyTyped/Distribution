@@ -20,7 +20,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Provider[A /* <: Action[Any] */](hasStoreContextChildrenServerState: ProviderProps[A, Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Provider")(hasStoreContextChildrenServerState.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Provider[A /* <: Action[Any] */](param0: ProviderProps[A, Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Provider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-redux", "ReactReduxContext")
   @js.native

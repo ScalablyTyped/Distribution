@@ -17,12 +17,12 @@ object distTypesArcLabelsUseArcLabelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useArcLabels[Datum /* <: DatumWithArcAndColor */](hasDataOffsetSkipAngleLabelTextColor: Data[Datum]): js.Array[
+  inline def useArcLabels[Datum /* <: DatumWithArcAndColor */](param0: Data[Datum]): js.Array[
     ArcCenter[Datum] & (Omit[
       ArcLabel[Datum], 
       /* keyof @nivo/arcs.@nivo/arcs/dist/types/centers.ArcCenter<Datum> */ data | x | y
     ])
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLabels")(hasDataOffsetSkipAngleLabelTextColor.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLabels")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[
     ArcCenter[Datum] & (Omit[
       ArcLabel[Datum], 
       /* keyof @nivo/arcs.@nivo/arcs/dist/types/centers.ArcCenter<Datum> */ data | x | y

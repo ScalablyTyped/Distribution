@@ -18,5 +18,5 @@ object distCardSrcMod {
   @js.native
   val Card: OrbitComponent[HTMLElement, InnerCardProps] = js.native
   
-  inline def InnerCard(hasOrientationSizeFluidAsChildrenForwardedRefRest: InnerCardProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCard")(hasOrientationSizeFluidAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerCard(param0: InnerCardProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCard")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

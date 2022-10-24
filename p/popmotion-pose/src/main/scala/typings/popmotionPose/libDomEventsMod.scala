@@ -20,6 +20,6 @@ object libDomEventsMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any
     ],
     poser: DomPopmotionPoser,
-    hasProps: DomPopmotionConfig
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], activeActions.asInstanceOf[js.Any], poser.asInstanceOf[js.Any], hasProps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    param3: DomPopmotionConfig
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], activeActions.asInstanceOf[js.Any], poser.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

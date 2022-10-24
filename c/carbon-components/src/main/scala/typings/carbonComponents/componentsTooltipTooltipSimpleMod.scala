@@ -20,7 +20,7 @@ object componentsTooltipTooltipSimpleMod {
     def this(element: HTMLElement, options: PartialTooltipSimpleOptio) = this()
     
     /* CompleteClass */
-    override def allowTooltipVisibility(hasVisible: Visible): Unit = js.native
+    override def allowTooltipVisibility(param0: Visible): Unit = js.native
     
     /* CompleteClass */
     override def getTooltipTriggerButton(): Element = js.native
@@ -44,7 +44,7 @@ object componentsTooltipTooltipSimpleMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ trait TooltipSimple extends StObject {
     
-    def allowTooltipVisibility(hasVisible: Visible): Unit
+    def allowTooltipVisibility(param0: Visible): Unit
     
     def getTooltipTriggerButton(): Element
     

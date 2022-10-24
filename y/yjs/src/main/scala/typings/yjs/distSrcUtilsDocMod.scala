@@ -25,7 +25,7 @@ object distSrcUtilsDocMod {
     * @param {DocOpts} [opts] configuration
     */
   open class Doc () extends Observable[String] {
-    def this(hasGuidCollectionidGcGcFilterMetaAutoLoadShouldLoad: DocOpts) = this()
+    def this(param0: DocOpts) = this()
     
     /**
       * If this document is a subdocument - a document integrated into another document - then _item is defined.

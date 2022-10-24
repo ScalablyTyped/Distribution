@@ -197,8 +197,8 @@ object mod {
           /* labels */ typings.dmgLicense.libLabelsMod.Labels[T], 
           Unit
         ],
-      hasOnNoLanguageName: ForEachOptions
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(labels.asInstanceOf[js.Any], fun.asInstanceOf[js.Any], hasOnNoLanguageName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      param2: ForEachOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(labels.asInstanceOf[js.Any], fun.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def fromPromises[T](labels: typings.dmgLicense.libLabelsMod.Labels[js.Promise[T]]): js.Promise[typings.dmgLicense.libLabelsMod.Labels[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromises")(labels.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.dmgLicense.libLabelsMod.Labels[T]]]
     inline def fromPromises[T](labels: WithLanguageName[js.Promise[T]]): js.Promise[WithLanguageName[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromises")(labels.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WithLanguageName[T]]]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__mesh-extras
 
-Typings are for version 6.5.7
+Typings are for version 6.5.8
 
 ## Library description:
 Custom Mesh display objects, like Rope and SimplePlane

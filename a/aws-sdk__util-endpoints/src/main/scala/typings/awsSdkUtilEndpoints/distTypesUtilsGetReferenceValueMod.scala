@@ -13,5 +13,5 @@ object distTypesUtilsGetReferenceValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getReferenceValue(hasRef: ReferenceObject, options: EvaluateOptions): FunctionReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("getReferenceValue")(hasRef.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionReturn]
+  inline def getReferenceValue(param0: ReferenceObject, options: EvaluateOptions): FunctionReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("getReferenceValue")(param0.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionReturn]
 }

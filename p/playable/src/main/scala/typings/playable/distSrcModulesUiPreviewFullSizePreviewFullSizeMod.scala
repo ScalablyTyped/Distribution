@@ -15,7 +15,7 @@ object distSrcModulesUiPreviewFullSizePreviewFullSizeMod {
   open class default protected ()
     extends StObject
        with PreviewFullsize {
-    def this(hasPreviewServiceRootContainer: PreviewService) = this()
+    def this(param0: PreviewService) = this()
     
     /* private */ /* CompleteClass */
     var _currentFrame: Any = js.native

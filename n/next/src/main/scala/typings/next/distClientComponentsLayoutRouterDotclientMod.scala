@@ -15,9 +15,9 @@ object distClientComponentsLayoutRouterDotclientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasParallelRouterKeySegmentPathChildPropErrorLoadingTemplateRootLayoutIncluded: ChildProp): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasParallelRouterKeySegmentPathChildPropErrorLoadingTemplateRootLayoutIncluded.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ChildProp): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerLayoutRouter(hasParallelRouterKeyUrlChildNodesChildPropSegmentPathTreePathRootLayoutIncluded: ChildNodes): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerLayoutRouter")(hasParallelRouterKeyUrlChildNodesChildPropSegmentPathTreePathRootLayoutIncluded.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def InnerLayoutRouter(param0: ChildNodes): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerLayoutRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   type ErrorComponent = ComponentType[Error]
 }

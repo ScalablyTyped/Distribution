@@ -12,5 +12,5 @@ object distEs5EffectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Effect(hasSetLockPropsOnEscapeKeyOnClickOutsideShardsOnActivationOnDeactivationNoIsolation: EffectProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Effect")(hasSetLockPropsOnEscapeKeyOnClickOutsideShardsOnActivationOnDeactivationNoIsolation.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Effect(param0: EffectProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Effect")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

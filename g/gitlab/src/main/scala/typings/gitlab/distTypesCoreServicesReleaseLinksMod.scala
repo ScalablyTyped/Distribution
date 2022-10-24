@@ -16,7 +16,7 @@ object distTypesCoreServicesReleaseLinksMod {
   @JSImport("gitlab/dist/types/core/services/ReleaseLinks", "ReleaseLinks")
   @js.native
   open class ReleaseLinks () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(projectId: String, tagName: String): js.Promise[GetResponse] = js.native
     def all(projectId: String, tagName: String, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native

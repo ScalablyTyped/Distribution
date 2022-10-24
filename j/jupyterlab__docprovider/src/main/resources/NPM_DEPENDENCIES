@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/docprovider" : "3.4.8"
+      "@jupyterlab/docprovider" : "3.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/docprovider" : "3.4.8"
+      "@jupyterlab/docprovider" : "3.5.0"
     }
   ],
   "compile-devDependencies" : [

@@ -13,7 +13,7 @@ object distTypesBarLegendsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BarLegends(hasWidthHeightLegendsToggleSerie: BarLegendsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarLegends")(hasWidthHeightLegendsToggleSerie.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BarLegends(param0: BarLegendsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarLegends")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @js.native
   trait BarLegendsProps extends StObject {

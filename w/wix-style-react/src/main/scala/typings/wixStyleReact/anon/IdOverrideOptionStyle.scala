@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IdOverrideOptionStyle extends StObject {
   
-  var disabled: `true` = js.native
+  var disabled: Boolean = js.native
   
   var id: String | Double = js.native
   
   var overrideOptionStyle: `true` = js.native
   
   def value(): ReactNode = js.native
-  def value(props: PartialListItemEditablePr): ReactNode = js.native
+  def value(props: PartialBadgeSelectItem): ReactNode = js.native
 }

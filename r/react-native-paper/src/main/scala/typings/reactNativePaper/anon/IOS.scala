@@ -15,25 +15,22 @@ trait IOS extends StObject {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & UncheckedColor
-    ]) & CallHasDisabledOnPressThemeValueStatusTestIDRest, 
+    ]) & `24`, 
     js.Object
   ])
   
-  var Group: CallHasValueOnValueChangeChildren
+  var Group: `27`
   
   var IOS: ComponentType[PickRemoveChildrenComponeCentered] & (NonReactStatics[
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & Value
-    ]) & CallHasDisabledOnPressThemeStatusValueTestIDRest, 
+    ]) & `25`, 
     js.Object
   ])
   
-  var Item: ComponentType[PickPropslabelstylecoloroDisabled] & (NonReactStatics[
-    ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
-    js.Object
-  ])
+  var Item: ComponentType[PickPropslabelstylecoloroDisabled] & (NonReactStatics[ComponentType[Props] & `26`, js.Object])
 }
 object IOS {
   
@@ -43,22 +40,19 @@ object IOS {
         (RemoveChildren[
           ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
         ]) & UncheckedColor
-      ]) & CallHasDisabledOnPressThemeValueStatusTestIDRest, 
+      ]) & `24`, 
       js.Object
     ]),
-    Group: CallHasValueOnValueChangeChildren,
+    Group: `27`,
     IOS: ComponentType[PickRemoveChildrenComponeCentered] & (NonReactStatics[
       (ComponentType[
         (RemoveChildren[
           ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
         ]) & Value
-      ]) & CallHasDisabledOnPressThemeStatusValueTestIDRest, 
+      ]) & `25`, 
       js.Object
     ]),
-    Item: ComponentType[PickPropslabelstylecoloroDisabled] & (NonReactStatics[
-      ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
-      js.Object
-    ])
+    Item: ComponentType[PickPropslabelstylecoloroDisabled] & (NonReactStatics[ComponentType[Props] & `26`, js.Object])
   ): IOS = {
     val __obj = js.Dynamic.literal(Android = Android.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], IOS = IOS.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOS]
@@ -72,12 +66,12 @@ object IOS {
             (RemoveChildren[
               ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
             ]) & UncheckedColor
-          ]) & CallHasDisabledOnPressThemeValueStatusTestIDRest, 
+          ]) & `24`, 
           js.Object
         ])
     ): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: CallHasValueOnValueChangeChildren): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: `27`): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     inline def setIOS(
       value: ComponentType[PickRemoveChildrenComponeCentered] & (NonReactStatics[
@@ -85,16 +79,13 @@ object IOS {
             (RemoveChildren[
               ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
             ]) & Value
-          ]) & CallHasDisabledOnPressThemeStatusValueTestIDRest, 
+          ]) & `25`, 
           js.Object
         ])
     ): Self = StObject.set(x, "IOS", value.asInstanceOf[js.Any])
     
     inline def setItem(
-      value: ComponentType[PickPropslabelstylecoloroDisabled] & (NonReactStatics[
-          ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
-          js.Object
-        ])
+      value: ComponentType[PickPropslabelstylecoloroDisabled] & (NonReactStatics[ComponentType[Props] & `26`, js.Object])
     ): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }
 }

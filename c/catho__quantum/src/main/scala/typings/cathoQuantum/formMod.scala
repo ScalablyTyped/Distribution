@@ -57,7 +57,7 @@ object formMod {
     var children_FormProps: js.Array[ReactNode] | ReactNode
     
     @JSName("onSubmit")
-    var onSubmit_FormProps: js.UndefOr[js.Function1[/* hasValid */ js.UndefOr[Valid], Unit]] = js.undefined
+    var onSubmit_FormProps: js.UndefOr[js.Function1[/* param0 */ js.UndefOr[Valid], Unit]] = js.undefined
     
     var onValidSubmit: js.UndefOr[
         js.Function1[/* values */ js.UndefOr[StringDictionary[js.UndefOr[String]]], Unit]
@@ -78,7 +78,7 @@ object formMod {
       
       inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
-      inline def setOnSubmit(value: /* hasValid */ js.UndefOr[Valid] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: /* param0 */ js.UndefOr[Valid] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       

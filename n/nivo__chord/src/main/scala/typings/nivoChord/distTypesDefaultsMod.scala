@@ -452,8 +452,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/chord/dist/types/defaults", "svgDefaultProps.ribbonTooltip")
     @js.native
-    def ribbonTooltip: MemoExoticComponent[js.Function1[/* hasRibbon */ RibbonTooltipComponentProps, Element]] = js.native
-    inline def ribbonTooltip_=(x: MemoExoticComponent[js.Function1[/* hasRibbon */ RibbonTooltipComponentProps, Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ribbonTooltip")(x.asInstanceOf[js.Any])
+    def ribbonTooltip: MemoExoticComponent[js.Function1[/* param0 */ RibbonTooltipComponentProps, Element]] = js.native
+    inline def ribbonTooltip_=(x: MemoExoticComponent[js.Function1[/* param0 */ RibbonTooltipComponentProps, Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ribbonTooltip")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/chord/dist/types/defaults", "svgDefaultProps.role")
     @js.native

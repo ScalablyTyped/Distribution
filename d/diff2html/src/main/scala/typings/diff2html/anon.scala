@@ -3,6 +3,7 @@ package typings.diff2html
 import typings.diff2html.libTypesMod.DiffStyleType
 import typings.diff2html.libTypesMod.LineMatchingType
 import typings.diff2html.libTypesMod.OutputFormatType
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,6 +45,8 @@ object anon {
     
     var highlight: Boolean
     
+    var highlightLanguages: Map[String, String]
+    
     var matchWordsThreshold: Double
     
     var matching: LineMatchingType
@@ -71,6 +74,7 @@ object anon {
       fileListStartVisible: Boolean,
       fileListToggle: Boolean,
       highlight: Boolean,
+      highlightLanguages: Map[String, String],
       matchWordsThreshold: Double,
       matching: LineMatchingType,
       matchingMaxComparisons: Double,
@@ -81,7 +85,7 @@ object anon {
       smartSelection: Boolean,
       synchronisedScroll: Boolean
     ): DiffStyle = {
-      val __obj = js.Dynamic.literal(diffStyle = diffStyle.asInstanceOf[js.Any], drawFileList = drawFileList.asInstanceOf[js.Any], fileContentToggle = fileContentToggle.asInstanceOf[js.Any], fileListStartVisible = fileListStartVisible.asInstanceOf[js.Any], fileListToggle = fileListToggle.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], matchWordsThreshold = matchWordsThreshold.asInstanceOf[js.Any], matching = matching.asInstanceOf[js.Any], matchingMaxComparisons = matchingMaxComparisons.asInstanceOf[js.Any], maxLineLengthHighlight = maxLineLengthHighlight.asInstanceOf[js.Any], maxLineSizeInBlockForComparison = maxLineSizeInBlockForComparison.asInstanceOf[js.Any], outputFormat = outputFormat.asInstanceOf[js.Any], renderNothingWhenEmpty = renderNothingWhenEmpty.asInstanceOf[js.Any], smartSelection = smartSelection.asInstanceOf[js.Any], synchronisedScroll = synchronisedScroll.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(diffStyle = diffStyle.asInstanceOf[js.Any], drawFileList = drawFileList.asInstanceOf[js.Any], fileContentToggle = fileContentToggle.asInstanceOf[js.Any], fileListStartVisible = fileListStartVisible.asInstanceOf[js.Any], fileListToggle = fileListToggle.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], highlightLanguages = highlightLanguages.asInstanceOf[js.Any], matchWordsThreshold = matchWordsThreshold.asInstanceOf[js.Any], matching = matching.asInstanceOf[js.Any], matchingMaxComparisons = matchingMaxComparisons.asInstanceOf[js.Any], maxLineLengthHighlight = maxLineLengthHighlight.asInstanceOf[js.Any], maxLineSizeInBlockForComparison = maxLineSizeInBlockForComparison.asInstanceOf[js.Any], outputFormat = outputFormat.asInstanceOf[js.Any], renderNothingWhenEmpty = renderNothingWhenEmpty.asInstanceOf[js.Any], smartSelection = smartSelection.asInstanceOf[js.Any], synchronisedScroll = synchronisedScroll.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffStyle]
     }
     
@@ -98,6 +102,8 @@ object anon {
       inline def setFileListToggle(value: Boolean): Self = StObject.set(x, "fileListToggle", value.asInstanceOf[js.Any])
       
       inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      
+      inline def setHighlightLanguages(value: Map[String, String]): Self = StObject.set(x, "highlightLanguages", value.asInstanceOf[js.Any])
       
       inline def setMatchWordsThreshold(value: Double): Self = StObject.set(x, "matchWordsThreshold", value.asInstanceOf[js.Any])
       

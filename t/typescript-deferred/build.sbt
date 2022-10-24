@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "typescript-deferred"
-version := "v0.1.5-dt-20220818Z-f76862"
-scalaVersion := "3.1.2"
+version := "v0.1.5-dt-20220818Z-3c784d"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

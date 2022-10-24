@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<wix-style-react.wix-style-react/dist/es/src/Card.CardProps> */
+/* Inlined std.Partial<wix-style-react.wix-style-react/dist/types/Card.CardProps> */
 trait PartialCardProps extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.undefined

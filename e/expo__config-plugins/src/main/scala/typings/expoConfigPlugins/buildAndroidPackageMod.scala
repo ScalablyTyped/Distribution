@@ -18,11 +18,11 @@ object buildAndroidPackageMod {
   
   inline def getPackage(config: PickExpoConfigandroid): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackage")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def renameJniOnDiskForType(hasProjectRootTypePackageName: PackageName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renameJniOnDiskForType")(hasProjectRootTypePackageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def renameJniOnDiskForType(param0: PackageName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renameJniOnDiskForType")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def renamePackageOnDisk(config: PickExpoConfigandroid, projectRoot: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renamePackageOnDisk")(config.asInstanceOf[js.Any], projectRoot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def renamePackageOnDiskForType(hasProjectRootTypePackageName: PackageName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renamePackageOnDiskForType")(hasProjectRootTypePackageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def renamePackageOnDiskForType(param0: PackageName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renamePackageOnDiskForType")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def setPackageInAndroidManifest(config: PickExpoConfigandroid, androidManifest: AndroidManifest): AndroidManifest = (^.asInstanceOf[js.Dynamic].applyDynamic("setPackageInAndroidManifest")(config.asInstanceOf[js.Any], androidManifest.asInstanceOf[js.Any])).asInstanceOf[AndroidManifest]
   

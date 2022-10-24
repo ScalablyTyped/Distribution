@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "node-json-logger"
-version := "0.0-dt-20211202Z-afe068"
-scalaVersion := "3.1.2"
+version := "0.0-dt-20211202Z-9645f9"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

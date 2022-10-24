@@ -10,7 +10,7 @@ object typesGetPercentageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getPercentage(hasMinMaxValueValidate: GetPercentageOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPercentage")(hasMinMaxValueValidate.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getPercentage(param0: GetPercentageOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPercentage")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   trait GetPercentageOptions extends StObject {
     

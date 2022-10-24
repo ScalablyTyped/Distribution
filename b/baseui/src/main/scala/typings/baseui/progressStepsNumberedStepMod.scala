@@ -10,7 +10,7 @@ object progressStepsNumberedStepMod {
   
   object default {
     
-    inline def apply(hasOverridesIsCompletedIsActiveIsLastTitleStepChildren: NumberedStepProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasOverridesIsCompletedIsActiveIsLastTitleStepChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: NumberedStepProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("baseui/progress-steps/numbered-step", JSImport.Default)
     @js.native

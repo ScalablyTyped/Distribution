@@ -8,6 +8,7 @@ import typings.diff2html.libTypesMod.OutputFormatType
 import typings.diff2html.mod.Diff2HtmlConfig
 import typings.highlightJs.mod.HLJSApi
 import typings.std.HTMLElement
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,6 +92,12 @@ object libUiJsDiff2htmlUiBaseMod {
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.highlight")
     @js.native
     def highlight: Boolean = js.native
+    
+    @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.highlightLanguages")
+    @js.native
+    def highlightLanguages: Map[String, String] = js.native
+    inline def highlightLanguages_=(x: Map[String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlightLanguages")(x.asInstanceOf[js.Any])
+    
     inline def highlight_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlight")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.matchWordsThreshold")
@@ -152,6 +159,8 @@ object libUiJsDiff2htmlUiBaseMod {
     
     var highlight: js.UndefOr[Boolean] = js.undefined
     
+    var highlightLanguages: js.UndefOr[Map[String, String]] = js.undefined
+    
     var smartSelection: js.UndefOr[Boolean] = js.undefined
     
     var synchronisedScroll: js.UndefOr[Boolean] = js.undefined
@@ -178,6 +187,10 @@ object libUiJsDiff2htmlUiBaseMod {
       inline def setFileListToggleUndefined: Self = StObject.set(x, "fileListToggle", js.undefined)
       
       inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      
+      inline def setHighlightLanguages(value: Map[String, String]): Self = StObject.set(x, "highlightLanguages", value.asInstanceOf[js.Any])
+      
+      inline def setHighlightLanguagesUndefined: Self = StObject.set(x, "highlightLanguages", js.undefined)
       
       inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       

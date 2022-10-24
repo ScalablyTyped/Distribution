@@ -19,9 +19,7 @@ object distTypesHeatMapCellsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HeatMapCells[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasCellsCellComponentBorderRadiusBorderWidthIsInteractiveSetActiveCellOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltipEnableLabels: HeatMapCellsProps[Datum, ExtraProps]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCells")(hasCellsCellComponentBorderRadiusBorderWidthIsInteractiveSetActiveCellOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltipEnableLabels.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeatMapCells[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](param0: HeatMapCellsProps[Datum, ExtraProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCells")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @js.native
   trait HeatMapCellsProps[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */] extends StObject {

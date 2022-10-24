@@ -90,7 +90,7 @@ object mod {
     inline def setLevel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")().asInstanceOf[Unit]
     inline def setLevel(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def trace(hasMessageTime: Message): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(hasMessageTime.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def trace(param0: Message): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def verbose(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
     

@@ -24,14 +24,14 @@ object distDisplayObjectsMod {
   @js.native
   open class Circle ()
     extends typings.antvGLite.distDisplayObjectsCircleMod.Circle {
-    def this(hasStyleRest: DisplayObjectConfig[CircleStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[CircleStyleProps]) = this()
   }
   
   /* note: abstract class */ @JSImport("@antv/g-lite/dist/display-objects", "CustomElement")
   @js.native
   open class CustomElement[CustomElementStyleProps] ()
     extends typings.antvGLite.distDisplayObjectsCustomElementMod.CustomElement[CustomElementStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[CustomElementStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[CustomElementStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "DisplayObject")
@@ -50,63 +50,63 @@ object distDisplayObjectsMod {
   @js.native
   open class Ellipse ()
     extends typings.antvGLite.distDisplayObjectsEllipseMod.Ellipse {
-    def this(hasStyleRest: DisplayObjectConfig[EllipseStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[EllipseStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "Group")
   @js.native
   open class Group ()
     extends typings.antvGLite.distDisplayObjectsGroupMod.Group {
-    def this(hasStyleRest: DisplayObjectConfig[GroupStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[GroupStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "HTML")
   @js.native
   open class HTML ()
     extends typings.antvGLite.distDisplayObjectsHtmlMod.HTML {
-    def this(hasStyleRest: DisplayObjectConfig[HTMLStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[HTMLStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "Image")
   @js.native
   open class Image ()
     extends typings.antvGLite.distDisplayObjectsImageMod.Image {
-    def this(hasStyleRest: DisplayObjectConfig[ImageStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[ImageStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "Line")
   @js.native
   open class Line ()
     extends typings.antvGLite.distDisplayObjectsLineMod.Line {
-    def this(hasStyleRest: DisplayObjectConfig[LineStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[LineStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "Path")
   @js.native
   open class Path ()
     extends typings.antvGLite.distDisplayObjectsPathMod.Path {
-    def this(hasStyleRest: DisplayObjectConfig[PathStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[PathStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "Polygon")
   @js.native
   open class Polygon ()
     extends typings.antvGLite.distDisplayObjectsPolygonMod.Polygon {
-    def this(hasStyleRest: DisplayObjectConfig[PolygonStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[PolygonStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "Polyline")
   @js.native
   open class Polyline ()
     extends typings.antvGLite.distDisplayObjectsPolylineMod.Polyline {
-    def this(hasStyleRest: DisplayObjectConfig[PolylineStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[PolylineStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "Rect")
   @js.native
   open class Rect ()
     extends typings.antvGLite.distDisplayObjectsRectMod.Rect {
-    def this(hasStyleRest: DisplayObjectConfig[RectStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[RectStyleProps]) = this()
   }
   
   @JSImport("@antv/g-lite/dist/display-objects", "Text")
@@ -116,6 +116,6 @@ object distDisplayObjectsMod {
     */
   open class Text ()
     extends typings.antvGLite.distDisplayObjectsTextMod.Text {
-    def this(hasStyleRest: DisplayObjectConfig[TextStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[TextStyleProps]) = this()
   }
 }

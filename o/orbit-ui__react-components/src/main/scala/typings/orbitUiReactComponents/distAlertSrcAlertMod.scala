@@ -33,9 +33,7 @@ object distAlertSrcAlertMod {
   @js.native
   val Alert: OrbitComponent[HTMLElement, InnerAlertProps] = js.native
   
-  inline def InnerAlert(
-    hasVariantPrimaryButtonLabelPrimaryButtonDisabledSecondaryButtonLabelSecondaryButtonDisabledCancelButtonLabelAutoFocusButtonOnPrimaryButtonClickOnSecondaryButtonClickOnCancelButtonClickZIndexChildrenForwardedRefRest: InnerAlertProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlert")(hasVariantPrimaryButtonLabelPrimaryButtonDisabledSecondaryButtonLabelSecondaryButtonDisabledCancelButtonLabelAutoFocusButtonOnPrimaryButtonClickOnSecondaryButtonClickOnCancelButtonClickZIndexChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAlert(param0: InnerAlertProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlert")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type AlertProps = ComponentProps[OrbitComponent[HTMLElement, InnerAlertProps]]
   

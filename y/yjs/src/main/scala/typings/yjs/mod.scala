@@ -182,7 +182,7 @@ object mod {
     */
   open class Doc ()
     extends typings.yjs.distSrcInternalsMod.Doc {
-    def this(hasGuidCollectionidGcGcFilterMetaAutoLoadShouldLoad: DocOpts) = this()
+    def this(param0: DocOpts) = this()
   }
   
   @JSImport("yjs", "GC")
@@ -336,12 +336,9 @@ object mod {
     def this(typeScope: typings.yjs.distSrcTypesAbstractTypeMod.AbstractType[Any]) = this()
     def this(
       typeScope: js.Array[typings.yjs.distSrcTypesAbstractTypeMod.AbstractType[Any]],
-      hasCaptureTimeoutCaptureTransactionDeleteFilterTrackedOriginsIgnoreRemoteMapChangesDoc: UndoManagerOptions
+      param1: UndoManagerOptions
     ) = this()
-    def this(
-      typeScope: typings.yjs.distSrcTypesAbstractTypeMod.AbstractType[Any],
-      hasCaptureTimeoutCaptureTransactionDeleteFilterTrackedOriginsIgnoreRemoteMapChangesDoc: UndoManagerOptions
-    ) = this()
+    def this(typeScope: typings.yjs.distSrcTypesAbstractTypeMod.AbstractType[Any], param1: UndoManagerOptions) = this()
   }
   
   @JSImport("yjs", "UpdateEncoderV1")

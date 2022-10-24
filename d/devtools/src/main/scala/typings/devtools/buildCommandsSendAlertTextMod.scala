@@ -11,5 +11,5 @@ object buildCommandsSendAlertTextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasText: TextString): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def default(param1: TextString): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
 }

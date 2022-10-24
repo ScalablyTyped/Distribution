@@ -46,22 +46,22 @@ object deprecatedChipSetFoundationMod {
     /**
       * Handles a chip interaction event
       */
-    def handleChipInteraction(hasChipId: MDCChipInteractionEventDetail): Unit = js.native
+    def handleChipInteraction(param0: MDCChipInteractionEventDetail): Unit = js.native
     
     /**
       * Handles a chip navigation event.
       */
-    def handleChipNavigation(hasChipIdKeySource: MDCChipNavigationEventDetail): Unit = js.native
+    def handleChipNavigation(param0: MDCChipNavigationEventDetail): Unit = js.native
     
     /**
       * Handles the event when a chip is removed.
       */
-    def handleChipRemoval(hasChipIdRemovedAnnouncement: MDCChipRemovalEventDetail): Unit = js.native
+    def handleChipRemoval(param0: MDCChipRemovalEventDetail): Unit = js.native
     
     /**
       * Handles a chip selection event, used to handle discrepancy when selection state is set directly on the Chip.
       */
-    def handleChipSelection(hasChipIdSelectedShouldIgnore: MDCChipSelectionEventDetail): Unit = js.native
+    def handleChipSelection(param0: MDCChipSelectionEventDetail): Unit = js.native
     
     /* private */ var removeFocusFromChipsExcept: Any = js.native
     

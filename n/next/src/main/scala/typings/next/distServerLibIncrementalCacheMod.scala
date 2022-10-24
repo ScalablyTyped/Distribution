@@ -26,7 +26,7 @@ object distServerLibIncrementalCacheMod {
   @JSImport("next/dist/server/lib/incremental-cache", "IncrementalCache")
   @js.native
   open class IncrementalCache protected () extends StObject {
-    def this(hasFsDevAppDirFlushToDiskServerDistDirMaxMemoryCacheSizeGetPrerenderManifestIncrementalCacheHandlerPath: FlushToDisk) = this()
+    def this(param0: FlushToDisk) = this()
     
     def _getPathname(pathname: String): String = js.native
     

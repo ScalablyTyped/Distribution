@@ -21,7 +21,7 @@ object distPlaceholdersSrcHeaderMod {
   @js.native
   val Header: OrbitComponent[HTMLElement, InnerHeaderProps] = js.native
   
-  inline def InnerHeader(hasAsChildrenForwardedRefRest: InnerHeaderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerHeader")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerHeader(param0: InnerHeaderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerHeader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type HeaderProps = ComponentProps[OrbitComponent[HTMLElement, InnerHeaderProps]]
   

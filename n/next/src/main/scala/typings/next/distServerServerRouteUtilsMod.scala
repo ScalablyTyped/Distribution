@@ -20,9 +20,9 @@ object distServerServerRouteUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createHeaderRoute(hasRuleRestrictedRedirectPaths: Rule): Route = ^.asInstanceOf[js.Dynamic].applyDynamic("createHeaderRoute")(hasRuleRestrictedRedirectPaths.asInstanceOf[js.Any]).asInstanceOf[Route]
+  inline def createHeaderRoute(param0: Rule): Route = ^.asInstanceOf[js.Dynamic].applyDynamic("createHeaderRoute")(param0.asInstanceOf[js.Any]).asInstanceOf[Route]
   
-  inline def createRedirectRoute(hasRuleRestrictedRedirectPaths: RestrictedRedirectPathsRule): Route = ^.asInstanceOf[js.Dynamic].applyDynamic("createRedirectRoute")(hasRuleRestrictedRedirectPaths.asInstanceOf[js.Any]).asInstanceOf[Route]
+  inline def createRedirectRoute(param0: RestrictedRedirectPathsRule): Route = ^.asInstanceOf[js.Dynamic].applyDynamic("createRedirectRoute")(param0.asInstanceOf[js.Any]).asInstanceOf[Route]
   
   inline def getCustomRoute(params: RestrictedRedirectPathsArray): Route & Redirect = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomRoute")(params.asInstanceOf[js.Any]).asInstanceOf[Route & Redirect]
   inline def getCustomRoute(params: RestrictedRedirectPathsRuleType): Route & Rewrite = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomRoute")(params.asInstanceOf[js.Any]).asInstanceOf[Route & Rewrite]

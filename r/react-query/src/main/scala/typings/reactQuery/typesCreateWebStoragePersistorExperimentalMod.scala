@@ -13,7 +13,7 @@ object typesCreateWebStoragePersistorExperimentalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createWebStoragePersistor(hasStorageKeyThrottleTimeSerializeDeserialize: CreateWebStoragePersistorOptions): Persistor = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebStoragePersistor")(hasStorageKeyThrottleTimeSerializeDeserialize.asInstanceOf[js.Any]).asInstanceOf[Persistor]
+  inline def createWebStoragePersistor(param0: CreateWebStoragePersistorOptions): Persistor = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebStoragePersistor")(param0.asInstanceOf[js.Any]).asInstanceOf[Persistor]
   
   trait CreateWebStoragePersistorOptions extends StObject {
     

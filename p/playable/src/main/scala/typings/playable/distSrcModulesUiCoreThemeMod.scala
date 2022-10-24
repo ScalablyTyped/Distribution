@@ -15,7 +15,7 @@ object distSrcModulesUiCoreThemeMod {
   @js.native
   open class default protected ()
     extends typings.playable.distSrcModulesUiCoreThemeThemeServiceMod.default {
-    def this(hasThemeConfig: ThemeConfig) = this()
+    def this(param0: ThemeConfig) = this()
   }
   object default {
     

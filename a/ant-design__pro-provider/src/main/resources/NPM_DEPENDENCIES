@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/pro-provider" : "2.0.9"
+      "@ant-design/pro-provider" : "2.0.10"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/pro-provider" : "2.0.9"
+      "@ant-design/pro-provider" : "2.0.10"
     }
   ],
   "compile-devDependencies" : [

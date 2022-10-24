@@ -10,7 +10,7 @@ object distObserverComponentMod {
   
   object Observer {
     
-    inline def apply(hasChildrenRender: IObserverProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasChildrenRender.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(param0: IObserverProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("mobx-react-lite/dist/ObserverComponent", "Observer")
     @js.native

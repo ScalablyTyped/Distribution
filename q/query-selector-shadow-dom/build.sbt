@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "query-selector-shadow-dom"
-version := "1.0.0-db8d85"
-scalaVersion := "3.1.2"
+version := "1.0.0-3d1f11"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

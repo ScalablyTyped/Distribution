@@ -13,7 +13,7 @@ object libFormErrorListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasHelpHelpStatusErrorsWarningsRootClassNameFieldIdOnVisibleChanged: ErrorListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHelpHelpStatusErrorsWarningsRootClassNameFieldIdOnVisibleChanged.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ErrorListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ErrorListProps extends StObject {
     

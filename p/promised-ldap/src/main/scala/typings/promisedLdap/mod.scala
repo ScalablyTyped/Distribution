@@ -15,7 +15,7 @@ object mod {
   @JSImport("promised-ldap", JSImport.Namespace)
   @js.native
   open class ^ protected () extends Client {
-    def this(hasUrl: Url) = this()
+    def this(param0: Url) = this()
   }
   
   @js.native

@@ -187,7 +187,7 @@ object mod {
       * onSave is called when the input blur event is triggered or enter key is pressed
       * returns an object: {name, value, previousValue} which correspond to the input name, value, and previous value before changes were made
       */
-    var onSave: js.UndefOr[js.Function1[/* hasNameValuePreviousValue */ onSaveProps, Unit]] = js.undefined
+    var onSave: js.UndefOr[js.Function1[/* param0 */ onSaveProps, Unit]] = js.undefined
     
     /**
       * placeholder is shown in the display element when value is empty
@@ -255,7 +255,7 @@ object mod {
       
       inline def setOnEditModeUndefined: Self = StObject.set(x, "onEditMode", js.undefined)
       
-      inline def setOnSave(value: /* hasNameValuePreviousValue */ onSaveProps => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
+      inline def setOnSave(value: /* param0 */ onSaveProps => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
       
       inline def setOnSaveUndefined: Self = StObject.set(x, "onSave", js.undefined)
       

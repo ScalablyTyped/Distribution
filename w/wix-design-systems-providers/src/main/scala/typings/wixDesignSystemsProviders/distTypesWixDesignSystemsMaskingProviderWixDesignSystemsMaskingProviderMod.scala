@@ -10,7 +10,7 @@ object distTypesWixDesignSystemsMaskingProviderWixDesignSystemsMaskingProviderMo
   
   object WixDesignSystemsMaskingProvider {
     
-    inline def apply(hasChildren: WixDesignSystemsMaskingProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(param0: WixDesignSystemsMaskingProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("wix-design-systems-providers/dist/types/WixDesignSystemsMaskingProvider/WixDesignSystemsMaskingProvider", "WixDesignSystemsMaskingProvider")
     @js.native

@@ -20,7 +20,7 @@ object distLibFormattersIacOutputTextFormattersMod {
   ): IacTestData = (^.asInstanceOf[js.Dynamic].applyDynamic("formatSnykIacTestTestData")(snykIacTestScanResult.asInstanceOf[js.Any], projectName.asInstanceOf[js.Any], orgName.asInstanceOf[js.Any])).asInstanceOf[IacTestData]
   inline def formatSnykIacTestTestData(snykIacTestScanResult: Unit, projectName: String, orgName: String): IacTestData = (^.asInstanceOf[js.Dynamic].applyDynamic("formatSnykIacTestTestData")(snykIacTestScanResult.asInstanceOf[js.Any], projectName.asInstanceOf[js.Any], orgName.asInstanceOf[js.Any])).asInstanceOf[IacTestData]
   
-  inline def formatTestData(hasOldFormattedResultsIacTestMetaIgnoresCount: FormatTestDataParams): IacTestData = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTestData")(hasOldFormattedResultsIacTestMetaIgnoresCount.asInstanceOf[js.Any]).asInstanceOf[IacTestData]
+  inline def formatTestData(param0: FormatTestDataParams): IacTestData = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTestData")(param0.asInstanceOf[js.Any]).asInstanceOf[IacTestData]
   
   trait FormatTestDataParams extends StObject {
     

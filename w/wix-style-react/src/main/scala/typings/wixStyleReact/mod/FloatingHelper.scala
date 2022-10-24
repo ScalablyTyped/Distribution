@@ -2,15 +2,15 @@ package typings.wixStyleReact.mod
 
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.wixStyleReact.floatingHelperContentMod.FloatingHelperContentProps
-import typings.wixStyleReact.floatingHelperMod.default
+import typings.wixStyleReact.distTypesFloatingHelperFloatingHelperContentMod.FloatingHelperContentProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "FloatingHelper")
 @js.native
-class FloatingHelper () extends default
+open class FloatingHelper ()
+  extends typings.wixStyleReact.distTypesFloatingHelperMod.default
 /* static members */
 object FloatingHelper {
   

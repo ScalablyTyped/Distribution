@@ -101,7 +101,7 @@ object libTypescriptWebHandlersGestureHandlerMod {
     
     /* private */ var isFinished: Any = js.native
     
-    def isPointerInBounds(hasXY: X): Boolean = js.native
+    def isPointerInBounds(param0: X): Boolean = js.native
     
     /* private */ var lastSentState: Any = js.native
     
@@ -184,7 +184,7 @@ object libTypescriptWebHandlersGestureHandlerMod {
     
     /* private */ var tryToSendMoveEvent: Any = js.native
     
-    def updateGestureConfig(hasEnabledProps: Config): Unit = js.native
+    def updateGestureConfig(param0: Config): Unit = js.native
     
     /* private */ var validateHitSlops: Any = js.native
     

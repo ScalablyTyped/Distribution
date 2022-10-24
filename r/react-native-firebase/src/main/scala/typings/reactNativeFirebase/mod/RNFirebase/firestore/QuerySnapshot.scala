@@ -38,6 +38,27 @@ object QuerySnapshot {
     __obj.asInstanceOf[QuerySnapshot]
   }
   
+  extension [Self <: QuerySnapshot](x: Self) {
+    
+    inline def setDocChanges(value: js.Array[DocumentChange]): Self = StObject.set(x, "docChanges", value.asInstanceOf[js.Any])
+    
+    inline def setDocChangesVarargs(value: DocumentChange*): Self = StObject.set(x, "docChanges", js.Array(value*))
+    
+    inline def setDocs(value: js.Array[DocumentSnapshot]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    
+    inline def setDocsVarargs(value: DocumentSnapshot*): Self = StObject.set(x, "docs", js.Array(value*))
+    
+    inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    
+    inline def setForEach(value: js.Function1[/* snapshot */ DocumentSnapshot, Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+    
+    inline def setMetadata(value: SnapshotMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+  }
+  
   trait NativeData extends StObject {
     
     var changes: js.Array[NativeDocumentChange]
@@ -69,26 +90,5 @@ object QuerySnapshot {
       
       inline def setMetadata(value: SnapshotMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
-  }
-  
-  extension [Self <: QuerySnapshot](x: Self) {
-    
-    inline def setDocChanges(value: js.Array[DocumentChange]): Self = StObject.set(x, "docChanges", value.asInstanceOf[js.Any])
-    
-    inline def setDocChangesVarargs(value: DocumentChange*): Self = StObject.set(x, "docChanges", js.Array(value*))
-    
-    inline def setDocs(value: js.Array[DocumentSnapshot]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
-    
-    inline def setDocsVarargs(value: DocumentSnapshot*): Self = StObject.set(x, "docs", js.Array(value*))
-    
-    inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
-    
-    inline def setForEach(value: js.Function1[/* snapshot */ DocumentSnapshot, Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
-    
-    inline def setMetadata(value: SnapshotMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-    
-    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-    
-    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

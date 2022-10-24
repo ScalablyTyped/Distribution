@@ -20,20 +20,13 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useCustomLayerProps[Datum /* <: js.Object */](hasNodes: CustomLayerProps[Datum]): CustomLayerProps[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomLayerProps")(hasNodes.asInstanceOf[js.Any]).asInstanceOf[CustomLayerProps[Datum]]
+  inline def useCustomLayerProps[Datum /* <: js.Object */](param0: CustomLayerProps[Datum]): CustomLayerProps[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomLayerProps")(param0.asInstanceOf[js.Any]).asInstanceOf[CustomLayerProps[Datum]]
   
-  inline def useHierarchy[Datum /* <: js.Object */](hasRootGetValue: GetValue[Datum]): HierarchyNode[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHierarchy")(hasRootGetValue.asInstanceOf[js.Any]).asInstanceOf[HierarchyNode[Datum]]
+  inline def useHierarchy[Datum /* <: js.Object */](param0: GetValue[Datum]): HierarchyNode[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHierarchy")(param0.asInstanceOf[js.Any]).asInstanceOf[HierarchyNode[Datum]]
   
-  inline def useInteractiveTreeMapNodes[Datum /* <: js.Object */](
-    nodes: js.Array[ComputedNode[Datum]],
-    hasIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltip: IsInteractive[Datum]
-  ): js.Array[ComputedNodeWithHandlers[Datum]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useInteractiveTreeMapNodes")(nodes.asInstanceOf[js.Any], hasIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltip.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComputedNodeWithHandlers[Datum]]]
+  inline def useInteractiveTreeMapNodes[Datum /* <: js.Object */](nodes: js.Array[ComputedNode[Datum]], param1: IsInteractive[Datum]): js.Array[ComputedNodeWithHandlers[Datum]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useInteractiveTreeMapNodes")(nodes.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComputedNodeWithHandlers[Datum]]]
   
-  inline def useTreeMap[Datum /* <: js.Object */](
-    hasDataWidthHeightIdentityValueValueFormatLeavesOnlyTileInnerPaddingOuterPaddingLabelOrientLabelEnableParentLabelParentLabelParentLabelSizeParentLabelPositionParentLabelPaddingColorsColorByNodeOpacityBorderColorLabelTextColorParentLabelTextColor: BorderColor[Datum]
-  ): Hierarchy[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTreeMap")(hasDataWidthHeightIdentityValueValueFormatLeavesOnlyTileInnerPaddingOuterPaddingLabelOrientLabelEnableParentLabelParentLabelParentLabelSizeParentLabelPositionParentLabelPaddingColorsColorByNodeOpacityBorderColorLabelTextColorParentLabelTextColor.asInstanceOf[js.Any]).asInstanceOf[Hierarchy[Datum]]
+  inline def useTreeMap[Datum /* <: js.Object */](param0: BorderColor[Datum]): Hierarchy[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTreeMap")(param0.asInstanceOf[js.Any]).asInstanceOf[Hierarchy[Datum]]
   
-  inline def useTreeMapLayout[Datum /* <: js.Object */](
-    hasWidthHeightTileInnerPaddingOuterPaddingEnableParentLabelParentLabelSizeParentLabelPositionLeavesOnly: EnableParentLabel
-  ): TreemapLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTreeMapLayout")(hasWidthHeightTileInnerPaddingOuterPaddingEnableParentLabelParentLabelSizeParentLabelPositionLeavesOnly.asInstanceOf[js.Any]).asInstanceOf[TreemapLayout[Datum]]
+  inline def useTreeMapLayout[Datum /* <: js.Object */](param0: EnableParentLabel): TreemapLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTreeMapLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[TreemapLayout[Datum]]
 }

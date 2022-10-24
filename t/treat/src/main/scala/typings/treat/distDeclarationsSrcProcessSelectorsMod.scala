@@ -24,7 +24,7 @@ object distDeclarationsSrcProcessSelectorsMod {
   
   inline def isThemedSelector(selector: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThemedSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def processSelectors(hasStyleThemeRefThemes: ProcessSelectorsParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("processSelectors")(hasStyleThemeRefThemes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def processSelectors(param0: ProcessSelectorsParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("processSelectors")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait ProcessSelectorsParams extends StObject {
     

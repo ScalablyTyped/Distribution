@@ -12,10 +12,5 @@ object distTypesComponentsAxesMod {
   
   @JSImport("@nivo/axes/dist/types/components/Axes", "Axes")
   @js.native
-  val Axes: MemoExoticComponent[
-    js.Function1[
-      /* hasXScaleYScaleWidthHeightTopRightBottomLeft */ Left[ScaleValue, ScaleValue], 
-      Element
-    ]
-  ] = js.native
+  val Axes: MemoExoticComponent[js.Function1[/* param0 */ Left[ScaleValue, ScaleValue], Element]] = js.native
 }

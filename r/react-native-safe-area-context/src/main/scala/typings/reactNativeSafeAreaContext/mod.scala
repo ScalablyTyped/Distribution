@@ -40,7 +40,7 @@ object mod {
   @js.native
   val SafeAreaInsetsContext: Context[EdgeInsets | Null] = js.native
   
-  inline def SafeAreaProvider(hasChildrenInitialMetricsInitialSafeAreaInsetsStyleOthers: SafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaProvider")(hasChildrenInitialMetricsInitialSafeAreaInsetsStyleOthers.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SafeAreaProvider(param0: SafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-native-safe-area-context", "SafeAreaView")
   @js.native

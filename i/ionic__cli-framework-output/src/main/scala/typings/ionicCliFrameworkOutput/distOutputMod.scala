@@ -15,7 +15,7 @@ object distOutputMod {
   open class StreamOutputStrategy protected ()
     extends StObject
        with OutputStrategy {
-    def this(hasStreamColors: StreamOutputStrategyOptions) = this()
+    def this(param0: StreamOutputStrategyOptions) = this()
     
     /* CompleteClass */
     override val colors: Colors = js.native
@@ -33,7 +33,7 @@ object distOutputMod {
   @JSImport("@ionic/cli-framework-output/dist/output", "TTYOutputRedrawer")
   @js.native
   open class TTYOutputRedrawer protected () extends StObject {
-    def this(hasStream: TTYOutputRedrawerOptions) = this()
+    def this(param0: TTYOutputRedrawerOptions) = this()
     
     def clear(): Unit = js.native
     
@@ -49,7 +49,7 @@ object distOutputMod {
   @JSImport("@ionic/cli-framework-output/dist/output", "TTYOutputStrategy")
   @js.native
   open class TTYOutputStrategy () extends StreamOutputStrategy {
-    def this(hasStreamColors: TTYOutputStrategyOptions) = this()
+    def this(param0: TTYOutputStrategyOptions) = this()
     
     /* protected */ val redrawer: TTYOutputRedrawer = js.native
     

@@ -12,5 +12,5 @@ object distTypesPieCanvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def PieCanvas[RawDatum](hasIsInteractiveThemeRenderWrapperOtherProps: PieCanvasProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PieCanvas")(hasIsInteractiveThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PieCanvas[RawDatum](param0: PieCanvasProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PieCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

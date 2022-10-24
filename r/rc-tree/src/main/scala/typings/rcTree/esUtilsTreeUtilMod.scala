@@ -30,20 +30,17 @@ object esUtilsTreeUtilMod {
   inline def convertDataToEntities(dataNodes: js.Array[DataNode]): KeyEntities = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any]).asInstanceOf[KeyEntities]
   inline def convertDataToEntities(
     dataNodes: js.Array[DataNode],
-    hasInitWrapperProcessEntityOnProcessFinishedExternalGetKeyChildrenPropNameFieldNames: Unit,
+    param1: Unit,
     /** @deprecated Use `config.externalGetKey` instead */
   legacyExternalGetKey: ExternalGetKey
-  ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinishedExternalGetKeyChildrenPropNameFieldNames.asInstanceOf[js.Any], legacyExternalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
+  ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], legacyExternalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
+  inline def convertDataToEntities(dataNodes: js.Array[DataNode], param1: ChildrenPropName): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
   inline def convertDataToEntities(
     dataNodes: js.Array[DataNode],
-    hasInitWrapperProcessEntityOnProcessFinishedExternalGetKeyChildrenPropNameFieldNames: ChildrenPropName
-  ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinishedExternalGetKeyChildrenPropNameFieldNames.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
-  inline def convertDataToEntities(
-    dataNodes: js.Array[DataNode],
-    hasInitWrapperProcessEntityOnProcessFinishedExternalGetKeyChildrenPropNameFieldNames: ChildrenPropName,
+    param1: ChildrenPropName,
     /** @deprecated Use `config.externalGetKey` instead */
   legacyExternalGetKey: ExternalGetKey
-  ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinishedExternalGetKeyChildrenPropNameFieldNames.asInstanceOf[js.Any], legacyExternalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
+  ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], legacyExternalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
   
   inline def convertNodePropsToEventData[TreeDataType /* <: BasicDataNode */](props: TreeNodeProps[TreeDataType]): EventDataNode[TreeDataType] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertNodePropsToEventData")(props.asInstanceOf[js.Any]).asInstanceOf[EventDataNode[TreeDataType]]
   
@@ -58,10 +55,7 @@ object esUtilsTreeUtilMod {
   
   inline def getKey(key: Key, pos: String): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(key.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Key]
   
-  inline def getTreeNodeProps[TreeDataType /* <: BasicDataNode */](
-    key: Key,
-    hasExpandedKeysSelectedKeysLoadedKeysLoadingKeysCheckedKeysHalfCheckedKeysDragOverNodeKeyDropPositionKeyEntities: TreeNodeRequiredProps[TreeDataType]
-  ): DragOver = (^.asInstanceOf[js.Dynamic].applyDynamic("getTreeNodeProps")(key.asInstanceOf[js.Any], hasExpandedKeysSelectedKeysLoadedKeysLoadingKeysCheckedKeysHalfCheckedKeysDragOverNodeKeyDropPositionKeyEntities.asInstanceOf[js.Any])).asInstanceOf[DragOver]
+  inline def getTreeNodeProps[TreeDataType /* <: BasicDataNode */](key: Key, param1: TreeNodeRequiredProps[TreeDataType]): DragOver = (^.asInstanceOf[js.Dynamic].applyDynamic("getTreeNodeProps")(key.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[DragOver]
   
   inline def traverseDataNodes(dataNodes: js.Array[DataNode], callback: js.Function1[/* data */ Index, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDataNodes")(dataNodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def traverseDataNodes(dataNodes: js.Array[DataNode], callback: js.Function1[/* data */ Index, Unit], config: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDataNodes")(dataNodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]

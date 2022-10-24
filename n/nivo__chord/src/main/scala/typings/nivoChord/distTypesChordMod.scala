@@ -12,5 +12,5 @@ object distTypesChordMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Chord(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: ChordSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Chord")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Chord(param0: ChordSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Chord")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

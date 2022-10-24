@@ -44,9 +44,7 @@ object typesUseCollapseTransitionMod {
     val exit: js.UndefOr[Double] = js.native
   }
   
-  inline def useCollapseTransition[E /* <: HTMLElement */](
-    hasPropNodeRefPropStyleClassNameTransitionInTimeoutMinHeightMinPaddingTopMinPaddingBottomTemporaryAppearEnterExitOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited: CollapseTransitionHookOptions[E]
-  ): CollapseTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapseTransition")(hasPropNodeRefPropStyleClassNameTransitionInTimeoutMinHeightMinPaddingTopMinPaddingBottomTemporaryAppearEnterExitOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited.asInstanceOf[js.Any]).asInstanceOf[CollapseTransitionHookReturnValue[E]]
+  inline def useCollapseTransition[E /* <: HTMLElement */](param0: CollapseTransitionHookOptions[E]): CollapseTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapseTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[CollapseTransitionHookReturnValue[E]]
   
   trait CollapseConfigurationStyle extends StObject {
     

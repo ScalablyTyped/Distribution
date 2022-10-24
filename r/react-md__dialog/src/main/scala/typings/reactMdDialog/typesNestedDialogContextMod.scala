@@ -12,7 +12,7 @@ object typesNestedDialogContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def NestedDialogContextProvider(hasChildren: NestedDialogContextProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("NestedDialogContextProvider")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def NestedDialogContextProvider(param0: NestedDialogContextProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("NestedDialogContextProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useNestedDialogContext(): NestedDialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestedDialogContext")().asInstanceOf[NestedDialogContext]
   

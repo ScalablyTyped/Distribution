@@ -25,18 +25,18 @@ object distTypesEventSelectionMod {
   
   inline def isAllSelected(target: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllSelected")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def modifySelection(hasFocusNodeFocusOffset: FocusNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modifySelection")(hasFocusNodeFocusOffset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def modifySelection(param0: FocusNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modifySelection")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def modifySelectionPerMouseMove(selectionRange: Range, hasDocumentTargetNodeOffset: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelectionPerMouseMove")(selectionRange.asInstanceOf[js.Any], hasDocumentTargetNodeOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def modifySelectionPerMouseMove(selectionRange: SelectionRange, hasDocumentTargetNodeOffset: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelectionPerMouseMove")(selectionRange.asInstanceOf[js.Any], hasDocumentTargetNodeOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def modifySelectionPerMouseMove(selectionRange: Range, param1: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelectionPerMouseMove")(selectionRange.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def modifySelectionPerMouseMove(selectionRange: SelectionRange, param1: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelectionPerMouseMove")(selectionRange.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def moveSelection(node: Element, direction: `-1` | `1`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveSelection")(node.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def selectAll(target: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setSelection(hasFocusNodeFocusOffsetAnchorNodeAnchorOffset: AnchorNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelection")(hasFocusNodeFocusOffsetAnchorNodeAnchorOffset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setSelection(param0: AnchorNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelection")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setSelectionPerMouseDown(hasDocumentTargetClickCountNodeOffset: ClickCount): js.UndefOr[Range | SelectionRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelectionPerMouseDown")(hasDocumentTargetClickCountNodeOffset.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Range | SelectionRange]]
+  inline def setSelectionPerMouseDown(param0: ClickCount): js.UndefOr[Range | SelectionRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelectionPerMouseDown")(param0.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Range | SelectionRange]]
   
   inline def setSelectionRange(element: Element, anchorOffset: Double, focusOffset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSelectionRange")(element.asInstanceOf[js.Any], anchorOffset.asInstanceOf[js.Any], focusOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__docs-tools
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 Shared utility functions for frameworks to implement docs

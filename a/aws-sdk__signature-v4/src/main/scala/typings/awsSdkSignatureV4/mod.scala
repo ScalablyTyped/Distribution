@@ -23,21 +23,21 @@ object mod {
   @js.native
   open class SignatureV4 protected ()
     extends typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4 {
-    def this(hasApplyChecksumCredentialsRegionServiceSha256UriEscapePath: SignatureV4Init & SignatureV4CryptoInit) = this()
+    def this(param0: SignatureV4Init & SignatureV4CryptoInit) = this()
   }
   
   inline def clearCredentialCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCredentialCache")().asInstanceOf[Unit]
   
   inline def createScope(shortDate: String, region: String, service: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createScope")(shortDate.asInstanceOf[js.Any], region.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getCanonicalHeaders(hasHeaders: HttpRequest): HeaderBag = ^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalHeaders")(hasHeaders.asInstanceOf[js.Any]).asInstanceOf[HeaderBag]
-  inline def getCanonicalHeaders(hasHeaders: HttpRequest, unsignableHeaders: Unit, signableHeaders: Set[String]): HeaderBag = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalHeaders")(hasHeaders.asInstanceOf[js.Any], unsignableHeaders.asInstanceOf[js.Any], signableHeaders.asInstanceOf[js.Any])).asInstanceOf[HeaderBag]
-  inline def getCanonicalHeaders(hasHeaders: HttpRequest, unsignableHeaders: Set[String]): HeaderBag = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalHeaders")(hasHeaders.asInstanceOf[js.Any], unsignableHeaders.asInstanceOf[js.Any])).asInstanceOf[HeaderBag]
-  inline def getCanonicalHeaders(hasHeaders: HttpRequest, unsignableHeaders: Set[String], signableHeaders: Set[String]): HeaderBag = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalHeaders")(hasHeaders.asInstanceOf[js.Any], unsignableHeaders.asInstanceOf[js.Any], signableHeaders.asInstanceOf[js.Any])).asInstanceOf[HeaderBag]
+  inline def getCanonicalHeaders(param0: HttpRequest): HeaderBag = ^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalHeaders")(param0.asInstanceOf[js.Any]).asInstanceOf[HeaderBag]
+  inline def getCanonicalHeaders(param0: HttpRequest, unsignableHeaders: Unit, signableHeaders: Set[String]): HeaderBag = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalHeaders")(param0.asInstanceOf[js.Any], unsignableHeaders.asInstanceOf[js.Any], signableHeaders.asInstanceOf[js.Any])).asInstanceOf[HeaderBag]
+  inline def getCanonicalHeaders(param0: HttpRequest, unsignableHeaders: Set[String]): HeaderBag = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalHeaders")(param0.asInstanceOf[js.Any], unsignableHeaders.asInstanceOf[js.Any])).asInstanceOf[HeaderBag]
+  inline def getCanonicalHeaders(param0: HttpRequest, unsignableHeaders: Set[String], signableHeaders: Set[String]): HeaderBag = (^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalHeaders")(param0.asInstanceOf[js.Any], unsignableHeaders.asInstanceOf[js.Any], signableHeaders.asInstanceOf[js.Any])).asInstanceOf[HeaderBag]
   
-  inline def getCanonicalQuery(hasQuery: HttpRequest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalQuery")(hasQuery.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getCanonicalQuery(param0: HttpRequest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalQuery")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getPayloadHash(hasHeadersBody: HttpRequest, hashConstructor: HashConstructor): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayloadHash")(hasHeadersBody.asInstanceOf[js.Any], hashConstructor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getPayloadHash(param0: HttpRequest, hashConstructor: HashConstructor): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayloadHash")(param0.asInstanceOf[js.Any], hashConstructor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def getSigningKey(
     sha256Constructor: HashConstructor,

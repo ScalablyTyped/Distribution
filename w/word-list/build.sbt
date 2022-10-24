@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "word-list"
-version := "3.1.0-ea1e4b"
-scalaVersion := "3.1.2"
+version := "3.1.0-0c0378"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

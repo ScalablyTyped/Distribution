@@ -15,9 +15,7 @@ object distTypesBulletMarkersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BulletMarkers(
-    hasScaleLayoutReverseMarkersHeightMarkerSizeComponentOnMouseEnterOnMouseLeaveOnClick: BulletMarkersProps & EventHandlers
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletMarkers")(hasScaleLayoutReverseMarkersHeightMarkerSizeComponentOnMouseEnterOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BulletMarkers(param0: BulletMarkersProps & EventHandlers): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletMarkers")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Record<'onMouseEnter' | 'onMouseLeave' | 'onClick', @nivo/bullet.@nivo/bullet/dist/types/BulletMarkers.MouseEventWithDatum> */
   trait EventHandlers extends StObject {

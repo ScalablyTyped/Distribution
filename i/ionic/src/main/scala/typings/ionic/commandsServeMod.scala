@@ -25,6 +25,6 @@ object commandsServeMod {
   open class ServeCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
-    def preRun(inputs: CommandLineInputs, options: CommandLineOptions, hasLocation: CommandInstanceInfo): js.Promise[Unit] = js.native
+    def preRun(inputs: CommandLineInputs, options: CommandLineOptions, param2: CommandInstanceInfo): js.Promise[Unit] = js.native
   }
 }

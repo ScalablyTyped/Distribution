@@ -17,7 +17,7 @@ object distSharedSrcAugmentElementMod {
   
   inline def augmentElement(element: ReactElement & RefAttributes[Any], newProps: Record[String, Any]): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("augmentElement")(element.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  inline def createEmbeddableAdapter[T /* <: Size */](sizeAdapter: SizeAdapter[T]): js.Function2[/* element */ ReactElement, /* hasSizeProps */ RecordWithSize, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmbeddableAdapter")(sizeAdapter.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* element */ ReactElement, /* hasSizeProps */ RecordWithSize, ReactElement]]
+  inline def createEmbeddableAdapter[T /* <: Size */](sizeAdapter: SizeAdapter[T]): js.Function2[/* element */ ReactElement, /* param1 */ RecordWithSize, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmbeddableAdapter")(sizeAdapter.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* element */ ReactElement, /* param1 */ RecordWithSize, ReactElement]]
   
   type RecordWithSize = typings.orbitUiReactComponents.anon.Size & (Record[String, Any])
 }

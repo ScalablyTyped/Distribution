@@ -237,7 +237,7 @@ object mod {
     var dotSize: Double = js.native
     
     def fromData(pointGroups: js.Array[PointGroup]): Unit = js.native
-    def fromData(pointGroups: js.Array[PointGroup], hasClear: FromDataOptions): Unit = js.native
+    def fromData(pointGroups: js.Array[PointGroup], param1: FromDataOptions): Unit = js.native
     
     def fromDataURL(dataUrl: String): js.Promise[Unit] = js.native
     def fromDataURL(dataUrl: String, options: Height): js.Promise[Unit] = js.native

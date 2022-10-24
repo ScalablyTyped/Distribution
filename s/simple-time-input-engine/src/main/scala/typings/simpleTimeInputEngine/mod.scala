@@ -13,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def formatTimeForDisplay(hasTimeClockMode: ClockMode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTimeForDisplay")(hasTimeClockMode.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatTimeForDisplay(param0: ClockMode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTimeForDisplay")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def parseInputChange(hasNewValuePreviousTimeClockMode: NewValue): Time = ^.asInstanceOf[js.Dynamic].applyDynamic("parseInputChange")(hasNewValuePreviousTimeClockMode.asInstanceOf[js.Any]).asInstanceOf[Time]
+  inline def parseInputChange(param0: NewValue): Time = ^.asInstanceOf[js.Dynamic].applyDynamic("parseInputChange")(param0.asInstanceOf[js.Any]).asInstanceOf[Time]
 }

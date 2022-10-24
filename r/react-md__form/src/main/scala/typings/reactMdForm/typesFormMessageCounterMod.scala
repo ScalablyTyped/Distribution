@@ -14,7 +14,7 @@ object typesFormMessageCounterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FormMessageCounter(hasChildrenClassNameProps: FormMessageCounterProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("FormMessageCounter")(hasChildrenClassNameProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def FormMessageCounter(param0: FormMessageCounterProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("FormMessageCounter")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait FormMessageCounterProps
     extends StObject

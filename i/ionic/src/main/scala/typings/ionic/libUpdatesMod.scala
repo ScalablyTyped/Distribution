@@ -13,13 +13,13 @@ object libUpdatesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getUpdateConfig(hasConfig: GetUpdateConfigDeps): js.Promise[UpdateConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdateConfig")(hasConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UpdateConfig]]
+  inline def getUpdateConfig(param0: GetUpdateConfigDeps): js.Promise[UpdateConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdateConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UpdateConfig]]
   
   inline def readUpdateConfig(dir: String): js.Promise[UpdateConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("readUpdateConfig")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UpdateConfig]]
   
   inline def runNotify(env: IonicEnvironment, pkg: PersistedPackage, latestVersion: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runNotify")(env.asInstanceOf[js.Any], pkg.asInstanceOf[js.Any], latestVersion.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def runUpdateCheck(hasConfig: PersistPackageVersionsDeps): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("runUpdateCheck")(hasConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def runUpdateCheck(param0: PersistPackageVersionsDeps): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("runUpdateCheck")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def runUpdateNotify(env: IonicEnvironment, pkg: PackageJson): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runUpdateNotify")(env.asInstanceOf[js.Any], pkg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   

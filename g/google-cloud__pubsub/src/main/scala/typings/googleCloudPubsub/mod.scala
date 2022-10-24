@@ -137,7 +137,7 @@ object mod {
       */
     def this(
       sub: Subscriber,
-      hasAckIdMessageDeliveryAttempt: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.pubsub.v1.IReceivedMessage */ Any
+      param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.pubsub.v1.IReceivedMessage */ Any
     ) = this()
   }
   

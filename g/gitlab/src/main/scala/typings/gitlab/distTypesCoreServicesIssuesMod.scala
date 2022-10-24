@@ -17,7 +17,7 @@ object distTypesCoreServicesIssuesMod {
   @JSImport("gitlab/dist/types/core/services/Issues", "Issues")
   @js.native
   open class Issues () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def addSpentTime(projectId: String, issueId: Double, duration: String): js.Promise[js.Object] = js.native
     def addSpentTime(projectId: String, issueId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
@@ -30,9 +30,7 @@ object distTypesCoreServicesIssuesMod {
     def addTimeEstimate(projectId: Double, issueId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
     
     def all(): js.Promise[GetResponse] = js.native
-    def all(
-      hasProjectIdGroupIdOptions: projectIdstringnumberunde | groupIdstringnumberundefi | PaginatedRequestOptions
-    ): js.Promise[GetResponse] = js.native
+    def all(param0: projectIdstringnumberunde | groupIdstringnumberundefi | PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     
     def create(projectId: String): js.Promise[js.Object] = js.native
     def create(projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native

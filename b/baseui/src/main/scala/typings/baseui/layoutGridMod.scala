@@ -51,11 +51,9 @@ object layoutGridMod {
     val fluid: typings.baseui.baseuiStrings.fluid = js.native
   }
   
-  inline def Cell(hasAlignChildrenGridColumnsGridGapsGridGuttersGridUnitOrderSkipSpanOverrides: CellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(hasAlignChildrenGridColumnsGridGapsGridGuttersGridUnitOrderSkipSpanOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Cell(param0: CellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def Grid(
-    hasAlignBehaviorChildrenGridColumnsGridGapsGridGuttersGridMarginsGridMaxWidthGridStyleGridUnitOverrides: GridProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(hasAlignBehaviorChildrenGridColumnsGridGapsGridGuttersGridMarginsGridMaxWidthGridStyleGridUnitOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Grid(param0: GridProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Readonly<{ readonly default :'default',  readonly compact :'compact'}> */
   object STYLE extends Shortcut {
@@ -101,17 +99,11 @@ object layoutGridMod {
   
   @JSImport("baseui/layout-grid", "Unstable_Cell")
   @js.native
-  val UnstableCell: js.Function1[
-    /* hasAlignChildrenGridColumnsGridGapsGridGuttersGridUnitOrderSkipSpanOverrides */ CellProps, 
-    Element
-  ] = js.native
+  val UnstableCell: js.Function1[/* param0 */ CellProps, Element] = js.native
   
   @JSImport("baseui/layout-grid", "Unstable_Grid")
   @js.native
-  val UnstableGrid: js.Function1[
-    /* hasAlignBehaviorChildrenGridColumnsGridGapsGridGuttersGridMarginsGridMaxWidthGridStyleGridUnitOverrides */ GridProps, 
-    Element
-  ] = js.native
+  val UnstableGrid: js.Function1[/* param0 */ GridProps, Element] = js.native
   
   @JSImport("baseui/layout-grid", "Unstable_StyledCell")
   @js.native

@@ -18,10 +18,7 @@ object libTypescriptComponentsModalMod extends Shortcut {
   @JSImport("react-native-paper/lib/typescript/components/Modal", JSImport.Default)
   @js.native
   val default: ComponentType[PickPropsstylechildrentes] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasDismissableVisibleOverlayAccessibilityLabelOnDismissChildrenContentContainerStyleStyleThemeTestID */ Props, 
-      Element | Null
-    ]), 
+    ComponentType[Props] & (js.Function1[/* param0 */ Props, Element | Null]), 
     js.Object
   ]) = js.native
   
@@ -118,19 +115,13 @@ object libTypescriptComponentsModalMod extends Shortcut {
   }
   
   type _To = ComponentType[PickPropsstylechildrentes] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasDismissableVisibleOverlayAccessibilityLabelOnDismissChildrenContentContainerStyleStyleThemeTestID */ Props, 
-      Element | Null
-    ]), 
+    ComponentType[Props] & (js.Function1[/* param0 */ Props, Element | Null]), 
     js.Object
   ])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsModalMod.foo` */
   override def _to: ComponentType[PickPropsstylechildrentes] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasDismissableVisibleOverlayAccessibilityLabelOnDismissChildrenContentContainerStyleStyleThemeTestID */ Props, 
-      Element | Null
-    ]), 
+    ComponentType[Props] & (js.Function1[/* param0 */ Props, Element | Null]), 
     js.Object
   ]) = default
 }

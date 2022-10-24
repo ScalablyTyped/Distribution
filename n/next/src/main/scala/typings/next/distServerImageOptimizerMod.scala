@@ -67,7 +67,7 @@ object distServerImageOptimizerMod {
   @JSImport("next/dist/server/image-optimizer", "ImageOptimizerCache")
   @js.native
   open class ImageOptimizerCache protected () extends StObject {
-    def this(hasDistDirNextConfig: NextConfig) = this()
+    def this(param0: NextConfig) = this()
     
     /* private */ var cacheDir: Any = js.native
     
@@ -91,7 +91,7 @@ object distServerImageOptimizerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getCacheKey(hasHrefWidthQualityMimeType: Href): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheKey")(hasHrefWidthQualityMimeType.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getCacheKey(param0: Href): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheKey")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def validateParams(req: IncomingMessage, query: ParsedUrlQuery, nextConfig: NextConfigComplete, isDev: Boolean): ImageParamsResult | ErrorMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("validateParams")(req.asInstanceOf[js.Any], query.asInstanceOf[js.Any], nextConfig.asInstanceOf[js.Any], isDev.asInstanceOf[js.Any])).asInstanceOf[ImageParamsResult | ErrorMessage]
   }

@@ -13,10 +13,10 @@ object buildRunnerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createXcodeBuildHooks(projectRoot: String, hasXcodeProjectNameResolveReject: Reject): OnData = (^.asInstanceOf[js.Dynamic].applyDynamic("createXcodeBuildHooks")(projectRoot.asInstanceOf[js.Any], hasXcodeProjectNameResolveReject.asInstanceOf[js.Any])).asInstanceOf[OnData]
+  inline def createXcodeBuildHooks(projectRoot: String, param1: Reject): OnData = (^.asInstanceOf[js.Dynamic].applyDynamic("createXcodeBuildHooks")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnData]
   
   inline def formatXcodeBuildPipeProcessAsync(projectRoot: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("formatXcodeBuildPipeProcessAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def formatXcodeBuildPipeProcessAsync(projectRoot: String, hasXcodeProjectName: XcodeProjectName): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatXcodeBuildPipeProcessAsync")(projectRoot.asInstanceOf[js.Any], hasXcodeProjectName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def formatXcodeBuildPipeProcessAsync(projectRoot: String, param1: XcodeProjectName): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatXcodeBuildPipeProcessAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def getErrorLogFilePath(projectRoot: String): js.Tuple2[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorLogFilePath")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String, String]]
   

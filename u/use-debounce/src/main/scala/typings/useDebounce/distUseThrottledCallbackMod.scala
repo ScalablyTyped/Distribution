@@ -14,5 +14,5 @@ object distUseThrottledCallbackMod {
   val ^ : js.Any = js.native
   
   inline def default[T /* <: js.Function1[/* repeated */ Any, ReturnType[T]] */](func: T, wait: Double): DebouncedState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[DebouncedState[T]]
-  inline def default[T /* <: js.Function1[/* repeated */ Any, ReturnType[T]] */](func: T, wait: Double, hasLeadingTrailing: CallOptions): DebouncedState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], hasLeadingTrailing.asInstanceOf[js.Any])).asInstanceOf[DebouncedState[T]]
+  inline def default[T /* <: js.Function1[/* repeated */ Any, ReturnType[T]] */](func: T, wait: Double, param2: CallOptions): DebouncedState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[DebouncedState[T]]
 }

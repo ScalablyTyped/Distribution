@@ -12,7 +12,7 @@ object libJsonldOrganizationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideAddressContactPointsRest: OrganizationJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideAddressContactPointsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: OrganizationJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait OrganizationJsonLdProps
     extends StObject

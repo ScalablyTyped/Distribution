@@ -15,7 +15,7 @@ open class Target protected ()
   def this(
     targetInfo: TargetInfo,
     session: Unit,
-    browserContext: typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.BrowserContext,
+    browserContext: typings.puppeteerCore.libCjsPuppeteerApiBrowserContextMod.BrowserContext,
     targetManager: TargetManager,
     sessionFactory: js.Function1[
         /* isAutoAttachEmulated */ Boolean, 
@@ -29,7 +29,7 @@ open class Target protected ()
   def this(
     targetInfo: TargetInfo,
     session: Unit,
-    browserContext: typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.BrowserContext,
+    browserContext: typings.puppeteerCore.libCjsPuppeteerApiBrowserContextMod.BrowserContext,
     targetManager: TargetManager,
     sessionFactory: js.Function1[
         /* isAutoAttachEmulated */ Boolean, 
@@ -43,7 +43,7 @@ open class Target protected ()
   def this(
     targetInfo: TargetInfo,
     session: typings.puppeteerCore.libCjsPuppeteerCommonConnectionMod.CDPSession,
-    browserContext: typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.BrowserContext,
+    browserContext: typings.puppeteerCore.libCjsPuppeteerApiBrowserContextMod.BrowserContext,
     targetManager: TargetManager,
     sessionFactory: js.Function1[
         /* isAutoAttachEmulated */ Boolean, 
@@ -60,7 +60,7 @@ open class Target protected ()
   def this(
     targetInfo: TargetInfo,
     session: typings.puppeteerCore.libCjsPuppeteerCommonConnectionMod.CDPSession,
-    browserContext: typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.BrowserContext,
+    browserContext: typings.puppeteerCore.libCjsPuppeteerApiBrowserContextMod.BrowserContext,
     targetManager: TargetManager,
     sessionFactory: js.Function1[
         /* isAutoAttachEmulated */ Boolean, 

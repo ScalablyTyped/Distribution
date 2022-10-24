@@ -14,7 +14,7 @@ object typesConditionalPortalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ConditionalPortal(hasPortalPortalIntoPortalIntoIdChildren: ConditionalPortalProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ConditionalPortal")(hasPortalPortalIntoPortalIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ConditionalPortal(param0: ConditionalPortalProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ConditionalPortal")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait ConditionalPortalProps
     extends StObject

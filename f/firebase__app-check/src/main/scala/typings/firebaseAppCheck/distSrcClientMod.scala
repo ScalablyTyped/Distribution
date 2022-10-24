@@ -15,7 +15,7 @@ object distSrcClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def exchangeToken_heartbeat(hasUrlBody: AppCheckRequest, heartbeatServiceProvider: Provider[heartbeat]): js.Promise[AppCheckTokenInternal] = (^.asInstanceOf[js.Dynamic].applyDynamic("exchangeToken")(hasUrlBody.asInstanceOf[js.Any], heartbeatServiceProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AppCheckTokenInternal]]
+  inline def exchangeToken_heartbeat(param0: AppCheckRequest, heartbeatServiceProvider: Provider[heartbeat]): js.Promise[AppCheckTokenInternal] = (^.asInstanceOf[js.Dynamic].applyDynamic("exchangeToken")(param0.asInstanceOf[js.Any], heartbeatServiceProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AppCheckTokenInternal]]
   
   inline def getExchangeDebugTokenRequest(app: FirebaseApp, debugToken: String): AppCheckRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("getExchangeDebugTokenRequest")(app.asInstanceOf[js.Any], debugToken.asInstanceOf[js.Any])).asInstanceOf[AppCheckRequest]
   

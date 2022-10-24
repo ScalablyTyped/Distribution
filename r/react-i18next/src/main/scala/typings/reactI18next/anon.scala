@@ -19,7 +19,7 @@ object anon {
   @js.native
   trait Call[Props] extends StObject {
     
-    def apply(hasInitialI18nStoreInitialLanguageRest: InitialLanguage & Props): FunctionComponentElement[Props] = js.native
+    def apply(param0: InitialLanguage & Props): FunctionComponentElement[Props] = js.native
     
     def getInitialProps(ctx: Any): js.Promise[Any] = js.native
   }

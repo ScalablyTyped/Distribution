@@ -31,7 +31,7 @@ inline def flip(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(
 inline def flip(options: PartialOptionsOptionsAltBoundary): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
 
 inline def hide(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Middleware]
-inline def hide(hasStrategyDetectOverflowOptions: PartialOptionsOptionsBoundary): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(hasStrategyDetectOverflowOptions.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+inline def hide(param0: PartialOptionsOptionsBoundary): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(param0.asInstanceOf[js.Any]).asInstanceOf[Middleware]
 
 inline def `inline`(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")().asInstanceOf[Middleware]
 inline def `inline`(options: PartialOptionsPadding): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]

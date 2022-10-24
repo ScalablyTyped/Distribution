@@ -12,9 +12,7 @@ object buildBucketEndpointMiddlewareMod {
   val ^ : js.Any = js.native
   
   inline def bucketEndpointMiddleware(): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")().asInstanceOf[BuildMiddleware[Any, Any]]
-  inline def bucketEndpointMiddleware(
-    hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint: bucketEndpointMiddlewareConfiguration
-  ): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")(hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Any, Any]]
+  inline def bucketEndpointMiddleware(param0: bucketEndpointMiddlewareConfiguration): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")(param0.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Any, Any]]
   
   trait BucketEndpointAwareInput extends StObject {
     

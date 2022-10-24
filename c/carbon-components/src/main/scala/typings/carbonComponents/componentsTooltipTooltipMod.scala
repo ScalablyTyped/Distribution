@@ -38,7 +38,7 @@ object componentsTooltipTooltipMod {
   - Dropped any */ @js.native
   trait Tooltip extends StObject {
     
-    def _handleClick(hasRelatedTargetTypeHadContextMenuDetails: Details): Unit = js.native
+    def _handleClick(param0: Details): Unit = js.native
     
     var _hasContextMenu: Boolean = js.native
     

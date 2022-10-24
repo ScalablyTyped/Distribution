@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "micromark-util-decode-numeric-character-reference"
-version := "1.0.0-622754"
-scalaVersion := "3.1.2"
+version := "1.0.0-bb4a4a"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

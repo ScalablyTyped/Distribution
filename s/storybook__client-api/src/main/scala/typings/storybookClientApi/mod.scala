@@ -36,7 +36,7 @@ object mod {
   @js.native
   open class ClientApi[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
     extends typings.storybookClientApi.distTs3Dot9ClientApiMod.ClientApi[TFramework] {
-    def this(hasStoryStore: typings.storybookClientApi.anon.StoryStore[TFramework]) = this()
+    def this(param0: typings.storybookClientApi.anon.StoryStore[TFramework]) = this()
   }
   
   @JSImport("@storybook/client-api", "DEEPLY_EQUAL")
@@ -217,8 +217,8 @@ object mod {
   ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValuesFromArgTypes")(argTypes.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def groupArgsByTarget[TArgs](
-    hasArgsArgTypes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContext<AnyFramework, TArgs> */ Any
-  ): Record[String, Partial[TArgs]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupArgsByTarget")(hasArgsArgTypes.asInstanceOf[js.Any]).asInstanceOf[Record[String, Partial[TArgs]]]
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContext<AnyFramework, TArgs> */ Any
+  ): Record[String, Partial[TArgs]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupArgsByTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[Record[String, Partial[TArgs]]]
   
   @JSImport("@storybook/client-api", "inferControls")
   @js.native
@@ -261,8 +261,8 @@ object mod {
   ): /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StrictArgTypes */ Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeInputTypes")(inputTypes.asInstanceOf[js.Any]).asInstanceOf[/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StrictArgTypes */ Any]
   
   inline def normalizeProjectAnnotations[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
-    hasArgTypesGlobalTypesArgTypesEnhancersAnnotations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectAnnotations<TFramework> */ Any
-  ): NormalizedProjectAnnotations[TFramework] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeProjectAnnotations")(hasArgTypesGlobalTypesArgTypesEnhancersAnnotations.asInstanceOf[js.Any]).asInstanceOf[NormalizedProjectAnnotations[TFramework]]
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectAnnotations<TFramework> */ Any
+  ): NormalizedProjectAnnotations[TFramework] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeProjectAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[NormalizedProjectAnnotations[TFramework]]
   
   inline def normalizeStory[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
     key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
@@ -284,8 +284,8 @@ object mod {
   
   inline def sanitizeStoryContextUpdate(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeStoryContextUpdate")().asInstanceOf[Any]
   inline def sanitizeStoryContextUpdate(
-    hasComponentIdTitleKindIdNameStoryParametersInitialArgsArgTypesUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContextUpdate */ Any
-  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeStoryContextUpdate")(hasComponentIdTitleKindIdNameStoryParametersInitialArgsArgTypesUpdate.asInstanceOf[js.Any]).asInstanceOf[Any]
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContextUpdate */ Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeStoryContextUpdate")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def setGlobalRender(
     render: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryFn<AnyFramework> */ Any

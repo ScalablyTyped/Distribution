@@ -18,7 +18,7 @@ object distSharedSrcSlotsMod {
   
   inline def getSlotKey(element: ReactElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSlotKey")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getSlots[T /* <: SlotOptions */](children: ReactNode, has_Slots: T): GetSlotsReturn[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlots")(children.asInstanceOf[js.Any], has_Slots.asInstanceOf[js.Any])).asInstanceOf[GetSlotsReturn[T]]
+  inline def getSlots[T /* <: SlotOptions */](children: ReactNode, param1: T): GetSlotsReturn[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlots")(children.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[GetSlotsReturn[T]]
   
   inline def slot[P](slotName: String, ElementType: P): P = (^.asInstanceOf[js.Dynamic].applyDynamic("slot")(slotName.asInstanceOf[js.Any], ElementType.asInstanceOf[js.Any])).asInstanceOf[P]
   

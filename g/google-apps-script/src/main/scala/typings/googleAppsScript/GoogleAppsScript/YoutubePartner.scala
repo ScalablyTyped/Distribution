@@ -873,6 +873,219 @@ object YoutubePartner {
     }
   }
   
+  extension [Self <: YoutubePartner](x: Self) {
+    
+    inline def setAssetLabels(value: AssetLabelsCollection): Self = StObject.set(x, "AssetLabels", value.asInstanceOf[js.Any])
+    
+    inline def setAssetLabelsUndefined: Self = StObject.set(x, "AssetLabels", js.undefined)
+    
+    inline def setAssetMatchPolicy(value: AssetMatchPolicyCollection): Self = StObject.set(x, "AssetMatchPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setAssetMatchPolicyUndefined: Self = StObject.set(x, "AssetMatchPolicy", js.undefined)
+    
+    inline def setAssetRelationships(value: AssetRelationshipsCollection): Self = StObject.set(x, "AssetRelationships", value.asInstanceOf[js.Any])
+    
+    inline def setAssetRelationshipsUndefined: Self = StObject.set(x, "AssetRelationships", js.undefined)
+    
+    inline def setAssetSearch(value: AssetSearchCollection): Self = StObject.set(x, "AssetSearch", value.asInstanceOf[js.Any])
+    
+    inline def setAssetSearchUndefined: Self = StObject.set(x, "AssetSearch", js.undefined)
+    
+    inline def setAssetShares(value: AssetSharesCollection): Self = StObject.set(x, "AssetShares", value.asInstanceOf[js.Any])
+    
+    inline def setAssetSharesUndefined: Self = StObject.set(x, "AssetShares", js.undefined)
+    
+    inline def setAssets(value: AssetsCollection): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
+    
+    inline def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
+    
+    inline def setCampaigns(value: CampaignsCollection): Self = StObject.set(x, "Campaigns", value.asInstanceOf[js.Any])
+    
+    inline def setCampaignsUndefined: Self = StObject.set(x, "Campaigns", js.undefined)
+    
+    inline def setClaimHistory(value: ClaimHistoryCollection): Self = StObject.set(x, "ClaimHistory", value.asInstanceOf[js.Any])
+    
+    inline def setClaimHistoryUndefined: Self = StObject.set(x, "ClaimHistory", js.undefined)
+    
+    inline def setClaimSearch(value: ClaimSearchCollection): Self = StObject.set(x, "ClaimSearch", value.asInstanceOf[js.Any])
+    
+    inline def setClaimSearchUndefined: Self = StObject.set(x, "ClaimSearch", js.undefined)
+    
+    inline def setClaims(value: ClaimsCollection): Self = StObject.set(x, "Claims", value.asInstanceOf[js.Any])
+    
+    inline def setClaimsUndefined: Self = StObject.set(x, "Claims", js.undefined)
+    
+    inline def setContentOwnerAdvertisingOptions(value: ContentOwnerAdvertisingOptionsCollection): Self = StObject.set(x, "ContentOwnerAdvertisingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setContentOwnerAdvertisingOptionsUndefined: Self = StObject.set(x, "ContentOwnerAdvertisingOptions", js.undefined)
+    
+    inline def setContentOwners(value: ContentOwnersCollection): Self = StObject.set(x, "ContentOwners", value.asInstanceOf[js.Any])
+    
+    inline def setContentOwnersUndefined: Self = StObject.set(x, "ContentOwners", js.undefined)
+    
+    inline def setLiveCuepoints(value: LiveCuepointsCollection): Self = StObject.set(x, "LiveCuepoints", value.asInstanceOf[js.Any])
+    
+    inline def setLiveCuepointsUndefined: Self = StObject.set(x, "LiveCuepoints", js.undefined)
+    
+    inline def setMetadataHistory(value: MetadataHistoryCollection): Self = StObject.set(x, "MetadataHistory", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataHistoryUndefined: Self = StObject.set(x, "MetadataHistory", js.undefined)
+    
+    inline def setNewAdBreak(value: () => AdBreak): Self = StObject.set(x, "newAdBreak", js.Any.fromFunction0(value))
+    
+    inline def setNewAdSlot(value: () => AdSlot): Self = StObject.set(x, "newAdSlot", js.Any.fromFunction0(value))
+    
+    inline def setNewAllowedAdvertisingOptions(value: () => AllowedAdvertisingOptions): Self = StObject.set(x, "newAllowedAdvertisingOptions", js.Any.fromFunction0(value))
+    
+    inline def setNewAsset(value: () => Asset): Self = StObject.set(x, "newAsset", js.Any.fromFunction0(value))
+    
+    inline def setNewAssetLabel(value: () => AssetLabel): Self = StObject.set(x, "newAssetLabel", js.Any.fromFunction0(value))
+    
+    inline def setNewAssetMatchPolicy(value: () => AssetMatchPolicy): Self = StObject.set(x, "newAssetMatchPolicy", js.Any.fromFunction0(value))
+    
+    inline def setNewAssetRelationship(value: () => AssetRelationship): Self = StObject.set(x, "newAssetRelationship", js.Any.fromFunction0(value))
+    
+    inline def setNewCampaign(value: () => Campaign): Self = StObject.set(x, "newCampaign", js.Any.fromFunction0(value))
+    
+    inline def setNewCampaignData(value: () => CampaignData): Self = StObject.set(x, "newCampaignData", js.Any.fromFunction0(value))
+    
+    inline def setNewCampaignSource(value: () => CampaignSource): Self = StObject.set(x, "newCampaignSource", js.Any.fromFunction0(value))
+    
+    inline def setNewCampaignTargetLink(value: () => CampaignTargetLink): Self = StObject.set(x, "newCampaignTargetLink", js.Any.fromFunction0(value))
+    
+    inline def setNewClaim(value: () => Claim): Self = StObject.set(x, "newClaim", js.Any.fromFunction0(value))
+    
+    inline def setNewClaimMatchInfo(value: () => ClaimMatchInfo): Self = StObject.set(x, "newClaimMatchInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewClaimMatchInfoLongestMatch(value: () => ClaimMatchInfoLongestMatch): Self = StObject.set(x, "newClaimMatchInfoLongestMatch", js.Any.fromFunction0(value))
+    
+    inline def setNewClaimMatchInfoTotalMatch(value: () => ClaimMatchInfoTotalMatch): Self = StObject.set(x, "newClaimMatchInfoTotalMatch", js.Any.fromFunction0(value))
+    
+    inline def setNewClaimOrigin(value: () => ClaimOrigin): Self = StObject.set(x, "newClaimOrigin", js.Any.fromFunction0(value))
+    
+    inline def setNewClaimedVideoDefaults(value: () => ClaimedVideoDefaults): Self = StObject.set(x, "newClaimedVideoDefaults", js.Any.fromFunction0(value))
+    
+    inline def setNewConditions(value: () => Conditions): Self = StObject.set(x, "newConditions", js.Any.fromFunction0(value))
+    
+    inline def setNewConflictingOwnership(value: () => ConflictingOwnership): Self = StObject.set(x, "newConflictingOwnership", js.Any.fromFunction0(value))
+    
+    inline def setNewContentOwnerAdvertisingOption(value: () => ContentOwnerAdvertisingOption): Self = StObject.set(x, "newContentOwnerAdvertisingOption", js.Any.fromFunction0(value))
+    
+    inline def setNewCuepointSettings(value: () => CuepointSettings): Self = StObject.set(x, "newCuepointSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewDate(value: () => Date): Self = StObject.set(x, "newDate", js.Any.fromFunction0(value))
+    
+    inline def setNewDateRange(value: () => DateRange): Self = StObject.set(x, "newDateRange", js.Any.fromFunction0(value))
+    
+    inline def setNewExcludedInterval(value: () => ExcludedInterval): Self = StObject.set(x, "newExcludedInterval", js.Any.fromFunction0(value))
+    
+    inline def setNewIntervalCondition(value: () => IntervalCondition): Self = StObject.set(x, "newIntervalCondition", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveCuepoint(value: () => LiveCuepoint): Self = StObject.set(x, "newLiveCuepoint", js.Any.fromFunction0(value))
+    
+    inline def setNewMatchSegment(value: () => MatchSegment): Self = StObject.set(x, "newMatchSegment", js.Any.fromFunction0(value))
+    
+    inline def setNewMetadata(value: () => Metadata): Self = StObject.set(x, "newMetadata", js.Any.fromFunction0(value))
+    
+    inline def setNewOrder(value: () => Order): Self = StObject.set(x, "newOrder", js.Any.fromFunction0(value))
+    
+    inline def setNewOrigination(value: () => Origination): Self = StObject.set(x, "newOrigination", js.Any.fromFunction0(value))
+    
+    inline def setNewOwnershipConflicts(value: () => OwnershipConflicts): Self = StObject.set(x, "newOwnershipConflicts", js.Any.fromFunction0(value))
+    
+    inline def setNewPackage(value: () => Package): Self = StObject.set(x, "newPackage", js.Any.fromFunction0(value))
+    
+    inline def setNewPolicy(value: () => Policy): Self = StObject.set(x, "newPolicy", js.Any.fromFunction0(value))
+    
+    inline def setNewPolicyRule(value: () => PolicyRule): Self = StObject.set(x, "newPolicyRule", js.Any.fromFunction0(value))
+    
+    inline def setNewPromotedContent(value: () => PromotedContent): Self = StObject.set(x, "newPromotedContent", js.Any.fromFunction0(value))
+    
+    inline def setNewRating(value: () => Rating): Self = StObject.set(x, "newRating", js.Any.fromFunction0(value))
+    
+    inline def setNewReference(value: () => Reference): Self = StObject.set(x, "newReference", js.Any.fromFunction0(value))
+    
+    inline def setNewRequirements(value: () => Requirements): Self = StObject.set(x, "newRequirements", js.Any.fromFunction0(value))
+    
+    inline def setNewRightsOwnership(value: () => RightsOwnership): Self = StObject.set(x, "newRightsOwnership", js.Any.fromFunction0(value))
+    
+    inline def setNewSegment(value: () => Segment): Self = StObject.set(x, "newSegment", js.Any.fromFunction0(value))
+    
+    inline def setNewShowDetails(value: () => ShowDetails): Self = StObject.set(x, "newShowDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewStateCompleted(value: () => StateCompleted): Self = StObject.set(x, "newStateCompleted", js.Any.fromFunction0(value))
+    
+    inline def setNewStatusReport(value: () => StatusReport): Self = StObject.set(x, "newStatusReport", js.Any.fromFunction0(value))
+    
+    inline def setNewTerritoryCondition(value: () => TerritoryCondition): Self = StObject.set(x, "newTerritoryCondition", js.Any.fromFunction0(value))
+    
+    inline def setNewTerritoryConflicts(value: () => TerritoryConflicts): Self = StObject.set(x, "newTerritoryConflicts", js.Any.fromFunction0(value))
+    
+    inline def setNewTerritoryOwners(value: () => TerritoryOwners): Self = StObject.set(x, "newTerritoryOwners", js.Any.fromFunction0(value))
+    
+    inline def setNewValidateAsyncRequest(value: () => ValidateAsyncRequest): Self = StObject.set(x, "newValidateAsyncRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewValidateRequest(value: () => ValidateRequest): Self = StObject.set(x, "newValidateRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewValidateStatusRequest(value: () => ValidateStatusRequest): Self = StObject.set(x, "newValidateStatusRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoAdvertisingOption(value: () => VideoAdvertisingOption): Self = StObject.set(x, "newVideoAdvertisingOption", js.Any.fromFunction0(value))
+    
+    inline def setNewWhitelist(value: () => Whitelist): Self = StObject.set(x, "newWhitelist", js.Any.fromFunction0(value))
+    
+    inline def setOrders(value: OrdersCollection): Self = StObject.set(x, "Orders", value.asInstanceOf[js.Any])
+    
+    inline def setOrdersUndefined: Self = StObject.set(x, "Orders", js.undefined)
+    
+    inline def setOwnership(value: OwnershipCollection): Self = StObject.set(x, "Ownership", value.asInstanceOf[js.Any])
+    
+    inline def setOwnershipHistory(value: OwnershipHistoryCollection): Self = StObject.set(x, "OwnershipHistory", value.asInstanceOf[js.Any])
+    
+    inline def setOwnershipHistoryUndefined: Self = StObject.set(x, "OwnershipHistory", js.undefined)
+    
+    inline def setOwnershipUndefined: Self = StObject.set(x, "Ownership", js.undefined)
+    
+    inline def setPackage(value: PackageCollection): Self = StObject.set(x, "Package", value.asInstanceOf[js.Any])
+    
+    inline def setPackageUndefined: Self = StObject.set(x, "Package", js.undefined)
+    
+    inline def setPolicies(value: PoliciesCollection): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
+    
+    inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
+    
+    inline def setPublishers(value: PublishersCollection): Self = StObject.set(x, "Publishers", value.asInstanceOf[js.Any])
+    
+    inline def setPublishersUndefined: Self = StObject.set(x, "Publishers", js.undefined)
+    
+    inline def setReferenceConflicts(value: ReferenceConflictsCollection): Self = StObject.set(x, "ReferenceConflicts", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceConflictsUndefined: Self = StObject.set(x, "ReferenceConflicts", js.undefined)
+    
+    inline def setReferences(value: ReferencesCollection): Self = StObject.set(x, "References", value.asInstanceOf[js.Any])
+    
+    inline def setReferencesUndefined: Self = StObject.set(x, "References", js.undefined)
+    
+    inline def setSpreadsheetTemplate(value: SpreadsheetTemplateCollection): Self = StObject.set(x, "SpreadsheetTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setSpreadsheetTemplateUndefined: Self = StObject.set(x, "SpreadsheetTemplate", js.undefined)
+    
+    inline def setUploader(value: UploaderCollection): Self = StObject.set(x, "Uploader", value.asInstanceOf[js.Any])
+    
+    inline def setUploaderUndefined: Self = StObject.set(x, "Uploader", js.undefined)
+    
+    inline def setValidator(value: ValidatorCollection): Self = StObject.set(x, "Validator", value.asInstanceOf[js.Any])
+    
+    inline def setValidatorUndefined: Self = StObject.set(x, "Validator", js.undefined)
+    
+    inline def setVideoAdvertisingOptions(value: VideoAdvertisingOptionsCollection): Self = StObject.set(x, "VideoAdvertisingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setVideoAdvertisingOptionsUndefined: Self = StObject.set(x, "VideoAdvertisingOptions", js.undefined)
+    
+    inline def setWhitelists(value: WhitelistsCollection): Self = StObject.set(x, "Whitelists", value.asInstanceOf[js.Any])
+    
+    inline def setWhitelistsUndefined: Self = StObject.set(x, "Whitelists", js.undefined)
+  }
+  
   object Schema {
     
     trait AdBreak extends StObject {
@@ -4909,218 +5122,5 @@ object YoutubePartner {
         inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
       }
     }
-  }
-  
-  extension [Self <: YoutubePartner](x: Self) {
-    
-    inline def setAssetLabels(value: AssetLabelsCollection): Self = StObject.set(x, "AssetLabels", value.asInstanceOf[js.Any])
-    
-    inline def setAssetLabelsUndefined: Self = StObject.set(x, "AssetLabels", js.undefined)
-    
-    inline def setAssetMatchPolicy(value: AssetMatchPolicyCollection): Self = StObject.set(x, "AssetMatchPolicy", value.asInstanceOf[js.Any])
-    
-    inline def setAssetMatchPolicyUndefined: Self = StObject.set(x, "AssetMatchPolicy", js.undefined)
-    
-    inline def setAssetRelationships(value: AssetRelationshipsCollection): Self = StObject.set(x, "AssetRelationships", value.asInstanceOf[js.Any])
-    
-    inline def setAssetRelationshipsUndefined: Self = StObject.set(x, "AssetRelationships", js.undefined)
-    
-    inline def setAssetSearch(value: AssetSearchCollection): Self = StObject.set(x, "AssetSearch", value.asInstanceOf[js.Any])
-    
-    inline def setAssetSearchUndefined: Self = StObject.set(x, "AssetSearch", js.undefined)
-    
-    inline def setAssetShares(value: AssetSharesCollection): Self = StObject.set(x, "AssetShares", value.asInstanceOf[js.Any])
-    
-    inline def setAssetSharesUndefined: Self = StObject.set(x, "AssetShares", js.undefined)
-    
-    inline def setAssets(value: AssetsCollection): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
-    
-    inline def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
-    
-    inline def setCampaigns(value: CampaignsCollection): Self = StObject.set(x, "Campaigns", value.asInstanceOf[js.Any])
-    
-    inline def setCampaignsUndefined: Self = StObject.set(x, "Campaigns", js.undefined)
-    
-    inline def setClaimHistory(value: ClaimHistoryCollection): Self = StObject.set(x, "ClaimHistory", value.asInstanceOf[js.Any])
-    
-    inline def setClaimHistoryUndefined: Self = StObject.set(x, "ClaimHistory", js.undefined)
-    
-    inline def setClaimSearch(value: ClaimSearchCollection): Self = StObject.set(x, "ClaimSearch", value.asInstanceOf[js.Any])
-    
-    inline def setClaimSearchUndefined: Self = StObject.set(x, "ClaimSearch", js.undefined)
-    
-    inline def setClaims(value: ClaimsCollection): Self = StObject.set(x, "Claims", value.asInstanceOf[js.Any])
-    
-    inline def setClaimsUndefined: Self = StObject.set(x, "Claims", js.undefined)
-    
-    inline def setContentOwnerAdvertisingOptions(value: ContentOwnerAdvertisingOptionsCollection): Self = StObject.set(x, "ContentOwnerAdvertisingOptions", value.asInstanceOf[js.Any])
-    
-    inline def setContentOwnerAdvertisingOptionsUndefined: Self = StObject.set(x, "ContentOwnerAdvertisingOptions", js.undefined)
-    
-    inline def setContentOwners(value: ContentOwnersCollection): Self = StObject.set(x, "ContentOwners", value.asInstanceOf[js.Any])
-    
-    inline def setContentOwnersUndefined: Self = StObject.set(x, "ContentOwners", js.undefined)
-    
-    inline def setLiveCuepoints(value: LiveCuepointsCollection): Self = StObject.set(x, "LiveCuepoints", value.asInstanceOf[js.Any])
-    
-    inline def setLiveCuepointsUndefined: Self = StObject.set(x, "LiveCuepoints", js.undefined)
-    
-    inline def setMetadataHistory(value: MetadataHistoryCollection): Self = StObject.set(x, "MetadataHistory", value.asInstanceOf[js.Any])
-    
-    inline def setMetadataHistoryUndefined: Self = StObject.set(x, "MetadataHistory", js.undefined)
-    
-    inline def setNewAdBreak(value: () => AdBreak): Self = StObject.set(x, "newAdBreak", js.Any.fromFunction0(value))
-    
-    inline def setNewAdSlot(value: () => AdSlot): Self = StObject.set(x, "newAdSlot", js.Any.fromFunction0(value))
-    
-    inline def setNewAllowedAdvertisingOptions(value: () => AllowedAdvertisingOptions): Self = StObject.set(x, "newAllowedAdvertisingOptions", js.Any.fromFunction0(value))
-    
-    inline def setNewAsset(value: () => Asset): Self = StObject.set(x, "newAsset", js.Any.fromFunction0(value))
-    
-    inline def setNewAssetLabel(value: () => AssetLabel): Self = StObject.set(x, "newAssetLabel", js.Any.fromFunction0(value))
-    
-    inline def setNewAssetMatchPolicy(value: () => AssetMatchPolicy): Self = StObject.set(x, "newAssetMatchPolicy", js.Any.fromFunction0(value))
-    
-    inline def setNewAssetRelationship(value: () => AssetRelationship): Self = StObject.set(x, "newAssetRelationship", js.Any.fromFunction0(value))
-    
-    inline def setNewCampaign(value: () => Campaign): Self = StObject.set(x, "newCampaign", js.Any.fromFunction0(value))
-    
-    inline def setNewCampaignData(value: () => CampaignData): Self = StObject.set(x, "newCampaignData", js.Any.fromFunction0(value))
-    
-    inline def setNewCampaignSource(value: () => CampaignSource): Self = StObject.set(x, "newCampaignSource", js.Any.fromFunction0(value))
-    
-    inline def setNewCampaignTargetLink(value: () => CampaignTargetLink): Self = StObject.set(x, "newCampaignTargetLink", js.Any.fromFunction0(value))
-    
-    inline def setNewClaim(value: () => Claim): Self = StObject.set(x, "newClaim", js.Any.fromFunction0(value))
-    
-    inline def setNewClaimMatchInfo(value: () => ClaimMatchInfo): Self = StObject.set(x, "newClaimMatchInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewClaimMatchInfoLongestMatch(value: () => ClaimMatchInfoLongestMatch): Self = StObject.set(x, "newClaimMatchInfoLongestMatch", js.Any.fromFunction0(value))
-    
-    inline def setNewClaimMatchInfoTotalMatch(value: () => ClaimMatchInfoTotalMatch): Self = StObject.set(x, "newClaimMatchInfoTotalMatch", js.Any.fromFunction0(value))
-    
-    inline def setNewClaimOrigin(value: () => ClaimOrigin): Self = StObject.set(x, "newClaimOrigin", js.Any.fromFunction0(value))
-    
-    inline def setNewClaimedVideoDefaults(value: () => ClaimedVideoDefaults): Self = StObject.set(x, "newClaimedVideoDefaults", js.Any.fromFunction0(value))
-    
-    inline def setNewConditions(value: () => Conditions): Self = StObject.set(x, "newConditions", js.Any.fromFunction0(value))
-    
-    inline def setNewConflictingOwnership(value: () => ConflictingOwnership): Self = StObject.set(x, "newConflictingOwnership", js.Any.fromFunction0(value))
-    
-    inline def setNewContentOwnerAdvertisingOption(value: () => ContentOwnerAdvertisingOption): Self = StObject.set(x, "newContentOwnerAdvertisingOption", js.Any.fromFunction0(value))
-    
-    inline def setNewCuepointSettings(value: () => CuepointSettings): Self = StObject.set(x, "newCuepointSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewDate(value: () => Date): Self = StObject.set(x, "newDate", js.Any.fromFunction0(value))
-    
-    inline def setNewDateRange(value: () => DateRange): Self = StObject.set(x, "newDateRange", js.Any.fromFunction0(value))
-    
-    inline def setNewExcludedInterval(value: () => ExcludedInterval): Self = StObject.set(x, "newExcludedInterval", js.Any.fromFunction0(value))
-    
-    inline def setNewIntervalCondition(value: () => IntervalCondition): Self = StObject.set(x, "newIntervalCondition", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveCuepoint(value: () => LiveCuepoint): Self = StObject.set(x, "newLiveCuepoint", js.Any.fromFunction0(value))
-    
-    inline def setNewMatchSegment(value: () => MatchSegment): Self = StObject.set(x, "newMatchSegment", js.Any.fromFunction0(value))
-    
-    inline def setNewMetadata(value: () => Metadata): Self = StObject.set(x, "newMetadata", js.Any.fromFunction0(value))
-    
-    inline def setNewOrder(value: () => Order): Self = StObject.set(x, "newOrder", js.Any.fromFunction0(value))
-    
-    inline def setNewOrigination(value: () => Origination): Self = StObject.set(x, "newOrigination", js.Any.fromFunction0(value))
-    
-    inline def setNewOwnershipConflicts(value: () => OwnershipConflicts): Self = StObject.set(x, "newOwnershipConflicts", js.Any.fromFunction0(value))
-    
-    inline def setNewPackage(value: () => Package): Self = StObject.set(x, "newPackage", js.Any.fromFunction0(value))
-    
-    inline def setNewPolicy(value: () => Policy): Self = StObject.set(x, "newPolicy", js.Any.fromFunction0(value))
-    
-    inline def setNewPolicyRule(value: () => PolicyRule): Self = StObject.set(x, "newPolicyRule", js.Any.fromFunction0(value))
-    
-    inline def setNewPromotedContent(value: () => PromotedContent): Self = StObject.set(x, "newPromotedContent", js.Any.fromFunction0(value))
-    
-    inline def setNewRating(value: () => Rating): Self = StObject.set(x, "newRating", js.Any.fromFunction0(value))
-    
-    inline def setNewReference(value: () => Reference): Self = StObject.set(x, "newReference", js.Any.fromFunction0(value))
-    
-    inline def setNewRequirements(value: () => Requirements): Self = StObject.set(x, "newRequirements", js.Any.fromFunction0(value))
-    
-    inline def setNewRightsOwnership(value: () => RightsOwnership): Self = StObject.set(x, "newRightsOwnership", js.Any.fromFunction0(value))
-    
-    inline def setNewSegment(value: () => Segment): Self = StObject.set(x, "newSegment", js.Any.fromFunction0(value))
-    
-    inline def setNewShowDetails(value: () => ShowDetails): Self = StObject.set(x, "newShowDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewStateCompleted(value: () => StateCompleted): Self = StObject.set(x, "newStateCompleted", js.Any.fromFunction0(value))
-    
-    inline def setNewStatusReport(value: () => StatusReport): Self = StObject.set(x, "newStatusReport", js.Any.fromFunction0(value))
-    
-    inline def setNewTerritoryCondition(value: () => TerritoryCondition): Self = StObject.set(x, "newTerritoryCondition", js.Any.fromFunction0(value))
-    
-    inline def setNewTerritoryConflicts(value: () => TerritoryConflicts): Self = StObject.set(x, "newTerritoryConflicts", js.Any.fromFunction0(value))
-    
-    inline def setNewTerritoryOwners(value: () => TerritoryOwners): Self = StObject.set(x, "newTerritoryOwners", js.Any.fromFunction0(value))
-    
-    inline def setNewValidateAsyncRequest(value: () => ValidateAsyncRequest): Self = StObject.set(x, "newValidateAsyncRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewValidateRequest(value: () => ValidateRequest): Self = StObject.set(x, "newValidateRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewValidateStatusRequest(value: () => ValidateStatusRequest): Self = StObject.set(x, "newValidateStatusRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoAdvertisingOption(value: () => VideoAdvertisingOption): Self = StObject.set(x, "newVideoAdvertisingOption", js.Any.fromFunction0(value))
-    
-    inline def setNewWhitelist(value: () => Whitelist): Self = StObject.set(x, "newWhitelist", js.Any.fromFunction0(value))
-    
-    inline def setOrders(value: OrdersCollection): Self = StObject.set(x, "Orders", value.asInstanceOf[js.Any])
-    
-    inline def setOrdersUndefined: Self = StObject.set(x, "Orders", js.undefined)
-    
-    inline def setOwnership(value: OwnershipCollection): Self = StObject.set(x, "Ownership", value.asInstanceOf[js.Any])
-    
-    inline def setOwnershipHistory(value: OwnershipHistoryCollection): Self = StObject.set(x, "OwnershipHistory", value.asInstanceOf[js.Any])
-    
-    inline def setOwnershipHistoryUndefined: Self = StObject.set(x, "OwnershipHistory", js.undefined)
-    
-    inline def setOwnershipUndefined: Self = StObject.set(x, "Ownership", js.undefined)
-    
-    inline def setPackage(value: PackageCollection): Self = StObject.set(x, "Package", value.asInstanceOf[js.Any])
-    
-    inline def setPackageUndefined: Self = StObject.set(x, "Package", js.undefined)
-    
-    inline def setPolicies(value: PoliciesCollection): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
-    
-    inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
-    
-    inline def setPublishers(value: PublishersCollection): Self = StObject.set(x, "Publishers", value.asInstanceOf[js.Any])
-    
-    inline def setPublishersUndefined: Self = StObject.set(x, "Publishers", js.undefined)
-    
-    inline def setReferenceConflicts(value: ReferenceConflictsCollection): Self = StObject.set(x, "ReferenceConflicts", value.asInstanceOf[js.Any])
-    
-    inline def setReferenceConflictsUndefined: Self = StObject.set(x, "ReferenceConflicts", js.undefined)
-    
-    inline def setReferences(value: ReferencesCollection): Self = StObject.set(x, "References", value.asInstanceOf[js.Any])
-    
-    inline def setReferencesUndefined: Self = StObject.set(x, "References", js.undefined)
-    
-    inline def setSpreadsheetTemplate(value: SpreadsheetTemplateCollection): Self = StObject.set(x, "SpreadsheetTemplate", value.asInstanceOf[js.Any])
-    
-    inline def setSpreadsheetTemplateUndefined: Self = StObject.set(x, "SpreadsheetTemplate", js.undefined)
-    
-    inline def setUploader(value: UploaderCollection): Self = StObject.set(x, "Uploader", value.asInstanceOf[js.Any])
-    
-    inline def setUploaderUndefined: Self = StObject.set(x, "Uploader", js.undefined)
-    
-    inline def setValidator(value: ValidatorCollection): Self = StObject.set(x, "Validator", value.asInstanceOf[js.Any])
-    
-    inline def setValidatorUndefined: Self = StObject.set(x, "Validator", js.undefined)
-    
-    inline def setVideoAdvertisingOptions(value: VideoAdvertisingOptionsCollection): Self = StObject.set(x, "VideoAdvertisingOptions", value.asInstanceOf[js.Any])
-    
-    inline def setVideoAdvertisingOptionsUndefined: Self = StObject.set(x, "VideoAdvertisingOptions", js.undefined)
-    
-    inline def setWhitelists(value: WhitelistsCollection): Self = StObject.set(x, "Whitelists", value.asInstanceOf[js.Any])
-    
-    inline def setWhitelistsUndefined: Self = StObject.set(x, "Whitelists", js.undefined)
   }
 }

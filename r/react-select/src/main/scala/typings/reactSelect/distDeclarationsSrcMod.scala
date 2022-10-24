@@ -101,15 +101,13 @@ object distDeclarationsSrcMod {
     
     inline def MenuList[Option_10, IsMulti_10 /* <: Boolean */, Group_10 /* <: GroupBase[Option_10] */](props: MenuListProps[Option_10, IsMulti_10, Group_10]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuList")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def MenuPortal[Option_11, IsMulti_11 /* <: Boolean */, Group_11 /* <: GroupBase[Option_11] */](
-      hasAppendToChildrenClassNameControlElementCxInnerPropsMenuPlacementMenuPositionGetStyles: MenuPortalProps[Option_11, IsMulti_11, Group_11]
-    ): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPortal")(hasAppendToChildrenClassNameControlElementCxInnerPropsMenuPlacementMenuPositionGetStyles.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    inline def MenuPortal[Option_11, IsMulti_11 /* <: Boolean */, Group_11 /* <: GroupBase[Option_11] */](param0: MenuPortalProps[Option_11, IsMulti_11, Group_11]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPortal")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
     
     inline def MultiValue[Option_14, IsMulti_14 /* <: Boolean */, Group_14 /* <: GroupBase[Option_14] */](props: MultiValueProps[Option_14, IsMulti_14, Group_14]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValue")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def MultiValueContainer[Option_15, IsMulti_15 /* <: Boolean */, Group_15 /* <: GroupBase[Option_15] */](hasChildrenInnerProps: MultiValueGenericProps[Option_15, IsMulti_15, Group_15]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueContainer")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def MultiValueContainer[Option_15, IsMulti_15 /* <: Boolean */, Group_15 /* <: GroupBase[Option_15] */](param0: MultiValueGenericProps[Option_15, IsMulti_15, Group_15]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueContainer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def MultiValueLabel[Option_15, IsMulti_15 /* <: Boolean */, Group_15 /* <: GroupBase[Option_15] */](hasChildrenInnerProps: MultiValueGenericProps[Option_15, IsMulti_15, Group_15]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueLabel")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def MultiValueLabel[Option_15, IsMulti_15 /* <: Boolean */, Group_15 /* <: GroupBase[Option_15] */](param0: MultiValueGenericProps[Option_15, IsMulti_15, Group_15]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueLabel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-select/dist/declarations/src", "components.MultiValueRemove")
     @js.native
@@ -142,12 +140,10 @@ object distDeclarationsSrcMod {
   inline def mergeStyles[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](source: StylesConfig[Option, IsMulti, Group]): Container[Option, IsMulti, Group] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(source.asInstanceOf[js.Any]).asInstanceOf[Container[Option, IsMulti, Group]]
   inline def mergeStyles[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](source: StylesConfig[Option, IsMulti, Group], target: StylesConfig[Option, IsMulti, Group]): Container[Option, IsMulti, Group] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Container[Option, IsMulti, Group]]
   
-  inline def useStateManager[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](
-    hasDefaultInputValueDefaultMenuIsOpenDefaultValuePropsInputValuePropsMenuIsOpenPropsOnChangePropsOnInputChangePropsOnMenuClosePropsOnMenuOpenPropsValueRestSelectProps: (StateManagerProps[Option, IsMulti, Group]) & AdditionalProps
-  ): (PublicBaseSelectProps[Option, IsMulti, Group]) & (Omit[
+  inline def useStateManager[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](param0: (StateManagerProps[Option, IsMulti, Group]) & AdditionalProps): (PublicBaseSelectProps[Option, IsMulti, Group]) & (Omit[
     AdditionalProps, 
     defaultInputValue | defaultMenuIsOpen | defaultValue | StateManagedPropKeys
-  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("useStateManager")(hasDefaultInputValueDefaultMenuIsOpenDefaultValuePropsInputValuePropsMenuIsOpenPropsOnChangePropsOnInputChangePropsOnMenuClosePropsOnMenuOpenPropsValueRestSelectProps.asInstanceOf[js.Any]).asInstanceOf[(PublicBaseSelectProps[Option, IsMulti, Group]) & (Omit[
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("useStateManager")(param0.asInstanceOf[js.Any]).asInstanceOf[(PublicBaseSelectProps[Option, IsMulti, Group]) & (Omit[
     AdditionalProps, 
     defaultInputValue | defaultMenuIsOpen | defaultValue | StateManagedPropKeys
   ])]

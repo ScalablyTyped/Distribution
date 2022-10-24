@@ -14,7 +14,7 @@ trait TypeofSCANDUMP extends StObject {
   
   def transformArguments(key: String, iterator: Double): js.Array[String]
   
-  def transformReply(hasIteratorChunk: ScanDumpRawReply): ScanDumpReply
+  def transformReply(param0: ScanDumpRawReply): ScanDumpReply
 }
 object TypeofSCANDUMP {
   

@@ -23,10 +23,7 @@ object libTypescriptComponentsIconButtonMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & AccessibilityLabel
-    ]) & (js.Function1[
-      /* hasIconCustomColorSizeAccessibilityLabelDisabledOnPressAnimatedThemeStyleRest */ Props, 
-      Element
-    ]), 
+    ]) & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = js.native
   
@@ -39,10 +36,7 @@ object libTypescriptComponentsIconButtonMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & AccessibilityLabel
-    ]) & (js.Function1[
-      /* hasIconCustomColorSizeAccessibilityLabelDisabledOnPressAnimatedThemeStyleRest */ Props, 
-      Element
-    ]), 
+    ]) & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ])
   
@@ -52,10 +46,7 @@ object libTypescriptComponentsIconButtonMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & AccessibilityLabel
-    ]) & (js.Function1[
-      /* hasIconCustomColorSizeAccessibilityLabelDisabledOnPressAnimatedThemeStyleRest */ Props, 
-      Element
-    ]), 
+    ]) & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = default
 }

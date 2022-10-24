@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__store
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 The store is reponsible for loading a story from a CSF file and preparing into a `Story` type, which is our internal format.

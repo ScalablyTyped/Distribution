@@ -16,7 +16,7 @@ object distSrcModulesUiControlsVolumeVolumeMod {
   open class default protected ()
     extends StObject
        with VolumeControl {
-    def this(hasEngineEventEmitterTextMapTooltipServiceTheme: TooltipService) = this()
+    def this(param0: TooltipService) = this()
     
     /* private */ /* CompleteClass */
     var _bindCallbacks: Any = js.native

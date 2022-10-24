@@ -1,8 +1,8 @@
 package typings.puppeteerCore
 
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfo
+import typings.puppeteerCore.libEsmPuppeteerApiBrowserContextMod.BrowserContext
 import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.Browser
-import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.BrowserContext
 import typings.puppeteerCore.libEsmPuppeteerApiBrowserMod.IsPageTargetCallback
 import typings.puppeteerCore.libEsmPuppeteerApiPageMod.Page
 import typings.puppeteerCore.libEsmPuppeteerCommonConnectionMod.CDPSession

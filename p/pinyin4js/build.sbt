@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "pinyin4js"
-version := "1.3-dt-20220829Z-4463c0"
-scalaVersion := "3.1.2"
+version := "1.3-dt-20220829Z-b349a5"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

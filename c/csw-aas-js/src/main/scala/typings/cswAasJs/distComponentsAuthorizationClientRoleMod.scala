@@ -12,7 +12,7 @@ object distComponentsAuthorizationClientRoleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasClientRoleClientChildrenError: ClientRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClientRoleClientChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ClientRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ClientRoleProps extends StObject {
     

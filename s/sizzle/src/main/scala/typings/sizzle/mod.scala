@@ -85,14 +85,6 @@ object mod extends Shortcut {
     
     type Matches = StringDictionary[js.RegExp]
     
-    type PreFilterFunction = js.Function1[/* match */ RegExpMatchArray, js.Array[String]]
-    
-    type PreFilterFunctions = StringDictionary[PreFilterFunction]
-    
-    type PseudoFunction = js.Function1[/* elem */ Element, Boolean]
-    
-    type PseudoFunctions = StringDictionary[PseudoFunction]
-    
     extension [Self <: Selectors](x: Self) {
       
       inline def setAttrHandle(value: AttrHandleFunctions): Self = StObject.set(x, "attrHandle", value.asInstanceOf[js.Any])
@@ -113,6 +105,14 @@ object mod extends Shortcut {
       
       inline def setSetFilters(value: SetFilterFunctions): Self = StObject.set(x, "setFilters", value.asInstanceOf[js.Any])
     }
+    
+    type PreFilterFunction = js.Function1[/* match */ RegExpMatchArray, js.Array[String]]
+    
+    type PreFilterFunctions = StringDictionary[PreFilterFunction]
+    
+    type PseudoFunction = js.Function1[/* elem */ Element, Boolean]
+    
+    type PseudoFunctions = StringDictionary[PseudoFunction]
     
     type SetFilterFunction = js.Function3[
         /* elements */ js.Array[Element], 

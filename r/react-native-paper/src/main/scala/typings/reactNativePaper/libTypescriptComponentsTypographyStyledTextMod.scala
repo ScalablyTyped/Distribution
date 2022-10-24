@@ -21,10 +21,7 @@ object libTypescriptComponentsTypographyStyledTextMod extends Shortcut {
   @js.native
   val default: (ComponentType[
     PickthemeDeepPartialThemeAlpha | PickthemeDeepPartialThemeAndroidhyphenationFrequency
-  ]) & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[/* hasThemeAlphaFamilyStyleRest */ Props, Element]), 
-    js.Object
-  ]) = js.native
+  ]) & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) = js.native
   
   type Props = (ComponentProps[
     ComponentType[PickTextPropsstyleStylePr] & (NonReactStatics[
@@ -35,16 +32,10 @@ object libTypescriptComponentsTypographyStyledTextMod extends Shortcut {
   
   type _To = (ComponentType[
     PickthemeDeepPartialThemeAlpha | PickthemeDeepPartialThemeAndroidhyphenationFrequency
-  ]) & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[/* hasThemeAlphaFamilyStyleRest */ Props, Element]), 
-    js.Object
-  ])
+  ]) & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsTypographyStyledTextMod.foo` */
   override def _to: (ComponentType[
     PickthemeDeepPartialThemeAlpha | PickthemeDeepPartialThemeAndroidhyphenationFrequency
-  ]) & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[/* hasThemeAlphaFamilyStyleRest */ Props, Element]), 
-    js.Object
-  ]) = default
+  ]) & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) = default
 }

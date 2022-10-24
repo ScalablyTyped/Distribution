@@ -22,7 +22,7 @@ object libSnapshotMod {
     extends ResourceClient
        with ResourceClientLoad[Snapshot]
        with ResourceClientPaginate[Snapshot] {
-    def this(hasClientAppToken: SnapshotClientDeps) = this()
+    def this(param0: SnapshotClientDeps) = this()
     
     /* protected */ var app: IdString = js.native
     

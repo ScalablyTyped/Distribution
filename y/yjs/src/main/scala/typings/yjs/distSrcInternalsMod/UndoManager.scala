@@ -17,10 +17,7 @@ open class UndoManager protected ()
   def this(typeScope: typings.yjs.distSrcTypesAbstractTypeMod.AbstractType[Any]) = this()
   def this(
     typeScope: js.Array[typings.yjs.distSrcTypesAbstractTypeMod.AbstractType[Any]],
-    hasCaptureTimeoutCaptureTransactionDeleteFilterTrackedOriginsIgnoreRemoteMapChangesDoc: UndoManagerOptions
+    param1: UndoManagerOptions
   ) = this()
-  def this(
-    typeScope: typings.yjs.distSrcTypesAbstractTypeMod.AbstractType[Any],
-    hasCaptureTimeoutCaptureTransactionDeleteFilterTrackedOriginsIgnoreRemoteMapChangesDoc: UndoManagerOptions
-  ) = this()
+  def this(typeScope: typings.yjs.distSrcTypesAbstractTypeMod.AbstractType[Any], param1: UndoManagerOptions) = this()
 }

@@ -141,69 +141,6 @@ object Config {
   
   type ChainWebpack = js.Function2[/* config */ typings.webpackChain.mod.^, /* opts */ Opts, Unit]
   
-  extension [Self <: Config](x: Self) {
-    
-    inline def setAssets(value: Assets): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
-    
-    inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
-    
-    inline def setBabel(value: Babel): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
-    
-    inline def setBabelUndefined: Self = StObject.set(x, "babel", js.undefined)
-    
-    inline def setChainWebpack(value: (/* config */ typings.webpackChain.mod.^, /* opts */ Opts) => Unit): Self = StObject.set(x, "chainWebpack", js.Any.fromFunction2(value))
-    
-    inline def setChainWebpackUndefined: Self = StObject.set(x, "chainWebpack", js.undefined)
-    
-    inline def setConfigureWebpack(value: ConfigureWebpack): Self = StObject.set(x, "configureWebpack", value.asInstanceOf[js.Any])
-    
-    inline def setConfigureWebpackFunction2(value: (/* config */ Configuration, /* opts */ Opts) => Unit | Configuration): Self = StObject.set(x, "configureWebpack", js.Any.fromFunction2(value))
-    
-    inline def setConfigureWebpackUndefined: Self = StObject.set(x, "configureWebpack", js.undefined)
-    
-    inline def setConstants(value: Constants): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
-    
-    inline def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)
-    
-    inline def setCss(value: Css): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
-    
-    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
-    
-    inline def setDevServer(value: DevServer): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
-    
-    inline def setDevServerUndefined: Self = StObject.set(x, "devServer", js.undefined)
-    
-    inline def setEntry(value: Entry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
-    
-    inline def setEntryFunction0(value: () => String | EntryObject | js.Array[String] | js.Promise[EntryStatic]): Self = StObject.set(x, "entry", js.Any.fromFunction0(value))
-    
-    inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
-    
-    inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value*))
-    
-    inline def setEnvs(value: Envs): Self = StObject.set(x, "envs", value.asInstanceOf[js.Any])
-    
-    inline def setEnvsUndefined: Self = StObject.set(x, "envs", js.undefined)
-    
-    inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
-    
-    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
-    
-    inline def setPages(value: Pages): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
-    
-    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
-    
-    inline def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-    
-    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
-    
-    inline def setPluginsVarargs(value: (String | PluginOption)*): Self = StObject.set(x, "plugins", js.Array(value*))
-    
-    inline def setPublicFolder(value: PublicFolder): Self = StObject.set(x, "publicFolder", value.asInstanceOf[js.Any])
-    
-    inline def setPublicFolderUndefined: Self = StObject.set(x, "publicFolder", js.undefined)
-  }
-  
   type ConfigureWebpack = Configuration | (js.Function2[/* config */ Configuration, /* opts */ Opts, Unit | Configuration])
   
   type Constants = StringDictionary[String]
@@ -221,21 +158,6 @@ object Config {
     inline def apply(): Css = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Css]
-    }
-    
-    extension [Self <: Css](x: Self) {
-      
-      inline def setExtract(value: Boolean): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
-      
-      inline def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
-      
-      inline def setLoaderOptions(value: LoaderOptions): Self = StObject.set(x, "loaderOptions", value.asInstanceOf[js.Any])
-      
-      inline def setLoaderOptionsUndefined: Self = StObject.set(x, "loaderOptions", js.undefined)
-      
-      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
-      
-      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     }
     
     trait LoaderOptions extends StObject {
@@ -279,6 +201,21 @@ object Config {
         
         inline def setStylusUndefined: Self = StObject.set(x, "stylus", js.undefined)
       }
+    }
+    
+    extension [Self <: Css](x: Self) {
+      
+      inline def setExtract(value: Boolean): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
+      
+      inline def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
+      
+      inline def setLoaderOptions(value: LoaderOptions): Self = StObject.set(x, "loaderOptions", value.asInstanceOf[js.Any])
+      
+      inline def setLoaderOptionsUndefined: Self = StObject.set(x, "loaderOptions", js.undefined)
+      
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     }
   }
   
@@ -409,6 +346,69 @@ object Config {
   ]
   
   type Envs = StringDictionary[String]
+  
+  extension [Self <: Config](x: Self) {
+    
+    inline def setAssets(value: Assets): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+    
+    inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
+    
+    inline def setBabel(value: Babel): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
+    
+    inline def setBabelUndefined: Self = StObject.set(x, "babel", js.undefined)
+    
+    inline def setChainWebpack(value: (/* config */ typings.webpackChain.mod.^, /* opts */ Opts) => Unit): Self = StObject.set(x, "chainWebpack", js.Any.fromFunction2(value))
+    
+    inline def setChainWebpackUndefined: Self = StObject.set(x, "chainWebpack", js.undefined)
+    
+    inline def setConfigureWebpack(value: ConfigureWebpack): Self = StObject.set(x, "configureWebpack", value.asInstanceOf[js.Any])
+    
+    inline def setConfigureWebpackFunction2(value: (/* config */ Configuration, /* opts */ Opts) => Unit | Configuration): Self = StObject.set(x, "configureWebpack", js.Any.fromFunction2(value))
+    
+    inline def setConfigureWebpackUndefined: Self = StObject.set(x, "configureWebpack", js.undefined)
+    
+    inline def setConstants(value: Constants): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+    
+    inline def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)
+    
+    inline def setCss(value: Css): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setDevServer(value: DevServer): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
+    
+    inline def setDevServerUndefined: Self = StObject.set(x, "devServer", js.undefined)
+    
+    inline def setEntry(value: Entry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    
+    inline def setEntryFunction0(value: () => String | EntryObject | js.Array[String] | js.Promise[EntryStatic]): Self = StObject.set(x, "entry", js.Any.fromFunction0(value))
+    
+    inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+    
+    inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value*))
+    
+    inline def setEnvs(value: Envs): Self = StObject.set(x, "envs", value.asInstanceOf[js.Any])
+    
+    inline def setEnvsUndefined: Self = StObject.set(x, "envs", js.undefined)
+    
+    inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    
+    inline def setPages(value: Pages): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    
+    inline def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    
+    inline def setPluginsVarargs(value: (String | PluginOption)*): Self = StObject.set(x, "plugins", js.Array(value*))
+    
+    inline def setPublicFolder(value: PublicFolder): Self = StObject.set(x, "publicFolder", value.asInstanceOf[js.Any])
+    
+    inline def setPublicFolderUndefined: Self = StObject.set(x, "publicFolder", js.undefined)
+  }
   
   trait Output extends StObject {
     

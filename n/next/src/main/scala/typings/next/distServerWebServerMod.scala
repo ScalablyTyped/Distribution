@@ -29,7 +29,7 @@ object distServerWebServerMod {
     
     /* protected */ def attachRequestMeta(req: WebNextRequest, parsedUrl: NextUrlWithParsedQuery): Unit = js.native
     
-    /* protected */ def findPageComponents(hasPathnameQueryParams: Query): js.Promise[Components | Null] = js.native
+    /* protected */ def findPageComponents(param0: Query): js.Promise[Components | Null] = js.native
     
     /* protected */ def getFallback(): js.Promise[String] = js.native
     

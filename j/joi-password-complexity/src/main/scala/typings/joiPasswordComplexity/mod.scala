@@ -12,9 +12,9 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(): JoiPasswordComplexity = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[JoiPasswordComplexity]
-  inline def default(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount: Unit, label: String): JoiPasswordComplexity = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[JoiPasswordComplexity]
-  inline def default(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount: ComplexityOptions): JoiPasswordComplexity = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount.asInstanceOf[js.Any]).asInstanceOf[JoiPasswordComplexity]
-  inline def default(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount: ComplexityOptions, label: String): JoiPasswordComplexity = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasMinMaxLowerCaseUpperCaseNumericSymbolRequirementCount.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[JoiPasswordComplexity]
+  inline def default(param0: Unit, label: String): JoiPasswordComplexity = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[JoiPasswordComplexity]
+  inline def default(param0: ComplexityOptions): JoiPasswordComplexity = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[JoiPasswordComplexity]
+  inline def default(param0: ComplexityOptions, label: String): JoiPasswordComplexity = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[JoiPasswordComplexity]
   
   trait ComplexityOptions extends StObject {
     

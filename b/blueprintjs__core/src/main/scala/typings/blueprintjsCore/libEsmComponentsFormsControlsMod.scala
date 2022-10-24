@@ -74,7 +74,7 @@ object libEsmComponentsFormsControlsMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(hasIndeterminate: CheckboxProps): ICheckboxState | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasIndeterminate.asInstanceOf[js.Any]).asInstanceOf[ICheckboxState | Null]
+    inline def getDerivedStateFromProps(param0: CheckboxProps): ICheckboxState | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(param0.asInstanceOf[js.Any]).asInstanceOf[ICheckboxState | Null]
   }
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/controls", "Radio")

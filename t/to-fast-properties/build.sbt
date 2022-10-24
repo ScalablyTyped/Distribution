@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "to-fast-properties"
-version := "4.0.0-3e9c89"
-scalaVersion := "3.1.2"
+version := "4.0.0-a80916"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

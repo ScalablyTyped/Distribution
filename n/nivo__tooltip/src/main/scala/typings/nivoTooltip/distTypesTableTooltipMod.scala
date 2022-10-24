@@ -11,7 +11,7 @@ object distTypesTableTooltipMod {
   
   @JSImport("@nivo/tooltip/dist/types/TableTooltip", "TableTooltip")
   @js.native
-  val TableTooltip: MemoExoticComponent[js.Function1[/* hasTitleRowsRenderContent */ TableTooltipProps, Element | Null]] = js.native
+  val TableTooltip: MemoExoticComponent[js.Function1[/* param0 */ TableTooltipProps, Element | Null]] = js.native
   
   trait TableTooltipProps extends StObject {
     

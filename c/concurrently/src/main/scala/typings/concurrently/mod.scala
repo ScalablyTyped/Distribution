@@ -42,7 +42,7 @@ object mod {
   open class Command protected ()
     extends typings.concurrently.distSrcCommandMod.Command {
     def this(
-      hasIndexNameCommandPrefixColorEnvCwd: CommandInfoindexnumber,
+      param0: CommandInfoindexnumber,
       spawnOpts: SpawnOptions,
       spawn: SpawnCommand,
       killProcess: KillProcess
@@ -53,49 +53,49 @@ object mod {
   @js.native
   open class InputHandler protected ()
     extends typings.concurrently.distSrcFlowControlInputHandlerMod.InputHandler {
-    def this(hasDefaultInputTargetInputStreamPauseInputStreamOnFinishLogger: DefaultInputTarget) = this()
+    def this(param0: DefaultInputTarget) = this()
   }
   
   @JSImport("concurrently", "KillOnSignal")
   @js.native
   open class KillOnSignal protected ()
     extends typings.concurrently.distSrcFlowControlKillOnSignalMod.KillOnSignal {
-    def this(hasProcess: Process) = this()
+    def this(param0: Process) = this()
   }
   
   @JSImport("concurrently", "KillOthers")
   @js.native
   open class KillOthers protected ()
     extends typings.concurrently.distSrcFlowControlKillOthersMod.KillOthers {
-    def this(hasLoggerConditions: Conditions) = this()
+    def this(param0: Conditions) = this()
   }
   
   @JSImport("concurrently", "LogError")
   @js.native
   open class LogError protected ()
     extends typings.concurrently.distSrcFlowControlLogErrorMod.LogError {
-    def this(hasLogger: typings.concurrently.anon.Logger) = this()
+    def this(param0: typings.concurrently.anon.Logger) = this()
   }
   
   @JSImport("concurrently", "LogExit")
   @js.native
   open class LogExit protected ()
     extends typings.concurrently.distSrcFlowControlLogExitMod.LogExit {
-    def this(hasLogger: typings.concurrently.anon.Logger) = this()
+    def this(param0: typings.concurrently.anon.Logger) = this()
   }
   
   @JSImport("concurrently", "LogOutput")
   @js.native
   open class LogOutput protected ()
     extends typings.concurrently.distSrcFlowControlLogOutputMod.LogOutput {
-    def this(hasLogger: typings.concurrently.anon.Logger) = this()
+    def this(param0: typings.concurrently.anon.Logger) = this()
   }
   
   @JSImport("concurrently", "LogTimings")
   @js.native
   open class LogTimings protected ()
     extends typings.concurrently.distSrcFlowControlLogTimingsMod.LogTimings {
-    def this(hasLoggerTimestampFormat: TimestampFormat) = this()
+    def this(param0: TimestampFormat) = this()
   }
   /* static members */
   object LogTimings {
@@ -104,21 +104,21 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def mapCloseEventToTimingInfo(hasCommandTimingsKilledExitCode: CloseEvent): TimingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCloseEventToTimingInfo")(hasCommandTimingsKilledExitCode.asInstanceOf[js.Any]).asInstanceOf[TimingInfo]
+    inline def mapCloseEventToTimingInfo(param0: CloseEvent): TimingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCloseEventToTimingInfo")(param0.asInstanceOf[js.Any]).asInstanceOf[TimingInfo]
   }
   
   @JSImport("concurrently", "Logger")
   @js.native
   open class Logger protected ()
     extends typings.concurrently.distSrcLoggerMod.Logger {
-    def this(hasHidePrefixFormatPrefixLengthRawTimestampFormat: Hide) = this()
+    def this(param0: Hide) = this()
   }
   
   @JSImport("concurrently", "RestartProcess")
   @js.native
   open class RestartProcess protected ()
     extends typings.concurrently.distSrcFlowControlRestartProcessMod.RestartProcess {
-    def this(hasDelayTriesLoggerScheduler: Delay) = this()
+    def this(param0: Delay) = this()
   }
   
   inline def concurrently(baseCommands: js.Array[ConcurrentlyCommandInput]): ConcurrentlyResult = ^.asInstanceOf[js.Dynamic].applyDynamic("concurrently")(baseCommands.asInstanceOf[js.Any]).asInstanceOf[ConcurrentlyResult]

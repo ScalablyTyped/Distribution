@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "remove-trailing-slash"
-version := "0.1.1-101335"
-scalaVersion := "3.1.2"
+version := "0.1.1-6e0e3e"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

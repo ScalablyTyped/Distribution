@@ -13,7 +13,5 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useRadar[D /* <: Record[String, Any] */](
-    hasDataKeysIndexByRotationDegreesMaxValueValueFormatCurveWidthHeightColorsLegendsDefsFill: Colors[D]
-  ): AngleStep[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRadar")(hasDataKeysIndexByRotationDegreesMaxValueValueFormatCurveWidthHeightColorsLegendsDefsFill.asInstanceOf[js.Any]).asInstanceOf[AngleStep[D]]
+  inline def useRadar[D /* <: Record[String, Any] */](param0: Colors[D]): AngleStep[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRadar")(param0.asInstanceOf[js.Any]).asInstanceOf[AngleStep[D]]
 }

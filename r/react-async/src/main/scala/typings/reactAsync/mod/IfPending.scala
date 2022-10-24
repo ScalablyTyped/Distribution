@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object IfPending {
   
-  inline def apply[T /* <: js.Object */](hasChildrenInitialState: Initial[T]): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenInitialState.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def apply[T /* <: js.Object */](param0: Initial[T]): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-async", "IfPending")
   @js.native

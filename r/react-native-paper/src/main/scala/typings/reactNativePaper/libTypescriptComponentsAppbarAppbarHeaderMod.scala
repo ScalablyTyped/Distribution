@@ -28,7 +28,7 @@ object libTypescriptComponentsAppbarAppbarHeaderMod extends Shortcut {
   type Props = (ComponentProps[
     ComponentType[PickPartialViewPropsRefAt] & (NonReactStatics[
       ComponentType[PartialViewPropsRefAttrib] & (js.Function1[
-        /* hasChildrenDarkStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsAppbarAppbarMod.Props, 
+        /* param0 */ typings.reactNativePaper.libTypescriptComponentsAppbarAppbarMod.Props, 
         Element
       ]), 
       js.Object

@@ -14,7 +14,7 @@ object typesUseVerticalDividerHeightMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useVerticalDividerHeight[E /* <: HTMLElement */](hasRefStyleMaxHeight: VerticalDividerHookOptions[E]): VerticalDividerHeight[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useVerticalDividerHeight")(hasRefStyleMaxHeight.asInstanceOf[js.Any]).asInstanceOf[VerticalDividerHeight[E]]
+  inline def useVerticalDividerHeight[E /* <: HTMLElement */](param0: VerticalDividerHookOptions[E]): VerticalDividerHeight[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useVerticalDividerHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[VerticalDividerHeight[E]]
   
   trait VerticalDividerHeight[E /* <: HTMLElement */] extends StObject {
     

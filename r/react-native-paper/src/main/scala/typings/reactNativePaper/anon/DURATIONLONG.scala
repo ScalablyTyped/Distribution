@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DURATIONLONG extends StObject {
   
-  def apply(hasVisibleActionDurationOnDismissChildrenWrapperStyleStyleThemeRest: Props): Element | Null = js.native
+  def apply(param0: Props): Element | Null = js.native
   
   /**
     * Show the Snackbar for a long duration.

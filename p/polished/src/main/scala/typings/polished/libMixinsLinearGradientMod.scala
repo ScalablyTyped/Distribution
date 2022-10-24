@@ -12,5 +12,5 @@ object libMixinsLinearGradientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasColorStopsFallbackToDirection: LinearGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColorStopsFallbackToDirection.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(param0: LinearGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

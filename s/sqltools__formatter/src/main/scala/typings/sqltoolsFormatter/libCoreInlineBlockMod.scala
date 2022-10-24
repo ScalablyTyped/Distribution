@@ -23,7 +23,7 @@ object libCoreInlineBlockMod {
     override def isActive(): Boolean = js.native
     
     /* CompleteClass */
-    override def isForbiddenToken(hasTypeValue: Type): Boolean = js.native
+    override def isForbiddenToken(param0: Type): Boolean = js.native
     
     /* CompleteClass */
     override def isInlineBlock(tokens: Any, index: Any): Boolean = js.native
@@ -40,7 +40,7 @@ object libCoreInlineBlockMod {
     
     def isActive(): Boolean
     
-    def isForbiddenToken(hasTypeValue: Type): Boolean
+    def isForbiddenToken(param0: Type): Boolean
     
     def isInlineBlock(tokens: Any, index: Any): Boolean
     

@@ -14,7 +14,7 @@ object buildUtilsGetFirstExternalSourceForPodMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getDependentPods(podfileLock: PodfileLock, hasNameVersion: Version): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDependentPods")(podfileLock.asInstanceOf[js.Any], hasNameVersion.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def getDependentPods(podfileLock: PodfileLock, param1: Version): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDependentPods")(podfileLock.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def getFirstExternalSourceForPod(podfileLock: PodfileLock, hasNameChecked: Checked): Source | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstExternalSourceForPod")(podfileLock.asInstanceOf[js.Any], hasNameChecked.asInstanceOf[js.Any])).asInstanceOf[Source | Null]
+  inline def getFirstExternalSourceForPod(podfileLock: PodfileLock, param1: Checked): Source | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstExternalSourceForPod")(podfileLock.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Source | Null]
 }

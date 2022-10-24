@@ -12,9 +12,7 @@ object distLoaderFidgetSpinnerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasWidthHeightBackgroundColorBallColorsWrapperClassWrapperStyleAriaLabelVisible: FidgetSpinnerProps
-  ): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasWidthHeightBackgroundColorBallColorsWrapperClassWrapperStyleAriaLabelVisible.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: FidgetSpinnerProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   /* Inlined parent std.Omit<react-loader-spinner.react-loader-spinner/dist/type.BaseProps, 'color'> */
   trait FidgetSpinnerProps extends StObject {

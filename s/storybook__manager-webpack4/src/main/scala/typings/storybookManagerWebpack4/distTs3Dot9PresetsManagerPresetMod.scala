@@ -16,8 +16,5 @@ object distTs3Dot9PresetsManagerPresetMod {
   
   inline def managerEntries(installedAddons: js.Array[String], options: ConfigDir): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("managerEntries")(installedAddons.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  inline def managerWebpack(
-    _underscore: Configuration,
-    hasConfigDirConfigTypeDocsModeEntriesRefsOutputDirPreviewUrlVersionCheckReleaseNotesDataPresetsModernFeaturesServerChannelUrl: Options & ManagerWebpackOptions
-  ): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("managerWebpack")(_underscore.asInstanceOf[js.Any], hasConfigDirConfigTypeDocsModeEntriesRefsOutputDirPreviewUrlVersionCheckReleaseNotesDataPresetsModernFeaturesServerChannelUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
+  inline def managerWebpack(_underscore: Configuration, param1: Options & ManagerWebpackOptions): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("managerWebpack")(_underscore.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
 }

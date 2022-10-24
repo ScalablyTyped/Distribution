@@ -27,9 +27,7 @@ object esmDropdownMod {
       * @displayName Dropdown
       * @public
       */
-    inline def apply(
-      hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: DropdownProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-overlays/esm/Dropdown", JSImport.Default)
     @js.native
@@ -44,7 +42,7 @@ object esmDropdownMod {
         * @displayName DropdownMenu
         * @memberOf Dropdown
         */
-      inline def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(param0: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-overlays/esm/Dropdown", "default.Menu")
       @js.native
@@ -162,7 +160,7 @@ object esmDropdownMod {
         * @displayName DropdownToggle
         * @memberOf Dropdown
         */
-      inline def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(param0: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-overlays/esm/Dropdown", "default.Toggle")
       @js.native

@@ -38,7 +38,7 @@ object distMathMod {
   
   inline def sum(xn: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(xn.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def sum2d(hasData: Matrix): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum2d")(hasData.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def sum2d(param0: Matrix): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum2d")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def variance(values: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def variance(values: js.Array[Double], avg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("variance")(values.asInstanceOf[js.Any], avg.asInstanceOf[js.Any])).asInstanceOf[Double]

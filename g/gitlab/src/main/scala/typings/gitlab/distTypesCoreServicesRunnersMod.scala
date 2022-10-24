@@ -15,9 +15,9 @@ object distTypesCoreServicesRunnersMod {
   @JSImport("gitlab/dist/types/core/services/Runners", "Runners")
   @js.native
   open class Runners () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
-    def all(hasProjectIdOptions: projectIdstringnumberPagi): js.Promise[GetResponse] = js.native
+    def all(param0: projectIdstringnumberPagi): js.Promise[GetResponse] = js.native
     
     def allOwned(): js.Promise[GetResponse] = js.native
     def allOwned(options: BaseRequestOptions): js.Promise[GetResponse] = js.native

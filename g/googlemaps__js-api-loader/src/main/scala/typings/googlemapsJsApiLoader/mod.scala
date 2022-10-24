@@ -31,7 +31,7 @@ object mod {
       * const loader = Loader({apiKey, version: 'weekly', libraries: ['places']});
       * ```
       */
-    def this(hasApiKeyAuthReferrerPolicyChannelClientIdLanguageLibrariesMapIdsNonceRegionRetriesUrlVersion: LoaderOptions) = this()
+    def this(param0: LoaderOptions) = this()
     
     /* private */ var CALLBACK: Any = js.native
     

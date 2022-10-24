@@ -31,8 +31,6 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTheMaskPlugin]
     }
     
-    type VueStatic = js.Function0[Unit]
-    
     extension [Self <: VueTheMaskPlugin](x: Self) {
       
       inline def setMask(
@@ -41,6 +39,8 @@ object mod extends Shortcut {
       
       inline def setTheMask(value: Component[Any, Any, Any, ComputedOptions, MethodOptions]): Self = StObject.set(x, "TheMask", value.asInstanceOf[js.Any])
     }
+    
+    type VueStatic = js.Function0[Unit]
   }
   
   type _To = VueTheMaskPlugin

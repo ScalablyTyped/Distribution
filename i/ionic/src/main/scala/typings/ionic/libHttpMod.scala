@@ -67,7 +67,7 @@ object libHttpMod {
   open class Paginator[T /* <: Response[js.Array[js.Object]] */] protected ()
     extends StObject
        with IPaginator[T, PagePaginatorState] {
-    def this(hasClientReqgenGuardStateMax: PaginatorDeps[T, PagePaginatorState]) = this()
+    def this(param0: PaginatorDeps[T, PagePaginatorState]) = this()
     
     /* protected */ var client: IClient = js.native
     
@@ -102,7 +102,7 @@ object libHttpMod {
   open class TokenPaginator[T /* <: Response[js.Array[js.Object]] */] protected ()
     extends StObject
        with IPaginator[T, TokenPaginatorState] {
-    def this(hasClientReqgenGuardStateMax: PaginatorDeps[T, TokenPaginatorState]) = this()
+    def this(param0: PaginatorDeps[T, TokenPaginatorState]) = this()
     
     /* protected */ var client: IClient = js.native
     

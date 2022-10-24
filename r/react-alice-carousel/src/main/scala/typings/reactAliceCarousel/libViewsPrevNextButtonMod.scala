@@ -14,7 +14,7 @@ object libViewsPrevNextButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def PrevNextButton(hasNameIsDisabledOnClickRenderPrevButtonRenderNextButton: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PrevNextButton")(hasNameIsDisabledOnClickRenderPrevButtonRenderNextButton.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PrevNextButton(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PrevNextButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -24,9 +24,9 @@ object libViewsPrevNextButtonMod {
     
     def onClick(e: Any): Unit
     
-    var renderNextButton: js.UndefOr[js.Function1[/* hasIsDisabled */ IsDisabled, Any]] = js.undefined
+    var renderNextButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, Any]] = js.undefined
     
-    var renderPrevButton: js.UndefOr[js.Function1[/* hasIsDisabled */ IsDisabled, Any]] = js.undefined
+    var renderPrevButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, Any]] = js.undefined
   }
   object Props {
     
@@ -43,11 +43,11 @@ object libViewsPrevNextButtonMod {
       
       inline def setOnClick(value: Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      inline def setRenderNextButton(value: /* hasIsDisabled */ IsDisabled => Any): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
+      inline def setRenderNextButton(value: /* param0 */ IsDisabled => Any): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
       
       inline def setRenderNextButtonUndefined: Self = StObject.set(x, "renderNextButton", js.undefined)
       
-      inline def setRenderPrevButton(value: /* hasIsDisabled */ IsDisabled => Any): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
+      inline def setRenderPrevButton(value: /* param0 */ IsDisabled => Any): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
       
       inline def setRenderPrevButtonUndefined: Self = StObject.set(x, "renderPrevButton", js.undefined)
     }

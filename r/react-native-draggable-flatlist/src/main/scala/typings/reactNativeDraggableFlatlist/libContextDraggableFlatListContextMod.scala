@@ -12,7 +12,7 @@ object libContextDraggableFlatListContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](hasActiveKeyOnDragEndKeyExtractorHorizontalChildren: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasActiveKeyOnDragEndKeyExtractorHorizontalChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[T](param0: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useDraggableFlatListContext[T](): DraggableFlatListContextValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDraggableFlatListContext")().asInstanceOf[DraggableFlatListContextValue[T]]
   
@@ -25,14 +25,14 @@ object libContextDraggableFlatListContextMod {
     
     var keyExtractor: js.Function2[/* item */ T, /* index */ Double, String]
     
-    var onDragEnd: js.Function1[/* hasFromTo */ js.Array[Double], Unit]
+    var onDragEnd: js.Function1[/* param0 */ js.Array[Double], Unit]
   }
   object DraggableFlatListContextValue {
     
     inline def apply[T](
       horizontal: Boolean,
       keyExtractor: (/* item */ T, /* index */ Double) => String,
-      onDragEnd: /* hasFromTo */ js.Array[Double] => Unit
+      onDragEnd: /* param0 */ js.Array[Double] => Unit
     ): DraggableFlatListContextValue[T] = {
       val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], keyExtractor = js.Any.fromFunction2(keyExtractor), onDragEnd = js.Any.fromFunction1(onDragEnd))
       __obj.asInstanceOf[DraggableFlatListContextValue[T]]
@@ -50,7 +50,7 @@ object libContextDraggableFlatListContextMod {
       
       inline def setKeyExtractor(value: (/* item */ T, /* index */ Double) => String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
       
-      inline def setOnDragEnd(value: /* hasFromTo */ js.Array[Double] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      inline def setOnDragEnd(value: /* param0 */ js.Array[Double] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     }
   }
   
@@ -64,7 +64,7 @@ object libContextDraggableFlatListContextMod {
     
     def keyExtractor(item: T, index: Double): String
     
-    def onDragEnd(hasFromTo: js.Array[Double]): Unit
+    def onDragEnd(param0: js.Array[Double]): Unit
   }
   object Props {
     

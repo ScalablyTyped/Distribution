@@ -15,10 +15,10 @@ object libDomexceptionImplMod {
   open class implementation protected ()
     extends StObject
        with DOMExceptionImpl {
-    def this(globalObject: js.Object, hasMessageName: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]) = this()
+    def this(globalObject: js.Object, param1: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]) = this()
     def this(
       globalObject: js.Object,
-      hasMessageName: js.Tuple2[js.UndefOr[String], js.UndefOr[String]],
+      param1: js.Tuple2[js.UndefOr[String], js.UndefOr[String]],
       privateData: js.Object
     ) = this()
     

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "humanwhocodes__gitignore-to-minimatch"
-version := "1.0.2-584b0e"
-scalaVersion := "3.1.2"
+version := "1.0.2-04aa72"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

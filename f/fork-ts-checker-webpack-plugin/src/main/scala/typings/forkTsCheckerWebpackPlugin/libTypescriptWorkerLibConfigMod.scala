@@ -17,9 +17,9 @@ object libTypescriptWorkerLibConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def didConfigFileChanged(hasChangedFilesDeletedFiles: FilesChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("didConfigFileChanged")(hasChangedFilesDeletedFiles.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def didConfigFileChanged(param0: FilesChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("didConfigFileChanged")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def didDependenciesProbablyChanged(dependencies: FilesMatch, hasChangedFilesDeletedFiles: FilesChange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("didDependenciesProbablyChanged")(dependencies.asInstanceOf[js.Any], hasChangedFilesDeletedFiles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def didDependenciesProbablyChanged(dependencies: FilesMatch, param1: FilesChange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("didDependenciesProbablyChanged")(dependencies.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def didRootFilesChanged(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("didRootFilesChanged")().asInstanceOf[js.UndefOr[Boolean]]
   

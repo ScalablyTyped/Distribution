@@ -137,7 +137,7 @@ object iconMod {
   @js.native
   val Upload: ForwardRefExoticComponent[SVGAttributesSVGElementch] = js.native
   
-  inline def getSvgStyles(hasDollarthemeDollarsizeDollarcolor: Theme): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getSvgStyles")(hasDollarthemeDollarsizeDollarcolor.asInstanceOf[js.Any]).asInstanceOf[StyleObject]
+  inline def getSvgStyles(param0: Theme): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getSvgStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[StyleObject]
   
   type StyledComponentArgsT = StyledComponentArgs
 }

@@ -11,7 +11,7 @@ object routerScrollProviderMod {
   
   object default {
     
-    inline def apply(hasDisableNextLinkScrollShouldUpdateScrollChildren: Children): Element = ^.asInstanceOf[js.Dynamic].apply(hasDisableNextLinkScrollShouldUpdateScrollChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Children): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@moxy/next-router-scroll/RouterScrollProvider", JSImport.Default)
     @js.native

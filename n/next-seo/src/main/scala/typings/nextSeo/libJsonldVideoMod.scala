@@ -12,7 +12,7 @@ object libJsonldVideoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideRest: VideoJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: VideoJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Video * / any */ trait VideoJsonLdProps

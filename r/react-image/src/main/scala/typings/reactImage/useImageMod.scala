@@ -11,7 +11,7 @@ object useImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasSrcListImgPromiseUseSuspense: useImageProps): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSrcListImgPromiseUseSuspense.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def default(param0: useImageProps): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   trait useImageProps extends StObject {
     

@@ -113,7 +113,7 @@ object buildSrcSessionPoolMod {
       * @returns {Promise}
       * @emits SessionPool#createError
       */
-    def _createSessions(hasReadsWrites: CreateSessionsOptions): js.Promise[Unit] = js.native
+    def _createSessions(param0: CreateSessionsOptions): js.Promise[Unit] = js.native
     
     /**
       * Attempts to delete a session, optionally creating a new one of the same

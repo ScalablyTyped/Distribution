@@ -16,7 +16,7 @@ object distTypesCoreServicesPipelinesMod {
   @JSImport("gitlab/dist/types/core/services/Pipelines", "Pipelines")
   @js.native
   open class Pipelines () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native
     def all(projectId: String, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native

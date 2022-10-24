@@ -12,7 +12,7 @@ object distTypesCoreServicesSidekiqMetricsMod {
   @JSImport("gitlab/dist/types/core/services/SidekiqMetrics", "SidekiqMetrics")
   @js.native
   open class SidekiqMetrics () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def compoundMetrics(): js.Promise[GetResponse] = js.native
     

@@ -1,149 +1,175 @@
 package typings.wixStyleReact
 
-import typings.wixStyleReact.accordionItemMod.AccordionItemButtonType
-import typings.wixStyleReact.addItemMod.AddItemAlignItems
-import typings.wixStyleReact.addItemMod.AddItemSize
-import typings.wixStyleReact.addItemMod.AddItemTheme
-import typings.wixStyleReact.badgeDriverMod.Size
-import typings.wixStyleReact.badgeDriverMod.Skin
-import typings.wixStyleReact.badgeDriverMod.Type
-import typings.wixStyleReact.badgeMod.BadgeSize
-import typings.wixStyleReact.badgeMod.BadgeSkin
-import typings.wixStyleReact.badgeMod.BadgeType
-import typings.wixStyleReact.badgeSelectItemMod.BadgeSelectItemSkin
-import typings.wixStyleReact.baseModalLayoutMod.ModalTheme
-import typings.wixStyleReact.boxMod.BoxDirection
-import typings.wixStyleReact.boxMod.BoxHorizontalAlignment
-import typings.wixStyleReact.boxMod.BoxSpacing
-import typings.wixStyleReact.boxMod.BoxVerticalAlignment
-import typings.wixStyleReact.breadcrumbsMod.BreadcrumbsSize
-import typings.wixStyleReact.breadcrumbsMod.BreadcrumbsTheme
-import typings.wixStyleReact.browserPreviewWidgetMod.BrowserBarSizes
-import typings.wixStyleReact.browserPreviewWidgetMod.BrowserPreviewWidgetSkin
-import typings.wixStyleReact.buttonMod.ButtonPriority
-import typings.wixStyleReact.buttonMod.ButtonSize
-import typings.wixStyleReact.buttonMod.ButtonSkin
-import typings.wixStyleReact.calendarPanelFooterMod.CalendarPanelFooterItemButtonType
-import typings.wixStyleReact.calendarPanelMod.LanguageType
-import typings.wixStyleReact.calendarPanelMod.SelectionModeType
-import typings.wixStyleReact.cardContentMod.ContentSize
-import typings.wixStyleReact.carouselMod.CarouselControlsPosition
-import typings.wixStyleReact.checkToggleMod.CheckToggleSize
-import typings.wixStyleReact.checkToggleMod.CheckToggleSkin
-import typings.wixStyleReact.checkboxMod.CheckboxLabelSize
-import typings.wixStyleReact.checkboxMod.CheckboxSelectionArea
-import typings.wixStyleReact.checkboxMod.CheckboxVAlign
-import typings.wixStyleReact.circularProgressBarMod.CircularProgressBarSize
-import typings.wixStyleReact.closeButtonMod.CloseButtonSelectionArea
-import typings.wixStyleReact.closeButtonMod.CloseButtonSize
-import typings.wixStyleReact.closeButtonMod.CloseButtonSkin
-import typings.wixStyleReact.colorInputMod.ColorInputSize
-import typings.wixStyleReact.commonMod.Spacing
-import typings.wixStyleReact.commonMod.StatusIndications
-import typings.wixStyleReact.counterBadgeMod.CounterBadgeSize
-import typings.wixStyleReact.counterBadgeMod.CounterBadgeSkin
-import typings.wixStyleReact.dataTableMod.DataTableColumnAlign
-import typings.wixStyleReact.dataTableMod.DataTableRowVerticalPadding
-import typings.wixStyleReact.dataTableMod.DataTableSkin
-import typings.wixStyleReact.datePickerMod.DatePickerStatus
-import typings.wixStyleReact.dropdownLayoutMod.DropdownLayoutItemHeight
-import typings.wixStyleReact.dropdownLayoutMod.Overflow
-import typings.wixStyleReact.emptyStateMod.EmptyStateAlign
-import typings.wixStyleReact.emptyStateMod.EmptyStateTheme
-import typings.wixStyleReact.fillButtonMod.FillButtonIconSize
-import typings.wixStyleReact.floatingHelperContentMod.FloatingHelperContentActionTheme
-import typings.wixStyleReact.floatingHelperMod.FloatingHelperAppearance
-import typings.wixStyleReact.floatingNotificationMod.FloatingNotificationType
-import typings.wixStyleReact.formFieldMod.FormFieldLabelPlacement
-import typings.wixStyleReact.formFieldMod.LabelAlignment
-import typings.wixStyleReact.formFieldMod.LabelPlacement
-import typings.wixStyleReact.headerLayoutMod.HeaderLayoutTheme
-import typings.wixStyleReact.headingMod.HeadingAppearance
-import typings.wixStyleReact.horizontalTimelineMod.HorizontalTimelineItemSkin
-import typings.wixStyleReact.iconButtonMod.IconButtonPriority
-import typings.wixStyleReact.iconButtonMod.IconButtonSize
-import typings.wixStyleReact.iconButtonMod.IconButtonSkin
-import typings.wixStyleReact.imageMod.ImageFit
-import typings.wixStyleReact.infoIconMod.InfoIconSize
-import typings.wixStyleReact.inputAreaMod.InputAreaSize
-import typings.wixStyleReact.inputMod.InputSize
-import typings.wixStyleReact.listItemActionMod.ListItemActionSize
-import typings.wixStyleReact.listItemActionMod.ListItemActionSkin
-import typings.wixStyleReact.listItemSectionMod.ListItemSectionTypes
-import typings.wixStyleReact.listItemSelectMod.ListItemSelectSizes
-import typings.wixStyleReact.loaderMod.LoaderColor
-import typings.wixStyleReact.loaderMod.LoaderSize
-import typings.wixStyleReact.loaderMod.LoaderStatus
-import typings.wixStyleReact.marketingPageLayoutContentMod.MarketingPageLayoutContentSize
-import typings.wixStyleReact.marketingPageLayoutMod.MarketingPageLayoutHorizontalSize
-import typings.wixStyleReact.marketingPageLayoutMod.MarketingPageLayoutVerticalSize
-import typings.wixStyleReact.mediaOverlayMod.MediaOverlayContentPlacement
-import typings.wixStyleReact.mediaOverlayMod.MediaOverlayContentVisible
-import typings.wixStyleReact.mediaOverlayMod.MediaOverlaySkin
-import typings.wixStyleReact.messageBoxFunctionalLayoutMod.MessageBoxFunctionalLayoutTheme
-import typings.wixStyleReact.messageBoxMarketerialLayoutMod.MessageBoxMarketerialLayoutTheme
-import typings.wixStyleReact.messageBoxMarketerialLayoutMod.MessageBoxMarketerialLayoutThemePrimaryButtonTheme
-import typings.wixStyleReact.mobilePreviewWidgetMod.MobilePreviewWidgetSkin
-import typings.wixStyleReact.modalHeadingMod.headingAppearance
-import typings.wixStyleReact.modalMod.ModalHorizontalPostion
-import typings.wixStyleReact.modalMod.ModalOverlayPosition
-import typings.wixStyleReact.modalMod.ModalVerticalPosition
-import typings.wixStyleReact.modalSelectorLayoutMod.ModalSelectorLayoutImageShape
-import typings.wixStyleReact.modalSelectorLayoutMod.ModalSelectorLayoutImageSize
-import typings.wixStyleReact.notificationMod.NotificationTheme
-import typings.wixStyleReact.notificationMod.NotificationType
-import typings.wixStyleReact.popoverMod.PopoverTheme
-import typings.wixStyleReact.previewWidgetMod.PreviewWidgetContentOutline
-import typings.wixStyleReact.previewWidgetMod.PreviewWidgetSkin
-import typings.wixStyleReact.radioGroupMod.RadioButtonSelectionArea
-import typings.wixStyleReact.radioGroupMod.RadioButtonType
-import typings.wixStyleReact.radioGroupMod.RadioButtonVAlign
-import typings.wixStyleReact.radioGroupMod.RadioGroupDisplay
-import typings.wixStyleReact.richTextInputAreaMod.RichTextInputAreaStatus
-import typings.wixStyleReact.sectionHelperMod.SectionHelperAppearance
-import typings.wixStyleReact.selectorListContentMod.SelectorListImageShape
-import typings.wixStyleReact.selectorListContentMod.SelectorListImageSize
-import typings.wixStyleReact.selectorMod.SelectorImageShape
-import typings.wixStyleReact.selectorMod.SelectorImageSize
-import typings.wixStyleReact.selectorMod.SelectorToggleType
-import typings.wixStyleReact.sidebarMod.SidebarSkin
-import typings.wixStyleReact.skeletonMod.SkeletonAlignment
-import typings.wixStyleReact.skeletonMod.SkeletonContentSize
-import typings.wixStyleReact.skeletonMod.SkeletonSpacing
-import typings.wixStyleReact.socialButtonMod.SocialButtonIcons
-import typings.wixStyleReact.sortableListMod.SortableListInsertPosition
-import typings.wixStyleReact.srcDividerMod.DividerDirection
-import typings.wixStyleReact.srcDividerMod.DividerSkin
-import typings.wixStyleReact.starsRatingBarMod.starRatingBarSize
-import typings.wixStyleReact.statusIndicatorMod.StatusIndicatorState
-import typings.wixStyleReact.statusIndicatorMod.StatusIndicatorTooltipPlacement
-import typings.wixStyleReact.stepperMod.StepperFit
-import typings.wixStyleReact.stepperMod.StepperStepType
-import typings.wixStyleReact.stepperMod.StepperType
-import typings.wixStyleReact.subheaderMod.SubheaderSkin
-import typings.wixStyleReact.tagListMod.TagListSize
-import typings.wixStyleReact.tagMod.TagIconSize
-import typings.wixStyleReact.tagMod.TagSize
-import typings.wixStyleReact.tagMod.TagTheme
-import typings.wixStyleReact.textButtonMod.TextButtonSize
-import typings.wixStyleReact.textButtonMod.TextButtonSkin
-import typings.wixStyleReact.textButtonMod.TextButtonUnderline
-import typings.wixStyleReact.textButtonMod.TextButtonWeight
-import typings.wixStyleReact.textMod.ListStyle
-import typings.wixStyleReact.textMod.TextSize
-import typings.wixStyleReact.textMod.TextSkin
-import typings.wixStyleReact.textMod.TextWeight
-import typings.wixStyleReact.thumbnailMod.ThumbnailContentAlignment
-import typings.wixStyleReact.thumbnailMod.ThumbnailSize
-import typings.wixStyleReact.timeTableMod.TimeTableInsertPosition
-import typings.wixStyleReact.toggleButtonMod.ToggleButtonSkin
-import typings.wixStyleReact.toggleSwitchMod.ToggleSwitchSize
-import typings.wixStyleReact.toggleSwitchMod.ToggleSwitchSkin
-import typings.wixStyleReact.tooltipMod.TooltipSize
-import typings.wixStyleReact.tooltipMod.TooltipTextAlign
-import typings.wixStyleReact.variableInputMod.VariableInputSize
-import typings.wixStyleReact.verticalTabsItemMod.VerticalTabsItemType
-import typings.wixStyleReact.verticalTabsMod.VerticalTabsSize
+import typings.wixStyleReact.distTypesAccordionAccordionItemMod.AccordionItemButtonType
+import typings.wixStyleReact.distTypesAccordionAccordionItemMod.AccordionItemShowLabel
+import typings.wixStyleReact.distTypesAddItemAddItemDottypesMod.AddItemAlignItems
+import typings.wixStyleReact.distTypesAddItemAddItemDottypesMod.AddItemSize
+import typings.wixStyleReact.distTypesAddItemAddItemDottypesMod.AddItemTheme
+import typings.wixStyleReact.distTypesAddressInputItemMod.AddressInputItemLayout
+import typings.wixStyleReact.distTypesAvatarAvatarCoreAvatarCoreMod.ContentType
+import typings.wixStyleReact.distTypesAvatarGroupAvatarGroupDotuniDotdriverMod.contentType
+import typings.wixStyleReact.distTypesAvatarGroupMod.AvatarGroupSize
+import typings.wixStyleReact.distTypesAvatarGroupMod.GroupType
+import typings.wixStyleReact.distTypesBadgeMod.BadgeSize
+import typings.wixStyleReact.distTypesBadgeMod.BadgeSkin
+import typings.wixStyleReact.distTypesBadgeMod.BadgeType
+import typings.wixStyleReact.distTypesBadgeSelectItemMod.BadgeSelectItemSizes
+import typings.wixStyleReact.distTypesBadgeSelectItemMod.BadgeSelectItemSkin
+import typings.wixStyleReact.distTypesBaseModalLayoutLayoutBlocksHeaderModalHeadingMod.headingAppearance
+import typings.wixStyleReact.distTypesBaseModalLayoutMod.ModalTheme
+import typings.wixStyleReact.distTypesBoxMod.BoxDirection
+import typings.wixStyleReact.distTypesBoxMod.BoxHorizontalAlignment
+import typings.wixStyleReact.distTypesBoxMod.BoxSpacing
+import typings.wixStyleReact.distTypesBoxMod.BoxVerticalAlignment
+import typings.wixStyleReact.distTypesBreadcrumbsMod.BreadcrumbsSize
+import typings.wixStyleReact.distTypesBreadcrumbsMod.BreadcrumbsTheme
+import typings.wixStyleReact.distTypesBrowserPreviewWidgetMod.BrowserBarSizes
+import typings.wixStyleReact.distTypesBrowserPreviewWidgetMod.BrowserPreviewWidgetSkin
+import typings.wixStyleReact.distTypesButtonButtonDottypesMod.ButtonPriority
+import typings.wixStyleReact.distTypesButtonButtonDottypesMod.ButtonSize
+import typings.wixStyleReact.distTypesButtonButtonDottypesMod.ButtonSkin
+import typings.wixStyleReact.distTypesCalendarPanelFooterMod.CalendarPanelFooterItemButtonType
+import typings.wixStyleReact.distTypesCalendarPanelMod.SelectionModeType
+import typings.wixStyleReact.distTypesCardContentMod.ContentSize
+import typings.wixStyleReact.distTypesCardFolderTabsMod.TabFontSize
+import typings.wixStyleReact.distTypesCardSubheaderMod.SubheaderSkin
+import typings.wixStyleReact.distTypesCarouselMod.CarouselControlsPosition
+import typings.wixStyleReact.distTypesCarouselWIPMod.CarouselWIPControlsPosition
+import typings.wixStyleReact.distTypesCarouselWIPMod.CarouselWIPSlidingType
+import typings.wixStyleReact.distTypesCheckToggleMod.CheckToggleSize
+import typings.wixStyleReact.distTypesCheckToggleMod.CheckToggleSkin
+import typings.wixStyleReact.distTypesCheckboxMod.CheckboxLabelSize
+import typings.wixStyleReact.distTypesCheckboxMod.CheckboxSelectionArea
+import typings.wixStyleReact.distTypesCheckboxMod.CheckboxSelectionAreaSkin
+import typings.wixStyleReact.distTypesCheckboxMod.CheckboxVAlign
+import typings.wixStyleReact.distTypesCircularProgressBarMod.CircularProgressBarSize
+import typings.wixStyleReact.distTypesCircularProgressBarMod.CircularProgressBarSkin
+import typings.wixStyleReact.distTypesCloseButtonMod.CloseButtonSelectionArea
+import typings.wixStyleReact.distTypesCloseButtonMod.CloseButtonSize
+import typings.wixStyleReact.distTypesCloseButtonMod.CloseButtonSkin
+import typings.wixStyleReact.distTypesColorInputMod.ColorInputSize
+import typings.wixStyleReact.distTypesCommonMod.Spacing
+import typings.wixStyleReact.distTypesCommonMod.StatusIndications
+import typings.wixStyleReact.distTypesCounterBadgeMod.CounterBadgeSize
+import typings.wixStyleReact.distTypesCounterBadgeMod.CounterBadgeSkin
+import typings.wixStyleReact.distTypesDatePickerMod.DatePickerStatus
+import typings.wixStyleReact.distTypesDividerMod.DividerDirection
+import typings.wixStyleReact.distTypesDividerMod.DividerSkin
+import typings.wixStyleReact.distTypesDropdownLayoutMod.DropdownLayoutItemHeight
+import typings.wixStyleReact.distTypesDropdownLayoutMod.ListType
+import typings.wixStyleReact.distTypesDropdownLayoutMod.Overflow
+import typings.wixStyleReact.distTypesEmptyStateMod.EmptyStateAlign
+import typings.wixStyleReact.distTypesEmptyStateMod.EmptyStateTheme
+import typings.wixStyleReact.distTypesFillButtonMod.FillButtonIconSize
+import typings.wixStyleReact.distTypesFloatingHelperFloatingHelperContentMod.FloatingHelperContentActionTheme
+import typings.wixStyleReact.distTypesFloatingHelperFloatingHelperContentMod.FloatingHelperContentDirection
+import typings.wixStyleReact.distTypesFloatingHelperMod.FloatingHelperAppearance
+import typings.wixStyleReact.distTypesFloatingNotificationMod.FloatingNotificationType
+import typings.wixStyleReact.distTypesFormFieldMod.LabelAlignment
+import typings.wixStyleReact.distTypesFormFieldMod.LabelPlacement
+import typings.wixStyleReact.distTypesFormFieldMod.LabelSize
+import typings.wixStyleReact.distTypesFormFieldMod.StatusType
+import typings.wixStyleReact.distTypesHeadingMod.HeadingAppearance
+import typings.wixStyleReact.distTypesHeadingMod.Size
+import typings.wixStyleReact.distTypesHorizontalTimelineMod.HorizontalTimelineAlignLabel
+import typings.wixStyleReact.distTypesHorizontalTimelineMod.HorizontalTimelineItemLine
+import typings.wixStyleReact.distTypesHorizontalTimelineMod.HorizontalTimelineItemSkin
+import typings.wixStyleReact.distTypesHorizontalTimelineMod.HorizontalTimelineSkin
+import typings.wixStyleReact.distTypesIconButtonMod.IconButtonPriority
+import typings.wixStyleReact.distTypesIconButtonMod.IconButtonSize
+import typings.wixStyleReact.distTypesIconButtonMod.IconButtonSkin
+import typings.wixStyleReact.distTypesImageMod.ImageFit
+import typings.wixStyleReact.distTypesInfoIconMod.InfoIconSize
+import typings.wixStyleReact.distTypesInputAreaMod.InputAreaSize
+import typings.wixStyleReact.distTypesInputMod.InputSize
+import typings.wixStyleReact.distTypesListItemActionMod.ListItemActionSize
+import typings.wixStyleReact.distTypesListItemActionMod.ListItemActionSkin
+import typings.wixStyleReact.distTypesListItemSectionMod.ListItemSectionTypes
+import typings.wixStyleReact.distTypesListItemSelectMod.ListItemSelectSizes
+import typings.wixStyleReact.distTypesLoaderMod.LoaderColor
+import typings.wixStyleReact.distTypesLoaderMod.LoaderSize
+import typings.wixStyleReact.distTypesLoaderMod.LoaderStatus
+import typings.wixStyleReact.distTypesMarketingPageLayoutContentMod.MarketingPageLayoutContentSize
+import typings.wixStyleReact.distTypesMarketingPageLayoutMod.MarketingPageLayoutHorizontalSize
+import typings.wixStyleReact.distTypesMarketingPageLayoutMod.MarketingPageLayoutVerticalSize
+import typings.wixStyleReact.distTypesMediaOverlayMod.MediaOverlayContentPlacement
+import typings.wixStyleReact.distTypesMediaOverlayMod.MediaOverlayContentVisible
+import typings.wixStyleReact.distTypesMediaOverlayMod.MediaOverlaySkin
+import typings.wixStyleReact.distTypesMessageBoxFunctionalLayoutMod.MessageBoxFunctionalLayoutTheme
+import typings.wixStyleReact.distTypesMessageBoxMarketerialLayoutMod.MessageBoxMarketerialLayoutTheme
+import typings.wixStyleReact.distTypesMessageBoxMarketerialLayoutMod.MessageBoxMarketerialLayoutThemePrimaryButtonTheme
+import typings.wixStyleReact.distTypesMobilePreviewWidgetMod.MobilePreviewWidgetSkin
+import typings.wixStyleReact.distTypesModalMod.ModalHorizontalPostion
+import typings.wixStyleReact.distTypesModalMod.ModalOverlayPosition
+import typings.wixStyleReact.distTypesModalMod.ModalScreen
+import typings.wixStyleReact.distTypesModalMod.ModalVerticalPosition
+import typings.wixStyleReact.distTypesModalSelectorLayoutMod.ModalSelectorLayoutImageShape
+import typings.wixStyleReact.distTypesModalSelectorLayoutMod.ModalSelectorLayoutImageSize
+import typings.wixStyleReact.distTypesNotificationMod.NotificationTheme
+import typings.wixStyleReact.distTypesNotificationMod.NotificationType
+import typings.wixStyleReact.distTypesPaginationPaginationCoreConstantsMod.PaginationCoreMode
+import typings.wixStyleReact.distTypesPaginationPaginationCorePaginationCoreDotdriverMod.NavButtonName
+import typings.wixStyleReact.distTypesPopoverPopoverDottypesMod.PopoverTheme
+import typings.wixStyleReact.distTypesPreviewWidgetMod.PreviewWidgetContentOutline
+import typings.wixStyleReact.distTypesPreviewWidgetMod.PreviewWidgetSkin
+import typings.wixStyleReact.distTypesRadioGroupMod.RadioGroupDisplay
+import typings.wixStyleReact.distTypesRadioGroupMod.RadioSelectionArea
+import typings.wixStyleReact.distTypesRadioGroupMod.RadioSelectionAreaSkin
+import typings.wixStyleReact.distTypesRadioGroupMod.RadioType
+import typings.wixStyleReact.distTypesRadioMod.RadioAlignItems
+import typings.wixStyleReact.distTypesRichTextInputAreaMod.RichTextInputAreaStatus
+import typings.wixStyleReact.distTypesSectionHelperMod.SectionHelperAppearance
+import typings.wixStyleReact.distTypesSelectorListContentMod.SelectorListImageShape
+import typings.wixStyleReact.distTypesSelectorListContentMod.SelectorListImageSize
+import typings.wixStyleReact.distTypesSelectorMod.SelectorImageShape
+import typings.wixStyleReact.distTypesSelectorMod.SelectorImageSize
+import typings.wixStyleReact.distTypesSelectorMod.SelectorToggleType
+import typings.wixStyleReact.distTypesSidebarMod.SidebarSkin
+import typings.wixStyleReact.distTypesSidebarSubMenuNextMod.ExpandCollapseTrigger
+import typings.wixStyleReact.distTypesSkeletonGroupMod.SkeletonGroupSkin
+import typings.wixStyleReact.distTypesSkeletonMod.SkeletonAlignment
+import typings.wixStyleReact.distTypesSkeletonMod.SkeletonContentSize
+import typings.wixStyleReact.distTypesSkeletonMod.SkeletonSpacing
+import typings.wixStyleReact.distTypesSocialButtonMod.SocialButtonIcons
+import typings.wixStyleReact.distTypesSocialPreviewMod.SocialPreviewSize
+import typings.wixStyleReact.distTypesSocialPreviewMod.SocialPreviewSkin
+import typings.wixStyleReact.distTypesSortableListBaseMod.SortableListBaseInsertPosition
+import typings.wixStyleReact.distTypesStarsRatingBarMod.starRatingBarSize
+import typings.wixStyleReact.distTypesStatusIndicatorMod.StatusIndicatorState
+import typings.wixStyleReact.distTypesStatusIndicatorMod.StatusIndicatorTooltipPlacement
+import typings.wixStyleReact.distTypesStepperMod.StepperFit
+import typings.wixStyleReact.distTypesStepperMod.StepperStepType
+import typings.wixStyleReact.distTypesStepperMod.StepperType
+import typings.wixStyleReact.distTypesTableDataTableMod.DataTableColumnAlign
+import typings.wixStyleReact.distTypesTableDataTableMod.DataTableRowVerticalPadding
+import typings.wixStyleReact.distTypesTableDataTableMod.DataTableSkin
+import typings.wixStyleReact.distTypesTagListMod.TagListSize
+import typings.wixStyleReact.distTypesTagMod.TagIconSize
+import typings.wixStyleReact.distTypesTagMod.TagSize
+import typings.wixStyleReact.distTypesTagMod.TagTheme
+import typings.wixStyleReact.distTypesTextButtonMod.TextButtonSize
+import typings.wixStyleReact.distTypesTextButtonMod.TextButtonSkin
+import typings.wixStyleReact.distTypesTextButtonMod.TextButtonUnderline
+import typings.wixStyleReact.distTypesTextButtonMod.TextButtonWeight
+import typings.wixStyleReact.distTypesTextMod.ListStyle
+import typings.wixStyleReact.distTypesTextMod.TextSize
+import typings.wixStyleReact.distTypesTextMod.TextSkin
+import typings.wixStyleReact.distTypesTextMod.TextWeight
+import typings.wixStyleReact.distTypesThumbnailMod.ThumbnailContentAlignment
+import typings.wixStyleReact.distTypesThumbnailMod.ThumbnailSize
+import typings.wixStyleReact.distTypesTimeTableMod.TimeTableInsertPosition
+import typings.wixStyleReact.distTypesToggleButtonMod.ToggleButtonSkin
+import typings.wixStyleReact.distTypesToggleSwitchMod.ToggleSwitchSize
+import typings.wixStyleReact.distTypesToggleSwitchMod.ToggleSwitchSkin
+import typings.wixStyleReact.distTypesTooltipTooltipDottypesMod.TooltipSize
+import typings.wixStyleReact.distTypesTooltipTooltipDottypesMod.TooltipTextAlign
+import typings.wixStyleReact.distTypesTransitionConstantsMod.TransitionType
+import typings.wixStyleReact.distTypesTransitionTransitionDottypesMod.Delay
+import typings.wixStyleReact.distTypesTransitionTransitionDottypesMod.Direction
+import typings.wixStyleReact.distTypesTransitionTransitionDottypesMod.Duration
+import typings.wixStyleReact.distTypesVariableInputMod.VariableInputSize
+import typings.wixStyleReact.distTypesVerticalTabsItemMod.VerticalTabsItemType
+import typings.wixStyleReact.distTypesVerticalTabsMod.VerticalTabsSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -154,7 +180,7 @@ object wixStyleReactStrings {
   sealed trait default
     extends StObject
        with MediaOverlayContentVisible
-       with RadioButtonType
+       with RadioType
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
@@ -164,6 +190,10 @@ object wixStyleReactStrings {
   @js.native
   sealed trait `100Percentsign` extends StObject
   inline def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
+  
+  @js.native
+  sealed trait `11px` extends StObject
+  inline def `11px`: `11px` = "11px".asInstanceOf[`11px`]
   
   @js.native
   sealed trait A1 extends StObject
@@ -192,6 +222,14 @@ object wixStyleReactStrings {
   @js.native
   sealed trait ALL extends StObject
   inline def ALL: ALL = "ALL".asInstanceOf[ALL]
+  
+  @js.native
+  sealed trait B10 extends StObject
+  inline def B10: B10 = "B10".asInstanceOf[B10]
+  
+  @js.native
+  sealed trait G10 extends StObject
+  inline def G10: G10 = "G10".asInstanceOf[G10]
   
   @js.native
   sealed trait H1
@@ -233,6 +271,22 @@ object wixStyleReactStrings {
   @js.native
   sealed trait NONE extends StObject
   inline def NONE: NONE = "NONE".asInstanceOf[NONE]
+  
+  @js.native
+  sealed trait Numbersign162d3d extends StObject
+  inline def Numbersign162d3d: Numbersign162d3d = "#162d3d".asInstanceOf[Numbersign162d3d]
+  
+  @js.native
+  sealed trait Numbersignffffff extends StObject
+  inline def Numbersignffffff: Numbersignffffff = "#ffffff".asInstanceOf[Numbersignffffff]
+  
+  @js.native
+  sealed trait P10 extends StObject
+  inline def P10: P10 = "P10".asInstanceOf[P10]
+  
+  @js.native
+  sealed trait R10 extends StObject
+  inline def R10: R10 = "R10".asInstanceOf[R10]
   
   @js.native
   sealed trait SINGLE_TOGGLE extends StObject
@@ -303,6 +357,10 @@ object wixStyleReactStrings {
   inline def SP9: SP9 = "SP9".asInstanceOf[SP9]
   
   @js.native
+  sealed trait `Slashwix-atlas-service-web` extends StObject
+  inline def `Slashwix-atlas-service-web`: `Slashwix-atlas-service-web` = "/wix-atlas-service-web".asInstanceOf[`Slashwix-atlas-service-web`]
+  
+  @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -327,6 +385,7 @@ object wixStyleReactStrings {
   @js.native
   sealed trait action
     extends StObject
+       with ListType
        with VerticalTabsItemType
   inline def action: action = "action".asInstanceOf[action]
   
@@ -347,16 +406,23 @@ object wixStyleReactStrings {
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
+  sealed trait `align-to-start`
+    extends StObject
+       with CarouselWIPSlidingType
+  inline def `align-to-start`: `align-to-start` = "align-to-start".asInstanceOf[`align-to-start`]
+  
+  @js.native
   sealed trait all_ extends StObject
   inline def all_ : all_ = "all".asInstanceOf[all_]
   
   @js.native
   sealed trait always
     extends StObject
+       with AccordionItemShowLabel
        with CheckboxSelectionArea
        with CloseButtonSelectionArea
        with MediaOverlayContentVisible
-       with RadioButtonSelectionArea
+       with RadioSelectionArea
        with TextButtonUnderline
   inline def always: always = "always".asInstanceOf[always]
   
@@ -373,15 +439,19 @@ object wixStyleReactStrings {
   inline def animationStart: animationStart = "animationStart".asInstanceOf[animationStart]
   
   @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
   sealed trait any
     extends StObject
-       with SortableListInsertPosition
+       with SortableListBaseInsertPosition
        with TimeTableInsertPosition
   inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
+  sealed trait ar extends StObject
+  inline def ar: ar = "ar".asInstanceOf[ar]
   
   @js.native
   sealed trait area extends StObject
@@ -432,16 +502,16 @@ object wixStyleReactStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
-  
-  @js.native
   sealed trait bdi extends StObject
   inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
   @js.native
   sealed trait bdo extends StObject
   inline def bdo: bdo = "bdo".asInstanceOf[bdo]
+  
+  @js.native
+  sealed trait bg extends StObject
+  inline def bg: bg = "bg".asInstanceOf[bg]
   
   @js.native
   sealed trait big
@@ -456,7 +526,6 @@ object wixStyleReactStrings {
   @js.native
   sealed trait blue
     extends StObject
-       with HeaderLayoutTheme
        with LoaderColor
        with MessageBoxFunctionalLayoutTheme
        with MessageBoxMarketerialLayoutTheme
@@ -492,6 +561,7 @@ object wixStyleReactStrings {
     extends StObject
        with BoxVerticalAlignment
        with CarouselControlsPosition
+       with CarouselWIPControlsPosition
        with StatusIndicatorTooltipPlacement
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -508,6 +578,24 @@ object wixStyleReactStrings {
   inline def `bottom-start`: `bottom-start` = "bottom-start".asInstanceOf[`bottom-start`]
   
   @js.native
+  sealed trait bottomEnd extends StObject
+  inline def bottomEnd: bottomEnd = "bottomEnd".asInstanceOf[bottomEnd]
+  
+  @js.native
+  sealed trait bottomLine extends StObject
+  inline def bottomLine: bottomLine = "bottomLine".asInstanceOf[bottomLine]
+  
+  @js.native
+  sealed trait bottomStart extends StObject
+  inline def bottomStart: bottomStart = "bottomStart".asInstanceOf[bottomStart]
+  
+  @js.native
+  sealed trait bottomToTop
+    extends StObject
+       with Direction
+  inline def bottomToTop: bottomToTop = "bottomToTop".asInstanceOf[bottomToTop]
+  
+  @js.native
   sealed trait br extends StObject
   inline def br: br = "br".asInstanceOf[br]
   
@@ -520,8 +608,12 @@ object wixStyleReactStrings {
     extends StObject
        with AccordionItemButtonType
        with CalendarPanelFooterItemButtonType
-       with RadioButtonType
+       with RadioType
   inline def button: button = "button".asInstanceOf[button]
+  
+  @js.native
+  sealed trait ca extends StObject
+  inline def ca: ca = "ca".asInstanceOf[ca]
   
   @js.native
   sealed trait canPlay extends StObject
@@ -547,9 +639,10 @@ object wixStyleReactStrings {
        with CheckboxVAlign
        with DataTableColumnAlign
        with EmptyStateAlign
+       with HorizontalTimelineAlignLabel
        with ModalHorizontalPostion
        with ModalVerticalPosition
-       with RadioButtonVAlign
+       with RadioAlignItems
        with ThumbnailContentAlignment
        with TooltipTextAlign
   inline def center: center = "center".asInstanceOf[center]
@@ -563,6 +656,10 @@ object wixStyleReactStrings {
     extends StObject
        with SelectorToggleType
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @js.native
+  sealed trait checked extends StObject
+  inline def checked: checked = "checked".asInstanceOf[checked]
   
   @js.native
   sealed trait checkmark
@@ -593,8 +690,14 @@ object wixStyleReactStrings {
   inline def cite: cite = "cite".asInstanceOf[cite]
   
   @js.native
-  sealed trait click extends StObject
+  sealed trait click
+    extends StObject
+       with ExpandCollapseTrigger
   inline def click: click = "click".asInstanceOf[click]
+  
+  @js.native
+  sealed trait clip extends StObject
+  inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
   sealed trait code extends StObject
@@ -609,8 +712,15 @@ object wixStyleReactStrings {
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
+  sealed trait collapse
+    extends StObject
+       with TransitionType
+  inline def collapse: collapse = "collapse".asInstanceOf[collapse]
+  
+  @js.native
   sealed trait compact
     extends StObject
+       with PaginationCoreMode
        with StepperFit
   inline def compact: compact = "compact".asInstanceOf[compact]
   
@@ -637,6 +747,12 @@ object wixStyleReactStrings {
   inline def compositionUpdate: compositionUpdate = "compositionUpdate".asInstanceOf[compositionUpdate]
   
   @js.native
+  sealed trait condensed
+    extends StObject
+       with GroupType
+  inline def condensed: condensed = "condensed".asInstanceOf[condensed]
+  
+  @js.native
   sealed trait contain
     extends StObject
        with ImageFit
@@ -657,9 +773,7 @@ object wixStyleReactStrings {
   inline def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait cs
-    extends StObject
-       with LanguageType
+  sealed trait cs extends StObject
   inline def cs: cs = "cs".asInstanceOf[cs]
   
   @js.native
@@ -676,9 +790,7 @@ object wixStyleReactStrings {
   inline def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
-  sealed trait da
-    extends StObject
-       with LanguageType
+  sealed trait da extends StObject
   inline def da: da = "da".asInstanceOf[da]
   
   @js.native
@@ -688,7 +800,6 @@ object wixStyleReactStrings {
        with BadgeSkin
        with CounterBadgeSkin
        with SectionHelperAppearance
-       with Skin
   inline def danger: danger = "danger".asInstanceOf[danger]
   
   @js.native
@@ -706,14 +817,22 @@ object wixStyleReactStrings {
        with FloatingHelperAppearance
        with FloatingNotificationType
        with HorizontalTimelineItemSkin
+       with HorizontalTimelineSkin
        with ListItemActionSkin
        with MediaOverlaySkin
        with PopoverTheme
        with SidebarSkin
+       with SkeletonGroupSkin
        with TagTheme
        with TextButtonSkin
        with ToggleButtonSkin
   inline def dark: dark = "dark".asInstanceOf[dark]
+  
+  @js.native
+  sealed trait dashed
+    extends StObject
+       with HorizontalTimelineItemLine
+  inline def dashed: dashed = "dashed".asInstanceOf[dashed]
   
   @js.native
   sealed trait dashes
@@ -724,6 +843,38 @@ object wixStyleReactStrings {
   @js.native
   sealed trait data extends StObject
   inline def data: data = "data".asInstanceOf[data]
+  
+  @js.native
+  sealed trait `data-badgeSelect-badge` extends StObject
+  inline def `data-badgeSelect-badge`: `data-badgeSelect-badge` = "data-badgeSelect-badge".asInstanceOf[`data-badgeSelect-badge`]
+  
+  @js.native
+  sealed trait `data-badgeSelect-dropdownLayout` extends StObject
+  inline def `data-badgeSelect-dropdownLayout`: `data-badgeSelect-dropdownLayout` = "data-badgeSelect-dropdownLayout".asInstanceOf[`data-badgeSelect-dropdownLayout`]
+  
+  @js.native
+  sealed trait `data-check-type` extends StObject
+  inline def `data-check-type`: `data-check-type` = "data-check-type".asInstanceOf[`data-check-type`]
+  
+  @js.native
+  sealed trait `data-direction` extends StObject
+  inline def `data-direction`: `data-direction` = "data-direction".asInstanceOf[`data-direction`]
+  
+  @js.native
+  sealed trait `data-disabled` extends StObject
+  inline def `data-disabled`: `data-disabled` = "data-disabled".asInstanceOf[`data-disabled`]
+  
+  @js.native
+  sealed trait `data-has-error` extends StObject
+  inline def `data-has-error`: `data-has-error` = "data-has-error".asInstanceOf[`data-has-error`]
+  
+  @js.native
+  sealed trait `data-selected-option-id` extends StObject
+  inline def `data-selected-option-id`: `data-selected-option-id` = "data-selected-option-id".asInstanceOf[`data-selected-option-id`]
+  
+  @js.native
+  sealed trait `data-shown` extends StObject
+  inline def `data-shown`: `data-shown` = "data-shown".asInstanceOf[`data-shown`]
   
   @js.native
   sealed trait dataHook extends StObject
@@ -748,10 +899,16 @@ object wixStyleReactStrings {
   inline def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
-  sealed trait de
-    extends StObject
-       with LanguageType
+  sealed trait de extends StObject
   inline def de: de = "de".asInstanceOf[de]
+  
+  @js.native
+  sealed trait `de-AT` extends StObject
+  inline def `de-AT`: `de-AT` = "de-AT".asInstanceOf[`de-AT`]
+  
+  @js.native
+  sealed trait `de-CH` extends StObject
+  inline def `de-CH`: `de-CH` = "de-CH".asInstanceOf[`de-CH`]
   
   @js.native
   sealed trait decimal extends StObject
@@ -766,6 +923,12 @@ object wixStyleReactStrings {
   inline def descending: descending = "descending".asInstanceOf[descending]
   
   @js.native
+  sealed trait desktop
+    extends StObject
+       with ModalScreen
+  inline def desktop: desktop = "desktop".asInstanceOf[desktop]
+  
+  @js.native
   sealed trait destructive
     extends StObject
        with ButtonSkin
@@ -774,6 +937,7 @@ object wixStyleReactStrings {
        with ListItemActionSkin
        with ModalTheme
        with TextButtonSkin
+       with ToggleButtonSkin
   inline def destructive: destructive = "destructive".asInstanceOf[destructive]
   
   @js.native
@@ -787,10 +951,6 @@ object wixStyleReactStrings {
   @js.native
   sealed trait dialog extends StObject
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
-  
-  @js.native
-  sealed trait dir extends StObject
-  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
   sealed trait disabled
@@ -814,7 +974,9 @@ object wixStyleReactStrings {
   inline def dl: dl = "dl".asInstanceOf[dl]
   
   @js.native
-  sealed trait `double-line` extends StObject
+  sealed trait `double-line`
+    extends StObject
+       with AddressInputItemLayout
   inline def `double-line`: `double-line` = "double-line".asInstanceOf[`double-line`]
   
   @js.native
@@ -854,12 +1016,28 @@ object wixStyleReactStrings {
   inline def drop: drop = "drop".asInstanceOf[drop]
   
   @js.native
+  sealed trait `dropdownLayout-loader` extends StObject
+  inline def `dropdownLayout-loader`: `dropdownLayout-loader` = "dropdownLayout-loader".asInstanceOf[`dropdownLayout-loader`]
+  
+  @js.native
   sealed trait dt extends StObject
   inline def dt: dt = "dt".asInstanceOf[dt]
   
   @js.native
   sealed trait durationChange extends StObject
   inline def durationChange: durationChange = "durationChange".asInstanceOf[durationChange]
+  
+  @js.native
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
+  
+  @js.native
+  sealed trait el extends StObject
+  inline def el: el = "el".asInstanceOf[el]
+  
+  @js.native
+  sealed trait ellipsis extends StObject
+  inline def ellipsis: ellipsis = "ellipsis".asInstanceOf[ellipsis]
   
   @js.native
   sealed trait em extends StObject
@@ -878,10 +1056,24 @@ object wixStyleReactStrings {
   inline def emptied: emptied = "emptied".asInstanceOf[emptied]
   
   @js.native
-  sealed trait en
-    extends StObject
-       with LanguageType
+  sealed trait en extends StObject
   inline def en: en = "en".asInstanceOf[en]
+  
+  @js.native
+  sealed trait `en-AU` extends StObject
+  inline def `en-AU`: `en-AU` = "en-AU".asInstanceOf[`en-AU`]
+  
+  @js.native
+  sealed trait `en-CA` extends StObject
+  inline def `en-CA`: `en-CA` = "en-CA".asInstanceOf[`en-CA`]
+  
+  @js.native
+  sealed trait `en-GB` extends StObject
+  inline def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
+  
+  @js.native
+  sealed trait `en-US` extends StObject
+  inline def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   
   @js.native
   sealed trait encrypted extends StObject
@@ -894,13 +1086,17 @@ object wixStyleReactStrings {
        with EmptyStateAlign
        with ModalHorizontalPostion
        with ModalVerticalPosition
-       with SortableListInsertPosition
+       with SortableListBaseInsertPosition
        with TimeTableInsertPosition
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait ended extends StObject
   inline def ended: ended = "ended".asInstanceOf[ended]
+  
+  @js.native
+  sealed trait enterEasing extends StObject
+  inline def enterEasing: enterEasing = "enterEasing".asInstanceOf[enterEasing]
   
   @js.native
   sealed trait environment extends StObject
@@ -915,6 +1111,7 @@ object wixStyleReactStrings {
        with RichTextInputAreaStatus
        with StatusIndications
        with StatusIndicatorState
+       with StatusType
        with StepperStepType
        with TagTheme
        with TextSkin
@@ -922,14 +1119,38 @@ object wixStyleReactStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait es
-    extends StObject
-       with LanguageType
+  sealed trait es extends StObject
   inline def es: es = "es".asInstanceOf[es]
+  
+  @js.native
+  sealed trait `es-419` extends StObject
+  inline def `es-419`: `es-419` = "es-419".asInstanceOf[`es-419`]
+  
+  @js.native
+  sealed trait `es-AR` extends StObject
+  inline def `es-AR`: `es-AR` = "es-AR".asInstanceOf[`es-AR`]
+  
+  @js.native
+  sealed trait `es-MX` extends StObject
+  inline def `es-MX`: `es-MX` = "es-MX".asInstanceOf[`es-MX`]
+  
+  @js.native
+  sealed trait `es-US` extends StObject
+  inline def `es-US`: `es-US` = "es-US".asInstanceOf[`es-US`]
   
   @js.native
   sealed trait execute extends StObject
   inline def execute: execute = "execute".asInstanceOf[execute]
+  
+  @js.native
+  sealed trait exitEasing extends StObject
+  inline def exitEasing: exitEasing = "exitEasing".asInstanceOf[exitEasing]
+  
+  @js.native
+  sealed trait expand
+    extends StObject
+       with TransitionType
+  inline def expand: expand = "expand".asInstanceOf[expand]
   
   @js.native
   sealed trait experimentalDark
@@ -938,10 +1159,54 @@ object wixStyleReactStrings {
   inline def experimentalDark: experimentalDark = "experimentalDark".asInstanceOf[experimentalDark]
   
   @js.native
+  sealed trait extraLarge
+    extends StObject
+       with Size
+  inline def extraLarge: extraLarge = "extraLarge".asInstanceOf[extraLarge]
+  
+  @js.native
+  sealed trait extraTiny
+    extends StObject
+       with Size
+  inline def extraTiny: extraTiny = "extraTiny".asInstanceOf[extraTiny]
+  
+  @js.native
   sealed trait facebook
     extends StObject
        with SocialButtonIcons
   inline def facebook: facebook = "facebook".asInstanceOf[facebook]
+  
+  @js.native
+  sealed trait fadeIn
+    extends StObject
+       with TransitionType
+  inline def fadeIn: fadeIn = "fadeIn".asInstanceOf[fadeIn]
+  
+  @js.native
+  sealed trait fadeOut
+    extends StObject
+       with TransitionType
+  inline def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
+  
+  @js.native
+  sealed trait fast extends StObject
+  inline def fast: fast = "fast".asInstanceOf[fast]
+  
+  @js.native
+  sealed trait fast01
+    extends StObject
+       with Duration
+  inline def fast01: fast01 = "fast01".asInstanceOf[fast01]
+  
+  @js.native
+  sealed trait fast02
+    extends StObject
+       with Duration
+  inline def fast02: fast02 = "fast02".asInstanceOf[fast02]
+  
+  @js.native
+  sealed trait fi extends StObject
+  inline def fi: fi = "fi".asInstanceOf[fi]
   
   @js.native
   sealed trait fieldset extends StObject
@@ -959,7 +1224,16 @@ object wixStyleReactStrings {
   sealed trait filled
     extends StObject
        with AddItemTheme
+       with CheckboxSelectionAreaSkin
+       with HorizontalTimelineItemLine
+       with RadioSelectionAreaSkin
   inline def filled: filled = "filled".asInstanceOf[filled]
+  
+  @js.native
+  sealed trait first
+    extends StObject
+       with NavButtonName
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait fixed
@@ -972,10 +1246,6 @@ object wixStyleReactStrings {
   inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait font extends StObject
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
@@ -984,22 +1254,29 @@ object wixStyleReactStrings {
   inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait fr
-    extends StObject
-       with LanguageType
+  sealed trait formatError extends StObject
+  inline def formatError: formatError = "formatError".asInstanceOf[formatError]
+  
+  @js.native
+  sealed trait fr extends StObject
   inline def fr: fr = "fr".asInstanceOf[fr]
   
   @js.native
-  sealed trait frame extends StObject
-  inline def frame: frame = "frame".asInstanceOf[frame]
+  sealed trait `fr-BE` extends StObject
+  inline def `fr-BE`: `fr-BE` = "fr-BE".asInstanceOf[`fr-BE`]
   
   @js.native
-  sealed trait frameset extends StObject
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
+  sealed trait `fr-CA` extends StObject
+  inline def `fr-CA`: `fr-CA` = "fr-CA".asInstanceOf[`fr-CA`]
+  
+  @js.native
+  sealed trait `fr-CH` extends StObject
+  inline def `fr-CH`: `fr-CH` = "fr-CH".asInstanceOf[`fr-CH`]
   
   @js.native
   sealed trait full
     extends StObject
+       with ModalScreen
        with SkeletonContentSize
   inline def full: full = "full".asInstanceOf[full]
   
@@ -1013,7 +1290,6 @@ object wixStyleReactStrings {
        with BadgeSelectItemSkin
        with BadgeSkin
        with CounterBadgeSkin
-       with Skin
   inline def general: general = "general".asInstanceOf[general]
   
   @js.native
@@ -1068,6 +1344,14 @@ object wixStyleReactStrings {
   inline def h6_ : h6_ = "h6".asInstanceOf[h6_]
   
   @js.native
+  sealed trait hasError extends StObject
+  inline def hasError: hasError = "hasError".asInstanceOf[hasError]
+  
+  @js.native
+  sealed trait he extends StObject
+  inline def he: he = "he".asInstanceOf[he]
+  
+  @js.native
   sealed trait head extends StObject
   inline def head: head = "head".asInstanceOf[head]
   
@@ -1080,6 +1364,10 @@ object wixStyleReactStrings {
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
+  sealed trait hi extends StObject
+  inline def hi: hi = "hi".asInstanceOf[hi]
+  
+  @js.native
   sealed trait hidden
     extends StObject
        with Overflow
@@ -1090,16 +1378,18 @@ object wixStyleReactStrings {
     extends StObject
        with BoxDirection
        with DividerDirection
+       with FloatingHelperContentDirection
        with RadioGroupDisplay
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait hover
     extends StObject
+       with AccordionItemShowLabel
        with CheckboxSelectionArea
        with CloseButtonSelectionArea
        with MediaOverlayContentVisible
-       with RadioButtonSelectionArea
+       with RadioSelectionArea
   inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
@@ -1111,12 +1401,24 @@ object wixStyleReactStrings {
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
+  sealed trait httpColonSlashSlashlocalhostSlash extends StObject
+  inline def httpColonSlashSlashlocalhostSlash: httpColonSlashSlashlocalhostSlash = "http://localhost/".asInstanceOf[httpColonSlashSlashlocalhostSlash]
+  
+  @js.native
   sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends StObject
   inline def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
   
   @js.native
+  sealed trait hu extends StObject
+  inline def hu: hu = "hu".asInstanceOf[hu]
+  
+  @js.native
   sealed trait i extends StObject
   inline def i: i = "i".asInstanceOf[i]
+  
+  @js.native
+  sealed trait id extends StObject
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait iframe extends StObject
@@ -1126,11 +1428,17 @@ object wixStyleReactStrings {
   sealed trait image
     extends StObject
        with AddItemTheme
+       with ContentType
+       with contentType
   inline def image: image = "image".asInstanceOf[image]
   
   @js.native
   sealed trait img extends StObject
   inline def img: img = "img".asInstanceOf[img]
+  
+  @js.native
+  sealed trait indeterminate extends StObject
+  inline def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   
   @js.native
   sealed trait inherit extends StObject
@@ -1141,7 +1449,9 @@ object wixStyleReactStrings {
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait input extends StObject
+  sealed trait input
+    extends StObject
+       with PaginationCoreMode
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
@@ -1167,15 +1477,11 @@ object wixStyleReactStrings {
   inline def inverted: inverted = "inverted".asInstanceOf[inverted]
   
   @js.native
-  sealed trait it
-    extends StObject
-       with LanguageType
+  sealed trait it extends StObject
   inline def it: it = "it".asInstanceOf[it]
   
   @js.native
-  sealed trait ja
-    extends StObject
-       with LanguageType
+  sealed trait ja extends StObject
   inline def ja: ja = "ja".asInstanceOf[ja]
   
   @js.native
@@ -1195,9 +1501,7 @@ object wixStyleReactStrings {
   inline def keyUp: keyUp = "keyUp".asInstanceOf[keyUp]
   
   @js.native
-  sealed trait ko
-    extends StObject
-       with LanguageType
+  sealed trait ko extends StObject
   inline def ko: ko = "ko".asInstanceOf[ko]
   
   @js.native
@@ -1225,8 +1529,10 @@ object wixStyleReactStrings {
        with ModalSelectorLayoutImageSize
        with SelectorImageSize
        with SelectorListImageSize
+       with Size
        with SkeletonContentSize
        with SkeletonSpacing
+       with SocialPreviewSize
        with TagListSize
        with TagSize
        with ToggleSwitchSize
@@ -1235,13 +1541,29 @@ object wixStyleReactStrings {
   inline def large: large = "large".asInstanceOf[large]
   
   @js.native
+  sealed trait last
+    extends StObject
+       with NavButtonName
+  inline def last: last = "last".asInstanceOf[last]
+  
+  @js.native
+  sealed trait `lazy` extends StObject
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
   sealed trait left
     extends StObject
        with AddItemAlignItems
        with BoxHorizontalAlignment
-       with FormFieldLabelPlacement
+       with LabelPlacement
        with StatusIndicatorTooltipPlacement
   inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
+  sealed trait leftToRight
+    extends StObject
+       with Direction
+  inline def leftToRight: leftToRight = "leftToRight".asInstanceOf[leftToRight]
   
   @js.native
   sealed trait legend extends StObject
@@ -1256,12 +1578,14 @@ object wixStyleReactStrings {
     extends StObject
        with ButtonSkin
        with CloseButtonSkin
+       with CounterBadgeSkin
        with DividerSkin
        with FloatingHelperAppearance
        with HorizontalTimelineItemSkin
        with IconButtonSkin
        with PopoverTheme
        with SidebarSkin
+       with SkeletonGroupSkin
        with TagTheme
        with TextButtonSkin
   inline def light: light = "light".asInstanceOf[light]
@@ -1271,6 +1595,12 @@ object wixStyleReactStrings {
     extends StObject
        with CloseButtonSkin
   inline def lightFilled: lightFilled = "lightFilled".asInstanceOf[lightFilled]
+  
+  @js.native
+  sealed trait lightOutlined
+    extends StObject
+       with TagTheme
+  inline def lightOutlined: lightOutlined = "lightOutlined".asInstanceOf[lightOutlined]
   
   @js.native
   sealed trait lightPrimary
@@ -1324,6 +1654,7 @@ object wixStyleReactStrings {
        with RichTextInputAreaStatus
        with StatusIndications
        with StatusIndicatorState
+       with StatusType
   inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
@@ -1335,6 +1666,16 @@ object wixStyleReactStrings {
   @js.native
   sealed trait location extends StObject
   inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
+  sealed trait long
+    extends StObject
+       with Delay
+  inline def long: long = "long".asInstanceOf[long]
+  
+  @js.native
+  sealed trait lt extends StObject
+  inline def lt: lt = "lt".asInstanceOf[lt]
   
   @js.native
   sealed trait main extends StObject
@@ -1355,13 +1696,19 @@ object wixStyleReactStrings {
   inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait marquee extends StObject
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
+  sealed trait `marketingLayout-description` extends StObject
+  inline def `marketingLayout-description`: `marketingLayout-description` = "marketingLayout-description".asInstanceOf[`marketingLayout-description`]
+  
+  @js.native
+  sealed trait `marketingLayout-title` extends StObject
+  inline def `marketingLayout-title`: `marketingLayout-title` = "marketingLayout-title".asInstanceOf[`marketingLayout-title`]
   
   @js.native
   sealed trait medium
     extends StObject
        with AddItemSize
+       with AvatarGroupSize
+       with BadgeSelectItemSizes
        with BadgeSize
        with BoxSpacing
        with BreadcrumbsSize
@@ -1374,12 +1721,12 @@ object wixStyleReactStrings {
        with ContentSize
        with CounterBadgeSize
        with DataTableRowVerticalPadding
+       with Delay
        with FillButtonIconSize
        with IconButtonSize
        with InfoIconSize
        with InputAreaSize
        with InputSize
-       with LabelPlacement
        with ListItemActionSize
        with ListItemSelectSizes
        with LoaderSize
@@ -1389,6 +1736,7 @@ object wixStyleReactStrings {
        with Size
        with SkeletonContentSize
        with SkeletonSpacing
+       with TabFontSize
        with TagIconSize
        with TagListSize
        with TagSize
@@ -1401,6 +1749,18 @@ object wixStyleReactStrings {
        with VerticalTabsSize
        with starRatingBarSize
   inline def medium: medium = "medium".asInstanceOf[medium]
+  
+  @js.native
+  sealed trait medium01
+    extends StObject
+       with Duration
+  inline def medium01: medium01 = "medium01".asInstanceOf[medium01]
+  
+  @js.native
+  sealed trait medium02
+    extends StObject
+       with Duration
+  inline def medium02: medium02 = "medium02".asInstanceOf[medium02]
   
   @js.native
   sealed trait menu extends StObject
@@ -1430,6 +1790,12 @@ object wixStyleReactStrings {
   @js.native
   sealed trait mixed extends StObject
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
+  
+  @js.native
+  sealed trait mobile
+    extends StObject
+       with ModalScreen
+  inline def mobile: mobile = "mobile".asInstanceOf[mobile]
   
   @js.native
   sealed trait mouseDown extends StObject
@@ -1464,8 +1830,28 @@ object wixStyleReactStrings {
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
+  sealed trait moveIn
+    extends StObject
+       with TransitionType
+  inline def moveIn: moveIn = "moveIn".asInstanceOf[moveIn]
+  
+  @js.native
+  sealed trait moveOut
+    extends StObject
+       with TransitionType
+  inline def moveOut: moveOut = "moveOut".asInstanceOf[moveOut]
+  
+  @js.native
+  sealed trait ms extends StObject
+  inline def ms: ms = "ms".asInstanceOf[ms]
+  
+  @js.native
   sealed trait nav extends StObject
   inline def nav: nav = "nav".asInstanceOf[nav]
+  
+  @js.native
+  sealed trait nb extends StObject
+  inline def nb: nb = "nb".asInstanceOf[nb]
   
   @js.native
   sealed trait neutral
@@ -1476,7 +1862,6 @@ object wixStyleReactStrings {
        with DataTableSkin
        with MobilePreviewWidgetSkin
        with PreviewWidgetSkin
-       with Skin
        with SubheaderSkin
        with TagTheme
   inline def neutral: neutral = "neutral".asInstanceOf[neutral]
@@ -1501,7 +1886,6 @@ object wixStyleReactStrings {
        with BadgeSelectItemSkin
        with BadgeSkin
        with CounterBadgeSkin
-       with Skin
   inline def neutralStandard: neutralStandard = "neutralStandard".asInstanceOf[neutralStandard]
   
   @js.native
@@ -1509,37 +1893,49 @@ object wixStyleReactStrings {
     extends StObject
        with BadgeSelectItemSkin
        with BadgeSkin
-       with Skin
   inline def neutralSuccess: neutralSuccess = "neutralSuccess".asInstanceOf[neutralSuccess]
   
   @js.native
-  sealed trait nl
+  sealed trait next
     extends StObject
-       with LanguageType
+       with NavButtonName
+  inline def next: next = "next".asInstanceOf[next]
+  
+  @js.native
+  sealed trait nl extends StObject
   inline def nl: nl = "nl".asInstanceOf[nl]
   
   @js.native
-  sealed trait no
-    extends StObject
-       with LanguageType
+  sealed trait nn extends StObject
+  inline def nn: nn = "nn".asInstanceOf[nn]
+  
+  @js.native
+  sealed trait no extends StObject
   inline def no: no = "no".asInstanceOf[no]
+  
+  @js.native
+  sealed trait node
+    extends StObject
+       with AccordionItemButtonType
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait none_
     extends StObject
        with CarouselControlsPosition
+       with CarouselWIPControlsPosition
        with CheckboxSelectionArea
        with CloseButtonSelectionArea
        with ImageFit
        with MediaOverlaySkin
-       with RadioButtonSelectionArea
+       with PreviewWidgetContentOutline
+       with RadioSelectionArea
        with TextButtonUnderline
   inline def none_ : none_ = "none".asInstanceOf[none_]
   
   @js.native
   sealed trait normal
     extends StObject
-       with InputAreaSize
        with StepperStepType
        with TextButtonWeight
        with TextWeight
@@ -1552,12 +1948,6 @@ object wixStyleReactStrings {
   @js.native
   sealed trait numeric extends StObject
   inline def numeric: numeric = "numeric".asInstanceOf[numeric]
-  
-  @js.native
-  sealed trait nutralDanger
-    extends StObject
-       with Skin
-  inline def nutralDanger: nutralDanger = "nutralDanger".asInstanceOf[nutralDanger]
   
   @js.native
   sealed trait `object` extends StObject
@@ -1620,10 +2010,15 @@ object wixStyleReactStrings {
   inline def other: other = "other".asInstanceOf[other]
   
   @js.native
+  sealed trait outOfBoundsError extends StObject
+  inline def outOfBoundsError: outOfBoundsError = "outOfBoundsError".asInstanceOf[outOfBoundsError]
+  
+  @js.native
   sealed trait outlined
     extends StObject
        with BadgeType
-       with Type
+       with CheckboxSelectionAreaSkin
+       with RadioSelectionAreaSkin
   inline def outlined: outlined = "outlined".asInstanceOf[outlined]
   
   @js.native
@@ -1634,6 +2029,7 @@ object wixStyleReactStrings {
   sealed trait overlay
     extends StObject
        with CarouselControlsPosition
+       with CarouselWIPControlsPosition
   inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
@@ -1653,8 +2049,10 @@ object wixStyleReactStrings {
   inline def `page-no-border`: `page-no-border` = "page-no-border".asInstanceOf[`page-no-border`]
   
   @js.native
-  sealed trait param extends StObject
-  inline def param: param = "param".asInstanceOf[param]
+  sealed trait pages
+    extends StObject
+       with PaginationCoreMode
+  inline def pages: pages = "pages".asInstanceOf[pages]
   
   @js.native
   sealed trait parent extends StObject
@@ -1679,10 +2077,15 @@ object wixStyleReactStrings {
   inline def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
   
   @js.native
-  sealed trait pl
-    extends StObject
-       with LanguageType
+  sealed trait pl extends StObject
   inline def pl: pl = "pl".asInstanceOf[pl]
+  
+  @js.native
+  sealed trait placeholder
+    extends StObject
+       with ContentType
+       with contentType
+  inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   
   @js.native
   sealed trait places extends StObject
@@ -1728,6 +2131,7 @@ object wixStyleReactStrings {
        with BadgeSelectItemSkin
        with BadgeSkin
        with ButtonSkin
+       with CircularProgressBarSkin
        with DividerSkin
        with FloatingHelperContentActionTheme
        with FloatingNotificationType
@@ -1735,7 +2139,6 @@ object wixStyleReactStrings {
        with ModalTheme
        with NotificationTheme
        with SectionHelperAppearance
-       with Skin
        with TextButtonSkin
        with TextSkin
   inline def premium: premium = "premium".asInstanceOf[premium]
@@ -1752,6 +2155,12 @@ object wixStyleReactStrings {
        with FloatingNotificationType
        with SectionHelperAppearance
   inline def preview: preview = "preview".asInstanceOf[preview]
+  
+  @js.native
+  sealed trait previous
+    extends StObject
+       with NavButtonName
+  inline def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
   sealed trait primary
@@ -1772,15 +2181,16 @@ object wixStyleReactStrings {
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait pt
-    extends StObject
-       with LanguageType
+  sealed trait pt extends StObject
   inline def pt: pt = "pt".asInstanceOf[pt]
+  
+  @js.native
+  sealed trait `pt-BR` extends StObject
+  inline def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
   
   @js.native
   sealed trait purple
     extends StObject
-       with HeaderLayoutTheme
        with MessageBoxFunctionalLayoutTheme
        with MessageBoxMarketerialLayoutTheme
        with MessageBoxMarketerialLayoutThemePrimaryButtonTheme
@@ -1817,7 +2227,6 @@ object wixStyleReactStrings {
   @js.native
   sealed trait red
     extends StObject
-       with HeaderLayoutTheme
        with MessageBoxFunctionalLayoutTheme
   inline def red: red = "red".asInstanceOf[red]
   
@@ -1840,13 +2249,35 @@ object wixStyleReactStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
+  sealed trait `reveal-chunk`
+    extends StObject
+       with CarouselWIPSlidingType
+  inline def `reveal-chunk`: `reveal-chunk` = "reveal-chunk".asInstanceOf[`reveal-chunk`]
+  
+  @js.native
+  sealed trait `reveal-one`
+    extends StObject
+       with CarouselWIPSlidingType
+  inline def `reveal-one`: `reveal-one` = "reveal-one".asInstanceOf[`reveal-one`]
+  
+  @js.native
   sealed trait right
     extends StObject
        with AddItemAlignItems
        with BoxHorizontalAlignment
-       with FormFieldLabelPlacement
+       with LabelPlacement
        with StatusIndicatorTooltipPlacement
   inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait rightToLeft
+    extends StObject
+       with Direction
+  inline def rightToLeft: rightToLeft = "rightToLeft".asInstanceOf[rightToLeft]
+  
+  @js.native
+  sealed trait ro extends StObject
+  inline def ro: ro = "ro".asInstanceOf[ro]
   
   @js.native
   sealed trait round extends StObject
@@ -1861,9 +2292,7 @@ object wixStyleReactStrings {
   inline def rt: rt = "rt".asInstanceOf[rt]
   
   @js.native
-  sealed trait ru
-    extends StObject
-       with LanguageType
+  sealed trait ru extends StObject
   inline def ru: ru = "ru".asInstanceOf[ru]
   
   @js.native
@@ -1877,6 +2306,18 @@ object wixStyleReactStrings {
   @js.native
   sealed trait samp extends StObject
   inline def samp: samp = "samp".asInstanceOf[samp]
+  
+  @js.native
+  sealed trait scaleDown
+    extends StObject
+       with TransitionType
+  inline def scaleDown: scaleDown = "scaleDown".asInstanceOf[scaleDown]
+  
+  @js.native
+  sealed trait scaleUp
+    extends StObject
+       with TransitionType
+  inline def scaleUp: scaleUp = "scaleUp".asInstanceOf[scaleUp]
   
   @js.native
   sealed trait script extends StObject
@@ -1924,7 +2365,10 @@ object wixStyleReactStrings {
   inline def seeking: seeking = "seeking".asInstanceOf[seeking]
   
   @js.native
-  sealed trait select extends StObject
+  sealed trait select
+    extends StObject
+       with ExpandCollapseTrigger
+       with ListType
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
@@ -1934,13 +2378,22 @@ object wixStyleReactStrings {
   inline def shadow: shadow = "shadow".asInstanceOf[shadow]
   
   @js.native
+  sealed trait short
+    extends StObject
+       with Delay
+  inline def short: short = "short".asInstanceOf[short]
+  
+  @js.native
   sealed trait sides
     extends StObject
        with CarouselControlsPosition
+       with CarouselWIPControlsPosition
   inline def sides: sides = "sides".asInstanceOf[sides]
   
   @js.native
-  sealed trait `single-line` extends StObject
+  sealed trait `single-line`
+    extends StObject
+       with AddressInputItemLayout
   inline def `single-line`: `single-line` = "single-line".asInstanceOf[`single-line`]
   
   @js.native
@@ -1992,13 +2445,39 @@ object wixStyleReactStrings {
   inline def size90: size90 = "size90".asInstanceOf[size90]
   
   @js.native
+  sealed trait sk extends StObject
+  inline def sk: sk = "sk".asInstanceOf[sk]
+  
+  @js.native
+  sealed trait sl extends StObject
+  inline def sl: sl = "sl".asInstanceOf[sl]
+  
+  @js.native
   sealed trait slot extends StObject
   inline def slot: slot = "slot".asInstanceOf[slot]
+  
+  @js.native
+  sealed trait slow extends StObject
+  inline def slow: slow = "slow".asInstanceOf[slow]
+  
+  @js.native
+  sealed trait slow01
+    extends StObject
+       with Duration
+  inline def slow01: slow01 = "slow01".asInstanceOf[slow01]
+  
+  @js.native
+  sealed trait slow02
+    extends StObject
+       with Duration
+  inline def slow02: slow02 = "slow02".asInstanceOf[slow02]
   
   @js.native
   sealed trait small
     extends StObject
        with AddItemSize
+       with AvatarGroupSize
+       with BadgeSelectItemSizes
        with BadgeSize
        with BoxSpacing
        with ButtonSize
@@ -2008,13 +2487,14 @@ object wixStyleReactStrings {
        with CloseButtonSize
        with ColorInputSize
        with CounterBadgeSize
+       with DataTableRowVerticalPadding
        with DropdownLayoutItemHeight
        with FillButtonIconSize
        with IconButtonSize
        with InfoIconSize
        with InputAreaSize
        with InputSize
-       with LabelPlacement
+       with LabelSize
        with ListItemActionSize
        with ListItemSelectSizes
        with LoaderSize
@@ -2024,6 +2504,8 @@ object wixStyleReactStrings {
        with Size
        with SkeletonContentSize
        with SkeletonSpacing
+       with SocialPreviewSize
+       with TabFontSize
        with TagIconSize
        with TagListSize
        with TagSize
@@ -2038,10 +2520,15 @@ object wixStyleReactStrings {
   inline def small: small = "small".asInstanceOf[small]
   
   @js.native
+  sealed trait social
+    extends StObject
+       with SocialPreviewSkin
+  inline def social: social = "social".asInstanceOf[social]
+  
+  @js.native
   sealed trait solid
     extends StObject
        with BadgeType
-       with Type
   inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
@@ -2078,18 +2565,19 @@ object wixStyleReactStrings {
        with BadgeSkin
        with ButtonSkin
        with CheckToggleSkin
+       with CircularProgressBarSkin
        with CloseButtonSkin
        with CounterBadgeSkin
        with DataTableSkin
        with DividerSkin
        with FloatingHelperContentActionTheme
        with FloatingNotificationType
+       with HorizontalTimelineSkin
        with IconButtonSkin
        with ListItemActionSkin
        with ModalTheme
        with NotificationTheme
        with SectionHelperAppearance
-       with Skin
        with SubheaderSkin
        with TagTheme
        with TextButtonSkin
@@ -2097,6 +2585,10 @@ object wixStyleReactStrings {
        with ToggleButtonSkin
        with ToggleSwitchSkin
   inline def standard: standard = "standard".asInstanceOf[standard]
+  
+  @js.native
+  sealed trait standardEasing extends StObject
+  inline def standardEasing: standardEasing = "standardEasing".asInstanceOf[standardEasing]
   
   @js.native
   sealed trait standardFilled
@@ -2115,10 +2607,11 @@ object wixStyleReactStrings {
     extends StObject
        with DataTableColumnAlign
        with EmptyStateAlign
+       with HorizontalTimelineAlignLabel
        with ModalHorizontalPostion
        with ModalVerticalPosition
        with SkeletonAlignment
-       with SortableListInsertPosition
+       with SortableListBaseInsertPosition
        with TimeTableInsertPosition
        with TooltipTextAlign
   inline def start: start = "start".asInstanceOf[start]
@@ -2147,6 +2640,7 @@ object wixStyleReactStrings {
   @js.native
   sealed trait stretched
     extends StObject
+       with GroupType
        with StepperFit
   inline def stretched: stretched = "stretched".asInstanceOf[stretched]
   
@@ -2178,14 +2672,16 @@ object wixStyleReactStrings {
        with BadgeSelectItemSkin
        with BadgeSkin
        with CheckToggleSkin
+       with CircularProgressBarSkin
        with CounterBadgeSkin
        with DividerSkin
        with FloatingNotificationType
        with LoaderStatus
        with NotificationTheme
        with SectionHelperAppearance
-       with Skin
+       with TagTheme
        with TextSkin
+       with ToggleButtonSkin
        with ToggleSwitchSkin
   inline def success: success = "success".asInstanceOf[success]
   
@@ -2208,9 +2704,7 @@ object wixStyleReactStrings {
   inline def suspend: suspend = "suspend".asInstanceOf[suspend]
   
   @js.native
-  sealed trait sv
-    extends StObject
-       with LanguageType
+  sealed trait sv extends StObject
   inline def sv: sv = "sv".asInstanceOf[sv]
   
   @js.native
@@ -2244,9 +2738,15 @@ object wixStyleReactStrings {
   inline def template: template = "template".asInstanceOf[template]
   
   @js.native
+  sealed trait test_id extends StObject
+  inline def test_id: test_id = "test_id".asInstanceOf[test_id]
+  
+  @js.native
   sealed trait text
     extends StObject
+       with ContentType
        with StepperType
+       with contentType
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
@@ -2277,9 +2777,7 @@ object wixStyleReactStrings {
   inline def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
   
   @js.native
-  sealed trait th
-    extends StObject
-       with LanguageType
+  sealed trait th extends StObject
   inline def th: th = "th".asInstanceOf[th]
   
   @js.native
@@ -2311,17 +2809,22 @@ object wixStyleReactStrings {
   sealed trait tiny
     extends StObject
        with AddItemSize
+       with BadgeSize
        with BoxSpacing
        with ButtonSize
+       with DataTableRowVerticalPadding
        with IconButtonSize
+       with LabelSize
        with LoaderSize
        with ModalSelectorLayoutImageSize
        with SelectorImageSize
        with SelectorListImageSize
+       with Size
        with TagSize
        with TextButtonSize
        with TextSize
        with ThumbnailSize
+       with VerticalTabsSize
        with starRatingBarSize
   inline def tiny: tiny = "tiny".asInstanceOf[tiny]
   
@@ -2331,6 +2834,10 @@ object wixStyleReactStrings {
        with ListItemSectionTypes
        with VerticalTabsItemType
   inline def title: title = "title".asInstanceOf[title]
+  
+  @js.native
+  sealed trait tl extends StObject
+  inline def tl: tl = "tl".asInstanceOf[tl]
   
   @js.native
   sealed trait toggle extends StObject
@@ -2345,9 +2852,9 @@ object wixStyleReactStrings {
     extends StObject
        with BoxVerticalAlignment
        with CheckboxVAlign
-       with FormFieldLabelPlacement
        with LabelAlignment
-       with RadioButtonVAlign
+       with LabelPlacement
+       with RadioAlignItems
        with StatusIndicatorTooltipPlacement
        with ThumbnailContentAlignment
   inline def top: top = "top".asInstanceOf[top]
@@ -2363,6 +2870,20 @@ object wixStyleReactStrings {
     extends StObject
        with MediaOverlayContentPlacement
   inline def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
+  
+  @js.native
+  sealed trait topEnd extends StObject
+  inline def topEnd: topEnd = "topEnd".asInstanceOf[topEnd]
+  
+  @js.native
+  sealed trait topStart extends StObject
+  inline def topStart: topStart = "topStart".asInstanceOf[topStart]
+  
+  @js.native
+  sealed trait topToBottom
+    extends StObject
+       with Direction
+  inline def topToBottom: topToBottom = "topToBottom".asInstanceOf[topToBottom]
   
   @js.native
   sealed trait touchCancel extends StObject
@@ -2381,9 +2902,7 @@ object wixStyleReactStrings {
   inline def touchStart: touchStart = "touchStart".asInstanceOf[touchStart]
   
   @js.native
-  sealed trait tr
-    extends StObject
-       with LanguageType
+  sealed trait tr extends StObject
   inline def tr: tr = "tr".asInstanceOf[tr]
   
   @js.native
@@ -2401,7 +2920,6 @@ object wixStyleReactStrings {
        with ButtonSkin
        with CloseButtonSkin
        with IconButtonSkin
-       with Type
   inline def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
@@ -2412,11 +2930,16 @@ object wixStyleReactStrings {
   sealed trait twitter
     extends StObject
        with SocialButtonIcons
+       with SocialPreviewSkin
   inline def twitter: twitter = "twitter".asInstanceOf[twitter]
   
   @js.native
   sealed trait u extends StObject
   inline def u: u = "u".asInstanceOf[u]
+  
+  @js.native
+  sealed trait uk extends StObject
+  inline def uk: uk = "uk".asInstanceOf[uk]
   
   @js.native
   sealed trait ul extends StObject
@@ -2436,7 +2959,6 @@ object wixStyleReactStrings {
        with BadgeSelectItemSkin
        with BadgeSkin
        with CounterBadgeSkin
-       with Skin
   inline def urgent: urgent = "urgent".asInstanceOf[urgent]
   
   @js.native
@@ -2444,8 +2966,16 @@ object wixStyleReactStrings {
   inline def url: url = "url".asInstanceOf[url]
   
   @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  
+  @js.native
   sealed trait user extends StObject
   inline def user: user = "user".asInstanceOf[user]
+  
+  @js.native
+  sealed trait valid extends StObject
+  inline def valid: valid = "valid".asInstanceOf[valid]
   
   @js.native
   sealed trait `var` extends StObject
@@ -2456,8 +2986,13 @@ object wixStyleReactStrings {
     extends StObject
        with BoxDirection
        with DividerDirection
+       with FloatingHelperContentDirection
        with RadioGroupDisplay
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait vi extends StObject
+  inline def vi: vi = "vi".asInstanceOf[vi]
   
   @js.native
   sealed trait video extends StObject
@@ -2493,9 +3028,9 @@ object wixStyleReactStrings {
        with NotificationTheme
        with RichTextInputAreaStatus
        with SectionHelperAppearance
-       with Skin
        with StatusIndications
        with StatusIndicatorState
+       with StatusType
        with TagTheme
   inline def warning: warning = "warning".asInstanceOf[warning]
   
@@ -2543,8 +3078,18 @@ object wixStyleReactStrings {
   inline def youtube: youtube = "youtube".asInstanceOf[youtube]
   
   @js.native
-  sealed trait zh
-    extends StObject
-       with LanguageType
+  sealed trait zh extends StObject
   inline def zh: zh = "zh".asInstanceOf[zh]
+  
+  @js.native
+  sealed trait `zh-HK` extends StObject
+  inline def `zh-HK`: `zh-HK` = "zh-HK".asInstanceOf[`zh-HK`]
+  
+  @js.native
+  sealed trait `zh-MO` extends StObject
+  inline def `zh-MO`: `zh-MO` = "zh-MO".asInstanceOf[`zh-MO`]
+  
+  @js.native
+  sealed trait `zh-TW` extends StObject
+  inline def `zh-TW`: `zh-TW` = "zh-TW".asInstanceOf[`zh-TW`]
 }

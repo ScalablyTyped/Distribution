@@ -10,7 +10,7 @@ object libTypescriptNativeStackUtilsUseBackPressSubscriptionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useBackPressSubscription(hasOnBackPressIsDisabled: Args): UseBackPressSubscription_ = ^.asInstanceOf[js.Dynamic].applyDynamic("useBackPressSubscription")(hasOnBackPressIsDisabled.asInstanceOf[js.Any]).asInstanceOf[UseBackPressSubscription_]
+  inline def useBackPressSubscription(param0: Args): UseBackPressSubscription_ = ^.asInstanceOf[js.Dynamic].applyDynamic("useBackPressSubscription")(param0.asInstanceOf[js.Any]).asInstanceOf[UseBackPressSubscription_]
   
   trait Args extends StObject {
     

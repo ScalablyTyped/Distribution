@@ -15,7 +15,7 @@ object distSrcModulesUiInteractionIndicatorInteractionIndicatorMod {
   open class default protected ()
     extends StObject
        with InteractionIndicator {
-    def this(hasEventEmitterEngineConfigRootContainer: RootContainer) = this()
+    def this(param0: RootContainer) = this()
     
     /* private */ /* CompleteClass */
     var _bindEvents: Any = js.native

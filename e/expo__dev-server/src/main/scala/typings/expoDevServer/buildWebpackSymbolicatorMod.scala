@@ -31,7 +31,7 @@ object buildWebpackSymbolicatorMod {
       * @param stack Raw stack frames.
       * @returns Symbolicated stack frames.
       */
-    def process(stack: js.Array[ReactNativeStackFrame], hasPlatform: PlatformString): js.Promise[SymbolicatorResults] = js.native
+    def process(stack: js.Array[ReactNativeStackFrame], param1: PlatformString): js.Promise[SymbolicatorResults] = js.native
     
     /* private */ var processFrame: Any = js.native
     

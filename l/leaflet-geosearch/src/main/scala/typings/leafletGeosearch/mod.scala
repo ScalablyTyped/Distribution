@@ -113,6 +113,6 @@ object mod {
   @js.native
   open class SearchElement protected ()
     extends typings.leafletGeosearch.distSearchElementMod.default {
-    def this(hasHandleSubmitSearchLabelClassNames: SearchElementProps) = this()
+    def this(param0: SearchElementProps) = this()
   }
 }

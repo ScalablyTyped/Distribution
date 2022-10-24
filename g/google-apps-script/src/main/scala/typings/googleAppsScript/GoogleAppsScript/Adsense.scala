@@ -61,49 +61,6 @@ object Adsense {
     __obj.asInstanceOf[Adsense]
   }
   
-  extension [Self <: Adsense](x: Self) {
-    
-    inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
-    
-    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
-    
-    inline def setAdclients(value: AdclientsCollection): Self = StObject.set(x, "Adclients", value.asInstanceOf[js.Any])
-    
-    inline def setAdclientsUndefined: Self = StObject.set(x, "Adclients", js.undefined)
-    
-    inline def setAdunits(value: AdunitsCollection): Self = StObject.set(x, "Adunits", value.asInstanceOf[js.Any])
-    
-    inline def setAdunitsUndefined: Self = StObject.set(x, "Adunits", js.undefined)
-    
-    inline def setAlerts(value: AlertsCollection): Self = StObject.set(x, "Alerts", value.asInstanceOf[js.Any])
-    
-    inline def setAlertsUndefined: Self = StObject.set(x, "Alerts", js.undefined)
-    
-    inline def setCustomchannels(value: CustomchannelsCollection): Self = StObject.set(x, "Customchannels", value.asInstanceOf[js.Any])
-    
-    inline def setCustomchannelsUndefined: Self = StObject.set(x, "Customchannels", js.undefined)
-    
-    inline def setMetadata(value: MetadataCollection): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
-    
-    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
-    
-    inline def setPayments(value: PaymentsCollection): Self = StObject.set(x, "Payments", value.asInstanceOf[js.Any])
-    
-    inline def setPaymentsUndefined: Self = StObject.set(x, "Payments", js.undefined)
-    
-    inline def setReports(value: ReportsCollection): Self = StObject.set(x, "Reports", value.asInstanceOf[js.Any])
-    
-    inline def setReportsUndefined: Self = StObject.set(x, "Reports", js.undefined)
-    
-    inline def setSavedadstyles(value: SavedadstylesCollection): Self = StObject.set(x, "Savedadstyles", value.asInstanceOf[js.Any])
-    
-    inline def setSavedadstylesUndefined: Self = StObject.set(x, "Savedadstyles", js.undefined)
-    
-    inline def setUrlchannels(value: UrlchannelsCollection): Self = StObject.set(x, "Urlchannels", value.asInstanceOf[js.Any])
-    
-    inline def setUrlchannelsUndefined: Self = StObject.set(x, "Urlchannels", js.undefined)
-  }
-  
   object Collection {
     
     object Accounts {
@@ -517,6 +474,49 @@ object Adsense {
       // List all URL channels in the specified ad client for this AdSense account.
       def list(adClientId: String, optionalArgs: js.Object): UrlChannels = js.native
     }
+  }
+  
+  extension [Self <: Adsense](x: Self) {
+    
+    inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
+    
+    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
+    
+    inline def setAdclients(value: AdclientsCollection): Self = StObject.set(x, "Adclients", value.asInstanceOf[js.Any])
+    
+    inline def setAdclientsUndefined: Self = StObject.set(x, "Adclients", js.undefined)
+    
+    inline def setAdunits(value: AdunitsCollection): Self = StObject.set(x, "Adunits", value.asInstanceOf[js.Any])
+    
+    inline def setAdunitsUndefined: Self = StObject.set(x, "Adunits", js.undefined)
+    
+    inline def setAlerts(value: AlertsCollection): Self = StObject.set(x, "Alerts", value.asInstanceOf[js.Any])
+    
+    inline def setAlertsUndefined: Self = StObject.set(x, "Alerts", js.undefined)
+    
+    inline def setCustomchannels(value: CustomchannelsCollection): Self = StObject.set(x, "Customchannels", value.asInstanceOf[js.Any])
+    
+    inline def setCustomchannelsUndefined: Self = StObject.set(x, "Customchannels", js.undefined)
+    
+    inline def setMetadata(value: MetadataCollection): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    
+    inline def setPayments(value: PaymentsCollection): Self = StObject.set(x, "Payments", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentsUndefined: Self = StObject.set(x, "Payments", js.undefined)
+    
+    inline def setReports(value: ReportsCollection): Self = StObject.set(x, "Reports", value.asInstanceOf[js.Any])
+    
+    inline def setReportsUndefined: Self = StObject.set(x, "Reports", js.undefined)
+    
+    inline def setSavedadstyles(value: SavedadstylesCollection): Self = StObject.set(x, "Savedadstyles", value.asInstanceOf[js.Any])
+    
+    inline def setSavedadstylesUndefined: Self = StObject.set(x, "Savedadstyles", js.undefined)
+    
+    inline def setUrlchannels(value: UrlchannelsCollection): Self = StObject.set(x, "Urlchannels", value.asInstanceOf[js.Any])
+    
+    inline def setUrlchannelsUndefined: Self = StObject.set(x, "Urlchannels", js.undefined)
   }
   
   object Schema {

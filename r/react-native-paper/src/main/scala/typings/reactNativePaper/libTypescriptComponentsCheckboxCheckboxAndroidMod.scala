@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.Shortcut
 import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonReactStatics
 import typings.react.mod.ComponentType
 import typings.reactNativePaper.anon.Call
-import typings.reactNativePaper.anon.CallHasStatusThemeDisabledOnPressTestIDRest
 import typings.reactNativePaper.anon.PickRemoveChildrenComponeAccessibilityElementsHidden
 import typings.reactNativePaper.anon.PickTouchableWithoutFeedb
 import typings.reactNativePaper.anon.Status
 import typings.reactNativePaper.anon.TouchableWithoutFeedbackP
+import typings.reactNativePaper.anon.`4`
 import typings.reactNativePaper.libTypescriptTypesMod.RemoveChildren
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +23,7 @@ object libTypescriptComponentsCheckboxCheckboxAndroidMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & Status
-    ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
+    ]) & `4`, 
     js.Object
   ]) = js.native
   
@@ -34,7 +34,7 @@ object libTypescriptComponentsCheckboxCheckboxAndroidMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & Status
-    ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
+    ]) & `4`, 
     js.Object
   ]) = js.native
   
@@ -47,7 +47,7 @@ object libTypescriptComponentsCheckboxCheckboxAndroidMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & Status
-    ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
+    ]) & `4`, 
     js.Object
   ])
   
@@ -57,7 +57,7 @@ object libTypescriptComponentsCheckboxCheckboxAndroidMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedb] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & Status
-    ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
+    ]) & `4`, 
     js.Object
   ]) = default
 }

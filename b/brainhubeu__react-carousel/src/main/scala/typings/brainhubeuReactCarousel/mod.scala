@@ -82,7 +82,7 @@ object mod {
   type CarouselBreakpoints = NumberDictionary[PickCarouselPropsExcludek]
   
   type CarouselPluginFunc = js.Function1[
-    /* hasOptionsCarouselPropsRefs */ typings.brainhubeuReactCarousel.anon.CarouselProps, 
+    /* param0 */ typings.brainhubeuReactCarousel.anon.CarouselProps, 
     AfterCarouselItems
   ]
   
@@ -94,9 +94,7 @@ object mod {
   }
   object CarouselPluginTypes {
     
-    inline def apply(
-      resolve: /* hasOptionsCarouselPropsRefs */ typings.brainhubeuReactCarousel.anon.CarouselProps => AfterCarouselItems
-    ): CarouselPluginTypes = {
+    inline def apply(resolve: /* param0 */ typings.brainhubeuReactCarousel.anon.CarouselProps => AfterCarouselItems): CarouselPluginTypes = {
       val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[CarouselPluginTypes]
     }
@@ -107,9 +105,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setResolve(
-        value: /* hasOptionsCarouselPropsRefs */ typings.brainhubeuReactCarousel.anon.CarouselProps => AfterCarouselItems
-      ): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: /* param0 */ typings.brainhubeuReactCarousel.anon.CarouselProps => AfterCarouselItems): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
   

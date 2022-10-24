@@ -61,7 +61,7 @@ object distCollectionSrcMod {
   @js.native
   val Section: OrbitComponent[HTMLElement, InnerSectionProps] = js.native
   
-  inline def createCollectionItem(hasKeyIndexElementTypeRefContentProps: CollectionItem): Content = ^.asInstanceOf[js.Dynamic].applyDynamic("createCollectionItem")(hasKeyIndexElementTypeRefContentProps.asInstanceOf[js.Any]).asInstanceOf[Content]
+  inline def createCollectionItem(param0: CollectionItem): Content = ^.asInstanceOf[js.Dynamic].applyDynamic("createCollectionItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Content]
   
   inline def getItemText(item: CollectionNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemText")(item.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -77,10 +77,10 @@ object distCollectionSrcMod {
   
   inline def useCollection(children: ReactNode): js.Array[CollectionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollection")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[CollectionNode]]
   
-  inline def useCollectionSearch(children: ReactNode, hasOnSearch: UseCollectionSearchOptions): js.Tuple2[
+  inline def useCollectionSearch(children: ReactNode, param1: UseCollectionSearchOptions): js.Tuple2[
     js.Array[CollectionNode], 
     js.Function2[/* event */ SyntheticEvent[typings.std.Element, Event], /* query */ String, Unit]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollectionSearch")(children.asInstanceOf[js.Any], hasOnSearch.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollectionSearch")(children.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
     js.Array[CollectionNode], 
     js.Function2[/* event */ SyntheticEvent[typings.std.Element, Event], /* query */ String, Unit]
   ]]
@@ -88,8 +88,5 @@ object distCollectionSrcMod {
   inline def useOnlyCollectionItems(nodes: js.Array[CollectionNode]): js.Array[CollectionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("useOnlyCollectionItems")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[CollectionItem]]
   
   inline def useScrollableCollection(containerRef: RefObject[typings.std.Element]): Style | StyleHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any]).asInstanceOf[Style | StyleHeight]
-  inline def useScrollableCollection(
-    containerRef: RefObject[typings.std.Element],
-    hasMaxHeightBorderHeightPaddingHeightItemSelectorSectionSelectorDividerSelectorDisabled: UseScrollableCollectionOptions
-  ): Style | StyleHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any], hasMaxHeightBorderHeightPaddingHeightItemSelectorSectionSelectorDividerSelectorDisabled.asInstanceOf[js.Any])).asInstanceOf[Style | StyleHeight]
+  inline def useScrollableCollection(containerRef: RefObject[typings.std.Element], param1: UseScrollableCollectionOptions): Style | StyleHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollableCollection")(containerRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Style | StyleHeight]
 }

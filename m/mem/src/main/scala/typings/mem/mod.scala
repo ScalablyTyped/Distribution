@@ -13,7 +13,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize): FunctionToMemoize = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[FunctionToMemoize]
-  inline def default[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize, hasCacheKeyCacheMaxAge: Options[FunctionToMemoize, CacheKeyType]): FunctionToMemoize = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], hasCacheKeyCacheMaxAge.asInstanceOf[js.Any])).asInstanceOf[FunctionToMemoize]
+  inline def default[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize, param1: Options[FunctionToMemoize, CacheKeyType]): FunctionToMemoize = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[FunctionToMemoize]
   
   inline def memClear(fn: AnyFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memClear")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

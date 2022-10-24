@@ -14,7 +14,7 @@ object distBuildWebpackPluginsPagesManifestPluginMod {
   open class default protected ()
     extends StObject
        with PagesManifestPlugin {
-    def this(hasServerlessDevIsEdgeRuntimeAppDirEnabled: IsEdgeRuntime) = this()
+    def this(param0: IsEdgeRuntime) = this()
     
     /* CompleteClass */
     var appDirEnabled: Boolean = js.native

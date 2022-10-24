@@ -84,7 +84,7 @@ object libLayerMod {
     
     def setHitGraphEnabled(`val`: Any): Unit = js.native
     
-    def setSize(hasWidthHeight: Height): this.type = js.native
+    def setSize(param0: Height): this.type = js.native
     
     def setWidth(): Unit = js.native
     

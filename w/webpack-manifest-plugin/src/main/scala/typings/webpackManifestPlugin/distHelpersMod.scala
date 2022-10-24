@@ -18,7 +18,7 @@ object distHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateManifest(compilation: Compilation, files: js.Array[FileDescriptor], hasGenerateSeed: InternalOptions): Manifest = (^.asInstanceOf[js.Dynamic].applyDynamic("generateManifest")(compilation.asInstanceOf[js.Any], files.asInstanceOf[js.Any], hasGenerateSeed.asInstanceOf[js.Any])).asInstanceOf[Manifest]
+  inline def generateManifest(compilation: Compilation, files: js.Array[FileDescriptor], param2: InternalOptions): Manifest = (^.asInstanceOf[js.Dynamic].applyDynamic("generateManifest")(compilation.asInstanceOf[js.Any], files.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Manifest]
   
   inline def reduceAssets(files: js.Array[FileDescriptor], asset: CompilationAsset, moduleAssets: Record[Any, Any]): js.Array[FileDescriptor] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceAssets")(files.asInstanceOf[js.Any], asset.asInstanceOf[js.Any], moduleAssets.asInstanceOf[js.Any])).asInstanceOf[js.Array[FileDescriptor]]
   

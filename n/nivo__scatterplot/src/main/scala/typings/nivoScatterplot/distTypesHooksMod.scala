@@ -16,7 +16,7 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useScatterPlot[RawDatum /* <: ScatterPlotDatum */](hasDataXScaleSpecXFormatYScaleSpecYFormatWidthHeightNodeIdNodeSizeColors: Colors[RawDatum]): LegendData[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useScatterPlot")(hasDataXScaleSpecXFormatYScaleSpecYFormatWidthHeightNodeIdNodeSizeColors.asInstanceOf[js.Any]).asInstanceOf[LegendData[RawDatum]]
+  inline def useScatterPlot[RawDatum /* <: ScatterPlotDatum */](param0: Colors[RawDatum]): LegendData[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useScatterPlot")(param0.asInstanceOf[js.Any]).asInstanceOf[LegendData[RawDatum]]
   
   inline def useScatterPlotAnnotations[RawDatum /* <: ScatterPlotDatum */](
     items: js.Array[ScatterPlotNodeData[RawDatum]],

@@ -39,7 +39,7 @@ object distDisplayObjectsTextMod {
     * @see https://developer.mozilla.org/en-US/docs/Web/API/SVGTextContentElement#constants
     */
   open class Text () extends DisplayObject[TextStyleProps, ParsedTextStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[TextStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[TextStyleProps]) = this()
     
     /**
       * @see https://developer.mozilla.org/en-US/docs/Web/API/SVGTextContentElement

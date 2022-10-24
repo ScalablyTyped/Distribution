@@ -12,7 +12,7 @@ object distLoaderProgressBarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelBorderColorBarColor: ProgressBarProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelBorderColorBarColor.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: ProgressBarProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   /* Inlined parent std.Omit<react-loader-spinner.react-loader-spinner/dist/type.BaseProps, 'color'> */
   trait ProgressBarProps extends StObject {

@@ -58,7 +58,7 @@ object mod {
     def this(options: CancelOptions) = this()
   }
   
-  inline def Hydrate_(hasChildrenOptionsState: HydrateProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Hydrate")(hasChildrenOptionsState.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Hydrate_(param0: HydrateProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Hydrate")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("react-query", "InfiniteQueryObserver")
   @js.native
@@ -126,9 +126,9 @@ object mod {
     def this(config: QueryClientConfig) = this()
   }
   
-  inline def QueryClientProvider(hasClientContextSharingChildren: QueryClientProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryClientProvider")(hasClientContextSharingChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def QueryClientProvider(param0: QueryClientProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryClientProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def QueryErrorResetBoundary(hasChildren: QueryErrorResetBoundaryProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryErrorResetBoundary")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def QueryErrorResetBoundary(param0: QueryErrorResetBoundaryProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryErrorResetBoundary")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-query", "QueryObserver")
   @js.native

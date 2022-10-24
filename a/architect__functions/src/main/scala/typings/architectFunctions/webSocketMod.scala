@@ -9,7 +9,7 @@ object webSocketMod {
   
   trait ArcWebSocket extends StObject {
     
-    def send(hasIdPayload: Id): js.Promise[Unit]
+    def send(param0: Id): js.Promise[Unit]
   }
   object ArcWebSocket {
     

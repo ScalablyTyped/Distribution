@@ -46,7 +46,7 @@ object distSrcTypesMod {
     }
   }
   
-  type OpenAPIErrorTransformer = js.Function2[/* has0 */ js.Object, /* has1 */ js.Object, js.Object]
+  type OpenAPIErrorTransformer = js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, js.Object]
   
   trait OpenAPIFrameworkAPIContext extends StObject {
     
@@ -138,7 +138,7 @@ object distSrcTypesMod {
       
       inline def setEnableObjectCoercionUndefined: Self = StObject.set(x, "enableObjectCoercion", js.undefined)
       
-      inline def setErrorTransformer(value: (/* has0 */ js.Object, /* has1 */ js.Object) => js.Object): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction2(value))
+      inline def setErrorTransformer(value: (/* param0 */ js.Object, /* param1 */ js.Object) => js.Object): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction2(value))
       
       inline def setErrorTransformerUndefined: Self = StObject.set(x, "errorTransformer", js.undefined)
       

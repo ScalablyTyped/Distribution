@@ -14,7 +14,7 @@ object typesUseKeyboardClickPolyfillMod {
   val ^ : js.Any = js.native
   
   inline def useKeyboardClickPolyfill[E /* <: HTMLElement */](): js.UndefOr[KeyboardEventHandler[E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardClickPolyfill")().asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
-  inline def useKeyboardClickPolyfill[E /* <: HTMLElement */](hasOnKeyDownDisabledDisableEnterClickDisableSpacebarClick: Options[E]): js.UndefOr[KeyboardEventHandler[E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardClickPolyfill")(hasOnKeyDownDisabledDisableEnterClickDisableSpacebarClick.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
+  inline def useKeyboardClickPolyfill[E /* <: HTMLElement */](param0: Options[E]): js.UndefOr[KeyboardEventHandler[E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardClickPolyfill")(param0.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
   
   trait Options[E /* <: HTMLElement */] extends StObject {
     

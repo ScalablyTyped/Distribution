@@ -12,5 +12,5 @@ object distUiComponentsJobCardTimelineTimelineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Timeline(hasJobStatus: Job): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Timeline")(hasJobStatus.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Timeline(param0: Job): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Timeline")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

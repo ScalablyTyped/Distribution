@@ -32,10 +32,10 @@ object autoScrollPluginMod {
   
   inline def getScrollSize(container: Any): Y = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollSize")(container.asInstanceOf[js.Any]).asInstanceOf[Y]
   
-  inline def getScrollSizeDelta(hasInteractionElement: ElementElementInteractionPartial, func: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollSizeDelta")(hasInteractionElement.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[X]
-  inline def getScrollSizeDelta(hasInteractionElement: ElementElement, func: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollSizeDelta")(hasInteractionElement.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[X]
-  inline def getScrollSizeDelta(hasInteractionElement: ElementInteraction, func: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollSizeDelta")(hasInteractionElement.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[X]
-  inline def getScrollSizeDelta(hasInteractionElement: InteractionPartial, func: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollSizeDelta")(hasInteractionElement.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[X]
+  inline def getScrollSizeDelta(param0: ElementElementInteractionPartial, func: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollSizeDelta")(param0.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[X]
+  inline def getScrollSizeDelta(param0: ElementElement, func: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollSizeDelta")(param0.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[X]
+  inline def getScrollSizeDelta(param0: ElementInteraction, func: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollSizeDelta")(param0.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[X]
+  inline def getScrollSizeDelta(param0: InteractionPartial, func: Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollSizeDelta")(param0.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[X]
   
   trait AutoScrollOptions extends StObject {
     

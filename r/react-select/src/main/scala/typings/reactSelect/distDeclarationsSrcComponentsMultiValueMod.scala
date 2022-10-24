@@ -23,19 +23,19 @@ object distDeclarationsSrcComponentsMultiValueMod {
   
   inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: MultiValueProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def MultiValueContainer[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasChildrenInnerProps: MultiValueGenericProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueContainer")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MultiValueContainer[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueGenericProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueContainer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def MultiValueGeneric[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasChildrenInnerProps: MultiValueGenericProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueGeneric")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MultiValueGeneric[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueGenericProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueGeneric")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def MultiValueLabel[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasChildrenInnerProps: MultiValueGenericProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueLabel")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MultiValueLabel[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueGenericProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueLabel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def MultiValueRemove[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasChildrenInnerProps: MultiValueRemoveProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueRemove")(hasChildrenInnerProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MultiValueRemove[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueRemoveProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueRemove")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def multiValueCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasSpacingBorderRadiusColors: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueCSS")(hasHasSpacingBorderRadiusColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def multiValueCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
-  inline def multiValueLabelCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasBorderRadiusColorsCropWithEllipsis: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueLabelCSS")(hasHasBorderRadiusColorsCropWithEllipsis.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def multiValueLabelCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueLabelCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
-  inline def multiValueRemoveCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasSpacingBorderRadiusColorsIsFocused: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueRemoveCSS")(hasHasSpacingBorderRadiusColorsIsFocused.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def multiValueRemoveCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueRemoveCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
   trait MultiValueComponents[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] extends StObject {
     

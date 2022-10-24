@@ -4914,6 +4914,10 @@ object puppeteerCoreStrings {
   inline def shared_worker: shared_worker = "shared_worker".asInstanceOf[shared_worker]
   
   @js.native
+  sealed trait silent extends StObject
+  inline def silent: silent = "silent".asInstanceOf[silent]
+  
+  @js.native
   sealed trait startGroup
     extends StObject
        with ConsoleMessageType
@@ -5073,6 +5077,10 @@ object puppeteerCoreStrings {
        with typings.puppeteerCore.mod._KeyInput
        with typings.puppeteerCore.libCjsPuppeteerCommonUskeyboardlayoutMod._KeyInput
   inline def w_ : w_ = "w".asInstanceOf[w_]
+  
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
   sealed trait warning

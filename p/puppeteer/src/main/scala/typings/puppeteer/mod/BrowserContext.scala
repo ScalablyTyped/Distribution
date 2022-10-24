@@ -37,6 +37,8 @@ open class BrowserContext () extends EventEmitter {
     */
   def close(): js.Promise[Unit] = js.native
   
+  def id: js.UndefOr[String] = js.native
+  
   /**
     * Returns whether BrowserContext is incognito.
     * The default browser context is the only non-incognito browser context.

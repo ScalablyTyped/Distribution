@@ -91,7 +91,7 @@ object mod {
     
     var namespace: String
     
-    var reducers: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ Payload[T], Unit]]
+    var reducers: StringDictionary[js.Function2[/* state */ T, /* param1 */ Payload[T], Unit]]
     
     var setup: js.UndefOr[
         js.Function3[
@@ -115,7 +115,7 @@ object mod {
         ],
       initial: T,
       namespace: String,
-      reducers: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ Payload[T], Unit]]
+      reducers: StringDictionary[js.Function2[/* state */ T, /* param1 */ Payload[T], Unit]]
     ): KosModel[T] = {
       val __obj = js.Dynamic.literal(asyncs = asyncs.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], reducers = reducers.asInstanceOf[js.Any])
       __obj.asInstanceOf[KosModel[T]]
@@ -144,7 +144,7 @@ object mod {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      inline def setReducers(value: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ Payload[T], Unit]]): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
+      inline def setReducers(value: StringDictionary[js.Function2[/* state */ T, /* param1 */ Payload[T], Unit]]): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
       
       inline def setSetup(
         value: (/* dispatch */ KosDispatch, /* getState */ GetKosState[T], /* action */ PayloadParam) => Unit

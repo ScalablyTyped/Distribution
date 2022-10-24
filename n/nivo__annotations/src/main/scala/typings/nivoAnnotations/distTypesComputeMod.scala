@@ -13,7 +13,7 @@ object distTypesComputeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bindAnnotations[Datum](hasDataAnnotationsGetPositionGetDimensions: Data[Datum]): js.Array[BoundAnnotation[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAnnotations")(hasDataAnnotationsGetPositionGetDimensions.asInstanceOf[js.Any]).asInstanceOf[js.Array[BoundAnnotation[Datum]]]
+  inline def bindAnnotations[Datum](param0: Data[Datum]): js.Array[BoundAnnotation[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[BoundAnnotation[Datum]]]
   
   inline def computeAnnotation[Datum](annotation: BoundAnnotation[Datum]): AnnotationInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAnnotation")(annotation.asInstanceOf[js.Any]).asInstanceOf[AnnotationInstructions]
   

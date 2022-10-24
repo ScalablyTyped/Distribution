@@ -73,7 +73,7 @@ object dndListStatefulListContainerMod {
     
     def internalSetState(`type`: StateChangeType, changes: State): Unit = js.native
     
-    def onChange(hasOldIndexNewIndexTargetRect: OldIndex): Unit = js.native
+    def onChange(param0: OldIndex): Unit = js.native
     
     @JSName("state")
     var state_StatefulListContainer: ItemsArray = js.native

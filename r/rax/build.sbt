@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rax"
-version := "1.0.0-dt-20220913Z-49b88e"
-scalaVersion := "3.1.2"
+version := "1.0.0-dt-20220913Z-8e8e68"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -20,7 +20,7 @@ object distTypesCoreServicesJobsMod {
   @JSImport("gitlab/dist/types/core/services/Jobs", "Jobs")
   @js.native
   open class Jobs () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native
     def all(projectId: String, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native
@@ -32,35 +32,25 @@ object distTypesCoreServicesJobsMod {
     def cancel(projectId: Double, jobId: Double): js.Promise[js.Object] = js.native
     def cancel(projectId: Double, jobId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
-    def downloadLatestArtifactFile(projectId: String, ref: String, name: String, hasStreamOptions: streambooleanundefinedBas): Any = js.native
-    def downloadLatestArtifactFile(projectId: Double, ref: String, name: String, hasStreamOptions: streambooleanundefinedBas): Any = js.native
+    def downloadLatestArtifactFile(projectId: String, ref: String, name: String, param3: streambooleanundefinedBas): Any = js.native
+    def downloadLatestArtifactFile(projectId: Double, ref: String, name: String, param3: streambooleanundefinedBas): Any = js.native
     
-    def downloadSingleArtifactFile(
-      projectId: String,
-      jobId: Double,
-      artifactPath: String,
-      hasStreamOptions: streambooleanundefinedBas
-    ): Any = js.native
-    def downloadSingleArtifactFile(
-      projectId: Double,
-      jobId: Double,
-      artifactPath: String,
-      hasStreamOptions: streambooleanundefinedBas
-    ): Any = js.native
+    def downloadSingleArtifactFile(projectId: String, jobId: Double, artifactPath: String, param3: streambooleanundefinedBas): Any = js.native
+    def downloadSingleArtifactFile(projectId: Double, jobId: Double, artifactPath: String, param3: streambooleanundefinedBas): Any = js.native
     
     def downloadSingleArtifactFileFromRef(
       projectId: String,
       ref: String,
       artifactPath: String,
       name: String,
-      hasStreamOptions: streambooleanundefinedBas
+      param4: streambooleanundefinedBas
     ): Any = js.native
     def downloadSingleArtifactFileFromRef(
       projectId: Double,
       ref: String,
       artifactPath: String,
       name: String,
-      hasStreamOptions: streambooleanundefinedBas
+      param4: streambooleanundefinedBas
     ): Any = js.native
     
     def downloadTraceFile(projectId: String, jobId: Double): js.Promise[GetResponse] = js.native

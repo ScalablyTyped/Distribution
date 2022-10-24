@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("maplibre-gl", "ImagePosition")
 @js.native
 open class ImagePosition protected () extends StObject {
-  def this(paddedRect: Rect, hasPixelRatioVersionStretchXStretchYContent: StyleImage) = this()
+  def this(paddedRect: Rect, param1: StyleImage) = this()
   
   def br: js.Tuple2[Double, Double] = js.native
   

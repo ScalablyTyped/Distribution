@@ -11,5 +11,5 @@ object buildCommandsGetElementCSSValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasElementIdPropertyName: PropertyName): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementIdPropertyName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(param1: PropertyName): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

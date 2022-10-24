@@ -1,25 +1,15 @@
 package typings.reactNativePaper.anon
 
-import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
+import typings.reactNativePaper.libTypescriptComponentsCardCardTitleMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait `3` extends StObject {
   
-  var children: ReactNode
-}
-object `3` {
+  def apply(param0: Props): Element = js.native
   
-  inline def apply(): `3` = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`3`]
-  }
-  
-  extension [Self <: `3`](x: Self) {
-    
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-    
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-  }
+  var displayName: String = js.native
 }

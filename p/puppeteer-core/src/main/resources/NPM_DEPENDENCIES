@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "puppeteer-core" : "19.0.0"
+      "puppeteer-core" : "19.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "puppeteer-core" : "19.0.0"
+      "puppeteer-core" : "19.1.0"
     }
   ],
   "compile-devDependencies" : [

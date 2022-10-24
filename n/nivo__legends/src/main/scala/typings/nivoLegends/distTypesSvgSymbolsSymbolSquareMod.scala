@@ -12,5 +12,5 @@ object distTypesSvgSymbolsSymbolSquareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SymbolSquare(hasXYSizeFillOpacityBorderWidthBorderColor: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolSquare")(hasXYSizeFillOpacityBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SymbolSquare(param0: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolSquare")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

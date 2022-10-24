@@ -11,7 +11,7 @@ object buildPluginsUnversionedExpoSplashScreenWithAndroidSplashDrawablesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def setSplashDrawableAsync(hasResizeMode: PickSplashScreenConfigres, projectRoot: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setSplashDrawableAsync")(hasResizeMode.asInstanceOf[js.Any], projectRoot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setSplashDrawableAsync(param0: PickSplashScreenConfigres, projectRoot: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setSplashDrawableAsync")(param0.asInstanceOf[js.Any], projectRoot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("@expo/prebuild-config/build/plugins/unversioned/expo-splash-screen/withAndroidSplashDrawables", "withAndroidSplashDrawables")
   @js.native

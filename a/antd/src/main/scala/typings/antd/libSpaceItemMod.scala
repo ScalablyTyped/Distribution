@@ -16,7 +16,7 @@ object libSpaceItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasClassNameDirectionIndexMarginDirectionChildrenSplitWrap: ItemProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameDirectionIndexMarginDirectionChildrenSplitWrap.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: ItemProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait ItemProps extends StObject {
     

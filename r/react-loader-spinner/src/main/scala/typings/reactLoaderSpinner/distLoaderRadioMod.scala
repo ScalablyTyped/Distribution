@@ -12,7 +12,7 @@ object distLoaderRadioMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors: RadioProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: RadioProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   /* Inlined parent std.Omit<react-loader-spinner.react-loader-spinner/dist/type.BaseProps, 'color'> */
   trait RadioProps extends StObject {

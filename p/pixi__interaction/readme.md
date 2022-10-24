@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__interaction
 
-Typings are for version 6.5.7
+Typings are for version 6.5.8
 
 ## Library description:
 Plugin for handling mouse, touch and pointer events

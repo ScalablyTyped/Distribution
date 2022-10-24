@@ -14,11 +14,11 @@ object distPanelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasActive: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasActive.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def NotesLink(hasHrefChildrenProps: NotesLinkProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotesLink")(hasHrefChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NotesLink(param0: NotesLinkProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotesLink")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def SyntaxHighlighter(hasClassNameChildrenProps: SyntaxHighlighterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SyntaxHighlighter")(hasClassNameChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SyntaxHighlighter(param0: SyntaxHighlighterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SyntaxHighlighter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait NotesLinkProps extends StObject {
     

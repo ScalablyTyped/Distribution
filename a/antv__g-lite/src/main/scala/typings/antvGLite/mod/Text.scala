@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Text ()
   extends typings.antvGLite.distDisplayObjectsMod.Text {
-  def this(hasStyleRest: DisplayObjectConfig[TextStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[TextStyleProps]) = this()
 }

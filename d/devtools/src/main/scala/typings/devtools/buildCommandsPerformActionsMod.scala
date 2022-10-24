@@ -12,7 +12,7 @@ object buildCommandsPerformActionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasActions: Actions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasActions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(param1: Actions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait Action extends StObject {
     

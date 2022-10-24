@@ -28,7 +28,7 @@ object buildUtilsPluginResolverMod {
   @js.native
   val pluginFileName: /* "app.plugin.js" */ String = js.native
   
-  inline def resolveConfigPluginExport(hasPluginPluginFilePluginReferenceIsPluginFile: IsPluginFile): ConfigPlugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPluginExport")(hasPluginPluginFilePluginReferenceIsPluginFile.asInstanceOf[js.Any]).asInstanceOf[ConfigPlugin[Any]]
+  inline def resolveConfigPluginExport(param0: IsPluginFile): ConfigPlugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPluginExport")(param0.asInstanceOf[js.Any]).asInstanceOf[ConfigPlugin[Any]]
   
   inline def resolveConfigPluginFunction(projectRoot: String, pluginReference: String): ConfigPlugin[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPluginFunction")(projectRoot.asInstanceOf[js.Any], pluginReference.asInstanceOf[js.Any])).asInstanceOf[ConfigPlugin[Any]]
   

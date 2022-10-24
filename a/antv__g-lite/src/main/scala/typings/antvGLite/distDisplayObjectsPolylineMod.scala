@@ -17,7 +17,7 @@ object distDisplayObjectsPolylineMod {
   @JSImport("@antv/g-lite/dist/display-objects/Polyline", "Polyline")
   @js.native
   open class Polyline () extends Polygon {
-    def this(hasStyleRest: DisplayObjectConfig[PolylineStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[PolylineStyleProps]) = this()
     
     def getEndTangent(): js.Array[js.Array[Double]] = js.native
     

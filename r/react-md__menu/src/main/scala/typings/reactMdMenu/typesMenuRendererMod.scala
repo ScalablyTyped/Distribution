@@ -16,9 +16,7 @@ object typesMenuRendererMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def MenuRenderer(
-    hasMenuRefMenuPropsMenuStyleMenuClassNameSheetPropsPropSheetHeaderPropSheetFooterSheetStyleSheetClassNameSheetMenuPropsChildrenPropHorizontalPropRenderAsSheetPropSheetPositionPropSheetVerticalSizeOnRequestCloseOnClickOnKeyDownProps: MenuRendererProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuRenderer")(hasMenuRefMenuPropsMenuStyleMenuClassNameSheetPropsPropSheetHeaderPropSheetFooterSheetStyleSheetClassNameSheetMenuPropsChildrenPropHorizontalPropRenderAsSheetPropSheetPositionPropSheetVerticalSizeOnRequestCloseOnClickOnKeyDownProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuRenderer(param0: MenuRendererProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuRenderer")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   type MenuRendererProps = ProvidedMenuProps & BaseMenuRendererProps & MenuListProps & MenuTransitionProps & MenuRef
 }

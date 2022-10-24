@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class FirefoxLauncher protected ()
   extends typings.puppeteerCore.libCjsPuppeteerNodeFirefoxLauncherMod.FirefoxLauncher {
-  def this(preferredRevision: String, isPuppeteerCore: Boolean) = this()
+  def this(puppeteer: typings.puppeteerCore.libCjsPuppeteerNodePuppeteerNodeMod.PuppeteerNode) = this()
 }

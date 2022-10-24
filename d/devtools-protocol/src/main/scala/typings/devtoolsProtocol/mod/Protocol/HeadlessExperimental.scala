@@ -2,6 +2,7 @@ package typings.devtoolsProtocol.mod.Protocol
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg
 import typings.devtoolsProtocol.devtoolsProtocolStrings.png
+import typings.devtoolsProtocol.devtoolsProtocolStrings.webp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,7 +119,12 @@ object HeadlessExperimental {
     /**
       * Image compression format (defaults to png). (ScreenshotParamsFormat enum)
       */
-    var format: js.UndefOr[jpeg | png] = js.undefined
+    var format: js.UndefOr[jpeg | png | webp] = js.undefined
+    
+    /**
+      * Optimize image encoding for speed, not for resulting size (defaults to false)
+      */
+    var optimizeForSpeed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Compression quality from range [0..100] (jpeg only).
@@ -134,9 +140,13 @@ object HeadlessExperimental {
     
     extension [Self <: ScreenshotParams](x: Self) {
       
-      inline def setFormat(value: jpeg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: jpeg | png | webp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setOptimizeForSpeed(value: Boolean): Self = StObject.set(x, "optimizeForSpeed", value.asInstanceOf[js.Any])
+      
+      inline def setOptimizeForSpeedUndefined: Self = StObject.set(x, "optimizeForSpeed", js.undefined)
       
       inline def setQuality(value: integer): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
@@ -147,6 +157,7 @@ object HeadlessExperimental {
   /* Rewritten from type alias, can be one of: 
     - typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg
     - typings.devtoolsProtocol.devtoolsProtocolStrings.png
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.webp
   */
   trait ScreenshotParamsFormat extends StObject
   object ScreenshotParamsFormat {
@@ -154,5 +165,7 @@ object HeadlessExperimental {
     inline def Jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
     
     inline def Png: png = "png".asInstanceOf[png]
+    
+    inline def Webp: webp = "webp".asInstanceOf[webp]
   }
 }

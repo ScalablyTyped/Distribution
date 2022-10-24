@@ -23,7 +23,7 @@ object distHelpersMod {
   
   inline def getFilename(fileOpts: TransformOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilename")(fileOpts.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getReplacement(hasCodeFileOptsArgs: GetReplacementOptions, babel: TypeofbabelCore): Statement | js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReplacement")(hasCodeFileOptsArgs.asInstanceOf[js.Any], babel.asInstanceOf[js.Any])).asInstanceOf[Statement | js.Array[Statement]]
+  inline def getReplacement(param0: GetReplacementOptions, babel: TypeofbabelCore): Statement | js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReplacement")(param0.asInstanceOf[js.Any], babel.asInstanceOf[js.Any])).asInstanceOf[Statement | js.Array[Statement]]
   
   inline def isCodegenComment(comment: Comment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCodegenComment")(comment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -31,12 +31,12 @@ object distHelpersMod {
   
   inline def looksLike(a: LooksLikeTarget, b: LooksLikeMatch): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("looksLike")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def replace[SpecificNode /* <: Node */](hasPathCodeFileOptsArgs: ReplaceOptions[SpecificNode], babel: TypeofbabelCore): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(hasPathCodeFileOptsArgs.asInstanceOf[js.Any], babel.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replace[SpecificNode /* <: Node */](param0: ReplaceOptions[SpecificNode], babel: TypeofbabelCore): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(param0.asInstanceOf[js.Any], babel.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def requireFromString(code: String, filename: String): CodegenModuleExport | CompiledESModule = (^.asInstanceOf[js.Dynamic].applyDynamic("requireFromString")(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[CodegenModuleExport | CompiledESModule]
   inline def requireFromString(code: Buffer, filename: String): CodegenModuleExport | CompiledESModule = (^.asInstanceOf[js.Dynamic].applyDynamic("requireFromString")(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[CodegenModuleExport | CompiledESModule]
   
-  inline def resolveModuleContents(hasFilenameModule: Filename): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleContents")(hasFilenameModule.asInstanceOf[js.Any]).asInstanceOf[Code]
+  inline def resolveModuleContents(param0: Filename): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleContents")(param0.asInstanceOf[js.Any]).asInstanceOf[Code]
   
   type CodegenModuleExport = String | (js.Function1[/* repeated */ Any, String])
   

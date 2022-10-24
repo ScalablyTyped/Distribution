@@ -15,7 +15,7 @@ object buildLogUpdateMod {
     val ^ : js.Any = js.native
     
     inline def create(stream: Writable): LogUpdate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any]).asInstanceOf[LogUpdate]
-    inline def create(stream: Writable, hasShowCursor: ShowCursor): LogUpdate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], hasShowCursor.asInstanceOf[js.Any])).asInstanceOf[LogUpdate]
+    inline def create(stream: Writable, param1: ShowCursor): LogUpdate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[LogUpdate]
   }
   
   @js.native

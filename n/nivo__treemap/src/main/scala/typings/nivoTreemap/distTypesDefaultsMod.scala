@@ -462,7 +462,7 @@ object distTypesDefaultsMod {
     def motionConfig: js.UndefOr[String | PartialAnimationConfig] = js.native
     inline def motionConfig_=(x: js.UndefOr[String | PartialAnimationConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
-    inline def nodeComponent[Datum /* <: js.Object */](hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def nodeComponent[Datum /* <: js.Object */](param0: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/treemap/dist/types/defaults", "htmlDefaultProps.nodeOpacity")
     @js.native
@@ -635,7 +635,7 @@ object distTypesDefaultsMod {
     def motionConfig: js.UndefOr[String | PartialAnimationConfig] = js.native
     inline def motionConfig_=(x: js.UndefOr[String | PartialAnimationConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
-    inline def nodeComponent[Datum /* <: js.Object */](hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def nodeComponent[Datum /* <: js.Object */](param0: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/treemap/dist/types/defaults", "svgDefaultProps.nodeOpacity")
     @js.native

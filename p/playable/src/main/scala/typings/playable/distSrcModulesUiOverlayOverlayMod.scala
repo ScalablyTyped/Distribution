@@ -16,7 +16,7 @@ object distSrcModulesUiOverlayOverlayMod {
   open class default protected ()
     extends StObject
        with Overlay {
-    def this(hasEventEmitterEngineRootContainerThemeConfigMainUIBlockLoader: Loader) = this()
+    def this(param0: Loader) = this()
     
     /* private */ /* CompleteClass */
     var _bindEvents: Any = js.native

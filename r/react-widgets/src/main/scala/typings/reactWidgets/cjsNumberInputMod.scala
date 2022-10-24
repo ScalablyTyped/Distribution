@@ -193,11 +193,11 @@ object cjsNumberInputMod {
     def componentDidUpdate_MNumberPickerInput(
       _underscore: NumberPickerInputProps,
       __ : NumberPickerInputState,
-      hasReselectText: NumberPickerInputSnapshot
+      param2: NumberPickerInputSnapshot
     ): Unit = js.native
     
     @JSName("getSnapshotBeforeUpdate")
-    def getSnapshotBeforeUpdate_MNumberPickerInput(hasEditing: NumberPickerInputProps): NumberPickerInputSnapshot = js.native
+    def getSnapshotBeforeUpdate_MNumberPickerInput(param0: NumberPickerInputProps): NumberPickerInputSnapshot = js.native
     
     def handleBlur(event: FocusEvent[HTMLInputElement, Element]): Unit = js.native
     

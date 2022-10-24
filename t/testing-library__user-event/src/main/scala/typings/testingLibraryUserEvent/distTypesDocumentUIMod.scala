@@ -38,18 +38,10 @@ object distTypesDocumentUIMod {
   inline def isUIValue(value: String): /* is @testing-library/user-event.@testing-library/user-event/dist/types/document/UI.UIValueString */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUIValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @testing-library/user-event.@testing-library/user-event/dist/types/document/UI.UIValueString */ Boolean]
   inline def isUIValue(value: UIValueString): /* is @testing-library/user-event.@testing-library/user-event/dist/types/document/UI.UIValueString */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUIValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @testing-library/user-event.@testing-library/user-event/dist/types/document/UI.UIValueString */ Boolean]
   
-  inline def setUISelection(element: HTMLTextAreaElement, hasFocusOffsetParamAnchorOffsetParam: AnchorOffset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUISelection")(element.asInstanceOf[js.Any], hasFocusOffsetParamAnchorOffsetParam.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setUISelection(
-    element: HTMLTextAreaElement,
-    hasFocusOffsetParamAnchorOffsetParam: AnchorOffset,
-    mode: replace | modify
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUISelection")(element.asInstanceOf[js.Any], hasFocusOffsetParamAnchorOffsetParam.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setUISelection(element: HTMLInputElement, hasFocusOffsetParamAnchorOffsetParam: AnchorOffset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUISelection")(element.asInstanceOf[js.Any], hasFocusOffsetParamAnchorOffsetParam.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setUISelection(
-    element: HTMLInputElement,
-    hasFocusOffsetParamAnchorOffsetParam: AnchorOffset,
-    mode: replace | modify
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUISelection")(element.asInstanceOf[js.Any], hasFocusOffsetParamAnchorOffsetParam.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setUISelection(element: HTMLTextAreaElement, param1: AnchorOffset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUISelection")(element.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setUISelection(element: HTMLTextAreaElement, param1: AnchorOffset, mode: replace | modify): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUISelection")(element.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setUISelection(element: HTMLInputElement, param1: AnchorOffset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUISelection")(element.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setUISelection(element: HTMLInputElement, param1: AnchorOffset, mode: replace | modify): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUISelection")(element.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setUISelectionClean(element: HTMLTextAreaElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUISelectionClean")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setUISelectionClean(element: HTMLInputElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUISelectionClean")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]

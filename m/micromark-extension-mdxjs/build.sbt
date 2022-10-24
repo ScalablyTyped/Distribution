@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "micromark-extension-mdxjs"
-version := "1.0.0-4e52af"
-scalaVersion := "3.1.2"
+version := "1.0.0-1b3288"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "acorn" % "8.8.0-88d15e",
-  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-9389e9",
-  "org.scalablytyped" %%% "estree-util-visit" % "1.2.0-5a1348",
-  "org.scalablytyped" %%% "micromark-extension-mdx-expression" % "1.0.3-28dd70",
-  "org.scalablytyped" %%% "micromark-util-events-to-acorn" % "1.2.0-916ef9",
-  "org.scalablytyped" %%% "micromark-util-types" % "1.0.2-5edda3",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-e61dba")
+  "org.scalablytyped" %%% "acorn" % "8.8.0-8dbb4d",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
+  "org.scalablytyped" %%% "estree-util-visit" % "1.2.0-45d89b",
+  "org.scalablytyped" %%% "micromark-extension-mdx-expression" % "1.0.3-47b4c0",
+  "org.scalablytyped" %%% "micromark-util-events-to-acorn" % "1.2.0-749ac0",
+  "org.scalablytyped" %%% "micromark-util-types" % "1.0.2-bd4ab8",
+  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-ecc657")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -13,7 +13,7 @@ object mod {
   @JSImport("connect-mongo", JSImport.Namespace)
   @js.native
   open class ^ protected () extends default {
-    def this(hasCollectionNameTtlMongoOptionsAutoRemoveAutoRemoveIntervalTouchAfterStringifyCryptoRequired: ConnectMongoOptions) = this()
+    def this(param0: ConnectMongoOptions) = this()
   }
   @JSImport("connect-mongo", JSImport.Namespace)
   @js.native

@@ -1,36 +1,36 @@
 package typings.wixStyleReact.anon
 
+import typings.propTypes.mod.InferProps
+import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CancelButtonLabel extends StObject {
   
-  var cancelButtonLabel: js.UndefOr[String] = js.undefined
+  var cancelButtonLabel: Requireable[String]
   
-  var confirmButtonLabel: js.UndefOr[String] = js.undefined
+  var confirmButtonLabel: Requireable[String]
   
-  var link: js.UndefOr[TextInputPlaceholder] = js.undefined
+  var link: Requireable[InferProps[TextInputPlaceholder]]
 }
 object CancelButtonLabel {
   
-  inline def apply(): CancelButtonLabel = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    cancelButtonLabel: Requireable[String],
+    confirmButtonLabel: Requireable[String],
+    link: Requireable[InferProps[TextInputPlaceholder]]
+  ): CancelButtonLabel = {
+    val __obj = js.Dynamic.literal(cancelButtonLabel = cancelButtonLabel.asInstanceOf[js.Any], confirmButtonLabel = confirmButtonLabel.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelButtonLabel]
   }
   
   extension [Self <: CancelButtonLabel](x: Self) {
     
-    inline def setCancelButtonLabel(value: String): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
+    inline def setCancelButtonLabel(value: Requireable[String]): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
     
-    inline def setCancelButtonLabelUndefined: Self = StObject.set(x, "cancelButtonLabel", js.undefined)
+    inline def setConfirmButtonLabel(value: Requireable[String]): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
     
-    inline def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
-    
-    inline def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
-    
-    inline def setLink(value: TextInputPlaceholder): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
-    
-    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLink(value: Requireable[InferProps[TextInputPlaceholder]]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
   }
 }

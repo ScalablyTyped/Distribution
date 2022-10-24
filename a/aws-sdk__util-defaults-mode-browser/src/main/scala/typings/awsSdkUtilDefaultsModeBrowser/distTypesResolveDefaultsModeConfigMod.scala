@@ -14,7 +14,7 @@ object distTypesResolveDefaultsModeConfigMod {
   val ^ : js.Any = js.native
   
   inline def resolveDefaultsModeConfig(): Provider[ResolvedDefaultsMode] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveDefaultsModeConfig")().asInstanceOf[Provider[ResolvedDefaultsMode]]
-  inline def resolveDefaultsModeConfig(hasDefaultsMode: ResolveDefaultsModeConfigOptions): Provider[ResolvedDefaultsMode] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveDefaultsModeConfig")(hasDefaultsMode.asInstanceOf[js.Any]).asInstanceOf[Provider[ResolvedDefaultsMode]]
+  inline def resolveDefaultsModeConfig(param0: ResolveDefaultsModeConfigOptions): Provider[ResolvedDefaultsMode] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveDefaultsModeConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[Provider[ResolvedDefaultsMode]]
   
   trait ResolveDefaultsModeConfigOptions extends StObject {
     

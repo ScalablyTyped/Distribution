@@ -29,8 +29,8 @@ object distCliCommandsTestIacLocalExecutionMod {
   
   inline def parseTags(options: IaCTestFlags): js.UndefOr[js.Array[Tag]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTags")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Tag]]]
   
-  inline def removeFileContent(hasFilePathFileTypeFailureReasonProjectType: IacFileParseFailure): SafeAnalyticsOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFileContent")(hasFilePathFileTypeFailureReasonProjectType.asInstanceOf[js.Any]).asInstanceOf[SafeAnalyticsOutput]
-  inline def removeFileContent(hasFilePathFileTypeFailureReasonProjectType: IacFileParsed): SafeAnalyticsOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFileContent")(hasFilePathFileTypeFailureReasonProjectType.asInstanceOf[js.Any]).asInstanceOf[SafeAnalyticsOutput]
+  inline def removeFileContent(param0: IacFileParseFailure): SafeAnalyticsOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFileContent")(param0.asInstanceOf[js.Any]).asInstanceOf[SafeAnalyticsOutput]
+  inline def removeFileContent(param0: IacFileParsed): SafeAnalyticsOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFileContent")(param0.asInstanceOf[js.Any]).asInstanceOf[SafeAnalyticsOutput]
   
   inline def test(
     resultsProcessor: ResultsProcessor,

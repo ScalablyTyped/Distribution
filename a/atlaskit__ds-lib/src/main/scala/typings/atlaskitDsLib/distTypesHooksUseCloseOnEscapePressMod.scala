@@ -11,7 +11,7 @@ object distTypesHooksUseCloseOnEscapePressMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasOnCloseIsDisabled: UseCloseOnEscapePressOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOnCloseIsDisabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(param0: UseCloseOnEscapePressOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait UseCloseOnEscapePressOpts extends StObject {
     

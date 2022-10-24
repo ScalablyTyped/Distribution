@@ -12,5 +12,5 @@ object buildCommandsBrowserNewWindowMod {
   val ^ : js.Any = js.native
   
   inline def default(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def default(url: String, hasWindowNameWindowFeatures: NewWindowOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], hasWindowNameWindowFeatures.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def default(url: String, param2: NewWindowOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

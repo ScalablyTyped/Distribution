@@ -12,5 +12,5 @@ object cjsPacmanLoaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
 }

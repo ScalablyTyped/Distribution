@@ -23,12 +23,12 @@ object libTypescriptComponentsFabMod extends Shortcut {
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* hasStyleThemeRest */ Props, Element]), 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* param0 */ Props, Element]), 
           js.Object
         ])
       ]) & Animated
     ]) & (js.Function1[
-      /* hasSmallIconLabelAccessibilityLabelAccessibilityStateAnimatedCustomColorDisabledOnPressOnLongPressThemeStyleVisibleUppercaseLoadingTestIDRest */ typings.reactNativePaper.libTypescriptComponentsFabFabMod.Props, 
+      /* param0 */ typings.reactNativePaper.libTypescriptComponentsFabFabMod.Props, 
       Element
     ]), 
     js.Object
@@ -38,12 +38,12 @@ object libTypescriptComponentsFabMod extends Shortcut {
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* hasStyleThemeRest */ Props, Element]), 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* param0 */ Props, Element]), 
           js.Object
         ])
       ]) & Animated
     ]) & (js.Function1[
-      /* hasSmallIconLabelAccessibilityLabelAccessibilityStateAnimatedCustomColorDisabledOnPressOnLongPressThemeStyleVisibleUppercaseLoadingTestIDRest */ typings.reactNativePaper.libTypescriptComponentsFabFabMod.Props, 
+      /* param0 */ typings.reactNativePaper.libTypescriptComponentsFabFabMod.Props, 
       Element
     ]), 
     js.Object
@@ -54,12 +54,12 @@ object libTypescriptComponentsFabMod extends Shortcut {
     (ComponentType[
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* hasStyleThemeRest */ Props, Element]), 
+          ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[/* param0 */ Props, Element]), 
           js.Object
         ])
       ]) & Animated
     ]) & (js.Function1[
-      /* hasSmallIconLabelAccessibilityLabelAccessibilityStateAnimatedCustomColorDisabledOnPressOnLongPressThemeStyleVisibleUppercaseLoadingTestIDRest */ typings.reactNativePaper.libTypescriptComponentsFabFabMod.Props, 
+      /* param0 */ typings.reactNativePaper.libTypescriptComponentsFabFabMod.Props, 
       Element
     ]), 
     js.Object

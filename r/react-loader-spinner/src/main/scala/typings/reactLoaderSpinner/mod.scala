@@ -54,7 +54,7 @@ object mod {
   @js.native
   val Bars: FunctionComponent[BarsProps] = js.native
   
-  inline def Blocks(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabel: BlocksProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Blocks")(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def Blocks(param0: BlocksProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Blocks")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   @JSImport("react-loader-spinner", "Circles")
   @js.native
@@ -64,19 +64,17 @@ object mod {
   @js.native
   val CirclesWithBar: FunctionComponent[Props] = js.native
   
-  inline def ColorRing(hasVisibleWidthHeightColorsWrapperClassWrapperStyleAriaLabel: ColorRingProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ColorRing")(hasVisibleWidthHeightColorsWrapperClassWrapperStyleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def ColorRing(param0: ColorRingProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ColorRing")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def Comment(hasVisibleWidthHeightBackgroundColorColorWrapperClassWrapperStyleAriaLabel: CommentProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Comment")(hasVisibleWidthHeightBackgroundColorColorWrapperClassWrapperStyleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def Comment(param0: CommentProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Comment")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def Discuss(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabelColors: DiscussProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Discuss")(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabelColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def Discuss(param0: DiscussProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Discuss")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def Dna(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabel: DNAProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Dna")(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def Dna(param0: DNAProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Dna")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def FallingLines(hasColorWidthVisible: FallingLinesProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("FallingLines")(hasColorWidthVisible.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def FallingLines(param0: FallingLinesProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("FallingLines")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def FidgetSpinner(
-    hasWidthHeightBackgroundColorBallColorsWrapperClassWrapperStyleAriaLabelVisible: FidgetSpinnerProps
-  ): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("FidgetSpinner")(hasWidthHeightBackgroundColorBallColorsWrapperClassWrapperStyleAriaLabelVisible.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def FidgetSpinner(param0: FidgetSpinnerProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("FidgetSpinner")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   @JSImport("react-loader-spinner", "Grid")
   @js.native
@@ -86,13 +84,13 @@ object mod {
   @js.native
   val Hearts: FunctionComponent[HeartsProps] = js.native
   
-  inline def InfinitySpin(hasColorWidth: typings.reactLoaderSpinner.distLoaderInfinitySpinMod.Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("InfinitySpin")(hasColorWidth.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def InfinitySpin(param0: typings.reactLoaderSpinner.distLoaderInfinitySpinMod.Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("InfinitySpin")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("react-loader-spinner", "LineWave")
   @js.native
   val LineWave: FunctionComponent[typings.reactLoaderSpinner.distLoaderLineWaveMod.Props] = js.native
   
-  inline def MagnifyingGlass(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelGlassColorColor: MagnifyingGlassProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MagnifyingGlass")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelGlassColorColor.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def MagnifyingGlass(param0: MagnifyingGlassProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MagnifyingGlass")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   @JSImport("react-loader-spinner", "MutatingDots")
   @js.native
@@ -102,13 +100,13 @@ object mod {
   @js.native
   val Oval: FunctionComponent[OvalProps] = js.native
   
-  inline def ProgressBar(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelBorderColorBarColor: ProgressBarProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelBorderColorBarColor.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def ProgressBar(param0: ProgressBarProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   @JSImport("react-loader-spinner", "Puff")
   @js.native
   val Puff: FunctionComponent[PuffProps] = js.native
   
-  inline def Radio(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors: RadioProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Radio")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def Radio(param0: RadioProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Radio")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   @JSImport("react-loader-spinner", "RevolvingDot")
   @js.native
@@ -118,15 +116,13 @@ object mod {
   @js.native
   val Rings: FunctionComponent[RingsProps] = js.native
   
-  inline def RotatingLines(
-    hasStrokeColorStrokeWidthAnimationDurationWidthVisibleAriaLabel: typings.reactLoaderSpinner.distLoaderRotatingLinesMod.Props
-  ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RotatingLines")(hasStrokeColorStrokeWidthAnimationDurationWidthVisibleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def RotatingLines(param0: typings.reactLoaderSpinner.distLoaderRotatingLinesMod.Props): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RotatingLines")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   @JSImport("react-loader-spinner", "RotatingSquare")
   @js.native
   val RotatingSquare: FunctionComponent[RotatingSquareProps] = js.native
   
-  inline def RotatingTriangles(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors: RotatingTrianglesProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RotatingTriangles")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def RotatingTriangles(param0: RotatingTrianglesProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RotatingTriangles")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   @JSImport("react-loader-spinner", "TailSpin")
   @js.native
@@ -144,7 +140,7 @@ object mod {
   @js.native
   val Triangle: FunctionComponent[TriangleProps] = js.native
   
-  inline def Vortex(hasVisibleHeightWidthAriaLabelWrapperStyleWrapperClassColors: VortexProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Vortex")(hasVisibleHeightWidthAriaLabelWrapperStyleWrapperClassColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def Vortex(param0: VortexProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Vortex")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   @JSImport("react-loader-spinner", "Watch")
   @js.native

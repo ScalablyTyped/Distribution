@@ -11,7 +11,7 @@ trait GestureEnabled extends StObject {
   
   var gestureVelocityImpact: Double
   
-  def overlay(hasStyle: StyleWithAnimatedValue): Element | Null
+  def overlay(param0: StyleWithAnimatedValue): Element | Null
   
   var overlayEnabled: Boolean
   

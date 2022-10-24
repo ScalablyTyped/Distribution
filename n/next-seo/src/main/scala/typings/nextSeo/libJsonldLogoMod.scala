@@ -12,7 +12,7 @@ object libJsonldLogoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideRest: LogoJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: LogoJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait LogoJsonLdProps
     extends StObject

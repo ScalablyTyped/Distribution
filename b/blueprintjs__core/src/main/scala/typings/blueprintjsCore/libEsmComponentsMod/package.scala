@@ -51,7 +51,7 @@ inline def HotkeysDialog2: FC[HotkeysDialog2Props] = ^.asInstanceOf[js.Dynamic].
 
 inline def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): DisplayName & T = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[DisplayName & T]
 
-inline def HotkeysTarget2(hasChildrenHotkeysOptions: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(hasChildrenHotkeysOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def HotkeysTarget2(param0: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 
 inline def Label: FC[HTMLPropsHTMLLabelElement] = ^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[FC[HTMLPropsHTMLLabelElement]]
 

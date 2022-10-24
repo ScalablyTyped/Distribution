@@ -20,7 +20,7 @@ object mod {
   inline def shouldTransform(src: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldTransform")(src.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def transform(src: String): RefTransformResults = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(src.asInstanceOf[js.Any]).asInstanceOf[RefTransformResults]
-  inline def transform(src: String, hasFilenameSourceMapParserPluginsImportHelpersFrom: RefTransformOptions): RefTransformResults = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(src.asInstanceOf[js.Any], hasFilenameSourceMapParserPluginsImportHelpersFrom.asInstanceOf[js.Any])).asInstanceOf[RefTransformResults]
+  inline def transform(src: String, param1: RefTransformOptions): RefTransformResults = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(src.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RefTransformResults]
   
   inline def transformAST(ast: Program_, s: default): ImportedHelpers = (^.asInstanceOf[js.Dynamic].applyDynamic("transformAST")(ast.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[ImportedHelpers]
   inline def transformAST(ast: Program_, s: default, offset: Double): ImportedHelpers = (^.asInstanceOf[js.Dynamic].applyDynamic("transformAST")(ast.asInstanceOf[js.Any], s.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[ImportedHelpers]

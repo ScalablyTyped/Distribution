@@ -91,7 +91,7 @@ object distDisplayObjectsPathMod {
   @JSImport("@antv/g-lite/dist/display-objects/Path", "Path")
   @js.native
   open class Path () extends DisplayObject[PathStyleProps, ParsedPathStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[PathStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[PathStyleProps]) = this()
     
     def attributeChangedCallback(
       attrName: pointerEvents,

@@ -12,7 +12,7 @@ object libUtilsInterpolateMod {
   val ^ : js.Any = js.native
   
   inline def interpolate[T](input: js.Array[Double], output: js.Array[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
-  inline def interpolate[T](input: js.Array[Double], output: js.Array[T], hasIsClampEaseMixer: InterpolateOptions[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], hasIsClampEaseMixer.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
+  inline def interpolate[T](input: js.Array[Double], output: js.Array[T], param2: InterpolateOptions[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
   
   trait InterpolateOptions[T] extends StObject {
     

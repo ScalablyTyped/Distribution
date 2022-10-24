@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Polyline ()
   extends typings.antvGLite.distDisplayObjectsMod.Polyline {
-  def this(hasStyleRest: DisplayObjectConfig[PolylineStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[PolylineStyleProps]) = this()
 }

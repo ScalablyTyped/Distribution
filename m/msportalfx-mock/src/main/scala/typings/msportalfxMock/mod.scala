@@ -278,9 +278,7 @@ object mod {
     inline def dispose(proxy: ProxyServer): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(proxy.asInstanceOf[js.Any]).asInstanceOf[Promise[Any]]
   }
   
-  inline def createARMTarget(hasHostLoadRequestsStoreRequestsOnBeforeRequestMatchCustomMatchRequest: ARMDefinitionConfiguration): TargetDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createARMTarget")(hasHostLoadRequestsStoreRequestsOnBeforeRequestMatchCustomMatchRequest.asInstanceOf[js.Any]).asInstanceOf[TargetDefinition]
+  inline def createARMTarget(param0: ARMDefinitionConfiguration): TargetDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createARMTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[TargetDefinition]
   
-  inline def createStorageTarget(
-    hasStorageEndpointSuffixLoadRequestsStoreRequestsOnBeforeRequestMatch: StorageDefinitionConfiguration
-  ): TargetDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createStorageTarget")(hasStorageEndpointSuffixLoadRequestsStoreRequestsOnBeforeRequestMatch.asInstanceOf[js.Any]).asInstanceOf[TargetDefinition]
+  inline def createStorageTarget(param0: StorageDefinitionConfiguration): TargetDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createStorageTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[TargetDefinition]
 }

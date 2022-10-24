@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddItemButton extends StObject {
   
-  var AddItemButton: Image
+  var AddItemButton: Medium
   
   var BaseModalLayout: js.UndefOr[HeloButton] = js.undefined
   
@@ -16,14 +16,14 @@ trait AddItemButton extends StObject {
 }
 object AddItemButton {
   
-  inline def apply(AddItemButton: Image): AddItemButton = {
+  inline def apply(AddItemButton: Medium): AddItemButton = {
     val __obj = js.Dynamic.literal(AddItemButton = AddItemButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddItemButton]
   }
   
   extension [Self <: AddItemButton](x: Self) {
     
-    inline def setAddItemButton(value: Image): Self = StObject.set(x, "AddItemButton", value.asInstanceOf[js.Any])
+    inline def setAddItemButton(value: Medium): Self = StObject.set(x, "AddItemButton", value.asInstanceOf[js.Any])
     
     inline def setBaseModalLayout(value: HeloButton): Self = StObject.set(x, "BaseModalLayout", value.asInstanceOf[js.Any])
     

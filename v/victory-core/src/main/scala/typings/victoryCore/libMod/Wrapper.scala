@@ -17,7 +17,7 @@ object Wrapper {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addBinsToParentPropsIfHistogram(hasChildrenPropsChildComponentsParentProps: ChildComponents): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBinsToParentPropsIfHistogram")(hasChildrenPropsChildComponentsParentProps.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def addBinsToParentPropsIfHistogram(param0: ChildComponents): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBinsToParentPropsIfHistogram")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def getAllEvents(props: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllEvents")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
   

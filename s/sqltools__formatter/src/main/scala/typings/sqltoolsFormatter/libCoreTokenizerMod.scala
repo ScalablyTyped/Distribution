@@ -82,7 +82,7 @@ object libCoreTokenizerMod {
     
     def getCommentToken(input: String): Token = js.native
     
-    def getEscapedPlaceholderKey(hasKeyQuoteChar: Key): Any = js.native
+    def getEscapedPlaceholderKey(param0: Key): Any = js.native
     
     def getIdentNamedPlaceholderToken(input: String): Token = js.native
     
@@ -105,7 +105,7 @@ object libCoreTokenizerMod {
     
     def getPlaceholderToken(input: String): Token = js.native
     
-    def getPlaceholderTokenWithKey(hasInputRegexParseKey: Input): Token = js.native
+    def getPlaceholderTokenWithKey(param0: Input): Token = js.native
     
     def getPlainReservedToken(input: String): Token = js.native
     
@@ -117,7 +117,7 @@ object libCoreTokenizerMod {
     
     def getStringToken(input: String): Token = js.native
     
-    def getTokenOnFirstMatch(hasInputTypeRegex: Regex): Token = js.native
+    def getTokenOnFirstMatch(param0: Regex): Token = js.native
     
     def getTopLevelReservedTokenNoIndent(input: String): Token = js.native
     

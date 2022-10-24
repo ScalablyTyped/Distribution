@@ -25,12 +25,12 @@ object distRoutesMiddlewaresQueueProviderMod {
     /* next */ NextFunction, 
     js.Promise[Unit | Response]
   ]]
-  inline def queueProvider(hasSkipReadOnlyModeCheck: SkipReadOnlyModeCheck): js.Function3[
+  inline def queueProvider(param0: SkipReadOnlyModeCheck): js.Function3[
     /* req */ Request, 
     /* res */ Response, 
     /* next */ NextFunction, 
     js.Promise[Unit | Response]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("queueProvider")(hasSkipReadOnlyModeCheck.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("queueProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
     /* req */ Request, 
     /* res */ Response, 
     /* next */ NextFunction, 

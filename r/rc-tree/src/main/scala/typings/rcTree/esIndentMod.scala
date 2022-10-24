@@ -11,7 +11,7 @@ object esIndentMod extends Shortcut {
   
   @JSImport("rc-tree/es/Indent", JSImport.Default)
   @js.native
-  val default: MemoExoticComponent[js.Function1[/* hasPrefixClsLevelIsStartIsEnd */ IndentProps, Element]] = js.native
+  val default: MemoExoticComponent[js.Function1[/* param0 */ IndentProps, Element]] = js.native
   
   trait IndentProps extends StObject {
     
@@ -46,8 +46,8 @@ object esIndentMod extends Shortcut {
     }
   }
   
-  type _To = MemoExoticComponent[js.Function1[/* hasPrefixClsLevelIsStartIsEnd */ IndentProps, Element]]
+  type _To = MemoExoticComponent[js.Function1[/* param0 */ IndentProps, Element]]
   
   /* This means you don't have to write `default`, but can instead just say `esIndentMod.foo` */
-  override def _to: MemoExoticComponent[js.Function1[/* hasPrefixClsLevelIsStartIsEnd */ IndentProps, Element]] = default
+  override def _to: MemoExoticComponent[js.Function1[/* param0 */ IndentProps, Element]] = default
 }

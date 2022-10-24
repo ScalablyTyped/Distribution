@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nginstack__dev-tools"
-version := "65.0-dt-20221014Z-ecc835"
-scalaVersion := "3.1.2"
+version := "65.0-dt-20221014Z-df0bfe"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

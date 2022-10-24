@@ -14,7 +14,7 @@ object libTypescriptSrcUseFocusEventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[State /* <: NavigationState[ParamListBase] */](hasStateEmitter: Options[State]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateEmitter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default[State /* <: NavigationState[ParamListBase] */](param0: Options[State]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options[State /* <: NavigationState[ParamListBase] */] extends StObject {
     

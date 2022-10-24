@@ -15,7 +15,7 @@ object distSrcFlowControlLogOutputMod {
   open class LogOutput protected ()
     extends StObject
        with FlowController {
-    def this(hasLogger: Logger) = this()
+    def this(param0: Logger) = this()
     
     /* CompleteClass */
     override def handle(commands: js.Array[Command]): Commands = js.native

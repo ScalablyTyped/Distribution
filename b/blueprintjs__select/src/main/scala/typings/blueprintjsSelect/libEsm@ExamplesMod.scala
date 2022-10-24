@@ -23,7 +23,7 @@ object `libEsm@ExamplesMod` {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FilmSelect(hasAllowCreateFillRestProps: FilmSelectProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilmSelect")(hasAllowCreateFillRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FilmSelect(param0: FilmSelectProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilmSelect")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@blueprintjs/select/lib/esm/@/examples", "TOP_100_FILMS")
   @js.native
@@ -47,7 +47,7 @@ object `libEsm@ExamplesMod` {
   @js.native
   val filterFilm: ItemPredicate[Film] = js.native
   
-  inline def getFilmItemProps(film: Film, hasHandleClickHandleFocusModifiersQuery: ItemRendererProps): MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilmItemProps")(film.asInstanceOf[js.Any], hasHandleClickHandleFocusModifiersQuery.asInstanceOf[js.Any])).asInstanceOf[MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement]]
+  inline def getFilmItemProps(film: Film, param1: ItemRendererProps): MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilmItemProps")(film.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[MenuItemProps & Attributes & HTMLAttributes[HTMLAnchorElement]]
   
   inline def maybeAddCreatedFilmToArrays(items: js.Array[Film], createdItems: js.Array[Film], film: Film): CreatedItems = (^.asInstanceOf[js.Dynamic].applyDynamic("maybeAddCreatedFilmToArrays")(items.asInstanceOf[js.Any], createdItems.asInstanceOf[js.Any], film.asInstanceOf[js.Any])).asInstanceOf[CreatedItems]
   

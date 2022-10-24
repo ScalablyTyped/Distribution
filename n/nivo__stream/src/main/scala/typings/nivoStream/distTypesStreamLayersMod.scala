@@ -15,7 +15,7 @@ object distTypesStreamLayersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def StreamLayers[RawDatum /* <: StreamDatum */](hasLayersFillOpacityBorderWidthGetBorderColorIsInteractiveTooltip: StreamLayersProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StreamLayers")(hasLayersFillOpacityBorderWidthGetBorderColorIsInteractiveTooltip.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StreamLayers[RawDatum /* <: StreamDatum */](param0: StreamLayersProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StreamLayers")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait StreamLayersProps[RawDatum /* <: StreamDatum */] extends StObject {
     

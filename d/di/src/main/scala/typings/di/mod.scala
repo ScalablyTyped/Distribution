@@ -17,7 +17,7 @@ object mod {
     
     def get(dep: String): js.Object = js.native
     
-    def instantiate(hasHas: Any): js.Object = js.native
+    def instantiate(param0: Any): js.Object = js.native
     
     def invoke(
       fn: js.Function2[/* context */ js.Object, /* deps */ js.Array[js.Object], js.Object],

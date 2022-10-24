@@ -73,7 +73,7 @@ object componentsButtonMod {
     
     var badge: js.UndefOr[Boolean | Double | Max | Element] = js.undefined
     
-    var children: js.UndefOr[ReactNode | (js.Function1[/* hasDisabledHoverFocus */ Disabled, ReactNode])] = js.undefined
+    var children: js.UndefOr[ReactNode | (js.Function1[/* param0 */ Disabled, ReactNode])] = js.undefined
     
     var color: js.UndefOr[ColorType] = js.undefined
     
@@ -146,9 +146,9 @@ object componentsButtonMod {
       
       inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      inline def setChildren(value: ReactNode | (js.Function1[/* hasDisabledHoverFocus */ Disabled, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | (js.Function1[/* param0 */ Disabled, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenFunction1(value: /* hasDisabledHoverFocus */ Disabled => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* param0 */ Disabled => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

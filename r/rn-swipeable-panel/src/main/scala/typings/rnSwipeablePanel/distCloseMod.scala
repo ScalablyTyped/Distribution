@@ -11,7 +11,7 @@ object distCloseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Close(hasOnPressRootStyleIconStyle: CloseProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Close")(hasOnPressRootStyleIconStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Close(param0: CloseProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Close")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CloseProps extends StObject {
     

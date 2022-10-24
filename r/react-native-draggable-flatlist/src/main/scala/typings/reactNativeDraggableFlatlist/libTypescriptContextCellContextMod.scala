@@ -13,9 +13,9 @@ object libTypescriptContextCellContextMod {
   val ^ : js.Any = js.native
   
   /* was `typeof CellProvider` */
-  inline def default(hasIsActiveChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIsActiveChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def CellProvider(hasIsActiveChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CellProvider")(hasIsActiveChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CellProvider(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CellProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useIsActive(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsActive")().asInstanceOf[Boolean]
   

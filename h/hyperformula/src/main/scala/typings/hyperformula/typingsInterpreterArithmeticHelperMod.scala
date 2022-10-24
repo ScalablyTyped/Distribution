@@ -140,8 +140,8 @@ object typingsInterpreterArithmeticHelperMod {
   
   inline def coerceBooleanToNumber(arg: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceBooleanToNumber")(arg.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def coerceComplexToString(hasReIm: complex): String | CellError = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceComplexToString")(hasReIm.asInstanceOf[js.Any]).asInstanceOf[String | CellError]
-  inline def coerceComplexToString(hasReIm: complex, symb: String): String | CellError = (^.asInstanceOf[js.Dynamic].applyDynamic("coerceComplexToString")(hasReIm.asInstanceOf[js.Any], symb.asInstanceOf[js.Any])).asInstanceOf[String | CellError]
+  inline def coerceComplexToString(param0: complex): String | CellError = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceComplexToString")(param0.asInstanceOf[js.Any]).asInstanceOf[String | CellError]
+  inline def coerceComplexToString(param0: complex, symb: String): String | CellError = (^.asInstanceOf[js.Dynamic].applyDynamic("coerceComplexToString")(param0.asInstanceOf[js.Any], symb.asInstanceOf[js.Any])).asInstanceOf[String | CellError]
   
   inline def coerceEmptyToValue(arg: InternalNoErrorScalarValue): RawNoErrorScalarValue = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceEmptyToValue")(arg.asInstanceOf[js.Any]).asInstanceOf[RawNoErrorScalarValue]
   

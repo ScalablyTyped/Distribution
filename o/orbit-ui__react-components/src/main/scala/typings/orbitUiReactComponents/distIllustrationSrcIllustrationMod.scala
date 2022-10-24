@@ -25,7 +25,7 @@ object distIllustrationSrcIllustrationMod {
   @js.native
   val Illustration: OrbitComponent[HTMLElement, InnerIllustrationProps] = js.native
   
-  inline def InnerIllustration(hasOrientationShapeColorAsChildrenForwardedRefRest: InnerIllustrationProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIllustration")(hasOrientationShapeColorAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerIllustration(param0: InnerIllustrationProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIllustration")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type IllustrationProps = ComponentProps[OrbitComponent[HTMLElement, InnerIllustrationProps]]
   

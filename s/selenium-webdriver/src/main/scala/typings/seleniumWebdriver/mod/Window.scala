@@ -84,7 +84,7 @@ open class Window protected () extends StObject {
     * just the size by omitting `x` & `y`, or just the position by omitting
     * `width` & `height` options.
     */
-  def setRect(hasXYWidthHeight: PartialIRectangle): js.Promise[IRectangle] = js.native
+  def setRect(param0: PartialIRectangle): js.Promise[IRectangle] = js.native
   
   /**
     * Resizes the current window.

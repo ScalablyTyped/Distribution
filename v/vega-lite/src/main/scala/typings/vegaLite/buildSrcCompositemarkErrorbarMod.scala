@@ -58,8 +58,8 @@ object buildSrcCompositemarkErrorbarMod {
   
   inline def normalizeErrorBar(
     spec: GenericUnitSpec[ErrorEncoding[String], ErrorBar | ErrorBarDef, SelectionParameter[SelectionType]],
-    hasConfig: NormalizerParams
-  ): NormalizedLayerSpec | NormalizedUnitSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBar")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec | NormalizedUnitSpec]
+    param1: NormalizerParams
+  ): NormalizedLayerSpec | NormalizedUnitSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBar")(spec.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec | NormalizedUnitSpec]
   
   type ErrorBar = errorbar
   

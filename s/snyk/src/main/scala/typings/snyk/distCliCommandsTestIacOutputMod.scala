@@ -15,17 +15,11 @@ object distCliCommandsTestIacOutputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buildOutput(
-    hasResultsOptionsIsIacShareCliResultsCustomRulesSupportedIsIacCustomRulesEntitlementEnabledIacOutputMetaIacScanFailuresIacIgnoredIssuesCountTestSpinner: IacIgnoredIssuesCount
-  ): TestCommandResult = ^.asInstanceOf[js.Dynamic].applyDynamic("buildOutput")(hasResultsOptionsIsIacShareCliResultsCustomRulesSupportedIsIacCustomRulesEntitlementEnabledIacOutputMetaIacScanFailuresIacIgnoredIssuesCountTestSpinner.asInstanceOf[js.Any]).asInstanceOf[TestCommandResult]
+  inline def buildOutput(param0: IacIgnoredIssuesCount): TestCommandResult = ^.asInstanceOf[js.Dynamic].applyDynamic("buildOutput")(param0.asInstanceOf[js.Any]).asInstanceOf[TestCommandResult]
   
-  inline def buildShareResultsSummary(
-    hasOrgNameProjectNameOptionsIsIacCustomRulesEntitlementEnabledIsIacShareCliResultsCustomRulesSupported: IsIacCustomRulesEntitlementEnabled
-  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildShareResultsSummary")(hasOrgNameProjectNameOptionsIsIacCustomRulesEntitlementEnabledIsIacShareCliResultsCustomRulesSupported.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buildShareResultsSummary(param0: IsIacCustomRulesEntitlementEnabled): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildShareResultsSummary")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def buildShareResultsSummaryV2(
-    hasOrgNameProjectNameOptionsIsIacCustomRulesEntitlementEnabledIsIacShareCliResultsCustomRulesSupported: IsIacCustomRulesEntitlementEnabled
-  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildShareResultsSummaryV2")(hasOrgNameProjectNameOptionsIsIacCustomRulesEntitlementEnabledIsIacShareCliResultsCustomRulesSupported.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buildShareResultsSummaryV2(param0: IsIacCustomRulesEntitlementEnabled): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildShareResultsSummaryV2")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def buildSpinner(options: IaCTestFlags): js.UndefOr[Ora] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSpinner")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Ora]]
   

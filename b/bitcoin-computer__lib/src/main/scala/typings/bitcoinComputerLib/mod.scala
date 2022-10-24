@@ -68,7 +68,7 @@ object mod {
     
     def `import`(name: String, rev: String): js.Promise[Class] = js.native
     
-    def query(hasPublicKeyContract: Any): js.Promise[js.Array[String]] = js.native
+    def query(param0: Any): js.Promise[js.Array[String]] = js.native
     
     def queryRevs(q: Any): js.Promise[js.Array[String]] = js.native
     

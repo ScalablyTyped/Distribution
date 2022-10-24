@@ -211,7 +211,7 @@ object distIconsMod {
   
   object EmbeddedIcon {
     
-    inline def apply(hasSizeChildrenRest: EmbeddedIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasSizeChildrenRest.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(param0: EmbeddedIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@orbit-ui/react-components/dist/icons", "EmbeddedIcon")
     @js.native
@@ -389,9 +389,9 @@ object distIconsMod {
   
   inline def InnerIcon(props: InnerIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIcon")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerIconList(hasSizeDisabledChildrenAsForwardedRefRest: InnerIconListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIconList")(hasSizeDisabledChildrenAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerIconList(param0: InnerIconListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIconList")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerMultiVariantIcon(hasComponent24Component32SizeForwardedRefRest: InnerMultiVariantIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMultiVariantIcon")(hasComponent24Component32SizeForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerMultiVariantIcon(param0: InnerMultiVariantIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerMultiVariantIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/icons", "LightbulbIcon")
   @js.native

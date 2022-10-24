@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/manager-webpack4" : "6.5.12"
+      "@storybook/manager-webpack4" : "6.5.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/manager-webpack4" : "6.5.12"
+      "@storybook/manager-webpack4" : "6.5.13"
     }
   ],
   "compile-devDependencies" : [

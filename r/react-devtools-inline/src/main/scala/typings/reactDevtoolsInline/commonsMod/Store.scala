@@ -67,7 +67,7 @@ open class Store protected () extends EventEmitter[BackendVersion] {
   
   def onBridgeBackendVersion(backendVersion: String): Unit = js.native
   
-  def onBridgeNativeStyleEditorSupported(hasIsSupportedValidAttributes: IsSupported): Unit = js.native
+  def onBridgeNativeStyleEditorSupported(param0: IsSupported): Unit = js.native
   
   def onBridgeOperations(operations: js.Array[Double]): Unit = js.native
   

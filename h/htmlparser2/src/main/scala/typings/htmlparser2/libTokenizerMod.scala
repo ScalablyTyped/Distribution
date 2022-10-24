@@ -12,7 +12,7 @@ object libTokenizerMod {
   open class default protected ()
     extends StObject
        with Tokenizer {
-    def this(hasXmlModeDecodeEntities: DecodeEntities, cbs: Callbacks) = this()
+    def this(param0: DecodeEntities, cbs: Callbacks) = this()
     
     /* private */ /* CompleteClass */
     var allowLegacyEntity: Any = js.native

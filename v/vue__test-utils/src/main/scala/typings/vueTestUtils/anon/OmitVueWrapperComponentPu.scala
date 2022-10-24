@@ -35,6 +35,8 @@ trait OmitVueWrapperComponentPu extends StObject {
   @JSName("classes")
   var classes_Original: js.Function0[js.Array[String]]
   
+  var cleanUpCallbacks: Any
+  
   var componentVM: Any
   
   @JSName("constructor")
@@ -139,8 +141,9 @@ trait OmitVueWrapperComponentPu extends StObject {
   var hasMultipleRoots_Original: js.Function0[Any]
   
   def html(): String
+  def html(options: Raw): String
   @JSName("html")
-  var html_Original: js.Function0[String]
+  var html_Original: js.Function1[/* options */ js.UndefOr[Raw], String]
   
   def isDisabled(): Boolean
   @JSName("isDisabled")
@@ -228,6 +231,7 @@ object OmitVueWrapperComponentPu {
     attachNativeEventListener: Any,
     attributes: () => StringDictionary[String],
     classes: () => js.Array[String],
+    cleanUpCallbacks: Any,
     componentVM: Any,
     constructor: (/* app */ App[Any] | Null, /* vm */ ComponentPublicInstance[
       js.Object, 
@@ -264,7 +268,7 @@ object OmitVueWrapperComponentPu {
     getCurrentComponent: () => ComponentInternalInstance,
     getRootNodes: () => js.Array[VueNodeNode],
     hasMultipleRoots: () => Any,
-    html: () => String,
+    html: /* options */ js.UndefOr[Raw] => String,
     isDisabled: () => Boolean,
     isVisible: () => Boolean,
     parentElement: () => Any,
@@ -290,7 +294,7 @@ object OmitVueWrapperComponentPu {
     ],
     wrapperElement: VueNodeNode
   ): OmitVueWrapperComponentPu = {
-    val __obj = js.Dynamic.literal(__app = __app.asInstanceOf[js.Any], __setProps = __setProps.asInstanceOf[js.Any], attachNativeEventListener = attachNativeEventListener.asInstanceOf[js.Any], attributes = js.Any.fromFunction0(attributes), classes = js.Any.fromFunction0(classes), componentVM = componentVM.asInstanceOf[js.Any], constructor = js.Any.fromFunction3(constructor), element = js.Any.fromFunction0(element), emitted = js.Any.fromFunction0(emitted), find = js.Any.fromFunction1(find), findAll = js.Any.fromFunction1(findAll), findAllComponents = js.Any.fromFunction1(findAllComponents), findAllDOMElements = js.Any.fromFunction1(findAllDOMElements), findComponent = js.Any.fromFunction1(findComponent), get = js.Any.fromFunction1(get), getComponent = js.Any.fromFunction1(getComponent), getCurrentComponent = js.Any.fromFunction0(getCurrentComponent), getRootNodes = js.Any.fromFunction0(getRootNodes), hasMultipleRoots = js.Any.fromFunction0(hasMultipleRoots), html = js.Any.fromFunction0(html), isDisabled = js.Any.fromFunction0(isDisabled), isVisible = js.Any.fromFunction0(isVisible), parentElement = js.Any.fromFunction0(parentElement), props = js.Any.fromFunction0(props), rootVM = rootVM.asInstanceOf[js.Any], setData = js.Any.fromFunction1(setData), setProps = js.Any.fromFunction1(setProps), setValue = js.Any.fromFunction2(setValue), text = js.Any.fromFunction0(text), trigger = js.Any.fromFunction2(trigger), unmount = js.Any.fromFunction0(unmount), vm = js.Any.fromFunction0(vm), wrapperElement = wrapperElement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(__app = __app.asInstanceOf[js.Any], __setProps = __setProps.asInstanceOf[js.Any], attachNativeEventListener = attachNativeEventListener.asInstanceOf[js.Any], attributes = js.Any.fromFunction0(attributes), classes = js.Any.fromFunction0(classes), cleanUpCallbacks = cleanUpCallbacks.asInstanceOf[js.Any], componentVM = componentVM.asInstanceOf[js.Any], constructor = js.Any.fromFunction3(constructor), element = js.Any.fromFunction0(element), emitted = js.Any.fromFunction0(emitted), find = js.Any.fromFunction1(find), findAll = js.Any.fromFunction1(findAll), findAllComponents = js.Any.fromFunction1(findAllComponents), findAllDOMElements = js.Any.fromFunction1(findAllDOMElements), findComponent = js.Any.fromFunction1(findComponent), get = js.Any.fromFunction1(get), getComponent = js.Any.fromFunction1(getComponent), getCurrentComponent = js.Any.fromFunction0(getCurrentComponent), getRootNodes = js.Any.fromFunction0(getRootNodes), hasMultipleRoots = js.Any.fromFunction0(hasMultipleRoots), html = js.Any.fromFunction1(html), isDisabled = js.Any.fromFunction0(isDisabled), isVisible = js.Any.fromFunction0(isVisible), parentElement = js.Any.fromFunction0(parentElement), props = js.Any.fromFunction0(props), rootVM = rootVM.asInstanceOf[js.Any], setData = js.Any.fromFunction1(setData), setProps = js.Any.fromFunction1(setProps), setValue = js.Any.fromFunction2(setValue), text = js.Any.fromFunction0(text), trigger = js.Any.fromFunction2(trigger), unmount = js.Any.fromFunction0(unmount), vm = js.Any.fromFunction0(vm), wrapperElement = wrapperElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitVueWrapperComponentPu]
   }
   
@@ -301,6 +305,8 @@ object OmitVueWrapperComponentPu {
     inline def setAttributes(value: () => StringDictionary[String]): Self = StObject.set(x, "attributes", js.Any.fromFunction0(value))
     
     inline def setClasses(value: () => js.Array[String]): Self = StObject.set(x, "classes", js.Any.fromFunction0(value))
+    
+    inline def setCleanUpCallbacks(value: Any): Self = StObject.set(x, "cleanUpCallbacks", value.asInstanceOf[js.Any])
     
     inline def setComponentVM(value: Any): Self = StObject.set(x, "componentVM", value.asInstanceOf[js.Any])
     
@@ -360,7 +366,7 @@ object OmitVueWrapperComponentPu {
     
     inline def setHasMultipleRoots(value: () => Any): Self = StObject.set(x, "hasMultipleRoots", js.Any.fromFunction0(value))
     
-    inline def setHtml(value: () => String): Self = StObject.set(x, "html", js.Any.fromFunction0(value))
+    inline def setHtml(value: /* options */ js.UndefOr[Raw] => String): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
     
     inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     

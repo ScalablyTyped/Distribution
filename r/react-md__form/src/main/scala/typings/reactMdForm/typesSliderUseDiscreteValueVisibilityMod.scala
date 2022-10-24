@@ -14,7 +14,7 @@ object typesSliderUseDiscreteValueVisibilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useDiscreteValueVisibility(hasActiveAnimateAnimationDurationDiscreteDisabledPropOnBlurPropOnFocus: Options): ReturnedProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useDiscreteValueVisibility")(hasActiveAnimateAnimationDurationDiscreteDisabledPropOnBlurPropOnFocus.asInstanceOf[js.Any]).asInstanceOf[ReturnedProps]
+  inline def useDiscreteValueVisibility(param0: Options): ReturnedProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useDiscreteValueVisibility")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnedProps]
   
   /**
     * @internal

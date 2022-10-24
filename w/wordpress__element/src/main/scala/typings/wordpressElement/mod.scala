@@ -159,7 +159,7 @@ object mod {
     inline def select(spec: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(spec.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
-  inline def RawHTML(hasChildrenProps: RawHTMLProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RawHTML")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RawHTML(param0: RawHTMLProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RawHTML")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@wordpress/element", "StrictMode")
   @js.native

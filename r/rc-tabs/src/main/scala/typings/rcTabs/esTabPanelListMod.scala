@@ -13,7 +13,7 @@ object esTabPanelListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasIdActiveKeyAnimatedTabPositionDestroyInactiveTabPane: TabPanelListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIdActiveKeyAnimatedTabPositionDestroyInactiveTabPane.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: TabPanelListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TabPanelListProps extends StObject {
     

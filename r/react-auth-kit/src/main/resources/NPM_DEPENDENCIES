@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-auth-kit" : "2.5.0"
+      "react-auth-kit" : "2.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-auth-kit" : "2.5.0"
+      "react-auth-kit" : "2.6.0"
     }
   ],
   "compile-devDependencies" : [

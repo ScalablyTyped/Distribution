@@ -12,9 +12,7 @@ object libJsonldLocalBusinessMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasTypeKeyOverrideAddressGeoRatingReviewActionAreaServedMakesOfferOpeningHoursImagesRest: LocalBusinessJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideAddressGeoRatingReviewActionAreaServedMakesOfferOpeningHoursImagesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: LocalBusinessJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait LocalBusinessJsonLdProps
     extends StObject

@@ -195,7 +195,7 @@ object mod {
     def handleMouseUp(e: typings.std.MouseEvent): Unit = js.native
     def handleMouseUp(e: typings.std.TouchEvent): Unit = js.native
     
-    def handleMove(hasPageXPageY: PageX): Unit = js.native
+    def handleMove(param0: PageX): Unit = js.native
     
     def handleResizeStart(
       i: Double,

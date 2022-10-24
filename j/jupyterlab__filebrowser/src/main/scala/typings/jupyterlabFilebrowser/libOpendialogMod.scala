@@ -1,5 +1,6 @@
 package typings.jupyterlabFilebrowser
 
+import typings.jupyterlabApputils.anon.PartialICheckbox
 import typings.jupyterlabApputils.libDialogMod.Dialog.Header
 import typings.jupyterlabApputils.libDialogMod.Dialog.IRenderer
 import typings.jupyterlabApputils.libDialogMod.Dialog.IResult
@@ -50,6 +51,8 @@ object libOpendialogMod {
     /* Inlined parent std.Partial<std.Pick<@jupyterlab/apputils.@jupyterlab/apputils.Dialog.IOptions<std.Promise<std.Array<@jupyterlab/services.@jupyterlab/services.Contents.IModel>>>, std.Exclude<keyof @jupyterlab/apputils.@jupyterlab/apputils.Dialog.IOptions<std.Promise<std.Array<@jupyterlab/services.@jupyterlab/services.Contents.IModel>>>, 'body' | 'buttons' | 'defaultButton'>>> */
     trait IDirectoryOptions extends StObject {
       
+      var checkbox: js.UndefOr[PartialICheckbox | Null] = js.undefined
+      
       var focusNodeSelector: js.UndefOr[String] = js.undefined
       
       var hasClose: js.UndefOr[Boolean] = js.undefined
@@ -78,6 +81,12 @@ object libOpendialogMod {
       }
       
       extension [Self <: IDirectoryOptions](x: Self) {
+        
+        inline def setCheckbox(value: PartialICheckbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+        
+        inline def setCheckboxNull: Self = StObject.set(x, "checkbox", null)
+        
+        inline def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
         
         inline def setFocusNodeSelector(value: String): Self = StObject.set(x, "focusNodeSelector", value.asInstanceOf[js.Any])
         

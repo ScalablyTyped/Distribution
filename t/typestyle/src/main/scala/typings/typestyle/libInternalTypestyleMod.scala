@@ -15,7 +15,7 @@ object libInternalTypestyleMod {
   @JSImport("typestyle/lib/internal/typestyle", "TypeStyle")
   @js.native
   open class TypeStyle protected () extends StObject {
-    def this(hasAutoGenerateTag: AutoGenerateTag) = this()
+    def this(param0: AutoGenerateTag) = this()
     
     /**
       * Only calls cb all sync operations settle

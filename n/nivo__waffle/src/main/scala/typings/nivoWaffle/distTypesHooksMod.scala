@@ -44,9 +44,9 @@ object distTypesHooksMod {
   inline def useMergeCellsData[RawDatum /* <: Datum */](cells: js.Array[EmptyCell], data: js.Array[ComputedDatum[RawDatum]]): js.Array[Cell[RawDatum]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMergeCellsData")(cells.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell[RawDatum]]]
   
   inline def useWaffle[RawDatum /* <: Datum */](
-    hasWidthHeightDataValueFormatTotalRowsColumnsFillDirectionPaddingColorsEmptyColorBorderColor: (Pick[
+    param0: (Pick[
       CommonProps[RawDatum], 
       valueFormat | fillDirection | padding | colors | emptyColor | borderColor
     ]) & DataProps[RawDatum] & Height
-  ): ComputedData[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWaffle")(hasWidthHeightDataValueFormatTotalRowsColumnsFillDirectionPaddingColorsEmptyColorBorderColor.asInstanceOf[js.Any]).asInstanceOf[ComputedData[RawDatum]]
+  ): ComputedData[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWaffle")(param0.asInstanceOf[js.Any]).asInstanceOf[ComputedData[RawDatum]]
 }

@@ -14,7 +14,7 @@ object libJsonldImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasKeyOverrideImagesRest: ImageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasKeyOverrideImagesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ImageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Creator extends StObject {
     

@@ -51,8 +51,8 @@ object esmBundleMod {
       */
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
-    def this(locales: String, hasFunctionsUseIsolatingTransform: Functions) = this()
-    def this(locales: js.Array[String], hasFunctionsUseIsolatingTransform: Functions) = this()
+    def this(locales: String, param1: Functions) = this()
+    def this(locales: js.Array[String], param1: Functions) = this()
     
     var _functions: Record[String, FluentFunction] = js.native
     
@@ -87,7 +87,7 @@ object esmBundleMod {
       * @param   options
       */
     def addResource(res: FluentResource): js.Array[js.Error] = js.native
-    def addResource(res: FluentResource, hasAllowOverrides: AllowOverrides): js.Array[js.Error] = js.native
+    def addResource(res: FluentResource, param1: AllowOverrides): js.Array[js.Error] = js.native
     
     /**
       * Format a `Pattern` to a string.

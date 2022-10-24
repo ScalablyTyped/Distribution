@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "vue-color"
-version := "2.4-dt-20211216Z-31bb35"
-scalaVersion := "3.1.2"
+version := "2.4-dt-20211216Z-cc7298"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -22,7 +22,7 @@ object distSharedSrcFocusableTreeWalkerMod {
   val TabbableElementSelector: String = js.native
   
   inline def createFocusableTreeWalker(root: HTMLElement): TreeWalker = ^.asInstanceOf[js.Dynamic].applyDynamic("createFocusableTreeWalker")(root.asInstanceOf[js.Any]).asInstanceOf[TreeWalker]
-  inline def createFocusableTreeWalker(root: HTMLElement, hasTabbable: FocusableTreeWalkerOptions): TreeWalker = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusableTreeWalker")(root.asInstanceOf[js.Any], hasTabbable.asInstanceOf[js.Any])).asInstanceOf[TreeWalker]
+  inline def createFocusableTreeWalker(root: HTMLElement, param1: FocusableTreeWalkerOptions): TreeWalker = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusableTreeWalker")(root.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TreeWalker]
   
   inline def walkFocusableElements(
     root: HTMLElement,

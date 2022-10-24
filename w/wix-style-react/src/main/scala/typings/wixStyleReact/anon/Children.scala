@@ -1,25 +1,29 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Children extends StObject {
+trait Children
+  extends StObject
+     with /* key */ StringDictionary[Any] {
   
-  var children: ReactNode
+  var children: Any
+  
+  var className: Any
 }
 object Children {
   
-  inline def apply(): Children = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(children: Any, className: Any): Children = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any])
     __obj.asInstanceOf[Children]
   }
   
   extension [Self <: Children](x: Self) {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
   }
 }

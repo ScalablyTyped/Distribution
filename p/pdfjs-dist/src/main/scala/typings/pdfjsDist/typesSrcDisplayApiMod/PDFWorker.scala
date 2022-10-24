@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pdfjs-dist/types/src/display/api", "PDFWorker")
 @js.native
 open class PDFWorker () extends StObject {
-  def this(hasNamePortVerbosity: Name) = this()
+  def this(param0: Name) = this()
   
   def _initialize(): Unit = js.native
   

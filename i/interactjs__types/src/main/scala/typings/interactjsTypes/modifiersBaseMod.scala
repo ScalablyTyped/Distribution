@@ -22,7 +22,7 @@ object modifiersBaseMod {
   @js.native
   val default: Plugin = js.native
   
-  inline def addEventModifiers(hasIEventInteraction: IEventInteraction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEventModifiers")(hasIEventInteraction.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addEventModifiers(param0: IEventInteraction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEventModifiers")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def makeModifier[Defaults /* <: Enabled */, State /* <: ModifierState[Any, Any, Any] */, Name /* <: String */, Result](module: ModifierModule[Defaults, State, Result]): Call[Defaults, State, Name, Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeModifier")(module.asInstanceOf[js.Any]).asInstanceOf[Call[Defaults, State, Name, Result]]
   inline def makeModifier[Defaults /* <: Enabled */, State /* <: ModifierState[Any, Any, Any] */, Name /* <: String */, Result](module: ModifierModule[Defaults, State, Result], name: Name): Call[Defaults, State, Name, Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeModifier")(module.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Call[Defaults, State, Name, Result]]

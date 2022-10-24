@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jsonschema-protobuf"
-version := "1.0-dt-20220624Z-ffc16c"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220624Z-5e88bc"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

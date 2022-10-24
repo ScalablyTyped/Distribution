@@ -14,7 +14,7 @@ object libTypescriptComponentsRadioButtonUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def handlePress(hasOnPressValueOnValueChange: OnValueChange): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handlePress")(hasOnPressValueOnValueChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handlePress(param0: OnValueChange): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handlePress")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def isChecked(hasValueStatusContextValue: ContextValue): js.UndefOr[checked | unchecked] = ^.asInstanceOf[js.Dynamic].applyDynamic("isChecked")(hasValueStatusContextValue.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[checked | unchecked]]
+  inline def isChecked(param0: ContextValue): js.UndefOr[checked | unchecked] = ^.asInstanceOf[js.Dynamic].applyDynamic("isChecked")(param0.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[checked | unchecked]]
 }

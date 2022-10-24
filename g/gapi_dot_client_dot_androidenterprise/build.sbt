@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_androidenterprise"
-version := "1.0-dt-20220912Z-612b38"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220912Z-76c5c4"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

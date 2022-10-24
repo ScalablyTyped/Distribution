@@ -15,28 +15,10 @@ object libTypescriptComponentsToggleButtonMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/ToggleButton", JSImport.Default)
   @js.native
-  val default: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasIconSizeThemeAccessibilityLabelDisabledStyleValueStatusOnPressRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ]) & Row = js.native
+  val default: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) & Row = js.native
   
-  type _To = ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasIconSizeThemeAccessibilityLabelDisabledStyleValueStatusOnPressRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ]) & Row
+  type _To = ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) & Row
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsToggleButtonMod.foo` */
-  override def _to: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasIconSizeThemeAccessibilityLabelDisabledStyleValueStatusOnPressRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ]) & Row = default
+  override def _to: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) & Row = default
 }

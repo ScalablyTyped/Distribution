@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-fast-compare"
-version := "3.2.0-649e7a"
-scalaVersion := "3.1.2"
+version := "3.2.0-2f5425"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

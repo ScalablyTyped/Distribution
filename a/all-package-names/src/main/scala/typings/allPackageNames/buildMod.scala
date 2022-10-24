@@ -22,7 +22,7 @@ object buildMod {
   val savePath: String = js.native
   
   inline def sync(): js.Promise[Save_] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.Promise[Save_]]
-  inline def sync(hasOnDataOnStartOnEndMaxAge: SyncOptions): js.Promise[Save_] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(hasOnDataOnStartOnEndMaxAge.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Save_]]
+  inline def sync(param0: SyncOptions): js.Promise[Save_] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Save_]]
   
   inline def syncAction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncAction")().asInstanceOf[Unit]
   inline def syncAction(options: LoadOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncAction")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]

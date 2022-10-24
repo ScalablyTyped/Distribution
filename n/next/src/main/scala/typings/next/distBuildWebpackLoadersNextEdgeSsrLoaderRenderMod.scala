@@ -13,7 +13,5 @@ object distBuildWebpackLoadersNextEdgeSsrLoaderRenderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getRender(
-    hasDevPageAppModPageModErrorModError500ModDocumentBuildManifestReactLoadableManifestAppRenderToHTMLPagesRenderToHTMLServerComponentManifestSubresourceIntegrityManifestServerCSSManifestConfigBuildId: AppMod
-  ): js.Function1[/* request */ Request, js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRender")(hasDevPageAppModPageModErrorModError500ModDocumentBuildManifestReactLoadableManifestAppRenderToHTMLPagesRenderToHTMLServerComponentManifestSubresourceIntegrityManifestServerCSSManifestConfigBuildId.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* request */ Request, js.Promise[Response]]]
+  inline def getRender(param0: AppMod): js.Function1[/* request */ Request, js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRender")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* request */ Request, js.Promise[Response]]]
 }

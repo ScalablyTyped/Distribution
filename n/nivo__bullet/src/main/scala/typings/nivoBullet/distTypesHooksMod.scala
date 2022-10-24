@@ -13,5 +13,5 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useEnhancedData(data: js.Array[Datum], hasLayoutMaxValueMinValueReverseHeightWidth: PickCommonBulletPropslayo): js.Array[Id] = (^.asInstanceOf[js.Dynamic].applyDynamic("useEnhancedData")(data.asInstanceOf[js.Any], hasLayoutMaxValueMinValueReverseHeightWidth.asInstanceOf[js.Any])).asInstanceOf[js.Array[Id]]
+  inline def useEnhancedData(data: js.Array[Datum], param1: PickCommonBulletPropslayo): js.Array[Id] = (^.asInstanceOf[js.Dynamic].applyDynamic("useEnhancedData")(data.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[Id]]
 }

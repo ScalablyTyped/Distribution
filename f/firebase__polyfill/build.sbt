@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "firebase__polyfill"
-version := "0.3.36-c3cb86"
-scalaVersion := "3.1.2"
+version := "0.3.36-e0a5e1"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

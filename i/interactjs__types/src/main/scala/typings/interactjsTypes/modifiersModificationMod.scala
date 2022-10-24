@@ -101,7 +101,7 @@ object modifiersModificationMod {
     
     def prepareStates(modifierList: js.Array[Modifier[Any, Any, Any, Any]]): js.Array[Methods] = js.native
     
-    def restoreInteractionCoords(hasHasCoordsRectModification: typings.interactjsTypes.anon.Interaction): Unit = js.native
+    def restoreInteractionCoords(param0: typings.interactjsTypes.anon.Interaction): Unit = js.native
     
     var result: ModificationResult = js.native
     
@@ -118,7 +118,7 @@ object modifiersModificationMod {
     def shouldDo(options: Any, preEnd: Unit, phase: String, requireEndOnly: Boolean): Boolean = js.native
     def shouldDo(options: Any, preEnd: Unit, phase: Unit, requireEndOnly: Boolean): Boolean = js.native
     
-    def start(hasPhase: Phase, pageCoords: Point): ModificationResult = js.native
+    def start(param0: Phase, pageCoords: Point): ModificationResult = js.native
     
     def startAll(arg: MethodArgPartialModifierA): Unit = js.native
     

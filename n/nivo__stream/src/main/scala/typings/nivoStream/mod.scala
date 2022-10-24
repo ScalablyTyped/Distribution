@@ -33,7 +33,7 @@ object mod {
   
   inline def ResponsiveStream[RawDatum /* <: StreamDatum */](props: Omit[StreamSvgProps[RawDatum], height | width]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveStream")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def Stream[RawDatum /* <: StreamDatum */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: StreamSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Stream")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Stream[RawDatum /* <: StreamDatum */](param0: StreamSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Stream")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object defaultProps {
     
@@ -76,7 +76,7 @@ object mod {
     def dotColor: From = js.native
     inline def dotColor_=(x: From): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dotColor")(x.asInstanceOf[js.Any])
     
-    inline def dotComponent(hasXYSizeColorBorderWidthBorderColor: StreamDotsItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("dotComponent")(hasXYSizeColorBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def dotComponent(param0: StreamDotsItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("dotComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/stream", "defaultProps.dotPosition")
     @js.native
@@ -148,9 +148,9 @@ object mod {
     def role: String = js.native
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
     
-    inline def stackTooltip(hasSlice: StackTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("stackTooltip")(hasSlice.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def stackTooltip(param0: StackTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("stackTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def tooltip(hasLayer: TooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasLayer.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip(param0: TooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
   
   object svgDefaultProps {
@@ -204,7 +204,7 @@ object mod {
     def dotColor: From = js.native
     inline def dotColor_=(x: From): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dotColor")(x.asInstanceOf[js.Any])
     
-    inline def dotComponent(hasXYSizeColorBorderWidthBorderColor: StreamDotsItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("dotComponent")(hasXYSizeColorBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def dotComponent(param0: StreamDotsItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("dotComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/stream", "svgDefaultProps.dotPosition")
     @js.native
@@ -297,8 +297,8 @@ object mod {
     def role: String = js.native
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
     
-    inline def stackTooltip(hasSlice: StackTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("stackTooltip")(hasSlice.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def stackTooltip(param0: StackTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("stackTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def tooltip(hasLayer: TooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasLayer.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip(param0: TooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
 }

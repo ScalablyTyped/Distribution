@@ -42,7 +42,7 @@ object mod {
   
   inline def DefaultLeaf(props: RenderLeafProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultLeaf")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def DefaultPlaceholder(hasAttributesChildren: RenderPlaceholderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultPlaceholder")(hasAttributesChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DefaultPlaceholder(param0: RenderPlaceholderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultPlaceholder")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Editable(props: EditableProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Editable")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   

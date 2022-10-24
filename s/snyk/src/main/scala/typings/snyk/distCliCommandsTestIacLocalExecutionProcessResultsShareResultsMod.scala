@@ -12,5 +12,5 @@ object distCliCommandsTestIacLocalExecutionProcessResultsShareResultsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def formatAndShareResults(hasResultsOptionsOrgPublicIdPolicyTagsAttributesProjectRootMeta: Meta): js.Promise[ShareResultsOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("formatAndShareResults")(hasResultsOptionsOrgPublicIdPolicyTagsAttributesProjectRootMeta.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShareResultsOutput]]
+  inline def formatAndShareResults(param0: Meta): js.Promise[ShareResultsOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("formatAndShareResults")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShareResultsOutput]]
 }

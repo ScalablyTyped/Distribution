@@ -38,10 +38,7 @@ object distConfigConfigurationMod {
   @js.native
   val DEFAULT_REDIRECT_TIMEOUT_MS: /* 30000 */ Double = js.native
   
-  inline def buildConfiguration(
-    hasUserInputAuthUserInputCacheUserInputSystemUserInputTelemetry: Configuration,
-    isBrowserEnvironment: Boolean
-  ): BrowserConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("buildConfiguration")(hasUserInputAuthUserInputCacheUserInputSystemUserInputTelemetry.asInstanceOf[js.Any], isBrowserEnvironment.asInstanceOf[js.Any])).asInstanceOf[BrowserConfiguration]
+  inline def buildConfiguration(param0: Configuration, isBrowserEnvironment: Boolean): BrowserConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("buildConfiguration")(param0.asInstanceOf[js.Any], isBrowserEnvironment.asInstanceOf[js.Any])).asInstanceOf[BrowserConfiguration]
   
   trait BrowserAuthOptions extends StObject {
     

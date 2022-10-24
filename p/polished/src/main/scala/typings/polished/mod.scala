@@ -125,9 +125,7 @@ object mod {
   inline def fluidRange(cssProp: FluidRangeConfiguration, minScreen: String, maxScreen: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[Styles]
   inline def fluidRange(cssProp: FluidRangeConfiguration, minScreen: Unit, maxScreen: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("fluidRange")(cssProp.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
-  inline def fontFace(
-    hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsFormatHintLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings: FontFaceConfiguration
-  ): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFace")(hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsFormatHintLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def fontFace(param0: FontFaceConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFace")(param0.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
   inline def getContrast(color1: String, color2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getContrast")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -186,7 +184,7 @@ object mod {
   inline def lighten(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
   inline def lighten(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def linearGradient(hasColorStopsFallbackToDirection: LinearGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("linearGradient")(hasColorStopsFallbackToDirection.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def linearGradient(param0: LinearGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("linearGradient")(param0.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
   inline def margin(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("margin")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
@@ -226,7 +224,7 @@ object mod {
   inline def position(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(scala.List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
   inline def position(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(scala.List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
   
-  inline def radialGradient(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("radialGradient")(hasColorStopsExtentFallbackPositionShape.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def radialGradient(param0: RadialGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("radialGradient")(param0.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
   inline def readableColor(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def readableColor(color: String, returnIfLightColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], returnIfLightColor.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -406,7 +404,7 @@ object mod {
   inline def transparentize(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transparentize")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
   inline def transparentize(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transparentize")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def triangle(hasPointingDirectionHeightWidthForegroundColorBackgroundColor: TriangleConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("triangle")(hasPointingDirectionHeightWidthForegroundColorBackgroundColor.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def triangle(param0: TriangleConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("triangle")(param0.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
   inline def wordWrap(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")().asInstanceOf[Styles]
   inline def wordWrap(wrap: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(wrap.asInstanceOf[js.Any]).asInstanceOf[Styles]

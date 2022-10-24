@@ -12,13 +12,7 @@ object distUtilsCssTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def cssTransition(hasEnterExitAppendPositionCollapseCollapseDuration: CSSTransitionProps): js.Function1[
-    /* hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn */ ToastTransitionProps, 
-    Element
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(hasEnterExitAppendPositionCollapseCollapseDuration.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn */ ToastTransitionProps, 
-    Element
-  ]]
+  inline def cssTransition(param0: CSSTransitionProps): js.Function1[/* param0 */ ToastTransitionProps, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param0 */ ToastTransitionProps, Element]]
   
   trait CSSTransitionProps extends StObject {
     

@@ -20,14 +20,12 @@ object libTableHooksUseSorterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RecordType](
-    hasPrefixClsMergedColumnsOnSorterChangeSortDirectionsTableLocaleShowSorterTooltip: SorterConfig[RecordType]
-  ): js.Tuple4[
+  inline def default[RecordType](param0: SorterConfig[RecordType]): js.Tuple4[
     TransformColumns[RecordType], 
     js.Array[SortState[RecordType]], 
     ColumnTitleProps[RecordType], 
     js.Function0[SorterResult[RecordType] | js.Array[SorterResult[RecordType]]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsMergedColumnsOnSorterChangeSortDirectionsTableLocaleShowSorterTooltip.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[
     TransformColumns[RecordType], 
     js.Array[SortState[RecordType]], 
     ColumnTitleProps[RecordType], 

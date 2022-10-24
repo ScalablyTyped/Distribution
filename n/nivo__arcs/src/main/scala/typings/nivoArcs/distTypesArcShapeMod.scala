@@ -16,7 +16,7 @@ object distTypesArcShapeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ArcShape[Datum /* <: DatumWithArcAndColor */](hasDatumStyleOnClickOnMouseEnterOnMouseMoveOnMouseLeave: ArcShapeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcShape")(hasDatumStyleOnClickOnMouseEnterOnMouseMoveOnMouseLeave.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcShape[Datum /* <: DatumWithArcAndColor */](param0: ArcShapeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcShape")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ArcMouseHandler[Datum /* <: DatumWithArcAndColor */] = js.Function2[/* datum */ Datum, /* event */ MouseEvent[SVGPathElement, NativeMouseEvent], Unit]
   

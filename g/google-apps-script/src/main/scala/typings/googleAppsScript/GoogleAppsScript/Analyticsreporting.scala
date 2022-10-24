@@ -152,6 +152,45 @@ object Analyticsreporting {
     __obj.asInstanceOf[Analyticsreporting]
   }
   
+  object Collection {
+    
+    trait ReportsCollection extends StObject {
+      
+      // Returns the Analytics data.
+      def batchGet(resource: GetReportsRequest): GetReportsResponse
+    }
+    object ReportsCollection {
+      
+      inline def apply(batchGet: GetReportsRequest => GetReportsResponse): ReportsCollection = {
+        val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet))
+        __obj.asInstanceOf[ReportsCollection]
+      }
+      
+      extension [Self <: ReportsCollection](x: Self) {
+        
+        inline def setBatchGet(value: GetReportsRequest => GetReportsResponse): Self = StObject.set(x, "batchGet", js.Any.fromFunction1(value))
+      }
+    }
+    
+    trait UserActivityCollection extends StObject {
+      
+      // Returns User Activity data.
+      def search(resource: SearchUserActivityRequest): SearchUserActivityResponse
+    }
+    object UserActivityCollection {
+      
+      inline def apply(search: SearchUserActivityRequest => SearchUserActivityResponse): UserActivityCollection = {
+        val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
+        __obj.asInstanceOf[UserActivityCollection]
+      }
+      
+      extension [Self <: UserActivityCollection](x: Self) {
+        
+        inline def setSearch(value: SearchUserActivityRequest => SearchUserActivityResponse): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      }
+    }
+  }
+  
   extension [Self <: Analyticsreporting](x: Self) {
     
     inline def setNewCohort(value: () => Cohort): Self = StObject.set(x, "newCohort", js.Any.fromFunction0(value))
@@ -213,45 +252,6 @@ object Analyticsreporting {
     inline def setUserActivity(value: UserActivityCollection): Self = StObject.set(x, "UserActivity", value.asInstanceOf[js.Any])
     
     inline def setUserActivityUndefined: Self = StObject.set(x, "UserActivity", js.undefined)
-  }
-  
-  object Collection {
-    
-    trait ReportsCollection extends StObject {
-      
-      // Returns the Analytics data.
-      def batchGet(resource: GetReportsRequest): GetReportsResponse
-    }
-    object ReportsCollection {
-      
-      inline def apply(batchGet: GetReportsRequest => GetReportsResponse): ReportsCollection = {
-        val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet))
-        __obj.asInstanceOf[ReportsCollection]
-      }
-      
-      extension [Self <: ReportsCollection](x: Self) {
-        
-        inline def setBatchGet(value: GetReportsRequest => GetReportsResponse): Self = StObject.set(x, "batchGet", js.Any.fromFunction1(value))
-      }
-    }
-    
-    trait UserActivityCollection extends StObject {
-      
-      // Returns User Activity data.
-      def search(resource: SearchUserActivityRequest): SearchUserActivityResponse
-    }
-    object UserActivityCollection {
-      
-      inline def apply(search: SearchUserActivityRequest => SearchUserActivityResponse): UserActivityCollection = {
-        val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
-        __obj.asInstanceOf[UserActivityCollection]
-      }
-      
-      extension [Self <: UserActivityCollection](x: Self) {
-        
-        inline def setSearch(value: SearchUserActivityRequest => SearchUserActivityResponse): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
-      }
-    }
   }
   
   object Schema {

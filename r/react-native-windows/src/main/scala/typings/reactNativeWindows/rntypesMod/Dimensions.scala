@@ -18,7 +18,7 @@ trait Dimensions extends StObject {
     * @param handler the event handler
     */
   @JSName("addEventListener")
-  def addEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ Screen, Unit]): EmitterSubscription
+  def addEventListener_change(`type`: change, handler: js.Function1[/* param0 */ Screen, Unit]): EmitterSubscription
   
   /**
     * Initial dimensions are set before runApplication is called so they
@@ -44,7 +44,7 @@ trait Dimensions extends StObject {
     * @param handler the event handler
     */
   @JSName("removeEventListener")
-  def removeEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ Screen, Unit]): Unit
+  def removeEventListener_change(`type`: change, handler: js.Function1[/* param0 */ Screen, Unit]): Unit
   
   /**
     * This should only be called from native code by sending the didUpdateDimensions event.
@@ -60,11 +60,11 @@ object Dimensions {
   
   extension [Self <: Dimensions](x: Self) {
     
-    inline def setAddEventListener(value: (change, js.Function1[/* hasWindowScreen */ Screen, Unit]) => EmitterSubscription): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+    inline def setAddEventListener(value: (change, js.Function1[/* param0 */ Screen, Unit]) => EmitterSubscription): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     inline def setGet(value: window | screen => ScaledSize): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setRemoveEventListener(value: (change, js.Function1[/* hasWindowScreen */ Screen, Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+    inline def setRemoveEventListener(value: (change, js.Function1[/* param0 */ Screen, Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     inline def setSet(value: StringDictionary[Any] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }

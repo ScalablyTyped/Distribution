@@ -38,7 +38,7 @@ object componentsFileInputMod {
   
   trait FileInputProps extends StObject {
     
-    var confirmRemove: js.UndefOr[js.Function1[/* hasOnConfirmOnCancel */ OnCancel, ReactElement]] = js.undefined
+    var confirmRemove: js.UndefOr[js.Function1[/* param0 */ OnCancel, ReactElement]] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -55,8 +55,8 @@ object componentsFileInputMod {
     var onChange: js.UndefOr[
         js.Function3[
           /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]], 
-          /* hasFiles */ js.UndefOr[Files], 
-          /* hasTarget */ js.UndefOr[Target], 
+          /* param1 */ js.UndefOr[Files], 
+          /* param2 */ js.UndefOr[Target], 
           Unit
         ]
       ] = js.undefined
@@ -72,7 +72,7 @@ object componentsFileInputMod {
     
     extension [Self <: FileInputProps](x: Self) {
       
-      inline def setConfirmRemove(value: /* hasOnConfirmOnCancel */ OnCancel => ReactElement): Self = StObject.set(x, "confirmRemove", js.Any.fromFunction1(value))
+      inline def setConfirmRemove(value: /* param0 */ OnCancel => ReactElement): Self = StObject.set(x, "confirmRemove", js.Any.fromFunction1(value))
       
       inline def setConfirmRemoveUndefined: Self = StObject.set(x, "confirmRemove", js.undefined)
       
@@ -101,7 +101,7 @@ object componentsFileInputMod {
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setOnChange(
-        value: (/* event */ js.UndefOr[ChangeEvent[HTMLInputElement]], /* hasFiles */ js.UndefOr[Files], /* hasTarget */ js.UndefOr[Target]) => Unit
+        value: (/* event */ js.UndefOr[ChangeEvent[HTMLInputElement]], /* param1 */ js.UndefOr[Files], /* param2 */ js.UndefOr[Target]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

@@ -31,6 +31,11 @@ trait CaptureScreenshotRequest extends StObject {
   var fromSurface: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Optimize image encoding for speed, not for resulting size (defaults to false)
+    */
+  var optimizeForSpeed: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Compression quality from range [0..100] (jpeg only).
     */
   var quality: js.UndefOr[integer] = js.undefined
@@ -59,6 +64,10 @@ object CaptureScreenshotRequest {
     inline def setFromSurface(value: Boolean): Self = StObject.set(x, "fromSurface", value.asInstanceOf[js.Any])
     
     inline def setFromSurfaceUndefined: Self = StObject.set(x, "fromSurface", js.undefined)
+    
+    inline def setOptimizeForSpeed(value: Boolean): Self = StObject.set(x, "optimizeForSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizeForSpeedUndefined: Self = StObject.set(x, "optimizeForSpeed", js.undefined)
     
     inline def setQuality(value: integer): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

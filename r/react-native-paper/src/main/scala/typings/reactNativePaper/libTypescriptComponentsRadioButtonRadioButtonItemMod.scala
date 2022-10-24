@@ -6,8 +6,8 @@ import typings.react.mod.ComponentType
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.anon.CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition
 import typings.reactNativePaper.anon.PickPropslabelstylecoloroAccessibilityLabel
+import typings.reactNativePaper.anon.`26`
 import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
 import typings.reactNativePaper.reactNativePaperStrings.android
 import typings.reactNativePaper.reactNativePaperStrings.checked
@@ -23,17 +23,11 @@ object libTypescriptComponentsRadioButtonRadioButtonItemMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/RadioButton/RadioButtonItem", JSImport.Default)
   @js.native
-  val default: ComponentType[PickPropslabelstylecoloroAccessibilityLabel] & (NonReactStatics[
-    ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickPropslabelstylecoloroAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `26`, js.Object]) = js.native
   
   @JSImport("react-native-paper/lib/typescript/components/RadioButton/RadioButtonItem", "RadioButtonItem")
   @js.native
-  val RadioButtonItem: ComponentType[PickPropslabelstylecoloroAccessibilityLabel] & (NonReactStatics[
-    ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
-    js.Object
-  ]) = js.native
+  val RadioButtonItem: ComponentType[PickPropslabelstylecoloroAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `26`, js.Object]) = js.native
   
   trait Props extends StObject {
     
@@ -173,14 +167,8 @@ object libTypescriptComponentsRadioButtonRadioButtonItemMod extends Shortcut {
     }
   }
   
-  type _To = ComponentType[PickPropslabelstylecoloroAccessibilityLabel] & (NonReactStatics[
-    ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
-    js.Object
-  ])
+  type _To = ComponentType[PickPropslabelstylecoloroAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `26`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsRadioButtonRadioButtonItemMod.foo` */
-  override def _to: ComponentType[PickPropslabelstylecoloroAccessibilityLabel] & (NonReactStatics[
-    ComponentType[Props] & CallHasValueLabelStyleLabelStyleOnPressDisabledColorUncheckedColorStatusHasColorsAccessibilityLabelTestIDModePosition, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickPropslabelstylecoloroAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `26`, js.Object]) = default
 }

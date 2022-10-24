@@ -10,5 +10,5 @@ object distTypesDefaultErrorHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def throwDefaultError(hasOutputParsedBodyExceptionCtorErrorCode: Any): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDefaultError")(hasOutputParsedBodyExceptionCtorErrorCode.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def throwDefaultError(param0: Any): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDefaultError")(param0.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 }

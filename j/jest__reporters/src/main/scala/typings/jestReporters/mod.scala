@@ -160,7 +160,7 @@ object mod {
   open class GitHubActionsReporter () extends BaseReporter {
     
     @JSName("onTestFileResult")
-    def onTestFileResult_MGitHubActionsReporter(hasContext: Test, hasTestResults: TestResult): Unit = js.native
+    def onTestFileResult_MGitHubActionsReporter(param0: Test, param1: TestResult): Unit = js.native
     
     /* private */ var `private`: Any = js.native
   }

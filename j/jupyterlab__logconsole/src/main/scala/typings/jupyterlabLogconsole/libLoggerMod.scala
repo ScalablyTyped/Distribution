@@ -233,7 +233,7 @@ object libLoggerMod {
   - typings.jupyterlabLogconsole.libTokensMod.ILoggerOutputAreaModel because var conflicts: maxNumberOutputs, trusted. Inlined maxLength */ @JSImport("@jupyterlab/logconsole/lib/logger", "LoggerOutputAreaModel")
   @js.native
   open class LoggerOutputAreaModel protected () extends OutputAreaModel {
-    def this(hasMaxLengthOptions: typings.jupyterlabLogconsole.libLoggerMod.LoggerOutputAreaModel.IOptions) = this()
+    def this(param0: typings.jupyterlabLogconsole.libLoggerMod.LoggerOutputAreaModel.IOptions) = this()
     
     /**
       * Manually apply length limit.

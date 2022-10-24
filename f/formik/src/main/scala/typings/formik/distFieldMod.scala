@@ -20,7 +20,7 @@ object distFieldMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Field(hasValidateNameRenderChildrenIsComponentProps: FieldAttributes[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(hasValidateNameRenderChildrenIsComponentProps.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def Field(param0: FieldAttributes[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def useField[Val](propsOrFieldName: String): js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useField")(propsOrFieldName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]]]
   inline def useField[Val](propsOrFieldName: FieldHookConfig[Val]): js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useField")(propsOrFieldName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]]]

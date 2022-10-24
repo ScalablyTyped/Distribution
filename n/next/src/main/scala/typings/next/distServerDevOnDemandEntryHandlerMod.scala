@@ -30,7 +30,7 @@ object distServerDevOnDemandEntryHandlerMod {
   
   inline def getInvalidator(): Invalidator = ^.asInstanceOf[js.Dynamic].applyDynamic("getInvalidator")().asInstanceOf[Invalidator]
   
-  inline def onDemandEntryHandler(hasMaxInactiveAgeMultiCompilerNextConfigPagesBufferLengthPagesDirRootDirAppDir: MultiCompiler): EnsurePage = ^.asInstanceOf[js.Dynamic].applyDynamic("onDemandEntryHandler")(hasMaxInactiveAgeMultiCompilerNextConfigPagesBufferLengthPagesDirRootDirAppDir.asInstanceOf[js.Any]).asInstanceOf[EnsurePage]
+  inline def onDemandEntryHandler(param0: MultiCompiler): EnsurePage = ^.asInstanceOf[js.Dynamic].applyDynamic("onDemandEntryHandler")(param0.asInstanceOf[js.Any]).asInstanceOf[EnsurePage]
   
   trait ChildEntry
     extends StObject

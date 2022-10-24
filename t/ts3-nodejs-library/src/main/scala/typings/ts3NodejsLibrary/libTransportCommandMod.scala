@@ -2439,8 +2439,8 @@ object libTransportCommandMod {
       * @param data snapshot string
       * @param cmd command object
       */
-    inline def buildSnapshotDeploy(data: String, cmd: Command, hasVersion: Version): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSnapshotDeploy")(data.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], hasVersion.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def buildSnapshotDeploy(data: String, cmd: Command, hasVersion: Version, snapshotVersion: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSnapshotDeploy")(data.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], hasVersion.asInstanceOf[js.Any], snapshotVersion.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def buildSnapshotDeploy(data: String, cmd: Command, param2: Version): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSnapshotDeploy")(data.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def buildSnapshotDeploy(data: String, cmd: Command, param2: Version, snapshotVersion: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSnapshotDeploy")(data.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], snapshotVersion.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** escapes a string */
     inline def escape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -2477,7 +2477,7 @@ object libTransportCommandMod {
       * parses a query response
       * @param data the query response received
       */
-    inline def parse(hasRaw: PickParserArgumentraw): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(hasRaw.asInstanceOf[js.Any]).asInstanceOf[Response]
+    inline def parse(param0: PickParserArgumentraw): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(param0.asInstanceOf[js.Any]).asInstanceOf[Response]
     
     /**
       * parses a number
@@ -2503,7 +2503,7 @@ object libTransportCommandMod {
       * parses a snapshot create request
       * @param param0 the custom snapshot response parser
       */
-    inline def parseSnapshotCreate(hasRaw: PickParserArgumentraw): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSnapshotCreate")(hasRaw.asInstanceOf[js.Any]).asInstanceOf[Response]
+    inline def parseSnapshotCreate(param0: PickParserArgumentraw): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSnapshotCreate")(param0.asInstanceOf[js.Any]).asInstanceOf[Response]
     
     /**
       * parses a string value

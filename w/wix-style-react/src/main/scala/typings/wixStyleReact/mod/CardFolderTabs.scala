@@ -1,15 +1,15 @@
 package typings.wixStyleReact.mod
 
 import typings.react.mod.ReactElement
-import typings.wixStyleReact.cardFolderTabsMod.default
-import typings.wixStyleReact.tabMod.CardFolderTabProps
+import typings.wixStyleReact.distTypesCardFolderTabsTabMod.CardFolderTabProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "CardFolderTabs")
 @js.native
-class CardFolderTabs () extends default
+open class CardFolderTabs ()
+  extends typings.wixStyleReact.distTypesCardFolderTabsMod.default
 /* static members */
 object CardFolderTabs {
   

@@ -385,6 +385,13 @@ object Tab {
       }
     }
     
+    extension [Self <: TemplatesSettings](x: Self) {
+      
+      inline def setDetermineTitle(
+        value: (js.Function1[/* tabArray */ js.Array[Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[Any], String]])
+      ): Self = StObject.set(x, "determineTitle", value.asInstanceOf[js.Any])
+    }
+    
     /* Inlined std.Pick<semantic-ui-tab.SemanticUI.Tab.TemplatesSettings._Impl, 'determineTitle'> & std.Partial<std.Pick<semantic-ui-tab.SemanticUI.Tab.TemplatesSettings._Impl, keyof semantic-ui-tab.SemanticUI.Tab.TemplatesSettings._Impl>> */
     trait Param extends StObject {
       
@@ -407,13 +414,6 @@ object Tab {
           value: (js.Function1[/* tabArray */ js.Array[Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[Any], String]])
         ): Self = StObject.set(x, "determineTitle", value.asInstanceOf[js.Any])
       }
-    }
-    
-    extension [Self <: TemplatesSettings](x: Self) {
-      
-      inline def setDetermineTitle(
-        value: (js.Function1[/* tabArray */ js.Array[Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[Any], String]])
-      ): Self = StObject.set(x, "determineTitle", value.asInstanceOf[js.Any])
     }
   }
 }

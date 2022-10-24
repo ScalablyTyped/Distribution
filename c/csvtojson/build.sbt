@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "csvtojson"
-version := "2.0.10-5831c6"
-scalaVersion := "3.1.2"
+version := "2.0.10-89985a"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -42,7 +42,7 @@ inline def dispatchMiddleware[T](dispatch: js.Function2[/* action */ AsyncAction
   */
 inline def globalScope: GlobalScope_ = ^.asInstanceOf[js.Dynamic].selectDynamic("globalScope").asInstanceOf[GlobalScope_]
 
-inline def init[T](hasInitialValuePromisePromiseFn: InitialValue[T]): (AsyncInitial[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncPending[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncFulfilled[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncRejected[T, Pick[AbstractState[T], initialValue | counter | promise]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(hasInitialValuePromisePromiseFn.asInstanceOf[js.Any]).asInstanceOf[(AsyncInitial[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncPending[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncFulfilled[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncRejected[T, Pick[AbstractState[T], initialValue | counter | promise]])]
+inline def init[T](param0: InitialValue[T]): (AsyncInitial[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncPending[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncFulfilled[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncRejected[T, Pick[AbstractState[T], initialValue | counter | promise]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(param0.asInstanceOf[js.Any]).asInstanceOf[(AsyncInitial[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncPending[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncFulfilled[T, Pick[AbstractState[T], initialValue | counter | promise]]) | (AsyncRejected[T, Pick[AbstractState[T], initialValue | counter | promise]])]
 
 inline def neverSettle: js.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].selectDynamic("neverSettle").asInstanceOf[js.Promise[scala.Nothing]]
 
@@ -78,7 +78,7 @@ inline def useAsync[T](promiseFn: PromiseFn[T], options: AsyncOptions[T]): Async
   */
 /* was `typeof useAsyncFetch` */
 inline def useFetch[T](resource: RequestInfo, init: RequestInit): AsyncState[T, FetchRun[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useFetch")(resource.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[AsyncState[T, FetchRun[T]]]
-inline def useFetch[T](resource: RequestInfo, init: RequestInit, hasDeferJsonOptions: FetchOptions[T]): AsyncState[T, FetchRun[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useFetch")(resource.asInstanceOf[js.Any], init.asInstanceOf[js.Any], hasDeferJsonOptions.asInstanceOf[js.Any])).asInstanceOf[AsyncState[T, FetchRun[T]]]
+inline def useFetch[T](resource: RequestInfo, init: RequestInit, param2: FetchOptions[T]): AsyncState[T, FetchRun[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useFetch")(resource.asInstanceOf[js.Any], init.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[AsyncState[T, FetchRun[T]]]
 
 type AsyncChildren[T] = (js.Function1[/* state */ AsyncState[T, AbstractState[T]], ReactNode]) | ReactNode
 

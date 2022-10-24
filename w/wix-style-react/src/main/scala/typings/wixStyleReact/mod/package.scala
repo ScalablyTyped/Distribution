@@ -1,62 +1,143 @@
 package typings.wixStyleReact.mod
 
+import typings.react.mod.FC
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.FunctionComponent
+import typings.react.mod.Provider
+import typings.react.mod.RefAttributes
+import typings.std.Partial
+import typings.wixStyleReact.anon.ApproveButtonTooltipProps
+import typings.wixStyleReact.anon.DataHookEllipsis
+import typings.wixStyleReact.anon.DataHook_
+import typings.wixStyleReact.anon.DisabledIdOverrideOptionStyleValue
+import typings.wixStyleReact.anon.IdLabel
+import typings.wixStyleReact.anon.OverrideOptionStyleValue
+import typings.wixStyleReact.anon.Prefix
+import typings.wixStyleReact.anon.PrefixIcon
+import typings.wixStyleReact.anon.`0`
+import typings.wixStyleReact.anon.`10`
+import typings.wixStyleReact.distTypesAccordionAccordionItemMod.AccordionItemCommonProps
+import typings.wixStyleReact.distTypesAccordionAccordionItemMod.AccordionItemProps
+import typings.wixStyleReact.distTypesAccordionAccordionSectionItemMod.AccordionSectionItemCommonProps
+import typings.wixStyleReact.distTypesAccordionAccordionSectionItemMod.AccordionSectionItemProps
+import typings.wixStyleReact.distTypesAddItemAddItemDottypesMod.AddItemActions
+import typings.wixStyleReact.distTypesAddItemAddItemDottypesMod.AddItemProps
+import typings.wixStyleReact.distTypesAnnouncementModalLayoutMod.AnnouncementModalLayoutProps
+import typings.wixStyleReact.distTypesAudioPlayerMod.AudioPlayerImperativeActions
+import typings.wixStyleReact.distTypesAudioPlayerMod.AudioPlayerProps
+import typings.wixStyleReact.distTypesAvatarMod.AvatarProps
+import typings.wixStyleReact.distTypesBadgeSelectItemMod.BadgeSelectItemBuilderFn
+import typings.wixStyleReact.distTypesBoxMod.BoxProps
+import typings.wixStyleReact.distTypesBoxMod.CSSProperties
+import typings.wixStyleReact.distTypesDndStylesMod.dndStylesType
+import typings.wixStyleReact.distTypesDropdownLayoutMod.DropdownLayoutValueOption
+import typings.wixStyleReact.distTypesEmptyStateMod.EmptyStateProps
+import typings.wixStyleReact.distTypesHeadingMod.HeadingProps
+import typings.wixStyleReact.distTypesImageMod.ImageProps
+import typings.wixStyleReact.distTypesInfoIconMod.InfoIconProps
+import typings.wixStyleReact.distTypesLayoutMod.CellProps
+import typings.wixStyleReact.distTypesLayoutMod.LayoutProps
+import typings.wixStyleReact.distTypesListItemActionMod.ListItemActionProps
+import typings.wixStyleReact.distTypesLiveRegionLiveRegionDottypesMod.LiveRegionProps
+import typings.wixStyleReact.distTypesLiveRegionLiveRegionDottypesMod.LiveRegionRefType
+import typings.wixStyleReact.distTypesMessageBoxFunctionalLayoutMod.MessageBoxFunctionalLayoutProps
+import typings.wixStyleReact.distTypesMessageModalLayoutMod.MessageModalLayoutProps
+import typings.wixStyleReact.distTypesRadioMod.RadioProps
+import typings.wixStyleReact.distTypesSegmentedToggleMod.SegmentedToggleButtonProps
+import typings.wixStyleReact.distTypesSelectorListContentMod.SelectorListContentProps
+import typings.wixStyleReact.distTypesSidebarItemNextMod.SidebarItemNextProps
+import typings.wixStyleReact.distTypesSidebarSubMenuNextMod.SidebarSubMenuNextProps
+import typings.wixStyleReact.distTypesSocialButtonMod.SocialButtonProps
+import typings.wixStyleReact.distTypesTableActionCellMod.TableActionCellProps
+import typings.wixStyleReact.distTypesTableListHeaderMod.TableListHeaderProps
+import typings.wixStyleReact.distTypesTableListItemMod.TableListItemImperativeActions
+import typings.wixStyleReact.distTypesTableListItemMod.TableListItemProps
+import typings.wixStyleReact.distTypesTextMod.TextProps
+import typings.wixStyleReact.distTypesTimeInputMod.TimeInputImperativeActions
+import typings.wixStyleReact.distTypesTimeInputMod.TimeInputProps
+import typings.wixStyleReact.distTypesTooltipTooltipDottypesMod.TooltipActions
+import typings.wixStyleReact.distTypesTooltipTooltipDottypesMod.TooltipProps
+import typings.wixStyleReact.distTypesWixStyleReactDefaultsOverrideProviderWixStyleReactDefaultsOverrideProviderMod.WixStyleReactDefaultsOverride
+import typings.wixStyleReact.distTypesWixStyleReactEnvironmentProviderMod.WixStyleReactEnvironmentProviderProps
+import typings.wixStyleReact.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def AnnouncementModalLayout: typings.react.mod.FC[typings.wixStyleReact.announcementModalLayoutMod.AnnouncementModalLayoutProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AnnouncementModalLayout").asInstanceOf[typings.react.mod.FC[typings.wixStyleReact.announcementModalLayoutMod.AnnouncementModalLayoutProps]]
+inline def AddItem: ForwardRefExoticComponent[AddItemProps & RefAttributes[AddItemActions]] = ^.asInstanceOf[js.Dynamic].selectDynamic("AddItem").asInstanceOf[ForwardRefExoticComponent[AddItemProps & RefAttributes[AddItemActions]]]
 
-inline def AudioPlayer: typings.react.mod.FC[typings.wixStyleReact.audioPlayerMod.AudioPlayerProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AudioPlayer").asInstanceOf[typings.react.mod.FC[typings.wixStyleReact.audioPlayerMod.AudioPlayerProps]]
+inline def AnnouncementModalLayout: FC[AnnouncementModalLayoutProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("AnnouncementModalLayout").asInstanceOf[FC[AnnouncementModalLayoutProps]]
 
-inline def Avatar: typings.react.mod.SFC[typings.wixStyleReact.avatarMod.AvatarProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Avatar").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.avatarMod.AvatarProps]]
+inline def AudioPlayer: FC[AudioPlayerProps & RefAttributes[AudioPlayerImperativeActions]] = ^.asInstanceOf[js.Dynamic].selectDynamic("AudioPlayer").asInstanceOf[FC[AudioPlayerProps & RefAttributes[AudioPlayerImperativeActions]]]
 
-inline def Box: typings.react.mod.SFC[typings.wixStyleReact.boxMod.BoxProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Box").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.boxMod.BoxProps]]
+inline def Avatar: FC[AvatarProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Avatar").asInstanceOf[FC[AvatarProps]]
 
-inline def Cell: typings.react.mod.SFC[typings.wixStyleReact.layoutMod.CellProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Cell").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.layoutMod.CellProps]]
+inline def Box: FC[BoxProps & CSSProperties] = ^.asInstanceOf[js.Dynamic].selectDynamic("Box").asInstanceOf[FC[BoxProps & CSSProperties]]
 
-inline def ContactItemBuilder_ : typings.wixStyleReact.contactItemBuilderMod.ContactItemBuilderFn = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContactItemBuilder").asInstanceOf[typings.wixStyleReact.contactItemBuilderMod.ContactItemBuilderFn]
+inline def Cell: FC[CellProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Cell").asInstanceOf[FC[CellProps]]
 
-inline def Container: typings.react.mod.SFC[typings.wixStyleReact.gridMod.ContainerProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Container").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.gridMod.ContainerProps]]
+inline def EmptyState: FC[EmptyStateProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("EmptyState").asInstanceOf[FC[EmptyStateProps]]
 
-inline def CustomModalLayout: typings.react.mod.FC[typings.wixStyleReact.customModalLayoutMod.CustomModalLayoutProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CustomModalLayout").asInstanceOf[typings.react.mod.FC[typings.wixStyleReact.customModalLayoutMod.CustomModalLayoutProps]]
+inline def Heading: FC[HeadingProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Heading").asInstanceOf[FC[HeadingProps]]
 
-inline def EmptyState: typings.react.mod.SFC[typings.wixStyleReact.emptyStateMod.EmptyStateProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EmptyState").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.emptyStateMod.EmptyStateProps]]
+inline def Image: FC[ImageProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Image").asInstanceOf[FC[ImageProps]]
 
-inline def EndorseContentLayout: typings.react.mod.SFC[typings.wixStyleReact.endorseContentLayoutMod.EndorseContentLayoutProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EndorseContentLayout").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.endorseContentLayoutMod.EndorseContentLayoutProps]]
+inline def InfoIcon: FC[InfoIconProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("InfoIcon").asInstanceOf[FC[InfoIconProps]]
 
-inline def Heading: typings.react.mod.SFC[typings.wixStyleReact.headingMod.HeadingProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Heading").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.headingMod.HeadingProps]]
+inline def Layout: FC[LayoutProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Layout").asInstanceOf[FC[LayoutProps]]
 
-inline def Image: typings.react.mod.FC[typings.wixStyleReact.imageMod.ImageProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Image").asInstanceOf[typings.react.mod.FC[typings.wixStyleReact.imageMod.ImageProps]]
+/** LiveRegion */
+inline def LiveRegion: ForwardRefExoticComponent[LiveRegionProps & RefAttributes[LiveRegionRefType]] = ^.asInstanceOf[js.Dynamic].selectDynamic("LiveRegion").asInstanceOf[ForwardRefExoticComponent[LiveRegionProps & RefAttributes[LiveRegionRefType]]]
 
-inline def InfoIcon: typings.react.mod.FC[typings.wixStyleReact.infoIconMod.InfoIconProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InfoIcon").asInstanceOf[typings.react.mod.FC[typings.wixStyleReact.infoIconMod.InfoIconProps]]
+inline def MessageBoxFunctionalLayout: FC[MessageBoxFunctionalLayoutProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("MessageBoxFunctionalLayout").asInstanceOf[FC[MessageBoxFunctionalLayoutProps]]
 
-inline def Layout: typings.react.mod.SFC[typings.wixStyleReact.layoutMod.LayoutProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Layout").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.layoutMod.LayoutProps]]
+inline def MessageModalLayout: FC[MessageModalLayoutProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("MessageModalLayout").asInstanceOf[FC[MessageModalLayoutProps]]
 
-inline def MessageModalLayout: typings.react.mod.FC[typings.wixStyleReact.messageModalLayoutMod.MessageModalLayoutProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MessageModalLayout").asInstanceOf[typings.react.mod.FC[typings.wixStyleReact.messageModalLayoutMod.MessageModalLayoutProps]]
+inline def Radio: FunctionComponent[RadioProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Radio").asInstanceOf[FunctionComponent[RadioProps]]
 
-inline def RawContainer: typings.react.mod.SFC[typings.wixStyleReact.gridMod.ContainerProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RawContainer").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.gridMod.ContainerProps]]
+inline def SegmentedToggleButton: FC[SegmentedToggleButtonProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SegmentedToggleButton").asInstanceOf[FC[SegmentedToggleButtonProps]]
 
-inline def SegmentedToggleButton: typings.react.mod.SFC[typings.wixStyleReact.segmentedToggleMod.SegmentedToggleButtonProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SegmentedToggleButton").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.segmentedToggleMod.SegmentedToggleButtonProps]]
+inline def SelectorListContent: FC[SelectorListContentProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SelectorListContent").asInstanceOf[FC[SelectorListContentProps]]
 
-inline def SocialButton: typings.react.mod.SFC[typings.wixStyleReact.socialButtonMod.SocialButtonProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SocialButton").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.socialButtonMod.SocialButtonProps]]
+inline def SidebarItemNext: FC[SidebarItemNextProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SidebarItemNext").asInstanceOf[FC[SidebarItemNextProps]]
 
-inline def TableActionCell: typings.react.mod.SFC[typings.wixStyleReact.tableActionCellMod.TableActionCellProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableActionCell").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.tableActionCellMod.TableActionCellProps]]
+inline def SidebarSubMenuNext: FC[SidebarSubMenuNextProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SidebarSubMenuNext").asInstanceOf[FC[SidebarSubMenuNextProps]]
 
-inline def Text: typings.react.mod.SFC[typings.wixStyleReact.textMod.TextProps] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Text").asInstanceOf[typings.react.mod.SFC[typings.wixStyleReact.textMod.TextProps]]
+inline def SocialButton: FC[SocialButtonProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SocialButton").asInstanceOf[FC[SocialButtonProps]]
 
-inline def Typography: js.Any = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Typography").asInstanceOf[js.Any]
+inline def TableActionCell: FC[TableActionCellProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TableActionCell").asInstanceOf[FC[TableActionCellProps]]
 
-inline def badgeSelectItemBuilder: typings.wixStyleReact.badgeSelectItemMod.BadgeSelectItemBuilderFn = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("badgeSelectItemBuilder").asInstanceOf[typings.wixStyleReact.badgeSelectItemMod.BadgeSelectItemBuilderFn]
+inline def TableListHeader: ForwardRefExoticComponent[TableListHeaderProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TableListHeader").asInstanceOf[ForwardRefExoticComponent[TableListHeaderProps]]
 
-inline def contactItemBuilder: typings.wixStyleReact.contactItemBuilderMod.ContactItemBuilderFn = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("contactItemBuilder").asInstanceOf[typings.wixStyleReact.contactItemBuilderMod.ContactItemBuilderFn]
+inline def TableListItem: ForwardRefExoticComponent[TableListItemProps & RefAttributes[TableListItemImperativeActions]] = ^.asInstanceOf[js.Dynamic].selectDynamic("TableListItem").asInstanceOf[ForwardRefExoticComponent[TableListItemProps & RefAttributes[TableListItemImperativeActions]]]
 
-inline def dndStyles: typings.wixStyleReact.dndStylesMod.dndStylesType = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("dndStyles").asInstanceOf[typings.wixStyleReact.dndStylesMod.dndStylesType]
+inline def Text: FC[TextProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Text").asInstanceOf[FC[TextProps]]
 
-inline def listItemActionBuilder[T /* <: typings.std.Partial[typings.wixStyleReact.listItemActionMod.ListItemActionProps] */](data: typings.wixStyleReact.anon.Ellipsis): typings.wixStyleReact.anon.OverrideOptionStyle[T] = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("listItemActionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[typings.wixStyleReact.anon.OverrideOptionStyle[T]]
+inline def TimeInput: ForwardRefExoticComponent[TimeInputProps & RefAttributes[TimeInputImperativeActions]] = ^.asInstanceOf[js.Dynamic].selectDynamic("TimeInput").asInstanceOf[ForwardRefExoticComponent[TimeInputProps & RefAttributes[TimeInputImperativeActions]]]
 
-inline def listItemEditableBuilder(data: typings.wixStyleReact.anon.ApproveButtonTooltipContent): typings.wixStyleReact.anon.IdOverrideOptionStyle = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("listItemEditableBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[typings.wixStyleReact.anon.IdOverrideOptionStyle]
+inline def Tooltip: ForwardRefExoticComponent[TooltipProps & RefAttributes[TooltipActions]] = ^.asInstanceOf[js.Dynamic].selectDynamic("Tooltip").asInstanceOf[ForwardRefExoticComponent[TooltipProps & RefAttributes[TooltipActions]]]
 
-inline def listItemSectionBuilder(data: typings.wixStyleReact.anon.Suffix): typings.wixStyleReact.anon.OverrideOptionStyleValue = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("listItemSectionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[typings.wixStyleReact.anon.OverrideOptionStyleValue]
+inline def WixStyleReactDefaultsOverrideProvider: Provider[WixStyleReactDefaultsOverride] = ^.asInstanceOf[js.Dynamic].selectDynamic("WixStyleReactDefaultsOverrideProvider").asInstanceOf[Provider[WixStyleReactDefaultsOverride]]
 
-inline def listItemSelectBuilder(data: typings.wixStyleReact.anon.Checkbox): typings.wixStyleReact.anon.DisabledIdOverrideOptionStyle = typings.wixStyleReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("listItemSelectBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[typings.wixStyleReact.anon.DisabledIdOverrideOptionStyle]
+inline def WixStyleReactEnvironmentProvider: FC[WixStyleReactEnvironmentProviderProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("WixStyleReactEnvironmentProvider").asInstanceOf[FC[WixStyleReactEnvironmentProviderProps]]
+
+inline def accordionItemBuilder(props: AccordionItemCommonProps): js.Function1[/* options */ js.UndefOr[AccordionItemProps], `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("accordionItemBuilder")(props.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[AccordionItemProps], `0`]]
+
+inline def accordionSectionItemBuilder(props: AccordionSectionItemCommonProps): js.Function1[/* options */ js.UndefOr[AccordionSectionItemProps], `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("accordionSectionItemBuilder")(props.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[AccordionSectionItemProps], `0`]]
+
+inline def addressInputItemBuilder(data: DataHook_): DropdownLayoutValueOption = ^.asInstanceOf[js.Dynamic].applyDynamic("addressInputItemBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[DropdownLayoutValueOption]
+
+inline def badgeSelectItemBuilder: BadgeSelectItemBuilderFn = ^.asInstanceOf[js.Dynamic].selectDynamic("badgeSelectItemBuilder").asInstanceOf[BadgeSelectItemBuilderFn]
+
+inline def dndStyles: dndStylesType = ^.asInstanceOf[js.Dynamic].selectDynamic("dndStyles").asInstanceOf[dndStylesType]
+
+inline def listItemActionBuilder[T /* <: Partial[ListItemActionProps] */](data: PrefixIcon): DisabledIdOverrideOptionStyleValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemActionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[DisabledIdOverrideOptionStyleValue[T]]
+
+inline def listItemEditableBuilder(data: ApproveButtonTooltipProps): `10` = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemEditableBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[`10`]
+
+inline def listItemSectionBuilder(data: DataHookEllipsis): OverrideOptionStyleValue = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemSectionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[OverrideOptionStyleValue]
+
+inline def listItemSelectBuilder(data: Prefix): IdLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemSelectBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[IdLabel]
+
+inline def placements: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("placements").asInstanceOf[js.Array[String]]

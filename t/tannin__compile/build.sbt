@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "tannin__compile"
-version := "1.1.0-22bde1"
-scalaVersion := "3.1.2"
+version := "1.1.0-14b4cc"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -14,7 +14,7 @@ object libTypescriptCoreSettingsMod {
   
   trait Settings extends StObject {
     
-    def icon(hasNameColorSizeDirection: IconProps): ReactNode
+    def icon(param0: IconProps): ReactNode
   }
   object Settings {
     

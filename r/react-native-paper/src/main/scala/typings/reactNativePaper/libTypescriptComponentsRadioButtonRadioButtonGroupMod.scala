@@ -51,7 +51,7 @@ object libTypescriptComponentsRadioButtonRadioButtonGroupMod {
     */
   object default {
     
-    inline def apply(hasValueOnValueChangeChildren: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasValueOnValueChangeChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/RadioButton/RadioButtonGroup", JSImport.Default)
     @js.native
@@ -109,7 +109,7 @@ object libTypescriptComponentsRadioButtonRadioButtonGroupMod {
     */
   object RadioButtonGroup {
     
-    inline def apply(hasValueOnValueChangeChildren: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasValueOnValueChangeChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/RadioButton/RadioButtonGroup", "RadioButtonGroup")
     @js.native

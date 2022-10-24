@@ -14,9 +14,7 @@ object libFactoriesPoseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[P](
-    hasTransformPoseAddListenerToValueExtendAPIReadValueFromSourcePosePrioritySetValueNative: PopmotionPoserFactoryConfig[P, TransitionDefinition]
-  ): js.Function1[
+  inline def default[P](param0: PopmotionPoserFactoryConfig[P, TransitionDefinition]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_lib.PoserConfig<Value> */ /* config */ Any, 
     Poser[
       Value, 
@@ -24,7 +22,7 @@ object libFactoriesPoseMod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTransformPoseAddListenerToValueExtendAPIReadValueFromSourcePosePrioritySetValueNative.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_lib.PoserConfig<Value> */ /* config */ Any, 
     Poser[
       Value, 

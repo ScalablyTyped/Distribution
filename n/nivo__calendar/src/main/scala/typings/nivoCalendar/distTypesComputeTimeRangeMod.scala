@@ -20,17 +20,15 @@ object distTypesComputeTimeRangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeCellPositions(
-    hasDirectionColorScaleEmptyColorFromToDataCellWidthCellHeightDaySpacingOffset: ComputeCellPositions_
-  ): js.Array[Coordinates | FirstWeek] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellPositions")(hasDirectionColorScaleEmptyColorFromToDataCellWidthCellHeightDaySpacingOffset.asInstanceOf[js.Any]).asInstanceOf[js.Array[Coordinates | FirstWeek]]
+  inline def computeCellPositions(param0: ComputeCellPositions_): js.Array[Coordinates | FirstWeek] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellPositions")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Coordinates | FirstWeek]]
   
-  inline def computeCellSize(hasDirectionDaySpacingOffsetSquareTotalDaysWidthHeight: ComputeCellSize_): CellHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellSize")(hasDirectionDaySpacingOffsetSquareTotalDaysWidthHeight.asInstanceOf[js.Any]).asInstanceOf[CellHeight]
+  inline def computeCellSize(param0: ComputeCellSize_): CellHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellSize")(param0.asInstanceOf[js.Any]).asInstanceOf[CellHeight]
   
-  inline def computeMonthLegends(hasDirectionDaySpacingDaysCellHeightCellWidth: ComputeMonths): Weeks = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMonthLegends")(hasDirectionDaySpacingDaysCellHeightCellWidth.asInstanceOf[js.Any]).asInstanceOf[Weeks]
+  inline def computeMonthLegends(param0: ComputeMonths): Weeks = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMonthLegends")(param0.asInstanceOf[js.Any]).asInstanceOf[Weeks]
   
-  inline def computeTotalDays(hasFromToData: ComputeTotalDays_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTotalDays")(hasFromToData.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def computeTotalDays(param0: ComputeTotalDays_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTotalDays")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def computeWeekdays(hasCellHeightCellWidthDirectionDaySpacingTicksArrayOfWeekdays: ComputeWeekdays_): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeWeekdays")(hasCellHeightCellWidthDirectionDaySpacingTicksArrayOfWeekdays.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+  inline def computeWeekdays(param0: ComputeWeekdays_): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeWeekdays")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
   
   trait ComputeBaseDimensionProps extends StObject {
     

@@ -15,12 +15,9 @@ object distTypesCanvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def renderAxesToCanvas[X /* <: ScaleValue */, Y /* <: ScaleValue */](ctx: CanvasRenderingContext2D, hasXScaleYScaleWidthHeightTopRightBottomLeftTheme: Bottom[X, Y]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAxesToCanvas")(ctx.asInstanceOf[js.Any], hasXScaleYScaleWidthHeightTopRightBottomLeftTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderAxesToCanvas[X /* <: ScaleValue */, Y /* <: ScaleValue */](ctx: CanvasRenderingContext2D, param1: Bottom[X, Y]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAxesToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderAxisToCanvas[Value /* <: ScaleValue */](
-    ctx: CanvasRenderingContext2D,
-    hasAxisScaleXYLengthTicksPositionTickValuesTickSizeTickPaddingTickRotation_formatLegendLegendPositionLegendOffsetTheme: Axis[Value]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAxisToCanvas")(ctx.asInstanceOf[js.Any], hasAxisScaleXYLengthTicksPositionTickValuesTickSizeTickPaddingTickRotation_formatLegendLegendPositionLegendOffsetTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderAxisToCanvas[Value /* <: ScaleValue */](ctx: CanvasRenderingContext2D, param1: Axis[Value]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAxisToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderGridLinesToCanvas[Value /* <: ScaleValue */](ctx: CanvasRenderingContext2D, hasWidthHeightScaleAxisValues: Height[Value]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGridLinesToCanvas")(ctx.asInstanceOf[js.Any], hasWidthHeightScaleAxisValues.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderGridLinesToCanvas[Value /* <: ScaleValue */](ctx: CanvasRenderingContext2D, param1: Height[Value]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGridLinesToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -23,7 +23,7 @@ object distTypesSignatureV4Mod {
        with RequestSigner
        with StringSigner
        with EventSigner {
-    def this(hasApplyChecksumCredentialsRegionServiceSha256UriEscapePath: SignatureV4Init & SignatureV4CryptoInit) = this()
+    def this(param0: SignatureV4Init & SignatureV4CryptoInit) = this()
     
     /* private */ val applyChecksum: Any = js.native
     

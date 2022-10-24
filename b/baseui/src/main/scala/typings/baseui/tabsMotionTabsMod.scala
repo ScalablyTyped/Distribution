@@ -12,7 +12,5 @@ object tabsMotionTabsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Tabs(
-    hasActiveKeyDisabledChildrenFillActivateOnFocusOnChangeOrientationOverridesRenderAllCustomUidEndEnhancer: TabsProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tabs")(hasActiveKeyDisabledChildrenFillActivateOnFocusOnChangeOrientationOverridesRenderAllCustomUidEndEnhancer.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Tabs(param0: TabsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tabs")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

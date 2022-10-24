@@ -260,7 +260,7 @@ object mod {
       ) = this()
     }
     
-    inline def from[Name /* <: String */, Code /* <: Double */](hasNameCodeEncode: Encode[Name, Code]): typings.multiformats.distTypesSrcHashesHasherMod.Hasher[Name, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(hasNameCodeEncode.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.distTypesSrcHashesHasherMod.Hasher[Name, Code]]
+    inline def from[Name /* <: String */, Code /* <: Double */](param0: Encode[Name, Code]): typings.multiformats.distTypesSrcHashesHasherMod.Hasher[Name, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.distTypesSrcHashesHasherMod.Hasher[Name, Code]]
   }
   
   object varint {

@@ -110,7 +110,7 @@ object distTypesPropsMod {
     
     inline def fill_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
     
-    inline def gridLabel(hasIdAnchorAnimatedProps: GridLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("gridLabel")(hasIdAnchorAnimatedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def gridLabel(param0: GridLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("gridLabel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/radar/dist/types/props", "svgDefaultProps.gridLabelOffset")
     @js.native
@@ -162,6 +162,6 @@ object distTypesPropsMod {
     def rotation: Double = js.native
     inline def rotation_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rotation")(x.asInstanceOf[js.Any])
     
-    inline def sliceTooltip(hasIndexData: RadarSliceTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("sliceTooltip")(hasIndexData.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def sliceTooltip(param0: RadarSliceTooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("sliceTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
 }

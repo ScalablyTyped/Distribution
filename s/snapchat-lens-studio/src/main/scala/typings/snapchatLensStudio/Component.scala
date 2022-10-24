@@ -674,17 +674,6 @@ object Component {
     }
   }
   
-  extension [Self <: Component](x: Self) {
-    
-    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-    
-    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-    
-    inline def setGetSceneObject(value: () => SceneObject): Self = StObject.set(x, "getSceneObject", js.Any.fromFunction0(value))
-    
-    inline def setGetTransform(value: () => Transform): Self = StObject.set(x, "getTransform", js.Any.fromFunction0(value))
-  }
-  
   /**
     * Writes video feed depth information to the depth buffer, which automatically sets up depth occlusion for 3D visuals. Only works in some cases, such as in Lenses for Spectacles 3. See the
     * Lenses for Spectacles guide for more information.
@@ -2002,6 +1991,17 @@ object Component {
       
       inline def setMainPass(value: Pass): Self = StObject.set(x, "mainPass", value.asInstanceOf[js.Any])
     }
+  }
+  
+  extension [Self <: Component](x: Self) {
+    
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setGetSceneObject(value: () => SceneObject): Self = StObject.set(x, "getSceneObject", js.Any.fromFunction0(value))
+    
+    inline def setGetTransform(value: () => Transform): Self = StObject.set(x, "getTransform", js.Any.fromFunction0(value))
   }
   
   /** Used to track objects in the camera. Moves the local ScreenTransform to match the detected image. See the Object Tracking guide for more information. */

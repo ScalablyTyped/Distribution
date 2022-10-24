@@ -13,20 +13,10 @@ object distMatlabPadarrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def padarray(A: Matrix, hasPadHeightPadWidth: js.Tuple2[Double, Double]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], hasPadHeightPadWidth.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  inline def padarray(
-    A: Matrix,
-    hasPadHeightPadWidth: js.Tuple2[Double, Double],
-    _padval: Unit,
-    _direction: PaddingDirection
-  ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], hasPadHeightPadWidth.asInstanceOf[js.Any], _padval.asInstanceOf[js.Any], _direction.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  inline def padarray(A: Matrix, hasPadHeightPadWidth: js.Tuple2[Double, Double], _padval: PaddingValue): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], hasPadHeightPadWidth.asInstanceOf[js.Any], _padval.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  inline def padarray(
-    A: Matrix,
-    hasPadHeightPadWidth: js.Tuple2[Double, Double],
-    _padval: PaddingValue,
-    _direction: PaddingDirection
-  ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], hasPadHeightPadWidth.asInstanceOf[js.Any], _padval.asInstanceOf[js.Any], _direction.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def padarray(A: Matrix, param1: js.Tuple2[Double, Double]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def padarray(A: Matrix, param1: js.Tuple2[Double, Double], _padval: Unit, _direction: PaddingDirection): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], _padval.asInstanceOf[js.Any], _direction.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def padarray(A: Matrix, param1: js.Tuple2[Double, Double], _padval: PaddingValue): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], _padval.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def padarray(A: Matrix, param1: js.Tuple2[Double, Double], _padval: PaddingValue, _direction: PaddingDirection): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("padarray")(A.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], _padval.asInstanceOf[js.Any], _direction.asInstanceOf[js.Any])).asInstanceOf[Matrix]
   
   type PaddingDirection = both
   

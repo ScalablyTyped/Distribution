@@ -55,20 +55,20 @@ object libSrcNumberMod {
   ): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberToParts")(config.asInstanceOf[js.Any], getNumberFormat.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   
   inline def getFormatter(
-    hasLocaleFormatsOnError: FormatsLocale,
+    param0: FormatsLocale,
     getNumberFormat: js.Function2[
       /* locales */ js.UndefOr[String | js.Array[String]], 
       /* opts */ js.UndefOr[NumberFormatOptions], 
       NumberFormat
     ]
-  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnError.asInstanceOf[js.Any], getNumberFormat.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(param0.asInstanceOf[js.Any], getNumberFormat.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
   inline def getFormatter(
-    hasLocaleFormatsOnError: FormatsLocale,
+    param0: FormatsLocale,
     getNumberFormat: js.Function2[
       /* locales */ js.UndefOr[String | js.Array[String]], 
       /* opts */ js.UndefOr[NumberFormatOptions], 
       NumberFormat
     ],
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.NumberFormat['format']>[0], opts : @formatjs/intl.@formatjs/intl/lib/src/types.FormatNumberOptions | undefined): string>[1] */ js.Any
-  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnError.asInstanceOf[js.Any], getNumberFormat.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
+  ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(param0.asInstanceOf[js.Any], getNumberFormat.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
 }

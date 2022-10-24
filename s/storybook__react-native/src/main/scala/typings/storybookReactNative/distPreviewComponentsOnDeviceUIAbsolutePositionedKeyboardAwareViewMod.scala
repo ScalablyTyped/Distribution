@@ -33,7 +33,7 @@ object distPreviewComponentsOnDeviceUIAbsolutePositionedKeyboardAwareViewMod {
     
     var keyboardOpen: Boolean = js.native
     
-    def onLayoutHandler(hasNativeEvent: LayoutChangeEvent): Unit = js.native
+    def onLayoutHandler(param0: LayoutChangeEvent): Unit = js.native
     
     def removeKeyboardOnOrientationChange(): Unit = js.native
   }

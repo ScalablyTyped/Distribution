@@ -12,7 +12,7 @@ object esDialogContentMemoChildrenMod extends Shortcut {
   
   @JSImport("rc-dialog/es/Dialog/Content/MemoChildren", JSImport.Default)
   @js.native
-  val default: MemoExoticComponent[js.Function1[/* hasChildren */ MemoChildrenProps, ReactElement]] = js.native
+  val default: MemoExoticComponent[js.Function1[/* param0 */ MemoChildrenProps, ReactElement]] = js.native
   
   trait MemoChildrenProps extends StObject {
     
@@ -37,8 +37,8 @@ object esDialogContentMemoChildrenMod extends Shortcut {
     }
   }
   
-  type _To = MemoExoticComponent[js.Function1[/* hasChildren */ MemoChildrenProps, ReactElement]]
+  type _To = MemoExoticComponent[js.Function1[/* param0 */ MemoChildrenProps, ReactElement]]
   
   /* This means you don't have to write `default`, but can instead just say `esDialogContentMemoChildrenMod.foo` */
-  override def _to: MemoExoticComponent[js.Function1[/* hasChildren */ MemoChildrenProps, ReactElement]] = default
+  override def _to: MemoExoticComponent[js.Function1[/* param0 */ MemoChildrenProps, ReactElement]] = default
 }

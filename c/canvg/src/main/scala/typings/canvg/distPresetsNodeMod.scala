@@ -12,7 +12,7 @@ object distPresetsNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def node(hasDOMParserCanvasFetch: IConfig): CreateCanvas = ^.asInstanceOf[js.Dynamic].applyDynamic("node")(hasDOMParserCanvasFetch.asInstanceOf[js.Any]).asInstanceOf[CreateCanvas]
+  inline def node(param0: IConfig): CreateCanvas = ^.asInstanceOf[js.Dynamic].applyDynamic("node")(param0.asInstanceOf[js.Any]).asInstanceOf[CreateCanvas]
   
   /**
     * WHATWG-compatible `fetch` function.

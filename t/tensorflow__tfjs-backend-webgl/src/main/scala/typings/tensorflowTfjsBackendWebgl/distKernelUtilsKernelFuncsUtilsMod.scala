@@ -21,14 +21,12 @@ object distKernelUtilsKernelFuncsUtilsMod {
   @js.native
   val CHECK_NAN_SNIPPET_UNARY: /* "if (isnan(x)) return x;" */ String = js.native
   
-  inline def binaryKernelFunc(
-    hasOpSnippetPackedOpSnippetCheckOutOfBoundsSupportsComplexCpuKernelImplDtype: BinaryKernelFuncConfig
-  ): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(hasOpSnippetPackedOpSnippetCheckOutOfBoundsSupportsComplexCpuKernelImplDtype.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
+  inline def binaryKernelFunc(param0: BinaryKernelFuncConfig): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(param0.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
   
   inline def mapActivationToShaderProgram(activation: Activation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActivationToShaderProgram")(activation.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def mapActivationToShaderProgram(activation: Activation, packed: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActivationToShaderProgram")(activation.asInstanceOf[js.Any], packed.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def unaryKernelFunc(hasOpSnippetPackedOpSnippetCpuKernelImplDtype: UnaryKernelFuncConfig): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(hasOpSnippetPackedOpSnippetCpuKernelImplDtype.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
+  inline def unaryKernelFunc(param0: UnaryKernelFuncConfig): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(param0.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
   
   trait BinaryKernelFuncConfig extends StObject {
     

@@ -92,8 +92,8 @@ object mod {
       
       @JSImport("rc-tree", "default.defaultProps.dropIndicatorRender")
       @js.native
-      def dropIndicatorRender: js.Function1[/* hasDropPositionDropLevelOffsetIndent */ DropLevelOffset, Element] = js.native
-      inline def dropIndicatorRender_=(x: js.Function1[/* hasDropPositionDropLevelOffsetIndent */ DropLevelOffset, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropIndicatorRender")(x.asInstanceOf[js.Any])
+      def dropIndicatorRender: js.Function1[/* param0 */ DropLevelOffset, Element] = js.native
+      inline def dropIndicatorRender_=(x: js.Function1[/* param0 */ DropLevelOffset, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropIndicatorRender")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-tree", "default.defaultProps.expandAction")
       @js.native

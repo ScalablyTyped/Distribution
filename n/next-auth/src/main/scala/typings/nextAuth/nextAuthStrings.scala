@@ -1481,6 +1481,12 @@ object nextAuthStrings {
   inline def timer: timer = "timer".asInstanceOf[timer]
   
   @js.native
+  sealed trait todoist
+    extends StObject
+       with OAuthProviderType
+  inline def todoist: todoist = "todoist".asInstanceOf[todoist]
+  
+  @js.native
   sealed trait torunblocked
     extends StObject
        with WikimediaRight

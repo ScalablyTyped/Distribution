@@ -8,5 +8,5 @@ object distTs3Dot9VersionMod {
   
   @JSImport("@storybook/api/dist/ts3.9/version", "version")
   @js.native
-  val version: /* "6.5.12" */ String = js.native
+  val version: /* "6.5.13" */ String = js.native
 }

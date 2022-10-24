@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ListItemEditableMargins extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.wixStyleReact.listItemEditableMod.ListItemEditableMargins & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.wixStyleReact.distTypesListItemEditableMod.ListItemEditableMargins & String
+  ] = js.native
   
-  /* "list-item" */ val LIST_ITEM: typings.wixStyleReact.listItemEditableMod.ListItemEditableMargins.LIST_ITEM & String = js.native
+  /* "list-item" */ val LIST_ITEM: typings.wixStyleReact.distTypesListItemEditableMod.ListItemEditableMargins.LIST_ITEM & String = js.native
   
-  /* "none" */ val NONE: typings.wixStyleReact.listItemEditableMod.ListItemEditableMargins.NONE & String = js.native
+  /* "none" */ val NONE: typings.wixStyleReact.distTypesListItemEditableMod.ListItemEditableMargins.NONE & String = js.native
 }

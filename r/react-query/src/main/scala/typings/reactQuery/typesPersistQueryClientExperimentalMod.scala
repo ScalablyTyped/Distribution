@@ -15,7 +15,7 @@ object typesPersistQueryClientExperimentalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def persistQueryClient(hasQueryClientPersistorMaxAgeBusterHydrateOptionsDehydrateOptions: PersistQueryClientOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("persistQueryClient")(hasQueryClientPersistorMaxAgeBusterHydrateOptionsDehydrateOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def persistQueryClient(param0: PersistQueryClientOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("persistQueryClient")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait PersistQueryClientOptions extends StObject {
     

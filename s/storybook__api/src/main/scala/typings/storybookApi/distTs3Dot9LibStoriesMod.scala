@@ -28,7 +28,7 @@ object distTs3Dot9LibStoriesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def denormalizeStoryParameters(hasGlobalParametersKindParametersStories: SetStoriesPayload): StoriesRaw = ^.asInstanceOf[js.Dynamic].applyDynamic("denormalizeStoryParameters")(hasGlobalParametersKindParametersStories.asInstanceOf[js.Any]).asInstanceOf[StoriesRaw]
+  inline def denormalizeStoryParameters(param0: SetStoriesPayload): StoriesRaw = ^.asInstanceOf[js.Dynamic].applyDynamic("denormalizeStoryParameters")(param0.asInstanceOf[js.Any]).asInstanceOf[StoriesRaw]
   
   inline def getComponentLookupList(hash: StoriesHash): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentLookupList")(hash.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
   
@@ -40,9 +40,9 @@ object distTs3Dot9LibStoriesMod {
   
   inline def isStory(item: Item): /* is @storybook/api.@storybook/api/dist/ts3.9/lib/stories.Story */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStory")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/ts3.9/lib/stories.Story */ Boolean]
   
-  inline def transformStoriesRawToStoriesHash(input: StoriesRaw, hasProviderPrepared: Prepared): StoriesHash = (^.asInstanceOf[js.Dynamic].applyDynamic("transformStoriesRawToStoriesHash")(input.asInstanceOf[js.Any], hasProviderPrepared.asInstanceOf[js.Any])).asInstanceOf[StoriesHash]
+  inline def transformStoriesRawToStoriesHash(input: StoriesRaw, param1: Prepared): StoriesHash = (^.asInstanceOf[js.Dynamic].applyDynamic("transformStoriesRawToStoriesHash")(input.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[StoriesHash]
   
-  inline def transformStoryIndexToStoriesHash(index: StoryIndex, hasProvider: Provider): StoriesHash = (^.asInstanceOf[js.Dynamic].applyDynamic("transformStoryIndexToStoriesHash")(index.asInstanceOf[js.Any], hasProvider.asInstanceOf[js.Any])).asInstanceOf[StoriesHash]
+  inline def transformStoryIndexToStoriesHash(index: StoryIndex, param1: Provider): StoriesHash = (^.asInstanceOf[js.Dynamic].applyDynamic("transformStoryIndexToStoriesHash")(index.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[StoriesHash]
   
   trait Group extends StObject {
     

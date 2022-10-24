@@ -11,7 +11,5 @@ object distTypesCalendarMonthPathMod {
   
   @JSImport("@nivo/calendar/dist/types/CalendarMonthPath", "CalendarMonthPath")
   @js.native
-  val CalendarMonthPath: MemoExoticComponent[
-    js.Function1[/* hasPathBorderWidthBorderColor */ CalendarMonthPathProps, Element]
-  ] = js.native
+  val CalendarMonthPath: MemoExoticComponent[js.Function1[/* param0 */ CalendarMonthPathProps, Element]] = js.native
 }

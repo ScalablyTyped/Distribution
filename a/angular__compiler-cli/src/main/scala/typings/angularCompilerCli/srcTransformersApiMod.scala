@@ -351,9 +351,7 @@ object srcTransformersApiMod {
       * Angular structural information is required to emit files.
       */
     def emit(): EmitResult = js.native
-    def emit(
-      hasEmitFlagsForceEmitCancellationTokenCustomTransformersEmitCallbackMergeEmitResultsCallback: CancellationToken
-    ): EmitResult = js.native
+    def emit(param0: CancellationToken): EmitResult = js.native
     
     /**
       * Retrieve options diagnostics for the Angular options used to create the program.

@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Line ()
   extends typings.antvGLite.distDisplayObjectsMod.Line {
-  def this(hasStyleRest: DisplayObjectConfig[LineStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[LineStyleProps]) = this()
 }

@@ -72,5 +72,5 @@ object mod {
   
   inline def targetFromTargetString(str: String): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("targetFromTargetString")(str.asInstanceOf[js.Any]).asInstanceOf[Target]
   
-  inline def targetStringFromTarget(hasProjectTargetConfiguration: Target): String = ^.asInstanceOf[js.Dynamic].applyDynamic("targetStringFromTarget")(hasProjectTargetConfiguration.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def targetStringFromTarget(param0: Target): String = ^.asInstanceOf[js.Dynamic].applyDynamic("targetStringFromTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -20,10 +20,7 @@ object libCjsFetchMod {
   @js.native
   val EventStreamContentType: /* "text/event-stream" */ String = js.native
   
-  inline def fetchEventSource(
-    input: RequestInfo,
-    hasInputSignalInputHeadersInputOnOpenOnmessageOncloseOnerrorOpenWhenHiddenInputFetchRest: FetchEventSourceInit
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchEventSource")(input.asInstanceOf[js.Any], hasInputSignalInputHeadersInputOnOpenOnmessageOncloseOnerrorOpenWhenHiddenInputFetchRest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def fetchEventSource(input: RequestInfo, param1: FetchEventSourceInit): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchEventSource")(input.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait FetchEventSourceInit
     extends StObject

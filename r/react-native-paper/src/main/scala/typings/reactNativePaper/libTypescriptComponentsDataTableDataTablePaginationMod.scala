@@ -5,11 +5,11 @@ import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonRea
 import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.reactNativePaper.anon.CallHasLabelAccessibilityLabelPageNumberOfPagesOnPageChangeStyleThemeShowFastPaginationControlsNumberOfItemsPerPageListNumberOfItemsPerPageOnItemsPerPageChangeSelectPageDropdownLabelSelectPageDropdownAccessibilityLabelRest
 import typings.reactNativePaper.anon.PickViewPropsRefAttributeAccessibilityLiveRegion
 import typings.reactNativePaper.anon.SelectPageDropdownAccessibilityLabel
 import typings.reactNativePaper.anon.TypeofView
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityLanguage
+import typings.reactNativePaper.anon.`11`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +18,7 @@ object libTypescriptComponentsDataTableDataTablePaginationMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTablePagination", JSImport.Default)
   @js.native
-  val default: ComponentType[PickViewPropsRefAttributeAccessibilityLiveRegion] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLanguage] & CallHasLabelAccessibilityLabelPageNumberOfPagesOnPageChangeStyleThemeShowFastPaginationControlsNumberOfItemsPerPageListNumberOfItemsPerPageOnItemsPerPageChangeSelectPageDropdownLabelSelectPageDropdownAccessibilityLabelRest, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickViewPropsRefAttributeAccessibilityLiveRegion] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLanguage] & `11`, js.Object]) = js.native
   
   /**
     * A component to show pagination for data table.
@@ -87,9 +84,7 @@ object libTypescriptComponentsDataTableDataTablePaginationMod extends Shortcut {
     */
   object DataTablePagination {
     
-    inline def apply(
-      hasLabelAccessibilityLabelPageNumberOfPagesOnPageChangeStyleThemeShowFastPaginationControlsNumberOfItemsPerPageListNumberOfItemsPerPageOnItemsPerPageChangeSelectPageDropdownLabelSelectPageDropdownAccessibilityLabelRest: Props
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasLabelAccessibilityLabelPageNumberOfPagesOnPageChangeStyleThemeShowFastPaginationControlsNumberOfItemsPerPageListNumberOfItemsPerPageOnItemsPerPageChangeSelectPageDropdownLabelSelectPageDropdownAccessibilityLabelRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTablePagination", "DataTablePagination")
     @js.native
@@ -188,14 +183,8 @@ object libTypescriptComponentsDataTableDataTablePaginationMod extends Shortcut {
   
   type Props = ComponentPropsWithRef[TypeofView] & PaginationControlsProps & PaginationDropdownProps & SelectPageDropdownAccessibilityLabel
   
-  type _To = ComponentType[PickViewPropsRefAttributeAccessibilityLiveRegion] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLanguage] & CallHasLabelAccessibilityLabelPageNumberOfPagesOnPageChangeStyleThemeShowFastPaginationControlsNumberOfItemsPerPageListNumberOfItemsPerPageOnItemsPerPageChangeSelectPageDropdownLabelSelectPageDropdownAccessibilityLabelRest, 
-    js.Object
-  ])
+  type _To = ComponentType[PickViewPropsRefAttributeAccessibilityLiveRegion] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLanguage] & `11`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsDataTableDataTablePaginationMod.foo` */
-  override def _to: ComponentType[PickViewPropsRefAttributeAccessibilityLiveRegion] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVieAccessibilityLanguage] & CallHasLabelAccessibilityLabelPageNumberOfPagesOnPageChangeStyleThemeShowFastPaginationControlsNumberOfItemsPerPageListNumberOfItemsPerPageOnItemsPerPageChangeSelectPageDropdownLabelSelectPageDropdownAccessibilityLabelRest, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickViewPropsRefAttributeAccessibilityLiveRegion] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLanguage] & `11`, js.Object]) = default
 }

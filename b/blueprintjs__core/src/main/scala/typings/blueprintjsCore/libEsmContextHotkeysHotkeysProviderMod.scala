@@ -25,7 +25,7 @@ object libEsmContextHotkeysHotkeysProviderMod {
   @js.native
   val HotkeysContext: Context[HotkeysContextInstance] = js.native
   
-  inline def HotkeysProvider(hasChildrenDialogPropsRenderDialogValue: HotkeysProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysProvider")(hasChildrenDialogPropsRenderDialogValue.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HotkeysProvider(param0: HotkeysProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.blueprintjsCore.anon.Payload

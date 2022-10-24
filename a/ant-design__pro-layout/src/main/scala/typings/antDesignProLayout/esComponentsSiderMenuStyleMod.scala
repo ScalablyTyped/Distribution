@@ -13,7 +13,7 @@ object esComponentsSiderMenuStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useStyle(prefixCls: String, hasProLayoutCollapsedWidth: ProLayoutCollapsedWidth): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(prefixCls.asInstanceOf[js.Any], hasProLayoutCollapsedWidth.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
+  inline def useStyle(prefixCls: String, param1: ProLayoutCollapsedWidth): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(prefixCls.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
   
   trait SiderMenuToken
     extends StObject

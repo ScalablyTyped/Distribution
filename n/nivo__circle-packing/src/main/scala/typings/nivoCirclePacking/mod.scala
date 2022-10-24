@@ -40,20 +40,18 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def CirclePacking[RawDatum](
-    hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps: (Partial[Omit[CirclePackingSvgProps[RawDatum], data | height | width]]) & (Pick[CirclePackingSvgProps[RawDatum], data | height | width])
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePacking")(hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    param0: (Partial[Omit[CirclePackingSvgProps[RawDatum], data | height | width]]) & (Pick[CirclePackingSvgProps[RawDatum], data | height | width])
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePacking")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def CirclePackingCanvas[RawDatum](
-    hasIsInteractiveThemeOtherProps: (Partial[Omit[CirclePackingCanvasProps[RawDatum], data | height | width]]) & (Pick[CirclePackingCanvasProps[RawDatum], data | height | width])
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePackingCanvas")(hasIsInteractiveThemeOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    param0: (Partial[Omit[CirclePackingCanvasProps[RawDatum], data | height | width]]) & (Pick[CirclePackingCanvasProps[RawDatum], data | height | width])
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePackingCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def CirclePackingHtml[RawDatum](
-    hasThemeIsInteractiveAnimateMotionConfigOtherProps: (Partial[Omit[CirclePackingHtmlProps[RawDatum], data | height | width]]) & (Pick[CirclePackingHtmlProps[RawDatum], data | height | width])
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePackingHtml")(hasThemeIsInteractiveAnimateMotionConfigOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    param0: (Partial[Omit[CirclePackingHtmlProps[RawDatum], data | height | width]]) & (Pick[CirclePackingHtmlProps[RawDatum], data | height | width])
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CirclePackingHtml")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerCirclePackingHtml[RawDatum](
-    hasDataIdValueValueFormatWidthHeightPartialMarginPaddingLeavesOnlyColorsColorByInheritColorFromParentChildColorBorderWidthBorderColorCircleComponentEnableLabelsLabelLabelsFilterLabelsSkipRadiusLabelTextColorLabelComponentLayersIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltipZoomedIdRole: InnerCirclePackingHtmlProps[RawDatum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCirclePackingHtml")(hasDataIdValueValueFormatWidthHeightPartialMarginPaddingLeavesOnlyColorsColorByInheritColorFromParentChildColorBorderWidthBorderColorCircleComponentEnableLabelsLabelLabelsFilterLabelsSkipRadiusLabelTextColorLabelComponentLayersIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltipZoomedIdRole.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerCirclePackingHtml[RawDatum](param0: InnerCirclePackingHtmlProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCirclePackingHtml")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def ResponsiveCirclePacking[RawDatum](props: ResponsiveCirclePackingProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveCirclePacking")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -173,7 +171,7 @@ object mod {
     def role: String = js.native
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum](hasIdFormattedValueColor: ComputedDatum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasIdFormattedValueColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum](param0: ComputedDatum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/circle-packing", "defaultProps.value")
     @js.native
@@ -181,28 +179,23 @@ object mod {
     inline def value_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
-  inline def useCirclePacking[RawDatum](
-    hasDataIdValueValueFormatWidthHeightPaddingLeavesOnlyColorsColorByInheritColorFromParentChildColor: ChildColor[RawDatum]
-  ): js.Array[ComputedDatum[RawDatum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCirclePacking")(hasDataIdValueValueFormatWidthHeightPaddingLeavesOnlyColorsColorByInheritColorFromParentChildColor.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComputedDatum[RawDatum]]]
+  inline def useCirclePacking[RawDatum](param0: ChildColor[RawDatum]): js.Array[ComputedDatum[RawDatum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCirclePacking")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComputedDatum[RawDatum]]]
   
-  inline def useCirclePackingLabels[RawDatum](hasNodesLabelFilterSkipRadiusTextColor: Filter[RawDatum]): js.Array[Label[RawDatum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCirclePackingLabels")(hasNodesLabelFilterSkipRadiusTextColor.asInstanceOf[js.Any]).asInstanceOf[js.Array[Label[RawDatum]]]
+  inline def useCirclePackingLabels[RawDatum](param0: Filter[RawDatum]): js.Array[Label[RawDatum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCirclePackingLabels")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Label[RawDatum]]]
   
-  inline def useCirclePackingLayerContext[RawDatum](hasNodes: Nodes[RawDatum]): CirclePackingCustomLayerProps[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCirclePackingLayerContext")(hasNodes.asInstanceOf[js.Any]).asInstanceOf[CirclePackingCustomLayerProps[RawDatum]]
+  inline def useCirclePackingLayerContext[RawDatum](param0: Nodes[RawDatum]): CirclePackingCustomLayerProps[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCirclePackingLayerContext")(param0.asInstanceOf[js.Any]).asInstanceOf[CirclePackingCustomLayerProps[RawDatum]]
   
   inline def useCirclePackingZoom[RawDatum](nodes: js.Array[ComputedDatum[RawDatum]], zoomedId: String, width: Double, height: Double): js.Array[ComputedDatum[RawDatum]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCirclePackingZoom")(nodes.asInstanceOf[js.Any], zoomedId.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComputedDatum[RawDatum]]]
   inline def useCirclePackingZoom[RawDatum](nodes: js.Array[ComputedDatum[RawDatum]], zoomedId: Null, width: Double, height: Double): js.Array[ComputedDatum[RawDatum]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCirclePackingZoom")(nodes.asInstanceOf[js.Any], zoomedId.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComputedDatum[RawDatum]]]
   inline def useCirclePackingZoom[RawDatum](nodes: js.Array[ComputedDatum[RawDatum]], zoomedId: Unit, width: Double, height: Double): js.Array[ComputedDatum[RawDatum]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCirclePackingZoom")(nodes.asInstanceOf[js.Any], zoomedId.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComputedDatum[RawDatum]]]
   
-  inline def useMouseCircleDetection[RawDatum](hasNodesCanvasElMargin: CanvasEl[RawDatum]): js.Function1[
+  inline def useMouseCircleDetection[RawDatum](param0: CanvasEl[RawDatum]): js.Function1[
     /* event */ MouseEvent[typings.std.Element, NativeMouseEvent], 
     js.UndefOr[ComputedDatum[RawDatum] | Null]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMouseCircleDetection")(hasNodesCanvasElMargin.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMouseCircleDetection")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* event */ MouseEvent[typings.std.Element, NativeMouseEvent], 
     js.UndefOr[ComputedDatum[RawDatum] | Null]
   ]]
   
-  inline def useNodeMouseHandlers[RawDatum](
-    node: ComputedDatum[RawDatum],
-    hasOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: MouseHandlers[RawDatum]
-  ): PartialRecordonMouseMoveo = (^.asInstanceOf[js.Dynamic].applyDynamic("useNodeMouseHandlers")(node.asInstanceOf[js.Any], hasOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any])).asInstanceOf[PartialRecordonMouseMoveo]
+  inline def useNodeMouseHandlers[RawDatum](node: ComputedDatum[RawDatum], param1: MouseHandlers[RawDatum]): PartialRecordonMouseMoveo = (^.asInstanceOf[js.Dynamic].applyDynamic("useNodeMouseHandlers")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[PartialRecordonMouseMoveo]
 }

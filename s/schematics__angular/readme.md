@@ -1,7 +1,7 @@
 
 # Scala.js typings for schematics__angular
 
-Typings are for version 14.2.3
+Typings are for version 14.2.6
 
 ## Library description:
 Schematics specific to Angular

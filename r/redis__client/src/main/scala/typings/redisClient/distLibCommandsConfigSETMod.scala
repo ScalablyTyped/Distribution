@@ -14,11 +14,11 @@ object distLibCommandsConfigSETMod {
   val ^ : js.Any = js.native
   
   inline def transformArguments(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasParameterOrConfigValue because its type SingleParameter | MultipleParameters is not an array type */ hasParameterOrConfigValue: MultipleParameters
-  ): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(hasParameterOrConfigValue.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type SingleParameter | MultipleParameters is not an array type */ param0: MultipleParameters
+  ): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(param0.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
   inline def transformArguments(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasParameterOrConfigValue because its type SingleParameter | MultipleParameters is not an array type */ hasParameterOrConfigValue: SingleParameter
-  ): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(hasParameterOrConfigValue.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type SingleParameter | MultipleParameters is not an array type */ param0: SingleParameter
+  ): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(param0.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
   
   inline def transformReply(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")().asInstanceOf[String]
   

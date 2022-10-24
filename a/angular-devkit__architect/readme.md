@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-devkit__architect
 
-Typings are for version 0.1402.3
+Typings are for version 0.1402.6
 
 ## Library description:
 Angular Build Facade

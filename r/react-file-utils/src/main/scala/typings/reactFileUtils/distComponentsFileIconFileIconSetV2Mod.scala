@@ -13,39 +13,39 @@ object distComponentsFileIconFileIconSetV2Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FileArchiveIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileArchiveIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileArchiveIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileArchiveIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileArchiveIconAlt(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileArchiveIconAlt")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileArchiveIconAlt(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileArchiveIconAlt")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileAudioIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileAudioIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileAudioIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileAudioIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileAudioIconAlt(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileAudioIconAlt")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileAudioIconAlt(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileAudioIconAlt")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileCodeIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileCodeIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileCodeIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileCodeIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileCodeIconAlt(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileCodeIconAlt")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileCodeIconAlt(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileCodeIconAlt")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileExcelIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExcelIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileExcelIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExcelIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileExcelIconAlt(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExcelIconAlt")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileExcelIconAlt(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExcelIconAlt")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileFallbackIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileFallbackIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileFallbackIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileFallbackIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileImageIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileImageIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileImageIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileImageIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FilePdfIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePdfIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FilePdfIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePdfIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FilePowerPointIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePowerPointIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FilePowerPointIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePowerPointIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FilePowerPointIconAlt(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePowerPointIconAlt")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FilePowerPointIconAlt(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilePowerPointIconAlt")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileVideoIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileVideoIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileVideoIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileVideoIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileVideoIconAlt(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileVideoIconAlt")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileVideoIconAlt(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileVideoIconAlt")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileWordIcon(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileWordIcon")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileWordIcon(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileWordIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FileWordIconAlt(hasClassNameSizeProps: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileWordIconAlt")(hasClassNameSizeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FileWordIconAlt(param0: IconPropsV2): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FileWordIconAlt")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait IconPropsV2
     extends StObject

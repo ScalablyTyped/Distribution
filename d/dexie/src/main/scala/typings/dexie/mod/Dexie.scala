@@ -147,9 +147,9 @@ trait Dexie
     scope: js.Function1[/* trans */ Transaction, PromiseLike[U] | U]
   ): PromiseExtended[U] = js.native
   
+  def unuse(param0: Name): this.type = js.native
   // Add more supported stacks here... : use(middleware: Middleware<HookStack>): this;
-  def unuse(hasStackCreate: Middleware[Stack]): this.type = js.native
-  def unuse(hasStackName: Name): this.type = js.native
+  def unuse(param0: Middleware[Stack]): this.type = js.native
   
   def use(middleware: Middleware[DBCore]): this.type = js.native
   

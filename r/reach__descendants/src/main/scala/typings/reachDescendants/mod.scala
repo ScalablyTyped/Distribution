@@ -20,7 +20,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DescendantProvider[DescendantType /* <: Descendant[HTMLElement] */](hasCtxChildrenItemsSet: Children[DescendantType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DescendantProvider")(hasCtxChildrenItemsSet.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DescendantProvider[DescendantType /* <: Descendant[HTMLElement] */](param0: Children[DescendantType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DescendantProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def createDescendantContext[DescendantType /* <: Descendant[HTMLElement] */](name: String): Context[DescendantContextValue[DescendantType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDescendantContext")(name.asInstanceOf[js.Any]).asInstanceOf[Context[DescendantContextValue[DescendantType]]]
   inline def createDescendantContext[DescendantType /* <: Descendant[HTMLElement] */](name: String, initialValue: js.Object): Context[DescendantContextValue[DescendantType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDescendantContext")(name.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Context[DescendantContextValue[DescendantType]]]

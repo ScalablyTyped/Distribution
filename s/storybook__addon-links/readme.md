@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-links
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 Link stories together to build demos and prototypes with your UI components

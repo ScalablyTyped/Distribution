@@ -48,7 +48,7 @@ object libExecutorMod {
   @JSImport("@ionic/cli-framework/lib/executor", "BaseExecutor")
   @js.native
   open class BaseExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends AbstractExecutor[C, N, M, I, O] {
-    def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[C, N, M, I, O]) = this()
+    def this(param0: BaseExecutorDeps[C, N, M, I, O]) = this()
     
     val colors: Colors = js.native
     
@@ -70,7 +70,7 @@ object libExecutorMod {
     def execute(argvOrLocation: NamespaceLocateResult[C, N, M, I, O], env: ProcessEnv): js.Promise[Unit] = js.native
     
     def formatHelp(location: NamespaceLocateResult[C, N, M, I, O]): js.Promise[String] = js.native
-    def formatHelp(location: NamespaceLocateResult[C, N, M, I, O], hasFormat: BaseExecutorFormatHelpOptions): js.Promise[String] = js.native
+    def formatHelp(location: NamespaceLocateResult[C, N, M, I, O], param1: BaseExecutorFormatHelpOptions): js.Promise[String] = js.native
     
     @JSName("on")
     def on_operationrpc(event: `operation-rpc`, callback: js.Function1[/* rpc */ RPCProcess, Unit]): this.type = js.native
@@ -101,7 +101,7 @@ object libExecutorMod {
           CommandMetadataInput, 
           CommandMetadataOption
         ] {
-    def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[
+    def this(param0: BaseExecutorDeps[
             Command, 
             Namespace, 
             CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
@@ -114,7 +114,7 @@ object libExecutorMod {
   @js.native
   val HELP_FLAGS: js.Array[String] = js.native
   
-  inline def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](hasNamespaceArgvEnvRest: (Argv[N, C, M, I, O]) & (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(hasNamespaceArgvEnvRest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](param0: (Argv[N, C, M, I, O]) & (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait BaseExecutorDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     

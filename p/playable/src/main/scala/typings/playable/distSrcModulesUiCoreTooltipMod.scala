@@ -23,7 +23,7 @@ object distSrcModulesUiCoreTooltipMod {
   @js.native
   open class TooltipService protected ()
     extends typings.playable.distSrcModulesUiCoreTooltipTooltipServiceMod.default {
-    def this(hasEventEmitter: EventEmitterIEventEmitter) = this()
+    def this(param0: EventEmitterIEventEmitter) = this()
   }
   object TooltipService {
     

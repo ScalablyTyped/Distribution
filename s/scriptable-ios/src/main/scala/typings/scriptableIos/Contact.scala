@@ -373,6 +373,41 @@ object Contact {
     __obj.asInstanceOf[Contact]
   }
   
+  trait EmailAddresses extends StObject {
+    
+    var identifier: js.UndefOr[String] = js.undefined
+    
+    var label: js.UndefOr[String] = js.undefined
+    
+    var localizedLabel: js.UndefOr[String] = js.undefined
+    
+    var value: String
+  }
+  object EmailAddresses {
+    
+    inline def apply(value: String): EmailAddresses = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EmailAddresses]
+    }
+    
+    extension [Self <: EmailAddresses](x: Self) {
+      
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      
+      inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+      
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setLocalizedLabel(value: String): Self = StObject.set(x, "localizedLabel", value.asInstanceOf[js.Any])
+      
+      inline def setLocalizedLabelUndefined: Self = StObject.set(x, "localizedLabel", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
   extension [Self <: Contact](x: Self) {
     
     inline def setBirthday(value: js.Date): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
@@ -456,41 +491,6 @@ object Contact {
     inline def setUrlAddresses(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "urlAddresses", value.asInstanceOf[js.Any])
     
     inline def setUrlAddressesVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "urlAddresses", js.Array(value*))
-  }
-  
-  trait EmailAddresses extends StObject {
-    
-    var identifier: js.UndefOr[String] = js.undefined
-    
-    var label: js.UndefOr[String] = js.undefined
-    
-    var localizedLabel: js.UndefOr[String] = js.undefined
-    
-    var value: String
-  }
-  object EmailAddresses {
-    
-    inline def apply(value: String): EmailAddresses = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EmailAddresses]
-    }
-    
-    extension [Self <: EmailAddresses](x: Self) {
-      
-      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
-      
-      inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
-      
-      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-      
-      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-      
-      inline def setLocalizedLabel(value: String): Self = StObject.set(x, "localizedLabel", value.asInstanceOf[js.Any])
-      
-      inline def setLocalizedLabelUndefined: Self = StObject.set(x, "localizedLabel", js.undefined)
-      
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
   }
   
   trait PhoneNumbers extends StObject {

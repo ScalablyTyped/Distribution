@@ -11,7 +11,7 @@ object buildCommandsElementMoveToMod {
   val ^ : js.Any = js.native
   
   inline def default(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Unit]]
-  inline def default(hasXOffsetYOffset: MoveToOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasXOffsetYOffset.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(param1: MoveToOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait MoveToOptions extends StObject {
     

@@ -15,7 +15,7 @@ object typesMenuVisibilityProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def MenuVisibilityProvider(hasVisibleSetVisibleChildren: MenuVisibilityProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuVisibilityProvider")(hasVisibleSetVisibleChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuVisibilityProvider(param0: MenuVisibilityProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuVisibilityProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useMenuVisibility(): ReadonlyMenuVisibilityCon = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuVisibility")().asInstanceOf[ReadonlyMenuVisibilityCon]
   

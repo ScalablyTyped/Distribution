@@ -28,10 +28,7 @@ object libFormMod extends Shortcut {
     extends StObject
        with InternalFormType {
     
-    var ErrorList: js.Function1[
-        /* hasHelpHelpStatusErrorsWarningsRootClassNameFieldIdOnVisibleChanged */ ErrorListProps, 
-        Element
-      ] = js.native
+    var ErrorList: js.Function1[/* param0 */ ErrorListProps, Element] = js.native
     
     var Item: FormItemInterface = js.native
     

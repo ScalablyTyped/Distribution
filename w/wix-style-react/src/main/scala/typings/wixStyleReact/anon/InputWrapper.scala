@@ -1,5 +1,6 @@
 package typings.wixStyleReact.anon
 
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,28 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InputWrapper extends StObject {
   
-  def blur(): js.Promise[Unit] = js.native
+  def blur(): Unit = js.native
   
-  def exists(): js.Promise[Boolean] = js.native
+  def exists(): Boolean = js.native
   
-  def focus(): js.Promise[Unit] = js.native
+  def focus(): Unit = js.native
   
-  /** @deprecated  Should be private */
-  def inputWrapper(): js.Promise[js.Any] = js.native
+  def inputWrapper(): HTMLElement = js.native
   
-  var isDisabled: /* import warning: importer.ImportType#apply Failed type conversion: wix-style-react.wix-style-react/dist/es/src/Input/Input.uni.driver.InputUniDriver['isDisabled'] */ js.Any = js.native
+  def isDisabled(): Boolean = js.native
   
-  def isEditable(): js.Promise[Boolean] = js.native
+  def isEditable(): Boolean = js.native
   
-  def isOptionWrappedToHighlighter(optionId: String): js.Promise[Boolean] = js.native
-  def isOptionWrappedToHighlighter(optionId: Double): js.Promise[Boolean] = js.native
+  def isReadOnly(): Boolean = js.native
   
-  var isReadOnly: /* import warning: importer.ImportType#apply Failed type conversion: wix-style-react.wix-style-react/dist/es/src/Input/Input.uni.driver.InputUniDriver['getReadOnly'] */ js.Any = js.native
+  def outsideClick(): Unit = js.native
   
-  def outsideClick(): js.Promise[Unit] = js.native
+  def pressKey(key: String): Unit = js.native
   
-  def pressKey(key: String): js.Promise[Unit] = js.native
-  
-  def selectOptionById(id: String): js.Promise[Unit] = js.native
-  def selectOptionById(id: Double): js.Promise[Unit] = js.native
+  def selectOptionById(id: String): Unit = js.native
+  def selectOptionById(id: Double): Unit = js.native
 }

@@ -11,7 +11,7 @@ object typesUtilsSetElementSizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def setElementSize(element: HTMLElement, hasWidthHeight: ElementSize): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("setElementSize")(element.asInstanceOf[js.Any], hasWidthHeight.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def setElementSize(element: HTMLElement, param1: ElementSize): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("setElementSize")(element.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   trait ElementSize extends StObject {
     

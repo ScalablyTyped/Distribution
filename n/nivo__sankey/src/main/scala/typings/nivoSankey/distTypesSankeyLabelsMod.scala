@@ -18,9 +18,7 @@ object distTypesSankeyLabelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SankeyLabels[N /* <: DefaultNode */, L /* <: DefaultLink */](
-    hasNodesLayoutWidthHeightLabelPositionLabelPaddingLabelOrientationGetLabelTextColor: SankeyLabelsProps[N, L]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SankeyLabels")(hasNodesLayoutWidthHeightLabelPositionLabelPaddingLabelOrientationGetLabelTextColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SankeyLabels[N /* <: DefaultNode */, L /* <: DefaultLink */](param0: SankeyLabelsProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SankeyLabels")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait SankeyLabelsProps[N /* <: DefaultNode */, L /* <: DefaultLink */] extends StObject {
     

@@ -16,7 +16,7 @@ object distSrcModulesUiControlsTimeTimeMod {
   open class default protected ()
     extends StObject
        with TimeControl {
-    def this(hasEventEmitterEngineTheme: EngineEventEmitter) = this()
+    def this(param0: EngineEventEmitter) = this()
     
     /* private */ /* CompleteClass */
     var _bindCallbacks: Any = js.native

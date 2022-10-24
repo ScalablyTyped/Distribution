@@ -12,7 +12,5 @@ object sliderSliderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasOverridesDisabledMarksOnChangeOnFinalChangeMinMaxStepPersistentThumbValueToLabelProvidedValue: SliderProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOverridesDisabledMarksOnChangeOnFinalChangeMinMaxStepPersistentThumbValueToLabelProvidedValue.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: SliderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

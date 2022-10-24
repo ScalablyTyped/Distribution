@@ -45,7 +45,7 @@ object cjsInfernoHooksMod {
     def this(props: RenderFn, context: Any) = this()
   }
   
-  inline def Portal(hasContainerChildren: PortalProps): VNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(hasContainerChildren.asInstanceOf[js.Any]).asInstanceOf[VNode | Null]
+  inline def Portal(param0: PortalProps): VNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(param0.asInstanceOf[js.Any]).asInstanceOf[VNode | Null]
   
   inline def collectChildren(): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("__collectChildren")().asInstanceOf[Record[String, Any]]
   
@@ -105,9 +105,9 @@ object cjsInfernoHooksMod {
   
   inline def renderChild(
     component: typings.devextremeRuntime.cjsInfernoHooksContainerMod.HookContainer,
-    hasRenderFnRenderPropsRenderRef: Any,
+    param1: Any,
     context: Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderChild")(component.asInstanceOf[js.Any], hasRenderFnRenderPropsRenderRef.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderChild")(component.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def useCallback[T /* <: js.Function1[/* repeated */ scala.Nothing, Any] */](fn: T, dependencies: js.Array[Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useCallback")(fn.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[T]
   

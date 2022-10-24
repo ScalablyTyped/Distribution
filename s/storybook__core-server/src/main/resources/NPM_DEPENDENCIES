@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/core-server" : "6.5.12"
+      "@storybook/core-server" : "6.5.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/core-server" : "6.5.12"
+      "@storybook/core-server" : "6.5.13"
     }
   ],
   "compile-devDependencies" : [

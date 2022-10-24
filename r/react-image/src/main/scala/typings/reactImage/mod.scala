@@ -14,9 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Img(
-    hasDecodeSrcListLoaderUnloaderContainerLoaderContainerUnloaderContainerImgPromiseCrossoriginUseSuspenseImgProps: ImgProps
-  ): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Img")(hasDecodeSrcListLoaderUnloaderContainerLoaderContainerUnloaderContainerImgPromiseCrossoriginUseSuspenseImgProps.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def Img(param0: ImgProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Img")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def useImage(hasSrcListImgPromiseUseSuspense: useImageProps): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(hasSrcListImgPromiseUseSuspense.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def useImage(param0: useImageProps): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(param0.asInstanceOf[js.Any]).asInstanceOf[Error]
 }

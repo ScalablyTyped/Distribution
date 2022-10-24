@@ -22,21 +22,6 @@ object Geometry3D {
     __obj.asInstanceOf[Geometry3D]
   }
   
-  extension [Self <: Geometry3D](x: Self) {
-    
-    inline def setVertexColors(value: js.Array[Double]): Self = StObject.set(x, "vertexColors", value.asInstanceOf[js.Any])
-    
-    inline def setVertexColorsVarargs(value: Double*): Self = StObject.set(x, "vertexColors", js.Array(value*))
-    
-    inline def setVertexUVs(value: js.Array[Double]): Self = StObject.set(x, "vertexUVs", value.asInstanceOf[js.Any])
-    
-    inline def setVertexUVsVarargs(value: Double*): Self = StObject.set(x, "vertexUVs", js.Array(value*))
-    
-    inline def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
-    
-    inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value*))
-  }
-  
   trait Line
     extends StObject
        with Geometry3D {
@@ -111,6 +96,21 @@ object Geometry3D {
       
       inline def setType(value: mesh): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
+  }
+  
+  extension [Self <: Geometry3D](x: Self) {
+    
+    inline def setVertexColors(value: js.Array[Double]): Self = StObject.set(x, "vertexColors", value.asInstanceOf[js.Any])
+    
+    inline def setVertexColorsVarargs(value: Double*): Self = StObject.set(x, "vertexColors", js.Array(value*))
+    
+    inline def setVertexUVs(value: js.Array[Double]): Self = StObject.set(x, "vertexUVs", value.asInstanceOf[js.Any])
+    
+    inline def setVertexUVsVarargs(value: Double*): Self = StObject.set(x, "vertexUVs", js.Array(value*))
+    
+    inline def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    
+    inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
   
   trait Points

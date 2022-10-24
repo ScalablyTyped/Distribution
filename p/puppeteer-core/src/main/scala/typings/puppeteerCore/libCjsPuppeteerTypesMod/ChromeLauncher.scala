@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ChromeLauncher protected ()
   extends typings.puppeteerCore.libCjsPuppeteerNodeChromeLauncherMod.ChromeLauncher {
-  def this(preferredRevision: String, isPuppeteerCore: Boolean) = this()
+  def this(puppeteer: typings.puppeteerCore.libCjsPuppeteerNodePuppeteerNodeMod.PuppeteerNode) = this()
 }

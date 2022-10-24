@@ -12,5 +12,5 @@ object distTypesCanvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def renderAnnotationsToCanvas[Datum](ctx: CanvasRenderingContext2D, hasAnnotationsTheme: Annotations[Datum]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAnnotationsToCanvas")(ctx.asInstanceOf[js.Any], hasAnnotationsTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderAnnotationsToCanvas[Datum](ctx: CanvasRenderingContext2D, param1: Annotations[Datum]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAnnotationsToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

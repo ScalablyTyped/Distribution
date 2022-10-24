@@ -91,99 +91,6 @@ object Configuration {
     }
   }
   
-  extension [Self <: Configuration](x: Self) {
-    
-    inline def setApiRootPath(value: String): Self = StObject.set(x, "apiRootPath", value.asInstanceOf[js.Any])
-    
-    inline def setApiRootPathUndefined: Self = StObject.set(x, "apiRootPath", js.undefined)
-    
-    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
-    
-    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
-    
-    inline def setAuth(value: typings.azureMobileApps.Azure.MobileApps.Configuration.Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthStubRoute(value: String): Self = StObject.set(x, "authStubRoute", value.asInstanceOf[js.Any])
-    
-    inline def setAuthStubRouteUndefined: Self = StObject.set(x, "authStubRoute", js.undefined)
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
-    inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
-    
-    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
-    
-    inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
-    
-    inline def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
-    
-    inline def setCors(value: Cors): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
-    
-    inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
-    
-    inline def setData(value: typings.azureMobileApps.Azure.MobileApps.Configuration.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-    
-    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
-    
-    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
-    
-    inline def setHomePage(value: Boolean): Self = StObject.set(x, "homePage", value.asInstanceOf[js.Any])
-    
-    inline def setHomePageUndefined: Self = StObject.set(x, "homePage", js.undefined)
-    
-    inline def setLogging(value: Logging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
-    
-    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
-    
-    inline def setMaxTop(value: Double): Self = StObject.set(x, "maxTop", value.asInstanceOf[js.Any])
-    
-    inline def setMaxTopUndefined: Self = StObject.set(x, "maxTop", js.undefined)
-    
-    inline def setNotificationRootPath(value: String): Self = StObject.set(x, "notificationRootPath", value.asInstanceOf[js.Any])
-    
-    inline def setNotificationRootPathUndefined: Self = StObject.set(x, "notificationRootPath", js.undefined)
-    
-    inline def setNotifications(value: Notifications): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
-    
-    inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
-    
-    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
-    
-    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-    
-    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
-    
-    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
-    
-    inline def setPromiseConstructor(
-      value: (/* resolve */ js.Function1[/* result */ Any, Unit], /* reject */ js.Function1[/* error */ Any, Unit]) => Thenable[Any]
-    ): Self = StObject.set(x, "promiseConstructor", js.Any.fromFunction2(value))
-    
-    inline def setPromiseConstructorUndefined: Self = StObject.set(x, "promiseConstructor", js.undefined)
-    
-    inline def setSwagger(value: Boolean): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
-    
-    inline def setSwaggerPath(value: String): Self = StObject.set(x, "swaggerPath", value.asInstanceOf[js.Any])
-    
-    inline def setSwaggerPathUndefined: Self = StObject.set(x, "swaggerPath", js.undefined)
-    
-    inline def setSwaggerUndefined: Self = StObject.set(x, "swagger", js.undefined)
-    
-    inline def setTableRootPath(value: String): Self = StObject.set(x, "tableRootPath", value.asInstanceOf[js.Any])
-    
-    inline def setTableRootPathUndefined: Self = StObject.set(x, "tableRootPath", js.undefined)
-    
-    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-    
-    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
-    
-    inline def setWebhook(value: Webhook): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
-    
-    inline def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
-  }
-  
   trait Cors extends StObject {
     
     var exposeHeaders: String
@@ -320,6 +227,99 @@ object Configuration {
   }
   
   trait LoggingTransport extends StObject
+  
+  extension [Self <: Configuration](x: Self) {
+    
+    inline def setApiRootPath(value: String): Self = StObject.set(x, "apiRootPath", value.asInstanceOf[js.Any])
+    
+    inline def setApiRootPathUndefined: Self = StObject.set(x, "apiRootPath", js.undefined)
+    
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    
+    inline def setAuth(value: typings.azureMobileApps.Azure.MobileApps.Configuration.Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    
+    inline def setAuthStubRoute(value: String): Self = StObject.set(x, "authStubRoute", value.asInstanceOf[js.Any])
+    
+    inline def setAuthStubRouteUndefined: Self = StObject.set(x, "authStubRoute", js.undefined)
+    
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    
+    inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    
+    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+    
+    inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+    
+    inline def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
+    
+    inline def setCors(value: Cors): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    
+    inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+    
+    inline def setData(value: typings.azureMobileApps.Azure.MobileApps.Configuration.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setHomePage(value: Boolean): Self = StObject.set(x, "homePage", value.asInstanceOf[js.Any])
+    
+    inline def setHomePageUndefined: Self = StObject.set(x, "homePage", js.undefined)
+    
+    inline def setLogging(value: Logging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    
+    inline def setMaxTop(value: Double): Self = StObject.set(x, "maxTop", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTopUndefined: Self = StObject.set(x, "maxTop", js.undefined)
+    
+    inline def setNotificationRootPath(value: String): Self = StObject.set(x, "notificationRootPath", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationRootPathUndefined: Self = StObject.set(x, "notificationRootPath", js.undefined)
+    
+    inline def setNotifications(value: Notifications): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    
+    inline def setPromiseConstructor(
+      value: (/* resolve */ js.Function1[/* result */ Any, Unit], /* reject */ js.Function1[/* error */ Any, Unit]) => Thenable[Any]
+    ): Self = StObject.set(x, "promiseConstructor", js.Any.fromFunction2(value))
+    
+    inline def setPromiseConstructorUndefined: Self = StObject.set(x, "promiseConstructor", js.undefined)
+    
+    inline def setSwagger(value: Boolean): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
+    
+    inline def setSwaggerPath(value: String): Self = StObject.set(x, "swaggerPath", value.asInstanceOf[js.Any])
+    
+    inline def setSwaggerPathUndefined: Self = StObject.set(x, "swaggerPath", js.undefined)
+    
+    inline def setSwaggerUndefined: Self = StObject.set(x, "swagger", js.undefined)
+    
+    inline def setTableRootPath(value: String): Self = StObject.set(x, "tableRootPath", value.asInstanceOf[js.Any])
+    
+    inline def setTableRootPathUndefined: Self = StObject.set(x, "tableRootPath", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    
+    inline def setWebhook(value: Webhook): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+    
+    inline def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
+  }
   
   trait Notifications extends StObject {
     

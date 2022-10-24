@@ -1,6 +1,7 @@
 package typings.wixStyleReact.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.ComponentType
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
@@ -11,26 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DictadditionalProps
   extends StObject
-     with /* additionalProps */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var as: /* keyof wix-style-react.anon.OmitPolyfillHTMLElementTa */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
+  var as: ComponentType[Any]
   
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
 }
 object DictadditionalProps {
   
-  inline def apply(
-    as: /* keyof wix-style-react.anon.OmitPolyfillHTMLElementTa */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
-  ): DictadditionalProps = {
+  inline def apply(as: ComponentType[Any]): DictadditionalProps = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictadditionalProps]
   }
   
   extension [Self <: DictadditionalProps](x: Self) {
     
-    inline def setAs(
-      value: /* keyof wix-style-react.anon.OmitPolyfillHTMLElementTa */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
-    ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: ComponentType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

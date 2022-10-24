@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "hast-util-phrasing"
-version := "2.0.1-a9d1bd"
-scalaVersion := "3.1.2"
+version := "2.0.1-d156db"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

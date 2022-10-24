@@ -19,9 +19,7 @@ object distCheckboxSrcUseCheckboxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useCheckbox(
-    hasModuleIsInFieldIdCheckedDefaultCheckedIndeterminateDefaultIndeterminateAutoFocusRequiredValidationStateOnChangeSizeReverseNameTabIndexActiveFocusHoverDisabledAriaLabelAriaLabelledByForwardedRef: UseCheckboxProps
-  ): UseCheckboxReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckbox")(hasModuleIsInFieldIdCheckedDefaultCheckedIndeterminateDefaultIndeterminateAutoFocusRequiredValidationStateOnChangeSizeReverseNameTabIndexActiveFocusHoverDisabledAriaLabelAriaLabelledByForwardedRef.asInstanceOf[js.Any]).asInstanceOf[UseCheckboxReturn]
+  inline def useCheckbox(param0: UseCheckboxProps): UseCheckboxReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckbox")(param0.asInstanceOf[js.Any]).asInstanceOf[UseCheckboxReturn]
   
   trait UseCheckboxProps extends StObject {
     

@@ -20,5 +20,5 @@ object typesLabelMod {
   val Label: ForwardRefExoticComponent[LabelProps & RefAttributes[HTMLLabelElement]] = js.native
   
   inline def labelStyles(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("labelStyles")().asInstanceOf[String]
-  inline def labelStyles(hasErrorActiveDisabled: LabelStates): String = ^.asInstanceOf[js.Dynamic].applyDynamic("labelStyles")(hasErrorActiveDisabled.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def labelStyles(param0: LabelStates): String = ^.asInstanceOf[js.Dynamic].applyDynamic("labelStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

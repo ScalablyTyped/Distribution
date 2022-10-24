@@ -18,7 +18,7 @@ object typesUseFieldStatesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useFieldStates[E /* <: FormElement */](hasOnBlurOnFocusOnChangeValueDefaultValue: FieldStatesOptions[E]): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFieldStates")(hasOnBlurOnFocusOnChangeValueDefaultValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  inline def useFieldStates[E /* <: FormElement */](param0: FieldStatesOptions[E]): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFieldStates")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
   
   /**
     * @internal

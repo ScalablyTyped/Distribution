@@ -13,7 +13,5 @@ object distOpsFusedDepthwiseConv2dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
-    hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Bias[T]
-  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](param0: Bias[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(param0.asInstanceOf[js.Any]).asInstanceOf[T]
 }

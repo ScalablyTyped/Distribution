@@ -13,5 +13,5 @@ object distTypesEventSelectionSetSelectionPerMouseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def setSelectionPerMouseDown(hasDocumentTargetClickCountNodeOffset: ClickCount): js.UndefOr[Range | SelectionRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelectionPerMouseDown")(hasDocumentTargetClickCountNodeOffset.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Range | SelectionRange]]
+  inline def setSelectionPerMouseDown(param0: ClickCount): js.UndefOr[Range | SelectionRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelectionPerMouseDown")(param0.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Range | SelectionRange]]
 }

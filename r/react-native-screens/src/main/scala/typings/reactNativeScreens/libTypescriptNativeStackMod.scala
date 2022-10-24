@@ -30,19 +30,13 @@ object libTypescriptNativeStackMod {
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     NativeStackNavigationOptions, 
     NativeStackNavigationEventMap, 
-    js.Function1[
-      /* hasInitialRouteNameChildrenScreenOptionsRest */ NativeStackNavigatorProps, 
-      Element
-    ]
+    js.Function1[/* param0 */ NativeStackNavigatorProps, Element]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNativeStackNavigator")().asInstanceOf[TypedNavigator[
     ParamList, 
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     NativeStackNavigationOptions, 
     NativeStackNavigationEventMap, 
-    js.Function1[
-      /* hasInitialRouteNameChildrenScreenOptionsRest */ NativeStackNavigatorProps, 
-      Element
-    ]
+    js.Function1[/* param0 */ NativeStackNavigatorProps, Element]
   ]]
   
   inline def useHeaderHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("useHeaderHeight")().asInstanceOf[Double]

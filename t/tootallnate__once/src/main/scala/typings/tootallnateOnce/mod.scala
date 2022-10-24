@@ -15,7 +15,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default[Emitter /* <: EventEmitter */, Event /* <: EventNames[Emitter] */](emitter: Emitter, name: Event): js.Promise[EventListenerParameters[Emitter, Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EventListenerParameters[Emitter, Event]]]
-  inline def default[Emitter /* <: EventEmitter */, Event /* <: EventNames[Emitter] */](emitter: Emitter, name: Event, hasSignal: OnceOptions): js.Promise[EventListenerParameters[Emitter, Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any], hasSignal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EventListenerParameters[Emitter, Event]]]
+  inline def default[Emitter /* <: EventEmitter */, Event /* <: EventNames[Emitter] */](emitter: Emitter, name: Event, param2: OnceOptions): js.Promise[EventListenerParameters[Emitter, Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EventListenerParameters[Emitter, Event]]]
   
   trait OnceOptions extends StObject {
     

@@ -14,7 +14,7 @@ object distSrcModulesUiSubtitlesSubtitlesMod {
   open class default protected ()
     extends StObject
        with Subtitles {
-    def this(hasRootContainerEngineEventEmitter: EventEmitterRootContainer) = this()
+    def this(param0: EventEmitterRootContainer) = this()
   }
   object default {
     

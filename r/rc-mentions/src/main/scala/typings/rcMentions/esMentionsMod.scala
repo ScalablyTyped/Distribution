@@ -1315,9 +1315,7 @@ object esMentionsMod {
     
     var dropdownClassName: js.UndefOr[String] = js.undefined
     
-    var filterOption: js.UndefOr[
-        `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])
-      ] = js.undefined
+    var filterOption: js.UndefOr[`false` | (js.Function2[/* input */ String, /* param1 */ OptionProps, Boolean])] = js.undefined
     
     var getPopupContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
@@ -1366,9 +1364,9 @@ object esMentionsMod {
       
       inline def setDropdownClassNameUndefined: Self = StObject.set(x, "dropdownClassName", js.undefined)
       
-      inline def setFilterOption(value: `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
+      inline def setFilterOption(value: `false` | (js.Function2[/* input */ String, /* param1 */ OptionProps, Boolean])): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
       
-      inline def setFilterOptionFunction2(value: (/* input */ String, /* hasValue */ OptionProps) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
+      inline def setFilterOptionFunction2(value: (/* input */ String, /* param1 */ OptionProps) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
       
       inline def setFilterOptionUndefined: Self = StObject.set(x, "filterOption", js.undefined)
       

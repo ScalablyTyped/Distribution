@@ -64,27 +64,6 @@ object examplesJsmLibsStatsDotmoduleMod {
       __obj.asInstanceOf[Stats]
     }
     
-    trait Panel extends StObject {
-      
-      var dom: HTMLCanvasElement
-      
-      def update(value: Double, maxValue: Double): Unit
-    }
-    object Panel {
-      
-      inline def apply(dom: HTMLCanvasElement, update: (Double, Double) => Unit): Panel = {
-        val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], update = js.Any.fromFunction2(update))
-        __obj.asInstanceOf[Panel]
-      }
-      
-      extension [Self <: Panel](x: Self) {
-        
-        inline def setDom(value: HTMLCanvasElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
-        
-        inline def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
-      }
-    }
-    
     extension [Self <: Stats](x: Self) {
       
       inline def setAddPanel(value: Panel => Panel): Self = StObject.set(x, "addPanel", js.Any.fromFunction1(value))
@@ -104,6 +83,27 @@ object examplesJsmLibsStatsDotmoduleMod {
       inline def setShowPanel(value: Double => Unit): Self = StObject.set(x, "showPanel", js.Any.fromFunction1(value))
       
       inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    }
+    
+    trait Panel extends StObject {
+      
+      var dom: HTMLCanvasElement
+      
+      def update(value: Double, maxValue: Double): Unit
+    }
+    object Panel {
+      
+      inline def apply(dom: HTMLCanvasElement, update: (Double, Double) => Unit): Panel = {
+        val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], update = js.Any.fromFunction2(update))
+        __obj.asInstanceOf[Panel]
+      }
+      
+      extension [Self <: Panel](x: Self) {
+        
+        inline def setDom(value: HTMLCanvasElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+        
+        inline def setUpdate(value: (Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      }
     }
   }
 }

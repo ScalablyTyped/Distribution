@@ -13,7 +13,7 @@ object distSrcModulesPlaybackEngineLiveStateEngineMod {
   open class default protected ()
     extends StObject
        with LiveStateEngine {
-    def this(hasEventEmitterEngine: ILiveStateEngineDependencies) = this()
+    def this(param0: ILiveStateEngineDependencies) = this()
   }
   object default {
     

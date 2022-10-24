@@ -23,5 +23,5 @@ object distCompileValidateKeywordMod {
   inline def validSchemaType(schema: Any, schemaType: js.Array[JSONType]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validSchemaType")(schema.asInstanceOf[js.Any], schemaType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def validSchemaType(schema: Any, schemaType: js.Array[JSONType], allowUndefined: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validSchemaType")(schema.asInstanceOf[js.Any], schemaType.asInstanceOf[js.Any], allowUndefined.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def validateKeywordUsage(hasSchemaOptsSelfErrSchemaPath: SchemaObjCxt, `def`: AddedKeywordDefinition, keyword: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateKeywordUsage")(hasSchemaOptsSelfErrSchemaPath.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateKeywordUsage(param0: SchemaObjCxt, `def`: AddedKeywordDefinition, keyword: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateKeywordUsage")(param0.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], keyword.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

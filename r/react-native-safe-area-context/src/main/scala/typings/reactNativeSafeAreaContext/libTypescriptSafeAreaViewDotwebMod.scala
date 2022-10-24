@@ -12,5 +12,5 @@ object libTypescriptSafeAreaViewDotwebMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SafeAreaView(hasStyleModeEdgesRest: NativeSafeAreaViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaView")(hasStyleModeEdgesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SafeAreaView(param0: NativeSafeAreaViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaView")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

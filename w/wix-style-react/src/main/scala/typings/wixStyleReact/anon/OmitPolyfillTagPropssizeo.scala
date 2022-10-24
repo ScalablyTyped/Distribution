@@ -5,12 +5,12 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
-import typings.wixStyleReact.tagMod.TagTheme
+import typings.wixStyleReact.distTypesTagMod.TagTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined wix-style-react.wix-style-react/dist/es/src/common.OmitPolyfill<wix-style-react.wix-style-react/dist/es/src/Tag.TagProps, 'size' | 'onRemove'> */
+/* Inlined wix-style-react.wix-style-react/dist/types/common.OmitPolyfill<wix-style-react.wix-style-react/dist/types/Tag.TagProps, 'size' | 'onRemove'> */
 trait OmitPolyfillTagPropssizeo extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.undefined
@@ -23,7 +23,7 @@ trait OmitPolyfillTagPropssizeo extends StObject {
   
   var id: String
   
-  var maxWidth: js.UndefOr[Double] = js.undefined
+  var maxWidth: js.UndefOr[typings.csstype.mod.Property.MaxWidth[String | Double]] = js.undefined
   
   var onClick: js.UndefOr[
     js.Function2[/* id */ String, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]
@@ -62,7 +62,7 @@ object OmitPolyfillTagPropssizeo {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: typings.csstype.mod.Property.MaxWidth[String | Double]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     

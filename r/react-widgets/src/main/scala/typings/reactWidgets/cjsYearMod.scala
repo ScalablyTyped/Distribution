@@ -15,7 +15,7 @@ object cjsYearMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasFocusedItemDisabledOnChangeValueMinLocalizerMaxProps: YearProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasFocusedItemDisabledOnChangeValueMinLocalizerMaxProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: YearProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait YearProps
     extends StObject

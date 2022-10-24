@@ -14,7 +14,7 @@ object buildSrcCompileMarkEncodeOffsetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def positionOffset(hasBaseChannelMarkDefEncodingModelBandPosition: MarkDef): Offset = ^.asInstanceOf[js.Dynamic].applyDynamic("positionOffset")(hasBaseChannelMarkDefEncodingModelBandPosition.asInstanceOf[js.Any]).asInstanceOf[Offset]
+  inline def positionOffset(param0: MarkDef): Offset = ^.asInstanceOf[js.Dynamic].applyDynamic("positionOffset")(param0.asInstanceOf[js.Any]).asInstanceOf[Offset]
   
   trait Offset extends StObject {
     

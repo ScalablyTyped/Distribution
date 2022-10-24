@@ -24,9 +24,7 @@ object distAlertSrcMod {
   @js.native
   val AlertTrigger: OrbitComponent[HTMLElement, InnerDialogTriggerProps] = js.native
   
-  inline def InnerAlert(
-    hasVariantPrimaryButtonLabelPrimaryButtonDisabledSecondaryButtonLabelSecondaryButtonDisabledCancelButtonLabelAutoFocusButtonOnPrimaryButtonClickOnSecondaryButtonClickOnCancelButtonClickZIndexChildrenForwardedRefRest: InnerAlertProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlert")(hasVariantPrimaryButtonLabelPrimaryButtonDisabledSecondaryButtonLabelSecondaryButtonDisabledCancelButtonLabelAutoFocusButtonOnPrimaryButtonClickOnSecondaryButtonClickOnCancelButtonClickZIndexChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAlert(param0: InnerAlertProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlert")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerAlertTrigger(hasForwardedRefRest: InnerAlertTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlertTrigger")(hasForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAlertTrigger(param0: InnerAlertTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAlertTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

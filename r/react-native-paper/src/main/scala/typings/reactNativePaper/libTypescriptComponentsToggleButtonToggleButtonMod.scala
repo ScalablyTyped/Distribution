@@ -23,23 +23,11 @@ object libTypescriptComponentsToggleButtonToggleButtonMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/ToggleButton/ToggleButton", JSImport.Default)
   @js.native
-  val default: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasIconSizeThemeAccessibilityLabelDisabledStyleValueStatusOnPressRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) = js.native
   
   @JSImport("react-native-paper/lib/typescript/components/ToggleButton/ToggleButton", "ToggleButton")
   @js.native
-  val ToggleButton: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasIconSizeThemeAccessibilityLabelDisabledStyleValueStatusOnPressRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ]) = js.native
+  val ToggleButton: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) = js.native
   
   trait Props extends StObject {
     
@@ -143,20 +131,8 @@ object libTypescriptComponentsToggleButtonToggleButtonMod extends Shortcut {
     }
   }
   
-  type _To = ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasIconSizeThemeAccessibilityLabelDisabledStyleValueStatusOnPressRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ])
+  type _To = ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsToggleButtonToggleButtonMod.foo` */
-  override def _to: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[
-    ComponentType[Props] & (js.Function1[
-      /* hasIconSizeThemeAccessibilityLabelDisabledStyleValueStatusOnPressRest */ Props, 
-      Element
-    ]), 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickPropsstylecolorsizeon] & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object]) = default
 }

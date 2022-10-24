@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cookie-signature"
-version := "1.0-dt-20211223Z-ccf4ea"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211223Z-f125e8"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

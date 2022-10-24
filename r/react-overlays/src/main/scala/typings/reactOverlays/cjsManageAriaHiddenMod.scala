@@ -14,9 +14,9 @@ object cjsManageAriaHiddenMod {
   inline def ariaHidden(hide: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(hide.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def ariaHidden(hide: Boolean, node: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(hide.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def hideSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hideSiblings")(container.asInstanceOf[js.Any], hasDialogBackdrop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hideSiblings(container: Element, param1: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hideSiblings")(container.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def showSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSiblings")(container.asInstanceOf[js.Any], hasDialogBackdrop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showSiblings(container: Element, param1: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSiblings")(container.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait SiblingExclusions extends StObject {
     

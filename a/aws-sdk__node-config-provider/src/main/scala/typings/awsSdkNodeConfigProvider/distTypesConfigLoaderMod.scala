@@ -17,11 +17,8 @@ object distTypesConfigLoaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loadConfig[T](hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue: LoadedConfigSelectors[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
-  inline def loadConfig[T](
-    hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue: LoadedConfigSelectors[T],
-    configuration: LocalConfigOptions
-  ): Provider[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(hasEnvironmentVariableSelectorConfigFileSelectorDefaultValue.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Provider[T]]
+  inline def loadConfig[T](param0: LoadedConfigSelectors[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
+  inline def loadConfig[T](param0: LoadedConfigSelectors[T], configuration: LocalConfigOptions): Provider[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(param0.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Provider[T]]
   
   trait LoadedConfigSelectors[T] extends StObject {
     

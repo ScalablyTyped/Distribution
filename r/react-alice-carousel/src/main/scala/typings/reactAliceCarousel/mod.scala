@@ -219,9 +219,9 @@ object mod {
     def _handleSlideChanged(): js.Promise[Unit] = js.native
     def _handleSlideChanged(eventType: EventType): js.Promise[Unit] = js.native
     
-    def _handleSlideTo(hasActiveIndexFadeoutAnimationIndexFadeoutAnimationPositionEventType: SlideTo): js.Promise[Unit] = js.native
+    def _handleSlideTo(param0: SlideTo): js.Promise[Unit] = js.native
     
-    def _handleTouchend(e: Any, hasDeltaX: EventData): Unit = js.native
+    def _handleTouchend(e: Any, param1: EventData): Unit = js.native
     
     def _handleTouchmove(e: Any, eventData: EventData): Unit = js.native
     

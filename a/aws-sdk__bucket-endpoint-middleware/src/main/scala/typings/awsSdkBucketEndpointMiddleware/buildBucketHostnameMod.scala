@@ -10,9 +10,7 @@ object buildBucketHostnameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bucketHostname(
-    hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible: BucketHostnameParameters
-  ): BucketHostname_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketHostname")(hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible.asInstanceOf[js.Any]).asInstanceOf[BucketHostname_]
+  inline def bucketHostname(param0: BucketHostnameParameters): BucketHostname_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketHostname")(param0.asInstanceOf[js.Any]).asInstanceOf[BucketHostname_]
   
   trait BucketHostnameParameters extends StObject {
     

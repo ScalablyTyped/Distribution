@@ -13,7 +13,7 @@ object buildIosXcodeProjectFileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createBuildSourceFile(hasProjectNativeProjectRootFilePathFileContentsOverwrite: FileContents): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuildSourceFile")(hasProjectNativeProjectRootFilePathFileContentsOverwrite.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createBuildSourceFile(param0: FileContents): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuildSourceFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@expo/config-plugins/build/ios/XcodeProjectFile", "withBuildSourceFile")
   @js.native

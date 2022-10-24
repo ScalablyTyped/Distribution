@@ -11,7 +11,7 @@ object distTypesStreamDotsItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def StreamDotsItem(hasXYSizeColorBorderWidthBorderColor: StreamDotsItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StreamDotsItem")(hasXYSizeColorBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StreamDotsItem(param0: StreamDotsItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StreamDotsItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait StreamDotsItemProps extends StObject {
     

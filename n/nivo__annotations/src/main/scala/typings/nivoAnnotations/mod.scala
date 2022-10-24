@@ -25,7 +25,7 @@ object mod {
   
   inline def Annotation[Datum](annotation: BoundAnnotation[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Annotation")(annotation.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def bindAnnotations[Datum](hasDataAnnotationsGetPositionGetDimensions: Data[Datum]): js.Array[BoundAnnotation[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAnnotations")(hasDataAnnotationsGetPositionGetDimensions.asInstanceOf[js.Any]).asInstanceOf[js.Array[BoundAnnotation[Datum]]]
+  inline def bindAnnotations[Datum](param0: Data[Datum]): js.Array[BoundAnnotation[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[BoundAnnotation[Datum]]]
   
   inline def computeAnnotation[Datum](annotation: BoundAnnotation[Datum]): AnnotationInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAnnotation")(annotation.asInstanceOf[js.Any]).asInstanceOf[AnnotationInstructions]
   
@@ -78,11 +78,11 @@ object mod {
   
   inline def isSvgNote[Datum](note: Note[Datum]): /* is @nivo/annotations.@nivo/annotations/dist/types/types.NoteSvg<Datum> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSvgNote")(note.asInstanceOf[js.Any]).asInstanceOf[/* is @nivo/annotations.@nivo/annotations/dist/types/types.NoteSvg<Datum> */ Boolean]
   
-  inline def renderAnnotationsToCanvas[Datum](ctx: CanvasRenderingContext2D, hasAnnotationsTheme: Annotations[Datum]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAnnotationsToCanvas")(ctx.asInstanceOf[js.Any], hasAnnotationsTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderAnnotationsToCanvas[Datum](ctx: CanvasRenderingContext2D, param1: Annotations[Datum]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAnnotationsToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def useAnnotations[Datum](hasDataAnnotationsGetPositionGetDimensions: GetDimensions[Datum]): js.Array[BoundAnnotation[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnnotations")(hasDataAnnotationsGetPositionGetDimensions.asInstanceOf[js.Any]).asInstanceOf[js.Array[BoundAnnotation[Datum]]]
+  inline def useAnnotations[Datum](param0: GetDimensions[Datum]): js.Array[BoundAnnotation[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[BoundAnnotation[Datum]]]
   
   inline def useComputedAnnotation[Datum](annotation: BoundAnnotation[Datum]): AnnotationInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("useComputedAnnotation")(annotation.asInstanceOf[js.Any]).asInstanceOf[AnnotationInstructions]
   
-  inline def useComputedAnnotations[Datum](hasAnnotations: AnnotationsArray[Datum]): js.Array[Computed[Datum] | NoteTextOffset[Datum] | Height[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useComputedAnnotations")(hasAnnotations.asInstanceOf[js.Any]).asInstanceOf[js.Array[Computed[Datum] | NoteTextOffset[Datum] | Height[Datum]]]
+  inline def useComputedAnnotations[Datum](param0: AnnotationsArray[Datum]): js.Array[Computed[Datum] | NoteTextOffset[Datum] | Height[Datum]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useComputedAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Computed[Datum] | NoteTextOffset[Datum] | Height[Datum]]]
 }

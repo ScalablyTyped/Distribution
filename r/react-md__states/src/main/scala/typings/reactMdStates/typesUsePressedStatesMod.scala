@@ -13,7 +13,7 @@ object typesUsePressedStatesMod {
   val ^ : js.Any = js.native
   
   inline def usePressedStates[E /* <: HTMLElement */](): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePressedStates")().asInstanceOf[ReturnValue[E]]
-  inline def usePressedStates[E /* <: HTMLElement */](hasHandlersDisableSpacebarClick: PressedStatesOptions[E]): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePressedStates")(hasHandlersDisableSpacebarClick.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  inline def usePressedStates[E /* <: HTMLElement */](param0: PressedStatesOptions[E]): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePressedStates")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
   
   trait PressedStatesOptions[E /* <: HTMLElement */] extends StObject {
     

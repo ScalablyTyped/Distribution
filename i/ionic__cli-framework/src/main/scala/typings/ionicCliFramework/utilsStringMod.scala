@@ -25,7 +25,7 @@ object utilsStringMod {
   inline def isValidURL(url: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def slugify(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def slugify(input: String, hasSeparator: SlugifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any], hasSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def slugify(input: String, param1: SlugifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def str2num(value: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def str2num(value: Any, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]

@@ -20,9 +20,7 @@ object distTypesRadarLayerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RadarLayer[D /* <: Record[String, Any] */](
-    hasDataKeyColorByKeyFillByKeyRadiusScaleRotationAngleStepCurveFactoryBorderWidthBorderColorFillOpacityBlendMode: RadarLayerProps[D]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarLayer")(hasDataKeyColorByKeyFillByKeyRadiusScaleRotationAngleStepCurveFactoryBorderWidthBorderColorFillOpacityBlendMode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RadarLayer[D /* <: Record[String, Any] */](param0: RadarLayerProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarLayer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RadarLayerProps[D /* <: Record[String, Any] */] extends StObject {
     

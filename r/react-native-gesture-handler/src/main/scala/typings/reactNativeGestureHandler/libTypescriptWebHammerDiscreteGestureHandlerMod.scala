@@ -15,8 +15,8 @@ object libTypescriptWebHammerDiscreteGestureHandlerMod {
   trait DiscreteGestureHandler
     extends typings.reactNativeGestureHandler.libTypescriptWebHammerGestureHandlerMod.default {
     
-    def shouldFailUnderCustomCriteria(hasXYDeltaXDeltaY: Any, hasMaxDeltaXMaxDeltaYMaxDistSqShouldCancelWhenOutside: Any): Boolean = js.native
+    def shouldFailUnderCustomCriteria(param0: Any, param1: Any): Boolean = js.native
     
-    def transformNativeEvent(hasHasXY: Any): Y = js.native
+    def transformNativeEvent(param0: Any): Y = js.native
   }
 }

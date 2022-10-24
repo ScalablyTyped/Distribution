@@ -156,9 +156,9 @@ object `@reactNavigationNativeMod` {
     inline def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
   }
   
-  inline def DrawerRouter(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(hasOpenByDefaultRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
+  inline def DrawerRouter(param0: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
-  inline def Link(hasToActionRest: Props): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(hasToActionRest.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
+  inline def Link(param0: Props): CElement[TextProps, Text] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(param0.asInstanceOf[js.Any]).asInstanceOf[CElement[TextProps, Text]]
   
   /**
     * Container component which holds the navigation state designed for React Native apps.
@@ -257,15 +257,15 @@ object `@reactNavigationNativeMod` {
     inline def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
   }
   
-  inline def TabRouter(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[
+  inline def TabRouter(param0: TabRouterOptions): Router[
     TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | TabActionType
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Router[
     TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | TabActionType
   ]]
   
-  inline def ThemeProvider(hasValueChildren: typings.tuyaPanelKit.`@reactNavigationNativeThemingThemeProviderMod`.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasValueChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ThemeProvider(param0: typings.tuyaPanelKit.`@reactNavigationNativeThemingThemeProviderMod`.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def createNavigatorFactory[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[Any] */](Navigator: NavigatorComponent): js.Function0[
     TypedNavigator[
@@ -310,14 +310,11 @@ object `@reactNavigationNativeMod` {
   
   inline def useLinkBuilder(): js.Function2[/* name */ String, /* params */ js.UndefOr[js.Object], js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkBuilder")().asInstanceOf[js.Function2[/* name */ String, /* params */ js.UndefOr[js.Object], js.UndefOr[String]]]
   
-  inline def useLinkProps(hasToAction: typings.tuyaPanelKit.`@reactNavigationNativeUseLinkPropsMod`.Props): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkProps")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
+  inline def useLinkProps(param0: typings.tuyaPanelKit.`@reactNavigationNativeUseLinkPropsMod`.Props): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkProps")(param0.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
   
   inline def useLinkTo(): js.Function1[/* path */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLinkTo")().asInstanceOf[js.Function1[/* path */ String, Unit]]
   
-  inline def useLinking(
-    ref: RefObject[NavigationContainerRef],
-    hasEnabledConfigGetStateFromPathGetPathFromState: LinkingOptions
-  ): GetInitialState = (^.asInstanceOf[js.Dynamic].applyDynamic("useLinking")(ref.asInstanceOf[js.Any], hasEnabledConfigGetStateFromPathGetPathFromState.asInstanceOf[js.Any])).asInstanceOf[GetInitialState]
+  inline def useLinking(ref: RefObject[NavigationContainerRef], param1: LinkingOptions): GetInitialState = (^.asInstanceOf[js.Dynamic].applyDynamic("useLinking")(ref.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[GetInitialState]
   
   inline def useNavigation[T /* <: NavigationProp[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigation")().asInstanceOf[T]
   

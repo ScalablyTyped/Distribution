@@ -11,7 +11,7 @@ object libOpenMod {
   val ^ : js.Any = js.native
   
   inline def openUrl(target: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def openUrl(target: String, hasAppUrl: OpenUrlOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(target.asInstanceOf[js.Any], hasAppUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def openUrl(target: String, param1: OpenUrlOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(target.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait OpenUrlOptions extends StObject {
     

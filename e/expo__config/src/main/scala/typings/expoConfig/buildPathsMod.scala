@@ -38,14 +38,14 @@ object buildPathsMod {
   
   inline def getFileWithExtensions(fromDirectory: String, moduleId: String, extensions: js.Array[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileWithExtensions")(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  inline def getLanguageExtensionsInOrder(hasIsTSIsModernIsReact: LanguageOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageExtensionsInOrder")(hasIsTSIsModernIsReact.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getLanguageExtensionsInOrder(param0: LanguageOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageExtensionsInOrder")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def getManagedExtensions(platforms: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getManagedExtensions")(platforms.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def getManagedExtensions(platforms: js.Array[String], languageOptions: LanguageOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getManagedExtensions")(platforms.asInstanceOf[js.Any], languageOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def getPossibleProjectRoot(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPossibleProjectRoot")().asInstanceOf[String]
   
-  inline def resolveEntryPoint(projectRoot: String, hasPlatformProjectConfig: Platform): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveEntryPoint")(projectRoot.asInstanceOf[js.Any], hasPlatformProjectConfig.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def resolveEntryPoint(projectRoot: String, param1: Platform): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveEntryPoint")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   inline def resolveFromSilentWithExtensions(fromDirectory: String, moduleId: String, extensions: js.Array[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFromSilentWithExtensions")(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }

@@ -103,8 +103,8 @@ inline def TICK: tick = ^.asInstanceOf[js.Dynamic].selectDynamic("TICK").asInsta
 inline def TRAIL: trail = ^.asInstanceOf[js.Dynamic].selectDynamic("TRAIL").asInstanceOf[trail]
 
 inline def VL_ONLY_MARK_CONFIG_PROPERTIES: js.Array[
-/* keyof vega-lite.vega-lite/build/src/mark.VLOnlyMarkConfig<any> */ filled | invalid | order | timeUnitBandPosition | timeUnitBandSize | theta2 | radius2 | color] = ^.asInstanceOf[js.Dynamic].selectDynamic("VL_ONLY_MARK_CONFIG_PROPERTIES").asInstanceOf[js.Array[
-/* keyof vega-lite.vega-lite/build/src/mark.VLOnlyMarkConfig<any> */ filled | invalid | order | timeUnitBandPosition | timeUnitBandSize | theta2 | radius2 | color]]
+/* keyof vega-lite.vega-lite/build/src/mark.VLOnlyMarkConfig<any> */ filled | order | timeUnitBandPosition | timeUnitBandSize | theta2 | radius2 | color | invalid] = ^.asInstanceOf[js.Dynamic].selectDynamic("VL_ONLY_MARK_CONFIG_PROPERTIES").asInstanceOf[js.Array[
+/* keyof vega-lite.vega-lite/build/src/mark.VLOnlyMarkConfig<any> */ filled | order | timeUnitBandPosition | timeUnitBandSize | theta2 | radius2 | color | invalid]]
 
 inline def defaultBarConfig: RectConfig[SignalRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultBarConfig").asInstanceOf[RectConfig[SignalRef]]
 

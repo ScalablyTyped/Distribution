@@ -15,7 +15,7 @@ object libUtilsMathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getActiveIndex(hasStartIndexItemsCountInfinite: Infinite): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveIndex")(hasStartIndexItemsCountInfinite.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getActiveIndex(param0: Infinite): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveIndex")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def getFadeoutAnimationIndex(state: State): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFadeoutAnimationIndex")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   

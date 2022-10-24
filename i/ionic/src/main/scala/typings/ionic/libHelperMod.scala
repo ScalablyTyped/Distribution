@@ -13,7 +13,7 @@ object libHelperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def sendMessage(hasConfigCtx: SendMessageDeps, msg: IPCMessage): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(hasConfigCtx.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def sendMessage(param0: SendMessageDeps, msg: IPCMessage): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(param0.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait SendMessageDeps extends StObject {
     

@@ -14,9 +14,7 @@ object distComponentsImageDropzoneMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ImageDropzone(
-    hasHandleFilesMaxNumberOfFilesChildrenAcceptMultipleDisabled: PropsWithChildren[ImageDropzoneProps]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImageDropzone")(hasHandleFilesMaxNumberOfFilesChildrenAcceptMultipleDisabled.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ImageDropzone(param0: PropsWithChildren[ImageDropzoneProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImageDropzone")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ImageDropzoneProps extends StObject {
     

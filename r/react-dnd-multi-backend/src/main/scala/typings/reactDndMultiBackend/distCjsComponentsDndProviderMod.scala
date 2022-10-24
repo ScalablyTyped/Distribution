@@ -13,7 +13,7 @@ object distCjsComponentsDndProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DndProvider(hasPortalProps: DndProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DndProvider")(hasPortalProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DndProvider(param0: DndProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DndProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-dnd-multi-backend/dist/cjs/components/DndProvider", "PreviewPortalContext")
   @js.native

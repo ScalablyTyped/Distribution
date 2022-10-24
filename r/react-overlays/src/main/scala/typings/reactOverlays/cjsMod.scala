@@ -45,9 +45,7 @@ object cjsMod {
       * @displayName Dropdown
       * @public
       */
-    inline def apply(
-      hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: DropdownProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-overlays/cjs", "Dropdown")
     @js.native
@@ -62,7 +60,7 @@ object cjsMod {
         * @displayName DropdownMenu
         * @memberOf Dropdown
         */
-      inline def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(param0: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-overlays/cjs", "Dropdown.Menu")
       @js.native
@@ -180,7 +178,7 @@ object cjsMod {
         * @displayName DropdownToggle
         * @memberOf Dropdown
         */
-      inline def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(param0: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-overlays/cjs", "Dropdown.Toggle")
       @js.native
@@ -323,7 +321,7 @@ object cjsMod {
     }
   }
   
-  /* Inlined react.react.ForwardRefExoticComponent<react-overlays.react-overlays/cjs/Modal.ModalProps & react.react.RefAttributes<react-overlays.react-overlays/cjs/Modal.ModalHandle>> & {  Manager :new (hasHideSiblingNodesHandleContainerOverflow : {  hideSiblingNodes :boolean | undefined,   handleContainerOverflow :boolean | undefined} | undefined): react-overlays.react-overlays/cjs/ModalManager.default} */
+  /* Inlined react.react.ForwardRefExoticComponent<react-overlays.react-overlays/cjs/Modal.ModalProps & react.react.RefAttributes<react-overlays.react-overlays/cjs/Modal.ModalHandle>> & {  Manager :new (param0 : {  hideSiblingNodes :boolean | undefined,   handleContainerOverflow :boolean | undefined} | undefined): react-overlays.react-overlays/cjs/ModalManager.default} */
   object Modal {
     
     /**
@@ -339,20 +337,12 @@ object cjsMod {
     @JSImport("react-overlays/cjs", "Modal.Manager")
     @js.native
     open class Manager () extends default {
-      def this(hasHideSiblingNodesHandleContainerOverflow: HandleContainerOverflow) = this()
+      def this(param0: HandleContainerOverflow) = this()
     }
     @JSImport("react-overlays/cjs", "Modal.Manager")
     @js.native
-    def Manager: Instantiable1[
-        /* hasHideSiblingNodesHandleContainerOverflow */ js.UndefOr[HandleContainerOverflow], 
-        default
-      ] = js.native
-    inline def Manager_=(
-      x: Instantiable1[
-          /* hasHideSiblingNodesHandleContainerOverflow */ js.UndefOr[HandleContainerOverflow], 
-          default
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Manager")(x.asInstanceOf[js.Any])
+    def Manager: Instantiable1[/* param0 */ js.UndefOr[HandleContainerOverflow], default] = js.native
+    inline def Manager_=(x: Instantiable1[/* param0 */ js.UndefOr[HandleContainerOverflow], default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Manager")(x.asInstanceOf[js.Any])
     
     @JSImport("react-overlays/cjs", "Modal.defaultProps")
     @js.native
@@ -387,7 +377,7 @@ object cjsMod {
     */
   object Portal {
     
-    inline def apply(hasContainerChildrenOnRendered: PortalProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(hasContainerChildrenOnRendered.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    inline def apply(param0: PortalProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
     
     @JSImport("react-overlays/cjs", "Portal")
     @js.native
@@ -410,17 +400,9 @@ object cjsMod {
   inline def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleMetadata]]
   
   inline def useRootClose(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useRootClose(
-    ref: Null,
-    onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRootClose(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit], param2: RootCloseOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useRootClose(ref: Unit, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useRootClose(
-    ref: Unit,
-    onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRootClose(ref: Unit, onRootClose: js.Function1[/* e */ Event, Unit], param2: RootCloseOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * The `useRootClose` hook registers your callback on the document
     * when rendered. Powers the `<Overlay/>` component. This is used achieve modal
@@ -437,12 +419,8 @@ object cjsMod {
   inline def useRootClose(
     ref: RefObject[typings.std.Element],
     onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    param2: RootCloseOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useRootClose(ref: typings.std.Element, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useRootClose(
-    ref: typings.std.Element,
-    onRootClose: js.Function1[/* e */ Event, Unit],
-    hasDisabledClickTrigger: RootCloseOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRootClose(ref: typings.std.Element, onRootClose: js.Function1[/* e */ Event, Unit], param2: RootCloseOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

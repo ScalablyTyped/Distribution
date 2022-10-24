@@ -24,7 +24,7 @@ object distDeclarationsSrcConfigWheelConfigResolverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def axis(_v: Any, _k: String, hasAxis: CoordinatesConfig[CoordinatesKey]): js.UndefOr[x | y] = (^.asInstanceOf[js.Dynamic].applyDynamic("axis")(_v.asInstanceOf[js.Any], _k.asInstanceOf[js.Any], hasAxis.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[x | y]]
+    inline def axis(_v: Any, _k: String, param3: CoordinatesConfig[CoordinatesKey]): js.UndefOr[x | y] = (^.asInstanceOf[js.Dynamic].applyDynamic("axis")(_v.asInstanceOf[js.Any], _k.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[x | y]]
     
     inline def axisThreshold(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("axisThreshold")().asInstanceOf[Double]
     inline def axisThreshold(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("axisThreshold")(value.asInstanceOf[js.Any]).asInstanceOf[Double]

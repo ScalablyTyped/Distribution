@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-actions
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 Get UI feedback when an action is performed on an interactive element

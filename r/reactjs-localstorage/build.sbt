@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "reactjs-localstorage"
-version := "1.0-dt-20211202Z-55a140"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-b724b0"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

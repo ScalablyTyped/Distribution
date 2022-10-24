@@ -28,7 +28,7 @@ object distDocumentDocumentMod {
   @js.native
   open class Document protected () extends StObject {
     def this(canvg: Canvg) = this()
-    def this(canvg: Canvg, hasRootEmSizeEmSizeCreateCanvasCreateImageAnonymousCrossOrigin: IDocumentOptions) = this()
+    def this(canvg: Canvg, param1: IDocumentOptions) = this()
     
     /* private */ var bindCreateImage: Any = js.native
     

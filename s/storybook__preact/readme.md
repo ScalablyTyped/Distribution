@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__preact
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 Storybook for Preact: Develop Preact Component in isolation.

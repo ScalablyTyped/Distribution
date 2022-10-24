@@ -43,7 +43,7 @@ object distLibFormattersIacOutputTextMod {
   ): IacTestData = (^.asInstanceOf[js.Dynamic].applyDynamic("formatSnykIacTestTestData")(snykIacTestScanResult.asInstanceOf[js.Any], projectName.asInstanceOf[js.Any], orgName.asInstanceOf[js.Any])).asInstanceOf[IacTestData]
   inline def formatSnykIacTestTestData(snykIacTestScanResult: Unit, projectName: String, orgName: String): IacTestData = (^.asInstanceOf[js.Dynamic].applyDynamic("formatSnykIacTestTestData")(snykIacTestScanResult.asInstanceOf[js.Any], projectName.asInstanceOf[js.Any], orgName.asInstanceOf[js.Any])).asInstanceOf[IacTestData]
   
-  inline def formatTestData(hasOldFormattedResultsIacTestMetaIgnoresCount: FormatTestDataParams): IacTestData = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTestData")(hasOldFormattedResultsIacTestMetaIgnoresCount.asInstanceOf[js.Any]).asInstanceOf[IacTestData]
+  inline def formatTestData(param0: FormatTestDataParams): IacTestData = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTestData")(param0.asInstanceOf[js.Any]).asInstanceOf[IacTestData]
   
   inline def getIacDisplayedIssues(resultsBySeverity: FormattedOutputResultsBySeverity): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIacDisplayedIssues")(resultsBySeverity.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getIacDisplayedIssues(resultsBySeverity: FormattedOutputResultsBySeverity, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getIacDisplayedIssues")(resultsBySeverity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]

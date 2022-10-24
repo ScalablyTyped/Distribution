@@ -42,8 +42,8 @@ object buildSrcCompositemarkErrorbandMod {
   
   inline def normalizeErrorBand(
     spec: GenericUnitSpec[Encoding[String], ErrorBand | ErrorBandDef, SelectionParameter[SelectionType]],
-    hasConfig: NormalizerParams
-  ): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBand")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
+    param1: NormalizerParams
+  ): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBand")(spec.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
   
   type ErrorBand = errorband
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/accessibility" : "6.5.7"
+      "@pixi/accessibility" : "6.5.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/accessibility" : "6.5.7"
+      "@pixi/accessibility" : "6.5.8"
     }
   ],
   "compile-devDependencies" : [

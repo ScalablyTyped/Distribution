@@ -12,5 +12,5 @@ object libViewsStageItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def StageItem(hasItemClassNameStyles: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StageItem")(hasItemClassNameStyles.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StageItem(param0: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StageItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

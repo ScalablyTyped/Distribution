@@ -15,7 +15,7 @@ object libTypescriptSrcUseOptionsGettersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasKeyOptionsNavigation: Options): GetCurrentOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasKeyOptionsNavigation.asInstanceOf[js.Any]).asInstanceOf[GetCurrentOptions]
+  inline def default(param0: Options): GetCurrentOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[GetCurrentOptions]
   
   trait Options extends StObject {
     

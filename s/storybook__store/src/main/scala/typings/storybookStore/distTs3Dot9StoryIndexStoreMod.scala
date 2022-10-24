@@ -14,7 +14,7 @@ object distTs3Dot9StoryIndexStoreMod {
   @JSImport("@storybook/store/dist/ts3.9/StoryIndexStore", "StoryIndexStore")
   @js.native
   open class StoryIndexStore () extends StObject {
-    def this(hasStories: StoryIndex) = this()
+    def this(param0: StoryIndex) = this()
     
     var channel: Channel = js.native
     

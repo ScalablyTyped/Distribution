@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "chevrotain__utils"
-version := "10.3.0-afec78"
-scalaVersion := "3.1.2"
+version := "10.3.0-b4a30e"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

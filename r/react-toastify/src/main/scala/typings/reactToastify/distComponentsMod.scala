@@ -23,11 +23,11 @@ object distComponentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Bounce(hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bounce")(hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Bounce(param0: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bounce")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def CloseButton(hasCloseToastThemeAriaLabel: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(hasCloseToastThemeAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CloseButton(param0: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def Flip(hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Flip")(hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Flip(param0: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Flip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object Icons {
     
@@ -63,9 +63,7 @@ object distComponentsMod {
   
   object ProgressBar {
     
-    inline def apply(
-      hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsInTheme: ProgressBarProps
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsInTheme.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: ProgressBarProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-toastify/dist/components", "ProgressBar")
     @js.native
@@ -88,7 +86,7 @@ object distComponentsMod {
     }
   }
   
-  inline def Slide(hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Slide")(hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Slide(param0: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Slide")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-toastify/dist/components", "Toast")
   @js.native
@@ -98,7 +96,7 @@ object distComponentsMod {
   @js.native
   val ToastContainer: ForwardRefExoticComponent[ToastContainerProps & RefAttributes[HTMLDivElement]] = js.native
   
-  inline def Zoom(hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Zoom")(hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Zoom(param0: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Zoom")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def getIcon(hasThemeTypeIsLoadingIcon: ToastProps): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(hasThemeTypeIsLoadingIcon.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def getIcon(param0: ToastProps): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
 }

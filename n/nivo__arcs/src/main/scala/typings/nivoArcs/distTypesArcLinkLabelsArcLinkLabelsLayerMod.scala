@@ -15,9 +15,7 @@ object distTypesArcLinkLabelsArcLinkLabelsLayerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ArcLinkLabelsLayer[Datum /* <: DatumWithArcAndColor */](
-    hasCenterDataLabelAccessorSkipAngleOffsetDiagonalLengthStraightLengthStrokeWidthTextOffsetTextColorLinkColorComponent: ArcLinkLabelsLayerProps[Datum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLinkLabelsLayer")(hasCenterDataLabelAccessorSkipAngleOffsetDiagonalLengthStraightLengthStrokeWidthTextOffsetTextColorLinkColorComponent.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcLinkLabelsLayer[Datum /* <: DatumWithArcAndColor */](param0: ArcLinkLabelsLayerProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLinkLabelsLayer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ArcLinkLabelComponent[Datum /* <: DatumWithArcAndColor */] = js.Function1[/* props */ ArcLinkLabelProps[Datum], Element]
   

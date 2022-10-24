@@ -12,5 +12,5 @@ object distCliCommandsTestIacLocalExecutionProcessResultsCliShareResultsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def shareResults(hasResultsPolicyTagsAttributesOptionsMeta: Attributes): js.Promise[ShareResultsOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareResults")(hasResultsPolicyTagsAttributesOptionsMeta.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShareResultsOutput]]
+  inline def shareResults(param0: Attributes): js.Promise[ShareResultsOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("shareResults")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ShareResultsOutput]]
 }

@@ -50,7 +50,7 @@ object typesSrcDisplayCanvasMod {
     
     def beginCompat(): Unit = js.native
     
-    def beginDrawing(hasTransformViewportTransparencyBackground: Background): Unit = js.native
+    def beginDrawing(param0: Background): Unit = js.native
     
     def beginGroup(group: Any): Unit = js.native
     

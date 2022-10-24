@@ -14,7 +14,7 @@ object libAnimationsUtilsFindSpringMod {
   
   inline def calcAngularFreq(undampedFreq: Double, dampingRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcAngularFreq")(undampedFreq.asInstanceOf[js.Any], dampingRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def findSpring(hasDurationBounceVelocityMass: SpringOptions): Damping = ^.asInstanceOf[js.Dynamic].applyDynamic("findSpring")(hasDurationBounceVelocityMass.asInstanceOf[js.Any]).asInstanceOf[Damping]
+  inline def findSpring(param0: SpringOptions): Damping = ^.asInstanceOf[js.Dynamic].applyDynamic("findSpring")(param0.asInstanceOf[js.Any]).asInstanceOf[Damping]
   
   @JSImport("popmotion/lib/animations/utils/find-spring", "maxDamping")
   @js.native

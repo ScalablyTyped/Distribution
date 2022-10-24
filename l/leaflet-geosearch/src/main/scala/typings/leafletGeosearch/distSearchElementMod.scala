@@ -18,7 +18,7 @@ object distSearchElementMod {
   open class default protected ()
     extends StObject
        with SearchElement {
-    def this(hasHandleSubmitSearchLabelClassNames: SearchElementProps) = this()
+    def this(param0: SearchElementProps) = this()
     
     /* CompleteClass */
     var container: HTMLDivElement = js.native

@@ -12,5 +12,5 @@ object distTypesAnnotationNoteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def AnnotationNote[Datum](hasDatumXYNote: Note[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AnnotationNote")(hasDatumXYNote.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def AnnotationNote[Datum](param0: Note[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AnnotationNote")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -11,5 +11,5 @@ object distTypesGetCanonicalQueryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getCanonicalQuery(hasQuery: HttpRequest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalQuery")(hasQuery.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getCanonicalQuery(param0: HttpRequest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalQuery")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

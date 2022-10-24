@@ -15,7 +15,7 @@ object distMatlabConv2Mod {
   
   inline def conv2(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof boxConv | typeof convn | typeof mxConv2> is not an array type */ args: Parameters[
-      (js.Function3[/* a */ Matrix, /* hasDataWidthHeight */ Matrix, js.UndefOr[Shape], Matrix]) | (js.Function4[/* a */ Matrix, /* b1 */ Matrix, /* b2 */ Matrix, /* shape */ js.UndefOr[Shape], Matrix])
+      (js.Function3[/* a */ Matrix, /* param1 */ Matrix, js.UndefOr[Shape], Matrix]) | (js.Function4[/* a */ Matrix, /* b1 */ Matrix, /* b2 */ Matrix, /* shape */ js.UndefOr[Shape], Matrix])
     ]
   ): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2")(args.asInstanceOf[js.Any]).asInstanceOf[Matrix]
 }

@@ -30,7 +30,7 @@ object distTypesNodeHttpHandlerMod {
     def destroy_MNodeHttpHandler(): Unit = js.native
     
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest): js.Promise[Response] = js.native
-    def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, hasAbortSignal: HttpHandlerOptions): js.Promise[Response] = js.native
+    def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, param1: HttpHandlerOptions): js.Promise[Response] = js.native
     
     @JSName("metadata")
     val metadata_NodeHttpHandler: HandlerProtocol = js.native

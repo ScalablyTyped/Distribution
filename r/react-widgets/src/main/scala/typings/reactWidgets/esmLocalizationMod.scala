@@ -17,7 +17,7 @@ object esmLocalizationMod {
   
   object default {
     
-    inline def apply(hasDateNumberMessagesChildren: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasDateNumberMessagesChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-widgets/esm/Localization", JSImport.Default)
     @js.native

@@ -77,7 +77,7 @@ trait Environment extends StObject {
     * the result is subscribed to:
     * environment.executeMutation({...}).subscribe({...}).
     */
-  def executeMutation(hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: OptimisticResponse): RelayObservable[GraphQLResponse] = js.native
+  def executeMutation(param0: OptimisticResponse): RelayObservable[GraphQLResponse] = js.native
   
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
@@ -88,7 +88,7 @@ trait Environment extends StObject {
     * the result is subscribed to:
     * environment.executeWithSource({...}).subscribe({...}).
     */
-  def executeWithSource(hasOperationSource: Source): RelayObservable[GraphQLResponse] = js.native
+  def executeWithSource(param0: Source): RelayObservable[GraphQLResponse] = js.native
   
   /**
     * Get the environment's internal Network.

@@ -218,7 +218,7 @@ object mod {
   @js.native
   val Comment: FC[CommentProps] = js.native
   
-  /* Inlined react.react.FC<antd.antd/lib/config-provider.ConfigProviderProps> & {  ConfigContext :react.react.Context<antd.antd/lib/config-provider/context.ConfigConsumerProps>,   SizeContext :react.react.Context<antd.antd/lib/config-provider/SizeContext.SizeType>,   config :(hasPrefixClsIconPrefixClsTheme : std.Pick<antd.antd/lib/config-provider.ConfigProviderProps, 'prefixCls' | 'iconPrefixCls'> & {  theme :antd.antd/lib/config-provider/context.Theme | undefined}): void} */
+  /* Inlined react.react.FC<antd.antd/lib/config-provider.ConfigProviderProps> & {  ConfigContext :react.react.Context<antd.antd/lib/config-provider/context.ConfigConsumerProps>,   SizeContext :react.react.Context<antd.antd/lib/config-provider/SizeContext.SizeType>,   config :(param0 : std.Pick<antd.antd/lib/config-provider.ConfigProviderProps, 'prefixCls' | 'iconPrefixCls'> & {  theme :antd.antd/lib/config-provider/context.Theme | undefined}): void} */
   object ConfigProvider {
     
     inline def apply(props: ConfigProviderProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
@@ -240,8 +240,8 @@ object mod {
     
     @JSImport("antd", "ConfigProvider.config")
     @js.native
-    def config: js.Function1[/* hasPrefixClsIconPrefixClsTheme */ PickConfigProviderPropspr, Unit] = js.native
-    inline def config_=(x: js.Function1[/* hasPrefixClsIconPrefixClsTheme */ PickConfigProviderPropspr, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
+    def config: js.Function1[/* param0 */ PickConfigProviderPropspr, Unit] = js.native
+    inline def config_=(x: js.Function1[/* param0 */ PickConfigProviderPropspr, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
     
     @JSImport("antd", "ConfigProvider.contextTypes")
     @js.native
@@ -393,9 +393,7 @@ object mod {
   
   object Descriptions {
     
-    inline def apply(
-      hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSizeLabelStyleContentStyle: DescriptionsProps
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSizeLabelStyleContentStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: DescriptionsProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd", "Descriptions")
     @js.native
@@ -467,9 +465,7 @@ object mod {
   
   object List {
     
-    inline def apply[T](
-      hasPaginationCustomizePrefixClsBorderedSplitClassNameChildrenItemLayoutLoadMoreGridDataSourceSizeHeaderFooterLoadingRowKeyRenderItemLocaleRest: ListProps[T]
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasPaginationCustomizePrefixClsBorderedSplitClassNameChildrenItemLayoutLoadMoreGridDataSourceSizeHeaderFooterLoadingRowKeyRenderItemLocaleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[T](param0: ListProps[T]): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd", "List")
     @js.native
@@ -524,8 +520,8 @@ object mod {
     /* was `typeof ItemGroup` */
     @JSImport("antd", "Menu.ItemGroup")
     @js.native
-    def ItemGroup: js.Function1[/* hasChildrenProps */ MenuItemGroupProps, ReactElement] = js.native
-    inline def ItemGroup_=(x: js.Function1[/* hasChildrenProps */ MenuItemGroupProps, ReactElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
+    def ItemGroup: js.Function1[/* param0 */ MenuItemGroupProps, ReactElement] = js.native
+    inline def ItemGroup_=(x: js.Function1[/* param0 */ MenuItemGroupProps, ReactElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
     
     /* static member */
     /* was `typeof SubMenu` */
@@ -619,7 +615,7 @@ object mod {
   
   object Tabs {
     
-    inline def apply(hasTypeClassNamePropSizeOnEditHideAddCenteredAddIconChildrenItemsAnimatedProps: TabsProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasTypeClassNamePropSizeOnEditHideAddCenteredAddIconChildrenItemsAnimatedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: TabsProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd", "Tabs")
     @js.native
@@ -683,16 +679,8 @@ object mod {
     /* static member */
     @JSImport("antd", "Transfer.Operation")
     @js.native
-    def Operation: js.Function1[
-        /* hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay */ TransferOperationProps, 
-        Element
-      ] = js.native
-    inline def Operation_=(
-      x: js.Function1[
-          /* hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay */ TransferOperationProps, 
-          Element
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Operation")(x.asInstanceOf[js.Any])
+    def Operation: js.Function1[/* param0 */ TransferOperationProps, Element] = js.native
+    inline def Operation_=(x: js.Function1[/* param0 */ TransferOperationProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Operation")(x.asInstanceOf[js.Any])
     
     /* static member */
     /* was `typeof Search` */
@@ -722,7 +710,7 @@ object mod {
     }
     
     /* static member */
-    inline def getDerivedStateFromProps[T](hasSelectedKeysTargetKeysPaginationChildren: TransferProps[T]): SourceSelectedKeys | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSelectedKeysTargetKeysPaginationChildren.asInstanceOf[js.Any]).asInstanceOf[SourceSelectedKeys | Null]
+    inline def getDerivedStateFromProps[T](param0: TransferProps[T]): SourceSelectedKeys | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(param0.asInstanceOf[js.Any]).asInstanceOf[SourceSelectedKeys | Null]
   }
   
   @JSImport("antd", "Tree")

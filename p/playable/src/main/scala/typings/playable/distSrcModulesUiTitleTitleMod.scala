@@ -15,7 +15,7 @@ object distSrcModulesUiTitleTitleMod {
   open class default protected ()
     extends StObject
        with Title {
-    def this(hasThemeConfig: ConfigTheme) = this()
+    def this(param0: ConfigTheme) = this()
   }
   object default {
     

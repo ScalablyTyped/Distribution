@@ -190,5 +190,5 @@ object mod {
   inline def strictParseShort(value: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("strictParseShort")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   inline def strictParseShort(value: Double): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("strictParseShort")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
-  inline def throwDefaultError(hasOutputParsedBodyExceptionCtorErrorCode: Any): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDefaultError")(hasOutputParsedBodyExceptionCtorErrorCode.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def throwDefaultError(param0: Any): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDefaultError")(param0.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 }

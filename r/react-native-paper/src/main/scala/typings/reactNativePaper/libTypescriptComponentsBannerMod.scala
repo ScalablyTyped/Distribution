@@ -23,23 +23,20 @@ object libTypescriptComponentsBannerMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
           ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-            /* hasStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+            /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
             Element
           ]), 
           js.Object
         ])
       ]) & ContentStyle
-    ]) & (js.Function1[
-      /* hasVisibleIconChildrenActionsContentStyleStyleThemeOnShowAnimationFinishedOnHideAnimationFinishedRest */ Props, 
-      Element
-    ]), 
+    ]) & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = js.native
   
   type Props = (RemoveChildren[
     ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
       ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-        /* hasStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+        /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
         Element
       ]), 
       js.Object
@@ -51,16 +48,13 @@ object libTypescriptComponentsBannerMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
           ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-            /* hasStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+            /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
             Element
           ]), 
           js.Object
         ])
       ]) & ContentStyle
-    ]) & (js.Function1[
-      /* hasVisibleIconChildrenActionsContentStyleStyleThemeOnShowAnimationFinishedOnHideAnimationFinishedRest */ Props, 
-      Element
-    ]), 
+    ]) & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ])
   
@@ -70,16 +64,13 @@ object libTypescriptComponentsBannerMod extends Shortcut {
       (RemoveChildren[
         ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
           ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-            /* hasStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+            /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
             Element
           ]), 
           js.Object
         ])
       ]) & ContentStyle
-    ]) & (js.Function1[
-      /* hasVisibleIconChildrenActionsContentStyleStyleThemeOnShowAnimationFinishedOnHideAnimationFinishedRest */ Props, 
-      Element
-    ]), 
+    ]) & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = default
 }

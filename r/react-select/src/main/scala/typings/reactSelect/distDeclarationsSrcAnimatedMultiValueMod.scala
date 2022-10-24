@@ -16,13 +16,7 @@ object distDeclarationsSrcAnimatedMultiValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(WrappedComponent: MultiValueComponent): js.Function1[
-    /* hasInPropOnExitedProps */ AnimatedMultiValueProps[Any, Boolean, GroupBase[Any]], 
-    Element
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* hasInPropOnExitedProps */ AnimatedMultiValueProps[Any, Boolean, GroupBase[Any]], 
-    Element
-  ]]
+  inline def default(WrappedComponent: MultiValueComponent): js.Function1[/* param0 */ AnimatedMultiValueProps[Any, Boolean, GroupBase[Any]], Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param0 */ AnimatedMultiValueProps[Any, Boolean, GroupBase[Any]], Element]]
   
   type AnimatedMultiValueProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] = (MultiValueProps[Option, IsMulti, Group]) & Partial[TransitionProps[Unit]]
   

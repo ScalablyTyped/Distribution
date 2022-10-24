@@ -13,5 +13,5 @@ object distTypesTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Tooltip[RawDatum /* <: ScatterPlotDatum */](hasNode: ScatterPlotTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip")(hasNode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Tooltip[RawDatum /* <: ScatterPlotDatum */](param0: ScatterPlotTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

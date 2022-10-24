@@ -10,7 +10,7 @@ object typesLatestSrcUtilSanitizerMod {
   @JSImport("@azure/core-http/types/latest/src/util/sanitizer", "Sanitizer")
   @js.native
   open class Sanitizer () extends StObject {
-    def this(hasAllowedHeaderNamesAllowedQueryParameters: SanitizerOptions) = this()
+    def this(param0: SanitizerOptions) = this()
     
     var allowedHeaderNames: Set[String] = js.native
     

@@ -28,7 +28,7 @@ object distButtonSrcCrossButtonMod {
   @js.native
   val CrossButton: OrbitComponent[button, InnerCrossButtonProps] = js.native
   
-  inline def InnerCrossButton(hasForwardedRefRest: InnerCrossButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCrossButton")(hasForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerCrossButton(param0: InnerCrossButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCrossButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type CrossButtonProps = ComponentProps[OrbitComponent[button, InnerCrossButtonProps]]
   

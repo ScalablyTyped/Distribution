@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ng-i18next"
-version := "v0.3.6-dt-20220818Z-f30d97"
-scalaVersion := "3.1.2"
+version := "v0.3.6-dt-20220818Z-9c782f"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

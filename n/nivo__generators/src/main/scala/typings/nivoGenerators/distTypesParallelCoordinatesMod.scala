@@ -12,7 +12,7 @@ object distTypesParallelCoordinatesMod {
   val ^ : js.Any = js.native
   
   inline def generateParallelCoordinatesData(): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateParallelCoordinatesData")().asInstanceOf[js.Array[js.Object]]
-  inline def generateParallelCoordinatesData(hasSizeKeys: Options): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateParallelCoordinatesData")(hasSizeKeys.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  inline def generateParallelCoordinatesData(param0: Options): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateParallelCoordinatesData")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
   
   /* Inlined std.Partial<{  size :number,   keys :std.Array<{  key :string,   random :[number, number] | undefined,   shuffle :std.Array<string> | undefined}>}> */
   trait Options extends StObject {

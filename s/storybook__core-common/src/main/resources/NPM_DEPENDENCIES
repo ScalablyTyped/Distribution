@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/core-common" : "6.5.12"
+      "@storybook/core-common" : "6.5.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/core-common" : "6.5.12"
+      "@storybook/core-common" : "6.5.13"
     }
   ],
   "compile-devDependencies" : [

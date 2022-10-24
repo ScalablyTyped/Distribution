@@ -12,9 +12,7 @@ object `@reactNavigationStackViewsHeaderHeaderBackButtonMod` {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle: Props
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   // tslint:disable-next-line strict-export-declare-modifiers
   type Props = StackHeaderLeftButtonProps

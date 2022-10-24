@@ -13,7 +13,7 @@ object distTypesSankeyLinkGradientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SankeyLinkGradient(hasIdLayoutStartColorEndColor: SankeyLinkGradientProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SankeyLinkGradient")(hasIdLayoutStartColorEndColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SankeyLinkGradient(param0: SankeyLinkGradientProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SankeyLinkGradient")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait SankeyLinkGradientProps extends StObject {
     

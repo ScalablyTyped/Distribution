@@ -14,7 +14,7 @@ object typesPortalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Portal(hasIntoIntoIdChildren: PortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(hasIntoIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Portal(param0: PortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait PortalProps extends StObject {
     

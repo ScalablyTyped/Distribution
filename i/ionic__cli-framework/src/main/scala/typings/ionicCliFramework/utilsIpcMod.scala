@@ -47,7 +47,7 @@ object utilsIpcMod {
   @JSImport("@ionic/cli-framework/utils/ipc", "RPCProcess")
   @js.native
   open class RPCProcess () extends StObject {
-    def this(hasNameTimeout: RPCProcessOptions) = this()
+    def this(param0: RPCProcessOptions) = this()
     
     def call[R /* <: RPCResponse[Any, js.Object] */](
       procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,

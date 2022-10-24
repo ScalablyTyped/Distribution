@@ -196,7 +196,7 @@ object autocompleteAutocompleteMod {
     inline def tagSizeSmall: typings.materialUiLab.materialUiLabStrings.tagSizeSmall = "tagSizeSmall".asInstanceOf[typings.materialUiLab.materialUiLabStrings.tagSizeSmall]
   }
   
-  type AutocompleteGetTagProps = js.Function1[/* hasIndex */ Index, js.Object]
+  type AutocompleteGetTagProps = js.Function1[/* param0 */ Index, js.Object]
   
   /* Inlined parent @material-ui/lab.@material-ui/lab/useAutocomplete.UseAutocompleteProps<T, Multiple, DisableClearable, FreeSolo> */
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/lab.@material-ui/lab/Autocomplete/Autocomplete.AutocompleteClassKey, 'defaultValue' | 'onChange' | 'children'> */

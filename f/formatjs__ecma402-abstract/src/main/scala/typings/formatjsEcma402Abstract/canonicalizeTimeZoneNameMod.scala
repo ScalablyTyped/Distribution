@@ -11,5 +11,5 @@ object canonicalizeTimeZoneNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CanonicalizeTimeZoneName(tz: String, hasTzDataUppercaseLinks: TzData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeTimeZoneName")(tz.asInstanceOf[js.Any], hasTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def CanonicalizeTimeZoneName(tz: String, param1: TzData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalizeTimeZoneName")(tz.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
 }

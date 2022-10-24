@@ -12,7 +12,7 @@ object libBodyMeasureCellMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasColumnKeyOnColumnResize: MeasureCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColumnKeyOnColumnResize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: MeasureCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait MeasureCellProps extends StObject {
     

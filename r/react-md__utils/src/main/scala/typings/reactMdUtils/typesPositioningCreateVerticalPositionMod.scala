@@ -23,9 +23,7 @@ object typesPositioningCreateVerticalPositionMod {
   
   inline def createAnchoredTop(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredTop")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  inline def createVerticalPosition(
-    hasYVhVhMarginYMarginElHeightInitialYContainerRectDisableSwappingPreventOverlapDisableVHBounds: Options
-  ): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerticalPosition")(hasYVhVhMarginYMarginElHeightInitialYContainerRectDisableSwappingPreventOverlapDisableVHBounds.asInstanceOf[js.Any]).asInstanceOf[YPosition]
+  inline def createVerticalPosition(param0: Options): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerticalPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
   trait FixConfig
     extends StObject

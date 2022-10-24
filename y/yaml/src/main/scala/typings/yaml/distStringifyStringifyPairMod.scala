@@ -12,18 +12,18 @@ object distStringifyStringifyPairMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def stringifyPair(hasKeyValue: ReadonlyPairunknownunknow, ctx: StringifyContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPair")(hasKeyValue.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringifyPair(hasKeyValue: ReadonlyPairunknownunknow, ctx: StringifyContext, onComment: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPair")(hasKeyValue.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyPair(param0: ReadonlyPairunknownunknow, ctx: StringifyContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPair")(param0.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyPair(param0: ReadonlyPairunknownunknow, ctx: StringifyContext, onComment: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPair")(param0.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringifyPair(
-    hasKeyValue: ReadonlyPairunknownunknow,
+    param0: ReadonlyPairunknownunknow,
     ctx: StringifyContext,
     onComment: js.Function0[Unit],
     onChompKeep: js.Function0[Unit]
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPair")(hasKeyValue.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPair")(param0.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringifyPair(
-    hasKeyValue: ReadonlyPairunknownunknow,
+    param0: ReadonlyPairunknownunknow,
     ctx: StringifyContext,
     onComment: Unit,
     onChompKeep: js.Function0[Unit]
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPair")(hasKeyValue.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPair")(param0.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
 }

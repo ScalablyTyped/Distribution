@@ -3054,9 +3054,7 @@ object anon {
     def createIncrementalCompilerHost(options: CompilerOptions): CompilerHost = js.native
     def createIncrementalCompilerHost(options: CompilerOptions, system: System): CompilerHost = js.native
     
-    def createIncrementalProgram[T /* <: BuilderProgram */](
-      hasRootNamesOptionsConfigFileParsingDiagnosticsProjectReferencesHostCreateProgram: IncrementalProgramOptions[T]
-    ): T = js.native
+    def createIncrementalProgram[T /* <: BuilderProgram */](param0: IncrementalProgramOptions[T]): T = js.native
     
     /** @deprecated Use `factory.createIndexSignature` or the factory supplied by your transformation context instead. */
     def createIndexSignature(

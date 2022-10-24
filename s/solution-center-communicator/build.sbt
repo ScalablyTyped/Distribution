@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "solution-center-communicator"
-version := "2.3.0-dt-20220818Z-66a103"
-scalaVersion := "3.1.2"
+version := "2.3.0-dt-20220818Z-04de14"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

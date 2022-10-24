@@ -16,7 +16,7 @@ object distTypesPieLegendsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RawDatum](hasWidthHeightLegendsDataToggleSerie: PieLegendsProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasWidthHeightLegendsDataToggleSerie.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[RawDatum](param0: PieLegendsProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PieLegendsProps[RawDatum] extends StObject {
     

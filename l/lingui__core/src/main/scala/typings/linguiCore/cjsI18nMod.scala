@@ -38,17 +38,17 @@ object cjsI18nMod {
     @JSName("_")
     def _underscore(id: String, values: js.Object): String = js.native
     @JSName("_")
-    def _underscore(id: String, values: js.Object, hasMessageFormatsContext: MessageOptions): String = js.native
+    def _underscore(id: String, values: js.Object, param2: MessageOptions): String = js.native
     @JSName("_")
-    def _underscore(id: String, values: Unit, hasMessageFormatsContext: MessageOptions): String = js.native
+    def _underscore(id: String, values: Unit, param2: MessageOptions): String = js.native
     @JSName("_")
     def _underscore(id: MessageDescriptor): String = js.native
     @JSName("_")
     def _underscore(id: MessageDescriptor, values: js.Object): String = js.native
     @JSName("_")
-    def _underscore(id: MessageDescriptor, values: js.Object, hasMessageFormatsContext: MessageOptions): String = js.native
+    def _underscore(id: MessageDescriptor, values: js.Object, param2: MessageOptions): String = js.native
     @JSName("_")
-    def _underscore(id: MessageDescriptor, values: Unit, hasMessageFormatsContext: MessageOptions): String = js.native
+    def _underscore(id: MessageDescriptor, values: Unit, param2: MessageOptions): String = js.native
     
     def activate(locale: Locale): Unit = js.native
     def activate(locale: Locale, locales: Locales): Unit = js.native

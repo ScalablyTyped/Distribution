@@ -36,7 +36,7 @@ object providersEmailMod {
       *    }
       *  })
       * ```
-      * [Documentation](https://next-auth.js.org/providers/email#customising-the-verification-token)
+      * [Documentation](https://next-auth.js.org/providers/email#customizing-the-verification-token)
       */
     var generateVerificationToken: js.UndefOr[js.Function0[Awaitable[String]]] = js.undefined
     

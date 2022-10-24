@@ -13,9 +13,5 @@ object numberFormatFormatApproximatelyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FormatApproximately(
-    numberFormat: NumberFormat,
-    result: js.Array[NumberFormatPart],
-    hasGetInternalSlots: GetInternalSlots
-  ): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatApproximately")(numberFormat.asInstanceOf[js.Any], result.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
+  inline def FormatApproximately(numberFormat: NumberFormat, result: js.Array[NumberFormatPart], param2: GetInternalSlots): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatApproximately")(numberFormat.asInstanceOf[js.Any], result.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
 }

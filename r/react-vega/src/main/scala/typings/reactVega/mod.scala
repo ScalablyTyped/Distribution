@@ -36,5 +36,5 @@ object mod {
   
   inline def VegaLite(props: VegaLiteProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VegaLite")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def createClassFromSpec(hasModeSpec: Mode): Constructor[PureComponent[FixedVegaChartProps, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClassFromSpec")(hasModeSpec.asInstanceOf[js.Any]).asInstanceOf[Constructor[PureComponent[FixedVegaChartProps, js.Object, Any]]]
+  inline def createClassFromSpec(param0: Mode): Constructor[PureComponent[FixedVegaChartProps, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClassFromSpec")(param0.asInstanceOf[js.Any]).asInstanceOf[Constructor[PureComponent[FixedVegaChartProps, js.Object, Any]]]
 }

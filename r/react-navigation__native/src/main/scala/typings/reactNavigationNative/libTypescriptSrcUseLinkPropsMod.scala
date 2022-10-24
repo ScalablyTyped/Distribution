@@ -14,7 +14,7 @@ object libTypescriptSrcUseLinkPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[ParamList /* <: RootParamList */](hasToAction: Props[ParamList]): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
+  inline def default[ParamList /* <: RootParamList */](param0: Props[ParamList]): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
   
   trait Props[ParamList /* <: RootParamList */] extends StObject {
     

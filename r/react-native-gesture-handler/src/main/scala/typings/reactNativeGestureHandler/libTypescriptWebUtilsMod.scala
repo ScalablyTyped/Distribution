@@ -12,5 +12,5 @@ object libTypescriptWebUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isPointerInBounds(view: HTMLElement, hasXY: X): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointerInBounds")(view.asInstanceOf[js.Any], hasXY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPointerInBounds(view: HTMLElement, param1: X): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPointerInBounds")(view.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

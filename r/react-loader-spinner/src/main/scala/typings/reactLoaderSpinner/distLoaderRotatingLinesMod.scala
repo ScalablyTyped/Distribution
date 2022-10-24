@@ -11,7 +11,7 @@ object distLoaderRotatingLinesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasStrokeColorStrokeWidthAnimationDurationWidthVisibleAriaLabel: Props): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStrokeColorStrokeWidthAnimationDurationWidthVisibleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def default(param0: Props): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait Props extends StObject {
     

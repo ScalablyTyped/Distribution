@@ -14,7 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasPage: Config): typings.storybookChannels.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPage.asInstanceOf[js.Any]).asInstanceOf[typings.storybookChannels.mod.default]
+  inline def default(param0: Config): typings.storybookChannels.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.storybookChannels.mod.default]
   
   @JSImport("@storybook/channel-postmessage", "KEY")
   @js.native

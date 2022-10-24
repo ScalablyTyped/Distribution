@@ -15,7 +15,7 @@ trait ISREADONLYTransformArguments extends StObject {
   
   def transformArguments(key: String, iterator: Double): js.Array[String] = js.native
   
-  def transformReply(hasIteratorChunk: ScanDumpRawReply): ScanDumpReply = js.native
+  def transformReply(param0: ScanDumpRawReply): ScanDumpReply = js.native
   @JSName("transformReply")
-  def transformReply_ScanDumpReply(hasIteratorChunk: typings.redisBloom.distCommandsBloomScandumpMod.ScanDumpRawReply): typings.redisBloom.distCommandsBloomScandumpMod.ScanDumpReply = js.native
+  def transformReply_ScanDumpReply(param0: typings.redisBloom.distCommandsBloomScandumpMod.ScanDumpRawReply): typings.redisBloom.distCommandsBloomScandumpMod.ScanDumpReply = js.native
 }

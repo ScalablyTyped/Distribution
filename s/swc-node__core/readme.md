@@ -1,7 +1,7 @@
 
 # Scala.js typings for swc-node__core
 
-Typings are for version 1.9.0
+Typings are for version 1.9.1
 
 ## Library description:
 Faster swc nodejs binding

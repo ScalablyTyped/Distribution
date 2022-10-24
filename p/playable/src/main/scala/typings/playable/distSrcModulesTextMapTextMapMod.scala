@@ -13,7 +13,7 @@ object distSrcModulesTextMapTextMapMod {
   open class default protected ()
     extends StObject
        with TextMap {
-    def this(hasConfig: ConfigIPlayerConfig) = this()
+    def this(param0: ConfigIPlayerConfig) = this()
   }
   /* static members */
   object default {

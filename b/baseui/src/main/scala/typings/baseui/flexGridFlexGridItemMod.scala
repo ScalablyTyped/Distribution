@@ -26,11 +26,9 @@ object flexGridFlexGridItemMod {
   @js.native
   val default: FlexGridItemComponentType[div] = js.native
   
-  inline def flexGridItemMediaQueryStyle(has$themeColCountFlexGridColumnGapFlexGridRowGapItemIndexItemCount: FlexGridColumnCount): Readonlyxstringanywidthst = ^.asInstanceOf[js.Dynamic].applyDynamic("flexGridItemMediaQueryStyle")(has$themeColCountFlexGridColumnGapFlexGridRowGapItemIndexItemCount.asInstanceOf[js.Any]).asInstanceOf[Readonlyxstringanywidthst]
+  inline def flexGridItemMediaQueryStyle(param0: FlexGridColumnCount): Readonlyxstringanywidthst = ^.asInstanceOf[js.Dynamic].applyDynamic("flexGridItemMediaQueryStyle")(param0.asInstanceOf[js.Any]).asInstanceOf[Readonlyxstringanywidthst]
   
-  inline def flexGridItemStyle(
-    hasDollarflexGridColumnCountDollarflexGridColumnGapDollarflexGridRowGapDollarflexGridItemIndexDollarflexGridItemCountDollartheme: FlexGridColumnGap
-  ): StyleOverride = ^.asInstanceOf[js.Dynamic].applyDynamic("flexGridItemStyle")(hasDollarflexGridColumnCountDollarflexGridColumnGapDollarflexGridRowGapDollarflexGridItemIndexDollarflexGridItemCountDollartheme.asInstanceOf[js.Any]).asInstanceOf[StyleOverride]
+  inline def flexGridItemStyle(param0: FlexGridColumnGap): StyleOverride = ^.asInstanceOf[js.Dynamic].applyDynamic("flexGridItemStyle")(param0.asInstanceOf[js.Any]).asInstanceOf[StyleOverride]
   
   inline def getResponsiveValue[T](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResponsiveValue")().asInstanceOf[js.UndefOr[T]]
   inline def getResponsiveValue[T](responsive: Unit, i: Double): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResponsiveValue")(responsive.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]

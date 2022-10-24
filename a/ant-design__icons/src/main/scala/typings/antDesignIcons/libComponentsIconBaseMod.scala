@@ -25,7 +25,7 @@ object libComponentsIconBaseMod extends Shortcut {
     
     var getTwoToneColors: js.Function0[TwoToneColorPalette] = js.native
     
-    var setTwoToneColors: js.Function1[/* hasPrimaryColorSecondaryColor */ TwoToneColorPaletteSetter, Unit] = js.native
+    var setTwoToneColors: js.Function1[/* param0 */ TwoToneColorPaletteSetter, Unit] = js.native
   }
   
   trait IconProps extends StObject {

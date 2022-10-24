@@ -19,7 +19,7 @@ object distTypesSrcUtilsTransformDotutilsMod {
   inline def dateToTimeString(date: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToTimeString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def dateToTimeString(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToTimeString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getDecimalCast(hasPrecisionScale: Pickanyscaleprecision): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDecimalCast")(hasPrecisionScale.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDecimalCast(param0: Pickanyscaleprecision): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDecimalCast")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def simpleArrayToString(value: js.Array[Any]): js.Array[String] | Any = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleArrayToString")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String] | Any]
   inline def simpleArrayToString(value: Any): js.Array[String] | Any = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleArrayToString")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String] | Any]

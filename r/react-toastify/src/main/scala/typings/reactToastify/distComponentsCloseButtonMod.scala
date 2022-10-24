@@ -16,7 +16,7 @@ object distComponentsCloseButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CloseButton(hasCloseToastThemeAriaLabel: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(hasCloseToastThemeAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CloseButton(param0: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CloseButtonProps extends StObject {
     

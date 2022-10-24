@@ -38,7 +38,7 @@ object distServerApiUtilsMod {
   
   inline def getCookieParser(req: IncomingMessage): js.Function0[NextApiRequestCookies] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCookieParser")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function0[NextApiRequestCookies]]
   
-  inline def getQueryParser(hasUrl: IncomingMessage): js.Function0[NextApiRequestQuery] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParser")(hasUrl.asInstanceOf[js.Any]).asInstanceOf[js.Function0[NextApiRequestQuery]]
+  inline def getQueryParser(param0: IncomingMessage): js.Function0[NextApiRequestQuery] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryParser")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function0[NextApiRequestQuery]]
   
   inline def parseBody(req: NextApiRequest, limit: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def parseBody(req: NextApiRequest, limit: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
@@ -51,7 +51,7 @@ object distServerApiUtilsMod {
   
   inline def sendStatusCode(res: NextApiResponse[Any], statusCode: Double): NextApiResponse[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendStatusCode")(res.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[NextApiResponse[Any]]
   
-  inline def setLazyProp[T](hasReqParams: LazyProps, prop: String, getter: js.Function0[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLazyProp")(hasReqParams.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setLazyProp[T](param0: LazyProps, prop: String, getter: js.Function0[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLazyProp")(param0.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait LazyProps extends StObject {
     

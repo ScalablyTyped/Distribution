@@ -11,10 +11,5 @@ object distTypesCalendarDayMod {
   
   @JSImport("@nivo/calendar/dist/types/CalendarDay", "CalendarDay")
   @js.native
-  val CalendarDay: MemoExoticComponent[
-    js.Function1[
-      /* hasDataXYSizeColorBorderWidthBorderColorIsInteractiveTooltipOnMouseEnterOnMouseMoveOnMouseLeaveOnClickFormatValue */ CalendarDayProps, 
-      Element
-    ]
-  ] = js.native
+  val CalendarDay: MemoExoticComponent[js.Function1[/* param0 */ CalendarDayProps, Element]] = js.native
 }

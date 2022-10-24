@@ -23,9 +23,9 @@ object mod {
   
   inline def AuthContextProvider(props: AuthContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AuthContextProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def CheckLogin(hasChildrenError: CheckLoginProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CheckLogin")(hasChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CheckLogin(param0: CheckLoginProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CheckLogin")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ClientRole(hasClientRoleClientChildrenError: ClientRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClientRole")(hasClientRoleClientChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ClientRole(param0: ClientRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClientRole")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /**
     * React component which renders Login button.
@@ -37,5 +37,5 @@ object mod {
     */
   inline def Logout(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Logout")().asInstanceOf[Element]
   
-  inline def RealmRole(hasRealmRoleChildrenError: RealmRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RealmRole")(hasRealmRoleChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RealmRole(param0: RealmRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RealmRole")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -26,7 +26,7 @@ object ngccSrcDependenciesDependencyHostMod {
     /* protected */ def canSkipFile(fileContents: String): Boolean = js.native
     
     /* CompleteClass */
-    override def collectDependencies(entryPointPath: AbsoluteFsPath, hasDependenciesMissingDeepImports: DependencyInfo): Unit = js.native
+    override def collectDependencies(entryPointPath: AbsoluteFsPath, param1: DependencyInfo): Unit = js.native
     
     /**
       * Find all the dependencies for the provided paths.
@@ -36,7 +36,7 @@ object ngccSrcDependenciesDependencyHostMod {
       * entry-point, including those that were missing or deep imports into other entry-points. The
       * sets in this object will be updated with new information about the entry-point's dependencies.
       */
-    def collectDependenciesInFiles(files: js.Array[AbsoluteFsPath], hasDependenciesMissingDeepImports: DependencyInfo): Unit = js.native
+    def collectDependenciesInFiles(files: js.Array[AbsoluteFsPath], param1: DependencyInfo): Unit = js.native
     
     /* protected */ def extractImports(file: AbsoluteFsPath, fileContents: String): Set[String] = js.native
     
@@ -100,7 +100,7 @@ object ngccSrcDependenciesDependencyHostMod {
   
   trait DependencyHost extends StObject {
     
-    def collectDependencies(entryPointPath: AbsoluteFsPath, hasDependenciesMissingDeepImports: DependencyInfo): Unit
+    def collectDependencies(entryPointPath: AbsoluteFsPath, param1: DependencyInfo): Unit
   }
   object DependencyHost {
     

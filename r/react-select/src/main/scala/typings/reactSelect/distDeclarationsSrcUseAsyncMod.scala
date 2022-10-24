@@ -18,12 +18,10 @@ object distDeclarationsSrcUseAsyncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](
-    hasPropsDefaultOptionsCacheOptionsPropsLoadOptionsPropsOptionsPropsIsLoadingPropsOnInputChangeFilterOptionRestSelectProps: (AsyncProps[Option, IsMulti, Group]) & AdditionalProps
-  ): (StateManagerProps[Option, IsMulti, Group]) & (Omit[
+  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](param0: (AsyncProps[Option, IsMulti, Group]) & AdditionalProps): (StateManagerProps[Option, IsMulti, Group]) & (Omit[
     AdditionalProps, 
     defaultOptions | cacheOptions | loadOptions | isLoading | AsyncManagedPropKeys
-  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPropsDefaultOptionsCacheOptionsPropsLoadOptionsPropsOptionsPropsIsLoadingPropsOnInputChangeFilterOptionRestSelectProps.asInstanceOf[js.Any]).asInstanceOf[(StateManagerProps[Option, IsMulti, Group]) & (Omit[
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[(StateManagerProps[Option, IsMulti, Group]) & (Omit[
     AdditionalProps, 
     defaultOptions | cacheOptions | loadOptions | isLoading | AsyncManagedPropKeys
   ])]

@@ -12,9 +12,5 @@ object esHooksUseFilterTreeDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    treeData: js.Array[DefaultOptionType],
-    searchValue: String,
-    hasTreeNodeFilterPropFilterTreeNodeFieldNames: FieldNames
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(treeData.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], hasTreeNodeFilterPropFilterTreeNodeFieldNames.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def default(treeData: js.Array[DefaultOptionType], searchValue: String, param2: FieldNames): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(treeData.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

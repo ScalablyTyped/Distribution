@@ -13,8 +13,8 @@ object presets {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def node(hasDOMParserCanvasFetch: IConfig): CreateCanvas = ^.asInstanceOf[js.Dynamic].applyDynamic("node")(hasDOMParserCanvasFetch.asInstanceOf[js.Any]).asInstanceOf[CreateCanvas]
+  inline def node(param0: IConfig): CreateCanvas = ^.asInstanceOf[js.Dynamic].applyDynamic("node")(param0.asInstanceOf[js.Any]).asInstanceOf[CreateCanvas]
   
   inline def offscreen(): CreateImage = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")().asInstanceOf[CreateImage]
-  inline def offscreen(hasDOMParserFallback: typings.canvg.distPresetsOffscreenMod.IConfig): CreateImage = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")(hasDOMParserFallback.asInstanceOf[js.Any]).asInstanceOf[CreateImage]
+  inline def offscreen(param0: typings.canvg.distPresetsOffscreenMod.IConfig): CreateImage = ^.asInstanceOf[js.Dynamic].applyDynamic("offscreen")(param0.asInstanceOf[js.Any]).asInstanceOf[CreateImage]
 }

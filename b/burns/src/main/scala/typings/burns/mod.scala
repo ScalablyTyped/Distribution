@@ -29,7 +29,7 @@ object mod extends Shortcut {
       * @returns {Burns}
       */
     def configure(): Burns = js.native
-    def configure(hasDefaultHandlerBroadcasterPusher: Config): Burns = js.native
+    def configure(param0: Config): Burns = js.native
     
     /**
       * Dispatch an event, and broadcast it, if configured.
@@ -41,8 +41,8 @@ object mod extends Shortcut {
       */
     def dispatch(eventName: String): Burns = js.native
     def dispatch(eventName: String, eventData: Any): Burns = js.native
-    def dispatch(eventName: String, eventData: Any, hasExclude: Exclude): Burns = js.native
-    def dispatch(eventName: String, eventData: Unit, hasExclude: Exclude): Burns = js.native
+    def dispatch(eventName: String, eventData: Any, param2: Exclude): Burns = js.native
+    def dispatch(eventName: String, eventData: Unit, param2: Exclude): Burns = js.native
     
     /**
       *

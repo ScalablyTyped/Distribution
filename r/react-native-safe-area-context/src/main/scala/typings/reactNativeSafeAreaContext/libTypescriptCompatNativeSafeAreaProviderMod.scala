@@ -12,5 +12,5 @@ object libTypescriptCompatNativeSafeAreaProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CompatNativeSafeAreaProvider(hasChildrenStyleOnInsetsChange: NativeSafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CompatNativeSafeAreaProvider")(hasChildrenStyleOnInsetsChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CompatNativeSafeAreaProvider(param0: NativeSafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CompatNativeSafeAreaProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

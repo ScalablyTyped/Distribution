@@ -109,7 +109,7 @@ object libEsmComponentsOverlayOverlayMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(hasHasEverOpened: OverlayProps): HasEverOpened | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasHasEverOpened.asInstanceOf[js.Any]).asInstanceOf[HasEverOpened | Null]
+    inline def getDerivedStateFromProps(param0: OverlayProps): HasEverOpened | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(param0.asInstanceOf[js.Any]).asInstanceOf[HasEverOpened | Null]
     
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.getLastOpened")
     @js.native

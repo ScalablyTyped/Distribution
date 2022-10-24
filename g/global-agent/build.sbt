@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "global-agent"
-version := "2.1-dt-20211202Z-7eeae4"
-scalaVersion := "3.1.2"
+version := "2.1-dt-20211202Z-9cc70c"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

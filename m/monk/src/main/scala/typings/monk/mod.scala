@@ -697,7 +697,7 @@ object mod {
   type TFields = String | js.Array[String]
   
   type TMiddleware = js.Function1[
-    /* hasCollectionMonkInstance */ Collection, 
+    /* param0 */ Collection, 
     js.Function1[
       /* next */ js.Function2[/* args */ js.Object, /* method */ String, js.Promise[Any]], 
       js.Function2[/* args */ js.Object, /* method */ String, js.Promise[Any]]

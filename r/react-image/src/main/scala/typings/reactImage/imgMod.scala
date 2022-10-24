@@ -109,9 +109,7 @@ object imgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasDecodeSrcListLoaderUnloaderContainerLoaderContainerUnloaderContainerImgPromiseCrossoriginUseSuspenseImgProps: ImgProps
-  ): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDecodeSrcListLoaderUnloaderContainerLoaderContainerUnloaderContainerImgPromiseCrossoriginUseSuspenseImgProps.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: ImgProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   /* Inlined std.Omit<react.react.DetailedHTMLProps<react.react.ImgHTMLAttributes<std.HTMLImageElement>, std.HTMLImageElement>, 'src'> & std.Omit<react-image.react-image/useImage.useImageProps, 'srcList'> & {  src :react-image.react-image/useImage.useImageProps['srcList'],   loader :react.react.<global>.JSX.Element | null | undefined,   unloader :react.react.<global>.JSX.Element | null | undefined,   decode :boolean | undefined,   crossorigin :string | undefined,   container :(children : react.react.ReactNode): react.react.<global>.JSX.Element | undefined,   loaderContainer :(children : react.react.ReactNode): react.react.<global>.JSX.Element | undefined,   unloaderContainer :(children : react.react.ReactNode): react.react.<global>.JSX.Element | undefined} */
   trait ImgProps extends StObject {

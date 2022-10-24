@@ -15,7 +15,7 @@ object typesMenuBarProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def MenuBarProvider(hasChildrenRootDefaultActiveIdHoverTimeout: MenuBarProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBarProvider")(hasChildrenRootDefaultActiveIdHoverTimeout.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuBarProvider(param0: MenuBarProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBarProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useMenuBarContext(): ReadonlyMenuBarContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuBarContext")().asInstanceOf[ReadonlyMenuBarContext]
   

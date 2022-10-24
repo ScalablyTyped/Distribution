@@ -13,7 +13,7 @@ object typesHighlightedResultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HighlightedResult(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex: HighlightedResultProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HighlightedResult")(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def HighlightedResult(param0: HighlightedResultProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HighlightedResult")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait HighlightedResultProps extends StObject {
     

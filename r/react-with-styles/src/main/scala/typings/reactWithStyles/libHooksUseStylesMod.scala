@@ -13,5 +13,5 @@ object libHooksUseStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[TStyles /* <: Styles */](hasStylesFn: StylesFn[TStyles]): Css[TStyles] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStylesFn.asInstanceOf[js.Any]).asInstanceOf[Css[TStyles]]
+  inline def default[TStyles /* <: Styles */](param0: StylesFn[TStyles]): Css[TStyles] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Css[TStyles]]
 }

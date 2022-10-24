@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/spritesheet" : "6.5.7"
+      "@pixi/spritesheet" : "6.5.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/spritesheet" : "6.5.7"
+      "@pixi/spritesheet" : "6.5.8"
     }
   ],
   "compile-devDependencies" : [

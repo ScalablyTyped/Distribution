@@ -11,5 +11,5 @@ object buildCommandsExecuteScriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasScriptArgs: Args): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasScriptArgs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def default(param1: Args): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }

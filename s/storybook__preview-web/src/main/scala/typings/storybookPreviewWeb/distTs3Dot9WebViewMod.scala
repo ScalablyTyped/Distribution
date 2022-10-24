@@ -71,7 +71,7 @@ object distTs3Dot9WebViewMod {
     
     def showDocs(): Unit = js.native
     
-    def showErrorDisplay(hasMessageStack: Message): Unit = js.native
+    def showErrorDisplay(param0: Message): Unit = js.native
     
     def showMain(): Unit = js.native
     
@@ -82,7 +82,7 @@ object distTs3Dot9WebViewMod {
     def showPreparingDocs(): Unit = js.native
     
     def showPreparingStory(): Unit = js.native
-    def showPreparingStory(hasImmediate: Immediate): Unit = js.native
+    def showPreparingStory(param0: Immediate): Unit = js.native
     
     def showStory(): Unit = js.native
     

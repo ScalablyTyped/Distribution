@@ -22,7 +22,7 @@ object distLibCommanderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def attachCommands[C /* <: RedisCommand */](hasBaseClassCommandsExecutor: AttachCommandsConfig[C]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachCommands")(hasBaseClassCommandsExecutor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def attachCommands[C /* <: RedisCommand */](param0: AttachCommandsConfig[C]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachCommands")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def attachExtensions(config: AttachExtensionsConfig[Instantiable[Any]]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("attachExtensions")(config.asInstanceOf[js.Any]).asInstanceOf[Any]
   

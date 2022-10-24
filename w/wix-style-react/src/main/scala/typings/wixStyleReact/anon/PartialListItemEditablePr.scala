@@ -1,15 +1,15 @@
 package typings.wixStyleReact.anon
 
 import typings.react.mod.ReactNode
-import typings.wixStyleReact.commonMod.TooltipCommonProps
-import typings.wixStyleReact.inputMod.InputStatus
-import typings.wixStyleReact.listItemEditableMod.ListItemEditableMargins
-import typings.wixStyleReact.listItemEditableMod.ListItemEditableSize
+import typings.wixStyleReact.distTypesCommonMod.TooltipCommonProps
+import typings.wixStyleReact.distTypesInputMod.InputStatus
+import typings.wixStyleReact.distTypesListItemEditableMod.ListItemEditableMargins
+import typings.wixStyleReact.distTypesListItemEditableMod.ListItemEditableSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<wix-style-react.wix-style-react/dist/es/src/ListItemEditable.ListItemEditableProps> */
+/* Inlined std.Partial<wix-style-react.wix-style-react/dist/types/ListItemEditable.ListItemEditableProps> */
 trait PartialListItemEditablePr extends StObject {
   
   var approveButtonTooltipContent: js.UndefOr[ReactNode] = js.undefined

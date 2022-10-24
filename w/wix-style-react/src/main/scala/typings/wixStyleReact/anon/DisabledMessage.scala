@@ -1,47 +1,45 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.MouseEvent
-import typings.react.mod.MouseEventHandler
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactNode
-import typings.std.HTMLButtonElement
+import typings.propTypes.mod.ReactNodeLike
+import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DisabledMessage extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  /** Disable the primary action button */
+  var disabled: Requireable[Boolean]
   
-  var disabledMessage: js.UndefOr[String] = js.undefined
+  /** Message to be displayed when primary action button is disabled */
+  var disabledMessage: Requireable[String]
   
-  var label: js.UndefOr[ReactNode] = js.undefined
+  /** Label of primary action button */
+  var label: Requireable[ReactNodeLike]
   
-  var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
+  /** On click handler of primary action button and of the whole card */
+  var onClick: Requireable[js.Function1[/* repeated */ Any, Any]]
 }
 object DisabledMessage {
   
-  inline def apply(): DisabledMessage = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    disabled: Requireable[Boolean],
+    disabledMessage: Requireable[String],
+    label: Requireable[ReactNodeLike],
+    onClick: Requireable[js.Function1[/* repeated */ Any, Any]]
+  ): DisabledMessage = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], disabledMessage = disabledMessage.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisabledMessage]
   }
   
   extension [Self <: DisabledMessage](x: Self) {
     
-    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Requireable[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setDisabledMessage(value: String): Self = StObject.set(x, "disabledMessage", value.asInstanceOf[js.Any])
+    inline def setDisabledMessage(value: Requireable[String]): Self = StObject.set(x, "disabledMessage", value.asInstanceOf[js.Any])
     
-    inline def setDisabledMessageUndefined: Self = StObject.set(x, "disabledMessage", js.undefined)
+    inline def setLabel(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-    
-    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
-    inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
-    
-    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClick(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
   }
 }

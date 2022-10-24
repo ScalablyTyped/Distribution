@@ -7,7 +7,7 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNativePaper.anon.Affix
 import typings.reactNativePaper.anon.LeftRight
-import typings.reactNativePaper.anon.`2`
+import typings.reactNativePaper.anon.`28`
 import typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentTypesMod.AdornmentConfig
 import typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentTypesMod.AdornmentStyleAdjustmentForNativeInput
 import org.scalablytyped.runtime.StObject
@@ -24,11 +24,9 @@ object libTypescriptComponentsTextInputAdornmentTextInputAdornmentMod {
   @js.native
   val default: FunctionComponent[TextInputAdornmentProps] = js.native
   
-  inline def getAdornmentConfig(hasLeftRight: `2`): js.Array[AdornmentConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdornmentConfig")(hasLeftRight.asInstanceOf[js.Any]).asInstanceOf[js.Array[AdornmentConfig]]
+  inline def getAdornmentConfig(param0: `28`): js.Array[AdornmentConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdornmentConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[AdornmentConfig]]
   
-  inline def getAdornmentStyleAdjustmentForNativeInput(
-    hasAdornmentConfigLeftAffixWidthRightAffixWidthPaddingHorizontalInputOffsetMode: typings.reactNativePaper.anon.AdornmentConfig
-  ): AdornmentStyleAdjustmentForNativeInput | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdornmentStyleAdjustmentForNativeInput")(hasAdornmentConfigLeftAffixWidthRightAffixWidthPaddingHorizontalInputOffsetMode.asInstanceOf[js.Any]).asInstanceOf[AdornmentStyleAdjustmentForNativeInput | js.Object]
+  inline def getAdornmentStyleAdjustmentForNativeInput(param0: typings.reactNativePaper.anon.AdornmentConfig): AdornmentStyleAdjustmentForNativeInput | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdornmentStyleAdjustmentForNativeInput")(param0.asInstanceOf[js.Any]).asInstanceOf[AdornmentStyleAdjustmentForNativeInput | js.Object]
   
   trait TextInputAdornmentProps extends StObject {
     

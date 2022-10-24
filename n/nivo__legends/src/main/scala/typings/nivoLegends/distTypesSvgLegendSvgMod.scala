@@ -12,7 +12,5 @@ object distTypesSvgLegendSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def LegendSvg(
-    hasDataXYDirection_paddingJustifyEffectsItemWidthItemHeightItemDirectionItemsSpacingItemTextColorItemBackgroundItemOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerie: LegendSvgProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LegendSvg")(hasDataXYDirection_paddingJustifyEffectsItemWidthItemHeightItemDirectionItemsSpacingItemTextColorItemBackgroundItemOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerie.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LegendSvg(param0: LegendSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LegendSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

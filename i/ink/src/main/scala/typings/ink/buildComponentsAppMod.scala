@@ -36,7 +36,7 @@ object buildComponentsAppMod {
     
     def activateFocusable(id: String): Unit = js.native
     
-    def addFocusable(id: String, hasAutoFocus: AutoFocus): Unit = js.native
+    def addFocusable(id: String, param1: AutoFocus): Unit = js.native
     
     @JSName("componentDidCatch")
     def componentDidCatch_MApp(error: js.Error): Unit = js.native

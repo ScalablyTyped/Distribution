@@ -14,7 +14,7 @@ object distBuildCompilerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def runCompiler(config: Configuration, hasRunWebpackSpan: RunWebpackSpan): js.Promise[CompilerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCompiler")(config.asInstanceOf[js.Any], hasRunWebpackSpan.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CompilerResult]]
+  inline def runCompiler(config: Configuration, param1: RunWebpackSpan): js.Promise[CompilerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runCompiler")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CompilerResult]]
   
   trait CompilerResult extends StObject {
     

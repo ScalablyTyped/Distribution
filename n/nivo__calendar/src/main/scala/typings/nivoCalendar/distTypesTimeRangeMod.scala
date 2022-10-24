@@ -12,5 +12,5 @@ object distTypesTimeRangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TimeRange(hasIsInteractiveRenderWrapperThemeProps: TimeRangeSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeRange")(hasIsInteractiveRenderWrapperThemeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TimeRange(param0: TimeRangeSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeRange")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

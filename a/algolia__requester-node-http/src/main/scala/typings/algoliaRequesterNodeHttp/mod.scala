@@ -15,7 +15,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def createNodeHttpRequester(): Requester & Destroyable = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeHttpRequester")().asInstanceOf[Requester & Destroyable]
-  inline def createNodeHttpRequester(hasUserGlobalAgentUserHttpAgentUserHttpsAgentRequesterOptions: NodeHttpRequesterOptions): Requester & Destroyable = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeHttpRequester")(hasUserGlobalAgentUserHttpAgentUserHttpsAgentRequesterOptions.asInstanceOf[js.Any]).asInstanceOf[Requester & Destroyable]
+  inline def createNodeHttpRequester(param0: NodeHttpRequesterOptions): Requester & Destroyable = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeHttpRequester")(param0.asInstanceOf[js.Any]).asInstanceOf[Requester & Destroyable]
   
   trait NodeHttpRequesterOptions extends StObject {
     

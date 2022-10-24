@@ -15,7 +15,7 @@ object libCoreParamsMod {
     def this(params: js.Object) = this()
     
     /* CompleteClass */
-    override def get(hasKeyValue: Token): Any = js.native
+    override def get(param0: Token): Any = js.native
     
     /* private */ /* CompleteClass */
     var index: Any = js.native
@@ -26,7 +26,7 @@ object libCoreParamsMod {
   
   trait Params extends StObject {
     
-    def get(hasKeyValue: Token): Any
+    def get(param0: Token): Any
     
     /* private */ var index: Any
     

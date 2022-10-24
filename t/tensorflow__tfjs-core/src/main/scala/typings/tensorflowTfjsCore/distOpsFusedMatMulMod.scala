@@ -11,8 +11,5 @@ object distOpsFusedMatMulMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/fused/mat_mul", "matMul")
   @js.native
-  val matMul: js.Function1[
-    /* hasABTransposeATransposeBBiasActivationPreluActivationWeightsLeakyreluAlpha */ A, 
-    Tensor[Rank]
-  ] = js.native
+  val matMul: js.Function1[/* param0 */ A, Tensor[Rank]] = js.native
 }

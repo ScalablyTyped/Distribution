@@ -23,7 +23,7 @@ object distIconsSrcEmbeddedIconMod {
   
   object EmbeddedIcon {
     
-    inline def apply(hasSizeChildrenRest: EmbeddedIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasSizeChildrenRest.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(param0: EmbeddedIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@orbit-ui/react-components/dist/icons/src/EmbeddedIcon", "EmbeddedIcon")
     @js.native

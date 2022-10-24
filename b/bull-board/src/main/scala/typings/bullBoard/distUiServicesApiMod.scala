@@ -12,7 +12,7 @@ object distUiServicesApiMod {
   @JSImport("bull-board/dist/ui/services/Api", "Api")
   @js.native
   open class Api () extends StObject {
-    def this(hasBasePath: BasePath) = this()
+    def this(param0: BasePath) = this()
     
     /* private */ var axios: Any = js.native
     
@@ -34,7 +34,7 @@ object distUiServicesApiMod {
       jobId: /* import warning: importer.ImportType#apply Failed type conversion: bull-board.bull-board/dist/app.QueueJobJson['id'] */ js.Any
     ): js.Promise[js.Array[String]] = js.native
     
-    def getQueues(hasStatus: Status): js.Promise[GetQueues] = js.native
+    def getQueues(param0: Status): js.Promise[GetQueues] = js.native
     
     /* private */ var handleError: Any = js.native
     

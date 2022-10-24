@@ -14,7 +14,7 @@ object libTypescriptSrcUseOnRouteFocusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Action /* <: NavigationAction */](hasRouterGetStateSourceRouteKeySetState: Options[Action]): js.Function1[/* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRouterGetStateSourceRouteKeySetState.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* key */ String, Unit]]
+  inline def default[Action /* <: NavigationAction */](param0: Options[Action]): js.Function1[/* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* key */ String, Unit]]
   
   trait Options[Action /* <: NavigationAction */] extends StObject {
     

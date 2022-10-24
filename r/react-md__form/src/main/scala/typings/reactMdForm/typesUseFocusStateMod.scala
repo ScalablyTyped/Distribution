@@ -17,7 +17,7 @@ object typesUseFocusStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useFocusState(hasOnFocusOnBlur: Options): js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusState")(hasOnFocusOnBlur.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler]]
+  inline def useFocusState(param0: Options): js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusState")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler]]
   
   type BlurEventHandler = typings.react.mod.FocusEventHandler[FocusElement]
   

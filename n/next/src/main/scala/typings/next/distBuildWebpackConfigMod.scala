@@ -16,10 +16,7 @@ object distBuildWebpackConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    dir: String,
-    hasBuildIdConfigCompilerTypeDevEntrypointsHasReactRootIsDevFallbackPagesDirReactProductionProfilingRewritesRunWebpackSpanTargetAppDirMiddlewareMatchers: CompilerType
-  ): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], hasBuildIdConfigCompilerTypeDevEntrypointsHasReactRootIsDevFallbackPagesDirReactProductionProfilingRewritesRunWebpackSpanTargetAppDirMiddlewareMatchers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
+  inline def default(dir: String, param1: CompilerType): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
   
   object NODE_BASE_ESM_RESOLVE_OPTIONS {
     
@@ -409,7 +406,7 @@ object distBuildWebpackConfigMod {
     targetLoader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.RuleSetUseItem */ Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachReactRefresh")(webpackConfig.asInstanceOf[js.Any], targetLoader.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getDefineEnv(hasDevConfigDistDirIsClientHasRewritesHasReactRootIsNodeServerIsEdgeServerMiddlewareMatchers: Dev): EdgeRuntime = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefineEnv")(hasDevConfigDistDirIsClientHasRewritesHasReactRootIsNodeServerIsEdgeServerMiddlewareMatchers.asInstanceOf[js.Any]).asInstanceOf[EdgeRuntime]
+  inline def getDefineEnv(param0: Dev): EdgeRuntime = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefineEnv")(param0.asInstanceOf[js.Any]).asInstanceOf[EdgeRuntime]
   
   @JSImport("next/dist/build/webpack-config", "nextImageLoaderRegex")
   @js.native

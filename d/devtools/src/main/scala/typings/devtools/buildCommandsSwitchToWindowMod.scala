@@ -11,5 +11,5 @@ object buildCommandsSwitchToWindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasHandle: HandleString): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHandle.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(param1: HandleString): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

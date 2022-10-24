@@ -42,19 +42,19 @@ object mod {
       textType: Text,
       codeMirror: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_codemirror.Editor */ Any,
       awareness: Any,
-      hasYUndoManager: YUndoManager
+      param3: YUndoManager
     ) = this()
     def this(
       textType: Text,
       codeMirror: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_codemirror.Editor */ Any,
       awareness: Null,
-      hasYUndoManager: YUndoManager
+      param3: YUndoManager
     ) = this()
     def this(
       textType: Text,
       codeMirror: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_codemirror.Editor */ Any,
       awareness: Unit,
-      hasYUndoManager: YUndoManager
+      param3: YUndoManager
     ) = this()
   }
   
@@ -64,7 +64,7 @@ object mod {
     /* textType */ Text, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_codemirror.Editor */ /* codeMirror */ Any, 
     /* awareness */ js.UndefOr[Any | Null], 
-    /* hasYUndoManager */ js.UndefOr[YUndoManager], 
+    /* param3 */ js.UndefOr[YUndoManager], 
     CodemirrorBinding
   ] = js.native
   
@@ -90,19 +90,19 @@ object mod {
       textType: Text,
       codeMirror: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_codemirror.Editor */ Any,
       awareness: Any,
-      hasYUndoManager: YUndoManager
+      param3: YUndoManager
     ) = this()
     def this(
       textType: Text,
       codeMirror: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_codemirror.Editor */ Any,
       awareness: Null,
-      hasYUndoManager: YUndoManager
+      param3: YUndoManager
     ) = this()
     def this(
       textType: Text,
       codeMirror: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_codemirror.Editor */ Any,
       awareness: Unit,
-      hasYUndoManager: YUndoManager
+      param3: YUndoManager
     ) = this()
     
     def _awarenessListener(event: Any): Unit = js.native
@@ -129,9 +129,9 @@ object mod {
     @JSName("_mux")
     var _mux_Original: mutex = js.native
     
-    def _onStackItemAdded(hasStackItemChangedParentTypes: ChangedParentTypes): Unit = js.native
+    def _onStackItemAdded(param0: ChangedParentTypes): Unit = js.native
     
-    def _onStackItemPopped(hasStackItem: StackItem): Unit = js.native
+    def _onStackItemPopped(param0: StackItem): Unit = js.native
     
     var _pendingCursorEvent: Boolean = js.native
     

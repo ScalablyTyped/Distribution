@@ -22,7 +22,7 @@ object typesRuntimeInternalAnimationsMod {
   
   inline def fixPosition(node: Element & ElementCSSInlineStyle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fix_position")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type AnimationFn = js.Function3[/* node */ Element, /* hasFromTo */ To, /* params */ Any, AnimationConfig]
+  type AnimationFn = js.Function3[/* node */ Element, /* param1 */ To, /* params */ Any, AnimationConfig]
   
   type PositionRect = DOMRect | ClientRect
 }

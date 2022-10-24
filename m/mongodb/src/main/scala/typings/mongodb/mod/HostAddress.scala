@@ -29,7 +29,7 @@ object HostAddress {
   
   inline def fromHostPort(host: String, port: scala.Double): HostAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHostPort")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[HostAddress]
   
-  inline def fromSrvRecord(hasNamePort: SrvRecord): HostAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSrvRecord")(hasNamePort.asInstanceOf[js.Any]).asInstanceOf[HostAddress]
+  inline def fromSrvRecord(param0: SrvRecord): HostAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSrvRecord")(param0.asInstanceOf[js.Any]).asInstanceOf[HostAddress]
   
   inline def fromString(s: String): HostAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[HostAddress]
 }

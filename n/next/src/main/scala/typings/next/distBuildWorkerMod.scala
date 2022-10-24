@@ -50,9 +50,9 @@ object distBuildWorkerMod {
     def this(nestedFileNames: js.Array[String], mainDir: String, pagesDir: String) = this()
   }
   
-  inline def buildAppStaticPaths(hasPageConfigFileNameGenerateParams: ConfigFileName): js.Promise[OmitGetStaticPathsResulta | EncodedPaths] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAppStaticPaths")(hasPageConfigFileNameGenerateParams.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OmitGetStaticPathsResulta | EncodedPaths]]
+  inline def buildAppStaticPaths(param0: ConfigFileName): js.Promise[OmitGetStaticPathsResulta | EncodedPaths] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAppStaticPaths")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OmitGetStaticPathsResulta | EncodedPaths]]
   
-  inline def buildStaticPaths(hasPageGetStaticPathsStaticPathsResultConfigFileNameLocalesDefaultLocale: DefaultLocale): js.Promise[
+  inline def buildStaticPaths(param0: DefaultLocale): js.Promise[
     (Omit[
       UnwrapPromise[
         ReturnType[
@@ -63,7 +63,7 @@ object distBuildWorkerMod {
       ], 
       paths
     ]) & Paths
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStaticPaths")(hasPageGetStaticPathsStaticPathsResultConfigFileNameLocalesDefaultLocale.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStaticPaths")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
     (Omit[
       UnwrapPromise[
         ReturnType[
@@ -106,9 +106,7 @@ object distBuildWorkerMod {
   inline def difference[T](main: ReadonlySet[T], sub: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(main.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def difference[T](main: ReadonlySet[T], sub: ReadonlySet[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(main.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def exportPage(
-    hasParentSpanIdPathPathMapDistDirOutDirPagesDataDirRenderOptsBuildExportServerRuntimeConfigSubFoldersServerlessOptimizeFontsOptimizeCssDisableOptimizedLoadingHttpAgentOptionsServerComponents: ExportPageInput
-  ): js.Promise[ExportPageResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportPage")(hasParentSpanIdPathPathMapDistDirOutDirPagesDataDirRenderOptsBuildExportServerRuntimeConfigSubFoldersServerlessOptimizeFontsOptimizeCssDisableOptimizedLoadingHttpAgentOptionsServerComponents.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExportPageResults]]
+  inline def exportPage(param0: ExportPageInput): js.Promise[ExportPageResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportPage")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExportPageResults]]
   
   inline def getJsPageSizeInKb(routerType: ROUTER_TYPE, page: String, distPath: String, buildManifest: BuildManifest): js.Promise[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getJsPageSizeInKb")(routerType.asInstanceOf[js.Any], page.asInstanceOf[js.Any], distPath.asInstanceOf[js.Any], buildManifest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, Double]]]
   inline def getJsPageSizeInKb(
@@ -190,20 +188,18 @@ object distBuildWorkerMod {
   inline def isMiddlewareFilename(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMiddlewareFilename")().asInstanceOf[Boolean]
   inline def isMiddlewareFilename(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMiddlewareFilename")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isPageStatic(
-    hasPageDistDirServerlessConfigFileNameRuntimeEnvConfigHttpAgentOptionsLocalesDefaultLocaleParentIdPageRuntimeEdgeInfoPageTypeHasServerComponentsOriginalAppPath: DistDir
-  ): js.Promise[AppConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("isPageStatic")(hasPageDistDirServerlessConfigFileNameRuntimeEnvConfigHttpAgentOptionsLocalesDefaultLocaleParentIdPageRuntimeEdgeInfoPageTypeHasServerComponentsOriginalAppPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppConfig]]
+  inline def isPageStatic(param0: DistDir): js.Promise[AppConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("isPageStatic")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppConfig]]
   
   inline def isReservedPage(page: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReservedPage")(page.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def printCustomRoutes(hasRedirectsRewritesHeaders: CustomRoutes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printCustomRoutes")(hasRedirectsRewritesHeaders.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def printCustomRoutes(param0: CustomRoutes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printCustomRoutes")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def printTreeView(
     lists: Pages,
     pageInfos: Map[String, PageInfo],
     serverless: Boolean,
-    hasDistPathBuildIdPagesDirPageExtensionsBuildManifestAppBuildManifestMiddlewareManifestUseStatic404GzipSize: typings.next.anon.AppBuildManifest
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("printTreeView")(lists.asInstanceOf[js.Any], pageInfos.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], hasDistPathBuildIdPagesDirPageExtensionsBuildManifestAppBuildManifestMiddlewareManifestUseStatic404GzipSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    param3: typings.next.anon.AppBuildManifest
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("printTreeView")(lists.asInstanceOf[js.Any], pageInfos.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def unique[T](main: js.Array[T], sub: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(main.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

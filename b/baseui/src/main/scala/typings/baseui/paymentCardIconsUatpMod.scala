@@ -12,5 +12,5 @@ object paymentCardIconsUatpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasSize: Size): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: Size): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -11,5 +11,5 @@ object buildTransformerCreateExoticTransformerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createExoticTransformer(hasNodeModulesPathsTranspileModules: NodeModulesPaths): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createExoticTransformer")(hasNodeModulesPathsTranspileModules.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createExoticTransformer(param0: NodeModulesPaths): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createExoticTransformer")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

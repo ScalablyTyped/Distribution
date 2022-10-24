@@ -45,9 +45,9 @@ object distLibIacDriftDriftctlMod {
     driftIgnore: js.Array[String]
   ): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateArgs")(options.asInstanceOf[js.Any], driftIgnore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  inline def runDriftCTL(hasOptionsDriftIgnoreInputStdio: DriftIgnore): js.Promise[
+  inline def runDriftCTL(param0: DriftIgnore): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DriftctlExecutionResult */ Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("runDriftCTL")(hasOptionsDriftIgnoreInputStdio.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("runDriftCTL")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DriftctlExecutionResult */ Any
   ]]
   

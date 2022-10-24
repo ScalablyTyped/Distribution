@@ -15,7 +15,7 @@ object buildImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def compositeImagesAsync(hasForegroundBackgroundXY: Background): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("compositeImagesAsync")(hasForegroundBackgroundXY.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def compositeImagesAsync(param0: Background): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("compositeImagesAsync")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   
   inline def generateFaviconAsync(pngImageBuffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFaviconAsync")(pngImageBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   inline def generateFaviconAsync(pngImageBuffer: Buffer, sizes: js.Array[Double]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateFaviconAsync")(pngImageBuffer.asInstanceOf[js.Any], sizes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]

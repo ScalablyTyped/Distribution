@@ -1117,9 +1117,9 @@ object esHooksUseStyleRegisterMod {
   inline def normalizeStyle(styleStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStyle")(styleStr.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def parseStyle(interpolation: CSSInterpolation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def parseStyle(interpolation: CSSInterpolation, config: Unit, hasRootInjectHash: ParseInfo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasRootInjectHash.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseStyle(interpolation: CSSInterpolation, config: Unit, param2: ParseInfo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def parseStyle(interpolation: CSSInterpolation, config: ParseConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def parseStyle(interpolation: CSSInterpolation, config: ParseConfig, hasRootInjectHash: ParseInfo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasRootInjectHash.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseStyle(interpolation: CSSInterpolation, config: ParseConfig, param2: ParseInfo): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStyle")(interpolation.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type ArrayCSSInterpolation = js.Array[CSSInterpolation]
   

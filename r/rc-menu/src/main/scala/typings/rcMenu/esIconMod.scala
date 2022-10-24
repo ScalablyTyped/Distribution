@@ -14,7 +14,7 @@ object esIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasIconPropsChildren: IconProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIconPropsChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default(param0: IconProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait IconProps extends StObject {
     

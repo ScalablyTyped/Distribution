@@ -15,7 +15,7 @@ object libConfigLoaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def configLoader(hasCwdExplicitParamsTsConfigLoader: ConfigLoaderParams): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("configLoader")(hasCwdExplicitParamsTsConfigLoader.asInstanceOf[js.Any]).asInstanceOf[ConfigLoaderResult]
+  inline def configLoader(param0: ConfigLoaderParams): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("configLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[ConfigLoaderResult]
   
   inline def loadConfig(): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")().asInstanceOf[ConfigLoaderResult]
   inline def loadConfig(cwd: String): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(cwd.asInstanceOf[js.Any]).asInstanceOf[ConfigLoaderResult]

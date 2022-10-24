@@ -24,15 +24,15 @@ object coreInteractionFinderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def hasPointer(hasPointerIdScope: SearchDetails): Interaction[
+    inline def hasPointer(param0: SearchDetails): Interaction[
         /* keyof @interactjs/types.@interactjs/core/types.ActionMap */ drag | drop | gesture | resize
-      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPointer")(hasPointerIdScope.asInstanceOf[js.Any]).asInstanceOf[Interaction[
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPointer")(param0.asInstanceOf[js.Any]).asInstanceOf[Interaction[
         /* keyof @interactjs/types.@interactjs/core/types.ActionMap */ drag | drop | gesture | resize
       ]]
     
-    inline def idle(hasPointerTypeScope: SearchDetails): Interaction[
+    inline def idle(param0: SearchDetails): Interaction[
         /* keyof @interactjs/types.@interactjs/core/types.ActionMap */ drag | drop | gesture | resize
-      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("idle")(hasPointerTypeScope.asInstanceOf[js.Any]).asInstanceOf[Interaction[
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("idle")(param0.asInstanceOf[js.Any]).asInstanceOf[Interaction[
         /* keyof @interactjs/types.@interactjs/core/types.ActionMap */ drag | drop | gesture | resize
       ]]
     
@@ -41,13 +41,13 @@ object coreInteractionFinderMod {
     def methodOrder: js.Tuple4[simulationResume, mouseOrPen, hasPointer, idle] = js.native
     inline def methodOrder_=(x: js.Tuple4[simulationResume, mouseOrPen, hasPointer, idle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("methodOrder")(x.asInstanceOf[js.Any])
     
-    inline def mouseOrPen(hasPointerIdPointerTypeEventTypeScope: SearchDetails): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOrPen")(hasPointerIdPointerTypeEventTypeScope.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def mouseOrPen(param0: SearchDetails): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOrPen")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def search(details: SearchDetails): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(details.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def simulationResume(hasPointerTypeEventTypeEventTargetScope: SearchDetails): Interaction[
+    inline def simulationResume(param0: SearchDetails): Interaction[
         /* keyof @interactjs/types.@interactjs/core/types.ActionMap */ drag | drop | gesture | resize
-      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("simulationResume")(hasPointerTypeEventTypeEventTargetScope.asInstanceOf[js.Any]).asInstanceOf[Interaction[
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("simulationResume")(param0.asInstanceOf[js.Any]).asInstanceOf[Interaction[
         /* keyof @interactjs/types.@interactjs/core/types.ActionMap */ drag | drop | gesture | resize
       ]]
   }

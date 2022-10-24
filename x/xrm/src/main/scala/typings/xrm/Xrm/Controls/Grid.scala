@@ -110,15 +110,6 @@ object Grid {
     }
   }
   
-  extension [Self <: Grid](x: Self) {
-    
-    inline def setGetRows(value: () => ItemCollection[GridRow]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
-    
-    inline def setGetSelectedRows(value: () => ItemCollection[GridRow]): Self = StObject.set(x, "getSelectedRows", js.Any.fromFunction0(value))
-    
-    inline def setGetTotalRecordCount(value: () => Double): Self = StObject.set(x, "getTotalRecordCount", js.Any.fromFunction0(value))
-  }
-  
   /**
     * Interface for a grid row.  Use the GridRow.getData method to access the GridRowData. A collection of GridRow is
     * returned by Grid.getRows and Grid.getSelectedRows methods.
@@ -177,5 +168,14 @@ object Grid {
       
       inline def setGetEntity(value: () => GridEntity): Self = StObject.set(x, "getEntity", js.Any.fromFunction0(value))
     }
+  }
+  
+  extension [Self <: Grid](x: Self) {
+    
+    inline def setGetRows(value: () => ItemCollection[GridRow]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
+    
+    inline def setGetSelectedRows(value: () => ItemCollection[GridRow]): Self = StObject.set(x, "getSelectedRows", js.Any.fromFunction0(value))
+    
+    inline def setGetTotalRecordCount(value: () => Double): Self = StObject.set(x, "getTotalRecordCount", js.Any.fromFunction0(value))
   }
 }

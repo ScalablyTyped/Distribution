@@ -13,8 +13,5 @@ object buildCommandsBrowserWaitUntilMod {
   val ^ : js.Any = js.native
   
   inline def default(condition: js.Function0[Boolean | js.Promise[Boolean]]): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(condition.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
-  inline def default(
-    condition: js.Function0[Boolean | js.Promise[Boolean]],
-    hasTimeoutIntervalTimeoutMsg: PartialWaitUntilOptions
-  ): js.Promise[`true` | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(condition.asInstanceOf[js.Any], hasTimeoutIntervalTimeoutMsg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`true` | Unit]]
+  inline def default(condition: js.Function0[Boolean | js.Promise[Boolean]], param2: PartialWaitUntilOptions): js.Promise[`true` | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(condition.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`true` | Unit]]
 }

@@ -13,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ssecMiddleware[Input /* <: js.Object */](hasUtf8DecoderBase64EncoderHashConstructorSsecProperties: SsecMiddlewareConfiguration[Input]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ssecMiddleware")(hasUtf8DecoderBase64EncoderHashConstructorSsecProperties.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def ssecMiddleware[Input /* <: js.Object */](param0: SsecMiddlewareConfiguration[Input]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ssecMiddleware")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait SsecMiddlewareConfiguration[Input /* <: js.Object */] extends StObject {
     

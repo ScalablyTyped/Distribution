@@ -10,7 +10,7 @@ object typesLoopMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loop(hasValueMinMaxIncrementMinmax: LoopOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loop")(hasValueMinMaxIncrementMinmax.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def loop(param0: LoopOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loop")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   trait LoopOptions extends StObject {
     

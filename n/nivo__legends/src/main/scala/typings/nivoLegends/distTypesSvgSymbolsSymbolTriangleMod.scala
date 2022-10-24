@@ -12,5 +12,5 @@ object distTypesSvgSymbolsSymbolTriangleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SymbolTriangle(hasXYSizeFillOpacityBorderWidthBorderColor: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolTriangle")(hasXYSizeFillOpacityBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SymbolTriangle(param0: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolTriangle")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

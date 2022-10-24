@@ -15,7 +15,7 @@ object esComponentsGlobalFooterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def GlobalFooter(hasClassNamePrefixClsLinksCopyrightStyle: GlobalFooterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("GlobalFooter")(hasClassNamePrefixClsLinksCopyrightStyle.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def GlobalFooter(param0: GlobalFooterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("GlobalFooter")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait GlobalFooterProps extends StObject {
     

@@ -13,9 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Experiment(hasNameDefaultVariantNameUserIdentifierChildren: ExperimentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Experiment")(hasNameDefaultVariantNameUserIdentifierChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Experiment(param0: ExperimentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Experiment")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def Variant(hasNameChildren: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Variant")(hasNameChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Variant(param0: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Variant")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object emitter {
     

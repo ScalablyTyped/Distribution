@@ -21,7 +21,7 @@ object libSrcLexerRegexFactoryMod {
   inline def identifier(specialChars: IdentChars): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("identifier")(specialChars.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
   inline def identifierPattern(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("identifierPattern")().asInstanceOf[String]
-  inline def identifierPattern(hasFirstRestDashesAllowFirstCharNumber: IdentChars): String = ^.asInstanceOf[js.Dynamic].applyDynamic("identifierPattern")(hasFirstRestDashesAllowFirstCharNumber.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def identifierPattern(param0: IdentChars): String = ^.asInstanceOf[js.Dynamic].applyDynamic("identifierPattern")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def lineComment(lineCommentTypes: js.Array[String]): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("lineComment")(lineCommentTypes.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   

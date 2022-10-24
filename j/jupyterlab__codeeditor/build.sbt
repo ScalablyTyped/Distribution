@@ -1,33 +1,33 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__codeeditor"
-version := "3.4.8-2dcdc8"
-scalaVersion := "3.1.2"
+version := "3.5.0-9516fd"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jupyterlab__coreutils" % "5.4.8-3c477c",
-  "org.scalablytyped" %%% "jupyterlab__nbformat" % "3.4.8-482564",
-  "org.scalablytyped" %%% "jupyterlab__observables" % "4.4.8-bd2f56",
-  "org.scalablytyped" %%% "jupyterlab__services" % "6.4.8-f629ba",
-  "org.scalablytyped" %%% "jupyterlab__settingregistry" % "3.4.8-a9ce16",
-  "org.scalablytyped" %%% "jupyterlab__shared-models" % "3.4.8-addadb",
-  "org.scalablytyped" %%% "jupyterlab__statedb" % "3.4.8-276f60",
-  "org.scalablytyped" %%% "jupyterlab__translation" % "3.4.8-4d587e",
-  "org.scalablytyped" %%% "lib0" % "0.2.52-5f5655",
-  "org.scalablytyped" %%% "lumino__algorithm" % "1.9.2-3e1ceb",
-  "org.scalablytyped" %%% "lumino__commands" % "1.20.1-f6d697",
-  "org.scalablytyped" %%% "lumino__coreutils" % "1.12.1-0dc8fb",
-  "org.scalablytyped" %%% "lumino__disposable" % "1.10.2-350acb",
-  "org.scalablytyped" %%% "lumino__messaging" % "1.10.3-51bd04",
-  "org.scalablytyped" %%% "lumino__polling" % "1.11.2-c83708",
-  "org.scalablytyped" %%% "lumino__signaling" % "1.10.2-f14e47",
-  "org.scalablytyped" %%% "lumino__virtualdom" % "1.14.2-bf27c0",
-  "org.scalablytyped" %%% "lumino__widgets" % "1.34.1-4b2902",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "rollup" % "3.2.3-eed8d7",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "y-protocols" % "1.0.5-761367",
-  "org.scalablytyped" %%% "yjs" % "13.5.41-dd7764")
+  "org.scalablytyped" %%% "jupyterlab__coreutils" % "5.5.0-c1cac4",
+  "org.scalablytyped" %%% "jupyterlab__nbformat" % "3.5.0-81f773",
+  "org.scalablytyped" %%% "jupyterlab__observables" % "4.5.0-1ab86b",
+  "org.scalablytyped" %%% "jupyterlab__services" % "6.5.0-840458",
+  "org.scalablytyped" %%% "jupyterlab__settingregistry" % "3.5.0-9d1f2c",
+  "org.scalablytyped" %%% "jupyterlab__shared-models" % "3.5.0-619c86",
+  "org.scalablytyped" %%% "jupyterlab__statedb" % "3.5.0-a6333c",
+  "org.scalablytyped" %%% "jupyterlab__translation" % "3.5.0-68a3e6",
+  "org.scalablytyped" %%% "lib0" % "0.2.52-f5b0c9",
+  "org.scalablytyped" %%% "lumino__algorithm" % "1.9.2-3d1e81",
+  "org.scalablytyped" %%% "lumino__commands" % "1.20.1-fbd872",
+  "org.scalablytyped" %%% "lumino__coreutils" % "1.12.1-8c650c",
+  "org.scalablytyped" %%% "lumino__disposable" % "1.10.2-3430c7",
+  "org.scalablytyped" %%% "lumino__messaging" % "1.10.3-b7509f",
+  "org.scalablytyped" %%% "lumino__polling" % "1.11.2-bc0530",
+  "org.scalablytyped" %%% "lumino__signaling" % "1.10.2-a1f071",
+  "org.scalablytyped" %%% "lumino__virtualdom" % "1.14.2-f88614",
+  "org.scalablytyped" %%% "lumino__widgets" % "1.34.1-c32c29",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "rollup" % "3.2.3-c92d63",
+  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "y-protocols" % "1.0.5-92b6d7",
+  "org.scalablytyped" %%% "yjs" % "13.5.42-76112e")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -11,5 +11,5 @@ object buildCommandsElementClickMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasElementId: ElementId): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def default(param1: ElementId): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }

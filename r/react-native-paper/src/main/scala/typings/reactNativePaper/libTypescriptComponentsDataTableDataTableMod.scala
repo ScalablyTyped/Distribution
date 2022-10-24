@@ -5,11 +5,6 @@ import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import typings.reactNativePaper.anon.Call
-import typings.reactNativePaper.anon.CallHasChildrenStyleThemeRest
-import typings.reactNativePaper.anon.CallHasChildrenTextStyleStyleNumericRest
-import typings.reactNativePaper.anon.CallHasLabelAccessibilityLabelPageNumberOfPagesOnPageChangeStyleThemeShowFastPaginationControlsNumberOfItemsPerPageListNumberOfItemsPerPageOnItemsPerPageChangeSelectPageDropdownLabelSelectPageDropdownAccessibilityLabelRest
-import typings.reactNativePaper.anon.CallHasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest
-import typings.reactNativePaper.anon.CallHasOnPressStyleThemeChildrenPointerEventsRest
 import typings.reactNativePaper.anon.PickRemoveChildrenComponeAccessibilityLiveRegion
 import typings.reactNativePaper.anon.PickTouchableWithoutFeedbAccessibilityActions
 import typings.reactNativePaper.anon.PickTouchableWithoutFeedbAccessibilityElementsHidden
@@ -21,6 +16,11 @@ import typings.reactNativePaper.anon.TouchableWithoutFeedbackP
 import typings.reactNativePaper.anon.TouchableWithoutFeedbackPAccessibilityActions
 import typings.reactNativePaper.anon.TypeofView
 import typings.reactNativePaper.anon.ViewPropsRefAttributesVieAccessibilityLabelledBy
+import typings.reactNativePaper.anon.`10`
+import typings.reactNativePaper.anon.`11`
+import typings.reactNativePaper.anon.`7`
+import typings.reactNativePaper.anon.`8`
+import typings.reactNativePaper.anon.`9`
 import typings.reactNativePaper.anon.pagenumbernumberOfPagesnu
 import typings.reactNativePaper.libTypescriptTypesMod.RemoveChildren
 import org.scalablytyped.runtime.StObject
@@ -94,7 +94,7 @@ object libTypescriptComponentsDataTableDataTableMod {
     */
   object default {
     
-    inline def apply(hasChildrenStyleRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTable", JSImport.Default)
     @js.native
@@ -102,33 +102,21 @@ object libTypescriptComponentsDataTableDataTableMod {
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTable", "default.Cell")
     @js.native
-    def Cell: CallHasChildrenTextStyleStyleNumericRest = js.native
-    inline def Cell_=(x: CallHasChildrenTextStyleStyleNumericRest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
+    def Cell: `10` = js.native
+    inline def Cell_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTable", "default.Header")
     @js.native
-    def Header: ComponentType[PickViewPropsRefAttributeAccessibilityLanguage] & (NonReactStatics[
-        ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & CallHasChildrenStyleThemeRest, 
-        js.Object
-      ]) = js.native
+    def Header: ComponentType[PickViewPropsRefAttributeAccessibilityLanguage] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & `7`, js.Object]) = js.native
     inline def Header_=(
-      x: ComponentType[PickViewPropsRefAttributeAccessibilityLanguage] & (NonReactStatics[
-          ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & CallHasChildrenStyleThemeRest, 
-          js.Object
-        ])
+      x: ComponentType[PickViewPropsRefAttributeAccessibilityLanguage] & (NonReactStatics[ComponentType[ViewPropsRefAttributesVieAccessibilityLabelledBy] & `7`, js.Object])
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTable", "default.Pagination")
     @js.native
-    def Pagination: ComponentType[PickpagenumbernumberOfPag] & (NonReactStatics[
-        ComponentType[pagenumbernumberOfPagesnu] & CallHasLabelAccessibilityLabelPageNumberOfPagesOnPageChangeStyleThemeShowFastPaginationControlsNumberOfItemsPerPageListNumberOfItemsPerPageOnItemsPerPageChangeSelectPageDropdownLabelSelectPageDropdownAccessibilityLabelRest, 
-        js.Object
-      ]) = js.native
+    def Pagination: ComponentType[PickpagenumbernumberOfPag] & (NonReactStatics[ComponentType[pagenumbernumberOfPagesnu] & `11`, js.Object]) = js.native
     inline def Pagination_=(
-      x: ComponentType[PickpagenumbernumberOfPag] & (NonReactStatics[
-          ComponentType[pagenumbernumberOfPagesnu] & CallHasLabelAccessibilityLabelPageNumberOfPagesOnPageChangeStyleThemeShowFastPaginationControlsNumberOfItemsPerPageListNumberOfItemsPerPageOnItemsPerPageChangeSelectPageDropdownLabelSelectPageDropdownAccessibilityLabelRest, 
-          js.Object
-        ])
+      x: ComponentType[PickpagenumbernumberOfPag] & (NonReactStatics[ComponentType[pagenumbernumberOfPagesnu] & `11`, js.Object])
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pagination")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTable", "default.Row")
@@ -138,7 +126,7 @@ object libTypescriptComponentsDataTableDataTableMod {
           (RemoveChildren[
             ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
           ]) & PointerEvents
-        ]) & CallHasOnPressStyleThemeChildrenPointerEventsRest, 
+        ]) & `9`, 
         js.Object
       ]) = js.native
     inline def Row_=(
@@ -147,22 +135,16 @@ object libTypescriptComponentsDataTableDataTableMod {
             (RemoveChildren[
               ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
             ]) & PointerEvents
-          ]) & CallHasOnPressStyleThemeChildrenPointerEventsRest, 
+          ]) & `9`, 
           js.Object
         ])
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTable", "default.Title")
     @js.native
-    def Title: ComponentType[PickTouchableWithoutFeedbAccessibilityElementsHidden] & (NonReactStatics[
-        ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & CallHasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest, 
-        js.Object
-      ]) = js.native
+    def Title: ComponentType[PickTouchableWithoutFeedbAccessibilityElementsHidden] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & `8`, js.Object]) = js.native
     inline def Title_=(
-      x: ComponentType[PickTouchableWithoutFeedbAccessibilityElementsHidden] & (NonReactStatics[
-          ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & CallHasNumericChildrenOnPressSortDirectionThemeTextStyleStyleNumberOfLinesRest, 
-          js.Object
-        ])
+      x: ComponentType[PickTouchableWithoutFeedbAccessibilityElementsHidden] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackPAccessibilityActions] & `8`, js.Object])
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
   }
   

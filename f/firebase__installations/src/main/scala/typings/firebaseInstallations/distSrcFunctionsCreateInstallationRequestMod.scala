@@ -13,8 +13,5 @@ object distSrcFunctionsCreateInstallationRequestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createInstallationRequest(
-    hasAppConfigHeartbeatServiceProvider: FirebaseInstallationsImpl,
-    hasFid: InProgressInstallationEntry
-  ): js.Promise[RegisteredInstallationEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstallationRequest")(hasAppConfigHeartbeatServiceProvider.asInstanceOf[js.Any], hasFid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RegisteredInstallationEntry]]
+  inline def createInstallationRequest(param0: FirebaseInstallationsImpl, param1: InProgressInstallationEntry): js.Promise[RegisteredInstallationEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstallationRequest")(param0.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RegisteredInstallationEntry]]
 }

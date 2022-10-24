@@ -25,7 +25,7 @@ object libMetaMod {
     def elements: js.Array[String] = js.native
     inline def elements_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
-    inline def enter(hasSpecNodeClauseStack: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enter")(hasSpecNodeClauseStack.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def enter(param0: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enter")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     inline def render(spec: Spec, node: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(spec.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }

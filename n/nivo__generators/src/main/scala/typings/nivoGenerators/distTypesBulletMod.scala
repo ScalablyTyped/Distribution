@@ -12,7 +12,7 @@ object distTypesBulletMod {
   val ^ : js.Any = js.native
   
   inline def generateBulletData(id: String, max: Double): Id = (^.asInstanceOf[js.Dynamic].applyDynamic("generateBulletData")(id.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Id]
-  inline def generateBulletData(id: String, max: Double, hasTitleSubtitleRangeCountMeasureCountMarkerCountFloat: Options): Id = (^.asInstanceOf[js.Dynamic].applyDynamic("generateBulletData")(id.asInstanceOf[js.Any], max.asInstanceOf[js.Any], hasTitleSubtitleRangeCountMeasureCountMarkerCountFloat.asInstanceOf[js.Any])).asInstanceOf[Id]
+  inline def generateBulletData(id: String, max: Double, param2: Options): Id = (^.asInstanceOf[js.Dynamic].applyDynamic("generateBulletData")(id.asInstanceOf[js.Any], max.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Id]
   
   /* Inlined std.Partial<{  float :boolean,   markerCount :number,   measureCount :number,   rangeCount :number,   subtitle :string,   title :string}> */
   trait Options extends StObject {

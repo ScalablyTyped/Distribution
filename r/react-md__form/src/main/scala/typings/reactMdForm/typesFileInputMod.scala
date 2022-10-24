@@ -125,12 +125,7 @@ object typesFileInputMod {
   inline def isVideoFile(file: File): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVideoFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def useFileUpload[E /* <: HTMLElement */, CustomError](): FileUploadHookReturnValue[E, CustomError] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFileUpload")().asInstanceOf[FileUploadHookReturnValue[E, CustomError]]
-  inline def useFileUpload[E /* <: HTMLElement */, CustomError](
-    hasMaxFilesExtensionsMinFileSizeMaxFileSizeTotalFileSizeConcurrencyPropOnDropPropOnChangeValidateFilesGetFileParserIsValidFileName: FileUploadOptions[E, CustomError]
-  ): FileUploadHookReturnValue[E, CustomError] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFileUpload")(hasMaxFilesExtensionsMinFileSizeMaxFileSizeTotalFileSizeConcurrencyPropOnDropPropOnChangeValidateFilesGetFileParserIsValidFileName.asInstanceOf[js.Any]).asInstanceOf[FileUploadHookReturnValue[E, CustomError]]
+  inline def useFileUpload[E /* <: HTMLElement */, CustomError](param0: FileUploadOptions[E, CustomError]): FileUploadHookReturnValue[E, CustomError] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFileUpload")(param0.asInstanceOf[js.Any]).asInstanceOf[FileUploadHookReturnValue[E, CustomError]]
   
-  inline def validateFiles[CustomError](
-    files: js.Array[File],
-    hasMaxFilesExtensionsMinFileSizeMaxFileSizeTotalBytesTotalFilesTotalFileSizeIsValidFileName: FilesValidationOptions
-  ): ValidatedFilesResult[CustomError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateFiles")(files.asInstanceOf[js.Any], hasMaxFilesExtensionsMinFileSizeMaxFileSizeTotalBytesTotalFilesTotalFileSizeIsValidFileName.asInstanceOf[js.Any])).asInstanceOf[ValidatedFilesResult[CustomError]]
+  inline def validateFiles[CustomError](files: js.Array[File], param1: FilesValidationOptions): ValidatedFilesResult[CustomError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateFiles")(files.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ValidatedFilesResult[CustomError]]
 }

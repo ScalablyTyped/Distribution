@@ -12,7 +12,5 @@ object futureImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasSrcSizesUnoptimizedPriorityLoadingClassNameQualityWidthHeightFillStyleOnLoadingCompletePlaceholderBlurDataURLAll: ImageProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSrcSizesUnoptimizedPriorityLoadingClassNameQualityWidthHeightFillStyleOnLoadingCompletePlaceholderBlurDataURLAll.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

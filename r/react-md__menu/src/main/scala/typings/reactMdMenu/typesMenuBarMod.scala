@@ -13,7 +13,7 @@ object typesMenuBarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def MenuBar(hasHoverTimeoutProps: MenuBarProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBar")(hasHoverTimeoutProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuBar(param0: MenuBarProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBar")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   type MenuBarProps = MenuBarWidgetProps & HoverableMenuBar
 }

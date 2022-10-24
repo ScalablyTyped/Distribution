@@ -11,7 +11,7 @@ object distTypesRegionInfoGetResolvedPartitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getResolvedPartition(region: String, hasPartitionHash: GetResolvedPartitionOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolvedPartition")(region.asInstanceOf[js.Any], hasPartitionHash.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getResolvedPartition(region: String, param1: GetResolvedPartitionOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolvedPartition")(region.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait GetResolvedPartitionOptions extends StObject {
     

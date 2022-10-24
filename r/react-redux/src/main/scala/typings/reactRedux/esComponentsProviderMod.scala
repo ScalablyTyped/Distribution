@@ -16,7 +16,7 @@ object esComponentsProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[A /* <: Action[Any] */](hasStoreContextChildrenServerState: ProviderProps[A, Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStoreContextChildrenServerState.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[A /* <: Action[Any] */](param0: ProviderProps[A, Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ProviderProps[A /* <: Action[Any] */, S] extends StObject {
     

@@ -174,6 +174,8 @@ object providersMod {
     
     var strava: OAuthProvider
     
+    var todoist: OAuthProvider
+    
     var trakt: OAuthProvider
     
     var twitch: OAuthProvider
@@ -257,6 +259,7 @@ object providersMod {
       slack: /* options */ PartialOAuthConfigany => OAuthConfig[Any],
       spotify: /* options */ PartialOAuthConfigany => OAuthConfig[Any],
       strava: /* options */ PartialOAuthConfigany => OAuthConfig[Any],
+      todoist: /* options */ PartialOAuthConfigany => OAuthConfig[Any],
       trakt: /* options */ PartialOAuthConfigany => OAuthConfig[Any],
       twitch: /* options */ PartialOAuthConfigany => OAuthConfig[Any],
       twitter: /* options */ PartialOAuthConfigany => OAuthConfig[Any],
@@ -270,7 +273,7 @@ object providersMod {
       zoho: /* options */ PartialOAuthConfigany => OAuthConfig[Any],
       zoom: /* options */ PartialOAuthConfigany => OAuthConfig[Any]
     ): BuiltInProviders = {
-      val __obj = js.Dynamic.literal(Credentials = js.Any.fromFunction1(Credentials), Email = js.Any.fromFunction1(Email), apple = js.Any.fromFunction1(apple), atlassian = js.Any.fromFunction1(atlassian), auth0 = js.Any.fromFunction1(auth0), authentik = js.Any.fromFunction1(authentik), battlenet = js.Any.fromFunction1(battlenet), box = js.Any.fromFunction1(box), bungie = js.Any.fromFunction1(bungie), cognito = js.Any.fromFunction1(cognito), coinbase = js.Any.fromFunction1(coinbase), credentials = js.Any.fromFunction1(credentials), discord = js.Any.fromFunction1(discord), dropbox = js.Any.fromFunction1(dropbox), email = js.Any.fromFunction1(email), eveonline = js.Any.fromFunction1(eveonline), facebook = js.Any.fromFunction1(facebook), faceit = js.Any.fromFunction1(faceit), foursquare = js.Any.fromFunction1(foursquare), freshbooks = js.Any.fromFunction1(freshbooks), fusionauth = js.Any.fromFunction1(fusionauth), github = js.Any.fromFunction1(github), gitlab = js.Any.fromFunction1(gitlab), google = js.Any.fromFunction1(google), hubspot = js.Any.fromFunction1(hubspot), index = js.Any.fromFunction1(index), instagram = js.Any.fromFunction1(instagram), kakao = js.Any.fromFunction1(kakao), keycloak = js.Any.fromFunction1(keycloak), line = js.Any.fromFunction1(line), linkedin = js.Any.fromFunction1(linkedin), mailchimp = js.Any.fromFunction1(mailchimp), mailru = js.Any.fromFunction1(mailru), medium = js.Any.fromFunction1(medium), naver = js.Any.fromFunction1(naver), netlify = js.Any.fromFunction1(netlify), oauth = js.Any.fromFunction1(oauth), okta = js.Any.fromFunction1(okta), onelogin = js.Any.fromFunction1(onelogin), osso = js.Any.fromFunction1(osso), osu = js.Any.fromFunction1(osu), patreon = js.Any.fromFunction1(patreon), pinterest = js.Any.fromFunction1(pinterest), pipedrive = js.Any.fromFunction1(pipedrive), reddit = js.Any.fromFunction1(reddit), salesforce = js.Any.fromFunction1(salesforce), slack = js.Any.fromFunction1(slack), spotify = js.Any.fromFunction1(spotify), strava = js.Any.fromFunction1(strava), trakt = js.Any.fromFunction1(trakt), twitch = js.Any.fromFunction1(twitch), twitter = js.Any.fromFunction1(twitter), vk = js.Any.fromFunction1(vk), wikimedia = js.Any.fromFunction1(wikimedia), wordpress = js.Any.fromFunction1(wordpress), workos = js.Any.fromFunction1(workos), yandex = js.Any.fromFunction1(yandex), zitadel = js.Any.fromFunction1(zitadel), zoho = js.Any.fromFunction1(zoho), zoom = js.Any.fromFunction1(zoom))
+      val __obj = js.Dynamic.literal(Credentials = js.Any.fromFunction1(Credentials), Email = js.Any.fromFunction1(Email), apple = js.Any.fromFunction1(apple), atlassian = js.Any.fromFunction1(atlassian), auth0 = js.Any.fromFunction1(auth0), authentik = js.Any.fromFunction1(authentik), battlenet = js.Any.fromFunction1(battlenet), box = js.Any.fromFunction1(box), bungie = js.Any.fromFunction1(bungie), cognito = js.Any.fromFunction1(cognito), coinbase = js.Any.fromFunction1(coinbase), credentials = js.Any.fromFunction1(credentials), discord = js.Any.fromFunction1(discord), dropbox = js.Any.fromFunction1(dropbox), email = js.Any.fromFunction1(email), eveonline = js.Any.fromFunction1(eveonline), facebook = js.Any.fromFunction1(facebook), faceit = js.Any.fromFunction1(faceit), foursquare = js.Any.fromFunction1(foursquare), freshbooks = js.Any.fromFunction1(freshbooks), fusionauth = js.Any.fromFunction1(fusionauth), github = js.Any.fromFunction1(github), gitlab = js.Any.fromFunction1(gitlab), google = js.Any.fromFunction1(google), hubspot = js.Any.fromFunction1(hubspot), index = js.Any.fromFunction1(index), instagram = js.Any.fromFunction1(instagram), kakao = js.Any.fromFunction1(kakao), keycloak = js.Any.fromFunction1(keycloak), line = js.Any.fromFunction1(line), linkedin = js.Any.fromFunction1(linkedin), mailchimp = js.Any.fromFunction1(mailchimp), mailru = js.Any.fromFunction1(mailru), medium = js.Any.fromFunction1(medium), naver = js.Any.fromFunction1(naver), netlify = js.Any.fromFunction1(netlify), oauth = js.Any.fromFunction1(oauth), okta = js.Any.fromFunction1(okta), onelogin = js.Any.fromFunction1(onelogin), osso = js.Any.fromFunction1(osso), osu = js.Any.fromFunction1(osu), patreon = js.Any.fromFunction1(patreon), pinterest = js.Any.fromFunction1(pinterest), pipedrive = js.Any.fromFunction1(pipedrive), reddit = js.Any.fromFunction1(reddit), salesforce = js.Any.fromFunction1(salesforce), slack = js.Any.fromFunction1(slack), spotify = js.Any.fromFunction1(spotify), strava = js.Any.fromFunction1(strava), todoist = js.Any.fromFunction1(todoist), trakt = js.Any.fromFunction1(trakt), twitch = js.Any.fromFunction1(twitch), twitter = js.Any.fromFunction1(twitter), vk = js.Any.fromFunction1(vk), wikimedia = js.Any.fromFunction1(wikimedia), wordpress = js.Any.fromFunction1(wordpress), workos = js.Any.fromFunction1(workos), yandex = js.Any.fromFunction1(yandex), zitadel = js.Any.fromFunction1(zitadel), zoho = js.Any.fromFunction1(zoho), zoom = js.Any.fromFunction1(zoom))
       __obj.updateDynamic("42-school")(js.Any.fromFunction1(`42-school`))
       __obj.updateDynamic("azure-ad")(js.Any.fromFunction1(`azure-ad`))
       __obj.updateDynamic("azure-ad-b2c")(js.Any.fromFunction1(`azure-ad-b2c`))
@@ -393,6 +396,8 @@ object providersMod {
       inline def setSpotify(value: /* options */ PartialOAuthConfigany => OAuthConfig[Any]): Self = StObject.set(x, "spotify", js.Any.fromFunction1(value))
       
       inline def setStrava(value: /* options */ PartialOAuthConfigany => OAuthConfig[Any]): Self = StObject.set(x, "strava", js.Any.fromFunction1(value))
+      
+      inline def setTodoist(value: /* options */ PartialOAuthConfigany => OAuthConfig[Any]): Self = StObject.set(x, "todoist", js.Any.fromFunction1(value))
       
       inline def setTrakt(value: /* options */ PartialOAuthConfigany => OAuthConfig[Any]): Self = StObject.set(x, "trakt", js.Any.fromFunction1(value))
       

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "web3-eth-iban"
-version := "1.8.0-09d50c"
-scalaVersion := "3.1.2"
+version := "1.8.0-428945"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

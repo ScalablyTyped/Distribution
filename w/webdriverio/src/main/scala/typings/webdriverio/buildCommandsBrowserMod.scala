@@ -293,16 +293,16 @@ object buildCommandsBrowserMod {
     def newWindow: js.ThisFunction2[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ /* this */ Any, 
         /* url */ String, 
-        /* hasWindowNameWindowFeatures */ js.UndefOr[NewWindowOptions], 
+        /* param2 */ js.UndefOr[NewWindowOptions], 
         js.Promise[String]
       ] = js.native
     inline def newWindow(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("newWindow")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    inline def newWindow(url: String, hasWindowNameWindowFeatures: NewWindowOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("newWindow")(url.asInstanceOf[js.Any], hasWindowNameWindowFeatures.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def newWindow(url: String, param2: NewWindowOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("newWindow")(url.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     inline def newWindow_=(
       x: js.ThisFunction2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ /* this */ Any, 
           /* url */ String, 
-          /* hasWindowNameWindowFeatures */ js.UndefOr[NewWindowOptions], 
+          /* param2 */ js.UndefOr[NewWindowOptions], 
           js.Promise[String]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newWindow")(x.asInstanceOf[js.Any])
@@ -330,29 +330,29 @@ object buildCommandsBrowserMod {
     def react: js.ThisFunction2[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ /* this */ Any, 
         /* selector */ String, 
-        /* hasPropsState */ js.UndefOr[ReactSelectorOptions], 
+        /* param2 */ js.UndefOr[ReactSelectorOptions], 
         js.Promise[Element]
       ] = js.native
     
     inline def react(selector: String): js.Promise[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("react$")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Element]]
-    inline def react(selector: String, hasPropsState: ReactSelectorOptions): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$")(selector.asInstanceOf[js.Any], hasPropsState.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
+    inline def react(selector: String, param2: ReactSelectorOptions): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$")(selector.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
     
     @JSImport("webdriverio/build/commands/browser", "default.react$$")
     @js.native
     def react$: js.ThisFunction2[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ /* this */ Any, 
         /* selector */ String, 
-        /* hasPropsState */ js.UndefOr[ReactSelectorOptions], 
+        /* param2 */ js.UndefOr[ReactSelectorOptions], 
         js.Promise[ElementArray]
       ] = js.native
     
     inline def react$(selector: String): js.Promise[ElementArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("react$$")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementArray]]
-    inline def react$(selector: String, hasPropsState: ReactSelectorOptions): js.Promise[ElementArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$$")(selector.asInstanceOf[js.Any], hasPropsState.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ElementArray]]
+    inline def react$(selector: String, param2: ReactSelectorOptions): js.Promise[ElementArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$$")(selector.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ElementArray]]
     inline def react$_=(
       x: js.ThisFunction2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ /* this */ Any, 
           /* selector */ String, 
-          /* hasPropsState */ js.UndefOr[ReactSelectorOptions], 
+          /* param2 */ js.UndefOr[ReactSelectorOptions], 
           js.Promise[ElementArray]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("react$$")(x.asInstanceOf[js.Any])
@@ -361,7 +361,7 @@ object buildCommandsBrowserMod {
       x: js.ThisFunction2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ /* this */ Any, 
           /* selector */ String, 
-          /* hasPropsState */ js.UndefOr[ReactSelectorOptions], 
+          /* param2 */ js.UndefOr[ReactSelectorOptions], 
           js.Promise[Element]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("react$")(x.asInstanceOf[js.Any])
@@ -569,19 +569,16 @@ object buildCommandsBrowserMod {
     def waitUntil: js.ThisFunction2[
         /* this */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any) | Element, 
         /* condition */ js.Function0[Boolean | js.Promise[Boolean]], 
-        /* hasTimeoutIntervalTimeoutMsg */ js.UndefOr[PartialWaitUntilOptions], 
+        /* param2 */ js.UndefOr[PartialWaitUntilOptions], 
         js.Promise[`true` | Unit]
       ] = js.native
     inline def waitUntil(condition: js.Function0[Boolean | js.Promise[Boolean]]): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntil")(condition.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
-    inline def waitUntil(
-      condition: js.Function0[Boolean | js.Promise[Boolean]],
-      hasTimeoutIntervalTimeoutMsg: PartialWaitUntilOptions
-    ): js.Promise[`true` | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntil")(condition.asInstanceOf[js.Any], hasTimeoutIntervalTimeoutMsg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`true` | Unit]]
+    inline def waitUntil(condition: js.Function0[Boolean | js.Promise[Boolean]], param2: PartialWaitUntilOptions): js.Promise[`true` | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntil")(condition.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`true` | Unit]]
     inline def waitUntil_=(
       x: js.ThisFunction2[
           /* this */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any) | Element, 
           /* condition */ js.Function0[Boolean | js.Promise[Boolean]], 
-          /* hasTimeoutIntervalTimeoutMsg */ js.UndefOr[PartialWaitUntilOptions], 
+          /* param2 */ js.UndefOr[PartialWaitUntilOptions], 
           js.Promise[`true` | Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitUntil")(x.asInstanceOf[js.Any])

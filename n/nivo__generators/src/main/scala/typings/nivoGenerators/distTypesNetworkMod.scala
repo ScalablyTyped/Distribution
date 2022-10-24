@@ -13,7 +13,7 @@ object distTypesNetworkMod {
   val ^ : js.Any = js.native
   
   inline def generateNetworkData(): Links = ^.asInstanceOf[js.Dynamic].applyDynamic("generateNetworkData")().asInstanceOf[Links]
-  inline def generateNetworkData(hasRootSizeMidSizeLeafSizeMinMidNodesMaxMidNodesMinLeavesMaxLeaves: LeafSize): Links = ^.asInstanceOf[js.Dynamic].applyDynamic("generateNetworkData")(hasRootSizeMidSizeLeafSizeMinMidNodesMaxMidNodesMinLeavesMaxLeaves.asInstanceOf[js.Any]).asInstanceOf[Links]
+  inline def generateNetworkData(param0: LeafSize): Links = ^.asInstanceOf[js.Dynamic].applyDynamic("generateNetworkData")(param0.asInstanceOf[js.Any]).asInstanceOf[Links]
   
   trait Link extends StObject {
     

@@ -19,10 +19,7 @@ object distSvgInjectorMod {
   val ^ : js.Any = js.native
   
   inline def default(elements: Elements): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def default(
-    elements: Elements,
-    hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsHttpRequestWithCredentialsRenumerateIRIElements: OptionalArgs
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsHttpRequestWithCredentialsRenumerateIRIElements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(elements: Elements, param1: OptionalArgs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Elements = HTMLCollectionOf[Element] | NodeListOf[Element] | Element | Null
   

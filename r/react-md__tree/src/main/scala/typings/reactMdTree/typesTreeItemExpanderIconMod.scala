@@ -12,7 +12,7 @@ object typesTreeItemExpanderIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TreeItemExpanderIcon(hasClassNameChildrenRotatedProps: TreeItemExpanderIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeItemExpanderIcon")(hasClassNameChildrenRotatedProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def TreeItemExpanderIcon(param0: TreeItemExpanderIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeItemExpanderIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait TreeItemExpanderIconProps
     extends StObject

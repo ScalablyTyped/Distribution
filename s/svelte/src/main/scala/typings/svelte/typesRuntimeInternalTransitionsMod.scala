@@ -6,7 +6,7 @@ import typings.svelte.anon.End
 import typings.svelte.anon.Invalidate
 import typings.svelte.anon.`0`
 import typings.svelte.svelteInts.`1`
-import typings.svelte.typesRuntimeInternalComponentMod.Fragment
+import typings.svelte.typesRuntimeInternalTypesMod.Fragment
 import typings.svelte.typesRuntimeTransitionMod.TransitionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

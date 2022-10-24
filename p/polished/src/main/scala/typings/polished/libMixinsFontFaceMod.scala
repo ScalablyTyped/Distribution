@@ -12,7 +12,5 @@ object libMixinsFontFaceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsFormatHintLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings: FontFaceConfiguration
-  ): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasFontFamilyFontFilePathFontStretchFontStyleFontVariantFontWeightFileFormatsFormatHintLocalFontsUnicodeRangeFontDisplayFontVariationSettingsFontFeatureSettings.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(param0: FontFaceConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

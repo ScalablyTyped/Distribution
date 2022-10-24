@@ -17,7 +17,7 @@ object libDoctorAilmentsMod {
   @js.native
   open class Ailment protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
   }
   
   @JSImport("ionic/lib/doctor/ailments", "AilmentRegistry")
@@ -29,28 +29,28 @@ object libDoctorAilmentsMod {
   @js.native
   open class CordovaPlatformsCommitted protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
   }
   
   @JSImport("ionic/lib/doctor/ailments", "DefaultCordovaBundleIdUsed")
   @js.native
   open class DefaultCordovaBundleIdUsed protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
   }
   
   @JSImport("ionic/lib/doctor/ailments", "GitConfigInvalid")
   @js.native
   open class GitConfigInvalid protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
   }
   
   @JSImport("ionic/lib/doctor/ailments", "GitNotUsed")
   @js.native
   open class GitNotUsed protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -59,7 +59,7 @@ object libDoctorAilmentsMod {
   @js.native
   open class IonicCLIInstalledLocally protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
     
     val treatable: /* true */ Boolean = js.native
   }
@@ -68,7 +68,7 @@ object libDoctorAilmentsMod {
   @js.native
   open class IonicNativeOldVersionInstalled protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -77,7 +77,7 @@ object libDoctorAilmentsMod {
   @js.native
   open class NpmInstalledLocally protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
     
     val treatable: /* true */ Boolean = js.native
   }
@@ -86,14 +86,14 @@ object libDoctorAilmentsMod {
   @js.native
   open class UnsavedCordovaPlatforms protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
   }
   
   @JSImport("ionic/lib/doctor/ailments", "ViewportFitNotSet")
   @js.native
   open class ViewportFitNotSet protected ()
     extends typings.ionic.libDoctorAilmentsBaseMod.Ailment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
     
     @JSName("id")
     val id_ViewportFitNotSet: `viewport-fit-not-set` = js.native

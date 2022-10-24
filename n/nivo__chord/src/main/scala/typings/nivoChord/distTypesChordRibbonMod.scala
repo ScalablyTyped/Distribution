@@ -16,12 +16,7 @@ object distTypesChordRibbonMod {
   
   @JSImport("@nivo/chord/dist/types/ChordRibbon", "ChordRibbon")
   @js.native
-  val ChordRibbon: MemoExoticComponent[
-    js.Function1[
-      /* hasRibbonRibbonGeneratorAnimatedPropsBorderWidthBlendModeIsInteractiveSetCurrentOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltip */ ChordRibbonProps, 
-      Element
-    ]
-  ] = js.native
+  val ChordRibbon: MemoExoticComponent[js.Function1[/* param0 */ ChordRibbonProps, Element]] = js.native
   
   @js.native
   trait ChordRibbonProps extends StObject {

@@ -254,11 +254,7 @@ object typingsOperationsMod {
     
     def setColumnOrder(sheetId: Double, columnMapping: js.Array[js.Tuple2[Double, Double]]): js.Array[js.Tuple2[SimpleCellAddress_, ClipboardCell]] = js.native
     
-    def setFormulaToCell(
-      address: SimpleCellAddress_,
-      size: ArraySize,
-      hasAstHasVolatileFunctionHasStructuralChangeFunctionDependencies: ParsingResult
-    ): Unit = js.native
+    def setFormulaToCell(address: SimpleCellAddress_, size: ArraySize, param2: ParsingResult): Unit = js.native
     
     def setFormulaToCellFromCache(formulaHash: String, address: SimpleCellAddress_): Unit = js.native
     

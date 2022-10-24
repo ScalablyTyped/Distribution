@@ -43,5 +43,5 @@ object popoverStyledComponentsMod {
   
   inline def getBodyStyles(props: BodyStylePropsArgthemeThe): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyStyles")(props.asInstanceOf[js.Any]).asInstanceOf[StyleObject]
   
-  inline def getInnerStyles(has$theme: ThemeTheme): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerStyles")(has$theme.asInstanceOf[js.Any]).asInstanceOf[StyleObject]
+  inline def getInnerStyles(param0: ThemeTheme): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[StyleObject]
 }

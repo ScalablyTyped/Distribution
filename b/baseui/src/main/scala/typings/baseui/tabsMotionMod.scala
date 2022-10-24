@@ -98,9 +98,7 @@ object tabsMotionMod {
   
   inline def Tab(props: TabProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Tab")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def Tabs(
-    hasActiveKeyDisabledChildrenFillActivateOnFocusOnChangeOrientationOverridesRenderAllCustomUidEndEnhancer: TabsProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tabs")(hasActiveKeyDisabledChildrenFillActivateOnFocusOnChangeOrientationOverridesRenderAllCustomUidEndEnhancer.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Tabs(param0: TabsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tabs")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def getTabId(uid: String, key: Key): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTabId")(uid.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
   

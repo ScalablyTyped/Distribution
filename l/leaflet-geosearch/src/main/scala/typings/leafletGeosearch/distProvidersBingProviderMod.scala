@@ -19,7 +19,7 @@ object distProvidersBingProviderMod {
   trait BingProvider
     extends typings.leafletGeosearch.distProvidersProviderMod.default[RequestResult, RawResult] {
     
-    def endpoint(hasQueryJsonp: EndpointArgumentjsonpstri): String = js.native
+    def endpoint(param0: EndpointArgumentjsonpstri): String = js.native
     
     var searchUrl: String = js.native
   }

@@ -47,7 +47,7 @@ object selectorSetDotnextMod {
     
     var indexes: js.Array[ISelectorSetIndex] = js.native
     
-    def logDefaultIndexUsed(hasSelectorData: Data[T]): Unit = js.native
+    def logDefaultIndexUsed(param0: Data[T]): Unit = js.native
     
     def matches(el: Element): js.Array[Data[T]] = js.native
     

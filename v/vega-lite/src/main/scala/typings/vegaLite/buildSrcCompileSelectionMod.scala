@@ -58,7 +58,7 @@ object buildSrcCompileSelectionMod {
   val selectionCompilers: js.Array[SelectionCompiler[SelectionType]] = js.native
   
   inline def unitName(model: Model): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unitName")(model.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def unitName(model: Model, hasEscape: Escape): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unitName")(model.asInstanceOf[js.Any], hasEscape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def unitName(model: Model, param1: Escape): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unitName")(model.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait SelectionCompiler[T /* <: SelectionType */] extends StObject {
     

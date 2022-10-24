@@ -17,7 +17,7 @@ object distVisuallyHiddenSrcVisuallyHiddenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerVisuallyHidden(hasAsChildrenForwardedRefRest: InnerVisuallyHiddenProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerVisuallyHidden")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerVisuallyHidden(param0: InnerVisuallyHiddenProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerVisuallyHidden")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/visually-hidden/src/VisuallyHidden", "VisuallyHidden")
   @js.native

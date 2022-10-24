@@ -16,7 +16,7 @@ object distSrcFlowControlLogTimingsMod {
   open class LogTimings protected ()
     extends StObject
        with FlowController {
-    def this(hasLoggerTimestampFormat: TimestampFormat) = this()
+    def this(param0: TimestampFormat) = this()
     
     /* CompleteClass */
     override def handle(commands: js.Array[Command]): Commands = js.native
@@ -34,7 +34,7 @@ object distSrcFlowControlLogTimingsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def mapCloseEventToTimingInfo(hasCommandTimingsKilledExitCode: CloseEvent): TimingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCloseEventToTimingInfo")(hasCommandTimingsKilledExitCode.asInstanceOf[js.Any]).asInstanceOf[TimingInfo]
+    inline def mapCloseEventToTimingInfo(param0: CloseEvent): TimingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCloseEventToTimingInfo")(param0.asInstanceOf[js.Any]).asInstanceOf[TimingInfo]
   }
   
   trait TimingInfo extends StObject {

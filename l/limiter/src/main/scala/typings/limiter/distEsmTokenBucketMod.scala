@@ -9,7 +9,7 @@ object distEsmTokenBucketMod {
   @JSImport("limiter/dist/esm/TokenBucket", "TokenBucket")
   @js.native
   open class TokenBucket protected () extends StObject {
-    def this(hasBucketSizeTokensPerIntervalIntervalParentBucket: TokenBucketOpts) = this()
+    def this(param0: TokenBucketOpts) = this()
     
     var bucketSize: Double = js.native
     

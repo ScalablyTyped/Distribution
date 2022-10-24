@@ -12,7 +12,7 @@ object libJsonldHowToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideImageEstimatedCostSupplyToolStepRest: HowToJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideImageEstimatedCostSupplyToolStepRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: HowToJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait HowToJsonLdProps
     extends StObject

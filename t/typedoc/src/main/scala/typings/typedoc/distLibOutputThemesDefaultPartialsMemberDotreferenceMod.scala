@@ -13,5 +13,5 @@ object distLibOutputThemesDefaultPartialsMemberDotreferenceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def memberReference(hasUrlTo: DefaultThemeRenderContext, props: ReferenceReflection): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("memberReference")(hasUrlTo.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
+  inline def memberReference(param0: DefaultThemeRenderContext, props: ReferenceReflection): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("memberReference")(param0.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
 }

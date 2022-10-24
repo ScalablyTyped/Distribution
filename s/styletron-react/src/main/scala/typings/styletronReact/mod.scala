@@ -50,7 +50,7 @@ object mod {
   
   inline def createShallowMergeReducer(style: StyleObject): AssignmentCommutativeReducerContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createShallowMergeReducer")(style.asInstanceOf[js.Any]).asInstanceOf[AssignmentCommutativeReducerContainer]
   
-  inline def createStyled(hasGetInitialStyleDriverWrapper: createStyledOpts): StyledFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyled")(hasGetInitialStyleDriverWrapper.asInstanceOf[js.Any]).asInstanceOf[StyledFn]
+  inline def createStyled(param0: createStyledOpts): StyledFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyled")(param0.asInstanceOf[js.Any]).asInstanceOf[StyledFn]
   
   inline def createStyledElementComponent(styletron: Styletron): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyledElementComponent")(styletron.asInstanceOf[js.Any]).asInstanceOf[Any]
   

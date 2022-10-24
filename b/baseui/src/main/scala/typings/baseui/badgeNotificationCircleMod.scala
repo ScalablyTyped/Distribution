@@ -12,7 +12,5 @@ object badgeNotificationCircleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasChildrenContentPropColorPlacementHorizontalOffsetVerticalOffsetHiddenOverrides: NotificationCircleProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenContentPropColorPlacementHorizontalOffsetVerticalOffsetHiddenOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: NotificationCircleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

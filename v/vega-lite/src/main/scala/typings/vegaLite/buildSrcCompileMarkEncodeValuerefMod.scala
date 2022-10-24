@@ -54,11 +54,9 @@ object buildSrcCompileMarkEncodeValuerefMod {
   inline def fieldInvalidTestValueRef(fieldDef: FieldDef[String, Any], channel: PolarPositionChannel): FieldTest | TestValue = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldInvalidTestValueRef")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[FieldTest | TestValue]
   inline def fieldInvalidTestValueRef(fieldDef: FieldDef[String, Any], channel: PositionChannel): FieldTest | TestValue = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldInvalidTestValueRef")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[FieldTest | TestValue]
   
-  inline def interpolatedSignalRef(hasScaleNameFieldOrDatumDefFieldOrDatumDef2OffsetStartSuffixBandPosition: FieldOrDatumDef2): VgValueRef = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatedSignalRef")(hasScaleNameFieldOrDatumDefFieldOrDatumDef2OffsetStartSuffixBandPosition.asInstanceOf[js.Any]).asInstanceOf[VgValueRef]
+  inline def interpolatedSignalRef(param0: FieldOrDatumDef2): VgValueRef = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatedSignalRef")(param0.asInstanceOf[js.Any]).asInstanceOf[VgValueRef]
   
-  inline def midPoint(
-    hasChannelChannelDefChannel2DefMarkDefConfigScaleNameScaleStackOffsetDefaultRefBandPosition: MidPointParams
-  ): VgValueRef = ^.asInstanceOf[js.Dynamic].applyDynamic("midPoint")(hasChannelChannelDefChannel2DefMarkDefConfigScaleNameScaleStackOffsetDefaultRefBandPosition.asInstanceOf[js.Any]).asInstanceOf[VgValueRef]
+  inline def midPoint(param0: MidPointParams): VgValueRef = ^.asInstanceOf[js.Dynamic].applyDynamic("midPoint")(param0.asInstanceOf[js.Any]).asInstanceOf[VgValueRef]
   
   inline def midPointRefWithPositionInvalidTest(params: MidPointParamschannelPosi): VgValueRef | js.Array[VgValueRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("midPointRefWithPositionInvalidTest")(params.asInstanceOf[js.Any]).asInstanceOf[VgValueRef | js.Array[VgValueRef]]
   
@@ -73,7 +71,7 @@ object buildSrcCompileMarkEncodeValuerefMod {
   inline def widthHeightValueOrSignalRef(channel: Channel, value: Value[ExprRef | SignalRef]): SignalRef | `5` | FieldGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("widthHeightValueOrSignalRef")(channel.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[SignalRef | `5` | FieldGroup]
   inline def widthHeightValueOrSignalRef(channel: Channel, value: SignalRef): SignalRef | `5` | FieldGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("widthHeightValueOrSignalRef")(channel.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[SignalRef | `5` | FieldGroup]
   
-  inline def wrapPositionInvalidTest(hasFieldDefChannelMarkDefRefConfig: Ref): VgValueRef | js.Array[VgValueRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapPositionInvalidTest")(hasFieldDefChannelMarkDefRefConfig.asInstanceOf[js.Any]).asInstanceOf[VgValueRef | js.Array[VgValueRef]]
+  inline def wrapPositionInvalidTest(param0: Ref): VgValueRef | js.Array[VgValueRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapPositionInvalidTest")(param0.asInstanceOf[js.Any]).asInstanceOf[VgValueRef | js.Array[VgValueRef]]
   
   trait MidPointParams extends StObject {
     

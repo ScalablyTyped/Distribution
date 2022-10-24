@@ -88,7 +88,7 @@ object distServerNextServerMod {
       */
     /* protected */ def ensureMiddleware(): js.Promise[Unit] = js.native
     
-    /* protected */ def findPageComponents(hasPathnameQueryParamsIsAppPath: Query): js.Promise[FindComponentsResult | Null] = js.native
+    /* protected */ def findPageComponents(param0: Query): js.Promise[FindComponentsResult | Null] = js.native
     
     /* protected */ def generateCatchAllMiddlewareRoute(): js.Array[Route] = js.native
     /* protected */ def generateCatchAllMiddlewareRoute(devReady: Boolean): js.Array[Route] = js.native
@@ -99,7 +99,7 @@ object distServerNextServerMod {
     
     /* protected */ def generatePublicRoutes(): js.Array[Route] = js.native
     
-    /* protected */ def generateRewrites(hasRestrictedRedirectPaths: RestrictedRedirectPaths): Fallback = js.native
+    /* protected */ def generateRewrites(param0: RestrictedRedirectPaths): Fallback = js.native
     
     /* protected */ def generateStaticRoutes(): js.Array[Route] = js.native
     

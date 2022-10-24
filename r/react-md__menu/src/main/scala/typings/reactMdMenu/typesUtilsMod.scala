@@ -12,7 +12,7 @@ object typesUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getDefaultAnchor(hasMenubarMenuitemFloatingHorizontal: DefaultAnchorOptions): PositionAnchor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAnchor")(hasMenubarMenuitemFloatingHorizontal.asInstanceOf[js.Any]).asInstanceOf[PositionAnchor]
+  inline def getDefaultAnchor(param0: DefaultAnchorOptions): PositionAnchor = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAnchor")(param0.asInstanceOf[js.Any]).asInstanceOf[PositionAnchor]
   
   inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   

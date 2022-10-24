@@ -133,14 +133,14 @@ object buildAndroidMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def assignColorValue(xml: ResourceXML, hasValueName: Name): ResourceXML = (^.asInstanceOf[js.Dynamic].applyDynamic("assignColorValue")(xml.asInstanceOf[js.Any], hasValueName.asInstanceOf[js.Any])).asInstanceOf[ResourceXML]
+    inline def assignColorValue(xml: ResourceXML, param1: Name): ResourceXML = (^.asInstanceOf[js.Dynamic].applyDynamic("assignColorValue")(xml.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ResourceXML]
     
     inline def getColorsAsObject(xml: ResourceXML): (Record[String, String]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorsAsObject")(xml.asInstanceOf[js.Any]).asInstanceOf[(Record[String, String]) | Null]
     
     inline def getObjectAsColorsXml(obj: Record[String, String]): ResourceXML = ^.asInstanceOf[js.Dynamic].applyDynamic("getObjectAsColorsXml")(obj.asInstanceOf[js.Any]).asInstanceOf[ResourceXML]
     
     inline def getProjectColorsXMLPathAsync(projectRoot: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectColorsXMLPathAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    inline def getProjectColorsXMLPathAsync(projectRoot: String, hasKind: Kind): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectColorsXMLPathAsync")(projectRoot.asInstanceOf[js.Any], hasKind.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def getProjectColorsXMLPathAsync(projectRoot: String, param1: Kind): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectColorsXMLPathAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     inline def removeColorItem(named: String, contents: ResourceXML): ResourceXML = (^.asInstanceOf[js.Dynamic].applyDynamic("removeColorItem")(named.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[ResourceXML]
     
@@ -315,11 +315,11 @@ object buildAndroidMod {
     
     inline def getPackage(config: PickExpoConfigandroid): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackage")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    inline def renameJniOnDiskForType(hasProjectRootTypePackageName: PackageName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renameJniOnDiskForType")(hasProjectRootTypePackageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def renameJniOnDiskForType(param0: PackageName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renameJniOnDiskForType")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     inline def renamePackageOnDisk(config: PickExpoConfigandroid, projectRoot: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renamePackageOnDisk")(config.asInstanceOf[js.Any], projectRoot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    inline def renamePackageOnDiskForType(hasProjectRootTypePackageName: PackageName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renamePackageOnDiskForType")(hasProjectRootTypePackageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def renamePackageOnDiskForType(param0: PackageName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("renamePackageOnDiskForType")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     inline def setPackageInAndroidManifest(config: PickExpoConfigandroid, androidManifest: AndroidManifest): AndroidManifest = (^.asInstanceOf[js.Dynamic].applyDynamic("setPackageInAndroidManifest")(config.asInstanceOf[js.Any], androidManifest.asInstanceOf[js.Any])).asInstanceOf[AndroidManifest]
     
@@ -368,7 +368,7 @@ object buildAndroidMod {
     
     inline def getResourceFolderAsync(projectRoot: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceFolderAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
-    inline def getResourceXMLPathAsync(projectRoot: String, hasKindName: KindName): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourceXMLPathAsync")(projectRoot.asInstanceOf[js.Any], hasKindName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def getResourceXMLPathAsync(projectRoot: String, param1: KindName): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourceXMLPathAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     inline def getSettingsGradleAsync(projectRoot: String): js.Promise[GradleProjectFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettingsGradleAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GradleProjectFile]]
     
@@ -457,7 +457,7 @@ object buildAndroidMod {
     
     inline def buildResourceGroup(parent: Items): ResourceGroupXML = ^.asInstanceOf[js.Dynamic].applyDynamic("buildResourceGroup")(parent.asInstanceOf[js.Any]).asInstanceOf[ResourceGroupXML]
     
-    inline def buildResourceItem(hasNameValueTargetApiTranslatable: TargetApi): ResourceItemXML = ^.asInstanceOf[js.Dynamic].applyDynamic("buildResourceItem")(hasNameValueTargetApiTranslatable.asInstanceOf[js.Any]).asInstanceOf[ResourceItemXML]
+    inline def buildResourceItem(param0: TargetApi): ResourceItemXML = ^.asInstanceOf[js.Dynamic].applyDynamic("buildResourceItem")(param0.asInstanceOf[js.Any]).asInstanceOf[ResourceItemXML]
     
     inline def ensureDefaultResourceXML(xml: XMLObject): ResourceXML = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDefaultResourceXML")(xml.asInstanceOf[js.Any]).asInstanceOf[ResourceXML]
     
@@ -470,7 +470,7 @@ object buildAndroidMod {
     
     inline def getResourceItemsAsObject(xml: js.Array[ResourceItemXML]): (Record[String, String]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceItemsAsObject")(xml.asInstanceOf[js.Any]).asInstanceOf[(Record[String, String]) | Null]
     
-    inline def readResourcesXMLAsync(hasPathFallback: Fallback): js.Promise[ResourceXML] = ^.asInstanceOf[js.Dynamic].applyDynamic("readResourcesXMLAsync")(hasPathFallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResourceXML]]
+    inline def readResourcesXMLAsync(param0: Fallback): js.Promise[ResourceXML] = ^.asInstanceOf[js.Dynamic].applyDynamic("readResourcesXMLAsync")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResourceXML]]
   }
   
   object Scheme {
@@ -527,7 +527,7 @@ object buildAndroidMod {
     val ^ : js.Any = js.native
     
     inline def getProjectStringsXMLPathAsync(projectRoot: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectStringsXMLPathAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    inline def getProjectStringsXMLPathAsync(projectRoot: String, hasKind: Kind): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectStringsXMLPathAsync")(projectRoot.asInstanceOf[js.Any], hasKind.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def getProjectStringsXMLPathAsync(projectRoot: String, param1: Kind): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectStringsXMLPathAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     inline def removeStringItem(named: String, stringFileContentsJSON: ResourceXML): ResourceXML = (^.asInstanceOf[js.Dynamic].applyDynamic("removeStringItem")(named.asInstanceOf[js.Any], stringFileContentsJSON.asInstanceOf[js.Any])).asInstanceOf[ResourceXML]
     
@@ -540,24 +540,24 @@ object buildAndroidMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def assignStylesValue(xml: ResourceXML, hasAddValueTargetApiNameParent: Add): ResourceXML = (^.asInstanceOf[js.Dynamic].applyDynamic("assignStylesValue")(xml.asInstanceOf[js.Any], hasAddValueTargetApiNameParent.asInstanceOf[js.Any])).asInstanceOf[ResourceXML]
+    inline def assignStylesValue(xml: ResourceXML, param1: Add): ResourceXML = (^.asInstanceOf[js.Dynamic].applyDynamic("assignStylesValue")(xml.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ResourceXML]
     
     inline def getAppThemeLightNoActionBarGroup(): Parent = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppThemeLightNoActionBarGroup")().asInstanceOf[Parent]
     
     inline def getProjectStylesXMLPathAsync(projectRoot: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectStylesXMLPathAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    inline def getProjectStylesXMLPathAsync(projectRoot: String, hasKind: Kind): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectStylesXMLPathAsync")(projectRoot.asInstanceOf[js.Any], hasKind.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def getProjectStylesXMLPathAsync(projectRoot: String, param1: Kind): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProjectStylesXMLPathAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     inline def getStyleParent(xml: ResourceXML, group: NameParent): ResourceGroupXML | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleParent")(xml.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[ResourceGroupXML | Null]
     
     inline def getStylesGroupAsObject(xml: ResourceXML, group: NameParent): (Record[String, String]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getStylesGroupAsObject")(xml.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[(Record[String, String]) | Null]
     
-    inline def getStylesItem(hasNameXmlParent: Xml): ResourceItemXML | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getStylesItem")(hasNameXmlParent.asInstanceOf[js.Any]).asInstanceOf[ResourceItemXML | Null]
+    inline def getStylesItem(param0: Xml): ResourceItemXML | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getStylesItem")(param0.asInstanceOf[js.Any]).asInstanceOf[ResourceItemXML | Null]
     
-    inline def readStylesXMLAsync(hasPathFallback: Fallback): js.Promise[ResourceXML] = ^.asInstanceOf[js.Dynamic].applyDynamic("readStylesXMLAsync")(hasPathFallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResourceXML]]
+    inline def readStylesXMLAsync(param0: Fallback): js.Promise[ResourceXML] = ^.asInstanceOf[js.Dynamic].applyDynamic("readStylesXMLAsync")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResourceXML]]
     
-    inline def removeStylesItem(hasNameXmlParent: ParentXml): ResourceXML = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStylesItem")(hasNameXmlParent.asInstanceOf[js.Any]).asInstanceOf[ResourceXML]
+    inline def removeStylesItem(param0: ParentXml): ResourceXML = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStylesItem")(param0.asInstanceOf[js.Any]).asInstanceOf[ResourceXML]
     
-    inline def setStylesItem(hasItemXmlParent: ItemParent): ResourceXML = ^.asInstanceOf[js.Dynamic].applyDynamic("setStylesItem")(hasItemXmlParent.asInstanceOf[js.Any]).asInstanceOf[ResourceXML]
+    inline def setStylesItem(param0: ItemParent): ResourceXML = ^.asInstanceOf[js.Dynamic].applyDynamic("setStylesItem")(param0.asInstanceOf[js.Any]).asInstanceOf[ResourceXML]
   }
   
   object Updates {
@@ -641,7 +641,7 @@ object buildAndroidMod {
     
     inline def getVersionName(config: PickExpoConfigversion): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersionName")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    inline def setMinBuildScriptExtVersion(buildGradle: String, hasNameMinVersion: MinVersion): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setMinBuildScriptExtVersion")(buildGradle.asInstanceOf[js.Any], hasNameMinVersion.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def setMinBuildScriptExtVersion(buildGradle: String, param1: MinVersion): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setMinBuildScriptExtVersion")(buildGradle.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def setVersionCode(config: PickExpoConfigandroid, buildGradle: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setVersionCode")(config.asInstanceOf[js.Any], buildGradle.asInstanceOf[js.Any])).asInstanceOf[String]
     

@@ -44,7 +44,7 @@ object mod {
   @js.native
   open class LoggerOutputAreaModel protected ()
     extends typings.jupyterlabLogconsole.libLoggerMod.LoggerOutputAreaModel {
-    def this(hasMaxLengthOptions: typings.jupyterlabLogconsole.libLoggerMod.LoggerOutputAreaModel.IOptions) = this()
+    def this(param0: typings.jupyterlabLogconsole.libLoggerMod.LoggerOutputAreaModel.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/logconsole", "LoggerRegistry")
@@ -64,6 +64,6 @@ object mod {
   @js.native
   open class ScrollingWidget[T /* <: Widget */] protected ()
     extends typings.jupyterlabLogconsole.libWidgetMod.ScrollingWidget[T] {
-    def this(hasContentOptions: typings.jupyterlabLogconsole.libWidgetMod.ScrollingWidget.IOptions[T]) = this()
+    def this(param0: typings.jupyterlabLogconsole.libWidgetMod.ScrollingWidget.IOptions[T]) = this()
   }
 }

@@ -12,5 +12,5 @@ object distTypesRadarGridLabelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RadarGridLabel(hasIdAnchorAnimatedProps: GridLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarGridLabel")(hasIdAnchorAnimatedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RadarGridLabel(param0: GridLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarGridLabel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

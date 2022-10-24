@@ -17,18 +17,11 @@ object distOpsFusedOpsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def conv2d[T /* <: Tensor3D | Tensor4D */](
-    hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Activation[T]
-  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def conv2d[T /* <: Tensor3D | Tensor4D */](param0: Activation[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(param0.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
-    hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Bias[T]
-  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](param0: Bias[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(param0.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/fused_ops", "matMul")
   @js.native
-  val matMul: js.Function1[
-    /* hasABTransposeATransposeBBiasActivationPreluActivationWeightsLeakyreluAlpha */ A, 
-    Tensor[Rank]
-  ] = js.native
+  val matMul: js.Function1[/* param0 */ A, Tensor[Rank]] = js.native
 }

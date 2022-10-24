@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/addon-backgrounds" : "6.5.12"
+      "@storybook/addon-backgrounds" : "6.5.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/addon-backgrounds" : "6.5.12"
+      "@storybook/addon-backgrounds" : "6.5.13"
     }
   ],
   "compile-devDependencies" : [

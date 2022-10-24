@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Switch {
   
-  inline def apply(
-    hasPrefixClsCheckedDefaultCheckedDisabledColorLoadingCheckedChildrenUnCheckedChildrenOnPressOnChangeTrackColorThumbColorThumbTintColorRestProps: SwitchProps
-  ): Element = ^.asInstanceOf[js.Dynamic].apply(hasPrefixClsCheckedDefaultCheckedDisabledColorLoadingCheckedChildrenUnCheckedChildrenOnPressOnChangeTrackColorThumbColorThumbTintColorRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def apply(param0: SwitchProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@ant-design/react-native", "Switch")
   @js.native

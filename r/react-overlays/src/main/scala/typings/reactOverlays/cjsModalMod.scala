@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cjsModalMod {
   
-  /* Inlined react.react.ForwardRefExoticComponent<react-overlays.react-overlays/cjs/Modal.ModalProps & react.react.RefAttributes<react-overlays.react-overlays/cjs/Modal.ModalHandle>> & {  Manager :new (hasHideSiblingNodesHandleContainerOverflow : {  hideSiblingNodes :boolean | undefined,   handleContainerOverflow :boolean | undefined} | undefined): react-overlays.react-overlays/cjs/ModalManager.default} */
+  /* Inlined react.react.ForwardRefExoticComponent<react-overlays.react-overlays/cjs/Modal.ModalProps & react.react.RefAttributes<react-overlays.react-overlays/cjs/Modal.ModalHandle>> & {  Manager :new (param0 : {  hideSiblingNodes :boolean | undefined,   handleContainerOverflow :boolean | undefined} | undefined): react-overlays.react-overlays/cjs/ModalManager.default} */
   object default {
     
     /**
@@ -48,17 +48,17 @@ object cjsModalMod {
     @js.native
     open class Manager ()
       extends typings.reactOverlays.cjsModalManagerMod.default {
-      def this(hasHideSiblingNodesHandleContainerOverflow: HandleContainerOverflow) = this()
+      def this(param0: HandleContainerOverflow) = this()
     }
     @JSImport("react-overlays/cjs/Modal", "default.Manager")
     @js.native
     def Manager: Instantiable1[
-        /* hasHideSiblingNodesHandleContainerOverflow */ js.UndefOr[HandleContainerOverflow], 
+        /* param0 */ js.UndefOr[HandleContainerOverflow], 
         typings.reactOverlays.cjsModalManagerMod.default
       ] = js.native
     inline def Manager_=(
       x: Instantiable1[
-          /* hasHideSiblingNodesHandleContainerOverflow */ js.UndefOr[HandleContainerOverflow], 
+          /* param0 */ js.UndefOr[HandleContainerOverflow], 
           typings.reactOverlays.cjsModalManagerMod.default
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Manager")(x.asInstanceOf[js.Any])

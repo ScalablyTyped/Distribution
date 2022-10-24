@@ -12,5 +12,5 @@ object libViewsSlideInfoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SlideInfo(hasActiveIndexItemsCountRenderSlideInfo: ItemsCount): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideInfo")(hasActiveIndexItemsCountRenderSlideInfo.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SlideInfo(param0: ItemsCount): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideInfo")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

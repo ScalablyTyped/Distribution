@@ -24,7 +24,7 @@ object mod {
   @js.native
   open class TypeStyle protected ()
     extends typings.typestyle.libInternalTypestyleMod.TypeStyle {
-    def this(hasAutoGenerateTag: AutoGenerateTag) = this()
+    def this(param0: AutoGenerateTag) = this()
   }
   
   inline def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[Any]])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classes")(classes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]

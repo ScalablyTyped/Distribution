@@ -71,9 +71,9 @@ object datepickerCalendarHeaderMod {
     
     def renderMonthYearDropdown(): typings.react.mod.global.JSX.Element = js.native
     
-    def renderNextMonthButton(hasLocaleTheme: Locale): typings.react.mod.global.JSX.Element = js.native
+    def renderNextMonthButton(param0: Locale): typings.react.mod.global.JSX.Element = js.native
     
-    def renderPreviousMonthButton(hasLocaleTheme: Locale): typings.react.mod.global.JSX.Element = js.native
+    def renderPreviousMonthButton(param0: Locale): typings.react.mod.global.JSX.Element = js.native
     
     var yearItems: js.Array[Id] = js.native
   }

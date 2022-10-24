@@ -12,7 +12,7 @@ object buildPluginsUnversionedExpoSplashScreenWithIosSplashAssetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buildContentsJsonImages(hasImageDarkImageTabletImageDarkTabletImage: DarkImage): js.Array[ContentsJsonImage] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildContentsJsonImages")(hasImageDarkImageTabletImageDarkTabletImage.asInstanceOf[js.Any]).asInstanceOf[js.Array[ContentsJsonImage]]
+  inline def buildContentsJsonImages(param0: DarkImage): js.Array[ContentsJsonImage] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildContentsJsonImages")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[ContentsJsonImage]]
   
   @JSImport("@expo/prebuild-config/build/plugins/unversioned/expo-splash-screen/withIosSplashAssets", "withIosSplashAssets")
   @js.native

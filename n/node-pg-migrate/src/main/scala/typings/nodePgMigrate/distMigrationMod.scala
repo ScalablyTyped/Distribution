@@ -50,18 +50,18 @@ object distMigrationMod {
   open class Migration protected ()
     extends StObject
        with RunMigration {
-    def this(db: DBConnection, migrationPath: String, hasUpDown: MigrationBuilderActions, options: RunnerOption) = this()
+    def this(db: DBConnection, migrationPath: String, param2: MigrationBuilderActions, options: RunnerOption) = this()
     def this(
       db: DBConnection,
       migrationPath: String,
-      hasUpDown: MigrationBuilderActions,
+      param2: MigrationBuilderActions,
       options: RunnerOption,
       typeShorthands: ColumnDefinitions
     ) = this()
     def this(
       db: DBConnection,
       migrationPath: String,
-      hasUpDown: MigrationBuilderActions,
+      param2: MigrationBuilderActions,
       options: RunnerOption,
       typeShorthands: Unit,
       logger: Logger
@@ -69,7 +69,7 @@ object distMigrationMod {
     def this(
       db: DBConnection,
       migrationPath: String,
-      hasUpDown: MigrationBuilderActions,
+      param2: MigrationBuilderActions,
       options: RunnerOption,
       typeShorthands: ColumnDefinitions,
       logger: Logger

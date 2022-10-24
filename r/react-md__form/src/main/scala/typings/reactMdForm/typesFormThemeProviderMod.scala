@@ -12,7 +12,7 @@ object typesFormThemeProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FormThemeProvider(hasThemeUnderlineDirectionChildren: FormThemeProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("FormThemeProvider")(hasThemeUnderlineDirectionChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def FormThemeProvider(param0: FormThemeProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("FormThemeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useFormTheme(): FormThemeContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormTheme")().asInstanceOf[FormThemeContext]
   inline def useFormTheme(options: FormThemeOptions): FormThemeContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormTheme")(options.asInstanceOf[js.Any]).asInstanceOf[FormThemeContext]

@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ProfilingCache protected () extends StObject {
   def this(profilerStore: ProfilerStore) = this()
   
-  def getCommitTree(hasCommitIndexRootID: CommitIndex): ReturnType[typings.reactDevtoolsInline.commonsMod.getCommitTree] = js.native
+  def getCommitTree(param0: CommitIndex): ReturnType[typings.reactDevtoolsInline.commonsMod.getCommitTree] = js.native
   
-  def getFiberCommits(hasFiberIDRootID: FiberID): js.Array[Double] = js.native
+  def getFiberCommits(param0: FiberID): js.Array[Double] = js.native
   
   def getFlamegraphChartData(options: typings.reactDevtoolsInline.anon.CommitTree): FlamegraphChartData = js.native
   

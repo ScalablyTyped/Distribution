@@ -12,5 +12,5 @@ object distTypesBarAnnotationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BarAnnotations[RawDatum](hasBarsAnnotations: BarAnnotationsProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarAnnotations")(hasBarsAnnotations.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BarAnnotations[RawDatum](param0: BarAnnotationsProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

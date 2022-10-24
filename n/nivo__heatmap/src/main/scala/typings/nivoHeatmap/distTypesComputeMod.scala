@@ -28,13 +28,13 @@ object distTypesComputeMod {
   val ^ : js.Any = js.native
   
   inline def computeCells[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasData_width_heightXInnerPaddingXOuterPaddingYInnerPaddingYOuterPaddingForceSquare: (Data[Datum, ExtraProps]) & (Pick[
+    param0: (Data[Datum, ExtraProps]) & (Pick[
       HeatMapCommonProps[Datum], 
       forceSquare | xInnerPadding | xOuterPadding | yInnerPadding | yOuterPadding
     ])
-  ): Cells[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCells")(hasData_width_heightXInnerPaddingXOuterPaddingYInnerPaddingYOuterPaddingForceSquare.asInstanceOf[js.Any]).asInstanceOf[Cells[Datum]]
+  ): Cells[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCells")(param0.asInstanceOf[js.Any]).asInstanceOf[Cells[Datum]]
   
-  inline def computeLayout(has_width_heightRowsColumnsForceSquare: Columns): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLayout")(has_width_heightRowsColumnsForceSquare.asInstanceOf[js.Any]).asInstanceOf[Height]
+  inline def computeLayout(param0: Columns): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[Height]
   
   inline def computeSizeScale(size: SizeVariationConfig, min: Double, max: Double): js.Function1[/* value */ Double | Null, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSizeScale")(size.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Double | Null, Double]]
   

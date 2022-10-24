@@ -13,5 +13,5 @@ object distBeaconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def trackNonHotLinkedPhotoView(hasAppId: AppId): js.Function1[/* hasPhotoId */ PhotoId, js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trackNonHotLinkedPhotoView")(hasAppId.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasPhotoId */ PhotoId, js.Promise[Response]]]
+  inline def trackNonHotLinkedPhotoView(param0: AppId): js.Function1[/* param0 */ PhotoId, js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("trackNonHotLinkedPhotoView")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param0 */ PhotoId, js.Promise[Response]]]
 }

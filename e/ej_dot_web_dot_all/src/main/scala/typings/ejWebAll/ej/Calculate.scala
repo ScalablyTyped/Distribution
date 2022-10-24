@@ -77,6 +77,8 @@ object Calculate {
     __obj.asInstanceOf[Calculate]
   }
   
+  trait Model extends StObject
+  
   extension [Self <: Calculate](x: Self) {
     
     inline def setAddCustomFunction(value: (String, String) => Unit): Self = StObject.set(x, "addCustomFunction", js.Any.fromFunction2(value))
@@ -99,6 +101,4 @@ object Calculate {
     
     inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
-  
-  trait Model extends StObject
 }

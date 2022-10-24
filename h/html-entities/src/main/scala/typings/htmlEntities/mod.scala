@@ -14,21 +14,21 @@ object mod {
   
   inline def decode(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")().asInstanceOf[String]
   inline def decode(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def decode(text: String, hasLevelScope: DecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any], hasLevelScope.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def decode(text: Null, hasLevelScope: DecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any], hasLevelScope.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def decode(text: Unit, hasLevelScope: DecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any], hasLevelScope.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decode(text: String, param1: DecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decode(text: Null, param1: DecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decode(text: Unit, param1: DecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def decodeEntity(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntity")().asInstanceOf[String]
   inline def decodeEntity(entity: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntity")(entity.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def decodeEntity(entity: String, hasLevel: CommonOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntity")(entity.asInstanceOf[js.Any], hasLevel.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def decodeEntity(entity: Null, hasLevel: CommonOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntity")(entity.asInstanceOf[js.Any], hasLevel.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def decodeEntity(entity: Unit, hasLevel: CommonOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntity")(entity.asInstanceOf[js.Any], hasLevel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decodeEntity(entity: String, param1: CommonOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntity")(entity.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decodeEntity(entity: Null, param1: CommonOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntity")(entity.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decodeEntity(entity: Unit, param1: CommonOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntity")(entity.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def encode(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")().asInstanceOf[String]
   inline def encode(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def encode(text: String, hasModeNumericLevel: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(text.asInstanceOf[js.Any], hasModeNumericLevel.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encode(text: Null, hasModeNumericLevel: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(text.asInstanceOf[js.Any], hasModeNumericLevel.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encode(text: Unit, hasModeNumericLevel: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(text.asInstanceOf[js.Any], hasModeNumericLevel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(text: String, param1: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(text.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(text: Null, param1: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(text.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(text: Unit, param1: EncodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(text.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait CommonOptions extends StObject {
     

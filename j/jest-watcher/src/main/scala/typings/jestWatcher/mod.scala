@@ -37,7 +37,7 @@ object mod {
   open class BaseWatchPlugin protected ()
     extends StObject
        with WatchPlugin {
-    def this(hasStdinStdout: Stdin) = this()
+    def this(param0: Stdin) = this()
     
     /* protected */ var _stdin: ReadStream = js.native
     
@@ -193,7 +193,7 @@ object mod {
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emittery<{  change :State}> * / any */ @JSImport("jest-watcher", "TestWatcher")
   @js.native
   open class TestWatcher protected () extends StObject {
-    def this(hasIsWatchMode: IsWatchMode) = this()
+    def this(param0: IsWatchMode) = this()
     
     /* private */ val _isWatchMode: Any = js.native
     

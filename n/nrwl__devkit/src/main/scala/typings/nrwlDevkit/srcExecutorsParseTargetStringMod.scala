@@ -13,6 +13,6 @@ object srcExecutorsParseTargetStringMod {
   inline def parseTargetString(targetString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTargetString")(targetString.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def targetToTargetString(
-    hasProjectTargetConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Target */ Any
-  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("targetToTargetString")(hasProjectTargetConfiguration.asInstanceOf[js.Any]).asInstanceOf[String]
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Target */ Any
+  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("targetToTargetString")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

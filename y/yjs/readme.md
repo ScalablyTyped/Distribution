@@ -1,7 +1,7 @@
 
 # Scala.js typings for yjs
 
-Typings are for version 13.5.41
+Typings are for version 13.5.42
 
 ## Library description:
 Shared Editing Library

@@ -13,7 +13,7 @@ object distSrcModulesPlaybackEnginePlaybackEngineMod {
   open class default protected ()
     extends StObject
        with Engine {
-    def this(hasEventEmitterNativeOutputConfig: IPlaybackEngineDependencies) = this()
+    def this(param0: IPlaybackEngineDependencies) = this()
   }
   object default {
     

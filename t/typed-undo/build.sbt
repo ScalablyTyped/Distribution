@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "typed-undo"
-version := "2.4.0-431054"
-scalaVersion := "3.1.2"
+version := "2.4.0-aef612"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

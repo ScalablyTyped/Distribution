@@ -160,10 +160,7 @@ object typesFileInputUtilsMod {
   
   inline def isVideoFile(file: File): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVideoFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def validateFiles[CustomError](
-    files: js.Array[File],
-    hasMaxFilesExtensionsMinFileSizeMaxFileSizeTotalBytesTotalFilesTotalFileSizeIsValidFileName: FilesValidationOptions
-  ): ValidatedFilesResult[CustomError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateFiles")(files.asInstanceOf[js.Any], hasMaxFilesExtensionsMinFileSizeMaxFileSizeTotalBytesTotalFilesTotalFileSizeIsValidFileName.asInstanceOf[js.Any])).asInstanceOf[ValidatedFilesResult[CustomError]]
+  inline def validateFiles[CustomError](files: js.Array[File], param1: FilesValidationOptions): ValidatedFilesResult[CustomError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateFiles")(files.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ValidatedFilesResult[CustomError]]
   
   trait BaseFileUploadStats extends StObject {
     

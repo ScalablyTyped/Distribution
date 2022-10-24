@@ -63,13 +63,9 @@ object mod {
   @js.native
   val Tooltip: ForwardRefExoticComponent[TooltipProps & RefAttributes[HTMLSpanElement]] = js.native
   
-  inline def Tooltipped(
-    hasIdStyleChildrenTooltipChildrenDenseVhMarginVwMarginSpacingDenseSpacingPropPositionThresholdOnClickOnMouseEnterOnMouseLeaveOnTouchStartOnContextMenuOnBlurOnFocusOnKeyDownDescribedByDefaultPositionTemporaryDisableSwappingDisableHoverModeDisableAutoSpacingProps: TooltippedProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltipped")(hasIdStyleChildrenTooltipChildrenDenseVhMarginVwMarginSpacingDenseSpacingPropPositionThresholdOnClickOnMouseEnterOnMouseLeaveOnTouchStartOnContextMenuOnBlurOnFocusOnKeyDownDescribedByDefaultPositionTemporaryDisableSwappingDisableHoverModeDisableAutoSpacingProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Tooltipped(param0: TooltippedProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltipped")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def useTooltip[E /* <: HTMLElement */](
-    hasBaseIdPropStyleDescribedByDenseSpacingDenseSpacingDeterminedPositionDefaultPositionVwMarginVhMarginThresholdTouchTimeFocusTimePropOnFocusPropOnBlurPropOnKeyDownOnClickOnMouseEnterOnMouseLeavePropOnTouchStartPropOnContextMenuOnEnterOnEnteringOnEnteredOnExitedDisabledDisableSwappingPropDisableHoverModeDisableAutoSpacing: TooltipHookOptions[E]
-  ): TooltipHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltip")(hasBaseIdPropStyleDescribedByDenseSpacingDenseSpacingDeterminedPositionDefaultPositionVwMarginVhMarginThresholdTouchTimeFocusTimePropOnFocusPropOnBlurPropOnKeyDownOnClickOnMouseEnterOnMouseLeavePropOnTouchStartPropOnContextMenuOnEnterOnEnteringOnEnteredOnExitedDisabledDisableSwappingPropDisableHoverModeDisableAutoSpacing.asInstanceOf[js.Any]).asInstanceOf[TooltipHookReturnValue[E]]
+  inline def useTooltip[E /* <: HTMLElement */](param0: TooltipHookOptions[E]): TooltipHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[TooltipHookReturnValue[E]]
   
-  inline def useTooltipPosition(hasDeterminedPositionDefaultPositionThreshold: TooltipPositionHookOptions): TooltipPositionHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipPosition")(hasDeterminedPositionDefaultPositionThreshold.asInstanceOf[js.Any]).asInstanceOf[TooltipPositionHookReturnValue]
+  inline def useTooltipPosition(param0: TooltipPositionHookOptions): TooltipPositionHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[TooltipPositionHookReturnValue]
 }

@@ -128,7 +128,7 @@ object libMenuMenuItemMod {
     @JSName("context")
     var context_MenuItem: MenuContextProps = js.native
     
-    def renderItem(hasSiderCollapsed: SiderContextProps): Element = js.native
+    def renderItem(param0: SiderContextProps): Element = js.native
     
     def renderItemChildren(inlineCollapsed: Boolean): Element = js.native
   }

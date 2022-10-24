@@ -14,11 +14,11 @@ object buildWebpackSymbolicateMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createSymbolicateMiddleware(hasProjectRootLoggerCompiler: Compiler): js.Function2[
+  inline def createSymbolicateMiddleware(param0: Compiler): js.Function2[
     /* req */ IncomingMessage & Body, 
     /* res */ ServerResponse[IncomingMessage], 
     js.Promise[ServerResponse[IncomingMessage]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSymbolicateMiddleware")(hasProjectRootLoggerCompiler.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSymbolicateMiddleware")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* req */ IncomingMessage & Body, 
     /* res */ ServerResponse[IncomingMessage], 
     js.Promise[ServerResponse[IncomingMessage]]

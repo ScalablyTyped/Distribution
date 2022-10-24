@@ -20,7 +20,7 @@ object libSrcFormatterParamsMod {
       * Returns param value that matches given placeholder with param key.
       */
     /* CompleteClass */
-    override def get(hasKeyText: Key): String = js.native
+    override def get(param0: Key): String = js.native
     
     /**
       * Returns index of current positional parameter.
@@ -48,7 +48,7 @@ object libSrcFormatterParamsMod {
     /**
       * Returns param value that matches given placeholder with param key.
       */
-    def get(hasKeyText: Key): String
+    def get(param0: Key): String
     
     /**
       * Returns index of current positional parameter.

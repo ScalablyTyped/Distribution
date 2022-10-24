@@ -15,7 +15,7 @@ object distSrcFlowControlInputHandlerMod {
   open class InputHandler protected ()
     extends StObject
        with FlowController {
-    def this(hasDefaultInputTargetInputStreamPauseInputStreamOnFinishLogger: DefaultInputTarget) = this()
+    def this(param0: DefaultInputTarget) = this()
     
     /* private */ val defaultInputTarget: Any = js.native
     

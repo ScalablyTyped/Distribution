@@ -12,7 +12,7 @@ object distLibCommandsAuthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def transformArguments(hasUsernamePassword: AuthOptions): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(hasUsernamePassword.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
+  inline def transformArguments(param0: AuthOptions): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(param0.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
   
   inline def transformReply(): RedisCommandArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")().asInstanceOf[RedisCommandArgument]
   

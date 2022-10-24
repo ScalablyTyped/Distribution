@@ -15,7 +15,7 @@ object distTypesCoreServicesRepositoriesMod {
   @JSImport("gitlab/dist/types/core/services/Repositories", "Repositories")
   @js.native
   open class Repositories () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def compare(projectId: String, from: String, to: String): js.Promise[GetResponse] = js.native
     def compare(projectId: String, from: String, to: String, options: Sudo): js.Promise[GetResponse] = js.native

@@ -15,7 +15,7 @@ object distFieldSrcUseGroupFieldMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useGroupField(hasIdValidationStateRequiredFluidDisabledClassNameForwardedRef: UseGroupFieldProps): UseGroupFieldReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useGroupField")(hasIdValidationStateRequiredFluidDisabledClassNameForwardedRef.asInstanceOf[js.Any]).asInstanceOf[UseGroupFieldReturn]
+  inline def useGroupField(param0: UseGroupFieldProps): UseGroupFieldReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useGroupField")(param0.asInstanceOf[js.Any]).asInstanceOf[UseGroupFieldReturn]
   
   trait UseGroupFieldProps extends StObject {
     

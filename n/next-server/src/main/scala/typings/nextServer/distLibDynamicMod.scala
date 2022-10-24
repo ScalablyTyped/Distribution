@@ -56,7 +56,7 @@ object distLibDynamicMod {
     
     var loader: js.UndefOr[Loader[P] | LoaderMap] = js.undefined
     
-    var loading: js.UndefOr[js.Function1[/* hasErrorIsLoadingPastDelay */ Error, Element | Null]] = js.undefined
+    var loading: js.UndefOr[js.Function1[/* param0 */ Error, Element | Null]] = js.undefined
     
     var ssr: js.UndefOr[Boolean] = js.undefined
   }
@@ -79,7 +79,7 @@ object distLibDynamicMod {
       
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
-      inline def setLoading(value: /* hasErrorIsLoadingPastDelay */ Error => Element | Null): Self = StObject.set(x, "loading", js.Any.fromFunction1(value))
+      inline def setLoading(value: /* param0 */ Error => Element | Null): Self = StObject.set(x, "loading", js.Any.fromFunction1(value))
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       

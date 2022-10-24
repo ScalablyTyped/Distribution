@@ -12,10 +12,7 @@ object libSsoMod {
   @JSImport("ionic/lib/sso", "Auth0OAuth2Flow")
   @js.native
   open class Auth0OAuth2Flow protected () extends OAuth2Flow {
-    def this(
-      hasEmailConnectionAudienceAuthorizationUrlTokenUrlClientIdOptions: Auth0OAuth2FlowOptions,
-      e: OAuth2FlowDeps
-    ) = this()
+    def this(param0: Auth0OAuth2FlowOptions, e: OAuth2FlowDeps) = this()
     
     val audience: String = js.native
     
@@ -27,7 +24,7 @@ object libSsoMod {
   /* note: abstract class */ @JSImport("ionic/lib/sso", "OAuth2Flow")
   @js.native
   open class OAuth2Flow protected () extends StObject {
-    def this(hasAuthorizationUrlTokenUrlClientIdRedirectHostRedirectPort: OAuth2FlowOptions, e: OAuth2FlowDeps) = this()
+    def this(param0: OAuth2FlowOptions, e: OAuth2FlowDeps) = this()
     
     val authorizationUrl: String = js.native
     

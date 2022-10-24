@@ -6,23 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Item extends StObject {
   
-  var item: js.Object
+  var item: Any
   
-  var items: js.Array[js.Object]
+  var position: Any
 }
 object Item {
   
-  inline def apply(item: js.Object, items: js.Array[js.Object]): Item = {
-    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+  inline def apply(item: Any, position: Any): Item = {
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
   
   extension [Self <: Item](x: Self) {
     
-    inline def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
-    
-    inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

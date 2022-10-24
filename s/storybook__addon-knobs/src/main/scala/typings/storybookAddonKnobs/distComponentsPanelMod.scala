@@ -65,7 +65,7 @@ object distComponentsPanelMod {
     
     def reset(): Unit = js.native
     
-    def setKnobs(hasKnobsTimestamp: Knobs): Unit = js.native
+    def setKnobs(param0: Knobs): Unit = js.native
     
     def setOptions(): Unit = js.native
     def setOptions(options: KnobPanelOptions): Unit = js.native

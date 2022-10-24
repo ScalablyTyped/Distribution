@@ -3434,25 +3434,6 @@ object Mocha {
         __obj.asInstanceOf[Base_]
       }
       
-      extension [Self <: Base_](x: Self) {
-        
-        inline def setDone(
-          value: (/* failures */ Double, /* fn */ js.UndefOr[js.Function1[/* failures */ Double, Unit]]) => Unit
-        ): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
-        
-        inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
-        
-        inline def setEpilogue(value: () => Unit): Self = StObject.set(x, "epilogue", js.Any.fromFunction0(value))
-        
-        inline def setFailures(value: js.Array[Test]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
-        
-        inline def setFailuresVarargs(value: Test*): Self = StObject.set(x, "failures", js.Array(value*))
-        
-        inline def setRunner(value: Runner): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
-        
-        inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
-      }
-      
       /**
         * Default color map
         *
@@ -3600,6 +3581,25 @@ object Mocha {
           
           inline def setSuite(value: Double): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
         }
+      }
+      
+      extension [Self <: Base_](x: Self) {
+        
+        inline def setDone(
+          value: (/* failures */ Double, /* fn */ js.UndefOr[js.Function1[/* failures */ Double, Unit]]) => Unit
+        ): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
+        
+        inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+        
+        inline def setEpilogue(value: () => Unit): Self = StObject.set(x, "epilogue", js.Any.fromFunction0(value))
+        
+        inline def setFailures(value: js.Array[Test]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+        
+        inline def setFailuresVarargs(value: Test*): Self = StObject.set(x, "failures", js.Array(value*))
+        
+        inline def setRunner(value: Runner): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
+        
+        inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       }
       
       /**
@@ -4000,6 +4000,15 @@ object Mocha {
         }
       }
       
+      extension [Self <: XUnit_](x: Self) {
+        
+        inline def setDone(value: (Double, js.Function1[/* failures */ Double, Unit]) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
+        
+        inline def setTest(value: Test => Unit): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+        
+        inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      }
+      
       trait ReporterOptions extends StObject {
         
         var output: js.UndefOr[String] = js.undefined
@@ -4023,15 +4032,6 @@ object Mocha {
           
           inline def setSuiteNameUndefined: Self = StObject.set(x, "suiteName", js.undefined)
         }
-      }
-      
-      extension [Self <: XUnit_](x: Self) {
-        
-        inline def setDone(value: (Double, js.Function1[/* failures */ Double, Unit]) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
-        
-        inline def setTest(value: Test => Unit): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
-        
-        inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       }
     }
     

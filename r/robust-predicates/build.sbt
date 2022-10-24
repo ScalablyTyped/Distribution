@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "robust-predicates"
-version := "3.0.1-30e8d3"
-scalaVersion := "3.1.2"
+version := "3.0.1-1f3e31"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

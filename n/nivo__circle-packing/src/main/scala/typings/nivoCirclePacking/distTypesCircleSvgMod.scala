@@ -12,5 +12,5 @@ object distTypesCircleSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CircleSvg[RawDatum](hasNodeStyleOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: CircleProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleSvg")(hasNodeStyleOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CircleSvg[RawDatum](param0: CircleProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

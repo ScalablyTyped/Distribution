@@ -35,9 +35,7 @@ object distInputSrcUseGroupInputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useGroupInput(
-    hasRoleModuleRequiredValidationStateOrientationGapWrapSizeReverseDisabledIsInFieldGroupRef: UseGroupInputProps
-  ): UseGroupInputReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useGroupInput")(hasRoleModuleRequiredValidationStateOrientationGapWrapSizeReverseDisabledIsInFieldGroupRef.asInstanceOf[js.Any]).asInstanceOf[UseGroupInputReturn]
+  inline def useGroupInput(param0: UseGroupInputProps): UseGroupInputReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useGroupInput")(param0.asInstanceOf[js.Any]).asInstanceOf[UseGroupInputReturn]
   
   trait UseGroupInputProps extends StObject {
     

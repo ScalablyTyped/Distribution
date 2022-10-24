@@ -14,9 +14,7 @@ object typesListItemChildrenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ListItemChildren(
-    hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren: ListItemChildrenProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemChildren")(hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ListItemChildren(param0: ListItemChildrenProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemChildren")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait ListItemChildrenProps extends StObject {
     

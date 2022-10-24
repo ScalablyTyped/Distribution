@@ -34,7 +34,7 @@ object distUtilsMod {
   @js.native
   val spaceKeyTrigger: ElementTagNameAndType = js.native
   
-  inline def stateChanged(hasStatePrevState: InteractiveStateChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stateChanged")(hasStatePrevState.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def stateChanged(param0: InteractiveStateChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stateChanged")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type CursorPointer_ = js.Function2[/* element */ TagName, /* hasOnClickHandler */ Boolean, Boolean]
   

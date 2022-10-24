@@ -18,7 +18,7 @@ object libTypescriptSrcSceneViewMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */](hasScreenRouteNavigationRouteStateGetStateSetStateOptionsClearOptions: Props[State, ScreenOptions]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasScreenRouteNavigationRouteStateGetStateSetStateOptionsClearOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */](param0: Props[State, ScreenOptions]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */] extends StObject {
     

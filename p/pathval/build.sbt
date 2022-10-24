@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "pathval"
-version := "1.1-dt-20211202Z-badb02"
-scalaVersion := "3.1.2"
+version := "1.1-dt-20211202Z-f49d85"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

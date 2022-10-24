@@ -12,7 +12,7 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useQuantizeColorScaleLegendData(hasScaleOverriddenDomainReverseValueFormatSeparator: Domain): js.Array[Color] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQuantizeColorScaleLegendData")(hasScaleOverriddenDomainReverseValueFormatSeparator.asInstanceOf[js.Any]).asInstanceOf[js.Array[Color]]
+  inline def useQuantizeColorScaleLegendData(param0: Domain): js.Array[Color] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQuantizeColorScaleLegendData")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Color]]
   
   @js.native
   trait Scale extends StObject {

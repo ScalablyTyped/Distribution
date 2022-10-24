@@ -16,7 +16,7 @@ object distSrcModulesUiControlsProgressProgressMod {
   open class default protected ()
     extends StObject
        with ProgressControl {
-    def this(hasEngineLiveStateEngineEventEmitterTextMapTooltipServiceThemePreviewThumbnailPreviewFullSize: LiveStateEngine) = this()
+    def this(param0: LiveStateEngine) = this()
     
     /* private */ /* CompleteClass */
     var _addTimeIndicator: Any = js.native

@@ -12,7 +12,5 @@ object libTypescriptComponentsTextInputTextInputFlatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasDisabledEditableLabelErrorSelectionColorUnderlineColorActiveUnderlineColorDenseStyleThemeRenderMultilineParentStateInnerRefOnFocusForceFocusOnBlurOnChangeTextOnLayoutAnimatedTextOnLeftAffixLayoutChangeOnRightAffixLayoutChangeLeftRightPlaceholderTextColorRest: ChildTextInputProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDisabledEditableLabelErrorSelectionColorUnderlineColorActiveUnderlineColorDenseStyleThemeRenderMultilineParentStateInnerRefOnFocusForceFocusOnBlurOnChangeTextOnLayoutAnimatedTextOnLeftAffixLayoutChangeOnRightAffixLayoutChangeLeftRightPlaceholderTextColorRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ChildTextInputProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

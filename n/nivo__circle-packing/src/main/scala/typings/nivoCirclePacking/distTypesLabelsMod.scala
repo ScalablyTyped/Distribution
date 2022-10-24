@@ -17,7 +17,7 @@ object distTypesLabelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Labels[RawDatum](hasNodesLabelFilterSkipRadiusTextColorComponent: CirclesProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Labels")(hasNodesLabelFilterSkipRadiusTextColorComponent.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Labels[RawDatum](param0: CirclesProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Labels")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CirclesProps[RawDatum] extends StObject {
     

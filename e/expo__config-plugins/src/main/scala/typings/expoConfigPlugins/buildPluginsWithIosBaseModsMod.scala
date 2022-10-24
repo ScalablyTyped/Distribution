@@ -21,7 +21,7 @@ object buildPluginsWithIosBaseModsMod {
   inline def getIosModFileProviders(): Dangerous = ^.asInstanceOf[js.Dynamic].applyDynamic("getIosModFileProviders")().asInstanceOf[Dangerous]
   
   inline def withIosBaseMods(config: ExportedConfig): ExportedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("withIosBaseMods")(config.asInstanceOf[js.Any]).asInstanceOf[ExportedConfig]
-  inline def withIosBaseMods(config: ExportedConfig, hasProvidersProps: ForwardedBaseModOptionsprSkipEmptyMod): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withIosBaseMods")(config.asInstanceOf[js.Any], hasProvidersProps.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withIosBaseMods(config: ExportedConfig, param1: ForwardedBaseModOptionsprSkipEmptyMod): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withIosBaseMods")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   
   trait IosDefaultProviders extends StObject {
     

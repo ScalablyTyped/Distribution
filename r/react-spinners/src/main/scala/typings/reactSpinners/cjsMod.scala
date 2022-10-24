@@ -15,53 +15,49 @@ object cjsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BarLoader(hasLoadingColorSpeedMultiplierCssOverrideHeightWidthAdditionalprops: LoaderHeightWidthProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("BarLoader")(hasLoadingColorSpeedMultiplierCssOverrideHeightWidthAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def BarLoader(param0: LoaderHeightWidthProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("BarLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def BeatLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("BeatLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def BeatLoader(param0: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("BeatLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def BounceLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("BounceLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def BounceLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("BounceLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def CircleLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def CircleLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def ClimbingBoxLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClimbingBoxLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def ClimbingBoxLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClimbingBoxLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def ClipLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClipLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def ClipLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClipLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def ClockLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClockLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def ClockLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClockLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def DotLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("DotLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def DotLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("DotLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def FadeLoader(
-    hasLoadingColorSpeedMultiplierCssOverrideHeightWidthRadiusMarginAdditionalprops: LoaderHeightWidthRadiusProps
-  ): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeLoader")(hasLoadingColorSpeedMultiplierCssOverrideHeightWidthRadiusMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def FadeLoader(param0: LoaderHeightWidthRadiusProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def GridLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("GridLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def GridLoader(param0: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("GridLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def HashLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("HashLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def HashLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("HashLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def MoonLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MoonLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def MoonLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MoonLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def PacmanLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PacmanLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def PacmanLoader(param0: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PacmanLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def PropagateLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PropagateLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def PropagateLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PropagateLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def PuffLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PuffLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def PuffLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PuffLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def PulseLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PulseLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def PulseLoader(param0: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PulseLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def RingLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RingLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def RingLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RingLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def RiseLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RiseLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def RiseLoader(param0: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RiseLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def RotateLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RotateLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def RotateLoader(param0: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RotateLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def ScaleLoader(
-    hasLoadingColorSpeedMultiplierCssOverrideHeightWidthRadiusMarginAdditionalprops: LoaderHeightWidthRadiusProps
-  ): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ScaleLoader")(hasLoadingColorSpeedMultiplierCssOverrideHeightWidthRadiusMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def ScaleLoader(param0: LoaderHeightWidthRadiusProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ScaleLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def SkewLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SkewLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def SkewLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SkewLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def SquareLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SquareLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def SquareLoader(param0: LoaderSizeProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SquareLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def SyncLoader(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SyncLoader")(hasLoadingColorSpeedMultiplierCssOverrideSizeMarginAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def SyncLoader(param0: LoaderSizeMarginProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SyncLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
 }

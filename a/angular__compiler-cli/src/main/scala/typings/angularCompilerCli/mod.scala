@@ -217,9 +217,9 @@ object mod {
   
   inline def constructorParametersDownlevelTransform(program: Program): TransformerFactory[SourceFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("constructorParametersDownlevelTransform")(program.asInstanceOf[js.Any]).asInstanceOf[TransformerFactory[SourceFile]]
   
-  inline def createCompilerHost(hasOptionsTsHost: Options): CompilerHost = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerHost")(hasOptionsTsHost.asInstanceOf[js.Any]).asInstanceOf[CompilerHost]
+  inline def createCompilerHost(param0: Options): CompilerHost = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerHost")(param0.asInstanceOf[js.Any]).asInstanceOf[CompilerHost]
   
-  inline def createProgram(hasRootNamesOptionsHostOldProgram: Host): typings.angularCompilerCli.srcTransformersApiMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(hasRootNamesOptionsHostOldProgram.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompilerCli.srcTransformersApiMod.Program]
+  inline def createProgram(param0: Host): typings.angularCompilerCli.srcTransformersApiMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompilerCli.srcTransformersApiMod.Program]
   
   inline def defaultGatherDiagnostics(program: typings.angularCompilerCli.srcTransformersApiMod.Program): js.Array[Diagnostic] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGatherDiagnostics")(program.asInstanceOf[js.Any]).asInstanceOf[js.Array[Diagnostic]]
   
@@ -259,9 +259,7 @@ object mod {
     paths: String*
   ): BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(scala.List(basePath.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[BrandedPath[typings.angularCompilerCli.angularCompilerCliStrings.PathSegment]]
   
-  inline def performCompilation(
-    hasRootNamesOptionsHostOldProgramEmitCallbackMergeEmitResultsCallbackGatherDiagnosticsCustomTransformersEmitFlagsForceEmitModifiedResourceFiles: CustomTransformers
-  ): PerformCompilationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("performCompilation")(hasRootNamesOptionsHostOldProgramEmitCallbackMergeEmitResultsCallbackGatherDiagnosticsCustomTransformersEmitFlagsForceEmitModifiedResourceFiles.asInstanceOf[js.Any]).asInstanceOf[PerformCompilationResult]
+  inline def performCompilation(param0: CustomTransformers): PerformCompilationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("performCompilation")(param0.asInstanceOf[js.Any]).asInstanceOf[PerformCompilationResult]
   
   inline def readConfiguration(project: String): ParsedConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any]).asInstanceOf[ParsedConfiguration]
   inline def readConfiguration(project: String, existingOptions: Unit, host: ConfigurationHost): ParsedConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[ParsedConfiguration]

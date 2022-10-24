@@ -62,25 +62,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ArcLabelComponent[Datum /* <: DatumWithArcAndColor */](hasLabelStyle: ArcLabelProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLabelComponent")(hasLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcLabelComponent[Datum /* <: DatumWithArcAndColor */](param0: ArcLabelProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLabelComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ArcLabelsLayer[Datum /* <: DatumWithArcAndColor */](
-    hasCenterDataTransitionModeLabelAccessorRadiusOffsetSkipAngleTextColorComponent: ArcLabelsLayerProps[Datum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLabelsLayer")(hasCenterDataTransitionModeLabelAccessorRadiusOffsetSkipAngleTextColorComponent.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcLabelsLayer[Datum /* <: DatumWithArcAndColor */](param0: ArcLabelsLayerProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLabelsLayer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ArcLine(hasAnimatedPropsRest: ArcLineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLine")(hasAnimatedPropsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcLine(param0: ArcLineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLine")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ArcLinkLabelComponent[Datum /* <: DatumWithArcAndColor */](hasLabelStyle: ArcLinkLabelProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLinkLabelComponent")(hasLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcLinkLabelComponent[Datum /* <: DatumWithArcAndColor */](param0: ArcLinkLabelProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLinkLabelComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ArcLinkLabelsLayer[Datum /* <: DatumWithArcAndColor */](
-    hasCenterDataLabelAccessorSkipAngleOffsetDiagonalLengthStraightLengthStrokeWidthTextOffsetTextColorLinkColorComponent: ArcLinkLabelsLayerProps[Datum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLinkLabelsLayer")(hasCenterDataLabelAccessorSkipAngleOffsetDiagonalLengthStraightLengthStrokeWidthTextOffsetTextColorLinkColorComponent.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcLinkLabelsLayer[Datum /* <: DatumWithArcAndColor */](param0: ArcLinkLabelsLayerProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLinkLabelsLayer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ArcShape[Datum /* <: DatumWithArcAndColor */](hasDatumStyleOnClickOnMouseEnterOnMouseMoveOnMouseLeave: ArcShapeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcShape")(hasDatumStyleOnClickOnMouseEnterOnMouseMoveOnMouseLeave.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcShape[Datum /* <: DatumWithArcAndColor */](param0: ArcShapeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcShape")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ArcsLayer[Datum /* <: DatumWithArcAndColor */](
-    hasCenterDataArcGeneratorBorderWidthBorderColorOnClickOnMouseEnterOnMouseMoveOnMouseLeaveTransitionModeComponent: ArcsLayerProps[Datum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcsLayer")(hasCenterDataArcGeneratorBorderWidthBorderColorOnClickOnMouseEnterOnMouseMoveOnMouseLeaveTransitionModeComponent.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcsLayer[Datum /* <: DatumWithArcAndColor */](param0: ArcsLayerProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcsLayer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@nivo/arcs", "arcTransitionModeById")
   @js.native
@@ -158,7 +152,7 @@ object mod {
   
   inline def useAnimatedArc(datumWithArc: typings.nivoArcs.anon.Arc, arcGenerator: ArcGenerator): InnerRadius = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedArc")(datumWithArc.asInstanceOf[js.Any], arcGenerator.asInstanceOf[js.Any])).asInstanceOf[InnerRadius]
   
-  inline def useArcCenters[Datum /* <: DatumWithArc */, ExtraProps /* <: Record[String, Any] */](hasDataOffsetSkipAngleComputeExtraProps: SkipAngle[Datum, ExtraProps]): js.Array[ArcCenter[Datum] & ExtraProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcCenters")(hasDataOffsetSkipAngleComputeExtraProps.asInstanceOf[js.Any]).asInstanceOf[js.Array[ArcCenter[Datum] & ExtraProps]]
+  inline def useArcCenters[Datum /* <: DatumWithArc */, ExtraProps /* <: Record[String, Any] */](param0: SkipAngle[Datum, ExtraProps]): js.Array[ArcCenter[Datum] & ExtraProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcCenters")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[ArcCenter[Datum] & ExtraProps]]
   
   inline def useArcCentersTransition[Datum /* <: DatumWithArc */, ExtraProps](data: js.Array[Datum]): Interpolate = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcCentersTransition")(data.asInstanceOf[js.Any]).asInstanceOf[Interpolate]
   inline def useArcCentersTransition[Datum /* <: DatumWithArc */, ExtraProps](data: js.Array[Datum], offset: Double): Interpolate = (^.asInstanceOf[js.Dynamic].applyDynamic("useArcCentersTransition")(data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Interpolate]
@@ -180,39 +174,35 @@ object mod {
   ): Interpolate = (^.asInstanceOf[js.Dynamic].applyDynamic("useArcCentersTransition")(data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Interpolate]
   
   inline def useArcGenerator(): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcGenerator")().asInstanceOf[ArcGenerator]
-  inline def useArcGenerator(hasCornerRadiusPadAngle: CornerRadius): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcGenerator")(hasCornerRadiusPadAngle.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator]
+  inline def useArcGenerator(param0: CornerRadius): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcGenerator")(param0.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator]
   
-  inline def useArcLabels[Datum /* <: DatumWithArcAndColor */](hasDataOffsetSkipAngleLabelTextColor: Data[Datum]): js.Array[
+  inline def useArcLabels[Datum /* <: DatumWithArcAndColor */](param0: Data[Datum]): js.Array[
     ArcCenter[Datum] & (Omit[
       ArcLabel[Datum], 
       /* keyof @nivo/arcs.@nivo/arcs/dist/types/centers.ArcCenter<Datum> */ data | x | y
     ])
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLabels")(hasDataOffsetSkipAngleLabelTextColor.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLabels")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[
     ArcCenter[Datum] & (Omit[
       ArcLabel[Datum], 
       /* keyof @nivo/arcs.@nivo/arcs/dist/types/centers.ArcCenter<Datum> */ data | x | y
     ])
   ]]
   
-  inline def useArcLinkLabels[Datum /* <: DatumWithArcAndColor */](
-    hasDataSkipAngleOffsetDiagonalLengthStraightLengthTextOffsetLabelLinkColorTextColor: DiagonalLength[Datum]
-  ): js.Array[
+  inline def useArcLinkLabels[Datum /* <: DatumWithArcAndColor */](param0: DiagonalLength[Datum]): js.Array[
     ArcLinkWithDatum[Datum] & (Omit[
       ArcLinkLabel[Datum], 
       /* keyof @nivo/arcs.@nivo/arcs/dist/types/arc_link_labels/types.ArcLinkWithDatum<Datum> */ data | side | points
     ])
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLinkLabels")(hasDataSkipAngleOffsetDiagonalLengthStraightLengthTextOffsetLabelLinkColorTextColor.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLinkLabels")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[
     ArcLinkWithDatum[Datum] & (Omit[
       ArcLinkLabel[Datum], 
       /* keyof @nivo/arcs.@nivo/arcs/dist/types/arc_link_labels/types.ArcLinkWithDatum<Datum> */ data | side | points
     ])
   ]]
   
-  inline def useArcLinkLabelsTransition[Datum /* <: DatumWithArcAndColor */](hasDataOffsetDiagonalLengthStraightLengthSkipAngleTextOffsetLinkColorTextColor: Offset[Datum]): InterpolateLink = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLinkLabelsTransition")(hasDataOffsetDiagonalLengthStraightLengthSkipAngleTextOffsetLinkColorTextColor.asInstanceOf[js.Any]).asInstanceOf[InterpolateLink]
+  inline def useArcLinkLabelsTransition[Datum /* <: DatumWithArcAndColor */](param0: Offset[Datum]): InterpolateLink = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLinkLabelsTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[InterpolateLink]
   
-  inline def useArcLinks[Datum /* <: DatumWithArc */, ExtraProps /* <: Record[String, Any] */](
-    hasDataSkipAngleOffsetDiagonalLengthStraightLengthComputeExtraProps: ComputeExtraProps[Datum, ExtraProps]
-  ): js.Array[ArcLinkWithDatum[Datum] & ExtraProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLinks")(hasDataSkipAngleOffsetDiagonalLengthStraightLengthComputeExtraProps.asInstanceOf[js.Any]).asInstanceOf[js.Array[ArcLinkWithDatum[Datum] & ExtraProps]]
+  inline def useArcLinks[Datum /* <: DatumWithArc */, ExtraProps /* <: Record[String, Any] */](param0: ComputeExtraProps[Datum, ExtraProps]): js.Array[ArcLinkWithDatum[Datum] & ExtraProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcLinks")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[ArcLinkWithDatum[Datum] & ExtraProps]]
   
   inline def useArcTransitionMode[Datum /* <: DatumWithArc */, ExtraProps](mode: ArcTransitionMode): Enter[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcTransitionMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Enter[Datum]]
   inline def useArcTransitionMode[Datum /* <: DatumWithArc */, ExtraProps](mode: ArcTransitionMode, extraTransition: TransitionExtra[Datum, ExtraProps]): Enter[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("useArcTransitionMode")(mode.asInstanceOf[js.Any], extraTransition.asInstanceOf[js.Any])).asInstanceOf[Enter[Datum]]

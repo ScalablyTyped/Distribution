@@ -10,7 +10,7 @@ object libCjsPuppeteerCommonBidiBrowserContextMod {
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/bidi/BrowserContext", "BrowserContext")
   @js.native
   open class BrowserContext protected ()
-    extends typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.BrowserContext {
+    extends typings.puppeteerCore.libCjsPuppeteerApiBrowserContextMod.BrowserContext {
     def this(connection: Connection) = this()
     
     /* private */ var `private`: Any = js.native

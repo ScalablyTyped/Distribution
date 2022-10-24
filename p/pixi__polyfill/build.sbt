@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "pixi__polyfill"
-version := "6.5.7-0cbcd3"
-scalaVersion := "3.1.2"
+version := "6.5.8-6f5a42"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

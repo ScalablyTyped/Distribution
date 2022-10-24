@@ -12,5 +12,5 @@ object distTypesTreeMapNodeTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TreeMapNodeTooltip[Datum /* <: js.Object */](hasNode: TooltipProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapNodeTooltip")(hasNode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TreeMapNodeTooltip[Datum /* <: js.Object */](param0: TooltipProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapNodeTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

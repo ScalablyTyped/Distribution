@@ -826,99 +826,6 @@ object Calendar {
     def setVisibility(visibility: Visibility): CalendarEventSeries = js.native
   }
   
-  extension [Self <: typings.googleAppsScript.GoogleAppsScript.Calendar](x: Self) {
-    
-    inline def setAcl(value: AclCollection): Self = StObject.set(x, "Acl", value.asInstanceOf[js.Any])
-    
-    inline def setAclUndefined: Self = StObject.set(x, "Acl", js.undefined)
-    
-    inline def setCalendarList(value: CalendarListCollection): Self = StObject.set(x, "CalendarList", value.asInstanceOf[js.Any])
-    
-    inline def setCalendarListUndefined: Self = StObject.set(x, "CalendarList", js.undefined)
-    
-    inline def setCalendars(value: CalendarsCollection): Self = StObject.set(x, "Calendars", value.asInstanceOf[js.Any])
-    
-    inline def setCalendarsUndefined: Self = StObject.set(x, "Calendars", js.undefined)
-    
-    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
-    
-    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
-    
-    inline def setColors(value: ColorsCollection): Self = StObject.set(x, "Colors", value.asInstanceOf[js.Any])
-    
-    inline def setColorsUndefined: Self = StObject.set(x, "Colors", js.undefined)
-    
-    inline def setEvents(value: EventsCollection): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
-    
-    inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
-    
-    inline def setFreebusy(value: FreebusyCollection): Self = StObject.set(x, "Freebusy", value.asInstanceOf[js.Any])
-    
-    inline def setFreebusyUndefined: Self = StObject.set(x, "Freebusy", js.undefined)
-    
-    inline def setNewAclRule(value: () => AclRule): Self = StObject.set(x, "newAclRule", js.Any.fromFunction0(value))
-    
-    inline def setNewAclRuleScope(value: () => AclRuleScope): Self = StObject.set(x, "newAclRuleScope", js.Any.fromFunction0(value))
-    
-    inline def setNewCalendar(value: () => typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Calendar): Self = StObject.set(x, "newCalendar", js.Any.fromFunction0(value))
-    
-    inline def setNewCalendarListEntry(value: () => CalendarListEntry): Self = StObject.set(x, "newCalendarListEntry", js.Any.fromFunction0(value))
-    
-    inline def setNewCalendarListEntryNotificationSettings(value: () => CalendarListEntryNotificationSettings): Self = StObject.set(x, "newCalendarListEntryNotificationSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewCalendarNotification(value: () => CalendarNotification): Self = StObject.set(x, "newCalendarNotification", js.Any.fromFunction0(value))
-    
-    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
-    
-    inline def setNewConferenceData(value: () => typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData): Self = StObject.set(x, "newConferenceData", js.Any.fromFunction0(value))
-    
-    inline def setNewConferenceParameters(value: () => ConferenceParameters): Self = StObject.set(x, "newConferenceParameters", js.Any.fromFunction0(value))
-    
-    inline def setNewConferenceParametersAddOnParameters(value: () => ConferenceParametersAddOnParameters): Self = StObject.set(x, "newConferenceParametersAddOnParameters", js.Any.fromFunction0(value))
-    
-    inline def setNewConferenceProperties(value: () => ConferenceProperties): Self = StObject.set(x, "newConferenceProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewConferenceRequestStatus(value: () => ConferenceRequestStatus): Self = StObject.set(x, "newConferenceRequestStatus", js.Any.fromFunction0(value))
-    
-    inline def setNewConferenceSolution(value: () => ConferenceSolution): Self = StObject.set(x, "newConferenceSolution", js.Any.fromFunction0(value))
-    
-    inline def setNewConferenceSolutionKey(value: () => ConferenceSolutionKey): Self = StObject.set(x, "newConferenceSolutionKey", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateConferenceRequest(value: () => CreateConferenceRequest): Self = StObject.set(x, "newCreateConferenceRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewEntryPoint(value: () => EntryPoint): Self = StObject.set(x, "newEntryPoint", js.Any.fromFunction0(value))
-    
-    inline def setNewEvent(value: () => Event): Self = StObject.set(x, "newEvent", js.Any.fromFunction0(value))
-    
-    inline def setNewEventAttachment(value: () => EventAttachment): Self = StObject.set(x, "newEventAttachment", js.Any.fromFunction0(value))
-    
-    inline def setNewEventAttendee(value: () => EventAttendee): Self = StObject.set(x, "newEventAttendee", js.Any.fromFunction0(value))
-    
-    inline def setNewEventCreator(value: () => EventCreator): Self = StObject.set(x, "newEventCreator", js.Any.fromFunction0(value))
-    
-    inline def setNewEventDateTime(value: () => EventDateTime): Self = StObject.set(x, "newEventDateTime", js.Any.fromFunction0(value))
-    
-    inline def setNewEventExtendedProperties(value: () => EventExtendedProperties): Self = StObject.set(x, "newEventExtendedProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewEventGadget(value: () => EventGadget): Self = StObject.set(x, "newEventGadget", js.Any.fromFunction0(value))
-    
-    inline def setNewEventOrganizer(value: () => EventOrganizer): Self = StObject.set(x, "newEventOrganizer", js.Any.fromFunction0(value))
-    
-    inline def setNewEventReminder(value: () => EventReminder): Self = StObject.set(x, "newEventReminder", js.Any.fromFunction0(value))
-    
-    inline def setNewEventReminders(value: () => EventReminders): Self = StObject.set(x, "newEventReminders", js.Any.fromFunction0(value))
-    
-    inline def setNewEventSource(value: () => EventSource): Self = StObject.set(x, "newEventSource", js.Any.fromFunction0(value))
-    
-    inline def setNewFreeBusyRequest(value: () => FreeBusyRequest): Self = StObject.set(x, "newFreeBusyRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewFreeBusyRequestItem(value: () => FreeBusyRequestItem): Self = StObject.set(x, "newFreeBusyRequestItem", js.Any.fromFunction0(value))
-    
-    inline def setSettings(value: SettingsCollection): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
-    
-    inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
-  }
-  
   object Collection {
     
     @js.native
@@ -1317,6 +1224,99 @@ object Calendar {
       
       inline def setSetTimeZone(value: String => EventRecurrence): Self = StObject.set(x, "setTimeZone", js.Any.fromFunction1(value))
     }
+  }
+  
+  extension [Self <: typings.googleAppsScript.GoogleAppsScript.Calendar](x: Self) {
+    
+    inline def setAcl(value: AclCollection): Self = StObject.set(x, "Acl", value.asInstanceOf[js.Any])
+    
+    inline def setAclUndefined: Self = StObject.set(x, "Acl", js.undefined)
+    
+    inline def setCalendarList(value: CalendarListCollection): Self = StObject.set(x, "CalendarList", value.asInstanceOf[js.Any])
+    
+    inline def setCalendarListUndefined: Self = StObject.set(x, "CalendarList", js.undefined)
+    
+    inline def setCalendars(value: CalendarsCollection): Self = StObject.set(x, "Calendars", value.asInstanceOf[js.Any])
+    
+    inline def setCalendarsUndefined: Self = StObject.set(x, "Calendars", js.undefined)
+    
+    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    
+    inline def setColors(value: ColorsCollection): Self = StObject.set(x, "Colors", value.asInstanceOf[js.Any])
+    
+    inline def setColorsUndefined: Self = StObject.set(x, "Colors", js.undefined)
+    
+    inline def setEvents(value: EventsCollection): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+    
+    inline def setFreebusy(value: FreebusyCollection): Self = StObject.set(x, "Freebusy", value.asInstanceOf[js.Any])
+    
+    inline def setFreebusyUndefined: Self = StObject.set(x, "Freebusy", js.undefined)
+    
+    inline def setNewAclRule(value: () => AclRule): Self = StObject.set(x, "newAclRule", js.Any.fromFunction0(value))
+    
+    inline def setNewAclRuleScope(value: () => AclRuleScope): Self = StObject.set(x, "newAclRuleScope", js.Any.fromFunction0(value))
+    
+    inline def setNewCalendar(value: () => typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Calendar): Self = StObject.set(x, "newCalendar", js.Any.fromFunction0(value))
+    
+    inline def setNewCalendarListEntry(value: () => CalendarListEntry): Self = StObject.set(x, "newCalendarListEntry", js.Any.fromFunction0(value))
+    
+    inline def setNewCalendarListEntryNotificationSettings(value: () => CalendarListEntryNotificationSettings): Self = StObject.set(x, "newCalendarListEntryNotificationSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewCalendarNotification(value: () => CalendarNotification): Self = StObject.set(x, "newCalendarNotification", js.Any.fromFunction0(value))
+    
+    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
+    
+    inline def setNewConferenceData(value: () => typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData): Self = StObject.set(x, "newConferenceData", js.Any.fromFunction0(value))
+    
+    inline def setNewConferenceParameters(value: () => ConferenceParameters): Self = StObject.set(x, "newConferenceParameters", js.Any.fromFunction0(value))
+    
+    inline def setNewConferenceParametersAddOnParameters(value: () => ConferenceParametersAddOnParameters): Self = StObject.set(x, "newConferenceParametersAddOnParameters", js.Any.fromFunction0(value))
+    
+    inline def setNewConferenceProperties(value: () => ConferenceProperties): Self = StObject.set(x, "newConferenceProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewConferenceRequestStatus(value: () => ConferenceRequestStatus): Self = StObject.set(x, "newConferenceRequestStatus", js.Any.fromFunction0(value))
+    
+    inline def setNewConferenceSolution(value: () => ConferenceSolution): Self = StObject.set(x, "newConferenceSolution", js.Any.fromFunction0(value))
+    
+    inline def setNewConferenceSolutionKey(value: () => ConferenceSolutionKey): Self = StObject.set(x, "newConferenceSolutionKey", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateConferenceRequest(value: () => CreateConferenceRequest): Self = StObject.set(x, "newCreateConferenceRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewEntryPoint(value: () => EntryPoint): Self = StObject.set(x, "newEntryPoint", js.Any.fromFunction0(value))
+    
+    inline def setNewEvent(value: () => Event): Self = StObject.set(x, "newEvent", js.Any.fromFunction0(value))
+    
+    inline def setNewEventAttachment(value: () => EventAttachment): Self = StObject.set(x, "newEventAttachment", js.Any.fromFunction0(value))
+    
+    inline def setNewEventAttendee(value: () => EventAttendee): Self = StObject.set(x, "newEventAttendee", js.Any.fromFunction0(value))
+    
+    inline def setNewEventCreator(value: () => EventCreator): Self = StObject.set(x, "newEventCreator", js.Any.fromFunction0(value))
+    
+    inline def setNewEventDateTime(value: () => EventDateTime): Self = StObject.set(x, "newEventDateTime", js.Any.fromFunction0(value))
+    
+    inline def setNewEventExtendedProperties(value: () => EventExtendedProperties): Self = StObject.set(x, "newEventExtendedProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewEventGadget(value: () => EventGadget): Self = StObject.set(x, "newEventGadget", js.Any.fromFunction0(value))
+    
+    inline def setNewEventOrganizer(value: () => EventOrganizer): Self = StObject.set(x, "newEventOrganizer", js.Any.fromFunction0(value))
+    
+    inline def setNewEventReminder(value: () => EventReminder): Self = StObject.set(x, "newEventReminder", js.Any.fromFunction0(value))
+    
+    inline def setNewEventReminders(value: () => EventReminders): Self = StObject.set(x, "newEventReminders", js.Any.fromFunction0(value))
+    
+    inline def setNewEventSource(value: () => EventSource): Self = StObject.set(x, "newEventSource", js.Any.fromFunction0(value))
+    
+    inline def setNewFreeBusyRequest(value: () => FreeBusyRequest): Self = StObject.set(x, "newFreeBusyRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewFreeBusyRequestItem(value: () => FreeBusyRequestItem): Self = StObject.set(x, "newFreeBusyRequestItem", js.Any.fromFunction0(value))
+    
+    inline def setSettings(value: SettingsCollection): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
   }
   
   /**

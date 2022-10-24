@@ -11,5 +11,5 @@ object buildPluginsUnversionedCreateLegacyPluginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createLegacyPlugin(hasPackageNameFallback: Fallback): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createLegacyPlugin")(hasPackageNameFallback.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createLegacyPlugin(param0: Fallback): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createLegacyPlugin")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

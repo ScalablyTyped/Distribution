@@ -40,7 +40,7 @@ object distNodesPairMod {
         js.Function3[
           /* ctx */ js.UndefOr[ToJSContext], 
           /* map */ MapLike, 
-          /* hasKeyValue */ Pair[Any, Any], 
+          /* param2 */ Pair[Any, Any], 
           MapLike
         ]
       ] = js.native
@@ -48,7 +48,7 @@ object distNodesPairMod {
         js.Function3[
           /* ctx */ js.UndefOr[ToJSContext], 
           /* map */ MapLike, 
-          /* hasKeyValue */ Pair[Any, Any], 
+          /* param2 */ Pair[Any, Any], 
           MapLike
         ]
       ] = js.native
@@ -56,7 +56,7 @@ object distNodesPairMod {
         js.Function3[
           /* ctx */ js.UndefOr[ToJSContext], 
           /* map */ MapLike, 
-          /* hasKeyValue */ Pair[Any, Any], 
+          /* param2 */ Pair[Any, Any], 
           MapLike
         ]
       ] = js.native
@@ -64,7 +64,7 @@ object distNodesPairMod {
         js.Function3[
           /* ctx */ js.UndefOr[ToJSContext], 
           /* map */ MapLike, 
-          /* hasKeyValue */ Pair[Any, Any], 
+          /* param2 */ Pair[Any, Any], 
           MapLike
         ]
       ] = js.native

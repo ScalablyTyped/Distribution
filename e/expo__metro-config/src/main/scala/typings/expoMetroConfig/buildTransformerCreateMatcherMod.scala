@@ -13,12 +13,12 @@ object buildTransformerCreateMatcherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createExpoMatcher(hasFolders: Folders): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createExpoMatcher")(hasFolders.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def createExpoMatcher(param0: Folders): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createExpoMatcher")(param0.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
   inline def createKnownCommunityMatcher(): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createKnownCommunityMatcher")().asInstanceOf[js.RegExp]
-  inline def createKnownCommunityMatcher(hasFoldersModuleIds: ModuleIds): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createKnownCommunityMatcher")(hasFoldersModuleIds.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def createKnownCommunityMatcher(param0: ModuleIds): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createKnownCommunityMatcher")(param0.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
-  inline def createModuleMatcher(hasFoldersModuleIds: FoldersModuleIds): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleMatcher")(hasFoldersModuleIds.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def createModuleMatcher(param0: FoldersModuleIds): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleMatcher")(param0.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
-  inline def createReactNativeMatcher(hasFolders: Folders): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createReactNativeMatcher")(hasFolders.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def createReactNativeMatcher(param0: Folders): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createReactNativeMatcher")(param0.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
 }

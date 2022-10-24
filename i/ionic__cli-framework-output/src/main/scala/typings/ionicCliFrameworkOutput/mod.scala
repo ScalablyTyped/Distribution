@@ -70,7 +70,7 @@ object mod {
   @js.native
   open class Logger ()
     extends typings.ionicCliFrameworkOutput.distLoggerMod.Logger {
-    def this(hasLevelHandlers: LoggerOptions) = this()
+    def this(param0: LoggerOptions) = this()
   }
   /* static members */
   object Logger {
@@ -97,28 +97,28 @@ object mod {
   @js.native
   open class StreamHandler protected ()
     extends typings.ionicCliFrameworkOutput.distLoggerMod.StreamHandler {
-    def this(hasStreamFilterFormatter: StreamHandlerOptions) = this()
+    def this(param0: StreamHandlerOptions) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "StreamOutputStrategy")
   @js.native
   open class StreamOutputStrategy protected ()
     extends typings.ionicCliFrameworkOutput.distOutputMod.StreamOutputStrategy {
-    def this(hasStreamColors: StreamOutputStrategyOptions) = this()
+    def this(param0: StreamOutputStrategyOptions) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "TTYOutputRedrawer")
   @js.native
   open class TTYOutputRedrawer protected ()
     extends typings.ionicCliFrameworkOutput.distOutputMod.TTYOutputRedrawer {
-    def this(hasStream: TTYOutputRedrawerOptions) = this()
+    def this(param0: TTYOutputRedrawerOptions) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "TTYOutputStrategy")
   @js.native
   open class TTYOutputStrategy ()
     extends typings.ionicCliFrameworkOutput.distOutputMod.TTYOutputStrategy {
-    def this(hasStreamColors: TTYOutputStrategyOptions) = this()
+    def this(param0: TTYOutputStrategyOptions) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "TTY_WIDTH")
@@ -129,24 +129,24 @@ object mod {
   @js.native
   open class Task ()
     extends typings.ionicCliFrameworkOutput.distTasksMod.Task {
-    def this(hasMsgTickInterval: TaskOptions) = this()
+    def this(param0: TaskOptions) = this()
   }
   
   @JSImport("@ionic/cli-framework-output", "TaskChain")
   @js.native
   open class TaskChain ()
     extends typings.ionicCliFrameworkOutput.distTasksMod.TaskChain {
-    def this(hasTaskOptions: TaskChainOptions) = this()
+    def this(param0: TaskChainOptions) = this()
   }
   
   inline def createDefaultLogger(): typings.ionicCliFrameworkOutput.distLoggerMod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLogger")().asInstanceOf[typings.ionicCliFrameworkOutput.distLoggerMod.Logger]
-  inline def createDefaultLogger(hasOutputFormatterOptions: CreateDefaultLoggerOptions): typings.ionicCliFrameworkOutput.distLoggerMod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLogger")(hasOutputFormatterOptions.asInstanceOf[js.Any]).asInstanceOf[typings.ionicCliFrameworkOutput.distLoggerMod.Logger]
+  inline def createDefaultLogger(param0: CreateDefaultLoggerOptions): typings.ionicCliFrameworkOutput.distLoggerMod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLogger")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.ionicCliFrameworkOutput.distLoggerMod.Logger]
   
   inline def createPrefixedFormatter(prefix: String): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   inline def createPrefixedFormatter(prefix: js.Function0[String]): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
   inline def createTaggedFormatter(): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")().asInstanceOf[LoggerFormatter]
-  inline def createTaggedFormatter(hasColorsPrefixTagsTitleizeWrap: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")(hasColorsPrefixTagsTitleizeWrap.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
+  inline def createTaggedFormatter(param0: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")(param0.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
   inline def getLoggerLevelColor(colors: Colors): js.UndefOr[ColorFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ColorFunction]]
   inline def getLoggerLevelColor(colors: Colors, level: LoggerLevelWeight): js.UndefOr[ColorFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ColorFunction]]
@@ -186,7 +186,7 @@ object mod {
     inline def default(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  inline def wordWrap(msg: String, hasWidthIndentationAppend: WordWrapOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(msg.asInstanceOf[js.Any], hasWidthIndentationAppend.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def wordWrap(msg: String, param1: WordWrapOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(msg.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait CreateDefaultLoggerOptions extends StObject {
     

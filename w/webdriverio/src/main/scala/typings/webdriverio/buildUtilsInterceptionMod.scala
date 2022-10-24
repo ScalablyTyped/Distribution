@@ -67,6 +67,6 @@ object buildUtilsInterceptionMod {
     var url: String | js.RegExp = js.native
     
     def waitForResponse(): js.Promise[Boolean | js.Promise[Boolean]] = js.native
-    def waitForResponse(hasTimeoutIntervalTimeoutMsg: WaitForOptions): js.Promise[Boolean | js.Promise[Boolean]] = js.native
+    def waitForResponse(param0: WaitForOptions): js.Promise[Boolean | js.Promise[Boolean]] = js.native
   }
 }

@@ -13,7 +13,7 @@ object distUiComponentsJobCardJobActionsJobActionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def JobActions(hasActionsStatus: JobActionsProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("JobActions")(hasActionsStatus.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def JobActions(param0: JobActionsProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("JobActions")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait JobActionsProps extends StObject {
     

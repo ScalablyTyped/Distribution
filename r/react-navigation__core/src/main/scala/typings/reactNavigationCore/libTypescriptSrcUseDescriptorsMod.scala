@@ -36,9 +36,7 @@ object libTypescriptSrcUseDescriptorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[State /* <: NavigationState[ParamListBase] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](
-    hasStateScreensNavigationScreenOptionsDefaultScreenOptionsOnActionGetStateSetStateAddListenerAddKeyedListenerOnRouteFocusRouterEmitter: Options[State, ScreenOptions, EventMap]
-  ): Record[
+  inline def default[State /* <: NavigationState[ParamListBase] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](param0: Options[State, ScreenOptions, EventMap]): Record[
     String, 
     Descriptor[
       ScreenOptions, 
@@ -48,7 +46,7 @@ object libTypescriptSrcUseDescriptorsMod {
       ]) & SetOptions[ScreenOptions] & (EventConsumer[EventMap & EventMapCore[State]]) & (PrivateValueStore[js.Tuple3[ParamListBase, String, EventMap]]) & ActionHelpers, 
       RouteProp[ParamListBase, String]
     ]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateScreensNavigationScreenOptionsDefaultScreenOptionsOnActionGetStateSetStateAddListenerAddKeyedListenerOnRouteFocusRouterEmitter.asInstanceOf[js.Any]).asInstanceOf[Record[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Record[
     String, 
     Descriptor[
       ScreenOptions, 

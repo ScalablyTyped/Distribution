@@ -11,7 +11,7 @@ object declarationAnimationEasingManagerMod {
   @JSImport("@egjs/axes/declaration/animation/EasingManager", "EasingManager")
   @js.native
   open class EasingManager protected () extends AnimationManager {
-    def this(hasOptionsInterruptManagerEventManagerAxisManager: AxisManager) = this()
+    def this(param0: AxisManager) = this()
     
     /* private */ var _durationOffset: Any = js.native
     

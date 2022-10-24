@@ -10,7 +10,7 @@ object distAccordionSrcAccordionItemMod {
   
   object AccordionItem {
     
-    inline def apply(hasHasIdKeyHeaderPanelRest: AccordionItemProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasHasIdKeyHeaderPanelRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: AccordionItemProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@orbit-ui/react-components/dist/accordion/src/AccordionItem", "AccordionItem")
     @js.native

@@ -21,7 +21,7 @@ object cjsModalManagerMod {
   open class default ()
     extends StObject
        with ModalManager {
-    def this(hasHideSiblingNodesHandleContainerOverflow: HandleContainerOverflow) = this()
+    def this(param0: HandleContainerOverflow) = this()
   }
   
   type ContainerState = (Record[String, Any]) & IsOverflowing

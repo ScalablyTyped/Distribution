@@ -14,7 +14,7 @@ object buildDateFnsUtilsMod {
   open class default ()
     extends StObject
        with DateFnsUtils {
-    def this(hasLocaleFormats: Formats) = this()
+    def this(param0: Formats) = this()
   }
   
   @js.native

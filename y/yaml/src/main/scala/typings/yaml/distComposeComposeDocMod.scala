@@ -21,7 +21,7 @@ object distComposeComposeDocMod {
   inline def composeDoc(
     options: ParseOptions & DocumentOptions & SchemaOptions,
     directives: Directives,
-    hasOffsetStartValueEnd: Document,
+    param2: Document,
     onError: ComposeErrorHandler
-  ): Parsed[ParsedNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeDoc")(options.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], hasOffsetStartValueEnd.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed[ParsedNode]]
+  ): Parsed[ParsedNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeDoc")(options.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed[ParsedNode]]
 }

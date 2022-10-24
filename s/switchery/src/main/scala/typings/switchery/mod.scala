@@ -92,6 +92,17 @@ object mod {
       __obj.asInstanceOf[Switchery]
     }
     
+    extension [Self <: Switchery](x: Self) {
+      
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      
+      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      
+      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    }
+    
     trait Options extends StObject {
       
       /**
@@ -193,17 +204,6 @@ object mod {
         
         inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       }
-    }
-    
-    extension [Self <: Switchery](x: Self) {
-      
-      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-      
-      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
-      
-      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
-      
-      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
     
     @js.native

@@ -2274,9 +2274,7 @@ inline def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeA
 inline def createIncrementalCompilerHost(options: CompilerOptions): CompilerHost = ^.asInstanceOf[js.Dynamic].applyDynamic("createIncrementalCompilerHost")(options.asInstanceOf[js.Any]).asInstanceOf[CompilerHost]
 inline def createIncrementalCompilerHost(options: CompilerOptions, system: System): CompilerHost = (^.asInstanceOf[js.Dynamic].applyDynamic("createIncrementalCompilerHost")(options.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[CompilerHost]
 
-inline def createIncrementalProgram[T /* <: BuilderProgram */](
-  hasRootNamesOptionsConfigFileParsingDiagnosticsProjectReferencesHostCreateProgram: IncrementalProgramOptions[T]
-): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createIncrementalProgram")(hasRootNamesOptionsConfigFileParsingDiagnosticsProjectReferencesHostCreateProgram.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def createIncrementalProgram[T /* <: BuilderProgram */](param0: IncrementalProgramOptions[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createIncrementalProgram")(param0.asInstanceOf[js.Any]).asInstanceOf[T]
 
 /** @deprecated Use `factory.createIndexSignature` or the factory supplied by your transformation context instead. */
 inline def createIndexSignature(

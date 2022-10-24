@@ -11,5 +11,5 @@ object distBuildBabelPluginsNextPageConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasT: Types): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasT.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def default(param0: Types): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

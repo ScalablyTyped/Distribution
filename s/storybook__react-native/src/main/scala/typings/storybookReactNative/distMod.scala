@@ -28,10 +28,7 @@ object distMod {
   
   @JSImport("@storybook/react-native/dist", "addParameters")
   @js.native
-  val addParameters: js.Function1[
-    /* hasGlobalsGlobalTypesParameters */ (Parameters[js.Function1[/* args */ Any, Any]]) & GlobalTypes, 
-    Unit
-  ] = js.native
+  val addParameters: js.Function1[/* param0 */ (Parameters[js.Function1[/* args */ Any, Any]]) & GlobalTypes, Unit] = js.native
   
   @JSImport("@storybook/react-native/dist", "clearDecorators")
   @js.native

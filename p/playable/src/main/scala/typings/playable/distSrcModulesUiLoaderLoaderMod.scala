@@ -15,7 +15,7 @@ object distSrcModulesUiLoaderLoaderMod {
   open class default protected ()
     extends StObject
        with Loader {
-    def this(hasConfigEventEmitterEngineRootContainer: ConfigEngine) = this()
+    def this(param0: ConfigEngine) = this()
     
     /* CompleteClass */
     override def destroy(): Unit = js.native

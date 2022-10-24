@@ -17,7 +17,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Result]
-  inline def default(hasDebounceScrollPolyfillOffsetSize: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDebounceScrollPolyfillOffsetSize.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def default(param0: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   type HTMLOrSVGElement = HTMLElement | SVGElement
   

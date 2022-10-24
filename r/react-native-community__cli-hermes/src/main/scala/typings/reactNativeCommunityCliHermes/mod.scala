@@ -30,15 +30,15 @@ object mod {
     @JSImport("@react-native-community/cli-hermes", "default.func")
     @js.native
     def func: js.Function3[
-        /* hasDstPath */ js.Array[String], 
+        /* param0 */ js.Array[String], 
         /* ctx */ Config, 
         /* options */ Options, 
         js.Promise[Unit]
       ] = js.native
-    inline def func(hasDstPath: js.Array[String], ctx: Config, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(hasDstPath.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def func(param0: js.Array[String], ctx: Config, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(param0.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def func_=(
       x: js.Function3[
-          /* hasDstPath */ js.Array[String], 
+          /* param0 */ js.Array[String], 
           /* ctx */ Config, 
           /* options */ Options, 
           js.Promise[Unit]

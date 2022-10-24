@@ -2,8 +2,8 @@ package typings.puppeteerCore
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.Browser
-import typings.puppeteerCore.libCjsPuppeteerCommonProductMod.Product
 import typings.puppeteerCore.libCjsPuppeteerNodeProductLauncherMod.ProductLauncher
+import typings.puppeteerCore.libCjsPuppeteerNodePuppeteerNodeMod.PuppeteerNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,33 +12,16 @@ object libCjsPuppeteerNodeFirefoxLauncherMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/node/FirefoxLauncher", "FirefoxLauncher")
   @js.native
-  open class FirefoxLauncher protected ()
-    extends StObject
-       with ProductLauncher {
-    def this(preferredRevision: String, isPuppeteerCore: Boolean) = this()
+  open class FirefoxLauncher protected () extends ProductLauncher {
+    def this(puppeteer: PuppeteerNode) = this()
     
     def _createProfile(extraPrefs: StringDictionary[Any]): js.Promise[String] = js.native
-    
-    /**
-      * @internal
-      */
-    var _isPuppeteerCore: Boolean = js.native
-    
-    /**
-      * @internal
-      */
-    var _preferredRevision: String = js.native
-    
-    def _updateRevision(): js.Promise[Unit] = js.native
     
     def defaultArgs(): js.Array[String] = js.native
     
     def defaultPreferences(extraPrefs: StringDictionary[Any]): StringDictionary[Any] = js.native
     
     def launch(): js.Promise[Browser] = js.native
-    
-    @JSName("product")
-    def product_MFirefoxLauncher: Product = js.native
     
     /**
       * Populates the user.js file with custom preferences as needed to allow

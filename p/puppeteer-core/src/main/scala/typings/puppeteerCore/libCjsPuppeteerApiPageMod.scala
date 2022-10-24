@@ -16,8 +16,8 @@ import typings.puppeteerCore.anon.OmitFrameAddStyleTagOptio
 import typings.puppeteerCore.anon.RunBeforeUnload
 import typings.puppeteerCore.anon.Timeout
 import typings.puppeteerCore.anon.WaitForOptionsrefererstri
+import typings.puppeteerCore.libCjsPuppeteerApiBrowserContextMod.BrowserContext
 import typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.Browser
-import typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.BrowserContext
 import typings.puppeteerCore.libCjsPuppeteerCommonAccessibilityMod.Accessibility
 import typings.puppeteerCore.libCjsPuppeteerCommonConsoleMessageMod.ConsoleMessage
 import typings.puppeteerCore.libCjsPuppeteerCommonCoverageMod.Coverage

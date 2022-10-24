@@ -71,7 +71,7 @@ object libProjectMod {
   @js.native
   open class ProjectConfig protected () extends BaseConfig[IProjectConfig] {
     def this(p: String) = this()
-    def this(p: String, hasTypeOptions: ProjectConfigOptions) = this()
+    def this(p: String, param1: ProjectConfigOptions) = this()
     
     def provideDefaults(c: PartialReadonlyIProjectCo): IProjectConfig = js.native
     
@@ -81,7 +81,7 @@ object libProjectMod {
   @JSImport("ionic/lib/project", "ProjectDetails")
   @js.native
   open class ProjectDetails protected () extends StObject {
-    def this(hasRootDirectoryArgsE: ProjectDetailsDeps) = this()
+    def this(param0: ProjectDetailsDeps) = this()
     
     /* protected */ val args: ParsedArgs = js.native
     
@@ -149,8 +149,8 @@ object libProjectMod {
     rootDirectory: String,
     args: ParsedArgs,
     deps: ProjectDeps,
-    hasLogErrors: CreateProjectFromDirectoryOptions
-  ): js.Promise[js.UndefOr[IProject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProjectFromDirectory")(rootDirectory.asInstanceOf[js.Any], args.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], hasLogErrors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IProject]]]
+    param3: CreateProjectFromDirectoryOptions
+  ): js.Promise[js.UndefOr[IProject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProjectFromDirectory")(rootDirectory.asInstanceOf[js.Any], args.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IProject]]]
   
   inline def findProjectDirectory(cwd: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findProjectDirectory")(cwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
   

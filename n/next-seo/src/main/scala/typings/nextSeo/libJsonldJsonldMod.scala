@@ -13,7 +13,7 @@ object libJsonldJsonldMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def JsonLd(hasTypeKeyOverrideScriptKeyScriptIdDataArrayRest: JsonLdPropsscriptKeystrin): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonLd")(hasTypeKeyOverrideScriptKeyScriptIdDataArrayRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def JsonLd(param0: JsonLdPropsscriptKeystrin): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait JsonLdProps
     extends StObject

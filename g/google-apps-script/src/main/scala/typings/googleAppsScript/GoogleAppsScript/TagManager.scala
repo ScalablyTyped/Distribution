@@ -565,6 +565,65 @@ object TagManager {
     }
   }
   
+  extension [Self <: TagManager](x: Self) {
+    
+    inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
+    
+    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
+    
+    inline def setNewAccount(value: () => Account): Self = StObject.set(x, "newAccount", js.Any.fromFunction0(value))
+    
+    inline def setNewAccountAccess(value: () => AccountAccess): Self = StObject.set(x, "newAccountAccess", js.Any.fromFunction0(value))
+    
+    inline def setNewBuiltInVariable(value: () => BuiltInVariable): Self = StObject.set(x, "newBuiltInVariable", js.Any.fromFunction0(value))
+    
+    inline def setNewCondition(value: () => Condition): Self = StObject.set(x, "newCondition", js.Any.fromFunction0(value))
+    
+    inline def setNewContainer(value: () => Container): Self = StObject.set(x, "newContainer", js.Any.fromFunction0(value))
+    
+    inline def setNewContainerAccess(value: () => ContainerAccess): Self = StObject.set(x, "newContainerAccess", js.Any.fromFunction0(value))
+    
+    inline def setNewContainerVersion(value: () => ContainerVersion): Self = StObject.set(x, "newContainerVersion", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateContainerVersionRequestVersionOptions(value: () => CreateContainerVersionRequestVersionOptions): Self = StObject.set(x, "newCreateContainerVersionRequestVersionOptions", js.Any.fromFunction0(value))
+    
+    inline def setNewCustomTemplate(value: () => CustomTemplate): Self = StObject.set(x, "newCustomTemplate", js.Any.fromFunction0(value))
+    
+    inline def setNewEntity(value: () => Entity): Self = StObject.set(x, "newEntity", js.Any.fromFunction0(value))
+    
+    inline def setNewEnvironment(value: () => Environment): Self = StObject.set(x, "newEnvironment", js.Any.fromFunction0(value))
+    
+    inline def setNewFolder(value: () => Folder): Self = StObject.set(x, "newFolder", js.Any.fromFunction0(value))
+    
+    inline def setNewParameter(value: () => Parameter): Self = StObject.set(x, "newParameter", js.Any.fromFunction0(value))
+    
+    inline def setNewSetupTag(value: () => SetupTag): Self = StObject.set(x, "newSetupTag", js.Any.fromFunction0(value))
+    
+    inline def setNewTag(value: () => Tag): Self = StObject.set(x, "newTag", js.Any.fromFunction0(value))
+    
+    inline def setNewTeardownTag(value: () => TeardownTag): Self = StObject.set(x, "newTeardownTag", js.Any.fromFunction0(value))
+    
+    inline def setNewTimestamp(value: () => Timestamp): Self = StObject.set(x, "newTimestamp", js.Any.fromFunction0(value))
+    
+    inline def setNewTrigger(value: () => Trigger): Self = StObject.set(x, "newTrigger", js.Any.fromFunction0(value))
+    
+    inline def setNewUserPermission(value: () => UserPermission): Self = StObject.set(x, "newUserPermission", js.Any.fromFunction0(value))
+    
+    inline def setNewVariable(value: () => Variable): Self = StObject.set(x, "newVariable", js.Any.fromFunction0(value))
+    
+    inline def setNewVariableFormatValue(value: () => VariableFormatValue): Self = StObject.set(x, "newVariableFormatValue", js.Any.fromFunction0(value))
+    
+    inline def setNewWorkspace(value: () => Workspace): Self = StObject.set(x, "newWorkspace", js.Any.fromFunction0(value))
+    
+    inline def setNewZone(value: () => Zone): Self = StObject.set(x, "newZone", js.Any.fromFunction0(value))
+    
+    inline def setNewZoneBoundary(value: () => ZoneBoundary): Self = StObject.set(x, "newZoneBoundary", js.Any.fromFunction0(value))
+    
+    inline def setNewZoneChildContainer(value: () => ZoneChildContainer): Self = StObject.set(x, "newZoneChildContainer", js.Any.fromFunction0(value))
+    
+    inline def setNewZoneTypeRestriction(value: () => ZoneTypeRestriction): Self = StObject.set(x, "newZoneTypeRestriction", js.Any.fromFunction0(value))
+  }
+  
   object Schema {
     
     trait Account extends StObject {
@@ -2982,64 +3041,5 @@ object TagManager {
         inline def setWhitelistedTypeIdVarargs(value: String*): Self = StObject.set(x, "whitelistedTypeId", js.Array(value*))
       }
     }
-  }
-  
-  extension [Self <: TagManager](x: Self) {
-    
-    inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
-    
-    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
-    
-    inline def setNewAccount(value: () => Account): Self = StObject.set(x, "newAccount", js.Any.fromFunction0(value))
-    
-    inline def setNewAccountAccess(value: () => AccountAccess): Self = StObject.set(x, "newAccountAccess", js.Any.fromFunction0(value))
-    
-    inline def setNewBuiltInVariable(value: () => BuiltInVariable): Self = StObject.set(x, "newBuiltInVariable", js.Any.fromFunction0(value))
-    
-    inline def setNewCondition(value: () => Condition): Self = StObject.set(x, "newCondition", js.Any.fromFunction0(value))
-    
-    inline def setNewContainer(value: () => Container): Self = StObject.set(x, "newContainer", js.Any.fromFunction0(value))
-    
-    inline def setNewContainerAccess(value: () => ContainerAccess): Self = StObject.set(x, "newContainerAccess", js.Any.fromFunction0(value))
-    
-    inline def setNewContainerVersion(value: () => ContainerVersion): Self = StObject.set(x, "newContainerVersion", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateContainerVersionRequestVersionOptions(value: () => CreateContainerVersionRequestVersionOptions): Self = StObject.set(x, "newCreateContainerVersionRequestVersionOptions", js.Any.fromFunction0(value))
-    
-    inline def setNewCustomTemplate(value: () => CustomTemplate): Self = StObject.set(x, "newCustomTemplate", js.Any.fromFunction0(value))
-    
-    inline def setNewEntity(value: () => Entity): Self = StObject.set(x, "newEntity", js.Any.fromFunction0(value))
-    
-    inline def setNewEnvironment(value: () => Environment): Self = StObject.set(x, "newEnvironment", js.Any.fromFunction0(value))
-    
-    inline def setNewFolder(value: () => Folder): Self = StObject.set(x, "newFolder", js.Any.fromFunction0(value))
-    
-    inline def setNewParameter(value: () => Parameter): Self = StObject.set(x, "newParameter", js.Any.fromFunction0(value))
-    
-    inline def setNewSetupTag(value: () => SetupTag): Self = StObject.set(x, "newSetupTag", js.Any.fromFunction0(value))
-    
-    inline def setNewTag(value: () => Tag): Self = StObject.set(x, "newTag", js.Any.fromFunction0(value))
-    
-    inline def setNewTeardownTag(value: () => TeardownTag): Self = StObject.set(x, "newTeardownTag", js.Any.fromFunction0(value))
-    
-    inline def setNewTimestamp(value: () => Timestamp): Self = StObject.set(x, "newTimestamp", js.Any.fromFunction0(value))
-    
-    inline def setNewTrigger(value: () => Trigger): Self = StObject.set(x, "newTrigger", js.Any.fromFunction0(value))
-    
-    inline def setNewUserPermission(value: () => UserPermission): Self = StObject.set(x, "newUserPermission", js.Any.fromFunction0(value))
-    
-    inline def setNewVariable(value: () => Variable): Self = StObject.set(x, "newVariable", js.Any.fromFunction0(value))
-    
-    inline def setNewVariableFormatValue(value: () => VariableFormatValue): Self = StObject.set(x, "newVariableFormatValue", js.Any.fromFunction0(value))
-    
-    inline def setNewWorkspace(value: () => Workspace): Self = StObject.set(x, "newWorkspace", js.Any.fromFunction0(value))
-    
-    inline def setNewZone(value: () => Zone): Self = StObject.set(x, "newZone", js.Any.fromFunction0(value))
-    
-    inline def setNewZoneBoundary(value: () => ZoneBoundary): Self = StObject.set(x, "newZoneBoundary", js.Any.fromFunction0(value))
-    
-    inline def setNewZoneChildContainer(value: () => ZoneChildContainer): Self = StObject.set(x, "newZoneChildContainer", js.Any.fromFunction0(value))
-    
-    inline def setNewZoneTypeRestriction(value: () => ZoneTypeRestriction): Self = StObject.set(x, "newZoneTypeRestriction", js.Any.fromFunction0(value))
   }
 }

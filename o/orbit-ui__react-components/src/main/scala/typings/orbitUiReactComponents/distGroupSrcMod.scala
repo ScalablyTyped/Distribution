@@ -18,5 +18,5 @@ object distGroupSrcMod {
   @js.native
   val Group: OrbitComponent[HTMLElement, InnerGroupProps] = js.native
   
-  inline def InnerGroup(hasOrientationAlignVerticalAlignWrapChildrenForwardedRefRest: InnerGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerGroup")(hasOrientationAlignVerticalAlignWrapChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerGroup(param0: InnerGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

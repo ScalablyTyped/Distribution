@@ -360,7 +360,7 @@ object anon {
   
   trait TypeofINTERNAL extends StObject {
     
-    def initStandalone[T](hasAppUrlVersionCustomAuthImplNamespaceNodeAdmin: App[T]): Instance[T]
+    def initStandalone[T](param0: App[T]): Instance[T]
   }
   object TypeofINTERNAL {
     

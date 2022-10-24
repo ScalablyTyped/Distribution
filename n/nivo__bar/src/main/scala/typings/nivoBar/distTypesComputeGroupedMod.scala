@@ -29,9 +29,9 @@ object distTypesComputeGroupedMod {
   val ^ : js.Any = js.native
   
   inline def generateGroupedBars[RawDatum /* <: BarDatum */](
-    hasLayoutMinValueMaxValueReverseWidthHeightPaddingInnerPaddingValueScaleIndexScaleConfigHiddenIdsProps: (Pick[
+    param0: (Pick[
       Required[BarSvgProps[RawDatum]], 
       keys | maxValue | minValue | innerPadding | padding | valueScale | indexScale | layout | reverse | height | width | data
     ]) & FormatValue[RawDatum]
-  ): Bars[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGroupedBars")(hasLayoutMinValueMaxValueReverseWidthHeightPaddingInnerPaddingValueScaleIndexScaleConfigHiddenIdsProps.asInstanceOf[js.Any]).asInstanceOf[Bars[RawDatum]]
+  ): Bars[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGroupedBars")(param0.asInstanceOf[js.Any]).asInstanceOf[Bars[RawDatum]]
 }

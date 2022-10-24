@@ -5,9 +5,9 @@ import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonRea
 import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.reactNativePaper.anon.CallHasChildrenThemeStyleRest
 import typings.reactNativePaper.anon.PickchildrenReactNodestylAccessibilityActions
 import typings.reactNativePaper.anon.StyleTheme
+import typings.reactNativePaper.anon.`14`
 import typings.reactNativePaper.anon.childrenReactNodestyleSty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,10 +17,7 @@ object libTypescriptComponentsDialogDialogTitleMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/Dialog/DialogTitle", JSImport.Default)
   @js.native
-  val default: ComponentType[PickchildrenReactNodestylAccessibilityActions] & (NonReactStatics[
-    ComponentType[childrenReactNodestyleSty] & CallHasChildrenThemeStyleRest, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickchildrenReactNodestylAccessibilityActions] & (NonReactStatics[ComponentType[childrenReactNodestyleSty] & `14`, js.Object]) = js.native
   
   /**
     * A component to show a title in a Dialog.
@@ -58,7 +55,7 @@ object libTypescriptComponentsDialogDialogTitleMod extends Shortcut {
     */
   object DialogTitle {
     
-    inline def apply(hasChildrenThemeStyleRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenThemeStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/Dialog/DialogTitle", "DialogTitle")
     @js.native
@@ -77,14 +74,8 @@ object libTypescriptComponentsDialogDialogTitleMod extends Shortcut {
     ]
   ]) & StyleTheme
   
-  type _To = ComponentType[PickchildrenReactNodestylAccessibilityActions] & (NonReactStatics[
-    ComponentType[childrenReactNodestyleSty] & CallHasChildrenThemeStyleRest, 
-    js.Object
-  ])
+  type _To = ComponentType[PickchildrenReactNodestylAccessibilityActions] & (NonReactStatics[ComponentType[childrenReactNodestyleSty] & `14`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsDialogDialogTitleMod.foo` */
-  override def _to: ComponentType[PickchildrenReactNodestylAccessibilityActions] & (NonReactStatics[
-    ComponentType[childrenReactNodestyleSty] & CallHasChildrenThemeStyleRest, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickchildrenReactNodestylAccessibilityActions] & (NonReactStatics[ComponentType[childrenReactNodestyleSty] & `14`, js.Object]) = default
 }

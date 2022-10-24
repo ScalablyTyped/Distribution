@@ -26,7 +26,7 @@ object buildGlviewMod {
       */
     def this(props: GLViewProps, context: Any) = this()
     
-    def _onSurfaceCreate(hasHasExglCtxId: SurfaceCreateEvent): Unit = js.native
+    def _onSurfaceCreate(param0: SurfaceCreateEvent): Unit = js.native
     
     def _setNativeRef(nativeRef: ComponentOrHandle): Unit = js.native
     

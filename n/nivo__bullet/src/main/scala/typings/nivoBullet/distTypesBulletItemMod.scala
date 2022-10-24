@@ -12,7 +12,5 @@ object distTypesBulletItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BulletItem(
-    hasIdScaleLayoutReverseAxisPositionXYWidthHeightTitleTitlePositionTitleAlignTitleOffsetXTitleOffsetYTitleRotationTooltipRangeBorderColorRangeBorderWidthRangeComponentRangeColorsRangesMeasureBorderColorMeasureBorderWidthMeasureComponentMeasureHeightMeasureColorsMeasuresMarkerComponentMarkerColorsMarkerHeightMarkersOnRangeClickOnMeasureClickOnMarkerClick: BulletItemProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletItem")(hasIdScaleLayoutReverseAxisPositionXYWidthHeightTitleTitlePositionTitleAlignTitleOffsetXTitleOffsetYTitleRotationTooltipRangeBorderColorRangeBorderWidthRangeComponentRangeColorsRangesMeasureBorderColorMeasureBorderWidthMeasureComponentMeasureHeightMeasureColorsMeasuresMarkerComponentMarkerColorsMarkerHeightMarkersOnRangeClickOnMeasureClickOnMarkerClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BulletItem(param0: BulletItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

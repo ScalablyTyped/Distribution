@@ -1033,20 +1033,13 @@ object distOpsOpsForConverterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def conv2d[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Activation[T]
-    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def conv2d[T /* <: Tensor3D | Tensor4D */](param0: Activation[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(param0.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Bias[T]
-    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](param0: Bias[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(param0.asInstanceOf[js.Any]).asInstanceOf[T]
     
     @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fused.matMul")
     @js.native
-    val matMul: js.Function1[
-        /* hasABTransposeATransposeBBiasActivationPreluActivationWeightsLeakyreluAlpha */ A, 
-        Tensor[Rank]
-      ] = js.native
+    val matMul: js.Function1[/* param0 */ A, Tensor[Rank]] = js.native
   }
   
   inline def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -2910,11 +2903,11 @@ object distOpsOpsForConverterMod {
   inline def meshgrid[T /* <: Tensor[Rank] */](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")().asInstanceOf[js.Array[T]]
   inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike, y: T | TensorLike): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike, y: T | TensorLike, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike, y: Unit, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike, y: T | TensorLike, param2: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike, y: Unit, param2: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def meshgrid[T /* <: Tensor[Rank] */](x: Unit, y: T | TensorLike): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def meshgrid[T /* <: Tensor[Rank] */](x: Unit, y: T | TensorLike, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def meshgrid[T /* <: Tensor[Rank] */](x: Unit, y: Unit, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: Unit, y: T | TensorLike, param2: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: Unit, y: Unit, param2: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def min[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]

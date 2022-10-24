@@ -22,8 +22,8 @@ object libDomFlipMod {
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFlipPose")(flip.asInstanceOf[js.Any], key.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def setValue(
-    hasValuesProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_lib.PoserState<Value, Action, ColdSubscription, DomPopmotionPoser> */ Any,
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_lib.PoserState<Value, Action, ColdSubscription, DomPopmotionPoser> */ Any,
     key: String,
     to: Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(hasValuesProps.asInstanceOf[js.Any], key.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(param0.asInstanceOf[js.Any], key.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

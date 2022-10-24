@@ -1474,141 +1474,6 @@ object EChartOption {
         __obj.asInstanceOf[CartesianAxis]
       }
       
-      extension [Self <: CartesianAxis](x: Self) {
-        
-        inline def setAxisLabel(value: Label): Self = StObject.set(x, "axisLabel", value.asInstanceOf[js.Any])
-        
-        inline def setAxisLabelUndefined: Self = StObject.set(x, "axisLabel", js.undefined)
-        
-        inline def setAxisLine(value: Line): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
-        
-        inline def setAxisLineUndefined: Self = StObject.set(x, "axisLine", js.undefined)
-        
-        inline def setAxisPointer(value: Pointer): Self = StObject.set(x, "axisPointer", value.asInstanceOf[js.Any])
-        
-        inline def setAxisPointerUndefined: Self = StObject.set(x, "axisPointer", js.undefined)
-        
-        inline def setAxisTick(value: Tick): Self = StObject.set(x, "axisTick", value.asInstanceOf[js.Any])
-        
-        inline def setAxisTickUndefined: Self = StObject.set(x, "axisTick", js.undefined)
-        
-        inline def setBoundaryGap(value: Boolean | (js.Array[String | Double])): Self = StObject.set(x, "boundaryGap", value.asInstanceOf[js.Any])
-        
-        inline def setBoundaryGapUndefined: Self = StObject.set(x, "boundaryGap", js.undefined)
-        
-        inline def setBoundaryGapVarargs(value: (String | Double)*): Self = StObject.set(x, "boundaryGap", js.Array(value*))
-        
-        inline def setData(value: js.Array[String | Double | DataObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-        
-        inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-        
-        inline def setDataVarargs(value: (String | Double | DataObject)*): Self = StObject.set(x, "data", js.Array(value*))
-        
-        inline def setGridIndex(value: Double): Self = StObject.set(x, "gridIndex", value.asInstanceOf[js.Any])
-        
-        inline def setGridIndexUndefined: Self = StObject.set(x, "gridIndex", js.undefined)
-        
-        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-        
-        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-        
-        inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
-        
-        inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
-        
-        inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
-        
-        inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
-        
-        inline def setLogBase(value: Double): Self = StObject.set(x, "logBase", value.asInstanceOf[js.Any])
-        
-        inline def setLogBaseUndefined: Self = StObject.set(x, "logBase", js.undefined)
-        
-        inline def setMax(value: Double | String | (js.Function1[/* value */ Max, Double])): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-        
-        inline def setMaxFunction1(value: /* value */ Max => Double): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
-        
-        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-        
-        inline def setMin(value: Double | String | (js.Function1[/* value */ Max, Double])): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-        
-        inline def setMinFunction1(value: /* value */ Max => Double): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
-        
-        inline def setMinInterval(value: Any): Self = StObject.set(x, "minInterval", value.asInstanceOf[js.Any])
-        
-        inline def setMinIntervalUndefined: Self = StObject.set(x, "minInterval", js.undefined)
-        
-        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-        
-        inline def setMinorSplitLine(value: MinorSplitLine): Self = StObject.set(x, "minorSplitLine", value.asInstanceOf[js.Any])
-        
-        inline def setMinorSplitLineUndefined: Self = StObject.set(x, "minorSplitLine", js.undefined)
-        
-        inline def setMinorTick(value: MinorTick): Self = StObject.set(x, "minorTick", value.asInstanceOf[js.Any])
-        
-        inline def setMinorTickUndefined: Self = StObject.set(x, "minorTick", js.undefined)
-        
-        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-        
-        inline def setNameGap(value: Double): Self = StObject.set(x, "nameGap", value.asInstanceOf[js.Any])
-        
-        inline def setNameGapUndefined: Self = StObject.set(x, "nameGap", js.undefined)
-        
-        inline def setNameLocation(value: start | middle | center | end): Self = StObject.set(x, "nameLocation", value.asInstanceOf[js.Any])
-        
-        inline def setNameLocationUndefined: Self = StObject.set(x, "nameLocation", js.undefined)
-        
-        inline def setNameRotate(value: Double): Self = StObject.set(x, "nameRotate", value.asInstanceOf[js.Any])
-        
-        inline def setNameRotateUndefined: Self = StObject.set(x, "nameRotate", js.undefined)
-        
-        inline def setNameTextStyle(value: TextStyleWithRich): Self = StObject.set(x, "nameTextStyle", value.asInstanceOf[js.Any])
-        
-        inline def setNameTextStyleUndefined: Self = StObject.set(x, "nameTextStyle", js.undefined)
-        
-        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-        
-        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
-        
-        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
-        
-        inline def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
-        
-        inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
-        
-        inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
-        
-        inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
-        
-        inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
-        
-        inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
-        
-        inline def setSplitArea(value: SplitArea): Self = StObject.set(x, "splitArea", value.asInstanceOf[js.Any])
-        
-        inline def setSplitAreaUndefined: Self = StObject.set(x, "splitArea", js.undefined)
-        
-        inline def setSplitLine(value: SplitLine): Self = StObject.set(x, "splitLine", value.asInstanceOf[js.Any])
-        
-        inline def setSplitLineUndefined: Self = StObject.set(x, "splitLine", js.undefined)
-        
-        inline def setSplitNumber(value: Double): Self = StObject.set(x, "splitNumber", value.asInstanceOf[js.Any])
-        
-        inline def setSplitNumberUndefined: Self = StObject.set(x, "splitNumber", js.undefined)
-        
-        inline def setTriggerEvent(value: Boolean): Self = StObject.set(x, "triggerEvent", value.asInstanceOf[js.Any])
-        
-        inline def setTriggerEventUndefined: Self = StObject.set(x, "triggerEvent", js.undefined)
-        
-        inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
-        
-        inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
-        
-        inline def setZlevel(value: Double): Self = StObject.set(x, "zlevel", value.asInstanceOf[js.Any])
-        
-        inline def setZlevelUndefined: Self = StObject.set(x, "zlevel", js.undefined)
-      }
-      
       /**
         * @todo describe
         */
@@ -1932,6 +1797,141 @@ object EChartOption {
           
           inline def setSplitNumberUndefined: Self = StObject.set(x, "splitNumber", js.undefined)
         }
+      }
+      
+      extension [Self <: CartesianAxis](x: Self) {
+        
+        inline def setAxisLabel(value: Label): Self = StObject.set(x, "axisLabel", value.asInstanceOf[js.Any])
+        
+        inline def setAxisLabelUndefined: Self = StObject.set(x, "axisLabel", js.undefined)
+        
+        inline def setAxisLine(value: Line): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
+        
+        inline def setAxisLineUndefined: Self = StObject.set(x, "axisLine", js.undefined)
+        
+        inline def setAxisPointer(value: Pointer): Self = StObject.set(x, "axisPointer", value.asInstanceOf[js.Any])
+        
+        inline def setAxisPointerUndefined: Self = StObject.set(x, "axisPointer", js.undefined)
+        
+        inline def setAxisTick(value: Tick): Self = StObject.set(x, "axisTick", value.asInstanceOf[js.Any])
+        
+        inline def setAxisTickUndefined: Self = StObject.set(x, "axisTick", js.undefined)
+        
+        inline def setBoundaryGap(value: Boolean | (js.Array[String | Double])): Self = StObject.set(x, "boundaryGap", value.asInstanceOf[js.Any])
+        
+        inline def setBoundaryGapUndefined: Self = StObject.set(x, "boundaryGap", js.undefined)
+        
+        inline def setBoundaryGapVarargs(value: (String | Double)*): Self = StObject.set(x, "boundaryGap", js.Array(value*))
+        
+        inline def setData(value: js.Array[String | Double | DataObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        
+        inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+        
+        inline def setDataVarargs(value: (String | Double | DataObject)*): Self = StObject.set(x, "data", js.Array(value*))
+        
+        inline def setGridIndex(value: Double): Self = StObject.set(x, "gridIndex", value.asInstanceOf[js.Any])
+        
+        inline def setGridIndexUndefined: Self = StObject.set(x, "gridIndex", js.undefined)
+        
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        
+        inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+        
+        inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+        
+        inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+        
+        inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+        
+        inline def setLogBase(value: Double): Self = StObject.set(x, "logBase", value.asInstanceOf[js.Any])
+        
+        inline def setLogBaseUndefined: Self = StObject.set(x, "logBase", js.undefined)
+        
+        inline def setMax(value: Double | String | (js.Function1[/* value */ Max, Double])): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        
+        inline def setMaxFunction1(value: /* value */ Max => Double): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+        
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        
+        inline def setMin(value: Double | String | (js.Function1[/* value */ Max, Double])): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        
+        inline def setMinFunction1(value: /* value */ Max => Double): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+        
+        inline def setMinInterval(value: Any): Self = StObject.set(x, "minInterval", value.asInstanceOf[js.Any])
+        
+        inline def setMinIntervalUndefined: Self = StObject.set(x, "minInterval", js.undefined)
+        
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        
+        inline def setMinorSplitLine(value: MinorSplitLine): Self = StObject.set(x, "minorSplitLine", value.asInstanceOf[js.Any])
+        
+        inline def setMinorSplitLineUndefined: Self = StObject.set(x, "minorSplitLine", js.undefined)
+        
+        inline def setMinorTick(value: MinorTick): Self = StObject.set(x, "minorTick", value.asInstanceOf[js.Any])
+        
+        inline def setMinorTickUndefined: Self = StObject.set(x, "minorTick", js.undefined)
+        
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        
+        inline def setNameGap(value: Double): Self = StObject.set(x, "nameGap", value.asInstanceOf[js.Any])
+        
+        inline def setNameGapUndefined: Self = StObject.set(x, "nameGap", js.undefined)
+        
+        inline def setNameLocation(value: start | middle | center | end): Self = StObject.set(x, "nameLocation", value.asInstanceOf[js.Any])
+        
+        inline def setNameLocationUndefined: Self = StObject.set(x, "nameLocation", js.undefined)
+        
+        inline def setNameRotate(value: Double): Self = StObject.set(x, "nameRotate", value.asInstanceOf[js.Any])
+        
+        inline def setNameRotateUndefined: Self = StObject.set(x, "nameRotate", js.undefined)
+        
+        inline def setNameTextStyle(value: TextStyleWithRich): Self = StObject.set(x, "nameTextStyle", value.asInstanceOf[js.Any])
+        
+        inline def setNameTextStyleUndefined: Self = StObject.set(x, "nameTextStyle", js.undefined)
+        
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        
+        inline def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        
+        inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+        
+        inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        
+        inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+        
+        inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+        
+        inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+        
+        inline def setSplitArea(value: SplitArea): Self = StObject.set(x, "splitArea", value.asInstanceOf[js.Any])
+        
+        inline def setSplitAreaUndefined: Self = StObject.set(x, "splitArea", js.undefined)
+        
+        inline def setSplitLine(value: SplitLine): Self = StObject.set(x, "splitLine", value.asInstanceOf[js.Any])
+        
+        inline def setSplitLineUndefined: Self = StObject.set(x, "splitLine", js.undefined)
+        
+        inline def setSplitNumber(value: Double): Self = StObject.set(x, "splitNumber", value.asInstanceOf[js.Any])
+        
+        inline def setSplitNumberUndefined: Self = StObject.set(x, "splitNumber", js.undefined)
+        
+        inline def setTriggerEvent(value: Boolean): Self = StObject.set(x, "triggerEvent", value.asInstanceOf[js.Any])
+        
+        inline def setTriggerEventUndefined: Self = StObject.set(x, "triggerEvent", js.undefined)
+        
+        inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+        
+        inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+        
+        inline def setZlevel(value: Double): Self = StObject.set(x, "zlevel", value.asInstanceOf[js.Any])
+        
+        inline def setZlevelUndefined: Self = StObject.set(x, "zlevel", js.undefined)
       }
       
       /**
@@ -2562,85 +2562,6 @@ object EChartOption {
       __obj.asInstanceOf[Calendar]
     }
     
-    extension [Self <: Calendar](x: Self) {
-      
-      inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
-      
-      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
-      
-      inline def setCellSize(value: Double | auto | (js.Array[auto | Double])): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
-      
-      inline def setCellSizeUndefined: Self = StObject.set(x, "cellSize", js.undefined)
-      
-      inline def setCellSizeVarargs(value: (auto | Double)*): Self = StObject.set(x, "cellSize", js.Array(value*))
-      
-      inline def setDayLabel(value: DayLabel): Self = StObject.set(x, "dayLabel", value.asInstanceOf[js.Any])
-      
-      inline def setDayLabelUndefined: Self = StObject.set(x, "dayLabel", js.undefined)
-      
-      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      inline def setItemStyle(value: BorderTypeBorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
-      
-      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
-      
-      inline def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-      
-      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
-      
-      inline def setMonthLabel(value: MonthLabel): Self = StObject.set(x, "monthLabel", value.asInstanceOf[js.Any])
-      
-      inline def setMonthLabelUndefined: Self = StObject.set(x, "monthLabel", js.undefined)
-      
-      inline def setOrient(value: horizontal | vertical): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
-      
-      inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
-      
-      inline def setRange(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
-      
-      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
-      
-      inline def setRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "range", js.Array(value*))
-      
-      inline def setRight(value: Double | String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
-      
-      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
-      
-      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
-      
-      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
-      
-      inline def setSplitLine(value: `28`): Self = StObject.set(x, "splitLine", value.asInstanceOf[js.Any])
-      
-      inline def setSplitLineUndefined: Self = StObject.set(x, "splitLine", js.undefined)
-      
-      inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-      
-      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
-      
-      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-      
-      inline def setYearLabel(value: YearLabel): Self = StObject.set(x, "yearLabel", value.asInstanceOf[js.Any])
-      
-      inline def setYearLabelUndefined: Self = StObject.set(x, "yearLabel", js.undefined)
-      
-      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
-      
-      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
-      
-      inline def setZlevel(value: Double): Self = StObject.set(x, "zlevel", value.asInstanceOf[js.Any])
-      
-      inline def setZlevelUndefined: Self = StObject.set(x, "zlevel", js.undefined)
-    }
-    
     trait DayLabel
       extends StObject
          with typings.echarts.echarts.EChartOption.Calendar.Label {
@@ -2809,6 +2730,85 @@ object EChartOption {
         
         inline def setYyyyUndefined: Self = StObject.set(x, "yyyy", js.undefined)
       }
+    }
+    
+    extension [Self <: Calendar](x: Self) {
+      
+      inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      
+      inline def setCellSize(value: Double | auto | (js.Array[auto | Double])): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
+      
+      inline def setCellSizeUndefined: Self = StObject.set(x, "cellSize", js.undefined)
+      
+      inline def setCellSizeVarargs(value: (auto | Double)*): Self = StObject.set(x, "cellSize", js.Array(value*))
+      
+      inline def setDayLabel(value: DayLabel): Self = StObject.set(x, "dayLabel", value.asInstanceOf[js.Any])
+      
+      inline def setDayLabelUndefined: Self = StObject.set(x, "dayLabel", js.undefined)
+      
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setItemStyle(value: BorderTypeBorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      
+      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+      
+      inline def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      
+      inline def setMonthLabel(value: MonthLabel): Self = StObject.set(x, "monthLabel", value.asInstanceOf[js.Any])
+      
+      inline def setMonthLabelUndefined: Self = StObject.set(x, "monthLabel", js.undefined)
+      
+      inline def setOrient(value: horizontal | vertical): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+      
+      inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+      
+      inline def setRange(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      
+      inline def setRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "range", js.Array(value*))
+      
+      inline def setRight(value: Double | String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      
+      inline def setSplitLine(value: `28`): Self = StObject.set(x, "splitLine", value.asInstanceOf[js.Any])
+      
+      inline def setSplitLineUndefined: Self = StObject.set(x, "splitLine", js.undefined)
+      
+      inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setYearLabel(value: YearLabel): Self = StObject.set(x, "yearLabel", value.asInstanceOf[js.Any])
+      
+      inline def setYearLabelUndefined: Self = StObject.set(x, "yearLabel", js.undefined)
+      
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      
+      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+      
+      inline def setZlevel(value: Double): Self = StObject.set(x, "zlevel", value.asInstanceOf[js.Any])
+      
+      inline def setZlevelUndefined: Self = StObject.set(x, "zlevel", js.undefined)
     }
     
     trait YearLabel
@@ -3440,25 +3440,6 @@ object EChartOption {
       __obj.asInstanceOf[Dataset]
     }
     
-    extension [Self <: Dataset](x: Self) {
-      
-      inline def setDimensions(value: js.Array[DimensionObject | String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
-      
-      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
-      
-      inline def setDimensionsVarargs(value: (DimensionObject | String)*): Self = StObject.set(x, "dimensions", js.Array(value*))
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      inline def setSource(value: js.Array[Any] | js.Object): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-      
-      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
-      
-      inline def setSourceVarargs(value: Any*): Self = StObject.set(x, "source", js.Array(value*))
-    }
-    
     /**
       * @see https://echarts.apache.org/en/option.html#dataset.dimensions
       */
@@ -3492,197 +3473,25 @@ object EChartOption {
         inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
-  }
-  
-  extension [Self <: EChartOption[?], TSeries](x: Self & EChartOption[TSeries]) {
     
-    inline def setAngleAxis(value: js.Object): Self = StObject.set(x, "angleAxis", value.asInstanceOf[js.Any])
-    
-    inline def setAngleAxisUndefined: Self = StObject.set(x, "angleAxis", js.undefined)
-    
-    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
-    
-    inline def setAnimationDelay(value: Double | js.Function): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
-    
-    inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
-    
-    inline def setAnimationDelayUpdate(value: Double | js.Function): Self = StObject.set(x, "animationDelayUpdate", value.asInstanceOf[js.Any])
-    
-    inline def setAnimationDelayUpdateUndefined: Self = StObject.set(x, "animationDelayUpdate", js.undefined)
-    
-    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
-    
-    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
-    
-    inline def setAnimationDurationUpdate(value: Double | js.Function): Self = StObject.set(x, "animationDurationUpdate", value.asInstanceOf[js.Any])
-    
-    inline def setAnimationDurationUpdateUndefined: Self = StObject.set(x, "animationDurationUpdate", js.undefined)
-    
-    inline def setAnimationEasing(value: String): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
-    
-    inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
-    
-    inline def setAnimationEasingUpdate(value: String): Self = StObject.set(x, "animationEasingUpdate", value.asInstanceOf[js.Any])
-    
-    inline def setAnimationEasingUpdateUndefined: Self = StObject.set(x, "animationEasingUpdate", js.undefined)
-    
-    inline def setAnimationThreshold(value: Double): Self = StObject.set(x, "animationThreshold", value.asInstanceOf[js.Any])
-    
-    inline def setAnimationThresholdUndefined: Self = StObject.set(x, "animationThreshold", js.undefined)
-    
-    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
-    
-    inline def setAria(value: js.Object): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
-    
-    inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
-    
-    inline def setAxisPointer(value: AxisPointer): Self = StObject.set(x, "axisPointer", value.asInstanceOf[js.Any])
-    
-    inline def setAxisPointerUndefined: Self = StObject.set(x, "axisPointer", js.undefined)
-    
-    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
-    
-    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
-    
-    inline def setBlendMode(value: String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
-    
-    inline def setBlendModeUndefined: Self = StObject.set(x, "blendMode", js.undefined)
-    
-    inline def setBrush(value: js.Object): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
-    
-    inline def setBrushUndefined: Self = StObject.set(x, "brush", js.undefined)
-    
-    inline def setCalendar(value: Calendar | js.Array[Calendar]): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
-    
-    inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
-    
-    inline def setCalendarVarargs(value: Calendar*): Self = StObject.set(x, "calendar", js.Array(value*))
-    
-    inline def setColor(value: js.Array[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-    
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
-    inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
-    
-    inline def setDataZoom(value: js.Array[DataZoom]): Self = StObject.set(x, "dataZoom", value.asInstanceOf[js.Any])
-    
-    inline def setDataZoomUndefined: Self = StObject.set(x, "dataZoom", js.undefined)
-    
-    inline def setDataZoomVarargs(value: DataZoom*): Self = StObject.set(x, "dataZoom", js.Array(value*))
-    
-    inline def setDataset(value: Dataset | js.Array[Dataset]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
-    
-    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
-    
-    inline def setDatasetVarargs(value: Dataset*): Self = StObject.set(x, "dataset", js.Array(value*))
-    
-    inline def setGeo(value: js.Object): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
-    
-    inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
-    
-    inline def setGraphic(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
-    
-    inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
-    
-    inline def setGraphicVarargs(value: js.Object*): Self = StObject.set(x, "graphic", js.Array(value*))
-    
-    inline def setGrid(value: Grid | js.Array[Grid]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
-    
-    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
-    
-    inline def setGridVarargs(value: Grid*): Self = StObject.set(x, "grid", js.Array(value*))
-    
-    inline def setHoverLayerThreshold(value: Double): Self = StObject.set(x, "hoverLayerThreshold", value.asInstanceOf[js.Any])
-    
-    inline def setHoverLayerThresholdUndefined: Self = StObject.set(x, "hoverLayerThreshold", js.undefined)
-    
-    inline def setLegend(value: Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
-    
-    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
-    
-    inline def setParallel(value: js.Object): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
-    
-    inline def setParallelAxis(value: js.Object): Self = StObject.set(x, "parallelAxis", value.asInstanceOf[js.Any])
-    
-    inline def setParallelAxisUndefined: Self = StObject.set(x, "parallelAxis", js.undefined)
-    
-    inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
-    
-    inline def setPolar(value: js.Object): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
-    
-    inline def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
-    
-    inline def setProgressive(value: Double): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
-    
-    inline def setProgressiveThreshold(value: Double): Self = StObject.set(x, "progressiveThreshold", value.asInstanceOf[js.Any])
-    
-    inline def setProgressiveThresholdUndefined: Self = StObject.set(x, "progressiveThreshold", js.undefined)
-    
-    inline def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
-    
-    inline def setRadar(value: js.Object): Self = StObject.set(x, "radar", value.asInstanceOf[js.Any])
-    
-    inline def setRadarUndefined: Self = StObject.set(x, "radar", js.undefined)
-    
-    inline def setRadiusAxis(value: js.Object): Self = StObject.set(x, "radiusAxis", value.asInstanceOf[js.Any])
-    
-    inline def setRadiusAxisUndefined: Self = StObject.set(x, "radiusAxis", js.undefined)
-    
-    inline def setSeries(value: js.Array[TSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
-    
-    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
-    
-    inline def setSeriesVarargs(value: TSeries*): Self = StObject.set(x, "series", js.Array(value*))
-    
-    inline def setSingleAxis(value: SingleAxis | js.Array[SingleAxis]): Self = StObject.set(x, "singleAxis", value.asInstanceOf[js.Any])
-    
-    inline def setSingleAxisUndefined: Self = StObject.set(x, "singleAxis", js.undefined)
-    
-    inline def setSingleAxisVarargs(value: SingleAxis*): Self = StObject.set(x, "singleAxis", js.Array(value*))
-    
-    inline def setTextStyle(value: BaseTextStyle & BaseTextStyleWithRich): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
-    
-    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
-    
-    inline def setTimeline(value: js.Object): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
-    
-    inline def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
-    
-    inline def setTitle(value: EChartTitleOption | js.Array[EChartTitleOption]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    
-    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-    
-    inline def setTitleVarargs(value: EChartTitleOption*): Self = StObject.set(x, "title", js.Array(value*))
-    
-    inline def setToolbox(value: js.Object): Self = StObject.set(x, "toolbox", value.asInstanceOf[js.Any])
-    
-    inline def setToolboxUndefined: Self = StObject.set(x, "toolbox", js.undefined)
-    
-    inline def setTooltip(value: Tooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
-    
-    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
-    
-    inline def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
-    
-    inline def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
-    
-    inline def setVisualMap(value: js.Array[typings.echarts.echarts.EChartOption.VisualMap]): Self = StObject.set(x, "visualMap", value.asInstanceOf[js.Any])
-    
-    inline def setVisualMapUndefined: Self = StObject.set(x, "visualMap", js.undefined)
-    
-    inline def setVisualMapVarargs(value: typings.echarts.echarts.EChartOption.VisualMap*): Self = StObject.set(x, "visualMap", js.Array(value*))
-    
-    inline def setXAxis(value: XAxis | js.Array[XAxis]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
-    
-    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
-    
-    inline def setXAxisVarargs(value: XAxis*): Self = StObject.set(x, "xAxis", js.Array(value*))
-    
-    inline def setYAxis(value: YAxis | js.Array[YAxis]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
-    
-    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
-    
-    inline def setYAxisVarargs(value: YAxis*): Self = StObject.set(x, "yAxis", js.Array(value*))
+    extension [Self <: Dataset](x: Self) {
+      
+      inline def setDimensions(value: js.Array[DimensionObject | String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      
+      inline def setDimensionsVarargs(value: (DimensionObject | String)*): Self = StObject.set(x, "dimensions", js.Array(value*))
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setSource(value: js.Array[Any] | js.Object): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      
+      inline def setSourceVarargs(value: Any*): Self = StObject.set(x, "source", js.Array(value*))
+    }
   }
   
   /**
@@ -5179,6 +4988,197 @@ object EChartOption {
       
       inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     }
+  }
+  
+  extension [Self <: EChartOption[?], TSeries](x: Self & EChartOption[TSeries]) {
+    
+    inline def setAngleAxis(value: js.Object): Self = StObject.set(x, "angleAxis", value.asInstanceOf[js.Any])
+    
+    inline def setAngleAxisUndefined: Self = StObject.set(x, "angleAxis", js.undefined)
+    
+    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDelay(value: Double | js.Function): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
+    
+    inline def setAnimationDelayUpdate(value: Double | js.Function): Self = StObject.set(x, "animationDelayUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDelayUpdateUndefined: Self = StObject.set(x, "animationDelayUpdate", js.undefined)
+    
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    
+    inline def setAnimationDurationUpdate(value: Double | js.Function): Self = StObject.set(x, "animationDurationUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDurationUpdateUndefined: Self = StObject.set(x, "animationDurationUpdate", js.undefined)
+    
+    inline def setAnimationEasing(value: String): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
+    
+    inline def setAnimationEasingUpdate(value: String): Self = StObject.set(x, "animationEasingUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationEasingUpdateUndefined: Self = StObject.set(x, "animationEasingUpdate", js.undefined)
+    
+    inline def setAnimationThreshold(value: Double): Self = StObject.set(x, "animationThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationThresholdUndefined: Self = StObject.set(x, "animationThreshold", js.undefined)
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setAria(value: js.Object): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
+    
+    inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+    
+    inline def setAxisPointer(value: AxisPointer): Self = StObject.set(x, "axisPointer", value.asInstanceOf[js.Any])
+    
+    inline def setAxisPointerUndefined: Self = StObject.set(x, "axisPointer", js.undefined)
+    
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBlendMode(value: String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
+    
+    inline def setBlendModeUndefined: Self = StObject.set(x, "blendMode", js.undefined)
+    
+    inline def setBrush(value: js.Object): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
+    
+    inline def setBrushUndefined: Self = StObject.set(x, "brush", js.undefined)
+    
+    inline def setCalendar(value: Calendar | js.Array[Calendar]): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    
+    inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
+    
+    inline def setCalendarVarargs(value: Calendar*): Self = StObject.set(x, "calendar", js.Array(value*))
+    
+    inline def setColor(value: js.Array[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
+    
+    inline def setDataZoom(value: js.Array[DataZoom]): Self = StObject.set(x, "dataZoom", value.asInstanceOf[js.Any])
+    
+    inline def setDataZoomUndefined: Self = StObject.set(x, "dataZoom", js.undefined)
+    
+    inline def setDataZoomVarargs(value: DataZoom*): Self = StObject.set(x, "dataZoom", js.Array(value*))
+    
+    inline def setDataset(value: Dataset | js.Array[Dataset]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    
+    inline def setDatasetVarargs(value: Dataset*): Self = StObject.set(x, "dataset", js.Array(value*))
+    
+    inline def setGeo(value: js.Object): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+    
+    inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
+    
+    inline def setGraphic(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    
+    inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
+    
+    inline def setGraphicVarargs(value: js.Object*): Self = StObject.set(x, "graphic", js.Array(value*))
+    
+    inline def setGrid(value: Grid | js.Array[Grid]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setGridVarargs(value: Grid*): Self = StObject.set(x, "grid", js.Array(value*))
+    
+    inline def setHoverLayerThreshold(value: Double): Self = StObject.set(x, "hoverLayerThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setHoverLayerThresholdUndefined: Self = StObject.set(x, "hoverLayerThreshold", js.undefined)
+    
+    inline def setLegend(value: Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    
+    inline def setParallel(value: js.Object): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+    
+    inline def setParallelAxis(value: js.Object): Self = StObject.set(x, "parallelAxis", value.asInstanceOf[js.Any])
+    
+    inline def setParallelAxisUndefined: Self = StObject.set(x, "parallelAxis", js.undefined)
+    
+    inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+    
+    inline def setPolar(value: js.Object): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
+    
+    inline def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
+    
+    inline def setProgressive(value: Double): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
+    
+    inline def setProgressiveThreshold(value: Double): Self = StObject.set(x, "progressiveThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setProgressiveThresholdUndefined: Self = StObject.set(x, "progressiveThreshold", js.undefined)
+    
+    inline def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
+    
+    inline def setRadar(value: js.Object): Self = StObject.set(x, "radar", value.asInstanceOf[js.Any])
+    
+    inline def setRadarUndefined: Self = StObject.set(x, "radar", js.undefined)
+    
+    inline def setRadiusAxis(value: js.Object): Self = StObject.set(x, "radiusAxis", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusAxisUndefined: Self = StObject.set(x, "radiusAxis", js.undefined)
+    
+    inline def setSeries(value: js.Array[TSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    
+    inline def setSeriesVarargs(value: TSeries*): Self = StObject.set(x, "series", js.Array(value*))
+    
+    inline def setSingleAxis(value: SingleAxis | js.Array[SingleAxis]): Self = StObject.set(x, "singleAxis", value.asInstanceOf[js.Any])
+    
+    inline def setSingleAxisUndefined: Self = StObject.set(x, "singleAxis", js.undefined)
+    
+    inline def setSingleAxisVarargs(value: SingleAxis*): Self = StObject.set(x, "singleAxis", js.Array(value*))
+    
+    inline def setTextStyle(value: BaseTextStyle & BaseTextStyleWithRich): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    
+    inline def setTimeline(value: js.Object): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    
+    inline def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
+    
+    inline def setTitle(value: EChartTitleOption | js.Array[EChartTitleOption]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTitleVarargs(value: EChartTitleOption*): Self = StObject.set(x, "title", js.Array(value*))
+    
+    inline def setToolbox(value: js.Object): Self = StObject.set(x, "toolbox", value.asInstanceOf[js.Any])
+    
+    inline def setToolboxUndefined: Self = StObject.set(x, "toolbox", js.undefined)
+    
+    inline def setTooltip(value: Tooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
+    
+    inline def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
+    
+    inline def setVisualMap(value: js.Array[typings.echarts.echarts.EChartOption.VisualMap]): Self = StObject.set(x, "visualMap", value.asInstanceOf[js.Any])
+    
+    inline def setVisualMapUndefined: Self = StObject.set(x, "visualMap", js.undefined)
+    
+    inline def setVisualMapVarargs(value: typings.echarts.echarts.EChartOption.VisualMap*): Self = StObject.set(x, "visualMap", js.Array(value*))
+    
+    inline def setXAxis(value: XAxis | js.Array[XAxis]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    
+    inline def setXAxisVarargs(value: XAxis*): Self = StObject.set(x, "xAxis", js.Array(value*))
+    
+    inline def setYAxis(value: YAxis | js.Array[YAxis]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+    
+    inline def setYAxisVarargs(value: YAxis*): Self = StObject.set(x, "yAxis", js.Array(value*))
   }
   
   /**
@@ -8733,6 +8733,145 @@ object EChartOption {
         
         inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
       }
+    }
+    
+    extension [Self <: SeriesCustom](x: Self) {
+      
+      inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelay(value: js.Function | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
+      
+      inline def setAnimationDelayUpdate(value: js.Function | Double): Self = StObject.set(x, "animationDelayUpdate", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDelayUpdateUndefined: Self = StObject.set(x, "animationDelayUpdate", js.undefined)
+      
+      inline def setAnimationDuration(value: js.Function | Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      
+      inline def setAnimationDurationUpdate(value: js.Function | Double): Self = StObject.set(x, "animationDurationUpdate", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDurationUpdateUndefined: Self = StObject.set(x, "animationDurationUpdate", js.undefined)
+      
+      inline def setAnimationEasing(value: String): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
+      
+      inline def setAnimationEasingUpdate(value: String): Self = StObject.set(x, "animationEasingUpdate", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationEasingUpdateUndefined: Self = StObject.set(x, "animationEasingUpdate", js.undefined)
+      
+      inline def setAnimationThreshold(value: Double): Self = StObject.set(x, "animationThreshold", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationThresholdUndefined: Self = StObject.set(x, "animationThreshold", js.undefined)
+      
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      
+      inline def setCalendarIndex(value: Double): Self = StObject.set(x, "calendarIndex", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarIndexUndefined: Self = StObject.set(x, "calendarIndex", js.undefined)
+      
+      inline def setCoordinateSystem(value: String): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
+      
+      inline def setCoordinateSystemUndefined: Self = StObject.set(x, "coordinateSystem", js.undefined)
+      
+      inline def setData(
+        value: js.Array[
+              (js.Array[
+                Unit | String | Double | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject
+              ]) | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject | Double | String | Unit
+            ]
+      ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setDataVarargs(
+        value: ((js.Array[
+              Unit | String | Double | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject
+            ]) | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject | Double | String | Unit)*
+      ): Self = StObject.set(x, "data", js.Array(value*))
+      
+      inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
+      
+      inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
+      
+      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      
+      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
+      
+      inline def setEmphasis(value: `2`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      
+      inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
+      
+      inline def setEncode(value: js.Object): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      
+      inline def setGeoIndex(value: Double): Self = StObject.set(x, "geoIndex", value.asInstanceOf[js.Any])
+      
+      inline def setGeoIndexUndefined: Self = StObject.set(x, "geoIndex", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      
+      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+      
+      inline def setLegendHoverLink(value: Boolean): Self = StObject.set(x, "legendHoverLink", value.asInstanceOf[js.Any])
+      
+      inline def setLegendHoverLinkUndefined: Self = StObject.set(x, "legendHoverLink", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setPolarIndex(value: Double): Self = StObject.set(x, "polarIndex", value.asInstanceOf[js.Any])
+      
+      inline def setPolarIndexUndefined: Self = StObject.set(x, "polarIndex", js.undefined)
+      
+      inline def setRenderItem(
+        value: (/* params */ RenderItemParams, /* api */ RenderItemApi) => RenderItemReturnGroup | RenderItemReturnPath | RenderItemReturnImage | RenderItemReturnText | RenderItemReturnRect | RenderItemReturnCircle | RenderItemReturnRing | RenderItemReturnSector | RenderItemReturnArc | RenderItemReturnPolygon | RenderItemReturnPolyline | RenderItemReturnLine | RenderItemReturnBezierCurve
+      ): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
+      
+      inline def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
+      
+      inline def setSeriesLayoutBy(value: String): Self = StObject.set(x, "seriesLayoutBy", value.asInstanceOf[js.Any])
+      
+      inline def setSeriesLayoutByUndefined: Self = StObject.set(x, "seriesLayoutBy", js.undefined)
+      
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      
+      inline def setTooltip(value: BaseTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setXAxisIndex(value: Double): Self = StObject.set(x, "xAxisIndex", value.asInstanceOf[js.Any])
+      
+      inline def setXAxisIndexUndefined: Self = StObject.set(x, "xAxisIndex", js.undefined)
+      
+      inline def setYAxisIndex(value: Double): Self = StObject.set(x, "yAxisIndex", value.asInstanceOf[js.Any])
+      
+      inline def setYAxisIndexUndefined: Self = StObject.set(x, "yAxisIndex", js.undefined)
+      
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      
+      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+      
+      inline def setZlevel(value: Double): Self = StObject.set(x, "zlevel", value.asInstanceOf[js.Any])
+      
+      inline def setZlevelUndefined: Self = StObject.set(x, "zlevel", js.undefined)
     }
     
     /**
@@ -14281,145 +14420,6 @@ object EChartOption {
         
         inline def setZ2Undefined: Self = StObject.set(x, "z2", js.undefined)
       }
-    }
-    
-    extension [Self <: SeriesCustom](x: Self) {
-      
-      inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
-      
-      inline def setAnimationDelay(value: js.Function | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
-      
-      inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
-      
-      inline def setAnimationDelayUpdate(value: js.Function | Double): Self = StObject.set(x, "animationDelayUpdate", value.asInstanceOf[js.Any])
-      
-      inline def setAnimationDelayUpdateUndefined: Self = StObject.set(x, "animationDelayUpdate", js.undefined)
-      
-      inline def setAnimationDuration(value: js.Function | Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
-      
-      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
-      
-      inline def setAnimationDurationUpdate(value: js.Function | Double): Self = StObject.set(x, "animationDurationUpdate", value.asInstanceOf[js.Any])
-      
-      inline def setAnimationDurationUpdateUndefined: Self = StObject.set(x, "animationDurationUpdate", js.undefined)
-      
-      inline def setAnimationEasing(value: String): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
-      
-      inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
-      
-      inline def setAnimationEasingUpdate(value: String): Self = StObject.set(x, "animationEasingUpdate", value.asInstanceOf[js.Any])
-      
-      inline def setAnimationEasingUpdateUndefined: Self = StObject.set(x, "animationEasingUpdate", js.undefined)
-      
-      inline def setAnimationThreshold(value: Double): Self = StObject.set(x, "animationThreshold", value.asInstanceOf[js.Any])
-      
-      inline def setAnimationThresholdUndefined: Self = StObject.set(x, "animationThreshold", js.undefined)
-      
-      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
-      
-      inline def setCalendarIndex(value: Double): Self = StObject.set(x, "calendarIndex", value.asInstanceOf[js.Any])
-      
-      inline def setCalendarIndexUndefined: Self = StObject.set(x, "calendarIndex", js.undefined)
-      
-      inline def setCoordinateSystem(value: String): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
-      
-      inline def setCoordinateSystemUndefined: Self = StObject.set(x, "coordinateSystem", js.undefined)
-      
-      inline def setData(
-        value: js.Array[
-              (js.Array[
-                Unit | String | Double | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject
-              ]) | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject | Double | String | Unit
-            ]
-      ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-      
-      inline def setDataVarargs(
-        value: ((js.Array[
-              Unit | String | Double | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject
-            ]) | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value*))
-      
-      inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
-      
-      inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
-      
-      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
-      
-      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
-      
-      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
-      
-      inline def setEmphasis(value: `2`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
-      
-      inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
-      
-      inline def setEncode(value: js.Object): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
-      
-      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
-      
-      inline def setGeoIndex(value: Double): Self = StObject.set(x, "geoIndex", value.asInstanceOf[js.Any])
-      
-      inline def setGeoIndexUndefined: Self = StObject.set(x, "geoIndex", js.undefined)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
-      
-      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
-      
-      inline def setLegendHoverLink(value: Boolean): Self = StObject.set(x, "legendHoverLink", value.asInstanceOf[js.Any])
-      
-      inline def setLegendHoverLinkUndefined: Self = StObject.set(x, "legendHoverLink", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setPolarIndex(value: Double): Self = StObject.set(x, "polarIndex", value.asInstanceOf[js.Any])
-      
-      inline def setPolarIndexUndefined: Self = StObject.set(x, "polarIndex", js.undefined)
-      
-      inline def setRenderItem(
-        value: (/* params */ RenderItemParams, /* api */ RenderItemApi) => RenderItemReturnGroup | RenderItemReturnPath | RenderItemReturnImage | RenderItemReturnText | RenderItemReturnRect | RenderItemReturnCircle | RenderItemReturnRing | RenderItemReturnSector | RenderItemReturnArc | RenderItemReturnPolygon | RenderItemReturnPolyline | RenderItemReturnLine | RenderItemReturnBezierCurve
-      ): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
-      
-      inline def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
-      
-      inline def setSeriesLayoutBy(value: String): Self = StObject.set(x, "seriesLayoutBy", value.asInstanceOf[js.Any])
-      
-      inline def setSeriesLayoutByUndefined: Self = StObject.set(x, "seriesLayoutBy", js.undefined)
-      
-      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
-      
-      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
-      
-      inline def setTooltip(value: BaseTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
-      
-      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-      
-      inline def setXAxisIndex(value: Double): Self = StObject.set(x, "xAxisIndex", value.asInstanceOf[js.Any])
-      
-      inline def setXAxisIndexUndefined: Self = StObject.set(x, "xAxisIndex", js.undefined)
-      
-      inline def setYAxisIndex(value: Double): Self = StObject.set(x, "yAxisIndex", value.asInstanceOf[js.Any])
-      
-      inline def setYAxisIndexUndefined: Self = StObject.set(x, "yAxisIndex", js.undefined)
-      
-      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
-      
-      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
-      
-      inline def setZlevel(value: Double): Self = StObject.set(x, "zlevel", value.asInstanceOf[js.Any])
-      
-      inline def setZlevelUndefined: Self = StObject.set(x, "zlevel", js.undefined)
     }
   }
   
@@ -32842,6 +32842,61 @@ object EChartOption {
         String
       ]
     
+    extension [Self <: Tooltip](x: Self) {
+      
+      inline def setAlwaysShowContent(value: Boolean): Self = StObject.set(x, "alwaysShowContent", value.asInstanceOf[js.Any])
+      
+      inline def setAlwaysShowContentUndefined: Self = StObject.set(x, "alwaysShowContent", js.undefined)
+      
+      inline def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
+      
+      inline def setAppendToBodyUndefined: Self = StObject.set(x, "appendToBody", js.undefined)
+      
+      inline def setAxisPointer(value: typings.echarts.echarts.EChartOption.Tooltip.AxisPointer): Self = StObject.set(x, "axisPointer", value.asInstanceOf[js.Any])
+      
+      inline def setAxisPointerUndefined: Self = StObject.set(x, "axisPointer", js.undefined)
+      
+      inline def setConfine(value: Boolean): Self = StObject.set(x, "confine", value.asInstanceOf[js.Any])
+      
+      inline def setConfineUndefined: Self = StObject.set(x, "confine", js.undefined)
+      
+      inline def setEnterable(value: Boolean): Self = StObject.set(x, "enterable", value.asInstanceOf[js.Any])
+      
+      inline def setEnterableUndefined: Self = StObject.set(x, "enterable", js.undefined)
+      
+      inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
+      
+      inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
+      
+      inline def setRenderMode(value: html): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
+      
+      inline def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
+      
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      
+      inline def setShowContent(value: Boolean): Self = StObject.set(x, "showContent", value.asInstanceOf[js.Any])
+      
+      inline def setShowContentUndefined: Self = StObject.set(x, "showContent", js.undefined)
+      
+      inline def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
+      
+      inline def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
+      
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      
+      inline def setTrigger(value: item | axis | none): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      
+      inline def setTriggerOn(value: mousemove | click | mousemoveVerticallineclick | none): Self = StObject.set(x, "triggerOn", value.asInstanceOf[js.Any])
+      
+      inline def setTriggerOnUndefined: Self = StObject.set(x, "triggerOn", js.undefined)
+      
+      inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    }
+    
     object Position {
       
       type Fn = js.Function5[
@@ -32924,61 +32979,6 @@ object EChartOption {
       type Type = _Type | (js.Array[Double | String]) | Fn
       
       trait _Type extends StObject
-    }
-    
-    extension [Self <: Tooltip](x: Self) {
-      
-      inline def setAlwaysShowContent(value: Boolean): Self = StObject.set(x, "alwaysShowContent", value.asInstanceOf[js.Any])
-      
-      inline def setAlwaysShowContentUndefined: Self = StObject.set(x, "alwaysShowContent", js.undefined)
-      
-      inline def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
-      
-      inline def setAppendToBodyUndefined: Self = StObject.set(x, "appendToBody", js.undefined)
-      
-      inline def setAxisPointer(value: typings.echarts.echarts.EChartOption.Tooltip.AxisPointer): Self = StObject.set(x, "axisPointer", value.asInstanceOf[js.Any])
-      
-      inline def setAxisPointerUndefined: Self = StObject.set(x, "axisPointer", js.undefined)
-      
-      inline def setConfine(value: Boolean): Self = StObject.set(x, "confine", value.asInstanceOf[js.Any])
-      
-      inline def setConfineUndefined: Self = StObject.set(x, "confine", js.undefined)
-      
-      inline def setEnterable(value: Boolean): Self = StObject.set(x, "enterable", value.asInstanceOf[js.Any])
-      
-      inline def setEnterableUndefined: Self = StObject.set(x, "enterable", js.undefined)
-      
-      inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
-      
-      inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
-      
-      inline def setRenderMode(value: html): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
-      
-      inline def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
-      
-      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
-      
-      inline def setShowContent(value: Boolean): Self = StObject.set(x, "showContent", value.asInstanceOf[js.Any])
-      
-      inline def setShowContentUndefined: Self = StObject.set(x, "showContent", js.undefined)
-      
-      inline def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
-      
-      inline def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
-      
-      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
-      
-      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
-      
-      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
-      
-      inline def setTrigger(value: item | axis | none): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
-      
-      inline def setTriggerOn(value: mousemove | click | mousemoveVerticallineclick | none): Self = StObject.set(x, "triggerOn", value.asInstanceOf[js.Any])
-      
-      inline def setTriggerOnUndefined: Self = StObject.set(x, "triggerOn", js.undefined)
-      
-      inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     }
   }
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/service-worker" : "14.2.2"
+      "@angular/service-worker" : "14.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/service-worker" : "14.2.2"
+      "@angular/service-worker" : "14.2.7"
     }
   ],
   "compile-devDependencies" : [

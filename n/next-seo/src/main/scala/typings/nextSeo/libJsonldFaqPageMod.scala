@@ -12,7 +12,7 @@ object libJsonldFaqPageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideMainEntityRest: FAQPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideMainEntityRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: FAQPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait FAQPageJsonLdProps
     extends StObject

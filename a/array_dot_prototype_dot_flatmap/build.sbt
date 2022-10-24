@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "array_dot_prototype_dot_flatmap"
-version := "1.2-dt-20220624Z-5cef99"
-scalaVersion := "3.1.2"
+version := "1.2-dt-20220624Z-c844bd"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

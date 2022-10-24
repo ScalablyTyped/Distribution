@@ -126,6 +126,37 @@ object Six {
     __obj.asInstanceOf[Six]
   }
   
+  extension [Self <: Six](x: Self) {
+    
+    inline def setDataProvider(value: DataProvider): Self = StObject.set(x, "DataProvider", value.asInstanceOf[js.Any])
+    
+    inline def setDp(value: String => Any): Self = StObject.set(x, "dp", js.Any.fromFunction1(value))
+    
+    inline def setENV(value: String): Self = StObject.set(x, "ENV", value.asInstanceOf[js.Any])
+    
+    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    
+    inline def setHttp(value: http): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    
+    inline def setLog(value: log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setNODE_ENV(value: String): Self = StObject.set(x, "NODE_ENV", value.asInstanceOf[js.Any])
+    
+    inline def setPlugins(value: PluginsMap): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setROOT_PATH(value: String): Self = StObject.set(x, "ROOT_PATH", value.asInstanceOf[js.Any])
+    
+    inline def setRender(
+      value: (/* name */ String, /* runtimeConf */ js.UndefOr[runtimeConf | Null], /* data */ js.UndefOr[js.Object]) => js.Promise[Any]
+    ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+    
+    inline def setRpc(value: /* config */ js.Object => js.Object): Self = StObject.set(x, "rpc", js.Any.fromFunction1(value))
+    
+    inline def setSet(value: (String, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    
+    inline def setTime(value: timmer): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+  }
+  
   trait PluginsMap extends StObject {
     
     def sso(conf: ssoConf): Any
@@ -166,37 +197,6 @@ object Six {
       
       inline def setUpm(value: /* conf */ upmConf => Any): Self = StObject.set(x, "upm", js.Any.fromFunction1(value))
     }
-  }
-  
-  extension [Self <: Six](x: Self) {
-    
-    inline def setDataProvider(value: DataProvider): Self = StObject.set(x, "DataProvider", value.asInstanceOf[js.Any])
-    
-    inline def setDp(value: String => Any): Self = StObject.set(x, "dp", js.Any.fromFunction1(value))
-    
-    inline def setENV(value: String): Self = StObject.set(x, "ENV", value.asInstanceOf[js.Any])
-    
-    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-    
-    inline def setHttp(value: http): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
-    
-    inline def setLog(value: log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
-    
-    inline def setNODE_ENV(value: String): Self = StObject.set(x, "NODE_ENV", value.asInstanceOf[js.Any])
-    
-    inline def setPlugins(value: PluginsMap): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-    
-    inline def setROOT_PATH(value: String): Self = StObject.set(x, "ROOT_PATH", value.asInstanceOf[js.Any])
-    
-    inline def setRender(
-      value: (/* name */ String, /* runtimeConf */ js.UndefOr[runtimeConf | Null], /* data */ js.UndefOr[js.Object]) => js.Promise[Any]
-    ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
-    
-    inline def setRpc(value: /* config */ js.Object => js.Object): Self = StObject.set(x, "rpc", js.Any.fromFunction1(value))
-    
-    inline def setSet(value: (String, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
-    
-    inline def setTime(value: timmer): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
   
   type middleware = js.Function2[/* ctx */ js.Object, /* next */ next, Any]

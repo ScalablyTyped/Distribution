@@ -12,7 +12,5 @@ object distTypesBulletRectsItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BulletRectsItem(
-    hasHasXYWidthHeightColorBorderColorBorderWidthDataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: BulletRectsItemProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletRectsItem")(hasHasXYWidthHeightColorBorderColorBorderWidthDataOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BulletRectsItem(param0: BulletRectsItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BulletRectsItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

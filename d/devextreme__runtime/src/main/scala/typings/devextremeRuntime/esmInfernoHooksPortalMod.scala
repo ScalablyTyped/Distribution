@@ -12,7 +12,7 @@ object esmInfernoHooksPortalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Portal(hasContainerChildren: PortalProps): VNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(hasContainerChildren.asInstanceOf[js.Any]).asInstanceOf[VNode | Null]
+  inline def Portal(param0: PortalProps): VNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(param0.asInstanceOf[js.Any]).asInstanceOf[VNode | Null]
   
   trait PortalProps extends StObject {
     

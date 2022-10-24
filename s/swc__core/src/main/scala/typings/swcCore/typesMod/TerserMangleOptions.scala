@@ -8,9 +8,9 @@ trait TerserMangleOptions extends StObject {
   
   var ie8: js.UndefOr[Boolean] = js.undefined
   
-  var keep_class_names: js.UndefOr[Boolean] = js.undefined
+  var keep_classnames: js.UndefOr[Boolean] = js.undefined
   
-  var keep_fn_names: js.UndefOr[Boolean] = js.undefined
+  var keep_fnames: js.UndefOr[Boolean] = js.undefined
   
   var keep_private_props: js.UndefOr[Boolean] = js.undefined
   
@@ -20,7 +20,7 @@ trait TerserMangleOptions extends StObject {
   
   var safari10: js.UndefOr[Boolean] = js.undefined
   
-  var top_level: js.UndefOr[Boolean] = js.undefined
+  var toplevel: js.UndefOr[Boolean] = js.undefined
 }
 object TerserMangleOptions {
   
@@ -35,13 +35,13 @@ object TerserMangleOptions {
     
     inline def setIe8Undefined: Self = StObject.set(x, "ie8", js.undefined)
     
-    inline def setKeep_class_names(value: Boolean): Self = StObject.set(x, "keep_class_names", value.asInstanceOf[js.Any])
+    inline def setKeep_classnames(value: Boolean): Self = StObject.set(x, "keep_classnames", value.asInstanceOf[js.Any])
     
-    inline def setKeep_class_namesUndefined: Self = StObject.set(x, "keep_class_names", js.undefined)
+    inline def setKeep_classnamesUndefined: Self = StObject.set(x, "keep_classnames", js.undefined)
     
-    inline def setKeep_fn_names(value: Boolean): Self = StObject.set(x, "keep_fn_names", value.asInstanceOf[js.Any])
+    inline def setKeep_fnames(value: Boolean): Self = StObject.set(x, "keep_fnames", value.asInstanceOf[js.Any])
     
-    inline def setKeep_fn_namesUndefined: Self = StObject.set(x, "keep_fn_names", js.undefined)
+    inline def setKeep_fnamesUndefined: Self = StObject.set(x, "keep_fnames", js.undefined)
     
     inline def setKeep_private_props(value: Boolean): Self = StObject.set(x, "keep_private_props", value.asInstanceOf[js.Any])
     
@@ -61,8 +61,8 @@ object TerserMangleOptions {
     
     inline def setSafari10Undefined: Self = StObject.set(x, "safari10", js.undefined)
     
-    inline def setTop_level(value: Boolean): Self = StObject.set(x, "top_level", value.asInstanceOf[js.Any])
+    inline def setToplevel(value: Boolean): Self = StObject.set(x, "toplevel", value.asInstanceOf[js.Any])
     
-    inline def setTop_levelUndefined: Self = StObject.set(x, "top_level", js.undefined)
+    inline def setToplevelUndefined: Self = StObject.set(x, "toplevel", js.undefined)
   }
 }

@@ -13,13 +13,7 @@ object distTypesCanvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def renderCircle[Datum /* <: HeatMapDatum */](
-    ctx: CanvasRenderingContext2D,
-    hasHasXYWidthHeightColorBorderColorOpacityLabelTextColorLabelBorderWidthEnableLabelsTheme: CellCanvasRendererProps[Datum]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCircle")(ctx.asInstanceOf[js.Any], hasHasXYWidthHeightColorBorderColorOpacityLabelTextColorLabelBorderWidthEnableLabelsTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderCircle[Datum /* <: HeatMapDatum */](ctx: CanvasRenderingContext2D, param1: CellCanvasRendererProps[Datum]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCircle")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderRect[Datum /* <: HeatMapDatum */](
-    ctx: CanvasRenderingContext2D,
-    hasHasXYWidthHeightColorBorderColorOpacityLabelTextColorLabelBorderWidthEnableLabelsTheme: CellCanvasRendererProps[Datum]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderRect")(ctx.asInstanceOf[js.Any], hasHasXYWidthHeightColorBorderColorOpacityLabelTextColorLabelBorderWidthEnableLabelsTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderRect[Datum /* <: HeatMapDatum */](ctx: CanvasRenderingContext2D, param1: CellCanvasRendererProps[Datum]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderRect")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

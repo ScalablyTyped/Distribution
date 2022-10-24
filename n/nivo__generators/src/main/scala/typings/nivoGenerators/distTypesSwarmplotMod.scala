@@ -14,12 +14,10 @@ object distTypesSwarmplotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateSwarmPlotData(groups: js.Array[String], hasMinMaxCategoryCount: CategoryCount): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSwarmPlotData")(groups.asInstanceOf[js.Any], hasMinMaxCategoryCount.asInstanceOf[js.Any])).asInstanceOf[Groups]
+  inline def generateSwarmPlotData(groups: js.Array[String], param1: CategoryCount): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSwarmPlotData")(groups.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Groups]
   
   inline def randomizeSwarmPlotData(
-    previousData: ReturnType[
-      js.Function2[/* groups */ js.Array[String], /* hasMinMaxCategoryCount */ CategoryCount, Groups]
-    ]
+    previousData: ReturnType[js.Function2[/* groups */ js.Array[String], /* param1 */ CategoryCount, Groups]]
   ): DataGroups = ^.asInstanceOf[js.Dynamic].applyDynamic("randomizeSwarmPlotData")(previousData.asInstanceOf[js.Any]).asInstanceOf[DataGroups]
   
   trait SwarmPlotDatum extends StObject {

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Screen protected ()
   extends typings.canvg.distScreenMod.Screen {
   def this(ctx: RenderingContext2D) = this()
-  def this(ctx: RenderingContext2D, hasFetchWindow: IScreenOptions) = this()
+  def this(ctx: RenderingContext2D, param1: IScreenOptions) = this()
 }
 /* static members */
 object Screen {

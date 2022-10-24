@@ -12,9 +12,7 @@ object typesTextIconSpacingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TextIconSpacing(
-    hasClassNamePropIconChildrenStackedIconAfterFlexReverseForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName: TextIconSpacingProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TextIconSpacing")(hasClassNamePropIconChildrenStackedIconAfterFlexReverseForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def TextIconSpacing(param0: TextIconSpacingProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TextIconSpacing")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait TextIconSpacingProps extends StObject {
     

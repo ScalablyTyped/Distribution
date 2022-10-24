@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/compiler", "CompilerConfig")
 @js.native
 open class CompilerConfig () extends StObject {
-  def this(hasDefaultEncapsulationUseJitJitDevModeMissingTranslationPreserveWhitespacesStrictInjectionParameters: DefaultEncapsulation) = this()
+  def this(param0: DefaultEncapsulation) = this()
   
   var defaultEncapsulation: ViewEncapsulation | Null = js.native
   

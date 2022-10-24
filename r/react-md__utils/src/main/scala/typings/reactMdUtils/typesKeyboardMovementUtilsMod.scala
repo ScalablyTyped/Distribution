@@ -18,7 +18,7 @@ object typesKeyboardMovementUtilsMod {
   
   inline def getLastFocusableIndex(watching: js.Array[KeyboardFocusElementData], includeDisabled: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocusableIndex")(watching.asInstanceOf[js.Any], includeDisabled.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def getNextFocusableIndex(hasLoopableWatchingIncrementIncludeDisabledCurrentFocusIndex: NextFocusableIndexOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextFocusableIndex")(hasLoopableWatchingIncrementIncludeDisabledCurrentFocusIndex.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getNextFocusableIndex(param0: NextFocusableIndexOptions): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextFocusableIndex")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def getSearchText(element: HTMLElement, searchable: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchText")(element.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any])).asInstanceOf[String]
   

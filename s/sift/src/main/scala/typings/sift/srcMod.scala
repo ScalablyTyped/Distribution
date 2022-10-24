@@ -46,7 +46,7 @@ object srcMod {
   inline def and(params: js.Array[Query[Any]], ownerQuery: Query[Any], options: Options, name: String): $And = (^.asInstanceOf[js.Dynamic].applyDynamic("$and")(params.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$And]
   
   inline def createDefaultQueryOperation[TItem, TSchema /* <: TItem */](query: Query[TSchema], ownerQuery: Any): QueryOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultQueryOperation")(query.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any])).asInstanceOf[QueryOperation[Any]]
-  inline def createDefaultQueryOperation[TItem, TSchema /* <: TItem */](query: Query[TSchema], ownerQuery: Any, hasCompareOperations: PartialOptionsCompare): QueryOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultQueryOperation")(query.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], hasCompareOperations.asInstanceOf[js.Any])).asInstanceOf[QueryOperation[Any]]
+  inline def createDefaultQueryOperation[TItem, TSchema /* <: TItem */](query: Query[TSchema], ownerQuery: Any, param2: PartialOptionsCompare): QueryOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultQueryOperation")(query.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[QueryOperation[Any]]
   
   inline def createEqualsOperation(params: Any, owneryQuery: Any, options: Options): typings.sift.srcCoreMod.EqualsOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEqualsOperation")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.sift.srcCoreMod.EqualsOperation[Any]]
   
@@ -64,8 +64,8 @@ object srcMod {
   
   inline def createQueryOperation[TItem, TSchema](query: Query[TSchema]): typings.sift.srcCoreMod.QueryOperation[TItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any]).asInstanceOf[typings.sift.srcCoreMod.QueryOperation[TItem]]
   inline def createQueryOperation[TItem, TSchema](query: Query[TSchema], owneryQuery: Any): typings.sift.srcCoreMod.QueryOperation[TItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any])).asInstanceOf[typings.sift.srcCoreMod.QueryOperation[TItem]]
-  inline def createQueryOperation[TItem, TSchema](query: Query[TSchema], owneryQuery: Any, hasCompareOperations: PartialOptionsCompare): typings.sift.srcCoreMod.QueryOperation[TItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], hasCompareOperations.asInstanceOf[js.Any])).asInstanceOf[typings.sift.srcCoreMod.QueryOperation[TItem]]
-  inline def createQueryOperation[TItem, TSchema](query: Query[TSchema], owneryQuery: Unit, hasCompareOperations: PartialOptionsCompare): typings.sift.srcCoreMod.QueryOperation[TItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], hasCompareOperations.asInstanceOf[js.Any])).asInstanceOf[typings.sift.srcCoreMod.QueryOperation[TItem]]
+  inline def createQueryOperation[TItem, TSchema](query: Query[TSchema], owneryQuery: Any, param2: PartialOptionsCompare): typings.sift.srcCoreMod.QueryOperation[TItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[typings.sift.srcCoreMod.QueryOperation[TItem]]
+  inline def createQueryOperation[TItem, TSchema](query: Query[TSchema], owneryQuery: Unit, param2: PartialOptionsCompare): typings.sift.srcCoreMod.QueryOperation[TItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[typings.sift.srcCoreMod.QueryOperation[TItem]]
   
   inline def createQueryTester[TItem, TSchema](query: Query[TSchema]): js.Function3[
     /* item */ TItem, 
@@ -106,7 +106,7 @@ object srcMod {
   
   inline def lte(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$lte")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any]]
   
-  inline def mod(hasModEqualsValue: js.Array[Double], owneryQuery: Query[Any], options: Options): typings.sift.srcCoreMod.EqualsOperation[js.Function1[/* b */ Any, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$mod")(hasModEqualsValue.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.sift.srcCoreMod.EqualsOperation[js.Function1[/* b */ Any, Boolean]]]
+  inline def mod(param0: js.Array[Double], owneryQuery: Query[Any], options: Options): typings.sift.srcCoreMod.EqualsOperation[js.Function1[/* b */ Any, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$mod")(param0.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.sift.srcCoreMod.EqualsOperation[js.Function1[/* b */ Any, Boolean]]]
   
   inline def ne(params: Any, owneryQuery: Query[Any], options: Options, name: String): $Ne = (^.asInstanceOf[js.Dynamic].applyDynamic("$ne")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$Ne]
   

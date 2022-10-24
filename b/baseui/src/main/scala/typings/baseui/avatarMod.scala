@@ -18,7 +18,7 @@ object avatarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Avatar(hasInitialsNameOverridesSizeSrc: AvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Avatar")(hasInitialsNameOverridesSizeSrc.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Avatar(param0: AvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Avatar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/avatar", "StyledAvatar")
   @js.native

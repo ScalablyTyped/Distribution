@@ -15,7 +15,7 @@ object distTypesCoreServicesProjectHooksMod {
   @JSImport("gitlab/dist/types/core/services/ProjectHooks", "ProjectHooks")
   @js.native
   open class ProjectHooks () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def add(projectId: String, url: String): js.Promise[js.Object] = js.native
     def add(projectId: String, url: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native

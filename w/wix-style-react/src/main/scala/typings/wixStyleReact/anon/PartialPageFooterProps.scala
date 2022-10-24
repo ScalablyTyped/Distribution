@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<wix-style-react.wix-style-react/dist/es/src/PageFooter.PageFooterProps> */
+/* Inlined std.Partial<wix-style-react.wix-style-react/dist/types/PageFooter.PageFooterProps> */
 trait PartialPageFooterProps extends StObject {
   
   var className: js.UndefOr[String] = js.undefined

@@ -15,7 +15,7 @@ object distFieldSrcUseFieldMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useField(hasIdValidationStateRequiredFluidDisabledClassNameForwardedRef: UseFieldProps): UseFieldReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useField")(hasIdValidationStateRequiredFluidDisabledClassNameForwardedRef.asInstanceOf[js.Any]).asInstanceOf[UseFieldReturn]
+  inline def useField(param0: UseFieldProps): UseFieldReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("useField")(param0.asInstanceOf[js.Any]).asInstanceOf[UseFieldReturn]
   
   trait UseFieldProps extends StObject {
     

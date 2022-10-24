@@ -59,6 +59,14 @@ trait PartialCommandModuleImple extends StObject {
   
   /* private */ val optionsWithAnalytics: Any = js.native
   
+  /**
+    * Flush on an interval (if the event loop is waiting).
+    *
+    * @returns a method that when called will terminate the periodic
+    * flush and call flush one last time.
+    */
+  /* private */ var periodicAnalyticsFlush: Any = js.native
+  
   def reportAnalytics(options: js.Object & OtherOptions): js.Promise[Unit] = js.native
   def reportAnalytics(options: js.Object & OtherOptions, paths: js.Array[String]): js.Promise[Unit] = js.native
   def reportAnalytics(
@@ -66,11 +74,34 @@ trait PartialCommandModuleImple extends StObject {
     paths: js.Array[String],
     dimensions: js.Array[Boolean | Double | String]
   ): js.Promise[Unit] = js.native
+  def reportAnalytics(
+    options: js.Object & OtherOptions,
+    paths: js.Array[String],
+    dimensions: js.Array[Boolean | Double | String],
+    title: String
+  ): js.Promise[Unit] = js.native
+  def reportAnalytics(options: js.Object & OtherOptions, paths: js.Array[String], dimensions: Unit, title: String): js.Promise[Unit] = js.native
   def reportAnalytics(options: js.Object & OtherOptions, paths: Unit, dimensions: js.Array[Boolean | Double | String]): js.Promise[Unit] = js.native
+  def reportAnalytics(
+    options: js.Object & OtherOptions,
+    paths: Unit,
+    dimensions: js.Array[Boolean | Double | String],
+    title: String
+  ): js.Promise[Unit] = js.native
+  def reportAnalytics(options: js.Object & OtherOptions, paths: Unit, dimensions: Unit, title: String): js.Promise[Unit] = js.native
   def reportAnalytics(options: OtherOptions): js.Promise[Unit] = js.native
   def reportAnalytics(options: OtherOptions, paths: js.Array[String]): js.Promise[Unit] = js.native
   def reportAnalytics(options: OtherOptions, paths: js.Array[String], dimensions: js.Array[Boolean | Double | String]): js.Promise[Unit] = js.native
+  def reportAnalytics(
+    options: OtherOptions,
+    paths: js.Array[String],
+    dimensions: js.Array[Boolean | Double | String],
+    title: String
+  ): js.Promise[Unit] = js.native
+  def reportAnalytics(options: OtherOptions, paths: js.Array[String], dimensions: Unit, title: String): js.Promise[Unit] = js.native
   def reportAnalytics(options: OtherOptions, paths: Unit, dimensions: js.Array[Boolean | Double | String]): js.Promise[Unit] = js.native
+  def reportAnalytics(options: OtherOptions, paths: Unit, dimensions: js.Array[Boolean | Double | String], title: String): js.Promise[Unit] = js.native
+  def reportAnalytics(options: OtherOptions, paths: Unit, dimensions: Unit, title: String): js.Promise[Unit] = js.native
   
   var run: js.UndefOr[
     js.Function1[

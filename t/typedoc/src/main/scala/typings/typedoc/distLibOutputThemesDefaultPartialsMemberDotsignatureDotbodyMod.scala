@@ -15,5 +15,5 @@ object distLibOutputThemesDefaultPartialsMemberDotsignatureDotbodyMod {
   val ^ : js.Any = js.native
   
   inline def memberSignatureBody(context: DefaultThemeRenderContext, props: SignatureReflection): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("memberSignatureBody")(context.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
-  inline def memberSignatureBody(context: DefaultThemeRenderContext, props: SignatureReflection, hasHideSources: HideSources): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("memberSignatureBody")(context.asInstanceOf[js.Any], props.asInstanceOf[js.Any], hasHideSources.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
+  inline def memberSignatureBody(context: DefaultThemeRenderContext, props: SignatureReflection, param2: HideSources): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("memberSignatureBody")(context.asInstanceOf[js.Any], props.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[JsxElement]
 }

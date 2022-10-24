@@ -228,6 +228,18 @@ object esbuildWasmStrings {
   inline def preserve: preserve = "preserve".asInstanceOf[preserve]
   
   @js.native
+  sealed trait react extends StObject
+  inline def react: react = "react".asInstanceOf[react]
+  
+  @js.native
+  sealed trait `react-jsx` extends StObject
+  inline def `react-jsx`: `react-jsx` = "react-jsx".asInstanceOf[`react-jsx`]
+  
+  @js.native
+  sealed trait `react-jsxdev` extends StObject
+  inline def `react-jsxdev`: `react-jsxdev` = "react-jsxdev".asInstanceOf[`react-jsxdev`]
+  
+  @js.native
   sealed trait remove extends StObject
   inline def remove: remove = "remove".asInstanceOf[remove]
   

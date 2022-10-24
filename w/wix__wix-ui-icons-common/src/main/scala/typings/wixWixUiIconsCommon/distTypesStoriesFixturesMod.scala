@@ -27,7 +27,7 @@ object distTypesStoriesFixturesMod {
   @js.native
   val languagesIconRow: js.Array[js.UndefOr[String]] = js.native
   
-  inline def mapIconToRow(hasTitleDescription: IconMetadata): js.Array[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapIconToRow")(hasTitleDescription.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.UndefOr[String]]]
+  inline def mapIconToRow(param0: IconMetadata): js.Array[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapIconToRow")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.UndefOr[String]]]
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/stories/fixtures", "searchKeys")
   @js.native

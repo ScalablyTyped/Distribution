@@ -80,6 +80,7 @@ import typings.std.NamedNodeMap
 import typings.std.Node
 import typings.std.NodeListOf
 import typings.std.Pick
+import typings.std.Record
 import typings.std.SVGElement
 import typings.std.ShadowRoot
 import typings.std.Text
@@ -336,10 +337,12 @@ object typesRuntimeInternalDomMod {
   
   inline def claimText(nodes: ChildNodeArray, data: Any): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_text")(nodes.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Text]
   
+  inline def constructSvelteComponent(component: Any, props: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct_svelte_component")(component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
   inline def customEvent[T](`type`: String): CustomEvent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any]).asInstanceOf[CustomEvent[T]]
   inline def customEvent[T](`type`: String, detail: T): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
-  inline def customEvent[T](`type`: String, detail: T, hasBubblesCancelable: Bubbles): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], hasBubblesCancelable.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
-  inline def customEvent[T](`type`: String, detail: Unit, hasBubblesCancelable: Bubbles): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], hasBubblesCancelable.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
+  inline def customEvent[T](`type`: String, detail: T, param2: Bubbles): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
+  inline def customEvent[T](`type`: String, detail: Unit, param2: Bubbles): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
   
   inline def destroyEach(iterations: Any, detaching: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy_each")(iterations.asInstanceOf[js.Any], detaching.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -799,6 +802,8 @@ object typesRuntimeInternalDomMod {
   
   inline def getRootForStyle(node: Node): ShadowRoot | Document = ^.asInstanceOf[js.Dynamic].applyDynamic("get_root_for_style")(node.asInstanceOf[js.Any]).asInstanceOf[ShadowRoot | Document]
   
+  inline def headSelector(nodeId: String, head: HTMLElement): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("head_selector")(nodeId.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  
   inline def insert(target: Node, node: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(target.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insert(target: Node, node: Node, anchor: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(target.asInstanceOf[js.Any], node.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -842,6 +847,8 @@ object typesRuntimeInternalDomMod {
   inline def setAttributes(node: Element & ElementCSSInlineStyle, attributes: StringDictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_attributes")(node.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setCustomElementData(node: Any, prop: Any, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_custom_element_data")(node.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setCustomElementDataMap(node: Any, data_map: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_custom_element_data_map")(node.asInstanceOf[js.Any], data_map.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setData(text: Any, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

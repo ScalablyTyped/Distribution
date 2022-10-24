@@ -32,9 +32,9 @@ object distBuildEntriesMod {
   
   inline def createEntrypoints(params: CreateEntrypointsParams): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEntrypoints")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
   
-  inline def createPagesMapping(hasIsDevPageExtensionsPagePathsPagesTypePagesDir: PageExtensions): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPagesMapping")(hasIsDevPageExtensionsPagePathsPagesTypePagesDir.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  inline def createPagesMapping(param0: PageExtensions): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPagesMapping")(param0.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  inline def finalizeEntrypoint(hasNameCompilerTypeValueIsServerComponentAppDir: AppDir): ObjectValue[EntryObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("finalizeEntrypoint")(hasNameCompilerTypeValueIsServerComponentAppDir.asInstanceOf[js.Any]).asInstanceOf[ObjectValue[EntryObject]]
+  inline def finalizeEntrypoint(param0: AppDir): ObjectValue[EntryObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("finalizeEntrypoint")(param0.asInstanceOf[js.Any]).asInstanceOf[ObjectValue[EntryObject]]
   
   inline def getAppEntry(opts: AppPaths): Import = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppEntry")(opts.asInstanceOf[js.Any]).asInstanceOf[Import]
   

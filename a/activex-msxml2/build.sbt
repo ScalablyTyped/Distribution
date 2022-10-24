@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "activex-msxml2"
-version := "6.0-dt-20220705Z-fd9ad9"
-scalaVersion := "3.1.2"
+version := "6.0-dt-20220705Z-9c7b1f"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -19,20 +19,20 @@ object libTypescriptComponentsSwitchMod extends Shortcut {
   @JSImport("react-native-paper/lib/typescript/components/Switch", JSImport.Default)
   @js.native
   val default: ComponentType[PickSwitchPropsRefAttribu] & (NonReactStatics[
-    ComponentType[SwitchPropsRefAttributesS] & (js.Function1[/* hasValueDisabledOnValueChangeColorThemeRest */ Props, Element]), 
+    ComponentType[SwitchPropsRefAttributesS] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = js.native
   
   type Props = ComponentPropsWithRef[Instantiable0[Switch]] & ColorDisabled
   
   type _To = ComponentType[PickSwitchPropsRefAttribu] & (NonReactStatics[
-    ComponentType[SwitchPropsRefAttributesS] & (js.Function1[/* hasValueDisabledOnValueChangeColorThemeRest */ Props, Element]), 
+    ComponentType[SwitchPropsRefAttributesS] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsSwitchMod.foo` */
   override def _to: ComponentType[PickSwitchPropsRefAttribu] & (NonReactStatics[
-    ComponentType[SwitchPropsRefAttributesS] & (js.Function1[/* hasValueDisabledOnValueChangeColorThemeRest */ Props, Element]), 
+    ComponentType[SwitchPropsRefAttributesS] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = default
 }

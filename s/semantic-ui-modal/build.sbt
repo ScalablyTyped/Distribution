@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-modal"
-version := "2.2-dt-20220624Z-ca2c09"
-scalaVersion := "3.1.2"
+version := "2.2-dt-20220624Z-1c02a3"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "semantic-ui-dimmer" % "2.2-dt-20220624Z-272af1")
+  "org.scalablytyped" %%% "semantic-ui-dimmer" % "2.2-dt-20220624Z-948f11")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

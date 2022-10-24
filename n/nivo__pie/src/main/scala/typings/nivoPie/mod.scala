@@ -53,9 +53,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Pie[RawDatum](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: PieSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pie")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Pie[RawDatum](param0: PieSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pie")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def PieCanvas[RawDatum](hasIsInteractiveThemeRenderWrapperOtherProps: PieCanvasProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PieCanvas")(hasIsInteractiveThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PieCanvas[RawDatum](param0: PieCanvasProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PieCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def ResponsivePie[RawDatum](props: Omit[PieSvgProps[RawDatum], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsivePie")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -252,7 +252,7 @@ object mod {
     def startAngle: Double = js.native
     inline def startAngle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startAngle")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum](hasDatum: Datum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasDatum.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum](param0: Datum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/pie", "defaultProps.transitionMode")
     @js.native
@@ -267,27 +267,23 @@ object mod {
     inline def value_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
-  inline def useNormalizedData[RawDatum /* <: MayHaveLabel */](
-    hasDataIdValueValueFormatColors: (Pick[CompletePieSvgProps[RawDatum], id | value | valueFormat | colors]) & Data[RawDatum]
-  ): js.Array[Omit[ComputedDatum[RawDatum], fill | arc]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useNormalizedData")(hasDataIdValueValueFormatColors.asInstanceOf[js.Any]).asInstanceOf[js.Array[Omit[ComputedDatum[RawDatum], fill | arc]]]
+  inline def useNormalizedData[RawDatum /* <: MayHaveLabel */](param0: (Pick[CompletePieSvgProps[RawDatum], id | value | valueFormat | colors]) & Data[RawDatum]): js.Array[Omit[ComputedDatum[RawDatum], fill | arc]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useNormalizedData")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Omit[ComputedDatum[RawDatum], fill | arc]]]
   
   inline def usePie[RawDatum](
-    hasDataRadiusInnerRadiusStartAngleEndAnglePadAngleSortByValueCornerRadiusActiveInnerRadiusOffsetActiveOuterRadiusOffset: (Pick[
+    param0: (Pick[
       Partial[CompletePieSvgProps[RawDatum]], 
       startAngle | endAngle | sortByValue | padAngle | cornerRadius | activeInnerRadiusOffset | activeOuterRadiusOffset
     ]) & InnerRadius[RawDatum]
-  ): ArcGenerator[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePie")(hasDataRadiusInnerRadiusStartAngleEndAnglePadAngleSortByValueCornerRadiusActiveInnerRadiusOffsetActiveOuterRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator[RawDatum]]
+  ): ArcGenerator[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePie")(param0.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator[RawDatum]]
   
-  inline def usePieArcs[RawDatum](
-    hasDataStartAngleEndAngleInnerRadiusOuterRadiusPadAngleSortByValueActiveIdActiveInnerRadiusOffsetActiveOuterRadiusOffsetHiddenIds: ActiveId[RawDatum]
-  ): DataWithArc[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePieArcs")(hasDataStartAngleEndAngleInnerRadiusOuterRadiusPadAngleSortByValueActiveIdActiveInnerRadiusOffsetActiveOuterRadiusOffsetHiddenIds.asInstanceOf[js.Any]).asInstanceOf[DataWithArc[RawDatum]]
+  inline def usePieArcs[RawDatum](param0: ActiveId[RawDatum]): DataWithArc[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePieArcs")(param0.asInstanceOf[js.Any]).asInstanceOf[DataWithArc[RawDatum]]
   
   inline def usePieFromBox[RawDatum](
-    hasDataWidthHeightInnerRadiusRatioStartAngleEndAnglePadAngleSortByValueCornerRadiusFitActiveInnerRadiusOffsetActiveOuterRadiusOffset: (Pick[
+    param0: (Pick[
       CompletePieSvgProps[RawDatum], 
       startAngle | endAngle | innerRadius | width | height | sortByValue | padAngle | cornerRadius | fit | activeInnerRadiusOffset | activeOuterRadiusOffset
     ]) & DataArray[RawDatum]
-  ): CenterX[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePieFromBox")(hasDataWidthHeightInnerRadiusRatioStartAngleEndAnglePadAngleSortByValueCornerRadiusFitActiveInnerRadiusOffsetActiveOuterRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[CenterX[RawDatum]]
+  ): CenterX[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePieFromBox")(param0.asInstanceOf[js.Any]).asInstanceOf[CenterX[RawDatum]]
   
-  inline def usePieLayerContext[RawDatum](hasDataWithArcArcGeneratorCenterXCenterYRadiusInnerRadius: PieCustomLayerProps[RawDatum]): PieCustomLayerProps[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePieLayerContext")(hasDataWithArcArcGeneratorCenterXCenterYRadiusInnerRadius.asInstanceOf[js.Any]).asInstanceOf[PieCustomLayerProps[RawDatum]]
+  inline def usePieLayerContext[RawDatum](param0: PieCustomLayerProps[RawDatum]): PieCustomLayerProps[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePieLayerContext")(param0.asInstanceOf[js.Any]).asInstanceOf[PieCustomLayerProps[RawDatum]]
 }

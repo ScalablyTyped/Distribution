@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "color-check"
-version := "0.0-dt-20220624Z-ec3a00"
-scalaVersion := "3.1.2"
+version := "0.0-dt-20220624Z-9f0ae1"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

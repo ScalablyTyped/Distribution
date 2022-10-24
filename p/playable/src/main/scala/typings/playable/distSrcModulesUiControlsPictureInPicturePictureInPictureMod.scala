@@ -16,7 +16,7 @@ object distSrcModulesUiControlsPictureInPicturePictureInPictureMod {
   open class default protected ()
     extends StObject
        with PictureInPictureControl {
-    def this(hasEventEmitterPictureInPictureTextMapTooltipServiceTheme: PictureInPicture) = this()
+    def this(param0: PictureInPicture) = this()
     
     /* private */ /* CompleteClass */
     var _bindCallbacks: Any = js.native

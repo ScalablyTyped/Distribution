@@ -14,9 +14,7 @@ object esSubMenuPopupTriggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasPrefixClsVisibleChildrenPopupPopupClassNamePopupOffsetDisabledModeOnVisibleChange: PopupTriggerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsVisibleChildrenPopupPopupClassNamePopupOffsetDisabledModeOnVisibleChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: PopupTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PopupTriggerProps extends StObject {
     

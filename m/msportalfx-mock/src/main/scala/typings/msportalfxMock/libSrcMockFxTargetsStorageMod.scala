@@ -15,9 +15,7 @@ object libSrcMockFxTargetsStorageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createStorageTarget(
-    hasStorageEndpointSuffixLoadRequestsStoreRequestsOnBeforeRequestMatch: StorageDefinitionConfiguration
-  ): TargetDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createStorageTarget")(hasStorageEndpointSuffixLoadRequestsStoreRequestsOnBeforeRequestMatch.asInstanceOf[js.Any]).asInstanceOf[TargetDefinition]
+  inline def createStorageTarget(param0: StorageDefinitionConfiguration): TargetDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createStorageTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[TargetDefinition]
   
   /* Inlined parent std.Pick<msportalfx-mock.msportalfx-mock/lib/src/MockFx.MockFx.TargetDefinition, 'loadRequests' | 'storeRequests' | 'onBeforeRequestMatch'> */
   trait StorageDefinitionConfiguration extends StObject {

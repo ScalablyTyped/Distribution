@@ -27,10 +27,10 @@ object `@reactNavigationRoutersTabRouterMod` {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[
+  inline def default(param0: TabRouterOptions): Router[
     TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | TabActionType
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Router[
     TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | TabActionType
   ]]

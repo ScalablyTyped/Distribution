@@ -39,7 +39,7 @@ object mod {
     var args: js.Array[String] = js.native
     
     def bashify(): String = js.native
-    def bashify(hasMaskArgv0MaskArgv1ShiftArgv0: SubprocessBashifyOptions): String = js.native
+    def bashify(param0: SubprocessBashifyOptions): String = js.native
     
     def bashifyArg(arg: String): String = js.native
     
@@ -99,7 +99,7 @@ object mod {
   inline def expandTildePath(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("expandTildePath")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def findExecutables(program: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findExecutables")(program.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def findExecutables(program: String, hasPATHPATHEXT: WhichOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findExecutables")(program.asInstanceOf[js.Any], hasPATHPATHEXT.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def findExecutables(program: String, param1: WhichOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findExecutables")(program.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   inline def fork(modulePath: String): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any]).asInstanceOf[ChildProcess]
   inline def fork(modulePath: String, args: js.Array[String]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(modulePath.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
@@ -112,7 +112,7 @@ object mod {
   inline def spawn(command: String, args: Unit, options: SpawnOptions): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
   inline def which(program: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("which")(program.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def which(program: String, hasPATHPATHEXT: WhichOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("which")(program.asInstanceOf[js.Any], hasPATHPATHEXT.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def which(program: String, param1: WhichOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("which")(program.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   trait SubprocessBashifyOptions extends StObject {
     

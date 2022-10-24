@@ -1,8 +1,8 @@
 package typings.puppeteerCore
 
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfo
+import typings.puppeteerCore.libCjsPuppeteerApiBrowserContextMod.BrowserContext
 import typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.Browser
-import typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.BrowserContext
 import typings.puppeteerCore.libCjsPuppeteerApiBrowserMod.IsPageTargetCallback
 import typings.puppeteerCore.libCjsPuppeteerApiPageMod.Page
 import typings.puppeteerCore.libCjsPuppeteerCommonConnectionMod.CDPSession

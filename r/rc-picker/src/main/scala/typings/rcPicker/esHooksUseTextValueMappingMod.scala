@@ -11,5 +11,5 @@ object esHooksUseTextValueMappingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasValueTextsOnTextChange: OnTextChange): js.Tuple3[String, js.Function1[/* text */ String, Unit], js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasValueTextsOnTextChange.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[String, js.Function1[/* text */ String, Unit], js.Function0[Unit]]]
+  inline def default(param0: OnTextChange): js.Tuple3[String, js.Function1[/* text */ String, Unit], js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[String, js.Function1[/* text */ String, Unit], js.Function0[Unit]]]
 }

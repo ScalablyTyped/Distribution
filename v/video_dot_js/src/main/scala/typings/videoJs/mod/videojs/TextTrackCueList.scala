@@ -42,6 +42,13 @@ object TextTrackCueList {
     __obj.asInstanceOf[TextTrackCueList]
   }
   
+  extension [Self <: TextTrackCueList](x: Self) {
+    
+    inline def setGetCueById(value: String => TextTrackCue): Self = StObject.set(x, "getCueById", js.Any.fromFunction1(value))
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+  }
+  
   /**
     * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttrackcue}
     */
@@ -91,12 +98,5 @@ object TextTrackCueList {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
-  }
-  
-  extension [Self <: TextTrackCueList](x: Self) {
-    
-    inline def setGetCueById(value: String => TextTrackCue): Self = StObject.set(x, "getCueById", js.Any.fromFunction1(value))
-    
-    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

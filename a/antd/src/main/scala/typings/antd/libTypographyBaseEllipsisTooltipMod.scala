@@ -11,7 +11,7 @@ object libTypographyBaseEllipsisTooltipMod {
   
   object default {
     
-    inline def apply(hasEnabledEllipsisIsEllipsisChildrenTooltipProps: EllipsisTooltipProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasEnabledEllipsisIsEllipsisChildrenTooltipProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: EllipsisTooltipProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd/lib/typography/Base/EllipsisTooltip", JSImport.Default)
     @js.native

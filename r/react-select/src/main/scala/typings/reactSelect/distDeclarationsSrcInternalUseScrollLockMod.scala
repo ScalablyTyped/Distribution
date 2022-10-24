@@ -11,7 +11,7 @@ object distDeclarationsSrcInternalUseScrollLockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasIsEnabledAccountForScrollbars: Options): js.Function1[/* element */ HTMLElement | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIsEnabledAccountForScrollbars.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* element */ HTMLElement | Null, Unit]]
+  inline def default(param0: Options): js.Function1[/* element */ HTMLElement | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* element */ HTMLElement | Null, Unit]]
   
   trait Options extends StObject {
     

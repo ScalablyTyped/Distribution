@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "fast-csv"
-version := "4.3.6-0d91b7"
-scalaVersion := "3.1.2"
+version := "4.3.6-e8f8af"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "fast-csv__format" % "4.3.5-a7054f",
-  "org.scalablytyped" %%% "fast-csv__parse" % "4.3.6-7bf398",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "fast-csv__format" % "4.3.5-6ecd98",
+  "org.scalablytyped" %%% "fast-csv__parse" % "4.3.6-791784",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

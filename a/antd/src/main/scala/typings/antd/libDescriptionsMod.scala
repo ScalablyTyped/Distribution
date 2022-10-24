@@ -20,9 +20,7 @@ object libDescriptionsMod {
   
   object default {
     
-    inline def apply(
-      hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSizeLabelStyleContentStyle: DescriptionsProps
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSizeLabelStyleContentStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: DescriptionsProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd/lib/descriptions", JSImport.Default)
     @js.native

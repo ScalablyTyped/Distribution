@@ -11,16 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ScrollArea extends StObject {
   
-  def apply(hasChildrenDismissableOnDismissVisibleStyleTheme: Props): Element = js.native
+  def apply(param0: Props): Element = js.native
   
-  var Actions: `0` = js.native
+  var Actions: `13` = js.native
   
-  var Content: CallPropsDisplayNameString = js.native
+  var Content: `12` = js.native
   
-  var ScrollArea: `1` = js.native
+  var ScrollArea: `15` = js.native
   
-  var Title: ComponentType[PickchildrenReactNodestyl] & (NonReactStatics[
-    ComponentType[childrenReactNodestyleSty] & CallHasChildrenThemeStyleRest, 
-    js.Object
-  ]) = js.native
+  var Title: ComponentType[PickchildrenReactNodestyl] & (NonReactStatics[ComponentType[childrenReactNodestyleSty] & `14`, js.Object]) = js.native
 }

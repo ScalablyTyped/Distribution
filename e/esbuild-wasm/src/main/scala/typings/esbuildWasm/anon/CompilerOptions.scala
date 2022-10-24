@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompilerOptions extends StObject {
   
-  var compilerOptions: js.UndefOr[ImportsNotUsedAsValues] = js.undefined
+  var compilerOptions: js.UndefOr[AlwaysStrict] = js.undefined
 }
 object CompilerOptions {
   
@@ -17,7 +17,7 @@ object CompilerOptions {
   
   extension [Self <: CompilerOptions](x: Self) {
     
-    inline def setCompilerOptions(value: ImportsNotUsedAsValues): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+    inline def setCompilerOptions(value: AlwaysStrict): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
     
     inline def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
   }

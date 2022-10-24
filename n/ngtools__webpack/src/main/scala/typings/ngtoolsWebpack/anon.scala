@@ -391,9 +391,9 @@ object anon {
     
     def constructorParametersDownlevelTransform(program: Program): TransformerFactory[SourceFile] = js.native
     
-    def createCompilerHost(hasOptionsTsHost: Options): typings.angularCompilerCli.srcTransformersApiMod.CompilerHost = js.native
+    def createCompilerHost(param0: Options): typings.angularCompilerCli.srcTransformersApiMod.CompilerHost = js.native
     
-    def createProgram(hasRootNamesOptionsHostOldProgram: Host): typings.angularCompilerCli.srcTransformersApiMod.Program = js.native
+    def createProgram(param0: Host): typings.angularCompilerCli.srcTransformersApiMod.Program = js.native
     
     def defaultGatherDiagnostics(program: typings.angularCompilerCli.srcTransformersApiMod.Program): js.Array[Diagnostic] = js.native
     
@@ -427,9 +427,7 @@ object anon {
     @JSName("join")
     def join_PathSegment(basePath: BrandedPath[typings.ngtoolsWebpack.ngtoolsWebpackStrings.PathSegment], paths: String*): BrandedPath[typings.ngtoolsWebpack.ngtoolsWebpackStrings.PathSegment] = js.native
     
-    def performCompilation(
-      hasRootNamesOptionsHostOldProgramEmitCallbackMergeEmitResultsCallbackGatherDiagnosticsCustomTransformersEmitFlagsForceEmitModifiedResourceFiles: CustomTransformers
-    ): PerformCompilationResult = js.native
+    def performCompilation(param0: CustomTransformers): PerformCompilationResult = js.native
     
     def readConfiguration(project: String): ParsedConfiguration = js.native
     def readConfiguration(project: String, existingOptions: Unit, host: ConfigurationHost): ParsedConfiguration = js.native

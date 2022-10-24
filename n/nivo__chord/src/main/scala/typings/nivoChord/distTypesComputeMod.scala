@@ -18,13 +18,13 @@ object distTypesComputeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeArcPath(hasStartAngleEndAngleArcGenerator: ArcGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(hasStartAngleEndAngleArcGenerator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def computeArcPath(param0: ArcGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def computeChordArcsAndRibbons(hasChordDataKeysGetLabelFormatValueGetColor: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordArcsAndRibbons")(hasChordDataKeysGetLabelFormatValueGetColor.asInstanceOf[js.Any]).asInstanceOf[Arcs]
+  inline def computeChordArcsAndRibbons(param0: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordArcsAndRibbons")(param0.asInstanceOf[js.Any]).asInstanceOf[Arcs]
   
-  inline def computeChordGenerators(hasWidthHeightInnerRadiusRatioInnerRadiusOffset: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordGenerators")(hasWidthHeightInnerRadiusRatioInnerRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[Center]
+  inline def computeChordGenerators(param0: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordGenerators")(param0.asInstanceOf[js.Any]).asInstanceOf[Center]
   
-  inline def computeChordLayout(hasPadAngle: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordLayout")(hasPadAngle.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
+  inline def computeChordLayout(param0: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
   
-  inline def computeRibbonPath(hasSourceStartAngleSourceEndAngleTargetStartAngleTargetEndAngleRibbonGenerator: RibbonGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeRibbonPath")(hasSourceStartAngleSourceEndAngleTargetStartAngleTargetEndAngleRibbonGenerator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def computeRibbonPath(param0: RibbonGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeRibbonPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

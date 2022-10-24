@@ -22,7 +22,7 @@ object distScreenMod {
   @js.native
   open class Screen protected () extends StObject {
     def this(ctx: RenderingContext2D) = this()
-    def this(ctx: RenderingContext2D, hasFetchWindow: IScreenOptions) = this()
+    def this(ctx: RenderingContext2D, param1: IScreenOptions) = this()
     
     val animations: js.Array[AnimateElement] = js.native
     
@@ -55,17 +55,12 @@ object distScreenMod {
     
     def setDefaults(ctx: RenderingContext2D): Unit = js.native
     
-    def setViewBox(
-      hasDocumentCtxAspectRatioWidthDesiredWidthHeightDesiredHeightMinXMinYRefXRefYClipClipXClipY: IScreenViewBoxConfig
-    ): Unit = js.native
+    def setViewBox(param0: IScreenViewBoxConfig): Unit = js.native
     
     /* private */ var shouldUpdate: Any = js.native
     
     def start(element: Element): Unit = js.native
-    def start(
-      element: Element,
-      hasEnableRedrawIgnoreMouseIgnoreAnimationIgnoreDimensionsIgnoreClearForceRedrawScaleWidthScaleHeightOffsetXOffsetY: IScreenStartOptions
-    ): Unit = js.native
+    def start(element: Element, param1: IScreenStartOptions): Unit = js.native
     
     def stop(): Unit = js.native
     

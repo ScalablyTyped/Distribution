@@ -269,113 +269,6 @@ object Classroom {
     __obj.asInstanceOf[Classroom]
   }
   
-  extension [Self <: Classroom](x: Self) {
-    
-    inline def setCourses(value: CoursesCollection): Self = StObject.set(x, "Courses", value.asInstanceOf[js.Any])
-    
-    inline def setCoursesUndefined: Self = StObject.set(x, "Courses", js.undefined)
-    
-    inline def setInvitations(value: InvitationsCollection): Self = StObject.set(x, "Invitations", value.asInstanceOf[js.Any])
-    
-    inline def setInvitationsUndefined: Self = StObject.set(x, "Invitations", js.undefined)
-    
-    inline def setNewAnnouncement(value: () => Announcement): Self = StObject.set(x, "newAnnouncement", js.Any.fromFunction0(value))
-    
-    inline def setNewAssignment(value: () => Assignment): Self = StObject.set(x, "newAssignment", js.Any.fromFunction0(value))
-    
-    inline def setNewAssignmentSubmission(value: () => AssignmentSubmission): Self = StObject.set(x, "newAssignmentSubmission", js.Any.fromFunction0(value))
-    
-    inline def setNewAttachment(value: () => Attachment): Self = StObject.set(x, "newAttachment", js.Any.fromFunction0(value))
-    
-    inline def setNewCloudPubsubTopic(value: () => CloudPubsubTopic): Self = StObject.set(x, "newCloudPubsubTopic", js.Any.fromFunction0(value))
-    
-    inline def setNewCourse(value: () => Course): Self = StObject.set(x, "newCourse", js.Any.fromFunction0(value))
-    
-    inline def setNewCourseAlias(value: () => CourseAlias): Self = StObject.set(x, "newCourseAlias", js.Any.fromFunction0(value))
-    
-    inline def setNewCourseMaterial(value: () => CourseMaterial): Self = StObject.set(x, "newCourseMaterial", js.Any.fromFunction0(value))
-    
-    inline def setNewCourseMaterialSet(value: () => CourseMaterialSet): Self = StObject.set(x, "newCourseMaterialSet", js.Any.fromFunction0(value))
-    
-    inline def setNewCourseRosterChangesInfo(value: () => CourseRosterChangesInfo): Self = StObject.set(x, "newCourseRosterChangesInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewCourseWork(value: () => CourseWork): Self = StObject.set(x, "newCourseWork", js.Any.fromFunction0(value))
-    
-    inline def setNewCourseWorkChangesInfo(value: () => CourseWorkChangesInfo): Self = StObject.set(x, "newCourseWorkChangesInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewCourseWorkMaterial(value: () => CourseWorkMaterial): Self = StObject.set(x, "newCourseWorkMaterial", js.Any.fromFunction0(value))
-    
-    inline def setNewDate(value: () => Date): Self = StObject.set(x, "newDate", js.Any.fromFunction0(value))
-    
-    inline def setNewDriveFile(value: () => DriveFile): Self = StObject.set(x, "newDriveFile", js.Any.fromFunction0(value))
-    
-    inline def setNewDriveFolder(value: () => DriveFolder): Self = StObject.set(x, "newDriveFolder", js.Any.fromFunction0(value))
-    
-    inline def setNewFeed(value: () => Feed): Self = StObject.set(x, "newFeed", js.Any.fromFunction0(value))
-    
-    inline def setNewForm(value: () => Form): Self = StObject.set(x, "newForm", js.Any.fromFunction0(value))
-    
-    inline def setNewGlobalPermission(value: () => GlobalPermission): Self = StObject.set(x, "newGlobalPermission", js.Any.fromFunction0(value))
-    
-    inline def setNewGradeHistory(value: () => GradeHistory): Self = StObject.set(x, "newGradeHistory", js.Any.fromFunction0(value))
-    
-    inline def setNewGuardianInvitation(value: () => GuardianInvitation): Self = StObject.set(x, "newGuardianInvitation", js.Any.fromFunction0(value))
-    
-    inline def setNewIndividualStudentsOptions(value: () => IndividualStudentsOptions): Self = StObject.set(x, "newIndividualStudentsOptions", js.Any.fromFunction0(value))
-    
-    inline def setNewInvitation(value: () => Invitation): Self = StObject.set(x, "newInvitation", js.Any.fromFunction0(value))
-    
-    inline def setNewLink(value: () => Link): Self = StObject.set(x, "newLink", js.Any.fromFunction0(value))
-    
-    inline def setNewMaterial(value: () => Material): Self = StObject.set(x, "newMaterial", js.Any.fromFunction0(value))
-    
-    inline def setNewModifyAnnouncementAssigneesRequest(value: () => ModifyAnnouncementAssigneesRequest): Self = StObject.set(x, "newModifyAnnouncementAssigneesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewModifyAttachmentsRequest(value: () => ModifyAttachmentsRequest): Self = StObject.set(x, "newModifyAttachmentsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewModifyCourseWorkAssigneesRequest(value: () => ModifyCourseWorkAssigneesRequest): Self = StObject.set(x, "newModifyCourseWorkAssigneesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewModifyIndividualStudentsOptions(value: () => ModifyIndividualStudentsOptions): Self = StObject.set(x, "newModifyIndividualStudentsOptions", js.Any.fromFunction0(value))
-    
-    inline def setNewMultipleChoiceQuestion(value: () => MultipleChoiceQuestion): Self = StObject.set(x, "newMultipleChoiceQuestion", js.Any.fromFunction0(value))
-    
-    inline def setNewMultipleChoiceSubmission(value: () => MultipleChoiceSubmission): Self = StObject.set(x, "newMultipleChoiceSubmission", js.Any.fromFunction0(value))
-    
-    inline def setNewName(value: () => Name): Self = StObject.set(x, "newName", js.Any.fromFunction0(value))
-    
-    inline def setNewRegistration(value: () => Registration): Self = StObject.set(x, "newRegistration", js.Any.fromFunction0(value))
-    
-    inline def setNewSharedDriveFile(value: () => SharedDriveFile): Self = StObject.set(x, "newSharedDriveFile", js.Any.fromFunction0(value))
-    
-    inline def setNewShortAnswerSubmission(value: () => ShortAnswerSubmission): Self = StObject.set(x, "newShortAnswerSubmission", js.Any.fromFunction0(value))
-    
-    inline def setNewStateHistory(value: () => StateHistory): Self = StObject.set(x, "newStateHistory", js.Any.fromFunction0(value))
-    
-    inline def setNewStudent(value: () => Student): Self = StObject.set(x, "newStudent", js.Any.fromFunction0(value))
-    
-    inline def setNewStudentSubmission(value: () => StudentSubmission): Self = StObject.set(x, "newStudentSubmission", js.Any.fromFunction0(value))
-    
-    inline def setNewSubmissionHistory(value: () => SubmissionHistory): Self = StObject.set(x, "newSubmissionHistory", js.Any.fromFunction0(value))
-    
-    inline def setNewTeacher(value: () => Teacher): Self = StObject.set(x, "newTeacher", js.Any.fromFunction0(value))
-    
-    inline def setNewTimeOfDay(value: () => TimeOfDay): Self = StObject.set(x, "newTimeOfDay", js.Any.fromFunction0(value))
-    
-    inline def setNewTopic(value: () => Topic): Self = StObject.set(x, "newTopic", js.Any.fromFunction0(value))
-    
-    inline def setNewUserProfile(value: () => UserProfile): Self = StObject.set(x, "newUserProfile", js.Any.fromFunction0(value))
-    
-    inline def setNewYouTubeVideo(value: () => YouTubeVideo): Self = StObject.set(x, "newYouTubeVideo", js.Any.fromFunction0(value))
-    
-    inline def setRegistrations(value: RegistrationsCollection): Self = StObject.set(x, "Registrations", value.asInstanceOf[js.Any])
-    
-    inline def setRegistrationsUndefined: Self = StObject.set(x, "Registrations", js.undefined)
-    
-    inline def setUserProfiles(value: UserProfilesCollection): Self = StObject.set(x, "UserProfiles", value.asInstanceOf[js.Any])
-    
-    inline def setUserProfilesUndefined: Self = StObject.set(x, "UserProfiles", js.undefined)
-  }
-  
   object Collection {
     
     object Courses {
@@ -966,6 +859,113 @@ object Classroom {
         inline def setGuardiansUndefined: Self = StObject.set(x, "Guardians", js.undefined)
       }
     }
+  }
+  
+  extension [Self <: Classroom](x: Self) {
+    
+    inline def setCourses(value: CoursesCollection): Self = StObject.set(x, "Courses", value.asInstanceOf[js.Any])
+    
+    inline def setCoursesUndefined: Self = StObject.set(x, "Courses", js.undefined)
+    
+    inline def setInvitations(value: InvitationsCollection): Self = StObject.set(x, "Invitations", value.asInstanceOf[js.Any])
+    
+    inline def setInvitationsUndefined: Self = StObject.set(x, "Invitations", js.undefined)
+    
+    inline def setNewAnnouncement(value: () => Announcement): Self = StObject.set(x, "newAnnouncement", js.Any.fromFunction0(value))
+    
+    inline def setNewAssignment(value: () => Assignment): Self = StObject.set(x, "newAssignment", js.Any.fromFunction0(value))
+    
+    inline def setNewAssignmentSubmission(value: () => AssignmentSubmission): Self = StObject.set(x, "newAssignmentSubmission", js.Any.fromFunction0(value))
+    
+    inline def setNewAttachment(value: () => Attachment): Self = StObject.set(x, "newAttachment", js.Any.fromFunction0(value))
+    
+    inline def setNewCloudPubsubTopic(value: () => CloudPubsubTopic): Self = StObject.set(x, "newCloudPubsubTopic", js.Any.fromFunction0(value))
+    
+    inline def setNewCourse(value: () => Course): Self = StObject.set(x, "newCourse", js.Any.fromFunction0(value))
+    
+    inline def setNewCourseAlias(value: () => CourseAlias): Self = StObject.set(x, "newCourseAlias", js.Any.fromFunction0(value))
+    
+    inline def setNewCourseMaterial(value: () => CourseMaterial): Self = StObject.set(x, "newCourseMaterial", js.Any.fromFunction0(value))
+    
+    inline def setNewCourseMaterialSet(value: () => CourseMaterialSet): Self = StObject.set(x, "newCourseMaterialSet", js.Any.fromFunction0(value))
+    
+    inline def setNewCourseRosterChangesInfo(value: () => CourseRosterChangesInfo): Self = StObject.set(x, "newCourseRosterChangesInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewCourseWork(value: () => CourseWork): Self = StObject.set(x, "newCourseWork", js.Any.fromFunction0(value))
+    
+    inline def setNewCourseWorkChangesInfo(value: () => CourseWorkChangesInfo): Self = StObject.set(x, "newCourseWorkChangesInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewCourseWorkMaterial(value: () => CourseWorkMaterial): Self = StObject.set(x, "newCourseWorkMaterial", js.Any.fromFunction0(value))
+    
+    inline def setNewDate(value: () => Date): Self = StObject.set(x, "newDate", js.Any.fromFunction0(value))
+    
+    inline def setNewDriveFile(value: () => DriveFile): Self = StObject.set(x, "newDriveFile", js.Any.fromFunction0(value))
+    
+    inline def setNewDriveFolder(value: () => DriveFolder): Self = StObject.set(x, "newDriveFolder", js.Any.fromFunction0(value))
+    
+    inline def setNewFeed(value: () => Feed): Self = StObject.set(x, "newFeed", js.Any.fromFunction0(value))
+    
+    inline def setNewForm(value: () => Form): Self = StObject.set(x, "newForm", js.Any.fromFunction0(value))
+    
+    inline def setNewGlobalPermission(value: () => GlobalPermission): Self = StObject.set(x, "newGlobalPermission", js.Any.fromFunction0(value))
+    
+    inline def setNewGradeHistory(value: () => GradeHistory): Self = StObject.set(x, "newGradeHistory", js.Any.fromFunction0(value))
+    
+    inline def setNewGuardianInvitation(value: () => GuardianInvitation): Self = StObject.set(x, "newGuardianInvitation", js.Any.fromFunction0(value))
+    
+    inline def setNewIndividualStudentsOptions(value: () => IndividualStudentsOptions): Self = StObject.set(x, "newIndividualStudentsOptions", js.Any.fromFunction0(value))
+    
+    inline def setNewInvitation(value: () => Invitation): Self = StObject.set(x, "newInvitation", js.Any.fromFunction0(value))
+    
+    inline def setNewLink(value: () => Link): Self = StObject.set(x, "newLink", js.Any.fromFunction0(value))
+    
+    inline def setNewMaterial(value: () => Material): Self = StObject.set(x, "newMaterial", js.Any.fromFunction0(value))
+    
+    inline def setNewModifyAnnouncementAssigneesRequest(value: () => ModifyAnnouncementAssigneesRequest): Self = StObject.set(x, "newModifyAnnouncementAssigneesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewModifyAttachmentsRequest(value: () => ModifyAttachmentsRequest): Self = StObject.set(x, "newModifyAttachmentsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewModifyCourseWorkAssigneesRequest(value: () => ModifyCourseWorkAssigneesRequest): Self = StObject.set(x, "newModifyCourseWorkAssigneesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewModifyIndividualStudentsOptions(value: () => ModifyIndividualStudentsOptions): Self = StObject.set(x, "newModifyIndividualStudentsOptions", js.Any.fromFunction0(value))
+    
+    inline def setNewMultipleChoiceQuestion(value: () => MultipleChoiceQuestion): Self = StObject.set(x, "newMultipleChoiceQuestion", js.Any.fromFunction0(value))
+    
+    inline def setNewMultipleChoiceSubmission(value: () => MultipleChoiceSubmission): Self = StObject.set(x, "newMultipleChoiceSubmission", js.Any.fromFunction0(value))
+    
+    inline def setNewName(value: () => Name): Self = StObject.set(x, "newName", js.Any.fromFunction0(value))
+    
+    inline def setNewRegistration(value: () => Registration): Self = StObject.set(x, "newRegistration", js.Any.fromFunction0(value))
+    
+    inline def setNewSharedDriveFile(value: () => SharedDriveFile): Self = StObject.set(x, "newSharedDriveFile", js.Any.fromFunction0(value))
+    
+    inline def setNewShortAnswerSubmission(value: () => ShortAnswerSubmission): Self = StObject.set(x, "newShortAnswerSubmission", js.Any.fromFunction0(value))
+    
+    inline def setNewStateHistory(value: () => StateHistory): Self = StObject.set(x, "newStateHistory", js.Any.fromFunction0(value))
+    
+    inline def setNewStudent(value: () => Student): Self = StObject.set(x, "newStudent", js.Any.fromFunction0(value))
+    
+    inline def setNewStudentSubmission(value: () => StudentSubmission): Self = StObject.set(x, "newStudentSubmission", js.Any.fromFunction0(value))
+    
+    inline def setNewSubmissionHistory(value: () => SubmissionHistory): Self = StObject.set(x, "newSubmissionHistory", js.Any.fromFunction0(value))
+    
+    inline def setNewTeacher(value: () => Teacher): Self = StObject.set(x, "newTeacher", js.Any.fromFunction0(value))
+    
+    inline def setNewTimeOfDay(value: () => TimeOfDay): Self = StObject.set(x, "newTimeOfDay", js.Any.fromFunction0(value))
+    
+    inline def setNewTopic(value: () => Topic): Self = StObject.set(x, "newTopic", js.Any.fromFunction0(value))
+    
+    inline def setNewUserProfile(value: () => UserProfile): Self = StObject.set(x, "newUserProfile", js.Any.fromFunction0(value))
+    
+    inline def setNewYouTubeVideo(value: () => YouTubeVideo): Self = StObject.set(x, "newYouTubeVideo", js.Any.fromFunction0(value))
+    
+    inline def setRegistrations(value: RegistrationsCollection): Self = StObject.set(x, "Registrations", value.asInstanceOf[js.Any])
+    
+    inline def setRegistrationsUndefined: Self = StObject.set(x, "Registrations", js.undefined)
+    
+    inline def setUserProfiles(value: UserProfilesCollection): Self = StObject.set(x, "UserProfiles", value.asInstanceOf[js.Any])
+    
+    inline def setUserProfilesUndefined: Self = StObject.set(x, "UserProfiles", js.undefined)
   }
   
   object Schema {

@@ -11,7 +11,7 @@ object distEsmLoaderInfinitySpinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasColorWidth: Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColorWidth.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default(param0: Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait Props extends StObject {
     

@@ -13,6 +13,6 @@ object libNumberFormatSetNumberFormatUnitOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SetNumberFormatUnitOptions(nf: NumberFormat, options: Unit, hasGetInternalSlots: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def SetNumberFormatUnitOptions(nf: NumberFormat, options: NumberFormatOptions, hasGetInternalSlots: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def SetNumberFormatUnitOptions(nf: NumberFormat, options: Unit, param2: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def SetNumberFormatUnitOptions(nf: NumberFormat, options: NumberFormatOptions, param2: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetNumberFormatUnitOptions")(nf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

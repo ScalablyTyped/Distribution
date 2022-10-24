@@ -11,7 +11,7 @@ object typesBroadcastQueryClientExperimentalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def broadcastQueryClient(hasQueryClientBroadcastChannel: BroadcastQueryClientOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcastQueryClient")(hasQueryClientBroadcastChannel.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def broadcastQueryClient(param0: BroadcastQueryClientOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcastQueryClient")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait BroadcastQueryClientOptions extends StObject {
     

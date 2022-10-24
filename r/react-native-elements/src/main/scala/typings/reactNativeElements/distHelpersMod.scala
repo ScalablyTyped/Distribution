@@ -85,7 +85,7 @@ object distHelpersMod {
   inline def normalizeText(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeText")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def normalizeText(number: Double, factor: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeText")(number.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def patchWebProps[T /* <: Record[Any, Any] */](hasUpdateThemeReplaceThemeOnClearRest: T): Pick[T, Exclude[/* keyof T */ String, updateTheme | replaceTheme | onClear]] = ^.asInstanceOf[js.Dynamic].applyDynamic("patchWebProps")(hasUpdateThemeReplaceThemeOnClearRest.asInstanceOf[js.Any]).asInstanceOf[Pick[T, Exclude[/* keyof T */ String, updateTheme | replaceTheme | onClear]]]
+  inline def patchWebProps[T /* <: Record[Any, Any] */](param0: T): Pick[T, Exclude[/* keyof T */ String, updateTheme | replaceTheme | onClear]] = ^.asInstanceOf[js.Dynamic].applyDynamic("patchWebProps")(param0.asInstanceOf[js.Any]).asInstanceOf[Pick[T, Exclude[/* keyof T */ String, updateTheme | replaceTheme | onClear]]]
   
   inline def renderNode(Component: Any, content: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderNode")(Component.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def renderNode(Component: Any, content: Any, defaultProps: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderNode")(Component.asInstanceOf[js.Any], content.asInstanceOf[js.Any], defaultProps.asInstanceOf[js.Any])).asInstanceOf[Any]

@@ -102,7 +102,7 @@ object esmListOptionGroupMod {
   
   object default {
     
-    inline def apply(hasChildrenClassNameComponent: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenClassNameComponent.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-widgets/esm/ListOptionGroup", JSImport.Default)
     @js.native

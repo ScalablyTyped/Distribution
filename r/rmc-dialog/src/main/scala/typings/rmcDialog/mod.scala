@@ -54,6 +54,6 @@ object mod {
     def saveRef(node: Any): Unit = js.native
     
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MDialogWrap(hasVisible: Visible): Boolean = js.native
+    def shouldComponentUpdate_MDialogWrap(param0: Visible): Boolean = js.native
   }
 }

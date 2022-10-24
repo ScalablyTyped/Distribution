@@ -13,7 +13,7 @@ object typesMenuKeyboardFocusProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def MenuKeyboardFocusProvider(hasHorizontalChildren: MenuKeyboardFocusProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuKeyboardFocusProvider")(hasHorizontalChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuKeyboardFocusProvider(param0: MenuKeyboardFocusProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuKeyboardFocusProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait MenuKeyboardFocusProviderProps
     extends StObject

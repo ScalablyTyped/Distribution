@@ -14,7 +14,7 @@ object esmAddToListOptionMod {
   
   object default {
     
-    inline def apply(hasChildrenProps: AddToListOptionProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: AddToListOptionProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-widgets/esm/AddToListOption", JSImport.Default)
     @js.native

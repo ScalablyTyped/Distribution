@@ -15,9 +15,7 @@ object esOptionListColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasPrefixClsMultipleOptionsActiveValuePrevValuePathOnToggleOpenOnSelectOnActiveCheckedSetHalfCheckedSetLoadingKeysIsSelectable: ColumnProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsMultipleOptionsActiveValuePrevValuePathOnToggleOpenOnSelectOnActiveCheckedSetHalfCheckedSetLoadingKeysIsSelectable.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ColumnProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-cascader/es/OptionList/Column", "FIX_LABEL")
   @js.native

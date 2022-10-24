@@ -19,15 +19,6 @@ object AdminGroupsSettings {
     __obj.asInstanceOf[AdminGroupsSettings]
   }
   
-  extension [Self <: AdminGroupsSettings](x: Self) {
-    
-    inline def setGroups(value: GroupsCollection): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
-    
-    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
-    
-    inline def setNewGroups(value: () => typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups): Self = StObject.set(x, "newGroups", js.Any.fromFunction0(value))
-  }
-  
   object Collection {
     
     trait GroupsCollection extends StObject {
@@ -71,6 +62,15 @@ object AdminGroupsSettings {
         ): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       }
     }
+  }
+  
+  extension [Self <: AdminGroupsSettings](x: Self) {
+    
+    inline def setGroups(value: GroupsCollection): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    
+    inline def setNewGroups(value: () => typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups): Self = StObject.set(x, "newGroups", js.Any.fromFunction0(value))
   }
   
   object Schema {

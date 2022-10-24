@@ -17,9 +17,7 @@ object libTransferOperationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay: TransferOperationProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: TransferOperationProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TransferOperationProps extends StObject {
     

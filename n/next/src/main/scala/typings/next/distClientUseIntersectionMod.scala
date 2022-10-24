@@ -14,7 +14,7 @@ object distClientUseIntersectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useIntersection[T /* <: Element */](hasRootRefRootMarginDisabled: UseIntersection_): js.Tuple3[js.Function1[/* element */ T | Null, Unit], Boolean, js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useIntersection")(hasRootRefRootMarginDisabled.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Function1[/* element */ T | Null, Unit], Boolean, js.Function0[Unit]]]
+  inline def useIntersection[T /* <: Element */](param0: UseIntersection_): js.Tuple3[js.Function1[/* element */ T | Null, Unit], Boolean, js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useIntersection")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Function1[/* element */ T | Null, Unit], Boolean, js.Function0[Unit]]]
   
   /* Inlined std.Pick<std.IntersectionObserverInit, 'rootMargin' | 'root'> */
   trait UseIntersectionObserverInit extends StObject {

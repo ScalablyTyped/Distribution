@@ -14,9 +14,7 @@ object typesRipplesUseRipplesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useRipples[E /* <: HTMLElement */](
-    hasRippleTimeoutRippleClassNamesRippleContainerClassNameRippleClassNameDisableRippleDisableSpacebarClickOptions: RipplesOptions[E]
-  ): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRipples")(hasRippleTimeoutRippleClassNamesRippleContainerClassNameRippleClassNameDisableRippleDisableSpacebarClickOptions.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  inline def useRipples[E /* <: HTMLElement */](param0: RipplesOptions[E]): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRipples")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
   
   trait ReturnValue[E /* <: HTMLElement */] extends StObject {
     

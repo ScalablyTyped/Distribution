@@ -1,31 +1,34 @@
 package typings.wixStyleReact.anon
 
-import typings.wixStyleReact.calendarPanelMod.SelectedDaysType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Id extends StObject {
   
-  var id: js.UndefOr[String | Double] = js.undefined
+  var disabled: Boolean
   
-  var selectedDays: js.UndefOr[SelectedDaysType] = js.undefined
+  var id: String
+  
+  var overrideOptionStyle: Boolean
+  
+  var value: Any
 }
 object Id {
   
-  inline def apply(): Id = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(disabled: Boolean, id: String, overrideOptionStyle: Boolean, value: Any): Id = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], overrideOptionStyle = overrideOptionStyle.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
   extension [Self <: Id](x: Self) {
     
-    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setSelectedDays(value: SelectedDaysType): Self = StObject.set(x, "selectedDays", value.asInstanceOf[js.Any])
+    inline def setOverrideOptionStyle(value: Boolean): Self = StObject.set(x, "overrideOptionStyle", value.asInstanceOf[js.Any])
     
-    inline def setSelectedDaysUndefined: Self = StObject.set(x, "selectedDays", js.undefined)
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

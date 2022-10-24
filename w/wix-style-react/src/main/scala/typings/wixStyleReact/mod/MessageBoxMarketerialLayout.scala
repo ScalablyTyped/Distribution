@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wix-style-react", "MessageBoxMarketerialLayout")
 @js.native
-class MessageBoxMarketerialLayout ()
-  extends typings.wixStyleReact.messageBoxMod.MessageBoxMarketerialLayout
+open class MessageBoxMarketerialLayout ()
+  extends typings.wixStyleReact.distTypesMessageBoxMarketerialLayoutMod.default

@@ -15,7 +15,7 @@ object distTypesRadarGridMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RadarGrid[D /* <: Record[String, Any] */](hasIndicesLevelsShapeRadiusRotationAngleStepLabelLabelOffset: RadarGridProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarGrid")(hasIndicesLevelsShapeRadiusRotationAngleStepLabelLabelOffset.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RadarGrid[D /* <: Record[String, Any] */](param0: RadarGridProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarGrid")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RadarGridProps[D /* <: Record[String, Any] */] extends StObject {
     

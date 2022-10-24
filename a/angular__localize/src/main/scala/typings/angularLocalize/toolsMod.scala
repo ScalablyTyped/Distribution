@@ -52,7 +52,7 @@ object toolsMod {
   @js.native
   open class MessageExtractor protected ()
     extends typings.angularLocalize.toolsSrcExtractExtractionMod.MessageExtractor {
-    def this(fs: ReadonlyFileSystem, logger: Logger, hasBasePathUseSourceMapsLocalizeName: ExtractionOptions) = this()
+    def this(fs: ReadonlyFileSystem, logger: Logger, param2: ExtractionOptions) = this()
   }
   
   @JSImport("@angular/localize/tools", "SimpleJsonTranslationParser")
@@ -169,20 +169,20 @@ object toolsMod {
   inline def makeEs2015TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
-    hasMissingTranslationLocalizeName: Unit,
+    param2: Unit,
     fs: PathManipulation
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs2015TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
-    hasMissingTranslationLocalizeName: TranslatePluginOptions
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+    param2: TranslatePluginOptions
+  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs2015TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
-    hasMissingTranslationLocalizeName: TranslatePluginOptions,
+    param2: TranslatePluginOptions,
     fs: PathManipulation
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   
   inline def makeEs5TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
@@ -191,23 +191,23 @@ object toolsMod {
   inline def makeEs5TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
-    hasMissingTranslationLocalizeName: Unit,
+    param2: Unit,
     fs: PathManipulation
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs5TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
-    hasMissingTranslationLocalizeName: TranslatePluginOptions
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+    param2: TranslatePluginOptions
+  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs5TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
-    hasMissingTranslationLocalizeName: TranslatePluginOptions,
+    param2: TranslatePluginOptions,
     fs: PathManipulation
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   
   inline def makeLocalePlugin(locale: String): PluginObj = ^.asInstanceOf[js.Dynamic].applyDynamic("makeLocalePlugin")(locale.asInstanceOf[js.Any]).asInstanceOf[PluginObj]
-  inline def makeLocalePlugin(locale: String, hasLocalizeName: TranslatePluginOptions): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeLocalePlugin")(locale.asInstanceOf[js.Any], hasLocalizeName.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  inline def makeLocalePlugin(locale: String, param1: TranslatePluginOptions): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeLocalePlugin")(locale.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   
   inline def translate(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,

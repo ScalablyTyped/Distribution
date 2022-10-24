@@ -13,7 +13,5 @@ object typesUseTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useTransition[E /* <: HTMLElement */](
-    hasNodeRefTimeoutTransitionInReflowTemporaryAppearEnterExitOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited: TransitionHookOptions[E]
-  ): TransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(hasNodeRefTimeoutTransitionInReflowTemporaryAppearEnterExitOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited.asInstanceOf[js.Any]).asInstanceOf[TransitionHookReturnValue[E]]
+  inline def useTransition[E /* <: HTMLElement */](param0: TransitionHookOptions[E]): TransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[TransitionHookReturnValue[E]]
 }

@@ -14,7 +14,7 @@ object libTypescriptCoreProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasProps: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     

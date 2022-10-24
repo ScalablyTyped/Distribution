@@ -63,7 +63,7 @@ object mod {
     inline def SIDEBAR_=(x: sidebar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIDEBAR")(x.asInstanceOf[js.Any])
   }
   
-  inline def Consumer[P](hasFilterChildren: ManagerConsumerProps[P]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Consumer")(hasFilterChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Consumer[P](param0: ManagerConsumerProps[P]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Consumer")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@storybook/api", "Provider")
   @js.native
@@ -296,9 +296,7 @@ object mod {
       docsMode: Boolean,
       location: PartialLocationAncestorOrigins,
       navigate: ReturnType[
-          js.Function0[
-            js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-          ]
+          js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
         ],
       path: String,
       provider: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider
@@ -369,9 +367,7 @@ object mod {
       fullAPI: API,
       location: PartialLocationAncestorOrigins,
       navigate: ReturnType[
-          js.Function0[
-            js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-          ]
+          js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
         ],
       path: String,
       provider: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider,
@@ -439,9 +435,7 @@ object mod {
     var location: PartialLocationAncestorOrigins
     
     var navigate: ReturnType[
-        js.Function0[
-          js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-        ]
+        js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
       ]
     
     var path: String
@@ -458,9 +452,7 @@ object mod {
       layout: Layout,
       location: PartialLocationAncestorOrigins,
       navigate: ReturnType[
-          js.Function0[
-            js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-          ]
+          js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
         ],
       notifications: js.Array[Notification],
       path: String,
@@ -485,9 +477,7 @@ object mod {
       
       inline def setNavigate(
         value: ReturnType[
-              js.Function0[
-                js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
-              ]
+              js.Function0[js.Function2[/* to */ String | Double, /* param1 */ js.UndefOr[Any], Unit]]
             ]
       ): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
       

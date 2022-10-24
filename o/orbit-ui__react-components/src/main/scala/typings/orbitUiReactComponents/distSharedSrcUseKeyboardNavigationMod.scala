@@ -15,12 +15,8 @@ object distSharedSrcUseKeyboardNavigationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useKeyboardNavigation(focusManager: FocusManager, hasPreviousNextFirstLast: KeyboardNavigationBindings): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
-  inline def useKeyboardNavigation(
-    focusManager: FocusManager,
-    hasPreviousNextFirstLast: KeyboardNavigationBindings,
-    hasOnSelect: KeyboardNavigationOptions
-  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any], hasOnSelect.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+  inline def useKeyboardNavigation(focusManager: FocusManager, param1: KeyboardNavigationBindings): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+  inline def useKeyboardNavigation(focusManager: FocusManager, param1: KeyboardNavigationBindings, param2: KeyboardNavigationOptions): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
   
   trait KeyboardNavigationBindings extends StObject {
     

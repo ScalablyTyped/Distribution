@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofAUTH extends StObject {
   
-  def transformArguments(hasUsernamePassword: AuthOptions): RedisCommandArguments
+  def transformArguments(param0: AuthOptions): RedisCommandArguments
   
   def transformReply(): RedisCommandArgument
 }

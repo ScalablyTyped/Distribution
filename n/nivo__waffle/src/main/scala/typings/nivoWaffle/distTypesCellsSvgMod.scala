@@ -16,7 +16,7 @@ object distTypesCellsSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CellsSvg[RawDatum /* <: Datum */](hasCellsComputedDataCellSizeOriginBorderWidthGetBorderColor: CellsSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CellsSvg")(hasCellsComputedDataCellSizeOriginBorderWidthGetBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CellsSvg[RawDatum /* <: Datum */](param0: CellsSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CellsSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CellsSvgProps[RawDatum /* <: Datum */] extends StObject {
     

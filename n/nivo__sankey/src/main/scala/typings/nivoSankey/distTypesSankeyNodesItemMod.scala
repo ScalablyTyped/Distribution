@@ -17,9 +17,7 @@ object distTypesSankeyNodesItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SankeyNodesItem[N /* <: DefaultNode */, L /* <: DefaultLink */](
-    hasNodeXYWidthHeightColorOpacityBorderWidthBorderColorBorderRadiusSetCurrentIsInteractiveOnClickTooltip: SankeyNodesItemProps[N, L]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SankeyNodesItem")(hasNodeXYWidthHeightColorOpacityBorderWidthBorderColorBorderRadiusSetCurrentIsInteractiveOnClickTooltip.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SankeyNodesItem[N /* <: DefaultNode */, L /* <: DefaultLink */](param0: SankeyNodesItemProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SankeyNodesItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @js.native
   trait SankeyNodesItemProps[N /* <: DefaultNode */, L /* <: DefaultLink */] extends StObject {

@@ -18,9 +18,7 @@ object libJsonldJobPostingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasTypeKeyOverrideBaseSalaryHiringOrganizationApplicantLocationRequirementsExperienceRequirementsJobLocationRest: JobPostingJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideBaseSalaryHiringOrganizationApplicantLocationRequirementsExperienceRequirementsJobLocationRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: JobPostingJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait EducationalOccupationalCredential extends StObject {
     

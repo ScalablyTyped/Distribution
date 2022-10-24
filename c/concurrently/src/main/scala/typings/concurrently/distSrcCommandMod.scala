@@ -20,7 +20,7 @@ object distSrcCommandMod {
     extends StObject
        with CommandInfo {
     def this(
-      hasIndexNameCommandPrefixColorEnvCwd: CommandInfoindexnumber,
+      param0: CommandInfoindexnumber,
       spawnOpts: SpawnOptions,
       spawn: SpawnCommand,
       killProcess: KillProcess

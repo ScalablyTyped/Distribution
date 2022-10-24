@@ -1,35 +1,44 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.MouseEvent
-import typings.react.mod.MouseEventHandler
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactNode
-import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Label extends StObject {
   
-  var label: js.UndefOr[ReactNode] = js.undefined
+  var disabled: Any
   
-  var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
+  var id: Any
+  
+  var label: Any
+  
+  var overrideOptionStyle: Boolean
+  
+  def value(param0: Dictx): typings.react.mod.global.JSX.Element
 }
 object Label {
   
-  inline def apply(): Label = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    disabled: Any,
+    id: Any,
+    label: Any,
+    overrideOptionStyle: Boolean,
+    value: Dictx => typings.react.mod.global.JSX.Element
+  ): Label = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], overrideOptionStyle = overrideOptionStyle.asInstanceOf[js.Any], value = js.Any.fromFunction1(value))
     __obj.asInstanceOf[Label]
   }
   
   extension [Self <: Label](x: Self) {
     
-    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Any): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOverrideOptionStyle(value: Boolean): Self = StObject.set(x, "overrideOptionStyle", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Dictx => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

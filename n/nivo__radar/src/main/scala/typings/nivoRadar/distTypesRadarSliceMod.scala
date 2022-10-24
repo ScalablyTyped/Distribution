@@ -15,9 +15,7 @@ object distTypesRadarSliceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RadarSlice[D /* <: Record[String, Any] */](
-    hasDatumKeysIndexFormatValueColorByKeyRadiusStartAngleEndAngleArcGeneratorTooltip: RadarSliceProps[D]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarSlice")(hasDatumKeysIndexFormatValueColorByKeyRadiusStartAngleEndAngleArcGeneratorTooltip.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RadarSlice[D /* <: Record[String, Any] */](param0: RadarSliceProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarSlice")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RadarSliceProps[D /* <: Record[String, Any] */] extends StObject {
     

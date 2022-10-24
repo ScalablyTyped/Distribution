@@ -16,7 +16,7 @@ object buildPluginsIconsAssetContentsMod {
   
   inline def createContentsJsonItem(item: ContentsJsonImage): ContentsJsonImage = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentsJsonItem")(item.asInstanceOf[js.Any]).asInstanceOf[ContentsJsonImage]
   
-  inline def writeContentsJsonAsync(directory: String, hasImages: PickContentsJsonimages): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeContentsJsonAsync")(directory.asInstanceOf[js.Any], hasImages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeContentsJsonAsync(directory: String, param1: PickContentsJsonimages): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeContentsJsonAsync")(directory.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait ContentsJson extends StObject {
     

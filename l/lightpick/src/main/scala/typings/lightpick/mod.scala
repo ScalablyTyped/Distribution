@@ -548,38 +548,6 @@ object mod {
       }
     }
     
-    /**
-      * Callback function for when the picker is hidden.
-      */
-    type OnCloseFn = js.ThisFunction0[/* this */ Lightpick, Unit]
-    
-    type OnErrorFn = js.ThisFunction1[/* this */ Lightpick, /* message */ String, Unit]
-    
-    /**
-      * Callback function for when the months select is changed.
-      */
-    type OnMonthsChangeFn = js.ThisFunction1[/* this */ Lightpick, /* month */ Double, Unit]
-    
-    /**
-      * Callback function for when the picker becomes visible.
-      */
-    type OnOpenFn = js.ThisFunction0[/* this */ Lightpick, Unit]
-    
-    /**
-      * Callback function for when a date is selected.
-      */
-    type OnSelectFn = js.ThisFunction2[/* this */ Lightpick, /* startDate */ OutputDate, /* endDate */ OutputDate, Unit]
-    
-    /**
-      * Callback function for when either a start or an end date is selected.
-      */
-    type OnSelectStartEndFn = js.ThisFunction1[/* this */ Lightpick, /* date */ OutputDate, Unit]
-    
-    /**
-      * Callback function for when the years select is changed.
-      */
-    type OnYearsChangeFn = js.ThisFunction1[/* this */ Lightpick, /* year */ Double, Unit]
-    
     extension [Self <: Options](x: Self) {
       
       inline def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
@@ -758,6 +726,38 @@ object mod {
       
       inline def setWeekdayStyleUndefined: Self = StObject.set(x, "weekdayStyle", js.undefined)
     }
+    
+    /**
+      * Callback function for when the picker is hidden.
+      */
+    type OnCloseFn = js.ThisFunction0[/* this */ Lightpick, Unit]
+    
+    type OnErrorFn = js.ThisFunction1[/* this */ Lightpick, /* message */ String, Unit]
+    
+    /**
+      * Callback function for when the months select is changed.
+      */
+    type OnMonthsChangeFn = js.ThisFunction1[/* this */ Lightpick, /* month */ Double, Unit]
+    
+    /**
+      * Callback function for when the picker becomes visible.
+      */
+    type OnOpenFn = js.ThisFunction0[/* this */ Lightpick, Unit]
+    
+    /**
+      * Callback function for when a date is selected.
+      */
+    type OnSelectFn = js.ThisFunction2[/* this */ Lightpick, /* startDate */ OutputDate, /* endDate */ OutputDate, Unit]
+    
+    /**
+      * Callback function for when either a start or an end date is selected.
+      */
+    type OnSelectStartEndFn = js.ThisFunction1[/* this */ Lightpick, /* date */ OutputDate, Unit]
+    
+    /**
+      * Callback function for when the years select is changed.
+      */
+    type OnYearsChangeFn = js.ThisFunction1[/* this */ Lightpick, /* year */ Double, Unit]
     
     /* Rewritten from type alias, can be one of: 
       - typings.lightpick.lightpickStrings.auto

@@ -55,7 +55,7 @@ object libUtilsMod {
   inline def randomId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomId")().asInstanceOf[String]
   
   inline def shouldRejectKeystrokes(): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldRejectKeystrokes")().asInstanceOf[Boolean | Null]
-  inline def shouldRejectKeystrokes(hasIgnoreWhenFocused: IgnoreWhenFocused): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldRejectKeystrokes")(hasIgnoreWhenFocused.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
+  inline def shouldRejectKeystrokes(param0: IgnoreWhenFocused): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldRejectKeystrokes")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
   
   inline def swallowEvent(event: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("swallowEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

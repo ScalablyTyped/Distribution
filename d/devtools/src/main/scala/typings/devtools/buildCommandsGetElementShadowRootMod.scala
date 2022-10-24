@@ -12,5 +12,5 @@ object buildCommandsGetElementShadowRootMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasElementId: ElementId): js.Promise[Shadow606611e4a52e4f735466cecf] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Shadow606611e4a52e4f735466cecf]]
+  inline def default(param1: ElementId): js.Promise[Shadow606611e4a52e4f735466cecf] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Shadow606611e4a52e4f735466cecf]]
 }

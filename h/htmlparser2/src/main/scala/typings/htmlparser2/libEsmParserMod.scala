@@ -232,9 +232,7 @@ object libEsmParserMod {
     /**
       * Allows the default tokenizer to be overwritten.
       */
-    var Tokenizer: js.UndefOr[
-        Instantiable2[/* hasXmlModeDecodeEntities */ DecodeEntities, /* cbs */ Callbacks, default]
-      ] = js.undefined
+    var Tokenizer: js.UndefOr[Instantiable2[/* param0 */ DecodeEntities, /* cbs */ Callbacks, default]] = js.undefined
     
     /**
       * Decode entities within the document.
@@ -312,7 +310,7 @@ object libEsmParserMod {
       
       inline def setRecognizeSelfClosingUndefined: Self = StObject.set(x, "recognizeSelfClosing", js.undefined)
       
-      inline def setTokenizer(value: Instantiable2[/* hasXmlModeDecodeEntities */ DecodeEntities, /* cbs */ Callbacks, default]): Self = StObject.set(x, "Tokenizer", value.asInstanceOf[js.Any])
+      inline def setTokenizer(value: Instantiable2[/* param0 */ DecodeEntities, /* cbs */ Callbacks, default]): Self = StObject.set(x, "Tokenizer", value.asInstanceOf[js.Any])
       
       inline def setTokenizerUndefined: Self = StObject.set(x, "Tokenizer", js.undefined)
       

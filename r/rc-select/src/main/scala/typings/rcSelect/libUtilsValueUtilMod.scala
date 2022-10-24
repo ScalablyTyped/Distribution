@@ -19,7 +19,7 @@ object libUtilsValueUtilMod {
   inline def fillFieldNames(fieldNames: FieldNames, childrenAsData: Boolean): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("fillFieldNames")(fieldNames.asInstanceOf[js.Any], childrenAsData.asInstanceOf[js.Any])).asInstanceOf[Label]
   
   inline def flattenOptions[OptionType /* <: BaseOptionType */](options: js.Array[OptionType]): js.Array[FlattenOptionData[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlattenOptionData[OptionType]]]
-  inline def flattenOptions[OptionType /* <: BaseOptionType */](options: js.Array[OptionType], hasFieldNamesChildrenAsData: ChildrenAsData): js.Array[FlattenOptionData[OptionType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenOptions")(options.asInstanceOf[js.Any], hasFieldNamesChildrenAsData.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenOptionData[OptionType]]]
+  inline def flattenOptions[OptionType /* <: BaseOptionType */](options: js.Array[OptionType], param1: ChildrenAsData): js.Array[FlattenOptionData[OptionType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenOptions")(options.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenOptionData[OptionType]]]
   
   inline def getSeparatedContent(text: String, tokens: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSeparatedContent")(text.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   

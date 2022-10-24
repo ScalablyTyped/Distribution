@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-lite
 
-Typings are for version 5.5.0
+Typings are for version 5.6.0
 
 ## Library description:
 Vega-Lite is a concise high-level language for interactive visualization.

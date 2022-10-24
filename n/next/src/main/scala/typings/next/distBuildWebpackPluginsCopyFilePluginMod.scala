@@ -11,7 +11,7 @@ object distBuildWebpackPluginsCopyFilePluginMod {
   @JSImport("next/dist/build/webpack/plugins/copy-file-plugin", "CopyFilePlugin")
   @js.native
   open class CopyFilePlugin protected () extends StObject {
-    def this(hasFilePathCacheKeyNameInfo: CacheKey) = this()
+    def this(param0: CacheKey) = this()
     
     @JSName("apply")
     def apply(compiler: Compiler): Unit = js.native

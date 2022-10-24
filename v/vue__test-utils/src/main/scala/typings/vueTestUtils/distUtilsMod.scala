@@ -2,9 +2,16 @@ package typings.vueTestUtils
 
 import typings.std.Node
 import typings.std.Record
+import typings.vueRuntimeCore.mod.Component
+import typings.vueRuntimeCore.mod.ComputedOptions
+import typings.vueRuntimeCore.mod.Directive
+import typings.vueRuntimeCore.mod.MethodOptions
 import typings.vueTestUtils.anon.RequiredGlobalMountOption
 import typings.vueTestUtils.distTypesMod.GlobalMountOptions
 import typings.vueTestUtils.distTypesMod.RefSelector
+import typings.vueTestUtils.distTypesMod.Stub
+import typings.vueTestUtils.distTypesMod.Stubs
+import typings.vueTestUtils.vueTestUtilsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +21,12 @@ object distUtilsMod {
   @JSImport("@vue/test-utils/dist/utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def convertStubsToRecord(stubs: Stubs): Record[String, Stub] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertStubsToRecord")(stubs.asInstanceOf[js.Any]).asInstanceOf[Record[String, Stub]]
+  
+  inline def getComponentsFromStubs(stubs: Stubs): Record[String, (Component[Any, Any, Any, ComputedOptions, MethodOptions]) | Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentsFromStubs")(stubs.asInstanceOf[js.Any]).asInstanceOf[Record[String, (Component[Any, Any, Any, ComputedOptions, MethodOptions]) | Boolean]]
+  
+  inline def getDirectivesFromStubs(stubs: Stubs): Record[String, (Directive[Any, Any]) | `true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectivesFromStubs")(stubs.asInstanceOf[js.Any]).asInstanceOf[Record[String, (Directive[Any, Any]) | `true`]]
   
   inline def hasOwnProperty_[O /* <: js.Object */](obj: O, prop: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def hasOwnProperty_[O /* <: js.Object */](obj: O, prop: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]

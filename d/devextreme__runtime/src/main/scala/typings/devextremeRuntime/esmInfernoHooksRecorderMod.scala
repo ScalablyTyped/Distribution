@@ -27,5 +27,5 @@ object esmInfernoHooksRecorderMod {
     inline def current_=(x: Context): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
   }
   
-  inline def renderChild(component: HookContainer, hasRenderFnRenderPropsRenderRef: Any, context: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderChild")(component.asInstanceOf[js.Any], hasRenderFnRenderPropsRenderRef.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def renderChild(component: HookContainer, param1: Any, context: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderChild")(component.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

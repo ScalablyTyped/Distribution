@@ -210,7 +210,7 @@ object distTypesPropsMod {
     def startAngle: Double = js.native
     inline def startAngle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startAngle")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum](hasDatum: Datum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasDatum.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum](param0: Datum[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/pie/dist/types/props", "defaultProps.transitionMode")
     @js.native

@@ -16,7 +16,7 @@ object typesCsstransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CSSTransition[E /* <: HTMLElement */](hasChildrenClassNameOptions: CSSTransitionProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CSSTransition")(hasChildrenClassNameOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def CSSTransition[E /* <: HTMLElement */](param0: CSSTransitionProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CSSTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait CSSTransitionProps[E /* <: HTMLElement */]
     extends StObject

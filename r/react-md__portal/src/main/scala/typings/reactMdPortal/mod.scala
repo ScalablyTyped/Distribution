@@ -13,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ConditionalPortal(hasPortalPortalIntoPortalIntoIdChildren: ConditionalPortalProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ConditionalPortal")(hasPortalPortalIntoPortalIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ConditionalPortal(param0: ConditionalPortalProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ConditionalPortal")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def Portal(hasIntoIntoIdChildren: PortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(hasIntoIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Portal(param0: PortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
 }

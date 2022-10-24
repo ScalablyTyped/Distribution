@@ -101,8 +101,9 @@ trait OmitDOMWrapperElementexis extends StObject {
   ]
   
   def html(): String
+  def html(options: Raw): String
   @JSName("html")
-  var html_Original: js.Function0[String]
+  var html_Original: js.Function1[/* options */ js.UndefOr[Raw], String]
   
   def isDisabled(): Boolean
   @JSName("isDisabled")
@@ -163,7 +164,7 @@ object OmitDOMWrapperElementexis {
     getComponent: /* selector */ String => Omitdefaultexists,
     getCurrentComponent: () => js.UndefOr[ComponentInternalInstance],
     getRootNodes: () => js.Array[VueNodeElement],
-    html: () => String,
+    html: /* options */ js.UndefOr[Raw] => String,
     isDisabled: () => Boolean,
     isVisible: () => Boolean,
     setChecked: Any,
@@ -173,7 +174,7 @@ object OmitDOMWrapperElementexis {
     trigger: (/* eventString */ DomEventNameWithModifier, /* options */ js.UndefOr[TriggerOptions]) => js.Promise[Unit],
     wrapperElement: VueNodeElement
   ): OmitDOMWrapperElementexis = {
-    val __obj = js.Dynamic.literal(attributes = js.Any.fromFunction0(attributes), classes = js.Any.fromFunction0(classes), constructor = js.Any.fromFunction1(constructor), element = element.asInstanceOf[js.Any], find = js.Any.fromFunction1(find), findAll = js.Any.fromFunction1(findAll), findAllComponents = js.Any.fromFunction1(findAllComponents), findAllDOMElements = js.Any.fromFunction1(findAllDOMElements), findComponent = js.Any.fromFunction1(findComponent), get = js.Any.fromFunction1(get), getComponent = js.Any.fromFunction1(getComponent), getCurrentComponent = js.Any.fromFunction0(getCurrentComponent), getRootNodes = js.Any.fromFunction0(getRootNodes), html = js.Any.fromFunction0(html), isDisabled = js.Any.fromFunction0(isDisabled), isVisible = js.Any.fromFunction0(isVisible), setChecked = setChecked.asInstanceOf[js.Any], setSelected = setSelected.asInstanceOf[js.Any], setValue = js.Any.fromFunction1(setValue), text = js.Any.fromFunction0(text), trigger = js.Any.fromFunction2(trigger), wrapperElement = wrapperElement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = js.Any.fromFunction0(attributes), classes = js.Any.fromFunction0(classes), constructor = js.Any.fromFunction1(constructor), element = element.asInstanceOf[js.Any], find = js.Any.fromFunction1(find), findAll = js.Any.fromFunction1(findAll), findAllComponents = js.Any.fromFunction1(findAllComponents), findAllDOMElements = js.Any.fromFunction1(findAllDOMElements), findComponent = js.Any.fromFunction1(findComponent), get = js.Any.fromFunction1(get), getComponent = js.Any.fromFunction1(getComponent), getCurrentComponent = js.Any.fromFunction0(getCurrentComponent), getRootNodes = js.Any.fromFunction0(getRootNodes), html = js.Any.fromFunction1(html), isDisabled = js.Any.fromFunction0(isDisabled), isVisible = js.Any.fromFunction0(isVisible), setChecked = setChecked.asInstanceOf[js.Any], setSelected = setSelected.asInstanceOf[js.Any], setValue = js.Any.fromFunction1(setValue), text = js.Any.fromFunction0(text), trigger = js.Any.fromFunction2(trigger), wrapperElement = wrapperElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitDOMWrapperElementexis]
   }
   
@@ -222,7 +223,7 @@ object OmitDOMWrapperElementexis {
     
     inline def setGetRootNodes(value: () => js.Array[VueNodeElement]): Self = StObject.set(x, "getRootNodes", js.Any.fromFunction0(value))
     
-    inline def setHtml(value: () => String): Self = StObject.set(x, "html", js.Any.fromFunction0(value))
+    inline def setHtml(value: /* options */ js.UndefOr[Raw] => String): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
     
     inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     

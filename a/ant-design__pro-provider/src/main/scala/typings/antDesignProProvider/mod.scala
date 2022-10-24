@@ -2,9 +2,10 @@ package typings.antDesignProProvider
 
 import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSInterpolation
 import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSObject
+import typings.antDesignCssinjs.mod.Theme
+import typings.antDesignProProvider.anon.AutoClearCache
 import typings.antDesignProProvider.anon.HashId
 import typings.antDesignProProvider.anon.OmitProFieldFCRenderProps
-import typings.antDesignProProvider.esTypingLayoutTokenMod.ProTokenType
 import typings.antDesignProProvider.esUseStyleMod.ProAliasToken
 import typings.antDesignProProvider.esUseStyleMod.UseStyleResult
 import typings.react.mod.Consumer
@@ -30,13 +31,13 @@ object mod {
   @js.native
   val default: Context[ConfigContextPropsType] = js.native
   
-  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(ConfigProvider) */ @JSImport("@ant-design/pro-provider", "ConfigConsumer")
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(ProConfigProvider) */ @JSImport("@ant-design/pro-provider", "ConfigConsumer")
   @js.native
   val ConfigConsumer: Consumer[ConfigContextPropsType] = js.native
   
   @JSImport("@ant-design/pro-provider", "ConfigProviderWrap")
   @js.native
-  val ConfigProviderWrap: FC[Record[String, Any]] = js.native
+  val ConfigProviderWrap: FC[AutoClearCache] = js.native
   
   @JSImport("@ant-design/pro-provider", "ProProvider")
   @js.native
@@ -377,28 +378,43 @@ object mod {
   
   trait ConfigContextPropsType extends StObject {
     
+    var hashId: js.UndefOr[String] = js.undefined
+    
     var intl: IntlType
     
     var isDeps: Boolean
     
-    var token: js.UndefOr[ProTokenType] = js.undefined
+    var theme: Theme[Any, Any]
+    
+    var token: js.UndefOr[ProAliasToken] = js.undefined
     
     var valueTypeMap: Record[String, ProRenderFieldPropsType]
   }
   object ConfigContextPropsType {
     
-    inline def apply(intl: IntlType, isDeps: Boolean, valueTypeMap: Record[String, ProRenderFieldPropsType]): ConfigContextPropsType = {
-      val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any], isDeps = isDeps.asInstanceOf[js.Any], valueTypeMap = valueTypeMap.asInstanceOf[js.Any])
+    inline def apply(
+      intl: IntlType,
+      isDeps: Boolean,
+      theme: Theme[Any, Any],
+      valueTypeMap: Record[String, ProRenderFieldPropsType]
+    ): ConfigContextPropsType = {
+      val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any], isDeps = isDeps.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], valueTypeMap = valueTypeMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigContextPropsType]
     }
     
     extension [Self <: ConfigContextPropsType](x: Self) {
       
+      inline def setHashId(value: String): Self = StObject.set(x, "hashId", value.asInstanceOf[js.Any])
+      
+      inline def setHashIdUndefined: Self = StObject.set(x, "hashId", js.undefined)
+      
       inline def setIntl(value: IntlType): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
       
       inline def setIsDeps(value: Boolean): Self = StObject.set(x, "isDeps", value.asInstanceOf[js.Any])
       
-      inline def setToken(value: ProTokenType): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme[Any, Any]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setToken(value: ProAliasToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
       inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       

@@ -12,7 +12,7 @@ object distDisplayObjectsCustomElementMod {
   /* note: abstract class */ @JSImport("@antv/g-lite/dist/display-objects/CustomElement", "CustomElement")
   @js.native
   open class CustomElement[CustomElementStyleProps] () extends DisplayObject[CustomElementStyleProps & BaseCustomElementStyleProps, Any] {
-    def this(hasStyleRest: DisplayObjectConfig[CustomElementStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[CustomElementStyleProps]) = this()
     
     var attributeChangedCallback: js.UndefOr[
         js.Function5[

@@ -15,7 +15,7 @@ object esmCenturyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasFocusedItemDisabledOnChangeValueLocalizerMinMaxProps: CenturyProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasFocusedItemDisabledOnChangeValueLocalizerMinMaxProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: CenturyProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CenturyProps
     extends StObject

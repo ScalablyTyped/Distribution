@@ -11,5 +11,5 @@ object isValidTimeZoneNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def IsValidTimeZoneName(tz: String, hasTzDataUppercaseLinks: TzData): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsValidTimeZoneName")(tz.asInstanceOf[js.Any], hasTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def IsValidTimeZoneName(tz: String, param1: TzData): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsValidTimeZoneName")(tz.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

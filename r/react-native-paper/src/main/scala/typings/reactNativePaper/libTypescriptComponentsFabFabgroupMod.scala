@@ -7,11 +7,11 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.anon.CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor
 import typings.reactNativePaper.anon.IconPropscolorstring
 import typings.reactNativePaper.anon.LabelStyle
 import typings.reactNativePaper.anon.Open
 import typings.reactNativePaper.anon.PickPropsstylecoloronPres
+import typings.reactNativePaper.anon.`18`
 import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
 import org.scalablytyped.runtime.StObject
@@ -22,17 +22,11 @@ object libTypescriptComponentsFabFabgroupMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/FAB/FABGroup", JSImport.Default)
   @js.native
-  val default: ComponentType[PickPropsstylecoloronPres] & (NonReactStatics[
-    ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickPropsstylecoloronPres] & (NonReactStatics[ComponentType[Props] & `18`, js.Object]) = js.native
   
   @JSImport("react-native-paper/lib/typescript/components/FAB/FABGroup", "FABGroup")
   @js.native
-  val FABGroup: ComponentType[PickPropsstylecoloronPres] & (NonReactStatics[
-    ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
-    js.Object
-  ]) = js.native
+  val FABGroup: ComponentType[PickPropsstylecoloronPres] & (NonReactStatics[ComponentType[Props] & `18`, js.Object]) = js.native
   
   trait Props extends StObject {
     
@@ -182,14 +176,8 @@ object libTypescriptComponentsFabFabgroupMod extends Shortcut {
     }
   }
   
-  type _To = ComponentType[PickPropsstylecoloronPres] & (NonReactStatics[
-    ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
-    js.Object
-  ])
+  type _To = ComponentType[PickPropsstylecoloronPres] & (NonReactStatics[ComponentType[Props] & `18`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsFabFabgroupMod.foo` */
-  override def _to: ComponentType[PickPropsstylecoloronPres] & (NonReactStatics[
-    ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickPropsstylecoloronPres] & (NonReactStatics[ComponentType[Props] & `18`, js.Object]) = default
 }

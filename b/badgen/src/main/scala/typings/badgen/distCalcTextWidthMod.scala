@@ -10,5 +10,5 @@ object distCalcTextWidthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Verdana110(hasText: js.Iterable[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Verdana110")(hasText.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def Verdana110(param0: js.Iterable[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Verdana110")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

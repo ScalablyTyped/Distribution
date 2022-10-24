@@ -16,7 +16,7 @@ object libTypescriptHandlersCreateHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: BaseGestureHandlerProps_[U] */, U /* <: Record[String, Any] */](hasNameAllowedPropsConfigTransformPropsCustomNativeProps: CreateHandlerArgs[T]): ComponentType[T & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNameAllowedPropsConfigTransformPropsCustomNativeProps.asInstanceOf[js.Any]).asInstanceOf[ComponentType[T & RefAttributes[Any]]]
+  inline def default[T /* <: BaseGestureHandlerProps_[U] */, U /* <: Record[String, Any] */](param0: CreateHandlerArgs[T]): ComponentType[T & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ComponentType[T & RefAttributes[Any]]]
   
   /* Inlined std.Readonly<{  name :string,   allowedProps :std.Readonly<std.Array<std.Extract<keyof HandlerPropsT, string>>>,   config :std.Readonly<std.Record<string, unknown>>,   transformProps :(props : HandlerPropsT): HandlerPropsT | undefined,   customNativeProps :std.Readonly<std.Array<string>> | undefined}> */
   trait CreateHandlerArgs[HandlerPropsT /* <: Record[String, Any] */] extends StObject {

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/shared-models" : "3.4.8"
+      "@jupyterlab/shared-models" : "3.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/shared-models" : "3.4.8"
+      "@jupyterlab/shared-models" : "3.5.0"
     }
   ],
   "compile-devDependencies" : [

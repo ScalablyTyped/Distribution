@@ -17,7 +17,7 @@ object distSrcModulesUiDebugPanelDebugPanelMod {
   open class default protected ()
     extends StObject
        with DebugPanel {
-    def this(hasEngineRootContainerKeyboardControl: KeyboardControl) = this()
+    def this(param0: KeyboardControl) = this()
     
     /* private */ /* CompleteClass */
     var _bindCallbacks: Any = js.native

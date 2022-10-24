@@ -12,7 +12,7 @@ object distEsmLoaderVortexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasVisibleHeightWidthAriaLabelWrapperStyleWrapperClassColors: VortexProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasVisibleHeightWidthAriaLabelWrapperStyleWrapperClassColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: VortexProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   /* Inlined parent std.Omit<react-loader-spinner.react-loader-spinner/dist/esm/type.BaseProps, 'color'> */
   trait VortexProps extends StObject {

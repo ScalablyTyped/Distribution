@@ -11,8 +11,8 @@ object distMatlabNormpdfMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def normpdf(hasRefWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-  inline def normpdf(hasRefWidthHeight: Matrix, µ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any], µ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  inline def normpdf(hasRefWidthHeight: Matrix, µ: Double, σ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any], µ.asInstanceOf[js.Any], σ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  inline def normpdf(hasRefWidthHeight: Matrix, µ: Unit, σ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any], µ.asInstanceOf[js.Any], σ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def normpdf(param0: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(param0.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def normpdf(param0: Matrix, µ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(param0.asInstanceOf[js.Any], µ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def normpdf(param0: Matrix, µ: Double, σ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(param0.asInstanceOf[js.Any], µ.asInstanceOf[js.Any], σ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def normpdf(param0: Matrix, µ: Unit, σ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(param0.asInstanceOf[js.Any], µ.asInstanceOf[js.Any], σ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

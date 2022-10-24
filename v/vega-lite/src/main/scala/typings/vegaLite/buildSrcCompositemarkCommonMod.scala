@@ -74,13 +74,7 @@ object buildSrcCompositemarkCommonMod {
     continuousAxisChannelDef: PositionFieldDef[String],
     sharedEncoding: Encoding[String],
     compositeMarkConfig: P
-  ): js.Function1[
-    /* hasPartNameMarkPositionPrefixEndPositionPrefixExtraEncoding */ EndPositionPrefix[P], 
-    js.Array[NormalizedUnitSpec]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeCompositeAggregatePartFactory")(compositeMarkDef.asInstanceOf[js.Any], continuousAxis.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], sharedEncoding.asInstanceOf[js.Any], compositeMarkConfig.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* hasPartNameMarkPositionPrefixEndPositionPrefixExtraEncoding */ EndPositionPrefix[P], 
-    js.Array[NormalizedUnitSpec]
-  ]]
+  ): js.Function1[/* param0 */ EndPositionPrefix[P], js.Array[NormalizedUnitSpec]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeCompositeAggregatePartFactory")(compositeMarkDef.asInstanceOf[js.Any], continuousAxis.asInstanceOf[js.Any], continuousAxisChannelDef.asInstanceOf[js.Any], sharedEncoding.asInstanceOf[js.Any], compositeMarkConfig.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* param0 */ EndPositionPrefix[P], js.Array[NormalizedUnitSpec]]]
   
   inline def partLayerMixins[P /* <: PartsMixins[Any] */](
     markDef: GenericCompositeMarkDef[Any] & P,

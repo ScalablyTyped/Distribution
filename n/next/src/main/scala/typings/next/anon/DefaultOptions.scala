@@ -19,7 +19,7 @@ trait DefaultOptions extends StObject {
       /* buffer */ js.typedarray.Uint8Array, 
       /* input_width */ Double, 
       /* input_height */ Double, 
-      /* hasWidthHeightMethodPremultiplyLinearRGB */ ResizeOptions, 
+      /* param3 */ ResizeOptions, 
       default
     ]
   ]
@@ -35,7 +35,7 @@ object DefaultOptions {
         /* buffer */ js.typedarray.Uint8Array, 
         /* input_width */ Double, 
         /* input_height */ Double, 
-        /* hasWidthHeightMethodPremultiplyLinearRGB */ ResizeOptions, 
+        /* param3 */ ResizeOptions, 
         default
       ]
     ]
@@ -56,7 +56,7 @@ object DefaultOptions {
             /* buffer */ js.typedarray.Uint8Array, 
             /* input_width */ Double, 
             /* input_height */ Double, 
-            /* hasWidthHeightMethodPremultiplyLinearRGB */ ResizeOptions, 
+            /* param3 */ ResizeOptions, 
             default
           ]
         ]

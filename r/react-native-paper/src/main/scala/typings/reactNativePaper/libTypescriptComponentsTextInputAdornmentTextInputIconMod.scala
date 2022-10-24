@@ -48,7 +48,7 @@ object libTypescriptComponentsTextInputAdornmentTextInputIconMod {
     */
   object default {
     
-    inline def apply(hasNameOnPressForceTextInputFocusColorRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasNameOnPressForceTextInputFocusColorRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/TextInput/Adornment/TextInputIcon", JSImport.Default)
     @js.native

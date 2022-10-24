@@ -1,101 +1,89 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.ReactNode
-import typings.wixStyleReact.commonMod.TooltipCommonProps
-import typings.wixStyleReact.inputMod.InputStatus
-import typings.wixStyleReact.listItemEditableMod.ListItemEditableMargins
-import typings.wixStyleReact.listItemEditableMod.ListItemEditableSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ApproveButtonTooltipContent extends StObject {
   
-  var approveButtonTooltipContent: js.UndefOr[ReactNode] = js.undefined
+  var approveButtonTooltipContent: Any
   
-  var approveButtonTooltipProps: js.UndefOr[TooltipCommonProps] = js.undefined
+  var approveButtonTooltipProps: Any
   
-  var cancelButtonTooltipContent: js.UndefOr[ReactNode] = js.undefined
+  var cancelButtonTooltipContent: Any
   
-  var cancelButtonTooltipProps: js.UndefOr[TooltipCommonProps] = js.undefined
+  var cancelButtonTooltipProps: Any
   
-  var className: js.UndefOr[String] = js.undefined
+  var className: Any
   
-  var dataHook: js.UndefOr[String] = js.undefined
+  var dataHook: Any
   
-  var id: String | Double
+  var id: Any
   
-  var margins: js.UndefOr[ListItemEditableMargins] = js.undefined
+  var margins: Any
   
-  def onApprove(value: String): Unit
+  var onApprove: Any
   
-  def onCancel(): Unit
+  var onCancel: Any
   
-  var placeholder: js.UndefOr[String] = js.undefined
+  var placeholder: Any
   
-  var size: js.UndefOr[ListItemEditableSize] = js.undefined
+  var size: Any
   
-  var status: js.UndefOr[InputStatus] = js.undefined
+  var status: Any
   
-  var statusMessage: js.UndefOr[ReactNode] = js.undefined
+  var statusMessage: Any
 }
 object ApproveButtonTooltipContent {
   
-  inline def apply(id: String | Double, onApprove: String => Unit, onCancel: () => Unit): ApproveButtonTooltipContent = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onApprove = js.Any.fromFunction1(onApprove), onCancel = js.Any.fromFunction0(onCancel))
+  inline def apply(
+    approveButtonTooltipContent: Any,
+    approveButtonTooltipProps: Any,
+    cancelButtonTooltipContent: Any,
+    cancelButtonTooltipProps: Any,
+    className: Any,
+    dataHook: Any,
+    id: Any,
+    margins: Any,
+    onApprove: Any,
+    onCancel: Any,
+    placeholder: Any,
+    size: Any,
+    status: Any,
+    statusMessage: Any
+  ): ApproveButtonTooltipContent = {
+    val __obj = js.Dynamic.literal(approveButtonTooltipContent = approveButtonTooltipContent.asInstanceOf[js.Any], approveButtonTooltipProps = approveButtonTooltipProps.asInstanceOf[js.Any], cancelButtonTooltipContent = cancelButtonTooltipContent.asInstanceOf[js.Any], cancelButtonTooltipProps = cancelButtonTooltipProps.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], dataHook = dataHook.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], margins = margins.asInstanceOf[js.Any], onApprove = onApprove.asInstanceOf[js.Any], onCancel = onCancel.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApproveButtonTooltipContent]
   }
   
   extension [Self <: ApproveButtonTooltipContent](x: Self) {
     
-    inline def setApproveButtonTooltipContent(value: ReactNode): Self = StObject.set(x, "approveButtonTooltipContent", value.asInstanceOf[js.Any])
+    inline def setApproveButtonTooltipContent(value: Any): Self = StObject.set(x, "approveButtonTooltipContent", value.asInstanceOf[js.Any])
     
-    inline def setApproveButtonTooltipContentUndefined: Self = StObject.set(x, "approveButtonTooltipContent", js.undefined)
+    inline def setApproveButtonTooltipProps(value: Any): Self = StObject.set(x, "approveButtonTooltipProps", value.asInstanceOf[js.Any])
     
-    inline def setApproveButtonTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "approveButtonTooltipProps", value.asInstanceOf[js.Any])
+    inline def setCancelButtonTooltipContent(value: Any): Self = StObject.set(x, "cancelButtonTooltipContent", value.asInstanceOf[js.Any])
     
-    inline def setApproveButtonTooltipPropsUndefined: Self = StObject.set(x, "approveButtonTooltipProps", js.undefined)
+    inline def setCancelButtonTooltipProps(value: Any): Self = StObject.set(x, "cancelButtonTooltipProps", value.asInstanceOf[js.Any])
     
-    inline def setCancelButtonTooltipContent(value: ReactNode): Self = StObject.set(x, "cancelButtonTooltipContent", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setCancelButtonTooltipContentUndefined: Self = StObject.set(x, "cancelButtonTooltipContent", js.undefined)
+    inline def setDataHook(value: Any): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    inline def setCancelButtonTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "cancelButtonTooltipProps", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setCancelButtonTooltipPropsUndefined: Self = StObject.set(x, "cancelButtonTooltipProps", js.undefined)
+    inline def setMargins(value: Any): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
-    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setOnApprove(value: Any): Self = StObject.set(x, "onApprove", value.asInstanceOf[js.Any])
     
-    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setOnCancel(value: Any): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
     
-    inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+    inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setMargins(value: ListItemEditableMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
-    
-    inline def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
-    
-    inline def setOnApprove(value: String => Unit): Self = StObject.set(x, "onApprove", js.Any.fromFunction1(value))
-    
-    inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
-    
-    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
-    
-    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
-    
-    inline def setSize(value: ListItemEditableSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    
-    inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
-    
-    inline def setStatusMessage(value: ReactNode): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
-    
-    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
-    
-    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusMessage(value: Any): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "fluentui__set-version"
-version := "8.2.2-f88bb5"
-scalaVersion := "3.1.2"
+version := "8.2.2-fb99f3"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

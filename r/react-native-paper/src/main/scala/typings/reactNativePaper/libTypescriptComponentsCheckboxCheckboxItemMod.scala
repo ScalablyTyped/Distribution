@@ -6,8 +6,8 @@ import typings.react.mod.ComponentType
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.anon.CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps
 import typings.reactNativePaper.anon.PickPropslabelstylecoloro
+import typings.reactNativePaper.anon.`6`
 import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
 import typings.reactNativePaper.reactNativePaperStrings.android
 import typings.reactNativePaper.reactNativePaperStrings.checked
@@ -24,17 +24,11 @@ object libTypescriptComponentsCheckboxCheckboxItemMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/Checkbox/CheckboxItem", JSImport.Default)
   @js.native
-  val default: ComponentType[PickPropslabelstylecoloro] & (NonReactStatics[
-    ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickPropslabelstylecoloro] & (NonReactStatics[ComponentType[Props] & `6`, js.Object]) = js.native
   
   @JSImport("react-native-paper/lib/typescript/components/Checkbox/CheckboxItem", "CheckboxItem")
   @js.native
-  val CheckboxItem: ComponentType[PickPropslabelstylecoloro] & (NonReactStatics[
-    ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
-    js.Object
-  ]) = js.native
+  val CheckboxItem: ComponentType[PickPropslabelstylecoloro] & (NonReactStatics[ComponentType[Props] & `6`, js.Object]) = js.native
   
   trait Props extends StObject {
     
@@ -156,14 +150,8 @@ object libTypescriptComponentsCheckboxCheckboxItemMod extends Shortcut {
     }
   }
   
-  type _To = ComponentType[PickPropslabelstylecoloro] & (NonReactStatics[
-    ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
-    js.Object
-  ])
+  type _To = ComponentType[PickPropslabelstylecoloro] & (NonReactStatics[ComponentType[Props] & `6`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsCheckboxCheckboxItemMod.foo` */
-  override def _to: ComponentType[PickPropslabelstylecoloro] & (NonReactStatics[
-    ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickPropslabelstylecoloro] & (NonReactStatics[ComponentType[Props] & `6`, js.Object]) = default
 }

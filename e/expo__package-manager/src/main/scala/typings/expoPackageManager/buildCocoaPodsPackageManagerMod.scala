@@ -49,7 +49,7 @@ object buildCocoaPodsPackageManagerMod {
   open class CocoaPodsPackageManager protected ()
     extends StObject
        with PackageManager {
-    def this(hasCwdSilent: Cwd) = this()
+    def this(param0: Cwd) = this()
     
     /* private */ var _installAsync: Any = js.native
     
@@ -70,11 +70,11 @@ object buildCocoaPodsPackageManagerMod {
     /* CompleteClass */
     override def getConfigAsync(key: String): js.Promise[String] = js.native
     
-    def handleInstallErrorAsync(hasErrorShouldUpdateUpdatedPackagesSpinner: typings.expoPackageManager.anon.Error): js.Promise[SpawnResult] = js.native
+    def handleInstallErrorAsync(param0: typings.expoPackageManager.anon.Error): js.Promise[SpawnResult] = js.native
     
     /* CompleteClass */
     override def installAsync(): js.Promise[Unit] = js.native
-    def installAsync(hasSpinner: Spinner): js.Promise[Unit] = js.native
+    def installAsync(param0: Spinner): js.Promise[Unit] = js.native
     
     def installCLIAsync(): js.Promise[Boolean] = js.native
     
@@ -116,7 +116,7 @@ object buildCocoaPodsPackageManagerMod {
     
     inline def getPodProjectRoot(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPodProjectRoot")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    inline def installCLIAsync(hasNonInteractiveSpawnOptions: NonInteractive): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("installCLIAsync")(hasNonInteractiveSpawnOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def installCLIAsync(param0: NonInteractive): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("installCLIAsync")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     inline def isAvailable(projectRoot: String, silent: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")(projectRoot.asInstanceOf[js.Any], silent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
@@ -128,7 +128,7 @@ object buildCocoaPodsPackageManagerMod {
   
   inline def extractMissingDependencyError(errorOutput: String): (js.Tuple2[String, String]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMissingDependencyError")(errorOutput.asInstanceOf[js.Any]).asInstanceOf[(js.Tuple2[String, String]) | Null]
   
-  inline def getImprovedPodInstallError(error: SpawnResult & js.Error, hasCwd: `0`): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getImprovedPodInstallError")(error.asInstanceOf[js.Any], hasCwd.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+  inline def getImprovedPodInstallError(error: SpawnResult & js.Error, param1: `0`): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getImprovedPodInstallError")(error.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
   inline def getPodRepoUpdateMessage(errorOutput: String): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("getPodRepoUpdateMessage")(errorOutput.asInstanceOf[js.Any]).asInstanceOf[Message]
   

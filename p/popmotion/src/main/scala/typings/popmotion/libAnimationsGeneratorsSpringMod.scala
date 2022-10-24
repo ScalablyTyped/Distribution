@@ -10,7 +10,7 @@ object libAnimationsGeneratorsSpringMod {
   
   object spring {
     
-    inline def apply(hasFromToRestSpeedRestDeltaOptions: SpringOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].apply(hasFromToRestSpeedRestDeltaOptions.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
+    inline def apply(param0: SpringOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
     
     @JSImport("popmotion/lib/animations/generators/spring", "spring")
     @js.native

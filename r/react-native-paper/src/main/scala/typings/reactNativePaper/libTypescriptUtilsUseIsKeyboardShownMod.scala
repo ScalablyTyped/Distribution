@@ -10,7 +10,7 @@ object libTypescriptUtilsUseIsKeyboardShownMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasOnShowOnHide: Props): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOnShowOnHide.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(param0: Props): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Props extends StObject {
     

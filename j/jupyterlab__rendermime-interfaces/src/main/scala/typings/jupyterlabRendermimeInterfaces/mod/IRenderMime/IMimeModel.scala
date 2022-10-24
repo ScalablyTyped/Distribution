@@ -54,17 +54,6 @@ object IMimeModel {
     __obj.asInstanceOf[IMimeModel]
   }
   
-  extension [Self <: IMimeModel](x: Self) {
-    
-    inline def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setMetadata(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-    
-    inline def setSetData(value: ISetDataOptions => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
-    
-    inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
-  }
-  
   /**
     * The options used to update a mime model.
     */
@@ -97,5 +86,16 @@ object IMimeModel {
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
+  }
+  
+  extension [Self <: IMimeModel](x: Self) {
+    
+    inline def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setMetadata(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setSetData(value: ISetDataOptions => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    
+    inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
   }
 }

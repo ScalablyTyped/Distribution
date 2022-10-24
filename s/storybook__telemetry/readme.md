@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__telemetry
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 Telemetry logging for crash reports and usage statistics

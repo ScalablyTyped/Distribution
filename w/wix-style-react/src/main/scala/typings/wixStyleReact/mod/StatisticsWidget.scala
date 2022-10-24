@@ -1,10 +1,10 @@
 package typings.wixStyleReact.mod
 
-import typings.wixStyleReact.statisticsWidgetMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "StatisticsWidget")
 @js.native
-class StatisticsWidget () extends default
+open class StatisticsWidget ()
+  extends typings.wixStyleReact.distTypesStatisticsWidgetMod.default

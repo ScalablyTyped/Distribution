@@ -11,9 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isExportStory(key: String, hasIncludeStoriesExcludeStories: IncludeExcludeOptions): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isExportStory")(key.asInstanceOf[js.Any], hasIncludeStoriesExcludeStories.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
+  inline def isExportStory(key: String, param1: IncludeExcludeOptions): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isExportStory")(key.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
   
-  inline def parseKind(kind: String, hasRootSeparatorGroupSeparator: SeparatorOptions): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKind")(kind.asInstanceOf[js.Any], hasRootSeparatorGroupSeparator.asInstanceOf[js.Any])).asInstanceOf[Groups]
+  inline def parseKind(kind: String, param1: SeparatorOptions): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKind")(kind.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Groups]
   
   inline def sanitize(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   

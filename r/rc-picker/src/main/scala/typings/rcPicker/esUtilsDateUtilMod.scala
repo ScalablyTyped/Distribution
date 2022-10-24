@@ -19,9 +19,9 @@ object esUtilsDateUtilMod {
   @js.native
   val WEEK_DAY_COUNT: /* 7 */ Double = js.native
   
-  inline def formatValue[DateType](value: DateType, hasGenerateConfigLocaleFormat: GenerateConfig[DateType]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValue")(value.asInstanceOf[js.Any], hasGenerateConfigLocaleFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatValue[DateType](value: DateType, param1: GenerateConfig[DateType]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValue")(value.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getCellDateDisabled[DateType](hasCellDateModeDisabledDateGenerateConfig: CellDate[DateType]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellDateDisabled")(hasCellDateModeDisabledDateGenerateConfig.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def getCellDateDisabled[DateType](param0: CellDate[DateType]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellDateDisabled")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def getClosingViewDate[DateType](
     viewDate: DateType,
@@ -101,5 +101,5 @@ object esUtilsDateUtilMod {
     year2: NullableDateType[DateType]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameYear")(generateConfig.asInstanceOf[js.Any], year1.asInstanceOf[js.Any], year2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def parseValue[DateType](value: String, hasGenerateConfigLocaleFormatList: FormatList[DateType]): DateType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseValue")(value.asInstanceOf[js.Any], hasGenerateConfigLocaleFormatList.asInstanceOf[js.Any])).asInstanceOf[DateType]
+  inline def parseValue[DateType](value: String, param1: FormatList[DateType]): DateType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseValue")(value.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[DateType]
 }

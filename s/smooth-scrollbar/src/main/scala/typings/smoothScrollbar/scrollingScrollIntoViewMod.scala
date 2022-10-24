@@ -14,9 +14,5 @@ object scrollingScrollIntoViewMod {
   val ^ : js.Any = js.native
   
   inline def scrollIntoView(scrollbar: Scrollbar, elem: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(scrollbar.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def scrollIntoView(
-    scrollbar: Scrollbar,
-    elem: HTMLElement,
-    hasAlignToTopOnlyScrollIfNeededOffsetTopOffsetLeftOffsetBottom: PartialScrollIntoViewOpti
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(scrollbar.asInstanceOf[js.Any], elem.asInstanceOf[js.Any], hasAlignToTopOnlyScrollIfNeededOffsetTopOffsetLeftOffsetBottom.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scrollIntoView(scrollbar: Scrollbar, elem: HTMLElement, param2: PartialScrollIntoViewOpti): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(scrollbar.asInstanceOf[js.Any], elem.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -21,7 +21,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /* was `typeof imported_Collection.Collection` */
-    inline def Collection(hasChildrenOnBatchResize: CollectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Collection")(hasChildrenOnBatchResize.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def Collection(param0: CollectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Collection")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
   
   type OnResize = js.Function2[/* size */ SizeInfo, /* element */ HTMLElement, Unit]

@@ -14,7 +14,7 @@ object libButtonsMosaicButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DefaultToolbarButton(hasTitleClassNameOnClickText: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultToolbarButton")(hasTitleClassNameOnClickText.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DefaultToolbarButton(param0: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultToolbarButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def createDefaultToolbarButton(
     title: String,

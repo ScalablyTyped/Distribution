@@ -15,10 +15,7 @@ object distSharedSrcUseResizeObserverMod {
   val ^ : js.Any = js.native
   
   inline def useResizeObserver(onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit]): RefCallback[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any]).asInstanceOf[RefCallback[HTMLElement]]
-  inline def useResizeObserver(
-    onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit],
-    hasIsDisabledBox: UseResizeObserverOptions
-  ): RefCallback[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], hasIsDisabledBox.asInstanceOf[js.Any])).asInstanceOf[RefCallback[HTMLElement]]
+  inline def useResizeObserver(onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit], param1: UseResizeObserverOptions): RefCallback[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RefCallback[HTMLElement]]
   
   trait UseResizeObserverOptions
     extends StObject

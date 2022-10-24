@@ -14,7 +14,5 @@ object esHooksUsePickerInputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasOpenValueIsClickOutsideTriggerOpenForwardKeyDownOnKeyDownBlurToCancelOnSubmitOnCancelOnFocusOnBlur: BlurToCancel
-  ): js.Tuple2[DOMAttributes[HTMLInputElement], Focused] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOpenValueIsClickOutsideTriggerOpenForwardKeyDownOnKeyDownBlurToCancelOnSubmitOnCancelOnFocusOnBlur.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[DOMAttributes[HTMLInputElement], Focused]]
+  inline def default(param0: BlurToCancel): js.Tuple2[DOMAttributes[HTMLInputElement], Focused] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[DOMAttributes[HTMLInputElement], Focused]]
 }

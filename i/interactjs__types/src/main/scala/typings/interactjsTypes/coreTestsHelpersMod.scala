@@ -24,7 +24,7 @@ object coreTestsHelpersMod {
   inline def ltrbwh(left: Double, top: Double, right: Double, bottom: Double, width: Double, height: Double): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrbwh")(left.asInstanceOf[js.Any], top.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Height]
   
   inline def mockScope(): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockScope")().asInstanceOf[Scope]
-  inline def mockScope(hasDocument: Any): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockScope")(hasDocument.asInstanceOf[js.Any]).asInstanceOf[Scope]
+  inline def mockScope(param0: Any): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockScope")(param0.asInstanceOf[js.Any]).asInstanceOf[Scope]
   
   inline def newCoordsSet(): Cur = ^.asInstanceOf[js.Dynamic].applyDynamic("newCoordsSet")().asInstanceOf[Cur]
   inline def newCoordsSet(n: Double): Cur = ^.asInstanceOf[js.Dynamic].applyDynamic("newCoordsSet")(n.asInstanceOf[js.Any]).asInstanceOf[Cur]
@@ -33,7 +33,7 @@ object coreTestsHelpersMod {
   inline def newPointer(n: Double): PointerType = ^.asInstanceOf[js.Dynamic].applyDynamic("newPointer")(n.asInstanceOf[js.Any]).asInstanceOf[PointerType]
   
   inline def testEnv[T /* <: Target */](): Coords[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("testEnv")().asInstanceOf[Coords[T]]
-  inline def testEnv[T /* <: Target */](hasPluginsTargetRectDocument: Document[T]): Coords[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("testEnv")(hasPluginsTargetRectDocument.asInstanceOf[js.Any]).asInstanceOf[Coords[T]]
+  inline def testEnv[T /* <: Target */](param0: Document[T]): Coords[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("testEnv")(param0.asInstanceOf[js.Any]).asInstanceOf[Coords[T]]
   
   inline def timeout(n: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(n.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   

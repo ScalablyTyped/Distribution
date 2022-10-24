@@ -41,9 +41,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Chord(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: ChordSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Chord")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Chord(param0: ChordSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Chord")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ChordCanvas(hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps: ChordCanvasProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ChordCanvas")(hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ChordCanvas(param0: ChordCanvasProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ChordCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def ResponsiveChord(props: OmitChordSvgPropswidthhei): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveChord")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -343,15 +343,15 @@ object mod {
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
   }
   
-  inline def computeArcPath(hasStartAngleEndAngleArcGenerator: ArcGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(hasStartAngleEndAngleArcGenerator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def computeArcPath(param0: ArcGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def computeChordArcsAndRibbons(hasChordDataKeysGetLabelFormatValueGetColor: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordArcsAndRibbons")(hasChordDataKeysGetLabelFormatValueGetColor.asInstanceOf[js.Any]).asInstanceOf[Arcs]
+  inline def computeChordArcsAndRibbons(param0: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordArcsAndRibbons")(param0.asInstanceOf[js.Any]).asInstanceOf[Arcs]
   
-  inline def computeChordGenerators(hasWidthHeightInnerRadiusRatioInnerRadiusOffset: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordGenerators")(hasWidthHeightInnerRadiusRatioInnerRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[Center]
+  inline def computeChordGenerators(param0: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordGenerators")(param0.asInstanceOf[js.Any]).asInstanceOf[Center]
   
-  inline def computeChordLayout(hasPadAngle: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordLayout")(hasPadAngle.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
+  inline def computeChordLayout(param0: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
   
-  inline def computeRibbonPath(hasSourceStartAngleSourceEndAngleTargetStartAngleTargetEndAngleRibbonGenerator: RibbonGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeRibbonPath")(hasSourceStartAngleSourceEndAngleTargetStartAngleTargetEndAngleRibbonGenerator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def computeRibbonPath(param0: RibbonGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeRibbonPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   object svgDefaultProps {
     
@@ -492,8 +492,8 @@ object mod {
     
     @JSImport("@nivo/chord", "svgDefaultProps.ribbonTooltip")
     @js.native
-    def ribbonTooltip: MemoExoticComponent[js.Function1[/* hasRibbon */ RibbonTooltipComponentProps, Element]] = js.native
-    inline def ribbonTooltip_=(x: MemoExoticComponent[js.Function1[/* hasRibbon */ RibbonTooltipComponentProps, Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ribbonTooltip")(x.asInstanceOf[js.Any])
+    def ribbonTooltip: MemoExoticComponent[js.Function1[/* param0 */ RibbonTooltipComponentProps, Element]] = js.native
+    inline def ribbonTooltip_=(x: MemoExoticComponent[js.Function1[/* param0 */ RibbonTooltipComponentProps, Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ribbonTooltip")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/chord", "svgDefaultProps.role")
     @js.native
@@ -501,17 +501,15 @@ object mod {
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
   }
   
-  inline def useChord(hasDataKeysLabelValueFormatWidthHeightInnerRadiusRatioInnerRadiusOffsetPadAngleColors: Colors): GetColor = ^.asInstanceOf[js.Dynamic].applyDynamic("useChord")(hasDataKeysLabelValueFormatWidthHeightInnerRadiusRatioInnerRadiusOffsetPadAngleColors.asInstanceOf[js.Any]).asInstanceOf[GetColor]
+  inline def useChord(param0: Colors): GetColor = ^.asInstanceOf[js.Dynamic].applyDynamic("useChord")(param0.asInstanceOf[js.Any]).asInstanceOf[GetColor]
   
-  inline def useChordArcsAndRibbons(hasChordGetColorKeysDataGetLabelFormatValue: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordArcsAndRibbons")(hasChordGetColorKeysDataGetLabelFormatValue.asInstanceOf[js.Any]).asInstanceOf[Arcs]
+  inline def useChordArcsAndRibbons(param0: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordArcsAndRibbons")(param0.asInstanceOf[js.Any]).asInstanceOf[Arcs]
   
-  inline def useChordGenerators(hasWidthHeightInnerRadiusRatioInnerRadiusOffset: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordGenerators")(hasWidthHeightInnerRadiusRatioInnerRadiusOffset.asInstanceOf[js.Any]).asInstanceOf[Center]
+  inline def useChordGenerators(param0: Height): Center = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordGenerators")(param0.asInstanceOf[js.Any]).asInstanceOf[Center]
   
-  inline def useChordLayout(hasPadAngle: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordLayout")(hasPadAngle.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
+  inline def useChordLayout(param0: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
   
-  inline def useChordSelection(
-    hasArcOpacityActiveArcOpacityInactiveArcOpacityRibbonsRibbonOpacityActiveRibbonOpacityInactiveRibbonOpacity: ActiveArcOpacity
-  ): CurrentArc = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordSelection")(hasArcOpacityActiveArcOpacityInactiveArcOpacityRibbonsRibbonOpacityActiveRibbonOpacityInactiveRibbonOpacity.asInstanceOf[js.Any]).asInstanceOf[CurrentArc]
+  inline def useChordSelection(param0: ActiveArcOpacity): CurrentArc = ^.asInstanceOf[js.Dynamic].applyDynamic("useChordSelection")(param0.asInstanceOf[js.Any]).asInstanceOf[CurrentArc]
   
-  inline def useCustomLayerProps(hasCenterRadiusArcsArcGeneratorRibbonsRibbonGenerator: Radius): CustomLayerProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomLayerProps")(hasCenterRadiusArcsArcGeneratorRibbonsRibbonGenerator.asInstanceOf[js.Any]).asInstanceOf[CustomLayerProps]
+  inline def useCustomLayerProps(param0: Radius): CustomLayerProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomLayerProps")(param0.asInstanceOf[js.Any]).asInstanceOf[CustomLayerProps]
 }

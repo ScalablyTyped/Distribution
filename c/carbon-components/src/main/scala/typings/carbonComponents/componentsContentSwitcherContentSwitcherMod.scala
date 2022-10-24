@@ -36,8 +36,8 @@ object componentsContentSwitcherContentSwitcherMod {
   - Dropped any */ @js.native
   trait ContentSwitcher extends StObject {
     
-    def _changeState(hasItem: Item): Unit = js.native
-    def _changeState(hasItem: Item, callback: js.Function0[Unit]): Unit = js.native
+    def _changeState(param0: Item): Unit = js.native
+    def _changeState(param0: Item, callback: js.Function0[Unit]): Unit = js.native
     
     def _handleClick(event: Event): Unit = js.native
     

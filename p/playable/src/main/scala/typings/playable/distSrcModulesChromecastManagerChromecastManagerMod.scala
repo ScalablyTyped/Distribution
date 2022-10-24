@@ -17,7 +17,7 @@ object distSrcModulesChromecastManagerChromecastManagerMod {
   open class default protected ()
     extends StObject
        with ChromecastManager {
-    def this(hasEngineEventEmitter: Engine) = this()
+    def this(param0: Engine) = this()
     
     /* private */ /* CompleteClass */
     var _bindToContextEvents: Any = js.native

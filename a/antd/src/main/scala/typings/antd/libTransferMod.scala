@@ -68,16 +68,8 @@ object libTransferMod {
     /* static member */
     @JSImport("antd/lib/transfer", "default.Operation")
     @js.native
-    def Operation: js.Function1[
-        /* hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay */ TransferOperationProps, 
-        Element
-      ] = js.native
-    inline def Operation_=(
-      x: js.Function1[
-          /* hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyleDirectionOneWay */ TransferOperationProps, 
-          Element
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Operation")(x.asInstanceOf[js.Any])
+    def Operation: js.Function1[/* param0 */ TransferOperationProps, Element] = js.native
+    inline def Operation_=(x: js.Function1[/* param0 */ TransferOperationProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Operation")(x.asInstanceOf[js.Any])
     
     /* static member */
     /* was `typeof Search` */
@@ -107,7 +99,7 @@ object libTransferMod {
     }
     
     /* static member */
-    inline def getDerivedStateFromProps[T](hasSelectedKeysTargetKeysPaginationChildren: TransferProps[T]): SourceSelectedKeys | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSelectedKeysTargetKeysPaginationChildren.asInstanceOf[js.Any]).asInstanceOf[SourceSelectedKeys | Null]
+    inline def getDerivedStateFromProps[T](param0: TransferProps[T]): SourceSelectedKeys | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(param0.asInstanceOf[js.Any]).asInstanceOf[SourceSelectedKeys | Null]
   }
   
   type KeyWise[T] = T & Key

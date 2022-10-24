@@ -31,5 +31,5 @@ object mod {
   @js.native
   val ExpansionPanelHeader: ForwardRefExoticComponent[ExpansionPanelHeaderProps & RefAttributes[HTMLButtonElement]] = js.native
   
-  inline def usePanels(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex: UsePanelsOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("usePanels")(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def usePanels(param0: UsePanelsOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("usePanels")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
 }

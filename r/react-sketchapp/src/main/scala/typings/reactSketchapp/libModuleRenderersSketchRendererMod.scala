@@ -21,6 +21,6 @@ object libModuleRenderersSketchRendererMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileFormat.ShapePath */ Any
       ] = js.native
     
-    def renderGroupLayer(hasLayoutStyleProps: TreeNode[Any]): /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileFormat.SymbolMaster */ Any = js.native
+    def renderGroupLayer(param0: TreeNode[Any]): /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileFormat.SymbolMaster */ Any = js.native
   }
 }

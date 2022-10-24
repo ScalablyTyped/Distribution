@@ -42,7 +42,7 @@ object distSharedLibRouterRouterMod {
       pathname: String,
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
       as: String,
-      hasInitialPropsPageLoaderAppWrapAppComponentErrSubscriptionIsFallbackLocaleLocalesDefaultLocaleDomainLocalesIsPreview: Component
+      param3: Component
     ) = this()
     
     /* CompleteClass */
@@ -630,9 +630,7 @@ object distSharedLibRouterRouterMod {
     
     def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[Any] = js.native
     
-    def getRouteInfo(
-      hasRequestedRoutePathnameQueryAsResolvedAsRoutePropsLocaleHasMiddlewareIsPreviewUnstable_skipClientCache: As
-    ): js.Promise[PrivateRouteInfo | Destination | NewAs] = js.native
+    def getRouteInfo(param0: As): js.Promise[PrivateRouteInfo | Destination | NewAs] = js.native
     
     def handleRouteInfoError(
       err: Errorcodeanyundefinedcanc,

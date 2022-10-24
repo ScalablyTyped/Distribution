@@ -25,7 +25,7 @@ object buildPluginsWithAndroidBaseModsMod {
   inline def sortAndroidManifest(obj: AndroidManifest): AndroidManifest = ^.asInstanceOf[js.Dynamic].applyDynamic("sortAndroidManifest")(obj.asInstanceOf[js.Any]).asInstanceOf[AndroidManifest]
   
   inline def withAndroidBaseMods(config: ExportedConfig): ExportedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("withAndroidBaseMods")(config.asInstanceOf[js.Any]).asInstanceOf[ExportedConfig]
-  inline def withAndroidBaseMods(config: ExportedConfig, hasProvidersProps: ForwardedBaseModOptionsprSaveToInternal): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withAndroidBaseMods")(config.asInstanceOf[js.Any], hasProvidersProps.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withAndroidBaseMods(config: ExportedConfig, param1: ForwardedBaseModOptionsprSaveToInternal): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withAndroidBaseMods")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   
   trait AndroidDefaultProviders extends StObject {
     

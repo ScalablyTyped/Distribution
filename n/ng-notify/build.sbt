@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ng-notify"
-version := "0.7.1-dt-20220818Z-75830b"
-scalaVersion := "3.1.2"
+version := "0.7.1-dt-20220818Z-919da6"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

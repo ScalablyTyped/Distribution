@@ -91,19 +91,19 @@ object mod {
     inline def unstableShouldLoadAsEsm(path: String, extensionsToTreatAsEsm: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_shouldLoadAsEsm")(path.asInstanceOf[js.Any], extensionsToTreatAsEsm.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
-  inline def resolveRunner(resolver: String, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRunner")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def resolveRunner(resolver: Null, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRunner")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def resolveRunner(resolver: Unit, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRunner")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveRunner(resolver: String, param1: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRunner")(resolver.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveRunner(resolver: Null, param1: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRunner")(resolver.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveRunner(resolver: Unit, param1: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRunner")(resolver.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def resolveSequencer(resolver: String, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSequencer")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def resolveSequencer(resolver: Null, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSequencer")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def resolveSequencer(resolver: Unit, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSequencer")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveSequencer(resolver: String, param1: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSequencer")(resolver.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveSequencer(resolver: Null, param1: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSequencer")(resolver.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveSequencer(resolver: Unit, param1: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSequencer")(resolver.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def resolveTestEnvironment(hasRootDirFilePathRequireResolveFunction: RequireResolveFunction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveTestEnvironment")(hasRootDirFilePathRequireResolveFunction.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def resolveTestEnvironment(param0: RequireResolveFunction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveTestEnvironment")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def resolveWatchPlugin(resolver: String, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWatchPlugin")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def resolveWatchPlugin(resolver: Null, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWatchPlugin")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def resolveWatchPlugin(resolver: Unit, hasFilePathRootDirRequireResolveFunction: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWatchPlugin")(resolver.asInstanceOf[js.Any], hasFilePathRootDirRequireResolveFunction.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveWatchPlugin(resolver: String, param1: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWatchPlugin")(resolver.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveWatchPlugin(resolver: Null, param1: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWatchPlugin")(resolver.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveWatchPlugin(resolver: Unit, param1: FilePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWatchPlugin")(resolver.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type AsyncResolver = js.Function2[/* path */ String, /* options */ ResolverOptions, js.Promise[String]]
   

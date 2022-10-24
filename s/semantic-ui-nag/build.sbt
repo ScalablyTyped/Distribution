@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-nag"
-version := "2.2-dt-20220624Z-a09748"
-scalaVersion := "3.1.2"
+version := "2.2-dt-20220624Z-d1f2c1"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

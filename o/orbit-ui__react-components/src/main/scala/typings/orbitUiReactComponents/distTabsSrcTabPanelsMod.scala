@@ -10,7 +10,7 @@ object distTabsSrcTabPanelsMod {
   
   object TabPanels {
     
-    inline def apply(hasPanelsRest: TabPanelsProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasPanelsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: TabPanelsProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@orbit-ui/react-components/dist/tabs/src/TabPanels", "TabPanels")
     @js.native

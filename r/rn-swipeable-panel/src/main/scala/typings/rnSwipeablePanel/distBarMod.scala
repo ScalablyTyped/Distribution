@@ -11,7 +11,7 @@ object distBarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Bar(hasBarStyleBarContainerStyle: BarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bar")(hasBarStyleBarContainerStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Bar(param0: BarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait BarProps extends StObject {
     

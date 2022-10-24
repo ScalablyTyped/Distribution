@@ -25,9 +25,7 @@ object libTypescriptTabBarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: Route */](
-    hasGetLabelTextGetAccessibleGetAccessibilityLabelGetTestIDRenderIndicatorGapScrollEnabledJumpToNavigationStatePositionActiveColorBouncesContentContainerStyleInactiveColorIndicatorContainerStyleIndicatorStyleLabelStyleOnTabLongPressOnTabPressPressColorPressOpacityRenderBadgeRenderIconRenderLabelRenderTabBarItemStyleTabStyle: Props[T]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetLabelTextGetAccessibleGetAccessibilityLabelGetTestIDRenderIndicatorGapScrollEnabledJumpToNavigationStatePositionActiveColorBouncesContentContainerStyleInactiveColorIndicatorContainerStyleIndicatorStyleLabelStyleOnTabLongPressOnTabPressPressColorPressOpacityRenderBadgeRenderIconRenderLabelRenderTabBarItemStyleTabStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[T /* <: Route */](param0: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props[T /* <: Route */]
     extends StObject

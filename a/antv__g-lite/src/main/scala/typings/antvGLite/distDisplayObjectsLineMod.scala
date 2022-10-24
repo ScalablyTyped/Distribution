@@ -93,7 +93,7 @@ object distDisplayObjectsLineMod {
   @JSImport("@antv/g-lite/dist/display-objects/Line", "Line")
   @js.native
   open class Line () extends DisplayObject[LineStyleProps, ParsedLineStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[LineStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[LineStyleProps]) = this()
     
     def attributeChangedCallback(
       attrName: pointerEvents,

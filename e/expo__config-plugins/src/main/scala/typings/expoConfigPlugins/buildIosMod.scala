@@ -70,9 +70,9 @@ object buildIosMod {
     
     inline def getBitcode(config: PickExpoConfigios): typings.expoConfigPlugins.buildIosBitcodeMod.Bitcode = ^.asInstanceOf[js.Dynamic].applyDynamic("getBitcode")(config.asInstanceOf[js.Any]).asInstanceOf[typings.expoConfigPlugins.buildIosBitcodeMod.Bitcode]
     
-    inline def setBitcode(bitcode: typings.expoConfigPlugins.buildIosBitcodeMod.Bitcode, hasProject: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcode")(bitcode.asInstanceOf[js.Any], hasProject.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setBitcode(bitcode: typings.expoConfigPlugins.buildIosBitcodeMod.Bitcode, param1: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcode")(bitcode.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def setBitcodeWithConfig(config: PickExpoConfigios, hasProject: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcodeWithConfig")(config.asInstanceOf[js.Any], hasProject.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setBitcodeWithConfig(config: PickExpoConfigios, param1: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setBitcodeWithConfig")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("@expo/config-plugins/build/ios", "Bitcode.withBitcode")
     @js.native
@@ -143,7 +143,7 @@ object buildIosMod {
     inline def getArchiveBuildConfigurationForSchemeAsync(projectRoot: String, scheme: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getArchiveBuildConfigurationForSchemeAsync")(projectRoot.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     inline def getRunnableSchemesFromXcodeproj(projectRoot: String): js.Array[OsType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRunnableSchemesFromXcodeproj")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Array[OsType]]
-    inline def getRunnableSchemesFromXcodeproj(projectRoot: String, hasConfiguration: Configuration): js.Array[OsType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRunnableSchemesFromXcodeproj")(projectRoot.asInstanceOf[js.Any], hasConfiguration.asInstanceOf[js.Any])).asInstanceOf[js.Array[OsType]]
+    inline def getRunnableSchemesFromXcodeproj(projectRoot: String, param1: Configuration): js.Array[OsType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRunnableSchemesFromXcodeproj")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[OsType]]
     
     inline def getSchemesFromXcodeproj(projectRoot: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemesFromXcodeproj")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
@@ -172,7 +172,7 @@ object buildIosMod {
       * @returns {string | null} bundle identifier of the Xcode project or null if the project is not configured
       */
     inline def getBundleIdentifierFromPbxproj(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundleIdentifierFromPbxproj")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-    inline def getBundleIdentifierFromPbxproj(projectRoot: String, hasTargetNameBuildConfiguration: BuildConfiguration): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundleIdentifierFromPbxproj")(projectRoot.asInstanceOf[js.Any], hasTargetNameBuildConfiguration.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+    inline def getBundleIdentifierFromPbxproj(projectRoot: String, param1: BuildConfiguration): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundleIdentifierFromPbxproj")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String | Null]
     
     inline def resetAllPlistBundleIdentifiers(projectRoot: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAllPlistBundleIdentifiers")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -223,7 +223,7 @@ object buildIosMod {
     
     inline def getSupportsTablet(config: PickExpoConfigios): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportsTablet")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def setDeviceFamily(config: PickExpoConfigios, hasProject: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceFamily")(config.asInstanceOf[js.Any], hasProject.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setDeviceFamily(config: PickExpoConfigios, param1: Project): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceFamily")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("@expo/config-plugins/build/ios", "DeviceFamily.withDeviceFamily")
     @js.native
@@ -239,12 +239,12 @@ object buildIosMod {
     inline def ensureApplicationTargetEntitlementsFileConfigured(projectRoot: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureApplicationTargetEntitlementsFileConfigured")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def getEntitlementsPath(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntitlementsPath")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-    inline def getEntitlementsPath(projectRoot: String, hasTargetNameBuildConfiguration: BuildConfiguration): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntitlementsPath")(projectRoot.asInstanceOf[js.Any], hasTargetNameBuildConfiguration.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+    inline def getEntitlementsPath(projectRoot: String, param1: BuildConfiguration): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntitlementsPath")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String | Null]
     
     inline def setAssociatedDomains(
       config: ExpoConfig,
-      has_EntitlementsPlist: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSONObject */ Any
-    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setAssociatedDomains")(config.asInstanceOf[js.Any], has_EntitlementsPlist.asInstanceOf[js.Any])).asInstanceOf[Any]
+      param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSONObject */ Any
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setAssociatedDomains")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("@expo/config-plugins/build/ios", "Entitlements.withAssociatedDomains")
     @js.native
@@ -263,7 +263,7 @@ object buildIosMod {
     
     inline def setGoogleConfig(config: PickExpoConfigios, infoPlist: InfoPlist, modRequest: ModProps[InfoPlist]): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleConfig")(config.asInstanceOf[js.Any], infoPlist.asInstanceOf[js.Any], modRequest.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
     
-    inline def setGoogleServicesFile(config: PickExpoConfigios, hasProjectRootProject: ProjectRoot): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleServicesFile")(config.asInstanceOf[js.Any], hasProjectRootProject.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setGoogleServicesFile(config: PickExpoConfigios, param1: ProjectRoot): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleServicesFile")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def setGoogleSignInReservedClientId(config: PickExpoConfigios, infoPlist: InfoPlist, modRequest: PickModPropsInfoPlistproj): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleSignInReservedClientId")(config.asInstanceOf[js.Any], infoPlist.asInstanceOf[js.Any], modRequest.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
     
@@ -286,9 +286,9 @@ object buildIosMod {
     
     inline def getResolvedLocalesAsync(projectRoot: String, input: ExpoConfigLocales): js.Promise[ResolvedLocalesJson] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolvedLocalesAsync")(projectRoot.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolvedLocalesJson]]
     
-    inline def setLocalesAsync(config: PickExpoConfiglocales, hasProjectRootProject: ProjectProjectRoot): js.Promise[
+    inline def setLocalesAsync(config: PickExpoConfiglocales, param1: ProjectProjectRoot): js.Promise[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocalesAsync")(config.asInstanceOf[js.Any], hasProjectRootProject.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocalesAsync")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any
       ]]
     
@@ -321,7 +321,7 @@ object buildIosMod {
     
     inline def removeMapsCocoaPods(src: String): MergeResults = ^.asInstanceOf[js.Dynamic].applyDynamic("removeMapsCocoaPods")(src.asInstanceOf[js.Any]).asInstanceOf[MergeResults]
     
-    inline def setGoogleMapsApiKey(config: PickExpoConfigios, hasGMSApiKeyInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleMapsApiKey")(config.asInstanceOf[js.Any], hasGMSApiKeyInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+    inline def setGoogleMapsApiKey(config: PickExpoConfigios, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleMapsApiKey")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
     
     @JSImport("@expo/config-plugins/build/ios", "Maps.withMaps")
     @js.native
@@ -336,10 +336,10 @@ object buildIosMod {
     
     inline def getName(config: PickExpoConfigname): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    inline def setDisplayName(configOrName: String, hasCFBundleDisplayNameInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(configOrName.asInstanceOf[js.Any], hasCFBundleDisplayNameInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
-    inline def setDisplayName(configOrName: PickExpoConfigname, hasCFBundleDisplayNameInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(configOrName.asInstanceOf[js.Any], hasCFBundleDisplayNameInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+    inline def setDisplayName(configOrName: String, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(configOrName.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+    inline def setDisplayName(configOrName: PickExpoConfigname, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(configOrName.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
     
-    inline def setName(config: PickExpoConfigname, hasCFBundleNameInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setName")(config.asInstanceOf[js.Any], hasCFBundleNameInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+    inline def setName(config: PickExpoConfigname, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setName")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
     
     inline def setProductName(
       config: PickExpoConfigname,
@@ -447,10 +447,7 @@ object buildIosMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def setProvisioningProfileForPbxproj(
-      projectRoot: String,
-      hasTargetNameProfileNameAppleTeamIdBuildConfiguration: ProvisioningProfileSettings
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProvisioningProfileForPbxproj")(projectRoot.asInstanceOf[js.Any], hasTargetNameProfileNameAppleTeamIdBuildConfiguration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setProvisioningProfileForPbxproj(projectRoot: String, param1: ProvisioningProfileSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProvisioningProfileForPbxproj")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object RequiresFullScreen {
@@ -499,13 +496,13 @@ object buildIosMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createBridgingHeaderFile(hasProjectRootProjectNameProjectBridgingHeader: BridgingHeader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBridgingHeaderFile")(hasProjectRootProjectNameProjectBridgingHeader.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def createBridgingHeaderFile(param0: BridgingHeader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def ensureSwiftBridgingHeaderSetup(hasProjectRootProject: ProjectProjectRoot): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureSwiftBridgingHeaderSetup")(hasProjectRootProject.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def ensureSwiftBridgingHeaderSetup(param0: ProjectProjectRoot): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureSwiftBridgingHeaderSetup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def getDesignatedSwiftBridgingHeaderFileReference(hasProject: Project): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDesignatedSwiftBridgingHeaderFileReference")(hasProject.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def getDesignatedSwiftBridgingHeaderFileReference(param0: Project): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDesignatedSwiftBridgingHeaderFileReference")(param0.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    inline def linkBridgingHeaderFile(hasProjectBridgingHeader: BridgingHeaderProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("linkBridgingHeaderFile")(hasProjectBridgingHeader.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def linkBridgingHeaderFile(param0: BridgingHeaderProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("linkBridgingHeaderFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("@expo/config-plugins/build/ios", "Swift.withNoopSwiftFile")
     @js.native
@@ -566,8 +563,8 @@ object buildIosMod {
     ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getXCBuildConfigurationFromPbxproj")(project.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null]
     inline def getXCBuildConfigurationFromPbxproj(
       project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
-      hasTargetNameBuildConfiguration: BuildConfiguration
-    ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getXCBuildConfigurationFromPbxproj")(project.asInstanceOf[js.Any], hasTargetNameBuildConfiguration.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null]
+      param1: BuildConfiguration
+    ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getXCBuildConfigurationFromPbxproj")(project.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XCBuildConfiguration */ Any) | Null]
     
     inline def isTargetOfType(
       target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXNativeTarget */ Any,
@@ -662,7 +659,7 @@ object buildIosMod {
     
     inline def getUsesNonExemptEncryption(config: PickExpoConfigios): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsesNonExemptEncryption")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
     
-    inline def setUsesNonExemptEncryption(config: PickExpoConfigios, hasITSAppUsesNonExemptEncryptionInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setUsesNonExemptEncryption")(config.asInstanceOf[js.Any], hasITSAppUsesNonExemptEncryptionInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+    inline def setUsesNonExemptEncryption(config: PickExpoConfigios, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setUsesNonExemptEncryption")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
     
     @JSImport("@expo/config-plugins/build/ios", "UsesNonExemptEncryption.withUsesNonExemptEncryption")
     @js.native
@@ -698,7 +695,7 @@ object buildIosMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createBuildSourceFile(hasProjectNativeProjectRootFilePathFileContentsOverwrite: FileContents): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuildSourceFile")(hasProjectNativeProjectRootFilePathFileContentsOverwrite.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def createBuildSourceFile(param0: FileContents): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuildSourceFile")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("@expo/config-plugins/build/ios", "XcodeProjectFile.withBuildSourceFile")
     @js.native
@@ -711,25 +708,25 @@ object buildIosMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def addBuildSourceFileToGroup(hasFilepathGroupNameProjectVerboseTargetUuid: Filepath): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBuildSourceFileToGroup")(hasFilepathGroupNameProjectVerboseTargetUuid.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def addBuildSourceFileToGroup(param0: Filepath): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addBuildSourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def addFileToGroupAndLink(hasFilepathGroupNameProjectVerboseAddFileToProjectTargetUuid: AddFileToProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFileToGroupAndLink")(hasFilepathGroupNameProjectVerboseAddFileToProjectTargetUuid.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def addFileToGroupAndLink(param0: AddFileToProject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFileToGroupAndLink")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def addFramework(hasProjectProjectNameFramework: Framework): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFramework")(hasProjectProjectNameFramework.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def addFramework(param0: Framework): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addFramework")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def addResourceFileToGroup(hasFilepathGroupNameIsBuildFileProjectVerboseTargetUuid: GroupName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addResourceFileToGroup")(hasFilepathGroupNameIsBuildFileProjectVerboseTargetUuid.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def addResourceFileToGroup(param0: GroupName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addResourceFileToGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def ensureGroupRecursively(
       project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
       filepath: String
     ): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXGroup */ Any) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureGroupRecursively")(project.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PBXGroup */ Any) | Null]
     
-    inline def getApplicationNativeTarget(hasProjectProjectName: ProjectName): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationNativeTarget")(hasProjectProjectName.asInstanceOf[js.Any]).asInstanceOf[Target]
+    inline def getApplicationNativeTarget(param0: ProjectName): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationNativeTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[Target]
     
     inline def getBuildConfigurationForListIdAndName(
       project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
-      hasConfigurationListIdBuildConfiguration: ConfigurationListId
-    ): ConfigurationSectionEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("getBuildConfigurationForListIdAndName")(project.asInstanceOf[js.Any], hasConfigurationListIdBuildConfiguration.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSectionEntry]
+      param1: ConfigurationListId
+    ): ConfigurationSectionEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("getBuildConfigurationForListIdAndName")(project.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSectionEntry]
     
     inline def getBuildConfigurationsForListId(
       project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any,
@@ -760,13 +757,13 @@ object buildIosMod {
       project: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any
     ): js.Array[ConfigurationListEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getXCConfigurationListEntries")(project.asInstanceOf[js.Any]).asInstanceOf[js.Array[ConfigurationListEntry]]
     
-    inline def isBuildConfig(hasSectionItem: ConfigurationSectionEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuildConfig")(hasSectionItem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBuildConfig(param0: ConfigurationSectionEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuildConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isNotComment(
-      hasKey: ConfigurationListEntry | ConfigurationSectionEntry | NativeTargetSectionEntry | ProjectSectionEntry
-    ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotComment")(hasKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      param0: ConfigurationListEntry | ConfigurationSectionEntry | NativeTargetSectionEntry | ProjectSectionEntry
+    ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotComment")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isNotTestHost(hasSectionItem: ConfigurationSectionEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotTestHost")(hasSectionItem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNotTestHost(param0: ConfigurationSectionEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotTestHost")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def resolvePathOrProject(projectRootOrProject: String): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePathOrProject")(projectRootOrProject.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any) | Null]
     inline def resolvePathOrProject(

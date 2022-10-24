@@ -14,7 +14,7 @@ object distTypesCoreServicesRepositoryFilesMod {
   @JSImport("gitlab/dist/types/core/services/RepositoryFiles", "RepositoryFiles")
   @js.native
   open class RepositoryFiles () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def create(projectId: String, filePath: String, branch: String, content: String, commitMessage: String): js.Promise[js.Object] = js.native
     def create(

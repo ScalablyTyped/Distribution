@@ -106,21 +106,6 @@ object headroomMod {
       __obj.asInstanceOf[Headroom]
     }
     
-    extension [Self <: Headroom](x: Self) {
-      
-      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-      
-      inline def setFreeze(value: () => Unit): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
-      
-      inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
-      
-      inline def setPin(value: () => Unit): Self = StObject.set(x, "pin", js.Any.fromFunction0(value))
-      
-      inline def setUnfreeze(value: () => Unit): Self = StObject.set(x, "unfreeze", js.Any.fromFunction0(value))
-      
-      inline def setUnpin(value: () => Unit): Self = StObject.set(x, "unpin", js.Any.fromFunction0(value))
-    }
-    
     trait HeadroomOptions extends StObject {
       
       /** css classes to apply multiple classes are also supported with a space-separated list */
@@ -208,6 +193,21 @@ object headroomMod {
         
         inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
       }
+    }
+    
+    extension [Self <: Headroom](x: Self) {
+      
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      
+      inline def setFreeze(value: () => Unit): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
+      
+      inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      
+      inline def setPin(value: () => Unit): Self = StObject.set(x, "pin", js.Any.fromFunction0(value))
+      
+      inline def setUnfreeze(value: () => Unit): Self = StObject.set(x, "unfreeze", js.Any.fromFunction0(value))
+      
+      inline def setUnpin(value: () => Unit): Self = StObject.set(x, "unpin", js.Any.fromFunction0(value))
     }
     
     trait Offset extends StObject {

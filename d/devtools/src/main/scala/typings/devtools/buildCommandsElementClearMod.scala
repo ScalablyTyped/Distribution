@@ -11,5 +11,5 @@ object buildCommandsElementClearMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasElementId: ElementId): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def default(param1: ElementId): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
 }

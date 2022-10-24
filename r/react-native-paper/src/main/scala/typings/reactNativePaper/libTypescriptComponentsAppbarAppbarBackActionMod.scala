@@ -46,7 +46,7 @@ object libTypescriptComponentsAppbarAppbarBackActionMod {
     */
   object default {
     
-    inline def apply(hasAccessibilityLabelRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasAccessibilityLabelRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/Appbar/AppbarBackAction", JSImport.Default)
     @js.native
@@ -92,7 +92,7 @@ object libTypescriptComponentsAppbarAppbarBackActionMod {
     */
   object AppbarBackAction {
     
-    inline def apply(hasAccessibilityLabelRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasAccessibilityLabelRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/Appbar/AppbarBackAction", "AppbarBackAction")
     @js.native

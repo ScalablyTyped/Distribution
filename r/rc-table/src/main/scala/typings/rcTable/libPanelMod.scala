@@ -12,7 +12,7 @@ object libPanelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasClassNameChildren: TitleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: TitleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TitleProps extends StObject {
     

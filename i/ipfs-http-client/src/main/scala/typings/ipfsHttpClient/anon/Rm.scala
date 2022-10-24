@@ -13,23 +13,23 @@ trait Rm extends StObject {
   
   def add(
     cid: CID[Any, Double, Double, Version],
-    hasTimeoutSignalHeadersQuery: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.AddOptions */ Any) & AbortOptions & HTTPClientExtraOptions
+    param1: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.AddOptions */ Any) & AbortOptions & HTTPClientExtraOptions
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Pin */ Any
   ]
   
   def ls(
-    hasTimeoutSignalHeadersQuery: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
+    param0: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
   ): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Pin */ Any
   ]
   
   def rm(
-    hasTimeoutSignalHeadersQuery: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
+    param0: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
   ): js.Promise[Unit]
   
   def rmAll(
-    hasTimeoutSignalHeadersQuery: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
+    param0: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Query */ Any) & AbortOptions & HTTPClientExtraOptions
   ): js.Promise[Unit]
   
   var service: Ls

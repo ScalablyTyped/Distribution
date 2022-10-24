@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nice-napi"
-version := "1.0.2-7b07eb"
-scalaVersion := "3.1.2"
+version := "1.0.2-3f5b26"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

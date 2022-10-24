@@ -23,7 +23,7 @@ object libExecutorMod {
   @JSImport("ionic/lib/executor", "Executor")
   @js.native
   open class Executor protected () extends BaseExecutor[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
-    def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
+    def this(param0: BaseExecutorDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
   }
   
   @JSImport("ionic/lib/executor", "HELP_FLAGS")

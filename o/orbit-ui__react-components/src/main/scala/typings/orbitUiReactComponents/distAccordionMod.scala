@@ -34,9 +34,7 @@ object distAccordionMod {
   @js.native
   val AccordionPanel: OrbitComponent[HTMLElement, InnerAccordionPanelProps] = js.native
   
-  inline def InnerAccordion(
-    hasIdExpandedKeysPropDefaultExpandedKeysOnExpansionChangeExpansionModeAutoFocusVariantAsChildrenForwardedRefRest: InnerAccordionProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAccordion")(hasIdExpandedKeysPropDefaultExpandedKeysOnExpansionChangeExpansionModeAutoFocusVariantAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerAccordion(param0: InnerAccordionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAccordion")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerAccordionHeader(props: InnerAccordionHeaderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerAccordionHeader")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   

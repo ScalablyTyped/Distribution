@@ -13,7 +13,7 @@ object toolsSrcExtractExtractionMod {
   @JSImport("@angular/localize/tools/src/extract/extraction", "MessageExtractor")
   @js.native
   open class MessageExtractor protected () extends StObject {
-    def this(fs: ReadonlyFileSystem, logger: Logger, hasBasePathUseSourceMapsLocalizeName: ExtractionOptions) = this()
+    def this(fs: ReadonlyFileSystem, logger: Logger, param2: ExtractionOptions) = this()
     
     /* private */ var basePath: Any = js.native
     

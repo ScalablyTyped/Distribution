@@ -79,7 +79,7 @@ object mod {
   @js.native
   open class TestWatcher protected ()
     extends typings.jestWatcher.mod.TestWatcher {
-    def this(hasIsWatchMode: IsWatchMode) = this()
+    def this(param0: IsWatchMode) = this()
   }
   
   trait BaseTestRunner extends StObject {

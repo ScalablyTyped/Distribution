@@ -5,12 +5,12 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
-import typings.wixStyleReact.listItemSelectMod.ListItemSelectSizes
+import typings.wixStyleReact.distTypesListItemSelectMod.ListItemSelectSizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<wix-style-react.wix-style-react/dist/es/src/ListItemSelect.ListItemSelectProps> */
+/* Inlined std.Partial<wix-style-react.wix-style-react/dist/types/ListItemSelect.ListItemSelectProps> */
 trait PartialListItemSelectProp extends StObject {
   
   var checkbox: js.UndefOr[Boolean] = js.undefined

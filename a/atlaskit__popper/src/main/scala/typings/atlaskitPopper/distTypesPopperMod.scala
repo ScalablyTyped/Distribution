@@ -18,7 +18,7 @@ object distTypesPopperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Popper[CustomModifiers](hasChildrenOffsetPlacementReferenceElementModifiersStrategy: CustomPopperProps[CustomModifiers]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Popper")(hasChildrenOffsetPlacementReferenceElementModifiersStrategy.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Popper[CustomModifiers](param0: CustomPopperProps[CustomModifiers]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Popper")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@atlaskit/popper/dist/types/popper", "placements")
   @js.native

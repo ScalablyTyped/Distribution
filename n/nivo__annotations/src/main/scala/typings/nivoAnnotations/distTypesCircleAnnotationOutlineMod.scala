@@ -12,5 +12,5 @@ object distTypesCircleAnnotationOutlineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CircleAnnotationOutline(hasXYSize: Size): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleAnnotationOutline")(hasXYSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CircleAnnotationOutline(param0: Size): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleAnnotationOutline")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

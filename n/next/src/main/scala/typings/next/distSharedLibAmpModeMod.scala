@@ -12,5 +12,5 @@ object distSharedLibAmpModeMod {
   val ^ : js.Any = js.native
   
   inline def isInAmpMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAmpMode")().asInstanceOf[Boolean]
-  inline def isInAmpMode(hasAmpFirstHybridHasQuery: AmpFirst): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAmpMode")(hasAmpFirstHybridHasQuery.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInAmpMode(param0: AmpFirst): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAmpMode")(param0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

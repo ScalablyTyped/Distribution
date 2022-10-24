@@ -39,7 +39,7 @@ object libTypescriptComponentsCardCardContentMod {
     */
   object default {
     
-    inline def apply(hasIndexTotalSiblingsStyleRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasIndexTotalSiblingsStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/Card/CardContent", JSImport.Default)
     @js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nrwl/devkit" : "14.7.8"
+      "@nrwl/devkit" : "15.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@nrwl/devkit" : "14.7.8"
+      "@nrwl/devkit" : "15.0.1"
     }
   ],
   "compile-devDependencies" : [

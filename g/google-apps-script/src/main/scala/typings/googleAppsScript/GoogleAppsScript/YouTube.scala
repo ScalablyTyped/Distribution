@@ -1231,6 +1231,373 @@ object YouTube {
     }
   }
   
+  extension [Self <: YouTube](x: Self) {
+    
+    inline def setActivities(value: ActivitiesCollection): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
+    
+    inline def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
+    
+    inline def setCaptions(value: CaptionsCollection): Self = StObject.set(x, "Captions", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionsUndefined: Self = StObject.set(x, "Captions", js.undefined)
+    
+    inline def setChannelBanners(value: ChannelBannersCollection): Self = StObject.set(x, "ChannelBanners", value.asInstanceOf[js.Any])
+    
+    inline def setChannelBannersUndefined: Self = StObject.set(x, "ChannelBanners", js.undefined)
+    
+    inline def setChannelSections(value: ChannelSectionsCollection): Self = StObject.set(x, "ChannelSections", value.asInstanceOf[js.Any])
+    
+    inline def setChannelSectionsUndefined: Self = StObject.set(x, "ChannelSections", js.undefined)
+    
+    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    
+    inline def setCommentThreads(value: CommentThreadsCollection): Self = StObject.set(x, "CommentThreads", value.asInstanceOf[js.Any])
+    
+    inline def setCommentThreadsUndefined: Self = StObject.set(x, "CommentThreads", js.undefined)
+    
+    inline def setComments(value: CommentsCollection): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
+    
+    inline def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
+    
+    inline def setGuideCategories(value: GuideCategoriesCollection): Self = StObject.set(x, "GuideCategories", value.asInstanceOf[js.Any])
+    
+    inline def setGuideCategoriesUndefined: Self = StObject.set(x, "GuideCategories", js.undefined)
+    
+    inline def setI18nLanguages(value: I18nLanguagesCollection): Self = StObject.set(x, "I18nLanguages", value.asInstanceOf[js.Any])
+    
+    inline def setI18nLanguagesUndefined: Self = StObject.set(x, "I18nLanguages", js.undefined)
+    
+    inline def setI18nRegions(value: I18nRegionsCollection): Self = StObject.set(x, "I18nRegions", value.asInstanceOf[js.Any])
+    
+    inline def setI18nRegionsUndefined: Self = StObject.set(x, "I18nRegions", js.undefined)
+    
+    inline def setLiveBroadcasts(value: LiveBroadcastsCollection): Self = StObject.set(x, "LiveBroadcasts", value.asInstanceOf[js.Any])
+    
+    inline def setLiveBroadcastsUndefined: Self = StObject.set(x, "LiveBroadcasts", js.undefined)
+    
+    inline def setLiveChatBans(value: LiveChatBansCollection): Self = StObject.set(x, "LiveChatBans", value.asInstanceOf[js.Any])
+    
+    inline def setLiveChatBansUndefined: Self = StObject.set(x, "LiveChatBans", js.undefined)
+    
+    inline def setLiveChatMessages(value: LiveChatMessagesCollection): Self = StObject.set(x, "LiveChatMessages", value.asInstanceOf[js.Any])
+    
+    inline def setLiveChatMessagesUndefined: Self = StObject.set(x, "LiveChatMessages", js.undefined)
+    
+    inline def setLiveChatModerators(value: LiveChatModeratorsCollection): Self = StObject.set(x, "LiveChatModerators", value.asInstanceOf[js.Any])
+    
+    inline def setLiveChatModeratorsUndefined: Self = StObject.set(x, "LiveChatModerators", js.undefined)
+    
+    inline def setLiveStreams(value: LiveStreamsCollection): Self = StObject.set(x, "LiveStreams", value.asInstanceOf[js.Any])
+    
+    inline def setLiveStreamsUndefined: Self = StObject.set(x, "LiveStreams", js.undefined)
+    
+    inline def setNewAccessPolicy(value: () => AccessPolicy): Self = StObject.set(x, "newAccessPolicy", js.Any.fromFunction0(value))
+    
+    inline def setNewActivity(value: () => Activity): Self = StObject.set(x, "newActivity", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetails(value: () => ActivityContentDetails): Self = StObject.set(x, "newActivityContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsBulletin(value: () => ActivityContentDetailsBulletin): Self = StObject.set(x, "newActivityContentDetailsBulletin", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsChannelItem(value: () => ActivityContentDetailsChannelItem): Self = StObject.set(x, "newActivityContentDetailsChannelItem", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsComment(value: () => ActivityContentDetailsComment): Self = StObject.set(x, "newActivityContentDetailsComment", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsFavorite(value: () => ActivityContentDetailsFavorite): Self = StObject.set(x, "newActivityContentDetailsFavorite", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsLike(value: () => ActivityContentDetailsLike): Self = StObject.set(x, "newActivityContentDetailsLike", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsPlaylistItem(value: () => ActivityContentDetailsPlaylistItem): Self = StObject.set(x, "newActivityContentDetailsPlaylistItem", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsPromotedItem(value: () => ActivityContentDetailsPromotedItem): Self = StObject.set(x, "newActivityContentDetailsPromotedItem", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsRecommendation(value: () => ActivityContentDetailsRecommendation): Self = StObject.set(x, "newActivityContentDetailsRecommendation", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsSocial(value: () => ActivityContentDetailsSocial): Self = StObject.set(x, "newActivityContentDetailsSocial", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsSubscription(value: () => ActivityContentDetailsSubscription): Self = StObject.set(x, "newActivityContentDetailsSubscription", js.Any.fromFunction0(value))
+    
+    inline def setNewActivityContentDetailsUpload(value: () => ActivityContentDetailsUpload): Self = StObject.set(x, "newActivityContentDetailsUpload", js.Any.fromFunction0(value))
+    
+    inline def setNewActivitySnippet(value: () => ActivitySnippet): Self = StObject.set(x, "newActivitySnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewCaption(value: () => Caption): Self = StObject.set(x, "newCaption", js.Any.fromFunction0(value))
+    
+    inline def setNewCaptionSnippet(value: () => CaptionSnippet): Self = StObject.set(x, "newCaptionSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewCdnSettings(value: () => CdnSettings): Self = StObject.set(x, "newCdnSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelAuditDetails(value: () => ChannelAuditDetails): Self = StObject.set(x, "newChannelAuditDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelBannerResource(value: () => ChannelBannerResource): Self = StObject.set(x, "newChannelBannerResource", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelBrandingSettings(value: () => ChannelBrandingSettings): Self = StObject.set(x, "newChannelBrandingSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelContentDetails(value: () => ChannelContentDetails): Self = StObject.set(x, "newChannelContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelContentDetailsRelatedPlaylists(value: () => ChannelContentDetailsRelatedPlaylists): Self = StObject.set(x, "newChannelContentDetailsRelatedPlaylists", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelContentOwnerDetails(value: () => ChannelContentOwnerDetails): Self = StObject.set(x, "newChannelContentOwnerDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelConversionPing(value: () => ChannelConversionPing): Self = StObject.set(x, "newChannelConversionPing", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelConversionPings(value: () => ChannelConversionPings): Self = StObject.set(x, "newChannelConversionPings", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelLocalization(value: () => ChannelLocalization): Self = StObject.set(x, "newChannelLocalization", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelProfileDetails(value: () => ChannelProfileDetails): Self = StObject.set(x, "newChannelProfileDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelSection(value: () => ChannelSection): Self = StObject.set(x, "newChannelSection", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelSectionContentDetails(value: () => ChannelSectionContentDetails): Self = StObject.set(x, "newChannelSectionContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelSectionLocalization(value: () => ChannelSectionLocalization): Self = StObject.set(x, "newChannelSectionLocalization", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelSectionSnippet(value: () => ChannelSectionSnippet): Self = StObject.set(x, "newChannelSectionSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelSectionTargeting(value: () => ChannelSectionTargeting): Self = StObject.set(x, "newChannelSectionTargeting", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelSettings(value: () => ChannelSettings): Self = StObject.set(x, "newChannelSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelSnippet(value: () => ChannelSnippet): Self = StObject.set(x, "newChannelSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelStatistics(value: () => ChannelStatistics): Self = StObject.set(x, "newChannelStatistics", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelStatus(value: () => ChannelStatus): Self = StObject.set(x, "newChannelStatus", js.Any.fromFunction0(value))
+    
+    inline def setNewChannelTopicDetails(value: () => ChannelTopicDetails): Self = StObject.set(x, "newChannelTopicDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewComment(value: () => Comment): Self = StObject.set(x, "newComment", js.Any.fromFunction0(value))
+    
+    inline def setNewCommentSnippet(value: () => CommentSnippet): Self = StObject.set(x, "newCommentSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewCommentThread(value: () => CommentThread): Self = StObject.set(x, "newCommentThread", js.Any.fromFunction0(value))
+    
+    inline def setNewCommentThreadReplies(value: () => CommentThreadReplies): Self = StObject.set(x, "newCommentThreadReplies", js.Any.fromFunction0(value))
+    
+    inline def setNewCommentThreadSnippet(value: () => CommentThreadSnippet): Self = StObject.set(x, "newCommentThreadSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewContentRating(value: () => ContentRating): Self = StObject.set(x, "newContentRating", js.Any.fromFunction0(value))
+    
+    inline def setNewGeoPoint(value: () => GeoPoint): Self = StObject.set(x, "newGeoPoint", js.Any.fromFunction0(value))
+    
+    inline def setNewImageSettings(value: () => ImageSettings): Self = StObject.set(x, "newImageSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewIngestionInfo(value: () => IngestionInfo): Self = StObject.set(x, "newIngestionInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewInvideoBranding(value: () => InvideoBranding): Self = StObject.set(x, "newInvideoBranding", js.Any.fromFunction0(value))
+    
+    inline def setNewInvideoPosition(value: () => InvideoPosition): Self = StObject.set(x, "newInvideoPosition", js.Any.fromFunction0(value))
+    
+    inline def setNewInvideoPromotion(value: () => InvideoPromotion): Self = StObject.set(x, "newInvideoPromotion", js.Any.fromFunction0(value))
+    
+    inline def setNewInvideoTiming(value: () => InvideoTiming): Self = StObject.set(x, "newInvideoTiming", js.Any.fromFunction0(value))
+    
+    inline def setNewLanguageTag(value: () => LanguageTag): Self = StObject.set(x, "newLanguageTag", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveBroadcast(value: () => LiveBroadcast): Self = StObject.set(x, "newLiveBroadcast", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveBroadcastContentDetails(value: () => LiveBroadcastContentDetails): Self = StObject.set(x, "newLiveBroadcastContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveBroadcastSnippet(value: () => LiveBroadcastSnippet): Self = StObject.set(x, "newLiveBroadcastSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveBroadcastStatistics(value: () => LiveBroadcastStatistics): Self = StObject.set(x, "newLiveBroadcastStatistics", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveBroadcastStatus(value: () => LiveBroadcastStatus): Self = StObject.set(x, "newLiveBroadcastStatus", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatBan(value: () => LiveChatBan): Self = StObject.set(x, "newLiveChatBan", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatBanSnippet(value: () => LiveChatBanSnippet): Self = StObject.set(x, "newLiveChatBanSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatFanFundingEventDetails(value: () => LiveChatFanFundingEventDetails): Self = StObject.set(x, "newLiveChatFanFundingEventDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatMessage(value: () => LiveChatMessage): Self = StObject.set(x, "newLiveChatMessage", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatMessageAuthorDetails(value: () => LiveChatMessageAuthorDetails): Self = StObject.set(x, "newLiveChatMessageAuthorDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatMessageDeletedDetails(value: () => LiveChatMessageDeletedDetails): Self = StObject.set(x, "newLiveChatMessageDeletedDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatMessageRetractedDetails(value: () => LiveChatMessageRetractedDetails): Self = StObject.set(x, "newLiveChatMessageRetractedDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatMessageSnippet(value: () => LiveChatMessageSnippet): Self = StObject.set(x, "newLiveChatMessageSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatModerator(value: () => LiveChatModerator): Self = StObject.set(x, "newLiveChatModerator", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatModeratorSnippet(value: () => LiveChatModeratorSnippet): Self = StObject.set(x, "newLiveChatModeratorSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatPollClosedDetails(value: () => LiveChatPollClosedDetails): Self = StObject.set(x, "newLiveChatPollClosedDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatPollEditedDetails(value: () => LiveChatPollEditedDetails): Self = StObject.set(x, "newLiveChatPollEditedDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatPollItem(value: () => LiveChatPollItem): Self = StObject.set(x, "newLiveChatPollItem", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatPollOpenedDetails(value: () => LiveChatPollOpenedDetails): Self = StObject.set(x, "newLiveChatPollOpenedDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatPollVotedDetails(value: () => LiveChatPollVotedDetails): Self = StObject.set(x, "newLiveChatPollVotedDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatSuperChatDetails(value: () => LiveChatSuperChatDetails): Self = StObject.set(x, "newLiveChatSuperChatDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatSuperStickerDetails(value: () => LiveChatSuperStickerDetails): Self = StObject.set(x, "newLiveChatSuperStickerDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatTextMessageDetails(value: () => LiveChatTextMessageDetails): Self = StObject.set(x, "newLiveChatTextMessageDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveChatUserBannedMessageDetails(value: () => LiveChatUserBannedMessageDetails): Self = StObject.set(x, "newLiveChatUserBannedMessageDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveStream(value: () => LiveStream): Self = StObject.set(x, "newLiveStream", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveStreamConfigurationIssue(value: () => LiveStreamConfigurationIssue): Self = StObject.set(x, "newLiveStreamConfigurationIssue", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveStreamContentDetails(value: () => LiveStreamContentDetails): Self = StObject.set(x, "newLiveStreamContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveStreamHealthStatus(value: () => LiveStreamHealthStatus): Self = StObject.set(x, "newLiveStreamHealthStatus", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveStreamSnippet(value: () => LiveStreamSnippet): Self = StObject.set(x, "newLiveStreamSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewLiveStreamStatus(value: () => LiveStreamStatus): Self = StObject.set(x, "newLiveStreamStatus", js.Any.fromFunction0(value))
+    
+    inline def setNewLocalizedProperty(value: () => LocalizedProperty): Self = StObject.set(x, "newLocalizedProperty", js.Any.fromFunction0(value))
+    
+    inline def setNewLocalizedString(value: () => LocalizedString): Self = StObject.set(x, "newLocalizedString", js.Any.fromFunction0(value))
+    
+    inline def setNewMonitorStreamInfo(value: () => MonitorStreamInfo): Self = StObject.set(x, "newMonitorStreamInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylist(value: () => Playlist): Self = StObject.set(x, "newPlaylist", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylistContentDetails(value: () => PlaylistContentDetails): Self = StObject.set(x, "newPlaylistContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylistItem(value: () => PlaylistItem): Self = StObject.set(x, "newPlaylistItem", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylistItemContentDetails(value: () => PlaylistItemContentDetails): Self = StObject.set(x, "newPlaylistItemContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylistItemSnippet(value: () => PlaylistItemSnippet): Self = StObject.set(x, "newPlaylistItemSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylistItemStatus(value: () => PlaylistItemStatus): Self = StObject.set(x, "newPlaylistItemStatus", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylistLocalization(value: () => PlaylistLocalization): Self = StObject.set(x, "newPlaylistLocalization", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylistPlayer(value: () => PlaylistPlayer): Self = StObject.set(x, "newPlaylistPlayer", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylistSnippet(value: () => PlaylistSnippet): Self = StObject.set(x, "newPlaylistSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaylistStatus(value: () => PlaylistStatus): Self = StObject.set(x, "newPlaylistStatus", js.Any.fromFunction0(value))
+    
+    inline def setNewPromotedItem(value: () => PromotedItem): Self = StObject.set(x, "newPromotedItem", js.Any.fromFunction0(value))
+    
+    inline def setNewPromotedItemId(value: () => PromotedItemId): Self = StObject.set(x, "newPromotedItemId", js.Any.fromFunction0(value))
+    
+    inline def setNewPropertyValue(value: () => PropertyValue): Self = StObject.set(x, "newPropertyValue", js.Any.fromFunction0(value))
+    
+    inline def setNewResourceId(value: () => ResourceId): Self = StObject.set(x, "newResourceId", js.Any.fromFunction0(value))
+    
+    inline def setNewSubscription(value: () => Subscription): Self = StObject.set(x, "newSubscription", js.Any.fromFunction0(value))
+    
+    inline def setNewSubscriptionContentDetails(value: () => SubscriptionContentDetails): Self = StObject.set(x, "newSubscriptionContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewSubscriptionSnippet(value: () => SubscriptionSnippet): Self = StObject.set(x, "newSubscriptionSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewSubscriptionSubscriberSnippet(value: () => SubscriptionSubscriberSnippet): Self = StObject.set(x, "newSubscriptionSubscriberSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewSuperStickerMetadata(value: () => SuperStickerMetadata): Self = StObject.set(x, "newSuperStickerMetadata", js.Any.fromFunction0(value))
+    
+    inline def setNewThumbnail(value: () => Thumbnail): Self = StObject.set(x, "newThumbnail", js.Any.fromFunction0(value))
+    
+    inline def setNewThumbnailDetails(value: () => ThumbnailDetails): Self = StObject.set(x, "newThumbnailDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewVideo(value: () => Video): Self = StObject.set(x, "newVideo", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoAbuseReport(value: () => VideoAbuseReport): Self = StObject.set(x, "newVideoAbuseReport", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoAgeGating(value: () => VideoAgeGating): Self = StObject.set(x, "newVideoAgeGating", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoContentDetails(value: () => VideoContentDetails): Self = StObject.set(x, "newVideoContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoContentDetailsRegionRestriction(value: () => VideoContentDetailsRegionRestriction): Self = StObject.set(x, "newVideoContentDetailsRegionRestriction", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoFileDetails(value: () => VideoFileDetails): Self = StObject.set(x, "newVideoFileDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoFileDetailsAudioStream(value: () => VideoFileDetailsAudioStream): Self = StObject.set(x, "newVideoFileDetailsAudioStream", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoFileDetailsVideoStream(value: () => VideoFileDetailsVideoStream): Self = StObject.set(x, "newVideoFileDetailsVideoStream", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoLiveStreamingDetails(value: () => VideoLiveStreamingDetails): Self = StObject.set(x, "newVideoLiveStreamingDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoLocalization(value: () => VideoLocalization): Self = StObject.set(x, "newVideoLocalization", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoMonetizationDetails(value: () => VideoMonetizationDetails): Self = StObject.set(x, "newVideoMonetizationDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoPlayer(value: () => VideoPlayer): Self = StObject.set(x, "newVideoPlayer", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoProcessingDetails(value: () => VideoProcessingDetails): Self = StObject.set(x, "newVideoProcessingDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoProcessingDetailsProcessingProgress(value: () => VideoProcessingDetailsProcessingProgress): Self = StObject.set(x, "newVideoProcessingDetailsProcessingProgress", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoProjectDetails(value: () => VideoProjectDetails): Self = StObject.set(x, "newVideoProjectDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoRecordingDetails(value: () => VideoRecordingDetails): Self = StObject.set(x, "newVideoRecordingDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoSnippet(value: () => VideoSnippet): Self = StObject.set(x, "newVideoSnippet", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoStatistics(value: () => VideoStatistics): Self = StObject.set(x, "newVideoStatistics", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoStatus(value: () => VideoStatus): Self = StObject.set(x, "newVideoStatus", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoSuggestions(value: () => VideoSuggestions): Self = StObject.set(x, "newVideoSuggestions", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoSuggestionsTagSuggestion(value: () => VideoSuggestionsTagSuggestion): Self = StObject.set(x, "newVideoSuggestionsTagSuggestion", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoTopicDetails(value: () => VideoTopicDetails): Self = StObject.set(x, "newVideoTopicDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewWatchSettings(value: () => WatchSettings): Self = StObject.set(x, "newWatchSettings", js.Any.fromFunction0(value))
+    
+    inline def setPlaylistItems(value: PlaylistItemsCollection): Self = StObject.set(x, "PlaylistItems", value.asInstanceOf[js.Any])
+    
+    inline def setPlaylistItemsUndefined: Self = StObject.set(x, "PlaylistItems", js.undefined)
+    
+    inline def setPlaylists(value: PlaylistsCollection): Self = StObject.set(x, "Playlists", value.asInstanceOf[js.Any])
+    
+    inline def setPlaylistsUndefined: Self = StObject.set(x, "Playlists", js.undefined)
+    
+    inline def setSearch(value: SearchCollection): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "Search", js.undefined)
+    
+    inline def setSponsors(value: SponsorsCollection): Self = StObject.set(x, "Sponsors", value.asInstanceOf[js.Any])
+    
+    inline def setSponsorsUndefined: Self = StObject.set(x, "Sponsors", js.undefined)
+    
+    inline def setSubscriptions(value: SubscriptionsCollection): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
+    
+    inline def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
+    
+    inline def setSuperChatEvents(value: SuperChatEventsCollection): Self = StObject.set(x, "SuperChatEvents", value.asInstanceOf[js.Any])
+    
+    inline def setSuperChatEventsUndefined: Self = StObject.set(x, "SuperChatEvents", js.undefined)
+    
+    inline def setThumbnails(value: ThumbnailsCollection): Self = StObject.set(x, "Thumbnails", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailsUndefined: Self = StObject.set(x, "Thumbnails", js.undefined)
+    
+    inline def setVideoAbuseReportReasons(value: VideoAbuseReportReasonsCollection): Self = StObject.set(x, "VideoAbuseReportReasons", value.asInstanceOf[js.Any])
+    
+    inline def setVideoAbuseReportReasonsUndefined: Self = StObject.set(x, "VideoAbuseReportReasons", js.undefined)
+    
+    inline def setVideoCategories(value: VideoCategoriesCollection): Self = StObject.set(x, "VideoCategories", value.asInstanceOf[js.Any])
+    
+    inline def setVideoCategoriesUndefined: Self = StObject.set(x, "VideoCategories", js.undefined)
+    
+    inline def setVideos(value: VideosCollection): Self = StObject.set(x, "Videos", value.asInstanceOf[js.Any])
+    
+    inline def setVideosUndefined: Self = StObject.set(x, "Videos", js.undefined)
+    
+    inline def setWatermarks(value: WatermarksCollection): Self = StObject.set(x, "Watermarks", value.asInstanceOf[js.Any])
+    
+    inline def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
+  }
+  
   object Schema {
     
     trait AccessPolicy extends StObject {
@@ -9234,372 +9601,5 @@ object YouTube {
         inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       }
     }
-  }
-  
-  extension [Self <: YouTube](x: Self) {
-    
-    inline def setActivities(value: ActivitiesCollection): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
-    
-    inline def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
-    
-    inline def setCaptions(value: CaptionsCollection): Self = StObject.set(x, "Captions", value.asInstanceOf[js.Any])
-    
-    inline def setCaptionsUndefined: Self = StObject.set(x, "Captions", js.undefined)
-    
-    inline def setChannelBanners(value: ChannelBannersCollection): Self = StObject.set(x, "ChannelBanners", value.asInstanceOf[js.Any])
-    
-    inline def setChannelBannersUndefined: Self = StObject.set(x, "ChannelBanners", js.undefined)
-    
-    inline def setChannelSections(value: ChannelSectionsCollection): Self = StObject.set(x, "ChannelSections", value.asInstanceOf[js.Any])
-    
-    inline def setChannelSectionsUndefined: Self = StObject.set(x, "ChannelSections", js.undefined)
-    
-    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
-    
-    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
-    
-    inline def setCommentThreads(value: CommentThreadsCollection): Self = StObject.set(x, "CommentThreads", value.asInstanceOf[js.Any])
-    
-    inline def setCommentThreadsUndefined: Self = StObject.set(x, "CommentThreads", js.undefined)
-    
-    inline def setComments(value: CommentsCollection): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
-    
-    inline def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
-    
-    inline def setGuideCategories(value: GuideCategoriesCollection): Self = StObject.set(x, "GuideCategories", value.asInstanceOf[js.Any])
-    
-    inline def setGuideCategoriesUndefined: Self = StObject.set(x, "GuideCategories", js.undefined)
-    
-    inline def setI18nLanguages(value: I18nLanguagesCollection): Self = StObject.set(x, "I18nLanguages", value.asInstanceOf[js.Any])
-    
-    inline def setI18nLanguagesUndefined: Self = StObject.set(x, "I18nLanguages", js.undefined)
-    
-    inline def setI18nRegions(value: I18nRegionsCollection): Self = StObject.set(x, "I18nRegions", value.asInstanceOf[js.Any])
-    
-    inline def setI18nRegionsUndefined: Self = StObject.set(x, "I18nRegions", js.undefined)
-    
-    inline def setLiveBroadcasts(value: LiveBroadcastsCollection): Self = StObject.set(x, "LiveBroadcasts", value.asInstanceOf[js.Any])
-    
-    inline def setLiveBroadcastsUndefined: Self = StObject.set(x, "LiveBroadcasts", js.undefined)
-    
-    inline def setLiveChatBans(value: LiveChatBansCollection): Self = StObject.set(x, "LiveChatBans", value.asInstanceOf[js.Any])
-    
-    inline def setLiveChatBansUndefined: Self = StObject.set(x, "LiveChatBans", js.undefined)
-    
-    inline def setLiveChatMessages(value: LiveChatMessagesCollection): Self = StObject.set(x, "LiveChatMessages", value.asInstanceOf[js.Any])
-    
-    inline def setLiveChatMessagesUndefined: Self = StObject.set(x, "LiveChatMessages", js.undefined)
-    
-    inline def setLiveChatModerators(value: LiveChatModeratorsCollection): Self = StObject.set(x, "LiveChatModerators", value.asInstanceOf[js.Any])
-    
-    inline def setLiveChatModeratorsUndefined: Self = StObject.set(x, "LiveChatModerators", js.undefined)
-    
-    inline def setLiveStreams(value: LiveStreamsCollection): Self = StObject.set(x, "LiveStreams", value.asInstanceOf[js.Any])
-    
-    inline def setLiveStreamsUndefined: Self = StObject.set(x, "LiveStreams", js.undefined)
-    
-    inline def setNewAccessPolicy(value: () => AccessPolicy): Self = StObject.set(x, "newAccessPolicy", js.Any.fromFunction0(value))
-    
-    inline def setNewActivity(value: () => Activity): Self = StObject.set(x, "newActivity", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetails(value: () => ActivityContentDetails): Self = StObject.set(x, "newActivityContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsBulletin(value: () => ActivityContentDetailsBulletin): Self = StObject.set(x, "newActivityContentDetailsBulletin", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsChannelItem(value: () => ActivityContentDetailsChannelItem): Self = StObject.set(x, "newActivityContentDetailsChannelItem", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsComment(value: () => ActivityContentDetailsComment): Self = StObject.set(x, "newActivityContentDetailsComment", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsFavorite(value: () => ActivityContentDetailsFavorite): Self = StObject.set(x, "newActivityContentDetailsFavorite", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsLike(value: () => ActivityContentDetailsLike): Self = StObject.set(x, "newActivityContentDetailsLike", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsPlaylistItem(value: () => ActivityContentDetailsPlaylistItem): Self = StObject.set(x, "newActivityContentDetailsPlaylistItem", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsPromotedItem(value: () => ActivityContentDetailsPromotedItem): Self = StObject.set(x, "newActivityContentDetailsPromotedItem", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsRecommendation(value: () => ActivityContentDetailsRecommendation): Self = StObject.set(x, "newActivityContentDetailsRecommendation", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsSocial(value: () => ActivityContentDetailsSocial): Self = StObject.set(x, "newActivityContentDetailsSocial", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsSubscription(value: () => ActivityContentDetailsSubscription): Self = StObject.set(x, "newActivityContentDetailsSubscription", js.Any.fromFunction0(value))
-    
-    inline def setNewActivityContentDetailsUpload(value: () => ActivityContentDetailsUpload): Self = StObject.set(x, "newActivityContentDetailsUpload", js.Any.fromFunction0(value))
-    
-    inline def setNewActivitySnippet(value: () => ActivitySnippet): Self = StObject.set(x, "newActivitySnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewCaption(value: () => Caption): Self = StObject.set(x, "newCaption", js.Any.fromFunction0(value))
-    
-    inline def setNewCaptionSnippet(value: () => CaptionSnippet): Self = StObject.set(x, "newCaptionSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewCdnSettings(value: () => CdnSettings): Self = StObject.set(x, "newCdnSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelAuditDetails(value: () => ChannelAuditDetails): Self = StObject.set(x, "newChannelAuditDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelBannerResource(value: () => ChannelBannerResource): Self = StObject.set(x, "newChannelBannerResource", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelBrandingSettings(value: () => ChannelBrandingSettings): Self = StObject.set(x, "newChannelBrandingSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelContentDetails(value: () => ChannelContentDetails): Self = StObject.set(x, "newChannelContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelContentDetailsRelatedPlaylists(value: () => ChannelContentDetailsRelatedPlaylists): Self = StObject.set(x, "newChannelContentDetailsRelatedPlaylists", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelContentOwnerDetails(value: () => ChannelContentOwnerDetails): Self = StObject.set(x, "newChannelContentOwnerDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelConversionPing(value: () => ChannelConversionPing): Self = StObject.set(x, "newChannelConversionPing", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelConversionPings(value: () => ChannelConversionPings): Self = StObject.set(x, "newChannelConversionPings", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelLocalization(value: () => ChannelLocalization): Self = StObject.set(x, "newChannelLocalization", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelProfileDetails(value: () => ChannelProfileDetails): Self = StObject.set(x, "newChannelProfileDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelSection(value: () => ChannelSection): Self = StObject.set(x, "newChannelSection", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelSectionContentDetails(value: () => ChannelSectionContentDetails): Self = StObject.set(x, "newChannelSectionContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelSectionLocalization(value: () => ChannelSectionLocalization): Self = StObject.set(x, "newChannelSectionLocalization", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelSectionSnippet(value: () => ChannelSectionSnippet): Self = StObject.set(x, "newChannelSectionSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelSectionTargeting(value: () => ChannelSectionTargeting): Self = StObject.set(x, "newChannelSectionTargeting", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelSettings(value: () => ChannelSettings): Self = StObject.set(x, "newChannelSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelSnippet(value: () => ChannelSnippet): Self = StObject.set(x, "newChannelSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelStatistics(value: () => ChannelStatistics): Self = StObject.set(x, "newChannelStatistics", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelStatus(value: () => ChannelStatus): Self = StObject.set(x, "newChannelStatus", js.Any.fromFunction0(value))
-    
-    inline def setNewChannelTopicDetails(value: () => ChannelTopicDetails): Self = StObject.set(x, "newChannelTopicDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewComment(value: () => Comment): Self = StObject.set(x, "newComment", js.Any.fromFunction0(value))
-    
-    inline def setNewCommentSnippet(value: () => CommentSnippet): Self = StObject.set(x, "newCommentSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewCommentThread(value: () => CommentThread): Self = StObject.set(x, "newCommentThread", js.Any.fromFunction0(value))
-    
-    inline def setNewCommentThreadReplies(value: () => CommentThreadReplies): Self = StObject.set(x, "newCommentThreadReplies", js.Any.fromFunction0(value))
-    
-    inline def setNewCommentThreadSnippet(value: () => CommentThreadSnippet): Self = StObject.set(x, "newCommentThreadSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewContentRating(value: () => ContentRating): Self = StObject.set(x, "newContentRating", js.Any.fromFunction0(value))
-    
-    inline def setNewGeoPoint(value: () => GeoPoint): Self = StObject.set(x, "newGeoPoint", js.Any.fromFunction0(value))
-    
-    inline def setNewImageSettings(value: () => ImageSettings): Self = StObject.set(x, "newImageSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewIngestionInfo(value: () => IngestionInfo): Self = StObject.set(x, "newIngestionInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewInvideoBranding(value: () => InvideoBranding): Self = StObject.set(x, "newInvideoBranding", js.Any.fromFunction0(value))
-    
-    inline def setNewInvideoPosition(value: () => InvideoPosition): Self = StObject.set(x, "newInvideoPosition", js.Any.fromFunction0(value))
-    
-    inline def setNewInvideoPromotion(value: () => InvideoPromotion): Self = StObject.set(x, "newInvideoPromotion", js.Any.fromFunction0(value))
-    
-    inline def setNewInvideoTiming(value: () => InvideoTiming): Self = StObject.set(x, "newInvideoTiming", js.Any.fromFunction0(value))
-    
-    inline def setNewLanguageTag(value: () => LanguageTag): Self = StObject.set(x, "newLanguageTag", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveBroadcast(value: () => LiveBroadcast): Self = StObject.set(x, "newLiveBroadcast", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveBroadcastContentDetails(value: () => LiveBroadcastContentDetails): Self = StObject.set(x, "newLiveBroadcastContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveBroadcastSnippet(value: () => LiveBroadcastSnippet): Self = StObject.set(x, "newLiveBroadcastSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveBroadcastStatistics(value: () => LiveBroadcastStatistics): Self = StObject.set(x, "newLiveBroadcastStatistics", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveBroadcastStatus(value: () => LiveBroadcastStatus): Self = StObject.set(x, "newLiveBroadcastStatus", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatBan(value: () => LiveChatBan): Self = StObject.set(x, "newLiveChatBan", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatBanSnippet(value: () => LiveChatBanSnippet): Self = StObject.set(x, "newLiveChatBanSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatFanFundingEventDetails(value: () => LiveChatFanFundingEventDetails): Self = StObject.set(x, "newLiveChatFanFundingEventDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatMessage(value: () => LiveChatMessage): Self = StObject.set(x, "newLiveChatMessage", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatMessageAuthorDetails(value: () => LiveChatMessageAuthorDetails): Self = StObject.set(x, "newLiveChatMessageAuthorDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatMessageDeletedDetails(value: () => LiveChatMessageDeletedDetails): Self = StObject.set(x, "newLiveChatMessageDeletedDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatMessageRetractedDetails(value: () => LiveChatMessageRetractedDetails): Self = StObject.set(x, "newLiveChatMessageRetractedDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatMessageSnippet(value: () => LiveChatMessageSnippet): Self = StObject.set(x, "newLiveChatMessageSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatModerator(value: () => LiveChatModerator): Self = StObject.set(x, "newLiveChatModerator", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatModeratorSnippet(value: () => LiveChatModeratorSnippet): Self = StObject.set(x, "newLiveChatModeratorSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatPollClosedDetails(value: () => LiveChatPollClosedDetails): Self = StObject.set(x, "newLiveChatPollClosedDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatPollEditedDetails(value: () => LiveChatPollEditedDetails): Self = StObject.set(x, "newLiveChatPollEditedDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatPollItem(value: () => LiveChatPollItem): Self = StObject.set(x, "newLiveChatPollItem", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatPollOpenedDetails(value: () => LiveChatPollOpenedDetails): Self = StObject.set(x, "newLiveChatPollOpenedDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatPollVotedDetails(value: () => LiveChatPollVotedDetails): Self = StObject.set(x, "newLiveChatPollVotedDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatSuperChatDetails(value: () => LiveChatSuperChatDetails): Self = StObject.set(x, "newLiveChatSuperChatDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatSuperStickerDetails(value: () => LiveChatSuperStickerDetails): Self = StObject.set(x, "newLiveChatSuperStickerDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatTextMessageDetails(value: () => LiveChatTextMessageDetails): Self = StObject.set(x, "newLiveChatTextMessageDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveChatUserBannedMessageDetails(value: () => LiveChatUserBannedMessageDetails): Self = StObject.set(x, "newLiveChatUserBannedMessageDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveStream(value: () => LiveStream): Self = StObject.set(x, "newLiveStream", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveStreamConfigurationIssue(value: () => LiveStreamConfigurationIssue): Self = StObject.set(x, "newLiveStreamConfigurationIssue", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveStreamContentDetails(value: () => LiveStreamContentDetails): Self = StObject.set(x, "newLiveStreamContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveStreamHealthStatus(value: () => LiveStreamHealthStatus): Self = StObject.set(x, "newLiveStreamHealthStatus", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveStreamSnippet(value: () => LiveStreamSnippet): Self = StObject.set(x, "newLiveStreamSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewLiveStreamStatus(value: () => LiveStreamStatus): Self = StObject.set(x, "newLiveStreamStatus", js.Any.fromFunction0(value))
-    
-    inline def setNewLocalizedProperty(value: () => LocalizedProperty): Self = StObject.set(x, "newLocalizedProperty", js.Any.fromFunction0(value))
-    
-    inline def setNewLocalizedString(value: () => LocalizedString): Self = StObject.set(x, "newLocalizedString", js.Any.fromFunction0(value))
-    
-    inline def setNewMonitorStreamInfo(value: () => MonitorStreamInfo): Self = StObject.set(x, "newMonitorStreamInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylist(value: () => Playlist): Self = StObject.set(x, "newPlaylist", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylistContentDetails(value: () => PlaylistContentDetails): Self = StObject.set(x, "newPlaylistContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylistItem(value: () => PlaylistItem): Self = StObject.set(x, "newPlaylistItem", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylistItemContentDetails(value: () => PlaylistItemContentDetails): Self = StObject.set(x, "newPlaylistItemContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylistItemSnippet(value: () => PlaylistItemSnippet): Self = StObject.set(x, "newPlaylistItemSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylistItemStatus(value: () => PlaylistItemStatus): Self = StObject.set(x, "newPlaylistItemStatus", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylistLocalization(value: () => PlaylistLocalization): Self = StObject.set(x, "newPlaylistLocalization", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylistPlayer(value: () => PlaylistPlayer): Self = StObject.set(x, "newPlaylistPlayer", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylistSnippet(value: () => PlaylistSnippet): Self = StObject.set(x, "newPlaylistSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaylistStatus(value: () => PlaylistStatus): Self = StObject.set(x, "newPlaylistStatus", js.Any.fromFunction0(value))
-    
-    inline def setNewPromotedItem(value: () => PromotedItem): Self = StObject.set(x, "newPromotedItem", js.Any.fromFunction0(value))
-    
-    inline def setNewPromotedItemId(value: () => PromotedItemId): Self = StObject.set(x, "newPromotedItemId", js.Any.fromFunction0(value))
-    
-    inline def setNewPropertyValue(value: () => PropertyValue): Self = StObject.set(x, "newPropertyValue", js.Any.fromFunction0(value))
-    
-    inline def setNewResourceId(value: () => ResourceId): Self = StObject.set(x, "newResourceId", js.Any.fromFunction0(value))
-    
-    inline def setNewSubscription(value: () => Subscription): Self = StObject.set(x, "newSubscription", js.Any.fromFunction0(value))
-    
-    inline def setNewSubscriptionContentDetails(value: () => SubscriptionContentDetails): Self = StObject.set(x, "newSubscriptionContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewSubscriptionSnippet(value: () => SubscriptionSnippet): Self = StObject.set(x, "newSubscriptionSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewSubscriptionSubscriberSnippet(value: () => SubscriptionSubscriberSnippet): Self = StObject.set(x, "newSubscriptionSubscriberSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewSuperStickerMetadata(value: () => SuperStickerMetadata): Self = StObject.set(x, "newSuperStickerMetadata", js.Any.fromFunction0(value))
-    
-    inline def setNewThumbnail(value: () => Thumbnail): Self = StObject.set(x, "newThumbnail", js.Any.fromFunction0(value))
-    
-    inline def setNewThumbnailDetails(value: () => ThumbnailDetails): Self = StObject.set(x, "newThumbnailDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewVideo(value: () => Video): Self = StObject.set(x, "newVideo", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoAbuseReport(value: () => VideoAbuseReport): Self = StObject.set(x, "newVideoAbuseReport", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoAgeGating(value: () => VideoAgeGating): Self = StObject.set(x, "newVideoAgeGating", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoContentDetails(value: () => VideoContentDetails): Self = StObject.set(x, "newVideoContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoContentDetailsRegionRestriction(value: () => VideoContentDetailsRegionRestriction): Self = StObject.set(x, "newVideoContentDetailsRegionRestriction", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoFileDetails(value: () => VideoFileDetails): Self = StObject.set(x, "newVideoFileDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoFileDetailsAudioStream(value: () => VideoFileDetailsAudioStream): Self = StObject.set(x, "newVideoFileDetailsAudioStream", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoFileDetailsVideoStream(value: () => VideoFileDetailsVideoStream): Self = StObject.set(x, "newVideoFileDetailsVideoStream", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoLiveStreamingDetails(value: () => VideoLiveStreamingDetails): Self = StObject.set(x, "newVideoLiveStreamingDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoLocalization(value: () => VideoLocalization): Self = StObject.set(x, "newVideoLocalization", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoMonetizationDetails(value: () => VideoMonetizationDetails): Self = StObject.set(x, "newVideoMonetizationDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoPlayer(value: () => VideoPlayer): Self = StObject.set(x, "newVideoPlayer", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoProcessingDetails(value: () => VideoProcessingDetails): Self = StObject.set(x, "newVideoProcessingDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoProcessingDetailsProcessingProgress(value: () => VideoProcessingDetailsProcessingProgress): Self = StObject.set(x, "newVideoProcessingDetailsProcessingProgress", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoProjectDetails(value: () => VideoProjectDetails): Self = StObject.set(x, "newVideoProjectDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoRecordingDetails(value: () => VideoRecordingDetails): Self = StObject.set(x, "newVideoRecordingDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoSnippet(value: () => VideoSnippet): Self = StObject.set(x, "newVideoSnippet", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoStatistics(value: () => VideoStatistics): Self = StObject.set(x, "newVideoStatistics", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoStatus(value: () => VideoStatus): Self = StObject.set(x, "newVideoStatus", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoSuggestions(value: () => VideoSuggestions): Self = StObject.set(x, "newVideoSuggestions", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoSuggestionsTagSuggestion(value: () => VideoSuggestionsTagSuggestion): Self = StObject.set(x, "newVideoSuggestionsTagSuggestion", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoTopicDetails(value: () => VideoTopicDetails): Self = StObject.set(x, "newVideoTopicDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewWatchSettings(value: () => WatchSettings): Self = StObject.set(x, "newWatchSettings", js.Any.fromFunction0(value))
-    
-    inline def setPlaylistItems(value: PlaylistItemsCollection): Self = StObject.set(x, "PlaylistItems", value.asInstanceOf[js.Any])
-    
-    inline def setPlaylistItemsUndefined: Self = StObject.set(x, "PlaylistItems", js.undefined)
-    
-    inline def setPlaylists(value: PlaylistsCollection): Self = StObject.set(x, "Playlists", value.asInstanceOf[js.Any])
-    
-    inline def setPlaylistsUndefined: Self = StObject.set(x, "Playlists", js.undefined)
-    
-    inline def setSearch(value: SearchCollection): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
-    
-    inline def setSearchUndefined: Self = StObject.set(x, "Search", js.undefined)
-    
-    inline def setSponsors(value: SponsorsCollection): Self = StObject.set(x, "Sponsors", value.asInstanceOf[js.Any])
-    
-    inline def setSponsorsUndefined: Self = StObject.set(x, "Sponsors", js.undefined)
-    
-    inline def setSubscriptions(value: SubscriptionsCollection): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
-    
-    inline def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
-    
-    inline def setSuperChatEvents(value: SuperChatEventsCollection): Self = StObject.set(x, "SuperChatEvents", value.asInstanceOf[js.Any])
-    
-    inline def setSuperChatEventsUndefined: Self = StObject.set(x, "SuperChatEvents", js.undefined)
-    
-    inline def setThumbnails(value: ThumbnailsCollection): Self = StObject.set(x, "Thumbnails", value.asInstanceOf[js.Any])
-    
-    inline def setThumbnailsUndefined: Self = StObject.set(x, "Thumbnails", js.undefined)
-    
-    inline def setVideoAbuseReportReasons(value: VideoAbuseReportReasonsCollection): Self = StObject.set(x, "VideoAbuseReportReasons", value.asInstanceOf[js.Any])
-    
-    inline def setVideoAbuseReportReasonsUndefined: Self = StObject.set(x, "VideoAbuseReportReasons", js.undefined)
-    
-    inline def setVideoCategories(value: VideoCategoriesCollection): Self = StObject.set(x, "VideoCategories", value.asInstanceOf[js.Any])
-    
-    inline def setVideoCategoriesUndefined: Self = StObject.set(x, "VideoCategories", js.undefined)
-    
-    inline def setVideos(value: VideosCollection): Self = StObject.set(x, "Videos", value.asInstanceOf[js.Any])
-    
-    inline def setVideosUndefined: Self = StObject.set(x, "Videos", js.undefined)
-    
-    inline def setWatermarks(value: WatermarksCollection): Self = StObject.set(x, "Watermarks", value.asInstanceOf[js.Any])
-    
-    inline def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
   }
 }

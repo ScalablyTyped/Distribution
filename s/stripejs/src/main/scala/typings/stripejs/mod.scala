@@ -202,7 +202,7 @@ object mod {
       *
       * @return an object containing the generated Source or an error
       */
-    def retrieveSource(hasIdClient_secret: Clientsecret): js.Promise[SourceResult] = js.native
+    def retrieveSource(param0: Clientsecret): js.Promise[SourceResult] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

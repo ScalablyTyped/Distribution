@@ -13,7 +13,7 @@ object libBodyExpandedRowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasPrefixClsChildrenComponentCellComponentClassNameExpandedColSpanIsEmpty: ExpandedRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsChildrenComponentCellComponentClassNameExpandedColSpanIsEmpty.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ExpandedRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ExpandedRowProps extends StObject {
     

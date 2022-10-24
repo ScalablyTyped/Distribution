@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "three-tds-loader"
-version := "1.1-dt-20211202Z-9112b6"
-scalaVersion := "3.1.2"
+version := "1.1-dt-20211202Z-58c2fb"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "three" % "0.144-dt-20220902Z-01e90a",
-  "org.scalablytyped" %%% "webxr" % "0.5-dt-20220721Z-cd43ff")
+  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "three" % "0.144-dt-20220902Z-3c5177",
+  "org.scalablytyped" %%% "webxr" % "0.5-dt-20220721Z-ef4a6b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

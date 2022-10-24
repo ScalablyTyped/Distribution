@@ -15,7 +15,7 @@ object snackbarSnackbarContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildrenOverridesPlacementDefaultDuration: SnackbarProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenOverridesPlacementDefaultDuration.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: SnackbarProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/snackbar/snackbar-context", "SnackbarContext")
   @js.native

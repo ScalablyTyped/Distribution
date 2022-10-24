@@ -12,5 +12,5 @@ object buildCommandsFindElementFromShadowRootMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasShadowIdUsingValue: ShadowId): js.Promise[ElementReference | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasShadowIdUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementReference | js.Error]]
+  inline def default(param1: ShadowId): js.Promise[ElementReference | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementReference | js.Error]]
 }

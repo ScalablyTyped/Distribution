@@ -20,20 +20,20 @@ object esConnectMapDispatchToPropsMod {
   
   inline def mapDispatchToPropsFactory[TDispatchProps, TOwnProps](): (js.Function1[/* dispatch */ Dispatch[AnyAction], Call]) | (js.Function2[
     /* dispatch */ Dispatch[Action[Any] | AnyAction], 
-    (/* hasDisplayName */ DisplayName) | (/* options */ WrappedComponentName), 
+    (/* param1 */ DisplayName) | (/* options */ WrappedComponentName), 
     MapToProps | scala.Nothing
   ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("mapDispatchToPropsFactory")().asInstanceOf[(js.Function1[/* dispatch */ Dispatch[AnyAction], Call]) | (js.Function2[
     /* dispatch */ Dispatch[Action[Any] | AnyAction], 
-    (/* hasDisplayName */ DisplayName) | (/* options */ WrappedComponentName), 
+    (/* param1 */ DisplayName) | (/* options */ WrappedComponentName), 
     MapToProps | scala.Nothing
   ])]
   inline def mapDispatchToPropsFactory[TDispatchProps, TOwnProps](mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps]): (js.Function1[/* dispatch */ Dispatch[AnyAction], Call]) | (js.Function2[
     /* dispatch */ Dispatch[Action[Any] | AnyAction], 
-    (/* hasDisplayName */ DisplayName) | (/* options */ WrappedComponentName), 
+    (/* param1 */ DisplayName) | (/* options */ WrappedComponentName), 
     MapToProps | scala.Nothing
   ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("mapDispatchToPropsFactory")(mapDispatchToProps.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* dispatch */ Dispatch[AnyAction], Call]) | (js.Function2[
     /* dispatch */ Dispatch[Action[Any] | AnyAction], 
-    (/* hasDisplayName */ DisplayName) | (/* options */ WrappedComponentName), 
+    (/* param1 */ DisplayName) | (/* options */ WrappedComponentName), 
     MapToProps | scala.Nothing
   ])]
 }

@@ -29,7 +29,7 @@ object libUtilBoundingBoxMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def asStyles(hasTopRightBottomLeft: BoundingBox): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("asStyles")(hasTopRightBottomLeft.asInstanceOf[js.Any]).asInstanceOf[Styles]
+    inline def asStyles(param0: BoundingBox): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("asStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[Styles]
     
     inline def empty(): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Bottom]
     

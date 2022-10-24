@@ -11,7 +11,7 @@ object distTypesComputeSourceMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(code: String, filePath: String, hasCompiledFilename: SourceMapOptions): RawSourceMap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], hasCompiledFilename.asInstanceOf[js.Any])).asInstanceOf[RawSourceMap]
+  inline def default(code: String, filePath: String, param2: SourceMapOptions): RawSourceMap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[RawSourceMap]
   
   trait RawSourceMap extends StObject {
     

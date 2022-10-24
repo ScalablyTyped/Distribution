@@ -12,13 +12,13 @@ object distCjsMod {
   @js.native
   open class RateLimiter protected ()
     extends typings.limiter.distCjsRateLimiterMod.RateLimiter {
-    def this(hasTokensPerIntervalIntervalFireImmediately: RateLimiterOpts) = this()
+    def this(param0: RateLimiterOpts) = this()
   }
   
   @JSImport("limiter/dist/cjs", "TokenBucket")
   @js.native
   open class TokenBucket protected ()
     extends typings.limiter.distCjsTokenBucketMod.TokenBucket {
-    def this(hasBucketSizeTokensPerIntervalIntervalParentBucket: TokenBucketOpts) = this()
+    def this(param0: TokenBucketOpts) = this()
   }
 }

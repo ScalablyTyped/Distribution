@@ -19,15 +19,10 @@ object distVocabulariesCodeMod {
   inline def allSchemaProperties(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSchemaProperties")().asInstanceOf[js.Array[String]]
   inline def allSchemaProperties(schemaMap: SchemaMap): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSchemaProperties")(schemaMap.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def callValidateCode(hasSchemaCodeDataHasGenTopSchemaRefSchemaPathErrorPathIt: KeywordCxt, func: Code, context: Code): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("callValidateCode")(hasSchemaCodeDataHasGenTopSchemaRefSchemaPathErrorPathIt.asInstanceOf[js.Any], func.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Code]
-  inline def callValidateCode(
-    hasSchemaCodeDataHasGenTopSchemaRefSchemaPathErrorPathIt: KeywordCxt,
-    func: Code,
-    context: Code,
-    passSchema: Boolean
-  ): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("callValidateCode")(hasSchemaCodeDataHasGenTopSchemaRefSchemaPathErrorPathIt.asInstanceOf[js.Any], func.asInstanceOf[js.Any], context.asInstanceOf[js.Any], passSchema.asInstanceOf[js.Any])).asInstanceOf[Code]
+  inline def callValidateCode(param0: KeywordCxt, func: Code, context: Code): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("callValidateCode")(param0.asInstanceOf[js.Any], func.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Code]
+  inline def callValidateCode(param0: KeywordCxt, func: Code, context: Code, passSchema: Boolean): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("callValidateCode")(param0.asInstanceOf[js.Any], func.asInstanceOf[js.Any], context.asInstanceOf[js.Any], passSchema.asInstanceOf[js.Any])).asInstanceOf[Code]
   
-  inline def checkMissingProp(hasGenDataHasOpts: KeywordCxt, properties: js.Array[String], missing: Name): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkMissingProp")(hasGenDataHasOpts.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], missing.asInstanceOf[js.Any])).asInstanceOf[Code]
+  inline def checkMissingProp(param0: KeywordCxt, properties: js.Array[String], missing: Name): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("checkMissingProp")(param0.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], missing.asInstanceOf[js.Any])).asInstanceOf[Code]
   
   inline def checkReportMissingProp(cxt: KeywordCxt, prop: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkReportMissingProp")(cxt.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -50,7 +45,7 @@ object distVocabulariesCodeMod {
   
   inline def schemaProperties(it: SchemaCxt, schemaMap: SchemaMap): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaProperties")(it.asInstanceOf[js.Any], schemaMap.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def usePattern(hasGenHasOpts: KeywordCxt, pattern: String): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("usePattern")(hasGenHasOpts.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def usePattern(param0: KeywordCxt, pattern: String): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("usePattern")(param0.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Name]
   
   inline def validateArray(cxt: KeywordCxt): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("validateArray")(cxt.asInstanceOf[js.Any]).asInstanceOf[Name]
   

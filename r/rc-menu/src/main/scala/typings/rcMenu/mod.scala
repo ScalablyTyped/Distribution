@@ -24,15 +24,15 @@ object mod {
   @js.native
   val default: MenuType = js.native
   
-  inline def Divider(hasClassNameStyle: DividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")(hasClassNameStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Divider(param0: DividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Item(props: MenuItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def ItemGroup(hasChildrenProps: MenuItemGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ItemGroup")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ItemGroup(param0: MenuItemGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ItemGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def MenuItem(props: MenuItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def MenuItemGroup(hasChildrenProps: MenuItemGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItemGroup")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuItemGroup(param0: MenuItemGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItemGroup")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def SubMenu(props: SubMenuProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SubMenu")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -44,11 +44,11 @@ object mod {
     extends StObject
        with ForwardRefExoticComponent[MenuProps & RefAttributes[MenuRef]] {
     
-    var Divider: js.Function1[/* hasClassNameStyle */ DividerProps, Element] = js.native
+    var Divider: js.Function1[/* param0 */ DividerProps, Element] = js.native
     
     var Item: js.Function1[/* props */ MenuItemProps, ReactElement] = js.native
     
-    var ItemGroup: js.Function1[/* hasChildrenProps */ MenuItemGroupProps, ReactElement] = js.native
+    var ItemGroup: js.Function1[/* param0 */ MenuItemGroupProps, ReactElement] = js.native
     
     var SubMenu: js.Function1[/* props */ SubMenuProps, Element] = js.native
   }

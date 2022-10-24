@@ -13,7 +13,7 @@ object esMenuItemGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildrenProps: MenuItemGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default(param0: MenuItemGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   /* Inlined parent std.Omit<rc-menu.rc-menu/es/interface.MenuItemGroupType, 'type' | 'children' | 'label'> */
   trait MenuItemGroupProps extends StObject {

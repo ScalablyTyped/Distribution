@@ -12,7 +12,7 @@ object libJsonldCourseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideCourseNameProviderRest: CourseJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideCourseNameProviderRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: CourseJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CourseJsonLdProps
     extends StObject

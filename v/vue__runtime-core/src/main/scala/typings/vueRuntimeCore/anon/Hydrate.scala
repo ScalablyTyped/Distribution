@@ -410,7 +410,7 @@ trait Hydrate
     parentComponent: Null,
     parentSuspense: Null,
     optimized: Boolean,
-    hasUmHasRemove: RendererInternals[RendererNode, RendererElement],
+    param4: RendererInternals[RendererNode, RendererElement],
     doRemove: Boolean
   ): Unit = js.native
   def remove(
@@ -418,7 +418,7 @@ trait Hydrate
     parentComponent: Null,
     parentSuspense: SuspenseBoundary,
     optimized: Boolean,
-    hasUmHasRemove: RendererInternals[RendererNode, RendererElement],
+    param4: RendererInternals[RendererNode, RendererElement],
     doRemove: Boolean
   ): Unit = js.native
   def remove(
@@ -426,7 +426,7 @@ trait Hydrate
     parentComponent: ComponentInternalInstance,
     parentSuspense: Null,
     optimized: Boolean,
-    hasUmHasRemove: RendererInternals[RendererNode, RendererElement],
+    param4: RendererInternals[RendererNode, RendererElement],
     doRemove: Boolean
   ): Unit = js.native
   def remove(
@@ -434,7 +434,7 @@ trait Hydrate
     parentComponent: ComponentInternalInstance,
     parentSuspense: SuspenseBoundary,
     optimized: Boolean,
-    hasUmHasRemove: RendererInternals[RendererNode, RendererElement],
+    param4: RendererInternals[RendererNode, RendererElement],
     doRemove: Boolean
   ): Unit = js.native
 }

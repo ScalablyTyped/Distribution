@@ -22,7 +22,7 @@ object libEsmComponentsDialogDialogStepButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DialogStepButton(hasTooltipContentProps: DialogStepButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DialogStepButton")(hasTooltipContentProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DialogStepButton(param0: DialogStepButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DialogStepButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Partial<std.Omit<@blueprintjs/core.@blueprintjs/core/lib/esm/components/button/buttons.ButtonProps<std.HTMLButtonElement>, 'elementRef'>> & {  tooltipContent :@blueprintjs/core.@blueprintjs/core/lib/esm/components/tooltip/tooltip.TooltipProps['content'] | undefined} */
   trait DialogStepButtonProps extends StObject {

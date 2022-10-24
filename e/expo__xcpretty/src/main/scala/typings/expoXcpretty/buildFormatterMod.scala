@@ -164,7 +164,7 @@ object buildFormatterMod {
     def formatCompileWarning(fileName: String, filePathAndLocation: String, reason: String, line: String, cursor: String): String = js.native
     def formatCompileWarning(fileName: String, filePathAndLocation: String, reason: String, line: Unit, cursor: String): String = js.native
     
-    def formatCopy(hasFromTo: CopyFileProps): String = js.native
+    def formatCopy(param0: CopyFileProps): String = js.native
     
     /**
       * In: `Skipping duplicate build file in Compile Sources build phase: /Users/evanbacon/Documents/GitHub/expo/ios/Exponent/Kernel/ReactAppManager/EXReactAppManager.mm (in target 'Exponent' from project 'Exponent')`

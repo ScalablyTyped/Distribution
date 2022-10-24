@@ -25,7 +25,7 @@ object distBadgeSrcBadgeMod {
   @js.native
   val Badge: OrbitComponent[HTMLElement, InnerBadgeProps] = js.native
   
-  inline def InnerBadge(hasVariantOverlapAsChildrenForwardedRefRest: InnerBadgeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerBadge")(hasVariantOverlapAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerBadge(param0: InnerBadgeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerBadge")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type BadgeProps = ComponentProps[OrbitComponent[HTMLElement, InnerBadgeProps]]
   

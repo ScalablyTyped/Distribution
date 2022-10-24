@@ -20,7 +20,7 @@ object typesDevtoolsExplorerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasValueDefaultExpandedRendererPageSizeRest: ExplorerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasValueDefaultExpandedRendererPageSizeRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ExplorerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-query/types/devtools/Explorer", "DefaultRenderer")
   @js.native
@@ -46,7 +46,7 @@ object typesDevtoolsExplorerMod {
   @js.native
   val ExpandButton: ForwardRefExoticComponent[PickDetailedHTMLPropsButt] = js.native
   
-  inline def Expander(hasExpandedStyle: ExpanderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Expander")(hasExpandedStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Expander(param0: ExpanderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Expander")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-query/types/devtools/Explorer", "Info")
   @js.native

@@ -12,7 +12,5 @@ object libAnimationsInertiaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def inertia(
-    hasFromVelocityMinMaxPowerTimeConstantBounceStiffnessBounceDampingRestDeltaModifyTargetDriverOnUpdateOnCompleteOnStop: InertiaOptions
-  ): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(hasFromVelocityMinMaxPowerTimeConstantBounceStiffnessBounceDampingRestDeltaModifyTargetDriverOnUpdateOnCompleteOnStop.asInstanceOf[js.Any]).asInstanceOf[Stop]
+  inline def inertia(param0: InertiaOptions): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(param0.asInstanceOf[js.Any]).asInstanceOf[Stop]
 }

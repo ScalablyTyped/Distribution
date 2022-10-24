@@ -20,7 +20,7 @@ object storeResourceLoaderMod {
   open class ^ protected ()
     extends StObject
        with StoreResourceLoader {
-    def this(hasStore: Store) = this()
+    def this(param0: Store) = this()
     
     /* CompleteClass */
     override def forClassOperation(

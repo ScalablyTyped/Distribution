@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "kamailio-kemi"
-version := "5.3-dt-20211202Z-7821c1"
-scalaVersion := "3.1.2"
+version := "5.3-dt-20211202Z-f99231"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

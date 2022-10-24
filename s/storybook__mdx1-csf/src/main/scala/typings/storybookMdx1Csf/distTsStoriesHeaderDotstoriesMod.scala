@@ -12,7 +12,7 @@ object distTsStoriesHeaderDotstoriesMod extends Shortcut {
   
   @JSImport("@storybook/mdx1-csf/dist/ts/stories/Header.stories", JSImport.Default)
   @js.native
-  val default: ComponentMeta[js.Function1[/* hasUserOnLoginOnLogoutOnCreateAccount */ HeaderProps, Element]] = js.native
+  val default: ComponentMeta[js.Function1[/* param0 */ HeaderProps, Element]] = js.native
   
   @JSImport("@storybook/mdx1-csf/dist/ts/stories/Header.stories", "LoggedIn")
   @js.native
@@ -22,8 +22,8 @@ object distTsStoriesHeaderDotstoriesMod extends Shortcut {
   @js.native
   val LoggedOut: Any = js.native
   
-  type _To = ComponentMeta[js.Function1[/* hasUserOnLoginOnLogoutOnCreateAccount */ HeaderProps, Element]]
+  type _To = ComponentMeta[js.Function1[/* param0 */ HeaderProps, Element]]
   
   /* This means you don't have to write `default`, but can instead just say `distTsStoriesHeaderDotstoriesMod.foo` */
-  override def _to: ComponentMeta[js.Function1[/* hasUserOnLoginOnLogoutOnCreateAccount */ HeaderProps, Element]] = default
+  override def _to: ComponentMeta[js.Function1[/* param0 */ HeaderProps, Element]] = default
 }

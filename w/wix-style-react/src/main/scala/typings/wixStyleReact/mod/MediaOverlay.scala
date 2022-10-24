@@ -1,15 +1,15 @@
 package typings.wixStyleReact.mod
 
 import typings.react.mod.FC
-import typings.wixStyleReact.mediaOverlayMod.MediaOverlayContentProps
-import typings.wixStyleReact.mediaOverlayMod.default
+import typings.wixStyleReact.distTypesMediaOverlayMod.MediaOverlayContentProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "MediaOverlay")
 @js.native
-class MediaOverlay () extends default
+open class MediaOverlay ()
+  extends typings.wixStyleReact.distTypesMediaOverlayMod.default
 /* static members */
 object MediaOverlay {
   

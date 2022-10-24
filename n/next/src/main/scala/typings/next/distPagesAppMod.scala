@@ -23,13 +23,13 @@ object distPagesAppMod {
     
     @JSImport("next/dist/pages/_app", "default.getInitialProps")
     @js.native
-    def getInitialProps: js.Function1[/* hasComponentCtx */ AppContext, js.Promise[AppInitialProps[Any]]] = js.native
-    inline def getInitialProps_=(x: js.Function1[/* hasComponentCtx */ AppContext, js.Promise[AppInitialProps[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInitialProps")(x.asInstanceOf[js.Any])
+    def getInitialProps: js.Function1[/* param0 */ AppContext, js.Promise[AppInitialProps[Any]]] = js.native
+    inline def getInitialProps_=(x: js.Function1[/* param0 */ AppContext, js.Promise[AppInitialProps[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInitialProps")(x.asInstanceOf[js.Any])
     
     @JSImport("next/dist/pages/_app", "default.origGetInitialProps")
     @js.native
-    def origGetInitialProps: js.Function1[/* hasComponentCtx */ AppContext, js.Promise[AppInitialProps[Any]]] = js.native
-    inline def origGetInitialProps_=(x: js.Function1[/* hasComponentCtx */ AppContext, js.Promise[AppInitialProps[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("origGetInitialProps")(x.asInstanceOf[js.Any])
+    def origGetInitialProps: js.Function1[/* param0 */ AppContext, js.Promise[AppInitialProps[Any]]] = js.native
+    inline def origGetInitialProps_=(x: js.Function1[/* param0 */ AppContext, js.Promise[AppInitialProps[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("origGetInitialProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

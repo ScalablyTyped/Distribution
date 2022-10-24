@@ -34,35 +34,23 @@ object mod {
   
   @JSImport("@nivo/axes", "Axes")
   @js.native
-  val Axes: MemoExoticComponent[
-    js.Function1[
-      /* hasXScaleYScaleWidthHeightTopRightBottomLeft */ Left[ScaleValue, ScaleValue], 
-      Element
-    ]
-  ] = js.native
+  val Axes: MemoExoticComponent[js.Function1[/* param0 */ Left[ScaleValue, ScaleValue], Element]] = js.native
   
-  inline def Axis[Value /* <: ScaleValue */](
-    hasAxisScaleXYLengthTicksPositionTickValuesTickSizeTickPaddingTickRotationFormatRenderTickLegendLegendPositionLegendOffsetOnClickAriaHidden: AxisProps[Value] & Length[Value]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Axis")(hasAxisScaleXYLengthTicksPositionTickValuesTickSizeTickPaddingTickRotationFormatRenderTickLegendLegendPositionLegendOffsetOnClickAriaHidden.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Axis[Value /* <: ScaleValue */](param0: AxisProps[Value] & Length[Value]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Axis")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def AxisTick[Value /* <: ScaleValue */](has_valueFormatLineXLineYOnClickTextBaselineTextAnchorAnimatedProps: AxisTickProps[Value]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AxisTick")(has_valueFormatLineXLineYOnClickTextBaselineTextAnchorAnimatedProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def AxisTick[Value /* <: ScaleValue */](param0: AxisTickProps[Value]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AxisTick")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@nivo/axes", "Grid")
   @js.native
-  val Grid: MemoExoticComponent[
-    js.Function1[
-      /* hasWidthHeightXScaleYScaleXValuesYValues */ Width[ScaleValue, ScaleValue], 
-      Element
-    ]
-  ] = js.native
+  val Grid: MemoExoticComponent[js.Function1[/* param0 */ Width[ScaleValue, ScaleValue], Element]] = js.native
   
   @JSImport("@nivo/axes", "GridLine")
   @js.native
-  val GridLine: MemoExoticComponent[js.Function1[/* hasAnimatedProps */ AnimatedProps, Element]] = js.native
+  val GridLine: MemoExoticComponent[js.Function1[/* param0 */ AnimatedProps, Element]] = js.native
   
   @JSImport("@nivo/axes", "GridLines")
   @js.native
-  val GridLines: MemoExoticComponent[js.Function1[/* hasLines */ Lines, Element]] = js.native
+  val GridLines: MemoExoticComponent[js.Function1[/* param0 */ Lines, Element]] = js.native
   
   @JSImport("@nivo/axes", "axisPropType")
   @js.native
@@ -135,12 +123,9 @@ object mod {
   @js.native
   val positions: js.Tuple4[top, right, bottom, left] = js.native
   
-  inline def renderAxesToCanvas[X /* <: ScaleValue */, Y /* <: ScaleValue */](ctx: CanvasRenderingContext2D, hasXScaleYScaleWidthHeightTopRightBottomLeftTheme: Bottom[X, Y]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAxesToCanvas")(ctx.asInstanceOf[js.Any], hasXScaleYScaleWidthHeightTopRightBottomLeftTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderAxesToCanvas[X /* <: ScaleValue */, Y /* <: ScaleValue */](ctx: CanvasRenderingContext2D, param1: Bottom[X, Y]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAxesToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderAxisToCanvas[Value /* <: ScaleValue */](
-    ctx: CanvasRenderingContext2D,
-    hasAxisScaleXYLengthTicksPositionTickValuesTickSizeTickPaddingTickRotation_formatLegendLegendPositionLegendOffsetTheme: Axis[Value]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAxisToCanvas")(ctx.asInstanceOf[js.Any], hasAxisScaleXYLengthTicksPositionTickValuesTickSizeTickPaddingTickRotation_formatLegendLegendPositionLegendOffsetTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderAxisToCanvas[Value /* <: ScaleValue */](ctx: CanvasRenderingContext2D, param1: Axis[Value]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderAxisToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderGridLinesToCanvas[Value /* <: ScaleValue */](ctx: CanvasRenderingContext2D, hasWidthHeightScaleAxisValues: Height[Value]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGridLinesToCanvas")(ctx.asInstanceOf[js.Any], hasWidthHeightScaleAxisValues.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderGridLinesToCanvas[Value /* <: ScaleValue */](ctx: CanvasRenderingContext2D, param1: Height[Value]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGridLinesToCanvas")(ctx.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

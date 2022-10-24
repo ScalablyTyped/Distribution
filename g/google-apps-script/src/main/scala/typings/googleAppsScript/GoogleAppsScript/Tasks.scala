@@ -93,6 +93,23 @@ object Tasks {
     }
   }
   
+  extension [Self <: Tasks](x: Self) {
+    
+    inline def setNewTask(value: () => Task): Self = StObject.set(x, "newTask", js.Any.fromFunction0(value))
+    
+    inline def setNewTaskLinks(value: () => TaskLinks): Self = StObject.set(x, "newTaskLinks", js.Any.fromFunction0(value))
+    
+    inline def setNewTaskList(value: () => TaskList): Self = StObject.set(x, "newTaskList", js.Any.fromFunction0(value))
+    
+    inline def setTasklists(value: TasklistsCollection): Self = StObject.set(x, "Tasklists", value.asInstanceOf[js.Any])
+    
+    inline def setTasklistsUndefined: Self = StObject.set(x, "Tasklists", js.undefined)
+    
+    inline def setTasks(value: TasksCollection): Self = StObject.set(x, "Tasks", value.asInstanceOf[js.Any])
+    
+    inline def setTasksUndefined: Self = StObject.set(x, "Tasks", js.undefined)
+  }
+  
   object Schema {
     
     trait Task extends StObject {
@@ -357,22 +374,5 @@ object Tasks {
         inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
-  }
-  
-  extension [Self <: Tasks](x: Self) {
-    
-    inline def setNewTask(value: () => Task): Self = StObject.set(x, "newTask", js.Any.fromFunction0(value))
-    
-    inline def setNewTaskLinks(value: () => TaskLinks): Self = StObject.set(x, "newTaskLinks", js.Any.fromFunction0(value))
-    
-    inline def setNewTaskList(value: () => TaskList): Self = StObject.set(x, "newTaskList", js.Any.fromFunction0(value))
-    
-    inline def setTasklists(value: TasklistsCollection): Self = StObject.set(x, "Tasklists", value.asInstanceOf[js.Any])
-    
-    inline def setTasklistsUndefined: Self = StObject.set(x, "Tasklists", js.undefined)
-    
-    inline def setTasks(value: TasksCollection): Self = StObject.set(x, "Tasks", value.asInstanceOf[js.Any])
-    
-    inline def setTasksUndefined: Self = StObject.set(x, "Tasks", js.undefined)
   }
 }

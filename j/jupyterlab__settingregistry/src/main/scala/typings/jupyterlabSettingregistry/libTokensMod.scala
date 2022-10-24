@@ -717,33 +717,6 @@ object libTokensMod {
       }
     }
     
-    extension [Self <: ISettingRegistry](x: Self) {
-      
-      inline def setConnector(value: IDataConnector[IPlugin, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
-      
-      inline def setGet(value: (String, String) => js.Promise[Composite]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
-      
-      inline def setLoad(value: String => js.Promise[ISettings]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
-      
-      inline def setPluginChanged(value: ISignal[ISettingRegistry, String]): Self = StObject.set(x, "pluginChanged", value.asInstanceOf[js.Any])
-      
-      inline def setPlugins(value: StringDictionary[js.UndefOr[IPlugin]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-      
-      inline def setReload(value: String => js.Promise[ISettings]): Self = StObject.set(x, "reload", js.Any.fromFunction1(value))
-      
-      inline def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
-      
-      inline def setSchema(value: ISchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
-      
-      inline def setSet(value: (String, String, PartialJSONValue) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
-      
-      inline def setTransform(value: (String, phaseinPhaseTransform) => IDisposable): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
-      
-      inline def setUpload(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "upload", js.Any.fromFunction2(value))
-      
-      inline def setValidator(value: ISchemaValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
-    }
-    
     /**
       * An interface for manipulating the settings of a specific plugin.
       */
@@ -1074,6 +1047,33 @@ object libTokensMod {
         
         inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
+    }
+    
+    extension [Self <: ISettingRegistry](x: Self) {
+      
+      inline def setConnector(value: IDataConnector[IPlugin, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+      
+      inline def setGet(value: (String, String) => js.Promise[Composite]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      
+      inline def setLoad(value: String => js.Promise[ISettings]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      
+      inline def setPluginChanged(value: ISignal[ISettingRegistry, String]): Self = StObject.set(x, "pluginChanged", value.asInstanceOf[js.Any])
+      
+      inline def setPlugins(value: StringDictionary[js.UndefOr[IPlugin]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      
+      inline def setReload(value: String => js.Promise[ISettings]): Self = StObject.set(x, "reload", js.Any.fromFunction1(value))
+      
+      inline def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      
+      inline def setSchema(value: ISchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      
+      inline def setSet(value: (String, String, PartialJSONValue) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+      
+      inline def setTransform(value: (String, phaseinPhaseTransform) => IDisposable): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      
+      inline def setUpload(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "upload", js.Any.fromFunction2(value))
+      
+      inline def setValidator(value: ISchemaValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     }
     
     /**

@@ -28,8 +28,8 @@ object mod {
     */
   open class ArrayIterator[T] () extends AsyncIterator[T] {
     def this(items: js.Iterable[T]) = this()
-    def this(items: js.Iterable[T], hasAutoStartPreserve: AutoStart) = this()
-    def this(items: Unit, hasAutoStartPreserve: AutoStart) = this()
+    def this(items: js.Iterable[T], param1: AutoStart) = this()
+    def this(items: Unit, param1: AutoStart) = this()
     
     /* private */ var _buffer: Any = js.native
     
@@ -367,7 +367,7 @@ object mod {
     @param {boolean} [options.autoStart=true] Whether buffering starts directly after construction
     */
   open class BufferedIterator[T] () extends AsyncIterator[T] {
-    def this(hasMaxBufferSizeAutoStart: BufferedIteratorOptions) = this()
+    def this(param0: BufferedIteratorOptions) = this()
     
     /**
       Writes beginning items and opens iterator resources.
@@ -508,7 +508,7 @@ object mod {
     @param {integer} [options.step=1] The increment between two numbers
     */
   open class IntegerIterator () extends AsyncIterator[Double] {
-    def this(hasStartStepEnd: End) = this()
+    def this(param0: End) = this()
     
     /* private */ var _last: Any = js.native
     

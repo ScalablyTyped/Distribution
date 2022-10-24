@@ -13,8 +13,8 @@ object distTs3Dot9CliUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkDeprecatedFlags(hasDllUiDllDocsDllStaticDir: CLIOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkDeprecatedFlags")(hasDllUiDllDocsDllStaticDir.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def checkDeprecatedFlags(hasDllUiDllDocsDllStaticDir: ProdCliOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkDeprecatedFlags")(hasDllUiDllDocsDllStaticDir.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkDeprecatedFlags(param0: CLIOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkDeprecatedFlags")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkDeprecatedFlags(param0: ProdCliOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkDeprecatedFlags")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def getEnvConfig(program: Record[String, Any], configEnv: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getEnvConfig")(program.asInstanceOf[js.Any], configEnv.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

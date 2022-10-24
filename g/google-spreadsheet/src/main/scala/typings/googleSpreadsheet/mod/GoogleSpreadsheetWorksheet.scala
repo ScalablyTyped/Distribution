@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class GoogleSpreadsheetWorksheet protected ()
   extends StObject
      with WorksheetBasicProperties {
-  def this(parentSpreadsheet: GoogleSpreadsheetWorksheet, hasPropertiesData: Data) = this()
+  def this(parentSpreadsheet: GoogleSpreadsheetWorksheet, param1: Data) = this()
   
   /**
     * @description

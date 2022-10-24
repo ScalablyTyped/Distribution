@@ -17,8 +17,8 @@ object distServerRenderResultMod {
        with RenderResult {
     def this(response: String) = this()
     def this(response: ReadableStream[js.typedarray.Uint8Array]) = this()
-    def this(response: String, hasContentType: ContentType) = this()
-    def this(response: ReadableStream[js.typedarray.Uint8Array], hasContentType: ContentType) = this()
+    def this(response: String, param1: ContentType) = this()
+    def this(response: ReadableStream[js.typedarray.Uint8Array], param1: ContentType) = this()
     
     /* private */ /* CompleteClass */
     var _contentType: Any = js.native

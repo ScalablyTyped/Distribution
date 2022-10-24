@@ -6,17 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Selected extends StObject {
   
-  def selected(): Boolean
+  var disabled: Any
+  
+  var hovered: Any
+  
+  var selected: Any
 }
 object Selected {
   
-  inline def apply(selected: () => Boolean): Selected = {
-    val __obj = js.Dynamic.literal(selected = js.Any.fromFunction0(selected))
+  inline def apply(disabled: Any, hovered: Any, selected: Any): Selected = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], hovered = hovered.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selected]
   }
   
   extension [Self <: Selected](x: Self) {
     
-    inline def setSelected(value: () => Boolean): Self = StObject.set(x, "selected", js.Any.fromFunction0(value))
+    inline def setDisabled(value: Any): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setHovered(value: Any): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
+    
+    inline def setSelected(value: Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

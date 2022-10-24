@@ -63,7 +63,7 @@ object distCollectionSrcUseCollectionMod {
     /* "section" */ val section: typings.orbitUiReactComponents.distCollectionSrcUseCollectionMod.NodeType.section & String = js.native
   }
   
-  inline def createCollectionItem(hasKeyIndexElementTypeRefContentProps: CollectionItem): Content = ^.asInstanceOf[js.Dynamic].applyDynamic("createCollectionItem")(hasKeyIndexElementTypeRefContentProps.asInstanceOf[js.Any]).asInstanceOf[Content]
+  inline def createCollectionItem(param0: CollectionItem): Content = ^.asInstanceOf[js.Dynamic].applyDynamic("createCollectionItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Content]
   
   inline def isDivider(node: CollectionNode): /* is @orbit-ui/react-components.@orbit-ui/react-components/dist/collection/src/useCollection.CollectionDivider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDivider")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @orbit-ui/react-components.@orbit-ui/react-components/dist/collection/src/useCollection.CollectionDivider */ Boolean]
   

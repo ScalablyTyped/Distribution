@@ -16,13 +16,13 @@ object distTypesCoreServicesNotificationSettingsMod {
   @JSImport("gitlab/dist/types/core/services/NotificationSettings", "NotificationSettings")
   @js.native
   open class NotificationSettings () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
-    def all(hasProjectIdGroupIdOptions: groupIdstringnumberPagina): js.Promise[GetResponse] = js.native
-    def all(hasProjectIdGroupIdOptions: projectIdstringnumberPagi): js.Promise[GetResponse] = js.native
+    def all(param0: groupIdstringnumberPagina): js.Promise[GetResponse] = js.native
+    def all(param0: projectIdstringnumberPagi): js.Promise[GetResponse] = js.native
     
-    def edit(hasProjectIdGroupIdOptions: groupIdstringnumberlevelN): js.Promise[js.Object] = js.native
-    def edit(hasProjectIdGroupIdOptions: projectIdstringnumberleve): js.Promise[js.Object] = js.native
+    def edit(param0: groupIdstringnumberlevelN): js.Promise[js.Object] = js.native
+    def edit(param0: projectIdstringnumberleve): js.Promise[js.Object] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

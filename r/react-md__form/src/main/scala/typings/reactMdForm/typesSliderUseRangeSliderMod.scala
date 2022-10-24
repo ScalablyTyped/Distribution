@@ -18,12 +18,9 @@ object typesSliderUseRangeSliderMod {
   val ^ : js.Any = js.native
   
   inline def useRangeSlider(): RangeSliderValueReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("useRangeSlider")().asInstanceOf[RangeSliderValueReturnType]
-  inline def useRangeSlider(defaultValue: Unit, hasMinMaxStepPropJumpUpdateOnOnChange: UseRangeSliderOptions): RangeSliderValueReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("useRangeSlider")(defaultValue.asInstanceOf[js.Any], hasMinMaxStepPropJumpUpdateOnOnChange.asInstanceOf[js.Any])).asInstanceOf[RangeSliderValueReturnType]
+  inline def useRangeSlider(defaultValue: Unit, param1: UseRangeSliderOptions): RangeSliderValueReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("useRangeSlider")(defaultValue.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RangeSliderValueReturnType]
   inline def useRangeSlider(defaultValue: RangeSliderDefaultValue): RangeSliderValueReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("useRangeSlider")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[RangeSliderValueReturnType]
-  inline def useRangeSlider(
-    defaultValue: RangeSliderDefaultValue,
-    hasMinMaxStepPropJumpUpdateOnOnChange: UseRangeSliderOptions
-  ): RangeSliderValueReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("useRangeSlider")(defaultValue.asInstanceOf[js.Any], hasMinMaxStepPropJumpUpdateOnOnChange.asInstanceOf[js.Any])).asInstanceOf[RangeSliderValueReturnType]
+  inline def useRangeSlider(defaultValue: RangeSliderDefaultValue, param1: UseRangeSliderOptions): RangeSliderValueReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("useRangeSlider")(defaultValue.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RangeSliderValueReturnType]
   
   trait RangeSliderRequiredProps
     extends StObject

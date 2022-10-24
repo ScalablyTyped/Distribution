@@ -37,11 +37,11 @@ object mod {
   
   @JSImport("@nivo/tooltip", "Crosshair")
   @js.native
-  val Crosshair: MemoExoticComponent[js.Function1[/* hasWidthHeightTypeXY */ CrosshairProps, Element]] = js.native
+  val Crosshair: MemoExoticComponent[js.Function1[/* param0 */ CrosshairProps, Element]] = js.native
   
   @JSImport("@nivo/tooltip", "TableTooltip")
   @js.native
-  val TableTooltip: MemoExoticComponent[js.Function1[/* hasTitleRowsRenderContent */ TableTooltipProps, Element | Null]] = js.native
+  val TableTooltip: MemoExoticComponent[js.Function1[/* param0 */ TableTooltipProps, Element | Null]] = js.native
   
   inline def Tooltip(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip")().asInstanceOf[Element | Null]
   
@@ -49,7 +49,7 @@ object mod {
   @js.native
   val TooltipActionsContext: Context[TooltipActionsContextData] = js.native
   
-  inline def TooltipProvider(hasContainerChildren: PropsWithChildren[TooltipProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TooltipProvider")(hasContainerChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TooltipProvider(param0: PropsWithChildren[TooltipProviderProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TooltipProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@nivo/tooltip", "TooltipStateContext")
   @js.native

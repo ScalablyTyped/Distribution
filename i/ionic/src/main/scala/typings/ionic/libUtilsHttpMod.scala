@@ -19,9 +19,9 @@ object libUtilsHttpMod {
   @js.native
   val PROXY_ENVIRONMENT_VARIABLES: js.Array[String] = js.native
   
-  inline def createRequest(method: HttpMethod, url: String, hasProxySsl: CreateRequestOptions): js.Promise[`0`] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], hasProxySsl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`0`]]
+  inline def createRequest(method: HttpMethod, url: String, param2: CreateRequestOptions): js.Promise[`0`] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRequest")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`0`]]
   
-  inline def download(req: SuperAgentRequest, ws: WritableStream, hasProgress: Progress): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(req.asInstanceOf[js.Any], ws.asInstanceOf[js.Any], hasProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def download(req: SuperAgentRequest, ws: WritableStream, param2: Progress): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(req.asInstanceOf[js.Any], ws.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   type SuperAgentRequest = typings.superagent.mod.SuperAgentRequest
 }

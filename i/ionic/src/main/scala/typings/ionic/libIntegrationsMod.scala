@@ -55,7 +55,7 @@ object libIntegrationsMod {
   @js.native
   open class IntegrationConfig protected () extends BaseConfig[ProjectIntegration] {
     def this(p: String) = this()
-    def this(p: String, hasSpacesPathPrefix: BaseConfigOptions) = this()
+    def this(p: String, param1: BaseConfigOptions) = this()
     
     def provideDefaults(c: PartialReadonlyProjectInt): ProjectIntegration = js.native
   }

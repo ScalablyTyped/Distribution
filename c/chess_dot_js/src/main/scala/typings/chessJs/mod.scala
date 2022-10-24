@@ -10,7 +10,6 @@ import typings.chessJs.anon.Sloppy
 import typings.chessJs.anon.Verbose
 import typings.chessJs.anon.`0`
 import typings.chessJs.anon.`1`
-import typings.chessJs.anon.`2`
 import typings.chessJs.chessJsStrings.b
 import typings.chessJs.chessJsStrings.c
 import typings.chessJs.chessJsStrings.e
@@ -210,7 +209,7 @@ object mod {
       * if not passed the verbose flag.
       */
     def history(): js.Array[String] = js.native
-    def history(options: `0`): js.Array[String] = js.native
+    def history(options: Verbose): js.Array[String] = js.native
     /**
       * Returns a list containing the moves of the current game.
       * Options is an optional parameter which may contain a 'verbose' flag.
@@ -219,8 +218,8 @@ object mod {
       * @returns a list of all moves of the current game. They will be strings
       * if not passed the verbose flag.
       */
-    def history(options: `1`): js.Array[Move] = js.native
-    def history(options: `2`): js.Array[Move | String] = js.native
+    def history(options: `0`): js.Array[Move] = js.native
+    def history(options: `1`): js.Array[Move | String] = js.native
     
     /**
       * Returns true or false if the side to move is in check.
@@ -325,8 +324,8 @@ object mod {
       * verbose objects.
       */
     def moves(options: Legal): js.Array[Move] = js.native
-    def moves(options: typings.chessJs.anon.Square): js.Array[String] = js.native
-    def moves(options: Verbose): js.Array[Move | String] = js.native
+    def moves(options: typings.chessJs.anon.Piece): js.Array[String] = js.native
+    def moves(options: typings.chessJs.anon.Square): js.Array[Move | String] = js.native
     
     /**
       * Returns the game in PGN format.

@@ -12,7 +12,7 @@ object distTypesRadarGridLabelsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RadarGridLabels(hasRadiusAnglesIndicesLabelComponentLabelOffset: RadarGridLabelsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarGridLabels")(hasRadiusAnglesIndicesLabelComponentLabelOffset.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RadarGridLabels(param0: RadarGridLabelsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RadarGridLabels")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RadarGridLabelsProps extends StObject {
     

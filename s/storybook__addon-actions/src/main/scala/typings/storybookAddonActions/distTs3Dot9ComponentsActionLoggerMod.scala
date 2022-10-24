@@ -15,7 +15,7 @@ object distTs3Dot9ComponentsActionLoggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ActionLogger(hasActionsOnClear: ActionLoggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ActionLogger")(hasActionsOnClear.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ActionLogger(param0: ActionLoggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ActionLogger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@storybook/addon-actions/dist/ts3.9/components/ActionLogger", "Wrapper")
   @js.native

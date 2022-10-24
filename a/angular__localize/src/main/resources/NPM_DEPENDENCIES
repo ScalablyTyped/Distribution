@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/localize" : "14.2.2"
+      "@angular/localize" : "14.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/localize" : "14.2.2"
+      "@angular/localize" : "14.2.7"
     }
   ],
   "compile-devDependencies" : [

@@ -5,12 +5,12 @@ import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonRea
 import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentType
 import typings.react.mod.ForwardRefExoticComponent
-import typings.reactNativePaper.anon.CallHasStyleThemeRest
 import typings.reactNativePaper.anon.PickTextPropsstyleStylePr
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAdjustsFontSizeToFit
 import typings.reactNativePaper.anon.PickthemeDeepPartialThemeAllowFontScaling
 import typings.reactNativePaper.anon.TextPropsstyleStylePropTe
 import typings.reactNativePaper.anon.ThemeTheme
+import typings.reactNativePaper.anon.`22`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object libTypescriptComponentsListListSubheaderMod extends Shortcut {
   @js.native
   val default: (ComponentType[
     PickthemeDeepPartialThemeAdjustsFontSizeToFit | PickthemeDeepPartialThemeAllowFontScaling
-  ]) & (NonReactStatics[ComponentType[Props] & CallHasStyleThemeRest, js.Object]) = js.native
+  ]) & (NonReactStatics[ComponentType[Props] & `22`, js.Object]) = js.native
   
   type Props = (ComponentProps[
     ComponentType[PickTextPropsstyleStylePr] & (NonReactStatics[
@@ -32,10 +32,10 @@ object libTypescriptComponentsListListSubheaderMod extends Shortcut {
   
   type _To = (ComponentType[
     PickthemeDeepPartialThemeAdjustsFontSizeToFit | PickthemeDeepPartialThemeAllowFontScaling
-  ]) & (NonReactStatics[ComponentType[Props] & CallHasStyleThemeRest, js.Object])
+  ]) & (NonReactStatics[ComponentType[Props] & `22`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsListListSubheaderMod.foo` */
   override def _to: (ComponentType[
     PickthemeDeepPartialThemeAdjustsFontSizeToFit | PickthemeDeepPartialThemeAllowFontScaling
-  ]) & (NonReactStatics[ComponentType[Props] & CallHasStyleThemeRest, js.Object]) = default
+  ]) & (NonReactStatics[ComponentType[Props] & `22`, js.Object]) = default
 }

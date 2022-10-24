@@ -444,12 +444,12 @@ object distCoreMod {
     def errorsText(
       errors: js.Array[ErrorObject[String, Record[String, Any], Any]],
       // optional array of validation errors
-    hasSeparatorDataVar: ErrorsTextOptions
+    param1: ErrorsTextOptions
     ): String = js.native
     def errorsText(errors: Null, // optional array of validation errors
-    hasSeparatorDataVar: ErrorsTextOptions): String = js.native
+    param1: ErrorsTextOptions): String = js.native
     def errorsText(errors: Unit, // optional array of validation errors
-    hasSeparatorDataVar: ErrorsTextOptions): String = js.native
+    param1: ErrorsTextOptions): String = js.native
     
     val formats: /* import warning: importer.ImportType#apply Failed type conversion: {[ Name in string ]:? ajv.ajv/dist/types.AddedFormat} */ js.Any = js.native
     

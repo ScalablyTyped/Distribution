@@ -193,8 +193,8 @@ object anon {
           /* element */ Element, 
           js.Promise[Unit] | Unit
         ],
-      hasDecorateStoryRender: DecorateStory[TFramework]
+      param1: DecorateStory[TFramework]
     ): ClientApi | Configure[TFramework] = js.native
-    def apply[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](renderToDOM: Unit, hasDecorateStoryRender: DecorateStory[TFramework]): ClientApi | Configure[TFramework] = js.native
+    def apply[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](renderToDOM: Unit, param1: DecorateStory[TFramework]): ClientApi | Configure[TFramework] = js.native
   }
 }

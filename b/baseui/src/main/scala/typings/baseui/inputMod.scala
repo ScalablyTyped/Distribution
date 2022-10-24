@@ -287,7 +287,7 @@ object inputMod {
   
   object MaskedInput {
     
-    inline def apply(hasMaskMaskCharHasInputOverrideRestOverridesRestProps: MaskedInputProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasMaskMaskCharHasInputOverrideRestOverridesRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: MaskedInputProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("baseui/input", "MaskedInput")
     @js.native

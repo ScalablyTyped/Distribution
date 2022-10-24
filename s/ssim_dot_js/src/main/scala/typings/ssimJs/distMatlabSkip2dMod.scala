@@ -11,9 +11,5 @@ object distMatlabSkip2dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def skip2d(
-    A: Matrix,
-    hasStartRowEveryRowEndRow: js.Tuple3[Double, Double, Double],
-    hasStartColEveryColEndCol: js.Tuple3[Double, Double, Double]
-  ): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("skip2d")(A.asInstanceOf[js.Any], hasStartRowEveryRowEndRow.asInstanceOf[js.Any], hasStartColEveryColEndCol.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def skip2d(A: Matrix, param1: js.Tuple3[Double, Double, Double], param2: js.Tuple3[Double, Double, Double]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("skip2d")(A.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

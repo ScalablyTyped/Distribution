@@ -11,10 +11,5 @@ object distTypesTimeRangeDayMod {
   
   @JSImport("@nivo/calendar/dist/types/TimeRangeDay", "TimeRangeDay")
   @js.native
-  val TimeRangeDay: MemoExoticComponent[
-    js.Function1[
-      /* hasDataXRyRxYWidthHeightColorBorderWidthBorderColorIsInteractiveTooltipOnMouseEnterOnMouseMoveOnMouseLeaveOnClickFormatValue */ TimeRangeDayProps, 
-      Element
-    ]
-  ] = js.native
+  val TimeRangeDay: MemoExoticComponent[js.Function1[/* param0 */ TimeRangeDayProps, Element]] = js.native
 }

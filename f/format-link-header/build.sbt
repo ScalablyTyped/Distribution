@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "format-link-header"
-version := "2.1-dt-20211202Z-c3ff83"
-scalaVersion := "3.1.2"
+version := "2.1-dt-20211202Z-efd167"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

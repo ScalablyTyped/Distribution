@@ -24,7 +24,7 @@ object libModalConfirmMod {
   
   inline def default(config: ModalFuncProps): Update = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Update]
   
-  inline def modalGlobalConfig(hasRootPrefixCls: RootPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modalGlobalConfig")(hasRootPrefixCls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def modalGlobalConfig(param0: RootPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modalGlobalConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def withConfirm(props: ModalFuncProps): ModalFuncProps = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfirm")(props.asInstanceOf[js.Any]).asInstanceOf[ModalFuncProps]
   

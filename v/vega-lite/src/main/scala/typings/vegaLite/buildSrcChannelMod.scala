@@ -70,7 +70,7 @@ object buildSrcChannelMod {
   @JSImport("vega-lite/build/src/channel", "CHANNELS")
   @js.native
   val CHANNELS: js.Array[
-    fill | description | detail | key | url | color | fillOpacity | opacity | order | stroke | strokeOpacity | strokeWidth | text | size | x | x2 | y | y2 | strokeDash | tooltip | angle | shape | radius | theta | facet | href | theta2 | radius2 | xOffset | yOffset | longitude | latitude | longitude2 | latitude2 | row | column
+    fill | detail | key | url | color | fillOpacity | opacity | order | stroke | strokeOpacity | strokeWidth | text | size | description | x | x2 | y | y2 | strokeDash | tooltip | angle | shape | radius | theta | facet | href | theta2 | radius2 | xOffset | yOffset | longitude | latitude | longitude2 | latitude2 | row | column
   ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "COLOR")
@@ -138,7 +138,7 @@ object buildSrcChannelMod {
   @JSImport("vega-lite/build/src/channel", "NONPOSITION_CHANNELS")
   @js.native
   val NONPOSITION_CHANNELS: js.Array[
-    fill | description | detail | key | url | color | fillOpacity | opacity | order | stroke | strokeOpacity | strokeWidth | text | size | strokeDash | tooltip | angle | shape | href
+    fill | detail | key | url | color | fillOpacity | opacity | order | stroke | strokeOpacity | strokeWidth | text | size | description | strokeDash | tooltip | angle | shape | href
   ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "NONPOSITION_SCALE_CHANNELS")
@@ -207,13 +207,13 @@ object buildSrcChannelMod {
   @JSImport("vega-lite/build/src/channel", "SINGLE_DEF_CHANNELS")
   @js.native
   val SINGLE_DEF_CHANNELS: js.Array[
-    fill | description | key | url | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | x | x2 | y | y2 | strokeDash | angle | shape | radius | theta | facet | href | theta2 | radius2 | xOffset | yOffset | longitude | latitude | longitude2 | latitude2 | row | column
+    fill | key | url | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | description | x | x2 | y | y2 | strokeDash | angle | shape | radius | theta | facet | href | theta2 | radius2 | xOffset | yOffset | longitude | latitude | longitude2 | latitude2 | row | column
   ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "SINGLE_DEF_UNIT_CHANNELS")
   @js.native
   val SINGLE_DEF_UNIT_CHANNELS: js.Array[
-    fill | description | key | url | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | x | x2 | y | y2 | strokeDash | angle | shape | radius | theta | href | theta2 | radius2 | xOffset | yOffset | longitude | latitude | longitude2 | latitude2
+    fill | key | url | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | description | x | x2 | y | y2 | strokeDash | angle | shape | radius | theta | href | theta2 | radius2 | xOffset | yOffset | longitude | latitude | longitude2 | latitude2
   ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "SIZE")
@@ -553,7 +553,7 @@ object buildSrcChannelMod {
   @js.native
   trait MainChannelOf[C /* <: ExtendedChannel */] extends StObject
   
-  type NonPositionChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'description' | 'detail' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'order' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'strokeDash' | 'tooltip' | 'angle' | 'shape' | 'href'>[number] */ js.Any
+  type NonPositionChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'detail' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'order' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'description' | 'strokeDash' | 'tooltip' | 'angle' | 'shape' | 'href'>[number] */ js.Any
   
   type NonPositionScaleChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'color' | 'fillOpacity' | 'opacity' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'size' | 'strokeDash' | 'angle' | 'shape'>[number] */ js.Any
   
@@ -623,9 +623,9 @@ object buildSrcChannelMod {
     inline def y2: typings.vegaLite.vegaLiteStrings.y2 = "y2".asInstanceOf[typings.vegaLite.vegaLiteStrings.y2]
   }
   
-  type SingleDefChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'description' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'x' | 'x2' | 'y' | 'y2' | 'strokeDash' | 'angle' | 'shape' | 'radius' | 'theta' | 'facet' | 'href' | 'theta2' | 'radius2' | 'xOffset' | 'yOffset' | 'longitude' | 'latitude' | 'longitude2' | 'latitude2' | 'row' | 'column'>[number] */ js.Any
+  type SingleDefChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'description' | 'x' | 'x2' | 'y' | 'y2' | 'strokeDash' | 'angle' | 'shape' | 'radius' | 'theta' | 'facet' | 'href' | 'theta2' | 'radius2' | 'xOffset' | 'yOffset' | 'longitude' | 'latitude' | 'longitude2' | 'latitude2' | 'row' | 'column'>[number] */ js.Any
   
-  type SingleDefUnitChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'description' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'x' | 'x2' | 'y' | 'y2' | 'strokeDash' | 'angle' | 'shape' | 'radius' | 'theta' | 'href' | 'theta2' | 'radius2' | 'xOffset' | 'yOffset' | 'longitude' | 'latitude' | 'longitude2' | 'latitude2'>[number] */ js.Any
+  type SingleDefUnitChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'description' | 'x' | 'x2' | 'y' | 'y2' | 'strokeDash' | 'angle' | 'shape' | 'radius' | 'theta' | 'href' | 'theta2' | 'radius2' | 'xOffset' | 'yOffset' | 'longitude' | 'latitude' | 'longitude2' | 'latitude2'>[number] */ js.Any
   
   /* Inlined std.Partial<std.Record<vega-lite.vega-lite/build/src/mark.Mark, 'always' | 'binned'>> */
   trait SupportedMark extends StObject {

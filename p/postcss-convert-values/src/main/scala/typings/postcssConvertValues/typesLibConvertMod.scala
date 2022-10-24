@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesLibConvertMod {
   
-  inline def apply(number: Double, unit: String, hasTimeLengthAngle: Angle): String = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], hasTimeLengthAngle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(number: Double, unit: String, param2: Angle): String = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("postcss-convert-values/types/lib/convert", JSImport.Namespace)
   @js.native

@@ -28,7 +28,7 @@ object esFieldMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Values](hasNameRestProps: FieldProps[Values]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNameRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[Values](param0: FieldProps[Values]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ChildProps = StringDictionary[Any]
   

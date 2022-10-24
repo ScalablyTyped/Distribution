@@ -12,7 +12,7 @@ trait Typeoffused extends StObject {
   
   val depthwiseConv2d: TypeofdepthwiseConv2d
   
-  def matMul(hasABTransposeATransposeBBiasActivationPreluActivationWeightsLeakyreluAlpha: A): typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]
+  def matMul(param0: A): typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank]
 }
 object Typeoffused {
   

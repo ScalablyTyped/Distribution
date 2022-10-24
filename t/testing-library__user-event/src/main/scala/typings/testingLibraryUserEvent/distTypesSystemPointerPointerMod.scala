@@ -13,7 +13,7 @@ object distTypesSystemPointerPointerMod {
   @JSImport("@testing-library/user-event/dist/types/system/pointer/pointer", "Pointer")
   @js.native
   open class Pointer protected () extends StObject {
-    def this(hasPointerIdPointerTypeIsPrimary: PointerInit) = this()
+    def this(param0: PointerInit) = this()
     
     def down(instance: Instance, _keyDef: pointerKey): Unit = js.native
     

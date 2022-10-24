@@ -26,7 +26,7 @@ object mod {
   inline def defaultProvider(configuration: RegionProviderConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")(configuration.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
   
   inline def fromEnv(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[Provider[String]]
-  inline def fromEnv(hasEnvironmentVariableName: EnvConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(hasEnvironmentVariableName.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
+  inline def fromEnv(param0: EnvConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(param0.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
   
   inline def fromSharedConfigFiles(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")().asInstanceOf[Provider[String]]
   inline def fromSharedConfigFiles(init: SharedConfigInit): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSharedConfigFiles")(init.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]

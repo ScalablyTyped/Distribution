@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "strip-ansi"
-version := "7.0.1-0426af"
-scalaVersion := "3.1.2"
+version := "7.0.1-4d578a"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

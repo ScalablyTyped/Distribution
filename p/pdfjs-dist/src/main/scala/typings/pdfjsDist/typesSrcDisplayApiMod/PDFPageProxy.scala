@@ -92,7 +92,7 @@ open class PDFPageProxy protected () extends StObject {
     *   {Array} of the annotation objects.
     */
   def getAnnotations(): js.Promise[js.Array[Any]] = js.native
-  def getAnnotations(hasIntent: GetAnnotationsParameters): js.Promise[js.Array[Any]] = js.native
+  def getAnnotations(param0: GetAnnotationsParameters): js.Promise[js.Array[Any]] = js.native
   
   /**
     * @returns {Promise<Object>} A promise that is resolved with an
@@ -107,7 +107,7 @@ open class PDFPageProxy protected () extends StObject {
     *   {@link PDFOperatorList} object that represents the page's operator list.
     */
   def getOperatorList(): js.Promise[PDFOperatorList] = js.native
-  def getOperatorList(hasIntentAnnotationModePrintAnnotationStorage: GetOperatorListParameters): js.Promise[PDFOperatorList] = js.native
+  def getOperatorList(param0: GetOperatorListParameters): js.Promise[PDFOperatorList] = js.native
   
   /**
     * @returns {Promise<StructTreeNode>} A promise that is resolved with a
@@ -133,7 +133,7 @@ open class PDFPageProxy protected () extends StObject {
     *   along with transforms required for rendering.
     */
   def getViewport(): PageViewport = js.native
-  def getViewport(hasScaleRotationOffsetXOffsetYDontFlip: GetViewportParameters): PageViewport = js.native
+  def getViewport(param0: GetViewportParameters): PageViewport = js.native
   
   /**
     * @returns {Promise<Object | null>} A promise that is resolved with
@@ -164,10 +164,7 @@ open class PDFPageProxy protected () extends StObject {
     * @returns {RenderTask} An object that contains a promise that is
     *   resolved when the page finishes rendering.
     */
-  def render(
-    hasCanvasContextViewportIntentAnnotationModeTransformImageLayerCanvasFactoryBackgroundOptionalContentConfigPromiseAnnotationCanvasMapPageColorsPrintAnnotationStorage: RenderParameters,
-    args: Any*
-  ): RenderTask = js.native
+  def render(param0: RenderParameters, args: Any*): RenderTask = js.native
   
   /**
     * @type {number} The number of degrees the page is rotated clockwise.
@@ -187,7 +184,7 @@ open class PDFPageProxy protected () extends StObject {
     * @returns {ReadableStream} Stream for reading text content chunks.
     */
   def streamTextContent(): ReadableStream[Any] = js.native
-  def streamTextContent(hasDisableCombineTextItemsIncludeMarkedContent: getTextContentParameters): ReadableStream[Any] = js.native
+  def streamTextContent(param0: getTextContentParameters): ReadableStream[Any] = js.native
   
   /**
     * @type {number} The default size of units in 1/72nds of an inch.

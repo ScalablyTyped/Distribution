@@ -925,6 +925,14 @@ object buildSrcScaleMod {
       * Reverse x-scale by default (useful for right-to-left charts).
       */
     var xReverse: js.UndefOr[Boolean | ES] = js.undefined
+    
+    /**
+      * Default `scale.zero` for [`continuous`](https://vega.github.io/vega-lite/docs/scale.html#continuous) scales except for (1) x/y-scales of non-ranged bar or area charts and (2) size scales.
+      *
+      * __Default value:__ `true`
+      *
+      */
+    var zero: js.UndefOr[Boolean] = js.undefined
   }
   object ScaleConfig {
     
@@ -1038,6 +1046,10 @@ object buildSrcScaleMod {
       inline def setXReverse(value: Boolean | ES): Self = StObject.set(x, "xReverse", value.asInstanceOf[js.Any])
       
       inline def setXReverseUndefined: Self = StObject.set(x, "xReverse", js.undefined)
+      
+      inline def setZero(value: Boolean): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+      
+      inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
     }
   }
   

@@ -13,5 +13,5 @@ object distTypesStreamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Stream[RawDatum /* <: StreamDatum */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: StreamSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Stream")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Stream[RawDatum /* <: StreamDatum */](param0: StreamSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Stream")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

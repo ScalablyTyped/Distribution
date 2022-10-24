@@ -47,7 +47,7 @@ object distTs3Dot9DocsRenderMod {
     var story_DocsRender: Story[TFramework] = js.native
     
     def teardown(): js.Promise[Unit] = js.native
-    def teardown(hasViewModeChanged: ViewModeChanged): js.Promise[Unit] = js.native
+    def teardown(param0: ViewModeChanged): js.Promise[Unit] = js.native
   }
   /* static members */
   object DocsRender {

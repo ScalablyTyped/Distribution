@@ -12,5 +12,5 @@ object libUtilsHslaToRgbaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def hslaToRgba(hasHueSaturationLightnessAlpha: HSLA): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("hslaToRgba")(hasHueSaturationLightnessAlpha.asInstanceOf[js.Any]).asInstanceOf[RGBA]
+  inline def hslaToRgba(param0: HSLA): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("hslaToRgba")(param0.asInstanceOf[js.Any]).asInstanceOf[RGBA]
 }

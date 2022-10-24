@@ -12,5 +12,5 @@ object numberFormatComputeExponentForMagnitudeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ComputeExponentForMagnitude(numberFormat: NumberFormat, magnitude: Double, hasGetInternalSlots: GetInternalSlots): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponentForMagnitude")(numberFormat.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def ComputeExponentForMagnitude(numberFormat: NumberFormat, magnitude: Double, param2: GetInternalSlots): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponentForMagnitude")(numberFormat.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

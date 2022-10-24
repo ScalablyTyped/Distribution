@@ -48,7 +48,7 @@ object cjsFocusListContextMod {
     }
   }
   
-  inline def useFocusList[TDataItem](hasListRefAnchorItemFocusFirstItemScopeSelectorActiveId: FocusListOptions[TDataItem]): FocusList[TDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusList")(hasListRefAnchorItemFocusFirstItemScopeSelectorActiveId.asInstanceOf[js.Any]).asInstanceOf[FocusList[TDataItem]]
+  inline def useFocusList[TDataItem](param0: FocusListOptions[TDataItem]): FocusList[TDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusList")(param0.asInstanceOf[js.Any]).asInstanceOf[FocusList[TDataItem]]
   
   inline def useListOption[TDataItem, T /* <: HTMLElement */](dataItem: TDataItem): js.Tuple3[RefObject[T], Boolean, js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useListOption")(dataItem.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[RefObject[T], Boolean, js.UndefOr[String]]]
   

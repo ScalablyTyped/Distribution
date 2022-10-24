@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Group ()
   extends typings.antvGLite.distDisplayObjectsMod.Group {
-  def this(hasStyleRest: DisplayObjectConfig[GroupStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[GroupStyleProps]) = this()
 }

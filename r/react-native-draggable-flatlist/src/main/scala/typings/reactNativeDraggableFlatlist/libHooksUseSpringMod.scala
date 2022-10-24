@@ -13,7 +13,7 @@ object libHooksUseSpringMod {
   val ^ : js.Any = js.native
   
   inline def useSpring(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpring")().asInstanceOf[Clock]
-  inline def useSpring(hasConfigParam: Params): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpring")(hasConfigParam.asInstanceOf[js.Any]).asInstanceOf[Clock]
+  inline def useSpring(param0: Params): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpring")(param0.asInstanceOf[js.Any]).asInstanceOf[Clock]
   
   trait Params extends StObject {
     

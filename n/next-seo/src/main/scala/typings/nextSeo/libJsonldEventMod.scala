@@ -13,9 +13,7 @@ object libJsonldEventMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasTypeKeyOverrideLocationImagesOffersAggregateOfferPerformersOrganizerEventStatusEventAttendanceModeRest: EventJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideLocationImagesOffersAggregateOfferPerformersOrganizerEventStatusEventAttendanceModeRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: EventJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait EventJsonLdProps
     extends StObject

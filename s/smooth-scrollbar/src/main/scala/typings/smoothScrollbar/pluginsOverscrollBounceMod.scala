@@ -15,6 +15,6 @@ object pluginsOverscrollBounceMod {
     
     /* private */ var _scrollbar: Any = js.native
     
-    def render(hasXY: X): Unit = js.native
+    def render(param0: X): Unit = js.native
   }
 }

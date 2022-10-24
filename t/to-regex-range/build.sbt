@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "to-regex-range"
-version := "5.0-dt-20211202Z-15a71b"
-scalaVersion := "3.1.2"
+version := "5.0-dt-20211202Z-8b0ad3"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

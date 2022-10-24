@@ -35,9 +35,7 @@ object distTooltipSrcTooltipTriggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerTooltipTrigger(
-    hasOpenDefaultOpenPositionPropOnOpenChangeDisabledAllowFlipAllowPreventOverflowContainerElementZIndexAsChildrenForwardedRefRest: InnerTooltipTriggerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTooltipTrigger")(hasOpenDefaultOpenPositionPropOnOpenChangeDisabledAllowFlipAllowPreventOverflowContainerElementZIndexAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerTooltipTrigger(param0: InnerTooltipTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerTooltipTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/tooltip/src/TooltipTrigger", "TooltipTrigger")
   @js.native

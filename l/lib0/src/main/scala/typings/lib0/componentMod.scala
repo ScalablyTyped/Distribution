@@ -256,10 +256,10 @@ object componentMod {
     def updateState(stateUpdate: Any): Unit = js.native
   }
   
-  inline def createComponent[T](name: String, hasTemplateStyleDefaultStateOnStateChangeChildStatesAttrsListenersSlots: CONF[T]): Instantiable1[
+  inline def createComponent[T](name: String, param1: CONF[T]): Instantiable1[
     /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam S */ Any], 
     Lib0Component[js.Object]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(name.asInstanceOf[js.Any], hasTemplateStyleDefaultStateOnStateChangeChildStatesAttrsListenersSlots.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(name.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[
     /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam S */ Any], 
     Lib0Component[js.Object]
   ]]

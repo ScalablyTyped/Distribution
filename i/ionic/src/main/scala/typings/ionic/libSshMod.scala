@@ -42,7 +42,7 @@ object libSshMod {
        with ResourceClientDelete
        with ResourceClientCreate[SSHKey, SSHKeyCreateDetails]
        with ResourceClientPaginate[SSHKey] {
-    def this(hasClientTokenUser: SSHKeyClientDeps) = this()
+    def this(param0: SSHKeyClientDeps) = this()
     
     /* protected */ var client: IClient = js.native
     

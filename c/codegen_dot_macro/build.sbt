@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "codegen_dot_macro"
-version := "4.1.0-abe97b"
-scalaVersion := "3.1.2"
+version := "4.1.0-3799c3"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

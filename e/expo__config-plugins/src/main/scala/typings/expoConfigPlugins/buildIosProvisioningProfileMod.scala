@@ -10,10 +10,7 @@ object buildIosProvisioningProfileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def setProvisioningProfileForPbxproj(
-    projectRoot: String,
-    hasTargetNameProfileNameAppleTeamIdBuildConfiguration: ProvisioningProfileSettings
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProvisioningProfileForPbxproj")(projectRoot.asInstanceOf[js.Any], hasTargetNameProfileNameAppleTeamIdBuildConfiguration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setProvisioningProfileForPbxproj(projectRoot: String, param1: ProvisioningProfileSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProvisioningProfileForPbxproj")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ProvisioningProfileSettings extends StObject {
     

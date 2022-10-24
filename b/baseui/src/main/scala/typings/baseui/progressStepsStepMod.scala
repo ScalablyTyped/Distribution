@@ -10,7 +10,7 @@ object progressStepsStepMod {
   
   object default {
     
-    inline def apply(hasOverridesIsCompletedIsActiveIsLastTitleChildren: StepProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasOverridesIsCompletedIsActiveIsLastTitleChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: StepProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("baseui/progress-steps/step", JSImport.Default)
     @js.native

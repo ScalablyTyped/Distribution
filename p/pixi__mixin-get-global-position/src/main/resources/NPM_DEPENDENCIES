@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/mixin-get-global-position" : "6.5.7"
+      "@pixi/mixin-get-global-position" : "6.5.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/mixin-get-global-position" : "6.5.7"
+      "@pixi/mixin-get-global-position" : "6.5.8"
     }
   ],
   "compile-devDependencies" : [

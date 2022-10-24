@@ -14,9 +14,7 @@ object distTypesFromCognitoIdentityPoolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromCognitoIdentityPool(
-    hasAccountIdCacheClientCustomRoleArnIdentityPoolIdLoginsUserIdentifier: FromCognitoIdentityPoolParameters
-  ): CognitoIdentityCredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentityPool")(hasAccountIdCacheClientCustomRoleArnIdentityPoolIdLoginsUserIdentifier.asInstanceOf[js.Any]).asInstanceOf[CognitoIdentityCredentialProvider]
+  inline def fromCognitoIdentityPool(param0: FromCognitoIdentityPoolParameters): CognitoIdentityCredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentityPool")(param0.asInstanceOf[js.Any]).asInstanceOf[CognitoIdentityCredentialProvider]
   
   trait FromCognitoIdentityPoolParameters
     extends StObject

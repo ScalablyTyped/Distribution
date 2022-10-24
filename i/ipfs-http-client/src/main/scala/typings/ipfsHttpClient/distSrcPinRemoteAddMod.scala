@@ -16,13 +16,13 @@ object distSrcPinRemoteAddMod {
   
   inline def createAdd(client: Client): js.Function2[
     /* cid */ CID[Any, Double, Double, Version], 
-    /* hasTimeoutSignalHeadersQuery */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.AddOptions */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
+    /* param1 */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.AddOptions */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
     js.Promise[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.Pin */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdd")(client.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* cid */ CID[Any, Double, Double, Version], 
-    /* hasTimeoutSignalHeadersQuery */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.AddOptions */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
+    /* param1 */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.AddOptions */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
     js.Promise[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_remote.Pin */ Any
     ]

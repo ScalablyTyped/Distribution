@@ -12,5 +12,5 @@ object mapMarkerLabelEnhancerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasLabelEnhancerContentLabelEnhancerPositionNeedleHeightSizeOverrides: LabelEhancerComponent): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasLabelEnhancerContentLabelEnhancerPositionNeedleHeightSizeOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: LabelEhancerComponent): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

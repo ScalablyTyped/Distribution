@@ -26,12 +26,10 @@ object distDeclarationsSrcAsyncMod {
   @js.native
   val default: AsyncSelect = js.native
   
-  inline def useAsync[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](
-    hasPropsDefaultOptionsCacheOptionsPropsLoadOptionsPropsOptionsPropsIsLoadingPropsOnInputChangeFilterOptionRestSelectProps: (AsyncProps[Option, IsMulti, Group]) & AdditionalProps
-  ): (StateManagerProps[Option, IsMulti, Group]) & (Omit[
+  inline def useAsync[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](param0: (AsyncProps[Option, IsMulti, Group]) & AdditionalProps): (StateManagerProps[Option, IsMulti, Group]) & (Omit[
     AdditionalProps, 
     defaultOptions | cacheOptions | loadOptions | isLoading | AsyncManagedPropKeys
-  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsync")(hasPropsDefaultOptionsCacheOptionsPropsLoadOptionsPropsOptionsPropsIsLoadingPropsOnInputChangeFilterOptionRestSelectProps.asInstanceOf[js.Any]).asInstanceOf[(StateManagerProps[Option, IsMulti, Group]) & (Omit[
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsync")(param0.asInstanceOf[js.Any]).asInstanceOf[(StateManagerProps[Option, IsMulti, Group]) & (Omit[
     AdditionalProps, 
     defaultOptions | cacheOptions | loadOptions | isLoading | AsyncManagedPropKeys
   ])]

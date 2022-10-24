@@ -373,7 +373,7 @@ object mod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])
+    var children: Element | (js.Function1[/* param0 */ IsOpen, Element])
     
     var cite: js.UndefOr[String] = js.undefined
     
@@ -800,7 +800,7 @@ object mod {
   }
   object MenuProps {
     
-    inline def apply[T /* <: HTMLElement */](children: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])): MenuProps[T] = {
+    inline def apply[T /* <: HTMLElement */](children: Element | (js.Function1[/* param0 */ IsOpen, Element])): MenuProps[T] = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuProps[T]]
     }
@@ -1089,9 +1089,9 @@ object mod {
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      inline def setChildren(value: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Element | (js.Function1[/* param0 */ IsOpen, Element])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenFunction1(value: /* hasIsOpen */ IsOpen => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* param0 */ IsOpen => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
       

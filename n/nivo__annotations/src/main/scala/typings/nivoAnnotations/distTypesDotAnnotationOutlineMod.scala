@@ -12,5 +12,5 @@ object distTypesDotAnnotationOutlineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DotAnnotationOutline(hasXYSize: X): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DotAnnotationOutline")(hasXYSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DotAnnotationOutline(param0: X): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DotAnnotationOutline")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

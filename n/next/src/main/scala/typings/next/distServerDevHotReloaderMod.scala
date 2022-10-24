@@ -29,11 +29,11 @@ object distServerDevHotReloaderMod {
   open class default protected ()
     extends StObject
        with HotReloader {
-    def this(dir: String, hasConfigPagesDirDistDirBuildIdPreviewPropsRewritesAppDir: PreviewProps) = this()
+    def this(dir: String, param1: PreviewProps) = this()
   }
   
   inline def renderScriptError(res: ServerResponse[IncomingMessage], error: js.Error): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderScriptError")(res.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def renderScriptError(res: ServerResponse[IncomingMessage], error: js.Error, hasVerbose: Verbose): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderScriptError")(res.asInstanceOf[js.Any], error.asInstanceOf[js.Any], hasVerbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def renderScriptError(res: ServerResponse[IncomingMessage], error: js.Error, param2: Verbose): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderScriptError")(res.asInstanceOf[js.Any], error.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @js.native
   trait HotReloader extends StObject {
@@ -42,11 +42,7 @@ object distServerDevHotReloaderMod {
         js.Array[
           UnwrapPromise[
             ReturnType[
-              js.Function2[
-                /* dir */ String, 
-                /* hasBuildIdConfigCompilerTypeDevEntrypointsHasReactRootIsDevFallbackPagesDirReactProductionProfilingRewritesRunWebpackSpanTargetAppDirMiddlewareMatchers */ CompilerType, 
-                js.Promise[Configuration]
-              ]
+              js.Function2[/* dir */ String, /* param1 */ CompilerType, js.Promise[Configuration]]
             ]
           ]
         ]
@@ -72,7 +68,7 @@ object distServerDevHotReloaderMod {
     
     var edgeServerStats: Stats | Null = js.native
     
-    def ensurePage(hasPageClientOnlyAppPaths: ClientOnly): js.Promise[Unit] = js.native
+    def ensurePage(param0: ClientOnly): js.Promise[Unit] = js.native
     
     /* private */ var fallbackWatcher: Any = js.native
     

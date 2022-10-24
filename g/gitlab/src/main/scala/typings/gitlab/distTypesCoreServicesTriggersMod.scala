@@ -15,7 +15,7 @@ object distTypesCoreServicesTriggersMod {
   @JSImport("gitlab/dist/types/core/services/Triggers", "Triggers")
   @js.native
   open class Triggers () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def add(projectId: String): js.Promise[js.Object] = js.native
     def add(projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
@@ -33,9 +33,9 @@ object distTypesCoreServicesTriggersMod {
     def edit(projectId: Double, triggerId: Double, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     
     def pipeline(projectId: String, ref: String, token: String): js.Promise[js.Object] = js.native
-    def pipeline(projectId: String, ref: String, token: String, hasSudoOptions: BaseRequestOptions): js.Promise[js.Object] = js.native
+    def pipeline(projectId: String, ref: String, token: String, param3: BaseRequestOptions): js.Promise[js.Object] = js.native
     def pipeline(projectId: Double, ref: String, token: String): js.Promise[js.Object] = js.native
-    def pipeline(projectId: Double, ref: String, token: String, hasSudoOptions: BaseRequestOptions): js.Promise[js.Object] = js.native
+    def pipeline(projectId: Double, ref: String, token: String, param3: BaseRequestOptions): js.Promise[js.Object] = js.native
     
     def remove(projectId: String, triggerId: Double): js.Promise[js.Object] = js.native
     def remove(projectId: String, triggerId: Double, options: Sudo): js.Promise[js.Object] = js.native

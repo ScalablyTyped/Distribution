@@ -28,7 +28,7 @@ object libHelpMod {
   /* note: abstract class */ @JSImport("@ionic/cli-framework/lib/help", "CommandHelpFormatter")
   @js.native
   open class CommandHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends HelpFormatter {
-    def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
     
     /* protected */ var _fullName: js.UndefOr[String] = js.native
     
@@ -58,7 +58,7 @@ object libHelpMod {
   @JSImport("@ionic/cli-framework/lib/help", "CommandSchemaHelpFormatter")
   @js.native
   open class CommandSchemaHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends CommandHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
     
     def formatCommand(cmd: (HydratedCommandMetadata[C, N, M, I, O]) | M): js.Promise[CommandHelpSchema] = js.native
     
@@ -78,7 +78,7 @@ object libHelpMod {
   @JSImport("@ionic/cli-framework/lib/help", "CommandStringHelpFormatter")
   @js.native
   open class CommandStringHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends CommandHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
     
     /**
       * Insert text that appears after the input's summary.
@@ -150,7 +150,7 @@ object libHelpMod {
   /* note: abstract class */ @JSImport("@ionic/cli-framework/lib/help", "HelpFormatter")
   @js.native
   open class HelpFormatter protected () extends StObject {
-    def this(hasColors: Colors) = this()
+    def this(param0: Colors) = this()
     
     /* protected */ val colors: typings.ionicCliFramework.libColorsMod.Colors = js.native
     
@@ -160,7 +160,7 @@ object libHelpMod {
   /* note: abstract class */ @JSImport("@ionic/cli-framework/lib/help", "NamespaceHelpFormatter")
   @js.native
   open class NamespaceHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends HelpFormatter {
-    def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
     
     /* protected */ var _fullName: js.UndefOr[String] = js.native
     
@@ -195,7 +195,7 @@ object libHelpMod {
   @JSImport("@ionic/cli-framework/lib/help", "NamespaceSchemaHelpFormatter")
   @js.native
   open class NamespaceSchemaHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends NamespaceHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
     
     def formatCommand(cmd: HydratedCommandMetadata[C, N, M, I, O]): js.Promise[CommandHelpSchema] = js.native
     
@@ -207,7 +207,7 @@ object libHelpMod {
   @JSImport("@ionic/cli-framework/lib/help", "NamespaceStringHelpFormatter")
   @js.native
   open class NamespaceStringHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends NamespaceHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
     
     /**
       * Insert text that appears after a commands's summary.

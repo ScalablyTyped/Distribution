@@ -12,7 +12,5 @@ object distTypesSvgContinuousColorsLegendSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ContinuousColorsLegendSvg(
-    hasScaleTicksLengthThicknessDirectionTickPositionTickSizeTickSpacingTickOverlapTickFormatTitleTitleAlignTitleOffset: ContinuousColorsLegendProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ContinuousColorsLegendSvg")(hasScaleTicksLengthThicknessDirectionTickPositionTickSizeTickSpacingTickOverlapTickFormatTitleTitleAlignTitleOffset.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ContinuousColorsLegendSvg(param0: ContinuousColorsLegendProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ContinuousColorsLegendSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

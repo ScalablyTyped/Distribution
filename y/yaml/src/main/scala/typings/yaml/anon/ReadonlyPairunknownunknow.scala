@@ -25,7 +25,7 @@ trait ReadonlyPairunknownunknow extends StObject {
     js.Function3[
       /* ctx */ js.UndefOr[ToJSContext], 
       /* map */ MapLike, 
-      /* hasKeyValue */ Pair[Any, Any], 
+      /* param2 */ Pair[Any, Any], 
       MapLike
     ]
   ] = js.native
@@ -33,7 +33,7 @@ trait ReadonlyPairunknownunknow extends StObject {
     js.Function3[
       /* ctx */ js.UndefOr[ToJSContext], 
       /* map */ MapLike, 
-      /* hasKeyValue */ Pair[Any, Any], 
+      /* param2 */ Pair[Any, Any], 
       MapLike
     ]
   ] = js.native
@@ -41,7 +41,7 @@ trait ReadonlyPairunknownunknow extends StObject {
     js.Function3[
       /* ctx */ js.UndefOr[ToJSContext], 
       /* map */ MapLike, 
-      /* hasKeyValue */ Pair[Any, Any], 
+      /* param2 */ Pair[Any, Any], 
       MapLike
     ]
   ] = js.native
@@ -49,7 +49,7 @@ trait ReadonlyPairunknownunknow extends StObject {
     js.Function3[
       /* ctx */ js.UndefOr[ToJSContext], 
       /* map */ MapLike, 
-      /* hasKeyValue */ Pair[Any, Any], 
+      /* param2 */ Pair[Any, Any], 
       MapLike
     ]
   ] = js.native

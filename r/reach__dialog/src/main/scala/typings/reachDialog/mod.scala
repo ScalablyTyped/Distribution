@@ -91,7 +91,7 @@ object mod {
       *
       * Note: You must render a `DialogInner` inside.
       */
-    inline def apply(hasIsOpenChildrenProps: DialogWrapperProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasIsOpenChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: DialogWrapperProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@reach/dialog", "unstable_DialogWrapper")
     @js.native

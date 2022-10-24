@@ -48,7 +48,7 @@ trait SubtitleStreamController
   
   def onSubtitleTrackSwitch(event: SUBTITLE_TRACK_SWITCH, data: TrackSwitchedData): Unit = js.native
   
-  def onSubtitleTracksUpdated(event: SUBTITLE_TRACKS_UPDATED, hasSubtitleTracks: SubtitleTracksUpdatedData): Unit = js.native
+  def onSubtitleTracksUpdated(event: SUBTITLE_TRACKS_UPDATED, param1: SubtitleTracksUpdatedData): Unit = js.native
   
   def startLoad(): Unit = js.native
   

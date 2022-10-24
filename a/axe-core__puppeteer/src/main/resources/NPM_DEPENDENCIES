@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@axe-core/puppeteer" : "4.4.4"
+      "@axe-core/puppeteer" : "4.4.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@axe-core/puppeteer" : "4.4.4"
+      "@axe-core/puppeteer" : "4.4.5"
     }
   ],
   "compile-devDependencies" : [

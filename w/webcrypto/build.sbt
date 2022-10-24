@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "webcrypto"
-version := "0.0-unknown-dt-20220824Z-5cf346"
-scalaVersion := "3.1.2"
+version := "0.0-unknown-dt-20220824Z-a70b02"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

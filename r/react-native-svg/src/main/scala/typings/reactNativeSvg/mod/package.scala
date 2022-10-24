@@ -59,7 +59,7 @@ inline def RNSVGTextPath: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].select
 
 inline def RNSVGUse: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGUse").asInstanceOf[ComponentType[Any]]
 
-inline def SvgAst(hasAstOverride: AstProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgAst")(hasAstOverride.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+inline def SvgAst(param0: AstProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgAst")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
 
 inline def SvgCss(props: XmlProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgCss")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 

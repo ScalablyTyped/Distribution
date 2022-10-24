@@ -12,5 +12,5 @@ object esmBarLoaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasLoadingColorSpeedMultiplierCssOverrideHeightWidthAdditionalprops: LoaderHeightWidthProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasLoadingColorSpeedMultiplierCssOverrideHeightWidthAdditionalprops.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: LoaderHeightWidthProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
 }

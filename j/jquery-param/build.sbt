@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery-param"
-version := "v1.0.0-dt-20220818Z-bca691"
-scalaVersion := "3.1.2"
+version := "v1.0.0-dt-20220818Z-18ed18"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

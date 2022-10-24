@@ -17,31 +17,21 @@ object distTypesSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def AnchoredContinuousColorsLegendSvg(
-    hasContainerWidthContainerHeightAnchorTranslateXTranslateYLengthThicknessDirectionLegendProps: AnchoredContinuousColorsLegendProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AnchoredContinuousColorsLegendSvg")(hasContainerWidthContainerHeightAnchorTranslateXTranslateYLengthThicknessDirectionLegendProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def AnchoredContinuousColorsLegendSvg(param0: AnchoredContinuousColorsLegendProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AnchoredContinuousColorsLegendSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def BoxLegendSvg(
-    hasDataContainerWidthContainerHeightTranslateXTranslateYAnchorDirectionPaddingJustifyItemsSpacingItemWidthItemHeightItemDirectionItemTextColorItemBackgroundItemOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerieEffects: BoxLegendSvgProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BoxLegendSvg")(hasDataContainerWidthContainerHeightTranslateXTranslateYAnchorDirectionPaddingJustifyItemsSpacingItemWidthItemHeightItemDirectionItemTextColorItemBackgroundItemOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerieEffects.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BoxLegendSvg(param0: BoxLegendSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BoxLegendSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ContinuousColorsLegendSvg(
-    hasScaleTicksLengthThicknessDirectionTickPositionTickSizeTickSpacingTickOverlapTickFormatTitleTitleAlignTitleOffset: ContinuousColorsLegendProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ContinuousColorsLegendSvg")(hasScaleTicksLengthThicknessDirectionTickPositionTickSizeTickSpacingTickOverlapTickFormatTitleTitleAlignTitleOffset.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ContinuousColorsLegendSvg(param0: ContinuousColorsLegendProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ContinuousColorsLegendSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def LegendSvg(
-    hasDataXYDirection_paddingJustifyEffectsItemWidthItemHeightItemDirectionItemsSpacingItemTextColorItemBackgroundItemOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerie: LegendSvgProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LegendSvg")(hasDataXYDirection_paddingJustifyEffectsItemWidthItemHeightItemDirectionItemsSpacingItemTextColorItemBackgroundItemOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerie.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LegendSvg(param0: LegendSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LegendSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def LegendSvgItem(
-    hasXYWidthHeightDataDirectionJustifyTextColorBackgroundOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerieEffects: LegendSvgItemProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LegendSvgItem")(hasXYWidthHeightDataDirectionJustifyTextColorBackgroundOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerieEffects.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LegendSvgItem(param0: LegendSvgItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LegendSvgItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def SymbolCircle(hasXYSizeFillOpacityBorderWidthBorderColor: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolCircle")(hasXYSizeFillOpacityBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SymbolCircle(param0: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolCircle")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def SymbolDiamond(hasXYSizeFillOpacityBorderWidthBorderColor: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolDiamond")(hasXYSizeFillOpacityBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SymbolDiamond(param0: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolDiamond")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def SymbolSquare(hasXYSizeFillOpacityBorderWidthBorderColor: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolSquare")(hasXYSizeFillOpacityBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SymbolSquare(param0: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolSquare")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def SymbolTriangle(hasXYSizeFillOpacityBorderWidthBorderColor: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolTriangle")(hasXYSizeFillOpacityBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SymbolTriangle(param0: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolTriangle")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -15,7 +15,7 @@ object esmDecadeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasFocusedItemDisabledOnChangeValueLocalizerMinMaxProps: DecadeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasFocusedItemDisabledOnChangeValueLocalizerMinMaxProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: DecadeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait DecadeProps
     extends StObject

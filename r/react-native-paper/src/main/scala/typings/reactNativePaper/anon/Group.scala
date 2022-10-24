@@ -9,18 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Group extends StObject {
   
-  var Group: ComponentType[PickPropsstylecoloronPresAccessibilityLabel] & (NonReactStatics[
-    ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
-    js.Object
-  ])
+  var Group: ComponentType[PickPropsstylecoloronPresAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `18`, js.Object])
 }
 object Group {
   
   inline def apply(
-    Group: ComponentType[PickPropsstylecoloronPresAccessibilityLabel] & (NonReactStatics[
-      ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
-      js.Object
-    ])
+    Group: ComponentType[PickPropsstylecoloronPresAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `18`, js.Object])
   ): Group = {
     val __obj = js.Dynamic.literal(Group = Group.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
@@ -29,10 +23,7 @@ object Group {
   extension [Self <: Group](x: Self) {
     
     inline def setGroup(
-      value: ComponentType[PickPropsstylecoloronPresAccessibilityLabel] & (NonReactStatics[
-          ComponentType[Props] & CallHasActionsIconOpenOnPressAccessibilityLabelThemeStyleFabStyleVisibleTestIDOnStateChangeColorPropBackdropColor, 
-          js.Object
-        ])
+      value: ComponentType[PickPropsstylecoloronPresAccessibilityLabel] & (NonReactStatics[ComponentType[Props] & `18`, js.Object])
     ): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
   }
 }

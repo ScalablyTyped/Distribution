@@ -40,9 +40,7 @@ object esUseEditableArrayMod {
   @js.native
   val DeleteEditableAction: FC[ActionRenderConfiganyNewL] = js.native
   
-  inline def SaveEditableAction[T](
-    hasRecordKeyOnSaveRowChildrenNewLineConfigEditorTypeTableName: (ActionRenderConfig[T, NewLineConfig[T]]) & Row
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SaveEditableAction")(hasRecordKeyOnSaveRowChildrenNewLineConfigEditorTypeTableName.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SaveEditableAction[T](param0: (ActionRenderConfig[T, NewLineConfig[T]]) & Row): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SaveEditableAction")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def defaultActionRender[T](row: T, config: ActionRenderConfig[T, NewLineConfig[T]]): js.Array[Element | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultActionRender")(row.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element | Null]]
   

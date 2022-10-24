@@ -25,7 +25,7 @@ object libH1Mod {
     
     inline def enter(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enter")().asInstanceOf[js.Promise[Unit]]
     
-    inline def exit(hasSpecNodeClauseStack: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")(hasSpecNodeClauseStack.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def exit(param0: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
   
   type H1 = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Builder */ Any

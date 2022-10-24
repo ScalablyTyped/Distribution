@@ -277,8 +277,8 @@ object default {
   
   inline def interpolateColors[T /* <: String | Double */](
     animationValue: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
-    hasInputRangeOutputColorRange: InputRange[T]
-  ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateColors")(animationValue.asInstanceOf[js.Any], hasInputRangeOutputColorRange.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T]]
+    param1: InputRange[T]
+  ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateColors")(animationValue.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T]]
   
   inline def interpolateNode(value: typings.reactNativeReanimated.mod.Animated.Adaptable[Double], config: InterpolationConfig): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNode")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
   

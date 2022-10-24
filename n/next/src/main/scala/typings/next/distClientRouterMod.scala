@@ -35,7 +35,7 @@ object distClientRouterMod {
       pathname: String,
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
       as: String,
-      hasInitialPropsPageLoaderAppWrapAppComponentErrSubscriptionIsFallbackLocaleLocalesDefaultLocaleDomainLocalesIsPreview: Component
+      param3: Component
     ) = this()
   }
   /* static members */

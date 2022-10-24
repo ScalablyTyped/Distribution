@@ -20,7 +20,7 @@ object distHooksAndroidInputManagerAndroidInputManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createAndroidInputManager(hasEditorScheduleOnDOMSelectionChangeOnDOMSelectionChange: CreateAndroidInputManagerOptions): AndroidInputManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createAndroidInputManager")(hasEditorScheduleOnDOMSelectionChangeOnDOMSelectionChange.asInstanceOf[js.Any]).asInstanceOf[AndroidInputManager]
+  inline def createAndroidInputManager(param0: CreateAndroidInputManagerOptions): AndroidInputManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createAndroidInputManager")(param0.asInstanceOf[js.Any]).asInstanceOf[AndroidInputManager]
   
   trait Action extends StObject {
     

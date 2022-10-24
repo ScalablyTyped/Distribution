@@ -17,7 +17,7 @@ object libEsmContextPortalPortalProviderMod {
   @js.native
   val PortalContext: Context[PortalContextOptions] = js.native
   
-  inline def PortalProvider(hasChildrenOptions: PropsWithChildren[PortalContextOptions]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PortalProvider")(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PortalProvider(param0: PropsWithChildren[PortalContextOptions]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PortalProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PortalContextOptions extends StObject {
     

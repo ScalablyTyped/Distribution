@@ -16,15 +16,15 @@ object distServerLibSquooshImplMod {
   inline def decodeBuffer(_buffer: js.typedarray.Uint8Array): js.Promise[default] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeBuffer")(_buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default]]
   inline def decodeBuffer(_buffer: Buffer): js.Promise[default] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeBuffer")(_buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default]]
   
-  inline def encodeAvif(image: default, hasQuality: Quality): js.Promise[Buffer | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAvif")(image.asInstanceOf[js.Any], hasQuality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | js.typedarray.Uint8Array]]
+  inline def encodeAvif(image: default, param1: Quality): js.Promise[Buffer | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeAvif")(image.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | js.typedarray.Uint8Array]]
   
-  inline def encodeJpeg(image: default, hasQuality: Quality): js.Promise[Buffer | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeJpeg")(image.asInstanceOf[js.Any], hasQuality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | js.typedarray.Uint8Array]]
+  inline def encodeJpeg(image: default, param1: Quality): js.Promise[Buffer | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeJpeg")(image.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | js.typedarray.Uint8Array]]
   
   inline def encodePng(image: default): js.Promise[Buffer | js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePng")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer | js.typedarray.Uint8Array]]
   
-  inline def encodeWebp(image: default, hasQuality: Quality): js.Promise[Buffer | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWebp")(image.asInstanceOf[js.Any], hasQuality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | js.typedarray.Uint8Array]]
+  inline def encodeWebp(image: default, param1: Quality): js.Promise[Buffer | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWebp")(image.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | js.typedarray.Uint8Array]]
   
-  inline def resize(hasImageWidthHeight: ResizeOpts): js.Promise[default] = ^.asInstanceOf[js.Dynamic].applyDynamic("resize")(hasImageWidthHeight.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default]]
+  inline def resize(param0: ResizeOpts): js.Promise[default] = ^.asInstanceOf[js.Dynamic].applyDynamic("resize")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default]]
   
   inline def rotate(image: default, numRotations: Double): js.Promise[default] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(image.asInstanceOf[js.Any], numRotations.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default]]
   

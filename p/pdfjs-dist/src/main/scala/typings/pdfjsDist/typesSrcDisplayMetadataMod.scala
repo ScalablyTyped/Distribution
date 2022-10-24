@@ -10,7 +10,7 @@ object typesSrcDisplayMetadataMod {
   @JSImport("pdfjs-dist/types/src/display/metadata", "Metadata")
   @js.native
   open class Metadata protected () extends StObject {
-    def this(hasParsedDataRawData: ParsedData) = this()
+    def this(param0: ParsedData) = this()
     
     def get(name: Any): Any = js.native
     

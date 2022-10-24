@@ -10,7 +10,7 @@ object typesButtonThemeClassNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buttonThemeClassNames(hasPropThemeThemeTypeButtonTypePropDisabledClassName: ButtonThemeProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonThemeClassNames")(hasPropThemeThemeTypeButtonTypePropDisabledClassName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buttonThemeClassNames(param0: ButtonThemeProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonThemeClassNames")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdButton.reactMdButtonStrings.clear

@@ -48,9 +48,9 @@ object buildSrcCompileFormatMod {
     config: Config[ExprRef | SignalRef]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("binFormatExpression")(startField.asInstanceOf[js.Any], endField.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def formatCustomType(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfigField: Expr): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCustomType")(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfigField.asInstanceOf[js.Any]).asInstanceOf[Signal]
+  inline def formatCustomType(param0: Expr): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCustomType")(param0.asInstanceOf[js.Any]).asInstanceOf[Signal]
   
-  inline def formatSignalRef(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfig: NormalizeStack): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSignalRef")(hasFieldOrDatumDefFormatFormatTypeExprNormalizeStackConfig.asInstanceOf[js.Any]).asInstanceOf[Signal]
+  inline def formatSignalRef(param0: NormalizeStack): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSignalRef")(param0.asInstanceOf[js.Any]).asInstanceOf[Signal]
   
   inline def guideFormat(
     fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
@@ -100,9 +100,9 @@ object buildSrcCompileFormatMod {
   
   inline def isCustomFormatType(formatType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCustomFormatType")(formatType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def numberFormat(hasTypeSpecifiedFormatConfigNormalizeStack: SpecifiedFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(hasTypeSpecifiedFormatConfigNormalizeStack.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def numberFormat(param0: SpecifiedFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def timeFormat(hasSpecifiedFormatTimeUnitConfigOmitTimeFormatConfig: OmitTimeFormatConfig): String | Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(hasSpecifiedFormatTimeUnitConfigOmitTimeFormatConfig.asInstanceOf[js.Any]).asInstanceOf[String | Signal]
+  inline def timeFormat(param0: OmitTimeFormatConfig): String | Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(param0.asInstanceOf[js.Any]).asInstanceOf[String | Signal]
   
-  inline def timeFormatExpression(hasFieldTimeUnitFormatFormatTypeRawTimeFormatIsUTCScale: IsUTCScale): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatExpression")(hasFieldTimeUnitFormatFormatTypeRawTimeFormatIsUTCScale.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def timeFormatExpression(param0: IsUTCScale): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatExpression")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

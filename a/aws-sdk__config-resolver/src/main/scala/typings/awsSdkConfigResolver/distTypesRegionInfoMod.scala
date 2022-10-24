@@ -12,8 +12,5 @@ object distTypesRegionInfoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getRegionInfo(
-    region: String,
-    hasUseFipsEndpointUseDualstackEndpointSigningServiceRegionHashPartitionHash: GetRegionInfoOptions
-  ): RegionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegionInfo")(region.asInstanceOf[js.Any], hasUseFipsEndpointUseDualstackEndpointSigningServiceRegionHashPartitionHash.asInstanceOf[js.Any])).asInstanceOf[RegionInfo]
+  inline def getRegionInfo(region: String, param1: GetRegionInfoOptions): RegionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegionInfo")(region.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RegionInfo]
 }

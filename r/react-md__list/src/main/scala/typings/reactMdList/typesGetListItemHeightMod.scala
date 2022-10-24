@@ -62,7 +62,7 @@ object typesGetListItemHeightMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getListItemHeight(hasHeightLeftAddonLeftAddonTypeRightAddonRightAddonTypeSecondaryText: SimpleListItemProps): ListItemHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("getListItemHeight")(hasHeightLeftAddonLeftAddonTypeRightAddonRightAddonTypeSecondaryText.asInstanceOf[js.Any]).asInstanceOf[ListItemHeight]
+  inline def getListItemHeight(param0: SimpleListItemProps): ListItemHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("getListItemHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[ListItemHeight]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdList.reactMdListStrings.auto

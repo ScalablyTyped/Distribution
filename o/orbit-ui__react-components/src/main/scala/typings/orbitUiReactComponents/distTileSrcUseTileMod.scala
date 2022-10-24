@@ -17,7 +17,7 @@ object distTileSrcUseTileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useTile(hasVariantOrientationActiveFocusHoverChildren: UseTileProps): Markup = ^.asInstanceOf[js.Dynamic].applyDynamic("useTile")(hasVariantOrientationActiveFocusHoverChildren.asInstanceOf[js.Any]).asInstanceOf[Markup]
+  inline def useTile(param0: UseTileProps): Markup = ^.asInstanceOf[js.Dynamic].applyDynamic("useTile")(param0.asInstanceOf[js.Any]).asInstanceOf[Markup]
   
   trait UseTileProps
     extends StObject

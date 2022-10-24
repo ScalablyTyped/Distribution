@@ -30,6 +30,6 @@ object pinCodeStatefulPinCodeContainerMod {
   @js.native
   trait StatefulPinCodeContainer extends Component[StatefulPinCodeContainerProps, StatefulPinCodeContainerState, Any] {
     
-    def handleChange(hasValuesEvent: ChangeEvent): Unit = js.native
+    def handleChange(param0: ChangeEvent): Unit = js.native
   }
 }

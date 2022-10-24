@@ -15,7 +15,7 @@ object distSrcModulesUiPreviewServicePreviewServiceMod {
   open class default protected ()
     extends StObject
        with PreviewService {
-    def this(hasEngine: EngineIPlaybackEngine) = this()
+    def this(param0: EngineIPlaybackEngine) = this()
     
     /* private */ /* CompleteClass */
     var _engine: Any = js.native

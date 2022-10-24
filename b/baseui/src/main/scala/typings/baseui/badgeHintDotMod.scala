@@ -12,5 +12,5 @@ object badgeHintDotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildrenColorHorizontalOffsetPropVerticalOffsetPropHiddenOverrides: HintDotProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenColorHorizontalOffsetPropVerticalOffsetPropHiddenOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: HintDotProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

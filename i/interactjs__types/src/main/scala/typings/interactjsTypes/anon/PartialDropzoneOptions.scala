@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PartialDropzoneOptions extends StObject {
   
   var accept: js.UndefOr[
-    String | typings.interactjsTypes.coreTypesMod.Element | (js.Function1[/* hasDropzoneDraggableElement */ DraggableElement, Boolean])
+    String | typings.interactjsTypes.coreTypesMod.Element | (js.Function1[/* param0 */ DraggableElement, Boolean])
   ] = js.undefined
   
   var allowFrom: js.UndefOr[String | typings.interactjsTypes.coreTypesMod.Element] = js.undefined
@@ -82,10 +82,10 @@ object PartialDropzoneOptions {
   extension [Self <: PartialDropzoneOptions](x: Self) {
     
     inline def setAccept(
-      value: String | typings.interactjsTypes.coreTypesMod.Element | (js.Function1[/* hasDropzoneDraggableElement */ DraggableElement, Boolean])
+      value: String | typings.interactjsTypes.coreTypesMod.Element | (js.Function1[/* param0 */ DraggableElement, Boolean])
     ): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    inline def setAcceptFunction1(value: /* hasDropzoneDraggableElement */ DraggableElement => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+    inline def setAcceptFunction1(value: /* param0 */ DraggableElement => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     
     inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     

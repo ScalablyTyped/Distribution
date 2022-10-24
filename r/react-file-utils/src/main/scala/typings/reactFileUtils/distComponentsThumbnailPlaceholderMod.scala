@@ -12,7 +12,7 @@ object distComponentsThumbnailPlaceholderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ThumbnailPlaceholder(hasMultipleHandleFiles: ThumbnailPlaceholderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThumbnailPlaceholder")(hasMultipleHandleFiles.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ThumbnailPlaceholder(param0: ThumbnailPlaceholderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThumbnailPlaceholder")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ThumbnailPlaceholderProps extends StObject {
     

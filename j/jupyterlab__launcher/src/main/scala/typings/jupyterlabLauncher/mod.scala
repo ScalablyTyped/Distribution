@@ -140,11 +140,6 @@ object mod {
       }
     }
     
-    extension [Self <: ILauncher](x: Self) {
-      
-      inline def setAdd(value: IItemOptions => IDisposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
-    }
-    
     /**
       * The options used to create a Launcher.
       */
@@ -196,6 +191,11 @@ object mod {
         
         inline def setTranslatorUndefined: Self = StObject.set(x, "translator", js.undefined)
       }
+    }
+    
+    extension [Self <: ILauncher](x: Self) {
+      
+      inline def setAdd(value: IItemOptions => IDisposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     }
     
     type _To = Token[ILauncher]

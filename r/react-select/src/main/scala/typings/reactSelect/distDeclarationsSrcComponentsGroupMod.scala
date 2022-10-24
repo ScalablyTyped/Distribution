@@ -51,9 +51,9 @@ object distDeclarationsSrcComponentsGroupMod {
   
   inline def GroupHeading[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: GroupHeadingProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("GroupHeading")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def groupCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasSpacing: GroupProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCSS")(hasHasSpacing.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def groupCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: GroupProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
-  inline def groupHeadingCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasHasSpacing: GroupHeadingProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("groupHeadingCSS")(hasHasSpacing.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def groupHeadingCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: GroupHeadingProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("groupHeadingCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
   trait ForwardedHeadingProps[Option, Group /* <: GroupBase[Option] */] extends StObject {
     

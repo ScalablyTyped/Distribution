@@ -24,7 +24,7 @@ object buildExpoWebBrowserDotwebMod {
     
     inline def dismissAuthSession(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAuthSession")().asInstanceOf[Unit]
     
-    inline def maybeCompleteAuthSession(hasSkipRedirectCheck: SkipRedirectCheck): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeCompleteAuthSession")(hasSkipRedirectCheck.asInstanceOf[js.Any]).asInstanceOf[Message]
+    inline def maybeCompleteAuthSession(param0: SkipRedirectCheck): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeCompleteAuthSession")(param0.asInstanceOf[js.Any]).asInstanceOf[Message]
     
     @JSImport("expo-web-browser/build/ExpoWebBrowser.web", "default.name")
     @js.native

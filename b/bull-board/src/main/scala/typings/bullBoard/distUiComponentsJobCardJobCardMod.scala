@@ -14,7 +14,7 @@ object distUiComponentsJobCardJobCardMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def JobCard(hasJobStatusActionsReadOnlyMode: JobCardProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("JobCard")(hasJobStatusActionsReadOnlyMode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def JobCard(param0: JobCardProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("JobCard")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait JobCardProps extends StObject {
     

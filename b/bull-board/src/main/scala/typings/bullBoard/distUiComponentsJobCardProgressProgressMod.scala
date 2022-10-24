@@ -12,5 +12,5 @@ object distUiComponentsJobCardProgressProgressMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Progress(hasPercentageStatusClassName: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Progress")(hasPercentageStatusClassName.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Progress(param0: ClassName): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Progress")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

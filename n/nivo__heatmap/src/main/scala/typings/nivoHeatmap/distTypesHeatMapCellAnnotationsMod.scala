@@ -15,7 +15,7 @@ object distTypesHeatMapCellAnnotationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HeatMapCellAnnotations[Datum /* <: HeatMapDatum */](hasCellsAnnotations: HeatMapCellAnnotationsProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCellAnnotations")(hasCellsAnnotations.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeatMapCellAnnotations[Datum /* <: HeatMapDatum */](param0: HeatMapCellAnnotationsProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCellAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait HeatMapCellAnnotationsProps[Datum /* <: HeatMapDatum */] extends StObject {
     

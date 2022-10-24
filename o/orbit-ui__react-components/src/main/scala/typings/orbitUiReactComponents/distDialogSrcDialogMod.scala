@@ -31,9 +31,7 @@ object distDialogSrcDialogMod {
   @js.native
   val Dialog: OrbitComponent[HTMLElement, InnerDialogProps] = js.native
   
-  inline def InnerDialog(
-    hasIdRoleSizeDismissableFocusZIndexAriaLabelAriaLabelledByAriaDescribedByWrapperPropsAsChildrenForwardedRefRest: InnerDialogProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialog")(hasIdRoleSizeDismissableFocusZIndexAriaLabelAriaLabelledByAriaDescribedByWrapperPropsAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDialog(param0: InnerDialogProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialog")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type DialogProps = ComponentProps[OrbitComponent[HTMLElement, InnerDialogProps]]
   

@@ -77,7 +77,7 @@ object libTypescriptComponentsCardCardMod extends Shortcut {
   type Props = (ComponentProps[
     ComponentType[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] & (NonReactStatics[
       ComponentType[ViewPropsRefAttributesVieAccessibilityIgnoresInvertColors] & (js.Function1[
-        /* hasStyleThemeRest */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
+        /* param0 */ typings.reactNativePaper.libTypescriptComponentsSurfaceMod.Props, 
         Element
       ]), 
       js.Object

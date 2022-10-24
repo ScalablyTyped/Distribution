@@ -64,6 +64,7 @@ object providersOauthTypesMod {
     - typings.nextAuth.nextAuthStrings.slack
     - typings.nextAuth.nextAuthStrings.spotify
     - typings.nextAuth.nextAuthStrings.strava
+    - typings.nextAuth.nextAuthStrings.todoist
     - typings.nextAuth.nextAuthStrings.trakt
     - typings.nextAuth.nextAuthStrings.twitch
     - typings.nextAuth.nextAuthStrings.twitter
@@ -189,6 +190,8 @@ object providersOauthTypesMod {
     inline def spotify: typings.nextAuth.nextAuthStrings.spotify = "spotify".asInstanceOf[typings.nextAuth.nextAuthStrings.spotify]
     
     inline def strava: typings.nextAuth.nextAuthStrings.strava = "strava".asInstanceOf[typings.nextAuth.nextAuthStrings.strava]
+    
+    inline def todoist: typings.nextAuth.nextAuthStrings.todoist = "todoist".asInstanceOf[typings.nextAuth.nextAuthStrings.todoist]
     
     inline def trakt: typings.nextAuth.nextAuthStrings.trakt = "trakt".asInstanceOf[typings.nextAuth.nextAuthStrings.trakt]
     

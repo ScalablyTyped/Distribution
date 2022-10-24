@@ -12,7 +12,7 @@ object distEsmLoaderRotatingTrianglesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors: RotatingTrianglesProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: RotatingTrianglesProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   /* Inlined parent std.Omit<react-loader-spinner.react-loader-spinner/dist/esm/type.BaseProps, 'color'> */
   trait RotatingTrianglesProps extends StObject {

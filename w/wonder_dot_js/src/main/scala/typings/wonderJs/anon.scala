@@ -142,7 +142,7 @@ object anon {
     
     def init(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Main */ js.Any = js.native
     
-    def setConfig(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig: CanvasId): /* import warning: importer.ImportType#apply Failed type conversion: typeof Main */ js.Any = js.native
+    def setConfig(param0: CanvasId): /* import warning: importer.ImportType#apply Failed type conversion: typeof Main */ js.Any = js.native
   }
   
   trait X extends StObject {

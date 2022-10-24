@@ -11,5 +11,5 @@ object distTypesEventSelectionSetSelectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def setSelection(hasFocusNodeFocusOffsetAnchorNodeAnchorOffset: AnchorNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelection")(hasFocusNodeFocusOffsetAnchorNodeAnchorOffset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setSelection(param0: AnchorNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSelection")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

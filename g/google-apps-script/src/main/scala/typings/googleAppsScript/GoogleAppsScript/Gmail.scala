@@ -1219,61 +1219,6 @@ object Gmail {
     def unstar(): GmailMessage = js.native
   }
   
-  extension [Self <: Gmail](x: Self) {
-    
-    inline def setNewAutoForwarding(value: () => AutoForwarding): Self = StObject.set(x, "newAutoForwarding", js.Any.fromFunction0(value))
-    
-    inline def setNewBatchDeleteMessagesRequest(value: () => BatchDeleteMessagesRequest): Self = StObject.set(x, "newBatchDeleteMessagesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewBatchModifyMessagesRequest(value: () => BatchModifyMessagesRequest): Self = StObject.set(x, "newBatchModifyMessagesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDelegate(value: () => Delegate): Self = StObject.set(x, "newDelegate", js.Any.fromFunction0(value))
-    
-    inline def setNewDraft(value: () => Draft): Self = StObject.set(x, "newDraft", js.Any.fromFunction0(value))
-    
-    inline def setNewFilter(value: () => Filter): Self = StObject.set(x, "newFilter", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterAction(value: () => FilterAction): Self = StObject.set(x, "newFilterAction", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterCriteria(value: () => FilterCriteria): Self = StObject.set(x, "newFilterCriteria", js.Any.fromFunction0(value))
-    
-    inline def setNewForwardingAddress(value: () => ForwardingAddress): Self = StObject.set(x, "newForwardingAddress", js.Any.fromFunction0(value))
-    
-    inline def setNewImapSettings(value: () => ImapSettings): Self = StObject.set(x, "newImapSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewLabel(value: () => Label): Self = StObject.set(x, "newLabel", js.Any.fromFunction0(value))
-    
-    inline def setNewLabelColor(value: () => LabelColor): Self = StObject.set(x, "newLabelColor", js.Any.fromFunction0(value))
-    
-    inline def setNewMessage(value: () => Message): Self = StObject.set(x, "newMessage", js.Any.fromFunction0(value))
-    
-    inline def setNewMessagePart(value: () => MessagePart): Self = StObject.set(x, "newMessagePart", js.Any.fromFunction0(value))
-    
-    inline def setNewMessagePartBody(value: () => MessagePartBody): Self = StObject.set(x, "newMessagePartBody", js.Any.fromFunction0(value))
-    
-    inline def setNewMessagePartHeader(value: () => MessagePartHeader): Self = StObject.set(x, "newMessagePartHeader", js.Any.fromFunction0(value))
-    
-    inline def setNewModifyMessageRequest(value: () => ModifyMessageRequest): Self = StObject.set(x, "newModifyMessageRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewModifyThreadRequest(value: () => ModifyThreadRequest): Self = StObject.set(x, "newModifyThreadRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewPopSettings(value: () => PopSettings): Self = StObject.set(x, "newPopSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewSendAs(value: () => SendAs): Self = StObject.set(x, "newSendAs", js.Any.fromFunction0(value))
-    
-    inline def setNewSmimeInfo(value: () => SmimeInfo): Self = StObject.set(x, "newSmimeInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewSmtpMsa(value: () => SmtpMsa): Self = StObject.set(x, "newSmtpMsa", js.Any.fromFunction0(value))
-    
-    inline def setNewVacationSettings(value: () => VacationSettings): Self = StObject.set(x, "newVacationSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewWatchRequest(value: () => WatchRequest): Self = StObject.set(x, "newWatchRequest", js.Any.fromFunction0(value))
-    
-    inline def setUsers(value: UsersCollection): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
-    
-    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
-  }
-  
   /**
     * A thread in a user's Gmail account.
     */
@@ -1343,6 +1288,61 @@ object Gmail {
     
     def replyAll(body: String): GmailThread = js.native
     def replyAll(body: String, options: GmailAdvancedOptions): GmailThread = js.native
+  }
+  
+  extension [Self <: Gmail](x: Self) {
+    
+    inline def setNewAutoForwarding(value: () => AutoForwarding): Self = StObject.set(x, "newAutoForwarding", js.Any.fromFunction0(value))
+    
+    inline def setNewBatchDeleteMessagesRequest(value: () => BatchDeleteMessagesRequest): Self = StObject.set(x, "newBatchDeleteMessagesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewBatchModifyMessagesRequest(value: () => BatchModifyMessagesRequest): Self = StObject.set(x, "newBatchModifyMessagesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDelegate(value: () => Delegate): Self = StObject.set(x, "newDelegate", js.Any.fromFunction0(value))
+    
+    inline def setNewDraft(value: () => Draft): Self = StObject.set(x, "newDraft", js.Any.fromFunction0(value))
+    
+    inline def setNewFilter(value: () => Filter): Self = StObject.set(x, "newFilter", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterAction(value: () => FilterAction): Self = StObject.set(x, "newFilterAction", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterCriteria(value: () => FilterCriteria): Self = StObject.set(x, "newFilterCriteria", js.Any.fromFunction0(value))
+    
+    inline def setNewForwardingAddress(value: () => ForwardingAddress): Self = StObject.set(x, "newForwardingAddress", js.Any.fromFunction0(value))
+    
+    inline def setNewImapSettings(value: () => ImapSettings): Self = StObject.set(x, "newImapSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewLabel(value: () => Label): Self = StObject.set(x, "newLabel", js.Any.fromFunction0(value))
+    
+    inline def setNewLabelColor(value: () => LabelColor): Self = StObject.set(x, "newLabelColor", js.Any.fromFunction0(value))
+    
+    inline def setNewMessage(value: () => Message): Self = StObject.set(x, "newMessage", js.Any.fromFunction0(value))
+    
+    inline def setNewMessagePart(value: () => MessagePart): Self = StObject.set(x, "newMessagePart", js.Any.fromFunction0(value))
+    
+    inline def setNewMessagePartBody(value: () => MessagePartBody): Self = StObject.set(x, "newMessagePartBody", js.Any.fromFunction0(value))
+    
+    inline def setNewMessagePartHeader(value: () => MessagePartHeader): Self = StObject.set(x, "newMessagePartHeader", js.Any.fromFunction0(value))
+    
+    inline def setNewModifyMessageRequest(value: () => ModifyMessageRequest): Self = StObject.set(x, "newModifyMessageRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewModifyThreadRequest(value: () => ModifyThreadRequest): Self = StObject.set(x, "newModifyThreadRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewPopSettings(value: () => PopSettings): Self = StObject.set(x, "newPopSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewSendAs(value: () => SendAs): Self = StObject.set(x, "newSendAs", js.Any.fromFunction0(value))
+    
+    inline def setNewSmimeInfo(value: () => SmimeInfo): Self = StObject.set(x, "newSmimeInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewSmtpMsa(value: () => SmtpMsa): Self = StObject.set(x, "newSmtpMsa", js.Any.fromFunction0(value))
+    
+    inline def setNewVacationSettings(value: () => VacationSettings): Self = StObject.set(x, "newVacationSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewWatchRequest(value: () => WatchRequest): Self = StObject.set(x, "newWatchRequest", js.Any.fromFunction0(value))
+    
+    inline def setUsers(value: UsersCollection): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    
+    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
   }
   
   object Schema {

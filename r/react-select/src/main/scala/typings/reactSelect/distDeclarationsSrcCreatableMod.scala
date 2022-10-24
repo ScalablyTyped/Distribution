@@ -22,9 +22,7 @@ object distDeclarationsSrcCreatableMod {
   @js.native
   val default: CreatableSelect = js.native
   
-  inline def useCreatable[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
-    hasAllowCreateWhileLoadingCreateOptionPositionFormatCreateLabelIsValidNewOptionGetNewOptionDataOnCreateOptionPropsOptionsPropsOnChangeRestSelectProps: BaseCreatableProps[Option, IsMulti, Group]
-  ): PublicBaseSelectProps[Option, IsMulti, Group] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCreatable")(hasAllowCreateWhileLoadingCreateOptionPositionFormatCreateLabelIsValidNewOptionGetNewOptionDataOnCreateOptionPropsOptionsPropsOnChangeRestSelectProps.asInstanceOf[js.Any]).asInstanceOf[PublicBaseSelectProps[Option, IsMulti, Group]]
+  inline def useCreatable[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: BaseCreatableProps[Option, IsMulti, Group]): PublicBaseSelectProps[Option, IsMulti, Group] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCreatable")(param0.asInstanceOf[js.Any]).asInstanceOf[PublicBaseSelectProps[Option, IsMulti, Group]]
   
   type CreatableProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] = (StateManagerProps[Option, IsMulti, Group]) & (CreatableAdditionalProps[Option, Group])
   

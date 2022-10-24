@@ -10,7 +10,7 @@ object typesUseNestedDialogFixesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useNestedDialogFixes(hasIdVisibleDisabledPropDisableEscapeClose: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestedDialogFixes")(hasIdVisibleDisabledPropDisableEscapeClose.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def useNestedDialogFixes(param0: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestedDialogFixes")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   trait Options extends StObject {
     

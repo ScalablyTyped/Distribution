@@ -14,7 +14,7 @@ object typesRipplesRippleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Ripple(hasClassNamePropClassNamesPropTimeoutRippleEnteredExited: RippleProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(hasClassNamePropClassNamesPropTimeoutRippleEnteredExited.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Ripple(param0: RippleProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait RippleProps extends StObject {
     

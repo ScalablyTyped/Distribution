@@ -58,10 +58,7 @@ object esUtilsUiUtilMod {
   
   inline def addGlobalMouseDownEvent(callback: ClickEventHandler): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalMouseDownEvent")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  inline def createKeyDownHandler(
-    event: KeyboardEvent[HTMLElement],
-    hasOnLeftRightOnCtrlLeftRightOnUpDownOnPageUpDownOnEnter: KeyboardConfig
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("createKeyDownHandler")(event.asInstanceOf[js.Any], hasOnLeftRightOnCtrlLeftRightOnUpDownOnPageUpDownOnEnter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def createKeyDownHandler(event: KeyboardEvent[HTMLElement], param1: KeyboardConfig): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("createKeyDownHandler")(event.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def elementsContains(elements: js.Array[js.UndefOr[HTMLElement | Null]], target: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementsContains")(elements.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

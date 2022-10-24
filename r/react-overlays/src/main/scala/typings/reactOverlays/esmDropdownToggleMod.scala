@@ -27,7 +27,7 @@ object esmDropdownToggleMod {
       * @displayName DropdownToggle
       * @memberOf Dropdown
       */
-    inline def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-overlays/esm/DropdownToggle", JSImport.Default)
     @js.native

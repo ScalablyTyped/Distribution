@@ -61,7 +61,7 @@ object resourcesPaymentMod {
     // Complete and partial refund
     def refund(id: Double): js.Promise[PaymentUpdateResponse] = js.native
     
-    def refundPartial(hasPayment_idAmount: Amount): js.Promise[PaymentUpdateResponse] = js.native
+    def refundPartial(param0: Amount): js.Promise[PaymentUpdateResponse] = js.native
     
     /** Alias for `create` method. */
     def save(payload: CreatePaymentPayload): js.Promise[PaymentCreateResponse] = js.native

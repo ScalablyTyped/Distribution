@@ -40,7 +40,7 @@ object libStartMod {
   
   inline def readStarterManifest(p: String): js.Promise[StarterManifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("readStarterManifest")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StarterManifest]]
   
-  inline def verifyOptions(options: CommandLineOptions, hasLog: Log): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyOptions")(options.asInstanceOf[js.Any], hasLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verifyOptions(options: CommandLineOptions, param1: Log): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyOptions")(options.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ionic.libStartMod.NewAppSchema

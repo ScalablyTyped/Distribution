@@ -32,21 +32,6 @@ object AuthDriver {
     __obj.asInstanceOf[AuthDriver]
   }
   
-  extension [Self <: AuthDriver](x: Self) {
-    
-    inline def setAuthType(value: () => String): Self = StObject.set(x, "authType", js.Any.fromFunction0(value))
-    
-    inline def setDoAuthorize(value: (String, String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "doAuthorize", js.Any.fromFunction4(value))
-    
-    inline def setGetStateParam(value: (Client, js.Function1[/* state */ String, Unit]) => Unit): Self = StObject.set(x, "getStateParam", js.Any.fromFunction2(value))
-    
-    inline def setOnAuthStepChange(value: (Client, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onAuthStepChange", js.Any.fromFunction2(value))
-    
-    inline def setResumeAuthorize(value: (String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "resumeAuthorize", js.Any.fromFunction3(value))
-    
-    inline def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
-  }
-  
   trait BrowserBase extends StObject {
     
     def authType(): String
@@ -94,6 +79,21 @@ object AuthDriver {
     
     def doAuthorize(authUrl: String, stateParam: String, client: Client): Unit = js.native
     def doAuthorize(authUrl: String, stateParam: String, client: Client, callback: QueryParamsCallback): Unit = js.native
+  }
+  
+  extension [Self <: AuthDriver](x: Self) {
+    
+    inline def setAuthType(value: () => String): Self = StObject.set(x, "authType", js.Any.fromFunction0(value))
+    
+    inline def setDoAuthorize(value: (String, String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "doAuthorize", js.Any.fromFunction4(value))
+    
+    inline def setGetStateParam(value: (Client, js.Function1[/* state */ String, Unit]) => Unit): Self = StObject.set(x, "getStateParam", js.Any.fromFunction2(value))
+    
+    inline def setOnAuthStepChange(value: (Client, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onAuthStepChange", js.Any.fromFunction2(value))
+    
+    inline def setResumeAuthorize(value: (String, Client, QueryParamsCallback) => Unit): Self = StObject.set(x, "resumeAuthorize", js.Any.fromFunction3(value))
+    
+    inline def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
   }
   
   @js.native

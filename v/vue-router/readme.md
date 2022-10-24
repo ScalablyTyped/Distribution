@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-router
 
-Typings are for version 4.1.5
+Typings are for version 4.1.6
 
 
 

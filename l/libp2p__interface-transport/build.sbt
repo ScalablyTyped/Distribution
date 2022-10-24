@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "libp2p__interface-transport"
-version := "1.0.4-0a9467"
-scalaVersion := "3.1.2"
+version := "1.0.4-a7a20c"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-7e747b",
-  "org.scalablytyped" %%% "it-stream-types" % "1.0.4-2bd2ec",
-  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-788a7b",
-  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-122bf3",
-  "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-cbc19e",
-  "org.scalablytyped" %%% "multiformats" % "10.0.0-e339c8",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.1-9c49c7",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "uint8arraylist" % "2.3.2-45b6fe")
+  "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-011631",
+  "org.scalablytyped" %%% "it-stream-types" % "1.0.4-43f797",
+  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-c8b0f1",
+  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-22cec9",
+  "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-5a062f",
+  "org.scalablytyped" %%% "multiformats" % "10.0.0-cc5814",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.1-08d9e6",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "uint8arraylist" % "2.3.2-03d59f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

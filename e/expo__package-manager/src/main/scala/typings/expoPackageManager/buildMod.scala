@@ -33,7 +33,7 @@ object buildMod {
   @js.native
   open class CocoaPodsPackageManager protected ()
     extends typings.expoPackageManager.buildCocoaPodsPackageManagerMod.CocoaPodsPackageManager {
-    def this(hasCwdSilent: Cwd) = this()
+    def this(param0: Cwd) = this()
   }
   /* static members */
   object CocoaPodsPackageManager {
@@ -55,7 +55,7 @@ object buildMod {
     
     inline def getPodProjectRoot(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPodProjectRoot")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    inline def installCLIAsync(hasNonInteractiveSpawnOptions: NonInteractive): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("installCLIAsync")(hasNonInteractiveSpawnOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def installCLIAsync(param0: NonInteractive): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("installCLIAsync")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     inline def isAvailable(projectRoot: String, silent: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")(projectRoot.asInstanceOf[js.Any], silent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
@@ -90,7 +90,7 @@ object buildMod {
   @js.native
   open class NpmPackageManager protected ()
     extends typings.expoPackageManager.buildNodePackageManagersMod.NpmPackageManager {
-    def this(hasCwdLogSilent: Log) = this()
+    def this(param0: Log) = this()
   }
   
   @JSImport("@expo/package-manager/build", "PNPM_LOCK_FILE")
@@ -105,7 +105,7 @@ object buildMod {
   @js.native
   open class PnpmPackageManager protected ()
     extends typings.expoPackageManager.buildPnpmPackageManagerMod.PnpmPackageManager {
-    def this(hasCwdLogSilent: Log) = this()
+    def this(param0: Log) = this()
   }
   
   @JSImport("@expo/package-manager/build", "YARN_LOCK_FILE")
@@ -116,7 +116,7 @@ object buildMod {
   @js.native
   open class YarnPackageManager protected ()
     extends typings.expoPackageManager.buildNodePackageManagersMod.YarnPackageManager {
-    def this(hasCwdLogSilent: Log) = this()
+    def this(param0: Log) = this()
   }
   
   inline def createForProject(projectRoot: String): typings.expoPackageManager.buildNodePackageManagersMod.NpmPackageManager | typings.expoPackageManager.buildNodePackageManagersMod.YarnPackageManager | typings.expoPackageManager.buildPnpmPackageManagerMod.PnpmPackageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createForProject")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[typings.expoPackageManager.buildNodePackageManagersMod.NpmPackageManager | typings.expoPackageManager.buildNodePackageManagersMod.YarnPackageManager | typings.expoPackageManager.buildPnpmPackageManagerMod.PnpmPackageManager]
@@ -129,7 +129,7 @@ object buildMod {
   
   inline def findYarnOrNpmWorkspaceRootSafe(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findYarnOrNpmWorkspaceRootSafe")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def getImprovedPodInstallError(error: SpawnResult & js.Error, hasCwd: `0`): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getImprovedPodInstallError")(error.asInstanceOf[js.Any], hasCwd.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+  inline def getImprovedPodInstallError(error: SpawnResult & js.Error, param1: `0`): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getImprovedPodInstallError")(error.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
   inline def getModulesPath(projectRoot: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModulesPath")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String]
   

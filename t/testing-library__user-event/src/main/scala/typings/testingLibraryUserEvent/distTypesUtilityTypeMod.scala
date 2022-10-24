@@ -12,11 +12,7 @@ object distTypesUtilityTypeMod {
   val ^ : js.Any = js.native
   
   inline def `type`(element: Element, text: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def `type`(
-    element: Element,
-    text: String,
-    hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd: typeOptions
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def `type`(element: Element, text: String, param3: typeOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait typeOptions extends StObject {
     

@@ -25,9 +25,7 @@ object libTypescriptPagerViewAdapterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: Route */](
-    hasKeyboardDismissModeSwipeEnabledNavigationStateOnIndexChangeOnSwipeStartOnSwipeEndChildrenStyleAnimationEnabledRest: Props[T]
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasKeyboardDismissModeSwipeEnabledNavigationStateOnIndexChangeOnSwipeStartOnSwipeEndChildrenStyleAnimationEnabledRest.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default[T /* <: Route */](param0: Props[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   /* Inlined react-native-tab-view.react-native-tab-view/lib/typescript/types.PagerProps & {onIndexChange (index : number): void,   navigationState :react-native-tab-view.react-native-tab-view/lib/typescript/types.NavigationState<T>, children (props : react-native-tab-view.react-native-tab-view/lib/typescript/types.EventEmitterProps & {  position :react-native.react-native.Animated.AnimatedInterpolation<number | string>, render (children : react.react.ReactNode): react.react.ReactNode, jumpTo (key : string): void}): react.react.ReactElement} */
   trait Props[T /* <: Route */] extends StObject {

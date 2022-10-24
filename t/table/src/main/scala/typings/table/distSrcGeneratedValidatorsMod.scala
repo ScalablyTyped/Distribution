@@ -12,8 +12,8 @@ object distSrcGeneratedValidatorsMod {
   val ^ : js.Any = js.native
   
   inline def configJson(data: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_config_json")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def configJson(data: Any, hasInstancePathParentDataParentDataPropertyRootData: InstancePath): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_config_json")(data.asInstanceOf[js.Any], hasInstancePathParentDataParentDataPropertyRootData.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def configJson(data: Any, param1: InstancePath): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_config_json")(data.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def streamConfigJson(data: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_streamConfig_json")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def streamConfigJson(data: Any, hasInstancePathParentDataParentDataPropertyRootData: InstancePath): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_streamConfig_json")(data.asInstanceOf[js.Any], hasInstancePathParentDataParentDataPropertyRootData.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def streamConfigJson(data: Any, param1: InstancePath): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_streamConfig_json")(data.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

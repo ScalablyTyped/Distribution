@@ -14,7 +14,7 @@ object distDisplayObjectsEllipseMod {
   @JSImport("@antv/g-lite/dist/display-objects/Ellipse", "Ellipse")
   @js.native
   open class Ellipse () extends DisplayObject[EllipseStyleProps, ParsedEllipseStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[EllipseStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[EllipseStyleProps]) = this()
   }
   
   trait EllipseStyleProps

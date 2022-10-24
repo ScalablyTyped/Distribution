@@ -7,19 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `0` extends StObject {
   
-  var label: js.UndefOr[ReactNode] = js.undefined
+  def render(): ReactNode
 }
 object `0` {
   
-  inline def apply(): `0` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(render: () => ReactNode): `0` = {
+    val __obj = js.Dynamic.literal(render = js.Any.fromFunction0(render))
     __obj.asInstanceOf[`0`]
   }
   
   extension [Self <: `0`](x: Self) {
     
-    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setRender(value: () => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
   }
 }

@@ -134,18 +134,18 @@ object buildCommandsElementMod {
     def addValue: js.ThisFunction2[
         /* this */ Element, 
         /* value */ Value | js.Array[Value], 
-        /* hasTranslateToUnicode */ js.UndefOr[CommandOptions], 
+        /* param2 */ js.UndefOr[CommandOptions], 
         js.Promise[Unit]
       ] = js.native
     inline def addValue(value: js.Array[Value]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def addValue(value: js.Array[Value], hasTranslateToUnicode: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addValue")(value.asInstanceOf[js.Any], hasTranslateToUnicode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def addValue(value: js.Array[Value], param2: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addValue")(value.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def addValue(value: Value): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def addValue(value: Value, hasTranslateToUnicode: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addValue")(value.asInstanceOf[js.Any], hasTranslateToUnicode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def addValue(value: Value, param2: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addValue")(value.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def addValue_=(
       x: js.ThisFunction2[
           /* this */ Element, 
           /* value */ Value | js.Array[Value], 
-          /* hasTranslateToUnicode */ js.UndefOr[CommandOptions], 
+          /* param2 */ js.UndefOr[CommandOptions], 
           js.Promise[Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addValue")(x.asInstanceOf[js.Any])
@@ -206,18 +206,18 @@ object buildCommandsElementMod {
     def dragAndDrop: js.ThisFunction2[
         /* this */ Element, 
         /* target */ Element | ElementCoordinates, 
-        /* hasDuration */ js.UndefOr[DragAndDropOptions], 
+        /* param2 */ js.UndefOr[DragAndDropOptions], 
         js.Promise[Unit]
       ] = js.native
     inline def dragAndDrop(target: Element): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dragAndDrop")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def dragAndDrop(target: Element, hasDuration: DragAndDropOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("dragAndDrop")(target.asInstanceOf[js.Any], hasDuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def dragAndDrop(target: Element, param2: DragAndDropOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("dragAndDrop")(target.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def dragAndDrop(target: ElementCoordinates): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("dragAndDrop")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def dragAndDrop(target: ElementCoordinates, hasDuration: DragAndDropOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("dragAndDrop")(target.asInstanceOf[js.Any], hasDuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def dragAndDrop(target: ElementCoordinates, param2: DragAndDropOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("dragAndDrop")(target.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def dragAndDrop_=(
       x: js.ThisFunction2[
           /* this */ Element, 
           /* target */ Element | ElementCoordinates, 
-          /* hasDuration */ js.UndefOr[DragAndDropOptions], 
+          /* param2 */ js.UndefOr[DragAndDropOptions], 
           js.Promise[Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragAndDrop")(x.asInstanceOf[js.Any])
@@ -444,22 +444,12 @@ object buildCommandsElementMod {
     inline def isSelected_Fdefault_=(x: js.ThisFunction0[/* this */ Element, js.Promise[Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSelected")(x.asInstanceOf[js.Any])
     
     inline def moveTo(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveTo")().asInstanceOf[js.Promise[Unit]]
-    inline def moveTo(hasXOffsetYOffset: MoveToOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveTo")(hasXOffsetYOffset.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def moveTo(param1: MoveToOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveTo")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     @JSImport("webdriverio/build/commands/element", "default.moveTo")
     @js.native
-    def moveTo_Fdefault: js.ThisFunction1[
-        /* this */ Element, 
-        /* hasXOffsetYOffset */ js.UndefOr[MoveToOptions], 
-        js.Promise[Unit]
-      ] = js.native
+    def moveTo_Fdefault: js.ThisFunction1[/* this */ Element, /* param1 */ js.UndefOr[MoveToOptions], js.Promise[Unit]] = js.native
     
-    inline def moveTo_Fdefault_=(
-      x: js.ThisFunction1[
-          /* this */ Element, 
-          /* hasXOffsetYOffset */ js.UndefOr[MoveToOptions], 
-          js.Promise[Unit]
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moveTo")(x.asInstanceOf[js.Any])
+    inline def moveTo_Fdefault_=(x: js.ThisFunction1[/* this */ Element, /* param1 */ js.UndefOr[MoveToOptions], js.Promise[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moveTo")(x.asInstanceOf[js.Any])
     
     inline def nextElement(): ChainablePromiseElement[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextElement")().asInstanceOf[ChainablePromiseElement[Element]]
     @JSImport("webdriverio/build/commands/element", "default.nextElement")
@@ -487,29 +477,29 @@ object buildCommandsElementMod {
     def react: js.ThisFunction2[
         /* this */ Element, 
         /* selector */ String, 
-        /* hasPropsState */ js.UndefOr[ReactSelectorOptions], 
+        /* param2 */ js.UndefOr[ReactSelectorOptions], 
         js.Promise[Element]
       ] = js.native
     
     inline def react(selector: String): js.Promise[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("react$")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Element]]
-    inline def react(selector: String, hasPropsState: ReactSelectorOptions): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$")(selector.asInstanceOf[js.Any], hasPropsState.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
+    inline def react(selector: String, param2: ReactSelectorOptions): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$")(selector.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
     
     @JSImport("webdriverio/build/commands/element", "default.react$$")
     @js.native
     def react$: js.ThisFunction2[
         /* this */ Element, 
         /* selector */ String, 
-        /* hasPropsState */ js.UndefOr[ReactSelectorOptions], 
+        /* param2 */ js.UndefOr[ReactSelectorOptions], 
         js.Promise[ElementArray]
       ] = js.native
     
     inline def react$(selector: String): js.Promise[ElementArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("react$$")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ElementArray]]
-    inline def react$(selector: String, hasPropsState: ReactSelectorOptions): js.Promise[ElementArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$$")(selector.asInstanceOf[js.Any], hasPropsState.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ElementArray]]
+    inline def react$(selector: String, param2: ReactSelectorOptions): js.Promise[ElementArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("react$$")(selector.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ElementArray]]
     inline def react$_=(
       x: js.ThisFunction2[
           /* this */ Element, 
           /* selector */ String, 
-          /* hasPropsState */ js.UndefOr[ReactSelectorOptions], 
+          /* param2 */ js.UndefOr[ReactSelectorOptions], 
           js.Promise[ElementArray]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("react$$")(x.asInstanceOf[js.Any])
@@ -518,7 +508,7 @@ object buildCommandsElementMod {
       x: js.ThisFunction2[
           /* this */ Element, 
           /* selector */ String, 
-          /* hasPropsState */ js.UndefOr[ReactSelectorOptions], 
+          /* param2 */ js.UndefOr[ReactSelectorOptions], 
           js.Promise[Element]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("react$")(x.asInstanceOf[js.Any])
@@ -585,18 +575,18 @@ object buildCommandsElementMod {
     def setValue: js.ThisFunction2[
         /* this */ Element, 
         /* value */ Value | js.Array[Value], 
-        /* hasTranslateToUnicode */ js.UndefOr[CommandOptions], 
+        /* param2 */ js.UndefOr[CommandOptions], 
         js.Promise[Unit]
       ] = js.native
     inline def setValue(value: js.Array[Value]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def setValue(value: js.Array[Value], hasTranslateToUnicode: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(value.asInstanceOf[js.Any], hasTranslateToUnicode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def setValue(value: js.Array[Value], param2: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(value.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def setValue(value: Value): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def setValue(value: Value, hasTranslateToUnicode: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(value.asInstanceOf[js.Any], hasTranslateToUnicode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def setValue(value: Value, param2: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(value.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def setValue_=(
       x: js.ThisFunction2[
           /* this */ Element, 
           /* value */ Value | js.Array[Value], 
-          /* hasTranslateToUnicode */ js.UndefOr[CommandOptions], 
+          /* param2 */ js.UndefOr[CommandOptions], 
           js.Promise[Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setValue")(x.asInstanceOf[js.Any])
@@ -623,73 +613,73 @@ object buildCommandsElementMod {
     inline def touchAction_=(x: js.ThisFunction1[/* this */ Element, /* actions */ TouchActions, js.Promise[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("touchAction")(x.asInstanceOf[js.Any])
     
     inline def waitForClickable(): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForClickable")().asInstanceOf[js.Promise[`true` | Unit]]
-    inline def waitForClickable(hasTimeoutIntervalReverseTimeoutMsg: WaitForOptions): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForClickable")(hasTimeoutIntervalReverseTimeoutMsg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
+    inline def waitForClickable(param1: WaitForOptions): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForClickable")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
     @JSImport("webdriverio/build/commands/element", "default.waitForClickable")
     @js.native
     def waitForClickable_Fdefault: js.ThisFunction1[
         /* this */ Element, 
-        /* hasTimeoutIntervalReverseTimeoutMsg */ js.UndefOr[WaitForOptions], 
+        /* param1 */ js.UndefOr[WaitForOptions], 
         js.Promise[`true` | Unit]
       ] = js.native
     
     inline def waitForClickable_Fdefault_=(
       x: js.ThisFunction1[
           /* this */ Element, 
-          /* hasTimeoutIntervalReverseTimeoutMsg */ js.UndefOr[WaitForOptions], 
+          /* param1 */ js.UndefOr[WaitForOptions], 
           js.Promise[`true` | Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForClickable")(x.asInstanceOf[js.Any])
     
     inline def waitForDisplayed(): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDisplayed")().asInstanceOf[js.Promise[`true` | Unit]]
-    inline def waitForDisplayed(hasTimeoutIntervalReverseTimeoutMsg: WaitForOptions): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDisplayed")(hasTimeoutIntervalReverseTimeoutMsg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
+    inline def waitForDisplayed(param1: WaitForOptions): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDisplayed")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
     @JSImport("webdriverio/build/commands/element", "default.waitForDisplayed")
     @js.native
     def waitForDisplayed_Fdefault: js.ThisFunction1[
         /* this */ Element, 
-        /* hasTimeoutIntervalReverseTimeoutMsg */ js.UndefOr[WaitForOptions], 
+        /* param1 */ js.UndefOr[WaitForOptions], 
         js.Promise[`true` | Unit]
       ] = js.native
     
     inline def waitForDisplayed_Fdefault_=(
       x: js.ThisFunction1[
           /* this */ Element, 
-          /* hasTimeoutIntervalReverseTimeoutMsg */ js.UndefOr[WaitForOptions], 
+          /* param1 */ js.UndefOr[WaitForOptions], 
           js.Promise[`true` | Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForDisplayed")(x.asInstanceOf[js.Any])
     
     inline def waitForEnabled(): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForEnabled")().asInstanceOf[js.Promise[`true` | Unit]]
-    inline def waitForEnabled(hasTimeoutIntervalReverseTimeoutMsg: WaitForOptions): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForEnabled")(hasTimeoutIntervalReverseTimeoutMsg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
+    inline def waitForEnabled(param1: WaitForOptions): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForEnabled")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
     @JSImport("webdriverio/build/commands/element", "default.waitForEnabled")
     @js.native
     def waitForEnabled_Fdefault: js.ThisFunction1[
         /* this */ Element, 
-        /* hasTimeoutIntervalReverseTimeoutMsg */ js.UndefOr[WaitForOptions], 
+        /* param1 */ js.UndefOr[WaitForOptions], 
         js.Promise[`true` | Unit]
       ] = js.native
     
     inline def waitForEnabled_Fdefault_=(
       x: js.ThisFunction1[
           /* this */ Element, 
-          /* hasTimeoutIntervalReverseTimeoutMsg */ js.UndefOr[WaitForOptions], 
+          /* param1 */ js.UndefOr[WaitForOptions], 
           js.Promise[`true` | Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForEnabled")(x.asInstanceOf[js.Any])
     
     inline def waitForExist(): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForExist")().asInstanceOf[js.Promise[`true` | Unit]]
-    inline def waitForExist(hasTimeoutIntervalReverseTimeoutMsg: WaitForOptions): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForExist")(hasTimeoutIntervalReverseTimeoutMsg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
+    inline def waitForExist(param1: WaitForOptions): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForExist")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
     @JSImport("webdriverio/build/commands/element", "default.waitForExist")
     @js.native
     def waitForExist_Fdefault: js.ThisFunction1[
         /* this */ Element, 
-        /* hasTimeoutIntervalReverseTimeoutMsg */ js.UndefOr[WaitForOptions], 
+        /* param1 */ js.UndefOr[WaitForOptions], 
         js.Promise[`true` | Unit]
       ] = js.native
     
     inline def waitForExist_Fdefault_=(
       x: js.ThisFunction1[
           /* this */ Element, 
-          /* hasTimeoutIntervalReverseTimeoutMsg */ js.UndefOr[WaitForOptions], 
+          /* param1 */ js.UndefOr[WaitForOptions], 
           js.Promise[`true` | Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForExist")(x.asInstanceOf[js.Any])
@@ -699,19 +689,16 @@ object buildCommandsElementMod {
     def waitUntil: js.ThisFunction2[
         /* this */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any) | Element, 
         /* condition */ js.Function0[Boolean | js.Promise[Boolean]], 
-        /* hasTimeoutIntervalTimeoutMsg */ js.UndefOr[PartialWaitUntilOptions], 
+        /* param2 */ js.UndefOr[PartialWaitUntilOptions], 
         js.Promise[`true` | Unit]
       ] = js.native
     inline def waitUntil(condition: js.Function0[Boolean | js.Promise[Boolean]]): js.Promise[`true` | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntil")(condition.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true` | Unit]]
-    inline def waitUntil(
-      condition: js.Function0[Boolean | js.Promise[Boolean]],
-      hasTimeoutIntervalTimeoutMsg: PartialWaitUntilOptions
-    ): js.Promise[`true` | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntil")(condition.asInstanceOf[js.Any], hasTimeoutIntervalTimeoutMsg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`true` | Unit]]
+    inline def waitUntil(condition: js.Function0[Boolean | js.Promise[Boolean]], param2: PartialWaitUntilOptions): js.Promise[`true` | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntil")(condition.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`true` | Unit]]
     inline def waitUntil_=(
       x: js.ThisFunction2[
           /* this */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any) | Element, 
           /* condition */ js.Function0[Boolean | js.Promise[Boolean]], 
-          /* hasTimeoutIntervalTimeoutMsg */ js.UndefOr[PartialWaitUntilOptions], 
+          /* param2 */ js.UndefOr[PartialWaitUntilOptions], 
           js.Promise[`true` | Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitUntil")(x.asInstanceOf[js.Any])

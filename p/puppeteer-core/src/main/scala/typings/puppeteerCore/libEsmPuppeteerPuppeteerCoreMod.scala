@@ -30,11 +30,11 @@ object libEsmPuppeteerPuppeteerCoreMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/puppeteer-core", "BrowserFetcher")
   @js.native
-  /**
-    * Constructs a browser fetcher for the given options.
-    */
-  open class BrowserFetcher ()
+  open class BrowserFetcher protected ()
     extends typings.puppeteerCore.libEsmPuppeteerNodeBrowserFetcherMod.BrowserFetcher {
+    /**
+      * Constructs a browser fetcher for the given options.
+      */
     def this(options: BrowserFetcherOptions) = this()
   }
   

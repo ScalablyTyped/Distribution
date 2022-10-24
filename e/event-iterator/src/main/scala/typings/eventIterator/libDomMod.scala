@@ -20,7 +20,7 @@ object libDomMod {
   open class default[T] protected ()
     extends typings.eventIterator.libEventIteratorMod.EventIterator[T] {
     def this(listen: ListenHandler[T]) = this()
-    def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
+    def this(listen: ListenHandler[T], param1: PartialEventIteratorOptio) = this()
   }
   
   @JSImport("event-iterator/lib/dom", "EventIterator")
@@ -28,7 +28,7 @@ object libDomMod {
   open class EventIterator[T] protected ()
     extends typings.eventIterator.libEventIteratorMod.EventIterator[T] {
     def this(listen: ListenHandler[T]) = this()
-    def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
+    def this(listen: ListenHandler[T], param1: PartialEventIteratorOptio) = this()
   }
   
   inline def subscribe(event: String): typings.eventIterator.libEventIteratorMod.EventIterator[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any]).asInstanceOf[typings.eventIterator.libEventIteratorMod.EventIterator[Event]]

@@ -76,41 +76,6 @@ object AdminReseller {
     __obj.asInstanceOf[AdminReseller]
   }
   
-  extension [Self <: AdminReseller](x: Self) {
-    
-    inline def setCustomers(value: CustomersCollection): Self = StObject.set(x, "Customers", value.asInstanceOf[js.Any])
-    
-    inline def setCustomersUndefined: Self = StObject.set(x, "Customers", js.undefined)
-    
-    inline def setNewAddress(value: () => Address): Self = StObject.set(x, "newAddress", js.Any.fromFunction0(value))
-    
-    inline def setNewChangePlanRequest(value: () => ChangePlanRequest): Self = StObject.set(x, "newChangePlanRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCustomer(value: () => Customer): Self = StObject.set(x, "newCustomer", js.Any.fromFunction0(value))
-    
-    inline def setNewRenewalSettings(value: () => RenewalSettings): Self = StObject.set(x, "newRenewalSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewSeats(value: () => Seats): Self = StObject.set(x, "newSeats", js.Any.fromFunction0(value))
-    
-    inline def setNewSubscription(value: () => Subscription): Self = StObject.set(x, "newSubscription", js.Any.fromFunction0(value))
-    
-    inline def setNewSubscriptionPlan(value: () => SubscriptionPlan): Self = StObject.set(x, "newSubscriptionPlan", js.Any.fromFunction0(value))
-    
-    inline def setNewSubscriptionPlanCommitmentInterval(value: () => SubscriptionPlanCommitmentInterval): Self = StObject.set(x, "newSubscriptionPlanCommitmentInterval", js.Any.fromFunction0(value))
-    
-    inline def setNewSubscriptionTransferInfo(value: () => SubscriptionTransferInfo): Self = StObject.set(x, "newSubscriptionTransferInfo", js.Any.fromFunction0(value))
-    
-    inline def setNewSubscriptionTrialSettings(value: () => SubscriptionTrialSettings): Self = StObject.set(x, "newSubscriptionTrialSettings", js.Any.fromFunction0(value))
-    
-    inline def setResellernotify(value: ResellernotifyCollection): Self = StObject.set(x, "Resellernotify", value.asInstanceOf[js.Any])
-    
-    inline def setResellernotifyUndefined: Self = StObject.set(x, "Resellernotify", js.undefined)
-    
-    inline def setSubscriptions(value: SubscriptionsCollection): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
-    
-    inline def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
-  }
-  
   object Collection {
     
     @js.native
@@ -185,6 +150,41 @@ object AdminReseller {
       // Suspends an active subscription.
       def suspend(customerId: String, subscriptionId: String): Subscription = js.native
     }
+  }
+  
+  extension [Self <: AdminReseller](x: Self) {
+    
+    inline def setCustomers(value: CustomersCollection): Self = StObject.set(x, "Customers", value.asInstanceOf[js.Any])
+    
+    inline def setCustomersUndefined: Self = StObject.set(x, "Customers", js.undefined)
+    
+    inline def setNewAddress(value: () => Address): Self = StObject.set(x, "newAddress", js.Any.fromFunction0(value))
+    
+    inline def setNewChangePlanRequest(value: () => ChangePlanRequest): Self = StObject.set(x, "newChangePlanRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCustomer(value: () => Customer): Self = StObject.set(x, "newCustomer", js.Any.fromFunction0(value))
+    
+    inline def setNewRenewalSettings(value: () => RenewalSettings): Self = StObject.set(x, "newRenewalSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewSeats(value: () => Seats): Self = StObject.set(x, "newSeats", js.Any.fromFunction0(value))
+    
+    inline def setNewSubscription(value: () => Subscription): Self = StObject.set(x, "newSubscription", js.Any.fromFunction0(value))
+    
+    inline def setNewSubscriptionPlan(value: () => SubscriptionPlan): Self = StObject.set(x, "newSubscriptionPlan", js.Any.fromFunction0(value))
+    
+    inline def setNewSubscriptionPlanCommitmentInterval(value: () => SubscriptionPlanCommitmentInterval): Self = StObject.set(x, "newSubscriptionPlanCommitmentInterval", js.Any.fromFunction0(value))
+    
+    inline def setNewSubscriptionTransferInfo(value: () => SubscriptionTransferInfo): Self = StObject.set(x, "newSubscriptionTransferInfo", js.Any.fromFunction0(value))
+    
+    inline def setNewSubscriptionTrialSettings(value: () => SubscriptionTrialSettings): Self = StObject.set(x, "newSubscriptionTrialSettings", js.Any.fromFunction0(value))
+    
+    inline def setResellernotify(value: ResellernotifyCollection): Self = StObject.set(x, "Resellernotify", value.asInstanceOf[js.Any])
+    
+    inline def setResellernotifyUndefined: Self = StObject.set(x, "Resellernotify", js.undefined)
+    
+    inline def setSubscriptions(value: SubscriptionsCollection): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
+    
+    inline def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
   }
   
   object Schema {

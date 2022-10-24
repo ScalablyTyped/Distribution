@@ -923,127 +923,6 @@ object Drive {
     def searchFolders(params: String): FolderIterator = js.native
   }
   
-  extension [Self <: Drive](x: Self) {
-    
-    inline def setAbout(value: AboutCollection): Self = StObject.set(x, "About", value.asInstanceOf[js.Any])
-    
-    inline def setAboutUndefined: Self = StObject.set(x, "About", js.undefined)
-    
-    inline def setApps(value: AppsCollection): Self = StObject.set(x, "Apps", value.asInstanceOf[js.Any])
-    
-    inline def setAppsUndefined: Self = StObject.set(x, "Apps", js.undefined)
-    
-    inline def setChanges(value: ChangesCollection): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
-    
-    inline def setChangesUndefined: Self = StObject.set(x, "Changes", js.undefined)
-    
-    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
-    
-    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
-    
-    inline def setChildren(value: ChildrenCollection): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
-    
-    inline def setChildrenUndefined: Self = StObject.set(x, "Children", js.undefined)
-    
-    inline def setComments(value: CommentsCollection): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
-    
-    inline def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
-    
-    inline def setDrives(value: DrivesCollection): Self = StObject.set(x, "Drives", value.asInstanceOf[js.Any])
-    
-    inline def setDrivesUndefined: Self = StObject.set(x, "Drives", js.undefined)
-    
-    inline def setFiles(value: FilesCollection): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
-    
-    inline def setFilesUndefined: Self = StObject.set(x, "Files", js.undefined)
-    
-    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
-    
-    inline def setNewChildReference(value: () => ChildReference): Self = StObject.set(x, "newChildReference", js.Any.fromFunction0(value))
-    
-    inline def setNewComment(value: () => Comment): Self = StObject.set(x, "newComment", js.Any.fromFunction0(value))
-    
-    inline def setNewCommentContext(value: () => CommentContext): Self = StObject.set(x, "newCommentContext", js.Any.fromFunction0(value))
-    
-    inline def setNewCommentReply(value: () => CommentReply): Self = StObject.set(x, "newCommentReply", js.Any.fromFunction0(value))
-    
-    inline def setNewDrive(value: () => typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive): Self = StObject.set(x, "newDrive", js.Any.fromFunction0(value))
-    
-    inline def setNewDriveBackgroundImageFile(value: () => DriveBackgroundImageFile): Self = StObject.set(x, "newDriveBackgroundImageFile", js.Any.fromFunction0(value))
-    
-    inline def setNewDriveCapabilities(value: () => DriveCapabilities): Self = StObject.set(x, "newDriveCapabilities", js.Any.fromFunction0(value))
-    
-    inline def setNewDriveRestrictions(value: () => DriveRestrictions): Self = StObject.set(x, "newDriveRestrictions", js.Any.fromFunction0(value))
-    
-    inline def setNewFile(value: () => typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File): Self = StObject.set(x, "newFile", js.Any.fromFunction0(value))
-    
-    inline def setNewFileCapabilities(value: () => FileCapabilities): Self = StObject.set(x, "newFileCapabilities", js.Any.fromFunction0(value))
-    
-    inline def setNewFileImageMediaMetadata(value: () => FileImageMediaMetadata): Self = StObject.set(x, "newFileImageMediaMetadata", js.Any.fromFunction0(value))
-    
-    inline def setNewFileImageMediaMetadataLocation(value: () => FileImageMediaMetadataLocation): Self = StObject.set(x, "newFileImageMediaMetadataLocation", js.Any.fromFunction0(value))
-    
-    inline def setNewFileIndexableText(value: () => FileIndexableText): Self = StObject.set(x, "newFileIndexableText", js.Any.fromFunction0(value))
-    
-    inline def setNewFileLabels(value: () => FileLabels): Self = StObject.set(x, "newFileLabels", js.Any.fromFunction0(value))
-    
-    inline def setNewFileThumbnail(value: () => FileThumbnail): Self = StObject.set(x, "newFileThumbnail", js.Any.fromFunction0(value))
-    
-    inline def setNewFileVideoMediaMetadata(value: () => FileVideoMediaMetadata): Self = StObject.set(x, "newFileVideoMediaMetadata", js.Any.fromFunction0(value))
-    
-    inline def setNewParentReference(value: () => ParentReference): Self = StObject.set(x, "newParentReference", js.Any.fromFunction0(value))
-    
-    inline def setNewPermission(value: () => typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission): Self = StObject.set(x, "newPermission", js.Any.fromFunction0(value))
-    
-    inline def setNewPermissionPermissionDetails(value: () => PermissionPermissionDetails): Self = StObject.set(x, "newPermissionPermissionDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewPermissionTeamDrivePermissionDetails(value: () => PermissionTeamDrivePermissionDetails): Self = StObject.set(x, "newPermissionTeamDrivePermissionDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewProperty(value: () => Property): Self = StObject.set(x, "newProperty", js.Any.fromFunction0(value))
-    
-    inline def setNewRevision(value: () => Revision): Self = StObject.set(x, "newRevision", js.Any.fromFunction0(value))
-    
-    inline def setNewTeamDrive(value: () => TeamDrive): Self = StObject.set(x, "newTeamDrive", js.Any.fromFunction0(value))
-    
-    inline def setNewTeamDriveBackgroundImageFile(value: () => TeamDriveBackgroundImageFile): Self = StObject.set(x, "newTeamDriveBackgroundImageFile", js.Any.fromFunction0(value))
-    
-    inline def setNewTeamDriveCapabilities(value: () => TeamDriveCapabilities): Self = StObject.set(x, "newTeamDriveCapabilities", js.Any.fromFunction0(value))
-    
-    inline def setNewTeamDriveRestrictions(value: () => TeamDriveRestrictions): Self = StObject.set(x, "newTeamDriveRestrictions", js.Any.fromFunction0(value))
-    
-    inline def setNewUser(value: () => typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User): Self = StObject.set(x, "newUser", js.Any.fromFunction0(value))
-    
-    inline def setNewUserPicture(value: () => UserPicture): Self = StObject.set(x, "newUserPicture", js.Any.fromFunction0(value))
-    
-    inline def setParents(value: ParentsCollection): Self = StObject.set(x, "Parents", value.asInstanceOf[js.Any])
-    
-    inline def setParentsUndefined: Self = StObject.set(x, "Parents", js.undefined)
-    
-    inline def setPermissions(value: PermissionsCollection): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
-    
-    inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
-    
-    inline def setProperties(value: PropertiesCollection): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
-    
-    inline def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
-    
-    inline def setRealtime(value: RealtimeCollection): Self = StObject.set(x, "Realtime", value.asInstanceOf[js.Any])
-    
-    inline def setRealtimeUndefined: Self = StObject.set(x, "Realtime", js.undefined)
-    
-    inline def setReplies(value: RepliesCollection): Self = StObject.set(x, "Replies", value.asInstanceOf[js.Any])
-    
-    inline def setRepliesUndefined: Self = StObject.set(x, "Replies", js.undefined)
-    
-    inline def setRevisions(value: RevisionsCollection): Self = StObject.set(x, "Revisions", value.asInstanceOf[js.Any])
-    
-    inline def setRevisionsUndefined: Self = StObject.set(x, "Revisions", js.undefined)
-    
-    inline def setTeamdrives(value: TeamdrivesCollection): Self = StObject.set(x, "Teamdrives", value.asInstanceOf[js.Any])
-    
-    inline def setTeamdrivesUndefined: Self = StObject.set(x, "Teamdrives", js.undefined)
-  }
-  
   /**
     * A file in Google Drive. Files can be accessed or created from DriveApp.
     *
@@ -1379,6 +1258,127 @@ object Drive {
       
       inline def setNext(value: () => Folder): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
+  }
+  
+  extension [Self <: Drive](x: Self) {
+    
+    inline def setAbout(value: AboutCollection): Self = StObject.set(x, "About", value.asInstanceOf[js.Any])
+    
+    inline def setAboutUndefined: Self = StObject.set(x, "About", js.undefined)
+    
+    inline def setApps(value: AppsCollection): Self = StObject.set(x, "Apps", value.asInstanceOf[js.Any])
+    
+    inline def setAppsUndefined: Self = StObject.set(x, "Apps", js.undefined)
+    
+    inline def setChanges(value: ChangesCollection): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
+    
+    inline def setChangesUndefined: Self = StObject.set(x, "Changes", js.undefined)
+    
+    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    
+    inline def setChildren(value: ChildrenCollection): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "Children", js.undefined)
+    
+    inline def setComments(value: CommentsCollection): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
+    
+    inline def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
+    
+    inline def setDrives(value: DrivesCollection): Self = StObject.set(x, "Drives", value.asInstanceOf[js.Any])
+    
+    inline def setDrivesUndefined: Self = StObject.set(x, "Drives", js.undefined)
+    
+    inline def setFiles(value: FilesCollection): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "Files", js.undefined)
+    
+    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
+    
+    inline def setNewChildReference(value: () => ChildReference): Self = StObject.set(x, "newChildReference", js.Any.fromFunction0(value))
+    
+    inline def setNewComment(value: () => Comment): Self = StObject.set(x, "newComment", js.Any.fromFunction0(value))
+    
+    inline def setNewCommentContext(value: () => CommentContext): Self = StObject.set(x, "newCommentContext", js.Any.fromFunction0(value))
+    
+    inline def setNewCommentReply(value: () => CommentReply): Self = StObject.set(x, "newCommentReply", js.Any.fromFunction0(value))
+    
+    inline def setNewDrive(value: () => typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive): Self = StObject.set(x, "newDrive", js.Any.fromFunction0(value))
+    
+    inline def setNewDriveBackgroundImageFile(value: () => DriveBackgroundImageFile): Self = StObject.set(x, "newDriveBackgroundImageFile", js.Any.fromFunction0(value))
+    
+    inline def setNewDriveCapabilities(value: () => DriveCapabilities): Self = StObject.set(x, "newDriveCapabilities", js.Any.fromFunction0(value))
+    
+    inline def setNewDriveRestrictions(value: () => DriveRestrictions): Self = StObject.set(x, "newDriveRestrictions", js.Any.fromFunction0(value))
+    
+    inline def setNewFile(value: () => typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File): Self = StObject.set(x, "newFile", js.Any.fromFunction0(value))
+    
+    inline def setNewFileCapabilities(value: () => FileCapabilities): Self = StObject.set(x, "newFileCapabilities", js.Any.fromFunction0(value))
+    
+    inline def setNewFileImageMediaMetadata(value: () => FileImageMediaMetadata): Self = StObject.set(x, "newFileImageMediaMetadata", js.Any.fromFunction0(value))
+    
+    inline def setNewFileImageMediaMetadataLocation(value: () => FileImageMediaMetadataLocation): Self = StObject.set(x, "newFileImageMediaMetadataLocation", js.Any.fromFunction0(value))
+    
+    inline def setNewFileIndexableText(value: () => FileIndexableText): Self = StObject.set(x, "newFileIndexableText", js.Any.fromFunction0(value))
+    
+    inline def setNewFileLabels(value: () => FileLabels): Self = StObject.set(x, "newFileLabels", js.Any.fromFunction0(value))
+    
+    inline def setNewFileThumbnail(value: () => FileThumbnail): Self = StObject.set(x, "newFileThumbnail", js.Any.fromFunction0(value))
+    
+    inline def setNewFileVideoMediaMetadata(value: () => FileVideoMediaMetadata): Self = StObject.set(x, "newFileVideoMediaMetadata", js.Any.fromFunction0(value))
+    
+    inline def setNewParentReference(value: () => ParentReference): Self = StObject.set(x, "newParentReference", js.Any.fromFunction0(value))
+    
+    inline def setNewPermission(value: () => typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission): Self = StObject.set(x, "newPermission", js.Any.fromFunction0(value))
+    
+    inline def setNewPermissionPermissionDetails(value: () => PermissionPermissionDetails): Self = StObject.set(x, "newPermissionPermissionDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewPermissionTeamDrivePermissionDetails(value: () => PermissionTeamDrivePermissionDetails): Self = StObject.set(x, "newPermissionTeamDrivePermissionDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewProperty(value: () => Property): Self = StObject.set(x, "newProperty", js.Any.fromFunction0(value))
+    
+    inline def setNewRevision(value: () => Revision): Self = StObject.set(x, "newRevision", js.Any.fromFunction0(value))
+    
+    inline def setNewTeamDrive(value: () => TeamDrive): Self = StObject.set(x, "newTeamDrive", js.Any.fromFunction0(value))
+    
+    inline def setNewTeamDriveBackgroundImageFile(value: () => TeamDriveBackgroundImageFile): Self = StObject.set(x, "newTeamDriveBackgroundImageFile", js.Any.fromFunction0(value))
+    
+    inline def setNewTeamDriveCapabilities(value: () => TeamDriveCapabilities): Self = StObject.set(x, "newTeamDriveCapabilities", js.Any.fromFunction0(value))
+    
+    inline def setNewTeamDriveRestrictions(value: () => TeamDriveRestrictions): Self = StObject.set(x, "newTeamDriveRestrictions", js.Any.fromFunction0(value))
+    
+    inline def setNewUser(value: () => typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User): Self = StObject.set(x, "newUser", js.Any.fromFunction0(value))
+    
+    inline def setNewUserPicture(value: () => UserPicture): Self = StObject.set(x, "newUserPicture", js.Any.fromFunction0(value))
+    
+    inline def setParents(value: ParentsCollection): Self = StObject.set(x, "Parents", value.asInstanceOf[js.Any])
+    
+    inline def setParentsUndefined: Self = StObject.set(x, "Parents", js.undefined)
+    
+    inline def setPermissions(value: PermissionsCollection): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
+    
+    inline def setProperties(value: PropertiesCollection): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
+    
+    inline def setRealtime(value: RealtimeCollection): Self = StObject.set(x, "Realtime", value.asInstanceOf[js.Any])
+    
+    inline def setRealtimeUndefined: Self = StObject.set(x, "Realtime", js.undefined)
+    
+    inline def setReplies(value: RepliesCollection): Self = StObject.set(x, "Replies", value.asInstanceOf[js.Any])
+    
+    inline def setRepliesUndefined: Self = StObject.set(x, "Replies", js.undefined)
+    
+    inline def setRevisions(value: RevisionsCollection): Self = StObject.set(x, "Revisions", value.asInstanceOf[js.Any])
+    
+    inline def setRevisionsUndefined: Self = StObject.set(x, "Revisions", js.undefined)
+    
+    inline def setTeamdrives(value: TeamdrivesCollection): Self = StObject.set(x, "Teamdrives", value.asInstanceOf[js.Any])
+    
+    inline def setTeamdrivesUndefined: Self = StObject.set(x, "Teamdrives", js.undefined)
   }
   
   object Schema {

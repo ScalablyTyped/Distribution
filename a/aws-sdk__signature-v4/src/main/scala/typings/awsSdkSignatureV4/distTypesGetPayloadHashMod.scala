@@ -12,5 +12,5 @@ object distTypesGetPayloadHashMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getPayloadHash(hasHeadersBody: HttpRequest, hashConstructor: HashConstructor): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayloadHash")(hasHeadersBody.asInstanceOf[js.Any], hashConstructor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getPayloadHash(param0: HttpRequest, hashConstructor: HashConstructor): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayloadHash")(param0.asInstanceOf[js.Any], hashConstructor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

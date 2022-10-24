@@ -12,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def notarize(hasAppPathOtherOptions: NotarizeOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("notarize")(hasAppPathOtherOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def notarize(param0: NotarizeOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("notarize")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def validateAuthorizationArgs(opts: LegacyNotarizeCredentials): LegacyNotarizeCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("validateAuthorizationArgs")(opts.asInstanceOf[js.Any]).asInstanceOf[LegacyNotarizeCredentials]
 }

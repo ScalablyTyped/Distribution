@@ -27,7 +27,7 @@ object libEnvironmentMod {
   open class Environment protected ()
     extends StObject
        with IonicEnvironment {
-    def this(hasClientConfigFlagsGetInfoLogCtxPromptSessionShell: EnvironmentDeps) = this()
+    def this(param0: EnvironmentDeps) = this()
     
     /* CompleteClass */
     override val client: IClient = js.native

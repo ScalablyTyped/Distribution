@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "timed-cache"
-version := "2.0-dt-20220930Z-13b2e4"
-scalaVersion := "3.1.2"
+version := "2.0-dt-20220930Z-234db1"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

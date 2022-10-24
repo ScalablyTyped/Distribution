@@ -26,7 +26,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def endpointMiddleware[T /* <: EndpointParameters */](hasConfigInstructions: Config[T]): SerializeMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("endpointMiddleware")(hasConfigInstructions.asInstanceOf[js.Any]).asInstanceOf[SerializeMiddleware[Any, Any]]
+  inline def endpointMiddleware[T /* <: EndpointParameters */](param0: Config[T]): SerializeMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("endpointMiddleware")(param0.asInstanceOf[js.Any]).asInstanceOf[SerializeMiddleware[Any, Any]]
   
   @JSImport("@aws-sdk/middleware-endpoint", "endpointMiddlewareOptions")
   @js.native

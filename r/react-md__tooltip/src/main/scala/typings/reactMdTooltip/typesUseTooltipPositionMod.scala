@@ -12,7 +12,7 @@ object typesUseTooltipPositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useTooltipPosition(hasDeterminedPositionDefaultPositionThreshold: TooltipPositionHookOptions): TooltipPositionHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipPosition")(hasDeterminedPositionDefaultPositionThreshold.asInstanceOf[js.Any]).asInstanceOf[TooltipPositionHookReturnValue]
+  inline def useTooltipPosition(param0: TooltipPositionHookOptions): TooltipPositionHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[TooltipPositionHookReturnValue]
   
   trait TooltipPositionHookOptions extends StObject {
     

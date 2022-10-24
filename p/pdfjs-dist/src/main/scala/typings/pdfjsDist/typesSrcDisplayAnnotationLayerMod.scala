@@ -28,7 +28,7 @@ object typesSrcDisplayAnnotationLayerMod {
       * @param {HTMLDivElement} div
       * @param {PageViewport} viewport
       */
-    inline def `__Numbersign26@NumbersignsetDimensions`(div: HTMLDivElement, hasWidthHeightRotation: PageViewport): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#26@#setDimensions")(div.asInstanceOf[js.Any], hasWidthHeightRotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def `__Numbersign26@NumbersignsetDimensions`(div: HTMLDivElement, param1: PageViewport): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#26@#setDimensions")(div.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Render a new annotation layer with all annotation elements.

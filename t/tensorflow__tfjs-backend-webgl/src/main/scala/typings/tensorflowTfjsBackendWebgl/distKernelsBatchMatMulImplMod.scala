@@ -17,9 +17,7 @@ object distKernelsBatchMatMulImplMod {
   @js.native
   val MATMUL_SHARED_DIM_THRESHOLD: /* 1000 */ Double = js.native
   
-  inline def batchMatMulImpl(
-    hasABTransposeATransposeBBackendBiasPreluActivationWeightsLeakyreluAlphaActivation: BatchMatMulConfig
-  ): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchMatMulImpl")(hasABTransposeATransposeBBackendBiasPreluActivationWeightsLeakyreluAlphaActivation.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def batchMatMulImpl(param0: BatchMatMulConfig): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchMatMulImpl")(param0.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   trait BatchMatMulConfig extends StObject {
     

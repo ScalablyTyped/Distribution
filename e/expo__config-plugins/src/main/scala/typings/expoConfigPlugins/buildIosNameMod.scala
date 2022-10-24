@@ -15,10 +15,10 @@ object buildIosNameMod {
   
   inline def getName(config: PickExpoConfigname): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def setDisplayName(configOrName: String, hasCFBundleDisplayNameInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(configOrName.asInstanceOf[js.Any], hasCFBundleDisplayNameInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
-  inline def setDisplayName(configOrName: PickExpoConfigname, hasCFBundleDisplayNameInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(configOrName.asInstanceOf[js.Any], hasCFBundleDisplayNameInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+  inline def setDisplayName(configOrName: String, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(configOrName.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+  inline def setDisplayName(configOrName: PickExpoConfigname, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(configOrName.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
   
-  inline def setName(config: PickExpoConfigname, hasCFBundleNameInfoPlist: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setName")(config.asInstanceOf[js.Any], hasCFBundleNameInfoPlist.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
+  inline def setName(config: PickExpoConfigname, param1: InfoPlist): InfoPlist = (^.asInstanceOf[js.Dynamic].applyDynamic("setName")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[InfoPlist]
   
   inline def setProductName(
     config: PickExpoConfigname,

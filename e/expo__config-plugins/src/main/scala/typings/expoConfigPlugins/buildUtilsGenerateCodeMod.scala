@@ -16,9 +16,9 @@ object buildUtilsGenerateCodeMod {
   
   inline def createHash(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(src.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def mergeContents(hasSrcNewSrcTagAnchorOffsetComment: Anchor): MergeResults = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeContents")(hasSrcNewSrcTagAnchorOffsetComment.asInstanceOf[js.Any]).asInstanceOf[MergeResults]
+  inline def mergeContents(param0: Anchor): MergeResults = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeContents")(param0.asInstanceOf[js.Any]).asInstanceOf[MergeResults]
   
-  inline def removeContents(hasSrcTag: Src): MergeResults = ^.asInstanceOf[js.Dynamic].applyDynamic("removeContents")(hasSrcTag.asInstanceOf[js.Any]).asInstanceOf[MergeResults]
+  inline def removeContents(param0: Src): MergeResults = ^.asInstanceOf[js.Dynamic].applyDynamic("removeContents")(param0.asInstanceOf[js.Any]).asInstanceOf[MergeResults]
   
   inline def removeGeneratedContents(src: String, tag: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("removeGeneratedContents")(src.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   

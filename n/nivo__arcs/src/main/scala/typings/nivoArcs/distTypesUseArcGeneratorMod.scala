@@ -13,5 +13,5 @@ object distTypesUseArcGeneratorMod {
   val ^ : js.Any = js.native
   
   inline def useArcGenerator(): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcGenerator")().asInstanceOf[ArcGenerator]
-  inline def useArcGenerator(hasCornerRadiusPadAngle: CornerRadius): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcGenerator")(hasCornerRadiusPadAngle.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator]
+  inline def useArcGenerator(param0: CornerRadius): ArcGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useArcGenerator")(param0.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator]
 }

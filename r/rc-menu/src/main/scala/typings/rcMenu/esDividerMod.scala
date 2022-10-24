@@ -12,7 +12,7 @@ object esDividerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasClassNameStyle: DividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: DividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Omit<rc-menu.rc-menu/es/interface.MenuDividerType, 'type'> */
   trait DividerProps extends StObject {

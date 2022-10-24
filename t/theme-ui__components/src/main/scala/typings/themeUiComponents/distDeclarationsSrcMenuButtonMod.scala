@@ -19,7 +19,7 @@ object distDeclarationsSrcMenuButtonMod {
   @js.native
   val MenuButton: ForwardRef[HTMLButtonElement, MenuButtonProps] = js.native
   
-  inline def MenuIcon(hasSize: Size): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(hasSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MenuIcon(param0: Size): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type MenuButtonProps = IconButtonProps
 }

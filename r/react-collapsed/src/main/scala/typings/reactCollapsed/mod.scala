@@ -13,7 +13,5 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(): UseCollapseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[UseCollapseOutput]
-  inline def default(
-    hasDurationEasingCollapseStylesExpandStylesOnExpandStartOnExpandEndOnCollapseStartOnCollapseEndConfigIsExpandedDefaultExpandedHasDisabledAnimationInitialConfig: UseCollapseInput
-  ): UseCollapseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDurationEasingCollapseStylesExpandStylesOnExpandStartOnExpandEndOnCollapseStartOnCollapseEndConfigIsExpandedDefaultExpandedHasDisabledAnimationInitialConfig.asInstanceOf[js.Any]).asInstanceOf[UseCollapseOutput]
+  inline def default(param0: UseCollapseInput): UseCollapseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[UseCollapseOutput]
 }

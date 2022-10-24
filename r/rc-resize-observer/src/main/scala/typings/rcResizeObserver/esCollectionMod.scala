@@ -15,7 +15,7 @@ object esCollectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Collection(hasChildrenOnBatchResize: CollectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Collection")(hasChildrenOnBatchResize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Collection(param0: CollectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Collection")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-resize-observer/es/Collection", "CollectionContext")
   @js.native

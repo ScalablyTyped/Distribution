@@ -38,8 +38,6 @@ object libTypescriptWebHammerTapGestureHandlerMod {
     
     def simulateCancelEvent(inputData: HammerInputExt): Unit = js.native
     
-    def updateGestureConfig(
-      hasShouldCancelWhenOutsideMaxDeltaXMaxDeltaYNumberOfTapsMinDurationMsMaxDelayMsMaxDurationMsMaxDistMinPointersMaxPointersProps: MaxDelayMs
-    ): PartialenabledbooleanminP = js.native
+    def updateGestureConfig(param0: MaxDelayMs): PartialenabledbooleanminP = js.native
   }
 }

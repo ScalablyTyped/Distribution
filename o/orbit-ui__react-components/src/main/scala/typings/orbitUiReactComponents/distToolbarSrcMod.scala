@@ -18,11 +18,9 @@ object distToolbarSrcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ClearToolbar(hasChildren: ClearToolbarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearToolbar")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ClearToolbar(param0: ClearToolbarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearToolbar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerToolbar(
-    hasAutoFocusOrientationAlignVerticalAlignGapWrapDisabledAsChildrenForwardedRefRest: InnerToolbarProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerToolbar")(hasAutoFocusOrientationAlignVerticalAlignGapWrapDisabledAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerToolbar(param0: InnerToolbarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerToolbar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/toolbar/src", "Toolbar")
   @js.native

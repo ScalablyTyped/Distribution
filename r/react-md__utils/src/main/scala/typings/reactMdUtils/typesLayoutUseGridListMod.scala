@@ -35,9 +35,7 @@ object typesLayoutUseGridListMod {
   val GridListSizeProvider: Provider[GridListSize] = js.native
   
   inline def useGridList[E /* <: HTMLElement */](): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")().asInstanceOf[UseGridListReturnValue[E]]
-  inline def useGridList[E /* <: HTMLElement */](
-    hasPropRefStyleClassNameCellMarginDefaultSizeMaxCellSizeDisableHeightDisableWidthContainerPadding: PropsWithRef[UseGridListOptions, E]
-  ): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")(hasPropRefStyleClassNameCellMarginDefaultSizeMaxCellSizeDisableHeightDisableWidthContainerPadding.asInstanceOf[js.Any]).asInstanceOf[UseGridListReturnValue[E]]
+  inline def useGridList[E /* <: HTMLElement */](param0: PropsWithRef[UseGridListOptions, E]): UseGridListReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridList")(param0.asInstanceOf[js.Any]).asInstanceOf[UseGridListReturnValue[E]]
   
   inline def useGridListSize(): GridListSize = ^.asInstanceOf[js.Dynamic].applyDynamic("useGridListSize")().asInstanceOf[GridListSize]
   

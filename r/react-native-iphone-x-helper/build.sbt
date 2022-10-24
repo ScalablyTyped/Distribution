@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-native-iphone-x-helper"
-version := "1.3.1-82e2de"
-scalaVersion := "3.1.2"
+version := "1.3.1-0c3d3c"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

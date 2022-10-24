@@ -54,6 +54,33 @@ object notification {
     __obj.asInstanceOf[notification]
   }
   
+  extension [Self <: notification](x: Self) {
+    
+    inline def setArea(value: area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setEditor(value: editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    
+    inline def setElement(value: element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    
+    inline def setType(value: `type`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUpdate(value: updateOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+  }
+  
   trait area extends StObject {
     
     def add(notification: notification): Unit
@@ -93,33 +120,6 @@ object notification {
       
       inline def setRemove(value: notification => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
-  }
-  
-  extension [Self <: notification](x: Self) {
-    
-    inline def setArea(value: area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
-    
-    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
-    
-    inline def setEditor(value: editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
-    
-    inline def setElement(value: element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-    
-    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
-    
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
-    
-    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    
-    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
-    
-    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
-    
-    inline def setType(value: `type`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setUpdate(value: updateOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
   
   trait options

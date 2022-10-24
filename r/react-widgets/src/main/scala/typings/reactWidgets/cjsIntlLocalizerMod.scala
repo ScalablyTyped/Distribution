@@ -20,7 +20,7 @@ object cjsIntlLocalizerMod {
   open class DateLocalizer ()
     extends StObject
        with IntlDateLocalizer {
-    def this(hasCultureFirstOfWeek: Culture) = this()
+    def this(param0: Culture) = this()
   }
   
   /**
@@ -31,7 +31,7 @@ object cjsIntlLocalizerMod {
   open class NumberLocalizer ()
     extends StObject
        with IntlNumberLocalizer {
-    def this(hasCulture: CultureUndefined) = this()
+    def this(param0: CultureUndefined) = this()
   }
   
   /**

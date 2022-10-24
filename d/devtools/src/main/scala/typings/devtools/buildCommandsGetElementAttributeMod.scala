@@ -11,5 +11,5 @@ object buildCommandsGetElementAttributeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasElementIdName: ElementIdName): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementIdName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
+  inline def default(param1: ElementIdName): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
 }

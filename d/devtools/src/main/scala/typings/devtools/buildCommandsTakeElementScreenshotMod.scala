@@ -12,5 +12,5 @@ object buildCommandsTakeElementScreenshotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasElementId: ElementId): js.Promise[String | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Buffer]]
+  inline def default(param1: ElementId): js.Promise[String | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Buffer]]
 }

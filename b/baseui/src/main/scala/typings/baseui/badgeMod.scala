@@ -24,9 +24,7 @@ object badgeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Badge(
-    hasChildrenContentColorShapePlacementHierarchyHorizontalOffsetVerticalOffsetHiddenOverrides: BadgeProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Badge")(hasChildrenContentColorShapePlacementHierarchyHorizontalOffsetVerticalOffsetHiddenOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Badge(param0: BadgeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Badge")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Readonly<{  accent :'accent',   primary :'primary',   positive :'positive',   negative :'negative',   warning :'warning'}> */
   object COLOR {
@@ -64,11 +62,9 @@ object badgeMod {
     val secondary: typings.baseui.baseuiStrings.secondary = js.native
   }
   
-  inline def HintDot(hasChildrenColorHorizontalOffsetPropVerticalOffsetPropHiddenOverrides: HintDotProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HintDot")(hasChildrenColorHorizontalOffsetPropVerticalOffsetPropHiddenOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HintDot(param0: HintDotProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HintDot")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def NotificationCircle(
-    hasChildrenContentPropColorPlacementHorizontalOffsetVerticalOffsetHiddenOverrides: NotificationCircleProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotificationCircle")(hasChildrenContentPropColorPlacementHorizontalOffsetVerticalOffsetHiddenOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NotificationCircle(param0: NotificationCircleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotificationCircle")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Readonly<{  topLeft :'topLeft',   topRight :'topRight',   bottomRight :'bottomRight',   bottomLeft :'bottomLeft',   topLeftEdge :'topLeftEdge',   topEdge :'topEdge',   topRightEdge :'topRightEdge',   bottomRightEdge :'bottomRightEdge',   bottomEdge :'bottomEdge',   bottomLeftEdge :'bottomLeftEdge',   leftTopEdge :'leftTopEdge',   rightTopEdge :'rightTopEdge',   rightBottomEdge :'rightBottomEdge',   leftBottomEdge :'leftBottomEdge'}> */
   object PLACEMENT {

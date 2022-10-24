@@ -13,7 +13,7 @@ object distTs3Dot9UtilsBabelMod {
   val ^ : js.Any = js.native
   
   inline def getStorybookBabelConfig(): TransformOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookBabelConfig")().asInstanceOf[TransformOptions]
-  inline def getStorybookBabelConfig(hasLocal: Local): TransformOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookBabelConfig")(hasLocal.asInstanceOf[js.Any]).asInstanceOf[TransformOptions]
+  inline def getStorybookBabelConfig(param0: Local): TransformOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookBabelConfig")(param0.asInstanceOf[js.Any]).asInstanceOf[TransformOptions]
   
   inline def getStorybookBabelDependencies(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookBabelDependencies")().asInstanceOf[js.Array[String]]
 }

@@ -62,9 +62,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Calendar(hasIsInteractiveRenderWrapperThemeProps: CalendarSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Calendar")(hasIsInteractiveRenderWrapperThemeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Calendar(param0: CalendarSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Calendar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def CalendarCanvas(hasIsInteractiveRenderWrapperThemeProps: CalendarCanvasProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CalendarCanvas")(hasIsInteractiveRenderWrapperThemeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CalendarCanvas(param0: CalendarCanvasProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CalendarCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def ResponsiveCalendar(props: OmitCalendarSvgPropsheigh): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveCalendar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -72,9 +72,9 @@ object mod {
   
   inline def ResponsiveTimeRange(props: OmitTimeRangeSvgPropsheig): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveTimeRange")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def TimeRange(hasIsInteractiveRenderWrapperThemeProps: TimeRangeSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeRange")(hasIsInteractiveRenderWrapperThemeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TimeRange(param0: TimeRangeSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeRange")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def bindDaysData(hasDaysDataColorScaleEmptyColor: PickRequiredCalendarSvgPr): js.Array[Color | Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindDaysData")(hasDaysDataColorScaleEmptyColor.asInstanceOf[js.Any]).asInstanceOf[js.Array[Color | Data]]
+  inline def bindDaysData(param0: PickRequiredCalendarSvgPr): js.Array[Color | Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindDaysData")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Color | Data]]
   
   object calendarCanvasDefaultProps {
     
@@ -154,7 +154,7 @@ object mod {
     
     @JSImport("@nivo/calendar", "calendarCanvasDefaultProps.tooltip")
     @js.native
-    val tooltip: MemoExoticComponent[js.Function1[/* hasValueDayColor */ CalendarTooltipProps, Element | Null]] = js.native
+    val tooltip: MemoExoticComponent[js.Function1[/* param0 */ CalendarTooltipProps, Element | Null]] = js.native
     
     inline def yearLegend(year: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("yearLegend")(year.asInstanceOf[js.Any]).asInstanceOf[Double]
     
@@ -249,7 +249,7 @@ object mod {
     
     @JSImport("@nivo/calendar", "calendarDefaultProps.tooltip")
     @js.native
-    val tooltip: MemoExoticComponent[js.Function1[/* hasValueDayColor */ CalendarTooltipProps, Element | Null]] = js.native
+    val tooltip: MemoExoticComponent[js.Function1[/* param0 */ CalendarTooltipProps, Element | Null]] = js.native
     
     inline def yearLegend(year: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("yearLegend")(year.asInstanceOf[js.Any]).asInstanceOf[Double]
     
@@ -266,11 +266,9 @@ object mod {
     val yearSpacing: `30` = js.native
   }
   
-  inline def computeCellPositions(
-    hasDirectionColorScaleEmptyColorFromToDataCellWidthCellHeightDaySpacingOffset: ComputeCellPositions_
-  ): js.Array[Coordinates | FirstWeek] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellPositions")(hasDirectionColorScaleEmptyColorFromToDataCellWidthCellHeightDaySpacingOffset.asInstanceOf[js.Any]).asInstanceOf[js.Array[Coordinates | FirstWeek]]
+  inline def computeCellPositions(param0: ComputeCellPositions_): js.Array[Coordinates | FirstWeek] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellPositions")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Coordinates | FirstWeek]]
   
-  inline def computeCellSize(hasDirectionDaySpacingOffsetSquareTotalDaysWidthHeight: ComputeCellSize_): CellHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellSize")(hasDirectionDaySpacingOffsetSquareTotalDaysWidthHeight.asInstanceOf[js.Any]).asInstanceOf[CellHeight]
+  inline def computeCellSize(param0: ComputeCellSize_): CellHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCellSize")(param0.asInstanceOf[js.Any]).asInstanceOf[CellHeight]
   
   inline def computeDomain_auto(
     data: js.Array[CalendarDatum],
@@ -278,19 +276,17 @@ object mod {
     maxSpec: NonNullable[js.UndefOr[auto | Double]]
   ): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDomain")(data.asInstanceOf[js.Any], minSpec.asInstanceOf[js.Any], maxSpec.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  inline def computeLayout(
-    hasWidthHeightFromToDirectionYearSpacingMonthSpacingDaySpacingAlign: PickRequiredCalendarSvgPrAlign
-  ): CalendarHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLayout")(hasWidthHeightFromToDirectionYearSpacingMonthSpacingDaySpacingAlign.asInstanceOf[js.Any]).asInstanceOf[CalendarHeight]
+  inline def computeLayout(param0: PickRequiredCalendarSvgPrAlign): CalendarHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[CalendarHeight]
   
-  inline def computeMonthLegendPositions[Month /* <: BboxBBox */](hasMonthsDirectionPositionOffset: PickRequiredCalendarSvgPrDirection & Months[Month]): js.Array[Month & Rotation] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMonthLegendPositions")(hasMonthsDirectionPositionOffset.asInstanceOf[js.Any]).asInstanceOf[js.Array[Month & Rotation]]
+  inline def computeMonthLegendPositions[Month /* <: BboxBBox */](param0: PickRequiredCalendarSvgPrDirection & Months[Month]): js.Array[Month & Rotation] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMonthLegendPositions")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Month & Rotation]]
   
-  inline def computeMonthLegends(hasDirectionDaySpacingDaysCellHeightCellWidth: ComputeMonths): Weeks = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMonthLegends")(hasDirectionDaySpacingDaysCellHeightCellWidth.asInstanceOf[js.Any]).asInstanceOf[Weeks]
+  inline def computeMonthLegends(param0: ComputeMonths): Weeks = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMonthLegends")(param0.asInstanceOf[js.Any]).asInstanceOf[Weeks]
   
-  inline def computeTotalDays(hasFromToData: ComputeTotalDays_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTotalDays")(hasFromToData.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def computeTotalDays(param0: ComputeTotalDays_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTotalDays")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def computeWeekdays(hasCellHeightCellWidthDirectionDaySpacingTicksArrayOfWeekdays: ComputeWeekdays_): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeWeekdays")(hasCellHeightCellWidthDirectionDaySpacingTicksArrayOfWeekdays.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+  inline def computeWeekdays(param0: ComputeWeekdays_): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeWeekdays")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
   
-  inline def computeYearLegendPositions(hasYearsDirectionPositionOffset: PickRequiredCalendarSvgPrOffset): js.Array[X] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeYearLegendPositions")(hasYearsDirectionPositionOffset.asInstanceOf[js.Any]).asInstanceOf[js.Array[X]]
+  inline def computeYearLegendPositions(param0: PickRequiredCalendarSvgPrOffset): js.Array[X] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeYearLegendPositions")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[X]]
   
   object timeRangeDefaultProps {
     
@@ -378,7 +374,7 @@ object mod {
     
     @JSImport("@nivo/calendar", "timeRangeDefaultProps.tooltip")
     @js.native
-    val tooltip: MemoExoticComponent[js.Function1[/* hasValueDayColor */ CalendarTooltipProps, Element | Null]] = js.native
+    val tooltip: MemoExoticComponent[js.Function1[/* param0 */ CalendarTooltipProps, Element | Null]] = js.native
     
     @JSImport("@nivo/calendar", "timeRangeDefaultProps.weekdayLegendOffset")
     @js.native
@@ -399,15 +395,13 @@ object mod {
     val yearSpacing: `30` = js.native
   }
   
-  inline def useCalendarLayout(
-    hasWidthHeightFromToDirectionYearSpacingMonthSpacingDaySpacingAlign: PickRequiredCalendarSvgPrAlign
-  ): CalendarHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useCalendarLayout")(hasWidthHeightFromToDirectionYearSpacingMonthSpacingDaySpacingAlign.asInstanceOf[js.Any]).asInstanceOf[CalendarHeight]
+  inline def useCalendarLayout(param0: PickRequiredCalendarSvgPrAlign): CalendarHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useCalendarLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[CalendarHeight]
   
-  inline def useColorScale(hasDataMinValueMaxValueColorsColorScale: PickRequiredCalendarSvgPrColorScale): ColorScale = ^.asInstanceOf[js.Dynamic].applyDynamic("useColorScale")(hasDataMinValueMaxValueColorsColorScale.asInstanceOf[js.Any]).asInstanceOf[ColorScale]
+  inline def useColorScale(param0: PickRequiredCalendarSvgPrColorScale): ColorScale = ^.asInstanceOf[js.Dynamic].applyDynamic("useColorScale")(param0.asInstanceOf[js.Any]).asInstanceOf[ColorScale]
   
-  inline def useDays(hasDaysDataColorScaleEmptyColor: PickRequiredCalendarSvgPrData): js.Array[Color | Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDays")(hasDaysDataColorScaleEmptyColor.asInstanceOf[js.Any]).asInstanceOf[js.Array[Color | Data]]
+  inline def useDays(param0: PickRequiredCalendarSvgPrData): js.Array[Color | Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDays")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Color | Data]]
   
-  inline def useMonthLegends[Month /* <: BboxBBox */](hasMonthsDirectionMonthLegendPositionMonthLegendOffset: Direction[Month]): js.Array[Month & Rotation] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMonthLegends")(hasMonthsDirectionMonthLegendPositionMonthLegendOffset.asInstanceOf[js.Any]).asInstanceOf[js.Array[Month & Rotation]]
+  inline def useMonthLegends[Month /* <: BboxBBox */](param0: Direction[Month]): js.Array[Month & Rotation] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMonthLegends")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Month & Rotation]]
   
-  inline def useYearLegends(hasYearsDirectionYearLegendPositionYearLegendOffset: YearLegendOffset): js.Array[X] = ^.asInstanceOf[js.Dynamic].applyDynamic("useYearLegends")(hasYearsDirectionYearLegendPositionYearLegendOffset.asInstanceOf[js.Any]).asInstanceOf[js.Array[X]]
+  inline def useYearLegends(param0: YearLegendOffset): js.Array[X] = ^.asInstanceOf[js.Dynamic].applyDynamic("useYearLegends")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[X]]
 }

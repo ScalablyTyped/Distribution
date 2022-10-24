@@ -29,8 +29,5 @@ object distTs3Dot9ClientPreviewConfigMod {
   @js.native
   val render: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgsStoryFn<ReactFramework> */ Any = js.native
   
-  inline def renderToDOM(
-    hasStoryContextUnboundStoryFnShowMainShowExceptionForceRemount: RenderContext[ReactFramework],
-    domElement: HTMLElement
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToDOM")(hasStoryContextUnboundStoryFnShowMainShowExceptionForceRemount.asInstanceOf[js.Any], domElement.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def renderToDOM(param0: RenderContext[ReactFramework], domElement: HTMLElement): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToDOM")(param0.asInstanceOf[js.Any], domElement.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

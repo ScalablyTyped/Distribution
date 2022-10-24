@@ -16,7 +16,7 @@ object distTypesCoreServicesUsersMod {
   @JSImport("gitlab/dist/types/core/services/Users", "Users")
   @js.native
   open class Users () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def activities(): js.Promise[GetResponse] = js.native
     def activities(options: Sudo): js.Promise[GetResponse] = js.native

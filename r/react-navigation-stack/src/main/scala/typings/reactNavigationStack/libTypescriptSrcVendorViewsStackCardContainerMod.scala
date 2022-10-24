@@ -30,12 +30,7 @@ object libTypescriptSrcVendorViewsStackCardContainerMod extends Shortcut {
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/CardContainer", JSImport.Default)
   @js.native
-  val default: MemoExoticComponent[
-    js.Function1[
-      /* hasActiveCardOverlayCardOverlayEnabledCardShadowEnabledCardStyleCardStyleInterpolatorClosingGestureFocusedGestureDirectionGestureEnabledGestureResponseDistanceGestureVelocityImpactGetPreviousSceneGetFocusedRouteModeHeaderModeHeaderShownHeaderStyleInterpolatorHasAbsoluteHeaderHeaderHeightOnHeaderHeightChangeIsParentHeaderShownIndexLayoutOnCloseRouteOnOpenRouteOnPageChangeCancelOnPageChangeConfirmOnPageChangeStartOnGestureCancelOnGestureEndOnGestureStartOnTransitionEndOnTransitionStartRenderHeaderRenderSceneSafeAreaInsetBottomSafeAreaInsetLeftSafeAreaInsetRightSafeAreaInsetTopSceneTransitionSpec */ Props, 
-      Element
-    ]
-  ] = js.native
+  val default: MemoExoticComponent[js.Function1[/* param0 */ Props, Element]] = js.native
   
   trait Props
     extends StObject
@@ -275,18 +270,8 @@ object libTypescriptSrcVendorViewsStackCardContainerMod extends Shortcut {
     }
   }
   
-  type _To = MemoExoticComponent[
-    js.Function1[
-      /* hasActiveCardOverlayCardOverlayEnabledCardShadowEnabledCardStyleCardStyleInterpolatorClosingGestureFocusedGestureDirectionGestureEnabledGestureResponseDistanceGestureVelocityImpactGetPreviousSceneGetFocusedRouteModeHeaderModeHeaderShownHeaderStyleInterpolatorHasAbsoluteHeaderHeaderHeightOnHeaderHeightChangeIsParentHeaderShownIndexLayoutOnCloseRouteOnOpenRouteOnPageChangeCancelOnPageChangeConfirmOnPageChangeStartOnGestureCancelOnGestureEndOnGestureStartOnTransitionEndOnTransitionStartRenderHeaderRenderSceneSafeAreaInsetBottomSafeAreaInsetLeftSafeAreaInsetRightSafeAreaInsetTopSceneTransitionSpec */ Props, 
-      Element
-    ]
-  ]
+  type _To = MemoExoticComponent[js.Function1[/* param0 */ Props, Element]]
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptSrcVendorViewsStackCardContainerMod.foo` */
-  override def _to: MemoExoticComponent[
-    js.Function1[
-      /* hasActiveCardOverlayCardOverlayEnabledCardShadowEnabledCardStyleCardStyleInterpolatorClosingGestureFocusedGestureDirectionGestureEnabledGestureResponseDistanceGestureVelocityImpactGetPreviousSceneGetFocusedRouteModeHeaderModeHeaderShownHeaderStyleInterpolatorHasAbsoluteHeaderHeaderHeightOnHeaderHeightChangeIsParentHeaderShownIndexLayoutOnCloseRouteOnOpenRouteOnPageChangeCancelOnPageChangeConfirmOnPageChangeStartOnGestureCancelOnGestureEndOnGestureStartOnTransitionEndOnTransitionStartRenderHeaderRenderSceneSafeAreaInsetBottomSafeAreaInsetLeftSafeAreaInsetRightSafeAreaInsetTopSceneTransitionSpec */ Props, 
-      Element
-    ]
-  ] = default
+  override def _to: MemoExoticComponent[js.Function1[/* param0 */ Props, Element]] = default
 }

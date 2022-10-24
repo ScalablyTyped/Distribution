@@ -12,7 +12,7 @@ object distLoaderDiscussMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabelColors: DiscussProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabelColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: DiscussProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   /* Inlined parent std.Omit<react-loader-spinner.react-loader-spinner/dist/type.BaseProps, 'color'> */
   trait DiscussProps extends StObject {

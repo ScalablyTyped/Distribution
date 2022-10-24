@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__cli
 
-Typings are for version 14.2.3
+Typings are for version 14.2.6
 
 ## Library description:
 CLI tool for Angular

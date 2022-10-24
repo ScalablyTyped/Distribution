@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "makerjs"
-version := "0.17.1-0c01fd"
-scalaVersion := "3.1.2"
+version := "0.17.1-d1c81b"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "danmarshall__jscad-typings" % "1.0.0-c6749b",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "opentype_dot_js" % "1.3-dt-20220812Z-c2ac4b",
-  "org.scalablytyped" %%% "pdfkit" % "v0.12.3-dt-20221016Z-4986b1",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "danmarshall__jscad-typings" % "1.0.0-2d8015",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "opentype_dot_js" % "1.3-dt-20220812Z-75cf62",
+  "org.scalablytyped" %%% "pdfkit" % "v0.12.3-dt-20221016Z-43ed8a",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

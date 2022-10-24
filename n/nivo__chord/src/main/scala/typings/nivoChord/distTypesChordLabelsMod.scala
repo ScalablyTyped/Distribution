@@ -12,7 +12,7 @@ object distTypesChordLabelsMod {
   
   @JSImport("@nivo/chord/dist/types/ChordLabels", "ChordLabels")
   @js.native
-  val ChordLabels: MemoExoticComponent[js.Function1[/* hasArcsRadiusRotationColor */ ChordLabelsProps, Element]] = js.native
+  val ChordLabels: MemoExoticComponent[js.Function1[/* param0 */ ChordLabelsProps, Element]] = js.native
   
   trait ChordLabelsProps extends StObject {
     

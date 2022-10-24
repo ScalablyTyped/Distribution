@@ -15,7 +15,7 @@ object srcMiddlewareHideMod {
   val ^ : js.Any = js.native
   
   inline def hide(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Middleware]
-  inline def hide(hasStrategyDetectOverflowOptions: PartialOptionsOptionsBoundary): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(hasStrategyDetectOverflowOptions.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def hide(param0: PartialOptionsOptionsBoundary): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(param0.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
   trait Options extends StObject {
     

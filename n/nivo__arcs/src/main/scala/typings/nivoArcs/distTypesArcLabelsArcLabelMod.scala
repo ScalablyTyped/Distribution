@@ -13,7 +13,7 @@ object distTypesArcLabelsArcLabelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ArcLabel[Datum /* <: DatumWithArcAndColor */](hasLabelStyle: ArcLabelProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLabel")(hasLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArcLabel[Datum /* <: DatumWithArcAndColor */](param0: ArcLabelProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArcLabel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ArcLabelProps[Datum /* <: DatumWithArcAndColor */] extends StObject {
     

@@ -252,25 +252,6 @@ object JQueryColorpickerStatic {
     }
   }
   
-  extension [Self <: JQueryColorpickerStatic](x: Self) {
-    
-    inline def setColor(value: Instantiable): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
-    
-    inline def setLimits(value: StringDictionary[js.Function1[/* color */ Any, Unit]]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
-    
-    inline def setParsers(value: StringDictionary[js.Function1[/* color */ Any, Any]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
-    
-    inline def setParts(value: StringDictionary[js.Function1[/* inst */ Any, Any]]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
-    
-    inline def setPartslists(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "partslists", value.asInstanceOf[js.Any])
-    
-    inline def setRegional(value: StringDictionary[String]): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
-    
-    inline def setSwatches(value: StringDictionary[StringDictionary[RGB]]): Self = StObject.set(x, "swatches", value.asInstanceOf[js.Any])
-    
-    inline def setWriters(value: StringDictionary[js.Function2[/* color */ Any, /* that */ Any, Any]]): Self = StObject.set(x, "writers", value.asInstanceOf[js.Any])
-  }
-  
   trait LAB extends StObject {
     
     var a: Double
@@ -294,6 +275,25 @@ object JQueryColorpickerStatic {
       
       inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     }
+  }
+  
+  extension [Self <: JQueryColorpickerStatic](x: Self) {
+    
+    inline def setColor(value: Instantiable): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    
+    inline def setLimits(value: StringDictionary[js.Function1[/* color */ Any, Unit]]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    
+    inline def setParsers(value: StringDictionary[js.Function1[/* color */ Any, Any]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+    
+    inline def setParts(value: StringDictionary[js.Function1[/* inst */ Any, Any]]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    
+    inline def setPartslists(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "partslists", value.asInstanceOf[js.Any])
+    
+    inline def setRegional(value: StringDictionary[String]): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setSwatches(value: StringDictionary[StringDictionary[RGB]]): Self = StObject.set(x, "swatches", value.asInstanceOf[js.Any])
+    
+    inline def setWriters(value: StringDictionary[js.Function2[/* color */ Any, /* that */ Any, Any]]): Self = StObject.set(x, "writers", value.asInstanceOf[js.Any])
   }
   
   trait RGB extends StObject {

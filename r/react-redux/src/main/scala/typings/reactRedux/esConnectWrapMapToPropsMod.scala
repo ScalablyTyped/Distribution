@@ -31,11 +31,11 @@ object esConnectWrapMapToPropsMod {
   
   inline def wrapMapToPropsFunc[P /* <: AnyProps */](mapToProps: MapToProps[AnyProps], methodName: String): js.Function2[
     /* dispatch */ Dispatch[AnyAction], 
-    /* hasDisplayName */ DisplayName, 
+    /* param1 */ DisplayName, 
     CallDependsOnOwnProps[P]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapMapToPropsFunc")(mapToProps.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
     /* dispatch */ Dispatch[AnyAction], 
-    /* hasDisplayName */ DisplayName, 
+    /* param1 */ DisplayName, 
     CallDependsOnOwnProps[P]
   ]]
   

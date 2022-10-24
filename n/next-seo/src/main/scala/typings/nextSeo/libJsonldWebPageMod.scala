@@ -11,7 +11,7 @@ object libJsonldWebPageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasKeyOverrideReviewedByRest: WebPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasKeyOverrideReviewedByRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: WebPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait WebPageJsonLdProps extends StObject {
     

@@ -22,7 +22,7 @@ object headingMod {
   @js.native
   val Heading: FC[HeadingProps & ComponentPropsWithoutRef[BlockComponentType[div]]] = js.native
   
-  inline def HeadingLevel(hasChildren: HeadingLevelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeadingLevel")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeadingLevel(param0: HeadingLevelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeadingLevel")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/heading", "LevelContext")
   @js.native

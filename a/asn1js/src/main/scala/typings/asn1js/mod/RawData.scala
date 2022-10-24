@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class RawData ()
   extends StObject
      with IBerConvertible {
-  def this(hasData: RawDataParams) = this()
+  def this(param0: RawDataParams) = this()
   
   /**
     * @deprecated Since v3.0.0

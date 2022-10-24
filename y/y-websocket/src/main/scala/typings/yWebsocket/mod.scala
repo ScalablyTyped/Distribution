@@ -34,12 +34,7 @@ object mod {
       * @param {boolean} [opts.disableBc] Disable cross-tab BroadcastChannel communication
       */
     def this(serverUrl: String, roomname: String, doc: Doc) = this()
-    def this(
-      serverUrl: String,
-      roomname: String,
-      doc: Doc,
-      hasConnectAwarenessParamsWebSocketPolyfillResyncIntervalMaxBackoffTimeDisableBc: Awareness
-    ) = this()
+    def this(serverUrl: String, roomname: String, doc: Doc, param3: Awareness) = this()
     
     var _WS: Instantiable = js.native
     
@@ -47,7 +42,7 @@ object mod {
       * @param {any} changed
       * @param {any} _origin
       */
-    def _awarenessUpdateHandler(hasAddedUpdatedRemoved: Any, _origin: Any): Unit = js.native
+    def _awarenessUpdateHandler(param0: Any, _origin: Any): Unit = js.native
     
     /**
       * @param {ArrayBuffer} data

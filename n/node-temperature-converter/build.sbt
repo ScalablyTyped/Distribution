@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "node-temperature-converter"
-version := "1.0-dt-20220309Z-229d8e"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220309Z-a19278"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

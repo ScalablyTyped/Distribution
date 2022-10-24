@@ -19,7 +19,7 @@ object distSrcModulesPlaybackEngineOutputNativeHtml5videoOutputMod {
   open class default protected ()
     extends StObject
        with NativeOutput {
-    def this(hasEventEmitterConfigAvailablePlaybackAdapters: AvailablePlaybackAdapters) = this()
+    def this(param0: AvailablePlaybackAdapters) = this()
   }
   /* static members */
   object default {

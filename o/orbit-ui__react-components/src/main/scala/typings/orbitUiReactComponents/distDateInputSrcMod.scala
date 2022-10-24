@@ -24,9 +24,7 @@ object distDateInputSrcMod {
   @js.native
   val DateRangeInput: OrbitComponent[HTMLElement, InnerDateRangeInputProps] = js.native
   
-  inline def InnerDateInput(
-    hasValuePropDefaultValuePlaceholderOnDateChangePresetsPresetsVariantFluidWrapperPropsDisabledReadOnlyClassNameStyleAsForwardedRefRest: InnerDateInputProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDateInput")(hasValuePropDefaultValuePlaceholderOnDateChangePresetsPresetsVariantFluidWrapperPropsDisabledReadOnlyClassNameStyleAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDateInput(param0: InnerDateInputProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDateInput")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerDateRangeInput(props: InnerDateRangeInputProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDateRangeInput")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

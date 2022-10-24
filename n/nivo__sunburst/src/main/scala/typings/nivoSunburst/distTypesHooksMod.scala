@@ -13,9 +13,7 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useSunburst[RawDatum](
-    hasDataIdValueValueFormatRadiusCornerRadiusColorsColorByInheritColorFromParentChildColor: ChildColor[RawDatum]
-  ): ArcGenerator[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSunburst")(hasDataIdValueValueFormatRadiusCornerRadiusColorsColorByInheritColorFromParentChildColor.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator[RawDatum]]
+  inline def useSunburst[RawDatum](param0: ChildColor[RawDatum]): ArcGenerator[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSunburst")(param0.asInstanceOf[js.Any]).asInstanceOf[ArcGenerator[RawDatum]]
   
-  inline def useSunburstLayerContext[RawDatum](hasNodesArcGeneratorCenterXCenterYRadius: SunburstCustomLayerProps[RawDatum]): SunburstCustomLayerProps[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSunburstLayerContext")(hasNodesArcGeneratorCenterXCenterYRadius.asInstanceOf[js.Any]).asInstanceOf[SunburstCustomLayerProps[RawDatum]]
+  inline def useSunburstLayerContext[RawDatum](param0: SunburstCustomLayerProps[RawDatum]): SunburstCustomLayerProps[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSunburstLayerContext")(param0.asInstanceOf[js.Any]).asInstanceOf[SunburstCustomLayerProps[RawDatum]]
 }

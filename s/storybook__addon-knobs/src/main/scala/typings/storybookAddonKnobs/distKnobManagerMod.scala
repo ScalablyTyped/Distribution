@@ -23,7 +23,7 @@ object distKnobManagerMod {
     var calling: Boolean = js.native
     
     /* CompleteClass */
-    override def getKnobValue(hasValue: Knob[Any]): Any = js.native
+    override def getKnobValue(param0: Knob[Any]): Any = js.native
     
     /* CompleteClass */
     override def knob[T /* <: KnobType */](name: String, options: Knob[T]): Mutable[
@@ -51,7 +51,7 @@ object distKnobManagerMod {
     
     var channel: js.UndefOr[Channel] = js.undefined
     
-    def getKnobValue(hasValue: Knob[Any]): Any
+    def getKnobValue(param0: Knob[Any]): Any
     
     def knob[T /* <: KnobType */](name: String, options: Knob[T]): Mutable[
         /* import warning: importer.ImportType#apply Failed type conversion: @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.Knob<T>['value'] */ js.Any

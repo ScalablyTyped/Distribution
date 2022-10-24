@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "activex-mshtml"
-version := "4.0-dt-20220705Z-c28fdf"
-scalaVersion := "3.1.2"
+version := "4.0-dt-20220705Z-8dc27f"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

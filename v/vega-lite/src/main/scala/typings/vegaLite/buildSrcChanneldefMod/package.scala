@@ -7,7 +7,6 @@ import typings.vegaLite.anon.BandPosition
 import typings.vegaLite.anon.Compatible
 import typings.vegaLite.anon.CompositeMark
 import typings.vegaLite.anon.Format
-import typings.vegaLite.anon.Header
 import typings.vegaLite.anon.Signal
 import typings.vegaLite.anon.Test
 import typings.vegaLite.anon.TimeUnit
@@ -55,9 +54,9 @@ inline def defaultType[T /* <: TypedFieldDef[Field, Any, Boolean | BinParams | b
 
 inline def functionalTitleFormatter(fieldDef: FieldDefBase[String, Bin]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("functionalTitleFormatter")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getBandPosition(hasFieldDefFieldDef2MarkConfig: typings.vegaLite.anon.Config): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBandPosition")(hasFieldDefFieldDef2MarkConfig.asInstanceOf[js.Any]).asInstanceOf[Double]
+inline def getBandPosition(param0: typings.vegaLite.anon.Config): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBandPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def getBandSize(hasChannelFieldDefFieldDef2MarkConfigScaleTypeUseVlSizeChannel: typings.vegaLite.anon.Channel): Double | RelativeBandSize | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("getBandSize")(hasChannelFieldDefFieldDef2MarkConfigScaleTypeUseVlSizeChannel.asInstanceOf[js.Any]).asInstanceOf[Double | RelativeBandSize | SignalRef]
+inline def getBandSize(param0: typings.vegaLite.anon.Channel): Double | RelativeBandSize | SignalRef = ^.asInstanceOf[js.Dynamic].applyDynamic("getBandSize")(param0.asInstanceOf[js.Any]).asInstanceOf[Double | RelativeBandSize | SignalRef]
 
 inline def getFieldDef[F /* <: Field */](channelDef: ChannelDef[F]): FieldDef[F, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[FieldDef[F, Any]]
 
@@ -93,8 +92,8 @@ inline def initChannelDef(
   opt: CompositeMark
 ): ChannelDef[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("initChannelDef")(channelDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ChannelDef[String]]
 
-inline def initFieldDef(fd: FieldDef[String, Any], channel: ExtendedChannel): Aggregate | BandPosition | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field | Header = (^.asInstanceOf[js.Dynamic].applyDynamic("initFieldDef")(fd.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Aggregate | BandPosition | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field | Header]
-inline def initFieldDef(fd: FieldDef[String, Any], channel: ExtendedChannel, hasCompositeMark: CompositeMark): Aggregate | BandPosition | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field | Header = (^.asInstanceOf[js.Dynamic].applyDynamic("initFieldDef")(fd.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], hasCompositeMark.asInstanceOf[js.Any])).asInstanceOf[Aggregate | BandPosition | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field | Header]
+inline def initFieldDef(fd: FieldDef[String, Any], channel: ExtendedChannel): (TypedFieldDef[String, Any, Boolean | BinParams | binned]) | Aggregate | BandPosition | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field = (^.asInstanceOf[js.Dynamic].applyDynamic("initFieldDef")(fd.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[(TypedFieldDef[String, Any, Boolean | BinParams | binned]) | Aggregate | BandPosition | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field]
+inline def initFieldDef(fd: FieldDef[String, Any], channel: ExtendedChannel, param2: CompositeMark): (TypedFieldDef[String, Any, Boolean | BinParams | binned]) | Aggregate | BandPosition | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field = (^.asInstanceOf[js.Dynamic].applyDynamic("initFieldDef")(fd.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[(TypedFieldDef[String, Any, Boolean | BinParams | binned]) | Aggregate | BandPosition | typings.vegaLite.anon.Bin | typings.vegaLite.anon.Field]
 
 inline def initFieldOrDatumDef(
   fd: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
@@ -182,19 +181,19 @@ inline def setTitleFormatter(formatter: FieldTitleFormatter): Unit = ^.asInstanc
 inline def title(
   fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
   config: Config[ExprRef | SignalRef],
-  hasAllowDisablingIncludeDefault: AllowDisabling
-): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("title")(fieldOrDatumDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasAllowDisablingIncludeDefault.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
+  param2: AllowDisabling
+): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("title")(fieldOrDatumDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
 inline def title(
   fieldOrDatumDef: SecondaryFieldDef[String],
   config: Config[ExprRef | SignalRef],
-  hasAllowDisablingIncludeDefault: AllowDisabling
-): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("title")(fieldOrDatumDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasAllowDisablingIncludeDefault.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
+  param2: AllowDisabling
+): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("title")(fieldOrDatumDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
 
 inline def title_binned(
   fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null],
   config: Config[ExprRef | SignalRef],
-  hasAllowDisablingIncludeDefault: AllowDisabling
-): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("title")(fieldOrDatumDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], hasAllowDisablingIncludeDefault.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
+  param2: AllowDisabling
+): SignalRef | Text = (^.asInstanceOf[js.Dynamic].applyDynamic("title")(fieldOrDatumDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[SignalRef | Text]
 
 inline def toFieldDefBase(fieldDef: FieldDef[String, Any]): FieldDefBase[String, Bin] = ^.asInstanceOf[js.Dynamic].applyDynamic("toFieldDefBase")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[FieldDefBase[String, Bin]]
 
@@ -210,13 +209,13 @@ inline def valueArray_binned(
   values: js.Array[Double | String | Boolean | DateTime]
 ): js.Array[String | Double | Boolean | DateTime | Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("valueArray")(fieldOrDatumDef.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | Double | Boolean | DateTime | Signal]]
 
-inline def valueExpr(v: String, hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def valueExpr(v: js.Array[Double], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def valueExpr(v: Boolean, hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def valueExpr(v: Double, hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def valueExpr(v: DateTime, hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def valueExpr(v: ExprRef, hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[String]
-inline def valueExpr(v: SignalRef, hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], hasTimeUnitTypeWrapTimeUndefinedIfExprNotRequired.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def valueExpr(v: String, param1: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def valueExpr(v: js.Array[Double], param1: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def valueExpr(v: Boolean, param1: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def valueExpr(v: Double, param1: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def valueExpr(v: DateTime, param1: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def valueExpr(v: ExprRef, param1: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def valueExpr(v: SignalRef, param1: TimeUnit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("valueExpr")(v.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
 
 inline def verbalTitleFormatter(fieldDef: FieldDefBase[String, Bin], config: Config[ExprRef | SignalRef]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("verbalTitleFormatter")(fieldDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
 

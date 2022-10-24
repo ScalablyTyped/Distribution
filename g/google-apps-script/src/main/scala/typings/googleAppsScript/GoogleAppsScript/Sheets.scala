@@ -1025,6 +1025,317 @@ object Sheets {
     }
   }
   
+  extension [Self <: Sheets](x: Self) {
+    
+    inline def setNewAddBandingRequest(value: () => AddBandingRequest): Self = StObject.set(x, "newAddBandingRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAddChartRequest(value: () => AddChartRequest): Self = StObject.set(x, "newAddChartRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAddConditionalFormatRuleRequest(value: () => AddConditionalFormatRuleRequest): Self = StObject.set(x, "newAddConditionalFormatRuleRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAddDimensionGroupRequest(value: () => AddDimensionGroupRequest): Self = StObject.set(x, "newAddDimensionGroupRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAddFilterViewRequest(value: () => AddFilterViewRequest): Self = StObject.set(x, "newAddFilterViewRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAddNamedRangeRequest(value: () => AddNamedRangeRequest): Self = StObject.set(x, "newAddNamedRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAddProtectedRangeRequest(value: () => AddProtectedRangeRequest): Self = StObject.set(x, "newAddProtectedRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAddSheetRequest(value: () => AddSheetRequest): Self = StObject.set(x, "newAddSheetRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAppendCellsRequest(value: () => AppendCellsRequest): Self = StObject.set(x, "newAppendCellsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAppendDimensionRequest(value: () => AppendDimensionRequest): Self = StObject.set(x, "newAppendDimensionRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAutoFillRequest(value: () => AutoFillRequest): Self = StObject.set(x, "newAutoFillRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewAutoResizeDimensionsRequest(value: () => AutoResizeDimensionsRequest): Self = StObject.set(x, "newAutoResizeDimensionsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewBandedRange(value: () => BandedRange): Self = StObject.set(x, "newBandedRange", js.Any.fromFunction0(value))
+    
+    inline def setNewBandingProperties(value: () => BandingProperties): Self = StObject.set(x, "newBandingProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewBasicChartAxis(value: () => BasicChartAxis): Self = StObject.set(x, "newBasicChartAxis", js.Any.fromFunction0(value))
+    
+    inline def setNewBasicChartDomain(value: () => BasicChartDomain): Self = StObject.set(x, "newBasicChartDomain", js.Any.fromFunction0(value))
+    
+    inline def setNewBasicChartSeries(value: () => BasicChartSeries): Self = StObject.set(x, "newBasicChartSeries", js.Any.fromFunction0(value))
+    
+    inline def setNewBasicChartSpec(value: () => BasicChartSpec): Self = StObject.set(x, "newBasicChartSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewBasicFilter(value: () => BasicFilter): Self = StObject.set(x, "newBasicFilter", js.Any.fromFunction0(value))
+    
+    inline def setNewBatchClearValuesByDataFilterRequest(value: () => BatchClearValuesByDataFilterRequest): Self = StObject.set(x, "newBatchClearValuesByDataFilterRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewBatchClearValuesRequest(value: () => BatchClearValuesRequest): Self = StObject.set(x, "newBatchClearValuesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewBatchGetValuesByDataFilterRequest(value: () => BatchGetValuesByDataFilterRequest): Self = StObject.set(x, "newBatchGetValuesByDataFilterRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewBatchUpdateSpreadsheetRequest(value: () => BatchUpdateSpreadsheetRequest): Self = StObject.set(x, "newBatchUpdateSpreadsheetRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewBatchUpdateValuesByDataFilterRequest(value: () => BatchUpdateValuesByDataFilterRequest): Self = StObject.set(x, "newBatchUpdateValuesByDataFilterRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewBatchUpdateValuesRequest(value: () => BatchUpdateValuesRequest): Self = StObject.set(x, "newBatchUpdateValuesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewBooleanCondition(value: () => BooleanCondition): Self = StObject.set(x, "newBooleanCondition", js.Any.fromFunction0(value))
+    
+    inline def setNewBooleanRule(value: () => BooleanRule): Self = StObject.set(x, "newBooleanRule", js.Any.fromFunction0(value))
+    
+    inline def setNewBorder(value: () => Border): Self = StObject.set(x, "newBorder", js.Any.fromFunction0(value))
+    
+    inline def setNewBorders(value: () => Borders): Self = StObject.set(x, "newBorders", js.Any.fromFunction0(value))
+    
+    inline def setNewBubbleChartSpec(value: () => BubbleChartSpec): Self = StObject.set(x, "newBubbleChartSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewCandlestickChartSpec(value: () => CandlestickChartSpec): Self = StObject.set(x, "newCandlestickChartSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewCandlestickData(value: () => CandlestickData): Self = StObject.set(x, "newCandlestickData", js.Any.fromFunction0(value))
+    
+    inline def setNewCandlestickDomain(value: () => CandlestickDomain): Self = StObject.set(x, "newCandlestickDomain", js.Any.fromFunction0(value))
+    
+    inline def setNewCandlestickSeries(value: () => CandlestickSeries): Self = StObject.set(x, "newCandlestickSeries", js.Any.fromFunction0(value))
+    
+    inline def setNewCellData(value: () => CellData): Self = StObject.set(x, "newCellData", js.Any.fromFunction0(value))
+    
+    inline def setNewCellFormat(value: () => CellFormat): Self = StObject.set(x, "newCellFormat", js.Any.fromFunction0(value))
+    
+    inline def setNewChartData(value: () => ChartData): Self = StObject.set(x, "newChartData", js.Any.fromFunction0(value))
+    
+    inline def setNewChartSourceRange(value: () => ChartSourceRange): Self = StObject.set(x, "newChartSourceRange", js.Any.fromFunction0(value))
+    
+    inline def setNewChartSpec(value: () => ChartSpec): Self = StObject.set(x, "newChartSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewClearBasicFilterRequest(value: () => ClearBasicFilterRequest): Self = StObject.set(x, "newClearBasicFilterRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewClearValuesRequest(value: () => Any): Self = StObject.set(x, "newClearValuesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewColor(value: () => Color): Self = StObject.set(x, "newColor", js.Any.fromFunction0(value))
+    
+    inline def setNewConditionValue(value: () => ConditionValue): Self = StObject.set(x, "newConditionValue", js.Any.fromFunction0(value))
+    
+    inline def setNewConditionalFormatRule(value: () => ConditionalFormatRule): Self = StObject.set(x, "newConditionalFormatRule", js.Any.fromFunction0(value))
+    
+    inline def setNewCopyPasteRequest(value: () => CopyPasteRequest): Self = StObject.set(x, "newCopyPasteRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCopySheetToAnotherSpreadsheetRequest(value: () => CopySheetToAnotherSpreadsheetRequest): Self = StObject.set(x, "newCopySheetToAnotherSpreadsheetRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateDeveloperMetadataRequest(value: () => CreateDeveloperMetadataRequest): Self = StObject.set(x, "newCreateDeveloperMetadataRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCutPasteRequest(value: () => CutPasteRequest): Self = StObject.set(x, "newCutPasteRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDataFilter(value: () => DataFilter): Self = StObject.set(x, "newDataFilter", js.Any.fromFunction0(value))
+    
+    inline def setNewDataFilterValueRange(value: () => DataFilterValueRange): Self = StObject.set(x, "newDataFilterValueRange", js.Any.fromFunction0(value))
+    
+    inline def setNewDataValidationRule(value: () => DataValidationRule): Self = StObject.set(x, "newDataValidationRule", js.Any.fromFunction0(value))
+    
+    inline def setNewDateTimeRule(value: () => DateTimeRule): Self = StObject.set(x, "newDateTimeRule", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteBandingRequest(value: () => DeleteBandingRequest): Self = StObject.set(x, "newDeleteBandingRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteConditionalFormatRuleRequest(value: () => DeleteConditionalFormatRuleRequest): Self = StObject.set(x, "newDeleteConditionalFormatRuleRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteDeveloperMetadataRequest(value: () => DeleteDeveloperMetadataRequest): Self = StObject.set(x, "newDeleteDeveloperMetadataRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteDimensionGroupRequest(value: () => DeleteDimensionGroupRequest): Self = StObject.set(x, "newDeleteDimensionGroupRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteDimensionRequest(value: () => DeleteDimensionRequest): Self = StObject.set(x, "newDeleteDimensionRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteEmbeddedObjectRequest(value: () => DeleteEmbeddedObjectRequest): Self = StObject.set(x, "newDeleteEmbeddedObjectRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteFilterViewRequest(value: () => DeleteFilterViewRequest): Self = StObject.set(x, "newDeleteFilterViewRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteNamedRangeRequest(value: () => DeleteNamedRangeRequest): Self = StObject.set(x, "newDeleteNamedRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteProtectedRangeRequest(value: () => DeleteProtectedRangeRequest): Self = StObject.set(x, "newDeleteProtectedRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteRangeRequest(value: () => DeleteRangeRequest): Self = StObject.set(x, "newDeleteRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteSheetRequest(value: () => DeleteSheetRequest): Self = StObject.set(x, "newDeleteSheetRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeveloperMetadata(value: () => DeveloperMetadata): Self = StObject.set(x, "newDeveloperMetadata", js.Any.fromFunction0(value))
+    
+    inline def setNewDeveloperMetadataLocation(value: () => DeveloperMetadataLocation): Self = StObject.set(x, "newDeveloperMetadataLocation", js.Any.fromFunction0(value))
+    
+    inline def setNewDeveloperMetadataLookup(value: () => DeveloperMetadataLookup): Self = StObject.set(x, "newDeveloperMetadataLookup", js.Any.fromFunction0(value))
+    
+    inline def setNewDimensionGroup(value: () => DimensionGroup): Self = StObject.set(x, "newDimensionGroup", js.Any.fromFunction0(value))
+    
+    inline def setNewDimensionProperties(value: () => DimensionProperties): Self = StObject.set(x, "newDimensionProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewDimensionRange(value: () => DimensionRange): Self = StObject.set(x, "newDimensionRange", js.Any.fromFunction0(value))
+    
+    inline def setNewDuplicateFilterViewRequest(value: () => DuplicateFilterViewRequest): Self = StObject.set(x, "newDuplicateFilterViewRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDuplicateSheetRequest(value: () => DuplicateSheetRequest): Self = StObject.set(x, "newDuplicateSheetRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewEditors(value: () => Editors): Self = StObject.set(x, "newEditors", js.Any.fromFunction0(value))
+    
+    inline def setNewEmbeddedChart(value: () => EmbeddedChart): Self = StObject.set(x, "newEmbeddedChart", js.Any.fromFunction0(value))
+    
+    inline def setNewEmbeddedObjectPosition(value: () => EmbeddedObjectPosition): Self = StObject.set(x, "newEmbeddedObjectPosition", js.Any.fromFunction0(value))
+    
+    inline def setNewErrorValue(value: () => ErrorValue): Self = StObject.set(x, "newErrorValue", js.Any.fromFunction0(value))
+    
+    inline def setNewExtendedValue(value: () => ExtendedValue): Self = StObject.set(x, "newExtendedValue", js.Any.fromFunction0(value))
+    
+    inline def setNewFilterView(value: () => FilterView): Self = StObject.set(x, "newFilterView", js.Any.fromFunction0(value))
+    
+    inline def setNewFindReplaceRequest(value: () => FindReplaceRequest): Self = StObject.set(x, "newFindReplaceRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewGetSpreadsheetByDataFilterRequest(value: () => GetSpreadsheetByDataFilterRequest): Self = StObject.set(x, "newGetSpreadsheetByDataFilterRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewGradientRule(value: () => GradientRule): Self = StObject.set(x, "newGradientRule", js.Any.fromFunction0(value))
+    
+    inline def setNewGridCoordinate(value: () => GridCoordinate): Self = StObject.set(x, "newGridCoordinate", js.Any.fromFunction0(value))
+    
+    inline def setNewGridData(value: () => GridData): Self = StObject.set(x, "newGridData", js.Any.fromFunction0(value))
+    
+    inline def setNewGridProperties(value: () => GridProperties): Self = StObject.set(x, "newGridProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewGridRange(value: () => GridRange): Self = StObject.set(x, "newGridRange", js.Any.fromFunction0(value))
+    
+    inline def setNewHistogramChartSpec(value: () => HistogramChartSpec): Self = StObject.set(x, "newHistogramChartSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewHistogramRule(value: () => HistogramRule): Self = StObject.set(x, "newHistogramRule", js.Any.fromFunction0(value))
+    
+    inline def setNewHistogramSeries(value: () => HistogramSeries): Self = StObject.set(x, "newHistogramSeries", js.Any.fromFunction0(value))
+    
+    inline def setNewInsertDimensionRequest(value: () => InsertDimensionRequest): Self = StObject.set(x, "newInsertDimensionRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewInsertRangeRequest(value: () => InsertRangeRequest): Self = StObject.set(x, "newInsertRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewInterpolationPoint(value: () => InterpolationPoint): Self = StObject.set(x, "newInterpolationPoint", js.Any.fromFunction0(value))
+    
+    inline def setNewIterativeCalculationSettings(value: () => IterativeCalculationSettings): Self = StObject.set(x, "newIterativeCalculationSettings", js.Any.fromFunction0(value))
+    
+    inline def setNewLineStyle(value: () => LineStyle): Self = StObject.set(x, "newLineStyle", js.Any.fromFunction0(value))
+    
+    inline def setNewManualRule(value: () => ManualRule): Self = StObject.set(x, "newManualRule", js.Any.fromFunction0(value))
+    
+    inline def setNewManualRuleGroup(value: () => ManualRuleGroup): Self = StObject.set(x, "newManualRuleGroup", js.Any.fromFunction0(value))
+    
+    inline def setNewMergeCellsRequest(value: () => MergeCellsRequest): Self = StObject.set(x, "newMergeCellsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewMoveDimensionRequest(value: () => MoveDimensionRequest): Self = StObject.set(x, "newMoveDimensionRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewNamedRange(value: () => NamedRange): Self = StObject.set(x, "newNamedRange", js.Any.fromFunction0(value))
+    
+    inline def setNewNumberFormat(value: () => NumberFormat): Self = StObject.set(x, "newNumberFormat", js.Any.fromFunction0(value))
+    
+    inline def setNewOrgChartSpec(value: () => OrgChartSpec): Self = StObject.set(x, "newOrgChartSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewOverlayPosition(value: () => OverlayPosition): Self = StObject.set(x, "newOverlayPosition", js.Any.fromFunction0(value))
+    
+    inline def setNewPadding(value: () => Padding): Self = StObject.set(x, "newPadding", js.Any.fromFunction0(value))
+    
+    inline def setNewPasteDataRequest(value: () => PasteDataRequest): Self = StObject.set(x, "newPasteDataRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewPieChartSpec(value: () => PieChartSpec): Self = StObject.set(x, "newPieChartSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewPivotGroup(value: () => PivotGroup): Self = StObject.set(x, "newPivotGroup", js.Any.fromFunction0(value))
+    
+    inline def setNewPivotGroupRule(value: () => PivotGroupRule): Self = StObject.set(x, "newPivotGroupRule", js.Any.fromFunction0(value))
+    
+    inline def setNewPivotGroupSortValueBucket(value: () => PivotGroupSortValueBucket): Self = StObject.set(x, "newPivotGroupSortValueBucket", js.Any.fromFunction0(value))
+    
+    inline def setNewPivotGroupValueMetadata(value: () => PivotGroupValueMetadata): Self = StObject.set(x, "newPivotGroupValueMetadata", js.Any.fromFunction0(value))
+    
+    inline def setNewPivotTable(value: () => PivotTable): Self = StObject.set(x, "newPivotTable", js.Any.fromFunction0(value))
+    
+    inline def setNewPivotValue(value: () => PivotValue): Self = StObject.set(x, "newPivotValue", js.Any.fromFunction0(value))
+    
+    inline def setNewProtectedRange(value: () => ProtectedRange): Self = StObject.set(x, "newProtectedRange", js.Any.fromFunction0(value))
+    
+    inline def setNewRandomizeRangeRequest(value: () => RandomizeRangeRequest): Self = StObject.set(x, "newRandomizeRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewRepeatCellRequest(value: () => RepeatCellRequest): Self = StObject.set(x, "newRepeatCellRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewRequest(value: () => Request): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewRowData(value: () => RowData): Self = StObject.set(x, "newRowData", js.Any.fromFunction0(value))
+    
+    inline def setNewSearchDeveloperMetadataRequest(value: () => SearchDeveloperMetadataRequest): Self = StObject.set(x, "newSearchDeveloperMetadataRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewSetBasicFilterRequest(value: () => SetBasicFilterRequest): Self = StObject.set(x, "newSetBasicFilterRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewSetDataValidationRequest(value: () => SetDataValidationRequest): Self = StObject.set(x, "newSetDataValidationRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewSheet(value: () => Sheet): Self = StObject.set(x, "newSheet", js.Any.fromFunction0(value))
+    
+    inline def setNewSheetProperties(value: () => SheetProperties): Self = StObject.set(x, "newSheetProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewSortRangeRequest(value: () => SortRangeRequest): Self = StObject.set(x, "newSortRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewSortSpec(value: () => SortSpec): Self = StObject.set(x, "newSortSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewSourceAndDestination(value: () => SourceAndDestination): Self = StObject.set(x, "newSourceAndDestination", js.Any.fromFunction0(value))
+    
+    inline def setNewSpreadsheet(value: () => typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet): Self = StObject.set(x, "newSpreadsheet", js.Any.fromFunction0(value))
+    
+    inline def setNewSpreadsheetProperties(value: () => SpreadsheetProperties): Self = StObject.set(x, "newSpreadsheetProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewTextFormat(value: () => TextFormat): Self = StObject.set(x, "newTextFormat", js.Any.fromFunction0(value))
+    
+    inline def setNewTextFormatRun(value: () => TextFormatRun): Self = StObject.set(x, "newTextFormatRun", js.Any.fromFunction0(value))
+    
+    inline def setNewTextPosition(value: () => TextPosition): Self = StObject.set(x, "newTextPosition", js.Any.fromFunction0(value))
+    
+    inline def setNewTextRotation(value: () => TextRotation): Self = StObject.set(x, "newTextRotation", js.Any.fromFunction0(value))
+    
+    inline def setNewTextToColumnsRequest(value: () => TextToColumnsRequest): Self = StObject.set(x, "newTextToColumnsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewTreemapChartColorScale(value: () => TreemapChartColorScale): Self = StObject.set(x, "newTreemapChartColorScale", js.Any.fromFunction0(value))
+    
+    inline def setNewTreemapChartSpec(value: () => TreemapChartSpec): Self = StObject.set(x, "newTreemapChartSpec", js.Any.fromFunction0(value))
+    
+    inline def setNewUnmergeCellsRequest(value: () => UnmergeCellsRequest): Self = StObject.set(x, "newUnmergeCellsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateBandingRequest(value: () => UpdateBandingRequest): Self = StObject.set(x, "newUpdateBandingRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateBordersRequest(value: () => UpdateBordersRequest): Self = StObject.set(x, "newUpdateBordersRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateCellsRequest(value: () => UpdateCellsRequest): Self = StObject.set(x, "newUpdateCellsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateChartSpecRequest(value: () => UpdateChartSpecRequest): Self = StObject.set(x, "newUpdateChartSpecRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateConditionalFormatRuleRequest(value: () => UpdateConditionalFormatRuleRequest): Self = StObject.set(x, "newUpdateConditionalFormatRuleRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateDeveloperMetadataRequest(value: () => UpdateDeveloperMetadataRequest): Self = StObject.set(x, "newUpdateDeveloperMetadataRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateDimensionGroupRequest(value: () => UpdateDimensionGroupRequest): Self = StObject.set(x, "newUpdateDimensionGroupRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateDimensionPropertiesRequest(value: () => UpdateDimensionPropertiesRequest): Self = StObject.set(x, "newUpdateDimensionPropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateEmbeddedObjectPositionRequest(value: () => UpdateEmbeddedObjectPositionRequest): Self = StObject.set(x, "newUpdateEmbeddedObjectPositionRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateFilterViewRequest(value: () => UpdateFilterViewRequest): Self = StObject.set(x, "newUpdateFilterViewRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateNamedRangeRequest(value: () => UpdateNamedRangeRequest): Self = StObject.set(x, "newUpdateNamedRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateProtectedRangeRequest(value: () => UpdateProtectedRangeRequest): Self = StObject.set(x, "newUpdateProtectedRangeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateSheetPropertiesRequest(value: () => UpdateSheetPropertiesRequest): Self = StObject.set(x, "newUpdateSheetPropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateSpreadsheetPropertiesRequest(value: () => UpdateSpreadsheetPropertiesRequest): Self = StObject.set(x, "newUpdateSpreadsheetPropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewValueRange(value: () => ValueRange): Self = StObject.set(x, "newValueRange", js.Any.fromFunction0(value))
+    
+    inline def setNewWaterfallChartColumnStyle(value: () => WaterfallChartColumnStyle): Self = StObject.set(x, "newWaterfallChartColumnStyle", js.Any.fromFunction0(value))
+    
+    inline def setNewWaterfallChartCustomSubtotal(value: () => WaterfallChartCustomSubtotal): Self = StObject.set(x, "newWaterfallChartCustomSubtotal", js.Any.fromFunction0(value))
+    
+    inline def setNewWaterfallChartDomain(value: () => WaterfallChartDomain): Self = StObject.set(x, "newWaterfallChartDomain", js.Any.fromFunction0(value))
+    
+    inline def setNewWaterfallChartSeries(value: () => WaterfallChartSeries): Self = StObject.set(x, "newWaterfallChartSeries", js.Any.fromFunction0(value))
+    
+    inline def setNewWaterfallChartSpec(value: () => WaterfallChartSpec): Self = StObject.set(x, "newWaterfallChartSpec", js.Any.fromFunction0(value))
+    
+    inline def setSpreadsheets(value: SpreadsheetsCollection): Self = StObject.set(x, "Spreadsheets", value.asInstanceOf[js.Any])
+    
+    inline def setSpreadsheetsUndefined: Self = StObject.set(x, "Spreadsheets", js.undefined)
+  }
+  
   object Schema {
     
     trait AddBandingRequest extends StObject {
@@ -7505,316 +7816,5 @@ object Sheets {
         inline def setStackedTypeUndefined: Self = StObject.set(x, "stackedType", js.undefined)
       }
     }
-  }
-  
-  extension [Self <: Sheets](x: Self) {
-    
-    inline def setNewAddBandingRequest(value: () => AddBandingRequest): Self = StObject.set(x, "newAddBandingRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAddChartRequest(value: () => AddChartRequest): Self = StObject.set(x, "newAddChartRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAddConditionalFormatRuleRequest(value: () => AddConditionalFormatRuleRequest): Self = StObject.set(x, "newAddConditionalFormatRuleRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAddDimensionGroupRequest(value: () => AddDimensionGroupRequest): Self = StObject.set(x, "newAddDimensionGroupRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAddFilterViewRequest(value: () => AddFilterViewRequest): Self = StObject.set(x, "newAddFilterViewRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAddNamedRangeRequest(value: () => AddNamedRangeRequest): Self = StObject.set(x, "newAddNamedRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAddProtectedRangeRequest(value: () => AddProtectedRangeRequest): Self = StObject.set(x, "newAddProtectedRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAddSheetRequest(value: () => AddSheetRequest): Self = StObject.set(x, "newAddSheetRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAppendCellsRequest(value: () => AppendCellsRequest): Self = StObject.set(x, "newAppendCellsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAppendDimensionRequest(value: () => AppendDimensionRequest): Self = StObject.set(x, "newAppendDimensionRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAutoFillRequest(value: () => AutoFillRequest): Self = StObject.set(x, "newAutoFillRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewAutoResizeDimensionsRequest(value: () => AutoResizeDimensionsRequest): Self = StObject.set(x, "newAutoResizeDimensionsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewBandedRange(value: () => BandedRange): Self = StObject.set(x, "newBandedRange", js.Any.fromFunction0(value))
-    
-    inline def setNewBandingProperties(value: () => BandingProperties): Self = StObject.set(x, "newBandingProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewBasicChartAxis(value: () => BasicChartAxis): Self = StObject.set(x, "newBasicChartAxis", js.Any.fromFunction0(value))
-    
-    inline def setNewBasicChartDomain(value: () => BasicChartDomain): Self = StObject.set(x, "newBasicChartDomain", js.Any.fromFunction0(value))
-    
-    inline def setNewBasicChartSeries(value: () => BasicChartSeries): Self = StObject.set(x, "newBasicChartSeries", js.Any.fromFunction0(value))
-    
-    inline def setNewBasicChartSpec(value: () => BasicChartSpec): Self = StObject.set(x, "newBasicChartSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewBasicFilter(value: () => BasicFilter): Self = StObject.set(x, "newBasicFilter", js.Any.fromFunction0(value))
-    
-    inline def setNewBatchClearValuesByDataFilterRequest(value: () => BatchClearValuesByDataFilterRequest): Self = StObject.set(x, "newBatchClearValuesByDataFilterRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewBatchClearValuesRequest(value: () => BatchClearValuesRequest): Self = StObject.set(x, "newBatchClearValuesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewBatchGetValuesByDataFilterRequest(value: () => BatchGetValuesByDataFilterRequest): Self = StObject.set(x, "newBatchGetValuesByDataFilterRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewBatchUpdateSpreadsheetRequest(value: () => BatchUpdateSpreadsheetRequest): Self = StObject.set(x, "newBatchUpdateSpreadsheetRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewBatchUpdateValuesByDataFilterRequest(value: () => BatchUpdateValuesByDataFilterRequest): Self = StObject.set(x, "newBatchUpdateValuesByDataFilterRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewBatchUpdateValuesRequest(value: () => BatchUpdateValuesRequest): Self = StObject.set(x, "newBatchUpdateValuesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewBooleanCondition(value: () => BooleanCondition): Self = StObject.set(x, "newBooleanCondition", js.Any.fromFunction0(value))
-    
-    inline def setNewBooleanRule(value: () => BooleanRule): Self = StObject.set(x, "newBooleanRule", js.Any.fromFunction0(value))
-    
-    inline def setNewBorder(value: () => Border): Self = StObject.set(x, "newBorder", js.Any.fromFunction0(value))
-    
-    inline def setNewBorders(value: () => Borders): Self = StObject.set(x, "newBorders", js.Any.fromFunction0(value))
-    
-    inline def setNewBubbleChartSpec(value: () => BubbleChartSpec): Self = StObject.set(x, "newBubbleChartSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewCandlestickChartSpec(value: () => CandlestickChartSpec): Self = StObject.set(x, "newCandlestickChartSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewCandlestickData(value: () => CandlestickData): Self = StObject.set(x, "newCandlestickData", js.Any.fromFunction0(value))
-    
-    inline def setNewCandlestickDomain(value: () => CandlestickDomain): Self = StObject.set(x, "newCandlestickDomain", js.Any.fromFunction0(value))
-    
-    inline def setNewCandlestickSeries(value: () => CandlestickSeries): Self = StObject.set(x, "newCandlestickSeries", js.Any.fromFunction0(value))
-    
-    inline def setNewCellData(value: () => CellData): Self = StObject.set(x, "newCellData", js.Any.fromFunction0(value))
-    
-    inline def setNewCellFormat(value: () => CellFormat): Self = StObject.set(x, "newCellFormat", js.Any.fromFunction0(value))
-    
-    inline def setNewChartData(value: () => ChartData): Self = StObject.set(x, "newChartData", js.Any.fromFunction0(value))
-    
-    inline def setNewChartSourceRange(value: () => ChartSourceRange): Self = StObject.set(x, "newChartSourceRange", js.Any.fromFunction0(value))
-    
-    inline def setNewChartSpec(value: () => ChartSpec): Self = StObject.set(x, "newChartSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewClearBasicFilterRequest(value: () => ClearBasicFilterRequest): Self = StObject.set(x, "newClearBasicFilterRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewClearValuesRequest(value: () => Any): Self = StObject.set(x, "newClearValuesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewColor(value: () => Color): Self = StObject.set(x, "newColor", js.Any.fromFunction0(value))
-    
-    inline def setNewConditionValue(value: () => ConditionValue): Self = StObject.set(x, "newConditionValue", js.Any.fromFunction0(value))
-    
-    inline def setNewConditionalFormatRule(value: () => ConditionalFormatRule): Self = StObject.set(x, "newConditionalFormatRule", js.Any.fromFunction0(value))
-    
-    inline def setNewCopyPasteRequest(value: () => CopyPasteRequest): Self = StObject.set(x, "newCopyPasteRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCopySheetToAnotherSpreadsheetRequest(value: () => CopySheetToAnotherSpreadsheetRequest): Self = StObject.set(x, "newCopySheetToAnotherSpreadsheetRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateDeveloperMetadataRequest(value: () => CreateDeveloperMetadataRequest): Self = StObject.set(x, "newCreateDeveloperMetadataRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCutPasteRequest(value: () => CutPasteRequest): Self = StObject.set(x, "newCutPasteRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDataFilter(value: () => DataFilter): Self = StObject.set(x, "newDataFilter", js.Any.fromFunction0(value))
-    
-    inline def setNewDataFilterValueRange(value: () => DataFilterValueRange): Self = StObject.set(x, "newDataFilterValueRange", js.Any.fromFunction0(value))
-    
-    inline def setNewDataValidationRule(value: () => DataValidationRule): Self = StObject.set(x, "newDataValidationRule", js.Any.fromFunction0(value))
-    
-    inline def setNewDateTimeRule(value: () => DateTimeRule): Self = StObject.set(x, "newDateTimeRule", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteBandingRequest(value: () => DeleteBandingRequest): Self = StObject.set(x, "newDeleteBandingRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteConditionalFormatRuleRequest(value: () => DeleteConditionalFormatRuleRequest): Self = StObject.set(x, "newDeleteConditionalFormatRuleRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteDeveloperMetadataRequest(value: () => DeleteDeveloperMetadataRequest): Self = StObject.set(x, "newDeleteDeveloperMetadataRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteDimensionGroupRequest(value: () => DeleteDimensionGroupRequest): Self = StObject.set(x, "newDeleteDimensionGroupRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteDimensionRequest(value: () => DeleteDimensionRequest): Self = StObject.set(x, "newDeleteDimensionRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteEmbeddedObjectRequest(value: () => DeleteEmbeddedObjectRequest): Self = StObject.set(x, "newDeleteEmbeddedObjectRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteFilterViewRequest(value: () => DeleteFilterViewRequest): Self = StObject.set(x, "newDeleteFilterViewRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteNamedRangeRequest(value: () => DeleteNamedRangeRequest): Self = StObject.set(x, "newDeleteNamedRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteProtectedRangeRequest(value: () => DeleteProtectedRangeRequest): Self = StObject.set(x, "newDeleteProtectedRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteRangeRequest(value: () => DeleteRangeRequest): Self = StObject.set(x, "newDeleteRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteSheetRequest(value: () => DeleteSheetRequest): Self = StObject.set(x, "newDeleteSheetRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeveloperMetadata(value: () => DeveloperMetadata): Self = StObject.set(x, "newDeveloperMetadata", js.Any.fromFunction0(value))
-    
-    inline def setNewDeveloperMetadataLocation(value: () => DeveloperMetadataLocation): Self = StObject.set(x, "newDeveloperMetadataLocation", js.Any.fromFunction0(value))
-    
-    inline def setNewDeveloperMetadataLookup(value: () => DeveloperMetadataLookup): Self = StObject.set(x, "newDeveloperMetadataLookup", js.Any.fromFunction0(value))
-    
-    inline def setNewDimensionGroup(value: () => DimensionGroup): Self = StObject.set(x, "newDimensionGroup", js.Any.fromFunction0(value))
-    
-    inline def setNewDimensionProperties(value: () => DimensionProperties): Self = StObject.set(x, "newDimensionProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewDimensionRange(value: () => DimensionRange): Self = StObject.set(x, "newDimensionRange", js.Any.fromFunction0(value))
-    
-    inline def setNewDuplicateFilterViewRequest(value: () => DuplicateFilterViewRequest): Self = StObject.set(x, "newDuplicateFilterViewRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDuplicateSheetRequest(value: () => DuplicateSheetRequest): Self = StObject.set(x, "newDuplicateSheetRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewEditors(value: () => Editors): Self = StObject.set(x, "newEditors", js.Any.fromFunction0(value))
-    
-    inline def setNewEmbeddedChart(value: () => EmbeddedChart): Self = StObject.set(x, "newEmbeddedChart", js.Any.fromFunction0(value))
-    
-    inline def setNewEmbeddedObjectPosition(value: () => EmbeddedObjectPosition): Self = StObject.set(x, "newEmbeddedObjectPosition", js.Any.fromFunction0(value))
-    
-    inline def setNewErrorValue(value: () => ErrorValue): Self = StObject.set(x, "newErrorValue", js.Any.fromFunction0(value))
-    
-    inline def setNewExtendedValue(value: () => ExtendedValue): Self = StObject.set(x, "newExtendedValue", js.Any.fromFunction0(value))
-    
-    inline def setNewFilterView(value: () => FilterView): Self = StObject.set(x, "newFilterView", js.Any.fromFunction0(value))
-    
-    inline def setNewFindReplaceRequest(value: () => FindReplaceRequest): Self = StObject.set(x, "newFindReplaceRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewGetSpreadsheetByDataFilterRequest(value: () => GetSpreadsheetByDataFilterRequest): Self = StObject.set(x, "newGetSpreadsheetByDataFilterRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewGradientRule(value: () => GradientRule): Self = StObject.set(x, "newGradientRule", js.Any.fromFunction0(value))
-    
-    inline def setNewGridCoordinate(value: () => GridCoordinate): Self = StObject.set(x, "newGridCoordinate", js.Any.fromFunction0(value))
-    
-    inline def setNewGridData(value: () => GridData): Self = StObject.set(x, "newGridData", js.Any.fromFunction0(value))
-    
-    inline def setNewGridProperties(value: () => GridProperties): Self = StObject.set(x, "newGridProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewGridRange(value: () => GridRange): Self = StObject.set(x, "newGridRange", js.Any.fromFunction0(value))
-    
-    inline def setNewHistogramChartSpec(value: () => HistogramChartSpec): Self = StObject.set(x, "newHistogramChartSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewHistogramRule(value: () => HistogramRule): Self = StObject.set(x, "newHistogramRule", js.Any.fromFunction0(value))
-    
-    inline def setNewHistogramSeries(value: () => HistogramSeries): Self = StObject.set(x, "newHistogramSeries", js.Any.fromFunction0(value))
-    
-    inline def setNewInsertDimensionRequest(value: () => InsertDimensionRequest): Self = StObject.set(x, "newInsertDimensionRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewInsertRangeRequest(value: () => InsertRangeRequest): Self = StObject.set(x, "newInsertRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewInterpolationPoint(value: () => InterpolationPoint): Self = StObject.set(x, "newInterpolationPoint", js.Any.fromFunction0(value))
-    
-    inline def setNewIterativeCalculationSettings(value: () => IterativeCalculationSettings): Self = StObject.set(x, "newIterativeCalculationSettings", js.Any.fromFunction0(value))
-    
-    inline def setNewLineStyle(value: () => LineStyle): Self = StObject.set(x, "newLineStyle", js.Any.fromFunction0(value))
-    
-    inline def setNewManualRule(value: () => ManualRule): Self = StObject.set(x, "newManualRule", js.Any.fromFunction0(value))
-    
-    inline def setNewManualRuleGroup(value: () => ManualRuleGroup): Self = StObject.set(x, "newManualRuleGroup", js.Any.fromFunction0(value))
-    
-    inline def setNewMergeCellsRequest(value: () => MergeCellsRequest): Self = StObject.set(x, "newMergeCellsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewMoveDimensionRequest(value: () => MoveDimensionRequest): Self = StObject.set(x, "newMoveDimensionRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewNamedRange(value: () => NamedRange): Self = StObject.set(x, "newNamedRange", js.Any.fromFunction0(value))
-    
-    inline def setNewNumberFormat(value: () => NumberFormat): Self = StObject.set(x, "newNumberFormat", js.Any.fromFunction0(value))
-    
-    inline def setNewOrgChartSpec(value: () => OrgChartSpec): Self = StObject.set(x, "newOrgChartSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewOverlayPosition(value: () => OverlayPosition): Self = StObject.set(x, "newOverlayPosition", js.Any.fromFunction0(value))
-    
-    inline def setNewPadding(value: () => Padding): Self = StObject.set(x, "newPadding", js.Any.fromFunction0(value))
-    
-    inline def setNewPasteDataRequest(value: () => PasteDataRequest): Self = StObject.set(x, "newPasteDataRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewPieChartSpec(value: () => PieChartSpec): Self = StObject.set(x, "newPieChartSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewPivotGroup(value: () => PivotGroup): Self = StObject.set(x, "newPivotGroup", js.Any.fromFunction0(value))
-    
-    inline def setNewPivotGroupRule(value: () => PivotGroupRule): Self = StObject.set(x, "newPivotGroupRule", js.Any.fromFunction0(value))
-    
-    inline def setNewPivotGroupSortValueBucket(value: () => PivotGroupSortValueBucket): Self = StObject.set(x, "newPivotGroupSortValueBucket", js.Any.fromFunction0(value))
-    
-    inline def setNewPivotGroupValueMetadata(value: () => PivotGroupValueMetadata): Self = StObject.set(x, "newPivotGroupValueMetadata", js.Any.fromFunction0(value))
-    
-    inline def setNewPivotTable(value: () => PivotTable): Self = StObject.set(x, "newPivotTable", js.Any.fromFunction0(value))
-    
-    inline def setNewPivotValue(value: () => PivotValue): Self = StObject.set(x, "newPivotValue", js.Any.fromFunction0(value))
-    
-    inline def setNewProtectedRange(value: () => ProtectedRange): Self = StObject.set(x, "newProtectedRange", js.Any.fromFunction0(value))
-    
-    inline def setNewRandomizeRangeRequest(value: () => RandomizeRangeRequest): Self = StObject.set(x, "newRandomizeRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewRepeatCellRequest(value: () => RepeatCellRequest): Self = StObject.set(x, "newRepeatCellRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewRequest(value: () => Request): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewRowData(value: () => RowData): Self = StObject.set(x, "newRowData", js.Any.fromFunction0(value))
-    
-    inline def setNewSearchDeveloperMetadataRequest(value: () => SearchDeveloperMetadataRequest): Self = StObject.set(x, "newSearchDeveloperMetadataRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewSetBasicFilterRequest(value: () => SetBasicFilterRequest): Self = StObject.set(x, "newSetBasicFilterRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewSetDataValidationRequest(value: () => SetDataValidationRequest): Self = StObject.set(x, "newSetDataValidationRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewSheet(value: () => Sheet): Self = StObject.set(x, "newSheet", js.Any.fromFunction0(value))
-    
-    inline def setNewSheetProperties(value: () => SheetProperties): Self = StObject.set(x, "newSheetProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewSortRangeRequest(value: () => SortRangeRequest): Self = StObject.set(x, "newSortRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewSortSpec(value: () => SortSpec): Self = StObject.set(x, "newSortSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewSourceAndDestination(value: () => SourceAndDestination): Self = StObject.set(x, "newSourceAndDestination", js.Any.fromFunction0(value))
-    
-    inline def setNewSpreadsheet(value: () => typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet): Self = StObject.set(x, "newSpreadsheet", js.Any.fromFunction0(value))
-    
-    inline def setNewSpreadsheetProperties(value: () => SpreadsheetProperties): Self = StObject.set(x, "newSpreadsheetProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewTextFormat(value: () => TextFormat): Self = StObject.set(x, "newTextFormat", js.Any.fromFunction0(value))
-    
-    inline def setNewTextFormatRun(value: () => TextFormatRun): Self = StObject.set(x, "newTextFormatRun", js.Any.fromFunction0(value))
-    
-    inline def setNewTextPosition(value: () => TextPosition): Self = StObject.set(x, "newTextPosition", js.Any.fromFunction0(value))
-    
-    inline def setNewTextRotation(value: () => TextRotation): Self = StObject.set(x, "newTextRotation", js.Any.fromFunction0(value))
-    
-    inline def setNewTextToColumnsRequest(value: () => TextToColumnsRequest): Self = StObject.set(x, "newTextToColumnsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewTreemapChartColorScale(value: () => TreemapChartColorScale): Self = StObject.set(x, "newTreemapChartColorScale", js.Any.fromFunction0(value))
-    
-    inline def setNewTreemapChartSpec(value: () => TreemapChartSpec): Self = StObject.set(x, "newTreemapChartSpec", js.Any.fromFunction0(value))
-    
-    inline def setNewUnmergeCellsRequest(value: () => UnmergeCellsRequest): Self = StObject.set(x, "newUnmergeCellsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateBandingRequest(value: () => UpdateBandingRequest): Self = StObject.set(x, "newUpdateBandingRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateBordersRequest(value: () => UpdateBordersRequest): Self = StObject.set(x, "newUpdateBordersRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateCellsRequest(value: () => UpdateCellsRequest): Self = StObject.set(x, "newUpdateCellsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateChartSpecRequest(value: () => UpdateChartSpecRequest): Self = StObject.set(x, "newUpdateChartSpecRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateConditionalFormatRuleRequest(value: () => UpdateConditionalFormatRuleRequest): Self = StObject.set(x, "newUpdateConditionalFormatRuleRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateDeveloperMetadataRequest(value: () => UpdateDeveloperMetadataRequest): Self = StObject.set(x, "newUpdateDeveloperMetadataRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateDimensionGroupRequest(value: () => UpdateDimensionGroupRequest): Self = StObject.set(x, "newUpdateDimensionGroupRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateDimensionPropertiesRequest(value: () => UpdateDimensionPropertiesRequest): Self = StObject.set(x, "newUpdateDimensionPropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateEmbeddedObjectPositionRequest(value: () => UpdateEmbeddedObjectPositionRequest): Self = StObject.set(x, "newUpdateEmbeddedObjectPositionRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateFilterViewRequest(value: () => UpdateFilterViewRequest): Self = StObject.set(x, "newUpdateFilterViewRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateNamedRangeRequest(value: () => UpdateNamedRangeRequest): Self = StObject.set(x, "newUpdateNamedRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateProtectedRangeRequest(value: () => UpdateProtectedRangeRequest): Self = StObject.set(x, "newUpdateProtectedRangeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateSheetPropertiesRequest(value: () => UpdateSheetPropertiesRequest): Self = StObject.set(x, "newUpdateSheetPropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateSpreadsheetPropertiesRequest(value: () => UpdateSpreadsheetPropertiesRequest): Self = StObject.set(x, "newUpdateSpreadsheetPropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewValueRange(value: () => ValueRange): Self = StObject.set(x, "newValueRange", js.Any.fromFunction0(value))
-    
-    inline def setNewWaterfallChartColumnStyle(value: () => WaterfallChartColumnStyle): Self = StObject.set(x, "newWaterfallChartColumnStyle", js.Any.fromFunction0(value))
-    
-    inline def setNewWaterfallChartCustomSubtotal(value: () => WaterfallChartCustomSubtotal): Self = StObject.set(x, "newWaterfallChartCustomSubtotal", js.Any.fromFunction0(value))
-    
-    inline def setNewWaterfallChartDomain(value: () => WaterfallChartDomain): Self = StObject.set(x, "newWaterfallChartDomain", js.Any.fromFunction0(value))
-    
-    inline def setNewWaterfallChartSeries(value: () => WaterfallChartSeries): Self = StObject.set(x, "newWaterfallChartSeries", js.Any.fromFunction0(value))
-    
-    inline def setNewWaterfallChartSpec(value: () => WaterfallChartSpec): Self = StObject.set(x, "newWaterfallChartSpec", js.Any.fromFunction0(value))
-    
-    inline def setSpreadsheets(value: SpreadsheetsCollection): Self = StObject.set(x, "Spreadsheets", value.asInstanceOf[js.Any])
-    
-    inline def setSpreadsheetsUndefined: Self = StObject.set(x, "Spreadsheets", js.undefined)
   }
 }

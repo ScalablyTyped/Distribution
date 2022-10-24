@@ -17,9 +17,9 @@ object distVocabulariesJtdErrorMod {
   
   inline def typeError(t: String): KeywordErrorDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("typeError")(t.asInstanceOf[js.Any]).asInstanceOf[KeywordErrorDefinition]
   
-  inline def typeErrorMessage(hasParentSchema: KeywordErrorCxt, t: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("typeErrorMessage")(hasParentSchema.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def typeErrorMessage(param0: KeywordErrorCxt, t: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("typeErrorMessage")(param0.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def typeErrorParams(hasParentSchema: KeywordErrorCxt, t: String): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("typeErrorParams")(hasParentSchema.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Code]
+  inline def typeErrorParams(param0: KeywordErrorCxt, t: String): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("typeErrorParams")(param0.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Code]
   
   type JTDTypeError[K /* <: String */, T /* <: String */, S] = ErrorObject[K, Nullable[T], S]
 }

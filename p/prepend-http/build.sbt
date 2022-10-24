@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "prepend-http"
-version := "4.0.0-ee5dba"
-scalaVersion := "3.1.2"
+version := "4.0.0-f069a6"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

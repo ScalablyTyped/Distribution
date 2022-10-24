@@ -17,7 +17,7 @@ object XML {
   inline def escapeAndroidString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeAndroidString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def format(manifest: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(manifest.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def format(manifest: Any, hasIndentLevelNewline: IndentLevel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(manifest.asInstanceOf[js.Any], hasIndentLevelNewline.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(manifest: Any, param1: IndentLevel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(manifest.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def parseXMLAsync(contents: String): js.Promise[XMLObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXMLAsync")(contents.asInstanceOf[js.Any]).asInstanceOf[js.Promise[XMLObject]]
   

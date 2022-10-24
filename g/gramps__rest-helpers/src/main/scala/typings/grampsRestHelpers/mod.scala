@@ -34,7 +34,7 @@ object mod {
   @JSImport("@gramps/rest-helpers", "GraphQLModel")
   @js.native
   open class GraphQLModel protected () extends StObject {
-    def this(has: Any) = this()
+    def this(param0: Any) = this()
     
     var connector: GraphQLConnector = js.native
   }

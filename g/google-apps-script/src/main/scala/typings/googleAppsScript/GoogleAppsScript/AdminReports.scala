@@ -34,31 +34,6 @@ object AdminReports {
     __obj.asInstanceOf[AdminReports]
   }
   
-  extension [Self <: AdminReports](x: Self) {
-    
-    inline def setActivities(value: ActivitiesCollection): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
-    
-    inline def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
-    
-    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
-    
-    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
-    
-    inline def setCustomerUsageReports(value: CustomerUsageReportsCollection): Self = StObject.set(x, "CustomerUsageReports", value.asInstanceOf[js.Any])
-    
-    inline def setCustomerUsageReportsUndefined: Self = StObject.set(x, "CustomerUsageReports", js.undefined)
-    
-    inline def setEntityUsageReports(value: EntityUsageReportsCollection): Self = StObject.set(x, "EntityUsageReports", value.asInstanceOf[js.Any])
-    
-    inline def setEntityUsageReportsUndefined: Self = StObject.set(x, "EntityUsageReports", js.undefined)
-    
-    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
-    
-    inline def setUserUsageReport(value: UserUsageReportCollection): Self = StObject.set(x, "UserUsageReport", value.asInstanceOf[js.Any])
-    
-    inline def setUserUsageReportUndefined: Self = StObject.set(x, "UserUsageReport", js.undefined)
-  }
-  
   object Collection {
     
     @js.native
@@ -119,6 +94,31 @@ object AdminReports {
       // Retrieves a report which is a collection of properties / statistics for a set of users.
       def get(userKey: String, date: String, optionalArgs: js.Object): UsageReports = js.native
     }
+  }
+  
+  extension [Self <: AdminReports](x: Self) {
+    
+    inline def setActivities(value: ActivitiesCollection): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
+    
+    inline def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
+    
+    inline def setChannels(value: ChannelsCollection): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    
+    inline def setCustomerUsageReports(value: CustomerUsageReportsCollection): Self = StObject.set(x, "CustomerUsageReports", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerUsageReportsUndefined: Self = StObject.set(x, "CustomerUsageReports", js.undefined)
+    
+    inline def setEntityUsageReports(value: EntityUsageReportsCollection): Self = StObject.set(x, "EntityUsageReports", value.asInstanceOf[js.Any])
+    
+    inline def setEntityUsageReportsUndefined: Self = StObject.set(x, "EntityUsageReports", js.undefined)
+    
+    inline def setNewChannel(value: () => Channel): Self = StObject.set(x, "newChannel", js.Any.fromFunction0(value))
+    
+    inline def setUserUsageReport(value: UserUsageReportCollection): Self = StObject.set(x, "UserUsageReport", value.asInstanceOf[js.Any])
+    
+    inline def setUserUsageReportUndefined: Self = StObject.set(x, "UserUsageReport", js.undefined)
   }
   
   object Schema {

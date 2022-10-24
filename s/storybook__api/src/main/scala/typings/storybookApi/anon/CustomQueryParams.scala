@@ -38,9 +38,9 @@ trait CustomQueryParams extends StObject {
   var location: PartialLocation = js.native
   
   def navigate(to: String): Unit = js.native
-  def navigate(to: String, hasPlainOptions: Any): Unit = js.native
+  def navigate(to: String, param1: Any): Unit = js.native
   def navigate(to: Double): Unit = js.native
-  def navigate(to: Double, hasPlainOptions: Any): Unit = js.native
+  def navigate(to: Double, param1: Any): Unit = js.native
   
   var notifications: js.Array[Notification] = js.native
   

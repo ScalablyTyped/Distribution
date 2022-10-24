@@ -12,7 +12,7 @@ object distSrcProtractorProtractorHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createStoryUrl(hasKindStoryWithExamples: StoryUrlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoryUrl")(hasKindStoryWithExamples.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createStoryUrl(param0: StoryUrlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoryUrl")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getElementByDataHook(dataHook: String): ElementFinder = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementByDataHook")(dataHook.asInstanceOf[js.Any]).asInstanceOf[ElementFinder]
   

@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "iitc"
-version := "0.30-dt-20211202Z-ce2977"
-scalaVersion := "3.1.2"
+version := "0.30-dt-20211202Z-e35e8d"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20220713Z-feb617",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-8d8789",
-  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20211202Z-cf1e23",
-  "org.scalablytyped" %%% "leaflet" % "1.9-dt-20221015Z-b1ee87",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-a98916",
-  "org.scalablytyped" %%% "spectrum" % "1.8-dt-20220624Z-f95476",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20211202Z-14cbf1")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20220713Z-c7b900",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-9d6f35",
+  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20211202Z-13bc62",
+  "org.scalablytyped" %%% "leaflet" % "1.9-dt-20221015Z-ca4fdf",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-cfd9ff",
+  "org.scalablytyped" %%% "spectrum" % "1.8-dt-20220624Z-9168d7",
+  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20211202Z-d3d306")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

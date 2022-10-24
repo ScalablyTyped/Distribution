@@ -207,8 +207,8 @@ inline def createCompoundExpression(
 inline def createConditionalExpression(test: JSChildNode, consequent: JSChildNode, alternate: JSChildNode): ConditionalExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createConditionalExpression")(test.asInstanceOf[js.Any], consequent.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[ConditionalExpression]
 inline def createConditionalExpression(test: JSChildNode, consequent: JSChildNode, alternate: JSChildNode, newline: Boolean): ConditionalExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("createConditionalExpression")(test.asInstanceOf[js.Any], consequent.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any], newline.asInstanceOf[js.Any])).asInstanceOf[ConditionalExpression]
 
-inline def createForLoopParams(hasValueKeyIndex: ForParseResult): js.Array[ExpressionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForLoopParams")(hasValueKeyIndex.asInstanceOf[js.Any]).asInstanceOf[js.Array[ExpressionNode]]
-inline def createForLoopParams(hasValueKeyIndex: ForParseResult, memoArgs: js.Array[ExpressionNode]): js.Array[ExpressionNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("createForLoopParams")(hasValueKeyIndex.asInstanceOf[js.Any], memoArgs.asInstanceOf[js.Any])).asInstanceOf[js.Array[ExpressionNode]]
+inline def createForLoopParams(param0: ForParseResult): js.Array[ExpressionNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForLoopParams")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[ExpressionNode]]
+inline def createForLoopParams(param0: ForParseResult, memoArgs: js.Array[ExpressionNode]): js.Array[ExpressionNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("createForLoopParams")(param0.asInstanceOf[js.Any], memoArgs.asInstanceOf[js.Any])).asInstanceOf[js.Array[ExpressionNode]]
 
 inline def createFunctionExpression(
   params: js.UndefOr[ExpressionNode | String | (js.Array[ExpressionNode | String])],
@@ -257,10 +257,7 @@ inline def createStructuralDirectiveTransform(name: js.RegExp, fn: StructuralDir
 
 inline def createTemplateLiteral(elements: js.Array[String | JSChildNode]): TemplateLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateLiteral")(elements.asInstanceOf[js.Any]).asInstanceOf[TemplateLiteral]
 
-inline def createTransformContext(
-  root: RootNode,
-  hasFilenamePrefixIdentifiersHoistStaticCacheHandlersNodeTransformsDirectiveTransformsTransformHoistIsBuiltInComponentIsCustomElementExpressionPluginsScopeIdSlottedSsrInSSRSsrCssVarsBindingMetadataInlineIsTSOnErrorOnWarnCompatConfig: TransformOptions
-): TransformContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransformContext")(root.asInstanceOf[js.Any], hasFilenamePrefixIdentifiersHoistStaticCacheHandlersNodeTransformsDirectiveTransformsTransformHoistIsBuiltInComponentIsCustomElementExpressionPluginsScopeIdSlottedSsrInSSRSsrCssVarsBindingMetadataInlineIsTSOnErrorOnWarnCompatConfig.asInstanceOf[js.Any])).asInstanceOf[TransformContext]
+inline def createTransformContext(root: RootNode, param1: TransformOptions): TransformContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransformContext")(root.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TransformContext]
 
 inline def createVNodeCall(
   context: TransformContext | Null,
@@ -376,7 +373,7 @@ inline def isVSlot_0(
 
 inline def locStub: SourceLocation = ^.asInstanceOf[js.Dynamic].selectDynamic("locStub").asInstanceOf[SourceLocation]
 
-inline def makeBlock(node: VNodeCall, hasHelperRemoveHelperInSSR: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeBlock")(node.asInstanceOf[js.Any], hasHelperRemoveHelperInSSR.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def makeBlock(node: VNodeCall, param1: TransformContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeBlock")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def noopDirectiveTransform: DirectiveTransform = ^.asInstanceOf[js.Dynamic].selectDynamic("noopDirectiveTransform").asInstanceOf[DirectiveTransform]
 

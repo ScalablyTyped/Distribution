@@ -20,5 +20,5 @@ object libAnimationsGeneratorsKeyframesMod {
   
   inline def defaultOffset(values: js.Array[Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOffset")(values.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def keyframes[V](hasFromToEaseOffsetDuration: KeyframeOptions[Double]): Animation[Double | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(hasFromToEaseOffsetDuration.asInstanceOf[js.Any]).asInstanceOf[Animation[Double | String]]
+  inline def keyframes[V](param0: KeyframeOptions[Double]): Animation[Double | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(param0.asInstanceOf[js.Any]).asInstanceOf[Animation[Double | String]]
 }

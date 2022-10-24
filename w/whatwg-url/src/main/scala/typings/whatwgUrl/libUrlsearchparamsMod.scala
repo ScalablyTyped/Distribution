@@ -21,7 +21,7 @@ object libUrlsearchparamsMod {
   val ^ : js.Any = js.native
   
   inline def convert(globalObject: js.Object, obj: Any): implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(globalObject.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[implementation]
-  inline def convert(globalObject: js.Object, obj: Any, hasContext: Context): implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(globalObject.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], hasContext.asInstanceOf[js.Any])).asInstanceOf[implementation]
+  inline def convert(globalObject: js.Object, obj: Any, param2: Context): implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(globalObject.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[implementation]
   
   inline def create(globalObject: js.Object): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(globalObject.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
   inline def create(

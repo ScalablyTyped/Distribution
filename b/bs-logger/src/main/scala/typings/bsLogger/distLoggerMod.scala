@@ -15,7 +15,7 @@ object distLoggerMod {
   val ^ : js.Any = js.native
   
   inline def createLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")().asInstanceOf[Logger]
-  inline def createLogger(hasBaseContextLogTargetsLogTranslator: CreateLoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(hasBaseContextLogTargetsLogTranslator.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def createLogger(param0: CreateLoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(param0.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   inline def lastSequenceNumber(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lastSequenceNumber")().asInstanceOf[Double]
   

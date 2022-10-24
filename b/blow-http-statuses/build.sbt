@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "blow-http-statuses"
-version := "0.2.4-e950ad"
-scalaVersion := "3.1.2"
+version := "0.2.4-6a3c1d"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

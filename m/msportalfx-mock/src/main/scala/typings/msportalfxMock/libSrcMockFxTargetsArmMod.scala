@@ -15,7 +15,7 @@ object libSrcMockFxTargetsArmMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createARMTarget(hasHostLoadRequestsStoreRequestsOnBeforeRequestMatchCustomMatchRequest: ARMDefinitionConfiguration): TargetDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createARMTarget")(hasHostLoadRequestsStoreRequestsOnBeforeRequestMatchCustomMatchRequest.asInstanceOf[js.Any]).asInstanceOf[TargetDefinition]
+  inline def createARMTarget(param0: ARMDefinitionConfiguration): TargetDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createARMTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[TargetDefinition]
   
   inline def getNormalizedUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   

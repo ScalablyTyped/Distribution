@@ -12,5 +12,5 @@ object libUtilsComputeOffsetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasReferenceElementPlacement: Element): Offsets = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasReferenceElementPlacement.asInstanceOf[js.Any]).asInstanceOf[Offsets]
+  inline def default(param0: Element): Offsets = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Offsets]
 }

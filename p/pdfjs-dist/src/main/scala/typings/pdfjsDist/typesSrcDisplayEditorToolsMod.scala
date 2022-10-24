@@ -118,7 +118,7 @@ object typesSrcDisplayEditorToolsMod {
       */
     def onEditingAction(details: js.Object): Unit = js.native
     
-    def onPageChanging(hasPageNumber: PageNumber): Unit = js.native
+    def onPageChanging(param0: PageNumber): Unit = js.native
     
     /**
       * Paste a previously copied editor.
@@ -283,7 +283,7 @@ object typesSrcDisplayEditorToolsMod {
       * Add a new couple of commands to be used in case of redo/undo.
       * @param {addOptions} options
       */
-    def add(hasCmdUndoMustExecTypeOverwriteIfSameTypeKeepUndo: Cmd): Unit = js.native
+    def add(param0: Cmd): Unit = js.native
     
     def destroy(): Unit = js.native
     

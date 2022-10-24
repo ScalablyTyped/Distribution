@@ -12,7 +12,7 @@ object libJsonldSoftwareAppMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverridePriceCurrencyPriceAggregateRatingReviewRest: SoftwareAppJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverridePriceCurrencyPriceAggregateRatingReviewRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: SoftwareAppJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait SoftwareAppJsonLdProps
     extends StObject

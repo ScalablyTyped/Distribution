@@ -20,7 +20,7 @@ object distDeclarationsSrcSpringContextMod {
   }
   object SpringContext {
     
-    inline def apply(hasChildrenProps: PropsWithChildren[SpringContext]): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: PropsWithChildren[SpringContext]): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@react-spring/core/dist/declarations/src/SpringContext", "SpringContext")
     @js.native

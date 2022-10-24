@@ -18,7 +18,7 @@ object buildSrcCompileMarkEncodePositionRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def rectBinRef(hasFieldDefScaleNameBandPositionOffset: FieldDef): VgValueRef = ^.asInstanceOf[js.Dynamic].applyDynamic("rectBinRef")(hasFieldDefScaleNameBandPositionOffset.asInstanceOf[js.Any]).asInstanceOf[VgValueRef]
+  inline def rectBinRef(param0: FieldDef): VgValueRef = ^.asInstanceOf[js.Dynamic].applyDynamic("rectBinRef")(param0.asInstanceOf[js.Any]).asInstanceOf[VgValueRef]
   
   inline def rectPosition(model: UnitModel, channel: x | y | theta | radius): VgEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("rectPosition")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[VgEncodeEntry]
 }

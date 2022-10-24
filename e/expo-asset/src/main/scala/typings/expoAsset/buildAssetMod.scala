@@ -10,7 +10,7 @@ object buildAssetMod {
   @JSImport("expo-asset/build/Asset", "Asset")
   @js.native
   open class Asset protected () extends StObject {
-    def this(hasNameTypeHashUriWidthHeight: AssetDescriptor) = this()
+    def this(param0: AssetDescriptor) = this()
     
     /**
       * @private

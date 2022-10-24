@@ -1,6 +1,7 @@
 package typings.puppeteerCore.mod
 
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfo
+import typings.puppeteerCore.anon.PartialBrowserFetcherOptiPath
 import typings.puppeteerCore.mod.^
 import typings.std.Capitalize
 import typings.std.Lowercase
@@ -19,7 +20,7 @@ inline def clearCustomQueryHandlers(): Unit = ^.asInstanceOf[js.Dynamic].applyDy
 
 inline def connect(options: ConnectOptions): js.Promise[Browser] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Browser]]
 
-inline def createBrowserFetcher(options: BrowserFetcherOptions): BrowserFetcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserFetcher")(options.asInstanceOf[js.Any]).asInstanceOf[BrowserFetcher]
+inline def createBrowserFetcher(options: PartialBrowserFetcherOptiPath): BrowserFetcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserFetcher")(options.asInstanceOf[js.Any]).asInstanceOf[BrowserFetcher]
 
 inline def customQueryHandlerNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("customQueryHandlerNames")().asInstanceOf[js.Array[String]]
 
@@ -27,7 +28,7 @@ inline def defaultArgs(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDyn
 inline def defaultArgs(options: BrowserLaunchArgumentOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultArgs")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 
 inline def executablePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")().asInstanceOf[String]
-inline def executablePath(channel: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def executablePath(channel: ChromeReleaseChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("executablePath")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
 
 inline def launch(): js.Promise[Browser] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[Browser]]
 inline def launch(options: PuppeteerLaunchOptions): js.Promise[Browser] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Browser]]

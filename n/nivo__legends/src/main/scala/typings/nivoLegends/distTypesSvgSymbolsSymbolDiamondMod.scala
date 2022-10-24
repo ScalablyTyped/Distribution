@@ -12,5 +12,5 @@ object distTypesSvgSymbolsSymbolDiamondMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SymbolDiamond(hasXYSizeFillOpacityBorderWidthBorderColor: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolDiamond")(hasXYSizeFillOpacityBorderWidthBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SymbolDiamond(param0: SymbolProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SymbolDiamond")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

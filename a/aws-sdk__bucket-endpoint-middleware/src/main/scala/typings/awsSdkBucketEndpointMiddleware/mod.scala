@@ -15,11 +15,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def bucketEndpointMiddleware(): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")().asInstanceOf[BuildMiddleware[Any, Any]]
-  inline def bucketEndpointMiddleware(
-    hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint: bucketEndpointMiddlewareConfiguration
-  ): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")(hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Any, Any]]
+  inline def bucketEndpointMiddleware(param0: bucketEndpointMiddlewareConfiguration): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")(param0.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Any, Any]]
   
-  inline def bucketHostname(
-    hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible: BucketHostnameParameters
-  ): BucketHostname_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketHostname")(hasAccelerateEndpointBaseHostnameBucketNameDualstackEndpointPathStyleEndpointSslCompatible.asInstanceOf[js.Any]).asInstanceOf[BucketHostname_]
+  inline def bucketHostname(param0: BucketHostnameParameters): BucketHostname_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketHostname")(param0.asInstanceOf[js.Any]).asInstanceOf[BucketHostname_]
 }

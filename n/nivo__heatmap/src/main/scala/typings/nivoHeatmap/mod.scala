@@ -66,13 +66,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HeatMap[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: HeatMapSvgProps[Datum, ExtraProps]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMap")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeatMap[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](param0: HeatMapSvgProps[Datum, ExtraProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMap")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def HeatMapCanvas[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps: HeatMapCanvasProps[Datum, ExtraProps]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCanvas")(hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeatMapCanvas[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](param0: HeatMapCanvasProps[Datum, ExtraProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def ResponsiveHeatMap[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](props: Omit[HeatMapSvgProps[Datum, ExtraProps], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveHeatMap")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -382,13 +378,13 @@ object mod {
   }
   
   inline def computeCells[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasData_width_heightXInnerPaddingXOuterPaddingYInnerPaddingYOuterPaddingForceSquare: (Data[Datum, ExtraProps]) & (Pick[
+    param0: (Data[Datum, ExtraProps]) & (Pick[
       HeatMapCommonProps[Datum], 
       forceSquare | xInnerPadding | xOuterPadding | yInnerPadding | yOuterPadding
     ])
-  ): Cells[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCells")(hasData_width_heightXInnerPaddingXOuterPaddingYInnerPaddingYOuterPaddingForceSquare.asInstanceOf[js.Any]).asInstanceOf[Cells[Datum]]
+  ): Cells[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCells")(param0.asInstanceOf[js.Any]).asInstanceOf[Cells[Datum]]
   
-  inline def computeLayout(has_width_heightRowsColumnsForceSquare: Columns): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLayout")(has_width_heightRowsColumnsForceSquare.asInstanceOf[js.Any]).asInstanceOf[Height]
+  inline def computeLayout(param0: Columns): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[Height]
   
   inline def computeSizeScale(size: SizeVariationConfig, min: Double, max: Double): js.Function1[/* value */ Double | Null, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSizeScale")(size.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Double | Null, Double]]
   
@@ -564,18 +560,18 @@ object mod {
   ): js.Array[BoundAnnotation[ComputedCell[Datum]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCellAnnotations")(cells.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any])).asInstanceOf[js.Array[BoundAnnotation[ComputedCell[Datum]]]]
   
   inline def useComputeCells[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasDataWidthHeightXInnerPaddingXOuterPaddingYInnerPaddingYOuterPaddingForceSquare: (Data[Datum, ExtraProps]) & (Pick[
+    param0: (Data[Datum, ExtraProps]) & (Pick[
       HeatMapCommonProps[Datum], 
       forceSquare | xInnerPadding | xOuterPadding | yInnerPadding | yOuterPadding
     ])
-  ): Cells[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useComputeCells")(hasDataWidthHeightXInnerPaddingXOuterPaddingYInnerPaddingYOuterPaddingForceSquare.asInstanceOf[js.Any]).asInstanceOf[Cells[Datum]]
+  ): Cells[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useComputeCells")(param0.asInstanceOf[js.Any]).asInstanceOf[Cells[Datum]]
   
   inline def useHeatMap[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasDataValueFormat_width_heightXOuterPaddingXInnerPaddingYOuterPaddingYInnerPaddingForceSquareSizeVariationColorsEmptyColorOpacityActiveOpacityInactiveOpacityBorderColorLabelLabelTextColorHoverTarget: (Width[Datum, ExtraProps]) & (Partial[
+    param0: (Width[Datum, ExtraProps]) & (Partial[
       Pick[
         HeatMapCommonProps[Datum], 
         borderColor | opacity | label | labelTextColor | valueFormat | forceSquare | sizeVariation | xInnerPadding | xOuterPadding | yInnerPadding | yOuterPadding | activeOpacity | inactiveOpacity | colors | emptyColor | hoverTarget
       ]
     ])
-  ): ActiveCell[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHeatMap")(hasDataValueFormat_width_heightXOuterPaddingXInnerPaddingYOuterPaddingYInnerPaddingForceSquareSizeVariationColorsEmptyColorOpacityActiveOpacityInactiveOpacityBorderColorLabelLabelTextColorHoverTarget.asInstanceOf[js.Any]).asInstanceOf[ActiveCell[Datum]]
+  ): ActiveCell[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHeatMap")(param0.asInstanceOf[js.Any]).asInstanceOf[ActiveCell[Datum]]
 }

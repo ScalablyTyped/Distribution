@@ -1,7 +1,7 @@
 
 # Scala.js typings for swc-node__register
 
-Typings are for version 1.5.1
+Typings are for version 1.5.4
 
 ## Library description:
 SWC node register

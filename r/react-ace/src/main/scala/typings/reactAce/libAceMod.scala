@@ -376,7 +376,7 @@ object libAceMod {
     
     def onChange(event: Any): Unit = js.native
     
-    def onCopy(hasText: Text): Unit = js.native
+    def onCopy(param0: Text): Unit = js.native
     
     def onCursorChange(event: Any): Unit = js.native
     
@@ -385,7 +385,7 @@ object libAceMod {
     def onInput(): Unit = js.native
     def onInput(event: Any): Unit = js.native
     
-    def onPaste(hasText: Text): Unit = js.native
+    def onPaste(param0: Text): Unit = js.native
     
     def onScroll(): Unit = js.native
     

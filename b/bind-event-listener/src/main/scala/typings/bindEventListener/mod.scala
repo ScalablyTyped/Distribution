@@ -14,7 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bind[Target /* <: EventTarget */, Type /* <: String */](target: Target, hasTypeListenerOptions: Binding[Target, Type]): UnbindFn = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], hasTypeListenerOptions.asInstanceOf[js.Any])).asInstanceOf[UnbindFn]
+  inline def bind[Target /* <: EventTarget */, Type /* <: String */](target: Target, param1: Binding[Target, Type]): UnbindFn = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[UnbindFn]
   
   inline def bindAll(target: EventTarget, bindings: js.Array[Binding[EventTarget, String]]): UnbindFn = (^.asInstanceOf[js.Dynamic].applyDynamic("bindAll")(target.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any])).asInstanceOf[UnbindFn]
   inline def bindAll(target: EventTarget, bindings: js.Array[Binding[EventTarget, String]], sharedOptions: Boolean): UnbindFn = (^.asInstanceOf[js.Dynamic].applyDynamic("bindAll")(target.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any], sharedOptions.asInstanceOf[js.Any])).asInstanceOf[UnbindFn]

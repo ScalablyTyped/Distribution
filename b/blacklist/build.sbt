@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "blacklist"
-version := "1.1-dt-20211202Z-4e079b"
-scalaVersion := "3.1.2"
+version := "1.1-dt-20211202Z-d000d6"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

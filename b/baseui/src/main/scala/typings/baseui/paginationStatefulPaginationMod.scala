@@ -11,7 +11,7 @@ object paginationStatefulPaginationMod {
   
   object default {
     
-    inline def apply(hasNumPagesInitialStateStateReducerOnPageChangeProps: StatefulPaginationProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasNumPagesInitialStateStateReducerOnPageChangeProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: StatefulPaginationProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("baseui/pagination/stateful-pagination", JSImport.Default)
     @js.native

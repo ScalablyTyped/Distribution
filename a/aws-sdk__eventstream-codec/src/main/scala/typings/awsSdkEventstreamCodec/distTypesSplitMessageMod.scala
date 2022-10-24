@@ -10,7 +10,7 @@ object distTypesSplitMessageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def splitMessage(hasByteLengthByteOffsetBuffer: js.typedarray.ArrayBufferView): MessageParts = ^.asInstanceOf[js.Dynamic].applyDynamic("splitMessage")(hasByteLengthByteOffsetBuffer.asInstanceOf[js.Any]).asInstanceOf[MessageParts]
+  inline def splitMessage(param0: js.typedarray.ArrayBufferView): MessageParts = ^.asInstanceOf[js.Dynamic].applyDynamic("splitMessage")(param0.asInstanceOf[js.Any]).asInstanceOf[MessageParts]
   
   trait MessageParts extends StObject {
     

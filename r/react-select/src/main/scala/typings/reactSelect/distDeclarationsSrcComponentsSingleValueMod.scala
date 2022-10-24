@@ -20,7 +20,7 @@ object distDeclarationsSrcComponentsSingleValueMod {
   
   inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: SingleValueProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def css[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsDisabledHasSpacingColors: SingleValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(hasIsDisabledHasSpacingColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def css[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: SingleValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
   @js.native
   trait SingleValueProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]

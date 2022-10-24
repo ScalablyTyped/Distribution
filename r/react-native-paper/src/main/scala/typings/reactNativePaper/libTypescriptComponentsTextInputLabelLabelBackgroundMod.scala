@@ -12,7 +12,5 @@ object libTypescriptComponentsTextInputLabelLabelBackgroundMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasParentStateHasPlaceholderStyleBaseLabelTranslateXTopPositionHasActiveOutlineLabelBackgroundColorRoundnessLabelStyleMaxFontSizeMultiplier: LabelBackgroundProps
-  ): js.Array[Element] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasParentStateHasPlaceholderStyleBaseLabelTranslateXTopPositionHasActiveOutlineLabelBackgroundColorRoundnessLabelStyleMaxFontSizeMultiplier.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element] | Null]
+  inline def default(param0: LabelBackgroundProps): js.Array[Element] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element] | Null]
 }

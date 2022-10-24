@@ -13,7 +13,5 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useStream[RawDatum /* <: StreamDatum */](
-    hasWidthHeightDataKeysLabelValueFormatOffsetTypeOrderCurveColorsBorderColorDotSizeDotColorDotBorderWidthDotBorderColor: BorderColor[RawDatum]
-  ): GetBorderColor = ^.asInstanceOf[js.Dynamic].applyDynamic("useStream")(hasWidthHeightDataKeysLabelValueFormatOffsetTypeOrderCurveColorsBorderColorDotSizeDotColorDotBorderWidthDotBorderColor.asInstanceOf[js.Any]).asInstanceOf[GetBorderColor]
+  inline def useStream[RawDatum /* <: StreamDatum */](param0: BorderColor[RawDatum]): GetBorderColor = ^.asInstanceOf[js.Dynamic].applyDynamic("useStream")(param0.asInstanceOf[js.Any]).asInstanceOf[GetBorderColor]
 }

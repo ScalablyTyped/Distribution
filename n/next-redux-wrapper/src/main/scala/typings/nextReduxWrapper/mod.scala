@@ -98,7 +98,7 @@ object mod {
     PreviewData
   ])
   
-  type GetInitialAppProps[P] = js.Function1[/* hasComponentCtx */ AppContext, js.Promise[AppInitialProps[Any] & PageProps[P]]]
+  type GetInitialAppProps[P] = js.Function1[/* param0 */ AppContext, js.Promise[AppInitialProps[Any] & PageProps[P]]]
   
   type GetInitialPageProps[P] = /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/shared/lib/utils.NextComponentType<next-redux-wrapper.next-redux-wrapper.next.NextPageContext<any>, any, P>['getInitialProps'] */ js.Any
   

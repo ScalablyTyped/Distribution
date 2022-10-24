@@ -35,11 +35,9 @@ object mod {
   @js.native
   val ListItem: ForwardRefExoticComponent[ListItemProps & RefAttributes[HTMLLIElement]] = js.native
   
-  inline def ListItemAddon(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps: ListItemAddonProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemAddon")(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ListItemAddon(param0: ListItemAddonProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemAddon")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def ListItemChildren(
-    hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren: ListItemChildrenProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemChildren")(hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ListItemChildren(param0: ListItemChildrenProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemChildren")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/list", "ListItemLink")
   @js.native
@@ -47,7 +45,7 @@ object mod {
     (ListItemLinkProps & (RefAttributes[HTMLAnchorElement | ElementType[Any]])) | PickListItemLinkWithCompo
   ] = js.native
   
-  inline def ListItemText(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemText")(hasClassNameSecondaryTextClassNameSecondaryTextChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ListItemText(param0: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ListItemText")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/list", "ListSubheader")
   @js.native
@@ -57,5 +55,5 @@ object mod {
   @js.native
   val SimpleListItem: ForwardRefExoticComponent[SimpleListItemProps & RefAttributes[HTMLLIElement]] = js.native
   
-  inline def getListItemHeight(hasHeightLeftAddonLeftAddonTypeRightAddonRightAddonTypeSecondaryText: SimpleListItemProps): ListItemHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("getListItemHeight")(hasHeightLeftAddonLeftAddonTypeRightAddonRightAddonTypeSecondaryText.asInstanceOf[js.Any]).asInstanceOf[ListItemHeight]
+  inline def getListItemHeight(param0: SimpleListItemProps): ListItemHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("getListItemHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[ListItemHeight]
 }

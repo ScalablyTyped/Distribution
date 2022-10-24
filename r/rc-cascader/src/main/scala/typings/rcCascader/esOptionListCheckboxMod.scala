@@ -14,7 +14,7 @@ object esOptionListCheckboxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasPrefixClsCheckedHalfCheckedDisabledOnClick: CheckboxProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsCheckedHalfCheckedDisabledOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: CheckboxProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CheckboxProps extends StObject {
     

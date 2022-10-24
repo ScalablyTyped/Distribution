@@ -120,7 +120,7 @@ object mod {
     extends StObject
        with BaseProps {
     
-    def render(hasOnline: typings.reactDetectOffline.anon.Online): Element | Null
+    def render(param0: typings.reactDetectOffline.anon.Online): Element | Null
   }
   object DetectorProps {
     

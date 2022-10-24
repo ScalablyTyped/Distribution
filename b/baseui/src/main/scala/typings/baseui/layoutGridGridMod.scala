@@ -14,9 +14,7 @@ object layoutGridGridMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasAlignBehaviorChildrenGridColumnsGridGapsGridGuttersGridMarginsGridMaxWidthGridStyleGridUnitOverrides: GridProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasAlignBehaviorChildrenGridColumnsGridGapsGridGuttersGridMarginsGridMaxWidthGridStyleGridUnitOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: GridProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/layout-grid/grid", "GridContext")
   @js.native

@@ -11,7 +11,7 @@ object toolsSrcMigrateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def migrateFiles(hasRootPathTranslationFilePathsMappingFilePathLogger: MigrateFilesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("migrateFiles")(hasRootPathTranslationFilePathsMappingFilePathLogger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def migrateFiles(param0: MigrateFilesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("migrateFiles")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait MigrateFilesOptions extends StObject {
     

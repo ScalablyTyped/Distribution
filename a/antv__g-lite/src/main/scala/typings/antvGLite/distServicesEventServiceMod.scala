@@ -136,7 +136,7 @@ object distServicesEventServiceMod {
     
     /* private */ var trackingData: Any = js.native
     
-    def viewport2Canvas(hasXY: PointLike): PointLike = js.native
+    def viewport2Canvas(param0: PointLike): PointLike = js.native
     
     def viewport2Client(canvas: PointLike): PointLike = js.native
   }

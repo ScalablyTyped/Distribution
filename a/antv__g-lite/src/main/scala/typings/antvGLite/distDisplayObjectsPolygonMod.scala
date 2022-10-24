@@ -89,7 +89,7 @@ object distDisplayObjectsPolygonMod {
   @JSImport("@antv/g-lite/dist/display-objects/Polygon", "Polygon")
   @js.native
   open class Polygon () extends DisplayObject[PolygonStyleProps, ParsedPolygonStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[PolygonStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[PolygonStyleProps]) = this()
     
     def attributeChangedCallback(
       attrName: pointerEvents,

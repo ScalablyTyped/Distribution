@@ -21,11 +21,7 @@ object typesLatestSrcPoliciesLogPolicyMod {
   @js.native
   open class LogPolicy_ protected () extends BaseRequestPolicy {
     def this(nextPolicy: RequestPolicy, options: RequestPolicyOptions) = this()
-    def this(
-      nextPolicy: RequestPolicy,
-      options: RequestPolicyOptions,
-      hasLoggerAllowedHeaderNamesAllowedQueryParameters: LogPolicyOptions
-    ) = this()
+    def this(nextPolicy: RequestPolicy, options: RequestPolicyOptions, param2: LogPolicyOptions) = this()
     
     /**
       * Header names whose values will be logged when logging is enabled. Defaults to

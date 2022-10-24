@@ -45,7 +45,7 @@ object offsetPluginMod {
       var offsetBy: js.UndefOr[
             js.ThisFunction1[
               /* this */ typings.interactjsTypes.coreInteractionMod.Interaction[ActionName], 
-              /* hasXY */ Point, 
+              /* param1 */ Point, 
               Unit
             ]
           ] = js.undefined
@@ -64,7 +64,7 @@ object offsetPluginMod {
         inline def setOffsetBy(
           value: js.ThisFunction1[
                   /* this */ typings.interactjsTypes.coreInteractionMod.Interaction[ActionName], 
-                  /* hasXY */ Point, 
+                  /* param1 */ Point, 
                   Unit
                 ]
         ): Self = StObject.set(x, "offsetBy", value.asInstanceOf[js.Any])

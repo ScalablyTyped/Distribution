@@ -11,7 +11,7 @@ object distAutocompleteSrcHiddenAutocompleteMod {
   
   object HiddenAutocomplete {
     
-    inline def apply(hasNameValueRequiredValidationStateRest: HiddenAutocompleteProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasNameValueRequiredValidationStateRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: HiddenAutocompleteProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@orbit-ui/react-components/dist/autocomplete/src/HiddenAutocomplete", "HiddenAutocomplete")
     @js.native

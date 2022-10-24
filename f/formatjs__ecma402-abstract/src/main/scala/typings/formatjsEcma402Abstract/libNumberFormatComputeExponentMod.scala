@@ -12,5 +12,5 @@ object libNumberFormatComputeExponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ComputeExponent(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `0`): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponent")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def ComputeExponent(numberFormat: NumberFormat, x: Double, param2: `0`): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponent")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
 }

@@ -85,11 +85,11 @@ trait Props extends StObject {
   
   var renderKey: js.UndefOr[Double] = js.undefined
   
-  var renderNextButton: js.UndefOr[js.Function1[/* hasIsDisabled */ IsDisabled, Any]] = js.undefined
+  var renderNextButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, Any]] = js.undefined
   
-  var renderPlayPauseButton: js.UndefOr[js.Function1[/* hasIsPlaying */ IsPlaying, Any]] = js.undefined
+  var renderPlayPauseButton: js.UndefOr[js.Function1[/* param0 */ IsPlaying, Any]] = js.undefined
   
-  var renderPrevButton: js.UndefOr[js.Function1[/* hasIsDisabled */ IsDisabled, Any]] = js.undefined
+  var renderPrevButton: js.UndefOr[js.Function1[/* param0 */ IsDisabled, Any]] = js.undefined
   
   var renderSlideInfo: js.UndefOr[js.Function1[/* e */ SlideInfo, Any]] = js.undefined
   
@@ -244,15 +244,15 @@ object Props {
     
     inline def setRenderKeyUndefined: Self = StObject.set(x, "renderKey", js.undefined)
     
-    inline def setRenderNextButton(value: /* hasIsDisabled */ IsDisabled => Any): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
+    inline def setRenderNextButton(value: /* param0 */ IsDisabled => Any): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
     
     inline def setRenderNextButtonUndefined: Self = StObject.set(x, "renderNextButton", js.undefined)
     
-    inline def setRenderPlayPauseButton(value: /* hasIsPlaying */ IsPlaying => Any): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
+    inline def setRenderPlayPauseButton(value: /* param0 */ IsPlaying => Any): Self = StObject.set(x, "renderPlayPauseButton", js.Any.fromFunction1(value))
     
     inline def setRenderPlayPauseButtonUndefined: Self = StObject.set(x, "renderPlayPauseButton", js.undefined)
     
-    inline def setRenderPrevButton(value: /* hasIsDisabled */ IsDisabled => Any): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
+    inline def setRenderPrevButton(value: /* param0 */ IsDisabled => Any): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
     
     inline def setRenderPrevButtonUndefined: Self = StObject.set(x, "renderPrevButton", js.undefined)
     

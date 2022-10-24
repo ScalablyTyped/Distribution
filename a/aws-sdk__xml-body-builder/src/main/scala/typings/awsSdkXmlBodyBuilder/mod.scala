@@ -17,7 +17,7 @@ object mod {
     /* private */ val base64Encoder: Any = js.native
     
     def build(
-      hasOperationMemberHasPayloadInputMemberName: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializerBuildOptions */ Any
+      param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializerBuildOptions */ Any
     ): String = js.native
     
     /* private */ var formatMap: Any = js.native

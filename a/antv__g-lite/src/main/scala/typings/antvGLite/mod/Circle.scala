@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Circle ()
   extends typings.antvGLite.distDisplayObjectsMod.Circle {
-  def this(hasStyleRest: DisplayObjectConfig[CircleStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[CircleStyleProps]) = this()
 }

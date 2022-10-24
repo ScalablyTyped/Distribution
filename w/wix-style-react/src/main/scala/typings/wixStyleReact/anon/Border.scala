@@ -1,8 +1,8 @@
 package typings.wixStyleReact.anon
 
 import typings.react.mod.ReactNode
-import typings.wixStyleReact.commonMod.TooltipCommonProps
-import typings.wixStyleReact.toggleButtonMod.ToggleButtonSkin
+import typings.wixStyleReact.distTypesCommonMod.TooltipCommonProps
+import typings.wixStyleReact.distTypesToggleButtonMod.ToggleButtonSkin
 import typings.wixStyleReact.wixStyleReactStrings.bottom
 import typings.wixStyleReact.wixStyleReactStrings.end
 import typings.wixStyleReact.wixStyleReactStrings.large

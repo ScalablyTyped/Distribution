@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "lua-json"
-version := "1.0-dt-20220624Z-6e9602"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220624Z-d7cb25"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -22,7 +22,7 @@ object distBuildWebpackPluginsMiddlewarePluginMod {
   open class default protected ()
     extends StObject
        with MiddlewarePlugin {
-    def this(hasDevSriEnabled: SriEnabled) = this()
+    def this(param0: SriEnabled) = this()
     
     /* CompleteClass */
     @JSName("apply")
@@ -35,7 +35,7 @@ object distBuildWebpackPluginsMiddlewarePluginMod {
     override val sriEnabled: Any = js.native
   }
   
-  inline def handleWebpackExtenalForEdgeRuntime(hasRequestContextContextInfoGetResolve: Context): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleWebpackExtenalForEdgeRuntime")(hasRequestContextContextInfoGetResolve.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def handleWebpackExtenalForEdgeRuntime(param0: Context): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleWebpackExtenalForEdgeRuntime")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
   trait EdgeFunctionDefinition extends StObject {
     

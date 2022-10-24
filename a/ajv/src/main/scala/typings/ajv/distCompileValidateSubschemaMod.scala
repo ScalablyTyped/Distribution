@@ -18,18 +18,11 @@ object distCompileValidateSubschemaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def extendSubschemaData(
-    subschema: SubschemaContext,
-    it: SchemaObjCxt,
-    hasDataPropDpTypeDataDataTypesPropertyName: SubschemaArgs
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendSubschemaData")(subschema.asInstanceOf[js.Any], it.asInstanceOf[js.Any], hasDataPropDpTypeDataDataTypesPropertyName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def extendSubschemaData(subschema: SubschemaContext, it: SchemaObjCxt, param2: SubschemaArgs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendSubschemaData")(subschema.asInstanceOf[js.Any], it.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def extendSubschemaMode(
-    subschema: SubschemaContext,
-    hasJtdDiscriminatorJtdMetadataCompositeRuleCreateErrorsAllErrors: SubschemaArgs
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendSubschemaMode")(subschema.asInstanceOf[js.Any], hasJtdDiscriminatorJtdMetadataCompositeRuleCreateErrorsAllErrors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def extendSubschemaMode(subschema: SubschemaContext, param1: SubschemaArgs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendSubschemaMode")(subschema.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getSubschema(it: SchemaObjCxt, hasKeywordSchemaPropSchemaSchemaPathErrSchemaPathTopSchemaRef: SubschemaArgs): SubschemaContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubschema")(it.asInstanceOf[js.Any], hasKeywordSchemaPropSchemaSchemaPathErrSchemaPathTopSchemaRef.asInstanceOf[js.Any])).asInstanceOf[SubschemaContext]
+  inline def getSubschema(it: SchemaObjCxt, param1: SubschemaArgs): SubschemaContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubschema")(it.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[SubschemaContext]
   
   /* Inlined std.Partial<{  keyword :string,   schemaProp :string | number,   schema :ajv.ajv/dist/types.AnySchema,   schemaPath :ajv.ajv/dist/compile/codegen.Code,   errSchemaPath :string,   topSchemaRef :ajv.ajv/dist/compile/codegen.Code,   data :ajv.ajv/dist/compile/codegen.Name | ajv.ajv/dist/compile/codegen.Code,   dataProp :ajv.ajv/dist/compile/codegen.Code | string | number,   dataTypes :std.Array<ajv.ajv/dist/compile/rules.JSONType>,   definedProperties :std.Set<string>,   propertyName :ajv.ajv/dist/compile/codegen.Name,   dataPropType :ajv.ajv/dist/compile/util.Type,   jtdDiscriminator :string,   jtdMetadata :boolean,   compositeRule :true,   createErrors :boolean,   allErrors :boolean}> */
   trait SubschemaArgs extends StObject {

@@ -3523,6 +3523,243 @@ object Slides {
     def selectAsCurrentPage(): Unit = js.native
   }
   
+  extension [Self <: Slides](x: Self) {
+    
+    inline def setNewAffineTransform(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "newAffineTransform", js.Any.fromFunction0(value))
+    
+    inline def setNewAutoText(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText): Self = StObject.set(x, "newAutoText", js.Any.fromFunction0(value))
+    
+    inline def setNewBatchUpdatePresentationRequest(value: () => BatchUpdatePresentationRequest): Self = StObject.set(x, "newBatchUpdatePresentationRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewBullet(value: () => Bullet): Self = StObject.set(x, "newBullet", js.Any.fromFunction0(value))
+    
+    inline def setNewColorScheme(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme): Self = StObject.set(x, "newColorScheme", js.Any.fromFunction0(value))
+    
+    inline def setNewColorStop(value: () => ColorStop): Self = StObject.set(x, "newColorStop", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateImageRequest(value: () => CreateImageRequest): Self = StObject.set(x, "newCreateImageRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateLineRequest(value: () => CreateLineRequest): Self = StObject.set(x, "newCreateLineRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateParagraphBulletsRequest(value: () => CreateParagraphBulletsRequest): Self = StObject.set(x, "newCreateParagraphBulletsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateShapeRequest(value: () => CreateShapeRequest): Self = StObject.set(x, "newCreateShapeRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateSheetsChartRequest(value: () => CreateSheetsChartRequest): Self = StObject.set(x, "newCreateSheetsChartRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateSlideRequest(value: () => CreateSlideRequest): Self = StObject.set(x, "newCreateSlideRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateTableRequest(value: () => CreateTableRequest): Self = StObject.set(x, "newCreateTableRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCreateVideoRequest(value: () => CreateVideoRequest): Self = StObject.set(x, "newCreateVideoRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewCropProperties(value: () => CropProperties): Self = StObject.set(x, "newCropProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteObjectRequest(value: () => DeleteObjectRequest): Self = StObject.set(x, "newDeleteObjectRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteParagraphBulletsRequest(value: () => DeleteParagraphBulletsRequest): Self = StObject.set(x, "newDeleteParagraphBulletsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteTableColumnRequest(value: () => DeleteTableColumnRequest): Self = StObject.set(x, "newDeleteTableColumnRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteTableRowRequest(value: () => DeleteTableRowRequest): Self = StObject.set(x, "newDeleteTableRowRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDeleteTextRequest(value: () => DeleteTextRequest): Self = StObject.set(x, "newDeleteTextRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewDimension(value: () => Dimension): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
+    
+    inline def setNewDuplicateObjectRequest(value: () => DuplicateObjectRequest): Self = StObject.set(x, "newDuplicateObjectRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewGroup(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
+    
+    inline def setNewGroupObjectsRequest(value: () => GroupObjectsRequest): Self = StObject.set(x, "newGroupObjectsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewImage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image): Self = StObject.set(x, "newImage", js.Any.fromFunction0(value))
+    
+    inline def setNewImageProperties(value: () => ImageProperties): Self = StObject.set(x, "newImageProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewInsertTableColumnsRequest(value: () => InsertTableColumnsRequest): Self = StObject.set(x, "newInsertTableColumnsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewInsertTableRowsRequest(value: () => InsertTableRowsRequest): Self = StObject.set(x, "newInsertTableRowsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewInsertTextRequest(value: () => InsertTextRequest): Self = StObject.set(x, "newInsertTextRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewLayoutPlaceholderIdMapping(value: () => LayoutPlaceholderIdMapping): Self = StObject.set(x, "newLayoutPlaceholderIdMapping", js.Any.fromFunction0(value))
+    
+    inline def setNewLayoutProperties(value: () => LayoutProperties): Self = StObject.set(x, "newLayoutProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewLayoutReference(value: () => LayoutReference): Self = StObject.set(x, "newLayoutReference", js.Any.fromFunction0(value))
+    
+    inline def setNewLine(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line): Self = StObject.set(x, "newLine", js.Any.fromFunction0(value))
+    
+    inline def setNewLineConnection(value: () => LineConnection): Self = StObject.set(x, "newLineConnection", js.Any.fromFunction0(value))
+    
+    inline def setNewLineFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill): Self = StObject.set(x, "newLineFill", js.Any.fromFunction0(value))
+    
+    inline def setNewLineProperties(value: () => LineProperties): Self = StObject.set(x, "newLineProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewLink(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "newLink", js.Any.fromFunction0(value))
+    
+    inline def setNewMasterProperties(value: () => MasterProperties): Self = StObject.set(x, "newMasterProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewMergeTableCellsRequest(value: () => MergeTableCellsRequest): Self = StObject.set(x, "newMergeTableCellsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewNotesProperties(value: () => NotesProperties): Self = StObject.set(x, "newNotesProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewOpaqueColor(value: () => OpaqueColor): Self = StObject.set(x, "newOpaqueColor", js.Any.fromFunction0(value))
+    
+    inline def setNewOptionalColor(value: () => OptionalColor): Self = StObject.set(x, "newOptionalColor", js.Any.fromFunction0(value))
+    
+    inline def setNewOutline(value: () => Outline): Self = StObject.set(x, "newOutline", js.Any.fromFunction0(value))
+    
+    inline def setNewOutlineFill(value: () => OutlineFill): Self = StObject.set(x, "newOutlineFill", js.Any.fromFunction0(value))
+    
+    inline def setNewPage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page): Self = StObject.set(x, "newPage", js.Any.fromFunction0(value))
+    
+    inline def setNewPageBackgroundFill(value: () => PageBackgroundFill): Self = StObject.set(x, "newPageBackgroundFill", js.Any.fromFunction0(value))
+    
+    inline def setNewPageElement(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement): Self = StObject.set(x, "newPageElement", js.Any.fromFunction0(value))
+    
+    inline def setNewPageElementProperties(value: () => PageElementProperties): Self = StObject.set(x, "newPageElementProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewPageProperties(value: () => PageProperties): Self = StObject.set(x, "newPageProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewParagraphMarker(value: () => ParagraphMarker): Self = StObject.set(x, "newParagraphMarker", js.Any.fromFunction0(value))
+    
+    inline def setNewParagraphStyle(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle): Self = StObject.set(x, "newParagraphStyle", js.Any.fromFunction0(value))
+    
+    inline def setNewPlaceholder(value: () => Placeholder): Self = StObject.set(x, "newPlaceholder", js.Any.fromFunction0(value))
+    
+    inline def setNewPresentation(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation): Self = StObject.set(x, "newPresentation", js.Any.fromFunction0(value))
+    
+    inline def setNewRange(value: () => Range): Self = StObject.set(x, "newRange", js.Any.fromFunction0(value))
+    
+    inline def setNewRecolor(value: () => Recolor): Self = StObject.set(x, "newRecolor", js.Any.fromFunction0(value))
+    
+    inline def setNewRefreshSheetsChartRequest(value: () => RefreshSheetsChartRequest): Self = StObject.set(x, "newRefreshSheetsChartRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewReplaceAllShapesWithImageRequest(value: () => ReplaceAllShapesWithImageRequest): Self = StObject.set(x, "newReplaceAllShapesWithImageRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewReplaceAllShapesWithSheetsChartRequest(value: () => ReplaceAllShapesWithSheetsChartRequest): Self = StObject.set(x, "newReplaceAllShapesWithSheetsChartRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewReplaceAllTextRequest(value: () => ReplaceAllTextRequest): Self = StObject.set(x, "newReplaceAllTextRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewReplaceImageRequest(value: () => ReplaceImageRequest): Self = StObject.set(x, "newReplaceImageRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewRequest(value: () => Request): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewRerouteLineRequest(value: () => RerouteLineRequest): Self = StObject.set(x, "newRerouteLineRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewRgbColor(value: () => RgbColor): Self = StObject.set(x, "newRgbColor", js.Any.fromFunction0(value))
+    
+    inline def setNewShadow(value: () => Shadow): Self = StObject.set(x, "newShadow", js.Any.fromFunction0(value))
+    
+    inline def setNewShape(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape): Self = StObject.set(x, "newShape", js.Any.fromFunction0(value))
+    
+    inline def setNewShapeBackgroundFill(value: () => ShapeBackgroundFill): Self = StObject.set(x, "newShapeBackgroundFill", js.Any.fromFunction0(value))
+    
+    inline def setNewShapeProperties(value: () => ShapeProperties): Self = StObject.set(x, "newShapeProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewSheetsChart(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart): Self = StObject.set(x, "newSheetsChart", js.Any.fromFunction0(value))
+    
+    inline def setNewSheetsChartProperties(value: () => SheetsChartProperties): Self = StObject.set(x, "newSheetsChartProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewSize(value: () => Size): Self = StObject.set(x, "newSize", js.Any.fromFunction0(value))
+    
+    inline def setNewSlideProperties(value: () => SlideProperties): Self = StObject.set(x, "newSlideProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewSolidFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "newSolidFill", js.Any.fromFunction0(value))
+    
+    inline def setNewStretchedPictureFill(value: () => StretchedPictureFill): Self = StObject.set(x, "newStretchedPictureFill", js.Any.fromFunction0(value))
+    
+    inline def setNewSubstringMatchCriteria(value: () => SubstringMatchCriteria): Self = StObject.set(x, "newSubstringMatchCriteria", js.Any.fromFunction0(value))
+    
+    inline def setNewTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table): Self = StObject.set(x, "newTable", js.Any.fromFunction0(value))
+    
+    inline def setNewTableBorderCell(value: () => TableBorderCell): Self = StObject.set(x, "newTableBorderCell", js.Any.fromFunction0(value))
+    
+    inline def setNewTableBorderFill(value: () => TableBorderFill): Self = StObject.set(x, "newTableBorderFill", js.Any.fromFunction0(value))
+    
+    inline def setNewTableBorderProperties(value: () => TableBorderProperties): Self = StObject.set(x, "newTableBorderProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewTableBorderRow(value: () => TableBorderRow): Self = StObject.set(x, "newTableBorderRow", js.Any.fromFunction0(value))
+    
+    inline def setNewTableCell(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell): Self = StObject.set(x, "newTableCell", js.Any.fromFunction0(value))
+    
+    inline def setNewTableCellBackgroundFill(value: () => TableCellBackgroundFill): Self = StObject.set(x, "newTableCellBackgroundFill", js.Any.fromFunction0(value))
+    
+    inline def setNewTableCellLocation(value: () => TableCellLocation): Self = StObject.set(x, "newTableCellLocation", js.Any.fromFunction0(value))
+    
+    inline def setNewTableCellProperties(value: () => TableCellProperties): Self = StObject.set(x, "newTableCellProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewTableColumnProperties(value: () => TableColumnProperties): Self = StObject.set(x, "newTableColumnProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewTableRange(value: () => TableRange): Self = StObject.set(x, "newTableRange", js.Any.fromFunction0(value))
+    
+    inline def setNewTableRow(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow): Self = StObject.set(x, "newTableRow", js.Any.fromFunction0(value))
+    
+    inline def setNewTableRowProperties(value: () => TableRowProperties): Self = StObject.set(x, "newTableRowProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewTextContent(value: () => TextContent): Self = StObject.set(x, "newTextContent", js.Any.fromFunction0(value))
+    
+    inline def setNewTextElement(value: () => TextElement): Self = StObject.set(x, "newTextElement", js.Any.fromFunction0(value))
+    
+    inline def setNewTextRun(value: () => TextRun): Self = StObject.set(x, "newTextRun", js.Any.fromFunction0(value))
+    
+    inline def setNewTextStyle(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "newTextStyle", js.Any.fromFunction0(value))
+    
+    inline def setNewThemeColorPair(value: () => ThemeColorPair): Self = StObject.set(x, "newThemeColorPair", js.Any.fromFunction0(value))
+    
+    inline def setNewUngroupObjectsRequest(value: () => UngroupObjectsRequest): Self = StObject.set(x, "newUngroupObjectsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUnmergeTableCellsRequest(value: () => UnmergeTableCellsRequest): Self = StObject.set(x, "newUnmergeTableCellsRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateImagePropertiesRequest(value: () => UpdateImagePropertiesRequest): Self = StObject.set(x, "newUpdateImagePropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateLineCategoryRequest(value: () => UpdateLineCategoryRequest): Self = StObject.set(x, "newUpdateLineCategoryRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateLinePropertiesRequest(value: () => UpdateLinePropertiesRequest): Self = StObject.set(x, "newUpdateLinePropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdatePageElementAltTextRequest(value: () => UpdatePageElementAltTextRequest): Self = StObject.set(x, "newUpdatePageElementAltTextRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdatePageElementTransformRequest(value: () => UpdatePageElementTransformRequest): Self = StObject.set(x, "newUpdatePageElementTransformRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdatePageElementsZOrderRequest(value: () => UpdatePageElementsZOrderRequest): Self = StObject.set(x, "newUpdatePageElementsZOrderRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdatePagePropertiesRequest(value: () => UpdatePagePropertiesRequest): Self = StObject.set(x, "newUpdatePagePropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateParagraphStyleRequest(value: () => UpdateParagraphStyleRequest): Self = StObject.set(x, "newUpdateParagraphStyleRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateShapePropertiesRequest(value: () => UpdateShapePropertiesRequest): Self = StObject.set(x, "newUpdateShapePropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateSlidesPositionRequest(value: () => UpdateSlidesPositionRequest): Self = StObject.set(x, "newUpdateSlidesPositionRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateTableBorderPropertiesRequest(value: () => UpdateTableBorderPropertiesRequest): Self = StObject.set(x, "newUpdateTableBorderPropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateTableCellPropertiesRequest(value: () => UpdateTableCellPropertiesRequest): Self = StObject.set(x, "newUpdateTableCellPropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateTableColumnPropertiesRequest(value: () => UpdateTableColumnPropertiesRequest): Self = StObject.set(x, "newUpdateTableColumnPropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateTableRowPropertiesRequest(value: () => UpdateTableRowPropertiesRequest): Self = StObject.set(x, "newUpdateTableRowPropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateTextStyleRequest(value: () => UpdateTextStyleRequest): Self = StObject.set(x, "newUpdateTextStyleRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewUpdateVideoPropertiesRequest(value: () => UpdateVideoPropertiesRequest): Self = StObject.set(x, "newUpdateVideoPropertiesRequest", js.Any.fromFunction0(value))
+    
+    inline def setNewVideo(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video): Self = StObject.set(x, "newVideo", js.Any.fromFunction0(value))
+    
+    inline def setNewVideoProperties(value: () => VideoProperties): Self = StObject.set(x, "newVideoProperties", js.Any.fromFunction0(value))
+    
+    inline def setNewWeightedFontFamily(value: () => WeightedFontFamily): Self = StObject.set(x, "newWeightedFontFamily", js.Any.fromFunction0(value))
+    
+    inline def setNewWordArt(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt): Self = StObject.set(x, "newWordArt", js.Any.fromFunction0(value))
+    
+    inline def setNewWriteControl(value: () => WriteControl): Self = StObject.set(x, "newWriteControl", js.Any.fromFunction0(value))
+    
+    inline def setPresentations(value: PresentationsCollection): Self = StObject.set(x, "Presentations", value.asInstanceOf[js.Any])
+    
+    inline def setPresentationsUndefined: Self = StObject.set(x, "Presentations", js.undefined)
+  }
+  
   /**
     * A notes master in a presentation.
     *
@@ -9188,243 +9425,6 @@ object Slides {
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VideoSourceType */ Any
       ): Self = StObject.set(x, "VideoSourceType", value.asInstanceOf[js.Any])
     }
-  }
-  
-  extension [Self <: Slides](x: Self) {
-    
-    inline def setNewAffineTransform(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AffineTransform): Self = StObject.set(x, "newAffineTransform", js.Any.fromFunction0(value))
-    
-    inline def setNewAutoText(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.AutoText): Self = StObject.set(x, "newAutoText", js.Any.fromFunction0(value))
-    
-    inline def setNewBatchUpdatePresentationRequest(value: () => BatchUpdatePresentationRequest): Self = StObject.set(x, "newBatchUpdatePresentationRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewBullet(value: () => Bullet): Self = StObject.set(x, "newBullet", js.Any.fromFunction0(value))
-    
-    inline def setNewColorScheme(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ColorScheme): Self = StObject.set(x, "newColorScheme", js.Any.fromFunction0(value))
-    
-    inline def setNewColorStop(value: () => ColorStop): Self = StObject.set(x, "newColorStop", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateImageRequest(value: () => CreateImageRequest): Self = StObject.set(x, "newCreateImageRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateLineRequest(value: () => CreateLineRequest): Self = StObject.set(x, "newCreateLineRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateParagraphBulletsRequest(value: () => CreateParagraphBulletsRequest): Self = StObject.set(x, "newCreateParagraphBulletsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateShapeRequest(value: () => CreateShapeRequest): Self = StObject.set(x, "newCreateShapeRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateSheetsChartRequest(value: () => CreateSheetsChartRequest): Self = StObject.set(x, "newCreateSheetsChartRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateSlideRequest(value: () => CreateSlideRequest): Self = StObject.set(x, "newCreateSlideRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateTableRequest(value: () => CreateTableRequest): Self = StObject.set(x, "newCreateTableRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCreateVideoRequest(value: () => CreateVideoRequest): Self = StObject.set(x, "newCreateVideoRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewCropProperties(value: () => CropProperties): Self = StObject.set(x, "newCropProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteObjectRequest(value: () => DeleteObjectRequest): Self = StObject.set(x, "newDeleteObjectRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteParagraphBulletsRequest(value: () => DeleteParagraphBulletsRequest): Self = StObject.set(x, "newDeleteParagraphBulletsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteTableColumnRequest(value: () => DeleteTableColumnRequest): Self = StObject.set(x, "newDeleteTableColumnRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteTableRowRequest(value: () => DeleteTableRowRequest): Self = StObject.set(x, "newDeleteTableRowRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDeleteTextRequest(value: () => DeleteTextRequest): Self = StObject.set(x, "newDeleteTextRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewDimension(value: () => Dimension): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
-    
-    inline def setNewDuplicateObjectRequest(value: () => DuplicateObjectRequest): Self = StObject.set(x, "newDuplicateObjectRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewGroup(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
-    
-    inline def setNewGroupObjectsRequest(value: () => GroupObjectsRequest): Self = StObject.set(x, "newGroupObjectsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewImage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Image): Self = StObject.set(x, "newImage", js.Any.fromFunction0(value))
-    
-    inline def setNewImageProperties(value: () => ImageProperties): Self = StObject.set(x, "newImageProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewInsertTableColumnsRequest(value: () => InsertTableColumnsRequest): Self = StObject.set(x, "newInsertTableColumnsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewInsertTableRowsRequest(value: () => InsertTableRowsRequest): Self = StObject.set(x, "newInsertTableRowsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewInsertTextRequest(value: () => InsertTextRequest): Self = StObject.set(x, "newInsertTextRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewLayoutPlaceholderIdMapping(value: () => LayoutPlaceholderIdMapping): Self = StObject.set(x, "newLayoutPlaceholderIdMapping", js.Any.fromFunction0(value))
-    
-    inline def setNewLayoutProperties(value: () => LayoutProperties): Self = StObject.set(x, "newLayoutProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewLayoutReference(value: () => LayoutReference): Self = StObject.set(x, "newLayoutReference", js.Any.fromFunction0(value))
-    
-    inline def setNewLine(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Line): Self = StObject.set(x, "newLine", js.Any.fromFunction0(value))
-    
-    inline def setNewLineConnection(value: () => LineConnection): Self = StObject.set(x, "newLineConnection", js.Any.fromFunction0(value))
-    
-    inline def setNewLineFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.LineFill): Self = StObject.set(x, "newLineFill", js.Any.fromFunction0(value))
-    
-    inline def setNewLineProperties(value: () => LineProperties): Self = StObject.set(x, "newLineProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewLink(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Link): Self = StObject.set(x, "newLink", js.Any.fromFunction0(value))
-    
-    inline def setNewMasterProperties(value: () => MasterProperties): Self = StObject.set(x, "newMasterProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewMergeTableCellsRequest(value: () => MergeTableCellsRequest): Self = StObject.set(x, "newMergeTableCellsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewNotesProperties(value: () => NotesProperties): Self = StObject.set(x, "newNotesProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewOpaqueColor(value: () => OpaqueColor): Self = StObject.set(x, "newOpaqueColor", js.Any.fromFunction0(value))
-    
-    inline def setNewOptionalColor(value: () => OptionalColor): Self = StObject.set(x, "newOptionalColor", js.Any.fromFunction0(value))
-    
-    inline def setNewOutline(value: () => Outline): Self = StObject.set(x, "newOutline", js.Any.fromFunction0(value))
-    
-    inline def setNewOutlineFill(value: () => OutlineFill): Self = StObject.set(x, "newOutlineFill", js.Any.fromFunction0(value))
-    
-    inline def setNewPage(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Page): Self = StObject.set(x, "newPage", js.Any.fromFunction0(value))
-    
-    inline def setNewPageBackgroundFill(value: () => PageBackgroundFill): Self = StObject.set(x, "newPageBackgroundFill", js.Any.fromFunction0(value))
-    
-    inline def setNewPageElement(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.PageElement): Self = StObject.set(x, "newPageElement", js.Any.fromFunction0(value))
-    
-    inline def setNewPageElementProperties(value: () => PageElementProperties): Self = StObject.set(x, "newPageElementProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewPageProperties(value: () => PageProperties): Self = StObject.set(x, "newPageProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewParagraphMarker(value: () => ParagraphMarker): Self = StObject.set(x, "newParagraphMarker", js.Any.fromFunction0(value))
-    
-    inline def setNewParagraphStyle(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.ParagraphStyle): Self = StObject.set(x, "newParagraphStyle", js.Any.fromFunction0(value))
-    
-    inline def setNewPlaceholder(value: () => Placeholder): Self = StObject.set(x, "newPlaceholder", js.Any.fromFunction0(value))
-    
-    inline def setNewPresentation(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Presentation): Self = StObject.set(x, "newPresentation", js.Any.fromFunction0(value))
-    
-    inline def setNewRange(value: () => Range): Self = StObject.set(x, "newRange", js.Any.fromFunction0(value))
-    
-    inline def setNewRecolor(value: () => Recolor): Self = StObject.set(x, "newRecolor", js.Any.fromFunction0(value))
-    
-    inline def setNewRefreshSheetsChartRequest(value: () => RefreshSheetsChartRequest): Self = StObject.set(x, "newRefreshSheetsChartRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewReplaceAllShapesWithImageRequest(value: () => ReplaceAllShapesWithImageRequest): Self = StObject.set(x, "newReplaceAllShapesWithImageRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewReplaceAllShapesWithSheetsChartRequest(value: () => ReplaceAllShapesWithSheetsChartRequest): Self = StObject.set(x, "newReplaceAllShapesWithSheetsChartRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewReplaceAllTextRequest(value: () => ReplaceAllTextRequest): Self = StObject.set(x, "newReplaceAllTextRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewReplaceImageRequest(value: () => ReplaceImageRequest): Self = StObject.set(x, "newReplaceImageRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewRequest(value: () => Request): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewRerouteLineRequest(value: () => RerouteLineRequest): Self = StObject.set(x, "newRerouteLineRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewRgbColor(value: () => RgbColor): Self = StObject.set(x, "newRgbColor", js.Any.fromFunction0(value))
-    
-    inline def setNewShadow(value: () => Shadow): Self = StObject.set(x, "newShadow", js.Any.fromFunction0(value))
-    
-    inline def setNewShape(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Shape): Self = StObject.set(x, "newShape", js.Any.fromFunction0(value))
-    
-    inline def setNewShapeBackgroundFill(value: () => ShapeBackgroundFill): Self = StObject.set(x, "newShapeBackgroundFill", js.Any.fromFunction0(value))
-    
-    inline def setNewShapeProperties(value: () => ShapeProperties): Self = StObject.set(x, "newShapeProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewSheetsChart(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SheetsChart): Self = StObject.set(x, "newSheetsChart", js.Any.fromFunction0(value))
-    
-    inline def setNewSheetsChartProperties(value: () => SheetsChartProperties): Self = StObject.set(x, "newSheetsChartProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewSize(value: () => Size): Self = StObject.set(x, "newSize", js.Any.fromFunction0(value))
-    
-    inline def setNewSlideProperties(value: () => SlideProperties): Self = StObject.set(x, "newSlideProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewSolidFill(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.SolidFill): Self = StObject.set(x, "newSolidFill", js.Any.fromFunction0(value))
-    
-    inline def setNewStretchedPictureFill(value: () => StretchedPictureFill): Self = StObject.set(x, "newStretchedPictureFill", js.Any.fromFunction0(value))
-    
-    inline def setNewSubstringMatchCriteria(value: () => SubstringMatchCriteria): Self = StObject.set(x, "newSubstringMatchCriteria", js.Any.fromFunction0(value))
-    
-    inline def setNewTable(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Table): Self = StObject.set(x, "newTable", js.Any.fromFunction0(value))
-    
-    inline def setNewTableBorderCell(value: () => TableBorderCell): Self = StObject.set(x, "newTableBorderCell", js.Any.fromFunction0(value))
-    
-    inline def setNewTableBorderFill(value: () => TableBorderFill): Self = StObject.set(x, "newTableBorderFill", js.Any.fromFunction0(value))
-    
-    inline def setNewTableBorderProperties(value: () => TableBorderProperties): Self = StObject.set(x, "newTableBorderProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewTableBorderRow(value: () => TableBorderRow): Self = StObject.set(x, "newTableBorderRow", js.Any.fromFunction0(value))
-    
-    inline def setNewTableCell(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableCell): Self = StObject.set(x, "newTableCell", js.Any.fromFunction0(value))
-    
-    inline def setNewTableCellBackgroundFill(value: () => TableCellBackgroundFill): Self = StObject.set(x, "newTableCellBackgroundFill", js.Any.fromFunction0(value))
-    
-    inline def setNewTableCellLocation(value: () => TableCellLocation): Self = StObject.set(x, "newTableCellLocation", js.Any.fromFunction0(value))
-    
-    inline def setNewTableCellProperties(value: () => TableCellProperties): Self = StObject.set(x, "newTableCellProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewTableColumnProperties(value: () => TableColumnProperties): Self = StObject.set(x, "newTableColumnProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewTableRange(value: () => TableRange): Self = StObject.set(x, "newTableRange", js.Any.fromFunction0(value))
-    
-    inline def setNewTableRow(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TableRow): Self = StObject.set(x, "newTableRow", js.Any.fromFunction0(value))
-    
-    inline def setNewTableRowProperties(value: () => TableRowProperties): Self = StObject.set(x, "newTableRowProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewTextContent(value: () => TextContent): Self = StObject.set(x, "newTextContent", js.Any.fromFunction0(value))
-    
-    inline def setNewTextElement(value: () => TextElement): Self = StObject.set(x, "newTextElement", js.Any.fromFunction0(value))
-    
-    inline def setNewTextRun(value: () => TextRun): Self = StObject.set(x, "newTextRun", js.Any.fromFunction0(value))
-    
-    inline def setNewTextStyle(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.TextStyle): Self = StObject.set(x, "newTextStyle", js.Any.fromFunction0(value))
-    
-    inline def setNewThemeColorPair(value: () => ThemeColorPair): Self = StObject.set(x, "newThemeColorPair", js.Any.fromFunction0(value))
-    
-    inline def setNewUngroupObjectsRequest(value: () => UngroupObjectsRequest): Self = StObject.set(x, "newUngroupObjectsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUnmergeTableCellsRequest(value: () => UnmergeTableCellsRequest): Self = StObject.set(x, "newUnmergeTableCellsRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateImagePropertiesRequest(value: () => UpdateImagePropertiesRequest): Self = StObject.set(x, "newUpdateImagePropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateLineCategoryRequest(value: () => UpdateLineCategoryRequest): Self = StObject.set(x, "newUpdateLineCategoryRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateLinePropertiesRequest(value: () => UpdateLinePropertiesRequest): Self = StObject.set(x, "newUpdateLinePropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdatePageElementAltTextRequest(value: () => UpdatePageElementAltTextRequest): Self = StObject.set(x, "newUpdatePageElementAltTextRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdatePageElementTransformRequest(value: () => UpdatePageElementTransformRequest): Self = StObject.set(x, "newUpdatePageElementTransformRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdatePageElementsZOrderRequest(value: () => UpdatePageElementsZOrderRequest): Self = StObject.set(x, "newUpdatePageElementsZOrderRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdatePagePropertiesRequest(value: () => UpdatePagePropertiesRequest): Self = StObject.set(x, "newUpdatePagePropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateParagraphStyleRequest(value: () => UpdateParagraphStyleRequest): Self = StObject.set(x, "newUpdateParagraphStyleRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateShapePropertiesRequest(value: () => UpdateShapePropertiesRequest): Self = StObject.set(x, "newUpdateShapePropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateSlidesPositionRequest(value: () => UpdateSlidesPositionRequest): Self = StObject.set(x, "newUpdateSlidesPositionRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateTableBorderPropertiesRequest(value: () => UpdateTableBorderPropertiesRequest): Self = StObject.set(x, "newUpdateTableBorderPropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateTableCellPropertiesRequest(value: () => UpdateTableCellPropertiesRequest): Self = StObject.set(x, "newUpdateTableCellPropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateTableColumnPropertiesRequest(value: () => UpdateTableColumnPropertiesRequest): Self = StObject.set(x, "newUpdateTableColumnPropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateTableRowPropertiesRequest(value: () => UpdateTableRowPropertiesRequest): Self = StObject.set(x, "newUpdateTableRowPropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateTextStyleRequest(value: () => UpdateTextStyleRequest): Self = StObject.set(x, "newUpdateTextStyleRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewUpdateVideoPropertiesRequest(value: () => UpdateVideoPropertiesRequest): Self = StObject.set(x, "newUpdateVideoPropertiesRequest", js.Any.fromFunction0(value))
-    
-    inline def setNewVideo(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.Video): Self = StObject.set(x, "newVideo", js.Any.fromFunction0(value))
-    
-    inline def setNewVideoProperties(value: () => VideoProperties): Self = StObject.set(x, "newVideoProperties", js.Any.fromFunction0(value))
-    
-    inline def setNewWeightedFontFamily(value: () => WeightedFontFamily): Self = StObject.set(x, "newWeightedFontFamily", js.Any.fromFunction0(value))
-    
-    inline def setNewWordArt(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.Schema.WordArt): Self = StObject.set(x, "newWordArt", js.Any.fromFunction0(value))
-    
-    inline def setNewWriteControl(value: () => WriteControl): Self = StObject.set(x, "newWriteControl", js.Any.fromFunction0(value))
-    
-    inline def setPresentations(value: PresentationsCollection): Self = StObject.set(x, "Presentations", value.asInstanceOf[js.Any])
-    
-    inline def setPresentationsUndefined: Self = StObject.set(x, "Presentations", js.undefined)
   }
   
   /**

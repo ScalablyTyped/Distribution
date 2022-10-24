@@ -12,5 +12,5 @@ object distDatabaseCompatSrcApiInternalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def initStandalone[T](hasAppUrlVersionCustomAuthImplNamespaceNodeAdmin: App[T]): Instance[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("initStandalone")(hasAppUrlVersionCustomAuthImplNamespaceNodeAdmin.asInstanceOf[js.Any]).asInstanceOf[Instance[T]]
+  inline def initStandalone[T](param0: App[T]): Instance[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("initStandalone")(param0.asInstanceOf[js.Any]).asInstanceOf[Instance[T]]
 }

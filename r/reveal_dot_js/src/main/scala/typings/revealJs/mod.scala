@@ -4715,7 +4715,7 @@ object mod {
       * Dispatches an event of the specified type from the
       * reveal DOM element.
       */
-    def dispatchEvent(hasTargetTypeDataBubbles: Bubbles): Event = js.native
+    def dispatchEvent(param0: Bubbles): Event = js.native
     
     /**
       * Nvigate to the below slide

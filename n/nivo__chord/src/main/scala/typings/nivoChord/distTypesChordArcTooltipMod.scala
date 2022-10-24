@@ -11,5 +11,5 @@ object distTypesChordArcTooltipMod {
   
   @JSImport("@nivo/chord/dist/types/ChordArcTooltip", "ChordArcTooltip")
   @js.native
-  val ChordArcTooltip: MemoExoticComponent[js.Function1[/* hasArc */ ArcTooltipComponentProps, Element]] = js.native
+  val ChordArcTooltip: MemoExoticComponent[js.Function1[/* param0 */ ArcTooltipComponentProps, Element]] = js.native
 }

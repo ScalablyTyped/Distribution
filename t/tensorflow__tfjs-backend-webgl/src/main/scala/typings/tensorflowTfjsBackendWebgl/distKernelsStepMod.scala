@@ -13,7 +13,7 @@ object distKernelsStepMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def step(hasInputsAttrsBackend: AttrsStepAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("step")(hasInputsAttrsBackend.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def step(param0: AttrsStepAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("step")(param0.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Step", "stepConfig")
   @js.native

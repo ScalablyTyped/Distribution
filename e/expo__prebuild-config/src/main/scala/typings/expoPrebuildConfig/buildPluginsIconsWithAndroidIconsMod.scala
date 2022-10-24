@@ -34,7 +34,7 @@ object buildPluginsIconsWithAndroidIconsMod {
   
   inline def getIcon(config: ExpoConfig): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def setIconAsync(projectRoot: String, hasIconBackgroundColorBackgroundImageIsAdaptive: BackgroundImage): js.Promise[`true` | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIconAsync")(projectRoot.asInstanceOf[js.Any], hasIconBackgroundColorBackgroundImageIsAdaptive.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`true` | Null]]
+  inline def setIconAsync(projectRoot: String, param1: BackgroundImage): js.Promise[`true` | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIconAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`true` | Null]]
   
   inline def setRoundIconManifest(
     config: PickExpoConfigandroid,

@@ -10,7 +10,7 @@ object distTs3Dot9UtilsCheckAddonOrderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkAddonOrder(hasBeforeAfterConfigFileGetConfig: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAddonOrder")(hasBeforeAfterConfigFileGetConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def checkAddonOrder(param0: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAddonOrder")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   type AddonEntry = String | OptionsEntry
   

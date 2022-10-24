@@ -75,7 +75,7 @@ object mod {
   @js.native
   val DEFAULT_TOAST_TIMEOUT: TransitionTimeout = js.native
   
-  inline def MessageQueue[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MessageQueue")(hasTimeoutDuplicatesDefaultQueueChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MessageQueue[M /* <: ToastMessage */](param0: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MessageQueue")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/alert", "MessageQueueActionsContext")
   @js.native

@@ -14,9 +14,7 @@ object toolsSrcExtractMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def extractTranslations(
-    hasRootPathSourceFilePathsSourceLocaleFormatOutputLoggerUseSourceMapsUseLegacyIdsDuplicateMessageHandlingFormatOptionsFs: ExtractTranslationsOptions
-  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extractTranslations")(hasRootPathSourceFilePathsSourceLocaleFormatOutputLoggerUseSourceMapsUseLegacyIdsDuplicateMessageHandlingFormatOptionsFs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def extractTranslations(param0: ExtractTranslationsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extractTranslations")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait ExtractTranslationsOptions extends StObject {
     

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "phone-formatter"
-version := "v0.0.2-dt-20220818Z-f20629"
-scalaVersion := "3.1.2"
+version := "v0.0.2-dt-20220818Z-e9fd2a"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

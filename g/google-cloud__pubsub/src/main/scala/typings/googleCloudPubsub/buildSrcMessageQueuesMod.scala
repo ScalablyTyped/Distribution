@@ -76,8 +76,8 @@ object buildSrcMessageQueuesMod {
       * @param {number} [deadline] The deadline.
       * @private
       */
-    def add(hasAckId: Message): js.Promise[Unit] = js.native
-    def add(hasAckId: Message, deadline: Double): js.Promise[Unit] = js.native
+    def add(param0: Message): js.Promise[Unit] = js.native
+    def add(param0: Message, deadline: Double): js.Promise[Unit] = js.native
     
     /**
       * Shuts down this message queue gracefully. Any acks/modAcks pending in

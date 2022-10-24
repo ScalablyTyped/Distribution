@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "apollo__utils_dot_logger"
-version := "1.0.0-5454e4"
-scalaVersion := "3.1.2"
+version := "1.0.0-ea462b"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

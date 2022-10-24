@@ -53,9 +53,7 @@ object messageCardMod {
     val trailing: typings.baseui.baseuiStrings.trailing = js.native
   }
   
-  inline def MessageCard(
-    hasBackgroundColorBackgroundColorTypePropButtonKindButtonLabelHeadingImageOnClickOverridesParagraph: MessageCardProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MessageCard")(hasBackgroundColorBackgroundColorTypePropButtonKindButtonLabelHeadingImageOnClickOverridesParagraph.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MessageCard(param0: MessageCardProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MessageCard")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/message-card", "StyledContentContainer")
   @js.native

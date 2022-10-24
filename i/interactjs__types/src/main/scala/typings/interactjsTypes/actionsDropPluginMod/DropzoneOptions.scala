@@ -17,9 +17,7 @@ trait DropzoneOptions
   extends StObject
      with PerActionDefaults {
   
-  var accept: js.UndefOr[
-    String | Element | (js.Function1[/* hasDropzoneDraggableElement */ DraggableElementElement, Boolean])
-  ] = js.undefined
+  var accept: js.UndefOr[String | Element | (js.Function1[/* param0 */ DraggableElementElement, Boolean])] = js.undefined
   
   var checker: js.UndefOr[DropFunctionChecker] = js.undefined
   
@@ -46,11 +44,9 @@ object DropzoneOptions {
   
   extension [Self <: DropzoneOptions](x: Self) {
     
-    inline def setAccept(
-      value: String | Element | (js.Function1[/* hasDropzoneDraggableElement */ DraggableElementElement, Boolean])
-    ): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: String | Element | (js.Function1[/* param0 */ DraggableElementElement, Boolean])): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    inline def setAcceptFunction1(value: /* hasDropzoneDraggableElement */ DraggableElementElement => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+    inline def setAcceptFunction1(value: /* param0 */ DraggableElementElement => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     
     inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     

@@ -1,6 +1,7 @@
 package typings.nextAuth
 
 import typings.nextAuth.coreTypesMod.Session
+import typings.nextAuth.nextAuthBooleans.`false`
 import typings.nextAuth.providersMod.BuiltInProviderType
 import typings.nextAuth.providersMod.ProviderType
 import typings.react.mod.ReactNode
@@ -74,6 +75,13 @@ object reactTypesMod {
       */
     var refetchOnWindowFocus: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Set to `false` to stop polling when the device has no internet access offline (determined by `navigator.onLine`)
+      *
+      * [`navigator.onLine` documentation](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine)
+      */
+    var refetchWhenOffline: js.UndefOr[`false`] = js.undefined
+    
     var session: js.UndefOr[Session | Null] = js.undefined
   }
   object SessionProviderProps {
@@ -105,6 +113,10 @@ object reactTypesMod {
       
       inline def setRefetchOnWindowFocusUndefined: Self = StObject.set(x, "refetchOnWindowFocus", js.undefined)
       
+      inline def setRefetchWhenOffline(value: `false`): Self = StObject.set(x, "refetchWhenOffline", value.asInstanceOf[js.Any])
+      
+      inline def setRefetchWhenOfflineUndefined: Self = StObject.set(x, "refetchWhenOffline", js.undefined)
+      
       inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
       inline def setSessionNull: Self = StObject.set(x, "session", null)
@@ -119,12 +131,13 @@ object reactTypesMod {
   - Dropped {[ P in string ]: unknown} */ trait SignInOptions extends StObject {
     
     /**
-      * Defaults to the current URL.
-      * @docs https://next-auth.js.org/getting-started/client#specifying-a-callbackurl
+      * Specify to which URL the user will be redirected after signing in. Defaults to the page URL the sign-in is initiated from.
+      *
+      * [Documentation](https://next-auth.js.org/getting-started/client#specifying-a-callbackurl)
       */
     var callbackUrl: js.UndefOr[String] = js.undefined
     
-    /** @docs https://next-auth.js.org/getting-started/client#using-the-redirect-false-option */
+    /** [Documentation](https://next-auth.js.org/getting-started/client#using-the-redirect-false-option) */
     var redirect: js.UndefOr[Boolean] = js.undefined
   }
   object SignInOptions {
@@ -181,10 +194,10 @@ object reactTypesMod {
   
   trait SignOutParams[R /* <: Boolean */] extends StObject {
     
-    /** @docs https://next-auth.js.org/getting-started/client#specifying-a-callbackurl-1 */
+    /** [Documentation](https://next-auth.js.org/getting-started/client#specifying-a-callbackurl-1) */
     var callbackUrl: js.UndefOr[String] = js.undefined
     
-    /** @docs https://next-auth.js.org/getting-started/client#using-the-redirect-false-option-1 */
+    /** [Documentation](https://next-auth.js.org/getting-started/client#using-the-redirect-false-option-1 */
     var redirect: js.UndefOr[R] = js.undefined
   }
   object SignOutParams {

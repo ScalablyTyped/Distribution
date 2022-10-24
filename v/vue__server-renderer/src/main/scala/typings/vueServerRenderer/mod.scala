@@ -480,7 +480,7 @@ object mod {
   
   inline def ssrRenderStyle(raw: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ssrRenderStyle")(raw.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def ssrRenderSuspense(push: PushFn, hasRenderContent: Record[String, js.UndefOr[js.Function0[Unit]]]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ssrRenderSuspense")(push.asInstanceOf[js.Any], hasRenderContent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def ssrRenderSuspense(push: PushFn, param1: Record[String, js.UndefOr[js.Function0[Unit]]]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ssrRenderSuspense")(push.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def ssrRenderTeleport(
     parentPush: PushFn,

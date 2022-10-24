@@ -12,5 +12,5 @@ object distTs3Dot9ArgTypesDocgenTypeScriptCreateDefaultValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createDefaultValue(hasDefaultValue: DocgenInfo): PropDefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultValue")(hasDefaultValue.asInstanceOf[js.Any]).asInstanceOf[PropDefaultValue]
+  inline def createDefaultValue(param0: DocgenInfo): PropDefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultValue")(param0.asInstanceOf[js.Any]).asInstanceOf[PropDefaultValue]
 }

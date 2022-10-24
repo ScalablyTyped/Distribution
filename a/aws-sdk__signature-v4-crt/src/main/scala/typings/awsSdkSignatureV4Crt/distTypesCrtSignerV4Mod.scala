@@ -21,7 +21,7 @@ object distTypesCrtSignerV4Mod {
     extends StObject
        with RequestPresigner
        with RequestSigner {
-    def this(hasCredentialsRegionServiceSha256ApplyChecksumUriEscapePathSigningAlgorithm: CrtSignerV4Init & SignatureV4CryptoInit) = this()
+    def this(param0: CrtSignerV4Init & SignatureV4CryptoInit) = this()
     
     /* private */ val applyChecksum: Any = js.native
     

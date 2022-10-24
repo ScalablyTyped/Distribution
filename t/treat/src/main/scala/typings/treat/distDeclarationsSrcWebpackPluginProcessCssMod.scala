@@ -11,5 +11,5 @@ object distDeclarationsSrcWebpackPluginProcessCssMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(styles: Any, hasMinifyBrowsersFrom: From): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any], hasMinifyBrowsersFrom.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  inline def default(styles: Any, param1: From): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
 }

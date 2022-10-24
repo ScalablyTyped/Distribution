@@ -13,9 +13,9 @@ object libDestroyerOfModulesMod {
   @JSImport("galactus/lib/DestroyerOfModules", "DestroyerOfModules")
   @js.native
   open class DestroyerOfModules protected () extends StObject {
-    def this(hasRootDirectoryWalkerShouldKeepModuleTest: RootDirectory) = this()
+    def this(param0: RootDirectory) = this()
     
-    def collectKeptModules(hasRelativePaths: RelativePaths): js.Promise[ModuleMap] = js.native
+    def collectKeptModules(param0: RelativePaths): js.Promise[ModuleMap] = js.native
     
     def destroy(): js.Promise[Unit] = js.native
     

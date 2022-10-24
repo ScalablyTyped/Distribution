@@ -28,7 +28,7 @@ object libEsmTableBody2Mod {
     
     /* private */ var locateDrag: Any = js.native
     
-    def renderContextMenu(hasMouseEvent: ContextMenu2ContentProps): js.UndefOr[Element] = js.native
+    def renderContextMenu(param0: ContextMenu2ContentProps): js.UndefOr[Element] = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MTableBody2(nextProps: TableBodyProps): Boolean = js.native

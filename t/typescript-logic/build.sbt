@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "typescript-logic"
-version := "0.0.0-7b7284"
-scalaVersion := "3.1.2"
+version := "0.0.0-243808"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

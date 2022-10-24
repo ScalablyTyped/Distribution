@@ -20,7 +20,7 @@ object cjsCalendarViewMod {
   
   object default {
     
-    inline def apply(hasClassNameFocusedItemOnKeyDownChildrenLabelledby: CalendarViewProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasClassNameFocusedItemOnKeyDownChildrenLabelledby.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: CalendarViewProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-widgets/cjs/CalendarView", JSImport.Default)
     @js.native
@@ -32,7 +32,7 @@ object cjsCalendarViewMod {
     inline def Body_=(x: js.Function1[/* props */ AllHTMLAttributes[HTMLTableSectionElement], Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
     
     /* was `typeof CalendarViewCell` */
-    inline def Cell(hasOnChangeMinMaxDateUnitDisabledSelectedFocusedItemViewUnitChildrenLabel: CellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(hasOnChangeMinMaxDateUnitDisabledSelectedFocusedItemViewUnitChildrenLabel.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def Cell(param0: CellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-widgets/cjs/CalendarView", "default.Row")
     @js.native

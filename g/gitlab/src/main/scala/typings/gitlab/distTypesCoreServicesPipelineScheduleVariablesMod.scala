@@ -14,7 +14,7 @@ object distTypesCoreServicesPipelineScheduleVariablesMod {
   @JSImport("gitlab/dist/types/core/services/PipelineScheduleVariables", "PipelineScheduleVariables")
   @js.native
   open class PipelineScheduleVariables () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(projectId: String, pipelineScheduleId: Double): js.Promise[GetResponse] = js.native
     def all(projectId: String, pipelineScheduleId: Double, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native

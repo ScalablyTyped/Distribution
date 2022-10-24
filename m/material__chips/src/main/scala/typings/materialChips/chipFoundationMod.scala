@@ -40,9 +40,9 @@ object chipFoundationMod {
     
     /* private */ var getRemovedAnnouncement: Any = js.native
     
-    def handleActionInteraction(hasDetail: ActionInteractionEvent): Unit = js.native
+    def handleActionInteraction(param0: ActionInteractionEvent): Unit = js.native
     
-    def handleActionNavigation(hasDetail: ActionNavigationEvent): Unit = js.native
+    def handleActionNavigation(param0: ActionNavigationEvent): Unit = js.native
     
     def handleAnimationEnd(event: AnimationEvent): Unit = js.native
     

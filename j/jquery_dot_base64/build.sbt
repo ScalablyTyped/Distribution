@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_base64"
-version := "0.0-unknown-dt-20220818Z-614966"
-scalaVersion := "3.1.2"
+version := "0.0-unknown-dt-20220818Z-6b4999"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

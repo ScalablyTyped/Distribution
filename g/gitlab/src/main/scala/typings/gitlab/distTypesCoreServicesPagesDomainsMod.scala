@@ -15,10 +15,10 @@ object distTypesCoreServicesPagesDomainsMod {
   @JSImport("gitlab/dist/types/core/services/PagesDomains", "PagesDomains")
   @js.native
   open class PagesDomains () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native
-    def all(hasProjectIdOptions: projectIdstringnumberunde): js.Promise[GetResponse] = js.native
+    def all(param0: projectIdstringnumberunde): js.Promise[GetResponse] = js.native
     
     def create(projectId: String, domain: String): js.Promise[js.Object] = js.native
     def create(projectId: String, domain: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native

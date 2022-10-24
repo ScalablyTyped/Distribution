@@ -18,7 +18,7 @@ object distTypesStreamDotsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def StreamDots[RawDatum /* <: StreamDatum */](hasDataDotComponentPositionGetSizeGetColorGetBorderWidthGetBorderColor: StreamDotsProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StreamDots")(hasDataDotComponentPositionGetSizeGetColorGetBorderWidthGetBorderColor.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StreamDots[RawDatum /* <: StreamDatum */](param0: StreamDotsProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StreamDots")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait StreamDotsProps[RawDatum /* <: StreamDatum */] extends StObject {
     

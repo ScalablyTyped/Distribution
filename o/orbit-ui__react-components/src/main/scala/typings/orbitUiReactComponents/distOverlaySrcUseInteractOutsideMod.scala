@@ -16,7 +16,7 @@ object distOverlaySrcUseInteractOutsideMod {
   val ^ : js.Any = js.native
   
   inline def useInteractOutside(rootElementRef: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useInteractOutside")(rootElementRef.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useInteractOutside(rootElementRef: RefObject[HTMLElement], hasIsDisabledOnInteractOutside: UseInteractOutsideOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useInteractOutside")(rootElementRef.asInstanceOf[js.Any], hasIsDisabledOnInteractOutside.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useInteractOutside(rootElementRef: RefObject[HTMLElement], param1: UseInteractOutsideOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useInteractOutside")(rootElementRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait UseInteractOutsideOptions extends StObject {
     

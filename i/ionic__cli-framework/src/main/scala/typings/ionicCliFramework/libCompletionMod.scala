@@ -18,7 +18,7 @@ object libCompletionMod {
   /* note: abstract class */ @JSImport("@ionic/cli-framework/lib/completion", "CompletionFormatter")
   @js.native
   open class CompletionFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends StObject {
-    def this(hasNamespace: CompletionFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CompletionFormatterDeps[C, N, M, I, O]) = this()
     
     def format(): js.Promise[String] = js.native
     
@@ -28,7 +28,7 @@ object libCompletionMod {
   @JSImport("@ionic/cli-framework/lib/completion", "ZshCompletionFormatter")
   @js.native
   open class ZshCompletionFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends CompletionFormatter[C, N, M, I, O] {
-    def this(hasNamespace: CompletionFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CompletionFormatterDeps[C, N, M, I, O]) = this()
   }
   
   inline def getCompletionWords[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](ns: N, argv: js.Array[String]): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompletionWords")(ns.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]

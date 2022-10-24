@@ -19,5 +19,5 @@ object iconStyledComponentsMod {
   @js.native
   val Svg: StyletronComponent[svg, StyledComponentArgs] = js.native
   
-  inline def getSvgStyles(hasDollarthemeDollarsizeDollarcolor: Theme): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getSvgStyles")(hasDollarthemeDollarsizeDollarcolor.asInstanceOf[js.Any]).asInstanceOf[StyleObject]
+  inline def getSvgStyles(param0: Theme): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getSvgStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[StyleObject]
 }

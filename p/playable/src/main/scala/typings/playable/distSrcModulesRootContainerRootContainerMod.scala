@@ -15,7 +15,7 @@ object distSrcModulesRootContainerRootContainerMod {
   open class default protected ()
     extends StObject
        with RootContainer {
-    def this(hasEventEmitterConfig: ConfigEventEmitter) = this()
+    def this(param0: ConfigEventEmitter) = this()
     
     /* private */ /* CompleteClass */
     var _bindCallbacks: Any = js.native

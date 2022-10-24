@@ -225,6 +225,15 @@ object ffmpegMod {
         }
       }
       
+      extension [Self <: typings.ffmpegJs.ffmpegMod.ffmpeg.Worker](x: Self) {
+        
+        inline def setOnmessage(value: OnMessageOptions => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+        
+        inline def setPostMessage(value: PostMessageOptions => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+        
+        inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+      }
+      
       trait OnMessageOptions extends StObject {
         
         var data: Data
@@ -264,15 +273,6 @@ object ffmpegMod {
           
           inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         }
-      }
-      
-      extension [Self <: typings.ffmpegJs.ffmpegMod.ffmpeg.Worker](x: Self) {
-        
-        inline def setOnmessage(value: OnMessageOptions => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
-        
-        inline def setPostMessage(value: PostMessageOptions => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
-        
-        inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
       }
     }
   }

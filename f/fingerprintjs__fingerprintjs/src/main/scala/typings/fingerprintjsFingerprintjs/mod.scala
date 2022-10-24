@@ -37,20 +37,12 @@ object mod {
     inline def hashComponents_=(x: js.Function1[/* components */ UnknownComponents, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hashComponents")(x.asInstanceOf[js.Any])
     
     inline def load(): js.Promise[Agent] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Promise[Agent]]
-    inline def load(hasDelayFallbackDebugMonitoring: ReadonlyLoadOptions): js.Promise[Agent] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(hasDelayFallbackDebugMonitoring.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Agent]]
+    inline def load(param0: ReadonlyLoadOptions): js.Promise[Agent] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Agent]]
     @JSImport("@fingerprintjs/fingerprintjs", "default.load")
     @js.native
-    def load_Fdefault: js.Function1[
-        /* hasDelayFallbackDebugMonitoring */ js.UndefOr[ReadonlyLoadOptions], 
-        js.Promise[Agent]
-      ] = js.native
+    def load_Fdefault: js.Function1[/* param0 */ js.UndefOr[ReadonlyLoadOptions], js.Promise[Agent]] = js.native
     
-    inline def load_Fdefault_=(
-      x: js.Function1[
-          /* hasDelayFallbackDebugMonitoring */ js.UndefOr[ReadonlyLoadOptions], 
-          js.Promise[Agent]
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("load")(x.asInstanceOf[js.Any])
+    inline def load_Fdefault_=(x: js.Function1[/* param0 */ js.UndefOr[ReadonlyLoadOptions], js.Promise[Agent]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("load")(x.asInstanceOf[js.Any])
   }
   
   inline def componentsToDebugString(components: UnknownComponents): String = ^.asInstanceOf[js.Dynamic].applyDynamic("componentsToDebugString")(components.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -126,7 +118,7 @@ object mod {
     * Builds an instance of Agent and waits a delay required for a proper operation.
     */
   inline def load(): js.Promise[Agent] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Promise[Agent]]
-  inline def load(hasDelayFallbackDebugMonitoring: ReadonlyLoadOptions): js.Promise[Agent] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(hasDelayFallbackDebugMonitoring.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Agent]]
+  inline def load(param0: ReadonlyLoadOptions): js.Promise[Agent] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Agent]]
   
   /**
     * Loads the given entropy sources. Returns a function that collects the entropy components.
@@ -224,12 +216,12 @@ object mod {
     inline def deviceMemory_Fsources_=(x: js.Function0[js.UndefOr[Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceMemory")(x.asInstanceOf[js.Any])
     
     inline def domBlockers(): js.Promise[js.UndefOr[js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("domBlockers")().asInstanceOf[js.Promise[js.UndefOr[js.Array[String]]]]
-    inline def domBlockers(hasDebug: Options): js.Promise[js.UndefOr[js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("domBlockers")(hasDebug.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Array[String]]]]
+    inline def domBlockers(param0: Options): js.Promise[js.UndefOr[js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("domBlockers")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Array[String]]]]
     @JSImport("@fingerprintjs/fingerprintjs", "sources.domBlockers")
     @js.native
-    def domBlockers_Fsources: js.Function1[/* hasDebug */ js.UndefOr[Options], js.Promise[js.UndefOr[js.Array[String]]]] = js.native
+    def domBlockers_Fsources: js.Function1[/* param0 */ js.UndefOr[Options], js.Promise[js.UndefOr[js.Array[String]]]] = js.native
     
-    inline def domBlockers_Fsources_=(x: js.Function1[/* hasDebug */ js.UndefOr[Options], js.Promise[js.UndefOr[js.Array[String]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("domBlockers")(x.asInstanceOf[js.Any])
+    inline def domBlockers_Fsources_=(x: js.Function1[/* param0 */ js.UndefOr[Options], js.Promise[js.UndefOr[js.Array[String]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("domBlockers")(x.asInstanceOf[js.Any])
     
     inline def fontPreferences(): js.Promise[Record[String, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontPreferences")().asInstanceOf[js.Promise[Record[String, Double]]]
     @JSImport("@fingerprintjs/fingerprintjs", "sources.fontPreferences")

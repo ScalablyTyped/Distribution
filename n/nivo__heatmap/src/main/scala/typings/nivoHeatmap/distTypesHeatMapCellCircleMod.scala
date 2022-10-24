@@ -13,7 +13,5 @@ object distTypesHeatMapCellCircleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HeatMapCellCircle[Datum /* <: HeatMapDatum */](
-    hasCellBorderWidthAnimatedPropsOnMouseEnterOnMouseMoveOnMouseLeaveOnClickEnableLabels: CellComponentProps[Datum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCellCircle")(hasCellBorderWidthAnimatedPropsOnMouseEnterOnMouseMoveOnMouseLeaveOnClickEnableLabels.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeatMapCellCircle[Datum /* <: HeatMapDatum */](param0: CellComponentProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCellCircle")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

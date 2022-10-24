@@ -15,7 +15,7 @@ object distBuildWebpackPluginsProfilingPluginMod {
   @JSImport("next/dist/build/webpack/plugins/profiling-plugin", "ProfilingPlugin")
   @js.native
   open class ProfilingPlugin protected () extends StObject {
-    def this(hasRunWebpackSpan: RunWebpackSpan) = this()
+    def this(param0: RunWebpackSpan) = this()
     
     @JSName("apply")
     def apply(compiler: Any): Unit = js.native
@@ -27,14 +27,9 @@ object distBuildWebpackPluginsProfilingPluginMod {
     def traceCompilationHooks(compiler: Any): Unit = js.native
     
     def traceHookPair(spanName: String, startHook: Any, stopHook: Any): Unit = js.native
-    def traceHookPair(spanName: String, startHook: Any, stopHook: Any, hasParentSpanAttrsOnStartOnStop: Attrs): Unit = js.native
+    def traceHookPair(spanName: String, startHook: Any, stopHook: Any, param3: Attrs): Unit = js.native
     def traceHookPair(spanName: js.Function0[String], startHook: Any, stopHook: Any): Unit = js.native
-    def traceHookPair(
-      spanName: js.Function0[String],
-      startHook: Any,
-      stopHook: Any,
-      hasParentSpanAttrsOnStartOnStop: Attrs
-    ): Unit = js.native
+    def traceHookPair(spanName: js.Function0[String], startHook: Any, stopHook: Any, param3: Attrs): Unit = js.native
     
     def traceTopLevelHooks(compiler: Any): Unit = js.native
   }

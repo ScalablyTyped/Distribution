@@ -22,7 +22,7 @@ object libDoctorAilmentsBaseMod {
   open class Ailment protected ()
     extends StObject
        with IAilment {
-    def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
+    def this(param0: AilmentDeps) = this()
     
     /* private */ var _debug: Any = js.native
     

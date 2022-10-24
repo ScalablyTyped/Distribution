@@ -435,7 +435,7 @@ object distServerBaseServerMod {
     
     /* private */ var getStaticHTML: Any = js.native
     
-    /* protected */ def getStaticPaths(hasPathname: OriginalAppPath): js.Promise[FallbackMode] = js.native
+    /* protected */ def getStaticPaths(param0: OriginalAppPath): js.Promise[FallbackMode] = js.native
     
     /* protected */ def handleCompression(req: BaseNextRequest[Any], res: BaseNextResponse[Any]): Unit = js.native
     

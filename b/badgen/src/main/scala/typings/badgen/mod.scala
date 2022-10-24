@@ -10,9 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def badgen(hasLabelSubjectStatusColorStyleIconIconWidthLabelColorScale: BadgenOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("badgen")(hasLabelSubjectStatusColorStyleIconIconWidthLabelColorScale.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def badgen(param0: BadgenOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("badgen")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def calcWidth(hasText: js.Iterable[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calcWidth")(hasText.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calcWidth(param0: js.Iterable[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calcWidth")(param0.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   trait BadgenOptions extends StObject {
     
@@ -95,23 +95,20 @@ object mod {
     
     trait Window extends StObject {
       
-      def badgen(hasLabelSubjectStatusColorStyleIconIconWidthLabelColorScale: BadgenOptions): String
+      def badgen(param0: BadgenOptions): String
       @JSName("badgen")
-      var badgen_Original: js.Function1[
-            /* hasLabelSubjectStatusColorStyleIconIconWidthLabelColorScale */ BadgenOptions, 
-            String
-          ]
+      var badgen_Original: js.Function1[/* param0 */ BadgenOptions, String]
     }
     object Window {
       
-      inline def apply(badgen: /* hasLabelSubjectStatusColorStyleIconIconWidthLabelColorScale */ BadgenOptions => String): Window = {
+      inline def apply(badgen: /* param0 */ BadgenOptions => String): Window = {
         val __obj = js.Dynamic.literal(badgen = js.Any.fromFunction1(badgen))
         __obj.asInstanceOf[Window]
       }
       
       extension [Self <: Window](x: Self) {
         
-        inline def setBadgen(value: /* hasLabelSubjectStatusColorStyleIconIconWidthLabelColorScale */ BadgenOptions => String): Self = StObject.set(x, "badgen", js.Any.fromFunction1(value))
+        inline def setBadgen(value: /* param0 */ BadgenOptions => String): Self = StObject.set(x, "badgen", js.Any.fromFunction1(value))
       }
     }
   }

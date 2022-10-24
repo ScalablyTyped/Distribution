@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_streetviewpublish"
-version := "1.0-dt-20220912Z-196b99"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220912Z-29cb49"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

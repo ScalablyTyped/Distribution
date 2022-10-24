@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "set-blocking"
-version := "2.0-dt-20221005Z-986d94"
-scalaVersion := "3.1.2"
+version := "2.0-dt-20221005Z-3c4d5d"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

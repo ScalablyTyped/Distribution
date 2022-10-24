@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-aria/focus" : "3.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-aria/focus" : "3.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

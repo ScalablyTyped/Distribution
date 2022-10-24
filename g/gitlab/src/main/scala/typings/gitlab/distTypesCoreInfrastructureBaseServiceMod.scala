@@ -14,7 +14,7 @@ object distTypesCoreInfrastructureBaseServiceMod {
   @JSImport("gitlab/dist/types/core/infrastructure/BaseService", "BaseService")
   @js.native
   open class BaseService () extends StObject {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     val camelize: Boolean = js.native
     

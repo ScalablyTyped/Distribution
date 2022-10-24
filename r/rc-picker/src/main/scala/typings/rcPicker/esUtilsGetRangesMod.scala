@@ -16,7 +16,7 @@ object esUtilsGetRangesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasPrefixClsRangeListComponentsNeedConfirmButtonOnNowOnOkOkDisabledShowNowLocale: RangesProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsRangeListComponentsNeedConfirmButtonOnNowOnOkOkDisabledShowNowLocale.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: RangesProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RangesProps extends StObject {
     

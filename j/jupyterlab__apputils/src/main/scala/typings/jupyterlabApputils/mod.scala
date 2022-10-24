@@ -1,5 +1,6 @@
 package typings.jupyterlabApputils
 
+import typings.jupyterlabApputils.anon.OmitITextOptionsselection
 import typings.jupyterlabApputils.anon.PartialIButton
 import typings.jupyterlabApputils.anon.PartialIScore
 import typings.jupyterlabApputils.anon.ReadonlyIButton
@@ -320,7 +321,7 @@ object mod {
       *
       * @returns A promise that resolves with whether the dialog was accepted
       */
-    inline def getPassword(options: ITextOptions): js.Promise[IResult[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPassword")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[String]]]
+    inline def getPassword(options: OmitITextOptionsselection): js.Promise[IResult[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPassword")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[String]]]
     
     /**
       * Create and show a input dialog for a text.

@@ -45,10 +45,10 @@ object typesMenuConfigurationProviderMod {
     val sheetVerticalSize: SheetVerticalSize = js.native
   }
   
-  inline def MenuConfigurationProvider(hasChildrenConfiguration: MenuConfigurationProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuConfigurationProvider")(hasChildrenConfiguration.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuConfigurationProvider(param0: MenuConfigurationProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuConfigurationProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useMenuConfiguration(): ReadonlyMenuConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuConfiguration")().asInstanceOf[ReadonlyMenuConfiguration]
-  inline def useMenuConfiguration(hasHorizontalRenderAsSheetSheetHeaderSheetFooterSheetPositionSheetVerticalSize: MenuConfiguration): ReadonlyMenuConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuConfiguration")(hasHorizontalRenderAsSheetSheetHeaderSheetFooterSheetPositionSheetVerticalSize.asInstanceOf[js.Any]).asInstanceOf[ReadonlyMenuConfiguration]
+  inline def useMenuConfiguration(param0: MenuConfiguration): ReadonlyMenuConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuConfiguration")(param0.asInstanceOf[js.Any]).asInstanceOf[ReadonlyMenuConfiguration]
   
   trait MenuConfigurationProviderProps
     extends StObject

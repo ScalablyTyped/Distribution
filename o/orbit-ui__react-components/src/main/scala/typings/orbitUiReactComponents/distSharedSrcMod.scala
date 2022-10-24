@@ -88,7 +88,7 @@ object distSharedSrcMod {
   open class ElementIterator[T] protected ()
     extends typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.ElementIterator[T] {
     def this(elements: js.Array[T]) = this()
-    def this(elements: js.Array[T], hasFrom: From) = this()
+    def this(elements: js.Array[T], param1: From) = this()
   }
   
   @JSImport("@orbit-ui/react-components/dist/shared/src", "FocusManager")
@@ -98,7 +98,7 @@ object distSharedSrcMod {
     def this(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope) = this()
     def this(
       scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
-      hasIsVirtualKeyPropOnFocus: FocusManagerOptions
+      param1: FocusManagerOptions
     ) = this()
   }
   
@@ -181,10 +181,10 @@ object distSharedSrcMod {
   
   inline def createDisposables(): Add = ^.asInstanceOf[js.Dynamic].applyDynamic("createDisposables")().asInstanceOf[Add]
   
-  inline def createEmbeddableAdapter[T /* <: Size */](sizeAdapter: SizeAdapter[T]): js.Function2[/* element */ ReactElement, /* hasSizeProps */ RecordWithSize, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmbeddableAdapter")(sizeAdapter.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* element */ ReactElement, /* hasSizeProps */ RecordWithSize, ReactElement]]
+  inline def createEmbeddableAdapter[T /* <: Size */](sizeAdapter: SizeAdapter[T]): js.Function2[/* element */ ReactElement, /* param1 */ RecordWithSize, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmbeddableAdapter")(sizeAdapter.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* element */ ReactElement, /* param1 */ RecordWithSize, ReactElement]]
   
   inline def createFocusableTreeWalker(root: HTMLElement): TreeWalker = ^.asInstanceOf[js.Dynamic].applyDynamic("createFocusableTreeWalker")(root.asInstanceOf[js.Any]).asInstanceOf[TreeWalker]
-  inline def createFocusableTreeWalker(root: HTMLElement, hasTabbable: FocusableTreeWalkerOptions): TreeWalker = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusableTreeWalker")(root.asInstanceOf[js.Any], hasTabbable.asInstanceOf[js.Any])).asInstanceOf[TreeWalker]
+  inline def createFocusableTreeWalker(root: HTMLElement, param1: FocusableTreeWalkerOptions): TreeWalker = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusableTreeWalker")(root.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TreeWalker]
   
   inline def createSizeAdapter[T /* <: Size */](adapter: SizeAdapter[T]): js.Function1[/* size */ Size, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSizeAdapter")(adapter.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* size */ Size, T]]
   
@@ -196,7 +196,7 @@ object distSharedSrcMod {
   
   inline def getSlotKey(element: ReactElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSlotKey")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getSlots[T /* <: SlotOptions */](children: ReactNode, has_Slots: T): GetSlotsReturn[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlots")(children.asInstanceOf[js.Any], has_Slots.asInstanceOf[js.Any])).asInstanceOf[GetSlotsReturn[T]]
+  inline def getSlots[T /* <: SlotOptions */](children: ReactNode, param1: T): GetSlotsReturn[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlots")(children.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[GetSlotsReturn[T]]
   
   inline def isArray[T](value: Any): /* is std.Array<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<T> */ Boolean]
   
@@ -243,19 +243,19 @@ object distSharedSrcMod {
   inline def slot[P](slotName: String, ElementType: P): P = (^.asInstanceOf[js.Dynamic].applyDynamic("slot")(slotName.asInstanceOf[js.Any], ElementType.asInstanceOf[js.Any])).asInstanceOf[P]
   
   inline def useAutoFocus(targetRef: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useAutoFocus(targetRef: RefObject[HTMLElement], hasIsDisabledDelayOnFocus: AutoFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any], hasIsDisabledDelayOnFocus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useAutoFocus(targetRef: RefObject[HTMLElement], param1: AutoFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocus")(targetRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useAutoFocusChild(focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def useAutoFocusChild(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
-    hasTargetIsDisabledDelayCanFocusOnFocusOnNotFound: AutoFocusChildOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any], hasTargetIsDisabledDelayCanFocusOnFocusOnNotFound.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    param1: AutoFocusChildOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAutoFocusChild")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useChainedEventCallback_false[T /* <: ChainableFunction */](callbacks: (T | `false`)*): ChainableFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("useChainedEventCallback")(callbacks.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ChainableFunction]
   
   inline def useCheckableContext(): js.Tuple2[CheckableContextType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableContext")().asInstanceOf[js.Tuple2[CheckableContextType, Boolean]]
   
-  inline def useCheckableProps(hasValue: `0`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(hasValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
+  inline def useCheckableProps(param0: `0`): js.Tuple2[UseCheckablePropsReturn, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCheckableProps")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UseCheckablePropsReturn, Boolean]]
   
   inline def useCommittedRef[T](value: T): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCommittedRef")(value.asInstanceOf[js.Any]).asInstanceOf[RefObject[T]]
   
@@ -263,38 +263,18 @@ object distSharedSrcMod {
   inline def useControllableState[T](controlledValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: T, initialValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: T, hasOnChange: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: Unit, hasOnChange: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: T, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: T, initialValue: T, defaultValue: Unit, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: T, initialValue: Unit, defaultValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](controlledValue: T, initialValue: Unit, defaultValue: T, hasOnChange: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](
-    controlledValue: T,
-    initialValue: Unit,
-    defaultValue: Unit,
-    hasOnChange: ControllableStateOptions[T]
-  ): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: T, initialValue: Unit, defaultValue: T, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: T, initialValue: Unit, defaultValue: Unit, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: Unit, initialValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: Unit, initialValue: T, defaultValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](controlledValue: Unit, initialValue: T, defaultValue: T, hasOnChange: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](
-    controlledValue: Unit,
-    initialValue: T,
-    defaultValue: Unit,
-    hasOnChange: ControllableStateOptions[T]
-  ): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: Unit, initialValue: T, defaultValue: T, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: Unit, initialValue: T, defaultValue: Unit, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   inline def useControllableState[T](controlledValue: Unit, initialValue: Unit, defaultValue: T): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](
-    controlledValue: Unit,
-    initialValue: Unit,
-    defaultValue: T,
-    hasOnChange: ControllableStateOptions[T]
-  ): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
-  inline def useControllableState[T](
-    controlledValue: Unit,
-    initialValue: Unit,
-    defaultValue: Unit,
-    hasOnChange: ControllableStateOptions[T]
-  ): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], hasOnChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: Unit, initialValue: Unit, defaultValue: T, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
+  inline def useControllableState[T](controlledValue: Unit, initialValue: Unit, defaultValue: Unit, param3: ControllableStateOptions[T]): js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableState")(controlledValue.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[T, js.Function1[/* maybeState */ T, Unit], Boolean]]
   
   inline def useDisposables(): Dispose = ^.asInstanceOf[js.Dynamic].applyDynamic("useDisposables")().asInstanceOf[Dispose]
   
@@ -450,8 +430,8 @@ object distSharedSrcMod {
   inline def useFocusManager(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope): typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any]).asInstanceOf[typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager]
   inline def useFocusManager(
     scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
-    hasIsVirtualKeyPropOnFocus: FocusManagerOptions
-  ): typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any], hasIsVirtualKeyPropOnFocus.asInstanceOf[js.Any])).asInstanceOf[typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager]
+    param1: FocusManagerOptions
+  ): typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager]
   
   inline def useFocusScope(): js.Tuple2[
     typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, 
@@ -462,7 +442,7 @@ object distSharedSrcMod {
   ]]
   
   inline def useFocusWithin(): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")().asInstanceOf[OnFocus | OnBlurOnFocus]
-  inline def useFocusWithin(hasOnFocusOnBlurIsDisabled: UseFocusWithinOptions): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(hasOnFocusOnBlurIsDisabled.asInstanceOf[js.Any]).asInstanceOf[OnFocus | OnBlurOnFocus]
+  inline def useFocusWithin(param0: UseFocusWithinOptions): OnFocus | OnBlurOnFocus = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusWithin")(param0.asInstanceOf[js.Any]).asInstanceOf[OnFocus | OnBlurOnFocus]
   
   inline def useForceRender(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceRender")().asInstanceOf[js.Function0[Unit]]
   
@@ -481,20 +461,20 @@ object distSharedSrcMod {
   
   inline def useKeyboardNavigation(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
-    hasPreviousNextFirstLast: KeyboardNavigationBindings
-  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+    param1: KeyboardNavigationBindings
+  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
   inline def useKeyboardNavigation(
     focusManager: typings.orbitUiReactComponents.distSharedSrcUseFocusManagerMod.FocusManager,
-    hasPreviousNextFirstLast: KeyboardNavigationBindings,
-    hasOnSelect: KeyboardNavigationOptions
-  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], hasPreviousNextFirstLast.asInstanceOf[js.Any], hasOnSelect.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
+    param1: KeyboardNavigationBindings,
+    param2: KeyboardNavigationOptions
+  ): OnKeyDown = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardNavigation")(focusManager.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[OnKeyDown]
   
   inline def useKeyedRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, currentKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useKeyedRovingFocus(
     scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope,
     currentKey: String,
-    hasKeyPropIsDisabled: IsDisabled
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any], hasKeyPropIsDisabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    param2: IsDisabled
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeyedRovingFocus")(scope.asInstanceOf[js.Any], currentKey.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -518,13 +498,10 @@ object distSharedSrcMod {
   ]]
   
   inline def useResizeObserver(onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit]): RefCallback[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any]).asInstanceOf[RefCallback[HTMLElement]]
-  inline def useResizeObserver(
-    onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit],
-    hasIsDisabledBox: UseResizeObserverOptions
-  ): RefCallback[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], hasIsDisabledBox.asInstanceOf[js.Any])).asInstanceOf[RefCallback[HTMLElement]]
+  inline def useResizeObserver(onResize: js.Function1[/* entry */ ResizeObserverEntry, Unit], param1: UseResizeObserverOptions): RefCallback[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("useResizeObserver")(onResize.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RefCallback[HTMLElement]]
   
   inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, hasIsDisabled: `2`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], hasIsDisabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRovingFocus(scope: typings.orbitUiReactComponents.distSharedSrcUseFocusScopeMod.DomScope, param1: `2`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRovingFocus")(scope.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useSlots[T /* <: SlotOptions */](children: ReactNode, slots: T): UseSlotsReturn[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useSlots")(children.asInstanceOf[js.Any], slots.asInstanceOf[js.Any])).asInstanceOf[UseSlotsReturn[T]]
   

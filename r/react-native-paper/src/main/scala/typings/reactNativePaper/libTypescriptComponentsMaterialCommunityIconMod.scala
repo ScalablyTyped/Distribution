@@ -15,7 +15,7 @@ object libTypescriptComponentsMaterialCommunityIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasNameColorSizeDirectionAllowFontScaling: IconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNameColorSizeDirectionAllowFontScaling.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: IconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-native-paper/lib/typescript/components/MaterialCommunityIcon", "accessibilityProps")
   @js.native

@@ -25,13 +25,13 @@ object buildPluginsUnversionedExpoFacebookWithIosFacebookMod {
   
   inline def setFacebookAdvertiserIDCollectionEnabled(
     config: ExpoConfigFacebook,
-    hasFacebookAdvertiserIDCollectionEnabledInfoPlist: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookAdvertiserIDCollectionEnabled")(config.asInstanceOf[js.Any], hasFacebookAdvertiserIDCollectionEnabledInfoPlist.asInstanceOf[js.Any])).asInstanceOf[Any]
+    param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookAdvertiserIDCollectionEnabled")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def setFacebookAppId(
     config: PickExpoConfigFacebookfac,
-    hasFacebookAppIDInfoPlist: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookAppId")(config.asInstanceOf[js.Any], hasFacebookAppIDInfoPlist.asInstanceOf[js.Any])).asInstanceOf[Any]
+    param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookAppId")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def setFacebookApplicationQuerySchemes(
     config: PickExpoConfigFacebookfac,
@@ -40,13 +40,13 @@ object buildPluginsUnversionedExpoFacebookWithIosFacebookMod {
   
   inline def setFacebookAutoInitEnabled(
     config: ExpoConfigFacebook,
-    hasFacebookAutoInitEnabledInfoPlist: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookAutoInitEnabled")(config.asInstanceOf[js.Any], hasFacebookAutoInitEnabledInfoPlist.asInstanceOf[js.Any])).asInstanceOf[Any]
+    param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookAutoInitEnabled")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def setFacebookAutoLogAppEventsEnabled(
     config: ExpoConfigFacebook,
-    hasFacebookAutoLogAppEventsEnabledInfoPlist: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookAutoLogAppEventsEnabled")(config.asInstanceOf[js.Any], hasFacebookAutoLogAppEventsEnabledInfoPlist.asInstanceOf[js.Any])).asInstanceOf[Any]
+    param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookAutoLogAppEventsEnabled")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def setFacebookConfig(
     config: ExpoConfigFacebook,
@@ -55,8 +55,8 @@ object buildPluginsUnversionedExpoFacebookWithIosFacebookMod {
   
   inline def setFacebookDisplayName(
     config: ExpoConfigFacebook,
-    hasFacebookDisplayNameInfoPlist: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookDisplayName")(config.asInstanceOf[js.Any], hasFacebookDisplayNameInfoPlist.asInstanceOf[js.Any])).asInstanceOf[Any]
+    param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setFacebookDisplayName")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def setFacebookScheme(
     config: ExpoConfigFacebook,

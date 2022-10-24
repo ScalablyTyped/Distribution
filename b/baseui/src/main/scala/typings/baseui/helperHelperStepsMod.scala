@@ -12,5 +12,5 @@ object helperHelperStepsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HelperSteps(hasIndexLengthOnFinishOnPrevOnNext: HelperStepsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HelperSteps")(hasIndexLengthOnFinishOnPrevOnNext.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HelperSteps(param0: HelperStepsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HelperSteps")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -12,9 +12,7 @@ object libJsonldVideoGameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasTypeKeyOverrideAggregateRatingTrailerReviewsImageAuthorNameProviderProducerNameProducerUrlOffersOperatingSystemNamePlatformNameTranslatorNameLanguageNameGenreNamePublisherNameRest: VideoGameJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideAggregateRatingTrailerReviewsImageAuthorNameProviderProducerNameProducerUrlOffersOperatingSystemNamePlatformNameTranslatorNameLanguageNameGenreNamePublisherNameRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: VideoGameJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait VideoGameJsonLdProps
     extends StObject

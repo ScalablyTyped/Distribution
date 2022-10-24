@@ -14,11 +14,11 @@ object buildTransformerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createExoticTransformer(hasNodeModulesPathsTranspileModules: NodeModulesPaths): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createExoticTransformer")(hasNodeModulesPathsTranspileModules.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createExoticTransformer(param0: NodeModulesPaths): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createExoticTransformer")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def createModuleMatcher(hasFoldersModuleIds: FoldersModuleIds): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleMatcher")(hasFoldersModuleIds.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def createModuleMatcher(param0: FoldersModuleIds): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleMatcher")(param0.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
-  inline def createMultiRuleTransformer(hasGetRuleTypeRules: GetRuleType): /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BabelTransformer * / any['transform'] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiRuleTransformer")(hasGetRuleTypeRules.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BabelTransformer * / any['transform'] */ js.Any]
+  inline def createMultiRuleTransformer(param0: GetRuleType): /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BabelTransformer * / any['transform'] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiRuleTransformer")(param0.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BabelTransformer * / any['transform'] */ js.Any]
   
   inline def getCacheKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheKey")().asInstanceOf[String]
   

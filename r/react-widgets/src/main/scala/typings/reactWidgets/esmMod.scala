@@ -37,9 +37,7 @@ object esmMod {
     /**
       * @public
       */
-    inline def apply(
-      hasIdAutoFocusBorderedViewsTabIndexDisabledReadOnlyClassNameValueDefaultValueOnChangePCurrentDateDefaultCurrentDateOnCurrentDateChangeMinMaxViewDefaultViewOnViewChangeOnKeyDownOnNavigateRenderDayMessagesFormatsElementProps: CalendarProps[Any]
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasIdAutoFocusBorderedViewsTabIndexDisabledReadOnlyClassNameValueDefaultValueOnChangePCurrentDateDefaultCurrentDateOnCurrentDateChangeMinMaxViewDefaultViewOnViewChangeOnKeyDownOnNavigateRenderDayMessagesFormatsElementProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: CalendarProps[Any]): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-widgets/esm", "Calendar")
     @js.native
@@ -377,7 +375,7 @@ object esmMod {
   
   object Localization {
     
-    inline def apply(hasDateNumberMessagesChildren: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasDateNumberMessagesChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-widgets/esm", "Localization")
     @js.native

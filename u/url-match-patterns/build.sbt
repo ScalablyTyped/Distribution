@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "url-match-patterns"
-version := "0.2-dt-20211202Z-728c5b"
-scalaVersion := "3.1.2"
+version := "0.2-dt-20211202Z-ab368e"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

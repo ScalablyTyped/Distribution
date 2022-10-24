@@ -2,7 +2,6 @@ package typings.antDesignProUtils
 
 import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSInterpolation
 import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSObject
-import typings.antDesignProProvider.anon.HashId
 import typings.antDesignProProvider.esUseStyleMod.ProAliasToken
 import typings.antDesignProProvider.esUseStyleMod.UseStyleResult
 import typings.antDesignProUtils.anon.ActionRender
@@ -85,7 +84,7 @@ object mod {
   @js.native
   val ProFormContext: Context[ProFormInstanceTypeanyfor] = js.native
   
-  inline def arrayMoveImmutable[T](hasArrayFromIndexToIndex: Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayMoveImmutable")(hasArrayFromIndexToIndex.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def arrayMoveImmutable[T](param0: Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayMoveImmutable")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   inline def compareVersions(v1: String, v2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareVersions")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -318,9 +317,4 @@ object mod {
   inline def useSafeState[T](defaultValue: js.Function0[T]): js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeState")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]]]
   
   inline def useStyle(componentName: String, styleFn: js.Function1[/* token */ ProAliasToken, CSSInterpolation]): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(componentName.asInstanceOf[js.Any], styleFn.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
-  
-  /**
-    * 如果 antd 里面没有，就用我 mock 的，这样 antd@4 和 antd@5 可以兼容
-    */
-  inline def useToken(): HashId = ^.asInstanceOf[js.Dynamic].applyDynamic("useToken")().asInstanceOf[HashId]
 }

@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "vue-i18n"
-version := "9.2.2-c9a5b3"
-scalaVersion := "3.1.2"
+version := "9.2.2-7eeac0"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "intlify__core-base" % "9.2.2-f8ff7e",
-  "org.scalablytyped" %%% "intlify__devtools-if" % "9.2.2-6f3919",
-  "org.scalablytyped" %%% "intlify__message-compiler" % "9.2.2-d6b5e2",
-  "org.scalablytyped" %%% "intlify__shared" % "9.2.2-ba769c",
-  "org.scalablytyped" %%% "intlify__vue-devtools" % "9.2.2-f744d2",
-  "org.scalablytyped" %%% "source-map" % "0.7.4-942cbd",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "vue__reactivity" % "3.2.41-669f2b",
-  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.41-c55f63",
-  "org.scalablytyped" %%% "vue__shared" % "3.2.41-1967a8")
+  "org.scalablytyped" %%% "intlify__core-base" % "9.2.2-414a75",
+  "org.scalablytyped" %%% "intlify__devtools-if" % "9.2.2-3e707d",
+  "org.scalablytyped" %%% "intlify__message-compiler" % "9.2.2-5bea55",
+  "org.scalablytyped" %%% "intlify__shared" % "9.2.2-ff2c01",
+  "org.scalablytyped" %%% "intlify__vue-devtools" % "9.2.2-33256d",
+  "org.scalablytyped" %%% "source-map" % "0.7.4-01a3bb",
+  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "vue__reactivity" % "3.2.41-d09629",
+  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.41-066460",
+  "org.scalablytyped" %%% "vue__shared" % "3.2.41-a50cde")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

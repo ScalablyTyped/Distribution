@@ -17,7 +17,7 @@ object distTypesCoreServicesGroupsMod {
   @JSImport("gitlab/dist/types/core/services/Groups", "Groups")
   @js.native
   open class Groups () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(): js.Promise[js.Array[GroupSchema]] = js.native
     def all(options: PaginatedRequestOptions): js.Promise[js.Array[GroupSchema]] = js.native
@@ -46,9 +46,9 @@ object distTypesCoreServicesGroupsMod {
     def remove(groupId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
     def removeLDAPLink(groupId: String, cn: Any): js.Promise[js.Object] = js.native
-    def removeLDAPLink(groupId: String, cn: Any, hasProviderOptions: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
+    def removeLDAPLink(groupId: String, cn: Any, param2: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
     def removeLDAPLink(groupId: Double, cn: Any): js.Promise[js.Object] = js.native
-    def removeLDAPLink(groupId: Double, cn: Any, hasProviderOptions: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
+    def removeLDAPLink(groupId: Double, cn: Any, param2: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
     
     def search(nameOrPath: String): js.Promise[GetResponse] = js.native
     def search(nameOrPath: String, options: Sudo): js.Promise[GetResponse] = js.native

@@ -49,7 +49,7 @@ object distComponentsIconsMod {
     inline def warning_=(x: js.Function1[/* props */ BuiltInIconProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
-  inline def getIcon(hasThemeTypeIsLoadingIcon: ToastProps): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(hasThemeTypeIsLoadingIcon.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def getIcon(param0: ToastProps): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.reactToastify.distComponentsIconsMod.IconProps because var conflicts: `type`. Inlined theme */ trait BuiltInIconProps

@@ -16,7 +16,7 @@ object distSrcModulesUiControlsChromecastChromecastMod {
   open class default protected ()
     extends StObject
        with ChromecastButton {
-    def this(hasEventEmitterTextMapTooltipServiceThemeChromecastManagerBottomBlock: BottomBlock) = this()
+    def this(param0: BottomBlock) = this()
     
     /* private */ /* CompleteClass */
     var _bindCallbacks: Any = js.native

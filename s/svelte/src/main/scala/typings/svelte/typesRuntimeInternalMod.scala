@@ -263,7 +263,7 @@ import typings.svelte.svelteStrings.view
 import typings.svelte.svelteStrings.wbr
 import typings.svelte.typesRuntimeInternalAnimationsMod.AnimationFn
 import typings.svelte.typesRuntimeInternalAnimationsMod.PositionRect
-import typings.svelte.typesRuntimeInternalComponentMod.Fragment
+import typings.svelte.typesRuntimeInternalAwaitBlockMod.PromiseInfo
 import typings.svelte.typesRuntimeInternalDevMod.ComponentConstructorOptions
 import typings.svelte.typesRuntimeInternalDomMod.ChildNodeArray
 import typings.svelte.typesRuntimeInternalDomMod.NodeEx
@@ -271,6 +271,7 @@ import typings.svelte.typesRuntimeInternalLifecycleMod.DispatchOptions
 import typings.svelte.typesRuntimeInternalLoopMod.Task
 import typings.svelte.typesRuntimeInternalLoopMod.TaskCallback
 import typings.svelte.typesRuntimeInternalTransitionsMod.TransitionFn
+import typings.svelte.typesRuntimeInternalTypesMod.Fragment
 import typings.svelte.typesRuntimeStoreMod.Readable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -400,6 +401,10 @@ object typesRuntimeInternalMod {
   
   inline def computeSlots(slots: Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("compute_slots")(slots.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
+  inline def constructSvelteComponent(component: Any, props: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct_svelte_component")(component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def constructSvelteComponentDev(component: Any, props: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct_svelte_component_dev")(component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
   inline def createAnimation(node: Element & ElementCSSInlineStyle, from: PositionRect, fn: AnimationFn, params: Any): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("create_animation")(node.asInstanceOf[js.Any], from.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   inline def createBidirectionalTransition(node: Element & ElementCSSInlineStyle, fn: TransitionFn, params: Any, intro: Boolean): End = (^.asInstanceOf[js.Dynamic].applyDynamic("create_bidirectional_transition")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], params.asInstanceOf[js.Any], intro.asInstanceOf[js.Any])).asInstanceOf[End]
@@ -438,8 +443,8 @@ object typesRuntimeInternalMod {
   
   inline def customEvent[T](`type`: String): CustomEvent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any]).asInstanceOf[CustomEvent[T]]
   inline def customEvent[T](`type`: String, detail: T): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
-  inline def customEvent[T](`type`: String, detail: T, hasBubblesCancelable: Bubbles): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], hasBubblesCancelable.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
-  inline def customEvent[T](`type`: String, detail: Unit, hasBubblesCancelable: Bubbles): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], hasBubblesCancelable.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
+  inline def customEvent[T](`type`: String, detail: T, param2: Bubbles): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
+  inline def customEvent[T](`type`: String, detail: Unit, param2: Bubbles): CustomEvent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("custom_event")(`type`.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[CustomEvent[T]]
   
   inline def datasetDev(node: HTMLElement, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dataset_dev")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def datasetDev(node: HTMLElement, property: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dataset_dev")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -964,11 +969,13 @@ object typesRuntimeInternalMod {
   
   inline def groupOutros(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("group_outros")().asInstanceOf[Unit]
   
-  inline def handlePromise(promise: Any, info: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("handle_promise")(promise.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def handlePromise[T](promise: js.Promise[T], info: PromiseInfo[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("handle_promise")(promise.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def hasContext(key: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasContext")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def hasProp(obj: Any, prop: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("has_prop")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def headSelector(nodeId: String, head: HTMLElement): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("head_selector")(nodeId.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def identity(x: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(x.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -1230,6 +1237,8 @@ object typesRuntimeInternalMod {
   inline def setCurrentComponent(component: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_current_component")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setCustomElementData(node: Any, prop: Any, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_custom_element_data")(node.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setCustomElementDataMap(node: Any, data_map: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_custom_element_data_map")(node.asInstanceOf[js.Any], data_map.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setData(text: Any, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

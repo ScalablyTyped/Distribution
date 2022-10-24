@@ -14,13 +14,13 @@ object buildMod {
   
   inline def readFile[T /* <: Args */](
     path: String,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasOptions because its type T is not an array type */ hasOptions: T
-  ): js.Promise[ReturnValue[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], hasOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValue[T]]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type T is not an array type */ param1: T
+  ): js.Promise[ReturnValue[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValue[T]]]
   
   inline def readFileSync[T /* <: Args */](
     path: String,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasOptions because its type T is not an array type */ hasOptions: T
-  ): ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], hasOptions.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[T]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type T is not an array type */ param1: T
+  ): ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[T]]
   
   type Args = StringArgs | BufferArgs
   

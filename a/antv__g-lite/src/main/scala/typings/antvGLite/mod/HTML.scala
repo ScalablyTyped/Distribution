@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class HTML ()
   extends typings.antvGLite.distDisplayObjectsMod.HTML {
-  def this(hasStyleRest: DisplayObjectConfig[HTMLStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[HTMLStyleProps]) = this()
 }

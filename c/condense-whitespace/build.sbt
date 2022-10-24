@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "condense-whitespace"
-version := "3.0.0-f90255"
-scalaVersion := "3.1.2"
+version := "3.0.0-f9e0b3"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

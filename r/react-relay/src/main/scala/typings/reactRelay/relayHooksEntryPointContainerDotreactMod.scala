@@ -13,7 +13,7 @@ object relayHooksEntryPointContainerDotreactMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def EntryPointContainer[TPreloadedEntryPoint /* <: PreloadedEntryPoint[Any] */](hasEntryPointReferenceProps: EntryPointReference[TPreloadedEntryPoint]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("EntryPointContainer")(hasEntryPointReferenceProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def EntryPointContainer[TPreloadedEntryPoint /* <: PreloadedEntryPoint[Any] */](param0: EntryPointReference[TPreloadedEntryPoint]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("EntryPointContainer")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

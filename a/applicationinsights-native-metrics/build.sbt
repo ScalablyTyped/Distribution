@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "applicationinsights-native-metrics"
-version := "0.0.7-1d45d7"
-scalaVersion := "3.1.2"
+version := "0.0.7-58492d"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

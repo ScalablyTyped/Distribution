@@ -12,5 +12,5 @@ object distTypesTreeMapCanvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TreeMapCanvas[Datum /* <: js.Object */](hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps: TreeMapCanvasProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapCanvas")(hasThemeIsInteractiveAnimateMotionConfigRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TreeMapCanvas[Datum /* <: js.Object */](param0: TreeMapCanvasProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapCanvas")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

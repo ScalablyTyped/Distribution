@@ -334,11 +334,6 @@ object Dimmer {
       __obj.asInstanceOf[ErrorSettings]
     }
     
-    extension [Self <: ErrorSettings](x: Self) {
-      
-      inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
-    }
-    
     trait Impl extends StObject {
       
       /**
@@ -357,6 +352,11 @@ object Dimmer {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
+    }
+    
+    extension [Self <: ErrorSettings](x: Self) {
+      
+      inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
     
     /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.Dimmer.ErrorSettings._Impl>> */
@@ -471,6 +471,11 @@ object Dimmer {
       }
     }
     
+    extension [Self <: TemplateSettings](x: Self) {
+      
+      inline def setDimmer(value: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
+    }
+    
     /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings._Impl, 'dimmer'> & std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.Dimmer.TemplateSettings._Impl>> */
     trait Param extends StObject {
       
@@ -489,11 +494,6 @@ object Dimmer {
         
         inline def setDimmer(value: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
       }
-    }
-    
-    extension [Self <: TemplateSettings](x: Self) {
-      
-      inline def setDimmer(value: js.Function0[JQuery] & js.UndefOr[js.Function0[JQuery]]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
     }
   }
 }

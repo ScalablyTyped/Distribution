@@ -12,7 +12,7 @@ object distHelpersUrlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buildUrl(hasPathnameQuery: BuildUrlParams): js.Function1[/* apiUrl */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildUrl")(hasPathnameQuery.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* apiUrl */ String, String]]
+  inline def buildUrl(param0: BuildUrlParams): js.Function1[/* apiUrl */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildUrl")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* apiUrl */ String, String]]
   
   inline def parseQueryAndPathname(url: String): Pathname = ^.asInstanceOf[js.Dynamic].applyDynamic("parseQueryAndPathname")(url.asInstanceOf[js.Any]).asInstanceOf[Pathname]
   

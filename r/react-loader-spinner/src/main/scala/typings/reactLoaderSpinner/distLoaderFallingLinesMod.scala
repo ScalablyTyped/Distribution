@@ -11,7 +11,7 @@ object distLoaderFallingLinesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasColorWidthVisible: FallingLinesProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColorWidthVisible.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def default(param0: FallingLinesProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait FallingLinesProps extends StObject {
     

@@ -5,11 +5,11 @@ import typings.callstackReactThemeProvider.typingsHoistNonReactStaticsMod.NonRea
 import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.reactNativePaper.anon.CallHasIndexTotalStyleThemeRest
 import typings.reactNativePaper.anon.ImagePropsRefAttributesIm
 import typings.reactNativePaper.anon.PickImagePropsRefAttributAccessibilityActions
 import typings.reactNativePaper.anon.Theme
 import typings.reactNativePaper.anon.TypeofImage
+import typings.reactNativePaper.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +18,7 @@ object libTypescriptComponentsCardCardCoverMod extends Shortcut {
   
   @JSImport("react-native-paper/lib/typescript/components/Card/CardCover", JSImport.Default)
   @js.native
-  val default: ComponentType[PickImagePropsRefAttributAccessibilityActions] & (NonReactStatics[
-    ComponentType[ImagePropsRefAttributesIm] & CallHasIndexTotalStyleThemeRest, 
-    js.Object
-  ]) = js.native
+  val default: ComponentType[PickImagePropsRefAttributAccessibilityActions] & (NonReactStatics[ComponentType[ImagePropsRefAttributesIm] & `2`, js.Object]) = js.native
   
   /**
     * A component to show a cover image inside a Card.
@@ -50,7 +47,7 @@ object libTypescriptComponentsCardCardCoverMod extends Shortcut {
     */
   object CardCover {
     
-    inline def apply(hasIndexTotalStyleThemeRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasIndexTotalStyleThemeRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/Card/CardCover", "CardCover")
     @js.native
@@ -64,14 +61,8 @@ object libTypescriptComponentsCardCardCoverMod extends Shortcut {
   
   type Props = ComponentPropsWithRef[TypeofImage] & Theme
   
-  type _To = ComponentType[PickImagePropsRefAttributAccessibilityActions] & (NonReactStatics[
-    ComponentType[ImagePropsRefAttributesIm] & CallHasIndexTotalStyleThemeRest, 
-    js.Object
-  ])
+  type _To = ComponentType[PickImagePropsRefAttributAccessibilityActions] & (NonReactStatics[ComponentType[ImagePropsRefAttributesIm] & `2`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsCardCardCoverMod.foo` */
-  override def _to: ComponentType[PickImagePropsRefAttributAccessibilityActions] & (NonReactStatics[
-    ComponentType[ImagePropsRefAttributesIm] & CallHasIndexTotalStyleThemeRest, 
-    js.Object
-  ]) = default
+  override def _to: ComponentType[PickImagePropsRefAttributAccessibilityActions] & (NonReactStatics[ComponentType[ImagePropsRefAttributesIm] & `2`, js.Object]) = default
 }

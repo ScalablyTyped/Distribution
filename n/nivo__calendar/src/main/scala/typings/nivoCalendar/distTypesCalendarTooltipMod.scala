@@ -11,5 +11,5 @@ object distTypesCalendarTooltipMod {
   
   @JSImport("@nivo/calendar/dist/types/CalendarTooltip", "CalendarTooltip")
   @js.native
-  val CalendarTooltip: MemoExoticComponent[js.Function1[/* hasValueDayColor */ CalendarTooltipProps, Element | Null]] = js.native
+  val CalendarTooltip: MemoExoticComponent[js.Function1[/* param0 */ CalendarTooltipProps, Element | Null]] = js.native
 }

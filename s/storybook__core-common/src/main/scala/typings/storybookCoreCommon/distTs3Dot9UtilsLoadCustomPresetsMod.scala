@@ -12,5 +12,5 @@ object distTs3Dot9UtilsLoadCustomPresetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loadCustomPresets(hasConfigDir: ConfigDir): js.Array[PresetConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCustomPresets")(hasConfigDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[PresetConfig]]
+  inline def loadCustomPresets(param0: ConfigDir): js.Array[PresetConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCustomPresets")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[PresetConfig]]
 }

@@ -48,5 +48,5 @@ object mod {
   
   inline def httpRequest(options: RequestOptions): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   
-  inline def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(hasMaxRetriesTimeout.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
+  inline def providerConfigFromInit(param0: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(param0.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
 }

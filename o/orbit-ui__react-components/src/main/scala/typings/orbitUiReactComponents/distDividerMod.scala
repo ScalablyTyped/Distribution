@@ -18,5 +18,5 @@ object distDividerMod {
   @js.native
   val Divider: OrbitComponent[HTMLElement, InnerDividerProps] = js.native
   
-  inline def InnerDivider(hasOrientationAsChildrenForwardedRefRest: InnerDividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDivider")(hasOrientationAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDivider(param0: InnerDividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDivider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

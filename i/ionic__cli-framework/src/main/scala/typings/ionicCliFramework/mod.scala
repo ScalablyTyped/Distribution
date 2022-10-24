@@ -66,7 +66,7 @@ object mod {
   open class BaseConfig[T /* <: js.Object */] protected ()
     extends typings.ionicCliFramework.libMod.BaseConfig[T] {
     def this(p: String) = this()
-    def this(p: String, hasSpacesPathPrefix: BaseConfigOptions) = this()
+    def this(p: String, param1: BaseConfigOptions) = this()
   }
   
   /* note: abstract class */ @JSImport("@ionic/cli-framework", "BaseError")
@@ -80,7 +80,7 @@ object mod {
   @js.native
   open class BaseExecutor[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.BaseExecutor[C, N, M, I, O] {
-    def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[C, N, M, I, O]) = this()
+    def this(param0: BaseExecutorDeps[C, N, M, I, O]) = this()
   }
   
   /* note: abstract class */ @JSImport("@ionic/cli-framework", "BaseNamespace")
@@ -106,7 +106,7 @@ object mod {
   @js.native
   open class CommandHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.CommandHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
   }
   
   @JSImport("@ionic/cli-framework", "CommandMap")
@@ -129,21 +129,21 @@ object mod {
   @js.native
   open class CommandSchemaHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.CommandSchemaHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
   }
   
   @JSImport("@ionic/cli-framework", "CommandStringHelpFormatter")
   @js.native
   open class CommandStringHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.CommandStringHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
   }
   
   /* note: abstract class */ @JSImport("@ionic/cli-framework", "CompletionFormatter")
   @js.native
   open class CompletionFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.CompletionFormatter[C, N, M, I, O] {
-    def this(hasNamespace: CompletionFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CompletionFormatterDeps[C, N, M, I, O]) = this()
   }
   
   @JSImport("@ionic/cli-framework", "DEFAULT_COLORS")
@@ -174,7 +174,7 @@ object mod {
   @js.native
   open class Executor protected ()
     extends typings.ionicCliFramework.libMod.Executor {
-    def this(hasNamespaceStdoutStderrColors: BaseExecutorDeps[
+    def this(param0: BaseExecutorDeps[
             typings.ionicCliFramework.libCommandMod.Command, 
             typings.ionicCliFramework.libCommandMod.Namespace, 
             CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
@@ -191,7 +191,7 @@ object mod {
   @js.native
   open class HelpFormatter protected ()
     extends typings.ionicCliFramework.libMod.HelpFormatter {
-    def this(hasColors: typings.ionicCliFramework.anon.Colors) = this()
+    def this(param0: typings.ionicCliFramework.anon.Colors) = this()
   }
   
   @JSImport("@ionic/cli-framework", "IPCError")
@@ -223,7 +223,7 @@ object mod {
   @js.native
   open class NamespaceHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.NamespaceHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
   }
   
   @JSImport("@ionic/cli-framework", "NamespaceMap")
@@ -235,14 +235,14 @@ object mod {
   @js.native
   open class NamespaceSchemaHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.NamespaceSchemaHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
   }
   
   @JSImport("@ionic/cli-framework", "NamespaceStringHelpFormatter")
   @js.native
   open class NamespaceStringHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.NamespaceStringHelpFormatter[C, N, M, I, O] {
-    def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
   }
   
   object OptionFilters {
@@ -262,16 +262,16 @@ object mod {
   @js.native
   open class ZshCompletionFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected ()
     extends typings.ionicCliFramework.libMod.ZshCompletionFormatter[C, N, M, I, O] {
-    def this(hasNamespace: CompletionFormatterDeps[C, N, M, I, O]) = this()
+    def this(param0: CompletionFormatterDeps[C, N, M, I, O]) = this()
   }
   
   inline def combine(validators: Validator*): Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(validators.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Validator]
   
-  inline def contains(values: js.Array[js.UndefOr[String]], hasCaseSensitive: CaseSensitive): Validator = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(values.asInstanceOf[js.Any], hasCaseSensitive.asInstanceOf[js.Any])).asInstanceOf[Validator]
+  inline def contains(values: js.Array[js.UndefOr[String]], param1: CaseSensitive): Validator = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(values.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Validator]
   
   inline def createCommandMetadataFromSchema(schema: CommandHelpSchema): RequiredCommandMetadataCo = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommandMetadataFromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[RequiredCommandMetadataCo]
   
-  inline def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](hasNamespaceArgvEnvRest: (Argv[N, C, M, I, O]) & (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(hasNamespaceArgvEnvRest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](param0: (Argv[N, C, M, I, O]) & (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def filterCommandLineOptions[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("filterCommandLineOptions")(options.asInstanceOf[js.Any], parsedArgs.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
   inline def filterCommandLineOptions[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions, predicate: OptionPredicate[O]): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("filterCommandLineOptions")(options.asInstanceOf[js.Any], parsedArgs.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
@@ -280,7 +280,7 @@ object mod {
   inline def filterCommandLineOptionsByGroup[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions, groups: js.Array[String]): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("filterCommandLineOptionsByGroup")(options.asInstanceOf[js.Any], parsedArgs.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
   
   inline def formatOptionName[O /* <: CommandMetadataOption */](opt: O): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatOptionName")(opt.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def formatOptionName[O /* <: CommandMetadataOption */](opt: O, hasShowAliasesShowValueSpecColors: FormatOptionNameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatOptionName")(opt.asInstanceOf[js.Any], hasShowAliasesShowValueSpecColors.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatOptionName[O /* <: CommandMetadataOption */](opt: O, param1: FormatOptionNameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatOptionName")(opt.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def generateCommandPath[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: C): js.Promise[js.Array[CommandPathItem[C, N, M, I, O]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCommandPath")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[CommandPathItem[C, N, M, I, O]]]]
   
@@ -313,20 +313,12 @@ object mod {
   
   inline def separateArgv(pargv: js.Array[String]): js.Tuple2[js.Array[String], js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateArgv")(pargv.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[String], js.Array[String]]]
   
-  inline def stripOptions(pargv: js.Array[String], hasIncludeSeparated: IncludeSeparated): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stripOptions")(pargv.asInstanceOf[js.Any], hasIncludeSeparated.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def stripOptions(pargv: js.Array[String], param1: IncludeSeparated): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stripOptions")(pargv.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def unparseArgs(parsedArgs: ParsedArgs): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def unparseArgs(
-    parsedArgs: ParsedArgs,
-    hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: Unit,
-    parseArgsOptions: Opts
-  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any], hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase.asInstanceOf[js.Any], parseArgsOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def unparseArgs(parsedArgs: ParsedArgs, hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: UnparseArgsOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any], hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def unparseArgs(
-    parsedArgs: ParsedArgs,
-    hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: UnparseArgsOptions,
-    parseArgsOptions: Opts
-  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any], hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase.asInstanceOf[js.Any], parseArgsOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def unparseArgs(parsedArgs: ParsedArgs, param1: Unit, parseArgsOptions: Opts): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], parseArgsOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def unparseArgs(parsedArgs: ParsedArgs, param1: UnparseArgsOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def unparseArgs(parsedArgs: ParsedArgs, param1: UnparseArgsOptions, parseArgsOptions: Opts): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], parseArgsOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   inline def validate(input: String, key: String, validatorsToUse: js.Array[Validator]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(input.asInstanceOf[js.Any], key.asInstanceOf[js.Any], validatorsToUse.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

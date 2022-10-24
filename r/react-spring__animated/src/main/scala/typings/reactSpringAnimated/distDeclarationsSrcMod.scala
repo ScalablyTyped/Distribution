@@ -80,15 +80,9 @@ object distDeclarationsSrcMod {
   }
   
   inline def createHost(components: js.Array[AnimatableComponent]): typings.reactSpringAnimated.anon.Animated = ^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any]).asInstanceOf[typings.reactSpringAnimated.anon.Animated]
-  inline def createHost(
-    components: js.Array[AnimatableComponent],
-    hasApplyAnimatedValuesCreateAnimatedStyleGetComponentProps: PartialHostConfig
-  ): typings.reactSpringAnimated.anon.Animated = (^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any], hasApplyAnimatedValuesCreateAnimatedStyleGetComponentProps.asInstanceOf[js.Any])).asInstanceOf[typings.reactSpringAnimated.anon.Animated]
+  inline def createHost(components: js.Array[AnimatableComponent], param1: PartialHostConfig): typings.reactSpringAnimated.anon.Animated = (^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.reactSpringAnimated.anon.Animated]
   inline def createHost(components: StringDictionary[AnimatableComponent]): typings.reactSpringAnimated.anon.Animated = ^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any]).asInstanceOf[typings.reactSpringAnimated.anon.Animated]
-  inline def createHost(
-    components: StringDictionary[AnimatableComponent],
-    hasApplyAnimatedValuesCreateAnimatedStyleGetComponentProps: PartialHostConfig
-  ): typings.reactSpringAnimated.anon.Animated = (^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any], hasApplyAnimatedValuesCreateAnimatedStyleGetComponentProps.asInstanceOf[js.Any])).asInstanceOf[typings.reactSpringAnimated.anon.Animated]
+  inline def createHost(components: StringDictionary[AnimatableComponent], param1: PartialHostConfig): typings.reactSpringAnimated.anon.Animated = (^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.reactSpringAnimated.anon.Animated]
   
   inline def getAnimated[T](owner: Any): js.UndefOr[typings.reactSpringAnimated.distDeclarationsSrcAnimatedMod.Animated[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimated")(owner.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.reactSpringAnimated.distDeclarationsSrcAnimatedMod.Animated[T]]]
   

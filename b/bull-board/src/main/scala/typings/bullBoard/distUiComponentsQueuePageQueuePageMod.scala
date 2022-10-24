@@ -12,5 +12,5 @@ object distUiComponentsQueuePageQueuePageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def QueuePage(hasSelectedStatusActionsQueue: Actions): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QueuePage")(hasSelectedStatusActionsQueue.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def QueuePage(param0: Actions): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QueuePage")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -30,11 +30,9 @@ object mod {
   
   inline def DEFAULT_GET_RESULT_VALUE(datum: AutoCompleteData, valueKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_GET_RESULT_VALUE")(datum.asInstanceOf[js.Any], valueKey.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def HighlightedResult(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex: HighlightedResultProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HighlightedResult")(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def HighlightedResult(param0: HighlightedResultProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HighlightedResult")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def isResultOf[T /* <: js.Object */](datum: AutoCompleteData): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResultOf")(datum.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
   
-  inline def useAutoComplete(
-    hasSuggestionsIdDataPropValueDefaultValueFilterFnFilterOptionsFilterOnNoValueValueKeyGetResultIdGetResultValueOnBlurOnFocusOnClickOnChangeOnKeyDownForwardedRefOnAutoCompleteClearOnAutoCompleteAnchorXMarginYMarginVwMarginVhMarginTransformOriginListboxWidthListboxStylePreventOverlapDisableSwappingDisableVHBoundsCloseOnResizeCloseOnScrollPropDisableShowOnFocusIsListAutocompleteIsInlineAutocomplete: AutoCompleteOptions
-  ): AutoCompleteReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoComplete")(hasSuggestionsIdDataPropValueDefaultValueFilterFnFilterOptionsFilterOnNoValueValueKeyGetResultIdGetResultValueOnBlurOnFocusOnClickOnChangeOnKeyDownForwardedRefOnAutoCompleteClearOnAutoCompleteAnchorXMarginYMarginVwMarginVhMarginTransformOriginListboxWidthListboxStylePreventOverlapDisableSwappingDisableVHBoundsCloseOnResizeCloseOnScrollPropDisableShowOnFocusIsListAutocompleteIsInlineAutocomplete.asInstanceOf[js.Any]).asInstanceOf[AutoCompleteReturnValue]
+  inline def useAutoComplete(param0: AutoCompleteOptions): AutoCompleteReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useAutoComplete")(param0.asInstanceOf[js.Any]).asInstanceOf[AutoCompleteReturnValue]
 }

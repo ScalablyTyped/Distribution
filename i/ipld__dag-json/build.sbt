@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ipld__dag-json"
-version := "8.0.11-a0b97c"
-scalaVersion := "3.1.2"
+version := "8.0.11-8aa6cb"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

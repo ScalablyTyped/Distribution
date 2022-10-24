@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "lucene-escape-query"
-version := "1.0-dt-20220117Z-83210b"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220117Z-fd9e4a"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

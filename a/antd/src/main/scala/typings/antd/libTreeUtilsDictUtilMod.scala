@@ -13,7 +13,7 @@ object libTreeUtilsDictUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def calcRangeKeys(hasTreeDataExpandedKeysStartKeyEndKey: EndKey): js.Array[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcRangeKeys")(hasTreeDataExpandedKeysStartKeyEndKey.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key]]
+  inline def calcRangeKeys(param0: EndKey): js.Array[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcRangeKeys")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key]]
   
   inline def convertDirectoryKeysToNodes(treeData: js.Array[DataNode], keys: js.Array[Key]): js.Array[DataNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDirectoryKeysToNodes")(treeData.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[DataNode]]
 }

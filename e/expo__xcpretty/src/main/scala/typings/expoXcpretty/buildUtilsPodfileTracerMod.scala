@@ -52,6 +52,6 @@ object buildUtilsPodfileTracerMod {
     val ^ : js.Any = js.native
     
     inline def create(projectRoot: String): PodfileTracer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[PodfileTracer]
-    inline def create(projectRoot: String, hasXcodeProject: XcodeProject): PodfileTracer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any], hasXcodeProject.asInstanceOf[js.Any])).asInstanceOf[PodfileTracer]
+    inline def create(projectRoot: String, param1: XcodeProject): PodfileTracer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[PodfileTracer]
   }
 }

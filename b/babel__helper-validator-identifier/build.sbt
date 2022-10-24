@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "babel__helper-validator-identifier"
-version := "7.15-dt-20220121Z-92f38c"
-scalaVersion := "3.1.2"
+version := "7.15-dt-20220121Z-5507f4"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

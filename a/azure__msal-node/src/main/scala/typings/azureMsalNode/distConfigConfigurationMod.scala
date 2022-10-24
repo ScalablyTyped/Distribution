@@ -20,7 +20,7 @@ object distConfigConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buildAppConfiguration(hasAuthCacheSystemTelemetry: Configuration): NodeConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAppConfiguration")(hasAuthCacheSystemTelemetry.asInstanceOf[js.Any]).asInstanceOf[NodeConfiguration]
+  inline def buildAppConfiguration(param0: Configuration): NodeConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAppConfiguration")(param0.asInstanceOf[js.Any]).asInstanceOf[NodeConfiguration]
   
   trait CacheOptions extends StObject {
     

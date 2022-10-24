@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("puppeteer-core/lib/cjs/puppeteer/types", "BrowserFetcher")
 @js.native
-/**
-  * Constructs a browser fetcher for the given options.
-  */
-open class BrowserFetcher ()
+open class BrowserFetcher protected ()
   extends typings.puppeteerCore.libCjsPuppeteerPuppeteerCoreMod.BrowserFetcher {
+  /**
+    * Constructs a browser fetcher for the given options.
+    */
   def this(options: BrowserFetcherOptions) = this()
 }

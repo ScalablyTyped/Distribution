@@ -1,27 +1,26 @@
 package typings.wixStyleReact.anon
 
-import typings.wixStyleReact.ellipsisMod.EllipsisProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComponentProps[T] extends StObject {
+trait ComponentProps extends StObject {
   
-  var componentProps: T
+  var componentProps: Any
   
-  var ellipsisProps: EllipsisProps
+  var ellipsisProps: Any
 }
 object ComponentProps {
   
-  inline def apply[T](componentProps: T, ellipsisProps: EllipsisProps): ComponentProps[T] = {
+  inline def apply(componentProps: Any, ellipsisProps: Any): ComponentProps = {
     val __obj = js.Dynamic.literal(componentProps = componentProps.asInstanceOf[js.Any], ellipsisProps = ellipsisProps.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ComponentProps[T]]
+    __obj.asInstanceOf[ComponentProps]
   }
   
-  extension [Self <: ComponentProps[?], T](x: Self & ComponentProps[T]) {
+  extension [Self <: ComponentProps](x: Self) {
     
-    inline def setComponentProps(value: T): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
+    inline def setComponentProps(value: Any): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
     
-    inline def setEllipsisProps(value: EllipsisProps): Self = StObject.set(x, "ellipsisProps", value.asInstanceOf[js.Any])
+    inline def setEllipsisProps(value: Any): Self = StObject.set(x, "ellipsisProps", value.asInstanceOf[js.Any])
   }
 }

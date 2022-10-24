@@ -11,5 +11,5 @@ object distStringifyStringifyNumberMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def stringifyNumber(hasFormatMinFractionDigitsTagValue: Scalar[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyNumber")(hasFormatMinFractionDigitsTagValue.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifyNumber(param0: Scalar[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyNumber")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

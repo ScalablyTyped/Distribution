@@ -43,7 +43,7 @@ open class ReadableStream[R] () extends StObject {
     * {@link ReadableStreamBYOBReader.read | read()} method, into developer-supplied buffers, allowing more precise
     * control over allocation.
     */
-  def getReader(hasMode: Mode): ReadableStreamBYOBReader = js.native
+  def getReader(param0: Mode): ReadableStreamBYOBReader = js.native
   
   /**
     * Whether or not the readable stream is locked to a {@link ReadableStreamDefaultReader | reader}.

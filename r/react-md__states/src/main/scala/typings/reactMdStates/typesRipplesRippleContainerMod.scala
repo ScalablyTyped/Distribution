@@ -15,7 +15,7 @@ object typesRipplesRippleContainerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RippleContainer(hasRipplesClassNameRippleClassNameTimeoutClassNamesEnteredExited: RippleContainerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("RippleContainer")(hasRipplesClassNameRippleClassNameTimeoutClassNamesEnteredExited.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def RippleContainer(param0: RippleContainerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("RippleContainer")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait RippleContainerProps extends StObject {
     

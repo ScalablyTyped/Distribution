@@ -23,13 +23,13 @@ object distBuildWebpackPluginsFlightClientEntryPluginMod {
     @JSName("apply")
     def apply(compiler: Compiler): Unit = js.native
     
-    def collectClientComponentsAndCSSForDependency(hasLayoutOrPageRequestCompilationDependency: Compilation): js.Tuple2[ClientComponentImports, CssImports] = js.native
+    def collectClientComponentsAndCSSForDependency(param0: Compilation): js.Tuple2[ClientComponentImports, CssImports] = js.native
     
     def createClientEndpoints(compiler: Any, compilation: Any): js.Promise[Unit] = js.native
     
     var dev: Boolean = js.native
     
-    def injectClientEntryAndSSRModules(hasCompilerCompilationEntryNameClientComponentImportsBundlePath: BundlePath): js.Promise[Boolean] = js.native
+    def injectClientEntryAndSSRModules(param0: BundlePath): js.Promise[Boolean] = js.native
     
     var isEdgeServer: Boolean = js.native
   }

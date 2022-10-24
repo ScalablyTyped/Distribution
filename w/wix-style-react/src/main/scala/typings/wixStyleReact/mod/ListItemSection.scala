@@ -3,7 +3,7 @@ package typings.wixStyleReact.mod
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.wixStyleReact.listItemSectionMod.ListItemSectionProps
+import typings.wixStyleReact.distTypesListItemSectionMod.ListItemSectionProps
 import typings.wixStyleReact.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("wix-style-react", "ListItemSection")
 @js.native
-class ListItemSection protected ()
-  extends Component[ListItemSectionProps, ComponentState, js.Any] {
+open class ListItemSection protected () extends Component[ListItemSectionProps, ComponentState, Any] {
   def this(props: ListItemSectionProps) = this()
-  def this(props: ListItemSectionProps, context: js.Any) = this()
+  def this(props: ListItemSectionProps, context: Any) = this()
 }
 object ListItemSection {
   

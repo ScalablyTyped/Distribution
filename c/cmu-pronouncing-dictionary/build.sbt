@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cmu-pronouncing-dictionary"
-version := "3.0.0-ac362c"
-scalaVersion := "3.1.2"
+version := "3.0.0-ed4b60"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

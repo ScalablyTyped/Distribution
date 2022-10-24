@@ -18,29 +18,20 @@ object libTypescriptComponentsActivityIndicatorMod extends Shortcut {
   @JSImport("react-native-paper/lib/typescript/components/ActivityIndicator", JSImport.Default)
   @js.native
   val default: ComponentType[PickViewPropsRefAttribute] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVie] & (js.Function1[
-      /* hasAnimatingIndicatorColorHidesWhenStoppedIndicatorSizeStyleThemeRest */ Props, 
-      Element
-    ]), 
+    ComponentType[ViewPropsRefAttributesVie] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = js.native
   
   type Props = ComponentPropsWithRef[TypeofView] & Animating
   
   type _To = ComponentType[PickViewPropsRefAttribute] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVie] & (js.Function1[
-      /* hasAnimatingIndicatorColorHidesWhenStoppedIndicatorSizeStyleThemeRest */ Props, 
-      Element
-    ]), 
+    ComponentType[ViewPropsRefAttributesVie] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsActivityIndicatorMod.foo` */
   override def _to: ComponentType[PickViewPropsRefAttribute] & (NonReactStatics[
-    ComponentType[ViewPropsRefAttributesVie] & (js.Function1[
-      /* hasAnimatingIndicatorColorHidesWhenStoppedIndicatorSizeStyleThemeRest */ Props, 
-      Element
-    ]), 
+    ComponentType[ViewPropsRefAttributesVie] & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = default
 }

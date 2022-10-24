@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__running
 
-Typings are for version 3.4.8
+Typings are for version 3.5.0
 
 ## Library description:
 JupyterLab - Running Sessions Panel

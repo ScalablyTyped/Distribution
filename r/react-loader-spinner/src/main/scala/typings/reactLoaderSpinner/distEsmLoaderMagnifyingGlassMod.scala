@@ -12,7 +12,7 @@ object distEsmLoaderMagnifyingGlassMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelGlassColorColor: MagnifyingGlassProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelGlassColorColor.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(param0: MagnifyingGlassProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait MagnifyingGlassProps
     extends StObject

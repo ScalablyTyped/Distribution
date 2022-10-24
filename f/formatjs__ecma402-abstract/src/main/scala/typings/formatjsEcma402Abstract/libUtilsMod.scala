@@ -20,8 +20,8 @@ object libUtilsMod {
   @js.native
   val UNICODE_EXTENSION_SEQUENCE_REGEX: js.RegExp = js.native
   
-  inline def defineProperty[T /* <: js.Object */](target: T, name: String, hasValue: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], hasValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def defineProperty[T /* <: js.Object */](target: T, name: js.Symbol, hasValue: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], hasValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineProperty[T /* <: js.Object */](target: T, name: String, param2: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineProperty[T /* <: js.Object */](target: T, name: js.Symbol, param2: valueanyThisTypeany): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getInternalSlot[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: /* keyof Internal */ String */](map: WeakMap[Instance, Internal], pl: Instance, field: Field): /* import warning: importer.ImportType#apply Failed type conversion: Internal[Field] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInternalSlot")(map.asInstanceOf[js.Any], pl.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Internal[Field] */ js.Any]
   

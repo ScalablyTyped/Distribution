@@ -22,7 +22,7 @@ trait DateHeaderProps[Data] extends StObject {
   
   var labelFormat: js.UndefOr[
     String | (js.Function3[
-      /* hasStartTimeEndTime */ js.Tuple2[Moment, Moment], 
+      /* param0 */ js.Tuple2[Moment, Moment], 
       /* unit */ Unit, 
       /* labelWidth */ Double, 
       String
@@ -64,7 +64,7 @@ object DateHeaderProps {
     
     inline def setLabelFormat(
       value: String | (js.Function3[
-          /* hasStartTimeEndTime */ js.Tuple2[Moment, Moment], 
+          /* param0 */ js.Tuple2[Moment, Moment], 
           /* unit */ Unit, 
           /* labelWidth */ Double, 
           String
@@ -72,7 +72,7 @@ object DateHeaderProps {
     ): Self = StObject.set(x, "labelFormat", value.asInstanceOf[js.Any])
     
     inline def setLabelFormatFunction3(
-      value: (/* hasStartTimeEndTime */ js.Tuple2[Moment, Moment], /* unit */ Unit, /* labelWidth */ Double) => String
+      value: (/* param0 */ js.Tuple2[Moment, Moment], /* unit */ Unit, /* labelWidth */ Double) => String
     ): Self = StObject.set(x, "labelFormat", js.Any.fromFunction3(value))
     
     inline def setLabelFormatUndefined: Self = StObject.set(x, "labelFormat", js.undefined)

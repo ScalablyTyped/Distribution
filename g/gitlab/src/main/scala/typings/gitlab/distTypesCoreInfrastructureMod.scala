@@ -24,7 +24,7 @@ object distTypesCoreInfrastructureMod {
   @js.native
   open class BaseService ()
     extends typings.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
   }
   
   object RequestHelper {

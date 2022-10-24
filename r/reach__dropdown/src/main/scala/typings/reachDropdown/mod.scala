@@ -61,19 +61,13 @@ object mod {
   
   inline def useDropdownDescendants(): js.Array[DropdownDescendant] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownDescendants")().asInstanceOf[js.Array[DropdownDescendant]]
   
-  inline def useDropdownItem_div(
-    hasIndexPropIsLinkOnClickOnDragStartOnMouseDownOnMouseEnterOnMouseLeaveOnMouseMoveOnMouseUpOnSelectDisabledOnFocusValueTextPropForwardedRefProps: DropdownItemProps & ComponentPropsWithoutRef[div] & Ref
-  ): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownItem")(hasIndexPropIsLinkOnClickOnDragStartOnMouseDownOnMouseEnterOnMouseLeaveOnMouseMoveOnMouseUpOnSelectDisabledOnFocusValueTextPropForwardedRefProps.asInstanceOf[js.Any]).asInstanceOf[Data]
+  inline def useDropdownItem_div(param0: DropdownItemProps & ComponentPropsWithoutRef[div] & Ref): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Data]
   
-  inline def useDropdownItems_div(hasIdOnKeyDownForwardedRefProps: DropdownItemsProps & ComponentPropsWithoutRef[div] & Ref): Props = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownItems")(hasIdOnKeyDownForwardedRefProps.asInstanceOf[js.Any]).asInstanceOf[Props]
+  inline def useDropdownItems_div(param0: DropdownItemsProps & ComponentPropsWithoutRef[div] & Ref): Props = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownItems")(param0.asInstanceOf[js.Any]).asInstanceOf[Props]
   
-  inline def useDropdownPopover_div(
-    hasOnBlurPortalPositionForwardedRefProps: DropdownPopoverProps & ComponentPropsWithoutRef[div] & Ref
-  ): DataProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownPopover")(hasOnBlurPortalPositionForwardedRefProps.asInstanceOf[js.Any]).asInstanceOf[DataProps]
+  inline def useDropdownPopover_div(param0: DropdownPopoverProps & ComponentPropsWithoutRef[div] & Ref): DataProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownPopover")(param0.asInstanceOf[js.Any]).asInstanceOf[DataProps]
   
-  inline def useDropdownTrigger_button(
-    hasOnKeyDownOnMouseDownIdForwardedRefProps: DropdownTriggerProps & ComponentPropsWithoutRef[button] & RefForwardedRef
-  ): DataControls = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownTrigger")(hasOnKeyDownOnMouseDownIdForwardedRefProps.asInstanceOf[js.Any]).asInstanceOf[DataControls]
+  inline def useDropdownTrigger_button(param0: DropdownTriggerProps & ComponentPropsWithoutRef[button] & RefForwardedRef): DataControls = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[DataControls]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reachDropdown.anon.Type

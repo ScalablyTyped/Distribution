@@ -31,7 +31,7 @@ object mod {
   
   inline def ResponsiveSankey[N /* <: DefaultNode */, L /* <: DefaultLink */](props: Omit[SankeySvgProps[N, L], width | height]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveSankey")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def Sankey[N /* <: DefaultNode */, L /* <: DefaultLink */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: SankeySvgProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Sankey")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Sankey[N /* <: DefaultNode */, L /* <: DefaultLink */](param0: SankeySvgProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Sankey")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def sankeyAlignmentFromProp(prop: SankeyAlignType): js.Function2[/* node */ SankeyNode, /* n */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyAlignmentFromProp")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* node */ SankeyNode, /* n */ Double, Double]]
   
@@ -168,7 +168,7 @@ object mod {
     def linkOpacity: Double = js.native
     inline def linkOpacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linkOpacity")(x.asInstanceOf[js.Any])
     
-    inline def linkTooltip[N_1 /* <: DefaultNode */, L_1 /* <: DefaultLink */](hasLink: SankeyLinkTooltipProps[N_1, L_1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("linkTooltip")(hasLink.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def linkTooltip[N_1 /* <: DefaultNode */, L_1 /* <: DefaultLink */](param0: SankeyLinkTooltipProps[N_1, L_1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("linkTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/sankey", "svgDefaultProps.motionConfig")
     @js.native
@@ -220,7 +220,7 @@ object mod {
     def nodeThickness: Double = js.native
     inline def nodeThickness_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nodeThickness")(x.asInstanceOf[js.Any])
     
-    inline def nodeTooltip[N /* <: DefaultNode */, L /* <: DefaultLink */](hasNode: SankeyNodeTooltipProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeTooltip")(hasNode.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def nodeTooltip[N /* <: DefaultNode */, L /* <: DefaultLink */](param0: SankeyNodeTooltipProps[N, L]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/sankey", "svgDefaultProps.role")
     @js.native

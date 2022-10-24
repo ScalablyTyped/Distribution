@@ -13,7 +13,7 @@ object distServerWebErrorMod {
   open class PageSignatureError protected ()
     extends StObject
        with Error {
-    def this(hasPage: PageString) = this()
+    def this(param0: PageString) = this()
     
     /* standard es5 */
     /* CompleteClass */

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "favicons" : "7.0.1"
+      "favicons" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "favicons" : "7.0.1"
+      "favicons" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -34,7 +34,7 @@ object buildPathsPathsMod {
   
   inline def getPossibleProjectRoot(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPossibleProjectRoot")().asInstanceOf[String]
   
-  inline def resolveEntryPoint(projectRoot: String, hasPlatformProjectConfig: Platform): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveEntryPoint")(projectRoot.asInstanceOf[js.Any], hasPlatformProjectConfig.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def resolveEntryPoint(projectRoot: String, param1: Platform): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveEntryPoint")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   inline def resolveFromSilentWithExtensions(fromDirectory: String, moduleId: String, extensions: js.Array[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFromSilentWithExtensions")(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }

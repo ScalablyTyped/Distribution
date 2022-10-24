@@ -13,7 +13,7 @@ object distSrcModulesFullScreenManagerFullScreenManagerMod {
   open class default protected ()
     extends StObject
        with FullScreenManager {
-    def this(hasEventEmitterEngineRootContainerConfig: Config) = this()
+    def this(param0: Config) = this()
     
     /* CompleteClass */
     override def destroy(): Unit = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CallDisplayName extends StObject {
   
-  def apply(hasTitleColorSubtitleSubtitleStyleOnPressStyleTitleRefTitleStyleThemeTitleRest: Props): Element = js.native
+  def apply(param0: Props): Element = js.native
   
   var displayName: String = js.native
 }

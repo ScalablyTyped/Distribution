@@ -44,15 +44,15 @@ object BaseMods {
   @js.native
   def withAndroidBaseMods: js.Function2[
     /* config */ ExportedConfig, 
-    /* hasProvidersProps */ js.UndefOr[ForwardedBaseModOptionspr], 
+    /* param1 */ js.UndefOr[ForwardedBaseModOptionspr], 
     ExportedConfig
   ] = js.native
   inline def withAndroidBaseMods(config: ExportedConfig): ExportedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("withAndroidBaseMods")(config.asInstanceOf[js.Any]).asInstanceOf[ExportedConfig]
-  inline def withAndroidBaseMods(config: ExportedConfig, hasProvidersProps: ForwardedBaseModOptionspr): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withAndroidBaseMods")(config.asInstanceOf[js.Any], hasProvidersProps.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withAndroidBaseMods(config: ExportedConfig, param1: ForwardedBaseModOptionspr): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withAndroidBaseMods")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   inline def withAndroidBaseMods_=(
     x: js.Function2[
       /* config */ ExportedConfig, 
-      /* hasProvidersProps */ js.UndefOr[ForwardedBaseModOptionspr], 
+      /* param1 */ js.UndefOr[ForwardedBaseModOptionspr], 
       ExportedConfig
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withAndroidBaseMods")(x.asInstanceOf[js.Any])
@@ -60,22 +60,22 @@ object BaseMods {
   @JSImport("@expo/config-plugins/build", "BaseMods.withGeneratedBaseMods")
   @js.native
   def withGeneratedBaseMods: FnCall = js.native
-  inline def withGeneratedBaseMods[ModName /* <: String */](config: ExportedConfig, hasPlatformProvidersProps: ForwardedBaseModOptions & Platform[ModName]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withGeneratedBaseMods")(config.asInstanceOf[js.Any], hasPlatformProvidersProps.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withGeneratedBaseMods[ModName /* <: String */](config: ExportedConfig, param1: ForwardedBaseModOptions & Platform[ModName]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withGeneratedBaseMods")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   inline def withGeneratedBaseMods_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withGeneratedBaseMods")(x.asInstanceOf[js.Any])
   
   @JSImport("@expo/config-plugins/build", "BaseMods.withIosBaseMods")
   @js.native
   def withIosBaseMods: js.Function2[
     /* config */ ExportedConfig, 
-    /* hasProvidersProps */ js.UndefOr[ForwardedBaseModOptionsprProviders], 
+    /* param1 */ js.UndefOr[ForwardedBaseModOptionsprProviders], 
     ExportedConfig
   ] = js.native
   inline def withIosBaseMods(config: ExportedConfig): ExportedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("withIosBaseMods")(config.asInstanceOf[js.Any]).asInstanceOf[ExportedConfig]
-  inline def withIosBaseMods(config: ExportedConfig, hasProvidersProps: ForwardedBaseModOptionsprProviders): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withIosBaseMods")(config.asInstanceOf[js.Any], hasProvidersProps.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withIosBaseMods(config: ExportedConfig, param1: ForwardedBaseModOptionsprProviders): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withIosBaseMods")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   inline def withIosBaseMods_=(
     x: js.Function2[
       /* config */ ExportedConfig, 
-      /* hasProvidersProps */ js.UndefOr[ForwardedBaseModOptionsprProviders], 
+      /* param1 */ js.UndefOr[ForwardedBaseModOptionsprProviders], 
       ExportedConfig
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withIosBaseMods")(x.asInstanceOf[js.Any])

@@ -29,14 +29,8 @@ object distSrcUtilsUndoManagerMod {
       * @param {UndoManagerOptions} options
       */
     def this(typeScope: AbstractType[Any]) = this()
-    def this(
-      typeScope: js.Array[AbstractType[Any]],
-      hasCaptureTimeoutCaptureTransactionDeleteFilterTrackedOriginsIgnoreRemoteMapChangesDoc: UndoManagerOptions
-    ) = this()
-    def this(
-      typeScope: AbstractType[Any],
-      hasCaptureTimeoutCaptureTransactionDeleteFilterTrackedOriginsIgnoreRemoteMapChangesDoc: UndoManagerOptions
-    ) = this()
+    def this(typeScope: js.Array[AbstractType[Any]], param1: UndoManagerOptions) = this()
+    def this(typeScope: AbstractType[Any], param1: UndoManagerOptions) = this()
     
     /**
       * @param {Array<AbstractType<any>> | AbstractType<any>} ytypes
@@ -67,6 +61,8 @@ object distSrcUtilsUndoManagerMod {
       * @return {boolean} `true` if undo is possible
       */
     def canUndo(): Boolean = js.native
+    
+    var captureTimeout: Double = js.native
     
     def captureTransaction(arg0: Transaction): Boolean = js.native
     
@@ -190,7 +186,7 @@ object distSrcUtilsUndoManagerMod {
     
     /**
       * Sometimes
-      * it is necessary to filter whan an Undo/Redo operation can delete. If this
+      * it is necessary to filter what an Undo/Redo operation can delete. If this
       * filter returns false, the type/item won't be deleted even it is in the
       * undo/redo scope.
       */

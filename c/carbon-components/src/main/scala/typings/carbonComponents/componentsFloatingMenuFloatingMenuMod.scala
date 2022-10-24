@@ -88,7 +88,7 @@ object componentsFloatingMenuFloatingMenuMod {
   @js.native
   val DIRECTION_TOP: /* "top" */ String = js.native
   
-  inline def getFloatingPosition(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY: Direction): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatingPosition")(hasMenuSizeRefPositionOffsetDirectionScrollXScrollY.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getFloatingPosition(param0: Direction): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFloatingPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ trait FloatingMenu extends StObject {

@@ -10,7 +10,7 @@ object libTypographyBaseEllipsisMod {
   
   object default {
     
-    inline def apply(hasEnabledMeasureChildrenTextWidthFontSizeRowsOnEllipsis: EllipsisProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasEnabledMeasureChildrenTextWidthFontSizeRowsOnEllipsis.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: EllipsisProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd/lib/typography/Base/Ellipsis", JSImport.Default)
     @js.native

@@ -12,7 +12,7 @@ object distTsStoriesButtonDotstoriesMod extends Shortcut {
   
   @JSImport("@storybook/mdx1-csf/dist/ts/stories/Button.stories", JSImport.Default)
   @js.native
-  val default: ComponentMeta[js.Function1[/* hasPrimarySizeBackgroundColorLabelProps */ ButtonProps, Element]] = js.native
+  val default: ComponentMeta[js.Function1[/* param0 */ ButtonProps, Element]] = js.native
   
   @JSImport("@storybook/mdx1-csf/dist/ts/stories/Button.stories", "Large")
   @js.native
@@ -30,8 +30,8 @@ object distTsStoriesButtonDotstoriesMod extends Shortcut {
   @js.native
   val Small: Any = js.native
   
-  type _To = ComponentMeta[js.Function1[/* hasPrimarySizeBackgroundColorLabelProps */ ButtonProps, Element]]
+  type _To = ComponentMeta[js.Function1[/* param0 */ ButtonProps, Element]]
   
   /* This means you don't have to write `default`, but can instead just say `distTsStoriesButtonDotstoriesMod.foo` */
-  override def _to: ComponentMeta[js.Function1[/* hasPrimarySizeBackgroundColorLabelProps */ ButtonProps, Element]] = default
+  override def _to: ComponentMeta[js.Function1[/* param0 */ ButtonProps, Element]] = default
 }

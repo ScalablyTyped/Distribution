@@ -11,6 +11,6 @@ object mod {
   @js.native
   open class SignatureV4 protected ()
     extends typings.awsSdkSignatureV4.mod.SignatureV4 {
-    def this(hasSha256Rest: SignatureV4Init) = this()
+    def this(param0: SignatureV4Init) = this()
   }
 }

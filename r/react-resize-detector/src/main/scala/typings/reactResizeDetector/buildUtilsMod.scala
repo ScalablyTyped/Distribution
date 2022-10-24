@@ -23,13 +23,13 @@ object buildUtilsMod {
     setSize: Dispatch[SetStateAction[ReactResizeDetectorDimensions]],
     handleWidth: Boolean,
     handleHeight: Boolean
-  ): js.Function1[/* hasWidthHeight */ ReactResizeDetectorDimensions, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNotifier")(onResize.asInstanceOf[js.Any], setSize.asInstanceOf[js.Any], handleWidth.asInstanceOf[js.Any], handleHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* hasWidthHeight */ ReactResizeDetectorDimensions, Unit]]
+  ): js.Function1[/* param0 */ ReactResizeDetectorDimensions, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNotifier")(onResize.asInstanceOf[js.Any], setSize.asInstanceOf[js.Any], handleWidth.asInstanceOf[js.Any], handleHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* param0 */ ReactResizeDetectorDimensions, Unit]]
   inline def createNotifier(
     onResize: Unit,
     setSize: Dispatch[SetStateAction[ReactResizeDetectorDimensions]],
     handleWidth: Boolean,
     handleHeight: Boolean
-  ): js.Function1[/* hasWidthHeight */ ReactResizeDetectorDimensions, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNotifier")(onResize.asInstanceOf[js.Any], setSize.asInstanceOf[js.Any], handleWidth.asInstanceOf[js.Any], handleHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* hasWidthHeight */ ReactResizeDetectorDimensions, Unit]]
+  ): js.Function1[/* param0 */ ReactResizeDetectorDimensions, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNotifier")(onResize.asInstanceOf[js.Any], setSize.asInstanceOf[js.Any], handleWidth.asInstanceOf[js.Any], handleHeight.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* param0 */ ReactResizeDetectorDimensions, Unit]]
   
   inline def isDOMElement(element: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

@@ -22,7 +22,7 @@ object libBindingsHttpHttpEmitterMod {
       * @param {string} [options.version] The HTTP binding specification version. Default: "1.0"
       * @throws {TypeError} if no options.url is provided or an unknown specification version is provided.
       */
-    def this(hasUrlVersion: Url) = this()
+    def this(param0: Url) = this()
     
     var binary: Any = js.native
     
@@ -42,7 +42,7 @@ object libBindingsHttpHttpEmitterMod {
       * @returns {Promise} Promise with an eventual response from the receiver
       */
     def send(event: CloudEvent): Any = js.native
-    def send(event: CloudEvent, hasUrlModeHttpOpts: Mode): Any = js.native
+    def send(event: CloudEvent, param1: Mode): Any = js.native
     
     var structured: Any = js.native
     

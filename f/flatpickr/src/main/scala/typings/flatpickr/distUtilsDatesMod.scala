@@ -22,15 +22,15 @@ object distUtilsDatesMod {
   
   inline def compareTimes(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareTimes")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def createDateFormatter(hasConfigL10nIsMobile: FormatterArgs): js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateFormatter")(hasConfigL10nIsMobile.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String]]
+  inline def createDateFormatter(param0: FormatterArgs): js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateFormatter")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String]]
   
-  inline def createDateParser(hasConfigL10n: Config): js.Function4[
+  inline def createDateParser(param0: Config): js.Function4[
     /* date */ Date | String | Double, 
     /* givenFormat */ js.UndefOr[String], 
     /* timeless */ js.UndefOr[Boolean], 
     /* customLocale */ js.UndefOr[Locale], 
     js.UndefOr[Date]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateParser")(hasConfigL10n.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateParser")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
     /* date */ Date | String | Double, 
     /* givenFormat */ js.UndefOr[String], 
     /* timeless */ js.UndefOr[Boolean], 

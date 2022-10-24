@@ -15,8 +15,8 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(fd: Double, filesize: Double): Generator[Buffer, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fd.asInstanceOf[js.Any], filesize.asInstanceOf[js.Any])).asInstanceOf[Generator[Buffer, Any, Any]]
-  inline def default(fd: Double, filesize: Double, hasBufferSizePositionMaxLineLength: BufferSize): Generator[Buffer, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fd.asInstanceOf[js.Any], filesize.asInstanceOf[js.Any], hasBufferSizePositionMaxLineLength.asInstanceOf[js.Any])).asInstanceOf[Generator[Buffer, Any, Any]]
+  inline def default(fd: Double, filesize: Double, param2: BufferSize): Generator[Buffer, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fd.asInstanceOf[js.Any], filesize.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Generator[Buffer, Any, Any]]
   
   inline def fromFile(filename: String): Generator[Buffer, Unit, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Generator[Buffer, Unit, Any]]
-  inline def fromFile(filename: String, hasBufferSizeMaxLineLength: MaxLineLength): Generator[Buffer, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filename.asInstanceOf[js.Any], hasBufferSizeMaxLineLength.asInstanceOf[js.Any])).asInstanceOf[Generator[Buffer, Unit, Any]]
+  inline def fromFile(filename: String, param1: MaxLineLength): Generator[Buffer, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filename.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Generator[Buffer, Unit, Any]]
 }

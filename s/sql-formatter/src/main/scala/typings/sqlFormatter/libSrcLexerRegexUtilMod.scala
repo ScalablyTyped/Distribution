@@ -19,7 +19,7 @@ object libSrcLexerRegexUtilMod {
   
   inline def patternToRegex(pattern: String): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("patternToRegex")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
-  inline def prefixesPattern(hasPrefixesRequirePrefix: PrefixedQuoteType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixesPattern")(hasPrefixesRequirePrefix.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def prefixesPattern(param0: PrefixedQuoteType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixesPattern")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def toCaseInsensitivePattern(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toCaseInsensitivePattern")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
   

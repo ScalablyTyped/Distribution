@@ -22,6 +22,6 @@ object libTypescriptWebHammerIndiscreteGestureHandlerMod {
   trait IndiscreteGestureHandler
     extends typings.reactNativeGestureHandler.libTypescriptWebHammerGestureHandlerMod.default {
     
-    def updateGestureConfig(hasMinPointersMaxPointersProps: MaxPointers): PartialenabledbooleanminP = js.native
+    def updateGestureConfig(param0: MaxPointers): PartialenabledbooleanminP = js.native
   }
 }

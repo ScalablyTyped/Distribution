@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-devkit__schematics
 
-Typings are for version 14.2.3
+Typings are for version 14.2.6
 
 ## Library description:
 Angular Schematics - Library

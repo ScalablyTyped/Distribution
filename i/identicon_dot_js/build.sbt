@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "identicon_dot_js"
-version := "2.3-dt-20211202Z-61bc6e"
-scalaVersion := "3.1.2"
+version := "2.3-dt-20211202Z-1c94de"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -26,9 +26,7 @@ object typesUseTreeMovementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useTreeMovement(
-    hasIdDataRootIdSortOnBlurOnFocusOnKeyDownMultiSelectSelectedIdsOnItemSelectOnMultiItemSelectExpandedIdsOnItemExpansionOnMultiItemExpansionValueKeyGetItemValue: Options
-  ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTreeMovement")(hasIdDataRootIdSortOnBlurOnFocusOnKeyDownMultiSelectSelectedIdsOnItemSelectOnMultiItemSelectExpandedIdsOnItemExpansionOnMultiItemExpansionValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def useTreeMovement(param0: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTreeMovement")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   /* Inlined std.Pick<@react-md/tree.@react-md/tree/types/types.TreeProps<@react-md/tree.@react-md/tree/types/types.UnknownTreeItem>, 'id' | 'data' | 'sort' | 'onBlur' | 'onFocus' | 'onKeyDown' | 'multiSelect' | 'selectedIds' | 'onItemSelect' | 'onMultiItemSelect' | 'expandedIds' | 'onItemExpansion' | 'onMultiItemExpansion'> & std.Required<std.Pick<@react-md/tree.@react-md/tree/types/types.TreeProps<@react-md/tree.@react-md/tree/types/types.UnknownTreeItem>, 'valueKey' | 'getItemValue' | 'rootId'>> */
   trait Options extends StObject {

@@ -24,9 +24,9 @@ object typesPositioningCreateHorizontalPositionMod {
   
   inline def createAnchoredRight(config: FixConfig): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredRight")(config.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  inline def createEqualWidth(hasXVwElWidthXMarginVwMarginInitialXContainerRectIsMinWidth: EqualWidthOptions): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createEqualWidth")(hasXVwElWidthXMarginVwMarginInitialXContainerRectIsMinWidth.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  inline def createEqualWidth(param0: EqualWidthOptions): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createEqualWidth")(param0.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
-  inline def createHorizontalPosition(hasXVwVwMarginXMarginWidthElWidthInitialXContainerRectDisableSwapping: Options): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createHorizontalPosition")(hasXVwVwMarginXMarginWidthElWidthInitialXContainerRectDisableSwapping.asInstanceOf[js.Any]).asInstanceOf[XPosition]
+  inline def createHorizontalPosition(param0: Options): XPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createHorizontalPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[XPosition]
   
   /* Inlined parent std.Pick<@react-md/utils.@react-md/utils/types/positioning/createHorizontalPosition.Options, 'x' | 'vw' | 'elWidth' | 'xMargin' | 'vwMargin' | 'containerRect' | 'initialX'> */
   trait EqualWidthOptions extends StObject {

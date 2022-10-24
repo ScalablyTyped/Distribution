@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-devkit__build-webpack
 
-Typings are for version 0.1402.3
+Typings are for version 0.1402.6
 
 ## Library description:
 Webpack Builder for Architect

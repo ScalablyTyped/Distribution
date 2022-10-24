@@ -24,7 +24,7 @@ object typesDevtoolsThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ThemeProvider(hasThemeRest: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasThemeRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ThemeProvider(param0: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object defaultTheme {
     

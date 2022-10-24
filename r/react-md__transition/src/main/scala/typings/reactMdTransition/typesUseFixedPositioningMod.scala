@@ -22,9 +22,7 @@ object typesUseFixedPositioningMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useFixedPositioning[FixedToElement /* <: HTMLElement */, FixedElement /* <: HTMLElement */](
-    hasPropStyleNodeRefFixedToOnEnterOnEnteringOnEnteredOnExitedAnchorDisableSwappingDisableVHBoundsInitialXInitialYPreventOverlapTransformOriginVhMarginVwMarginWidthXMarginYMarginGetFixedPositionOptionsOnScrollOnResize: FixedPositioningOptions[FixedToElement, FixedElement]
-  ): FixedPositioningHookReturnValue[FixedElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFixedPositioning")(hasPropStyleNodeRefFixedToOnEnterOnEnteringOnEnteredOnExitedAnchorDisableSwappingDisableVHBoundsInitialXInitialYPreventOverlapTransformOriginVhMarginVwMarginWidthXMarginYMarginGetFixedPositionOptionsOnScrollOnResize.asInstanceOf[js.Any]).asInstanceOf[FixedPositioningHookReturnValue[FixedElement]]
+  inline def useFixedPositioning[FixedToElement /* <: HTMLElement */, FixedElement /* <: HTMLElement */](param0: FixedPositioningOptions[FixedToElement, FixedElement]): FixedPositioningHookReturnValue[FixedElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFixedPositioning")(param0.asInstanceOf[js.Any]).asInstanceOf[FixedPositioningHookReturnValue[FixedElement]]
   
   trait FixedPositioningHookReturnValue[E /* <: HTMLElement */] extends StObject {
     

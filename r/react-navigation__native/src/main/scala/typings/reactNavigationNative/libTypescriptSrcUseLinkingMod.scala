@@ -15,10 +15,7 @@ object libTypescriptSrcUseLinkingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    ref: RefObject[NavigationContainerRef[ParamListBase]],
-    hasIndependentEnabledConfigGetStateFromPathGetPathFromStateGetActionFromState: Options
-  ): GetInitialState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], hasIndependentEnabledConfigGetStateFromPathGetPathFromStateGetActionFromState.asInstanceOf[js.Any])).asInstanceOf[GetInitialState]
+  inline def default(ref: RefObject[NavigationContainerRef[ParamListBase]], param1: Options): GetInitialState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[GetInitialState]
   
   trait Options
     extends StObject

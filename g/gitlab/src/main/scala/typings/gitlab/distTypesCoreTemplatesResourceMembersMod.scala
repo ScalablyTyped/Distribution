@@ -24,9 +24,9 @@ object distTypesCoreTemplatesResourceMembersMod {
     def add(resourceId: Double, userId: Double, accessLevel: AccessLevel, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     
     def all(resourceId: String): js.Promise[GetResponse] = js.native
-    def all(resourceId: String, hasIncludeInheritedOptions: IncludeInherited & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(resourceId: String, param1: IncludeInherited & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     def all(resourceId: Double): js.Promise[GetResponse] = js.native
-    def all(resourceId: Double, hasIncludeInheritedOptions: IncludeInherited & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(resourceId: Double, param1: IncludeInherited & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     
     def edit(resourceId: String, userId: Double, accessLevel: AccessLevel): js.Promise[js.Object] = js.native
     def edit(resourceId: String, userId: Double, accessLevel: AccessLevel, options: BaseRequestOptions): js.Promise[js.Object] = js.native
@@ -39,9 +39,9 @@ object distTypesCoreTemplatesResourceMembersMod {
     def remove(resourceId: Double, userId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
     def show(resourceId: String, userId: Double): js.Promise[GetResponse] = js.native
-    def show(resourceId: String, userId: Double, hasIncludeInheritedOptions: IncludeInherited & Sudo): js.Promise[GetResponse] = js.native
+    def show(resourceId: String, userId: Double, param2: IncludeInherited & Sudo): js.Promise[GetResponse] = js.native
     def show(resourceId: Double, userId: Double): js.Promise[GetResponse] = js.native
-    def show(resourceId: Double, userId: Double, hasIncludeInheritedOptions: IncludeInherited & Sudo): js.Promise[GetResponse] = js.native
+    def show(resourceId: Double, userId: Double, param2: IncludeInherited & Sudo): js.Promise[GetResponse] = js.native
   }
   
   trait IncludeInherited extends StObject {

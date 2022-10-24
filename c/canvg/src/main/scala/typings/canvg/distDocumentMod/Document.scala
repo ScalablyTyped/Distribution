@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Document protected ()
   extends typings.canvg.distDocumentDocumentMod.Document {
   def this(canvg: Canvg) = this()
-  def this(canvg: Canvg, hasRootEmSizeEmSizeCreateCanvasCreateImageAnonymousCrossOrigin: IDocumentOptions) = this()
+  def this(canvg: Canvg, param1: IDocumentOptions) = this()
 }
 /* static members */
 object Document {

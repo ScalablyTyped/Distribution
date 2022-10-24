@@ -26,7 +26,7 @@ object libEsmPuppeteerCommonPuppeteerMod {
     /**
       * @internal
       */
-    /* protected */ var _isPuppeteerCore: Boolean = js.native
+    var _isPuppeteerCore: Boolean = js.native
     
     /**
       * This method attaches Puppeteer to an existing browser instance.

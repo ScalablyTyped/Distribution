@@ -43,7 +43,7 @@ open class LineBucket protected ()
   ): scala.Unit = js.native
   
   def addHalfVertex(
-    hasXY: ^,
+    param0: ^,
     extrudeX: Double,
     extrudeY: Double,
     round: Boolean,

@@ -11,7 +11,7 @@ object libComponentsScrollOffsetListenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasScrollOffsetOnScrollOffsetChange: Props): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasScrollOffsetOnScrollOffsetChange.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def default(param0: Props): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   trait Props extends StObject {
     

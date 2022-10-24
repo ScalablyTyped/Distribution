@@ -22,11 +22,11 @@ object distEsmSrcFunctionsCommonMod {
   
   inline def getErrorFromResponse(requestName: String, response: Response): js.Promise[FirebaseError] = (^.asInstanceOf[js.Dynamic].applyDynamic("getErrorFromResponse")(requestName.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FirebaseError]]
   
-  inline def getHeaders(hasApiKey: AppConfig): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeaders")(hasApiKey.asInstanceOf[js.Any]).asInstanceOf[Headers]
+  inline def getHeaders(param0: AppConfig): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeaders")(param0.asInstanceOf[js.Any]).asInstanceOf[Headers]
   
-  inline def getHeadersWithAuth(appConfig: AppConfig, hasRefreshToken: RegisteredInstallationEntry): Headers = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeadersWithAuth")(appConfig.asInstanceOf[js.Any], hasRefreshToken.asInstanceOf[js.Any])).asInstanceOf[Headers]
+  inline def getHeadersWithAuth(appConfig: AppConfig, param1: RegisteredInstallationEntry): Headers = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeadersWithAuth")(appConfig.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Headers]
   
-  inline def getInstallationsEndpoint(hasProjectId: AppConfig): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallationsEndpoint")(hasProjectId.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getInstallationsEndpoint(param0: AppConfig): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallationsEndpoint")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def retryIfServerError(fn: js.Function0[js.Promise[Response]]): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("retryIfServerError")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
   

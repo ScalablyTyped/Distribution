@@ -13,8 +13,8 @@ object distTypesCoreServicesSearchMod {
   @JSImport("gitlab/dist/types/core/services/Search", "Search")
   @js.native
   open class Search () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
-    def all(scope: String, search: String, hasProjectIdGroupIdOptions: projectIdstringnumberundeGroupId): js.Promise[GetResponse] = js.native
+    def all(scope: String, search: String, param2: projectIdstringnumberundeGroupId): js.Promise[GetResponse] = js.native
   }
 }

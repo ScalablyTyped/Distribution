@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__csf-tools
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 An experimental library to read, analyze, transform, and write CSF programmatically.

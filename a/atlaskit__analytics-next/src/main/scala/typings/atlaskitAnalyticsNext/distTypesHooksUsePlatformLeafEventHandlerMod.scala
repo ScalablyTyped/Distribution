@@ -12,9 +12,7 @@ object distTypesHooksUsePlatformLeafEventHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def usePlatformLeafEventHandler[T](
-    hasFnActionComponentNameActionSubjectPackageNamePackageVersionAnalyticsData: UsePlatformLeafEventHandlerHookArgs[T]
-  ): js.Function1[/* value */ T, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePlatformLeafEventHandler")(hasFnActionComponentNameActionSubjectPackageNamePackageVersionAnalyticsData.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ T, Unit]]
+  inline def usePlatformLeafEventHandler[T](param0: UsePlatformLeafEventHandlerHookArgs[T]): js.Function1[/* value */ T, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePlatformLeafEventHandler")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ T, Unit]]
   
   type UsePlatformLeafEventHandlerHook[T] = js.Function1[/* value */ T, Unit]
   

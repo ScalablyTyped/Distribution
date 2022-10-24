@@ -170,7 +170,7 @@ inline def joinNeighborsR(acc: js.Array[Any], x: Any): js.Array[Any] = (^.asInst
 
 inline def kebobString(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("kebobString")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def keyValsToObjectR(accum: Any, hasKeyVal: js.Tuple2[Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("keyValsToObjectR")(accum.asInstanceOf[js.Any], hasKeyVal.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def keyValsToObjectR(accum: Any, param1: js.Tuple2[Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("keyValsToObjectR")(accum.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 inline def locationPluginFactory(
   name: String,

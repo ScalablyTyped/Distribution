@@ -18,7 +18,7 @@ object distServerSendPayloadMod {
   inline def sendEtagResponse(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEtagResponse")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def sendEtagResponse(req: IncomingMessage, res: ServerResponse[IncomingMessage], etag: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEtagResponse")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], etag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def sendRenderResult(hasReqResResultTypeGenerateEtagsPoweredByHeaderOptions: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendRenderResult")(hasReqResResultTypeGenerateEtagsPoweredByHeaderOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def sendRenderResult(param0: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendRenderResult")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def setRevalidateHeaders(res: BaseNextResponse[Any], options: PayloadOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRevalidateHeaders")(res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setRevalidateHeaders(res: ServerResponse[IncomingMessage], options: PayloadOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRevalidateHeaders")(res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]

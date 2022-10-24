@@ -1,21 +1,20 @@
 package typings.wixStyleReact.mod
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.react.mod.SFC
-import typings.wixStyleReact.inputMod.AffixProps
-import typings.wixStyleReact.inputMod.IconAffixProps
-import typings.wixStyleReact.inputMod.InputStatusError
-import typings.wixStyleReact.inputMod.InputStatusLoading
-import typings.wixStyleReact.inputMod.InputStatusWarning
-import typings.wixStyleReact.inputMod.TickerProps
-import typings.wixStyleReact.inputMod.default
+import typings.react.mod.FC
+import typings.wixStyleReact.distTypesInputMod.AffixProps
+import typings.wixStyleReact.distTypesInputMod.IconAffixProps
+import typings.wixStyleReact.distTypesInputMod.InputStatusError
+import typings.wixStyleReact.distTypesInputMod.InputStatusLoading
+import typings.wixStyleReact.distTypesInputMod.InputStatusWarning
+import typings.wixStyleReact.distTypesInputMod.TickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "Input")
 @js.native
-class Input () extends default
+open class Input ()
+  extends typings.wixStyleReact.distTypesInputMod.default
 /* static members */
 object Input {
   
@@ -25,18 +24,18 @@ object Input {
   
   @JSImport("wix-style-react", "Input.Affix")
   @js.native
-  def Affix: SFC[AffixProps] = js.native
-  inline def Affix_=(x: SFC[AffixProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Affix")(x.asInstanceOf[js.Any])
+  def Affix: FC[AffixProps] = js.native
+  inline def Affix_=(x: FC[AffixProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Affix")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Input.Group")
   @js.native
-  def Group: SFC[js.Object] = js.native
-  inline def Group_=(x: SFC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+  def Group: FC[js.Object] = js.native
+  inline def Group_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Input.IconAffix")
   @js.native
-  def IconAffix: SFC[IconAffixProps] = js.native
-  inline def IconAffix_=(x: SFC[IconAffixProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IconAffix")(x.asInstanceOf[js.Any])
+  def IconAffix: FC[IconAffixProps] = js.native
+  inline def IconAffix_=(x: FC[IconAffixProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IconAffix")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Input.StatusError")
   @js.native
@@ -55,11 +54,6 @@ object Input {
   
   @JSImport("wix-style-react", "Input.Ticker")
   @js.native
-  def Ticker: SFC[TickerProps] = js.native
-  inline def Ticker_=(x: SFC[TickerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ticker")(x.asInstanceOf[js.Any])
-  
-  @JSImport("wix-style-react", "Input.Unit")
-  @js.native
-  def Unit: Instantiable0[typings.wixStyleReact.inputMod.Unit] = js.native
-  inline def Unit_=(x: Instantiable0[typings.wixStyleReact.inputMod.Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unit")(x.asInstanceOf[js.Any])
+  def Ticker: FC[TickerProps] = js.native
+  inline def Ticker_=(x: FC[TickerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ticker")(x.asInstanceOf[js.Any])
 }

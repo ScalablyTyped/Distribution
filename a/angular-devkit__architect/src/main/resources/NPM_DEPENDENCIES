@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular-devkit/architect" : "0.1402.3"
+      "@angular-devkit/architect" : "0.1402.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular-devkit/architect" : "0.1402.3"
+      "@angular-devkit/architect" : "0.1402.6"
     }
   ],
   "compile-devDependencies" : [

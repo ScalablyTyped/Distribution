@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__preview-web
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 This is the main API for the (web) version of the Storybook Preview.

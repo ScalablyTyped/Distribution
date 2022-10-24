@@ -14,7 +14,7 @@ object esUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def filterOption(input: String, hasValue: OptionProps): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOption")(input.asInstanceOf[js.Any], hasValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def filterOption(input: String, param1: OptionProps): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOption")(input.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def getBeforeSelectionText(input: HTMLTextAreaElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBeforeSelectionText")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   

@@ -6,6 +6,7 @@ import typings.diff2html.libTypesMod.LineMatchingType
 import typings.diff2html.libTypesMod.OutputFormatType
 import typings.diff2html.libUiJsDiff2htmlUiBaseMod.Diff2HtmlUIConfig
 import typings.std.HTMLElement
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,6 +59,12 @@ object libUiJsDiff2htmlUiSlimMod {
     @JSImport("diff2html/lib/ui/js/diff2html-ui-slim", "defaultDiff2HtmlUIConfig.highlight")
     @js.native
     def highlight: Boolean = js.native
+    
+    @JSImport("diff2html/lib/ui/js/diff2html-ui-slim", "defaultDiff2HtmlUIConfig.highlightLanguages")
+    @js.native
+    def highlightLanguages: Map[String, String] = js.native
+    inline def highlightLanguages_=(x: Map[String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlightLanguages")(x.asInstanceOf[js.Any])
+    
     inline def highlight_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlight")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-slim", "defaultDiff2HtmlUIConfig.matchWordsThreshold")

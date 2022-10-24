@@ -21,7 +21,7 @@ object distPlaceholdersSrcContentMod {
   @js.native
   val Content: OrbitComponent[HTMLElement, InnerContentProps] = js.native
   
-  inline def InnerContent(hasAsChildrenForwardedRefRest: InnerContentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerContent")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerContent(param0: InnerContentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerContent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ContentProps = ComponentProps[OrbitComponent[HTMLElement, InnerContentProps]]
   

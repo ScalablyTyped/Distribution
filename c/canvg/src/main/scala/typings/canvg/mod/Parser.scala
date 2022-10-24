@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Parser ()
   extends typings.canvg.distParserMod.Parser {
-  def this(hasFetchDOMParser: IParserOptions) = this()
+  def this(param0: IParserOptions) = this()
 }

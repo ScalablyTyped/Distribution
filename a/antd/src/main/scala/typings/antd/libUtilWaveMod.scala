@@ -60,7 +60,7 @@ object libUtilWaveMod extends Shortcut {
     
     def onTransitionStart(e: AnimationEvent): Unit = js.native
     
-    def renderWave(hasCsp: ConfigConsumerProps): js.UndefOr[String | Double | Boolean | ReactFragment | ReactElement | Null] = js.native
+    def renderWave(param0: ConfigConsumerProps): js.UndefOr[String | Double | Boolean | ReactFragment | ReactElement | Null] = js.native
     
     def resetEffect(node: HTMLElement): Unit = js.native
   }

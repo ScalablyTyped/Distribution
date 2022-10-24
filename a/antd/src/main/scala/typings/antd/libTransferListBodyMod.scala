@@ -26,7 +26,7 @@ object libTransferListBodyMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def getDerivedStateFromProps[T](hasFilteredRenderItemsPagination: TransferListBodyProps[T], hasCurrent: TransferListBodyState): Current | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasFilteredRenderItemsPagination.asInstanceOf[js.Any], hasCurrent.asInstanceOf[js.Any])).asInstanceOf[Current | Null]
+    inline def getDerivedStateFromProps[T](param0: TransferListBodyProps[T], param1: TransferListBodyState): Current | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(param0.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Current | Null]
   }
   
   @JSImport("antd/lib/transfer/ListBody", "OmitProps")

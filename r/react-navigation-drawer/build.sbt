@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "react-navigation-drawer"
-version := "2.7.2-711ae7"
-scalaVersion := "3.1.2"
+version := "2.7.2-cb2fe2"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "hammerjs" % "2.0.8-dt-20220819Z-a0e65e",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
-  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.8.0-65a940",
-  "org.scalablytyped" %%% "react-navigation" % "4.4.4-fbaff2",
-  "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-dc4815",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
+  "org.scalablytyped" %%% "hammerjs" % "2.0.8-dt-20220819Z-1822f7",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-847179",
+  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.8.0-02954d",
+  "org.scalablytyped" %%% "react-navigation" % "4.4.4-2f0221",
+  "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-dd025c",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

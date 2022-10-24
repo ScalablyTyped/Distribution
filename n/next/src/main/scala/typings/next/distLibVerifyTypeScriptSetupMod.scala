@@ -12,5 +12,5 @@ object distLibVerifyTypeScriptSetupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def verifyTypeScriptSetup(hasDirCacheDirIntentDirsTsconfigPathTypeCheckPreflightDisableStaticImages: CacheDir): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyTypeScriptSetup")(hasDirCacheDirIntentDirsTsconfigPathTypeCheckPreflightDisableStaticImages.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  inline def verifyTypeScriptSetup(param0: CacheDir): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyTypeScriptSetup")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
 }

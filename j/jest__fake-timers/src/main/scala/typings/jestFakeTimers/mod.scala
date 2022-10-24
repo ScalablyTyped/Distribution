@@ -12,7 +12,7 @@ object mod {
   @JSImport("@jest/fake-timers", "LegacyFakeTimers")
   @js.native
   open class LegacyFakeTimers[TimerRef] protected () extends StObject {
-    def this(hasGlobalModuleMockerTimerConfigConfigMaxLoops: Config[TimerRef]) = this()
+    def this(param0: Config[TimerRef]) = this()
     
     /* private */ var _cancelledTicks: Any = js.native
     
@@ -101,7 +101,7 @@ object mod {
   @JSImport("@jest/fake-timers", "ModernFakeTimers")
   @js.native
   open class ModernFakeTimers protected () extends StObject {
-    def this(hasGlobalConfig: Global) = this()
+    def this(param0: Global) = this()
     
     /* private */ var _checkFakeTimers: Any = js.native
     

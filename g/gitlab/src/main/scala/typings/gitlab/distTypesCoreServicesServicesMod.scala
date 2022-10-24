@@ -14,7 +14,7 @@ object distTypesCoreServicesServicesMod {
   @JSImport("gitlab/dist/types/core/services/Services", "Services")
   @js.native
   open class Services () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def edit(projectId: String, serviceName: SupportedService): js.Promise[js.Object] = js.native
     def edit(projectId: String, serviceName: SupportedService, options: BaseRequestOptions): js.Promise[js.Object] = js.native

@@ -12,7 +12,7 @@ object datepickerUtilsCalendarHeaderHelpersMod {
   
   inline def filterMonthItems(monthItems: js.Array[Option], filterList: js.Array[Double]): js.Array[Option] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterMonthItems")(monthItems.asInstanceOf[js.Any], filterList.asInstanceOf[js.Any])).asInstanceOf[js.Array[Option]]
   
-  inline def getFilteredMonthItems(hasFilterMonthsListFormatMonthLabel: GetMonthItemsArgs): js.Array[Option] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilteredMonthItems")(hasFilterMonthsListFormatMonthLabel.asInstanceOf[js.Any]).asInstanceOf[js.Array[Option]]
+  inline def getFilteredMonthItems(param0: GetMonthItemsArgs): js.Array[Option] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilteredMonthItems")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[Option]]
   
   trait GetMonthItemsArgs extends StObject {
     

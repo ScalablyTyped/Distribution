@@ -12,5 +12,5 @@ object distTypesBarTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BarTooltip[RawDatum](hasColorLabelData: BarTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarTooltip")(hasColorLabelData.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BarTooltip[RawDatum](param0: BarTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

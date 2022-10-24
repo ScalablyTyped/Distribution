@@ -43,7 +43,7 @@ trait AbrController
   
   /* protected */ def onFragBuffered(event: FRAG_BUFFERED, data: FragBufferedData): Unit = js.native
   
-  /* protected */ def onFragLoaded(event: FRAG_LOADED, hasFragPart: FragLoadedData): Unit = js.native
+  /* protected */ def onFragLoaded(event: FRAG_LOADED, param1: FragLoadedData): Unit = js.native
   
   /* protected */ def onFragLoading(event: FRAG_LOADING, data: FragLoadingData): Unit = js.native
   

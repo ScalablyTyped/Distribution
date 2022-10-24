@@ -11,6 +11,6 @@ object distDeclarationsSrcAnimatedStyleMod {
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedObject * / any */ @JSImport("@react-spring/web/dist/declarations/src/AnimatedStyle", "AnimatedStyle")
   @js.native
   open class AnimatedStyle protected () extends StObject {
-    def this(hasXYZStyle: Lookup[Any]) = this()
+    def this(param0: Lookup[Any]) = this()
   }
 }

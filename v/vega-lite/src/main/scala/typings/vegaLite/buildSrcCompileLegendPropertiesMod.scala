@@ -61,7 +61,7 @@ object buildSrcCompileLegendPropertiesMod {
   
   inline def defaultDirection(orient: LegendOrient, legendType: LegendType): js.UndefOr[horizontal] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultDirection")(orient.asInstanceOf[js.Any], legendType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[horizontal]]
   
-  inline def defaultGradientLength(hasLegendConfigModelDirectionOrientScaleType: Direction): Double | Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGradientLength")(hasLegendConfigModelDirectionOrientScaleType.asInstanceOf[js.Any]).asInstanceOf[Double | Signal]
+  inline def defaultGradientLength(param0: Direction): Double | Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGradientLength")(param0.asInstanceOf[js.Any]).asInstanceOf[Double | Signal]
   
   inline def defaultLabelOverlap(scaleType: ScaleType): LabelOverlap = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelOverlap")(scaleType.asInstanceOf[js.Any]).asInstanceOf[LabelOverlap]
   
@@ -80,9 +80,9 @@ object buildSrcCompileLegendPropertiesMod {
     markShape: SignalRef
   ): SymbolShape | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSymbolType")(mark.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], shapeChannelDef.asInstanceOf[js.Any], markShape.asInstanceOf[js.Any])).asInstanceOf[SymbolShape | SignalRef]
   
-  inline def defaultType(hasChannelTimeUnitScaleType: typings.vegaLite.anon.ScaleType): LegendType = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultType")(hasChannelTimeUnitScaleType.asInstanceOf[js.Any]).asInstanceOf[LegendType]
+  inline def defaultType(param0: typings.vegaLite.anon.ScaleType): LegendType = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultType")(param0.asInstanceOf[js.Any]).asInstanceOf[LegendType]
   
-  inline def getDirection(hasLegendConfigLegendTypeOrientLegend: Legend): Orientation = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirection")(hasLegendConfigLegendTypeOrientLegend.asInstanceOf[js.Any]).asInstanceOf[Orientation]
+  inline def getDirection(param0: Legend): Orientation = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirection")(param0.asInstanceOf[js.Any]).asInstanceOf[Orientation]
   
   inline def getLegendType(params: ChannelLegend): LegendType = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegendType")(params.asInstanceOf[js.Any]).asInstanceOf[LegendType]
   

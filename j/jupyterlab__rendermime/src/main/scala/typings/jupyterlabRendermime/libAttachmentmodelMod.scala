@@ -151,15 +151,6 @@ object libAttachmentmodelMod {
       __obj.asInstanceOf[IAttachmentModel]
     }
     
-    extension [Self <: IAttachmentModel](x: Self) {
-      
-      inline def setChanged(value: ISignal[IAttachmentModel, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
-      
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
-      
-      inline def setToJSON(value: () => IMimeBundle): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
-    }
-    
     /**
       * The options used to create a notebook attachment model.
       */
@@ -181,6 +172,15 @@ object libAttachmentmodelMod {
         
         inline def setValue(value: IMimeBundle): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
+    }
+    
+    extension [Self <: IAttachmentModel](x: Self) {
+      
+      inline def setChanged(value: ISignal[IAttachmentModel, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      
+      inline def setToJSON(value: () => IMimeBundle): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
 }

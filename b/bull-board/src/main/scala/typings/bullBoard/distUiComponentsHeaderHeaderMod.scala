@@ -12,5 +12,5 @@ object distUiComponentsHeaderHeaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Header(hasChildren: PropsWithChildren[Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Header")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Header(param0: PropsWithChildren[Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Header")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -128,7 +128,7 @@ object xmlyMod {
       * @param param0.type 请求类型
       * @param param0.params 业务参数
       */
-    def request(hasUrlTypeParams: RequestParams): js.Promise[RequestResponse] = js.native
+    def request(param0: RequestParams): js.Promise[RequestResponse] = js.native
     
     /**
       *  解绑第三方账户，需要当前已登陆喜马账号

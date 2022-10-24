@@ -103,6 +103,8 @@ object providersOauthMod {
     
     var accessTokenUrl: js.UndefOr[String] = js.undefined
     
+    var allowDangerousEmailAccountLinking: js.UndefOr[Boolean] = js.undefined
+    
     /**
       * The login process will be initiated by sending the user to this URL.
       *
@@ -185,6 +187,10 @@ object providersOauthMod {
       inline def setAccessTokenUrl(value: String): Self = StObject.set(x, "accessTokenUrl", value.asInstanceOf[js.Any])
       
       inline def setAccessTokenUrlUndefined: Self = StObject.set(x, "accessTokenUrl", js.undefined)
+      
+      inline def setAllowDangerousEmailAccountLinking(value: Boolean): Self = StObject.set(x, "allowDangerousEmailAccountLinking", value.asInstanceOf[js.Any])
+      
+      inline def setAllowDangerousEmailAccountLinkingUndefined: Self = StObject.set(x, "allowDangerousEmailAccountLinking", js.undefined)
       
       inline def setAuthorization(value: String | AuthorizationEndpointHandler): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
@@ -269,6 +275,8 @@ object providersOauthMod {
     
     var accessTokenUrl: js.UndefOr[String] = js.undefined
     
+    var allowDangerousEmailAccountLinking: js.UndefOr[Boolean] = js.undefined
+    
     var authorization: js.UndefOr[String | AuthorizationEndpointHandler] = js.undefined
     
     var checks: js.UndefOr[ChecksType | js.Array[ChecksType]] = js.undefined
@@ -325,6 +333,10 @@ object providersOauthMod {
       inline def setAccessTokenUrl(value: String): Self = StObject.set(x, "accessTokenUrl", value.asInstanceOf[js.Any])
       
       inline def setAccessTokenUrlUndefined: Self = StObject.set(x, "accessTokenUrl", js.undefined)
+      
+      inline def setAllowDangerousEmailAccountLinking(value: Boolean): Self = StObject.set(x, "allowDangerousEmailAccountLinking", value.asInstanceOf[js.Any])
+      
+      inline def setAllowDangerousEmailAccountLinkingUndefined: Self = StObject.set(x, "allowDangerousEmailAccountLinking", js.undefined)
       
       inline def setAuthorization(value: String | AuthorizationEndpointHandler): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       

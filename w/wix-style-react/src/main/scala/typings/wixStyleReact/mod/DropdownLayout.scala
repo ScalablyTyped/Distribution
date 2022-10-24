@@ -1,14 +1,14 @@
 package typings.wixStyleReact.mod
 
-import typings.wixStyleReact.dropdownLayoutMod.NoneSelectedId
-import typings.wixStyleReact.dropdownLayoutMod.default
+import typings.wixStyleReact.distTypesDropdownLayoutMod.NoneSelectedId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "DropdownLayout")
 @js.native
-class DropdownLayout () extends default
+open class DropdownLayout ()
+  extends typings.wixStyleReact.distTypesDropdownLayoutMod.default
 /* static members */
 object DropdownLayout {
   

@@ -12,7 +12,7 @@ object distBuildWebpackPluginsFontStylesheetGatheringPluginMod {
   @JSImport("next/dist/build/webpack/plugins/font-stylesheet-gathering-plugin", "FontStylesheetGatheringPlugin")
   @js.native
   open class FontStylesheetGatheringPlugin protected () extends StObject {
-    def this(hasIsLikeServerlessAdjustFontFallbacks: AdjustFontFallbacks) = this()
+    def this(param0: AdjustFontFallbacks) = this()
     
     var adjustFontFallbacks: js.UndefOr[Boolean] = js.native
     

@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "antd-mobile-rn"
-version := "2.3.3-4be0e6"
-scalaVersion := "3.1.2"
+version := "2.3.3-500206"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
-  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-11cbce",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
-  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20211202Z-d7d287",
-  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-78a897",
-  "org.scalablytyped" %%% "rmc-input-number" % "1.0.5-d4db30",
-  "org.scalablytyped" %%% "rmc-picker" % "5.0.10-7982db",
-  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-eb6ed4",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
+  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-f9b401",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-847179",
+  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20211202Z-2bad3f",
+  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-ef74da",
+  "org.scalablytyped" %%% "rmc-input-number" % "1.0.5-16ed57",
+  "org.scalablytyped" %%% "rmc-picker" % "5.0.10-58aa84",
+  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-fed775",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

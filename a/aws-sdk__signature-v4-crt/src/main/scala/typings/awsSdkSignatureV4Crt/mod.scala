@@ -12,6 +12,6 @@ object mod {
   @js.native
   open class CrtSignerV4 protected ()
     extends typings.awsSdkSignatureV4Crt.distTypesCrtSignerV4Mod.CrtSignerV4 {
-    def this(hasCredentialsRegionServiceSha256ApplyChecksumUriEscapePathSigningAlgorithm: CrtSignerV4Init & SignatureV4CryptoInit) = this()
+    def this(param0: CrtSignerV4Init & SignatureV4CryptoInit) = this()
   }
 }

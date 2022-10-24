@@ -224,7 +224,7 @@ object libTypescriptWebHammerGestureHandlerMod {
     
     def isNative: Boolean = js.native
     
-    def isPointInView(hasXY: X): Boolean = js.native
+    def isPointInView(param0: X): Boolean = js.native
     
     /* private */ var lastSentState: Any = js.native
     
@@ -238,9 +238,9 @@ object libTypescriptWebHammerGestureHandlerMod {
     
     def onGestureEnded(event: HammerInputExt): Unit = js.native
     
-    def onRawEvent(hasIsFirst: HammerInputExt): Unit = js.native
+    def onRawEvent(param0: HammerInputExt): Unit = js.native
     
-    def onStart(hasDeltaXDeltaYRotation: HammerInputExt): Unit = js.native
+    def onStart(param0: HammerInputExt): Unit = js.native
     
     def onSuccess(): Unit = js.native
     
@@ -278,7 +278,7 @@ object libTypescriptWebHammerGestureHandlerMod {
     
     def transformNativeEvent(_event: HammerInputExt): js.Object = js.native
     
-    def updateGestureConfig(hasEnabledProps: Dictx): PartialenabledbooleanminP = js.native
+    def updateGestureConfig(param0: Dictx): PartialenabledbooleanminP = js.native
     
     def updateHasCustomActivationCriteria(_config: Config): Boolean = js.native
     

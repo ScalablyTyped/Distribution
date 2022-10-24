@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "css_dot_escape"
-version := "1.5-dt-20220725Z-e81bc8"
-scalaVersion := "3.1.2"
+version := "1.5-dt-20220725Z-3f8828"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -1,14 +1,14 @@
 package typings.wixStyleReact.mod
 
-import typings.wixStyleReact.inputAreaMod.default
-import typings.wixStyleReact.wixStyleReactNumbers.`2`
+import typings.wixStyleReact.wixStyleReactInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "InputArea")
 @js.native
-class InputArea () extends default
+open class InputArea ()
+  extends typings.wixStyleReact.distTypesInputAreaMod.default
 /* static members */
 object InputArea {
   

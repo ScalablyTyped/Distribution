@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "geakstr__sass-inline-svg"
-version := "1.0-dt-20221015Z-99c7ed"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20221015Z-832eb9"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

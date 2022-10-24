@@ -43,7 +43,7 @@ object libTypescriptSrcViewsMaterialBottomTabViewMod {
     
     def _getBarStyle(): js.Array[StyleProp[ViewStyle]] = js.native
     
-    def _getColor(hasRoute: RouteKey): js.UndefOr[String] = js.native
+    def _getColor(param0: RouteKey): js.UndefOr[String] = js.native
     
     def _getInactiveColor(): js.UndefOr[String] = js.native
     
@@ -51,7 +51,7 @@ object libTypescriptSrcViewsMaterialBottomTabViewMod {
     
     def _isVisible(): js.UndefOr[Boolean] = js.native
     
-    def _renderIcon(hasRouteFocusedColor: Color): ReactNode = js.native
+    def _renderIcon(param0: Color): ReactNode = js.native
   }
   
   trait Options extends StObject {

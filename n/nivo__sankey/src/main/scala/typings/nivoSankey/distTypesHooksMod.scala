@@ -16,11 +16,7 @@ object distTypesHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def computeNodeAndLinks[N /* <: DefaultNode */, L /* <: DefaultLink */](
-    has_dataFormatValueLayoutAlignFunctionSortFunctionLinkSortModeNodeThicknessNodeSpacingNodeInnerPaddingWidthHeightGetColorGetLabel: AlignFunction[N, L]
-  ): Nodes[N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeNodeAndLinks")(has_dataFormatValueLayoutAlignFunctionSortFunctionLinkSortModeNodeThicknessNodeSpacingNodeInnerPaddingWidthHeightGetColorGetLabel.asInstanceOf[js.Any]).asInstanceOf[Nodes[N, L]]
+  inline def computeNodeAndLinks[N /* <: DefaultNode */, L /* <: DefaultLink */](param0: AlignFunction[N, L]): Nodes[N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeNodeAndLinks")(param0.asInstanceOf[js.Any]).asInstanceOf[Nodes[N, L]]
   
-  inline def useSankey[N /* <: DefaultNode */, L /* <: DefaultLink */](
-    hasDataValueFormatLayoutWidthHeightSortAlignColorsNodeThicknessNodeSpacingNodeInnerPaddingNodeBorderColorLabelLabelTextColor: Align[N, L]
-  ): CurrentLink[N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSankey")(hasDataValueFormatLayoutWidthHeightSortAlignColorsNodeThicknessNodeSpacingNodeInnerPaddingNodeBorderColorLabelLabelTextColor.asInstanceOf[js.Any]).asInstanceOf[CurrentLink[N, L]]
+  inline def useSankey[N /* <: DefaultNode */, L /* <: DefaultLink */](param0: Align[N, L]): CurrentLink[N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSankey")(param0.asInstanceOf[js.Any]).asInstanceOf[CurrentLink[N, L]]
 }

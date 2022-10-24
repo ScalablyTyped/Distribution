@@ -11,11 +11,8 @@ object distTypesRegionInfoGetHostnameFromVariantsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getHostnameFromVariants(
-    variants: js.Array[EndpointVariant],
-    hasUseFipsEndpointUseDualstackEndpoint: GetHostnameFromVariantsOptions
-  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostnameFromVariants")(variants.asInstanceOf[js.Any], hasUseFipsEndpointUseDualstackEndpoint.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  inline def getHostnameFromVariants(variants: Unit, hasUseFipsEndpointUseDualstackEndpoint: GetHostnameFromVariantsOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostnameFromVariants")(variants.asInstanceOf[js.Any], hasUseFipsEndpointUseDualstackEndpoint.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def getHostnameFromVariants(variants: js.Array[EndpointVariant], param1: GetHostnameFromVariantsOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostnameFromVariants")(variants.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def getHostnameFromVariants(variants: Unit, param1: GetHostnameFromVariantsOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHostnameFromVariants")(variants.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   trait GetHostnameFromVariantsOptions extends StObject {
     

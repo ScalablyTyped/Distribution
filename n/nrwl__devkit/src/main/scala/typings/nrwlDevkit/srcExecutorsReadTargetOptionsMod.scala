@@ -11,7 +11,7 @@ object srcExecutorsReadTargetOptionsMod {
   val ^ : js.Any = js.native
   
   inline def readTargetOptions[T](
-    hasProjectTargetConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Target */ Any,
+    param0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Target */ Any,
     context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExecutorContext */ Any
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("readTargetOptions")(hasProjectTargetConfiguration.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("readTargetOptions")(param0.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
 }

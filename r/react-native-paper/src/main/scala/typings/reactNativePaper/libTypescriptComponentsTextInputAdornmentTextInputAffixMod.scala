@@ -9,8 +9,8 @@ import typings.reactNative.mod.Animated.Value
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
-import typings.reactNativePaper.anon.CallHasTextLabelStyleTheme
 import typings.reactNativePaper.anon.PickPropstextonLayouttext
+import typings.reactNativePaper.anon.`29`
 import typings.reactNativePaper.anon.affixReactNodetestIDstrin
 import typings.reactNativePaper.libTypescriptComponentsTextInputAdornmentEnumsMod.AdornmentSide
 import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
@@ -22,7 +22,7 @@ object libTypescriptComponentsTextInputAdornmentTextInputAffixMod extends Shortc
   
   @JSImport("react-native-paper/lib/typescript/components/TextInput/Adornment/TextInputAffix", JSImport.Default)
   @js.native
-  val default: ComponentType[PickPropstextonLayouttext] & (NonReactStatics[ComponentType[Props] & CallHasTextLabelStyleTheme, js.Object]) = js.native
+  val default: ComponentType[PickPropstextonLayouttext] & (NonReactStatics[ComponentType[Props] & `29`, js.Object]) = js.native
   
   @JSImport("react-native-paper/lib/typescript/components/TextInput/Adornment/TextInputAffix", "AffixAdornment")
   @js.native
@@ -60,7 +60,7 @@ object libTypescriptComponentsTextInputAdornmentTextInputAffixMod extends Shortc
     */
   object TextInputAffix {
     
-    inline def apply(hasTextLabelStyleTheme: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasTextLabelStyleTheme.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/TextInput/Adornment/TextInputAffix", "TextInputAffix")
     @js.native
@@ -173,8 +173,8 @@ object libTypescriptComponentsTextInputAdornmentTextInputAffixMod extends Shortc
     }
   }
   
-  type _To = ComponentType[PickPropstextonLayouttext] & (NonReactStatics[ComponentType[Props] & CallHasTextLabelStyleTheme, js.Object])
+  type _To = ComponentType[PickPropstextonLayouttext] & (NonReactStatics[ComponentType[Props] & `29`, js.Object])
   
   /* This means you don't have to write `default`, but can instead just say `libTypescriptComponentsTextInputAdornmentTextInputAffixMod.foo` */
-  override def _to: ComponentType[PickPropstextonLayouttext] & (NonReactStatics[ComponentType[Props] & CallHasTextLabelStyleTheme, js.Object]) = default
+  override def _to: ComponentType[PickPropstextonLayouttext] & (NonReactStatics[ComponentType[Props] & `29`, js.Object]) = default
 }

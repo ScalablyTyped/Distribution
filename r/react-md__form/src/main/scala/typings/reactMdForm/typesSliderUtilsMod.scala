@@ -21,9 +21,9 @@ object typesSliderUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getDragPercentage(hasMinMaxDraggingDragValueDraggingIndexThumb1ValueThumb2Value: DragPercentageOptions): DragPercentage = ^.asInstanceOf[js.Dynamic].applyDynamic("getDragPercentage")(hasMinMaxDraggingDragValueDraggingIndexThumb1ValueThumb2Value.asInstanceOf[js.Any]).asInstanceOf[DragPercentage]
+  inline def getDragPercentage(param0: DragPercentageOptions): DragPercentage = ^.asInstanceOf[js.Dynamic].applyDynamic("getDragPercentage")(param0.asInstanceOf[js.Any]).asInstanceOf[DragPercentage]
   
-  inline def getDragValue(hasMinMaxStepVerticalClientXClientYLeftTopHeightWidthIsRtlMinValueMaxValue: SliderDragValues): SliderDragValue = ^.asInstanceOf[js.Dynamic].applyDynamic("getDragValue")(hasMinMaxStepVerticalClientXClientYLeftTopHeightWidthIsRtlMinValueMaxValue.asInstanceOf[js.Any]).asInstanceOf[SliderDragValue]
+  inline def getDragValue(param0: SliderDragValues): SliderDragValue = ^.asInstanceOf[js.Dynamic].applyDynamic("getDragValue")(param0.asInstanceOf[js.Any]).asInstanceOf[SliderDragValue]
   
   inline def getJumpValue(min: Double, max: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getJumpValue")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def getJumpValue(min: Double, max: Double, step: Double, jump: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getJumpValue")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], step.asInstanceOf[js.Any], jump.asInstanceOf[js.Any])).asInstanceOf[Double]

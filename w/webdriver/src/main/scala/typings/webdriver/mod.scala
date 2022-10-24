@@ -251,7 +251,7 @@ object mod {
   inline def command(method: String, endpointUri: String, commandInfo: CommandEndpoint): js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]]]
   inline def command(method: String, endpointUri: String, commandInfo: CommandEndpoint, doubleEncodeVariables: Boolean): js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any], doubleEncodeVariables.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]]]
   
-  inline def getPrototype(hasIsW3CIsChromeIsFirefoxIsMobileIsSauceIsSeleniumStandalone: PartialSessionFlags): Record[String, js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototype")(hasIsW3CIsChromeIsFirefoxIsMobileIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.PropertyDescriptor]]
+  inline def getPrototype(param0: PartialSessionFlags): Record[String, js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototype")(param0.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.PropertyDescriptor]]
   
   trait WebDriver extends StObject
 }

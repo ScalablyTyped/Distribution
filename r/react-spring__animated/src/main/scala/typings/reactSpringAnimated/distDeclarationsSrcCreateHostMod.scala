@@ -16,15 +16,9 @@ object distDeclarationsSrcCreateHostMod {
   val ^ : js.Any = js.native
   
   inline def createHost(components: js.Array[AnimatableComponent]): Animated = ^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any]).asInstanceOf[Animated]
-  inline def createHost(
-    components: js.Array[AnimatableComponent],
-    hasApplyAnimatedValuesCreateAnimatedStyleGetComponentProps: PartialHostConfig
-  ): Animated = (^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any], hasApplyAnimatedValuesCreateAnimatedStyleGetComponentProps.asInstanceOf[js.Any])).asInstanceOf[Animated]
+  inline def createHost(components: js.Array[AnimatableComponent], param1: PartialHostConfig): Animated = (^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Animated]
   inline def createHost(components: StringDictionary[AnimatableComponent]): Animated = ^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any]).asInstanceOf[Animated]
-  inline def createHost(
-    components: StringDictionary[AnimatableComponent],
-    hasApplyAnimatedValuesCreateAnimatedStyleGetComponentProps: PartialHostConfig
-  ): Animated = (^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any], hasApplyAnimatedValuesCreateAnimatedStyleGetComponentProps.asInstanceOf[js.Any])).asInstanceOf[Animated]
+  inline def createHost(components: StringDictionary[AnimatableComponent], param1: PartialHostConfig): Animated = (^.asInstanceOf[js.Dynamic].applyDynamic("createHost")(components.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Animated]
   
   trait HostConfig extends StObject {
     

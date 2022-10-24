@@ -66,9 +66,9 @@ object pointerEventsPointerEventMod {
       timeStamp: Double
     ) = this()
     
-    def _addOrigin(hasOriginXOriginY: Point): this.type = js.native
+    def _addOrigin(param0: Point): this.type = js.native
     
-    def _subtractOrigin(hasOriginXOriginY: Point): this.type = js.native
+    def _subtractOrigin(param0: Point): this.type = js.native
     
     var clientX: Double = js.native
     

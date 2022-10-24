@@ -16,9 +16,7 @@ object distTypesCirclesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Circles[RawDatum](
-    hasNodesBorderWidthBorderColorComponentIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltip: CirclesProps[RawDatum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Circles")(hasNodesBorderWidthBorderColorComponentIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClickTooltip.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Circles[RawDatum](param0: CirclesProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Circles")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def interpolateRadius(
     radiusValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any

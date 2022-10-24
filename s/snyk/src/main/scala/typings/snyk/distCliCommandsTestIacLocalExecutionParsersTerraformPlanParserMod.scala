@@ -24,5 +24,5 @@ object distCliCommandsTestIacLocalExecutionParsersTerraformPlanParserMod {
   inline def isTerraformPlan(terraformPlanJson: TerraformPlanJson): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTerraformPlan")(terraformPlanJson.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def tryParsingTerraformPlan(terraformPlanFile: IacFileData, terraformPlanJson: TerraformPlanJson): js.Array[IacFileParsed] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryParsingTerraformPlan")(terraformPlanFile.asInstanceOf[js.Any], terraformPlanJson.asInstanceOf[js.Any])).asInstanceOf[js.Array[IacFileParsed]]
-  inline def tryParsingTerraformPlan(terraformPlanFile: IacFileData, terraformPlanJson: TerraformPlanJson, hasIsFullScan: IsFullScan): js.Array[IacFileParsed] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryParsingTerraformPlan")(terraformPlanFile.asInstanceOf[js.Any], terraformPlanJson.asInstanceOf[js.Any], hasIsFullScan.asInstanceOf[js.Any])).asInstanceOf[js.Array[IacFileParsed]]
+  inline def tryParsingTerraformPlan(terraformPlanFile: IacFileData, terraformPlanJson: TerraformPlanJson, param2: IsFullScan): js.Array[IacFileParsed] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryParsingTerraformPlan")(terraformPlanFile.asInstanceOf[js.Any], terraformPlanJson.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[IacFileParsed]]
 }

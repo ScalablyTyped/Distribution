@@ -19,7 +19,7 @@ object libHelpMod {
   @js.native
   open class CommandSchemaHelpFormatter protected ()
     extends typings.ionicCliFramework.mod.CommandSchemaHelpFormatter[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
-    def this(hasLocationCommandMetadataColors: typings.ionicCliFramework.libHelpMod.CommandHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
+    def this(param0: typings.ionicCliFramework.libHelpMod.CommandHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
   }
   
   @JSImport("ionic/lib/help", "CommandStringHelpFormatter")
@@ -33,14 +33,14 @@ object libHelpMod {
   @js.native
   open class NamespaceSchemaHelpFormatter protected ()
     extends typings.ionicCliFramework.mod.NamespaceSchemaHelpFormatter[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
-    def this(hasLocationNamespaceColors: typings.ionicCliFramework.libHelpMod.NamespaceHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
+    def this(param0: typings.ionicCliFramework.libHelpMod.NamespaceHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]) = this()
   }
   
   @JSImport("ionic/lib/help", "NamespaceStringHelpFormatter")
   @js.native
   open class NamespaceStringHelpFormatter protected ()
     extends typings.ionicCliFramework.mod.NamespaceStringHelpFormatter[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
-    def this(hasVersionInProjectRest: NamespaceHelpFormatterDeps) = this()
+    def this(param0: NamespaceHelpFormatterDeps) = this()
     
     def formatIonicHeader(): js.Promise[String] = js.native
     

@@ -43,7 +43,7 @@ object distButtonSrcMod {
   
   inline def InnerButtonGroup(props: InnerButtonGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerButtonGroup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerCrossButton(hasForwardedRefRest: InnerCrossButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCrossButton")(hasForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerCrossButton(param0: InnerCrossButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerCrossButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InnerIconButton(props: InnerIconButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerIconButton")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -59,5 +59,5 @@ object distButtonSrcMod {
   @js.native
   val ToggleIconButton: OrbitComponent[button, InnerToggleIconButtonProps] = js.native
   
-  inline def embedIconButton[Props /* <: Size & (Record[String, Any]) */](element: ReactElement, hasSizeProps: Props): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("embedIconButton")(element.asInstanceOf[js.Any], hasSizeProps.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def embedIconButton[Props /* <: Size & (Record[String, Any]) */](element: ReactElement, param1: Props): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("embedIconButton")(element.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
 }

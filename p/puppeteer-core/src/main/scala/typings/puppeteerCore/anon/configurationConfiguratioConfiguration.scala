@@ -1,0 +1,30 @@
+package typings.puppeteerCore.anon
+
+import typings.puppeteerCore.libEsmPuppeteerCommonConfigurationMod.Configuration
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Inlined {  configuration :puppeteer-core.puppeteer-core/lib/esm/puppeteer/common/Configuration.Configuration | undefined} & puppeteer-core.puppeteer-core/lib/esm/puppeteer/common/Puppeteer.CommonPuppeteerSettings */
+trait configurationConfiguratioConfiguration extends StObject {
+  
+  var configuration: js.UndefOr[Configuration] = js.undefined
+  
+  var isPuppeteerCore: Boolean
+}
+object configurationConfiguratioConfiguration {
+  
+  inline def apply(isPuppeteerCore: Boolean): configurationConfiguratioConfiguration = {
+    val __obj = js.Dynamic.literal(isPuppeteerCore = isPuppeteerCore.asInstanceOf[js.Any])
+    __obj.asInstanceOf[configurationConfiguratioConfiguration]
+  }
+  
+  extension [Self <: configurationConfiguratioConfiguration](x: Self) {
+    
+    inline def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    
+    inline def setIsPuppeteerCore(value: Boolean): Self = StObject.set(x, "isPuppeteerCore", value.asInstanceOf[js.Any])
+  }
+}

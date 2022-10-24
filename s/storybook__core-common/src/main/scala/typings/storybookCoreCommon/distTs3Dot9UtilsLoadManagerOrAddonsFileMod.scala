@@ -11,5 +11,5 @@ object distTs3Dot9UtilsLoadManagerOrAddonsFileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loadManagerOrAddonsFile(hasConfigDir: ConfigDir): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadManagerOrAddonsFile")(hasConfigDir.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def loadManagerOrAddonsFile(param0: ConfigDir): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadManagerOrAddonsFile")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

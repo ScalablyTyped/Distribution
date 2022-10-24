@@ -48,7 +48,7 @@ object global {
     open class Action ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
-      def this(hasNameTitleProperties: Name) = this()
+      def this(param0: Name) = this()
       
       /**
         * Wrapper for close method.
@@ -162,7 +162,7 @@ object global {
     open class BaseNode ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
-      def this(hasCategoryNameTitleDescriptionProperties: Category) = this()
+      def this(param0: Category) = this()
       
       /**
         * Wrapper for close method.
@@ -468,7 +468,7 @@ object global {
     open class Composite ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
-      def this(hasChildrenNameTitleProperties: Children) = this()
+      def this(param0: Children) = this()
       
       /**
         * Wrapper for close method.
@@ -568,7 +568,7 @@ object global {
     open class Condition ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
-      def this(hasNameTitleProperties: Name) = this()
+      def this(param0: Name) = this()
       
       /**
         * Wrapper for close method.
@@ -703,7 +703,7 @@ object global {
     open class Decorator ()
       extends StObject
          with typings.behavior3.b3.BaseNode {
-      def this(hasChildNameTitleProperties: Child) = this()
+      def this(param0: Child) = this()
       
       /**
         * Wrapper for close method.
@@ -1007,7 +1007,7 @@ object global {
     open class Inverter ()
       extends StObject
          with typings.behavior3.b3.Inverter {
-      def this(hasChild: `1`) = this()
+      def this(param0: `1`) = this()
       
       /**
         * Wrapper for close method.
@@ -1114,7 +1114,7 @@ object global {
     open class Limiter ()
       extends StObject
          with typings.behavior3.b3.Limiter {
-      def this(hasChildMaxLoop: MaxLoop) = this()
+      def this(param0: MaxLoop) = this()
       
       /**
         * Wrapper for close method.
@@ -1220,7 +1220,7 @@ object global {
     open class MaxTime ()
       extends StObject
          with typings.behavior3.b3.MaxTime {
-      def this(hasMaxTimeChild: typings.behavior3.anon.MaxTime) = this()
+      def this(param0: typings.behavior3.anon.MaxTime) = this()
       
       /**
         * Wrapper for close method.
@@ -1322,7 +1322,7 @@ object global {
     open class MemPriority ()
       extends StObject
          with typings.behavior3.b3.MemPriority {
-      def this(hasChildren: `0`) = this()
+      def this(param0: `0`) = this()
       
       /**
         * Wrapper for close method.
@@ -1424,7 +1424,7 @@ object global {
     open class MemSequence ()
       extends StObject
          with typings.behavior3.b3.MemSequence {
-      def this(hasChildren: `0`) = this()
+      def this(param0: `0`) = this()
       
       /**
         * Wrapper for close method.
@@ -1525,7 +1525,7 @@ object global {
     open class Priority ()
       extends StObject
          with typings.behavior3.b3.Priority {
-      def this(hasChildren: `0`) = this()
+      def this(param0: `0`) = this()
       
       /**
         * Wrapper for close method.
@@ -1634,7 +1634,7 @@ object global {
     open class RepeatUntilFailure ()
       extends StObject
          with typings.behavior3.b3.RepeatUntilFailure {
-      def this(hasMaxLoopChild: ChildMaxLoop) = this()
+      def this(param0: ChildMaxLoop) = this()
       
       /**
         * Wrapper for close method.
@@ -1739,7 +1739,7 @@ object global {
     open class RepeatUntilSuccess ()
       extends StObject
          with typings.behavior3.b3.RepeatUntilSuccess {
-      def this(hasMaxLoopChild: ChildMaxLoop) = this()
+      def this(param0: ChildMaxLoop) = this()
       
       /**
         * Wrapper for close method.
@@ -1844,7 +1844,7 @@ object global {
     open class Repeater ()
       extends StObject
          with typings.behavior3.b3.Repeater {
-      def this(hasMaxLoopChild: ChildMaxLoop) = this()
+      def this(param0: ChildMaxLoop) = this()
       
       /**
         * Wrapper for close method.
@@ -2047,7 +2047,7 @@ object global {
     open class Sequence ()
       extends StObject
          with typings.behavior3.b3.Sequence {
-      def this(hasChildren: `0`) = this()
+      def this(param0: `0`) = this()
       
       /**
         * Wrapper for close method.
@@ -2303,7 +2303,7 @@ object global {
     open class Wait ()
       extends StObject
          with typings.behavior3.b3.Wait {
-      def this(hasMilliseconds: Milliseconds) = this()
+      def this(param0: Milliseconds) = this()
       
       /**
         * Wrapper for close method.

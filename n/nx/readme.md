@@ -1,7 +1,7 @@
 
 # Scala.js typings for nx
 
-Typings are for version 14.7.8
+Typings are for version 15.0.1
 
 ## Library description:
 The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.

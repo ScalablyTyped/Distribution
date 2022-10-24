@@ -13,9 +13,7 @@ object toolsSrcTranslateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def translateFiles(
-    hasSourceRootPathSourceFilePathsTranslationFilePathsTranslationFileLocalesOutputPathFnDiagnosticsMissingTranslationDuplicateTranslationSourceLocale: TranslateFilesOptions
-  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("translateFiles")(hasSourceRootPathSourceFilePathsTranslationFilePathsTranslationFileLocalesOutputPathFnDiagnosticsMissingTranslationDuplicateTranslationSourceLocale.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def translateFiles(param0: TranslateFilesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("translateFiles")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait TranslateFilesOptions extends StObject {
     

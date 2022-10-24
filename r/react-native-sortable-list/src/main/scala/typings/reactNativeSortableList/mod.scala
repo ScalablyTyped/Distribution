@@ -88,17 +88,17 @@ object mod {
     /**
       * scrolls by a given y offset, either immediately or with a smooth animation
       */
-    def scrollBy(hasDxDyAnimated: Animated): Unit = js.native
+    def scrollBy(param0: Animated): Unit = js.native
     
     /**
       * scrolls to a given y offset, either immediately or with a smooth animation
       */
-    def scrollTo(hasXYAnimated: X): Unit = js.native
+    def scrollTo(param0: X): Unit = js.native
     
     /**
       * scrolls to a given row key, either immediately or with a smooth animation
       */
-    def scrollToRowKey(hasKeyAnimated: Key[K]): Unit = js.native
+    def scrollToRowKey(param0: Key[K]): Unit = js.native
   }
   
   trait SortableListProps[T, K] extends StObject {

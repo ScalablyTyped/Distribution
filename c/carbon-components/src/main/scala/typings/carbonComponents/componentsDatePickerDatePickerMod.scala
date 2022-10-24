@@ -52,7 +52,7 @@ object componentsDatePickerDatePickerMod {
     // returns a Flatpickr calendar instance
     def _rightArrowHTML(): String = js.native
     
-    def _updateClassNames(hasCalendarContainerSelectedDates: CalendarContainer): Unit = js.native
+    def _updateClassNames(param0: CalendarContainer): Unit = js.native
     
     def _updateInputFields(selectedDates: js.Array[js.Date]): Unit = js.native
     def _updateInputFields(selectedDates: js.Array[js.Date], `type`: String): Unit = js.native

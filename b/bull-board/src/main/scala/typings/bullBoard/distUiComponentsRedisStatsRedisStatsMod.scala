@@ -12,5 +12,5 @@ object distUiComponentsRedisStatsRedisStatsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RedisStats(hasStats: Stats): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RedisStats")(hasStats.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RedisStats(param0: Stats): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RedisStats")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

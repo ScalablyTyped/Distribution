@@ -236,6 +236,11 @@ object SemanticUI {
         }
       }
       
+      extension [Self <: SelectorSettings](x: Self) {
+        
+        inline def setClose(value: String & js.UndefOr[String]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      }
+      
       /* Inlined std.Pick<semantic-ui-nag.SemanticUI.Nag.SelectorSettings._Impl, 'close'> & std.Partial<std.Pick<semantic-ui-nag.SemanticUI.Nag.SelectorSettings._Impl, keyof semantic-ui-nag.SemanticUI.Nag.SelectorSettings._Impl>> */
       trait Param extends StObject {
         
@@ -252,11 +257,6 @@ object SemanticUI {
           
           inline def setClose(value: String & js.UndefOr[String]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         }
-      }
-      
-      extension [Self <: SelectorSettings](x: Self) {
-        
-        inline def setClose(value: String & js.UndefOr[String]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       }
     }
   }

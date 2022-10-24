@@ -15,7 +15,7 @@ object distComponentsThumbnailMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Thumbnail(hasImageSizeHandleCloseAlt: ThumbnailProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Thumbnail")(hasImageSizeHandleCloseAlt.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Thumbnail(param0: ThumbnailProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Thumbnail")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ThumbnailProps extends StObject {
     

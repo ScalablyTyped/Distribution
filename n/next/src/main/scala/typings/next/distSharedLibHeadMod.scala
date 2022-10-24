@@ -16,7 +16,7 @@ object distSharedLibHeadMod {
     * This component injects elements to `<head>` of your page.
     * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
     */
-  inline def default(hasChildren: ChildrenReactNode): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: ChildrenReactNode): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def defaultHead(): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultHead")().asInstanceOf[js.Array[Element]]
   inline def defaultHead(inAmpMode: Boolean): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultHead")(inAmpMode.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]

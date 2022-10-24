@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "browser-fingerprint"
-version := "0.1-dt-20211202Z-6a7fb2"
-scalaVersion := "3.1.2"
+version := "0.1-dt-20211202Z-593466"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -82,11 +82,11 @@ object mod {
     val exit: js.UndefOr[Double] = js.native
   }
   
-  inline def CSSTransition[E /* <: HTMLElement */](hasChildrenClassNameOptions: CSSTransitionProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CSSTransition")(hasChildrenClassNameOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def CSSTransition[E /* <: HTMLElement */](param0: CSSTransitionProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CSSTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def Collapse[E /* <: HTMLElement */](hasChildrenCollapsedClassNameOptions: CollapseProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Collapse")(hasChildrenCollapsedClassNameOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Collapse[E /* <: HTMLElement */](param0: CollapseProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Collapse")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def CrossFade[E /* <: HTMLElement */](hasAppearTransitionInChildrenClassNameOptions: CrossFadeProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CrossFade")(hasAppearTransitionInChildrenClassNameOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def CrossFade[E /* <: HTMLElement */](param0: CrossFadeProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CrossFade")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   @JSImport("@react-md/transition", "DEFAULT_COLLAPSE_MIN_HEIGHT")
   @js.native
@@ -212,24 +212,18 @@ object mod {
     val exitDone: js.UndefOr[String] = js.native
   }
   
-  inline def ScaleTransition[E /* <: HTMLElement */](hasPortalPortalIntoPortalIntoIdChildrenClassNameOptions: ScaleTransitionProps[E]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ScaleTransition")(hasPortalPortalIntoPortalIntoIdChildrenClassNameOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def ScaleTransition[E /* <: HTMLElement */](param0: ScaleTransitionProps[E]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ScaleTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def useCSSTransition[E /* <: HTMLElement */](hasClassNameClassNamesAppearEnterExitTimeoutOptions: CSSTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCSSTransition")(hasClassNameClassNamesAppearEnterExitTimeoutOptions.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
+  inline def useCSSTransition[E /* <: HTMLElement */](param0: CSSTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCSSTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
   
-  inline def useCollapseTransition[E /* <: HTMLElement */](
-    hasPropNodeRefPropStyleClassNameTransitionInTimeoutMinHeightMinPaddingTopMinPaddingBottomTemporaryAppearEnterExitOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited: CollapseTransitionHookOptions[E]
-  ): CollapseTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapseTransition")(hasPropNodeRefPropStyleClassNameTransitionInTimeoutMinHeightMinPaddingTopMinPaddingBottomTemporaryAppearEnterExitOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited.asInstanceOf[js.Any]).asInstanceOf[CollapseTransitionHookReturnValue[E]]
+  inline def useCollapseTransition[E /* <: HTMLElement */](param0: CollapseTransitionHookOptions[E]): CollapseTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapseTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[CollapseTransitionHookReturnValue[E]]
   
   inline def useCrossFadeTransition[E /* <: HTMLElement */](): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFadeTransition")().asInstanceOf[CSSTransitionHookReturnValue[E]]
-  inline def useCrossFadeTransition[E /* <: HTMLElement */](hasTransitionInTimeoutClassNamesOptions: CrossFadeTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFadeTransition")(hasTransitionInTimeoutClassNamesOptions.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
+  inline def useCrossFadeTransition[E /* <: HTMLElement */](param0: CrossFadeTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFadeTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
   
-  inline def useFixedPositioning[FixedToElement /* <: HTMLElement */, FixedElement /* <: HTMLElement */](
-    hasPropStyleNodeRefFixedToOnEnterOnEnteringOnEnteredOnExitedAnchorDisableSwappingDisableVHBoundsInitialXInitialYPreventOverlapTransformOriginVhMarginVwMarginWidthXMarginYMarginGetFixedPositionOptionsOnScrollOnResize: FixedPositioningOptions[FixedToElement, FixedElement]
-  ): FixedPositioningHookReturnValue[FixedElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFixedPositioning")(hasPropStyleNodeRefFixedToOnEnterOnEnteringOnEnteredOnExitedAnchorDisableSwappingDisableVHBoundsInitialXInitialYPreventOverlapTransformOriginVhMarginVwMarginWidthXMarginYMarginGetFixedPositionOptionsOnScrollOnResize.asInstanceOf[js.Any]).asInstanceOf[FixedPositioningHookReturnValue[FixedElement]]
+  inline def useFixedPositioning[FixedToElement /* <: HTMLElement */, FixedElement /* <: HTMLElement */](param0: FixedPositioningOptions[FixedToElement, FixedElement]): FixedPositioningHookReturnValue[FixedElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFixedPositioning")(param0.asInstanceOf[js.Any]).asInstanceOf[FixedPositioningHookReturnValue[FixedElement]]
   
-  inline def useScaleTransition[E /* <: HTMLElement */](hasTimeoutVerticalTemporaryClassNamesOptions: ScaleTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useScaleTransition")(hasTimeoutVerticalTemporaryClassNamesOptions.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
+  inline def useScaleTransition[E /* <: HTMLElement */](param0: ScaleTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useScaleTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
   
-  inline def useTransition[E /* <: HTMLElement */](
-    hasNodeRefTimeoutTransitionInReflowTemporaryAppearEnterExitOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited: TransitionHookOptions[E]
-  ): TransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(hasNodeRefTimeoutTransitionInReflowTemporaryAppearEnterExitOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited.asInstanceOf[js.Any]).asInstanceOf[TransitionHookReturnValue[E]]
+  inline def useTransition[E /* <: HTMLElement */](param0: TransitionHookOptions[E]): TransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[TransitionHookReturnValue[E]]
 }

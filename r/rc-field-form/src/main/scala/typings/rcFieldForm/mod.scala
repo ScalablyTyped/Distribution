@@ -31,7 +31,7 @@ object mod {
   @js.native
   val default: RefFormType = js.native
   
-  inline def Field[Values](hasNameRestProps: FieldProps[Values]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(hasNameRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Field[Values](param0: FieldProps[Values]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-field-form", "FieldContext")
   @js.native

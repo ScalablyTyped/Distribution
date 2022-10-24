@@ -14,7 +14,7 @@ object distBuildWebpackPluginsNextTraceEntrypointsPluginMod {
   - Dropped any */ @JSImport("next/dist/build/webpack/plugins/next-trace-entrypoints-plugin", "TraceEntryPointsPlugin")
   @js.native
   open class TraceEntryPointsPlugin protected () extends StObject {
-    def this(hasAppDirExcludeFilesEsmExternalsStaticImageImportsOutputFileTracingRoot: EsmExternals) = this()
+    def this(param0: EsmExternals) = this()
     
     /* private */ var appDir: Any = js.native
     

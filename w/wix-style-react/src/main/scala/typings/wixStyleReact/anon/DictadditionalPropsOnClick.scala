@@ -1,6 +1,7 @@
 package typings.wixStyleReact.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.ComponentType
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
@@ -11,17 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DictadditionalPropsOnClick
   extends StObject
-     with /* additionalProps */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  var tagName: /* keyof wix-style-react.anon.OmitPolyfillHTMLElementTaAbbr */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
+  var tagName: ComponentType[Any]
 }
 object DictadditionalPropsOnClick {
   
-  inline def apply(
-    tagName: /* keyof wix-style-react.anon.OmitPolyfillHTMLElementTaAbbr */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
-  ): DictadditionalPropsOnClick = {
+  inline def apply(tagName: ComponentType[Any]): DictadditionalPropsOnClick = {
     val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictadditionalPropsOnClick]
   }
@@ -32,8 +31,6 @@ object DictadditionalPropsOnClick {
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setTagName(
-      value: /* keyof wix-style-react.anon.OmitPolyfillHTMLElementTaAbbr */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
-    ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: ComponentType[Any]): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }
 }

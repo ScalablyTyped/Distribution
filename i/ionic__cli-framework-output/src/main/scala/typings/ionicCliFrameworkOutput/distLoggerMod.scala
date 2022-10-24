@@ -50,7 +50,7 @@ object distLoggerMod {
   @JSImport("@ionic/cli-framework-output/dist/logger", "Logger")
   @js.native
   open class Logger () extends StObject {
-    def this(hasLevelHandlers: LoggerOptions) = this()
+    def this(param0: LoggerOptions) = this()
     
     def clone(opts: PartialLoggerOptions): Logger = js.native
     
@@ -134,7 +134,7 @@ object distLoggerMod {
   open class StreamHandler protected ()
     extends StObject
        with LoggerHandler {
-    def this(hasStreamFilterFormatter: StreamHandlerOptions) = this()
+    def this(param0: StreamHandlerOptions) = this()
     
     def clone(opts: PartialStreamHandlerOptio): StreamHandler = js.native
     
@@ -150,7 +150,7 @@ object distLoggerMod {
   inline def createPrefixedFormatter(prefix: js.Function0[String]): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
   inline def createTaggedFormatter(): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")().asInstanceOf[LoggerFormatter]
-  inline def createTaggedFormatter(hasColorsPrefixTagsTitleizeWrap: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")(hasColorsPrefixTagsTitleizeWrap.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
+  inline def createTaggedFormatter(param0: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")(param0.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
   inline def getLoggerLevelColor(colors: Colors): js.UndefOr[ColorFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ColorFunction]]
   inline def getLoggerLevelColor(colors: Colors, level: LoggerLevelWeight): js.UndefOr[ColorFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ColorFunction]]

@@ -233,11 +233,6 @@ object SemanticUI {
         __obj.asInstanceOf[ErrorSettings]
       }
       
-      extension [Self <: ErrorSettings](x: Self) {
-        
-        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
-      }
-      
       trait Impl extends StObject {
         
         /**
@@ -256,6 +251,11 @@ object SemanticUI {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
+      }
+      
+      extension [Self <: ErrorSettings](x: Self) {
+        
+        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
       /* Inlined std.Pick<semantic-ui-checkbox.SemanticUI.Checkbox.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-checkbox.SemanticUI.Checkbox.ErrorSettings._Impl, keyof semantic-ui-checkbox.SemanticUI.Checkbox.ErrorSettings._Impl>> */

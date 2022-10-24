@@ -13,7 +13,7 @@ object libAnnounceSlideMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasMessageAriaLive: AriaLive): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasMessageAriaLive.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default(param0: AriaLive): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def defaultRenderAnnounceSlideMessage(hasCurrentSlideCount: Count): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderAnnounceSlideMessage")(hasCurrentSlideCount.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def defaultRenderAnnounceSlideMessage(param0: Count): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderAnnounceSlideMessage")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -38,7 +38,7 @@ object distDeclarationsSrcUtilsMathsMod {
   
   inline def clamp(v: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(v.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def computeRubberband(bounds: js.Tuple2[Vector2, Vector2], hasVxVy: Vector2, hasRxRy: Vector2): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("computeRubberband")(bounds.asInstanceOf[js.Any], hasVxVy.asInstanceOf[js.Any], hasRxRy.asInstanceOf[js.Any])).asInstanceOf[Vector2]
+  inline def computeRubberband(bounds: js.Tuple2[Vector2, Vector2], param1: Vector2, param2: Vector2): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("computeRubberband")(bounds.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Vector2]
   
   inline def rubberbandIfOutOfBounds(position: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rubberbandIfOutOfBounds")(position.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def rubberbandIfOutOfBounds(position: Double, min: Double, max: Double, constant: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rubberbandIfOutOfBounds")(position.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], constant.asInstanceOf[js.Any])).asInstanceOf[Double]

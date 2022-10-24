@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "carbon__elements"
-version := "11.10-dt-20220923Z-1d8422"
-scalaVersion := "3.1.2"
+version := "11.10-dt-20220923Z-bbf2a4"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

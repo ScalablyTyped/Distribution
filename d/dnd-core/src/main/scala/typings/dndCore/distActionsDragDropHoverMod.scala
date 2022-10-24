@@ -16,11 +16,11 @@ object distActionsDragDropHoverMod {
   
   inline def createHover(manager: DragDropManager): js.Function2[
     /* targetIdsArg */ js.Array[String], 
-    /* hasClientOffset */ js.UndefOr[HoverOptions], 
+    /* param1 */ js.UndefOr[HoverOptions], 
     Action[HoverPayload]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHover")(manager.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* targetIdsArg */ js.Array[String], 
-    /* hasClientOffset */ js.UndefOr[HoverOptions], 
+    /* param1 */ js.UndefOr[HoverOptions], 
     Action[HoverPayload]
   ]]
 }

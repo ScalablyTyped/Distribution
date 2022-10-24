@@ -368,7 +368,7 @@ object buildSrcTimeunitMod {
   inline def containsTimeUnit(fullTimeUnit: TimeUnit, timeUnit: TimeUnit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsTimeUnit")(fullTimeUnit.asInstanceOf[js.Any], timeUnit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def fieldExpr(fullTimeUnit: TimeUnit, field: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def fieldExpr(fullTimeUnit: TimeUnit, field: String, hasEnd: End): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], hasEnd.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fieldExpr(fullTimeUnit: TimeUnit, field: String, param2: End): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def formatExpression(timeUnit: TimeUnit, field: String, isUTCScale: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExpression")(timeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], isUTCScale.asInstanceOf[js.Any])).asInstanceOf[String]
   

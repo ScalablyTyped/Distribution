@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__filter-alpha
 
-Typings are for version 6.5.7
+Typings are for version 6.5.8
 
 ## Library description:
 Filter that applies alpha evenly across the entire display object and any opaque elements it contains

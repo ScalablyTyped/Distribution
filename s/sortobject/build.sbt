@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "sortobject"
-version := "1.2-dt-20211202Z-4eb5a7"
-scalaVersion := "3.1.2"
+version := "1.2-dt-20211202Z-af2287"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

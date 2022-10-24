@@ -71,7 +71,7 @@ object typesUseCrossFadeTransitionMod {
   }
   
   inline def useCrossFadeTransition[E /* <: HTMLElement */](): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFadeTransition")().asInstanceOf[CSSTransitionHookReturnValue[E]]
-  inline def useCrossFadeTransition[E /* <: HTMLElement */](hasTransitionInTimeoutClassNamesOptions: CrossFadeTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFadeTransition")(hasTransitionInTimeoutClassNamesOptions.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
+  inline def useCrossFadeTransition[E /* <: HTMLElement */](param0: CrossFadeTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFadeTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
   
   trait CrossFadeTransitionHookOptions[E /* <: HTMLElement */]
     extends StObject

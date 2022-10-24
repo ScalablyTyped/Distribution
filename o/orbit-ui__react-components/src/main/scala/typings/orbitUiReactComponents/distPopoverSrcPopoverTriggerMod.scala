@@ -35,9 +35,7 @@ object distPopoverSrcPopoverTriggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def InnerPopoverTrigger(
-    hasIdOpenDefaultOpenPositionPropOnOpenChangeDismissableAllowFlipAllowPreventOverflowContainerElementZIndexAsChildrenForwardedRefRest: InnerPopoverTriggerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerPopoverTrigger")(hasIdOpenDefaultOpenPositionPropOnOpenChangeDismissableAllowFlipAllowPreventOverflowContainerElementZIndexAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerPopoverTrigger(param0: InnerPopoverTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerPopoverTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@orbit-ui/react-components/dist/popover/src/PopoverTrigger", "PopoverTrigger")
   @js.native

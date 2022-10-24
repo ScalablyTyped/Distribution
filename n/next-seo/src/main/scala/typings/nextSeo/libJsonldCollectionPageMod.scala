@@ -12,7 +12,7 @@ object libJsonldCollectionPageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideHasPartRest: CollectionPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideHasPartRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: CollectionPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CollectionPageJsonLdProps
     extends StObject

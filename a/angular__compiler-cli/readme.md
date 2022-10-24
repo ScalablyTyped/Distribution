@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__compiler-cli
 
-Typings are for version 14.2.2
+Typings are for version 14.2.7
 
 ## Library description:
 Angular - the compiler CLI for Node.js

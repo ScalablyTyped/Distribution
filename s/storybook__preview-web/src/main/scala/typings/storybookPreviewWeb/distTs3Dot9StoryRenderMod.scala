@@ -79,7 +79,7 @@ object distTs3Dot9StoryRenderMod {
     def remount(): js.Promise[Unit] = js.native
     
     def render(): js.Promise[Unit] = js.native
-    def render(hasInitialForceRemount: ForceRemount): js.Promise[Unit] = js.native
+    def render(param0: ForceRemount): js.Promise[Unit] = js.native
     
     /* private */ var renderToScreen: Any = js.native
     

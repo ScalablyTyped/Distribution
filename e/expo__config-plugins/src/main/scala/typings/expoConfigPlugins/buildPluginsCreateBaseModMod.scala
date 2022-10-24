@@ -19,15 +19,13 @@ object buildPluginsCreateBaseModMod {
   
   inline def assertModResults(results: Any, platformName: String, modName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assertModResults")(results.asInstanceOf[js.Any], platformName.asInstanceOf[js.Any], modName.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def createBaseMod[ModType, Props /* <: ForwardedBaseModOptions */](
-    hasMethodNamePlatformModNameGetFilePathReadWriteIsIntrospective: CreateBaseModProps[ModType, Props]
-  ): ConfigPlugin[Props | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBaseMod")(hasMethodNamePlatformModNameGetFilePathReadWriteIsIntrospective.asInstanceOf[js.Any]).asInstanceOf[ConfigPlugin[Props | Unit]]
+  inline def createBaseMod[ModType, Props /* <: ForwardedBaseModOptions */](param0: CreateBaseModProps[ModType, Props]): ConfigPlugin[Props | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBaseMod")(param0.asInstanceOf[js.Any]).asInstanceOf[ConfigPlugin[Props | Unit]]
   
-  inline def createPlatformBaseMod_methodName[ModType, Props /* <: ForwardedBaseModOptions */](hasModNameProps: Omit[CreateBaseModProps[ModType, Props], methodName]): ConfigPlugin[Unit | Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformBaseMod")(hasModNameProps.asInstanceOf[js.Any]).asInstanceOf[ConfigPlugin[Unit | Props]]
+  inline def createPlatformBaseMod_methodName[ModType, Props /* <: ForwardedBaseModOptions */](param0: Omit[CreateBaseModProps[ModType, Props], methodName]): ConfigPlugin[Unit | Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformBaseMod")(param0.asInstanceOf[js.Any]).asInstanceOf[ConfigPlugin[Unit | Props]]
   
   inline def provider[ModType, Props /* <: ForwardedBaseModOptions */](props: BaseModProviderMethods[ModType, Props]): BaseModProviderMethods[ModType, Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("provider")(props.asInstanceOf[js.Any]).asInstanceOf[BaseModProviderMethods[ModType, Props]]
   
-  inline def withGeneratedBaseMods[ModName /* <: String */](config: ExportedConfig, hasPlatformProvidersProps: ForwardedBaseModOptions & Platform[ModName]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withGeneratedBaseMods")(config.asInstanceOf[js.Any], hasPlatformProvidersProps.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
+  inline def withGeneratedBaseMods[ModName /* <: String */](config: ExportedConfig, param1: ForwardedBaseModOptions & Platform[ModName]): ExportedConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("withGeneratedBaseMods")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[ExportedConfig]
   
   trait BaseModProviderMethods[ModType, Props /* <: ForwardedBaseModOptions */] extends StObject {
     

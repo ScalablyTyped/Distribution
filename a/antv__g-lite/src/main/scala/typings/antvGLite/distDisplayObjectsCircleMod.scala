@@ -14,7 +14,7 @@ object distDisplayObjectsCircleMod {
   @JSImport("@antv/g-lite/dist/display-objects/Circle", "Circle")
   @js.native
   open class Circle () extends DisplayObject[CircleStyleProps, ParsedCircleStyleProps] {
-    def this(hasStyleRest: DisplayObjectConfig[CircleStyleProps]) = this()
+    def this(param0: DisplayObjectConfig[CircleStyleProps]) = this()
   }
   
   trait CircleStyleProps

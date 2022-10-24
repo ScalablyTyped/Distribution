@@ -17,7 +17,7 @@ object distDeclarationsSrcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ColorModeProvider(hasChildren: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ColorModeProvider")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ColorModeProvider(param0: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ColorModeProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def InitializeColorMode(): DetailedReactHTMLElement[DangerouslySetInnerHTML, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("InitializeColorMode")().asInstanceOf[DetailedReactHTMLElement[DangerouslySetInnerHTML, HTMLElement]]
   

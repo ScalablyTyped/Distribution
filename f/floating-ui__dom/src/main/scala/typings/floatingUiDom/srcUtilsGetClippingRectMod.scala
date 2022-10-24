@@ -12,5 +12,5 @@ object srcUtilsGetClippingRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getClippingRect(hasElementBoundaryRootBoundaryStrategy: RootBoundary): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("getClippingRect")(hasElementBoundaryRootBoundaryStrategy.asInstanceOf[js.Any]).asInstanceOf[Rect]
+  inline def getClippingRect(param0: RootBoundary): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("getClippingRect")(param0.asInstanceOf[js.Any]).asInstanceOf[Rect]
 }

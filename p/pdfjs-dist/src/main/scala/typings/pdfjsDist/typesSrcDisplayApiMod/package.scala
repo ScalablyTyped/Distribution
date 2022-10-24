@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def DefaultCMapReaderFactory_=(x: Instantiable0[DOMCMapReaderFactory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultCMapReaderFactory")(x.asInstanceOf[js.Any])
 
-inline def DefaultCanvasFactory_=(x: Instantiable1[/* hasOwnerDocument */ js.UndefOr[OwnerDocument], DOMCanvasFactory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultCanvasFactory")(x.asInstanceOf[js.Any])
+inline def DefaultCanvasFactory_=(x: Instantiable1[/* param0 */ js.UndefOr[OwnerDocument], DOMCanvasFactory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultCanvasFactory")(x.asInstanceOf[js.Any])
 
 inline def DefaultStandardFontDataFactory_=(x: Instantiable0[DOMStandardFontDataFactory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultStandardFontDataFactory")(x.asInstanceOf[js.Any])
 

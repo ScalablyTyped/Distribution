@@ -6,39 +6,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ImageUrl extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var dataHook: Any
   
-  var id: String | Double
+  var imageUrl: Any
   
-  var imageUrl: js.UndefOr[String] = js.undefined
+  var key: Any
   
-  var subtitle: js.UndefOr[String] = js.undefined
+  var onError: Any
   
-  var title: String
+  var onLoad: Any
+  
+  var shouldDisplay: Any
 }
 object ImageUrl {
   
-  inline def apply(id: String | Double, title: String): ImageUrl = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  inline def apply(dataHook: Any, imageUrl: Any, key: Any, onError: Any, onLoad: Any, shouldDisplay: Any): ImageUrl = {
+    val __obj = js.Dynamic.literal(dataHook = dataHook.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onError = onError.asInstanceOf[js.Any], onLoad = onLoad.asInstanceOf[js.Any], shouldDisplay = shouldDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageUrl]
   }
   
   extension [Self <: ImageUrl](x: Self) {
     
-    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: Any): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setImageUrl(value: Any): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setOnError(value: Any): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
-    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setOnLoad(value: Any): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
-    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
-    
-    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
-    
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setShouldDisplay(value: Any): Self = StObject.set(x, "shouldDisplay", value.asInstanceOf[js.Any])
   }
 }

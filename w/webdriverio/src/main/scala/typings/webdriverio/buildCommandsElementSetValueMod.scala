@@ -13,7 +13,7 @@ object buildCommandsElementSetValueMod {
   val ^ : js.Any = js.native
   
   inline def default(value: js.Array[Value]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def default(value: js.Array[Value], hasTranslateToUnicode: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], hasTranslateToUnicode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(value: js.Array[Value], param2: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def default(value: Value): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def default(value: Value, hasTranslateToUnicode: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], hasTranslateToUnicode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(value: Value, param2: CommandOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

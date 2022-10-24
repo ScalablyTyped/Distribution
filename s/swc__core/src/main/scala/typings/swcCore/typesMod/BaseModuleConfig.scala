@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaseModuleConfig extends StObject {
   
+  var allowTopLevelThis: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, dynamic imports will be preserved.
     */
@@ -153,6 +155,8 @@ trait BaseModuleConfig extends StObject {
     */
   var noInterop: js.UndefOr[Boolean] = js.undefined
   
+  var preserveImportMeta: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * By default, when using exports with babel a non-enumerable `__esModule`
     * property is exported. In some cases this property is used to determine
@@ -181,6 +185,10 @@ object BaseModuleConfig {
   
   extension [Self <: BaseModuleConfig](x: Self) {
     
+    inline def setAllowTopLevelThis(value: Boolean): Self = StObject.set(x, "allowTopLevelThis", value.asInstanceOf[js.Any])
+    
+    inline def setAllowTopLevelThisUndefined: Self = StObject.set(x, "allowTopLevelThis", js.undefined)
+    
     inline def setIgnoreDynamic(value: Boolean): Self = StObject.set(x, "ignoreDynamic", value.asInstanceOf[js.Any])
     
     inline def setIgnoreDynamicUndefined: Self = StObject.set(x, "ignoreDynamic", js.undefined)
@@ -198,6 +206,10 @@ object BaseModuleConfig {
     inline def setNoInterop(value: Boolean): Self = StObject.set(x, "noInterop", value.asInstanceOf[js.Any])
     
     inline def setNoInteropUndefined: Self = StObject.set(x, "noInterop", js.undefined)
+    
+    inline def setPreserveImportMeta(value: Boolean): Self = StObject.set(x, "preserveImportMeta", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveImportMetaUndefined: Self = StObject.set(x, "preserveImportMeta", js.undefined)
     
     inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     

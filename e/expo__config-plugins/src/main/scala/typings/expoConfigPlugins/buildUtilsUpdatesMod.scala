@@ -34,10 +34,10 @@ object buildUtilsUpdatesMod {
   inline def getRuntimeVersion(config: PickExpoConfigversionrunt, platform: android | ios): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getRuntimeVersion")(config.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   inline def getRuntimeVersionNullable(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasConfigPlatform because its type Parameters<typeof getRuntimeVersion> is not an array type */ hasConfigPlatform: Parameters[
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type Parameters<typeof getRuntimeVersion> is not an array type */ param0: Parameters[
       js.Function2[/* config */ PickExpoConfigversionrunt, /* platform */ android | ios, String | Null]
     ]
-  ): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRuntimeVersionNullable")(hasConfigPlatform.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  ): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRuntimeVersionNullable")(param0.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   inline def getSDKVersion(config: PickExpoConfigUpdatessdkVSdkVersion): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSDKVersion")(config.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   

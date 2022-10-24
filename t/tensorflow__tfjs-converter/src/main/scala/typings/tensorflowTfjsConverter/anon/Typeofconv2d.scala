@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofconv2d extends StObject {
   
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Activation[T]
-  ): T = js.native
+  def apply[T /* <: Tensor3D | Tensor4D */](param0: Activation[T]): T = js.native
 }

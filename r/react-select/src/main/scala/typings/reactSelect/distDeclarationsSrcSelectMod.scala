@@ -272,7 +272,7 @@ object distDeclarationsSrcSelectMod {
     def placeholder: String = js.native
     inline def placeholder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placeholder")(x.asInstanceOf[js.Any])
     
-    inline def screenReaderStatus(hasCount: Count): String = ^.asInstanceOf[js.Dynamic].applyDynamic("screenReaderStatus")(hasCount.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def screenReaderStatus(param0: Count): String = ^.asInstanceOf[js.Dynamic].applyDynamic("screenReaderStatus")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("react-select/dist/declarations/src/Select", "defaultProps.tabIndex")
     @js.native
@@ -1143,9 +1143,9 @@ object distDeclarationsSrcSelectMod {
     
     def onTouchEnd(event: TouchEvent): Unit = js.native
     
-    def onTouchMove(hasTouches: TouchEvent): Unit = js.native
+    def onTouchMove(param0: TouchEvent): Unit = js.native
     
-    def onTouchStart(hasTouches: TouchEvent): Unit = js.native
+    def onTouchStart(param0: TouchEvent): Unit = js.native
     
     var openAfterFocus: Boolean = js.native
     

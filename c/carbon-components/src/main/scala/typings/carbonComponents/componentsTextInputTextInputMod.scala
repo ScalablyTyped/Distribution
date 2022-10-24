@@ -20,12 +20,10 @@ object componentsTextInputTextInputMod {
     def this(element: HTMLElement, options: PartialTextInputOptions) = this()
     
     /* CompleteClass */
-    override def _setIconVisibility(
-      hasIconVisibilityOnIconVisibilityOffPasswordIsVisibleSelectorPasswordVisibilityTooltip: IconVisibilityOff
-    ): Unit = js.native
+    override def _setIconVisibility(param0: IconVisibilityOff): Unit = js.native
     
     /* CompleteClass */
-    override def _toggle(hasElementButton: Button): Unit = js.native
+    override def _toggle(param0: Button): Unit = js.native
   }
   /* static members */
   object default {
@@ -43,11 +41,9 @@ object componentsTextInputTextInputMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ trait TextInput extends StObject {
     
-    def _setIconVisibility(
-      hasIconVisibilityOnIconVisibilityOffPasswordIsVisibleSelectorPasswordVisibilityTooltip: IconVisibilityOff
-    ): Unit
+    def _setIconVisibility(param0: IconVisibilityOff): Unit
     
-    def _toggle(hasElementButton: Button): Unit
+    def _toggle(param0: Button): Unit
   }
   object TextInput {
     

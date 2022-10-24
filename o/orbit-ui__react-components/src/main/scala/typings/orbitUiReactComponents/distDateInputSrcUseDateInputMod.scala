@@ -21,7 +21,7 @@ object distDateInputSrcUseDateInputMod {
   @js.native
   val DateInputMask: js.Array[String | js.RegExp] = js.native
   
-  inline def useDateInput(hasValuePropDefaultValueMinMaxOnChangeOnDateChangeForwardedRef: UseDateInputProps): OnBlur = ^.asInstanceOf[js.Dynamic].applyDynamic("useDateInput")(hasValuePropDefaultValueMinMaxOnChangeOnDateChangeForwardedRef.asInstanceOf[js.Any]).asInstanceOf[OnBlur]
+  inline def useDateInput(param0: UseDateInputProps): OnBlur = ^.asInstanceOf[js.Dynamic].applyDynamic("useDateInput")(param0.asInstanceOf[js.Any]).asInstanceOf[OnBlur]
   
   trait UseDateInputProps extends StObject {
     

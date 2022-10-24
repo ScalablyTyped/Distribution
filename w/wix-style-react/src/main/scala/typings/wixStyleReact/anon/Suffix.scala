@@ -1,54 +1,47 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.ReactNode
-import typings.wixStyleReact.listItemSectionMod.ListItemSectionTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Suffix extends StObject {
   
-  var className: js.UndefOr[String] = js.undefined
+  var className: Any
   
-  var ellipsis: js.UndefOr[Boolean] = js.undefined
+  var dataHook: Any
   
-  var id: String | Double
+  var ellipsis: Any
   
-  var suffix: js.UndefOr[ReactNode] = js.undefined
+  var id: Any
   
-  var title: js.UndefOr[String] = js.undefined
+  var suffix: Any
   
-  var `type`: js.UndefOr[ListItemSectionTypes] = js.undefined
+  var title: Any
+  
+  var `type`: Any
 }
 object Suffix {
   
-  inline def apply(id: String | Double): Suffix = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+  inline def apply(className: Any, dataHook: Any, ellipsis: Any, id: Any, suffix: Any, title: Any, `type`: Any): Suffix = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], dataHook = dataHook.asInstanceOf[js.Any], ellipsis = ellipsis.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Suffix]
   }
   
   extension [Self <: Suffix](x: Self) {
     
-    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setDataHook(value: Any): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    inline def setEllipsis(value: Any): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
-    inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: Any): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    inline def setSuffix(value: ReactNode): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
-    
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    
-    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-    
-    inline def setType(value: ListItemSectionTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

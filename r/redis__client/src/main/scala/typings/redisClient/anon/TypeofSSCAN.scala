@@ -19,5 +19,5 @@ trait TypeofSSCAN extends StObject {
   def transformArguments(key: RedisCommandArgument, cursor: Double): RedisCommandArguments = js.native
   def transformArguments(key: RedisCommandArgument, cursor: Double, options: ScanOptions): RedisCommandArguments = js.native
   
-  def transformReply(hasCursorMembers: SScanRawReply): SScanReply = js.native
+  def transformReply(param0: SScanRawReply): SScanReply = js.native
 }

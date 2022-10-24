@@ -122,7 +122,7 @@ object libOptionsMod {
       */
     var Tokenizer: js.UndefOr[
         Instantiable2[
-          /* hasXmlModeDecodeEntities */ DecodeEntities, 
+          /* param0 */ DecodeEntities, 
           /* cbs */ Callbacks, 
           typings.htmlparser2.libTokenizerMod.default
         ]
@@ -196,7 +196,7 @@ object libOptionsMod {
       
       inline def setTokenizer(
         value: Instantiable2[
-              /* hasXmlModeDecodeEntities */ DecodeEntities, 
+              /* param0 */ DecodeEntities, 
               /* cbs */ Callbacks, 
               typings.htmlparser2.libTokenizerMod.default
             ]
@@ -211,7 +211,7 @@ object libOptionsMod {
     
     var Tokenizer: js.UndefOr[
         Instantiable2[
-          /* hasXmlModeDecodeEntities */ DecodeEntities, 
+          /* param0 */ DecodeEntities, 
           /* cbs */ Callbacks, 
           typings.htmlparser2.libTokenizerMod.default
         ]
@@ -311,7 +311,7 @@ object libOptionsMod {
       
       inline def setTokenizer(
         value: Instantiable2[
-              /* hasXmlModeDecodeEntities */ DecodeEntities, 
+              /* param0 */ DecodeEntities, 
               /* cbs */ Callbacks, 
               typings.htmlparser2.libTokenizerMod.default
             ]

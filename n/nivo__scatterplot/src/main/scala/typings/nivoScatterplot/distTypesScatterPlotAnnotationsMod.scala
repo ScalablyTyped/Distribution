@@ -14,7 +14,7 @@ object distTypesScatterPlotAnnotationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ScatterPlotAnnotations[RawDatum /* <: ScatterPlotDatum */](hasNodesAnnotations: ScatterPlotAnnotationsProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ScatterPlotAnnotations")(hasNodesAnnotations.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ScatterPlotAnnotations[RawDatum /* <: ScatterPlotDatum */](param0: ScatterPlotAnnotationsProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ScatterPlotAnnotations")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ScatterPlotAnnotationsProps[RawDatum /* <: ScatterPlotDatum */] extends StObject {
     

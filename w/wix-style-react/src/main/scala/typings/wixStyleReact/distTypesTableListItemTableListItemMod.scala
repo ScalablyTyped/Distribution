@@ -1,0 +1,36 @@
+package typings.wixStyleReact
+
+import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distTypesTableListItemTableListItemMod extends Shortcut {
+  
+  /** TableListItem */
+  @JSImport("wix-style-react/dist/types/TableListItem/TableListItem", JSImport.Default)
+  @js.native
+  val default: ForwardRefExoticComponent[RefAttributes[Any]] = js.native
+  
+  object VERTICAL_PADDING {
+    
+    @JSImport("wix-style-react/dist/types/TableListItem/TableListItem", "VERTICAL_PADDING.medium")
+    @js.native
+    val medium: String = js.native
+    
+    @JSImport("wix-style-react/dist/types/TableListItem/TableListItem", "VERTICAL_PADDING.small")
+    @js.native
+    val small: String = js.native
+    
+    @JSImport("wix-style-react/dist/types/TableListItem/TableListItem", "VERTICAL_PADDING.tiny")
+    @js.native
+    val tiny: String = js.native
+  }
+  
+  type _To = ForwardRefExoticComponent[RefAttributes[Any]]
+  
+  /* This means you don't have to write `default`, but can instead just say `distTypesTableListItemTableListItemMod.foo` */
+  override def _to: ForwardRefExoticComponent[RefAttributes[Any]] = default
+}

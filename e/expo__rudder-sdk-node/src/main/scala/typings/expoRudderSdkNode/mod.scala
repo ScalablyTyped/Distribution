@@ -25,11 +25,7 @@ object mod {
       * optional dictionary of options.
       */
     def this(writeKey: String, dataPlaneURL: String) = this()
-    def this(
-      writeKey: String,
-      dataPlaneURL: String,
-      hasEnableTimeoutFlushAtFlushIntervalMaxFlushSizeInBytesMaxQueueLengthLogLevel: Enable
-    ) = this()
+    def this(writeKey: String, dataPlaneURL: String, param2: Enable) = this()
   }
   
   @js.native

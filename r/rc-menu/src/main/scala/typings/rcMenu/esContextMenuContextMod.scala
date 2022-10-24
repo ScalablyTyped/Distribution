@@ -23,7 +23,7 @@ object esContextMenuContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildrenLockedRestProps: InheritableContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenLockedRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: InheritableContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-menu/es/context/MenuContext", "MenuContext")
   @js.native

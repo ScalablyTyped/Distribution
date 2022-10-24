@@ -43,7 +43,7 @@ inline def isInDestructureAssignment(parent: Node, parentStack: js.Array[Node]):
 inline def isStaticProperty(node: Node): /* is @babel/types.@babel/types.ObjectProperty */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStaticProperty")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ObjectProperty */ Boolean]
 
 inline def parse(source: String): SFCParseResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[SFCParseResult]
-inline def parse(source: String, hasSourceMapFilenameSourceRootPadIgnoreEmptyCompiler: SFCParseOptions): SFCParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], hasSourceMapFilenameSourceRootPadIgnoreEmptyCompiler.asInstanceOf[js.Any])).asInstanceOf[SFCParseResult]
+inline def parse(source: String, param1: SFCParseOptions): SFCParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[SFCParseResult]
 
 inline def rewriteDefault(input: String, as: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rewriteDefault")(input.asInstanceOf[js.Any], as.asInstanceOf[js.Any])).asInstanceOf[String]
 inline def rewriteDefault(input: String, as: String, parserPlugins: js.Array[ParserPlugin]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rewriteDefault")(input.asInstanceOf[js.Any], as.asInstanceOf[js.Any], parserPlugins.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -51,7 +51,7 @@ inline def rewriteDefault(input: String, as: String, parserPlugins: js.Array[Par
 inline def shouldTransformRef(src: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldTransformRef")(src.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def transformRef(src: String): RefTransformResults = ^.asInstanceOf[js.Dynamic].applyDynamic("transformRef")(src.asInstanceOf[js.Any]).asInstanceOf[RefTransformResults]
-inline def transformRef(src: String, hasFilenameSourceMapParserPluginsImportHelpersFrom: RefTransformOptions): RefTransformResults = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRef")(src.asInstanceOf[js.Any], hasFilenameSourceMapParserPluginsImportHelpersFrom.asInstanceOf[js.Any])).asInstanceOf[RefTransformResults]
+inline def transformRef(src: String, param1: RefTransformOptions): RefTransformResults = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRef")(src.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RefTransformResults]
 
 inline def transformRefAST(ast: Program_, s: default): ImportedHelpers = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRefAST")(ast.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[ImportedHelpers]
 inline def transformRefAST(ast: Program_, s: default, offset: Double): ImportedHelpers = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRefAST")(ast.asInstanceOf[js.Any], s.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[ImportedHelpers]

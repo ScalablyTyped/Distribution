@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@swc/core" : "1.3.2"
+      "@swc/core" : "1.3.10"
     }
   ],
   "test-dependencies" : [
     {
-      "@swc/core" : "1.3.2"
+      "@swc/core" : "1.3.10"
     }
   ],
   "compile-devDependencies" : [

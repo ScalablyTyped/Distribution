@@ -19,9 +19,7 @@ object distDeclarationsSrcUseCreatableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
-    hasAllowCreateWhileLoadingCreateOptionPositionFormatCreateLabelIsValidNewOptionGetNewOptionDataOnCreateOptionPropsOptionsPropsOnChangeRestSelectProps: BaseCreatableProps[Option, IsMulti, Group]
-  ): PublicBaseSelectProps[Option, IsMulti, Group] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasAllowCreateWhileLoadingCreateOptionPositionFormatCreateLabelIsValidNewOptionGetNewOptionDataOnCreateOptionPropsOptionsPropsOnChangeRestSelectProps.asInstanceOf[js.Any]).asInstanceOf[PublicBaseSelectProps[Option, IsMulti, Group]]
+  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: BaseCreatableProps[Option, IsMulti, Group]): PublicBaseSelectProps[Option, IsMulti, Group] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[PublicBaseSelectProps[Option, IsMulti, Group]]
   
   trait Accessors[Option] extends StObject {
     

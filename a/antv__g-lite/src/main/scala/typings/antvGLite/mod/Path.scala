@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Path ()
   extends typings.antvGLite.distDisplayObjectsMod.Path {
-  def this(hasStyleRest: DisplayObjectConfig[PathStyleProps]) = this()
+  def this(param0: DisplayObjectConfig[PathStyleProps]) = this()
 }

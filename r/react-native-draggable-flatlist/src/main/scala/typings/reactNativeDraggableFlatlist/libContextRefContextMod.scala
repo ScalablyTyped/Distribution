@@ -23,7 +23,7 @@ object libContextRefContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](hasChildrenFlatListRef: FlatListRef[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenFlatListRef.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[T](param0: FlatListRef[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useRefs[T](): RefContextValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefs")().asInstanceOf[RefContextValue[T]]
   

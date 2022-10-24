@@ -64,7 +64,7 @@ object libMod {
   inline def rect(x: Double, y: Double, width: Double, height: Double): Rect_ = (^.asInstanceOf[js.Dynamic].applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Rect_]
   
   inline def style(): Style_ = ^.asInstanceOf[js.Dynamic].applyDynamic("style")().asInstanceOf[Style_]
-  inline def style(hasFillFillOpacityFillRuleStrokeStrokeWidthStrokeLineCapStrokeOpacity: Fill): Style_ = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(hasFillFillOpacityFillRuleStrokeStrokeWidthStrokeLineCapStrokeOpacity.asInstanceOf[js.Any]).asInstanceOf[Style_]
+  inline def style(param0: Fill): Style_ = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(param0.asInstanceOf[js.Any]).asInstanceOf[Style_]
   
   inline def svg(attributes: Height, unsupportedFeatures: js.Array[String]): SVG_ = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(attributes.asInstanceOf[js.Any], unsupportedFeatures.asInstanceOf[js.Any])).asInstanceOf[SVG_]
   

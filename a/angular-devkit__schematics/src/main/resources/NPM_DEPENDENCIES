@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular-devkit/schematics" : "14.2.3"
+      "@angular-devkit/schematics" : "14.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular-devkit/schematics" : "14.2.3"
+      "@angular-devkit/schematics" : "14.2.6"
     }
   ],
   "compile-devDependencies" : [

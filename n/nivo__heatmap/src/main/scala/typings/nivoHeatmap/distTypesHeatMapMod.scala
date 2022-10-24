@@ -13,7 +13,5 @@ object distTypesHeatMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HeatMap[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](
-    hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: HeatMapSvgProps[Datum, ExtraProps]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMap")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeatMap[Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](param0: HeatMapSvgProps[Datum, ExtraProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMap")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

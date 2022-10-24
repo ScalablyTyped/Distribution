@@ -12,5 +12,5 @@ object libTypescriptNativeSafeAreaProviderDotwindowsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def NativeSafeAreaProvider(hasChildrenStyleOnInsetsChange: NativeSafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NativeSafeAreaProvider")(hasChildrenStyleOnInsetsChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NativeSafeAreaProvider(param0: NativeSafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NativeSafeAreaProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

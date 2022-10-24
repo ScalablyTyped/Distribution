@@ -79,7 +79,7 @@ object distTs3Dot9PreviewMod {
   @js.native
   open class ClientApi[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
     extends typings.storybookClientApi.mod.ClientApi[TFramework] {
-    def this(hasStoryStore: typings.storybookClientApi.anon.StoryStore[TFramework]) = this()
+    def this(param0: typings.storybookClientApi.anon.StoryStore[TFramework]) = this()
   }
   
   @JSImport("@storybook/core-client/dist/ts3.9/preview", "StoryStore")
@@ -101,9 +101,9 @@ object distTs3Dot9PreviewMod {
       /* element */ Element, 
       js.Promise[Unit] | Unit
     ],
-    hasDecorateStoryRender: DecorateStory[TFramework]
-  ): typings.storybookCoreClient.anon.ClientApi | Configure[TFramework] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(renderToDOM.asInstanceOf[js.Any], hasDecorateStoryRender.asInstanceOf[js.Any])).asInstanceOf[typings.storybookCoreClient.anon.ClientApi | Configure[TFramework]]
-  inline def start[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](renderToDOM: Unit, hasDecorateStoryRender: DecorateStory[TFramework]): typings.storybookCoreClient.anon.ClientApi | Configure[TFramework] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(renderToDOM.asInstanceOf[js.Any], hasDecorateStoryRender.asInstanceOf[js.Any])).asInstanceOf[typings.storybookCoreClient.anon.ClientApi | Configure[TFramework]]
+    param1: DecorateStory[TFramework]
+  ): typings.storybookCoreClient.anon.ClientApi | Configure[TFramework] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(renderToDOM.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.storybookCoreClient.anon.ClientApi | Configure[TFramework]]
+  inline def start[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](renderToDOM: Unit, param1: DecorateStory[TFramework]): typings.storybookCoreClient.anon.ClientApi | Configure[TFramework] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(renderToDOM.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.storybookCoreClient.anon.ClientApi | Configure[TFramework]]
   
   inline def toId(kind: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toId")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
 }

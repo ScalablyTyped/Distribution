@@ -22,7 +22,7 @@ object libTelemetryMod {
   open class Telemetry protected ()
     extends StObject
        with ITelemetry {
-    def this(hasConfigClientGetInfoCtxProjectSession: TelemetryDeps) = this()
+    def this(param0: TelemetryDeps) = this()
     
     /* protected */ val client: IClient = js.native
     
@@ -40,7 +40,7 @@ object libTelemetryMod {
     /* protected */ val session: ISession = js.native
   }
   
-  inline def sendCommand(hasConfigClientGetInfoCtxSessionProject: TelemetryDeps, command: String, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendCommand")(hasConfigClientGetInfoCtxSessionProject.asInstanceOf[js.Any], command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def sendCommand(param0: TelemetryDeps, command: String, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendCommand")(param0.asInstanceOf[js.Any], command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait TelemetryDeps extends StObject {
     

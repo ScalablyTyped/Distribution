@@ -14,9 +14,9 @@ object distKernelsConv2DImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def conv2dByMatMul(hasXFilterConvInfoBackendBiasPreluActivationWeightsLeakyreluAlphaActivation: Conv2DConfig): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2dByMatMul")(hasXFilterConvInfoBackendBiasPreluActivationWeightsLeakyreluAlphaActivation.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def conv2dByMatMul(param0: Conv2DConfig): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2dByMatMul")(param0.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
-  inline def conv2dWithIm2Row(hasXFilterConvInfoBackendBiasPreluActivationWeightsLeakyreluAlphaActivation: Conv2DConfig): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithIm2Row")(hasXFilterConvInfoBackendBiasPreluActivationWeightsLeakyreluAlphaActivation.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def conv2dWithIm2Row(param0: Conv2DConfig): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2dWithIm2Row")(param0.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   trait Conv2DConfig extends StObject {
     

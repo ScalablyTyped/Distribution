@@ -349,7 +349,7 @@ object mod {
   @JSImport("htmlparser2", "Tokenizer")
   @js.native
   open class Tokenizer protected () extends default {
-    def this(hasXmlModeDecodeEntities: DecodeEntities, cbs: Callbacks) = this()
+    def this(param0: DecodeEntities, cbs: Callbacks) = this()
   }
   
   inline def createDomStream(cb: js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit]): typings.htmlparser2.libParserMod.Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createDomStream")(cb.asInstanceOf[js.Any]).asInstanceOf[typings.htmlparser2.libParserMod.Parser]

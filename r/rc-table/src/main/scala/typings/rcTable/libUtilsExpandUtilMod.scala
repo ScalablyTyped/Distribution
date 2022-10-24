@@ -16,5 +16,5 @@ object libUtilsExpandUtilMod {
   
   inline def findAllChildrenKeys[RecordType](data: js.Array[RecordType], getRowKey: GetRowKey[RecordType], childrenColumnName: String): js.Array[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllChildrenKeys")(data.asInstanceOf[js.Any], getRowKey.asInstanceOf[js.Any], childrenColumnName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key]]
   
-  inline def renderExpandIcon[RecordType](hasPrefixClsRecordOnExpandExpandedExpandable: RenderExpandIconProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderExpandIcon")(hasPrefixClsRecordOnExpandExpandedExpandable.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def renderExpandIcon[RecordType](param0: RenderExpandIconProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderExpandIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

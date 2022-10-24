@@ -28,13 +28,7 @@ trait Duration extends StObject {
       ComponentProps[
         (ComponentType[
           PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
-        ]) & (NonReactStatics[
-          ComponentType[Props] & (js.Function1[
-            /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
-            Element
-          ]), 
-          js.Object
-        ])
+        ]) & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object])
       ], 
       children
     ]) & LabelString
@@ -92,13 +86,7 @@ object Duration {
           ComponentProps[
             (ComponentType[
               PickthemeDeepPartialThemeAccessibilityIgnoresInvertColors | PickthemeDeepPartialThemeAccessibilityLabel
-            ]) & (NonReactStatics[
-              ComponentType[Props] & (js.Function1[
-                /* hasDisabledCompactModeDarkLoadingIconButtonColorChildrenUppercaseAccessibilityLabelAccessibilityHintOnPressOnLongPressStyleThemeContentStyleLabelStyleTestIDAccessibleRest */ Props, 
-                Element
-              ]), 
-              js.Object
-            ])
+            ]) & (NonReactStatics[ComponentType[Props] & (js.Function1[/* param0 */ Props, Element]), js.Object])
           ], 
           children
         ]) & LabelString

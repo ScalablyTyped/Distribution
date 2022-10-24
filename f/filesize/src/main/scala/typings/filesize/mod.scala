@@ -13,13 +13,8 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def filesize(arg: Any): String | Double | js.Array[Any] | Exponent = ^.asInstanceOf[js.Dynamic].applyDynamic("filesize")(arg.asInstanceOf[js.Any]).asInstanceOf[String | Double | js.Array[Any] | Exponent]
-  inline def filesize(
-    arg: Any,
-    hasBitsPadBaseRoundLocaleLocaleOptionsSeparatorSpacerSymbolsStandardOutputFullformFullformsExponentRoundingMethodPrecision: Base
-  ): String | Double | js.Array[Any] | Exponent = (^.asInstanceOf[js.Dynamic].applyDynamic("filesize")(arg.asInstanceOf[js.Any], hasBitsPadBaseRoundLocaleLocaleOptionsSeparatorSpacerSymbolsStandardOutputFullformFullformsExponentRoundingMethodPrecision.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[Any] | Exponent]
+  inline def filesize(arg: Any, param1: Base): String | Double | js.Array[Any] | Exponent = (^.asInstanceOf[js.Dynamic].applyDynamic("filesize")(arg.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[Any] | Exponent]
   
   inline def partial(): js.Function1[/* arg */ Any, String | Double | js.Array[Any] | Exponent] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")().asInstanceOf[js.Function1[/* arg */ Any, String | Double | js.Array[Any] | Exponent]]
-  inline def partial(
-    hasBitsPadBaseRoundLocaleLocaleOptionsSeparatorSpacerSymbolsStandardOutputFullformFullformsExponentRoundingMethodPrecision: Base
-  ): js.Function1[/* arg */ Any, String | Double | js.Array[Any] | Exponent] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(hasBitsPadBaseRoundLocaleLocaleOptionsSeparatorSpacerSymbolsStandardOutputFullformFullformsExponentRoundingMethodPrecision.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg */ Any, String | Double | js.Array[Any] | Exponent]]
+  inline def partial(param0: Base): js.Function1[/* arg */ Any, String | Double | js.Array[Any] | Exponent] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg */ Any, String | Double | js.Array[Any] | Exponent]]
 }

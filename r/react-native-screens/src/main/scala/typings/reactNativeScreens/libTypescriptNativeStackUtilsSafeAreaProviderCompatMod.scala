@@ -13,7 +13,7 @@ object libTypescriptNativeStackUtilsSafeAreaProviderCompatMod {
   
   object default {
     
-    inline def apply(hasChildrenStyle: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-screens/lib/typescript/native-stack/utils/SafeAreaProviderCompat", JSImport.Default)
     @js.native

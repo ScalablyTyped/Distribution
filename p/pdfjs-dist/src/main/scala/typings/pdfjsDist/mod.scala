@@ -132,10 +132,7 @@ object mod {
       * @param {HTMLDivElement} div
       * @param {PageViewport} viewport
       */
-    inline def `__Numbersign26@NumbersignsetDimensions`(
-      div: HTMLDivElement,
-      hasWidthHeightRotation: typings.pdfjsDist.typesSrcDisplayAnnotationLayerMod.PageViewport
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#26@#setDimensions")(div.asInstanceOf[js.Any], hasWidthHeightRotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def `__Numbersign26@NumbersignsetDimensions`(div: HTMLDivElement, param1: typings.pdfjsDist.typesSrcDisplayAnnotationLayerMod.PageViewport): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#26@#setDimensions")(div.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Render a new annotation layer with all annotation elements.
@@ -640,7 +637,7 @@ object mod {
   @js.native
   open class PDFWorker ()
     extends typings.pdfjsDist.typesSrcDisplayApiMod.PDFWorker {
-    def this(hasNamePortVerbosity: Name) = this()
+    def this(param0: Name) = this()
   }
   /* static members */
   object PDFWorker {
@@ -911,7 +908,7 @@ object mod {
       */
     inline def render(parameters: XfaLayerParameters): TextDivs = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(parameters.asInstanceOf[js.Any]).asInstanceOf[TextDivs]
     
-    inline def setAttributes(hasHtmlElementStorageIntentLinkService: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAttributes")(hasHtmlElementStorageIntentLinkService.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setAttributes(param0: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAttributes")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def setupStorage(html: Any, id: Any, element: Any, storage: Any, intent: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupStorage")(html.asInstanceOf[js.Any], id.asInstanceOf[js.Any], element.asInstanceOf[js.Any], storage.asInstanceOf[js.Any], intent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -949,7 +946,7 @@ object mod {
   inline def getPdfFilenameFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getPdfFilenameFromUrl(url: String, defaultFilename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any], defaultFilename.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getXfaPageViewport(xfaPage: Any, hasScaleRotation: Rotation): typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], hasScaleRotation.asInstanceOf[js.Any])).asInstanceOf[typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport]
+  inline def getXfaPageViewport(xfaPage: Any, param1: Rotation): typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport]
   
   inline def isPdfFile(filename: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPdfFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

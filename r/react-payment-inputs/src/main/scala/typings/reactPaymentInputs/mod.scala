@@ -44,22 +44,22 @@ object mod {
   inline def getCVCError(
     cvc: String,
     cvcValidator: js.Function1[/* props */ typings.reactPaymentInputs.anon.CardType, String],
-    hasErrorMessages: typings.reactPaymentInputs.anon.ErrorMessages
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCVCError")(cvc.asInstanceOf[js.Any], cvcValidator.asInstanceOf[js.Any], hasErrorMessages.asInstanceOf[js.Any])).asInstanceOf[String]
+    param2: typings.reactPaymentInputs.anon.ErrorMessages
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCVCError")(cvc.asInstanceOf[js.Any], cvcValidator.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getCardNumberError(
     cardNumber: String,
     cardNumberValidator: js.Function1[/* props */ CardNumberCardType, String],
-    hasErrorMessages: typings.reactPaymentInputs.anon.ErrorMessages
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardNumberError")(cardNumber.asInstanceOf[js.Any], cardNumberValidator.asInstanceOf[js.Any], hasErrorMessages.asInstanceOf[js.Any])).asInstanceOf[String]
+    param2: typings.reactPaymentInputs.anon.ErrorMessages
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCardNumberError")(cardNumber.asInstanceOf[js.Any], cardNumberValidator.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getExpiryDateError(
     expiryDate: String,
     expiryValidator: js.Function1[/* props */ ExpiryDate, String],
-    hasErrorMessages: typings.reactPaymentInputs.anon.ErrorMessages
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getExpiryDateError")(expiryDate.asInstanceOf[js.Any], expiryValidator.asInstanceOf[js.Any], hasErrorMessages.asInstanceOf[js.Any])).asInstanceOf[String]
+    param2: typings.reactPaymentInputs.anon.ErrorMessages
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getExpiryDateError")(expiryDate.asInstanceOf[js.Any], expiryValidator.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getZIPError(zip: String, hasErrorMessages: typings.reactPaymentInputs.anon.ErrorMessages): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getZIPError")(zip.asInstanceOf[js.Any], hasErrorMessages.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getZIPError(zip: String, param1: typings.reactPaymentInputs.anon.ErrorMessages): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getZIPError")(zip.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def usePaymentInputs(): usePaymentInputsData = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaymentInputs")().asInstanceOf[usePaymentInputsData]
   inline def usePaymentInputs(options: usePaymentInputsOptions): usePaymentInputsData = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaymentInputs")(options.asInstanceOf[js.Any]).asInstanceOf[usePaymentInputsData]

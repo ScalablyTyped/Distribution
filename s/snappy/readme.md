@@ -1,7 +1,7 @@
 
 # Scala.js typings for snappy
 
-Typings are for version 7.2.0
+Typings are for version 7.2.1
 
 ## Library description:
 Fastest Snappy compression library in Node.js

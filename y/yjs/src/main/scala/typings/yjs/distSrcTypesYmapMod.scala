@@ -1,6 +1,5 @@
 package typings.yjs
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
 import typings.std.IterableIterator
 import typings.std.Set
@@ -60,7 +59,7 @@ object distSrcTypesYmapMod {
       *
       * @param {function(MapType,string,YMap<MapType>):void} f A function to execute on every element of this YArray.
       */
-    def forEach(f: js.Function3[/* arg0 */ MapType, /* arg1 */ String, /* arg2 */ YMap[MapType], Unit]): StringDictionary[MapType] = js.native
+    def forEach(f: js.Function3[/* arg0 */ MapType, /* arg1 */ String, /* arg2 */ YMap[MapType], Unit]): Unit = js.native
     
     /**
       * Returns a specified element from this YMap.

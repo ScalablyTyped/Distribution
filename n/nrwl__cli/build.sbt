@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nrwl__cli"
-version := "14.7.8-96f8cf"
-scalaVersion := "3.1.2"
+version := "15.0.1-d3f24e"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "feather-route-matcher"
-version := "3.1-dt-20211223Z-7145e1"
-scalaVersion := "3.1.2"
+version := "3.1-dt-20211223Z-2795bc"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

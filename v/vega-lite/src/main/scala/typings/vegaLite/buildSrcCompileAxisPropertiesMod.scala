@@ -894,7 +894,7 @@ object buildSrcCompileAxisPropertiesMod {
   
   inline def defaultOrient(channel: PositionScaleChannel): left | bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOrient")(channel.asInstanceOf[js.Any]).asInstanceOf[left | bottom]
   
-  inline def defaultTickCount(hasFieldOrDatumDefScaleTypeSizeVals: FieldOrDatumDef): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTickCount")(hasFieldOrDatumDefScaleTypeSizeVals.asInstanceOf[js.Any]).asInstanceOf[Signal]
+  inline def defaultTickCount(param0: FieldOrDatumDef): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTickCount")(param0.asInstanceOf[js.Any]).asInstanceOf[Signal]
   
   inline def defaultZindex(mark: Mark, fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): `1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`1` | `0`]
   

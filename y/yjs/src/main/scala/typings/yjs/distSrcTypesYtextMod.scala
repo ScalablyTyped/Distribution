@@ -84,7 +84,7 @@ object distSrcTypesYtextMod {
       * @public
       */
     def applyDelta(delta: Any): Unit = js.native
-    def applyDelta(delta: Any, hasSanitize: Sanitize): Unit = js.native
+    def applyDelta(delta: Any, param1: Sanitize): Unit = js.native
     
     /**
       * Deletes text starting from an index.

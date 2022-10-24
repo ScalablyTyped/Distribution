@@ -17,7 +17,7 @@ object progressStepsMod {
   
   object NumberedStep {
     
-    inline def apply(hasOverridesIsCompletedIsActiveIsLastTitleStepChildren: NumberedStepProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasOverridesIsCompletedIsActiveIsLastTitleStepChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: NumberedStepProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("baseui/progress-steps", "NumberedStep")
     @js.native
@@ -43,7 +43,7 @@ object progressStepsMod {
   
   object ProgressSteps {
     
-    inline def apply(hasOverridesCurrentChildren: ProgressStepsProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasOverridesCurrentChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: ProgressStepsProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("baseui/progress-steps", "ProgressSteps")
     @js.native
@@ -64,7 +64,7 @@ object progressStepsMod {
   
   object Step {
     
-    inline def apply(hasOverridesIsCompletedIsActiveIsLastTitleChildren: StepProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasOverridesIsCompletedIsActiveIsLastTitleChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: StepProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("baseui/progress-steps", "Step")
     @js.native

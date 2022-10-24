@@ -12,5 +12,5 @@ object distLibProjectMetadataTargetBuildersGitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInfo(hasIsFromContainerCwd: Cwd): js.Promise[GitTarget | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(hasIsFromContainerCwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GitTarget | Null]]
+  inline def getInfo(param0: Cwd): js.Promise[GitTarget | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GitTarget | Null]]
 }

@@ -19,11 +19,7 @@ object mod {
   inline def decodePayload(encodedPayload: String): js.Array[Packet] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePayload")(encodedPayload.asInstanceOf[js.Any]).asInstanceOf[js.Array[Packet]]
   inline def decodePayload(encodedPayload: String, binaryType: BinaryType): js.Array[Packet] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePayload")(encodedPayload.asInstanceOf[js.Any], binaryType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Packet]]
   
-  inline def encodePacket(
-    hasTypeData: Packet,
-    supportsBinary: Boolean,
-    callback: js.Function1[/* encodedPacket */ RawData, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodePacket")(hasTypeData.asInstanceOf[js.Any], supportsBinary.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encodePacket(param0: Packet, supportsBinary: Boolean, callback: js.Function1[/* encodedPacket */ RawData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodePacket")(param0.asInstanceOf[js.Any], supportsBinary.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def encodePayload(packets: js.Array[Packet], callback: js.Function1[/* encodedPayload */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodePayload")(packets.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

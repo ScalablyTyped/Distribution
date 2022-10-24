@@ -16,7 +16,7 @@ object distServerWebSpecExtensionUserAgentMod {
   
   inline def isBot(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBot")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def userAgent(hasHeaders: HeadersHeaders): UserAgent_ = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgent")(hasHeaders.asInstanceOf[js.Any]).asInstanceOf[UserAgent_]
+  inline def userAgent(param0: HeadersHeaders): UserAgent_ = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgent")(param0.asInstanceOf[js.Any]).asInstanceOf[UserAgent_]
   
   inline def userAgentFromString(): UserAgent_ = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentFromString")().asInstanceOf[UserAgent_]
   inline def userAgentFromString(input: String): UserAgent_ = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentFromString")(input.asInstanceOf[js.Any]).asInstanceOf[UserAgent_]

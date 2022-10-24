@@ -15,7 +15,7 @@ trait Android extends StObject {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & Status
-    ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
+    ]) & `4`, 
     js.Object
   ])
   
@@ -24,14 +24,11 @@ trait Android extends StObject {
       (RemoveChildren[
         ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
       ]) & TestID
-    ]) & CallHasStatusDisabledOnPressThemeTestIDRest, 
+    ]) & `5`, 
     js.Object
   ])
   
-  var Item: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[
-    ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
-    js.Object
-  ])
+  var Item: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[ComponentType[Props] & `6`, js.Object])
 }
 object Android {
   
@@ -41,7 +38,7 @@ object Android {
         (RemoveChildren[
           ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
         ]) & Status
-      ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
+      ]) & `4`, 
       js.Object
     ]),
     IOS: ComponentType[PickRemoveChildrenComponeAccessibilityLabel] & (NonReactStatics[
@@ -49,13 +46,10 @@ object Android {
         (RemoveChildren[
           ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
         ]) & TestID
-      ]) & CallHasStatusDisabledOnPressThemeTestIDRest, 
+      ]) & `5`, 
       js.Object
     ]),
-    Item: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[
-      ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
-      js.Object
-    ])
+    Item: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[ComponentType[Props] & `6`, js.Object])
   ): Android = {
     val __obj = js.Dynamic.literal(Android = Android.asInstanceOf[js.Any], IOS = IOS.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[Android]
@@ -69,7 +63,7 @@ object Android {
             (RemoveChildren[
               ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
             ]) & Status
-          ]) & CallHasStatusThemeDisabledOnPressTestIDRest, 
+          ]) & `4`, 
           js.Object
         ])
     ): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
@@ -80,16 +74,13 @@ object Android {
             (RemoveChildren[
               ComponentType[PickTouchableWithoutFeedbAccessibilityActions] & (NonReactStatics[ComponentType[TouchableWithoutFeedbackP] & Call, js.Object])
             ]) & TestID
-          ]) & CallHasStatusDisabledOnPressThemeTestIDRest, 
+          ]) & `5`, 
           js.Object
         ])
     ): Self = StObject.set(x, "IOS", value.asInstanceOf[js.Any])
     
     inline def setItem(
-      value: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[
-          ComponentType[Props] & CallHasStyleStatusLabelOnPressLabelStyleThemeTestIDModePositionDisabledProps, 
-          js.Object
-        ])
+      value: ComponentType[PickPropslabelstylecoloroColor] & (NonReactStatics[ComponentType[Props] & `6`, js.Object])
     ): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }
 }

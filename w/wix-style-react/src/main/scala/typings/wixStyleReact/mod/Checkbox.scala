@@ -1,10 +1,10 @@
 package typings.wixStyleReact.mod
 
-import typings.wixStyleReact.checkboxMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wix-style-react", "Checkbox")
 @js.native
-class Checkbox () extends default
+open class Checkbox ()
+  extends typings.wixStyleReact.distTypesCheckboxMod.default

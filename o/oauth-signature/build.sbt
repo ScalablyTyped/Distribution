@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "oauth-signature"
-version := "1.5-dt-20220212Z-c49d60"
-scalaVersion := "3.1.2"
+version := "1.5-dt-20220212Z-9b56de"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -45,7 +45,7 @@ object `@reactNavigationStackViewsHeaderHeaderTitleMod` {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTintColorStyleRest: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTintColorStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   // tslint:disable-next-line strict-export-declare-modifiers
   /* Inlined std.Omit<react-native.react-native.TextProps, 'style'> & {  tintColor :string | undefined,   children :string | undefined,   style :react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.TextStyle>> | undefined} */

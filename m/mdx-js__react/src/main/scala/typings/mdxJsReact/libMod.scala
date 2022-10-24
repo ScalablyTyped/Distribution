@@ -19,7 +19,7 @@ object libMod {
   @js.native
   val MDXContext: Context[Components] = js.native
   
-  inline def MDXProvider(hasComponentsChildrenDisableParentContext: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MDXProvider")(hasComponentsChildrenDisableParentContext.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MDXProvider(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MDXProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useMDXComponents(): Components = ^.asInstanceOf[js.Dynamic].applyDynamic("useMDXComponents")().asInstanceOf[Components]
   inline def useMDXComponents(components: MDXComponents): Components = ^.asInstanceOf[js.Dynamic].applyDynamic("useMDXComponents")(components.asInstanceOf[js.Any]).asInstanceOf[Components]

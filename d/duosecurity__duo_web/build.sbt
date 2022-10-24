@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "duosecurity__duo_web"
-version := "1.0-dt-20211202Z-248d71"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-699abb"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

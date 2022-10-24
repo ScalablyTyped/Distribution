@@ -5,6 +5,7 @@ import typings.vegaLite.buildSrcCompositemarkBaseMod.CompositeMarkNormalizer
 import typings.vegaLite.buildSrcCompositemarkCommonMod.GenericCompositeMarkDef
 import typings.vegaLite.buildSrcCompositemarkCommonMod.PartsMixins
 import typings.vegaLite.buildSrcEncodingMod.Encoding
+import typings.vegaLite.buildSrcMarkMod.MarkInvalidMixins
 import typings.vegaLite.buildSrcNormalizeBaseMod.NormalizerParams
 import typings.vegaLite.buildSrcSelectionMod.SelectionParameter
 import typings.vegaLite.buildSrcSelectionMod.SelectionType
@@ -46,8 +47,8 @@ object buildSrcCompositemarkBoxplotMod {
   
   inline def normalizeBoxPlot(
     spec: GenericUnitSpec[Encoding[String], BoxPlot | BoxPlotDef, SelectionParameter[SelectionType]],
-    hasConfig: NormalizerParams
-  ): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBoxPlot")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
+    param1: NormalizerParams
+  ): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBoxPlot")(spec.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
   
   type BoxPlot = boxplot
   
@@ -107,7 +108,7 @@ object buildSrcCompositemarkBoxplotMod {
     }
   }
   
-  type BoxPlotDef = GenericCompositeMarkDef[BoxPlot] & BoxPlotConfig & Orient
+  type BoxPlotDef = GenericCompositeMarkDef[BoxPlot] & BoxPlotConfig & MarkInvalidMixins & Orient
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.box

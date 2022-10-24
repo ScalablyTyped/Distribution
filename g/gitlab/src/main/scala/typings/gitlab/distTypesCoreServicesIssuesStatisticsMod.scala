@@ -15,11 +15,9 @@ object distTypesCoreServicesIssuesStatisticsMod {
   @JSImport("gitlab/dist/types/core/services/IssuesStatistics", "IssuesStatistics")
   @js.native
   open class IssuesStatistics () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native
-    def all(
-      hasProjectIdGroupIdOptions: projectIdstringnumberundeDictkey | groupIdstringnumberundefiDictkey | BaseRequestOptions
-    ): js.Promise[GetResponse] = js.native
+    def all(param0: projectIdstringnumberundeDictkey | groupIdstringnumberundefiDictkey | BaseRequestOptions): js.Promise[GetResponse] = js.native
   }
 }

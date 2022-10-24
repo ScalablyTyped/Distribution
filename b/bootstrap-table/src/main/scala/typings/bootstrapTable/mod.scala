@@ -761,7 +761,7 @@ object mod {
     
     var idField: js.UndefOr[String] = js.undefined
     
-    var ignoreClickToSelectOn: js.UndefOr[js.Function1[/* hasTagName */ js.UndefOr[TagName], Any]] = js.undefined
+    var ignoreClickToSelectOn: js.UndefOr[js.Function1[/* param0 */ js.UndefOr[TagName], Any]] = js.undefined
     
     var loadingFontSize: js.UndefOr[String] = js.undefined
     
@@ -1160,7 +1160,7 @@ object mod {
       
       inline def setIdFieldUndefined: Self = StObject.set(x, "idField", js.undefined)
       
-      inline def setIgnoreClickToSelectOn(value: /* hasTagName */ js.UndefOr[TagName] => Any): Self = StObject.set(x, "ignoreClickToSelectOn", js.Any.fromFunction1(value))
+      inline def setIgnoreClickToSelectOn(value: /* param0 */ js.UndefOr[TagName] => Any): Self = StObject.set(x, "ignoreClickToSelectOn", js.Any.fromFunction1(value))
       
       inline def setIgnoreClickToSelectOnUndefined: Self = StObject.set(x, "ignoreClickToSelectOn", js.undefined)
       

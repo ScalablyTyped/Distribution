@@ -66,7 +66,7 @@ object distEs5UtilsMod {
     /** return the closest parent (or itself) matching the given class */
     inline def closestUpByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestUpByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    /** copies over b size & position (GridStackPosition), and possibly min/max as well */
+    /** copies over b size & position (GridStackPosition), and optionally min/max as well */
     inline def copyPos(a: GridStackWidget, b: GridStackWidget): GridStackWidget = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[GridStackWidget]
     inline def copyPos(a: GridStackWidget, b: GridStackWidget, doMinMax: Boolean): GridStackWidget = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], doMinMax.asInstanceOf[js.Any])).asInstanceOf[GridStackWidget]
     

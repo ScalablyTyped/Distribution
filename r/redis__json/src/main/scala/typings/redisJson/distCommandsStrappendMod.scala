@@ -15,11 +15,11 @@ object distCommandsStrappendMod {
   val FIRST_KEY_INDEX: /* 1 */ Double = js.native
   
   inline def transformArguments(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasKeyPathOrAppendAppend because its type AppendArguments | AppendWithPathArguments is not an array type */ hasKeyPathOrAppendAppend: AppendArguments
-  ): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(hasKeyPathOrAppendAppend.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type AppendArguments | AppendWithPathArguments is not an array type */ param0: AppendArguments
+  ): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def transformArguments(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param hasKeyPathOrAppendAppend because its type AppendArguments | AppendWithPathArguments is not an array type */ hasKeyPathOrAppendAppend: AppendWithPathArguments
-  ): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(hasKeyPathOrAppendAppend.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param <destructured> because its type AppendArguments | AppendWithPathArguments is not an array type */ param0: AppendWithPathArguments
+  ): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def transformReply(): Double | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")().asInstanceOf[Double | js.Array[Double]]
   

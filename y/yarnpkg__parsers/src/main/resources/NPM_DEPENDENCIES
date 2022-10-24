@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@yarnpkg/parsers" : "3.0.0-rc.26"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@yarnpkg/parsers" : "3.0.0-rc.26"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

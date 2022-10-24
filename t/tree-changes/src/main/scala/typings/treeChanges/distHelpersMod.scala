@@ -26,9 +26,9 @@ object distHelpersMod {
   inline def compareValues[K](previousData: Data, data: Data, options: CompareValuesOptions[K]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("compareValues")(previousData.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def getIterables[K](previousData: Data, data: Data): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIterables")(previousData.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
-  inline def getIterables[K](previousData: Data, data: Data, hasKey: Options[K]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIterables")(previousData.asInstanceOf[js.Any], data.asInstanceOf[js.Any], hasKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  inline def getIterables[K](previousData: Data, data: Data, param2: Options[K]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIterables")(previousData.asInstanceOf[js.Any], data.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def hasEntry(input: Value): js.Function1[/* hasKeyValue */ js.Tuple2[String, Value], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEntry")(input.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasKeyValue */ js.Tuple2[String, Value], Boolean]]
+  inline def hasEntry(input: Value): js.Function1[/* param0 */ js.Tuple2[String, Value], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEntry")(input.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param0 */ js.Tuple2[String, Value], Boolean]]
   
   inline def hasExtraKeys(left: js.Array[String], right: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasExtraKeys")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

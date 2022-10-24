@@ -14,9 +14,7 @@ object typesTabsManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TabsManager(
-    hasTabsIdDefaultActiveIndexPropActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren: TabsManagerProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TabsManager")(hasTabsIdDefaultActiveIndexPropActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def TabsManager(param0: TabsManagerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TabsManager")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useTabs(): InitializedTabsManagerContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabs")().asInstanceOf[InitializedTabsManagerContext]
   

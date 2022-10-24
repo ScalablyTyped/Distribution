@@ -14,7 +14,7 @@ object nativeDistUtilsStylisMod {
   val ^ : js.Any = js.native
   
   inline def default(): Stringifier = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Stringifier]
-  inline def default(hasOptionsPlugins: StylisInstanceConstructorArgs): Stringifier = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOptionsPlugins.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  inline def default(param0: StylisInstanceConstructorArgs): Stringifier = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
   
   trait StylisInstanceConstructorArgs extends StObject {
     

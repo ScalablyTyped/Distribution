@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "storybook-addon-jsx"
-version := "7.0-dt-20220726Z-81e9c2"
-scalaVersion := "3.1.2"
+version := "7.0-dt-20220726Z-8b46e8"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "storybook__addons" % "6.5.12-53abde",
-  "org.scalablytyped" %%% "storybook__api" % "6.5.12-0820b1",
-  "org.scalablytyped" %%% "storybook__channels" % "6.5.12-711db2",
-  "org.scalablytyped" %%% "storybook__router" % "6.5.12-07db7c",
-  "org.scalablytyped" %%% "storybook__theming" % "6.5.12-de6667")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
+  "org.scalablytyped" %%% "std" % "4.8-837c43",
+  "org.scalablytyped" %%% "storybook__addons" % "6.5.13-4e4cf0",
+  "org.scalablytyped" %%% "storybook__api" % "6.5.13-db2e12",
+  "org.scalablytyped" %%% "storybook__channels" % "6.5.13-52db1d",
+  "org.scalablytyped" %%% "storybook__router" % "6.5.13-14006e",
+  "org.scalablytyped" %%% "storybook__theming" % "6.5.13-b64f66")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

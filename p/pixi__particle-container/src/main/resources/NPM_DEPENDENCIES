@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/particle-container" : "6.5.7"
+      "@pixi/particle-container" : "6.5.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/particle-container" : "6.5.7"
+      "@pixi/particle-container" : "6.5.8"
     }
   ],
   "compile-devDependencies" : [

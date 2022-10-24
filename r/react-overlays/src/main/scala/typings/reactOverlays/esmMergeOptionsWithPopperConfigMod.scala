@@ -20,7 +20,7 @@ object esmMergeOptionsWithPopperConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasEnabledEnableEventsPlacementFlipOffsetFixedContainerPaddingArrowElementPopperConfig: Config): UsePopperOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasEnabledEnableEventsPlacementFlipOffsetFixedContainerPaddingArrowElementPopperConfig.asInstanceOf[js.Any]).asInstanceOf[UsePopperOptions]
+  inline def default(param0: Config): UsePopperOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[UsePopperOptions]
   
   inline def toModifierArray(): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")().asInstanceOf[js.Array[PartialModifieranyany]]
   inline def toModifierArray(map: Modifiers): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyany]]

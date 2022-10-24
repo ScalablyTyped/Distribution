@@ -11,9 +11,5 @@ object distDeclarationsSrcWebpackPluginReIndexModulesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    modules: Any,
-    hasGetPreIndexGetPostIndexGetOwnerIndexGetThemeIndexSetPreIndexSetPostIndex: GetOwnerIndex,
-    target: Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(modules.asInstanceOf[js.Any], hasGetPreIndexGetPostIndexGetOwnerIndexGetThemeIndexSetPreIndexSetPostIndex.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(modules: Any, param1: GetOwnerIndex, target: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(modules.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -12,7 +12,7 @@ object typesCreateAsyncStoragePersistorExperimentalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createAsyncStoragePersistor(hasStorageKeyThrottleTimeSerializeDeserialize: CreateAsyncStoragePersistorOptions): Persistor = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncStoragePersistor")(hasStorageKeyThrottleTimeSerializeDeserialize.asInstanceOf[js.Any]).asInstanceOf[Persistor]
+  inline def createAsyncStoragePersistor(param0: CreateAsyncStoragePersistorOptions): Persistor = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncStoragePersistor")(param0.asInstanceOf[js.Any]).asInstanceOf[Persistor]
   
   trait AsyncStorage extends StObject {
     

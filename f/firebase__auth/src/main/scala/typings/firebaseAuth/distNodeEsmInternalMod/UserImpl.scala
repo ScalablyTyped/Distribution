@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class UserImpl protected ()
   extends typings.firebaseAuth.distNodeEsmSrcCoreUserUserImplMod.UserImpl {
-  def this(hasUidAuthStsTokenManagerOpt: UserParameters) = this()
+  def this(param0: UserParameters) = this()
 }
 /* static members */
 object UserImpl {

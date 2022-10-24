@@ -121,6 +121,35 @@ object YouTubeAnalytics {
     }
   }
   
+  extension [Self <: YouTubeAnalytics](x: Self) {
+    
+    inline def setGroupItems(value: GroupItemsCollection): Self = StObject.set(x, "GroupItems", value.asInstanceOf[js.Any])
+    
+    inline def setGroupItemsUndefined: Self = StObject.set(x, "GroupItems", js.undefined)
+    
+    inline def setGroups(value: GroupsCollection): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    
+    inline def setNewErrorProto(value: () => ErrorProto): Self = StObject.set(x, "newErrorProto", js.Any.fromFunction0(value))
+    
+    inline def setNewErrors(value: () => Errors): Self = StObject.set(x, "newErrors", js.Any.fromFunction0(value))
+    
+    inline def setNewGroup(value: () => Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
+    
+    inline def setNewGroupContentDetails(value: () => GroupContentDetails): Self = StObject.set(x, "newGroupContentDetails", js.Any.fromFunction0(value))
+    
+    inline def setNewGroupItem(value: () => GroupItem): Self = StObject.set(x, "newGroupItem", js.Any.fromFunction0(value))
+    
+    inline def setNewGroupItemResource(value: () => GroupItemResource): Self = StObject.set(x, "newGroupItemResource", js.Any.fromFunction0(value))
+    
+    inline def setNewGroupSnippet(value: () => GroupSnippet): Self = StObject.set(x, "newGroupSnippet", js.Any.fromFunction0(value))
+    
+    inline def setReports(value: ReportsCollection): Self = StObject.set(x, "Reports", value.asInstanceOf[js.Any])
+    
+    inline def setReportsUndefined: Self = StObject.set(x, "Reports", js.undefined)
+  }
+  
   object Schema {
     
     trait EmptyResponse extends StObject {
@@ -560,34 +589,5 @@ object YouTubeAnalytics {
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
-  }
-  
-  extension [Self <: YouTubeAnalytics](x: Self) {
-    
-    inline def setGroupItems(value: GroupItemsCollection): Self = StObject.set(x, "GroupItems", value.asInstanceOf[js.Any])
-    
-    inline def setGroupItemsUndefined: Self = StObject.set(x, "GroupItems", js.undefined)
-    
-    inline def setGroups(value: GroupsCollection): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
-    
-    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
-    
-    inline def setNewErrorProto(value: () => ErrorProto): Self = StObject.set(x, "newErrorProto", js.Any.fromFunction0(value))
-    
-    inline def setNewErrors(value: () => Errors): Self = StObject.set(x, "newErrors", js.Any.fromFunction0(value))
-    
-    inline def setNewGroup(value: () => Group): Self = StObject.set(x, "newGroup", js.Any.fromFunction0(value))
-    
-    inline def setNewGroupContentDetails(value: () => GroupContentDetails): Self = StObject.set(x, "newGroupContentDetails", js.Any.fromFunction0(value))
-    
-    inline def setNewGroupItem(value: () => GroupItem): Self = StObject.set(x, "newGroupItem", js.Any.fromFunction0(value))
-    
-    inline def setNewGroupItemResource(value: () => GroupItemResource): Self = StObject.set(x, "newGroupItemResource", js.Any.fromFunction0(value))
-    
-    inline def setNewGroupSnippet(value: () => GroupSnippet): Self = StObject.set(x, "newGroupSnippet", js.Any.fromFunction0(value))
-    
-    inline def setReports(value: ReportsCollection): Self = StObject.set(x, "Reports", value.asInstanceOf[js.Any])
-    
-    inline def setReportsUndefined: Self = StObject.set(x, "Reports", js.undefined)
   }
 }

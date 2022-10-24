@@ -24,7 +24,7 @@ object distTs3Dot9GlobalsStoreMod {
     
     var initialGlobals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Globals */ Any = js.native
     
-    def set(hasGlobalsGlobalTypes: GlobalTypes): Unit = js.native
+    def set(param0: GlobalTypes): Unit = js.native
     
     def update(
       newGlobals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Globals */ Any

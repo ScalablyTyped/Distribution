@@ -101,9 +101,7 @@ object dataTableMod {
     val YEAR: typings.baseui.baseuiStrings.YEAR = js.native
   }
   
-  inline def DataTable(
-    hasBatchActionsColumnsFiltersEmptyMessageLoadingLoadingMessageOnIncludedRowsChangeOnRowHighlightChangeOnSelectManyOnSelectNoneOnSelectOneOnSortResizableColumnWidthsAllRowsRowActionsRowHeightRowHighlightIndexControlledSelectedRowIdsSortIndexSortDirectionTextQueryControlRef: DataTableProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DataTable")(hasBatchActionsColumnsFiltersEmptyMessageLoadingLoadingMessageOnIncludedRowsChangeOnRowHighlightChangeOnSelectManyOnSelectNoneOnSelectOneOnSortResizableColumnWidthsAllRowsRowActionsRowHeightRowHighlightIndexControlledSelectedRowIdsSortIndexSortDirectionTextQueryControlRef.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DataTable(param0: DataTableProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DataTable")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def DatetimeColumn(options: typings.baseui.dataTableColumnDatetimeMod.Options): typings.baseui.dataTableColumnDatetimeMod.DatetimeColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("DatetimeColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.dataTableColumnDatetimeMod.DatetimeColumn]
   
@@ -147,9 +145,7 @@ object dataTableMod {
   
   inline def StringColumn(options: typings.baseui.dataTableColumnStringMod.Options): typings.baseui.dataTableColumnStringMod.StringColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("StringColumn")(options.asInstanceOf[js.Any]).asInstanceOf[typings.baseui.dataTableColumnStringMod.StringColumn]
   
-  inline def UnstableDataTable(
-    hasBatchActionsColumnsFiltersEmptyMessageLoadingLoadingMessageOnIncludedRowsChangeOnRowHighlightChangeOnSelectManyOnSelectNoneOnSelectOneOnSortResizableColumnWidthsAllRowsRowActionsRowHeightRowHighlightIndexControlledSelectedRowIdsSortIndexSortDirectionTextQueryControlRef: DataTableProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Unstable_DataTable")(hasBatchActionsColumnsFiltersEmptyMessageLoadingLoadingMessageOnIncludedRowsChangeOnRowHighlightChangeOnSelectManyOnSelectNoneOnSelectOneOnSortResizableColumnWidthsAllRowsRowActionsRowHeightRowHighlightIndexControlledSelectedRowIdsSortIndexSortDirectionTextQueryControlRef.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def UnstableDataTable(param0: DataTableProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Unstable_DataTable")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/data-table", "Unstable_StatefulContainer")
   @js.native

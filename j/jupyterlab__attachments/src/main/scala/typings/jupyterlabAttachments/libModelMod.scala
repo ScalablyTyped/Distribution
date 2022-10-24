@@ -378,35 +378,6 @@ object libModelMod {
       */
     type ChangedArgs = IChangedArgs[IAttachmentModel]
     
-    extension [Self <: IAttachmentsModel](x: Self) {
-      
-      inline def setChanged(value: ISignal[IAttachmentsModel, ChangedArgs]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
-      
-      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
-      
-      inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
-      
-      inline def setFromJSON(value: IAttachments => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
-      
-      inline def setGet(value: String => js.UndefOr[IAttachmentModel]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-      
-      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
-      
-      inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
-      
-      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
-      
-      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-      
-      inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
-      
-      inline def setSet(value: (String, IMimeBundle) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
-      
-      inline def setStateChanged(value: ISignal[IAttachmentsModel, Unit]): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
-      
-      inline def setToJSON(value: () => IAttachments): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
-    }
-    
     /**
       * The interface for an attachment content factory.
       */
@@ -477,6 +448,35 @@ object libModelMod {
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       }
+    }
+    
+    extension [Self <: IAttachmentsModel](x: Self) {
+      
+      inline def setChanged(value: ISignal[IAttachmentsModel, ChangedArgs]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      
+      inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
+      
+      inline def setFromJSON(value: IAttachments => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+      
+      inline def setGet(value: String => js.UndefOr[IAttachmentModel]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      
+      inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
+      
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      
+      inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      
+      inline def setSet(value: (String, IMimeBundle) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      
+      inline def setStateChanged(value: ISignal[IAttachmentsModel, Unit]): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
+      
+      inline def setToJSON(value: () => IAttachments): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
 }

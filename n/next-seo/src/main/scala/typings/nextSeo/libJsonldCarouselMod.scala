@@ -16,7 +16,7 @@ object libJsonldCarouselMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasTypeKeyOverrideOfTypeData: CarouselJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTypeKeyOverrideOfTypeData.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: CarouselJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CarouselJsonLdProps
     extends StObject

@@ -25,13 +25,13 @@ object distPagesErrorMod {
     
     @JSImport("next/dist/pages/_error", "default.getInitialProps")
     @js.native
-    def getInitialProps: js.Function1[/* hasResErr */ NextPageContext, js.Promise[ErrorProps] | ErrorProps] = js.native
-    inline def getInitialProps_=(x: js.Function1[/* hasResErr */ NextPageContext, js.Promise[ErrorProps] | ErrorProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInitialProps")(x.asInstanceOf[js.Any])
+    def getInitialProps: js.Function1[/* param0 */ NextPageContext, js.Promise[ErrorProps] | ErrorProps] = js.native
+    inline def getInitialProps_=(x: js.Function1[/* param0 */ NextPageContext, js.Promise[ErrorProps] | ErrorProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInitialProps")(x.asInstanceOf[js.Any])
     
     @JSImport("next/dist/pages/_error", "default.origGetInitialProps")
     @js.native
-    def origGetInitialProps: js.Function1[/* hasResErr */ NextPageContext, js.Promise[ErrorProps] | ErrorProps] = js.native
-    inline def origGetInitialProps_=(x: js.Function1[/* hasResErr */ NextPageContext, js.Promise[ErrorProps] | ErrorProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("origGetInitialProps")(x.asInstanceOf[js.Any])
+    def origGetInitialProps: js.Function1[/* param0 */ NextPageContext, js.Promise[ErrorProps] | ErrorProps] = js.native
+    inline def origGetInitialProps_=(x: js.Function1[/* param0 */ NextPageContext, js.Promise[ErrorProps] | ErrorProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("origGetInitialProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

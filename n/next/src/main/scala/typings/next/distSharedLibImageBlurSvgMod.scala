@@ -11,5 +11,5 @@ object distSharedLibImageBlurSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getImageBlurSvg(hasWidthIntHeightIntBlurWidthBlurHeightBlurDataURL: BlurHeight): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageBlurSvg")(hasWidthIntHeightIntBlurWidthBlurHeightBlurDataURL.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getImageBlurSvg(param0: BlurHeight): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageBlurSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

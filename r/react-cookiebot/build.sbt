@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-cookiebot"
-version := "1.0-dt-20211202Z-2d73e3"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-c1e1f8"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

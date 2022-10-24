@@ -75,9 +75,9 @@ object libTypescriptComponentsTouchablesGenericTouchableMod {
     
     def moveToState(newState: TouchableState): Unit = js.native
     
-    def onGestureEvent(hasHasPointerInside: GestureEvent[NativeViewGestureHandlerPayload]): Unit = js.native
+    def onGestureEvent(param0: GestureEvent[NativeViewGestureHandlerPayload]): Unit = js.native
     
-    def onHandlerStateChange(hasNativeEvent: HandlerStateChangeEvent[NativeViewGestureHandlerPayload]): Unit = js.native
+    def onHandlerStateChange(param0: HandlerStateChangeEvent[NativeViewGestureHandlerPayload]): Unit = js.native
     
     def onLongPressDetected(): Unit = js.native
     

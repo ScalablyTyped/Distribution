@@ -48,8 +48,8 @@ object anon {
         PreviewData
       ] = js.native
     
-    def useWrappedStore(hasInitialStateInitialPropsProps: Any): Props[S] = js.native
-    def useWrappedStore(hasInitialStateInitialPropsProps: Any, displayName: String): Props[S] = js.native
+    def useWrappedStore(param0: Any): Props[S] = js.native
+    def useWrappedStore(param0: Any, displayName: String): Props[S] = js.native
     
     def withRedux(Component: Any): Call = js.native
     def withRedux(Component: default[js.Object, js.Object, js.Object]): Call = js.native

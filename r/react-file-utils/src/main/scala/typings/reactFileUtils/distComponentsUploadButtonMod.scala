@@ -17,7 +17,7 @@ object distComponentsUploadButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def UploadButton(hasResetOnChangeOnFileChangeRest: UploadButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("UploadButton")(hasResetOnChangeOnFileChangeRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def UploadButton(param0: UploadButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("UploadButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type UploadButtonProps = OnFileChange & (Omit[ComponentProps[input], `type` | onChange])
 }

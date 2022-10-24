@@ -41,13 +41,15 @@ object distVueWrapperMod {
     def this(app: Null, vm: T, setProps: js.Function1[/* props */ Record[String, Any], Unit]) = this()
     def this(app: App[Any], vm: T, setProps: js.Function1[/* props */ Record[String, Any], Unit]) = this()
     
-    /* private */ var __app: Any = js.native
+    /* private */ val __app: Any = js.native
     
-    /* private */ var __setProps: Any = js.native
+    /* private */ val __setProps: Any = js.native
     
     /* private */ var attachNativeEventListener: Any = js.native
     
-    /* private */ var componentVM: Any = js.native
+    /* private */ var cleanUpCallbacks: Any = js.native
+    
+    /* private */ val componentVM: Any = js.native
     
     @JSName("element")
     def element_MVueWrapper: Element = js.native
@@ -62,7 +64,7 @@ object distVueWrapperMod {
     def props(): StringDictionary[Any] = js.native
     def props(selector: String): Any = js.native
     
-    /* private */ var rootVM: Any = js.native
+    /* private */ val rootVM: Any = js.native
     
     def setData(data: Record[String, Any]): js.Promise[Unit] = js.native
     

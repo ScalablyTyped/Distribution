@@ -108,7 +108,7 @@ object distModalMod {
     
     def isDirectionIncluded(direction: Direction): Boolean = js.native
     
-    def isSwipeDirectionAllowed(hasDyDx: PanResponderGestureState): Boolean = js.native
+    def isSwipeDirectionAllowed(param0: PanResponderGestureState): Boolean = js.native
     
     var isTransitioning: Boolean = js.native
     

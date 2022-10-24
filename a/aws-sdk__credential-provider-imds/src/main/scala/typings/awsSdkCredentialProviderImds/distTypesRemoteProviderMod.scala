@@ -26,5 +26,5 @@ object distTypesRemoteProviderMod {
   
   inline def isImdsCredentials(arg: Any): /* is @aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist-types/remoteProvider/ImdsCredentials.ImdsCredentials */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImdsCredentials")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist-types/remoteProvider/ImdsCredentials.ImdsCredentials */ Boolean]
   
-  inline def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(hasMaxRetriesTimeout.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
+  inline def providerConfigFromInit(param0: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(param0.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
 }

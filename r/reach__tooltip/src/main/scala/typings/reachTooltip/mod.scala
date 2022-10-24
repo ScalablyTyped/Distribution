@@ -107,9 +107,7 @@ object mod {
     * @param params
     */
   inline def useTooltip[ElementType /* <: HTMLElement | SVGElement */](): js.Tuple3[TriggerParams[ElementType], TooltipParams, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltip")().asInstanceOf[js.Tuple3[TriggerParams[ElementType], TooltipParams, Boolean]]
-  inline def useTooltip[ElementType /* <: HTMLElement | SVGElement */](
-    hasIdPropOnPointerEnterOnPointerMoveOnPointerLeaveOnPointerDownOnMouseEnterOnMouseMoveOnMouseLeaveOnMouseDownOnFocusOnBlurOnKeyDownDisabledForwardedRefDEBUG_STYLE: DEBUGSTYLE[ElementType] & HTMLAttributes[ElementType]
-  ): js.Tuple3[TriggerParams[ElementType], TooltipParams, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltip")(hasIdPropOnPointerEnterOnPointerMoveOnPointerLeaveOnPointerDownOnMouseEnterOnMouseMoveOnMouseLeaveOnMouseDownOnFocusOnBlurOnKeyDownDisabledForwardedRefDEBUG_STYLE.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[TriggerParams[ElementType], TooltipParams, Boolean]]
+  inline def useTooltip[ElementType /* <: HTMLElement | SVGElement */](param0: DEBUGSTYLE[ElementType] & HTMLAttributes[ElementType]): js.Tuple3[TriggerParams[ElementType], TooltipParams, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[TriggerParams[ElementType], TooltipParams, Boolean]]
   
   /* Inlined std.Partial<std.DOMRect> & { readonly bottom :number,  readonly height :number,  readonly left :number,  readonly right :number,  readonly top :number,  readonly width :number} */
   trait PRect extends StObject {

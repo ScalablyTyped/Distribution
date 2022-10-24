@@ -70,7 +70,7 @@ object mod {
     
     def markSnapshotsAsCheckedForTest(testName: String): Unit = js.native
     
-    def `match`(hasTestNameReceivedKeyInlineSnapshotIsInlineError: SnapshotMatchOptions): SnapshotReturnOptions = js.native
+    def `match`(param0: SnapshotMatchOptions): SnapshotReturnOptions = js.native
     
     var matched: Double = js.native
     

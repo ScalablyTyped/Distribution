@@ -33,7 +33,7 @@ inline def createTransporter(options: TransporterOptions): Transporter = ^.asIns
 
 inline def createUserAgent(version: String): UserAgent = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserAgent")(version.asInstanceOf[js.Any]).asInstanceOf[UserAgent]
 
-inline def deserializeFailure(hasContentStatus: Response, stackFrame: js.Array[StackFrame]): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFailure")(hasContentStatus.asInstanceOf[js.Any], stackFrame.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+inline def deserializeFailure(param0: Response, stackFrame: js.Array[StackFrame]): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFailure")(param0.asInstanceOf[js.Any], stackFrame.asInstanceOf[js.Any])).asInstanceOf[js.Error]
 
 inline def deserializeSuccess[TObject](response: Response): TObject = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeSuccess")(response.asInstanceOf[js.Any]).asInstanceOf[TObject]
 

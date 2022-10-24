@@ -163,7 +163,7 @@ object distPreviewMod {
     
     def _selectStory(story: Any): Unit = js.native
     
-    def _selectStoryEvent(hasStoryId: StoryId): Unit = js.native
+    def _selectStoryEvent(param0: StoryId): Unit = js.native
     
     def _sendSetStories(): Unit = js.native
     

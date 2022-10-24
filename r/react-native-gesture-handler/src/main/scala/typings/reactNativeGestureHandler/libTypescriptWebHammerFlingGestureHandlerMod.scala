@@ -19,6 +19,6 @@ object libTypescriptWebHammerFlingGestureHandlerMod {
     
     def getTargetDirections(direction: Double): js.Array[Double] = js.native
     
-    def updateGestureConfig(hasNumberOfPointersDirectionProps: Any): PartialenabledbooleanminP = js.native
+    def updateGestureConfig(param0: Any): PartialenabledbooleanminP = js.native
   }
 }

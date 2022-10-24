@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "rc-picker"
-version := "2.6.11-7c1f12"
-scalaVersion := "3.1.2"
+version := "2.6.11-77d985"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "dayjs" % "1.11.6-be8973",
-  "org.scalablytyped" %%% "moment" % "2.29.4-a513be",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
-  "org.scalablytyped" %%% "rc-motion" % "2.6.2-9c3c76",
-  "org.scalablytyped" %%% "rc-trigger" % "5.3.1-53f196",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
-  "org.scalablytyped" %%% "std" % "4.8-3c7765")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
+  "org.scalablytyped" %%% "dayjs" % "1.11.6-153a22",
+  "org.scalablytyped" %%% "moment" % "2.29.4-dbaff2",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
+  "org.scalablytyped" %%% "rc-motion" % "2.6.2-31bfc5",
+  "org.scalablytyped" %%% "rc-trigger" % "5.3.1-601080",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
+  "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

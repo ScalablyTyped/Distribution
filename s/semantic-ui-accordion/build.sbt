@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-accordion"
-version := "2.2-dt-20220624Z-38396d"
-scalaVersion := "3.1.2"
+version := "2.2-dt-20220624Z-b08b96"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

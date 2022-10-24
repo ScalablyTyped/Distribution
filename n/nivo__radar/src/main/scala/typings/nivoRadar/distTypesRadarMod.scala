@@ -13,5 +13,5 @@ object distTypesRadarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Radar[D /* <: Record[String, Any] */](hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps: RadarSvgProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Radar")(hasIsInteractiveAnimateMotionConfigThemeRenderWrapperOtherProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Radar[D /* <: Record[String, Any] */](param0: RadarSvgProps[D]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Radar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

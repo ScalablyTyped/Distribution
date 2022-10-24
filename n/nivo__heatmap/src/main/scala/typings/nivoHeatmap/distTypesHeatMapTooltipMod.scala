@@ -13,5 +13,5 @@ object distTypesHeatMapTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HeatMapTooltip[Datum /* <: HeatMapDatum */](hasCell: TooltipProps[Datum]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapTooltip")(hasCell.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def HeatMapTooltip[Datum /* <: HeatMapDatum */](param0: TooltipProps[Datum]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
 }

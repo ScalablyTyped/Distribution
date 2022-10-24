@@ -12,5 +12,5 @@ object distTypesTreeMapHtmlNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TreeMapHtmlNode[Datum /* <: js.Object */](hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapHtmlNode")(hasNodeAnimatedPropsBorderWidthEnableLabelEnableParentLabelLabelSkipSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TreeMapHtmlNode[Datum /* <: js.Object */](param0: NodeProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeMapHtmlNode")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

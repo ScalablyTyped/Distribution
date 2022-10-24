@@ -16,8 +16,8 @@ object mod {
   
   inline def default(source: String): js.Promise[FaviconResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FaviconResponse]]
   inline def default(source: String, options: FaviconOptions): js.Promise[FaviconResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaviconResponse]]
-  inline def default(source: js.Array[Buffer | String]): js.Promise[FaviconResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FaviconResponse]]
-  inline def default(source: js.Array[Buffer | String], options: FaviconOptions): js.Promise[FaviconResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaviconResponse]]
+  inline def default(source: js.Array[String | Buffer]): js.Promise[FaviconResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FaviconResponse]]
+  inline def default(source: js.Array[String | Buffer], options: FaviconOptions): js.Promise[FaviconResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaviconResponse]]
   inline def default(source: Buffer): js.Promise[FaviconResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FaviconResponse]]
   inline def default(source: Buffer, options: FaviconOptions): js.Promise[FaviconResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaviconResponse]]
   
@@ -35,8 +35,8 @@ object mod {
   
   inline def favicons(source: String): js.Promise[FaviconResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("favicons")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FaviconResponse]]
   inline def favicons(source: String, options: FaviconOptions): js.Promise[FaviconResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("favicons")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaviconResponse]]
-  inline def favicons(source: js.Array[Buffer | String]): js.Promise[FaviconResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("favicons")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FaviconResponse]]
-  inline def favicons(source: js.Array[Buffer | String], options: FaviconOptions): js.Promise[FaviconResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("favicons")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaviconResponse]]
+  inline def favicons(source: js.Array[String | Buffer]): js.Promise[FaviconResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("favicons")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FaviconResponse]]
+  inline def favicons(source: js.Array[String | Buffer], options: FaviconOptions): js.Promise[FaviconResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("favicons")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaviconResponse]]
   inline def favicons(source: Buffer): js.Promise[FaviconResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("favicons")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FaviconResponse]]
   inline def favicons(source: Buffer, options: FaviconOptions): js.Promise[FaviconResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("favicons")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FaviconResponse]]
   

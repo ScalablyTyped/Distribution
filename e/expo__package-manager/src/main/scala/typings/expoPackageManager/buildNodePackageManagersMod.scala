@@ -37,7 +37,7 @@ object buildNodePackageManagersMod {
   open class NpmPackageManager protected ()
     extends StObject
        with PackageManager {
-    def this(hasCwdLogSilent: Log) = this()
+    def this(param0: Log) = this()
     
     /* private */ var _parseSpecs: Any = js.native
     
@@ -87,7 +87,7 @@ object buildNodePackageManagersMod {
   open class YarnPackageManager protected ()
     extends StObject
        with PackageManager {
-    def this(hasCwdLogSilent: Log) = this()
+    def this(param0: Log) = this()
     
     /* private */ var _runAsync: Any = js.native
     

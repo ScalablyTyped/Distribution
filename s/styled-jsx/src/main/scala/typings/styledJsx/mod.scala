@@ -13,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def StyleRegistry(hasChildrenRegistry: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleRegistry")(hasChildrenRegistry.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StyleRegistry(param0: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleRegistry")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def createStyleRegistry(): StyledJsxStyleRegistry = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleRegistry")().asInstanceOf[StyledJsxStyleRegistry]
   

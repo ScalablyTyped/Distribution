@@ -22,13 +22,11 @@ object libTypescriptSrcUseOnActionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasRouterGetStateSetStateKeyActionListenersBeforeRemoveListenersRouterConfigOptionsEmitter: Options
-  ): js.Function2[
+  inline def default(param0: Options): js.Function2[
     /* action */ NavigationAction, 
     /* visitedNavigators */ js.UndefOr[Set[String]], 
     Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRouterGetStateSetStateKeyActionListenersBeforeRemoveListenersRouterConfigOptionsEmitter.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* action */ NavigationAction, 
     /* visitedNavigators */ js.UndefOr[Set[String]], 
     Boolean

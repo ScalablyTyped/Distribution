@@ -12,9 +12,9 @@ object buildCommandsElementDragAndDropMod {
   val ^ : js.Any = js.native
   
   inline def default(target: Element): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def default(target: Element, hasDuration: DragAndDropOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], hasDuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(target: Element, param2: DragAndDropOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def default(target: ElementCoordinates): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def default(target: ElementCoordinates, hasDuration: DragAndDropOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], hasDuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(target: ElementCoordinates, param2: DragAndDropOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait DragAndDropOptions extends StObject {
     

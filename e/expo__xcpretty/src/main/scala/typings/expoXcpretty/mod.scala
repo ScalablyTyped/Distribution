@@ -33,7 +33,7 @@ object mod {
     val ^ : js.Any = js.native
     
     inline def create(projectRoot: String): typings.expoXcpretty.buildExpoRunFormatterMod.ExpoRunFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[typings.expoXcpretty.buildExpoRunFormatterMod.ExpoRunFormatter]
-    inline def create(projectRoot: String, hasXcodeProjectIsDebug: xcodeProjectnamestringund): typings.expoXcpretty.buildExpoRunFormatterMod.ExpoRunFormatter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any], hasXcodeProjectIsDebug.asInstanceOf[js.Any])).asInstanceOf[typings.expoXcpretty.buildExpoRunFormatterMod.ExpoRunFormatter]
+    inline def create(projectRoot: String, param1: xcodeProjectnamestringund): typings.expoXcpretty.buildExpoRunFormatterMod.ExpoRunFormatter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.expoXcpretty.buildExpoRunFormatterMod.ExpoRunFormatter]
   }
   
   @JSImport("@expo/xcpretty", "Formatter")
@@ -139,7 +139,7 @@ object mod {
     val ^ : js.Any = js.native
     
     inline def create(projectRoot: String): typings.expoXcpretty.buildUtilsPodfileTracerMod.PodfileTracer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[typings.expoXcpretty.buildUtilsPodfileTracerMod.PodfileTracer]
-    inline def create(projectRoot: String, hasXcodeProject: XcodeProject): typings.expoXcpretty.buildUtilsPodfileTracerMod.PodfileTracer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any], hasXcodeProject.asInstanceOf[js.Any])).asInstanceOf[typings.expoXcpretty.buildUtilsPodfileTracerMod.PodfileTracer]
+    inline def create(projectRoot: String, param1: XcodeProject): typings.expoXcpretty.buildUtilsPodfileTracerMod.PodfileTracer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.expoXcpretty.buildUtilsPodfileTracerMod.PodfileTracer]
   }
   
   object Runner {
@@ -148,10 +148,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createXcodeBuildHooks(projectRoot: String, hasXcodeProjectNameResolveReject: Reject): OnData = (^.asInstanceOf[js.Dynamic].applyDynamic("createXcodeBuildHooks")(projectRoot.asInstanceOf[js.Any], hasXcodeProjectNameResolveReject.asInstanceOf[js.Any])).asInstanceOf[OnData]
+    inline def createXcodeBuildHooks(projectRoot: String, param1: Reject): OnData = (^.asInstanceOf[js.Dynamic].applyDynamic("createXcodeBuildHooks")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[OnData]
     
     inline def formatXcodeBuildPipeProcessAsync(projectRoot: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("formatXcodeBuildPipeProcessAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    inline def formatXcodeBuildPipeProcessAsync(projectRoot: String, hasXcodeProjectName: XcodeProjectName): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatXcodeBuildPipeProcessAsync")(projectRoot.asInstanceOf[js.Any], hasXcodeProjectName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def formatXcodeBuildPipeProcessAsync(projectRoot: String, param1: XcodeProjectName): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatXcodeBuildPipeProcessAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     inline def getErrorLogFilePath(projectRoot: String): js.Tuple2[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorLogFilePath")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String, String]]
     

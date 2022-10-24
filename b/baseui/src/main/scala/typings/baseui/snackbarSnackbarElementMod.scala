@@ -12,5 +12,5 @@ object snackbarSnackbarElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasActionMessageActionOnClickFocusMessageOverridesProgressStartEnhancer: SnackbarElementProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasActionMessageActionOnClickFocusMessageOverridesProgressStartEnhancer.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: SnackbarElementProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

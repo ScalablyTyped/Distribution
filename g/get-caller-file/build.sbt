@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "get-caller-file"
-version := "2.0.5-f823f2"
-scalaVersion := "3.1.2"
+version := "2.0.5-dfdc5e"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

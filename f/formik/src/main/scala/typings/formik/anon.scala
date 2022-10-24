@@ -146,7 +146,7 @@ object anon {
     
     var isValidating: Boolean = js.native
     
-    def registerField(name: String, hasValidate: Any): Unit = js.native
+    def registerField(name: String, param1: Any): Unit = js.native
     
     def resetForm(): Unit = js.native
     def resetForm(nextState: Partial[FormikState[Values]]): Unit = js.native

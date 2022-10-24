@@ -11,7 +11,7 @@ object toolsSrcExtractTranslationFilesUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def compareLocations(hasLocation1: ɵParsedMessage, hasLocation2: ɵParsedMessage): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareLocations")(hasLocation1.asInstanceOf[js.Any], hasLocation2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareLocations(param0: ɵParsedMessage, param1: ɵParsedMessage): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareLocations")(param0.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def consolidateMessages(
     messages: js.Array[ɵParsedMessage],

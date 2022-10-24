@@ -13,9 +13,7 @@ object libSelectUtilsIconUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasSuffixIconClearIconMenuItemSelectedIconRemoveIconLoadingMultipleHasFeedbackPrefixClsShowArrowFeedbackIcon: ClearIcon
-  ): ItemIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSuffixIconClearIconMenuItemSelectedIconRemoveIconLoadingMultipleHasFeedbackPrefixClsShowArrowFeedbackIcon.asInstanceOf[js.Any]).asInstanceOf[ItemIcon]
+  inline def default(param0: ClearIcon): ItemIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ItemIcon]
   
   type RenderNode = ReactNode | (js.Function1[/* props */ Any, ReactNode])
 }

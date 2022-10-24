@@ -39,22 +39,22 @@ object distTypesComputeMod {
   val ^ : js.Any = js.native
   
   inline def generateGroupedBars[RawDatum /* <: BarDatum */](
-    hasLayoutMinValueMaxValueReverseWidthHeightPaddingInnerPaddingValueScaleIndexScaleConfigHiddenIdsProps: (Pick[
+    param0: (Pick[
       Required[BarSvgProps[RawDatum]], 
       keys | maxValue | minValue | innerPadding | padding | valueScale | indexScale | layout | reverse | height | width | data
     ]) & FormatValue[RawDatum]
-  ): Bars[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGroupedBars")(hasLayoutMinValueMaxValueReverseWidthHeightPaddingInnerPaddingValueScaleIndexScaleConfigHiddenIdsProps.asInstanceOf[js.Any]).asInstanceOf[Bars[RawDatum]]
+  ): Bars[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGroupedBars")(param0.asInstanceOf[js.Any]).asInstanceOf[Bars[RawDatum]]
   
   inline def generateStackedBars[RawDatum /* <: BarDatum */](
-    hasDataLayoutMinValueMaxValueReverseWidthHeightPaddingValueScaleIndexScaleConfigHiddenIdsProps: (Pick[
+    param0: (Pick[
       Required[BarSvgProps[RawDatum]], 
       keys | maxValue | minValue | innerPadding | padding | valueScale | indexScale | layout | reverse | height | width | data
     ]) & FormatValue[RawDatum]
-  ): Bars[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackedBars")(hasDataLayoutMinValueMaxValueReverseWidthHeightPaddingValueScaleIndexScaleConfigHiddenIdsProps.asInstanceOf[js.Any]).asInstanceOf[Bars[RawDatum]]
+  ): Bars[RawDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackedBars")(param0.asInstanceOf[js.Any]).asInstanceOf[Bars[RawDatum]]
   
   inline def getLegendData[RawDatum /* <: BarDatum */](
-    hasBarsDirectionFromGroupModeLayoutLegendLabelReverse: (Pick[Required[BarSvgProps[RawDatum]], groupMode | layout | reverse]) & Direction[RawDatum]
-  ): js.Array[LegendData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegendData")(hasBarsDirectionFromGroupModeLayoutLegendLabelReverse.asInstanceOf[js.Any]).asInstanceOf[js.Array[LegendData]]
+    param0: (Pick[Required[BarSvgProps[RawDatum]], groupMode | layout | reverse]) & Direction[RawDatum]
+  ): js.Array[LegendData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegendData")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[LegendData]]
   
   inline def getLegendDataForIndexes[RawDatum /* <: BarDatum */](
     bars: BarsWithHidden[RawDatum],

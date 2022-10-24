@@ -95,7 +95,7 @@ inline def transformBooleanArrayReply(reply: js.Array[Double]): js.Array[Boolean
 
 inline def transformBooleanReply(reply: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("transformBooleanReply")(reply.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def transformCommandReply(hasNameArityFlagsFirstKeyIndexLastKeyIndexStepCategories: CommandRawReply): CommandReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformCommandReply")(hasNameArityFlagsFirstKeyIndexLastKeyIndexStepCategories.asInstanceOf[js.Any]).asInstanceOf[CommandReply]
+inline def transformCommandReply(param1: CommandRawReply): CommandReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformCommandReply")(param1.asInstanceOf[js.Any]).asInstanceOf[CommandReply]
 
 inline def transformEXAT(EXAT: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformEXAT")(EXAT.asInstanceOf[js.Any]).asInstanceOf[String]
 inline def transformEXAT(EXAT: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformEXAT")(EXAT.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -126,7 +126,7 @@ inline def transformNumberInfinityReply(reply: RedisCommandArgument): Double = ^
 inline def transformPXAT(PXAT: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformPXAT")(PXAT.asInstanceOf[js.Any]).asInstanceOf[String]
 inline def transformPXAT(PXAT: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformPXAT")(PXAT.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def transformRangeReply(hasStartEnd: RawRangeReply): RangeReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformRangeReply")(hasStartEnd.asInstanceOf[js.Any]).asInstanceOf[RangeReply]
+inline def transformRangeReply(param0: RawRangeReply): RangeReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformRangeReply")(param0.asInstanceOf[js.Any]).asInstanceOf[RangeReply]
 
 inline def transformSortedSetMemberNullReply(reply: js.Array[Any]): ZMember | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("transformSortedSetMemberNullReply")(reply.asInstanceOf[js.Any]).asInstanceOf[ZMember | Null]
 inline def transformSortedSetMemberNullReply(reply: js.Tuple2[RedisCommandArgument, RedisCommandArgument]): ZMember | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("transformSortedSetMemberNullReply")(reply.asInstanceOf[js.Any]).asInstanceOf[ZMember | Null]

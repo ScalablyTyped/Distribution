@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "fake-diff"
-version := "1.0-dt-20220106Z-7c3e59"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20220106Z-3405c0"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

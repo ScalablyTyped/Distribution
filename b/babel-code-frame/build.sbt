@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "babel-code-frame"
-version := "6.20-dt-20211202Z-ee4a5b"
-scalaVersion := "3.1.2"
+version := "6.20-dt-20211202Z-7d1f24"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

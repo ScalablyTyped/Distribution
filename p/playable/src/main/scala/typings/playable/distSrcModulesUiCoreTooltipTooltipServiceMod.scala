@@ -17,7 +17,7 @@ object distSrcModulesUiCoreTooltipTooltipServiceMod {
   open class default protected ()
     extends StObject
        with TooltipService {
-    def this(hasEventEmitter: EventEmitterIEventEmitter) = this()
+    def this(param0: EventEmitterIEventEmitter) = this()
     
     /* CompleteClass */
     override def createReference(reference: HTMLElement, options: ITooltipReferenceOptions): ITooltipReference = js.native

@@ -12,5 +12,5 @@ object distTypesLabelSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def LabelSvg[RawDatum](hasNodeLabelStyle: LabelProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LabelSvg")(hasNodeLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LabelSvg[RawDatum](param0: LabelProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LabelSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

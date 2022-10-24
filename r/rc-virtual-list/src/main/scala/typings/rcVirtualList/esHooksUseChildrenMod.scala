@@ -20,6 +20,6 @@ object esHooksUseChildrenMod {
     endIndex: Double,
     setNodeRef: js.Function2[/* item */ T, /* element */ HTMLElement, Unit],
     renderFunc: RenderFunc[T],
-    hasGetKey: SharedConfig[T]
-  ): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(list.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], setNodeRef.asInstanceOf[js.Any], renderFunc.asInstanceOf[js.Any], hasGetKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+    param5: SharedConfig[T]
+  ): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(list.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], setNodeRef.asInstanceOf[js.Any], renderFunc.asInstanceOf[js.Any], param5.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
 }

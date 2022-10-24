@@ -11,6 +11,4 @@ object libCjsPuppeteerNodeInstallMod {
   val ^ : js.Any = js.native
   
   inline def downloadBrowser(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadBrowser")().asInstanceOf[js.Promise[Unit]]
-  
-  inline def logPolitely(toBeLogged: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logPolitely")(toBeLogged.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -78,6 +78,11 @@ object distEs5GridstackEngineMod {
     
     def endUpdate(): GridStackEngine = js.native
     
+    /* protected */ def findCacheLayout(n: GridStackNode, column: Double): Double = js.native
+    
+    /** find the first available empty spot for the given node width/height, updating the x,y attributes. return true if found */
+    def findEmptyPosition(node: GridStackNode): Boolean = js.native
+    
     /** float getter method */
     def float: Boolean = js.native
     /** enable/disable floating widgets (default: `false`) See [example](http://gridstackjs.com/demo/float.html) */
@@ -101,7 +106,7 @@ object distEs5GridstackEngineMod {
       * others in a clone first, then apply those changes if still within specs. */
     def moveNodeCheck(node: GridStackNode, o: GridStackMoveOpts): Boolean = js.native
     
-    /** part2 of preparing a node to fit inside our grid - checks  for x,y from grid dimensions */
+    /** part2 of preparing a node to fit inside our grid - checks for x,y,w from grid dimensions */
     def nodeBoundFix(node: GridStackNode): GridStackNode = js.native
     def nodeBoundFix(node: GridStackNode, resizing: Boolean): GridStackNode = js.native
     
@@ -125,7 +130,7 @@ object distEs5GridstackEngineMod {
     
     var removedNodes: js.Array[GridStackNode] = js.native
     
-    /** saves a copy of the largest column layout (eg 12 even when rendering oneColumnMode, so we don't loose orig layout),
+    /** saves a copy of the largest column layout (eg 12 even when rendering oneColumnMode) so we don't loose orig layout,
       * returning a list of widgets for serialization */
     def save(): js.Array[GridStackNode] = js.native
     def save(saveElement: Boolean): js.Array[GridStackNode] = js.native

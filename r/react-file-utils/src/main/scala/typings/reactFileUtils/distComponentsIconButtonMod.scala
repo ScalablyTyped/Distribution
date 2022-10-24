@@ -16,7 +16,7 @@ object distComponentsIconButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def IconButton(hasOnClickChildren: PropsWithChildren[IconButtonProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IconButton")(hasOnClickChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def IconButton(param0: PropsWithChildren[IconButtonProps]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IconButton")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait IconButtonProps extends StObject {
     

@@ -412,8 +412,8 @@ object mod {
   inline def truncate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def truncate(str: String, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(str.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def updateRateLimits(limits: RateLimits, hasStatusCodeHeaders: TransportMakeRequestResponse): RateLimits = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRateLimits")(limits.asInstanceOf[js.Any], hasStatusCodeHeaders.asInstanceOf[js.Any])).asInstanceOf[RateLimits]
-  inline def updateRateLimits(limits: RateLimits, hasStatusCodeHeaders: TransportMakeRequestResponse, now: Double): RateLimits = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRateLimits")(limits.asInstanceOf[js.Any], hasStatusCodeHeaders.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[RateLimits]
+  inline def updateRateLimits(limits: RateLimits, param1: TransportMakeRequestResponse): RateLimits = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRateLimits")(limits.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RateLimits]
+  inline def updateRateLimits(limits: RateLimits, param1: TransportMakeRequestResponse, now: Double): RateLimits = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRateLimits")(limits.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[RateLimits]
   
   inline def urlEncode(`object`: StringDictionary[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncode")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   

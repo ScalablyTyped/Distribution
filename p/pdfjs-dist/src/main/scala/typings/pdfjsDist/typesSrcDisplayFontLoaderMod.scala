@@ -15,10 +15,7 @@ object typesSrcDisplayFontLoaderMod {
   @JSImport("pdfjs-dist/types/src/display/font_loader", "FontFaceObject")
   @js.native
   open class FontFaceObject protected () extends StObject {
-    def this(
-      translatedData: Any,
-      hasIsEvalSupportedDisableFontFaceIgnoreErrorsOnUnsupportedFeatureFontRegistry: DisableFontFace
-    ) = this()
+    def this(translatedData: Any, param1: DisableFontFace) = this()
     
     var _onUnsupportedFeature: Any = js.native
     

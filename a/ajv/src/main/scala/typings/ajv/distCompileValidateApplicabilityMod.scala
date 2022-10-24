@@ -15,7 +15,7 @@ object distCompileValidateApplicabilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def schemaHasRulesForType(hasSchemaSelf: SchemaObjCxt, `type`: JSONType): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaHasRulesForType")(hasSchemaSelf.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def schemaHasRulesForType(param0: SchemaObjCxt, `type`: JSONType): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaHasRulesForType")(param0.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   
   inline def shouldUseGroup(schema: AnySchemaObject, group: RuleGroup): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldUseGroup")(schema.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

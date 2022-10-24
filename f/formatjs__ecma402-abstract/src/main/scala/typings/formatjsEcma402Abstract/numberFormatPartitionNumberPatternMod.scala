@@ -13,5 +13,5 @@ object numberFormatPartitionNumberPatternMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def PartitionNumberPattern(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: GetInternalSlots): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberPattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
+  inline def PartitionNumberPattern(numberFormat: NumberFormat, x: Double, param2: GetInternalSlots): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberPattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
 }

@@ -79,25 +79,23 @@ object mod {
     val sheetVerticalSize: SheetVerticalSize = js.native
   }
   
-  inline def DropdownMenu(
-    hasIdOnClickOnKeyDownOnMouseEnterOnMouseLeaveMenuLabelPropMenuPropsMenuStyleMenuClassNameSheetPropsSheetMenuPropsSheetStyleSheetClassNamePropSheetHeaderPropSheetFooterPropRenderAsSheetPropSheetPositionPropSheetVerticalSizeListStyleListClassNameListPropsAppearEnterExitPropTimeoutClassNamesAnchorFixedPositionOptionsGetFixedPositionOptionsTemporaryPortalPortalIntoPortalIntoIdOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropHorizontalChildrenPreventScrollCloseOnResizeCloseOnScrollPropIconRotator: DropdownMenuProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("DropdownMenu")(hasIdOnClickOnKeyDownOnMouseEnterOnMouseLeaveMenuLabelPropMenuPropsMenuStyleMenuClassNameSheetPropsSheetMenuPropsSheetStyleSheetClassNamePropSheetHeaderPropSheetFooterPropRenderAsSheetPropSheetPositionPropSheetVerticalSizeListStyleListClassNameListPropsAppearEnterExitPropTimeoutClassNamesAnchorFixedPositionOptionsGetFixedPositionOptionsTemporaryPortalPortalIntoPortalIntoIdOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropHorizontalChildrenPreventScrollCloseOnResizeCloseOnScrollPropIconRotator.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def DropdownMenu(param0: DropdownMenuProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("DropdownMenu")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/menu", "Menu")
   @js.native
   val Menu: ForwardRefExoticComponent[LabelRequiredForA11y[MenuProps] & RefAttributes[HTMLDivElement]] = js.native
   
-  inline def MenuBar(hasHoverTimeoutProps: MenuBarProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBar")(hasHoverTimeoutProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuBar(param0: MenuBarProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBar")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def MenuBarProvider(hasChildrenRootDefaultActiveIdHoverTimeout: MenuBarProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBarProvider")(hasChildrenRootDefaultActiveIdHoverTimeout.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuBarProvider(param0: MenuBarProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBarProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def MenuBarWidget(hasChildrenTabIndexPropOnFocusPropOnKeyDownProps: MenuBarWidgetProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBarWidget")(hasChildrenTabIndexPropOnFocusPropOnKeyDownProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuBarWidget(param0: MenuBarWidgetProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBarWidget")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/menu", "MenuButton")
   @js.native
   val MenuButton: ForwardRefExoticComponent[MenuButtonProps & RefAttributes[HTMLButtonElement]] = js.native
   
-  inline def MenuConfigurationProvider(hasChildrenConfiguration: MenuConfigurationProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuConfigurationProvider")(hasChildrenConfiguration.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuConfigurationProvider(param0: MenuConfigurationProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuConfigurationProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/menu", "MenuItem")
   @js.native
@@ -121,26 +119,20 @@ object mod {
   @js.native
   val MenuItemSeparator: ForwardRefExoticComponent[MenuItemSeparatorProps & RefAttributes[HTMLLIElement]] = js.native
   
-  inline def MenuKeyboardFocusProvider(hasHorizontalChildren: MenuKeyboardFocusProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuKeyboardFocusProvider")(hasHorizontalChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuKeyboardFocusProvider(param0: MenuKeyboardFocusProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuKeyboardFocusProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def MenuRenderer(
-    hasMenuRefMenuPropsMenuStyleMenuClassNameSheetPropsPropSheetHeaderPropSheetFooterSheetStyleSheetClassNameSheetMenuPropsChildrenPropHorizontalPropRenderAsSheetPropSheetPositionPropSheetVerticalSizeOnRequestCloseOnClickOnKeyDownProps: MenuRendererProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuRenderer")(hasMenuRefMenuPropsMenuStyleMenuClassNameSheetPropsPropSheetHeaderPropSheetFooterSheetStyleSheetClassNameSheetMenuPropsChildrenPropHorizontalPropRenderAsSheetPropSheetPositionPropSheetVerticalSizeOnRequestCloseOnClickOnKeyDownProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuRenderer(param0: MenuRendererProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuRenderer")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def MenuSheet(
-    hasIdChildrenHeaderFooterHorizontalMenuRefMenuPropsListStyleListClassNameListPropsPositionVerticalSizeOnClickOverlayPropsOnRequestCloseProps: LabelRequiredForA11y[MenuSheetProps]
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuSheet")(hasIdChildrenHeaderFooterHorizontalMenuRefMenuPropsListStyleListClassNameListPropsPositionVerticalSizeOnClickOverlayPropsOnRequestCloseProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuSheet(param0: LabelRequiredForA11y[MenuSheetProps]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuSheet")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def MenuVisibilityProvider(hasVisibleSetVisibleChildren: MenuVisibilityProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuVisibilityProvider")(hasVisibleSetVisibleChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuVisibilityProvider(param0: MenuVisibilityProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuVisibilityProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/menu", "MenuWidget")
   @js.native
   val MenuWidget: ForwardRefExoticComponent[LabelRequiredForA11y[MenuWidgetProps] & RefAttributes[HTMLDivElement]] = js.native
   
   inline def useContextMenu(): ContextMenuHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ContextMenuHookReturnValue]
-  inline def useContextMenu(
-    hasAnchorBaseIdMenuLabelFixedPositionOptionsOnContextMenuPreventScrollOptions: ContextMenuHookOptions
-  ): ContextMenuHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasAnchorBaseIdMenuLabelFixedPositionOptionsOnContextMenuPreventScrollOptions.asInstanceOf[js.Any]).asInstanceOf[ContextMenuHookReturnValue]
+  inline def useContextMenu(param0: ContextMenuHookOptions): ContextMenuHookReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(param0.asInstanceOf[js.Any]).asInstanceOf[ContextMenuHookReturnValue]
   
   inline def useMenu[ToggleEl /* <: HTMLElement */](options: MenuHookOptions[ToggleEl]): MenuHookReturnValue[ToggleEl] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenu")(options.asInstanceOf[js.Any]).asInstanceOf[MenuHookReturnValue[ToggleEl]]
   
@@ -149,7 +141,7 @@ object mod {
   inline def useMenuBarWidgetFocusId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuBarWidgetFocusId")().asInstanceOf[String]
   
   inline def useMenuConfiguration(): ReadonlyMenuConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuConfiguration")().asInstanceOf[ReadonlyMenuConfiguration]
-  inline def useMenuConfiguration(hasHorizontalRenderAsSheetSheetHeaderSheetFooterSheetPositionSheetVerticalSize: MenuConfiguration): ReadonlyMenuConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuConfiguration")(hasHorizontalRenderAsSheetSheetHeaderSheetFooterSheetPositionSheetVerticalSize.asInstanceOf[js.Any]).asInstanceOf[ReadonlyMenuConfiguration]
+  inline def useMenuConfiguration(param0: MenuConfiguration): ReadonlyMenuConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuConfiguration")(param0.asInstanceOf[js.Any]).asInstanceOf[ReadonlyMenuConfiguration]
   
   inline def useMenuVisibility(): ReadonlyMenuVisibilityCon = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuVisibility")().asInstanceOf[ReadonlyMenuVisibilityCon]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Evaluate extends StObject {
   
-  def evaluate(hasZoom: ZoomAny, properties: Any): Any
+  def evaluate(param0: ZoomAny, properties: Any): Any
   
   var interpolationFactor: Any
   

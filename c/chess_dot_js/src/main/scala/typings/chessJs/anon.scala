@@ -16,20 +16,18 @@ object anon {
       * Pass true if you want this function to output verbose objects
       * instead of strings.
       */
-    var verbose: js.UndefOr[`false`] = js.undefined
+    var verbose: `true`
   }
   object `0` {
     
     inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(verbose = true)
       __obj.asInstanceOf[`0`]
     }
     
     extension [Self <: `0`](x: Self) {
       
-      inline def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
-      
-      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,37 +37,16 @@ object anon {
       * Pass true if you want this function to output verbose objects
       * instead of strings.
       */
-    var verbose: `true`
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object `1` {
     
     inline def apply(): `1` = {
-      val __obj = js.Dynamic.literal(verbose = true)
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`1`]
     }
     
     extension [Self <: `1`](x: Self) {
-      
-      inline def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `2` extends StObject {
-    
-    /**
-      * Pass true if you want this function to output verbose objects
-      * instead of strings.
-      */
-    var verbose: js.UndefOr[Boolean] = js.undefined
-  }
-  object `2` {
-    
-    inline def apply(): `2` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`2`]
-    }
-    
-    extension [Self <: `2`](x: Self) {
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
@@ -146,6 +123,11 @@ object anon {
     var legal: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Only return moves of given piece
+      */
+    var piece: js.UndefOr[PieceType] = js.undefined
+    
+    /**
       * The string to test if it is a valid move, if it is not then an
       * empty array is returned
       */
@@ -166,6 +148,10 @@ object anon {
       inline def setLegal(value: Boolean): Self = StObject.set(x, "legal", value.asInstanceOf[js.Any])
       
       inline def setLegalUndefined: Self = StObject.set(x, "legal", js.undefined)
+      
+      inline def setPiece(value: PieceType): Self = StObject.set(x, "piece", value.asInstanceOf[js.Any])
+      
+      inline def setPieceUndefined: Self = StObject.set(x, "piece", js.undefined)
       
       inline def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
       
@@ -244,6 +230,55 @@ object anon {
     }
   }
   
+  trait Piece extends StObject {
+    
+    /**
+      * Set to true to return return pseudo-legal moves (this includes moves that allow the king
+      * to be captured)
+      */
+    var legal: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Only return moves of given piece
+      */
+    var piece: js.UndefOr[PieceType] = js.undefined
+    
+    /**
+      * The string to test if it is a valid move, if it is not then an
+      * empty array is returned
+      */
+    var square: js.UndefOr[String] = js.undefined
+    
+    /** Set to true to return verbose move objects instead of strings */
+    var verbose: js.UndefOr[`false`] = js.undefined
+  }
+  object Piece {
+    
+    inline def apply(): Piece = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Piece]
+    }
+    
+    extension [Self <: Piece](x: Self) {
+      
+      inline def setLegal(value: Boolean): Self = StObject.set(x, "legal", value.asInstanceOf[js.Any])
+      
+      inline def setLegalUndefined: Self = StObject.set(x, "legal", js.undefined)
+      
+      inline def setPiece(value: PieceType): Self = StObject.set(x, "piece", value.asInstanceOf[js.Any])
+      
+      inline def setPieceUndefined: Self = StObject.set(x, "piece", js.undefined)
+      
+      inline def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+      
+      inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
+      
+      inline def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    }
+  }
+  
   trait Sloppy extends StObject {
     
     /**
@@ -276,13 +311,18 @@ object anon {
     var legal: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Only return moves of given piece
+      */
+    var piece: js.UndefOr[PieceType] = js.undefined
+    
+    /**
       * The string to test if it is a valid move, if it is not then an
       * empty array is returned
       */
     var square: js.UndefOr[String] = js.undefined
     
     /** Set to true to return verbose move objects instead of strings */
-    var verbose: js.UndefOr[`false`] = js.undefined
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Square {
     
@@ -297,11 +337,15 @@ object anon {
       
       inline def setLegalUndefined: Self = StObject.set(x, "legal", js.undefined)
       
+      inline def setPiece(value: PieceType): Self = StObject.set(x, "piece", value.asInstanceOf[js.Any])
+      
+      inline def setPieceUndefined: Self = StObject.set(x, "piece", js.undefined)
+      
       inline def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
       
       inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
       
-      inline def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
       inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
@@ -310,19 +354,10 @@ object anon {
   trait Verbose extends StObject {
     
     /**
-      * Set to true to return return pseudo-legal moves (this includes moves that allow the king
-      * to be captured)
+      * Pass true if you want this function to output verbose objects
+      * instead of strings.
       */
-    var legal: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The string to test if it is a valid move, if it is not then an
-      * empty array is returned
-      */
-    var square: js.UndefOr[String] = js.undefined
-    
-    /** Set to true to return verbose move objects instead of strings */
-    var verbose: js.UndefOr[Boolean] = js.undefined
+    var verbose: js.UndefOr[`false`] = js.undefined
   }
   object Verbose {
     
@@ -333,15 +368,7 @@ object anon {
     
     extension [Self <: Verbose](x: Self) {
       
-      inline def setLegal(value: Boolean): Self = StObject.set(x, "legal", value.asInstanceOf[js.Any])
-      
-      inline def setLegalUndefined: Self = StObject.set(x, "legal", js.undefined)
-      
-      inline def setSquare(value: String): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
-      
-      inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
-      
-      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
       inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }

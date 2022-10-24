@@ -33,22 +33,27 @@ object anon {
   
   trait `0` extends StObject {
     
-    def default(arg: UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]]): js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    var default: js.UndefOr[
+        js.Function1[
+          /* param0 */ UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]], 
+          js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+        ]
+      ] = js.undefined
   }
   object `0` {
     
-    inline def apply(
-      default: UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]] => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
-    ): `0` = {
-      val __obj = js.Dynamic.literal(default = js.Any.fromFunction1(default))
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
     extension [Self <: `0`](x: Self) {
       
       inline def setDefault(
-        value: UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]] => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+        value: /* param0 */ UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]] => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
       ): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     }
   }
   
@@ -78,18 +83,27 @@ object anon {
   
   trait Default extends StObject {
     
-    def default(arg: Component): js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    var default: js.UndefOr[
+        js.Function1[
+          /* param0 */ Component, 
+          js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+        ]
+      ] = js.undefined
   }
   object Default {
     
-    inline def apply(default: Component => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]): Default = {
-      val __obj = js.Dynamic.literal(default = js.Any.fromFunction1(default))
+    inline def apply(): Default = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Default]
     }
     
     extension [Self <: Default](x: Self) {
       
-      inline def setDefault(value: Component => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+      inline def setDefault(
+        value: /* param0 */ Component => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+      ): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     }
   }
   

@@ -16,13 +16,6 @@ object AdminGroupsMigration {
     __obj.asInstanceOf[AdminGroupsMigration]
   }
   
-  extension [Self <: AdminGroupsMigration](x: Self) {
-    
-    inline def setArchive(value: ArchiveCollection): Self = StObject.set(x, "Archive", value.asInstanceOf[js.Any])
-    
-    inline def setArchiveUndefined: Self = StObject.set(x, "Archive", js.undefined)
-  }
-  
   object Collection {
     
     @js.native
@@ -33,6 +26,13 @@ object AdminGroupsMigration {
       // Inserts a new mail into the archive of the Google group.
       def insert(groupId: String, mediaData: Any): typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups = js.native
     }
+  }
+  
+  extension [Self <: AdminGroupsMigration](x: Self) {
+    
+    inline def setArchive(value: ArchiveCollection): Self = StObject.set(x, "Archive", value.asInstanceOf[js.Any])
+    
+    inline def setArchiveUndefined: Self = StObject.set(x, "Archive", js.undefined)
   }
   
   object Schema {

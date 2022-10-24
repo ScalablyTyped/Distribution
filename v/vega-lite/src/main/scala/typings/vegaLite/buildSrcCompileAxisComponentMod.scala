@@ -44,7 +44,7 @@ object buildSrcCompileAxisComponentMod {
   @JSImport("vega-lite/build/src/compile/axis/component", "AXIS_COMPONENT_PROPERTIES")
   @js.native
   val AXIS_COMPONENT_PROPERTIES: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 81, starting with typings.vegaLite.vegaLiteStrings.values, typings.vegaLite.vegaLiteStrings.description, typings.vegaLite.vegaLiteStrings.offset */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 81, starting with typings.vegaLite.vegaLiteStrings.values, typings.vegaLite.vegaLiteStrings.offset, typings.vegaLite.vegaLiteStrings.grid */ Any
   ] = js.native
   
   @JSImport("vega-lite/build/src/compile/axis/component", "AxisComponent")

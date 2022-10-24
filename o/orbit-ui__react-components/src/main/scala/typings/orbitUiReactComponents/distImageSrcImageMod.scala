@@ -28,7 +28,7 @@ object distImageSrcImageMod {
   @js.native
   val Image: OrbitComponent[HTMLElement, InnerImageProps] = js.native
   
-  inline def InnerImage(hasShapeSizeWidthHeightFitPositionAsForwardedRefRest: InnerImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerImage")(hasShapeSizeWidthHeightFitPositionAsForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerImage(param0: InnerImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerImage")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ImageProps = ComponentProps[OrbitComponent[HTMLElement, InnerImageProps]]
   

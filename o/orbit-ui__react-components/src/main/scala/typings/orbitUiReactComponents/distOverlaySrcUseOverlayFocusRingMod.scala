@@ -12,7 +12,7 @@ object distOverlaySrcUseOverlayFocusRingMod {
   val ^ : js.Any = js.native
   
   inline def useOverlayFocusRing(): ClassNameString = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayFocusRing")().asInstanceOf[ClassNameString]
-  inline def useOverlayFocusRing(hasFocus: UseOverlayFocusRingProps): ClassNameString = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayFocusRing")(hasFocus.asInstanceOf[js.Any]).asInstanceOf[ClassNameString]
+  inline def useOverlayFocusRing(param0: UseOverlayFocusRingProps): ClassNameString = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayFocusRing")(param0.asInstanceOf[js.Any]).asInstanceOf[ClassNameString]
   
   trait UseOverlayFocusRingProps extends StObject {
     

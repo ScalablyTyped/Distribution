@@ -16,7 +16,7 @@ object distLibPollingCommonMod {
   
   inline def delayNextStep(attemptsCount: Double, maxAttempts: Double, pollInterval: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delayNextStep")(attemptsCount.asInstanceOf[js.Any], maxAttempts.asInstanceOf[js.Any], pollInterval.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def extractResolutionMetaFromScanResult(hasNameTargetIdentityPolicyTargetReference: ScanResult): ResolutionMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("extractResolutionMetaFromScanResult")(hasNameTargetIdentityPolicyTargetReference.asInstanceOf[js.Any]).asInstanceOf[ResolutionMeta]
+  inline def extractResolutionMetaFromScanResult(param0: ScanResult): ResolutionMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("extractResolutionMetaFromScanResult")(param0.asInstanceOf[js.Any]).asInstanceOf[ResolutionMeta]
   
   inline def handleProcessingStatus(response: ResolveAndMonitorFactsResponse): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleProcessingStatus")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def handleProcessingStatus(response: ResolveAndTestFactsResponse): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleProcessingStatus")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]

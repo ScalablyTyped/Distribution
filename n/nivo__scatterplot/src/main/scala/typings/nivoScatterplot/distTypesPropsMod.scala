@@ -70,9 +70,7 @@ object distTypesPropsMod {
     def markers: js.Array[scala.Nothing] = js.native
     inline def markers_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("markers")(x.asInstanceOf[js.Any])
     
-    inline def nodeComponent[RawDatum /* <: ScatterPlotDatum */](
-      hasNodeStyleBlendModeIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: ScatterPlotNodeProps[RawDatum]
-    ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(hasNodeStyleBlendModeIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def nodeComponent[RawDatum /* <: ScatterPlotDatum */](param0: ScatterPlotNodeProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/scatterplot/dist/types/props", "canvasDefaultProps.nodeId")
     @js.native
@@ -91,7 +89,7 @@ object distTypesPropsMod {
     
     inline def renderNode(ctx: CanvasRenderingContext2D, node: ScatterPlotNodeData[ScatterPlotDatum]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderNode")(ctx.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def tooltip[RawDatum_1 /* <: ScatterPlotDatum */](hasNode: ScatterPlotTooltipProps[RawDatum_1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasNode.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum_1 /* <: ScatterPlotDatum */](param0: ScatterPlotTooltipProps[RawDatum_1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/scatterplot/dist/types/props", "canvasDefaultProps.xScale")
     @js.native
@@ -150,9 +148,7 @@ object distTypesPropsMod {
     def markers: js.Array[scala.Nothing] = js.native
     inline def markers_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("markers")(x.asInstanceOf[js.Any])
     
-    inline def nodeComponent[RawDatum /* <: ScatterPlotDatum */](
-      hasNodeStyleBlendModeIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: ScatterPlotNodeProps[RawDatum]
-    ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(hasNodeStyleBlendModeIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def nodeComponent[RawDatum /* <: ScatterPlotDatum */](param0: ScatterPlotNodeProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/scatterplot/dist/types/props", "commonDefaultProps.nodeId")
     @js.native
@@ -164,7 +160,7 @@ object distTypesPropsMod {
     def nodeSize: Double = js.native
     inline def nodeSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nodeSize")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum_1 /* <: ScatterPlotDatum */](hasNode: ScatterPlotTooltipProps[RawDatum_1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasNode.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum_1 /* <: ScatterPlotDatum */](param0: ScatterPlotTooltipProps[RawDatum_1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/scatterplot/dist/types/props", "commonDefaultProps.xScale")
     @js.native
@@ -243,9 +239,7 @@ object distTypesPropsMod {
     def motionConfig: String = js.native
     inline def motionConfig_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
-    inline def nodeComponent[RawDatum /* <: ScatterPlotDatum */](
-      hasNodeStyleBlendModeIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClick: ScatterPlotNodeProps[RawDatum]
-    ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(hasNodeStyleBlendModeIsInteractiveOnMouseEnterOnMouseMoveOnMouseLeaveOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def nodeComponent[RawDatum /* <: ScatterPlotDatum */](param0: ScatterPlotNodeProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeComponent")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/scatterplot/dist/types/props", "svgDefaultProps.nodeId")
     @js.native
@@ -262,7 +256,7 @@ object distTypesPropsMod {
     def role: String = js.native
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
     
-    inline def tooltip[RawDatum_1 /* <: ScatterPlotDatum */](hasNode: ScatterPlotTooltipProps[RawDatum_1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(hasNode.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def tooltip[RawDatum_1 /* <: ScatterPlotDatum */](param0: ScatterPlotTooltipProps[RawDatum_1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@nivo/scatterplot/dist/types/props", "svgDefaultProps.useMesh")
     @js.native

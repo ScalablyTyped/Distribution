@@ -144,7 +144,7 @@ object componentIconDotserviceMod {
     /* protected */ var sanitizer: DomSanitizer = js.native
     
     def twoToneColor: TwoToneColorPaletteSetter = js.native
-    def twoToneColor_=(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = js.native
+    def twoToneColor_=(param0: TwoToneColorPaletteSetter): Unit = js.native
     
     /**
       * Call this method to switch to jsonp like loading.

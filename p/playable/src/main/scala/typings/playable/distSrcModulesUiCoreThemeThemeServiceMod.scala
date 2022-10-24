@@ -16,7 +16,7 @@ object distSrcModulesUiCoreThemeThemeServiceMod {
   open class default protected ()
     extends StObject
        with ThemeService {
-    def this(hasThemeConfig: ThemeConfig) = this()
+    def this(param0: ThemeConfig) = this()
     
     /* private */ /* CompleteClass */
     var _styleSheet: Any = js.native

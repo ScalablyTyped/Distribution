@@ -169,7 +169,7 @@ object foundationMod {
       * - Updates UI based on internal state.
       */
     def layout(): Unit = js.native
-    def layout(hasSkipUpdateUI: SkipUpdateUI): Unit = js.native
+    def layout(param0: SkipUpdateUI): Unit = js.native
     
     /** Maps clientX to a value on the slider scale. */
     /* private */ var mapClientXOnSliderScale: Any = js.native

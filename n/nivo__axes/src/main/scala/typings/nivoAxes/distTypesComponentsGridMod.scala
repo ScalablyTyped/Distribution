@@ -12,10 +12,5 @@ object distTypesComponentsGridMod {
   
   @JSImport("@nivo/axes/dist/types/components/Grid", "Grid")
   @js.native
-  val Grid: MemoExoticComponent[
-    js.Function1[
-      /* hasWidthHeightXScaleYScaleXValuesYValues */ Width[ScaleValue, ScaleValue], 
-      Element
-    ]
-  ] = js.native
+  val Grid: MemoExoticComponent[js.Function1[/* param0 */ Width[ScaleValue, ScaleValue], Element]] = js.native
 }

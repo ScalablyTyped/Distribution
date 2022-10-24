@@ -14,7 +14,7 @@ object distInMemoryLRUCacheMod {
   open class InMemoryLRUCache[V] ()
     extends StObject
        with KeyValueCache[V] {
-    def this(hasMaxSizeSizeCalculatorOnDispose: MaxSize[V]) = this()
+    def this(param0: MaxSize[V]) = this()
     
     def flush(): js.Promise[Unit] = js.native
     

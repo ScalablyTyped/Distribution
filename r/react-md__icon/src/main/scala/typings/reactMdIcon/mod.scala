@@ -39,9 +39,7 @@ object mod {
   @js.native
   val FontIcon: ForwardRefExoticComponent[FontIconProps & RefAttributes[HTMLElement]] = js.native
   
-  inline def IconProvider(
-    hasChildrenBackCheckboxDropdownExpanderErrorForwardMenuNotificationPasswordRadioSelectedSortUpload: IconProviderProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("IconProvider")(hasChildrenBackCheckboxDropdownExpanderErrorForwardMenuNotificationPasswordRadioSelectedSortUpload.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def IconProvider(param0: IconProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("IconProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/icon", "IconRotator")
   @js.native
@@ -51,9 +49,7 @@ object mod {
   @js.native
   val SVGIcon: ForwardRefExoticComponent[SVGIconProps & RefAttributes[SVGSVGElement]] = js.native
   
-  inline def TextIconSpacing(
-    hasClassNamePropIconChildrenStackedIconAfterFlexReverseForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName: TextIconSpacingProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TextIconSpacing")(hasClassNamePropIconChildrenStackedIconAfterFlexReverseForceIconWrapBeforeClassNameAfterClassNameAboveClassNameBelowClassName.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def TextIconSpacing(param0: TextIconSpacingProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TextIconSpacing")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useIcon(
     name: back | checkbox | dropdown | error | expander | forward | menu | notification | password | radio | selected | sort | upload

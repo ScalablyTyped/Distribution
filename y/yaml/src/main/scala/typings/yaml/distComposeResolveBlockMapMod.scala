@@ -16,10 +16,5 @@ object distComposeResolveBlockMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def resolveBlockMap(
-    hasComposeNodeComposeEmptyNode: ComposeNode_,
-    ctx: ComposeContext,
-    bm: BlockMap,
-    onError: ComposeErrorHandler
-  ): Parsed[ParsedNode, ParsedNode | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBlockMap")(hasComposeNodeComposeEmptyNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], bm.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed[ParsedNode, ParsedNode | Null]]
+  inline def resolveBlockMap(param0: ComposeNode_, ctx: ComposeContext, bm: BlockMap, onError: ComposeErrorHandler): Parsed[ParsedNode, ParsedNode | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBlockMap")(param0.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], bm.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed[ParsedNode, ParsedNode | Null]]
 }

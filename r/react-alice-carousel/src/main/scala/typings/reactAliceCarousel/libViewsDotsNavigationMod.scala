@@ -16,7 +16,7 @@ object libViewsDotsNavigationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def DotsNavigation(hasStateOnClickOnMouseEnterOnMouseLeaveControlsStrategyRenderDotsItem: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DotsNavigation")(hasStateOnClickOnMouseEnterOnMouseLeaveControlsStrategyRenderDotsItem.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DotsNavigation(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DotsNavigation")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -28,7 +28,7 @@ object libViewsDotsNavigationMod {
     
     var onMouseLeave: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.undefined
     
-    var renderDotsItem: js.UndefOr[js.Function1[/* hasIsActiveActiveIndex */ IsActive, Any]] = js.undefined
+    var renderDotsItem: js.UndefOr[js.Function1[/* param0 */ IsActive, Any]] = js.undefined
     
     var state: State
   }
@@ -55,7 +55,7 @@ object libViewsDotsNavigationMod {
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      inline def setRenderDotsItem(value: /* hasIsActiveActiveIndex */ IsActive => Any): Self = StObject.set(x, "renderDotsItem", js.Any.fromFunction1(value))
+      inline def setRenderDotsItem(value: /* param0 */ IsActive => Any): Self = StObject.set(x, "renderDotsItem", js.Any.fromFunction1(value))
       
       inline def setRenderDotsItemUndefined: Self = StObject.set(x, "renderDotsItem", js.undefined)
       

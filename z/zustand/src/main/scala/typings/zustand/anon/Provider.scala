@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Provider[S /* <: StoreApi[Any] */] extends StObject {
   
-  def Provider(hasCreateStoreChildren: Children[S]): FunctionComponentElement[ProviderProps[js.UndefOr[S]]]
+  def Provider(param0: Children[S]): FunctionComponentElement[ProviderProps[js.UndefOr[S]]]
   
   var useStore: UseContextStore[S]
   

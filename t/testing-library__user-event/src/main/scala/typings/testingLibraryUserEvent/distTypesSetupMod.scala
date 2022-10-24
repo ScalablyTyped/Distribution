@@ -71,7 +71,7 @@ object distTypesSetupMod {
     inline def tab(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("tab")().asInstanceOf[js.Promise[Unit]]
     
     inline def tab_0(
-      options: DirectOptions & (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(this : @testing-library/user-event.@testing-library/user-event/dist/types/setup/setup.Instance, hasShift : @testing-library/user-event.anon.Shift | undefined): std.Promise<void>>[0] */ js.Any)
+      options: DirectOptions & (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(this : @testing-library/user-event.@testing-library/user-event/dist/types/setup/setup.Instance, param1 : @testing-library/user-event.anon.Shift | undefined): std.Promise<void>>[0] */ js.Any)
     ): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("tab")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     inline def tripleClick(element: Element): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("tripleClick")(element.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
@@ -82,7 +82,7 @@ object distTypesSetupMod {
     inline def type_2(
       element: Element,
       text: String,
-      options: DirectOptions & (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(this : @testing-library/user-event.@testing-library/user-event/dist/types/setup/setup.Instance, element : @testing-library/user-event.@testing-library/user-event/dist/types/utils/pointer/cssPointerEvents.<global>.Element, text : string, hasSkipClickSkipAutoCloseInitialSelectionStartInitialSelectionEnd : @testing-library/user-event.@testing-library/user-event/dist/types/utility/type.typeOptions | undefined): std.Promise<void>>[2] */ js.Any)
+      options: DirectOptions & (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(this : @testing-library/user-event.@testing-library/user-event/dist/types/setup/setup.Instance, element : @testing-library/user-event.@testing-library/user-event/dist/types/utils/pointer/cssPointerEvents.<global>.Element, text : string, param3 : @testing-library/user-event.@testing-library/user-event/dist/types/utility/type.typeOptions | undefined): std.Promise<void>>[2] */ js.Any)
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     inline def unhover(element: Element): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unhover")(element.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]

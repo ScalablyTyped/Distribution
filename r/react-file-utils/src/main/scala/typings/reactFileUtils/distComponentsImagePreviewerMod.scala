@@ -16,7 +16,7 @@ object distComponentsImagePreviewerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ImagePreviewer(hasMultipleDisabledImageUploadsHandleRemoveHandleRetryHandleFiles: ImagePreviewerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImagePreviewer")(hasMultipleDisabledImageUploadsHandleRemoveHandleRetryHandleFiles.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ImagePreviewer(param0: ImagePreviewerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImagePreviewer")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type CustomMouseEvent = js.Function2[/* id */ String, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]
   

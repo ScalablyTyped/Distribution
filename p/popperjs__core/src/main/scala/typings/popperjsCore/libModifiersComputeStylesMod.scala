@@ -20,9 +20,7 @@ object libModifiersComputeStylesMod {
   @js.native
   val default: ComputeStylesModifier = js.native
   
-  inline def mapToStyles(
-    hasPopperPopperRectPlacementVariationOffsetsPositionGpuAccelerationAdaptiveRoundOffsetsIsFixed: Adaptive
-  ): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("mapToStyles")(hasPopperPopperRectPlacementVariationOffsetsPositionGpuAccelerationAdaptiveRoundOffsetsIsFixed.asInstanceOf[js.Any]).asInstanceOf[Bottom]
+  inline def mapToStyles(param0: Adaptive): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("mapToStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[Bottom]
   
   type ComputeStylesModifier = Modifier[computeStyles, Options]
   

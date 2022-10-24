@@ -17,7 +17,7 @@ object typesCollapseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Collapse[E /* <: HTMLElement */](hasChildrenCollapsedClassNameOptions: CollapseProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Collapse")(hasChildrenCollapsedClassNameOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Collapse[E /* <: HTMLElement */](param0: CollapseProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Collapse")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   /* Inlined parent std.Omit<@react-md/transition.@react-md/transition/types/useCollapseTransition.CollapseTransitionHookOptions<E>, 'transitionIn'> */
   trait CollapseProps[E /* <: HTMLElement */] extends StObject {

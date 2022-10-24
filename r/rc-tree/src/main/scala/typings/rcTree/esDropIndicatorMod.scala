@@ -12,5 +12,5 @@ object esDropIndicatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasDropPositionDropLevelOffsetIndent: DropLevelOffset): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDropPositionDropLevelOffsetIndent.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: DropLevelOffset): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

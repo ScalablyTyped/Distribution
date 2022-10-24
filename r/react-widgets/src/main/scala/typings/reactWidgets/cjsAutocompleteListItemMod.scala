@@ -11,7 +11,7 @@ object cjsAutocompleteListItemMod {
   
   object default {
     
-    inline def apply(hasTextSearchTerm: SearchTerm): String | Element = ^.asInstanceOf[js.Dynamic].apply(hasTextSearchTerm.asInstanceOf[js.Any]).asInstanceOf[String | Element]
+    inline def apply(param0: SearchTerm): String | Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[String | Element]
     
     @JSImport("react-widgets/cjs/AutocompleteListItem", JSImport.Default)
     @js.native

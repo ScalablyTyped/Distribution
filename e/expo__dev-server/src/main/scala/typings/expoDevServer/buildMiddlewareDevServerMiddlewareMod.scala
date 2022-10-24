@@ -12,5 +12,5 @@ object buildMiddlewareDevServerMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createDevServerMiddleware(projectRoot: String, hasWatchFoldersPortLogger: Logger): AttachToServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createDevServerMiddleware")(projectRoot.asInstanceOf[js.Any], hasWatchFoldersPortLogger.asInstanceOf[js.Any])).asInstanceOf[AttachToServer]
+  inline def createDevServerMiddleware(projectRoot: String, param1: Logger): AttachToServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createDevServerMiddleware")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[AttachToServer]
 }

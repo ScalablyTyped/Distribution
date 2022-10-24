@@ -11,7 +11,7 @@ trait NightwatchScreenshotOptions extends StObject {
   var enabled: js.UndefOr[Boolean] = js.native
   
   def filename_format(): String = js.native
-  def filename_format(hasTestSuiteTestCaseIsErrorDateObject: DateObject): String = js.native
+  def filename_format(param0: DateObject): String = js.native
   
   var on_error: js.UndefOr[Boolean] = js.native
   

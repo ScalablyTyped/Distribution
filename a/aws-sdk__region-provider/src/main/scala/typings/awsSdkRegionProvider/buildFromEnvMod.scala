@@ -16,7 +16,7 @@ object buildFromEnvMod {
   val ENV_REGION: /* "AWS_REGION" */ String = js.native
   
   inline def fromEnv(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[Provider[String]]
-  inline def fromEnv(hasEnvironmentVariableName: EnvConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(hasEnvironmentVariableName.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
+  inline def fromEnv(param0: EnvConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(param0.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
   
   trait EnvConfiguration extends StObject {
     

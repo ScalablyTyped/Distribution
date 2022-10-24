@@ -34,7 +34,7 @@ object buildIosBundleIdentifierMod {
     * @returns {string | null} bundle identifier of the Xcode project or null if the project is not configured
     */
   inline def getBundleIdentifierFromPbxproj(projectRoot: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundleIdentifierFromPbxproj")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  inline def getBundleIdentifierFromPbxproj(projectRoot: String, hasTargetNameBuildConfiguration: BuildConfiguration): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundleIdentifierFromPbxproj")(projectRoot.asInstanceOf[js.Any], hasTargetNameBuildConfiguration.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getBundleIdentifierFromPbxproj(projectRoot: String, param1: BuildConfiguration): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundleIdentifierFromPbxproj")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   inline def resetAllPlistBundleIdentifiers(projectRoot: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAllPlistBundleIdentifiers")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

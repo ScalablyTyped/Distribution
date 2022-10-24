@@ -369,6 +369,25 @@ object mod {
       }
     }
     
+    extension [Self <: Popper](x: Self) {
+      
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      
+      inline def setDisableEventListeners(value: () => Unit): Self = StObject.set(x, "disableEventListeners", js.Any.fromFunction0(value))
+      
+      inline def setEnableEventListeners(value: () => Unit): Self = StObject.set(x, "enableEventListeners", js.Any.fromFunction0(value))
+      
+      inline def setOptions(value: typings.popperJs.mod.PopperOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setPopper(value: Element): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+      
+      inline def setReference(value: Element | typings.popperJs.mod.ReferenceObject): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      
+      inline def setScheduleUpdate(value: () => Unit): Self = StObject.set(x, "scheduleUpdate", js.Any.fromFunction0(value))
+      
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    }
+    
     trait Offset extends StObject {
       
       var height: Double
@@ -484,25 +503,6 @@ object mod {
       inline def `top-end`: typings.popperJs.popperJsStrings.`top-end` = "top-end".asInstanceOf[typings.popperJs.popperJsStrings.`top-end`]
       
       inline def `top-start`: typings.popperJs.popperJsStrings.`top-start` = "top-start".asInstanceOf[typings.popperJs.popperJsStrings.`top-start`]
-    }
-    
-    extension [Self <: Popper](x: Self) {
-      
-      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-      
-      inline def setDisableEventListeners(value: () => Unit): Self = StObject.set(x, "disableEventListeners", js.Any.fromFunction0(value))
-      
-      inline def setEnableEventListeners(value: () => Unit): Self = StObject.set(x, "enableEventListeners", js.Any.fromFunction0(value))
-      
-      inline def setOptions(value: typings.popperJs.mod.PopperOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setPopper(value: Element): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
-      
-      inline def setReference(value: Element | typings.popperJs.mod.ReferenceObject): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
-      
-      inline def setScheduleUpdate(value: () => Unit): Self = StObject.set(x, "scheduleUpdate", js.Any.fromFunction0(value))
-      
-      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
     
     trait PopperOptions extends StObject {

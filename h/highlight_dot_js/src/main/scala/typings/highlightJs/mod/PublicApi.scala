@@ -46,8 +46,8 @@ trait PublicApi extends StObject {
   
   var regex: AnyNumberOfTimes = js.native
   
-  def registerAliases(aliasList: String, hasLanguageName: LanguageName): Unit = js.native
-  def registerAliases(aliasList: js.Array[String], hasLanguageName: LanguageName): Unit = js.native
+  def registerAliases(aliasList: String, param1: LanguageName): Unit = js.native
+  def registerAliases(aliasList: js.Array[String], param1: LanguageName): Unit = js.native
   
   def registerLanguage(languageName: String, language: LanguageFn): Unit = js.native
   

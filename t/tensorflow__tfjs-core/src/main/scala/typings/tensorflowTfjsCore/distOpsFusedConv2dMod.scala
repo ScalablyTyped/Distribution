@@ -13,7 +13,5 @@ object distOpsFusedConv2dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def conv2d[T /* <: Tensor3D | Tensor4D */](
-    hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Activation[T]
-  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def conv2d[T /* <: Tensor3D | Tensor4D */](param0: Activation[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(param0.asInstanceOf[js.Any]).asInstanceOf[T]
 }

@@ -28,9 +28,7 @@ object typesTooltippedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Tooltipped(
-    hasIdStyleChildrenTooltipChildrenDenseVhMarginVwMarginSpacingDenseSpacingPropPositionThresholdOnClickOnMouseEnterOnMouseLeaveOnTouchStartOnContextMenuOnBlurOnFocusOnKeyDownDescribedByDefaultPositionTemporaryDisableSwappingDisableHoverModeDisableAutoSpacingProps: TooltippedProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltipped")(hasIdStyleChildrenTooltipChildrenDenseVhMarginVwMarginSpacingDenseSpacingPropPositionThresholdOnClickOnMouseEnterOnMouseLeaveOnTouchStartOnContextMenuOnBlurOnFocusOnKeyDownDescribedByDefaultPositionTemporaryDisableSwappingDisableHoverModeDisableAutoSpacingProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Tooltipped(param0: TooltippedProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltipped")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   type ChildElement = ReactElement
   

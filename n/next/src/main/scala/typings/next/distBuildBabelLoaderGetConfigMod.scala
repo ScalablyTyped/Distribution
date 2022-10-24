@@ -11,7 +11,7 @@ object distBuildBabelLoaderGetConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasSourceTargetLoaderOptionsFilenameInputSourceMap: Filename): BabelConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSourceTargetLoaderOptionsFilenameInputSourceMap.asInstanceOf[js.Any]).asInstanceOf[BabelConfig]
+  inline def default(param1: Filename): BabelConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[BabelConfig]
   
   type BabelConfig = Any
 }

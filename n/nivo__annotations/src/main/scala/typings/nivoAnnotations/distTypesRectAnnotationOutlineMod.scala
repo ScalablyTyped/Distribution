@@ -12,5 +12,5 @@ object distTypesRectAnnotationOutlineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def RectAnnotationOutline(hasXYWidthHeightBorderRadius: BorderRadius): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RectAnnotationOutline")(hasXYWidthHeightBorderRadius.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RectAnnotationOutline(param0: BorderRadius): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RectAnnotationOutline")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

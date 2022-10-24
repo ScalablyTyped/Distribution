@@ -26,7 +26,7 @@ object libTypescriptComponentsHelperTextMod extends Shortcut {
   val default: ComponentType[PickOmitOmitPickPickAnima] & (NonReactStatics[
     (ComponentType[
       (Omit[Omit[PickPickAnimatedPropsText | themeDeepPartialThemeunde, padding], `type`]) & Type
-    ]) & (js.Function1[/* hasStyleTypeVisibleThemeOnLayoutPaddingRest */ Props, Element]), 
+    ]) & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = js.native
   
@@ -46,7 +46,7 @@ object libTypescriptComponentsHelperTextMod extends Shortcut {
   type _To = ComponentType[PickOmitOmitPickPickAnima] & (NonReactStatics[
     (ComponentType[
       (Omit[Omit[PickPickAnimatedPropsText | themeDeepPartialThemeunde, padding], `type`]) & Type
-    ]) & (js.Function1[/* hasStyleTypeVisibleThemeOnLayoutPaddingRest */ Props, Element]), 
+    ]) & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ])
   
@@ -54,7 +54,7 @@ object libTypescriptComponentsHelperTextMod extends Shortcut {
   override def _to: ComponentType[PickOmitOmitPickPickAnima] & (NonReactStatics[
     (ComponentType[
       (Omit[Omit[PickPickAnimatedPropsText | themeDeepPartialThemeunde, padding], `type`]) & Type
-    ]) & (js.Function1[/* hasStyleTypeVisibleThemeOnLayoutPaddingRest */ Props, Element]), 
+    ]) & (js.Function1[/* param0 */ Props, Element]), 
     js.Object
   ]) = default
 }

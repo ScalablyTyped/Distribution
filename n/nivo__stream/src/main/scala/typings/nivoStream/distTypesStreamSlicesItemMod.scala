@@ -14,7 +14,7 @@ object distTypesStreamSlicesItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def StreamSlicesItem[RawDatum /* <: StreamDatum */](hasSliceHeightTooltip: StreamSlicesItemProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StreamSlicesItem")(hasSliceHeightTooltip.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StreamSlicesItem[RawDatum /* <: StreamDatum */](param0: StreamSlicesItemProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StreamSlicesItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait StreamSlicesItemProps[RawDatum /* <: StreamDatum */] extends StObject {
     

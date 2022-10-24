@@ -1530,6 +1530,12 @@ object devtoolsProtocolStrings {
   inline def JavaScriptExecution: JavaScriptExecution = "JavaScriptExecution".asInstanceOf[JavaScriptExecution]
   
   @js.native
+  sealed trait KeepaliveRequest
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def KeepaliveRequest: KeepaliveRequest = "KeepaliveRequest".asInstanceOf[KeepaliveRequest]
+  
+  @js.native
   sealed trait KeyboardLock
     extends StObject
        with BackForwardCacheNotRestoredReason
@@ -7339,6 +7345,7 @@ object devtoolsProtocolStrings {
        with DisabledImageType
        with GetEncodedResponseRequestEncoding
        with ImageType
+       with ScreenshotParamsFormat
   inline def webp: webp = "webp".asInstanceOf[webp]
   
   @js.native

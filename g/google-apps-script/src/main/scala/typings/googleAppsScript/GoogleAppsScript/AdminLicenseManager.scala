@@ -28,17 +28,6 @@ object AdminLicenseManager {
     __obj.asInstanceOf[AdminLicenseManager]
   }
   
-  extension [Self <: AdminLicenseManager](x: Self) {
-    
-    inline def setLicenseAssignments(value: LicenseAssignmentsCollection): Self = StObject.set(x, "LicenseAssignments", value.asInstanceOf[js.Any])
-    
-    inline def setLicenseAssignmentsUndefined: Self = StObject.set(x, "LicenseAssignments", js.undefined)
-    
-    inline def setNewLicenseAssignment(value: () => LicenseAssignment): Self = StObject.set(x, "newLicenseAssignment", js.Any.fromFunction0(value))
-    
-    inline def setNewLicenseAssignmentInsert(value: () => LicenseAssignmentInsert): Self = StObject.set(x, "newLicenseAssignmentInsert", js.Any.fromFunction0(value))
-  }
-  
   object Collection {
     
     @js.native
@@ -69,6 +58,17 @@ object AdminLicenseManager {
       // Assign License.
       def update(resource: LicenseAssignment, productId: String, skuId: String, userId: String): LicenseAssignment = js.native
     }
+  }
+  
+  extension [Self <: AdminLicenseManager](x: Self) {
+    
+    inline def setLicenseAssignments(value: LicenseAssignmentsCollection): Self = StObject.set(x, "LicenseAssignments", value.asInstanceOf[js.Any])
+    
+    inline def setLicenseAssignmentsUndefined: Self = StObject.set(x, "LicenseAssignments", js.undefined)
+    
+    inline def setNewLicenseAssignment(value: () => LicenseAssignment): Self = StObject.set(x, "newLicenseAssignment", js.Any.fromFunction0(value))
+    
+    inline def setNewLicenseAssignmentInsert(value: () => LicenseAssignmentInsert): Self = StObject.set(x, "newLicenseAssignmentInsert", js.Any.fromFunction0(value))
   }
   
   object Schema {

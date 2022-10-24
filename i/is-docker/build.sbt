@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "is-docker"
-version := "3.0.0-3f9edb"
-scalaVersion := "3.1.2"
+version := "3.0.0-251b65"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "soundex-code"
-version := "2.0.0-60af8d"
-scalaVersion := "3.1.2"
+version := "2.0.0-9fa49c"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

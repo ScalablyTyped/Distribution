@@ -15,7 +15,7 @@ object libHoganjsUtilsMod {
   open class default protected ()
     extends StObject
        with HoganJsUtils {
-    def this(hasCompiledTemplatesRawTemplates: HoganJsUtilsConfig) = this()
+    def this(param0: HoganJsUtilsConfig) = this()
   }
   /* static members */
   object default {

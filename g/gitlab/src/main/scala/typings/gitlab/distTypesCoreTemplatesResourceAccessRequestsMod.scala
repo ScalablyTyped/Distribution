@@ -19,9 +19,9 @@ object distTypesCoreTemplatesResourceAccessRequestsMod {
     def all(resourceId: Double): js.Promise[GetResponse] = js.native
     
     def approve(resourceId: String, userId: Double): js.Promise[js.Object] = js.native
-    def approve(resourceId: String, userId: Double, hasAccessLevel: accessLevelAccessLevelund): js.Promise[js.Object] = js.native
+    def approve(resourceId: String, userId: Double, param2: accessLevelAccessLevelund): js.Promise[js.Object] = js.native
     def approve(resourceId: Double, userId: Double): js.Promise[js.Object] = js.native
-    def approve(resourceId: Double, userId: Double, hasAccessLevel: accessLevelAccessLevelund): js.Promise[js.Object] = js.native
+    def approve(resourceId: Double, userId: Double, param2: accessLevelAccessLevelund): js.Promise[js.Object] = js.native
     
     def deny(resourceId: String, userId: Double): js.Promise[js.Object] = js.native
     def deny(resourceId: Double, userId: Double): js.Promise[js.Object] = js.native

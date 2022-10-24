@@ -39,7 +39,7 @@ object mod {
   @js.native
   trait AppIntroSlider[ItemT] extends Component[Props[ItemT], State, Any] {
     
-    def _onLayout(hasNativeEvent: LayoutChangeEvent): Unit = js.native
+    def _onLayout(param0: LayoutChangeEvent): Unit = js.native
     
     def _onMomentumScrollEnd(e: NativeEvent): Unit = js.native
     

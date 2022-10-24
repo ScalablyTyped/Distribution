@@ -13,7 +13,7 @@ object dataTableMeasureColumnWidthsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasColumnsRowsWidthsIsSelectableOnWidthsChange: MeasureColumnWidthsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColumnsRowsWidthsIsSelectableOnWidthsChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: MeasureColumnWidthsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait MeasureColumnWidthsProps extends StObject {
     

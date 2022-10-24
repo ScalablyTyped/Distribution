@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "fast-json-stable-stringify"
-version := "2.1.0-44af99"
-scalaVersion := "3.1.2"
+version := "2.1.0-ce85b0"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

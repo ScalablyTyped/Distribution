@@ -13,7 +13,5 @@ object libTypescriptPagerDotandroidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: Route */](
-    hasKeyboardDismissModeSwipeEnabledNavigationStateOnIndexChangeOnSwipeStartOnSwipeEndChildrenStyleAnimationEnabledRest: Props[T]
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasKeyboardDismissModeSwipeEnabledNavigationStateOnIndexChangeOnSwipeStartOnSwipeEndChildrenStyleAnimationEnabledRest.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default[T /* <: Route */](param0: Props[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

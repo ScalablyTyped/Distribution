@@ -10,7 +10,7 @@ object distTypesCoreLoggerMod {
   @JSImport("html2canvas/dist/types/core/logger", "Logger")
   @js.native
   open class Logger protected () extends StObject {
-    def this(hasIdEnabled: LoggerOptions) = this()
+    def this(param0: LoggerOptions) = this()
     
     def debug(args: Any*): Unit = js.native
     

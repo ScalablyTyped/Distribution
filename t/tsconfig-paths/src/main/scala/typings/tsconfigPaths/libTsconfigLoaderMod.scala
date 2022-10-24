@@ -25,7 +25,7 @@ object libTsconfigLoaderMod {
     readFileSync: js.Function1[/* filename */ String, String]
   ): js.UndefOr[Tsconfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTsconfig")(configFilePath.asInstanceOf[js.Any], existsSync.asInstanceOf[js.Any], readFileSync.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Tsconfig]]
   
-  inline def tsConfigLoader(hasGetEnvCwdLoadSync: TsConfigLoaderParams): TsConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("tsConfigLoader")(hasGetEnvCwdLoadSync.asInstanceOf[js.Any]).asInstanceOf[TsConfigLoaderResult]
+  inline def tsConfigLoader(param0: TsConfigLoaderParams): TsConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("tsConfigLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[TsConfigLoaderResult]
   
   inline def walkForTsConfig(directory: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("walkForTsConfig")(directory.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   inline def walkForTsConfig(directory: String, readdirSync: js.Function1[/* path */ String, js.Array[String]]): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkForTsConfig")(directory.asInstanceOf[js.Any], readdirSync.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]

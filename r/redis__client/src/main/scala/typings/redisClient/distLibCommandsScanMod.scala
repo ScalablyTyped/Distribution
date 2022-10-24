@@ -20,7 +20,7 @@ object distLibCommandsScanMod {
   inline def transformArguments(cursor: Double): RedisCommandArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(cursor.asInstanceOf[js.Any]).asInstanceOf[RedisCommandArguments]
   inline def transformArguments(cursor: Double, options: ScanCommandOptions): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(cursor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   
-  inline def transformReply(hasCursorKeys: ScanRawReply): ScanReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(hasCursorKeys.asInstanceOf[js.Any]).asInstanceOf[ScanReply]
+  inline def transformReply(param0: ScanRawReply): ScanReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(param0.asInstanceOf[js.Any]).asInstanceOf[ScanReply]
   
   trait ScanCommandOptions
     extends StObject

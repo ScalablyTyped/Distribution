@@ -30,7 +30,7 @@ object distTs3Dot9PreviewWebMod {
       storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
     ): ShowError = js.native
     
-    def onGetProjectAnnotationsChanged(hasGetProjectAnnotations: `1`): js.Promise[Unit] = js.native
+    def onGetProjectAnnotationsChanged(param0: `1`): js.Promise[Unit] = js.native
     
     def onKeydown(event: KeyboardEvent): Unit = js.native
     
@@ -42,7 +42,7 @@ object distTs3Dot9PreviewWebMod {
     
     def renderError(
       storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
-      hasTitleDescription: Description
+      param1: Description
     ): Unit = js.native
     
     def renderException(
@@ -53,14 +53,14 @@ object distTs3Dot9PreviewWebMod {
     def renderMissingStory(): Unit = js.native
     
     def renderSelection(): js.Promise[Unit] = js.native
-    def renderSelection(hasPersistedArgs: PersistedArgs): js.Promise[Unit] = js.native
+    def renderSelection(param0: PersistedArgs): js.Promise[Unit] = js.native
     
     def renderStoryLoadingException(storySpecifier: StorySpecifier, err: js.Error): Unit = js.native
     
     def selectSpecifiedStory(): js.Promise[Unit] = js.native
     
     def teardownRender(render: Render[TFramework]): js.Promise[Unit] = js.native
-    def teardownRender(render: Render[TFramework], hasViewModeChanged: ViewModeChanged): js.Promise[Unit] = js.native
+    def teardownRender(render: Render[TFramework], param1: ViewModeChanged): js.Promise[Unit] = js.native
     
     var urlStore: UrlStore = js.native
     

@@ -32,7 +32,7 @@ object `libEsm@ExamplesFilmSelectMod` {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FilmSelect(hasAllowCreateFillRestProps: FilmSelectProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilmSelect")(hasAllowCreateFillRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FilmSelect(param0: FilmSelectProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilmSelect")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined std.Omit<@blueprintjs/select.@blueprintjs/select/lib/esm/components/select/select2.Select2Props<@blueprintjs/select.@blueprintjs/select/lib/esm/@/examples/films.Film>, 'createNewItemFromQuery' | 'createNewItemRenderer' | 'itemPredicate' | 'itemRenderer' | 'items' | 'itemsEqual' | 'noResults' | 'onItemSelect'> & {  allowCreate :boolean | undefined} */
   trait FilmSelectProps extends StObject {

@@ -26,7 +26,7 @@ object distDisclosureSrcDisclosureArrowMod {
   @js.native
   val DisclosureArrow: OrbitComponent[HTMLElement, InnerDisclosureArrowProps] = js.native
   
-  inline def InnerDisclosureArrow(hasOpenForwardedRefRest: InnerDisclosureArrowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDisclosureArrow")(hasOpenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDisclosureArrow(param0: InnerDisclosureArrowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDisclosureArrow")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type DisclosureArrowProps = ComponentProps[OrbitComponent[HTMLElement, InnerDisclosureArrowProps]]
   

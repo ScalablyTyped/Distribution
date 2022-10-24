@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesLibGetValueMod {
   
-  inline def apply(hasValue: Declaration): String = ^.asInstanceOf[js.Dynamic].apply(hasValue.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(param0: Declaration): String = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("postcss-merge-longhand/types/lib/getValue", JSImport.Namespace)
   @js.native

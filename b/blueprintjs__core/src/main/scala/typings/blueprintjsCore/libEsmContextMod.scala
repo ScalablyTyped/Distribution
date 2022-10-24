@@ -20,11 +20,11 @@ object libEsmContextMod {
   @js.native
   val HotkeysContext: Context[HotkeysContextInstance] = js.native
   
-  inline def HotkeysProvider(hasChildrenDialogPropsRenderDialogValue: HotkeysProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysProvider")(hasChildrenDialogPropsRenderDialogValue.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HotkeysProvider(param0: HotkeysProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@blueprintjs/core/lib/esm/context", "PortalContext")
   @js.native
   val PortalContext: Context[PortalContextOptions] = js.native
   
-  inline def PortalProvider(hasChildrenOptions: PropsWithChildren[PortalContextOptions]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PortalProvider")(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PortalProvider(param0: PropsWithChildren[PortalContextOptions]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PortalProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

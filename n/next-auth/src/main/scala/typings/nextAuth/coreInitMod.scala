@@ -14,7 +14,7 @@ object coreInitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def init(hasUserOptionsProviderIdActionHostReqCookiesReqCallbackUrlReqCsrfTokenIsPost: InitParams): js.Promise[Cookies] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(hasUserOptionsProviderIdActionHostReqCookiesReqCallbackUrlReqCsrfTokenIsPost.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookies]]
+  inline def init(param0: InitParams): js.Promise[Cookies] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookies]]
   
   trait InitParams extends StObject {
     

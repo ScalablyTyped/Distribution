@@ -19,10 +19,7 @@ object distOverlaySrcUseOverlayLightDismissMod {
   val ^ : js.Any = js.native
   
   inline def useOverlayLightDismiss(overlayRef: RefObject[HTMLElement]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayLightDismiss")(overlayRef.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  inline def useOverlayLightDismiss(
-    overlayRef: RefObject[HTMLElement],
-    hasTriggerOnHideHideOnEscapeHideOnLeaveHideOnOutsideClick: UseOverlayLightDismissOptions
-  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayLightDismiss")(overlayRef.asInstanceOf[js.Any], hasTriggerOnHideHideOnEscapeHideOnLeaveHideOnOutsideClick.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def useOverlayLightDismiss(overlayRef: RefObject[HTMLElement], param1: UseOverlayLightDismissOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("useOverlayLightDismiss")(overlayRef.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   trait UseOverlayLightDismissOptions extends StObject {
     

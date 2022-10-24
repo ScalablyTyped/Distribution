@@ -47,7 +47,7 @@ trait AudioStreamController
   
   def onAudioTrackSwitching(event: AUDIO_TRACK_SWITCHING, data: AudioTrackSwitchingData): Unit = js.native
   
-  def onAudioTracksUpdated(event: AUDIO_TRACKS_UPDATED, hasAudioTracks: AudioTracksUpdatedData): Unit = js.native
+  def onAudioTracksUpdated(event: AUDIO_TRACKS_UPDATED, param1: AudioTracksUpdatedData): Unit = js.native
   
   def onBufferCreated(event: BUFFER_CREATED, data: BufferCreatedData): Unit = js.native
   
@@ -59,7 +59,7 @@ trait AudioStreamController
   
   def onFragBuffered(event: FRAG_BUFFERED, data: FragBufferedData): Unit = js.native
   
-  def onInitPtsFound(event: INIT_PTS_FOUND, hasFragIdInitPTS: InitPTSFoundData): Unit = js.native
+  def onInitPtsFound(event: INIT_PTS_FOUND, param1: InitPTSFoundData): Unit = js.native
   
   def onLevelLoaded(event: LEVEL_LOADED, data: LevelLoadedData): Unit = js.native
   

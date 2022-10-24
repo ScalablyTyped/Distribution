@@ -17,9 +17,7 @@ object distExportWorkerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    hasParentSpanIdPathPathMapDistDirOutDirPagesDataDirRenderOptsBuildExportServerRuntimeConfigSubFoldersServerlessOptimizeFontsOptimizeCssDisableOptimizedLoadingHttpAgentOptionsServerComponents: ExportPageInput
-  ): js.Promise[ExportPageResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasParentSpanIdPathPathMapDistDirOutDirPagesDataDirRenderOptsBuildExportServerRuntimeConfigSubFoldersServerlessOptimizeFontsOptimizeCssDisableOptimizedLoadingHttpAgentOptionsServerComponents.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExportPageResults]]
+  inline def default(param0: ExportPageInput): js.Promise[ExportPageResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExportPageResults]]
   
   trait AmpValidation extends StObject {
     

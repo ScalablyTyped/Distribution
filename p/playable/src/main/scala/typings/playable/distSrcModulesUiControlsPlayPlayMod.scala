@@ -16,7 +16,7 @@ object distSrcModulesUiControlsPlayPlayMod {
   open class default protected ()
     extends StObject
        with PlayControl {
-    def this(hasEngineEventEmitterTextMapTheme: Theme) = this()
+    def this(param0: Theme) = this()
     
     /* private */ /* CompleteClass */
     var _bindCallbacks: Any = js.native

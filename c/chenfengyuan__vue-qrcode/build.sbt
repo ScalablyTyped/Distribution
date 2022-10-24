@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "chenfengyuan__vue-qrcode"
-version := "1.0-dt-20211202Z-94e6ae"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-d77274"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

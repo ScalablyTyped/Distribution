@@ -24,11 +24,11 @@ object libTypescriptWebHammerPanGestureHandlerMod {
     
     def isGestureEnabledForEvent(props: Any, _recognizer: Any, inputData: HammerInputExtdeltaRotati): Failed | Success = js.native
     
-    def shouldActivateUnderCustomCriteria(hasDeltaXDeltaYVelocity: Any, criteria: Any): Boolean = js.native
+    def shouldActivateUnderCustomCriteria(param0: Any, criteria: Any): Boolean = js.native
     
-    def shouldFailUnderCustomCriteria(hasDeltaXDeltaY: HammerInputExt, criteria: Any): Boolean = js.native
+    def shouldFailUnderCustomCriteria(param0: HammerInputExt, criteria: Any): Boolean = js.native
     
-    def shouldMultiFingerPanFail(hasPointerLengthScaleDeltaRotation: DeltaRotation): Boolean = js.native
+    def shouldMultiFingerPanFail(param0: DeltaRotation): Boolean = js.native
     
     def updateHasCustomActivationCriteria(criteria: ConfigminVelocityXnumberu): Boolean = js.native
   }

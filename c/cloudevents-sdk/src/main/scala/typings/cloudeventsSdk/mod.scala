@@ -61,7 +61,7 @@ object mod {
       * @param {string} [options.version] The HTTP binding specification version. Default: "1.0"
       * @throws {TypeError} if no options.url is provided or an unknown specification version is provided.
       */
-    def this(hasUrlVersion: Url) = this()
+    def this(param0: Url) = this()
   }
   @JSImport("cloudevents-sdk", "HTTPEmitter")
   @js.native

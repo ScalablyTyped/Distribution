@@ -13,11 +13,11 @@ object distTs3Dot9UtilsNormalizeStoriesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getDirectoryFromWorkingDir(hasConfigDirWorkingDirDirectory: NormalizeOptionsdirectory): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectoryFromWorkingDir")(hasConfigDirWorkingDirDirectory.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDirectoryFromWorkingDir(param0: NormalizeOptionsdirectory): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectoryFromWorkingDir")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def normalizeStories(entries: js.Array[StoriesEntry], options: NormalizeOptions): js.Array[NormalizedStoriesSpecifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStories")(entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[NormalizedStoriesSpecifier]]
   
-  inline def normalizeStoriesEntry(entry: StoriesEntry, hasConfigDirWorkingDir: NormalizeOptions): NormalizedStoriesSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStoriesEntry")(entry.asInstanceOf[js.Any], hasConfigDirWorkingDir.asInstanceOf[js.Any])).asInstanceOf[NormalizedStoriesSpecifier]
+  inline def normalizeStoriesEntry(entry: StoriesEntry, param1: NormalizeOptions): NormalizedStoriesSpecifier = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStoriesEntry")(entry.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[NormalizedStoriesSpecifier]
   
   trait NormalizeOptions extends StObject {
     

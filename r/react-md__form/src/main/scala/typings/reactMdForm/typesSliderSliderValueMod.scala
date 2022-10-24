@@ -13,7 +13,7 @@ object typesSliderSliderValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def SliderValue(hasIndexAnimateDiscreteVerticalChildrenClassNamePortalProps: SliderValueProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SliderValue")(hasIndexAnimateDiscreteVerticalChildrenClassNamePortalProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def SliderValue(param0: SliderValueProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SliderValue")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait SliderValueProps
     extends StObject

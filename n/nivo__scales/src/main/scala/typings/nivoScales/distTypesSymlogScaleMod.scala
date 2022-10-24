@@ -14,10 +14,5 @@ object distTypesSymlogScaleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createSymlogScale(
-    hasConstantMinMaxReverse: ScaleSymlogSpec,
-    data: ComputedSerieAxis[Double],
-    size: Double,
-    axis: ScaleAxis
-  ): ScaleSymlog = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlogScale")(hasConstantMinMaxReverse.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[ScaleSymlog]
+  inline def createSymlogScale(param0: ScaleSymlogSpec, data: ComputedSerieAxis[Double], size: Double, axis: ScaleAxis): ScaleSymlog = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlogScale")(param0.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[ScaleSymlog]
 }

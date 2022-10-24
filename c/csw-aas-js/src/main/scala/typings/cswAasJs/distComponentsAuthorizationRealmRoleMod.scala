@@ -12,7 +12,7 @@ object distComponentsAuthorizationRealmRoleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasRealmRoleChildrenError: RealmRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRealmRoleChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: RealmRoleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait RealmRoleProps extends StObject {
     

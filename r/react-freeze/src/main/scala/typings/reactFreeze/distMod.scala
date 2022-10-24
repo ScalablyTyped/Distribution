@@ -12,7 +12,7 @@ object distMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Freeze(hasFreezeChildrenPlaceholder: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Freeze")(hasFreezeChildrenPlaceholder.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Freeze(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Freeze")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     

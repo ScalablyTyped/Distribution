@@ -24,19 +24,9 @@ object utilMod {
   inline def findPair[K, V](items: js.Iterable[Pair[K, V]], key: Any): js.UndefOr[Pair[K, V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPair")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Pair[K, V]]]
   
   inline def foldFlowLines(text: String, indent: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def foldFlowLines(
-    text: String,
-    indent: String,
-    mode: Unit,
-    hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow: FoldOptions
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def foldFlowLines(text: String, indent: String, mode: Unit, param3: FoldOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def foldFlowLines(text: String, indent: String, mode: FoldMode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def foldFlowLines(
-    text: String,
-    indent: String,
-    mode: FoldMode,
-    hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow: FoldOptions
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], hasIndentAtStartLineWidthMinContentWidthOnFoldOnOverflow.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def foldFlowLines(text: String, indent: String, mode: FoldMode, param3: FoldOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldFlowLines")(text.asInstanceOf[js.Any], indent.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("yaml/util", "mapTag")
   @js.native
@@ -50,7 +40,7 @@ object utilMod {
   @js.native
   val stringTag: ScalarTag = js.native
   
-  inline def stringifyNumber(hasFormatMinFractionDigitsTagValue: Scalar[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyNumber")(hasFormatMinFractionDigitsTagValue.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifyNumber(param0: Scalar[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyNumber")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def stringifyString(item: Scalar[Any], ctx: StringifyContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringifyString(item: Scalar[Any], ctx: StringifyContext, onComment: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any])).asInstanceOf[String]

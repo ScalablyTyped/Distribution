@@ -12,5 +12,5 @@ object distUiComponentsTooltipTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Tooltip(hasTitleChildren: PropsWithChildrentitlestr): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip")(hasTitleChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Tooltip(param0: PropsWithChildrentitlestr): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

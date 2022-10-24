@@ -14,7 +14,7 @@ object typesSrcDisplayNodeUtilsMod {
   @JSImport("pdfjs-dist/types/src/display/node_utils", "NodeCMapReaderFactory")
   @js.native
   open class NodeCMapReaderFactory protected () extends BaseCMapReaderFactory {
-    def this(hasBaseUrlIsCompressed: BaseUrl) = this()
+    def this(param0: BaseUrl) = this()
   }
   
   @JSImport("pdfjs-dist/types/src/display/node_utils", "NodeCanvasFactory")
@@ -24,6 +24,6 @@ object typesSrcDisplayNodeUtilsMod {
   @JSImport("pdfjs-dist/types/src/display/node_utils", "NodeStandardFontDataFactory")
   @js.native
   open class NodeStandardFontDataFactory protected () extends BaseStandardFontDataFactory {
-    def this(hasBaseUrl: `0`) = this()
+    def this(param0: `0`) = this()
   }
 }

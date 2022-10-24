@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "esbuild" : "0.15.8"
+      "esbuild" : "0.15.12"
     }
   ],
   "test-dependencies" : [
     {
-      "esbuild" : "0.15.8"
+      "esbuild" : "0.15.12"
     }
   ],
   "compile-devDependencies" : [

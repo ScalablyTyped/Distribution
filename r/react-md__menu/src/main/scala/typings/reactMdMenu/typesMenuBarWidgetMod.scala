@@ -99,7 +99,7 @@ object typesMenuBarWidgetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def MenuBarWidget(hasChildrenTabIndexPropOnFocusPropOnKeyDownProps: MenuBarWidgetProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBarWidget")(hasChildrenTabIndexPropOnFocusPropOnKeyDownProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuBarWidget(param0: MenuBarWidgetProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuBarWidget")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useMenuBarWidgetFocusId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenuBarWidgetFocusId")().asInstanceOf[String]
   

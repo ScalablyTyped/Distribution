@@ -16,11 +16,11 @@ object distServerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def StaticRouter(hasBasenameChildrenLocationProp: StaticRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StaticRouter")(hasBasenameChildrenLocationProp.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StaticRouter(param0: StaticRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StaticRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def unstableCreateStaticRouter(routes: js.Array[RouteObject], context: StaticHandlerContext): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createStaticRouter")(routes.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Router]
   
-  inline def unstableStaticRouterProvider(hasBasenameContextRouterHydrateNonce: StaticRouterProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_StaticRouterProvider")(hasBasenameContextRouterHydrateNonce.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def unstableStaticRouterProvider(param0: StaticRouterProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_StaticRouterProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait StaticRouterProps extends StObject {
     

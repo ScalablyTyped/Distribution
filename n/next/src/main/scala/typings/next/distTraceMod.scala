@@ -17,7 +17,7 @@ object distTraceMod {
   @js.native
   open class Span protected ()
     extends typings.next.distTraceTraceMod.Span {
-    def this(hasNameParentIdAttrsStartTime: ParentId) = this()
+    def this(param0: ParentId) = this()
   }
   
   @JSImport("next/dist/trace", "SpanStatus")

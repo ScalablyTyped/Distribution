@@ -17,13 +17,7 @@ object libAnimationsUtilsDetectAnimationFromOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def detectAnimationFromOptions[T /* <: Options */](config: T): Typeofspring | FnCall | (js.Function1[
-    /* hasVelocityFromPowerTimeConstantRestDeltaModifyTarget */ DecayOptions, 
-    Animation[Double]
-  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("detectAnimationFromOptions")(config.asInstanceOf[js.Any]).asInstanceOf[Typeofspring | FnCall | (js.Function1[
-    /* hasVelocityFromPowerTimeConstantRestDeltaModifyTarget */ DecayOptions, 
-    Animation[Double]
-  ])]
+  inline def detectAnimationFromOptions[T /* <: Options */](config: T): Typeofspring | FnCall | (js.Function1[/* param0 */ DecayOptions, Animation[Double]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("detectAnimationFromOptions")(config.asInstanceOf[js.Any]).asInstanceOf[Typeofspring | FnCall | (js.Function1[/* param0 */ DecayOptions, Animation[Double]])]
   
   trait Options extends StObject {
     

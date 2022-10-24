@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-a11y
 
-Typings are for version 6.5.12
+Typings are for version 6.5.13
 
 ## Library description:
 Test component compliance with web accessibility standards

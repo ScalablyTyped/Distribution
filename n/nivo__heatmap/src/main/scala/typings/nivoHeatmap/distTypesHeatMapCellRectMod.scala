@@ -13,7 +13,5 @@ object distTypesHeatMapCellRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def HeatMapCellRect[Datum /* <: HeatMapDatum */](
-    hasCellBorderWidthBorderRadiusAnimatedPropsOnMouseEnterOnMouseMoveOnMouseLeaveOnClickEnableLabels: CellComponentProps[Datum]
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCellRect")(hasCellBorderWidthBorderRadiusAnimatedPropsOnMouseEnterOnMouseMoveOnMouseLeaveOnClickEnableLabels.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeatMapCellRect[Datum /* <: HeatMapDatum */](param0: CellComponentProps[Datum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeatMapCellRect")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

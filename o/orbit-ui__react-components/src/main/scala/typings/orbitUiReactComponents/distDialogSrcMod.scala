@@ -29,13 +29,9 @@ object distDialogSrcMod {
   @js.native
   val DialogTriggerContext: Context[DialogTriggerContextType] = js.native
   
-  inline def InnerDialog(
-    hasIdRoleSizeDismissableFocusZIndexAriaLabelAriaLabelledByAriaDescribedByWrapperPropsAsChildrenForwardedRefRest: InnerDialogProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialog")(hasIdRoleSizeDismissableFocusZIndexAriaLabelAriaLabelledByAriaDescribedByWrapperPropsAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDialog(param0: InnerDialogProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialog")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InnerDialogTrigger(
-    hasOpenPropDefaultOpenOnOpenChangeDismissableZIndexAsChildrenForwardedRefRest: InnerDialogTriggerProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialogTrigger")(hasOpenPropDefaultOpenOnOpenChangeDismissableZIndexAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerDialogTrigger(param0: InnerDialogTriggerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerDialogTrigger")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useDialogTriggerContext(): DialogTriggerContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useDialogTriggerContext")().asInstanceOf[DialogTriggerContextType]
 }

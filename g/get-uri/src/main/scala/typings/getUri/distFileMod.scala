@@ -16,7 +16,7 @@ object distFileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasUri: UrlWithStringQuery, opts: FileOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  inline def default(param0: UrlWithStringQuery, opts: FileOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
   
   type FileOptions = GetUriOptions & ReadStreamOptions & Cache
   

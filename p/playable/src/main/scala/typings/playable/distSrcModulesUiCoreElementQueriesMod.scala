@@ -13,6 +13,6 @@ object distSrcModulesUiCoreElementQueriesMod {
   open class default protected ()
     extends typings.playable.distSrcModulesUiCoreElementQueriesElementQueriesMod.default {
     def this(element: HTMLElement) = this()
-    def this(element: HTMLElement, hasPrefix: Prefix) = this()
+    def this(element: HTMLElement, param1: Prefix) = this()
   }
 }

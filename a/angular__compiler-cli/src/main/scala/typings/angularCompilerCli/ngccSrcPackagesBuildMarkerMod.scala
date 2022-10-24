@@ -16,7 +16,7 @@ object ngccSrcPackagesBuildMarkerMod {
   
   @JSImport("@angular/compiler-cli/ngcc/src/packages/build_marker", "NGCC_VERSION")
   @js.native
-  val NGCC_VERSION: /* "14.2.2" */ String = js.native
+  val NGCC_VERSION: /* "14.2.7" */ String = js.native
   
   inline def cleanPackageJson(packageJson: EntryPointPackageJson): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanPackageJson")(packageJson.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

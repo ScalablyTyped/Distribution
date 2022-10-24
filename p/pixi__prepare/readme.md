@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__prepare
 
-Typings are for version 6.5.7
+Typings are for version 6.5.8
 
 ## Library description:
 Plugin to allow uploading textures to the GPU

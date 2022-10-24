@@ -13,7 +13,7 @@ object typesDirMod {
   
   inline def DEFAULT_DIR(): WritingDirection = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_DIR")().asInstanceOf[WritingDirection]
   
-  inline def Dir(hasChildrenDefaultDir: DirProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Dir")(hasChildrenDefaultDir.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Dir(param0: DirProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Dir")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useDir(): WritingDirectionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useDir")().asInstanceOf[WritingDirectionContext]
   

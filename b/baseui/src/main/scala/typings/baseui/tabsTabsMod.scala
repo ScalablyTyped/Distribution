@@ -37,6 +37,6 @@ object tabsTabsMod {
     
     def getTabs(): Any = js.native
     
-    def onChange(hasActiveKey: ActiveKeyString): Unit = js.native
+    def onChange(param0: ActiveKeyString): Unit = js.native
   }
 }

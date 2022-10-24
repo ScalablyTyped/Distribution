@@ -18,6 +18,7 @@ import typings.hotShots.hotShotsStrings.uds
 import typings.hotShots.hotShotsStrings.warning
 import typings.node.dgramMod.Socket
 import typings.node.dgramMod.SocketOptions
+import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -745,6 +746,8 @@ object mod {
     
     var socket: js.UndefOr[Socket] = js.undefined
     
+    var stream: js.UndefOr[Writable] = js.undefined
+    
     var suffix: js.UndefOr[String] = js.undefined
     
     var tagPrefix: js.UndefOr[String] = js.undefined
@@ -847,6 +850,10 @@ object mod {
       inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
       inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
+      
+      inline def setStream(value: Writable): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
       inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       

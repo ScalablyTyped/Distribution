@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "hash-sum"
-version := "1.0-dt-20211202Z-9eb820"
-scalaVersion := "3.1.2"
+version := "1.0-dt-20211202Z-b37eda"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

@@ -30,9 +30,7 @@ object mod {
   inline def angle(a: Point): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("angle")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def angle(a: Point, b: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def animate[V](
-    hasFromAutoplayDriverElapsedRepeatMaxRepeatTypeRepeatDelayOnPlayOnStopOnCompleteOnRepeatOnUpdateOptions: AnimationOptions[V]
-  ): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")(hasFromAutoplayDriverElapsedRepeatMaxRepeatTypeRepeatDelayOnPlayOnStopOnCompleteOnRepeatOnUpdateOptions.asInstanceOf[js.Any]).asInstanceOf[Stop]
+  inline def animate[V](param0: AnimationOptions[V]): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")(param0.asInstanceOf[js.Any]).asInstanceOf[Stop]
   
   @JSImport("popmotion", "anticipate")
   @js.native
@@ -90,7 +88,7 @@ object mod {
   
   inline def cubicBezier(mX1: Double, mY1: Double, mX2: Double, mY2: Double): Easing = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicBezier")(mX1.asInstanceOf[js.Any], mY1.asInstanceOf[js.Any], mX2.asInstanceOf[js.Any], mY2.asInstanceOf[js.Any])).asInstanceOf[Easing]
   
-  inline def decay(hasVelocityFromPowerTimeConstantRestDeltaModifyTarget: DecayOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decay")(hasVelocityFromPowerTimeConstantRestDeltaModifyTarget.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
+  inline def decay(param0: DecayOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decay")(param0.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
   
   inline def degreesToRadians(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degreesToRadians")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
@@ -110,18 +108,16 @@ object mod {
   @js.native
   val easeOut: Easing = js.native
   
-  inline def inertia(
-    hasFromVelocityMinMaxPowerTimeConstantBounceStiffnessBounceDampingRestDeltaModifyTargetDriverOnUpdateOnCompleteOnStop: InertiaOptions
-  ): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(hasFromVelocityMinMaxPowerTimeConstantBounceStiffnessBounceDampingRestDeltaModifyTargetDriverOnUpdateOnCompleteOnStop.asInstanceOf[js.Any]).asInstanceOf[Stop]
+  inline def inertia(param0: InertiaOptions): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(param0.asInstanceOf[js.Any]).asInstanceOf[Stop]
   
   inline def interpolate[T](input: js.Array[Double], output: js.Array[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
-  inline def interpolate[T](input: js.Array[Double], output: js.Array[T], hasIsClampEaseMixer: InterpolateOptions[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], hasIsClampEaseMixer.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
+  inline def interpolate[T](input: js.Array[Double], output: js.Array[T], param2: InterpolateOptions[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
   
   inline def isPoint(point: js.Object): /* is popmotion.popmotion/lib/types.Point */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")(point.asInstanceOf[js.Any]).asInstanceOf[/* is popmotion.popmotion/lib/types.Point */ Boolean]
   
   inline def isPoint3D(point: Point): /* is popmotion.popmotion/lib/types.Point3D */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint3D")(point.asInstanceOf[js.Any]).asInstanceOf[/* is popmotion.popmotion/lib/types.Point3D */ Boolean]
   
-  inline def keyframes[V](hasFromToEaseOffsetDuration: KeyframeOptions[Double]): Animation[Double | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(hasFromToEaseOffsetDuration.asInstanceOf[js.Any]).asInstanceOf[Animation[Double | String]]
+  inline def keyframes[V](param0: KeyframeOptions[Double]): Animation[Double | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(param0.asInstanceOf[js.Any]).asInstanceOf[Animation[Double | String]]
   
   @JSImport("popmotion", "linear")
   @js.native
@@ -166,7 +162,7 @@ object mod {
   
   object spring {
     
-    inline def apply(hasFromToRestSpeedRestDeltaOptions: SpringOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].apply(hasFromToRestSpeedRestDeltaOptions.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
+    inline def apply(param0: SpringOptions): Animation[Double] = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Animation[Double]]
     
     @JSImport("popmotion", "spring")
     @js.native

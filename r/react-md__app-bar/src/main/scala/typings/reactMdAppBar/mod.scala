@@ -53,5 +53,5 @@ object mod {
   val AppBarTitle: ForwardRefExoticComponent[AppBarTitleProps & RefAttributes[HTMLHeadingElement]] = js.native
   
   inline def useActionClassName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")().asInstanceOf[String]
-  inline def useActionClassName(hasFirstLastInheritColorClassName: AppBarActionClassNameProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")(hasFirstLastInheritColorClassName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def useActionClassName(param0: AppBarActionClassNameProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionClassName")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
 }

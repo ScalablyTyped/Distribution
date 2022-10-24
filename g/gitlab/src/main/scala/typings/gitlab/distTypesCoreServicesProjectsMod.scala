@@ -21,7 +21,7 @@ object distTypesCoreServicesProjectsMod {
   @JSImport("gitlab/dist/types/core/services/Projects", "Projects")
   @js.native
   open class Projects () extends BaseService {
-    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+    def this(param0: BaseServiceOptions) = this()
     
     def all(): js.Promise[js.Array[ProjectSchema]] = js.native
     def all(options: PaginatedRequestOptions): js.Promise[js.Array[ProjectSchema]] = js.native
@@ -31,7 +31,7 @@ object distTypesCoreServicesProjectsMod {
     def archive(projectId: Double): js.Promise[js.Object] = js.native
     def archive(projectId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
-    def create(hasUserIdOptions: userIdnumberundefinedBase): js.Promise[js.Object] = js.native
+    def create(param0: userIdnumberundefinedBase): js.Promise[js.Object] = js.native
     
     def edit(projectId: String): js.Promise[js.Object] = js.native
     def edit(projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
@@ -44,9 +44,9 @@ object distTypesCoreServicesProjectsMod {
     def events(projectId: Double, options: BaseRequestOptions & EventOptions): js.Promise[GetResponse] = js.native
     
     def fork(projectId: String): js.Promise[js.Object] = js.native
-    def fork(projectId: String, hasForkedFromIdOptions: forkedFromIdnumberundefin): js.Promise[js.Object] = js.native
+    def fork(projectId: String, param1: forkedFromIdnumberundefin): js.Promise[js.Object] = js.native
     def fork(projectId: Double): js.Promise[js.Object] = js.native
-    def fork(projectId: Double, hasForkedFromIdOptions: forkedFromIdnumberundefin): js.Promise[js.Object] = js.native
+    def fork(projectId: Double, param1: forkedFromIdnumberundefin): js.Promise[js.Object] = js.native
     
     def forks(projectId: String): js.Promise[GetResponse] = js.native
     def forks(projectId: String, options: BaseRequestOptions): js.Promise[GetResponse] = js.native
@@ -124,7 +124,7 @@ object distTypesCoreServicesProjectsMod {
     def unstar(projectId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
     def upload(projectId: Any, content: Any): js.Promise[js.Object] = js.native
-    def upload(projectId: Any, content: Any, hasMetadataSudo: metadataUploadMetadataund): js.Promise[js.Object] = js.native
+    def upload(projectId: Any, content: Any, param2: metadataUploadMetadataund): js.Promise[js.Object] = js.native
   }
   
   trait NamespaceInfoSchema extends StObject {

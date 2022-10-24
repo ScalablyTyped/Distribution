@@ -11,25 +11,25 @@ object typesPositioningGetCoordMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getAboveCoord(hasYMarginInitialYElHeightContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getAboveCoord")(hasYMarginInitialYElHeightContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
+  inline def getAboveCoord(param0: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getAboveCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Top]
   
-  inline def getBelowCoord(hasYMarginInitialYContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getBelowCoord")(hasYMarginInitialYContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
+  inline def getBelowCoord(param0: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getBelowCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Top]
   
-  inline def getBottomCoord(hasYMarginInitialYElHeightContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottomCoord")(hasYMarginInitialYElHeightContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
+  inline def getBottomCoord(param0: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getBottomCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Top]
   
-  inline def getCenterXCoord(hasElWidthInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenterXCoord")(hasElWidthInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
+  inline def getCenterXCoord(param0: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenterXCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Left]
   
-  inline def getCenterYCoord(hasElHeightInitialYContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenterYCoord")(hasElHeightInitialYContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
+  inline def getCenterYCoord(param0: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getCenterYCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Top]
   
-  inline def getInnerLeftCoord(hasXMarginInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerLeftCoord")(hasXMarginInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
+  inline def getInnerLeftCoord(param0: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerLeftCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Left]
   
-  inline def getInnerRightCoord(hasXMarginElWidthInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerRightCoord")(hasXMarginElWidthInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
+  inline def getInnerRightCoord(param0: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerRightCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Left]
   
-  inline def getLeftCoord(hasXMarginElWidthInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeftCoord")(hasXMarginElWidthInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
+  inline def getLeftCoord(param0: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeftCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Left]
   
-  inline def getRightCoord(hasXMarginInitialXContainerRect: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getRightCoord")(hasXMarginInitialXContainerRect.asInstanceOf[js.Any]).asInstanceOf[Left]
+  inline def getRightCoord(param0: XCoordConfig): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("getRightCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Left]
   
-  inline def getTopCoord(hasYMarginInitialYContainerRect: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopCoord")(hasYMarginInitialYContainerRect.asInstanceOf[js.Any]).asInstanceOf[Top]
+  inline def getTopCoord(param0: YCoordConfig): Top = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopCoord")(param0.asInstanceOf[js.Any]).asInstanceOf[Top]
   
   type Left = Double
   

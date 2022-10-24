@@ -22,7 +22,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FrontloadProvider(hasFrontloadStateChildren: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FrontloadProvider")(hasFrontloadStateChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FrontloadProvider(param0: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FrontloadProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object createFrontloadState {
     
@@ -35,7 +35,7 @@ object mod {
     inline def server(args: Logging): FrontloadState = ^.asInstanceOf[js.Dynamic].applyDynamic("server")(args.asInstanceOf[js.Any]).asInstanceOf[FrontloadState]
   }
   
-  inline def frontloadServerRender[T](hasRenderFrontloadState: typings.reactFrontload.anon.FrontloadState[T]): js.Promise[Data[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("frontloadServerRender")(hasRenderFrontloadState.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data[T]]]
+  inline def frontloadServerRender[T](param0: typings.reactFrontload.anon.FrontloadState[T]): js.Promise[Data[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("frontloadServerRender")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data[T]]]
   
   inline def useFrontload[T](key: String, fn: js.Function1[/* context */ Any, js.Promise[T]]): FrontloadProps[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useFrontload")(key.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[FrontloadProps[T]]
   
@@ -118,9 +118,7 @@ object mod {
   
   type FrontloadServerRenderFunction[T] = js.Function1[/* args */ IsFinalRender, T]
   
-  type FrontloadState = InstanceType[
-    Instantiable1[/* hasServerRenderedDataContextLogging */ Context, FrontloadStatePrivate]
-  ]
+  type FrontloadState = InstanceType[Instantiable1[/* param0 */ Context, FrontloadStatePrivate]]
   
   trait FrontloadStatePrivate extends StObject {
     

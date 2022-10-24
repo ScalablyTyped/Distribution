@@ -28,14 +28,14 @@ object buildSrcCompileLegendEncodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def entries(entriesSpec: Any, hasLegendCmpt: LegendEncodeParams): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(entriesSpec.asInstanceOf[js.Any], hasLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def entries(entriesSpec: Any, param1: LegendEncodeParams): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(entriesSpec.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")().asInstanceOf[V]
   inline def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](channelDef: ColorDef[String] | ShapeDef[String]): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")(channelDef.asInstanceOf[js.Any]).asInstanceOf[V]
   
-  inline def gradient(gradientSpec: Any, hasModelLegendTypeLegendCmpt: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("gradient")(gradientSpec.asInstanceOf[js.Any], hasModelLegendTypeLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
+  inline def gradient(gradientSpec: Any, param1: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("gradient")(gradientSpec.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
   
-  inline def labels(specifiedlabelsSpec: Any, hasFieldOrDatumDefModelChannelLegendCmpt: LegendEncodeParams): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("labels")(specifiedlabelsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def labels(specifiedlabelsSpec: Any, param1: LegendEncodeParams): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("labels")(specifiedlabelsSpec.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* Inlined {[ part in keyof vega.vega.LegendEncode ]:? (spec : vega.vega.EncodeEntry, params : vega-lite.vega-lite/build/src/compile/legend/encode.LegendEncodeParams): vega.vega.EncodeEntry} */
   object legendEncodeRules {
@@ -111,7 +111,7 @@ object buildSrcCompileLegendEncodeMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  inline def symbols(symbolsSpec: Any, hasFieldOrDatumDefModelChannelLegendCmptLegendType: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("symbols")(symbolsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmptLegendType.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
+  inline def symbols(symbolsSpec: Any, param1: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("symbols")(symbolsSpec.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
   
   trait LegendEncodeParams extends StObject {
     

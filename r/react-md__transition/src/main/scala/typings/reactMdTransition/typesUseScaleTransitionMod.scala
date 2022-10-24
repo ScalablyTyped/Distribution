@@ -110,7 +110,7 @@ object typesUseScaleTransitionMod {
     val exitDone: js.UndefOr[String] = js.native
   }
   
-  inline def useScaleTransition[E /* <: HTMLElement */](hasTimeoutVerticalTemporaryClassNamesOptions: ScaleTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useScaleTransition")(hasTimeoutVerticalTemporaryClassNamesOptions.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
+  inline def useScaleTransition[E /* <: HTMLElement */](param0: ScaleTransitionHookOptions[E]): CSSTransitionHookReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useScaleTransition")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionHookReturnValue[E]]
   
   trait ScaleTransitionHookOptions[E /* <: HTMLElement */]
     extends StObject

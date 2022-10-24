@@ -24,8 +24,8 @@ object typesRatelimitMod {
   inline def parseRetryAfterHeader(header: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(header.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def parseRetryAfterHeader(header: String, now: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(header.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def updateRateLimits(limits: RateLimits, hasStatusCodeHeaders: TransportMakeRequestResponse): RateLimits = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRateLimits")(limits.asInstanceOf[js.Any], hasStatusCodeHeaders.asInstanceOf[js.Any])).asInstanceOf[RateLimits]
-  inline def updateRateLimits(limits: RateLimits, hasStatusCodeHeaders: TransportMakeRequestResponse, now: Double): RateLimits = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRateLimits")(limits.asInstanceOf[js.Any], hasStatusCodeHeaders.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[RateLimits]
+  inline def updateRateLimits(limits: RateLimits, param1: TransportMakeRequestResponse): RateLimits = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRateLimits")(limits.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[RateLimits]
+  inline def updateRateLimits(limits: RateLimits, param1: TransportMakeRequestResponse, now: Double): RateLimits = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRateLimits")(limits.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[RateLimits]
   
   type RateLimits = Record[String, Double]
 }

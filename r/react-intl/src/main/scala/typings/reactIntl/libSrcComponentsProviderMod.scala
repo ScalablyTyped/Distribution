@@ -36,7 +36,7 @@ object libSrcComponentsProviderMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(props: ReadonlyIntlConfig, hasPrevConfigCache: State): PartialStateCache | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], hasPrevConfigCache.asInstanceOf[js.Any])).asInstanceOf[PartialStateCache | Null]
+    inline def getDerivedStateFromProps(props: ReadonlyIntlConfig, param1: State): PartialStateCache | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[PartialStateCache | Null]
   }
   
   @JSImport("react-intl/lib/src/components/provider", "createIntl")

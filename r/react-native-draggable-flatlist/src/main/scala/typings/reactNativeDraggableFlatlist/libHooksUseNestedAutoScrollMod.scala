@@ -12,7 +12,5 @@ object libHooksUseNestedAutoScrollMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useNestedAutoScroll(
-    hasActiveCellSizeAutoscrollSpeedAutoscrollThresholdHoverAnimIsDraggingCellPanGestureState: ActiveCellSize
-  ): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestedAutoScroll")(hasActiveCellSizeAutoscrollSpeedAutoscrollThresholdHoverAnimIsDraggingCellPanGestureState.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def useNestedAutoScroll(param0: ActiveCellSize): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("useNestedAutoScroll")(param0.asInstanceOf[js.Any]).asInstanceOf[Node]
 }

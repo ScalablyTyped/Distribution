@@ -191,7 +191,7 @@ object mod {
     /* props */ P, 
     /* state */ S, 
     /* import warning: importer.ImportType#apply Failed type conversion: any[any] */ /* args */ js.Any, 
-    /* hasValueErr */ js.Tuple2[Any, Any], 
+    /* param3 */ js.Tuple2[Any, Any], 
     T | Falsy
   ])
   

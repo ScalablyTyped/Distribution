@@ -12,7 +12,5 @@ object distTypesSvgBoxLegendSvgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def BoxLegendSvg(
-    hasDataContainerWidthContainerHeightTranslateXTranslateYAnchorDirectionPaddingJustifyItemsSpacingItemWidthItemHeightItemDirectionItemTextColorItemBackgroundItemOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerieEffects: BoxLegendSvgProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BoxLegendSvg")(hasDataContainerWidthContainerHeightTranslateXTranslateYAnchorDirectionPaddingJustifyItemsSpacingItemWidthItemHeightItemDirectionItemTextColorItemBackgroundItemOpacitySymbolShapeSymbolSizeSymbolSpacingSymbolBorderWidthSymbolBorderColorOnClickOnMouseEnterOnMouseLeaveToggleSerieEffects.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BoxLegendSvg(param0: BoxLegendSvgProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BoxLegendSvg")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

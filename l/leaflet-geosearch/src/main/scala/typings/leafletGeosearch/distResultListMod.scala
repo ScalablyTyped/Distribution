@@ -16,7 +16,7 @@ object distResultListMod {
   open class default protected ()
     extends StObject
        with ResultList {
-    def this(hasHandleClickClassNamesNotFoundMessage: ResultListProps) = this()
+    def this(param0: ResultListProps) = this()
   }
   
   @js.native

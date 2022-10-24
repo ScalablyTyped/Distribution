@@ -14,9 +14,7 @@ object distComponentsProgressBarMod {
   
   object ProgressBar {
     
-    inline def apply(
-      hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsInTheme: ProgressBarProps
-    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsInTheme.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: ProgressBarProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-toastify/dist/components/ProgressBar", "ProgressBar")
     @js.native

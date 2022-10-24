@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "text-mask-addons"
-version := "3.8-dt-20211202Z-aa088b"
-scalaVersion := "3.1.2"
+version := "3.8-dt-20211202Z-296293"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

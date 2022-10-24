@@ -13,7 +13,7 @@ object distDeclarationsSrcInternalUseScrollCaptureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasIsEnabledOnBottomArriveOnBottomLeaveOnTopArriveOnTopLeave: Options): js.Function1[/* element */ HTMLElement | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIsEnabledOnBottomArriveOnBottomLeaveOnTopArriveOnTopLeave.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* element */ HTMLElement | Null, Unit]]
+  inline def default(param0: Options): js.Function1[/* element */ HTMLElement | Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* element */ HTMLElement | Null, Unit]]
   
   trait Options extends StObject {
     

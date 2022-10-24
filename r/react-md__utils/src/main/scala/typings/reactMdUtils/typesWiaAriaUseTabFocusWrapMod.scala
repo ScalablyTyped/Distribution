@@ -13,7 +13,7 @@ object typesWiaAriaUseTabFocusWrapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useTabFocusWrap[E /* <: HTMLElement */](hasDisabledDisableFocusCacheOnKeyDown: Options[E]): js.UndefOr[KeyboardEventHandler[E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabFocusWrap")(hasDisabledDisableFocusCacheOnKeyDown.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
+  inline def useTabFocusWrap[E /* <: HTMLElement */](param0: Options[E]): js.UndefOr[KeyboardEventHandler[E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabFocusWrap")(param0.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
   
   trait Options[E /* <: HTMLElement */] extends StObject {
     

@@ -76,7 +76,7 @@ object libTypescriptContextPropsContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](hasChildrenProps: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[T](param0: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useProps[T](): DraggableFlatListProps[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useProps")().asInstanceOf[DraggableFlatListProps[T]]
   

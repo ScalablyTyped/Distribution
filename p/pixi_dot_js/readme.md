@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi_dot_js
 
-Typings are for version 6.5.7
+Typings are for version 6.5.8
 
 ## Library description:
 PixiJS without the CanvasRenderer fallback, modern browsers only

@@ -31,17 +31,17 @@ object distTypesRenderBackgroundMod {
   
   inline def calculateBackgroundRepeatPath(
     repeat: BACKGROUND_REPEAT,
-    hasXY: js.Tuple2[Double, Double],
-    hasWidthHeight: js.Tuple2[Double, Double],
+    param1: js.Tuple2[Double, Double],
+    param2: js.Tuple2[Double, Double],
     backgroundPositioningArea: Bounds,
     backgroundPaintingArea: Bounds
-  ): js.Tuple4[Vector, Vector, Vector, Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateBackgroundRepeatPath")(repeat.asInstanceOf[js.Any], hasXY.asInstanceOf[js.Any], hasWidthHeight.asInstanceOf[js.Any], backgroundPositioningArea.asInstanceOf[js.Any], backgroundPaintingArea.asInstanceOf[js.Any])).asInstanceOf[js.Tuple4[Vector, Vector, Vector, Vector]]
+  ): js.Tuple4[Vector, Vector, Vector, Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateBackgroundRepeatPath")(repeat.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], backgroundPositioningArea.asInstanceOf[js.Any], backgroundPaintingArea.asInstanceOf[js.Any])).asInstanceOf[js.Tuple4[Vector, Vector, Vector, Vector]]
   
   inline def calculateBackgroundSize(
     size: js.Array[BackgroundSizeInfo],
-    hasIntrinsicWidthIntrinsicHeightIntrinsicProportion: js.Tuple3[Double | Null, Double | Null, Double | Null],
+    param1: js.Tuple3[Double | Null, Double | Null, Double | Null],
     bounds: Bounds
-  ): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateBackgroundSize")(size.asInstanceOf[js.Any], hasIntrinsicWidthIntrinsicHeightIntrinsicProportion.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  ): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateBackgroundSize")(size.asInstanceOf[js.Any], param1.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
   inline def getBackgroundValueForIndex[T](values: js.Array[T], index: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundValueForIndex")(values.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[T]
   

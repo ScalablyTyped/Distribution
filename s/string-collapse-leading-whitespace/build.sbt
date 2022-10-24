@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "string-collapse-leading-whitespace"
-version := "6.1.3-e0231b"
-scalaVersion := "3.1.2"
+version := "6.1.4-5f4cc9"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

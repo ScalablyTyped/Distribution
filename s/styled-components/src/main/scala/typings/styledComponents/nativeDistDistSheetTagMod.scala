@@ -97,5 +97,5 @@ object nativeDistDistSheetTagMod {
     var rules: js.Array[String] = js.native
   }
   
-  inline def makeTag(hasIsServerUseCSSOMInjectionTarget: SheetOptions): DeleteRule | Element | GetRule = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTag")(hasIsServerUseCSSOMInjectionTarget.asInstanceOf[js.Any]).asInstanceOf[DeleteRule | Element | GetRule]
+  inline def makeTag(param0: SheetOptions): DeleteRule | Element | GetRule = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTag")(param0.asInstanceOf[js.Any]).asInstanceOf[DeleteRule | Element | GetRule]
 }

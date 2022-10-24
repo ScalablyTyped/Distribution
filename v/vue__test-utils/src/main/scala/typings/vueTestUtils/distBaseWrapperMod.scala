@@ -15,6 +15,7 @@ import typings.vueRuntimeCore.mod.UnwrapMixinsType
 import typings.vueTestUtils.anon.OmitDOMWrapperElementexis
 import typings.vueTestUtils.anon.OmitVueWrapperComponentPu
 import typings.vueTestUtils.anon.Omitdefaultexists
+import typings.vueTestUtils.anon.Raw
 import typings.vueTestUtils.anon.VueNodeNode
 import typings.vueTestUtils.distInterfacesWrapperLikeMod.WrapperLike
 import typings.vueTestUtils.distTypesMod.FindComponentSelector
@@ -37,7 +38,7 @@ object distBaseWrapperMod {
   open class default[ElementType /* <: Node */] protected ()
     extends StObject
        with BaseWrapper[ElementType] {
-    def this(element: ElementType) = this()
+    /* protected */ def this(element: ElementType) = this()
   }
   
   @js.native
@@ -100,6 +101,8 @@ object distBaseWrapperMod {
     /* protected */ def getCurrentComponent(): ComponentInternalInstance | Unit = js.native
     
     /* protected */ def getRootNodes(): js.Array[VueNodeNode] = js.native
+    
+    def html(options: Raw): String = js.native
     
     /* protected */ def isDisabled(): Boolean = js.native
     

@@ -37,7 +37,7 @@ object libDatePickerDatePickerMod {
     
     var locale: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* hasDateFormattedDate */ Date, Unit]] = js.undefined
+    var onBlur: js.UndefOr[js.Function1[/* param0 */ Date, Unit]] = js.undefined
     
     var validationState: js.UndefOr[State] = js.undefined
   }
@@ -78,7 +78,7 @@ object libDatePickerDatePickerMod {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setOnBlur(value: /* hasDateFormattedDate */ Date => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* param0 */ Date => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       

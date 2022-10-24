@@ -480,7 +480,7 @@ object mod {
     * @param controlledValue
     * @param defaultValue
     */
-  inline def useControlledState[T](hasControlledValueDefaultValueCalledFrom: CalledFrom[T]): js.Tuple2[T, Dispatch[SetStateAction[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControlledState")(hasControlledValueDefaultValueCalledFrom.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, Dispatch[SetStateAction[T]]]]
+  inline def useControlledState[T](param0: CalledFrom[T]): js.Tuple2[T, Dispatch[SetStateAction[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControlledState")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, Dispatch[SetStateAction[T]]]]
   
   /**
     * Logs a warning in dev mode when a component switches from controlled to

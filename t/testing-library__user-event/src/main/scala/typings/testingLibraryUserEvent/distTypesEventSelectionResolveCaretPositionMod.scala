@@ -12,5 +12,5 @@ object distTypesEventSelectionResolveCaretPositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def resolveCaretPosition(hasTargetNodeOffset: Node): Offset = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveCaretPosition")(hasTargetNodeOffset.asInstanceOf[js.Any]).asInstanceOf[Offset]
+  inline def resolveCaretPosition(param0: Node): Offset = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveCaretPosition")(param0.asInstanceOf[js.Any]).asInstanceOf[Offset]
 }

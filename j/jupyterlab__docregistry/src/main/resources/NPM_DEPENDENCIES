@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/docregistry" : "3.4.8"
+      "@jupyterlab/docregistry" : "3.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/docregistry" : "3.4.8"
+      "@jupyterlab/docregistry" : "3.5.0"
     }
   ],
   "compile-devDependencies" : [

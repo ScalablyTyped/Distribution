@@ -238,7 +238,7 @@ object mod {
     
     var onDeviceSignatureRequested: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDeviceStreaming: js.UndefOr[js.Function1[/* hasProgressTotalIndex */ Index, Unit]] = js.undefined
+    var onDeviceStreaming: js.UndefOr[js.Function1[/* param0 */ Index, Unit]] = js.undefined
     
     var outputScriptHex: String
     
@@ -299,7 +299,7 @@ object mod {
       
       inline def setOnDeviceSignatureRequestedUndefined: Self = StObject.set(x, "onDeviceSignatureRequested", js.undefined)
       
-      inline def setOnDeviceStreaming(value: /* hasProgressTotalIndex */ Index => Unit): Self = StObject.set(x, "onDeviceStreaming", js.Any.fromFunction1(value))
+      inline def setOnDeviceStreaming(value: /* param0 */ Index => Unit): Self = StObject.set(x, "onDeviceStreaming", js.Any.fromFunction1(value))
       
       inline def setOnDeviceStreamingUndefined: Self = StObject.set(x, "onDeviceStreaming", js.undefined)
       

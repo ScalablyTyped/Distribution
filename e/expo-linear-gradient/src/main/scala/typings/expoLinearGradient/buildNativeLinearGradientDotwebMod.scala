@@ -12,5 +12,5 @@ object buildNativeLinearGradientDotwebMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasColorsLocationsStartPointEndPointProps: NativeLinearGradientProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColorsLocationsStartPointEndPointProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default(param0: NativeLinearGradientProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

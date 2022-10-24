@@ -21,7 +21,7 @@ object distPlaceholdersSrcFooterMod {
   @js.native
   val Footer: OrbitComponent[HTMLElement, InnerFooterProps] = js.native
   
-  inline def InnerFooter(hasAsChildrenForwardedRefRest: InnerFooterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFooter")(hasAsChildrenForwardedRefRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InnerFooter(param0: InnerFooterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InnerFooter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type FooterProps = ComponentProps[OrbitComponent[HTMLElement, InnerFooterProps]]
   

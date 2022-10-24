@@ -653,7 +653,7 @@ object mod {
   
   inline def useViewportWidth(): Double | String = ^.asInstanceOf[js.Dynamic].applyDynamic("useViewportWidth")().asInstanceOf[Double | String]
   
-  inline def variant(hasKeyDefaultValuePropVariants: VariantArgs): js.Function1[/* props */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("variant")(hasKeyDefaultValuePropVariants.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ Any, Any]]
+  inline def variant(param0: VariantArgs): js.Function1[/* props */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("variant")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ Any, Any]]
   
   @JSImport("@xstyled/styled-components", "verticalAlign")
   @js.native

@@ -12,5 +12,5 @@ object buildCommandsSwitchToFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasId: Id): js.Promise[IdNull | Id] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IdNull | Id]]
+  inline def default(param1: Id): js.Promise[IdNull | Id] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param1.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IdNull | Id]]
 }

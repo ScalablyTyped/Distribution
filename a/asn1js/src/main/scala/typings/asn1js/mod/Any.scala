@@ -10,7 +10,7 @@ open class Any ()
   extends StObject
      with IAny
      with _AsnSchemaType {
-  def this(hasNameOptional: AnyParams) = this()
+  def this(param0: AnyParams) = this()
   
   /* CompleteClass */
   var name: String = js.native

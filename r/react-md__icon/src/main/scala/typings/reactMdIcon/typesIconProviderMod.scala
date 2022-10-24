@@ -25,9 +25,7 @@ object typesIconProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def IconProvider(
-    hasChildrenBackCheckboxDropdownExpanderErrorForwardMenuNotificationPasswordRadioSelectedSortUpload: IconProviderProps
-  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("IconProvider")(hasChildrenBackCheckboxDropdownExpanderErrorForwardMenuNotificationPasswordRadioSelectedSortUpload.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def IconProvider(param0: IconProviderProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("IconProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useIcon(
     name: back | checkbox | dropdown | error | expander | forward | menu | notification | password | radio | selected | sort | upload

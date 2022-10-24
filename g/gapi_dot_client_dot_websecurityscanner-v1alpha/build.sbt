@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_websecurityscanner-v1alpha"
-version := "0.0-dt-20220912Z-0e0066"
-scalaVersion := "3.1.2"
+version := "0.0-dt-20220912Z-08e5a0"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

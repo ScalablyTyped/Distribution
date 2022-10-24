@@ -462,6 +462,11 @@ object Popup {
       }
     }
     
+    extension [Self <: SelectorSettings](x: Self) {
+      
+      inline def setPopup(value: String & js.UndefOr[String]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    }
+    
     /* Inlined std.Pick<semantic-ui-popup.SemanticUI.Popup.SelectorSettings._Impl, 'popup'> & std.Partial<std.Pick<semantic-ui-popup.SemanticUI.Popup.SelectorSettings._Impl, keyof semantic-ui-popup.SemanticUI.Popup.SelectorSettings._Impl>> */
     trait Param extends StObject {
       
@@ -478,11 +483,6 @@ object Popup {
         
         inline def setPopup(value: String & js.UndefOr[String]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       }
-    }
-    
-    extension [Self <: SelectorSettings](x: Self) {
-      
-      inline def setPopup(value: String & js.UndefOr[String]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     }
   }
 }

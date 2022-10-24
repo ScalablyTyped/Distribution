@@ -12,7 +12,7 @@ object esSubMenuInlineSubMenuListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasIdOpenKeyPathChildren: InlineSubMenuListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasIdOpenKeyPathChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: InlineSubMenuListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait InlineSubMenuListProps extends StObject {
     

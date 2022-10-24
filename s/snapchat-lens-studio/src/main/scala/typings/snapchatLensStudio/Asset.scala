@@ -87,11 +87,6 @@ object Asset {
     }
   }
   
-  extension [Self <: Asset](x: Self) {
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-  }
-  
   type AudioEffectAsset = Asset
   
   /** Represents an audio file asset. See also: AudioComponent. */
@@ -197,6 +192,11 @@ object Asset {
       
       inline def setMainPass(value: Pass): Self = StObject.set(x, "mainPass", value.asInstanceOf[js.Any])
     }
+  }
+  
+  extension [Self <: Asset](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
   
   type ObjectPrefab = Asset

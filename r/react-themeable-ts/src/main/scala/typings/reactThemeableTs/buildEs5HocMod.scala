@@ -14,7 +14,7 @@ object buildEs5HocMod {
   val ^ : js.Any = js.native
   
   inline def themeDecorator[P /* <: IThemeDecoratorArgs */](): js.Function1[/* WrappedComponent */ TDecComponent[P], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")().asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], Any]]
-  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](hasThemeKeyThemePropMemoizeeOptsContextPath: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")(hasThemeKeyThemePropMemoizeeOptsContextPath.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], Any]]
+  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](param0: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], Any]]
   
   trait IHOCDefaultNoThemeProps extends StObject {
     

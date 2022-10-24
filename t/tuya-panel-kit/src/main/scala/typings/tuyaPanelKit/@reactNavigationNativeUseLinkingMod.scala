@@ -14,8 +14,5 @@ object `@reactNavigationNativeUseLinkingMod` {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    ref: RefObject[NavigationContainerRef],
-    hasEnabledConfigGetStateFromPathGetPathFromState: LinkingOptions
-  ): GetInitialState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], hasEnabledConfigGetStateFromPathGetPathFromState.asInstanceOf[js.Any])).asInstanceOf[GetInitialState]
+  inline def default(ref: RefObject[NavigationContainerRef], param1: LinkingOptions): GetInitialState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[GetInitialState]
 }

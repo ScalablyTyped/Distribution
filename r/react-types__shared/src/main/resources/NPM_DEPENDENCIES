@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-types/shared" : "3.15.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-types/shared" : "3.15.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

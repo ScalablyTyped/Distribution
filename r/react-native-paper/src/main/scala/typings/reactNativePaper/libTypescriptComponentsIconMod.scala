@@ -22,7 +22,7 @@ object libTypescriptComponentsIconMod {
   @JSImport("react-native-paper/lib/typescript/components/Icon", JSImport.Default)
   @js.native
   val default: ComponentType[PickIconPropscolorstringu] & (NonReactStatics[
-    ComponentType[IconPropscolorstringundef] & (js.Function1[/* hasSourceColorSizeThemeRest */ Props, Any]), 
+    ComponentType[IconPropscolorstringundef] & (js.Function1[/* param0 */ Props, Any]), 
     js.Object
   ]) = js.native
   

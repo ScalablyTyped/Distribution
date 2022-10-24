@@ -59,9 +59,9 @@ object mod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MultiRemoteBrowser */ Any
   ]]
-  inline def multiremote(params: MultiRemoteCapabilities, hasAutomationProtocol: AutomationProtocol): js.Promise[
+  inline def multiremote(params: MultiRemoteCapabilities, param1: AutomationProtocol): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MultiRemoteBrowser */ Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(params.asInstanceOf[js.Any], hasAutomationProtocol.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiremote")(params.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MultiRemoteBrowser */ Any
   ]]
   

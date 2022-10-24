@@ -17,7 +17,7 @@ trait GetId[RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <:
     * For a given screen name, there will always be only one screen corresponding to an ID.
     * If `undefined` is returned, it acts same as no `getId` being specified.
     */
-  var getId: js.UndefOr[js.Function1[/* hasParams */ `3`[ParamList, RouteName], js.UndefOr[String]]] = js.undefined
+  var getId: js.UndefOr[js.Function1[/* param0 */ `3`[ParamList, RouteName], js.UndefOr[String]]] = js.undefined
   
   /**
     * Initial params object for the route.
@@ -66,7 +66,7 @@ object GetId {
   
   extension [Self <: GetId[?, ?, ?, ?, ?], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */](x: Self & (GetId[RouteName, ScreenOptions, ParamList, State, EventMap])) {
     
-    inline def setGetId(value: /* hasParams */ `3`[ParamList, RouteName] => js.UndefOr[String]): Self = StObject.set(x, "getId", js.Any.fromFunction1(value))
+    inline def setGetId(value: /* param0 */ `3`[ParamList, RouteName] => js.UndefOr[String]): Self = StObject.set(x, "getId", js.Any.fromFunction1(value))
     
     inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
     

@@ -272,7 +272,7 @@ inline def typography: StyleFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("typ
 
 inline def up(key: String, rules: Any): js.Function1[/* props */ Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("up")(key.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ Any, Any]]
 
-inline def variant(hasKeyDefaultValuePropVariants: VariantArgs): js.Function1[/* props */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("variant")(hasKeyDefaultValuePropVariants.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ Any, Any]]
+inline def variant(param0: VariantArgs): js.Function1[/* props */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("variant")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ Any, Any]]
 
 inline def verticalAlign: StyleFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("verticalAlign").asInstanceOf[StyleFunc]
 

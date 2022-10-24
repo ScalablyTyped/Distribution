@@ -184,7 +184,7 @@ object mod {
   inline def base(baseId: String): Base_ = ^.asInstanceOf[js.Dynamic].applyDynamic("base")(baseId.asInstanceOf[js.Any]).asInstanceOf[Base_]
   
   /* static member */
-  inline def configure(hasApiKeyEndpointUrlApiVersionNoRetryIfRateLimitedRequestTimeout: PickAirtableOptionsapiKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(hasApiKeyEndpointUrlApiVersionNoRetryIfRateLimitedRequestTimeout.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(param0: PickAirtableOptionsapiKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
   inline def defaultConfig(): AirtableOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default_config")().asInstanceOf[AirtableOptions]

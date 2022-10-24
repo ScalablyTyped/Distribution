@@ -12,5 +12,5 @@ object libMixinsTriangleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasPointingDirectionHeightWidthForegroundColorBackgroundColor: TriangleConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPointingDirectionHeightWidthForegroundColorBackgroundColor.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(param0: TriangleConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

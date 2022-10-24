@@ -12,5 +12,5 @@ object mapMarkerFloatingMarkerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasLabelSizeAnchorEndEnhancerStartEnhancerAnchorTypeOverrides: FloatingMarkerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasLabelSizeAnchorEndEnhancerStartEnhancerAnchorTypeOverrides.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(param0: FloatingMarkerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

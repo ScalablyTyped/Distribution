@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/client-api" : "6.5.12"
+      "@storybook/client-api" : "6.5.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/client-api" : "6.5.12"
+      "@storybook/client-api" : "6.5.13"
     }
   ],
   "compile-devDependencies" : [

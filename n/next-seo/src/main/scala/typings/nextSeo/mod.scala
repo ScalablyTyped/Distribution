@@ -39,82 +39,66 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ArticleJsonLd(
-    hasTypeKeyOverrideUrlTitleImagesDatePublishedDateModifiedAuthorNamePublisherNamePublisherLogoDescription: ArticleJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArticleJsonLd")(hasTypeKeyOverrideUrlTitleImagesDatePublishedDateModifiedAuthorNamePublisherNamePublisherLogoDescription.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ArticleJsonLd(param0: ArticleJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ArticleJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def BrandJsonLd(hasTypeIdKeyOverrideAggregateRatingRest: BrandJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BrandJsonLd")(hasTypeIdKeyOverrideAggregateRatingRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BrandJsonLd(param0: BrandJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BrandJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def BreadcrumbJsonLd(hasTypeKeyOverrideItemListElements: BreadCrumbJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BreadcrumbJsonLd")(hasTypeKeyOverrideItemListElements.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def BreadcrumbJsonLd(param0: BreadCrumbJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BreadcrumbJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def CarouselJsonLd(hasTypeKeyOverrideOfTypeData: CarouselJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CarouselJsonLd")(hasTypeKeyOverrideOfTypeData.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CarouselJsonLd(param0: CarouselJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CarouselJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def CollectionPageJsonLd(hasTypeKeyOverrideHasPartRest: CollectionPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionPageJsonLd")(hasTypeKeyOverrideHasPartRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CollectionPageJsonLd(param0: CollectionPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectionPageJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def CorporateContactJsonLd(hasTypeKeyOverrideContactPointRest: CorporateContactJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CorporateContactJsonLd")(hasTypeKeyOverrideContactPointRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CorporateContactJsonLd(param0: CorporateContactJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CorporateContactJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def CourseJsonLd(hasTypeKeyOverrideCourseNameProviderRest: CourseJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CourseJsonLd")(hasTypeKeyOverrideCourseNameProviderRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CourseJsonLd(param0: CourseJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CourseJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def DatasetJsonLd(hasTypeKeyOverrideRest: DatasetJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DatasetJsonLd")(hasTypeKeyOverrideRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def DatasetJsonLd(param0: DatasetJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DatasetJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("next-seo", "DefaultSeo")
   @js.native
   open class DefaultSeo () extends default
   
-  inline def EventJsonLd(
-    hasTypeKeyOverrideLocationImagesOffersAggregateOfferPerformersOrganizerEventStatusEventAttendanceModeRest: EventJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("EventJsonLd")(hasTypeKeyOverrideLocationImagesOffersAggregateOfferPerformersOrganizerEventStatusEventAttendanceModeRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def EventJsonLd(param0: EventJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("EventJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FAQPageJsonLd(hasTypeKeyOverrideMainEntityRest: FAQPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FAQPageJsonLd")(hasTypeKeyOverrideMainEntityRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FAQPageJsonLd(param0: FAQPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FAQPageJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def HowToJsonLd(hasTypeKeyOverrideImageEstimatedCostSupplyToolStepRest: HowToJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HowToJsonLd")(hasTypeKeyOverrideImageEstimatedCostSupplyToolStepRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HowToJsonLd(param0: HowToJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HowToJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ImageJsonLd(hasKeyOverrideImagesRest: ImageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImageJsonLd")(hasKeyOverrideImagesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ImageJsonLd(param0: ImageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImageJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def JobPostingJsonLd(
-    hasTypeKeyOverrideBaseSalaryHiringOrganizationApplicantLocationRequirementsExperienceRequirementsJobLocationRest: JobPostingJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("JobPostingJsonLd")(hasTypeKeyOverrideBaseSalaryHiringOrganizationApplicantLocationRequirementsExperienceRequirementsJobLocationRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def JobPostingJsonLd(param0: JobPostingJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("JobPostingJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def LocalBusinessJsonLd(
-    hasTypeKeyOverrideAddressGeoRatingReviewActionAreaServedMakesOfferOpeningHoursImagesRest: LocalBusinessJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LocalBusinessJsonLd")(hasTypeKeyOverrideAddressGeoRatingReviewActionAreaServedMakesOfferOpeningHoursImagesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LocalBusinessJsonLd(param0: LocalBusinessJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LocalBusinessJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def LogoJsonLd(hasTypeKeyOverrideRest: LogoJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LogoJsonLd")(hasTypeKeyOverrideRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def LogoJsonLd(param0: LogoJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LogoJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def NewsArticleJsonLd(
-    hasTypeKeyOverrideUrlTitleImagesSectionDateCreatedDatePublishedDateModifiedAuthorNamePublisherNamePublisherLogoBodyRest: NewsArticleJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NewsArticleJsonLd")(hasTypeKeyOverrideUrlTitleImagesSectionDateCreatedDatePublishedDateModifiedAuthorNamePublisherNamePublisherLogoBodyRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NewsArticleJsonLd(param0: NewsArticleJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NewsArticleJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("next-seo", "NextSeo")
   @js.native
   open class NextSeo ()
     extends typings.nextSeo.libMetaNextSEOMod.default
   
-  inline def OrganizationJsonLd(hasTypeKeyOverrideAddressContactPointsRest: OrganizationJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationJsonLd")(hasTypeKeyOverrideAddressContactPointsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def OrganizationJsonLd(param0: OrganizationJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ProductJsonLd(
-    hasTypeKeyOverrideImagesBrandReviewsAggregateRatingManufacturerLogoManufacturerNameOffersAggregateOfferProductNameRest: ProductJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProductJsonLd")(hasTypeKeyOverrideImagesBrandReviewsAggregateRatingManufacturerLogoManufacturerNameOffersAggregateOfferProductNameRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ProductJsonLd(param0: ProductJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProductJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def ProfilePageJsonLd(hasTypeKeyOverrideBreadcrumbRest: ProfilePageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProfilePageJsonLd")(hasTypeKeyOverrideBreadcrumbRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ProfilePageJsonLd(param0: ProfilePageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProfilePageJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def QAPageJsonLd(hasTypeKeyOverrideMainEntityRest: QAPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QAPageJsonLd")(hasTypeKeyOverrideMainEntityRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def QAPageJsonLd(param0: QAPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("QAPageJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def RecipeJsonLd(
-    hasTypeKeyOverrideAuthorNameImagesYieldsCategoryCuisineCaloriesAggregateRatingVideoIngredientsInstructionsRest: RecipeJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RecipeJsonLd")(hasTypeKeyOverrideAuthorNameImagesYieldsCategoryCuisineCaloriesAggregateRatingVideoIngredientsInstructionsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def RecipeJsonLd(param0: RecipeJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RecipeJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def SiteLinksSearchBoxJsonLd(hasTypeKeyOverridePotentialActionsRest: SiteLinksSearchBoxJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SiteLinksSearchBoxJsonLd")(hasTypeKeyOverridePotentialActionsRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SiteLinksSearchBoxJsonLd(param0: SiteLinksSearchBoxJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SiteLinksSearchBoxJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def SocialProfileJsonLd(hasTypeKeyOverrideRest: SocialProfileJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SocialProfileJsonLd")(hasTypeKeyOverrideRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SocialProfileJsonLd(param0: SocialProfileJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SocialProfileJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def SoftwareAppJsonLd(hasTypeKeyOverridePriceCurrencyPriceAggregateRatingReviewRest: SoftwareAppJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SoftwareAppJsonLd")(hasTypeKeyOverridePriceCurrencyPriceAggregateRatingReviewRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SoftwareAppJsonLd(param0: SoftwareAppJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SoftwareAppJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def VideoGameJsonLd(
-    hasTypeKeyOverrideAggregateRatingTrailerReviewsImageAuthorNameProviderProducerNameProducerUrlOffersOperatingSystemNamePlatformNameTranslatorNameLanguageNameGenreNamePublisherNameRest: VideoGameJsonLdProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VideoGameJsonLd")(hasTypeKeyOverrideAggregateRatingTrailerReviewsImageAuthorNameProviderProducerNameProducerUrlOffersOperatingSystemNamePlatformNameTranslatorNameLanguageNameGenreNamePublisherNameRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def VideoGameJsonLd(param0: VideoGameJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VideoGameJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def VideoJsonLd(hasTypeKeyOverrideRest: VideoJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VideoJsonLd")(hasTypeKeyOverrideRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def VideoJsonLd(param0: VideoJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VideoJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def WebPageJsonLd(hasKeyOverrideReviewedByRest: WebPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WebPageJsonLd")(hasKeyOverrideReviewedByRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def WebPageJsonLd(param0: WebPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WebPageJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

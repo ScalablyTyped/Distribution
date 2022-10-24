@@ -18,9 +18,9 @@ object libHooksUseColumnsMod {
     * Parse `columns` & `children` into `columns`.
     */
   inline def default[RecordType](
-    hasPrefixClsColumnsChildrenExpandableExpandedKeysColumnTitleGetRowKeyOnTriggerExpandExpandIconRowExpandableExpandIconColumnIndexDirectionExpandRowByClickColumnWidthFixed: ColumnTitle[RecordType],
+    param0: ColumnTitle[RecordType],
     transformColumns: js.Function1[/* columns */ ColumnsType[RecordType], ColumnsType[RecordType]]
-  ): js.Tuple2[ColumnsType[RecordType], js.Array[ColumnType[RecordType]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsColumnsChildrenExpandableExpandedKeysColumnTitleGetRowKeyOnTriggerExpandExpandIconRowExpandableExpandIconColumnIndexDirectionExpandRowByClickColumnWidthFixed.asInstanceOf[js.Any], transformColumns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ColumnsType[RecordType], js.Array[ColumnType[RecordType]]]]
+  ): js.Tuple2[ColumnsType[RecordType], js.Array[ColumnType[RecordType]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any], transformColumns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ColumnsType[RecordType], js.Array[ColumnType[RecordType]]]]
   
   inline def convertChildrenToColumns[RecordType](children: ReactNode): ColumnsType[RecordType] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToColumns")(children.asInstanceOf[js.Any]).asInstanceOf[ColumnsType[RecordType]]
 }

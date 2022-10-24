@@ -13,5 +13,5 @@ object libNumberFormatPartitionNumberRangePatternMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def PartitionNumberRangePattern(numberFormat: NumberFormat, x: Double, y: Double, hasGetInternalSlots: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberRangePattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
+  inline def PartitionNumberRangePattern(numberFormat: NumberFormat, x: Double, y: Double, param3: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("PartitionNumberRangePattern")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
 }

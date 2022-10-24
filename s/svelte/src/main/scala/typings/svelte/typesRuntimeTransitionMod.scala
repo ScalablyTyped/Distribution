@@ -15,9 +15,9 @@ object typesRuntimeTransitionMod {
   val ^ : js.Any = js.native
   
   inline def blur(node: Element): TransitionConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("blur")(node.asInstanceOf[js.Any]).asInstanceOf[TransitionConfig]
-  inline def blur(node: Element, hasDelayDurationEasingAmountOpacity: BlurParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(node.asInstanceOf[js.Any], hasDelayDurationEasingAmountOpacity.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
+  inline def blur(node: Element, param1: BlurParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
   
-  inline def crossfade(hasFallbackDefaults: CrossfadeParamsfallbackno): js.Tuple2[
+  inline def crossfade(param0: CrossfadeParamsfallbackno): js.Tuple2[
     js.Function2[
       /* node */ Element, 
       /* params */ CrossfadeParamskeyany, 
@@ -28,7 +28,7 @@ object typesRuntimeTransitionMod {
       /* params */ CrossfadeParamskeyany, 
       js.Function0[TransitionConfig]
     ]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("crossfade")(hasFallbackDefaults.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("crossfade")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
     js.Function2[
       /* node */ Element, 
       /* params */ CrossfadeParamskeyany, 
@@ -42,19 +42,19 @@ object typesRuntimeTransitionMod {
   ]]
   
   inline def draw(node: SVGElementgetTotalLengthn): TransitionConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("draw")(node.asInstanceOf[js.Any]).asInstanceOf[TransitionConfig]
-  inline def draw(node: SVGElementgetTotalLengthn, hasDelaySpeedDurationEasing: DrawParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("draw")(node.asInstanceOf[js.Any], hasDelaySpeedDurationEasing.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
+  inline def draw(node: SVGElementgetTotalLengthn, param1: DrawParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("draw")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
   
   inline def fade(node: Element): TransitionConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fade")(node.asInstanceOf[js.Any]).asInstanceOf[TransitionConfig]
-  inline def fade(node: Element, hasDelayDurationEasing: FadeParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("fade")(node.asInstanceOf[js.Any], hasDelayDurationEasing.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
+  inline def fade(node: Element, param1: FadeParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("fade")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
   
   inline def fly(node: Element): TransitionConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fly")(node.asInstanceOf[js.Any]).asInstanceOf[TransitionConfig]
-  inline def fly(node: Element, hasDelayDurationEasingXYOpacity: FlyParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(node.asInstanceOf[js.Any], hasDelayDurationEasingXYOpacity.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
+  inline def fly(node: Element, param1: FlyParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("fly")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
   
   inline def scale(node: Element): TransitionConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("scale")(node.asInstanceOf[js.Any]).asInstanceOf[TransitionConfig]
-  inline def scale(node: Element, hasDelayDurationEasingStartOpacity: ScaleParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(node.asInstanceOf[js.Any], hasDelayDurationEasingStartOpacity.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
+  inline def scale(node: Element, param1: ScaleParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
   
   inline def slide(node: Element): TransitionConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("slide")(node.asInstanceOf[js.Any]).asInstanceOf[TransitionConfig]
-  inline def slide(node: Element, hasDelayDurationEasing: SlideParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("slide")(node.asInstanceOf[js.Any], hasDelayDurationEasing.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
+  inline def slide(node: Element, param1: SlideParams): TransitionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("slide")(node.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[TransitionConfig]
   
   trait BlurParams extends StObject {
     

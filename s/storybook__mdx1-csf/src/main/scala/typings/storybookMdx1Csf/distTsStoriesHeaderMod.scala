@@ -11,7 +11,7 @@ object distTsStoriesHeaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Header(hasUserOnLoginOnLogoutOnCreateAccount: HeaderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Header")(hasUserOnLoginOnLogoutOnCreateAccount.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Header(param0: HeaderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Header")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait HeaderProps extends StObject {
     

@@ -20,7 +20,7 @@ object mod {
   @js.native
   val UA_APP_ID_INI_NAME: /* "sdk-ua-app-id" */ String = js.native
   
-  inline def defaultUserAgent(hasServiceIdClientVersion: DefaultUserAgentOptions): Provider[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserAgent")(hasServiceIdClientVersion.asInstanceOf[js.Any]).asInstanceOf[Provider[UserAgent]]
+  inline def defaultUserAgent(param0: DefaultUserAgentOptions): Provider[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserAgent")(param0.asInstanceOf[js.Any]).asInstanceOf[Provider[UserAgent]]
   
   trait DefaultUserAgentOptions extends StObject {
     

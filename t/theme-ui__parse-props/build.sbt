@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "theme-ui__parse-props"
-version := "0.14.7-dc4840"
-scalaVersion := "3.1.2"
+version := "0.14.7-4961fc"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")

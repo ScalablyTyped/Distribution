@@ -15,8 +15,8 @@ object buildPluginsUnversionedExpoSystemUiWithIosUserInterfaceStyleMod {
   
   inline def setUserInterfaceStyle(
     config: PickExpoConfigiosuserInte,
-    hasUIUserInterfaceStyleInfoPlist: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserInterfaceStyle")(config.asInstanceOf[js.Any], hasUIUserInterfaceStyleInfoPlist.asInstanceOf[js.Any])).asInstanceOf[Any]
+    param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InfoPlist */ Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserInterfaceStyle")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("@expo/prebuild-config/build/plugins/unversioned/expo-system-ui/withIosUserInterfaceStyle", "withIosUserInterfaceStyle")
   @js.native

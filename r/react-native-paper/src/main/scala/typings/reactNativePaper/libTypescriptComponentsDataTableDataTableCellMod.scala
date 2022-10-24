@@ -46,7 +46,7 @@ object libTypescriptComponentsDataTableDataTableCellMod {
     */
   object default {
     
-    inline def apply(hasChildrenTextStyleStyleNumericRest: Props): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenTextStyleStyleNumericRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: Props): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-native-paper/lib/typescript/components/DataTable/DataTableCell", JSImport.Default)
     @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for svelte
 
-Typings are for version 3.50.1
+Typings are for version 3.52.0
 
 ## Library description:
 Cybernetically enhanced web apps

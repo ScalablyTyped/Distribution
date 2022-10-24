@@ -17,7 +17,7 @@ object typesUseFlattenedTreeListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useFlattenedTreeList(hasIdItemsRootIdExpandedIdsValueKeyGetItemValue: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useFlattenedTreeList")(hasIdItemsRootIdExpandedIdsValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def useFlattenedTreeList(param0: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useFlattenedTreeList")(param0.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   trait ItemMetadata extends StObject {
     

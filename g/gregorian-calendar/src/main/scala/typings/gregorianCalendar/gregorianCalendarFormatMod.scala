@@ -82,6 +82,6 @@ object gregorianCalendarFormatMod {
       * parse a dateString to an instance of GregorianCalendar according to pattern, it's better to specify calendarLocale, such as
       *  `df.parse('2013-11-12', {locale: require('gregorian-calendar/lib/locale/zh_CN'}));`
       */
-    def parse(dateString: String, hasLocale: Locale): typings.gregorianCalendar.mod.^ = js.native
+    def parse(dateString: String, param1: Locale): typings.gregorianCalendar.mod.^ = js.native
   }
 }
