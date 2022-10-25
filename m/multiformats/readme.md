@@ -1,7 +1,7 @@
 
 # Scala.js typings for multiformats
 
-Typings are for version 10.0.0
+Typings are for version 10.0.2
 
 ## Library description:
 Interface for multihash, multicodec, multibase and CID

@@ -487,7 +487,7 @@ object buildSrcCallMod {
     
     /**
       * Is true after 'close' has been emitted.
-      * @since v8.0.0
+      * @since v18.0.0
       */
     val closed: Boolean = js.native
     
@@ -510,7 +510,7 @@ object buildSrcCallMod {
     
     /**
       * Is `true` after `readable.destroy()` has been called.
-      * @since v18.0.0
+      * @since v8.0.0
       */
     var destroyed: Boolean = js.native
     
@@ -832,7 +832,7 @@ object buildSrcCallMod {
     
     /**
       * Is true after 'close' has been emitted.
-      * @since v8.0.0
+      * @since v18.0.0
       */
     val closed: Boolean = js.native
     

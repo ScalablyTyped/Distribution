@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-matcher-utils"
-version := "29.2.1-52f7ea"
+version := "29.2.2-05aea9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,7 @@
 package typings.chainsafeLibp2pNoise
 
-import typings.chainsafeLibp2pNoise.distSrcProtoPayloadMod.pb.NoiseHandshakePayload
+import typings.chainsafeLibp2pNoise.distSrcProtoPayloadMod.NoiseExtensions
+import typings.chainsafeLibp2pNoise.distSrcProtoPayloadMod.NoiseHandshakePayload
 import typings.libp2pInterfacePeerId.mod.PeerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,15 +17,15 @@ object distSrcUtilsMod {
   inline def createHandshakePayload(
     libp2pPublicKey: js.typedarray.Uint8Array,
     signedPayload: js.typedarray.Uint8Array,
-    earlyData: js.typedarray.Uint8Array
-  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createHandshakePayload")(libp2pPublicKey.asInstanceOf[js.Any], signedPayload.asInstanceOf[js.Any], earlyData.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    extensions: NoiseExtensions
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createHandshakePayload")(libp2pPublicKey.asInstanceOf[js.Any], signedPayload.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def decodePayload(payload: js.typedarray.Uint8Array): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePayload")(payload.asInstanceOf[js.Any]).asInstanceOf[NoiseHandshakePayload]
   
   inline def getHandshakePayload(publicKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandshakePayload")(publicKey.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def getPayload(localPeer: PeerId, staticPublicKey: js.typedarray.Uint8Array): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayload")(localPeer.asInstanceOf[js.Any], staticPublicKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
-  inline def getPayload(localPeer: PeerId, staticPublicKey: js.typedarray.Uint8Array, earlyData: js.typedarray.Uint8Array): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayload")(localPeer.asInstanceOf[js.Any], staticPublicKey.asInstanceOf[js.Any], earlyData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def getPayload(localPeer: PeerId, staticPublicKey: js.typedarray.Uint8Array, extensions: NoiseExtensions): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPayload")(localPeer.asInstanceOf[js.Any], staticPublicKey.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
   
   inline def getPeerIdFromPayload(payload: NoiseHandshakePayload): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeerIdFromPayload")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   

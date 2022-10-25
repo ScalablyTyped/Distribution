@@ -1,8 +1,9 @@
 package typings.libp2p
 
 import typings.libp2p.anon.From
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfaceContentRouting.mod.ContentRouting
+import typings.libp2pInterfaceDht.mod.DualDHT
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.std.AsyncGenerator
@@ -18,7 +19,7 @@ object distSrcContentRoutingMod {
     extends StObject
        with ContentRouting
        with Startable {
-    def this(components: Components, init: CompoundContentRoutingInit) = this()
+    def this(components: CompoundContentRoutingComponents, init: CompoundContentRoutingInit) = this()
     
     /* private */ val components: Any = js.native
     
@@ -49,6 +50,29 @@ object distSrcContentRoutingMod {
       */
     /* CompleteClass */
     override def stop(): Unit | js.Promise[Unit] = js.native
+  }
+  
+  trait CompoundContentRoutingComponents extends StObject {
+    
+    var dht: js.UndefOr[DualDHT] = js.undefined
+    
+    var peerStore: PeerStore
+  }
+  object CompoundContentRoutingComponents {
+    
+    inline def apply(peerStore: PeerStore): CompoundContentRoutingComponents = {
+      val __obj = js.Dynamic.literal(peerStore = peerStore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CompoundContentRoutingComponents]
+    }
+    
+    extension [Self <: CompoundContentRoutingComponents](x: Self) {
+      
+      inline def setDht(value: DualDHT): Self = StObject.set(x, "dht", value.asInstanceOf[js.Any])
+      
+      inline def setDhtUndefined: Self = StObject.set(x, "dht", js.undefined)
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+    }
   }
   
   trait CompoundContentRoutingInit extends StObject {

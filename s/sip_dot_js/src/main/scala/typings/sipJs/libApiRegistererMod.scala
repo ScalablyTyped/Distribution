@@ -194,11 +194,6 @@ object libApiRegistererMod {
     @js.native
     val defaultRefreshFrequency: Any = js.native
     
-    @JSImport("sip.js/lib/api/registerer", "Registerer.newUUID")
-    @js.native
-    def newUUID: Any = js.native
-    inline def newUUID_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
-    
     /**
       * Strip properties with undefined values from options.
       * This is a work around while waiting for missing vs undefined to be addressed (or not)...

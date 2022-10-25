@@ -39,7 +39,22 @@ object distTypesSrcCidMod {
     def this(version: Version, code: Format, multihash: MultihashDigest[Alg], bytes: js.typedarray.Uint8Array) = this()
     
     /** @readonly */
-    val asCID: CID[Data, Format, Alg, Version] = js.native
+    @JSName("/")
+    val Slash: js.typedarray.Uint8Array = js.native
+    
+    /**
+      * Signalling `cid.asCID === cid` has been replaced with `cid['/'] === cid.bytes`
+      * please either use `CID.asCID(cid)` or switch to new signalling mechanism
+      *
+      * @deprecated
+      */
+    def asCID: CID[Data, Format, Alg, Version] = js.native
+    
+    @JSName("byteLength")
+    def byteLength_MCID: Double = js.native
+    
+    @JSName("byteOffset")
+    def byteOffset_MCID: Double = js.native
     
     /** @readonly */
     @JSName("bytes")

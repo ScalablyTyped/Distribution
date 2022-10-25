@@ -13,11 +13,11 @@ import typings.sipJs.libApiSubscriptionMod.Subscription
 import typings.sipJs.libApiTransportMod.Transport
 import typings.sipJs.libApiUserAgentDelegateMod.UserAgentDelegate
 import typings.sipJs.libApiUserAgentStateMod.UserAgentState
-import typings.sipJs.libCoreMod.Logger
-import typings.sipJs.libCoreMod.LoggerFactory
-import typings.sipJs.libCoreMod.URI
-import typings.sipJs.libCoreMod.UserAgentCore
+import typings.sipJs.libCoreLogLoggerFactoryMod.LoggerFactory
+import typings.sipJs.libCoreLogLoggerMod.Logger
 import typings.sipJs.libCoreUserAgentCoreUserAgentCoreConfigurationMod.Contact
+import typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,6 +34,8 @@ object libApiUserAgentMod {
     def this(options: PartialUserAgentOptions) = this()
     
     /* private */ var _contact: Any = js.native
+    
+    /* private */ var _instanceId: Any = js.native
     
     /**
       * Used to avoid circular references.
@@ -113,6 +115,11 @@ object libApiUserAgentMod {
     /* private */ var initTransportCallbacks: Any = js.native
     
     /**
+      * User agent instance id.
+      */
+    def instanceId: String = js.native
+    
+    /**
       * True if transport is connected.
       */
     def isConnected(): Boolean = js.native
@@ -142,6 +149,7 @@ object libApiUserAgentMod {
       *
       * @remarks
       * Resolves if transport connects, otherwise rejects.
+      * Calling `start()` after calling `stop()` will fail if `stop()` has yet to resolve.
       *
       * @example
       * ```ts
@@ -179,6 +187,9 @@ object libApiUserAgentMod {
       * 5) Transport disconnects.
       * 6) User Agent Core resets.
       * ```
+      * The user agent state transistions to stopped once these steps have been completed.
+      * Calling `start()` after calling `stop()` will fail if `stop()` has yet to resolve.
+      *
       * NOTE: While this is a "graceful shutdown", it can also be very slow one if you
       * are waiting for the returned Promise to resolve. The disposal of the clients and
       * dialogs is done serially - waiting on one to finish before moving on to the next.
@@ -206,9 +217,6 @@ object libApiUserAgentMod {
       */
     def transport: Transport = js.native
     
-    /** Unload listener. */
-    /* private */ var unloadListener: Any = js.native
-    
     /**
       * User agent core.
       */
@@ -231,12 +239,23 @@ object libApiUserAgentMod {
       * Create a URI instance from a string.
       * @param uri - The string to parse.
       *
+      * @remarks
+      * Returns undefined if the syntax of the URI is invalid.
+      * The syntax must conform to a SIP URI as defined in the RFC.
+      * 25 Augmented BNF for the SIP Protocol
+      * https://tools.ietf.org/html/rfc3261#section-25
+      *
       * @example
       * ```ts
       * const uri = UserAgent.makeURI("sip:edgar@example.com");
       * ```
       */
     inline def makeURI(uri: String): js.UndefOr[URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[URI]]
+    
+    @JSImport("sip.js/lib/api/user-agent", "UserAgent.newUUID")
+    @js.native
+    def newUUID: Any = js.native
+    inline def newUUID_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
     
     /**
       * Strip properties with undefined values from options.

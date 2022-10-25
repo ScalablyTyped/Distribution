@@ -77,6 +77,13 @@ type CertificateAuthorityStatus = _CertificateAuthorityStatus | java.lang.String
 */
 type CertificateAuthorityType = _CertificateAuthorityType | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GENERAL_PURPOSE
+  - typings.awsSdk.awsSdkStrings.SHORT_LIVED_CERTIFICATE
+  - java.lang.String
+*/
+type CertificateAuthorityUsageMode = _CertificateAuthorityUsageMode | java.lang.String
+
 type CertificateBody = java.lang.String
 
 type CertificateBodyBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String

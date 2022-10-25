@@ -2,6 +2,13 @@ package typings.ipfsRepoMigrations
 
 import typings.interfaceBlockstore.mod.Blockstore
 import typings.interfaceDatastore.mod.Datastore
+import typings.ipfsRepoMigrations.distSrcMigrationsMigration10Mod.Operation
+import typings.ipfsRepoMigrations.ipfsRepoMigrationsInts.`0`
+import typings.ipfsRepoMigrations.ipfsRepoMigrationsInts.`112`
+import typings.ipfsRepoMigrations.ipfsRepoMigrationsInts.`18`
+import typings.ipfsRepoMigrations.ipfsRepoMigrationsStrings.del
+import typings.ipfsRepoMigrations.ipfsRepoMigrationsStrings.put
+import typings.multiformats.cidMod.CID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,6 +45,83 @@ object anon {
       inline def setPins(value: Datastore): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
       inline def setRoot(value: Datastore): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Hash extends StObject {
+    
+    var Hash: CID[Any, `112`, `18`, `0`]
+    
+    var Name: String
+    
+    var Tsize: Double
+  }
+  object Hash {
+    
+    inline def apply(Hash: CID[Any, `112`, `18`, `0`], Name: String, Tsize: Double): Hash = {
+      val __obj = js.Dynamic.literal(Hash = Hash.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Tsize = Tsize.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Hash]
+    }
+    
+    extension [Self <: Hash](x: Self) {
+      
+      inline def setHash(value: CID[Any, `112`, `18`, `0`]): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      
+      inline def setTsize(value: Double): Self = StObject.set(x, "Tsize", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Key
+    extends StObject
+       with Operation {
+    
+    var key: String | js.typedarray.Uint8Array
+    
+    var `type`: del
+  }
+  object Key {
+    
+    inline def apply(key: String | js.typedarray.Uint8Array): Key = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("del")
+      __obj.asInstanceOf[Key]
+    }
+    
+    extension [Self <: Key](x: Self) {
+      
+      inline def setKey(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: del): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Type
+    extends StObject
+       with Operation {
+    
+    var key: String | js.typedarray.Uint8Array
+    
+    var `type`: put
+    
+    var value: js.typedarray.Uint8Array
+  }
+  object Type {
+    
+    inline def apply(key: String | js.typedarray.Uint8Array, value: js.typedarray.Uint8Array): Type = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("put")
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setKey(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: put): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

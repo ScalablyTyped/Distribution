@@ -120,14 +120,14 @@ object anon {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1122, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1128, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     
     var size: js.UndefOr[standard | large] = js.undefined
   }
   object Icon {
     
     inline def apply(
-      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1122, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1128, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     ): Icon = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[Icon]
@@ -140,7 +140,7 @@ object anon {
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setIcon(
-        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1122, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1128, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setSize(value: standard | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
@@ -1300,6 +1300,8 @@ object anon {
     
     var HIGH_PRIORITY: BlueprintIcons16Id
     
+    var HIGH_VOLTAGE_POLE: BlueprintIcons16Id
+    
     var HISTORY: BlueprintIcons16Id
     
     var HOME: BlueprintIcons16Id
@@ -1353,6 +1355,8 @@ object anon {
     var HelperManagement: BlueprintIcons16Id
     
     var HighPriority: BlueprintIcons16Id
+    
+    var HighVoltagePole: BlueprintIcons16Id
     
     var Highlight: BlueprintIcons16Id
     
@@ -1560,6 +1564,8 @@ object anon {
     
     var LOG_OUT: BlueprintIcons16Id
     
+    var LOW_VOLTAGE_POLE: BlueprintIcons16Id
+    
     var LabTest: BlueprintIcons16Id
     
     var Label: BlueprintIcons16Id
@@ -1619,6 +1625,8 @@ object anon {
     var LogIn: BlueprintIcons16Id
     
     var LogOut: BlueprintIcons16Id
+    
+    var LowVoltagePole: BlueprintIcons16Id
     
     var MANUAL: BlueprintIcons16Id
     
@@ -2118,6 +2126,8 @@ object anon {
     
     var SMALL_CROSS: BlueprintIcons16Id
     
+    var SMALL_INFO_SIGN: BlueprintIcons16Id
+    
     var SMALL_MINUS: BlueprintIcons16Id
     
     var SMALL_PLUS: BlueprintIcons16Id
@@ -2253,6 +2263,8 @@ object anon {
     var Slash: BlueprintIcons16Id
     
     var SmallCross: BlueprintIcons16Id
+    
+    var SmallInfoSign: BlueprintIcons16Id
     
     var SmallMinus: BlueprintIcons16Id
     
@@ -3354,6 +3366,8 @@ object anon {
       
       inline def setHIGH_PRIORITY(value: BlueprintIcons16Id): Self = StObject.set(x, "HIGH_PRIORITY", value.asInstanceOf[js.Any])
       
+      inline def setHIGH_VOLTAGE_POLE(value: BlueprintIcons16Id): Self = StObject.set(x, "HIGH_VOLTAGE_POLE", value.asInstanceOf[js.Any])
+      
       inline def setHISTORY(value: BlueprintIcons16Id): Self = StObject.set(x, "HISTORY", value.asInstanceOf[js.Any])
       
       inline def setHOME(value: BlueprintIcons16Id): Self = StObject.set(x, "HOME", value.asInstanceOf[js.Any])
@@ -3391,6 +3405,8 @@ object anon {
       inline def setHelperManagement(value: BlueprintIcons16Id): Self = StObject.set(x, "HelperManagement", value.asInstanceOf[js.Any])
       
       inline def setHighPriority(value: BlueprintIcons16Id): Self = StObject.set(x, "HighPriority", value.asInstanceOf[js.Any])
+      
+      inline def setHighVoltagePole(value: BlueprintIcons16Id): Self = StObject.set(x, "HighVoltagePole", value.asInstanceOf[js.Any])
       
       inline def setHorizontalBarChart(value: BlueprintIcons16Id): Self = StObject.set(x, "HorizontalBarChart", value.asInstanceOf[js.Any])
       
@@ -3574,6 +3590,8 @@ object anon {
       
       inline def setLOG_OUT(value: BlueprintIcons16Id): Self = StObject.set(x, "LOG_OUT", value.asInstanceOf[js.Any])
       
+      inline def setLOW_VOLTAGE_POLE(value: BlueprintIcons16Id): Self = StObject.set(x, "LOW_VOLTAGE_POLE", value.asInstanceOf[js.Any])
+      
       inline def setLabTest(value: BlueprintIcons16Id): Self = StObject.set(x, "LabTest", value.asInstanceOf[js.Any])
       
       inline def setLayerOutline(value: BlueprintIcons16Id): Self = StObject.set(x, "LayerOutline", value.asInstanceOf[js.Any])
@@ -3609,6 +3627,8 @@ object anon {
       inline def setLogIn(value: BlueprintIcons16Id): Self = StObject.set(x, "LogIn", value.asInstanceOf[js.Any])
       
       inline def setLogOut(value: BlueprintIcons16Id): Self = StObject.set(x, "LogOut", value.asInstanceOf[js.Any])
+      
+      inline def setLowVoltagePole(value: BlueprintIcons16Id): Self = StObject.set(x, "LowVoltagePole", value.asInstanceOf[js.Any])
       
       inline def setMANUAL(value: BlueprintIcons16Id): Self = StObject.set(x, "MANUAL", value.asInstanceOf[js.Any])
       
@@ -3994,6 +4014,8 @@ object anon {
       
       inline def setSMALL_CROSS(value: BlueprintIcons16Id): Self = StObject.set(x, "SMALL_CROSS", value.asInstanceOf[js.Any])
       
+      inline def setSMALL_INFO_SIGN(value: BlueprintIcons16Id): Self = StObject.set(x, "SMALL_INFO_SIGN", value.asInstanceOf[js.Any])
+      
       inline def setSMALL_MINUS(value: BlueprintIcons16Id): Self = StObject.set(x, "SMALL_MINUS", value.asInstanceOf[js.Any])
       
       inline def setSMALL_PLUS(value: BlueprintIcons16Id): Self = StObject.set(x, "SMALL_PLUS", value.asInstanceOf[js.Any])
@@ -4105,6 +4127,8 @@ object anon {
       inline def setSimCard(value: BlueprintIcons16Id): Self = StObject.set(x, "SimCard", value.asInstanceOf[js.Any])
       
       inline def setSmallCross(value: BlueprintIcons16Id): Self = StObject.set(x, "SmallCross", value.asInstanceOf[js.Any])
+      
+      inline def setSmallInfoSign(value: BlueprintIcons16Id): Self = StObject.set(x, "SmallInfoSign", value.asInstanceOf[js.Any])
       
       inline def setSmallMinus(value: BlueprintIcons16Id): Self = StObject.set(x, "SmallMinus", value.asInstanceOf[js.Any])
       

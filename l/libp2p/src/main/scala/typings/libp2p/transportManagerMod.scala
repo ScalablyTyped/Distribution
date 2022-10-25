@@ -1,7 +1,7 @@
 package typings.libp2p
 
+import typings.libp2p.distSrcTransportManagerMod.DefaultTransportManagerComponents
 import typings.libp2p.distSrcTransportManagerMod.TransportManagerInit
-import typings.libp2pComponents.mod.Components
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +13,8 @@ object transportManagerMod {
   @js.native
   open class DefaultTransportManager protected ()
     extends typings.libp2p.distSrcTransportManagerMod.DefaultTransportManager {
-    def this(components: Components) = this()
-    def this(components: Components, init: TransportManagerInit) = this()
+    def this(components: DefaultTransportManagerComponents) = this()
+    def this(components: DefaultTransportManagerComponents, init: TransportManagerInit) = this()
   }
   
   @JSImport("libp2p/transport-manager", "FaultTolerance")

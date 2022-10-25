@@ -1,70 +1,37 @@
 package typings.libp2pBootstrap
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@libp2p/bootstrap", "Bootstrap")
+  @JSImport("@libp2p/bootstrap", JSImport.Namespace)
   @js.native
-  open class Bootstrap ()
-    extends PeerDiscovery
-       with Initializable {
-    def this(options: BootstrapOptions) = this()
+  val ^ : js.Any = js.native
+  
+  inline def bootstrap(init: BootstrapInit): js.Function1[/* components */ BootstrapComponents, PeerDiscovery] = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ BootstrapComponents, PeerDiscovery]]
+  
+  trait BootstrapComponents extends StObject {
     
-    /**
-      * Emit each address in the list as a PeerInfo
-      */
-    def _discoverBootstrapPeers(): js.Promise[Unit] = js.native
-    
-    /* private */ val _init: Any = js.native
-    
-    /* private */ var components: Any = js.native
-    
-    var get: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
-    
-    def isStarted(): Boolean = js.native
-    
-    /* private */ val list: Any = js.native
-    
-    /**
-      * Start emitting events
-      */
-    def start(): Unit = js.native
-    
-    /**
-      * Stop emitting events
-      */
-    def stop(): Unit = js.native
-    
-    /* private */ val timeout: Any = js.native
-    
-    /* private */ var timer: Any = js.native
-    
-    @JSName(js.Symbol.toStringTag)
-    var toStringTag_Bootstrap: js.Function0[String] = js.native
+    var peerStore: PeerStore
   }
-  /* static members */
-  object Bootstrap {
+  object BootstrapComponents {
     
-    @JSImport("@libp2p/bootstrap", "Bootstrap")
-    @js.native
-    val ^ : js.Any = js.native
+    inline def apply(peerStore: PeerStore): BootstrapComponents = {
+      val __obj = js.Dynamic.literal(peerStore = peerStore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BootstrapComponents]
+    }
     
-    @JSImport("@libp2p/bootstrap", "Bootstrap.tag")
-    @js.native
-    def tag: String = js.native
-    inline def tag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tag")(x.asInstanceOf[js.Any])
+    extension [Self <: BootstrapComponents](x: Self) {
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+    }
   }
   
-  trait BootstrapOptions extends StObject {
+  trait BootstrapInit extends StObject {
     
     /**
       * The list of peer addresses in multi-address format
@@ -91,14 +58,14 @@ object mod {
       */
     var timeout: js.UndefOr[Double] = js.undefined
   }
-  object BootstrapOptions {
+  object BootstrapInit {
     
-    inline def apply(list: js.Array[String]): BootstrapOptions = {
+    inline def apply(list: js.Array[String]): BootstrapInit = {
       val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BootstrapOptions]
+      __obj.asInstanceOf[BootstrapInit]
     }
     
-    extension [Self <: BootstrapOptions](x: Self) {
+    extension [Self <: BootstrapInit](x: Self) {
       
       inline def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       

@@ -9,10 +9,10 @@ import typings.sipJs.libCoreMessagesMethodsMessageMod.OutgoingMessageRequest
 import typings.sipJs.libCoreMessagesMethodsNotifyMod.OutgoingNotifyRequest
 import typings.sipJs.libCoreMessagesMethodsPrackMod.OutgoingPrackRequest
 import typings.sipJs.libCoreMessagesMethodsReferMod.OutgoingReferRequest
-import typings.sipJs.libCoreMessagesMod.URI
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.RequestOptions
 import typings.sipJs.libCoreSessionSessionDelegateMod.SessionDelegate
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

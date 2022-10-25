@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-unixfs-exporter" : "8.0.6"
+      "ipfs-unixfs-exporter" : "9.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-unixfs-exporter" : "8.0.6"
+      "ipfs-unixfs-exporter" : "9.0.1"
     }
   ],
   "compile-devDependencies" : [

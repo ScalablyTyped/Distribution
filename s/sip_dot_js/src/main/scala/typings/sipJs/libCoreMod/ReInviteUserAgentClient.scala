@@ -10,11 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ReInviteUserAgentClient protected ()
   extends typings.sipJs.libCoreUserAgentsMod.ReInviteUserAgentClient {
-  def this(dialog: typings.sipJs.libCoreDialogsMod.SessionDialog) = this()
-  def this(dialog: typings.sipJs.libCoreDialogsMod.SessionDialog, delegate: OutgoingInviteRequestDelegate) = this()
-  def this(dialog: typings.sipJs.libCoreDialogsMod.SessionDialog, delegate: Unit, options: RequestOptions) = this()
+  def this(dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog) = this()
   def this(
-    dialog: typings.sipJs.libCoreDialogsMod.SessionDialog,
+    dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
+    delegate: OutgoingInviteRequestDelegate
+  ) = this()
+  def this(
+    dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
+    delegate: Unit,
+    options: RequestOptions
+  ) = this()
+  def this(
+    dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
     delegate: OutgoingInviteRequestDelegate,
     options: RequestOptions
   ) = this()

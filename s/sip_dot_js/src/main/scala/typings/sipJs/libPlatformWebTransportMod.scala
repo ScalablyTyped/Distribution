@@ -1,6 +1,6 @@
 package typings.sipJs
 
-import typings.sipJs.libCoreMod.Logger
+import typings.sipJs.libCoreLogLoggerMod.Logger
 import typings.sipJs.libPlatformWebTransportTransportOptionsMod.TransportOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

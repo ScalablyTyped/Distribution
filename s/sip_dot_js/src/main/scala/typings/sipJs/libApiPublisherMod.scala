@@ -6,9 +6,9 @@ import typings.sipJs.libApiPublisherPublishOptionsMod.PublisherPublishOptions
 import typings.sipJs.libApiPublisherStateMod.PublisherState
 import typings.sipJs.libApiPublisherUnpublishOptionsMod.PublisherUnpublishOptions
 import typings.sipJs.libApiUserAgentMod.UserAgent
+import typings.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage
 import typings.sipJs.libCoreMessagesMethodsPublishMod.OutgoingPublishRequest
-import typings.sipJs.libCoreMod.IncomingResponseMessage
-import typings.sipJs.libCoreMod.URI
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

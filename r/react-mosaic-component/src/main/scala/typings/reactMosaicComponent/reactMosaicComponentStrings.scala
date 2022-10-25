@@ -1913,6 +1913,10 @@ object reactMosaicComponentStrings {
   inline def HIGH_PRIORITY: HIGH_PRIORITY = "HIGH_PRIORITY".asInstanceOf[HIGH_PRIORITY]
   
   @js.native
+  sealed trait HIGH_VOLTAGE_POLE extends StObject
+  inline def HIGH_VOLTAGE_POLE: HIGH_VOLTAGE_POLE = "HIGH_VOLTAGE_POLE".asInstanceOf[HIGH_VOLTAGE_POLE]
+  
+  @js.native
   sealed trait HISTORY extends StObject
   inline def HISTORY: HISTORY = "HISTORY".asInstanceOf[HISTORY]
   
@@ -2019,6 +2023,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait HighPriority extends StObject
   inline def HighPriority: HighPriority = "HighPriority".asInstanceOf[HighPriority]
+  
+  @js.native
+  sealed trait HighVoltagePole extends StObject
+  inline def HighVoltagePole: HighVoltagePole = "HighVoltagePole".asInstanceOf[HighVoltagePole]
   
   @js.native
   sealed trait Highlight_ extends StObject
@@ -2433,6 +2441,10 @@ object reactMosaicComponentStrings {
   inline def LOG_OUT: LOG_OUT = "LOG_OUT".asInstanceOf[LOG_OUT]
   
   @js.native
+  sealed trait LOW_VOLTAGE_POLE extends StObject
+  inline def LOW_VOLTAGE_POLE: LOW_VOLTAGE_POLE = "LOW_VOLTAGE_POLE".asInstanceOf[LOW_VOLTAGE_POLE]
+  
+  @js.native
   sealed trait LabTest extends StObject
   inline def LabTest: LabTest = "LabTest".asInstanceOf[LabTest]
   
@@ -2551,6 +2563,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait LogOut extends StObject
   inline def LogOut: LogOut = "LogOut".asInstanceOf[LogOut]
+  
+  @js.native
+  sealed trait LowVoltagePole extends StObject
+  inline def LowVoltagePole: LowVoltagePole = "LowVoltagePole".asInstanceOf[LowVoltagePole]
   
   @js.native
   sealed trait MANUAL extends StObject
@@ -3549,6 +3565,10 @@ object reactMosaicComponentStrings {
   inline def SMALL_CROSS: SMALL_CROSS = "SMALL_CROSS".asInstanceOf[SMALL_CROSS]
   
   @js.native
+  sealed trait SMALL_INFO_SIGN extends StObject
+  inline def SMALL_INFO_SIGN: SMALL_INFO_SIGN = "SMALL_INFO_SIGN".asInstanceOf[SMALL_INFO_SIGN]
+  
+  @js.native
   sealed trait SMALL_MINUS extends StObject
   inline def SMALL_MINUS: SMALL_MINUS = "SMALL_MINUS".asInstanceOf[SMALL_MINUS]
   
@@ -3819,6 +3839,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait SmallCross extends StObject
   inline def SmallCross: SmallCross = "SmallCross".asInstanceOf[SmallCross]
+  
+  @js.native
+  sealed trait SmallInfoSign extends StObject
+  inline def SmallInfoSign: SmallInfoSign = "SmallInfoSign".asInstanceOf[SmallInfoSign]
   
   @js.native
   sealed trait SmallMinus extends StObject

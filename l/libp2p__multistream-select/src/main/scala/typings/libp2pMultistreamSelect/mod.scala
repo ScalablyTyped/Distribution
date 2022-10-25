@@ -48,6 +48,15 @@ object mod {
     options: ByteListInit
   ): js.Promise[ProtocolStream[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array]] = (^.asInstanceOf[js.Dynamic].applyDynamic("handle")(stream.asInstanceOf[js.Any], protocols.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProtocolStream[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array]]]
   
+  inline def lazySelect(
+    stream: Duplex[
+      js.typedarray.Uint8Array | Uint8ArrayList, 
+      js.typedarray.Uint8Array | Uint8ArrayList, 
+      js.Promise[Unit]
+    ],
+    protocol: String
+  ): ProtocolStream[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("lazySelect")(stream.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[ProtocolStream[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array]]
+  
   inline def select(
     stream: Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]],
     protocols: String

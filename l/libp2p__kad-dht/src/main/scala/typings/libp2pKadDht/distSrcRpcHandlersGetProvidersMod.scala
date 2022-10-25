@@ -1,8 +1,8 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerInfo.mod.PeerInfo
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pKadDht.distSrcMessageMod.Message
 import typings.libp2pKadDht.distSrcPeerRoutingMod.PeerRouting
 import typings.libp2pKadDht.distSrcProvidersMod.Providers
@@ -19,25 +19,39 @@ object distSrcRpcHandlersGetProvidersMod {
   open class GetProvidersHandler protected ()
     extends StObject
        with DHTMessageHandler {
-    def this(init: GetProvidersHandlerInit) = this()
+    def this(components: GetProvidersHandlerComponents, init: GetProvidersHandlerInit) = this()
     
     def _getAddresses(peerId: PeerId): js.Promise[js.Array[Multiaddr_]] = js.native
     
     def _getPeers(peerIds: js.Array[PeerId]): js.Promise[js.Array[PeerInfo]] = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /* CompleteClass */
     override def handle(peerId: PeerId, msg: Message): js.Promise[js.UndefOr[Message]] = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /* private */ val lan: Any = js.native
     
     /* private */ val peerRouting: Any = js.native
     
     /* private */ val providers: Any = js.native
+  }
+  
+  trait GetProvidersHandlerComponents extends StObject {
+    
+    var peerStore: PeerStore
+  }
+  object GetProvidersHandlerComponents {
+    
+    inline def apply(peerStore: PeerStore): GetProvidersHandlerComponents = {
+      val __obj = js.Dynamic.literal(peerStore = peerStore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetProvidersHandlerComponents]
+    }
+    
+    extension [Self <: GetProvidersHandlerComponents](x: Self) {
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+    }
   }
   
   trait GetProvidersHandlerInit extends StObject {

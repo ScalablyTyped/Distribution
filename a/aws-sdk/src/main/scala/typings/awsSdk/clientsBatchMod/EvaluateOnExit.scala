@@ -12,17 +12,17 @@ trait EvaluateOnExit extends StObject {
   var action: RetryAction
   
   /**
-    * Contains a glob pattern to match against the decimal representation of the ExitCode returned for a job. The pattern can be up to 512 characters in length. It can contain only numbers, and can optionally end with an asterisk (*) so that only the start of the string needs to be an exact match. The string can be between 1 and 512 characters in length.
+    * Contains a glob pattern to match against the decimal representation of the ExitCode returned for a job. The pattern can be up to 512 characters long. It can contain only numbers, and can end with an asterisk (*) so that only the start of the string needs to be an exact match. The string can contain up to 512 characters.
     */
   var onExitCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Contains a glob pattern to match against the Reason returned for a job. The pattern can be up to 512 characters in length. It can contain letters, numbers, periods (.), colons (:), and white space (including spaces and tabs). It can optionally end with an asterisk (*) so that only the start of the string needs to be an exact match. The string can be between 1 and 512 characters in length.
+    * Contains a glob pattern to match against the Reason returned for a job. The pattern can contain up to 512 characters. It can contain letters, numbers, periods (.), colons (:), and white space (including spaces and tabs). It can optionally end with an asterisk (*) so that only the start of the string needs to be an exact match.
     */
   var onReason: js.UndefOr[String] = js.undefined
   
   /**
-    * Contains a glob pattern to match against the StatusReason returned for a job. The pattern can be up to 512 characters in length. It can contain letters, numbers, periods (.), colons (:), and white space (including spaces or tabs). It can optionally end with an asterisk (*) so that only the start of the string needs to be an exact match. The string can be between 1 and 512 characters in length.
+    * Contains a glob pattern to match against the StatusReason returned for a job. The pattern can contain up to 512 characters. It can contain letters, numbers, periods (.), colons (:), and white spaces (including spaces or tabs). It can optionally end with an asterisk (*) so that only the start of the string needs to be an exact match.
     */
   var onStatusReason: js.UndefOr[String] = js.undefined
 }

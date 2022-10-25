@@ -369,6 +369,12 @@ object mod {
     def setResponseHeaders(headers: Any): Unit = js.native
     
     /**
+      * Sets response status (e.g. 200, 404), checks for validity.
+      * @param status the status code to set
+      */
+    def setStatus(status: Double): Unit = js.native
+    
+    /**
       * The request’s status code.
       * undefined if the request has not been handled (see respond below)
       */

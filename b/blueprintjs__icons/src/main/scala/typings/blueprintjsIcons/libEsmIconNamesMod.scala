@@ -2506,6 +2506,11 @@ object libEsmIconNamesMod {
     def HIGH_PRIORITY: BlueprintIcons16Id = js.native
     inline def HIGH_PRIORITY_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIGH_PRIORITY")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.HIGH_VOLTAGE_POLE")
+    @js.native
+    def HIGH_VOLTAGE_POLE: BlueprintIcons16Id = js.native
+    inline def HIGH_VOLTAGE_POLE_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIGH_VOLTAGE_POLE")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.HISTORY")
     @js.native
     def HISTORY_ : BlueprintIcons16Id = js.native
@@ -2646,6 +2651,11 @@ object libEsmIconNamesMod {
     @js.native
     def HighPriority: BlueprintIcons16Id = js.native
     inline def HighPriority_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HighPriority")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.HighVoltagePole")
+    @js.native
+    def HighVoltagePole: BlueprintIcons16Id = js.native
+    inline def HighVoltagePole_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HighVoltagePole")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.Highlight")
     @js.native
@@ -3186,6 +3196,11 @@ object libEsmIconNamesMod {
     def LOG_OUT: BlueprintIcons16Id = js.native
     inline def LOG_OUT_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_OUT")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.LOW_VOLTAGE_POLE")
+    @js.native
+    def LOW_VOLTAGE_POLE: BlueprintIcons16Id = js.native
+    inline def LOW_VOLTAGE_POLE_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOW_VOLTAGE_POLE")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.LabTest")
     @js.native
     def LabTest: BlueprintIcons16Id = js.native
@@ -3339,6 +3354,11 @@ object libEsmIconNamesMod {
     @js.native
     def LogOut: BlueprintIcons16Id = js.native
     inline def LogOut_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogOut")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.LowVoltagePole")
+    @js.native
+    def LowVoltagePole: BlueprintIcons16Id = js.native
+    inline def LowVoltagePole_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LowVoltagePole")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.MANUALLY_ENTERED_DATA")
     @js.native
@@ -4664,6 +4684,11 @@ object libEsmIconNamesMod {
     def SMALL_CROSS: BlueprintIcons16Id = js.native
     inline def SMALL_CROSS_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL_CROSS")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.SMALL_INFO_SIGN")
+    @js.native
+    def SMALL_INFO_SIGN: BlueprintIcons16Id = js.native
+    inline def SMALL_INFO_SIGN_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL_INFO_SIGN")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.SMALL_MINUS")
     @js.native
     def SMALL_MINUS: BlueprintIcons16Id = js.native
@@ -5015,6 +5040,11 @@ object libEsmIconNamesMod {
     @js.native
     def SmallCross: BlueprintIcons16Id = js.native
     inline def SmallCross_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallCross")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.SmallInfoSign")
+    @js.native
+    def SmallInfoSign: BlueprintIcons16Id = js.native
+    inline def SmallInfoSign_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallInfoSign")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.SmallMinus")
     @js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "libp2p" : "0.39.2"
+      "libp2p" : "0.40.0"
     }
   ],
   "test-dependencies" : [
     {
-      "libp2p" : "0.39.2"
+      "libp2p" : "0.40.0"
     }
   ],
   "compile-devDependencies" : [

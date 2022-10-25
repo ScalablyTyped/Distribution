@@ -1,7 +1,7 @@
 package typings.libp2pPeerStore
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
+import typings.interfaceDatastore.mod.Datastore
+import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfacePeerStore.mod.PeerStoreInit
 import org.scalablytyped.runtime.StObject
@@ -12,16 +12,33 @@ object mod {
   
   @JSImport("@libp2p/peer-store", "PersistentPeerStore")
   @js.native
-  open class PersistentPeerStore ()
-    extends PeerStore
-       with Initializable {
-    def this(init: PeerStoreInit) = this()
+  open class PersistentPeerStore protected () extends PeerStore {
+    def this(components: PersistentPeerStoreComponents) = this()
+    def this(components: PersistentPeerStoreComponents, init: PeerStoreInit) = this()
     
-    /* private */ var components: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
+    /* private */ val components: Any = js.native
     
     /* private */ val store: Any = js.native
+  }
+  
+  trait PersistentPeerStoreComponents extends StObject {
+    
+    var datastore: Datastore
+    
+    var peerId: PeerId
+  }
+  object PersistentPeerStoreComponents {
+    
+    inline def apply(datastore: Datastore, peerId: PeerId): PersistentPeerStoreComponents = {
+      val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PersistentPeerStoreComponents]
+    }
+    
+    extension [Self <: PersistentPeerStoreComponents](x: Self) {
+      
+      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    }
   }
 }

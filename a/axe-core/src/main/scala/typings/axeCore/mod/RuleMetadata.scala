@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RuleMetadata extends StObject {
   
+  var actIds: js.UndefOr[js.Array[String]] = js.undefined
+  
   var description: String
   
   var help: String
@@ -24,6 +26,12 @@ object RuleMetadata {
   }
   
   extension [Self <: RuleMetadata](x: Self) {
+    
+    inline def setActIds(value: js.Array[String]): Self = StObject.set(x, "actIds", value.asInstanceOf[js.Any])
+    
+    inline def setActIdsUndefined: Self = StObject.set(x, "actIds", js.undefined)
+    
+    inline def setActIdsVarargs(value: String*): Self = StObject.set(x, "actIds", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

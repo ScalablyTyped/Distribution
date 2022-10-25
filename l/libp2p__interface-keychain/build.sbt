@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libp2p__interface-keychain"
-version := "1.0.3-677c33"
+version := "1.0.4-01fd93"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

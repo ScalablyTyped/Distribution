@@ -23,9 +23,9 @@ object libEsmComponentsPopoverPopperUtilsMod {
   @js.native
   val arrowOffsetModifier: ModifierFn = js.native
   
-  inline def getAlignment(placement: Placement): center | left | right = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlignment")(placement.asInstanceOf[js.Any]).asInstanceOf[center | left | right]
+  inline def getAlignment(placement: Placement): left | right | center = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlignment")(placement.asInstanceOf[js.Any]).asInstanceOf[left | right | center]
   
-  inline def getOppositePosition(side: Position): left | right | bottom | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getOppositePosition")(side.asInstanceOf[js.Any]).asInstanceOf[left | right | bottom | top]
+  inline def getOppositePosition(side: Position): bottom | left | right | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getOppositePosition")(side.asInstanceOf[js.Any]).asInstanceOf[bottom | left | right | top]
   
   inline def getPosition(placement: Placement): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(placement.asInstanceOf[js.Any]).asInstanceOf[Position]
   

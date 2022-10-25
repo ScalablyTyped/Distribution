@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "datastore-pubsub" : "4.0.2"
+      "datastore-pubsub" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "datastore-pubsub" : "4.0.2"
+      "datastore-pubsub" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

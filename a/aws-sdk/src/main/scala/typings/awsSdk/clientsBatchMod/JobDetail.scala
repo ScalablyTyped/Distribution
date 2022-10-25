@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobDetail extends StObject {
   
   /**
-    * The array properties of the job, if it is an array job.
+    * The array properties of the job, if it's an array job.
     */
   var arrayProperties: js.UndefOr[ArrayPropertiesDetail] = js.undefined
   
   /**
-    * A list of job attempts associated with this job.
+    * A list of job attempts that are associated with this job.
     */
   var attempts: js.UndefOr[AttemptDetails] = js.undefined
   
   /**
-    * An object representing the details of the container that's associated with the job.
+    * An object that represents the details for the container that's associated with the job.
     */
   var container: js.UndefOr[ContainerDetail] = js.undefined
   
   /**
-    * The Unix timestamp (in milliseconds) for when the job was created. For non-array jobs and parent array jobs, this is when the job entered the SUBMITTED state (at the time SubmitJob was called). For array child jobs, this is when the child job was spawned by its parent and entered the PENDING state.
+    * The Unix timestamp (in milliseconds) for when the job was created. For non-array jobs and parent array jobs, this is when the job entered the SUBMITTED state. This is specifically at the time SubmitJob was called. For array child jobs, this is when the child job was spawned by its parent and entered the PENDING state.
     */
   var createdAt: js.UndefOr[Long] = js.undefined
   
@@ -32,22 +32,32 @@ trait JobDetail extends StObject {
   var dependsOn: js.UndefOr[JobDependencyList] = js.undefined
   
   /**
+    * A list of job attempts that are associated with this job.
+    */
+  var eksAttempts: js.UndefOr[EksAttemptDetails] = js.undefined
+  
+  /**
+    * An object with various properties that are specific to Amazon EKS based jobs. Only one of container, eksProperties, or nodeDetails is specified.
+    */
+  var eksProperties: js.UndefOr[EksPropertiesDetail] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the job.
     */
   var jobArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the job definition that's used by this job.
+    * The Amazon Resource Name (ARN) of the job definition that this job uses.
     */
   var jobDefinition: String
   
   /**
-    * The ID for the job.
+    * The job ID.
     */
   var jobId: String
   
   /**
-    * The name of the job.
+    * The job name.
     */
   var jobName: String
   
@@ -57,17 +67,17 @@ trait JobDetail extends StObject {
   var jobQueue: String
   
   /**
-    * An object representing the details of a node that's associated with a multi-node parallel job.
+    * An object that represents the details of a node that's associated with a multi-node parallel job.
     */
   var nodeDetails: js.UndefOr[NodeDetails] = js.undefined
   
   /**
-    * An object representing the node properties of a multi-node parallel job.  This isn't applicable to jobs that are running on Fargate resources. 
+    * An object that represents the node properties of a multi-node parallel job.  This isn't applicable to jobs that are running on Fargate resources. 
     */
   var nodeProperties: js.UndefOr[NodeProperties] = js.undefined
   
   /**
-    * Additional parameters passed to the job that replace parameter substitution placeholders or override any corresponding parameter defaults from the job definition.
+    * Additional parameters that are passed to the job that replace parameter substitution placeholders or override any corresponding parameter defaults from the job definition.
     */
   var parameters: js.UndefOr[ParametersMap] = js.undefined
   
@@ -77,7 +87,7 @@ trait JobDetail extends StObject {
   var platformCapabilities: js.UndefOr[PlatformCapabilityList] = js.undefined
   
   /**
-    * Specifies whether to propagate the tags from the job or job definition to the corresponding Amazon ECS task. If no value is specified, the tags aren't propagated. Tags can only be propagated to the tasks during task creation. For tags with the same name, job tags are given priority over job definitions tags. If the total number of combined tags from the job and job definition is over 50, the job is moved to the FAILED state.
+    * Specifies whether to propagate the tags from the job or job definition to the corresponding Amazon ECS task. If no value is specified, the tags aren't propagated. Tags can only be propagated to the tasks when the tasks are created. For tags with the same name, job tags are given priority over job definitions tags. If the total number of combined tags from the job and job definition is over 50, the job is moved to the FAILED state.
     */
   var propagateTags: js.UndefOr[Boolean] = js.undefined
   
@@ -97,7 +107,7 @@ trait JobDetail extends StObject {
   var shareIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * The Unix timestamp (in milliseconds) for when the job was started (when the job transitioned from the STARTING state to the RUNNING state). This parameter isn't provided for child jobs of array jobs or multi-node parallel jobs.
+    * The Unix timestamp (in milliseconds) for when the job was started. More specifically, it's when the job transitioned from the STARTING state to the RUNNING state. This parameter isn't provided for child jobs of array jobs or multi-node parallel jobs.
     */
   var startedAt: Long
   
@@ -107,17 +117,17 @@ trait JobDetail extends StObject {
   var status: JobStatus
   
   /**
-    * A short, human-readable string to provide additional details about the current status of the job.
+    * A short, human-readable string to provide more details for the current status of the job.
     */
   var statusReason: js.UndefOr[String] = js.undefined
   
   /**
-    * The Unix timestamp (in milliseconds) for when the job was stopped (when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
+    * The Unix timestamp (in milliseconds) for when the job was stopped. More specifically, it's when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED.
     */
   var stoppedAt: js.UndefOr[Long] = js.undefined
   
   /**
-    * The tags applied to the job.
+    * The tags that are applied to the job.
     */
   var tags: js.UndefOr[TagrisTagsMap] = js.undefined
   
@@ -165,6 +175,16 @@ object JobDetail {
     inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
     inline def setDependsOnVarargs(value: JobDependency*): Self = StObject.set(x, "dependsOn", js.Array(value*))
+    
+    inline def setEksAttempts(value: EksAttemptDetails): Self = StObject.set(x, "eksAttempts", value.asInstanceOf[js.Any])
+    
+    inline def setEksAttemptsUndefined: Self = StObject.set(x, "eksAttempts", js.undefined)
+    
+    inline def setEksAttemptsVarargs(value: EksAttemptDetail*): Self = StObject.set(x, "eksAttempts", js.Array(value*))
+    
+    inline def setEksProperties(value: EksPropertiesDetail): Self = StObject.set(x, "eksProperties", value.asInstanceOf[js.Any])
+    
+    inline def setEksPropertiesUndefined: Self = StObject.set(x, "eksProperties", js.undefined)
     
     inline def setJobArn(value: String): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     

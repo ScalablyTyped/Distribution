@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ipld__dag-pb"
-version := "2.1.18-de94df"
+version := "3.0.0-035d7d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "multiformats" % "10.0.0-cc5814",
+  "org.scalablytyped" %%% "multiformats" % "10.0.2-cc7cca",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

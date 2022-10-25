@@ -1,8 +1,8 @@
 package typings.ipfsHttpClient.anon
 
 import typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
-import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.multiformats.mod.CID
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

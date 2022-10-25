@@ -12,7 +12,7 @@ object distSrcObjectDataMod {
   @js.native
   val createData: Factory[
     js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ /* cid */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ /* cid */ Any, 
       /* options */ js.UndefOr[
         AbortOptions & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.PreloadOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

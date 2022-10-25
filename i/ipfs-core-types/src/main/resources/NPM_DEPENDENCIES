@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-core-types" : "0.12.1"
+      "ipfs-core-types" : "0.13.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-core-types" : "0.12.1"
+      "ipfs-core-types" : "0.13.0"
     }
   ],
   "compile-devDependencies" : [

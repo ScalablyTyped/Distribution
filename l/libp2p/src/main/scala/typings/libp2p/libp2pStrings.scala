@@ -19,6 +19,10 @@ object libp2pStrings {
   inline def addressSorter: addressSorter = "addressSorter".asInstanceOf[addressSorter]
   
   @js.native
+  sealed trait allow extends StObject
+  inline def allow: allow = "allow".asInstanceOf[allow]
+  
+  @js.native
   sealed trait autoDial extends StObject
   inline def autoDial: autoDial = "autoDial".asInstanceOf[autoDial]
   
@@ -39,6 +43,10 @@ object libp2pStrings {
   inline def dataSent: dataSent = "dataSent".asInstanceOf[dataSent]
   
   @js.native
+  sealed trait deny extends StObject
+  inline def deny: deny = "deny".asInstanceOf[deny]
+  
+  @js.native
   sealed trait dialTimeout extends StObject
   inline def dialTimeout: dialTimeout = "dialTimeout".asInstanceOf[dialTimeout]
   
@@ -49,6 +57,10 @@ object libp2pStrings {
   @js.native
   sealed trait inbound extends StObject
   inline def inbound: inbound = "inbound".asInstanceOf[inbound]
+  
+  @js.native
+  sealed trait inboundConnectionThreshold extends StObject
+  inline def inboundConnectionThreshold: inboundConnectionThreshold = "inboundConnectionThreshold".asInstanceOf[inboundConnectionThreshold]
   
   @js.native
   sealed trait inboundUpgradeTimeout extends StObject
@@ -73,6 +85,10 @@ object libp2pStrings {
   @js.native
   sealed trait maxEventLoopDelay extends StObject
   inline def maxEventLoopDelay: maxEventLoopDelay = "maxEventLoopDelay".asInstanceOf[maxEventLoopDelay]
+  
+  @js.native
+  sealed trait maxIncomingPendingConnections extends StObject
+  inline def maxIncomingPendingConnections: maxIncomingPendingConnections = "maxIncomingPendingConnections".asInstanceOf[maxIncomingPendingConnections]
   
   @js.native
   sealed trait maxParallelDials extends StObject

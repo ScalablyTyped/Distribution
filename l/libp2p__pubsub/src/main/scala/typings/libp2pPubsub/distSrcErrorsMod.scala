@@ -61,6 +61,14 @@ object distSrcErrorsMod {
     inline def ERR_MISSING_SIGNATURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_MISSING_SIGNATURE")(x.asInstanceOf[js.Any])
     
     /**
+      * Message failed topic validator
+      */
+    @JSImport("@libp2p/pubsub/dist/src/errors", "codes.ERR_TOPIC_VALIDATOR_REJECT")
+    @js.native
+    def ERR_TOPIC_VALIDATOR_REJECT: String = js.native
+    inline def ERR_TOPIC_VALIDATOR_REJECT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_TOPIC_VALIDATOR_REJECT")(x.asInstanceOf[js.Any])
+    
+    /**
       * Message expected to not have a `from`, but does
       */
     @JSImport("@libp2p/pubsub/dist/src/errors", "codes.ERR_UNEXPECTED_FROM")

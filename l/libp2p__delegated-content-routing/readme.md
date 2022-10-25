@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__delegated-content-routing
 
-Typings are for version 2.0.2
+Typings are for version 3.0.0
 
 ## Library description:
 Leverage other peers in the libp2p network to perform Content Routing calls.

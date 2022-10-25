@@ -217,7 +217,7 @@ object distSrcTypesMod {
     
     var chunker: ChunkerType | Chunker
     
-    var cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
+    var cidVersion: Version
     
     var dagBuilder: js.UndefOr[DAGBuilder] = js.undefined
     
@@ -278,7 +278,7 @@ object distSrcTypesMod {
       avgChunkSize: Double,
       blockWriteConcurrency: Double,
       chunker: ChunkerType | Chunker,
-      cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any,
+      cidVersion: Version,
       fileImportConcurrency: Double,
       hamtBucketBits: Double,
       hamtHashCode: Double,
@@ -329,9 +329,7 @@ object distSrcTypesMod {
         value: (/* source */ AsyncIterable[js.typedarray.Uint8Array], /* options */ ImporterOptions) => AsyncIterable[js.typedarray.Uint8Array]
       ): Self = StObject.set(x, "chunker", js.Any.fromFunction2(value))
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setDagBuilder(
         value: (/* source */ AsyncIterable[ImportCandidate] | js.Iterable[ImportCandidate], /* blockstore */ Blockstore, /* options */ ImporterOptions) => AsyncIterable[js.Function0[js.Promise[InProgressImportResult]]]
@@ -418,7 +416,7 @@ object distSrcTypesMod {
   
   trait PersistOptions extends StObject {
     
-    var cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
+    var cidVersion: Version
     
     var codec: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockCodec<any, any> */ Any
@@ -433,7 +431,7 @@ object distSrcTypesMod {
   object PersistOptions {
     
     inline def apply(
-      cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any,
+      cidVersion: Version,
       hasher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultihashHasher */ Any,
       onlyHash: Boolean
     ): PersistOptions = {
@@ -443,9 +441,7 @@ object distSrcTypesMod {
     
     extension [Self <: PersistOptions](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCodec(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockCodec<any, any> */ Any
@@ -558,9 +554,7 @@ object distSrcTypesMod {
     
     var chunker: js.UndefOr[ChunkerType | Chunker] = js.undefined
     
-    var cidVersion: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var cidVersion: js.UndefOr[Version] = js.undefined
     
     var dagBuilder: js.UndefOr[DAGBuilder] = js.undefined
     
@@ -649,9 +643,7 @@ object distSrcTypesMod {
       
       inline def setChunkerUndefined: Self = StObject.set(x, "chunker", js.undefined)
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
       

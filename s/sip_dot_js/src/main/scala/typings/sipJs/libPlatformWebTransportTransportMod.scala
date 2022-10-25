@@ -2,7 +2,7 @@ package typings.sipJs
 
 import typings.sipJs.libApiEmitterMod.Emitter
 import typings.sipJs.libApiTransportStateMod.TransportState
-import typings.sipJs.libCoreMod.Logger
+import typings.sipJs.libCoreLogLoggerMod.Logger
 import typings.sipJs.libPlatformWebTransportTransportOptionsMod.TransportOptions
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject

@@ -9,6 +9,8 @@ trait Anonymous extends StObject {
   var anonymous: js.UndefOr[Boolean] = js.undefined
   
   var outbound: js.UndefOr[Boolean] = js.undefined
+  
+  var register: js.UndefOr[Boolean] = js.undefined
 }
 object Anonymous {
   
@@ -26,5 +28,9 @@ object Anonymous {
     inline def setOutbound(value: Boolean): Self = StObject.set(x, "outbound", value.asInstanceOf[js.Any])
     
     inline def setOutboundUndefined: Self = StObject.set(x, "outbound", js.undefined)
+    
+    inline def setRegister(value: Boolean): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+    
+    inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
   }
 }

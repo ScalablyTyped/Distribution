@@ -1,7 +1,5 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfaceDht.mod.AddingPeerEvent
 import typings.libp2pInterfaceDht.mod.DialingPeerEvent
 import typings.libp2pInterfaceDht.mod.PeerResponseEvent
@@ -18,6 +16,7 @@ import typings.libp2pKadDht.distSrcNetworkMod.Network
 import typings.libp2pKadDht.distSrcPeerRoutingMod.PeerRouting
 import typings.libp2pKadDht.distSrcQueryManagerMod.QueryManager
 import typings.libp2pKadDht.distSrcRoutingTableMod.RoutingTable
+import typings.libp2pKadDht.mod.KadDHTComponents
 import typings.libp2pRecord.mod.Libp2pRecord
 import typings.std.AsyncGenerator
 import org.scalablytyped.runtime.StObject
@@ -28,12 +27,10 @@ object distSrcContentFetchingMod {
   
   @JSImport("@libp2p/kad-dht/dist/src/content-fetching", "ContentFetching")
   @js.native
-  open class ContentFetching protected ()
-    extends StObject
-       with Initializable {
-    def this(init: ContentFetchingInit) = this()
+  open class ContentFetching protected () extends StObject {
+    def this(components: KadDHTComponents, init: ContentFetchingInit) = this()
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /**
       * Get the value to the given key
@@ -52,9 +49,6 @@ object distSrcContentFetchingMod {
       */
     def getMany(key: js.typedarray.Uint8Array): AsyncGenerator[QueryEvent, Unit, Any] = js.native
     def getMany(key: js.typedarray.Uint8Array, options: QueryOptions): AsyncGenerator[QueryEvent, Unit, Any] = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /* private */ val log: Any = js.native
     

@@ -3,6 +3,8 @@ package typings.expressJwt
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
+import typings.expressUnless.anon.Unless
+import typings.expressUnless.mod.Params
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,9 +25,11 @@ object anon {
         ],
       res: Response_[Any, Record[String, Any]],
       next: NextFunction
-    ): js.Promise[Unit] = js.native
+    ): js.Promise[Any] = js.native
     
-    var unless: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unless */ Any = js.native
+    def unless(options: Params): Unless = js.native
+    @JSName("unless")
+    var unless_Original: js.Function1[/* options */ Params, Unless] = js.native
   }
   
   trait Message extends StObject {

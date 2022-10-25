@@ -1,9 +1,8 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfaceDht.mod.QueryEvent
 import typings.libp2pInterfaceDht.mod.QueryOptions
+import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pKadDht.distSrcQueryTypesMod.QueryFunc
@@ -19,20 +18,16 @@ object distSrcQueryManagerMod {
   @js.native
   open class QueryManager protected ()
     extends StObject
-       with Startable
-       with Initializable {
-    def this(init: QueryManagerInit) = this()
+       with Startable {
+    def this(components: QueryManagerComponents, init: QueryManagerInit) = this()
     
     /* private */ val alpha: Any = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /* private */ val controllers: Any = js.native
     
     var disjointPaths: Double = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /* CompleteClass */
     override def isStarted(): Boolean = js.native
@@ -82,6 +77,29 @@ object distSrcQueryManagerMod {
     extension [Self <: CleanUpEvents](x: Self) {
       
       inline def setCleanup(value: CustomEvent[Any]): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait QueryManagerComponents extends StObject {
+    
+    var metrics: js.UndefOr[Metrics] = js.undefined
+    
+    var peerId: PeerId
+  }
+  object QueryManagerComponents {
+    
+    inline def apply(peerId: PeerId): QueryManagerComponents = {
+      val __obj = js.Dynamic.literal(peerId = peerId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QueryManagerComponents]
+    }
+    
+    extension [Self <: QueryManagerComponents](x: Self) {
+      
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     }
   }
   

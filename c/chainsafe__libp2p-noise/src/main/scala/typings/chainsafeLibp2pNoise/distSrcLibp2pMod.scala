@@ -1,5 +1,6 @@
 package typings.chainsafeLibp2pNoise
 
+import typings.chainsafeLibp2pNoise.distSrcProtoPayloadMod.NoiseExtensions
 import typings.libp2pInterfaceConnectionEncrypter.mod.ConnectionEncrypter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,13 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcLibp2pMod {
   
-  @js.native
-  trait INoiseConnection
-    extends StObject
-       with ConnectionEncrypter {
-    
-    var remoteEarlyData: js.UndefOr[js.Function0[js.typedarray.Uint8Array]] = js.native
-  }
+  type INoiseConnection = ConnectionEncrypter[NoiseExtensions]
   
   trait KeyPair extends StObject {
     

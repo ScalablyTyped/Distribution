@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-unixfs" : "7.0.0"
+      "ipfs-unixfs" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-unixfs" : "7.0.0"
+      "ipfs-unixfs" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

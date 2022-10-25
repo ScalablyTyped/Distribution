@@ -1,9 +1,9 @@
 package typings.sipJs
 
-import typings.sipJs.libCoreDialogsMod.SessionDialog
+import typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
 import typings.sipJs.libCoreMessagesIncomingRequestMod.IncomingRequestDelegate
-import typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
-import typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore
+import typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore
 import typings.sipJs.libCoreUserAgentsUserAgentServerMod.UserAgentServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

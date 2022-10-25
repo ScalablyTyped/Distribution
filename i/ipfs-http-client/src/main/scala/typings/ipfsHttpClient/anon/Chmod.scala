@@ -2,8 +2,8 @@ package typings.ipfsHttpClient.anon
 
 import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
 import typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
-import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.multiformats.mod.CID
 import typings.std.AsyncIterable
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject

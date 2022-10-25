@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "axe-core"
-version := "4.4.3-d16148"
+version := "4.5.0-960a33"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

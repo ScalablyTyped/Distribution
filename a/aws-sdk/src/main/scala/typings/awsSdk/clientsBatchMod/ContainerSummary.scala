@@ -12,7 +12,7 @@ trait ContainerSummary extends StObject {
   var exitCode: js.UndefOr[Integer] = js.undefined
   
   /**
-    * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
+    * A short (255 max characters) human-readable string to provide additional details for a running or stopped container.
     */
   var reason: js.UndefOr[String] = js.undefined
 }

@@ -15,6 +15,7 @@ object distSrcCommandsCatMod extends Shortcut {
     * @property {string} Argv.ipfsPath
     * @property {number} Argv.offset
     * @property {number} Argv.length
+    * @property {boolean} Argv.preload
     * @property {number} Argv.timeout
     */
   /** @type {import('yargs').CommandModule<Argv, Argv>} */
@@ -32,12 +33,14 @@ object distSrcCommandsCatMod extends Shortcut {
     
     var offset: Double
     
+    var preload: Boolean
+    
     var timeout: Double
   }
   object Argv {
     
-    inline def apply(ctx: Context, ipfsPath: String, length: Double, offset: Double, timeout: Double): Argv = {
-      val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], ipfsPath = ipfsPath.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    inline def apply(ctx: Context, ipfsPath: String, length: Double, offset: Double, preload: Boolean, timeout: Double): Argv = {
+      val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], ipfsPath = ipfsPath.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], preload = preload.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argv]
     }
     
@@ -50,6 +53,8 @@ object distSrcCommandsCatMod extends Shortcut {
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }

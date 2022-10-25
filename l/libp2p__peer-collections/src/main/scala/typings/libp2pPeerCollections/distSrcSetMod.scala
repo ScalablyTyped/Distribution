@@ -20,11 +20,15 @@ object distSrcSetMod {
     
     def delete(peer: PeerId): Unit = js.native
     
+    def difference(other: PeerSet): PeerSet = js.native
+    
     def entries(): IterableIterator[js.Tuple2[PeerId, PeerId]] = js.native
     
     def forEach(predicate: js.Function3[/* peerId */ PeerId, /* index */ PeerId, /* set */ this.type, Unit]): Unit = js.native
     
     def has(peer: PeerId): Boolean = js.native
+    
+    def intersection(other: PeerSet): PeerSet = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[PeerId]] = js.native
@@ -32,6 +36,8 @@ object distSrcSetMod {
     /* private */ val set: Any = js.native
     
     def size: Double = js.native
+    
+    def union(other: PeerSet): PeerSet = js.native
     
     def values(): IterableIterator[PeerId] = js.native
   }

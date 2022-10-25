@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "devtools"
-version := "7.25.1-73f784"
+version := "7.25.1-911daa"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,14 +9,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "devtools-protocol" % "0.0.1061995-6c2bf2",
   "org.scalablytyped" %%% "loglevel" % "1.8.0-8a2d46",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
-  "org.scalablytyped" %%% "puppeteer-core" % "19.1.0-1d3255",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "puppeteer-core" % "19.1.0-223d51",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",
   "org.scalablytyped" %%% "wdio__logger" % "7.19.0-f888c4",
   "org.scalablytyped" %%% "wdio__protocols" % "7.22.0-1a1436",
-  "org.scalablytyped" %%% "wdio__types" % "7.25.1-61fea0",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-20cc7d")
+  "org.scalablytyped" %%% "wdio__types" % "7.25.1-bd29b3",
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-3e4a2a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

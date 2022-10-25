@@ -64,6 +64,9 @@ object distSrcMessageCacheMod {
     
     var msgs: Map[String, MessageCacheEntry] = js.native
     
+    /** Track with accounting of messages in the mcache that are not yet validated */
+    var notValidatedCount: Double = js.native
+    
     def observeDuplicate(msgId: MsgIdStr, fromPeerIdStr: PeerIdStr): Unit = js.native
     
     /**

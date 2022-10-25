@@ -12,7 +12,7 @@ trait ContainerOverrides extends StObject {
   var command: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The environment variables to send to the container. You can add new environment variables, which are added to the container at launch, or you can override the existing environment variables from the Docker image or the job definition.  Environment variables must not start with AWS_BATCH; this naming convention is reserved for variables that are set by the Batch service. 
+    * The environment variables to send to the container. You can add new environment variables, which are added to the container at launch, or you can override the existing environment variables from the Docker image or the job definition.  Environment variables cannot start with "AWS_BATCH". This naming convention is reserved for variables that Batch sets. 
     */
   var environment: js.UndefOr[EnvironmentVariables] = js.undefined
   
@@ -22,7 +22,7 @@ trait ContainerOverrides extends StObject {
   var instanceType: js.UndefOr[String] = js.undefined
   
   /**
-    * This parameter is deprecated, use resourceRequirements to override the memory requirements specified in the job definition. It's not supported for jobs running on Fargate resources. For jobs running on EC2 resources, it overrides the memory parameter set in the job definition, but doesn't override any memory requirement specified in the resourceRequirements structure in the job definition. To override memory requirements that are specified in the resourceRequirements structure in the job definition, resourceRequirements must be specified in the SubmitJob request, with type set to MEMORY and value set to the new value. For more information, see Can't override job definition resource requirements in the Batch User Guide.
+    * This parameter is deprecated, use resourceRequirements to override the memory requirements specified in the job definition. It's not supported for jobs running on Fargate resources. For jobs that run on EC2 resources, it overrides the memory parameter set in the job definition, but doesn't override any memory requirement that's specified in the resourceRequirements structure in the job definition. To override memory requirements that are specified in the resourceRequirements structure in the job definition, resourceRequirements must be specified in the SubmitJob request, with type set to MEMORY and value set to the new value. For more information, see Can't override job definition resource requirements in the Batch User Guide.
     */
   var memory: js.UndefOr[Integer] = js.undefined
   
@@ -32,7 +32,7 @@ trait ContainerOverrides extends StObject {
   var resourceRequirements: js.UndefOr[ResourceRequirements] = js.undefined
   
   /**
-    * This parameter is deprecated, use resourceRequirements to override the vcpus parameter that's set in the job definition. It's not supported for jobs running on Fargate resources. For jobs running on EC2 resources, it overrides the vcpus parameter set in the job definition, but doesn't override any vCPU requirement specified in the resourceRequirements structure in the job definition. To override vCPU requirements that are specified in the resourceRequirements structure in the job definition, resourceRequirements must be specified in the SubmitJob request, with type set to VCPU and value set to the new value. For more information, see Can't override job definition resource requirements in the Batch User Guide.
+    * This parameter is deprecated, use resourceRequirements to override the vcpus parameter that's set in the job definition. It's not supported for jobs running on Fargate resources. For jobs that run on EC2 resources, it overrides the vcpus parameter set in the job definition, but doesn't override any vCPU requirement specified in the resourceRequirements structure in the job definition. To override vCPU requirements that are specified in the resourceRequirements structure in the job definition, resourceRequirements must be specified in the SubmitJob request, with type set to VCPU and value set to the new value. For more information, see Can't override job definition resource requirements in the Batch User Guide.
     */
   var vcpus: js.UndefOr[Integer] = js.undefined
 }

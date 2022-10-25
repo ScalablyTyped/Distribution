@@ -2,9 +2,10 @@ package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.anon.End
 import typings.grpcGrpcJs.anon.EndRequest
+import typings.grpcGrpcJs.anon.PartialServerStatusRespon
 import typings.grpcGrpcJs.anon.Request
 import typings.grpcGrpcJs.buildSrcCallStreamMod.Deadline
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
+import typings.grpcGrpcJs.buildSrcCallStreamMod.PartialStatusObject
 import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.buildSrcConstantsMod.Status
 import typings.grpcGrpcJs.buildSrcEventsMod.EmitterAugmentation1
@@ -59,7 +60,7 @@ object buildSrcServerCallMod {
     
     /* private */ var deadline: Any = js.native
     
-    var deadlineTimer: Timer = js.native
+    var deadlineTimer: Timer | Null = js.native
     
     def deserializeMessage(bytes: Buffer): RequestType = js.native
     
@@ -91,9 +92,18 @@ object buildSrcServerCallMod {
     
     def receiveMetadata(headers: IncomingHttpHeaders): Metadata = js.native
     
-    def receiveUnaryMessage(encoding: String): js.Promise[RequestType] = js.native
+    def receiveUnaryMessage(
+      encoding: String,
+      next: js.Function2[
+          /* err */ PartialServerStatusRespon | Null, 
+          /* request */ js.UndefOr[RequestType], 
+          Unit
+        ]
+    ): Unit = js.native
     
     def resume(): Unit = js.native
+    
+    /* private */ var safeDeserializeMessage: Any = js.native
     
     def sendError(error: ServerErrorResponse): Unit = js.native
     def sendError(error: ServerStatusResponse): Unit = js.native
@@ -101,41 +111,14 @@ object buildSrcServerCallMod {
     def sendMetadata(): Unit = js.native
     def sendMetadata(customMetadata: Metadata): Unit = js.native
     
-    def sendStatus(statusObj: StatusObject): Unit = js.native
+    def sendStatus(statusObj: PartialStatusObject): Unit = js.native
     
-    def sendUnaryMessage(): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: ResponseType): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: ResponseType, metadata: Unit, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: ResponseType, metadata: Metadata): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: ResponseType, metadata: Metadata, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: Null, metadata: Unit, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: Null, metadata: Metadata): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: Null, metadata: Metadata, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: Unit, metadata: Unit, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: Unit, metadata: Metadata): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: Null, value: Unit, metadata: Metadata, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: ResponseType): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: ResponseType, metadata: Unit, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: ResponseType, metadata: Metadata): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: ResponseType, metadata: Metadata, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: Null, metadata: Unit, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: Null, metadata: Metadata): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: Null, metadata: Metadata, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: Unit, metadata: Unit, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: Unit, metadata: Metadata): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerErrorResponse, value: Unit, metadata: Metadata, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: ResponseType): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: ResponseType, metadata: Unit, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: ResponseType, metadata: Metadata): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: ResponseType, metadata: Metadata, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: Null, metadata: Unit, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: Null, metadata: Metadata): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: Null, metadata: Metadata, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: Unit, metadata: Unit, flags: Double): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: Unit, metadata: Metadata): js.Promise[Unit] = js.native
-    def sendUnaryMessage(err: ServerStatusResponse, value: Unit, metadata: Metadata, flags: Double): js.Promise[Unit] = js.native
+    def sendUnaryMessage(
+      err: ServerErrorResponse | ServerStatusResponse | Null,
+      value: js.UndefOr[ResponseType | Null],
+      metadata: js.UndefOr[Metadata | Null],
+      flags: js.UndefOr[Double]
+    ): js.Promise[Unit] = js.native
     
     def serializeMessage(value: ResponseType): Buffer = js.native
     
@@ -143,6 +126,8 @@ object buildSrcServerCallMod {
     def setupReadable(readable: ServerReadableStream[RequestType, ResponseType], encoding: String): Unit = js.native
     
     def setupSurfaceCall(call: ServerSurfaceCall): Unit = js.native
+    
+    /* private */ var statusSent: Any = js.native
     
     /* private */ var stream: Any = js.native
     
@@ -244,7 +229,7 @@ object buildSrcServerCallMod {
     
     /**
       * Is `true` after `readable.destroy()` has been called.
-      * @since v18.0.0
+      * @since v8.0.0
       */
     var destroyed: Boolean = js.native
     
@@ -614,7 +599,7 @@ object buildSrcServerCallMod {
     
     /**
       * Is true after 'close' has been emitted.
-      * @since v8.0.0
+      * @since v18.0.0
       */
     val closed: Boolean = js.native
     
@@ -638,7 +623,7 @@ object buildSrcServerCallMod {
     
     /**
       * Is `true` after `readable.destroy()` has been called.
-      * @since v18.0.0
+      * @since v8.0.0
       */
     var destroyed: Boolean = js.native
     
@@ -952,7 +937,7 @@ object buildSrcServerCallMod {
     
     /**
       * Is true after 'close' has been emitted.
-      * @since v8.0.0
+      * @since v18.0.0
       */
     val closed: Boolean = js.native
     

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "electron-util"
-version := "0.17.2-c47546"
+version := "0.17.2-c0c3fb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "electron" % "21.2.0-ad5f5c",
+  "org.scalablytyped" %%% "electron" % "21.2.0-bacd5d",
   "org.scalablytyped" %%% "new-github-issue-url" % "1.0.0-a293bb",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "type-fest" % "3.1.0-3dc798")
 publishArtifact in packageDoc := false

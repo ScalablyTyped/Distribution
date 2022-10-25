@@ -492,6 +492,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blueprintjsIcons.blueprintjsIconsStrings.help_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`helper-management`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`high-priority`
+  - typings.blueprintjsIcons.blueprintjsIconsStrings.`high-voltage-pole`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.highlight_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.history_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.home_
@@ -563,6 +564,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blueprintjsIcons.blueprintjsIconsStrings.lock_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`log-in`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`log-out`
+  - typings.blueprintjsIcons.blueprintjsIconsStrings.`low-voltage-pole`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.manual_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`manually-entered-data`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`many-to-many`
@@ -703,6 +705,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`sim-card`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.slash_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`small-cross`
+  - typings.blueprintjsIcons.blueprintjsIconsStrings.`small-info-sign`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`small-minus`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`small-plus`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`small-square`
@@ -1303,6 +1306,8 @@ object BlueprintIcons16Id {
   
   inline def `high-priority`: typings.blueprintjsIcons.blueprintjsIconsStrings.`high-priority` = "high-priority".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`high-priority`]
   
+  inline def `high-voltage-pole`: typings.blueprintjsIcons.blueprintjsIconsStrings.`high-voltage-pole` = "high-voltage-pole".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`high-voltage-pole`]
+  
   inline def highlight: highlight_ = "highlight".asInstanceOf[highlight_]
   
   inline def history: history_ = "history".asInstanceOf[history_]
@@ -1444,6 +1449,8 @@ object BlueprintIcons16Id {
   inline def `log-in`: typings.blueprintjsIcons.blueprintjsIconsStrings.`log-in` = "log-in".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`log-in`]
   
   inline def `log-out`: typings.blueprintjsIcons.blueprintjsIconsStrings.`log-out` = "log-out".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`log-out`]
+  
+  inline def `low-voltage-pole`: typings.blueprintjsIcons.blueprintjsIconsStrings.`low-voltage-pole` = "low-voltage-pole".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`low-voltage-pole`]
   
   inline def manual: manual_ = "manual".asInstanceOf[manual_]
   
@@ -1724,6 +1731,8 @@ object BlueprintIcons16Id {
   inline def slash: slash_ = "slash".asInstanceOf[slash_]
   
   inline def `small-cross`: typings.blueprintjsIcons.blueprintjsIconsStrings.`small-cross` = "small-cross".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`small-cross`]
+  
+  inline def `small-info-sign`: typings.blueprintjsIcons.blueprintjsIconsStrings.`small-info-sign` = "small-info-sign".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`small-info-sign`]
   
   inline def `small-minus`: typings.blueprintjsIcons.blueprintjsIconsStrings.`small-minus` = "small-minus".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`small-minus`]
   

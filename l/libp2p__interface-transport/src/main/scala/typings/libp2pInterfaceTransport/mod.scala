@@ -3,6 +3,7 @@ package typings.libp2pInterfaceTransport
 import typings.itStreamTypes.mod.Duplex
 import typings.libp2pInterfaceConnection.mod.Connection
 import typings.libp2pInterfaceConnection.mod.MultiaddrConnection
+import typings.libp2pInterfaceStreamMuxer.mod.StreamMuxerFactory
 import typings.libp2pInterfaces.eventsMod.EventEmitter
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.multiformatsMultiaddr.mod.Multiaddr_
@@ -213,11 +214,13 @@ object mod {
       * Upgrades an inbound connection on transport listener.
       */
     def upgradeInbound(maConn: MultiaddrConnection): js.Promise[Connection] = js.native
+    def upgradeInbound(maConn: MultiaddrConnection, opts: UpgraderOptions): js.Promise[Connection] = js.native
     
     /**
       * Upgrades an outbound connection on `transport.dial`.
       */
     def upgradeOutbound(maConn: MultiaddrConnection): js.Promise[Connection] = js.native
+    def upgradeOutbound(maConn: MultiaddrConnection, opts: UpgraderOptions): js.Promise[Connection] = js.native
   }
   
   trait UpgraderEvents extends StObject {
@@ -238,6 +241,37 @@ object mod {
       inline def setConnection(value: CustomEvent[Connection]): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
       inline def setConnectionEnd(value: CustomEvent[Connection]): Self = StObject.set(x, "connectionEnd", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait UpgraderOptions extends StObject {
+    
+    var muxerFactory: js.UndefOr[StreamMuxerFactory] = js.undefined
+    
+    var skipEncryption: js.UndefOr[Boolean] = js.undefined
+    
+    var skipProtection: js.UndefOr[Boolean] = js.undefined
+  }
+  object UpgraderOptions {
+    
+    inline def apply(): UpgraderOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UpgraderOptions]
+    }
+    
+    extension [Self <: UpgraderOptions](x: Self) {
+      
+      inline def setMuxerFactory(value: StreamMuxerFactory): Self = StObject.set(x, "muxerFactory", value.asInstanceOf[js.Any])
+      
+      inline def setMuxerFactoryUndefined: Self = StObject.set(x, "muxerFactory", js.undefined)
+      
+      inline def setSkipEncryption(value: Boolean): Self = StObject.set(x, "skipEncryption", value.asInstanceOf[js.Any])
+      
+      inline def setSkipEncryptionUndefined: Self = StObject.set(x, "skipEncryption", js.undefined)
+      
+      inline def setSkipProtection(value: Boolean): Self = StObject.set(x, "skipProtection", value.asInstanceOf[js.Any])
+      
+      inline def setSkipProtectionUndefined: Self = StObject.set(x, "skipProtection", js.undefined)
     }
   }
 }

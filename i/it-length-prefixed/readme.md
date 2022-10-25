@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-length-prefixed
 
-Typings are for version 8.0.2
+Typings are for version 8.0.3
 
 ## Library description:
 Streaming length prefixed buffers with async iterables

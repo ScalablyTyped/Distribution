@@ -22,9 +22,13 @@ object mod {
   inline def enumeration[T](v: Any): Codec[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumeration")(v.asInstanceOf[js.Any]).asInstanceOf[Codec[T]]
   
   inline def message[T](
-    encode: js.Function3[/* obj */ T, /* writer */ Writer, /* opts */ js.UndefOr[EncodeOptions], Unit],
-    decode: js.Function2[/* reader */ Reader, /* length */ js.UndefOr[Double], T]
+    encode: js.Function3[/* obj */ T, /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions], Unit],
+    decode: js.Function2[/* reader */ Reader_, /* length */ js.UndefOr[Double], T]
   ): Codec[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("message")(encode.asInstanceOf[js.Any], decode.asInstanceOf[js.Any])).asInstanceOf[Codec[T]]
+  
+  inline def reader(buf: js.typedarray.Uint8Array): Reader_ = ^.asInstanceOf[js.Dynamic].applyDynamic("reader")(buf.asInstanceOf[js.Any]).asInstanceOf[Reader_]
+  
+  inline def writer(): Writer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("writer")().asInstanceOf[Writer_]
   
   trait FieldDef extends StObject {
     
@@ -66,7 +70,7 @@ object mod {
   }
   
   @js.native
-  trait Reader extends StObject {
+  trait Reader_ extends StObject {
     
     /**
       * Reads a varint as a boolean
@@ -170,22 +174,22 @@ object mod {
     def uint64(): js.BigInt = js.native
   }
   
-  trait Writer extends StObject {
+  trait Writer_ extends StObject {
     
     /**
       * Writes a boolish value as a varint
       */
-    def bool(value: Boolean): Writer
+    def bool(value: Boolean): Writer_
     
     /**
       * Writes a sequence of bytes
       */
-    def bytes(value: js.typedarray.Uint8Array): Writer
+    def bytes(value: js.typedarray.Uint8Array): Writer_
     
     /**
       * Writes a double (64 bit float)
       */
-    def double(value: Double): Writer
+    def double(value: Double): Writer_
     
     /**
       * Finishes the write operation
@@ -195,38 +199,38 @@ object mod {
     /**
       * Writes an unsigned 32 bit value as fixed 32 bits
       */
-    def fixed32(value: Double): Writer
+    def fixed32(value: Double): Writer_
     
     /**
       * Writes an unsigned 64 bit value as fixed 64 bits
       */
-    def fixed64(value: js.BigInt): Writer
+    def fixed64(value: js.BigInt): Writer_
     
     /**
       * Writes a float (32 bit)
       */
-    def float(value: Double): Writer
+    def float(value: Double): Writer_
     
     /**
       * Forks this writer's state by pushing it to a stack.
       * Calling {@link Writer#reset|reset} or {@link Writer#ldelim|ldelim} resets the writer to the previous state.
       */
-    def fork(): Writer
+    def fork(): Writer_
     
     /**
       * Writes a signed 32 bit value as a varint`
       */
-    def int32(value: Double): Writer
+    def int32(value: Double): Writer_
     
     /**
       * Writes a signed 64 bit value as a varint
       */
-    def int64(value: js.BigInt): Writer
+    def int64(value: js.BigInt): Writer_
     
     /**
       * Resets to the last state and appends the fork state's current write length as a varint followed by its operations.
       */
-    def ldelim(): Writer
+    def ldelim(): Writer_
     
     /**
       * Current length
@@ -236,112 +240,112 @@ object mod {
     /**
       * Resets this instance to the last state.
       */
-    def reset(): Writer
+    def reset(): Writer_
     
     /**
       * Writes a signed 32 bit value as fixed 32 bits
       */
-    def sfixed32(value: Double): Writer
+    def sfixed32(value: Double): Writer_
     
     /**
       * Writes a signed 64 bit value as fixed 64 bits
       */
-    def sfixed64(value: js.BigInt): Writer
+    def sfixed64(value: js.BigInt): Writer_
     
     /**
       * Writes a 32 bit value as a varint, zig-zag encoded
       */
-    def sint32(value: Double): Writer
+    def sint32(value: Double): Writer_
     
     /**
       * Writes a signed 64 bit value as a varint, zig-zag encoded
       */
-    def sint64(value: js.BigInt): Writer
+    def sint64(value: js.BigInt): Writer_
     
     /**
       * Writes a string
       */
-    def string(value: String): Writer
+    def string(value: String): Writer_
     
     /**
       * Writes an unsigned 32 bit value as a varint
       */
-    def uint32(value: Double): Writer
+    def uint32(value: Double): Writer_
     
     /**
       * Writes an unsigned 64 bit value as a varint
       */
-    def uint64(value: js.BigInt): Writer
+    def uint64(value: js.BigInt): Writer_
   }
-  object Writer {
+  object Writer_ {
     
     inline def apply(
-      bool: Boolean => Writer,
-      bytes: js.typedarray.Uint8Array => Writer,
-      double: Double => Writer,
+      bool: Boolean => Writer_,
+      bytes: js.typedarray.Uint8Array => Writer_,
+      double: Double => Writer_,
       finish: () => js.typedarray.Uint8Array,
-      fixed32: Double => Writer,
-      fixed64: js.BigInt => Writer,
-      float: Double => Writer,
-      fork: () => Writer,
-      int32: Double => Writer,
-      int64: js.BigInt => Writer,
-      ldelim: () => Writer,
+      fixed32: Double => Writer_,
+      fixed64: js.BigInt => Writer_,
+      float: Double => Writer_,
+      fork: () => Writer_,
+      int32: Double => Writer_,
+      int64: js.BigInt => Writer_,
+      ldelim: () => Writer_,
       len: Double,
-      reset: () => Writer,
-      sfixed32: Double => Writer,
-      sfixed64: js.BigInt => Writer,
-      sint32: Double => Writer,
-      sint64: js.BigInt => Writer,
-      string: String => Writer,
-      uint32: Double => Writer,
-      uint64: js.BigInt => Writer
-    ): Writer = {
+      reset: () => Writer_,
+      sfixed32: Double => Writer_,
+      sfixed64: js.BigInt => Writer_,
+      sint32: Double => Writer_,
+      sint64: js.BigInt => Writer_,
+      string: String => Writer_,
+      uint32: Double => Writer_,
+      uint64: js.BigInt => Writer_
+    ): Writer_ = {
       val __obj = js.Dynamic.literal(bool = js.Any.fromFunction1(bool), bytes = js.Any.fromFunction1(bytes), double = js.Any.fromFunction1(double), finish = js.Any.fromFunction0(finish), fixed32 = js.Any.fromFunction1(fixed32), fixed64 = js.Any.fromFunction1(fixed64), float = js.Any.fromFunction1(float), fork = js.Any.fromFunction0(fork), int32 = js.Any.fromFunction1(int32), int64 = js.Any.fromFunction1(int64), ldelim = js.Any.fromFunction0(ldelim), len = len.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), sfixed32 = js.Any.fromFunction1(sfixed32), sfixed64 = js.Any.fromFunction1(sfixed64), sint32 = js.Any.fromFunction1(sint32), sint64 = js.Any.fromFunction1(sint64), string = js.Any.fromFunction1(string), uint32 = js.Any.fromFunction1(uint32), uint64 = js.Any.fromFunction1(uint64))
-      __obj.asInstanceOf[Writer]
+      __obj.asInstanceOf[Writer_]
     }
     
-    extension [Self <: Writer](x: Self) {
+    extension [Self <: Writer_](x: Self) {
       
-      inline def setBool(value: Boolean => Writer): Self = StObject.set(x, "bool", js.Any.fromFunction1(value))
+      inline def setBool(value: Boolean => Writer_): Self = StObject.set(x, "bool", js.Any.fromFunction1(value))
       
-      inline def setBytes(value: js.typedarray.Uint8Array => Writer): Self = StObject.set(x, "bytes", js.Any.fromFunction1(value))
+      inline def setBytes(value: js.typedarray.Uint8Array => Writer_): Self = StObject.set(x, "bytes", js.Any.fromFunction1(value))
       
-      inline def setDouble(value: Double => Writer): Self = StObject.set(x, "double", js.Any.fromFunction1(value))
+      inline def setDouble(value: Double => Writer_): Self = StObject.set(x, "double", js.Any.fromFunction1(value))
       
       inline def setFinish(value: () => js.typedarray.Uint8Array): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
       
-      inline def setFixed32(value: Double => Writer): Self = StObject.set(x, "fixed32", js.Any.fromFunction1(value))
+      inline def setFixed32(value: Double => Writer_): Self = StObject.set(x, "fixed32", js.Any.fromFunction1(value))
       
-      inline def setFixed64(value: js.BigInt => Writer): Self = StObject.set(x, "fixed64", js.Any.fromFunction1(value))
+      inline def setFixed64(value: js.BigInt => Writer_): Self = StObject.set(x, "fixed64", js.Any.fromFunction1(value))
       
-      inline def setFloat(value: Double => Writer): Self = StObject.set(x, "float", js.Any.fromFunction1(value))
+      inline def setFloat(value: Double => Writer_): Self = StObject.set(x, "float", js.Any.fromFunction1(value))
       
-      inline def setFork(value: () => Writer): Self = StObject.set(x, "fork", js.Any.fromFunction0(value))
+      inline def setFork(value: () => Writer_): Self = StObject.set(x, "fork", js.Any.fromFunction0(value))
       
-      inline def setInt32(value: Double => Writer): Self = StObject.set(x, "int32", js.Any.fromFunction1(value))
+      inline def setInt32(value: Double => Writer_): Self = StObject.set(x, "int32", js.Any.fromFunction1(value))
       
-      inline def setInt64(value: js.BigInt => Writer): Self = StObject.set(x, "int64", js.Any.fromFunction1(value))
+      inline def setInt64(value: js.BigInt => Writer_): Self = StObject.set(x, "int64", js.Any.fromFunction1(value))
       
-      inline def setLdelim(value: () => Writer): Self = StObject.set(x, "ldelim", js.Any.fromFunction0(value))
+      inline def setLdelim(value: () => Writer_): Self = StObject.set(x, "ldelim", js.Any.fromFunction0(value))
       
       inline def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
       
-      inline def setReset(value: () => Writer): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Writer_): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      inline def setSfixed32(value: Double => Writer): Self = StObject.set(x, "sfixed32", js.Any.fromFunction1(value))
+      inline def setSfixed32(value: Double => Writer_): Self = StObject.set(x, "sfixed32", js.Any.fromFunction1(value))
       
-      inline def setSfixed64(value: js.BigInt => Writer): Self = StObject.set(x, "sfixed64", js.Any.fromFunction1(value))
+      inline def setSfixed64(value: js.BigInt => Writer_): Self = StObject.set(x, "sfixed64", js.Any.fromFunction1(value))
       
-      inline def setSint32(value: Double => Writer): Self = StObject.set(x, "sint32", js.Any.fromFunction1(value))
+      inline def setSint32(value: Double => Writer_): Self = StObject.set(x, "sint32", js.Any.fromFunction1(value))
       
-      inline def setSint64(value: js.BigInt => Writer): Self = StObject.set(x, "sint64", js.Any.fromFunction1(value))
+      inline def setSint64(value: js.BigInt => Writer_): Self = StObject.set(x, "sint64", js.Any.fromFunction1(value))
       
-      inline def setString(value: String => Writer): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
+      inline def setString(value: String => Writer_): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
       
-      inline def setUint32(value: Double => Writer): Self = StObject.set(x, "uint32", js.Any.fromFunction1(value))
+      inline def setUint32(value: Double => Writer_): Self = StObject.set(x, "uint32", js.Any.fromFunction1(value))
       
-      inline def setUint64(value: js.BigInt => Writer): Self = StObject.set(x, "uint64", js.Any.fromFunction1(value))
+      inline def setUint64(value: js.BigInt => Writer_): Self = StObject.set(x, "uint64", js.Any.fromFunction1(value))
     }
   }
 }

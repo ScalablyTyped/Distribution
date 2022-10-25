@@ -1,6 +1,6 @@
 package typings.sipJs
 
-import typings.sipJs.libCoreDialogsMod.SubscriptionDialog
+import typings.sipJs.libCoreDialogsSubscriptionDialogMod.SubscriptionDialog
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.RequestOptions
 import typings.sipJs.libCoreUserAgentsUserAgentClientMod.UserAgentClient

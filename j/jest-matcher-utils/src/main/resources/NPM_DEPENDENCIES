@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-matcher-utils" : "29.2.1"
+      "jest-matcher-utils" : "29.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-matcher-utils" : "29.2.1"
+      "jest-matcher-utils" : "29.2.2"
     }
   ],
   "compile-devDependencies" : [

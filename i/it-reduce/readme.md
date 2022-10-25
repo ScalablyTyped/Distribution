@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-reduce
 
-Typings are for version 1.0.6
+Typings are for version 2.0.0
 
 ## Library description:
 Reduces the values yielded from an async iterator

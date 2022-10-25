@@ -11,24 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class SessionDialog protected ()
   extends typings.sipJs.libCoreMod.SessionDialog {
   def this(
-    initialTransaction: typings.sipJs.libCoreTransactionsMod.InviteClientTransaction,
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    initialTransaction: typings.sipJs.libCoreTransactionsInviteClientTransactionMod.InviteClientTransaction,
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
     state: DialogState
   ) = this()
   def this(
-    initialTransaction: typings.sipJs.libCoreTransactionsMod.InviteServerTransaction,
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    initialTransaction: typings.sipJs.libCoreTransactionsInviteServerTransactionMod.InviteServerTransaction,
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
     state: DialogState
   ) = this()
   def this(
-    initialTransaction: typings.sipJs.libCoreTransactionsMod.InviteClientTransaction,
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    initialTransaction: typings.sipJs.libCoreTransactionsInviteClientTransactionMod.InviteClientTransaction,
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
     state: DialogState,
     delegate: SessionDelegate
   ) = this()
   def this(
-    initialTransaction: typings.sipJs.libCoreTransactionsMod.InviteServerTransaction,
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    initialTransaction: typings.sipJs.libCoreTransactionsInviteServerTransactionMod.InviteServerTransaction,
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
     state: DialogState,
     delegate: SessionDelegate
   ) = this()

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-foreach" : "0.1.1"
+      "it-foreach" : "1.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "it-foreach" : "0.1.1"
+      "it-foreach" : "1.0.0"
     }
   ],
   "compile-devDependencies" : [

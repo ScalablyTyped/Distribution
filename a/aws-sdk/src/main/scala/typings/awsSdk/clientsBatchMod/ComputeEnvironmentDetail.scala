@@ -12,7 +12,7 @@ trait ComputeEnvironmentDetail extends StObject {
   var computeEnvironmentArn: String
   
   /**
-    * The name of the compute environment. It can be up to 128 letters long. It can contain uppercase and lowercase letters, numbers, hyphens (-), and underscores (_).
+    * The name of the compute environment. It can be up to 128 characters long. It can contain uppercase and lowercase letters, numbers, hyphens (-), and underscores (_).
     */
   var computeEnvironmentName: String
   
@@ -22,17 +22,27 @@ trait ComputeEnvironmentDetail extends StObject {
   var computeResources: js.UndefOr[ComputeResource] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
+    * The orchestration type of the compute environment. The valid values are ECS (default) or EKS.
+    */
+  var containerOrchestrationType: js.UndefOr[OrchestrationType] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster that the compute environment uses.
     */
   var ecsClusterArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The service role associated with the compute environment that allows Batch to make calls to Amazon Web Services API operations on your behalf. For more information, see Batch service IAM role in the Batch User Guide.
+    * The configuration for the Amazon EKS cluster that supports the Batch compute environment. Only specify this parameter if the containerOrchestrationType is EKS.
+    */
+  var eksConfiguration: js.UndefOr[EksConfiguration] = js.undefined
+  
+  /**
+    * The service role that's associated with the compute environment that allows Batch to make calls to Amazon Web Services API operations on your behalf. For more information, see Batch service IAM role in the Batch User Guide.
     */
   var serviceRole: js.UndefOr[String] = js.undefined
   
   /**
-    * The state of the compute environment. The valid values are ENABLED or DISABLED. If the state is ENABLED, then the Batch scheduler can attempt to place jobs from an associated job queue on the compute resources within the environment. If the compute environment is managed, then it can scale its instances out or in automatically, based on the job queue demand. If the state is DISABLED, then the Batch scheduler doesn't attempt to place jobs within the environment. Jobs in a STARTING or RUNNING state continue to progress normally. Managed compute environments in the DISABLED state don't scale out. However, they scale in to minvCpus value after instances become idle.
+    * The state of the compute environment. The valid values are ENABLED or DISABLED. If the state is ENABLED, then the Batch scheduler can attempt to place jobs from an associated job queue on the compute resources within the environment. If the compute environment is managed, then it can scale its instances out or in automatically based on the job queue demand. If the state is DISABLED, then the Batch scheduler doesn't attempt to place jobs within the environment. Jobs in a STARTING or RUNNING state continue to progress normally. Managed compute environments in the DISABLED state don't scale out. However, they scale in to minvCpus value after instances become idle.
     */
   var state: js.UndefOr[CEState] = js.undefined
   
@@ -42,7 +52,7 @@ trait ComputeEnvironmentDetail extends StObject {
   var status: js.UndefOr[CEStatus] = js.undefined
   
   /**
-    * A short, human-readable string to provide additional details about the current status of the compute environment.
+    * A short, human-readable string to provide additional details for the current status of the compute environment.
     */
   var statusReason: js.UndefOr[String] = js.undefined
   
@@ -65,6 +75,11 @@ trait ComputeEnvironmentDetail extends StObject {
     * Specifies the infrastructure update policy for the compute environment. For more information about infrastructure updates, see Updating compute environments in the Batch User Guide.
     */
   var updatePolicy: js.UndefOr[UpdatePolicy] = js.undefined
+  
+  /**
+    * Unique identifier for the compute environment.
+    */
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object ComputeEnvironmentDetail {
   
@@ -83,9 +98,17 @@ object ComputeEnvironmentDetail {
     
     inline def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
     
+    inline def setContainerOrchestrationType(value: OrchestrationType): Self = StObject.set(x, "containerOrchestrationType", value.asInstanceOf[js.Any])
+    
+    inline def setContainerOrchestrationTypeUndefined: Self = StObject.set(x, "containerOrchestrationType", js.undefined)
+    
     inline def setEcsClusterArn(value: String): Self = StObject.set(x, "ecsClusterArn", value.asInstanceOf[js.Any])
     
     inline def setEcsClusterArnUndefined: Self = StObject.set(x, "ecsClusterArn", js.undefined)
+    
+    inline def setEksConfiguration(value: EksConfiguration): Self = StObject.set(x, "eksConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setEksConfigurationUndefined: Self = StObject.set(x, "eksConfiguration", js.undefined)
     
     inline def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     
@@ -118,5 +141,9 @@ object ComputeEnvironmentDetail {
     inline def setUpdatePolicy(value: UpdatePolicy): Self = StObject.set(x, "updatePolicy", value.asInstanceOf[js.Any])
     
     inline def setUpdatePolicyUndefined: Self = StObject.set(x, "updatePolicy", js.undefined)
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

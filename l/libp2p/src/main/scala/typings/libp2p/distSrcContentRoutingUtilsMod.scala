@@ -19,5 +19,5 @@ object distSrcContentRoutingUtilsMod {
   
   inline def storeAddresses(source: Source[PeerInfo], peerStore: PeerStore): AsyncGenerator[PeerInfo, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("storeAddresses")(source.asInstanceOf[js.Any], peerStore.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[PeerInfo, Unit, Unit]]
   
-  inline def uniquePeers(source: Source[PeerInfo]): AsyncGenerator[PeerInfo, Unit, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniquePeers")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[PeerInfo, Unit, Any]]
+  inline def uniquePeers(source: Source[PeerInfo]): AsyncGenerator[PeerInfo, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniquePeers")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[PeerInfo, Unit, Unit]]
 }

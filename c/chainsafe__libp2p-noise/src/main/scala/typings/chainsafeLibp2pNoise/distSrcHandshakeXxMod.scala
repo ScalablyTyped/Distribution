@@ -6,6 +6,7 @@ import typings.chainsafeLibp2pNoise.distSrcHandshakeInterfaceMod.IHandshake
 import typings.chainsafeLibp2pNoise.distSrcHandshakeMod.NoiseSession
 import typings.chainsafeLibp2pNoise.distSrcHandshakesXxMod.XX
 import typings.chainsafeLibp2pNoise.distSrcLibp2pMod.KeyPair
+import typings.chainsafeLibp2pNoise.distSrcProtoPayloadMod.NoiseExtensions
 import typings.itPbStream.mod.ProtobufStream
 import typings.libp2pInterfacePeerId.mod.PeerId
 import org.scalablytyped.runtime.StObject
@@ -82,7 +83,7 @@ object distSrcHandshakeXxMod {
     def propose(): js.Promise[Unit] = js.native
     
     /* CompleteClass */
-    var remoteEarlyData: js.typedarray.Uint8Array = js.native
+    var remoteExtensions: NoiseExtensions = js.native
     
     /* CompleteClass */
     var remotePeer: PeerId = js.native
@@ -90,8 +91,8 @@ object distSrcHandshakeXxMod {
     /* CompleteClass */
     var session: NoiseSession = js.native
     
-    /* protected */ def setRemoteEarlyData(): Unit = js.native
-    /* protected */ def setRemoteEarlyData(data: js.typedarray.Uint8Array): Unit = js.native
+    /* protected */ def setRemoteNoiseExtension(): Unit = js.native
+    /* protected */ def setRemoteNoiseExtension(e: NoiseExtensions): Unit = js.native
     
     /* protected */ var staticKeypair: KeyPair = js.native
     

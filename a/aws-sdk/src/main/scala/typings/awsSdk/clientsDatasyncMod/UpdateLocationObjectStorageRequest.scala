@@ -7,37 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateLocationObjectStorageRequest extends StObject {
   
   /**
-    * Optional. The access key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
+    * Specifies the access key (for example, a user name) if credentials are required to authenticate with the object storage server.
     */
   var AccessKey: js.UndefOr[ObjectStorageAccessKey] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the agents associated with the self-managed object storage server location.
+    * Specifies the Amazon Resource Names (ARNs) of the DataSync agents that can securely connect with your location.
     */
   var AgentArns: js.UndefOr[AgentArnList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the self-managed object storage server location to be updated.
+    * Specifies the ARN of the object storage system location that you're updating.
     */
   var LocationArn: typings.awsSdk.clientsDatasyncMod.LocationArn
   
   /**
-    * Optional. The secret key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
+    * Specifies the secret key (for example, a password) if credentials are required to authenticate with the object storage server.
     */
   var SecretKey: js.UndefOr[ObjectStorageSecretKey] = js.undefined
   
   /**
-    * The port that your self-managed object storage server accepts inbound network traffic on. The server port is set by default to TCP 80 (HTTP) or TCP 443 (HTTPS). You can specify a custom port if your self-managed object storage server requires one.
+    * Specifies a certificate to authenticate with an object storage system that uses a private or self-signed certificate authority (CA). You must specify a Base64-encoded .pem file (for example, file:///home/user/.ssh/storage_sys_certificate.pem). The certificate can be up to 32768 bytes (before Base64 encoding). To use this parameter, configure ServerProtocol to HTTPS. Updating the certificate doesn't interfere with tasks that you have in progress.
+    */
+  var ServerCertificate: js.UndefOr[ObjectStorageCertificate] = js.undefined
+  
+  /**
+    * Specifies the port that your object storage server accepts inbound network traffic on (for example, port 443).
     */
   var ServerPort: js.UndefOr[ObjectStorageServerPort] = js.undefined
   
   /**
-    * The protocol that the object storage server uses to communicate. Valid values are HTTP or HTTPS.
+    * Specifies the protocol that your object storage server uses to communicate.
     */
   var ServerProtocol: js.UndefOr[ObjectStorageServerProtocol] = js.undefined
   
   /**
-    * The subdirectory in the self-managed object storage server that is used to read data from.
+    * Specifies the object prefix for your object storage server. If this is a source location, DataSync only copies objects with this prefix. If this is a destination location, DataSync writes all objects with this prefix.
     */
   var Subdirectory: js.UndefOr[S3Subdirectory] = js.undefined
 }
@@ -65,6 +70,10 @@ object UpdateLocationObjectStorageRequest {
     inline def setSecretKey(value: ObjectStorageSecretKey): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
     
     inline def setSecretKeyUndefined: Self = StObject.set(x, "SecretKey", js.undefined)
+    
+    inline def setServerCertificate(value: ObjectStorageCertificate): Self = StObject.set(x, "ServerCertificate", value.asInstanceOf[js.Any])
+    
+    inline def setServerCertificateUndefined: Self = StObject.set(x, "ServerCertificate", js.undefined)
     
     inline def setServerPort(value: ObjectStorageServerPort): Self = StObject.set(x, "ServerPort", value.asInstanceOf[js.Any])
     

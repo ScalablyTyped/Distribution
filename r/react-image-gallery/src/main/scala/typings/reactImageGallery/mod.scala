@@ -11,7 +11,9 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import typings.reactImageGallery.anon.CurrentIndex
 import typings.reactImageGallery.anon.Media
+import typings.reactImageGallery.reactImageGalleryStrings.`lazy`
 import typings.reactImageGallery.reactImageGalleryStrings.bottom
+import typings.reactImageGallery.reactImageGalleryStrings.eager
 import typings.reactImageGallery.reactImageGalleryStrings.left
 import typings.reactImageGallery.reactImageGalleryStrings.right
 import typings.reactImageGallery.reactImageGalleryStrings.top
@@ -63,6 +65,8 @@ object mod {
     
     var imageSet: js.UndefOr[ReactImageGalleryImageSet] = js.undefined
     
+    var loading: js.UndefOr[`lazy` | eager] = js.undefined
+    
     var original: String
     
     var originalAlt: js.UndefOr[String] = js.undefined
@@ -92,6 +96,8 @@ object mod {
     var thumbnailHeight: js.UndefOr[Double] = js.undefined
     
     var thumbnailLabel: js.UndefOr[String] = js.undefined
+    
+    var thumbnailLoading: js.UndefOr[`lazy` | eager] = js.undefined
     
     var thumbnailTitle: js.UndefOr[String] = js.undefined
     
@@ -127,6 +133,10 @@ object mod {
       inline def setImageSetUndefined: Self = StObject.set(x, "imageSet", js.undefined)
       
       inline def setImageSetVarargs(value: Media*): Self = StObject.set(x, "imageSet", js.Array(value*))
+      
+      inline def setLoading(value: `lazy` | eager): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
       inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
@@ -183,6 +193,10 @@ object mod {
       inline def setThumbnailLabel(value: String): Self = StObject.set(x, "thumbnailLabel", value.asInstanceOf[js.Any])
       
       inline def setThumbnailLabelUndefined: Self = StObject.set(x, "thumbnailLabel", js.undefined)
+      
+      inline def setThumbnailLoading(value: `lazy` | eager): Self = StObject.set(x, "thumbnailLoading", value.asInstanceOf[js.Any])
+      
+      inline def setThumbnailLoadingUndefined: Self = StObject.set(x, "thumbnailLoading", js.undefined)
       
       inline def setThumbnailTitle(value: String): Self = StObject.set(x, "thumbnailTitle", value.asInstanceOf[js.Any])
       

@@ -12,7 +12,7 @@ trait RetryStrategy extends StObject {
   var attempts: js.UndefOr[Integer] = js.undefined
   
   /**
-    * Array of up to 5 objects that specify conditions under which the job should be retried or failed. If this parameter is specified, then the attempts parameter must also be specified.
+    * Array of up to 5 objects that specify the conditions where jobs are retried or failed. If this parameter is specified, then the attempts parameter must also be specified. If none of the listed conditions match, then the job is retried.
     */
   var evaluateOnExit: js.UndefOr[EvaluateOnExitList] = js.undefined
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@blueprintjs/colors" : "4.1.7"
+      "@blueprintjs/colors" : "4.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@blueprintjs/colors" : "4.1.7"
+      "@blueprintjs/colors" : "4.1.8"
     }
   ],
   "compile-devDependencies" : [

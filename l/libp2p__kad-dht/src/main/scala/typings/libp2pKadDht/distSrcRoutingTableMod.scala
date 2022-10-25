@@ -1,10 +1,13 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
+import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
+import typings.libp2pKadDht.libp2pKadDhtStrings.added
 import typings.libp2pKadDht.libp2pKadDhtStrings.ping
+import typings.libp2pKadDht.libp2pKadDhtStrings.removed
 import typings.pQueue.distOptionsMod.QueueAddOptions
 import typings.pQueue.distPriorityQueueMod.default
 import org.scalablytyped.runtime.StObject
@@ -13,13 +16,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcRoutingTableMod {
   
+  @JSImport("@libp2p/kad-dht/dist/src/routing-table", "KAD_CLOSE_TAG_NAME")
+  @js.native
+  val KAD_CLOSE_TAG_NAME: /* "kad-close" */ String = js.native
+  
+  @JSImport("@libp2p/kad-dht/dist/src/routing-table", "KAD_CLOSE_TAG_VALUE")
+  @js.native
+  val KAD_CLOSE_TAG_VALUE: /* 50 */ Double = js.native
+  
+  @JSImport("@libp2p/kad-dht/dist/src/routing-table", "KBUCKET_SIZE")
+  @js.native
+  val KBUCKET_SIZE: /* 20 */ Double = js.native
+  
+  @JSImport("@libp2p/kad-dht/dist/src/routing-table", "PING_CONCURRENCY")
+  @js.native
+  val PING_CONCURRENCY: /* 10 */ Double = js.native
+  
+  @JSImport("@libp2p/kad-dht/dist/src/routing-table", "PING_TIMEOUT")
+  @js.native
+  val PING_TIMEOUT: /* 10000 */ Double = js.native
+  
   @JSImport("@libp2p/kad-dht/dist/src/routing-table", "RoutingTable")
   @js.native
   open class RoutingTable protected ()
     extends StObject
-       with Startable
-       with Initializable {
-    def this(init: RoutingTableInit) = this()
+       with Startable {
+    def this(components: RoutingTableComponents, init: RoutingTableInit) = this()
     
     /**
       * Called on the `ping` event from `k-bucket` when a bucket is full
@@ -32,6 +54,13 @@ object distSrcRoutingTableMod {
       * have not been contacted for the longest.
       */
     def _onPing(oldContacts: js.Array[KBucketPeer], newContact: KBucketPeer): Unit = js.native
+    
+    /**
+      * Keep track of our k-closest peers and tag them in the peer store as such
+      * - this will lower the chances that connections to them get closed when
+      * we reach connection limits
+      */
+    def _tagPeers(kBuck: KBucketTree): Unit = js.native
     
     /**
       * Add or update the routing table with the given peer
@@ -49,15 +78,12 @@ object distSrcRoutingTableMod {
     def closestPeers(key: js.typedarray.Uint8Array): js.Array[PeerId] = js.native
     def closestPeers(key: js.typedarray.Uint8Array, count: Double): js.Array[PeerId] = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /**
       * Find a specific peer by id
       */
     def find(peer: PeerId): js.Promise[js.UndefOr[PeerId]] = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /* CompleteClass */
     override def isStarted(): Boolean = js.native
@@ -105,6 +131,10 @@ object distSrcRoutingTableMod {
       */
     /* CompleteClass */
     override def stop(): Unit | js.Promise[Unit] = js.native
+    
+    /* private */ val tagName: Any = js.native
+    
+    /* private */ val tagValue: Any = js.native
   }
   
   trait KBucket extends StObject {
@@ -183,11 +213,10 @@ object distSrcRoutingTableMod {
     
     var localNodeId: js.typedarray.Uint8Array
     
-    @JSName("on")
-    def on_ping(
-      event: ping,
-      callback: js.Function2[/* oldContacts */ js.Array[KBucketPeer], /* newContact */ KBucketPeer, Unit]
-    ): Unit
+    def on[U /* <: /* keyof @libp2p/kad-dht.@libp2p/kad-dht/dist/src/routing-table.KBucketTreeEvents */ ping | added | removed */](
+      event: U,
+      listener: /* import warning: importer.ImportType#apply Failed type conversion: @libp2p/kad-dht.@libp2p/kad-dht/dist/src/routing-table.KBucketTreeEvents[U] */ js.Any
+    ): this.type
     
     def remove(key: js.typedarray.Uint8Array): Unit
     
@@ -204,7 +233,7 @@ object distSrcRoutingTableMod {
       count: () => Double,
       get: js.typedarray.Uint8Array => js.typedarray.Uint8Array,
       localNodeId: js.typedarray.Uint8Array,
-      on: (ping, js.Function2[/* oldContacts */ js.Array[KBucketPeer], /* newContact */ KBucketPeer, Unit]) => Unit,
+      on: (Any, /* import warning: importer.ImportType#apply Failed type conversion: @libp2p/kad-dht.@libp2p/kad-dht/dist/src/routing-table.KBucketTreeEvents[U] */ js.Any) => KBucketTree,
       remove: js.typedarray.Uint8Array => Unit,
       root: KBucket,
       toIterable: () => js.Iterable[KBucket]
@@ -228,7 +257,7 @@ object distSrcRoutingTableMod {
       inline def setLocalNodeId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "localNodeId", value.asInstanceOf[js.Any])
       
       inline def setOn(
-        value: (ping, js.Function2[/* oldContacts */ js.Array[KBucketPeer], /* newContact */ KBucketPeer, Unit]) => Unit
+        value: (Any, /* import warning: importer.ImportType#apply Failed type conversion: @libp2p/kad-dht.@libp2p/kad-dht/dist/src/routing-table.KBucketTreeEvents[U] */ js.Any) => KBucketTree
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setRemove(value: js.typedarray.Uint8Array => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
@@ -236,6 +265,66 @@ object distSrcRoutingTableMod {
       inline def setRoot(value: KBucket): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
       inline def setToIterable(value: () => js.Iterable[KBucket]): Self = StObject.set(x, "toIterable", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait KBucketTreeEvents extends StObject {
+    
+    def added(contact: KBucketPeer): Unit
+    
+    def ping(oldContacts: js.Array[KBucketPeer], newContact: KBucketPeer): Unit
+    
+    def removed(contact: KBucketPeer): Unit
+  }
+  object KBucketTreeEvents {
+    
+    inline def apply(
+      added: KBucketPeer => Unit,
+      ping: (js.Array[KBucketPeer], KBucketPeer) => Unit,
+      removed: KBucketPeer => Unit
+    ): KBucketTreeEvents = {
+      val __obj = js.Dynamic.literal(added = js.Any.fromFunction1(added), ping = js.Any.fromFunction2(ping), removed = js.Any.fromFunction1(removed))
+      __obj.asInstanceOf[KBucketTreeEvents]
+    }
+    
+    extension [Self <: KBucketTreeEvents](x: Self) {
+      
+      inline def setAdded(value: KBucketPeer => Unit): Self = StObject.set(x, "added", js.Any.fromFunction1(value))
+      
+      inline def setPing(value: (js.Array[KBucketPeer], KBucketPeer) => Unit): Self = StObject.set(x, "ping", js.Any.fromFunction2(value))
+      
+      inline def setRemoved(value: KBucketPeer => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait RoutingTableComponents extends StObject {
+    
+    var connectionManager: ConnectionManager
+    
+    var metrics: js.UndefOr[Metrics] = js.undefined
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+  }
+  object RoutingTableComponents {
+    
+    inline def apply(connectionManager: ConnectionManager, peerId: PeerId, peerStore: PeerStore): RoutingTableComponents = {
+      val __obj = js.Dynamic.literal(connectionManager = connectionManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RoutingTableComponents]
+    }
+    
+    extension [Self <: RoutingTableComponents](x: Self) {
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,6 +339,10 @@ object distSrcRoutingTableMod {
     var pingTimeout: js.UndefOr[Double] = js.undefined
     
     var protocol: String
+    
+    var tagName: js.UndefOr[String] = js.undefined
+    
+    var tagValue: js.UndefOr[Double] = js.undefined
   }
   object RoutingTableInit {
     
@@ -275,6 +368,14 @@ object distSrcRoutingTableMod {
       inline def setPingTimeoutUndefined: Self = StObject.set(x, "pingTimeout", js.undefined)
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      
+      inline def setTagValue(value: Double): Self = StObject.set(x, "tagValue", value.asInstanceOf[js.Any])
+      
+      inline def setTagValueUndefined: Self = StObject.set(x, "tagValue", js.undefined)
     }
   }
 }

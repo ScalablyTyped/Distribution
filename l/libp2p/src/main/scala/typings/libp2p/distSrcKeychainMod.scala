@@ -1,9 +1,9 @@
 package typings.libp2p
 
+import typings.interfaceDatastore.mod.Datastore
 import typings.libp2p.distSrcKeychainCmsMod.CMS
 import typings.libp2p.libp2pStrings.Ed25519
 import typings.libp2p.libp2pStrings.RSA
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ object distSrcKeychainMod {
     /**
       * Creates a new instance of a key chain
       */
-    def this(components: Components, init: KeyChainInit) = this()
+    def this(components: KeyChainComponents, init: KeyChainInit) = this()
     
     /**
       * Gets an object that can encrypt/decrypt protected data
@@ -175,6 +175,27 @@ object distSrcKeychainMod {
       inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
       
       inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait KeyChainComponents extends StObject {
+    
+    var datastore: Datastore
+    
+    var peerId: PeerId
+  }
+  object KeyChainComponents {
+    
+    inline def apply(datastore: Datastore, peerId: PeerId): KeyChainComponents = {
+      val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[KeyChainComponents]
+    }
+    
+    extension [Self <: KeyChainComponents](x: Self) {
+      
+      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     }
   }
   

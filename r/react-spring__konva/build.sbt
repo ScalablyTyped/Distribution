@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-spring__konva"
-version := "9.5.4-f6bf1b"
+version := "9.5.4-ab4d0b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "konva" % "8.3.13-1e2e43",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
-  "org.scalablytyped" %%% "react-konva" % "18.2.3-cab61d",
-  "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20220624Z-3c4c36",
-  "org.scalablytyped" %%% "react-spring__types" % "9.5.5-c653de",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
+  "org.scalablytyped" %%% "react-konva" % "18.2.3-8fab35",
+  "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20220624Z-eadd2d",
+  "org.scalablytyped" %%% "react-spring__types" % "9.5.5-68f9b1",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

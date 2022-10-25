@@ -2,8 +2,8 @@ package typings.sipJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sipJs.libCoreMessagesBodyMod.Body
-import typings.sipJs.libGrammarMod.NameAddrHeader
-import typings.sipJs.libGrammarMod.URI
+import typings.sipJs.libGrammarNameAddrHeaderMod.NameAddrHeader
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

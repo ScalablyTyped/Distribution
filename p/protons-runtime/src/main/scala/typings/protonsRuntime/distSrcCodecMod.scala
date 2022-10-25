@@ -1,7 +1,7 @@
 package typings.protonsRuntime
 
-import typings.protonsRuntime.mod.Reader
-import typings.protonsRuntime.mod.Writer
+import typings.protonsRuntime.mod.Reader_
+import typings.protonsRuntime.mod.Writer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,13 +62,13 @@ object distSrcCodecMod {
   
   trait Codec[T] extends StObject {
     
-    def decode(reader: Reader): T
-    def decode(reader: Reader, length: Double): T
+    def decode(reader: Reader_): T
+    def decode(reader: Reader_, length: Double): T
     @JSName("decode")
     var decode_Original: DecodeFunction[T]
     
-    def encode(value: T, writer: Writer): Unit
-    def encode(value: T, writer: Writer, opts: EncodeOptions): Unit
+    def encode(value: T, writer: Writer_): Unit
+    def encode(value: T, writer: Writer_, opts: EncodeOptions): Unit
     @JSName("encode")
     var encode_Original: EncodeFunction[T]
     
@@ -79,8 +79,8 @@ object distSrcCodecMod {
   object Codec {
     
     inline def apply[T](
-      decode: (/* reader */ Reader, /* length */ js.UndefOr[Double]) => T,
-      encode: (T, /* writer */ Writer, /* opts */ js.UndefOr[EncodeOptions]) => Unit,
+      decode: (/* reader */ Reader_, /* length */ js.UndefOr[Double]) => T,
+      encode: (T, /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions]) => Unit,
       name: String,
       `type`: CODEC_TYPES
     ): Codec[T] = {
@@ -91,9 +91,9 @@ object distSrcCodecMod {
     
     extension [Self <: Codec[?], T](x: Self & Codec[T]) {
       
-      inline def setDecode(value: (/* reader */ Reader, /* length */ js.UndefOr[Double]) => T): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
+      inline def setDecode(value: (/* reader */ Reader_, /* length */ js.UndefOr[Double]) => T): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
-      inline def setEncode(value: (T, /* writer */ Writer, /* opts */ js.UndefOr[EncodeOptions]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction3(value))
+      inline def setEncode(value: (T, /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction3(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -101,13 +101,15 @@ object distSrcCodecMod {
     }
   }
   
-  type DecodeFunction[T] = js.Function2[/* reader */ Reader, /* length */ js.UndefOr[Double], T]
+  type DecodeFunction[T] = js.Function2[/* reader */ Reader_, /* length */ js.UndefOr[Double], T]
   
-  type EncodeFunction[T] = js.Function3[/* value */ T, /* writer */ Writer, /* opts */ js.UndefOr[EncodeOptions], Unit]
+  type EncodeFunction[T] = js.Function3[/* value */ T, /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions], Unit]
   
   trait EncodeOptions extends StObject {
     
     var lengthDelimited: js.UndefOr[Boolean] = js.undefined
+    
+    var writeDefaults: js.UndefOr[Boolean] = js.undefined
   }
   object EncodeOptions {
     
@@ -121,6 +123,10 @@ object distSrcCodecMod {
       inline def setLengthDelimited(value: Boolean): Self = StObject.set(x, "lengthDelimited", value.asInstanceOf[js.Any])
       
       inline def setLengthDelimitedUndefined: Self = StObject.set(x, "lengthDelimited", js.undefined)
+      
+      inline def setWriteDefaults(value: Boolean): Self = StObject.set(x, "writeDefaults", value.asInstanceOf[js.Any])
+      
+      inline def setWriteDefaultsUndefined: Self = StObject.set(x, "writeDefaults", js.undefined)
     }
   }
 }

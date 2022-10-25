@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "frappe-gantt"
-version := "0.6-dt-20220922Z-7ad988"
+version := "0.6-dt-20221024Z-7ad988"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

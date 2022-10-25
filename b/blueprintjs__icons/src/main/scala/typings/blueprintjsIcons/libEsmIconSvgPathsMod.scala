@@ -998,6 +998,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val HighPriority: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.HighVoltagePole")
+    @js.native
+    val HighVoltagePole: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Highlight")
     @js.native
     val Highlight: js.Array[String] = js.native
@@ -1281,6 +1285,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.LogOut")
     @js.native
     val LogOut: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.LowVoltagePole")
+    @js.native
+    val LowVoltagePole: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Manual")
     @js.native
@@ -1841,6 +1849,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.SmallCross")
     @js.native
     val SmallCross: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.SmallInfoSign")
+    @js.native
+    val SmallInfoSign: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.SmallMinus")
     @js.native
@@ -3245,6 +3257,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val HighPriority: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.HighVoltagePole")
+    @js.native
+    val HighVoltagePole: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Highlight")
     @js.native
     val Highlight: js.Array[String] = js.native
@@ -3528,6 +3544,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.LogOut")
     @js.native
     val LogOut: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.LowVoltagePole")
+    @js.native
+    val LowVoltagePole: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Manual")
     @js.native
@@ -4088,6 +4108,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.SmallCross")
     @js.native
     val SmallCross: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.SmallInfoSign")
+    @js.native
+    val SmallInfoSign: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.SmallMinus")
     @js.native

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "slate-html-serializer"
-version := "0.6-dt-20211202Z-ce6b0f"
+version := "0.6-dt-20211202Z-0c65c0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "slate" % "0.82.1-b432fe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

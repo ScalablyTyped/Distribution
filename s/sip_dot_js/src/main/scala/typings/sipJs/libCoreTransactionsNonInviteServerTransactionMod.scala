@@ -1,6 +1,6 @@
 package typings.sipJs
 
-import typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
 import typings.sipJs.libCoreTransactionsServerTransactionMod.ServerTransaction
 import typings.sipJs.libCoreTransactionsTransactionUserMod.ServerTransactionUser
 import typings.sipJs.libCoreTransportMod.Transport

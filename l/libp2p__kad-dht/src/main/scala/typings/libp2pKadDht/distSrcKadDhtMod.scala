@@ -1,13 +1,12 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfaceDht.mod.DHT
 import typings.libp2pInterfacePeerInfo.mod.PeerInfo
 import typings.libp2pKadDht.distSrcNetworkMod.Network
 import typings.libp2pKadDht.distSrcPeerRoutingMod.PeerRouting
 import typings.libp2pKadDht.distSrcProvidersMod.Providers
 import typings.libp2pKadDht.distSrcRoutingTableMod.RoutingTable
+import typings.libp2pKadDht.mod.KadDHTComponents
 import typings.libp2pKadDht.mod.KadDHTInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,26 +24,21 @@ object distSrcKadDhtMod {
   
   @JSImport("@libp2p/kad-dht/dist/src/kad-dht", "KadDHT")
   @js.native
-  open class KadDHT protected ()
-    extends DHT
-       with Initializable {
+  open class KadDHT protected () extends DHT {
     /**
       * Create a new KadDHT
       */
-    def this(init: SingleKadDHTInit) = this()
+    def this(components: KadDHTComponents, init: SingleKadDHTInit) = this()
     
     /* private */ var clientMode: Any = js.native
     
-    var components: Components = js.native
+    val components: KadDHTComponents = js.native
     
     /* private */ val contentFetching: Any = js.native
     
     /* private */ val contentRouting: Any = js.native
     
     var get: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /**
       * Is this DHT running.

@@ -1,8 +1,9 @@
 package typings.libp2p
 
-import typings.libp2pComponents.mod.Components
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaceRegistrar.mod.IncomingStreamData
+import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pInterfaces.mod.AbortOptions
 import org.scalablytyped.runtime.StObject
@@ -16,7 +17,7 @@ object distSrcPingMod {
   open class PingService protected ()
     extends StObject
        with Startable {
-    def this(components: Components, init: PingServiceInit) = this()
+    def this(components: PingServiceComponents, init: PingServiceInit) = this()
     
     /* private */ val components: Any = js.native
     
@@ -58,6 +59,27 @@ object distSrcPingMod {
       */
     /* CompleteClass */
     override def stop(): Unit | js.Promise[Unit] = js.native
+  }
+  
+  trait PingServiceComponents extends StObject {
+    
+    var connectionManager: ConnectionManager
+    
+    var registrar: Registrar
+  }
+  object PingServiceComponents {
+    
+    inline def apply(connectionManager: ConnectionManager, registrar: Registrar): PingServiceComponents = {
+      val __obj = js.Dynamic.literal(connectionManager = connectionManager.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PingServiceComponents]
+    }
+    
+    extension [Self <: PingServiceComponents](x: Self) {
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setRegistrar(value: Registrar): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
+    }
   }
   
   trait PingServiceInit extends StObject {

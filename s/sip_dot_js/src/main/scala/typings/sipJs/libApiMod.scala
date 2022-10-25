@@ -8,6 +8,7 @@ import typings.sipJs.libApiRegistererOptionsMod.RegistererOptions
 import typings.sipJs.libApiSessionOptionsMod.SessionOptions
 import typings.sipJs.libApiSubscriberOptionsMod.SubscriberOptions
 import typings.sipJs.libApiSubscriptionOptionsMod.SubscriptionOptions
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
 import typings.sipJs.libCoreMessagesMethodsAckMod.IncomingAckRequest
 import typings.sipJs.libCoreMessagesMethodsByeMod.IncomingByeRequest
 import typings.sipJs.libCoreMessagesMethodsInfoMod.IncomingInfoRequest
@@ -15,7 +16,7 @@ import typings.sipJs.libCoreMessagesMethodsInviteMod.IncomingInviteRequest
 import typings.sipJs.libCoreMessagesMethodsMessageMod.IncomingMessageRequest
 import typings.sipJs.libCoreMessagesMethodsNotifyMod.IncomingNotifyRequest
 import typings.sipJs.libCoreMessagesMethodsReferMod.IncomingReferRequest
-import typings.sipJs.libCoreMod.URI
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,6 +37,14 @@ object libApiMod {
     extends typings.sipJs.libApiByeMod.Bye {
     /** @internal */
     def this(incomingByeRequest: IncomingByeRequest) = this()
+  }
+  
+  @JSImport("sip.js/lib/api", "Cancel")
+  @js.native
+  open class Cancel protected ()
+    extends typings.sipJs.libApiCancelMod.Cancel {
+    /** @internal */
+    def this(incomingCancelRequest: IncomingRequestMessage) = this()
   }
   
   @JSImport("sip.js/lib/api", "ContentTypeUnsupportedError")
@@ -211,11 +220,6 @@ object libApiMod {
     @JSImport("sip.js/lib/api", "Registerer.defaultRefreshFrequency")
     @js.native
     val defaultRefreshFrequency: Any = js.native
-    
-    @JSImport("sip.js/lib/api", "Registerer.newUUID")
-    @js.native
-    def newUUID: Any = js.native
-    inline def newUUID_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
     
     /**
       * Strip properties with undefined values from options.
@@ -409,12 +413,23 @@ object libApiMod {
       * Create a URI instance from a string.
       * @param uri - The string to parse.
       *
+      * @remarks
+      * Returns undefined if the syntax of the URI is invalid.
+      * The syntax must conform to a SIP URI as defined in the RFC.
+      * 25 Augmented BNF for the SIP Protocol
+      * https://tools.ietf.org/html/rfc3261#section-25
+      *
       * @example
       * ```ts
       * const uri = UserAgent.makeURI("sip:edgar@example.com");
       * ```
       */
     inline def makeURI(uri: String): js.UndefOr[URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[URI]]
+    
+    @JSImport("sip.js/lib/api", "UserAgent.newUUID")
+    @js.native
+    def newUUID: Any = js.native
+    inline def newUUID_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
     
     /**
       * Strip properties with undefined values from options.

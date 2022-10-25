@@ -1,7 +1,7 @@
 
 # Scala.js typings for datadog__pprof
 
-Typings are for version 1.0.2
+Typings are for version 1.0.3
 
 ## Library description:
 pprof support for Node.js

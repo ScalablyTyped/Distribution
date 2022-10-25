@@ -5,9 +5,9 @@ import typings.sipJs.libApiInvitationProgressOptionsMod.InvitationProgressOption
 import typings.sipJs.libApiInvitationRejectOptionsMod.InvitationRejectOptions
 import typings.sipJs.libApiSessionMod.Session
 import typings.sipJs.libApiUserAgentMod.UserAgent
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
 import typings.sipJs.libCoreMessagesMethodsInviteMod.IncomingInviteRequest
-import typings.sipJs.libCoreMod.IncomingRequestMessage
-import typings.sipJs.libCoreMod.NameAddrHeader
+import typings.sipJs.libGrammarNameAddrHeaderMod.NameAddrHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

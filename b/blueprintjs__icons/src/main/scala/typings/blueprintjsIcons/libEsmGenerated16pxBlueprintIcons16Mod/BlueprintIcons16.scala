@@ -1490,6 +1490,12 @@ object BlueprintIcons16 extends StObject {
   /* "high-priority" */ val HighPriority: typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16.HighPriority & String = js.native
   
   @js.native
+  sealed trait HighVoltagePole
+    extends StObject
+       with BlueprintIcons16
+  /* "high-voltage-pole" */ val HighVoltagePole: typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16.HighVoltagePole & String = js.native
+  
+  @js.native
   sealed trait Highlight
     extends StObject
        with BlueprintIcons16
@@ -1914,6 +1920,12 @@ object BlueprintIcons16 extends StObject {
     extends StObject
        with BlueprintIcons16
   /* "log-out" */ val LogOut: typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16.LogOut & String = js.native
+  
+  @js.native
+  sealed trait LowVoltagePole
+    extends StObject
+       with BlueprintIcons16
+  /* "low-voltage-pole" */ val LowVoltagePole: typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16.LowVoltagePole & String = js.native
   
   @js.native
   sealed trait Manual
@@ -2754,6 +2766,12 @@ object BlueprintIcons16 extends StObject {
     extends StObject
        with BlueprintIcons16
   /* "small-cross" */ val SmallCross: typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16.SmallCross & String = js.native
+  
+  @js.native
+  sealed trait SmallInfoSign
+    extends StObject
+       with BlueprintIcons16
+  /* "small-info-sign" */ val SmallInfoSign: typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16.SmallInfoSign & String = js.native
   
   @js.native
   sealed trait SmallMinus

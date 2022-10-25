@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__webrtc-peer
 
-Typings are for version 2.0.0
+Typings are for version 2.0.2
 
 ## Library description:
 Simple one-to-one WebRTC data channels

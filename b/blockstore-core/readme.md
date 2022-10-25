@@ -1,7 +1,7 @@
 
 # Scala.js typings for blockstore-core
 
-Typings are for version 2.0.1
+Typings are for version 2.0.2
 
 ## Library description:
 Contains various implementations of the API contract described in interface-blockstore

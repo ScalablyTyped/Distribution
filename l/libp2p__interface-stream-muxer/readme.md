@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-stream-muxer
 
-Typings are for version 2.0.2
+Typings are for version 3.0.0
 
 ## Library description:
 Stream Muxer interface for libp2p

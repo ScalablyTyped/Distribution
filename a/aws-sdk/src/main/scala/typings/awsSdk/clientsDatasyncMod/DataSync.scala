@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataSync extends Service {
   
   /**
-    * Cancels execution of a task.  When you cancel a task execution, the transfer of some files is abruptly interrupted. The contents of files that are transferred to the destination might be incomplete or inconsistent with the source files. However, if you start a new task execution on the same task and you allow the task execution to complete, file content on the destination is complete and consistent. This applies to other unexpected failures that interrupt a task execution. In all of these cases, DataSync successfully complete the transfer when you start the next task execution.
+    * Stops an DataSync task execution that's in progress. The transfer of some files are abruptly interrupted. File contents that're transferred to the destination might be incomplete or inconsistent with the source files. However, if you start a new task execution using the same task and allow it to finish, file content on the destination will be complete and consistent. This applies to other unexpected failures that interrupt a task execution. In all of these cases, DataSync successfully completes the transfer when you start the next task execution.
     */
   def cancelTaskExecution(): Request[CancelTaskExecutionResponse, AWSError] = js.native
   def cancelTaskExecution(callback: js.Function2[/* err */ AWSError, /* data */ CancelTaskExecutionResponse, Unit]): Request[CancelTaskExecutionResponse, AWSError] = js.native
   /**
-    * Cancels execution of a task.  When you cancel a task execution, the transfer of some files is abruptly interrupted. The contents of files that are transferred to the destination might be incomplete or inconsistent with the source files. However, if you start a new task execution on the same task and you allow the task execution to complete, file content on the destination is complete and consistent. This applies to other unexpected failures that interrupt a task execution. In all of these cases, DataSync successfully complete the transfer when you start the next task execution.
+    * Stops an DataSync task execution that's in progress. The transfer of some files are abruptly interrupted. File contents that're transferred to the destination might be incomplete or inconsistent with the source files. However, if you start a new task execution using the same task and allow it to finish, file content on the destination will be complete and consistent. This applies to other unexpected failures that interrupt a task execution. In all of these cases, DataSync successfully completes the transfer when you start the next task execution.
     */
   def cancelTaskExecution(params: CancelTaskExecutionRequest): Request[CancelTaskExecutionResponse, AWSError] = js.native
   def cancelTaskExecution(
@@ -29,12 +29,12 @@ trait DataSync extends Service {
   var config_DataSync: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Activates an DataSync agent that you have deployed on your host. The activation process associates your agent with your account. In the activation process, you specify information such as the Amazon Web Services Region that you want to activate the agent in. You activate the agent in the Amazon Web Services Region where your target locations (in Amazon S3 or Amazon EFS) reside. Your tasks are created in this Amazon Web Services Region. You can activate the agent in a VPC (virtual private cloud) or provide the agent access to a VPC endpoint so you can run tasks without going over the public internet. You can use an agent for more than one location. If a task uses multiple agents, all of them need to have status AVAILABLE for the task to run. If you use multiple agents for a source location, the status of all the agents must be AVAILABLE for the task to run.  Agents are automatically updated by Amazon Web Services on a regular basis, using a mechanism that ensures minimal interruption to your tasks. 
+    * Activates an DataSync agent that you have deployed in your storage environment. The activation process associates your agent with your account. In the activation process, you specify information such as the Amazon Web Services Region that you want to activate the agent in. You activate the agent in the Amazon Web Services Region where your target locations (in Amazon S3 or Amazon EFS) reside. Your tasks are created in this Amazon Web Services Region. You can activate the agent in a VPC (virtual private cloud) or provide the agent access to a VPC endpoint so you can run tasks without going over the public internet. You can use an agent for more than one location. If a task uses multiple agents, all of them need to have status AVAILABLE for the task to run. If you use multiple agents for a source location, the status of all the agents must be AVAILABLE for the task to run.  Agents are automatically updated by Amazon Web Services on a regular basis, using a mechanism that ensures minimal interruption to your tasks.
     */
   def createAgent(): Request[CreateAgentResponse, AWSError] = js.native
   def createAgent(callback: js.Function2[/* err */ AWSError, /* data */ CreateAgentResponse, Unit]): Request[CreateAgentResponse, AWSError] = js.native
   /**
-    * Activates an DataSync agent that you have deployed on your host. The activation process associates your agent with your account. In the activation process, you specify information such as the Amazon Web Services Region that you want to activate the agent in. You activate the agent in the Amazon Web Services Region where your target locations (in Amazon S3 or Amazon EFS) reside. Your tasks are created in this Amazon Web Services Region. You can activate the agent in a VPC (virtual private cloud) or provide the agent access to a VPC endpoint so you can run tasks without going over the public internet. You can use an agent for more than one location. If a task uses multiple agents, all of them need to have status AVAILABLE for the task to run. If you use multiple agents for a source location, the status of all the agents must be AVAILABLE for the task to run.  Agents are automatically updated by Amazon Web Services on a regular basis, using a mechanism that ensures minimal interruption to your tasks. 
+    * Activates an DataSync agent that you have deployed in your storage environment. The activation process associates your agent with your account. In the activation process, you specify information such as the Amazon Web Services Region that you want to activate the agent in. You activate the agent in the Amazon Web Services Region where your target locations (in Amazon S3 or Amazon EFS) reside. Your tasks are created in this Amazon Web Services Region. You can activate the agent in a VPC (virtual private cloud) or provide the agent access to a VPC endpoint so you can run tasks without going over the public internet. You can use an agent for more than one location. If a task uses multiple agents, all of them need to have status AVAILABLE for the task to run. If you use multiple agents for a source location, the status of all the agents must be AVAILABLE for the task to run.  Agents are automatically updated by Amazon Web Services on a regular basis, using a mechanism that ensures minimal interruption to your tasks.
     */
   def createAgent(params: CreateAgentRequest): Request[CreateAgentResponse, AWSError] = js.native
   def createAgent(
@@ -85,12 +85,12 @@ trait DataSync extends Service {
   ): Request[CreateLocationFsxOntapResponse, AWSError] = js.native
   
   /**
-    * Creates an endpoint for an Amazon FSx for OpenZFS file system.
+    * Creates an endpoint for an Amazon FSx for OpenZFS file system that DataSync can access for a transfer. For more information, see Creating a location for FSx for OpenZFS.  Request parameters related to SMB aren't supported with the CreateLocationFsxOpenZfs operation. 
     */
   def createLocationFsxOpenZfs(): Request[CreateLocationFsxOpenZfsResponse, AWSError] = js.native
   def createLocationFsxOpenZfs(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationFsxOpenZfsResponse, Unit]): Request[CreateLocationFsxOpenZfsResponse, AWSError] = js.native
   /**
-    * Creates an endpoint for an Amazon FSx for OpenZFS file system.
+    * Creates an endpoint for an Amazon FSx for OpenZFS file system that DataSync can access for a transfer. For more information, see Creating a location for FSx for OpenZFS.  Request parameters related to SMB aren't supported with the CreateLocationFsxOpenZfs operation. 
     */
   def createLocationFsxOpenZfs(params: CreateLocationFsxOpenZfsRequest): Request[CreateLocationFsxOpenZfsResponse, AWSError] = js.native
   def createLocationFsxOpenZfs(
@@ -155,12 +155,12 @@ trait DataSync extends Service {
   ): Request[CreateLocationObjectStorageResponse, AWSError] = js.native
   
   /**
-    * Creates an endpoint for an Amazon S3 bucket. For more information, see Create an Amazon S3 location in the DataSync User Guide.
+    * Creates an endpoint for an Amazon S3 bucket that DataSync can access for a transfer. For more information, see Create an Amazon S3 location in the DataSync User Guide.
     */
   def createLocationS3(): Request[CreateLocationS3Response, AWSError] = js.native
   def createLocationS3(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationS3Response, Unit]): Request[CreateLocationS3Response, AWSError] = js.native
   /**
-    * Creates an endpoint for an Amazon S3 bucket. For more information, see Create an Amazon S3 location in the DataSync User Guide.
+    * Creates an endpoint for an Amazon S3 bucket that DataSync can access for a transfer. For more information, see Create an Amazon S3 location in the DataSync User Guide.
     */
   def createLocationS3(params: CreateLocationS3Request): Request[CreateLocationS3Response, AWSError] = js.native
   def createLocationS3(
@@ -267,12 +267,12 @@ trait DataSync extends Service {
   ): Request[DescribeLocationEfsResponse, AWSError] = js.native
   
   /**
-    * Returns metadata about an Amazon FSx for Lustre location, such as information about its path.
+    * Provides details about how an DataSync location for an Amazon FSx for Lustre file system is configured.
     */
   def describeLocationFsxLustre(): Request[DescribeLocationFsxLustreResponse, AWSError] = js.native
   def describeLocationFsxLustre(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationFsxLustreResponse, Unit]): Request[DescribeLocationFsxLustreResponse, AWSError] = js.native
   /**
-    * Returns metadata about an Amazon FSx for Lustre location, such as information about its path.
+    * Provides details about how an DataSync location for an Amazon FSx for Lustre file system is configured.
     */
   def describeLocationFsxLustre(params: DescribeLocationFsxLustreRequest): Request[DescribeLocationFsxLustreResponse, AWSError] = js.native
   def describeLocationFsxLustre(
@@ -281,12 +281,12 @@ trait DataSync extends Service {
   ): Request[DescribeLocationFsxLustreResponse, AWSError] = js.native
   
   /**
-    * Provides details about how an DataSync location for an Amazon FSx for NetApp ONTAP file system is configured.
+    * Provides details about how an DataSync location for an Amazon FSx for NetApp ONTAP file system is configured.  If your location uses SMB, the DescribeLocationFsxOntap operation doesn't actually return a Password. 
     */
   def describeLocationFsxOntap(): Request[DescribeLocationFsxOntapResponse, AWSError] = js.native
   def describeLocationFsxOntap(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationFsxOntapResponse, Unit]): Request[DescribeLocationFsxOntapResponse, AWSError] = js.native
   /**
-    * Provides details about how an DataSync location for an Amazon FSx for NetApp ONTAP file system is configured.
+    * Provides details about how an DataSync location for an Amazon FSx for NetApp ONTAP file system is configured.  If your location uses SMB, the DescribeLocationFsxOntap operation doesn't actually return a Password. 
     */
   def describeLocationFsxOntap(params: DescribeLocationFsxOntapRequest): Request[DescribeLocationFsxOntapResponse, AWSError] = js.native
   def describeLocationFsxOntap(
@@ -295,12 +295,12 @@ trait DataSync extends Service {
   ): Request[DescribeLocationFsxOntapResponse, AWSError] = js.native
   
   /**
-    * Returns metadata about an Amazon FSx for OpenZFS location, such as information about its path.
+    * Provides details about how an DataSync location for an Amazon FSx for OpenZFS file system is configured.  Response elements related to SMB aren't supported with the DescribeLocationFsxOpenZfs operation. 
     */
   def describeLocationFsxOpenZfs(): Request[DescribeLocationFsxOpenZfsResponse, AWSError] = js.native
   def describeLocationFsxOpenZfs(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationFsxOpenZfsResponse, Unit]): Request[DescribeLocationFsxOpenZfsResponse, AWSError] = js.native
   /**
-    * Returns metadata about an Amazon FSx for OpenZFS location, such as information about its path.
+    * Provides details about how an DataSync location for an Amazon FSx for OpenZFS file system is configured.  Response elements related to SMB aren't supported with the DescribeLocationFsxOpenZfs operation. 
     */
   def describeLocationFsxOpenZfs(params: DescribeLocationFsxOpenZfsRequest): Request[DescribeLocationFsxOpenZfsResponse, AWSError] = js.native
   def describeLocationFsxOpenZfs(
@@ -575,12 +575,12 @@ trait DataSync extends Service {
   ): Request[UpdateLocationNfsResponse, AWSError] = js.native
   
   /**
-    * Updates some of the parameters of a previously created location for self-managed object storage server access. For information about creating a self-managed object storage location, see Creating a location for object storage.
+    * Updates some parameters of an existing object storage location that DataSync accesses for a transfer. For information about creating a self-managed object storage location, see Creating a location for object storage.
     */
   def updateLocationObjectStorage(): Request[UpdateLocationObjectStorageResponse, AWSError] = js.native
   def updateLocationObjectStorage(callback: js.Function2[/* err */ AWSError, /* data */ UpdateLocationObjectStorageResponse, Unit]): Request[UpdateLocationObjectStorageResponse, AWSError] = js.native
   /**
-    * Updates some of the parameters of a previously created location for self-managed object storage server access. For information about creating a self-managed object storage location, see Creating a location for object storage.
+    * Updates some parameters of an existing object storage location that DataSync accesses for a transfer. For information about creating a self-managed object storage location, see Creating a location for object storage.
     */
   def updateLocationObjectStorage(params: UpdateLocationObjectStorageRequest): Request[UpdateLocationObjectStorageResponse, AWSError] = js.native
   def updateLocationObjectStorage(

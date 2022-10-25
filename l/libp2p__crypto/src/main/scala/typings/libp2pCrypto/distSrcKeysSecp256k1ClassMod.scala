@@ -1,5 +1,7 @@
 package typings.libp2pCrypto
 
+import typings.libp2pCrypto.libp2pCryptoStrings.m
+import typings.multiformats.distTypesSrcBasesInterfaceMod.Multibase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,12 +27,8 @@ object distSrcKeysSecp256k1ClassMod {
     /**
       * Exports the key into a password protected `format`
       */
-    def `export`(password: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_base.Multibase<'m'> */ Any
-      ] = js.native
-    def `export`(password: String, format: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_base.Multibase<'m'> */ Any
-      ] = js.native
+    def `export`(password: String): js.Promise[Multibase[m]] = js.native
+    def `export`(password: String, format: String): js.Promise[Multibase[m]] = js.native
     
     def hash(): js.Promise[js.typedarray.Uint8Array] = js.native
     

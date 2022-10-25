@@ -1,6 +1,7 @@
 package typings.chainsafeLibp2pGossipsub.anon
 
 import typings.chainsafeLibp2pGossipsub.distSrcMessageCacheMod.MessageCache
+import typings.chainsafeLibp2pGossipsub.distSrcMessageDecodeRpcMod.DecodeRPCLimits
 import typings.chainsafeLibp2pGossipsub.distSrcMessageRpcMod.RPC.IMessage
 import typings.chainsafeLibp2pGossipsub.distSrcMetricsMod.MetricsRegister
 import typings.chainsafeLibp2pGossipsub.distSrcMetricsMod.TopicStrToLabel
@@ -10,6 +11,7 @@ import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.FastMsgIdFn
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdFn
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdToStrFn
 import typings.libp2pInterfacePubsub.mod.SignaturePolicy
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,6 +33,8 @@ trait PartialGossipsubOpts extends StObject {
   
   var allowPublishToZeroPeers: js.UndefOr[Boolean] = js.undefined
   
+  var allowedTopics: js.UndefOr[js.Array[String] | Set[String]] = js.undefined
+  
   var asyncValidation: js.UndefOr[Boolean] = js.undefined
   
   var awaitRpcHandler: js.UndefOr[Boolean] = js.undefined
@@ -42,6 +46,8 @@ trait PartialGossipsubOpts extends StObject {
   var dataTransform: js.UndefOr[DataTransform] = js.undefined
   
   var debugName: js.UndefOr[String] = js.undefined
+  
+  var decodeRpcLimits: js.UndefOr[DecodeRPCLimits] = js.undefined
   
   var directConnectTicks: js.UndefOr[Double] = js.undefined
   
@@ -120,6 +126,12 @@ object PartialGossipsubOpts {
     
     inline def setAllowPublishToZeroPeersUndefined: Self = StObject.set(x, "allowPublishToZeroPeers", js.undefined)
     
+    inline def setAllowedTopics(value: js.Array[String] | Set[String]): Self = StObject.set(x, "allowedTopics", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedTopicsUndefined: Self = StObject.set(x, "allowedTopics", js.undefined)
+    
+    inline def setAllowedTopicsVarargs(value: String*): Self = StObject.set(x, "allowedTopics", js.Array(value*))
+    
     inline def setAsyncValidation(value: Boolean): Self = StObject.set(x, "asyncValidation", value.asInstanceOf[js.Any])
     
     inline def setAsyncValidationUndefined: Self = StObject.set(x, "asyncValidation", js.undefined)
@@ -147,6 +159,10 @@ object PartialGossipsubOpts {
     inline def setDebugName(value: String): Self = StObject.set(x, "debugName", value.asInstanceOf[js.Any])
     
     inline def setDebugNameUndefined: Self = StObject.set(x, "debugName", js.undefined)
+    
+    inline def setDecodeRpcLimits(value: DecodeRPCLimits): Self = StObject.set(x, "decodeRpcLimits", value.asInstanceOf[js.Any])
+    
+    inline def setDecodeRpcLimitsUndefined: Self = StObject.set(x, "decodeRpcLimits", js.undefined)
     
     inline def setDhi(value: Double): Self = StObject.set(x, "Dhi", value.asInstanceOf[js.Any])
     
@@ -198,7 +214,7 @@ object PartialGossipsubOpts {
     
     inline def setFanoutTTLUndefined: Self = StObject.set(x, "fanoutTTL", js.undefined)
     
-    inline def setFastMsgIdFn(value: /* msg */ IMessage => String): Self = StObject.set(x, "fastMsgIdFn", js.Any.fromFunction1(value))
+    inline def setFastMsgIdFn(value: /* msg */ IMessage => String | Double): Self = StObject.set(x, "fastMsgIdFn", js.Any.fromFunction1(value))
     
     inline def setFastMsgIdFnUndefined: Self = StObject.set(x, "fastMsgIdFn", js.undefined)
     

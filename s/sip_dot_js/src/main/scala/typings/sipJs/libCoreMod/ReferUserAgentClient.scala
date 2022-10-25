@@ -10,11 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ReferUserAgentClient protected ()
   extends typings.sipJs.libCoreUserAgentsMod.ReferUserAgentClient {
-  def this(dialog: typings.sipJs.libCoreDialogsMod.SessionDialog) = this()
-  def this(dialog: typings.sipJs.libCoreDialogsMod.SessionDialog, delegate: OutgoingRequestDelegate) = this()
-  def this(dialog: typings.sipJs.libCoreDialogsMod.SessionDialog, delegate: Unit, options: RequestOptions) = this()
+  def this(dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog) = this()
   def this(
-    dialog: typings.sipJs.libCoreDialogsMod.SessionDialog,
+    dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
+    delegate: OutgoingRequestDelegate
+  ) = this()
+  def this(
+    dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
+    delegate: Unit,
+    options: RequestOptions
+  ) = this()
+  def this(
+    dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
     delegate: OutgoingRequestDelegate,
     options: RequestOptions
   ) = this()

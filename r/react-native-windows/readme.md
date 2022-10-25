@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-windows
 
-Typings are for version 0.70.3
+Typings are for version 0.70.4
 
 ## Library description:
 React Native for Windows

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "x2js" : "3.4.3"
+      "x2js" : "3.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "x2js" : "3.4.3"
+      "x2js" : "3.4.4"
     }
   ],
   "compile-devDependencies" : [

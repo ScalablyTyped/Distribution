@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ipld/dag-json" : "8.0.11"
+      "@ipld/dag-json" : "9.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ipld/dag-json" : "8.0.11"
+      "@ipld/dag-json" : "9.0.1"
     }
   ],
   "compile-devDependencies" : [

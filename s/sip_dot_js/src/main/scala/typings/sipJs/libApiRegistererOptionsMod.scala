@@ -1,7 +1,7 @@
 package typings.sipJs
 
 import typings.sipJs.anon.FromTag
-import typings.sipJs.libCoreMod.URI
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,8 @@ object libApiRegistererOptionsMod {
     
     /**
       * UUID to provide with "+sip.instance" Contact parameter.
-      * @defaultValue a randomly generated uuid
+      * @defaultValue A randomly generated uuid
+      * @deprecated Use UserAgentOptions.instanceId
       */
     var instanceId: js.UndefOr[String] = js.undefined
     

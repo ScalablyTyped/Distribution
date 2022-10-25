@@ -1,10 +1,9 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pInterfaces.eventsMod.EventEmitter
+import typings.libp2pKadDht.mod.KadDHTComponents
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,14 +15,10 @@ object distSrcTopologyListenerMod {
   @js.native
   open class TopologyListener protected ()
     extends EventEmitter[TopologyListenerEvents]
-       with Startable
-       with Initializable {
-    def this(init: TopologyListenerInit) = this()
+       with Startable {
+    def this(components: KadDHTComponents, init: TopologyListenerInit) = this()
     
-    /* private */ var components: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
+    /* private */ val components: Any = js.native
     
     /* CompleteClass */
     override def isStarted(): Boolean = js.native

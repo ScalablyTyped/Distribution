@@ -40,7 +40,7 @@ object libNgxInfiniteScrollDotdirectiveMod {
     
     var fromRoot: Boolean = js.native
     
-    def handleOnScroll(hasTypePayload: IInfiniteScrollAction): Unit = js.native
+    def handleOnScroll(param0: IInfiniteScrollAction): Unit = js.native
     
     var horizontal: Boolean = js.native
     

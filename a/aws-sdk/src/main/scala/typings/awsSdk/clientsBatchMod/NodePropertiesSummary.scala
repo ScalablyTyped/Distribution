@@ -17,7 +17,7 @@ trait NodePropertiesSummary extends StObject {
   var nodeIndex: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The number of nodes associated with a multi-node parallel job.
+    * The number of nodes that are associated with a multi-node parallel job.
     */
   var numNodes: js.UndefOr[Integer] = js.undefined
 }

@@ -1,7 +1,7 @@
 package typings.sipJs
 
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
 import typings.sipJs.libCoreMessagesMethodsAckMod.IncomingAckRequest
-import typings.sipJs.libCoreMod.IncomingRequestMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

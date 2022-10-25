@@ -40,6 +40,9 @@ object mod {
     /* CompleteClass */
     override def _getCachePath(testContext: TestContext): String = js.native
     
+    /* private */ /* CompleteClass */
+    var _shardPosition: Any = js.native
+    
     /* CompleteClass */
     override def allFailedTests(tests: js.Array[Test]): js.Array[Test] | js.Promise[js.Array[Test]] = js.native
     
@@ -138,6 +141,8 @@ object mod {
     
     def _getCachePath(testContext: TestContext): String
     
+    /* private */ var _shardPosition: Any
+    
     def allFailedTests(tests: js.Array[Test]): js.Array[Test] | js.Promise[js.Array[Test]]
     
     def cacheResults(tests: js.Array[Test], results: AggregatedResult): Unit
@@ -191,6 +196,7 @@ object mod {
       _cache: Any,
       _getCache: Test => Cache2,
       _getCachePath: TestContext => String,
+      _shardPosition: Any,
       allFailedTests: js.Array[Test] => js.Array[Test] | js.Promise[js.Array[Test]],
       cacheResults: (js.Array[Test], AggregatedResult) => Unit,
       hasFailed: Any,
@@ -198,7 +204,7 @@ object mod {
       sort: js.Array[Test] => js.Array[Test] | js.Promise[js.Array[Test]],
       time: Any
     ): TestSequencer = {
-      val __obj = js.Dynamic.literal(_cache = _cache.asInstanceOf[js.Any], _getCache = js.Any.fromFunction1(_getCache), _getCachePath = js.Any.fromFunction1(_getCachePath), allFailedTests = js.Any.fromFunction1(allFailedTests), cacheResults = js.Any.fromFunction2(cacheResults), hasFailed = hasFailed.asInstanceOf[js.Any], shard = js.Any.fromFunction2(shard), sort = js.Any.fromFunction1(sort), time = time.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_cache = _cache.asInstanceOf[js.Any], _getCache = js.Any.fromFunction1(_getCache), _getCachePath = js.Any.fromFunction1(_getCachePath), _shardPosition = _shardPosition.asInstanceOf[js.Any], allFailedTests = js.Any.fromFunction1(allFailedTests), cacheResults = js.Any.fromFunction2(cacheResults), hasFailed = hasFailed.asInstanceOf[js.Any], shard = js.Any.fromFunction2(shard), sort = js.Any.fromFunction1(sort), time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestSequencer]
     }
     
@@ -221,6 +227,8 @@ object mod {
       inline def set_getCache(value: Test => Cache2): Self = StObject.set(x, "_getCache", js.Any.fromFunction1(value))
       
       inline def set_getCachePath(value: TestContext => String): Self = StObject.set(x, "_getCachePath", js.Any.fromFunction1(value))
+      
+      inline def set_shardPosition(value: Any): Self = StObject.set(x, "_shardPosition", value.asInstanceOf[js.Any])
     }
   }
 }

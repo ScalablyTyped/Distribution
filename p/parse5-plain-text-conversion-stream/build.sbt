@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "parse5-plain-text-conversion-stream"
-version := "7.0.0-4fe435"
+version := "7.0.0-0cdcac"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "parse5" % "7.1.1-c1050b",
-  "org.scalablytyped" %%% "parse5-parser-stream" % "7.0.0-c4f789",
+  "org.scalablytyped" %%% "parse5-parser-stream" % "7.0.0-f923ea",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

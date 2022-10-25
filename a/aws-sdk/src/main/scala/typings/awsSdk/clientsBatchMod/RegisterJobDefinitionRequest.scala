@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegisterJobDefinitionRequest extends StObject {
   
   /**
-    * An object with various properties specific to single-node container-based jobs. If the job definition's type parameter is container, then you must specify either containerProperties or nodeProperties.  If the job runs on Fargate resources, then you must not specify nodeProperties; use only containerProperties. 
+    * An object with various properties specific to Amazon ECS based single-node container-based jobs. If the job definition's type parameter is container, then you must specify either containerProperties or nodeProperties. This must not be specified for Amazon EKS based job definitions.  If the job runs on Fargate resources, then you must not specify nodeProperties; use only containerProperties. 
     */
   var containerProperties: js.UndefOr[ContainerProperties] = js.undefined
+  
+  /**
+    * An object with various properties that are specific to Amazon EKS based jobs. This must not be specified for Amazon ECS based job definitions.
+    */
+  var eksProperties: js.UndefOr[EksProperties] = js.undefined
   
   /**
     * The name of the job definition to register. It can be up to 128 letters long. It can contain uppercase and lowercase letters, numbers, hyphens (-), and underscores (_).
@@ -17,7 +22,7 @@ trait RegisterJobDefinitionRequest extends StObject {
   var jobDefinitionName: String
   
   /**
-    * An object with various properties specific to multi-node parallel jobs. If you specify node properties for a job, it becomes a multi-node parallel job. For more information, see Multi-node Parallel Jobs in the Batch User Guide. If the job definition's type parameter is container, then you must specify either containerProperties or nodeProperties.  If the job runs on Fargate resources, then you must not specify nodeProperties; use containerProperties instead. 
+    * An object with various properties specific to multi-node parallel jobs. If you specify node properties for a job, it becomes a multi-node parallel job. For more information, see Multi-node Parallel Jobs in the Batch User Guide. If the job definition's type parameter is container, then you must specify either containerProperties or nodeProperties.  If the job runs on Fargate resources, then you must not specify nodeProperties; use containerProperties instead.   If the job runs on Amazon EKS resources, then you must not specify nodeProperties. 
     */
   var nodeProperties: js.UndefOr[NodeProperties] = js.undefined
   
@@ -27,12 +32,12 @@ trait RegisterJobDefinitionRequest extends StObject {
   var parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
-    * The platform capabilities required by the job definition. If no value is specified, it defaults to EC2. To run the job on Fargate resources, specify FARGATE.
+    * The platform capabilities required by the job definition. If no value is specified, it defaults to EC2. To run the job on Fargate resources, specify FARGATE.  If the job runs on Amazon EKS resources, then you must not specify platformCapabilities. 
     */
   var platformCapabilities: js.UndefOr[PlatformCapabilityList] = js.undefined
   
   /**
-    * Specifies whether to propagate the tags from the job or job definition to the corresponding Amazon ECS task. If no value is specified, the tags are not propagated. Tags can only be propagated to the tasks during task creation. For tags with the same name, job tags are given priority over job definitions tags. If the total number of combined tags from the job and job definition is over 50, the job is moved to the FAILED state.
+    * Specifies whether to propagate the tags from the job or job definition to the corresponding Amazon ECS task. If no value is specified, the tags are not propagated. Tags can only be propagated to the tasks during task creation. For tags with the same name, job tags are given priority over job definitions tags. If the total number of combined tags from the job and job definition is over 50, the job is moved to the FAILED state.  If the job runs on Amazon EKS resources, then you must not specify propagateTags. 
     */
   var propagateTags: js.UndefOr[Boolean] = js.undefined
   
@@ -42,7 +47,7 @@ trait RegisterJobDefinitionRequest extends StObject {
   var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
   
   /**
-    * The scheduling priority for jobs that are submitted with this job definition. This will only affect jobs in job queues with a fair share policy. Jobs with a higher scheduling priority will be scheduled before jobs with a lower scheduling priority. The minimum supported value is 0 and the maximum supported value is 9999.
+    * The scheduling priority for jobs that are submitted with this job definition. This only affects jobs in job queues with a fair share policy. Jobs with a higher scheduling priority are scheduled before jobs with a lower scheduling priority. The minimum supported value is 0 and the maximum supported value is 9999.
     */
   var schedulingPriority: js.UndefOr[Integer] = js.undefined
   
@@ -74,6 +79,10 @@ object RegisterJobDefinitionRequest {
     inline def setContainerProperties(value: ContainerProperties): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
     
     inline def setContainerPropertiesUndefined: Self = StObject.set(x, "containerProperties", js.undefined)
+    
+    inline def setEksProperties(value: EksProperties): Self = StObject.set(x, "eksProperties", value.asInstanceOf[js.Any])
+    
+    inline def setEksPropertiesUndefined: Self = StObject.set(x, "eksProperties", js.undefined)
     
     inline def setJobDefinitionName(value: String): Self = StObject.set(x, "jobDefinitionName", value.asInstanceOf[js.Any])
     

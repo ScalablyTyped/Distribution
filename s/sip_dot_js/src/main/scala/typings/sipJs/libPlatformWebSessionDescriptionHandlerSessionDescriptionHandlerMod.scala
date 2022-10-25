@@ -3,7 +3,7 @@ package typings.sipJs
 import typings.sipJs.anon.Duration
 import typings.sipJs.libApiSessionDescriptionHandlerMod.BodyAndContentType
 import typings.sipJs.libApiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
-import typings.sipJs.libCoreMod.Logger
+import typings.sipJs.libCoreLogLoggerMod.Logger
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerMediaStreamFactoryMod.MediaStreamFactory
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerPeerConnectionDelegateMod.PeerConnectionDelegate
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerConfigurationMod.SessionDescriptionHandlerConfiguration
@@ -85,6 +85,18 @@ object libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerMod {
       */
     def dataChannel: js.UndefOr[RTCDataChannel] = js.native
     
+    /**
+      * Helper function to enable/disable media tracks.
+      * @param enable - If true enable tracks, otherwise disable tracks.
+      */
+    def enableReceiverTracks(enable: Boolean): Unit = js.native
+    
+    /**
+      * Helper function to enable/disable media tracks.
+      * @param enable - If true enable tracks, otherwise disable tracks.
+      */
+    def enableSenderTracks(enable: Boolean): Unit = js.native
+    
     def getDescription(options: SessionDescriptionHandlerOptions): js.Promise[BodyAndContentType] = js.native
     def getDescription(options: SessionDescriptionHandlerOptions, modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[BodyAndContentType] = js.native
     
@@ -102,8 +114,13 @@ object libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerMod {
     
     /**
       * Called when ICE gathering completes and resolves any waiting promise.
+      * @remarks
+      * May be called prior to ICE gathering actually completing to allow the
+      * session descirption handler proceed with whatever candidates have been
+      * gathered up to this point in time. Use this to stop waiting on ICE to
+      * complete if you are implementing your own ICE gathering completion strategy.
       */
-    /* protected */ def iceGatheringComplete(): Unit = js.native
+    def iceGatheringComplete(): Unit = js.native
     
     /* private */ var iceGatheringCompletePromise: Any = js.native
     
@@ -140,6 +157,11 @@ object libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerMod {
     
     /** Media stream factory. */
     /* protected */ def mediaStreamFactory(constraints: MediaStreamConstraints, sessionDescriptionHandler: SessionDescriptionHandler): js.Promise[MediaStream] = js.native
+    /* protected */ def mediaStreamFactory(
+      constraints: MediaStreamConstraints,
+      sessionDescriptionHandler: SessionDescriptionHandler,
+      options: SessionDescriptionHandlerOptions
+    ): js.Promise[MediaStream] = js.native
     /** Media stream factory. */
     /* protected */ @JSName("mediaStreamFactory")
     var mediaStreamFactory_Original: MediaStreamFactory = js.native
@@ -150,8 +172,25 @@ object libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerMod {
       * The peer connection. Undefined if peer connection has closed.
       *
       * @remarks
+      * Use the peerConnectionDelegate to get access to the events associated
+      * with the RTCPeerConnection. For example...
+      *
+      * Do NOT do this...
+      * ```ts
+      * peerConnection.onicecandidate = (event) => {
+      *   // do something
+      * };
+      * ```
+      * Instead, do this...
+      * ```ts
+      * peerConnection.peerConnectionDelegate = {
+      *   onicecandidate: (event) => {
+      *     // do something
+      *   }
+      * };
+      * ```
       * While access to the underlying `RTCPeerConnection` is provided, note that
-      * using methods with modify it may break the operation of this class.
+      * using methods which modify it may break the operation of this class.
       * In particular, this class depends on exclusive access to the
       * event handler properties. If you need access to the peer connection
       * events, either register for events using `addEventListener()` on
@@ -164,10 +203,27 @@ object libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerMod {
       * A delegate which provides access to the peer connection event handlers.
       *
       * @remarks
+      * Use the peerConnectionDelegate to get access to the events associated
+      * with the RTCPeerConnection. For example...
+      *
+      * Do NOT do this...
+      * ```ts
+      * peerConnection.onicecandidate = (event) => {
+      *   // do something
+      * };
+      * ```
+      * Instead, do this...
+      * ```
+      * peerConnection.peerConnectionDelegate = {
+      *   onicecandidate: (event) => {
+      *     // do something
+      *   }
+      * };
+      * ```
       * Setting the peer connection event handlers directly is not supported
       * and may break this class. As this class depends on exclusive access
-      * to them, a delegate may be set which provides alternative access to
-      * the event handlers in a fashion which is supported.
+      * to them. This delegate is intended to provide access to the
+      * RTCPeerConnection events in a fashion which is supported.
       */
     def peerConnectionDelegate: js.UndefOr[PeerConnectionDelegate] = js.native
     def peerConnectionDelegate_=(delegate: js.UndefOr[PeerConnectionDelegate]): Unit = js.native

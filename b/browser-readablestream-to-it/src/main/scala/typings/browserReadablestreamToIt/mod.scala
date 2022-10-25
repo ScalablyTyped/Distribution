@@ -1,7 +1,6 @@
 package typings.browserReadablestreamToIt
 
-import typings.browserReadablestreamToIt.anon.PreventCancel
-import typings.std.AsyncIterable
+import typings.std.AsyncGenerator
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,22 +8,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-    * Turns a browser readable stream into an async iterable. Async iteration over
-    * returned iterable will lock give stream, preventing any other consumer from
-    * acquiring a reader. The lock will be released if iteration loop is broken. To
-    * prevent stream cancelling optional `{ preventCancel: true }` could be passed
-    * as a second argument.
-    * @template T
-    * @param {ReadableStream<T>} stream
-    * @param {Object} [options]
-    * @param {boolean} [options.preventCancel=boolean]
-    * @returns {AsyncIterable<T>}
-    */
-  inline def apply[T](stream: ReadableStream[T]): AsyncIterable[T] = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[T]]
-  inline def apply[T](stream: ReadableStream[T], options: PreventCancel): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
-  
   @JSImport("browser-readablestream-to-it", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default[T](stream: ReadableStream[T]): AsyncGenerator[T, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stream.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[T, Unit, Unit]]
+  inline def default[T](stream: ReadableStream[T], options: BrowserReadableStreamToItOptions): AsyncGenerator[T, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, Unit, Unit]]
+  
+  trait BrowserReadableStreamToItOptions extends StObject {
+    
+    var preventCancel: js.UndefOr[Boolean] = js.undefined
+  }
+  object BrowserReadableStreamToItOptions {
+    
+    inline def apply(): BrowserReadableStreamToItOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BrowserReadableStreamToItOptions]
+    }
+    
+    extension [Self <: BrowserReadableStreamToItOptions](x: Self) {
+      
+      inline def setPreventCancel(value: Boolean): Self = StObject.set(x, "preventCancel", value.asInstanceOf[js.Any])
+      
+      inline def setPreventCancelUndefined: Self = StObject.set(x, "preventCancel", js.undefined)
+    }
+  }
 }

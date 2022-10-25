@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/peer-id" : "1.1.15"
+      "@libp2p/peer-id" : "1.1.16"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/peer-id" : "1.1.15"
+      "@libp2p/peer-id" : "1.1.16"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libp2p__webrtc-peer"
-version := "2.0.0-a1d2a7"
+version := "2.0.2-8d36ea"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,6 +2,7 @@ package typings.ipfsCli
 
 import org.scalablytyped.runtime.Shortcut
 import typings.ipfsCli.distSrcTypesMod.Context
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.yargs.mod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +15,7 @@ object distSrcCommandsAddMod extends Shortcut {
     * @property {import('../types').Context} Argv.ctx
     * @property {boolean} Argv.trickle
     * @property {number} Argv.shardSplitThreshold
-    * @property {import('multiformats/cid').CIDVersion} Argv.cidVersion
+    * @property {import('multiformats/cid').Version} Argv.cidVersion
     * @property {boolean} Argv.rawLeaves
     * @property {boolean} Argv.onlyHash
     * @property {string} Argv.hash
@@ -53,7 +54,7 @@ object distSrcCommandsAddMod extends Shortcut {
     
     var cidBase: String
     
-    var cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
+    var cidVersion: Version
     
     var ctx: Context
     
@@ -109,7 +110,7 @@ object distSrcCommandsAddMod extends Shortcut {
       blockWriteConcurrency: Double,
       chunker: String,
       cidBase: String,
-      cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any,
+      cidVersion: Version,
       ctx: Context,
       enableShardingExperiment: Boolean,
       file: js.Array[String],
@@ -147,9 +148,7 @@ object distSrcCommandsAddMod extends Shortcut {
       
       inline def setCidBase(value: String): Self = StObject.set(x, "cidBase", value.asInstanceOf[js.Any])
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCtx(value: Context): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "catho__quantum"
-version := "9.5.0-046123"
+version := "9.5.0-e11a94"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "downshift" % "7.0.0-15ec16",
+  "org.scalablytyped" %%% "downshift" % "7.0.0-7eb230",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

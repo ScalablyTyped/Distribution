@@ -11,6 +11,7 @@ import typings.blueprintjsCore.libEsmComponentsTagTagMod.TagProps
 import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.blueprintjsPopover2.anon.PartialModifieranyobject
 import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2InteractionKind
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperModifierOverrides
 import typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind
 import typings.blueprintjsPopover2.mod.Popover2
 import typings.blueprintjsSelect.`libEsm@ExamplesFilmsMod`.Film
@@ -47,7 +48,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -448,11 +448,7 @@ object anon {
     
     var minimal: js.UndefOr[Boolean] = js.undefined
     
-    var modifiers: js.UndefOr[
-        Partial[
-          /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
-        ]
-      ] = js.undefined
+    var modifiers: js.UndefOr[PopperModifierOverrides] = js.undefined
     
     var modifiersCustom: js.UndefOr[js.Array[PartialModifieranyobject]] = js.undefined
     
@@ -579,11 +575,7 @@ object anon {
       
       inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
       
-      inline def setModifiers(
-        value: Partial[
-              /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
-            ]
-      ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: PopperModifierOverrides): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       inline def setModifiersCustom(value: js.Array[PartialModifieranyobject]): Self = StObject.set(x, "modifiersCustom", value.asInstanceOf[js.Any])
       

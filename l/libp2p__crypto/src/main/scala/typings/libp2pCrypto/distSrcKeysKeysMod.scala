@@ -40,14 +40,14 @@ object distSrcKeysKeysMod {
   
   trait PrivateKey extends StObject {
     
-    var Data: js.typedarray.Uint8Array
+    var Data: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
-    var Type: KeyType
+    var Type: js.UndefOr[KeyType] = js.undefined
   }
   object PrivateKey {
     
-    inline def apply(Data: js.typedarray.Uint8Array, Type: KeyType): PrivateKey = {
-      val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    inline def apply(): PrivateKey = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrivateKey]
     }
     
@@ -66,20 +66,24 @@ object distSrcKeysKeysMod {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
+      inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+      
       inline def setType(value: KeyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
   
   trait PublicKey extends StObject {
     
-    var Data: js.typedarray.Uint8Array
+    var Data: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
-    var Type: KeyType
+    var Type: js.UndefOr[KeyType] = js.undefined
   }
   object PublicKey {
     
-    inline def apply(Data: js.typedarray.Uint8Array, Type: KeyType): PublicKey = {
-      val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    inline def apply(): PublicKey = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PublicKey]
     }
     
@@ -98,7 +102,11 @@ object distSrcKeysKeysMod {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
+      inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+      
       inline def setType(value: KeyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

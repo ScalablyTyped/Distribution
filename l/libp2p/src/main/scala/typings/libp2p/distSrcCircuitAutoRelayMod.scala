@@ -1,6 +1,6 @@
 package typings.libp2p
 
-import typings.libp2pComponents.mod.Components
+import typings.libp2p.distSrcCircuitMod.RelayComponents
 import typings.libp2pInterfaceConnection.mod.Connection
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`-1`
@@ -19,7 +19,7 @@ object distSrcCircuitAutoRelayMod {
   @JSImport("libp2p/dist/src/circuit/auto-relay", "AutoRelay")
   @js.native
   open class AutoRelay protected () extends StObject {
-    def this(components: Components, init: AutoRelayInit) = this()
+    def this(components: RelayComponents, init: AutoRelayInit) = this()
     
     /**
       * Attempt to listen on the given relay connection

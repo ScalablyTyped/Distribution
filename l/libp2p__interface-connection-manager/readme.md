@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-connection-manager
 
-Typings are for version 1.1.1
+Typings are for version 1.3.0
 
 ## Library description:
 Connection Manager interface for libp2p

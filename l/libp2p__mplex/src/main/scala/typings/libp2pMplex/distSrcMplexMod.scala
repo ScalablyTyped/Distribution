@@ -2,7 +2,6 @@ package typings.libp2pMplex
 
 import typings.itStreamTypes.mod.Sink
 import typings.itStreamTypes.mod.Source
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfaceConnection.mod.Stream
 import typings.libp2pInterfaceConnection.mod.StreamStat
 import typings.libp2pInterfaceStreamMuxer.mod.StreamMuxer
@@ -23,11 +22,10 @@ object distSrcMplexMod {
   
   @JSImport("@libp2p/mplex/dist/src/mplex", "MplexStreamMuxer")
   @js.native
-  open class MplexStreamMuxer protected ()
+  open class MplexStreamMuxer ()
     extends StObject
        with StreamMuxer {
-    def this(components: Components) = this()
-    def this(components: Components, init: MplexStreamMuxerInit) = this()
+    def this(init: MplexStreamMuxerInit) = this()
     
     /**
       * Creates a sink with an abortable source. Incoming messages will
@@ -59,8 +57,6 @@ object distSrcMplexMod {
     /* private */ val _streams: Any = js.native
     
     /* private */ val closeController: Any = js.native
-    
-    def init(components: Components): Unit = js.native
     
     /* private */ val rateLimiter: Any = js.native
     

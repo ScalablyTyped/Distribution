@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NodePropertyOverride extends StObject {
   
   /**
-    * The overrides that should be sent to a node range.
+    * The overrides that are sent to a node range.
     */
   var containerOverrides: js.UndefOr[ContainerOverrides] = js.undefined
   

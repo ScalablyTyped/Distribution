@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "cosmiconfig-toml-loader"
-version := "1.0.0-fb58e5"
+version := "1.0.0-5346ce"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "iarna__toml" % "2.2.5-7a5179",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "iarna__toml" % "2.2.5-9b528d",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

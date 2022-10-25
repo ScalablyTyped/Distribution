@@ -2,6 +2,7 @@ package typings.ipfsCli
 
 import org.scalablytyped.runtime.Shortcut
 import typings.ipfsCli.distSrcTypesMod.Context
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.yargs.mod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +15,7 @@ object distSrcCommandsCidFormatMod extends Shortcut {
     * @property {import('../../types').Context} Argv.ctx
     * @property {string[]} [Argv.cids]
     * @property {string} [Argv.format]
-    * @property {import('multiformats/cid').CIDVersion} [Argv.cidVersion]
+    * @property {import('multiformats/cid').Version} [Argv.cidVersion]
     * @property {string} [Argv.base]
     */
   /** @type {import('yargs').CommandModule<Argv, Argv>} */
@@ -26,9 +27,7 @@ object distSrcCommandsCidFormatMod extends Shortcut {
     
     var base: js.UndefOr[String] = js.undefined
     
-    var cidVersion: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
-      ] = js.undefined
+    var cidVersion: js.UndefOr[Version] = js.undefined
     
     var cids: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -49,9 +48,7 @@ object distSrcCommandsCidFormatMod extends Shortcut {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
       

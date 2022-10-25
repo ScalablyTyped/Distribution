@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rdf-validate-shacl"
-version := "0.4-dt-20211202Z-3296fc"
+version := "0.4-dt-20211202Z-a02cdd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "clownface" % "1.5-dt-20220824Z-368f64",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
-  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-899943",
+  "org.scalablytyped" %%% "clownface" % "1.5-dt-20220824Z-76da6f",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-572810",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -42,7 +42,7 @@ object SubscriptionDialog {
     * @param incomingResponseMessage - Incoming response message creating dialog.
     */
   inline def initialDialogStateForSubscription(
-    outgoingSubscribeRequestMessage: typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
-    incomingNotifyRequestMessage: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
+    outgoingSubscribeRequestMessage: typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage,
+    incomingNotifyRequestMessage: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
   ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForSubscription")(outgoingSubscribeRequestMessage.asInstanceOf[js.Any], incomingNotifyRequestMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
 }

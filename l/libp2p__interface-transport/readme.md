@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-transport
 
-Typings are for version 1.0.4
+Typings are for version 2.0.0
 
 ## Library description:
 Transport interface for libp2p

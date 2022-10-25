@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "it-parallel-batch"
-version := "1.0.10-40a751"
+version := "2.0.0-168aac"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

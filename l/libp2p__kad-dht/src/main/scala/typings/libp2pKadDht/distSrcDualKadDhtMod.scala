@@ -1,7 +1,5 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfaceDht.mod.AddingPeerEvent
 import typings.libp2pInterfaceDht.mod.DialingPeerEvent
 import typings.libp2pInterfaceDht.mod.DualDHT
@@ -14,6 +12,7 @@ import typings.libp2pInterfaceDht.mod.SendingQueryEvent
 import typings.libp2pInterfaceDht.mod.ValueEvent
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.libp2pKadDht.distSrcKadDhtMod.KadDHT
+import typings.libp2pKadDht.mod.KadDHTComponents
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.multiformats.mod.CID
 import typings.std.AsyncGenerator
@@ -25,12 +24,10 @@ object distSrcDualKadDhtMod {
   
   @JSImport("@libp2p/kad-dht/dist/src/dual-kad-dht", "DualKadDHT")
   @js.native
-  open class DualKadDHT protected ()
-    extends DualDHT
-       with Initializable {
-    def this(wan: KadDHT, lan: KadDHT) = this()
+  open class DualKadDHT protected () extends DualDHT {
+    def this(components: KadDHTComponents, wan: KadDHT, lan: KadDHT) = this()
     
-    var components: Components = js.native
+    val components: KadDHTComponents = js.native
     
     /**
       * Search the dht for up to `K` providers of the given CID
@@ -40,16 +37,13 @@ object distSrcDualKadDhtMod {
     
     var get: Any = js.native
     
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
-    
     /**
       * Is this DHT running.
       */
     def isStarted(): Boolean = js.native
     
     @JSName("lan")
-    var lan_DualKadDHT: KadDHT = js.native
+    val lan_DualKadDHT: KadDHT = js.native
     
     /**
       * Announce to the network that we can provide given key's value
@@ -80,6 +74,6 @@ object distSrcDualKadDhtMod {
     var toStringTag_DualKadDHT: js.Function0[String] = js.native
     
     @JSName("wan")
-    var wan_DualKadDHT: KadDHT = js.native
+    val wan_DualKadDHT: KadDHT = js.native
   }
 }

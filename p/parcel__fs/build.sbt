@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "parcel__fs"
-version := "2.7.0-d4a35a"
+version := "2.7.0-68c657"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "parcel__diagnostic" % "2.7.0-0ad72b",
   "org.scalablytyped" %%% "parcel__package-manager" % "2.7.0-423cb8",
-  "org.scalablytyped" %%% "parcel__source-map" % "2.1.1-093084",
-  "org.scalablytyped" %%% "parcel__types" % "2.7.0-66ea1f",
+  "org.scalablytyped" %%% "parcel__source-map" % "2.1.1-a2d1b0",
+  "org.scalablytyped" %%% "parcel__types" % "2.7.0-cfa07e",
   "org.scalablytyped" %%% "parcel__watcher" % "2.0.5-07fec3",
   "org.scalablytyped" %%% "parcel__workers" % "2.7.0-f666c7",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

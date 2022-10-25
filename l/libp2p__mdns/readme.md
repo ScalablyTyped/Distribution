@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__mdns
 
-Typings are for version 3.0.1
+Typings are for version 5.0.0
 
 ## Library description:
 Node.js libp2p mDNS discovery implementation for peer discovery

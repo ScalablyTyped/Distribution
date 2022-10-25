@@ -1,7 +1,8 @@
 package typings.libp2p
 
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfaceAddressManager.mod.AddressManagerEvents
+import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfaceTransport.mod.TransportManager
 import typings.libp2pInterfaces.eventsMod.EventEmitter
 import typings.multiformatsMultiaddr.mod.Multiaddr_
 import org.scalablytyped.runtime.StObject
@@ -19,7 +20,7 @@ object distSrcAddressManagerMod {
       * The listen addresses will be used by the libp2p transports to listen for new connections,
       * while the announce addresses will be used for the peer addresses' to other peers in the network.
       */
-    def this(components: Components, init: AddressManagerInit) = this()
+    def this(components: DefaultAddressManagerComponents, init: AddressManagerInit) = this()
     
     /**
       * Add peer observed addresses
@@ -32,6 +33,13 @@ object distSrcAddressManagerMod {
     /* private */ val announceFilter: Any = js.native
     
     /* private */ val components: Any = js.native
+    
+    /**
+      * Add peer observed addresses
+      * Signal that we have confidence an observed multiaddr is publicly dialable -
+      * this will make it appear in the output of getAddresses()
+      */
+    def confirmObservedAddr(addr: Multiaddr_): Unit = js.native
     
     def getAddresses(): js.Array[Multiaddr_] = js.native
     
@@ -53,6 +61,12 @@ object distSrcAddressManagerMod {
     /* private */ val listen: Any = js.native
     
     /* private */ val observed: Any = js.native
+    
+    /**
+      * Signal that we do not have confidence an observed multiaddr is publicly dialable -
+      * this will remove it from the output of getObservedAddrs()
+      */
+    def removeObservedAddr(addr: Multiaddr_): Unit = js.native
   }
   
   type AddressFilter = js.Function1[/* addrs */ js.Array[Multiaddr_], js.Array[Multiaddr_]]
@@ -106,6 +120,27 @@ object distSrcAddressManagerMod {
       inline def setNoAnnounceUndefined: Self = StObject.set(x, "noAnnounce", js.undefined)
       
       inline def setNoAnnounceVarargs(value: String*): Self = StObject.set(x, "noAnnounce", js.Array(value*))
+    }
+  }
+  
+  trait DefaultAddressManagerComponents extends StObject {
+    
+    var peerId: PeerId
+    
+    var transportManager: TransportManager
+  }
+  object DefaultAddressManagerComponents {
+    
+    inline def apply(peerId: PeerId, transportManager: TransportManager): DefaultAddressManagerComponents = {
+      val __obj = js.Dynamic.literal(peerId = peerId.asInstanceOf[js.Any], transportManager = transportManager.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DefaultAddressManagerComponents]
+    }
+    
+    extension [Self <: DefaultAddressManagerComponents](x: Self) {
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setTransportManager(value: TransportManager): Self = StObject.set(x, "transportManager", value.asInstanceOf[js.Any])
     }
   }
 }

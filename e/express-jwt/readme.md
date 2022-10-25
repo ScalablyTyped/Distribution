@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-jwt
 
-Typings are for version 7.7.5
+Typings are for version 7.7.7
 
 ## Library description:
 JWT authentication middleware.

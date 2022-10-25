@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__crypto
 
-Typings are for version 1.0.4
+Typings are for version 1.0.7
 
 ## Library description:
 Crypto primitives for libp2p

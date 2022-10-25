@@ -1,7 +1,5 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfaceDht.mod.DHTRecord
 import typings.libp2pInterfaceDht.mod.DialingPeerEvent
 import typings.libp2pInterfaceDht.mod.PeerResponseEvent
@@ -17,6 +15,7 @@ import typings.libp2pInterfaces.mod.AbortOptions
 import typings.libp2pKadDht.distSrcNetworkMod.Network
 import typings.libp2pKadDht.distSrcQueryManagerMod.QueryManager
 import typings.libp2pKadDht.distSrcRoutingTableMod.RoutingTable
+import typings.libp2pKadDht.mod.KadDHTComponents
 import typings.std.AsyncGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,10 +25,8 @@ object distSrcPeerRoutingMod {
   
   @JSImport("@libp2p/kad-dht/dist/src/peer-routing", "PeerRouting")
   @js.native
-  open class PeerRouting protected ()
-    extends StObject
-       with Initializable {
-    def this(init: PeerRoutingInit) = this()
+  open class PeerRouting protected () extends StObject {
+    def this(components: KadDHTComponents, init: PeerRoutingInit) = this()
     
     /**
       * Get a value via rpc call for the given parameters
@@ -51,7 +48,7 @@ object distSrcPeerRoutingMod {
       */
     def _verifyRecordOnline(record: DHTRecord): js.Promise[Unit] = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /**
       * Search for a peer with the given ID
@@ -108,9 +105,6 @@ object distSrcPeerRoutingMod {
         Unit, 
         Any
       ] = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /* private */ val log: Any = js.native
     

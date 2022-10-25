@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "angular__http"
-version := "7.2.16-bea647"
+version := "7.2.16-9dc633"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-e75802",
-  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-ab4d33",
-  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-6ec6c4",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-20bcca",
+  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-732c6a",
+  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-361554",
   "org.scalablytyped" %%% "angular__compiler" % "14.2.7-1a35e2",
-  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-82a076",
-  "org.scalablytyped" %%% "angular__core" % "14.2.7-9d7158",
+  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-5a4088",
+  "org.scalablytyped" %%% "angular__core" % "14.2.7-499c99",
   "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-580652",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-602e3f",
   "org.scalablytyped" %%% "babel__parser" % "7.19.6-1f26d3",
@@ -21,9 +21,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dependency-graph" % "0.11.0-efd2dc",
   "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-09f6eb",
   "org.scalablytyped" %%% "magic-string" % "0.26.7-deb100",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
-  "org.scalablytyped" %%% "re2" % "1.17.7-9b0ba5",
-  "org.scalablytyped" %%% "rxjs" % "7.5.7-d5e24c",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "re2" % "1.17.7-5ddb3b",
+  "org.scalablytyped" %%% "rxjs" % "7.5.7-dfed9b",
   "org.scalablytyped" %%% "semver" % "7.3-dt-20220811Z-1db0d4",
   "org.scalablytyped" %%% "source-map" % "0.7.4-01a3bb",
   "org.scalablytyped" %%% "std" % "4.8-837c43",

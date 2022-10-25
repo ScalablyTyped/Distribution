@@ -6,6 +6,7 @@ import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityClientMod.Ser
 import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityClientMod._ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.CreateIdentityPoolInput
 import typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.IdentityPool
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
 import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
@@ -45,6 +46,15 @@ object distTypesCommandsCreateIdentityPoolCommandMod {
     ): Handler[CreateIdentityPoolCommandInput, CreateIdentityPoolCommandOutput] = js.native
     
     /* private */ var serialize: Any = js.native
+  }
+  /* static members */
+  object CreateIdentityPoolCommand {
+    
+    @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/CreateIdentityPoolCommand", "CreateIdentityPoolCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   type CreateIdentityPoolCommandInput = CreateIdentityPoolInput

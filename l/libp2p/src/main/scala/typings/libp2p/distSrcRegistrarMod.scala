@@ -1,8 +1,10 @@
 package typings.libp2p
 
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfaceConnection.mod.Connection
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
+import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.mod.PeerProtocolsChangeData
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
@@ -24,7 +26,7 @@ object distSrcRegistrarMod {
   open class DefaultRegistrar protected ()
     extends StObject
        with Registrar {
-    def this(components: Components) = this()
+    def this(components: RegistrarComponents) = this()
     
     /**
       * Remove a disconnected peer from the record
@@ -43,5 +45,30 @@ object distSrcRegistrarMod {
     /* private */ val topologies: Any = js.native
     
     def unhandle(protocols: js.Array[String]): js.Promise[Unit] = js.native
+  }
+  
+  trait RegistrarComponents extends StObject {
+    
+    var connectionManager: ConnectionManager
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+  }
+  object RegistrarComponents {
+    
+    inline def apply(connectionManager: ConnectionManager, peerId: PeerId, peerStore: PeerStore): RegistrarComponents = {
+      val __obj = js.Dynamic.literal(connectionManager = connectionManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RegistrarComponents]
+    }
+    
+    extension [Self <: RegistrarComponents](x: Self) {
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+    }
   }
 }

@@ -1404,6 +1404,12 @@ object mod {
     
     inline def highPriority_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("high-priority")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconCodepoints.high-voltage-pole")
+    @js.native
+    def highVoltagePole: String = js.native
+    
+    inline def highVoltagePole_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("high-voltage-pole")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconCodepoints.highlight")
     @js.native
     def highlight: String = js.native
@@ -1810,6 +1816,12 @@ object mod {
     def logOut: String = js.native
     
     inline def logOut_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log-out")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconCodepoints.low-voltage-pole")
+    @js.native
+    def lowVoltagePole: String = js.native
+    
+    inline def lowVoltagePole_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("low-voltage-pole")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconCodepoints.manual")
     @js.native
@@ -2590,6 +2602,12 @@ object mod {
     def smallCross: String = js.native
     
     inline def smallCross_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small-cross")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconCodepoints.small-info-sign")
+    @js.native
+    def smallInfoSign: String = js.native
+    
+    inline def smallInfoSign_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small-info-sign")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconCodepoints.small-minus")
     @js.native
@@ -5677,6 +5695,11 @@ object mod {
     def HIGH_PRIORITY: BlueprintIcons16Id = js.native
     inline def HIGH_PRIORITY_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIGH_PRIORITY")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.HIGH_VOLTAGE_POLE")
+    @js.native
+    def HIGH_VOLTAGE_POLE: BlueprintIcons16Id = js.native
+    inline def HIGH_VOLTAGE_POLE_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIGH_VOLTAGE_POLE")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.HISTORY")
     @js.native
     def HISTORY_ : BlueprintIcons16Id = js.native
@@ -5817,6 +5840,11 @@ object mod {
     @js.native
     def HighPriority: BlueprintIcons16Id = js.native
     inline def HighPriority_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HighPriority")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.HighVoltagePole")
+    @js.native
+    def HighVoltagePole: BlueprintIcons16Id = js.native
+    inline def HighVoltagePole_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HighVoltagePole")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.Highlight")
     @js.native
@@ -6357,6 +6385,11 @@ object mod {
     def LOG_OUT: BlueprintIcons16Id = js.native
     inline def LOG_OUT_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_OUT")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.LOW_VOLTAGE_POLE")
+    @js.native
+    def LOW_VOLTAGE_POLE: BlueprintIcons16Id = js.native
+    inline def LOW_VOLTAGE_POLE_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOW_VOLTAGE_POLE")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.LabTest")
     @js.native
     def LabTest: BlueprintIcons16Id = js.native
@@ -6510,6 +6543,11 @@ object mod {
     @js.native
     def LogOut: BlueprintIcons16Id = js.native
     inline def LogOut_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogOut")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.LowVoltagePole")
+    @js.native
+    def LowVoltagePole: BlueprintIcons16Id = js.native
+    inline def LowVoltagePole_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LowVoltagePole")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.MANUALLY_ENTERED_DATA")
     @js.native
@@ -7835,6 +7873,11 @@ object mod {
     def SMALL_CROSS: BlueprintIcons16Id = js.native
     inline def SMALL_CROSS_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL_CROSS")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.SMALL_INFO_SIGN")
+    @js.native
+    def SMALL_INFO_SIGN: BlueprintIcons16Id = js.native
+    inline def SMALL_INFO_SIGN_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL_INFO_SIGN")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.SMALL_MINUS")
     @js.native
     def SMALL_MINUS: BlueprintIcons16Id = js.native
@@ -8186,6 +8229,11 @@ object mod {
     @js.native
     def SmallCross: BlueprintIcons16Id = js.native
     inline def SmallCross_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallCross")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.SmallInfoSign")
+    @js.native
+    def SmallInfoSign: BlueprintIcons16Id = js.native
+    inline def SmallInfoSign_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallInfoSign")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.SmallMinus")
     @js.native
@@ -10069,6 +10117,10 @@ object mod {
     @js.native
     val HighPriority: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.HighVoltagePole")
+    @js.native
+    val HighVoltagePole: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Highlight")
     @js.native
     val Highlight: js.Array[String] = js.native
@@ -10352,6 +10404,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.LogOut")
     @js.native
     val LogOut: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.LowVoltagePole")
+    @js.native
+    val LowVoltagePole: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Manual")
     @js.native
@@ -10912,6 +10968,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.SmallCross")
     @js.native
     val SmallCross: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.SmallInfoSign")
+    @js.native
+    val SmallInfoSign: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.SmallMinus")
     @js.native
@@ -12316,6 +12376,10 @@ object mod {
     @js.native
     val HighPriority: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.HighVoltagePole")
+    @js.native
+    val HighVoltagePole: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Highlight")
     @js.native
     val Highlight: js.Array[String] = js.native
@@ -12599,6 +12663,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.LogOut")
     @js.native
     val LogOut: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.LowVoltagePole")
+    @js.native
+    val LowVoltagePole: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Manual")
     @js.native
@@ -13159,6 +13227,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.SmallCross")
     @js.native
     val SmallCross: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.SmallInfoSign")
+    @js.native
+    val SmallInfoSign: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.SmallMinus")
     @js.native

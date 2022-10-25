@@ -12,22 +12,22 @@ trait AttemptContainerDetail extends StObject {
   var containerInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The exit code for the job attempt. A non-zero exit code is considered a failure.
+    * The exit code for the job attempt. A non-zero exit code is considered failed.
     */
   var exitCode: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The name of the CloudWatch Logs log stream associated with the container. The log group for Batch jobs is /aws/batch/job. Each container attempt receives a log stream name when they reach the RUNNING status.
+    * The name of the CloudWatch Logs log stream that's associated with the container. The log group for Batch jobs is /aws/batch/job. Each container attempt receives a log stream name when they reach the RUNNING status.
     */
   var logStreamName: js.UndefOr[String] = js.undefined
   
   /**
-    * The network interfaces associated with the job attempt.
+    * The network interfaces that are associated with the job attempt.
     */
   var networkInterfaces: js.UndefOr[NetworkInterfaceList] = js.undefined
   
   /**
-    * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
+    * A short (255 max characters) human-readable string to provide additional details for a running or stopped container.
     */
   var reason: js.UndefOr[String] = js.undefined
   

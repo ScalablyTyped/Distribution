@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__webrtc-star
 
-Typings are for version 3.0.3
+Typings are for version 5.0.3
 
 ## Library description:
 libp2p WebRTC transport that includes a discovery mechanism provided by the signalling-star

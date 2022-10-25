@@ -82,7 +82,7 @@ trait AccessKey extends StObject {
   
   var `aria-atomic`: js.UndefOr[Boolean] = js.native
   
-  var `aria-autocomplete`: js.UndefOr[none | list | `inline` | both] = js.native
+  var `aria-autocomplete`: js.UndefOr[list | none | `inline` | both] = js.native
   
   var `aria-busy`: js.UndefOr[Boolean] = js.native
   
@@ -96,7 +96,7 @@ trait AccessKey extends StObject {
   
   var `aria-controls`: js.UndefOr[String] = js.native
   
-  var `aria-current`: js.UndefOr[Boolean | time | location | page | step | date] = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
   
   var `aria-describedby`: js.UndefOr[String] = js.native
   
@@ -104,7 +104,7 @@ trait AccessKey extends StObject {
   
   var `aria-disabled`: js.UndefOr[Boolean] = js.native
   
-  var `aria-dropeffect`: js.UndefOr[none | link | move | copy | execute | popup] = js.native
+  var `aria-dropeffect`: js.UndefOr[link | none | copy | execute | move | popup] = js.native
   
   var `aria-errormessage`: js.UndefOr[String] = js.native
   
@@ -114,7 +114,7 @@ trait AccessKey extends StObject {
   
   var `aria-grabbed`: js.UndefOr[Boolean] = js.native
   
-  var `aria-haspopup`: js.UndefOr[Boolean | grid | menu | tree | dialog | listbox] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | dialog | grid | listbox | menu | tree] = js.native
   
   var `aria-hidden`: js.UndefOr[Boolean] = js.native
   
@@ -208,7 +208,7 @@ trait AccessKey extends StObject {
   
   var inlist: js.UndefOr[Any] = js.native
   
-  var inputMode: js.UndefOr[none | text | search | tel | url | email | numeric | decimal] = js.native
+  var inputMode: js.UndefOr[search | none | text | tel | url | email | numeric | decimal] = js.native
   
   var is: js.UndefOr[String] = js.native
   

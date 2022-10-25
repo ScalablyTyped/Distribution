@@ -19,5 +19,5 @@ object distSrcUtilsPersistMod {
     * @param {import('interface-blockstore').Blockstore} blockstore
     * @param {import('../types').PersistOptions} options
     */
-  inline def default(buffer: js.typedarray.Uint8Array, blockstore: Blockstore, options: PersistOptions): js.Promise[CID[Any, Double, Double, Version]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(buffer.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CID[Any, Double, Double, Version]]]
+  inline def default(buffer: js.typedarray.Uint8Array, blockstore: Blockstore, options: PersistOptions): js.Promise[CID[Any, Any, Double, Version]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(buffer.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CID[Any, Any, Double, Version]]]
 }

@@ -20,7 +20,7 @@ object distSrcDagPutMod {
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_dag.PutOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
     ], 
     js.Promise[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPut")(codecs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
     /* node */ Any, 
@@ -28,7 +28,7 @@ object distSrcDagPutMod {
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_dag.PutOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
     ], 
     js.Promise[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any
     ]
   ]]
   

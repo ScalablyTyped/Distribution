@@ -82,6 +82,97 @@ object mod {
   
   type Container = Element | Document | DocumentFragment
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactDom.reactDomStrings.script
+    - typings.reactDom.reactDomStrings.style
+  */
+  trait PreinitAs extends StObject
+  object PreinitAs {
+    
+    inline def script: typings.reactDom.reactDomStrings.script = "script".asInstanceOf[typings.reactDom.reactDomStrings.script]
+    
+    inline def style: typings.reactDom.reactDomStrings.style = "style".asInstanceOf[typings.reactDom.reactDomStrings.style]
+  }
+  
+  trait PreinitOptions extends StObject {
+    
+    var as: typings.reactDom.nextMod.reactDomAugmentingMod.PreinitAs
+    
+    var crossOrigin: js.UndefOr[String] = js.undefined
+    
+    var integrity: js.UndefOr[String] = js.undefined
+    
+    var precedence: js.UndefOr[String] = js.undefined
+  }
+  object PreinitOptions {
+    
+    inline def apply(as: typings.reactDom.nextMod.reactDomAugmentingMod.PreinitAs): PreinitOptions = {
+      val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PreinitOptions]
+    }
+    
+    extension [Self <: PreinitOptions](x: Self) {
+      
+      inline def setAs(value: typings.reactDom.nextMod.reactDomAugmentingMod.PreinitAs): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      
+      inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      
+      inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+      
+      inline def setPrecedence(value: String): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+      
+      inline def setPrecedenceUndefined: Self = StObject.set(x, "precedence", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactDom.reactDomStrings.font
+    - typings.reactDom.reactDomStrings.script
+    - typings.reactDom.reactDomStrings.style
+  */
+  trait PreloadAs extends StObject
+  object PreloadAs {
+    
+    inline def font: typings.reactDom.reactDomStrings.font = "font".asInstanceOf[typings.reactDom.reactDomStrings.font]
+    
+    inline def script: typings.reactDom.reactDomStrings.script = "script".asInstanceOf[typings.reactDom.reactDomStrings.script]
+    
+    inline def style: typings.reactDom.reactDomStrings.style = "style".asInstanceOf[typings.reactDom.reactDomStrings.style]
+  }
+  
+  trait PreloadOptions extends StObject {
+    
+    var as: typings.reactDom.nextMod.reactDomAugmentingMod.PreloadAs
+    
+    var crossOrigin: js.UndefOr[String] = js.undefined
+    
+    var integrity: js.UndefOr[String] = js.undefined
+  }
+  object PreloadOptions {
+    
+    inline def apply(as: typings.reactDom.nextMod.reactDomAugmentingMod.PreloadAs): PreloadOptions = {
+      val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PreloadOptions]
+    }
+    
+    extension [Self <: PreloadOptions](x: Self) {
+      
+      inline def setAs(value: typings.reactDom.nextMod.reactDomAugmentingMod.PreloadAs): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      
+      inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      
+      inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+    }
+  }
+  
   @js.native
   trait Renderer extends StObject {
     

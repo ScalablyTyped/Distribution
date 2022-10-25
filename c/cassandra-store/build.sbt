@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "cassandra-store"
-version := "5.0-dt-20211223Z-c1d4be"
+version := "5.0-dt-20211223Z-b94961"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cassandra-driver" % "4.6.4-738ed1",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-a77eec",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-80f63d",
-  "org.scalablytyped" %%% "express-session" % "1.17-dt-20220707Z-60072e",
+  "org.scalablytyped" %%% "cassandra-driver" % "4.6.4-dcf003",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-cbb6c3",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-035d9a",
+  "org.scalablytyped" %%% "express-session" % "1.17-dt-20220707Z-ee04c3",
   "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-5b9e43",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-c7a026",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-parallel
 
-Typings are for version 2.0.1
+Typings are for version 3.0.0
 
 ## Library description:
 Takes an (async) iterable that emits promise-returning functions, invokes them in parallel up to the concurrency limit and emits the results as they become available, optionally in the same order as the input

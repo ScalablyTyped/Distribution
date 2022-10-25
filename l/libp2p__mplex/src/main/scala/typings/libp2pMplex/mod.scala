@@ -1,7 +1,5 @@
 package typings.libp2pMplex
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfaceStreamMuxer.mod.StreamMuxerFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,21 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@libp2p/mplex", "Mplex")
+  @JSImport("@libp2p/mplex", JSImport.Namespace)
   @js.native
-  open class Mplex ()
-    extends StObject
-       with StreamMuxerFactory
-       with Initializable {
-    def this(init: MplexInit) = this()
-    
-    /* private */ val _init: Any = js.native
-    
-    /* private */ var components: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
-  }
+  val ^ : js.Any = js.native
+  
+  inline def mplex(): js.Function0[StreamMuxerFactory] = ^.asInstanceOf[js.Dynamic].applyDynamic("mplex")().asInstanceOf[js.Function0[StreamMuxerFactory]]
+  inline def mplex(init: MplexInit): js.Function0[StreamMuxerFactory] = ^.asInstanceOf[js.Dynamic].applyDynamic("mplex")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function0[StreamMuxerFactory]]
   
   trait MplexInit extends StObject {
     

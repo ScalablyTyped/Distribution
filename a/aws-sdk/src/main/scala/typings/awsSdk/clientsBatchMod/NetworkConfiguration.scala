@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetworkConfiguration extends StObject {
   
   /**
-    * Indicates whether the job should have a public IP address. For a job that is running on Fargate resources in a private subnet to send outbound traffic to the internet (for example, to pull container images), the private subnet requires a NAT gateway be attached to route requests to the internet. For more information, see Amazon ECS task networking. The default value is "DISABLED".
+    * Indicates whether the job has a public IP address. For a job that's running on Fargate resources in a private subnet to send outbound traffic to the internet (for example, to pull container images), the private subnet requires a NAT gateway be attached to route requests to the internet. For more information, see Amazon ECS task networking in the Amazon Elastic Container Service Developer Guide. The default value is "DISABLED".
     */
   var assignPublicIp: js.UndefOr[AssignPublicIp] = js.undefined
 }

@@ -1,7 +1,6 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
+import typings.interfaceDatastore.mod.Datastore
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
@@ -15,11 +14,11 @@ object distSrcProvidersMod {
   
   @JSImport("@libp2p/kad-dht/dist/src/providers", "Providers")
   @js.native
-  open class Providers ()
+  open class Providers protected ()
     extends StObject
-       with Startable
-       with Initializable {
-    def this(init: ProvidersInit) = this()
+       with Startable {
+    def this(components: ProvidersComponents) = this()
+    def this(components: ProvidersComponents, init: ProvidersInit) = this()
     
     /**
       * Check all providers if they are still valid, and if not delete them
@@ -42,15 +41,12 @@ object distSrcProvidersMod {
     
     /* private */ val cleanupInterval: Any = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /**
       * Get a list of providers for the given CID
       */
     def getProviders(cid: CID[Any, Double, Double, Version]): js.Promise[js.Array[PeerId]] = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /* CompleteClass */
     override def isStarted(): Boolean = js.native
@@ -76,6 +72,23 @@ object distSrcProvidersMod {
     override def stop(): Unit | js.Promise[Unit] = js.native
     
     /* private */ val syncQueue: Any = js.native
+  }
+  
+  trait ProvidersComponents extends StObject {
+    
+    var datastore: Datastore
+  }
+  object ProvidersComponents {
+    
+    inline def apply(datastore: Datastore): ProvidersComponents = {
+      val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProvidersComponents]
+    }
+    
+    extension [Self <: ProvidersComponents](x: Self) {
+      
+      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+    }
   }
   
   trait ProvidersInit extends StObject {

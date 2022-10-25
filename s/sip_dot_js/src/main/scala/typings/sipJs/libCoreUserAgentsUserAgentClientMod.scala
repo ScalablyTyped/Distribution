@@ -1,18 +1,18 @@
 package typings.sipJs
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.sipJs.libCoreDialogsMod.Dialog
-import typings.sipJs.libCoreExceptionsMod.TransportError
-import typings.sipJs.libCoreLogMod.Logger
-import typings.sipJs.libCoreLogMod.LoggerFactory
-import typings.sipJs.libCoreMessagesMod.IncomingResponseMessage
-import typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage
+import typings.sipJs.libCoreDialogsDialogMod.Dialog
+import typings.sipJs.libCoreExceptionsTransportErrorMod.TransportError
+import typings.sipJs.libCoreLogLoggerFactoryMod.LoggerFactory
+import typings.sipJs.libCoreLogLoggerMod.Logger
+import typings.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage
+import typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequest
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequestDelegate
-import typings.sipJs.libCoreTransactionsMod.ClientTransaction
+import typings.sipJs.libCoreTransactionsClientTransactionMod.ClientTransaction
 import typings.sipJs.libCoreTransactionsTransactionUserMod.ClientTransactionUser
 import typings.sipJs.libCoreTransportMod.Transport
-import typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore
+import typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,9 +74,6 @@ object libCoreUserAgentsUserAgentClientMod {
     /* protected */ var logger: Logger = js.native
     
     def loggerFactory: LoggerFactory = js.native
-    
-    @JSName("message")
-    var message_UserAgentClient: OutgoingRequestMessage = js.native
     
     /**
       * 8.1.3.1 Transaction Layer Errors

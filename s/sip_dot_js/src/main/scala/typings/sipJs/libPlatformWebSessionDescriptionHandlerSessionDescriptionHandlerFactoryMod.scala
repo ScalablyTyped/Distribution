@@ -1,6 +1,6 @@
 package typings.sipJs
 
-import typings.sipJs.libApiMod.Session
+import typings.sipJs.libApiSessionMod.Session
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerFactoryOptionsMod.SessionDescriptionHandlerFactoryOptions
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler
 import org.scalablytyped.runtime.StObject

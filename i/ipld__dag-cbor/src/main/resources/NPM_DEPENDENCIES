@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ipld/dag-cbor" : "7.0.3"
+      "@ipld/dag-cbor" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ipld/dag-cbor" : "7.0.3"
+      "@ipld/dag-cbor" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

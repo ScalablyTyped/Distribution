@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/peer-record" : "4.0.3"
+      "@libp2p/peer-record" : "4.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/peer-record" : "4.0.3"
+      "@libp2p/peer-record" : "4.0.4"
     }
   ],
   "compile-devDependencies" : [

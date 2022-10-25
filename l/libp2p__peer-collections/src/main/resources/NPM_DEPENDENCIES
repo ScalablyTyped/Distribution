@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/peer-collections" : "2.0.0"
+      "@libp2p/peer-collections" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/peer-collections" : "2.0.0"
+      "@libp2p/peer-collections" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

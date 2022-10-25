@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-split" : "1.0.2"
+      "it-split" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "it-split" : "1.0.2"
+      "it-split" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -3,8 +3,8 @@ package typings.ipfsHttpClient.anon
 import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
 import typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
 import typings.libp2pInterfacePeerId.mod.PeerId
-import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.multiformats.mod.CID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

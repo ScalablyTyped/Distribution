@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class PublishUserAgentClient protected ()
   extends typings.sipJs.libCoreUserAgentsMod.PublishUserAgentClient {
   def this(
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage
   ) = this()
   def this(
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage,
     delegate: OutgoingRequestDelegate
   ) = this()
 }

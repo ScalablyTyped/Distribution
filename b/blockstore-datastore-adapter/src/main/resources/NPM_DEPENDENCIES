@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "blockstore-datastore-adapter" : "3.0.1"
+      "blockstore-datastore-adapter" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "blockstore-datastore-adapter" : "3.0.1"
+      "blockstore-datastore-adapter" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

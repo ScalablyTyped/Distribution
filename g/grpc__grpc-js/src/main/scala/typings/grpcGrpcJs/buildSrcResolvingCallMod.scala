@@ -50,6 +50,8 @@ object buildSrcResolvingCallMod {
     
     /* private */ var ended: Any = js.native
     
+    /* private */ var filterStack: Any = js.native
+    
     /* private */ val filterStackFactory: Any = js.native
     
     /* CompleteClass */
@@ -73,15 +75,21 @@ object buildSrcResolvingCallMod {
     
     /* private */ var outputStatus: Any = js.native
     
+    /* private */ var pendingChildStatus: Any = js.native
+    
     /* private */ var pendingHalfClose: Any = js.native
     
     /* private */ var pendingMessage: Any = js.native
+    
+    /* private */ var readFilterPending: Any = js.native
     
     /* private */ var readPending: Any = js.native
     
     def reportResolverError(status: StatusObject): Unit = js.native
     
     /* private */ var runDeadlineTimer: Any = js.native
+    
+    /* private */ var sendMessageOnChild: Any = js.native
     
     /* CompleteClass */
     override def sendMessageWithContext(context: MessageContext, message: Buffer): Unit = js.native
@@ -98,5 +106,7 @@ object buildSrcResolvingCallMod {
     /* private */ var statusWatchers: Any = js.native
     
     /* private */ var trace: Any = js.native
+    
+    /* private */ var writeFilterPending: Any = js.native
   }
 }

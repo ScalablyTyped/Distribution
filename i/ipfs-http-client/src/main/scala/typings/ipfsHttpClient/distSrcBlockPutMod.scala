@@ -16,7 +16,7 @@ object distSrcBlockPutMod {
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_block.PutOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 
       js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any
       ]
     ]
   ] = js.native

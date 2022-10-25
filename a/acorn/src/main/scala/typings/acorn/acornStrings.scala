@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object acornStrings {
   
   @js.native
+  sealed trait Block extends StObject
+  inline def Block: Block = "Block".asInstanceOf[Block]
+  
+  @js.native
+  sealed trait Line extends StObject
+  inline def Line: Line = "Line".asInstanceOf[Line]
+  
+  @js.native
   sealed trait latest
     extends StObject
        with ecmaVersion

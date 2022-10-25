@@ -15,21 +15,21 @@ open class ReferUserAgentServer protected ()
     * @param message - Incoming REFER request message.
     */
   def this(
-    dialogOrCore: typings.sipJs.libCoreDialogsMod.SessionDialog,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
+    dialogOrCore: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
   ) = this()
   def this(
-    dialogOrCore: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
+    dialogOrCore: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
   ) = this()
   def this(
-    dialogOrCore: typings.sipJs.libCoreDialogsMod.SessionDialog,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    dialogOrCore: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     delegate: IncomingRequestDelegate
   ) = this()
   def this(
-    dialogOrCore: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    dialogOrCore: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     delegate: IncomingRequestDelegate
   ) = this()
 }

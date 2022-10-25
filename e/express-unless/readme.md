@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-unless
 
-Typings are for version 2.1.2
+Typings are for version 2.1.3
 
 ## Library description:
 Conditionally add a middleware to express with some common patterns.

@@ -1,16 +1,19 @@
 package typings.libp2p
 
 import typings.libp2p.distSrcConnectionManagerDialerDialRequestMod.DialRequest
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfaceConnection.mod.Connection
+import typings.libp2pInterfaceConnection.mod.ConnectionGater
 import typings.libp2pInterfaceConnectionManager.mod.Dialer
 import typings.libp2pInterfaceMetrics.mod.ComponentMetricsTracker
+import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`-1`
 import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`0`
 import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`1`
 import typings.libp2pInterfacePeerStore.mod.Address
 import typings.libp2pInterfacePeerStore.mod.AddressSorter
+import typings.libp2pInterfacePeerStore.mod.PeerStore
+import typings.libp2pInterfaceTransport.mod.TransportManager
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.multiformatsMultiaddr.mod.Multiaddr_
@@ -30,8 +33,8 @@ object distSrcConnectionManagerDialerMod {
     extends StObject
        with Startable
        with Dialer {
-    def this(components: Components) = this()
-    def this(components: Components, init: DialerInit) = this()
+    def this(components: DefaultDialerComponents) = this()
+    def this(components: DefaultDialerComponents, init: DialerInit) = this()
     
     /**
       * Connects to a given `peer` by dialing all of its known addresses.
@@ -100,6 +103,46 @@ object distSrcConnectionManagerDialerMod {
     /* private */ val timeout: Any = js.native
     
     var tokens: js.Array[Double] = js.native
+  }
+  
+  trait DefaultDialerComponents extends StObject {
+    
+    var connectionGater: ConnectionGater
+    
+    var metrics: js.UndefOr[Metrics] = js.undefined
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+    
+    var transportManager: TransportManager
+  }
+  object DefaultDialerComponents {
+    
+    inline def apply(
+      connectionGater: ConnectionGater,
+      peerId: PeerId,
+      peerStore: PeerStore,
+      transportManager: TransportManager
+    ): DefaultDialerComponents = {
+      val __obj = js.Dynamic.literal(connectionGater = connectionGater.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], transportManager = transportManager.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DefaultDialerComponents]
+    }
+    
+    extension [Self <: DefaultDialerComponents](x: Self) {
+      
+      inline def setConnectionGater(value: ConnectionGater): Self = StObject.set(x, "connectionGater", value.asInstanceOf[js.Any])
+      
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+      
+      inline def setTransportManager(value: TransportManager): Self = StObject.set(x, "transportManager", value.asInstanceOf[js.Any])
+    }
   }
   
   trait DialTarget extends StObject {

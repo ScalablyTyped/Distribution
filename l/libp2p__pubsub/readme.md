@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__pubsub
 
-Typings are for version 3.1.2
+Typings are for version 5.0.0
 
 ## Library description:
 libp2p pubsub base class

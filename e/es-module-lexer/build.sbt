@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "es-module-lexer"
-version := "1.0.5-cfa082"
+version := "1.1.0-f0a77b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

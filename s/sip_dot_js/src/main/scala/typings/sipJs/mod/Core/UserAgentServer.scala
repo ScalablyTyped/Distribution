@@ -12,13 +12,13 @@ open class UserAgentServer protected ()
   extends typings.sipJs.libCoreMod.UserAgentServer {
   def this(
     transactionConstructor: ServerTransactionConstructor,
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
   ) = this()
   def this(
     transactionConstructor: ServerTransactionConstructor,
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     delegate: IncomingRequestDelegate
   ) = this()
 }

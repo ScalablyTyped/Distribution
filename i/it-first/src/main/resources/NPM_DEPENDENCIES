@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-first" : "1.0.7"
+      "it-first" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "it-first" : "1.0.7"
+      "it-first" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

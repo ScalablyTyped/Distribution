@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__floodsub
 
-Typings are for version 3.0.7
+Typings are for version 5.0.0
 
 ## Library description:
 libp2p-floodsub, also known as pubsub-flood or just dumbsub, this implementation of pubsub focused on delivering an API for Publish/Subscribe, but with no CastTree Forming (it just floods the network).

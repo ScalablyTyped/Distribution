@@ -1,8 +1,8 @@
 package typings.sipJs
 
 import typings.sipJs.anon.Once
-import typings.sipJs.libCoreExceptionsMod.TransportError
-import typings.sipJs.libCoreLogMod.Logger
+import typings.sipJs.libCoreExceptionsTransportErrorMod.TransportError
+import typings.sipJs.libCoreLogLoggerMod.Logger
 import typings.sipJs.libCoreTransactionsTransactionStateMod.TransactionState
 import typings.sipJs.libCoreTransactionsTransactionUserMod.TransactionUser
 import typings.sipJs.libCoreTransportMod.Transport

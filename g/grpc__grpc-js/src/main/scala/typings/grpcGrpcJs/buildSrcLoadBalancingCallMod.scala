@@ -7,7 +7,6 @@ import typings.grpcGrpcJs.buildSrcCallInterfaceMod.MessageContext
 import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
 import typings.grpcGrpcJs.buildSrcConstantsMod.Status
 import typings.grpcGrpcJs.buildSrcDeadlineMod.Deadline
-import typings.grpcGrpcJs.buildSrcFilterStackMod.FilterStackFactory
 import typings.grpcGrpcJs.buildSrcInternalChannelMod.InternalChannel
 import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
 import typings.grpcGrpcJs.buildSrcResolverMod.CallConfig
@@ -30,7 +29,6 @@ object buildSrcLoadBalancingCallMod {
       host: String,
       credentials: CallCredentials,
       deadline: Deadline,
-      filterStackFactory: FilterStackFactory,
       callNumber: Double
     ) = this()
     
@@ -52,8 +50,6 @@ object buildSrcLoadBalancingCallMod {
     def doPick(): Unit = js.native
     
     /* private */ var ended: Any = js.native
-    
-    /* private */ var filterStack: Any = js.native
     
     /* CompleteClass */
     override def getCallNumber(): Double = js.native
@@ -82,8 +78,6 @@ object buildSrcLoadBalancingCallMod {
     
     /* private */ var pendingMessage: Any = js.native
     
-    /* private */ var readFilterPending: Any = js.native
-    
     /* private */ var readPending: Any = js.native
     
     /* CompleteClass */
@@ -96,13 +90,35 @@ object buildSrcLoadBalancingCallMod {
     
     /* CompleteClass */
     override def start(metadata: Metadata, listener: InterceptingListener): Unit = js.native
+    def start(metadata: Metadata, listener: LoadBalancingCallInterceptingListener): Unit = js.native
     
     /* CompleteClass */
     override def startRead(): Unit = js.native
     
     /* private */ var trace: Any = js.native
+  }
+  
+  trait LoadBalancingCallInterceptingListener
+    extends StObject
+       with InterceptingListener {
     
-    /* private */ var writeFilterPending: Any = js.native
+    def onReceiveStatus(status: StatusObjectWithProgress): Unit
+  }
+  object LoadBalancingCallInterceptingListener {
+    
+    inline def apply(
+      onReceiveMessage: Any => Unit,
+      onReceiveMetadata: Metadata => Unit,
+      onReceiveStatus: StatusObjectWithProgress => Unit
+    ): LoadBalancingCallInterceptingListener = {
+      val __obj = js.Dynamic.literal(onReceiveMessage = js.Any.fromFunction1(onReceiveMessage), onReceiveMetadata = js.Any.fromFunction1(onReceiveMetadata), onReceiveStatus = js.Any.fromFunction1(onReceiveStatus))
+      __obj.asInstanceOf[LoadBalancingCallInterceptingListener]
+    }
+    
+    extension [Self <: LoadBalancingCallInterceptingListener](x: Self) {
+      
+      inline def setOnReceiveStatus(value: StatusObjectWithProgress => Unit): Self = StObject.set(x, "onReceiveStatus", js.Any.fromFunction1(value))
+    }
   }
   
   /* Rewritten from type alias, can be one of: 

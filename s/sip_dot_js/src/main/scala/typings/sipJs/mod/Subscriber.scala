@@ -18,12 +18,12 @@ open class Subscriber protected ()
     */
   def this(
     userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
-    targetURI: typings.sipJs.libCoreMod.URI,
+    targetURI: typings.sipJs.libGrammarUriMod.URI,
     eventType: String
   ) = this()
   def this(
     userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
-    targetURI: typings.sipJs.libCoreMod.URI,
+    targetURI: typings.sipJs.libGrammarUriMod.URI,
     eventType: String,
     options: SubscriberOptions
   ) = this()

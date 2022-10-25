@@ -1,11 +1,11 @@
 package typings.libp2pPeerStore
 
 import typings.interfaceDatastore.keyMod.Key
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.mod.Peer
 import typings.libp2pPeerStore.anon.PartialPeer
 import typings.libp2pPeerStore.anon.ReadLock
+import typings.libp2pPeerStore.mod.PersistentPeerStoreComponents
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
@@ -16,7 +16,8 @@ object distSrcStoreMod {
   
   @JSImport("@libp2p/peer-store/dist/src/store", "PersistentStore")
   @js.native
-  open class PersistentStore () extends StObject {
+  open class PersistentStore protected () extends StObject {
+    def this(components: PersistentPeerStoreComponents) = this()
     
     def _merge(peerId: PeerId, data: PartialPeer, peer: Peer): js.Promise[Peer] = js.native
     
@@ -26,13 +27,11 @@ object distSrcStoreMod {
     
     def all(): AsyncGenerator[Peer, Unit, Any] = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     def delete(peerId: PeerId): js.Promise[Unit] = js.native
     
     def has(peerId: PeerId): js.Promise[Boolean] = js.native
-    
-    def init(components: Components): Unit = js.native
     
     def load(peerId: PeerId): js.Promise[Peer] = js.native
     

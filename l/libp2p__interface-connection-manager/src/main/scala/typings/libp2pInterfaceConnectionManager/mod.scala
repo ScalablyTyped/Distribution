@@ -1,6 +1,7 @@
 package typings.libp2pInterfaceConnectionManager
 
 import typings.libp2pInterfaceConnection.mod.Connection
+import typings.libp2pInterfaceConnection.mod.MultiaddrConnection
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaces.eventsMod.EventEmitter
 import typings.libp2pInterfaces.mod.AbortOptions
@@ -14,6 +15,19 @@ object mod {
   
   @js.native
   trait ConnectionManager extends EventEmitter[ConnectionManagerEvents] {
+    
+    /**
+      * Invoked after an incoming connection is opened but before PeerIds are
+      * exchanged, this lets the ConnectionManager check we have sufficient
+      * resources to accept the connection in which case it will return true,
+      * otherwise it will return false.
+      */
+    def acceptIncomingConnection(maConn: MultiaddrConnection): js.Promise[Boolean] = js.native
+    
+    /**
+      * Invoked after upgrading a multiaddr connection has finished
+      */
+    def afterUpgradeInbound(): Unit = js.native
     
     /**
       * Close our connections to a peer

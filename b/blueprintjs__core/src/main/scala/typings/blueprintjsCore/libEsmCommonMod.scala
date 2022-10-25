@@ -1410,7 +1410,7 @@ object libEsmCommonMod {
   
   inline def combineRefs[T](ref1: RefCallback[T], ref2: RefCallback[T]): js.Function1[/* instance */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineRefs")(ref1.asInstanceOf[js.Any], ref2.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* instance */ T | Null, Unit]]
   
-  inline def getPositionIgnoreAngles(position: Position): left | right | bottom | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[left | right | bottom | top]
+  inline def getPositionIgnoreAngles(position: Position): bottom | left | right | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[bottom | left | right | top]
   
   inline def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
   inline def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]

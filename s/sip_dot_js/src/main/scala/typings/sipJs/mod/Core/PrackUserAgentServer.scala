@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class PrackUserAgentServer protected ()
   extends typings.sipJs.libCoreMod.PrackUserAgentServer {
   def this(
-    dialog: typings.sipJs.libCoreDialogsMod.SessionDialog,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
+    dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
   ) = this()
   def this(
-    dialog: typings.sipJs.libCoreDialogsMod.SessionDialog,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    dialog: typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     delegate: IncomingRequestDelegate
   ) = this()
 }

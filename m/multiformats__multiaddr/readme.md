@@ -1,7 +1,7 @@
 
 # Scala.js typings for multiformats__multiaddr
 
-Typings are for version 11.0.1
+Typings are for version 11.0.5
 
 ## Library description:
 multiaddr implementation (binary + string representation of network addresses)

@@ -1,73 +1,43 @@
 package typings.libp2pMdns
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
+import typings.libp2pInterfaceAddressManager.mod.AddressManager
 import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery
-import typings.libp2pInterfacePeerInfo.mod.PeerInfo
-import typings.multicastDns.mod.QueryPacket
-import typings.multicastDns.mod.ResponsePacket
-import typings.std.CustomEvent
+import typings.libp2pInterfacePeerId.mod.PeerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@libp2p/mdns", "MulticastDNS")
+  @JSImport("@libp2p/mdns", JSImport.Namespace)
   @js.native
-  open class MulticastDNS ()
-    extends PeerDiscovery
-       with Initializable {
-    def this(options: MulticastDNSOptions) = this()
+  val ^ : js.Any = js.native
+  
+  inline def mdns(): js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery] = ^.asInstanceOf[js.Dynamic].applyDynamic("mdns")().asInstanceOf[js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery]]
+  inline def mdns(init: MulticastDNSInit): js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery] = ^.asInstanceOf[js.Dynamic].applyDynamic("mdns")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery]]
+  
+  trait MulticastDNSComponents extends StObject {
     
-    /* private */ val _goMdns: Any = js.native
+    var addressManager: AddressManager
     
-    def _onMdnsQuery(event: QueryPacket): Unit = js.native
+    var peerId: PeerId
+  }
+  object MulticastDNSComponents {
     
-    def _onMdnsResponse(event: ResponsePacket): Unit = js.native
+    inline def apply(addressManager: AddressManager, peerId: PeerId): MulticastDNSComponents = {
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MulticastDNSComponents]
+    }
     
-    def _onPeer(evt: CustomEvent[PeerInfo]): Unit = js.native
-    
-    /* private */ var _queryInterval: Any = js.native
-    
-    /* private */ val broadcast: Any = js.native
-    
-    /* private */ var components: Any = js.native
-    
-    var get: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
-    
-    /* private */ val interval: Any = js.native
-    
-    def isStarted(): Boolean = js.native
-    
-    var mdns: js.UndefOr[typings.multicastDns.mod.MulticastDNS] = js.native
-    
-    /* private */ val port: Any = js.native
-    
-    /* private */ val serviceTag: Any = js.native
-    
-    /**
-      * Start sending queries to the LAN.
-      *
-      * @returns {void}
-      */
-    def start(): js.Promise[Unit] = js.native
-    
-    /**
-      * Stop sending queries to the LAN.
-      *
-      * @returns {Promise}
-      */
-    def stop(): js.Promise[Unit] = js.native
-    
-    @JSName(js.Symbol.toStringTag)
-    var toStringTag_MulticastDNS: js.Function0[String] = js.native
+    extension [Self <: MulticastDNSComponents](x: Self) {
+      
+      inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    }
   }
   
-  trait MulticastDNSOptions extends StObject {
+  trait MulticastDNSInit extends StObject {
     
     var broadcast: js.UndefOr[Boolean] = js.undefined
     
@@ -83,14 +53,14 @@ object mod {
     
     var serviceTag: js.UndefOr[String] = js.undefined
   }
-  object MulticastDNSOptions {
+  object MulticastDNSInit {
     
-    inline def apply(): MulticastDNSOptions = {
+    inline def apply(): MulticastDNSInit = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[MulticastDNSOptions]
+      __obj.asInstanceOf[MulticastDNSInit]
     }
     
-    extension [Self <: MulticastDNSOptions](x: Self) {
+    extension [Self <: MulticastDNSInit](x: Self) {
       
       inline def setBroadcast(value: Boolean): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
       

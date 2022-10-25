@@ -1,12 +1,12 @@
 package typings.libp2p
 
+import typings.libp2p.distSrcComponentsMod.Components
 import typings.libp2p.distSrcFetchMod.FetchService
 import typings.libp2p.distSrcIdentifyMod.IdentifyService
 import typings.libp2p.distSrcPingMod.PingService
 import typings.libp2p.mod.Libp2p
 import typings.libp2p.mod.Libp2pInit
 import typings.libp2p.mod.Libp2pOptions
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfacePeerInfo.mod.PeerInfo
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.std.CustomEvent
@@ -32,8 +32,6 @@ object distSrcLibp2pMod {
     var fetchService: FetchService = js.native
     
     var identifyService: js.UndefOr[IdentifyService] = js.native
-    
-    /* private */ val initializables: Any = js.native
     
     /* CompleteClass */
     override def isStarted(): Boolean = js.native

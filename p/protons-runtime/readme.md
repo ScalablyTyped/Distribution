@@ -1,7 +1,7 @@
 
 # Scala.js typings for protons-runtime
 
-Typings are for version 3.1.0
+Typings are for version 4.0.1
 
 ## Library description:
 Shared code to make your bundle smaller when running protons in your app

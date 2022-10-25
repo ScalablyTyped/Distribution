@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-repo-migrations" : "13.0.3"
+      "ipfs-repo-migrations" : "14.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-repo-migrations" : "13.0.3"
+      "ipfs-repo-migrations" : "14.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -2,8 +2,8 @@ package typings.ipfsHttpClient
 
 import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
 import typings.ipfsHttpClient.distSrcLibConfigureMod.Factory
-import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.multiformats.mod.CID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

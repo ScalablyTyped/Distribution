@@ -1,7 +1,9 @@
 package typings.libp2p
 
 import typings.achingbrainNatPortMapper.mod.NatAPI
-import typings.libp2pComponents.mod.Components
+import typings.libp2pInterfaceAddressManager.mod.AddressManager
+import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfaceTransport.mod.TransportManager
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +16,7 @@ object distSrcNatManagerMod {
   open class NatManager protected ()
     extends StObject
        with Startable {
-    def this(components: Components, init: NatManagerInit) = this()
+    def this(components: NatManagerComponents, init: NatManagerInit) = this()
     
     def _getClient(): js.Promise[NatAPI] = js.native
     
@@ -66,6 +68,31 @@ object distSrcNatManagerMod {
     override def stop(): Unit | js.Promise[Unit] = js.native
     
     /* private */ val ttl: Any = js.native
+  }
+  
+  trait NatManagerComponents extends StObject {
+    
+    var addressManager: AddressManager
+    
+    var peerId: PeerId
+    
+    var transportManager: TransportManager
+  }
+  object NatManagerComponents {
+    
+    inline def apply(addressManager: AddressManager, peerId: PeerId, transportManager: TransportManager): NatManagerComponents = {
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], transportManager = transportManager.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NatManagerComponents]
+    }
+    
+    extension [Self <: NatManagerComponents](x: Self) {
+      
+      inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setTransportManager(value: TransportManager): Self = StObject.set(x, "transportManager", value.asInstanceOf[js.Any])
+    }
   }
   
   trait NatManagerInit extends StObject {

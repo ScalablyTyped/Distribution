@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLocationObjectStorageResponse extends StObject {
   
   /**
-    * The access key (for example, a user name) required to authenticate with the object storage server.
+    * The access key (for example, a user name) required to authenticate with the object storage system.
     */
   var AccessKey: js.UndefOr[ObjectStorageAccessKey] = js.undefined
   
@@ -32,12 +32,17 @@ trait DescribeLocationObjectStorageResponse extends StObject {
   var LocationUri: js.UndefOr[typings.awsSdk.clientsDatasyncMod.LocationUri] = js.undefined
   
   /**
+    * The self-signed certificate that DataSync uses to securely authenticate with your object storage system.
+    */
+  var ServerCertificate: js.UndefOr[ObjectStorageCertificate] = js.undefined
+  
+  /**
     * The port that your object storage server accepts inbound network traffic on (for example, port 443).
     */
   var ServerPort: js.UndefOr[ObjectStorageServerPort] = js.undefined
   
   /**
-    * The protocol that your object storage server uses to communicate.
+    * The protocol that your object storage system uses to communicate.
     */
   var ServerProtocol: js.UndefOr[ObjectStorageServerProtocol] = js.undefined
 }
@@ -71,6 +76,10 @@ object DescribeLocationObjectStorageResponse {
     inline def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
     inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
+    
+    inline def setServerCertificate(value: ObjectStorageCertificate): Self = StObject.set(x, "ServerCertificate", value.asInstanceOf[js.Any])
+    
+    inline def setServerCertificateUndefined: Self = StObject.set(x, "ServerCertificate", js.undefined)
     
     inline def setServerPort(value: ObjectStorageServerPort): Self = StObject.set(x, "ServerPort", value.asInstanceOf[js.Any])
     

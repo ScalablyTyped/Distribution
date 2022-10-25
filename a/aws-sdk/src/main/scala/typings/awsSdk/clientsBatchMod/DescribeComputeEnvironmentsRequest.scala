@@ -17,7 +17,7 @@ trait DescribeComputeEnvironmentsRequest extends StObject {
   var maxResults: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The nextToken value returned from a previous paginated DescribeComputeEnvironments request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value. This value is null when there are no more results to return.  This token should be treated as an opaque identifier that's only used to retrieve the next items in a list and not for other programmatic purposes. 
+    * The nextToken value returned from a previous paginated DescribeComputeEnvironments request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value. This value is null when there are no more results to return.  Treat this token as an opaque identifier that's only used to retrieve the next items in a list and not for other programmatic purposes. 
     */
   var nextToken: js.UndefOr[String] = js.undefined
 }

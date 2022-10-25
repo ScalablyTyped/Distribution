@@ -11,6 +11,7 @@ object mod {
   @js.native
   open class PeerList ()
     extends typings.libp2pPeerCollections.distSrcListMod.PeerList {
+    def this(list: js.Iterable[PeerId]) = this()
     def this(list: typings.libp2pPeerCollections.distSrcListMod.PeerList) = this()
   }
   

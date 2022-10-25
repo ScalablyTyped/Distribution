@@ -1,15 +1,15 @@
 package typings.sipJs
 
 import typings.sipJs.libCoreDialogsDialogStateMod.DialogState
-import typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
-import typings.sipJs.libCoreMessagesMod.IncomingResponseMessage
-import typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
+import typings.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage
+import typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage
 import typings.sipJs.libCoreSessionSessionDelegateMod.SessionDelegate
 import typings.sipJs.libCoreSubscriptionSubscriptionDelegateMod.SubscriptionDelegate
 import typings.sipJs.libCoreSubscriptionSubscriptionMod.SubscriptionState
-import typings.sipJs.libCoreTransactionsMod.InviteClientTransaction
-import typings.sipJs.libCoreTransactionsMod.InviteServerTransaction
-import typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore
+import typings.sipJs.libCoreTransactionsInviteClientTransactionMod.InviteClientTransaction
+import typings.sipJs.libCoreTransactionsInviteServerTransactionMod.InviteServerTransaction
+import typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,14 +83,14 @@ object libCoreDialogsMod {
       subscriptionEvent: String,
       subscriptionExpires: Double,
       subscriptionState: SubscriptionState,
-      core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+      core: UserAgentCore,
       state: DialogState
     ) = this()
     def this(
       subscriptionEvent: String,
       subscriptionExpires: Double,
       subscriptionState: SubscriptionState,
-      core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+      core: UserAgentCore,
       state: DialogState,
       delegate: SubscriptionDelegate
     ) = this()

@@ -3,8 +3,8 @@ package typings.ipfsUnixfsExporter
 import typings.interfaceBlockstore.mod.Blockstore
 import typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
 import typings.ipfsUnixfsExporter.distSrcTypesMod.ResolveResult
-import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.multiformats.mod.CID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

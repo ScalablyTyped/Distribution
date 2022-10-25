@@ -18,10 +18,10 @@ object mod {
   @js.native
   val code: `112` = js.native
   
-  inline def createLink(name: String, size: Double, cid: CID[Any, Double, Double, Version]): typings.ipldDagPb.typesSrcUtilMod.PBLink = (^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[typings.ipldDagPb.typesSrcUtilMod.PBLink]
+  inline def createLink(name: String, size: Double, cid: CID[Any, Double, Double, Version]): typings.ipldDagPb.distSrcUtilMod.PBLink = (^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[typings.ipldDagPb.distSrcUtilMod.PBLink]
   
-  inline def createNode(data: js.typedarray.Uint8Array): typings.ipldDagPb.typesSrcUtilMod.PBNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(data.asInstanceOf[js.Any]).asInstanceOf[typings.ipldDagPb.typesSrcUtilMod.PBNode]
-  inline def createNode(data: js.typedarray.Uint8Array, links: js.Array[typings.ipldDagPb.typesSrcInterfaceMod.PBLink]): typings.ipldDagPb.typesSrcUtilMod.PBNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(data.asInstanceOf[js.Any], links.asInstanceOf[js.Any])).asInstanceOf[typings.ipldDagPb.typesSrcUtilMod.PBNode]
+  inline def createNode(data: js.typedarray.Uint8Array): typings.ipldDagPb.distSrcUtilMod.PBNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(data.asInstanceOf[js.Any]).asInstanceOf[typings.ipldDagPb.distSrcUtilMod.PBNode]
+  inline def createNode(data: js.typedarray.Uint8Array, links: js.Array[typings.ipldDagPb.distSrcInterfaceMod.PBLink]): typings.ipldDagPb.distSrcUtilMod.PBNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(data.asInstanceOf[js.Any], links.asInstanceOf[js.Any])).asInstanceOf[typings.ipldDagPb.distSrcUtilMod.PBNode]
   
   inline def decode(bytes: ByteView[PBNode]): PBNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(bytes.asInstanceOf[js.Any]).asInstanceOf[PBNode]
   
@@ -31,13 +31,13 @@ object mod {
   @js.native
   val name: `dag-pb` = js.native
   
-  inline def prepare(node: Any): typings.ipldDagPb.typesSrcUtilMod.PBNode = ^.asInstanceOf[js.Dynamic].applyDynamic("prepare")(node.asInstanceOf[js.Any]).asInstanceOf[typings.ipldDagPb.typesSrcUtilMod.PBNode]
+  inline def prepare(node: Any): typings.ipldDagPb.distSrcUtilMod.PBNode = ^.asInstanceOf[js.Dynamic].applyDynamic("prepare")(node.asInstanceOf[js.Any]).asInstanceOf[typings.ipldDagPb.distSrcUtilMod.PBNode]
   
-  inline def validate(node: typings.ipldDagPb.typesSrcUtilMod.PBNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validate(node: typings.ipldDagPb.distSrcUtilMod.PBNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type ByteView[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.ByteView<T> */ Any
   
-  type PBLink = typings.ipldDagPb.typesSrcInterfaceMod.PBLink
+  type PBLink = typings.ipldDagPb.distSrcInterfaceMod.PBLink
   
-  type PBNode = typings.ipldDagPb.typesSrcInterfaceMod.PBNode
+  type PBNode = typings.ipldDagPb.distSrcInterfaceMod.PBNode
 }

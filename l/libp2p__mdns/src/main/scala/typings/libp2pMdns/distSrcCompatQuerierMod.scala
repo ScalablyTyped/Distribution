@@ -1,8 +1,8 @@
 package typings.libp2pMdns
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery
+import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.multicastDns.mod.ResponsePacket
 import typings.node.dgramMod.RemoteInfo
 import org.scalablytyped.runtime.StObject
@@ -13,10 +13,11 @@ object distSrcCompatQuerierMod {
   
   @JSImport("@libp2p/mdns/dist/src/compat/querier", "Querier")
   @js.native
-  open class Querier ()
+  open class Querier protected ()
     extends PeerDiscovery
-       with Initializable {
-    def this(init: QuerierInit) = this()
+       with Startable {
+    def this(components: QuerierComponents) = this()
+    def this(components: QuerierComponents, init: QuerierInit) = this()
     
     /* private */ var _handle: Any = js.native
     
@@ -24,18 +25,28 @@ object distSrcCompatQuerierMod {
     
     def _onResponse(event: ResponsePacket, info: RemoteInfo): Unit = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     var get: Any = js.native
     
     /* CompleteClass */
-    override def init(components: Components): Unit = js.native
+    override def isStarted(): Boolean = js.native
     
-    def isStarted(): Boolean = js.native
+    /**
+      * This method will be invoked to start the component.
+      *
+      * It should not assume that any other components have been started.
+      */
+    /* CompleteClass */
+    override def start(): Unit | js.Promise[Unit] = js.native
     
-    def start(): Unit = js.native
-    
-    def stop(): js.Promise[Unit] = js.native
+    /**
+      * This method will be invoked to stop the component.
+      *
+      * It should not assume any other components are running when it is called.
+      */
+    /* CompleteClass */
+    override def stop(): Unit | js.Promise[Unit] = js.native
     
     @JSName(js.Symbol.toStringTag)
     var toStringTag_Querier: js.Function0[String] = js.native
@@ -55,6 +66,23 @@ object distSrcCompatQuerierMod {
     extension [Self <: Handle](x: Self) {
       
       inline def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait QuerierComponents extends StObject {
+    
+    var peerId: PeerId
+  }
+  object QuerierComponents {
+    
+    inline def apply(peerId: PeerId): QuerierComponents = {
+      val __obj = js.Dynamic.literal(peerId = peerId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QuerierComponents]
+    }
+    
+    extension [Self <: QuerierComponents](x: Self) {
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     }
   }
   

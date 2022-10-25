@@ -14,7 +14,7 @@ object libServicesScrollStateMod {
   open class ScrollState protected ()
     extends StObject
        with IScrollState {
-    def this(hasTotalToScroll: TotalToScroll) = this()
+    def this(param0: TotalToScroll) = this()
     
     def isTriggeredScroll(totalToScroll: Any, isScrollingDown: Boolean): Boolean = js.native
     

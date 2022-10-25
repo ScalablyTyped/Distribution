@@ -1,5 +1,6 @@
 package typings.libp2pWebsockets
 
+import typings.itWs.distSrcDuplexMod.DuplexWebSocket
 import typings.libp2pInterfaceConnection.mod.MultiaddrConnection
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.multiformatsMultiaddr.mod.Multiaddr_
@@ -13,15 +14,8 @@ object distSrcSocketToConnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def socketToMaConn(
-    stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DuplexWebSocket */ Any,
-    remoteAddr: Multiaddr_
-  ): MultiaddrConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("socketToMaConn")(stream.asInstanceOf[js.Any], remoteAddr.asInstanceOf[js.Any])).asInstanceOf[MultiaddrConnection]
-  inline def socketToMaConn(
-    stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DuplexWebSocket */ Any,
-    remoteAddr: Multiaddr_,
-    options: SocketToConnOptions
-  ): MultiaddrConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("socketToMaConn")(stream.asInstanceOf[js.Any], remoteAddr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MultiaddrConnection]
+  inline def socketToMaConn(stream: DuplexWebSocket, remoteAddr: Multiaddr_): MultiaddrConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("socketToMaConn")(stream.asInstanceOf[js.Any], remoteAddr.asInstanceOf[js.Any])).asInstanceOf[MultiaddrConnection]
+  inline def socketToMaConn(stream: DuplexWebSocket, remoteAddr: Multiaddr_, options: SocketToConnOptions): MultiaddrConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("socketToMaConn")(stream.asInstanceOf[js.Any], remoteAddr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MultiaddrConnection]
   
   trait SocketToConnOptions
     extends StObject

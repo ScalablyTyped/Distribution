@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-validate" : "29.2.1"
+      "jest-validate" : "29.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-validate" : "29.2.1"
+      "jest-validate" : "29.2.2"
     }
   ],
   "compile-devDependencies" : [

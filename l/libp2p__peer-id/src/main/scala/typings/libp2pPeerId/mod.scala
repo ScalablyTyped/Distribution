@@ -1,6 +1,8 @@
 package typings.libp2pPeerId
 
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pPeerId.libp2pPeerIdInts.`114`
+import typings.libp2pPeerId.libp2pPeerIdInts.`1`
 import typings.libp2pPeerId.libp2pPeerIdStrings.Ed25519
 import typings.libp2pPeerId.libp2pPeerIdStrings.RSA
 import typings.libp2pPeerId.libp2pPeerIdStrings.secp256k1
@@ -55,7 +57,7 @@ object mod {
     
     def toBytes(): js.typedarray.Uint8Array = js.native
     
-    def toCID(): CID[Any, Double, Double, Version] = js.native
+    def toCID(): CID[Any, `114`, Double, `1`] = js.native
     
     /**
       * Returns Multiaddr as a JSON encoded object

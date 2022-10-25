@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hamt-sharding"
-version := "3.0.1-0ca65b"
+version := "3.0.2-046fe2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

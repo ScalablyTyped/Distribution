@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/mplex" : "5.2.4"
+      "@libp2p/mplex" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/mplex" : "5.2.4"
+      "@libp2p/mplex" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

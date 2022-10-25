@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-instantsearch"
-version := "6.10-dt-20220105Z-7921bb"
+version := "6.10-dt-20220105Z-6dd1c5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,10 +18,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "algoliasearch-helper" % "3.11.1-f3e218",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
-  "org.scalablytyped" %%% "react-instantsearch-core" % "6.26-dt-20220720Z-7a6ffd",
-  "org.scalablytyped" %%% "react-instantsearch-dom" % "6.12-dt-20220426Z-894958",
-  "org.scalablytyped" %%% "react-instantsearch-native" % "6.3-dt-20211202Z-f15caa",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
+  "org.scalablytyped" %%% "react-instantsearch-core" % "6.26-dt-20220720Z-f04954",
+  "org.scalablytyped" %%% "react-instantsearch-dom" % "6.12-dt-20220426Z-8e9a88",
+  "org.scalablytyped" %%% "react-instantsearch-native" % "6.3-dt-20211202Z-81eee7",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

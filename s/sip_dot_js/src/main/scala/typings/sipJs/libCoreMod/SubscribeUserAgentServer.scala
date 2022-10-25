@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class SubscribeUserAgentServer protected ()
   extends typings.sipJs.libCoreUserAgentsMod.SubscribeUserAgentServer {
   def this(
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
   ) = this()
   def this(
-    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    core: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     delegate: IncomingRequestDelegate
   ) = this()
 }

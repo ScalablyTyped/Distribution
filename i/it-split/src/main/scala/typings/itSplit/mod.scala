@@ -1,7 +1,5 @@
 package typings.itSplit
 
-import typings.itSplit.anon.Delimiter
-import typings.node.bufferMod.global.Buffer
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
@@ -10,19 +8,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(source: js.Iterable[js.typedarray.Uint8Array]): AsyncGenerator[Buffer, Unit, Any] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[Buffer, Unit, Any]]
-  inline def apply(source: js.Iterable[js.typedarray.Uint8Array], options: Delimiter): AsyncGenerator[Buffer, Unit, Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[Buffer, Unit, Any]]
-  /**
-    * Splits Uint8Arrays emitted by an (async) iterable by a delimiter
-    *
-    * @param {AsyncIterable<Uint8Array>|Iterable<Uint8Array>} source
-    * @param {object} [options]
-    * @param {Uint8Array} [options.delimiter]
-    */
-  inline def apply(source: AsyncIterable[js.typedarray.Uint8Array]): AsyncGenerator[Buffer, Unit, Any] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[Buffer, Unit, Any]]
-  inline def apply(source: AsyncIterable[js.typedarray.Uint8Array], options: Delimiter): AsyncGenerator[Buffer, Unit, Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[Buffer, Unit, Any]]
-  
   @JSImport("it-split", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(source: js.Iterable[js.typedarray.Uint8Array]): AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]]
+  inline def default(source: js.Iterable[js.typedarray.Uint8Array], options: SplitOptions): AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]]
+  inline def default(source: AsyncIterable[js.typedarray.Uint8Array]): AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]]
+  inline def default(source: AsyncIterable[js.typedarray.Uint8Array], options: SplitOptions): AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]]
+  
+  trait SplitOptions extends StObject {
+    
+    var delimiter: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+  }
+  object SplitOptions {
+    
+    inline def apply(): SplitOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitOptions]
+    }
+    
+    extension [Self <: SplitOptions](x: Self) {
+      
+      inline def setDelimiter(value: js.typedarray.Uint8Array): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    }
+  }
 }

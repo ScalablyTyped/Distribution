@@ -13,10 +13,10 @@ import typings.chainsafeLibp2pGossipsub.distSrcMetricsMod.ToSendGroupCount
 import typings.chainsafeLibp2pGossipsub.distSrcMetricsMod.TopicLabel
 import typings.chainsafeLibp2pGossipsub.distSrcMetricsMod.TopicStrToLabel
 import typings.chainsafeLibp2pGossipsub.distSrcScorePeerScoreThresholdsMod.PeerScoreThresholds
-import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MessageAcceptance
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MessageStatus
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.PeerIdStr
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.RejectReasonObj
+import typings.libp2pInterfacePubsub.mod.TopicValidatorResult
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -46,6 +46,8 @@ trait AsyncValidationMcacheHit extends StObject {
   
   /** Total count of late msg delivery total by topic */
   var duplicateMsgLateDelivery: Gauge[TopicTopicLabel]
+  
+  var fastMsgIdCacheCollision: Gauge[LabelsGeneric]
   
   /** The time it takes to complete one iteration of the heartbeat. */
   var heartbeatDuration: Histogram[LabelsGeneric]
@@ -83,6 +85,8 @@ trait AsyncValidationMcacheHit extends StObject {
   
   /** Total received IWANT messages by topic */
   var iwantRcvMsgids: Gauge[TopicTopicLabel]
+  
+  var mcacheNotValidatedCount: Gauge[LabelsGeneric]
   
   /** Current mcache msg count */
   var mcacheSize: Gauge[LabelsGeneric]
@@ -179,7 +183,10 @@ trait AsyncValidationMcacheHit extends StObject {
     count: Double
   ): Unit
   
-  def onReportValidation(topicStr: typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr, acceptance: MessageAcceptance): Unit
+  def onReportValidation(
+    topicStr: typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr,
+    acceptance: TopicValidatorResult
+  ): Unit
   
   def onReportValidationMcacheHit(hit: Boolean): Unit
   
@@ -294,6 +301,7 @@ object AsyncValidationMcacheHit {
     cacheSize: Gauge[Cache],
     duplicateMsgDeliveryDelay: Histogram[LabelsGeneric],
     duplicateMsgLateDelivery: Gauge[TopicTopicLabel],
+    fastMsgIdCacheCollision: Gauge[LabelsGeneric],
     heartbeatDuration: Histogram[LabelsGeneric],
     heartbeatSkipped: Gauge[LabelsGeneric],
     ihaveRcvIgnored: Gauge[ReasonIHaveIgnoreReason],
@@ -306,6 +314,7 @@ object AsyncValidationMcacheHit {
     iwantPromiseStarted: Gauge[LabelsGeneric],
     iwantRcvDonthaveMsgids: Gauge[LabelsGeneric],
     iwantRcvMsgids: Gauge[TopicTopicLabel],
+    mcacheNotValidatedCount: Gauge[LabelsGeneric],
     mcacheSize: Gauge[LabelsGeneric],
     meshPeerChurnEvents: Gauge[Topic],
     meshPeerCounts: Gauge[TopicStr],
@@ -331,7 +340,7 @@ object AsyncValidationMcacheHit {
     onMsgRecvResult: (typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr, MessageStatus) => Unit,
     onPublishMsg: (typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr, ToSendGroupCount, Double, Double) => Unit,
     onRemoveFromMesh: (typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr, ChurnReason, Double) => Unit,
-    onReportValidation: (typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr, MessageAcceptance) => Unit,
+    onReportValidation: (typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr, TopicValidatorResult) => Unit,
     onReportValidationMcacheHit: Boolean => Unit,
     onRpcRecv: (IRPC, Double) => Unit,
     onRpcSent: (IRPC, Double) => Unit,
@@ -373,7 +382,7 @@ object AsyncValidationMcacheHit {
     topicStrToLabel: TopicStrToLabel,
     topicSubscriptionStatus: Gauge[TopicStr]
   ): AsyncValidationMcacheHit = {
-    val __obj = js.Dynamic.literal(asyncValidationMcacheHit = asyncValidationMcacheHit.asInstanceOf[js.Any], asyncValidationResult = asyncValidationResult.asInstanceOf[js.Any], behaviourPenalty = behaviourPenalty.asInstanceOf[js.Any], cacheSize = cacheSize.asInstanceOf[js.Any], duplicateMsgDeliveryDelay = duplicateMsgDeliveryDelay.asInstanceOf[js.Any], duplicateMsgLateDelivery = duplicateMsgLateDelivery.asInstanceOf[js.Any], heartbeatDuration = heartbeatDuration.asInstanceOf[js.Any], heartbeatSkipped = heartbeatSkipped.asInstanceOf[js.Any], ihaveRcvIgnored = ihaveRcvIgnored.asInstanceOf[js.Any], ihaveRcvMsgids = ihaveRcvMsgids.asInstanceOf[js.Any], ihaveRcvNotSeenMsgids = ihaveRcvNotSeenMsgids.asInstanceOf[js.Any], iwantPromiseBroken = iwantPromiseBroken.asInstanceOf[js.Any], iwantPromiseDeliveryTime = iwantPromiseDeliveryTime.asInstanceOf[js.Any], iwantPromiseResolved = iwantPromiseResolved.asInstanceOf[js.Any], iwantPromiseResolvedPeers = iwantPromiseResolvedPeers.asInstanceOf[js.Any], iwantPromiseStarted = iwantPromiseStarted.asInstanceOf[js.Any], iwantRcvDonthaveMsgids = iwantRcvDonthaveMsgids.asInstanceOf[js.Any], iwantRcvMsgids = iwantRcvMsgids.asInstanceOf[js.Any], mcacheSize = mcacheSize.asInstanceOf[js.Any], meshPeerChurnEvents = meshPeerChurnEvents.asInstanceOf[js.Any], meshPeerCounts = meshPeerCounts.asInstanceOf[js.Any], meshPeerInclusionEvents = meshPeerInclusionEvents.asInstanceOf[js.Any], msgForwardCount = msgForwardCount.asInstanceOf[js.Any], msgForwardPeers = msgForwardPeers.asInstanceOf[js.Any], msgPublishBytes = msgPublishBytes.asInstanceOf[js.Any], msgPublishCount = msgPublishCount.asInstanceOf[js.Any], msgPublishPeers = msgPublishPeers.asInstanceOf[js.Any], msgPublishPeersByGroup = msgPublishPeersByGroup.asInstanceOf[js.Any], msgReceivedInvalid = msgReceivedInvalid.asInstanceOf[js.Any], msgReceivedPreValidation = msgReceivedPreValidation.asInstanceOf[js.Any], msgReceivedStatus = msgReceivedStatus.asInstanceOf[js.Any], onAddToMesh = js.Any.fromFunction3(onAddToMesh), onDuplicateMsgDelivery = js.Any.fromFunction3(onDuplicateMsgDelivery), onForwardMsg = js.Any.fromFunction2(onForwardMsg), onIhaveRcv = js.Any.fromFunction3(onIhaveRcv), onIwantRcv = js.Any.fromFunction2(onIwantRcv), onJoin = js.Any.fromFunction1(onJoin), onLeave = js.Any.fromFunction1(onLeave), onMsgRecvInvalid = js.Any.fromFunction2(onMsgRecvInvalid), onMsgRecvPreValidation = js.Any.fromFunction1(onMsgRecvPreValidation), onMsgRecvResult = js.Any.fromFunction2(onMsgRecvResult), onPublishMsg = js.Any.fromFunction4(onPublishMsg), onRemoveFromMesh = js.Any.fromFunction3(onRemoveFromMesh), onReportValidation = js.Any.fromFunction2(onReportValidation), onReportValidationMcacheHit = js.Any.fromFunction1(onReportValidationMcacheHit), onRpcRecv = js.Any.fromFunction2(onRpcRecv), onRpcSent = js.Any.fromFunction2(onRpcSent), onScorePenalty = js.Any.fromFunction1(onScorePenalty), peersByScoreThreshold = peersByScoreThreshold.asInstanceOf[js.Any], peersPerProtocol = peersPerProtocol.asInstanceOf[js.Any], protocolsEnabled = protocolsEnabled.asInstanceOf[js.Any], registerScorePerMesh = js.Any.fromFunction2(registerScorePerMesh), registerScoreWeights = js.Any.fromFunction1(registerScoreWeights), registerScores = js.Any.fromFunction2(registerScores), rpcRecvBytes = rpcRecvBytes.asInstanceOf[js.Any], rpcRecvControl = rpcRecvControl.asInstanceOf[js.Any], rpcRecvCount = rpcRecvCount.asInstanceOf[js.Any], rpcRecvGraft = rpcRecvGraft.asInstanceOf[js.Any], rpcRecvIHave = rpcRecvIHave.asInstanceOf[js.Any], rpcRecvIWant = rpcRecvIWant.asInstanceOf[js.Any], rpcRecvMessage = rpcRecvMessage.asInstanceOf[js.Any], rpcRecvNotAccepted = rpcRecvNotAccepted.asInstanceOf[js.Any], rpcRecvPrune = rpcRecvPrune.asInstanceOf[js.Any], rpcRecvSubscription = rpcRecvSubscription.asInstanceOf[js.Any], rpcSentBytes = rpcSentBytes.asInstanceOf[js.Any], rpcSentControl = rpcSentControl.asInstanceOf[js.Any], rpcSentCount = rpcSentCount.asInstanceOf[js.Any], rpcSentGraft = rpcSentGraft.asInstanceOf[js.Any], rpcSentIHave = rpcSentIHave.asInstanceOf[js.Any], rpcSentIWant = rpcSentIWant.asInstanceOf[js.Any], rpcSentMessage = rpcSentMessage.asInstanceOf[js.Any], rpcSentPrune = rpcSentPrune.asInstanceOf[js.Any], rpcSentSubscription = rpcSentSubscription.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], scoreCachedDelta = scoreCachedDelta.asInstanceOf[js.Any], scoreFnCalls = scoreFnCalls.asInstanceOf[js.Any], scoreFnRuns = scoreFnRuns.asInstanceOf[js.Any], scorePerMesh = scorePerMesh.asInstanceOf[js.Any], scoreWeights = scoreWeights.asInstanceOf[js.Any], scoringPenalties = scoringPenalties.asInstanceOf[js.Any], toTopic = js.Any.fromFunction1(toTopic), topicPeersCount = topicPeersCount.asInstanceOf[js.Any], topicStrToLabel = topicStrToLabel.asInstanceOf[js.Any], topicSubscriptionStatus = topicSubscriptionStatus.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidationMcacheHit = asyncValidationMcacheHit.asInstanceOf[js.Any], asyncValidationResult = asyncValidationResult.asInstanceOf[js.Any], behaviourPenalty = behaviourPenalty.asInstanceOf[js.Any], cacheSize = cacheSize.asInstanceOf[js.Any], duplicateMsgDeliveryDelay = duplicateMsgDeliveryDelay.asInstanceOf[js.Any], duplicateMsgLateDelivery = duplicateMsgLateDelivery.asInstanceOf[js.Any], fastMsgIdCacheCollision = fastMsgIdCacheCollision.asInstanceOf[js.Any], heartbeatDuration = heartbeatDuration.asInstanceOf[js.Any], heartbeatSkipped = heartbeatSkipped.asInstanceOf[js.Any], ihaveRcvIgnored = ihaveRcvIgnored.asInstanceOf[js.Any], ihaveRcvMsgids = ihaveRcvMsgids.asInstanceOf[js.Any], ihaveRcvNotSeenMsgids = ihaveRcvNotSeenMsgids.asInstanceOf[js.Any], iwantPromiseBroken = iwantPromiseBroken.asInstanceOf[js.Any], iwantPromiseDeliveryTime = iwantPromiseDeliveryTime.asInstanceOf[js.Any], iwantPromiseResolved = iwantPromiseResolved.asInstanceOf[js.Any], iwantPromiseResolvedPeers = iwantPromiseResolvedPeers.asInstanceOf[js.Any], iwantPromiseStarted = iwantPromiseStarted.asInstanceOf[js.Any], iwantRcvDonthaveMsgids = iwantRcvDonthaveMsgids.asInstanceOf[js.Any], iwantRcvMsgids = iwantRcvMsgids.asInstanceOf[js.Any], mcacheNotValidatedCount = mcacheNotValidatedCount.asInstanceOf[js.Any], mcacheSize = mcacheSize.asInstanceOf[js.Any], meshPeerChurnEvents = meshPeerChurnEvents.asInstanceOf[js.Any], meshPeerCounts = meshPeerCounts.asInstanceOf[js.Any], meshPeerInclusionEvents = meshPeerInclusionEvents.asInstanceOf[js.Any], msgForwardCount = msgForwardCount.asInstanceOf[js.Any], msgForwardPeers = msgForwardPeers.asInstanceOf[js.Any], msgPublishBytes = msgPublishBytes.asInstanceOf[js.Any], msgPublishCount = msgPublishCount.asInstanceOf[js.Any], msgPublishPeers = msgPublishPeers.asInstanceOf[js.Any], msgPublishPeersByGroup = msgPublishPeersByGroup.asInstanceOf[js.Any], msgReceivedInvalid = msgReceivedInvalid.asInstanceOf[js.Any], msgReceivedPreValidation = msgReceivedPreValidation.asInstanceOf[js.Any], msgReceivedStatus = msgReceivedStatus.asInstanceOf[js.Any], onAddToMesh = js.Any.fromFunction3(onAddToMesh), onDuplicateMsgDelivery = js.Any.fromFunction3(onDuplicateMsgDelivery), onForwardMsg = js.Any.fromFunction2(onForwardMsg), onIhaveRcv = js.Any.fromFunction3(onIhaveRcv), onIwantRcv = js.Any.fromFunction2(onIwantRcv), onJoin = js.Any.fromFunction1(onJoin), onLeave = js.Any.fromFunction1(onLeave), onMsgRecvInvalid = js.Any.fromFunction2(onMsgRecvInvalid), onMsgRecvPreValidation = js.Any.fromFunction1(onMsgRecvPreValidation), onMsgRecvResult = js.Any.fromFunction2(onMsgRecvResult), onPublishMsg = js.Any.fromFunction4(onPublishMsg), onRemoveFromMesh = js.Any.fromFunction3(onRemoveFromMesh), onReportValidation = js.Any.fromFunction2(onReportValidation), onReportValidationMcacheHit = js.Any.fromFunction1(onReportValidationMcacheHit), onRpcRecv = js.Any.fromFunction2(onRpcRecv), onRpcSent = js.Any.fromFunction2(onRpcSent), onScorePenalty = js.Any.fromFunction1(onScorePenalty), peersByScoreThreshold = peersByScoreThreshold.asInstanceOf[js.Any], peersPerProtocol = peersPerProtocol.asInstanceOf[js.Any], protocolsEnabled = protocolsEnabled.asInstanceOf[js.Any], registerScorePerMesh = js.Any.fromFunction2(registerScorePerMesh), registerScoreWeights = js.Any.fromFunction1(registerScoreWeights), registerScores = js.Any.fromFunction2(registerScores), rpcRecvBytes = rpcRecvBytes.asInstanceOf[js.Any], rpcRecvControl = rpcRecvControl.asInstanceOf[js.Any], rpcRecvCount = rpcRecvCount.asInstanceOf[js.Any], rpcRecvGraft = rpcRecvGraft.asInstanceOf[js.Any], rpcRecvIHave = rpcRecvIHave.asInstanceOf[js.Any], rpcRecvIWant = rpcRecvIWant.asInstanceOf[js.Any], rpcRecvMessage = rpcRecvMessage.asInstanceOf[js.Any], rpcRecvNotAccepted = rpcRecvNotAccepted.asInstanceOf[js.Any], rpcRecvPrune = rpcRecvPrune.asInstanceOf[js.Any], rpcRecvSubscription = rpcRecvSubscription.asInstanceOf[js.Any], rpcSentBytes = rpcSentBytes.asInstanceOf[js.Any], rpcSentControl = rpcSentControl.asInstanceOf[js.Any], rpcSentCount = rpcSentCount.asInstanceOf[js.Any], rpcSentGraft = rpcSentGraft.asInstanceOf[js.Any], rpcSentIHave = rpcSentIHave.asInstanceOf[js.Any], rpcSentIWant = rpcSentIWant.asInstanceOf[js.Any], rpcSentMessage = rpcSentMessage.asInstanceOf[js.Any], rpcSentPrune = rpcSentPrune.asInstanceOf[js.Any], rpcSentSubscription = rpcSentSubscription.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], scoreCachedDelta = scoreCachedDelta.asInstanceOf[js.Any], scoreFnCalls = scoreFnCalls.asInstanceOf[js.Any], scoreFnRuns = scoreFnRuns.asInstanceOf[js.Any], scorePerMesh = scorePerMesh.asInstanceOf[js.Any], scoreWeights = scoreWeights.asInstanceOf[js.Any], scoringPenalties = scoringPenalties.asInstanceOf[js.Any], toTopic = js.Any.fromFunction1(toTopic), topicPeersCount = topicPeersCount.asInstanceOf[js.Any], topicStrToLabel = topicStrToLabel.asInstanceOf[js.Any], topicSubscriptionStatus = topicSubscriptionStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncValidationMcacheHit]
   }
   
@@ -390,6 +399,8 @@ object AsyncValidationMcacheHit {
     inline def setDuplicateMsgDeliveryDelay(value: Histogram[LabelsGeneric]): Self = StObject.set(x, "duplicateMsgDeliveryDelay", value.asInstanceOf[js.Any])
     
     inline def setDuplicateMsgLateDelivery(value: Gauge[TopicTopicLabel]): Self = StObject.set(x, "duplicateMsgLateDelivery", value.asInstanceOf[js.Any])
+    
+    inline def setFastMsgIdCacheCollision(value: Gauge[LabelsGeneric]): Self = StObject.set(x, "fastMsgIdCacheCollision", value.asInstanceOf[js.Any])
     
     inline def setHeartbeatDuration(value: Histogram[LabelsGeneric]): Self = StObject.set(x, "heartbeatDuration", value.asInstanceOf[js.Any])
     
@@ -414,6 +425,8 @@ object AsyncValidationMcacheHit {
     inline def setIwantRcvDonthaveMsgids(value: Gauge[LabelsGeneric]): Self = StObject.set(x, "iwantRcvDonthaveMsgids", value.asInstanceOf[js.Any])
     
     inline def setIwantRcvMsgids(value: Gauge[TopicTopicLabel]): Self = StObject.set(x, "iwantRcvMsgids", value.asInstanceOf[js.Any])
+    
+    inline def setMcacheNotValidatedCount(value: Gauge[LabelsGeneric]): Self = StObject.set(x, "mcacheNotValidatedCount", value.asInstanceOf[js.Any])
     
     inline def setMcacheSize(value: Gauge[LabelsGeneric]): Self = StObject.set(x, "mcacheSize", value.asInstanceOf[js.Any])
     
@@ -469,7 +482,7 @@ object AsyncValidationMcacheHit {
     
     inline def setOnRemoveFromMesh(value: (typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr, ChurnReason, Double) => Unit): Self = StObject.set(x, "onRemoveFromMesh", js.Any.fromFunction3(value))
     
-    inline def setOnReportValidation(value: (typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr, MessageAcceptance) => Unit): Self = StObject.set(x, "onReportValidation", js.Any.fromFunction2(value))
+    inline def setOnReportValidation(value: (typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr, TopicValidatorResult) => Unit): Self = StObject.set(x, "onReportValidation", js.Any.fromFunction2(value))
     
     inline def setOnReportValidationMcacheHit(value: Boolean => Unit): Self = StObject.set(x, "onReportValidationMcacheHit", js.Any.fromFunction1(value))
     

@@ -15,21 +15,21 @@ open class NotifyUserAgentServer protected ()
     * @param message - Incoming NOTIFY request message.
     */
   def this(
-    dialogOrCore: typings.sipJs.libCoreDialogsMod.Dialog,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
+    dialogOrCore: typings.sipJs.libCoreDialogsDialogMod.Dialog,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
   ) = this()
   def this(
-    dialogOrCore: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
+    dialogOrCore: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
   ) = this()
   def this(
-    dialogOrCore: typings.sipJs.libCoreDialogsMod.Dialog,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    dialogOrCore: typings.sipJs.libCoreDialogsDialogMod.Dialog,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     delegate: IncomingRequestDelegate
   ) = this()
   def this(
-    dialogOrCore: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    dialogOrCore: typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     delegate: IncomingRequestDelegate
   ) = this()
 }

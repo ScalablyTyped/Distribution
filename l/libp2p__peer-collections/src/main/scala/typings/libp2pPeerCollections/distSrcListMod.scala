@@ -11,6 +11,7 @@ object distSrcListMod {
   @JSImport("@libp2p/peer-collections/dist/src/list", "PeerList")
   @js.native
   open class PeerList () extends StObject {
+    def this(list: js.Iterable[PeerId]) = this()
     def this(list: PeerList) = this()
     
     def concat(list: PeerList): PeerList = js.native

@@ -23,11 +23,11 @@ object libServicesPositionResolverMod {
   
   inline def calculatePointsForWindow(height: Double, element: ElementRef[Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePointsForWindow")(height.asInstanceOf[js.Any], element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
   
-  inline def createResolver(hasWindowElementAxis: IPositionElements): IResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(hasWindowElementAxis.asInstanceOf[js.Any]).asInstanceOf[IResolver]
+  inline def createResolver(param0: IPositionElements): IResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(param0.asInstanceOf[js.Any]).asInstanceOf[IResolver]
   
   inline def createResolverWithContainer(resolver: Any, windowElement: ContainerRef): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolverWithContainer")(resolver.asInstanceOf[js.Any], windowElement.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def extractHeightForElement(hasContainerIsWindowAxis: IResolver): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHeightForElement")(hasContainerIsWindowAxis.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def extractHeightForElement(param0: IResolver): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHeightForElement")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def extractHeightPropKeys(axis: AxisResolver): ClientHeightKey = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHeightPropKeys")(axis.asInstanceOf[js.Any]).asInstanceOf[ClientHeightKey]
   

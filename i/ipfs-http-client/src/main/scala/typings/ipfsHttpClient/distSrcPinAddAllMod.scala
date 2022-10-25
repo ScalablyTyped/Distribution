@@ -20,7 +20,7 @@ object distSrcPinAddAllMod {
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_pin.AddAllOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 
       AsyncIterable[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any
       ]
     ]
   ] = js.native

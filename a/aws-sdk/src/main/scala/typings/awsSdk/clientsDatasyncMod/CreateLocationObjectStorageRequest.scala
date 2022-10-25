@@ -27,6 +27,11 @@ trait CreateLocationObjectStorageRequest extends StObject {
   var SecretKey: js.UndefOr[ObjectStorageSecretKey] = js.undefined
   
   /**
+    * Specifies a certificate to authenticate with an object storage system that uses a private or self-signed certificate authority (CA). You must specify a Base64-encoded .pem file (for example, file:///home/user/.ssh/storage_sys_certificate.pem). The certificate can be up to 32768 bytes (before Base64 encoding). To use this parameter, configure ServerProtocol to HTTPS.
+    */
+  var ServerCertificate: js.UndefOr[ObjectStorageCertificate] = js.undefined
+  
+  /**
     * Specifies the domain name or IP address of the object storage server. A DataSync agent uses this hostname to mount the object storage server in a network.
     */
   var ServerHostname: typings.awsSdk.clientsDatasyncMod.ServerHostname
@@ -73,6 +78,10 @@ object CreateLocationObjectStorageRequest {
     inline def setSecretKey(value: ObjectStorageSecretKey): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
     
     inline def setSecretKeyUndefined: Self = StObject.set(x, "SecretKey", js.undefined)
+    
+    inline def setServerCertificate(value: ObjectStorageCertificate): Self = StObject.set(x, "ServerCertificate", value.asInstanceOf[js.Any])
+    
+    inline def setServerCertificateUndefined: Self = StObject.set(x, "ServerCertificate", js.undefined)
     
     inline def setServerHostname(value: ServerHostname): Self = StObject.set(x, "ServerHostname", value.asInstanceOf[js.Any])
     

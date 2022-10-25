@@ -10,8 +10,8 @@ import typings.sipJs.libApiUserAgentDelegateMod.UserAgentDelegate
 import typings.sipJs.libApiUserAgentOptionsMod.LogConnector
 import typings.sipJs.libApiUserAgentOptionsMod.LogLevel
 import typings.sipJs.libApiUserAgentOptionsMod.SIPExtension
-import typings.sipJs.libCoreMod.Logger
-import typings.sipJs.libCoreMod.URI
+import typings.sipJs.libCoreLogLoggerMod.Logger
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,10 +27,6 @@ trait RequiredUserAgentOptions extends StObject {
   
   var authorizationUsername: String
   
-  var autoStart: Boolean
-  
-  var autoStop: Boolean
-  
   var contactName: String
   
   var contactParams: StringDictionary[String]
@@ -41,11 +37,17 @@ trait RequiredUserAgentOptions extends StObject {
   
   var forceRport: Boolean
   
+  var gracefulShutdown: Boolean
+  
   var hackAllowUnregisteredOptionTags: Boolean
   
   var hackIpInContact: Boolean | String
   
   var hackViaTcp: Boolean
+  
+  var instanceId: String
+  
+  var instanceIdAlwaysAdded: Boolean
   
   var logBuiltinEnabled: Boolean
   
@@ -101,16 +103,17 @@ object RequiredUserAgentOptions {
     authorizationHa1: String,
     authorizationPassword: String,
     authorizationUsername: String,
-    autoStart: Boolean,
-    autoStop: Boolean,
     contactName: String,
     contactParams: StringDictionary[String],
     delegate: UserAgentDelegate,
     displayName: String,
     forceRport: Boolean,
+    gracefulShutdown: Boolean,
     hackAllowUnregisteredOptionTags: Boolean,
     hackIpInContact: Boolean | String,
     hackViaTcp: Boolean,
+    instanceId: String,
+    instanceIdAlwaysAdded: Boolean,
     logBuiltinEnabled: Boolean,
     logConfiguration: Boolean,
     logConnector: (/* level */ LogLevel, /* category */ String, /* label */ js.UndefOr[String], /* content */ String) => Unit,
@@ -132,7 +135,7 @@ object RequiredUserAgentOptions {
     userAgentString: String,
     viaHost: String
   ): RequiredUserAgentOptions = {
-    val __obj = js.Dynamic.literal(allowLegacyNotifications = allowLegacyNotifications.asInstanceOf[js.Any], authorizationHa1 = authorizationHa1.asInstanceOf[js.Any], authorizationPassword = authorizationPassword.asInstanceOf[js.Any], authorizationUsername = authorizationUsername.asInstanceOf[js.Any], autoStart = autoStart.asInstanceOf[js.Any], autoStop = autoStop.asInstanceOf[js.Any], contactName = contactName.asInstanceOf[js.Any], contactParams = contactParams.asInstanceOf[js.Any], delegate = delegate.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], forceRport = forceRport.asInstanceOf[js.Any], hackAllowUnregisteredOptionTags = hackAllowUnregisteredOptionTags.asInstanceOf[js.Any], hackIpInContact = hackIpInContact.asInstanceOf[js.Any], hackViaTcp = hackViaTcp.asInstanceOf[js.Any], logBuiltinEnabled = logBuiltinEnabled.asInstanceOf[js.Any], logConfiguration = logConfiguration.asInstanceOf[js.Any], logConnector = js.Any.fromFunction4(logConnector), logLevel = logLevel.asInstanceOf[js.Any], noAnswerTimeout = noAnswerTimeout.asInstanceOf[js.Any], preloadedRouteSet = preloadedRouteSet.asInstanceOf[js.Any], reconnectionAttempts = reconnectionAttempts.asInstanceOf[js.Any], reconnectionDelay = reconnectionDelay.asInstanceOf[js.Any], sendInitialProvisionalResponse = sendInitialProvisionalResponse.asInstanceOf[js.Any], sessionDescriptionHandlerFactory = js.Any.fromFunction2(sessionDescriptionHandlerFactory), sessionDescriptionHandlerFactoryOptions = sessionDescriptionHandlerFactoryOptions.asInstanceOf[js.Any], sipExtension100rel = sipExtension100rel.asInstanceOf[js.Any], sipExtensionExtraSupported = sipExtensionExtraSupported.asInstanceOf[js.Any], sipExtensionReplaces = sipExtensionReplaces.asInstanceOf[js.Any], sipjsId = sipjsId.asInstanceOf[js.Any], transportConstructor = transportConstructor.asInstanceOf[js.Any], transportOptions = transportOptions.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], userAgentString = userAgentString.asInstanceOf[js.Any], viaHost = viaHost.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allowLegacyNotifications = allowLegacyNotifications.asInstanceOf[js.Any], authorizationHa1 = authorizationHa1.asInstanceOf[js.Any], authorizationPassword = authorizationPassword.asInstanceOf[js.Any], authorizationUsername = authorizationUsername.asInstanceOf[js.Any], contactName = contactName.asInstanceOf[js.Any], contactParams = contactParams.asInstanceOf[js.Any], delegate = delegate.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], forceRport = forceRport.asInstanceOf[js.Any], gracefulShutdown = gracefulShutdown.asInstanceOf[js.Any], hackAllowUnregisteredOptionTags = hackAllowUnregisteredOptionTags.asInstanceOf[js.Any], hackIpInContact = hackIpInContact.asInstanceOf[js.Any], hackViaTcp = hackViaTcp.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], instanceIdAlwaysAdded = instanceIdAlwaysAdded.asInstanceOf[js.Any], logBuiltinEnabled = logBuiltinEnabled.asInstanceOf[js.Any], logConfiguration = logConfiguration.asInstanceOf[js.Any], logConnector = js.Any.fromFunction4(logConnector), logLevel = logLevel.asInstanceOf[js.Any], noAnswerTimeout = noAnswerTimeout.asInstanceOf[js.Any], preloadedRouteSet = preloadedRouteSet.asInstanceOf[js.Any], reconnectionAttempts = reconnectionAttempts.asInstanceOf[js.Any], reconnectionDelay = reconnectionDelay.asInstanceOf[js.Any], sendInitialProvisionalResponse = sendInitialProvisionalResponse.asInstanceOf[js.Any], sessionDescriptionHandlerFactory = js.Any.fromFunction2(sessionDescriptionHandlerFactory), sessionDescriptionHandlerFactoryOptions = sessionDescriptionHandlerFactoryOptions.asInstanceOf[js.Any], sipExtension100rel = sipExtension100rel.asInstanceOf[js.Any], sipExtensionExtraSupported = sipExtensionExtraSupported.asInstanceOf[js.Any], sipExtensionReplaces = sipExtensionReplaces.asInstanceOf[js.Any], sipjsId = sipjsId.asInstanceOf[js.Any], transportConstructor = transportConstructor.asInstanceOf[js.Any], transportOptions = transportOptions.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], userAgentString = userAgentString.asInstanceOf[js.Any], viaHost = viaHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredUserAgentOptions]
   }
   
@@ -146,10 +149,6 @@ object RequiredUserAgentOptions {
     
     inline def setAuthorizationUsername(value: String): Self = StObject.set(x, "authorizationUsername", value.asInstanceOf[js.Any])
     
-    inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
-    
-    inline def setAutoStop(value: Boolean): Self = StObject.set(x, "autoStop", value.asInstanceOf[js.Any])
-    
     inline def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
     
     inline def setContactParams(value: StringDictionary[String]): Self = StObject.set(x, "contactParams", value.asInstanceOf[js.Any])
@@ -160,11 +159,17 @@ object RequiredUserAgentOptions {
     
     inline def setForceRport(value: Boolean): Self = StObject.set(x, "forceRport", value.asInstanceOf[js.Any])
     
+    inline def setGracefulShutdown(value: Boolean): Self = StObject.set(x, "gracefulShutdown", value.asInstanceOf[js.Any])
+    
     inline def setHackAllowUnregisteredOptionTags(value: Boolean): Self = StObject.set(x, "hackAllowUnregisteredOptionTags", value.asInstanceOf[js.Any])
     
     inline def setHackIpInContact(value: Boolean | String): Self = StObject.set(x, "hackIpInContact", value.asInstanceOf[js.Any])
     
     inline def setHackViaTcp(value: Boolean): Self = StObject.set(x, "hackViaTcp", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceIdAlwaysAdded(value: Boolean): Self = StObject.set(x, "instanceIdAlwaysAdded", value.asInstanceOf[js.Any])
     
     inline def setLogBuiltinEnabled(value: Boolean): Self = StObject.set(x, "logBuiltinEnabled", value.asInstanceOf[js.Any])
     

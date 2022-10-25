@@ -1,7 +1,7 @@
 
 # Scala.js typings for chainsafe__libp2p-gossipsub
 
-Typings are for version 4.1.1
+Typings are for version 5.0.0
 
 ## Library description:
 A typescript implementation of gossipsub

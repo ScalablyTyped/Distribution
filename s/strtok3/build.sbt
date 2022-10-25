@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "strtok3"
-version := "7.0.0-dc434f"
+version := "7.0.0-55a1f2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "peek-readable" % "5.0.0-ed0d8f",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tokenizer__token" % "0.3.0-b0cd93")

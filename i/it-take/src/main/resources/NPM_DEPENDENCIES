@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-take" : "1.0.2"
+      "it-take" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "it-take" : "1.0.2"
+      "it-take" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for uint8arraylist
 
-Typings are for version 2.3.2
+Typings are for version 2.3.3
 
 ## Library description:
 Append and consume bytes using only no-copy operations

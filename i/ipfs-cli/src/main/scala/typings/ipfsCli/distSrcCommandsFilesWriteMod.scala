@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.ipfsCli.distSrcTypesMod.Context
 import typings.ipfsCli.ipfsCliStrings.balanced
 import typings.ipfsCli.ipfsCliStrings.trickle
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.yargs.mod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ object distSrcCommandsFilesWriteMod extends Shortcut {
     * @property {boolean} Argv.truncate
     * @property {boolean} Argv.rawLeaves
     * @property {boolean} Argv.reduceSingleLeafToSelf
-    * @property {import('multiformats/cid').CIDVersion} Argv.cidVersion
+    * @property {import('multiformats/cid').Version} Argv.cidVersion
     * @property {string} Argv.hashAlg
     * @property {boolean} Argv.parents
     * @property {'trickle' | 'balanced'} Argv.strategy
@@ -39,7 +40,7 @@ object distSrcCommandsFilesWriteMod extends Shortcut {
   
   trait Argv extends StObject {
     
-    var cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
+    var cidVersion: Version
     
     var create: Boolean
     
@@ -78,7 +79,7 @@ object distSrcCommandsFilesWriteMod extends Shortcut {
   object Argv {
     
     inline def apply(
-      cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any,
+      cidVersion: Version,
       create: Boolean,
       ctx: Context,
       flush: Boolean,
@@ -103,9 +104,7 @@ object distSrcCommandsFilesWriteMod extends Shortcut {
     
     extension [Self <: Argv](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       

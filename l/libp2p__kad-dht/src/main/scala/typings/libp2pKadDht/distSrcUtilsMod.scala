@@ -23,6 +23,9 @@ object distSrcUtilsMod {
   
   inline def createPutRecord(key: js.typedarray.Uint8Array, value: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createPutRecord")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
+  inline def debounce(callback: js.Function0[Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def debounce(callback: js.Function0[Unit], wait: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(callback.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
   inline def fromPublicKeyKey(key: js.typedarray.Uint8Array): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKeyKey")(key.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
   inline def isIPNSKey(key: js.typedarray.Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPNSKey")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]

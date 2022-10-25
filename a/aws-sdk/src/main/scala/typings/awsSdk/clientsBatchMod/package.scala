@@ -107,6 +107,26 @@ type EFSTransitEncryption = _EFSTransitEncryption | java.lang.String
 
 type Ec2ConfigurationList = js.Array[Ec2Configuration]
 
+type EksAttemptContainerDetails = js.Array[EksAttemptContainerDetail]
+
+type EksAttemptDetails = js.Array[EksAttemptDetail]
+
+type EksContainerDetails = js.Array[EksContainerDetail]
+
+type EksContainerEnvironmentVariables = js.Array[EksContainerEnvironmentVariable]
+
+type EksContainerOverrideList = js.Array[EksContainerOverride]
+
+type EksContainerVolumeMounts = js.Array[EksContainerVolumeMount]
+
+type EksContainers = js.Array[EksContainer]
+
+type EksLimits = StringDictionary[Quantity]
+
+type EksRequests = StringDictionary[Quantity]
+
+type EksVolumes = js.Array[EksVolume]
+
 type EnvironmentVariables = js.Array[KeyValuePair]
 
 type EvaluateOnExitList = js.Array[EvaluateOnExit]
@@ -168,6 +188,8 @@ type JobStatus = _JobStatus | java.lang.String
 
 type JobSummaryList = js.Array[JobSummary]
 
+type KubernetesVersion = java.lang.String
+
 type ListJobsFilterList = js.Array[KeyValuesPair]
 
 type LogConfigurationOptionsMap = StringDictionary[String]
@@ -194,6 +216,13 @@ type NodePropertyOverrides = js.Array[NodePropertyOverride]
 
 type NodeRangeProperties = js.Array[NodeRangeProperty]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ECS
+  - typings.awsSdk.awsSdkStrings.EKS
+  - java.lang.String
+*/
+type OrchestrationType = _OrchestrationType | java.lang.String
+
 type ParametersMap = StringDictionary[String]
 
 /* Rewritten from type alias, can be one of: 
@@ -204,6 +233,8 @@ type ParametersMap = StringDictionary[String]
 type PlatformCapability = _PlatformCapability | java.lang.String
 
 type PlatformCapabilityList = js.Array[PlatformCapability]
+
+type Quantity = java.lang.String
 
 type ResourceRequirements = js.Array[ResourceRequirement]
 

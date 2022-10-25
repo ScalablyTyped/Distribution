@@ -1,15 +1,15 @@
 package typings.sipJs
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.sipJs.libCoreLogMod.Logger
-import typings.sipJs.libCoreLogMod.LoggerFactory
+import typings.sipJs.libCoreLogLoggerFactoryMod.LoggerFactory
+import typings.sipJs.libCoreLogLoggerMod.Logger
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
 import typings.sipJs.libCoreMessagesIncomingRequestMod.IncomingRequest
 import typings.sipJs.libCoreMessagesIncomingRequestMod.IncomingRequestDelegate
-import typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
-import typings.sipJs.libCoreTransactionsMod.ServerTransaction
+import typings.sipJs.libCoreTransactionsServerTransactionMod.ServerTransaction
 import typings.sipJs.libCoreTransactionsTransactionUserMod.ServerTransactionUser
 import typings.sipJs.libCoreTransportMod.Transport
-import typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore
+import typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,9 +46,6 @@ object libCoreUserAgentsUserAgentServerMod {
     /* protected */ var logger: Logger = js.native
     
     def loggerFactory: LoggerFactory = js.native
-    
-    @JSName("message")
-    var message_UserAgentServer: IncomingRequestMessage = js.native
     
     /* protected */ def progressable: Boolean = js.native
     

@@ -1,14 +1,17 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
+import typings.interfaceDatastore.mod.Datastore
+import typings.libp2pInterfaceAddressManager.mod.AddressManager
 import typings.libp2pInterfaceDht.mod.Validators
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaceRegistrar.mod.IncomingStreamData
 import typings.libp2pKadDht.distSrcMessageMod.Message
 import typings.libp2pKadDht.distSrcPeerRoutingMod.PeerRouting
 import typings.libp2pKadDht.distSrcProvidersMod.Providers
 import typings.libp2pKadDht.distSrcRoutingTableMod.RoutingTable
+import typings.libp2pKadDht.distSrcRpcHandlersFindNodeMod.FindNodeHandlerComponents
+import typings.libp2pKadDht.distSrcRpcHandlersGetValueMod.GetValueHandlerComponents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +20,8 @@ object distSrcRpcMod {
   
   @JSImport("@libp2p/kad-dht/dist/src/rpc", "RPC")
   @js.native
-  open class RPC protected ()
-    extends StObject
-       with Initializable {
-    def this(init: RPCInit) = this()
+  open class RPC protected () extends StObject {
+    def this(components: RPCComponents, init: RPCInit) = this()
     
     /**
       * Process incoming DHT messages
@@ -28,9 +29,6 @@ object distSrcRpcMod {
     def handleMessage(peerId: PeerId, msg: Message): js.Promise[js.UndefOr[Message]] = js.native
     
     /* private */ val handlers: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /* private */ val log: Any = js.native
     
@@ -42,22 +40,34 @@ object distSrcRpcMod {
     /* private */ val routingTable: Any = js.native
   }
   
-  trait DHTMessageHandler
-    extends StObject
-       with Initializable {
+  trait DHTMessageHandler extends StObject {
     
     def handle(peerId: PeerId, msg: Message): js.Promise[js.UndefOr[Message]]
   }
   object DHTMessageHandler {
     
-    inline def apply(handle: (PeerId, Message) => js.Promise[js.UndefOr[Message]], init: Components => Unit): DHTMessageHandler = {
-      val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle), init = js.Any.fromFunction1(init))
+    inline def apply(handle: (PeerId, Message) => js.Promise[js.UndefOr[Message]]): DHTMessageHandler = {
+      val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
       __obj.asInstanceOf[DHTMessageHandler]
     }
     
     extension [Self <: DHTMessageHandler](x: Self) {
       
       inline def setHandle(value: (PeerId, Message) => js.Promise[js.UndefOr[Message]]): Self = StObject.set(x, "handle", js.Any.fromFunction2(value))
+    }
+  }
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.libp2pKadDht.distSrcRpcHandlersGetProvidersMod.GetProvidersHandlerComponents because var conflicts: peerStore. Inlined 
+  - typings.libp2pKadDht.distSrcRpcHandlersPutValueMod.PutValueHandlerComponents because var conflicts: datastore. Inlined  */ trait RPCComponents
+    extends StObject
+       with GetValueHandlerComponents
+       with FindNodeHandlerComponents
+  object RPCComponents {
+    
+    inline def apply(addressManager: AddressManager, datastore: Datastore, peerId: PeerId, peerStore: PeerStore): RPCComponents = {
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RPCComponents]
     }
   }
   

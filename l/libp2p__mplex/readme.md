@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__mplex
 
-Typings are for version 5.2.4
+Typings are for version 7.0.0
 
 ## Library description:
 JavaScript implementation of https://github.com/libp2p/mplex

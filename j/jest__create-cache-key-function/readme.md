@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__create-cache-key-function
 
-Typings are for version 29.1.2
+Typings are for version 29.2.1
 
 ## Library description:
 This module creates a function which is used for generating cache keys used by code transformers in Jest.

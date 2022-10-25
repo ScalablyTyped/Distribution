@@ -10,15 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ReSubscribeUserAgentClient protected ()
   extends typings.sipJs.libCoreUserAgentsMod.ReSubscribeUserAgentClient {
-  def this(dialog: typings.sipJs.libCoreDialogsMod.SubscriptionDialog) = this()
-  def this(dialog: typings.sipJs.libCoreDialogsMod.SubscriptionDialog, delegate: OutgoingRequestDelegate) = this()
+  def this(dialog: typings.sipJs.libCoreDialogsSubscriptionDialogMod.SubscriptionDialog) = this()
   def this(
-    dialog: typings.sipJs.libCoreDialogsMod.SubscriptionDialog,
+    dialog: typings.sipJs.libCoreDialogsSubscriptionDialogMod.SubscriptionDialog,
+    delegate: OutgoingRequestDelegate
+  ) = this()
+  def this(
+    dialog: typings.sipJs.libCoreDialogsSubscriptionDialogMod.SubscriptionDialog,
     delegate: Unit,
     options: RequestOptions
   ) = this()
   def this(
-    dialog: typings.sipJs.libCoreDialogsMod.SubscriptionDialog,
+    dialog: typings.sipJs.libCoreDialogsSubscriptionDialogMod.SubscriptionDialog,
     delegate: OutgoingRequestDelegate,
     options: RequestOptions
   ) = this()

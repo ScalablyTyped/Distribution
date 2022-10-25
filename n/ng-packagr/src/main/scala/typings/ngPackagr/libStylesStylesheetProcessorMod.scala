@@ -62,7 +62,7 @@ object libStylesStylesheetProcessorMod {
     
     /* private */ var postCssProcessor: Any = js.native
     
-    def process(hasFilePathContent: FilePath): js.Promise[String] = js.native
+    def process(param0: FilePath): js.Promise[String] = js.native
     
     /* private */ var renderCss: Any = js.native
     

@@ -1,7 +1,8 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
+import typings.interfaceDatastore.mod.Datastore
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pKadDht.distSrcMessageMod.Message
 import typings.libp2pKadDht.distSrcPeerRoutingMod.PeerRouting
 import typings.libp2pKadDht.distSrcRpcMod.DHTMessageHandler
@@ -17,7 +18,7 @@ object distSrcRpcHandlersGetValueMod {
   open class GetValueHandler protected ()
     extends StObject
        with DHTMessageHandler {
-    def this(init: GetValueHandlerInit) = this()
+    def this(components: GetValueHandlerComponents, init: GetValueHandlerInit) = this()
     
     /**
       * Try to fetch a given record by from the local datastore.
@@ -27,15 +28,33 @@ object distSrcRpcHandlersGetValueMod {
       */
     def _checkLocalDatastore(key: js.typedarray.Uint8Array): js.Promise[js.UndefOr[Libp2pRecord]] = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /* CompleteClass */
     override def handle(peerId: PeerId, msg: Message): js.Promise[js.UndefOr[Message]] = js.native
     
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
-    
     /* private */ val peerRouting: Any = js.native
+  }
+  
+  trait GetValueHandlerComponents extends StObject {
+    
+    var datastore: Datastore
+    
+    var peerStore: PeerStore
+  }
+  object GetValueHandlerComponents {
+    
+    inline def apply(datastore: Datastore, peerStore: PeerStore): GetValueHandlerComponents = {
+      val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetValueHandlerComponents]
+    }
+    
+    extension [Self <: GetValueHandlerComponents](x: Self) {
+      
+      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+    }
   }
   
   trait GetValueHandlerInit extends StObject {

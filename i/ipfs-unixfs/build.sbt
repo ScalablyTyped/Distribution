@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ipfs-unixfs"
-version := "7.0.0-aab645"
+version := "8.0.0-ec7337"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

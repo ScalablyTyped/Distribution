@@ -21,7 +21,7 @@ open class InviteServerTransaction protected ()
     * @param user - The transaction user.
     */
   def this(
-    request: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    request: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     transport: Transport,
     user: ServerTransactionUser
   ) = this()

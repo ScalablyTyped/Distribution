@@ -1,7 +1,6 @@
 package typings.libp2pMdns
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
+import typings.libp2pMdns.mod.MulticastDNSComponents
 import typings.multicastDns.mod.QueryPacket
 import typings.node.dgramMod.RemoteInfo
 import org.scalablytyped.runtime.StObject
@@ -12,18 +11,14 @@ object distSrcCompatResponderMod {
   
   @JSImport("@libp2p/mdns/dist/src/compat/responder", "Responder")
   @js.native
-  open class Responder ()
-    extends StObject
-       with Initializable {
+  open class Responder protected () extends StObject {
+    def this(components: MulticastDNSComponents) = this()
     
     /* private */ var _mdns: Any = js.native
     
     def _onQuery(event: QueryPacket, info: RemoteInfo): Unit = js.native
     
-    /* private */ var components: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
+    /* private */ val components: Any = js.native
     
     def start(): Unit = js.native
     

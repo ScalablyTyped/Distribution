@@ -2668,6 +2668,7 @@
 | [eth-lightwallet](./e/eth-lightwallet) | A lightweight ethereum javascript wallet. | ethereum, blockchain, transactions, contracts, wallet |
 | [eth-rpc-errors](./e/eth-rpc-errors) | Ethereum RPC and Provider errors. | rpc, ethereum, errors, utility |
 | [eth-sig-util](./e/eth-sig-util) | A few useful functions for signing ethereum data | ethereum, signature |
+| [eth-url-parser](./e/eth-url-parser) | Ethereum url parsing library | ethereum, url, parser, eip681, erc681, web3 |
 | [ethereum-blockies](./e/ethereum-blockies) | A tiny library for generating blocky identicons. | - |
 | [ethereum-bloom-filters](./e/ethereum-bloom-filters) | Ability to test bloom filters for ethereum. | ethereum, blockchain, blooms, bloom, bloom filters |
 | [ethereum-checksum-address](./e/ethereum-checksum-address) | Convert Ethereum address to a checksummed address | ethereum, checksum, address, check, converter, verify, verification, validation, hashing, normalize, cli |
@@ -2761,23 +2762,13 @@
 | [expired-storage](./e/expired-storage) | Micro JS lib that provide local & session storage  | localStorage, sessionStorage, storage, expiration, expired, temporary |
 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries | expiry, expire, expirymanager, timeout, volatile, key |
 | [expo](./e/expo) | - | - |
-| [expo-application](./e/expo-application) | A universal module that gets native application in | react-native, expo, expo-application |
-| [expo-asset](./e/expo-asset) | An Expo universal module to download assets and pa | react-native, expo, asset |
-| [expo-constants](./e/expo-constants) | - | - |
-| [expo-error-recovery](./e/expo-error-recovery) | Utilities for helping you gracefully handle crashe | react-native, expo, expo-error-recovery, error-recovery |
 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de | react-native, expo, file-system, file |
-| [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native | react-native, expo, font |
 | [expo-gl](./e/expo-gl) | - | - |
-| [expo-keep-awake](./e/expo-keep-awake) | - | - |
 | [expo-linear-gradient](./e/expo-linear-gradient) | Provides a React component that renders a gradient | react-native, expo, gradient |
 | [expo-localization](./e/expo-localization) | Provides an interface for native user localization | react-native, expo, localization, locales, l10n |
-| [expo-location](./e/expo-location) | - | - |
 | [expo-mixpanel-analytics](./e/expo-mixpanel-analytics) | Mixpanel integration for use with React Native app | react, native, expo, mixpanel, analytics |
 | [expo-modules-autolinking](./e/expo-modules-autolinking) | - | - |
-| [expo-modules-core](./e/expo-modules-core) | - | - |
-| [expo-permissions](./e/expo-permissions) | Allows you prompt for various permissions to acces | react-native, expo, permissions |
 | [expo-sqlite](./e/expo-sqlite) | Provides access to a database that can be queried  | react-native, expo, sqlite, websql, sql |
-| [expo-web-browser](./e/expo-web-browser) | - | - |
 | [expo__bunyan](./e/expo__bunyan) | a JSON logging library for node.js services | log, logging, log4j, json, bunyan |
 | [expo__code-signing-certif](./e/expo__code-signing-certificates) | A library for working with expo-updates code signi | code signing |
 | [expo__config](./e/expo__config) | A library for interacting with the app.json | json, react-native, expo, react |
@@ -2805,6 +2796,7 @@
 | [express-boom](./e/express-boom) | Boom response objects in Express | Hapi, Boom, Express, response |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute | express, brute, memcached, store |
+| [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. | - |
 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute | express, brute, redis |
 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express | express, logger, bunyan |
 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser | busboy, express, body-parser |
@@ -3341,6 +3333,7 @@
 | [furigana-markdown-it](./f/furigana-markdown-it) | Furigana extension for markdown-it. | markdown-it, markdown, furigana |
 | [fuse_dot_js](./f/fuse_dot_js) | Lightweight fuzzy-search | fuzzy, search, bitap |
 | [fusebit__add-on-sdk](./f/fusebit__add-on-sdk) | SDK for implementing Fusebit Add-Ons | - |
+| [fusebit__oauth-connector](./f/fusebit__oauth-connector) | Fusebit Connector for OAuth | - |
 | [fusioncharts](./f/fusioncharts) | FusionCharts JavaScript charting framework | fusioncharts, charts, dataviz, graphs, visualization, js-charts, javascript-charts, dashboards, data-stories, bar-charts, pie-charts, line-charts, area-charts, column-charts, gantt-chart |
 | [futoin-hkdf](./f/futoin-hkdf) | RFC5869: HMAC-based Extract-and-Expand Key Derivat | futoin, crypto, hkdf, kdf |
 | [fuzzaldrin](./f/fuzzaldrin) | Fuzzy filtering and string scoring | fuzzy, filter, stringscore |
@@ -4270,6 +4263,7 @@
 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser | grid, grid-layout, template, parser |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
+| [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
 | [grommet](./g/grommet) | focus on the essential experience | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps. | - |
@@ -4597,6 +4591,7 @@
 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler. | mustache, template |
 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com | react |
 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir | images, placeholders, client-side, canvas, generation, development, svg |
+| [homeworks](./h/homeworks) | Front End framework that supported view binding. | Frontend Framework, Material, IGAWorks, homeworks, framework, PIGNOSE |
 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io | - |
 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st | patch, hook, function, debug, aop |
 | [hookrouter](./h/hookrouter) | A hook based router for React | - |
@@ -4817,6 +4812,7 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
+| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
@@ -5936,6 +5932,7 @@
 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware | log4js, Koa, logger |
 | [koa-logger](./k/koa-logger) | Logging middleware for koa | koa, middleware, logger, log |
 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa | logging, koa, winston, async |
+| [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo | koa, mongo, mongodb |
 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa | logger, morgan |
 | [koa-mount](./k/koa-mount) | Mounting middleware for koa | koa, middleware, mount, mounting |
 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko | form, post, multipart, form-data, formdata, koa, middleware |
@@ -6171,6 +6168,7 @@
 | [libp2p__peer-store](./l/libp2p__peer-store) | Stores information about peers libp2p knows on the | IPFS |
 | [libp2p__pubsub](./l/libp2p__pubsub) | libp2p pubsub base class | interface, libp2p |
 | [libp2p__record](./l/libp2p__record) | libp2p record implementation | IPFS |
+| [libp2p__tcp](./l/libp2p__tcp) | Node.js implementation of the TCP module that libp | IPFS, TCP, libp2p, network, p2p, peer, peer-to-peer |
 | [libp2p__topology](./l/libp2p__topology) | libp2p network topology | interface, libp2p |
 | [libp2p__tracked-map](./l/libp2p__tracked-map) | Allows tracking of statistics while libp2p is runn | IPFS |
 | [libp2p__utils](./l/libp2p__utils) | Package to aggregate shared logic and dependencies | - |
@@ -7074,7 +7072,6 @@
 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs | - |
 | [memcached](./m/memcached) | A fully featured Memcached API client, supporting  | InnoDB memcached API, cache, client, cluster, failover, hashing, membase, memcache, memcached, nMemcached, nosql |
 | [memdown](./m/memdown) | An drop-in replacement for LevelDOWN that works in | level, leveldb, leveldown, levelup, memory |
-| [memfs](./m/memfs) | In-memory file-system with Node's fs API. | fs, filesystem, fs.js, memory-fs, memfs, file, file system, mount, memory, in-memory, virtual, test, testing, mock |
 | [memize](./m/memize) | Unabashedly-barebones memoization library with an  | memoize, memoization, memoisation, cache |
 | [memjs](./m/memjs) | A memcache client for node using the binary protoc | cache, memcache, memcached, MemCachier |
 | [memmonit](./m/memmonit) | Library to help monitor operating system memory | memory, monitoring, lib |
@@ -7358,14 +7355,11 @@
 | [mongo-sanitize](./m/mongo-sanitize) | Helper to sanitize mongodb queries against query s | mongodb, sanitize, query, selector, injection, Petko |
 | [mongodb](./m/mongodb) | The official MongoDB driver for Node.js | mongodb, driver, official |
 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR | password, prompt, tty |
-| [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
-| [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without  | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB. | mongodb, queue |
 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs. | mongodb, uri, url, parser, formatter, mongoose |
 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily | MongoDB, Mongoose, seeder |
 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM. | mongo, mongodb, odm |
 | [mongration](./m/mongration) | Node.js mongodb migration framework | mongration, mongodb, migration, database, node mongodb migration framework |
-| [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript | typescript, functional-programming, optics, lens, fp-ts |
 | [month-days](./m/month-days) | Get the number of days in a month | month, days, year, date, utc, number, count |
 | [moo](./m/moo) | Optimised tokenizer/lexer generator | - |
@@ -7582,6 +7576,7 @@
 | [ng-grid](./n/ng-grid) | __Contributors:__ | angular, ng-grid, nggrid, grid, angularjs, slickgrid, kogrid |
 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne | - |
 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi | AngularJS, App, notify, Provider, notification, alert, notice |
+| [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P | apf, angular-package-format, angular, angular-library, angular-components, component-library, typescript, css, scss |
 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS | - |
 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS | AngularJS, STOMP, websocket |
 | [ng-table](./n/ng-table) | Table + AngularJS =================  | - |
@@ -7607,6 +7602,7 @@
 | [ngtoaster](./n/ngtoaster) | - | - |
 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp | angular, Angular CLI, devkit, sdk, Angular DevKit, webpack, plugin, aot |
 | [ngwysiwyg](./n/ngwysiwyg) | - | - |
+| [ngx-infinite-scroll](./n/ngx-infinite-scroll) | - | - |
 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises | nhs, validator, validation |
 | [nib](./n/nib) | Stylus mixins and utilities | - |
 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js | nice, priority |
@@ -7860,6 +7856,7 @@
 | [npm-which](./n/npm-which) | Locate a program or locally installed node module' | npm, path, executable, run |
 | [npmcli__arborist](./n/npmcli__arborist) | Manage node_modules trees | - |
 | [npmcli__ci-detect](./n/npmcli__ci-detect) | Detect what kind of CI environment the program is  | - |
+| [npmcli__map-workspaces](./n/npmcli__map-workspaces) | Retrieves a name:pathname Map for a given workspac | npm, npmcli, libnpm, cli, workspaces, map-workspaces |
 | [npmcli__package-json](./n/npmcli__package-json) | Programmatic API to update package.json | npm, oss |
 | [npmlog](./n/npmlog) | logger for npm | - |
 | [nprogress](./n/nprogress) | Simple slim progress bars | - |

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelTaskExecutionRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the task execution to cancel.
+    * The Amazon Resource Name (ARN) of the task execution to stop.
     */
   var TaskExecutionArn: typings.awsSdk.clientsDatasyncMod.TaskExecutionArn
 }

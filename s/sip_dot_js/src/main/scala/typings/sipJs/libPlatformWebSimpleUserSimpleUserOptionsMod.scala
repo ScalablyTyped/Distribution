@@ -1,5 +1,6 @@
 package typings.sipJs
 
+import typings.sipJs.libApiRegistererOptionsMod.RegistererOptions
 import typings.sipJs.libApiUserAgentOptionsMod.UserAgentOptions
 import typings.sipJs.libPlatformWebSimpleUserSimpleUserDelegateMod.SimpleUserDelegate
 import typings.std.HTMLAudioElement
@@ -160,6 +161,11 @@ object libPlatformWebSimpleUserSimpleUserOptionsMod {
     var reconnectionDelay: js.UndefOr[Double] = js.undefined
     
     /**
+      * Options for Registerer.
+      */
+    var registererOptions: js.UndefOr[RegistererOptions] = js.undefined
+    
+    /**
       * Options for UserAgent.
       */
     var userAgentOptions: js.UndefOr[UserAgentOptions] = js.undefined
@@ -192,6 +198,10 @@ object libPlatformWebSimpleUserSimpleUserOptionsMod {
       inline def setReconnectionDelay(value: Double): Self = StObject.set(x, "reconnectionDelay", value.asInstanceOf[js.Any])
       
       inline def setReconnectionDelayUndefined: Self = StObject.set(x, "reconnectionDelay", js.undefined)
+      
+      inline def setRegistererOptions(value: RegistererOptions): Self = StObject.set(x, "registererOptions", value.asInstanceOf[js.Any])
+      
+      inline def setRegistererOptionsUndefined: Self = StObject.set(x, "registererOptions", js.undefined)
       
       inline def setUserAgentOptions(value: UserAgentOptions): Self = StObject.set(x, "userAgentOptions", value.asInstanceOf[js.Any])
       

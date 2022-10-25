@@ -75,6 +75,11 @@ trait CertificateAuthority extends StObject {
     * Type of your private CA.
     */
   var Type: js.UndefOr[CertificateAuthorityType] = js.undefined
+  
+  /**
+    * Specifies whether the CA issues general-purpose certificates that typically require a revocation mechanism, or short-lived certificates that may optionally omit revocation because they expire quickly. Short-lived certificate validity is limited to seven days. The default value is GENERAL_PURPOSE.
+    */
+  var UsageMode: js.UndefOr[CertificateAuthorityUsageMode] = js.undefined
 }
 object CertificateAuthority {
   
@@ -140,5 +145,9 @@ object CertificateAuthority {
     inline def setType(value: CertificateAuthorityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    
+    inline def setUsageMode(value: CertificateAuthorityUsageMode): Self = StObject.set(x, "UsageMode", value.asInstanceOf[js.Any])
+    
+    inline def setUsageModeUndefined: Self = StObject.set(x, "UsageMode", js.undefined)
   }
 }

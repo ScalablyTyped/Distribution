@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-clean-css"
-version := "4.3-dt-20211202Z-29d1c2"
+version := "4.3-dt-20211202Z-36003b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20220921Z-f310b6",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20220921Z-28f8e3",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "source-map" % "0.7.4-01a3bb",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

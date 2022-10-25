@@ -22,7 +22,7 @@ open class NonInviteClientTransaction protected ()
     * @param user - The transaction user.
     */
   def this(
-    request: typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
+    request: typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage,
     transport: Transport,
     user: ClientTransactionUser
   ) = this()

@@ -55,7 +55,7 @@ object distSrcMessageEntryMod {
     /**
       * @param {this} other
       */
-    def equals(other: BitswapMessageEntry): Any = js.native
+    def equals(other: BitswapMessageEntry): Boolean = js.native
     
     var get: Any = js.native
     

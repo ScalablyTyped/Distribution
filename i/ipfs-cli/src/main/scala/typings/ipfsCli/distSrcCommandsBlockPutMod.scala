@@ -2,6 +2,7 @@ package typings.ipfsCli
 
 import org.scalablytyped.runtime.Shortcut
 import typings.ipfsCli.distSrcTypesMod.Context
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.yargs.mod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +17,7 @@ object distSrcCommandsBlockPutMod extends Shortcut {
     * @property {string} Argv.format
     * @property {string} Argv.mhtype
     * @property {number} Argv.mhlen
-    * @property {import('multiformats/cid').CIDVersion} Argv.version
+    * @property {import('multiformats/cid').Version} Argv.version
     * @property {boolean} Argv.pin
     * @property {string} Argv.cidBase
     * @property {number} Argv.timeout
@@ -44,7 +45,7 @@ object distSrcCommandsBlockPutMod extends Shortcut {
     
     var timeout: Double
     
-    var version: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
+    var version: Version
   }
   object Argv {
     
@@ -57,7 +58,7 @@ object distSrcCommandsBlockPutMod extends Shortcut {
       mhtype: String,
       pin: Boolean,
       timeout: Double,
-      version: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
+      version: Version
     ): Argv = {
       val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], cidBase = cidBase.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], mhlen = mhlen.asInstanceOf[js.Any], mhtype = mhtype.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argv]
@@ -81,9 +82,7 @@ object distSrcCommandsBlockPutMod extends Shortcut {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      inline def setVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
-      ): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

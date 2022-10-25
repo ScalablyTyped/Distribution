@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "docker-events"
-version := "0.0-dt-20211202Z-9e4e22"
+version := "0.0-dt-20211202Z-c3640e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "docker-modem" % "3.0-dt-20211202Z-8d2265",
-  "org.scalablytyped" %%% "dockerode" % "3.3-dt-20220930Z-b94c47",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
-  "org.scalablytyped" %%% "ssh2" % "v1.11-dt-20220930Z-eee031",
+  "org.scalablytyped" %%% "docker-modem" % "3.0-dt-20211202Z-48d266",
+  "org.scalablytyped" %%% "dockerode" % "3.3-dt-20220930Z-1ef97c",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "ssh2" % "v1.11-dt-20220930Z-3bd57c",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

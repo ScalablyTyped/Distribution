@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/floodsub" : "3.0.7"
+      "@libp2p/floodsub" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/floodsub" : "3.0.7"
+      "@libp2p/floodsub" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

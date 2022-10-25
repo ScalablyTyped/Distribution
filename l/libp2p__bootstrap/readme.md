@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__bootstrap
 
-Typings are for version 3.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Node.js IPFS Implementation of the railing process of a Node through a bootstrap peer list

@@ -11,7 +11,7 @@ import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdStr
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.PeerIdStr
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.RejectReason
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr
-import typings.libp2pComponents.mod.Components
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
 import typings.std.Map
 import typings.std.Record
 import typings.std.ReturnType
@@ -25,8 +25,8 @@ object distSrcScorePeerScoreMod {
   @JSImport("@chainsafe/libp2p-gossipsub/dist/src/score/peer-score", "PeerScore")
   @js.native
   open class PeerScore protected () extends StObject {
-    def this(params: PeerScoreParams, metrics: Null, opts: PeerScoreOpts) = this()
-    def this(params: PeerScoreParams, metrics: Metrics, opts: PeerScoreOpts) = this()
+    def this(components: PeerScoreComponents, params: PeerScoreParams, metrics: Null, opts: PeerScoreOpts) = this()
+    def this(components: PeerScoreComponents, params: PeerScoreParams, metrics: Metrics, opts: PeerScoreOpts) = this()
     
     var _backgroundInterval: js.UndefOr[ReturnType[TypeofsetInterval]] = js.native
     
@@ -42,7 +42,7 @@ object distSrcScorePeerScoreMod {
       */
     def background(): Unit = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /* private */ val computeScore: Any = js.native
     
@@ -70,8 +70,6 @@ object distSrcScorePeerScoreMod {
     
     /** Handles scoring functionality as a peer GRAFTs to a topic. */
     def graft(id: PeerIdStr, topic: TopicStr): Unit = js.native
-    
-    def init(components: Components): Unit = js.native
     
     /**
       * Increments the "mesh message deliveries" counter for messages we've seen before,
@@ -163,6 +161,23 @@ object distSrcScorePeerScoreMod {
     def updateIPs(): Unit = js.native
     
     def validateMessage(msgIdStr: MsgIdStr): Unit = js.native
+  }
+  
+  trait PeerScoreComponents extends StObject {
+    
+    var connectionManager: ConnectionManager
+  }
+  object PeerScoreComponents {
+    
+    inline def apply(connectionManager: ConnectionManager): PeerScoreComponents = {
+      val __obj = js.Dynamic.literal(connectionManager = connectionManager.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PeerScoreComponents]
+    }
+    
+    extension [Self <: PeerScoreComponents](x: Self) {
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+    }
   }
   
   trait PeerScoreOpts extends StObject {

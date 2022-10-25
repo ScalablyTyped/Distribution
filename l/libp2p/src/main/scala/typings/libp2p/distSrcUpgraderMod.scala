@@ -4,13 +4,18 @@ import typings.itStreamTypes.mod.Duplex
 import typings.libp2p.anon.MuxerFactory
 import typings.libp2p.libp2pStrings.inbound
 import typings.libp2p.libp2pStrings.outbound
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfaceConnection.mod.Connection
+import typings.libp2pInterfaceConnection.mod.ConnectionGater
+import typings.libp2pInterfaceConnection.mod.ConnectionProtector
 import typings.libp2pInterfaceConnection.mod.MultiaddrConnection
 import typings.libp2pInterfaceConnection.mod.Stream
 import typings.libp2pInterfaceConnectionEncrypter.mod.ConnectionEncrypter
 import typings.libp2pInterfaceConnectionEncrypter.mod.SecuredConnection
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
+import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerStore.mod.PeerStore
+import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.libp2pInterfaceStreamMuxer.mod.StreamMuxerFactory
 import typings.libp2pInterfaceTransport.mod.Upgrader
 import typings.std.Map
@@ -23,7 +28,7 @@ object distSrcUpgraderMod {
   @JSImport("libp2p/dist/src/upgrader", "DefaultUpgrader")
   @js.native
   open class DefaultUpgrader protected () extends Upgrader {
-    def this(components: Components, init: UpgraderInit) = this()
+    def this(components: DefaultUpgraderComponents, init: UpgraderInit) = this()
     
     /**
       * A convenience method for generating a new `Connection`
@@ -114,7 +119,7 @@ object distSrcUpgraderMod {
   
   trait CryptoResult
     extends StObject
-       with SecuredConnection {
+       with SecuredConnection[Any] {
     
     var protocol: String
   }
@@ -123,16 +128,66 @@ object distSrcUpgraderMod {
     inline def apply(
       conn: Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]],
       protocol: String,
-      remoteEarlyData: js.typedarray.Uint8Array,
       remotePeer: PeerId
     ): CryptoResult = {
-      val __obj = js.Dynamic.literal(conn = conn.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], remoteEarlyData = remoteEarlyData.asInstanceOf[js.Any], remotePeer = remotePeer.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(conn = conn.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], remotePeer = remotePeer.asInstanceOf[js.Any])
       __obj.asInstanceOf[CryptoResult]
     }
     
     extension [Self <: CryptoResult](x: Self) {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DefaultUpgraderComponents extends StObject {
+    
+    var connectionGater: ConnectionGater
+    
+    var connectionManager: ConnectionManager
+    
+    var connectionProtector: js.UndefOr[ConnectionProtector] = js.undefined
+    
+    var metrics: js.UndefOr[Metrics] = js.undefined
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+    
+    var registrar: Registrar
+  }
+  object DefaultUpgraderComponents {
+    
+    inline def apply(
+      connectionGater: ConnectionGater,
+      connectionManager: ConnectionManager,
+      peerId: PeerId,
+      peerStore: PeerStore,
+      registrar: Registrar
+    ): DefaultUpgraderComponents = {
+      val __obj = js.Dynamic.literal(connectionGater = connectionGater.asInstanceOf[js.Any], connectionManager = connectionManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DefaultUpgraderComponents]
+    }
+    
+    extension [Self <: DefaultUpgraderComponents](x: Self) {
+      
+      inline def setConnectionGater(value: ConnectionGater): Self = StObject.set(x, "connectionGater", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionProtector(value: ConnectionProtector): Self = StObject.set(x, "connectionProtector", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionProtectorUndefined: Self = StObject.set(x, "connectionProtector", js.undefined)
+      
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+      
+      inline def setRegistrar(value: Registrar): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,7 +218,7 @@ object distSrcUpgraderMod {
   
   trait UpgraderInit extends StObject {
     
-    var connectionEncryption: js.Array[ConnectionEncrypter]
+    var connectionEncryption: js.Array[ConnectionEncrypter[Any]]
     
     /**
       * An amount of ms by which an inbound connection upgrade
@@ -176,7 +231,7 @@ object distSrcUpgraderMod {
   object UpgraderInit {
     
     inline def apply(
-      connectionEncryption: js.Array[ConnectionEncrypter],
+      connectionEncryption: js.Array[ConnectionEncrypter[Any]],
       inboundUpgradeTimeout: Double,
       muxers: js.Array[StreamMuxerFactory]
     ): UpgraderInit = {
@@ -186,9 +241,9 @@ object distSrcUpgraderMod {
     
     extension [Self <: UpgraderInit](x: Self) {
       
-      inline def setConnectionEncryption(value: js.Array[ConnectionEncrypter]): Self = StObject.set(x, "connectionEncryption", value.asInstanceOf[js.Any])
+      inline def setConnectionEncryption(value: js.Array[ConnectionEncrypter[Any]]): Self = StObject.set(x, "connectionEncryption", value.asInstanceOf[js.Any])
       
-      inline def setConnectionEncryptionVarargs(value: ConnectionEncrypter*): Self = StObject.set(x, "connectionEncryption", js.Array(value*))
+      inline def setConnectionEncryptionVarargs(value: ConnectionEncrypter[Any]*): Self = StObject.set(x, "connectionEncryption", js.Array(value*))
       
       inline def setInboundUpgradeTimeout(value: Double): Self = StObject.set(x, "inboundUpgradeTimeout", value.asInstanceOf[js.Any])
       

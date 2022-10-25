@@ -12,7 +12,7 @@ trait SubmitJobRequest extends StObject {
   var arrayProperties: js.UndefOr[ArrayProperties] = js.undefined
   
   /**
-    * A list of container overrides in the JSON format that specify the name of a container in the specified job definition and the overrides it receives. You can override the default command for a container, which is specified in the job definition or the Docker image, with a command override. You can also override existing environment variables on a container or add new environment variables to it with an environment override.
+    * An object with various properties that override the defaults for the job definition that specify the name of a container in the specified job definition and the overrides it should receive. You can override the default command for a container, which is specified in the job definition or the Docker image, with a command override. You can also override existing environment variables on a container or add new environment variables to it with an environment override.
     */
   var containerOverrides: js.UndefOr[ContainerOverrides] = js.undefined
   
@@ -20,6 +20,11 @@ trait SubmitJobRequest extends StObject {
     * A list of dependencies for the job. A job can depend upon a maximum of 20 jobs. You can specify a SEQUENTIAL type dependency without specifying a job ID for array jobs so that each child array job completes sequentially, starting at index 0. You can also specify an N_TO_N type dependency with a job ID for array jobs. In that case, each index child of this job must wait for the corresponding index child of each dependency to complete before it can begin.
     */
   var dependsOn: js.UndefOr[JobDependencyList] = js.undefined
+  
+  /**
+    * An object that can only be specified for jobs that are run on Amazon EKS resources with various properties that override defaults for the job definition.
+    */
+  var eksPropertiesOverride: js.UndefOr[EksPropertiesOverride] = js.undefined
   
   /**
     * The job definition used by this job. This value can be one of name, name:revision, or the Amazon Resource Name (ARN) for the job definition. If name is specified without a revision then the latest active revision is used.
@@ -57,12 +62,12 @@ trait SubmitJobRequest extends StObject {
   var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
   
   /**
-    * The scheduling priority for the job. This will only affect jobs in job queues with a fair share policy. Jobs with a higher scheduling priority will be scheduled before jobs with a lower scheduling priority. This will override any scheduling priority in the job definition. The minimum supported value is 0 and the maximum supported value is 9999.
+    * The scheduling priority for the job. This only affects jobs in job queues with a fair share policy. Jobs with a higher scheduling priority are scheduled before jobs with a lower scheduling priority. This overrides any scheduling priority in the job definition. The minimum supported value is 0 and the maximum supported value is 9999.
     */
   var schedulingPriorityOverride: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The share identifier for the job. If the job queue does not have a scheduling policy, then this parameter must not be specified. If the job queue has a scheduling policy, then this parameter must be specified.
+    * The share identifier for the job. If the job queue doesn't have a scheduling policy, then this parameter must not be specified. If the job queue has a scheduling policy, then this parameter must be specified.
     */
   var shareIdentifier: js.UndefOr[String] = js.undefined
   
@@ -98,6 +103,10 @@ object SubmitJobRequest {
     inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
     inline def setDependsOnVarargs(value: JobDependency*): Self = StObject.set(x, "dependsOn", js.Array(value*))
+    
+    inline def setEksPropertiesOverride(value: EksPropertiesOverride): Self = StObject.set(x, "eksPropertiesOverride", value.asInstanceOf[js.Any])
+    
+    inline def setEksPropertiesOverrideUndefined: Self = StObject.set(x, "eksPropertiesOverride", js.undefined)
     
     inline def setJobDefinition(value: String): Self = StObject.set(x, "jobDefinition", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uint8arraylist"
-version := "2.3.2-03d59f"
+version := "2.3.3-bed8fc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

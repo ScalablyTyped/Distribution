@@ -4,6 +4,7 @@ import typings.chainsafeLibp2pGossipsub.anon.PartialPeerScoreParams
 import typings.chainsafeLibp2pGossipsub.anon.PartialPeerScoreThreshold
 import typings.chainsafeLibp2pGossipsub.anon.PartialTopicScoreParams
 import typings.chainsafeLibp2pGossipsub.distSrcMetricsMod.Metrics
+import typings.chainsafeLibp2pGossipsub.distSrcScorePeerScoreMod.PeerScoreComponents
 import typings.chainsafeLibp2pGossipsub.distSrcScorePeerScoreMod.PeerScoreOpts
 import typings.chainsafeLibp2pGossipsub.distSrcScorePeerScoreParamsMod.PeerScoreParams
 import typings.chainsafeLibp2pGossipsub.distSrcScorePeerScoreParamsMod.TopicScoreParams
@@ -22,8 +23,8 @@ object distSrcScoreMod {
   @js.native
   open class PeerScore protected ()
     extends typings.chainsafeLibp2pGossipsub.distSrcScorePeerScoreMod.PeerScore {
-    def this(params: PeerScoreParams, metrics: Null, opts: PeerScoreOpts) = this()
-    def this(params: PeerScoreParams, metrics: Metrics, opts: PeerScoreOpts) = this()
+    def this(components: PeerScoreComponents, params: PeerScoreParams, metrics: Null, opts: PeerScoreOpts) = this()
+    def this(components: PeerScoreComponents, params: PeerScoreParams, metrics: Metrics, opts: PeerScoreOpts) = this()
   }
   
   inline def createPeerScoreParams(): PeerScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreParams")().asInstanceOf[PeerScoreParams]

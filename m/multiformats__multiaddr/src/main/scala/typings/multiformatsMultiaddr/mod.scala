@@ -325,7 +325,7 @@ object mod {
       * // [ [ 4, '127.0.0.1' ], [ 6, '4001' ] ]
       * ```
       */
-    def stringTuples(): js.Array[js.Tuple2[Double, js.UndefOr[String]]] = js.native
+    def stringTuples(): js.Array[StringTuple] = js.native
     
     /**
       * Returns Multiaddr as a JSON encoded object
@@ -358,7 +358,7 @@ object mod {
       * // [ [ 4, <Buffer 7f 00 00 01> ], [ 6, <Buffer 0f a1> ] ]
       * ```
       */
-    def tuples(): js.Array[js.Tuple2[Double, js.UndefOr[js.typedarray.Uint8Array]]] = js.native
+    def tuples(): js.Array[Tuple] = js.native
   }
   
   trait NodeAddress extends StObject {
@@ -428,4 +428,8 @@ object mod {
     /* options */ js.UndefOr[AbortOptions], 
     js.Promise[js.Array[String]]
   ]
+  
+  type StringTuple = js.Tuple2[Double, js.UndefOr[String]]
+  
+  type Tuple = js.Tuple2[Double, js.UndefOr[js.typedarray.Uint8Array]]
 }

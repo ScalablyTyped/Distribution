@@ -1,7 +1,14 @@
 package typings.libp2pKadDht
 
+import typings.interfaceDatastore.mod.Datastore
+import typings.libp2pInterfaceAddressManager.mod.AddressManager
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
 import typings.libp2pInterfaceDht.mod.Selectors
 import typings.libp2pInterfaceDht.mod.Validators
+import typings.libp2pInterfaceMetrics.mod.Metrics
+import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerStore.mod.PeerStore
+import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.libp2pKadDht.distSrcDualKadDhtMod.DualKadDHT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,10 +16,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@libp2p/kad-dht", "KadDHT")
+  @JSImport("@libp2p/kad-dht", JSImport.Namespace)
   @js.native
-  open class KadDHT () extends DualKadDHT {
-    def this(init: KadDHTInit) = this()
+  val ^ : js.Any = js.native
+  
+  inline def kadDHT(): js.Function1[/* components */ KadDHTComponents, DualKadDHT] = ^.asInstanceOf[js.Dynamic].applyDynamic("kadDHT")().asInstanceOf[js.Function1[/* components */ KadDHTComponents, DualKadDHT]]
+  inline def kadDHT(init: KadDHTInit): js.Function1[/* components */ KadDHTComponents, DualKadDHT] = ^.asInstanceOf[js.Dynamic].applyDynamic("kadDHT")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ KadDHTComponents, DualKadDHT]]
+  
+  trait KadDHTComponents extends StObject {
+    
+    var addressManager: AddressManager
+    
+    var connectionManager: ConnectionManager
+    
+    var datastore: Datastore
+    
+    var metrics: js.UndefOr[Metrics] = js.undefined
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+    
+    var registrar: Registrar
+  }
+  object KadDHTComponents {
+    
+    inline def apply(
+      addressManager: AddressManager,
+      connectionManager: ConnectionManager,
+      datastore: Datastore,
+      peerId: PeerId,
+      peerStore: PeerStore,
+      registrar: Registrar
+    ): KadDHTComponents = {
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], connectionManager = connectionManager.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
+      __obj.asInstanceOf[KadDHTComponents]
+    }
+    
+    extension [Self <: KadDHTComponents](x: Self) {
+      
+      inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+      
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+      
+      inline def setRegistrar(value: Registrar): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
+    }
   }
   
   trait KadDHTInit extends StObject {

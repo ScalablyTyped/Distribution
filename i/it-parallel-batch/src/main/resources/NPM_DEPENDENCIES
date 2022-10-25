@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-parallel-batch" : "1.0.10"
+      "it-parallel-batch" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "it-parallel-batch" : "1.0.10"
+      "it-parallel-batch" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

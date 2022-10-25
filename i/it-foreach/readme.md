@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-foreach
 
-Typings are for version 0.1.1
+Typings are for version 1.0.0
 
 ## Library description:
 Invokes the passed function for each item in an iterable

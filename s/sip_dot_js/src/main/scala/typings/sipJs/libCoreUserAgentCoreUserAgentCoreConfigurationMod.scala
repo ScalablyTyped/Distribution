@@ -1,10 +1,10 @@
 package typings.sipJs
 
 import typings.sipJs.anon.Anonymous
-import typings.sipJs.libCoreLogMod.LoggerFactory
-import typings.sipJs.libCoreMessagesMod.DigestAuthentication
-import typings.sipJs.libCoreMessagesMod.URI
+import typings.sipJs.libCoreLogLoggerFactoryMod.LoggerFactory
+import typings.sipJs.libCoreMessagesDigestAuthenticationMod.DigestAuthentication
 import typings.sipJs.libCoreTransportMod.Transport
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

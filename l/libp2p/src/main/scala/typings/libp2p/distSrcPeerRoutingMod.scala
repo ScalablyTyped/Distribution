@@ -1,7 +1,8 @@
 package typings.libp2p
 
-import typings.libp2pComponents.mod.Components
+import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerRouting.mod.PeerRouting
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object distSrcPeerRoutingMod {
     extends StObject
        with PeerRouting
        with Startable {
-    def this(components: Components, init: PeerRoutingInit) = this()
+    def this(components: DefaultPeerRoutingComponents, init: PeerRoutingInit) = this()
     
     /**
       * Recurrent task to find closest peers and add their addresses to the Address Book.
@@ -52,6 +53,27 @@ object distSrcPeerRoutingMod {
     override def stop(): Unit | js.Promise[Unit] = js.native
     
     /* private */ var timeoutId: Any = js.native
+  }
+  
+  trait DefaultPeerRoutingComponents extends StObject {
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+  }
+  object DefaultPeerRoutingComponents {
+    
+    inline def apply(peerId: PeerId, peerStore: PeerStore): DefaultPeerRoutingComponents = {
+      val __obj = js.Dynamic.literal(peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DefaultPeerRoutingComponents]
+    }
+    
+    extension [Self <: DefaultPeerRoutingComponents](x: Self) {
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+    }
   }
   
   trait PeerRoutingInit extends StObject {

@@ -2,6 +2,7 @@ package typings.ipfsCli
 
 import org.scalablytyped.runtime.Shortcut
 import typings.ipfsCli.distSrcTypesMod.Context
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.yargs.mod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +15,7 @@ object distSrcCommandsFilesTouchMod extends Shortcut {
     * @property {import('../../types').Context} Argv.ctx
     * @property {string} Argv.path
     * @property {boolean} Argv.flush
-    * @property {import('multiformats/cid').CIDVersion} Argv.cidVersion
+    * @property {import('multiformats/cid').Version} Argv.cidVersion
     * @property {string} Argv.hashAlg
     * @property {number} Argv.shardSplitThreshold
     * @property {number} Argv.mtime
@@ -28,7 +29,7 @@ object distSrcCommandsFilesTouchMod extends Shortcut {
   
   trait Argv extends StObject {
     
-    var cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
+    var cidVersion: Version
     
     var ctx: Context
     
@@ -49,7 +50,7 @@ object distSrcCommandsFilesTouchMod extends Shortcut {
   object Argv {
     
     inline def apply(
-      cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any,
+      cidVersion: Version,
       ctx: Context,
       flush: Boolean,
       hashAlg: String,
@@ -65,9 +66,7 @@ object distSrcCommandsFilesTouchMod extends Shortcut {
     
     extension [Self <: Argv](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCtx(value: Context): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
+import typings.libp2pInterfaceAddressManager.mod.AddressManager
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pKadDht.distSrcMessageMod.Message
 import typings.libp2pKadDht.distSrcPeerRoutingMod.PeerRouting
@@ -16,19 +16,37 @@ object distSrcRpcHandlersFindNodeMod {
   open class FindNodeHandler protected ()
     extends StObject
        with DHTMessageHandler {
-    def this(init: FindNodeHandlerInit) = this()
+    def this(components: FindNodeHandlerComponents, init: FindNodeHandlerInit) = this()
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /* CompleteClass */
     override def handle(peerId: PeerId, msg: Message): js.Promise[js.UndefOr[Message]] = js.native
     
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
-    
     /* private */ val lan: Any = js.native
     
     /* private */ val peerRouting: Any = js.native
+  }
+  
+  trait FindNodeHandlerComponents extends StObject {
+    
+    var addressManager: AddressManager
+    
+    var peerId: PeerId
+  }
+  object FindNodeHandlerComponents {
+    
+    inline def apply(addressManager: AddressManager, peerId: PeerId): FindNodeHandlerComponents = {
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FindNodeHandlerComponents]
+    }
+    
+    extension [Self <: FindNodeHandlerComponents](x: Self) {
+      
+      inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    }
   }
   
   trait FindNodeHandlerInit extends StObject {

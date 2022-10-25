@@ -172,6 +172,12 @@ trait TracerOptions extends StObject {
   var service: js.UndefOr[String] = js.undefined
   
   /**
+    * Span sampling rules that take effect when the enclosing trace is dropped, to ingest single spans
+    * @default []
+    */
+  var spanSamplingRules: js.UndefOr[js.Array[SpanSamplingRule]] = js.undefined
+  
+  /**
     * Whether to enable startup logs.
     * @default true
     */
@@ -302,6 +308,12 @@ object TracerOptions {
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    
+    inline def setSpanSamplingRules(value: js.Array[SpanSamplingRule]): Self = StObject.set(x, "spanSamplingRules", value.asInstanceOf[js.Any])
+    
+    inline def setSpanSamplingRulesUndefined: Self = StObject.set(x, "spanSamplingRules", js.undefined)
+    
+    inline def setSpanSamplingRulesVarargs(value: SpanSamplingRule*): Self = StObject.set(x, "spanSamplingRules", js.Array(value*))
     
     inline def setStartupLogs(value: Boolean): Self = StObject.set(x, "startupLogs", value.asInstanceOf[js.Any])
     

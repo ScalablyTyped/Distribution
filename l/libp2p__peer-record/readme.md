@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__peer-record
 
-Typings are for version 4.0.3
+Typings are for version 4.0.4
 
 ## Library description:
 Used to transfer signed peer data across the network

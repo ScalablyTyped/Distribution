@@ -1,8 +1,8 @@
 package typings.sipJs
 
 import typings.sipJs.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequestDelegate
-import typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage
-import typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore
+import typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage
+import typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore
 import typings.sipJs.libCoreUserAgentsNotifyUserAgentServerMod.NotifyUserAgentServer
 import typings.sipJs.libCoreUserAgentsUserAgentClientMod.UserAgentClient
 import org.scalablytyped.runtime.StObject

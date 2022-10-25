@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__expect-utils
 
-Typings are for version 29.2.1
+Typings are for version 29.2.2
 
 ## Library description:
 This module exports some utils for the `expect` function used in [Jest](https://jestjs.io/).

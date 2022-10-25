@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__kad-dht
 
-Typings are for version 3.0.5
+Typings are for version 5.0.1
 
 ## Library description:
 JavaScript implementation of the Kad-DHT for libp2p

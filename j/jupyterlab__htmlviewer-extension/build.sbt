@@ -1,30 +1,30 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__htmlviewer-extension"
-version := "3.5.0-25f0f9"
+version := "3.5.0-829016"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "free-style" % "4.1.0-8b3bde",
-  "org.scalablytyped" %%% "jupyterlab__application" % "3.5.0-22520c",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "3.5.0-ea5687",
-  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "3.5.0-9516fd",
+  "org.scalablytyped" %%% "jupyterlab__application" % "3.5.0-8f22bd",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "3.5.0-6c4f29",
+  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "3.5.0-a619e0",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "5.5.0-c1cac4",
-  "org.scalablytyped" %%% "jupyterlab__docprovider" % "3.5.0-272c3c",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "3.5.0-5d34d9",
-  "org.scalablytyped" %%% "jupyterlab__htmlviewer" % "3.5.0-5c0d66",
+  "org.scalablytyped" %%% "jupyterlab__docprovider" % "3.5.0-2940c4",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "3.5.0-0ad1e5",
+  "org.scalablytyped" %%% "jupyterlab__htmlviewer" % "3.5.0-c96a18",
   "org.scalablytyped" %%% "jupyterlab__nbformat" % "3.5.0-81f773",
   "org.scalablytyped" %%% "jupyterlab__observables" % "4.5.0-1ab86b",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "3.5.0-ba759a",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "3.5.0-5e457d",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "3.5.0-437bad",
   "org.scalablytyped" %%% "jupyterlab__services" % "6.5.0-840458",
   "org.scalablytyped" %%% "jupyterlab__settingregistry" % "3.5.0-9d1f2c",
-  "org.scalablytyped" %%% "jupyterlab__shared-models" % "3.5.0-619c86",
+  "org.scalablytyped" %%% "jupyterlab__shared-models" % "3.5.0-856606",
   "org.scalablytyped" %%% "jupyterlab__statedb" % "3.5.0-a6333c",
   "org.scalablytyped" %%% "jupyterlab__translation" % "3.5.0-68a3e6",
-  "org.scalablytyped" %%% "jupyterlab__ui-components" % "3.5.0-60a9d9",
-  "org.scalablytyped" %%% "lib0" % "0.2.52-f5b0c9",
+  "org.scalablytyped" %%% "jupyterlab__ui-components" % "3.5.0-a98d01",
+  "org.scalablytyped" %%% "lib0" % "0.2.52-25a45a",
   "org.scalablytyped" %%% "lumino__algorithm" % "1.9.2-3d1e81",
   "org.scalablytyped" %%% "lumino__application" % "1.29.4-453159",
   "org.scalablytyped" %%% "lumino__commands" % "1.20.1-fbd872",
@@ -35,16 +35,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lumino__signaling" % "1.10.2-a1f071",
   "org.scalablytyped" %%% "lumino__virtualdom" % "1.14.2-f88614",
   "org.scalablytyped" %%% "lumino__widgets" % "1.34.1-c32c29",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
   "org.scalablytyped" %%% "rollup" % "3.2.3-c92d63",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "typestyle" % "2.4.0-b099cb",
-  "org.scalablytyped" %%% "y-protocols" % "1.0.5-92b6d7",
-  "org.scalablytyped" %%% "y-websocket" % "1.4.5-1b3855",
-  "org.scalablytyped" %%% "yjs" % "13.5.42-76112e")
+  "org.scalablytyped" %%% "y-protocols" % "1.0.5-3e62cd",
+  "org.scalablytyped" %%% "y-websocket" % "1.4.5-e9761e",
+  "org.scalablytyped" %%% "yjs" % "13.5.42-401fa4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

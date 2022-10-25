@@ -12,12 +12,12 @@ trait NodeProperties extends StObject {
   var mainNode: Integer
   
   /**
-    * A list of node ranges and their properties associated with a multi-node parallel job.
+    * A list of node ranges and their properties that are associated with a multi-node parallel job.
     */
   var nodeRangeProperties: NodeRangeProperties
   
   /**
-    * The number of nodes associated with a multi-node parallel job.
+    * The number of nodes that are associated with a multi-node parallel job.
     */
   var numNodes: Integer
 }

@@ -1,12 +1,15 @@
 package typings.sipJs.mod
 
 import typings.sipJs.libApiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
-import typings.sipJs.libCoreMod.Logger
+import typings.sipJs.libCoreLogLoggerMod.Logger
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerMediaStreamFactoryMod.MediaStreamFactory
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerConfigurationMod.SessionDescriptionHandlerConfiguration
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerFactoryMod.SessionDescriptionHandlerFactory
+import typings.sipJs.libPlatformWebSessionManagerManagedSessionFactoryMod.ManagedSessionFactory
+import typings.sipJs.libPlatformWebSessionManagerSessionManagerOptionsMod.SessionManagerOptions
 import typings.sipJs.libPlatformWebSimpleUserSimpleUserOptionsMod.SimpleUserOptions
 import typings.sipJs.libPlatformWebTransportTransportOptionsMod.TransportOptions
+import typings.std.AudioContext
 import typings.std.MediaStream
 import typings.std.MediaStreamConstraints
 import typings.std.RTCConfiguration
@@ -56,6 +59,19 @@ object Web {
     inline def dispatchRemoveTrackEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("sip.js", "Web.SessionManager")
+  @js.native
+  open class SessionManager protected ()
+    extends typings.sipJs.libPlatformWebMod.SessionManager {
+    /**
+      * Constructs a new instance of the `SessionManager` class.
+      * @param server - SIP WebSocket Server URL.
+      * @param options - Options bucket. See {@link SessionManagerOptions} for details.
+      */
+    def this(server: String) = this()
+    def this(server: String, options: SessionManagerOptions) = this()
+  }
+  
   @JSImport("sip.js", "Web.SimpleUser")
   @js.native
   open class SimpleUser protected ()
@@ -89,9 +105,35 @@ object Web {
     inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("sip.js", "Web.WebAudioSessionDescriptionHandler")
+  @js.native
+  open class WebAudioSessionDescriptionHandler protected ()
+    extends typings.sipJs.libPlatformWebMod.WebAudioSessionDescriptionHandler {
+    def this(logger: Logger, mediaStreamFactory: MediaStreamFactory) = this()
+    def this(
+      logger: Logger,
+      mediaStreamFactory: MediaStreamFactory,
+      sessionDescriptionHandlerConfiguration: SessionDescriptionHandlerConfiguration
+    ) = this()
+  }
+  /* static members */
+  object WebAudioSessionDescriptionHandler {
+    
+    @JSImport("sip.js", "Web.WebAudioSessionDescriptionHandler")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("sip.js", "Web.WebAudioSessionDescriptionHandler.audioContext")
+    @js.native
+    def audioContext: js.UndefOr[AudioContext] = js.native
+    inline def audioContext_=(x: js.UndefOr[AudioContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("audioContext")(x.asInstanceOf[js.Any])
+  }
+  
   inline def addMidLines(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addMidLines")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   
   inline def cleanJitsiSdpImageattr(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanJitsiSdpImageattr")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
+  
+  inline def defaultManagedSessionFactory(): ManagedSessionFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultManagedSessionFactory")().asInstanceOf[ManagedSessionFactory]
   
   inline def defaultMediaStreamFactory(): MediaStreamFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMediaStreamFactory")().asInstanceOf[MediaStreamFactory]
   
@@ -107,6 +149,8 @@ object Web {
   ): SessionDescriptionHandlerFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSessionDescriptionHandlerFactory")(mediaStreamFactory.asInstanceOf[js.Any]).asInstanceOf[SessionDescriptionHandlerFactory]
   
   inline def holdModifier(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("holdModifier")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
+  
+  inline def startLocalConference(conferenceSessions: js.Array[typings.sipJs.libApiSessionMod.Session]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLocalConference")(conferenceSessions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def stripG722(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripG722")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]
   

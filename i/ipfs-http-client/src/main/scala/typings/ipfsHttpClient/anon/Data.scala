@@ -2,8 +2,10 @@ package typings.ipfsHttpClient.anon
 
 import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
 import typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
-import typings.multiformats.cidMod.CID
+import typings.ipldDagPb.distSrcInterfaceMod.PBLink
+import typings.ipldDagPb.distSrcInterfaceMod.PBNode
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.multiformats.mod.CID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,29 +19,17 @@ trait Data extends StObject {
     options: AbortOptions & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.PreloadOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[js.typedarray.Uint8Array] = js.native
   
-  def get(cid: CID[Any, Double, Double, Version]): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBNode */ Any
-  ] = js.native
+  def get(cid: CID[Any, Double, Double, Version]): js.Promise[PBNode] = js.native
   def get(
     cid: CID[Any, Double, Double, Version],
     options: AbortOptions & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.PreloadOptions */ Any) & HTTPClientExtraOptions
-  ): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBNode */ Any
-  ] = js.native
+  ): js.Promise[PBNode] = js.native
   
-  def links(cid: CID[Any, Double, Double, Version]): js.Promise[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBLink */ Any
-    ]
-  ] = js.native
+  def links(cid: CID[Any, Double, Double, Version]): js.Promise[js.Array[PBLink]] = js.native
   def links(
     cid: CID[Any, Double, Double, Version],
     options: AbortOptions & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.PreloadOptions */ Any) & HTTPClientExtraOptions
-  ): js.Promise[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBLink */ Any
-    ]
-  ] = js.native
+  ): js.Promise[js.Array[PBLink]] = js.native
   
   def `new`(): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def `new`(
@@ -48,11 +38,9 @@ trait Data extends StObject {
   
   var patch: AddLink = js.native
   
+  def put(obj: PBNode): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def put(
-    obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBNode */ Any
-  ): js.Promise[CID[Any, Double, Double, Version]] = js.native
-  def put(
-    obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBNode */ Any,
+    obj: PBNode,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.PutOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   

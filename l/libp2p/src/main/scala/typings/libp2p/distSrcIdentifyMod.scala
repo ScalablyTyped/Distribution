@@ -2,9 +2,13 @@ package typings.libp2p
 
 import typings.libp2p.anon.TypeofIdentify
 import typings.libp2p.distSrcIdentifyPbMessageMod.Identify
-import typings.libp2pComponents.mod.Components
+import typings.libp2pInterfaceAddressManager.mod.AddressManager
 import typings.libp2pInterfaceConnection.mod.Connection
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
+import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaceRegistrar.mod.IncomingStreamData
+import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.multiformatsMultiaddr.mod.Multiaddr_
@@ -19,7 +23,7 @@ object distSrcIdentifyMod {
   open class IdentifyService protected ()
     extends StObject
        with Startable {
-    def this(components: Components, init: IdentifyServiceInit) = this()
+    def this(components: IdentifyServiceComponents, init: IdentifyServiceInit) = this()
     
     /**
       * Sends the `Identify` response with the Signed Peer Record
@@ -142,6 +146,45 @@ object distSrcIdentifyMod {
     extension [Self <: HostProperties](x: Self) {
       
       inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait IdentifyServiceComponents extends StObject {
+    
+    var addressManager: AddressManager
+    
+    var connectionManager: ConnectionManager
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+    
+    var registrar: Registrar
+  }
+  object IdentifyServiceComponents {
+    
+    inline def apply(
+      addressManager: AddressManager,
+      connectionManager: ConnectionManager,
+      peerId: PeerId,
+      peerStore: PeerStore,
+      registrar: Registrar
+    ): IdentifyServiceComponents = {
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], connectionManager = connectionManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IdentifyServiceComponents]
+    }
+    
+    extension [Self <: IdentifyServiceComponents](x: Self) {
+      
+      inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+      
+      inline def setRegistrar(value: Registrar): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
     }
   }
   

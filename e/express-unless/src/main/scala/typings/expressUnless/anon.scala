@@ -3,9 +3,9 @@ package typings.expressUnless
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressUnless.distMod.Params
-import typings.expressUnless.distMod.Path
-import typings.expressUnless.distMod.RequestChecker
+import typings.expressUnless.mod.Params
+import typings.expressUnless.mod.Path
+import typings.expressUnless.mod.RequestChecker
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

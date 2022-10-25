@@ -109,9 +109,7 @@ object distSrcBlockMod {
     /**
       * The version to use to create the CID
       */
-    var version: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var version: js.UndefOr[Version] = js.undefined
   }
   object PutOptions {
     
@@ -134,9 +132,7 @@ object distSrcBlockMod {
       
       inline def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
       
-      inline def setVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }

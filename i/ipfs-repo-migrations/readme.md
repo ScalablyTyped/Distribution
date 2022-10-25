@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-repo-migrations
 
-Typings are for version 13.0.3
+Typings are for version 14.0.1
 
 ## Library description:
 Migration framework for versioning of JS IPFS Repo

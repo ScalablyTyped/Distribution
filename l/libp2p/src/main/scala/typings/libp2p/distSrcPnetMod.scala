@@ -1,7 +1,6 @@
 package typings.libp2p
 
 import typings.libp2pInterfaceConnection.mod.ConnectionProtector
-import typings.libp2pInterfaceConnection.mod.MultiaddrConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,33 +11,9 @@ object distSrcPnetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libp2p/dist/src/pnet", "PreSharedKeyConnectionProtector")
-  @js.native
-  open class PreSharedKeyConnectionProtector protected ()
-    extends StObject
-       with ConnectionProtector {
-    /**
-      * Takes a Private Shared Key (psk) and provides a `protect` method
-      * for wrapping existing connections in a private encryption stream.
-      */
-    def this(init: ProtectorInit) = this()
-    
-    /* private */ val enabled: Any = js.native
-    
-    /**
-      * Takes a given Connection and creates a private encryption stream
-      * between its two peers from the PSK the Protector instance was
-      * created with.
-      */
-    /* CompleteClass */
-    override def protect(connection: MultiaddrConnection): js.Promise[MultiaddrConnection] = js.native
-    
-    /* private */ val psk: Any = js.native
-    
-    var tag: String = js.native
-  }
-  
   inline def generateKey(bytes: js.typedarray.Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(bytes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def preSharedKey(init: ProtectorInit): js.Function0[ConnectionProtector] = ^.asInstanceOf[js.Dynamic].applyDynamic("preSharedKey")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ConnectionProtector]]
   
   trait ProtectorInit extends StObject {
     

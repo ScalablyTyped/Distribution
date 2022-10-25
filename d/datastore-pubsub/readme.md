@@ -1,7 +1,7 @@
 
 # Scala.js typings for datastore-pubsub
 
-Typings are for version 4.0.2
+Typings are for version 6.0.0
 
 ## Library description:
 Responsible for providing an interface-datastore compliant api to pubsub

@@ -15,6 +15,15 @@ object distSrcSelectMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def lazySelect(
+    stream: Duplex[
+      js.typedarray.Uint8Array | Uint8ArrayList, 
+      js.typedarray.Uint8Array | Uint8ArrayList, 
+      js.Promise[Unit]
+    ],
+    protocol: String
+  ): ProtocolStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("lazySelect")(stream.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[ProtocolStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
+  
   inline def select(
     stream: Duplex[Uint8ArrayList, Uint8ArrayList | js.typedarray.Uint8Array, js.Promise[Unit]],
     protocols: String

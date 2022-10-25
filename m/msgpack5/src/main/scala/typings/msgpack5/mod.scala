@@ -1,5 +1,6 @@
 package typings.msgpack5
 
+import typings.bl.mod.BufferListStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
@@ -56,13 +57,13 @@ object mod {
   @js.native
   trait MessagePack extends StObject {
     
-    def decode(buf: typings.bl.mod.^): Any = js.native
+    def decode(buf: BufferListStream): Any = js.native
     def decode(buf: Buffer): Any = js.native
     
     def decoder(): Decoder = js.native
     def decoder(opts: EncodeDecodeOptions): Decoder = js.native
     
-    def encode(obj: Any): typings.bl.mod.^ = js.native
+    def encode(obj: Any): BufferListStream = js.native
     
     def encoder(): Encoder = js.native
     def encoder(opts: EncodeDecodeOptions): Encoder = js.native

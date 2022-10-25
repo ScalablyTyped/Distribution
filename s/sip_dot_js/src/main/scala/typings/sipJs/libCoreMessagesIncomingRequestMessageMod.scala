@@ -1,7 +1,7 @@
 package typings.sipJs
 
 import typings.sipJs.libCoreMessagesIncomingMessageMod.IncomingMessage
-import typings.sipJs.libCoreMessagesMod.URI
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.amqpConnectionManager
 
-import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.AmpqConnectionOptions
+import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.AmqpConnectionOptions
 import typings.amqplib.propertiesMod.Options.Connect
 import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
@@ -64,7 +64,7 @@ object anon {
   
   trait ConnectionOptions extends StObject {
     
-    var connectionOptions: js.UndefOr[AmpqConnectionOptions] = js.undefined
+    var connectionOptions: js.UndefOr[AmqpConnectionOptions] = js.undefined
     
     var url: String
   }
@@ -77,7 +77,7 @@ object anon {
     
     extension [Self <: ConnectionOptions](x: Self) {
       
-      inline def setConnectionOptions(value: AmpqConnectionOptions): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
+      inline def setConnectionOptions(value: AmqpConnectionOptions): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
       
       inline def setConnectionOptionsUndefined: Self = StObject.set(x, "connectionOptions", js.undefined)
       
@@ -88,7 +88,7 @@ object anon {
   /* Inlined node.tls.ConnectionOptions & {  noDelay :boolean | undefined,   timeout :number | undefined,   keepAlive :boolean | undefined,   keepAliveDelay :number | undefined,   clientProperties :any | undefined,   credentials :{  mechanism :string,   username :string,   password :string, response (): node.buffer.<global>.Buffer} | {  mechanism :string, response (): node.buffer.<global>.Buffer} | undefined} */
   trait ConnectionOptionsnoDelayb
     extends StObject
-       with AmpqConnectionOptions {
+       with AmqpConnectionOptions {
     
     /**
       * An array of strings or a Buffer naming possible ALPN protocols.
@@ -698,7 +698,7 @@ object anon {
   /* Inlined node.net.TcpSocketConnectOpts & {  noDelay :boolean | undefined,   timeout :number | undefined,   keepAlive :boolean | undefined,   keepAliveDelay :number | undefined,   clientProperties :any | undefined,   credentials :{  mechanism :string,   username :string,   password :string, response (): node.buffer.<global>.Buffer} | {  mechanism :string, response (): node.buffer.<global>.Buffer} | undefined} */
   trait TcpSocketConnectOptsnoDel
     extends StObject
-       with AmpqConnectionOptions {
+       with AmqpConnectionOptions {
     
     var clientProperties: js.UndefOr[Any] = js.undefined
     

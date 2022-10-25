@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "it-peekable"
-version := "1.0.3-e076cc"
+version := "2.0.0-1d0144"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

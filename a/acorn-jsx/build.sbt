@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "acorn-jsx"
-version := "5.3.2-dceb70"
+version := "5.3.2-85db89"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "acorn" % "8.8.0-8dbb4d",
+  "org.scalablytyped" %%% "acorn" % "8.8.1-bfd3ad",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

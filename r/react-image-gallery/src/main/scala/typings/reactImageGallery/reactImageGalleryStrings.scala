@@ -11,6 +11,14 @@ object reactImageGalleryStrings {
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
+  
+  @js.native
+  sealed trait `lazy` extends StObject
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
   sealed trait left extends StObject
   inline def left: left = "left".asInstanceOf[left]
   

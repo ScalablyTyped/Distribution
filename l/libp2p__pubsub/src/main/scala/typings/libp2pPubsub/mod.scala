@@ -1,7 +1,6 @@
 package typings.libp2pPubsub
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
+import org.scalablytyped.runtime.StringDictionary
 import typings.libp2pInterfaceConnection.mod.Connection
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePubsub.mod.Message
@@ -13,6 +12,7 @@ import typings.libp2pInterfacePubsub.mod.PubSubRPCMessage
 import typings.libp2pInterfacePubsub.mod.PubSubRPCSubscription
 import typings.libp2pInterfacePubsub.mod.PublishResult
 import typings.libp2pInterfaceRegistrar.mod.IncomingStreamData
+import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.libp2pPeerCollections.mod.PeerMap
 import typings.libp2pPeerCollections.mod.PeerSet
 import typings.libp2pPubsub.anon.Data
@@ -32,10 +32,8 @@ object mod {
   
   /* note: abstract class */ @JSImport("@libp2p/pubsub", "PubSubBaseProtocol")
   @js.native
-  open class PubSubBaseProtocol[Events] protected ()
-    extends PubSub[Events]
-       with Initializable {
-    def this(props: PubSubInit) = this()
+  open class PubSubBaseProtocol[Events /* <: StringDictionary[Any] */] protected () extends PubSub[Events] {
+    def this(components: PubSubComponents, props: PubSubInit) = this()
     
     /**
       * On an inbound stream opened
@@ -82,7 +80,7 @@ object mod {
       */
     var canRelayMessage: Boolean = js.native
     
-    var components: Components = js.native
+    var components: PubSubComponents = js.native
     
     /**
       * Decode Uint8Array into an RPC object.
@@ -115,9 +113,6 @@ object mod {
       * Child class can override this.
       */
     def getMsgId(msg: Message): Await[js.typedarray.Uint8Array] = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     def isStarted(): Boolean = js.native
     
@@ -196,14 +191,6 @@ object mod {
     var subscriptions: Set[String] = js.native
     
     /**
-      * Topic validator map
-      *
-      * Keyed by topic
-      * Topic validators are functions with the following input:
-      */
-    var topicValidators: Map[String, TopicValidator] = js.native
-    
-    /**
       * Map of topics to which peers are subscribed to
       */
     var topics: Map[String, PeerSet] = js.native
@@ -212,8 +199,27 @@ object mod {
       * Validates the given message. The signature will be checked for authenticity.
       * Throws an error on invalid messages
       */
-    def validate(message: Message): js.Promise[Unit] = js.native
+    def validate(from: PeerId, message: Message): js.Promise[Unit] = js.native
   }
   
-  type TopicValidator = js.Function2[/* topic */ String, /* message */ Message, js.Promise[Unit]]
+  trait PubSubComponents extends StObject {
+    
+    var peerId: PeerId
+    
+    var registrar: Registrar
+  }
+  object PubSubComponents {
+    
+    inline def apply(peerId: PeerId, registrar: Registrar): PubSubComponents = {
+      val __obj = js.Dynamic.literal(peerId = peerId.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PubSubComponents]
+    }
+    
+    extension [Self <: PubSubComponents](x: Self) {
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setRegistrar(value: Registrar): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
+    }
+  }
 }

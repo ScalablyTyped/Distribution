@@ -2,6 +2,7 @@ package typings.awsSdk.clientsSagemakerMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.Active_
+import typings.awsSdk.awsSdkStrings.BENCHMARK
 import typings.awsSdk.awsSdkStrings.GreengrassV2Component
 import typings.awsSdk.awsSdkStrings.PHASES
 import typings.awsSdk.awsSdkStrings.Prioritized
@@ -353,6 +354,7 @@ type AutoMLMetricEnum = _AutoMLMetricEnum | java.lang.String
   - typings.awsSdk.awsSdkStrings.Recall
   - typings.awsSdk.awsSdkStrings.RecallMacro
   - typings.awsSdk.awsSdkStrings.LogLoss
+  - typings.awsSdk.awsSdkStrings.InferenceLatency
   - java.lang.String
 */
 type AutoMLMetricExtendedEnum = _AutoMLMetricExtendedEnum | java.lang.String
@@ -1397,6 +1399,8 @@ type InferenceExecutionMode = _InferenceExecutionMode | java.lang.String
 type InferenceImage = java.lang.String
 
 type InferenceRecommendations = js.Array[InferenceRecommendation]
+
+type InferenceRecommendationsJobSteps = js.Array[InferenceRecommendationsJobStep]
 
 type InferenceRecommendationsJobs = js.Array[InferenceRecommendationsJob]
 
@@ -2534,6 +2538,8 @@ type RStudioServerProUserGroup = _RStudioServerProUserGroup | java.lang.String
 
 type RealtimeInferenceInstanceTypes = js.Array[ProductionVariantInstanceType]
 
+type RecommendationFailureReason = java.lang.String
+
 type RecommendationJobArn = java.lang.String
 
 type RecommendationJobDescription = java.lang.String
@@ -2561,6 +2567,8 @@ type RecommendationJobSupportedInstanceTypes = js.Array[String]
   - java.lang.String
 */
 type RecommendationJobType = _RecommendationJobType | java.lang.String
+
+type RecommendationStepType = BENCHMARK | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.None_

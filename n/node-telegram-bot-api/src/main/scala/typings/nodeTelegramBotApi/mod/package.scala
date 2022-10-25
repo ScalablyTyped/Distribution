@@ -15,8 +15,6 @@ type InputMessageContent = js.Object
 
 type SendGameOptions = SendBasicOptions
 
-type SendLocationOptions = SendBasicOptions
-
 type SendStickerOptions = SendBasicOptions
 
 type StopMessageLiveLocationOptions = EditMessageCaptionOptions

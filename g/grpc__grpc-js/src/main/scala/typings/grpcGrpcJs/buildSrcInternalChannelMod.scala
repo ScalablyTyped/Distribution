@@ -14,6 +14,7 @@ import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
 import typings.grpcGrpcJs.buildSrcPickerMod.PickResult
 import typings.grpcGrpcJs.buildSrcResolverMod.CallConfig
 import typings.grpcGrpcJs.buildSrcResolvingCallMod.ResolvingCall
+import typings.grpcGrpcJs.buildSrcRetryingCallMod.RetryingCall
 import typings.grpcGrpcJs.buildSrcServerCallMod.ServerSurfaceCall
 import typings.grpcGrpcJs.grpcGrpcJsStrings.ERROR
 import typings.grpcGrpcJs.grpcGrpcJsStrings.NONE
@@ -142,6 +143,14 @@ object buildSrcInternalChannelMod {
       propagateFlags: Double
     ): ResolvingCall = js.native
     
+    def createRetryingCall(
+      callConfig: CallConfig,
+      method: String,
+      host: String,
+      credentials: CallCredentials,
+      deadline: Deadline
+    ): RetryingCall = js.native
+    
     /* private */ val credentials: Any = js.native
     
     /* private */ var currentPicker: Any = js.native
@@ -189,6 +198,8 @@ object buildSrcInternalChannelMod {
     /* private */ var removeConnectivityStateWatcher: Any = js.native
     
     /* private */ var resolvingLoadBalancer: Any = js.native
+    
+    /* private */ var retryBufferTracker: Any = js.native
     
     /* private */ var subchannelPool: Any = js.native
     

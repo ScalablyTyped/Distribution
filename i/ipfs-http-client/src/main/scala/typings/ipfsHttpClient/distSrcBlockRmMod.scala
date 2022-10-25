@@ -12,8 +12,8 @@ object distSrcBlockRmMod {
   @js.native
   val createRm: Factory[
     js.Function2[
-      /* cid */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any) | (js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
+      /* cid */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any) | (js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any
       ]), 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_block.RmOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions

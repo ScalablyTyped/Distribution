@@ -1,6 +1,8 @@
 package typings.libp2p
 
-import typings.libp2pComponents.mod.Components
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
+import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +20,7 @@ object distSrcConnectionManagerAutoDiallerMod {
       * It will keep the number of connections below the upper limit and sort
       * the peers to connect based on wether we know their keys and protocols.
       */
-    def this(components: Components, init: AutoDiallerInit) = this()
+    def this(components: AutoDiallerComponents, init: AutoDiallerInit) = this()
     
     def _autoDial(): js.Promise[Unit] = js.native
     
@@ -48,6 +50,31 @@ object distSrcConnectionManagerAutoDiallerMod {
       */
     /* CompleteClass */
     override def stop(): Unit | js.Promise[Unit] = js.native
+  }
+  
+  trait AutoDiallerComponents extends StObject {
+    
+    var connectionManager: ConnectionManager
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+  }
+  object AutoDiallerComponents {
+    
+    inline def apply(connectionManager: ConnectionManager, peerId: PeerId, peerStore: PeerStore): AutoDiallerComponents = {
+      val __obj = js.Dynamic.literal(connectionManager = connectionManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AutoDiallerComponents]
+    }
+    
+    extension [Self <: AutoDiallerComponents](x: Self) {
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+    }
   }
   
   trait AutoDiallerInit extends StObject {

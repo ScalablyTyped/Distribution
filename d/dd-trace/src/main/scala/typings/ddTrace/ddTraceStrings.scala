@@ -243,6 +243,10 @@ object ddTraceStrings {
   inline def noop: noop = "noop".asInstanceOf[noop]
   
   @js.native
+  sealed trait opensearch extends StObject
+  inline def opensearch: opensearch = "opensearch".asInstanceOf[opensearch]
+  
+  @js.native
   sealed trait oracledb extends StObject
   inline def oracledb: oracledb = "oracledb".asInstanceOf[oracledb]
   

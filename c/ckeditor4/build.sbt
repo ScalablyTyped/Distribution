@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ckeditor4"
-version := "4.16-dt-20220913Z-25edf2"
+version := "4.16-dt-20221024Z-39e5be"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

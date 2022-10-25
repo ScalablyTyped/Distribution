@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-dht
 
-Typings are for version 1.0.1
+Typings are for version 1.0.2
 
 ## Library description:
 DHT interface for libp2p

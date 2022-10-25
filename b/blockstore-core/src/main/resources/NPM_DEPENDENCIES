@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "blockstore-core" : "2.0.1"
+      "blockstore-core" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "blockstore-core" : "2.0.1"
+      "blockstore-core" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -2,8 +2,9 @@ package typings.ipfsHttpClient.anon
 
 import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
 import typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
-import typings.multiformats.cidMod.CID
+import typings.ipldDagPb.distSrcInterfaceMod.PBLink
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.multiformats.mod.CID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AddLink extends StObject {
   
+  def addLink(cid: CID[Any, Double, Double, Version], dLink: PBLink): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def addLink(
     cid: CID[Any, Double, Double, Version],
-    dLink: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBLink */ Any
-  ): js.Promise[CID[Any, Double, Double, Version]] = js.native
-  def addLink(
-    cid: CID[Any, Double, Double, Version],
-    dLink: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBLink */ Any,
+    dLink: PBLink,
     options: AbortOptions & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   
@@ -34,13 +32,10 @@ trait AddLink extends StObject {
     dLink: String,
     options: AbortOptions & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
+  def rmLink(cid: CID[Any, Double, Double, Version], dLink: PBLink): js.Promise[CID[Any, Double, Double, Version]] = js.native
   def rmLink(
     cid: CID[Any, Double, Double, Version],
-    dLink: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBLink */ Any
-  ): js.Promise[CID[Any, Double, Double, Version]] = js.native
-  def rmLink(
-    cid: CID[Any, Double, Double, Version],
-    dLink: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.PBLink */ Any,
+    dLink: PBLink,
     options: AbortOptions & HTTPClientExtraOptions
   ): js.Promise[CID[Any, Double, Double, Version]] = js.native
   

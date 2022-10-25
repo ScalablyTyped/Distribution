@@ -22,7 +22,7 @@ trait UpdateJobQueueRequest extends StObject {
   var priority: js.UndefOr[Integer] = js.undefined
   
   /**
-    * Amazon Resource Name (ARN) of the fair share scheduling policy. Once a job queue is created, the fair share scheduling policy can be replaced but not removed. The format is aws:Partition:batch:Region:Account:scheduling-policy/Name . For example, aws:aws:batch:us-west-2:012345678910:scheduling-policy/MySchedulingPolicy.
+    * Amazon Resource Name (ARN) of the fair share scheduling policy. Once a job queue is created, the fair share scheduling policy can be replaced but not removed. The format is aws:Partition:batch:Region:Account:scheduling-policy/Name . For example, aws:aws:batch:us-west-2:123456789012:scheduling-policy/MySchedulingPolicy.
     */
   var schedulingPolicyArn: js.UndefOr[String] = js.undefined
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for blockstore-datastore-adapter
 
-Typings are for version 3.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 datastore interface

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-async-script"
-version := "1.2-dt-20211202Z-d56671"
+version := "1.2-dt-20211202Z-f8090a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20220624Z-ce6128",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20220624Z-76bac7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

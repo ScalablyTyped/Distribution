@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-resolve" : "29.2.1"
+      "jest-resolve" : "29.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-resolve" : "29.2.1"
+      "jest-resolve" : "29.2.2"
     }
   ],
   "compile-devDependencies" : [

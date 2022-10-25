@@ -11,44 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-    * @template T
-    * @typedef {Object} Peek
-    * @property {() => IteratorResult<T, void>} peek
-    */
-  /**
-    * @template T
-    * @typedef {Object} AsyncPeek
-    * @property {() => Promise<IteratorResult<T, void>>} peek
-    */
-  /**
-    * @template T
-    * @typedef {Object} Push
-    * @property {(value:T) => void} push
-    */
-  /**
-    * @template T
-    * @typedef {Iterable<T> & Peek<T> & Push<T> & Iterator<T>} Peekable<T>
-    */
-  /**
-    * @template T
-    * @typedef {AsyncIterable<T> & AsyncPeek<T> & Push<T> & AsyncIterator<T>} AsyncPeekable<T>
-    */
-  /**
-    * @template {Iterable<any> | AsyncIterable<any>} I
-    * @param {I} iterable
-    * @returns {I extends Iterable<infer T>
-    *  ? Peekable<T>
-    *  : I extends AsyncIterable<infer T>
-    *  ? AsyncPeekable<T>
-    *  : never
-    * }
-    */
-  inline def apply[I /* <: js.Iterable[Any] | AsyncIterable[Any] */](iterable: I): /* import warning: importer.ImportType#apply Failed type conversion: I extends std.Iterable<infer T> ? it-peekable.it-peekable.Peekable<T> : I extends std.AsyncIterable<infer T_1> ? it-peekable.it-peekable.AsyncPeekable<T_1> : never */ js.Any = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: I extends std.Iterable<infer T> ? it-peekable.it-peekable.Peekable<T> : I extends std.AsyncIterable<infer T_1> ? it-peekable.it-peekable.AsyncPeekable<T_1> : never */ js.Any]
-  
   @JSImport("it-peekable", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default[I](iterable: I): /* import warning: importer.ImportType#apply Failed type conversion: I extends std.Iterable<infer T> ? it-peekable.it-peekable.Peekable<T> : I extends std.AsyncIterable<infer T> ? it-peekable.it-peekable.AsyncPeekable<T> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterable.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: I extends std.Iterable<infer T> ? it-peekable.it-peekable.Peekable<T> : I extends std.AsyncIterable<infer T> ? it-peekable.it-peekable.AsyncPeekable<T> : never */ js.Any]
   
   trait AsyncPeek[T] extends StObject {
     
@@ -67,9 +34,6 @@ object mod {
     }
   }
   
-  /**
-    * <T>
-    */
   @js.native
   trait AsyncPeekable[T]
     extends StObject
@@ -95,9 +59,6 @@ object mod {
     }
   }
   
-  /**
-    * <T>
-    */
   @js.native
   trait Peekable[T]
     extends StObject

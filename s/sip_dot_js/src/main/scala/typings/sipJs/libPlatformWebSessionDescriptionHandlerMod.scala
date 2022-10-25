@@ -1,9 +1,11 @@
 package typings.sipJs
 
-import typings.sipJs.libCoreMod.Logger
+import typings.sipJs.libApiSessionMod.Session
+import typings.sipJs.libCoreLogLoggerMod.Logger
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerMediaStreamFactoryMod.MediaStreamFactory
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerConfigurationMod.SessionDescriptionHandlerConfiguration
 import typings.sipJs.libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerFactoryMod.SessionDescriptionHandlerFactory
+import typings.std.AudioContext
 import typings.std.MediaStream
 import typings.std.MediaStreamConstraints
 import typings.std.RTCConfiguration
@@ -52,6 +54,30 @@ object libPlatformWebSessionDescriptionHandlerMod {
     inline def dispatchRemoveTrackEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("sip.js/lib/platform/web/session-description-handler", "WebAudioSessionDescriptionHandler")
+  @js.native
+  open class WebAudioSessionDescriptionHandler protected ()
+    extends typings.sipJs.libPlatformWebSessionDescriptionHandlerWebAudioSessionDescriptionHandlerMod.WebAudioSessionDescriptionHandler {
+    def this(logger: Logger, mediaStreamFactory: MediaStreamFactory) = this()
+    def this(
+      logger: Logger,
+      mediaStreamFactory: MediaStreamFactory,
+      sessionDescriptionHandlerConfiguration: SessionDescriptionHandlerConfiguration
+    ) = this()
+  }
+  /* static members */
+  object WebAudioSessionDescriptionHandler {
+    
+    @JSImport("sip.js/lib/platform/web/session-description-handler", "WebAudioSessionDescriptionHandler")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("sip.js/lib/platform/web/session-description-handler", "WebAudioSessionDescriptionHandler.audioContext")
+    @js.native
+    def audioContext: js.UndefOr[AudioContext] = js.native
+    inline def audioContext_=(x: js.UndefOr[AudioContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("audioContext")(x.asInstanceOf[js.Any])
+  }
+  
   inline def defaultMediaStreamFactory(): MediaStreamFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMediaStreamFactory")().asInstanceOf[MediaStreamFactory]
   
   inline def defaultPeerConnectionConfiguration(): RTCConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultPeerConnectionConfiguration")().asInstanceOf[RTCConfiguration]
@@ -64,4 +90,6 @@ object libPlatformWebSessionDescriptionHandlerMod {
       js.Promise[MediaStream]
     ]
   ): SessionDescriptionHandlerFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSessionDescriptionHandlerFactory")(mediaStreamFactory.asInstanceOf[js.Any]).asInstanceOf[SessionDescriptionHandlerFactory]
+  
+  inline def startLocalConference(conferenceSessions: js.Array[Session]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLocalConference")(conferenceSessions.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

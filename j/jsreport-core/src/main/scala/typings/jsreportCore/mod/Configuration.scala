@@ -40,6 +40,8 @@ trait Configuration extends StObject {
   
   var extensionsList: js.UndefOr[js.Array[String]] = js.undefined
   
+  var httpPort: js.UndefOr[Double] = js.undefined
+  
   /**
     * specifies if jsreport should load configuration values from external sources (cli args, env vars, configuration files) or not
     * @default getDefaultLoadConfig()
@@ -126,6 +128,10 @@ object Configuration {
     inline def setExtensionsListVarargs(value: String*): Self = StObject.set(x, "extensionsList", js.Array(value*))
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    
+    inline def setHttpPort(value: Double): Self = StObject.set(x, "httpPort", value.asInstanceOf[js.Any])
+    
+    inline def setHttpPortUndefined: Self = StObject.set(x, "httpPort", js.undefined)
     
     inline def setLoadConfig(value: Boolean): Self = StObject.set(x, "loadConfig", value.asInstanceOf[js.Any])
     

@@ -25,8 +25,8 @@ object mod {
       * Initiate a new stream with the given name. If no name is
       * provided, the id of the stream will be used.
       */
-    def newStream(): Stream = js.native
-    def newStream(name: String): Stream = js.native
+    def newStream(): Stream | js.Promise[Stream] = js.native
+    def newStream(name: String): Stream | js.Promise[Stream] = js.native
     
     var protocol: String = js.native
     

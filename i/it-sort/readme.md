@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-sort
 
-Typings are for version 1.0.1
+Typings are for version 2.0.0
 
 ## Library description:
 Collects all values from an async iterator, sorts them using the passed function and yields them

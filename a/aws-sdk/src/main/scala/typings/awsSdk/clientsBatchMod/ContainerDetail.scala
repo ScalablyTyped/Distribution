@@ -17,7 +17,7 @@ trait ContainerDetail extends StObject {
   var containerInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The environment variables to pass to a container.  Environment variables must not start with AWS_BATCH; this naming convention is reserved for variables that are set by the Batch service. 
+    * The environment variables to pass to a container.  Environment variables cannot start with "AWS_BATCH". This naming convention is reserved for variables that Batch sets. 
     */
   var environment: js.UndefOr[EnvironmentVariables] = js.undefined
   
@@ -47,7 +47,7 @@ trait ContainerDetail extends StObject {
   var instanceType: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) associated with the job upon execution.
+    * The Amazon Resource Name (ARN) that's associated with the job when run.
     */
   var jobRoleArn: js.UndefOr[String] = js.undefined
   
@@ -57,12 +57,12 @@ trait ContainerDetail extends StObject {
   var linuxParameters: js.UndefOr[LinuxParameters] = js.undefined
   
   /**
-    * The log configuration specification for the container. This parameter maps to LogConfig in the Create a container section of the Docker Remote API and the --log-driver option to docker run. By default, containers use the same logging driver that the Docker daemon uses. However, the container might use a different logging driver than the Docker daemon by specifying a log driver with this parameter in the container definition. To use a different logging driver for a container, the log system must be configured properly on the container instance. Or, alternatively, it must be configured on a different log server for remote logging options. For more information on the options for different supported log drivers, see Configure logging drivers in the Docker documentation.  Batch currently supports a subset of the logging drivers available to the Docker daemon (shown in the LogConfiguration data type). Additional log drivers might be available in future releases of the Amazon ECS container agent.  This parameter requires version 1.18 of the Docker Remote API or greater on your container instance. To check the Docker Remote API version on your container instance, log into your container instance and run the following command: sudo docker version | grep "Server API version"   The Amazon ECS container agent running on a container instance must register the logging drivers available on that instance with the ECS_AVAILABLE_LOGGING_DRIVERS environment variable before containers placed on that instance can use these log configuration options. For more information, see Amazon ECS container agent configuration in the Amazon Elastic Container Service Developer Guide. 
+    * The log configuration specification for the container. This parameter maps to LogConfig in the Create a container section of the Docker Remote API and the --log-driver option to docker run. By default, containers use the same logging driver that the Docker daemon uses. However, the container might use a different logging driver than the Docker daemon by specifying a log driver with this parameter in the container definition. To use a different logging driver for a container, the log system must be configured properly on the container instance. Or, alternatively, it must be configured on a different log server for remote logging options. For more information on the options for different supported log drivers, see Configure logging drivers in the Docker documentation.  Batch currently supports a subset of the logging drivers available to the Docker daemon (shown in the LogConfiguration data type). Additional log drivers might be available in future releases of the Amazon ECS container agent.  This parameter requires version 1.18 of the Docker Remote API or greater on your container instance. To check the Docker Remote API version on your container instance, log in to your container instance and run the following command: sudo docker version | grep "Server API version"   The Amazon ECS container agent running on a container instance must register the logging drivers available on that instance with the ECS_AVAILABLE_LOGGING_DRIVERS environment variable before containers placed on that instance can use these log configuration options. For more information, see Amazon ECS container agent configuration in the Amazon Elastic Container Service Developer Guide. 
     */
   var logConfiguration: js.UndefOr[LogConfiguration] = js.undefined
   
   /**
-    * The name of the CloudWatch Logs log stream associated with the container. The log group for Batch jobs is /aws/batch/job. Each container attempt receives a log stream name when they reach the RUNNING status.
+    * The name of the Amazon CloudWatch Logs log stream that's associated with the container. The log group for Batch jobs is /aws/batch/job. Each container attempt receives a log stream name when they reach the RUNNING status.
     */
   var logStreamName: js.UndefOr[String] = js.undefined
   
@@ -82,7 +82,7 @@ trait ContainerDetail extends StObject {
   var networkConfiguration: js.UndefOr[NetworkConfiguration] = js.undefined
   
   /**
-    * The network interfaces associated with the job.
+    * The network interfaces that are associated with the job.
     */
   var networkInterfaces: js.UndefOr[NetworkInterfaceList] = js.undefined
   
@@ -97,7 +97,7 @@ trait ContainerDetail extends StObject {
   var readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
+    * A short (255 max characters) human-readable string to provide additional details for a running or stopped container.
     */
   var reason: js.UndefOr[String] = js.undefined
   
@@ -132,7 +132,7 @@ trait ContainerDetail extends StObject {
   var vcpus: js.UndefOr[Integer] = js.undefined
   
   /**
-    * A list of volumes associated with the job.
+    * A list of volumes that are associated with the job.
     */
   var volumes: js.UndefOr[Volumes] = js.undefined
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hamt-sharding" : "3.0.1"
+      "hamt-sharding" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "hamt-sharding" : "3.0.1"
+      "hamt-sharding" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

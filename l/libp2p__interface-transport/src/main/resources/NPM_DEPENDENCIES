@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interface-transport" : "1.0.4"
+      "@libp2p/interface-transport" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interface-transport" : "1.0.4"
+      "@libp2p/interface-transport" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

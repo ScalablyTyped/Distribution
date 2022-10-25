@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcInsecureMod {
   
-  @JSImport("libp2p/dist/src/insecure", "Plaintext")
+  @JSImport("libp2p/dist/src/insecure", JSImport.Namespace)
   @js.native
-  open class Plaintext ()
-    extends StObject
-       with ConnectionEncrypter
+  val ^ : js.Any = js.native
+  
+  inline def plaintext(): js.Function0[ConnectionEncrypter[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("plaintext")().asInstanceOf[js.Function0[ConnectionEncrypter[Any]]]
 }

@@ -2,11 +2,11 @@ package typings.sipJs
 
 import typings.sipJs.anon.Cseq
 import typings.sipJs.libCoreDialogsDialogStateMod.DialogState
-import typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
-import typings.sipJs.libCoreMessagesMod.IncomingResponseMessage
-import typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage
-import typings.sipJs.libCoreMessagesMod.URI
-import typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
+import typings.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage
+import typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage
+import typings.sipJs.libCoreUserAgentCoreUserAgentCoreMod.UserAgentCore
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

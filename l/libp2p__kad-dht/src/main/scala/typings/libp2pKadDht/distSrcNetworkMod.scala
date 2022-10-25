@@ -1,8 +1,6 @@
 package typings.libp2pKadDht
 
 import typings.itStreamTypes.mod.Duplex
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfaceDht.mod.DialingPeerEvent
 import typings.libp2pInterfaceDht.mod.PeerResponseEvent
 import typings.libp2pInterfaceDht.mod.QueryErrorEvent
@@ -13,6 +11,7 @@ import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pInterfaces.eventsMod.EventEmitter
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.libp2pKadDht.distSrcMessageMod.Message
+import typings.libp2pKadDht.mod.KadDHTComponents
 import typings.std.AsyncGenerator
 import typings.std.CustomEvent
 import typings.uint8arraylist.mod.Uint8ArrayList
@@ -26,12 +25,11 @@ object distSrcNetworkMod {
   @js.native
   open class Network protected ()
     extends EventEmitter[NetworkEvents]
-       with Startable
-       with Initializable {
+       with Startable {
     /**
       * Create a new network
       */
-    def this(init: NetworkInit) = this()
+    def this(components: KadDHTComponents, init: NetworkInit) = this()
     
     /**
       * Write a message to the given stream
@@ -63,10 +61,7 @@ object distSrcNetworkMod {
       options: AbortOptions
     ): js.Promise[Message] = js.native
     
-    /* private */ var components: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
+    /* private */ val components: Any = js.native
     
     /* CompleteClass */
     override def isStarted(): Boolean = js.native

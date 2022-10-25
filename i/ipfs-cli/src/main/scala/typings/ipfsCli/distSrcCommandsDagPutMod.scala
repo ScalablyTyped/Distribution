@@ -6,6 +6,7 @@ import typings.ipfsCli.ipfsCliStrings.`dag-cbor`
 import typings.ipfsCli.ipfsCliStrings.`dag-json`
 import typings.ipfsCli.ipfsCliStrings.`dag-pb`
 import typings.ipfsCli.ipfsCliStrings.raw
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.yargs.mod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +20,7 @@ object distSrcCommandsDagPutMod extends Shortcut {
     * @property {string} Argv.data
     * @property {'dag-cbor' | 'dag-json' | 'dag-pb' | 'raw'} Argv.inputCodec
     * @property {'dag-cbor' | 'dag-json' | 'dag-pb' | 'raw'} Argv.storeCodec
-    * @property {import('multiformats/cid').CIDVersion} Argv.cidVersion
+    * @property {import('multiformats/cid').Version} Argv.cidVersion
     * @property {boolean} Argv.pin
     * @property {string} Argv.hashAlg
     * @property {string} Argv.cidBase
@@ -36,7 +37,7 @@ object distSrcCommandsDagPutMod extends Shortcut {
     
     var cidBase: String
     
-    var cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
+    var cidVersion: Version
     
     var ctx: Context
     
@@ -60,7 +61,7 @@ object distSrcCommandsDagPutMod extends Shortcut {
     
     inline def apply(
       cidBase: String,
-      cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any,
+      cidVersion: Version,
       ctx: Context,
       data: String,
       hashAlg: String,
@@ -79,9 +80,7 @@ object distSrcCommandsDagPutMod extends Shortcut {
       
       inline def setCidBase(value: String): Self = StObject.set(x, "cidBase", value.asInstanceOf[js.Any])
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCtx(value: Context): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       

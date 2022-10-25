@@ -7,6 +7,7 @@ import typings.libp2pKadDht.distSrcQueryManagerMod.CleanUpEvents
 import typings.libp2pKadDht.distSrcQueryTypesMod.QueryContext
 import typings.libp2pKadDht.distSrcQueryTypesMod.QueryFunc
 import typings.libp2pLogger.mod.Logger_
+import typings.libp2pPeerCollections.mod.PeerSet
 import typings.std.AbortSignal
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
@@ -65,6 +66,11 @@ object distSrcQueryQueryPathMod {
     var pathIndex: Double
     
     /**
+      * Set of peers seen by this and other paths
+      */
+    var peersSeen: PeerSet
+    
+    /**
       * The query function to run with each peer
       */
     def query(context: QueryContext): AsyncIterable[QueryEvent]
@@ -100,11 +106,12 @@ object distSrcQueryQueryPathMod {
       numPaths: Double,
       ourPeerId: PeerId,
       pathIndex: Double,
+      peersSeen: PeerSet,
       query: /* context */ QueryContext => AsyncIterable[QueryEvent],
       signal: AbortSignal,
       startingPeer: PeerId
     ): QueryPathOptions = {
-      val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], cleanUp = cleanUp.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], numPaths = numPaths.asInstanceOf[js.Any], ourPeerId = ourPeerId.asInstanceOf[js.Any], pathIndex = pathIndex.asInstanceOf[js.Any], query = js.Any.fromFunction1(query), signal = signal.asInstanceOf[js.Any], startingPeer = startingPeer.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], cleanUp = cleanUp.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], numPaths = numPaths.asInstanceOf[js.Any], ourPeerId = ourPeerId.asInstanceOf[js.Any], pathIndex = pathIndex.asInstanceOf[js.Any], peersSeen = peersSeen.asInstanceOf[js.Any], query = js.Any.fromFunction1(query), signal = signal.asInstanceOf[js.Any], startingPeer = startingPeer.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryPathOptions]
     }
     
@@ -123,6 +130,8 @@ object distSrcQueryQueryPathMod {
       inline def setOurPeerId(value: PeerId): Self = StObject.set(x, "ourPeerId", value.asInstanceOf[js.Any])
       
       inline def setPathIndex(value: Double): Self = StObject.set(x, "pathIndex", value.asInstanceOf[js.Any])
+      
+      inline def setPeersSeen(value: PeerSet): Self = StObject.set(x, "peersSeen", value.asInstanceOf[js.Any])
       
       inline def setQuery(value: /* context */ QueryContext => AsyncIterable[QueryEvent]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
       

@@ -1850,6 +1850,13 @@ object blueprintjsIconsStrings {
   inline def HighPriority: HighPriority = "HighPriority".asInstanceOf[HighPriority]
   
   @js.native
+  sealed trait HighVoltagePole
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def HighVoltagePole: HighVoltagePole = "HighVoltagePole".asInstanceOf[HighVoltagePole]
+  
+  @js.native
   sealed trait Highlight
     extends StObject
        with BlueprintIcons16Key
@@ -2369,6 +2376,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Key
        with BlueprintIcons20Key
   inline def LogOut: LogOut = "LogOut".asInstanceOf[LogOut]
+  
+  @js.native
+  sealed trait LowVoltagePole
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def LowVoltagePole: LowVoltagePole = "LowVoltagePole".asInstanceOf[LowVoltagePole]
   
   @js.native
   sealed trait M
@@ -3391,6 +3405,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Key
        with BlueprintIcons20Key
   inline def SmallCross: SmallCross = "SmallCross".asInstanceOf[SmallCross]
+  
+  @js.native
+  sealed trait SmallInfoSign
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def SmallInfoSign: SmallInfoSign = "SmallInfoSign".asInstanceOf[SmallInfoSign]
   
   @js.native
   sealed trait SmallMinus
@@ -5897,6 +5918,13 @@ object blueprintjsIconsStrings {
   inline def `high-priority`: `high-priority` = "high-priority".asInstanceOf[`high-priority`]
   
   @js.native
+  sealed trait `high-voltage-pole`
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def `high-voltage-pole`: `high-voltage-pole` = "high-voltage-pole".asInstanceOf[`high-voltage-pole`]
+  
+  @js.native
   sealed trait highlight_
     extends StObject
        with BlueprintIcons16Id
@@ -6392,6 +6420,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def `log-out`: `log-out` = "log-out".asInstanceOf[`log-out`]
+  
+  @js.native
+  sealed trait `low-voltage-pole`
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def `low-voltage-pole`: `low-voltage-pole` = "low-voltage-pole".asInstanceOf[`low-voltage-pole`]
   
   @js.native
   sealed trait manual_
@@ -7372,6 +7407,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def `small-cross`: `small-cross` = "small-cross".asInstanceOf[`small-cross`]
+  
+  @js.native
+  sealed trait `small-info-sign`
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def `small-info-sign`: `small-info-sign` = "small-info-sign".asInstanceOf[`small-info-sign`]
   
   @js.native
   sealed trait `small-minus`

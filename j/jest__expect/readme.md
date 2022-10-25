@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__expect
 
-Typings are for version 29.2.1
+Typings are for version 29.2.2
 
 ## Library description:
 This package extends `expect` library with `jest-snapshot` matchers. It exports `jestExpect` object, which can be used as standalone replacement of `expect`.

@@ -7,7 +7,7 @@ import typings.sipJs.libApiUserAgentMod.UserAgent
 import typings.sipJs.libCoreMessagesIncomingResponseMod.IncomingResponse
 import typings.sipJs.libCoreMessagesMethodsNotifyMod.IncomingNotifyRequest
 import typings.sipJs.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequest
-import typings.sipJs.libCoreMod.URI
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-validate
 
-Typings are for version 29.2.1
+Typings are for version 29.2.2
 
 ## Library description:
 Generic configuration validation tool that helps you with warnings, errors and deprecation messages as well as showing users examples of correct configuration.

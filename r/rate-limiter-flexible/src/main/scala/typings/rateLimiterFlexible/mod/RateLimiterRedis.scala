@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("rate-limiter-flexible", "RateLimiterRedis")
 @js.native
 open class RateLimiterRedis protected () extends RateLimiterStoreAbstract {
-  def this(opts: IRateLimiterStoreOptions) = this()
+  def this(opts: IRateLimiterRedisOptions) = this()
 }

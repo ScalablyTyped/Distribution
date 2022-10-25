@@ -18,6 +18,7 @@ import typings.sipJs.libApiSessionOptionsMod.SessionOptions
 import typings.sipJs.libApiSessionReferOptionsMod.SessionReferOptions
 import typings.sipJs.libApiSessionStateMod.SessionState
 import typings.sipJs.libApiUserAgentMod.UserAgent
+import typings.sipJs.libCoreLogLoggerMod.Logger
 import typings.sipJs.libCoreMessagesBodyMod.Body
 import typings.sipJs.libCoreMessagesMethodsAckMod.IncomingAckRequest
 import typings.sipJs.libCoreMessagesMethodsByeMod.IncomingByeRequest
@@ -35,9 +36,8 @@ import typings.sipJs.libCoreMessagesMethodsReferMod.IncomingReferRequest
 import typings.sipJs.libCoreMessagesMethodsReferMod.OutgoingReferRequest
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.RequestOptions
-import typings.sipJs.libCoreMod.Logger
-import typings.sipJs.libCoreMod.NameAddrHeader
-import typings.sipJs.libCoreMod.URI
+import typings.sipJs.libGrammarNameAddrHeaderMod.NameAddrHeader
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

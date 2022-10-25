@@ -2,6 +2,7 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StringDictionary
 import typings.react.anon.Default
 import typings.react.anon.UNDEFINEDVOIDONLY
 import typings.react.mod.^
@@ -32,6 +33,8 @@ inline def StrictMode: ExoticComponent[typings.react.anon.Children] = ^.asInstan
 inline def Suspense: ExoticComponent[SuspenseProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Suspense").asInstanceOf[ExoticComponent[SuspenseProps]]
 
 inline def SuspenseList: ExoticComponent[typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SuspenseList").asInstanceOf[ExoticComponent[typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps]]
+
+inline def cache[CachedFunction /* <: js.Function */](fn: CachedFunction): CachedFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(fn.asInstanceOf[js.Any]).asInstanceOf[CachedFunction]
 
 // Custom components
 inline def cloneElement[P](element: FunctionComponentElement[P], props: Partial[P] & Attributes, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((scala.List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
@@ -161,7 +164,15 @@ inline def createFactory_T_HTMLFactory[T /* <: HTMLElement */](
 
 inline def createRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRef")().asInstanceOf[RefObject[T]]
 
-inline def experimentalUse[T](usable: typings.react.experimentalMod.reactAugmentingMod.Usable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_use")(usable.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def createServerContext(globalName: String, defaultValue: String): typings.react.nextMod.reactAugmentingMod.ServerContext[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[String]]
+inline def createServerContext(
+  globalName: String,
+  defaultValue: js.Array[typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray]
+): typings.react.nextMod.reactAugmentingMod.ServerContext[js.Array[typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[js.Array[typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray]]]
+inline def createServerContext(globalName: String, defaultValue: Boolean): typings.react.nextMod.reactAugmentingMod.ServerContext[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[Boolean]]
+inline def createServerContext(globalName: String, defaultValue: Double): typings.react.nextMod.reactAugmentingMod.ServerContext[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[Double]]
+inline def createServerContext(globalName: String, defaultValue: Null): typings.react.nextMod.reactAugmentingMod.ServerContext[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[Null]]
+inline def createServerContext[T /* <: StringDictionary[typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue] */](globalName: String, defaultValue: T): typings.react.nextMod.reactAugmentingMod.ServerContext[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[T]]
 
 inline def experimentalUseEvent[T /* <: js.Function */](event: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_useEvent")(event.asInstanceOf[js.Any]).asInstanceOf[T]
 
@@ -184,6 +195,10 @@ inline def memo[P /* <: js.Object */](
 ): NamedExoticComponent[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any], propsAreEqual.asInstanceOf[js.Any])).asInstanceOf[NamedExoticComponent[P]]
 
 inline def startTransition(scope: TransitionFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startTransition")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def unstableUseCacheRefresh(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useCacheRefresh")().asInstanceOf[js.Function0[Unit]]
+
+inline def use[T](usable: typings.react.nextMod.reactAugmentingMod.Usable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(usable.asInstanceOf[js.Any]).asInstanceOf[T]
 
 // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
 // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
@@ -726,6 +741,10 @@ type Requireable[T] = typings.propTypes.mod.Requireable[T]
   * @deprecated Please use `FunctionComponentFactory`
   */
 type SFCFactory[P] = FunctionComponentFactory[P]
+
+type ServerContextJSONArray = js.Array[typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray]
+
+type ServerContextJSONValue = String | Boolean | Double | Null | typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray | StringDictionary[typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue]
 
 //
 // React Hooks

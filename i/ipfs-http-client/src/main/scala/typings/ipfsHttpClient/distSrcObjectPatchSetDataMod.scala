@@ -12,11 +12,11 @@ object distSrcObjectPatchSetDataMod {
   @js.native
   val createSetData: Factory[
     js.Function3[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ /* cid */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ /* cid */ Any, 
       /* data */ js.typedarray.Uint8Array, 
       /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
       js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any
       ]
     ]
   ] = js.native

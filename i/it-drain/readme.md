@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-drain
 
-Typings are for version 1.0.5
+Typings are for version 2.0.0
 
 ## Library description:
 Empties an async iterator

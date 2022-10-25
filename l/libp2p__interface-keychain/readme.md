@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-keychain
 
-Typings are for version 1.0.3
+Typings are for version 1.0.4
 
 ## Library description:
 Keychain interface for libp2p

@@ -1,13 +1,13 @@
 package typings.sipJs
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.sipJs.anon.Error
+import typings.sipJs.libCoreLogLoggerFactoryMod.LoggerFactory
 import typings.sipJs.libCoreLogLoggerMod.Logger
-import typings.sipJs.libCoreLogMod.LoggerFactory
 import typings.sipJs.libCoreMessagesBodyMod.Body
 import typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessageOptions
 import typings.sipJs.libCoreMessagesOutgoingResponseMod.OutgoingResponse
 import typings.sipJs.libCoreMessagesOutgoingResponseMod.ResponseOptions
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,34 +97,6 @@ object libCoreMessagesMod {
     def this(loggerFactory: LoggerFactory, ha1: Unit, username: Unit, password: String) = this()
   }
   
-  object Grammar {
-    
-    @JSImport("sip.js/lib/core/messages", "Grammar")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Parse the given string and returns a SIP.URI instance or undefined if
-      * it is an invalid URI.
-      * @param uri -
-      */
-    inline def URIParse(uri: String): js.UndefOr[typings.sipJs.libGrammarUriMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("URIParse")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.libGrammarUriMod.URI]]
-    
-    /**
-      * Parse the given string and returns a SIP.NameAddrHeader instance or undefined if
-      * it is an invalid NameAddrHeader.
-      * @param name_addr_header -
-      */
-    inline def nameAddrHeaderParse(nameAddrHeader: String): js.UndefOr[typings.sipJs.libGrammarNameAddrHeaderMod.NameAddrHeader] = ^.asInstanceOf[js.Dynamic].applyDynamic("nameAddrHeaderParse")(nameAddrHeader.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.libGrammarNameAddrHeaderMod.NameAddrHeader]]
-    
-    /**
-      * Parse.
-      * @param input -
-      * @param startRule -
-      */
-    inline def parse(input: String, startRule: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], startRule.asInstanceOf[js.Any])).asInstanceOf[Any]
-  }
-  
   @JSImport("sip.js/lib/core/messages", "IncomingMessage")
   @js.native
   open class IncomingMessage ()
@@ -140,84 +112,45 @@ object libCoreMessagesMod {
   open class IncomingResponseMessage ()
     extends typings.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage
   
-  @JSImport("sip.js/lib/core/messages", "NameAddrHeader")
-  @js.native
-  open class NameAddrHeader protected ()
-    extends typings.sipJs.libGrammarMod.NameAddrHeader {
-    /**
-      * Constructor
-      * @param uri -
-      * @param displayName -
-      * @param parameters -
-      */
-    def this(uri: typings.sipJs.libGrammarUriMod.URI, displayName: String, parameters: StringDictionary[String]) = this()
-  }
-  
   @JSImport("sip.js/lib/core/messages", "OutgoingRequestMessage")
   @js.native
   open class OutgoingRequestMessage protected ()
     extends typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage {
+    def this(method: String, ruri: URI, fromURI: URI, toURI: URI) = this()
+    def this(method: String, ruri: URI, fromURI: URI, toURI: URI, options: OutgoingRequestMessageOptions) = this()
+    def this(method: String, ruri: URI, fromURI: URI, toURI: URI, options: Unit, extraHeaders: js.Array[String]) = this()
     def this(
       method: String,
-      ruri: typings.sipJs.libGrammarMod.URI,
-      fromURI: typings.sipJs.libGrammarMod.URI,
-      toURI: typings.sipJs.libGrammarMod.URI
-    ) = this()
-    def this(
-      method: String,
-      ruri: typings.sipJs.libGrammarMod.URI,
-      fromURI: typings.sipJs.libGrammarMod.URI,
-      toURI: typings.sipJs.libGrammarMod.URI,
-      options: OutgoingRequestMessageOptions
-    ) = this()
-    def this(
-      method: String,
-      ruri: typings.sipJs.libGrammarMod.URI,
-      fromURI: typings.sipJs.libGrammarMod.URI,
-      toURI: typings.sipJs.libGrammarMod.URI,
-      options: Unit,
-      extraHeaders: js.Array[String]
-    ) = this()
-    def this(
-      method: String,
-      ruri: typings.sipJs.libGrammarMod.URI,
-      fromURI: typings.sipJs.libGrammarMod.URI,
-      toURI: typings.sipJs.libGrammarMod.URI,
+      ruri: URI,
+      fromURI: URI,
+      toURI: URI,
       options: OutgoingRequestMessageOptions,
       extraHeaders: js.Array[String]
     ) = this()
     def this(
       method: String,
-      ruri: typings.sipJs.libGrammarMod.URI,
-      fromURI: typings.sipJs.libGrammarMod.URI,
-      toURI: typings.sipJs.libGrammarMod.URI,
+      ruri: URI,
+      fromURI: URI,
+      toURI: URI,
       options: Unit,
       extraHeaders: js.Array[String],
       body: Body
     ) = this()
+    def this(method: String, ruri: URI, fromURI: URI, toURI: URI, options: Unit, extraHeaders: Unit, body: Body) = this()
     def this(
       method: String,
-      ruri: typings.sipJs.libGrammarMod.URI,
-      fromURI: typings.sipJs.libGrammarMod.URI,
-      toURI: typings.sipJs.libGrammarMod.URI,
-      options: Unit,
-      extraHeaders: Unit,
-      body: Body
-    ) = this()
-    def this(
-      method: String,
-      ruri: typings.sipJs.libGrammarMod.URI,
-      fromURI: typings.sipJs.libGrammarMod.URI,
-      toURI: typings.sipJs.libGrammarMod.URI,
+      ruri: URI,
+      fromURI: URI,
+      toURI: URI,
       options: OutgoingRequestMessageOptions,
       extraHeaders: js.Array[String],
       body: Body
     ) = this()
     def this(
       method: String,
-      ruri: typings.sipJs.libGrammarMod.URI,
-      fromURI: typings.sipJs.libGrammarMod.URI,
-      toURI: typings.sipJs.libGrammarMod.URI,
+      ruri: URI,
+      fromURI: URI,
+      toURI: URI,
       options: OutgoingRequestMessageOptions,
       extraHeaders: Unit,
       body: Body
@@ -240,13 +173,6 @@ object libCoreMessagesMod {
     @js.native
     def makeNameAddrHeader: Any = js.native
     inline def makeNameAddrHeader_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("sip.js/lib/core/messages", "Parameters")
-  @js.native
-  open class Parameters protected ()
-    extends typings.sipJs.libGrammarMod.Parameters {
-    def this(parameters: StringDictionary[js.UndefOr[String | Double | Null]]) = this()
   }
   
   object Parser {
@@ -277,123 +203,10 @@ object libCoreMessagesMod {
       ]]
   }
   
-  @JSImport("sip.js/lib/core/messages", "URI")
-  @js.native
-  open class URI protected ()
-    extends typings.sipJs.libGrammarMod.URI {
-    /**
-      * Constructor
-      * @param scheme -
-      * @param user -
-      * @param host -
-      * @param port -
-      * @param parameters -
-      * @param headers -
-      */
-    def this(scheme: String, user: String, host: String) = this()
-    def this(scheme: Unit, user: String, host: String) = this()
-    def this(scheme: String, user: String, host: String, port: Double) = this()
-    def this(scheme: Unit, user: String, host: String, port: Double) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: Double,
-      parameters: StringDictionary[String | Double | Null]
-    ) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: Unit,
-      parameters: StringDictionary[String | Double | Null]
-    ) = this()
-    def this(
-      scheme: Unit,
-      user: String,
-      host: String,
-      port: Double,
-      parameters: StringDictionary[String | Double | Null]
-    ) = this()
-    def this(
-      scheme: Unit,
-      user: String,
-      host: String,
-      port: Unit,
-      parameters: StringDictionary[String | Double | Null]
-    ) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: Double,
-      parameters: StringDictionary[String | Double | Null],
-      headers: StringDictionary[js.Array[String]]
-    ) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: Double,
-      parameters: Unit,
-      headers: StringDictionary[js.Array[String]]
-    ) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: Unit,
-      parameters: StringDictionary[String | Double | Null],
-      headers: StringDictionary[js.Array[String]]
-    ) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: Unit,
-      parameters: Unit,
-      headers: StringDictionary[js.Array[String]]
-    ) = this()
-    def this(
-      scheme: Unit,
-      user: String,
-      host: String,
-      port: Double,
-      parameters: StringDictionary[String | Double | Null],
-      headers: StringDictionary[js.Array[String]]
-    ) = this()
-    def this(
-      scheme: Unit,
-      user: String,
-      host: String,
-      port: Double,
-      parameters: Unit,
-      headers: StringDictionary[js.Array[String]]
-    ) = this()
-    def this(
-      scheme: Unit,
-      user: String,
-      host: String,
-      port: Unit,
-      parameters: StringDictionary[String | Double | Null],
-      headers: StringDictionary[js.Array[String]]
-    ) = this()
-    def this(
-      scheme: Unit,
-      user: String,
-      host: String,
-      port: Unit,
-      parameters: Unit,
-      headers: StringDictionary[js.Array[String]]
-    ) = this()
-  }
-  
   inline def constructOutgoingResponse(
     message: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     options: ResponseOptions
   ): OutgoingResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("constructOutgoingResponse")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[OutgoingResponse]
-  
-  inline def equivalentURI(a: typings.sipJs.libGrammarUriMod.URI, b: typings.sipJs.libGrammarUriMod.URI): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equivalentURI")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def fromBodyLegacy(bodyLegacy: String): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBodyLegacy")(bodyLegacy.asInstanceOf[js.Any]).asInstanceOf[Body]
   inline def fromBodyLegacy(bodyLegacy: typings.sipJs.anon.Body): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBodyLegacy")(bodyLegacy.asInstanceOf[js.Any]).asInstanceOf[Body]

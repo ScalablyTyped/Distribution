@@ -16,12 +16,15 @@ object distSrcUtilsTimeCacheMod {
     /* private */ val entries: Any = js.native
     
     def get(key: String): js.UndefOr[T] = js.native
+    def get(key: Double): js.UndefOr[T] = js.native
     
     def has(key: String): Boolean = js.native
     
     def prune(): Unit = js.native
     
-    def put(key: String, value: T): Unit = js.native
+    /** Returns true if there was a key collision and the entry is dropped */
+    def put(key: String, value: T): Boolean = js.native
+    def put(key: Double, value: T): Boolean = js.native
     
     def size: Double = js.native
     

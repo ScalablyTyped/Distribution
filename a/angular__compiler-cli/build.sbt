@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular__compiler-cli"
-version := "14.2.7-82a076"
+version := "14.2.7-5a4088"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "convert-source-map" % "1.5-dt-20211202Z-ed3b05",
   "org.scalablytyped" %%% "dependency-graph" % "0.11.0-efd2dc",
   "org.scalablytyped" %%% "magic-string" % "0.26.7-deb100",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "semver" % "7.3-dt-20220811Z-1db0d4",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be")

@@ -19,25 +19,25 @@ open class Messager protected ()
     */
   def this(
     userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
-    targetURI: typings.sipJs.libCoreMod.URI,
+    targetURI: typings.sipJs.libGrammarUriMod.URI,
     content: String
   ) = this()
   def this(
     userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
-    targetURI: typings.sipJs.libCoreMod.URI,
+    targetURI: typings.sipJs.libGrammarUriMod.URI,
     content: String,
     contentType: String
   ) = this()
   def this(
     userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
-    targetURI: typings.sipJs.libCoreMod.URI,
+    targetURI: typings.sipJs.libGrammarUriMod.URI,
     content: String,
     contentType: String,
     options: MessagerOptions
   ) = this()
   def this(
     userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
-    targetURI: typings.sipJs.libCoreMod.URI,
+    targetURI: typings.sipJs.libGrammarUriMod.URI,
     content: String,
     contentType: Unit,
     options: MessagerOptions

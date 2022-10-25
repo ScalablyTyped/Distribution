@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rate-limiter-flexible"
-version := "2.3.11-822500"
+version := "2.4.1-82abea"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

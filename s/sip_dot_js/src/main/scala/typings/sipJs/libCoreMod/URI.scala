@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js/lib/core", "URI")
 @js.native
 open class URI protected ()
-  extends typings.sipJs.libCoreMessagesMod.URI {
+  extends typings.sipJs.libGrammarMod.URI {
   /**
     * Constructor
     * @param scheme -

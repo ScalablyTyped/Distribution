@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-http-gateway" : "0.11.1"
+      "ipfs-http-gateway" : "0.12.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-http-gateway" : "0.11.1"
+      "ipfs-http-gateway" : "0.12.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for uint8-varint
 
-Typings are for version 1.0.3
+Typings are for version 1.0.4
 
 
 

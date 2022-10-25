@@ -16,11 +16,9 @@ object mod {
   @js.native
   val code: `113` = js.native
   
-  inline def decode[T](
-    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.ByteView<T> */ Any
-  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def decode[T](data: typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def encode[T](node: T): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(node.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def encode[T](node: T): typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(node.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView[T]]
   
   @JSImport("@ipld/dag-cbor", "name")
   @js.native

@@ -44,6 +44,10 @@ object libp2pCryptoStrings {
   inline def SHA512: SHA512 = "SHA512".asInstanceOf[SHA512]
   
   @js.native
+  sealed trait m extends StObject
+  inline def m: m = "m".asInstanceOf[m]
+  
+  @js.native
   sealed trait secp256k1
     extends StObject
        with KeyTypes

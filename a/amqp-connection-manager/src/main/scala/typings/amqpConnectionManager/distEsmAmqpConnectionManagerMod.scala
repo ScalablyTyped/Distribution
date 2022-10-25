@@ -54,24 +54,6 @@ object distEsmAmqpConnectionManagerMod {
     def this(urls: ConnectionUrl, options: AmqpConnectionManagerOptions) = this()
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.amqpConnectionManager.anon.ConnectionOptionsnoDelayb
-    - typings.amqpConnectionManager.anon.TcpSocketConnectOptsnoDel
-  */
-  trait AmpqConnectionOptions extends StObject
-  object AmpqConnectionOptions {
-    
-    inline def ConnectionOptionsnoDelayb(): typings.amqpConnectionManager.anon.ConnectionOptionsnoDelayb = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.amqpConnectionManager.anon.ConnectionOptionsnoDelayb]
-    }
-    
-    inline def TcpSocketConnectOptsnoDel(port: Double): typings.amqpConnectionManager.anon.TcpSocketConnectOptsnoDel = {
-      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.amqpConnectionManager.anon.TcpSocketConnectOptsnoDel]
-    }
-  }
-  
   @js.native
   trait AmqpConnectionManager
     extends EventEmitter
@@ -315,7 +297,7 @@ object distEsmAmqpConnectionManagerMod {
   trait AmqpConnectionManagerOptions extends StObject {
     
     /** Connection options, passed as options to the amqplib.connect() method. */
-    var connectionOptions: js.UndefOr[AmpqConnectionOptions] = js.undefined
+    var connectionOptions: js.UndefOr[AmqpConnectionOptions] = js.undefined
     
     /**
       * `findServers` is a function that which returns one or more servers to
@@ -349,7 +331,7 @@ object distEsmAmqpConnectionManagerMod {
     
     extension [Self <: AmqpConnectionManagerOptions](x: Self) {
       
-      inline def setConnectionOptions(value: AmpqConnectionOptions): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
+      inline def setConnectionOptions(value: AmqpConnectionOptions): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
       
       inline def setConnectionOptionsUndefined: Self = StObject.set(x, "connectionOptions", js.undefined)
       
@@ -375,6 +357,24 @@ object distEsmAmqpConnectionManagerMod {
       inline def setReconnectTimeInSeconds(value: Double): Self = StObject.set(x, "reconnectTimeInSeconds", value.asInstanceOf[js.Any])
       
       inline def setReconnectTimeInSecondsUndefined: Self = StObject.set(x, "reconnectTimeInSeconds", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.amqpConnectionManager.anon.ConnectionOptionsnoDelayb
+    - typings.amqpConnectionManager.anon.TcpSocketConnectOptsnoDel
+  */
+  trait AmqpConnectionOptions extends StObject
+  object AmqpConnectionOptions {
+    
+    inline def ConnectionOptionsnoDelayb(): typings.amqpConnectionManager.anon.ConnectionOptionsnoDelayb = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.amqpConnectionManager.anon.ConnectionOptionsnoDelayb]
+    }
+    
+    inline def TcpSocketConnectOptsnoDel(port: Double): typings.amqpConnectionManager.anon.TcpSocketConnectOptsnoDel = {
+      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.amqpConnectionManager.anon.TcpSocketConnectOptsnoDel]
     }
   }
   
@@ -410,7 +410,7 @@ object distEsmAmqpConnectionManagerMod {
     /** The current connection. */
     val connection: js.UndefOr[Connection] = js.native
     
-    var connectionOptions: js.UndefOr[AmpqConnectionOptions] = js.native
+    var connectionOptions: js.UndefOr[AmqpConnectionOptions] = js.native
     
     def createChannel(): typings.amqpConnectionManager.distEsmChannelWrapperMod.default = js.native
     def createChannel(options: CreateChannelOpts): typings.amqpConnectionManager.distEsmChannelWrapperMod.default = js.native

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "storybook__builder-webpack4"
-version := "6.5.13-171324"
+version := "6.5.13-941954"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-e75802",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-20bcca",
   "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-580652",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-602e3f",
   "org.scalablytyped" %%% "babel__parser" % "7.19.6-1f26d3",
@@ -14,23 +14,23 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__types" % "7.19.4-ea0dd0",
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
   "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-4cfc23",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-a77eec",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-80f63d",
-  "org.scalablytyped" %%% "fork-ts-checker-webpack-plugin" % "7.2.13-33f796",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-cbb6c3",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-035d9a",
+  "org.scalablytyped" %%% "fork-ts-checker-webpack-plugin" % "7.2.13-a961f8",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "node-abort-controller" % "3.0.1-879d06",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
-  "org.scalablytyped" %%% "re2" % "1.17.7-9b0ba5",
-  "org.scalablytyped" %%% "schema-utils" % "4.0.0-807643",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-5b9e43",
+  "org.scalablytyped" %%% "re2" % "1.17.7-5ddb3b",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-1e0b25",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-c7a026",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "storybook__core-common" % "6.5.13-060795",
+  "org.scalablytyped" %%% "storybook__core-common" % "6.5.13-1e9271",
   "org.scalablytyped" %%% "tapable" % "2.2.1-52b605",
   "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092",
-  "org.scalablytyped" %%% "webpack" % "5.74.0-6f6163")
+  "org.scalablytyped" %%% "webpack" % "5.74.0-e8db2b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -35,6 +35,11 @@ trait CreateCertificateAuthorityRequest extends StObject {
     * Key-value pairs that will be attached to the new private CA. You can associate up to 50 tags with a private CA. For information using tags with IAM to manage permissions, see Controlling Access Using IAM Tags.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
+  
+  /**
+    * Specifies whether the CA issues general-purpose certificates that typically require a revocation mechanism, or short-lived certificates that may optionally omit revocation because they expire quickly. Short-lived certificate validity is limited to seven days. The default value is GENERAL_PURPOSE.
+    */
+  var UsageMode: js.UndefOr[CertificateAuthorityUsageMode] = js.undefined
 }
 object CreateCertificateAuthorityRequest {
   
@@ -69,5 +74,9 @@ object CreateCertificateAuthorityRequest {
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setUsageMode(value: CertificateAuthorityUsageMode): Self = StObject.set(x, "UsageMode", value.asInstanceOf[js.Any])
+    
+    inline def setUsageModeUndefined: Self = StObject.set(x, "UsageMode", js.undefined)
   }
 }

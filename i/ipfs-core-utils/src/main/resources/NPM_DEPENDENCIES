@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-core-utils" : "0.16.1"
+      "ipfs-core-utils" : "0.17.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-core-utils" : "0.16.1"
+      "ipfs-core-utils" : "0.17.0"
     }
   ],
   "compile-devDependencies" : [

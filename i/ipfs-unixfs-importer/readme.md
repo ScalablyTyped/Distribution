@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-unixfs-importer
 
-Typings are for version 10.0.2
+Typings are for version 11.0.1
 
 ## Library description:
 JavaScript implementation of the UnixFs importer used by IPFS

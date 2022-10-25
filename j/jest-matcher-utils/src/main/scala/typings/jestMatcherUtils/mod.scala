@@ -1,5 +1,6 @@
 package typings.jestMatcherUtils
 
+import typings.jestMatcherUtils.anon.ReplacedExpected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,6 +78,13 @@ object mod {
   inline def printReceived(`object`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printReceived")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def printWithType[T](name: String, value: T, print: js.Function1[/* value */ T, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printWithType")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], print.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def replaceMatchedToAsymmetricMatcher(
+    replacedExpected: Any,
+    replacedReceived: Any,
+    expectedCycles: js.Array[Any],
+    receivedCycles: js.Array[Any]
+  ): ReplacedExpected = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceMatchedToAsymmetricMatcher")(replacedExpected.asInstanceOf[js.Any], replacedReceived.asInstanceOf[js.Any], expectedCycles.asInstanceOf[js.Any], receivedCycles.asInstanceOf[js.Any])).asInstanceOf[ReplacedExpected]
   
   inline def stringify(`object`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def stringify(`object`: Any, maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]

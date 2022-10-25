@@ -1,7 +1,7 @@
 
 # Scala.js typings for hamt-sharding
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 JavaScript implementation of sharding using hash array mapped tries

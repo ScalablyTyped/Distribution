@@ -1,6 +1,8 @@
 package typings.blockstoreCore
 
 import typings.blockstoreCore.anon.Key
+import typings.blockstoreCore.blockstoreCoreInts.`1`
+import typings.blockstoreCore.blockstoreCoreInts.`85`
 import typings.blockstoreCore.distSrcBaseMod.BaseBlockstore
 import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
@@ -18,7 +20,7 @@ object distSrcMemoryMod {
     
     def _all(): AsyncGenerator[Key, Unit, Unit] = js.native
     
-    def _allKeys(): AsyncGenerator[CID[Any, Double, Double, Version], Unit, Unit] = js.native
+    def _allKeys(): AsyncGenerator[CID[Any, `85`, Double, `1`], Unit, Unit] = js.native
     
     /** @type {Record<string, Uint8Array>} */
     var data: Record[String, js.typedarray.Uint8Array] = js.native

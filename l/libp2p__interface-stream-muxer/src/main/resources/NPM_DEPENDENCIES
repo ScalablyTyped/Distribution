@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interface-stream-muxer" : "2.0.2"
+      "@libp2p/interface-stream-muxer" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interface-stream-muxer" : "2.0.2"
+      "@libp2p/interface-stream-muxer" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

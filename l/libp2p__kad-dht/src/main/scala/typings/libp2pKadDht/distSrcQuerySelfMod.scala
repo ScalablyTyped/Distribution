@@ -1,9 +1,8 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pKadDht.distSrcPeerRoutingMod.PeerRouting
+import typings.libp2pKadDht.mod.KadDHTComponents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,20 +13,16 @@ object distSrcQuerySelfMod {
   @js.native
   open class QuerySelf protected ()
     extends StObject
-       with Startable
-       with Initializable {
-    def this(init: QuerySelfInit) = this()
+       with Startable {
+    def this(components: KadDHTComponents, init: QuerySelfInit) = this()
     
     def _querySelf(): Unit = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /* private */ var controller: Any = js.native
     
     /* private */ val count: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /* private */ val interval: Any = js.native
     

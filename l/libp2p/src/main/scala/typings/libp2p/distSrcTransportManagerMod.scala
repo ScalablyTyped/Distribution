@@ -1,8 +1,10 @@
 package typings.libp2p
 
-import typings.libp2pComponents.mod.Components
+import typings.libp2pInterfaceAddressManager.mod.AddressManager
 import typings.libp2pInterfaceConnection.mod.Connection
+import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfaceTransport.mod.TransportManager
+import typings.libp2pInterfaceTransport.mod.Upgrader
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.multiformatsMultiaddr.mod.Multiaddr_
@@ -17,8 +19,8 @@ object distSrcTransportManagerMod {
   open class DefaultTransportManager protected ()
     extends TransportManager
        with Startable {
-    def this(components: Components) = this()
-    def this(components: Components, init: TransportManagerInit) = this()
+    def this(components: DefaultTransportManagerComponents) = this()
+    def this(components: DefaultTransportManagerComponents, init: TransportManagerInit) = this()
     
     /* private */ val components: Any = js.native
     
@@ -78,6 +80,33 @@ object distSrcTransportManagerMod {
       extends StObject
          with FaultTolerance
     /* 1 */ val NO_FATAL: typings.libp2p.distSrcTransportManagerMod.FaultTolerance.NO_FATAL & Double = js.native
+  }
+  
+  trait DefaultTransportManagerComponents extends StObject {
+    
+    var addressManager: AddressManager
+    
+    var metrics: js.UndefOr[Metrics] = js.undefined
+    
+    var upgrader: Upgrader
+  }
+  object DefaultTransportManagerComponents {
+    
+    inline def apply(addressManager: AddressManager, upgrader: Upgrader): DefaultTransportManagerComponents = {
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], upgrader = upgrader.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DefaultTransportManagerComponents]
+    }
+    
+    extension [Self <: DefaultTransportManagerComponents](x: Self) {
+      
+      inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
+      
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      
+      inline def setUpgrader(value: Upgrader): Self = StObject.set(x, "upgrader", value.asInstanceOf[js.Any])
+    }
   }
   
   trait TransportManagerInit extends StObject {

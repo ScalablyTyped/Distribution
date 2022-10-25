@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__record
 
-Typings are for version 2.0.2
+Typings are for version 2.0.3
 
 ## Library description:
 libp2p record implementation

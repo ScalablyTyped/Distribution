@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-filter
 
-Typings are for version 1.0.3
+Typings are for version 2.0.0
 
 ## Library description:
 Filters the passed iterable by using the filter function

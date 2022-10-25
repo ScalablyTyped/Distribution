@@ -1,7 +1,5 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pKadDht.distSrcPeerRoutingMod.PeerRouting
 import typings.libp2pKadDht.distSrcRoutingTableMod.RoutingTable
@@ -14,9 +12,7 @@ object distSrcRoutingTableRefreshMod {
   
   @JSImport("@libp2p/kad-dht/dist/src/routing-table/refresh", "RoutingTableRefresh")
   @js.native
-  open class RoutingTableRefresh protected ()
-    extends StObject
-       with Initializable {
+  open class RoutingTableRefresh protected () extends StObject {
     def this(init: RoutingTableRefreshInit) = this()
     
     def _generateRandomPeerId(targetCommonPrefixLength: Double): js.Promise[PeerId] = js.native
@@ -44,9 +40,6 @@ object distSrcRoutingTableRefreshMod {
     def _refreshCommonPrefixLength(cpl: Double, lastRefresh: js.Date, force: Boolean): js.Promise[Unit] = js.native
     
     /* private */ val commonPrefixLengthRefreshedAt: Any = js.native
-    
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
     
     /* private */ val log: Any = js.native
     

@@ -1,6 +1,6 @@
 package typings.libp2pKadDht
 
-import typings.libp2pComponents.mod.Components
+import typings.interfaceDatastore.mod.Datastore
 import typings.libp2pInterfaceDht.mod.Validators
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pKadDht.distSrcMessageMod.Message
@@ -16,19 +16,33 @@ object distSrcRpcHandlersPutValueMod {
   open class PutValueHandler protected ()
     extends StObject
        with DHTMessageHandler {
-    def this(init: PutValueHandlerInit) = this()
+    def this(components: PutValueHandlerComponents, init: PutValueHandlerInit) = this()
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /* CompleteClass */
     override def handle(peerId: PeerId, msg: Message): js.Promise[js.UndefOr[Message]] = js.native
     
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
-    
     /* private */ val log: Any = js.native
     
     /* private */ val validators: Any = js.native
+  }
+  
+  trait PutValueHandlerComponents extends StObject {
+    
+    var datastore: Datastore
+  }
+  object PutValueHandlerComponents {
+    
+    inline def apply(datastore: Datastore): PutValueHandlerComponents = {
+      val __obj = js.Dynamic.literal(datastore = datastore.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PutValueHandlerComponents]
+    }
+    
+    extension [Self <: PutValueHandlerComponents](x: Self) {
+      
+      inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+    }
   }
   
   trait PutValueHandlerInit extends StObject {

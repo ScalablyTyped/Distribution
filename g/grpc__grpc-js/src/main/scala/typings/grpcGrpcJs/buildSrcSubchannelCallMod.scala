@@ -4,6 +4,7 @@ import typings.grpcGrpcJs.buildSrcCallInterfaceMod.InterceptingListener
 import typings.grpcGrpcJs.buildSrcCallInterfaceMod.MessageContext
 import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
 import typings.grpcGrpcJs.buildSrcConstantsMod.Status
+import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
 import typings.grpcGrpcJs.buildSrcSubchannelMod.Subchannel
 import typings.grpcGrpcJs.buildSrcSubchannelMod.SubchannelCallStatsTracker
 import typings.node.bufferMod.global.Buffer
@@ -22,7 +23,7 @@ object buildSrcSubchannelCallMod {
     def this(
       http2Stream: ClientHttp2Stream,
       callStatsTracker: SubchannelCallStatsTracker,
-      listener: InterceptingListener,
+      listener: SubchannelCallInterceptingListener,
       subchannel: Subchannel,
       callId: Double
     ) = this()
@@ -103,6 +104,27 @@ object buildSrcSubchannelCallMod {
     /* private */ var unpushedReadMessages: Any = js.native
   }
   
+  trait StatusObjectWithRstCode
+    extends StObject
+       with StatusObject {
+    
+    var rstCode: js.UndefOr[Double] = js.undefined
+  }
+  object StatusObjectWithRstCode {
+    
+    inline def apply(code: Status, details: String, metadata: Metadata): StatusObjectWithRstCode = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StatusObjectWithRstCode]
+    }
+    
+    extension [Self <: StatusObjectWithRstCode](x: Self) {
+      
+      inline def setRstCode(value: Double): Self = StObject.set(x, "rstCode", value.asInstanceOf[js.Any])
+      
+      inline def setRstCodeUndefined: Self = StObject.set(x, "rstCode", js.undefined)
+    }
+  }
+  
   trait SubchannelCall extends StObject {
     
     def cancelWithStatus(status: Status, details: String): Unit
@@ -144,6 +166,29 @@ object buildSrcSubchannelCallMod {
       inline def setSendMessageWithContext(value: (MessageContext, Buffer) => Unit): Self = StObject.set(x, "sendMessageWithContext", js.Any.fromFunction2(value))
       
       inline def setStartRead(value: () => Unit): Self = StObject.set(x, "startRead", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait SubchannelCallInterceptingListener
+    extends StObject
+       with InterceptingListener {
+    
+    def onReceiveStatus(status: StatusObjectWithRstCode): Unit
+  }
+  object SubchannelCallInterceptingListener {
+    
+    inline def apply(
+      onReceiveMessage: Any => Unit,
+      onReceiveMetadata: Metadata => Unit,
+      onReceiveStatus: StatusObjectWithRstCode => Unit
+    ): SubchannelCallInterceptingListener = {
+      val __obj = js.Dynamic.literal(onReceiveMessage = js.Any.fromFunction1(onReceiveMessage), onReceiveMetadata = js.Any.fromFunction1(onReceiveMetadata), onReceiveStatus = js.Any.fromFunction1(onReceiveStatus))
+      __obj.asInstanceOf[SubchannelCallInterceptingListener]
+    }
+    
+    extension [Self <: SubchannelCallInterceptingListener](x: Self) {
+      
+      inline def setOnReceiveStatus(value: StatusObjectWithRstCode => Unit): Self = StObject.set(x, "onReceiveStatus", js.Any.fromFunction1(value))
     }
   }
 }

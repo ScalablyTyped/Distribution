@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interface-dht" : "1.0.1"
+      "@libp2p/interface-dht" : "1.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interface-dht" : "1.0.1"
+      "@libp2p/interface-dht" : "1.0.2"
     }
   ],
   "compile-devDependencies" : [

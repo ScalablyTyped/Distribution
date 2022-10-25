@@ -3,7 +3,6 @@ package typings.sipJs
 import typings.sipJs.libApiInvitationAcceptOptionsMod.InvitationAcceptOptions
 import typings.sipJs.libApiInviterInviteOptionsMod.InviterInviteOptions
 import typings.sipJs.libApiInviterOptionsMod.InviterOptions
-import typings.sipJs.libApiRegistererOptionsMod.RegistererOptions
 import typings.sipJs.libApiRegistererRegisterOptionsMod.RegistererRegisterOptions
 import typings.sipJs.libApiRegistererUnregisterOptionsMod.RegistererUnregisterOptions
 import typings.sipJs.libPlatformWebSimpleUserSimpleUserDelegateMod.SimpleUserDelegate
@@ -39,14 +38,6 @@ object libPlatformWebSimpleUserSimpleUserMod {
     def answer(invitationAcceptOptions: InvitationAcceptOptions): js.Promise[Unit] = js.native
     
     /**
-      * Attempt reconnection up to `maxReconnectionAttempts` times.
-      * @param reconnectionAttempt - Current attempt number.
-      */
-    /* private */ var attemptReconnection: Any = js.native
-    
-    /* private */ var attemptingReconnection: Any = js.native
-    
-    /**
       * Make an outgoing call.
       * @remarks
       * Send an INVITE request to create a new Session.
@@ -61,9 +52,6 @@ object libPlatformWebSimpleUserSimpleUserMod {
     def call(destination: String, inviterOptions: InviterOptions): js.Promise[Unit] = js.native
     def call(destination: String, inviterOptions: InviterOptions, inviterInviteOptions: InviterInviteOptions): js.Promise[Unit] = js.native
     
-    /** Helper function to remove media from html elements. */
-    /* private */ var cleanupMedia: Any = js.native
-    
     /**
       * Connect.
       * @remarks
@@ -71,17 +59,12 @@ object libPlatformWebSimpleUserSimpleUserMod {
       */
     def connect(): js.Promise[Unit] = js.native
     
-    /* private */ var connectRequested: Any = js.native
-    
-    /** Media constraints. */
-    /* private */ def constraints: Any = js.native
-    
     /**
       * Decline an incoming call.
       * @remarks
       * Reject an incoming INVITE request.
       * Resolves with the response is sent, otherwise rejects.
-      * Use `onCallTerminated` delegate method to determine if and when call is ended.
+      * Use `onCallHangup` delegate method to determine if and when call is ended.
       */
     def decline(): js.Promise[Unit] = js.native
     
@@ -95,22 +78,14 @@ object libPlatformWebSimpleUserSimpleUserMod {
       */
     def disconnect(): js.Promise[Unit] = js.native
     
-    /** Helper function to enable/disable media tracks. */
-    /* private */ var enableReceiverTracks: Any = js.native
-    
-    /** Helper function to enable/disable media tracks. */
-    /* private */ var enableSenderTracks: Any = js.native
-    
     /**
       * Hangup a call.
       * @remarks
       * Send a BYE request, CANCEL request or reject response to end the current Session.
       * Resolves when the request/response is sent, otherwise rejects.
-      * Use `onCallTerminated` delegate method to determine if and when call is ended.
+      * Use `onCallHangup` delegate method to determine if and when call is ended.
       */
     def hangup(): js.Promise[Unit] = js.native
-    
-    /* private */ var held: Any = js.native
     
     /**
       * Hold call
@@ -129,13 +104,6 @@ object libPlatformWebSimpleUserSimpleUserMod {
     def id: String = js.native
     
     /**
-      * Setup session delegate and state change handler.
-      * @param session - Session to setup
-      * @param referralInviterOptions - Options for any Inviter created as result of a REFER.
-      */
-    /* private */ var initSession: Any = js.native
-    
-    /**
       * Return true if connected.
       */
     def isConnected(): Boolean = js.native
@@ -143,7 +111,7 @@ object libPlatformWebSimpleUserSimpleUserMod {
     /**
       * Hold state.
       * @remarks
-      * True if session media is on hold.
+      * True if session is on hold.
       */
     def isHeld(): Boolean = js.native
     
@@ -186,8 +154,6 @@ object libPlatformWebSimpleUserSimpleUserMod {
       */
     def mute(): Unit = js.native
     
-    /* private */ var muted: Any = js.native
-    
     /* private */ var options: Any = js.native
     
     /**
@@ -197,13 +163,7 @@ object libPlatformWebSimpleUserSimpleUserMod {
       * Resolves when the REGISTER request is sent, otherwise rejects.
       */
     def register(): js.Promise[Unit] = js.native
-    def register(registererOptions: Unit, registererRegisterOptions: RegistererRegisterOptions): js.Promise[Unit] = js.native
-    def register(registererOptions: RegistererOptions): js.Promise[Unit] = js.native
-    def register(registererOptions: RegistererOptions, registererRegisterOptions: RegistererRegisterOptions): js.Promise[Unit] = js.native
-    
-    /* private */ var registerRequested: Any = js.native
-    
-    /* private */ var registerer: Any = js.native
+    def register(registererRegisterOptions: RegistererRegisterOptions): js.Promise[Unit] = js.native
     
     /**
       * The remote audio track, if available.
@@ -228,37 +188,9 @@ object libPlatformWebSimpleUserSimpleUserMod {
       */
     def sendDTMF(tone: String): js.Promise[Unit] = js.native
     
-    /** Helper function to init send then send invite. */
-    /* private */ var sendInvite: Any = js.native
-    
     /* private */ var session: Any = js.native
     
-    /**
-      * Puts Session on hold.
-      * @param hold - Hold on if true, off if false.
-      */
-    /* private */ var setHold: Any = js.native
-    
-    /**
-      * Puts Session on mute.
-      * @param mute - Mute on if true, off if false.
-      */
-    /* private */ var setMute: Any = js.native
-    
-    /** Helper function to attach local media to html elements. */
-    /* private */ var setupLocalMedia: Any = js.native
-    
-    /** Helper function to attach remote media to html elements. */
-    /* private */ var setupRemoteMedia: Any = js.native
-    
-    /**
-      * End a session.
-      * @remarks
-      * Send a BYE request, CANCEL request or reject response to end the current Session.
-      * Resolves when the request/response is sent, otherwise rejects.
-      * Use `onCallTerminated` delegate method to determine if and when Session is terminated.
-      */
-    /* private */ var terminate: Any = js.native
+    /* private */ var sessionManager: Any = js.native
     
     /**
       * Unhold call.
@@ -285,7 +217,5 @@ object libPlatformWebSimpleUserSimpleUserMod {
       */
     def unregister(): js.Promise[Unit] = js.native
     def unregister(registererUnregisterOptions: RegistererUnregisterOptions): js.Promise[Unit] = js.native
-    
-    /* private */ var userAgent: Any = js.native
   }
 }

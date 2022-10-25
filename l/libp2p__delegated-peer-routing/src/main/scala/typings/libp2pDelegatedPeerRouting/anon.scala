@@ -1,52 +1,59 @@
 package typings.libp2pDelegatedPeerRouting
 
+import typings.libp2pDelegatedPeerRouting.mod.QueryEvent
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.multiformats.cidMod.CID
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
+import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Id extends StObject {
+  @js.native
+  trait FindPeer extends StObject {
     
-    var id: PeerId
+    def findPeer(peerId: PeerId): AsyncIterable[QueryEvent] = js.native
+    def findPeer(
+      peerId: PeerId,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbortOptions */ Any
+    ): AsyncIterable[QueryEvent] = js.native
     
-    var multiaddrs: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_ipfs-http-client.multiaddr */ Any
-      ]
-    
-    var protocols: js.Array[scala.Nothing]
+    def query(peerId: PeerId): AsyncIterable[QueryEvent] = js.native
+    def query(
+      peerId: PeerId,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbortOptions */ Any
+    ): AsyncIterable[QueryEvent] = js.native
+    def query(peerId: CID[Any, Double, Double, Version]): AsyncIterable[QueryEvent] = js.native
+    def query(
+      peerId: CID[Any, Double, Double, Version],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbortOptions */ Any
+    ): AsyncIterable[QueryEvent] = js.native
   }
-  object Id {
+  
+  trait Host extends StObject {
     
-    inline def apply(
-      id: PeerId,
-      multiaddrs: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_ipfs-http-client.multiaddr */ Any
-        ],
-      protocols: js.Array[scala.Nothing]
-    ): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], multiaddrs = multiaddrs.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Id]
+    var host: String
+    
+    var port: String
+    
+    var protocol: String
+  }
+  object Host {
+    
+    inline def apply(host: String, port: String, protocol: String): Host = {
+      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Id](x: Self) {
+    extension [Self <: Host](x: Self) {
       
-      inline def setId(value: PeerId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      inline def setMultiaddrs(
-        value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_ipfs-http-client.multiaddr */ Any
-            ]
-      ): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      inline def setMultiaddrsVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_ipfs-http-client.multiaddr */ Any)*
-      ): Self = StObject.set(x, "multiaddrs", js.Array(value*))
-      
-      inline def setProtocols(value: js.Array[scala.Nothing]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
-      
-      inline def setProtocolsVarargs(value: scala.Nothing*): Self = StObject.set(x, "protocols", js.Array(value*))
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
   }
 }

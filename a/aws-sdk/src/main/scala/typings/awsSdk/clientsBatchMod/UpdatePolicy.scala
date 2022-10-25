@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdatePolicy extends StObject {
   
   /**
-    * Specifies the job timeout, in minutes, when the compute environment infrastructure is updated. The default value is 30.
+    * Specifies the job timeout (in minutes) when the compute environment infrastructure is updated. The default value is 30.
     */
   var jobExecutionTimeoutMinutes: js.UndefOr[JobExecutionTimeoutMinutes] = js.undefined
   

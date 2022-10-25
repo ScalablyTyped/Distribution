@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-environment-node" : "29.2.1"
+      "jest-environment-node" : "29.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-environment-node" : "29.2.1"
+      "jest-environment-node" : "29.2.2"
     }
   ],
   "compile-devDependencies" : [

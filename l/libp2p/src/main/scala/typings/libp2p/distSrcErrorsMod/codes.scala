@@ -50,6 +50,12 @@ object codes extends StObject {
   /* "ERR_CANNOT_READ_KEY" */ val ERR_CANNOT_READ_KEY: typings.libp2p.distSrcErrorsMod.codes.ERR_CANNOT_READ_KEY & String = js.native
   
   @js.native
+  sealed trait ERR_CONNECTION_DENIED
+    extends StObject
+       with codes
+  /* "ERR_CONNECTION_DENIED" */ val ERR_CONNECTION_DENIED: typings.libp2p.distSrcErrorsMod.codes.ERR_CONNECTION_DENIED & String = js.native
+  
+  @js.native
   sealed trait ERR_CONNECTION_ENDED
     extends StObject
        with codes

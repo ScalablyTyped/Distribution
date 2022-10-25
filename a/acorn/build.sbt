@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "acorn"
-version := "8.8.0-8dbb4d"
+version := "8.8.1-bfd3ad"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

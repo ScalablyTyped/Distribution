@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "it-drain"
-version := "1.0.5-1de9f9"
+version := "2.0.0-733bde"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

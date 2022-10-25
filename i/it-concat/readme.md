@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-concat
 
-Typings are for version 2.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Concat all buffers/strings yielded from an async iterable into a single BufferList/string

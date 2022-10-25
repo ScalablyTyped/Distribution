@@ -18,7 +18,19 @@ object buildSrcServerMod {
   open class Server () extends StObject {
     def this(options: ChannelOptions) = this()
     
+    /* private */ var _channelzHandler: Any = js.native
+    
+    /* private */ var _respondWithError: Any = js.native
+    
+    /* private */ var _retrieveHandler: Any = js.native
+    
+    /* private */ var _runHandlerForCall: Any = js.native
+    
     /* private */ var _setupHandlers: Any = js.native
+    
+    /* private */ var _streamHandler: Any = js.native
+    
+    /* private */ var _verifyContentType: Any = js.native
     
     def addHttp2Port(): scala.Nothing = js.native
     
@@ -72,6 +84,8 @@ object buildSrcServerMod {
     ): Boolean = js.native
     
     def removeService(service: js.Object): Unit = js.native
+    
+    /* private */ var serverAddressString: Any = js.native
     
     /* private */ var sessionChildrenTracker: Any = js.native
     

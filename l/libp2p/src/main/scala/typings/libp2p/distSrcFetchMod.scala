@@ -1,9 +1,10 @@
 package typings.libp2p
 
-import typings.libp2pComponents.mod.Components
 import typings.libp2pInterfaceConnection.mod.Stream
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaceRegistrar.mod.IncomingStreamData
+import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import typings.libp2pInterfaces.mod.AbortOptions
 import org.scalablytyped.runtime.StObject
@@ -17,7 +18,7 @@ object distSrcFetchMod {
   open class FetchService protected ()
     extends StObject
        with Startable {
-    def this(components: Components, init: FetchServiceInit) = this()
+    def this(components: FetchServiceComponents, init: FetchServiceInit) = this()
     
     /**
       * Given a key, finds the appropriate function for looking up its corresponding value, based on
@@ -79,6 +80,27 @@ object distSrcFetchMod {
       */
     def unregisterLookupFunction(prefix: String): Unit = js.native
     def unregisterLookupFunction(prefix: String, lookup: LookupFunction): Unit = js.native
+  }
+  
+  trait FetchServiceComponents extends StObject {
+    
+    var connectionManager: ConnectionManager
+    
+    var registrar: Registrar
+  }
+  object FetchServiceComponents {
+    
+    inline def apply(connectionManager: ConnectionManager, registrar: Registrar): FetchServiceComponents = {
+      val __obj = js.Dynamic.literal(connectionManager = connectionManager.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FetchServiceComponents]
+    }
+    
+    extension [Self <: FetchServiceComponents](x: Self) {
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setRegistrar(value: Registrar): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
+    }
   }
   
   trait FetchServiceInit extends StObject {

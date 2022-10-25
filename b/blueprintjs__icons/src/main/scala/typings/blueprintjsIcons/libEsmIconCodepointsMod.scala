@@ -1403,6 +1403,12 @@ object libEsmIconCodepointsMod {
     
     inline def highPriority_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("high-priority")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.high-voltage-pole")
+    @js.native
+    def highVoltagePole: String = js.native
+    
+    inline def highVoltagePole_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("high-voltage-pole")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.highlight")
     @js.native
     def highlight: String = js.native
@@ -1809,6 +1815,12 @@ object libEsmIconCodepointsMod {
     def logOut: String = js.native
     
     inline def logOut_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log-out")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.low-voltage-pole")
+    @js.native
+    def lowVoltagePole: String = js.native
+    
+    inline def lowVoltagePole_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("low-voltage-pole")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.manual")
     @js.native
@@ -2589,6 +2601,12 @@ object libEsmIconCodepointsMod {
     def smallCross: String = js.native
     
     inline def smallCross_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small-cross")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.small-info-sign")
+    @js.native
+    def smallInfoSign: String = js.native
+    
+    inline def smallInfoSign_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small-info-sign")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.small-minus")
     @js.native

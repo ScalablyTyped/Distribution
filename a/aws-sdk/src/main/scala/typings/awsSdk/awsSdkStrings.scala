@@ -30,6 +30,7 @@ import typings.awsSdk.clientsAcmpcaMod._AuditReportResponseFormat
 import typings.awsSdk.clientsAcmpcaMod._AuditReportStatus
 import typings.awsSdk.clientsAcmpcaMod._CertificateAuthorityStatus
 import typings.awsSdk.clientsAcmpcaMod._CertificateAuthorityType
+import typings.awsSdk.clientsAcmpcaMod._CertificateAuthorityUsageMode
 import typings.awsSdk.clientsAcmpcaMod._ExtendedKeyUsageType
 import typings.awsSdk.clientsAcmpcaMod._KeyAlgorithm
 import typings.awsSdk.clientsAcmpcaMod._KeyStorageSecurityStandard
@@ -265,6 +266,7 @@ import typings.awsSdk.clientsBatchMod._DeviceCgroupPermission
 import typings.awsSdk.clientsBatchMod._JQState
 import typings.awsSdk.clientsBatchMod._JQStatus
 import typings.awsSdk.clientsBatchMod._JobDefinitionType
+import typings.awsSdk.clientsBatchMod._OrchestrationType
 import typings.awsSdk.clientsBatchMod._PlatformCapability
 import typings.awsSdk.clientsBatchMod._RetryAction
 import typings.awsSdk.clientsBillingconductorMod._AssociateResourceErrorReason
@@ -12869,6 +12871,9 @@ object awsSdkStrings {
   inline def BEN: BEN = "BEN".asInstanceOf[BEN]
   
   @js.native
+  sealed trait BENCHMARK extends StObject
+  
+  @js.native
   sealed trait BENIGN_POSITIVE
     extends StObject
        with _VerificationState
@@ -18658,7 +18663,6 @@ object awsSdkStrings {
   sealed trait ChangeRequestByRequesterName
     extends StObject
        with _OpsItemFilterKey
-  inline def ChangeRequestByRequesterName: ChangeRequestByRequesterName = "ChangeRequestByRequesterName".asInstanceOf[ChangeRequestByRequesterName]
   
   @js.native
   sealed trait ChangeRequestByTargetsResourceGroup
@@ -24955,6 +24959,7 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsCodedeployMod._ComputePlatform
        with _DeploymentControllerType
+       with _OrchestrationType
        with _ServiceName
   inline def ECS: ECS = "ECS".asInstanceOf[ECS]
   
@@ -25109,6 +25114,7 @@ object awsSdkStrings {
   @js.native
   sealed trait EKS
     extends StObject
+       with _OrchestrationType
        with _ServiceName
   inline def EKS: EKS = "EKS".asInstanceOf[EKS]
   
@@ -30382,6 +30388,12 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsConnectMod._TrafficType
   inline def GENERAL: GENERAL = "GENERAL".asInstanceOf[GENERAL]
+  
+  @js.native
+  sealed trait GENERAL_PURPOSE
+    extends StObject
+       with _CertificateAuthorityUsageMode
+  inline def GENERAL_PURPOSE: GENERAL_PURPOSE = "GENERAL_PURPOSE".asInstanceOf[GENERAL_PURPOSE]
   
   @js.native
   sealed trait GENERATED
@@ -35953,6 +35965,12 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsEcsMod._ResourceType
   inline def InferenceAccelerator: InferenceAccelerator = "InferenceAccelerator".asInstanceOf[InferenceAccelerator]
+  
+  @js.native
+  sealed trait InferenceLatency
+    extends StObject
+       with _AutoMLMetricExtendedEnum
+  inline def InferenceLatency: InferenceLatency = "InferenceLatency".asInstanceOf[InferenceLatency]
   
   @js.native
   sealed trait InferredWorkloadTypes
@@ -56775,6 +56793,12 @@ object awsSdkStrings {
   inline def SHORT_ID: SHORT_ID = "SHORT_ID".asInstanceOf[SHORT_ID]
   
   @js.native
+  sealed trait SHORT_LIVED_CERTIFICATE
+    extends StObject
+       with _CertificateAuthorityUsageMode
+  inline def SHORT_LIVED_CERTIFICATE: SHORT_LIVED_CERTIFICATE = "SHORT_LIVED_CERTIFICATE".asInstanceOf[SHORT_LIVED_CERTIFICATE]
+  
+  @js.native
   sealed trait SHORT_TEXT
     extends StObject
        with _SnsFormat
@@ -61769,7 +61793,6 @@ object awsSdkStrings {
        with _MailFromDomainStatus
        with typings.awsSdk.clientsSesv2Mod._MailFromDomainStatus
        with _VerificationStatus
-  inline def TEMPORARY_FAILURE: TEMPORARY_FAILURE = "TEMPORARY_FAILURE".asInstanceOf[TEMPORARY_FAILURE]
   
   @js.native
   sealed trait TEMPORARY_NOT_AVAILABLE
@@ -69567,7 +69590,6 @@ object awsSdkStrings {
   
   @js.native
   sealed trait applicationSlashvndDotamazonawsDotcardDotgeneric extends StObject
-  inline def applicationSlashvndDotamazonawsDotcardDotgeneric: applicationSlashvndDotamazonawsDotcardDotgeneric = "application/vnd.amazonaws.card.generic".asInstanceOf[applicationSlashvndDotamazonawsDotcardDotgeneric]
   
   @js.native
   sealed trait applicationSlashxml

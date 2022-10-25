@@ -314,9 +314,7 @@ object distSrcDagMod {
     /**
       * The version to use to create the CID (default to 1)
       */
-    var version: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var version: js.UndefOr[Version] = js.undefined
   }
   object PutOptions {
     
@@ -347,9 +345,7 @@ object distSrcDagMod {
       
       inline def setStoreCodecUndefined: Self = StObject.set(x, "storeCodec", js.undefined)
       
-      inline def setVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }

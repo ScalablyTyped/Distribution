@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeTaskExecutionResponse extends StObject {
   
   /**
+    * The physical number of bytes transferred over the network after compression was applied. In most cases, this number is less than BytesTransferred.
+    */
+  var BytesCompressed: js.UndefOr[long] = js.undefined
+  
+  /**
     * The physical number of bytes transferred over the network.
     */
   var BytesTransferred: js.UndefOr[long] = js.undefined
@@ -27,7 +32,7 @@ trait DescribeTaskExecutionResponse extends StObject {
   var EstimatedFilesToTransfer: js.UndefOr[long] = js.undefined
   
   /**
-    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example: "/folder1|/folder2"   
+    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example: "/folder1|/folder2" 
     */
   var Excludes: js.UndefOr[FilterList] = js.undefined
   
@@ -37,7 +42,7 @@ trait DescribeTaskExecutionResponse extends StObject {
   var FilesTransferred: js.UndefOr[long] = js.undefined
   
   /**
-    * A list of filter rules that determines which files to include when running a task. The list should contain a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe), for example: "/folder1|/folder2"   
+    * A list of filter rules that determines which files to include when running a task. The list should contain a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe), for example: "/folder1|/folder2" 
     */
   var Includes: js.UndefOr[FilterList] = js.undefined
   
@@ -71,6 +76,10 @@ object DescribeTaskExecutionResponse {
   }
   
   extension [Self <: DescribeTaskExecutionResponse](x: Self) {
+    
+    inline def setBytesCompressed(value: long): Self = StObject.set(x, "BytesCompressed", value.asInstanceOf[js.Any])
+    
+    inline def setBytesCompressedUndefined: Self = StObject.set(x, "BytesCompressed", js.undefined)
     
     inline def setBytesTransferred(value: long): Self = StObject.set(x, "BytesTransferred", value.asInstanceOf[js.Any])
     

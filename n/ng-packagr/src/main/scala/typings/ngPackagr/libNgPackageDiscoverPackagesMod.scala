@@ -12,5 +12,5 @@ object libNgPackageDiscoverPackagesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def discoverPackages(hasProject: Project): js.Promise[NgPackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("discoverPackages")(hasProject.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NgPackage]]
+  inline def discoverPackages(param0: Project): js.Promise[NgPackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("discoverPackages")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NgPackage]]
 }

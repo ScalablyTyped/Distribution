@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-last" : "1.0.6"
+      "it-last" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "it-last" : "1.0.6"
+      "it-last" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

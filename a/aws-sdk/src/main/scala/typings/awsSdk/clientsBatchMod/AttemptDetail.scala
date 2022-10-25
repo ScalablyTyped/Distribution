@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttemptDetail extends StObject {
   
   /**
-    * Details about the container in this job attempt.
+    * The details for the container in this job attempt.
     */
   var container: js.UndefOr[AttemptContainerDetail] = js.undefined
   
@@ -17,7 +17,7 @@ trait AttemptDetail extends StObject {
   var startedAt: js.UndefOr[Long] = js.undefined
   
   /**
-    * A short, human-readable string to provide additional details about the current status of the job attempt.
+    * A short, human-readable string to provide additional details for the current status of the job attempt.
     */
   var statusReason: js.UndefOr[String] = js.undefined
   

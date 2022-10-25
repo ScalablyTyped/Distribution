@@ -145,11 +145,7 @@ object libEsmPopover2SharedPropsMod {
       *
       * @see https://popper.js.org/docs/v2/modifiers/
       */
-    var modifiers: js.UndefOr[
-        Partial[
-          /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
-        ]
-      ] = js.undefined
+    var modifiers: js.UndefOr[PopperModifierOverrides] = js.undefined
     
     /**
       * Custom modifiers to add to the popper instance.
@@ -307,11 +303,7 @@ object libEsmPopover2SharedPropsMod {
       
       inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
       
-      inline def setModifiers(
-        value: Partial[
-              /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
-            ]
-      ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: PopperModifierOverrides): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       inline def setModifiersCustom(value: js.Array[PartialModifieranyobject]): Self = StObject.set(x, "modifiersCustom", value.asInstanceOf[js.Any])
       
@@ -397,6 +389,10 @@ object libEsmPopover2SharedPropsMod {
   type Popover2SharedProps[T] = IPopover2SharedProps[T]
   
   type Popover2TargetProps = IPopover2TargetProps
+  
+  type PopperModifierOverrides = Partial[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
+  ]
   
   type StrictModifierNames = NonNullable[
     js.UndefOr[

@@ -221,9 +221,7 @@ object distSrcFilesMod {
     /**
       * The CID version to use for any updated entries
       */
-    var cidVersion: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var cidVersion: js.UndefOr[Version] = js.undefined
     
     /**
       * The hash algorithm to use for any updated entries
@@ -249,9 +247,7 @@ object distSrcFilesMod {
     
     extension [Self <: ChmodOptions](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
       
@@ -277,9 +273,7 @@ object distSrcFilesMod {
     /**
       * The CID version to use for any updated entries
       */
-    var cidVersion: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var cidVersion: js.UndefOr[Version] = js.undefined
     
     /**
       * The hash algorithm to use for any updated entries
@@ -305,9 +299,7 @@ object distSrcFilesMod {
     
     extension [Self <: CpOptions](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
       
@@ -415,9 +407,7 @@ object distSrcFilesMod {
     /**
       * The CID version to use for any updated entries
       */
-    var cidVersion: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var cidVersion: js.UndefOr[Version] = js.undefined
     
     /**
       * The hash algorithm to use for any updated entries
@@ -453,9 +443,7 @@ object distSrcFilesMod {
     
     extension [Self <: MkdirOptions](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
       
@@ -489,9 +477,7 @@ object distSrcFilesMod {
     /**
       * The CID version to use for any updated entries
       */
-    var cidVersion: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var cidVersion: js.UndefOr[Version] = js.undefined
     
     /**
       * The hash algorithm to use for any updated entries
@@ -517,9 +503,7 @@ object distSrcFilesMod {
     
     extension [Self <: MvOptions](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
       
@@ -578,9 +562,7 @@ object distSrcFilesMod {
     /**
       * The CID version to use for any updated entries
       */
-    var cidVersion: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var cidVersion: js.UndefOr[Version] = js.undefined
     
     /**
       * The hash algorithm to use for any updated entries
@@ -606,9 +588,7 @@ object distSrcFilesMod {
     
     extension [Self <: RmOptions](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
       
@@ -775,9 +755,7 @@ object distSrcFilesMod {
     /**
       * The CID version to use for any updated entries
       */
-    var cidVersion: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var cidVersion: js.UndefOr[Version] = js.undefined
     
     /**
       * The hash algorithm to use for any updated entries
@@ -803,9 +781,7 @@ object distSrcFilesMod {
     
     extension [Self <: TouchOptions](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
       
@@ -831,9 +807,7 @@ object distSrcFilesMod {
     /**
       * The CID version to use for any updated entries
       */
-    var cidVersion: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ] = js.undefined
+    var cidVersion: js.UndefOr[Version] = js.undefined
     
     /**
       * Create the MFS path if it does not exist
@@ -909,9 +883,7 @@ object distSrcFilesMod {
     
     extension [Self <: WriteOptions](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
       

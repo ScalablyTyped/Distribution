@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobDefinition extends StObject {
   
   /**
-    * An object with various properties specific to container-based jobs.
+    * The orchestration type of the compute environment. The valid values are ECS (default) or EKS.
+    */
+  var containerOrchestrationType: js.UndefOr[OrchestrationType] = js.undefined
+  
+  /**
+    * An object with various properties specific to Amazon ECS based jobs. Valid values are containerProperties, eksProperties, and nodeProperties. Only one can be specified.
     */
   var containerProperties: js.UndefOr[ContainerProperties] = js.undefined
+  
+  /**
+    * An object with various properties that are specific to Amazon EKS based jobs. Valid values are containerProperties, eksProperties, and nodeProperties. Only one can be specified.
+    */
+  var eksProperties: js.UndefOr[EksProperties] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the job definition.
@@ -22,7 +32,7 @@ trait JobDefinition extends StObject {
   var jobDefinitionName: String
   
   /**
-    * An object with various properties specific to multi-node parallel jobs.  If the job runs on Fargate resources, then you must not specify nodeProperties; use containerProperties instead. 
+    * An object with various properties that are specific to multi-node parallel jobs. Valid values are containerProperties, eksProperties, and nodeProperties. Only one can be specified.  If the job runs on Fargate resources, don't specify nodeProperties. Use containerProperties instead. 
     */
   var nodeProperties: js.UndefOr[NodeProperties] = js.undefined
   
@@ -37,7 +47,7 @@ trait JobDefinition extends StObject {
   var platformCapabilities: js.UndefOr[PlatformCapabilityList] = js.undefined
   
   /**
-    * Specifies whether to propagate the tags from the job or job definition to the corresponding Amazon ECS task. If no value is specified, the tags aren't propagated. Tags can only be propagated to the tasks during task creation. For tags with the same name, job tags are given priority over job definitions tags. If the total number of combined tags from the job and job definition is over 50, the job is moved to the FAILED state.
+    * Specifies whether to propagate the tags from the job or job definition to the corresponding Amazon ECS task. If no value is specified, the tags aren't propagated. Tags can only be propagated to the tasks when the tasks are created. For tags with the same name, job tags are given priority over job definitions tags. If the total number of combined tags from the job and job definition is over 50, the job is moved to the FAILED state.
     */
   var propagateTags: js.UndefOr[Boolean] = js.undefined
   
@@ -62,17 +72,17 @@ trait JobDefinition extends StObject {
   var status: js.UndefOr[String] = js.undefined
   
   /**
-    * The tags applied to the job definition.
+    * The tags that are applied to the job definition.
     */
   var tags: js.UndefOr[TagrisTagsMap] = js.undefined
   
   /**
-    * The timeout configuration for jobs that are submitted with this job definition. You can specify a timeout duration after which Batch terminates your jobs if they haven't finished.
+    * The timeout time for jobs that are submitted with this job definition. After the amount of time you specify passes, Batch terminates your jobs if they aren't finished.
     */
   var timeout: js.UndefOr[JobTimeout] = js.undefined
   
   /**
-    * The type of job definition, either container or multinode. If the job is run on Fargate resources, then multinode isn't supported. For more information about multi-node parallel jobs, see Creating a multi-node parallel job definition in the Batch User Guide.
+    * The type of job definition. It's either container or multinode. If the job is run on Fargate resources, then multinode isn't supported. For more information about multi-node parallel jobs, see Creating a multi-node parallel job definition in the Batch User Guide.
     */
   var `type`: String
 }
@@ -86,9 +96,17 @@ object JobDefinition {
   
   extension [Self <: JobDefinition](x: Self) {
     
+    inline def setContainerOrchestrationType(value: OrchestrationType): Self = StObject.set(x, "containerOrchestrationType", value.asInstanceOf[js.Any])
+    
+    inline def setContainerOrchestrationTypeUndefined: Self = StObject.set(x, "containerOrchestrationType", js.undefined)
+    
     inline def setContainerProperties(value: ContainerProperties): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
     
     inline def setContainerPropertiesUndefined: Self = StObject.set(x, "containerProperties", js.undefined)
+    
+    inline def setEksProperties(value: EksProperties): Self = StObject.set(x, "eksProperties", value.asInstanceOf[js.Any])
+    
+    inline def setEksPropertiesUndefined: Self = StObject.set(x, "eksProperties", js.undefined)
     
     inline def setJobDefinitionArn(value: String): Self = StObject.set(x, "jobDefinitionArn", value.asInstanceOf[js.Any])
     

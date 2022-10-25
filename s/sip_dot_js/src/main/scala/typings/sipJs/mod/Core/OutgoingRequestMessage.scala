@@ -12,65 +12,65 @@ open class OutgoingRequestMessage protected ()
   extends typings.sipJs.libCoreMod.OutgoingRequestMessage {
   def this(
     method: String,
-    ruri: typings.sipJs.libGrammarMod.URI,
-    fromURI: typings.sipJs.libGrammarMod.URI,
-    toURI: typings.sipJs.libGrammarMod.URI
+    ruri: typings.sipJs.libGrammarUriMod.URI,
+    fromURI: typings.sipJs.libGrammarUriMod.URI,
+    toURI: typings.sipJs.libGrammarUriMod.URI
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.libGrammarMod.URI,
-    fromURI: typings.sipJs.libGrammarMod.URI,
-    toURI: typings.sipJs.libGrammarMod.URI,
+    ruri: typings.sipJs.libGrammarUriMod.URI,
+    fromURI: typings.sipJs.libGrammarUriMod.URI,
+    toURI: typings.sipJs.libGrammarUriMod.URI,
     options: OutgoingRequestMessageOptions
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.libGrammarMod.URI,
-    fromURI: typings.sipJs.libGrammarMod.URI,
-    toURI: typings.sipJs.libGrammarMod.URI,
+    ruri: typings.sipJs.libGrammarUriMod.URI,
+    fromURI: typings.sipJs.libGrammarUriMod.URI,
+    toURI: typings.sipJs.libGrammarUriMod.URI,
     options: Unit,
     extraHeaders: js.Array[String]
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.libGrammarMod.URI,
-    fromURI: typings.sipJs.libGrammarMod.URI,
-    toURI: typings.sipJs.libGrammarMod.URI,
+    ruri: typings.sipJs.libGrammarUriMod.URI,
+    fromURI: typings.sipJs.libGrammarUriMod.URI,
+    toURI: typings.sipJs.libGrammarUriMod.URI,
     options: OutgoingRequestMessageOptions,
     extraHeaders: js.Array[String]
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.libGrammarMod.URI,
-    fromURI: typings.sipJs.libGrammarMod.URI,
-    toURI: typings.sipJs.libGrammarMod.URI,
+    ruri: typings.sipJs.libGrammarUriMod.URI,
+    fromURI: typings.sipJs.libGrammarUriMod.URI,
+    toURI: typings.sipJs.libGrammarUriMod.URI,
     options: Unit,
     extraHeaders: js.Array[String],
     body: Body
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.libGrammarMod.URI,
-    fromURI: typings.sipJs.libGrammarMod.URI,
-    toURI: typings.sipJs.libGrammarMod.URI,
+    ruri: typings.sipJs.libGrammarUriMod.URI,
+    fromURI: typings.sipJs.libGrammarUriMod.URI,
+    toURI: typings.sipJs.libGrammarUriMod.URI,
     options: Unit,
     extraHeaders: Unit,
     body: Body
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.libGrammarMod.URI,
-    fromURI: typings.sipJs.libGrammarMod.URI,
-    toURI: typings.sipJs.libGrammarMod.URI,
+    ruri: typings.sipJs.libGrammarUriMod.URI,
+    fromURI: typings.sipJs.libGrammarUriMod.URI,
+    toURI: typings.sipJs.libGrammarUriMod.URI,
     options: OutgoingRequestMessageOptions,
     extraHeaders: js.Array[String],
     body: Body
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.libGrammarMod.URI,
-    fromURI: typings.sipJs.libGrammarMod.URI,
-    toURI: typings.sipJs.libGrammarMod.URI,
+    ruri: typings.sipJs.libGrammarUriMod.URI,
+    fromURI: typings.sipJs.libGrammarUriMod.URI,
+    toURI: typings.sipJs.libGrammarUriMod.URI,
     options: OutgoingRequestMessageOptions,
     extraHeaders: Unit,
     body: Body

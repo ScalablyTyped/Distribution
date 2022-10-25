@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ServerTransaction protected ()
   extends typings.sipJs.libCoreTransactionsMod.ServerTransaction {
   /* protected */ def this(
-    _request: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    _request: typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
     transport: Transport,
     user: ServerTransactionUser,
     state: typings.sipJs.libCoreTransactionsTransactionStateMod.TransactionState,

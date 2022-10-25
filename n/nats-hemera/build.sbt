@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "nats-hemera"
-version := "7.0.2-08f896"
+version := "7.0.2-2ce25a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
-  "org.scalablytyped" %%% "pino" % "8.7.0-20fcc3",
-  "org.scalablytyped" %%% "pino-std-serializers" % "6.0.0-2ac8c3",
-  "org.scalablytyped" %%% "sonic-boom" % "3.2.0-bc64c1",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "pino" % "8.7.0-4105aa",
+  "org.scalablytyped" %%% "pino-std-serializers" % "6.0.0-a79a24",
+  "org.scalablytyped" %%% "sonic-boom" % "3.2.0-0cfca7",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

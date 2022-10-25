@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-tar
 
-Typings are for version 6.0.0
+Typings are for version 6.0.1
 
 ## Library description:
 it-tar is a streaming tar parser (and maybe a generator in the future) and nothing else. It operates purely using async iterables which means you can easily extract/parse tarballs without ever hitting the file system.

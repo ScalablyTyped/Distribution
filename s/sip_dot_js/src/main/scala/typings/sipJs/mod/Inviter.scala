@@ -15,10 +15,13 @@ open class Inviter protected ()
     * @param targetURI - Request URI identifying the target of the message.
     * @param options - Options bucket. See {@link InviterOptions} for details.
     */
-  def this(userAgent: typings.sipJs.libApiUserAgentMod.UserAgent, targetURI: typings.sipJs.libCoreMod.URI) = this()
   def this(
     userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
-    targetURI: typings.sipJs.libCoreMod.URI,
+    targetURI: typings.sipJs.libGrammarUriMod.URI
+  ) = this()
+  def this(
+    userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
+    targetURI: typings.sipJs.libGrammarUriMod.URI,
     options: InviterOptions
   ) = this()
 }

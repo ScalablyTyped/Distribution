@@ -36,6 +36,7 @@ import typings.ddTrace.ddTraceStrings.mysql
 import typings.ddTrace.ddTraceStrings.mysql2
 import typings.ddTrace.ddTraceStrings.net
 import typings.ddTrace.ddTraceStrings.next
+import typings.ddTrace.ddTraceStrings.opensearch
 import typings.ddTrace.ddTraceStrings.oracledb
 import typings.ddTrace.ddTraceStrings.paperplane
 import typings.ddTrace.ddTraceStrings.pg
@@ -363,6 +364,12 @@ trait Tracer_ extends Tracer {
   def use_next(plugin: next, config: Boolean): this.type = js.native
   @JSName("use")
   def use_next(plugin: next, config: typings.ddTrace.mod.plugins.next): this.type = js.native
+  @JSName("use")
+  def use_opensearch(plugin: opensearch): this.type = js.native
+  @JSName("use")
+  def use_opensearch(plugin: opensearch, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_opensearch(plugin: opensearch, config: typings.ddTrace.mod.plugins.opensearch): this.type = js.native
   @JSName("use")
   def use_oracledb(plugin: oracledb): this.type = js.native
   @JSName("use")

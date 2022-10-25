@@ -6,6 +6,7 @@ import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityClientMod.Ser
 import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityClientMod._ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.GetIdInput
 import typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.GetIdResponse
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
 import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
@@ -39,6 +40,15 @@ object distTypesCommandsGetIdCommandMod {
     ): Handler[GetIdCommandInput, GetIdCommandOutput] = js.native
     
     /* private */ var serialize: Any = js.native
+  }
+  /* static members */
+  object GetIdCommand {
+    
+    @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/GetIdCommand", "GetIdCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   type GetIdCommandInput = GetIdInput

@@ -1,0 +1,18 @@
+package typings.awsSdkClientCognitoIdentity
+
+import typings.awsSdkClientCognitoIdentity.anon.Logger
+import typings.awsSdkClientCognitoIdentity.distTypesEndpointEndpointParametersMod.EndpointParameters
+import typings.awsSdkTypes.distTypesEndpointMod.EndpointV2
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distTypesEndpointEndpointResolverMod {
+  
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/endpoint/endpointResolver", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def defaultEndpointResolver(endpointParams: EndpointParameters): EndpointV2 = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultEndpointResolver")(endpointParams.asInstanceOf[js.Any]).asInstanceOf[EndpointV2]
+  inline def defaultEndpointResolver(endpointParams: EndpointParameters, context: Logger): EndpointV2 = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultEndpointResolver")(endpointParams.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EndpointV2]
+}

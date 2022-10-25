@@ -1,9 +1,9 @@
 package typings.whyDidYouUpdate
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
 import typings.react.anon.Default
 import typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps
-import typings.react.experimentalMod.reactAugmentingMod.Usable
 import typings.react.mod.Attributes
 import typings.react.mod.CElement
 import typings.react.mod.CFactory
@@ -59,6 +59,10 @@ import typings.react.mod.SetStateAction
 import typings.react.mod.SuspenseProps
 import typings.react.mod.TransitionFunction
 import typings.react.mod.TransitionStartFunction
+import typings.react.nextMod.reactAugmentingMod.ServerContext
+import typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray
+import typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue
+import typings.react.nextMod.reactAugmentingMod.Usable
 import typings.std.Element
 import typings.std.Exclude
 import typings.std.HTMLElement
@@ -156,6 +160,8 @@ object anon {
     val Suspense: ExoticComponent[SuspenseProps] = js.native
     
     val SuspenseList: ExoticComponent[SuspenseListProps] = js.native
+    
+    def cache[CachedFunction /* <: js.Function */](fn: CachedFunction): CachedFunction = js.native
     
     // Custom components
     def cloneElement[P](element: FunctionComponentElement[P], props: Partial[P] & Attributes, children: ReactNode*): FunctionComponentElement[P] = js.native
@@ -296,7 +302,12 @@ object anon {
     
     def createRef[T](): RefObject[T] = js.native
     
-    def experimental_use[T](usable: Usable[T]): T = js.native
+    def createServerContext(globalName: String, defaultValue: String): ServerContext[String] = js.native
+    def createServerContext(globalName: String, defaultValue: js.Array[ServerContextJSONArray]): ServerContext[js.Array[ServerContextJSONArray]] = js.native
+    def createServerContext(globalName: String, defaultValue: Boolean): ServerContext[Boolean] = js.native
+    def createServerContext(globalName: String, defaultValue: Double): ServerContext[Double] = js.native
+    def createServerContext(globalName: String, defaultValue: Null): ServerContext[Null] = js.native
+    def createServerContext[T /* <: StringDictionary[ServerContextJSONValue] */](globalName: String, defaultValue: T): ServerContext[T] = js.native
     
     def experimental_useEvent[T /* <: js.Function */](event: T): T = js.native
     
@@ -319,6 +330,10 @@ object anon {
     ): NamedExoticComponent[P] = js.native
     
     def startTransition(scope: TransitionFunction): Unit = js.native
+    
+    def unstable_useCacheRefresh(): js.Function0[Unit] = js.native
+    
+    def use[T](usable: Usable[T]): T = js.native
     
     // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
     // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.

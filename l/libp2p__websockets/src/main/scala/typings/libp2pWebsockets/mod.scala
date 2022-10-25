@@ -1,6 +1,7 @@
 package typings.libp2pWebsockets
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.itWs.distSrcClientMod.WebSocketOptions
 import typings.libp2pInterfaceTransport.mod.MultiaddrFilter
 import typings.libp2pInterfaceTransport.mod.Transport
 import typings.libp2pInterfaces.mod.AbortOptions
@@ -9,36 +10,23 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
 import typings.node.nodeColonnetMod.Socket
-import typings.ws.mod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@libp2p/websockets", "WebSockets")
+  @JSImport("@libp2p/websockets", JSImport.Namespace)
   @js.native
-  open class WebSockets ()
-    extends StObject
-       with Transport {
-    def this(init: WebSocketsInit) = this()
-    
-    def _connect(ma: Multiaddr_, options: AbortOptions): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DuplexWebSocket */ Any
-      ] = js.native
-    
-    var get: Any = js.native
-    
-    /* private */ val init: Any = js.native
-    
-    @JSName(js.Symbol.toStringTag)
-    var toStringTag_WebSockets: js.Function0[String] = js.native
-  }
+  val ^ : js.Any = js.native
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebSocketOptions * / any */ trait WebSocketsInit
+  inline def webSockets(): js.Function1[/* components */ js.UndefOr[Any], Transport] = ^.asInstanceOf[js.Dynamic].applyDynamic("webSockets")().asInstanceOf[js.Function1[/* components */ js.UndefOr[Any], Transport]]
+  inline def webSockets(init: WebSocketsInit): js.Function1[/* components */ js.UndefOr[Any], Transport] = ^.asInstanceOf[js.Dynamic].applyDynamic("webSockets")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ js.UndefOr[Any], Transport]]
+  
+  trait WebSocketsInit
     extends StObject
-       with AbortOptions {
+       with AbortOptions
+       with WebSocketOptions {
     
     var filter: js.UndefOr[MultiaddrFilter] = js.undefined
     
@@ -51,8 +39,6 @@ object mod {
           ]
         ]
       ] = js.undefined
-    
-    var websocket: js.UndefOr[ClientOptions] = js.undefined
   }
   object WebSocketsInit {
     
@@ -78,10 +64,6 @@ object mod {
       ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
       inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
-      
-      inline def setWebsocket(value: ClientOptions): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
-      
-      inline def setWebsocketUndefined: Self = StObject.set(x, "websocket", js.undefined)
     }
   }
 }

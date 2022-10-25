@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "uint8arraylist" : "2.3.2"
+      "uint8arraylist" : "2.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "uint8arraylist" : "2.3.2"
+      "uint8arraylist" : "2.3.3"
     }
   ],
   "compile-devDependencies" : [

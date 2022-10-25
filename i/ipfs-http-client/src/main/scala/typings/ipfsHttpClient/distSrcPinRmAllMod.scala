@@ -19,7 +19,7 @@ object distSrcPinRmAllMod {
       ], 
       /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
       AsyncIterable[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any
       ]
     ]
   ] = js.native

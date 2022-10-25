@@ -8,13 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-    * @param {Blob} blob
-    * @returns {AsyncIterable<Uint8Array>}
-    */
-  inline def apply(blob: Blob): AsyncIterable[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(blob.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[js.typedarray.Uint8Array]]
-  
   @JSImport("blob-to-it", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(blob: Blob): AsyncIterable[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(blob.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[js.typedarray.Uint8Array]]
 }

@@ -1613,7 +1613,7 @@ object config {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var overrides: js.UndefOr[StringDictionary[Any]] = js.undefined
+    var overrides: js.UndefOr[String | StringDictionary[Any]] = js.undefined
     
     var styles: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
@@ -1636,7 +1636,7 @@ object config {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOverrides(value: StringDictionary[Any]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: String | StringDictionary[Any]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
       inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       

@@ -3,10 +3,10 @@ package typings.sipJs
 import typings.sipJs.libApiInviterMod.Inviter
 import typings.sipJs.libApiInviterOptionsMod.InviterOptions
 import typings.sipJs.libApiSessionMod.Session
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
 import typings.sipJs.libCoreMessagesMethodsReferMod.IncomingReferRequest
 import typings.sipJs.libCoreMessagesOutgoingResponseMod.ResponseOptions
-import typings.sipJs.libCoreMod.IncomingRequestMessage
-import typings.sipJs.libCoreMod.NameAddrHeader
+import typings.sipJs.libGrammarNameAddrHeaderMod.NameAddrHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for dag-jose
 
-Typings are for version 2.0.1
+Typings are for version 3.0.1
 
 ## Library description:
 Typescript implementation of the IPLD dag-jose format

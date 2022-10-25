@@ -1,8 +1,8 @@
 package typings.sipJs
 
-import typings.sipJs.libCoreExceptionsMod.TransportError
-import typings.sipJs.libCoreLogMod.LoggerFactory
-import typings.sipJs.libCoreMessagesMod.IncomingResponseMessage
+import typings.sipJs.libCoreExceptionsTransportErrorMod.TransportError
+import typings.sipJs.libCoreLogLoggerFactoryMod.LoggerFactory
+import typings.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage
 import typings.sipJs.libCoreTransactionsTransactionStateMod.TransactionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

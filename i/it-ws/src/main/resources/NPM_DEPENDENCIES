@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-ws" : "5.0.2"
+      "it-ws" : "5.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "it-ws" : "5.0.2"
+      "it-ws" : "5.0.3"
     }
   ],
   "compile-devDependencies" : [

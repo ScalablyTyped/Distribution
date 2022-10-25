@@ -6,6 +6,7 @@ import typings.chainsafeLibp2pGossipsub.anon.PartialPeerScoreThreshold
 import typings.chainsafeLibp2pGossipsub.anon.RequiredGossipOptions
 import typings.chainsafeLibp2pGossipsub.distSrcConfigMod.GossipsubOptsSpec
 import typings.chainsafeLibp2pGossipsub.distSrcMessageCacheMod.MessageCache
+import typings.chainsafeLibp2pGossipsub.distSrcMessageDecodeRpcMod.DecodeRPCLimits
 import typings.chainsafeLibp2pGossipsub.distSrcMessageRpcMod.IRPC
 import typings.chainsafeLibp2pGossipsub.distSrcMessageRpcMod.RPC.IControlIHave
 import typings.chainsafeLibp2pGossipsub.distSrcMessageRpcMod.RPC.IControlMessage
@@ -22,21 +23,21 @@ import typings.chainsafeLibp2pGossipsub.distSrcTracerMod.IWantTracer
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.AddrInfo
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.DataTransform
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.FastMsgIdFn
-import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MessageAcceptance
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdFn
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdStr
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdToStrFn
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.PeerIdStr
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr
-import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicValidatorFn
-import typings.libp2pComponents.mod.Components
-import typings.libp2pComponents.mod.Initializable
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfacePubsub.mod.Message
 import typings.libp2pInterfacePubsub.mod.PubSub
 import typings.libp2pInterfacePubsub.mod.PubSubEvents
 import typings.libp2pInterfacePubsub.mod.PubSubInit
 import typings.libp2pInterfacePubsub.mod.SubscriptionChangeData
+import typings.libp2pInterfacePubsub.mod.TopicValidatorResult
+import typings.libp2pInterfaceRegistrar.mod.Registrar
 import typings.std.CustomEvent
 import typings.std.Map
 import typings.std.Set
@@ -46,12 +47,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@chainsafe/libp2p-gossipsub", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@chainsafe/libp2p-gossipsub", "GossipSub")
   @js.native
-  open class GossipSub ()
-    extends PubSub[GossipsubEvents]
-       with Initializable {
-    def this(options: PartialGossipsubOpts) = this()
+  open class GossipSub_ protected () extends PubSub[GossipsubEvents] {
+    def this(components: GossipSubComponents) = this()
+    def this(components: GossipSubComponents, options: PartialGossipsubOpts) = this()
     
     /**
       * Whether to accept a message from a peer
@@ -73,6 +77,8 @@ object mod {
       */
     /* private */ var addPeer: Any = js.native
     
+    /* private */ var allowedTopics: Any = js.native
+    
     /**
       * Apply penalties from broken IHAVE/IWANT promises
       */
@@ -86,7 +92,7 @@ object mod {
       */
     /* private */ var clearBackoff: Any = js.native
     
-    /* private */ var components: Any = js.native
+    /* private */ val components: Any = js.native
     
     /**
       * Connect to a peer using the gossipsub protocol
@@ -104,6 +110,8 @@ object mod {
     /* private */ var createOutboundStream: Any = js.native
     
     /* private */ val dataTransform: Any = js.native
+    
+    /* private */ val decodeRpcLimits: Any = js.native
     
     /** Direct peers */
     val direct: Set[String] = js.native
@@ -266,9 +274,6 @@ object mod {
     /** Number of messages we have asked from peer in the last heartbeat */
     /* private */ val iasked: Any = js.native
     
-    /* CompleteClass */
-    override def init(components: Components): Unit = js.native
-    
     def isStarted(): Boolean = js.native
     
     /**
@@ -344,8 +349,10 @@ object mod {
     
     val peers: Set[String] = js.native
     
+    /** Mutates `outRpc` adding graft and prune control messages */
     def piggybackControl(id: PeerIdStr, outRpc: IRPC, ctrl: IControlMessage): Unit = js.native
     
+    /** Mutates `outRpc` adding ihave control messages */
     /* private */ var piggybackGossip: Any = js.native
     
     /**
@@ -397,7 +404,7 @@ object mod {
       *
       * This should only be called once per message.
       */
-    def reportMessageValidationResult(msgId: MsgIdStr, propagationSource: PeerId, acceptance: MessageAcceptance): Unit = js.native
+    def reportMessageValidationResult(msgId: MsgIdStr, propagationSource: PeerId, acceptance: TopicValidatorResult): Unit = js.native
     
     /* private */ val runHeartbeat: Any = js.native
     
@@ -463,8 +470,6 @@ object mod {
       */
     /* private */ val subscriptions: Any = js.native
     
-    val topicValidators: Map[String, TopicValidatorFn] = js.native
-    
     /**
       * Map of topics to which peers are subscribed to
       */
@@ -477,7 +482,7 @@ object mod {
     /* private */ var validateReceivedMessage: Any = js.native
   }
   /* static members */
-  object GossipSub {
+  object GossipSub_ {
     
     @JSImport("@chainsafe/libp2p-gossipsub", "GossipSub")
     @js.native
@@ -488,6 +493,9 @@ object mod {
     def multicodec: String = js.native
     inline def multicodec_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multicodec")(x.asInstanceOf[js.Any])
   }
+  
+  inline def gossipsub(): js.Function1[/* components */ GossipSubComponents, PubSub[GossipsubEvents]] = ^.asInstanceOf[js.Dynamic].applyDynamic("gossipsub")().asInstanceOf[js.Function1[/* components */ GossipSubComponents, PubSub[GossipsubEvents]]]
+  inline def gossipsub(init: PartialGossipsubOpts): js.Function1[/* components */ GossipSubComponents, PubSub[GossipsubEvents]] = ^.asInstanceOf[js.Dynamic].applyDynamic("gossipsub")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ GossipSubComponents, PubSub[GossipsubEvents]]]
   
   @JSImport("@chainsafe/libp2p-gossipsub", "multicodec")
   @js.native
@@ -520,7 +528,7 @@ object mod {
       doPX: Boolean,
       fallbackToFloodsub: Boolean,
       fanoutTTL: Double,
-      fastMsgIdFn: /* msg */ IMessage => String,
+      fastMsgIdFn: /* msg */ IMessage => String | Double,
       floodPublish: Boolean,
       gossipsubIWantFollowupMs: Double,
       heartbeatInterval: Double,
@@ -542,6 +550,35 @@ object mod {
       inline def setScoreParams(value: PeerScoreParams): Self = StObject.set(x, "scoreParams", value.asInstanceOf[js.Any])
       
       inline def setScoreThresholds(value: PeerScoreThresholds): Self = StObject.set(x, "scoreThresholds", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait GossipSubComponents extends StObject {
+    
+    var connectionManager: ConnectionManager
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+    
+    var registrar: Registrar
+  }
+  object GossipSubComponents {
+    
+    inline def apply(connectionManager: ConnectionManager, peerId: PeerId, peerStore: PeerStore, registrar: Registrar): GossipSubComponents = {
+      val __obj = js.Dynamic.literal(connectionManager = connectionManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GossipSubComponents]
+    }
+    
+    extension [Self <: GossipSubComponents](x: Self) {
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+      
+      inline def setRegistrar(value: Registrar): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -612,6 +649,11 @@ object mod {
     var allowPublishToZeroPeers: Boolean
     
     /**
+      * If provided, only allow topics in this list
+      */
+    var allowedTopics: js.UndefOr[js.Array[String] | Set[String]] = js.undefined
+    
+    /**
       * If true will not forward messages to mesh peers until reportMessageValidationResult() is called.
       * Messages will be cached in mcache for some time after which they are evicted. Calling
       * reportMessageValidationResult() after the message is dropped from mcache won't forward the message.
@@ -629,6 +671,11 @@ object mod {
     /** Prefix tag for debug logs */
     var debugName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Limits to bound protobuf decoding
+      */
+    var decodeRpcLimits: js.UndefOr[DecodeRPCLimits] = js.undefined
+    
     var directConnectTicks: js.UndefOr[Double] = js.undefined
     
     /** peers with which we will maintain direct connections */
@@ -641,7 +688,7 @@ object mod {
     var fallbackToFloodsub: Boolean
     
     /** fast message id function */
-    def fastMsgIdFn(msg: IMessage): String
+    def fastMsgIdFn(msg: IMessage): String | Double
     /** fast message id function */
     @JSName("fastMsgIdFn")
     var fastMsgIdFn_Original: FastMsgIdFn
@@ -711,7 +758,7 @@ object mod {
       doPX: Boolean,
       fallbackToFloodsub: Boolean,
       fanoutTTL: Double,
-      fastMsgIdFn: /* msg */ IMessage => String,
+      fastMsgIdFn: /* msg */ IMessage => String | Double,
       floodPublish: Boolean,
       gossipsubIWantFollowupMs: Double,
       heartbeatInterval: Double,
@@ -732,6 +779,12 @@ object mod {
       
       inline def setAllowPublishToZeroPeers(value: Boolean): Self = StObject.set(x, "allowPublishToZeroPeers", value.asInstanceOf[js.Any])
       
+      inline def setAllowedTopics(value: js.Array[String] | Set[String]): Self = StObject.set(x, "allowedTopics", value.asInstanceOf[js.Any])
+      
+      inline def setAllowedTopicsUndefined: Self = StObject.set(x, "allowedTopics", js.undefined)
+      
+      inline def setAllowedTopicsVarargs(value: String*): Self = StObject.set(x, "allowedTopics", js.Array(value*))
+      
       inline def setAsyncValidation(value: Boolean): Self = StObject.set(x, "asyncValidation", value.asInstanceOf[js.Any])
       
       inline def setAwaitRpcHandler(value: Boolean): Self = StObject.set(x, "awaitRpcHandler", value.asInstanceOf[js.Any])
@@ -746,6 +799,10 @@ object mod {
       
       inline def setDebugNameUndefined: Self = StObject.set(x, "debugName", js.undefined)
       
+      inline def setDecodeRpcLimits(value: DecodeRPCLimits): Self = StObject.set(x, "decodeRpcLimits", value.asInstanceOf[js.Any])
+      
+      inline def setDecodeRpcLimitsUndefined: Self = StObject.set(x, "decodeRpcLimits", js.undefined)
+      
       inline def setDirectConnectTicks(value: Double): Self = StObject.set(x, "directConnectTicks", value.asInstanceOf[js.Any])
       
       inline def setDirectConnectTicksUndefined: Self = StObject.set(x, "directConnectTicks", js.undefined)
@@ -758,7 +815,7 @@ object mod {
       
       inline def setFallbackToFloodsub(value: Boolean): Self = StObject.set(x, "fallbackToFloodsub", value.asInstanceOf[js.Any])
       
-      inline def setFastMsgIdFn(value: /* msg */ IMessage => String): Self = StObject.set(x, "fastMsgIdFn", js.Any.fromFunction1(value))
+      inline def setFastMsgIdFn(value: /* msg */ IMessage => String | Double): Self = StObject.set(x, "fastMsgIdFn", js.Any.fromFunction1(value))
       
       inline def setFloodPublish(value: Boolean): Self = StObject.set(x, "floodPublish", value.asInstanceOf[js.Any])
       

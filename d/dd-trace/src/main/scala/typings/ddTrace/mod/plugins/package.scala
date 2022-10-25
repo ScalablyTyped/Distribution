@@ -165,6 +165,12 @@ type net = Instrumentation
 
 /**
   * This plugin automatically instruments the
+  * [opensearch](https://github.com/opensearch-project/opensearch-js) module.
+  */
+type opensearch = elasticsearch
+
+/**
+  * This plugin automatically instruments the
   * [paperplane](https://github.com/articulate/paperplane) module.
   */
 type paperplane = HttpServer

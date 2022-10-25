@@ -198,6 +198,8 @@ type ObjectStorageAccessKey = String
 
 type ObjectStorageBucketName = String
 
+type ObjectStorageCertificate = Buffer | js.typedarray.Uint8Array | Blob | String
+
 type ObjectStorageSecretKey = String
 
 type ObjectStorageServerPort = Double

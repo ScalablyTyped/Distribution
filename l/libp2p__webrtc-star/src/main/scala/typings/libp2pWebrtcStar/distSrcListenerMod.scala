@@ -4,8 +4,8 @@ import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaceTransport.mod.ConnectionHandler
 import typings.libp2pInterfaceTransport.mod.Listener
 import typings.libp2pInterfaceTransport.mod.Upgrader
-import typings.libp2pWebrtcStar.mod.WebRTCStar
-import typings.libp2pWebrtcStar.mod.WebRTCStarListenerOptions
+import typings.libp2pWebrtcStar.distSrcTransportMod.WebRTCStar
+import typings.libp2pWebrtcStar.distSrcTransportMod.WebRTCStarListenerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

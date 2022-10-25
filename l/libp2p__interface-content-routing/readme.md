@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-content-routing
 
-Typings are for version 1.0.2
+Typings are for version 1.0.3
 
 ## Library description:
 Content routing interface for libp2p

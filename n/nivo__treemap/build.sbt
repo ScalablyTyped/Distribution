@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__treemap"
-version := "0.80.0-2f2906"
+version := "0.80.0-9f031f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,11 +12,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-scale" % "4.0-dt-20220624Z-729417",
   "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20220624Z-f5f0fe",
   "org.scalablytyped" %%% "d3-time" % "3.0-dt-20211202Z-7d17be",
-  "org.scalablytyped" %%% "nivo__colors" % "0.80.0-ef1ef3",
-  "org.scalablytyped" %%% "nivo__core" % "0.80.0-0b2352",
+  "org.scalablytyped" %%% "nivo__colors" % "0.80.0-d20b6a",
+  "org.scalablytyped" %%% "nivo__core" % "0.80.0-747fe6",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
-  "org.scalablytyped" %%% "react-spring__types" % "9.5.5-c653de",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
+  "org.scalablytyped" %%% "react-spring__types" % "9.5.5-68f9b1",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

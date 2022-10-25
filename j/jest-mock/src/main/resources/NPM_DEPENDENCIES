@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-mock" : "29.2.1"
+      "jest-mock" : "29.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-mock" : "29.2.1"
+      "jest-mock" : "29.2.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,10 +1,10 @@
 package typings.sipJs
 
-import typings.sipJs.libCoreExceptionsMod.TransportError
+import typings.sipJs.libCoreExceptionsTransportErrorMod.TransportError
 import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
-import typings.sipJs.libCoreMessagesMod.URI
 import typings.sipJs.libCoreMessagesOutgoingResponseMod.OutgoingResponse
 import typings.sipJs.libCoreMessagesOutgoingResponseMod.ResponseOptions
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

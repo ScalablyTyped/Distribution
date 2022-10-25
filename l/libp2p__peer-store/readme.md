@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__peer-store
 
-Typings are for version 3.1.5
+Typings are for version 5.0.0
 
 ## Library description:
 Stores information about peers libp2p knows on the network

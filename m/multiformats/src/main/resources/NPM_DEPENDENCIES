@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "multiformats" : "10.0.0"
+      "multiformats" : "10.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "multiformats" : "10.0.0"
+      "multiformats" : "10.0.2"
     }
   ],
   "compile-devDependencies" : [

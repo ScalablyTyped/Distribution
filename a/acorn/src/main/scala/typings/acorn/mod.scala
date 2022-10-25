@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
+import typings.acorn.acornStrings.Block
+import typings.acorn.acornStrings.Line
 import typings.acorn.acornStrings.module
 import typings.acorn.acornStrings.never
 import typings.acorn.acornStrings.script
@@ -861,13 +863,13 @@ object mod {
     
     var start: Double
     
-    var `type`: String
+    var `type`: Line | Block
     
     var value: String
   }
   object Comment {
     
-    inline def apply(end: Double, start: Double, `type`: String, value: String): Comment = {
+    inline def apply(end: Double, start: Double, `type`: Line | Block, value: String): Comment = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Comment]
@@ -887,7 +889,7 @@ object mod {
       
       inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Line | Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

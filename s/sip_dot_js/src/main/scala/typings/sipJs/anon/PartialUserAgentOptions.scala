@@ -10,8 +10,8 @@ import typings.sipJs.libApiUserAgentDelegateMod.UserAgentDelegate
 import typings.sipJs.libApiUserAgentOptionsMod.LogConnector
 import typings.sipJs.libApiUserAgentOptionsMod.LogLevel
 import typings.sipJs.libApiUserAgentOptionsMod.SIPExtension
-import typings.sipJs.libCoreMod.Logger
-import typings.sipJs.libCoreMod.URI
+import typings.sipJs.libCoreLogLoggerMod.Logger
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,10 +27,6 @@ trait PartialUserAgentOptions extends StObject {
   
   var authorizationUsername: js.UndefOr[String] = js.undefined
   
-  var autoStart: js.UndefOr[Boolean] = js.undefined
-  
-  var autoStop: js.UndefOr[Boolean] = js.undefined
-  
   var contactName: js.UndefOr[String] = js.undefined
   
   var contactParams: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -41,11 +37,17 @@ trait PartialUserAgentOptions extends StObject {
   
   var forceRport: js.UndefOr[Boolean] = js.undefined
   
+  var gracefulShutdown: js.UndefOr[Boolean] = js.undefined
+  
   var hackAllowUnregisteredOptionTags: js.UndefOr[Boolean] = js.undefined
   
   var hackIpInContact: js.UndefOr[Boolean | String] = js.undefined
   
   var hackViaTcp: js.UndefOr[Boolean] = js.undefined
+  
+  var instanceId: js.UndefOr[String] = js.undefined
+  
+  var instanceIdAlwaysAdded: js.UndefOr[Boolean] = js.undefined
   
   var logBuiltinEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -112,14 +114,6 @@ object PartialUserAgentOptions {
     
     inline def setAuthorizationUsernameUndefined: Self = StObject.set(x, "authorizationUsername", js.undefined)
     
-    inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
-    
-    inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
-    
-    inline def setAutoStop(value: Boolean): Self = StObject.set(x, "autoStop", value.asInstanceOf[js.Any])
-    
-    inline def setAutoStopUndefined: Self = StObject.set(x, "autoStop", js.undefined)
-    
     inline def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
     
     inline def setContactNameUndefined: Self = StObject.set(x, "contactName", js.undefined)
@@ -140,6 +134,10 @@ object PartialUserAgentOptions {
     
     inline def setForceRportUndefined: Self = StObject.set(x, "forceRport", js.undefined)
     
+    inline def setGracefulShutdown(value: Boolean): Self = StObject.set(x, "gracefulShutdown", value.asInstanceOf[js.Any])
+    
+    inline def setGracefulShutdownUndefined: Self = StObject.set(x, "gracefulShutdown", js.undefined)
+    
     inline def setHackAllowUnregisteredOptionTags(value: Boolean): Self = StObject.set(x, "hackAllowUnregisteredOptionTags", value.asInstanceOf[js.Any])
     
     inline def setHackAllowUnregisteredOptionTagsUndefined: Self = StObject.set(x, "hackAllowUnregisteredOptionTags", js.undefined)
@@ -151,6 +149,14 @@ object PartialUserAgentOptions {
     inline def setHackViaTcp(value: Boolean): Self = StObject.set(x, "hackViaTcp", value.asInstanceOf[js.Any])
     
     inline def setHackViaTcpUndefined: Self = StObject.set(x, "hackViaTcp", js.undefined)
+    
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceIdAlwaysAdded(value: Boolean): Self = StObject.set(x, "instanceIdAlwaysAdded", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceIdAlwaysAddedUndefined: Self = StObject.set(x, "instanceIdAlwaysAdded", js.undefined)
+    
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
     inline def setLogBuiltinEnabled(value: Boolean): Self = StObject.set(x, "logBuiltinEnabled", value.asInstanceOf[js.Any])
     

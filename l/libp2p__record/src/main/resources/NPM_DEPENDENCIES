@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/record" : "2.0.2"
+      "@libp2p/record" : "2.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/record" : "2.0.2"
+      "@libp2p/record" : "2.0.3"
     }
   ],
   "compile-devDependencies" : [

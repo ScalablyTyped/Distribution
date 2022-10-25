@@ -2,6 +2,7 @@ package typings.ipfsCli
 
 import org.scalablytyped.runtime.Shortcut
 import typings.ipfsCli.distSrcTypesMod.Context
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.yargs.mod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +15,7 @@ object distSrcCommandsFilesMkdirMod extends Shortcut {
     * @property {import('../../types').Context} Argv.ctx
     * @property {string} Argv.path
     * @property {boolean} Argv.parents
-    * @property {import('multiformats/cid').CIDVersion} Argv.cidVersion
+    * @property {import('multiformats/cid').Version} Argv.cidVersion
     * @property {string} Argv.hashAlg
     * @property {boolean} Argv.flush
     * @property {number} Argv.shardSplitThreshold
@@ -30,7 +31,7 @@ object distSrcCommandsFilesMkdirMod extends Shortcut {
   
   trait Argv extends StObject {
     
-    var cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
+    var cidVersion: Version
     
     var ctx: Context
     
@@ -55,7 +56,7 @@ object distSrcCommandsFilesMkdirMod extends Shortcut {
   object Argv {
     
     inline def apply(
-      cidVersion: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any,
+      cidVersion: Version,
       ctx: Context,
       flush: Boolean,
       hashAlg: String,
@@ -73,9 +74,7 @@ object distSrcCommandsFilesMkdirMod extends Shortcut {
     
     extension [Self <: Argv](x: Self) {
       
-      inline def setCidVersion(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CIDVersion */ Any
-      ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+      inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
       
       inline def setCtx(value: Context): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FulfilledThenable[T]
   extends StObject
-     with typings.react.experimentalMod.reactAugmentingMod.ThenableImpl[T] {
+     with typings.react.nextMod.reactAugmentingMod.ThenableImpl[T] {
   
   var status: fulfilled
   

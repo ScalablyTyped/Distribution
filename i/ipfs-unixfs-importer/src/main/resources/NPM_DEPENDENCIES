@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-unixfs-importer" : "10.0.2"
+      "ipfs-unixfs-importer" : "11.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-unixfs-importer" : "10.0.2"
+      "ipfs-unixfs-importer" : "11.0.1"
     }
   ],
   "compile-devDependencies" : [

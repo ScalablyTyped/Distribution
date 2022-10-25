@@ -23,6 +23,8 @@ object mod extends Shortcut {
     
     trait Options extends StObject {
       
+      var exportGlobals: js.UndefOr[Boolean] = js.undefined
+      
       var generateExportEntry: js.UndefOr[
             js.Function4[/* name */ String, /* scopedName */ String, /* path */ String, /* css */ String, Key]
           ] = js.undefined
@@ -37,6 +39,10 @@ object mod extends Shortcut {
       }
       
       extension [Self <: Options](x: Self) {
+        
+        inline def setExportGlobals(value: Boolean): Self = StObject.set(x, "exportGlobals", value.asInstanceOf[js.Any])
+        
+        inline def setExportGlobalsUndefined: Self = StObject.set(x, "exportGlobals", js.undefined)
         
         inline def setGenerateExportEntry(value: (/* name */ String, /* scopedName */ String, /* path */ String, /* css */ String) => Key): Self = StObject.set(x, "generateExportEntry", js.Any.fromFunction4(value))
         

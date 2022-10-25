@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/mdns" : "3.0.1"
+      "@libp2p/mdns" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/mdns" : "3.0.1"
+      "@libp2p/mdns" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

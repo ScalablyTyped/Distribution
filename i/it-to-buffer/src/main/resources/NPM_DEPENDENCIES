@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-to-buffer" : "2.0.2"
+      "it-to-buffer" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "it-to-buffer" : "2.0.2"
+      "it-to-buffer" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

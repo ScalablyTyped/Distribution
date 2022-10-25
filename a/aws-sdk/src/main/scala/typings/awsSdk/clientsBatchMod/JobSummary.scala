@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobSummary extends StObject {
   
   /**
-    * The array properties of the job, if it is an array job.
+    * The array properties of the job, if it's an array job.
     */
   var arrayProperties: js.UndefOr[ArrayPropertiesSummary] = js.undefined
   
   /**
-    * An object representing the details of the container that's associated with the job.
+    * An object that represents the details of the container that's associated with the job.
     */
   var container: js.UndefOr[ContainerSummary] = js.undefined
   
@@ -32,12 +32,12 @@ trait JobSummary extends StObject {
   var jobDefinition: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the job.
+    * The job ID.
     */
   var jobId: String
   
   /**
-    * The name of the job.
+    * The job name.
     */
   var jobName: String
   
@@ -47,7 +47,7 @@ trait JobSummary extends StObject {
   var nodeProperties: js.UndefOr[NodePropertiesSummary] = js.undefined
   
   /**
-    * The Unix timestamp for when the job was started (when the job transitioned from the STARTING state to the RUNNING state).
+    * The Unix timestamp for when the job was started. More specifically, it's when the job transitioned from the STARTING state to the RUNNING state.
     */
   var startedAt: js.UndefOr[Long] = js.undefined
   
@@ -57,12 +57,12 @@ trait JobSummary extends StObject {
   var status: js.UndefOr[JobStatus] = js.undefined
   
   /**
-    * A short, human-readable string to provide additional details about the current status of the job.
+    * A short, human-readable string to provide more details for the current status of the job.
     */
   var statusReason: js.UndefOr[String] = js.undefined
   
   /**
-    * The Unix timestamp for when the job was stopped (when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
+    * The Unix timestamp for when the job was stopped. More specifically, it's when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED.
     */
   var stoppedAt: js.UndefOr[Long] = js.undefined
 }

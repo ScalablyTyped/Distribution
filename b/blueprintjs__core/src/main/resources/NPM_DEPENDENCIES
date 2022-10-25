@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@blueprintjs/core" : "4.11.4"
+      "@blueprintjs/core" : "4.11.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@blueprintjs/core" : "4.11.4"
+      "@blueprintjs/core" : "4.11.5"
     }
   ],
   "compile-devDependencies" : [

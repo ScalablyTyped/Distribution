@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-address-manager
 
-Typings are for version 1.0.3
+Typings are for version 2.0.0
 
 ## Library description:
 Address Manager interface for libp2p

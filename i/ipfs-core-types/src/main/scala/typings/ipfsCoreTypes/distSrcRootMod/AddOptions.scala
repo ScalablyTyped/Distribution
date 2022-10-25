@@ -1,6 +1,7 @@
 package typings.ipfsCoreTypes.distSrcRootMod
 
 import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +23,7 @@ trait AddOptions
   /**
     * The CID version to use when storing the data
     */
-  var cidVersion: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-  ] = js.undefined
+  var cidVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * Multihash hashing algorithm to use. (Defaults to 'sha2-256')
@@ -89,9 +88,7 @@ object AddOptions {
     
     inline def setChunkerUndefined: Self = StObject.set(x, "chunker", js.undefined)
     
-    inline def setCidVersion(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CIDVersion */ Any
-    ): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+    inline def setCidVersion(value: Version): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
     
     inline def setCidVersionUndefined: Self = StObject.set(x, "cidVersion", js.undefined)
     

@@ -4,6 +4,7 @@ import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityClientMod.Cog
 import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityClientMod.ServiceInputTypes
 import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityClientMod.ServiceOutputTypes
 import typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.DeleteIdentityPoolInput
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
 import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
@@ -42,6 +43,15 @@ object distTypesCommandsDeleteIdentityPoolCommandMod {
     ): Handler[DeleteIdentityPoolCommandInput, DeleteIdentityPoolCommandOutput] = js.native
     
     /* private */ var serialize: Any = js.native
+  }
+  /* static members */
+  object DeleteIdentityPoolCommand {
+    
+    @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/DeleteIdentityPoolCommand", "DeleteIdentityPoolCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   type DeleteIdentityPoolCommandInput = DeleteIdentityPoolInput

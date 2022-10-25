@@ -2557,6 +2557,22 @@ trait SageMaker extends Service {
   ): Request[ListImagesResponse, AWSError] = js.native
   
   /**
+    * Returns a list of the subtasks for an Inference Recommender job. The supported subtasks are benchmarks, which evaluate the performance of your model on different instance types.
+    */
+  def listInferenceRecommendationsJobSteps(): Request[ListInferenceRecommendationsJobStepsResponse, AWSError] = js.native
+  def listInferenceRecommendationsJobSteps(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListInferenceRecommendationsJobStepsResponse, Unit]
+  ): Request[ListInferenceRecommendationsJobStepsResponse, AWSError] = js.native
+  /**
+    * Returns a list of the subtasks for an Inference Recommender job. The supported subtasks are benchmarks, which evaluate the performance of your model on different instance types.
+    */
+  def listInferenceRecommendationsJobSteps(params: ListInferenceRecommendationsJobStepsRequest): Request[ListInferenceRecommendationsJobStepsResponse, AWSError] = js.native
+  def listInferenceRecommendationsJobSteps(
+    params: ListInferenceRecommendationsJobStepsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListInferenceRecommendationsJobStepsResponse, Unit]
+  ): Request[ListInferenceRecommendationsJobStepsResponse, AWSError] = js.native
+  
+  /**
     * Lists recommendation jobs that satisfy various filters.
     */
   def listInferenceRecommendationsJobs(): Request[ListInferenceRecommendationsJobsResponse, AWSError] = js.native

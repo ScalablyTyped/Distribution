@@ -7,9 +7,9 @@ import typings.sipJs.libApiSessionDescriptionHandlerMod.BodyAndContentType
 import typings.sipJs.libApiSessionMod.Session
 import typings.sipJs.libApiUserAgentMod.UserAgent
 import typings.sipJs.libCoreMessagesMethodsInviteMod.OutgoingInviteRequest
-import typings.sipJs.libCoreMod.NameAddrHeader
-import typings.sipJs.libCoreMod.OutgoingRequestMessage
-import typings.sipJs.libCoreMod.URI
+import typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage
+import typings.sipJs.libGrammarNameAddrHeaderMod.NameAddrHeader
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

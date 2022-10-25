@@ -2,12 +2,13 @@ package typings.sipJs
 
 import typings.sipJs.libApiAckMod.Ack
 import typings.sipJs.libApiByeMod.Bye
+import typings.sipJs.libApiCancelMod.Cancel
 import typings.sipJs.libApiInfoMod.Info
 import typings.sipJs.libApiMessageMod.Message
 import typings.sipJs.libApiNotificationMod.Notification
 import typings.sipJs.libApiReferralMod.Referral
 import typings.sipJs.libApiSessionDescriptionHandlerMod.SessionDescriptionHandler
-import typings.sipJs.libCoreMod.IncomingRequestMessage
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +19,9 @@ object libApiSessionDelegateMod {
     
     /**
       * Called upon receiving an incoming in dialog ACK request.
+      * @remarks
+      * Includes the ACK confirming an accepted initial Invite
+      * as well as ACKs associated with in dialog INVITE requests.
       * @param ack - The ack.
       */
     var onAck: js.UndefOr[js.Function1[/* ack */ Ack, Unit]] = js.undefined
@@ -27,6 +31,16 @@ object libApiSessionDelegateMod {
       * @param bye - The bye.
       */
     var onBye: js.UndefOr[js.Function1[/* bye */ Bye, Unit]] = js.undefined
+    
+    /**
+      * Called upon receiving an incoming CANCEL request.
+      * @remarks
+      * Relevant to an Invitation only. CANCEL reqeusts are being handled as
+      * a special case and there is currently no way to externally impact the
+      * response to the a CANCEL request. See core implementation for details.
+      * @param cancel - The cancel.
+      */
+    var onCancel: js.UndefOr[js.Function1[/* cancel */ Cancel, Unit]] = js.undefined
     
     /**
       * Called upon receiving an incoming in dialog INFO request.
@@ -118,6 +132,10 @@ object libApiSessionDelegateMod {
       inline def setOnBye(value: /* bye */ Bye => Unit): Self = StObject.set(x, "onBye", js.Any.fromFunction1(value))
       
       inline def setOnByeUndefined: Self = StObject.set(x, "onBye", js.undefined)
+      
+      inline def setOnCancel(value: /* cancel */ Cancel => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
       inline def setOnInfo(value: /* info */ Info => Unit): Self = StObject.set(x, "onInfo", js.Any.fromFunction1(value))
       

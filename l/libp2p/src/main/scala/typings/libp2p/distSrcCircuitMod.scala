@@ -2,12 +2,16 @@ package typings.libp2p
 
 import typings.libp2p.mod.HopConfig
 import typings.libp2p.mod.RelayConfig
-import typings.libp2pComponents.mod.Components
+import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
+import typings.libp2pInterfaceContentRouting.mod.ContentRouting
+import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`-1`
 import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`0`
 import typings.libp2pInterfacePeerStore.libp2pInterfacePeerStoreInts.`1`
 import typings.libp2pInterfacePeerStore.mod.Address
 import typings.libp2pInterfacePeerStore.mod.AddressSorter
+import typings.libp2pInterfacePeerStore.mod.PeerStore
+import typings.libp2pInterfaceTransport.mod.TransportManager
 import typings.libp2pInterfaces.distSrcStartableMod.Startable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +27,7 @@ object distSrcCircuitMod {
     /**
       * Creates an instance of Relay
       */
-    def this(components: Components, init: RelayInit) = this()
+    def this(components: RelayComponents, init: RelayInit) = this()
     
     /**
       * Advertise hop relay service in the network.
@@ -114,6 +118,45 @@ object distSrcCircuitMod {
       inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
       inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    }
+  }
+  
+  trait RelayComponents extends StObject {
+    
+    var connectionManager: ConnectionManager
+    
+    var contentRouting: ContentRouting
+    
+    var peerId: PeerId
+    
+    var peerStore: PeerStore
+    
+    var transportManager: TransportManager
+  }
+  object RelayComponents {
+    
+    inline def apply(
+      connectionManager: ConnectionManager,
+      contentRouting: ContentRouting,
+      peerId: PeerId,
+      peerStore: PeerStore,
+      transportManager: TransportManager
+    ): RelayComponents = {
+      val __obj = js.Dynamic.literal(connectionManager = connectionManager.asInstanceOf[js.Any], contentRouting = contentRouting.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], transportManager = transportManager.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RelayComponents]
+    }
+    
+    extension [Self <: RelayComponents](x: Self) {
+      
+      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setContentRouting(value: ContentRouting): Self = StObject.set(x, "contentRouting", value.asInstanceOf[js.Any])
+      
+      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      
+      inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
+      
+      inline def setTransportManager(value: TransportManager): Self = StObject.set(x, "transportManager", value.asInstanceOf[js.Any])
     }
   }
   

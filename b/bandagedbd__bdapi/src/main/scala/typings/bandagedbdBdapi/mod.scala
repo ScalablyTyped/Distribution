@@ -1,12 +1,12 @@
 package typings.bandagedbdBdapi
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.bandagedbdBdapi.anon.TypeofBdApiModule
 import typings.bandagedbdBdapi.bandagedbdBdapiStrings.input
 import typings.lodash.mod.LoDashStatic
 import typings.react.anon.Children
 import typings.react.anon.Default
 import typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps
-import typings.react.experimentalMod.reactAugmentingMod.Usable
 import typings.react.mod.Attributes
 import typings.react.mod.CElement
 import typings.react.mod.CFactory
@@ -64,6 +64,10 @@ import typings.react.mod.SetStateAction
 import typings.react.mod.SuspenseProps
 import typings.react.mod.TransitionFunction
 import typings.react.mod.TransitionStartFunction
+import typings.react.nextMod.reactAugmentingMod.ServerContext
+import typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray
+import typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue
+import typings.react.nextMod.reactAugmentingMod.Usable
 import typings.reactDom.mod.Renderer
 import typings.std.DocumentFragment
 import typings.std.Element
@@ -256,6 +260,8 @@ object mod {
         @js.native
         val SuspenseList: ExoticComponent[SuspenseListProps] = js.native
         
+        inline def cache[CachedFunction /* <: js.Function */](fn: CachedFunction): CachedFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(fn.asInstanceOf[js.Any]).asInstanceOf[CachedFunction]
+        
         // Custom components
         inline def cloneElement[P](element: FunctionComponentElement[P], props: Partial[P] & Attributes, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((scala.List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
         inline def cloneElement[P](element: FunctionComponentElement[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((scala.List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
@@ -384,7 +390,12 @@ object mod {
         
         inline def createRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRef")().asInstanceOf[RefObject[T]]
         
-        inline def experimentalUse[T](usable: Usable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_use")(usable.asInstanceOf[js.Any]).asInstanceOf[T]
+        inline def createServerContext(globalName: String, defaultValue: String): ServerContext[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[String]]
+        inline def createServerContext(globalName: String, defaultValue: js.Array[ServerContextJSONArray]): ServerContext[js.Array[ServerContextJSONArray]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[js.Array[ServerContextJSONArray]]]
+        inline def createServerContext(globalName: String, defaultValue: Boolean): ServerContext[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[Boolean]]
+        inline def createServerContext(globalName: String, defaultValue: Double): ServerContext[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[Double]]
+        inline def createServerContext(globalName: String, defaultValue: Null): ServerContext[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[Null]]
+        inline def createServerContext[T /* <: StringDictionary[ServerContextJSONValue] */](globalName: String, defaultValue: T): ServerContext[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[T]]
         
         inline def experimentalUseEvent[T /* <: js.Function */](event: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_useEvent")(event.asInstanceOf[js.Any]).asInstanceOf[T]
         
@@ -407,6 +418,10 @@ object mod {
         ): NamedExoticComponent[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any], propsAreEqual.asInstanceOf[js.Any])).asInstanceOf[NamedExoticComponent[P]]
         
         inline def startTransition(scope: TransitionFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startTransition")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        
+        inline def unstableUseCacheRefresh(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useCacheRefresh")().asInstanceOf[js.Function0[Unit]]
+        
+        inline def use[T](usable: Usable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(usable.asInstanceOf[js.Any]).asInstanceOf[T]
         
         // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
         // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.

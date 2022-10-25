@@ -17,7 +17,7 @@ object distSrcBitswapWantlistForPeerMod {
       /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
       js.Promise[
         js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID */ Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CID<unknown, number, number, imported_cid.Version> */ Any
         ]
       ]
     ]

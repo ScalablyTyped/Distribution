@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "it-foreach"
-version := "0.1.1-bbb272"
+version := "1.0.0-a60f36"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

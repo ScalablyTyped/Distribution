@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-http-client
 
-Typings are for version 58.0.1
+Typings are for version 59.0.0
 
 ## Library description:
 A client library for the IPFS HTTP API

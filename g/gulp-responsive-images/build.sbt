@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "gulp-responsive-images"
-version := "0.0-dt-20220624Z-465d8c"
+version := "0.0-dt-20220624Z-2be237"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "gm" % "1.18-dt-20220530Z-42cc34",
-  "org.scalablytyped" %%% "gulp-rename" % "2.0-dt-20220818Z-f432c5",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221023Z-05fcff",
+  "org.scalablytyped" %%% "gm" % "1.18-dt-20220530Z-5f7224",
+  "org.scalablytyped" %%% "gulp-rename" % "2.0-dt-20220818Z-a4d286",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20220819Z-389c6a")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20220819Z-6aee9e")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

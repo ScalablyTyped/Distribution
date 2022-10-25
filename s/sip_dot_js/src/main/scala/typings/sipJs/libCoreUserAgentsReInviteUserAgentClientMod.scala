@@ -1,6 +1,6 @@
 package typings.sipJs
 
-import typings.sipJs.libCoreDialogsMod.SessionDialog
+import typings.sipJs.libCoreDialogsSessionDialogMod.SessionDialog
 import typings.sipJs.libCoreMessagesMethodsInviteMod.OutgoingInviteRequestDelegate
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.RequestOptions
 import typings.sipJs.libCoreUserAgentsUserAgentClientMod.UserAgentClient

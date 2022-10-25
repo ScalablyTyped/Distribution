@@ -1,8 +1,10 @@
 package typings.sipJs
 
-import typings.sipJs.libCoreDialogsMod.Dialog
-import typings.sipJs.libCoreLogMod.LoggerFactory
+import typings.sipJs.libCoreDialogsDialogMod.Dialog
+import typings.sipJs.libCoreLogLoggerFactoryMod.LoggerFactory
 import typings.sipJs.libCoreMessagesBodyMod.Body
+import typings.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage
+import typings.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage
 import typings.sipJs.libCoreMessagesMethodsInviteMod.OutgoingInviteRequest
 import typings.sipJs.libCoreMessagesMethodsInviteMod.OutgoingInviteRequestDelegate
 import typings.sipJs.libCoreMessagesMethodsMessageMod.OutgoingMessageRequest
@@ -10,10 +12,7 @@ import typings.sipJs.libCoreMessagesMethodsPublishMod.OutgoingPublishRequest
 import typings.sipJs.libCoreMessagesMethodsRegisterMod.OutgoingRegisterRequest
 import typings.sipJs.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequest
 import typings.sipJs.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequestDelegate
-import typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
-import typings.sipJs.libCoreMessagesMod.IncomingResponseMessage
-import typings.sipJs.libCoreMessagesMod.OutgoingRequestMessage
-import typings.sipJs.libCoreMessagesMod.URI
+import typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessage
 import typings.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessageOptions
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequest
 import typings.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequestDelegate
@@ -22,9 +21,10 @@ import typings.sipJs.libCoreMessagesOutgoingResponseMod.ResponseOptions
 import typings.sipJs.libCoreTransportMod.Transport
 import typings.sipJs.libCoreUserAgentCoreUserAgentCoreConfigurationMod.UserAgentCoreConfiguration
 import typings.sipJs.libCoreUserAgentCoreUserAgentCoreDelegateMod.UserAgentCoreDelegate
-import typings.sipJs.libCoreUserAgentsMod.SubscribeUserAgentClient
-import typings.sipJs.libCoreUserAgentsMod.UserAgentClient
-import typings.sipJs.libCoreUserAgentsMod.UserAgentServer
+import typings.sipJs.libCoreUserAgentsSubscribeUserAgentClientMod.SubscribeUserAgentClient
+import typings.sipJs.libCoreUserAgentsUserAgentClientMod.UserAgentClient
+import typings.sipJs.libCoreUserAgentsUserAgentServerMod.UserAgentServer
+import typings.sipJs.libGrammarUriMod.URI
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

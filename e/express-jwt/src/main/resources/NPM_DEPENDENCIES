@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "express-jwt" : "7.7.5"
+      "express-jwt" : "7.7.7"
     }
   ],
   "test-dependencies" : [
     {
-      "express-jwt" : "7.7.5"
+      "express-jwt" : "7.7.7"
     }
   ],
   "compile-devDependencies" : [

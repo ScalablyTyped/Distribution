@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-bitswap
 
-Typings are for version 12.0.6
+Typings are for version 13.0.0
 
 ## Library description:
 JavaScript implementation of the Bitswap data exchange protocol used by IPFS

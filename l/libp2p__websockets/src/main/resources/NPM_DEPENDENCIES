@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/websockets" : "3.0.4"
+      "@libp2p/websockets" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/websockets" : "3.0.4"
+      "@libp2p/websockets" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -7,8 +7,8 @@ import typings.sipJs.libApiSessionDescriptionHandlerMod.SessionDescriptionHandle
 import typings.sipJs.libApiSessionMod.Session
 import typings.sipJs.libApiTransportMod.Transport
 import typings.sipJs.libApiUserAgentDelegateMod.UserAgentDelegate
-import typings.sipJs.libCoreMod.Logger
-import typings.sipJs.libCoreMod.URI
+import typings.sipJs.libCoreLogLoggerMod.Logger
+import typings.sipJs.libGrammarUriMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,23 +98,6 @@ object libApiUserAgentOptionsMod {
     var authorizationUsername: js.UndefOr[String] = js.undefined
     
     /**
-      * @deprecated
-      * If `true`, the user agent calls the `start()` method in the constructor.
-      * @defaultValue `false`
-      * @remarks
-      * The call to start() resolves when the user agent connects, so if this
-      * option is set to `true` an alternative method of connection detection
-      * must be used.
-      */
-    var autoStart: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * If `true`, the user agent calls the `stop()` method on unload (if running in browser window).
-      * @defaultValue `true`
-      */
-    var autoStop: js.UndefOr[Boolean] = js.undefined
-    
-    /**
       * The user portion of user agent's contact URI.
       * @remarks
       * If not specifed a random string will be generated and utilized as the user portion of the contact URI.
@@ -152,6 +135,13 @@ object libApiUserAgentOptionsMod {
     var forceRport: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * If `true`, the `stop()` method will attempt to gracefully end all dialogs and registrations before disconnecting.
+      * Otherwise `stop()` will transition immediately abandoning all dialogs and registrations.
+      * @defaultValue `true`
+      */
+    var gracefulShutdown: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Hack
       * @deprecated TBD
       */
@@ -168,6 +158,18 @@ object libApiUserAgentOptionsMod {
       * @deprecated TBD
       */
     var hackViaTcp: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * UUID to provide with "+sip.instance" Contact header parameter.
+      * @defaultValue A randomly generated uuid
+      */
+    var instanceId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Add "+sip.instance" Contact header parameter to all requests.
+      * @defaultValue `false`
+      */
+    var instanceIdAlwaysAdded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether log messages should be written to the browser console.
@@ -343,14 +345,6 @@ object libApiUserAgentOptionsMod {
       
       inline def setAuthorizationUsernameUndefined: Self = StObject.set(x, "authorizationUsername", js.undefined)
       
-      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
-      
-      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
-      
-      inline def setAutoStop(value: Boolean): Self = StObject.set(x, "autoStop", value.asInstanceOf[js.Any])
-      
-      inline def setAutoStopUndefined: Self = StObject.set(x, "autoStop", js.undefined)
-      
       inline def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
       
       inline def setContactNameUndefined: Self = StObject.set(x, "contactName", js.undefined)
@@ -371,6 +365,10 @@ object libApiUserAgentOptionsMod {
       
       inline def setForceRportUndefined: Self = StObject.set(x, "forceRport", js.undefined)
       
+      inline def setGracefulShutdown(value: Boolean): Self = StObject.set(x, "gracefulShutdown", value.asInstanceOf[js.Any])
+      
+      inline def setGracefulShutdownUndefined: Self = StObject.set(x, "gracefulShutdown", js.undefined)
+      
       inline def setHackAllowUnregisteredOptionTags(value: Boolean): Self = StObject.set(x, "hackAllowUnregisteredOptionTags", value.asInstanceOf[js.Any])
       
       inline def setHackAllowUnregisteredOptionTagsUndefined: Self = StObject.set(x, "hackAllowUnregisteredOptionTags", js.undefined)
@@ -382,6 +380,14 @@ object libApiUserAgentOptionsMod {
       inline def setHackViaTcp(value: Boolean): Self = StObject.set(x, "hackViaTcp", value.asInstanceOf[js.Any])
       
       inline def setHackViaTcpUndefined: Self = StObject.set(x, "hackViaTcp", js.undefined)
+      
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      
+      inline def setInstanceIdAlwaysAdded(value: Boolean): Self = StObject.set(x, "instanceIdAlwaysAdded", value.asInstanceOf[js.Any])
+      
+      inline def setInstanceIdAlwaysAddedUndefined: Self = StObject.set(x, "instanceIdAlwaysAdded", js.undefined)
+      
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
       inline def setLogBuiltinEnabled(value: Boolean): Self = StObject.set(x, "logBuiltinEnabled", value.asInstanceOf[js.Any])
       
