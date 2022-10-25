@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("mathjs", "ConditionalNode")
 @js.native
-open class ConditionalNodeCls protected ()
+open class ConditionalNodeCls[TCond /* <: MathNode */, TTrueNode /* <: MathNode */, TFalseNode /* <: MathNode */] protected ()
   extends StObject
-     with ConditionalNode {
-  def this(condition: MathNode, trueExpr: MathNode, falseExpr: MathNode) = this()
+     with ConditionalNode[MathNode, MathNode, MathNode] {
+  def this(condition: TCond, trueExpr: TTrueNode, falseExpr: TFalseNode) = this()
 }

@@ -12,5 +12,5 @@ trait FunctionAssignmentNodeCtor
       /* name */ String, 
       /* params */ js.Array[String], 
       /* expr */ MathNode, 
-      FunctionAssignmentNode
+      FunctionAssignmentNode[MathNode]
     ]

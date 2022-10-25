@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConstantNode
+trait ConstantNode[TValue /* <: String | Double */]
   extends StObject
      with MathNode {
   
@@ -16,5 +16,5 @@ trait ConstantNode
   var type_ConstantNode: typings.mathjs.mathjsStrings.ConstantNode = js.native
   
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  var value: Any = js.native
+  var value: TValue = js.native
 }

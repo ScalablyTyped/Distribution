@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("mathjs", "ArrayNode")
 @js.native
-open class ArrayNodeCls protected ()
+open class ArrayNodeCls[TItems /* <: js.Array[MathNode] */] protected ()
   extends StObject
-     with ArrayNode {
+     with ArrayNode[TItems] {
   def this(items: js.Array[MathNode]) = this()
 }

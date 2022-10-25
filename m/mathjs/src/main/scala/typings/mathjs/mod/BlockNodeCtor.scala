@@ -1,7 +1,7 @@
 package typings.mathjs.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.mathjs.anon.NodeMathNode
+import typings.mathjs.anon.NodeTNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BlockNodeCtor
   extends StObject
-     with Instantiable1[/* arr */ js.Array[NodeMathNode | typings.mathjs.anon.Node], BlockNode]
+     with Instantiable1[
+      /* arr */ js.Array[NodeTNode[MathNode] | typings.mathjs.anon.Node[MathNode]], 
+      BlockNode[MathNode]
+    ]

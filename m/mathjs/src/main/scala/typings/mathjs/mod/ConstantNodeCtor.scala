@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ConstantNodeCtor
   extends StObject
-     with Instantiable1[/* constant */ Double, ConstantNode]
+     with Instantiable1[/* value */ String | Double, ConstantNode[String | Double]]

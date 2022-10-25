@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AssignmentNodeCtor
   extends StObject
-     with Instantiable2[/* object */ SymbolNode, /* value */ MathNode, AssignmentNode]
+     with Instantiable2[/* object */ SymbolNode, /* value */ MathNode, AssignmentNode[MathNode]]
      with Instantiable3[
-      (/* object */ AccessorNode) | (/* object */ SymbolNode), 
-      /* index */ IndexNode, 
+      (/* object */ AccessorNode[MathNode]) | (/* object */ SymbolNode), 
+      /* index */ IndexNode[js.Array[MathNode]], 
       /* value */ MathNode, 
-      AssignmentNode
+      AssignmentNode[MathNode]
     ]

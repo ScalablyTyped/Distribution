@@ -8,4 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RelationalNodeCtor
   extends StObject
-     with Instantiable2[/* conditionals */ js.Array[String], /* params */ js.Array[MathNode], RelationalNode]
+     with Instantiable2[
+      /* conditionals */ js.Array[String], 
+      /* params */ js.Array[MathNode], 
+      RelationalNode[js.Array[MathNode]]
+    ]

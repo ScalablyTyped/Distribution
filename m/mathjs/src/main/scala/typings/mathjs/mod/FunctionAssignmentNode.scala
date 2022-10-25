@@ -6,11 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionAssignmentNode
+trait FunctionAssignmentNode[TExpr /* <: MathNode */]
   extends StObject
      with MathNode {
   
-  var expr: MathNode = js.native
+  var expr: TExpr = js.native
   
   var isFunctionAssignmentNode: `true` = js.native
   

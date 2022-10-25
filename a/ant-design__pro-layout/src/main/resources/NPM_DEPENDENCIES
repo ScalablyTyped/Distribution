@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/pro-layout" : "7.1.12"
+      "@ant-design/pro-layout" : "7.1.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/pro-layout" : "7.1.12"
+      "@ant-design/pro-layout" : "7.1.13"
     }
   ],
   "compile-devDependencies" : [

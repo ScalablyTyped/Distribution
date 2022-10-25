@@ -219,41 +219,41 @@ object anon {
     }
   }
   
-  trait Node extends StObject {
+  trait Node[TNode /* <: MathNode */] extends StObject {
     
-    var node: MathNode
+    var node: TNode
     
     var visible: Boolean
   }
   object Node {
     
-    inline def apply(node: MathNode, visible: Boolean): Node = {
+    inline def apply[TNode /* <: MathNode */](node: TNode, visible: Boolean): Node[TNode] = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Node]
+      __obj.asInstanceOf[Node[TNode]]
     }
     
-    extension [Self <: Node](x: Self) {
+    extension [Self <: Node[?], TNode /* <: MathNode */](x: Self & Node[TNode]) {
       
-      inline def setNode(value: MathNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: TNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
-  trait NodeMathNode extends StObject {
+  trait NodeTNode[TNode /* <: MathNode */] extends StObject {
     
-    var node: MathNode
+    var node: TNode
   }
-  object NodeMathNode {
+  object NodeTNode {
     
-    inline def apply(node: MathNode): NodeMathNode = {
+    inline def apply[TNode /* <: MathNode */](node: TNode): NodeTNode[TNode] = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NodeMathNode]
+      __obj.asInstanceOf[NodeTNode[TNode]]
     }
     
-    extension [Self <: NodeMathNode](x: Self) {
+    extension [Self <: NodeTNode[?], TNode /* <: MathNode */](x: Self & NodeTNode[TNode]) {
       
-      inline def setNode(value: MathNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: TNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   

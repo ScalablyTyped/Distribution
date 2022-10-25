@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelationalNode
+trait RelationalNode[TParams /* <: js.Array[MathNode] */]
   extends StObject
      with MathNode {
   
@@ -14,7 +14,7 @@ trait RelationalNode
   
   var isRelationalNode: `true` = js.native
   
-  var params: js.Array[MathNode] = js.native
+  var params: TParams = js.native
   
   @JSName("type")
   var type_RelationalNode: typings.mathjs.mathjsStrings.RelationalNode = js.native

@@ -1434,20 +1434,20 @@ trait MathJsStatic
   def inv(x: Complex): NoLiteralType[Complex] = js.native
   def inv(x: Matrix): NoLiteralType[Matrix] = js.native
   
-  def isAccessorNode(x: Any): /* is mathjs.mathjs.AccessorNode */ Boolean = js.native
+  def isAccessorNode(x: Any): /* is mathjs.mathjs.AccessorNode<mathjs.mathjs.MathNode> */ Boolean = js.native
   
   def isArray(arg: Any): /* is std.Array<any> */ Boolean = js.native
   
-  def isArrayNode(x: Any): /* is mathjs.mathjs.ArrayNode */ Boolean = js.native
+  def isArrayNode(x: Any): /* is mathjs.mathjs.ArrayNode<std.Array<mathjs.mathjs.MathNode>> */ Boolean = js.native
   
   @JSName("isArray")
   var isArray_Original: js.Function1[/* arg */ Any, /* is std.Array<any> */ Boolean] = js.native
   
-  def isAssignmentNode(x: Any): /* is mathjs.mathjs.AssignmentNode */ Boolean = js.native
+  def isAssignmentNode(x: Any): /* is mathjs.mathjs.AssignmentNode<mathjs.mathjs.MathNode> */ Boolean = js.native
   
   def isBigNumber(x: Any): /* is mathjs.mathjs.BigNumber */ Boolean = js.native
   
-  def isBlockNode(x: Any): /* is mathjs.mathjs.BlockNode */ Boolean = js.native
+  def isBlockNode(x: Any): /* is mathjs.mathjs.BlockNode<mathjs.mathjs.MathNode> */ Boolean = js.native
   
   def isBoolean(x: Any): /* is boolean */ Boolean = js.native
   
@@ -1458,9 +1458,9 @@ trait MathJsStatic
   
   def isComplex(x: Any): /* is mathjs.mathjs.Complex */ Boolean = js.native
   
-  def isConditionalNode(x: Any): /* is mathjs.mathjs.ConditionalNode */ Boolean = js.native
+  def isConditionalNode(x: Any): /* is mathjs.mathjs.ConditionalNode<mathjs.mathjs.MathNode, mathjs.mathjs.MathNode, mathjs.mathjs.MathNode> */ Boolean = js.native
   
-  def isConstantNode(x: Any): /* is mathjs.mathjs.ConstantNode */ Boolean = js.native
+  def isConstantNode(x: Any): /* is mathjs.mathjs.ConstantNode<number> */ Boolean = js.native
   
   def isDate(x: Any): /* is std.Date */ Boolean = js.native
   
@@ -1470,15 +1470,15 @@ trait MathJsStatic
   
   def isFunction(x: Any): Boolean = js.native
   
-  def isFunctionAssignmentNode(x: Any): /* is mathjs.mathjs.FunctionAssignmentNode */ Boolean = js.native
+  def isFunctionAssignmentNode(x: Any): /* is mathjs.mathjs.FunctionAssignmentNode<mathjs.mathjs.MathNode> */ Boolean = js.native
   
-  def isFunctionNode(x: Any): /* is mathjs.mathjs.FunctionNode */ Boolean = js.native
+  def isFunctionNode(x: Any): /* is mathjs.mathjs.FunctionNode<mathjs.mathjs.SymbolNode, std.Array<mathjs.mathjs.MathNode>> */ Boolean = js.native
   
   def isHelp(x: Any): /* is mathjs.mathjs.Help */ Boolean = js.native
   
   def isIndex(x: Any): /* is mathjs.mathjs.Index */ Boolean = js.native
   
-  def isIndexNode(x: Any): /* is mathjs.mathjs.IndexNode */ Boolean = js.native
+  def isIndexNode(x: Any): /* is mathjs.mathjs.IndexNode<std.Array<mathjs.mathjs.MathNode>> */ Boolean = js.native
   
   /**
     * Test whether a value is an integer number. The function supports
@@ -1545,7 +1545,7 @@ trait MathJsStatic
   
   def isObject(x: Any): Boolean = js.native
   
-  def isObjectNode(x: Any): /* is mathjs.mathjs.ObjectNode */ Boolean = js.native
+  def isObjectNode(x: Any): /* is mathjs.mathjs.ObjectNode<std.Record<string, mathjs.mathjs.MathNode>> */ Boolean = js.native
   
   def isOperatorNode(x: Any): /* is mathjs.mathjs.OperatorNode<mathjs.mathjs.OperatorNodeOp, mathjs.mathjs.OperatorNodeFn, std.Array<mathjs.mathjs.MathNode>> */ Boolean = js.native
   
@@ -1579,11 +1579,11 @@ trait MathJsStatic
   
   def isRange(x: Any): Boolean = js.native
   
-  def isRangeNode(x: Any): /* is mathjs.mathjs.RangeNode */ Boolean = js.native
+  def isRangeNode(x: Any): /* is mathjs.mathjs.RangeNode<mathjs.mathjs.MathNode, mathjs.mathjs.MathNode, mathjs.mathjs.MathNode> */ Boolean = js.native
   
   def isRegExp(x: Any): /* is std.RegExp */ Boolean = js.native
   
-  def isRelationalNode(x: Any): /* is mathjs.mathjs.RelationalNode */ Boolean = js.native
+  def isRelationalNode(x: Any): /* is mathjs.mathjs.RelationalNode<std.Array<mathjs.mathjs.MathNode>> */ Boolean = js.native
   
   def isResultSet(x: Any): Boolean = js.native
   

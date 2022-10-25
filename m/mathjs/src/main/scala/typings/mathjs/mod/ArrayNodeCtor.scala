@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ArrayNodeCtor
   extends StObject
-     with Instantiable1[/* items */ js.Array[MathNode], ArrayNode]
+     with Instantiable1[/* items */ js.Array[MathNode], ArrayNode[js.Array[MathNode]]]

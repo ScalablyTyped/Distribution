@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("mathjs", "ConstantNode")
 @js.native
-open class ConstantNodeCls protected ()
+open class ConstantNodeCls[TValue /* <: String | Double */] protected ()
   extends StObject
-     with ConstantNode {
-  def this(constant: Double) = this()
+     with ConstantNode[TValue] {
+  def this(value: TValue) = this()
 }

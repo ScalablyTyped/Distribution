@@ -8,6 +8,8 @@ trait UnitDefinition extends StObject {
   
   var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
+  var baseName: js.UndefOr[String] = js.undefined
+  
   var definition: js.UndefOr[String | Unit] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
@@ -28,6 +30,10 @@ object UnitDefinition {
     inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
     inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
+    
+    inline def setBaseName(value: String): Self = StObject.set(x, "baseName", value.asInstanceOf[js.Any])
+    
+    inline def setBaseNameUndefined: Self = StObject.set(x, "baseName", js.undefined)
     
     inline def setDefinition(value: String | Unit): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

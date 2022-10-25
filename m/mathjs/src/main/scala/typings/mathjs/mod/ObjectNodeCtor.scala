@@ -9,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectNodeCtor
   extends StObject
-     with Instantiable1[/* properties */ Record[String, MathNode], ObjectNode]
+     with Instantiable1[/* properties */ Record[String, MathNode], ObjectNode[Record[String, MathNode]]]

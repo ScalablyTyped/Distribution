@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RangeNodeCtor
   extends StObject
-     with Instantiable2[/* start */ MathNode, /* end */ MathNode, RangeNode]
-     with Instantiable3[/* start */ MathNode, /* end */ MathNode, /* step */ MathNode, RangeNode]
+     with Instantiable2[/* start */ MathNode, /* end */ MathNode, RangeNode[MathNode, MathNode, MathNode]]
+     with Instantiable3[
+      /* start */ MathNode, 
+      /* end */ MathNode, 
+      /* step */ MathNode, 
+      RangeNode[MathNode, MathNode, MathNode]
+    ]

@@ -6,11 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexNode
+trait IndexNode[TDims /* <: js.Array[MathNode] */]
   extends StObject
      with MathNode {
   
-  var dimensions: js.Array[MathNode] = js.native
+  var dimensions: TDims = js.native
   
   var dotNotation: Boolean = js.native
   

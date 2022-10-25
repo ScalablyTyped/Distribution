@@ -6,11 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlockNode
+trait BlockNode[TNode /* <: MathNode */]
   extends StObject
      with MathNode {
   
-  var blocks: js.Array[typings.mathjs.anon.Node] = js.native
+  var blocks: js.Array[typings.mathjs.anon.Node[TNode]] = js.native
   
   var isBlockNode: `true` = js.native
   

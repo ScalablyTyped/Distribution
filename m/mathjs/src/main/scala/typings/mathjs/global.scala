@@ -1,7 +1,7 @@
 package typings.mathjs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.mathjs.anon.NodeMathNode
+import typings.mathjs.anon.NodeTNode
 import typings.mathjs.mod.AccessorNode
 import typings.mathjs.mod.ArrayNode
 import typings.mathjs.mod.AssignmentNode
@@ -22,6 +22,7 @@ import typings.mathjs.mod.RangeNode
 import typings.mathjs.mod.RelationalNode
 import typings.mathjs.mod.SymbolNode
 import typings.std.Record
+import typings.std.TransferFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,86 +38,84 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.AccessorNode")
     @js.native
-    open class AccessorNodeCls protected ()
+    open class AccessorNodeCls[TObject /* <: MathNode */] protected ()
       extends StObject
-         with AccessorNode {
-      def this(`object`: MathNode, index: IndexNode) = this()
+         with AccessorNode[TObject] {
+      def this(`object`: TObject, index: IndexNode[js.Array[MathNode]]) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.ArrayNode")
     @js.native
-    open class ArrayNodeCls protected ()
+    open class ArrayNodeCls[TItems /* <: js.Array[MathNode] */] protected ()
       extends StObject
-         with ArrayNode {
+         with ArrayNode[TItems] {
       def this(items: js.Array[MathNode]) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.AssignmentNode")
     @js.native
-    open class AssignmentNodeCls protected ()
+    open class AssignmentNodeCls[TValue /* <: MathNode */] protected ()
       extends StObject
-         with AssignmentNode {
-      def this(`object`: SymbolNode, value: MathNode) = this()
-      def this(`object`: AccessorNode, index: IndexNode, value: MathNode) = this()
-      def this(`object`: SymbolNode, index: IndexNode, value: MathNode) = this()
+         with AssignmentNode[TValue] {
+      def this(`object`: SymbolNode, value: TValue) = this()
+      def this(`object`: AccessorNode[MathNode], index: IndexNode[js.Array[MathNode]], value: TValue) = this()
+      def this(`object`: SymbolNode, index: IndexNode[js.Array[MathNode]], value: TValue) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.BlockNode")
     @js.native
-    open class BlockNodeCls protected ()
+    open class BlockNodeCls[TNode /* <: MathNode */] protected ()
       extends StObject
-         with BlockNode {
-      def this(arr: js.Array[NodeMathNode | typings.mathjs.anon.Node]) = this()
+         with BlockNode[MathNode] {
+      def this(arr: js.Array[NodeTNode[TNode] | typings.mathjs.anon.Node[TNode]]) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.ConditionalNode")
     @js.native
-    open class ConditionalNodeCls protected ()
+    open class ConditionalNodeCls[TCond /* <: MathNode */, TTrueNode /* <: MathNode */, TFalseNode /* <: MathNode */] protected ()
       extends StObject
-         with ConditionalNode {
-      def this(condition: MathNode, trueExpr: MathNode, falseExpr: MathNode) = this()
+         with ConditionalNode[MathNode, MathNode, MathNode] {
+      def this(condition: TCond, trueExpr: TTrueNode, falseExpr: TFalseNode) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.ConstantNode")
     @js.native
-    open class ConstantNodeCls protected ()
+    open class ConstantNodeCls[TValue /* <: String | Double */] protected ()
       extends StObject
-         with ConstantNode {
-      def this(constant: Double) = this()
+         with ConstantNode[TValue] {
+      def this(value: TValue) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.FunctionAssignmentNode")
     @js.native
-    open class FunctionAssignmentNodeCls protected ()
+    open class FunctionAssignmentNodeCls[TExpr /* <: MathNode */] protected ()
       extends StObject
-         with FunctionAssignmentNode {
-      def this(name: String, params: js.Array[String], expr: MathNode) = this()
+         with FunctionAssignmentNode[TExpr] {
+      def this(name: String, params: js.Array[String], expr: TExpr) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.FunctionNode")
     @js.native
-    open class FunctionNodeCls protected ()
+    open class FunctionNodeCls[TFn, TArgs /* <: js.Array[MathNode] */] protected ()
       extends StObject
-         with FunctionNode {
-      def this(fn: String, args: js.Array[MathNode]) = this()
-      def this(fn: MathNode, args: js.Array[MathNode]) = this()
+         with FunctionNode[TransferFunction, TArgs] {
+      def this(fn: TFn, args: SymbolNode) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.IndexNode")
     @js.native
-    open class IndexNodeCls protected ()
+    open class IndexNodeCls[TDims /* <: js.Array[MathNode] */] protected ()
       extends StObject
-         with IndexNode {
-      def this(dimensions: js.Array[MathNode]) = this()
-      def this(dimensions: js.Array[MathNode], dotNotation: Boolean) = this()
+         with IndexNode[js.Array[MathNode]] {
+      def this(dimensions: TDims) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -137,10 +136,10 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.ObjectNode")
     @js.native
-    open class ObjectNodeCls protected ()
+    open class ObjectNodeCls[TProps /* <: Record[String, MathNode] */] protected ()
       extends StObject
-         with ObjectNode {
-      def this(properties: Record[String, MathNode]) = this()
+         with ObjectNode[TProps] {
+      def this(properties: TProps) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -165,20 +164,20 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.RangeNode")
     @js.native
-    open class RangeNodeCls protected ()
+    open class RangeNodeCls[TStart /* <: MathNode */, TEnd /* <: MathNode */, TStep /* <: MathNode */] protected ()
       extends StObject
-         with RangeNode {
-      def this(start: MathNode, end: MathNode) = this()
-      def this(start: MathNode, end: MathNode, step: MathNode) = this()
+         with RangeNode[TStart, TEnd, TStep] {
+      def this(start: TStart, end: TEnd) = this()
+      def this(start: TStart, end: TEnd, step: TStep) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.RelationalNode")
     @js.native
-    open class RelationalNodeCls protected ()
+    open class RelationalNodeCls[TParams /* <: js.Array[MathNode] */] protected ()
       extends StObject
-         with RelationalNode {
-      def this(conditionals: js.Array[String], params: js.Array[MathNode]) = this()
+         with RelationalNode[TParams] {
+      def this(conditionals: js.Array[String], params: TParams) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */

@@ -6,13 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionNode
+trait FunctionNode[TFn, TArgs /* <: js.Array[MathNode] */]
   extends StObject
      with MathNode {
   
-  var args: js.Array[MathNode] = js.native
+  var args: TArgs = js.native
   
-  var fn: SymbolNode = js.native
+  var fn: TFn = js.native
   
   var isFunctionNode: `true` = js.native
   

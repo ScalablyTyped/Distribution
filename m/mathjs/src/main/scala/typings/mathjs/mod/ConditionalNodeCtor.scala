@@ -12,5 +12,5 @@ trait ConditionalNodeCtor
       /* condition */ MathNode, 
       /* trueExpr */ MathNode, 
       /* falseExpr */ MathNode, 
-      ConditionalNode
+      ConditionalNode[MathNode, MathNode, MathNode]
     ]

@@ -9,5 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IndexNodeCtor
   extends StObject
-     with Instantiable1[/* dimensions */ js.Array[MathNode], IndexNode]
-     with Instantiable2[/* dimensions */ js.Array[MathNode], /* dotNotation */ Boolean, IndexNode]
+     with Instantiable1[/* dimensions */ js.Array[MathNode], IndexNode[js.Array[MathNode]]]
+     with Instantiable2[
+      /* dimensions */ js.Array[MathNode], 
+      /* dotNotation */ Boolean, 
+      IndexNode[js.Array[MathNode]]
+    ]

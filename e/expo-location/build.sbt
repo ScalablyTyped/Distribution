@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "expo-location"
-version := "14.3.0-5d21bb"
+version := "14.3.0-6db0cc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "expo-modules-core" % "0.11.8-d62826",
+  "org.scalablytyped" %%% "expo-modules-core" % "0.11.8-d69887",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-16e74e",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-847179",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-487073",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

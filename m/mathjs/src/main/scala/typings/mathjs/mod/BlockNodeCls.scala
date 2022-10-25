@@ -1,6 +1,6 @@
 package typings.mathjs.mod
 
-import typings.mathjs.anon.NodeMathNode
+import typings.mathjs.anon.NodeTNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("mathjs", "BlockNode")
 @js.native
-open class BlockNodeCls protected ()
+open class BlockNodeCls[TNode /* <: MathNode */] protected ()
   extends StObject
-     with BlockNode {
-  def this(arr: js.Array[NodeMathNode | typings.mathjs.anon.Node]) = this()
+     with BlockNode[MathNode] {
+  def this(arr: js.Array[NodeTNode[TNode] | typings.mathjs.anon.Node[TNode]]) = this()
 }
