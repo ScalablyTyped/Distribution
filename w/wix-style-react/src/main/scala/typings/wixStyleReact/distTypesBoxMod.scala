@@ -543,6 +543,7 @@ import typings.csstype.mod.Property.WritingMode
 import typings.csstype.mod.Property.ZIndex
 import typings.csstype.mod.Property.Zoom
 import typings.react.mod.FC
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -594,6 +595,8 @@ object distTypesBoxMod extends Shortcut {
   trait BoxProps extends StObject {
     
     var align: js.UndefOr[BoxHorizontalAlignment] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -651,6 +654,10 @@ object distTypesBoxMod extends Shortcut {
       inline def setAlign(value: BoxHorizontalAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -51,8 +51,14 @@ object distTypesInputMod {
     
     @JSImport("wix-style-react/dist/types/Input", "default.Group")
     @js.native
-    def Group: FC[js.Object] = js.native
-    inline def Group_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+    def Group: FC[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupProps */ Any
+      ] = js.native
+    inline def Group_=(
+      x: FC[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupProps */ Any
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/types/Input", "default.IconAffix")
     @js.native
@@ -82,6 +88,8 @@ object distTypesInputMod {
   
   trait AffixProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var value: js.UndefOr[String] = js.undefined
   }
   object AffixProps {
@@ -93,6 +101,10 @@ object distTypesInputMod {
     
     extension [Self <: AffixProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
@@ -100,6 +112,8 @@ object distTypesInputMod {
   }
   
   trait IconAffixProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
   }
@@ -111,6 +125,10 @@ object distTypesInputMod {
     }
     
     extension [Self <: IconAffixProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
@@ -151,6 +169,8 @@ object distTypesInputMod {
     var autocomplete: js.UndefOr[String] = js.undefined
     
     var border: js.UndefOr[standard | round | bottomLine | none_] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -290,6 +310,10 @@ object distTypesInputMod {
       inline def setBorder(value: standard | round | bottomLine | none_): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

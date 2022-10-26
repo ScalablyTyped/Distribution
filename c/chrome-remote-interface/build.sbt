@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "chrome-remote-interface"
-version := "0.31-dt-20211202Z-c2eb81"
+version := "0.31-dt-20211202Z-c525a6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1061995-6c2bf2",
+  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1063652-cd4b27",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

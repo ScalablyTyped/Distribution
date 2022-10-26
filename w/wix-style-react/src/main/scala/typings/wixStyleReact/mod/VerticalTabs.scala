@@ -2,6 +2,7 @@ package typings.wixStyleReact.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.FC
+import typings.wixStyleReact.anon.`1`
 import typings.wixStyleReact.distTypesVerticalTabsMod.TabsGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,8 +21,8 @@ object VerticalTabs {
   
   @JSImport("wix-style-react", "VerticalTabs.Footer")
   @js.native
-  def Footer: FC[js.Object] = js.native
-  inline def Footer_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+  def Footer: FC[`1`] = js.native
+  inline def Footer_=(x: FC[`1`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "VerticalTabs.TabItem")
   @js.native

@@ -15,7 +15,7 @@ trait AlignChildren extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
   
-  var classNames: js.UndefOr[`5`] = js.undefined
+  var classNames: js.UndefOr[`6`] = js.undefined
   
   var dataHook: js.UndefOr[String] = js.undefined
   
@@ -48,7 +48,7 @@ object AlignChildren {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setClassNames(value: `5`): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+    inline def setClassNames(value: `6`): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
     inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
     

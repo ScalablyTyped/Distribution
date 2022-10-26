@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendCallback[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 534, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */] extends StObject {
+trait SendCallback[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 536, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */] extends StObject {
   
   def apply(error: js.Error, response: Unit): Unit = js.native
   def apply(

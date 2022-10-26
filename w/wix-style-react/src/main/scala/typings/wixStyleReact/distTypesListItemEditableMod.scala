@@ -3,7 +3,7 @@ package typings.wixStyleReact
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
 import typings.wixStyleReact.anon.ApproveButtonTooltipProps
-import typings.wixStyleReact.anon.`10`
+import typings.wixStyleReact.anon.`11`
 import typings.wixStyleReact.distTypesCommonMod.TooltipCommonProps
 import typings.wixStyleReact.distTypesInputMod.InputStatus
 import org.scalablytyped.runtime.StObject
@@ -65,7 +65,7 @@ object distTypesListItemEditableMod {
     /* "small" */ val SMALL: typings.wixStyleReact.distTypesListItemEditableMod.ListItemEditableSize.SMALL & String = js.native
   }
   
-  inline def listItemEditableBuilder(data: ApproveButtonTooltipProps): `10` = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemEditableBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[`10`]
+  inline def listItemEditableBuilder(data: ApproveButtonTooltipProps): `11` = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemEditableBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[`11`]
   
   type ListItemEditable = PureComponent[ListItemEditableProps, js.Object, Any]
   

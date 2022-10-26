@@ -1,6 +1,7 @@
 package typings.wixStyleReact
 
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import typings.wixStyleReact.distTypesCommonMod.IconElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,6 +17,8 @@ object distTypesVerticalTabsItemMod {
   type VerticalTabsItem = PureComponent[VerticalTabsItemProps, js.Object, Any]
   
   trait VerticalTabsItemProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
     
@@ -37,6 +40,10 @@ object distTypesVerticalTabsItemMod {
     }
     
     extension [Self <: VerticalTabsItemProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

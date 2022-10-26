@@ -6,6 +6,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import typings.wixStyleReact.anon.PartialHeaderProps
 import typings.wixStyleReact.anon.WeakValidationMapHeaderPr
+import typings.wixStyleReact.anon.`1`
 import typings.wixStyleReact.distTypesBaseModalLayoutLayoutBlocksHeaderModalHeadingMod.headingAppearance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesBaseModalLayoutLayoutBlocksHeaderMod {
   
-  /* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header.HeaderProps> & {  Title :react.react.FunctionComponent<{}>} */
+  /* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header.HeaderProps> & {  Title :react.react.FunctionComponent<{  children :react.react.ReactNode | undefined}>} */
   object Header {
     
     inline def apply(props: HeaderProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
@@ -25,8 +26,8 @@ object distTypesBaseModalLayoutLayoutBlocksHeaderMod {
     
     @JSImport("wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header", "Header.Title")
     @js.native
-    def Title: FunctionComponent[js.Object] = js.native
-    inline def Title_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+    def Title: FunctionComponent[`1`] = js.native
+    inline def Title_=(x: FunctionComponent[`1`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header", "Header.contextTypes")
     @js.native
@@ -51,6 +52,8 @@ object distTypesBaseModalLayoutLayoutBlocksHeaderMod {
   
   trait HeaderProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -71,6 +74,10 @@ object distTypesBaseModalLayoutLayoutBlocksHeaderMod {
     }
     
     extension [Self <: HeaderProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

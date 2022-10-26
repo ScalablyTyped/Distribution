@@ -14,6 +14,8 @@ trait InitiallyOpen extends StObject {
   
   var initiallyOpen: Requireable[Boolean]
   
+  var onClick: Requireable[js.Function1[/* repeated */ Any, Any]]
+  
   var open: Requireable[Boolean]
   
   var subtitle: Requireable[ReactNodeLike]
@@ -26,11 +28,12 @@ object InitiallyOpen {
     content: Requireable[ReactNodeLike],
     disabled: Requireable[Boolean],
     initiallyOpen: Requireable[Boolean],
+    onClick: Requireable[js.Function1[/* repeated */ Any, Any]],
     open: Requireable[Boolean],
     subtitle: Requireable[ReactNodeLike],
     title: Requireable[ReactNodeLike]
   ): InitiallyOpen = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], initiallyOpen = initiallyOpen.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], initiallyOpen = initiallyOpen.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiallyOpen]
   }
   
@@ -41,6 +44,8 @@ object InitiallyOpen {
     inline def setDisabled(value: Requireable[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setInitiallyOpen(value: Requireable[Boolean]): Self = StObject.set(x, "initiallyOpen", value.asInstanceOf[js.Any])
+    
+    inline def setOnClick(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOpen(value: Requireable[Boolean]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     

@@ -3,6 +3,8 @@ package typings.wixStyleReact
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Component
 import typings.react.mod.FC
+import typings.react.mod.ReactNode
+import typings.wixStyleReact.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +24,8 @@ object distTypesVerticalTabsMod {
     
     @JSImport("wix-style-react/dist/types/VerticalTabs", "default.Footer")
     @js.native
-    def Footer: FC[js.Object] = js.native
-    inline def Footer_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+    def Footer: FC[`1`] = js.native
+    inline def Footer_=(x: FC[`1`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/types/VerticalTabs", "default.TabItem")
     @js.native
@@ -38,6 +40,8 @@ object distTypesVerticalTabsMod {
   
   trait TabsGroup extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var title: js.UndefOr[String] = js.undefined
   }
   object TabsGroup {
@@ -48,6 +52,10 @@ object distTypesVerticalTabsMod {
     }
     
     extension [Self <: TabsGroup](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -60,6 +68,8 @@ object distTypesVerticalTabsMod {
   trait VerticalTabsProps extends StObject {
     
     var activeTabId: js.UndefOr[Double] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
     
@@ -79,6 +89,10 @@ object distTypesVerticalTabsMod {
       inline def setActiveTabId(value: Double): Self = StObject.set(x, "activeTabId", value.asInstanceOf[js.Any])
       
       inline def setActiveTabIdUndefined: Self = StObject.set(x, "activeTabId", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

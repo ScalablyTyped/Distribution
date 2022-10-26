@@ -30,6 +30,8 @@ object distTypesPageHeaderMod {
     
     var breadcrumbs: js.UndefOr[ReactNode | BreadcrumbsRenderFn] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -66,6 +68,10 @@ object distTypesPageHeaderMod {
       inline def setBreadcrumbsFunction1(value: /* minimized */ Boolean => ReactNode): Self = StObject.set(x, "breadcrumbs", js.Any.fromFunction1(value))
       
       inline def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

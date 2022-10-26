@@ -1,35 +1,22 @@
 package typings.wixStyleReact.anon
 
-import typings.react.mod.MouseEvent
-import typings.react.mod.MouseEventHandler
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactNode
-import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `3` extends StObject {
   
-  var label: js.UndefOr[ReactNode] = js.undefined
-  
-  var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
+  def onClick(): Unit
 }
 object `3` {
   
-  inline def apply(): `3` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(onClick: () => Unit): `3` = {
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick))
     __obj.asInstanceOf[`3`]
   }
   
   extension [Self <: `3`](x: Self) {
     
-    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
-    inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
-    
-    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
   }
 }

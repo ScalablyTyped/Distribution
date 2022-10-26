@@ -2057,6 +2057,7 @@
 | [dav](./d/dav) | WebDAV, CalDAV, and CardDAV client for nodejs and  | address book, calendar, contacts, dav, caldav, carddav, webdav, ical, vcard, sync, rfc 4791, rfc 6352, rfc 6578 |
 | [dayjs](./d/dayjs) | 2KB immutable date time library alternative to Mom | dayjs, date, time, immutable, moment |
 | [dayjs-precise-range](./d/dayjs-precise-range) | This is a plugin for the dayjs to display date/tim | dayjs, plugin, precisely, format |
+| [dayjs-recur](./d/dayjs-recur) | A Day.js plugin for matching and generating recurr | day.js, dayjs, date, recur, match |
 | [dayzed](./d/dayzed) | Primitives to build simple, flexible, WAI-ARIA com | - |
 | [db-errors](./d/db-errors) | Unified node.js error API for mysql, postgres and  | mysql, postgres, postgresql, sqlite3, error, errors, error, handling, error, handler |
 | [db-hafas-stations](./d/db-hafas-stations) | A list of DB stations, taken from HAFAS. | db, deutsche bahn, stations, hafas, list |
@@ -11800,6 +11801,7 @@
 | [umijs__ssr-darkreader](./u/umijs__ssr-darkreader) | Dark mode for every website | dark-theme, dark-mode, night-mode, darkmode, nightmode, accessibility, eye-care |
 | [umijs__use-params](./u/umijs__use-params) | - | react, react-hooks, urlsearchparams, url-query, url, state |
 | [umtrack-wx](./u/umtrack-wx) | 微信小程序友盟统计SDK | umeng, weixin, wx |
+| [umzug](./u/umzug) | Framework-agnostic migration tool for Node | migrate, migration, migrations, sequelize, database |
 | [unbzip2-stream](./u/unbzip2-stream) | streaming unbzip2 implementation in pure javascrip | bzip, bzip2, bz2, stream, streaming, decompress, through |
 | [unc-path-regex](./u/unc-path-regex) | Regular expression for testing if a file path is a | absolute, expression, file, filepath, match, matching, path, regex, regexp, regular, unc, win, windows |
 | [uncontrollable](./u/uncontrollable) | Wrap a controlled react component, to allow specif | uncontrolled-component, react-component, input, controlled, uncontrolled, form |
@@ -12663,6 +12665,7 @@
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
+| [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
 | [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |

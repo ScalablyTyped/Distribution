@@ -202,14 +202,14 @@ object distTypesCalendarPanelMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.wixStyleReact.distTypesCalendarPanelMod.OptionType
-    - typings.wixStyleReact.anon.`1`
+    - typings.wixStyleReact.anon.`2`
   */
   trait PresetType extends StObject
   object PresetType {
     
-    inline def `1`(): typings.wixStyleReact.anon.`1` = {
+    inline def `2`(): typings.wixStyleReact.anon.`2` = {
       val __obj = js.Dynamic.literal(value = "-")
-      __obj.asInstanceOf[typings.wixStyleReact.anon.`1`]
+      __obj.asInstanceOf[typings.wixStyleReact.anon.`2`]
     }
     
     inline def OptionType(id: String | Double, selectedDays: SelectedDaysType): typings.wixStyleReact.distTypesCalendarPanelMod.OptionType = {

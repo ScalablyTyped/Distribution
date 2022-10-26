@@ -15,7 +15,7 @@ import typings.wixStyleReact.anon.OverrideOptionStyleValue
 import typings.wixStyleReact.anon.Prefix
 import typings.wixStyleReact.anon.PrefixIcon
 import typings.wixStyleReact.anon.`0`
-import typings.wixStyleReact.anon.`10`
+import typings.wixStyleReact.anon.`11`
 import typings.wixStyleReact.distTypesAccordionAccordionItemMod.AccordionItemCommonProps
 import typings.wixStyleReact.distTypesAccordionAccordionItemMod.AccordionItemProps
 import typings.wixStyleReact.distTypesAccordionAccordionSectionItemMod.AccordionSectionItemCommonProps
@@ -134,7 +134,7 @@ inline def dndStyles: dndStylesType = ^.asInstanceOf[js.Dynamic].selectDynamic("
 
 inline def listItemActionBuilder[T /* <: Partial[ListItemActionProps] */](data: PrefixIcon): DisabledIdOverrideOptionStyleValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemActionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[DisabledIdOverrideOptionStyleValue[T]]
 
-inline def listItemEditableBuilder(data: ApproveButtonTooltipProps): `10` = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemEditableBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[`10`]
+inline def listItemEditableBuilder(data: ApproveButtonTooltipProps): `11` = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemEditableBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[`11`]
 
 inline def listItemSectionBuilder(data: DataHookEllipsis): OverrideOptionStyleValue = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemSectionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[OverrideOptionStyleValue]
 

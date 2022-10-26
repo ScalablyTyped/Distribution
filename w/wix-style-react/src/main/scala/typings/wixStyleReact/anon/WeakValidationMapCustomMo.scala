@@ -11,6 +11,10 @@ trait WeakValidationMapCustomMo extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends wix-style-react.wix-style-react/dist/types/Button/Button.types.ButtonSize | undefined ? react.react.Validator<wix-style-react.wix-style-react/dist/types/Button/Button.types.ButtonSize | undefined | null | undefined> : undefined extends wix-style-react.wix-style-react/dist/types/Button/Button.types.ButtonSize | undefined ? react.react.Validator<wix-style-react.wix-style-react/dist/types/Button/Button.types.ButtonSize | undefined | null | undefined> : react.react.Validator<wix-style-react.wix-style-react/dist/types/Button/Button.types.ButtonSize | undefined> */ js.Any
   ] = js.undefined
   
+  var children: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : undefined extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : react.react.Validator<react.react.ReactNode | undefined> */ js.Any
+  ] = js.undefined
+  
   var className: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
@@ -126,6 +130,12 @@ object WeakValidationMapCustomMo {
     ): Self = StObject.set(x, "actionsSize", value.asInstanceOf[js.Any])
     
     inline def setActionsSizeUndefined: Self = StObject.set(x, "actionsSize", js.undefined)
+    
+    inline def setChildren(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : undefined extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : react.react.Validator<react.react.ReactNode | undefined> */ js.Any
+    ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any

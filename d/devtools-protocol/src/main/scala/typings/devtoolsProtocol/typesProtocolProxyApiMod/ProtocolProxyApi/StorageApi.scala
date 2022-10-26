@@ -16,6 +16,10 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.GetCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetCookiesResponse
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetInterestGroupDetailsRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetInterestGroupDetailsResponse
+import typings.devtoolsProtocol.mod.Protocol.Storage.GetSharedStorageEntriesRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.GetSharedStorageEntriesResponse
+import typings.devtoolsProtocol.mod.Protocol.Storage.GetSharedStorageMetadataRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.GetSharedStorageMetadataResponse
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetStorageKeyForFrameRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetStorageKeyForFrameResponse
 import typings.devtoolsProtocol.mod.Protocol.Storage.GetTrustTokensResponse
@@ -70,6 +74,16 @@ trait StorageApi extends StObject {
     * Gets details for a named interest group.
     */
   def getInterestGroupDetails(params: GetInterestGroupDetailsRequest): js.Promise[GetInterestGroupDetailsResponse] = js.native
+  
+  /**
+    * Gets the entries in an given origin's shared storage.
+    */
+  def getSharedStorageEntries(params: GetSharedStorageEntriesRequest): js.Promise[GetSharedStorageEntriesResponse] = js.native
+  
+  /**
+    * Gets metadata for an origin's shared storage.
+    */
+  def getSharedStorageMetadata(params: GetSharedStorageMetadataRequest): js.Promise[GetSharedStorageMetadataResponse] = js.native
   
   /**
     * Returns a storage key given a frame id.

@@ -10,7 +10,7 @@ import typings.react.mod.RefAttributes
 import typings.std.Element
 import typings.std.HTMLInputElement
 import typings.wixDesignSystemsLocaleUtils.distTypesDateTimeFormatConstantsMod.SupportedWixLocales_
-import typings.wixStyleReact.anon.`14`
+import typings.wixStyleReact.anon.`15`
 import typings.wixStyleReact.distTypesCommonMod.PopoverCommonProps
 import typings.wixStyleReact.distTypesInputMod.InputSize
 import typings.wixStyleReact.distTypesInputMod.InputStatus
@@ -71,7 +71,7 @@ object distTypesTimeInputMod extends Shortcut {
     
     var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* param0 */ `14`, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* param0 */ `15`, Unit]] = js.undefined
     
     var onFocus: js.UndefOr[js.Function1[/* e */ js.UndefOr[FocusEvent[HTMLInputElement, Element]], Unit]] = js.undefined
     
@@ -146,7 +146,7 @@ object distTypesTimeInputMod extends Shortcut {
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: /* param0 */ `14` => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* param0 */ `15` => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       

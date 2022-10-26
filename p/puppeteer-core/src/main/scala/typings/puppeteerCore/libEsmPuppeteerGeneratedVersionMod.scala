@@ -8,5 +8,5 @@ object libEsmPuppeteerGeneratedVersionMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/generated/version", "packageVersion")
   @js.native
-  val packageVersion: /* "19.1.0" */ String = js.native
+  val packageVersion: /* "19.2.0" */ String = js.native
 }

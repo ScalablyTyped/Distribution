@@ -20,18 +20,18 @@ object cjsMod {
   /* augmented module */
   object i18nextAugmentingMod {
     
-    trait PluginOptions extends StObject {
+    trait CustomPluginOptions extends StObject {
       
       var detection: js.UndefOr[DetectorOptions] = js.undefined
     }
-    object PluginOptions {
+    object CustomPluginOptions {
       
-      inline def apply(): PluginOptions = {
+      inline def apply(): CustomPluginOptions = {
         val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[PluginOptions]
+        __obj.asInstanceOf[CustomPluginOptions]
       }
       
-      extension [Self <: PluginOptions](x: Self) {
+      extension [Self <: CustomPluginOptions](x: Self) {
         
         inline def setDetection(value: DetectorOptions): Self = StObject.set(x, "detection", value.asInstanceOf[js.Any])
         

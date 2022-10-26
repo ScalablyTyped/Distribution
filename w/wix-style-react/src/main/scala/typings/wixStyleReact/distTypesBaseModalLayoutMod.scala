@@ -6,11 +6,13 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import typings.std.HTMLButtonElement
 import typings.wixStyleReact.anon.FunctionComponentHeaderPr
 import typings.wixStyleReact.anon.PartialHeaderProps
 import typings.wixStyleReact.anon.WeakValidationMapHeaderPr
+import typings.wixStyleReact.anon.`1`
 import typings.wixStyleReact.distTypesBaseModalLayoutLayoutBlocksContentMod.ContentProps
 import typings.wixStyleReact.distTypesBaseModalLayoutLayoutBlocksFooterMod.FooterProps
 import typings.wixStyleReact.distTypesBaseModalLayoutLayoutBlocksFootnoteMod.FootnoteProps
@@ -71,7 +73,7 @@ object distTypesBaseModalLayoutMod {
   @js.native
   val Footnote: FunctionComponent[FootnoteProps] = js.native
   
-  /* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header.HeaderProps> & {  Title :react.react.FunctionComponent<{}>} */
+  /* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header.HeaderProps> & {  Title :react.react.FunctionComponent<{  children :react.react.ReactNode | undefined}>} */
   object Header {
     
     inline def apply(props: HeaderProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
@@ -83,8 +85,8 @@ object distTypesBaseModalLayoutMod {
     
     @JSImport("wix-style-react/dist/types/BaseModalLayout", "Header.Title")
     @js.native
-    def Title: FunctionComponent[js.Object] = js.native
-    inline def Title_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+    def Title: FunctionComponent[`1`] = js.native
+    inline def Title_=(x: FunctionComponent[`1`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/types/BaseModalLayout", "Header.contextTypes")
     @js.native
@@ -115,6 +117,8 @@ object distTypesBaseModalLayoutMod {
   
   trait BaseModalLayoutProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -133,6 +137,10 @@ object distTypesBaseModalLayoutMod {
     }
     
     extension [Self <: BaseModalLayoutProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

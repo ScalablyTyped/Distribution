@@ -6,7 +6,7 @@ import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import typings.react.mod.PureComponent
 import typings.wixStyleReact.anon.Mode
-import typings.wixStyleReact.anon.`6`
+import typings.wixStyleReact.anon.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,7 +93,7 @@ object distTypesFloatingHelperClosablePopoverClosablePopoverMod {
     
     def _isControlled(): Boolean = js.native
     
-    var actions: `6` = js.native
+    var actions: `7` = js.native
     
     def close(): Unit = js.native
     

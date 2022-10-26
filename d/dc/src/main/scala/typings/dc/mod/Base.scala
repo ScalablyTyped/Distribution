@@ -11,6 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Base extends StObject {
   
+  def BadArgumentException(): Unit = js.native
+  
+  def Exception(msg: String): Unit = js.native
+  
+  def InvalidStateException(): Unit = js.native
+  
   def afterTransition(
     transition: Transition_[
       Any, 
@@ -72,8 +78,6 @@ trait Base extends StObject {
   def deregisterChart(chart: BaseMixin[Any], group: String): Unit = js.native
   
   var disableTransitions: Boolean = js.native
-  
-  var errors: Errors = js.native
   
   var events: Events = js.native
   

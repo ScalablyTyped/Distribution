@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "devtools-protocol"
-version := "0.0.1061995-6c2bf2"
+version := "0.0.1063652-cd4b27"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

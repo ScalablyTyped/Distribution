@@ -18,7 +18,7 @@ import typings.wixStyleReact.anon.ChildrenValue
 import typings.wixStyleReact.anon.DownDisabled
 import typings.wixStyleReact.anon.FocusBoolean
 import typings.wixStyleReact.anon.OnDown
-import typings.wixStyleReact.anon.`9`
+import typings.wixStyleReact.anon.`10`
 import typings.wixStyleReact.distTypesWixStyleReactDefaultsOverrideProviderWixStyleReactDefaultsOverrideProviderMod.WixStyleReactDefaultsOverride
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -73,8 +73,8 @@ object distTypesInputInputMod {
       
       @JSImport("wix-style-react/dist/types/Input/Input", "default.Group.propTypes")
       @js.native
-      def propTypes: `9` = js.native
-      inline def propTypes_=(x: `9`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+      def propTypes: `10` = js.native
+      inline def propTypes_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     }
     
     /* static member */

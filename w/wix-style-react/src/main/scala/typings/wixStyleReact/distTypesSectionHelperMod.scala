@@ -54,6 +54,8 @@ object distTypesSectionHelperMod {
     
     var appearance: js.UndefOr[SectionHelperAppearance] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var dataHook: js.UndefOr[String] = js.undefined
     
     var fullWidth: js.UndefOr[Boolean] = js.undefined
@@ -84,6 +86,10 @@ object distTypesSectionHelperMod {
       inline def setAppearance(value: SectionHelperAppearance): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
       inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

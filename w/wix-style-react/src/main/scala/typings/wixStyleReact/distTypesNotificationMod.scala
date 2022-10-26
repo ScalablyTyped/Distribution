@@ -72,6 +72,8 @@ object distTypesNotificationMod {
     extends StObject
        with ActionButtonProps {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
     var `type`: js.UndefOr[button] = js.undefined
@@ -84,6 +86,10 @@ object distTypesNotificationMod {
     }
     
     extension [Self <: ButtonActionButtonProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -100,6 +106,8 @@ object distTypesNotificationMod {
   trait NotificationProps extends StObject {
     
     var autoHideTimeout: js.UndefOr[Double] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
     
@@ -125,6 +133,10 @@ object distTypesNotificationMod {
       inline def setAutoHideTimeout(value: Double): Self = StObject.set(x, "autoHideTimeout", value.asInstanceOf[js.Any])
       
       inline def setAutoHideTimeoutUndefined: Self = StObject.set(x, "autoHideTimeout", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
@@ -330,6 +342,8 @@ object distTypesNotificationMod {
     extends StObject
        with ActionButtonProps {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var link: js.UndefOr[String] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
@@ -347,6 +361,10 @@ object distTypesNotificationMod {
     }
     
     extension [Self <: TextLinkActionButton](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       

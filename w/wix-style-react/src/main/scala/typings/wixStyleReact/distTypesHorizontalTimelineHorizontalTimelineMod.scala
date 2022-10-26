@@ -7,7 +7,7 @@ import typings.react.mod.global.JSX.Element
 import typings.wixStyleReact.anon.IconLabel
 import typings.wixStyleReact.anon.LabelEllipsis
 import typings.wixStyleReact.anon.Line
-import typings.wixStyleReact.anon.`8`
+import typings.wixStyleReact.anon.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,26 +29,26 @@ object distTypesHorizontalTimelineHorizontalTimelineMod {
     /* static member */
     @JSImport("wix-style-react/dist/types/HorizontalTimeline/HorizontalTimeline", "default.ActiveIcon")
     @js.native
-    def ActiveIcon: js.Function1[/* param0 */ `8`, Element] = js.native
-    inline def ActiveIcon_=(x: js.Function1[/* param0 */ `8`, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ActiveIcon")(x.asInstanceOf[js.Any])
+    def ActiveIcon: js.Function1[/* param0 */ `9`, Element] = js.native
+    inline def ActiveIcon_=(x: js.Function1[/* param0 */ `9`, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ActiveIcon")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("wix-style-react/dist/types/HorizontalTimeline/HorizontalTimeline", "default.BoundaryIcon")
     @js.native
-    def BoundaryIcon: js.Function1[/* param0 */ `8`, Element] = js.native
-    inline def BoundaryIcon_=(x: js.Function1[/* param0 */ `8`, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoundaryIcon")(x.asInstanceOf[js.Any])
+    def BoundaryIcon: js.Function1[/* param0 */ `9`, Element] = js.native
+    inline def BoundaryIcon_=(x: js.Function1[/* param0 */ `9`, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoundaryIcon")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("wix-style-react/dist/types/HorizontalTimeline/HorizontalTimeline", "default.CompleteIcon")
     @js.native
-    def CompleteIcon: js.Function1[/* param0 */ `8`, Element] = js.native
-    inline def CompleteIcon_=(x: js.Function1[/* param0 */ `8`, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompleteIcon")(x.asInstanceOf[js.Any])
+    def CompleteIcon: js.Function1[/* param0 */ `9`, Element] = js.native
+    inline def CompleteIcon_=(x: js.Function1[/* param0 */ `9`, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompleteIcon")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("wix-style-react/dist/types/HorizontalTimeline/HorizontalTimeline", "default.DefaultIcon")
     @js.native
-    def DefaultIcon: js.Function1[/* param0 */ `8`, Element] = js.native
-    inline def DefaultIcon_=(x: js.Function1[/* param0 */ `8`, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultIcon")(x.asInstanceOf[js.Any])
+    def DefaultIcon: js.Function1[/* param0 */ `9`, Element] = js.native
+    inline def DefaultIcon_=(x: js.Function1[/* param0 */ `9`, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultIcon")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("wix-style-react/dist/types/HorizontalTimeline/HorizontalTimeline", "default.DestructiveIcon")

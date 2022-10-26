@@ -2,6 +2,7 @@ package typings.wixStyleReact
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,8 @@ object distTypesWixStyleReactEnvironmentProviderMod extends Shortcut {
   val default: FC[WixStyleReactEnvironmentProviderProps] = js.native
   
   trait WixStyleReactEnvironmentProviderProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
     
@@ -26,6 +29,10 @@ object distTypesWixStyleReactEnvironmentProviderMod extends Shortcut {
     }
     
     extension [Self <: WixStyleReactEnvironmentProviderProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

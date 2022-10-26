@@ -1,25 +1,24 @@
 package typings.wixStyleReact.anon
 
-import typings.propTypes.mod.ReactNodeLike
-import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `9` extends StObject {
   
-  /** any content to be displayed */
-  var children: Requireable[ReactNodeLike]
+  var skin: js.UndefOr[String] = js.undefined
 }
 object `9` {
   
-  inline def apply(children: Requireable[ReactNodeLike]): `9` = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  inline def apply(): `9` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`9`]
   }
   
   extension [Self <: `9`](x: Self) {
     
-    inline def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+    
+    inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
   }
 }

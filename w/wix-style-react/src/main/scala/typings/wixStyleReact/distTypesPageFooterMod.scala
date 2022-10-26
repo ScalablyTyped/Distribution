@@ -2,6 +2,7 @@ package typings.wixStyleReact
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import typings.wixStyleReact.anon.PartialPageFooterProps
 import typings.wixStyleReact.anon.WeakValidationMapPageFoot
@@ -74,6 +75,8 @@ object distTypesPageFooterMod {
   
   trait PageFooterProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -88,6 +91,10 @@ object distTypesPageFooterMod {
     }
     
     extension [Self <: PageFooterProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

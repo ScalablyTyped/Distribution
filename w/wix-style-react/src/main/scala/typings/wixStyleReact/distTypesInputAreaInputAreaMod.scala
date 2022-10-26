@@ -5,6 +5,7 @@ import typings.propTypes.mod.ReactNodeLike
 import typings.propTypes.mod.Requireable
 import typings.react.mod.PureComponent
 import typings.wixStyleReact.anon.ComputedRows
+import typings.wixStyleReact.anon.StatusContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -213,7 +214,7 @@ object distTypesInputAreaInputAreaMod {
     
     def _getComputedStyle(): Null = js.native
     
-    def _getDataAttr(): js.Object = js.native
+    def _getDataAttr(param0: StatusContext): js.Object = js.native
     
     def _getDefaultLineHeight(): Double = js.native
     

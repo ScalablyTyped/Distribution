@@ -43,7 +43,7 @@ object distTypesSelectableAccordionItemItemMod {
   @js.native
   trait SelectableAccordionItem extends PureComponent[Any, Any, Any] {
     
-    def _onChange(): Unit = js.native
+    def _onChange(event: Any): Unit = js.native
     
     def _onMouseEnter(): Unit = js.native
     

@@ -6,7 +6,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
-import typings.wixStyleReact.anon.`7`
+import typings.wixStyleReact.anon.`8`
 import typings.wixStyleReact.distTypesButtonButtonDottypesMod.ButtonWithAsProp
 import typings.wixStyleReact.distTypesCommonMod.IconElement
 import org.scalablytyped.runtime.StObject
@@ -22,7 +22,7 @@ object distTypesFloatingNotificationMod {
   
   type FloatingNotification = PureComponent[FloatingNotificationProps, js.Object, Any]
   
-  type FloatingNotificationButtonProps = ButtonWithAsProp[`7`]
+  type FloatingNotificationButtonProps = ButtonWithAsProp[`8`]
   
   trait FloatingNotificationProps extends StObject {
     

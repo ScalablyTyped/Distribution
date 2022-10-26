@@ -3,6 +3,7 @@ package typings.wixStyleReact
 import typings.csstype.mod.Property.Padding
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.wixStyleReact.anon.RadioPropscontentReactNod
 import typings.wixStyleReact.distTypesRadioMod.RadioAlignItems
 import typings.wixStyleReact.wixStyleReactStrings.none_
@@ -43,6 +44,8 @@ object distTypesRadioGroupMod {
   
   trait RadioGroupProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -79,6 +82,10 @@ object distTypesRadioGroupMod {
     }
     
     extension [Self <: RadioGroupProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -72,6 +72,8 @@ object distTypesComposerHeaderMod {
   
   trait ComposerHeaderMainActionsProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var dataHook: js.UndefOr[String] = js.undefined
   }
   object ComposerHeaderMainActionsProps {
@@ -83,6 +85,10 @@ object distTypesComposerHeaderMod {
     
     extension [Self <: ComposerHeaderMainActionsProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
       inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
@@ -92,6 +98,8 @@ object distTypesComposerHeaderMod {
   trait ComposerHeaderProps extends StObject {
     
     var backButtonValue: js.UndefOr[ReactNode] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
     
@@ -113,6 +121,10 @@ object distTypesComposerHeaderMod {
       inline def setBackButtonValue(value: ReactNode): Self = StObject.set(x, "backButtonValue", value.asInstanceOf[js.Any])
       
       inline def setBackButtonValueUndefined: Self = StObject.set(x, "backButtonValue", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

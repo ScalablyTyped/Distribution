@@ -120,6 +120,8 @@ import typings.devtoolsProtocol.anon.ReturnTypeGetSamplingProfileResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetScriptSourceResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetSearchResultsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetSecurityIsolationStatusResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetSharedStorageEntriesResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetSharedStorageMetadataResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetSnapshotResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetSourceOrderHighlightObjectForTestResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetStackTraceResponse
@@ -3528,6 +3530,18 @@ object typesProtocolMappingMod {
       var StorageDotgetInterestGroupDetails: ReturnTypeGetInterestGroupDetailsResponse
       
       /**
+        * Gets the entries in an given origin's shared storage.
+        */
+      @JSName("Storage.getSharedStorageEntries")
+      var StorageDotgetSharedStorageEntries: ReturnTypeGetSharedStorageEntriesResponse
+      
+      /**
+        * Gets metadata for an origin's shared storage.
+        */
+      @JSName("Storage.getSharedStorageMetadata")
+      var StorageDotgetSharedStorageMetadata: ReturnTypeGetSharedStorageMetadataResponse
+      
+      /**
         * Returns a storage key given a frame id.
         */
       @JSName("Storage.getStorageKeyForFrame")
@@ -5346,6 +5360,10 @@ object typesProtocolMappingMod {
         inline def setStorageDotgetCookies(value: `206`): Self = StObject.set(x, "Storage.getCookies", value.asInstanceOf[js.Any])
         
         inline def setStorageDotgetInterestGroupDetails(value: ReturnTypeGetInterestGroupDetailsResponse): Self = StObject.set(x, "Storage.getInterestGroupDetails", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotgetSharedStorageEntries(value: ReturnTypeGetSharedStorageEntriesResponse): Self = StObject.set(x, "Storage.getSharedStorageEntries", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotgetSharedStorageMetadata(value: ReturnTypeGetSharedStorageMetadataResponse): Self = StObject.set(x, "Storage.getSharedStorageMetadata", value.asInstanceOf[js.Any])
         
         inline def setStorageDotgetStorageKeyForFrame(value: ReturnTypeGetStorageKeyForFrameResponse): Self = StObject.set(x, "Storage.getStorageKeyForFrame", value.asInstanceOf[js.Any])
         

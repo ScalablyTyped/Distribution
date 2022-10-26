@@ -1,7 +1,7 @@
 package typings.wixStyleReact
 
 import typings.react.mod.ReactElement
-import typings.wixStyleReact.anon.`9`
+import typings.wixStyleReact.anon.`10`
 import typings.wixStyleReact.distTypesWixStyleReactMaskingProviderWixStyleReactMaskingProviderDottypesMod.WixStyleReactMaskingProviderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object distTypesWixStyleReactMaskingProviderMod {
     
     @JSImport("wix-style-react/dist/types/WixStyleReactMaskingProvider", "WixStyleReactMaskingProvider.propTypes")
     @js.native
-    def propTypes: `9` = js.native
-    inline def propTypes_=(x: `9`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: `10` = js.native
+    inline def propTypes_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
 }

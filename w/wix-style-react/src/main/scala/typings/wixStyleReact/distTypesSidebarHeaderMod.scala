@@ -17,6 +17,8 @@ object distTypesSidebarHeaderMod {
   
   trait SidebarHeaderProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var dataHook: js.UndefOr[String] = js.undefined
     
     var subtitle: js.UndefOr[ReactNode] = js.undefined
@@ -31,6 +33,10 @@ object distTypesSidebarHeaderMod {
     }
     
     extension [Self <: SidebarHeaderProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

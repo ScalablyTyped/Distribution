@@ -3,6 +3,7 @@ package typings.wixStyleReact
 import typings.csstype.mod.Property.MaxWidth
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.wixStyleReact.distTypesCardFolderTabsTabMod.CardFolderTabProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,6 +32,8 @@ object distTypesCardFolderTabsMod {
     
     var activeId: String
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var dataHook: js.UndefOr[String] = js.undefined
     
     var ellipsis: js.UndefOr[Boolean] = js.undefined
@@ -53,6 +56,10 @@ object distTypesCardFolderTabsMod {
     extension [Self <: CardFolderTabsProps](x: Self) {
       
       inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

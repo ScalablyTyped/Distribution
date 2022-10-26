@@ -2520,6 +2520,14 @@ object chromeRemoteInterfaceStrings {
   inline def StorageDotgetInterestGroupDetails: StorageDotgetInterestGroupDetails = "Storage.getInterestGroupDetails".asInstanceOf[StorageDotgetInterestGroupDetails]
   
   @js.native
+  sealed trait StorageDotgetSharedStorageEntries extends StObject
+  inline def StorageDotgetSharedStorageEntries: StorageDotgetSharedStorageEntries = "Storage.getSharedStorageEntries".asInstanceOf[StorageDotgetSharedStorageEntries]
+  
+  @js.native
+  sealed trait StorageDotgetSharedStorageMetadata extends StObject
+  inline def StorageDotgetSharedStorageMetadata: StorageDotgetSharedStorageMetadata = "Storage.getSharedStorageMetadata".asInstanceOf[StorageDotgetSharedStorageMetadata]
+  
+  @js.native
   sealed trait StorageDotgetStorageKeyForFrame extends StObject
   inline def StorageDotgetStorageKeyForFrame: StorageDotgetStorageKeyForFrame = "Storage.getStorageKeyForFrame".asInstanceOf[StorageDotgetStorageKeyForFrame]
   

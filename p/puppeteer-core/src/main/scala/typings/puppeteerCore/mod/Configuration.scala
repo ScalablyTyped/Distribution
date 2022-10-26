@@ -1,6 +1,5 @@
 package typings.puppeteerCore.mod
 
-import typings.puppeteerCore.anon.MacArmChromiumEnabled
 import typings.puppeteerCore.puppeteerCoreStrings.error
 import typings.puppeteerCore.puppeteerCoreStrings.silent
 import typings.puppeteerCore.puppeteerCoreStrings.warn
@@ -10,24 +9,98 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Configuration extends StObject {
   
+  /**
+    * Specifies a certain version of the browser you'd like Puppeteer to use.
+    *
+    * Can be overridden by `PUPPETEER_BROWSER_REVISION`.
+    *
+    * See {@link PuppeteerNode.launch | puppeteer.launch} on how executable path
+    * is inferred.
+    *
+    * @defaultValue A compatible-revision of the browser.
+    */
   var browserRevision: js.UndefOr[String] = js.undefined
   
+  /**
+    * Defines the directory to be used by Puppeteer for caching.
+    *
+    * Can be overridden by `PUPPETEER_CACHE_DIR`.
+    *
+    * @defaultValue `path.join(os.homedir(), '.cache', 'puppeteer')`
+    */
   var cacheDirectory: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies which browser you'd like Puppeteer to use.
+    *
+    * Can be overridden by `PUPPETEER_PRODUCT`.
+    *
+    * @defaultValue `'chrome'`
+    */
   var defaultProduct: js.UndefOr[Product] = js.undefined
   
+  /**
+    * Specifies the URL prefix that is used to download Chromium.
+    *
+    * Can be overridden by `PUPPETEER_DOWNLOAD_HOST`.
+    *
+    * @remarks
+    * This must include the protocol and may even need a path prefix.
+    *
+    * @defaultValue Either https://storage.googleapis.com or
+    * https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central,
+    * depending on the product.
+    */
   var downloadHost: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the path for the downloads folder.
+    *
+    * Can be overridden by `PUPPETEER_DOWNLOAD_PATH`.
+    *
+    * @defaultValue `<cache>/<product>` where `<cache>` is Puppeteer's cache
+    * directory and `<product>` is the name of the browser.
+    */
   var downloadPath: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies an executable path to be used in
+    * {@link PuppeteerNode.launch | puppeteer.launch}.
+    *
+    * Can be overridden by `PUPPETEER_EXECUTABLE_PATH`.
+    *
+    * @defaultValue Auto-computed.
+    */
   var executablePath: js.UndefOr[String] = js.undefined
   
-  var experiments: js.UndefOr[MacArmChromiumEnabled] = js.undefined
+  /**
+    * Defines experimental options for Puppeteer.
+    */
+  var experiments: js.UndefOr[ExperimentsConfiguration] = js.undefined
   
+  /**
+    * Tells Puppeteer to log at the given level.
+    *
+    * At the moment, any option silences logging.
+    *
+    * @defaultValue `undefined`
+    */
   var logLevel: js.UndefOr[silent | error | warn] = js.undefined
   
+  /**
+    * Tells Puppeteer to not download during installation.
+    *
+    * Can be overridden by `PUPPETEER_SKIP_DOWNLOAD`.
+    */
   var skipDownload: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Defines the directory to be used by Puppeteer for creating temporary files.
+    *
+    * Can be overridden by `PUPPETEER_TMP_DIR`.
+    *
+    * @defaultValue `os.tmpdir()`
+    */
   var temporaryDirectory: js.UndefOr[String] = js.undefined
 }
 object Configuration {
@@ -63,7 +136,7 @@ object Configuration {
     
     inline def setExecutablePathUndefined: Self = StObject.set(x, "executablePath", js.undefined)
     
-    inline def setExperiments(value: MacArmChromiumEnabled): Self = StObject.set(x, "experiments", value.asInstanceOf[js.Any])
+    inline def setExperiments(value: ExperimentsConfiguration): Self = StObject.set(x, "experiments", value.asInstanceOf[js.Any])
     
     inline def setExperimentsUndefined: Self = StObject.set(x, "experiments", js.undefined)
     

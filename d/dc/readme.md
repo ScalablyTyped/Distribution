@@ -1,6 +1,7 @@
 
 # Scala.js typings for dc
 
+Typings are for version 4.2
 
 ## Library description:
 A multi-dimensional charting library built to work natively with crossfilter and rendered using d3.js

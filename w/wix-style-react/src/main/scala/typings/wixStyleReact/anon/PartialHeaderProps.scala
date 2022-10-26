@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<wix-style-react.wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header.HeaderProps> */
 trait PartialHeaderProps extends StObject {
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
   
   var dataHook: js.UndefOr[String] = js.undefined
@@ -29,6 +31,10 @@ object PartialHeaderProps {
   }
   
   extension [Self <: PartialHeaderProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

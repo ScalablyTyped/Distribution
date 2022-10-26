@@ -1,11 +1,14 @@
 package typings.wixStyleReact.anon
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<wix-style-react.wix-style-react/dist/types/TableToolbar.TableToolbarProps> */
 trait PartialTableToolbarProps extends StObject {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -21,6 +24,10 @@ object PartialTableToolbarProps {
   }
   
   extension [Self <: PartialTableToolbarProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `13` extends StObject {
   
-  var className: Any
+  var dataHook: Any
 }
 object `13` {
   
-  inline def apply(className: Any): `13` = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+  inline def apply(dataHook: Any): `13` = {
+    val __obj = js.Dynamic.literal(dataHook = dataHook.asInstanceOf[js.Any])
     __obj.asInstanceOf[`13`]
   }
   
   extension [Self <: `13`](x: Self) {
     
-    inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: Any): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
   }
 }

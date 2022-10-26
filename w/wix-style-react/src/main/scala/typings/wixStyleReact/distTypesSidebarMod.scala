@@ -204,6 +204,8 @@ object distTypesSidebarMod {
   
   trait SidebarItemProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var disable: js.UndefOr[Boolean] = js.undefined
     
     var innerMenu: js.UndefOr[js.Array[ReactNode]] = js.undefined
@@ -222,6 +224,10 @@ object distTypesSidebarMod {
     }
     
     extension [Self <: SidebarItemProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
@@ -249,6 +255,8 @@ object distTypesSidebarMod {
   
   trait SidebarProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var classNames: js.UndefOr[SidebarClassNames] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -267,6 +275,10 @@ object distTypesSidebarMod {
     }
     
     extension [Self <: SidebarProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassNames(value: SidebarClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       

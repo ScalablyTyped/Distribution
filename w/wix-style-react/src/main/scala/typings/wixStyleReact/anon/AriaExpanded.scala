@@ -1,5 +1,6 @@
 package typings.wixStyleReact.anon
 
+import typings.react.mod.ReactNode
 import typings.wixStyleReact.distTypesCommonMod.IconElement
 import typings.wixStyleReact.distTypesCommonMod.TooltipCommonProps
 import typings.wixStyleReact.distTypesTextButtonMod.TextButtonSize
@@ -19,6 +20,8 @@ trait AriaExpanded extends StObject {
   var ariaLabel: js.UndefOr[String] = js.undefined
   
   var ariaLabelledBy: js.UndefOr[String] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -70,6 +73,10 @@ object AriaExpanded {
     inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
     
     inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

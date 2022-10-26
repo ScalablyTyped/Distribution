@@ -6,17 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `16` extends StObject {
   
-  var size: String
+  var height: js.UndefOr[Double] = js.undefined
+  
+  var width: js.UndefOr[Double] = js.undefined
 }
 object `16` {
   
-  inline def apply(size: String): `16` = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
+  inline def apply(): `16` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`16`]
   }
   
   extension [Self <: `16`](x: Self) {
     
-    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

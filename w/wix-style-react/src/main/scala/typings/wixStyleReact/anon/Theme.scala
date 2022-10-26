@@ -16,7 +16,7 @@ trait Theme extends StObject {
   
   var className: js.UndefOr[Validator[js.UndefOr[String | Null]]] = js.undefined
   
-  var classNames: js.UndefOr[Validator[js.UndefOr[`5` | Null]]] = js.undefined
+  var classNames: js.UndefOr[Validator[js.UndefOr[`6` | Null]]] = js.undefined
   
   var dataHook: js.UndefOr[Validator[js.UndefOr[String | Null]]] = js.undefined
   
@@ -49,7 +49,7 @@ object Theme {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setClassNames(value: Validator[js.UndefOr[`5` | Null]]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+    inline def setClassNames(value: Validator[js.UndefOr[`6` | Null]]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
     inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
     

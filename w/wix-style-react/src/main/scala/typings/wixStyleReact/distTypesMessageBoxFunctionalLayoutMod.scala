@@ -29,6 +29,8 @@ object distTypesMessageBoxFunctionalLayoutMod extends Shortcut {
     
     var cancelText: js.UndefOr[ReactNode] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var closeButton: js.UndefOr[Boolean] = js.undefined
     
     var confirmPrefixIcon: js.UndefOr[IconElement] = js.undefined
@@ -97,6 +99,10 @@ object distTypesMessageBoxFunctionalLayoutMod extends Shortcut {
       inline def setCancelText(value: ReactNode): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
       inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       

@@ -4,6 +4,7 @@ import typings.react.mod.EventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import typings.wixStyleReact.distTypesCommonMod.IconElement
 import org.scalablytyped.runtime.StObject
@@ -142,6 +143,8 @@ object distTypesBadgeMod {
   
   trait BadgeProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -170,6 +173,10 @@ object distTypesBadgeMod {
     }
     
     extension [Self <: BadgeProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

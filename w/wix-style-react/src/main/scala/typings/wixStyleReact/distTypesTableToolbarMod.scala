@@ -2,6 +2,7 @@ package typings.wixStyleReact
 
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import typings.wixStyleReact.anon.PartialTableToolbarProps
 import typings.wixStyleReact.anon.WeakValidationMapTableToo
@@ -138,6 +139,8 @@ object distTypesTableToolbarMod {
   
   trait DividerProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -151,6 +154,10 @@ object distTypesTableToolbarMod {
     
     extension [Self <: DividerProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -162,6 +169,8 @@ object distTypesTableToolbarMod {
   }
   
   trait ItemGroupProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -177,6 +186,10 @@ object distTypesTableToolbarMod {
     }
     
     extension [Self <: ItemGroupProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -194,6 +207,8 @@ object distTypesTableToolbarMod {
   
   trait ItemProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -208,6 +223,10 @@ object distTypesTableToolbarMod {
     }
     
     extension [Self <: ItemProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -225,6 +244,8 @@ object distTypesTableToolbarMod {
   
   trait LabelProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -238,6 +259,10 @@ object distTypesTableToolbarMod {
     
     extension [Self <: LabelProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -249,6 +274,8 @@ object distTypesTableToolbarMod {
   }
   
   trait SelectedCountProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -263,6 +290,10 @@ object distTypesTableToolbarMod {
     
     extension [Self <: SelectedCountProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -274,6 +305,8 @@ object distTypesTableToolbarMod {
   }
   
   trait TableToolbarProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -289,6 +322,10 @@ object distTypesTableToolbarMod {
     }
     
     extension [Self <: TableToolbarProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -306,6 +343,8 @@ object distTypesTableToolbarMod {
   
   trait TitleProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -318,6 +357,10 @@ object distTypesTableToolbarMod {
     }
     
     extension [Self <: TitleProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

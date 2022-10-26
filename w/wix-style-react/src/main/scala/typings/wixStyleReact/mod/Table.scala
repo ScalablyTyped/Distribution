@@ -4,7 +4,7 @@ import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.wixStyleReact.anon.DataHookString
 import typings.wixStyleReact.anon.DataHookTitleBarDisplay
-import typings.wixStyleReact.anon.`4`
+import typings.wixStyleReact.anon.`5`
 import typings.wixStyleReact.distTypesEmptyStateMod.EmptyStateProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,13 +38,13 @@ object Table {
   
   @JSImport("wix-style-react", "Table.SubToolbar")
   @js.native
-  def SubToolbar: FunctionComponent[`4`] = js.native
-  inline def SubToolbar_=(x: FunctionComponent[`4`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubToolbar")(x.asInstanceOf[js.Any])
+  def SubToolbar: FunctionComponent[`5`] = js.native
+  inline def SubToolbar_=(x: FunctionComponent[`5`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubToolbar")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Table.Titlebar")
   @js.native
-  def Titlebar: FC[`4`] = js.native
-  inline def Titlebar_=(x: FC[`4`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Titlebar")(x.asInstanceOf[js.Any])
+  def Titlebar: FC[`5`] = js.native
+  inline def Titlebar_=(x: FC[`5`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Titlebar")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Table.ToolbarContainer")
   @js.native

@@ -63,8 +63,8 @@ object puppeteerCoreStrings {
   inline def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
-  sealed trait `1045629` extends StObject
-  inline def `1045629`: `1045629` = "1045629".asInstanceOf[`1045629`]
+  sealed trait `1056772` extends StObject
+  inline def `1056772`: `1056772` = "1056772".asInstanceOf[`1056772`]
   
   @js.native
   sealed trait `2`
@@ -3613,6 +3613,14 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait StorageDotgetInterestGroupDetails extends StObject
   inline def StorageDotgetInterestGroupDetails: StorageDotgetInterestGroupDetails = "Storage.getInterestGroupDetails".asInstanceOf[StorageDotgetInterestGroupDetails]
+  
+  @js.native
+  sealed trait StorageDotgetSharedStorageEntries extends StObject
+  inline def StorageDotgetSharedStorageEntries: StorageDotgetSharedStorageEntries = "Storage.getSharedStorageEntries".asInstanceOf[StorageDotgetSharedStorageEntries]
+  
+  @js.native
+  sealed trait StorageDotgetSharedStorageMetadata extends StObject
+  inline def StorageDotgetSharedStorageMetadata: StorageDotgetSharedStorageMetadata = "Storage.getSharedStorageMetadata".asInstanceOf[StorageDotgetSharedStorageMetadata]
   
   @js.native
   sealed trait StorageDotgetStorageKeyForFrame extends StObject

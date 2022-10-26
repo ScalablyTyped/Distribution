@@ -4,6 +4,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -60,6 +61,8 @@ object distTypesModalMod {
     var appElement: js.UndefOr[String] = js.undefined
     
     var borderRadius: js.UndefOr[Double] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var closeTimeoutMS: js.UndefOr[Double] = js.undefined
     
@@ -134,6 +137,10 @@ object distTypesModalMod {
       inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCloseTimeoutMS(value: Double): Self = StObject.set(x, "closeTimeoutMS", value.asInstanceOf[js.Any])
       

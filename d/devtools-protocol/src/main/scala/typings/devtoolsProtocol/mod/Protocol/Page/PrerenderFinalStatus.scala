@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Activated
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Destroyed
   - typings.devtoolsProtocol.devtoolsProtocolStrings.LowEndDevice
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.CrossOriginRedirect
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.CrossOriginNavigation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidSchemeRedirect
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidSchemeNavigation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InProgressNavigation
@@ -44,6 +42,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InactivePageRestriction
   - typings.devtoolsProtocol.devtoolsProtocolStrings.StartFailed
   - typings.devtoolsProtocol.devtoolsProtocolStrings.TimeoutBackgrounded
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.CrossSiteRedirect
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.CrossSiteNavigation
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginRedirect
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginNavigation
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginRedirectNotOptIn
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginNavigationNotOptIn
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationParameterMismatch
 */
 trait PrerenderFinalStatus extends StObject
 object PrerenderFinalStatus {
@@ -51,6 +56,8 @@ object PrerenderFinalStatus {
   inline def Activated: typings.devtoolsProtocol.devtoolsProtocolStrings.Activated = "Activated".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Activated]
   
   inline def ActivatedBeforeStarted: typings.devtoolsProtocol.devtoolsProtocolStrings.ActivatedBeforeStarted = "ActivatedBeforeStarted".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ActivatedBeforeStarted]
+  
+  inline def ActivationNavigationParameterMismatch: typings.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationParameterMismatch = "ActivationNavigationParameterMismatch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationParameterMismatch]
   
   inline def AudioOutputDeviceRequested: typings.devtoolsProtocol.devtoolsProtocolStrings.AudioOutputDeviceRequested = "AudioOutputDeviceRequested".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.AudioOutputDeviceRequested]
   
@@ -60,9 +67,9 @@ object PrerenderFinalStatus {
   
   inline def ClientCertRequested: typings.devtoolsProtocol.devtoolsProtocolStrings.ClientCertRequested = "ClientCertRequested".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ClientCertRequested]
   
-  inline def CrossOriginNavigation: typings.devtoolsProtocol.devtoolsProtocolStrings.CrossOriginNavigation = "CrossOriginNavigation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CrossOriginNavigation]
+  inline def CrossSiteNavigation: typings.devtoolsProtocol.devtoolsProtocolStrings.CrossSiteNavigation = "CrossSiteNavigation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CrossSiteNavigation]
   
-  inline def CrossOriginRedirect: typings.devtoolsProtocol.devtoolsProtocolStrings.CrossOriginRedirect = "CrossOriginRedirect".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CrossOriginRedirect]
+  inline def CrossSiteRedirect: typings.devtoolsProtocol.devtoolsProtocolStrings.CrossSiteRedirect = "CrossSiteRedirect".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CrossSiteRedirect]
   
   inline def DataSaverEnabled: typings.devtoolsProtocol.devtoolsProtocolStrings.DataSaverEnabled = "DataSaverEnabled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.DataSaverEnabled]
   
@@ -111,6 +118,14 @@ object PrerenderFinalStatus {
   inline def RendererProcessCrashed: typings.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessCrashed = "RendererProcessCrashed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessCrashed]
   
   inline def RendererProcessKilled: typings.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessKilled = "RendererProcessKilled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessKilled]
+  
+  inline def SameSiteCrossOriginNavigation: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginNavigation = "SameSiteCrossOriginNavigation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginNavigation]
+  
+  inline def SameSiteCrossOriginNavigationNotOptIn: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginNavigationNotOptIn = "SameSiteCrossOriginNavigationNotOptIn".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginNavigationNotOptIn]
+  
+  inline def SameSiteCrossOriginRedirect: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginRedirect = "SameSiteCrossOriginRedirect".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginRedirect]
+  
+  inline def SameSiteCrossOriginRedirectNotOptIn: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginRedirectNotOptIn = "SameSiteCrossOriginRedirectNotOptIn".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginRedirectNotOptIn]
   
   inline def SslCertificateError: typings.devtoolsProtocol.devtoolsProtocolStrings.SslCertificateError = "SslCertificateError".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SslCertificateError]
   

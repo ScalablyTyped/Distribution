@@ -4,7 +4,7 @@ import typings.react.mod.Dispatch
 import typings.react.mod.RefObject
 import typings.react.mod.SetStateAction
 import typings.std.HTMLElement
-import typings.wixStyleReact.anon.`19`
+import typings.wixStyleReact.anon.`20`
 import typings.wixStyleReact.distTypesProvidersUseCollapseTypesMod.AssignableRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +26,7 @@ object distTypesProvidersUseCollapseUtilsMod {
   inline def getAutoHeightDuration(height: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoHeightDuration")(height.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def getElementHeight(el: RefObject[HTMLElement]): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementHeight")(el.asInstanceOf[js.Any]).asInstanceOf[String | Double]
-  inline def getElementHeight(el: `19`): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementHeight")(el.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  inline def getElementHeight(el: `20`): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementHeight")(el.asInstanceOf[js.Any]).asInstanceOf[String | Double]
   
   inline def mergeRefs[RefValueType](refs: (js.UndefOr[AssignableRef[RefValueType] | Null])*): (js.Function1[/* node */ Any, Unit]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")(refs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[(js.Function1[/* node */ Any, Unit]) | Null]
   

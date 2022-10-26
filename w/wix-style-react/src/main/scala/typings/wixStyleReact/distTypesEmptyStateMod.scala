@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.wixStyleReact.anon.`5`
+import typings.wixStyleReact.anon.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +42,7 @@ object distTypesEmptyStateMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var classNames: js.UndefOr[`5`] = js.undefined
+    var classNames: js.UndefOr[`6`] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
     
@@ -75,7 +75,7 @@ object distTypesEmptyStateMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClassNames(value: `5`): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: `6`): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
       inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       

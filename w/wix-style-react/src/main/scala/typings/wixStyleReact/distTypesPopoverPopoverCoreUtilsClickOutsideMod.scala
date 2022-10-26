@@ -1,6 +1,7 @@
 package typings.wixStyleReact
 
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.std.AddEventListenerOptions
 import typings.std.Event
@@ -58,6 +59,8 @@ object distTypesPopoverPopoverCoreUtilsClickOutsideMod {
   
   trait ClickOutsideProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /** Elements with this class will not trigger onClickOutside callback */
     var excludeClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -78,6 +81,10 @@ object distTypesPopoverPopoverCoreUtilsClickOutsideMod {
     }
     
     extension [Self <: ClickOutsideProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setExcludeClass(value: String | js.Array[String]): Self = StObject.set(x, "excludeClass", value.asInstanceOf[js.Any])
       

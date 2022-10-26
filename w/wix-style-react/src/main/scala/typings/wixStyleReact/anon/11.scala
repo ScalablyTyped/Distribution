@@ -1,23 +1,20 @@
 package typings.wixStyleReact.anon
 
-import typings.propTypes.mod.Requireable
+import typings.react.mod.ReactNode
+import typings.wixStyleReact.wixStyleReactBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait `11` extends StObject {
   
-  var children: Requireable[Any]
-}
-object `11` {
+  var disabled: `true` = js.native
   
-  inline def apply(children: Requireable[Any]): `11` = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`11`]
-  }
+  var id: String | Double = js.native
   
-  extension [Self <: `11`](x: Self) {
-    
-    inline def setChildren(value: Requireable[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-  }
+  var overrideOptionStyle: `true` = js.native
+  
+  def value(): ReactNode = js.native
+  def value(props: PartialListItemEditablePr): ReactNode = js.native
 }

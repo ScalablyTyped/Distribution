@@ -20,6 +20,8 @@ trait Border extends StObject {
   
   var border: js.UndefOr[Boolean] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var dataHook: js.UndefOr[String] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -52,6 +54,10 @@ object Border {
     inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     

@@ -2,6 +2,8 @@ package typings.wixStyleReact
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
+import typings.std.Event
+import typings.wixStyleReact.anon.Open
 import typings.wixStyleReact.wixStyleReactStrings.checkbox
 import typings.wixStyleReact.wixStyleReactStrings.radio
 import typings.wixStyleReact.wixStyleReactStrings.toggle
@@ -24,6 +26,8 @@ object distTypesSelectableAccordionItemMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    var onClick: js.UndefOr[js.Function2[/* e */ Event, /* param1 */ Open, Unit]] = js.undefined
+    
     var subtitle: js.UndefOr[ReactNode] = js.undefined
     
     var title: js.UndefOr[ReactNode] = js.undefined
@@ -45,6 +49,10 @@ object distTypesSelectableAccordionItemMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
+      inline def setOnClick(value: (/* e */ Event, /* param1 */ Open) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
       inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
       inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
@@ -59,7 +67,7 @@ object distTypesSelectableAccordionItemMod {
     extends StObject
        with SelectableAccordionItemCommonProps {
     
-    var onChange: js.UndefOr[js.Function2[/* idx */ Double, /* open */ Boolean, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function3[/* e */ Event, /* idx */ Double, /* open */ Boolean, Unit]] = js.undefined
     
     var open: js.UndefOr[Boolean] = js.undefined
     
@@ -74,7 +82,7 @@ object distTypesSelectableAccordionItemMod {
     
     extension [Self <: SelectableAccordionItemProps](x: Self) {
       
-      inline def setOnChange(value: (/* idx */ Double, /* open */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* e */ Event, /* idx */ Double, /* open */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       

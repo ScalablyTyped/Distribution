@@ -6,19 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `14` extends StObject {
   
-  var date: js.Date | Null
+  var className: Any
 }
 object `14` {
   
-  inline def apply(): `14` = {
-    val __obj = js.Dynamic.literal(date = null)
+  inline def apply(className: Any): `14` = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
     __obj.asInstanceOf[`14`]
   }
   
   extension [Self <: `14`](x: Self) {
     
-    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
-    
-    inline def setDateNull: Self = StObject.set(x, "date", null)
+    inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
   }
 }

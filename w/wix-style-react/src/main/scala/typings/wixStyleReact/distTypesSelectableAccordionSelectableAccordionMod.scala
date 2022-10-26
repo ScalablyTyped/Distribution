@@ -82,6 +82,7 @@ object distTypesSelectableAccordionSelectableAccordionMod {
         * - `initiallyOpen`: Whether the item is initially open
         * - `open`: Whether the item is open
         * - `disabled`: Whether the item is disabled
+        * - `onClick`: A callback which is invoked when item's selection is changed
         * */
       @JSImport("wix-style-react/dist/types/SelectableAccordion/SelectableAccordion", "default.propTypes.items")
       @js.native

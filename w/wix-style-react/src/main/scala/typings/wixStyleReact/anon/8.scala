@@ -1,12 +1,13 @@
 package typings.wixStyleReact.anon
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `8` extends StObject {
   
-  var skin: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[ReactNode] = js.undefined
 }
 object `8` {
   
@@ -17,8 +18,8 @@ object `8` {
   
   extension [Self <: `8`](x: Self) {
     
-    inline def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

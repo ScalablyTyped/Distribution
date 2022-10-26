@@ -1871,6 +1871,7 @@
 | 0.0 | [dav](./d/dav) | WebDAV, CalDAV, and CardDAV client for nodejs and 
 | 0.0 | [dayjs](./d/dayjs) | 2KB immutable date time library alternative to Mom
 | 0.0 | [dayjs-precise-range](./d/dayjs-precise-range) | This is a plugin for the dayjs to display date/tim
+| 0.0 | [dayjs-recur](./d/dayjs-recur) | A Day.js plugin for matching and generating recurr
 | 0.0 | [dayzed](./d/dayzed) | Primitives to build simple, flexible, WAI-ARIA com
 | 0.0 | [db-errors](./d/db-errors) | Unified node.js error API for mysql, postgres and 
 | 0.0 | [db-hafas-stations](./d/db-hafas-stations) | A list of DB stations, taken from HAFAS.
@@ -10620,6 +10621,7 @@
 | 0.0 | [umijs__ssr-darkreader](./u/umijs__ssr-darkreader) | Dark mode for every website
 | 0.0 | [umijs__use-params](./u/umijs__use-params) | -
 | 0.0 | [umtrack-wx](./u/umtrack-wx) | 微信小程序友盟统计SDK
+| 0.0 | [umzug](./u/umzug) | Framework-agnostic migration tool for Node
 | 0.0 | [unbzip2-stream](./u/unbzip2-stream) | streaming unbzip2 implementation in pure javascrip
 | 0.0 | [unc-path-regex](./u/unc-path-regex) | Regular expression for testing if a file path is a
 | 0.0 | [uncontrollable](./u/uncontrollable) | Wrap a controlled react component, to allow specif
@@ -11430,6 +11432,7 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
+| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman

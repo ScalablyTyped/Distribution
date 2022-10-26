@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PropTypes extends StObject {
   
-  def apply(param0: `12`): typings.react.mod.global.JSX.Element = js.native
+  def apply(param0: `13`): typings.react.mod.global.JSX.Element = js.native
   
   var displayName: String = js.native
   

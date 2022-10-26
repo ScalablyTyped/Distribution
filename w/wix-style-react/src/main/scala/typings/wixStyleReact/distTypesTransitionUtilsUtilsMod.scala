@@ -3,7 +3,7 @@ package typings.wixStyleReact
 import org.scalablytyped.runtime.StringDictionary
 import typings.wixStyleReact.anon.AccentColor
 import typings.wixStyleReact.anon.Exit
-import typings.wixStyleReact.anon.`15`
+import typings.wixStyleReact.anon.`16`
 import typings.wixStyleReact.distTypesTransitionConstantsMod.TransitionStyles
 import typings.wixStyleReact.distTypesTransitionTransitionDottypesMod.EnterAnimation
 import typings.wixStyleReact.distTypesTransitionTransitionDottypesMod.ExitAnimation
@@ -29,8 +29,8 @@ object distTypesTransitionUtilsUtilsMod {
   inline def getTimeout(enterAnimation: EnterAnimation): Exit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeout")(enterAnimation.asInstanceOf[js.Any]).asInstanceOf[Exit]
   inline def getTimeout(enterAnimation: EnterAnimation, exitAnimation: ExitAnimation): Exit = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeout")(enterAnimation.asInstanceOf[js.Any], exitAnimation.asInstanceOf[js.Any])).asInstanceOf[Exit]
   
-  inline def getTransitionStyles(param0: `15`): TransitionStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[TransitionStyles]
-  inline def getTransitionStyles(param0: `15`, enterAnimation: Unit, exitAnimation: ExitAnimation): TransitionStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionStyles")(param0.asInstanceOf[js.Any], enterAnimation.asInstanceOf[js.Any], exitAnimation.asInstanceOf[js.Any])).asInstanceOf[TransitionStyles]
-  inline def getTransitionStyles(param0: `15`, enterAnimation: EnterAnimation): TransitionStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionStyles")(param0.asInstanceOf[js.Any], enterAnimation.asInstanceOf[js.Any])).asInstanceOf[TransitionStyles]
-  inline def getTransitionStyles(param0: `15`, enterAnimation: EnterAnimation, exitAnimation: ExitAnimation): TransitionStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionStyles")(param0.asInstanceOf[js.Any], enterAnimation.asInstanceOf[js.Any], exitAnimation.asInstanceOf[js.Any])).asInstanceOf[TransitionStyles]
+  inline def getTransitionStyles(param0: `16`): TransitionStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionStyles")(param0.asInstanceOf[js.Any]).asInstanceOf[TransitionStyles]
+  inline def getTransitionStyles(param0: `16`, enterAnimation: Unit, exitAnimation: ExitAnimation): TransitionStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionStyles")(param0.asInstanceOf[js.Any], enterAnimation.asInstanceOf[js.Any], exitAnimation.asInstanceOf[js.Any])).asInstanceOf[TransitionStyles]
+  inline def getTransitionStyles(param0: `16`, enterAnimation: EnterAnimation): TransitionStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionStyles")(param0.asInstanceOf[js.Any], enterAnimation.asInstanceOf[js.Any])).asInstanceOf[TransitionStyles]
+  inline def getTransitionStyles(param0: `16`, enterAnimation: EnterAnimation, exitAnimation: ExitAnimation): TransitionStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionStyles")(param0.asInstanceOf[js.Any], enterAnimation.asInstanceOf[js.Any], exitAnimation.asInstanceOf[js.Any])).asInstanceOf[TransitionStyles]
 }

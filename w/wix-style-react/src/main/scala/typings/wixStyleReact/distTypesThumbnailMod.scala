@@ -35,6 +35,8 @@ object distTypesThumbnailMod {
     
     var backgroundImage: js.UndefOr[ReactNode] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var contentAlignment: js.UndefOr[ThumbnailContentAlignment] = js.undefined
@@ -78,6 +80,10 @@ object distTypesThumbnailMod {
       inline def setBackgroundImage(value: ReactNode): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
       
       inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

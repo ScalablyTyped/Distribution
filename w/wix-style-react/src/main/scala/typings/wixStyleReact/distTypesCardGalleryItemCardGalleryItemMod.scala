@@ -9,7 +9,7 @@ import typings.react.mod.global.JSX.Element
 import typings.wixStyleReact.anon.DisabledMessage
 import typings.wixStyleReact.anon.IsHovered
 import typings.wixStyleReact.anon.LabelOnClick
-import typings.wixStyleReact.anon.`2`
+import typings.wixStyleReact.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,13 +42,13 @@ object distTypesCardGalleryItemCardGalleryItemMod {
       
       @JSImport("wix-style-react/dist/types/CardGalleryItem/CardGalleryItem", "default.defaultProps.primaryActionProps")
       @js.native
-      def primaryActionProps: `2` = js.native
-      inline def primaryActionProps_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryActionProps")(x.asInstanceOf[js.Any])
+      def primaryActionProps: `3` = js.native
+      inline def primaryActionProps_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryActionProps")(x.asInstanceOf[js.Any])
       
       @JSImport("wix-style-react/dist/types/CardGalleryItem/CardGalleryItem", "default.defaultProps.secondaryActionProps")
       @js.native
-      def secondaryActionProps: `2` = js.native
-      inline def secondaryActionProps_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryActionProps")(x.asInstanceOf[js.Any])
+      def secondaryActionProps: `3` = js.native
+      inline def secondaryActionProps_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryActionProps")(x.asInstanceOf[js.Any])
       
       @JSImport("wix-style-react/dist/types/CardGalleryItem/CardGalleryItem", "default.defaultProps.size")
       @js.native

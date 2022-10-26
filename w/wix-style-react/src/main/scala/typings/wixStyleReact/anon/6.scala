@@ -6,17 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `6` extends StObject {
   
-  def close(): Unit
+  var imageContainer: js.UndefOr[String] = js.undefined
 }
 object `6` {
   
-  inline def apply(close: () => Unit): `6` = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
+  inline def apply(): `6` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`6`]
   }
   
   extension [Self <: `6`](x: Self) {
     
-    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setImageContainer(value: String): Self = StObject.set(x, "imageContainer", value.asInstanceOf[js.Any])
+    
+    inline def setImageContainerUndefined: Self = StObject.set(x, "imageContainer", js.undefined)
   }
 }

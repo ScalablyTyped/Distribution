@@ -10,6 +10,7 @@ import typings.react.mod.ValidationMap
 import typings.wixStyleReact.anon.PartialCustomModalLayoutP
 import typings.wixStyleReact.anon.TooltipCommonPropscontent
 import typings.wixStyleReact.anon.WeakValidationMapCustomMo
+import typings.wixStyleReact.anon.`1`
 import typings.wixStyleReact.distTypesBaseModalLayoutMod.BaseModalLayoutProps
 import typings.wixStyleReact.distTypesButtonButtonDottypesMod.ButtonProps
 import typings.wixStyleReact.distTypesButtonButtonDottypesMod.ButtonSize
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesCustomModalLayoutMod {
   
-  /* Inlined react.react.FC<wix-style-react.wix-style-react/dist/types/CustomModalLayout.CustomModalLayoutProps> & {  Title :react.react.FunctionComponent<{}>} */
+  /* Inlined react.react.FC<wix-style-react.wix-style-react/dist/types/CustomModalLayout.CustomModalLayoutProps> & {  Title :react.react.FunctionComponent<{  children :react.react.ReactNode | undefined}>} */
   object default {
     
     inline def apply(props: CustomModalLayoutProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
@@ -34,8 +35,8 @@ object distTypesCustomModalLayoutMod {
     
     @JSImport("wix-style-react/dist/types/CustomModalLayout", "default.Title")
     @js.native
-    def Title: FunctionComponent[js.Object] = js.native
-    inline def Title_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+    def Title: FunctionComponent[`1`] = js.native
+    inline def Title_=(x: FunctionComponent[`1`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/types/CustomModalLayout", "default.contextTypes")
     @js.native

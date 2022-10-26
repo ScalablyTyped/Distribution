@@ -9,6 +9,7 @@ import typings.propTypes.mod.ValidationMap
 import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
 import typings.wixStyleReact.anon.Height
+import typings.wixStyleReact.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ object distTypesCustomModalLayoutCustomModalLayoutMod {
     
     @JSImport("wix-style-react/dist/types/CustomModalLayout/CustomModalLayout", "default.Title")
     @js.native
-    val Title: FunctionComponent[js.Object] = js.native
+    val Title: FunctionComponent[`1`] = js.native
     
     object defaultProps {
       

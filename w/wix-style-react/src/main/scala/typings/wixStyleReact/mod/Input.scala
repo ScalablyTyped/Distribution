@@ -29,8 +29,14 @@ object Input {
   
   @JSImport("wix-style-react", "Input.Group")
   @js.native
-  def Group: FC[js.Object] = js.native
-  inline def Group_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+  def Group: FC[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupProps */ Any
+  ] = js.native
+  inline def Group_=(
+    x: FC[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupProps */ Any
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Input.IconAffix")
   @js.native

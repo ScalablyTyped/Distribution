@@ -1,7 +1,7 @@
 package typings.wixStyleReact
 
 import typings.wixStyleReact.anon.DataHookString
-import typings.wixStyleReact.anon.`4`
+import typings.wixStyleReact.anon.`5`
 import typings.wixUiTestUtils.distSrcBaseDriverMod.BaseUniDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ object distTypesDragAndDropDraggableDraggableDotuniDotdriverMod {
     
     def dragOver(details: DataHookString): js.Promise[Unit]
     
-    def endDrag(details: `4`): js.Promise[Unit]
+    def endDrag(details: `5`): js.Promise[Unit]
   }
   object DraggableUniDriver {
     
@@ -26,7 +26,7 @@ object distTypesDragAndDropDraggableDraggableDotuniDotdriverMod {
       click: () => js.Promise[Unit],
       dragOver: DataHookString => js.Promise[Unit],
       element: () => js.Promise[Any],
-      endDrag: `4` => js.Promise[Unit],
+      endDrag: `5` => js.Promise[Unit],
       exists: () => js.Promise[Boolean]
     ): DraggableUniDriver = {
       val __obj = js.Dynamic.literal(beginDrag = js.Any.fromFunction1(beginDrag), click = js.Any.fromFunction0(click), dragOver = js.Any.fromFunction1(dragOver), element = js.Any.fromFunction0(element), endDrag = js.Any.fromFunction1(endDrag), exists = js.Any.fromFunction0(exists))
@@ -39,7 +39,7 @@ object distTypesDragAndDropDraggableDraggableDotuniDotdriverMod {
       
       inline def setDragOver(value: DataHookString => js.Promise[Unit]): Self = StObject.set(x, "dragOver", js.Any.fromFunction1(value))
       
-      inline def setEndDrag(value: `4` => js.Promise[Unit]): Self = StObject.set(x, "endDrag", js.Any.fromFunction1(value))
+      inline def setEndDrag(value: `5` => js.Promise[Unit]): Self = StObject.set(x, "endDrag", js.Any.fromFunction1(value))
     }
   }
 }

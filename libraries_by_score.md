@@ -2071,6 +2071,7 @@
 | 0.7452057012694997 | [micromark-extension-gfm-s](./m/micromark-extension-gfm-strikethrough) | micromark extension to support GFM strikethrough
 | 0.7450268545075153 | [bricks_dot_js](./b/bricks_dot_js) | A blazing fast masonry layout generator for fixed 
 | 0.7448829864346865 | [parse-link-header](./p/parse-link-header) | Parses a link header and returns paging informatio
+| 0.7447895465557295 | [umzug](./u/umzug) | Framework-agnostic migration tool for Node
 | 0.7447752075066613 | [feathersjs__rest-client](./f/feathersjs__rest-client) | REST client services for different Ajax libraries
 | 0.7447198222447582 | [pkg-conf](./p/pkg-conf) | Get namespaced config from the closest package.jso
 | 0.7447166751808663 | [file-selector](./f/file-selector) | Convert DataTransfer object to a list of File obje
@@ -6438,6 +6439,7 @@
 | 0.6212579277943789 | [bunyan](./b/bunyan) | a JSON logging library for node.js services
 | 0.6212068861218673 | [anybar](./a/anybar) | Control the AnyBar app
 | 0.6211650472061877 | [react-twemoji](./r/react-twemoji) | A React wrapper for Twemoji
+| 0.6211410503262046 | [dayjs-recur](./d/dayjs-recur) | A Day.js plugin for matching and generating recurr
 | 0.6211394515743209 | [apollo__utils_dot_keyvalu](./a/apollo__utils_dot_keyvaluecache) | Minimal key-value cache interface
 | 0.6210472253168784 | [lodash_dot_isarray](./l/lodash_dot_isarray) | The lodash method _.isArray exported as a module.
 | 0.6208819826793619 | [draggabilly](./d/draggabilly) | make that shiz draggable
@@ -6564,6 +6566,7 @@
 | 0.6153603940379252 | [randexp](./r/randexp) | Create random strings that match a given regular e
 | 0.6153560379623948 | [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript
 | 0.6153290679396893 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
+| 0.6152816327284444 | [yazl](./y/yazl) | yet another zip library for node
 | 0.6152394529489089 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.6152362174951483 | [barnard59-core](./b/barnard59-core) | Core component of Barnard59 Linked Data pipelines
 | 0.6151520405779876 | [csscolorparser-ts](./c/csscolorparser-ts) | Parser for CSS color strings written in TypeScript

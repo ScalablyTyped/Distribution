@@ -57,6 +57,8 @@ object distTypesMediaOverlayMod {
   
   trait MediaOverlayContentProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var placement: js.UndefOr[MediaOverlayContentPlacement] = js.undefined
     
     var visible: js.UndefOr[MediaOverlayContentVisible] = js.undefined
@@ -69,6 +71,10 @@ object distTypesMediaOverlayMod {
     }
     
     extension [Self <: MediaOverlayContentProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setPlacement(value: MediaOverlayContentPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
@@ -99,6 +105,8 @@ object distTypesMediaOverlayMod {
     
     var borderRadius: js.UndefOr[String | Double] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -127,6 +135,10 @@ object distTypesMediaOverlayMod {
       inline def setBorderRadius(value: String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       
       inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -24,6 +24,8 @@ trait OmitPolyfillPopoverPropss extends StObject {
   
   var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
   
   var customArrow: js.UndefOr[
@@ -108,6 +110,10 @@ object OmitPolyfillPopoverPropss {
     inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
     
     inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

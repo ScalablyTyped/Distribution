@@ -7,6 +7,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.wixStyleReact.anon.PartialHeaderProps
 import typings.wixStyleReact.anon.WeakValidationMapHeaderPr
+import typings.wixStyleReact.anon.`1`
 import typings.wixStyleReact.distTypesBaseModalLayoutLayoutBlocksContentMod.ContentProps
 import typings.wixStyleReact.distTypesBaseModalLayoutLayoutBlocksFooterMod.FooterProps
 import typings.wixStyleReact.distTypesBaseModalLayoutLayoutBlocksFootnoteMod.FootnoteProps
@@ -50,7 +51,7 @@ object distTypesBaseModalLayoutBaseModalLayoutMod {
     inline def Footnote_=(x: FunctionComponent[FootnoteProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footnote")(x.asInstanceOf[js.Any])
     
     /* static member */
-    /* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/types/BaseModalLayout/LayoutBlocks.HeaderProps> & {  Title :react.react.FunctionComponent<{}>} */
+    /* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/types/BaseModalLayout/LayoutBlocks.HeaderProps> & {  Title :react.react.FunctionComponent<{  children :react.react.ReactNode | undefined}>} */
     object Header {
       
       inline def apply(props: HeaderProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
@@ -62,8 +63,8 @@ object distTypesBaseModalLayoutBaseModalLayoutMod {
       
       @JSImport("wix-style-react/dist/types/BaseModalLayout/BaseModalLayout", "default.Header.Title")
       @js.native
-      def Title: FunctionComponent[js.Object] = js.native
-      inline def Title_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+      def Title: FunctionComponent[`1`] = js.native
+      inline def Title_=(x: FunctionComponent[`1`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
       
       @JSImport("wix-style-react/dist/types/BaseModalLayout/BaseModalLayout", "default.Header.contextTypes")
       @js.native

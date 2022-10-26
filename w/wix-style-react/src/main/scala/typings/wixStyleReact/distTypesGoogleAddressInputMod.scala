@@ -70,6 +70,8 @@ object distTypesGoogleAddressInputMod {
     
     var border: js.UndefOr[standard | round | bottomLine | none_] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var clearButton: js.UndefOr[Boolean] = js.undefined
@@ -234,6 +236,10 @@ object distTypesGoogleAddressInputMod {
       inline def setBorder(value: standard | round | bottomLine | none_): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -216,6 +216,11 @@ trait BaseMixin[T] extends StObject {
   
   def renderlet(fn: js.Function1[/* chart */ T, Any]): T = js.native
   
+  def replaceFilter(): Any = js.native
+  def replaceFilter(t: Any): T = js.native
+  @JSName("replaceFilter")
+  var replaceFilter_Original: IGetSet[Any, T] = js.native
+  
   def resetFilterHandler(): js.Function1[/* filters */ js.Array[Any], js.Array[Any]] = js.native
   def resetFilterHandler(t: js.Function1[/* filters */ js.Array[Any], js.Array[Any]]): T = js.native
   @JSName("resetFilterHandler")

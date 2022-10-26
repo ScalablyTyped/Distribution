@@ -11,5 +11,5 @@ trait DisplayName extends StObject {
   
   var displayName: String = js.native
   
-  var propTypes: `11` = js.native
+  var propTypes: `12` = js.native
 }

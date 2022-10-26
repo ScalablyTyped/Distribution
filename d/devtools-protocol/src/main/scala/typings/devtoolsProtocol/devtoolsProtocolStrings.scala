@@ -216,6 +216,12 @@ object devtoolsProtocolStrings {
   inline def ActivatedBeforeStarted: ActivatedBeforeStarted = "ActivatedBeforeStarted".asInstanceOf[ActivatedBeforeStarted]
   
   @js.native
+  sealed trait ActivationNavigationParameterMismatch
+    extends StObject
+       with PrerenderFinalStatus
+  inline def ActivationNavigationParameterMismatch: ActivationNavigationParameterMismatch = "ActivationNavigationParameterMismatch".asInstanceOf[ActivationNavigationParameterMismatch]
+  
+  @js.native
   sealed trait ActivationNavigationsDisallowedForBug1234857
     extends StObject
        with BackForwardCacheNotRestoredReason
@@ -728,20 +734,8 @@ object devtoolsProtocolStrings {
   inline def CrossOriginAccessBasedOnDocumentDomain: CrossOriginAccessBasedOnDocumentDomain = "CrossOriginAccessBasedOnDocumentDomain".asInstanceOf[CrossOriginAccessBasedOnDocumentDomain]
   
   @js.native
-  sealed trait CrossOriginNavigation
-    extends StObject
-       with PrerenderFinalStatus
-  inline def CrossOriginNavigation: CrossOriginNavigation = "CrossOriginNavigation".asInstanceOf[CrossOriginNavigation]
-  
-  @js.native
   sealed trait CrossOriginPortalPostMessageError extends StObject
   inline def CrossOriginPortalPostMessageError: CrossOriginPortalPostMessageError = "CrossOriginPortalPostMessageError".asInstanceOf[CrossOriginPortalPostMessageError]
-  
-  @js.native
-  sealed trait CrossOriginRedirect
-    extends StObject
-       with PrerenderFinalStatus
-  inline def CrossOriginRedirect: CrossOriginRedirect = "CrossOriginRedirect".asInstanceOf[CrossOriginRedirect]
   
   @js.native
   sealed trait CrossOriginWindowAlert
@@ -754,6 +748,18 @@ object devtoolsProtocolStrings {
     extends StObject
        with DeprecationIssueType
   inline def CrossOriginWindowConfirm: CrossOriginWindowConfirm = "CrossOriginWindowConfirm".asInstanceOf[CrossOriginWindowConfirm]
+  
+  @js.native
+  sealed trait CrossSiteNavigation
+    extends StObject
+       with PrerenderFinalStatus
+  inline def CrossSiteNavigation: CrossSiteNavigation = "CrossSiteNavigation".asInstanceOf[CrossSiteNavigation]
+  
+  @js.native
+  sealed trait CrossSiteRedirect
+    extends StObject
+       with PrerenderFinalStatus
+  inline def CrossSiteRedirect: CrossSiteRedirect = "CrossSiteRedirect".asInstanceOf[CrossSiteRedirect]
   
   @js.native
   sealed trait DOM
@@ -2589,6 +2595,30 @@ object devtoolsProtocolStrings {
        with CookieBlockedReason
        with SetCookieBlockedReason
   inline def SamePartyFromCrossPartyContext: SamePartyFromCrossPartyContext = "SamePartyFromCrossPartyContext".asInstanceOf[SamePartyFromCrossPartyContext]
+  
+  @js.native
+  sealed trait SameSiteCrossOriginNavigation
+    extends StObject
+       with PrerenderFinalStatus
+  inline def SameSiteCrossOriginNavigation: SameSiteCrossOriginNavigation = "SameSiteCrossOriginNavigation".asInstanceOf[SameSiteCrossOriginNavigation]
+  
+  @js.native
+  sealed trait SameSiteCrossOriginNavigationNotOptIn
+    extends StObject
+       with PrerenderFinalStatus
+  inline def SameSiteCrossOriginNavigationNotOptIn: SameSiteCrossOriginNavigationNotOptIn = "SameSiteCrossOriginNavigationNotOptIn".asInstanceOf[SameSiteCrossOriginNavigationNotOptIn]
+  
+  @js.native
+  sealed trait SameSiteCrossOriginRedirect
+    extends StObject
+       with PrerenderFinalStatus
+  inline def SameSiteCrossOriginRedirect: SameSiteCrossOriginRedirect = "SameSiteCrossOriginRedirect".asInstanceOf[SameSiteCrossOriginRedirect]
+  
+  @js.native
+  sealed trait SameSiteCrossOriginRedirectNotOptIn
+    extends StObject
+       with PrerenderFinalStatus
+  inline def SameSiteCrossOriginRedirectNotOptIn: SameSiteCrossOriginRedirectNotOptIn = "SameSiteCrossOriginRedirectNotOptIn".asInstanceOf[SameSiteCrossOriginRedirectNotOptIn]
   
   @js.native
   sealed trait SameSiteLax
@@ -6696,6 +6726,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with PermissionsPolicyFeature
   inline def `shared-storage`: `shared-storage` = "shared-storage".asInstanceOf[`shared-storage`]
+  
+  @js.native
+  sealed trait shared_storage
+    extends StObject
+       with StorageType
+  inline def shared_storage: shared_storage = "shared_storage".asInstanceOf[shared_storage]
   
   @js.native
   sealed trait showDistances

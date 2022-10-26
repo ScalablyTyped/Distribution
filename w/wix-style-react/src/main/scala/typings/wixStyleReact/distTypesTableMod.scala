@@ -12,7 +12,7 @@ import typings.wixStyleReact.anon.DataHookString
 import typings.wixStyleReact.anon.DataHookTitleBarDisplay
 import typings.wixStyleReact.anon.Origin
 import typings.wixStyleReact.anon.OriginType
-import typings.wixStyleReact.anon.`4`
+import typings.wixStyleReact.anon.`5`
 import typings.wixStyleReact.distTypesEmptyStateMod.EmptyStateProps
 import typings.wixStyleReact.distTypesTableDataTableMod.DataTableColumn
 import typings.wixStyleReact.distTypesTableDataTableMod.DataTableRowDataHookFn
@@ -54,13 +54,13 @@ object distTypesTableMod {
     
     @JSImport("wix-style-react/dist/types/Table", "default.SubToolbar")
     @js.native
-    def SubToolbar: FunctionComponent[`4`] = js.native
-    inline def SubToolbar_=(x: FunctionComponent[`4`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubToolbar")(x.asInstanceOf[js.Any])
+    def SubToolbar: FunctionComponent[`5`] = js.native
+    inline def SubToolbar_=(x: FunctionComponent[`5`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SubToolbar")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/types/Table", "default.Titlebar")
     @js.native
-    def Titlebar: FC[`4`] = js.native
-    inline def Titlebar_=(x: FC[`4`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Titlebar")(x.asInstanceOf[js.Any])
+    def Titlebar: FC[`5`] = js.native
+    inline def Titlebar_=(x: FC[`5`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Titlebar")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/types/Table", "default.ToolbarContainer")
     @js.native
@@ -91,6 +91,8 @@ object distTypesTableMod {
        with UsedDataTableProps[RowData] {
     
     var columns: js.Array[TableColumn[RowData]]
+    
+    var controlled: js.UndefOr[Boolean] = js.undefined
     
     var dataHook: js.UndefOr[String] = js.undefined
     
@@ -136,6 +138,10 @@ object distTypesTableMod {
       inline def setColumns(value: js.Array[TableColumn[RowData]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsVarargs(value: TableColumn[RowData]*): Self = StObject.set(x, "columns", js.Array(value*))
+      
+      inline def setControlled(value: Boolean): Self = StObject.set(x, "controlled", value.asInstanceOf[js.Any])
+      
+      inline def setControlledUndefined: Self = StObject.set(x, "controlled", js.undefined)
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

@@ -7,8 +7,8 @@ import typings.react.mod.Validator
 import typings.react.mod.global.JSX.Element
 import typings.wixStyleReact.anon.DataHookAny
 import typings.wixStyleReact.anon.TitleBarDisplay
-import typings.wixStyleReact.anon.`12`
-import typings.wixStyleReact.anon.`5`
+import typings.wixStyleReact.anon.`13`
+import typings.wixStyleReact.anon.`6`
 import typings.wixStyleReact.distTypesEmptyStateMod.EmptyStateAlign
 import typings.wixStyleReact.distTypesEmptyStateMod.EmptyStateTheme
 import org.scalablytyped.runtime.StObject
@@ -165,8 +165,8 @@ object distTypesTableComponentsMod {
       
       @JSImport("wix-style-react/dist/types/Table/components", "TableEmptyState.defaultProps.classNames")
       @js.native
-      def classNames: js.UndefOr[`5`] = js.native
-      inline def classNames_=(x: js.UndefOr[`5`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
+      def classNames: js.UndefOr[`6`] = js.native
+      inline def classNames_=(x: js.UndefOr[`6`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
       
       @JSImport("wix-style-react/dist/types/Table/components", "TableEmptyState.defaultProps.dataHook")
       @js.native
@@ -221,8 +221,8 @@ object distTypesTableComponentsMod {
       
       @JSImport("wix-style-react/dist/types/Table/components", "TableEmptyState.propTypes.classNames")
       @js.native
-      def classNames: js.UndefOr[Validator[js.UndefOr[`5` | Null]]] = js.native
-      inline def classNames_=(x: js.UndefOr[Validator[js.UndefOr[`5` | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
+      def classNames: js.UndefOr[Validator[js.UndefOr[`6` | Null]]] = js.native
+      inline def classNames_=(x: js.UndefOr[Validator[js.UndefOr[`6` | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
       
       @JSImport("wix-style-react/dist/types/Table/components", "TableEmptyState.propTypes.dataHook")
       @js.native
@@ -277,7 +277,7 @@ object distTypesTableComponentsMod {
   
   object TableTitleBar {
     
-    inline def apply(param0: `12`): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(param0: `13`): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("wix-style-react/dist/types/Table/components", "TableTitleBar")
     @js.native

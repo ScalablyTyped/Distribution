@@ -64,6 +64,8 @@ object distTypesFloatingHelperMod {
     
     var appendTo: js.UndefOr[FloatingHelperAppendTo] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var content: ReactNode
     
     var dataHook: js.UndefOr[String] = js.undefined
@@ -106,6 +108,10 @@ object distTypesFloatingHelperMod {
       inline def setAppendToFunction1(value: /* s */ Element => Boolean): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
       
       inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

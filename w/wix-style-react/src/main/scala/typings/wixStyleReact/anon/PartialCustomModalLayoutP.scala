@@ -20,6 +20,8 @@ trait PartialCustomModalLayoutP extends StObject {
   
   var actionsSize: js.UndefOr[ButtonSize] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
   
   var content: js.UndefOr[ReactNode] = js.undefined
@@ -80,6 +82,10 @@ object PartialCustomModalLayoutP {
     inline def setActionsSize(value: ButtonSize): Self = StObject.set(x, "actionsSize", value.asInstanceOf[js.Any])
     
     inline def setActionsSizeUndefined: Self = StObject.set(x, "actionsSize", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

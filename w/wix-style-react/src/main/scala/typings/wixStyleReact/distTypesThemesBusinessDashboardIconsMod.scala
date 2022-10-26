@@ -1,7 +1,7 @@
 package typings.wixStyleReact
 
 import typings.react.mod.global.JSX.Element
-import typings.wixStyleReact.anon.`13`
+import typings.wixStyleReact.anon.`14`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +12,5 @@ object distTypesThemesBusinessDashboardIconsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CircleLoaderCheck(param0: `13`): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleLoaderCheck")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CircleLoaderCheck(param0: `14`): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircleLoaderCheck")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -8,14 +8,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header.HeaderProps> & {  Title :react.react.FunctionComponent<{}>} */
+/* Inlined react.react.FunctionComponent<wix-style-react.wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header.HeaderProps> & {  Title :react.react.FunctionComponent<{  children :react.react.ReactNode | undefined}>} */
 @js.native
 trait FunctionComponentHeaderPr extends StObject {
   
   def apply(props: HeaderProps): ReactElement | Null = js.native
   def apply(props: HeaderProps, context: Any): ReactElement | Null = js.native
   
-  var Title: FunctionComponent[js.Object] = js.native
+  var Title: FunctionComponent[`1`] = js.native
   
   var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   

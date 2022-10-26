@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `5` extends StObject {
   
-  var imageContainer: js.UndefOr[String] = js.undefined
+  var dataHook: js.UndefOr[String] = js.undefined
 }
 object `5` {
   
@@ -17,8 +17,8 @@ object `5` {
   
   extension [Self <: `5`](x: Self) {
     
-    inline def setImageContainer(value: String): Self = StObject.set(x, "imageContainer", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    inline def setImageContainerUndefined: Self = StObject.set(x, "imageContainer", js.undefined)
+    inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
   }
 }

@@ -4,7 +4,7 @@ import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
 import typings.wixStyleReact.anon.DisabledDisabledMessage
 import typings.wixStyleReact.anon.HTMLAttributesHTMLDivElem
-import typings.wixStyleReact.anon.`3`
+import typings.wixStyleReact.anon.`4`
 import typings.wixStyleReact.wixStyleReactStrings.medium
 import typings.wixStyleReact.wixStyleReactStrings.small
 import org.scalablytyped.runtime.StObject
@@ -44,7 +44,7 @@ object distTypesCardGalleryItemMod {
     
     var primaryActionProps: DisabledDisabledMessage
     
-    var secondaryActionProps: js.UndefOr[`3`] = js.undefined
+    var secondaryActionProps: js.UndefOr[`4`] = js.undefined
     
     var settingsMenu: js.UndefOr[ReactNode] = js.undefined
     
@@ -109,7 +109,7 @@ object distTypesCardGalleryItemMod {
       
       inline def setPrimaryActionProps(value: DisabledDisabledMessage): Self = StObject.set(x, "primaryActionProps", value.asInstanceOf[js.Any])
       
-      inline def setSecondaryActionProps(value: `3`): Self = StObject.set(x, "secondaryActionProps", value.asInstanceOf[js.Any])
+      inline def setSecondaryActionProps(value: `4`): Self = StObject.set(x, "secondaryActionProps", value.asInstanceOf[js.Any])
       
       inline def setSecondaryActionPropsUndefined: Self = StObject.set(x, "secondaryActionProps", js.undefined)
       
