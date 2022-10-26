@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pollyjs/adapter" : "6.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pollyjs/adapter" : "6.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

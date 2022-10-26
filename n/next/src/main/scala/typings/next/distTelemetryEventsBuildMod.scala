@@ -17,6 +17,7 @@ import typings.next.nextStrings.experimentalSlashoptimizeCss
 import typings.next.nextStrings.nextSlashdynamic
 import typings.next.nextStrings.nextSlashfutureSlashimage
 import typings.next.nextStrings.nextSlashimage
+import typings.next.nextStrings.nextSlashlegacySlashimage
 import typings.next.nextStrings.nextSlashscript
 import typings.next.nextStrings.off
 import typings.next.nextStrings.optimizeFonts
@@ -91,14 +92,14 @@ object distTelemetryEventsBuildMod {
   
   trait EventBuildFeatureUsage_ extends StObject {
     
-    var featureName: nextSlashimage | nextSlashfutureSlashimage | nextSlashscript | nextSlashdynamic | experimentalSlashoptimizeCss | experimentalSlashnextScriptWorkers | optimizeFonts | swcLoader | swcMinify | swcRelay | swcStyledComponents | swcReactRemoveProperties | swcExperimentalDecorators | swcRemoveConsole | swcImportSource | swcEmotion | (/* template literal string: swc/target/${SWC_TARGET_TRIPLE} */ String) | `build-lint`
+    var featureName: nextSlashimage | nextSlashlegacySlashimage | nextSlashfutureSlashimage | nextSlashscript | nextSlashdynamic | experimentalSlashoptimizeCss | experimentalSlashnextScriptWorkers | optimizeFonts | swcLoader | swcMinify | swcRelay | swcStyledComponents | swcReactRemoveProperties | swcExperimentalDecorators | swcRemoveConsole | swcImportSource | swcEmotion | (/* template literal string: swc/target/${SWC_TARGET_TRIPLE} */ String) | `build-lint`
     
     var invocationCount: Double
   }
   object EventBuildFeatureUsage_ {
     
     inline def apply(
-      featureName: nextSlashimage | nextSlashfutureSlashimage | nextSlashscript | nextSlashdynamic | experimentalSlashoptimizeCss | experimentalSlashnextScriptWorkers | optimizeFonts | swcLoader | swcMinify | swcRelay | swcStyledComponents | swcReactRemoveProperties | swcExperimentalDecorators | swcRemoveConsole | swcImportSource | swcEmotion | (/* template literal string: swc/target/${SWC_TARGET_TRIPLE} */ String) | `build-lint`,
+      featureName: nextSlashimage | nextSlashlegacySlashimage | nextSlashfutureSlashimage | nextSlashscript | nextSlashdynamic | experimentalSlashoptimizeCss | experimentalSlashnextScriptWorkers | optimizeFonts | swcLoader | swcMinify | swcRelay | swcStyledComponents | swcReactRemoveProperties | swcExperimentalDecorators | swcRemoveConsole | swcImportSource | swcEmotion | (/* template literal string: swc/target/${SWC_TARGET_TRIPLE} */ String) | `build-lint`,
       invocationCount: Double
     ): EventBuildFeatureUsage_ = {
       val __obj = js.Dynamic.literal(featureName = featureName.asInstanceOf[js.Any], invocationCount = invocationCount.asInstanceOf[js.Any])
@@ -108,7 +109,7 @@ object distTelemetryEventsBuildMod {
     extension [Self <: EventBuildFeatureUsage_](x: Self) {
       
       inline def setFeatureName(
-        value: nextSlashimage | nextSlashfutureSlashimage | nextSlashscript | nextSlashdynamic | experimentalSlashoptimizeCss | experimentalSlashnextScriptWorkers | optimizeFonts | swcLoader | swcMinify | swcRelay | swcStyledComponents | swcReactRemoveProperties | swcExperimentalDecorators | swcRemoveConsole | swcImportSource | swcEmotion | (/* template literal string: swc/target/${SWC_TARGET_TRIPLE} */ String) | `build-lint`
+        value: nextSlashimage | nextSlashlegacySlashimage | nextSlashfutureSlashimage | nextSlashscript | nextSlashdynamic | experimentalSlashoptimizeCss | experimentalSlashnextScriptWorkers | optimizeFonts | swcLoader | swcMinify | swcRelay | swcStyledComponents | swcReactRemoveProperties | swcExperimentalDecorators | swcRemoveConsole | swcImportSource | swcEmotion | (/* template literal string: swc/target/${SWC_TARGET_TRIPLE} */ String) | `build-lint`
       ): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
       
       inline def setInvocationCount(value: Double): Self = StObject.set(x, "invocationCount", value.asInstanceOf[js.Any])

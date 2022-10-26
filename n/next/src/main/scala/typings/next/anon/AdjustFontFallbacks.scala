@@ -8,12 +8,12 @@ trait AdjustFontFallbacks extends StObject {
   
   var adjustFontFallbacks: js.UndefOr[Boolean] = js.undefined
   
-  var isLikeServerless: Boolean
+  var adjustFontFallbacksWithSizeAdjust: js.UndefOr[Boolean] = js.undefined
 }
 object AdjustFontFallbacks {
   
-  inline def apply(isLikeServerless: Boolean): AdjustFontFallbacks = {
-    val __obj = js.Dynamic.literal(isLikeServerless = isLikeServerless.asInstanceOf[js.Any])
+  inline def apply(): AdjustFontFallbacks = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdjustFontFallbacks]
   }
   
@@ -23,6 +23,8 @@ object AdjustFontFallbacks {
     
     inline def setAdjustFontFallbacksUndefined: Self = StObject.set(x, "adjustFontFallbacks", js.undefined)
     
-    inline def setIsLikeServerless(value: Boolean): Self = StObject.set(x, "isLikeServerless", value.asInstanceOf[js.Any])
+    inline def setAdjustFontFallbacksWithSizeAdjust(value: Boolean): Self = StObject.set(x, "adjustFontFallbacksWithSizeAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setAdjustFontFallbacksWithSizeAdjustUndefined: Self = StObject.set(x, "adjustFontFallbacksWithSizeAdjust", js.undefined)
   }
 }

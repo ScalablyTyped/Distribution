@@ -1,6 +1,7 @@
 package typings.next.anon
 
 import typings.next.distServerAppRenderMod.FlightRouterState
+import typings.next.distServerAppRenderMod.FlightSegmentPath
 import typings.next.distSharedLibAppRouterContextMod.ChildSegmentMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +21,7 @@ trait ChildNodes extends StObject {
   
   var rootLayoutIncluded: Boolean
   
-  var segmentPath: typings.next.distServerAppRenderMod.FlightSegmentPath
+  var segmentPath: FlightSegmentPath
   
   var tree: FlightRouterState
   
@@ -34,7 +35,7 @@ object ChildNodes {
     parallelRouterKey: String,
     path: String,
     rootLayoutIncluded: Boolean,
-    segmentPath: typings.next.distServerAppRenderMod.FlightSegmentPath,
+    segmentPath: FlightSegmentPath,
     tree: FlightRouterState,
     url: String
   ): ChildNodes = {
@@ -58,7 +59,7 @@ object ChildNodes {
     
     inline def setRootLayoutIncluded(value: Boolean): Self = StObject.set(x, "rootLayoutIncluded", value.asInstanceOf[js.Any])
     
-    inline def setSegmentPath(value: typings.next.distServerAppRenderMod.FlightSegmentPath): Self = StObject.set(x, "segmentPath", value.asInstanceOf[js.Any])
+    inline def setSegmentPath(value: FlightSegmentPath): Self = StObject.set(x, "segmentPath", value.asInstanceOf[js.Any])
     
     inline def setSegmentPathVarargs(value: Any*): Self = StObject.set(x, "segmentPath", js.Array(value*))
     

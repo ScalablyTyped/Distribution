@@ -421,6 +421,8 @@ object anon {
     
     var noValidate: js.UndefOr[Boolean] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLFormElement]] = js.undefined
@@ -987,6 +989,10 @@ object anon {
       inline def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
       
       inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLFormElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

@@ -652,6 +652,8 @@ object typesTypesMod {
     
     var name: js.UndefOr[String] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     /**
       * An optional list of keys that should be omitted from your `data` item
       * before passing it to the suggestion `Option`. This is useful if you have
@@ -1490,6 +1492,10 @@ object typesTypesMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOmitKeys(value: js.Array[String]): Self = StObject.set(x, "omitKeys", value.asInstanceOf[js.Any])
       

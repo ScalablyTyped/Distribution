@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object linkMod extends Shortcut {
   
+  /**
+    * React Component that enables client-side transitions between routes.
+    */
   @JSImport("next/link", JSImport.Default)
   @js.native
   val default: ForwardRefExoticComponent[OmitAnchorHTMLAttributesH] = js.native

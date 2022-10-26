@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdBreak extends StObject {
   
   /**
-    * The SCTE-35 ad insertion type. Accepted value: SPLICE_INSERT.
+    * The SCTE-35 ad insertion type. Accepted value: SPLICE_INSERT, TIME_SIGNAL.
     */
   var MessageType: js.UndefOr[typings.awsSdk.clientsMediatailorMod.MessageType] = js.undefined
   

@@ -26,6 +26,8 @@ trait RequiredImageConfigComple extends StObject {
   
   var loader: LoaderValue
   
+  var loaderFile: String
+  
   var minimumCacheTTL: Double
   
   var path: String
@@ -45,12 +47,13 @@ object RequiredImageConfigComple {
     formats: js.Array[ImageFormat],
     imageSizes: js.Array[Double],
     loader: LoaderValue,
+    loaderFile: String,
     minimumCacheTTL: Double,
     path: String,
     remotePatterns: js.Array[RemotePattern],
     unoptimized: Boolean
   ): RequiredImageConfigComple = {
-    val __obj = js.Dynamic.literal(contentSecurityPolicy = contentSecurityPolicy.asInstanceOf[js.Any], dangerouslyAllowSVG = dangerouslyAllowSVG.asInstanceOf[js.Any], deviceSizes = deviceSizes.asInstanceOf[js.Any], disableStaticImages = disableStaticImages.asInstanceOf[js.Any], domains = domains.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], imageSizes = imageSizes.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], minimumCacheTTL = minimumCacheTTL.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], remotePatterns = remotePatterns.asInstanceOf[js.Any], unoptimized = unoptimized.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentSecurityPolicy = contentSecurityPolicy.asInstanceOf[js.Any], dangerouslyAllowSVG = dangerouslyAllowSVG.asInstanceOf[js.Any], deviceSizes = deviceSizes.asInstanceOf[js.Any], disableStaticImages = disableStaticImages.asInstanceOf[js.Any], domains = domains.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], imageSizes = imageSizes.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], loaderFile = loaderFile.asInstanceOf[js.Any], minimumCacheTTL = minimumCacheTTL.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], remotePatterns = remotePatterns.asInstanceOf[js.Any], unoptimized = unoptimized.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredImageConfigComple]
   }
   
@@ -79,6 +82,8 @@ object RequiredImageConfigComple {
     inline def setImageSizesVarargs(value: Double*): Self = StObject.set(x, "imageSizes", js.Array(value*))
     
     inline def setLoader(value: LoaderValue): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    
+    inline def setLoaderFile(value: String): Self = StObject.set(x, "loaderFile", value.asInstanceOf[js.Any])
     
     inline def setMinimumCacheTTL(value: Double): Self = StObject.set(x, "minimumCacheTTL", value.asInstanceOf[js.Any])
     

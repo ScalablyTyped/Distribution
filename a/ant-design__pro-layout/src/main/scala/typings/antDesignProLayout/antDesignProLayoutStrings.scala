@@ -656,6 +656,10 @@ object antDesignProLayoutStrings {
   inline def no: no = "no".asInstanceOf[no]
   
   @js.native
+  sealed trait nonce extends StObject
+  inline def nonce: nonce = "nonce".asInstanceOf[nonce]
+  
+  @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateVodSourceResponse extends StObject {
   
   /**
-    * The ARN of the VOD source.
+    * The Amazon Resource Name (ARN) associated with the VOD source.
     */
   var Arn: js.UndefOr[string] = js.undefined
   
@@ -17,12 +17,12 @@ trait UpdateVodSourceResponse extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The HTTP package configurations.
+    * A list of HTTP package configurations for the VOD source on this account.
     */
   var HttpPackageConfigurations: js.UndefOr[typings.awsSdk.clientsMediatailorMod.HttpPackageConfigurations] = js.undefined
   
   /**
-    * The last modified time of the VOD source.
+    * The timestamp that indicates when the VOD source was last modified.
     */
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
@@ -32,7 +32,7 @@ trait UpdateVodSourceResponse extends StObject {
   var SourceLocationName: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags assigned to the VOD source.
+    * The tags to assign to the VOD source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
   

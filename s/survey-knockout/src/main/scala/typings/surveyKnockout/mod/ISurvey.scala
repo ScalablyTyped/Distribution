@@ -124,6 +124,8 @@ trait ISurvey
   
   var isValidateOnValueChanging: Boolean = js.native
   
+  def loadQuestionChoices(options: Any): Unit = js.native
+  
   def loadedChoicesFromServer(question: IQuestion): Unit = js.native
   
   def matrixAfterCellRender(question: IQuestion, options: Any): Any = js.native

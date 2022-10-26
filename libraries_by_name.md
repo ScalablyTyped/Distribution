@@ -3185,6 +3185,7 @@
 | [fluent-ffmpeg](./f/fluent-ffmpeg) | A fluent API to FFMPEG (http://www.ffmpeg.org) | ffmpeg |
 | [fluent-langneg](./f/fluent-langneg) | Language Negotiation API for Fluent | localization, l10n, internationalization, i18n, locale, language, language-negotiation |
 | [fluent-react](./f/fluent-react) | Fluent bindings for React | localization, l10n, internationalization, i18n, ftl, plural, gender, locale, language, formatting, translate, translation, format, parser, react, reactjs |
+| [fluent-reveal-effect](./f/fluent-reveal-effect) | Reveal Effect (Fluent Design) | fluent, design, ui, toolkit, fluent design, fluent interface, fluent design system, css framework, javascript plugin, ui components, ui kit, fluent ui, fluent reveal effect |
 | [fluent__bundle](./f/fluent__bundle) | Localization library for expressive translations. | localization, l10n, internationalization, i18n, ftl, plural, gender, locale, language, formatting, translate, translation, format, parser |
 | [fluent__dedent](./f/fluent__dedent) | A template literal tag for dedenting Fluent code | dedent, fluent, ftl |
 | [fluent__langneg](./f/fluent__langneg) | Language Negotiation API for Fluent | localization, l10n, internationalization, i18n, locale, language, language-negotiation |
@@ -5299,6 +5300,7 @@
 | [jimp__types](./j/jimp__types) | Default Jimp encoder/decoders. | - |
 | [jimp__utils](./j/jimp__utils) | Utils for jimp extensions. | - |
 | [jira-client](./j/jira-client) | Wrapper for the JIRA API | - |
+| [jira2slack](./j/jira2slack) | Library to convert between JIRA markup and Slack m | jira, slack, markdown |
 | [jitsi-meet](./j/jitsi-meet) | - | - |
 | [jju](./j/jju) | a set of utilities to work with JSON / JSON5 docum | json, json5, parser, serializer, data |
 | [jjv](./j/jjv) | A simple and extensible json-schema validator writ | - |
@@ -7639,6 +7641,7 @@
 | [nivo__waffle](./n/nivo__waffle) | - | nivo, dataviz, react, d3, charts, waffle-chart |
 | [njwt](./n/njwt) | JWT Library for Node.js | jwt |
 | [nkeys_dot_js](./n/nkeys_dot_js) | A public-key signature system based on Ed25519 for | nats, Ed25519, javascript |
+| [nkzq__copy-paste](./n/nkzq__copy-paste) | A command line utility that allows read/write (i.e | copy, paste, copy and paste, clipboard |
 | [nlapack](./n/nlapack) | C++ bindings for all single- and double-precision  | - |
 | [nlcst](./n/nlcst) | - | - |
 | [nlcst-is-literal](./n/nlcst-is-literal) | nlcst utility to check whether a node is meant lit | unist, nlcst, nlcst-util, util, utility, literal, word |
@@ -10360,6 +10363,7 @@
 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg | catastrophic, exponential, regex, safe, sandbox |
 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly | stable, stringify, JSON, JSON.stringify, safe, serialize, deterministic, circular, object, predicable, repeatable, fast, bigint |
 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
+| [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns | - |
 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server | sails, sdk, sails.io.js, socket.io, browser, javascript |
 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API | - |
 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli | sales, tax, salestax, money, billing, invoice, vat, gst, vatmoss |
@@ -10664,6 +10668,7 @@
 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic | Simmer, css, css selector, sizzle |
 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for | selection, selecting, js-utility, user-selection, ui, user-interface, ui-library |
 | [simperium](./s/simperium) | A simperium client for node.js | - |
+| [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v | - |
 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign | - |
 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI | chatwork, api |
 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab | DataTable, DataTables, table, html table, filter, sort |
@@ -11254,6 +11259,7 @@
 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify | swagger, api, apis, restify |
 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects | swagger, api, apis, sails |
 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema | swagger, schema, api |
+| [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor | api, observability, telemetry, node, express, koa, hapi, fastify, rest, statistics, monitoring, alerting, swagger, openapi, schema, prometheus, metrics, elasticsearch, kibana, grafana |
 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg | api, connect, middleware, swagger |
 | [swagger-ui](./s/swagger-ui) | - | - |
 | [swagger-ui-dist](./s/swagger-ui-dist) | - | - |
@@ -11413,6 +11419,7 @@
 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin. | testcafe, reporter, plugin |
 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets | - |
 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y | chrome, version |
+| [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut | testing, cypress, ui, dom, integration, functional, end-to-end, e2e |
 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements | testing, dom, jasmine, matchers, jsdom |
 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |

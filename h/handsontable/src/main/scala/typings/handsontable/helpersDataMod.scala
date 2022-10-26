@@ -40,6 +40,4 @@ object helpersDataMod {
   inline def spreadsheetColumnIndex(label: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("spreadsheetColumnIndex")(label.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def spreadsheetColumnLabel(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("spreadsheetColumnLabel")(index.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def translateRowsToColumns(input: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("translateRowsToColumns")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
 }

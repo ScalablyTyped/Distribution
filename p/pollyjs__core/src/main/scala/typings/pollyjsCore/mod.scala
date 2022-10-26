@@ -1,15 +1,18 @@
 package typings.pollyjsCore
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.pollyjsAdapter.mod.default
+import typings.loglevel.mod.LogLevelDesc
+import typings.loglevel.mod.Logger
 import typings.pollyjsCore.anon.Body
 import typings.pollyjsCore.anon.Dictkey
-import typings.pollyjsCore.anon.DisableSortingHarEntries
-import typings.pollyjsCore.anon.TypeofAdapter
-import typings.pollyjsCore.anon.TypeofPersister
+import typings.pollyjsCore.anon.Fetch
+import typings.pollyjsCore.anon.PartialPollyConfig
 import typings.pollyjsCore.pollyjsCoreStrings.abort
 import typings.pollyjsCore.pollyjsCoreStrings.error
+import typings.pollyjsCore.pollyjsCoreStrings.identify
 import typings.pollyjsCore.pollyjsCoreStrings.request
+import typings.pollyjsPersister.mod.default
 import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -24,21 +27,28 @@ object mod {
     def this(recordingName: String) = this()
     def this(recordingName: String, options: PollyConfig) = this()
     
-    var adapters: Map[String, default] = js.native
+    /* private */ var _requests: js.Array[Request[js.Object]] = js.native
+    
+    var adapters: Map[
+        String, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Adapter */ Any
+      ] = js.native
     
     var config: PollyConfig = js.native
     
-    def configure(config: PollyConfig): Unit = js.native
+    def configure(config: PartialPollyConfig): Unit = js.native
     
     def connectTo(name: String): Unit = js.native
-    def connectTo(name: TypeofAdapter): Unit = js.native
+    def connectTo(name: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ Any): Unit = js.native
     
     def disconnect(): Unit = js.native
     
     def disconnectFrom(name: String): Unit = js.native
-    def disconnectFrom(name: TypeofAdapter): Unit = js.native
+    def disconnectFrom(name: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ Any): Unit = js.native
     
     def flush(): js.Promise[Unit] = js.native
+    
+    var logger: PollyLogger = js.native
     
     var mode: MODE = js.native
     
@@ -46,7 +56,7 @@ object mod {
     
     def pause(): Unit = js.native
     
-    var persister: typings.pollyjsPersister.mod.default | Null = js.native
+    var persister: default[js.Object] | Null = js.native
     
     def play(): Unit = js.native
     
@@ -80,11 +90,28 @@ object mod {
     
     inline def once(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def register(Factory: TypeofAdapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def register(Factory: TypeofPersister): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register[T /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Adapter */ Any) | default[js.Object] */](Factory: Newable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def unregister(Factory: TypeofAdapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def unregister(Factory: TypeofPersister): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unregister[T /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Adapter */ Any) | default[js.Object] */](Factory: Newable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  }
+  
+  @JSImport("@pollyjs/core", "PollyLogger")
+  @js.native
+  open class PollyLogger () extends StObject {
+    
+    def connect(): Unit = js.native
+    
+    def disconnect(): Unit = js.native
+    
+    var log: Logger = js.native
+    
+    def logRequest(request: Request[js.Object]): Unit = js.native
+    
+    def logRequestError(request: Request[js.Object], error: js.Error): Unit = js.native
+    
+    def logRequestResponse(request: Request[js.Object], response: Response): Unit = js.native
+    
+    var polly: Polly = js.native
   }
   
   @JSImport("@pollyjs/core", "PollyServer")
@@ -138,9 +165,9 @@ object mod {
   @js.native
   open class RouteHandler () extends StObject {
     
-    def configure(config: PollyConfig): RouteHandler = js.native
+    def configure(config: PartialPollyConfig): RouteHandler = js.native
     
-    def filter(callback: js.Function1[/* req */ Request, Boolean]): RouteHandler = js.native
+    def filter(callback: js.Function1[/* req */ Request[js.Object], Boolean]): RouteHandler = js.native
     
     def intercept(fn: InterceptHandler): RouteHandler = js.native
     
@@ -241,7 +268,7 @@ object mod {
     inline def replay: typings.pollyjsCore.pollyjsCoreStrings.replay = "replay".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.replay]
   }
   
-  type AbortEventListener = js.Function2[/* req */ Request, /* event */ ListenerEvent, Unit | js.Promise[Unit]]
+  type AbortEventListener = js.Function2[/* req */ Request[js.Object], /* event */ ListenerEvent, Unit | js.Promise[Unit]]
   
   type AbortRouteEvent = abort
   
@@ -260,14 +287,19 @@ object mod {
     inline def warn: typings.pollyjsCore.pollyjsCoreStrings.warn = "warn".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.warn]
   }
   
-  type ErrorEventListener = js.Function3[/* req */ Request, /* error */ Any, /* event */ ListenerEvent, Unit | js.Promise[Unit]]
+  type ErrorEventListener = js.Function3[
+    /* req */ Request[js.Object], 
+    /* error */ Any, 
+    /* event */ ListenerEvent, 
+    Unit | js.Promise[Unit]
+  ]
   
   type ErrorRouteEvent = error
   
   @js.native
   trait HTTPBase extends StObject {
     
-    var body: Any = js.native
+    var body: js.UndefOr[String] = js.native
     
     def getHeader(name: String): String | js.Array[String] | Null = js.native
     
@@ -297,24 +329,25 @@ object mod {
   type Headers = Record[String, String | js.Array[String]]
   
   type InterceptHandler = js.Function3[
-    /* req */ Request, 
+    /* req */ Request[js.Object], 
     /* res */ Response, 
     /* interceptor */ Interceptor, 
     Unit | js.Promise[Unit]
   ]
   
-  trait Interceptor extends StObject {
+  trait Interceptor
+    extends StObject
+       with ListenerEvent {
     
     def abort(): Unit
     
     def passthrough(): Unit
-    
-    def stopPropagation(): Unit
   }
   object Interceptor {
     
-    inline def apply(abort: () => Unit, passthrough: () => Unit, stopPropagation: () => Unit): Interceptor = {
+    inline def apply(abort: () => Unit, passthrough: () => Unit, stopPropagation: () => Unit, `type`: String): Interceptor = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), passthrough = js.Any.fromFunction0(passthrough), stopPropagation = js.Any.fromFunction0(stopPropagation))
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Interceptor]
     }
     
@@ -323,8 +356,6 @@ object mod {
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
       inline def setPassthrough(value: () => Unit): Self = StObject.set(x, "passthrough", js.Any.fromFunction0(value))
-      
-      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     }
   }
   
@@ -368,13 +399,24 @@ object mod {
     inline def stopped: typings.pollyjsCore.pollyjsCoreStrings.stopped = "stopped".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.stopped]
   }
   
-  type MatchBy[T, R] = js.Function2[/* input */ T, /* req */ Request, R]
+  type MatchBy[T, R] = js.Function2[/* input */ T, /* req */ Request[js.Object], R]
+  
+  @js.native
+  trait Newable[T]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ Any, T]
   
   trait PollyConfig extends StObject {
     
-    var adapterOptions: js.UndefOr[Dictkey] = js.undefined
+    var adapterOptions: js.UndefOr[Fetch] = js.undefined
     
-    var adapters: js.UndefOr[js.Array[String | TypeofAdapter]] = js.undefined
+    var adapters: js.UndefOr[
+        js.Array[
+          String | (Newable[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Adapter */ Any
+          ])
+        ]
+      ] = js.undefined
     
     var expiresIn: js.UndefOr[String | Null] = js.undefined
     
@@ -382,15 +424,15 @@ object mod {
     
     var flushRequestsOnStop: js.UndefOr[Boolean] = js.undefined
     
-    var logging: js.UndefOr[Boolean] = js.undefined
+    var logLevel: js.UndefOr[LogLevelDesc] = js.undefined
     
     var matchRequestsBy: js.UndefOr[Body] = js.undefined
     
     var mode: js.UndefOr[MODE] = js.undefined
     
-    var persister: js.UndefOr[String | TypeofPersister] = js.undefined
+    var persister: js.UndefOr[String | Newable[default[js.Object]]] = js.undefined
     
-    var persisterOptions: js.UndefOr[DisableSortingHarEntries] = js.undefined
+    var persisterOptions: js.UndefOr[Dictkey] = js.undefined
     
     var recordFailedRequests: js.UndefOr[Boolean] = js.undefined
     
@@ -409,15 +451,25 @@ object mod {
     
     extension [Self <: PollyConfig](x: Self) {
       
-      inline def setAdapterOptions(value: Dictkey): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
+      inline def setAdapterOptions(value: Fetch): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
       
       inline def setAdapterOptionsUndefined: Self = StObject.set(x, "adapterOptions", js.undefined)
       
-      inline def setAdapters(value: js.Array[String | TypeofAdapter]): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
+      inline def setAdapters(
+        value: js.Array[
+              String | (Newable[
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Adapter */ Any
+              ])
+            ]
+      ): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
       
       inline def setAdaptersUndefined: Self = StObject.set(x, "adapters", js.undefined)
       
-      inline def setAdaptersVarargs(value: (String | TypeofAdapter)*): Self = StObject.set(x, "adapters", js.Array(value*))
+      inline def setAdaptersVarargs(
+        value: (String | (Newable[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Adapter */ Any
+            ]))*
+      ): Self = StObject.set(x, "adapters", js.Array(value*))
       
       inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
@@ -433,9 +485,9 @@ object mod {
       
       inline def setFlushRequestsOnStopUndefined: Self = StObject.set(x, "flushRequestsOnStop", js.undefined)
       
-      inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: LogLevelDesc): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
       inline def setMatchRequestsBy(value: Body): Self = StObject.set(x, "matchRequestsBy", value.asInstanceOf[js.Any])
       
@@ -445,9 +497,9 @@ object mod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setPersister(value: String | TypeofPersister): Self = StObject.set(x, "persister", value.asInstanceOf[js.Any])
+      inline def setPersister(value: String | Newable[default[js.Object]]): Self = StObject.set(x, "persister", value.asInstanceOf[js.Any])
       
-      inline def setPersisterOptions(value: DisableSortingHarEntries): Self = StObject.set(x, "persisterOptions", value.asInstanceOf[js.Any])
+      inline def setPersisterOptions(value: Dictkey): Self = StObject.set(x, "persisterOptions", value.asInstanceOf[js.Any])
       
       inline def setPersisterOptionsUndefined: Self = StObject.set(x, "persisterOptions", js.undefined)
       
@@ -489,7 +541,7 @@ object mod {
   type PollyEventListener = js.Function1[/* poll */ Polly, Unit]
   
   type RecordingEventListener = js.Function3[
-    /* req */ Request, 
+    /* req */ Request[js.Object], 
     /* recording */ Any, 
     /* event */ ListenerEvent, 
     Unit | js.Promise[Unit]
@@ -508,13 +560,17 @@ object mod {
   }
   
   @js.native
-  trait Request
+  trait Request[TArguments /* <: RequestArguments */]
     extends StObject
        with HTTPBase {
+    
+    var aborted: Boolean = js.native
     
     val absoluteUrl: String = js.native
     
     var action: ACTION | Null = js.native
+    
+    def configure(config: PartialPollyConfig): Unit = js.native
     
     var didRespond: Boolean = js.native
     
@@ -524,9 +580,20 @@ object mod {
     
     var id: js.UndefOr[String] = js.native
     
+    val log: Logger = js.native
+    
     var method: String = js.native
     
+    def off(event: RequestEvent): this.type = js.native
+    def off(event: RequestEvent, listener: RequestEventListener): this.type = js.native
+    
+    def on(event: RequestEvent, listener: RequestEventListener): this.type = js.native
+    
+    def once(event: RequestEvent, listener: RequestEventListener): this.type = js.native
+    
     var order: js.UndefOr[Double] = js.native
+    
+    def overrideRecordingName(recordingName: String): Unit = js.native
     
     val params: StringDictionary[String] = js.native
     
@@ -534,11 +601,19 @@ object mod {
     
     val port: String = js.native
     
+    var promise: js.Promise[Unit] = js.native
+    
     val protocol: String = js.native
     
     var query: StringDictionary[String | js.Array[String]] = js.native
     
+    var recordingId: String = js.native
+    
     var recordingName: String = js.native
+    
+    val requestArguments: TArguments = js.native
+    
+    var response: js.UndefOr[Response] = js.native
     
     var responseTime: js.UndefOr[Double] = js.native
     
@@ -547,7 +622,11 @@ object mod {
     var url: String = js.native
   }
   
-  type RequestEventListener = js.Function2[/* req */ Request, /* event */ ListenerEvent, Unit | js.Promise[Unit]]
+  type RequestArguments = StringDictionary[Any]
+  
+  type RequestEvent = identify
+  
+  type RequestEventListener = js.Function2[/* req */ Request[js.Object], /* event */ ListenerEvent, Unit | js.Promise[Unit]]
   
   type RequestRouteEvent = request
   
@@ -556,9 +635,9 @@ object mod {
     extends StObject
        with HTTPBase {
     
-    def end(): this.type = js.native
+    var encoding: js.UndefOr[String] = js.native
     
-    var isBinary: Boolean = js.native
+    def end(): this.type = js.native
     
     val ok: Boolean = js.native
     
@@ -572,7 +651,7 @@ object mod {
   }
   
   type ResponseEventListener = js.Function3[
-    /* req */ Request, 
+    /* req */ Request[js.Object], 
     /* res */ Response, 
     /* event */ ListenerEvent, 
     Unit | js.Promise[Unit]

@@ -1,6 +1,6 @@
 package typings.next
 
-import typings.next.anon.FnCall
+import typings.next.anon.FnCallConditionData
 import typings.next.anon.FnCallItemOptions
 import typings.next.anon.FnCallLabel
 import typings.next.anon.FnCallLabelData
@@ -16,7 +16,7 @@ object `distCompiled@edgeRuntimePrimitivesConsoleMod` {
   
   trait IConsole extends StObject {
     
-    var assert: FnCall
+    var assert: FnCallConditionData
     
     var count: FnCallLabel
     
@@ -43,7 +43,7 @@ object `distCompiled@edgeRuntimePrimitivesConsoleMod` {
   object IConsole {
     
     inline def apply(
-      assert: FnCall,
+      assert: FnCallConditionData,
       count: FnCallLabel,
       debug: /* repeated */ Any => Unit,
       dir: FnCallItemOptions,
@@ -62,7 +62,7 @@ object `distCompiled@edgeRuntimePrimitivesConsoleMod` {
     
     extension [Self <: IConsole](x: Self) {
       
-      inline def setAssert(value: FnCall): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+      inline def setAssert(value: FnCallConditionData): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
       
       inline def setCount(value: FnCallLabel): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

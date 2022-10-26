@@ -1,7 +1,7 @@
 
 # Scala.js typings for firemonkey-browser
 
-Typings are for version 2.60
+Typings are for version 2.62
 
 
 

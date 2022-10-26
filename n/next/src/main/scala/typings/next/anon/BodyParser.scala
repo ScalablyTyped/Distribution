@@ -2,6 +2,7 @@ package typings.next.anon
 
 import typings.next.nextBooleans.`false`
 import typings.next.nextBooleans.`true`
+import typings.next.typesMod.ResponseLimit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ trait BodyParser extends StObject {
     * any string format supported by `bytes`, for example `1000`, `'500kb'` or
     * `'3mb'`.
     */
-  var responseLimit: js.UndefOr[Double | String | Boolean] = js.undefined
+  var responseLimit: js.UndefOr[ResponseLimit] = js.undefined
 }
 object BodyParser {
   
@@ -45,7 +46,7 @@ object BodyParser {
     
     inline def setExternalResolverUndefined: Self = StObject.set(x, "externalResolver", js.undefined)
     
-    inline def setResponseLimit(value: Double | String | Boolean): Self = StObject.set(x, "responseLimit", value.asInstanceOf[js.Any])
+    inline def setResponseLimit(value: ResponseLimit): Self = StObject.set(x, "responseLimit", value.asInstanceOf[js.Any])
     
     inline def setResponseLimitUndefined: Self = StObject.set(x, "responseLimit", js.undefined)
   }

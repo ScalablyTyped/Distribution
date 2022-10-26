@@ -2,8 +2,8 @@ package typings.next
 
 import typings.next.distServerNextMod.NextServer
 import typings.next.distServerNextMod.NextServerOptions
+import typings.react.mod.Context
 import typings.react.mod.HTMLAttributes
-import typings.std.Awaited
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,8 +24,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def cache[T /* <: js.Function */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+    
     // TODO-APP: check if this is the right type.
-    inline def experimentalUse[T](promise: js.Promise[T]): Awaited[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_use")(promise.asInstanceOf[js.Any]).asInstanceOf[Awaited[T]]
+    inline def use[T](promise: js.Promise[T] | Context[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(promise.asInstanceOf[js.Any]).asInstanceOf[T]
     
     // <html amp=""> support
     trait HtmlHTMLAttributes[T]
@@ -52,22 +54,12 @@ object mod {
     // <link nonce=""> support
     trait LinkHTMLAttributes[T]
       extends StObject
-         with HTMLAttributes[T] {
-      
-      var nonce: js.UndefOr[String] = js.undefined
-    }
+         with HTMLAttributes[T]
     object LinkHTMLAttributes {
       
       inline def apply[T](): LinkHTMLAttributes[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LinkHTMLAttributes[T]]
-      }
-      
-      extension [Self <: LinkHTMLAttributes[?], T](x: Self & LinkHTMLAttributes[T]) {
-        
-        inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
-        
-        inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       }
     }
   }

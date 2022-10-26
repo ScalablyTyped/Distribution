@@ -17,7 +17,7 @@ trait WorkspaceProperties extends StObject {
   var RootVolumeSizeGib: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.RootVolumeSizeGib] = js.undefined
   
   /**
-    * The running mode. For more information, see Manage the WorkSpace Running Mode.
+    * The running mode. For more information, see Manage the WorkSpace Running Mode.  The MANUAL value is only supported by Amazon WorkSpaces Core. Contact your account team to be allow-listed to use this value. For more information, see Amazon WorkSpaces Core. 
     */
   var RunningMode: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.RunningMode] = js.undefined
   

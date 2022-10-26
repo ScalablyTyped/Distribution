@@ -10,4 +10,6 @@ open class QuestionFile protected () extends QuestionFileModel {
   def this(name: String) = this()
   
   var _implementor: QuestionFileImplementor = js.native
+  
+  def updateState(sender: Any, options: Any): Unit = js.native
 }

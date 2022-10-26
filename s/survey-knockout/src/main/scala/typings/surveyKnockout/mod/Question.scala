@@ -566,6 +566,8 @@ open class Question protected ()
   @JSName("onAnyValueChanged")
   def onAnyValueChanged_Unit(name: String): Unit = js.native
   
+  /* protected */ def onChangeQuestionValue(newValue: Any): Unit = js.native
+  
   /* protected */ def onCheckForErrors(errors: Any, isOnValueChanged: Boolean): Unit = js.native
   
   def onCommentChange(event: Any): Unit = js.native

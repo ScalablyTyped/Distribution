@@ -255,6 +255,8 @@ trait WidgetProps[T, F]
   /** A boolean value stating if the widget can accept multiple values */
   var multiple: js.UndefOr[Boolean] = js.native
   
+  var nonce: js.UndefOr[String] = js.native
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.native

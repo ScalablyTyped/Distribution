@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pollyjs/adapter-node-http" : "6.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pollyjs/adapter-node-http" : "6.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

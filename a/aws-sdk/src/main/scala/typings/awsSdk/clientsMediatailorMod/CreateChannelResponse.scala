@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateChannelResponse extends StObject {
   
   /**
-    * The ARN of the channel.
+    * The Amazon Resource Name (ARN) to assign to the channel.
     */
   var Arn: js.UndefOr[string] = js.undefined
   
   /**
-    * The name of the channel.
+    * The name to assign to the channel.
     */
   var ChannelName: js.UndefOr[string] = js.undefined
   
@@ -37,22 +37,22 @@ trait CreateChannelResponse extends StObject {
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The channel's output properties.
+    * The output properties to assign to the channel.
     */
   var Outputs: js.UndefOr[ResponseOutputs] = js.undefined
   
   /**
-    * The channel's playback mode.
+    * The playback mode to assign to the channel.
     */
   var PlaybackMode: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags assigned to the channel.
+    * The tags to assign to the channel. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
   
   /**
-    * The channel's tier.
+    * The tier of the channel.
     */
   var Tier: js.UndefOr[string] = js.undefined
 }

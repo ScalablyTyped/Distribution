@@ -2,7 +2,6 @@ package typings.next
 
 import typings.next.anon.IsDev
 import typings.next.anon.PartialMiddlewareConfig
-import typings.next.anon.Ssg
 import typings.next.distLibLoadCustomRoutesMod.RouteHas
 import typings.next.nextBooleans.`false`
 import typings.next.typesMod.ServerRuntime
@@ -16,8 +15,6 @@ object distBuildAnalysisGetPageStaticInfoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkExports(swcAST: Any): Ssg = ^.asInstanceOf[js.Dynamic].applyDynamic("checkExports")(swcAST.asInstanceOf[js.Any]).asInstanceOf[Ssg]
-  
   inline def getPageStaticInfo(params: IsDev): js.Promise[PageStaticInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageStaticInfo")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PageStaticInfo]]
   
   inline def getRSCModuleType(source: String): RSCModuleType = ^.asInstanceOf[js.Dynamic].applyDynamic("getRSCModuleType")(source.asInstanceOf[js.Any]).asInstanceOf[RSCModuleType]
@@ -26,12 +23,18 @@ object distBuildAnalysisGetPageStaticInfoMod {
     
     var matchers: js.Array[MiddlewareMatcher]
     
+    var regions: js.Array[String] | String
+    
     var unstable_allowDynamicGlobs: js.Array[String]
   }
   object MiddlewareConfig {
     
-    inline def apply(matchers: js.Array[MiddlewareMatcher], unstable_allowDynamicGlobs: js.Array[String]): MiddlewareConfig = {
-      val __obj = js.Dynamic.literal(matchers = matchers.asInstanceOf[js.Any], unstable_allowDynamicGlobs = unstable_allowDynamicGlobs.asInstanceOf[js.Any])
+    inline def apply(
+      matchers: js.Array[MiddlewareMatcher],
+      regions: js.Array[String] | String,
+      unstable_allowDynamicGlobs: js.Array[String]
+    ): MiddlewareConfig = {
+      val __obj = js.Dynamic.literal(matchers = matchers.asInstanceOf[js.Any], regions = regions.asInstanceOf[js.Any], unstable_allowDynamicGlobs = unstable_allowDynamicGlobs.asInstanceOf[js.Any])
       __obj.asInstanceOf[MiddlewareConfig]
     }
     
@@ -40,6 +43,10 @@ object distBuildAnalysisGetPageStaticInfoMod {
       inline def setMatchers(value: js.Array[MiddlewareMatcher]): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
       
       inline def setMatchersVarargs(value: MiddlewareMatcher*): Self = StObject.set(x, "matchers", js.Array(value*))
+      
+      inline def setRegions(value: js.Array[String] | String): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
       
       inline def setUnstable_allowDynamicGlobs(value: js.Array[String]): Self = StObject.set(x, "unstable_allowDynamicGlobs", value.asInstanceOf[js.Any])
       

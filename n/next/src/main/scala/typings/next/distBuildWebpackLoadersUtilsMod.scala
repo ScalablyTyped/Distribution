@@ -12,4 +12,8 @@ object distBuildWebpackLoadersUtilsMod {
   val ^ : js.Any = js.native
   
   inline def isClientComponentModule(mod: BuildInfo): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClientComponentModule")(mod.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @JSImport("next/dist/build/webpack/loaders/utils", "regexCSS")
+  @js.native
+  val regexCSS: js.RegExp = js.native
 }

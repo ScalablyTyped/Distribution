@@ -297,6 +297,8 @@ object mod {
     
     var mathquillDidMount: js.UndefOr[js.Function1[/* mathField */ MathField, Unit]] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLSpanElement]] = js.undefined
@@ -817,6 +819,10 @@ object mod {
       inline def setMathquillDidMount(value: /* mathField */ MathField => Unit): Self = StObject.set(x, "mathquillDidMount", js.Any.fromFunction1(value))
       
       inline def setMathquillDidMountUndefined: Self = StObject.set(x, "mathquillDidMount", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

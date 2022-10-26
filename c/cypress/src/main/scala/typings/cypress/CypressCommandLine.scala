@@ -311,7 +311,7 @@ object CypressCommandLine {
     var headless: Boolean
     
     /**
-      * Specify your secret record key
+      * Specify your secret Record Key
       */
     var key: String
     

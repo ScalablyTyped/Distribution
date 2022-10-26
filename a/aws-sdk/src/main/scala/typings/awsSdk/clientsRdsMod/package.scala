@@ -210,6 +210,13 @@ type EventList = js.Array[Event]
 
 type EventSubscriptionsList = js.Array[EventSubscription]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SNAPSHOT
+  - typings.awsSdk.awsSdkStrings.CLUSTER
+  - java.lang.String
+*/
+type ExportSourceType = _ExportSourceType | java.lang.String
+
 type ExportTasksList = js.Array[ExportTask]
 
 /* Rewritten from type alias, can be one of: 

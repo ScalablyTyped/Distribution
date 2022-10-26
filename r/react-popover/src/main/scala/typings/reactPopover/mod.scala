@@ -55,6 +55,8 @@ object mod {
     
     var body: ReactNode
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var enterExitTransitionDurationMs: js.UndefOr[Double] = js.undefined
@@ -91,6 +93,10 @@ object mod {
       inline def setBody(value: ReactNode): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

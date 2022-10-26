@@ -4,6 +4,9 @@ import typings.next.distServerAppRenderMod.RenderOpts
 import typings.next.distServerLoadComponentsMod.LoadComponentsReturnType
 import typings.next.distServerRenderResultMod.default
 import typings.next.distServerRequestMetaMod.NextParsedUrlQuery
+import typings.next.nextStrings.app
+import typings.next.nextStrings.pages
+import typings.next.nextStrings.root
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.std.Partial
@@ -14,14 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppRenderToHTML extends StObject {
   
   var appRenderToHTML: js.UndefOr[
-    js.Function7[
+    js.Function5[
       /* req */ IncomingMessage, 
       /* res */ ServerResponse[IncomingMessage], 
       /* pathname */ String, 
       /* query */ NextParsedUrlQuery, 
       /* renderOpts */ RenderOpts, 
-      /* isPagesDir */ Boolean, 
-      /* isStaticGeneration */ js.UndefOr[Boolean], 
       js.Promise[default | Null]
     ]
   ] = js.undefined
@@ -42,23 +43,26 @@ trait AppRenderToHTML extends StObject {
       js.Promise[default | Null]
     ]
   ] = js.undefined
+  
+  var pagesType: app | pages | root
 }
 object AppRenderToHTML {
   
   inline def apply(
     extendRenderOpts: Partial[AmpOptimizerConfig] & PickdefaultOptionsrenderO,
     loadComponent: String => js.Promise[LoadComponentsReturnType | Null],
-    page: String
+    page: String,
+    pagesType: app | pages | root
   ): AppRenderToHTML = {
-    val __obj = js.Dynamic.literal(extendRenderOpts = extendRenderOpts.asInstanceOf[js.Any], loadComponent = js.Any.fromFunction1(loadComponent), page = page.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extendRenderOpts = extendRenderOpts.asInstanceOf[js.Any], loadComponent = js.Any.fromFunction1(loadComponent), page = page.asInstanceOf[js.Any], pagesType = pagesType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppRenderToHTML]
   }
   
   extension [Self <: AppRenderToHTML](x: Self) {
     
     inline def setAppRenderToHTML(
-      value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* pathname */ String, /* query */ NextParsedUrlQuery, /* renderOpts */ RenderOpts, /* isPagesDir */ Boolean, /* isStaticGeneration */ js.UndefOr[Boolean]) => js.Promise[default | Null]
-    ): Self = StObject.set(x, "appRenderToHTML", js.Any.fromFunction7(value))
+      value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* pathname */ String, /* query */ NextParsedUrlQuery, /* renderOpts */ RenderOpts) => js.Promise[default | Null]
+    ): Self = StObject.set(x, "appRenderToHTML", js.Any.fromFunction5(value))
     
     inline def setAppRenderToHTMLUndefined: Self = StObject.set(x, "appRenderToHTML", js.undefined)
     
@@ -73,5 +77,7 @@ object AppRenderToHTML {
     ): Self = StObject.set(x, "pagesRenderToHTML", js.Any.fromFunction5(value))
     
     inline def setPagesRenderToHTMLUndefined: Self = StObject.set(x, "pagesRenderToHTML", js.undefined)
+    
+    inline def setPagesType(value: app | pages | root): Self = StObject.set(x, "pagesType", value.asInstanceOf[js.Any])
   }
 }

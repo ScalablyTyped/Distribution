@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateChannelResponse extends StObject {
   
   /**
-    * The ARN of the channel.
+    * The Amazon Resource Name (ARN) associated with the channel.
     */
   var Arn: js.UndefOr[string] = js.undefined
   
@@ -17,7 +17,7 @@ trait UpdateChannelResponse extends StObject {
   var ChannelName: js.UndefOr[string] = js.undefined
   
   /**
-    * Indicates whether the channel is in a running state or not.
+    * Returns the state whether the channel is running or not.
     */
   var ChannelState: js.UndefOr[typings.awsSdk.clientsMediatailorMod.ChannelState] = js.undefined
   
@@ -27,12 +27,12 @@ trait UpdateChannelResponse extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Contains information about the slate used to fill gaps between programs in the schedule.
+    * The slate used to fill gaps between programs in the schedule. You must configure filler slate if your channel uses the LINEAR PlaybackMode. MediaTailor doesn't support filler slate for channels using the LOOP PlaybackMode.
     */
   var FillerSlate: js.UndefOr[SlateSource] = js.undefined
   
   /**
-    * The timestamp of when the channel was last modified.
+    * The timestamp that indicates when the channel was last modified.
     */
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
@@ -42,17 +42,17 @@ trait UpdateChannelResponse extends StObject {
   var Outputs: js.UndefOr[ResponseOutputs] = js.undefined
   
   /**
-    * The channel's playback mode.
+    * The type of playback mode for this channel.  LINEAR - Programs play back-to-back only once.  LOOP - Programs play back-to-back in an endless loop. When the last program in the schedule plays, playback loops back to the first program in the schedule.
     */
   var PlaybackMode: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags assigned to the channel.
+    * The tags to assign to the channel. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
   
   /**
-    * The channel's tier.
+    * The tier associated with this Channel.
     */
   var Tier: js.UndefOr[string] = js.undefined
 }

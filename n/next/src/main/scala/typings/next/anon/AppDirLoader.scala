@@ -31,7 +31,7 @@ trait AppDirLoader extends StObject {
   
   var pages: StringDictionary[String]
   
-  var pagesType: js.UndefOr[app | pages | root] = js.undefined
+  var pagesType: app | pages | root
   
   var rootDir: String
 }
@@ -46,9 +46,10 @@ object AppDirLoader {
     isServerComponent: Boolean,
     page: String,
     pages: StringDictionary[String],
+    pagesType: app | pages | root,
     rootDir: String
   ): AppDirLoader = {
-    val __obj = js.Dynamic.literal(absolutePagePath = absolutePagePath.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], bundlePath = bundlePath.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], isDev = isDev.asInstanceOf[js.Any], isServerComponent = isServerComponent.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(absolutePagePath = absolutePagePath.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], bundlePath = bundlePath.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], isDev = isDev.asInstanceOf[js.Any], isServerComponent = isServerComponent.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], pagesType = pagesType.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppDirLoader]
   }
   
@@ -79,8 +80,6 @@ object AppDirLoader {
     inline def setPages(value: StringDictionary[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     inline def setPagesType(value: app | pages | root): Self = StObject.set(x, "pagesType", value.asInstanceOf[js.Any])
-    
-    inline def setPagesTypeUndefined: Self = StObject.set(x, "pagesType", js.undefined)
     
     inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
   }

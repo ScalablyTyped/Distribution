@@ -3,6 +3,7 @@ package typings.next
 import org.scalablytyped.runtime.StringDictionary
 import typings.next.distBuildWebpackPluginsFlightManifestPluginMod.FlightCSSManifest
 import typings.next.distBuildWebpackPluginsFlightManifestPluginMod.FlightManifest
+import typings.next.distBuildWebpackPluginsFontLoaderManifestPluginMod.FontLoaderManifest
 import typings.next.distServerGetPageFilesMod.BuildManifest
 import typings.next.distServerLoadComponentsMod.LoadComponentsReturnType
 import typings.next.distServerLoadComponentsMod.ReactLoadableManifest
@@ -32,18 +33,8 @@ object distServerAppRenderMod {
     res: ServerResponse[IncomingMessage],
     pathname: String,
     query: NextParsedUrlQuery,
-    renderOpts: RenderOpts,
-    isPagesDir: Boolean
-  ): js.Promise[default | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToHTMLOrFlight")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], renderOpts.asInstanceOf[js.Any], isPagesDir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default | Null]]
-  inline def renderToHTMLOrFlight(
-    req: IncomingMessage,
-    res: ServerResponse[IncomingMessage],
-    pathname: String,
-    query: NextParsedUrlQuery,
-    renderOpts: RenderOpts,
-    isPagesDir: Boolean,
-    isStaticGeneration: Boolean
-  ): js.Promise[default | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToHTMLOrFlight")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], renderOpts.asInstanceOf[js.Any], isPagesDir.asInstanceOf[js.Any], isStaticGeneration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default | Null]]
+    renderOpts: RenderOpts
+  ): js.Promise[default | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToHTMLOrFlight")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], renderOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default | Null]]
   
   trait ChildProp extends StObject {
     
@@ -101,11 +92,12 @@ object distServerAppRenderMod {
     ])
   ]
   
-  type FlightRouterState = js.Tuple4[
+  type FlightRouterState = js.Tuple5[
     /* segment */ Segment, 
     /* parallelRoutes */ StringDictionary[Any], 
     /* url */ js.UndefOr[String], 
-    /* refresh */ js.UndefOr[refetch]
+    /* refresh */ js.UndefOr[refetch], 
+    /* isRootLayout */ js.UndefOr[Boolean]
   ]
   
   type FlightSegmentPath = js.Array[Any] | (js.Tuple6[
@@ -118,7 +110,7 @@ object distServerAppRenderMod {
   ])
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.next.distServerAppRenderMod.RenderOptsPartial because var conflicts: serverComponentManifest. Inlined err, dev, serverCSSManifest, supportsDynamicHTML, runtime, serverComponents, assetPrefix */ trait RenderOpts
+  - typings.next.distServerAppRenderMod.RenderOptsPartial because var conflicts: serverComponentManifest. Inlined err, dev, serverCSSManifest, supportsDynamicHTML, runtime, serverComponents, assetPrefix, fontLoaderManifest, isBot */ trait RenderOpts
     extends StObject
        with LoadComponentsReturnType {
     
@@ -127,6 +119,10 @@ object distServerAppRenderMod {
     var dev: js.UndefOr[Boolean] = js.undefined
     
     var err: js.UndefOr[js.Error | Null] = js.undefined
+    
+    var fontLoaderManifest: js.UndefOr[FontLoaderManifest] = js.undefined
+    
+    var isBot: js.UndefOr[Boolean] = js.undefined
     
     var runtime: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServerRuntime */ Any
@@ -170,6 +166,14 @@ object distServerAppRenderMod {
       
       inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
+      inline def setFontLoaderManifest(value: FontLoaderManifest): Self = StObject.set(x, "fontLoaderManifest", value.asInstanceOf[js.Any])
+      
+      inline def setFontLoaderManifestUndefined: Self = StObject.set(x, "fontLoaderManifest", js.undefined)
+      
+      inline def setIsBot(value: Boolean): Self = StObject.set(x, "isBot", value.asInstanceOf[js.Any])
+      
+      inline def setIsBotUndefined: Self = StObject.set(x, "isBot", js.undefined)
+      
       inline def setRuntime(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServerRuntime */ Any
       ): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
@@ -197,6 +201,10 @@ object distServerAppRenderMod {
     var dev: js.UndefOr[Boolean] = js.undefined
     
     var err: js.UndefOr[js.Error | Null] = js.undefined
+    
+    var fontLoaderManifest: js.UndefOr[FontLoaderManifest] = js.undefined
+    
+    var isBot: js.UndefOr[Boolean] = js.undefined
     
     var runtime: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServerRuntime */ Any
@@ -232,6 +240,14 @@ object distServerAppRenderMod {
       inline def setErrNull: Self = StObject.set(x, "err", null)
       
       inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      
+      inline def setFontLoaderManifest(value: FontLoaderManifest): Self = StObject.set(x, "fontLoaderManifest", value.asInstanceOf[js.Any])
+      
+      inline def setFontLoaderManifestUndefined: Self = StObject.set(x, "fontLoaderManifest", js.undefined)
+      
+      inline def setIsBot(value: Boolean): Self = StObject.set(x, "isBot", value.asInstanceOf[js.Any])
+      
+      inline def setIsBotUndefined: Self = StObject.set(x, "isBot", js.undefined)
       
       inline def setRuntime(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServerRuntime */ Any

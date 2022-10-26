@@ -8,6 +8,8 @@ trait EsmExternals extends StObject {
   
   var appDir: String
   
+  var appDirEnabled: js.UndefOr[Boolean] = js.undefined
+  
   var esmExternals: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental']['esmExternals'] */ js.Any
   ] = js.undefined
@@ -16,18 +18,24 @@ trait EsmExternals extends StObject {
   
   var outputFileTracingRoot: js.UndefOr[String] = js.undefined
   
-  var staticImageImports: Boolean
+  var turbotrace: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental']['turbotrace'] */ js.Any
+  ] = js.undefined
 }
 object EsmExternals {
   
-  inline def apply(appDir: String, staticImageImports: Boolean): EsmExternals = {
-    val __obj = js.Dynamic.literal(appDir = appDir.asInstanceOf[js.Any], staticImageImports = staticImageImports.asInstanceOf[js.Any])
+  inline def apply(appDir: String): EsmExternals = {
+    val __obj = js.Dynamic.literal(appDir = appDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[EsmExternals]
   }
   
   extension [Self <: EsmExternals](x: Self) {
     
     inline def setAppDir(value: String): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
+    
+    inline def setAppDirEnabled(value: Boolean): Self = StObject.set(x, "appDirEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAppDirEnabledUndefined: Self = StObject.set(x, "appDirEnabled", js.undefined)
     
     inline def setEsmExternals(
       value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental']['esmExternals'] */ js.Any
@@ -45,6 +53,10 @@ object EsmExternals {
     
     inline def setOutputFileTracingRootUndefined: Self = StObject.set(x, "outputFileTracingRoot", js.undefined)
     
-    inline def setStaticImageImports(value: Boolean): Self = StObject.set(x, "staticImageImports", value.asInstanceOf[js.Any])
+    inline def setTurbotrace(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental']['turbotrace'] */ js.Any
+    ): Self = StObject.set(x, "turbotrace", value.asInstanceOf[js.Any])
+    
+    inline def setTurbotraceUndefined: Self = StObject.set(x, "turbotrace", js.undefined)
   }
 }

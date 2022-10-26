@@ -8,8 +8,8 @@ import typings.cypress.Cypress.PluginEvents
 import typings.cypress.Cypress.scrollBehaviorOptions
 import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressStrings.bundled
-import typings.cypress.cypressStrings.legacy
-import typings.cypress.cypressStrings.strict
+import typings.cypress.cypressStrings.off
+import typings.cypress.cypressStrings.on
 import typings.cypress.cypressStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -110,7 +110,7 @@ trait OmitCoreConfigOptionsinde extends StObject {
   
   var taskTimeout: js.UndefOr[Double] = js.undefined
   
-  var testIsolation: js.UndefOr[legacy | strict] = js.undefined
+  var testIsolation: js.UndefOr[Null | on | off] = js.undefined
   
   var trashAssetsBeforeRuns: js.UndefOr[Boolean] = js.undefined
   
@@ -333,7 +333,9 @@ object OmitCoreConfigOptionsinde {
     
     inline def setTaskTimeoutUndefined: Self = StObject.set(x, "taskTimeout", js.undefined)
     
-    inline def setTestIsolation(value: legacy | strict): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
+    inline def setTestIsolation(value: on | off): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
+    
+    inline def setTestIsolationNull: Self = StObject.set(x, "testIsolation", null)
     
     inline def setTestIsolationUndefined: Self = StObject.set(x, "testIsolation", js.undefined)
     

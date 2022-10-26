@@ -42,7 +42,7 @@ trait ScheduleEntry extends StObject {
   var ScheduleAdBreaks: js.UndefOr[listOfScheduleAdBreak] = js.undefined
   
   /**
-    * The type of schedule entry. Valid values: PROGRAM or FILLER_SLATE.
+    * The type of schedule entry.
     */
   var ScheduleEntryType: js.UndefOr[typings.awsSdk.clientsMediatailorMod.ScheduleEntryType] = js.undefined
   

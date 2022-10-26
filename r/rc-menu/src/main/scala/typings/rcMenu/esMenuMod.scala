@@ -342,6 +342,8 @@ object esMenuMod extends Shortcut {
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLUListElement]] = js.undefined
@@ -957,6 +959,10 @@ object esMenuMod extends Shortcut {
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

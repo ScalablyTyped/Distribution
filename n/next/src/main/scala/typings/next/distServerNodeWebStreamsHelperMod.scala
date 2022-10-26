@@ -2,6 +2,7 @@ package typings.next
 
 import typings.next.anon.DataStream
 import typings.next.anon.Element
+import typings.next.distServerAppRenderMod.FlightRouterState
 import typings.std.ReadableStream
 import typings.std.TextDecoder
 import typings.std.TransformStream
@@ -24,11 +25,14 @@ object distServerNodeWebStreamsHelperMod {
   
   inline def createDeferredSuffixStream(suffix: String): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredSuffixStream")(suffix.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
   
-  inline def createFlushEffectStream(handleFlushEffect: js.Function0[String]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFlushEffectStream")(handleFlushEffect.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
-  
-  inline def createHeadInjectionTransformStream(inject: js.Function0[String]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHeadInjectionTransformStream")(inject.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
+  inline def createHeadInjectionTransformStream(inject: js.Function0[js.Promise[String]]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHeadInjectionTransformStream")(inject.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
   
   inline def createInlineDataStream(dataStream: ReadableStream[js.typedarray.Uint8Array]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInlineDataStream")(dataStream.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
+  
+  inline def createInsertedHTMLStream(getServerInsertedHTML: js.Function0[js.Promise[String]]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsertedHTMLStream")(getServerInsertedHTML.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
+  
+  inline def createRootLayoutValidatorStream(assetPrefix: String, getTree: js.Function0[FlightRouterState]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRootLayoutValidatorStream")(assetPrefix.asInstanceOf[js.Any], getTree.asInstanceOf[js.Any])).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
+  inline def createRootLayoutValidatorStream(assetPrefix: Unit, getTree: js.Function0[FlightRouterState]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRootLayoutValidatorStream")(assetPrefix.asInstanceOf[js.Any], getTree.asInstanceOf[js.Any])).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
   
   inline def createSuffixStream(suffix: String): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSuffixStream")(suffix.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
   

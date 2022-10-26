@@ -15,6 +15,11 @@ trait StartResourceScanRequest extends StObject {
     * The ARN of the resource to scan.
     */
   var resourceArn: ResourceArn
+  
+  /**
+    * The Amazon Web Services account ID that owns the resource. For most Amazon Web Services resources, the owning account is the account in which the resource was created.
+    */
+  var resourceOwnerAccount: js.UndefOr[String] = js.undefined
 }
 object StartResourceScanRequest {
   
@@ -28,5 +33,9 @@ object StartResourceScanRequest {
     inline def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    
+    inline def setResourceOwnerAccount(value: String): Self = StObject.set(x, "resourceOwnerAccount", value.asInstanceOf[js.Any])
+    
+    inline def setResourceOwnerAccountUndefined: Self = StObject.set(x, "resourceOwnerAccount", js.undefined)
   }
 }

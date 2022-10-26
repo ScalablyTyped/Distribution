@@ -90,9 +90,6 @@ open class QuestionFileModel protected () extends Question {
     * The image width.
     */
   def imageWidth: String = js.native
-  
-  def imageWidthRendered: String = js.native
-  
   def imageWidth_=(`val`: String): Unit = js.native
   
   var indexToShow: Double = js.native
@@ -168,6 +165,8 @@ open class QuestionFileModel protected () extends Question {
   
   def onDrop(event: Any): Unit = js.native
   
+  var onStateChanged: EventBase[QuestionFileModel] = js.native
+  
   /*
     * An event that is raised after the upload state has changed.
     * 
@@ -176,7 +175,7 @@ open class QuestionFileModel protected () extends Question {
     * - `sender` - A question instance that raised the event.
     * - `options.state` - Current upload state: `"empty"`, `"loading"`, `"loaded"`, or `"error"`.
     */
-  var onStateChanged: EventBase[QuestionFileModel] = js.native
+  var onUploadStateChanged: EventBase[QuestionFileModel] = js.native
   
   /* protected */ var prevFileAction: Action = js.native
   

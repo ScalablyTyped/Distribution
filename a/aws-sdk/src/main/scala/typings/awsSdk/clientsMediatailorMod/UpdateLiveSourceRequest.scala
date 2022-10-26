@@ -12,12 +12,12 @@ trait UpdateLiveSourceRequest extends StObject {
   var HttpPackageConfigurations: typings.awsSdk.clientsMediatailorMod.HttpPackageConfigurations
   
   /**
-    * The identifier for the live source you are working on.
+    * The name of the live source.
     */
   var LiveSourceName: string
   
   /**
-    * The identifier for the source location you are working on.
+    * The name of the source location associated with this Live Source.
     */
   var SourceLocationName: string
 }

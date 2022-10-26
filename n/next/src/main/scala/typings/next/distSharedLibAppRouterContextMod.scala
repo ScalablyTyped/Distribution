@@ -32,52 +32,42 @@ object distSharedLibAppRouterContextMod {
   @js.native
   val TemplateContext: Context[ReactNode] = js.native
   
+  @js.native
   trait AppRouterInstance extends StObject {
     
     /**
-      * Soft prefetch the provided href. Does not fetch data from the server if it was already fetched.
+      * Navigate to the previous history entry.
       */
-    def prefetch(href: String): Unit
+    def back(): Unit = js.native
     
     /**
-      * Hard navigate to the provided href. Fetches new data from the server.
+      * Navigate to the next history entry.
+      */
+    def forward(): Unit = js.native
+    
+    /**
+      * Prefetch the provided href.
+      */
+    def prefetch(href: String): Unit = js.native
+    
+    /**
+      * Navigate to the provided href.
       * Pushes a new history entry.
       */
-    def push(href: String, options: NavigateOptions): Unit
+    def push(href: String): Unit = js.native
+    def push(href: String, options: NavigateOptions): Unit = js.native
     
     /**
-      * Reload the current page. Fetches new data from the server.
+      * Refresh the current page.
       */
-    def reload(): Unit
+    def refresh(): Unit = js.native
     
     /**
-      * Hard navigate to the provided href. Does not fetch data from the server if it was already fetched.
+      * Navigate to the provided href.
       * Replaces the current history entry.
       */
-    def replace(href: String, options: NavigateOptions): Unit
-  }
-  object AppRouterInstance {
-    
-    inline def apply(
-      prefetch: String => Unit,
-      push: (String, NavigateOptions) => Unit,
-      reload: () => Unit,
-      replace: (String, NavigateOptions) => Unit
-    ): AppRouterInstance = {
-      val __obj = js.Dynamic.literal(prefetch = js.Any.fromFunction1(prefetch), push = js.Any.fromFunction2(push), reload = js.Any.fromFunction0(reload), replace = js.Any.fromFunction2(replace))
-      __obj.asInstanceOf[AppRouterInstance]
-    }
-    
-    extension [Self <: AppRouterInstance](x: Self) {
-      
-      inline def setPrefetch(value: String => Unit): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
-      
-      inline def setPush(value: (String, NavigateOptions) => Unit): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
-      
-      inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
-      
-      inline def setReplace(value: (String, NavigateOptions) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
-    }
+    def replace(href: String): Unit = js.native
+    def replace(href: String, options: NavigateOptions): Unit = js.native
   }
   
   trait CacheNode extends StObject {
@@ -90,7 +80,9 @@ object distSharedLibAppRouterContextMod {
           /* url */ URL, 
           /* flightRouterState */ FlightRouterState, 
           /* prefetch */ js.UndefOr[`true`], 
-          js.Promise[js.Array[/* FlightData */ FlightData]]
+          js.Promise[
+            js.Tuple2[/* FlightData */ FlightData, /* canonicalUrlOverride */ js.UndefOr[URL]]
+          ]
         ]
       ]) | Null
     
@@ -119,7 +111,9 @@ object distSharedLibAppRouterContextMod {
                 /* url */ URL, 
                 /* flightRouterState */ FlightRouterState, 
                 /* prefetch */ js.UndefOr[`true`], 
-                js.Promise[js.Array[/* FlightData */ FlightData]]
+                js.Promise[
+                  js.Tuple2[/* FlightData */ FlightData, /* canonicalUrlOverride */ js.UndefOr[URL]]
+                ]
               ]
             ]
       ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

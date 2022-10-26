@@ -213,8 +213,6 @@ import typings.handsontable.handsontableStrings.htMiddle
 import typings.handsontable.handsontableStrings.htRight
 import typings.handsontable.handsontableStrings.htTop
 import typings.handsontable.handsontableStrings.init
-import typings.handsontable.handsontableStrings.insert_col
-import typings.handsontable.handsontableStrings.insert_row
 import typings.handsontable.handsontableStrings.isSearchResult
 import typings.handsontable.handsontableStrings.left
 import typings.handsontable.handsontableStrings.manualColumnFreeze
@@ -248,8 +246,6 @@ import typings.handsontable.handsontableStrings.persistentState
 import typings.handsontable.handsontableStrings.persistentStateLoad
 import typings.handsontable.handsontableStrings.persistentStateReset
 import typings.handsontable.handsontableStrings.persistentStateSave
-import typings.handsontable.handsontableStrings.remove_col
-import typings.handsontable.handsontableStrings.remove_row
 import typings.handsontable.handsontableStrings.right
 import typings.handsontable.handsontableStrings.search
 import typings.handsontable.handsontableStrings.set
@@ -334,6 +330,36 @@ object coreMod {
     extends StObject
        with Core {
     def this(element: Element, options: GridSettings) = this()
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.handsontable.handsontableStrings.insert_row
+    - typings.handsontable.handsontableStrings.insert_row_above
+    - typings.handsontable.handsontableStrings.insert_row_below
+    - typings.handsontable.handsontableStrings.insert_col
+    - typings.handsontable.handsontableStrings.insert_col_start
+    - typings.handsontable.handsontableStrings.insert_col_end
+    - typings.handsontable.handsontableStrings.remove_row
+    - typings.handsontable.handsontableStrings.remove_col
+  */
+  trait AlterActions extends StObject
+  object AlterActions {
+    
+    inline def insert_col: typings.handsontable.handsontableStrings.insert_col = "insert_col".asInstanceOf[typings.handsontable.handsontableStrings.insert_col]
+    
+    inline def insert_col_end: typings.handsontable.handsontableStrings.insert_col_end = "insert_col_end".asInstanceOf[typings.handsontable.handsontableStrings.insert_col_end]
+    
+    inline def insert_col_start: typings.handsontable.handsontableStrings.insert_col_start = "insert_col_start".asInstanceOf[typings.handsontable.handsontableStrings.insert_col_start]
+    
+    inline def insert_row: typings.handsontable.handsontableStrings.insert_row = "insert_row".asInstanceOf[typings.handsontable.handsontableStrings.insert_row]
+    
+    inline def insert_row_above: typings.handsontable.handsontableStrings.insert_row_above = "insert_row_above".asInstanceOf[typings.handsontable.handsontableStrings.insert_row_above]
+    
+    inline def insert_row_below: typings.handsontable.handsontableStrings.insert_row_below = "insert_row_below".asInstanceOf[typings.handsontable.handsontableStrings.insert_row_below]
+    
+    inline def remove_col: typings.handsontable.handsontableStrings.remove_col = "remove_col".asInstanceOf[typings.handsontable.handsontableStrings.remove_col]
+    
+    inline def remove_row: typings.handsontable.handsontableStrings.remove_row = "remove_row".asInstanceOf[typings.handsontable.handsontableStrings.remove_row]
   }
   
   @js.native
@@ -1222,13 +1248,27 @@ object coreMod {
     @JSName("addHookOnce")
     def addHookOnce_afterGetColHeader(
       key: afterGetColHeader,
-      callback: js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+      callback: js.UndefOr[
+          js.Function3[
+            /* column */ Double, 
+            /* TH */ HTMLTableHeaderCellElement, 
+            /* headerLevel */ Double, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHookOnce")
     def addHookOnce_afterGetColHeader(
       key: afterGetColHeader,
       callback: js.Array[
-          js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+          js.UndefOr[
+            js.Function3[
+              /* column */ Double, 
+              /* TH */ HTMLTableHeaderCellElement, 
+              /* headerLevel */ Double, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("addHookOnce")
@@ -2334,7 +2374,7 @@ object coreMod {
     def addHookOnce_beforeChange(
       key: beforeChange,
       callback: js.UndefOr[
-          js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+          js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
         ]
     ): Unit = js.native
     @JSName("addHookOnce")
@@ -2342,7 +2382,7 @@ object coreMod {
       key: beforeChange,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+            js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
           ]
         ]
     ): Unit = js.native
@@ -2553,7 +2593,12 @@ object coreMod {
     def addHookOnce_beforeCreateRow(
       key: beforeCreateRow,
       callback: js.UndefOr[
-          js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+          js.Function3[
+            /* index */ Double, 
+            /* amount */ Double, 
+            /* source */ js.UndefOr[ChangeSource], 
+            Unit | Boolean
+          ]
         ]
     ): Unit = js.native
     @JSName("addHookOnce")
@@ -2561,7 +2606,12 @@ object coreMod {
       key: beforeCreateRow,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+            js.Function3[
+              /* index */ Double, 
+              /* amount */ Double, 
+              /* source */ js.UndefOr[ChangeSource], 
+              Unit | Boolean
+            ]
           ]
         ]
     ): Unit = js.native
@@ -4142,13 +4192,27 @@ object coreMod {
     @JSName("addHook")
     def addHook_afterGetColHeader(
       key: afterGetColHeader,
-      callback: js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+      callback: js.UndefOr[
+          js.Function3[
+            /* column */ Double, 
+            /* TH */ HTMLTableHeaderCellElement, 
+            /* headerLevel */ Double, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHook")
     def addHook_afterGetColHeader(
       key: afterGetColHeader,
       callback: js.Array[
-          js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+          js.UndefOr[
+            js.Function3[
+              /* column */ Double, 
+              /* TH */ HTMLTableHeaderCellElement, 
+              /* headerLevel */ Double, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -5254,7 +5318,7 @@ object coreMod {
     def addHook_beforeChange(
       key: beforeChange,
       callback: js.UndefOr[
-          js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+          js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -5262,7 +5326,7 @@ object coreMod {
       key: beforeChange,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+            js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
           ]
         ]
     ): Unit = js.native
@@ -5473,7 +5537,12 @@ object coreMod {
     def addHook_beforeCreateRow(
       key: beforeCreateRow,
       callback: js.UndefOr[
-          js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+          js.Function3[
+            /* index */ Double, 
+            /* amount */ Double, 
+            /* source */ js.UndefOr[ChangeSource], 
+            Unit | Boolean
+          ]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -5481,7 +5550,12 @@ object coreMod {
       key: beforeCreateRow,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+            js.Function3[
+              /* index */ Double, 
+              /* amount */ Double, 
+              /* source */ js.UndefOr[ChangeSource], 
+              Unit | Boolean
+            ]
           ]
         ]
     ): Unit = js.native
@@ -6632,139 +6706,54 @@ object coreMod {
       callback: js.Array[js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Unit]]]
     ): Unit = js.native
     
-    def alter(action: insert_row | insert_col | remove_row | remove_col): Unit = js.native
+    def alter(action: AlterActions): Unit = js.native
+    def alter(action: AlterActions, index: js.Array[js.Tuple2[Double, Double]]): Unit = js.native
+    def alter(action: AlterActions, index: js.Array[js.Tuple2[Double, Double]], amount: Double): Unit = js.native
+    def alter(action: AlterActions, index: js.Array[js.Tuple2[Double, Double]], amount: Double, source: String): Unit = js.native
     def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: js.Array[js.Tuple2[Double, Double]]
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: js.Array[js.Tuple2[Double, Double]],
-      amount: Double
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: js.Array[js.Tuple2[Double, Double]],
-      amount: Double,
-      source: String
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
+      action: AlterActions,
       index: js.Array[js.Tuple2[Double, Double]],
       amount: Double,
       source: String,
       keepEmptyRows: Boolean
     ): Unit = js.native
     def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
+      action: AlterActions,
       index: js.Array[js.Tuple2[Double, Double]],
       amount: Double,
       source: Unit,
       keepEmptyRows: Boolean
     ): Unit = js.native
+    def alter(action: AlterActions, index: js.Array[js.Tuple2[Double, Double]], amount: Unit, source: String): Unit = js.native
     def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: js.Array[js.Tuple2[Double, Double]],
-      amount: Unit,
-      source: String
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
+      action: AlterActions,
       index: js.Array[js.Tuple2[Double, Double]],
       amount: Unit,
       source: String,
       keepEmptyRows: Boolean
     ): Unit = js.native
     def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
+      action: AlterActions,
       index: js.Array[js.Tuple2[Double, Double]],
       amount: Unit,
       source: Unit,
       keepEmptyRows: Boolean
     ): Unit = js.native
-    def alter(action: insert_row | insert_col | remove_row | remove_col, index: Double): Unit = js.native
-    def alter(action: insert_row | insert_col | remove_row | remove_col, index: Double, amount: Double): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Double,
-      amount: Double,
-      source: String
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Double,
-      amount: Double,
-      source: String,
-      keepEmptyRows: Boolean
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Double,
-      amount: Double,
-      source: Unit,
-      keepEmptyRows: Boolean
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Double,
-      amount: Unit,
-      source: String
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Double,
-      amount: Unit,
-      source: String,
-      keepEmptyRows: Boolean
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Double,
-      amount: Unit,
-      source: Unit,
-      keepEmptyRows: Boolean
-    ): Unit = js.native
-    def alter(action: insert_row | insert_col | remove_row | remove_col, index: Unit, amount: Double): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Unit,
-      amount: Double,
-      source: String
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Unit,
-      amount: Double,
-      source: String,
-      keepEmptyRows: Boolean
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Unit,
-      amount: Double,
-      source: Unit,
-      keepEmptyRows: Boolean
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Unit,
-      amount: Unit,
-      source: String
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Unit,
-      amount: Unit,
-      source: String,
-      keepEmptyRows: Boolean
-    ): Unit = js.native
-    def alter(
-      action: insert_row | insert_col | remove_row | remove_col,
-      index: Unit,
-      amount: Unit,
-      source: Unit,
-      keepEmptyRows: Boolean
-    ): Unit = js.native
+    def alter(action: AlterActions, index: Double): Unit = js.native
+    def alter(action: AlterActions, index: Double, amount: Double): Unit = js.native
+    def alter(action: AlterActions, index: Double, amount: Double, source: String): Unit = js.native
+    def alter(action: AlterActions, index: Double, amount: Double, source: String, keepEmptyRows: Boolean): Unit = js.native
+    def alter(action: AlterActions, index: Double, amount: Double, source: Unit, keepEmptyRows: Boolean): Unit = js.native
+    def alter(action: AlterActions, index: Double, amount: Unit, source: String): Unit = js.native
+    def alter(action: AlterActions, index: Double, amount: Unit, source: String, keepEmptyRows: Boolean): Unit = js.native
+    def alter(action: AlterActions, index: Double, amount: Unit, source: Unit, keepEmptyRows: Boolean): Unit = js.native
+    def alter(action: AlterActions, index: Unit, amount: Double): Unit = js.native
+    def alter(action: AlterActions, index: Unit, amount: Double, source: String): Unit = js.native
+    def alter(action: AlterActions, index: Unit, amount: Double, source: String, keepEmptyRows: Boolean): Unit = js.native
+    def alter(action: AlterActions, index: Unit, amount: Double, source: Unit, keepEmptyRows: Boolean): Unit = js.native
+    def alter(action: AlterActions, index: Unit, amount: Unit, source: String): Unit = js.native
+    def alter(action: AlterActions, index: Unit, amount: Unit, source: String, keepEmptyRows: Boolean): Unit = js.native
+    def alter(action: AlterActions, index: Unit, amount: Unit, source: Unit, keepEmptyRows: Boolean): Unit = js.native
     
     def batch[R](wrappedOperations: js.Function0[R]): R = js.native
     
@@ -7375,7 +7364,12 @@ object coreMod {
     @JSName("removeHook")
     def removeHook_afterGetColHeader(
       key: afterGetColHeader,
-      callback: js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]
+      callback: js.Function3[
+          /* column */ Double, 
+          /* TH */ HTMLTableHeaderCellElement, 
+          /* headerLevel */ Double, 
+          Unit
+        ]
     ): Unit = js.native
     @JSName("removeHook")
     def removeHook_afterGetColumnHeaderRenderers(key: afterGetColumnHeaderRenderers): Unit = js.native
@@ -7932,7 +7926,7 @@ object coreMod {
     @JSName("removeHook")
     def removeHook_beforeChange(
       key: beforeChange,
-      callback: js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+      callback: js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
     ): Unit = js.native
     @JSName("removeHook")
     def removeHook_beforeChangeRender(key: beforeChangeRender): Unit = js.native
@@ -8035,7 +8029,12 @@ object coreMod {
     @JSName("removeHook")
     def removeHook_beforeCreateRow(
       key: beforeCreateRow,
-      callback: js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+      callback: js.Function3[
+          /* index */ Double, 
+          /* amount */ Double, 
+          /* source */ js.UndefOr[ChangeSource], 
+          Unit | Boolean
+        ]
     ): Unit = js.native
     @JSName("removeHook")
     def removeHook_beforeCut(key: beforeCut): Unit = js.native

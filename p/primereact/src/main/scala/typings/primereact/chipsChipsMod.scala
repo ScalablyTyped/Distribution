@@ -430,6 +430,8 @@ object chipsChipsMod {
     
     var name: js.UndefOr[String] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onAdd: js.UndefOr[js.Function1[/* e */ ChipsAddParams, Unit]] = js.undefined
@@ -1100,6 +1102,10 @@ object chipsChipsMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

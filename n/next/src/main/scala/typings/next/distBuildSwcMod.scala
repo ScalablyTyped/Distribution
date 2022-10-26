@@ -10,8 +10,6 @@ object distBuildSwcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bundle(options: Any): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
-  
   inline def initCustomTraceSubscriber(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initCustomTraceSubscriber")().asInstanceOf[Unit]
   inline def initCustomTraceSubscriber(traceFileName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initCustomTraceSubscriber")(traceFileName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

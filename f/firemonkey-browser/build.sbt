@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firemonkey-browser"
-version := "2.60-dt-20220910Z-1383d7"
+version := "2.62-dt-20221025Z-2f75f7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

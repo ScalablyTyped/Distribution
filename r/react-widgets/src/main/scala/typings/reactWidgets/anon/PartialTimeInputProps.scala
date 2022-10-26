@@ -270,6 +270,8 @@ trait PartialTimeInputProps extends StObject {
   
   var noClearButton: js.UndefOr[Boolean] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -832,6 +834,10 @@ object PartialTimeInputProps {
     inline def setNoClearButton(value: Boolean): Self = StObject.set(x, "noClearButton", value.asInstanceOf[js.Any])
     
     inline def setNoClearButtonUndefined: Self = StObject.set(x, "noClearButton", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

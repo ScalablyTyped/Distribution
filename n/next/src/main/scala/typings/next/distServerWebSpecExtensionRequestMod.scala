@@ -36,8 +36,8 @@ object distServerWebSpecExtensionRequestMod {
        with Request {
     def this(input: RequestInfo) = this()
     def this(input: URL) = this()
-    def this(input: RequestInfo, init: RequestInit) = this()
-    def this(input: URL, init: RequestInit) = this()
+    def this(input: RequestInfo, init: typings.next.distServerWebSpecExtensionRequestMod.RequestInit) = this()
+    def this(input: URL, init: typings.next.distServerWebSpecExtensionRequestMod.RequestInit) = this()
     
     /* standard dom */
     /* CompleteClass */
@@ -168,12 +168,12 @@ object distServerWebSpecExtensionRequestMod {
   }
   object RequestInit {
     
-    inline def apply(): RequestInit = {
+    inline def apply(): typings.next.distServerWebSpecExtensionRequestMod.RequestInit = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RequestInit]
+      __obj.asInstanceOf[typings.next.distServerWebSpecExtensionRequestMod.RequestInit]
     }
     
-    extension [Self <: RequestInit](x: Self) {
+    extension [Self <: typings.next.distServerWebSpecExtensionRequestMod.RequestInit](x: Self) {
       
       inline def setGeo(value: Country): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
       

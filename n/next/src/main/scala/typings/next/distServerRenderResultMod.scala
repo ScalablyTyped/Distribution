@@ -3,6 +3,7 @@ package typings.next
 import typings.next.anon.ContentType
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.node.streamMod.Writable
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,24 +20,6 @@ object distServerRenderResultMod {
     def this(response: ReadableStream[js.typedarray.Uint8Array]) = this()
     def this(response: String, param1: ContentType) = this()
     def this(response: ReadableStream[js.typedarray.Uint8Array], param1: ContentType) = this()
-    
-    /* private */ /* CompleteClass */
-    var _contentType: Any = js.native
-    
-    /* private */ /* CompleteClass */
-    var _result: Any = js.native
-    
-    /* CompleteClass */
-    override def contentType(): ContentTypeOption = js.native
-    
-    /* CompleteClass */
-    override def isDynamic(): Boolean = js.native
-    
-    /* CompleteClass */
-    override def pipe(res: ServerResponse[IncomingMessage]): js.Promise[Unit] = js.native
-    
-    /* CompleteClass */
-    override def toUnchunkedString(): String = js.native
   }
   /* static members */
   object default {
@@ -55,47 +38,20 @@ object distServerRenderResultMod {
   
   type ContentTypeOption = js.UndefOr[String]
   
+  @js.native
   trait RenderResult extends StObject {
     
-    /* private */ var _contentType: Any
+    /* private */ var _contentType: Any = js.native
     
-    /* private */ var _result: Any
+    /* private */ var _result: Any = js.native
     
-    def contentType(): ContentTypeOption
+    def contentType(): ContentTypeOption = js.native
     
-    def isDynamic(): Boolean
+    def isDynamic(): Boolean = js.native
     
-    def pipe(res: ServerResponse[IncomingMessage]): js.Promise[Unit]
+    def pipe(res: ServerResponse[IncomingMessage]): js.Promise[Unit] = js.native
+    def pipe(res: Writable): js.Promise[Unit] = js.native
     
-    def toUnchunkedString(): String
-  }
-  object RenderResult {
-    
-    inline def apply(
-      _contentType: Any,
-      _result: Any,
-      contentType: () => ContentTypeOption,
-      isDynamic: () => Boolean,
-      pipe: ServerResponse[IncomingMessage] => js.Promise[Unit],
-      toUnchunkedString: () => String
-    ): RenderResult = {
-      val __obj = js.Dynamic.literal(_contentType = _contentType.asInstanceOf[js.Any], _result = _result.asInstanceOf[js.Any], contentType = js.Any.fromFunction0(contentType), isDynamic = js.Any.fromFunction0(isDynamic), pipe = js.Any.fromFunction1(pipe), toUnchunkedString = js.Any.fromFunction0(toUnchunkedString))
-      __obj.asInstanceOf[RenderResult]
-    }
-    
-    extension [Self <: RenderResult](x: Self) {
-      
-      inline def setContentType(value: () => ContentTypeOption): Self = StObject.set(x, "contentType", js.Any.fromFunction0(value))
-      
-      inline def setIsDynamic(value: () => Boolean): Self = StObject.set(x, "isDynamic", js.Any.fromFunction0(value))
-      
-      inline def setPipe(value: ServerResponse[IncomingMessage] => js.Promise[Unit]): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
-      
-      inline def setToUnchunkedString(value: () => String): Self = StObject.set(x, "toUnchunkedString", js.Any.fromFunction0(value))
-      
-      inline def set_contentType(value: Any): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
-      
-      inline def set_result(value: Any): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
-    }
+    def toUnchunkedString(): String = js.native
   }
 }

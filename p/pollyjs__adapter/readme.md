@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__adapter
 
-Typings are for version 4.3
+Typings are for version 6.0.4
 
 ## Library description:
 Extendable base adapter class used by @pollyjs
@@ -21,7 +21,7 @@ Extendable base adapter class used by @pollyjs
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

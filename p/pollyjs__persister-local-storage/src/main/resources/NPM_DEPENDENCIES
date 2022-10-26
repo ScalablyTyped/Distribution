@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pollyjs/persister-local-storage" : "6.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pollyjs/persister-local-storage" : "6.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

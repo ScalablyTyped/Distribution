@@ -2223,10 +2223,6 @@ object cypressStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait legacy extends StObject
-  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
-  
-  @js.native
   sealed trait legend extends StObject
   inline def legend: legend = "legend".asInstanceOf[legend]
   

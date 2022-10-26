@@ -720,6 +720,8 @@ object anon {
     
     var listSize: Double
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLLIElement]] = js.undefined
@@ -1332,6 +1334,10 @@ object anon {
       inline def setLiStyleUndefined: Self = StObject.set(x, "liStyle", js.undefined)
       
       inline def setListSize(value: Double): Self = StObject.set(x, "listSize", value.asInstanceOf[js.Any])
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

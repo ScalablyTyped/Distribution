@@ -85,6 +85,8 @@ trait HTMLAttributes[T]
   
   var lang: js.UndefOr[String] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
   
   var prefix: js.UndefOr[String] = js.undefined
@@ -236,6 +238,10 @@ object HTMLAttributes {
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

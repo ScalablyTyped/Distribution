@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lmdb" : "2.6.7"
+      "lmdb" : "2.6.8"
     }
   ],
   "test-dependencies" : [
     {
-      "lmdb" : "2.6.7"
+      "lmdb" : "2.6.8"
     }
   ],
   "compile-devDependencies" : [

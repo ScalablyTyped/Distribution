@@ -1,7 +1,11 @@
 package typings.next.anon
 
+import typings.next.distBuildWebpackPluginsFontLoaderManifestPluginMod.FontLoaderManifest
 import typings.next.distServerLoadComponentsMod.ReactLoadableManifest
 import typings.next.distSharedLibUtilsMod.DocumentType
+import typings.next.nextStrings.app
+import typings.next.nextStrings.pages
+import typings.next.nextStrings.root
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,11 +33,15 @@ trait AppMod extends StObject {
   
   var errorMod: Any
   
+  var fontLoaderManifest: FontLoaderManifest
+  
   var page: String
   
   var pageMod: Any
   
   var pagesRenderToHTML: Any
+  
+  var pagesType: app | pages | root
   
   var reactLoadableManifest: ReactLoadableManifest
   
@@ -56,14 +64,16 @@ object AppMod {
     dev: Boolean,
     error500Mod: Any,
     errorMod: Any,
+    fontLoaderManifest: FontLoaderManifest,
     page: String,
     pageMod: Any,
     pagesRenderToHTML: Any,
+    pagesType: app | pages | root,
     reactLoadableManifest: ReactLoadableManifest,
     serverCSSManifest: Any,
     serverComponentManifest: Any
   ): AppMod = {
-    val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any], appMod = appMod.asInstanceOf[js.Any], appRenderToHTML = appRenderToHTML.asInstanceOf[js.Any], appServerMod = appServerMod.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], buildManifest = buildManifest.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], dev = dev.asInstanceOf[js.Any], error500Mod = error500Mod.asInstanceOf[js.Any], errorMod = errorMod.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pageMod = pageMod.asInstanceOf[js.Any], pagesRenderToHTML = pagesRenderToHTML.asInstanceOf[js.Any], reactLoadableManifest = reactLoadableManifest.asInstanceOf[js.Any], serverCSSManifest = serverCSSManifest.asInstanceOf[js.Any], serverComponentManifest = serverComponentManifest.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any], appMod = appMod.asInstanceOf[js.Any], appRenderToHTML = appRenderToHTML.asInstanceOf[js.Any], appServerMod = appServerMod.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], buildManifest = buildManifest.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], dev = dev.asInstanceOf[js.Any], error500Mod = error500Mod.asInstanceOf[js.Any], errorMod = errorMod.asInstanceOf[js.Any], fontLoaderManifest = fontLoaderManifest.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pageMod = pageMod.asInstanceOf[js.Any], pagesRenderToHTML = pagesRenderToHTML.asInstanceOf[js.Any], pagesType = pagesType.asInstanceOf[js.Any], reactLoadableManifest = reactLoadableManifest.asInstanceOf[js.Any], serverCSSManifest = serverCSSManifest.asInstanceOf[js.Any], serverComponentManifest = serverComponentManifest.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppMod]
   }
   
@@ -89,11 +99,15 @@ object AppMod {
     
     inline def setErrorMod(value: Any): Self = StObject.set(x, "errorMod", value.asInstanceOf[js.Any])
     
+    inline def setFontLoaderManifest(value: FontLoaderManifest): Self = StObject.set(x, "fontLoaderManifest", value.asInstanceOf[js.Any])
+    
     inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     inline def setPageMod(value: Any): Self = StObject.set(x, "pageMod", value.asInstanceOf[js.Any])
     
     inline def setPagesRenderToHTML(value: Any): Self = StObject.set(x, "pagesRenderToHTML", value.asInstanceOf[js.Any])
+    
+    inline def setPagesType(value: app | pages | root): Self = StObject.set(x, "pagesType", value.asInstanceOf[js.Any])
     
     inline def setReactLoadableManifest(value: ReactLoadableManifest): Self = StObject.set(x, "reactLoadableManifest", value.asInstanceOf[js.Any])
     

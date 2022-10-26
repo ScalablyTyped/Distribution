@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLiveSourcesRequest extends StObject {
   
   /**
-    * Upper bound on number of records to return. The maximum number of results is 100.
+    * The maximum number of live sources that you want MediaTailor to return in response to the current request. If there are more than MaxResults live sources, use the value of NextToken in the response to get the next page of results.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsMediatailorMod.MaxResults] = js.undefined
   
   /**
-    * Pagination token from the GET list request. Use the token to fetch the next page of results.
+    * Pagination token returned by the list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
     */
   var NextToken: js.UndefOr[string] = js.undefined
   
   /**
-    * The identifier for the source location you are working on.
+    * The name of the source location associated with this Live Sources list.
     */
   var SourceLocationName: string
 }

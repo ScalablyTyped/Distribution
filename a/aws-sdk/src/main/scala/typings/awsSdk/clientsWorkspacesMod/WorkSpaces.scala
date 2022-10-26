@@ -169,12 +169,12 @@ trait WorkSpaces extends Service {
   ): Request[CreateWorkspaceImageResult, AWSError] = js.native
   
   /**
-    * Creates one or more WorkSpaces. This operation is asynchronous and returns before the WorkSpaces are created.
+    * Creates one or more WorkSpaces. This operation is asynchronous and returns before the WorkSpaces are created.  The MANUAL running mode value is only supported by Amazon WorkSpaces Core. Contact your account team to be allow-listed to use this value. For more information, see Amazon WorkSpaces Core. 
     */
   def createWorkspaces(): Request[CreateWorkspacesResult, AWSError] = js.native
   def createWorkspaces(callback: js.Function2[/* err */ AWSError, /* data */ CreateWorkspacesResult, Unit]): Request[CreateWorkspacesResult, AWSError] = js.native
   /**
-    * Creates one or more WorkSpaces. This operation is asynchronous and returns before the WorkSpaces are created.
+    * Creates one or more WorkSpaces. This operation is asynchronous and returns before the WorkSpaces are created.  The MANUAL running mode value is only supported by Amazon WorkSpaces Core. Contact your account team to be allow-listed to use this value. For more information, see Amazon WorkSpaces Core. 
     */
   def createWorkspaces(params: CreateWorkspacesRequest): Request[CreateWorkspacesResult, AWSError] = js.native
   def createWorkspaces(
@@ -567,12 +567,12 @@ trait WorkSpaces extends Service {
   ): Request[ImportClientBrandingResult, AWSError] = js.native
   
   /**
-    * Imports the specified Windows 10 Bring Your Own License (BYOL) image into Amazon WorkSpaces. The image must be an already licensed Amazon EC2 image that is in your Amazon Web Services account, and you must own the image. For more information about creating BYOL images, see  Bring Your Own Windows Desktop Licenses.
+    * Imports the specified Windows 10 Bring Your Own License (BYOL) or Windows Server 2016 BYOL image into Amazon WorkSpaces. The image must be an already licensed Amazon EC2 image that is in your Amazon Web Services account, and you must own the image. For more information about creating BYOL images, see  Bring Your Own Windows Desktop Licenses.
     */
   def importWorkspaceImage(): Request[ImportWorkspaceImageResult, AWSError] = js.native
   def importWorkspaceImage(callback: js.Function2[/* err */ AWSError, /* data */ ImportWorkspaceImageResult, Unit]): Request[ImportWorkspaceImageResult, AWSError] = js.native
   /**
-    * Imports the specified Windows 10 Bring Your Own License (BYOL) image into Amazon WorkSpaces. The image must be an already licensed Amazon EC2 image that is in your Amazon Web Services account, and you must own the image. For more information about creating BYOL images, see  Bring Your Own Windows Desktop Licenses.
+    * Imports the specified Windows 10 Bring Your Own License (BYOL) or Windows Server 2016 BYOL image into Amazon WorkSpaces. The image must be an already licensed Amazon EC2 image that is in your Amazon Web Services account, and you must own the image. For more information about creating BYOL images, see  Bring Your Own Windows Desktop Licenses.
     */
   def importWorkspaceImage(params: ImportWorkspaceImageRequest): Request[ImportWorkspaceImageResult, AWSError] = js.native
   def importWorkspaceImage(
@@ -697,12 +697,12 @@ trait WorkSpaces extends Service {
   ): Request[ModifyWorkspaceCreationPropertiesResult, AWSError] = js.native
   
   /**
-    * Modifies the specified WorkSpace properties. For important information about how to modify the size of the root and user volumes, see  Modify a WorkSpace. 
+    * Modifies the specified WorkSpace properties. For important information about how to modify the size of the root and user volumes, see  Modify a WorkSpace.   The MANUAL running mode value is only supported by Amazon WorkSpaces Core. Contact your account team to be allow-listed to use this value. For more information, see Amazon WorkSpaces Core. 
     */
   def modifyWorkspaceProperties(): Request[ModifyWorkspacePropertiesResult, AWSError] = js.native
   def modifyWorkspaceProperties(callback: js.Function2[/* err */ AWSError, /* data */ ModifyWorkspacePropertiesResult, Unit]): Request[ModifyWorkspacePropertiesResult, AWSError] = js.native
   /**
-    * Modifies the specified WorkSpace properties. For important information about how to modify the size of the root and user volumes, see  Modify a WorkSpace. 
+    * Modifies the specified WorkSpace properties. For important information about how to modify the size of the root and user volumes, see  Modify a WorkSpace.   The MANUAL running mode value is only supported by Amazon WorkSpaces Core. Contact your account team to be allow-listed to use this value. For more information, see Amazon WorkSpaces Core. 
     */
   def modifyWorkspaceProperties(params: ModifyWorkspacePropertiesRequest): Request[ModifyWorkspacePropertiesResult, AWSError] = js.native
   def modifyWorkspaceProperties(

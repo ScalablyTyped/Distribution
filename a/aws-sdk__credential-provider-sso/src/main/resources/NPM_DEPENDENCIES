@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/credential-provider-sso" : "3.193.0"
+      "@aws-sdk/credential-provider-sso" : "3.196.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/credential-provider-sso" : "3.193.0"
+      "@aws-sdk/credential-provider-sso" : "3.196.0"
     }
   ],
   "compile-devDependencies" : [

@@ -337,6 +337,8 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
     
     var minFlingVelocity: js.UndefOr[Double] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -987,6 +989,10 @@ object swipeableDrawerSwipeableDrawerMod extends Shortcut {
       inline def setModalProps(value: PartialModalProps): Self = StObject.set(x, "ModalProps", value.asInstanceOf[js.Any])
       
       inline def setModalPropsUndefined: Self = StObject.set(x, "ModalProps", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

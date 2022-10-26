@@ -72,7 +72,7 @@ object libComponentsStackStackDottypesMod {
   type IStackComponent = IComponent[IStackProps, IStackTokens, IStackStyles, IStackProps, js.Object]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait IStackProps
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait IStackProps
     extends StObject
        with IStackSlots
        with Slots[IStackSlots]
@@ -189,6 +189,8 @@ object libComponentsStackStackDottypesMod {
       * @deprecated Use `maxWidth` token in `IStackTokens` instead.
       */
     var maxWidth: js.UndefOr[Double | String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     /**
       * Defines the inner padding of the Stack.
@@ -404,6 +406,10 @@ object libComponentsStackStackDottypesMod {
       inline def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setPadding(value: Double | String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       

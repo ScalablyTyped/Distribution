@@ -260,6 +260,8 @@ trait PaginatorProps extends StObject {
   
   var leftContent: js.UndefOr[ReactNode] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -810,6 +812,10 @@ object PaginatorProps {
     inline def setLeftContent(value: ReactNode): Self = StObject.set(x, "leftContent", value.asInstanceOf[js.Any])
     
     inline def setLeftContentUndefined: Self = StObject.set(x, "leftContent", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

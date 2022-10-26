@@ -425,6 +425,8 @@ trait DetailedHTMLPropsVideoHTM extends StObject {
   
   var muted: js.UndefOr[Boolean] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLVideoElement]] = js.undefined
   
@@ -1019,6 +1021,10 @@ object DetailedHTMLPropsVideoHTM {
     inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLVideoElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

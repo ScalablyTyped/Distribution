@@ -3,6 +3,7 @@ package typings.next
 import org.scalablytyped.runtime.StringDictionary
 import typings.next.anon.Content
 import typings.next.anon.ErrorError
+import typings.next.distBuildWebpackPluginsFontLoaderManifestPluginMod.FontLoaderManifest
 import typings.next.distServerApiUtilsMod.ApiPreviewProps
 import typings.next.distServerConfigSharedMod.DomainLocale
 import typings.next.distServerFontUtilsMod.FontConfig
@@ -42,7 +43,7 @@ object distServerRenderMod {
   ): js.Promise[default | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToHTML")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], renderOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default | Null]]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.next.distServerRenderMod.RenderOptsPartial because var conflicts: serverComponentManifest. Inlined buildId, canonicalBase, runtimeConfig, assetPrefix, err, nextExport, dev, ampPath, ErrorDebug, ampValidator, ampSkipValidation, ampOptimizerConfig, isDataReq, params, previewProps, basePath, unstable_runtimeJS, unstable_JsPreload, optimizeFonts, fontManifest, optimizeCss, nextScriptWorkers, devOnlyCacheBusterQueryString, resolvedUrl, resolvedAsPath, serverCSSManifest, distDir, locale, locales, defaultLocale, domainLocales, disableOptimizedLoading, supportsDynamicHTML, runtime, serverComponents, customServer, crossOrigin, images, largePageDataBytes */ trait RenderOpts
+  - typings.next.distServerRenderMod.RenderOptsPartial because var conflicts: serverComponentManifest. Inlined buildId, canonicalBase, runtimeConfig, assetPrefix, err, nextExport, dev, ampPath, ErrorDebug, ampValidator, ampSkipValidation, ampOptimizerConfig, isDataReq, params, previewProps, basePath, unstable_runtimeJS, unstable_JsPreload, optimizeFonts, fontManifest, optimizeCss, nextScriptWorkers, devOnlyCacheBusterQueryString, resolvedUrl, resolvedAsPath, serverCSSManifest, fontLoaderManifest, distDir, locale, locales, defaultLocale, domainLocales, disableOptimizedLoading, supportsDynamicHTML, isBot, runtime, serverComponents, customServer, crossOrigin, images, largePageDataBytes */ trait RenderOpts
     extends StObject
        with LoadComponentsReturnType {
     
@@ -82,9 +83,13 @@ object distServerRenderMod {
     
     var err: js.UndefOr[js.Error | Null] = js.undefined
     
+    var fontLoaderManifest: js.UndefOr[FontLoaderManifest] = js.undefined
+    
     var fontManifest: js.UndefOr[FontManifest] = js.undefined
     
     var images: ImageConfigComplete
+    
+    var isBot: js.UndefOr[Boolean] = js.undefined
     
     var isDataReq: js.UndefOr[Boolean] = js.undefined
     
@@ -222,6 +227,10 @@ object distServerRenderMod {
       
       inline def setErrorDebugUndefined: Self = StObject.set(x, "ErrorDebug", js.undefined)
       
+      inline def setFontLoaderManifest(value: FontLoaderManifest): Self = StObject.set(x, "fontLoaderManifest", value.asInstanceOf[js.Any])
+      
+      inline def setFontLoaderManifestUndefined: Self = StObject.set(x, "fontLoaderManifest", js.undefined)
+      
       inline def setFontManifest(value: FontManifest): Self = StObject.set(x, "fontManifest", value.asInstanceOf[js.Any])
       
       inline def setFontManifestUndefined: Self = StObject.set(x, "fontManifest", js.undefined)
@@ -229,6 +238,10 @@ object distServerRenderMod {
       inline def setFontManifestVarargs(value: Content*): Self = StObject.set(x, "fontManifest", js.Array(value*))
       
       inline def setImages(value: ImageConfigComplete): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      
+      inline def setIsBot(value: Boolean): Self = StObject.set(x, "isBot", value.asInstanceOf[js.Any])
+      
+      inline def setIsBotUndefined: Self = StObject.set(x, "isBot", js.undefined)
       
       inline def setIsDataReq(value: Boolean): Self = StObject.set(x, "isDataReq", value.asInstanceOf[js.Any])
       
@@ -342,9 +355,13 @@ object distServerRenderMod {
     
     var err: js.UndefOr[js.Error | Null] = js.undefined
     
+    var fontLoaderManifest: js.UndefOr[FontLoaderManifest] = js.undefined
+    
     var fontManifest: js.UndefOr[FontManifest] = js.undefined
     
     var images: ImageConfigComplete
+    
+    var isBot: js.UndefOr[Boolean] = js.undefined
     
     var isDataReq: js.UndefOr[Boolean] = js.undefined
     
@@ -476,6 +493,10 @@ object distServerRenderMod {
       
       inline def setErrorDebugUndefined: Self = StObject.set(x, "ErrorDebug", js.undefined)
       
+      inline def setFontLoaderManifest(value: FontLoaderManifest): Self = StObject.set(x, "fontLoaderManifest", value.asInstanceOf[js.Any])
+      
+      inline def setFontLoaderManifestUndefined: Self = StObject.set(x, "fontLoaderManifest", js.undefined)
+      
       inline def setFontManifest(value: FontManifest): Self = StObject.set(x, "fontManifest", value.asInstanceOf[js.Any])
       
       inline def setFontManifestUndefined: Self = StObject.set(x, "fontManifest", js.undefined)
@@ -483,6 +504,10 @@ object distServerRenderMod {
       inline def setFontManifestVarargs(value: Content*): Self = StObject.set(x, "fontManifest", js.Array(value*))
       
       inline def setImages(value: ImageConfigComplete): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      
+      inline def setIsBot(value: Boolean): Self = StObject.set(x, "isBot", value.asInstanceOf[js.Any])
+      
+      inline def setIsBotUndefined: Self = StObject.set(x, "isBot", js.undefined)
       
       inline def setIsDataReq(value: Boolean): Self = StObject.set(x, "isDataReq", value.asInstanceOf[js.Any])
       
@@ -561,4 +586,13 @@ object distServerRenderMod {
       inline def setUnstable_runtimeJSUndefined: Self = StObject.set(x, "unstable_runtimeJS", js.undefined)
     }
   }
+  
+  type RenderToHTMLResult = js.Function5[
+    /* req */ IncomingMessage, 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* pathname */ String, 
+    /* query */ NextParsedUrlQuery, 
+    /* renderOpts */ RenderOpts, 
+    js.Promise[default | Null]
+  ]
 }

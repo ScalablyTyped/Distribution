@@ -259,6 +259,8 @@ trait PartialLocalizationEditor extends StObject {
   
   var menu: js.UndefOr[js.Array[InputProps]] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -797,6 +799,10 @@ object PartialLocalizationEditor {
     inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
     inline def setMenuVarargs(value: InputProps*): Self = StObject.set(x, "menu", js.Array(value*))
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

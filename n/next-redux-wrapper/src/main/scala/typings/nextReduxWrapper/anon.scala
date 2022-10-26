@@ -52,7 +52,7 @@ object anon {
     def useWrappedStore(param0: Any, displayName: String): Props[S] = js.native
     
     def withRedux(Component: Any): Call = js.native
-    def withRedux(Component: default[js.Object, js.Object, js.Object]): Call = js.native
+    def withRedux(Component: default[Any, js.Object, js.Object]): Call = js.native
     def withRedux(
       Component: NextComponentType[typings.next.distSharedLibUtilsMod.NextPageContext, js.Object, js.Object]
     ): Call = js.native

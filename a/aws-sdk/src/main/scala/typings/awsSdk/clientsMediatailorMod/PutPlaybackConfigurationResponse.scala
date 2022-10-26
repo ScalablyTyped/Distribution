@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutPlaybackConfigurationResponse extends StObject {
   
   /**
-    * The URL for the ad decision server (ADS). This includes the specification of static parameters and placeholders for dynamic parameters. AWS Elemental MediaTailor substitutes player-specific and session-specific parameters as needed when calling the ADS. Alternately, for testing, you can provide a static VAST URL. The maximum length is 25,000 characters.
+    * The URL for the ad decision server (ADS). This includes the specification of static parameters and placeholders for dynamic parameters. AWS Elemental MediaTailor substitutes player-specific and session-specific parameters as needed when calling the ADS. Alternately, for testing you can provide a static VAST URL. The maximum length is 25,000 characters.
     */
   var AdDecisionServerUrl: js.UndefOr[string] = js.undefined
   
@@ -67,27 +67,27 @@ trait PutPlaybackConfigurationResponse extends StObject {
   var PersonalizationThresholdSeconds: js.UndefOr[integerMin1] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for the playback configuration.
+    * The Amazon Resource Name (ARN) associated with the playback configuration.
     */
   var PlaybackConfigurationArn: js.UndefOr[string] = js.undefined
   
   /**
-    * The URL that the player accesses to get a manifest from AWS Elemental MediaTailor. This session will use server-side reporting.
+    * The playback endpoint prefix associated with the playback configuration.
     */
   var PlaybackEndpointPrefix: js.UndefOr[string] = js.undefined
   
   /**
-    * The URL that the player uses to initialize a session that uses client-side reporting.
+    * The session initialization endpoint prefix associated with the playback configuration.
     */
   var SessionInitializationEndpointPrefix: js.UndefOr[string] = js.undefined
   
   /**
-    * The URL for a high-quality video asset to transcode and use to fill in time that's not used by ads. AWS Elemental MediaTailor shows the slate to fill in gaps in media content. Configuring the slate is optional for non-VPAID playback configurations. For VPAID, the slate is required because MediaTailor provides it in the slots designated for dynamic ad content. The slate must be a high-quality asset that contains both audio and video.
+    * The URL for a high-quality video asset to transcode and use to fill in time that's not used by ads. AWS Elemental MediaTailor shows the slate to fill in gaps in media content. Configuring the slate is optional for non-VPAID configurations. For VPAID, the slate is required because MediaTailor provides it in the slots that are designated for dynamic ad content. The slate must be a high-quality asset that contains both audio and video.
     */
   var SlateAdUrl: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags assigned to the playback configuration.
+    * The tags to assign to the playback configuration. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
   

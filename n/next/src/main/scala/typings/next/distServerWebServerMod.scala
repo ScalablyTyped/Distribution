@@ -2,11 +2,10 @@ package typings.next
 
 import typings.next.anon.AppRenderToHTML
 import typings.next.anon.Components
-import typings.next.anon.GenerateEtags
+import typings.next.anon.Options
 import typings.next.anon.Query
 import typings.next.distServerBaseHttpWebMod.WebNextRequest
 import typings.next.distServerBaseHttpWebMod.WebNextResponse
-import typings.next.distServerBaseServerMod.Options
 import typings.next.distServerConfigSharedMod.NextConfig
 import typings.next.distServerRenderMod.RenderOpts
 import typings.next.distServerRequestMetaMod.NextParsedUrlQuery
@@ -33,6 +32,8 @@ object distServerWebServerMod {
     
     /* protected */ def getFallback(): js.Promise[String] = js.native
     
+    /* protected */ def getHasAppDir(): Boolean = js.native
+    
     /* protected */ def getResponseCache(): typings.next.distServerResponseCacheWebMod.default = js.native
     
     /* protected */ def handleApiRequest(): js.Promise[Boolean] = js.native
@@ -51,12 +52,12 @@ object distServerWebServerMod {
     
     /* protected */ def runApi(): js.Promise[Boolean] = js.native
     
-    /* protected */ def sendRenderResult(_req: WebNextRequest, res: WebNextResponse, options: GenerateEtags): js.Promise[Unit] = js.native
+    /* protected */ def sendRenderResult(_req: WebNextRequest, res: WebNextResponse, options: Options): js.Promise[Unit] = js.native
   }
   
   trait WebServerOptions
     extends StObject
-       with Options {
+       with typings.next.distServerBaseServerMod.Options {
     
     var webServerConfig: AppRenderToHTML
   }

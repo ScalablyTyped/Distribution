@@ -1,28 +1,40 @@
 package typings.next.anon
 
-import typings.next.nextStrings.`redirect-external`
+import typings.next.nextBooleans.`false`
+import typings.next.nextInts.`301`
+import typings.next.nextInts.`302`
+import typings.next.nextInts.`303`
+import typings.next.nextInts.`307`
+import typings.next.nextInts.`308`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Destination extends StObject {
+trait Destination
+  extends StObject
+     with typings.next.typesMod.Redirect {
+  
+  var basePath: js.UndefOr[`false`] = js.undefined
   
   var destination: String
   
-  var `type`: `redirect-external`
+  var statusCode: `301` | `302` | `303` | `307` | `308`
 }
 object Destination {
   
-  inline def apply(destination: String): Destination = {
-    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("redirect-external")
+  inline def apply(destination: String, statusCode: `301` | `302` | `303` | `307` | `308`): Destination = {
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Destination]
   }
   
   extension [Self <: Destination](x: Self) {
     
+    inline def setBasePath(value: `false`): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    
+    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+    
     inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    inline def setType(value: `redirect-external`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: `301` | `302` | `303` | `307` | `308`): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.handsontable
 import typings.handsontable.`3rdpartyWalkontableSrcMod`.OverlayType
 import typings.handsontable.cellTypesMod.CellType
 import typings.handsontable.commonMod.ChangeSource
+import typings.handsontable.coreMod.AlterActions
 import typings.handsontable.editorsMod.EditorType
 import typings.handsontable.pluginsAutofillAutofillMod.Direction
 import typings.handsontable.pluginsColumnSortingColumnSortingMod.SortOrderType
@@ -1316,12 +1317,40 @@ object handsontableStrings {
   inline def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
-  sealed trait insert_col extends StObject
+  sealed trait insert_col
+    extends StObject
+       with AlterActions
   inline def insert_col: insert_col = "insert_col".asInstanceOf[insert_col]
   
   @js.native
-  sealed trait insert_row extends StObject
+  sealed trait insert_col_end
+    extends StObject
+       with AlterActions
+  inline def insert_col_end: insert_col_end = "insert_col_end".asInstanceOf[insert_col_end]
+  
+  @js.native
+  sealed trait insert_col_start
+    extends StObject
+       with AlterActions
+  inline def insert_col_start: insert_col_start = "insert_col_start".asInstanceOf[insert_col_start]
+  
+  @js.native
+  sealed trait insert_row
+    extends StObject
+       with AlterActions
   inline def insert_row: insert_row = "insert_row".asInstanceOf[insert_row]
+  
+  @js.native
+  sealed trait insert_row_above
+    extends StObject
+       with AlterActions
+  inline def insert_row_above: insert_row_above = "insert_row_above".asInstanceOf[insert_row_above]
+  
+  @js.native
+  sealed trait insert_row_below
+    extends StObject
+       with AlterActions
+  inline def insert_row_below: insert_row_below = "insert_row_below".asInstanceOf[insert_row_below]
   
   @js.native
   sealed trait isSearchResult extends StObject
@@ -1635,12 +1664,14 @@ object handsontableStrings {
   @js.native
   sealed trait remove_col
     extends StObject
+       with AlterActions
        with PredefinedMenuItemKey
   inline def remove_col: remove_col = "remove_col".asInstanceOf[remove_col]
   
   @js.native
   sealed trait remove_row
     extends StObject
+       with AlterActions
        with PredefinedMenuItemKey
   inline def remove_row: remove_row = "remove_row".asInstanceOf[remove_row]
   

@@ -13,9 +13,6 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   def addColumn(name: String): MatrixDropdownColumn = js.native
   def addColumn(name: String, title: String): MatrixDropdownColumn = js.native
   
-  /*
-    * The Matrix toolbar and inner panel toolbars get adaptive if the property is set to true.
-    */
   def allowAdaptiveActions: Boolean = js.native
   def allowAdaptiveActions_=(`val`: Boolean): Unit = js.native
   
@@ -28,7 +25,20 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   def canRemoveRows: Boolean = js.native
   
   /*
-    * Use this property to change the default cell type.
+    * Specifies the type of matrix cells. You can override this property for individual columns.
+    * 
+    * Possible values:
+    * 
+    * - `"dropdown"`
+    * - `"checkbox"`
+    * - `"radiogroup"`
+    * - `"text"`
+    * - `"comment"`
+    * - `"boolean"`
+    * - `"expression"`
+    * - `"rating"`
+    * 
+    * Default value: "dropdown" (inherited from [`settings.matrixDefaultCellType`](https://surveyjs.io/form-library/documentation/settings#matrixDefaultCellType))
     */
   def cellType: String = js.native
   def cellType_=(`val`: String): Unit = js.native
@@ -36,7 +46,18 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   def checkIfValueInRowDuplicated(checkedRow: MatrixDropdownRowModelBase, cellQuestion: Question): Boolean = js.native
   
   /*
-    * The default choices for dropdown, checkbox and radiogroup cell types.
+    * Gets or sets choice items for Dropdown, Checkbox, and Radiogroup matrix cells. You can override this property for individual columns.
+    * 
+    * This property accepts an array of objects with the following structure:
+    * 
+    * ```js
+    * {
+    *   "value": any, // A value to be saved in survey results
+    *   "text": String, // A display text. This property supports Markdown. When `text` is undefined, `value` is used.
+    * }
+    * ```
+    * 
+    * If you need to specify only the `value` property, you can set the `choices` property to an array of primitive values, for example, `[ "item1", "item2", "item3" ]`. These values are both saved in survey results and used as display text.
     */
   def choices: Any = js.native
   def choices_=(`val`: Any): Unit = js.native
@@ -44,13 +65,17 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   /* protected */ def clearRowsAndResetRenderedTable(): Unit = js.native
   
   /*
-    * The default column count for radiogroup and checkbox  cell types.
+    * Specifies the number of columns in Radiogroup and Checkbox cells.
+    * 
+    * Default value: 0 (the number of columns is selected automatically based on the available column width)
     */
   def columnColCount: Double = js.native
   def columnColCount_=(`val`: Double): Unit = js.native
   
   /*
-    * Set columnLayout to 'vertical' to place columns vertically and rows horizontally. It makes sense when we have many columns and few rows.
+    * Specifies the matrix layout. Set this property to `"vertical"` if you want to display columns instead of rows and rows instead of columns.
+    * 
+    * Default value: `"horizontal"`
     */
   def columnLayout: String = js.native
   def columnLayout_=(`val`: String): Unit = js.native
@@ -82,17 +107,29 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   /* protected */ def deleteRowValue(newValue: Any, row: MatrixDropdownRowModelBase): Any = js.native
   
   /*
-    * The template Panel elements, questions and panels.
+    * An array of survey elements (questions and panels) to be displayed in detail sections.
+    * 
+    * Detail sections are expandable panels displayed under each matrix row. You can use them to display questions that do not fit into the row.
+    * 
+    * Set the `detailPanelMode` property to `"underRow"` or `"underRowSingle"` to display detail sections.
     */
   def detailElements: Any = js.native
   
   /*
-    * The detail template Panel. This panel is used as a template on creating detail panel for a row.
+    * Contains a [`PanelModel`](https://surveyjs.io/form-library/documentation/panelmodel) instance that represents a detail section template.
     */
   def detailPanel: PanelModel = js.native
   
   /*
-    * Set the value to "underRow" to show the detailPanel under the row.
+    * Specifies the location of detail sections.
+    * 
+    * Possible values:
+    * 
+    * - `"underRow"` - Displays detail sections under their respective rows. Users can expand any number of detail sections.
+    * - `"underRowSingle"` - Displays detail sections under their respective rows, but only one detail section can be expanded at a time.
+    * - `"none"` (default) - Hides detail sections.
+    * 
+    * Use the `detailElements` property to specify content of detail sections.
     */
   def detailPanelMode: String = js.native
   def detailPanelMode_=(`val`: String): Unit = js.native
@@ -116,7 +153,7 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   def getCellWrapperComponentName(cell: MatrixDropdownCell): String = js.native
   
   /*
-    * Returns the column by it's name. Returns null if a column with this name doesn't exist.
+    * Returns a matrix column with a given `name` or `null` if a column with this is not found.
     */
   def getColumnByName(columnName: String): MatrixDropdownColumn = js.native
   
@@ -126,9 +163,6 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   
   def getColumnName(columnName: String): MatrixDropdownColumn = js.native
   
-  /*
-    * Returns the column width.
-    */
   def getColumnWidth(column: MatrixDropdownColumn): String = js.native
   
   /* protected */ def getConditionObjectRowName(index: Double): String = js.native
@@ -168,7 +202,7 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   def getRowTitleWidth(): String = js.native
   
   /*
-    * Returns the row value. If the row value is empty, the object is empty: {}.
+    * Returns an object with row values. If a row has no answers, this method returns an empty object.
     */
   def getRowValue(rowIndex: Double): Any = js.native
   
@@ -193,14 +227,13 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   
   def hasTotal: Boolean = js.native
   
-  /*
-    * Set this property to true to show the horizontal scroll.
-    */
   def horizontalScroll: Boolean = js.native
   def horizontalScroll_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Returns true if columns are located horizontally
+    * Returns `true` if columns are placed in the horizontal direction and rows in the vertical direction.
+    * 
+    * To specify the layout, use the `columnLayout` property. If you set it to `"vertical"`, the survey applies it only when the screen has enough space. Otherwise, the survey falls back to the horizontal layout, but the `columnLayout` property remains set to `"vertical"`. Unlike `columnLayout`, the `isColumnLayoutHorizontal` property always indicates the current layout.
     */
   def isColumnLayoutHorizontal: Boolean = js.native
   
@@ -213,8 +246,11 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   def isRowsDynamic: Boolean = js.native
   
   /*
-    * Set this property to true if you want to differ case sensitive values in unique columns, for example to allow enter "ABC" into the first row and "abc" into the second.
-    * It doesn't allow by default.
+    * Enables case-sensitive comparison in columns with the `isUnique` property set to `true`.
+    * 
+    * When this property is `true`, `"ABC"` and `"abc"` are considered different values.
+    * 
+    * Default value: `false`
     */
   def isUniqueCaseSensitive: Boolean = js.native
   
@@ -231,7 +267,9 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   var isValidateOnValueChanging_FQuestionMatrixDropdownModelBase: Boolean = js.native
   
   /*
-    * The duplication value error text. Set it to show the text different from the default.
+    * An error message displayed when users enter a duplicate value into a column that accepts only unique values (`isUnique` is set to `true`).
+    * 
+    * A default value for this property is taken from a [localization dictionary](https://github.com/surveyjs/survey-library/tree/master/src/localization). Refer to the following help topic for more information: [Localization & Globalization](https://surveyjs.io/form-library/documentation/localization).
     */
   def keyDuplicationError: String = js.native
   def keyDuplicationError_=(`val`: String): Unit = js.native
@@ -299,7 +337,7 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   def optionsCaption_=(`val`: String): Unit = js.native
   
   /*
-    * The default placeholder for dropdown cell type.
+    * A placeholder for Dropdown matrix cells.
     */
   def placeholder: String = js.native
   def placeholder_=(`val`: String): Unit = js.native
@@ -315,7 +353,7 @@ open class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBa
   def setIsDetailPanelShowing(row: MatrixDropdownRowModelBase, `val`: Boolean): Unit = js.native
   
   /*
-    * Set the row value.
+    * Assigns values to a row.
     */
   def setRowValue(rowIndex: Double, rowValue: Any): Any = js.native
   

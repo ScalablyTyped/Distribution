@@ -36,8 +36,14 @@ object distMultiCachingMod {
     var set_Original: js.Function3[/* key */ String, /* value */ Any, /* ttl */ js.UndefOr[Ttl], js.Promise[Unit]]
     
     def wrap[T](key: String, fn: js.Function0[js.Promise[T]]): js.Promise[T]
+    def wrap[T](key: String, fn: js.Function0[js.Promise[T]], ttl: Ttl): js.Promise[T]
     @JSName("wrap")
-    var wrap_Original: js.Function2[/* key */ String, /* fn */ js.Function0[js.Promise[Any]], js.Promise[Any]]
+    var wrap_Original: js.Function3[
+        /* key */ String, 
+        /* fn */ js.Function0[js.Promise[Any]], 
+        /* ttl */ js.UndefOr[Ttl], 
+        js.Promise[Any]
+      ]
   }
   object MultiCache {
     
@@ -46,9 +52,9 @@ object distMultiCachingMod {
       get: /* key */ String => js.Promise[js.UndefOr[Any]],
       reset: () => js.Promise[Unit],
       set: (/* key */ String, /* value */ Any, /* ttl */ js.UndefOr[Ttl]) => js.Promise[Unit],
-      wrap: (/* key */ String, /* fn */ js.Function0[js.Promise[Any]]) => js.Promise[Any]
+      wrap: (/* key */ String, /* fn */ js.Function0[js.Promise[Any]], /* ttl */ js.UndefOr[Ttl]) => js.Promise[Any]
     ): MultiCache = {
-      val __obj = js.Dynamic.literal(del = js.Any.fromFunction1(del), get = js.Any.fromFunction1(get), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction3(set), wrap = js.Any.fromFunction2(wrap))
+      val __obj = js.Dynamic.literal(del = js.Any.fromFunction1(del), get = js.Any.fromFunction1(get), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction3(set), wrap = js.Any.fromFunction3(wrap))
       __obj.asInstanceOf[MultiCache]
     }
     
@@ -62,7 +68,9 @@ object distMultiCachingMod {
       
       inline def setSet(value: (/* key */ String, /* value */ Any, /* ttl */ js.UndefOr[Ttl]) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
       
-      inline def setWrap(value: (/* key */ String, /* fn */ js.Function0[js.Promise[Any]]) => js.Promise[Any]): Self = StObject.set(x, "wrap", js.Any.fromFunction2(value))
+      inline def setWrap(
+        value: (/* key */ String, /* fn */ js.Function0[js.Promise[Any]], /* ttl */ js.UndefOr[Ttl]) => js.Promise[Any]
+      ): Self = StObject.set(x, "wrap", js.Any.fromFunction3(value))
     }
   }
 }

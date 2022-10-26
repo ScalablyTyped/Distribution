@@ -248,6 +248,8 @@ trait ReadonlyMenuButtonIconRot extends StObject {
   
   val lang: js.UndefOr[String] = js.undefined
   
+  val nonce: js.UndefOr[String] = js.undefined
+  
   val onAbort: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
   val onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLSpanElement]] = js.undefined
@@ -760,6 +762,10 @@ object ReadonlyMenuButtonIconRot {
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

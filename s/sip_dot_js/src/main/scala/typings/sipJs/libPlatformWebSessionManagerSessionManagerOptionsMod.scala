@@ -241,6 +241,12 @@ object libPlatformWebSessionManagerSessionManagerOptionsMod {
     var registrationRetryInterval: js.UndefOr[Double] = js.undefined
     
     /**
+      * Send DTMF using the session description handler (uses RFC 2833 DTMF).
+      * @defaultValue `false`
+      */
+    var sendDTMFUsingSessionDescriptionHandler: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Options for UserAgent.
       */
     var userAgentOptions: js.UndefOr[UserAgentOptions] = js.undefined
@@ -311,6 +317,10 @@ object libPlatformWebSessionManagerSessionManagerOptionsMod {
       inline def setRegistrationRetryIntervalUndefined: Self = StObject.set(x, "registrationRetryInterval", js.undefined)
       
       inline def setRegistrationRetryUndefined: Self = StObject.set(x, "registrationRetry", js.undefined)
+      
+      inline def setSendDTMFUsingSessionDescriptionHandler(value: Boolean): Self = StObject.set(x, "sendDTMFUsingSessionDescriptionHandler", value.asInstanceOf[js.Any])
+      
+      inline def setSendDTMFUsingSessionDescriptionHandlerUndefined: Self = StObject.set(x, "sendDTMFUsingSessionDescriptionHandler", js.undefined)
       
       inline def setUserAgentOptions(value: UserAgentOptions): Self = StObject.set(x, "userAgentOptions", value.asInstanceOf[js.Any])
       

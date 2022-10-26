@@ -470,6 +470,8 @@ object distTypesHeadingMod extends Shortcut {
     
     var moveBy: js.UndefOr[MoveBy] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     // Media Events
     var onAbort: js.UndefOr[ReactEventHandler[HTMLHeadingElement]] = js.undefined
     
@@ -1076,6 +1078,10 @@ object distTypesHeadingMod extends Shortcut {
       inline def setMoveBy(value: MoveBy): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
       
       inline def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLHeadingElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

@@ -11,13 +11,11 @@ trait IsEdgeRuntime extends StObject {
   var dev: Boolean
   
   var isEdgeRuntime: Boolean
-  
-  var serverless: Boolean
 }
 object IsEdgeRuntime {
   
-  inline def apply(appDirEnabled: Boolean, dev: Boolean, isEdgeRuntime: Boolean, serverless: Boolean): IsEdgeRuntime = {
-    val __obj = js.Dynamic.literal(appDirEnabled = appDirEnabled.asInstanceOf[js.Any], dev = dev.asInstanceOf[js.Any], isEdgeRuntime = isEdgeRuntime.asInstanceOf[js.Any], serverless = serverless.asInstanceOf[js.Any])
+  inline def apply(appDirEnabled: Boolean, dev: Boolean, isEdgeRuntime: Boolean): IsEdgeRuntime = {
+    val __obj = js.Dynamic.literal(appDirEnabled = appDirEnabled.asInstanceOf[js.Any], dev = dev.asInstanceOf[js.Any], isEdgeRuntime = isEdgeRuntime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsEdgeRuntime]
   }
   
@@ -28,7 +26,5 @@ object IsEdgeRuntime {
     inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
     
     inline def setIsEdgeRuntime(value: Boolean): Self = StObject.set(x, "isEdgeRuntime", value.asInstanceOf[js.Any])
-    
-    inline def setServerless(value: Boolean): Self = StObject.set(x, "serverless", value.asInstanceOf[js.Any])
   }
 }

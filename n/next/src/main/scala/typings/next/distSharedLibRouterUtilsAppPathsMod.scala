@@ -11,4 +11,7 @@ object distSharedLibRouterUtilsAppPathsMod {
   val ^ : js.Any = js.native
   
   inline def normalizeAppPath(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeAppPath")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def normalizeRscPath(pathname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRscPath")(pathname.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizeRscPath(pathname: String, enabled: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRscPath")(pathname.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any])).asInstanceOf[String]
 }

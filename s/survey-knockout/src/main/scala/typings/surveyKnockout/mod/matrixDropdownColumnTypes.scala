@@ -46,6 +46,11 @@ object matrixDropdownColumnTypes {
   def rating: Any = js.native
   inline def rating_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rating")(x.asInstanceOf[js.Any])
   
+  @JSImport("survey-knockout", "matrixDropdownColumnTypes.tagbox")
+  @js.native
+  def tagbox: Any = js.native
+  inline def tagbox_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
+  
   @JSImport("survey-knockout", "matrixDropdownColumnTypes.text")
   @js.native
   def text: Any = js.native

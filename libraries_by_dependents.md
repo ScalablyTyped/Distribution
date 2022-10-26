@@ -2934,6 +2934,7 @@
 | 0.0 | [fluent-ffmpeg](./f/fluent-ffmpeg) | A fluent API to FFMPEG (http://www.ffmpeg.org)
 | 0.0 | [fluent-langneg](./f/fluent-langneg) | Language Negotiation API for Fluent
 | 0.0 | [fluent-react](./f/fluent-react) | Fluent bindings for React
+| 0.0 | [fluent-reveal-effect](./f/fluent-reveal-effect) | Reveal Effect (Fluent Design)
 | 0.0 | [fluent__bundle](./f/fluent__bundle) | Localization library for expressive translations.
 | 0.0 | [fluent__dedent](./f/fluent__dedent) | A template literal tag for dedenting Fluent code
 | 0.0 | [fluent__langneg](./f/fluent__langneg) | Language Negotiation API for Fluent
@@ -4347,6 +4348,7 @@
 | 0.0 | [jimp__types](./j/jimp__types) | Default Jimp encoder/decoders.
 | 0.0 | [jimp__utils](./j/jimp__utils) | Utils for jimp extensions.
 | 0.0 | [jira-client](./j/jira-client) | Wrapper for the JIRA API
+| 0.0 | [jira2slack](./j/jira2slack) | Library to convert between JIRA markup and Slack m
 | 0.0 | [jju](./j/jju) | a set of utilities to work with JSON / JSON5 docum
 | 0.0 | [jjv](./j/jjv) | A simple and extensible json-schema validator writ
 | 0.0 | [jjve](./j/jjve) | Render JJV errors
@@ -6556,6 +6558,7 @@
 | 0.0 | [nivo__waffle](./n/nivo__waffle) | -
 | 0.0 | [njwt](./n/njwt) | JWT Library for Node.js
 | 0.0 | [nkeys_dot_js](./n/nkeys_dot_js) | A public-key signature system based on Ed25519 for
+| 0.0 | [nkzq__copy-paste](./n/nkzq__copy-paste) | A command line utility that allows read/write (i.e
 | 0.0 | [nlapack](./n/nlapack) | C++ bindings for all single- and double-precision 
 | 0.0 | [nlcst-is-literal](./n/nlcst-is-literal) | nlcst utility to check whether a node is meant lit
 | 0.0 | [nlcst-normalize](./n/nlcst-normalize) | nlcst utility to normalize a word for easier compa
@@ -9225,6 +9228,7 @@
 | 0.0 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg
 | 0.0 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly
 | 0.0 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support
+| 0.0 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.0 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server
 | 0.0 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.0 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli
@@ -9518,6 +9522,7 @@
 | 0.0 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic
 | 0.0 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0.0 | [simperium](./s/simperium) | A simperium client for node.js
+| 0.0 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v
 | 0.0 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign
 | 0.0 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 0.0 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab
@@ -10090,6 +10095,7 @@
 | 0.0 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 0.0 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects
 | 0.0 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
+| 0.0 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.0 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg
 | 0.0 | [swagger-ui](./s/swagger-ui) | -
 | 0.0 | [swagger-ui-dist](./s/swagger-ui-dist) | -
@@ -10243,6 +10249,7 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
+| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th

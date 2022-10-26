@@ -92,13 +92,59 @@ object distSharedLibConstantsMod {
   @js.native
   val CONFIG_FILES: js.Array[String] = js.native
   
-  @JSImport("next/dist/shared/lib/constants", "DEFAULT_SANS_SERIF_FONT")
-  @js.native
-  val DEFAULT_SANS_SERIF_FONT: /* "Arial" */ String = js.native
+  object DEFAULT_SANS_SERIF_FONT {
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SANS_SERIF_FONT")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SANS_SERIF_FONT.azAvgWidth")
+    @js.native
+    def azAvgWidth: Double = js.native
+    inline def azAvgWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("azAvgWidth")(x.asInstanceOf[js.Any])
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SANS_SERIF_FONT.name")
+    @js.native
+    def name: String = js.native
+    inline def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SANS_SERIF_FONT.unitsPerEm")
+    @js.native
+    def unitsPerEm: Double = js.native
+    inline def unitsPerEm_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unitsPerEm")(x.asInstanceOf[js.Any])
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SANS_SERIF_FONT.xAvgCharWidth")
+    @js.native
+    def xAvgCharWidth: Double = js.native
+    inline def xAvgCharWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xAvgCharWidth")(x.asInstanceOf[js.Any])
+  }
   
-  @JSImport("next/dist/shared/lib/constants", "DEFAULT_SERIF_FONT")
-  @js.native
-  val DEFAULT_SERIF_FONT: /* "Times New Roman" */ String = js.native
+  object DEFAULT_SERIF_FONT {
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SERIF_FONT")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SERIF_FONT.azAvgWidth")
+    @js.native
+    def azAvgWidth: Double = js.native
+    inline def azAvgWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("azAvgWidth")(x.asInstanceOf[js.Any])
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SERIF_FONT.name")
+    @js.native
+    def name: String = js.native
+    inline def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SERIF_FONT.unitsPerEm")
+    @js.native
+    def unitsPerEm: Double = js.native
+    inline def unitsPerEm_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unitsPerEm")(x.asInstanceOf[js.Any])
+    
+    @JSImport("next/dist/shared/lib/constants", "DEFAULT_SERIF_FONT.xAvgCharWidth")
+    @js.native
+    def xAvgCharWidth: Double = js.native
+    inline def xAvgCharWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xAvgCharWidth")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("next/dist/shared/lib/constants", "DEV_CLIENT_PAGES_MANIFEST")
   @js.native
@@ -131,6 +177,10 @@ object distSharedLibConstantsMod {
   @JSImport("next/dist/shared/lib/constants", "FLIGHT_SERVER_CSS_MANIFEST")
   @js.native
   val FLIGHT_SERVER_CSS_MANIFEST: /* "flight-server-css-manifest" */ String = js.native
+  
+  @JSImport("next/dist/shared/lib/constants", "FONT_LOADER_MANIFEST")
+  @js.native
+  val FONT_LOADER_MANIFEST: /* "font-loader-manifest" */ String = js.native
   
   @JSImport("next/dist/shared/lib/constants", "FONT_MANIFEST")
   @js.native
@@ -222,10 +272,6 @@ object distSharedLibConstantsMod {
     @js.native
     val server: typings.next.nextStrings.server = js.native
   }
-  
-  @JSImport("next/dist/shared/lib/constants", "SERVERLESS_DIRECTORY")
-  @js.native
-  val SERVERLESS_DIRECTORY: /* "serverless" */ String = js.native
   
   @JSImport("next/dist/shared/lib/constants", "SERVER_DIRECTORY")
   @js.native

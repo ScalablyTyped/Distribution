@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-svgmin"
-version := "1.2-dt-20211202Z-23ee40"
+version := "1.2-dt-20221025Z-23ee40"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

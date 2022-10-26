@@ -1,27 +1,26 @@
 package typings.next
 
-import typings.next.anon.FlightSegmentPath
+import typings.next.anon.CanonicalUrlOverride
+import typings.next.anon.CanonicalUrlOverrideMpaNavigation
+import typings.next.anon.MpaNavigation
 import typings.next.anon.PatchedTree
-import typings.next.anon.PreviousTree
 import typings.next.anon.ReadonlyAppRouterState
-import typings.next.anon.`0`
 import typings.next.distServerAppRenderMod.FlightData
 import typings.next.distServerAppRenderMod.FlightDataPath
 import typings.next.distServerAppRenderMod.FlightRouterState
 import typings.next.distSharedLibAppRouterContextMod.CacheNode
+import typings.next.nextBooleans.`true`
 import typings.next.nextStrings.push
 import typings.next.nextStrings.replace
+import typings.std.Awaited
 import typings.std.Map
+import typings.std.ReturnType
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distClientComponentsReducerMod {
-  
-  @JSImport("next/dist/client/components/reducer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
   
   @JSImport("next/dist/client/components/reducer", "ACTION_NAVIGATE")
   @js.native
@@ -31,9 +30,9 @@ object distClientComponentsReducerMod {
   @js.native
   val ACTION_PREFETCH: /* "prefetch" */ String = js.native
   
-  @JSImport("next/dist/client/components/reducer", "ACTION_RELOAD")
+  @JSImport("next/dist/client/components/reducer", "ACTION_REFRESH")
   @js.native
-  val ACTION_RELOAD: /* "reload" */ String = js.native
+  val ACTION_REFRESH: /* "refresh" */ String = js.native
   
   @JSImport("next/dist/client/components/reducer", "ACTION_RESTORE")
   @js.native
@@ -43,10 +42,13 @@ object distClientComponentsReducerMod {
   @js.native
   val ACTION_SERVER_PATCH: /* "server-patch" */ String = js.native
   
-  inline def reducer(
-    state: ReadonlyAppRouterState,
-    action: ReloadAction | NavigateAction | RestoreAction | ServerPatchAction | PrefetchAction
-  ): AppRouterState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[AppRouterState]
+  @JSImport("next/dist/client/components/reducer", "reducer")
+  @js.native
+  val reducer: js.Function2[
+    /* state */ ReadonlyAppRouterState, 
+    /* _action */ RefreshAction | NavigateAction | RestoreAction | ServerPatchAction | PrefetchAction, 
+    AppRouterState
+  ] = js.native
   
   /**
     * Handles keeping the state of app-router.
@@ -72,7 +74,7 @@ object distClientComponentsReducerMod {
     /**
       * Cache that holds prefetched Flight responses keyed by url
       */
-    var prefetchCache: Map[String, FlightSegmentPath]
+    var prefetchCache: Map[String, CanonicalUrlOverride]
     
     /**
       * Decides if the update should create a new history entry and if the navigation can't be handled by app-router.
@@ -93,7 +95,7 @@ object distClientComponentsReducerMod {
       cache: CacheNode,
       canonicalUrl: String,
       focusAndScrollRef: FocusAndScrollRef,
-      prefetchCache: Map[String, FlightSegmentPath],
+      prefetchCache: Map[String, CanonicalUrlOverride],
       pushRef: PushRef,
       tree: FlightRouterState
     ): AppRouterState = {
@@ -109,7 +111,7 @@ object distClientComponentsReducerMod {
       
       inline def setFocusAndScrollRef(value: FocusAndScrollRef): Self = StObject.set(x, "focusAndScrollRef", value.asInstanceOf[js.Any])
       
-      inline def setPrefetchCache(value: Map[String, FlightSegmentPath]): Self = StObject.set(x, "prefetchCache", value.asInstanceOf[js.Any])
+      inline def setPrefetchCache(value: Map[String, CanonicalUrlOverride]): Self = StObject.set(x, "prefetchCache", value.asInstanceOf[js.Any])
       
       inline def setPushRef(value: PushRef): Self = StObject.set(x, "pushRef", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,7 @@ object distClientComponentsReducerMod {
     
     var forceOptimisticNavigation: Boolean
     
-    var mutable: PatchedTree
+    var mutable: MpaNavigation
     
     var navigateType: push | replace
     
@@ -181,7 +183,7 @@ object distClientComponentsReducerMod {
     inline def apply(
       cache: CacheNode,
       forceOptimisticNavigation: Boolean,
-      mutable: PatchedTree,
+      mutable: MpaNavigation,
       navigateType: push | replace,
       `type`: /* "navigate" */ String,
       url: URL
@@ -197,7 +199,7 @@ object distClientComponentsReducerMod {
       
       inline def setForceOptimisticNavigation(value: Boolean): Self = StObject.set(x, "forceOptimisticNavigation", value.asInstanceOf[js.Any])
       
-      inline def setMutable(value: PatchedTree): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
+      inline def setMutable(value: MpaNavigation): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
       
       inline def setNavigateType(value: push | replace): Self = StObject.set(x, "navigateType", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,20 @@ object distClientComponentsReducerMod {
   
   trait PrefetchAction extends StObject {
     
-    var flightData: FlightData
+    var serverResponse: Awaited[
+        ReturnType[
+          js.Function3[
+            /* url */ URL, 
+            /* flightRouterState */ FlightRouterState, 
+            /* prefetch */ js.UndefOr[`true`], 
+            js.Promise[
+              js.Tuple2[/* FlightData */ FlightData, /* canonicalUrlOverride */ js.UndefOr[URL]]
+            ]
+          ]
+        ]
+      ]
+    
+    var tree: FlightRouterState
     
     var `type`: /* "prefetch" */ String
     
@@ -217,17 +232,46 @@ object distClientComponentsReducerMod {
   }
   object PrefetchAction {
     
-    inline def apply(flightData: FlightData, `type`: /* "prefetch" */ String, url: URL): PrefetchAction = {
-      val __obj = js.Dynamic.literal(flightData = flightData.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(
+      serverResponse: Awaited[
+          ReturnType[
+            js.Function3[
+              /* url */ URL, 
+              /* flightRouterState */ FlightRouterState, 
+              /* prefetch */ js.UndefOr[`true`], 
+              js.Promise[
+                js.Tuple2[/* FlightData */ FlightData, /* canonicalUrlOverride */ js.UndefOr[URL]]
+              ]
+            ]
+          ]
+        ],
+      tree: FlightRouterState,
+      `type`: /* "prefetch" */ String,
+      url: URL
+    ): PrefetchAction = {
+      val __obj = js.Dynamic.literal(serverResponse = serverResponse.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrefetchAction]
     }
     
     extension [Self <: PrefetchAction](x: Self) {
       
-      inline def setFlightData(value: FlightData): Self = StObject.set(x, "flightData", value.asInstanceOf[js.Any])
+      inline def setServerResponse(
+        value: Awaited[
+              ReturnType[
+                js.Function3[
+                  /* url */ URL, 
+                  /* flightRouterState */ FlightRouterState, 
+                  /* prefetch */ js.UndefOr[`true`], 
+                  js.Promise[
+                    js.Tuple2[/* FlightData */ FlightData, /* canonicalUrlOverride */ js.UndefOr[URL]]
+                  ]
+                ]
+              ]
+            ]
+      ): Self = StObject.set(x, "serverResponse", value.asInstanceOf[js.Any])
       
-      inline def setFlightDataVarargs(value: FlightDataPath*): Self = StObject.set(x, "flightData", js.Array(value*))
+      inline def setTree(value: FlightRouterState): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
       
       inline def setType(value: /* "prefetch" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -263,33 +307,33 @@ object distClientComponentsReducerMod {
   }
   
   /**
-    * Reload triggers a reload of the full page data.
+    * Refresh triggers a refresh of the full page data.
     * - fetches the Flight data and fills subTreeData at the root of the cache.
     * - The router state is updated at the root of the state tree.
     */
-  trait ReloadAction extends StObject {
+  trait RefreshAction extends StObject {
     
     var cache: CacheNode
     
-    var mutable: PreviousTree
+    var mutable: PatchedTree
     
-    var `type`: /* "reload" */ String
+    var `type`: /* "refresh" */ String
   }
-  object ReloadAction {
+  object RefreshAction {
     
-    inline def apply(cache: CacheNode, mutable: PreviousTree, `type`: /* "reload" */ String): ReloadAction = {
+    inline def apply(cache: CacheNode, mutable: PatchedTree, `type`: /* "refresh" */ String): RefreshAction = {
       val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], mutable = mutable.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ReloadAction]
+      __obj.asInstanceOf[RefreshAction]
     }
     
-    extension [Self <: ReloadAction](x: Self) {
+    extension [Self <: RefreshAction](x: Self) {
       
       inline def setCache(value: CacheNode): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      inline def setMutable(value: PreviousTree): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
+      inline def setMutable(value: PatchedTree): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
       
-      inline def setType(value: /* "reload" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "refresh" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -338,7 +382,9 @@ object distClientComponentsReducerMod {
     
     var flightData: FlightData
     
-    var mutable: `0`
+    var mutable: CanonicalUrlOverrideMpaNavigation
+    
+    var overrideCanonicalUrl: js.UndefOr[URL] = js.undefined
     
     var previousTree: FlightRouterState
     
@@ -349,7 +395,7 @@ object distClientComponentsReducerMod {
     inline def apply(
       cache: CacheNode,
       flightData: FlightData,
-      mutable: `0`,
+      mutable: CanonicalUrlOverrideMpaNavigation,
       previousTree: FlightRouterState,
       `type`: /* "server-patch" */ String
     ): ServerPatchAction = {
@@ -366,7 +412,11 @@ object distClientComponentsReducerMod {
       
       inline def setFlightDataVarargs(value: FlightDataPath*): Self = StObject.set(x, "flightData", js.Array(value*))
       
-      inline def setMutable(value: `0`): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
+      inline def setMutable(value: CanonicalUrlOverrideMpaNavigation): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
+      
+      inline def setOverrideCanonicalUrl(value: URL): Self = StObject.set(x, "overrideCanonicalUrl", value.asInstanceOf[js.Any])
+      
+      inline def setOverrideCanonicalUrlUndefined: Self = StObject.set(x, "overrideCanonicalUrl", js.undefined)
       
       inline def setPreviousTree(value: FlightRouterState): Self = StObject.set(x, "previousTree", value.asInstanceOf[js.Any])
       

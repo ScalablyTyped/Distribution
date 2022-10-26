@@ -22,6 +22,7 @@ import typings.awsSdkClientSso.distTypesModelsModels0Mod.RoleCredentials
 import typings.awsSdkClientSso.distTypesModelsModels0Mod.RoleInfo
 import typings.awsSdkClientSso.distTypesPaginationInterfacesMod.SSOPaginationConfiguration
 import typings.awsSdkClientSso.distTypesSsoclientMod.SSOClientConfig
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceExceptionOptions
 import typings.awsSdkTypes.distTypesPaginationMod.Paginator
 import org.scalablytyped.runtime.StObject
@@ -41,6 +42,15 @@ object mod {
   open class GetRoleCredentialsCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsMod.GetRoleCredentialsCommand {
     def this(input: GetRoleCredentialsCommandInput) = this()
+  }
+  /* static members */
+  object GetRoleCredentialsCommand {
+    
+    @JSImport("@aws-sdk/client-sso", "GetRoleCredentialsCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   inline def GetRoleCredentialsRequestFilterSensitiveLog(obj: GetRoleCredentialsRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetRoleCredentialsRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
@@ -63,6 +73,15 @@ object mod {
     extends typings.awsSdkClientSso.distTypesCommandsMod.ListAccountRolesCommand {
     def this(input: ListAccountRolesCommandInput) = this()
   }
+  /* static members */
+  object ListAccountRolesCommand {
+    
+    @JSImport("@aws-sdk/client-sso", "ListAccountRolesCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
+  }
   
   inline def ListAccountRolesRequestFilterSensitiveLog(obj: ListAccountRolesRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListAccountRolesRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -74,6 +93,15 @@ object mod {
     extends typings.awsSdkClientSso.distTypesCommandsMod.ListAccountsCommand {
     def this(input: ListAccountsCommandInput) = this()
   }
+  /* static members */
+  object ListAccountsCommand {
+    
+    @JSImport("@aws-sdk/client-sso", "ListAccountsCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
+  }
   
   inline def ListAccountsRequestFilterSensitiveLog(obj: ListAccountsRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListAccountsRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -84,6 +112,15 @@ object mod {
   open class LogoutCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsMod.LogoutCommand {
     def this(input: LogoutCommandInput) = this()
+  }
+  /* static members */
+  object LogoutCommand {
+    
+    @JSImport("@aws-sdk/client-sso", "LogoutCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   inline def LogoutRequestFilterSensitiveLog(obj: LogoutRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("LogoutRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]

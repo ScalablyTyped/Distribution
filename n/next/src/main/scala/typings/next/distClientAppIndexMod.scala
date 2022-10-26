@@ -18,8 +18,4 @@ object distClientAppIndexMod {
   }
   
   inline def hydrate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrate")().asInstanceOf[Unit]
-  
-  @JSImport("next/dist/client/app-index", "version")
-  @js.native
-  val version: js.UndefOr[String] = js.native
 }

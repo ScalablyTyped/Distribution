@@ -95,7 +95,7 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
   - scala.AnyRef because Inheritance from two classes. Inlined 
   - typings.react.mod.DOMAttributes because var conflicts: children, onChange, onClick, onMouseDown, onMouseUp. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, onCanPlayThrough, onLoad, onLoadedMetadata, onSeeked, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
   - js.Any because Inheritance from two classes. Inlined 
-  - typings.react.mod.HTMLAttributes because var conflicts: children, className, defaultChecked, id, onChange, onClick, onMouseDown, onMouseUp, tabIndex. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, slot, autoCapitalize, placeholder, radioGroup, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, unselectable, role, datatype, itemProp, title, autoCorrect, results
+  - typings.react.mod.HTMLAttributes because var conflicts: children, className, defaultChecked, id, onChange, onClick, onMouseDown, onMouseUp, tabIndex. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, slot, autoCapitalize, placeholder, radioGroup, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, unselectable, role, datatype, itemProp, title, autoCorrect, results
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
   - typings.react.mod.InputHTMLAttributes because Inheritance from two classes. Inlined formAction, alt, src, max, multiple, height, enterKeyHint, min, capture, size, maxLength, formEncType, pattern, form, accept, step, minLength, formMethod, formTarget, autoFocus, crossOrigin, onChange_InputHTMLAttributes, formNoValidate, list, autoComplete
   - typings.semanticUiReact.distCommonjsModulesCheckboxCheckboxMod.StrictCheckboxProps because Inheritance from two classes. Inlined checked, defaultChecked, defaultIndeterminate, fitted, indeterminate, name, onChange, onClick, onMouseDown, onMouseUp, radio, readOnly, tabIndex, value
@@ -219,6 +219,8 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
     
     /** The HTML input name. */
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     // Media Events
     var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -715,6 +717,10 @@ object distCommonjsCollectionsFormFormRadioMod extends Shortcut {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

@@ -9,8 +9,10 @@ import typings.next.nextStrings.__NEXT_INIT_URL
 import typings.next.nextStrings.__nextHadTrailingSlash
 import typings.next.nextStrings.__nextIsLocaleDomain
 import typings.next.nextStrings.__nextStrippedLocale
+import typings.next.nextStrings._nextDataNormalizing
 import typings.next.nextStrings._nextDidRewrite
 import typings.next.nextStrings._nextHadBasePath
+import typings.next.nextStrings._nextMiddlewareCookie
 import typings.next.nextStrings._nextRewroteUrl
 import typings.next.nextStrings._protocol
 import typings.next.nextStrings.`1`
@@ -44,6 +46,9 @@ object distServerRequestMetaMod {
   inline def addRequestMeta_NEXTINITURL(request: NextIncomingMessage, key: __NEXT_INIT_URL): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
   inline def addRequestMeta_NEXTINITURL(request: NextIncomingMessage, key: __NEXT_INIT_URL, value: String): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
   
+  inline def addRequestMeta_nextDataNormalizing(request: NextIncomingMessage, key: _nextDataNormalizing): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
+  inline def addRequestMeta_nextDataNormalizing(request: NextIncomingMessage, key: _nextDataNormalizing, value: Boolean): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
+  
   inline def addRequestMeta_nextDidRewrite(request: NextIncomingMessage, key: _nextDidRewrite): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
   inline def addRequestMeta_nextDidRewrite(request: NextIncomingMessage, key: _nextDidRewrite, value: Boolean): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
   
@@ -55,6 +60,9 @@ object distServerRequestMetaMod {
   
   inline def addRequestMeta_nextIsLocaleDomain(request: NextIncomingMessage, key: __nextIsLocaleDomain): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
   inline def addRequestMeta_nextIsLocaleDomain(request: NextIncomingMessage, key: __nextIsLocaleDomain, value: Boolean): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
+  
+  inline def addRequestMeta_nextMiddlewareCookie(request: NextIncomingMessage, key: _nextMiddlewareCookie): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
+  inline def addRequestMeta_nextMiddlewareCookie(request: NextIncomingMessage, key: _nextMiddlewareCookie, value: js.Array[String]): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
   
   inline def addRequestMeta_nextRewroteUrl(request: NextIncomingMessage, key: _nextRewroteUrl): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
   inline def addRequestMeta_nextRewroteUrl(request: NextIncomingMessage, key: _nextRewroteUrl, value: String): RequestMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMeta")(request.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestMeta]
@@ -79,6 +87,8 @@ object distServerRequestMetaMod {
   
   inline def getRequestMeta_NEXTINITURL(req: NextIncomingMessage, key: __NEXT_INIT_URL): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestMeta")(req.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
+  inline def getRequestMeta_nextDataNormalizing(req: NextIncomingMessage, key: _nextDataNormalizing): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestMeta")(req.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  
   inline def getRequestMeta_nextDidRewrite(req: NextIncomingMessage, key: _nextDidRewrite): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestMeta")(req.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   
   inline def getRequestMeta_nextHadBasePath(req: NextIncomingMessage, key: _nextHadBasePath): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestMeta")(req.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
@@ -86,6 +96,8 @@ object distServerRequestMetaMod {
   inline def getRequestMeta_nextHadTrailingSlash(req: NextIncomingMessage, key: __nextHadTrailingSlash): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestMeta")(req.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   
   inline def getRequestMeta_nextIsLocaleDomain(req: NextIncomingMessage, key: __nextIsLocaleDomain): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestMeta")(req.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  
+  inline def getRequestMeta_nextMiddlewareCookie(req: NextIncomingMessage, key: _nextMiddlewareCookie): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestMeta")(req.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
   
   inline def getRequestMeta_nextRewroteUrl(req: NextIncomingMessage, key: _nextRewroteUrl): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestMeta")(req.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
@@ -216,9 +228,13 @@ object distServerRequestMetaMod {
     
     var __nextStrippedLocale: js.UndefOr[Boolean] = js.undefined
     
+    var _nextDataNormalizing: js.UndefOr[Boolean] = js.undefined
+    
     var _nextDidRewrite: js.UndefOr[Boolean] = js.undefined
     
     var _nextHadBasePath: js.UndefOr[Boolean] = js.undefined
+    
+    var _nextMiddlewareCookie: js.UndefOr[js.Array[String]] = js.undefined
     
     var _nextRewroteUrl: js.UndefOr[String] = js.undefined
     
@@ -259,6 +275,10 @@ object distServerRequestMetaMod {
       
       inline def set__nextStrippedLocaleUndefined: Self = StObject.set(x, "__nextStrippedLocale", js.undefined)
       
+      inline def set_nextDataNormalizing(value: Boolean): Self = StObject.set(x, "_nextDataNormalizing", value.asInstanceOf[js.Any])
+      
+      inline def set_nextDataNormalizingUndefined: Self = StObject.set(x, "_nextDataNormalizing", js.undefined)
+      
       inline def set_nextDidRewrite(value: Boolean): Self = StObject.set(x, "_nextDidRewrite", value.asInstanceOf[js.Any])
       
       inline def set_nextDidRewriteUndefined: Self = StObject.set(x, "_nextDidRewrite", js.undefined)
@@ -266,6 +286,12 @@ object distServerRequestMetaMod {
       inline def set_nextHadBasePath(value: Boolean): Self = StObject.set(x, "_nextHadBasePath", value.asInstanceOf[js.Any])
       
       inline def set_nextHadBasePathUndefined: Self = StObject.set(x, "_nextHadBasePath", js.undefined)
+      
+      inline def set_nextMiddlewareCookie(value: js.Array[String]): Self = StObject.set(x, "_nextMiddlewareCookie", value.asInstanceOf[js.Any])
+      
+      inline def set_nextMiddlewareCookieUndefined: Self = StObject.set(x, "_nextMiddlewareCookie", js.undefined)
+      
+      inline def set_nextMiddlewareCookieVarargs(value: String*): Self = StObject.set(x, "_nextMiddlewareCookie", js.Array(value*))
       
       inline def set_nextRewroteUrl(value: String): Self = StObject.set(x, "_nextRewroteUrl", value.asInstanceOf[js.Any])
       

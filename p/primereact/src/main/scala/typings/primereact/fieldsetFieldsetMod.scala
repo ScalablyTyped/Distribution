@@ -274,6 +274,8 @@ object fieldsetFieldsetMod {
     
     var legend: js.UndefOr[ReactNode] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLFieldSetElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLFieldSetElement]] = js.undefined
@@ -808,6 +810,10 @@ object fieldsetFieldsetMod {
       inline def setLegend(value: ReactNode): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
       inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLFieldSetElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

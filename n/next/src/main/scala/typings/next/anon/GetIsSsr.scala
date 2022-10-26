@@ -6,9 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetIsSsr extends StObject {
   
+  var appDir: js.UndefOr[Boolean] = js.undefined
+  
   var getIsSsr: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   var mountedInstances: js.UndefOr[Any] = js.undefined
+  
+  var nonce: js.UndefOr[String] = js.undefined
   
   var scripts: js.UndefOr[Any] = js.undefined
   
@@ -25,6 +29,10 @@ object GetIsSsr {
   
   extension [Self <: GetIsSsr](x: Self) {
     
+    inline def setAppDir(value: Boolean): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
+    
+    inline def setAppDirUndefined: Self = StObject.set(x, "appDir", js.undefined)
+    
     inline def setGetIsSsr(value: () => Boolean): Self = StObject.set(x, "getIsSsr", js.Any.fromFunction0(value))
     
     inline def setGetIsSsrUndefined: Self = StObject.set(x, "getIsSsr", js.undefined)
@@ -32,6 +40,10 @@ object GetIsSsr {
     inline def setMountedInstances(value: Any): Self = StObject.set(x, "mountedInstances", value.asInstanceOf[js.Any])
     
     inline def setMountedInstancesUndefined: Self = StObject.set(x, "mountedInstances", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setScripts(value: Any): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     

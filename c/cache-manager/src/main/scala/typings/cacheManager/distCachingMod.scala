@@ -35,6 +35,7 @@ object distCachingMod {
     var store: S = js.native
     
     def wrap[T](key: String, fn: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
+    def wrap[T](key: String, fn: js.Function0[js.Promise[T]], ttl: Ttl): js.Promise[T] = js.native
   }
   
   type CachingConfig[T] = MemoryConfig | StoreConfig | FactoryConfig[T]

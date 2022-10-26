@@ -407,6 +407,8 @@ trait DetailedHTMLPropsProgress extends StObject {
   
   var max: js.UndefOr[Double | String] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLProgressElement]] = js.undefined
   
@@ -957,6 +959,10 @@ object DetailedHTMLPropsProgress {
     inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLProgressElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

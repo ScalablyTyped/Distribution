@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetChannelPolicyResponse extends StObject {
   
   /**
-    * The IAM policy for the channel.
+    * The IAM policy for the channel. IAM policies are used to control access to your channel.
     */
   var Policy: js.UndefOr[string] = js.undefined
 }

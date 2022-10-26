@@ -1014,6 +1014,8 @@ object reactSwiperReactMod {
       */
     var noSwipingSelector: js.UndefOr[String] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     /**
       * Normalize slide index.
       *
@@ -2857,6 +2859,10 @@ object reactSwiperReactMod {
       inline def setNoSwipingSelectorUndefined: Self = StObject.set(x, "noSwipingSelector", js.undefined)
       
       inline def setNoSwipingUndefined: Self = StObject.set(x, "noSwiping", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setNormalizeSlideIndex(value: Boolean): Self = StObject.set(x, "normalizeSlideIndex", value.asInstanceOf[js.Any])
       

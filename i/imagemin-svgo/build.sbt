@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "imagemin-svgo"
-version := "10.0-dt-20220222Z-e08748"
+version := "10.0-dt-20221025Z-e08748"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

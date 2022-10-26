@@ -44,7 +44,7 @@ trait DefaultRouteMatches extends StObject {
   def handleRewrites(req: BaseNextRequest[Any], parsedUrl: UrlWithParsedQuery): js.Object = js.native
   def handleRewrites(req: IncomingMessage, parsedUrl: UrlWithParsedQuery): js.Object = js.native
   
-  def interpolateDynamicPath(pathname: String, params: Record[String, String | js.Array[String]]): String = js.native
+  def interpolateDynamicPath(pathname: String, params: Record[String, js.UndefOr[String | js.Array[String]]]): String = js.native
   
   def normalizeDynamicRouteParams(
     params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any

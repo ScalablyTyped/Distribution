@@ -12,7 +12,7 @@ trait ListPrefetchSchedulesResponse extends StObject {
   var Items: js.UndefOr[listOfPrefetchSchedule] = js.undefined
   
   /**
-    * The value that you will use forNextToken in the next ListPrefetchSchedulesRequest request.
+    * Pagination token returned by the list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
     */
   var NextToken: js.UndefOr[string] = js.undefined
 }

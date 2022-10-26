@@ -175,7 +175,7 @@ object libEsmComponentsFormsControlsMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
   - typings.react.mod.InputHTMLAttributes because var conflicts: className. Inlined formAction, alt, src, max, required, multiple, height, enterKeyHint, min, capture, size, maxLength, formEncType, pattern, form, accept, step, value, minLength, readOnly, name, disabled, formMethod, width, formTarget, autoFocus, crossOrigin, `type`, checked, onChange_InputHTMLAttributes, formNoValidate, list, autoComplete */ trait IControlProps
     extends StObject
        with IProps
@@ -322,6 +322,8 @@ object libEsmComponentsFormsControlsMod {
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     @JSName("onChange")
     var onChange_InputHTMLAttributes: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
@@ -625,6 +627,10 @@ object libEsmComponentsFormsControlsMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       

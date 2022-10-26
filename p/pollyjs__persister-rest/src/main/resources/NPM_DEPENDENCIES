@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pollyjs/persister-rest" : "6.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pollyjs/persister-rest" : "6.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

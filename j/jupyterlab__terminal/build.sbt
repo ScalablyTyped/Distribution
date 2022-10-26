@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__terminal"
-version := "3.5.0-7ef9b6"
+version := "3.5.0-ba68ac"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "free-style" % "4.1.0-8b3bde",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "3.5.0-6c4f29",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "3.5.0-01056c",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "5.5.0-c1cac4",
   "org.scalablytyped" %%% "jupyterlab__nbformat" % "3.5.0-81f773",
   "org.scalablytyped" %%% "jupyterlab__observables" % "4.5.0-1ab86b",
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jupyterlab__settingregistry" % "3.5.0-9d1f2c",
   "org.scalablytyped" %%% "jupyterlab__statedb" % "3.5.0-a6333c",
   "org.scalablytyped" %%% "jupyterlab__translation" % "3.5.0-68a3e6",
-  "org.scalablytyped" %%% "jupyterlab__ui-components" % "3.5.0-a98d01",
+  "org.scalablytyped" %%% "jupyterlab__ui-components" % "3.5.0-92f0f8",
   "org.scalablytyped" %%% "lumino__algorithm" % "1.9.2-3d1e81",
   "org.scalablytyped" %%% "lumino__commands" % "1.20.1-fbd872",
   "org.scalablytyped" %%% "lumino__coreutils" % "1.12.1-8c650c",
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lumino__virtualdom" % "1.14.2-f88614",
   "org.scalablytyped" %%% "lumino__widgets" % "1.34.1-c32c29",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "typestyle" % "2.4.0-b099cb")

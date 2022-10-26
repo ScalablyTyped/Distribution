@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePlaybackConfigurationRequest extends StObject {
   
   /**
-    * The identifier for the playback configuration.
+    * The name of the playback configuration.
     */
   var Name: string
 }

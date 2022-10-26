@@ -353,6 +353,8 @@ object distCommonjsCollectionsFormFormButtonMod extends Shortcut {
     
     var negative: js.UndefOr[Boolean] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLButtonElement]] = js.undefined
@@ -1007,6 +1009,10 @@ object distCommonjsCollectionsFormFormButtonMod extends Shortcut {
       inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
       
       inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

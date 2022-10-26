@@ -12,7 +12,7 @@ trait GetChannelScheduleResponse extends StObject {
   var Items: js.UndefOr[listOfScheduleEntry] = js.undefined
   
   /**
-    * Pagination token from the GET list request. Use the token to fetch the next page of results.
+    * Pagination token returned by the list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
     */
   var NextToken: js.UndefOr[string] = js.undefined
 }

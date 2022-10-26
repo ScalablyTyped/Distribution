@@ -2,7 +2,6 @@ package typings.next
 
 import typings.next.nextStrings.`set-cookie`
 import typings.std.RequestInfo
-import typings.std.RequestInit
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,9 +44,9 @@ object `distCompiled@edgeRuntimePrimitivesFetchMod` {
   /* was `typeof fetch` */
   inline def fetch(input: RequestInfo): js.Promise[typings.std.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.Response]]
   /* was `typeof fetch` */
-  inline def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.std.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.Response]]
+  inline def fetch(input: RequestInfo, init: typings.std.RequestInit): js.Promise[typings.std.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.Response]]
   /* was `typeof fetch` */
   inline def fetch(input: URL): js.Promise[typings.std.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.Response]]
   /* was `typeof fetch` */
-  inline def fetch(input: URL, init: RequestInit): js.Promise[typings.std.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.Response]]
+  inline def fetch(input: URL, init: typings.std.RequestInit): js.Promise[typings.std.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.Response]]
 }

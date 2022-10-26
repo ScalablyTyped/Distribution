@@ -274,6 +274,8 @@ object typesLibRowMod {
     
     var noGutters: js.UndefOr[Boolean] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.undefined
@@ -808,6 +810,10 @@ object typesLibRowMod {
       inline def setNoGutters(value: Boolean): Self = StObject.set(x, "noGutters", value.asInstanceOf[js.Any])
       
       inline def setNoGuttersUndefined: Self = StObject.set(x, "noGutters", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

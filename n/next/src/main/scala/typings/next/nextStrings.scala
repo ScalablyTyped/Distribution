@@ -6,9 +6,10 @@ import typings.next.distBuildUtilsMod.ROUTER_TYPE
 import typings.next.distBuildWebpackPluginsSubresourceIntegrityPluginMod.SubresourceIntegrityAlgorithm
 import typings.next.distBuildWebpackPluginsTelemetryPluginMod.SWC_TARGET_TRIPLE
 import typings.next.distBuildWebpackPluginsTelemetryPluginMod._Feature
+import typings.next.distClientComponentsReactDevOverlayInternalHelpersNodeStackFramesMod.ErrorType
 import typings.next.distClientImageMod.PlaceholderValue
-import typings.next.distClientImageMod._LayoutValue
 import typings.next.distClientImageMod._LoadingValue
+import typings.next.distClientLegacyImageMod._LayoutValue
 import typings.next.distClientRouterMod.RouterEvent
 import typings.next.distLibHelpersGetPkgManagerMod.PackageManager
 import typings.next.distLibLoadCustomRoutesMod.RouteType
@@ -44,10 +45,6 @@ object nextStrings {
   inline def CLS: CLS = "CLS".asInstanceOf[CLS]
   
   @js.native
-  sealed trait CookiesContext extends StObject
-  inline def CookiesContext: CookiesContext = "CookiesContext".asInstanceOf[CookiesContext]
-  
-  @js.native
   sealed trait FCP extends StObject
   inline def FCP: FCP = "FCP".asInstanceOf[FCP]
   
@@ -56,18 +53,10 @@ object nextStrings {
   inline def FID: FID = "FID".asInstanceOf[FID]
   
   @js.native
-  sealed trait FetchRevalidateContext extends StObject
-  inline def FetchRevalidateContext: FetchRevalidateContext = "FetchRevalidateContext".asInstanceOf[FetchRevalidateContext]
-  
-  @js.native
   sealed trait HIT
     extends StObject
        with XCacheHeader
   inline def HIT: HIT = "HIT".asInstanceOf[HIT]
-  
-  @js.native
-  sealed trait HeadersContext extends StObject
-  inline def HeadersContext: HeadersContext = "HeadersContext".asInstanceOf[HeadersContext]
   
   @js.native
   sealed trait IMAGE extends StObject
@@ -118,10 +107,6 @@ object nextStrings {
   inline def PAGE: PAGE = "PAGE".asInstanceOf[PAGE]
   
   @js.native
-  sealed trait PreviewDataContext extends StObject
-  inline def PreviewDataContext: PreviewDataContext = "PreviewDataContext".asInstanceOf[PreviewDataContext]
-  
-  @js.native
   sealed trait REDIRECT extends StObject
   inline def REDIRECT: REDIRECT = "REDIRECT".asInstanceOf[REDIRECT]
   
@@ -152,10 +137,6 @@ object nextStrings {
     extends StObject
        with XCacheHeader
   inline def STALE: STALE = "STALE".asInstanceOf[STALE]
-  
-  @js.native
-  sealed trait StaticGenerationContext extends StObject
-  inline def StaticGenerationContext: StaticGenerationContext = "StaticGenerationContext".asInstanceOf[StaticGenerationContext]
   
   @js.native
   sealed trait TTFB extends StObject
@@ -202,12 +183,20 @@ object nextStrings {
   inline def __nextStrippedLocale: __nextStrippedLocale = "__nextStrippedLocale".asInstanceOf[__nextStrippedLocale]
   
   @js.native
+  sealed trait _nextDataNormalizing extends StObject
+  inline def _nextDataNormalizing: _nextDataNormalizing = "_nextDataNormalizing".asInstanceOf[_nextDataNormalizing]
+  
+  @js.native
   sealed trait _nextDidRewrite extends StObject
   inline def _nextDidRewrite: _nextDidRewrite = "_nextDidRewrite".asInstanceOf[_nextDidRewrite]
   
   @js.native
   sealed trait _nextHadBasePath extends StObject
   inline def _nextHadBasePath: _nextHadBasePath = "_nextHadBasePath".asInstanceOf[_nextHadBasePath]
+  
+  @js.native
+  sealed trait _nextMiddlewareCookie extends StObject
+  inline def _nextMiddlewareCookie: _nextMiddlewareCookie = "_nextMiddlewareCookie".asInstanceOf[_nextMiddlewareCookie]
   
   @js.native
   sealed trait _nextRewroteUrl extends StObject
@@ -339,7 +328,7 @@ object nextStrings {
   sealed trait blur
     extends StObject
        with PlaceholderValue
-       with typings.next.distClientFutureImageMod.PlaceholderValue
+       with typings.next.distClientLegacyImageMod.PlaceholderValue
   inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
@@ -353,6 +342,10 @@ object nextStrings {
   @js.native
   sealed trait `bottom-right` extends StObject
   inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  
+  @js.native
+  sealed trait bug extends StObject
+  inline def bug: bug = "bug".asInstanceOf[bug]
   
   @js.native
   sealed trait `build-lint` extends StObject
@@ -444,7 +437,7 @@ object nextStrings {
   sealed trait eager
     extends StObject
        with _LoadingValue
-       with typings.next.distClientFutureImageMod._LoadingValue
+       with typings.next.distClientLegacyImageMod._LoadingValue
   inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
@@ -452,7 +445,9 @@ object nextStrings {
   inline def edge: edge = "edge".asInstanceOf[edge]
   
   @js.native
-  sealed trait `edge-server` extends StObject
+  sealed trait `edge-server`
+    extends StObject
+       with ErrorType
   inline def `edge-server`: `edge-server` = "edge-server".asInstanceOf[`edge-server`]
   
   @js.native
@@ -463,7 +458,7 @@ object nextStrings {
   sealed trait empty
     extends StObject
        with PlaceholderValue
-       with typings.next.distClientFutureImageMod.PlaceholderValue
+       with typings.next.distClientLegacyImageMod.PlaceholderValue
   inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
@@ -485,10 +480,6 @@ object nextStrings {
   inline def `experimental-edge`: `experimental-edge` = "experimental-edge".asInstanceOf[`experimental-edge`]
   
   @js.native
-  sealed trait `experimental-serverless-trace` extends StObject
-  inline def `experimental-serverless-trace`: `experimental-serverless-trace` = "experimental-serverless-trace".asInstanceOf[`experimental-serverless-trace`]
-  
-  @js.native
   sealed trait experimentalSlashnextScriptWorkers extends StObject
   inline def experimentalSlashnextScriptWorkers: experimentalSlashnextScriptWorkers = "experimental/nextScriptWorkers".asInstanceOf[experimentalSlashnextScriptWorkers]
   
@@ -507,6 +498,10 @@ object nextStrings {
   @js.native
   sealed trait fallback extends StObject
   inline def fallback: fallback = "fallback".asInstanceOf[fallback]
+  
+  @js.native
+  sealed trait fatal extends StObject
+  inline def fatal: fatal = "fatal".asInstanceOf[fatal]
   
   @js.native
   sealed trait file extends StObject
@@ -557,6 +552,10 @@ object nextStrings {
   inline def hashChangeStart: hashChangeStart = "hashChangeStart".asInstanceOf[hashChangeStart]
   
   @js.native
+  sealed trait head extends StObject
+  inline def head: head = "head".asInstanceOf[head]
+  
+  @js.native
   sealed trait header
     extends StObject
        with RouteType
@@ -565,6 +564,10 @@ object nextStrings {
   @js.native
   sealed trait height extends StObject
   inline def height: height = "height".asInstanceOf[height]
+  
+  @js.native
+  sealed trait hint extends StObject
+  inline def hint: hint = "hint".asInstanceOf[hint]
   
   @js.native
   sealed trait horizontal extends StObject
@@ -631,6 +634,10 @@ object nextStrings {
   inline def imgix: imgix = "imgix".asInstanceOf[imgix]
   
   @js.native
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
+  
+  @js.native
   sealed trait inherit extends StObject
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
@@ -678,7 +685,7 @@ object nextStrings {
   sealed trait `lazy`
     extends StObject
        with _LoadingValue
-       with typings.next.distClientFutureImageMod._LoadingValue
+       with typings.next.distClientLegacyImageMod._LoadingValue
   inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   
   @js.native
@@ -760,6 +767,12 @@ object nextStrings {
   inline def nextSlashimage: nextSlashimage = "next/image".asInstanceOf[nextSlashimage]
   
   @js.native
+  sealed trait nextSlashlegacySlashimage
+    extends StObject
+       with _Feature
+  inline def nextSlashlegacySlashimage: nextSlashlegacySlashimage = "next/legacy/image".asInstanceOf[nextSlashlegacySlashimage]
+  
+  @js.native
   sealed trait nextSlashscript
     extends StObject
        with _Feature
@@ -778,6 +791,14 @@ object nextStrings {
   @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait `not-found` extends StObject
+  inline def `not-found`: `not-found` = "not-found".asInstanceOf[`not-found`]
+  
+  @js.native
+  sealed trait note extends StObject
+  inline def note: note = "note".asInstanceOf[note]
   
   @js.native
   sealed trait npm
@@ -882,14 +903,6 @@ object nextStrings {
   inline def quit: quit = "quit".asInstanceOf[quit]
   
   @js.native
-  sealed trait `redirect-external` extends StObject
-  inline def `redirect-external`: `redirect-external` = "redirect-external".asInstanceOf[`redirect-external`]
-  
-  @js.native
-  sealed trait `redirect-internal` extends StObject
-  inline def `redirect-internal`: `redirect-internal` = "redirect-internal".asInstanceOf[`redirect-internal`]
-  
-  @js.native
   sealed trait redirect_
     extends StObject
        with RouteType
@@ -972,6 +985,10 @@ object nextStrings {
   inline def router: router = "router".asInstanceOf[router]
   
   @js.native
+  sealed trait rsc extends StObject
+  inline def rsc: rsc = "rsc".asInstanceOf[rsc]
+  
+  @js.native
   sealed trait script extends StObject
   inline def script: script = "script".asInstanceOf[script]
   
@@ -982,12 +999,9 @@ object nextStrings {
   @js.native
   sealed trait server
     extends StObject
+       with ErrorType
        with RSCModuleType
   inline def server: server = "server".asInstanceOf[server]
-  
-  @js.native
-  sealed trait serverless extends StObject
-  inline def serverless: serverless = "serverless".asInstanceOf[serverless]
   
   @js.native
   sealed trait `set-cookie` extends StObject
@@ -1046,6 +1060,10 @@ object nextStrings {
   @js.native
   sealed trait strict extends StObject
   inline def strict: strict = "strict".asInstanceOf[strict]
+  
+  @js.native
+  sealed trait suggestions extends StObject
+  inline def suggestions: suggestions = "suggestions".asInstanceOf[suggestions]
   
   @js.native
   sealed trait swcEmotion
@@ -1172,6 +1190,10 @@ object nextStrings {
   @js.native
   sealed trait warn extends StObject
   inline def warn: warn = "warn".asInstanceOf[warn]
+  
+  @js.native
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
   sealed trait `web-vital` extends StObject

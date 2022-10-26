@@ -1660,26 +1660,54 @@ object pluginHooksMod {
     @JSName("add")
     def add_afterGetColHeader(
       key: afterGetColHeader,
-      callback: js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+      callback: js.UndefOr[
+          js.Function3[
+            /* column */ Double, 
+            /* TH */ HTMLTableHeaderCellElement, 
+            /* headerLevel */ Double, 
+            Unit
+          ]
+        ]
     ): Hooks = js.native
     @JSName("add")
     def add_afterGetColHeader(
       key: afterGetColHeader,
-      callback: js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]],
+      callback: js.UndefOr[
+          js.Function3[
+            /* column */ Double, 
+            /* TH */ HTMLTableHeaderCellElement, 
+            /* headerLevel */ Double, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
     def add_afterGetColHeader(
       key: afterGetColHeader,
       callback: js.Array[
-          js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+          js.UndefOr[
+            js.Function3[
+              /* column */ Double, 
+              /* TH */ HTMLTableHeaderCellElement, 
+              /* headerLevel */ Double, 
+              Unit
+            ]
+          ]
         ]
     ): Hooks = js.native
     @JSName("add")
     def add_afterGetColHeader(
       key: afterGetColHeader,
       callback: js.Array[
-          js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+          js.UndefOr[
+            js.Function3[
+              /* column */ Double, 
+              /* TH */ HTMLTableHeaderCellElement, 
+              /* headerLevel */ Double, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
@@ -4038,14 +4066,14 @@ object pluginHooksMod {
     def add_beforeChange(
       key: beforeChange,
       callback: js.UndefOr[
-          js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+          js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
         ]
     ): Hooks = js.native
     @JSName("add")
     def add_beforeChange(
       key: beforeChange,
       callback: js.UndefOr[
-          js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+          js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
         ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
@@ -4054,7 +4082,7 @@ object pluginHooksMod {
       key: beforeChange,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+            js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
           ]
         ]
     ): Hooks = js.native
@@ -4063,7 +4091,7 @@ object pluginHooksMod {
       key: beforeChange,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+            js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -4501,14 +4529,24 @@ object pluginHooksMod {
     def add_beforeCreateRow(
       key: beforeCreateRow,
       callback: js.UndefOr[
-          js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+          js.Function3[
+            /* index */ Double, 
+            /* amount */ Double, 
+            /* source */ js.UndefOr[ChangeSource], 
+            Unit | Boolean
+          ]
         ]
     ): Hooks = js.native
     @JSName("add")
     def add_beforeCreateRow(
       key: beforeCreateRow,
       callback: js.UndefOr[
-          js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+          js.Function3[
+            /* index */ Double, 
+            /* amount */ Double, 
+            /* source */ js.UndefOr[ChangeSource], 
+            Unit | Boolean
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
@@ -4517,7 +4555,12 @@ object pluginHooksMod {
       key: beforeCreateRow,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+            js.Function3[
+              /* index */ Double, 
+              /* amount */ Double, 
+              /* source */ js.UndefOr[ChangeSource], 
+              Unit | Boolean
+            ]
           ]
         ]
     ): Hooks = js.native
@@ -4526,7 +4569,12 @@ object pluginHooksMod {
       key: beforeCreateRow,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+            js.Function3[
+              /* index */ Double, 
+              /* amount */ Double, 
+              /* source */ js.UndefOr[ChangeSource], 
+              Unit | Boolean
+            ]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -8444,26 +8492,54 @@ object pluginHooksMod {
     @JSName("once")
     def once_afterGetColHeader(
       key: afterGetColHeader,
-      callback: js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+      callback: js.UndefOr[
+          js.Function3[
+            /* column */ Double, 
+            /* TH */ HTMLTableHeaderCellElement, 
+            /* headerLevel */ Double, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("once")
     def once_afterGetColHeader(
       key: afterGetColHeader,
-      callback: js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]],
+      callback: js.UndefOr[
+          js.Function3[
+            /* column */ Double, 
+            /* TH */ HTMLTableHeaderCellElement, 
+            /* headerLevel */ Double, 
+            Unit
+          ]
+        ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
     def once_afterGetColHeader(
       key: afterGetColHeader,
       callback: js.Array[
-          js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+          js.UndefOr[
+            js.Function3[
+              /* column */ Double, 
+              /* TH */ HTMLTableHeaderCellElement, 
+              /* headerLevel */ Double, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("once")
     def once_afterGetColHeader(
       key: afterGetColHeader,
       callback: js.Array[
-          js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+          js.UndefOr[
+            js.Function3[
+              /* column */ Double, 
+              /* TH */ HTMLTableHeaderCellElement, 
+              /* headerLevel */ Double, 
+              Unit
+            ]
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
@@ -10822,14 +10898,14 @@ object pluginHooksMod {
     def once_beforeChange(
       key: beforeChange,
       callback: js.UndefOr[
-          js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+          js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
         ]
     ): Unit = js.native
     @JSName("once")
     def once_beforeChange(
       key: beforeChange,
       callback: js.UndefOr[
-          js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+          js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
         ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
@@ -10838,7 +10914,7 @@ object pluginHooksMod {
       key: beforeChange,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+            js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
           ]
         ]
     ): Unit = js.native
@@ -10847,7 +10923,7 @@ object pluginHooksMod {
       key: beforeChange,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+            js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -11285,14 +11361,24 @@ object pluginHooksMod {
     def once_beforeCreateRow(
       key: beforeCreateRow,
       callback: js.UndefOr[
-          js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+          js.Function3[
+            /* index */ Double, 
+            /* amount */ Double, 
+            /* source */ js.UndefOr[ChangeSource], 
+            Unit | Boolean
+          ]
         ]
     ): Unit = js.native
     @JSName("once")
     def once_beforeCreateRow(
       key: beforeCreateRow,
       callback: js.UndefOr[
-          js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+          js.Function3[
+            /* index */ Double, 
+            /* amount */ Double, 
+            /* source */ js.UndefOr[ChangeSource], 
+            Unit | Boolean
+          ]
         ],
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
@@ -11301,7 +11387,12 @@ object pluginHooksMod {
       key: beforeCreateRow,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+            js.Function3[
+              /* index */ Double, 
+              /* amount */ Double, 
+              /* source */ js.UndefOr[ChangeSource], 
+              Unit | Boolean
+            ]
           ]
         ]
     ): Unit = js.native
@@ -11310,7 +11401,12 @@ object pluginHooksMod {
       key: beforeCreateRow,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+            js.Function3[
+              /* index */ Double, 
+              /* amount */ Double, 
+              /* source */ js.UndefOr[ChangeSource], 
+              Unit | Boolean
+            ]
           ]
         ],
       context: typings.handsontable.coreMod.default
@@ -14015,7 +14111,14 @@ object pluginHooksMod {
     
     var afterGetColHeader: js.UndefOr[
         js.Array[
-          js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+          js.UndefOr[
+            js.Function3[
+              /* column */ Double, 
+              /* TH */ HTMLTableHeaderCellElement, 
+              /* headerLevel */ Double, 
+              Unit
+            ]
+          ]
         ]
       ] = js.undefined
     
@@ -14613,7 +14716,7 @@ object pluginHooksMod {
     var beforeChange: js.UndefOr[
         js.Array[
           js.UndefOr[
-            js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+            js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
           ]
         ]
       ] = js.undefined
@@ -14720,7 +14823,12 @@ object pluginHooksMod {
     var beforeCreateRow: js.UndefOr[
         js.Array[
           js.UndefOr[
-            js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+            js.Function3[
+              /* index */ Double, 
+              /* amount */ Double, 
+              /* source */ js.UndefOr[ChangeSource], 
+              Unit | Boolean
+            ]
           ]
         ]
       ] = js.undefined
@@ -15753,13 +15861,29 @@ object pluginHooksMod {
       
       inline def setAfterGetColHeader(
         value: js.Array[
-              js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+              js.UndefOr[
+                js.Function3[
+                  /* column */ Double, 
+                  /* TH */ HTMLTableHeaderCellElement, 
+                  /* headerLevel */ Double, 
+                  Unit
+                ]
+              ]
             ]
       ): Self = StObject.set(x, "afterGetColHeader", value.asInstanceOf[js.Any])
       
       inline def setAfterGetColHeaderUndefined: Self = StObject.set(x, "afterGetColHeader", js.undefined)
       
-      inline def setAfterGetColHeaderVarargs(value: (js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]])*): Self = StObject.set(x, "afterGetColHeader", js.Array(value*))
+      inline def setAfterGetColHeaderVarargs(
+        value: (js.UndefOr[
+              js.Function3[
+                /* column */ Double, 
+                /* TH */ HTMLTableHeaderCellElement, 
+                /* headerLevel */ Double, 
+                Unit
+              ]
+            ])*
+      ): Self = StObject.set(x, "afterGetColHeader", js.Array(value*))
       
       inline def setAfterGetColumnHeaderRenderers(
         value: js.Array[
@@ -16976,7 +17100,7 @@ object pluginHooksMod {
       inline def setBeforeChange(
         value: js.Array[
               js.UndefOr[
-                js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+                js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
               ]
             ]
       ): Self = StObject.set(x, "beforeChange", value.asInstanceOf[js.Any])
@@ -17001,7 +17125,7 @@ object pluginHooksMod {
       
       inline def setBeforeChangeVarargs(
         value: (js.UndefOr[
-              js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+              js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
             ])*
       ): Self = StObject.set(x, "beforeChange", js.Array(value*))
       
@@ -17190,7 +17314,12 @@ object pluginHooksMod {
       inline def setBeforeCreateRow(
         value: js.Array[
               js.UndefOr[
-                js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+                js.Function3[
+                  /* index */ Double, 
+                  /* amount */ Double, 
+                  /* source */ js.UndefOr[ChangeSource], 
+                  Unit | Boolean
+                ]
               ]
             ]
       ): Self = StObject.set(x, "beforeCreateRow", value.asInstanceOf[js.Any])
@@ -17199,7 +17328,12 @@ object pluginHooksMod {
       
       inline def setBeforeCreateRowVarargs(
         value: (js.UndefOr[
-              js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+              js.Function3[
+                /* index */ Double, 
+                /* amount */ Double, 
+                /* source */ js.UndefOr[ChangeSource], 
+                Unit | Boolean
+              ]
             ])*
       ): Self = StObject.set(x, "beforeCreateRow", js.Array(value*))
       
@@ -18523,7 +18657,14 @@ object pluginHooksMod {
         js.Function3[/* row */ Double, /* column */ Double, /* cellProperties */ CellProperties, Unit]
       ] = js.undefined
     
-    var afterGetColHeader: js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]] = js.undefined
+    var afterGetColHeader: js.UndefOr[
+        js.Function3[
+          /* column */ Double, 
+          /* TH */ HTMLTableHeaderCellElement, 
+          /* headerLevel */ Double, 
+          Unit
+        ]
+      ] = js.undefined
     
     var afterGetColumnHeaderRenderers: js.UndefOr[
         js.Function1[
@@ -18931,7 +19072,7 @@ object pluginHooksMod {
       ] = js.undefined
     
     var beforeChange: js.UndefOr[
-        js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+        js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
       ] = js.undefined
     
     var beforeChangeRender: js.UndefOr[
@@ -19000,7 +19141,12 @@ object pluginHooksMod {
       ] = js.undefined
     
     var beforeCreateRow: js.UndefOr[
-        js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+        js.Function3[
+          /* index */ Double, 
+          /* amount */ Double, 
+          /* source */ js.UndefOr[ChangeSource], 
+          Unit | Boolean
+        ]
       ] = js.undefined
     
     var beforeCut: js.UndefOr[
@@ -19535,7 +19681,9 @@ object pluginHooksMod {
       
       inline def setAfterGetCellMetaUndefined: Self = StObject.set(x, "afterGetCellMeta", js.undefined)
       
-      inline def setAfterGetColHeader(value: (/* column */ Double, /* TH */ HTMLTableHeaderCellElement) => Unit): Self = StObject.set(x, "afterGetColHeader", js.Any.fromFunction2(value))
+      inline def setAfterGetColHeader(
+        value: (/* column */ Double, /* TH */ HTMLTableHeaderCellElement, /* headerLevel */ Double) => Unit
+      ): Self = StObject.set(x, "afterGetColHeader", js.Any.fromFunction3(value))
       
       inline def setAfterGetColHeaderUndefined: Self = StObject.set(x, "afterGetColHeader", js.undefined)
       
@@ -19863,7 +20011,7 @@ object pluginHooksMod {
       
       inline def setBeforeCellAlignmentUndefined: Self = StObject.set(x, "beforeCellAlignment", js.undefined)
       
-      inline def setBeforeChange(value: (/* changes */ js.Array[CellChange], /* source */ ChangeSource) => Unit | Boolean): Self = StObject.set(x, "beforeChange", js.Any.fromFunction2(value))
+      inline def setBeforeChange(value: (/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource) => Unit | Boolean): Self = StObject.set(x, "beforeChange", js.Any.fromFunction2(value))
       
       inline def setBeforeChangeRender(value: (/* changes */ js.Array[CellChange], /* source */ ChangeSource) => Unit): Self = StObject.set(x, "beforeChangeRender", js.Any.fromFunction2(value))
       
@@ -19919,7 +20067,9 @@ object pluginHooksMod {
       
       inline def setBeforeCreateColUndefined: Self = StObject.set(x, "beforeCreateCol", js.undefined)
       
-      inline def setBeforeCreateRow(value: (/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource]) => Unit): Self = StObject.set(x, "beforeCreateRow", js.Any.fromFunction3(value))
+      inline def setBeforeCreateRow(
+        value: (/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource]) => Unit | Boolean
+      ): Self = StObject.set(x, "beforeCreateRow", js.Any.fromFunction3(value))
       
       inline def setBeforeCreateRowUndefined: Self = StObject.set(x, "beforeCreateRow", js.undefined)
       

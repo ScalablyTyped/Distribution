@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.next.anon.As
 import typings.next.anon.Component
 import typings.next.anon.Data
-import typings.next.anon.Destination
 import typings.next.anon.Errorcodeanyundefinedcanc
-import typings.next.anon.NewAs
 import typings.next.anon.ParamsResult
 import typings.next.anon.PickCompletePrivateRouteI
 import typings.next.anon.X
@@ -630,7 +628,7 @@ object distSharedLibRouterRouterMod {
     
     def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[Any] = js.native
     
-    def getRouteInfo(param0: As): js.Promise[PrivateRouteInfo | Destination | NewAs] = js.native
+    def getRouteInfo(param0: As): js.Promise[Any] = js.native
     
     def handleRouteInfoError(
       err: Errorcodeanyundefinedcanc,

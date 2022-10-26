@@ -325,6 +325,8 @@ object mod {
     
     var media: js.UndefOr[String] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLAnchorElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLAnchorElement]] = js.undefined
@@ -890,6 +892,10 @@ object mod {
       inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
       inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

@@ -2,6 +2,7 @@ package typings.next
 
 import typings.next.anon.AfterInteractive
 import typings.next.anon.Head
+import typings.next.distBuildWebpackPluginsFontLoaderManifestPluginMod.FontLoaderManifest
 import typings.next.distServerFontUtilsMod.FontConfig
 import typings.next.distServerGetPageFilesMod.BuildManifest
 import typings.next.distSharedLibUtilsMod.NEXT_DATA
@@ -44,6 +45,8 @@ object distSharedLibHtmlContextMod {
     var docComponentsRendered: Head
     
     var dynamicImports: js.Array[String]
+    
+    var fontLoaderManifest: js.UndefOr[FontLoaderManifest] = js.undefined
     
     var hasConcurrentFeatures: js.UndefOr[Boolean] = js.undefined
     
@@ -127,6 +130,10 @@ object distSharedLibHtmlContextMod {
       inline def setDynamicImports(value: js.Array[String]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
       
       inline def setDynamicImportsVarargs(value: String*): Self = StObject.set(x, "dynamicImports", js.Array(value*))
+      
+      inline def setFontLoaderManifest(value: FontLoaderManifest): Self = StObject.set(x, "fontLoaderManifest", value.asInstanceOf[js.Any])
+      
+      inline def setFontLoaderManifestUndefined: Self = StObject.set(x, "fontLoaderManifest", js.undefined)
       
       inline def setHasConcurrentFeatures(value: Boolean): Self = StObject.set(x, "hasConcurrentFeatures", value.asInstanceOf[js.Any])
       

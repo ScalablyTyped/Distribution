@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteProgramRequest extends StObject {
   
   /**
-    * The identifier for the channel you are working on.
+    * The name of the channel.
     */
   var ChannelName: string
   
   /**
-    * The identifier for the program you are working on.
+    * The name of the program.
     */
   var ProgramName: string
 }

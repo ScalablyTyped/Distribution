@@ -12,7 +12,7 @@ trait CreateProgramRequest extends StObject {
   var AdBreaks: js.UndefOr[listOfAdBreak] = js.undefined
   
   /**
-    * The identifier for the channel you are working on.
+    * The name of the channel for this Program.
     */
   var ChannelName: string
   
@@ -22,7 +22,7 @@ trait CreateProgramRequest extends StObject {
   var LiveSourceName: js.UndefOr[string] = js.undefined
   
   /**
-    * The identifier for the program you are working on.
+    * The name of the Program.
     */
   var ProgramName: string
   

@@ -12,6 +12,10 @@ object distBuildWebpackConfigBlocksCssMessagesMod {
   
   inline def getCustomDocumentError(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomDocumentError")().asInstanceOf[String]
   
+  inline def getFontLoaderDocumentImportError(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontLoaderDocumentImportError")().asInstanceOf[String]
+  
+  inline def getFontLoaderImportError(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontLoaderImportError")().asInstanceOf[String]
+  
   inline def getGlobalImportError(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalImportError")().asInstanceOf[String]
   
   inline def getGlobalModuleImportError(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalModuleImportError")().asInstanceOf[String]

@@ -16,6 +16,7 @@ import typings.next.distBuildWebpackPluginsAppBuildManifestPluginMod.AppBuildMan
 import typings.next.distBuildWebpackPluginsMiddlewarePluginMod.MiddlewareManifest
 import typings.next.distLibCoalescedFunctionMod.UnwrapPromise
 import typings.next.distLibLoadCustomRoutesMod.CustomRoutes
+import typings.next.distServerConfigSharedMod.NextConfigComplete
 import typings.next.distServerGetPageFilesMod.BuildManifest
 import typings.next.nextBooleans.`false`
 import typings.next.nextBooleans.`true`
@@ -42,21 +43,6 @@ object distBuildUtilsMod {
   @JSImport("next/dist/build/utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  @JSImport("next/dist/build/utils", "MiddlewareInServerlessTargetError")
-  @js.native
-  open class MiddlewareInServerlessTargetError ()
-    extends StObject
-       with Error {
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var message: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var name: String = js.native
-  }
   
   @JSImport("next/dist/build/utils", "NestedMiddlewareError")
   @js.native
@@ -100,10 +86,12 @@ object distBuildUtilsMod {
     ]) & Paths
   ]]
   
-  inline def collectGenerateParams(segment: Any): GenerateParams = ^.asInstanceOf[js.Dynamic].applyDynamic("collectGenerateParams")(segment.asInstanceOf[js.Any]).asInstanceOf[GenerateParams]
-  inline def collectGenerateParams(segment: Any, parentSegments: js.Array[String]): GenerateParams = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGenerateParams")(segment.asInstanceOf[js.Any], parentSegments.asInstanceOf[js.Any])).asInstanceOf[GenerateParams]
-  inline def collectGenerateParams(segment: Any, parentSegments: js.Array[String], generateParams: GenerateParams): GenerateParams = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGenerateParams")(segment.asInstanceOf[js.Any], parentSegments.asInstanceOf[js.Any], generateParams.asInstanceOf[js.Any])).asInstanceOf[GenerateParams]
-  inline def collectGenerateParams(segment: Any, parentSegments: Unit, generateParams: GenerateParams): GenerateParams = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGenerateParams")(segment.asInstanceOf[js.Any], parentSegments.asInstanceOf[js.Any], generateParams.asInstanceOf[js.Any])).asInstanceOf[GenerateParams]
+  inline def collectAppConfig(mod: Any): js.UndefOr[AppConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectAppConfig")(mod.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[AppConfig]]
+  
+  inline def collectGenerateParams(segment: Any): js.Promise[GenerateParams] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectGenerateParams")(segment.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GenerateParams]]
+  inline def collectGenerateParams(segment: Any, parentSegments: js.Array[String]): js.Promise[GenerateParams] = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGenerateParams")(segment.asInstanceOf[js.Any], parentSegments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GenerateParams]]
+  inline def collectGenerateParams(segment: Any, parentSegments: js.Array[String], generateParams: GenerateParams): js.Promise[GenerateParams] = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGenerateParams")(segment.asInstanceOf[js.Any], parentSegments.asInstanceOf[js.Any], generateParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GenerateParams]]
+  inline def collectGenerateParams(segment: Any, parentSegments: Unit, generateParams: GenerateParams): js.Promise[GenerateParams] = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGenerateParams")(segment.asInstanceOf[js.Any], parentSegments.asInstanceOf[js.Any], generateParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GenerateParams]]
   
   inline def computeFromManifest(manifests: Build, distPath: String): js.Promise[ComputeFilesManifestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeFromManifest")(manifests.asInstanceOf[js.Any], distPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ComputeFilesManifestResult]]
   inline def computeFromManifest(manifests: Build, distPath: String, gzipSize: Boolean): js.Promise[ComputeFilesManifestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeFromManifest")(manifests.asInstanceOf[js.Any], distPath.asInstanceOf[js.Any], gzipSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ComputeFilesManifestResult]]
@@ -191,17 +179,13 @@ object distBuildUtilsMod {
     cachedStats: ComputeFilesManifestResult
   ): js.Promise[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getJsPageSizeInKb")(routerType.asInstanceOf[js.Any], page.asInstanceOf[js.Any], distPath.asInstanceOf[js.Any], buildManifest.asInstanceOf[js.Any], appBuildManifest.asInstanceOf[js.Any], gzipSize.asInstanceOf[js.Any], cachedStats.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, Double]]]
   
-  inline def getNamedExports(page: String, distDir: String, isLikeServerless: Boolean, runtimeEnvConfig: Any): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamedExports")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], isLikeServerless.asInstanceOf[js.Any], runtimeEnvConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def getNamedExports(page: String, distDir: String, runtimeEnvConfig: Any): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamedExports")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], runtimeEnvConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   inline def getPossibleMiddlewareFilenames(folder: String, extensions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPossibleMiddlewareFilenames")(folder.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def hasCustomGetInitialProps(
-    page: String,
-    distDir: String,
-    isLikeServerless: Boolean,
-    runtimeEnvConfig: Any,
-    checkingApp: Boolean
-  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCustomGetInitialProps")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], isLikeServerless.asInstanceOf[js.Any], runtimeEnvConfig.asInstanceOf[js.Any], checkingApp.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def getSupportedBrowsers(dir: String, isDevelopment: Boolean, config: NextConfigComplete): js.UndefOr[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedBrowsers")(dir.asInstanceOf[js.Any], isDevelopment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[String]]]
+  
+  inline def hasCustomGetInitialProps(page: String, distDir: String, runtimeEnvConfig: Any, checkingApp: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCustomGetInitialProps")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], runtimeEnvConfig.asInstanceOf[js.Any], checkingApp.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   inline def isCustomErrorPage(page: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCustomErrorPage")(page.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -216,12 +200,7 @@ object distBuildUtilsMod {
   
   inline def printCustomRoutes(param0: CustomRoutes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printCustomRoutes")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def printTreeView(
-    lists: Pages,
-    pageInfos: Map[String, PageInfo],
-    serverless: Boolean,
-    param3: typings.next.anon.AppBuildManifest
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("printTreeView")(lists.asInstanceOf[js.Any], pageInfos.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def printTreeView(lists: Pages, pageInfos: Map[String, PageInfo], param2: typings.next.anon.AppBuildManifest): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("printTreeView")(lists.asInstanceOf[js.Any], pageInfos.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def unique[T](main: js.Array[T], sub: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(main.asInstanceOf[js.Any], sub.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   

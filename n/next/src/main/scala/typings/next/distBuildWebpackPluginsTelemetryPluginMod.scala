@@ -27,6 +27,7 @@ object distBuildWebpackPluginsTelemetryPluginMod {
   /* Rewritten from type alias, can be one of: 
     - typings.next.nextStrings.nextSlashimage
     - typings.next.nextStrings.nextSlashfutureSlashimage
+    - typings.next.nextStrings.nextSlashlegacySlashimage
     - typings.next.nextStrings.nextSlashscript
     - typings.next.nextStrings.nextSlashdynamic
     - typings.next.nextStrings.swcLoader

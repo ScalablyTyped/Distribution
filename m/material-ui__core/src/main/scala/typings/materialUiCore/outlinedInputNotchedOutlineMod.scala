@@ -297,6 +297,8 @@ object outlinedInputNotchedOutlineMod extends Shortcut {
     
     var name: js.UndefOr[String] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var notched: Boolean
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLFieldSetElement]] = js.undefined
@@ -845,6 +847,10 @@ object outlinedInputNotchedOutlineMod extends Shortcut {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setNotched(value: Boolean): Self = StObject.set(x, "notched", value.asInstanceOf[js.Any])
       

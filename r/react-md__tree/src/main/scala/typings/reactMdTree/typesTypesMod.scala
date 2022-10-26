@@ -315,6 +315,8 @@ object typesTypesMod {
     
     var liStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLLIElement]] = js.undefined
@@ -895,6 +897,10 @@ object typesTypesMod {
       inline def setLiStyle(value: CSSProperties): Self = StObject.set(x, "liStyle", value.asInstanceOf[js.Any])
       
       inline def setLiStyleUndefined: Self = StObject.set(x, "liStyle", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -2090,6 +2096,8 @@ object typesTypesMod {
       */
     var listSize: Double
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     // Media Events
     var onAbort: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
@@ -2771,6 +2779,10 @@ object typesTypesMod {
       inline def setLiStyleUndefined: Self = StObject.set(x, "liStyle", js.undefined)
       
       inline def setListSize(value: Double): Self = StObject.set(x, "listSize", value.asInstanceOf[js.Any])
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

@@ -1,12 +1,13 @@
 package typings.next.anon
 
-import typings.next.distClientImageMod.ImageLoader
-import typings.next.distClientImageMod.ImageLoaderProps
-import typings.next.distClientImageMod.LayoutValue
-import typings.next.distClientImageMod.LoadingValue
-import typings.next.distClientImageMod.OnLoadingComplete
-import typings.next.distClientImageMod.PlaceholderValue
-import typings.next.distClientImageMod.StaticImport
+import typings.next.distClientLegacyImageMod.ImageLoader
+import typings.next.distClientLegacyImageMod.ImageLoaderProps
+import typings.next.distClientLegacyImageMod.LayoutValue
+import typings.next.distClientLegacyImageMod.LoadingValue
+import typings.next.distClientLegacyImageMod.OnLoadingComplete
+import typings.next.distClientLegacyImageMod.PlaceholderValue
+import typings.next.distClientLegacyImageMod.SafeNumber
+import typings.next.distClientLegacyImageMod.StaticImport
 import typings.react.mod.RefObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -17,7 +18,7 @@ trait BlurDataURL extends StObject {
   
   var blurDataURL: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[SafeNumber] = js.undefined
   
   var layout: js.UndefOr[LayoutValue] = js.undefined
   
@@ -30,11 +31,11 @@ trait BlurDataURL extends StObject {
   var loading: js.UndefOr[LoadingValue] = js.undefined
   
   var objectFit: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/client/image.ImgElementStyle['objectFit'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/client/legacy/image.ImgElementStyle['objectFit'] */ js.Any
   ] = js.undefined
   
   var objectPosition: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/client/image.ImgElementStyle['objectPosition'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/client/legacy/image.ImgElementStyle['objectPosition'] */ js.Any
   ] = js.undefined
   
   var onLoadingComplete: js.UndefOr[OnLoadingComplete] = js.undefined
@@ -43,13 +44,13 @@ trait BlurDataURL extends StObject {
   
   var priority: js.UndefOr[Boolean] = js.undefined
   
-  var quality: js.UndefOr[Double | String] = js.undefined
+  var quality: js.UndefOr[SafeNumber] = js.undefined
   
   var src: String | StaticImport
   
   var unoptimized: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[SafeNumber] = js.undefined
 }
 object BlurDataURL {
   
@@ -64,7 +65,7 @@ object BlurDataURL {
     
     inline def setBlurDataURLUndefined: Self = StObject.set(x, "blurDataURL", js.undefined)
     
-    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: SafeNumber): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -91,13 +92,13 @@ object BlurDataURL {
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     inline def setObjectFit(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/client/image.ImgElementStyle['objectFit'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/client/legacy/image.ImgElementStyle['objectFit'] */ js.Any
     ): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
     
     inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
     inline def setObjectPosition(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/client/image.ImgElementStyle['objectPosition'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/client/legacy/image.ImgElementStyle['objectPosition'] */ js.Any
     ): Self = StObject.set(x, "objectPosition", value.asInstanceOf[js.Any])
     
     inline def setObjectPositionUndefined: Self = StObject.set(x, "objectPosition", js.undefined)
@@ -114,7 +115,7 @@ object BlurDataURL {
     
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    inline def setQuality(value: Double | String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: SafeNumber): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
@@ -124,7 +125,7 @@ object BlurDataURL {
     
     inline def setUnoptimizedUndefined: Self = StObject.set(x, "unoptimized", js.undefined)
     
-    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: SafeNumber): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

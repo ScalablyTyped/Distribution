@@ -311,6 +311,8 @@ object esCssmotionlistMod {
     
     var motionName: js.UndefOr[MotionName] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[Any]] = js.undefined
     
     /** All motion leaves in the screen */
@@ -905,6 +907,10 @@ object esCssmotionlistMod {
       inline def setMotionName(value: MotionName): Self = StObject.set(x, "motionName", value.asInstanceOf[js.Any])
       
       inline def setMotionNameUndefined: Self = StObject.set(x, "motionName", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[Any, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

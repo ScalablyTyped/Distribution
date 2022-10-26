@@ -415,6 +415,8 @@ object typesTableFooterMod {
     
     var lineWrap: js.UndefOr[Boolean | padded] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     // Media Events
     var onAbort: js.UndefOr[ReactEventHandler[HTMLTableSectionElement]] = js.undefined
     
@@ -957,6 +959,10 @@ object typesTableFooterMod {
       inline def setLineWrap(value: Boolean | padded): Self = StObject.set(x, "lineWrap", value.asInstanceOf[js.Any])
       
       inline def setLineWrapUndefined: Self = StObject.set(x, "lineWrap", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLTableSectionElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

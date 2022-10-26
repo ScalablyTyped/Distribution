@@ -47,4 +47,5 @@ object distLibTypescriptDiagnosticFormatterMod {
   }
   
   inline def getFormattedDiagnostic(ts: TypeofimportedTypescript, baseDir: String, diagnostic: Diagnostic): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDiagnostic")(ts.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], diagnostic.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getFormattedDiagnostic(ts: TypeofimportedTypescript, baseDir: String, diagnostic: Diagnostic, isAppDirEnabled: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDiagnostic")(ts.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], diagnostic.asInstanceOf[js.Any], isAppDirEnabled.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

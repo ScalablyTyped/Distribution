@@ -1,12 +1,5 @@
 package typings.next
 
-import typings.next.anon.ReadonlyAppRouterState
-import typings.next.distClientComponentsReducerMod.AppRouterState
-import typings.next.distClientComponentsReducerMod.NavigateAction
-import typings.next.distClientComponentsReducerMod.PrefetchAction
-import typings.next.distClientComponentsReducerMod.ReloadAction
-import typings.next.distClientComponentsReducerMod.RestoreAction
-import typings.next.distClientComponentsReducerMod.ServerPatchAction
 import typings.react.mod.Dispatch
 import typings.react.mod.ReducerAction
 import typings.std.ReturnType
@@ -16,60 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distClientComponentsUseReducerWithDevtoolsMod {
   
-  @JSImport("next/dist/client/components/use-reducer-with-devtools", JSImport.Namespace)
+  @JSImport("next/dist/client/components/use-reducer-with-devtools", "useReducerWithReduxDevtools")
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def useReducerWithReduxDevtools(
-    fn: js.Function2[
-      /* state */ ReadonlyAppRouterState, 
-      /* action */ ReloadAction | NavigateAction | RestoreAction | ServerPatchAction | PrefetchAction, 
-      AppRouterState
-    ],
-    initialState: ReturnType[
-      js.Function2[
-        /* state */ ReadonlyAppRouterState, 
-        /* action */ ReloadAction | NavigateAction | RestoreAction | ServerPatchAction | PrefetchAction, 
-        AppRouterState
-      ]
+  val useReducerWithReduxDevtools: js.Function2[
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof reducer */ /* fn */ js.Any, 
+    /* initialState */ ReturnType[
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof reducer */ js.Any
+    ], 
+    js.Tuple3[
+      ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof reducer */ js.Any
+      ], 
+      Dispatch[
+        ReducerAction[
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof reducer */ js.Any
+        ]
+      ], 
+      js.Function0[Unit]
     ]
-  ): js.Tuple3[
-    ReturnType[
-      js.Function2[
-        /* state */ ReadonlyAppRouterState, 
-        /* action */ ReloadAction | NavigateAction | RestoreAction | ServerPatchAction | PrefetchAction, 
-        AppRouterState
-      ]
-    ], 
-    Dispatch[
-      ReducerAction[
-        js.Function2[
-          /* state */ ReadonlyAppRouterState, 
-          /* action */ ReloadAction | NavigateAction | RestoreAction | ServerPatchAction | PrefetchAction, 
-          AppRouterState
-        ]
-      ]
-    ], 
-    js.Function0[Unit]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducerWithReduxDevtools")(fn.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
-    ReturnType[
-      js.Function2[
-        /* state */ ReadonlyAppRouterState, 
-        /* action */ ReloadAction | NavigateAction | RestoreAction | ServerPatchAction | PrefetchAction, 
-        AppRouterState
-      ]
-    ], 
-    Dispatch[
-      ReducerAction[
-        js.Function2[
-          /* state */ ReadonlyAppRouterState, 
-          /* action */ ReloadAction | NavigateAction | RestoreAction | ServerPatchAction | PrefetchAction, 
-          AppRouterState
-        ]
-      ]
-    ], 
-    js.Function0[Unit]
-  ]]
+  ] = js.native
   
   object global {
     

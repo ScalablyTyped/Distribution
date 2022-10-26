@@ -1,7 +1,7 @@
 package typings.next
 
+import typings.next.anon.BuildId
 import typings.next.anon.ClientOnly
-import typings.next.anon.CompilerType
 import typings.next.anon.Finished
 import typings.next.anon.PreviewProps
 import typings.next.anon.Verbose
@@ -41,9 +41,7 @@ object distServerDevHotReloaderMod {
     var activeConfigs: js.UndefOr[
         js.Array[
           UnwrapPromise[
-            ReturnType[
-              js.Function2[/* dir */ String, /* param1 */ CompilerType, js.Promise[Configuration]]
-            ]
+            ReturnType[js.Function2[/* dir */ String, /* param1 */ BuildId, js.Promise[Configuration]]]
           ]
         ]
       ] = js.native

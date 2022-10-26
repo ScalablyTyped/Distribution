@@ -9,7 +9,7 @@ trait ConfigureLogsForPlaybackConfigurationResponse extends StObject {
   /**
     * The percentage of session logs that MediaTailor sends to your Cloudwatch Logs account.
     */
-  var PercentEnabled: js.UndefOr[integer] = js.undefined
+  var PercentEnabled: integer
   
   /**
     * The name of the playback configuration.
@@ -18,16 +18,14 @@ trait ConfigureLogsForPlaybackConfigurationResponse extends StObject {
 }
 object ConfigureLogsForPlaybackConfigurationResponse {
   
-  inline def apply(): ConfigureLogsForPlaybackConfigurationResponse = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(PercentEnabled: integer): ConfigureLogsForPlaybackConfigurationResponse = {
+    val __obj = js.Dynamic.literal(PercentEnabled = PercentEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureLogsForPlaybackConfigurationResponse]
   }
   
   extension [Self <: ConfigureLogsForPlaybackConfigurationResponse](x: Self) {
     
     inline def setPercentEnabled(value: integer): Self = StObject.set(x, "PercentEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setPercentEnabledUndefined: Self = StObject.set(x, "PercentEnabled", js.undefined)
     
     inline def setPlaybackConfigurationName(value: string): Self = StObject.set(x, "PlaybackConfigurationName", value.asInstanceOf[js.Any])
     

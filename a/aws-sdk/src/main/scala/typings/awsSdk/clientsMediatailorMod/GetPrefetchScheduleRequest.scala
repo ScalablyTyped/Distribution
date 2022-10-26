@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPrefetchScheduleRequest extends StObject {
   
   /**
-    * The identifier for the playback configuration.
+    * The name of the prefetch schedule. The name must be unique among all prefetch schedules that are associated with the specified playback configuration.
     */
   var Name: string
   
   /**
-    * The name of the playback configuration.
+    * Returns information about the prefetch schedule for a specific playback configuration. If you call GetPrefetchSchedule on an expired prefetch schedule, MediaTailor returns an HTTP 404 status code.
     */
   var PlaybackConfigurationName: string
 }

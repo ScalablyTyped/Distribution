@@ -277,6 +277,8 @@ trait PartialIStackProps extends StObject {
   
   var maxWidth: js.UndefOr[Double | String] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.undefined
@@ -843,6 +845,10 @@ object PartialIStackProps {
     inline def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLElement, Event] => scala.Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

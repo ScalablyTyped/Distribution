@@ -436,8 +436,6 @@ object helpersMod {
   
   inline def toUpperCaseFirst(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUpperCaseFirst")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def translateRowsToColumns(input: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("translateRowsToColumns")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
-  
   inline def valueAccordingPercent(value: Double, percent: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("valueAccordingPercent")(value.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def valueAccordingPercent(value: Double, percent: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("valueAccordingPercent")(value.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[Double]
   

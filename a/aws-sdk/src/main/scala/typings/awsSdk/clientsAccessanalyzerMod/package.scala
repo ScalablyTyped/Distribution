@@ -76,6 +76,20 @@ type ConfigurationsMap = StringDictionary[Configuration]
 
 type ConfigurationsMapKey = java.lang.String
 
+type EbsGroup = java.lang.String
+
+type EbsGroupList = js.Array[EbsGroup]
+
+type EbsSnapshotDataEncryptionKeyId = java.lang.String
+
+type EbsUserId = java.lang.String
+
+type EbsUserIdList = js.Array[EbsUserId]
+
+type EcrRepositoryPolicy = java.lang.String
+
+type EfsFileSystemPolicy = java.lang.String
+
 type FilterCriteriaMap = StringDictionary[Criterion]
 
 /* Rewritten from type alias, can be one of: 
@@ -234,6 +248,26 @@ type PrincipalArn = java.lang.String
 
 type PrincipalMap = StringDictionary[String]
 
+type RdsDbClusterSnapshotAccountId = java.lang.String
+
+type RdsDbClusterSnapshotAccountIdsList = js.Array[RdsDbClusterSnapshotAccountId]
+
+type RdsDbClusterSnapshotAttributeName = java.lang.String
+
+type RdsDbClusterSnapshotAttributesMap = StringDictionary[RdsDbClusterSnapshotAttributeValue]
+
+type RdsDbClusterSnapshotKmsKeyId = java.lang.String
+
+type RdsDbSnapshotAccountId = java.lang.String
+
+type RdsDbSnapshotAccountIdsList = js.Array[RdsDbSnapshotAccountId]
+
+type RdsDbSnapshotAttributeName = java.lang.String
+
+type RdsDbSnapshotAttributesMap = StringDictionary[RdsDbSnapshotAttributeValue]
+
+type RdsDbSnapshotKmsKeyId = java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWS_SERVICE_ACCESS_DISABLED
   - typings.awsSdk.awsSdkStrings.DELEGATED_ADMINISTRATOR_DEREGISTERED
@@ -255,6 +289,12 @@ type ResourceArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.AWSColonColonLambdaColonColonLayerVersion
   - typings.awsSdk.awsSdkStrings.AWSColonColonKMSColonColonKey
   - typings.awsSdk.awsSdkStrings.AWSColonColonSecretsManagerColonColonSecret
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEFSColonColonFileSystem
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonSnapshot
+  - typings.awsSdk.awsSdkStrings.AWSColonColonECRColonColonRepository
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRDSColonColonDBSnapshot
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRDSColonColonDBClusterSnapshot
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSNSColonColonTopic
   - java.lang.String
 */
 type ResourceType = _ResourceType | java.lang.String
@@ -274,6 +314,8 @@ type SecretsManagerSecretKmsId = java.lang.String
 type SecretsManagerSecretPolicy = java.lang.String
 
 type SharedViaList = js.Array[String]
+
+type SnsTopicPolicy = java.lang.String
 
 type SqsQueuePolicy = java.lang.String
 

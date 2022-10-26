@@ -3178,6 +3178,7 @@ import typings.awsSdk.clientsRdsMod._DBProxyEndpointStatus
 import typings.awsSdk.clientsRdsMod._DBProxyEndpointTargetRole
 import typings.awsSdk.clientsRdsMod._DBProxyStatus
 import typings.awsSdk.clientsRdsMod._EngineFamily
+import typings.awsSdk.clientsRdsMod._ExportSourceType
 import typings.awsSdk.clientsRdsMod._FailoverStatus
 import typings.awsSdk.clientsRdsMod._IAMAuthMode
 import typings.awsSdk.clientsRdsMod._ReplicaMode
@@ -10017,6 +10018,11 @@ object awsSdkStrings {
   inline def AWSColonColonEC2ColonColonSecurityGroup: AWSColonColonEC2ColonColonSecurityGroup = "AWS::EC2::SecurityGroup".asInstanceOf[AWSColonColonEC2ColonColonSecurityGroup]
   
   @js.native
+  sealed trait AWSColonColonEC2ColonColonSnapshot
+    extends StObject
+       with typings.awsSdk.clientsAccessanalyzerMod._ResourceType
+  
+  @js.native
   sealed trait AWSColonColonEC2ColonColonSubnet
     extends StObject
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
@@ -10086,6 +10092,7 @@ object awsSdkStrings {
   @js.native
   sealed trait AWSColonColonECRColonColonRepository
     extends StObject
+       with typings.awsSdk.clientsAccessanalyzerMod._ResourceType
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
   inline def AWSColonColonECRColonColonRepository: AWSColonColonECRColonColonRepository = "AWS::ECR::Repository".asInstanceOf[AWSColonColonECRColonColonRepository]
   
@@ -10116,6 +10123,7 @@ object awsSdkStrings {
   @js.native
   sealed trait AWSColonColonEFSColonColonFileSystem
     extends StObject
+       with typings.awsSdk.clientsAccessanalyzerMod._ResourceType
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
   inline def AWSColonColonEFSColonColonFileSystem: AWSColonColonEFSColonColonFileSystem = "AWS::EFS::FileSystem".asInstanceOf[AWSColonColonEFSColonColonFileSystem]
   
@@ -10328,6 +10336,7 @@ object awsSdkStrings {
   @js.native
   sealed trait AWSColonColonRDSColonColonDBClusterSnapshot
     extends StObject
+       with typings.awsSdk.clientsAccessanalyzerMod._ResourceType
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
   inline def AWSColonColonRDSColonColonDBClusterSnapshot: AWSColonColonRDSColonColonDBClusterSnapshot = "AWS::RDS::DBClusterSnapshot".asInstanceOf[AWSColonColonRDSColonColonDBClusterSnapshot]
   
@@ -10346,6 +10355,7 @@ object awsSdkStrings {
   @js.native
   sealed trait AWSColonColonRDSColonColonDBSnapshot
     extends StObject
+       with typings.awsSdk.clientsAccessanalyzerMod._ResourceType
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
   inline def AWSColonColonRDSColonColonDBSnapshot: AWSColonColonRDSColonColonDBSnapshot = "AWS::RDS::DBSnapshot".asInstanceOf[AWSColonColonRDSColonColonDBSnapshot]
   
@@ -10465,6 +10475,7 @@ object awsSdkStrings {
   @js.native
   sealed trait AWSColonColonSNSColonColonTopic
     extends StObject
+       with typings.awsSdk.clientsAccessanalyzerMod._ResourceType
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
@@ -11586,7 +11597,6 @@ object awsSdkStrings {
     extends StObject
        with _AddonIssueCode
        with typings.awsSdk.clientsEksMod._ErrorCode
-  inline def AdmissionRequestDenied: AdmissionRequestDenied = "AdmissionRequestDenied".asInstanceOf[AdmissionRequestDenied]
   
   @js.native
   sealed trait Advanced_
@@ -13909,10 +13919,22 @@ object awsSdkStrings {
   inline def BYOL_GRAPHICS_G4DN: BYOL_GRAPHICS_G4DN = "BYOL_GRAPHICS_G4DN".asInstanceOf[BYOL_GRAPHICS_G4DN]
   
   @js.native
+  sealed trait BYOL_GRAPHICS_G4DN_BYOP
+    extends StObject
+       with _WorkspaceImageIngestionProcess
+  inline def BYOL_GRAPHICS_G4DN_BYOP: BYOL_GRAPHICS_G4DN_BYOP = "BYOL_GRAPHICS_G4DN_BYOP".asInstanceOf[BYOL_GRAPHICS_G4DN_BYOP]
+  
+  @js.native
   sealed trait BYOL_REGULAR
     extends StObject
        with _WorkspaceImageIngestionProcess
   inline def BYOL_REGULAR: BYOL_REGULAR = "BYOL_REGULAR".asInstanceOf[BYOL_REGULAR]
+  
+  @js.native
+  sealed trait BYOL_REGULAR_BYOP
+    extends StObject
+       with _WorkspaceImageIngestionProcess
+  inline def BYOL_REGULAR_BYOP: BYOL_REGULAR_BYOP = "BYOL_REGULAR_BYOP".asInstanceOf[BYOL_REGULAR_BYOP]
   
   @js.native
   sealed trait BYOL_REGULAR_WSP
@@ -15610,6 +15632,7 @@ object awsSdkStrings {
   @js.native
   sealed trait CLUSTER
     extends StObject
+       with _ExportSourceType
        with _PlacementGroupStrategy
        with typings.awsSdk.clientsDaxMod._SourceType
   
@@ -19580,7 +19603,6 @@ object awsSdkStrings {
     extends StObject
        with _FeatureGroupStatus
        with typings.awsSdk.clientsSagemakerMod._ProjectStatus
-  inline def CreateFailed: CreateFailed = "CreateFailed".asInstanceOf[CreateFailed]
   
   @js.native
   sealed trait CreateGrant
@@ -40203,6 +40225,7 @@ object awsSdkStrings {
        with _EcrScanFrequency
        with _IngestionRequestSource
        with typings.awsSdk.clientsAmplifyMod._JobType
+       with _RunningMode
        with _ScanFrequency
        with typings.awsSdk.clientsAuditmanagerMod._SourceType
        with _StepActionType
@@ -57406,6 +57429,7 @@ object awsSdkStrings {
   @js.native
   sealed trait SNAPSHOT
     extends StObject
+       with _ExportSourceType
        with _TargetSelection
        with _UpgradeStep
        with typings.awsSdk.clientsEsMod._UpgradeStep

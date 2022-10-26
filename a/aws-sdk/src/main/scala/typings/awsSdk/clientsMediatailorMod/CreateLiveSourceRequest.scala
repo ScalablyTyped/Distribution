@@ -12,17 +12,17 @@ trait CreateLiveSourceRequest extends StObject {
   var HttpPackageConfigurations: typings.awsSdk.clientsMediatailorMod.HttpPackageConfigurations
   
   /**
-    * The identifier for the live source you are working on.
+    * The name of the live source.
     */
   var LiveSourceName: string
   
   /**
-    * The identifier for the source location you are working on.
+    * The name of the source location.
     */
   var SourceLocationName: string
   
   /**
-    * The tags to assign to the live source.
+    * The tags to assign to the live source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
 }

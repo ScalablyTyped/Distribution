@@ -4,6 +4,7 @@ import typings.awsSdkClientSso.distTypesModelsModels0Mod.LogoutRequest
 import typings.awsSdkClientSso.distTypesSsoclientMod.SSOClientResolvedConfig
 import typings.awsSdkClientSso.distTypesSsoclientMod.ServiceInputTypes
 import typings.awsSdkClientSso.distTypesSsoclientMod.ServiceOutputTypes
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
 import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
@@ -36,6 +37,15 @@ object distTypesCommandsLogoutCommandMod {
     ): Handler[LogoutCommandInput, LogoutCommandOutput] = js.native
     
     /* private */ var serialize: Any = js.native
+  }
+  /* static members */
+  object LogoutCommand {
+    
+    @JSImport("@aws-sdk/client-sso/dist-types/commands/LogoutCommand", "LogoutCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   type LogoutCommandInput = LogoutRequest

@@ -400,6 +400,8 @@ object togglebuttonTogglebuttonMod {
     
     var name: js.UndefOr[String] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var offIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ToggleButtonProps> */ Any
       ] = js.undefined
@@ -1044,6 +1046,10 @@ object togglebuttonTogglebuttonMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOffIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ToggleButtonProps> */ Any

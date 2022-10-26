@@ -20,6 +20,10 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   def autoComplete: String = js.native
   def autoComplete_=(`val`: String): Unit = js.native
   
+  var choicesLazyLoadEnabled: Boolean = js.native
+  
+  var choicesLazyLoadPageSize: Double = js.native
+  
   /*
     * Use the `choicesMin`, `choicesMax`, and `choicesStep` properties to generate choice items automatically. For example, the configuration below generates three choice items: [10, 20, 30].
     * 

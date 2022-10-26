@@ -2,7 +2,7 @@ package typings.next
 
 import typings.next.anon.BundlePath
 import typings.next.anon.Compilation
-import typings.next.anon.Name
+import typings.next.anon.Layer
 import typings.next.distBuildWebpackLoadersNextFlightClientEntryLoaderMod.ClientComponentImports
 import typings.next.distBuildWebpackLoadersNextFlightClientEntryLoaderMod.CssImports
 import typings.next.distCompiledWebpackWebpackMod.webpack.Compiler
@@ -18,14 +18,14 @@ object distBuildWebpackPluginsFlightClientEntryPluginMod {
   open class FlightClientEntryPlugin protected () extends StObject {
     def this(options: Options) = this()
     
-    def addEntry(compilation: Any, context: String, entry: Any, options: Name): js.Promise[Any] = js.native
+    def addEntry(compilation: Any, context: String, entry: Any, options: Layer): js.Promise[Any] = js.native
     
     @JSName("apply")
     def apply(compiler: Compiler): Unit = js.native
     
     def collectClientComponentsAndCSSForDependency(param0: Compilation): js.Tuple2[ClientComponentImports, CssImports] = js.native
     
-    def createClientEndpoints(compiler: Any, compilation: Any): js.Promise[Unit] = js.native
+    def createClientEntries(compiler: Any, compilation: Any): js.Promise[Unit] = js.native
     
     var dev: Boolean = js.native
     
@@ -34,9 +34,17 @@ object distBuildWebpackPluginsFlightClientEntryPluginMod {
     var isEdgeServer: Boolean = js.native
   }
   
+  @JSImport("next/dist/build/webpack/plugins/flight-client-entry-plugin", "edgeServerModuleIds")
+  @js.native
+  val edgeServerModuleIds: Map[String, String | Double] = js.native
+  
   @JSImport("next/dist/build/webpack/plugins/flight-client-entry-plugin", "injectedClientEntries")
   @js.native
   val injectedClientEntries: Map[Any, Any] = js.native
+  
+  @JSImport("next/dist/build/webpack/plugins/flight-client-entry-plugin", "serverModuleIds")
+  @js.native
+  val serverModuleIds: Map[String, String | Double] = js.native
   
   trait Options extends StObject {
     

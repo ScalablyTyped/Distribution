@@ -27,7 +27,7 @@ trait PutPlaybackConfigurationRequest extends StObject {
   var CdnConfiguration: js.UndefOr[typings.awsSdk.clientsMediatailorMod.CdnConfiguration] = js.undefined
   
   /**
-    * The player parameters and aliases used as dynamic variables during session initialization. For more information, see Domain Variables. 
+    * The player parameters and aliases used as dynamic variables during session initialization. For more information, see Domain Variables.
     */
   var ConfigurationAliases: js.UndefOr[ConfigurationAliasesRequest] = js.undefined
   
@@ -49,7 +49,7 @@ trait PutPlaybackConfigurationRequest extends StObject {
   /**
     * The identifier for the playback configuration.
     */
-  var Name: js.UndefOr[string] = js.undefined
+  var Name: string
   
   /**
     * Defines the maximum duration of underfilled ad time (in seconds) allowed in an ad break. If the duration of underfilled ad time exceeds the personalization threshold, then the personalization of the ad break is abandoned and the underlying content is shown. This feature applies to ad replacement in live and VOD streams, rather than ad insertion, because it relies on an underlying content stream. For more information about ad break behavior, including ad replacement and insertion, see Ad Behavior in AWS Elemental MediaTailor.
@@ -62,7 +62,7 @@ trait PutPlaybackConfigurationRequest extends StObject {
   var SlateAdUrl: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags to assign to the playback configuration.
+    * The tags to assign to the playback configuration. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
   
@@ -78,8 +78,8 @@ trait PutPlaybackConfigurationRequest extends StObject {
 }
 object PutPlaybackConfigurationRequest {
   
-  inline def apply(): PutPlaybackConfigurationRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(Name: string): PutPlaybackConfigurationRequest = {
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutPlaybackConfigurationRequest]
   }
   
@@ -118,8 +118,6 @@ object PutPlaybackConfigurationRequest {
     inline def setManifestProcessingRulesUndefined: Self = StObject.set(x, "ManifestProcessingRules", js.undefined)
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     inline def setPersonalizationThresholdSeconds(value: integerMin1): Self = StObject.set(x, "PersonalizationThresholdSeconds", value.asInstanceOf[js.Any])
     

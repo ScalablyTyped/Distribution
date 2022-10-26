@@ -2,6 +2,7 @@ package typings.next
 
 import org.scalablytyped.runtime.Shortcut
 import typings.next.anon.AppPaths
+import typings.next.nextStrings.`not-found`
 import typings.webpack.mod.LoaderDefinitionFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,6 +20,10 @@ object distBuildWebpackLoadersNextAppLoaderMod extends Shortcut {
     @js.native
     val error: typings.next.nextStrings.error = js.native
     
+    @JSImport("next/dist/build/webpack/loaders/next-app-loader", "FILE_TYPES.head")
+    @js.native
+    val head: typings.next.nextStrings.head = js.native
+    
     @JSImport("next/dist/build/webpack/loaders/next-app-loader", "FILE_TYPES.layout")
     @js.native
     val layout: typings.next.nextStrings.layout = js.native
@@ -26,6 +31,10 @@ object distBuildWebpackLoadersNextAppLoaderMod extends Shortcut {
     @JSImport("next/dist/build/webpack/loaders/next-app-loader", "FILE_TYPES.loading")
     @js.native
     val loading: typings.next.nextStrings.loading = js.native
+    
+    @JSImport("next/dist/build/webpack/loaders/next-app-loader", "FILE_TYPES.not-found")
+    @js.native
+    val notFound: `not-found` = js.native
     
     @JSImport("next/dist/build/webpack/loaders/next-app-loader", "FILE_TYPES.template")
     @js.native

@@ -50,6 +50,8 @@ object distExportWorkerMod {
     
     var distDir: String
     
+    var enableUndici: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental']['enableUndici'] */ js.Any
+    
     var httpAgentOptions: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['httpAgentOptions'] */ js.Any
     
     var optimizeCss: Any
@@ -72,8 +74,6 @@ object distExportWorkerMod {
     
     var serverRuntimeConfig: StringDictionary[Any]
     
-    var serverless: Boolean
-    
     var subFolders: js.UndefOr[Boolean] = js.undefined
   }
   object ExportPageInput {
@@ -82,6 +82,7 @@ object distExportWorkerMod {
       appPaths: js.Array[String],
       disableOptimizedLoading: Any,
       distDir: String,
+      enableUndici: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental']['enableUndici'] */ js.Any,
       httpAgentOptions: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['httpAgentOptions'] */ js.Any,
       optimizeCss: Any,
       optimizeFonts: FontConfig,
@@ -91,10 +92,9 @@ object distExportWorkerMod {
       path: String,
       pathMap: PathMap,
       renderOpts: RenderOpts,
-      serverRuntimeConfig: StringDictionary[Any],
-      serverless: Boolean
+      serverRuntimeConfig: StringDictionary[Any]
     ): ExportPageInput = {
-      val __obj = js.Dynamic.literal(appPaths = appPaths.asInstanceOf[js.Any], disableOptimizedLoading = disableOptimizedLoading.asInstanceOf[js.Any], distDir = distDir.asInstanceOf[js.Any], httpAgentOptions = httpAgentOptions.asInstanceOf[js.Any], optimizeCss = optimizeCss.asInstanceOf[js.Any], optimizeFonts = optimizeFonts.asInstanceOf[js.Any], outDir = outDir.asInstanceOf[js.Any], pagesDataDir = pagesDataDir.asInstanceOf[js.Any], parentSpanId = parentSpanId.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathMap = pathMap.asInstanceOf[js.Any], renderOpts = renderOpts.asInstanceOf[js.Any], serverRuntimeConfig = serverRuntimeConfig.asInstanceOf[js.Any], serverless = serverless.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(appPaths = appPaths.asInstanceOf[js.Any], disableOptimizedLoading = disableOptimizedLoading.asInstanceOf[js.Any], distDir = distDir.asInstanceOf[js.Any], enableUndici = enableUndici.asInstanceOf[js.Any], httpAgentOptions = httpAgentOptions.asInstanceOf[js.Any], optimizeCss = optimizeCss.asInstanceOf[js.Any], optimizeFonts = optimizeFonts.asInstanceOf[js.Any], outDir = outDir.asInstanceOf[js.Any], pagesDataDir = pagesDataDir.asInstanceOf[js.Any], parentSpanId = parentSpanId.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathMap = pathMap.asInstanceOf[js.Any], renderOpts = renderOpts.asInstanceOf[js.Any], serverRuntimeConfig = serverRuntimeConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExportPageInput]
     }
     
@@ -111,6 +111,10 @@ object distExportWorkerMod {
       inline def setDisableOptimizedLoading(value: Any): Self = StObject.set(x, "disableOptimizedLoading", value.asInstanceOf[js.Any])
       
       inline def setDistDir(value: String): Self = StObject.set(x, "distDir", value.asInstanceOf[js.Any])
+      
+      inline def setEnableUndici(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental']['enableUndici'] */ js.Any
+      ): Self = StObject.set(x, "enableUndici", value.asInstanceOf[js.Any])
       
       inline def setHttpAgentOptions(
         value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['httpAgentOptions'] */ js.Any
@@ -137,8 +141,6 @@ object distExportWorkerMod {
       inline def setServerComponentsUndefined: Self = StObject.set(x, "serverComponents", js.undefined)
       
       inline def setServerRuntimeConfig(value: StringDictionary[Any]): Self = StObject.set(x, "serverRuntimeConfig", value.asInstanceOf[js.Any])
-      
-      inline def setServerless(value: Boolean): Self = StObject.set(x, "serverless", value.asInstanceOf[js.Any])
       
       inline def setSubFolders(value: Boolean): Self = StObject.set(x, "subFolders", value.asInstanceOf[js.Any])
       
@@ -238,6 +240,8 @@ object distExportWorkerMod {
     
     var runtimeConfig: js.UndefOr[StringDictionary[Any]] = js.undefined
     
+    var supportsDynamicHTML: js.UndefOr[Boolean] = js.undefined
+    
     var trailingSlash: js.UndefOr[Boolean] = js.undefined
   }
   object RenderOpts {
@@ -306,6 +310,10 @@ object distExportWorkerMod {
       inline def setRuntimeConfig(value: StringDictionary[Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
       
       inline def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
+      
+      inline def setSupportsDynamicHTML(value: Boolean): Self = StObject.set(x, "supportsDynamicHTML", value.asInstanceOf[js.Any])
+      
+      inline def setSupportsDynamicHTMLUndefined: Self = StObject.set(x, "supportsDynamicHTML", js.undefined)
       
       inline def setTrailingSlash(value: Boolean): Self = StObject.set(x, "trailingSlash", value.asInstanceOf[js.Any])
       

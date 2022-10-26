@@ -19,6 +19,8 @@ open class QuestionBooleanModel protected () extends Question {
   def booleanValue: Any = js.native
   def booleanValue_=(`val`: Any): Unit = js.native
   
+  def canRenderLabelDescription: Boolean = js.native
+  
   def checkedValue: Any = js.native
   def checkedValue_=(`val`: Any): Unit = js.native
   
@@ -35,6 +37,8 @@ open class QuestionBooleanModel protected () extends Question {
   def isDeterminated: Boolean = js.native
   
   def isIndeterminate: Boolean = js.native
+  
+  def isLabelRendered: Boolean = js.native
   
   def label: String = js.native
   
@@ -55,8 +59,6 @@ open class QuestionBooleanModel protected () extends Question {
   def labelTrue_=(`val`: Any): Unit = js.native
   
   def label_=(`val`: String): Unit = js.native
-  
-  def locDisplayLabel: LocalizableString = js.native
   
   def locLabel: LocalizableString = js.native
   

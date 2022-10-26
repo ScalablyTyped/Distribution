@@ -37,7 +37,7 @@ trait CreateWorkspaceImageResult extends StObject {
   var OwnerAccountId: js.UndefOr[AwsAccount] = js.undefined
   
   /**
-    * Specifies whether the image is running on dedicated hardware. When Bring Your Own License (BYOL) is enabled, this value is set to DEDICATED. For more information, see  Bring Your Own Windows Desktop Images. 
+    * Specifies whether the image is running on dedicated hardware. When Bring Your Own License (BYOL) is enabled, this value is set to DEDICATED. For more information, see  Bring Your Own Windows Desktop Images..
     */
   var RequiredTenancy: js.UndefOr[WorkspaceImageRequiredTenancy] = js.undefined
   

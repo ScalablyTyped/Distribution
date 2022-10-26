@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "favicons-webpack-plugin"
-version := "6.0.0-alpha.1-cc2c19"
+version := "6.0.0-alpha.2-94b31e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

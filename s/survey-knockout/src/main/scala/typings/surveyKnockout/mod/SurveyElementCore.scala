@@ -30,6 +30,8 @@ open class SurveyElementCore ()
   
   /* protected */ def getDefaultTitleValue(): String = js.native
   
+  /* protected */ def getIsTitleRenderedAsString(): Boolean = js.native
+  
   /* InferMemberOverrides */
   override def getLocale(): String = js.native
   
@@ -61,6 +63,8 @@ open class SurveyElementCore ()
   def hasTitleEvents: Boolean = js.native
   
   def isTitleOwner: Boolean = js.native
+  
+  def isTitleRenderedAsString: Boolean = js.native
   
   def locDescription: LocalizableString = js.native
   

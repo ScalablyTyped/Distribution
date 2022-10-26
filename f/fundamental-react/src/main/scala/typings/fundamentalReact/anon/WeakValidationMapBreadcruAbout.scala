@@ -311,6 +311,10 @@ trait WeakValidationMapBreadcruAbout extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
+  var nonce: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+  ] = js.undefined
+  
   var onAbort: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactEventHandler<std.HTMLLIElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLLIElement> | undefined | null | undefined> : undefined extends react.react.ReactEventHandler<std.HTMLLIElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLLIElement> | undefined | null | undefined> : react.react.Validator<react.react.ReactEventHandler<std.HTMLLIElement> | undefined> */ js.Any
   ] = js.undefined
@@ -1171,6 +1175,12 @@ object WeakValidationMapBreadcruAbout {
     ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNonce(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactEventHandler<std.HTMLLIElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLLIElement> | undefined | null | undefined> : undefined extends react.react.ReactEventHandler<std.HTMLLIElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLLIElement> | undefined | null | undefined> : react.react.Validator<react.react.ReactEventHandler<std.HTMLLIElement> | undefined> */ js.Any

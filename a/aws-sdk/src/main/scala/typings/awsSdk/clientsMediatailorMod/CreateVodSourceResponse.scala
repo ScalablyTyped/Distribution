@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateVodSourceResponse extends StObject {
   
   /**
-    * The ARN of the VOD source.
+    * The ARN to assign to this VOD source.
     */
   var Arn: js.UndefOr[string] = js.undefined
   
   /**
-    * The timestamp that indicates when the VOD source was created.
+    * The time the VOD source was created.
     */
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The HTTP package configurations.
+    * A list of HTTP package configuration parameters for this VOD source.
     */
   var HttpPackageConfigurations: js.UndefOr[typings.awsSdk.clientsMediatailorMod.HttpPackageConfigurations] = js.undefined
   
   /**
-    * The last modified time of the VOD source.
+    * The time the VOD source was last modified.
     */
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the source location associated with the VOD source.
+    * The name to assign to the source location for this VOD source.
     */
   var SourceLocationName: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags assigned to the VOD source.
+    * The tags to assign to the VOD source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
   
   /**
-    * The name of the VOD source.
+    * The name to assign to the VOD source.
     */
   var VodSourceName: js.UndefOr[string] = js.undefined
 }

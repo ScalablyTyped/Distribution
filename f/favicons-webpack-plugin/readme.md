@@ -1,7 +1,7 @@
 
 # Scala.js typings for favicons-webpack-plugin
 
-Typings are for version 6.0.0-alpha.1
+Typings are for version 6.0.0-alpha.2
 
 ## Library description:
 Let webpack generate all your favicons and icons for you

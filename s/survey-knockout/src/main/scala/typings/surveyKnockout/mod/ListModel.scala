@@ -33,6 +33,8 @@ open class ListModel protected () extends ActionContainer[Action] {
     onFilterStringChangedCallback: js.Function1[/* text */ String, Unit]
   ) = this()
   
+  def addScrollEventListener(handler: js.Function1[/* e */ js.UndefOr[Any], Unit]): Unit = js.native
+  
   var allowSelection: Boolean = js.native
   
   def emptyMessage: String = js.native
@@ -57,7 +59,13 @@ open class ListModel protected () extends ActionContainer[Action] {
   
   def goToItems(event: Any): Unit = js.native
   
+  var hasVerticalScroller: Boolean = js.native
+  
   def initFocusedItem(): Unit = js.native
+  
+  def initListContainerHtmlElement(htmlElement: Any): Unit = js.native
+  
+  var isAllDataLoaded: Boolean = js.native
   
   var isExpanded: Boolean = js.native
   
@@ -69,9 +77,13 @@ open class ListModel protected () extends ActionContainer[Action] {
   
   def isItemVisible(item: Action): Boolean = js.native
   
+  var listContainerHtmlElement: Any = js.native
+  
   def onItemClick(itemValue: Action): Unit = js.native
   
   def onKeyDown(event: Any): Unit = js.native
+  
+  def onLastItemRended(item: Action): Unit = js.native
   
   def onMouseMove(event: Any): Unit = js.native
   
@@ -84,7 +96,16 @@ open class ListModel protected () extends ActionContainer[Action] {
   
   def refresh(): Unit = js.native
   
+  def removeScrollEventListener(): Unit = js.native
+  
   def resetFocusedItem(): Unit = js.native
+  
+  def scrollHandler(): Unit = js.native
+  def scrollHandler(e: Any): Unit = js.native
+  
+  def scrollToFocusedItem(): Unit = js.native
+  
+  def scrollableContainer: Any = js.native
   
   var searchEnabled: Boolean = js.native
   

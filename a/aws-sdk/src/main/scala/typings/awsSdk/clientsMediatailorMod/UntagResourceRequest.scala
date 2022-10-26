@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UntagResourceRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) for the playback configuration. You can get this from the response to any playback configuration request.
+    * The Amazon Resource Name (ARN) of the resource to untag.
     */
   var ResourceArn: string
   
   /**
-    * A comma-separated list of the tag keys to remove from the playback configuration.
+    * The tag keys associated with the resource.
     */
   var TagKeys: listOfString
 }

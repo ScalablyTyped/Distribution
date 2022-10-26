@@ -2,18 +2,22 @@ package typings.rateLimitRedis
 
 import typings.expressRateLimit.mod.IncrementResponse
 import typings.expressRateLimit.mod.Store
-import typings.ioredis.mod.Redis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rate-limit-redis", JSImport.Namespace)
+  @JSImport("rate-limit-redis", JSImport.Default)
   @js.native
-  open class ^ ()
+  open class default protected ()
     extends StObject
        with RedisStore {
+    /**
+    	 * @constructor for `RedisStore`.
+    	 *
+    	 * @param options {Options} - The configuration options for the store.
+    	 */
     def this(options: Options) = this()
     
     /**
@@ -23,12 +27,6 @@ object mod {
     	 */
     /* CompleteClass */
     override def decrement(key: String): js.Promise[Unit] | Unit = js.native
-    
-    /* CompleteClass */
-    override def incr(
-      key: String,
-      cb: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoreIncrementCallback */ Any
-    ): Unit = js.native
     
     /**
     	 * Method to increment a client's hit counter.
@@ -40,12 +38,46 @@ object mod {
     /* CompleteClass */
     override def increment(key: String): js.Promise[IncrementResponse] | IncrementResponse = js.native
     
-    // rate-limit-redis 1.7.0 doesn't actually implement resetAll() and
-    // express-rate-limit 5.1.1 doesn't actually call it, but it's required by
-    // the Store interface so it's included here.
+    /**
+    	 * Method that actually initializes the store.
+    	 *
+    	 * @param options {RateLimitConfiguration} - The options used to setup the middleware.
+    	 */
     /* CompleteClass */
-    @JSName("resetAll")
-    override def resetAll_MRedisStore(): Unit = js.native
+    @JSName("init")
+    override def init_MRedisStore(options: typings.expressRateLimit.mod.Options): Unit = js.native
+    
+    /* CompleteClass */
+    override def loadScript(): js.Promise[String] = js.native
+    
+    /**
+    	 * Stores the loaded SHA1 of the LUA script for executing the increment operations.
+    	 */
+    /* CompleteClass */
+    var loadedScriptSha1: js.Promise[String] = js.native
+    
+    /**
+    	 * The text to prepend to the key in Redis.
+    	 */
+    /* CompleteClass */
+    var prefix: String = js.native
+    
+    /**
+    	 * Method to prefix the keys with the given text.
+    	 *
+    	 * @param key {string} - The key.
+    	 *
+    	 * @returns {string} - The text + the key.
+    	 */
+    /* CompleteClass */
+    override def prefixKey(key: String): String = js.native
+    
+    /**
+    	 * Whether to reset the expiry for a particular key whenever its hit count
+    	 * changes.
+    	 */
+    /* CompleteClass */
+    var resetExpiryOnChange: Boolean = js.native
     
     /**
     	 * Method to reset a client's hit counter.
@@ -54,90 +86,163 @@ object mod {
     	 */
     /* CompleteClass */
     override def resetKey(key: String): js.Promise[Unit] | Unit = js.native
+    
+    /**
+    	 * The function used to send raw commands to Redis.
+    	 */
+    /* CompleteClass */
+    override def sendCommand(args: String*): js.Promise[RedisReply | js.Array[RedisReply]] = js.native
+    /**
+    	 * The function used to send raw commands to Redis.
+    	 */
+    /* CompleteClass */
+    @JSName("sendCommand")
+    var sendCommand_Original: SendCommandFn = js.native
+    
+    /**
+    	 * The number of milliseconds to remember that user's requests.
+    	 */
+    /* CompleteClass */
+    var windowMs: Double = js.native
   }
   
   trait Options extends StObject {
     
-    var client: js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any) | Redis
-      ] = js.undefined
+    /**
+    	 * The text to prepend to the key in Redis.
+    	 */
+    val prefix: js.UndefOr[String] = js.undefined
     
-    var expiry: js.UndefOr[Double] = js.undefined
+    /**
+    	 * Whether to reset the expiry for a particular key whenever its hit count
+    	 * changes.
+    	 */
+    val resetExpiryOnChange: js.UndefOr[Boolean] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.undefined
-    
-    var redisURL: js.UndefOr[String] = js.undefined
-    
-    var resetExpiryOnChange: js.UndefOr[Boolean] = js.undefined
+    /**
+    	 * The function used to send commands to Redis.
+    	 */
+    def sendCommand(args: String*): js.Promise[RedisReply | js.Array[RedisReply]]
   }
   object Options {
     
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(sendCommand: /* repeated */ String => js.Promise[RedisReply | js.Array[RedisReply]]): Options = {
+      val __obj = js.Dynamic.literal(sendCommand = js.Any.fromFunction1(sendCommand))
       __obj.asInstanceOf[Options]
     }
     
     extension [Self <: Options](x: Self) {
       
-      inline def setClient(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any) | Redis
-      ): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
-      
-      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
-      
-      inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
-      
-      inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
-      
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      inline def setRedisURL(value: String): Self = StObject.set(x, "redisURL", value.asInstanceOf[js.Any])
-      
-      inline def setRedisURLUndefined: Self = StObject.set(x, "redisURL", js.undefined)
-      
       inline def setResetExpiryOnChange(value: Boolean): Self = StObject.set(x, "resetExpiryOnChange", value.asInstanceOf[js.Any])
       
       inline def setResetExpiryOnChangeUndefined: Self = StObject.set(x, "resetExpiryOnChange", js.undefined)
+      
+      inline def setSendCommand(value: /* repeated */ String => js.Promise[RedisReply | js.Array[RedisReply]]): Self = StObject.set(x, "sendCommand", js.Any.fromFunction1(value))
     }
   }
+  
+  type RedisReply = Double | String
   
   trait RedisStore
     extends StObject
        with Store {
     
-    def incr(
-      key: String,
-      cb: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoreIncrementCallback */ Any
-    ): Unit
+    /**
+    	 * Method that actually initializes the store.
+    	 *
+    	 * @param options {RateLimitConfiguration} - The options used to setup the middleware.
+    	 */
+    @JSName("init")
+    def init_MRedisStore(options: typings.expressRateLimit.mod.Options): Unit
     
-    // rate-limit-redis 1.7.0 doesn't actually implement resetAll() and
-    // express-rate-limit 5.1.1 doesn't actually call it, but it's required by
-    // the Store interface so it's included here.
-    @JSName("resetAll")
-    def resetAll_MRedisStore(): Unit
+    def loadScript(): js.Promise[String]
+    
+    /**
+    	 * Stores the loaded SHA1 of the LUA script for executing the increment operations.
+    	 */
+    var loadedScriptSha1: js.Promise[String]
+    
+    /**
+    	 * The text to prepend to the key in Redis.
+    	 */
+    var prefix: String
+    
+    /**
+    	 * Method to prefix the keys with the given text.
+    	 *
+    	 * @param key {string} - The key.
+    	 *
+    	 * @returns {string} - The text + the key.
+    	 */
+    def prefixKey(key: String): String
+    
+    /**
+    	 * Whether to reset the expiry for a particular key whenever its hit count
+    	 * changes.
+    	 */
+    var resetExpiryOnChange: Boolean
+    
+    /**
+    	 * The function used to send raw commands to Redis.
+    	 */
+    def sendCommand(args: String*): js.Promise[RedisReply | js.Array[RedisReply]]
+    /**
+    	 * The function used to send raw commands to Redis.
+    	 */
+    @JSName("sendCommand")
+    var sendCommand_Original: SendCommandFn
+    
+    /**
+    	 * The number of milliseconds to remember that user's requests.
+    	 */
+    var windowMs: Double
   }
   object RedisStore {
     
     inline def apply(
       decrement: String => js.Promise[Unit] | Unit,
-      incr: (String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoreIncrementCallback */ Any) => Unit,
       increment: String => js.Promise[IncrementResponse] | IncrementResponse,
-      resetAll: () => Unit,
-      resetKey: String => js.Promise[Unit] | Unit
+      init: typings.expressRateLimit.mod.Options => Unit,
+      loadScript: () => js.Promise[String],
+      loadedScriptSha1: js.Promise[String],
+      prefix: String,
+      prefixKey: String => String,
+      resetExpiryOnChange: Boolean,
+      resetKey: String => js.Promise[Unit] | Unit,
+      sendCommand: SendCommandFn,
+      windowMs: Double
     ): RedisStore = {
-      val __obj = js.Dynamic.literal(decrement = js.Any.fromFunction1(decrement), incr = js.Any.fromFunction2(incr), increment = js.Any.fromFunction1(increment), resetAll = js.Any.fromFunction0(resetAll), resetKey = js.Any.fromFunction1(resetKey))
+      val __obj = js.Dynamic.literal(decrement = js.Any.fromFunction1(decrement), increment = js.Any.fromFunction1(increment), init = js.Any.fromFunction1(init), loadScript = js.Any.fromFunction0(loadScript), loadedScriptSha1 = loadedScriptSha1.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], prefixKey = js.Any.fromFunction1(prefixKey), resetExpiryOnChange = resetExpiryOnChange.asInstanceOf[js.Any], resetKey = js.Any.fromFunction1(resetKey), sendCommand = sendCommand.asInstanceOf[js.Any], windowMs = windowMs.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedisStore]
     }
     
     extension [Self <: RedisStore](x: Self) {
       
-      inline def setIncr(
-        value: (String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoreIncrementCallback */ Any) => Unit
-      ): Self = StObject.set(x, "incr", js.Any.fromFunction2(value))
+      inline def setInit(value: typings.expressRateLimit.mod.Options => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      inline def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
+      inline def setLoadScript(value: () => js.Promise[String]): Self = StObject.set(x, "loadScript", js.Any.fromFunction0(value))
+      
+      inline def setLoadedScriptSha1(value: js.Promise[String]): Self = StObject.set(x, "loadedScriptSha1", value.asInstanceOf[js.Any])
+      
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixKey(value: String => String): Self = StObject.set(x, "prefixKey", js.Any.fromFunction1(value))
+      
+      inline def setResetExpiryOnChange(value: Boolean): Self = StObject.set(x, "resetExpiryOnChange", value.asInstanceOf[js.Any])
+      
+      inline def setSendCommand(value: SendCommandFn): Self = StObject.set(x, "sendCommand", value.asInstanceOf[js.Any])
+      
+      inline def setWindowMs(value: Double): Self = StObject.set(x, "windowMs", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait SendCommandFn extends StObject {
+    
+    def apply(args: String*): js.Promise[RedisReply | js.Array[RedisReply]] = js.native
   }
 }

@@ -14,7 +14,7 @@ object distLibEslintRunLintCheckMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def runLintCheck(baseDir: String, lintDirs: js.Array[String], opts: EslintOptions): ReturnType[
+  inline def runLintCheck(baseDir: String, lintDirs: js.Array[String], hasAppDir: Boolean, opts: EslintOptions): ReturnType[
     js.Function6[
       /* baseDir */ String, 
       /* lintDirs */ js.Array[String], 
@@ -24,7 +24,7 @@ object distLibEslintRunLintCheckMod {
       /* param5 */ Formatter, 
       js.Promise[String | Null | EventInfo]
     ]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("runLintCheck")(baseDir.asInstanceOf[js.Any], lintDirs.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("runLintCheck")(baseDir.asInstanceOf[js.Any], lintDirs.asInstanceOf[js.Any], hasAppDir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
     js.Function6[
       /* baseDir */ String, 
       /* lintDirs */ js.Array[String], 

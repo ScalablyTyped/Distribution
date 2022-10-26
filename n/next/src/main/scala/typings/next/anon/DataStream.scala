@@ -8,18 +8,20 @@ trait DataStream extends StObject {
   
   var dataStream: js.UndefOr[typings.std.ReadableStream[js.typedarray.Uint8Array]] = js.undefined
   
-  var flushEffectHandler: js.UndefOr[js.Function0[String]] = js.undefined
-  
-  var flushEffectsToHead: Boolean
-  
   var generateStaticHTML: Boolean
   
+  var getServerInsertedHTML: js.UndefOr[js.Function0[js.Promise[String]]] = js.undefined
+  
+  var serverInsertedHTMLToHead: Boolean
+  
   var suffix: js.UndefOr[String] = js.undefined
+  
+  var validateRootLayout: js.UndefOr[GetTree] = js.undefined
 }
 object DataStream {
   
-  inline def apply(flushEffectsToHead: Boolean, generateStaticHTML: Boolean): DataStream = {
-    val __obj = js.Dynamic.literal(flushEffectsToHead = flushEffectsToHead.asInstanceOf[js.Any], generateStaticHTML = generateStaticHTML.asInstanceOf[js.Any])
+  inline def apply(generateStaticHTML: Boolean, serverInsertedHTMLToHead: Boolean): DataStream = {
+    val __obj = js.Dynamic.literal(generateStaticHTML = generateStaticHTML.asInstanceOf[js.Any], serverInsertedHTMLToHead = serverInsertedHTMLToHead.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataStream]
   }
   
@@ -29,16 +31,20 @@ object DataStream {
     
     inline def setDataStreamUndefined: Self = StObject.set(x, "dataStream", js.undefined)
     
-    inline def setFlushEffectHandler(value: () => String): Self = StObject.set(x, "flushEffectHandler", js.Any.fromFunction0(value))
-    
-    inline def setFlushEffectHandlerUndefined: Self = StObject.set(x, "flushEffectHandler", js.undefined)
-    
-    inline def setFlushEffectsToHead(value: Boolean): Self = StObject.set(x, "flushEffectsToHead", value.asInstanceOf[js.Any])
-    
     inline def setGenerateStaticHTML(value: Boolean): Self = StObject.set(x, "generateStaticHTML", value.asInstanceOf[js.Any])
+    
+    inline def setGetServerInsertedHTML(value: () => js.Promise[String]): Self = StObject.set(x, "getServerInsertedHTML", js.Any.fromFunction0(value))
+    
+    inline def setGetServerInsertedHTMLUndefined: Self = StObject.set(x, "getServerInsertedHTML", js.undefined)
+    
+    inline def setServerInsertedHTMLToHead(value: Boolean): Self = StObject.set(x, "serverInsertedHTMLToHead", value.asInstanceOf[js.Any])
     
     inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    
+    inline def setValidateRootLayout(value: GetTree): Self = StObject.set(x, "validateRootLayout", value.asInstanceOf[js.Any])
+    
+    inline def setValidateRootLayoutUndefined: Self = StObject.set(x, "validateRootLayout", js.undefined)
   }
 }

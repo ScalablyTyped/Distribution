@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "testing-library__cypress"
-version := "5.0-dt-20211202Z-8dd07f"
+version := "5.0-dt-20211202Z-d35860"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "aria-query" % "5.0-dt-20211202Z-63a520",
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
-  "org.scalablytyped" %%% "cypress" % "10.10.0-af28c9",
+  "org.scalablytyped" %%% "cypress" % "10.11.0-fd7ef9",
   "org.scalablytyped" %%% "eventemitter2" % "6.4.9-348099",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
   "org.scalablytyped" %%% "pretty-format" % "29.2.1-d73ee0",

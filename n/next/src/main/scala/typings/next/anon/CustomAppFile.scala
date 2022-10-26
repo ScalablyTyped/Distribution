@@ -16,6 +16,8 @@ trait CustomAppFile extends StObject {
   
   var future: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['future'] */ js.Any
   
+  var hasAppDir: Boolean
+  
   var isDevelopment: Boolean
   
   var isEdgeRuntime: Boolean
@@ -39,6 +41,7 @@ object CustomAppFile {
     disableStaticImages: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['disableStaticImages'] */ js.Any,
     experimental: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental'] */ js.Any,
     future: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['future'] */ js.Any,
+    hasAppDir: Boolean,
     isDevelopment: Boolean,
     isEdgeRuntime: Boolean,
     isServer: Boolean,
@@ -47,7 +50,7 @@ object CustomAppFile {
     sassOptions: Any,
     targetWeb: Boolean
   ): CustomAppFile = {
-    val __obj = js.Dynamic.literal(assetPrefix = assetPrefix.asInstanceOf[js.Any], disableStaticImages = disableStaticImages.asInstanceOf[js.Any], experimental = experimental.asInstanceOf[js.Any], future = future.asInstanceOf[js.Any], isDevelopment = isDevelopment.asInstanceOf[js.Any], isEdgeRuntime = isEdgeRuntime.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], productionBrowserSourceMaps = productionBrowserSourceMaps.asInstanceOf[js.Any], rootDirectory = rootDirectory.asInstanceOf[js.Any], sassOptions = sassOptions.asInstanceOf[js.Any], targetWeb = targetWeb.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(assetPrefix = assetPrefix.asInstanceOf[js.Any], disableStaticImages = disableStaticImages.asInstanceOf[js.Any], experimental = experimental.asInstanceOf[js.Any], future = future.asInstanceOf[js.Any], hasAppDir = hasAppDir.asInstanceOf[js.Any], isDevelopment = isDevelopment.asInstanceOf[js.Any], isEdgeRuntime = isEdgeRuntime.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], productionBrowserSourceMaps = productionBrowserSourceMaps.asInstanceOf[js.Any], rootDirectory = rootDirectory.asInstanceOf[js.Any], sassOptions = sassOptions.asInstanceOf[js.Any], targetWeb = targetWeb.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomAppFile]
   }
   
@@ -70,6 +73,8 @@ object CustomAppFile {
     inline def setFuture(
       value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['future'] */ js.Any
     ): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+    
+    inline def setHasAppDir(value: Boolean): Self = StObject.set(x, "hasAppDir", value.asInstanceOf[js.Any])
     
     inline def setIsDevelopment(value: Boolean): Self = StObject.set(x, "isDevelopment", value.asInstanceOf[js.Any])
     

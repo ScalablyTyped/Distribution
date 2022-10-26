@@ -5,7 +5,6 @@ import typings.next.anon.Assets
 import typings.next.anon.Buffer
 import typings.next.anon.Fallback
 import typings.next.anon.FinishedBoolean
-import typings.next.anon.GenerateEtags
 import typings.next.anon.Middleware
 import typings.next.anon.OnWarning
 import typings.next.anon.Query
@@ -38,10 +37,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distServerNextServerMod {
   
-  @JSImport("next/dist/server/next-server", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   @JSImport("next/dist/server/next-server", JSImport.Default)
   @js.native
   open class default protected () extends NextNodeServer {
@@ -60,18 +55,11 @@ object distServerNextServerMod {
     def this(innerError: js.Error) = this()
   }
   
-  inline def prepareServerlessUrl(
-    req: BaseNextRequest[Any],
-    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareServerlessUrl")(req.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
   @js.native
   trait NextNodeServer
     extends typings.next.distServerBaseServerMod.default[Options] {
     
     /* private */ var _cachedPreviewManifest: Any = js.native
-    
-    /* protected */ def _isLikeServerless: Boolean = js.native
     
     /* private */ var _validFilesystemPathSet: Any = js.native
     
@@ -634,7 +622,7 @@ object distServerNextServerMod {
       */
     /* protected */ def runMiddleware(params: OnWarning): js.Promise[FetchEventResult | FinishedBoolean] = js.native
     
-    /* protected */ def sendRenderResult(req: NodeNextRequest, res: NodeNextResponse, options: GenerateEtags): js.Promise[Unit] = js.native
+    /* protected */ def sendRenderResult(req: NodeNextRequest, res: NodeNextResponse, options: typings.next.anon.Options): js.Promise[Unit] = js.native
     
     /* protected */ def sendStatic(req: NodeNextRequest, res: NodeNextResponse, path: String): js.Promise[Unit] = js.native
     

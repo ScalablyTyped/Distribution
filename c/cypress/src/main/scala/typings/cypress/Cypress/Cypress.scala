@@ -67,7 +67,6 @@ import typings.cypress.cypressStrings.isInteractive
 import typings.cypress.cypressStrings.isNewProject
 import typings.cypress.cypressStrings.isTextTerminal
 import typings.cypress.cypressStrings.keystrokeDelay
-import typings.cypress.cypressStrings.legacy
 import typings.cypress.cypressStrings.linux
 import typings.cypress.cypressStrings.logColonadded
 import typings.cypress.cypressStrings.logColonchanged
@@ -77,6 +76,8 @@ import typings.cypress.cypressStrings.namespace
 import typings.cypress.cypressStrings.net
 import typings.cypress.cypressStrings.nodeVersion
 import typings.cypress.cypressStrings.numTestsKeptInMemory
+import typings.cypress.cypressStrings.off
+import typings.cypress.cypressStrings.on
 import typings.cypress.cypressStrings.pageLoadTimeout
 import typings.cypress.cypressStrings.parentTestsFolder
 import typings.cypress.cypressStrings.parentTestsFolderDisplay
@@ -111,7 +112,6 @@ import typings.cypress.cypressStrings.socketIoRoute
 import typings.cypress.cypressStrings.specPattern
 import typings.cypress.cypressStrings.spec_
 import typings.cypress.cypressStrings.specs
-import typings.cypress.cypressStrings.strict
 import typings.cypress.cypressStrings.supportFile
 import typings.cypress.cypressStrings.supportFolder
 import typings.cypress.cypressStrings.system
@@ -957,7 +957,7 @@ trait Cypress extends StObject {
   @JSName("config")
   def config_taskTimeout_Double(key: taskTimeout): Double = js.native
   @JSName("config")
-  def config_testIsolation(key: testIsolation): legacy | strict = js.native
+  def config_testIsolation(key: testIsolation): Null | on | off = js.native
   @JSName("config")
   def config_trashAssetsBeforeRuns(key: trashAssetsBeforeRuns): Boolean = js.native
   @JSName("config")
@@ -2041,12 +2041,6 @@ trait Cypress extends StObject {
     *    Cypress.platform // "darwin"
     */
   var platform: java.lang.String = js.native
-  
-  /**
-    * Used to import dependencies within the cy.origin() callback
-    * @see https://on.cypress.io/origin
-    */
-  def require(id: java.lang.String): Any = js.native
   
   /**
     * Internal class for session management.

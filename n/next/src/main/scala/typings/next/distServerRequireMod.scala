@@ -10,45 +10,18 @@ object distServerRequireMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getPagePath(page: String, distDir: String, serverless: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getPagePath(page: String, distDir: String, serverless: Boolean, dev: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getPagePath(page: String, distDir: String, serverless: Boolean, dev: Boolean, locales: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], locales.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getPagePath(
-    page: String,
-    distDir: String,
-    serverless: Boolean,
-    dev: Boolean,
-    locales: js.Array[String],
-    appDirEnabled: Boolean
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getPagePath(
-    page: String,
-    distDir: String,
-    serverless: Boolean,
-    dev: Boolean,
-    locales: Unit,
-    appDirEnabled: Boolean
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getPagePath(page: String, distDir: String, serverless: Boolean, dev: Unit, locales: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], locales.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getPagePath(
-    page: String,
-    distDir: String,
-    serverless: Boolean,
-    dev: Unit,
-    locales: js.Array[String],
-    appDirEnabled: Boolean
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getPagePath(
-    page: String,
-    distDir: String,
-    serverless: Boolean,
-    dev: Unit,
-    locales: Unit,
-    appDirEnabled: Boolean
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getMaybePagePath(page: String, distDir: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaybePagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getMaybePagePath(page: String, distDir: String, locales: js.Array[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaybePagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], locales.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getMaybePagePath(page: String, distDir: String, locales: js.Array[String], appDirEnabled: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaybePagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getMaybePagePath(page: String, distDir: String, locales: Unit, appDirEnabled: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaybePagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  inline def requireFontManifest(distDir: String, serverless: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireFontManifest")(distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getPagePath(page: String, distDir: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPagePath(page: String, distDir: String, locales: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], locales.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPagePath(page: String, distDir: String, locales: js.Array[String], appDirEnabled: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPagePath(page: String, distDir: String, locales: Unit, appDirEnabled: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPagePath")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def requirePage(page: String, distDir: String, serverless: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requirePage")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def requirePage(page: String, distDir: String, serverless: Boolean, appDirEnabled: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requirePage")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def requireFontManifest(distDir: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requireFontManifest")(distDir.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def requirePage(page: String, distDir: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requirePage")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def requirePage(page: String, distDir: String, appDirEnabled: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requirePage")(page.asInstanceOf[js.Any], distDir.asInstanceOf[js.Any], appDirEnabled.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

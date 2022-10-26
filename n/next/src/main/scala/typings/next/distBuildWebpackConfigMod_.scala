@@ -12,5 +12,5 @@ object distBuildWebpackConfigMod_ {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def build(config: Configuration, param1: CustomAppFile): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
+  inline def buildConfiguration(config: Configuration, param1: CustomAppFile): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildConfiguration")(config.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
 }

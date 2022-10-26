@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-navigation__native"
-version := "6.0.13-0dbd38"
+version := "6.0.13-b105a8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-487073",
-  "org.scalablytyped" %%% "react-navigation__core" % "6.4.0-c15e48",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-0a69be",
+  "org.scalablytyped" %%% "react-navigation__core" % "6.4.0-2ee613",
   "org.scalablytyped" %%% "react-navigation__routers" % "6.1.3-37434c",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

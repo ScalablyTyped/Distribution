@@ -1,6 +1,6 @@
 package typings.next
 
-import typings.next.anon.IsAppDir
+import typings.next.anon.HasAppDir
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +11,5 @@ object distBuildWebpackConfigBlocksCssLoadersClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getClientStyleLoader(param0: IsAppDir): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientStyleLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getClientStyleLoader(param0: HasAppDir): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientStyleLoader")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

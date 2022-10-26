@@ -199,6 +199,9 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   
   var `aria-valuetext`: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional decorator for the path that will be shown in the browser URL bar. Before Next.js 9.5.3 this was used for dynamic routes, check our [previous docs](https://nextjs.org/docs/tag/v9.5.2/api-reference/next/link#dynamic-routes) to see how it worked. Note: when this path differs from the one provided in `href` the previous `href`/`as` behavior is used as shown in the [previous docs](https://nextjs.org/docs/tag/v9.5.2/api-reference/next/link#dynamic-routes).
+    */
   var as: js.UndefOr[typings.next.distClientLinkMod.Url] = js.undefined
   
   var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -233,6 +236,11 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The path or URL to navigate to. It can also be an object.
+    *
+    * @example https://nextjs.org/docs/api-reference/next/link#with-url-object
+    */
   var href: typings.next.distClientLinkMod.Url
   
   var hrefLang: js.UndefOr[String] = js.undefined
@@ -259,11 +267,22 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   
   var lang: js.UndefOr[String] = js.undefined
   
+  /**
+    * Enable legacy link behaviour.
+    * @defaultValue `true`
+    * @see https://github.com/vercel/next.js/commit/489e65ed98544e69b0afd7e0cfc3f9f6c2b803b7
+    */
   var legacyBehavior: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The active locale is automatically prepended. `locale` allows for providing a different locale.
+    * When `false` `href` has to include the locale as the default behavior is disabled.
+    */
   var locale: js.UndefOr[String | `false`] = js.undefined
   
   var media: js.UndefOr[String] = js.undefined
+  
+  var nonce: js.UndefOr[String] = js.undefined
   
   var onAbort: js.UndefOr[ReactEventHandler[HTMLAnchorElement]] = js.undefined
   
@@ -432,12 +451,24 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   
   var onWheel: js.UndefOr[WheelEventHandler[HTMLAnchorElement]] = js.undefined
   
+  /**
+    * Forces `Link` to send the `href` property to its child.
+    *
+    * @defaultValue `false`
+    */
   var passHref: js.UndefOr[Boolean] = js.undefined
   
   var ping: js.UndefOr[String] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
+  /**
+    * Prefetch the page in the background.
+    * Any `<Link />` that is in the viewport (initially or through scroll) will be preloaded.
+    * Prefetch can be disabled by passing `prefetch={false}`. When `prefetch` is set to `false`, prefetching will still occur on hover. Pages using [Static Generation](/docs/basic-features/data-fetching/get-static-props.md) will preload `JSON` files with the data for faster page transitions. Prefetching is only enabled in production.
+    *
+    * @defaultValue `true`
+    */
   var prefetch: js.UndefOr[Boolean] = js.undefined
   
   var prefix: js.UndefOr[String] = js.undefined
@@ -452,6 +483,11 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   
   var rel: js.UndefOr[String] = js.undefined
   
+  /**
+    * Replace the current `history` state instead of adding a new url into the stack.
+    *
+    * @defaultValue `false`
+    */
   var replace: js.UndefOr[Boolean] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
@@ -460,10 +496,22 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
+  /**
+    * Whether to override the default scroll behavior
+    *
+    * @example https://nextjs.org/docs/api-reference/next/link#disable-scrolling-to-the-top-of-the-page
+    *
+    * @defaultValue `true`
+    */
   var scroll: js.UndefOr[Boolean] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined
   
+  /**
+    * Update the path of the current page without rerunning [`getStaticProps`](/docs/basic-features/data-fetching/get-static-props.md), [`getServerSideProps`](/docs/basic-features/data-fetching/get-server-side-props.md) or [`getInitialProps`](/docs/api-reference/data-fetching/get-initial-props.md).
+    *
+    * @defaultValue `false`
+    */
   var shallow: js.UndefOr[Boolean] = js.undefined
   
   var slot: js.UndefOr[String] = js.undefined
@@ -836,6 +884,10 @@ object OmitAnchorHTMLAttributesH {
     inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

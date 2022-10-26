@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "staticmaps"
-version := "1.5-dt-20211202Z-2f08ca"
+version := "1.10-dt-20221025Z-d276e6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

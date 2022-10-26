@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrefetchRetrieval extends StObject {
   
   /**
-    * The dynamic variables to use for substitution during prefetch requests to the ad decision server (ADS). You intially configure dynamic variables for the ADS URL when you set up your playback configuration. When you specify DynamicVariables for prefetch retrieval, MediaTailor includes the dynamic variables in the request to the ADS.
+    * The dynamic variables to use for substitution during prefetch requests to the ad decision server (ADS). You initially configure dynamic variables for the ADS URL when you set up your playback configuration. When you specify DynamicVariables for prefetch retrieval, MediaTailor includes the dynamic variables in the request to the ADS.
     */
   var DynamicVariables: js.UndefOr[mapOfString] = js.undefined
   

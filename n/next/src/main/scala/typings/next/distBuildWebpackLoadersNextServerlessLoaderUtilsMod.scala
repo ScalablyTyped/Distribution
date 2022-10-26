@@ -5,8 +5,10 @@ import typings.next.anon.BeforeFiles
 import typings.next.anon.DefaultRouteMatches
 import typings.next.anon.Groups
 import typings.next.distServerApiUtilsMod.ApiPreviewProps
+import typings.next.distServerBaseHttpMod.BaseNextRequest
 import typings.next.distServerConfigSharedMod.I18NConfig
 import typings.next.distServerGetPageFilesMod.BuildManifest
+import typings.node.httpMod.IncomingMessage
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,6 +31,76 @@ object distBuildWebpackLoadersNextServerlessLoaderUtilsMod {
     params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
     defaultRouteRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateDynamicPath")(pathname.asInstanceOf[js.Any], params.asInstanceOf[js.Any], defaultRouteRegex.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def normalizeVercelUrl(req: BaseNextRequest[Any], trustQuery: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(req: BaseNextRequest[Any], trustQuery: Boolean, paramKeys: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(
+    req: BaseNextRequest[Any],
+    trustQuery: Boolean,
+    paramKeys: js.Array[String],
+    pageIsDynamic: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(
+    req: BaseNextRequest[Any],
+    trustQuery: Boolean,
+    paramKeys: js.Array[String],
+    pageIsDynamic: Boolean,
+    defaultRouteRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any], defaultRouteRegex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(
+    req: BaseNextRequest[Any],
+    trustQuery: Boolean,
+    paramKeys: js.Array[String],
+    pageIsDynamic: Unit,
+    defaultRouteRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any], defaultRouteRegex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(req: BaseNextRequest[Any], trustQuery: Boolean, paramKeys: Unit, pageIsDynamic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(
+    req: BaseNextRequest[Any],
+    trustQuery: Boolean,
+    paramKeys: Unit,
+    pageIsDynamic: Boolean,
+    defaultRouteRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any], defaultRouteRegex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(
+    req: BaseNextRequest[Any],
+    trustQuery: Boolean,
+    paramKeys: Unit,
+    pageIsDynamic: Unit,
+    defaultRouteRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any], defaultRouteRegex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(req: IncomingMessage, trustQuery: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(req: IncomingMessage, trustQuery: Boolean, paramKeys: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(req: IncomingMessage, trustQuery: Boolean, paramKeys: js.Array[String], pageIsDynamic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(
+    req: IncomingMessage,
+    trustQuery: Boolean,
+    paramKeys: js.Array[String],
+    pageIsDynamic: Boolean,
+    defaultRouteRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any], defaultRouteRegex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(
+    req: IncomingMessage,
+    trustQuery: Boolean,
+    paramKeys: js.Array[String],
+    pageIsDynamic: Unit,
+    defaultRouteRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any], defaultRouteRegex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(req: IncomingMessage, trustQuery: Boolean, paramKeys: Unit, pageIsDynamic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(
+    req: IncomingMessage,
+    trustQuery: Boolean,
+    paramKeys: Unit,
+    pageIsDynamic: Boolean,
+    defaultRouteRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any], defaultRouteRegex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalizeVercelUrl(
+    req: IncomingMessage,
+    trustQuery: Boolean,
+    paramKeys: Unit,
+    pageIsDynamic: Unit,
+    defaultRouteRegex: ReturnType[js.Function1[/* normalizedRoute */ String, Groups]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeVercelUrl")(req.asInstanceOf[js.Any], trustQuery.asInstanceOf[js.Any], paramKeys.asInstanceOf[js.Any], pageIsDynamic.asInstanceOf[js.Any], defaultRouteRegex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("next/dist/build/webpack/loaders/next-serverless-loader/utils", "vercelHeader")
   @js.native

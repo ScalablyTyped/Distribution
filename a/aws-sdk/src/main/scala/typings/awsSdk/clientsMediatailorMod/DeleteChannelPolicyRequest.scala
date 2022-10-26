@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteChannelPolicyRequest extends StObject {
   
   /**
-    * The identifier for the channel you are working on.
+    * The name of the channel associated with this channel policy.
     */
   var ChannelName: string
 }

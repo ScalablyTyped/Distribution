@@ -315,6 +315,10 @@ trait WeakValidationMapCounterP extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends {  counterLabel :string | undefined} | undefined ? react.react.Validator<{  counterLabel :string | undefined} | undefined | null | undefined> : undefined extends {  counterLabel :string | undefined} | undefined ? react.react.Validator<{  counterLabel :string | undefined} | undefined | null | undefined> : react.react.Validator<{  counterLabel :string | undefined} | undefined> */ js.Any
   ] = js.undefined
   
+  var nonce: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+  ] = js.undefined
+  
   var notification: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
   ] = js.undefined
@@ -1181,6 +1185,12 @@ object WeakValidationMapCounterP {
     ): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
     
     inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+    
+    inline def setNonce(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setNotification(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any

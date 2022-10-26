@@ -21,8 +21,6 @@ trait ScriptHTMLAttributes[T]
   
   var noModule: js.UndefOr[Boolean] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.undefined
-  
   var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
   
   var src: js.UndefOr[String] = js.undefined
@@ -61,10 +59,6 @@ object ScriptHTMLAttributes {
     inline def setNoModule(value: Boolean): Self = StObject.set(x, "noModule", value.asInstanceOf[js.Any])
     
     inline def setNoModuleUndefined: Self = StObject.set(x, "noModule", js.undefined)
-    
-    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
-    
-    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     

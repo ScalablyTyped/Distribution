@@ -1,15 +1,16 @@
 package typings.pollyjsPersisterLocalStorage
 
-import typings.pollyjsPersister.mod.default
+import typings.pollyjsPersisterLocalStorage.anon.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@pollyjs/persister-local-storage", JSImport.Namespace)
+  @JSImport("@pollyjs/persister-local-storage", JSImport.Default)
   @js.native
-  open class ^ () extends default
+  open class default ()
+    extends typings.pollyjsPersister.mod.default[Context]
   
-  type LocalStoragePersister = default
+  type LocalStoragePersister = typings.pollyjsPersister.mod.default[Context]
 }

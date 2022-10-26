@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__storage
 
-Typings are for version 6.5.4
+Typings are for version 6.6.0
 
 ## Library description:
 Cloud Storage Client Library for Node.js

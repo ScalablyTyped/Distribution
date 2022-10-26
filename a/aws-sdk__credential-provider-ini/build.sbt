@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-provider-ini"
-version := "3.193.0-0bb9cc"
+version := "3.196.0-4f4699"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

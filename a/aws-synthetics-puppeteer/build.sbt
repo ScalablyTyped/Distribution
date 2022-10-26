@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-synthetics-puppeteer"
-version := "3.1-dt-20220419Z-d84e96"
+version := "3.1-dt-20220419Z-67b9e0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1239.0-f6cfe9",
+  "org.scalablytyped" %%% "aws-sdk" % "2.1240.0-b3eaa8",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-6dfedf",
   "org.scalablytyped" %%% "devtools-protocol" % "0.0.1061995-6c2bf2",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",

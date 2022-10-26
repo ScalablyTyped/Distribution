@@ -463,7 +463,7 @@ object GM {
       * The URL to make the request to. Must be an absolute URL, beginning
       * with the scheme. May be relative to the current page.
       */
-    var url: String
+    var url: String | URL
     
     /** User name to use for authentication purposes. */
     var user: js.UndefOr[String] = js.undefined
@@ -472,7 +472,7 @@ object GM {
   }
   object XMLRequest {
     
-    inline def apply[TContext](url: String): XMLRequest[TContext] = {
+    inline def apply[TContext](url: String | URL): XMLRequest[TContext] = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[XMLRequest[TContext]]
     }
@@ -527,7 +527,7 @@ object GM {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String | URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       

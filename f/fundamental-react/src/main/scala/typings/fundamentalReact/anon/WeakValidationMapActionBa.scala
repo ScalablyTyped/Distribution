@@ -339,6 +339,10 @@ trait WeakValidationMapActionBa extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
   ] = js.undefined
   
+  var nonce: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
   var onAbort: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : undefined extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined> */ js.Any
   ] = js.undefined
@@ -1245,6 +1249,12 @@ object WeakValidationMapActionBa {
     ): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setNonce(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : undefined extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined> */ js.Any

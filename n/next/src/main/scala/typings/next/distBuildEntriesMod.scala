@@ -4,19 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.next.anon.AbsolutePagePath
 import typings.next.anon.AppDir
 import typings.next.anon.AppDirLoader
-import typings.next.anon.AppPaths
-import typings.next.anon.BuildId
 import typings.next.anon.Client
+import typings.next.anon.CompilerType
 import typings.next.anon.Import
-import typings.next.anon.Layer
 import typings.next.anon.OnClient
 import typings.next.anon.PageExtensions
 import typings.next.distCompiledWebpackWebpackMod.webpack.EntryObject
 import typings.next.distServerApiUtilsMod.ApiPreviewProps
 import typings.next.distServerConfigSharedMod.NextConfigComplete
-import typings.next.nextStrings.`experimental-serverless-trace`
-import typings.next.nextStrings.server
-import typings.next.nextStrings.serverless
 import typings.nextEnv.anon.Contents
 import typings.nextEnv.mod.LoadedEnvFiles
 import typings.std.Record
@@ -34,17 +29,15 @@ object distBuildEntriesMod {
   
   inline def createPagesMapping(param0: PageExtensions): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPagesMapping")(param0.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  inline def finalizeEntrypoint(param0: AppDir): ObjectValue[EntryObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("finalizeEntrypoint")(param0.asInstanceOf[js.Any]).asInstanceOf[ObjectValue[EntryObject]]
+  inline def finalizeEntrypoint(param0: CompilerType): ObjectValue[EntryObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("finalizeEntrypoint")(param0.asInstanceOf[js.Any]).asInstanceOf[ObjectValue[EntryObject]]
   
-  inline def getAppEntry(opts: AppPaths): Import = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppEntry")(opts.asInstanceOf[js.Any]).asInstanceOf[Import]
+  inline def getAppEntry(opts: AppDir): Import = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppEntry")(opts.asInstanceOf[js.Any]).asInstanceOf[Import]
   
   inline def getClientEntry(opts: AbsolutePagePath): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientEntry")(opts.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
   
-  inline def getEdgeServerEntry(opts: AppDirLoader): String | Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("getEdgeServerEntry")(opts.asInstanceOf[js.Any]).asInstanceOf[String | Layer]
+  inline def getEdgeServerEntry(opts: AppDirLoader): String | Import = ^.asInstanceOf[js.Dynamic].applyDynamic("getEdgeServerEntry")(opts.asInstanceOf[js.Any]).asInstanceOf[String | Import]
   
   inline def getPageFromPath(pagePath: String, pageExtensions: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPageFromPath")(pagePath.asInstanceOf[js.Any], pageExtensions.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def getServerlessEntry(opts: BuildId): ObjectValue[EntryObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerlessEntry")(opts.asInstanceOf[js.Any]).asInstanceOf[ObjectValue[EntryObject]]
   
   inline def runDependingOnPageType[T](params: OnClient[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("runDependingOnPageType")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
@@ -73,8 +66,6 @@ object distBuildEntriesMod {
     var rootDir: String
     
     var rootPaths: js.UndefOr[Record[String, String]] = js.undefined
-    
-    var target: server | serverless | `experimental-serverless-trace`
   }
   object CreateEntrypointsParams {
     
@@ -85,10 +76,9 @@ object distBuildEntriesMod {
       pageExtensions: js.Array[String],
       pages: StringDictionary[String],
       previewMode: ApiPreviewProps,
-      rootDir: String,
-      target: server | serverless | `experimental-serverless-trace`
+      rootDir: String
     ): CreateEntrypointsParams = {
-      val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], envFiles = envFiles.asInstanceOf[js.Any], pageExtensions = pageExtensions.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], previewMode = previewMode.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], envFiles = envFiles.asInstanceOf[js.Any], pageExtensions = pageExtensions.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], previewMode = previewMode.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateEntrypointsParams]
     }
     
@@ -131,8 +121,6 @@ object distBuildEntriesMod {
       inline def setRootPaths(value: Record[String, String]): Self = StObject.set(x, "rootPaths", value.asInstanceOf[js.Any])
       
       inline def setRootPathsUndefined: Self = StObject.set(x, "rootPaths", js.undefined)
-      
-      inline def setTarget(value: server | serverless | `experimental-serverless-trace`): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   

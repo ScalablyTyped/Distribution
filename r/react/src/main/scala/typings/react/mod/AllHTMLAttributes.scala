@@ -147,8 +147,6 @@ trait AllHTMLAttributes[T]
   
   var noValidate: js.UndefOr[Boolean] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.undefined
-  
   var open: js.UndefOr[Boolean] = js.undefined
   
   var optimum: js.UndefOr[Double] = js.undefined
@@ -501,10 +499,6 @@ object AllHTMLAttributes {
     inline def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
     
     inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
-    
-    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
-    
-    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     

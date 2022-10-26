@@ -9,17 +9,17 @@ trait LoadStaticPaths
   extends StObject
      with /* k */ StringDictionary[Any] {
   
-  var loadStaticPaths: js.Function1[/* param0 */ HttpAgentOptions, js.Promise[EncodedPathsFallback]]
+  var loadStaticPaths: js.Function1[/* param0 */ EnableUndici, js.Promise[EncodedPathsFallback]]
 }
 object LoadStaticPaths {
   
-  inline def apply(loadStaticPaths: /* param0 */ HttpAgentOptions => js.Promise[EncodedPathsFallback]): LoadStaticPaths = {
+  inline def apply(loadStaticPaths: /* param0 */ EnableUndici => js.Promise[EncodedPathsFallback]): LoadStaticPaths = {
     val __obj = js.Dynamic.literal(loadStaticPaths = js.Any.fromFunction1(loadStaticPaths))
     __obj.asInstanceOf[LoadStaticPaths]
   }
   
   extension [Self <: LoadStaticPaths](x: Self) {
     
-    inline def setLoadStaticPaths(value: /* param0 */ HttpAgentOptions => js.Promise[EncodedPathsFallback]): Self = StObject.set(x, "loadStaticPaths", js.Any.fromFunction1(value))
+    inline def setLoadStaticPaths(value: /* param0 */ EnableUndici => js.Promise[EncodedPathsFallback]): Self = StObject.set(x, "loadStaticPaths", js.Any.fromFunction1(value))
   }
 }

@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLiveSourceResponse extends StObject {
   
   /**
-    * The ARN of the live source.
+    * The ARN to assign to the live source.
     */
   var Arn: js.UndefOr[string] = js.undefined
   
   /**
-    * The timestamp that indicates when the live source was created.
+    * The time the live source was created.
     */
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The HTTP package configurations.
+    * A list of HTTP package configuration parameters for this live source.
     */
   var HttpPackageConfigurations: js.UndefOr[typings.awsSdk.clientsMediatailorMod.HttpPackageConfigurations] = js.undefined
   
   /**
-    * The timestamp that indicates when the live source was modified.
+    * The time the live source was last modified.
     */
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the live source.
+    * The name to assign to the live source.
     */
   var LiveSourceName: js.UndefOr[string] = js.undefined
   
   /**
-    * The name of the source location associated with the VOD source.
+    * The name to assign to the source location of the live source.
     */
   var SourceLocationName: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags assigned to the live source.
+    * The tags to assign to the live source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
 }

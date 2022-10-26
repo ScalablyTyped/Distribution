@@ -258,6 +258,8 @@ trait FieldProps[T, F]
   /** The unique name of the field, usually derived from the name of the property in the JSONSchema */
   var name: String = js.native
   
+  var nonce: js.UndefOr[String] = js.native
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.native

@@ -81,6 +81,31 @@ object anon {
     }
   }
   
+  trait AllowCrossOriginArguments extends StObject {
+    
+    var allowCrossOriginArguments: js.UndefOr[Boolean] = js.undefined
+    
+    var defineAs: js.UndefOr[String] = js.undefined
+  }
+  object AllowCrossOriginArguments {
+    
+    inline def apply(): AllowCrossOriginArguments = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AllowCrossOriginArguments]
+    }
+    
+    extension [Self <: AllowCrossOriginArguments](x: Self) {
+      
+      inline def setAllowCrossOriginArguments(value: Boolean): Self = StObject.set(x, "allowCrossOriginArguments", value.asInstanceOf[js.Any])
+      
+      inline def setAllowCrossOriginArgumentsUndefined: Self = StObject.set(x, "allowCrossOriginArguments", js.undefined)
+      
+      inline def setDefineAs(value: String): Self = StObject.set(x, "defineAs", value.asInstanceOf[js.Any])
+      
+      inline def setDefineAsUndefined: Self = StObject.set(x, "defineAs", js.undefined)
+    }
+  }
+  
   trait Browser extends StObject {
     
     /** An object containing data about the currently running browser */
@@ -136,6 +161,31 @@ object anon {
       inline def setScriptMetaStrNull: Self = StObject.set(x, "scriptMetaStr", null)
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait CloneFunctions extends StObject {
+    
+    var cloneFunctions: js.UndefOr[Boolean] = js.undefined
+    
+    var wrapReflectors: js.UndefOr[Boolean] = js.undefined
+  }
+  object CloneFunctions {
+    
+    inline def apply(): CloneFunctions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CloneFunctions]
+    }
+    
+    extension [Self <: CloneFunctions](x: Self) {
+      
+      inline def setCloneFunctions(value: Boolean): Self = StObject.set(x, "cloneFunctions", value.asInstanceOf[js.Any])
+      
+      inline def setCloneFunctionsUndefined: Self = StObject.set(x, "cloneFunctions", js.undefined)
+      
+      inline def setWrapReflectors(value: Boolean): Self = StObject.set(x, "wrapReflectors", value.asInstanceOf[js.Any])
+      
+      inline def setWrapReflectorsUndefined: Self = StObject.set(x, "wrapReflectors", js.undefined)
     }
   }
   

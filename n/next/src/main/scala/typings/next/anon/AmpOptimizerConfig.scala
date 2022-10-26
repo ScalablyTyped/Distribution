@@ -1,6 +1,7 @@
 package typings.next.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.next.distBuildWebpackPluginsFontLoaderManifestPluginMod.FontLoaderManifest
 import typings.next.distServerApiUtilsMod.ApiPreviewProps
 import typings.next.distServerFontUtilsMod.FontConfig
 import typings.next.distServerFontUtilsMod.FontManifest
@@ -36,11 +37,15 @@ trait AmpOptimizerConfig extends StObject {
   
   var domainLocales: js.UndefOr[js.Array[typings.next.distServerConfigSharedMod.DomainLocale]] = js.undefined
   
+  var fontLoaderManifest: js.UndefOr[FontLoaderManifest] = js.undefined
+  
   var fontManifest: js.UndefOr[FontManifest] = js.undefined
   
   var generateEtags: Boolean
   
   var images: ImageConfigComplete
+  
+  var isBot: js.UndefOr[Boolean] = js.undefined
   
   var largePageDataBytes: js.UndefOr[Double] = js.undefined
   
@@ -137,6 +142,10 @@ object AmpOptimizerConfig {
     
     inline def setDomainLocalesVarargs(value: typings.next.distServerConfigSharedMod.DomainLocale*): Self = StObject.set(x, "domainLocales", js.Array(value*))
     
+    inline def setFontLoaderManifest(value: FontLoaderManifest): Self = StObject.set(x, "fontLoaderManifest", value.asInstanceOf[js.Any])
+    
+    inline def setFontLoaderManifestUndefined: Self = StObject.set(x, "fontLoaderManifest", js.undefined)
+    
     inline def setFontManifest(value: FontManifest): Self = StObject.set(x, "fontManifest", value.asInstanceOf[js.Any])
     
     inline def setFontManifestUndefined: Self = StObject.set(x, "fontManifest", js.undefined)
@@ -146,6 +155,10 @@ object AmpOptimizerConfig {
     inline def setGenerateEtags(value: Boolean): Self = StObject.set(x, "generateEtags", value.asInstanceOf[js.Any])
     
     inline def setImages(value: ImageConfigComplete): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    
+    inline def setIsBot(value: Boolean): Self = StObject.set(x, "isBot", value.asInstanceOf[js.Any])
+    
+    inline def setIsBotUndefined: Self = StObject.set(x, "isBot", js.undefined)
     
     inline def setLargePageDataBytes(value: Double): Self = StObject.set(x, "largePageDataBytes", value.asInstanceOf[js.Any])
     

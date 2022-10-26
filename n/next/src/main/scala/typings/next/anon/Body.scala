@@ -3,6 +3,7 @@ package typings.next.anon
 import typings.next.distServerRenderResultMod.default
 import typings.next.nextStrings.html
 import typings.next.nextStrings.json
+import typings.next.nextStrings.rsc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +14,11 @@ trait Body extends StObject {
   
   var revalidateOptions: js.UndefOr[Any] = js.undefined
   
-  var `type`: html | json
+  var `type`: html | json | rsc
 }
 object Body {
   
-  inline def apply(body: default, `type`: html | json): Body = {
+  inline def apply(body: default, `type`: html | json | rsc): Body = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Body]
@@ -31,6 +32,6 @@ object Body {
     
     inline def setRevalidateOptionsUndefined: Self = StObject.set(x, "revalidateOptions", js.undefined)
     
-    inline def setType(value: html | json): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: html | json | rsc): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

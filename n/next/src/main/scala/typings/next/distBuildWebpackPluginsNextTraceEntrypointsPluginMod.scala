@@ -18,8 +18,12 @@ object distBuildWebpackPluginsNextTraceEntrypointsPluginMod {
     
     /* private */ var appDir: Any = js.native
     
+    /* private */ var appDirEnabled: Any = js.native
+    
     @JSName("apply")
     def apply(compiler: Compiler): Unit = js.native
+    
+    /* private */ var chunksToTrace: Any = js.native
     
     def createTraceAssets(compilation: Any, assets: Any, span: Span, readlink: Any, stat: Any): js.Promise[Unit] = js.native
     
@@ -28,8 +32,6 @@ object distBuildWebpackPluginsNextTraceEntrypointsPluginMod {
     /* private */ var esmExternals: Any = js.native
     
     /* private */ var excludeFiles: Any = js.native
-    
-    /* private */ var staticImageImports: Any = js.native
     
     def tapfinishModules(
       compilation: Compilation,
@@ -46,5 +48,11 @@ object distBuildWebpackPluginsNextTraceEntrypointsPluginMod {
     ): Unit = js.native
     
     /* private */ var tracingRoot: Any = js.native
+    
+    /* private */ var turbotrace: Any = js.native
+    
+    /* private */ var turbotraceFiles: Any = js.native
+    
+    /* private */ var turbotraceOutputPath: Any = js.native
   }
 }

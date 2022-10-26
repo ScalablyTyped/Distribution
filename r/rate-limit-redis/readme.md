@@ -1,7 +1,7 @@
 
 # Scala.js typings for rate-limit-redis
 
-Typings are for version 1.7
+Typings are for version 3.0.1
 
 ## Library description:
 A Redis store for the `express-rate-limit` middleware
@@ -24,7 +24,7 @@ A Redis store for the `express-rate-limit` middleware
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -21,13 +21,9 @@ object `distCompiled@edgeRuntimePrimitivesUrlMod` {
   @js.native
   def URL: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URL :infer T} ? T : {readonly createObjectURL (blob : node.node:buffer.Blob): string, readonly revokeObjectURL (objectUrl : string): void} & new (input : string, base : string | node.url.URL | undefined): node.url.URL */ js.Any = js.native
   
-  /* was `typeof URLPattern` */
   @JSImport("next/dist/compiled/@edge-runtime/primitives/url", "URLPattern")
   @js.native
   open class URLPattern () extends StObject {
-    def this(init: URLPatternInput) = this()
-    def this(init: Unit, baseURL: String) = this()
-    def this(init: URLPatternInput, baseURL: String) = this()
     
     def exec(): URLPatternResult | Null = js.native
     def exec(input: Unit, baseURL: String): URLPatternResult | Null = js.native
@@ -93,9 +89,6 @@ object `distCompiled@edgeRuntimePrimitivesUrlMod` {
       inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     }
   }
-  
-  /* was `typeof URLPattern` */
-  type URLPatternConstructor = URLPattern
   
   trait URLPatternInit extends StObject {
     
@@ -226,4 +219,6 @@ object `distCompiled@edgeRuntimePrimitivesUrlMod` {
       inline def setUsername(value: URLPatternComponentResult): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
+  
+  type _URLPattern = URLPattern
 }

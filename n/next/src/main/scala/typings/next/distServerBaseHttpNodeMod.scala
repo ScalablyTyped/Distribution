@@ -4,6 +4,7 @@ import typings.next.anon.SYMBOLCLEAREDCOOKIES
 import typings.next.distServerApiUtilsMod.NextApiRequestCookies
 import typings.next.distServerBaseHttpMod.BaseNextRequest
 import typings.next.distServerBaseHttpMod.BaseNextResponse
+import typings.next.typesMod.SizeLimit
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.streamMod.Readable
@@ -23,6 +24,8 @@ object distServerBaseHttpNodeMod {
     
     def originalRequest: Req = js.native
     def originalRequest_=(value: Req): Unit = js.native
+    
+    def parseBody(limit: SizeLimit): js.Promise[Any] = js.native
   }
   
   @JSImport("next/dist/server/base-http/node", "NodeNextResponse")

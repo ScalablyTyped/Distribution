@@ -23,6 +23,8 @@ object distBuildWebpackConfigUtilsMod {
     
     var future: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['future'] */ js.Any
     
+    var hasAppDir: Boolean
+    
     var isClient: Boolean
     
     var isDevelopment: Boolean
@@ -49,6 +51,7 @@ object distBuildWebpackConfigUtilsMod {
       assetPrefix: String,
       experimental: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental'] */ js.Any,
       future: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['future'] */ js.Any,
+      hasAppDir: Boolean,
       isClient: Boolean,
       isDevelopment: Boolean,
       isEdgeRuntime: Boolean,
@@ -59,7 +62,7 @@ object distBuildWebpackConfigUtilsMod {
       sassOptions: Any,
       targetWeb: Boolean
     ): ConfigurationContext = {
-      val __obj = js.Dynamic.literal(assetPrefix = assetPrefix.asInstanceOf[js.Any], experimental = experimental.asInstanceOf[js.Any], future = future.asInstanceOf[js.Any], isClient = isClient.asInstanceOf[js.Any], isDevelopment = isDevelopment.asInstanceOf[js.Any], isEdgeRuntime = isEdgeRuntime.asInstanceOf[js.Any], isProduction = isProduction.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], productionBrowserSourceMaps = productionBrowserSourceMaps.asInstanceOf[js.Any], rootDirectory = rootDirectory.asInstanceOf[js.Any], sassOptions = sassOptions.asInstanceOf[js.Any], targetWeb = targetWeb.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assetPrefix = assetPrefix.asInstanceOf[js.Any], experimental = experimental.asInstanceOf[js.Any], future = future.asInstanceOf[js.Any], hasAppDir = hasAppDir.asInstanceOf[js.Any], isClient = isClient.asInstanceOf[js.Any], isDevelopment = isDevelopment.asInstanceOf[js.Any], isEdgeRuntime = isEdgeRuntime.asInstanceOf[js.Any], isProduction = isProduction.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], productionBrowserSourceMaps = productionBrowserSourceMaps.asInstanceOf[js.Any], rootDirectory = rootDirectory.asInstanceOf[js.Any], sassOptions = sassOptions.asInstanceOf[js.Any], targetWeb = targetWeb.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigurationContext]
     }
     
@@ -78,6 +81,8 @@ object distBuildWebpackConfigUtilsMod {
       inline def setFuture(
         value: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['future'] */ js.Any
       ): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      
+      inline def setHasAppDir(value: Boolean): Self = StObject.set(x, "hasAppDir", value.asInstanceOf[js.Any])
       
       inline def setIsClient(value: Boolean): Self = StObject.set(x, "isClient", value.asInstanceOf[js.Any])
       

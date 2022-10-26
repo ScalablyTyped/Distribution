@@ -16,5 +16,5 @@ object `distCompiled@edgeRuntimePrimitivesCacheMod` {
   @js.native
   val caches: CacheStorage = js.native
   
-  inline def createCaches(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createCaches")().asInstanceOf[Cache]
+  inline def createCaches(): js.UndefOr[Cache] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCaches")().asInstanceOf[js.UndefOr[Cache]]
 }

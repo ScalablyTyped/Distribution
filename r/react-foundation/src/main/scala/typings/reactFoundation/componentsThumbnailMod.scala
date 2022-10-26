@@ -45,7 +45,7 @@ object componentsThumbnailMod {
   val ThumbnailLink: FunctionComponent[ThumbnailProps] = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
   - typings.react.mod.ImgHTMLAttributes because var conflicts: className. Inlined alt, src, sizes, height, useMap, loading, referrerPolicy, width, decoding, crossOrigin, srcSet */ trait ThumbnailProps
     extends StObject
        with FlexboxPropTypes
@@ -122,6 +122,8 @@ object componentsThumbnailMod {
     var lang: js.UndefOr[String] = js.undefined
     
     var loading: js.UndefOr[eager | `lazy`] = js.undefined
+    
+    var nonce: js.UndefOr[String] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -302,6 +304,10 @@ object componentsThumbnailMod {
       inline def setLoading(value: eager | `lazy`): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       

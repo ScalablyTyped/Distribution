@@ -15,7 +15,9 @@ object distCjsMod {
   val ^ : js.Any = js.native
   
   inline def extract(url: String): js.Promise[OembedData] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OembedData]]
-  inline def extract(url: String, params: Any): js.Promise[OembedData] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OembedData]]
+  inline def extract(url: String, params: Unit, fetchOptions: FetchOptions): js.Promise[OembedData] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], fetchOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OembedData]]
+  inline def extract(url: String, params: Params): js.Promise[OembedData] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OembedData]]
+  inline def extract(url: String, params: Params, fetchOptions: FetchOptions): js.Promise[OembedData] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any], fetchOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OembedData]]
   
   inline def findProvider(url: String): FindProviderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("findProvider")(url.asInstanceOf[js.Any]).asInstanceOf[FindProviderResult]
   
@@ -60,6 +62,41 @@ object distCjsMod {
       inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FetchOptions extends StObject {
+    
+    /**
+      * list of request headers
+      * default: null
+      */
+    var headers: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * the values to configure proxy
+      * default: null
+      */
+    var proxy: js.UndefOr[ProxyConfig] = js.undefined
+  }
+  object FetchOptions {
+    
+    inline def apply(): FetchOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FetchOptions]
+    }
+    
+    extension [Self <: FetchOptions](x: Self) {
+      
+      inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
+      
+      inline def setProxy(value: ProxyConfig): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     }
   }
   
@@ -204,6 +241,51 @@ object distCjsMod {
     }
   }
   
+  trait Params extends StObject {
+    
+    /**
+      * language for the embed, e.g. "en", "fr", "vi", etc
+      * Default: null
+      */
+    var lang: String
+    
+    /**
+      * max height of embed size
+      * Default: null
+      */
+    var maxheight: Double
+    
+    /**
+      * max width of embed size
+      * Default: null
+      */
+    var maxwidth: Double
+    
+    /**
+      * theme for the embed, such as "dark" or "light"
+      * Default: null
+      */
+    var theme: String
+  }
+  object Params {
+    
+    inline def apply(lang: String, maxheight: Double, maxwidth: Double, theme: String): Params = {
+      val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], maxheight = maxheight.asInstanceOf[js.Any], maxwidth = maxwidth.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Params]
+    }
+    
+    extension [Self <: Params](x: Self) {
+      
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      
+      inline def setMaxheight(value: Double): Self = StObject.set(x, "maxheight", value.asInstanceOf[js.Any])
+      
+      inline def setMaxwidth(value: Double): Self = StObject.set(x, "maxwidth", value.asInstanceOf[js.Any])
+      
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait PhotoTypeData
     extends StObject
        with OembedData {
@@ -267,6 +349,33 @@ object distCjsMod {
       inline def setProvider_name(value: String): Self = StObject.set(x, "provider_name", value.asInstanceOf[js.Any])
       
       inline def setProvider_url(value: String): Self = StObject.set(x, "provider_url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ProxyConfig extends StObject {
+    
+    var headers: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var target: js.UndefOr[String] = js.undefined
+  }
+  object ProxyConfig {
+    
+    inline def apply(): ProxyConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ProxyConfig]
+    }
+    
+    extension [Self <: ProxyConfig](x: Self) {
+      
+      inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
+      
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   

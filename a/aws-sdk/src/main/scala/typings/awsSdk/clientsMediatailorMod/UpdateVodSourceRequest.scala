@@ -12,12 +12,12 @@ trait UpdateVodSourceRequest extends StObject {
   var HttpPackageConfigurations: typings.awsSdk.clientsMediatailorMod.HttpPackageConfigurations
   
   /**
-    * The identifier for the source location you are working on.
+    * The name of the source location associated with this VOD Source.
     */
   var SourceLocationName: string
   
   /**
-    * The identifier for the VOD source you are working on.
+    * The name of the VOD source.
     */
   var VodSourceName: string
 }

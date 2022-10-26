@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.promise.promiseStrings.fulfilled
 import typings.promise.promiseStrings.rejected
+import typings.std.Awaited
 import typings.std.Promise
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
@@ -485,6 +486,23 @@ object mod extends Shortcut {
           PromiseSettledResult[T10]
         ]
       ] = js.native
+    
+    /**
+      * The any function returns a promise that is fulfilled by the first given promise to be fulfilled, or rejected with an AggregateError containing an array of rejection reasons if all of the given promises are rejected. It resolves all elements of the passed iterable to promises as it runs this algorithm.
+      * @param values An array or iterable of Promises.
+      * @returns A new Promise.
+      */
+    def any[T /* <: js.Array[Any] */](values: T): js.Promise[
+        Awaited[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
+        ]
+      ] = js.native
+    /**
+      * The any function returns a promise that is fulfilled by the first given promise to be fulfilled, or rejected with an AggregateError containing an array of rejection reasons if all of the given promises are rejected. It resolves all elements of the passed iterable to promises as it runs this algorithm.
+      * @param values An array or iterable of Promises.
+      * @returns A new Promise.
+      */
+    def any[T](values: js.Iterable[T | PromiseLike[T]]): js.Promise[Awaited[T]] = js.native
     
     // Extensions specific to then/promise
     def denodeify(fn: js.Function): js.Function1[/* repeated */ Any, ThenPromise[Any]] = js.native

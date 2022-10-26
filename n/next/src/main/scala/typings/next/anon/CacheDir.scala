@@ -14,6 +14,8 @@ trait CacheDir extends StObject {
   
   var intentDirs: js.Array[String]
   
+  var isAppDirEnabled: Boolean
+  
   var tsconfigPath: String
   
   var typeCheckPreflight: Boolean
@@ -24,10 +26,11 @@ object CacheDir {
     dir: String,
     disableStaticImages: Boolean,
     intentDirs: js.Array[String],
+    isAppDirEnabled: Boolean,
     tsconfigPath: String,
     typeCheckPreflight: Boolean
   ): CacheDir = {
-    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], disableStaticImages = disableStaticImages.asInstanceOf[js.Any], intentDirs = intentDirs.asInstanceOf[js.Any], tsconfigPath = tsconfigPath.asInstanceOf[js.Any], typeCheckPreflight = typeCheckPreflight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], disableStaticImages = disableStaticImages.asInstanceOf[js.Any], intentDirs = intentDirs.asInstanceOf[js.Any], isAppDirEnabled = isAppDirEnabled.asInstanceOf[js.Any], tsconfigPath = tsconfigPath.asInstanceOf[js.Any], typeCheckPreflight = typeCheckPreflight.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheDir]
   }
   
@@ -44,6 +47,8 @@ object CacheDir {
     inline def setIntentDirs(value: js.Array[String]): Self = StObject.set(x, "intentDirs", value.asInstanceOf[js.Any])
     
     inline def setIntentDirsVarargs(value: String*): Self = StObject.set(x, "intentDirs", js.Array(value*))
+    
+    inline def setIsAppDirEnabled(value: Boolean): Self = StObject.set(x, "isAppDirEnabled", value.asInstanceOf[js.Any])
     
     inline def setTsconfigPath(value: String): Self = StObject.set(x, "tsconfigPath", value.asInstanceOf[js.Any])
     

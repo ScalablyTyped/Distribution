@@ -46,4 +46,24 @@ object NodeJS {
       inline def setNODE_ENV(value: development | production | test): Self = StObject.set(x, "NODE_ENV", value.asInstanceOf[js.Any])
     }
   }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.RequestInit * / any */ trait RequestInit extends StObject {
+    
+    var next: js.UndefOr[NextFetchRequestConfig] = js.undefined
+  }
+  object RequestInit {
+    
+    inline def apply(): typings.next.NodeJS.RequestInit = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.next.NodeJS.RequestInit]
+    }
+    
+    extension [Self <: typings.next.NodeJS.RequestInit](x: Self) {
+      
+      inline def setNext(value: NextFetchRequestConfig): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    }
+  }
 }

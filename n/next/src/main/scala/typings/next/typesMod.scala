@@ -18,6 +18,7 @@ import typings.next.nextStrings.blocking
 import typings.next.nextStrings.hybrid
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.react.mod.Context
 import typings.react.mod.HTMLAttributes
 import typings.std.Awaited
 import typings.std.SubtleCrypto
@@ -41,8 +42,10 @@ object typesMod {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def cache[T /* <: js.Function */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+    
     // TODO-APP: check if this is the right type.
-    inline def experimentalUse[T](promise: js.Promise[T]): Awaited[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_use")(promise.asInstanceOf[js.Any]).asInstanceOf[Awaited[T]]
+    inline def use[T](promise: js.Promise[T] | Context[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(promise.asInstanceOf[js.Any]).asInstanceOf[T]
     
     // <html amp=""> support
     trait HtmlHTMLAttributes[T]
@@ -69,25 +72,17 @@ object typesMod {
     // <link nonce=""> support
     trait LinkHTMLAttributes[T]
       extends StObject
-         with HTMLAttributes[T] {
-      
-      var nonce: js.UndefOr[String] = js.undefined
-    }
+         with HTMLAttributes[T]
     object LinkHTMLAttributes {
       
       inline def apply[T](): LinkHTMLAttributes[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LinkHTMLAttributes[T]]
       }
-      
-      extension [Self <: LinkHTMLAttributes[?], T](x: Self & LinkHTMLAttributes[T]) {
-        
-        inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
-        
-        inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
-      }
     }
   }
+  
+  type FileSizeSuffix = /* template literal string: ${|k|K|m|M|g|G|t|T|p|P}${b|B} */ String
   
   type GetServerSideProps[P /* <: StringDictionary[Any] */, Q /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any */, D /* <: PreviewData */] = js.Function1[
     /* context */ GetServerSidePropsContext[Q, D], 
@@ -327,25 +322,11 @@ object typesMod {
     }
   }
   
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
-    * TS definition: {{{
-    T extends next.next/types.GetServerSideProps<infer P, any, next.next/types.PreviewData> ? P : T extends (context : next.next/types.GetServerSidePropsContext<any, next.next/types.PreviewData> | undefined): std.Promise<next.next/types.GetServerSidePropsResult<infer P>> ? P : never
-    }}}
-    */
-  @js.native
-  trait InferGetServerSidePropsType[T] extends StObject
+  type InferGetServerSidePropsType[T /* <: js.Function1[/* args */ Any, Any] */] = Awaited[
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<std.Awaited<std.ReturnType<T>>, next.anon.PropsAny>['props'] */ js.Any
+  ]
   
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * You'll have to cast your way around this structure, unfortunately. 
-    * TS definition: {{{
-    T extends next.next/types.GetStaticProps<infer P, any, next.next/types.PreviewData> ? P : T extends (context : next.next/types.GetStaticPropsContext<any, next.next/types.PreviewData> | undefined): std.Promise<next.next/types.GetStaticPropsResult<infer P>> | next.next/types.GetStaticPropsResult<infer P> ? P : never
-    }}}
-    */
-  @js.native
-  trait InferGetStaticPropsType[T] extends StObject
+  type InferGetStaticPropsType[T /* <: js.Function1[/* args */ Any, Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<std.Awaited<std.ReturnType<T>>, next.anon.PropsAny>['props'] */ js.Any
   
   type NextPage[P, IP] = NextComponentType[NextPageContext, IP, P]
   
@@ -419,7 +400,7 @@ object typesMod {
   type PreviewData = js.UndefOr[String | `false` | js.Object]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.next.anon.StatusCode
+    - typings.next.anon.Destination
     - typings.next.anon.BasePathDestination
   */
   trait Redirect extends StObject
@@ -430,11 +411,13 @@ object typesMod {
       __obj.asInstanceOf[typings.next.anon.BasePathDestination]
     }
     
-    inline def StatusCode(destination: String, statusCode: `301` | `302` | `303` | `307` | `308`): typings.next.anon.StatusCode = {
+    inline def Destination(destination: String, statusCode: `301` | `302` | `303` | `307` | `308`): typings.next.anon.Destination = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.next.anon.StatusCode]
+      __obj.asInstanceOf[typings.next.anon.Destination]
     }
   }
+  
+  type ResponseLimit = SizeLimit | Boolean
   
   /* Rewritten from type alias, can be one of: 
     - typings.next.nextStrings.nodejs
@@ -442,6 +425,8 @@ object typesMod {
     - scala.Unit
   */
   type ServerRuntime = js.UndefOr[_ServerRuntime]
+  
+  type SizeLimit = Double | (/* template literal string: ${number}${FileSizeSuffix} */ String)
   
   trait _ServerRuntime extends StObject
   

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCall extends StObject {
   
-  def apply(condition: Boolean, data: Any*): Unit = js.native
-  def apply(condition: Unit, data: Any*): Unit = js.native
+  def apply(callbackfn: js.Function3[/* value */ String, /* key */ String, /* parent */ this.type, Unit]): Unit = js.native
+  def apply(
+    callbackfn: js.Function3[/* value */ String, /* key */ String, /* parent */ this.type, Unit],
+    thisArg: Any
+  ): Unit = js.native
 }

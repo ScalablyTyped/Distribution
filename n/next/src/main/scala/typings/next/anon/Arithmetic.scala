@@ -2,6 +2,7 @@ package typings.next.anon
 
 import typings.next.nextBooleans.`false`
 import typings.next.nextBooleans.`true`
+import typings.next.nextInts.`2`
 import typings.next.nextInts.`3`
 import typings.next.nextInts.`75`
 import org.scalablytyped.runtime.StObject
@@ -18,7 +19,7 @@ trait Arithmetic extends StObject {
   
   val chroma_quality: `75`
   
-  val chroma_subsample: typings.next.nextInts.`2`
+  val chroma_subsample: `2`
   
   val color_space: `3`
   
@@ -59,7 +60,7 @@ object Arithmetic {
     
     inline def setChroma_quality(value: `75`): Self = StObject.set(x, "chroma_quality", value.asInstanceOf[js.Any])
     
-    inline def setChroma_subsample(value: typings.next.nextInts.`2`): Self = StObject.set(x, "chroma_subsample", value.asInstanceOf[js.Any])
+    inline def setChroma_subsample(value: `2`): Self = StObject.set(x, "chroma_subsample", value.asInstanceOf[js.Any])
     
     inline def setColor_space(value: `3`): Self = StObject.set(x, "color_space", value.asInstanceOf[js.Any])
     

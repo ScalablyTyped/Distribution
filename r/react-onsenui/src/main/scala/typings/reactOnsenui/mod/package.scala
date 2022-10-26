@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type HTMLAttributes[K /* <: /* keyof react.react.HTMLAttributes<{}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173, starting with typings.reactOnsenui.reactOnsenuiStrings.defaultChecked, typings.reactOnsenui.reactOnsenuiStrings.defaultValue, typings.reactOnsenui.reactOnsenuiStrings.suppressContentEditableWarning */ Any */] = Partial[Pick[typings.react.mod.HTMLAttributes[js.Object], K]]
+type HTMLAttributes[K /* <: /* keyof react.react.HTMLAttributes<{}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174, starting with typings.reactOnsenui.reactOnsenuiStrings.defaultChecked, typings.reactOnsenui.reactOnsenuiStrings.defaultValue, typings.reactOnsenui.reactOnsenuiStrings.suppressContentEditableWarning */ Any */] = Partial[Pick[typings.react.mod.HTMLAttributes[js.Object], K]]
 
-type InputHTMLAttributes[K /* <: /* keyof react.react.InputHTMLAttributes<{}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 205, starting with typings.reactOnsenui.reactOnsenuiStrings.accept, typings.reactOnsenui.reactOnsenuiStrings.alt, typings.reactOnsenui.reactOnsenuiStrings.autoComplete */ Any */] = Partial[Pick[typings.react.mod.InputHTMLAttributes[js.Object], K]]
+type InputHTMLAttributes[K /* <: /* keyof react.react.InputHTMLAttributes<{}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 206, starting with typings.reactOnsenui.reactOnsenuiStrings.accept, typings.reactOnsenui.reactOnsenuiStrings.alt, typings.reactOnsenui.reactOnsenuiStrings.autoComplete */ Any */] = Partial[Pick[typings.react.mod.InputHTMLAttributes[js.Object], K]]
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactOnsenui.reactOnsenuiStrings.slide

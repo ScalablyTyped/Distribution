@@ -33,11 +33,13 @@ object distBuildWebpackLoadersNextEdgeSsrLoaderMod {
     
     var dev: Boolean
     
+    var hasFontLoaders: Boolean
+    
     var isServerComponent: Boolean
     
     var page: String
     
-    var pagesType: js.UndefOr[app | pages | root] = js.undefined
+    var pagesType: app | pages | root
     
     var sriEnabled: Boolean
     
@@ -53,12 +55,14 @@ object distBuildWebpackLoadersNextEdgeSsrLoaderMod {
       absolutePagePath: String,
       buildId: String,
       dev: Boolean,
+      hasFontLoaders: Boolean,
       isServerComponent: Boolean,
       page: String,
+      pagesType: app | pages | root,
       sriEnabled: Boolean,
       stringifiedConfig: String
     ): EdgeSSRLoaderQuery = {
-      val __obj = js.Dynamic.literal(absolute500Path = absolute500Path.asInstanceOf[js.Any], absoluteAppPath = absoluteAppPath.asInstanceOf[js.Any], absoluteDocumentPath = absoluteDocumentPath.asInstanceOf[js.Any], absoluteErrorPath = absoluteErrorPath.asInstanceOf[js.Any], absolutePagePath = absolutePagePath.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], dev = dev.asInstanceOf[js.Any], isServerComponent = isServerComponent.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], sriEnabled = sriEnabled.asInstanceOf[js.Any], stringifiedConfig = stringifiedConfig.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(absolute500Path = absolute500Path.asInstanceOf[js.Any], absoluteAppPath = absoluteAppPath.asInstanceOf[js.Any], absoluteDocumentPath = absoluteDocumentPath.asInstanceOf[js.Any], absoluteErrorPath = absoluteErrorPath.asInstanceOf[js.Any], absolutePagePath = absolutePagePath.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], dev = dev.asInstanceOf[js.Any], hasFontLoaders = hasFontLoaders.asInstanceOf[js.Any], isServerComponent = isServerComponent.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pagesType = pagesType.asInstanceOf[js.Any], sriEnabled = sriEnabled.asInstanceOf[js.Any], stringifiedConfig = stringifiedConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdgeSSRLoaderQuery]
     }
     
@@ -82,13 +86,13 @@ object distBuildWebpackLoadersNextEdgeSsrLoaderMod {
       
       inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
+      inline def setHasFontLoaders(value: Boolean): Self = StObject.set(x, "hasFontLoaders", value.asInstanceOf[js.Any])
+      
       inline def setIsServerComponent(value: Boolean): Self = StObject.set(x, "isServerComponent", value.asInstanceOf[js.Any])
       
       inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
       inline def setPagesType(value: app | pages | root): Self = StObject.set(x, "pagesType", value.asInstanceOf[js.Any])
-      
-      inline def setPagesTypeUndefined: Self = StObject.set(x, "pagesType", js.undefined)
       
       inline def setSriEnabled(value: Boolean): Self = StObject.set(x, "sriEnabled", value.asInstanceOf[js.Any])
       

@@ -20,6 +20,57 @@ object mod {
     def this(options: StaticMapsOptions) = this()
   }
   
+  trait AddCircleOptions extends StObject {
+    
+    /**
+      * Stroke color of the circle
+      * @default '#000000BB'
+      */
+    var color: js.UndefOr[String] = js.undefined
+    
+    var coord: js.Tuple2[Double, Double]
+    
+    /**
+      * Fill color of the circle
+      * @default '#AA0000BB'
+      */
+    var fill: js.UndefOr[String] = js.undefined
+    
+    var radius: Double
+    
+    /**
+      * Stroke width of circle
+      * @default 3
+      */
+    var width: js.UndefOr[Double] = js.undefined
+  }
+  object AddCircleOptions {
+    
+    inline def apply(coord: js.Tuple2[Double, Double], radius: Double): AddCircleOptions = {
+      val __obj = js.Dynamic.literal(coord = coord.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AddCircleOptions]
+    }
+    
+    extension [Self <: AddCircleOptions](x: Self) {
+      
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setCoord(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
+      
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    }
+  }
+  
   trait AddLineOptions extends StObject {
     
     var color: js.UndefOr[String] = js.undefined
@@ -226,6 +277,8 @@ object mod {
   @js.native
   trait StaticMaps extends StObject {
     
+    def addCircle(options: AddCircleOptions): Unit = js.native
+    
     def addLine(options: AddLineOptions): Unit = js.native
     
     def addMarker(options: AddMarkerOptions): Unit = js.native
@@ -285,12 +338,6 @@ object mod {
     
     var reverseY: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Subdomains of tile server
-      * @default []
-      */
-    var subdomains: js.UndefOr[js.Array[String]] = js.undefined
-    
     var tileRequestHeader: js.UndefOr[js.Object] = js.undefined
     
     /**
@@ -302,6 +349,12 @@ object mod {
     var tileRequestTimeout: js.UndefOr[Double] = js.undefined
     
     var tileSize: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Subdomains of tile server
+      * @default []
+      */
+    var tileSubdomains: js.UndefOr[js.Array[String]] = js.undefined
     
     var tileUrl: js.UndefOr[String] = js.undefined
     
@@ -339,12 +392,6 @@ object mod {
       
       inline def setReverseYUndefined: Self = StObject.set(x, "reverseY", js.undefined)
       
-      inline def setSubdomains(value: js.Array[String]): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
-      
-      inline def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
-      
-      inline def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value*))
-      
       inline def setTileRequestHeader(value: js.Object): Self = StObject.set(x, "tileRequestHeader", value.asInstanceOf[js.Any])
       
       inline def setTileRequestHeaderUndefined: Self = StObject.set(x, "tileRequestHeader", js.undefined)
@@ -360,6 +407,12 @@ object mod {
       inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
       
       inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+      
+      inline def setTileSubdomains(value: js.Array[String]): Self = StObject.set(x, "tileSubdomains", value.asInstanceOf[js.Any])
+      
+      inline def setTileSubdomainsUndefined: Self = StObject.set(x, "tileSubdomains", js.undefined)
+      
+      inline def setTileSubdomainsVarargs(value: String*): Self = StObject.set(x, "tileSubdomains", js.Array(value*))
       
       inline def setTileUrl(value: String): Self = StObject.set(x, "tileUrl", value.asInstanceOf[js.Any])
       

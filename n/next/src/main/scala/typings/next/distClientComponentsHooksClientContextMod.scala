@@ -1,7 +1,7 @@
 package typings.next
 
-import typings.next.distServerRequestMetaMod.NextParsedUrlQuery
 import typings.react.mod.Context
+import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,5 +22,5 @@ object distClientComponentsHooksClientContextMod {
   
   @JSImport("next/dist/client/components/hooks-client-context", "SearchParamsContext")
   @js.native
-  val SearchParamsContext: Context[NextParsedUrlQuery] = js.native
+  val SearchParamsContext: Context[URLSearchParams] = js.native
 }

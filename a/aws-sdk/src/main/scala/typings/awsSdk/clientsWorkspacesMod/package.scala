@@ -289,6 +289,7 @@ type RootVolumeSizeGib = Double
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO_STOP
   - typings.awsSdk.awsSdkStrings.ALWAYS_ON
+  - typings.awsSdk.awsSdkStrings.MANUAL
   - java.lang.String
 */
 type RunningMode = _RunningMode | String
@@ -394,6 +395,8 @@ type WorkspaceImageIdList = js.Array[WorkspaceImageId]
   - typings.awsSdk.awsSdkStrings.BYOL_GRAPHICSPRO
   - typings.awsSdk.awsSdkStrings.BYOL_GRAPHICS_G4DN
   - typings.awsSdk.awsSdkStrings.BYOL_REGULAR_WSP
+  - typings.awsSdk.awsSdkStrings.BYOL_REGULAR_BYOP
+  - typings.awsSdk.awsSdkStrings.BYOL_GRAPHICS_G4DN_BYOP
   - java.lang.String
 */
 type WorkspaceImageIngestionProcess = _WorkspaceImageIngestionProcess | String

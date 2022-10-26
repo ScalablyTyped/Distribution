@@ -895,13 +895,27 @@ object pluginsBaseBaseMod {
     @JSName("addHook")
     def addHook_afterGetColHeader(
       key: afterGetColHeader,
-      callback: js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+      callback: js.UndefOr[
+          js.Function3[
+            /* column */ Double, 
+            /* TH */ HTMLTableHeaderCellElement, 
+            /* headerLevel */ Double, 
+            Unit
+          ]
+        ]
     ): Unit = js.native
     @JSName("addHook")
     def addHook_afterGetColHeader(
       key: afterGetColHeader,
       callback: js.Array[
-          js.UndefOr[js.Function2[/* column */ Double, /* TH */ HTMLTableHeaderCellElement, Unit]]
+          js.UndefOr[
+            js.Function3[
+              /* column */ Double, 
+              /* TH */ HTMLTableHeaderCellElement, 
+              /* headerLevel */ Double, 
+              Unit
+            ]
+          ]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -2007,7 +2021,7 @@ object pluginsBaseBaseMod {
     def addHook_beforeChange(
       key: beforeChange,
       callback: js.UndefOr[
-          js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+          js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -2015,7 +2029,7 @@ object pluginsBaseBaseMod {
       key: beforeChange,
       callback: js.Array[
           js.UndefOr[
-            js.Function2[/* changes */ js.Array[CellChange], /* source */ ChangeSource, Unit | Boolean]
+            js.Function2[/* changes */ js.Array[CellChange | Null], /* source */ ChangeSource, Unit | Boolean]
           ]
         ]
     ): Unit = js.native
@@ -2226,7 +2240,12 @@ object pluginsBaseBaseMod {
     def addHook_beforeCreateRow(
       key: beforeCreateRow,
       callback: js.UndefOr[
-          js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+          js.Function3[
+            /* index */ Double, 
+            /* amount */ Double, 
+            /* source */ js.UndefOr[ChangeSource], 
+            Unit | Boolean
+          ]
         ]
     ): Unit = js.native
     @JSName("addHook")
@@ -2234,7 +2253,12 @@ object pluginsBaseBaseMod {
       key: beforeCreateRow,
       callback: js.Array[
           js.UndefOr[
-            js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+            js.Function3[
+              /* index */ Double, 
+              /* amount */ Double, 
+              /* source */ js.UndefOr[ChangeSource], 
+              Unit | Boolean
+            ]
           ]
         ]
     ): Unit = js.native

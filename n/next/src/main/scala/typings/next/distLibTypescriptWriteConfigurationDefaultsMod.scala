@@ -14,5 +14,10 @@ object distLibTypescriptWriteConfigurationDefaultsMod {
   
   inline def getRequiredConfiguration(ts: TypeofimportedTypescript): PartialCompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequiredConfiguration")(ts.asInstanceOf[js.Any]).asInstanceOf[PartialCompilerOptions]
   
-  inline def writeConfigurationDefaults(ts: TypeofimportedTypescript, tsConfigPath: String, isFirstTimeSetup: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeConfigurationDefaults")(ts.asInstanceOf[js.Any], tsConfigPath.asInstanceOf[js.Any], isFirstTimeSetup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeConfigurationDefaults(
+    ts: TypeofimportedTypescript,
+    tsConfigPath: String,
+    isFirstTimeSetup: Boolean,
+    isAppDirEnabled: Boolean
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeConfigurationDefaults")(ts.asInstanceOf[js.Any], tsConfigPath.asInstanceOf[js.Any], isFirstTimeSetup.asInstanceOf[js.Any], isAppDirEnabled.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

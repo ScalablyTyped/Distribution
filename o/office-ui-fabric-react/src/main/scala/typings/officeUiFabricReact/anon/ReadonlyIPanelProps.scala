@@ -305,6 +305,8 @@ trait ReadonlyIPanelProps extends StObject {
   
   val layerProps: js.UndefOr[ILayerProps] = js.undefined
   
+  val nonce: js.UndefOr[String] = js.undefined
+  
   val onAbort: js.UndefOr[ReactEventHandler[PanelBase]] = js.undefined
   
   val onAnimationEnd: js.UndefOr[AnimationEventHandler[PanelBase]] = js.undefined
@@ -933,6 +935,10 @@ object ReadonlyIPanelProps {
     inline def setLayerProps(value: ILayerProps): Self = StObject.set(x, "layerProps", value.asInstanceOf[js.Any])
     
     inline def setLayerPropsUndefined: Self = StObject.set(x, "layerProps", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[PanelBase, Event] => scala.Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

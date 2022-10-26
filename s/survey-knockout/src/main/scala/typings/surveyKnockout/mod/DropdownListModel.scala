@@ -22,7 +22,11 @@ open class DropdownListModel protected () extends Base {
   
   def getSelectedAction(): Action = js.native
   
+  var hasScroll: Boolean = js.native
+  
   def inputReadOnly: Boolean = js.native
+  
+  var itemsSettings: Any = js.native
   
   def keyHandler(event: Any): Unit = js.native
   
@@ -35,6 +39,8 @@ open class DropdownListModel protected () extends Base {
   def onClick(event: Any): Unit = js.native
   
   /* protected */ def onHidePopup(): Unit = js.native
+  
+  def onScroll(event: Any): Unit = js.native
   
   /* protected */ def onSetFilterString(): Unit = js.native
   

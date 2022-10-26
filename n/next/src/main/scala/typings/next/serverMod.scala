@@ -4,7 +4,7 @@ import typings.next.`distCompiled@edgeRuntimePrimitivesUrlMod`.URLPatternInput
 import typings.next.anon.HeadersHeaders
 import typings.next.anon.Request
 import typings.next.distServerWebNextUrlMod.NextURL
-import typings.next.distServerWebSpecExtensionRequestMod.RequestInit
+import typings.next.distServerWebSpecExtensionResponseMod.MiddlewareResponseInit
 import typings.next.distServerWebSpecExtensionResponseMod.ResponseInit
 import typings.next.distServerWebSpecExtensionUserAgentMod.UserAgent_
 import typings.std.BodyInit
@@ -33,8 +33,8 @@ object serverMod {
     extends typings.next.distServerWebSpecExtensionRequestMod.NextRequest {
     def this(input: RequestInfo) = this()
     def this(input: URL) = this()
-    def this(input: RequestInfo, init: RequestInit) = this()
-    def this(input: URL, init: RequestInit) = this()
+    def this(input: RequestInfo, init: typings.next.distServerWebSpecExtensionRequestMod.RequestInit) = this()
+    def this(input: URL, init: typings.next.distServerWebSpecExtensionRequestMod.RequestInit) = this()
   }
   
   @JSImport("next/server", "NextResponse")
@@ -57,7 +57,7 @@ object serverMod {
     inline def json(body: Any, init: ResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(body.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
     
     inline def next(): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("next")().asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
-    inline def next(init: ResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("next")(init.asInstanceOf[js.Any]).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
+    inline def next(init: MiddlewareResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("next")(init.asInstanceOf[js.Any]).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
     
     inline def redirect(url: String): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
     inline def redirect(url: String, init: Double): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
@@ -70,11 +70,11 @@ object serverMod {
     inline def redirect(url: URL, init: ResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
     
     inline def rewrite(destination: String): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("rewrite")(destination.asInstanceOf[js.Any]).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
-    inline def rewrite(destination: String, init: ResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("rewrite")(destination.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
+    inline def rewrite(destination: String, init: MiddlewareResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("rewrite")(destination.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
     inline def rewrite(destination: NextURL): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("rewrite")(destination.asInstanceOf[js.Any]).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
-    inline def rewrite(destination: NextURL, init: ResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("rewrite")(destination.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
+    inline def rewrite(destination: NextURL, init: MiddlewareResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("rewrite")(destination.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
     inline def rewrite(destination: URL): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("rewrite")(destination.asInstanceOf[js.Any]).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
-    inline def rewrite(destination: URL, init: ResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("rewrite")(destination.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
+    inline def rewrite(destination: URL, init: MiddlewareResponseInit): typings.next.distServerWebSpecExtensionResponseMod.NextResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("rewrite")(destination.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[typings.next.distServerWebSpecExtensionResponseMod.NextResponse]
   }
   
   @JSImport("next/server", "URLPattern")
@@ -83,6 +83,63 @@ object serverMod {
     def this(init: URLPatternInput) = this()
     def this(init: Unit, baseURL: String) = this()
     def this(init: URLPatternInput, baseURL: String) = this()
+  }
+  
+  object global {
+    
+    /**
+      * This class creates stores that stay coherent through asynchronous operations.
+      *
+      * While you can create your own implementation on top of the `async_hooks` module,`AsyncLocalStorage` should be preferred as it is a performant and memory safe
+      * implementation that involves significant optimizations that are non-obvious to
+      * implement.
+      *
+      * The following example uses `AsyncLocalStorage` to build a simple logger
+      * that assigns IDs to incoming HTTP requests and includes them in messages
+      * logged within each request.
+      *
+      * ```js
+      * import http from 'http';
+      * import { AsyncLocalStorage } from 'async_hooks';
+      *
+      * const asyncLocalStorage = new AsyncLocalStorage();
+      *
+      * function logWithId(msg) {
+      *   const id = asyncLocalStorage.getStore();
+      *   console.log(`${id !== undefined ? id : '-'}:`, msg);
+      * }
+      *
+      * let idSeq = 0;
+      * http.createServer((req, res) => {
+      *   asyncLocalStorage.run(idSeq++, () => {
+      *     logWithId('start');
+      *     // Imagine any chain of async operations here
+      *     setImmediate(() => {
+      *       logWithId('finish');
+      *       res.end();
+      *     });
+      *   });
+      * }).listen(8080);
+      *
+      * http.get('http://localhost:8080');
+      * http.get('http://localhost:8080');
+      * // Prints:
+      * //   0: start
+      * //   1: start
+      * //   0: finish
+      * //   1: finish
+      * ```
+      *
+      * Each instance of `AsyncLocalStorage` maintains an independent storage context.
+      * Multiple instances can safely exist simultaneously without risk of interfering
+      * with each other's data.
+      * @since v13.10.0, v12.17.0
+      */
+    /* was `typeof NodeAsyncLocalStorage` */
+    @JSGlobal("AsyncLocalStorage")
+    @js.native
+    open class AsyncLocalStorage[T] ()
+      extends typings.node.asyncHooksMod.AsyncLocalStorage[T]
   }
   
   inline def userAgent(param0: HeadersHeaders): UserAgent_ = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgent")(param0.asInstanceOf[js.Any]).asInstanceOf[UserAgent_]

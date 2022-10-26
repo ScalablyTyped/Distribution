@@ -12,17 +12,17 @@ trait CreateProgramResponse extends StObject {
   var AdBreaks: js.UndefOr[listOfAdBreak] = js.undefined
   
   /**
-    * The ARN of the program.
+    * The ARN to assign to the program.
     */
   var Arn: js.UndefOr[string] = js.undefined
   
   /**
-    * The name of the channel that the program belongs to.
+    * The name to assign to the channel for this program.
     */
   var ChannelName: js.UndefOr[string] = js.undefined
   
   /**
-    * The timestamp of when the program was created.
+    * The time the program was created.
     */
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
@@ -32,17 +32,17 @@ trait CreateProgramResponse extends StObject {
   var LiveSourceName: js.UndefOr[string] = js.undefined
   
   /**
-    * The name of the program.
+    * The name to assign to this program.
     */
   var ProgramName: js.UndefOr[string] = js.undefined
   
   /**
-    * The date and time that the program is scheduled to start in ISO 8601 format and Coordinated Universal Time (UTC). For example, the value 2021-03-27T17:48:16.751Z represents March 27, 2021 at 17:48:16.751 UTC.
+    * The scheduled start time for this Program.
     */
   var ScheduledStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The source location name.
+    * The name to assign to the source location for this program.
     */
   var SourceLocationName: js.UndefOr[string] = js.undefined
   

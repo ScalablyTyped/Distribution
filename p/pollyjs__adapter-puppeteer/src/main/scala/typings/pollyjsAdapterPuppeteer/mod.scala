@@ -1,15 +1,17 @@
 package typings.pollyjsAdapterPuppeteer
 
-import typings.pollyjsAdapter.mod.default
+import typings.pollyjsAdapterPuppeteer.anon.Page
+import typings.pollyjsCore.mod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@pollyjs/adapter-puppeteer", JSImport.Namespace)
+  @JSImport("@pollyjs/adapter-puppeteer", JSImport.Default)
   @js.native
-  open class ^ () extends default
+  open class default ()
+    extends typings.pollyjsAdapter.mod.default[Page, Request[js.Object]]
   
-  type PuppeteerAdapter = default
+  type PuppeteerAdapter = typings.pollyjsAdapter.mod.default[Page, Request[js.Object]]
 }

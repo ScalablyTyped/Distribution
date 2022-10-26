@@ -449,6 +449,8 @@ object libShareButtonMod {
     
     var networkName: String
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLButtonElement]] = js.undefined
@@ -1046,6 +1048,10 @@ object libShareButtonMod {
       inline def setNetworkLink(value: (/* url */ String, LinkOptions) => String): Self = StObject.set(x, "networkLink", js.Any.fromFunction2(value))
       
       inline def setNetworkName(value: String): Self = StObject.set(x, "networkName", value.asInstanceOf[js.Any])
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

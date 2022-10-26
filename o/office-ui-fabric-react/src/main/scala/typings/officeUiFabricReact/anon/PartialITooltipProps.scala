@@ -274,6 +274,8 @@ trait PartialITooltipProps extends StObject {
   
   var maxWidth: js.UndefOr[String | Null] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement | TooltipBase]] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement | TooltipBase]] = js.undefined
@@ -824,6 +826,10 @@ object PartialITooltipProps {
     inline def setMaxWidthNull: Self = StObject.set(x, "maxWidth", null)
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => scala.Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

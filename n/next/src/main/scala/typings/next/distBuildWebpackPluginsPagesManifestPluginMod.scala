@@ -31,9 +31,6 @@ object distBuildWebpackPluginsPagesManifestPluginMod {
     
     /* CompleteClass */
     var isEdgeRuntime: Boolean = js.native
-    
-    /* CompleteClass */
-    var serverless: Boolean = js.native
   }
   
   type PagesManifest = StringDictionary[String]
@@ -51,8 +48,6 @@ object distBuildWebpackPluginsPagesManifestPluginMod {
     var dev: Boolean
     
     var isEdgeRuntime: Boolean
-    
-    var serverless: Boolean
   }
   object PagesManifestPlugin {
     
@@ -61,10 +56,9 @@ object distBuildWebpackPluginsPagesManifestPluginMod {
       apply: Compiler => Unit,
       createAssets: (Any, Any) => Unit,
       dev: Boolean,
-      isEdgeRuntime: Boolean,
-      serverless: Boolean
+      isEdgeRuntime: Boolean
     ): PagesManifestPlugin = {
-      val __obj = js.Dynamic.literal(appDirEnabled = appDirEnabled.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), createAssets = js.Any.fromFunction2(createAssets), dev = dev.asInstanceOf[js.Any], isEdgeRuntime = isEdgeRuntime.asInstanceOf[js.Any], serverless = serverless.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(appDirEnabled = appDirEnabled.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), createAssets = js.Any.fromFunction2(createAssets), dev = dev.asInstanceOf[js.Any], isEdgeRuntime = isEdgeRuntime.asInstanceOf[js.Any])
       __obj.asInstanceOf[PagesManifestPlugin]
     }
     
@@ -79,8 +73,6 @@ object distBuildWebpackPluginsPagesManifestPluginMod {
       inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
       inline def setIsEdgeRuntime(value: Boolean): Self = StObject.set(x, "isEdgeRuntime", value.asInstanceOf[js.Any])
-      
-      inline def setServerless(value: Boolean): Self = StObject.set(x, "serverless", value.asInstanceOf[js.Any])
     }
   }
 }

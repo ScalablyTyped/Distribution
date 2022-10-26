@@ -11,6 +11,7 @@ import typings.next.anon.IsAppPath
 import typings.next.anon.OriginalAppPath
 import typings.next.distBuildAnalysisGetPageStaticInfoMod.MiddlewareMatcher
 import typings.next.distBuildMod.PrerenderManifest
+import typings.next.distBuildWebpackPluginsFontLoaderManifestPluginMod.FontLoaderManifest
 import typings.next.distBuildWebpackPluginsPagesManifestPluginMod.PagesManifest
 import typings.next.distLibLoadCustomRoutesMod.CustomRoutes
 import typings.next.distServerApiUtilsMod.ApiPreviewProps
@@ -32,6 +33,7 @@ import typings.next.distSharedLibRouterUtilsRouteMatcherMod.RouteMatch
 import typings.next.nextBooleans.`false`
 import typings.next.nextStrings.html
 import typings.next.nextStrings.json
+import typings.next.nextStrings.rsc
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.nodeColonnetMod.Socket
@@ -44,10 +46,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distServerBaseServerMod {
-  
-  @JSImport("next/dist/server/base-server", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
   
   /* note: abstract class */ @JSImport("next/dist/server/base-server", JSImport.Default)
   @js.native
@@ -89,11 +87,6 @@ object distServerBaseServerMod {
     /* CompleteClass */
     var name: String = js.native
   }
-  
-  inline def prepareServerlessUrl(
-    req: BaseNextRequest[Any],
-    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareServerlessUrl")(req.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type BaseRequestHandler = js.Function3[
     /* req */ BaseNextRequest[Any], 
@@ -311,11 +304,11 @@ object distServerBaseServerMod {
     
     var revalidateOptions: js.UndefOr[Any] = js.undefined
     
-    var `type`: html | json
+    var `type`: html | json | rsc
   }
   object ResponsePayload {
     
-    inline def apply(body: typings.next.distServerRenderResultMod.default, `type`: html | json): ResponsePayload = {
+    inline def apply(body: typings.next.distServerRenderResultMod.default, `type`: html | json | rsc): ResponsePayload = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponsePayload]
@@ -329,7 +322,7 @@ object distServerBaseServerMod {
       
       inline def setRevalidateOptionsUndefined: Self = StObject.set(x, "revalidateOptions", js.undefined)
       
-      inline def setType(value: html | json): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: html | json | rsc): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -393,6 +386,8 @@ object distServerBaseServerMod {
     
     /* protected */ def findPageComponents(params: IsAppPath): js.Promise[FindComponentsResult | Null] = js.native
     
+    /* protected */ var fontLoaderManifest: js.UndefOr[FontLoaderManifest] = js.native
+    
     /* protected */ def generateRoutes(): CatchAllMiddleware = js.native
     
     /* protected */ def getAppPathRoutes(): Record[String, js.Array[String]] = js.native
@@ -411,7 +406,11 @@ object distServerBaseServerMod {
     
     /* protected */ def getFilesystemPaths(): Set[String] = js.native
     
+    /* protected */ def getFontLoaderManifest(): js.UndefOr[FontLoaderManifest] = js.native
+    
     /* protected */ def getFontManifest(): js.UndefOr[FontManifest] = js.native
+    
+    /* protected */ def getHasAppDir(dev: Boolean): Boolean = js.native
     
     /* protected */ def getHasStaticDir(): Boolean = js.native
     
@@ -443,6 +442,8 @@ object distServerBaseServerMod {
     
     /* protected */ def handleUpgrade(_req: BaseNextRequest[Any], _socket: Any): js.Promise[Unit] = js.native
     /* protected */ def handleUpgrade(_req: BaseNextRequest[Any], _socket: Any, _head: Any): js.Promise[Unit] = js.native
+    
+    /* protected */ var hasAppDir: Boolean = js.native
     
     /* protected */ def hasPage(pathname: String): js.Promise[Boolean] = js.native
     

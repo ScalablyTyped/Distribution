@@ -47,7 +47,7 @@ trait SourceLocation extends StObject {
   var SourceLocationName: string
   
   /**
-    * The tags assigned to the source location.
+    * The tags assigned to the source location. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
 }

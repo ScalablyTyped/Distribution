@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagResourceRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) for the playback configuration. You can get this from the response to any playback configuration request.
+    * The Amazon Resource Name (ARN) associated with the resource.
     */
   var ResourceArn: string
   
   /**
-    * A comma-separated list of tag key:value pairs.
+    * The tags to assign to the resource. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: mapOfString
 }

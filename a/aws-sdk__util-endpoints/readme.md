@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-endpoints
 
-Typings are for version 3.194.0
+Typings are for version 3.196.0
 
 
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for svgo
 
-Typings are for version 2.8.0
+Typings are for version 3.0.0
 
 ## Library description:
 Nodejs-based tool for optimizing SVG vector graphics files

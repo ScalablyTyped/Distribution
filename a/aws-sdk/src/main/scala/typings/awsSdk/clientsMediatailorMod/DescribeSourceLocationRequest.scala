@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeSourceLocationRequest extends StObject {
   
   /**
-    * The identifier for the source location you are working on.
+    * The name of the source location.
     */
   var SourceLocationName: string
 }

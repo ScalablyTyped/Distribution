@@ -57,6 +57,11 @@ trait ExportTask extends StObject {
   var SourceArn: js.UndefOr[String] = js.undefined
   
   /**
+    * The type of source for the export.
+    */
+  var SourceType: js.UndefOr[ExportSourceType] = js.undefined
+  
+  /**
     * The progress status of the export task.
     */
   var Status: js.UndefOr[String] = js.undefined
@@ -131,6 +136,10 @@ object ExportTask {
     inline def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    
+    inline def setSourceType(value: ExportSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

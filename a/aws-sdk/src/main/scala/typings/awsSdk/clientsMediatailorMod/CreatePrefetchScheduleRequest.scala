@@ -12,12 +12,12 @@ trait CreatePrefetchScheduleRequest extends StObject {
   var Consumption: PrefetchConsumption
   
   /**
-    * The identifier for the playback configuration.
+    * The name to assign to the schedule request.
     */
   var Name: string
   
   /**
-    * The name of the playback configuration.
+    * The name to assign to the playback configuration.
     */
   var PlaybackConfigurationName: string
   

@@ -17,7 +17,7 @@ trait ReadonlyAppRouterState extends StObject {
   
   val focusAndScrollRef: FocusAndScrollRef
   
-  val prefetchCache: typings.std.Map[String, FlightSegmentPath]
+  val prefetchCache: typings.std.Map[String, CanonicalUrlOverride]
   
   val pushRef: PushRef
   
@@ -29,7 +29,7 @@ object ReadonlyAppRouterState {
     cache: CacheNode,
     canonicalUrl: String,
     focusAndScrollRef: FocusAndScrollRef,
-    prefetchCache: typings.std.Map[String, FlightSegmentPath],
+    prefetchCache: typings.std.Map[String, CanonicalUrlOverride],
     pushRef: PushRef,
     tree: FlightRouterState
   ): ReadonlyAppRouterState = {
@@ -45,7 +45,7 @@ object ReadonlyAppRouterState {
     
     inline def setFocusAndScrollRef(value: FocusAndScrollRef): Self = StObject.set(x, "focusAndScrollRef", value.asInstanceOf[js.Any])
     
-    inline def setPrefetchCache(value: typings.std.Map[String, FlightSegmentPath]): Self = StObject.set(x, "prefetchCache", value.asInstanceOf[js.Any])
+    inline def setPrefetchCache(value: typings.std.Map[String, CanonicalUrlOverride]): Self = StObject.set(x, "prefetchCache", value.asInstanceOf[js.Any])
     
     inline def setPushRef(value: PushRef): Self = StObject.set(x, "pushRef", value.asInstanceOf[js.Any])
     

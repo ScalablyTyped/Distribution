@@ -7,47 +7,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateSourceLocationResponse extends StObject {
   
   /**
-    * The access configuration for the source location.
+    * Access configuration parameters. Configures the type of authentication used to access content from your source location.
     */
   var AccessConfiguration: js.UndefOr[typings.awsSdk.clientsMediatailorMod.AccessConfiguration] = js.undefined
   
   /**
-    * The ARN of the source location.
+    * The ARN to assign to the source location.
     */
   var Arn: js.UndefOr[string] = js.undefined
   
   /**
-    * The timestamp that indicates when the source location was created.
+    * The time the source location was created.
     */
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The default segment delivery configuration settings.
+    * The optional configuration for the server that serves segments.
     */
   var DefaultSegmentDeliveryConfiguration: js.UndefOr[typings.awsSdk.clientsMediatailorMod.DefaultSegmentDeliveryConfiguration] = js.undefined
   
   /**
-    * The HTTP package configuration settings for the source location.
+    * The source's HTTP package configurations.
     */
   var HttpConfiguration: js.UndefOr[typings.awsSdk.clientsMediatailorMod.HttpConfiguration] = js.undefined
   
   /**
-    * The timestamp that indicates when the source location was last modified.
+    * The time the source location was last modified.
     */
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A list of the segment delivery configurations associated with this resource.
+    * The segment delivery configurations for the source location. For information about MediaTailor configurations, see Working with configurations in AWS Elemental MediaTailor.
     */
   var SegmentDeliveryConfigurations: js.UndefOr[listOfSegmentDeliveryConfiguration] = js.undefined
   
   /**
-    * The name of the source location.
+    * The name to assign to the source location.
     */
   var SourceLocationName: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags assigned to the source location.
+    * The tags to assign to the source location. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
 }

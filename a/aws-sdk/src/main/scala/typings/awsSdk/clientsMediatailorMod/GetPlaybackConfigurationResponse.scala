@@ -87,7 +87,7 @@ trait GetPlaybackConfigurationResponse extends StObject {
   var SlateAdUrl: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags assigned to the playback configuration.
+    * The tags assigned to the playback configuration. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
   

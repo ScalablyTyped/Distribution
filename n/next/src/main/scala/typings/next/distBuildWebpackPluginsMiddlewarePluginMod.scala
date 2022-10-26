@@ -1,8 +1,8 @@
 package typings.next
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.next.anon.AllowMiddlewareResponseBody
 import typings.next.anon.Context
-import typings.next.anon.SriEnabled
 import typings.next.distBuildAnalysisGetPageStaticInfoMod.MiddlewareMatcher
 import typings.next.distBuildWebpackLoadersGetModuleBuildInfoMod.AssetBinding
 import typings.next.distCompiledWebpackWebpackMod.webpack.Compiler
@@ -22,7 +22,10 @@ object distBuildWebpackPluginsMiddlewarePluginMod {
   open class default protected ()
     extends StObject
        with MiddlewarePlugin {
-    def this(param0: SriEnabled) = this()
+    def this(param0: AllowMiddlewareResponseBody) = this()
+    
+    /* private */ /* CompleteClass */
+    override val allowMiddlewareResponseBody: Any = js.native
     
     /* CompleteClass */
     @JSName("apply")
@@ -32,10 +35,13 @@ object distBuildWebpackPluginsMiddlewarePluginMod {
     override val dev: Any = js.native
     
     /* private */ /* CompleteClass */
+    override val hasFontLoaders: Any = js.native
+    
+    /* private */ /* CompleteClass */
     override val sriEnabled: Any = js.native
   }
   
-  inline def handleWebpackExtenalForEdgeRuntime(param0: Context): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleWebpackExtenalForEdgeRuntime")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def handleWebpackExternalForEdgeRuntime(param0: Context): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleWebpackExternalForEdgeRuntime")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
   trait EdgeFunctionDefinition extends StObject {
     
@@ -50,6 +56,8 @@ object distBuildWebpackPluginsMiddlewarePluginMod {
     var name: String
     
     var page: String
+    
+    var regions: js.UndefOr[js.Array[String] | String] = js.undefined
     
     var wasm: js.UndefOr[js.Array[AssetBinding]] = js.undefined
   }
@@ -89,6 +97,12 @@ object distBuildWebpackPluginsMiddlewarePluginMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
+      inline def setRegions(value: js.Array[String] | String): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      
+      inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+      
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
       
       inline def setWasm(value: js.Array[AssetBinding]): Self = StObject.set(x, "wasm", value.asInstanceOf[js.Any])
       
@@ -135,25 +149,39 @@ object distBuildWebpackPluginsMiddlewarePluginMod {
   
   trait MiddlewarePlugin extends StObject {
     
+    /* private */ val allowMiddlewareResponseBody: Any
+    
     @JSName("apply")
     def apply(compiler: Compiler): Unit
     
     /* private */ val dev: Any
     
+    /* private */ val hasFontLoaders: Any
+    
     /* private */ val sriEnabled: Any
   }
   object MiddlewarePlugin {
     
-    inline def apply(apply: Compiler => Unit, dev: Any, sriEnabled: Any): MiddlewarePlugin = {
-      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), dev = dev.asInstanceOf[js.Any], sriEnabled = sriEnabled.asInstanceOf[js.Any])
+    inline def apply(
+      allowMiddlewareResponseBody: Any,
+      apply: Compiler => Unit,
+      dev: Any,
+      hasFontLoaders: Any,
+      sriEnabled: Any
+    ): MiddlewarePlugin = {
+      val __obj = js.Dynamic.literal(allowMiddlewareResponseBody = allowMiddlewareResponseBody.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), dev = dev.asInstanceOf[js.Any], hasFontLoaders = hasFontLoaders.asInstanceOf[js.Any], sriEnabled = sriEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[MiddlewarePlugin]
     }
     
     extension [Self <: MiddlewarePlugin](x: Self) {
       
+      inline def setAllowMiddlewareResponseBody(value: Any): Self = StObject.set(x, "allowMiddlewareResponseBody", value.asInstanceOf[js.Any])
+      
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
       inline def setDev(value: Any): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+      
+      inline def setHasFontLoaders(value: Any): Self = StObject.set(x, "hasFontLoaders", value.asInstanceOf[js.Any])
       
       inline def setSriEnabled(value: Any): Self = StObject.set(x, "sriEnabled", value.asInstanceOf[js.Any])
     }

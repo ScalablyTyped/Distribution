@@ -435,6 +435,8 @@ object typesTreeGroupMod {
     
     var nodeRef: js.UndefOr[Ref[ListElement]] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     // Media Events
     var onAbort: js.UndefOr[ReactEventHandler[ListElement]] = js.undefined
     
@@ -1031,6 +1033,10 @@ object typesTreeGroupMod {
       inline def setNodeRefNull: Self = StObject.set(x, "nodeRef", null)
       
       inline def setNodeRefUndefined: Self = StObject.set(x, "nodeRef", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[ListElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

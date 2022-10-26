@@ -14,6 +14,10 @@ open class QuestionTagboxModel protected () extends QuestionCheckboxModel {
     */
   var allowClear: Boolean = js.native
   
+  var choicesLazyLoadEnabled: Boolean = js.native
+  
+  var choicesLazyLoadPageSize: Double = js.native
+  
   def clearCaption: String = js.native
   def clearCaption_=(`val`: String): Unit = js.native
   

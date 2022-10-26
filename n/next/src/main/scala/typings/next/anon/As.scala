@@ -13,6 +13,8 @@ trait As extends StObject {
   
   var isPreview: Boolean
   
+  var isQueryUpdating: js.UndefOr[Boolean] = js.undefined
+  
   var locale: js.UndefOr[String] = js.undefined
   
   var pathname: String
@@ -51,6 +53,10 @@ object As {
     inline def setHasMiddlewareUndefined: Self = StObject.set(x, "hasMiddleware", js.undefined)
     
     inline def setIsPreview(value: Boolean): Self = StObject.set(x, "isPreview", value.asInstanceOf[js.Any])
+    
+    inline def setIsQueryUpdating(value: Boolean): Self = StObject.set(x, "isQueryUpdating", value.asInstanceOf[js.Any])
+    
+    inline def setIsQueryUpdatingUndefined: Self = StObject.set(x, "isQueryUpdating", js.undefined)
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

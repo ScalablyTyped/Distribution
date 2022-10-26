@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__client-sso
 
-Typings are for version 3.193.0
+Typings are for version 3.196.0
 
 ## Library description:
 AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native

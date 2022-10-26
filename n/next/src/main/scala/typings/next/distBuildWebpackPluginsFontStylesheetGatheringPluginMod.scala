@@ -16,14 +16,14 @@ object distBuildWebpackPluginsFontStylesheetGatheringPluginMod {
     
     var adjustFontFallbacks: js.UndefOr[Boolean] = js.native
     
+    var adjustFontFallbacksWithSizeAdjust: js.UndefOr[Boolean] = js.native
+    
     @JSName("apply")
     def apply(compiler: Compiler): Unit = js.native
     
     var compiler: js.UndefOr[Compiler] = js.native
     
     var gatheredStylesheets: js.Array[String] = js.native
-    
-    var isLikeServerless: Boolean = js.native
     
     var manifestContent: FontManifest = js.native
     

@@ -32,12 +32,12 @@ trait DescribeLiveSourceResponse extends StObject {
   var LiveSourceName: js.UndefOr[string] = js.undefined
   
   /**
-    * The name of the source location associated with the VOD source.
+    * The name of the source location associated with the live source.
     */
   var SourceLocationName: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags assigned to the live source.
+    * The tags assigned to the live source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
 }

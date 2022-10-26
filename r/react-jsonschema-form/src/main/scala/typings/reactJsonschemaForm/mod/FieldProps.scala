@@ -249,6 +249,8 @@ trait FieldProps[T]
   
   var name: String = js.native
   
+  var nonce: js.UndefOr[String] = js.native
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.native

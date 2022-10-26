@@ -10,8 +10,6 @@ trait StyleHTMLAttributes[T]
   
   var media: js.UndefOr[String] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.undefined
-  
   var scoped: js.UndefOr[Boolean] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
@@ -28,10 +26,6 @@ object StyleHTMLAttributes {
     inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
-    
-    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
-    
-    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     

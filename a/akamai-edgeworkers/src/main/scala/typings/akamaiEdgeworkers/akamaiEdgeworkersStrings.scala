@@ -21,6 +21,14 @@ object akamaiEdgeworkersStrings {
   inline def Strict: Strict = "Strict".asInstanceOf[Strict]
   
   @js.native
+  sealed trait String extends StObject
+  inline def String: String = "String".asInstanceOf[String]
+  
+  @js.native
+  sealed trait Uint8Array extends StObject
+  inline def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
+  
+  @js.native
   sealed trait byob extends StObject
   inline def byob: byob = "byob".asInstanceOf[byob]
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__storage"
-version := "6.5.4-997d6f"
+version := "6.6.0-035944"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

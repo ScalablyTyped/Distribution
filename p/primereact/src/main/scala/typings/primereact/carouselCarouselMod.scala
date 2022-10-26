@@ -311,6 +311,8 @@ object carouselCarouselMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var numScroll: js.UndefOr[Double] = js.undefined
     
     var numVisible: js.UndefOr[Double] = js.undefined
@@ -877,6 +879,10 @@ object carouselCarouselMod {
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setNumScroll(value: Double): Self = StObject.set(x, "numScroll", value.asInstanceOf[js.Any])
       

@@ -290,6 +290,8 @@ object libEsmComponentsDialogDialogStepMod {
       */
     var nextButtonProps: js.UndefOr[DialogStepButtonProps] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -815,6 +817,10 @@ object libEsmComponentsDialogDialogStepMod {
       inline def setNextButtonProps(value: DialogStepButtonProps): Self = StObject.set(x, "nextButtonProps", value.asInstanceOf[js.Any])
       
       inline def setNextButtonPropsUndefined: Self = StObject.set(x, "nextButtonProps", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

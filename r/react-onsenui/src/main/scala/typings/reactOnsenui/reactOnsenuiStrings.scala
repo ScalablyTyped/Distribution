@@ -489,6 +489,10 @@ object reactOnsenuiStrings {
   inline def name: name = "name".asInstanceOf[name]
   
   @js.native
+  sealed trait nonce extends StObject
+  inline def nonce: nonce = "nonce".asInstanceOf[nonce]
+  
+  @js.native
   sealed trait none
     extends StObject
        with _NavigatorAnimationTypes

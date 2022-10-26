@@ -8,5 +8,5 @@ object libVersionMod {
   
   @JSImport("sip.js/lib/version", "LIBRARY_VERSION")
   @js.native
-  val LIBRARY_VERSION: /* "0.20.1" */ String = js.native
+  val LIBRARY_VERSION: /* "0.21.0" */ String = js.native
 }

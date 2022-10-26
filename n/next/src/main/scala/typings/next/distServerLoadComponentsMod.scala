@@ -2,7 +2,7 @@ package typings.next
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.next.anon.BuildManifest
-import typings.next.anon.Serverless
+import typings.next.anon.DistDirHasServerComponents
 import typings.next.distSharedLibUtilsMod.AppType
 import typings.next.distSharedLibUtilsMod.DocumentType
 import typings.next.distSharedLibUtilsMod.NextComponentType
@@ -29,7 +29,7 @@ object distServerLoadComponentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def loadComponents(param0: Serverless): js.Promise[LoadComponentsReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LoadComponentsReturnType]]
+  inline def loadComponents(param0: DistDirHasServerComponents): js.Promise[LoadComponentsReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LoadComponentsReturnType]]
   
   inline def loadDefaultErrorComponents(distDir: String): js.Promise[BuildManifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDefaultErrorComponents")(distDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BuildManifest]]
   

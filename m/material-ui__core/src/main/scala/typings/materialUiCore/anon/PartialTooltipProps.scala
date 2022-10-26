@@ -297,6 +297,8 @@ trait PartialTooltipProps extends StObject {
   
   var leaveTouchDelay: js.UndefOr[Double] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -871,6 +873,10 @@ object PartialTooltipProps {
     inline def setLeaveTouchDelay(value: Double): Self = StObject.set(x, "leaveTouchDelay", value.asInstanceOf[js.Any])
     
     inline def setLeaveTouchDelayUndefined: Self = StObject.set(x, "leaveTouchDelay", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

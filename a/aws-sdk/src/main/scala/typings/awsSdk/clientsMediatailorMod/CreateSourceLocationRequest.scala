@@ -27,12 +27,12 @@ trait CreateSourceLocationRequest extends StObject {
   var SegmentDeliveryConfigurations: js.UndefOr[listOfSegmentDeliveryConfiguration] = js.undefined
   
   /**
-    * The identifier for the source location you are working on.
+    * The name associated with the source location.
     */
   var SourceLocationName: string
   
   /**
-    * The tags to assign to the source location.
+    * The tags to assign to the source location. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
 }

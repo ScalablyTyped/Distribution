@@ -21,12 +21,22 @@ open class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question 
   /* protected */ def clearInvisibleValuesInRows(): Unit = js.native
   
   /*
-    * The list of columns. A column has a value and an optional text
+    * An array of matrix columns.
+    * 
+    * This array can contain primitive values or objects with the `text` (display value) and `value` (value to be saved in survey results) properties.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/single-selection-matrix-table-question/ (linkStyle))
     */
   def columns: Any = js.native
   
   /*
-    * An expression that returns true or false. It runs against each column item and if for this item it returns true, then the item is visible otherwise the item becomes invisible. Please use {item} to get the current item value in the expression.
+    * A Boolean expression that is evaluated against each matrix column. If the expression evaluates to `false`, the column becomes hidden.
+    * 
+    * A survey parses and runs all expressions on startup. If any values used in the expression change, the survey re-evaluates it.
+    * 
+    * Use the `{item}` placeholder to reference the current column in the expression.
+    * 
+    * Refer to the following help topic for more information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility).
     */
   def columnsVisibleIf: String = js.native
   def columnsVisibleIf_=(`val`: String): Unit = js.native
@@ -58,12 +68,22 @@ open class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question 
   /* protected */ def processRowsOnSet(newRows: Any): Any = js.native
   
   /*
-    * The list of rows. A row has a value and an optional text
+    * An array of matrix rows.
+    * 
+    * This array can contain primitive values or objects with the `text` (display value) and `value` (value to be saved in survey results) properties.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/single-selection-matrix-table-question/ (linkStyle))
     */
   def rows: Any = js.native
   
   /*
-    * An expression that returns true or false. It runs against each row item and if for this item it returns true, then the item is visible otherwise the item becomes invisible. Please use {item} to get the current item value in the expression.
+    * A Boolean expression that is evaluated against each matrix row. If the expression evaluates to `false`, the row becomes hidden.
+    * 
+    * A survey parses and runs all expressions on startup. If any values used in the expression change, the survey re-evaluates it.
+    * 
+    * Use the `{item}` placeholder to reference the current row in the expression.
+    * 
+    * Refer to the following help topic for more information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility).
     */
   def rowsVisibleIf: String = js.native
   def rowsVisibleIf_=(`val`: String): Unit = js.native
@@ -75,7 +95,9 @@ open class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question 
   /* protected */ def shouldRunColumnExpression(): Boolean = js.native
   
   /*
-    * Set this property to false, to hide table header. The default value is true.
+    * Specifies whether to display the table header that contains column captions.
+    * 
+    * Default value: `true`
     */
   def showHeader: Boolean = js.native
   def showHeader_=(`val`: Boolean): Unit = js.native
@@ -90,7 +112,7 @@ open class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question 
   def visibleColumns: Any = js.native
   
   /*
-    * Returns the list of visible rows as model objects.
+    * Returns an array of visible matrix rows.
     */
   def visibleRows: Any = js.native
   

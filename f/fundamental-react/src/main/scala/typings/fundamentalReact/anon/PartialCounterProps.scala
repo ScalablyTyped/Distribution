@@ -251,6 +251,8 @@ trait PartialCounterProps extends StObject {
   
   var localizedText: js.UndefOr[CounterLabel] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var notification: js.UndefOr[Boolean] = js.undefined
   
   var onAbort: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
@@ -769,6 +771,10 @@ object PartialCounterProps {
     inline def setLocalizedText(value: CounterLabel): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
     
     inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     

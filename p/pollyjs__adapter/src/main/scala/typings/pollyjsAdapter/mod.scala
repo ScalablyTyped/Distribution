@@ -1,8 +1,16 @@
 package typings.pollyjsAdapter
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.pollyjsAdapter.anon.Body
-import typings.std.Request
+import typings.pollyjsAdapter.anon.PickResponsestatusCodehea
+import typings.pollyjsAdapter.anon.Time
+import typings.pollyjsAdapter.pollyjsAdapterStrings.body
+import typings.pollyjsAdapter.pollyjsAdapterStrings.headers
+import typings.pollyjsAdapter.pollyjsAdapterStrings.method
+import typings.pollyjsAdapter.pollyjsAdapterStrings.requestArguments
+import typings.pollyjsAdapter.pollyjsAdapterStrings.url
+import typings.pollyjsCore.mod.Interceptor
+import typings.pollyjsCore.mod.Polly
+import typings.pollyjsCore.mod.Request
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,21 +19,10 @@ object mod {
   
   @JSImport("@pollyjs/adapter", JSImport.Default)
   @js.native
-  open class default ()
+  open class default[TOptions /* <: js.Object */, TRequest /* <: Request[js.Object] */] protected ()
     extends StObject
-       with Adapter {
-    
-    /* CompleteClass */
-    override def connect(): Unit = js.native
-    
-    /* CompleteClass */
-    override def disconnect(): Unit = js.native
-    
-    /* CompleteClass */
-    override val options: StringDictionary[Any] = js.native
-    
-    /* CompleteClass */
-    override def passthroughRequest(pollyRequest: Request): js.Promise[Body] = js.native
+       with Adapter[TOptions, TRequest] {
+    def this(polly: Polly) = this()
   }
   /* static members */
   object default {
@@ -39,37 +36,61 @@ object mod {
     val `type`: String = js.native
   }
   
-  trait Adapter extends StObject {
+  @js.native
+  trait Adapter[TOptions /* <: js.Object */, TRequest /* <: Request[js.Object] */] extends StObject {
     
-    def connect(): Unit
+    def assert(message: String): Unit = js.native
+    def assert(message: String, condition: Boolean): Unit = js.native
     
-    def disconnect(): Unit
+    def connect(): Unit = js.native
     
-    val options: StringDictionary[Any]
+    val defaultOptions: TOptions = js.native
     
-    def passthroughRequest(pollyRequest: Request): js.Promise[Body]
-  }
-  object Adapter {
+    def disconnect(): Unit = js.native
     
-    inline def apply(
-      connect: () => Unit,
-      disconnect: () => Unit,
-      options: StringDictionary[Any],
-      passthroughRequest: Request => js.Promise[Body]
-    ): Adapter = {
-      val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), disconnect = js.Any.fromFunction0(disconnect), options = options.asInstanceOf[js.Any], passthroughRequest = js.Any.fromFunction1(passthroughRequest))
-      __obj.asInstanceOf[Adapter]
-    }
+    def handleRequest(request: Pick[TRequest, url | method | headers | body | requestArguments]): js.Promise[TRequest] = js.native
     
-    extension [Self <: Adapter](x: Self) {
-      
-      inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
-      
-      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
-      
-      inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setPassthroughRequest(value: Request => js.Promise[Body]): Self = StObject.set(x, "passthroughRequest", js.Any.fromFunction1(value))
-    }
+    /* private */ def intercept(request: TRequest, interceptor: Interceptor): js.Promise[Unit] = js.native
+    
+    var isConnected: Boolean = js.native
+    
+    def onConnect(): Unit = js.native
+    
+    def onDisconnect(): Unit = js.native
+    
+    def onFetchResponse(pollyRequest: TRequest): js.Promise[PickResponsestatusCodehea] = js.native
+    
+    def onIdentifyRequest(request: TRequest): js.Promise[Unit] = js.native
+    
+    def onIntercept(request: TRequest, interceptor: Interceptor): js.Promise[Unit] = js.native
+    
+    def onPassthrough(request: TRequest): js.Promise[Unit] = js.native
+    
+    def onRecord(request: TRequest): js.Promise[Unit] = js.native
+    
+    def onReplay(request: TRequest): js.Promise[Unit] = js.native
+    
+    def onRequest(request: TRequest): js.Promise[Unit] = js.native
+    
+    def onRequestFailed(request: TRequest): js.Promise[Unit] = js.native
+    
+    def onRequestFinished(request: TRequest): js.Promise[Unit] = js.native
+    
+    def onRespond(request: TRequest): js.Promise[Unit] = js.native
+    def onRespond(request: TRequest, error: js.Error): js.Promise[Unit] = js.native
+    
+    val options: TOptions = js.native
+    
+    /* private */ def passthrough(request: TRequest): js.Promise[Unit] = js.native
+    
+    var persister: typings.pollyjsPersister.mod.default[js.Object] | Null = js.native
+    
+    var polly: Polly = js.native
+    
+    /* private */ def record(request: TRequest): js.Promise[Unit] = js.native
+    
+    /* private */ def replay(request: TRequest): js.Promise[Unit] = js.native
+    
+    /* private */ def timeout(request: TRequest, options: Time): js.Promise[Unit] = js.native
   }
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePrefetchScheduleRequest extends StObject {
   
   /**
-    * The identifier for the playback configuration.
+    * The name of the prefetch schedule. If the action is successful, the service sends back an HTTP 204 response with an empty HTTP body.
     */
   var Name: string
   
   /**
-    * The name of the playback configuration.
+    * The name of the playback configuration for this prefetch schedule.
     */
   var PlaybackConfigurationName: string
 }

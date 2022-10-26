@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreatePrefetchScheduleResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the prefetch schedule.
+    * The ARN to assign to the prefetch schedule.
     */
   var Arn: js.UndefOr[string] = js.undefined
   
   /**
-    * Consumption settings determine how, and when, MediaTailor places the prefetched ads into ad breaks. Ad consumption occurs within a span of time that you define, called a consumption window. You can designate which ad breaks that MediaTailor fills with prefetch ads by setting avail matching criteria.
+    * The configuration settings for MediaTailor's consumption of the prefetched ads from the ad decision server. Each consumption configuration contains an end time and an optional start time that define the consumption window. Prefetch schedules automatically expire no earlier than seven days after the end time.
     */
   var Consumption: js.UndefOr[PrefetchConsumption] = js.undefined
   
   /**
-    * The name of the prefetch schedule. The name must be unique among all prefetch schedules that are associated with the specified playback configuration.
+    * The name to assign to the prefetch schedule.
     */
   var Name: js.UndefOr[string] = js.undefined
   
   /**
-    * The name of the playback configuration to create the prefetch schedule for.
+    * The name to assign to the playback configuration.
     */
   var PlaybackConfigurationName: js.UndefOr[string] = js.undefined
   
   /**
-    * A complex type that contains settings for prefetch retrieval from the ad decision server (ADS).
+    * The configuration settings for retrieval of prefetched ads from the ad decision server. Only one set of prefetched ads will be retrieved and subsequently consumed for each ad break.
     */
   var Retrieval: js.UndefOr[PrefetchRetrieval] = js.undefined
   
   /**
-    * An optional stream identifier that you can specify in order to prefetch for multiple streams that use the same playback configuration.
+    * An optional stream identifier that MediaTailor uses to prefetch ads for multiple streams that use the same playback configuration. If StreamId is specified, MediaTailor returns all of the prefetch schedules with an exact match on StreamId. If not specified, MediaTailor returns all of the prefetch schedules for the playback configuration, regardless of StreamId.
     */
   var StreamId: js.UndefOr[string] = js.undefined
 }

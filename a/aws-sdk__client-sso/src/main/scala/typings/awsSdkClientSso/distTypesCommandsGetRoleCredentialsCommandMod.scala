@@ -6,6 +6,7 @@ import typings.awsSdkClientSso.distTypesSsoclientMod.SSOClientResolvedConfig
 import typings.awsSdkClientSso.distTypesSsoclientMod.ServiceInputTypes
 import typings.awsSdkClientSso.distTypesSsoclientMod.ServiceOutputTypes
 import typings.awsSdkClientSso.distTypesSsoclientMod._ServiceOutputTypes
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
 import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
@@ -45,6 +46,15 @@ object distTypesCommandsGetRoleCredentialsCommandMod {
     ): Handler[GetRoleCredentialsCommandInput, GetRoleCredentialsCommandOutput] = js.native
     
     /* private */ var serialize: Any = js.native
+  }
+  /* static members */
+  object GetRoleCredentialsCommand {
+    
+    @JSImport("@aws-sdk/client-sso/dist-types/commands/GetRoleCredentialsCommand", "GetRoleCredentialsCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   type GetRoleCredentialsCommandInput = GetRoleCredentialsRequest

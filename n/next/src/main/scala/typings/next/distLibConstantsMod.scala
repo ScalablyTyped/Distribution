@@ -131,14 +131,14 @@ object distLibConstantsMod {
     def middleware: String = js.native
     inline def middleware_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("middleware")(x.asInstanceOf[js.Any])
     
-    @JSImport("next/dist/lib/constants", "WEBPACK_LAYERS.rscShared")
-    @js.native
-    def rscShared: String = js.native
-    inline def rscShared_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rscShared")(x.asInstanceOf[js.Any])
-    
     @JSImport("next/dist/lib/constants", "WEBPACK_LAYERS.server")
     @js.native
     def server: String = js.native
     inline def server_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("server")(x.asInstanceOf[js.Any])
+    
+    @JSImport("next/dist/lib/constants", "WEBPACK_LAYERS.shared")
+    @js.native
+    def shared: String = js.native
+    inline def shared_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
   }
 }

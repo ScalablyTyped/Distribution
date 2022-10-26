@@ -1,11 +1,12 @@
 package typings.next.anon
 
-import typings.next.distClientFutureImageMod.ImageLoader
-import typings.next.distClientFutureImageMod.ImageLoaderProps
-import typings.next.distClientFutureImageMod.LoadingValue
-import typings.next.distClientFutureImageMod.OnLoadingComplete
-import typings.next.distClientFutureImageMod.PlaceholderValue
-import typings.next.distClientFutureImageMod.StaticImport
+import typings.next.distClientImageMod.ImageLoader
+import typings.next.distClientImageMod.LoadingValue
+import typings.next.distClientImageMod.OnLoadingComplete
+import typings.next.distClientImageMod.PlaceholderValue
+import typings.next.distClientImageMod.SafeNumber
+import typings.next.distClientImageMod.StaticImport
+import typings.next.distSharedLibImageConfigMod.ImageLoaderProps
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +20,7 @@ trait Alt extends StObject {
   
   var fill: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[SafeNumber] = js.undefined
   
   var loader: js.UndefOr[ImageLoader] = js.undefined
   
@@ -31,13 +32,13 @@ trait Alt extends StObject {
   
   var priority: js.UndefOr[Boolean] = js.undefined
   
-  var quality: js.UndefOr[Double | String] = js.undefined
+  var quality: js.UndefOr[SafeNumber] = js.undefined
   
   var src: String | StaticImport
   
   var unoptimized: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[SafeNumber] = js.undefined
 }
 object Alt {
   
@@ -58,7 +59,7 @@ object Alt {
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: SafeNumber): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -82,7 +83,7 @@ object Alt {
     
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    inline def setQuality(value: Double | String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: SafeNumber): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
@@ -92,7 +93,7 @@ object Alt {
     
     inline def setUnoptimizedUndefined: Self = StObject.set(x, "unoptimized", js.undefined)
     
-    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: SafeNumber): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

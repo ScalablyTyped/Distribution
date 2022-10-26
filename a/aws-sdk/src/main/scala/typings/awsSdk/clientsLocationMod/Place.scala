@@ -59,7 +59,7 @@ trait Place extends StObject {
   var SubRegion: js.UndefOr[String] = js.undefined
   
   /**
-    * The time zone in which the Place is located. Returned only when using Here as the selected partner.
+    * The time zone in which the Place is located. Returned only when using HERE as the selected partner.
     */
   var TimeZone: js.UndefOr[typings.awsSdk.clientsLocationMod.TimeZone] = js.undefined
   

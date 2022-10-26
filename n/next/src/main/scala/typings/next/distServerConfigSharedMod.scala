@@ -8,21 +8,28 @@ import typings.next.anon.BuildActivity
 import typings.next.anon.CanonicalBase
 import typings.next.anon.Compress
 import typings.next.anon.ConfigFile
+import typings.next.anon.ContextDirectory
 import typings.next.anon.Emotion
 import typings.next.anon.KeepAlive
+import typings.next.anon.Loader
 import typings.next.anon.MaxInactiveAge
 import typings.next.anon.Optimizer
 import typings.next.anon.OutDir
 import typings.next.anon.Page
 import typings.next.anon.PreventFullImport
-import typings.next.anon.Webpack5
-import typings.next.anon.`1`
+import typings.next.anon.`0`
 import typings.next.distLibLoadCustomRoutesMod.Header
 import typings.next.distLibLoadCustomRoutesMod.Redirect
 import typings.next.distLibLoadCustomRoutesMod.Rewrite
 import typings.next.distSharedLibImageConfigMod.ImageConfig
 import typings.next.nextBooleans.`false`
 import typings.next.nextBooleans.`true`
+import typings.next.nextStrings.CLS
+import typings.next.nextStrings.FCP
+import typings.next.nextStrings.FID
+import typings.next.nextStrings.INP
+import typings.next.nextStrings.LCP
+import typings.next.nextStrings.TTFB
 import typings.next.nextStrings.`use-credentials`
 import typings.next.nextStrings.anonymous
 import typings.next.nextStrings.edge
@@ -52,7 +59,7 @@ object distServerConfigSharedMod {
   
   inline def normalizeConfig(phase: String, config: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(phase.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def validateConfig(userConfig: NextConfig): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("validateConfig")(userConfig.asInstanceOf[js.Any]).asInstanceOf[`1`]
+  inline def validateConfig(userConfig: NextConfig): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("validateConfig")(userConfig.asInstanceOf[js.Any]).asInstanceOf[`0`]
   
   trait DomainLocale extends StObject {
     
@@ -122,11 +129,13 @@ object distServerConfigSharedMod {
     
     var adjustFontFallbacks: js.UndefOr[Boolean] = js.undefined
     
+    var adjustFontFallbacksWithSizeAdjust: js.UndefOr[Boolean] = js.undefined
+    
+    var allowMiddlewareResponseBody: js.UndefOr[Boolean] = js.undefined
+    
     var amp: js.UndefOr[Optimizer] = js.undefined
     
     var appDir: js.UndefOr[Boolean] = js.undefined
-    
-    var browsersListForSwc: js.UndefOr[Boolean] = js.undefined
     
     var cpus: js.UndefOr[Double] = js.undefined
     
@@ -135,6 +144,8 @@ object distServerConfigSharedMod {
     var disableOptimizedLoading: js.UndefOr[Boolean] = js.undefined
     
     var disablePostcssPresetEnv: js.UndefOr[Boolean] = js.undefined
+    
+    var enableUndici: js.UndefOr[Boolean] = js.undefined
     
     var esmExternals: js.UndefOr[Boolean | loose] = js.undefined
     
@@ -146,6 +157,8 @@ object distServerConfigSharedMod {
       * [webpack/webpack#ModuleNotoundError.js#L13-L42](https://github.com/webpack/webpack/blob/2a0536cf510768111a3a6dceeb14cb79b9f59273/lib/ModuleNotFoundError.js#L13-L42)
       */
     var fallbackNodePolyfills: js.UndefOr[`false`] = js.undefined
+    
+    var fontLoaders: js.UndefOr[js.Array[Loader]] = js.undefined
     
     var forceSwcTransforms: js.UndefOr[Boolean] = js.undefined
     
@@ -187,9 +200,13 @@ object distServerConfigSharedMod {
     
     var scrollRestoration: js.UndefOr[Boolean] = js.undefined
     
-    var serverComponents: js.UndefOr[Boolean] = js.undefined
+    var serverComponentsExternalPackages: js.UndefOr[js.Array[String]] = js.undefined
     
     var sharedPool: js.UndefOr[Boolean] = js.undefined
+    
+    var skipMiddlewareUrlNormalize: js.UndefOr[Boolean] = js.undefined
+    
+    var skipTrailingSlashRedirect: js.UndefOr[Boolean] = js.undefined
     
     var sri: js.UndefOr[Algorithm] = js.undefined
     
@@ -209,9 +226,15 @@ object distServerConfigSharedMod {
     
     var swcTraceProfiling: js.UndefOr[Boolean] = js.undefined
     
+    var transpilePackages: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var turbotrace: js.UndefOr[ContextDirectory] = js.undefined
+    
     var urlImports: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<next.next/dist/compiled/webpack/webpack.webpack.Configuration['experiments']>['buildHttp'] */ js.Any
       ] = js.undefined
+    
+    var webVitalsAttribution: js.UndefOr[js.Array[CLS | FCP | FID | INP | LCP | TTFB]] = js.undefined
     
     var workerThreads: js.UndefOr[Boolean] = js.undefined
   }
@@ -228,6 +251,14 @@ object distServerConfigSharedMod {
       
       inline def setAdjustFontFallbacksUndefined: Self = StObject.set(x, "adjustFontFallbacks", js.undefined)
       
+      inline def setAdjustFontFallbacksWithSizeAdjust(value: Boolean): Self = StObject.set(x, "adjustFontFallbacksWithSizeAdjust", value.asInstanceOf[js.Any])
+      
+      inline def setAdjustFontFallbacksWithSizeAdjustUndefined: Self = StObject.set(x, "adjustFontFallbacksWithSizeAdjust", js.undefined)
+      
+      inline def setAllowMiddlewareResponseBody(value: Boolean): Self = StObject.set(x, "allowMiddlewareResponseBody", value.asInstanceOf[js.Any])
+      
+      inline def setAllowMiddlewareResponseBodyUndefined: Self = StObject.set(x, "allowMiddlewareResponseBody", js.undefined)
+      
       inline def setAmp(value: Optimizer): Self = StObject.set(x, "amp", value.asInstanceOf[js.Any])
       
       inline def setAmpUndefined: Self = StObject.set(x, "amp", js.undefined)
@@ -235,10 +266,6 @@ object distServerConfigSharedMod {
       inline def setAppDir(value: Boolean): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
       
       inline def setAppDirUndefined: Self = StObject.set(x, "appDir", js.undefined)
-      
-      inline def setBrowsersListForSwc(value: Boolean): Self = StObject.set(x, "browsersListForSwc", value.asInstanceOf[js.Any])
-      
-      inline def setBrowsersListForSwcUndefined: Self = StObject.set(x, "browsersListForSwc", js.undefined)
       
       inline def setCpus(value: Double): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
       
@@ -256,6 +283,10 @@ object distServerConfigSharedMod {
       
       inline def setDisablePostcssPresetEnvUndefined: Self = StObject.set(x, "disablePostcssPresetEnv", js.undefined)
       
+      inline def setEnableUndici(value: Boolean): Self = StObject.set(x, "enableUndici", value.asInstanceOf[js.Any])
+      
+      inline def setEnableUndiciUndefined: Self = StObject.set(x, "enableUndici", js.undefined)
+      
       inline def setEsmExternals(value: Boolean | loose): Self = StObject.set(x, "esmExternals", value.asInstanceOf[js.Any])
       
       inline def setEsmExternalsUndefined: Self = StObject.set(x, "esmExternals", js.undefined)
@@ -267,6 +298,12 @@ object distServerConfigSharedMod {
       inline def setFallbackNodePolyfills(value: `false`): Self = StObject.set(x, "fallbackNodePolyfills", value.asInstanceOf[js.Any])
       
       inline def setFallbackNodePolyfillsUndefined: Self = StObject.set(x, "fallbackNodePolyfills", js.undefined)
+      
+      inline def setFontLoaders(value: js.Array[Loader]): Self = StObject.set(x, "fontLoaders", value.asInstanceOf[js.Any])
+      
+      inline def setFontLoadersUndefined: Self = StObject.set(x, "fontLoaders", js.undefined)
+      
+      inline def setFontLoadersVarargs(value: Loader*): Self = StObject.set(x, "fontLoaders", js.Array(value*))
       
       inline def setForceSwcTransforms(value: Boolean): Self = StObject.set(x, "forceSwcTransforms", value.asInstanceOf[js.Any])
       
@@ -348,13 +385,23 @@ object distServerConfigSharedMod {
       
       inline def setScrollRestorationUndefined: Self = StObject.set(x, "scrollRestoration", js.undefined)
       
-      inline def setServerComponents(value: Boolean): Self = StObject.set(x, "serverComponents", value.asInstanceOf[js.Any])
+      inline def setServerComponentsExternalPackages(value: js.Array[String]): Self = StObject.set(x, "serverComponentsExternalPackages", value.asInstanceOf[js.Any])
       
-      inline def setServerComponentsUndefined: Self = StObject.set(x, "serverComponents", js.undefined)
+      inline def setServerComponentsExternalPackagesUndefined: Self = StObject.set(x, "serverComponentsExternalPackages", js.undefined)
+      
+      inline def setServerComponentsExternalPackagesVarargs(value: String*): Self = StObject.set(x, "serverComponentsExternalPackages", js.Array(value*))
       
       inline def setSharedPool(value: Boolean): Self = StObject.set(x, "sharedPool", value.asInstanceOf[js.Any])
       
       inline def setSharedPoolUndefined: Self = StObject.set(x, "sharedPool", js.undefined)
+      
+      inline def setSkipMiddlewareUrlNormalize(value: Boolean): Self = StObject.set(x, "skipMiddlewareUrlNormalize", value.asInstanceOf[js.Any])
+      
+      inline def setSkipMiddlewareUrlNormalizeUndefined: Self = StObject.set(x, "skipMiddlewareUrlNormalize", js.undefined)
+      
+      inline def setSkipTrailingSlashRedirect(value: Boolean): Self = StObject.set(x, "skipTrailingSlashRedirect", value.asInstanceOf[js.Any])
+      
+      inline def setSkipTrailingSlashRedirectUndefined: Self = StObject.set(x, "skipTrailingSlashRedirect", js.undefined)
       
       inline def setSri(value: Algorithm): Self = StObject.set(x, "sri", value.asInstanceOf[js.Any])
       
@@ -382,11 +429,27 @@ object distServerConfigSharedMod {
       
       inline def setSwcTraceProfilingUndefined: Self = StObject.set(x, "swcTraceProfiling", js.undefined)
       
+      inline def setTranspilePackages(value: js.Array[String]): Self = StObject.set(x, "transpilePackages", value.asInstanceOf[js.Any])
+      
+      inline def setTranspilePackagesUndefined: Self = StObject.set(x, "transpilePackages", js.undefined)
+      
+      inline def setTranspilePackagesVarargs(value: String*): Self = StObject.set(x, "transpilePackages", js.Array(value*))
+      
+      inline def setTurbotrace(value: ContextDirectory): Self = StObject.set(x, "turbotrace", value.asInstanceOf[js.Any])
+      
+      inline def setTurbotraceUndefined: Self = StObject.set(x, "turbotrace", js.undefined)
+      
       inline def setUrlImports(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<next.next/dist/compiled/webpack/webpack.webpack.Configuration['experiments']>['buildHttp'] */ js.Any
       ): Self = StObject.set(x, "urlImports", value.asInstanceOf[js.Any])
       
       inline def setUrlImportsUndefined: Self = StObject.set(x, "urlImports", js.undefined)
+      
+      inline def setWebVitalsAttribution(value: js.Array[CLS | FCP | FID | INP | LCP | TTFB]): Self = StObject.set(x, "webVitalsAttribution", value.asInstanceOf[js.Any])
+      
+      inline def setWebVitalsAttributionUndefined: Self = StObject.set(x, "webVitalsAttribution", js.undefined)
+      
+      inline def setWebVitalsAttributionVarargs(value: (CLS | FCP | FID | INP | LCP | TTFB)*): Self = StObject.set(x, "webVitalsAttribution", js.Array(value*))
       
       inline def setWorkerThreads(value: Boolean): Self = StObject.set(x, "workerThreads", value.asInstanceOf[js.Any])
       
@@ -523,8 +586,6 @@ object distServerConfigSharedMod {
           js.Promise[ExportPathMap] | ExportPathMap
         ]
       ] = js.undefined
-    
-    var future: js.UndefOr[Webpack5] = js.undefined
     
     /**
       * @see [Configuring the build ID](https://nextjs.org/docs/api-reference/next.config.js/configuring-the-build-id)
@@ -678,12 +739,6 @@ object distServerConfigSharedMod {
       * @see [Custom Webpack Config documentation](https://nextjs.org/docs/api-reference/next.config.js/custom-webpack-config)
       */
     var webpack: js.UndefOr[NextJsWebpackConfig | Null] = js.undefined
-    
-    /**
-      * @deprecated This option has been removed as webpack 5 is now default
-      * @see [Next.js webpack 5 documentation](https://nextjs.org/docs/messages/webpack5) for upgrading guidance.
-      */
-    var webpack5: js.UndefOr[`false`] = js.undefined
   }
   object NextConfig {
     
@@ -755,10 +810,6 @@ object distServerConfigSharedMod {
       ): Self = StObject.set(x, "exportPathMap", js.Any.fromFunction2(value))
       
       inline def setExportPathMapUndefined: Self = StObject.set(x, "exportPathMap", js.undefined)
-      
-      inline def setFuture(value: Webpack5): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
-      
-      inline def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
       
       inline def setGenerateBuildId(value: () => String | Null | (js.Promise[String | Null])): Self = StObject.set(x, "generateBuildId", js.Any.fromFunction0(value))
       
@@ -861,10 +912,6 @@ object distServerConfigSharedMod {
       inline def setUseFileSystemPublicRoutesUndefined: Self = StObject.set(x, "useFileSystemPublicRoutes", js.undefined)
       
       inline def setWebpack(value: (/* config */ Any, /* context */ WebpackConfigContext) => Any): Self = StObject.set(x, "webpack", js.Any.fromFunction2(value))
-      
-      inline def setWebpack5(value: `false`): Self = StObject.set(x, "webpack5", value.asInstanceOf[js.Any])
-      
-      inline def setWebpack5Undefined: Self = StObject.set(x, "webpack5", js.undefined)
       
       inline def setWebpackNull: Self = StObject.set(x, "webpack", null)
       

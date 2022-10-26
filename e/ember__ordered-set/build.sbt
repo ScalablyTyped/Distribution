@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ember__ordered-set"
-version := "4.0-dt-20220624Z-ef7d7b"
+version := "4.0-dt-20221025Z-ef7d7b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

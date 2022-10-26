@@ -1,8 +1,9 @@
 package typings.next
 
+import typings.next.anon.ReadableStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.streamMod.Readable
-import typings.std.ReadableStream
+import typings.std.Uint8ArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +14,9 @@ object distServerBodyStreamsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bodyStreamToNodeStream(bodyStream: ReadableStream[js.typedarray.Uint8Array]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyStreamToNodeStream")(bodyStream.asInstanceOf[js.Any]).asInstanceOf[Readable]
-  
   inline def getClonableBody[T /* <: IncomingMessage */](readable: T): ClonableBody = ^.asInstanceOf[js.Dynamic].applyDynamic("getClonableBody")(readable.asInstanceOf[js.Any]).asInstanceOf[ClonableBody]
   
-  inline def requestToBodyStream(context: typings.next.anon.ReadableStream, stream: Readable): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestToBodyStream")(context.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def requestToBodyStream(context: ReadableStream, KUint8Array: Uint8ArrayConstructor, stream: Readable): typings.std.ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestToBodyStream")(context.asInstanceOf[js.Any], KUint8Array.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[typings.std.ReadableStream[Any]]
   
   trait ClonableBody extends StObject {
     

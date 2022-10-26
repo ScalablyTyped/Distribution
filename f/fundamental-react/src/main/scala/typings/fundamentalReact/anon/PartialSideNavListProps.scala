@@ -258,6 +258,8 @@ trait PartialSideNavListProps extends StObject {
   
   var level: js.UndefOr[Double] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var onAbort: js.UndefOr[ReactEventHandler[Element]] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[Element]] = js.undefined
@@ -798,6 +800,10 @@ object PartialSideNavListProps {
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.surveyKnockout.mod.ISurvey because var conflicts: isDesignMode, isEditingSurveyElement, isLoadingFromJson. Inlined getSkeletonComponentName, currentPage, pages, getCss, isPageStarted, getQuestionByName, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, isClearValueOnHidden, isClearValueOnHiddenContainer, questionsOrder, questionCreated, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, getRendererForString, getRendererContextForString, getExpressionDisplayValue, isDisplayMode, areInvisibleElementsShowing, areEmptyElementsHidden, isUpdateValueTextOnTyping, autoGrowComment, state, isLazyRendering, cancelPreviewByPage, editText, cssNavigationEdit, requiredText, beforeSettingQuestionErrors, beforeSettingPanelErrors, getSurveyErrorCustomText, getElementTitleTagName, questionTitlePattern, getUpdatedQuestionTitle, getUpdatedQuestionNo, getUpdatedElementTitleActions, getUpdatedMatrixRowActions, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, loadedChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, updatePageCssClasses, updateChoiceItemCss, afterRenderQuestion, afterRenderQuestionInput, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, canChangeChoiceItemsVisibility, getChoiceItemVisibility, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixRowRemoving, matrixAllowRemoveRow, matrixCellCreating, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, isValidateOnValueChanging, isValidateOnValueChanged, matrixCellValidate, dynamicPanelAdded, dynamicPanelAdded, dynamicPanelAdded, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelRemoving, dynamicPanelItemValueChanged, dragAndDropAllow, scrollElementToTop, runExpression, elementContentVisibilityChanged */ @JSImport("survey-knockout", "SurveyModel")
+- typings.surveyKnockout.mod.ISurvey because var conflicts: isDesignMode, isEditingSurveyElement, isLoadingFromJson. Inlined getSkeletonComponentName, currentPage, pages, getCss, isPageStarted, getQuestionByName, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, isClearValueOnHidden, isClearValueOnHiddenContainer, questionsOrder, questionCreated, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, getRendererForString, getRendererContextForString, getExpressionDisplayValue, isDisplayMode, areInvisibleElementsShowing, areEmptyElementsHidden, isUpdateValueTextOnTyping, autoGrowComment, state, isLazyRendering, cancelPreviewByPage, editText, cssNavigationEdit, requiredText, beforeSettingQuestionErrors, beforeSettingPanelErrors, getSurveyErrorCustomText, getElementTitleTagName, questionTitlePattern, getUpdatedQuestionTitle, getUpdatedQuestionNo, getUpdatedElementTitleActions, getUpdatedMatrixRowActions, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, loadedChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, updatePageCssClasses, updateChoiceItemCss, afterRenderQuestion, afterRenderQuestionInput, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, canChangeChoiceItemsVisibility, getChoiceItemVisibility, loadQuestionChoices, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixRowRemoving, matrixAllowRemoveRow, matrixCellCreating, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, isValidateOnValueChanging, isValidateOnValueChanged, matrixCellValidate, dynamicPanelAdded, dynamicPanelAdded, dynamicPanelAdded, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelRemoving, dynamicPanelItemValueChanged, dragAndDropAllow, scrollElementToTop, runExpression, elementContentVisibilityChanged */ @JSImport("survey-knockout", "SurveyModel")
 @js.native
 open class SurveyModel ()
   extends SurveyElementCore
@@ -117,6 +117,8 @@ open class SurveyModel ()
   def calculatedValues_=(`val`: Any): Unit = js.native
   
   var calculatedWidthMode: String = js.native
+  
+  var calculatedWidthModeUpdater: Any = js.native
   
   /* CompleteClass */
   override def canBeCompleted(): Unit = js.native
@@ -948,6 +950,8 @@ open class SurveyModel ()
   
   def lazyRendering_=(`val`: Boolean): Unit = js.native
   
+  def loadQuestionChoices(options: Any): Unit = js.native
+  
   /*
     * Loads the survey JSON from the [api.surveyjs.io](https://api.surveyjs.io) service.
     * If `clientId` is not `null` and a user had completed a survey before, the survey switches to `completedbefore` state.
@@ -1206,6 +1210,8 @@ open class SurveyModel ()
   var onAfterRenderSurvey: EventBase[SurveyModel] = js.native
   
   /* protected */ def onBeforeCreating(): Unit = js.native
+  
+  var onChoicesLazyLoad: EventBase[SurveyModel] = js.native
   
   /*
     * This event is fired on clearing the value in a QuestionFile. Use this event to remove files stored on your server.
@@ -2206,6 +2212,8 @@ open class SurveyModel ()
   def sendResultOnPageNext_=(`val`: Boolean): Unit = js.native
   
   var serverValidationEventCount: Double = js.native
+  
+  def setCalculatedWidthModeUpdater(): Unit = js.native
   
   /*
     * Sets a comment value.

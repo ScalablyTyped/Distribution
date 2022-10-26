@@ -422,6 +422,8 @@ object cjsNumberInputMod {
     
     var name: js.UndefOr[String] = js.native
     
+    var nonce: js.UndefOr[String] = js.native
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native

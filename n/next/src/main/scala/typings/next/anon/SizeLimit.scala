@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SizeLimit extends StObject {
   
-  var sizeLimit: js.UndefOr[Double | String] = js.undefined
+  var sizeLimit: js.UndefOr[typings.next.typesMod.SizeLimit] = js.undefined
 }
 object SizeLimit {
   
@@ -17,7 +17,7 @@ object SizeLimit {
   
   extension [Self <: SizeLimit](x: Self) {
     
-    inline def setSizeLimit(value: Double | String): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+    inline def setSizeLimit(value: typings.next.typesMod.SizeLimit): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
     
     inline def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
   }

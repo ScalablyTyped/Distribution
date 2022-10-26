@@ -3,7 +3,6 @@ package typings.next
 import org.scalablytyped.runtime.StringDictionary
 import typings.next.anon.I18n
 import typings.next.distServerConfigSharedMod.DomainLocale
-import typings.std.Record
 import typings.std.URL
 import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
@@ -41,9 +40,6 @@ object distServerWebNextUrlMod {
     def defaultLocale: js.UndefOr[String] = js.native
     
     def domainLocale: js.UndefOr[DomainLocale] = js.native
-    
-    def flightSearchParameters: js.UndefOr[Record[String, String]] = js.native
-    def flightSearchParameters_=(flightSearchParams: js.UndefOr[Record[String, String]]): Unit = js.native
     
     /* private */ var formatPathname: Any = js.native
     

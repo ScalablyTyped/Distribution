@@ -13,6 +13,7 @@ import typings.next.anon.Mtime
 import typings.next.anon.Nonce
 import typings.next.anon.Path
 import typings.next.anon.UnstableonlyGenerated
+import typings.next.distBuildWebpackPluginsFontLoaderManifestPluginMod.FontLoaderManifest
 import typings.next.distServerConfigSharedMod.DomainLocale
 import typings.next.distServerFontUtilsMod.FontConfig
 import typings.next.distServerGetPageFilesMod.BuildManifest
@@ -137,6 +138,10 @@ object distSharedLibUtilsMod {
   @JSImport("next/dist/shared/lib/utils", "ST")
   @js.native
   val ST: Boolean = js.native
+  
+  @JSImport("next/dist/shared/lib/utils", "WEB_VITALS")
+  @js.native
+  val WEB_VITALS: js.Tuple6[CLS, FCP, FID, INP, LCP, TTFB] = js.native
   
   inline def execOnce[T /* <: js.Function1[/* repeated */ Any, ReturnType[T]] */](fn: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("execOnce")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -346,7 +351,7 @@ object distSharedLibUtilsMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.next.distSharedLibHtmlContextMod.HtmlProps because var conflicts: head, styles. Inlined __NEXT_DATA__, dangerousAsPath, docComponentsRendered, buildManifest, ampPath, inAmpMode, hybridAmp, isDevelopment, dynamicImports, assetPrefix, canonicalBase, headTags, unstable_runtimeJS, unstable_JsPreload, devOnlyCacheBusterQueryString, scriptLoader, locale, disableOptimizedLoading, crossOrigin, optimizeCss, optimizeFonts, nextScriptWorkers, runtime, hasConcurrentFeatures, largePageDataBytes */ trait DocumentProps
+  - typings.next.distSharedLibHtmlContextMod.HtmlProps because var conflicts: head, styles. Inlined __NEXT_DATA__, dangerousAsPath, docComponentsRendered, buildManifest, ampPath, inAmpMode, hybridAmp, isDevelopment, dynamicImports, assetPrefix, canonicalBase, headTags, unstable_runtimeJS, unstable_JsPreload, devOnlyCacheBusterQueryString, scriptLoader, locale, disableOptimizedLoading, crossOrigin, optimizeCss, optimizeFonts, nextScriptWorkers, runtime, hasConcurrentFeatures, largePageDataBytes, fontLoaderManifest */ trait DocumentProps
     extends StObject
        with DocumentInitialProps {
     
@@ -371,6 +376,8 @@ object distSharedLibUtilsMod {
     var docComponentsRendered: Head
     
     var dynamicImports: js.Array[String]
+    
+    var fontLoaderManifest: js.UndefOr[FontLoaderManifest] = js.undefined
     
     var hasConcurrentFeatures: js.UndefOr[Boolean] = js.undefined
     
@@ -451,6 +458,10 @@ object distSharedLibUtilsMod {
       inline def setDynamicImports(value: js.Array[String]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
       
       inline def setDynamicImportsVarargs(value: String*): Self = StObject.set(x, "dynamicImports", js.Array(value*))
+      
+      inline def setFontLoaderManifest(value: FontLoaderManifest): Self = StObject.set(x, "fontLoaderManifest", value.asInstanceOf[js.Any])
+      
+      inline def setFontLoaderManifestUndefined: Self = StObject.set(x, "fontLoaderManifest", js.undefined)
       
       inline def setHasConcurrentFeatures(value: Boolean): Self = StObject.set(x, "hasConcurrentFeatures", value.asInstanceOf[js.Any])
       
@@ -834,7 +845,7 @@ object distSharedLibUtilsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.next.anon.labelwebvitalnameFCPLCPCL
+    - typings.next.anon.labelwebvitalnameCLSFCPFI
     - typings.next.anon.labelcustomnameNextjshydr
   */
   trait NextWebVitalsMetric extends StObject
@@ -850,9 +861,9 @@ object distSharedLibUtilsMod {
       __obj.asInstanceOf[typings.next.anon.labelcustomnameNextjshydr]
     }
     
-    inline def labelwebvitalnameFCPLCPCL(id: String, name: FCP | LCP | CLS | FID | TTFB | INP, startTime: Double, value: Double): typings.next.anon.labelwebvitalnameFCPLCPCL = {
+    inline def labelwebvitalnameCLSFCPFI(id: String, name: CLS | FCP | FID | INP | LCP | TTFB, startTime: Double, value: Double): typings.next.anon.labelwebvitalnameCLSFCPFI = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = "web-vital", name = name.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.next.anon.labelwebvitalnameFCPLCPCL]
+      __obj.asInstanceOf[typings.next.anon.labelwebvitalnameCLSFCPFI]
     }
   }
   

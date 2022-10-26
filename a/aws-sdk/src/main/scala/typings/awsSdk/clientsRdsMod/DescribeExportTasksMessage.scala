@@ -30,6 +30,11 @@ trait DescribeExportTasksMessage extends StObject {
     * The Amazon Resource Name (ARN) of the snapshot exported to Amazon S3.
     */
   var SourceArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The type of source for the export.
+    */
+  var SourceType: js.UndefOr[ExportSourceType] = js.undefined
 }
 object DescribeExportTasksMessage {
   
@@ -61,5 +66,9 @@ object DescribeExportTasksMessage {
     inline def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    
+    inline def setSourceType(value: ExportSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
   }
 }

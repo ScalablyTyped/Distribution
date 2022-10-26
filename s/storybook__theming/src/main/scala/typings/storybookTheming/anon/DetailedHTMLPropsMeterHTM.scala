@@ -415,6 +415,8 @@ trait DetailedHTMLPropsMeterHTM extends StObject {
   
   var min: js.UndefOr[Double | String] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLMeterElement]] = js.undefined
   
@@ -983,6 +985,10 @@ object DetailedHTMLPropsMeterHTM {
     inline def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLMeterElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

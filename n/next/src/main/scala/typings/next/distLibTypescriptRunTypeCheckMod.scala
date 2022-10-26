@@ -13,6 +13,20 @@ object distLibTypescriptRunTypeCheckMod {
   
   inline def runTypeCheck(ts: TypeofimportedTypescript, baseDir: String, tsConfigPath: String): js.Promise[TypeCheckResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTypeCheck")(ts.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], tsConfigPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TypeCheckResult]]
   inline def runTypeCheck(ts: TypeofimportedTypescript, baseDir: String, tsConfigPath: String, cacheDir: String): js.Promise[TypeCheckResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTypeCheck")(ts.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], tsConfigPath.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TypeCheckResult]]
+  inline def runTypeCheck(
+    ts: TypeofimportedTypescript,
+    baseDir: String,
+    tsConfigPath: String,
+    cacheDir: String,
+    isAppDirEnabled: Boolean
+  ): js.Promise[TypeCheckResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTypeCheck")(ts.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], tsConfigPath.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any], isAppDirEnabled.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TypeCheckResult]]
+  inline def runTypeCheck(
+    ts: TypeofimportedTypescript,
+    baseDir: String,
+    tsConfigPath: String,
+    cacheDir: Unit,
+    isAppDirEnabled: Boolean
+  ): js.Promise[TypeCheckResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTypeCheck")(ts.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], tsConfigPath.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any], isAppDirEnabled.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TypeCheckResult]]
   
   trait TypeCheckResult extends StObject {
     

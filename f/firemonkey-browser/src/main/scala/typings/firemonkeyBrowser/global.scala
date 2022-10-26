@@ -5,10 +5,13 @@ import typings.firemonkeyBrowser.GM.FetchResponse
 import typings.firemonkeyBrowser.GM.Value
 import typings.firemonkeyBrowser.GM.XMLRequest
 import typings.firemonkeyBrowser.anon.AddStyle
+import typings.firemonkeyBrowser.anon.AllowCrossOriginArguments
 import typings.firemonkeyBrowser.anon.Browser
+import typings.firemonkeyBrowser.anon.CloneFunctions
 import typings.firemonkeyBrowser.anon.Image
 import typings.firemonkeyBrowser.anon.Modal
 import typings.std.HTMLElement
+import typings.std.URL
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -103,6 +106,8 @@ object global {
       */
     inline def fetch(url: String): js.Promise[FetchResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FetchResponse]]
     inline def fetch(url: String, init: FetchRequest): js.Promise[FetchResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FetchResponse]]
+    inline def fetch(url: URL): js.Promise[FetchResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FetchResponse]]
+    inline def fetch(url: URL, init: FetchRequest): js.Promise[FetchResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FetchResponse]]
     
     /**
       * Given a defined `@resource`, this method fetches and returns the content of the url
@@ -385,6 +390,39 @@ object global {
   inline def GMXmlHttpRequest_=(
     x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof GM.xmlHttpRequest */ Any
   ): Unit = js.Dynamic.global.updateDynamic("GM_xmlHttpRequest")(x.asInstanceOf[js.Any])
+  
+  /**
+    * This function provides a safe way to take an object defined in a privileged scope and create a structured clone of it in a less-privileged scope
+    * @param obj The object to clone.
+    * @param targetScope The object to attach the object to.
+    * @param options.cloneFunctions if functions should be cloned. Cloned functions have the same semantics as functions exported using exportFunction()
+    * @param options.wrapReflectors if objects reflected from C++, such as DOM objects, should be cloned.
+    * @returns A reference to the cloned object.
+    * @example // object without methods
+    * unsafeWindow.messenger = cloneInto(obj, unsafeWindow);
+    * @example // object with methods
+    * unsafeWindow.messenger = cloneInto(obj, unsafeWindow, {cloneFunctions: true});
+    * @see {@link https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Sharing_objects_with_page_scripts#cloneinto}
+    */
+  inline def cloneInto[T](obj: T, targetScope: js.Object): T = (js.Dynamic.global.applyDynamic("cloneInto")(obj.asInstanceOf[js.Any], targetScope.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cloneInto[T](obj: T, targetScope: js.Object, options: CloneFunctions): T = (js.Dynamic.global.applyDynamic("cloneInto")(obj.asInstanceOf[js.Any], targetScope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  /**
+    * exports content script function to the page script's scope, so the page script can call it.
+    * @param func The function to export.
+    * @param targetScope The object to attach the function to. This does not have to be the global window object: it could be any other object in the target window, or an object created by the caller.
+    * @param options.defineAs determines the name of the function in _targetScope_. If this is omitted, you need to assign the return value of exportFunction() to an object in the target scope.
+    * @param options.allowCrossOriginArguments do not check that arguments to the exported function are subsumed by the caller: this allows the caller to pass objects with a different origin
+    * into the exported function, which can then use its privileged status to make cross-origin requests with them
+    * @returns A function which has been created in the target context.
+    * @example // defines a function, then exports it to a content window
+    * exportFunction(notify, window, {defineAs: 'notify'});
+    * @example // Instead of using defineAs, the script can assign the result of exportFunction to an object in the target scope
+    * window.notify = exportFunction(notify, window);
+    * @see {@link https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Sharing_objects_with_page_scripts#exportfunction}
+    */
+  inline def exportFunction[T](func: T, targetScope: js.Object): T = (js.Dynamic.global.applyDynamic("exportFunction")(func.asInstanceOf[js.Any], targetScope.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def exportFunction[T](func: T, targetScope: js.Object, options: AllowCrossOriginArguments): T = (js.Dynamic.global.applyDynamic("exportFunction")(func.asInstanceOf[js.Any], targetScope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Window object of the content page where the user script is running on.

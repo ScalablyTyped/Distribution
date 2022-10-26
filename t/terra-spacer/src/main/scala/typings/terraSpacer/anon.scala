@@ -281,6 +281,8 @@ object anon {
         largePlussign2 | `small-2` | `small-1` | none | large | medium | small | largePlussign4 | largePlussign3 | largePlussign1
       ] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -843,6 +845,10 @@ object anon {
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -1610,6 +1616,10 @@ object anon {
     
     var marginTop: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: null extends 'large+2' | 'small-2' | 'small-1' | 'none' | 'large' | 'medium' | 'small' | 'large+4' | 'large+3' | 'large+1' | undefined ? react.react.Validator<'large+2' | 'small-2' | 'small-1' | 'none' | 'large' | 'medium' | 'small' | 'large+4' | 'large+3' | 'large+1' | undefined | null | undefined> : undefined extends 'large+2' | 'small-2' | 'small-1' | 'none' | 'large' | 'medium' | 'small' | 'large+4' | 'large+3' | 'large+1' | undefined ? react.react.Validator<'large+2' | 'small-2' | 'small-1' | 'none' | 'large' | 'medium' | 'small' | 'large+4' | 'large+3' | 'large+1' | undefined | null | undefined> : react.react.Validator<'large+2' | 'small-2' | 'small-1' | 'none' | 'large' | 'medium' | 'small' | 'large+4' | 'large+3' | 'large+1' | undefined> */ js.Any
+      ] = js.undefined
+    
+    var nonce: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
       ] = js.undefined
     
     var onAbort: js.UndefOr[
@@ -2518,6 +2528,12 @@ object anon {
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      
+      inline def setNonce(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+      ): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(
         value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | null | undefined> : undefined extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | null | undefined> : react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined> */ js.Any

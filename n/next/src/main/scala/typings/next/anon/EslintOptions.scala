@@ -10,8 +10,6 @@ trait EslintOptions extends StObject {
   
   var formatter: js.UndefOr[String | Null] = js.undefined
   
-  var hasAppDir: Boolean
-  
   var lintDuringBuild: js.UndefOr[Boolean] = js.undefined
   
   var maxWarnings: js.UndefOr[Double] = js.undefined
@@ -24,8 +22,8 @@ trait EslintOptions extends StObject {
 }
 object EslintOptions {
   
-  inline def apply(hasAppDir: Boolean): EslintOptions = {
-    val __obj = js.Dynamic.literal(hasAppDir = hasAppDir.asInstanceOf[js.Any])
+  inline def apply(): EslintOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EslintOptions]
   }
   
@@ -40,8 +38,6 @@ object EslintOptions {
     inline def setFormatterNull: Self = StObject.set(x, "formatter", null)
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
-    
-    inline def setHasAppDir(value: Boolean): Self = StObject.set(x, "hasAppDir", value.asInstanceOf[js.Any])
     
     inline def setLintDuringBuild(value: Boolean): Self = StObject.set(x, "lintDuringBuild", value.asInstanceOf[js.Any])
     

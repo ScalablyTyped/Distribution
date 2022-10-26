@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-svelte-svg"
-version := "1.0-dt-20220210Z-4793b5"
+version := "1.0-dt-20221025Z-4793b5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

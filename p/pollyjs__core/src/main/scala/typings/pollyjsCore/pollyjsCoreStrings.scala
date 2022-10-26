@@ -47,6 +47,10 @@ object pollyjsCoreStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
+  sealed trait identify extends StObject
+  inline def identify: identify = "identify".asInstanceOf[identify]
+  
+  @js.native
   sealed trait intercept
     extends StObject
        with ACTION

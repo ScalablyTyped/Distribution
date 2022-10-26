@@ -1,5 +1,6 @@
 package typings.next.anon
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.next.distSharedLibUtilsMod.NextWebVitalsMetric
 import typings.next.nextStrings.`NextDotjs-hydration`
 import typings.next.nextStrings.`NextDotjs-render`
@@ -9,10 +10,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  label :'custom',   name :'Next.js-hydration' | 'Next.js-route-change-to-render' | 'Next.js-render'} & {  id :string,   startTime :number,   value :number} */
+/* Inlined {  label :'custom',   name :'Next.js-hydration' | 'Next.js-route-change-to-render' | 'Next.js-render'} & {  id :string,   startTime :number,   value :number,   attribution :{[key: string] : unknown} | undefined} */
 trait labelcustomnameNextjshydr
   extends StObject
      with NextWebVitalsMetric {
+  
+  var attribution: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var id: String
   
@@ -37,6 +40,10 @@ object labelcustomnameNextjshydr {
   }
   
   extension [Self <: labelcustomnameNextjshydr](x: Self) {
+    
+    inline def setAttribution(value: StringDictionary[Any]): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

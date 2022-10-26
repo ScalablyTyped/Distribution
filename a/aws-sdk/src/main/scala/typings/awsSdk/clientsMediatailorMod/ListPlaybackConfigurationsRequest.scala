@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPlaybackConfigurationsRequest extends StObject {
   
   /**
-    * Maximum number of records to return.
+    * The maximum number of playback configurations that you want MediaTailor to return in response to the current request. If there are more than MaxResults playback configurations, use the value of NextToken in the response to get the next page of results.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsMediatailorMod.MaxResults] = js.undefined
   
   /**
-    * Pagination token returned by the GET list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
+    * Pagination token returned by the list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
     */
   var NextToken: js.UndefOr[string] = js.undefined
 }

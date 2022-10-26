@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Config extends StObject {
   
-  var config: typings.next.distBuildUtilsMod.AppConfig
+  var config: js.UndefOr[typings.next.distBuildUtilsMod.AppConfig] = js.undefined
   
   var generateStaticParams: js.UndefOr[Any] = js.undefined
   
@@ -25,14 +25,16 @@ trait Config extends StObject {
 }
 object Config {
   
-  inline def apply(config: typings.next.distBuildUtilsMod.AppConfig, segmentPath: String): Config = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], segmentPath = segmentPath.asInstanceOf[js.Any])
+  inline def apply(segmentPath: String): Config = {
+    val __obj = js.Dynamic.literal(segmentPath = segmentPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
   extension [Self <: Config](x: Self) {
     
     inline def setConfig(value: typings.next.distBuildUtilsMod.AppConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     inline def setGenerateStaticParams(value: Any): Self = StObject.set(x, "generateStaticParams", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetChannelPolicyRequest extends StObject {
   
   /**
-    * The identifier for the channel you are working on.
+    * The name of the channel associated with this Channel Policy.
     */
   var ChannelName: string
 }

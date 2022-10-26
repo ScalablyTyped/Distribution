@@ -4,6 +4,7 @@ import typings.next.distServerApiUtilsMod.ApiPreviewProps
 import typings.next.distServerBaseHttpMod.BaseNextRequest
 import typings.next.distServerBaseHttpMod.BaseNextResponse
 import typings.next.typesMod.PreviewData
+import typings.next.typesMod.SizeLimit
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
@@ -54,8 +55,7 @@ object distServerApiUtilsNodeMod {
     page: String
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("apiResolver")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], query.asInstanceOf[js.Any], resolverModule.asInstanceOf[js.Any], apiContext.asInstanceOf[js.Any], propagateError.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def parseBody(req: IncomingMessage, limit: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-  inline def parseBody(req: IncomingMessage, limit: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def parseBody(req: IncomingMessage, limit: SizeLimit): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseBody")(req.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   inline def tryGetPreviewData(req: BaseNextRequest[Any], res: BaseNextResponse[Any], options: ApiPreviewProps): PreviewData = (^.asInstanceOf[js.Dynamic].applyDynamic("tryGetPreviewData")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PreviewData]
   inline def tryGetPreviewData(req: BaseNextRequest[Any], res: ServerResponse[IncomingMessage], options: ApiPreviewProps): PreviewData = (^.asInstanceOf[js.Dynamic].applyDynamic("tryGetPreviewData")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PreviewData]

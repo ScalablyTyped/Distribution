@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "then-request"
-version := "6.0.2-3b2856"
+version := "6.0.2-ee68b5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "http-basic" % "8.1.3-54010d",
   "org.scalablytyped" %%% "http-response-object" % "3.0.2-5301b7",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
-  "org.scalablytyped" %%% "promise" % "8.2.0-960f7c",
+  "org.scalablytyped" %%% "promise" % "8.3.0-842797",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

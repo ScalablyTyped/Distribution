@@ -14,8 +14,6 @@ object distServerUtilsMod {
   
   inline def isBlockedPage(pathname: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockedPage")(pathname.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isTargetLikeServerless(target: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTargetLikeServerless")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
   @JSImport("next/dist/server/utils", "shouldUseReactRoot")
   @js.native
   val shouldUseReactRoot: Boolean = js.native

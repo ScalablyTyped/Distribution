@@ -12,7 +12,7 @@ trait Detectors extends StObject {
   
   def dec(): js.Promise[Decode]
   
-  val defaultEncoderOptions: `2`
+  val defaultEncoderOptions: `1`
   
   val detectors: js.Array[js.RegExp]
   
@@ -27,7 +27,7 @@ object Detectors {
   inline def apply(
     autoOptimize: Option,
     dec: () => js.Promise[Decode],
-    defaultEncoderOptions: `2`,
+    defaultEncoderOptions: `1`,
     detectors: js.Array[js.RegExp],
     enc: () => js.Promise[Encode]
   ): Detectors = {
@@ -42,7 +42,7 @@ object Detectors {
     
     inline def setDec(value: () => js.Promise[Decode]): Self = StObject.set(x, "dec", js.Any.fromFunction0(value))
     
-    inline def setDefaultEncoderOptions(value: `2`): Self = StObject.set(x, "defaultEncoderOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultEncoderOptions(value: `1`): Self = StObject.set(x, "defaultEncoderOptions", value.asInstanceOf[js.Any])
     
     inline def setDetectors(value: js.Array[js.RegExp]): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
     

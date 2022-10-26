@@ -427,6 +427,8 @@ trait DetailedHTMLPropsWebViewH extends StObject {
   
   var nodeintegration: js.UndefOr[Boolean] = js.undefined
   
+  var nonce: js.UndefOr[String] = js.undefined
+  
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLWebViewElement]] = js.undefined
   
@@ -1027,6 +1029,10 @@ object DetailedHTMLPropsWebViewH {
     inline def setNodeintegration(value: Boolean): Self = StObject.set(x, "nodeintegration", value.asInstanceOf[js.Any])
     
     inline def setNodeintegrationUndefined: Self = StObject.set(x, "nodeintegration", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setOnAbort(value: SyntheticEvent[HTMLWebViewElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     

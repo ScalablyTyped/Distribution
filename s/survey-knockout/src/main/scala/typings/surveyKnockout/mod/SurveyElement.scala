@@ -117,7 +117,7 @@ open class SurveyElement[E] protected ()
   
   var isContentElement: Boolean = js.native
   
-  /* protected */ def isDefaultV2Theme: Boolean = js.native
+  def isDefaultV2Theme: Boolean = js.native
   
   var isDragMe: Boolean = js.native
   

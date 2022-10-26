@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__core"
-version := "6.5.13-0a92d3"
+version := "6.5.13-ec4825"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -25,21 +25,21 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
   "org.scalablytyped" %%% "re2" % "1.17.7-5ddb3b",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221024Z-9c1cd5",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "schema-utils" % "4.0.0-1e0b25",
   "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-c7a026",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "storybook__addons" % "6.5.13-7ced10",
-  "org.scalablytyped" %%% "storybook__api" % "6.5.13-966e73",
+  "org.scalablytyped" %%% "storybook__addons" % "6.5.13-cf860c",
+  "org.scalablytyped" %%% "storybook__api" % "6.5.13-902322",
   "org.scalablytyped" %%% "storybook__channels" % "6.5.13-52db1d",
-  "org.scalablytyped" %%% "storybook__client-api" % "6.5.13-6e6f04",
-  "org.scalablytyped" %%% "storybook__core-client" % "6.5.13-1c78b5",
+  "org.scalablytyped" %%% "storybook__client-api" % "6.5.13-5d87ad",
+  "org.scalablytyped" %%% "storybook__core-client" % "6.5.13-8b72ae",
   "org.scalablytyped" %%% "storybook__core-common" % "6.5.13-1e9271",
-  "org.scalablytyped" %%% "storybook__router" % "6.5.13-6f7d0b",
-  "org.scalablytyped" %%% "storybook__store" % "6.5.13-a6e825",
-  "org.scalablytyped" %%% "storybook__theming" % "6.5.13-19baf3",
-  "org.scalablytyped" %%% "storybook__ui" % "6.5.13-df6191",
+  "org.scalablytyped" %%% "storybook__router" % "6.5.13-a9fc86",
+  "org.scalablytyped" %%% "storybook__store" % "6.5.13-e5225f",
+  "org.scalablytyped" %%% "storybook__theming" % "6.5.13-275b12",
+  "org.scalablytyped" %%% "storybook__ui" % "6.5.13-4b9dc2",
   "org.scalablytyped" %%% "synchronous-promise" % "2.0.16-8f4fff",
   "org.scalablytyped" %%% "tapable" % "2.2.1-52b605",
   "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",

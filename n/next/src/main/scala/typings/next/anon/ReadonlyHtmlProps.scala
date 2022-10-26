@@ -1,5 +1,6 @@
 package typings.next.anon
 
+import typings.next.distBuildWebpackPluginsFontLoaderManifestPluginMod.FontLoaderManifest
 import typings.next.distServerFontUtilsMod.FontConfig
 import typings.next.distSharedLibUtilsMod.NEXT_DATA
 import typings.next.nextBooleans.`false`
@@ -34,6 +35,8 @@ trait ReadonlyHtmlProps extends StObject {
   val docComponentsRendered: Head
   
   val dynamicImports: js.Array[String]
+  
+  val fontLoaderManifest: js.UndefOr[FontLoaderManifest] = js.undefined
   
   val hasConcurrentFeatures: js.UndefOr[Boolean] = js.undefined
   
@@ -117,6 +120,10 @@ object ReadonlyHtmlProps {
     inline def setDynamicImports(value: js.Array[String]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
     
     inline def setDynamicImportsVarargs(value: String*): Self = StObject.set(x, "dynamicImports", js.Array(value*))
+    
+    inline def setFontLoaderManifest(value: FontLoaderManifest): Self = StObject.set(x, "fontLoaderManifest", value.asInstanceOf[js.Any])
+    
+    inline def setFontLoaderManifestUndefined: Self = StObject.set(x, "fontLoaderManifest", js.undefined)
     
     inline def setHasConcurrentFeatures(value: Boolean): Self = StObject.set(x, "hasConcurrentFeatures", value.asInstanceOf[js.Any])
     

@@ -54,14 +54,17 @@ object srcOptionsMod {
     var inject: (Boolean | (js.Function1[/* htmlWebpackPlugin */ Any, Boolean])) & (js.UndefOr[Boolean | (js.Function1[/* htmlWebpackPlugin */ Any, Boolean])])
     
     /** our source logo - can be png or svg (required) */
-    var logo: String
+    var logo: String | js.Array[String]
+    
+    /** our maskable source logo - can be png or svg (optional) */
+    var logoMaskable: (String | js.Array[String]) & (js.UndefOr[String | js.Array[String]])
     
     /**
       * Web app manifests are part of a collection of web technologies called progressive web apps (PWAs), 
       * which are websites that can be installed to a device’s homescreen without an app store.
       * @see https://developer.mozilla.org/en-US/docs/Web/Manifest
       * 
-      * The manifest option allows to provide a filepath to a base manifest.json file or a base manifest configuration
+      * The manifest option allows to provide a filepath to a base manifest.webmanifest file or a base manifest configuration
       */
     var manifest: (String | StringDictionary[Any]) & (js.UndefOr[String | StringDictionary[Any]])
     
@@ -99,11 +102,12 @@ object srcOptionsMod {
       cache: Boolean & js.UndefOr[Boolean],
       favicons: PartialFaviconOptions & js.UndefOr[PartialFaviconOptions],
       inject: (Boolean | (js.Function1[/* htmlWebpackPlugin */ Any, Boolean])) & (js.UndefOr[Boolean | (js.Function1[/* htmlWebpackPlugin */ Any, Boolean])]),
-      logo: String,
+      logo: String | js.Array[String],
+      logoMaskable: (String | js.Array[String]) & (js.UndefOr[String | js.Array[String]]),
       manifest: (String | StringDictionary[Any]) & (js.UndefOr[String | StringDictionary[Any]]),
       prefix: String & js.UndefOr[String]
     ): FaviconWebpackPlugionInternalOptions = {
-      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], favicons = favicons.asInstanceOf[js.Any], inject = inject.asInstanceOf[js.Any], logo = logo.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], favicons = favicons.asInstanceOf[js.Any], inject = inject.asInstanceOf[js.Any], logo = logo.asInstanceOf[js.Any], logoMaskable = logoMaskable.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[FaviconWebpackPlugionInternalOptions]
     }
     
@@ -121,7 +125,11 @@ object srcOptionsMod {
         value: (Boolean | (js.Function1[/* htmlWebpackPlugin */ Any, Boolean])) & (js.UndefOr[Boolean | (js.Function1[/* htmlWebpackPlugin */ Any, Boolean])])
       ): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: String | js.Array[String]): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      
+      inline def setLogoMaskable(value: (String | js.Array[String]) & (js.UndefOr[String | js.Array[String]])): Self = StObject.set(x, "logoMaskable", value.asInstanceOf[js.Any])
+      
+      inline def setLogoVarargs(value: String*): Self = StObject.set(x, "logo", js.Array(value*))
       
       inline def setManifest(value: (String | StringDictionary[Any]) & (js.UndefOr[String | StringDictionary[Any]])): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
@@ -183,14 +191,17 @@ object srcOptionsMod {
     var inject: js.UndefOr[Boolean | (js.Function1[/* htmlWebpackPlugin */ Any, Boolean])] = js.undefined
     
     /** our source logo - can be png or svg (required) */
-    var logo: String
+    var logo: String | js.Array[String]
+    
+    /** our maskable source logo - can be png or svg (optional) */
+    var logoMaskable: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Web app manifests are part of a collection of web technologies called progressive web apps (PWAs), 
       * which are websites that can be installed to a device’s homescreen without an app store.
       * @see https://developer.mozilla.org/en-US/docs/Web/Manifest
       * 
-      * The manifest option allows to provide a filepath to a base manifest.json file or a base manifest configuration
+      * The manifest option allows to provide a filepath to a base manifest.webmanifest file or a base manifest configuration
       */
     var manifest: js.UndefOr[String | StringDictionary[Any]] = js.undefined
     
@@ -224,7 +235,7 @@ object srcOptionsMod {
   }
   object FaviconWebpackPlugionOptions {
     
-    inline def apply(logo: String): FaviconWebpackPlugionOptions = {
+    inline def apply(logo: String | js.Array[String]): FaviconWebpackPlugionOptions = {
       val __obj = js.Dynamic.literal(logo = logo.asInstanceOf[js.Any])
       __obj.asInstanceOf[FaviconWebpackPlugionOptions]
     }
@@ -249,7 +260,15 @@ object srcOptionsMod {
       
       inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: String | js.Array[String]): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      
+      inline def setLogoMaskable(value: String | js.Array[String]): Self = StObject.set(x, "logoMaskable", value.asInstanceOf[js.Any])
+      
+      inline def setLogoMaskableUndefined: Self = StObject.set(x, "logoMaskable", js.undefined)
+      
+      inline def setLogoMaskableVarargs(value: String*): Self = StObject.set(x, "logoMaskable", js.Array(value*))
+      
+      inline def setLogoVarargs(value: String*): Self = StObject.set(x, "logo", js.Array(value*))
       
       inline def setManifest(value: String | StringDictionary[Any]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       

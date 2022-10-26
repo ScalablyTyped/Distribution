@@ -348,4 +348,22 @@ object libPlatformWebSessionManagerSessionManagerMod {
     /** User agent which created sessions being managed. */
     var userAgent: UserAgent = js.native
   }
+  /* static members */
+  object SessionManager {
+    
+    @JSImport("sip.js/lib/platform/web/session-manager/session-manager", "SessionManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Strip properties with undefined values from options.
+      * This is a work around while waiting for missing vs undefined to be addressed (or not)...
+      * https://github.com/Microsoft/TypeScript/issues/13195
+      * @param options - Options to reduce
+      */
+    @JSImport("sip.js/lib/platform/web/session-manager/session-manager", "SessionManager.stripUndefinedProperties")
+    @js.native
+    def stripUndefinedProperties: Any = js.native
+    inline def stripUndefinedProperties_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
+  }
 }

@@ -1,5 +1,6 @@
 package typings.next
 
+import typings.next.anon.ReadonlyImageConfig
 import typings.next.nextStrings.akamai
 import typings.next.nextStrings.cloudinary
 import typings.next.nextStrings.custom
@@ -39,6 +40,8 @@ object distSharedLibImageConfigMod {
     var imageSizes: js.UndefOr[js.Array[Double]] = js.undefined
     
     var loader: js.UndefOr[LoaderValue] = js.undefined
+    
+    var loaderFile: js.UndefOr[String] = js.undefined
     
     var minimumCacheTTL: js.UndefOr[Double] = js.undefined
     
@@ -95,6 +98,10 @@ object distSharedLibImageConfigMod {
       
       inline def setLoader(value: LoaderValue): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
+      inline def setLoaderFile(value: String): Self = StObject.set(x, "loaderFile", value.asInstanceOf[js.Any])
+      
+      inline def setLoaderFileUndefined: Self = StObject.set(x, "loaderFile", js.undefined)
+      
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
       inline def setMinimumCacheTTL(value: Double): Self = StObject.set(x, "minimumCacheTTL", value.asInstanceOf[js.Any])
@@ -142,13 +149,16 @@ object distSharedLibImageConfigMod {
     /** @see [Image sizing documentation](https://nextjs.org/docs/basic-features/image-optimization#image-sizing) */
     var imageSizes: js.Array[Double]
     
-    /** @see [Image loaders configuration](https://nextjs.org/docs/basic-features/image-optimization#loaders) */
+    /** @see [Image loaders configuration](https://nextjs.org/docs/api-reference/next/legacy/image#loader) */
     var loader: LoaderValue
+    
+    /** @see [Image loader configuration](https://nextjs.org/docs/api-reference/next/image#loader-configuration) */
+    var loaderFile: String
     
     /** @see [Cache behavior](https://nextjs.org/docs/api-reference/next/image#caching-behavior) */
     var minimumCacheTTL: Double
     
-    /** @see [Image loader configuration](https://nextjs.org/docs/api-reference/next/image#loader-configuration) */
+    /** @see [Image loader configuration](https://nextjs.org/docs/api-reference/next/legacy/image#loader-configuration) */
     var path: String
     
     /** @see [Remote Patterns](https://nextjs.org/docs/api-reference/next/image#remote-patterns) */
@@ -168,12 +178,13 @@ object distSharedLibImageConfigMod {
       formats: js.Array[ImageFormat],
       imageSizes: js.Array[Double],
       loader: LoaderValue,
+      loaderFile: String,
       minimumCacheTTL: Double,
       path: String,
       remotePatterns: js.Array[RemotePattern],
       unoptimized: Boolean
     ): ImageConfigComplete = {
-      val __obj = js.Dynamic.literal(contentSecurityPolicy = contentSecurityPolicy.asInstanceOf[js.Any], dangerouslyAllowSVG = dangerouslyAllowSVG.asInstanceOf[js.Any], deviceSizes = deviceSizes.asInstanceOf[js.Any], disableStaticImages = disableStaticImages.asInstanceOf[js.Any], domains = domains.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], imageSizes = imageSizes.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], minimumCacheTTL = minimumCacheTTL.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], remotePatterns = remotePatterns.asInstanceOf[js.Any], unoptimized = unoptimized.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(contentSecurityPolicy = contentSecurityPolicy.asInstanceOf[js.Any], dangerouslyAllowSVG = dangerouslyAllowSVG.asInstanceOf[js.Any], deviceSizes = deviceSizes.asInstanceOf[js.Any], disableStaticImages = disableStaticImages.asInstanceOf[js.Any], domains = domains.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], imageSizes = imageSizes.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], loaderFile = loaderFile.asInstanceOf[js.Any], minimumCacheTTL = minimumCacheTTL.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], remotePatterns = remotePatterns.asInstanceOf[js.Any], unoptimized = unoptimized.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageConfigComplete]
     }
     
@@ -203,6 +214,8 @@ object distSharedLibImageConfigMod {
       
       inline def setLoader(value: LoaderValue): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
+      inline def setLoaderFile(value: String): Self = StObject.set(x, "loaderFile", value.asInstanceOf[js.Any])
+      
       inline def setMinimumCacheTTL(value: Double): Self = StObject.set(x, "minimumCacheTTL", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
@@ -225,6 +238,52 @@ object distSharedLibImageConfigMod {
     inline def imageSlashavif: typings.next.nextStrings.imageSlashavif = "image/avif".asInstanceOf[typings.next.nextStrings.imageSlashavif]
     
     inline def imageSlashwebp: typings.next.nextStrings.imageSlashwebp = "image/webp".asInstanceOf[typings.next.nextStrings.imageSlashwebp]
+  }
+  
+  trait ImageLoaderProps extends StObject {
+    
+    var quality: js.UndefOr[Double] = js.undefined
+    
+    var src: String
+    
+    var width: Double
+  }
+  object ImageLoaderProps {
+    
+    inline def apply(src: String, width: Double): ImageLoaderProps = {
+      val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ImageLoaderProps]
+    }
+    
+    extension [Self <: ImageLoaderProps](x: Self) {
+      
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ImageLoaderPropsWithConfig
+    extends StObject
+       with ImageLoaderProps {
+    
+    var config: ReadonlyImageConfig
+  }
+  object ImageLoaderPropsWithConfig {
+    
+    inline def apply(config: ReadonlyImageConfig, src: String, width: Double): ImageLoaderPropsWithConfig = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ImageLoaderPropsWithConfig]
+    }
+    
+    extension [Self <: ImageLoaderPropsWithConfig](x: Self) {
+      
+      inline def setConfig(value: ReadonlyImageConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Rewritten from type alias, can be one of: 

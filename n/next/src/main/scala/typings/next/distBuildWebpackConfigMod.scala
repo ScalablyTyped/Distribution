@@ -1,6 +1,6 @@
 package typings.next
 
-import typings.next.anon.CompilerType
+import typings.next.anon.BuildId
 import typings.next.anon.Dev
 import typings.next.anon.EdgeRuntime
 import typings.next.anon.IsEsm
@@ -16,7 +16,7 @@ object distBuildWebpackConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(dir: String, param1: CompilerType): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
+  inline def default(dir: String, param1: BuildId): js.Promise[Configuration] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Configuration]]
   
   object NODE_BASE_ESM_RESOLVE_OPTIONS {
     
@@ -406,6 +406,8 @@ object distBuildWebpackConfigMod {
     targetLoader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.RuleSetUseItem */ Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachReactRefresh")(webpackConfig.asInstanceOf[js.Any], targetLoader.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def getBabelConfigFile(dir: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBabelConfigFile")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  
   inline def getDefineEnv(param0: Dev): EdgeRuntime = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefineEnv")(param0.asInstanceOf[js.Any]).asInstanceOf[EdgeRuntime]
   
   @JSImport("next/dist/build/webpack-config", "nextImageLoaderRegex")
@@ -413,11 +415,12 @@ object distBuildWebpackConfigMod {
   val nextImageLoaderRegex: js.RegExp = js.native
   
   inline def resolveExternal(
-    appDir: String,
+    dir: String,
     esmExternalsConfig: /* import warning: importer.ImportType#apply Failed type conversion: next.next/dist/server/config-shared.NextConfigComplete['experimental']['esmExternals'] */ js.Any,
     context: String,
     request: String,
     isEsmRequested: Boolean,
+    hasAppDir: Boolean,
     getResolve: js.Function1[
       /* options */ Any, 
       js.Function2[
@@ -432,5 +435,5 @@ object distBuildWebpackConfigMod {
     nodeResolveOptions: js.UndefOr[Any],
     baseEsmResolveOptions: js.UndefOr[Any],
     baseResolveOptions: js.UndefOr[Any]
-  ): js.Promise[IsEsm | LocalRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveExternal")(appDir.asInstanceOf[js.Any], esmExternalsConfig.asInstanceOf[js.Any], context.asInstanceOf[js.Any], request.asInstanceOf[js.Any], isEsmRequested.asInstanceOf[js.Any], getResolve.asInstanceOf[js.Any], isLocalCallback.asInstanceOf[js.Any], baseResolveCheck.asInstanceOf[js.Any], esmResolveOptions.asInstanceOf[js.Any], nodeResolveOptions.asInstanceOf[js.Any], baseEsmResolveOptions.asInstanceOf[js.Any], baseResolveOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IsEsm | LocalRes]]
+  ): js.Promise[IsEsm | LocalRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveExternal")(dir.asInstanceOf[js.Any], esmExternalsConfig.asInstanceOf[js.Any], context.asInstanceOf[js.Any], request.asInstanceOf[js.Any], isEsmRequested.asInstanceOf[js.Any], hasAppDir.asInstanceOf[js.Any], getResolve.asInstanceOf[js.Any], isLocalCallback.asInstanceOf[js.Any], baseResolveCheck.asInstanceOf[js.Any], esmResolveOptions.asInstanceOf[js.Any], nodeResolveOptions.asInstanceOf[js.Any], baseEsmResolveOptions.asInstanceOf[js.Any], baseResolveOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IsEsm | LocalRes]]
 }

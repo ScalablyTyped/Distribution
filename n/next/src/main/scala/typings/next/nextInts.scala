@@ -1,8 +1,8 @@
 package typings.next
 
+import typings.next.distEsmServerLibSquooshMozjpegMozjpegEncMod.MozJpegColorSpace
 import typings.next.distServerDevOnDemandEntryHandlerMod.EntryTypes
 import typings.next.distServerLibSquooshAvifAvifEncMod.AVIFTune
-import typings.next.distServerLibSquooshMozjpegMozjpegEncMod.MozJpegColorSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,16 +17,20 @@ object nextInts {
   sealed trait `0`
     extends StObject
        with AVIFTune
+       with typings.next.distEsmServerLibSquooshAvifAvifEncMod.AVIFTune
        with EntryTypes
        with MozJpegColorSpace
+       with typings.next.distServerLibSquooshMozjpegMozjpegEncMod.MozJpegColorSpace
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
     extends StObject
        with AVIFTune
+       with typings.next.distEsmServerLibSquooshAvifAvifEncMod.AVIFTune
        with EntryTypes
        with MozJpegColorSpace
+       with typings.next.distServerLibSquooshMozjpegMozjpegEncMod.MozJpegColorSpace
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
@@ -37,6 +41,7 @@ object nextInts {
   sealed trait `2`
     extends StObject
        with AVIFTune
+       with typings.next.distEsmServerLibSquooshAvifAvifEncMod.AVIFTune
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native

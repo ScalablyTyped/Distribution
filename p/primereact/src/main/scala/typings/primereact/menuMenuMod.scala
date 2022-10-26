@@ -291,6 +291,8 @@ object menuMenuMod {
         ]
       ] = js.undefined
     
+    var nonce: js.UndefOr[String] = js.undefined
+    
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
@@ -841,6 +843,10 @@ object menuMenuMod {
       inline def setModelVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any)*
       ): Self = StObject.set(x, "model", js.Array(value*))
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

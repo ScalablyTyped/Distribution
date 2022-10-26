@@ -27,7 +27,7 @@ trait UpdateSourceLocationRequest extends StObject {
   var SegmentDeliveryConfigurations: js.UndefOr[listOfSegmentDeliveryConfiguration] = js.undefined
   
   /**
-    * The identifier for the source location you are working on.
+    * The name of the source location.
     */
   var SourceLocationName: string
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for promise
 
-Typings are for version 8.2.0
+Typings are for version 8.3.0
 
 ## Library description:
 Bare bones Promises/A+ implementation
