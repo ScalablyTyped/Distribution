@@ -113,7 +113,7 @@ object babylonjsSceneAugmentingMod {
           /* enableDistantPicking */ Boolean, 
           typings.babylonjs.cullingRayMod.Ray
         ]
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -121,7 +121,7 @@ object babylonjsSceneAugmentingMod {
           typings.babylonjs.cullingRayMod.Ray
         ],
       predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean]
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -130,7 +130,7 @@ object babylonjsSceneAugmentingMod {
         ],
       predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Boolean
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -140,7 +140,7 @@ object babylonjsSceneAugmentingMod {
       predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -151,7 +151,7 @@ object babylonjsSceneAugmentingMod {
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -162,7 +162,7 @@ object babylonjsSceneAugmentingMod {
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -172,7 +172,7 @@ object babylonjsSceneAugmentingMod {
       predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -183,7 +183,7 @@ object babylonjsSceneAugmentingMod {
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -194,7 +194,7 @@ object babylonjsSceneAugmentingMod {
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -203,7 +203,7 @@ object babylonjsSceneAugmentingMod {
         ],
       predicate: Unit,
       fastCheck: Boolean
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -213,7 +213,7 @@ object babylonjsSceneAugmentingMod {
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -224,7 +224,7 @@ object babylonjsSceneAugmentingMod {
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -235,7 +235,7 @@ object babylonjsSceneAugmentingMod {
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -245,7 +245,7 @@ object babylonjsSceneAugmentingMod {
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -256,7 +256,7 @@ object babylonjsSceneAugmentingMod {
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
@@ -267,7 +267,7 @@ object babylonjsSceneAugmentingMod {
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = js.native
     
     /** @internal */
     def _internalPickForMesh(

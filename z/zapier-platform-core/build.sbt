@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zapier-platform-core"
-version := "12.1.0-2c918e"
+version := "12.2.0-74e133"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

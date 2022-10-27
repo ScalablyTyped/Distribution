@@ -20,6 +20,15 @@ object enginesWebGPUWebgpuTintWASMMod {
   /* static members */
   object WebGPUTintWASM {
     
+    @JSImport("babylonjs/Engines/WebGPU/webgpuTintWASM", "WebGPUTintWASM")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Engines/WebGPU/webgpuTintWASM", "WebGPUTintWASM.ShowWGSLShaderCode")
+    @js.native
+    def ShowWGSLShaderCode: Boolean = js.native
+    inline def ShowWGSLShaderCode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShowWGSLShaderCode")(x.asInstanceOf[js.Any])
+    
     @JSImport("babylonjs/Engines/WebGPU/webgpuTintWASM", "WebGPUTintWASM._TWgslDefaultOptions")
     @js.native
     val _TWgslDefaultOptions: Any = js.native

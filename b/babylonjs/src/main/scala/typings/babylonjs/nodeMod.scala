@@ -11,6 +11,7 @@ import typings.babylonjs.anon.MaxMin
 import typings.babylonjs.behaviorsBehaviorMod.Behavior
 import typings.babylonjs.behaviorsBehaviorMod.IBehaviorAware
 import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.iaccessibilitytagMod.IAccessibilityTag
 import typings.babylonjs.mathsMathDotvectorMod.Matrix
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.miscIInspectableMod.IInspectable
@@ -35,6 +36,8 @@ object nodeMod {
       */
     def this(name: String) = this()
     def this(name: String, scene: Nullable[Scene]) = this()
+    
+    /* protected */ var _accessibilityTag: Nullable[IAccessibilityTag] = js.native
     
     /** @internal */
     def _addToSceneRootNodes(): Unit = js.native
@@ -151,6 +154,12 @@ object nodeMod {
     
     /** @internal */
     var _worldMatrixDeterminantIsDirty: Boolean = js.native
+    
+    def accessibilityTag: Nullable[IAccessibilityTag] = js.native
+    /**
+      * Gets or sets the accessibility tag to describe the node for accessibility purpose.
+      */
+    def accessibilityTag_=(value: Nullable[IAccessibilityTag]): Unit = js.native
     
     /**
       * Attach a behavior
@@ -444,6 +453,8 @@ object nodeMod {
       * Gets or sets the name of the node
       */
     var name: String = js.native
+    
+    var onAccessibilityTagChangedObservable: Observable[Nullable[IAccessibilityTag]] = js.native
     
     /**
       * An event triggered when the node is cloned

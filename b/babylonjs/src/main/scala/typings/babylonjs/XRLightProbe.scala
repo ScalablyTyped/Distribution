@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.std.Event
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +11,9 @@ trait XRLightProbe
   extends StObject
      with EventTarget {
   
-  var onreflectionchange: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREventHandler */ Any = js.native
+  def onreflectionchange(evt: Event): Any = js.native
+  @JSName("onreflectionchange")
+  var onreflectionchange_Original: XREventHandler = js.native
   
   val probeSpace: XRSpace = js.native
 }

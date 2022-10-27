@@ -1,5 +1,7 @@
 package typings.babylonjs
 
+import typings.babylonjs.iaccessibilitytagMod.AcceptedARIA
+import typings.babylonjs.iaccessibilitytagMod.AcceptedRole
 import typings.babylonjs.xRFeaturesWebXRDOMOverlayMod.WebXRDomOverlayType
 import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerComponentStateType
 import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerComponentType
@@ -150,6 +152,20 @@ object babylonjsStrings {
   inline def additive: additive = "additive".asInstanceOf[additive]
   
   @js.native
+  sealed trait alert
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def alert: alert = "alert".asInstanceOf[alert]
+  
+  @js.native
+  sealed trait alertdialog
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def alertdialog: alertdialog = "alertdialog".asInstanceOf[alertdialog]
+  
+  @js.native
   sealed trait all
     extends StObject
        with GPUTextureAspect
@@ -166,6 +182,342 @@ object babylonjsStrings {
     extends StObject
        with GPUCompareFunction
   inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait application
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def application: application = "application".asInstanceOf[application]
+  
+  @js.native
+  sealed trait `aria-activedescendant`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
+  
+  @js.native
+  sealed trait `aria-atomic`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-atomic`: `aria-atomic` = "aria-atomic".asInstanceOf[`aria-atomic`]
+  
+  @js.native
+  sealed trait `aria-autocomplete`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-autocomplete`: `aria-autocomplete` = "aria-autocomplete".asInstanceOf[`aria-autocomplete`]
+  
+  @js.native
+  sealed trait `aria-busy`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-busy`: `aria-busy` = "aria-busy".asInstanceOf[`aria-busy`]
+  
+  @js.native
+  sealed trait `aria-checked`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
+  
+  @js.native
+  sealed trait `aria-colcount`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-colcount`: `aria-colcount` = "aria-colcount".asInstanceOf[`aria-colcount`]
+  
+  @js.native
+  sealed trait `aria-colindex`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-colindex`: `aria-colindex` = "aria-colindex".asInstanceOf[`aria-colindex`]
+  
+  @js.native
+  sealed trait `aria-colspan`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-colspan`: `aria-colspan` = "aria-colspan".asInstanceOf[`aria-colspan`]
+  
+  @js.native
+  sealed trait `aria-controls`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
+  
+  @js.native
+  sealed trait `aria-describedby`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
+  
+  @js.native
+  sealed trait `aria-description`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-description`: `aria-description` = "aria-description".asInstanceOf[`aria-description`]
+  
+  @js.native
+  sealed trait `aria-details`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-details`: `aria-details` = "aria-details".asInstanceOf[`aria-details`]
+  
+  @js.native
+  sealed trait `aria-disabled`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
+  
+  @js.native
+  sealed trait `aria-dropeffect`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-dropeffect`: `aria-dropeffect` = "aria-dropeffect".asInstanceOf[`aria-dropeffect`]
+  
+  @js.native
+  sealed trait `aria-errormessage`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-errormessage`: `aria-errormessage` = "aria-errormessage".asInstanceOf[`aria-errormessage`]
+  
+  @js.native
+  sealed trait `aria-expanded`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
+  
+  @js.native
+  sealed trait `aria-flowto`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-flowto`: `aria-flowto` = "aria-flowto".asInstanceOf[`aria-flowto`]
+  
+  @js.native
+  sealed trait `aria-grabbed`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-grabbed`: `aria-grabbed` = "aria-grabbed".asInstanceOf[`aria-grabbed`]
+  
+  @js.native
+  sealed trait `aria-haspopup`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
+  
+  @js.native
+  sealed trait `aria-hidden`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-hidden`: `aria-hidden` = "aria-hidden".asInstanceOf[`aria-hidden`]
+  
+  @js.native
+  sealed trait `aria-invalid`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
+  
+  @js.native
+  sealed trait `aria-label`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
+  
+  @js.native
+  sealed trait `aria-labelledby`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
+  
+  @js.native
+  sealed trait `aria-level`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-level`: `aria-level` = "aria-level".asInstanceOf[`aria-level`]
+  
+  @js.native
+  sealed trait `aria-live`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-live`: `aria-live` = "aria-live".asInstanceOf[`aria-live`]
+  
+  @js.native
+  sealed trait `aria-modal`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-modal`: `aria-modal` = "aria-modal".asInstanceOf[`aria-modal`]
+  
+  @js.native
+  sealed trait `aria-multiline`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-multiline`: `aria-multiline` = "aria-multiline".asInstanceOf[`aria-multiline`]
+  
+  @js.native
+  sealed trait `aria-multiselectable`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-multiselectable`: `aria-multiselectable` = "aria-multiselectable".asInstanceOf[`aria-multiselectable`]
+  
+  @js.native
+  sealed trait `aria-orientation`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-orientation`: `aria-orientation` = "aria-orientation".asInstanceOf[`aria-orientation`]
+  
+  @js.native
+  sealed trait `aria-owns`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-owns`: `aria-owns` = "aria-owns".asInstanceOf[`aria-owns`]
+  
+  @js.native
+  sealed trait `aria-placeholder`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-placeholder`: `aria-placeholder` = "aria-placeholder".asInstanceOf[`aria-placeholder`]
+  
+  @js.native
+  sealed trait `aria-posinset`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-posinset`: `aria-posinset` = "aria-posinset".asInstanceOf[`aria-posinset`]
+  
+  @js.native
+  sealed trait `aria-pressed`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-pressed`: `aria-pressed` = "aria-pressed".asInstanceOf[`aria-pressed`]
+  
+  @js.native
+  sealed trait `aria-readonly`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-readonly`: `aria-readonly` = "aria-readonly".asInstanceOf[`aria-readonly`]
+  
+  @js.native
+  sealed trait `aria-relevant`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-relevant`: `aria-relevant` = "aria-relevant".asInstanceOf[`aria-relevant`]
+  
+  @js.native
+  sealed trait `aria-required`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-required`: `aria-required` = "aria-required".asInstanceOf[`aria-required`]
+  
+  @js.native
+  sealed trait `aria-rowcount`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-rowcount`: `aria-rowcount` = "aria-rowcount".asInstanceOf[`aria-rowcount`]
+  
+  @js.native
+  sealed trait `aria-rowindex`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-rowindex`: `aria-rowindex` = "aria-rowindex".asInstanceOf[`aria-rowindex`]
+  
+  @js.native
+  sealed trait `aria-rowspan`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-rowspan`: `aria-rowspan` = "aria-rowspan".asInstanceOf[`aria-rowspan`]
+  
+  @js.native
+  sealed trait `aria-selected`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
+  
+  @js.native
+  sealed trait `aria-setsize`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-setsize`: `aria-setsize` = "aria-setsize".asInstanceOf[`aria-setsize`]
+  
+  @js.native
+  sealed trait `aria-sort`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-sort`: `aria-sort` = "aria-sort".asInstanceOf[`aria-sort`]
+  
+  @js.native
+  sealed trait `aria-valuemax`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-valuemax`: `aria-valuemax` = "aria-valuemax".asInstanceOf[`aria-valuemax`]
+  
+  @js.native
+  sealed trait `aria-valuemin`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-valuemin`: `aria-valuemin` = "aria-valuemin".asInstanceOf[`aria-valuemin`]
+  
+  @js.native
+  sealed trait `aria-valuenow`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-valuenow`: `aria-valuenow` = "aria-valuenow".asInstanceOf[`aria-valuenow`]
+  
+  @js.native
+  sealed trait `aria-valuetext`
+    extends StObject
+       with AcceptedARIA
+       with typings.babylonjs.BABYLON.AcceptedARIA
+  inline def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
+  
+  @js.native
+  sealed trait article
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def article: article = "article".asInstanceOf[article]
   
   @js.native
   sealed trait `astc-10x10-unorm`
@@ -356,6 +708,13 @@ object babylonjsStrings {
   inline def background: background = "background".asInstanceOf[background]
   
   @js.native
+  sealed trait banner
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def banner: banner = "banner".asInstanceOf[banner]
+  
+  @js.native
   sealed trait `bc1-rgba-unorm`
     extends StObject
        with GPUTextureFormat
@@ -498,6 +857,13 @@ object babylonjsStrings {
   inline def ceiling: ceiling = "ceiling".asInstanceOf[ceiling]
   
   @js.native
+  sealed trait cell
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def cell: cell = "cell".asInstanceOf[cell]
+  
+  @js.native
   sealed trait `clamp-to-edge`
     extends StObject
        with GPUAddressMode
@@ -514,10 +880,31 @@ object babylonjsStrings {
   inline def color: color = "color".asInstanceOf[color]
   
   @js.native
+  sealed trait columnheader
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def columnheader: columnheader = "columnheader".asInstanceOf[columnheader]
+  
+  @js.native
+  sealed trait combobox
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def combobox: combobox = "combobox".asInstanceOf[combobox]
+  
+  @js.native
   sealed trait comparison
     extends StObject
        with GPUSamplerBindingType
   inline def comparison: comparison = "comparison".asInstanceOf[comparison]
+  
+  @js.native
+  sealed trait complementary
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def complementary: complementary = "complementary".asInstanceOf[complementary]
   
   @js.native
   sealed trait constant
@@ -526,8 +913,21 @@ object babylonjsStrings {
   inline def constant: constant = "constant".asInstanceOf[constant]
   
   @js.native
+  sealed trait contentinfo
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def contentinfo: contentinfo = "contentinfo".asInstanceOf[contentinfo]
+  
+  @js.native
   sealed trait cpu extends StObject
   inline def cpu: cpu = "cpu".asInstanceOf[cpu]
+  
+  @js.native
+  sealed trait critical
+    extends StObject
+       with PressureState
+  inline def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
   sealed trait cube
@@ -558,6 +958,13 @@ object babylonjsStrings {
     extends StObject
        with GPUStencilOperation
   inline def `decrement-wrap`: `decrement-wrap` = "decrement-wrap".asInstanceOf[`decrement-wrap`]
+  
+  @js.native
+  sealed trait definition
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def definition: definition = "definition".asInstanceOf[definition]
   
   @js.native
   sealed trait depth
@@ -624,10 +1031,31 @@ object babylonjsStrings {
   inline def devicechange: devicechange = "devicechange".asInstanceOf[devicechange]
   
   @js.native
+  sealed trait dialog
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @js.native
+  sealed trait directory
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def directory: directory = "directory".asInstanceOf[directory]
+  
+  @js.native
   sealed trait discard
     extends StObject
        with GPUStoreOp
   inline def discard: discard = "discard".asInstanceOf[discard]
+  
+  @js.native
+  sealed trait document
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
   sealed trait dst
@@ -741,6 +1169,26 @@ object babylonjsStrings {
   inline def eyetrackingstart: eyetrackingstart = "eyetrackingstart".asInstanceOf[eyetrackingstart]
   
   @js.native
+  sealed trait fair
+    extends StObject
+       with PressureState
+  inline def fair: fair = "fair".asInstanceOf[fair]
+  
+  @js.native
+  sealed trait feed
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def feed: feed = "feed".asInstanceOf[feed]
+  
+  @js.native
+  sealed trait figure
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def figure: figure = "figure".asInstanceOf[figure]
+  
+  @js.native
   sealed trait filtering
     extends StObject
        with GPUSamplerBindingType
@@ -803,6 +1251,13 @@ object babylonjsStrings {
   inline def floor: floor = "floor".asInstanceOf[floor]
   
   @js.native
+  sealed trait form
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def form: form = "form".asInstanceOf[form]
+  
+  @js.native
   sealed trait frameratechange
     extends StObject
        with XREventType
@@ -842,12 +1297,26 @@ object babylonjsStrings {
   inline def `greater-equal`: `greater-equal` = "greater-equal".asInstanceOf[`greater-equal`]
   
   @js.native
+  sealed trait group
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def group: group = "group".asInstanceOf[group]
+  
+  @js.native
   sealed trait `head-locked`
     extends StObject
        with WebXRDomOverlayType
        with typings.babylonjs.BABYLON.WebXRDomOverlayType
        with XRDOMOverlayType
   inline def `head-locked`: `head-locked` = "head-locked".asInstanceOf[`head-locked`]
+  
+  @js.native
+  sealed trait heading
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def heading: heading = "heading".asInstanceOf[heading]
   
   @js.native
   sealed trait hidden
@@ -866,6 +1335,13 @@ object babylonjsStrings {
     extends StObject
        with XRPlaneOrientation
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @js.native
+  sealed trait img
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def img: img = "img".asInstanceOf[img]
   
   @js.native
   sealed trait `immersive-ar`
@@ -1009,6 +1485,20 @@ object babylonjsStrings {
   inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
+  sealed trait list
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def list: list = "list".asInstanceOf[list]
+  
+  @js.native
+  sealed trait listitem
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def listitem: listitem = "listitem".asInstanceOf[listitem]
+  
+  @js.native
   sealed trait load
     extends StObject
        with GPULoadOp
@@ -1035,10 +1525,38 @@ object babylonjsStrings {
   inline def `local-floor`: `local-floor` = "local-floor".asInstanceOf[`local-floor`]
   
   @js.native
+  sealed trait log
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def log: log = "log".asInstanceOf[log]
+  
+  @js.native
   sealed trait `low-power`
     extends StObject
        with GPUPowerPreference
   inline def `low-power`: `low-power` = "low-power".asInstanceOf[`low-power`]
+  
+  @js.native
+  sealed trait main
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def main: main = "main".asInstanceOf[main]
+  
+  @js.native
+  sealed trait marquee
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
+  
+  @js.native
+  sealed trait math
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def math: math = "math".asInstanceOf[math]
   
   @js.native
   sealed trait max
@@ -1047,10 +1565,31 @@ object babylonjsStrings {
   inline def max: max = "max".asInstanceOf[max]
   
   @js.native
+  sealed trait menu
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def menu: menu = "menu".asInstanceOf[menu]
+  
+  @js.native
+  sealed trait menubar
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def menubar: menubar = "menubar".asInstanceOf[menubar]
+  
+  @js.native
   sealed trait mesh
     extends StObject
        with XRHitTestTrackableType
   inline def mesh: mesh = "mesh".asInstanceOf[mesh]
+  
+  @js.native
+  sealed trait meter
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
   sealed trait `middle-finger-metacarpal`
@@ -1101,6 +1640,13 @@ object babylonjsStrings {
   inline def mono: mono = "mono".asInstanceOf[mono]
   
   @js.native
+  sealed trait navigation
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
+  
+  @js.native
   sealed trait nearest
     extends StObject
        with GPUFilterMode
@@ -1113,6 +1659,12 @@ object babylonjsStrings {
   inline def never: never = "never".asInstanceOf[never]
   
   @js.native
+  sealed trait nominal
+    extends StObject
+       with PressureState
+  inline def nominal: nominal = "nominal".asInstanceOf[nominal]
+  
+  @js.native
   sealed trait `non-filtering`
     extends StObject
        with GPUSamplerBindingType
@@ -1121,6 +1673,8 @@ object babylonjsStrings {
   @js.native
   sealed trait none
     extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
        with GPUCullMode
        with MotionControllerHandedness
        with typings.babylonjs.BABYLON.MotionControllerHandedness
@@ -1133,6 +1687,13 @@ object babylonjsStrings {
     extends StObject
        with GPUCompareFunction
   inline def `not-equal`: `not-equal` = "not-equal".asInstanceOf[`not-equal`]
+  
+  @js.native
+  sealed trait note
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def note: note = "note".asInstanceOf[note]
   
   @js.native
   sealed trait occlusion
@@ -1244,10 +1805,23 @@ object babylonjsStrings {
   inline def `point-list`: `point-list` = "point-list".asInstanceOf[`point-list`]
   
   @js.native
+  sealed trait `power-supply`
+    extends StObject
+       with PressureFactor
+  inline def `power-supply`: `power-supply` = "power-supply".asInstanceOf[`power-supply`]
+  
+  @js.native
   sealed trait premultiplied
     extends StObject
        with GPUCanvasAlphaMode
   inline def premultiplied: premultiplied = "premultiplied".asInstanceOf[premultiplied]
+  
+  @js.native
+  sealed trait presentation
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def presentation: presentation = "presentation".asInstanceOf[presentation]
   
   @js.native
   sealed trait pressed
@@ -1337,6 +1911,13 @@ object babylonjsStrings {
   @js.native
   sealed trait redraw extends StObject
   inline def redraw: redraw = "redraw".asInstanceOf[redraw]
+  
+  @js.native
+  sealed trait region
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def region: region = "region".asInstanceOf[region]
   
   @js.native
   sealed trait repeat
@@ -1550,6 +2131,27 @@ object babylonjsStrings {
   inline def `ring-finger-tip`: `ring-finger-tip` = "ring-finger-tip".asInstanceOf[`ring-finger-tip`]
   
   @js.native
+  sealed trait row
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def row: row = "row".asInstanceOf[row]
+  
+  @js.native
+  sealed trait rowgroup
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
+  
+  @js.native
+  sealed trait rowheader
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def rowheader: rowheader = "rowheader".asInstanceOf[rowheader]
+  
+  @js.native
   sealed trait screen
     extends StObject
        with WebXRDomOverlayType
@@ -1557,6 +2159,27 @@ object babylonjsStrings {
        with XRDOMOverlayType
        with XRTargetRayMode
   inline def screen: screen = "screen".asInstanceOf[screen]
+  
+  @js.native
+  sealed trait scrollbar
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
+  
+  @js.native
+  sealed trait search
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
+  sealed trait searchbox
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def searchbox: searchbox = "searchbox".asInstanceOf[searchbox]
   
   @js.native
   sealed trait select
@@ -1578,6 +2201,19 @@ object babylonjsStrings {
        with XREventType
        with XRInputSourceEventType
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
+  
+  @js.native
+  sealed trait separator
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def separator: separator = "separator".asInstanceOf[separator]
+  
+  @js.native
+  sealed trait serious
+    extends StObject
+       with PressureState
+  inline def serious: serious = "serious".asInstanceOf[serious]
   
   @js.native
   sealed trait sessiongranted extends StObject
@@ -1644,6 +2280,13 @@ object babylonjsStrings {
   inline def sint8x4: sint8x4 = "sint8x4".asInstanceOf[sint8x4]
   
   @js.native
+  sealed trait slider
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def slider: slider = "slider".asInstanceOf[slider]
+  
+  @js.native
   sealed trait snorm16x2
     extends StObject
        with GPUVertexFormat
@@ -1670,6 +2313,13 @@ object babylonjsStrings {
   @js.native
   sealed trait sphere extends StObject
   inline def sphere: sphere = "sphere".asInstanceOf[sphere]
+  
+  @js.native
+  sealed trait spinbutton
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def spinbutton: spinbutton = "spinbutton".asInstanceOf[spinbutton]
   
   @js.native
   sealed trait squeeze
@@ -1727,6 +2377,13 @@ object babylonjsStrings {
   inline def state: state = "state".asInstanceOf[state]
   
   @js.native
+  sealed trait status
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def status: status = "status".asInstanceOf[status]
+  
+  @js.native
   sealed trait `stencil-only`
     extends StObject
        with GPUTextureAspect
@@ -1775,6 +2432,48 @@ object babylonjsStrings {
   inline def subtract: subtract = "subtract".asInstanceOf[subtract]
   
   @js.native
+  sealed trait switch
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def switch: switch = "switch".asInstanceOf[switch]
+  
+  @js.native
+  sealed trait tab
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def tab: tab = "tab".asInstanceOf[tab]
+  
+  @js.native
+  sealed trait table
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def table: table = "table".asInstanceOf[table]
+  
+  @js.native
+  sealed trait tablist
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def tablist: tablist = "tablist".asInstanceOf[tablist]
+  
+  @js.native
+  sealed trait tabpanel
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def tabpanel: tabpanel = "tabpanel".asInstanceOf[tabpanel]
+  
+  @js.native
+  sealed trait term
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def term: term = "term".asInstanceOf[term]
+  
+  @js.native
   sealed trait texture
     extends StObject
        with XRTextureType
@@ -1803,6 +2502,12 @@ object babylonjsStrings {
     extends StObject
        with GPUFeatureName
   inline def `texture-compression-etc2`: `texture-compression-etc2` = "texture-compression-etc2".asInstanceOf[`texture-compression-etc2`]
+  
+  @js.native
+  sealed trait thermal
+    extends StObject
+       with PressureFactor
+  inline def thermal: thermal = "thermal".asInstanceOf[thermal]
   
   @js.native
   sealed trait `thumb-metacarpal`
@@ -1840,6 +2545,13 @@ object babylonjsStrings {
   inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
   @js.native
+  sealed trait timer
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def timer: timer = "timer".asInstanceOf[timer]
+  
+  @js.native
   sealed trait timestamp
     extends StObject
        with GPUQueryType
@@ -1850,6 +2562,20 @@ object babylonjsStrings {
     extends StObject
        with GPUFeatureName
   inline def `timestamp-query`: `timestamp-query` = "timestamp-query".asInstanceOf[`timestamp-query`]
+  
+  @js.native
+  sealed trait toolbar
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
+  
+  @js.native
+  sealed trait tooltip
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
   sealed trait touched
@@ -1886,6 +2612,27 @@ object babylonjsStrings {
   @js.native
   sealed trait transform extends StObject
   inline def transform: transform = "transform".asInstanceOf[transform]
+  
+  @js.native
+  sealed trait tree
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def tree: tree = "tree".asInstanceOf[tree]
+  
+  @js.native
+  sealed trait treegrid
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def treegrid: treegrid = "treegrid".asInstanceOf[treegrid]
+  
+  @js.native
+  sealed trait treeitem
+    extends StObject
+       with AcceptedRole
+       with typings.babylonjs.BABYLON.AcceptedRole
+  inline def treeitem: treeitem = "treeitem".asInstanceOf[treeitem]
   
   @js.native
   sealed trait `triangle-list`

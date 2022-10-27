@@ -16,11 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait XRFrame extends StObject {
   
-  var createAnchor: (js.UndefOr[
-    js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.UndefOr[js.Promise[XRAnchor]]]
-  ]) & (js.UndefOr[
+  var createAnchor: js.UndefOr[
     js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
-  ])
+  ] = js.undefined
   
   var detectedPlanes: js.UndefOr[XRPlaneSet] = js.undefined
   
@@ -51,9 +49,7 @@ trait XRFrame extends StObject {
   var getImageTrackingResults: js.UndefOr[js.Function0[js.Array[XRImageTrackingResult]]] = js.undefined
   
   // Hand tracking
-  var getJointPose: (js.UndefOr[
-    js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, js.UndefOr[XRJointPose]]
-  ]) & (js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]])
+  var getJointPose: js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]] = js.undefined
   
   def getLightEstimate(xrLightProbe: XRLightProbe): XRLightEstimate
   
@@ -88,34 +84,22 @@ trait XRFrame extends StObject {
 object XRFrame {
   
   inline def apply(
-    createAnchor: (js.UndefOr[
-      js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.UndefOr[js.Promise[XRAnchor]]]
-    ]) & (js.UndefOr[
-      js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
-    ]),
     getHitTestResults: XRHitTestSource => js.Array[XRHitTestResult],
     getHitTestResultsForTransientInput: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult],
-    getJointPose: (js.UndefOr[
-      js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, js.UndefOr[XRJointPose]]
-    ]) & (js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]]),
     getLightEstimate: XRLightProbe => XRLightEstimate,
     getPose: (XRSpace, XRSpace) => js.UndefOr[XRPose],
     getViewerPose: XRReferenceSpace => js.UndefOr[XRViewerPose],
     session: XRSession
   ): XRFrame = {
-    val __obj = js.Dynamic.literal(createAnchor = createAnchor.asInstanceOf[js.Any], getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getJointPose = getJointPose.asInstanceOf[js.Any], getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRFrame]
   }
   
   extension [Self <: XRFrame](x: Self) {
     
-    inline def setCreateAnchor(
-      value: (js.UndefOr[
-          js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.UndefOr[js.Promise[XRAnchor]]]
-        ]) & (js.UndefOr[
-          js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
-        ])
-    ): Self = StObject.set(x, "createAnchor", value.asInstanceOf[js.Any])
+    inline def setCreateAnchor(value: (/* pose */ XRRigidTransform, /* space */ XRSpace) => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction2(value))
+    
+    inline def setCreateAnchorUndefined: Self = StObject.set(x, "createAnchor", js.undefined)
     
     inline def setDetectedPlanes(value: XRPlaneSet): Self = StObject.set(x, "detectedPlanes", value.asInstanceOf[js.Any])
     
@@ -147,11 +131,9 @@ object XRFrame {
     
     inline def setGetImageTrackingResultsUndefined: Self = StObject.set(x, "getImageTrackingResults", js.undefined)
     
-    inline def setGetJointPose(
-      value: (js.UndefOr[
-          js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, js.UndefOr[XRJointPose]]
-        ]) & (js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]])
-    ): Self = StObject.set(x, "getJointPose", value.asInstanceOf[js.Any])
+    inline def setGetJointPose(value: (/* joint */ XRJointSpace, /* baseSpace */ XRSpace) => XRJointPose): Self = StObject.set(x, "getJointPose", js.Any.fromFunction2(value))
+    
+    inline def setGetJointPoseUndefined: Self = StObject.set(x, "getJointPose", js.undefined)
     
     inline def setGetLightEstimate(value: XRLightProbe => XRLightEstimate): Self = StObject.set(x, "getLightEstimate", js.Any.fromFunction1(value))
     

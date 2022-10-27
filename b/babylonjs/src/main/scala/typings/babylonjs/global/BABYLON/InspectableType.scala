@@ -29,5 +29,7 @@ object InspectableType extends StObject {
   
   /* 8 */ val Tab: typings.babylonjs.BABYLON.InspectableType.Tab & Double = js.native
   
+  /* 10 */ val Vector2: typings.babylonjs.BABYLON.InspectableType.Vector2 & Double = js.native
+  
   /* 2 */ val Vector3: typings.babylonjs.BABYLON.InspectableType.Vector3 & Double = js.native
 }

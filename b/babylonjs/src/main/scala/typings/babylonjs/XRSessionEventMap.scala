@@ -8,9 +8,9 @@ trait XRSessionEventMap extends StObject {
   
   var end: XRSessionEvent
   
-  var eyetrackingend: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ Any
+  var eyetrackingend: XREyeTrackingSourceEvent
   
-  var eyetrackingstart: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ Any
+  var eyetrackingstart: XREyeTrackingSourceEvent
   
   var frameratechange: XRSessionEvent
   
@@ -34,8 +34,8 @@ object XRSessionEventMap {
   
   inline def apply(
     end: XRSessionEvent,
-    eyetrackingend: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ Any,
-    eyetrackingstart: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ Any,
+    eyetrackingend: XREyeTrackingSourceEvent,
+    eyetrackingstart: XREyeTrackingSourceEvent,
     frameratechange: XRSessionEvent,
     inputsourceschange: XRInputSourceChangeEvent,
     select: XRInputSourceEvent,
@@ -54,13 +54,9 @@ object XRSessionEventMap {
     
     inline def setEnd(value: XRSessionEvent): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    inline def setEyetrackingend(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ Any
-    ): Self = StObject.set(x, "eyetrackingend", value.asInstanceOf[js.Any])
+    inline def setEyetrackingend(value: XREyeTrackingSourceEvent): Self = StObject.set(x, "eyetrackingend", value.asInstanceOf[js.Any])
     
-    inline def setEyetrackingstart(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ Any
-    ): Self = StObject.set(x, "eyetrackingstart", value.asInstanceOf[js.Any])
+    inline def setEyetrackingstart(value: XREyeTrackingSourceEvent): Self = StObject.set(x, "eyetrackingstart", value.asInstanceOf[js.Any])
     
     inline def setFrameratechange(value: XRSessionEvent): Self = StObject.set(x, "frameratechange", value.asInstanceOf[js.Any])
     

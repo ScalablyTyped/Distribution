@@ -204,8 +204,6 @@ trait WebGPUEngine
   
   /* private */ var _mainTextureExtends: Any = js.native
   
-  /* private */ var _mainTextureLastCopy: Any = js.native
-  
   /** @internal */
   var _mrtAttachments: js.Array[Double] = js.native
   
@@ -402,8 +400,6 @@ trait WebGPUEngine
   /* private */ var _startRenderTargetRenderPass: Any = js.native
   
   /* private */ var _stencilRefsCurrent: Any = js.native
-  
-  /* private */ var _swapChainTexture: Any = js.native
   
   /** @internal */
   var _textureHelper: WebGPUTextureHelper = js.native

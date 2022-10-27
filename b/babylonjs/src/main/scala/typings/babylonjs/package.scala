@@ -2,10 +2,12 @@ package typings.babylonjs
 
 import typings.babylonjs.babylonjsStrings.`write-only`
 import typings.babylonjs.babylonjsStrings.auto
+import typings.babylonjs.babylonjsStrings.cpu
 import typings.babylonjs.babylonjsStrings.destroyed
 import typings.babylonjs.babylonjsStrings.redraw
 import typings.babylonjs.babylonjsStrings.srgb
 import typings.std.DOMHighResTimeStamp
+import typings.std.Event
 import typings.std.EventTarget
 import typings.std.ReadonlySet
 import typings.std.Set
@@ -82,9 +84,16 @@ type GPUSupportedFeatures = ReadonlySet[String]
 
 type GPUTextureUsageFlags = Double
 
+// Experimental Pressure API https://wicg.github.io/compute-pressure/
+type PressureSource = cpu
+
+type PressureUpdateCallback = js.Function2[/* changes */ js.Array[PressureRecord], /* observer */ PressureObserver, Unit]
+
 // Experimental/Draft features
 // Anchors
 type XRAnchorSet = Set[XRAnchor]
+
+type XREventHandler = js.Function1[/* evt */ Event, Any]
 
 type XRFrameRequestCallback = js.Function2[/* time */ DOMHighResTimeStamp, /* frame */ XRFrame, Unit]
 

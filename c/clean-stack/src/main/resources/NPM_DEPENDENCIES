@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "clean-stack" : "5.0.0"
+      "clean-stack" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "clean-stack" : "5.0.0"
+      "clean-stack" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

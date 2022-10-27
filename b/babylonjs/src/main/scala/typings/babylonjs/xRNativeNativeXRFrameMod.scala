@@ -21,13 +21,6 @@ object xRNativeNativeXRFrameMod {
     
     /* private */ val _xrTransform: Any = js.native
     
-    /* CompleteClass */
-    var createAnchor: (js.UndefOr[
-        js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.UndefOr[js.Promise[XRAnchor]]]
-      ]) & (js.UndefOr[
-        js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
-      ]) = js.native
-    
     @JSName("detectedPlanes")
     def detectedPlanes_MNativeXRFrame: js.UndefOr[XRPlaneSet] = js.native
     
@@ -44,12 +37,6 @@ object xRNativeNativeXRFrameMod {
     
     @JSName("getImageTrackingResults")
     def getImageTrackingResults_MNativeXRFrame(): js.Array[XRImageTrackingResult] = js.native
-    
-    // Hand tracking
-    /* CompleteClass */
-    var getJointPose: (js.UndefOr[
-        js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, js.UndefOr[XRJointPose]]
-      ]) & (js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]]) = js.native
     
     def getLightEstimate(): scala.Nothing = js.native
     /* CompleteClass */
@@ -105,23 +92,15 @@ object xRNativeNativeXRFrameMod {
   object INativeXRFrame {
     
     inline def apply(
-      createAnchor: (js.UndefOr[
-          js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.UndefOr[js.Promise[XRAnchor]]]
-        ]) & (js.UndefOr[
-          js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
-        ]),
       getHitTestResults: XRHitTestSource => js.Array[XRHitTestResult],
       getHitTestResultsForTransientInput: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult],
-      getJointPose: (js.UndefOr[
-          js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, js.UndefOr[XRJointPose]]
-        ]) & (js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]]),
       getLightEstimate: XRLightProbe => XRLightEstimate,
       getPose: (XRSpace, XRSpace) => js.UndefOr[XRPose],
       getPoseData: (XRSpace, XRReferenceSpace, js.typedarray.ArrayBuffer, js.typedarray.ArrayBuffer) => XRPose,
       getViewerPose: XRReferenceSpace => js.UndefOr[XRViewerPose],
       session: XRSession
     ): INativeXRFrame = {
-      val __obj = js.Dynamic.literal(createAnchor = createAnchor.asInstanceOf[js.Any], getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getJointPose = getJointPose.asInstanceOf[js.Any], getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getPoseData = js.Any.fromFunction4(getPoseData), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getPoseData = js.Any.fromFunction4(getPoseData), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
       __obj.asInstanceOf[INativeXRFrame]
     }
     

@@ -24,6 +24,7 @@ trait Quaternion extends StObject {
   
   /**
     * Adds two quaternions
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#10
     * @param other defines the second operand
     * @returns a new quaternion as the addition result of the given one and the current quaternion
     */
@@ -31,6 +32,7 @@ trait Quaternion extends StObject {
   
   /**
     * Add a quaternion to the current one
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#11
     * @param other defines the quaternion to add
     * @returns the current quaternion
     */
@@ -38,24 +40,28 @@ trait Quaternion extends StObject {
   
   /**
     * Copy the quaternion to an array
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#13
     * @returns a new array populated with 4 elements from the quaternion coordinates
     */
   def asArray(): js.Array[Double] = js.native
   
   /**
     * Conjugates (1-q) the current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#83
     * @returns a new quaternion
     */
   def conjugate(): this.type = js.native
   
   /**
     * Conjugates in place the current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#82
     * @returns the current updated quaternion
     */
   def conjugateInPlace(): this.type = js.native
   
   /**
     * Conjugates the current quaternion and stores the result in the given quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#81
     * @param ref defines the target quaternion
     * @returns result input
     */
@@ -63,6 +69,7 @@ trait Quaternion extends StObject {
   
   /**
     * Copy a quaternion to the current one
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#86
     * @param other defines the other quaternion
     * @returns the updated current quaternion
     */
@@ -70,6 +77,7 @@ trait Quaternion extends StObject {
   
   /**
     * Updates the current quaternion with the given float coordinates
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#87
     * @param x defines the x coordinate
     * @param y defines the y coordinate
     * @param z defines the z coordinate
@@ -80,6 +88,7 @@ trait Quaternion extends StObject {
   
   /**
     * Check if two quaternions are equals
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#38
     * @param otherQuaternion defines the second operand
     * @returns true if the current quaternion and the given one coordinates are strictly equals
     */
@@ -87,6 +96,7 @@ trait Quaternion extends StObject {
   
   /**
     * Gets a boolean if two quaternions are equals (using an epsilon value)
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#37
     * @param otherQuaternion defines the other quaternion
     * @param epsilon defines the minimal distance to consider equality
     * @returns true if the given quaternion coordinates are close to the current ones by a distance of epsilon.
@@ -96,6 +106,7 @@ trait Quaternion extends StObject {
   
   /**
     * Updates the current quaternion from the given rotation matrix values
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#41
     * @param matrix defines the source matrix
     * @returns the current updated quaternion
     */
@@ -115,30 +126,35 @@ trait Quaternion extends StObject {
   
   /**
     * Returns the inverse of the current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#84
     * @returns a new quaternion
     */
   def invert(): this.type = js.native
   
   /**
     * Invert in place the current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#85
     * @returns this quaternion
     */
   def invertInPlace(): this.type = js.native
   
   /**
     * Gets length of current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#28
     * @returns the quaternion length (float)
     */
   def length(): Double = js.native
   
   /**
     * Gets squared length of current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#29
     * @returns the quaternion length (float)
     */
   def lengthSquared(): Double = js.native
   
   /**
     * Multiplies two quaternions
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#43
     * @param q1 defines the second operand
     * @returns a new quaternion set as the multiplication result of the current one with the given one "q1"
     */
@@ -146,6 +162,7 @@ trait Quaternion extends StObject {
   
   /**
     * Updates the current quaternion with the multiplication of itself with the given one "q1"
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#46
     * @param q1 defines the second operand
     * @returns the currentupdated quaternion
     */
@@ -153,6 +170,7 @@ trait Quaternion extends StObject {
   
   /**
     * Sets the given "result" as the the multiplication result of the current one with the given one "q1"
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#45
     * @param q1 defines the second operand
     * @param result defines the target quaternion
     * @returns the current quaternion
@@ -161,18 +179,21 @@ trait Quaternion extends StObject {
   
   /**
     * Normalize in place the current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#54
     * @returns the current updated quaternion
     */
   def normalize(): this.type = js.native
   
   /**
     * Normalize a copy of the current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#55
     * @returns the normalized quaternion
     */
   def normalizeToNew(): this.type = js.native
   
   /**
     * Multiplies the current quaternion by a scale factor
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#88
     * @param value defines the scale factor
     * @returns a new quaternion set by multiplying the current quaternion coordinates by the float "scale"
     */
@@ -180,6 +201,7 @@ trait Quaternion extends StObject {
   
   /**
     * Scale the current quaternion values by a factor and add the result to a given quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#91
     * @param scale defines the scale factor
     * @param result defines the Quaternion object where to store the result
     * @returns result input
@@ -188,6 +210,7 @@ trait Quaternion extends StObject {
   
   /**
     * Multiplies in place the current quaternion by a scale factor
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#90
     * @param value defines the scale factor
     * @returns the current modified quaternion
     */
@@ -195,6 +218,7 @@ trait Quaternion extends StObject {
   
   /**
     * Scale the current quaternion values by a factor and stores the result to a given quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#89
     * @param scale defines the scale factor
     * @param result defines the Quaternion object where to store the result
     * @returns result input
@@ -203,6 +227,7 @@ trait Quaternion extends StObject {
   
   /**
     * Updates the current quaternion from the given float coordinates
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#56
     * @param x defines the x coordinate
     * @param y defines the y coordinate
     * @param z defines the z coordinate
@@ -213,6 +238,7 @@ trait Quaternion extends StObject {
   
   /**
     * Subtract two quaternions
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#57
     * @param other defines the second operand
     * @returns a new quaternion as the subtraction result of the given one from the current one
     */
@@ -220,6 +246,7 @@ trait Quaternion extends StObject {
   
   /**
     * Subtract a quaternion to the current one
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#58
     * @param other defines the quaternion to subtract
     * @returns the current quaternion
     */
@@ -227,6 +254,7 @@ trait Quaternion extends StObject {
   
   /**
     * Stores from the starting index in the given array the Quaternion successive values
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#59
     * @param array defines the array where to store the x,y,z,w components
     * @param index defines an optional index in the target array to define where to start storing values
     * @returns the current Quaternion object
@@ -236,6 +264,7 @@ trait Quaternion extends StObject {
   
   /**
     * Returns a new Vector3 set with the Euler angles translated from the current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#32
     * @returns a new Vector3 containing the Euler angles
     * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
     */
@@ -243,6 +272,7 @@ trait Quaternion extends StObject {
   
   /**
     * Sets the given vector3 "result" with the Euler angles translated from the current quaternion
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#31
     * @param result defines the vector which will be filled with the Euler angles
     * @returns result input
     * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
@@ -251,6 +281,7 @@ trait Quaternion extends StObject {
   
   /**
     * Updates the given rotation matrix with the current quaternion values
+    * Example Playground https://playground.babylonjs.com/#L49EJ7#67
     * @param result defines the target matrix
     * @returns the current unchanged quaternion
     */

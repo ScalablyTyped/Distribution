@@ -10,6 +10,8 @@ trait Node
   extends StObject
      with IBehaviorAware[Node] {
   
+  /* protected */ var _accessibilityTag: Nullable[IAccessibilityTag] = js.native
+  
   /** @internal */
   def _addToSceneRootNodes(): Unit = js.native
   
@@ -125,6 +127,12 @@ trait Node
   
   /** @internal */
   var _worldMatrixDeterminantIsDirty: Boolean = js.native
+  
+  def accessibilityTag: Nullable[IAccessibilityTag] = js.native
+  /**
+    * Gets or sets the accessibility tag to describe the node for accessibility purpose.
+    */
+  def accessibilityTag_=(value: Nullable[IAccessibilityTag]): Unit = js.native
   
   def addBehavior(behavior: Behavior[Node], attachImmediately: Boolean): Node = js.native
   
@@ -403,6 +411,8 @@ trait Node
     * Gets or sets the name of the node
     */
   var name: String = js.native
+  
+  var onAccessibilityTagChangedObservable: Observable[Nullable[IAccessibilityTag]] = js.native
   
   /**
     * An event triggered when the node is cloned

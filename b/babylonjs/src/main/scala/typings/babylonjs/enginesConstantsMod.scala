@@ -779,6 +779,13 @@ object enginesConstantsMod {
     val PARTICLES_BILLBOARDMODE_STRETCHED: Double = js.native
     
     /**
+      * Special billboard mode where the particle will be billboard to the camera but only around the axis of the direction of particle emission
+      */
+    @JSImport("babylonjs/Engines/constants", "Constants.PARTICLES_BILLBOARDMODE_STRETCHED_LOCAL")
+    @js.native
+    val PARTICLES_BILLBOARDMODE_STRETCHED_LOCAL: Double = js.native
+    
+    /**
       * Billboard mode will only apply to Y axis
       */
     @JSImport("babylonjs/Engines/constants", "Constants.PARTICLES_BILLBOARDMODE_Y")

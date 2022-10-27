@@ -59,13 +59,6 @@ object PerfCollectionStrategy {
   inline def AnimationsStrategy(): PerfStrategyInitialization = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimationsStrategy")().asInstanceOf[PerfStrategyInitialization]
   
   /**
-    * Gets the initializer for the strategy used for collection of cpu utilization metrics.
-    * Needs the experimental compute pressure API.
-    * @returns the initializer for the cpu utilization strategy
-    */
-  inline def CpuStrategy(): PerfStrategyInitialization = ^.asInstanceOf[js.Dynamic].applyDynamic("CpuStrategy")().asInstanceOf[PerfStrategyInitialization]
-  
-  /**
     * Gets the initializer for the strategy used for collection of draw calls metrics.
     * @returns the initializer for the draw calls strategy
     */
@@ -114,6 +107,20 @@ object PerfCollectionStrategy {
   inline def PhysicsStrategy(): PerfStrategyInitialization = ^.asInstanceOf[js.Dynamic].applyDynamic("PhysicsStrategy")().asInstanceOf[PerfStrategyInitialization]
   
   /**
+    * Gets the initializer for the strategy used for collection of power supply utilization metrics.
+    * Needs the experimental pressure API.
+    * @returns the initializer for the power supply utilization strategy
+    */
+  inline def PowerSupplyStrategy(): PerfStrategyInitialization = ^.asInstanceOf[js.Dynamic].applyDynamic("PowerSupplyStrategy")().asInstanceOf[PerfStrategyInitialization]
+  
+  /**
+    * Gets the initializer for the strategy used for collection of pressure metrics.
+    * Needs the experimental pressure API.
+    * @returns the initializer for the pressure strategy
+    */
+  inline def PressureStrategy(): PerfStrategyInitialization = ^.asInstanceOf[js.Dynamic].applyDynamic("PressureStrategy")().asInstanceOf[PerfStrategyInitialization]
+  
+  /**
     * Gets the initializer for the strategy used for collection of render time metrics.
     * @returns the initializer for the render time strategy
     */
@@ -130,6 +137,13 @@ object PerfCollectionStrategy {
     * @returns the initializer for the sprites time strategy
     */
   inline def SpritesStrategy(): PerfStrategyInitialization = ^.asInstanceOf[js.Dynamic].applyDynamic("SpritesStrategy")().asInstanceOf[PerfStrategyInitialization]
+  
+  /**
+    * Gets the initializer for the strategy used for collection of thermal utilization metrics.
+    * Needs the experimental pressure API.
+    * @returns the initializer for the thermal utilization strategy
+    */
+  inline def ThermalStrategy(): PerfStrategyInitialization = ^.asInstanceOf[js.Dynamic].applyDynamic("ThermalStrategy")().asInstanceOf[PerfStrategyInitialization]
   
   /**
     * Gets the initializer for the strategy used for collection of total lights metrics.
@@ -160,4 +174,9 @@ object PerfCollectionStrategy {
     * @returns the initializer for the total vertices strategy
     */
   inline def TotalVerticesStrategy(): PerfStrategyInitialization = ^.asInstanceOf[js.Dynamic].applyDynamic("TotalVerticesStrategy")().asInstanceOf[PerfStrategyInitialization]
+  
+  @JSImport("babylonjs", "PerfCollectionStrategy._PressureStrategy")
+  @js.native
+  def _PressureStrategy: Any = js.native
+  inline def _PressureStrategy_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PressureStrategy")(x.asInstanceOf[js.Any])
 }

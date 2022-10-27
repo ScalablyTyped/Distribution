@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion__serialize"
-version := "1.1.0-73f928"
+version := "1.1.1-039de7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

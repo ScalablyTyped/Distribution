@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-select"
-version := "5.5.7-b1a98f"
+version := "5.5.7-a26d5e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "emotion__react" % "11.10.4-f5f6d5",
-  "org.scalablytyped" %%% "emotion__serialize" % "1.1.0-73f928",
+  "org.scalablytyped" %%% "emotion__react" % "11.10.5-a2a0cd",
+  "org.scalablytyped" %%% "emotion__serialize" % "1.1.1-039de7",
   "org.scalablytyped" %%% "emotion__utils" % "1.2.0-86e76d",
   "org.scalablytyped" %%% "memoize-one" % "6.0.0-353932",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",

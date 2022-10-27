@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Vector3 extends StObject {
   
-  /**
-    * Creates a vector normal (perpendicular) to the current Vector3 and stores the result in the given vector
-    * @param result defines the Vector3 object where to store the resultant normal
-    * returns the result
-    * @hidden
-    */
-  def _getNormalToRef(result: DeepImmutable[Vector3]): Vector3 = js.native
-  
   /** @internal */
   var _isDirty: Boolean = js.native
   
@@ -209,6 +201,19 @@ trait Vector3 extends StObject {
     * @returns a number which tends to be unique between Vector3 instances
     */
   def getHashCode(): Double = js.native
+  
+  /**
+    * Creates a vector normal (perpendicular) to the current Vector3 and stores the result in the given vector
+    * Out of the infinite possibilities the normal chosen is the one formed by rotating the current vector
+    * 90 degrees about an axis which lies perpendicular to the current vector
+    * and its projection on the xz plane. In the case of a current vector in the xz plane
+    * the normal is calculated to be along the y axis.
+    * Example Playground https://playground.babylonjs.com/#R1F8YU#230
+    * Example Playground https://playground.babylonjs.com/#R1F8YU#231
+    * @param result defines the Vector3 object where to store the resultant normal
+    * returns the result
+    */
+  def getNormalToRef(result: DeepImmutable[Vector3]): Vector3 = js.native
   
   /**
     * Gets a boolean indicating if the vector contains a zero in one of its components

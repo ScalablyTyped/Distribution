@@ -474,7 +474,7 @@ object cullingIndexMod {
               /* enableDistantPicking */ Boolean, 
               typings.babylonjs.cullingRayMod.Ray
             ]
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -482,7 +482,7 @@ object cullingIndexMod {
               typings.babylonjs.cullingRayMod.Ray
             ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -491,7 +491,7 @@ object cullingIndexMod {
             ],
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Boolean
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -501,7 +501,7 @@ object cullingIndexMod {
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Boolean,
         onlyBoundingInfo: Boolean
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -512,7 +512,7 @@ object cullingIndexMod {
         fastCheck: Boolean,
         onlyBoundingInfo: Boolean,
         trianglePredicate: TrianglePickingPredicate
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -523,7 +523,7 @@ object cullingIndexMod {
         fastCheck: Boolean,
         onlyBoundingInfo: Unit,
         trianglePredicate: TrianglePickingPredicate
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -533,7 +533,7 @@ object cullingIndexMod {
         predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
         fastCheck: Unit,
         onlyBoundingInfo: Boolean
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -544,7 +544,7 @@ object cullingIndexMod {
         fastCheck: Unit,
         onlyBoundingInfo: Boolean,
         trianglePredicate: TrianglePickingPredicate
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -555,7 +555,7 @@ object cullingIndexMod {
         fastCheck: Unit,
         onlyBoundingInfo: Unit,
         trianglePredicate: TrianglePickingPredicate
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -564,7 +564,7 @@ object cullingIndexMod {
             ],
         predicate: Unit,
         fastCheck: Boolean
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -574,7 +574,7 @@ object cullingIndexMod {
         predicate: Unit,
         fastCheck: Boolean,
         onlyBoundingInfo: Boolean
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -585,7 +585,7 @@ object cullingIndexMod {
         fastCheck: Boolean,
         onlyBoundingInfo: Boolean,
         trianglePredicate: TrianglePickingPredicate
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -596,7 +596,7 @@ object cullingIndexMod {
         fastCheck: Boolean,
         onlyBoundingInfo: Unit,
         trianglePredicate: TrianglePickingPredicate
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -606,7 +606,7 @@ object cullingIndexMod {
         predicate: Unit,
         fastCheck: Unit,
         onlyBoundingInfo: Boolean
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -617,7 +617,7 @@ object cullingIndexMod {
         fastCheck: Unit,
         onlyBoundingInfo: Boolean,
         trianglePredicate: TrianglePickingPredicate
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       def _internalPick(
         rayFunction: js.Function2[
               /* world */ Matrix, 
@@ -628,7 +628,7 @@ object cullingIndexMod {
         fastCheck: Unit,
         onlyBoundingInfo: Unit,
         trianglePredicate: TrianglePickingPredicate
-      ): Nullable[PickingInfo] = js.native
+      ): PickingInfo = js.native
       
       /** @internal */
       def _internalPickForMesh(

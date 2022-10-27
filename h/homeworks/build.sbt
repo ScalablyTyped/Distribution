@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "homeworks"
-version := "1.0.50-41e72d"
+version := "1.0.50-94239e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-20bcca",
-  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-732c6a",
-  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-361554",
-  "org.scalablytyped" %%% "angular__compiler" % "14.2.7-1a35e2",
-  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-5a4088",
-  "org.scalablytyped" %%% "angular__core" % "14.2.7-499c99",
-  "org.scalablytyped" %%% "angular__forms" % "14.2.7-ec5413",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-fcbdcb",
+  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-598faf",
+  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-82a4d7",
+  "org.scalablytyped" %%% "angular__compiler" % "14.2.8-b9651c",
+  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-d7305c",
+  "org.scalablytyped" %%% "angular__core" % "14.2.8-12d082",
+  "org.scalablytyped" %%% "angular__forms" % "14.2.8-351125",
   "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-580652",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-602e3f",
   "org.scalablytyped" %%% "babel__parser" % "7.19.6-1f26d3",
@@ -23,10 +23,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-9d6f35",
   "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-09f6eb",
   "org.scalablytyped" %%% "magic-string" % "0.26.7-deb100",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
-  "org.scalablytyped" %%% "re2" % "1.17.7-5ddb3b",
-  "org.scalablytyped" %%% "rxjs" % "7.5.7-dfed9b",
-  "org.scalablytyped" %%% "semver" % "7.3-dt-20220811Z-1db0d4",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "re2" % "1.17.7-18b669",
+  "org.scalablytyped" %%% "rxjs" % "7.5.7-a78fa8",
+  "org.scalablytyped" %%% "semver" % "7.3-dt-20221026Z-e709b4",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-cfd9ff",
   "org.scalablytyped" %%% "source-map" % "0.7.4-01a3bb",
   "org.scalablytyped" %%% "std" % "4.8-837c43",

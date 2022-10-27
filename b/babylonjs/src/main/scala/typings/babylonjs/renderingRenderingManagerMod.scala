@@ -114,6 +114,9 @@ object renderingRenderingManagerMod {
       */
     def getAutoClearDepthStencilSetup(index: Double): IRenderingManagerAutoClearSetup = js.native
     
+    /**
+      * Gets the rendering group with the specified id.
+      */
     def getRenderingGroup(id: Double): RenderingGroup = js.native
     
     /**

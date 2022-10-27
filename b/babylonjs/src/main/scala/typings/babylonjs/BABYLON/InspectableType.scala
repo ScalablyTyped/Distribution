@@ -83,6 +83,14 @@ object InspectableType extends StObject {
        with InspectableType
   
   /**
+    * Vector2
+    */
+  @js.native
+  sealed trait Vector2
+    extends StObject
+       with InspectableType
+  
+  /**
     * Vector3
     */
   @js.native

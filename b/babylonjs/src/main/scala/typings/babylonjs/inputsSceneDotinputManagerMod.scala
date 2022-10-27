@@ -75,7 +75,7 @@ object inputsSceneDotinputManagerMod {
     /* private */ var _onPointerUp: Any = js.native
     
     /** @internal */
-    def _pickMove(pointerId: Double): Nullable[PickingInfo] = js.native
+    def _pickMove(pointerId: Double): PickingInfo = js.native
     
     /* private */ var _pickedDownMesh: Any = js.native
     

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "i18next-express-middleware"
-version := "2.0.0-f41a19"
+version := "2.0.0-96bdb8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-7a82fe",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-87e3cc",
-  "org.scalablytyped" %%% "i18next" % "22.0.2-733748",
+  "org.scalablytyped" %%% "i18next" % "22.0.3-071904",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",

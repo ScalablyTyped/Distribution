@@ -41,6 +41,7 @@ object collisionsPickingInfoMod {
       * @param useWorldCoordinates If the resulting normal should be relative to the world (default: false)
       * @param useVerticesNormals If the vertices normals should be used to calculate the normal instead of the normal map
       * @returns The normal corresponding to the face the pick collided with
+      * @remarks Note that the returned normal will always point towards the picking ray.
       */
     def getNormal(): Nullable[Vector3] = js.native
     def getNormal(useWorldCoordinates: Boolean): Nullable[Vector3] = js.native

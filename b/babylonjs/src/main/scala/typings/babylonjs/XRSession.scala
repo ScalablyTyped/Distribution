@@ -50,59 +50,35 @@ trait XRSession
   @JSName("addEventListener")
   def addEventListener_eyetrackingend(
     `type`: eyetrackingend,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_eyetrackingend(
     `type`: eyetrackingend,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_eyetrackingend(
     `type`: eyetrackingend,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_eyetrackingstart(
     `type`: eyetrackingstart,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_eyetrackingstart(
     `type`: eyetrackingstart,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_eyetrackingstart(
     `type`: eyetrackingstart,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -342,59 +318,35 @@ trait XRSession
   @JSName("removeEventListener")
   def removeEventListener_eyetrackingend(
     `type`: eyetrackingend,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_eyetrackingend(
     `type`: eyetrackingend,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_eyetrackingend(
     `type`: eyetrackingend,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_eyetrackingstart(
     `type`: eyetrackingstart,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_eyetrackingstart(
     `type`: eyetrackingstart,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_eyetrackingstart(
     `type`: eyetrackingstart,
-    listener: js.ThisFunction1[
-      /* this */ this.type, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XREyeTrackingEvent */ /* ev */ Any, 
-      Any
-    ],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XREyeTrackingSourceEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

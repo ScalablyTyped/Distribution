@@ -59,7 +59,6 @@ import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.meshesMeshSimplificationMod.SimplificationQueue
 import typings.babylonjs.meshesSubMeshMod.SubMesh
 import typings.babylonjs.meshesTransformNodeMod.TransformNode
-import typings.babylonjs.miscComputePressureMod.IComputePressureData
 import typings.babylonjs.miscFileRequestMod.IFileRequest
 import typings.babylonjs.miscFileToolsMod.LoadFileError
 import typings.babylonjs.miscFileToolsMod.ReadFileError
@@ -337,8 +336,6 @@ object sceneMod {
       */
     var _components: js.Array[ISceneComponent] = js.native
     
-    /* private */ var _computePressureObserver: Any = js.native
-    
     /** @internal */
     def _createMultiviewUbo(): Unit = js.native
     
@@ -489,101 +486,101 @@ object sceneMod {
     def _internalMultiPickSprites(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     
     /** @internal */
-    def _internalPick(rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray]): Nullable[PickingInfo] = js.native
+    def _internalPick(rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray]): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Boolean
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     
     /** @internal */
     def _internalPickForMesh(
@@ -4578,12 +4575,6 @@ object sceneMod {
     var onCameraRemovedObservable: Observable[Camera] = js.native
     
     /**
-      * An event triggered when the cpu usage/speed meets certain thresholds.
-      * Note: Compute pressure is an experimental API.
-      */
-    var onComputePressureChanged: Observable[IComputePressureData] = js.native
-    
-    /**
       * An event triggered when SceneLoader.Append or SceneLoader.Load or SceneLoader.ImportMesh were successfully executed
       */
     var onDataLoadedObservable: Observable[Scene] = js.native
@@ -4750,14 +4741,14 @@ object sceneMod {
       * @param trianglePredicate defines an optional predicate used to select faces when a mesh intersection is detected
       * @returns a PickingInfo
       */
-    def pick(x: Double, y: Double): Nullable[PickingInfo] = js.native
-    def pick(x: Double, y: Double, predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): Nullable[PickingInfo] = js.native
+    def pick(x: Double, y: Double): PickingInfo = js.native
+    def pick(x: Double, y: Double, predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
@@ -4765,14 +4756,14 @@ object sceneMod {
       fastCheck: Boolean,
       camera: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
       camera: Nullable[Camera]
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
@@ -4780,7 +4771,7 @@ object sceneMod {
       fastCheck: Boolean,
       camera: Nullable[Camera],
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
@@ -4788,14 +4779,14 @@ object sceneMod {
       fastCheck: Unit,
       camera: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Unit,
       camera: Nullable[Camera]
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
@@ -4803,8 +4794,8 @@ object sceneMod {
       fastCheck: Unit,
       camera: Nullable[Camera],
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def pick(x: Double, y: Double, predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
+    def pick(x: Double, y: Double, predicate: Unit, fastCheck: Boolean): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
@@ -4812,8 +4803,8 @@ object sceneMod {
       fastCheck: Boolean,
       camera: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def pick(x: Double, y: Double, predicate: Unit, fastCheck: Boolean, camera: Nullable[Camera]): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
+    def pick(x: Double, y: Double, predicate: Unit, fastCheck: Boolean, camera: Nullable[Camera]): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
@@ -4821,7 +4812,7 @@ object sceneMod {
       fastCheck: Boolean,
       camera: Nullable[Camera],
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
@@ -4829,8 +4820,8 @@ object sceneMod {
       fastCheck: Unit,
       camera: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
-    def pick(x: Double, y: Double, predicate: Unit, fastCheck: Unit, camera: Nullable[Camera]): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
+    def pick(x: Double, y: Double, predicate: Unit, fastCheck: Unit, camera: Nullable[Camera]): PickingInfo = js.native
     def pick(
       x: Double,
       y: Double,
@@ -4838,7 +4829,7 @@ object sceneMod {
       fastCheck: Unit,
       camera: Nullable[Camera],
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[PickingInfo] = js.native
+    ): PickingInfo = js.native
     
     /** Launch a ray to try to pick a sprite in the scene
       * @param x position on screen

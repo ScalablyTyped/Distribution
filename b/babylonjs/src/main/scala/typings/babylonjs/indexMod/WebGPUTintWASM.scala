@@ -11,6 +11,15 @@ open class WebGPUTintWASM ()
 /* static members */
 object WebGPUTintWASM {
   
+  @JSImport("babylonjs/index", "WebGPUTintWASM")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs/index", "WebGPUTintWASM.ShowWGSLShaderCode")
+  @js.native
+  def ShowWGSLShaderCode: Boolean = js.native
+  inline def ShowWGSLShaderCode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShowWGSLShaderCode")(x.asInstanceOf[js.Any])
+  
   @JSImport("babylonjs/index", "WebGPUTintWASM._TWgslDefaultOptions")
   @js.native
   val _TWgslDefaultOptions: Any = js.native

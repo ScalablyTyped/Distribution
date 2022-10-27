@@ -98,6 +98,15 @@ object miscIInspectableMod {
     /* 8 */ val Tab: typings.babylonjs.miscIInspectableMod.InspectableType.Tab & Double = js.native
     
     /**
+      * Vector2
+      */
+    @js.native
+    sealed trait Vector2
+      extends StObject
+         with InspectableType
+    /* 10 */ val Vector2: typings.babylonjs.miscIInspectableMod.InspectableType.Vector2 & Double = js.native
+    
+    /**
       * Vector3
       */
     @js.native

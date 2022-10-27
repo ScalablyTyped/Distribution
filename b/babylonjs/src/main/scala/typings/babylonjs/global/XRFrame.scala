@@ -22,41 +22,10 @@ open class XRFrame ()
      with typings.babylonjs.XRFrame {
   
   /* CompleteClass */
-  var createAnchor: (js.UndefOr[
-    js.Function2[
-      /* pose */ typings.babylonjs.XRRigidTransform, 
-      /* space */ typings.babylonjs.XRSpace, 
-      js.UndefOr[js.Promise[typings.babylonjs.XRAnchor]]
-    ]
-  ]) & (js.UndefOr[
-    js.Function2[
-      /* pose */ typings.babylonjs.XRRigidTransform, 
-      /* space */ typings.babylonjs.XRSpace, 
-      js.Promise[typings.babylonjs.XRAnchor]
-    ]
-  ]) = js.native
-  
-  /* CompleteClass */
   override def getHitTestResults(hitTestSource: typings.babylonjs.XRHitTestSource): js.Array[typings.babylonjs.XRHitTestResult] = js.native
   
   /* CompleteClass */
   override def getHitTestResultsForTransientInput(hitTestSource: typings.babylonjs.XRTransientInputHitTestSource): js.Array[typings.babylonjs.XRTransientInputHitTestResult] = js.native
-  
-  // Hand tracking
-  /* CompleteClass */
-  var getJointPose: (js.UndefOr[
-    js.Function2[
-      /* joint */ typings.babylonjs.XRJointSpace, 
-      /* baseSpace */ typings.babylonjs.XRSpace, 
-      js.UndefOr[typings.babylonjs.XRJointPose]
-    ]
-  ]) & (js.UndefOr[
-    js.Function2[
-      /* joint */ typings.babylonjs.XRJointSpace, 
-      /* baseSpace */ typings.babylonjs.XRSpace, 
-      typings.babylonjs.XRJointPose
-    ]
-  ]) = js.native
   
   /* CompleteClass */
   override def getLightEstimate(xrLightProbe: XRLightProbe): XRLightEstimate = js.native

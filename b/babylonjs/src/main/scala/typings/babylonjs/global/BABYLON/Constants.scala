@@ -779,6 +779,13 @@ object Constants {
   val PARTICLES_BILLBOARDMODE_STRETCHED: /* 8 */ Double = js.native
   
   /**
+    * Special billboard mode where the particle will be billboard to the camera but only around the axis of the direction of particle emission
+    */
+  @JSGlobal("BABYLON.Constants.PARTICLES_BILLBOARDMODE_STRETCHED_LOCAL")
+  @js.native
+  val PARTICLES_BILLBOARDMODE_STRETCHED_LOCAL: /* 9 */ Double = js.native
+  
+  /**
     * Billboard mode will only apply to Y axis
     */
   @JSGlobal("BABYLON.Constants.PARTICLES_BILLBOARDMODE_Y")

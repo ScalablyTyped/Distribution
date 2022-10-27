@@ -13,7 +13,6 @@ import typings.babylonjs.anon.TypeofVector3Instantiable
 import typings.babylonjs.anon.TypeofVector4Instantiable
 import typings.babylonjs.babylonjsStrings.XRProjectionLayer
 import typings.babylonjs.babylonjsStrings.XRWebGLLayer
-import typings.babylonjs.babylonjsStrings.cpu
 import typings.std.ConstructorParameters
 import typings.std.Element
 import typings.std.HTMLElement
@@ -71,8 +70,6 @@ type DeviceSourceType = Distribute[DeviceType]
 type EvaluateSubMeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* subMesh */ SubMesh, Unit]
 
 type FloatArray = js.Array[Double] | js.typedarray.Float32Array
-
-type IComputePressureSource = cpu
 
 type IMotionControllerLayoutMap = /**
   * Layouts with handedness type as a key

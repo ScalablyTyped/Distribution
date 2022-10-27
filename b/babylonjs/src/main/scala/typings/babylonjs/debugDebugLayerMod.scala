@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.miscIInspectableMod.IInspectable
 import typings.babylonjs.sceneMod.Scene
 import typings.std.HTMLElement
@@ -302,6 +303,11 @@ object debugDebugLayerMod {
     var explorerExtensibility: js.UndefOr[js.Array[IExplorerExtensibilityGroup]] = js.undefined
     
     /**
+      * Optional camera to use to render the gizmos from the inspector (default to the scene.activeCamera or the latest from scene.activeCameras)
+      */
+    var gizmoCamera: js.UndefOr[Camera] = js.undefined
+    
+    /**
       * HTML element to use as root (the parent of the rendering canvas will be used as default value)
       */
     var globalRoot: js.UndefOr[HTMLElement] = js.undefined
@@ -368,6 +374,10 @@ object debugDebugLayerMod {
       inline def setExplorerExtensibilityUndefined: Self = StObject.set(x, "explorerExtensibility", js.undefined)
       
       inline def setExplorerExtensibilityVarargs(value: IExplorerExtensibilityGroup*): Self = StObject.set(x, "explorerExtensibility", js.Array(value*))
+      
+      inline def setGizmoCamera(value: Camera): Self = StObject.set(x, "gizmoCamera", value.asInstanceOf[js.Any])
+      
+      inline def setGizmoCameraUndefined: Self = StObject.set(x, "gizmoCamera", js.undefined)
       
       inline def setGlobalRoot(value: HTMLElement): Self = StObject.set(x, "globalRoot", value.asInstanceOf[js.Any])
       

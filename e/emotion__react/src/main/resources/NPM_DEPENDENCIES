@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@emotion/react" : "11.10.4"
+      "@emotion/react" : "11.10.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@emotion/react" : "11.10.4"
+      "@emotion/react" : "11.10.5"
     }
   ],
   "compile-devDependencies" : [

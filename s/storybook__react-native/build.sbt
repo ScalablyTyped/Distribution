@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "storybook__react-native"
-version := "5.3.25-4c6eb4"
+version := "5.3.25-da2a29"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "emotion__serialize" % "1.1.0-73f928",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.3.0-76720b",
+  "org.scalablytyped" %%% "emotion__serialize" % "1.1.1-039de7",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.3.0-e599f8",
   "org.scalablytyped" %%% "emotion__utils" % "1.2.0-86e76d",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
