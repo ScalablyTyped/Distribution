@@ -121,6 +121,8 @@ trait CreateDBClusterMessage extends StObject {
     */
   var ReplicationSourceIdentifier: js.UndefOr[String] = js.undefined
   
+  var ServerlessV2ScalingConfiguration: js.UndefOr[typings.awsSdk.clientsNeptuneMod.ServerlessV2ScalingConfiguration] = js.undefined
+  
   /**
     * Specifies whether the DB cluster is encrypted.
     */
@@ -236,6 +238,10 @@ object CreateDBClusterMessage {
     inline def setReplicationSourceIdentifier(value: String): Self = StObject.set(x, "ReplicationSourceIdentifier", value.asInstanceOf[js.Any])
     
     inline def setReplicationSourceIdentifierUndefined: Self = StObject.set(x, "ReplicationSourceIdentifier", js.undefined)
+    
+    inline def setServerlessV2ScalingConfiguration(value: ServerlessV2ScalingConfiguration): Self = StObject.set(x, "ServerlessV2ScalingConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setServerlessV2ScalingConfigurationUndefined: Self = StObject.set(x, "ServerlessV2ScalingConfiguration", js.undefined)
     
     inline def setStorageEncrypted(value: BooleanOptional): Self = StObject.set(x, "StorageEncrypted", value.asInstanceOf[js.Any])
     

@@ -29,3 +29,12 @@ open class HTTPVersionNotSupported ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`505` = js.native
 }
+object HTTPVersionNotSupported {
+  
+  @JSImport("http-errors", "HTTPVersionNotSupported")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`505`] = js.native
+  @JSImport("http-errors", "HTTPVersionNotSupported")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`505`] = js.native
+}

@@ -7,12 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProvisionedThroughput extends StObject {
   
   /**
-    * Provisioned throughput is enabled or not.
+    * 
+    Provisioned throughput is enabled or not.
+    
     */
   var Enabled: js.UndefOr[boolean] = js.undefined
   
   /**
-    * Throughput value of the EBS volumes for the data drive on each kafka broker node in MiB per second.
+    * 
+    Throughput value of the EBS volumes for the data drive on each kafka broker node in MiB per second.
+    
     */
   var VolumeThroughput: js.UndefOr[integer] = js.undefined
 }

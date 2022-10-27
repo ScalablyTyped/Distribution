@@ -304,7 +304,7 @@ object speeddialSpeeddialMod {
     
     var buttonClassName: js.UndefOr[String] = js.undefined
     
-    var buttonStyle: js.UndefOr[js.Object] = js.undefined
+    var buttonStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var buttonTemplate: js.UndefOr[SpeedDialButtonTemplateType] = js.undefined
     
@@ -368,7 +368,7 @@ object speeddialSpeeddialMod {
     
     var maskClassName: js.UndefOr[String] = js.undefined
     
-    var maskStyle: js.UndefOr[js.Object] = js.undefined
+    var maskStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var model: js.UndefOr[
         js.Array[
@@ -821,7 +821,7 @@ object speeddialSpeeddialMod {
       
       inline def setButtonClassNameUndefined: Self = StObject.set(x, "buttonClassName", js.undefined)
       
-      inline def setButtonStyle(value: js.Object): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+      inline def setButtonStyle(value: CSSProperties): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       
       inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
       
@@ -951,7 +951,7 @@ object speeddialSpeeddialMod {
       
       inline def setMaskClassNameUndefined: Self = StObject.set(x, "maskClassName", js.undefined)
       
-      inline def setMaskStyle(value: js.Object): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
+      inline def setMaskStyle(value: CSSProperties): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
       
       inline def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
       

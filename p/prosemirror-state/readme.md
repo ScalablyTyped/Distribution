@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-state
 
-Typings are for version 1.4.1
+Typings are for version 1.4.2
 
 ## Library description:
 ProseMirror editor state

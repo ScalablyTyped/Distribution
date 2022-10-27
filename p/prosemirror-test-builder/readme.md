@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-test-builder
 
-Typings are for version 1.0
+Typings are for version 1.1.0
 
 ## Library description:
 Helpers for programatically building ProseMirror test documents
@@ -24,7 +24,7 @@ Helpers for programatically building ProseMirror test documents
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

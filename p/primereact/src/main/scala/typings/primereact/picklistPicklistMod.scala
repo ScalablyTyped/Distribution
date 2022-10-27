@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -204,9 +205,9 @@ object picklistPicklistMod {
     
     var sourceSelection: js.UndefOr[Any] = js.undefined
     
-    var sourceStyle: js.UndefOr[js.Object] = js.undefined
+    var sourceStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -224,7 +225,7 @@ object picklistPicklistMod {
     
     var targetSelection: js.UndefOr[Any] = js.undefined
     
-    var targetStyle: js.UndefOr[js.Object] = js.undefined
+    var targetStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object PickListProps {
     
@@ -355,7 +356,7 @@ object picklistPicklistMod {
       
       inline def setSourceSelectionUndefined: Self = StObject.set(x, "sourceSelection", js.undefined)
       
-      inline def setSourceStyle(value: js.Object): Self = StObject.set(x, "sourceStyle", value.asInstanceOf[js.Any])
+      inline def setSourceStyle(value: CSSProperties): Self = StObject.set(x, "sourceStyle", value.asInstanceOf[js.Any])
       
       inline def setSourceStyleUndefined: Self = StObject.set(x, "sourceStyle", js.undefined)
       
@@ -363,7 +364,7 @@ object picklistPicklistMod {
       
       inline def setSourceVarargs(value: Any*): Self = StObject.set(x, "source", js.Array(value*))
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -401,7 +402,7 @@ object picklistPicklistMod {
       
       inline def setTargetSelectionUndefined: Self = StObject.set(x, "targetSelection", js.undefined)
       
-      inline def setTargetStyle(value: js.Object): Self = StObject.set(x, "targetStyle", value.asInstanceOf[js.Any])
+      inline def setTargetStyle(value: CSSProperties): Self = StObject.set(x, "targetStyle", value.asInstanceOf[js.Any])
       
       inline def setTargetStyleUndefined: Self = StObject.set(x, "targetStyle", js.undefined)
       

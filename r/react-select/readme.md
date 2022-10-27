@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-select
 
-Typings are for version 5.5.6
+Typings are for version 5.5.7
 
 ## Library description:
 A Select control built with and for ReactJS

@@ -86,7 +86,7 @@ trait PartialLayoutAngularaxis extends StObject {
   
   var images: js.UndefOr[js.Array[PartialImage]] = js.undefined
   
-  var legend: js.UndefOr[PartialLegendBgcolor] = js.undefined
+  var legend: js.UndefOr[PartialLegendBordercolor] = js.undefined
   
   var mapbox: js.UndefOr[PartialMapboxBearing] = js.undefined
   
@@ -337,7 +337,7 @@ object PartialLayoutAngularaxis {
     
     inline def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value*))
     
-    inline def setLegend(value: PartialLegendBgcolor): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: PartialLegendBordercolor): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     

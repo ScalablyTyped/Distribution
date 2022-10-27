@@ -82,6 +82,13 @@ trait MutableClusterInfo extends StObject {
     
     */
   var OpenMonitoring: js.UndefOr[typings.awsSdk.clientsKafkaMod.OpenMonitoring] = js.undefined
+  
+  /**
+    * 
+    This controls storage mode for supported storage tiers.
+    
+    */
+  var StorageMode: js.UndefOr[typings.awsSdk.clientsKafkaMod.StorageMode] = js.undefined
 }
 object MutableClusterInfo {
   
@@ -137,5 +144,9 @@ object MutableClusterInfo {
     inline def setOpenMonitoring(value: OpenMonitoring): Self = StObject.set(x, "OpenMonitoring", value.asInstanceOf[js.Any])
     
     inline def setOpenMonitoringUndefined: Self = StObject.set(x, "OpenMonitoring", js.undefined)
+    
+    inline def setStorageMode(value: StorageMode): Self = StObject.set(x, "StorageMode", value.asInstanceOf[js.Any])
+    
+    inline def setStorageModeUndefined: Self = StObject.set(x, "StorageMode", js.undefined)
   }
 }

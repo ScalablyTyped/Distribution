@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-pdf"
-version := "5.7-dt-20220506Z-182bb1"
+version := "5.7-dt-20221026Z-855b3d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

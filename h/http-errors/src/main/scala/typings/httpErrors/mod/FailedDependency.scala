@@ -29,3 +29,12 @@ open class FailedDependency ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`424` = js.native
 }
+object FailedDependency {
+  
+  @JSImport("http-errors", "FailedDependency")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`424`] = js.native
+  @JSImport("http-errors", "FailedDependency")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`424`] = js.native
+}

@@ -67,7 +67,7 @@ object anon {
     var disableHostPrefix: Boolean = js.native
     
     var endpoint: js.UndefOr[
-        (String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2) & (String | Provider[String])
+        (String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2) & (String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2)
       ] = js.native
     
     def endpointProvider(endpointParams: EndpointParameters): EndpointV2 = js.native
@@ -163,7 +163,7 @@ object anon {
     var disableHostPrefix: Boolean = js.native
     
     var endpoint: js.UndefOr[
-        (String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2) & (String | Provider[String])
+        (String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2) & (String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2)
       ] = js.native
     
     def endpointProvider(endpointParams: EndpointParameters): EndpointV2 = js.native
@@ -256,9 +256,7 @@ object anon {
     
     var disableHostPrefix: Boolean = js.native
     
-    var endpoint: js.UndefOr[
-        String | (Provider[Endpoint] & Provider[String]) | (Endpoint & Provider[String]) | (EndpointV2 & Provider[String]) | (Provider[EndpointV2] & Provider[String])
-      ] = js.native
+    var endpoint: js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2] = js.native
     
     def endpointProvider(endpointParams: EndpointParameters): EndpointV2 = js.native
     def endpointProvider(endpointParams: EndpointParameters, context: Logger): EndpointV2 = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for xumm-sdk
 
-Typings are for version 1.3.8
+Typings are for version 1.3.9
 
 ## Library description:
 Interact with the Xumm Developer API

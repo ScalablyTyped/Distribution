@@ -103,6 +103,13 @@ trait ClusterInfo extends StObject {
   
   /**
     * 
+    This controls storage mode for supported storage tiers.
+    
+    */
+  var StorageMode: js.UndefOr[typings.awsSdk.clientsKafkaMod.StorageMode] = js.undefined
+  
+  /**
+    * 
     Tags attached to the cluster.
     
     */
@@ -190,6 +197,10 @@ object ClusterInfo {
     inline def setStateInfoUndefined: Self = StObject.set(x, "StateInfo", js.undefined)
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    
+    inline def setStorageMode(value: StorageMode): Self = StObject.set(x, "StorageMode", value.asInstanceOf[js.Any])
+    
+    inline def setStorageModeUndefined: Self = StObject.set(x, "StorageMode", js.undefined)
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

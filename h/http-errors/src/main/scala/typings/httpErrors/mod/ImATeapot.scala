@@ -29,3 +29,12 @@ open class ImATeapot ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`418` = js.native
 }
+object ImATeapot {
+  
+  @JSImport("http-errors", "ImATeapot")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`418`] = js.native
+  @JSImport("http-errors", "ImATeapot")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`418`] = js.native
+}

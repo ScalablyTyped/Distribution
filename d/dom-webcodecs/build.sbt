@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dom-webcodecs"
-version := "0.1-dt-20220624Z-c85736"
+version := "0.1-dt-20221026Z-ed25f1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

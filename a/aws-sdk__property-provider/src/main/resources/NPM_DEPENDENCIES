@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/property-provider" : "3.193.0"
+      "@aws-sdk/property-provider" : "3.197.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/property-provider" : "3.193.0"
+      "@aws-sdk/property-provider" : "3.197.0"
     }
   ],
   "compile-devDependencies" : [

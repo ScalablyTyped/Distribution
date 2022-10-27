@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -25,7 +26,7 @@ object rowRowMod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object RowProps {
     
@@ -44,7 +45,7 @@ object rowRowMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

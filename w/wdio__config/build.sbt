@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "wdio__config"
-version := "7.25.1-af5b75"
+version := "7.25.1-d7d6a8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",
-  "org.scalablytyped" %%% "wdio__types" % "7.25.1-bd29b3")
+  "org.scalablytyped" %%% "wdio__types" % "7.25.1-847606")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "open-wc__testing-karma"
-version := "3.3-dt-20211202Z-d45e6d"
+version := "3.3-dt-20211202Z-990121"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "karma" % "6.3-dt-20220201Z-4087d1",
+  "org.scalablytyped" %%% "karma" % "6.3-dt-20220201Z-bd0627",
   "org.scalablytyped" %%% "log4js" % "6.7.0-8ce4f6",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

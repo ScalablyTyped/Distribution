@@ -67,6 +67,13 @@ type MaxResults = Double
 
 type NodeType = BROKER | String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOCAL
+  - typings.awsSdk.awsSdkStrings.TIERED
+  - java.lang.String
+*/
+type StorageMode = _StorageMode | String
+
 type _Blob = Buffer | js.typedarray.Uint8Array | Blob | String
 
 /* Rewritten from type alias, can be one of: 

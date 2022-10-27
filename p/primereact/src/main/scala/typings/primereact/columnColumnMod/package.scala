@@ -16,6 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 type ColumnAlignType = js.UndefOr[_ColumnAlignType | Null]
 
+type ColumnBodyClassType = String | (js.Function2[/* data */ Any, /* options */ ColumnBodyOptions, String])
+
 type ColumnBodyType = ReactNode | (js.Function2[/* data */ Any, /* options */ ColumnBodyOptions, ReactNode])
 
 /* Rewritten from type alias, can be one of: 
@@ -27,6 +29,8 @@ type ColumnBodyType = ReactNode | (js.Function2[/* data */ Any, /* options */ Co
 type ColumnDataType = _ColumnDataType | String
 
 type ColumnEditorType = ReactNode | (js.Function1[/* options */ ColumnEditorOptions, ReactNode])
+
+type ColumnExpanderType = Boolean | (js.Function2[/* data */ Any, /* options */ ColumnBodyOptions, Boolean])
 
 type ColumnFilterApplyType = ReactNode | (js.Function1[/* options */ ColumnFilterApplyTemplateOptions, ReactNode])
 

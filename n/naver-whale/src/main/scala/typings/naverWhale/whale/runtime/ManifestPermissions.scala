@@ -36,6 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.naverWhale.naverWhaleStrings.geolocation
   - typings.naverWhale.naverWhaleStrings.history
   - typings.naverWhale.naverWhaleStrings.identity
+  - typings.naverWhale.naverWhaleStrings.identityDotemail
   - typings.naverWhale.naverWhaleStrings.idle
   - typings.naverWhale.naverWhaleStrings.loginState
   - typings.naverWhale.naverWhaleStrings.management
@@ -136,6 +137,8 @@ object ManifestPermissions {
   inline def history: typings.naverWhale.naverWhaleStrings.history = "history".asInstanceOf[typings.naverWhale.naverWhaleStrings.history]
   
   inline def identity: typings.naverWhale.naverWhaleStrings.identity = "identity".asInstanceOf[typings.naverWhale.naverWhaleStrings.identity]
+  
+  inline def identityDotemail: typings.naverWhale.naverWhaleStrings.identityDotemail = "identity.email".asInstanceOf[typings.naverWhale.naverWhaleStrings.identityDotemail]
   
   inline def idle: typings.naverWhale.naverWhaleStrings.idle = "idle".asInstanceOf[typings.naverWhale.naverWhaleStrings.idle]
   

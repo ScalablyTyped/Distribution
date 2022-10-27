@@ -137,6 +137,8 @@ object tabviewTabviewMod {
     
     def onClick(event: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
+    def onKeyDown(event: KeyboardEvent[HTMLElement]): Unit
+    
     var props: TabPanelProps
     
     var rightIconElement: Element
@@ -156,13 +158,14 @@ object tabviewTabviewMod {
       index: Double,
       leftIconElement: Element,
       onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
+      onKeyDown: KeyboardEvent[HTMLElement] => Unit,
       props: TabPanelProps,
       rightIconElement: Element,
       selected: Boolean,
       titleClassName: String,
       titleElement: Element
     ): TabPanelHeaderTemplateOptions = {
-      val __obj = js.Dynamic.literal(ariaControls = ariaControls.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], leftIconElement = leftIconElement.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), props = props.asInstanceOf[js.Any], rightIconElement = rightIconElement.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], titleClassName = titleClassName.asInstanceOf[js.Any], titleElement = titleElement.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ariaControls = ariaControls.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], leftIconElement = leftIconElement.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), onKeyDown = js.Any.fromFunction1(onKeyDown), props = props.asInstanceOf[js.Any], rightIconElement = rightIconElement.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], titleClassName = titleClassName.asInstanceOf[js.Any], titleElement = titleElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabPanelHeaderTemplateOptions]
     }
     
@@ -179,6 +182,8 @@ object tabviewTabviewMod {
       inline def setLeftIconElement(value: Element): Self = StObject.set(x, "leftIconElement", value.asInstanceOf[js.Any])
       
       inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       inline def setProps(value: TabPanelProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
@@ -204,7 +209,7 @@ object tabviewTabviewMod {
     
     var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[js.Object] = js.undefined
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -212,7 +217,7 @@ object tabviewTabviewMod {
     
     var headerClassName: js.UndefOr[String] = js.undefined
     
-    var headerStyle: js.UndefOr[js.Object] = js.undefined
+    var headerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var headerTemplate: js.UndefOr[TabPanelHeaderTemplateType] = js.undefined
     
@@ -220,7 +225,7 @@ object tabviewTabviewMod {
     
     var rightIcon: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TabPanelProps {
     
@@ -247,7 +252,7 @@ object tabviewTabviewMod {
       
       inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      inline def setContentStyle(value: js.Object): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
       inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
@@ -261,7 +266,7 @@ object tabviewTabviewMod {
       
       inline def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
       
-      inline def setHeaderStyle(value: js.Object): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+      inline def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
       
       inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
       
@@ -281,7 +286,7 @@ object tabviewTabviewMod {
       
       inline def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -616,7 +621,7 @@ object tabviewTabviewMod {
     
     var panelContainerClassName: js.UndefOr[String] = js.undefined
     
-    var panelContainerStyle: js.UndefOr[js.Object] = js.undefined
+    var panelContainerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -1323,7 +1328,7 @@ object tabviewTabviewMod {
       
       inline def setPanelContainerClassNameUndefined: Self = StObject.set(x, "panelContainerClassName", js.undefined)
       
-      inline def setPanelContainerStyle(value: js.Object): Self = StObject.set(x, "panelContainerStyle", value.asInstanceOf[js.Any])
+      inline def setPanelContainerStyle(value: CSSProperties): Self = StObject.set(x, "panelContainerStyle", value.asInstanceOf[js.Any])
       
       inline def setPanelContainerStyleUndefined: Self = StObject.set(x, "panelContainerStyle", js.undefined)
       

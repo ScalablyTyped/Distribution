@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__auth-compat"
-version := "0.2.23-218d97"
+version := "0.2.23-55ef9b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,16 +8,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__app" % "0.8.2-7aa751",
   "org.scalablytyped" %%% "firebase__app-compat" % "0.1.37-656275",
   "org.scalablytyped" %%% "firebase__app-types" % "0.8.0-e8c69b",
-  "org.scalablytyped" %%% "firebase__auth" % "0.20.10-ecce46",
+  "org.scalablytyped" %%% "firebase__auth" % "0.20.10-e57a11",
   "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.6-5c8a80",
   "org.scalablytyped" %%% "firebase__auth-types" % "0.11.0-74b577",
   "org.scalablytyped" %%% "firebase__component" % "0.5.20-f485f2",
   "org.scalablytyped" %%% "firebase__logger" % "0.3.3-947469",
   "org.scalablytyped" %%% "firebase__util" % "1.7.2-341bcd",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221018Z-9b7283",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221018Z-c4ad2a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-3e4a2a")
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-2ad085")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

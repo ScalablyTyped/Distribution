@@ -2807,6 +2807,7 @@
 | [express-boom](./e/express-boom) | Boom response objects in Express | Hapi, Boom, Express, response |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute | express, brute, memcached, store |
+| [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. | - |
 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute | express, brute, redis |
 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express | express, logger, bunyan |
 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser | busboy, express, body-parser |
@@ -4274,6 +4275,7 @@
 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser | grid, grid-layout, template, parser |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
+| [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
 | [grommet](./g/grommet) | focus on the essential experience | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps. | - |
@@ -4601,7 +4603,6 @@
 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler. | mustache, template |
 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com | react |
 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir | images, placeholders, client-side, canvas, generation, development, svg |
-| [homeworks](./h/homeworks) | Front End framework that supported view binding. | Frontend Framework, Material, IGAWorks, homeworks, framework, PIGNOSE |
 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io | - |
 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st | patch, hook, function, debug, aop |
 | [hookrouter](./h/hookrouter) | A hook based router for React | - |
@@ -4822,6 +4823,7 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
+| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
@@ -5942,6 +5944,7 @@
 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware | log4js, Koa, logger |
 | [koa-logger](./k/koa-logger) | Logging middleware for koa | koa, middleware, logger, log |
 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa | logging, koa, winston, async |
+| [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo | koa, mongo, mongodb |
 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa | logger, morgan |
 | [koa-mount](./k/koa-mount) | Mounting middleware for koa | koa, middleware, mount, mounting |
 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko | form, post, multipart, form-data, formdata, koa, middleware |
@@ -7577,7 +7580,6 @@
 | [ng-grid](./n/ng-grid) | __Contributors:__ | angular, ng-grid, nggrid, grid, angularjs, slickgrid, kogrid |
 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne | - |
 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi | AngularJS, App, notify, Provider, notification, alert, notice |
-| [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P | apf, angular-package-format, angular, angular-library, angular-components, component-library, typescript, css, scss |
 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS | - |
 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS | AngularJS, STOMP, websocket |
 | [ng-table](./n/ng-table) | Table + AngularJS =================  | - |
@@ -7603,7 +7605,6 @@
 | [ngtoaster](./n/ngtoaster) | - | - |
 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp | angular, Angular CLI, devkit, sdk, Angular DevKit, webpack, plugin, aot |
 | [ngwysiwyg](./n/ngwysiwyg) | - | - |
-| [ngx-infinite-scroll](./n/ngx-infinite-scroll) | - | - |
 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises | nhs, validator, validation |
 | [nib](./n/nib) | Stylus mixins and utilities | - |
 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js | nice, priority |
@@ -7823,6 +7824,7 @@
 | [normalizr](./n/normalizr) | Normalizes and denormalizes JSON according to sche | flux, redux, normalize, denormalize, api, json |
 | [normalplaytime](./n/normalplaytime) | Parser for Normal Play Time (RFC 2326) | parser |
 | [nosleep_dot_js](./n/nosleep_dot_js) | Prevent display sleep and enable wake lock in any  | nosleep, wake lock, wakelock, screen, display, sleep |
+| [noteflight-client](./n/noteflight-client) | - | - |
 | [notepack_dot_io](./n/notepack_dot_io) | A fast Node.js implementation of the latest Messag | msgpack, MessagePack |
 | [notie](./n/notie) | notie - a clean and simple notification, input, an | javascript, notification, alert, prompt, confirm, growl, toast, message |
 | [notifyjs](./n/notifyjs) | A handy wrapper for the Web Notifications API | web, notification, nofity |
@@ -10279,6 +10281,7 @@
 | [ronomon__hash-table](./r/ronomon__hash-table) | Fast, reliable cuckoo hash table for Node.js | array, associative, binary, bloom, buffer, bucket, bucketized, cache, clock, container, cuckoo, element, filter, flood, gc, hash, index, load, lru, map, miss, object, probing, reserve, resize, slot, tabulation, table, tag |
 | [root-check](./r/root-check) | Try to downgrade the permissions of a process with | sudo, root, user, permissions, uid, block, prevent, stop, downgrade, drop, privileges, check |
 | [root__asn1](./r/root__asn1) | VanillaJS, Lightweight, Zero-Dependency, ASN.1 enc | ASN.1, asn1, x509, PEM |
+| [rope-sequence](./r/rope-sequence) | Rope-based persistent sequence type | persistent, data, structure, rope, sequence |
 | [rosbag](./r/rosbag) | rosbag is a node.js & browser compatible module fo | - |
 | [rosie](./r/rosie) | factory for building JavaScript objects, mostly us | factory, rosie, test |
 | [roslib](./r/roslib) | The standard ROS Javascript Library | ROS, ros, roslib, roslibjs, robot |
@@ -12116,7 +12119,9 @@
 | [visibilityjs](./v/visibilityjs) | Wrapper for the Page Visibility API | page visibility api, visibility, polyfill, timer |
 | [vision](./v/vision) | Templates rendering plugin support for hapi.js | view, render, template, hapi |
 | [vitalsigns](./v/vitalsigns) | Powerful and customizable application health monit | health, check, monitor, express, cpu, memory, application |
+| [vite](./v/vite) | Native-ESM powered web dev build tool | - |
 | [vite-plugin-react-svg](./v/vite-plugin-react-svg) | Import SVG files as React Components | vite-plugin, svg, svgo, vite, react |
+| [vitejs__plugin-react](./v/vitejs__plugin-react) | The all-in-one Vite plugin for React projects. | - |
 | [vivus](./v/vivus) | JavaScript library to make drawing animation on SV | - |
 | [viz_dot_js](./v/viz_dot_js) | A hack to put Graphviz on the web. | graphviz, emscripten |
 | [vk-openapi](./v/vk-openapi) | Vkontakte Open API for websites for use with Brows | vk, vkontakte, browserify |

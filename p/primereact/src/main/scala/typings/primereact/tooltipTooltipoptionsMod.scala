@@ -1,6 +1,7 @@
 package typings.primereact
 
 import typings.primereact.primereactStrings.self
+import typings.react.mod.CSSProperties
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event
@@ -95,7 +96,7 @@ object tooltipTooltipoptionsMod {
     
     var showOnDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var updateDelay: js.UndefOr[Double] = js.undefined
   }
@@ -198,7 +199,7 @@ object tooltipTooltipoptionsMod {
       
       inline def setShowOnDisabledUndefined: Self = StObject.set(x, "showOnDisabled", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

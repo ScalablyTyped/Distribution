@@ -29,3 +29,12 @@ open class MisdirectedRequest ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`421` = js.native
 }
+object MisdirectedRequest {
+  
+  @JSImport("http-errors", "MisdirectedRequest")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`421`] = js.native
+  @JSImport("http-errors", "MisdirectedRequest")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`421`] = js.native
+}

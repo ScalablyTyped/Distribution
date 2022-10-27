@@ -1483,6 +1483,10 @@ object plotlyJsStrings {
   inline def reversed: reversed = "reversed".asInstanceOf[reversed]
   
   @js.native
+  sealed trait reversedPlussigngrouped extends StObject
+  inline def reversedPlussigngrouped: reversedPlussigngrouped = "reversed+grouped".asInstanceOf[reversedPlussigngrouped]
+  
+  @js.native
   sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
   
@@ -1816,6 +1820,10 @@ object plotlyJsStrings {
   inline def todate: todate = "todate".asInstanceOf[todate]
   
   @js.native
+  sealed trait toggle extends StObject
+  inline def toggle: toggle = "toggle".asInstanceOf[toggle]
+  
+  @js.native
   sealed trait toggleHover
     extends StObject
        with ModeBarDefaultButtons
@@ -1826,6 +1834,18 @@ object plotlyJsStrings {
     extends StObject
        with ModeBarDefaultButtons
   inline def toggleSpikelines: toggleSpikelines = "toggleSpikelines".asInstanceOf[toggleSpikelines]
+  
+  @js.native
+  sealed trait togglegroup extends StObject
+  inline def togglegroup: togglegroup = "togglegroup".asInstanceOf[togglegroup]
+  
+  @js.native
+  sealed trait toggleitem extends StObject
+  inline def toggleitem: toggleitem = "toggleitem".asInstanceOf[toggleitem]
+  
+  @js.native
+  sealed trait toggleothers extends StObject
+  inline def toggleothers: toggleothers = "toggleothers".asInstanceOf[toggleothers]
   
   @js.native
   sealed trait tonext extends StObject

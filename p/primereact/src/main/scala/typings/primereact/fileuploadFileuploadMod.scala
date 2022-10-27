@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
@@ -201,7 +202,7 @@ object fileuploadFileuploadMod {
     
     var label: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object FileUploadOptionsType {
     
@@ -230,7 +231,7 @@ object fileuploadFileuploadMod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -279,7 +280,7 @@ object fileuploadFileuploadMod {
     
     var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[js.Object] = js.undefined
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var customUpload: js.UndefOr[Boolean] = js.undefined
     
@@ -289,7 +290,7 @@ object fileuploadFileuploadMod {
     
     var headerClassName: js.UndefOr[String] = js.undefined
     
-    var headerStyle: js.UndefOr[js.Object] = js.undefined
+    var headerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var headerTemplate: js.UndefOr[FileUploadHeaderTemplateType] = js.undefined
     
@@ -335,7 +336,7 @@ object fileuploadFileuploadMod {
     
     var progressBarTemplate: js.UndefOr[FileUploadProgressBarTemplateType] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var uploadHandler: js.UndefOr[js.Function1[/* e */ FileUploadHandlerParam, Unit]] = js.undefined
     
@@ -392,7 +393,7 @@ object fileuploadFileuploadMod {
       
       inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      inline def setContentStyle(value: js.Object): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
       inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
@@ -414,7 +415,7 @@ object fileuploadFileuploadMod {
       
       inline def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
       
-      inline def setHeaderStyle(value: js.Object): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+      inline def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
       
       inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
       
@@ -512,7 +513,7 @@ object fileuploadFileuploadMod {
       
       inline def setProgressBarTemplateUndefined: Self = StObject.set(x, "progressBarTemplate", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

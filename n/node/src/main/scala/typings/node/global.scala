@@ -21,9 +21,9 @@ object global {
   
   @JSGlobal("AbortSignal")
   @js.native
-  def AbortSignal: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   AbortSignal :infer T} ? T : {new (): node.AbortSignal, timeout (milliseconds : number): node.AbortSignal} */ js.Any = js.native
+  def AbortSignal: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   AbortSignal :infer T} ? T : {new (): node.AbortSignal, abort (): node.AbortSignal, abort (reason : any): node.AbortSignal, timeout (milliseconds : number): node.AbortSignal} */ js.Any = js.native
   inline def AbortSignal_=(
-    x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   AbortSignal :infer T} ? T : {new (): node.AbortSignal, timeout (milliseconds : number): node.AbortSignal} */ js.Any
+    x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   AbortSignal :infer T} ? T : {new (): node.AbortSignal, abort (): node.AbortSignal, abort (reason : any): node.AbortSignal, timeout (milliseconds : number): node.AbortSignal} */ js.Any
   ): Unit = js.Dynamic.global.updateDynamic("AbortSignal")(x.asInstanceOf[js.Any])
   
   object console extends Shortcut {

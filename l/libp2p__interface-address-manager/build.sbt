@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "libp2p__interface-address-manager"
-version := "2.0.0-b90ee9"
+version := "2.0.0-9fded2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-011631",
   "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-5a062f",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-b2fe9b",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-d92aed",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

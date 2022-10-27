@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/node-config-provider" : "3.193.0"
+      "@aws-sdk/node-config-provider" : "3.197.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/node-config-provider" : "3.193.0"
+      "@aws-sdk/node-config-provider" : "3.197.0"
     }
   ],
   "compile-devDependencies" : [

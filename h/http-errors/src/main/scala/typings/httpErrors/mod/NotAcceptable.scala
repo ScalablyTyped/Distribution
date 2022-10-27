@@ -29,3 +29,12 @@ open class NotAcceptable ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`406` = js.native
 }
+object NotAcceptable {
+  
+  @JSImport("http-errors", "NotAcceptable")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`406`] = js.native
+  @JSImport("http-errors", "NotAcceptable")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`406`] = js.native
+}

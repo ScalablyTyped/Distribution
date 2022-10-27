@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "prosemirror-changeset" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "prosemirror-changeset" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

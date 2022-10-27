@@ -29,3 +29,12 @@ open class `400` ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`400` = js.native
 }
+object `400` {
+  
+  @JSImport("http-errors", "400")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`400`] = js.native
+  @JSImport("http-errors", "400")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`400`] = js.native
+}

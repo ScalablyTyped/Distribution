@@ -1,7 +1,7 @@
 
 # Scala.js typings for ioredis-mock
 
-Typings are for version 5.6
+Typings are for version 8.2
 
 ## Library description:
 This library emulates ioredis by performing all operations in-memory.

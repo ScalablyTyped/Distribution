@@ -66,7 +66,7 @@ object mod {
     /**
       * The database powering the backing rate-limiter package.
       */
-    var db: Redis | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any) | (Map[Any, Any])
+    var db: Redis | (Map[Any, Any])
     
     /**
       * Whether or not to disable the usage of rate limit headers. This defaults
@@ -121,10 +121,7 @@ object mod {
   }
   object MiddlewareOptions {
     
-    inline def apply(
-      db: Redis | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any) | (Map[Any, Any]),
-      driver: redis | memory
-    ): MiddlewareOptions = {
+    inline def apply(db: Redis | (Map[Any, Any]), driver: redis | memory): MiddlewareOptions = {
       val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any])
       __obj.asInstanceOf[MiddlewareOptions]
     }
@@ -135,9 +132,7 @@ object mod {
       
       inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      inline def setDb(
-        value: Redis | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any) | (Map[Any, Any])
-      ): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: Redis | (Map[Any, Any])): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
       inline def setDisableHeader(value: Boolean): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
       

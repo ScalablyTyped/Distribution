@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/signature-v4-crt" : "3.193.0"
+      "@aws-sdk/signature-v4-crt" : "3.197.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/signature-v4-crt" : "3.193.0"
+      "@aws-sdk/signature-v4-crt" : "3.197.0"
     }
   ],
   "compile-devDependencies" : [

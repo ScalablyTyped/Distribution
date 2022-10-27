@@ -39,6 +39,8 @@ trait DefaultSeoProps extends StObject {
   
   var robotsProps: js.UndefOr[AdditionalRobotsProps] = js.undefined
   
+  var themeColor: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
   
   var titleTemplate: js.UndefOr[String] = js.undefined
@@ -123,6 +125,10 @@ object DefaultSeoProps {
     inline def setRobotsProps(value: AdditionalRobotsProps): Self = StObject.set(x, "robotsProps", value.asInstanceOf[js.Any])
     
     inline def setRobotsPropsUndefined: Self = StObject.set(x, "robotsProps", js.undefined)
+    
+    inline def setThemeColor(value: String): Self = StObject.set(x, "themeColor", value.asInstanceOf[js.Any])
+    
+    inline def setThemeColorUndefined: Self = StObject.set(x, "themeColor", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

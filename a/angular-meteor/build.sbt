@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-meteor"
-version := "0.8-dt-20220222Z-2024fa"
+version := "0.8-dt-20220222Z-5200ad"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,12 +8,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "angular" % "1.8-dt-20220525Z-9f3f4b",
   "org.scalablytyped" %%% "bson" % "4.7.0-8f1d87",
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-e40885",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-3d7cf7",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-9d6f35",
-  "org.scalablytyped" %%% "meteor" % "2.7-dt-20220624Z-e0faf7",
-  "org.scalablytyped" %%% "mongodb" % "4.11.0-7220fb",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "meteor" % "2.7-dt-20220624Z-be2642",
+  "org.scalablytyped" %%% "mongodb" % "4.11.0-e656e8",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",

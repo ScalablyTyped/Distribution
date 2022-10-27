@@ -1,6 +1,7 @@
 package typings.primereact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.ReactNode
@@ -266,7 +267,7 @@ object virtualscrollerVirtualscrollerMod {
     
     var showSpacer: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object VirtualScrollerProps {
     
@@ -395,7 +396,7 @@ object virtualscrollerVirtualscrollerMod {
       
       inline def setShowSpacerUndefined: Self = StObject.set(x, "showSpacer", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

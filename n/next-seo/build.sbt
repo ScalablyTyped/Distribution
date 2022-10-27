@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "next-seo"
-version := "5.8.0-098413"
+version := "5.9.0-0784b8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

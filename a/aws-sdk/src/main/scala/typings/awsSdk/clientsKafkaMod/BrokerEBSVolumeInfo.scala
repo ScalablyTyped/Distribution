@@ -14,7 +14,9 @@ trait BrokerEBSVolumeInfo extends StObject {
   var KafkaBrokerNodeId: string
   
   /**
-    * EBS volume provisioned throughput information.
+    * 
+    EBS volume provisioned throughput information.
+    
     */
   var ProvisionedThroughput: js.UndefOr[typings.awsSdk.clientsKafkaMod.ProvisionedThroughput] = js.undefined
   

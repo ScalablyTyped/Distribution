@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.tooltipTooltipoptionsMod.TooltipEventParams
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
@@ -24,7 +25,13 @@ object tooltipTooltipMod {
     
     def getTarget(): HTMLElement | Null = js.native
     
+    def hide(): Null = js.native
+    def hide(e: TooltipEventParams): Null = js.native
+    
     def loadTargetEvents(target: HTMLElement): Unit = js.native
+    
+    def show(): Null = js.native
+    def show(e: TooltipEventParams): Null = js.native
     
     def unloadTargetEvents(target: HTMLElement): Unit = js.native
     

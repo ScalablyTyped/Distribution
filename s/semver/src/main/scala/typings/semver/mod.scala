@@ -35,9 +35,9 @@ object mod {
     def this(range: String) = this()
     def this(range: typings.semver.classesRangeMod.Range) = this()
     def this(range: String, optionsOrLoose: Boolean) = this()
-    def this(range: String, optionsOrLoose: Options) = this()
+    def this(range: String, optionsOrLoose: RangeOptions) = this()
     def this(range: typings.semver.classesRangeMod.Range, optionsOrLoose: Boolean) = this()
-    def this(range: typings.semver.classesRangeMod.Range, optionsOrLoose: Options) = this()
+    def this(range: typings.semver.classesRangeMod.Range, optionsOrLoose: RangeOptions) = this()
   }
   
   @JSImport("semver", "SEMVER_SPEC_VERSION")

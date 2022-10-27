@@ -453,6 +453,13 @@ trait Typeofhttp extends StObject {
   def request(url: URL, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
   
   /**
+    * Set the maximum number of idle HTTP parsers. Default: 1000.
+    * @param count
+    * @since v18.8.0, v16.18.0
+    */
+  def setMaxIdleHTTPParsers(count: Double): Unit = js.native
+  
+  /**
     * Performs the low-level validations on the provided name that are done when `res.setHeader(name, value)` is called.
     * Passing illegal value as name will result in a TypeError being thrown, identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
     * @param name Header name

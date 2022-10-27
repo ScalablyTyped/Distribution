@@ -29,3 +29,12 @@ open class VariantAlsoNegotiates ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`506` = js.native
 }
+object VariantAlsoNegotiates {
+  
+  @JSImport("http-errors", "VariantAlsoNegotiates")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`506`] = js.native
+  @JSImport("http-errors", "VariantAlsoNegotiates")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`506`] = js.native
+}

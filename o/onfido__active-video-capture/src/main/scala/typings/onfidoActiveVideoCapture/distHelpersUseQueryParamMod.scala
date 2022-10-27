@@ -10,6 +10,6 @@ object distHelpersUseQueryParamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useQueryParam(param: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryParam")(param.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def useQueryParam(param: String, defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useQueryParam")(param.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def useQueryParam[T /* <: String */](param: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryParam")(param.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def useQueryParam[T /* <: String */](param: String, validValues: js.Array[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useQueryParam")(param.asInstanceOf[js.Any], validValues.asInstanceOf[js.Any])).asInstanceOf[T]
 }

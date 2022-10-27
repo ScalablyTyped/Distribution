@@ -159,7 +159,7 @@ object dataviewDataviewMod {
     
     def onChange(e: DataViewLayoutOptionsChangeParams): Unit
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object DataViewLayoutOptionsProps {
     
@@ -188,7 +188,7 @@ object dataviewDataviewMod {
       
       inline def setOnChange(value: DataViewLayoutOptionsChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

@@ -65,6 +65,7 @@ import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.Component
@@ -125,7 +126,11 @@ object autocompleteAutocompleteMod {
     
     def getVirtualScroller(): Any = js.native
     
+    def hide(): Unit = js.native
+    
     def search(event: SyntheticEvent[Element, Event], query: String, source: AutoCompleteSourceType): Unit = js.native
+    
+    def show(): Unit = js.native
   }
   
   type AutoCompleteAppendToType = js.UndefOr[self | HTMLElement | Null]
@@ -399,6 +404,8 @@ object autocompleteAutocompleteMod {
     
     var dropdown: js.UndefOr[Boolean] = js.undefined
     
+    var dropdownAriaLabel: js.UndefOr[String] = js.undefined
+    
     var dropdownAutoFocus: js.UndefOr[Boolean] = js.undefined
     
     var dropdownIcon: js.UndefOr[
@@ -443,7 +450,7 @@ object autocompleteAutocompleteMod {
     
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var inputStyle: js.UndefOr[js.Object] = js.undefined
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -657,7 +664,7 @@ object autocompleteAutocompleteMod {
     
     var panelClassName: js.UndefOr[String] = js.undefined
     
-    var panelStyle: js.UndefOr[js.Object] = js.undefined
+    var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
@@ -701,7 +708,7 @@ object autocompleteAutocompleteMod {
     
     var step: js.UndefOr[Double | String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suggestions: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -1060,6 +1067,10 @@ object autocompleteAutocompleteMod {
       
       inline def setDropdown(value: Boolean): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
       
+      inline def setDropdownAriaLabel(value: String): Self = StObject.set(x, "dropdownAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setDropdownAriaLabelUndefined: Self = StObject.set(x, "dropdownAriaLabel", js.undefined)
+      
       inline def setDropdownAutoFocus(value: Boolean): Self = StObject.set(x, "dropdownAutoFocus", value.asInstanceOf[js.Any])
       
       inline def setDropdownAutoFocusUndefined: Self = StObject.set(x, "dropdownAutoFocus", js.undefined)
@@ -1152,7 +1163,7 @@ object autocompleteAutocompleteMod {
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      inline def setInputStyle(value: js.Object): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+      inline def setInputStyle(value: CSSProperties): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
       
       inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       
@@ -1586,7 +1597,7 @@ object autocompleteAutocompleteMod {
       
       inline def setPanelClassNameUndefined: Self = StObject.set(x, "panelClassName", js.undefined)
       
-      inline def setPanelStyle(value: js.Object): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
+      inline def setPanelStyle(value: CSSProperties): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
       
       inline def setPanelStyleUndefined: Self = StObject.set(x, "panelStyle", js.undefined)
       
@@ -1674,7 +1685,7 @@ object autocompleteAutocompleteMod {
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

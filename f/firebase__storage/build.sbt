@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__storage"
-version := "0.9.12-a6dc93"
+version := "0.9.12-fa6f43"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,8 +13,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__logger" % "0.3.3-947469",
   "org.scalablytyped" %%% "firebase__util" % "1.7.2-341bcd",
   "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-385072",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
-  "org.scalablytyped" %%% "node-fetch" % "3.2.10-06476c",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "node-fetch" % "3.2.10-178c8a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

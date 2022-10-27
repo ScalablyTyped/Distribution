@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ object treenodeTreenodeMod {
     
     var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TreeNode {
     
@@ -91,7 +92,7 @@ object treenodeTreenodeMod {
       
       inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

@@ -1,11 +1,10 @@
 package typings.prosemirrorSchemaList
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.orderedmap.mod.default
+import typings.prosemirrorModel.mod.Attrs
 import typings.prosemirrorModel.mod.NodeSpec
 import typings.prosemirrorModel.mod.NodeType
-import typings.prosemirrorModel.mod.Schema
-import typings.prosemirrorState.mod.EditorState
-import typings.prosemirrorState.mod.Transaction
+import typings.prosemirrorState.mod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,86 +15,70 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addListNodes[N /* <: String */](
-    nodes: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any,
-    itemContent: String
-  ): (/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
-  inline def addListNodes[N /* <: String */](
-    nodes: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any,
-    itemContent: String,
-    listGroup: String
-  ): (/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
-  inline def addListNodes[N /* <: String */](
-    nodes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any,
-    itemContent: String
-  ): (/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
-  inline def addListNodes[N /* <: String */](
-    nodes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any,
-    itemContent: String,
-    listGroup: String
-  ): (/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any) = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {[ name in N | 'ordered_list' | 'bullet_list' | 'list_item' ]: prosemirror-model.prosemirror-model.NodeSpec} */ js.Any) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrderedMap<NodeSpec> */ Any)]
+  /**
+  Convenience function for adding list-related node types to a map
+  specifying the nodes for a schema. Adds
+  [`orderedList`](https://prosemirror.net/docs/ref/#schema-list.orderedList) as `"ordered_list"`,
+  [`bulletList`](https://prosemirror.net/docs/ref/#schema-list.bulletList) as `"bullet_list"`, and
+  [`listItem`](https://prosemirror.net/docs/ref/#schema-list.listItem) as `"list_item"`.
+  `itemContent` determines the content expression for the list items.
+  If you want the commands defined in this module to apply to your
+  list structure, it should have a shape like `"paragraph block*"` or
+  `"paragraph (ordered_list | bullet_list)*"`. `listGroup` can be
+  given to assign a group name to the list node types, for example
+  `"block"`.
+  */
+  inline def addListNodes(nodes: default[NodeSpec], itemContent: String): default[NodeSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[default[NodeSpec]]
+  inline def addListNodes(nodes: default[NodeSpec], itemContent: String, listGroup: String): default[NodeSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[default[NodeSpec]]
   
+  /**
+  A bullet list node spec, represented in the DOM as `<ul>`.
+  */
   @JSImport("prosemirror-schema-list", "bulletList")
   @js.native
-  def bulletList: NodeSpec = js.native
-  inline def bulletList_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bulletList")(x.asInstanceOf[js.Any])
+  val bulletList: NodeSpec = js.native
   
-  inline def liftListItem[S /* <: Schema[Any, Any] */](itemType: NodeType): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("liftListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
+  /**
+  Create a command to lift the list item around the selection up into
+  a wrapping list.
+  */
+  inline def liftListItem(itemType: NodeType): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("liftListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[Command]
   
+  /**
+  A list item (`<li>`) spec.
+  */
   @JSImport("prosemirror-schema-list", "listItem")
   @js.native
-  def listItem: NodeSpec = js.native
-  inline def listItem_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("listItem")(x.asInstanceOf[js.Any])
+  val listItem: NodeSpec = js.native
   
+  /**
+  An ordered list [node spec](https://prosemirror.net/docs/ref/#model.NodeSpec). Has a single
+  attribute, `order`, which determines the number at which the list
+  starts counting, and defaults to 1. Represented as an `<ol>`
+  element.
+  */
   @JSImport("prosemirror-schema-list", "orderedList")
   @js.native
-  def orderedList: NodeSpec = js.native
-  inline def orderedList_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orderedList")(x.asInstanceOf[js.Any])
+  val orderedList: NodeSpec = js.native
   
-  inline def sinkListItem[S /* <: Schema[Any, Any] */](itemType: NodeType): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sinkListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
+  /**
+  Create a command to sink the list item around the selection down
+  into an inner list.
+  */
+  inline def sinkListItem(itemType: NodeType): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("sinkListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[Command]
   
-  inline def splitListItem[S /* <: Schema[Any, Any] */](itemType: NodeType): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
+  /**
+  Build a command that splits a non-empty textblock at the top level
+  of a list item by also splitting that list item.
+  */
+  inline def splitListItem(itemType: NodeType): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("splitListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[Command]
   
-  inline def wrapInList[S /* <: Schema[Any, Any] */](listType: NodeType): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapInList")(listType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
-  inline def wrapInList[S /* <: Schema[Any, Any] */](listType: NodeType, attrs: StringDictionary[Any]): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapInList")(listType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
+  /**
+  Returns a command function that wraps the selection in a list with
+  the given type an attributes. If `dispatch` is null, only return a
+  value to indicate whether this is possible, but don't actually
+  perform the change.
+  */
+  inline def wrapInList(listType: NodeType): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapInList")(listType.asInstanceOf[js.Any]).asInstanceOf[Command]
+  inline def wrapInList(listType: NodeType, attrs: Attrs): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapInList")(listType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Command]
 }

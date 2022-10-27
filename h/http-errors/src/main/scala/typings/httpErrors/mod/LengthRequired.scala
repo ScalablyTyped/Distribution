@@ -29,3 +29,12 @@ open class LengthRequired ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`411` = js.native
 }
+object LengthRequired {
+  
+  @JSImport("http-errors", "LengthRequired")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`411`] = js.native
+  @JSImport("http-errors", "LengthRequired")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`411`] = js.native
+}

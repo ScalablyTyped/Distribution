@@ -29,3 +29,12 @@ open class ProxyAuthenticationRequired ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`407` = js.native
 }
+object ProxyAuthenticationRequired {
+  
+  @JSImport("http-errors", "ProxyAuthenticationRequired")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`407`] = js.native
+  @JSImport("http-errors", "ProxyAuthenticationRequired")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`407`] = js.native
+}

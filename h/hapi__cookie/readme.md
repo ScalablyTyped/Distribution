@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__cookie
 
-Typings are for version 10.1
+Typings are for version 12.0
 
 ## Library description:
 Cookie authentication plugin

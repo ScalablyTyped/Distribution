@@ -110,6 +110,10 @@ object imageImageMod {
     def getElement(): HTMLSpanElement = js.native
     
     def getImage(): HTMLImageElement = js.native
+    
+    def hide(): Unit = js.native
+    
+    def show(): Unit = js.native
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLSpanElement>, std.HTMLSpanElement>, 'ref'> */
@@ -488,6 +492,8 @@ object imageImageMod {
     var vocab: js.UndefOr[String] = js.undefined
     
     var width: js.UndefOr[String] = js.undefined
+    
+    var zoomSrc: js.UndefOr[String] = js.undefined
   }
   object ImageProps {
     
@@ -1247,6 +1253,10 @@ object imageImageMod {
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setZoomSrc(value: String): Self = StObject.set(x, "zoomSrc", value.asInstanceOf[js.Any])
+      
+      inline def setZoomSrcUndefined: Self = StObject.set(x, "zoomSrc", js.undefined)
     }
   }
 }

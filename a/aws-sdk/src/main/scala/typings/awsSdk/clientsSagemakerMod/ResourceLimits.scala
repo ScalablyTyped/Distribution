@@ -9,7 +9,7 @@ trait ResourceLimits extends StObject {
   /**
     * The maximum number of training jobs that a hyperparameter tuning job can launch.
     */
-  var MaxNumberOfTrainingJobs: typings.awsSdk.clientsSagemakerMod.MaxNumberOfTrainingJobs
+  var MaxNumberOfTrainingJobs: js.UndefOr[typings.awsSdk.clientsSagemakerMod.MaxNumberOfTrainingJobs] = js.undefined
   
   /**
     * The maximum number of concurrent training jobs that a hyperparameter tuning job can launch.
@@ -18,14 +18,16 @@ trait ResourceLimits extends StObject {
 }
 object ResourceLimits {
   
-  inline def apply(MaxNumberOfTrainingJobs: MaxNumberOfTrainingJobs, MaxParallelTrainingJobs: MaxParallelTrainingJobs): ResourceLimits = {
-    val __obj = js.Dynamic.literal(MaxNumberOfTrainingJobs = MaxNumberOfTrainingJobs.asInstanceOf[js.Any], MaxParallelTrainingJobs = MaxParallelTrainingJobs.asInstanceOf[js.Any])
+  inline def apply(MaxParallelTrainingJobs: MaxParallelTrainingJobs): ResourceLimits = {
+    val __obj = js.Dynamic.literal(MaxParallelTrainingJobs = MaxParallelTrainingJobs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceLimits]
   }
   
   extension [Self <: ResourceLimits](x: Self) {
     
     inline def setMaxNumberOfTrainingJobs(value: MaxNumberOfTrainingJobs): Self = StObject.set(x, "MaxNumberOfTrainingJobs", value.asInstanceOf[js.Any])
+    
+    inline def setMaxNumberOfTrainingJobsUndefined: Self = StObject.set(x, "MaxNumberOfTrainingJobs", js.undefined)
     
     inline def setMaxParallelTrainingJobs(value: MaxParallelTrainingJobs): Self = StObject.set(x, "MaxParallelTrainingJobs", value.asInstanceOf[js.Any])
   }

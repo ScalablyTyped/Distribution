@@ -59,19 +59,11 @@ object mod {
   }
   
   // tslint:disable-next-line:no-unnecessary-class
-  type CatboxMemory[T] = ClientApi[T]
+  type Engine[T] = ClientApi[T]
   
   trait Options
     extends StObject
        with ClientOptions {
-    
-    /**
-      * by default, all data is cached as JSON strings, and converted to an object using JSON.parse() on retrieval.
-      * By setting this option to true, Buffer data can be stored alongside the stringified data.
-      * Buffers are not stringified, and are copied before storage to prevent the value from changing while in the cache.
-      * @default false
-      */
-    var allowMixedContent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * by default, buffers stored in the cache with allowMixedContent set to true are copied when they are set but not when they are retrieved.
@@ -103,10 +95,6 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
-      
-      inline def setAllowMixedContent(value: Boolean): Self = StObject.set(x, "allowMixedContent", value.asInstanceOf[js.Any])
-      
-      inline def setAllowMixedContentUndefined: Self = StObject.set(x, "allowMixedContent", js.undefined)
       
       inline def setCloneBuffersOnGet(value: Boolean): Self = StObject.set(x, "cloneBuffersOnGet", value.asInstanceOf[js.Any])
       

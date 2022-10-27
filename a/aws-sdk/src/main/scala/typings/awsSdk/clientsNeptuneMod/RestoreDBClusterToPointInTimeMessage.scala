@@ -61,6 +61,8 @@ trait RestoreDBClusterToPointInTimeMessage extends StObject {
     */
   var RestoreType: js.UndefOr[String] = js.undefined
   
+  var ServerlessV2ScalingConfiguration: js.UndefOr[typings.awsSdk.clientsNeptuneMod.ServerlessV2ScalingConfiguration] = js.undefined
+  
   /**
     * The identifier of the source DB cluster from which to restore. Constraints:   Must match the identifier of an existing DBCluster.  
     */
@@ -133,6 +135,10 @@ object RestoreDBClusterToPointInTimeMessage {
     inline def setRestoreType(value: String): Self = StObject.set(x, "RestoreType", value.asInstanceOf[js.Any])
     
     inline def setRestoreTypeUndefined: Self = StObject.set(x, "RestoreType", js.undefined)
+    
+    inline def setServerlessV2ScalingConfiguration(value: ServerlessV2ScalingConfiguration): Self = StObject.set(x, "ServerlessV2ScalingConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setServerlessV2ScalingConfigurationUndefined: Self = StObject.set(x, "ServerlessV2ScalingConfiguration", js.undefined)
     
     inline def setSourceDBClusterIdentifier(value: String): Self = StObject.set(x, "SourceDBClusterIdentifier", value.asInstanceOf[js.Any])
     

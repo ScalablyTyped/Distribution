@@ -29,3 +29,12 @@ open class PreconditionFailed ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`412` = js.native
 }
+object PreconditionFailed {
+  
+  @JSImport("http-errors", "PreconditionFailed")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`412`] = js.native
+  @JSImport("http-errors", "PreconditionFailed")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`412`] = js.native
+}

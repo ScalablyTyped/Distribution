@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prosemirror-state" : "1.4.1"
+      "prosemirror-state" : "1.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "prosemirror-state" : "1.4.1"
+      "prosemirror-state" : "1.4.2"
     }
   ],
   "compile-devDependencies" : [

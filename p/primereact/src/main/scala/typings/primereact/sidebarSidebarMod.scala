@@ -311,7 +311,7 @@ object sidebarSidebarMod {
     
     var maskClassName: js.UndefOr[String] = js.undefined
     
-    var maskStyle: js.UndefOr[js.Object] = js.undefined
+    var maskStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var modal: js.UndefOr[Boolean] = js.undefined
     
@@ -886,7 +886,7 @@ object sidebarSidebarMod {
       
       inline def setMaskClassNameUndefined: Self = StObject.set(x, "maskClassName", js.undefined)
       
-      inline def setMaskStyle(value: js.Object): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
+      inline def setMaskStyle(value: CSSProperties): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
       
       inline def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
       

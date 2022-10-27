@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "token-introspection"
-version := "3.0-dt-20211216Z-85195f"
+version := "3.0-dt-20211216Z-9791bc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-844797",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-561f21",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "pem-jwk" % "2.0-dt-20220225Z-42bdc6",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

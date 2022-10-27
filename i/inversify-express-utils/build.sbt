@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "inversify-express-utils"
-version := "6.4.3-f76d57"
+version := "6.4.3-46974a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-cbb6c3",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-035d9a",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-7a82fe",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-87e3cc",
   "org.scalablytyped" %%% "inversify" % "6.0.1-60a540",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-c7a026",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-5e7139",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

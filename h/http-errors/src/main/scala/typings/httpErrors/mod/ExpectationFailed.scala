@@ -29,3 +29,12 @@ open class ExpectationFailed ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`417` = js.native
 }
+object ExpectationFailed {
+  
+  @JSImport("http-errors", "ExpectationFailed")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`417`] = js.native
+  @JSImport("http-errors", "ExpectationFailed")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`417`] = js.native
+}

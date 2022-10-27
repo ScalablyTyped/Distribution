@@ -29,3 +29,12 @@ open class ServiceUnavailable ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`500` = js.native
 }
+object ServiceUnavailable {
+  
+  @JSImport("http-errors", "ServiceUnavailable")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`500`] = js.native
+  @JSImport("http-errors", "ServiceUnavailable")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`500`] = js.native
+}

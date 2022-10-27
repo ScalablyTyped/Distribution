@@ -1290,7 +1290,7 @@ object accordionAccordionMod {
     
     var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[js.Object] = js.undefined
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -1298,16 +1298,18 @@ object accordionAccordionMod {
     
     var headerClassName: js.UndefOr[String] = js.undefined
     
-    var headerStyle: js.UndefOr[js.Object] = js.undefined
+    var headerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var headerTemplate: js.UndefOr[AccordionTabHeaderTemplateType] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var tabIndex: Double
   }
   object AccordionTabProps {
     
-    inline def apply(): AccordionTabProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(tabIndex: Double): AccordionTabProps = {
+      val __obj = js.Dynamic.literal(tabIndex = tabIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccordionTabProps]
     }
     
@@ -1325,7 +1327,7 @@ object accordionAccordionMod {
       
       inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      inline def setContentStyle(value: js.Object): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
       inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
@@ -1339,7 +1341,7 @@ object accordionAccordionMod {
       
       inline def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
       
-      inline def setHeaderStyle(value: js.Object): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+      inline def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
       
       inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
       
@@ -1351,9 +1353,11 @@ object accordionAccordionMod {
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     }
   }
 }

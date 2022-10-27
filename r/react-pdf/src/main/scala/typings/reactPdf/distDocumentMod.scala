@@ -66,6 +66,12 @@ object distDocumentMod {
     var error: js.UndefOr[String | ReactElement | RenderFunction] = js.undefined
     
     /**
+      * Link rel for links rendered in annotations.
+      * @default 'noopener noreferrer nofollow'
+      */
+    var externalLinkRel: js.UndefOr[String] = js.undefined
+    
+    /**
       * Defines link target for external links rendered in annotations.
       * Defaults to unset, which means that default behavior will be used.
       */
@@ -192,6 +198,10 @@ object distDocumentMod {
       inline def setErrorFunction0(value: () => Element): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setExternalLinkRel(value: String): Self = StObject.set(x, "externalLinkRel", value.asInstanceOf[js.Any])
+      
+      inline def setExternalLinkRelUndefined: Self = StObject.set(x, "externalLinkRel", js.undefined)
       
       inline def setExternalLinkTarget(value: _self | _blank | _parent | _top): Self = StObject.set(x, "externalLinkTarget", value.asInstanceOf[js.Any])
       

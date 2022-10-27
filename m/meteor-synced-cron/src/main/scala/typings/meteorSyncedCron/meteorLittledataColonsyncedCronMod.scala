@@ -1,5 +1,6 @@
 package typings.meteorSyncedCron
 
+import typings.meteorSyncedCron.anon.CollectionName
 import typings.meteorSyncedCron.anon.Job
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,6 +32,14 @@ object meteorLittledataColonsyncedCronMod {
       * https://github.com/percolatestudio/meteor-synced-cron#basics
       */
     inline def add(addOptions: Job): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(addOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
+      * You can configure SyncedCron with the `config` method.
+      *
+      * https://github.com/percolatestudio/meteor-synced-cron#configuration
+      */
+    inline def config(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[Unit]
+    inline def config(opts: CollectionName): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * find the date that the job referenced by `jobName` will run next.

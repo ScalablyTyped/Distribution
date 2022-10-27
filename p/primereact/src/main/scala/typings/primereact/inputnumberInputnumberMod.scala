@@ -310,7 +310,7 @@ object inputnumberInputnumberMod {
     
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var inputStyle: js.UndefOr[js.Object] = js.undefined
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -917,7 +917,7 @@ object inputnumberInputnumberMod {
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      inline def setInputStyle(value: js.Object): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+      inline def setInputStyle(value: CSSProperties): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
       
       inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       

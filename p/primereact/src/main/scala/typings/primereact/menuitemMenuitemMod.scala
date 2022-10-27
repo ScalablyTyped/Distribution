@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
@@ -32,7 +33,7 @@ object menuitemMenuitemMod {
     
     var separator: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var target: js.UndefOr[String] = js.undefined
     
@@ -93,7 +94,7 @@ object menuitemMenuitemMod {
       
       inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

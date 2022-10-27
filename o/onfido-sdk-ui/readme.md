@@ -1,7 +1,7 @@
 
 # Scala.js typings for onfido-sdk-ui
 
-Typings are for version 9.1.3
+Typings are for version 9.1.4
 
 ## Library description:
 JavaScript SDK view layer for Onfido identity verification

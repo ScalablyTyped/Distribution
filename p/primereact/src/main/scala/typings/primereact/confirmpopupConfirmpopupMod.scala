@@ -2,6 +2,7 @@ package typings.primereact
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.primereact.primereactStrings.self
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -137,7 +138,7 @@ object confirmpopupConfirmpopupMod {
     
     var rejectLabel: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var tagKey: js.UndefOr[String] = js.undefined
     
@@ -238,7 +239,7 @@ object confirmpopupConfirmpopupMod {
       
       inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

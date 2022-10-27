@@ -29,3 +29,12 @@ open class GatewayTimeout ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`504` = js.native
 }
+object GatewayTimeout {
+  
+  @JSImport("http-errors", "GatewayTimeout")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`504`] = js.native
+  @JSImport("http-errors", "GatewayTimeout")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`504`] = js.native
+}

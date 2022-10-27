@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "karma-jsdom-launcher"
-version := "8.0-dt-20220723Z-394213"
+version := "8.0-dt-20220723Z-4c9e87"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20220723Z-76a77a",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20220723Z-da542f",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "parse5" % "7.1.1-c1050b",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-337987")

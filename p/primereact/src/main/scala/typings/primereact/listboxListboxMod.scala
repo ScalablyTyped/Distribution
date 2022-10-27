@@ -67,6 +67,7 @@ import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
+import typings.react.mod.ChangeEvent
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.Component
@@ -80,6 +81,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.Key
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -101,7 +103,7 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
-import typings.std.KeyboardEvent
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -189,7 +191,7 @@ object listboxListboxMod {
   
   trait ListBoxFilterOptions extends StObject {
     
-    var filter: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], Unit]] = js.undefined
+    var filter: js.UndefOr[js.Function1[/* event */ js.UndefOr[ChangeEvent[HTMLInputElement]], Unit]] = js.undefined
     
     var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
@@ -202,7 +204,7 @@ object listboxListboxMod {
     
     extension [Self <: ListBoxFilterOptions](x: Self) {
       
-      inline def setFilter(value: /* event */ js.UndefOr[KeyboardEvent] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -212,7 +214,76 @@ object listboxListboxMod {
     }
   }
   
-  type ListBoxFilterTemplateType = ReactNode | (js.Function1[/* options */ ListBoxFilterOptions, ReactNode])
+  trait ListBoxFilterTemplateOptions extends StObject {
+    
+    var className: String
+    
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    var element: HTMLDivElement
+    
+    var filter: js.UndefOr[String] = js.undefined
+    
+    var filterIconClassName: String
+    
+    var filterInputChange: js.UndefOr[ChangeEvent[HTMLInputElement]] = js.undefined
+    
+    var filterInputProps: js.UndefOr[Any] = js.undefined
+    
+    var filterOptions: js.UndefOr[ListBoxFilterOptions] = js.undefined
+    
+    var filterPlaceholder: js.UndefOr[String] = js.undefined
+    
+    var filterTemplate: js.UndefOr[ListBoxFilterTemplateType] = js.undefined
+  }
+  object ListBoxFilterTemplateOptions {
+    
+    inline def apply(className: String, element: HTMLDivElement, filterIconClassName: String): ListBoxFilterTemplateOptions = {
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], filterIconClassName = filterIconClassName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ListBoxFilterTemplateOptions]
+    }
+    
+    extension [Self <: ListBoxFilterTemplateOptions](x: Self) {
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setElement(value: HTMLDivElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      
+      inline def setFilterIconClassName(value: String): Self = StObject.set(x, "filterIconClassName", value.asInstanceOf[js.Any])
+      
+      inline def setFilterInputChange(value: ChangeEvent[HTMLInputElement]): Self = StObject.set(x, "filterInputChange", value.asInstanceOf[js.Any])
+      
+      inline def setFilterInputChangeUndefined: Self = StObject.set(x, "filterInputChange", js.undefined)
+      
+      inline def setFilterInputProps(value: Any): Self = StObject.set(x, "filterInputProps", value.asInstanceOf[js.Any])
+      
+      inline def setFilterInputPropsUndefined: Self = StObject.set(x, "filterInputProps", js.undefined)
+      
+      inline def setFilterOptions(value: ListBoxFilterOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
+      
+      inline def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
+      
+      inline def setFilterPlaceholder(value: String): Self = StObject.set(x, "filterPlaceholder", value.asInstanceOf[js.Any])
+      
+      inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
+      
+      inline def setFilterTemplate(value: ListBoxFilterTemplateType): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
+      
+      inline def setFilterTemplateFunction1(value: /* options */ ListBoxFilterTemplateOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
+      
+      inline def setFilterTemplateUndefined: Self = StObject.set(x, "filterTemplate", js.undefined)
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    }
+  }
+  
+  type ListBoxFilterTemplateType = ReactNode | (js.Function1[/* options */ ListBoxFilterTemplateOptions, ReactNode])
   
   trait ListBoxFilterValueChangeParams extends StObject {
     
@@ -456,7 +527,7 @@ object listboxListboxMod {
     
     var listClassName: js.UndefOr[String] = js.undefined
     
-    var listStyle: js.UndefOr[js.Object] = js.undefined
+    var listStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var max: js.UndefOr[Double | String] = js.undefined
     
@@ -1049,7 +1120,7 @@ object listboxListboxMod {
       
       inline def setFilterTemplate(value: ListBoxFilterTemplateType): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
       
-      inline def setFilterTemplateFunction1(value: /* options */ ListBoxFilterOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
+      inline def setFilterTemplateFunction1(value: /* options */ ListBoxFilterTemplateOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
       
       inline def setFilterTemplateUndefined: Self = StObject.set(x, "filterTemplate", js.undefined)
       
@@ -1149,7 +1220,7 @@ object listboxListboxMod {
       
       inline def setListClassNameUndefined: Self = StObject.set(x, "listClassName", js.undefined)
       
-      inline def setListStyle(value: js.Object): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+      inline def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
       inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       
@@ -1327,15 +1398,15 @@ object listboxListboxMod {
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
-      inline def setOnKeyDown(value: typings.react.mod.KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      inline def setOnKeyPress(value: typings.react.mod.KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
       inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      inline def setOnKeyUp(value: typings.react.mod.KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
       inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       

@@ -346,7 +346,7 @@ object distTypesStsclientMod {
       * The fully qualified endpoint of the webservice. This is only required when using
       * a custom endpoint (for example, when using a local version of S3).
       */
-    var endpoint: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | Provider[String]])
+    var endpoint: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2])
     
     var endpointProvider: js.UndefOr[
         js.Function2[
@@ -485,7 +485,7 @@ object distTypesStsclientMod {
   object STSClientConfigType {
     
     inline def apply(
-      endpoint: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | Provider[String]]),
+      endpoint: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2]),
       requestHandler: (js.UndefOr[RequestHandler[Any, Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]
     ): STSClientConfigType = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], requestHandler = requestHandler.asInstanceOf[js.Any])
@@ -541,7 +541,7 @@ object distTypesStsclientMod {
       inline def setDisableHostPrefixUndefined: Self = StObject.set(x, "disableHostPrefix", js.undefined)
       
       inline def setEndpoint(
-        value: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | Provider[String]])
+        value: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2])
       ): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
       inline def setEndpointProvider(
@@ -731,7 +731,7 @@ object distTypesStsclientMod {
       * @deprecated Use {@link EndpointResolvedConfig.endpointProvider} instead
       */
     @JSName("endpoint")
-    var endpoint_Original: Provider[Endpoint] & (js.UndefOr[String | Provider[String]]) = js.native
+    var endpoint_Original: Provider[Endpoint] & (js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2]) = js.native
     
     /**
       * Whether the endpoint is specified by caller.

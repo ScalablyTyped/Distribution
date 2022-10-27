@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-auth-kit"
-version := "2.6.0-80d0a1"
+version := "2.6.2-3b9114"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

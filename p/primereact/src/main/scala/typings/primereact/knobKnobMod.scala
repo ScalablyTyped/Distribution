@@ -63,6 +63,7 @@ import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.Component
@@ -535,7 +536,7 @@ object knobKnobMod {
     
     var strokeWidth: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
@@ -1372,7 +1373,7 @@ object knobKnobMod {
       
       inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

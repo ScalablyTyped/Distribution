@@ -1,7 +1,7 @@
 
 # Scala.js typings for wix-style-react
 
-Typings are for version 10.59.0
+Typings are for version 10.59.1
 
 ## Library description:
 wix-style-react

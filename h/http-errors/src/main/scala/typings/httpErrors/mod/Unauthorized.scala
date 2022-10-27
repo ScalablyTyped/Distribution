@@ -29,3 +29,12 @@ open class Unauthorized ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`401` = js.native
 }
+object Unauthorized {
+  
+  @JSImport("http-errors", "Unauthorized")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`401`] = js.native
+  @JSImport("http-errors", "Unauthorized")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`401`] = js.native
+}

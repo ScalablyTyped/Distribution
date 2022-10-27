@@ -13,6 +13,8 @@ object distComponentsDebugStatsMod {
   
   trait DebugStatsProps extends StObject {
     
+    var backend: String
+    
     var detectionsPerSecond: Double
     
     var elapsedTime: Double
@@ -28,17 +30,20 @@ object distComponentsDebugStatsMod {
   object DebugStatsProps {
     
     inline def apply(
+      backend: String,
       detectionsPerSecond: Double,
       elapsedTime: Double,
       inferenceTime: Double,
       videoHeight: Double,
       videoWidth: Double
     ): DebugStatsProps = {
-      val __obj = js.Dynamic.literal(detectionsPerSecond = detectionsPerSecond.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], inferenceTime = inferenceTime.asInstanceOf[js.Any], videoHeight = videoHeight.asInstanceOf[js.Any], videoWidth = videoWidth.asInstanceOf[js.Any], faceRotation = null)
+      val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], detectionsPerSecond = detectionsPerSecond.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], inferenceTime = inferenceTime.asInstanceOf[js.Any], videoHeight = videoHeight.asInstanceOf[js.Any], videoWidth = videoWidth.asInstanceOf[js.Any], faceRotation = null)
       __obj.asInstanceOf[DebugStatsProps]
     }
     
     extension [Self <: DebugStatsProps](x: Self) {
+      
+      inline def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
       inline def setDetectionsPerSecond(value: Double): Self = StObject.set(x, "detectionsPerSecond", value.asInstanceOf[js.Any])
       

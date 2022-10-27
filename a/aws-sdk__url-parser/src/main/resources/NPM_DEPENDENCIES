@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/url-parser" : "3.193.0"
+      "@aws-sdk/url-parser" : "3.197.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/url-parser" : "3.193.0"
+      "@aws-sdk/url-parser" : "3.197.0"
     }
   ],
   "compile-devDependencies" : [

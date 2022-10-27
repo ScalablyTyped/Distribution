@@ -29,3 +29,12 @@ open class NotImplemented ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`501` = js.native
 }
+object NotImplemented {
+  
+  @JSImport("http-errors", "NotImplemented")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`501`] = js.native
+  @JSImport("http-errors", "NotImplemented")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`501`] = js.native
+}

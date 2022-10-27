@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "handlebars-webpack-plugin"
-version := "2.2-dt-20211202Z-83129f"
+version := "2.2-dt-20211202Z-3456cb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-20bcca",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-fcbdcb",
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
   "org.scalablytyped" %%% "handlebars" % "4.7.7-960265",
   "org.scalablytyped" %%% "html-minifier-terser" % "7.0-dt-20220815Z-4d1ba9",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "5.5.0-ab2a62",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "5.5.0-3e9015",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
-  "org.scalablytyped" %%% "re2" % "1.17.7-5ddb3b",
-  "org.scalablytyped" %%% "schema-utils" % "4.0.0-1e0b25",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "re2" % "1.17.7-18b669",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-9310ee",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tapable" % "2.2.1-52b605",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092",
-  "org.scalablytyped" %%% "webpack" % "5.74.0-e8db2b")
+  "org.scalablytyped" %%% "webpack" % "5.74.0-641d67")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

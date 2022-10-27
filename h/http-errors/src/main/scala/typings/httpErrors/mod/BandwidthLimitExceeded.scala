@@ -29,3 +29,12 @@ open class BandwidthLimitExceeded ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`509` = js.native
 }
+object BandwidthLimitExceeded {
+  
+  @JSImport("http-errors", "BandwidthLimitExceeded")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`509`] = js.native
+  @JSImport("http-errors", "BandwidthLimitExceeded")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`509`] = js.native
+}

@@ -21,10 +21,12 @@ trait HttpError[N /* <: Double */]
 }
 object HttpError {
   
-  inline def apply[N /* <: Double */](expose: Boolean, message: String, name: String, status: N, statusCode: N): HttpError[N] = {
-    val __obj = js.Dynamic.literal(expose = expose.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-    __obj.asInstanceOf[HttpError[N]]
-  }
+  @JSImport("http-errors", "HttpError")
+  @js.native
+  def apply(): HttpError[Double] = js.native
+  @JSImport("http-errors", "HttpError")
+  @js.native
+  def apply(msg: String): HttpError[Double] = js.native
   
   extension [Self <: HttpError[?], N /* <: Double */](x: Self & HttpError[N]) {
     

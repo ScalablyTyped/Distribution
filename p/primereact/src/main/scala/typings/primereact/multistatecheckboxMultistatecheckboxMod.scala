@@ -231,14 +231,14 @@ object multistatecheckboxMultistatecheckboxMod {
     
     var icon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiStateCheckboxProps> */ Any
     
-    var style: js.Object
+    var style: CSSProperties
   }
   object MultiStateCheckboxOption {
     
     inline def apply(
       className: String,
       icon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiStateCheckboxProps> */ Any,
-      style: js.Object
+      style: CSSProperties
     ): MultiStateCheckboxOption = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiStateCheckboxOption]
@@ -252,7 +252,7 @@ object multistatecheckboxMultistatecheckboxMod {
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiStateCheckboxProps> */ Any
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   

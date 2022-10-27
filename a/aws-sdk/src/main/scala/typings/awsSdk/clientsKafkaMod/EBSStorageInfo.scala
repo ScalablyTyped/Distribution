@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EBSStorageInfo extends StObject {
   
   /**
-    * EBS volume provisioned throughput information.
+    * 
+    EBS volume provisioned throughput information.
+    
     */
   var ProvisionedThroughput: js.UndefOr[typings.awsSdk.clientsKafkaMod.ProvisionedThroughput] = js.undefined
   

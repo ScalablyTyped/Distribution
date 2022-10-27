@@ -10,14 +10,18 @@ object anon {
   
   trait ClientID extends StObject {
     
-    var clientID: js.UndefOr[Double | String | Null] = js.undefined
+    var clientID: Double | String
     
-    var version: js.UndefOr[Double | Null] = js.undefined
+    var origins: js.Array[Transaction]
+    
+    var steps: js.Array[Step]
+    
+    var version: Double
   }
   object ClientID {
     
-    inline def apply(): ClientID = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(clientID: Double | String, origins: js.Array[Transaction], steps: js.Array[Step], version: Double): ClientID = {
+      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientID]
     }
     
@@ -25,20 +29,28 @@ object anon {
       
       inline def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
-      inline def setClientIDNull: Self = StObject.set(x, "clientID", null)
+      inline def setOrigins(value: js.Array[Transaction]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
-      inline def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
+      inline def setOriginsVarargs(value: Transaction*): Self = StObject.set(x, "origins", js.Array(value*))
+      
+      inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      
+      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-      
-      inline def setVersionNull: Self = StObject.set(x, "version", null)
-      
-      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
   trait MapSelectionBackward extends StObject {
     
+    /**
+      When enabled (the default is `false`), if the current
+      selection is a [text selection](https://prosemirror.net/docs/ref/#state.TextSelection), its
+      sides are mapped with a negative bias for this transaction, so
+      that content inserted at the cursor ends up after the cursor.
+      Users usually prefer this, but it isn't done by default for
+      reasons of backwards compatibility.
+      */
     var mapSelectionBackward: js.UndefOr[Boolean] = js.undefined
   }
   object MapSelectionBackward {
@@ -53,39 +65,6 @@ object anon {
       inline def setMapSelectionBackward(value: Boolean): Self = StObject.set(x, "mapSelectionBackward", value.asInstanceOf[js.Any])
       
       inline def setMapSelectionBackwardUndefined: Self = StObject.set(x, "mapSelectionBackward", js.undefined)
-    }
-  }
-  
-  trait Origins extends StObject {
-    
-    var clientID: Double | String
-    
-    var origins: js.Array[Transaction]
-    
-    var steps: js.Array[Step]
-    
-    var version: Double
-  }
-  object Origins {
-    
-    inline def apply(clientID: Double | String, origins: js.Array[Transaction], steps: js.Array[Step], version: Double): Origins = {
-      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Origins]
-    }
-    
-    extension [Self <: Origins](x: Self) {
-      
-      inline def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
-      
-      inline def setOrigins(value: js.Array[Transaction]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
-      
-      inline def setOriginsVarargs(value: Transaction*): Self = StObject.set(x, "origins", js.Array(value*))
-      
-      inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
-      
-      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
-      
-      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

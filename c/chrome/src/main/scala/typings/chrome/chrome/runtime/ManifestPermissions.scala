@@ -36,6 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chrome.chromeStrings.geolocation
   - typings.chrome.chromeStrings.history
   - typings.chrome.chromeStrings.identity
+  - typings.chrome.chromeStrings.identityDotemail
   - typings.chrome.chromeStrings.idle
   - typings.chrome.chromeStrings.loginState
   - typings.chrome.chromeStrings.management
@@ -136,6 +137,8 @@ object ManifestPermissions {
   inline def history: typings.chrome.chromeStrings.history = "history".asInstanceOf[typings.chrome.chromeStrings.history]
   
   inline def identity: typings.chrome.chromeStrings.identity = "identity".asInstanceOf[typings.chrome.chromeStrings.identity]
+  
+  inline def identityDotemail: typings.chrome.chromeStrings.identityDotemail = "identity.email".asInstanceOf[typings.chrome.chromeStrings.identityDotemail]
   
   inline def idle: typings.chrome.chromeStrings.idle = "idle".asInstanceOf[typings.chrome.chromeStrings.idle]
   

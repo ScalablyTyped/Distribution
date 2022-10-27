@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "html-to-pdfmake"
-version := "2.1-dt-20220723Z-a245e8"
+version := "2.1-dt-20220723Z-8ba407"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20220723Z-76a77a",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20220723Z-da542f",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "parse5" % "7.1.1-c1050b",
-  "org.scalablytyped" %%% "pdfkit" % "v0.12.3-dt-20221016Z-a16f44",
-  "org.scalablytyped" %%% "pdfmake" % "0.2-dt-20220731Z-03869a",
+  "org.scalablytyped" %%% "pdfkit" % "v0.12.3-dt-20221016Z-68c965",
+  "org.scalablytyped" %%% "pdfmake" % "0.2-dt-20220731Z-60895a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-337987")
 publishArtifact in packageDoc := false

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo__metro-config"
-version := "0.4.0-63cc4c"
+version := "0.4.0-17b480"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,15 +12,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-c402ef",
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-1aedc0",
   "org.scalablytyped" %%% "babel__types" % "7.19.4-ea0dd0",
-  "org.scalablytyped" %%% "metro" % "0.66-dt-20220106Z-4a6d8b",
+  "org.scalablytyped" %%% "metro" % "0.66-dt-20220106Z-366150",
   "org.scalablytyped" %%% "metro-babel-transformer" % "0.66-dt-20211202Z-9a2f2c",
-  "org.scalablytyped" %%% "metro-cache" % "0.66-dt-20211202Z-8ce21a",
-  "org.scalablytyped" %%% "metro-config" % "0.66-dt-20211202Z-2c83ee",
-  "org.scalablytyped" %%% "metro-core" % "0.66-dt-20211202Z-731ecd",
+  "org.scalablytyped" %%% "metro-cache" % "0.66-dt-20211202Z-b7495b",
+  "org.scalablytyped" %%% "metro-config" % "0.66-dt-20211202Z-4e47af",
+  "org.scalablytyped" %%% "metro-core" % "0.66-dt-20211202Z-3f4b57",
   "org.scalablytyped" %%% "metro-resolver" % "0.66-dt-20211202Z-99bd9c",
   "org.scalablytyped" %%% "metro-source-map" % "0.66-dt-20211202Z-b51cdd",
-  "org.scalablytyped" %%% "metro-transform-worker" % "0.66-dt-20211202Z-6eac02",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "metro-transform-worker" % "0.66-dt-20211202Z-3a2cc9",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -1,26 +1,18 @@
 package typings.reactSelect
 
-import typings.emotionUtils.mod.EmotionCache
-import typings.react.mod.Component
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distDeclarationsSrcNonceProviderMod {
   
-  @JSImport("react-select/dist/declarations/src/NonceProvider", JSImport.Default)
+  @JSImport("react-select/dist/declarations/src/NonceProvider", JSImport.Namespace)
   @js.native
-  open class default protected () extends NonceProvider {
-    def this(props: NonceProviderProps) = this()
-  }
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait NonceProvider
-    extends Component[NonceProviderProps, js.Object, Any] {
-    
-    def createEmotionCache(nonce: String, key: String): EmotionCache = js.native
-  }
+  inline def default(param0: NonceProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait NonceProviderProps extends StObject {
     

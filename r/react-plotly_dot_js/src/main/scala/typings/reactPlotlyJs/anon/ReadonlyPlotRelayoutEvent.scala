@@ -6,7 +6,7 @@ import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.anon.PartialHoverLabel
 import typings.plotlyJs.anon.PartialImage
 import typings.plotlyJs.anon.PartialLayoutAxisAngle
-import typings.plotlyJs.anon.PartialLegend
+import typings.plotlyJs.anon.PartialLegendBgcolor
 import typings.plotlyJs.anon.PartialMapboxAccesstoken
 import typings.plotlyJs.anon.PartialMargin
 import typings.plotlyJs.anon.PartialModeBar
@@ -103,7 +103,7 @@ trait ReadonlyPlotRelayoutEvent extends StObject {
   
   val images: js.UndefOr[js.Array[PartialImage]] = js.undefined
   
-  val legend: js.UndefOr[PartialLegend] = js.undefined
+  val legend: js.UndefOr[PartialLegendBgcolor] = js.undefined
   
   val mapbox: js.UndefOr[PartialMapboxAccesstoken] = js.undefined
   
@@ -356,7 +356,7 @@ object ReadonlyPlotRelayoutEvent {
     
     inline def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value*))
     
-    inline def setLegend(value: PartialLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: PartialLegendBgcolor): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     

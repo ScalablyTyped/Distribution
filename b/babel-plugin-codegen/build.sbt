@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel-plugin-codegen"
-version := "4.1.5-c2fa5b"
+version := "4.1.5-9b56ee"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-c402ef",
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-1aedc0",
   "org.scalablytyped" %%% "babel__types" % "7.19.4-ea0dd0",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "type-fest" % "3.1.0-3dc798")
 publishArtifact in packageDoc := false

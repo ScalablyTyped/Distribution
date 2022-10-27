@@ -5,6 +5,10 @@ import typings.prosemirrorModel.mod.DOMParser
 import typings.prosemirrorModel.mod.DOMSerializer
 import typings.prosemirrorModel.mod.ResolvedPos
 import typings.prosemirrorModel.mod.Slice
+import typings.prosemirrorState.mod.EditorState
+import typings.prosemirrorState.mod.Plugin
+import typings.prosemirrorState.mod.Selection
+import typings.prosemirrorState.mod.Transaction
 import typings.prosemirrorView.mod.DOMNode
 import typings.prosemirrorView.mod.DecorationSource
 import typings.prosemirrorView.mod.MarkViewConstructor
@@ -22,11 +26,9 @@ import typings.std.HTMLElement
 import typings.std.InputEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
-import typings.std.Plugin
 import typings.std.PointerEvent
 import typings.std.ProgressEvent
 import typings.std.SecurityPolicyViolationEvent
-import typings.std.Selection
 import typings.std.SubmitEvent
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
@@ -279,10 +281,7 @@ object anon {
   trait PartialDirectEditorProps extends StObject {
     
     var attributes: js.UndefOr[
-        StringDictionary[String] | (js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState */ /* state */ Any, 
-          StringDictionary[String]
-        ])
+        StringDictionary[String] | (js.Function1[/* state */ EditorState, StringDictionary[String]])
       ] = js.undefined
     
     var clipboardParser: js.UndefOr[DOMParser] = js.undefined
@@ -290,16 +289,19 @@ object anon {
     var clipboardSerializer: js.UndefOr[DOMSerializer] = js.undefined
     
     var clipboardTextParser: js.UndefOr[
-        js.ThisFunction3[
+        js.ThisFunction4[
           /* this */ Any, 
           /* text */ String, 
           /* $context */ ResolvedPos, 
           /* plain */ Boolean, 
+          /* view */ this.type, 
           Slice
         ]
       ] = js.undefined
     
-    var clipboardTextSerializer: js.UndefOr[js.ThisFunction1[/* this */ Any, /* content */ Slice, String]] = js.undefined
+    var clipboardTextSerializer: js.UndefOr[
+        js.ThisFunction2[/* this */ Any, /* content */ Slice, /* view */ this.type, String]
+      ] = js.undefined
     
     var createSelectionBetween: js.UndefOr[
         js.ThisFunction3[
@@ -312,29 +314,14 @@ object anon {
       ] = js.undefined
     
     var decorations: js.UndefOr[
-        js.ThisFunction1[
-          /* this */ Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState */ /* state */ Any, 
-          js.UndefOr[DecorationSource | Null]
-        ]
+        js.ThisFunction1[/* this */ Any, /* state */ EditorState, js.UndefOr[DecorationSource | Null]]
       ] = js.undefined
     
-    var dispatchTransaction: js.UndefOr[
-        js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Transaction */ /* tr */ Any, 
-          Unit
-        ]
-      ] = js.undefined
+    var dispatchTransaction: js.UndefOr[js.Function1[/* tr */ Transaction, Unit]] = js.undefined
     
     var domParser: js.UndefOr[DOMParser] = js.undefined
     
-    var editable: js.UndefOr[
-        js.ThisFunction1[
-          /* this */ Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState */ /* state */ Any, 
-          Boolean
-        ]
-      ] = js.undefined
+    var editable: js.UndefOr[js.ThisFunction1[/* this */ Any, /* state */ EditorState, Boolean]] = js.undefined
     
     var handleClick: js.UndefOr[
         js.ThisFunction3[
@@ -453,23 +440,25 @@ object anon {
     
     var nodeViews: js.UndefOr[StringDictionary[NodeViewConstructor]] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
+    var plugins: js.UndefOr[js.Array[Plugin[Any]]] = js.undefined
     
     var scrollMargin: js.UndefOr[Double | Bottom] = js.undefined
     
     var scrollThreshold: js.UndefOr[Double | Bottom] = js.undefined
     
-    var state: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState */ Any
+    var state: js.UndefOr[EditorState] = js.undefined
+    
+    var transformCopied: js.UndefOr[js.ThisFunction2[/* this */ Any, /* slice */ Slice, /* view */ this.type, Slice]] = js.undefined
+    
+    var transformPasted: js.UndefOr[js.ThisFunction2[/* this */ Any, /* slice */ Slice, /* view */ this.type, Slice]] = js.undefined
+    
+    var transformPastedHTML: js.UndefOr[
+        js.ThisFunction2[/* this */ Any, /* html */ String, /* view */ this.type, String]
       ] = js.undefined
     
-    var transformCopied: js.UndefOr[js.ThisFunction1[/* this */ Any, /* slice */ Slice, Slice]] = js.undefined
-    
-    var transformPasted: js.UndefOr[js.ThisFunction1[/* this */ Any, /* slice */ Slice, Slice]] = js.undefined
-    
-    var transformPastedHTML: js.UndefOr[js.ThisFunction1[/* this */ Any, /* html */ String, String]] = js.undefined
-    
-    var transformPastedText: js.UndefOr[js.ThisFunction2[/* this */ Any, /* text */ String, /* plain */ Boolean, String]] = js.undefined
+    var transformPastedText: js.UndefOr[
+        js.ThisFunction3[/* this */ Any, /* text */ String, /* plain */ Boolean, /* view */ this.type, String]
+      ] = js.undefined
   }
   object PartialDirectEditorProps {
     
@@ -481,15 +470,10 @@ object anon {
     extension [Self <: PartialDirectEditorProps](x: Self) {
       
       inline def setAttributes(
-        value: StringDictionary[String] | (js.Function1[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState */ /* state */ Any, 
-              StringDictionary[String]
-            ])
+        value: StringDictionary[String] | (js.Function1[/* state */ EditorState, StringDictionary[String]])
       ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesFunction1(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState */ /* state */ Any => StringDictionary[String]
-      ): Self = StObject.set(x, "attributes", js.Any.fromFunction1(value))
+      inline def setAttributesFunction1(value: /* state */ EditorState => StringDictionary[String]): Self = StObject.set(x, "attributes", js.Any.fromFunction1(value))
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
@@ -502,18 +486,19 @@ object anon {
       inline def setClipboardSerializerUndefined: Self = StObject.set(x, "clipboardSerializer", js.undefined)
       
       inline def setClipboardTextParser(
-        value: js.ThisFunction3[
+        value: js.ThisFunction4[
               /* this */ Any, 
               /* text */ String, 
               /* $context */ ResolvedPos, 
               /* plain */ Boolean, 
+              PartialDirectEditorProps, 
               Slice
             ]
       ): Self = StObject.set(x, "clipboardTextParser", value.asInstanceOf[js.Any])
       
       inline def setClipboardTextParserUndefined: Self = StObject.set(x, "clipboardTextParser", js.undefined)
       
-      inline def setClipboardTextSerializer(value: js.ThisFunction1[/* this */ Any, /* content */ Slice, String]): Self = StObject.set(x, "clipboardTextSerializer", value.asInstanceOf[js.Any])
+      inline def setClipboardTextSerializer(value: js.ThisFunction2[/* this */ Any, /* content */ Slice, PartialDirectEditorProps, String]): Self = StObject.set(x, "clipboardTextSerializer", value.asInstanceOf[js.Any])
       
       inline def setClipboardTextSerializerUndefined: Self = StObject.set(x, "clipboardTextSerializer", js.undefined)
       
@@ -530,18 +515,12 @@ object anon {
       inline def setCreateSelectionBetweenUndefined: Self = StObject.set(x, "createSelectionBetween", js.undefined)
       
       inline def setDecorations(
-        value: js.ThisFunction1[
-              /* this */ Any, 
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState */ /* state */ Any, 
-              js.UndefOr[DecorationSource | Null]
-            ]
+        value: js.ThisFunction1[/* this */ Any, /* state */ EditorState, js.UndefOr[DecorationSource | Null]]
       ): Self = StObject.set(x, "decorations", value.asInstanceOf[js.Any])
       
       inline def setDecorationsUndefined: Self = StObject.set(x, "decorations", js.undefined)
       
-      inline def setDispatchTransaction(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Transaction */ /* tr */ Any => Unit
-      ): Self = StObject.set(x, "dispatchTransaction", js.Any.fromFunction1(value))
+      inline def setDispatchTransaction(value: /* tr */ Transaction => Unit): Self = StObject.set(x, "dispatchTransaction", js.Any.fromFunction1(value))
       
       inline def setDispatchTransactionUndefined: Self = StObject.set(x, "dispatchTransaction", js.undefined)
       
@@ -549,13 +528,7 @@ object anon {
       
       inline def setDomParserUndefined: Self = StObject.set(x, "domParser", js.undefined)
       
-      inline def setEditable(
-        value: js.ThisFunction1[
-              /* this */ Any, 
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState */ /* state */ Any, 
-              Boolean
-            ]
-      ): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: js.ThisFunction1[/* this */ Any, /* state */ EditorState, Boolean]): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
       inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
       
@@ -706,11 +679,11 @@ object anon {
       
       inline def setNodeViewsUndefined: Self = StObject.set(x, "nodeViews", js.undefined)
       
-      inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Plugin[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value*))
+      inline def setPluginsVarargs(value: Plugin[Any]*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setScrollMargin(value: Double | Bottom): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
       
@@ -720,23 +693,23 @@ object anon {
       
       inline def setScrollThresholdUndefined: Self = StObject.set(x, "scrollThreshold", js.undefined)
       
-      inline def setState(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState */ Any
-      ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: EditorState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      inline def setTransformCopied(value: js.ThisFunction1[/* this */ Any, /* slice */ Slice, Slice]): Self = StObject.set(x, "transformCopied", value.asInstanceOf[js.Any])
+      inline def setTransformCopied(value: js.ThisFunction2[/* this */ Any, /* slice */ Slice, PartialDirectEditorProps, Slice]): Self = StObject.set(x, "transformCopied", value.asInstanceOf[js.Any])
       
       inline def setTransformCopiedUndefined: Self = StObject.set(x, "transformCopied", js.undefined)
       
-      inline def setTransformPasted(value: js.ThisFunction1[/* this */ Any, /* slice */ Slice, Slice]): Self = StObject.set(x, "transformPasted", value.asInstanceOf[js.Any])
+      inline def setTransformPasted(value: js.ThisFunction2[/* this */ Any, /* slice */ Slice, PartialDirectEditorProps, Slice]): Self = StObject.set(x, "transformPasted", value.asInstanceOf[js.Any])
       
-      inline def setTransformPastedHTML(value: js.ThisFunction1[/* this */ Any, /* html */ String, String]): Self = StObject.set(x, "transformPastedHTML", value.asInstanceOf[js.Any])
+      inline def setTransformPastedHTML(value: js.ThisFunction2[/* this */ Any, /* html */ String, PartialDirectEditorProps, String]): Self = StObject.set(x, "transformPastedHTML", value.asInstanceOf[js.Any])
       
       inline def setTransformPastedHTMLUndefined: Self = StObject.set(x, "transformPastedHTML", js.undefined)
       
-      inline def setTransformPastedText(value: js.ThisFunction2[/* this */ Any, /* text */ String, /* plain */ Boolean, String]): Self = StObject.set(x, "transformPastedText", value.asInstanceOf[js.Any])
+      inline def setTransformPastedText(
+        value: js.ThisFunction3[/* this */ Any, /* text */ String, /* plain */ Boolean, PartialDirectEditorProps, String]
+      ): Self = StObject.set(x, "transformPastedText", value.asInstanceOf[js.Any])
       
       inline def setTransformPastedTextUndefined: Self = StObject.set(x, "transformPastedText", js.undefined)
       

@@ -1,6 +1,8 @@
 package typings.awsSdkClientSts
 
 import typings.awsSdkClientSts.anon.DefaultSigningName
+import typings.awsSdkTypes.distTypesEndpointMod.EndpointV2
+import typings.awsSdkTypes.distTypesHttpMod.Endpoint
 import typings.awsSdkTypes.distTypesUtilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +18,7 @@ object distTypesEndpointEndpointParametersMod {
   
   trait ClientInputEndpointParameters extends StObject {
     
-    var endpoint: js.UndefOr[String | Provider[String]] = js.undefined
+    var endpoint: js.UndefOr[String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2] = js.undefined
     
     var region: js.UndefOr[String | Provider[String]] = js.undefined
     
@@ -35,9 +37,9 @@ object distTypesEndpointEndpointParametersMod {
     
     extension [Self <: ClientInputEndpointParameters](x: Self) {
       
-      inline def setEndpoint(value: String | Provider[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      inline def setEndpointFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
+      inline def setEndpointFunction0(value: () => js.Promise[Endpoint | EndpointV2 | String]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
       inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       

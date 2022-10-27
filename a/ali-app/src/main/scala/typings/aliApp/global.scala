@@ -36,6 +36,7 @@ import typings.aliApp.my.CompressImageOptions
 import typings.aliApp.my.ConnectSocketOptions
 import typings.aliApp.my.ConvasContext
 import typings.aliApp.my.DownloadFileOptions
+import typings.aliApp.my.GenerateImageFromCodeOptions
 import typings.aliApp.my.GetAuthCodeOptions
 import typings.aliApp.my.GetAuthUserInfoOptions
 import typings.aliApp.my.GetBLEDeviceCharacteristicsOptions
@@ -94,6 +95,7 @@ import typings.aliApp.my.RequestOptions
 import typings.aliApp.my.RsaOptions
 import typings.aliApp.my.SaveFileOptions
 import typings.aliApp.my.SaveImageOptions
+import typings.aliApp.my.SaveImageToPhotosAlbumOptions
 import typings.aliApp.my.ScanOptions
 import typings.aliApp.my.SelectorQuery
 import typings.aliApp.my.SendSocketMessageOptions
@@ -311,6 +313,12 @@ object global {
     inline def downloadFile(options: DownloadFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
+      * 生成二维码，由客户端生成，速度快且不耗流量。文档详见(https://opendocs.alipay.com/mini/api/media/image/my.generateimagefromcode)
+      * @param options
+      */
+    inline def generateImageFromCode(options: GenerateImageFromCodeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateImageFromCode")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
       * 获取授权码。
       * 详细用户授权接入参考 [指引](https://docs.alipay.com/mini/introduce/auth)。
       */
@@ -361,7 +369,7 @@ object global {
     inline def getFileInfo(options: GetFileInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * 获取图片信息
+      * 获取图片信息。文档详见(https://opendocs.alipay.com/mini/api/media/image/my.getimageinfo)
       */
     inline def getImageInfo(options: GetImageInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -766,9 +774,16 @@ object global {
     inline def saveFile(options: SaveFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveFile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * 保存在线图片到手机相册。
+      * @deprecated
+      * 保存在线图片到手机相册。文档详见(https://opendocs.alipay.com/mini/api/media/image/my.saveimage)
       */
     inline def saveImage(options: SaveImageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveImage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
+      * 保存在线图片到手机相册。文档详见(https://opendocs.alipay.com/mini/api/media/image/my.saveImagetophotosalbum)
+      * @param options
+      */
+    inline def saveImageToPhotosAlbum(options: SaveImageToPhotosAlbumOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveImageToPhotosAlbum")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 调起客户端扫码界面，扫码成功后返回对应的结果

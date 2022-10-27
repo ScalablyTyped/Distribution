@@ -29,3 +29,12 @@ open class UnsupportedMediaType ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`415` = js.native
 }
+object UnsupportedMediaType {
+  
+  @JSImport("http-errors", "UnsupportedMediaType")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`415`] = js.native
+  @JSImport("http-errors", "UnsupportedMediaType")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`415`] = js.native
+}

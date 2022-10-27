@@ -29,3 +29,12 @@ open class Gone ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`410` = js.native
 }
+object Gone {
+  
+  @JSImport("http-errors", "Gone")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`410`] = js.native
+  @JSImport("http-errors", "Gone")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`410`] = js.native
+}

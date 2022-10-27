@@ -1,13 +1,10 @@
 package typings.prosemirrorCommands
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.prosemirrorModel.mod.Attrs
 import typings.prosemirrorModel.mod.MarkType
 import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.NodeType
-import typings.prosemirrorModel.mod.Schema
-import typings.prosemirrorState.mod.EditorState
-import typings.prosemirrorState.mod.Transaction
-import typings.prosemirrorView.mod.EditorView
+import typings.prosemirrorState.mod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,175 +15,205 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def autoJoin[S /* <: Schema[Any, Any] */](
-    command: js.Function2[
-      /* state */ EditorState, 
-      /* p1 */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-      Boolean
-    ],
-    isJoinable: js.Array[String]
-  ): js.Function2[
-    /* state */ EditorState, 
-    /* p1 */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("autoJoin")(command.asInstanceOf[js.Any], isJoinable.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* p1 */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
-  inline def autoJoin[S /* <: Schema[Any, Any] */](
-    command: js.Function2[
-      /* state */ EditorState, 
-      /* p1 */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-      Boolean
-    ],
-    isJoinable: js.Function2[/* before */ Node, /* after */ Node, Boolean]
-  ): js.Function2[
-    /* state */ EditorState, 
-    /* p1 */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("autoJoin")(command.asInstanceOf[js.Any], isJoinable.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* p1 */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
+  inline def autoJoin(command: Command, isJoinable: js.Array[String]): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("autoJoin")(command.asInstanceOf[js.Any], isJoinable.asInstanceOf[js.Any])).asInstanceOf[Command]
+  /**
+  Wrap a command so that, when it produces a transform that causes
+  two joinable nodes to end up next to each other, those are joined.
+  Nodes are considered joinable when they are of the same type and
+  when the `isJoinable` predicate returns true for them or, if an
+  array of strings was passed, if their node type name is in that
+  array.
+  */
+  inline def autoJoin(command: Command, isJoinable: js.Function2[/* before */ Node, /* after */ Node, Boolean]): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("autoJoin")(command.asInstanceOf[js.Any], isJoinable.asInstanceOf[js.Any])).asInstanceOf[Command]
   
-  @JSImport("prosemirror-commands", "baseKeymap")
+  /**
+  Combine a number of command functions into a single function (which
+  calls them one by one until one returns true).
+  */
+  inline def chainCommands(commands: Command*): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("chainCommands")(commands.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Command]
+  
+  /**
+  If a block node is selected, create an empty paragraph before (if
+  it is its parent's first child) or after it.
+  */
+  @JSImport("prosemirror-commands", "createParagraphNear")
   @js.native
-  def baseKeymap: Keymap[Any] = js.native
-  inline def baseKeymap_=(x: Keymap[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseKeymap")(x.asInstanceOf[js.Any])
+  val createParagraphNear: Command = js.native
   
-  inline def chainCommands[S /* <: Schema[Any, Any] */](commands: Command[S]*): Command[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainCommands")(commands.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Command[S]]
-  
-  inline def createParagraphNear[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("createParagraphNear")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def createParagraphNear[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("createParagraphNear")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def deleteSelection[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteSelection")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def deleteSelection[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteSelection")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def exitCode[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exitCode")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def exitCode[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("exitCode")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def joinBackward[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("joinBackward")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def joinBackward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("joinBackward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def joinBackward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit], view: EditorView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("joinBackward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def joinBackward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: Unit, view: EditorView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("joinBackward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def joinDown[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("joinDown")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def joinDown[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("joinDown")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def joinForward[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("joinForward")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def joinForward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("joinForward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def joinForward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit], view: EditorView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("joinForward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def joinForward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: Unit, view: EditorView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("joinForward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def joinUp[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("joinUp")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def joinUp[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("joinUp")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def lift[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def lift[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lift")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def liftEmptyBlock[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("liftEmptyBlock")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def liftEmptyBlock[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("liftEmptyBlock")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  @JSImport("prosemirror-commands", "macBaseKeymap")
+  /**
+  Delete the selection, if there is one.
+  */
+  @JSImport("prosemirror-commands", "deleteSelection")
   @js.native
-  def macBaseKeymap: Keymap[Any] = js.native
-  inline def macBaseKeymap_=(x: Keymap[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("macBaseKeymap")(x.asInstanceOf[js.Any])
+  val deleteSelection: Command = js.native
   
-  inline def newlineInCode[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("newlineInCode")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def newlineInCode[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("newlineInCode")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  @JSImport("prosemirror-commands", "pcBaseKeymap")
+  /**
+  When the selection is in a node with a truthy
+  [`code`](https://prosemirror.net/docs/ref/#model.NodeSpec.code) property in its spec, create a
+  default block after the code block, and move the cursor there.
+  */
+  @JSImport("prosemirror-commands", "exitCode")
   @js.native
-  def pcBaseKeymap: Keymap[Any] = js.native
-  inline def pcBaseKeymap_=(x: Keymap[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pcBaseKeymap")(x.asInstanceOf[js.Any])
+  val exitCode: Command = js.native
   
-  inline def selectAll[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def selectAll[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  /**
+  If the selection is empty and at the start of a textblock, try to
+  reduce the distance between that block and the one before it—if
+  there's a block directly before it that can be joined, join them.
+  If not, try to move the selected block closer to the next one in
+  the document structure by lifting it out of its parent or moving it
+  into a parent of the previous block. Will use the view for accurate
+  (bidi-aware) start-of-textblock detection if given.
+  */
+  @JSImport("prosemirror-commands", "joinBackward")
+  @js.native
+  val joinBackward: Command = js.native
   
-  inline def selectNodeBackward[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("selectNodeBackward")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def selectNodeBackward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectNodeBackward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def selectNodeBackward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit], view: EditorView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectNodeBackward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def selectNodeBackward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: Unit, view: EditorView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectNodeBackward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  /**
+  Join the selected block, or the closest ancestor of the selection
+  that can be joined, with the sibling after it.
+  */
+  @JSImport("prosemirror-commands", "joinDown")
+  @js.native
+  val joinDown: Command = js.native
   
-  inline def selectNodeForward[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("selectNodeForward")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def selectNodeForward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectNodeForward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def selectNodeForward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit], view: EditorView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectNodeForward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def selectNodeForward[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: Unit, view: EditorView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectNodeForward")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  /**
+  If the selection is empty and the cursor is at the end of a
+  textblock, try to reduce or remove the boundary between that block
+  and the one after it, either by joining them or by moving the other
+  block closer to this one in the tree structure. Will use the view
+  for accurate start-of-textblock detection if given.
+  */
+  @JSImport("prosemirror-commands", "joinForward")
+  @js.native
+  val joinForward: Command = js.native
   
-  inline def selectParentNode[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("selectParentNode")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def selectParentNode[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectParentNode")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  /**
+  Join the selected block or, if there is a text selection, the
+  closest ancestor block of the selection that can be joined, with
+  the sibling above it.
+  */
+  @JSImport("prosemirror-commands", "joinUp")
+  @js.native
+  val joinUp: Command = js.native
   
-  inline def setBlockType[S /* <: Schema[Any, Any] */](nodeType: NodeType): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setBlockType")(nodeType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
-  inline def setBlockType[S /* <: Schema[Any, Any] */](nodeType: NodeType, attrs: StringDictionary[Any]): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setBlockType")(nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
+  /**
+  Lift the selected block, or the closest ancestor block of the
+  selection that can be lifted, out of its parent node.
+  */
+  @JSImport("prosemirror-commands", "lift")
+  @js.native
+  val lift: Command = js.native
   
-  inline def splitBlock[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("splitBlock")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def splitBlock[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("splitBlock")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  /**
+  If the cursor is in an empty textblock that can be lifted, lift the
+  block.
+  */
+  @JSImport("prosemirror-commands", "liftEmptyBlock")
+  @js.native
+  val liftEmptyBlock: Command = js.native
   
-  inline def splitBlockKeepMarks[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("splitBlockKeepMarks")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def splitBlockKeepMarks[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* tr */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("splitBlockKeepMarks")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  /**
+  If the selection is in a node whose type has a truthy
+  [`code`](https://prosemirror.net/docs/ref/#model.NodeSpec.code) property in its spec, replace the
+  selection with a newline character.
+  */
+  @JSImport("prosemirror-commands", "newlineInCode")
+  @js.native
+  val newlineInCode: Command = js.native
   
-  inline def toggleMark[S /* <: Schema[Any, Any] */](markType: MarkType): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleMark")(markType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
-  inline def toggleMark[S /* <: Schema[Any, Any] */](markType: MarkType, attrs: StringDictionary[Any]): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleMark")(markType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
+  /**
+  Select the whole document.
+  */
+  @JSImport("prosemirror-commands", "selectAll")
+  @js.native
+  val selectAll: Command = js.native
   
-  inline def wrapIn[S /* <: Schema[Any, Any] */](nodeType: NodeType): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapIn")(nodeType.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
-  inline def wrapIn[S /* <: Schema[Any, Any] */](nodeType: NodeType, attrs: StringDictionary[Any]): js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapIn")(nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    Boolean
-  ]]
+  /**
+  When the selection is empty and at the start of a textblock, select
+  the node before that textblock, if possible. This is intended to be
+  bound to keys like backspace, after
+  [`joinBackward`](https://prosemirror.net/docs/ref/#commands.joinBackward) or other deleting
+  commands, as a fall-back behavior when the schema doesn't allow
+  deletion at the selected point.
+  */
+  @JSImport("prosemirror-commands", "selectNodeBackward")
+  @js.native
+  val selectNodeBackward: Command = js.native
   
-  type Command[S /* <: Schema[Any, Any] */] = js.Function3[
-    /* state */ EditorState, 
-    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    /* view */ js.UndefOr[EditorView], 
-    Boolean
-  ]
+  /**
+  When the selection is empty and at the end of a textblock, select
+  the node coming after that textblock, if possible. This is intended
+  to be bound to keys like delete, after
+  [`joinForward`](https://prosemirror.net/docs/ref/#commands.joinForward) and similar deleting
+  commands, to provide a fall-back behavior when the schema doesn't
+  allow deletion at the selected point.
+  */
+  @JSImport("prosemirror-commands", "selectNodeForward")
+  @js.native
+  val selectNodeForward: Command = js.native
   
-  type Keymap[S /* <: Schema[Any, Any] */] = StringDictionary[Command[S]]
+  /**
+  Move the selection to the node wrapping the current selection, if
+  any. (Will not select the document node.)
+  */
+  @JSImport("prosemirror-commands", "selectParentNode")
+  @js.native
+  val selectParentNode: Command = js.native
+  
+  /**
+  Moves the cursor to the end of current text block.
+  */
+  @JSImport("prosemirror-commands", "selectTextblockEnd")
+  @js.native
+  val selectTextblockEnd: Command = js.native
+  
+  /**
+  Moves the cursor to the start of current text block.
+  */
+  @JSImport("prosemirror-commands", "selectTextblockStart")
+  @js.native
+  val selectTextblockStart: Command = js.native
+  
+  /**
+  Returns a command that tries to set the selected textblocks to the
+  given node type with the given attributes.
+  */
+  inline def setBlockType(nodeType: NodeType): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("setBlockType")(nodeType.asInstanceOf[js.Any]).asInstanceOf[Command]
+  inline def setBlockType(nodeType: NodeType, attrs: Attrs): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("setBlockType")(nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Command]
+  
+  /**
+  Split the parent block of the selection. If the selection is a text
+  selection, also delete its content.
+  */
+  @JSImport("prosemirror-commands", "splitBlock")
+  @js.native
+  val splitBlock: Command = js.native
+  
+  /**
+  Acts like [`splitBlock`](https://prosemirror.net/docs/ref/#commands.splitBlock), but without
+  resetting the set of active marks at the cursor.
+  */
+  @JSImport("prosemirror-commands", "splitBlockKeepMarks")
+  @js.native
+  val splitBlockKeepMarks: Command = js.native
+  
+  /**
+  Create a command function that toggles the given mark with the
+  given attributes. Will return `false` when the current selection
+  doesn't support that mark. This will remove the mark if any marks
+  of that type exist in the selection, or add it otherwise. If the
+  selection is empty, this applies to the [stored
+  marks](https://prosemirror.net/docs/ref/#state.EditorState.storedMarks) instead of a range of the
+  document.
+  */
+  inline def toggleMark(markType: MarkType): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleMark")(markType.asInstanceOf[js.Any]).asInstanceOf[Command]
+  inline def toggleMark(markType: MarkType, attrs: Attrs): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleMark")(markType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Command]
+  
+  /**
+  Wrap the selection in a node of the given type with the given
+  attributes.
+  */
+  inline def wrapIn(nodeType: NodeType): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapIn")(nodeType.asInstanceOf[js.Any]).asInstanceOf[Command]
+  inline def wrapIn(nodeType: NodeType, attrs: Attrs): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapIn")(nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Command]
 }

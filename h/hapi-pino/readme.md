@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi-pino
 
-Typings are for version 11.0.0
+Typings are for version 11.0.1
 
 ## Library description:
 Hapi plugin for the Pino logger

@@ -29,3 +29,12 @@ open class BadRequest ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`400` = js.native
 }
+object BadRequest {
+  
+  @JSImport("http-errors", "BadRequest")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`400`] = js.native
+  @JSImport("http-errors", "BadRequest")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`400`] = js.native
+}

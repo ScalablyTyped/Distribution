@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.std.HTMLCanvasElement
@@ -49,7 +50,7 @@ object chartChartMod {
     
     var plugins: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -94,7 +95,7 @@ object chartChartMod {
       
       inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

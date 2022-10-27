@@ -29,3 +29,12 @@ open class MethodNotAllowed ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`405` = js.native
 }
+object MethodNotAllowed {
+  
+  @JSImport("http-errors", "MethodNotAllowed")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`405`] = js.native
+  @JSImport("http-errors", "MethodNotAllowed")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`405`] = js.native
+}

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/animations" : "14.2.7"
+      "@angular/animations" : "14.2.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/animations" : "14.2.7"
+      "@angular/animations" : "14.2.8"
     }
   ],
   "compile-devDependencies" : [

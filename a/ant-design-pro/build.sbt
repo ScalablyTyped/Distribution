@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design-pro"
-version := "2.3.2-84497a"
+version := "2.3.2-7840ce"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ant-design__icons" % "4.7.0-e68fb6",
   "org.scalablytyped" %%% "ant-design__icons-svg" % "4.2.1-58696f",
   "org.scalablytyped" %%% "ant-design__react-slick" % "0.29.2-d7f5d8",
-  "org.scalablytyped" %%% "antd" % "4.23.6-f5a7a8",
+  "org.scalablytyped" %%% "antd" % "4.23.6-7072b4",
   "org.scalablytyped" %%% "antv__adjust" % "0.2.5-1d5bdc",
   "org.scalablytyped" %%% "antv__attr" % "0.3.3-504e24",
   "org.scalablytyped" %%% "antv__component" % "0.8.28-7cea2a",
@@ -38,11 +38,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mana-syringe" % "0.3.2-9a1d0d",
   "org.scalablytyped" %%% "memoize-one" % "6.0.0-353932",
   "org.scalablytyped" %%% "moment" % "2.29.4-dbaff2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "offscreencanvas" % "2019.7-dt-20220526Z-6cf76a",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "rbush" % "3.0-dt-20220819Z-334310",
-  "org.scalablytyped" %%% "rc-cascader" % "3.7.0-65c7cd",
+  "org.scalablytyped" %%% "rc-cascader" % "3.7.0-38030a",
   "org.scalablytyped" %%% "rc-component__portal" % "1.0.0-9-0cd19c",
   "org.scalablytyped" %%% "rc-dialog" % "9.0.0-fab41a",
   "org.scalablytyped" %%% "rc-drawer" % "6.0.0-d19bba",
@@ -57,19 +57,19 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-picker" % "2.6.11-2a4046",
   "org.scalablytyped" %%% "rc-rate" % "2.9.2-cc6090",
   "org.scalablytyped" %%% "rc-segmented" % "2.1.0-c2a303",
-  "org.scalablytyped" %%% "rc-select" % "14.1.13-7faa75",
+  "org.scalablytyped" %%% "rc-select" % "14.1.13-fd6ce5",
   "org.scalablytyped" %%% "rc-slider" % "10.0.1-6564f7",
   "org.scalablytyped" %%% "rc-steps" % "5.0.0-alpha.0-4e3b02",
   "org.scalablytyped" %%% "rc-table" % "7.27.2-20320e",
   "org.scalablytyped" %%% "rc-tabs" % "12.2.1-9f0b9c",
   "org.scalablytyped" %%% "rc-textarea" % "0.4.5-19ecf0",
   "org.scalablytyped" %%% "rc-tooltip" % "5.2.2-35f9e0",
-  "org.scalablytyped" %%% "rc-tree" % "5.7.0-0be216",
-  "org.scalablytyped" %%% "rc-tree-select" % "5.5.0-231658",
+  "org.scalablytyped" %%% "rc-tree" % "5.7.0-8d1314",
+  "org.scalablytyped" %%% "rc-tree-select" % "5.5.0-2d4fd9",
   "org.scalablytyped" %%% "rc-trigger" % "5.3.1-b8cbe0",
   "org.scalablytyped" %%% "rc-upload" % "4.3.4-18188e",
   "org.scalablytyped" %%% "rc-util" % "5.24.4-a94b0e",
-  "org.scalablytyped" %%% "rc-virtual-list" % "3.4.8-3430d3",
+  "org.scalablytyped" %%% "rc-virtual-list" % "3.4.8-d99509",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
   "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221024Z-bf50fa",
   "org.scalablytyped" %%% "react-error-boundary" % "3.1.4-4ea2d2",

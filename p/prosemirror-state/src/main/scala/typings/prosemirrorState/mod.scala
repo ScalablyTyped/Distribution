@@ -11,8 +11,6 @@ import typings.prosemirrorState.anon.Plugins
 import typings.prosemirrorState.anon.State
 import typings.prosemirrorTransform.mod.Mappable
 import typings.prosemirrorTransform.mod.Transform
-import typings.prosemirrorView.mod.EditorProps
-import typings.prosemirrorView.mod.EditorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +60,7 @@ object mod {
     /**
       The [props](https://prosemirror.net/docs/ref/#view.EditorProps) exported by this plugin.
       */
-    val props: EditorProps[Any] = js.native
+    val props: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorProps<Plugin<PluginState>> */ Any = js.native
     
     /**
       The plugin's [spec object](https://prosemirror.net/docs/ref/#state.PluginSpec).
@@ -303,7 +301,9 @@ object mod {
   type Command = js.Function3[
     /* state */ EditorState, 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction, Unit]], 
-    /* view */ js.UndefOr[EditorView], 
+    /* view */ js.UndefOr[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorView */ Any
+    ], 
     Boolean
   ]
   
@@ -337,12 +337,6 @@ object mod {
       The current document.
       */
     var doc: Node = js.native
-    
-    /**
-      @ignore
-      */
-    def filterTransaction(tr: Transaction): Boolean = js.native
-    def filterTransaction(tr: Transaction, ignore: Double): Boolean = js.native
     
     /**
       The plugins that are active in this state.
@@ -556,7 +550,9 @@ object mod {
       that are functions will be bound to have the plugin instance as
       their `this` binding.
       */
-    var props: js.UndefOr[EditorProps[Any]] = js.undefined
+    var props: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorProps<Plugin<PluginState>> */ Any
+      ] = js.undefined
     
     /**
       Allows a plugin to define a [state field](https://prosemirror.net/docs/ref/#state.StateField), an
@@ -570,7 +566,12 @@ object mod {
       will be called when the plugin's state is associated with an
       editor view.
       */
-    var view: js.UndefOr[js.Function1[/* view */ EditorView, PluginView]] = js.undefined
+    var view: js.UndefOr[
+        js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorView */ /* view */ Any, 
+          PluginView
+        ]
+      ] = js.undefined
   }
   object PluginSpec {
     
@@ -595,7 +596,9 @@ object mod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setProps(value: EditorProps[Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorProps<Plugin<PluginState>> */ Any
+      ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
@@ -603,7 +606,9 @@ object mod {
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      inline def setView(value: /* view */ EditorView => PluginView): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+      inline def setView(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorView */ /* view */ Any => PluginView
+      ): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
       
       inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }
@@ -624,7 +629,13 @@ object mod {
     /**
       Called whenever the view's state is updated.
       */
-    var update: js.UndefOr[js.Function2[/* view */ EditorView, /* prevState */ EditorState, Unit]] = js.undefined
+    var update: js.UndefOr[
+        js.Function2[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorView */ /* view */ Any, 
+          /* prevState */ EditorState, 
+          Unit
+        ]
+      ] = js.undefined
   }
   object PluginView {
     
@@ -639,7 +650,9 @@ object mod {
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setUpdate(value: (/* view */ EditorView, /* prevState */ EditorState) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorView */ /* view */ Any, /* prevState */ EditorState) => Unit
+      ): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }

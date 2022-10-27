@@ -2,6 +2,7 @@ package typings.primereact
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.primereact.primereactStrings.self
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.DragEvent
 import typings.react.mod.MouseEvent
@@ -124,7 +125,7 @@ object dialogDialogMod {
     
     var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[js.Object] = js.undefined
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var dismissableMask: js.UndefOr[Boolean] = js.undefined
     
@@ -138,7 +139,7 @@ object dialogDialogMod {
     
     var headerClassName: js.UndefOr[String] = js.undefined
     
-    var headerStyle: js.UndefOr[js.Object] = js.undefined
+    var headerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var icons: js.UndefOr[DialogTemplateType] = js.undefined
     
@@ -148,7 +149,7 @@ object dialogDialogMod {
     
     var maskClassName: js.UndefOr[String] = js.undefined
     
-    var maskStyle: js.UndefOr[js.Object] = js.undefined
+    var maskStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var maximizable: js.UndefOr[Boolean] = js.undefined
     
@@ -190,7 +191,7 @@ object dialogDialogMod {
     
     var showHeader: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
@@ -249,7 +250,7 @@ object dialogDialogMod {
       
       inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      inline def setContentStyle(value: js.Object): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
       inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
@@ -279,7 +280,7 @@ object dialogDialogMod {
       
       inline def setHeaderFunction1(value: /* props */ DialogProps => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
       
-      inline def setHeaderStyle(value: js.Object): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+      inline def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
       
       inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
       
@@ -303,7 +304,7 @@ object dialogDialogMod {
       
       inline def setMaskClassNameUndefined: Self = StObject.set(x, "maskClassName", js.undefined)
       
-      inline def setMaskStyle(value: js.Object): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
+      inline def setMaskStyle(value: CSSProperties): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
       
       inline def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
       
@@ -385,7 +386,7 @@ object dialogDialogMod {
       
       inline def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

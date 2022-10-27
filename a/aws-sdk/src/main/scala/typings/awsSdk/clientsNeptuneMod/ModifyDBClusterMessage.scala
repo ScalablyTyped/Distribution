@@ -91,6 +91,8 @@ trait ModifyDBClusterMessage extends StObject {
     */
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   
+  var ServerlessV2ScalingConfiguration: js.UndefOr[typings.awsSdk.clientsNeptuneMod.ServerlessV2ScalingConfiguration] = js.undefined
+  
   /**
     * A list of VPC security groups that the DB cluster will belong to.
     */
@@ -170,6 +172,10 @@ object ModifyDBClusterMessage {
     inline def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     inline def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "PreferredMaintenanceWindow", js.undefined)
+    
+    inline def setServerlessV2ScalingConfiguration(value: ServerlessV2ScalingConfiguration): Self = StObject.set(x, "ServerlessV2ScalingConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setServerlessV2ScalingConfigurationUndefined: Self = StObject.set(x, "ServerlessV2ScalingConfiguration", js.undefined)
     
     inline def setVpcSecurityGroupIds(value: VpcSecurityGroupIdList): Self = StObject.set(x, "VpcSecurityGroupIds", value.asInstanceOf[js.Any])
     

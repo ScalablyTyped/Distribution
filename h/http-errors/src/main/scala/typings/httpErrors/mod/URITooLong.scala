@@ -29,3 +29,12 @@ open class URITooLong ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`414` = js.native
 }
+object URITooLong {
+  
+  @JSImport("http-errors", "URITooLong")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`414`] = js.native
+  @JSImport("http-errors", "URITooLong")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`414`] = js.native
+}

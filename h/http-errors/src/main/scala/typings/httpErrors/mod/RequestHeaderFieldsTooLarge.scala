@@ -29,3 +29,12 @@ open class RequestHeaderFieldsTooLarge ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`431` = js.native
 }
+object RequestHeaderFieldsTooLarge {
+  
+  @JSImport("http-errors", "RequestHeaderFieldsTooLarge")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`431`] = js.native
+  @JSImport("http-errors", "RequestHeaderFieldsTooLarge")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`431`] = js.native
+}

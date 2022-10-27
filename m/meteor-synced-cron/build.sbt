@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "meteor-synced-cron"
-version := "1.0-dt-20221003Z-6827ab"
+version := "1.0-dt-20221026Z-9cd17f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

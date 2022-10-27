@@ -404,6 +404,12 @@ object naverWhaleStrings {
   inline def identity: identity = "identity".asInstanceOf[identity]
   
   @js.native
+  sealed trait identityDotemail
+    extends StObject
+       with ManifestPermissions
+  inline def identityDotemail: identityDotemail = "identity.email".asInstanceOf[identityDotemail]
+  
+  @js.native
   sealed trait idle
     extends StObject
        with IdleState

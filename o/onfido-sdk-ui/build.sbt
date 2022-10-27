@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "onfido-sdk-ui"
-version := "9.1.3-02ed03"
+version := "9.1.4-e41d6f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

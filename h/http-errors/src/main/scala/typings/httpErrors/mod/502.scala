@@ -29,3 +29,12 @@ open class `502` ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`502` = js.native
 }
+object `502` {
+  
+  @JSImport("http-errors", "502")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`502`] = js.native
+  @JSImport("http-errors", "502")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`502`] = js.native
+}

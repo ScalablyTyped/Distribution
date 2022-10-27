@@ -7,9 +7,13 @@ import typings.roslib.anon.Compression
 import typings.roslib.anon.GroovyCompatibility
 import typings.roslib.anon.Name
 import typings.roslib.anon.Orientation
+import typings.roslib.anon.Publishing
 import typings.roslib.anon.Rotation
+import typings.roslib.anon.ServiceType
 import typings.roslib.anon.StringString
 import typings.roslib.anon.Topics
+import typings.roslib.anon.Typedefs
+import typings.roslib.anon.Typedefsfulltext
 import typings.roslib.anon.W
 import typings.roslib.anon.X
 import typings.roslib.anon.Xml
@@ -20,7 +24,11 @@ import typings.roslib.roslibInts.`3`
 import typings.roslib.roslibStrings.close
 import typings.roslib.roslibStrings.connection
 import typings.roslib.roslibStrings.error
+import typings.roslib.roslibStrings.feedback
+import typings.roslib.roslibStrings.result
 import typings.roslib.roslibStrings.socketDotio
+import typings.roslib.roslibStrings.status
+import typings.roslib.roslibStrings.timeout
 import typings.roslib.roslibStrings.websocket
 import typings.roslib.roslibStrings.workersocket
 import typings.std.Event
@@ -40,20 +48,20 @@ object mod {
       * An actionlib action client.
       *
       * Emits the following events:
-      *  * 'timeout' - if a timeout occurred while sending a goal
-      *  * 'status' - the status messages received from the action server
-      *  * 'feedback' -  the feedback messages received from the action server
-      *  * 'result' - the result returned from the action server
+      *  * 'timeout' - If a timeout occurred while sending a goal.
+      *  * 'status' - The status messages received from the action server.
+      *  * 'feedback' - The feedback messages received from the action server.
+      *  * 'result' - The result returned from the action server.
       *
-      *  @constructor
-      *  @param options - object with following keys:
-      *   * ros - the ROSLIB.Ros connection handle
-      *   * serverName - the action server name, like /fibonacci
-      *   * actionName - the action message name, like 'actionlib_tutorials/FibonacciAction'
-      *   * timeout - the timeout length when connecting to the action server
-      *   * omitFeedback - the boolean flag to indicate whether to omit the feedback channel or not
-      *   * omitStatus - the boolean flag to indicate whether to omit the status channel or not
-      *   * omitResult - the boolean flag to indicate whether to omit the result channel or not
+      * @constructor
+      * @param {Object} options
+      * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+      * @param {string} options.serverName - The action server name, like '/fibonacci'.
+      * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
+      * @param {number} [options.timeout] - The timeout length when connecting to the action server.
+      * @param {boolean} [options.omitFeedback] - The flag to indicate whether to omit the feedback channel or not.
+      * @param {boolean} [options.omitStatus] - The flag to indicate whether to omit the status channel or not.
+      * @param {boolean} [options.omitResult] - The flag to indicate whether to omit the result channel or not.
       */
     def this(options: ActionName) = this()
     
@@ -68,19 +76,39 @@ object mod {
     def dispose(): Unit = js.native
   }
   
+  @JSImport("roslib", "ActionListener")
+  @js.native
+  open class ActionListener protected () extends StObject {
+    /**
+      * An actionlib action listener.
+      *
+      * Emits the following events:
+      *  * 'status' - The status messages received from the action server.
+      *  * 'feedback' - The feedback messages received from the action server.
+      *  * 'result' - The result returned from the action server.
+      *
+      * @constructor
+      * @param {Object} options
+      * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+      * @param {string} options.serverName - The action server name, like '/fibonacci'.
+      * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
+      */
+    def this(options: typings.roslib.anon.Ros) = this()
+  }
+  
   @JSImport("roslib", "Goal")
   @js.native
   open class Goal protected () extends StObject {
     /**
-      * An actionlib goal goal is associated with an action server.
+      * An actionlib goal that is associated with an action server.
       *
       * Emits the following events:
-      *  * 'timeout' - if a timeout occurred while sending a goal
+      *  * 'timeout' - If a timeout occurred while sending a goal.
       *
-      *  @constructor
-      *  @param options with following keys:
-      *   * actionClient - the ROSLIB.ActionClient to use with this goal
-      *   * goalMessage - The JSON object containing the goal for the action server
+      * @constructor
+      * @param {Object} options
+      * @param {ActionClient} options.actionClient - The ROSLIB.ActionClient to use with this goal.
+      * @param {any} options.goalMessage - The JSON object containing the goal for the action server.
       */
     def this(options: typings.roslib.anon.ActionClient) = this()
     
@@ -90,17 +118,17 @@ object mod {
     def cancel(): Unit = js.native
     
     /**
-      * Connect callback functions to goal based events
+      * Connect callback functions to goal based events.
       *
-      * @param eventName Name of event ('timeout', 'status', 'feedback', 'result')
-      * @param callback Callback function executed on connected event
+      * @param {string} eventName - Name of event ('timeout', 'status', 'feedback', 'result').
+      * @param {function} callback - Callback function executed on connected event.
       */
-    def on(eventName: String, callback: js.Function1[/* event */ Any, Unit]): Unit = js.native
+    def on(eventName: timeout | status | feedback | result, callback: js.Function1[/* event */ Any, Unit]): Unit = js.native
     
     /**
       * Send the goal to the action server.
       *
-      * @param timeout (optional) - a timeout length for the goal's result
+      * @param {number} [timeout] - A timeout length for the goal's result.
       */
     def send(): Unit = js.native
     def send(timeout: Double): Unit = js.native
@@ -113,7 +141,7 @@ object mod {
       * Message objects are used for publishing and subscribing to and from topics.
       *
       * @constructor
-      * @param values - object matching the fields defined in the .msg definition file
+      * @param {any} values - An object matching the fields defined in the .msg definition file.
       */
     def this(values: Any) = this()
   }
@@ -125,33 +153,33 @@ object mod {
       * A ROS parameter.
       *
       * @constructor
-      * @param options - possible keys include:
-      *   * ros - the ROSLIB.Ros connection handle
-      *   * name - the param name, like max_vel_x
+      * @param {Object} options
+      * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+      * @param {string} options.name - The param name, like max_vel_x.
       */
     def this(options: Name) = this()
     
     /**
       * Delete this parameter on the ROS server.
+      *
+      * @param {function} callback - The callback function.
       */
     def delete(callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
     
     /**
-      * Fetches the value of the param.
+      * Fetch the value of the param.
       *
-      * @param callback - function with the following params:
-      *  * value - the value of the param from ROS.
+      * @param {function} callback - Function with the following params:
+      * @param {any} callback.value - The value of the param from ROS.
       */
-    def get(callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
+    def get(callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
     
     /**
-      * Sets the value of the param in ROS.
+      * Set the value of the param in ROS.
       *
-      * @param value - value to set param to.
-      * @param callback - function with params:
-      *   * response - the response from the service request
+      * @param {any} value - The value to set param to.
+      * @param {function} callback - The callback function.
       */
-    def set(value: Any): Unit = js.native
     def set(value: Any, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
   }
   
@@ -160,10 +188,10 @@ object mod {
   /**
     * A Pose in 3D space. Values are copied into this object.
     *
-    *  @constructor
-    *  @param options - object with following keys:
-    *   * position - the Vector3 describing the position
-    *   * orientation - the ROSLIB.Quaternion describing the orientation
+    * @constructor
+    * @param {Object} options
+    * @param {Vector3Like} options.position - The ROSLIB.Vector3 describing the position.
+    * @param {QuaternionLike} options.orientation - The ROSLIB.Quaternion describing the orientation.
     */
   open class Pose () extends StObject {
     def this(options: Orientation) = this()
@@ -171,9 +199,23 @@ object mod {
     /**
       * Apply a transform against this pose.
       *
-      * @param tf the transform
+      * @param {Transform} tf - The transform to be applied.
       */
     def applyTransform(tf: Transform): Unit = js.native
+    
+    /**
+      * Compute the inverse of this pose.
+      *
+      * @returns {Pose} The inverse of the pose.
+      */
+    def getInverse(): Pose = js.native
+    
+    /**
+      * Multiply this pose with another pose without altering this pose.
+      *
+      * @returns {Pose} The result of the multiplication.
+      */
+    def multiply(pose: Pose): Unit = js.native
     
     var orientation: Quaternion = js.native
     
@@ -186,11 +228,11 @@ object mod {
     * A Quaternion.
     *
     * @constructor
-    * @param options - object with following keys:
-    *   * x - the x value
-    *   * y - the y value
-    *   * z - the z value
-    *   * w - the w value
+    * @param {Object} options
+    * @param {number} [options.x=0] - The x value.
+    * @param {number} [options.y=0] - The y value.
+    * @param {number} [options.z=0] - The z value.
+    * @param {number} [options.w=1] - The w value.
     */
   open class Quaternion ()
     extends StObject
@@ -209,12 +251,15 @@ object mod {
     
     /**
       * Set the values of this quaternion to the product of itself and the given quaternion.
-      * @param q - the quaternion to multiply with
+      *
+      * @param {Quaternion} q - The quaternion to multiply with.
       */
     def multiply(q: Quaternion): Unit = js.native
     
     /**
       * Return the norm of this quaternion.
+      *
+      * @returns {number} The norm of this quaternion.
       */
     def norm(): Double = js.native
     
@@ -244,37 +289,39 @@ object mod {
       * Manages connection to the server and all interactions with ROS.
       *
       * Emits the following events:
-      *  * 'error' - there was an error with ROS
-      *  * 'connection' - connected to the WebSocket server
-      *  * 'close' - disconnected to the WebSocket server
-      *  * <topicName> - a message came from rosbridge with the given topic name
-      *  * <serviceID> - a service response came from rosbridge with the given ID
+      *  * 'error' - There was an error with ROS.
+      *  * 'connection' - Connected to the WebSocket server.
+      *  * 'close' - Disconnected to the WebSocket server.
+      *  * &#60;topicName&#62; - A message came from rosbridge with the given topic name.
+      *  * &#60;serviceID&#62; - A service response came from rosbridge with the given ID.
       *
       * @constructor
-      * @param options - possible keys include:
-      *   * url (optional) - (can be specified later with `connect`) the WebSocket URL for rosbridge or the node server url to connect using socket.io (if socket.io exists in the page) <br>
-      *   * groovyCompatibility - don't use interfaces that changed after the last groovy release or rosbridge_suite and related tools (defaults to true)
-      *   * transportLibrary (optional) - one of 'websocket', 'workersocket' (default), 'socket.io' or RTCPeerConnection instance controlling how the connection is created in `connect`.
-      *   * transportOptions (optional) - the options to use use when creating a connection. Currently only used if `transportLibrary` is RTCPeerConnection.
+      * @param {Object} options
+      * @param {string} [options.url] - The WebSocket URL for rosbridge or the node server URL to connect using socket.io (if socket.io exists in the page). Can be specified later with `connect`.
+      * @param {boolean} [options.groovyCompatibility=true] - Don't use interfaces that changed after the last groovy release or rosbridge_suite and related tools.
+      * @param {string} [options.transportLibrary=websocket] - One of 'websocket', 'workersocket', 'socket.io' or RTCPeerConnection instance controlling how the connection is created in `connect`.
+      * @param {Object} [options.transportOptions={}] - The options to use when creating a connection. Currently only used if `transportLibrary` is RTCPeerConnection.
       */
     def this(options: GroovyCompatibility) = this()
     
     /**
-      * Sends an authorization request to the server.
+      * Send an authorization request to the server.
       *
-      * @param mac - MAC (hash) string given by the trusted source.
-      * @param client - IP of the client.
-      * @param dest - IP of the destination.
-      * @param rand - Random string given by the trusted source.
-      * @param t - Time of the authorization request.
-      * @param level - User level as a string given by the client.
-      * @param end - End time of the client's session.
+      * @param {string} mac - MAC (hash) string given by the trusted source.
+      * @param {string} client - IP of the client.
+      * @param {string} dest - IP of the destination.
+      * @param {string} rand - Random string given by the trusted source.
+      * @param {any} t - Time of the authorization request.
+      * @param {string} level - User level as a string given by the client.
+      * @param {Object} end - End time of the client's session.
       */
-    def authenticate(mac: String, client: String, dest: String, rand: String, t: Double, level: String, end: Double): Unit = js.native
+    def authenticate(mac: String, client: String, dest: String, rand: String, t: Any, level: String, end: Any): Unit = js.native
     
     /**
-      * Sends the message over the WebSocket, but queues the message up if not yet
+      * Send the message over the WebSocket, but queue the message up if not yet
       * connected.
+      *
+      * @param {any} message - The message to be sent.
       */
     def callOnConnection(message: Any): Unit = js.native
     
@@ -286,188 +333,297 @@ object mod {
     /**
       * Connect to the specified WebSocket.
       *
-      * @param url - WebSocket URL for Rosbridge
+      * @param {string} url - WebSocket URL or RTCDataChannel label for rosbridge.
       */
     def connect(url: String): Unit = js.native
     
     /**
-      * Decode a typedefs into a dictionary like `rosmsg show foo/bar`
+      * Decode a typedef array into a dictionary like `rosmsg show foo/bar`.
       *
-      * @param defs - array of type_def dictionary
+      * @param {any[]} defs - Array of type_def dictionary.
       */
-    def decodeTypeDefs(defs: Any): Unit = js.native
+    def decodeTypeDefs(defs: js.Array[Any]): Any = js.native
     
     /**
-      * Retrieves list of actionlib servers in ROS as an array.
+      * Retrieve a list of action servers in ROS as an array of string.
       *
-      * @param callback function with params:
-      *   * action_servers - Array of actionlib servers names
-      * @param failedCallback - the callback function when the ros call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {function} callback - Function with the following params:
+      * @param {string[]} callback.actionservers - Array of action server names.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
-    def getActionServers(callback: js.Function1[/* action_servers */ js.Array[String], Unit]): Unit = js.native
+    def getActionServers(callback: js.Function1[/* actionservers */ js.Array[String], Unit]): Unit = js.native
     def getActionServers(
-      callback: js.Function1[/* action_servers */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      callback: js.Function1[/* actionservers */ js.Array[String], Unit],
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves a detail of ROS message.
+      * Retrieve the details of a ROS message.
       *
-      * @param callback - function with params:
-      *   * details - Array of the message detail
-      * @param message - String of a topic type
-      * @param failedCallback - the callback function when the ros call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {string} message - The name of the message type.
+      * @param {function} callback - Function with the following params:
+      * @param {string} callback.details - An array of the message details.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
-    def getMessageDetails(message: Message, callback: js.Function1[/* detail */ Any, Unit]): Unit = js.native
+    def getMessageDetails(message: String, callback: js.Function1[/* details */ String, Unit]): Unit = js.native
     def getMessageDetails(
-      message: Message,
-      callback: js.Function1[/* detail */ Any, Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      message: String,
+      callback: js.Function1[/* details */ String, Unit],
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves list of active node names in ROS.
+      * Retrieve a list of subscribed topics, publishing topics and services of a specific node.
+      * <br>
+      * These are the parameters if failedCallback is <strong>undefined</strong>.
       *
-      * @param callback - function with the following params:
-      *   * nodes - array of node names
-      * @param failedCallback - the callback function when the ros call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {string} node - Name of the node.
+      * @param {function} callback - Function with the following params:
+      * @param {Object} callback.result - The result object with the following params:
+      * @param {string[]} callback.result.subscribing - Array of subscribed topic names.
+      * @param {string[]} callback.result.publishing - Array of published topic names.
+      * @param {string[]} callback.result.services - Array of service names hosted.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
+      */
+    // Note: Use type overloading instead to provide better readability of the available function signatures of getNodeDetails
+    // tslint:disable-next-line:unified-signatures
+    def getNodeDetails(node: String, callback: js.Function1[/* result */ Publishing, Unit]): Unit = js.native
+    def getNodeDetails(
+      node: String,
+      callback: js.Function1[/* result */ Publishing, Unit],
+      failedCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    /**
+      * Retrieve a list of subscribed topics, publishing topics and services of a specific node.
+      * <br>
+      * These are the parameters if failedCallback is <strong>defined</strong>.
+      *
+      * @param {string} node - Name of the node.
+      * @param {function} callback - Function with the following params:
+      * @param {string[]} callback.subscriptions - Array of subscribed topic names.
+      * @param {string[]} callback.publications - Array of published topic names.
+      * @param {string[]} callback.services - Array of service names hosted.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
+      */
+    // Note: Use type overloading instead to provide better readability of the available function signatures of getNodeDetails
+    // tslint:disable-next-line:unified-signatures
+    def getNodeDetails(
+      node: String,
+      callback: js.Function3[
+          /* subscriptions */ js.Array[String], 
+          /* publications */ js.Array[String], 
+          /* services */ js.Array[String], 
+          Unit
+        ]
+    ): Unit = js.native
+    def getNodeDetails(
+      node: String,
+      callback: js.Function3[
+          /* subscriptions */ js.Array[String], 
+          /* publications */ js.Array[String], 
+          /* services */ js.Array[String], 
+          Unit
+        ],
+      failedCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    
+    /**
+      * Retrieve a list of active node names in ROS.
+      *
+      * @param {function} callback - Function with the following params:
+      * @param {string[]} callback.nodes - Array of node names.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
     def getNodes(callback: js.Function1[/* nodes */ js.Array[String], Unit]): Unit = js.native
     def getNodes(
       callback: js.Function1[/* nodes */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves list of param names from the ROS Parameter Server.
+      * Retrieve a list of parameter names from the ROS Parameter Server.
       *
-      * @param callback function with params:
-      *  * params - array of param names.
-      * @param failedCallback - the callback function when the ros call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {function} callback - Function with the following params:
+      * @param {string[]} callback.params - Array of param names.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
     def getParams(callback: js.Function1[/* params */ js.Array[String], Unit]): Unit = js.native
     def getParams(
       callback: js.Function1[/* params */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves a detail of ROS service request.
+      * Retrieve the details of a ROS service request.
       *
-      * @param service name of service:
-      * @param callback - function with params:
-      *   * type - String of the service type
-      * @param failedCallback - the callback function when the service call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {string} type - The type of the service.
+      * @param {function} callback - Function with the following params:
+      * @param {Object} callback.result - The result object with the following params:
+      * @param {string[]} callback.result.typedefs - An array containing the details of the service request.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
-    def getServiceRequestDetails(service: String, callback: js.Function1[/* type */ String, Unit]): Unit = js.native
+    def getServiceRequestDetails(`type`: String, callback: js.Function1[/* result */ Typedefs, Unit]): Unit = js.native
     def getServiceRequestDetails(
-      service: String,
-      callback: js.Function1[/* type */ String, Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      `type`: String,
+      callback: js.Function1[/* result */ Typedefs, Unit],
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves a type of ROS service.
+      * Retrieve the details of a ROS service response.
       *
-      * @param service name of service:
-      * @param callback - function with params:
-      *   * type - String of the service type
-      * @param failedCallback - the callback function when the ros call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {string} type - The type of the service.
+      * @param {function} callback - Function with the following params:
+      * @param {Object} callback.result - The result object with the following params:
+      * @param {string[]} callback.result.typedefs - An array containing the details of the service response.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
+      */
+    def getServiceResponseDetails(`type`: String, callback: js.Function1[/* result */ Typedefs, Unit]): Unit = js.native
+    def getServiceResponseDetails(
+      `type`: String,
+      callback: js.Function1[/* result */ Typedefs, Unit],
+      failedCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    
+    /**
+      * Retrieve the type of a ROS service.
+      *
+      * @param {string} service - Name of the service.
+      * @param {function} callback - Function with the following params:
+      * @param {string} callback.type - The type of the service.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
     def getServiceType(service: String, callback: js.Function1[/* type */ String, Unit]): Unit = js.native
     def getServiceType(
       service: String,
       callback: js.Function1[/* type */ String, Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves list of active service names in ROS.
+      * Retrieve a list of active service names in ROS.
       *
-      * @param callback - function with the following params:
-      *   * services - array of service names
-      * @param failedCallback - the callback function when the ros call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {function} callback - Function with the following params:
+      * @param {string[]} callback.services - Array of service names.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
     def getServices(callback: js.Function1[/* services */ js.Array[String], Unit]): Unit = js.native
     def getServices(
       callback: js.Function1[/* services */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves list of services in ROS as an array as specific type
+      * Retrieve a list of services in ROS as an array as specific type.
       *
-      * @param serviceType service type to find:
-      * @param callback function with params:
-      *   * topics - Array of service names
-      * @param failedCallback - the callback function when the ros call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {string} serviceType - The service type to find.
+      * @param {function} callback - Function with the following params:
+      * @param {string[]} callback.topics - Array of service names.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
-    def getServicesForType(serviceType: String, callback: js.Function1[/* services */ js.Array[String], Unit]): Unit = js.native
+    def getServicesForType(serviceType: String, callback: js.Function1[/* topics */ js.Array[String], Unit]): Unit = js.native
     def getServicesForType(
       serviceType: String,
-      callback: js.Function1[/* services */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      callback: js.Function1[/* topics */ js.Array[String], Unit],
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves a type of ROS topic.
+      * Retrieve the type of a ROS topic.
       *
-      * @param topic name of the topic:
-      * @param callback - function with params:
-      *   * type - String of the topic type
-      * @param failedCallback - the callback function when the ros call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {string} topic - Name of the topic.
+      * @param {function} callback - Function with the following params:
+      * @param {string} callback.type - The type of the topic.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
     def getTopicType(topic: String, callback: js.Function1[/* type */ String, Unit]): Unit = js.native
     def getTopicType(
       topic: String,
       callback: js.Function1[/* type */ String, Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves list of topics in ROS as an array.
+      * Retrieve a list of topics in ROS as an array.
       *
-      * @param callback function with params:
-      *   * topics - Array of topic names
-      *   * types - Array of message type names
-      * @param failedCallback - the callback function when the service call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {function} callback - Function with the following params:
+      * @param {Object} callback.result - The result object with the following params:
+      * @param {string[]} callback.result.topics - Array of topic names.
+      * @param {string[]} callback.result.types - Array of message type names.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
-    def getTopics(callback: js.Function1[/* topics */ Topics, Unit]): Unit = js.native
+    def getTopics(callback: js.Function1[/* result */ Topics, Unit]): Unit = js.native
     def getTopics(
-      callback: js.Function1[/* topics */ Topics, Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      callback: js.Function1[/* result */ Topics, Unit],
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     /**
-      * Retrieves Topics in ROS as an array as specific type
+      * Retrieve a list of topics and their associated type definitions.
       *
-      * @param topicType topic type to find:
-      * @param callback function with params:
-      *   * topics - Array of topic names
-      * @param failedCallback - the callback function when the ros call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {function} callback - Function with the following params:
+      * @param {Object} callback.result - The result object with the following params:
+      * @param {string[]} callback.result.topics - Array of topic names.
+      * @param {string[]} callback.result.types - Array of message type names.
+      * @param {string[]} callback.result.typedefs_full_text - Array of full definitions of message types, similar to `gendeps --cat`.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
+      */
+    def getTopicsAndRawTypes(callback: js.Function1[/* result */ Typedefsfulltext, Unit]): Unit = js.native
+    def getTopicsAndRawTypes(
+      callback: js.Function1[/* result */ Typedefsfulltext, Unit],
+      failedCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    
+    /**
+      * Retrieve a list of topics in ROS as an array of a specific type.
+      *
+      * @param {string} topicType - The topic type to find.
+      * @param {function} callback - Function with the following params:
+      * @param {string[]} callback.topics - Array of topic names.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
     def getTopicsForType(topicType: String, callback: js.Function1[/* topics */ js.Array[String], Unit]): Unit = js.native
     def getTopicsForType(
       topicType: String,
       callback: js.Function1[/* topics */ js.Array[String], Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     val isConnected: Boolean = js.native
     
     def on(eventName: connection | close | error, callback: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(eventName: String, callback: js.Function1[/* event */ Any, Unit]): this.type = js.native
+    
+    /**
+      * Send an encoded message over the WebSocket.
+      *
+      * @param {any} messageEncoded - The encoded message to be sent.
+      */
+    def sendEncodedMessage(messageEncoded: Any): Unit = js.native
+    
+    /**
+      * Send a set_level request to the server.
+      *
+      * @param {string} level - Status level (none, error, warning, info).
+      * @param {number} [id] - Operation ID to change status level on.
+      */
+    def setStatusLevel(level: String): Unit = js.native
+    def setStatusLevel(level: String, id: Double): Unit = js.native
     
     val transportLibrary: websocket | workersocket | socketDotio | RTCPeerConnection = js.native
     
@@ -481,36 +637,41 @@ object mod {
       * A ROS service client.
       *
       * @constructor
-      * @params options - possible keys include:
-      *   * ros - the ROSLIB.Ros connection handle
-      *   * name - the service name, like /add_two_ints
-      *   * serviceType - the service type, like 'rospy_tutorials/AddTwoInts'
+      * @param {Object} options
+      * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+      * @param {string} options.name - The service name, like '/add_two_ints'.
+      * @param {string} options.serviceType - The service type, like 'rospy_tutorials/AddTwoInts'.
       */
-    def this(data: typings.roslib.anon.Ros) = this()
+    def this(data: ServiceType) = this()
     
     /**
-      * Advertise this service and call the callback each time a client calls it.
+      * Advertise the service. This turns the Service object from a client
+      * into a server. The callback will be called with every request
+      * that's made on this service.
       *
-      * @param callback - function with the following params:
-      *   * request - the service request data
-      *   * response - the data which should be sent back to the caller
+      * @param {function} callback - This works similarly to the callback for a C++ service and should take the following params:
+      * @param {TServiceRequest} callback.request - The service request.
+      * @param {TServiceResponse} callback.response - An empty dictionary. Take care not to overwrite this. Instead, only modify the values within.
+      *     It should return true if the service has finished successfully,
+      *     i.e., without any fatal errors.
       */
     def advertise(callback: js.Function2[/* request */ TServiceRequest, /* response */ TServiceResponse, Unit]): Unit = js.native
     
     /**
-      * Calls the service. Returns the service response in the callback.
+      * Call the service. Returns the service response in the
+      * callback. Does nothing if this service is currently advertised.
       *
-      * @param request - the ROSLIB.ServiceRequest to send
-      * @param callback - function with params:
-      *   * response - the response from the service request
-      * @param failedCallback - the callback function when the service call failed (optional). Params:
-      *   * error - the error message reported by ROS
+      * @param {TServiceRequest} request - The ROSLIB.ServiceRequest to send.
+      * @param {function} callback - Function with the following params:
+      * @param {TServiceResponse} callback.response - The response from the service request.
+      * @param {function} [failedCallback] - The callback function when the service call failed with params:
+      * @param {string} failedCallback.error - The error message reported by ROS.
       */
     def callService(request: TServiceRequest, callback: js.Function1[/* response */ TServiceResponse, Unit]): Unit = js.native
     def callService(
       request: TServiceRequest,
       callback: js.Function1[/* response */ TServiceResponse, Unit],
-      failedCallback: js.Function1[/* error */ Any, Unit]
+      failedCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
     // getter
@@ -520,33 +681,78 @@ object mod {
     var serviceType: String = js.native
     
     /**
-      * Unadvertise a previously advertised service
+      * Unadvertise a previously advertised service.
       */
     def unadvertise(): Unit = js.native
   }
   
   @JSImport("roslib", "ServiceRequest")
   @js.native
-  /**
-    * A ServiceRequest is passed into the service call.
-    *
-    * @constructor
-    * @param values - object matching the fields defined in the .srv definition file
-    */
-  open class ServiceRequest () extends StObject {
+  open class ServiceRequest protected () extends StObject {
+    /**
+      * A ServiceRequest is passed into the service call.
+      *
+      * @constructor
+      * @param {any} values - Object matching the fields defined in the .srv definition file.
+      */
     def this(values: Any) = this()
   }
   
   @JSImport("roslib", "ServiceResponse")
   @js.native
-  /**
-    * A ServiceResponse is returned from the service call.
-    *
-    * @constructor
-    * @param values - object matching the fields defined in the .srv definition file
-    */
-  open class ServiceResponse () extends StObject {
+  open class ServiceResponse protected () extends StObject {
+    /**
+      * A ServiceResponse is returned from the service call.
+      *
+      * @constructor
+      * @param {any} values - Object matching the fields defined in the .srv definition file.
+      */
     def this(values: Any) = this()
+  }
+  
+  @JSImport("roslib", "SimpleActionServer")
+  @js.native
+  open class SimpleActionServer protected () extends StObject {
+    /**
+      * An actionlib action server client.
+      *
+      * Emits the following events:
+      *  * 'goal' - Goal sent by action client.
+      *  * 'cancel' - Action client has canceled the request.
+      *
+      * @constructor
+      * @param {Object} options
+      * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+      * @param {string} options.serverName - The action server name, like '/fibonacci'.
+      * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
+      */
+    def this(options: typings.roslib.anon.Ros) = this()
+    
+    /**
+      * Send a feedback message.
+      *
+      * @param {any} feedback - The feedback to send to the client.
+      */
+    def sendFeedback(feedback: Any): Unit = js.native
+    
+    /**
+      * Set action state to aborted and return to client.
+      *
+      * @param {any} result - The result to return to the client.
+      */
+    def setAborted(result: Any): Unit = js.native
+    
+    /**
+      * Handle case where client requests preemption.
+      */
+    def setPreempted(): Unit = js.native
+    
+    /**
+      * Set action state to succeeded and return to client.
+      *
+      * @param {any} result - The result to return to the client.
+      */
+    def setSucceeded(result: Any): Unit = js.native
   }
   
   @JSImport("roslib", "TFClient")
@@ -556,16 +762,17 @@ object mod {
       * A TF Client that listens to TFs from tf2_web_republisher.
       *
       * @constructor
-      * @param options - object with following keys:
-      *   * ros - the ROSLIB.Ros connection handle
-      *   * fixedFrame - the fixed frame, like /base_link
-      *   * angularThres - the angular threshold for the TF republisher
-      *   * transThres - the translation threshold for the TF republisher
-      *   * rate - the rate for the TF republisher
-      *   * updateDelay - the time (in ms) to wait after a new subscription to update the TF republisher's list of TFs
-      *   * topicTimeout - the timeout parameter for the TF republisher
-      *   * serverName (optional) - the name of the tf2_web_republisher server
-      *   * repubServiceName (optional) - the name of the republish_tfs service (non groovy compatibility mode only) default: '/republish_tfs'
+      * @param {Object} options
+      * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+      * @param {string} [options.fixedFrame=base_link] - The fixed frame.
+      * @param {number} [options.angularThres=2.0] - The angular threshold for the TF republisher.
+      * @param {number} [options.transThres=0.01] - The translation threshold for the TF republisher.
+      * @param {number} [options.rate=10.0] - The rate for the TF republisher.
+      * @param {number} [options.updateDelay=50] - The time (in ms) to wait after a new subscription
+      *     to update the TF republisher's list of TFs.
+      * @param {number} [options.topicTimeout=2.0] - The timeout parameter for the TF republisher.
+      * @param {string} [options.serverName=/tf2_web_republisher] - The name of the tf2_web_republisher server.
+      * @param {string} [options.repubServiceName=/republish_tfs] - The name of the republish_tfs service (non groovy compatibility mode only).
       */
     def this(options: AngularThres) = this()
     
@@ -575,37 +782,41 @@ object mod {
     def dispose(): Unit = js.native
     
     /**
-      * Process the service response and subscribe to the tf republisher topic.
+      * Process the service response and subscribe to the tf republisher
+      * topic.
       *
-      * @param response - the service response containing the topic name
+      * @param {any} response - The service response containing the topic name.
       */
     def processResponse(response: Any): Unit = js.native
     
     /**
-      * Process the incoming TF message and send them out using the callback functions
-      * @param tf - the TF message from the server
+      * Process the incoming TF message and send them out using the callback
+      * functions.
+      *
+      * @param {any} tf - The TF message from the server.
       */
-    def processTfArray(tf: Any): Unit = js.native
+    def processTFArray(tf: Any): Unit = js.native
     
     /**
       * Subscribe to the given TF frame.
-      * @param frameId - the TF frame to subscribe to
-      * @param callback - function with params:
-      *  * transform - the transform data
+      *
+      * @param {string} frameID - The TF frame to subscribe to.
+      * @param {function} callback - Function with the following params:
+      * @param {Transform} callback.transform - The transform data.
       */
     def subscribe(frameId: String, callback: js.Function1[/* transform */ Transform, Unit]): Unit = js.native
     
     /**
       * Unsubscribe from the given TF frame.
       *
-      * @param frameId - the TF frame to unsubscribe from
-      * @param callback - the callback function to remove
+      * @param {string} frameID - The TF frame to unsubscribe from.
+      * @param {function} callback - The callback function to remove.
       */
-    def unsubscribe(frameId: String): Unit = js.native
     def unsubscribe(frameId: String, callback: js.Function1[/* transform */ Transform, Unit]): Unit = js.native
     
     /**
-      * Create and send a new goal (or service request) to the tf2_web_republisher based on the current list of TFs.
+      * Create and send a new goal (or service request) to the tf2_web_republisher
+      * based on the current list of TFs.
       */
     def updateGoal(): Unit = js.native
   }
@@ -617,24 +828,25 @@ object mod {
       * Publish and/or subscribe to a topic in ROS.
       *
       * Emits the following events:
-      *  * 'warning' - if there are any warning during the Topic creation
-      *  * 'message' - the message data from rosbridge
+      *  * 'warning' - If there are any warning during the Topic creation.
+      *  * 'message' - The message data from rosbridge.
       *
       * @constructor
-      * @param options - object with following keys:
-      *   * ros - the ROSLIB.Ros connection handle
-      *   * name - the topic name, like /cmd_vel
-      *   * messageType - the message type, like 'std_msgs/String'
-      *   * compression - the type of compression to use, like 'png'
-      *   * throttle_rate - the rate (in ms in between messages) at which to throttle the topics
-      *   * queue_size - the queue created at bridge side for re-publishing webtopics (defaults to 100)
-      *   * latch - latch the topic when publishing
-      *   * queue_length - the queue length at bridge side used when subscribing (defaults to 0, no queueing).
+      * @param {Object} options
+      * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+      * @param {string} options.name - The topic name, like '/cmd_vel'.
+      * @param {string} options.messageType - The message type, like 'std_msgs/String'.
+      * @param {string} [options.compression=none] - The type of compression to use, like 'png', 'cbor', or 'cbor-raw'.
+      * @param {number} [options.throttle_rate=0] - The rate (in ms in between messages) at which to throttle the topics.
+      * @param {number} [options.queue_size=100] - The queue created at bridge side for re-publishing webtopics.
+      * @param {boolean} [options.latch=false] - Latch the topic when publishing.
+      * @param {number} [options.queue_length=0] - The queue length at bridge side used when subscribing.
+      * @param {boolean} [options.reconnect_on_close=true] - The flag to enable resubscription and readvertisement on close event.
       */
     def this(options: Compression) = this()
     
     /**
-      * Registers as a publisher for the topic.
+      * Register as a publisher for the topic.
       */
     def advertise(): Unit = js.native
     
@@ -647,7 +859,7 @@ object mod {
     /**
       * Publish the message.
       *
-      * @param message - A ROSLIB.Message object.
+      * @param {TMessage} message - A ROSLIB.Message object.
       */
     def publish(message: TMessage): Unit = js.native
     
@@ -655,24 +867,24 @@ object mod {
       * Every time a message is published for the given topic, the callback
       * will be called with the message object.
       *
-      * @param callback - function with the following params:
-      *   * message - the published message
+      * @param {function} callback - Function with the following params:
+      * @param {TMessage} callback.message - The published message.
       */
     def subscribe(callback: js.Function1[/* message */ TMessage, Unit]): Unit = js.native
     
     /**
-      * Unregisters as a publisher for the topic.
+      * Unregister as a publisher for the topic.
       */
     def unadvertise(): Unit = js.native
     
     /**
-      * Unregisters as a subscriber for the topic. Unsubscribing stop remove
-      * all subscribe callbacks. To remove a call back, you must explicitly
-      * pass the callback function in.
+      * Unregister as a subscriber for the topic. Unsubscribing will stop
+      * and remove all subscribe callbacks. To remove a callback, you must
+      * explicitly pass the callback function in.
       *
-      * @param callback - the optional callback to unregister, if
-      *     * provided and other listeners are registered the topic won't
-      *     * unsubscribe, just stop emitting to the passed listener
+      * @param {function} [callback] - The callback to unregister, if
+      *     provided and other listeners are registered the topic won't
+      *     unsubscribe, just stop emitting to the passed listener.
       */
     def unsubscribe(): Unit = js.native
     def unsubscribe(callback: js.Function1[/* message */ TMessage, Unit]): Unit = js.native
@@ -684,9 +896,9 @@ object mod {
     * A Transform in 3-space. Values are copied into this object.
     *
     * @constructor
-    * @param options - object with following keys:
-    *   * translation - the Vector3 describing the translation
-    *   * rotation - the ROSLIB.Quaternion describing the rotation
+    * @param {Object} options
+    * @param {Vector3Like} options.translation - The ROSLIB.Vector3 describing the translation.
+    * @param {QuaternionLike} options.rotation - The ROSLIB.Quaternion describing the rotation.
     */
   open class Transform () extends StObject {
     def this(options: Rotation) = this()
@@ -722,8 +934,8 @@ object mod {
       * A Box element in a URDF.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
       */
     def this(options: Xml) = this()
     
@@ -739,8 +951,8 @@ object mod {
       * A Color element in a URDF.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
       */
     def this(options: Xml) = this()
     
@@ -762,8 +974,8 @@ object mod {
       * A Cylinder element in a URDF.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
       */
     def this(options: Xml) = this()
     
@@ -781,8 +993,8 @@ object mod {
       * A Joint element in a URDF.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
       */
     def this(options: Xml) = this()
     
@@ -806,8 +1018,8 @@ object mod {
       * A Link element in a URDF.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
       */
     def this(options: Xml) = this()
     
@@ -823,10 +1035,12 @@ object mod {
       * A Material element in a URDF.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
       */
     def this(options: Xml) = this()
+    
+    def assign(obj: UrdfMaterial): UrdfMaterial = js.native
     
     var color: UrdfColor | Null = js.native
     
@@ -846,8 +1060,8 @@ object mod {
       * A Box element in a URDF.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
       */
     def this(options: Xml) = this()
     
@@ -865,9 +1079,9 @@ object mod {
       * A URDF Model can be used to parse a given URDF into the appropriate elements.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
-      *  * string - the XML element to parse as a string
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
+      * @param {string} options.string - The XML element to parse as a string.
       */
     def this(options: typings.roslib.anon.String) = this()
     def this(options: StringString) = this()
@@ -888,8 +1102,8 @@ object mod {
       * A Sphere element in a URDF.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
       */
     def this(options: Xml) = this()
     
@@ -905,8 +1119,8 @@ object mod {
       * A Visual element in a URDF.
       *
       * @constructor
-      * @param options - object with following keys:
-      *  * xml - the XML element to parse
+      * @param {Object} options
+      * @param {Node} options.xml - The XML element to parse.
       */
     def this(options: Xml) = this()
     
@@ -923,10 +1137,10 @@ object mod {
     * A 3D vector.
     *
     * @constructor
-    * @param options - object with following keys:
-    *   * x - the x value
-    *   * y - the y value
-    *   * z - the z value
+    * @param {Object} options
+    * @param {number} [options.x=0] - The x value.
+    * @param {number} [options.y=0] - The y value.
+    * @param {number} [options.z=0] - The z value.
     */
   open class Vector3 ()
     extends StObject
@@ -936,20 +1150,21 @@ object mod {
     /**
       * Set the values of this vector to the sum of itself and the given vector.
       *
-      * @param v - the vector to add with
+      * @param {Vector3} v - The vector to add with.
       */
     def add(v: Vector3): Unit = js.native
     
     /**
       * Multiply the given Quaternion with this vector.
-      * @param q - the quaternion to multiply with
+      *
+      * @param {Quaternion} q - The quaternion to multiply with.
       */
     def multiplyQuaternion(q: Quaternion): Unit = js.native
     
     /**
       * Set the values of this vector to the difference of itself and the given vector.
       *
-      * @param v - the vector to subtract with
+      * @param {Vector3} v - The vector to subtract with.
       */
     def subtract(v: Vector3): Unit = js.native
     

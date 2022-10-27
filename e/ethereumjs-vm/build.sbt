@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "ethereumjs-vm"
-version := "4.2.0-7e23fb"
+version := "4.2.0-0d14cb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bn_dot_js" % "5.1-dt-20220829Z-4a7dd1",
+  "org.scalablytyped" %%% "bn_dot_js" % "5.1-dt-20220829Z-ff2541",
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
-  "org.scalablytyped" %%% "ethereumjs-account" % "3.0.0-6ab18e",
-  "org.scalablytyped" %%% "ethereumjs-blockchain" % "4.0.4-10e8e0",
+  "org.scalablytyped" %%% "ethereumjs-account" % "3.0.0-4070b6",
+  "org.scalablytyped" %%% "ethereumjs-blockchain" % "4.0.4-e2fd37",
   "org.scalablytyped" %%% "ethereumjs-common" % "1.5.2-2f6b6a",
-  "org.scalablytyped" %%% "ethereumjs-tx" % "2.1.2-4a14ee",
-  "org.scalablytyped" %%% "ethereumjs-util" % "7.1.5-bca343",
+  "org.scalablytyped" %%% "ethereumjs-tx" % "2.1.2-82fff1",
+  "org.scalablytyped" %%% "ethereumjs-util" % "7.1.5-e2d141",
   "org.scalablytyped" %%% "lru-cache" % "7.14.0-c21024",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "rlp" % "3.0.0-ae3433",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

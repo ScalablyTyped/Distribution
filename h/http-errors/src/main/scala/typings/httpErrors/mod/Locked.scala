@@ -29,3 +29,12 @@ open class Locked ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`423` = js.native
 }
+object Locked {
+  
+  @JSImport("http-errors", "Locked")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`423`] = js.native
+  @JSImport("http-errors", "Locked")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`423`] = js.native
+}

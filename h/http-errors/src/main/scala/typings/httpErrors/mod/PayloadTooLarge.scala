@@ -29,3 +29,12 @@ open class PayloadTooLarge ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`413` = js.native
 }
+object PayloadTooLarge {
+  
+  @JSImport("http-errors", "PayloadTooLarge")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`413`] = js.native
+  @JSImport("http-errors", "PayloadTooLarge")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`413`] = js.native
+}

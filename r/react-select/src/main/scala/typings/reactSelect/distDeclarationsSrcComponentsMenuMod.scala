@@ -1,16 +1,12 @@
 package typings.reactSelect
 
 import typings.emotionReact.mod.jsx.JSX.Element
-import typings.react.mod.Component
-import typings.react.mod.Context
-import typings.react.mod.ContextType
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.RefCallback
+import typings.react.mod.Ref
 import typings.reactSelect.anon.Children
-import typings.reactSelect.anon.Cx
-import typings.reactSelect.anon.GetPortalPlacement
 import typings.reactSelect.anon.Left
 import typings.reactSelect.distDeclarationsSrcTypesMod.CSSObjectWithLabel
 import typings.reactSelect.distDeclarationsSrcTypesMod.CoercedMenuPlacement
@@ -50,35 +46,7 @@ object distDeclarationsSrcComponentsMenuMod {
   
   inline def MenuList[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: MenuListProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuList")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-select/dist/declarations/src/components/Menu", "MenuPlacer")
-  @js.native
-  open class MenuPlacer[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] protected () extends Component[MenuPlacerProps[Option, IsMulti, Group], MenuState, Any] {
-    def this(props: MenuPlacerProps[Option, IsMulti, Group]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: MenuPlacerProps[Option, IsMulti, Group], context: Any) = this()
-    
-    @JSName("context")
-    var context_MenuPlacer: ContextType[Context[GetPortalPlacement]] = js.native
-    
-    var getPlacement: RefCallback[HTMLDivElement] = js.native
-    
-    def getUpdatedProps(): Cx[Option, IsMulti, Group] = js.native
-  }
-  /* static members */
-  object MenuPlacer {
-    
-    @JSImport("react-select/dist/declarations/src/components/Menu", "MenuPlacer")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-select/dist/declarations/src/components/Menu", "MenuPlacer.contextType")
-    @js.native
-    def contextType: Context[GetPortalPlacement] = js.native
-    inline def contextType_=(x: Context[GetPortalPlacement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
-  }
+  inline def MenuPlacer[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: MenuPlacerProps[Option, IsMulti, Group]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPlacer")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def MenuPortal[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MenuPortalProps[Option, IsMulti, Group]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPortal")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
@@ -133,12 +101,12 @@ object distDeclarationsSrcComponentsMenuMod {
     
     var placerProps: PlacerProps
     
-    var ref: RefCallback[HTMLDivElement]
+    var ref: Ref[HTMLDivElement]
   }
   object ChildrenProps {
     
-    inline def apply(placerProps: PlacerProps, ref: /* instance */ HTMLDivElement | Null => Unit): ChildrenProps = {
-      val __obj = js.Dynamic.literal(placerProps = placerProps.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref))
+    inline def apply(placerProps: PlacerProps): ChildrenProps = {
+      val __obj = js.Dynamic.literal(placerProps = placerProps.asInstanceOf[js.Any], ref = null)
       __obj.asInstanceOf[ChildrenProps]
     }
     
@@ -146,7 +114,11 @@ object distDeclarationsSrcComponentsMenuMod {
       
       inline def setPlacerProps(value: PlacerProps): Self = StObject.set(x, "placerProps", value.asInstanceOf[js.Any])
       
-      inline def setRef(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
     }
   }
   
@@ -165,7 +137,7 @@ object distDeclarationsSrcComponentsMenuMod {
     var innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
     
     /** Inner ref to DOM ReactNode */
-    var innerRef: RefCallback[HTMLDivElement] = js.native
+    var innerRef: Ref[HTMLDivElement] = js.native
     
     /** Set the max height of the Menu component  */
     var maxHeight: Double = js.native
@@ -222,7 +194,7 @@ object distDeclarationsSrcComponentsMenuMod {
        with MenuPlacementProps {
     
     /** The children to be rendered. */
-    def children(childrenProps: ChildrenProps): ReactNode = js.native
+    def children(childrenProps: ChildrenProps): ReactElement = js.native
   }
   
   @js.native
@@ -255,34 +227,11 @@ object distDeclarationsSrcComponentsMenuMod {
     var innerProps: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement] = js.native
     
     /** Reference to the internal element, consumed by the MenuPlacer component */
-    var innerRef: RefCallback[HTMLDivElement] = js.native
+    var innerRef: Ref[HTMLDivElement] = js.native
     
     var isLoading: Boolean = js.native
     
     var placement: CoercedMenuPlacement = js.native
-  }
-  
-  trait MenuState extends StObject {
-    
-    var maxHeight: Double
-    
-    var placement: CoercedMenuPlacement | Null
-  }
-  object MenuState {
-    
-    inline def apply(maxHeight: Double): MenuState = {
-      val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], placement = null)
-      __obj.asInstanceOf[MenuState]
-    }
-    
-    extension [Self <: MenuState](x: Self) {
-      
-      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
-      
-      inline def setPlacement(value: CoercedMenuPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
-      
-      inline def setPlacementNull: Self = StObject.set(x, "placement", null)
-    }
   }
   
   @js.native

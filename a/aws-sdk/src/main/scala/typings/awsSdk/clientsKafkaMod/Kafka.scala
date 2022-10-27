@@ -636,4 +636,18 @@ trait Kafka extends Service {
     params: UpdateSecurityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSecurityResponse, Unit]
   ): Request[UpdateSecurityResponse, AWSError] = js.native
+  
+  /**
+    * Updates cluster broker volume size (or) sets cluster storage mode to TIERED.
+    */
+  def updateStorage(): Request[UpdateStorageResponse, AWSError] = js.native
+  def updateStorage(callback: js.Function2[/* err */ AWSError, /* data */ UpdateStorageResponse, Unit]): Request[UpdateStorageResponse, AWSError] = js.native
+  /**
+    * Updates cluster broker volume size (or) sets cluster storage mode to TIERED.
+    */
+  def updateStorage(params: UpdateStorageRequest): Request[UpdateStorageResponse, AWSError] = js.native
+  def updateStorage(
+    params: UpdateStorageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateStorageResponse, Unit]
+  ): Request[UpdateStorageResponse, AWSError] = js.native
 }

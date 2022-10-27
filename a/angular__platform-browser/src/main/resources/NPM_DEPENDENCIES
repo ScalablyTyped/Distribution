@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/platform-browser" : "14.2.7"
+      "@angular/platform-browser" : "14.2.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/platform-browser" : "14.2.7"
+      "@angular/platform-browser" : "14.2.8"
     }
   ],
   "compile-devDependencies" : [

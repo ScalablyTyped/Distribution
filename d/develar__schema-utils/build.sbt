@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "develar__schema-utils"
-version := "2.6.5-6d79dd"
+version := "2.6.5-c3bb04"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-20bcca",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-fcbdcb",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
-  "org.scalablytyped" %%% "re2" % "1.17.7-5ddb3b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "re2" % "1.17.7-18b669",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092")
 publishArtifact in packageDoc := false

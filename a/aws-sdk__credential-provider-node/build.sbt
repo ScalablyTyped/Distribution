@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-provider-node"
-version := "3.196.0-627d94"
+version := "3.197.0-3f6496"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.196.0-1dc4de",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-imds" % "3.193.0-6a749b",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-ini" % "3.196.0-4f4699",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-sso" % "3.196.0-468ea0",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-web-identity" % "3.193.0-f2076b",
-  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.193.0-9b9a76",
-  "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.193.0-e866bc",
-  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.193.0-a255bf",
-  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.193.0-b9bfb3",
-  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.193.0-b1b88c",
-  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.193.0-20c810",
-  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.193.0-88a6ea",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.193.0-e6a0eb",
-  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.196.0-119f34",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.197.0-5b2e15",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-imds" % "3.197.0-b1a5db",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-ini" % "3.197.0-f403a7",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-sso" % "3.197.0-693d19",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-web-identity" % "3.197.0-d29d15",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.197.0-59c277",
+  "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.197.0-19d02c",
+  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.197.0-1b59e0",
+  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.197.0-55f5a5",
+  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.197.0-13f715",
+  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.197.0-8cac7c",
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.197.0-0afe85",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.197.0-ef10cd",
+  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.197.0-7b13bb",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

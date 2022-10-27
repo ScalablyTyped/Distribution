@@ -93,8 +93,16 @@ object aliAppStrings {
   inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
+  sealed trait H extends StObject
+  inline def H: H = "H".asInstanceOf[H]
+  
+  @js.native
   sealed trait HHColonmm extends StObject
   inline def HHColonmm: HHColonmm = "HH:mm".asInstanceOf[HHColonmm]
+  
+  @js.native
+  sealed trait L extends StObject
+  inline def L: L = "L".asInstanceOf[L]
   
   @js.native
   sealed trait LBS extends StObject
@@ -103,6 +111,10 @@ object aliAppStrings {
   @js.native
   sealed trait LBSSERVICE extends StObject
   inline def LBSSERVICE: LBSSERVICE = "LBSSERVICE".asInstanceOf[LBSSERVICE]
+  
+  @js.native
+  sealed trait M extends StObject
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
   sealed trait MICROPHONE extends StObject
@@ -131,12 +143,24 @@ object aliAppStrings {
   inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
+  sealed trait Q extends StObject
+  inline def Q: Q = "Q".asInstanceOf[Q]
+  
+  @js.native
+  sealed trait QRCODE extends StObject
+  inline def QRCODE: QRCODE = "QRCODE".asInstanceOf[QRCODE]
+  
+  @js.native
   sealed trait SELFSTARTING extends StObject
   inline def SELFSTARTING: SELFSTARTING = "SELFSTARTING".asInstanceOf[SELFSTARTING]
   
   @js.native
   sealed trait SHORTCUT extends StObject
   inline def SHORTCUT: SHORTCUT = "SHORTCUT".asInstanceOf[SHORTCUT]
+  
+  @js.native
+  sealed trait `Spacedown-mirrored` extends StObject
+  inline def `Spacedown-mirrored`: `Spacedown-mirrored` = (" down-mirrored").asInstanceOf[`Spacedown-mirrored`]
   
   @js.native
   sealed trait TINYAPP extends StObject
@@ -230,6 +254,10 @@ object aliAppStrings {
   inline def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
+  sealed trait bmp extends StObject
+  inline def bmp: bmp = "bmp".asInstanceOf[bmp]
+  
+  @js.native
   sealed trait bottom extends StObject
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -258,6 +286,10 @@ object aliAppStrings {
   @js.native
   sealed trait develop extends StObject
   inline def develop: develop = "develop".asInstanceOf[develop]
+  
+  @js.native
+  sealed trait down extends StObject
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
   sealed trait ease
@@ -302,8 +334,20 @@ object aliAppStrings {
   inline def form: form = "form".asInstanceOf[form]
   
   @js.native
+  sealed trait gif extends StObject
+  inline def gif: gif = "gif".asInstanceOf[gif]
+  
+  @js.native
   sealed trait hanging extends StObject
   inline def hanging: hanging = "hanging".asInstanceOf[hanging]
+  
+  @js.native
+  sealed trait heic extends StObject
+  inline def heic: heic = "heic".asInstanceOf[heic]
+  
+  @js.native
+  sealed trait hevc extends StObject
+  inline def hevc: hevc = "hevc".asInstanceOf[hevc]
   
   @js.native
   sealed trait iOS extends StObject
@@ -324,6 +368,10 @@ object aliAppStrings {
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
+  sealed trait jpg extends StObject
+  inline def jpg: jpg = "jpg".asInstanceOf[jpg]
+  
+  @js.native
   sealed trait json extends StObject
   inline def json: json = "json".asInstanceOf[json]
   
@@ -342,6 +390,10 @@ object aliAppStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
+  sealed trait `left-mirrored` extends StObject
+  inline def `left-mirrored`: `left-mirrored` = "left-mirrored".asInstanceOf[`left-mirrored`]
+  
+  @js.native
   sealed trait linear
     extends StObject
        with TimingFunction
@@ -352,6 +404,10 @@ object aliAppStrings {
     extends StObject
        with EventType
   inline def longpress: longpress = "longpress".asInstanceOf[longpress]
+  
+  @js.native
+  sealed trait `lright-mirrored` extends StObject
+  inline def `lright-mirrored`: `lright-mirrored` = "lright-mirrored".asInstanceOf[`lright-mirrored`]
   
   @js.native
   sealed trait md5 extends StObject
@@ -392,6 +448,10 @@ object aliAppStrings {
   @js.native
   sealed trait parent extends StObject
   inline def parent: parent = "parent".asInstanceOf[parent]
+  
+  @js.native
+  sealed trait png extends StObject
+  inline def png: png = "png".asInstanceOf[png]
   
   @js.native
   sealed trait point extends StObject
@@ -521,8 +581,20 @@ object aliAppStrings {
   inline def trial: trial = "trial".asInstanceOf[trial]
   
   @js.native
+  sealed trait up extends StObject
+  inline def up: up = "up".asInstanceOf[up]
+  
+  @js.native
+  sealed trait `up-mirrored` extends StObject
+  inline def `up-mirrored`: `up-mirrored` = "up-mirrored".asInstanceOf[`up-mirrored`]
+  
+  @js.native
   sealed trait video extends StObject
   inline def video: video = "video".asInstanceOf[video]
+  
+  @js.native
+  sealed trait webp extends StObject
+  inline def webp: webp = "webp".asInstanceOf[webp]
   
   @js.native
   sealed trait yyyy extends StObject

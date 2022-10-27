@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "maplibre-gl"
-version := "2.4.0-4836c1"
+version := "2.4.0-0580e7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mapbox__point-geometry" % "0.1-dt-20220121Z-0c208e",
   "org.scalablytyped" %%% "mapbox__tiny-sdf" % "2.0.5-047b10",
   "org.scalablytyped" %%% "mapbox__vector-tile" % "1.3-dt-20220329Z-d36a6e",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "pbf" % "3.0-dt-20211202Z-70fd97",
   "org.scalablytyped" %%% "potpack" % "1.0.2-6343d0",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "socket_dot_io-client"
-version := "4.5.3-d64a55"
+version := "4.5.3-773142"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "engine_dot_io-client" % "6.2.3-8a4cd7",
+  "org.scalablytyped" %%% "engine_dot_io-client" % "6.2.3-12aae3",
   "org.scalablytyped" %%% "engine_dot_io-parser" % "5.0.4-984bad",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "socket_dot_io-parser" % "4.2.1-fda131",
   "org.scalablytyped" %%% "socket_dot_io__component-emitter" % "3.1.0-a999fd",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

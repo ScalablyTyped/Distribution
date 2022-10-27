@@ -191,6 +191,8 @@ trait DBCluster extends StObject {
     */
   var ReplicationSourceIdentifier: js.UndefOr[String] = js.undefined
   
+  var ServerlessV2ScalingConfiguration: js.UndefOr[ServerlessV2ScalingConfigurationInfo] = js.undefined
+  
   /**
     * Specifies the current state of this DB cluster.
     */
@@ -374,6 +376,10 @@ object DBCluster {
     inline def setReplicationSourceIdentifier(value: String): Self = StObject.set(x, "ReplicationSourceIdentifier", value.asInstanceOf[js.Any])
     
     inline def setReplicationSourceIdentifierUndefined: Self = StObject.set(x, "ReplicationSourceIdentifier", js.undefined)
+    
+    inline def setServerlessV2ScalingConfiguration(value: ServerlessV2ScalingConfigurationInfo): Self = StObject.set(x, "ServerlessV2ScalingConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setServerlessV2ScalingConfigurationUndefined: Self = StObject.set(x, "ServerlessV2ScalingConfiguration", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

@@ -1888,6 +1888,7 @@ import typings.awsSdk.clientsKafkaMod._ClusterType
 import typings.awsSdk.clientsKafkaMod._ConfigurationState
 import typings.awsSdk.clientsKafkaMod._EnhancedMonitoring
 import typings.awsSdk.clientsKafkaMod._KafkaVersionStatus
+import typings.awsSdk.clientsKafkaMod._StorageMode
 import typings.awsSdk.clientsKafkaconnectMod._ConnectorState
 import typings.awsSdk.clientsKafkaconnectMod._CustomPluginContentType
 import typings.awsSdk.clientsKafkaconnectMod._CustomPluginState
@@ -31550,6 +31551,12 @@ object awsSdkStrings {
   inline def Grey: Grey = "Grey".asInstanceOf[Grey]
   
   @js.native
+  sealed trait Grid
+    extends StObject
+       with _HyperParameterTuningJobStrategyType
+  inline def Grid: Grid = "Grid".asInstanceOf[Grid]
+  
+  @js.native
   sealed trait GridView extends StObject
   inline def GridView: GridView = "GridView".asInstanceOf[GridView]
   
@@ -38902,6 +38909,7 @@ object awsSdkStrings {
        with _CloudWatchLogsTimeZone
        with _FederationMode
        with _ProfileType
+       with _StorageMode
   inline def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
   
   @js.native
@@ -62450,6 +62458,11 @@ object awsSdkStrings {
   inline def THURSDAY: THURSDAY = "THURSDAY".asInstanceOf[THURSDAY]
   
   @js.native
+  sealed trait TIERED
+    extends StObject
+       with _StorageMode
+  
+  @js.native
   sealed trait TIME
     extends StObject
        with _Format
@@ -81657,7 +81670,6 @@ object awsSdkStrings {
   sealed trait quillemet
     extends StObject
        with _QuoteChar
-  inline def quillemet: quillemet = "quillemet".asInstanceOf[quillemet]
   
   @js.native
   sealed trait quote

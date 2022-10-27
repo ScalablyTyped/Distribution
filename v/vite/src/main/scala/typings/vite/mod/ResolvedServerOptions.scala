@@ -1,0 +1,31 @@
+package typings.vite.mod
+
+import typings.vite.anon.RequiredFileSystemServeOp
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ResolvedServerOptions
+  extends StObject
+     with ServerOptions {
+  
+  @JSName("fs")
+  var fs_ResolvedServerOptions: RequiredFileSystemServeOp
+  
+  @JSName("middlewareMode")
+  var middlewareMode_ResolvedServerOptions: Boolean
+}
+object ResolvedServerOptions {
+  
+  inline def apply(fs: RequiredFileSystemServeOp, middlewareMode: Boolean): ResolvedServerOptions = {
+    val __obj = js.Dynamic.literal(fs = fs.asInstanceOf[js.Any], middlewareMode = middlewareMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResolvedServerOptions]
+  }
+  
+  extension [Self <: ResolvedServerOptions](x: Self) {
+    
+    inline def setFs(value: RequiredFileSystemServeOp): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+    
+    inline def setMiddlewareMode(value: Boolean): Self = StObject.set(x, "middlewareMode", value.asInstanceOf[js.Any])
+  }
+}

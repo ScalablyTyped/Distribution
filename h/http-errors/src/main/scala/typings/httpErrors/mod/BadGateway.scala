@@ -29,3 +29,12 @@ open class BadGateway ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`502` = js.native
 }
+object BadGateway {
+  
+  @JSImport("http-errors", "BadGateway")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`502`] = js.native
+  @JSImport("http-errors", "BadGateway")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`502`] = js.native
+}

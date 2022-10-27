@@ -29,3 +29,12 @@ open class NotFound ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`404` = js.native
 }
+object NotFound {
+  
+  @JSImport("http-errors", "NotFound")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`404`] = js.native
+  @JSImport("http-errors", "NotFound")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`404`] = js.native
+}

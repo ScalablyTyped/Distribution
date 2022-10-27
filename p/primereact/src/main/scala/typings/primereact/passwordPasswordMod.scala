@@ -360,7 +360,7 @@ object passwordPasswordMod {
     
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var inputStyle: js.UndefOr[js.Object] = js.undefined
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
     
@@ -566,7 +566,7 @@ object passwordPasswordMod {
     
     var panelClassName: js.UndefOr[String] = js.undefined
     
-    var panelStyle: js.UndefOr[js.Object] = js.undefined
+    var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
@@ -1041,7 +1041,7 @@ object passwordPasswordMod {
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      inline def setInputStyle(value: js.Object): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+      inline def setInputStyle(value: CSSProperties): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
       
       inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       
@@ -1451,7 +1451,7 @@ object passwordPasswordMod {
       
       inline def setPanelClassNameUndefined: Self = StObject.set(x, "panelClassName", js.undefined)
       
-      inline def setPanelStyle(value: js.Object): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
+      inline def setPanelStyle(value: CSSProperties): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
       
       inline def setPanelStyleUndefined: Self = StObject.set(x, "panelStyle", js.undefined)
       

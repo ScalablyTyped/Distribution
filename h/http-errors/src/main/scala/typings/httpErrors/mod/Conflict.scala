@@ -29,3 +29,12 @@ open class Conflict ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`409` = js.native
 }
+object Conflict {
+  
+  @JSImport("http-errors", "Conflict")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`409`] = js.native
+  @JSImport("http-errors", "Conflict")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`409`] = js.native
+}

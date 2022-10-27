@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "rc-tree-select"
-version := "5.5.0-231658"
+version := "5.5.0-2d4fd9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "rc-motion" % "2.6.2-01019c",
-  "org.scalablytyped" %%% "rc-select" % "14.1.13-7faa75",
-  "org.scalablytyped" %%% "rc-tree" % "5.7.0-0be216",
+  "org.scalablytyped" %%% "rc-select" % "14.1.13-fd6ce5",
+  "org.scalablytyped" %%% "rc-tree" % "5.7.0-8d1314",
   "org.scalablytyped" %%% "rc-trigger" % "5.3.1-b8cbe0",
-  "org.scalablytyped" %%% "rc-virtual-list" % "3.4.8-3430d3",
+  "org.scalablytyped" %%% "rc-virtual-list" % "3.4.8-d99509",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

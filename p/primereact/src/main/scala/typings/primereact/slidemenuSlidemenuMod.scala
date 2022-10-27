@@ -112,12 +112,35 @@ object slidemenuSlidemenuMod {
     
     def hide(event: SyntheticEvent[Element, Event]): Unit = js.native
     
+    def navigateBack(): Unit = js.native
+    
+    def navigateForward(): Unit = js.native
+    
+    def setLevelState(level: Double): Unit = js.native
+    
     def show(event: SyntheticEvent[Element, Event]): Unit = js.native
     
     def toggle(event: SyntheticEvent[Element, Event]): Unit = js.native
   }
   
   type SlideMenuAppendToType = js.UndefOr[self | HTMLElement | Null]
+  
+  trait SlideMenuNavigateParams extends StObject {
+    
+    var level: Double
+  }
+  object SlideMenuNavigateParams {
+    
+    inline def apply(level: Double): SlideMenuNavigateParams = {
+      val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SlideMenuNavigateParams]
+    }
+    
+    extension [Self <: SlideMenuNavigateParams](x: Self) {
+      
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    }
+  }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait SlideMenuProps extends StObject {
@@ -395,6 +418,8 @@ object slidemenuSlidemenuMod {
     var onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+    
+    var onNavigate: js.UndefOr[js.Function1[/* e */ SlideMenuNavigateParams, Unit]] = js.undefined
     
     var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
@@ -1066,6 +1091,10 @@ object slidemenuSlidemenuMod {
       inline def setOnMouseUp(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+      
+      inline def setOnNavigate(value: /* e */ SlideMenuNavigateParams => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction1(value))
+      
+      inline def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
       
       inline def setOnPaste(value: ClipboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
       

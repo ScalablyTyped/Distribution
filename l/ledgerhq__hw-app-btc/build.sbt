@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ledgerhq__hw-app-btc"
-version := "5.19-dt-20211202Z-6c22ac"
+version := "5.19-dt-20211202Z-db6d92"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20211202Z-cebfb9",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20211202Z-f4ce38",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

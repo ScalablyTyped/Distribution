@@ -14,6 +14,20 @@ object mod {
     /* args */ Parameters[T], 
     /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
   ]]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: js.Function0[Double]): js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ]]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: js.Function0[Double], options: DebounceOptions): js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ]]
   inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double): js.Function1[
     /* args */ Parameters[T], 
     /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any

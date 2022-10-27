@@ -112,6 +112,8 @@ object toastToastMod {
     
     def getElement(): HTMLDivElement = js.native
     
+    def remove(message: ToastMessageType): Unit = js.native
+    
     def replace(message: ToastMessageType): Unit = js.native
     
     def show(message: ToastMessageType): Unit = js.native
@@ -129,7 +131,7 @@ object toastToastMod {
     
     var contentClassName: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[js.Object] = js.undefined
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var detail: js.UndefOr[ReactNode] = js.undefined
     
@@ -139,7 +141,7 @@ object toastToastMod {
     
     var sticky: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var summary: js.UndefOr[ReactNode] = js.undefined
   }
@@ -166,7 +168,7 @@ object toastToastMod {
       
       inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      inline def setContentStyle(value: js.Object): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
       inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
@@ -188,7 +190,7 @@ object toastToastMod {
       
       inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

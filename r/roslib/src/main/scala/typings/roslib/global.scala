@@ -7,6 +7,7 @@ import typings.roslib.anon.GroovyCompatibility
 import typings.roslib.anon.Name
 import typings.roslib.anon.Orientation
 import typings.roslib.anon.Rotation
+import typings.roslib.anon.ServiceType
 import typings.roslib.anon.String
 import typings.roslib.anon.StringString
 import typings.roslib.anon.W
@@ -32,22 +33,43 @@ object global {
         * An actionlib action client.
         *
         * Emits the following events:
-        *  * 'timeout' - if a timeout occurred while sending a goal
-        *  * 'status' - the status messages received from the action server
-        *  * 'feedback' -  the feedback messages received from the action server
-        *  * 'result' - the result returned from the action server
+        *  * 'timeout' - If a timeout occurred while sending a goal.
+        *  * 'status' - The status messages received from the action server.
+        *  * 'feedback' - The feedback messages received from the action server.
+        *  * 'result' - The result returned from the action server.
         *
-        *  @constructor
-        *  @param options - object with following keys:
-        *   * ros - the ROSLIB.Ros connection handle
-        *   * serverName - the action server name, like /fibonacci
-        *   * actionName - the action message name, like 'actionlib_tutorials/FibonacciAction'
-        *   * timeout - the timeout length when connecting to the action server
-        *   * omitFeedback - the boolean flag to indicate whether to omit the feedback channel or not
-        *   * omitStatus - the boolean flag to indicate whether to omit the status channel or not
-        *   * omitResult - the boolean flag to indicate whether to omit the result channel or not
+        * @constructor
+        * @param {Object} options
+        * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+        * @param {string} options.serverName - The action server name, like '/fibonacci'.
+        * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
+        * @param {number} [options.timeout] - The timeout length when connecting to the action server.
+        * @param {boolean} [options.omitFeedback] - The flag to indicate whether to omit the feedback channel or not.
+        * @param {boolean} [options.omitStatus] - The flag to indicate whether to omit the status channel or not.
+        * @param {boolean} [options.omitResult] - The flag to indicate whether to omit the result channel or not.
         */
       def this(options: ActionName) = this()
+    }
+    
+    @JSGlobal("ROSLIB.ActionListener")
+    @js.native
+    open class ActionListener protected ()
+      extends typings.roslib.mod.ActionListener {
+      /**
+        * An actionlib action listener.
+        *
+        * Emits the following events:
+        *  * 'status' - The status messages received from the action server.
+        *  * 'feedback' - The feedback messages received from the action server.
+        *  * 'result' - The result returned from the action server.
+        *
+        * @constructor
+        * @param {Object} options
+        * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+        * @param {string} options.serverName - The action server name, like '/fibonacci'.
+        * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
+        */
+      def this(options: typings.roslib.anon.Ros) = this()
     }
     
     @JSGlobal("ROSLIB.Goal")
@@ -55,15 +77,15 @@ object global {
     open class Goal protected ()
       extends typings.roslib.mod.Goal {
       /**
-        * An actionlib goal goal is associated with an action server.
+        * An actionlib goal that is associated with an action server.
         *
         * Emits the following events:
-        *  * 'timeout' - if a timeout occurred while sending a goal
+        *  * 'timeout' - If a timeout occurred while sending a goal.
         *
-        *  @constructor
-        *  @param options with following keys:
-        *   * actionClient - the ROSLIB.ActionClient to use with this goal
-        *   * goalMessage - The JSON object containing the goal for the action server
+        * @constructor
+        * @param {Object} options
+        * @param {ActionClient} options.actionClient - The ROSLIB.ActionClient to use with this goal.
+        * @param {any} options.goalMessage - The JSON object containing the goal for the action server.
         */
       def this(options: typings.roslib.anon.ActionClient) = this()
     }
@@ -76,7 +98,7 @@ object global {
         * Message objects are used for publishing and subscribing to and from topics.
         *
         * @constructor
-        * @param values - object matching the fields defined in the .msg definition file
+        * @param {any} values - An object matching the fields defined in the .msg definition file.
         */
       def this(values: Any) = this()
     }
@@ -89,9 +111,9 @@ object global {
         * A ROS parameter.
         *
         * @constructor
-        * @param options - possible keys include:
-        *   * ros - the ROSLIB.Ros connection handle
-        *   * name - the param name, like max_vel_x
+        * @param {Object} options
+        * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+        * @param {string} options.name - The param name, like max_vel_x.
         */
       def this(options: Name) = this()
     }
@@ -101,10 +123,10 @@ object global {
     /**
       * A Pose in 3D space. Values are copied into this object.
       *
-      *  @constructor
-      *  @param options - object with following keys:
-      *   * position - the Vector3 describing the position
-      *   * orientation - the ROSLIB.Quaternion describing the orientation
+      * @constructor
+      * @param {Object} options
+      * @param {Vector3Like} options.position - The ROSLIB.Vector3 describing the position.
+      * @param {QuaternionLike} options.orientation - The ROSLIB.Quaternion describing the orientation.
       */
     open class Pose ()
       extends typings.roslib.mod.Pose {
@@ -117,11 +139,11 @@ object global {
       * A Quaternion.
       *
       * @constructor
-      * @param options - object with following keys:
-      *   * x - the x value
-      *   * y - the y value
-      *   * z - the z value
-      *   * w - the w value
+      * @param {Object} options
+      * @param {number} [options.x=0] - The x value.
+      * @param {number} [options.y=0] - The y value.
+      * @param {number} [options.z=0] - The z value.
+      * @param {number} [options.w=1] - The w value.
       */
     open class Quaternion ()
       extends typings.roslib.mod.Quaternion {
@@ -136,18 +158,18 @@ object global {
         * Manages connection to the server and all interactions with ROS.
         *
         * Emits the following events:
-        *  * 'error' - there was an error with ROS
-        *  * 'connection' - connected to the WebSocket server
-        *  * 'close' - disconnected to the WebSocket server
-        *  * <topicName> - a message came from rosbridge with the given topic name
-        *  * <serviceID> - a service response came from rosbridge with the given ID
+        *  * 'error' - There was an error with ROS.
+        *  * 'connection' - Connected to the WebSocket server.
+        *  * 'close' - Disconnected to the WebSocket server.
+        *  * &#60;topicName&#62; - A message came from rosbridge with the given topic name.
+        *  * &#60;serviceID&#62; - A service response came from rosbridge with the given ID.
         *
         * @constructor
-        * @param options - possible keys include:
-        *   * url (optional) - (can be specified later with `connect`) the WebSocket URL for rosbridge or the node server url to connect using socket.io (if socket.io exists in the page) <br>
-        *   * groovyCompatibility - don't use interfaces that changed after the last groovy release or rosbridge_suite and related tools (defaults to true)
-        *   * transportLibrary (optional) - one of 'websocket', 'workersocket' (default), 'socket.io' or RTCPeerConnection instance controlling how the connection is created in `connect`.
-        *   * transportOptions (optional) - the options to use use when creating a connection. Currently only used if `transportLibrary` is RTCPeerConnection.
+        * @param {Object} options
+        * @param {string} [options.url] - The WebSocket URL for rosbridge or the node server URL to connect using socket.io (if socket.io exists in the page). Can be specified later with `connect`.
+        * @param {boolean} [options.groovyCompatibility=true] - Don't use interfaces that changed after the last groovy release or rosbridge_suite and related tools.
+        * @param {string} [options.transportLibrary=websocket] - One of 'websocket', 'workersocket', 'socket.io' or RTCPeerConnection instance controlling how the connection is created in `connect`.
+        * @param {Object} [options.transportOptions={}] - The options to use when creating a connection. Currently only used if `transportLibrary` is RTCPeerConnection.
         */
       def this(options: GroovyCompatibility) = this()
     }
@@ -160,38 +182,58 @@ object global {
         * A ROS service client.
         *
         * @constructor
-        * @params options - possible keys include:
-        *   * ros - the ROSLIB.Ros connection handle
-        *   * name - the service name, like /add_two_ints
-        *   * serviceType - the service type, like 'rospy_tutorials/AddTwoInts'
+        * @param {Object} options
+        * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+        * @param {string} options.name - The service name, like '/add_two_ints'.
+        * @param {string} options.serviceType - The service type, like 'rospy_tutorials/AddTwoInts'.
         */
-      def this(data: typings.roslib.anon.Ros) = this()
+      def this(data: ServiceType) = this()
     }
     
     @JSGlobal("ROSLIB.ServiceRequest")
     @js.native
-    /**
-      * A ServiceRequest is passed into the service call.
-      *
-      * @constructor
-      * @param values - object matching the fields defined in the .srv definition file
-      */
-    open class ServiceRequest ()
+    open class ServiceRequest protected ()
       extends typings.roslib.mod.ServiceRequest {
+      /**
+        * A ServiceRequest is passed into the service call.
+        *
+        * @constructor
+        * @param {any} values - Object matching the fields defined in the .srv definition file.
+        */
       def this(values: Any) = this()
     }
     
     @JSGlobal("ROSLIB.ServiceResponse")
     @js.native
-    /**
-      * A ServiceResponse is returned from the service call.
-      *
-      * @constructor
-      * @param values - object matching the fields defined in the .srv definition file
-      */
-    open class ServiceResponse ()
+    open class ServiceResponse protected ()
       extends typings.roslib.mod.ServiceResponse {
+      /**
+        * A ServiceResponse is returned from the service call.
+        *
+        * @constructor
+        * @param {any} values - Object matching the fields defined in the .srv definition file.
+        */
       def this(values: Any) = this()
+    }
+    
+    @JSGlobal("ROSLIB.SimpleActionServer")
+    @js.native
+    open class SimpleActionServer protected ()
+      extends typings.roslib.mod.SimpleActionServer {
+      /**
+        * An actionlib action server client.
+        *
+        * Emits the following events:
+        *  * 'goal' - Goal sent by action client.
+        *  * 'cancel' - Action client has canceled the request.
+        *
+        * @constructor
+        * @param {Object} options
+        * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+        * @param {string} options.serverName - The action server name, like '/fibonacci'.
+        * @param {string} options.actionName - The action message name, like 'actionlib_tutorials/FibonacciAction'.
+        */
+      def this(options: typings.roslib.anon.Ros) = this()
     }
     
     @JSGlobal("ROSLIB.TFClient")
@@ -202,16 +244,17 @@ object global {
         * A TF Client that listens to TFs from tf2_web_republisher.
         *
         * @constructor
-        * @param options - object with following keys:
-        *   * ros - the ROSLIB.Ros connection handle
-        *   * fixedFrame - the fixed frame, like /base_link
-        *   * angularThres - the angular threshold for the TF republisher
-        *   * transThres - the translation threshold for the TF republisher
-        *   * rate - the rate for the TF republisher
-        *   * updateDelay - the time (in ms) to wait after a new subscription to update the TF republisher's list of TFs
-        *   * topicTimeout - the timeout parameter for the TF republisher
-        *   * serverName (optional) - the name of the tf2_web_republisher server
-        *   * repubServiceName (optional) - the name of the republish_tfs service (non groovy compatibility mode only) default: '/republish_tfs'
+        * @param {Object} options
+        * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+        * @param {string} [options.fixedFrame=base_link] - The fixed frame.
+        * @param {number} [options.angularThres=2.0] - The angular threshold for the TF republisher.
+        * @param {number} [options.transThres=0.01] - The translation threshold for the TF republisher.
+        * @param {number} [options.rate=10.0] - The rate for the TF republisher.
+        * @param {number} [options.updateDelay=50] - The time (in ms) to wait after a new subscription
+        *     to update the TF republisher's list of TFs.
+        * @param {number} [options.topicTimeout=2.0] - The timeout parameter for the TF republisher.
+        * @param {string} [options.serverName=/tf2_web_republisher] - The name of the tf2_web_republisher server.
+        * @param {string} [options.repubServiceName=/republish_tfs] - The name of the republish_tfs service (non groovy compatibility mode only).
         */
       def this(options: AngularThres) = this()
     }
@@ -224,19 +267,20 @@ object global {
         * Publish and/or subscribe to a topic in ROS.
         *
         * Emits the following events:
-        *  * 'warning' - if there are any warning during the Topic creation
-        *  * 'message' - the message data from rosbridge
+        *  * 'warning' - If there are any warning during the Topic creation.
+        *  * 'message' - The message data from rosbridge.
         *
         * @constructor
-        * @param options - object with following keys:
-        *   * ros - the ROSLIB.Ros connection handle
-        *   * name - the topic name, like /cmd_vel
-        *   * messageType - the message type, like 'std_msgs/String'
-        *   * compression - the type of compression to use, like 'png'
-        *   * throttle_rate - the rate (in ms in between messages) at which to throttle the topics
-        *   * queue_size - the queue created at bridge side for re-publishing webtopics (defaults to 100)
-        *   * latch - latch the topic when publishing
-        *   * queue_length - the queue length at bridge side used when subscribing (defaults to 0, no queueing).
+        * @param {Object} options
+        * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
+        * @param {string} options.name - The topic name, like '/cmd_vel'.
+        * @param {string} options.messageType - The message type, like 'std_msgs/String'.
+        * @param {string} [options.compression=none] - The type of compression to use, like 'png', 'cbor', or 'cbor-raw'.
+        * @param {number} [options.throttle_rate=0] - The rate (in ms in between messages) at which to throttle the topics.
+        * @param {number} [options.queue_size=100] - The queue created at bridge side for re-publishing webtopics.
+        * @param {boolean} [options.latch=false] - Latch the topic when publishing.
+        * @param {number} [options.queue_length=0] - The queue length at bridge side used when subscribing.
+        * @param {boolean} [options.reconnect_on_close=true] - The flag to enable resubscription and readvertisement on close event.
         */
       def this(options: Compression) = this()
     }
@@ -247,9 +291,9 @@ object global {
       * A Transform in 3-space. Values are copied into this object.
       *
       * @constructor
-      * @param options - object with following keys:
-      *   * translation - the Vector3 describing the translation
-      *   * rotation - the ROSLIB.Quaternion describing the rotation
+      * @param {Object} options
+      * @param {Vector3Like} options.translation - The ROSLIB.Vector3 describing the translation.
+      * @param {QuaternionLike} options.rotation - The ROSLIB.Quaternion describing the rotation.
       */
     open class Transform ()
       extends typings.roslib.mod.Transform {
@@ -280,8 +324,8 @@ object global {
         * A Box element in a URDF.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
         */
       def this(options: Xml) = this()
     }
@@ -294,8 +338,8 @@ object global {
         * A Color element in a URDF.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
         */
       def this(options: Xml) = this()
     }
@@ -308,8 +352,8 @@ object global {
         * A Cylinder element in a URDF.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
         */
       def this(options: Xml) = this()
     }
@@ -322,8 +366,8 @@ object global {
         * A Joint element in a URDF.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
         */
       def this(options: Xml) = this()
     }
@@ -336,8 +380,8 @@ object global {
         * A Link element in a URDF.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
         */
       def this(options: Xml) = this()
     }
@@ -350,8 +394,8 @@ object global {
         * A Material element in a URDF.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
         */
       def this(options: Xml) = this()
     }
@@ -364,8 +408,8 @@ object global {
         * A Box element in a URDF.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
         */
       def this(options: Xml) = this()
     }
@@ -378,9 +422,9 @@ object global {
         * A URDF Model can be used to parse a given URDF into the appropriate elements.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
-        *  * string - the XML element to parse as a string
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
+        * @param {string} options.string - The XML element to parse as a string.
         */
       def this(options: String) = this()
       def this(options: StringString) = this()
@@ -394,8 +438,8 @@ object global {
         * A Sphere element in a URDF.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
         */
       def this(options: Xml) = this()
     }
@@ -408,8 +452,8 @@ object global {
         * A Visual element in a URDF.
         *
         * @constructor
-        * @param options - object with following keys:
-        *  * xml - the XML element to parse
+        * @param {Object} options
+        * @param {Node} options.xml - The XML element to parse.
         */
       def this(options: Xml) = this()
     }
@@ -420,10 +464,10 @@ object global {
       * A 3D vector.
       *
       * @constructor
-      * @param options - object with following keys:
-      *   * x - the x value
-      *   * y - the y value
-      *   * z - the z value
+      * @param {Object} options
+      * @param {number} [options.x=0] - The x value.
+      * @param {number} [options.y=0] - The y value.
+      * @param {number} [options.z=0] - The z value.
       */
     open class Vector3 ()
       extends typings.roslib.mod.Vector3 {

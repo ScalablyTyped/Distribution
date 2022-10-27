@@ -29,3 +29,12 @@ open class LoopDetected ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`508` = js.native
 }
+object LoopDetected {
+  
+  @JSImport("http-errors", "LoopDetected")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`508`] = js.native
+  @JSImport("http-errors", "LoopDetected")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`508`] = js.native
+}

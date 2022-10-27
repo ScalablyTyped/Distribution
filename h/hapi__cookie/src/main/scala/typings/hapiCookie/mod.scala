@@ -66,7 +66,7 @@ object mod extends Shortcut {
       * An optional session validation function used to validate the content of the session cookie on each request.
       * Used to verify that the internal session state is still valid (e.g. user account still exists).
       */
-    var validateFunc: js.UndefOr[ValidateFunction] = js.undefined
+    var validate: js.UndefOr[ValidateFunction] = js.undefined
   }
   object Options {
     
@@ -99,11 +99,11 @@ object mod extends Shortcut {
       
       inline def setRequestDecoratorNameUndefined: Self = StObject.set(x, "requestDecoratorName", js.undefined)
       
-      inline def setValidateFunc(
+      inline def setValidate(
         value: (/* request */ js.UndefOr[Request[ReqRefDefaults]], /* session */ js.UndefOr[js.Object]) => js.Promise[ValidateResponse]
-      ): Self = StObject.set(x, "validateFunc", js.Any.fromFunction2(value))
+      ): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
       
-      inline def setValidateFuncUndefined: Self = StObject.set(x, "validateFunc", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -119,12 +119,12 @@ object mod extends Shortcut {
     
     var credentials: js.UndefOr[AuthCredentials[UserCredentials, AppCredentials]] = js.undefined
     
-    var valid: Boolean
+    var isValid: Boolean
   }
   object ValidateResponse {
     
-    inline def apply(valid: Boolean): ValidateResponse = {
-      val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any])
+    inline def apply(isValid: Boolean): ValidateResponse = {
+      val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidateResponse]
     }
     
@@ -134,7 +134,7 @@ object mod extends Shortcut {
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,7 +148,7 @@ object mod extends Shortcut {
     
     trait PluginSpecificConfiguration extends StObject {
       
-      var `hapi-auth-cookie`: js.UndefOr[RedirectTo] = js.undefined
+      var cookie: js.UndefOr[RedirectTo] = js.undefined
     }
     object PluginSpecificConfiguration {
       
@@ -159,9 +159,9 @@ object mod extends Shortcut {
       
       extension [Self <: PluginSpecificConfiguration](x: Self) {
         
-        inline def `setHapi-auth-cookie`(value: RedirectTo): Self = StObject.set(x, "hapi-auth-cookie", value.asInstanceOf[js.Any])
+        inline def setCookie(value: RedirectTo): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
         
-        inline def `setHapi-auth-cookieUndefined`: Self = StObject.set(x, "hapi-auth-cookie", js.undefined)
+        inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       }
     }
     

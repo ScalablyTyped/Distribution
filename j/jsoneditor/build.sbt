@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jsoneditor"
-version := "9.9-dt-20220912Z-2e2c0e"
+version := "9.9-dt-20220912Z-a595b3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20220818Z-b6e31c",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-20bcca",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
-  "org.scalablytyped" %%% "re2" % "1.17.7-5ddb3b",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-fcbdcb",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "re2" % "1.17.7-18b669",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092")
 publishArtifact in packageDoc := false

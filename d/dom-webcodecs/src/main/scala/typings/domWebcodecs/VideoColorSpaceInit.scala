@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VideoColorSpaceInit extends StObject {
   
-  var fullRange: js.UndefOr[Boolean] = js.undefined
+  var fullRange: js.UndefOr[Boolean | Null] = js.undefined
   
-  var matrix: js.UndefOr[VideoMatrixCoefficients] = js.undefined
+  var matrix: js.UndefOr[VideoMatrixCoefficients | Null] = js.undefined
   
-  var primaries: js.UndefOr[VideoColorPrimaries] = js.undefined
+  var primaries: js.UndefOr[VideoColorPrimaries | Null] = js.undefined
   
-  var transfer: js.UndefOr[VideoTransferCharacteristics] = js.undefined
+  var transfer: js.UndefOr[VideoTransferCharacteristics | Null] = js.undefined
 }
 object VideoColorSpaceInit {
   
@@ -28,17 +28,25 @@ object VideoColorSpaceInit {
     
     inline def setFullRange(value: Boolean): Self = StObject.set(x, "fullRange", value.asInstanceOf[js.Any])
     
+    inline def setFullRangeNull: Self = StObject.set(x, "fullRange", null)
+    
     inline def setFullRangeUndefined: Self = StObject.set(x, "fullRange", js.undefined)
     
     inline def setMatrix(value: VideoMatrixCoefficients): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    
+    inline def setMatrixNull: Self = StObject.set(x, "matrix", null)
     
     inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
     inline def setPrimaries(value: VideoColorPrimaries): Self = StObject.set(x, "primaries", value.asInstanceOf[js.Any])
     
+    inline def setPrimariesNull: Self = StObject.set(x, "primaries", null)
+    
     inline def setPrimariesUndefined: Self = StObject.set(x, "primaries", js.undefined)
     
     inline def setTransfer(value: VideoTransferCharacteristics): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
+    
+    inline def setTransferNull: Self = StObject.set(x, "transfer", null)
     
     inline def setTransferUndefined: Self = StObject.set(x, "transfer", js.undefined)
   }

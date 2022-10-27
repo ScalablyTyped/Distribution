@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PaginatorTemplateOptions extends StObject {
   
-  var CurrentPageReport: PaginatorCurrentPageReportType
+  var CurrentPageReport: js.UndefOr[PaginatorCurrentPageReportType] = js.undefined
   
-  var FirstPageLink: PaginatorFirstPageLinkType
+  var FirstPageLink: js.UndefOr[PaginatorFirstPageLinkType] = js.undefined
   
-  var JumpToPageInput: PaginatorJumpToPageInputType
+  var JumpToPageInput: js.UndefOr[PaginatorJumpToPageInputType] = js.undefined
   
-  var LastPageLink: PaginatorLastPageLinkType
+  var LastPageLink: js.UndefOr[PaginatorLastPageLinkType] = js.undefined
   
-  var NextPageLink: PaginatorNextPageLinkType
+  var NextPageLink: js.UndefOr[PaginatorNextPageLinkType] = js.undefined
   
-  var PageLinks: PaginatorPageLinksType
+  var PageLinks: js.UndefOr[PaginatorPageLinksType] = js.undefined
   
-  var PrevPageLink: PaginatorPrevPageLinkType
+  var PrevPageLink: js.UndefOr[PaginatorPrevPageLinkType] = js.undefined
   
-  var RowsPerPageDropdown: PaginatorRowsPerPageDropdownType
+  var RowsPerPageDropdown: js.UndefOr[PaginatorRowsPerPageDropdownType] = js.undefined
   
-  var layout: String
+  var layout: js.UndefOr[String] = js.undefined
 }
 object PaginatorTemplateOptions {
   
-  inline def apply(layout: String): PaginatorTemplateOptions = {
-    val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any])
+  inline def apply(): PaginatorTemplateOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginatorTemplateOptions]
   }
   
@@ -59,6 +59,8 @@ object PaginatorTemplateOptions {
     inline def setLastPageLinkUndefined: Self = StObject.set(x, "LastPageLink", js.undefined)
     
     inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     inline def setNextPageLink(value: PaginatorNextPageLinkType): Self = StObject.set(x, "NextPageLink", value.asInstanceOf[js.Any])
     

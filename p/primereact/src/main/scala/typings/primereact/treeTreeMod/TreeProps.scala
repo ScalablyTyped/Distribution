@@ -1,5 +1,6 @@
 package typings.primereact.treeTreeMod
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +14,7 @@ trait TreeProps extends StObject {
   
   var contentClassName: js.UndefOr[String] = js.undefined
   
-  var contentStyle: js.UndefOr[js.Object] = js.undefined
+  var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var contextMenuSelectionKey: js.UndefOr[String] = js.undefined
   
@@ -85,7 +86,7 @@ trait TreeProps extends StObject {
   
   var showHeader: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   var togglerTemplate: js.UndefOr[TreeTogglerTemplateType] = js.undefined
   
@@ -116,7 +117,7 @@ object TreeProps {
     
     inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
     
-    inline def setContentStyle(value: js.Object): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+    inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
     inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
@@ -272,7 +273,7 @@ object TreeProps {
     
     inline def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
     
-    inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

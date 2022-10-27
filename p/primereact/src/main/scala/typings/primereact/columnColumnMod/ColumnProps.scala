@@ -1,5 +1,7 @@
 package typings.primereact.columnColumnMod
 
+import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +17,9 @@ trait ColumnProps extends StObject {
   
   var body: js.UndefOr[ColumnBodyType] = js.undefined
   
-  var bodyClassName: js.UndefOr[String] = js.undefined
+  var bodyClassName: js.UndefOr[ColumnBodyClassType] = js.undefined
   
-  var bodyStyle: js.UndefOr[js.Object] = js.undefined
+  var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var cellEditValidator: js.UndefOr[js.Function1[/* e */ ColumnEventParams, Boolean]] = js.undefined
   
@@ -37,7 +39,7 @@ trait ColumnProps extends StObject {
   
   var excludeGlobalFilter: js.UndefOr[Boolean] = js.undefined
   
-  var expander: js.UndefOr[Boolean] = js.undefined
+  var expander: js.UndefOr[ColumnExpanderType] = js.undefined
   
   var exportable: js.UndefOr[Boolean] = js.undefined
   
@@ -69,7 +71,7 @@ trait ColumnProps extends StObject {
   
   var filterHeaderClassName: js.UndefOr[String] = js.undefined
   
-  var filterHeaderStyle: js.UndefOr[js.Object] = js.undefined
+  var filterHeaderStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var filterMatchMode: js.UndefOr[ColumnFilterMatchModeType] = js.undefined
   
@@ -79,7 +81,7 @@ trait ColumnProps extends StObject {
   
   var filterMenuClassName: js.UndefOr[String] = js.undefined
   
-  var filterMenuStyle: js.UndefOr[js.Object] = js.undefined
+  var filterMenuStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var filterPlaceholder: js.UndefOr[String] = js.undefined
   
@@ -89,7 +91,7 @@ trait ColumnProps extends StObject {
   
   var footerClassName: js.UndefOr[String] = js.undefined
   
-  var footerStyle: js.UndefOr[js.Object] = js.undefined
+  var footerStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var frozen: js.UndefOr[Boolean] = js.undefined
   
@@ -97,7 +99,11 @@ trait ColumnProps extends StObject {
   
   var headerClassName: js.UndefOr[String] = js.undefined
   
-  var headerStyle: js.UndefOr[js.Object] = js.undefined
+  var headerStyle: js.UndefOr[CSSProperties] = js.undefined
+  
+  var headerTooltip: js.UndefOr[String] = js.undefined
+  
+  var headerTooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
@@ -161,7 +167,7 @@ trait ColumnProps extends StObject {
   
   var sortableDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object ColumnProps {
   
@@ -190,13 +196,15 @@ object ColumnProps {
     
     inline def setBody(value: ColumnBodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyClassName(value: String): Self = StObject.set(x, "bodyClassName", value.asInstanceOf[js.Any])
+    inline def setBodyClassName(value: ColumnBodyClassType): Self = StObject.set(x, "bodyClassName", value.asInstanceOf[js.Any])
+    
+    inline def setBodyClassNameFunction2(value: (/* data */ Any, /* options */ ColumnBodyOptions) => String): Self = StObject.set(x, "bodyClassName", js.Any.fromFunction2(value))
     
     inline def setBodyClassNameUndefined: Self = StObject.set(x, "bodyClassName", js.undefined)
     
     inline def setBodyFunction2(value: (/* data */ Any, /* options */ ColumnBodyOptions) => ReactNode): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
     
-    inline def setBodyStyle(value: js.Object): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
+    inline def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
     
     inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
     
@@ -240,7 +248,9 @@ object ColumnProps {
     
     inline def setExcludeGlobalFilterUndefined: Self = StObject.set(x, "excludeGlobalFilter", js.undefined)
     
-    inline def setExpander(value: Boolean): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
+    inline def setExpander(value: ColumnExpanderType): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
+    
+    inline def setExpanderFunction2(value: (/* data */ Any, /* options */ ColumnBodyOptions) => Boolean): Self = StObject.set(x, "expander", js.Any.fromFunction2(value))
     
     inline def setExpanderUndefined: Self = StObject.set(x, "expander", js.undefined)
     
@@ -296,7 +306,7 @@ object ColumnProps {
     
     inline def setFilterHeaderFunction1(value: /* options */ ColumnFilterHeaderTemplateOptions => ReactNode): Self = StObject.set(x, "filterHeader", js.Any.fromFunction1(value))
     
-    inline def setFilterHeaderStyle(value: js.Object): Self = StObject.set(x, "filterHeaderStyle", value.asInstanceOf[js.Any])
+    inline def setFilterHeaderStyle(value: CSSProperties): Self = StObject.set(x, "filterHeaderStyle", value.asInstanceOf[js.Any])
     
     inline def setFilterHeaderStyleUndefined: Self = StObject.set(x, "filterHeaderStyle", js.undefined)
     
@@ -320,7 +330,7 @@ object ColumnProps {
     
     inline def setFilterMenuClassNameUndefined: Self = StObject.set(x, "filterMenuClassName", js.undefined)
     
-    inline def setFilterMenuStyle(value: js.Object): Self = StObject.set(x, "filterMenuStyle", value.asInstanceOf[js.Any])
+    inline def setFilterMenuStyle(value: CSSProperties): Self = StObject.set(x, "filterMenuStyle", value.asInstanceOf[js.Any])
     
     inline def setFilterMenuStyleUndefined: Self = StObject.set(x, "filterMenuStyle", js.undefined)
     
@@ -342,7 +352,7 @@ object ColumnProps {
     
     inline def setFooterFunction1(value: /* options */ ColumnFooterOptions => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
     
-    inline def setFooterStyle(value: js.Object): Self = StObject.set(x, "footerStyle", value.asInstanceOf[js.Any])
+    inline def setFooterStyle(value: CSSProperties): Self = StObject.set(x, "footerStyle", value.asInstanceOf[js.Any])
     
     inline def setFooterStyleUndefined: Self = StObject.set(x, "footerStyle", js.undefined)
     
@@ -360,9 +370,17 @@ object ColumnProps {
     
     inline def setHeaderFunction1(value: /* options */ ColumnHeaderOptions => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
     
-    inline def setHeaderStyle(value: js.Object): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+    inline def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
     inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
+    
+    inline def setHeaderTooltip(value: String): Self = StObject.set(x, "headerTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderTooltipOptions(value: TooltipOptions): Self = StObject.set(x, "headerTooltipOptions", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderTooltipOptionsUndefined: Self = StObject.set(x, "headerTooltipOptions", js.undefined)
+    
+    inline def setHeaderTooltipUndefined: Self = StObject.set(x, "headerTooltip", js.undefined)
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
@@ -490,7 +508,7 @@ object ColumnProps {
     
     inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
-    inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

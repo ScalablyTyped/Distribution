@@ -64,6 +64,13 @@ trait Provisioned extends StObject {
   
   /**
     * 
+    This controls storage mode for supported storage tiers.
+    
+    */
+  var StorageMode: js.UndefOr[typings.awsSdk.clientsKafkaMod.StorageMode] = js.undefined
+  
+  /**
+    * 
     The connection string to use to connect to the Apache ZooKeeper cluster.
     
     */
@@ -112,6 +119,10 @@ object Provisioned {
     inline def setOpenMonitoring(value: OpenMonitoringInfo): Self = StObject.set(x, "OpenMonitoring", value.asInstanceOf[js.Any])
     
     inline def setOpenMonitoringUndefined: Self = StObject.set(x, "OpenMonitoring", js.undefined)
+    
+    inline def setStorageMode(value: StorageMode): Self = StObject.set(x, "StorageMode", value.asInstanceOf[js.Any])
+    
+    inline def setStorageModeUndefined: Self = StObject.set(x, "StorageMode", js.undefined)
     
     inline def setZookeeperConnectString(value: string): Self = StObject.set(x, "ZookeeperConnectString", value.asInstanceOf[js.Any])
     

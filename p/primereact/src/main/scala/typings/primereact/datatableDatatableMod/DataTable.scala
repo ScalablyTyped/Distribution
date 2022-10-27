@@ -41,5 +41,11 @@ open class DataTable protected () extends Component[DataTableProps, Any, Any] {
   
   def resetScroll(): Unit = js.native
   
+  def restoreColumnWidths(): Unit = js.native
+  
+  def restoreState(): Unit = js.native
+  
   def restoreTableState(state: Any): Unit = js.native
+  
+  def saveState(): Unit = js.native
 }

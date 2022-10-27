@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ratelimiter"
-version := "3.4-dt-20211209Z-bf74aa"
+version := "3.4-dt-20221026Z-bf74aa"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

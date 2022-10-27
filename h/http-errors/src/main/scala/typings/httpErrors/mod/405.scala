@@ -29,3 +29,12 @@ open class `405` ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`405` = js.native
 }
+object `405` {
+  
+  @JSImport("http-errors", "405")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`405`] = js.native
+  @JSImport("http-errors", "405")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`405`] = js.native
+}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for roslib
 
-Typings are for version 1.1.0
+Typings are for version 1.3.0
 
 ## Library description:
 The standard ROS Javascript Library

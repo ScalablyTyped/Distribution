@@ -309,7 +309,7 @@ object splitbuttonSplitbuttonMod {
     
     var menuClassName: js.UndefOr[String] = js.undefined
     
-    var menuStyle: js.UndefOr[js.Object] = js.undefined
+    var menuStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var model: js.UndefOr[
         js.Array[
@@ -910,7 +910,7 @@ object splitbuttonSplitbuttonMod {
       
       inline def setMenuClassNameUndefined: Self = StObject.set(x, "menuClassName", js.undefined)
       
-      inline def setMenuStyle(value: js.Object): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
+      inline def setMenuStyle(value: CSSProperties): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
       
       inline def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
       

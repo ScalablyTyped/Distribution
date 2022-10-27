@@ -29,3 +29,12 @@ open class UnprocessableEntity ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`422` = js.native
 }
+object UnprocessableEntity {
+  
+  @JSImport("http-errors", "UnprocessableEntity")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`422`] = js.native
+  @JSImport("http-errors", "UnprocessableEntity")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`422`] = js.native
+}

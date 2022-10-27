@@ -76,6 +76,8 @@ trait RestoreDBClusterFromSnapshotMessage extends StObject {
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   
+  var ServerlessV2ScalingConfiguration: js.UndefOr[typings.awsSdk.clientsNeptuneMod.ServerlessV2ScalingConfiguration] = js.undefined
+  
   /**
     * The identifier for the DB snapshot or DB cluster snapshot to restore from. You can use either the name or the Amazon Resource Name (ARN) to specify a DB cluster snapshot. However, you can use only the ARN to specify a DB snapshot. Constraints:   Must match the identifier of an existing Snapshot.  
     */
@@ -155,6 +157,10 @@ object RestoreDBClusterFromSnapshotMessage {
     inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    
+    inline def setServerlessV2ScalingConfiguration(value: ServerlessV2ScalingConfiguration): Self = StObject.set(x, "ServerlessV2ScalingConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setServerlessV2ScalingConfigurationUndefined: Self = StObject.set(x, "ServerlessV2ScalingConfiguration", js.undefined)
     
     inline def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
     

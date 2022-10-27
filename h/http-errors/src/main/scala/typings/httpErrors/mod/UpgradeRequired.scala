@@ -29,3 +29,12 @@ open class UpgradeRequired ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`426` = js.native
 }
+object UpgradeRequired {
+  
+  @JSImport("http-errors", "UpgradeRequired")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`426`] = js.native
+  @JSImport("http-errors", "UpgradeRequired")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`426`] = js.native
+}

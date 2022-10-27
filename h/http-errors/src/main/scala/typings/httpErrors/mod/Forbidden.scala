@@ -29,3 +29,12 @@ open class Forbidden ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`403` = js.native
 }
+object Forbidden {
+  
+  @JSImport("http-errors", "Forbidden")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`403`] = js.native
+  @JSImport("http-errors", "Forbidden")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`403`] = js.native
+}

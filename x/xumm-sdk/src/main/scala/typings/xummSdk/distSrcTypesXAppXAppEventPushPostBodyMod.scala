@@ -14,6 +14,8 @@ object distSrcTypesXAppXAppEventPushPostBodyMod {
     
     var data: js.UndefOr[AnyJson] = js.undefined
     
+    var silent: js.UndefOr[Boolean] = js.undefined
+    
     var subtitle: js.UndefOr[String] = js.undefined
     
     var user_token: String
@@ -34,6 +36,10 @@ object distSrcTypesXAppXAppEventPushPostBodyMod {
       inline def setData(value: AnyJson): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
       inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       

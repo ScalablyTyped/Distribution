@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Ros extends StObject {
   
-  var name: java.lang.String
+  var actionName: java.lang.String
   
   var ros: typings.roslib.mod.Ros
   
-  var serviceType: java.lang.String
+  var serverName: java.lang.String
 }
 object Ros {
   
-  inline def apply(name: java.lang.String, ros: typings.roslib.mod.Ros, serviceType: java.lang.String): Ros = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ros = ros.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any])
+  inline def apply(actionName: java.lang.String, ros: typings.roslib.mod.Ros, serverName: java.lang.String): Ros = {
+    val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any], ros = ros.asInstanceOf[js.Any], serverName = serverName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ros]
   }
   
   extension [Self <: Ros](x: Self) {
     
-    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setActionName(value: java.lang.String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     inline def setRos(value: typings.roslib.mod.Ros): Self = StObject.set(x, "ros", value.asInstanceOf[js.Any])
     
-    inline def setServiceType(value: java.lang.String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServerName(value: java.lang.String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
   }
 }

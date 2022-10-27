@@ -29,3 +29,12 @@ open class PaymentRequired ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`402` = js.native
 }
+object PaymentRequired {
+  
+  @JSImport("http-errors", "PaymentRequired")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`402`] = js.native
+  @JSImport("http-errors", "PaymentRequired")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`402`] = js.native
+}

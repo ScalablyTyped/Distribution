@@ -29,3 +29,12 @@ open class RangeNotSatisfiable ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`416` = js.native
 }
+object RangeNotSatisfiable {
+  
+  @JSImport("http-errors", "RangeNotSatisfiable")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`416`] = js.native
+  @JSImport("http-errors", "RangeNotSatisfiable")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`416`] = js.native
+}

@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
@@ -38,7 +39,7 @@ object scrolltopScrolltopMod {
     
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var target: js.UndefOr[ScrollTopTargetType] = js.undefined
     
@@ -83,7 +84,7 @@ object scrolltopScrolltopMod {
       
       inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

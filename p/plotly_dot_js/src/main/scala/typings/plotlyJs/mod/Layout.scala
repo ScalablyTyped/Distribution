@@ -6,7 +6,7 @@ import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.anon.PartialHoverLabel
 import typings.plotlyJs.anon.PartialImage
 import typings.plotlyJs.anon.PartialLayoutAxisAngle
-import typings.plotlyJs.anon.PartialLegend
+import typings.plotlyJs.anon.PartialLegendBgcolor
 import typings.plotlyJs.anon.PartialMapboxAccesstoken
 import typings.plotlyJs.anon.PartialMargin
 import typings.plotlyJs.anon.PartialModeBar
@@ -93,7 +93,7 @@ trait Layout extends StObject {
   
   var images: js.Array[PartialImage]
   
-  var legend: PartialLegend
+  var legend: PartialLegendBgcolor
   
   // TODO
   var mapbox: PartialMapboxAccesstoken
@@ -254,7 +254,7 @@ object Layout {
     hoverlabel: PartialHoverLabel,
     hovermode: closest | x | y | (`x unified`) | (`y unified`) | `false`,
     images: js.Array[PartialImage],
-    legend: PartialLegend,
+    legend: PartialLegendBgcolor,
     mapbox: PartialMapboxAccesstoken,
     margin: PartialMargin,
     modebar: PartialModeBar,
@@ -382,7 +382,7 @@ object Layout {
     
     inline def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value*))
     
-    inline def setLegend(value: PartialLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: PartialLegendBgcolor): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setMapbox(value: PartialMapboxAccesstoken): Self = StObject.set(x, "mapbox", value.asInstanceOf[js.Any])
     

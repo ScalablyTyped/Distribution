@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-rx"
-version := "6.2.0-804fab"
+version := "6.2.0-3d37cf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__parser" % "7.19.6-1f26d3",
   "org.scalablytyped" %%% "babel__types" % "7.19.4-ea0dd0",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
-  "org.scalablytyped" %%% "rxjs" % "7.5.7-dfed9b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "rxjs" % "7.5.7-a78fa8",
   "org.scalablytyped" %%% "source-map" % "0.7.4-01a3bb",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "vue" % "3.2.41-a22f7f",

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "sinon-express-mock"
-version := "1.3-dt-20211202Z-f8923d"
+version := "1.3-dt-20211202Z-a103b9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-cbb6c3",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-035d9a",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-7a82fe",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-87e3cc",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221024Z-2be228",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-c7a026",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-5e7139",
   "org.scalablytyped" %%% "sinon" % "10.0-dt-20220720Z-556da5",
   "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-7adbb2",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

@@ -64,6 +64,7 @@ import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.Component
@@ -586,7 +587,7 @@ object inputswitchInputswitchMod {
     
     var step: js.UndefOr[Double | String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
@@ -1427,7 +1428,7 @@ object inputswitchInputswitchMod {
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

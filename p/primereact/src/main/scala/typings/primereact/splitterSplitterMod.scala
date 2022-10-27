@@ -142,7 +142,7 @@ object splitterSplitterMod {
     
     var size: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SplitterPanelProps {
     
@@ -169,7 +169,7 @@ object splitterSplitterMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

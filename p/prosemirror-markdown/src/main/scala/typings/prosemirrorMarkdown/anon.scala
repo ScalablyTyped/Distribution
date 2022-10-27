@@ -8,7 +8,12 @@ object anon {
   
   trait EscapeExtraCharacters extends StObject {
     
-    var escapeExtraCharacters: js.UndefOr[js.RegExp | Null] = js.undefined
+    /**
+      Extra characters can be added for escaping. This is passed
+      directly to String.replace(), and the matching characters are
+      preceded by a backslash.
+      */
+    var escapeExtraCharacters: js.UndefOr[js.RegExp] = js.undefined
   }
   object EscapeExtraCharacters {
     
@@ -21,17 +26,40 @@ object anon {
       
       inline def setEscapeExtraCharacters(value: js.RegExp): Self = StObject.set(x, "escapeExtraCharacters", value.asInstanceOf[js.Any])
       
-      inline def setEscapeExtraCharactersNull: Self = StObject.set(x, "escapeExtraCharacters", null)
+      inline def setEscapeExtraCharactersUndefined: Self = StObject.set(x, "escapeExtraCharacters", js.undefined)
+    }
+  }
+  
+  trait EscapeExtraCharactersTightLists extends StObject {
+    
+    var escapeExtraCharacters: js.UndefOr[js.RegExp] = js.undefined
+    
+    var tightLists: js.UndefOr[Boolean] = js.undefined
+  }
+  object EscapeExtraCharactersTightLists {
+    
+    inline def apply(): EscapeExtraCharactersTightLists = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[EscapeExtraCharactersTightLists]
+    }
+    
+    extension [Self <: EscapeExtraCharactersTightLists](x: Self) {
+      
+      inline def setEscapeExtraCharacters(value: js.RegExp): Self = StObject.set(x, "escapeExtraCharacters", value.asInstanceOf[js.Any])
       
       inline def setEscapeExtraCharactersUndefined: Self = StObject.set(x, "escapeExtraCharacters", js.undefined)
+      
+      inline def setTightLists(value: Boolean): Self = StObject.set(x, "tightLists", value.asInstanceOf[js.Any])
+      
+      inline def setTightListsUndefined: Self = StObject.set(x, "tightLists", js.undefined)
     }
   }
   
   trait Leading extends StObject {
     
-    var leading: js.UndefOr[String | Null] = js.undefined
+    var leading: js.UndefOr[String] = js.undefined
     
-    var trailing: js.UndefOr[String | Null] = js.undefined
+    var trailing: js.UndefOr[String] = js.undefined
   }
   object Leading {
     
@@ -44,13 +72,9 @@ object anon {
       
       inline def setLeading(value: String): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      inline def setLeadingNull: Self = StObject.set(x, "leading", null)
-      
       inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
       inline def setTrailing(value: String): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
-      
-      inline def setTrailingNull: Self = StObject.set(x, "trailing", null)
       
       inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
@@ -58,7 +82,12 @@ object anon {
   
   trait TightLists extends StObject {
     
-    var tightLists: js.UndefOr[Boolean | Null] = js.undefined
+    /**
+      Whether to render lists in a tight style. This can be overridden
+      on a node level by specifying a tight attribute on the node.
+      Defaults to false.
+      */
+    var tightLists: js.UndefOr[Boolean] = js.undefined
   }
   object TightLists {
     
@@ -70,8 +99,6 @@ object anon {
     extension [Self <: TightLists](x: Self) {
       
       inline def setTightLists(value: Boolean): Self = StObject.set(x, "tightLists", value.asInstanceOf[js.Any])
-      
-      inline def setTightListsNull: Self = StObject.set(x, "tightLists", null)
       
       inline def setTightListsUndefined: Self = StObject.set(x, "tightLists", js.undefined)
     }

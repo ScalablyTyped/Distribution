@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.nextSeo.libTypesMod.NextSeoProps because var conflicts: additionalLinkTags, additionalMetaTags, canonical, defaultTitle, description, facebook, languageAlternates, mobileAlternate, openGraph, robotsProps, title, titleTemplate, twitter. Inlined noindex, nofollow, children */ trait BuildTagsParams
+- typings.nextSeo.libTypesMod.NextSeoProps because var conflicts: additionalLinkTags, additionalMetaTags, canonical, defaultTitle, description, facebook, languageAlternates, mobileAlternate, openGraph, robotsProps, themeColor, title, titleTemplate, twitter. Inlined noindex, nofollow, children */ trait BuildTagsParams
   extends StObject
      with DefaultSeoProps {
   

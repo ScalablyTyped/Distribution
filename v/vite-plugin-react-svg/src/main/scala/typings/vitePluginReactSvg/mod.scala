@@ -1,9 +1,9 @@
 package typings.vitePluginReactSvg
 
 import typings.react.mod.SVGAttributes
-import typings.std.Plugin
 import typings.std.Record
 import typings.std.SVGSVGElement
+import typings.vite.mod.Plugin2
 import typings.vitePluginReactSvg.vitePluginReactSvgBooleans.`false`
 import typings.vitePluginReactSvg.vitePluginReactSvgStrings.component
 import typings.vitePluginReactSvg.vitePluginReactSvgStrings.end
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
-  inline def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(): Plugin2 = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin2]
+  inline def apply(options: Options): Plugin2 = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin2]
   
   @JSImport("vite-plugin-react-svg", JSImport.Namespace)
   @js.native

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CreateHttpError extends StObject {
   
-  def apply[N /* <: UnknownError */](arg: N, rest: UnknownError*): HttpError[
-    /* import warning: importer.ImportType#apply Failed type conversion: N extends number ? N : number */ js.Any
-  ] = js.native
+  def apply(rest: UnknownError*): HttpError[Double] = js.native
+  def apply[N /* <: Double */](arg: N, rest: UnknownError*): HttpError[N] = js.native
 }

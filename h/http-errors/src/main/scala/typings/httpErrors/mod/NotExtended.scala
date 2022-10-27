@@ -29,3 +29,12 @@ open class NotExtended ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`510` = js.native
 }
+object NotExtended {
+  
+  @JSImport("http-errors", "NotExtended")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`510`] = js.native
+  @JSImport("http-errors", "NotExtended")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`510`] = js.native
+}

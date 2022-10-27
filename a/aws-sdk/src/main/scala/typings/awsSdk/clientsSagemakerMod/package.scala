@@ -1284,6 +1284,7 @@ type HyperParameterTuningJobStatus = _HyperParameterTuningJobStatus | java.lang.
   - typings.awsSdk.awsSdkStrings.Bayesian
   - typings.awsSdk.awsSdkStrings.Random_
   - typings.awsSdk.awsSdkStrings.Hyperband
+  - typings.awsSdk.awsSdkStrings.Grid
   - java.lang.String
 */
 type HyperParameterTuningJobStrategyType = _HyperParameterTuningJobStrategyType | java.lang.String

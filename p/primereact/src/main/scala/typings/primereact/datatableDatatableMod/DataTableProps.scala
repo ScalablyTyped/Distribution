@@ -64,6 +64,7 @@ import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ClipboardEvent
@@ -338,6 +339,10 @@ trait DataTableProps extends StObject {
   var globalFilter: js.UndefOr[DataTableGlobalFilterType] = js.undefined
   
   var globalFilterFields: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var globalFilterMatchMode: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColumnFilterMatchModeType */ Any
+  ] = js.undefined
   
   var groupRowsBy: js.UndefOr[String] = js.undefined
   
@@ -755,7 +760,7 @@ trait DataTableProps extends StObject {
   
   var stripedRows: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   
@@ -765,7 +770,7 @@ trait DataTableProps extends StObject {
   
   var tableClassName: js.UndefOr[String] = js.undefined
   
-  var tableStyle: js.UndefOr[js.Object] = js.undefined
+  var tableStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -1267,6 +1272,12 @@ object DataTableProps {
     inline def setGlobalFilterFieldsUndefined: Self = StObject.set(x, "globalFilterFields", js.undefined)
     
     inline def setGlobalFilterFieldsVarargs(value: String*): Self = StObject.set(x, "globalFilterFields", js.Array(value*))
+    
+    inline def setGlobalFilterMatchMode(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColumnFilterMatchModeType */ Any
+    ): Self = StObject.set(x, "globalFilterMatchMode", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalFilterMatchModeUndefined: Self = StObject.set(x, "globalFilterMatchMode", js.undefined)
     
     inline def setGlobalFilterNull: Self = StObject.set(x, "globalFilter", null)
     
@@ -2090,7 +2101,7 @@ object DataTableProps {
     
     inline def setStripedRowsUndefined: Self = StObject.set(x, "stripedRows", js.undefined)
     
-    inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
@@ -2110,7 +2121,7 @@ object DataTableProps {
     
     inline def setTableClassNameUndefined: Self = StObject.set(x, "tableClassName", js.undefined)
     
-    inline def setTableStyle(value: js.Object): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
+    inline def setTableStyle(value: CSSProperties): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
     
     inline def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
     

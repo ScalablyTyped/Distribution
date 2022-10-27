@@ -1,29 +1,58 @@
 package typings.prosemirrorInputrules
 
 import typings.prosemirrorInputrules.mod.InputRule
-import typings.prosemirrorModel.mod.Schema
+import typings.prosemirrorState.mod.Transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Rules[S /* <: Schema[Any, Any] */] extends StObject {
+  trait From extends StObject {
     
-    var rules: js.Array[InputRule[S]]
+    var from: Double
+    
+    var text: String
+    
+    var to: Double
+    
+    var transform: Transaction
+  }
+  object From {
+    
+    inline def apply(from: Double, text: String, to: Double, transform: Transaction): From = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
+      __obj.asInstanceOf[From]
+    }
+    
+    extension [Self <: From](x: Self) {
+      
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setTransform(value: Transaction): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Rules extends StObject {
+    
+    var rules: js.Array[InputRule]
   }
   object Rules {
     
-    inline def apply[S /* <: Schema[Any, Any] */](rules: js.Array[InputRule[S]]): Rules[S] = {
+    inline def apply(rules: js.Array[InputRule]): Rules = {
       val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Rules[S]]
+      __obj.asInstanceOf[Rules]
     }
     
-    extension [Self <: Rules[?], S /* <: Schema[Any, Any] */](x: Self & Rules[S]) {
+    extension [Self <: Rules](x: Self) {
       
-      inline def setRules(value: js.Array[InputRule[S]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[InputRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      inline def setRulesVarargs(value: InputRule[S]*): Self = StObject.set(x, "rules", js.Array(value*))
+      inline def setRulesVarargs(value: InputRule*): Self = StObject.set(x, "rules", js.Array(value*))
     }
   }
 }

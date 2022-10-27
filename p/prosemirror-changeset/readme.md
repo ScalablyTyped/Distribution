@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-changeset
 
-Typings are for version 2.1
+Typings are for version 2.2.0
 
 ## Library description:
 Distills a series of editing steps into deleted and added ranges
@@ -24,7 +24,7 @@ Distills a series of editing steps into deleted and added ranges
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

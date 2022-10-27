@@ -29,3 +29,12 @@ open class InternalServerError ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`500` = js.native
 }
+object InternalServerError {
+  
+  @JSImport("http-errors", "InternalServerError")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`500`] = js.native
+  @JSImport("http-errors", "InternalServerError")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`500`] = js.native
+}

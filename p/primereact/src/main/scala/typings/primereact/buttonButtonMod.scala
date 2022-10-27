@@ -109,8 +109,6 @@ object buttonButtonMod {
       * @see https://reactjs.org/docs/legacy-context.html
       */
     def this(props: ButtonProps, context: Any) = this()
-    
-    def getElement(): HTMLButtonElement = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

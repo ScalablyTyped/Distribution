@@ -1,6 +1,7 @@
 package typings.semver
 
 import typings.semver.mod.Options
+import typings.semver.mod.RangeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +16,9 @@ object classesRangeMod {
     def this(range: String) = this()
     def this(range: Range) = this()
     def this(range: String, optionsOrLoose: Boolean) = this()
-    def this(range: String, optionsOrLoose: Options) = this()
+    def this(range: String, optionsOrLoose: RangeOptions) = this()
     def this(range: Range, optionsOrLoose: Boolean) = this()
-    def this(range: Range, optionsOrLoose: Options) = this()
+    def this(range: Range, optionsOrLoose: RangeOptions) = this()
   }
   
   @js.native

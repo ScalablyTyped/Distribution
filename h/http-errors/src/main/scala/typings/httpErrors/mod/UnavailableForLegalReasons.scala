@@ -29,3 +29,12 @@ open class UnavailableForLegalReasons ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`451` = js.native
 }
+object UnavailableForLegalReasons {
+  
+  @JSImport("http-errors", "UnavailableForLegalReasons")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`451`] = js.native
+  @JSImport("http-errors", "UnavailableForLegalReasons")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`451`] = js.native
+}

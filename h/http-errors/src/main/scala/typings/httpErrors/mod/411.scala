@@ -29,3 +29,12 @@ open class `411` ()
   /* CompleteClass */
   var statusCode: typings.httpErrors.httpErrorsInts.`411` = js.native
 }
+object `411` {
+  
+  @JSImport("http-errors", "411")
+  @js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`411`] = js.native
+  @JSImport("http-errors", "411")
+  @js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`411`] = js.native
+}

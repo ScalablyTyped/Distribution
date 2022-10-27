@@ -828,7 +828,7 @@ object treeselectTreeselectMod {
     
     var panelHeaderTemplate: js.UndefOr[TreeSelectPanelHeaderTemplateType] = js.undefined
     
-    var panelStyle: js.UndefOr[js.Object] = js.undefined
+    var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
@@ -1761,7 +1761,7 @@ object treeselectTreeselectMod {
       
       inline def setPanelHeaderTemplateUndefined: Self = StObject.set(x, "panelHeaderTemplate", js.undefined)
       
-      inline def setPanelStyle(value: js.Object): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
+      inline def setPanelStyle(value: CSSProperties): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
       
       inline def setPanelStyleUndefined: Self = StObject.set(x, "panelStyle", js.undefined)
       

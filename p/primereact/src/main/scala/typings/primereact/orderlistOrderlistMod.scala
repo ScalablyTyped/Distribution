@@ -334,7 +334,7 @@ object orderlistOrderlistMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var listStyle: js.UndefOr[js.Object] = js.undefined
+    var listStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
@@ -897,7 +897,7 @@ object orderlistOrderlistMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setListStyle(value: js.Object): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+      inline def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
       inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       

@@ -2,6 +2,7 @@ package typings.primereact
 
 import typings.primereact.primereactStrings.self
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
@@ -294,6 +295,8 @@ object calendarCalendarMod {
     
     var footerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
+    var formatDateTime: js.UndefOr[js.Function1[/* date */ js.Date, String]] = js.undefined
+    
     var headerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
     var hideOnDateTimeSelect: js.UndefOr[Boolean] = js.undefined
@@ -316,7 +319,7 @@ object calendarCalendarMod {
     
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var inputStyle: js.UndefOr[js.Object] = js.undefined
+    var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var keepInvalid: js.UndefOr[Boolean] = js.undefined
     
@@ -364,7 +367,9 @@ object calendarCalendarMod {
     
     var panelClassName: js.UndefOr[String] = js.undefined
     
-    var panelStyle: js.UndefOr[js.Object] = js.undefined
+    var panelStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    var parseDateTime: js.UndefOr[js.Function1[/* text */ String, js.Date]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -404,7 +409,7 @@ object calendarCalendarMod {
     
     var stepSecond: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -507,6 +512,10 @@ object calendarCalendarMod {
       
       inline def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
       
+      inline def setFormatDateTime(value: /* date */ js.Date => String): Self = StObject.set(x, "formatDateTime", js.Any.fromFunction1(value))
+      
+      inline def setFormatDateTimeUndefined: Self = StObject.set(x, "formatDateTime", js.undefined)
+      
       inline def setHeaderTemplate(value: () => ReactNode): Self = StObject.set(x, "headerTemplate", js.Any.fromFunction0(value))
       
       inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
@@ -553,7 +562,7 @@ object calendarCalendarMod {
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      inline def setInputStyle(value: js.Object): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+      inline def setInputStyle(value: CSSProperties): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
       
       inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       
@@ -649,9 +658,13 @@ object calendarCalendarMod {
       
       inline def setPanelClassNameUndefined: Self = StObject.set(x, "panelClassName", js.undefined)
       
-      inline def setPanelStyle(value: js.Object): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
+      inline def setPanelStyle(value: CSSProperties): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
       
       inline def setPanelStyleUndefined: Self = StObject.set(x, "panelStyle", js.undefined)
+      
+      inline def setParseDateTime(value: /* text */ String => js.Date): Self = StObject.set(x, "parseDateTime", js.Any.fromFunction1(value))
+      
+      inline def setParseDateTimeUndefined: Self = StObject.set(x, "parseDateTime", js.undefined)
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -729,7 +742,7 @@ object calendarCalendarMod {
       
       inline def setStepSecondUndefined: Self = StObject.set(x, "stepSecond", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

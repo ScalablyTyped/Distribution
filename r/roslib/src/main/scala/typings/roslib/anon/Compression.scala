@@ -18,6 +18,8 @@ trait Compression extends StObject {
   
   var queue_size: js.UndefOr[Double] = js.undefined
   
+  var reconnect_on_close: js.UndefOr[Boolean] = js.undefined
+  
   var ros: typings.roslib.mod.Ros
   
   var throttle_rate: js.UndefOr[Double] = js.undefined
@@ -50,6 +52,10 @@ object Compression {
     inline def setQueue_size(value: Double): Self = StObject.set(x, "queue_size", value.asInstanceOf[js.Any])
     
     inline def setQueue_sizeUndefined: Self = StObject.set(x, "queue_size", js.undefined)
+    
+    inline def setReconnect_on_close(value: Boolean): Self = StObject.set(x, "reconnect_on_close", value.asInstanceOf[js.Any])
+    
+    inline def setReconnect_on_closeUndefined: Self = StObject.set(x, "reconnect_on_close", js.undefined)
     
     inline def setRos(value: typings.roslib.mod.Ros): Self = StObject.set(x, "ros", value.asInstanceOf[js.Any])
     
