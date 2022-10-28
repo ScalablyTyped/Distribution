@@ -8655,6 +8655,7 @@
 | 0.5038152895611844 | [is-valid-path](./i/is-valid-path) | Returns true if a file path does not contain any i
 | 0.5037848618306298 | [spin_dot_js](./s/spin_dot_js) | A spinning activity indicator
 | 0.503731756566751 | [vertx__eventbus-bridge-cl](./v/vertx__eventbus-bridge-client_dot_js) | Vert.x Event Bus Bridge Client
+| 0.5036294293830261 | [is-semver](./i/is-semver) | Check if an input value is a valid semver version 
 | 0.5036090571293101 | [tweetnacl-util](./t/tweetnacl-util) | String encoding utilitlies extracted from TweetNaC
 | 0.5035172527649254 | [json-query](./j/json-query) | Retrieves values from JSON objects for data bindin
 | 0.5035124305467804 | [react-notification-system](./r/react-notification-system-redux) | react-notification-system-redux

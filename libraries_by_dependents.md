@@ -4130,6 +4130,7 @@
 | 0.0 | [is-running](./i/is-running) | Test if a process with a given pid is running
 | 0.0 | [is-scoped](./i/is-scoped) | Check if a string is a scoped npm package name
 | 0.0 | [is-secret](./i/is-secret) | A distributed maintained collection of patterns th
+| 0.0 | [is-semver](./i/is-semver) | Check if an input value is a valid semver version 
 | 0.0 | [is-ssh](./i/is-ssh) | Check if an input value is a ssh url or not.
 | 0.0 | [is-stream](./i/is-stream) | Check if something is a Node.js stream
 | 0.0 | [is-stream-ended](./i/is-stream-ended) | Check if a stream has ended

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "sentry__browser"
-version := "7.17.1-0e9003"
+version := "7.17.2-d828c9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "sentry__core" % "7.17.1-7246f4",
-  "org.scalablytyped" %%% "sentry__types" % "7.17.1-939bd9",
-  "org.scalablytyped" %%% "sentry__utils" % "7.17.1-35cfd2",
+  "org.scalablytyped" %%% "sentry__core" % "7.17.2-ab51cb",
+  "org.scalablytyped" %%% "sentry__types" % "7.17.2-221632",
+  "org.scalablytyped" %%% "sentry__utils" % "7.17.2-608c1c",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

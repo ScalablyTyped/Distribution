@@ -348,7 +348,7 @@ object mod {
   
   @JSImport("@sentry/node", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.17.1" */ String = js.native
+  val SDK_VERSION: /* "7.17.2" */ String = js.native
   
   @JSImport("@sentry/node", "Scope")
   @js.native
