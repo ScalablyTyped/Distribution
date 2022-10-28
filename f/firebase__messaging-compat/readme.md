@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__messaging-compat
 
-Typings are for version 0.1.19
+Typings are for version 0.1.20
 
 ## Library description:
 This is the compat package that recreates the v8 APIs.

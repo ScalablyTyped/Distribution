@@ -1,24 +1,24 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSMappedType
+import typings.babelTraverse.babelTraverseStrings.TSSymbolKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `127` extends StObject {
   
-  var `type`: TSMappedType
+  var `type`: TSSymbolKeyword
 }
 object `127` {
   
   inline def apply(): `127` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("TSMappedType")
+    __obj.updateDynamic("type")("TSSymbolKeyword")
     __obj.asInstanceOf[`127`]
   }
   
   extension [Self <: `127`](x: Self) {
     
-    inline def setType(value: TSMappedType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSSymbolKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

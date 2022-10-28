@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__app-check-types
 
-Typings are for version 0.4.0
+Typings are for version 0.4.1
 
 ## Library description:
 @firebase/app-check Types

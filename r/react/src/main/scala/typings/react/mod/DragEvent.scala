@@ -28,7 +28,7 @@ object DragEvent {
     defaultPrevented: Boolean,
     detail: Double,
     eventPhase: Double,
-    getModifierState: String => Boolean,
+    getModifierState: ModifierKey => Boolean,
     isDefaultPrevented: () => Boolean,
     isPropagationStopped: () => Boolean,
     isTrusted: Boolean,

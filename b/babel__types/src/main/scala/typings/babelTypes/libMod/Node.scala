@@ -33,6 +33,7 @@ import typings.babelTypes.babelTypesStrings.VerticallineVerticalline
 import typings.babelTypes.babelTypesStrings.`--`
 import typings.babelTypes.babelTypesStrings.`-_`
 import typings.babelTypes.babelTypesStrings.`throw`
+import typings.babelTypes.babelTypesStrings.`using`
 import typings.babelTypes.babelTypesStrings.`var`
 import typings.babelTypes.babelTypesStrings.const
 import typings.babelTypes.babelTypesStrings.constructor
@@ -260,6 +261,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.libMod.TSPropertySignature__
   - typings.babelTypes.libMod.TSQualifiedName__
   - typings.babelTypes.libMod.TSRestType__
+  - typings.babelTypes.libMod.TSSatisfiesExpression__
   - typings.babelTypes.libMod.TSStringKeyword__
   - typings.babelTypes.libMod.TSSymbolKeyword__
   - typings.babelTypes.libMod.TSThisType__
@@ -359,7 +361,7 @@ object Node {
   }
   
   inline def AssignmentPattern_(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSTypeAssertion__ | TSNonNullExpression__,
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSSatisfiesExpression__ | TSTypeAssertion__ | TSNonNullExpression__,
     right: Expression
   ): typings.babelTypes.libMod.AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
@@ -1674,6 +1676,12 @@ object Node {
     __obj.asInstanceOf[typings.babelTypes.libMod.TSRestType__]
   }
   
+  inline def TSSatisfiesExpression__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSSatisfiesExpression__ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSSatisfiesExpression")
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSSatisfiesExpression__]
+  }
+  
   inline def TSStringKeyword__(): typings.babelTypes.libMod.TSStringKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSStringKeyword")
@@ -1918,7 +1926,7 @@ object Node {
     __obj.asInstanceOf[typings.babelTypes.libMod.V8IntrinsicIdentifier_]
   }
   
-  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const): typings.babelTypes.libMod.VariableDeclaration_ = {
+  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using`): typings.babelTypes.libMod.VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[typings.babelTypes.libMod.VariableDeclaration_]

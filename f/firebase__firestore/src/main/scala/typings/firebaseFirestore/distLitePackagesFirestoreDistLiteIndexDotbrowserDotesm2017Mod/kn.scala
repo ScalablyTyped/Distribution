@@ -13,7 +13,7 @@ trait kn extends StObject {
   
   /** Returns 'true' if 'fieldPath' was traversed when creating this context. */ def contains(t: Any): Boolean = js.native
   
-  def ct(t: Any): Unit = js.native
+  def ct(t: Any): kn = js.native
   
   var databaseId: Any = js.native
   
@@ -21,21 +21,21 @@ trait kn extends StObject {
   
   var fieldTransforms: Any = js.native
   
-  def ht(t: Any): kn = js.native
+  def ht(t: Any): U = js.native
   
   var ignoreUndefinedProperties: Any = js.native
   
-  /** Returns a new context with the specified settings overwritten. */ def it(t: Any): kn = js.native
+  def it(t: Any): kn = js.native
   
-  def lt(t: Any): U = js.native
-  
-  def ot(t: Any): kn = js.native
+  def nt(): Unit = js.native
   
   def path: Any = js.native
   
-  def rt(): Unit = js.native
+  def rt: Any = js.native
   
   var settings: Any = js.native
   
-  def st: Any = js.native
+  /** Returns a new context with the specified settings overwritten. */ def st(t: Any): kn = js.native
+  
+  def ut(t: Any): Unit = js.native
 }

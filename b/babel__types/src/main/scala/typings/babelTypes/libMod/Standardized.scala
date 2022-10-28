@@ -29,6 +29,7 @@ import typings.babelTypes.babelTypesStrings.VerticallineVerticalline
 import typings.babelTypes.babelTypesStrings.`--`
 import typings.babelTypes.babelTypesStrings.`-_`
 import typings.babelTypes.babelTypesStrings.`throw`
+import typings.babelTypes.babelTypesStrings.`using`
 import typings.babelTypes.babelTypesStrings.`var`
 import typings.babelTypes.babelTypesStrings.const
 import typings.babelTypes.babelTypesStrings.constructor
@@ -169,7 +170,7 @@ object Standardized {
   }
   
   inline def AssignmentPattern_(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSTypeAssertion__ | TSNonNullExpression__,
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSSatisfiesExpression__ | TSTypeAssertion__ | TSNonNullExpression__,
     right: Expression
   ): typings.babelTypes.libMod.AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
@@ -725,7 +726,7 @@ object Standardized {
     __obj.asInstanceOf[typings.babelTypes.libMod.UpdateExpression_]
   }
   
-  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const): typings.babelTypes.libMod.VariableDeclaration_ = {
+  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using`): typings.babelTypes.libMod.VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[typings.babelTypes.libMod.VariableDeclaration_]

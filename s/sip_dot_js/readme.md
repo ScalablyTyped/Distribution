@@ -1,7 +1,7 @@
 
 # Scala.js typings for sip_dot_js
 
-Typings are for version 0.21.1
+Typings are for version 0.21.2
 
 ## Library description:
 A SIP library for JavaScript

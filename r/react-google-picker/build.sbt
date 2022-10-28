@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-google-picker"
-version := "0.1-dt-20220813Z-383409"
+version := "0.1-dt-20220813Z-86236f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "gapi" % "0.0-unknown-dt-20221012Z-d7f7f1",
   "org.scalablytyped" %%% "google_dot_picker" % "0.0-dt-20211202Z-f53fb2",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

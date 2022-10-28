@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedRuleGroupConfig extends StObject {
   
   /**
+    * Additional configuration for using the Bot Control managed rule group. Use this to specify the inspection level that you want to use. For information about using the Bot Control managed rule group, see WAF Bot Control rule group and WAF Bot Control in the WAF Developer Guide.
+    */
+  var AWSManagedRulesBotControlRuleSet: js.UndefOr[typings.awsSdk.clientsWafv2Mod.AWSManagedRulesBotControlRuleSet] = js.undefined
+  
+  /**
     * The path of the login endpoint for your application. For example, for the URL https://example.com/web/login, you would provide the path /web/login.
     */
   var LoginPath: js.UndefOr[LoginPathString] = js.undefined
@@ -34,6 +39,10 @@ object ManagedRuleGroupConfig {
   }
   
   extension [Self <: ManagedRuleGroupConfig](x: Self) {
+    
+    inline def setAWSManagedRulesBotControlRuleSet(value: AWSManagedRulesBotControlRuleSet): Self = StObject.set(x, "AWSManagedRulesBotControlRuleSet", value.asInstanceOf[js.Any])
+    
+    inline def setAWSManagedRulesBotControlRuleSetUndefined: Self = StObject.set(x, "AWSManagedRulesBotControlRuleSet", js.undefined)
     
     inline def setLoginPath(value: LoginPathString): Self = StObject.set(x, "LoginPath", value.asInstanceOf[js.Any])
     

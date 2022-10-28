@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rollup-plugin-visualizer" : "5.8.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rollup-plugin-visualizer" : "5.8.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

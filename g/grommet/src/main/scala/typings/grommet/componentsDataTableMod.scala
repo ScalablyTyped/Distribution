@@ -37,6 +37,7 @@ import typings.grommet.utilsMod.PadType
 import typings.react.mod.AbstractView
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
+import typings.react.mod.ModifierKey
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeKeyboardEvent
 import typings.react.mod.NativeMouseEvent
@@ -467,7 +468,7 @@ object componentsDataTableMod {
       defaultPrevented: Boolean,
       detail: Double,
       eventPhase: Double,
-      getModifierState: String => Boolean,
+      getModifierState: ModifierKey => Boolean,
       isDefaultPrevented: () => Boolean,
       isPropagationStopped: () => Boolean,
       isTrusted: Boolean,
@@ -523,7 +524,7 @@ object componentsDataTableMod {
       defaultPrevented: Boolean,
       detail: Double,
       eventPhase: Double,
-      getModifierState: String => Boolean,
+      getModifierState: ModifierKey => Boolean,
       index: Double,
       isDefaultPrevented: () => Boolean,
       isPropagationStopped: () => Boolean,

@@ -17,12 +17,17 @@ trait Rule extends StObject {
   var CaptchaConfig: js.UndefOr[typings.awsSdk.clientsWafv2Mod.CaptchaConfig] = js.undefined
   
   /**
+    * Specifies how WAF should handle Challenge evaluations. If you don't specify this, WAF uses the challenge configuration that's defined for the web ACL. 
+    */
+  var ChallengeConfig: js.UndefOr[typings.awsSdk.clientsWafv2Mod.ChallengeConfig] = js.undefined
+  
+  /**
     * The name of the rule. You can't change the name of a Rule after you create it. 
     */
   var Name: EntityName
   
   /**
-    * The action to use in the place of the action that results from the rule group evaluation. Set the override action to none to leave the result of the rule group alone. Set it to count to override the result to count only.  You can only use this for rule statements that reference a rule group, like RuleGroupReferenceStatement and ManagedRuleGroupStatement.   This option is usually set to none. It does not affect how the rules in the rule group are evaluated. If you want the rules in the rule group to only count matches, do not use this and instead exclude those rules in your rule group reference statement settings.  
+    * The action to use in the place of the action that results from the rule group evaluation. Set the override action to none to leave the result of the rule group alone. Set it to count to override the result to count only.  You can only use this for rule statements that reference a rule group, like RuleGroupReferenceStatement and ManagedRuleGroupStatement.   This option is usually set to none. It does not affect how the rules in the rule group are evaluated. If you want the rules in the rule group to only count matches, do not use this and instead use the rule action override option, with Count action, in your rule group reference statement settings.  
     */
   var OverrideAction: js.UndefOr[typings.awsSdk.clientsWafv2Mod.OverrideAction] = js.undefined
   
@@ -62,6 +67,10 @@ object Rule {
     inline def setCaptchaConfig(value: CaptchaConfig): Self = StObject.set(x, "CaptchaConfig", value.asInstanceOf[js.Any])
     
     inline def setCaptchaConfigUndefined: Self = StObject.set(x, "CaptchaConfig", js.undefined)
+    
+    inline def setChallengeConfig(value: ChallengeConfig): Self = StObject.set(x, "ChallengeConfig", value.asInstanceOf[js.Any])
+    
+    inline def setChallengeConfigUndefined: Self = StObject.set(x, "ChallengeConfig", js.undefined)
     
     inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

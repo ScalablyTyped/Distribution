@@ -176,6 +176,12 @@ object distEsmSrcInterfacesPublicTypesMod {
     var body: js.UndefOr[String] = js.undefined
     
     /**
+      * The URL to use for the notification's icon. If you don't send this key in the request,
+      * FCM displays the launcher icon specified in your app manifest.
+      */
+    var icon: js.UndefOr[String] = js.undefined
+    
+    /**
       * The URL of an image that is downloaded on the device and displayed in the notification.
       */
     var image: js.UndefOr[String] = js.undefined
@@ -197,6 +203,10 @@ object distEsmSrcInterfacesPublicTypesMod {
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
       inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       

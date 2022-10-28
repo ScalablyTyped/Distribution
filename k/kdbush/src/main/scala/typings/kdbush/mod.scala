@@ -6,6 +6,9 @@ import typings.std.Float64ArrayConstructor
 import typings.std.Int16ArrayConstructor
 import typings.std.Int32ArrayConstructor
 import typings.std.Int8ArrayConstructor
+import typings.std.Uint16ArrayConstructor
+import typings.std.Uint32ArrayConstructor
+import typings.std.Uint8ArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +57,7 @@ object mod {
     override def within(x: Double, y: Double, r: Double): js.Array[Double] = js.native
   }
   
-  type ArrayType = Int8ArrayConstructor | Int16ArrayConstructor | Int32ArrayConstructor | Float32ArrayConstructor | Float64ArrayConstructor | ArrayConstructor
+  type ArrayType = Int8ArrayConstructor | Int16ArrayConstructor | Int32ArrayConstructor | Float32ArrayConstructor | Float64ArrayConstructor | Uint8ArrayConstructor | Uint16ArrayConstructor | Uint32ArrayConstructor | ArrayConstructor
   
   type Get[T] = js.Function1[/* point */ T, Double]
   

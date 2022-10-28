@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sentry/browser" : "7.16.0"
+      "@sentry/browser" : "7.17.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@sentry/browser" : "7.16.0"
+      "@sentry/browser" : "7.17.1"
     }
   ],
   "compile-devDependencies" : [

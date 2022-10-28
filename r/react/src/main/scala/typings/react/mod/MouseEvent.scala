@@ -24,7 +24,7 @@ trait MouseEvent[T, E]
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
     */
-  def getModifierState(key: String): Boolean
+  def getModifierState(key: ModifierKey): Boolean
   
   var metaKey: Boolean
   
@@ -59,7 +59,7 @@ object MouseEvent {
     defaultPrevented: Boolean,
     detail: Double,
     eventPhase: Double,
-    getModifierState: String => Boolean,
+    getModifierState: ModifierKey => Boolean,
     isDefaultPrevented: () => Boolean,
     isPropagationStopped: () => Boolean,
     isTrusted: Boolean,
@@ -99,7 +99,7 @@ object MouseEvent {
     
     inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
-    inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+    inline def setGetModifierState(value: ModifierKey => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
     
     inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
     

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "rc-dialog"
-version := "9.0.0-fab41a"
+version := "9.0.0-8ecf09"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "rc-util" % "5.24.4-a94b0e",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
-  "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221024Z-bf50fa",
+  "org.scalablytyped" %%% "rc-util" % "5.24.4-bae706",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221027Z-34f203",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

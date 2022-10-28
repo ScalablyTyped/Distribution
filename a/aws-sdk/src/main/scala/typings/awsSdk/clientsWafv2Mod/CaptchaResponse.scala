@@ -17,7 +17,7 @@ trait CaptchaResponse extends StObject {
   var ResponseCode: js.UndefOr[typings.awsSdk.clientsWafv2Mod.ResponseCode] = js.undefined
   
   /**
-    * The time that the CAPTCHA puzzle was solved for the supplied token. 
+    * The time that the CAPTCHA was last solved for the supplied token. 
     */
   var SolveTimestamp: js.UndefOr[typings.awsSdk.clientsWafv2Mod.SolveTimestamp] = js.undefined
 }

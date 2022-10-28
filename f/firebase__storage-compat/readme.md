@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__storage-compat
 
-Typings are for version 0.1.20
+Typings are for version 0.1.21
 
 ## Library description:
 The Firebase Firestore compatibility package

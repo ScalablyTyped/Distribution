@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-native-modal"
-version := "13.0.1-d06db8"
+version := "13.0.1-ab59a8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-0a69be",
-  "org.scalablytyped" %%% "react-native-animatable" % "1.3.3-875bbf",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-ebe936",
+  "org.scalablytyped" %%% "react-native-animatable" % "1.3.3-53ba0f",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

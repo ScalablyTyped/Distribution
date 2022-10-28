@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SampledHTTPRequest extends StObject {
   
   /**
-    * The action for the Rule that the request matched: Allow, Block, or Count.
+    * The action that WAF applied to the request.
     */
   var Action: js.UndefOr[typings.awsSdk.clientsWafv2Mod.Action] = js.undefined
   
@@ -17,9 +17,19 @@ trait SampledHTTPRequest extends StObject {
   var CaptchaResponse: js.UndefOr[typings.awsSdk.clientsWafv2Mod.CaptchaResponse] = js.undefined
   
   /**
+    * The Challenge response for the request.
+    */
+  var ChallengeResponse: js.UndefOr[typings.awsSdk.clientsWafv2Mod.ChallengeResponse] = js.undefined
+  
+  /**
     * Labels applied to the web request by matching rules. WAF applies fully qualified labels to matching web requests. A fully qualified label is the concatenation of a label namespace and a rule label. The rule's rule group or web ACL defines the label namespace.  For example, awswaf:111122223333:myRuleGroup:testRules:testNS1:testNS2:labelNameA or awswaf:managed:aws:managed-rule-set:header:encoding:utf8. 
     */
   var Labels: js.UndefOr[typings.awsSdk.clientsWafv2Mod.Labels] = js.undefined
+  
+  /**
+    * Used only for rule group rules that have a rule action override in place in the web ACL. This is the action that the rule group rule is configured for, and not the action that was applied to the request. The action that WAF applied is the Action value. 
+    */
+  var OverriddenAction: js.UndefOr[Action] = js.undefined
   
   /**
     * A complex type that contains detailed information about the request.
@@ -68,11 +78,19 @@ object SampledHTTPRequest {
     
     inline def setCaptchaResponseUndefined: Self = StObject.set(x, "CaptchaResponse", js.undefined)
     
+    inline def setChallengeResponse(value: ChallengeResponse): Self = StObject.set(x, "ChallengeResponse", value.asInstanceOf[js.Any])
+    
+    inline def setChallengeResponseUndefined: Self = StObject.set(x, "ChallengeResponse", js.undefined)
+    
     inline def setLabels(value: Labels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
     inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "Labels", js.Array(value*))
+    
+    inline def setOverriddenAction(value: Action): Self = StObject.set(x, "OverriddenAction", value.asInstanceOf[js.Any])
+    
+    inline def setOverriddenActionUndefined: Self = StObject.set(x, "OverriddenAction", js.undefined)
     
     inline def setRequest(value: HTTPRequest): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
     

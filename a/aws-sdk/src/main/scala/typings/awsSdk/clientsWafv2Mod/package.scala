@@ -14,6 +14,7 @@ type Action = String
   - typings.awsSdk.awsSdkStrings.BLOCK
   - typings.awsSdk.awsSdkStrings.COUNT
   - typings.awsSdk.awsSdkStrings.CAPTCHA
+  - typings.awsSdk.awsSdkStrings.CHALLENGE
   - typings.awsSdk.awsSdkStrings.EXCLUDED_AS_COUNT
   - java.lang.String
 */
@@ -328,6 +329,8 @@ type ExcludedRules = js.Array[ExcludedRule]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TOKEN_MISSING
   - typings.awsSdk.awsSdkStrings.TOKEN_EXPIRED
+  - typings.awsSdk.awsSdkStrings.TOKEN_INVALID
+  - typings.awsSdk.awsSdkStrings.TOKEN_DOMAIN_MISMATCH
   - java.lang.String
 */
 type FailureReason = _FailureReason | String
@@ -397,6 +400,13 @@ type IPAddresses = js.Array[IPAddress]
 type IPSetSummaries = js.Array[IPSetSummary]
 
 type IPString = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COMMON
+  - typings.awsSdk.awsSdkStrings.TARGETED
+  - java.lang.String
+*/
+type InspectionLevel = _InspectionLevel | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL
@@ -545,6 +555,8 @@ type ResponseContentType = _ResponseContentType | String
 
 type ResponseStatusCode = Double
 
+type RuleActionOverrides = js.Array[RuleActionOverride]
+
 type RuleGroupSummaries = js.Array[RuleGroupSummary]
 
 type RulePriority = Double
@@ -624,6 +636,10 @@ type TimeWindowDay = Double
 type TimeWindowSecond = Double
 
 type Timestamp = js.Date
+
+type TokenDomain = String
+
+type TokenDomains = js.Array[TokenDomain]
 
 type URIString = String
 

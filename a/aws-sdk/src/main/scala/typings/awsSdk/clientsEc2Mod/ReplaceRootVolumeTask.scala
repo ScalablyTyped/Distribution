@@ -12,6 +12,16 @@ trait ReplaceRootVolumeTask extends StObject {
   var CompleteTime: js.UndefOr[String] = js.undefined
   
   /**
+    * Indicates whether the original root volume is to be deleted after the root volume replacement task completes.
+    */
+  var DeleteReplacedRootVolume: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The ID of the AMI used to create the replacement root volume.
+    */
+  var ImageId: js.UndefOr[typings.awsSdk.clientsEc2Mod.ImageId] = js.undefined
+  
+  /**
     * The ID of the instance for which the root volume replacement task was created.
     */
   var InstanceId: js.UndefOr[String] = js.undefined
@@ -20,6 +30,11 @@ trait ReplaceRootVolumeTask extends StObject {
     * The ID of the root volume replacement task.
     */
   var ReplaceRootVolumeTaskId: js.UndefOr[typings.awsSdk.clientsEc2Mod.ReplaceRootVolumeTaskId] = js.undefined
+  
+  /**
+    * The ID of the snapshot used to create the replacement root volume.
+    */
+  var SnapshotId: js.UndefOr[typings.awsSdk.clientsEc2Mod.SnapshotId] = js.undefined
   
   /**
     * The time the task was started.
@@ -49,6 +64,14 @@ object ReplaceRootVolumeTask {
     
     inline def setCompleteTimeUndefined: Self = StObject.set(x, "CompleteTime", js.undefined)
     
+    inline def setDeleteReplacedRootVolume(value: Boolean): Self = StObject.set(x, "DeleteReplacedRootVolume", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteReplacedRootVolumeUndefined: Self = StObject.set(x, "DeleteReplacedRootVolume", js.undefined)
+    
+    inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
@@ -56,6 +79,10 @@ object ReplaceRootVolumeTask {
     inline def setReplaceRootVolumeTaskId(value: ReplaceRootVolumeTaskId): Self = StObject.set(x, "ReplaceRootVolumeTaskId", value.asInstanceOf[js.Any])
     
     inline def setReplaceRootVolumeTaskIdUndefined: Self = StObject.set(x, "ReplaceRootVolumeTaskId", js.undefined)
+    
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     

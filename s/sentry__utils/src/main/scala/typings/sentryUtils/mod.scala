@@ -55,7 +55,6 @@ import typings.sentryUtils.typesWorldwideMod.InternalGlobal
 import typings.std.ObjectConstructor
 import typings.std.PromiseLike
 import typings.std.Record
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,10 +119,6 @@ object mod {
   @JSImport("@sentry/utils", "TRACEPARENT_REGEXP")
   @js.native
   val TRACEPARENT_REGEXP: js.RegExp = js.native
-  
-  @JSImport("@sentry/utils", "WINDOW")
-  @js.native
-  val WINDOW: InternalGlobal & Window = js.native
   
   inline def addContextToFrame(lines: js.Array[String], frame: StackFrame): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContextToFrame")(lines.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addContextToFrame(lines: js.Array[String], frame: StackFrame, linesOfContext: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContextToFrame")(lines.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], linesOfContext.asInstanceOf[js.Any])).asInstanceOf[Unit]

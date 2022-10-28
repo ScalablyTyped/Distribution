@@ -1,24 +1,24 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.UnionTypeAnnotation
+import typings.babelTraverse.babelTraverseStrings.JSXOpeningFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `220` extends StObject {
   
-  var `type`: UnionTypeAnnotation
+  var `type`: JSXOpeningFragment
 }
 object `220` {
   
   inline def apply(): `220` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("UnionTypeAnnotation")
+    __obj.updateDynamic("type")("JSXOpeningFragment")
     __obj.asInstanceOf[`220`]
   }
   
   extension [Self <: `220`](x: Self) {
     
-    inline def setType(value: UnionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXOpeningFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

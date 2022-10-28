@@ -1,6 +1,9 @@
 package typings.qiniu.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.qiniu.anon.Accesskey
+import typings.qiniu.anon.Allowedheader
+import typings.qiniu.anon.CallbackUrl
 import typings.qiniu.anon.Cond
 import typings.qiniu.anon.Deleteafterdays
 import typings.qiniu.anon.Force
@@ -114,6 +117,16 @@ object rs {
       */
     def deleteAfterDays(bucket: String, key: String, days: Double, callback: callback): Unit = js.native
     
+    /**
+      * 删除事件通知规则
+      * https://developer.qiniu.com/kodo/8610/dev-event-notification
+      *
+      * @param bucket - 空间名
+      * @param name - 规则名称
+      * @param callbackFunc - 回调函数
+      */
+    def deleteBucketEvent(bucket: String, name: String, callbackFunc: callback): Unit = js.native
+    
     /** rules/delete 删除 bucket 规则
       * @param bucket - 空间名
       * @param name - 规则名称 bucket 内唯一，长度小于50，不能为空，只能为字母、数字、下划线
@@ -132,11 +145,28 @@ object rs {
       */
     def fetch(resUrl: String, bucket: String, key: String, callback: callback): Unit = js.native
     
+    /**
+      * 获取事件通知规则
+      * https://developer.qiniu.com/kodo/8610/dev-event-notification
+      *
+      * @param bucket - 空间名
+      * @param callbackFunc - 回调函数
+      */
+    def getBucketEvent(bucket: String, callbackFunc: callback): Unit = js.native
+    
     /** rules/get - 获取 bucket 规则
       *  @param bucket - 空间名
       *  @param callbackFunc - 回调函数
       */
     def getBucketLifecycleRule(bucket: String, callbackFunc: callback): Unit = js.native
+    
+    /**
+      * 获取 bucket 的 cors（跨域）规则
+      * https://developer.qiniu.com/kodo/8539/set-the-cross-domain-resource-sharing
+      * @param bucket - 空间名
+      * @param callbackFunc - 回调函数
+      */
+    def getCorsRules(bucket: String, callbackFunc: callback): Unit = js.native
     
     /**
       * 设置空间镜像源
@@ -216,6 +246,22 @@ object rs {
     def publicDownloadUrl(domain: String, fileName: String): String = js.native
     
     /**
+      * 添加事件通知
+      * https://developer.qiniu.com/kodo/8610/dev-event-notification
+      * @param bucket - 空间名
+      * @param options - 配置项
+      * @param options.name - 规则名称 bucket 内唯一，长度小于50，不能为空，只能为字母、数字、下划线
+      * @param options.event - 事件类型，接受数组设置多个
+      * @param options.callbackUrl - 事件通知回调 URL，接受数组设置多个，失败依次重试
+      * @param options.prefix - 可选，文件配置的前缀
+      * @param options.suffix - 可选，文件配置的后缀
+      * @param options.access_key - 可选，设置的话会对通知请求用对应的ak、sk进行签名
+      * @param options.host - 可选，通知请求的host
+      * @param callbackFunc - 回调函数
+      */
+    def putBucketEvent(bucket: String, options: Accesskey, callbackFunc: callback): Unit = js.native
+    
+    /**
       * rules/add 增加 bucket 规则
       *
       * @param bucket - 空间名
@@ -233,6 +279,20 @@ object rs {
       * @param callbackFunc - 回调函数
       */
     def putBucketLifecycleRule(bucket: String, options: Deleteafterdays, callbackFunc: callback): Unit = js.native
+    
+    /**
+      * 设置 bucket 的 cors（跨域）规则
+      * https://developer.qiniu.com/kodo/8539/set-the-cross-domain-resource-sharing
+      * @param bucket - 空间名
+      * @param body - 规则配置
+      * @param body[].allowed_origin - 允许的域名
+      * @param body[].allowed_method - 允许的请求方法；大小写不敏感
+      * @param body[].allowed_header - 可选，允许的 header；默认不允许任何 header；大小写不敏感
+      * @param body[].exposed_header - 可选，暴露的 header；默认 X-Log, X-Reqid；大小写不敏感
+      * @param body[].max_age - 可选，结果可以缓存的时间；默认不缓存
+      * @param callbackFunc - 回调函数
+      */
+    def putCorsRules(bucket: String, body: js.Array[Allowedheader], callbackFunc: callback): Unit = js.native
     
     /**
       * 解冻归档存储文件
@@ -278,6 +338,22 @@ object rs {
       * @param callback
       */
     def unimage(bucket: String, callback: callback): Unit = js.native
+    
+    /**
+      * 更新事件通知
+      * https://developer.qiniu.com/kodo/8610/dev-event-notification
+      * @param bucket - 空间名
+      * @param options - 配置项
+      * @param options.name - 规则名称 bucket 内唯一，长度小于50，不能为空，只能为字母、数字、下划线
+      * @param options.event - 事件类型，接受数组设置多个
+      * @param options.callbackUrl - 事件通知回调 URL，接受数组设置多个，失败依次重试
+      * @param options.prefix - 可选，文件配置的前缀
+      * @param options.suffix - 可选，文件配置的后缀
+      * @param options.access_key - 可选，设置的话会对通知请求用对应的ak、sk进行签名
+      * @param options.host - 可选，通知请求的host
+      * @param callbackFunc - 回调函数
+      */
+    def updateBucketEvent(bucket: String, options: CallbackUrl, callbackFunc: callback): Unit = js.native
     
     /**
       * rules/update 更新 bucket 规则
@@ -377,6 +453,45 @@ object rs {
     * @param key
     */
   inline def statOp(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("statOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.qiniu.qiniuStrings.put
+    - typings.qiniu.qiniuStrings.mkfile
+    - typings.qiniu.qiniuStrings.delete
+    - typings.qiniu.qiniuStrings.copy
+    - typings.qiniu.qiniuStrings.move
+    - typings.qiniu.qiniuStrings.append
+    - typings.qiniu.qiniuStrings.disable
+    - typings.qiniu.qiniuStrings.enable
+    - typings.qiniu.qiniuStrings.deleteMarkerCreate
+    - typings.qiniu.qiniuStrings.predelete
+    - typings.qiniu.qiniuStrings.restoreColoncompleted
+  */
+  trait BucketEventName extends StObject
+  object BucketEventName {
+    
+    inline def append: typings.qiniu.qiniuStrings.append = "append".asInstanceOf[typings.qiniu.qiniuStrings.append]
+    
+    inline def copy: typings.qiniu.qiniuStrings.copy = "copy".asInstanceOf[typings.qiniu.qiniuStrings.copy]
+    
+    inline def delete: typings.qiniu.qiniuStrings.delete = "delete".asInstanceOf[typings.qiniu.qiniuStrings.delete]
+    
+    inline def deleteMarkerCreate: typings.qiniu.qiniuStrings.deleteMarkerCreate = "deleteMarkerCreate".asInstanceOf[typings.qiniu.qiniuStrings.deleteMarkerCreate]
+    
+    inline def disable: typings.qiniu.qiniuStrings.disable = "disable".asInstanceOf[typings.qiniu.qiniuStrings.disable]
+    
+    inline def enable: typings.qiniu.qiniuStrings.enable = "enable".asInstanceOf[typings.qiniu.qiniuStrings.enable]
+    
+    inline def mkfile: typings.qiniu.qiniuStrings.mkfile = "mkfile".asInstanceOf[typings.qiniu.qiniuStrings.mkfile]
+    
+    inline def move: typings.qiniu.qiniuStrings.move = "move".asInstanceOf[typings.qiniu.qiniuStrings.move]
+    
+    inline def predelete: typings.qiniu.qiniuStrings.predelete = "predelete".asInstanceOf[typings.qiniu.qiniuStrings.predelete]
+    
+    inline def put: typings.qiniu.qiniuStrings.put = "put".asInstanceOf[typings.qiniu.qiniuStrings.put]
+    
+    inline def restoreColoncompleted: typings.qiniu.qiniuStrings.restoreColoncompleted = "restore:completed".asInstanceOf[typings.qiniu.qiniuStrings.restoreColoncompleted]
+  }
   
   trait ListPrefixOptions extends StObject {
     

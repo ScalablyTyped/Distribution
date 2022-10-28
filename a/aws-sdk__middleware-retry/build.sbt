@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__middleware-retry"
-version := "3.197.0-bc9f19"
+version := "3.198.0-a24377"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.197.0-1b59e0",
-  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.197.0-8cac7c",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.197.0-ef10cd",
+  "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.198.0-d577da",
+  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.198.0-bca63a",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.198.0-a78f65",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

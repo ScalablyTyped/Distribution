@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "reach__menu-button"
-version := "0.18.0-2ad41d"
+version := "0.18.0-009f0c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "reach__polymorphic" % "0.18.0-5179e8",
-  "org.scalablytyped" %%% "reach__popover" % "0.18.0-116fa0",
-  "org.scalablytyped" %%% "reach__rect" % "0.18.0-525356",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
+  "org.scalablytyped" %%% "reach__polymorphic" % "0.18.0-1b602f",
+  "org.scalablytyped" %%% "reach__popover" % "0.18.0-1e87b5",
+  "org.scalablytyped" %%% "reach__rect" % "0.18.0-7e0327",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

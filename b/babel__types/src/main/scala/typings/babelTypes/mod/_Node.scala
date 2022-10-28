@@ -33,6 +33,7 @@ import typings.babelTypes.babelTypesStrings.VerticallineVerticalline
 import typings.babelTypes.babelTypesStrings.`--`
 import typings.babelTypes.babelTypesStrings.`-_`
 import typings.babelTypes.babelTypesStrings.`throw`
+import typings.babelTypes.babelTypesStrings.`using`
 import typings.babelTypes.babelTypesStrings.`var`
 import typings.babelTypes.babelTypesStrings.const
 import typings.babelTypes.babelTypesStrings.constructor
@@ -106,7 +107,7 @@ object _Node {
   }
   
   inline def AssignmentPattern_(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSTypeAssertion_ | TSNonNullExpression_,
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSSatisfiesExpression_ | TSTypeAssertion_ | TSNonNullExpression_,
     right: Expression
   ): typings.babelTypes.mod.AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
@@ -612,7 +613,7 @@ object _Node {
     source: StringLiteral_,
     specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_]
   ): typings.babelTypes.mod.ImportDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], assertions = null, end = null, importKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], assertions = null, end = null, importKind = null, innerComments = null, leadingComments = null, loc = null, module = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ImportDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ImportDeclaration_]
   }
@@ -1437,6 +1438,12 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.TSRestType_]
   }
   
+  inline def TSSatisfiesExpression_(expression: Expression, typeAnnotation: TSType): typings.babelTypes.mod.TSSatisfiesExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSSatisfiesExpression")
+    __obj.asInstanceOf[typings.babelTypes.mod.TSSatisfiesExpression_]
+  }
+  
   inline def TSStringKeyword_(): typings.babelTypes.mod.TSStringKeyword_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSStringKeyword")
@@ -1681,7 +1688,7 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.V8IntrinsicIdentifier_]
   }
   
-  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const): typings.babelTypes.mod.VariableDeclaration_ = {
+  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using`): typings.babelTypes.mod.VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], declare = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.VariableDeclaration_]

@@ -22,6 +22,11 @@ trait RuleAction extends StObject {
   var Captcha: js.UndefOr[CaptchaAction] = js.undefined
   
   /**
+    * Instructs WAF to run a Challenge check against the web request.
+    */
+  var Challenge: js.UndefOr[ChallengeAction] = js.undefined
+  
+  /**
     * Instructs WAF to count the web request and then continue evaluating the request using the remaining rules in the web ACL.
     */
   var Count: js.UndefOr[CountAction] = js.undefined
@@ -46,6 +51,10 @@ object RuleAction {
     inline def setCaptcha(value: CaptchaAction): Self = StObject.set(x, "Captcha", value.asInstanceOf[js.Any])
     
     inline def setCaptchaUndefined: Self = StObject.set(x, "Captcha", js.undefined)
+    
+    inline def setChallenge(value: ChallengeAction): Self = StObject.set(x, "Challenge", value.asInstanceOf[js.Any])
+    
+    inline def setChallengeUndefined: Self = StObject.set(x, "Challenge", js.undefined)
     
     inline def setCount(value: CountAction): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

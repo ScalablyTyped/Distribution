@@ -10,7 +10,7 @@ trait Er
   
   var At: Any
   
-  var Rt: Any
+  var Tt: Any
   
   def _apply(t: Any): bn
   
@@ -18,8 +18,8 @@ trait Er
 }
 object Er {
   
-  inline def apply(At: Any, Rt: Any, _apply: Any => bn, `type`: Any): Er = {
-    val __obj = js.Dynamic.literal(At = At.asInstanceOf[js.Any], Rt = Rt.asInstanceOf[js.Any], _apply = js.Any.fromFunction1(_apply))
+  inline def apply(At: Any, Tt: Any, _apply: Any => bn, `type`: Any): Er = {
+    val __obj = js.Dynamic.literal(At = At.asInstanceOf[js.Any], Tt = Tt.asInstanceOf[js.Any], _apply = js.Any.fromFunction1(_apply))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Er]
   }
@@ -28,7 +28,7 @@ object Er {
     
     inline def setAt(value: Any): Self = StObject.set(x, "At", value.asInstanceOf[js.Any])
     
-    inline def setRt(value: Any): Self = StObject.set(x, "Rt", value.asInstanceOf[js.Any])
+    inline def setTt(value: Any): Self = StObject.set(x, "Tt", value.asInstanceOf[js.Any])
     
     inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -8,9 +8,9 @@ trait pr
   extends StObject
      with hr {
   
-  var It: Any
+  var Et: Any
   
-  var Tt: Any
+  var It: Any
   
   def _apply(t: Any): bn
   
@@ -18,17 +18,17 @@ trait pr
 }
 object pr {
   
-  inline def apply(It: Any, Tt: Any, _apply: Any => bn, `type`: Any): pr = {
-    val __obj = js.Dynamic.literal(It = It.asInstanceOf[js.Any], Tt = Tt.asInstanceOf[js.Any], _apply = js.Any.fromFunction1(_apply))
+  inline def apply(Et: Any, It: Any, _apply: Any => bn, `type`: Any): pr = {
+    val __obj = js.Dynamic.literal(Et = Et.asInstanceOf[js.Any], It = It.asInstanceOf[js.Any], _apply = js.Any.fromFunction1(_apply))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[pr]
   }
   
   extension [Self <: pr](x: Self) {
     
-    inline def setIt(value: Any): Self = StObject.set(x, "It", value.asInstanceOf[js.Any])
+    inline def setEt(value: Any): Self = StObject.set(x, "Et", value.asInstanceOf[js.Any])
     
-    inline def setTt(value: Any): Self = StObject.set(x, "Tt", value.asInstanceOf[js.Any])
+    inline def setIt(value: Any): Self = StObject.set(x, "It", value.asInstanceOf[js.Any])
     
     inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aria-query"
-version := "5.0-dt-20211202Z-63a520"
+version := "5.0-dt-20221027Z-378656"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

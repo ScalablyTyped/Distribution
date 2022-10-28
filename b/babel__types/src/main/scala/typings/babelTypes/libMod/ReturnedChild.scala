@@ -338,6 +338,12 @@ object ReturnedChild {
     __obj.asInstanceOf[typings.babelTypes.libMod.TSNonNullExpression__]
   }
   
+  inline def TSSatisfiesExpression__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSSatisfiesExpression__ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSSatisfiesExpression")
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSSatisfiesExpression__]
+  }
+  
   inline def TSTypeAssertion__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeAssertion__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeAssertion")

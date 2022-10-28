@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nova-editor-node"
-version := "4.1-dt-20221019Z-cb0c01"
+version := "4.1-dt-20221027Z-085880"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

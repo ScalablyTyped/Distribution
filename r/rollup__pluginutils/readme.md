@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup__pluginutils
 
-Typings are for version 4.2.1
+Typings are for version 5.0.2
 
 ## Library description:
 A set of utility functions commonly used by Rollup plugins

@@ -1,5 +1,6 @@
 package typings.antDesignProLayout
 
+import typings.antDesignCssinjs.mod.Keyframes
 import typings.antDesignProLayout.anon.ProLayoutCollapsedWidth
 import typings.antDesignProProvider.esUseStyleMod.ProAliasToken
 import typings.antDesignProProvider.esUseStyleMod.UseStyleResult
@@ -12,6 +13,10 @@ object esComponentsSiderMenuStyleMod {
   @JSImport("@ant-design/pro-layout/es/components/SiderMenu/style", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/pro-layout/es/components/SiderMenu/style", "proLayoutTitleHide")
+  @js.native
+  val proLayoutTitleHide: Keyframes = js.native
   
   inline def useStyle(prefixCls: String, param1: ProLayoutCollapsedWidth): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(prefixCls.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
   

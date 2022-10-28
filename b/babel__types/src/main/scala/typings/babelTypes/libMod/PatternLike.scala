@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.libMod.ArrayPattern_
   - typings.babelTypes.libMod.ObjectPattern_
   - typings.babelTypes.libMod.TSAsExpression__
+  - typings.babelTypes.libMod.TSSatisfiesExpression__
   - typings.babelTypes.libMod.TSTypeAssertion__
   - typings.babelTypes.libMod.TSNonNullExpression__
 */
@@ -24,7 +25,7 @@ object PatternLike {
   }
   
   inline def AssignmentPattern_(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSTypeAssertion__ | TSNonNullExpression__,
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSSatisfiesExpression__ | TSTypeAssertion__ | TSNonNullExpression__,
     right: Expression
   ): typings.babelTypes.libMod.AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
@@ -60,6 +61,12 @@ object PatternLike {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSNonNullExpression")
     __obj.asInstanceOf[typings.babelTypes.libMod.TSNonNullExpression__]
+  }
+  
+  inline def TSSatisfiesExpression__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSSatisfiesExpression__ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSSatisfiesExpression")
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSSatisfiesExpression__]
   }
   
   inline def TSTypeAssertion__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeAssertion__ = {

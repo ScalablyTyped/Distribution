@@ -3074,6 +3074,14 @@ type TrafficRoutingConfigType = _TrafficRoutingConfigType | java.lang.String
 
 type TrafficType = PHASES | java.lang.String
 
+type TrainingContainerArgument = java.lang.String
+
+type TrainingContainerArguments = js.Array[TrainingContainerArgument]
+
+type TrainingContainerEntrypoint = js.Array[TrainingContainerEntrypointString]
+
+type TrainingContainerEntrypointString = java.lang.String
+
 type TrainingEnvironmentKey = java.lang.String
 
 type TrainingEnvironmentMap = StringDictionary[TrainingEnvironmentValue]

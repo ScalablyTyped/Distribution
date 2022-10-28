@@ -21,6 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var importKind: `type` | typeof | value | Null
   
+  var module: Boolean | Null
+  
   var source: StringLiteral_
   
   var specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_]
@@ -34,7 +36,7 @@ object ImportDeclaration_ {
     source: StringLiteral_,
     specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_]
   ): ImportDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], assertions = null, end = null, importKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], assertions = null, end = null, importKind = null, innerComments = null, leadingComments = null, loc = null, module = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ImportDeclaration")
     __obj.asInstanceOf[ImportDeclaration_]
   }
@@ -50,6 +52,10 @@ object ImportDeclaration_ {
     inline def setImportKind(value: `type` | typeof | value): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
     
     inline def setImportKindNull: Self = StObject.set(x, "importKind", null)
+    
+    inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    
+    inline def setModuleNull: Self = StObject.set(x, "module", null)
     
     inline def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

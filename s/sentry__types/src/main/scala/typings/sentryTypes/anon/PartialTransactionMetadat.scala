@@ -19,6 +19,8 @@ trait PartialTransactionMetadat extends StObject {
   
   var request: js.UndefOr[PolymorphicRequest] = js.undefined
   
+  var requestDataOptionsFromExpressHandler: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   var requestPath: js.UndefOr[String] = js.undefined
   
   var sampleRate: js.UndefOr[Double] = js.undefined
@@ -51,6 +53,10 @@ object PartialTransactionMetadat {
     inline def setPropagationsUndefined: Self = StObject.set(x, "propagations", js.undefined)
     
     inline def setRequest(value: PolymorphicRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setRequestDataOptionsFromExpressHandler(value: StringDictionary[Any]): Self = StObject.set(x, "requestDataOptionsFromExpressHandler", value.asInstanceOf[js.Any])
+    
+    inline def setRequestDataOptionsFromExpressHandlerUndefined: Self = StObject.set(x, "requestDataOptionsFromExpressHandler", js.undefined)
     
     inline def setRequestPath(value: String): Self = StObject.set(x, "requestPath", value.asInstanceOf[js.Any])
     

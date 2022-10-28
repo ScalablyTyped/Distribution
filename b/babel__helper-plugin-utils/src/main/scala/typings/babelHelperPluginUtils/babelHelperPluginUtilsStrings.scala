@@ -951,6 +951,10 @@ object babelHelperPluginUtilsStrings {
   inline def TSRestType: TSRestType = "TSRestType".asInstanceOf[TSRestType]
   
   @js.native
+  sealed trait TSSatisfiesExpression extends StObject
+  inline def TSSatisfiesExpression: TSSatisfiesExpression = "TSSatisfiesExpression".asInstanceOf[TSSatisfiesExpression]
+  
+  @js.native
   sealed trait TSStringKeyword extends StObject
   inline def TSStringKeyword: TSStringKeyword = "TSStringKeyword".asInstanceOf[TSStringKeyword]
   
@@ -1241,6 +1245,10 @@ object babelHelperPluginUtilsStrings {
   @js.native
   sealed trait undefined extends StObject
   inline def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
+  @js.native
+  sealed trait `using` extends StObject
+  inline def `using`: `using` = "using".asInstanceOf[`using`]
   
   @js.native
   sealed trait `var` extends StObject

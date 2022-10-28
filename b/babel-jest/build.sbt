@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "babel-jest"
-version := "29.2.2-157f93"
+version := "29.2.2-c78aa7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-580652",
-  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-602e3f",
-  "org.scalablytyped" %%% "babel__parser" % "7.19.6-1f26d3",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-c402ef",
-  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-1aedc0",
-  "org.scalablytyped" %%% "babel__types" % "7.19.4-ea0dd0",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-043aa4",
+  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-bf895e",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.0-6157ab",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-1a1261",
+  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-aa17f1",
+  "org.scalablytyped" %%% "babel__types" % "7.20.0-d18d74",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-32acec",
   "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-242218",
   "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-a4bec8",

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup-plugin-visualizer
 
-Typings are for version 4.2
+Typings are for version 5.8.3
 
 ## Library description:
 [![NPM Version](https://img.shields.io/npm/v/rollup-plugin-visualizer.svg)](https://npmjs.org/package/rollup-plugin-visualizer) [![Node.js CI](https://github.com/btd/rollup-plugin-visualizer/actions/workflows/node.js.yml/badge.svg)](https://github.com/btd
@@ -24,7 +24,7 @@ Typings are for version 4.2
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

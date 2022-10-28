@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.babelTypesStrings.ExportDefaultSpecifier
   - typings.babelTypes.babelTypesStrings.EnumStringMember
   - typings.babelTypes.babelTypesStrings.ReturnStatement
+  - typings.babelTypes.babelTypesStrings.TSSatisfiesExpression
   - typings.babelTypes.babelTypesStrings.TSInterfaceBody
   - typings.babelTypes.babelTypesStrings.TSAsExpression
   - typings.babelTypes.babelTypesStrings.InterfaceTypeAnnotation
@@ -810,6 +811,8 @@ object NodeTypes {
   inline def TSQualifiedName: typings.babelTypes.babelTypesStrings.TSQualifiedName = "TSQualifiedName".asInstanceOf[typings.babelTypes.babelTypesStrings.TSQualifiedName]
   
   inline def TSRestType: typings.babelTypes.babelTypesStrings.TSRestType = "TSRestType".asInstanceOf[typings.babelTypes.babelTypesStrings.TSRestType]
+  
+  inline def TSSatisfiesExpression: typings.babelTypes.babelTypesStrings.TSSatisfiesExpression = "TSSatisfiesExpression".asInstanceOf[typings.babelTypes.babelTypesStrings.TSSatisfiesExpression]
   
   inline def TSStringKeyword: typings.babelTypes.babelTypesStrings.TSStringKeyword = "TSStringKeyword".asInstanceOf[typings.babelTypes.babelTypesStrings.TSStringKeyword]
   

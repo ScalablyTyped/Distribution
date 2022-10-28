@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__signature-v4-multi-region
 
-Typings are for version 3.197.0
+Typings are for version 3.198.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/signature-v4-multi-region/latest.svg)](https://www.npmjs.com/package/@aws-sdk/signature-v4-multi-region) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/signature-v4-multi-region.svg)](https:/

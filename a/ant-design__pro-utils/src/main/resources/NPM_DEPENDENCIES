@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/pro-utils" : "2.2.11"
+      "@ant-design/pro-utils" : "2.2.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/pro-utils" : "2.2.11"
+      "@ant-design/pro-utils" : "2.2.12"
     }
   ],
   "compile-devDependencies" : [

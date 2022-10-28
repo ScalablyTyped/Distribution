@@ -314,6 +314,12 @@ object typesTransactionMod {
     /** For transactions tracing server-side request handling, the request being tracked. */
     var request: js.UndefOr[PolymorphicRequest] = js.undefined
     
+    /** Compatibility shim for transitioning to the `RequestData` integration. The options passed to our Express request
+      * handler controlling what request data is added to the event.
+      * TODO (v8): This should go away
+      */
+    var requestDataOptionsFromExpressHandler: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
     /** For transactions tracing server-side request handling, the path of the request being tracked. */
     /** TODO: If we rm -rf `instrumentServer`, this can go, too */
     var requestPath: js.UndefOr[String] = js.undefined
@@ -352,6 +358,10 @@ object typesTransactionMod {
       inline def setPropagations(value: Double): Self = StObject.set(x, "propagations", value.asInstanceOf[js.Any])
       
       inline def setRequest(value: PolymorphicRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      
+      inline def setRequestDataOptionsFromExpressHandler(value: StringDictionary[Any]): Self = StObject.set(x, "requestDataOptionsFromExpressHandler", value.asInstanceOf[js.Any])
+      
+      inline def setRequestDataOptionsFromExpressHandlerUndefined: Self = StObject.set(x, "requestDataOptionsFromExpressHandler", js.undefined)
       
       inline def setRequestPath(value: String): Self = StObject.set(x, "requestPath", value.asInstanceOf[js.Any])
       

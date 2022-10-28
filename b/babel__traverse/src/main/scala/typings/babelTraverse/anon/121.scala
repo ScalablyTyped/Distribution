@@ -1,24 +1,24 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSConstructSignatureDeclaration
+import typings.babelTraverse.babelTraverseStrings.TSExternalModuleReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `121` extends StObject {
   
-  var `type`: TSConstructSignatureDeclaration
+  var `type`: TSExternalModuleReference
 }
 object `121` {
   
   inline def apply(): `121` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("TSConstructSignatureDeclaration")
+    __obj.updateDynamic("type")("TSExternalModuleReference")
     __obj.asInstanceOf[`121`]
   }
   
   extension [Self <: `121`](x: Self) {
     
-    inline def setType(value: TSConstructSignatureDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSExternalModuleReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

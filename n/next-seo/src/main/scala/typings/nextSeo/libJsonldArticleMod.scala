@@ -3,6 +3,7 @@ package typings.nextSeo
 import typings.nextSeo.libJsonldJsonldMod.JsonLdProps
 import typings.nextSeo.nextSeoStrings.Article
 import typings.nextSeo.nextSeoStrings.Blog
+import typings.nextSeo.nextSeoStrings.BlogPosting
 import typings.nextSeo.nextSeoStrings.NewsArticle
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -33,6 +34,8 @@ object libJsonldArticleMod {
     
     var images: js.Array[String]
     
+    var isAccessibleForFree: js.UndefOr[Boolean] = js.undefined
+    
     var publisherLogo: js.UndefOr[String] = js.undefined
     
     var publisherName: js.UndefOr[String] = js.undefined
@@ -40,7 +43,7 @@ object libJsonldArticleMod {
     var title: String
     
     @JSName("type")
-    var type_ArticleJsonLdProps: js.UndefOr[Article | Blog | NewsArticle] = js.undefined
+    var type_ArticleJsonLdProps: js.UndefOr[Article | BlogPosting | NewsArticle | Blog] = js.undefined
     
     var url: String
   }
@@ -84,6 +87,10 @@ object libJsonldArticleMod {
       
       inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value*))
       
+      inline def setIsAccessibleForFree(value: Boolean): Self = StObject.set(x, "isAccessibleForFree", value.asInstanceOf[js.Any])
+      
+      inline def setIsAccessibleForFreeUndefined: Self = StObject.set(x, "isAccessibleForFree", js.undefined)
+      
       inline def setPublisherLogo(value: String): Self = StObject.set(x, "publisherLogo", value.asInstanceOf[js.Any])
       
       inline def setPublisherLogoUndefined: Self = StObject.set(x, "publisherLogo", js.undefined)
@@ -94,7 +101,7 @@ object libJsonldArticleMod {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setType(value: Article | Blog | NewsArticle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Article | BlogPosting | NewsArticle | Blog): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       

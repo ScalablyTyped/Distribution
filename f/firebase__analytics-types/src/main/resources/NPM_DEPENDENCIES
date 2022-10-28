@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/analytics-types" : "0.7.0"
+      "@firebase/analytics-types" : "0.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/analytics-types" : "0.7.0"
+      "@firebase/analytics-types" : "0.7.1"
     }
   ],
   "compile-devDependencies" : [

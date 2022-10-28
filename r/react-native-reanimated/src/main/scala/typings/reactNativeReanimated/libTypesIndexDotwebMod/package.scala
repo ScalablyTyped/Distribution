@@ -156,7 +156,17 @@ inline def makeRemote[T](`object`: js.Object): T = ^.asInstanceOf[js.Dynamic].ap
 
 inline def makeShareable[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("makeShareable")(value.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def measure(animatedRef: RefObjectFunction[Component[js.Object, js.Object, Any]]): MeasuredDimensions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("measure")(animatedRef.asInstanceOf[js.Any]).asInstanceOf[MeasuredDimensions | Null]
+inline def measure: js.Function1[
+/* animatedRef */ RefObjectFunction[Component[js.Object, js.Object, Any]], 
+MeasuredDimensions | Null] = ^.asInstanceOf[js.Dynamic].selectDynamic("measure").asInstanceOf[js.Function1[
+/* animatedRef */ RefObjectFunction[Component[js.Object, js.Object, Any]], 
+MeasuredDimensions | Null]]
+inline def measure_=(
+  x: js.Function1[
+  /* animatedRef */ RefObjectFunction[Component[js.Object, js.Object, Any]], 
+  MeasuredDimensions | Null
+]
+): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("measure")(x.asInstanceOf[js.Any])
 
 inline def opacity(c: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("opacity")(c.asInstanceOf[js.Any]).asInstanceOf[Double]
 
@@ -175,12 +185,26 @@ inline def runOnJS[A /* <: js.Array[Any] */, R](fun: RunOnJSFunction[A, R]): js.
 
 inline def runOnUI[A /* <: js.Array[Any] */, R](worklet: ComplexWorkletFunction[A, R]): js.Function1[/* args */ A, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("runOnUI")(worklet.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ A, Unit]]
 
-inline def scrollTo(
-  animatedRef: RefObjectFunction[Component[js.Object, js.Object, Any]],
-  x: Double,
-  y: Double,
-  animated: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(animatedRef.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animated.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def scrollTo: js.Function4[
+/* animatedRef */ RefObjectFunction[Component[js.Object, js.Object, Any]], 
+/* x */ Double, 
+/* y */ Double, 
+/* animated */ Boolean, 
+Unit] = ^.asInstanceOf[js.Dynamic].selectDynamic("scrollTo").asInstanceOf[js.Function4[
+/* animatedRef */ RefObjectFunction[Component[js.Object, js.Object, Any]], 
+/* x */ Double, 
+/* y */ Double, 
+/* animated */ Boolean, 
+Unit]]
+inline def scrollTo_=(
+  x: js.Function4[
+  /* animatedRef */ RefObjectFunction[Component[js.Object, js.Object, Any]], 
+  /* x */ Double, 
+  /* y */ Double, 
+  /* animated */ Boolean, 
+  Unit
+]
+): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollTo")(x.asInstanceOf[js.Any])
 
 inline def setGestureState(handlerTag: Double, newState: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGestureState")(handlerTag.asInstanceOf[js.Any], newState.asInstanceOf[js.Any])).asInstanceOf[Unit]
 

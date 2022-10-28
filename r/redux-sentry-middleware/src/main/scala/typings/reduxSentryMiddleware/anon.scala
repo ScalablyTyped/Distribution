@@ -48,8 +48,10 @@ import typings.sentryTypes.typesTransportMod.Transport
 import typings.sentryTypes.typesTransportMod.TransportRequestExecutor
 import typings.sentryTypes.typesUserMod.User
 import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
+import typings.sentryUtils.typesWorldwideMod.InternalGlobal
 import typings.std.PromiseLike
 import typings.std.ReturnType
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -223,11 +225,13 @@ object anon {
     
     var LinkedErrors: TypeofLinkedErrors = js.native
     
-    val SDK_VERSION: /* "7.16.0" */ String = js.native
+    val SDK_VERSION: /* "7.17.1" */ String = js.native
     
     var Scope: TypeofScope = js.native
     
     var TryCatch: TypeofTryCatch = js.native
+    
+    val WINDOW: InternalGlobal & Window = js.native
     
     def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCall] = js.native
     

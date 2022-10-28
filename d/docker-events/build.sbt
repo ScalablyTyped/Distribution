@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "docker-events"
-version := "0.0-dt-20211202Z-d90997"
+version := "0.0-dt-20211202Z-0ae8da"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "docker-modem" % "3.0-dt-20211202Z-b691f2",
-  "org.scalablytyped" %%% "dockerode" % "3.3-dt-20220930Z-25d855",
+  "org.scalablytyped" %%% "dockerode" % "3.3-dt-20221027Z-5ef9a0",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "ssh2" % "v1.11-dt-20220930Z-361bd7",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

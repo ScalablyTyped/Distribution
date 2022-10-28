@@ -22,8 +22,6 @@ trait ka extends StObject {
   
   var Lc: js.Array[Any] = js.native
   
-  var No: tu = js.native
-  
   var Qc: Boolean = js.native
   
   var Uc: Boolean = js.native
@@ -76,6 +74,8 @@ trait ka extends StObject {
     */ def ta(t: Any): js.Promise[Unit] = js.native
   
   def verifyOperationInProgress(): Unit = js.native
+  
+  var xo: tu = js.native
   
   def zc(): Unit = js.native
 }

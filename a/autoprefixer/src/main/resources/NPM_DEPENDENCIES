@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "autoprefixer" : "10.4.12"
+      "autoprefixer" : "10.4.13"
     }
   ],
   "test-dependencies" : [
     {
-      "autoprefixer" : "10.4.12"
+      "autoprefixer" : "10.4.13"
     }
   ],
   "compile-devDependencies" : [

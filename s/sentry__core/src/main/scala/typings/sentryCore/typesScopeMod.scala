@@ -117,11 +117,6 @@ object typesScopeMod {
       */
     def applyToEvent(event: Event): PromiseLike[Event | Null] = js.native
     def applyToEvent(event: Event, hint: EventHint): PromiseLike[Event | Null] = js.native
-    
-    /**
-      * Add data which will be accessible during event processing but won't get sent to Sentry
-      */
-    def setSDKProcessingMetadata(newData: StringDictionary[Any]): this.type = js.native
   }
   /* static members */
   object Scope {

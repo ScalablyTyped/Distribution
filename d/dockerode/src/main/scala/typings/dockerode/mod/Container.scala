@@ -1,5 +1,7 @@
 package typings.dockerode.mod
 
+import typings.dockerode.anon.ContainerLogsOptionsfollo
+import typings.dockerode.anon.ContainerLogsOptionsfolloAbortSignal
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
@@ -60,10 +62,12 @@ open class Container protected () extends StObject {
   def kill(options: js.Object): js.Promise[Any] = js.native
   def kill(options: js.Object, callback: Callback[Any]): Unit = js.native
   
-  def logs(): js.Promise[ReadableStream] = js.native
-  def logs(callback: Callback[ReadableStream]): Unit = js.native
-  def logs(options: ContainerLogsOptions): js.Promise[ReadableStream] = js.native
-  def logs(options: ContainerLogsOptions, callback: Callback[ReadableStream]): Unit = js.native
+  def logs(): js.Promise[Buffer] = js.native
+  def logs(callback: Callback[Buffer]): Unit = js.native
+  def logs(options: ContainerLogsOptionsfollo): js.Promise[Buffer] = js.native
+  def logs(options: ContainerLogsOptionsfolloAbortSignal): js.Promise[ReadableStream] = js.native
+  def logs(options: ContainerLogsOptionsfolloAbortSignal, callback: Callback[ReadableStream]): Unit = js.native
+  def logs(options: ContainerLogsOptionsfollo, callback: Callback[Buffer]): Unit = js.native
   
   var modem: Any = js.native
   

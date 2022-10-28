@@ -370,6 +370,8 @@ type CsvHeaderOption = _CsvHeaderOption | String
 
 type CsvQuoteSymbol = String
 
+type CustomDatatypes = js.Array[NameString]
+
 type CustomEntityTypeNames = js.Array[NameString]
 
 type CustomEntityTypes = js.Array[CustomEntityType]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptchaConfig extends StObject {
   
   /**
-    * Determines how long a CAPTCHA token remains valid after the client successfully solves a CAPTCHA puzzle. 
+    * Determines how long a CAPTCHA timestamp in the token remains valid after the client successfully solves a CAPTCHA puzzle. 
     */
   var ImmunityTimeProperty: js.UndefOr[typings.awsSdk.clientsWafv2Mod.ImmunityTimeProperty] = js.undefined
 }

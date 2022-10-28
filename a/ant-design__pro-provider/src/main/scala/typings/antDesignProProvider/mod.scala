@@ -382,8 +382,6 @@ object mod {
     
     var intl: IntlType
     
-    var isDeps: Boolean
-    
     var theme: Theme[Any, Any]
     
     var token: js.UndefOr[ProAliasToken] = js.undefined
@@ -392,13 +390,8 @@ object mod {
   }
   object ConfigContextPropsType {
     
-    inline def apply(
-      intl: IntlType,
-      isDeps: Boolean,
-      theme: Theme[Any, Any],
-      valueTypeMap: Record[String, ProRenderFieldPropsType]
-    ): ConfigContextPropsType = {
-      val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any], isDeps = isDeps.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], valueTypeMap = valueTypeMap.asInstanceOf[js.Any])
+    inline def apply(intl: IntlType, theme: Theme[Any, Any], valueTypeMap: Record[String, ProRenderFieldPropsType]): ConfigContextPropsType = {
+      val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], valueTypeMap = valueTypeMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigContextPropsType]
     }
     
@@ -409,8 +402,6 @@ object mod {
       inline def setHashIdUndefined: Self = StObject.set(x, "hashId", js.undefined)
       
       inline def setIntl(value: IntlType): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
-      
-      inline def setIsDeps(value: Boolean): Self = StObject.set(x, "isDeps", value.asInstanceOf[js.Any])
       
       inline def setTheme(value: Theme[Any, Any]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       

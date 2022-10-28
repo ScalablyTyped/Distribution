@@ -17,6 +17,16 @@ trait UpdateCsvClassifierRequest extends StObject {
   var ContainsHeader: js.UndefOr[CsvHeaderOption] = js.undefined
   
   /**
+    * Specifies the configuration of custom datatypes.
+    */
+  var CustomDatatypeConfigured: js.UndefOr[NullableBoolean] = js.undefined
+  
+  /**
+    * Specifies a list of supported custom datatypes.
+    */
+  var CustomDatatypes: js.UndefOr[typings.awsSdk.clientsGlueMod.CustomDatatypes] = js.undefined
+  
+  /**
     * A custom symbol to denote what separates each column entry in the row.
     */
   var Delimiter: js.UndefOr[CsvColumnDelimiter] = js.undefined
@@ -57,6 +67,16 @@ object UpdateCsvClassifierRequest {
     inline def setContainsHeader(value: CsvHeaderOption): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
     inline def setContainsHeaderUndefined: Self = StObject.set(x, "ContainsHeader", js.undefined)
+    
+    inline def setCustomDatatypeConfigured(value: NullableBoolean): Self = StObject.set(x, "CustomDatatypeConfigured", value.asInstanceOf[js.Any])
+    
+    inline def setCustomDatatypeConfiguredUndefined: Self = StObject.set(x, "CustomDatatypeConfigured", js.undefined)
+    
+    inline def setCustomDatatypes(value: CustomDatatypes): Self = StObject.set(x, "CustomDatatypes", value.asInstanceOf[js.Any])
+    
+    inline def setCustomDatatypesUndefined: Self = StObject.set(x, "CustomDatatypes", js.undefined)
+    
+    inline def setCustomDatatypesVarargs(value: NameString*): Self = StObject.set(x, "CustomDatatypes", js.Array(value*))
     
     inline def setDelimiter(value: CsvColumnDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     

@@ -1621,7 +1621,7 @@ type InstanceList = js.Array[Instance]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.open__
-  - typings.awsSdk.awsSdkStrings.targeted
+  - typings.awsSdk.awsSdkStrings.targeted_
   - java.lang.String
 */
 type InstanceMatchCriteria = _InstanceMatchCriteria | java.lang.String

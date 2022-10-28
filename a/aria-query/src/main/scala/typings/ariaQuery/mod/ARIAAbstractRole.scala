@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait ARIAAbstractRole
   extends StObject
-     with _ARIARoleDefintionKey
+     with _ARIARoleDefinitionKey
 object ARIAAbstractRole {
   
   inline def command: typings.ariaQuery.ariaQueryStrings.command = "command".asInstanceOf[typings.ariaQuery.ariaQueryStrings.command]

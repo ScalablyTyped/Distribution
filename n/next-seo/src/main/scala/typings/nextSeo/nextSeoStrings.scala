@@ -33,6 +33,10 @@ object nextSeoStrings {
   inline def Blog: Blog = "Blog".asInstanceOf[Blog]
   
   @js.native
+  sealed trait BlogPosting extends StObject
+  inline def BlogPosting: BlogPosting = "BlogPosting".asInstanceOf[BlogPosting]
+  
+  @js.native
   sealed trait Browser
     extends StObject
        with ApplicationCategory

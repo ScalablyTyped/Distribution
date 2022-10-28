@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "firebase__storage"
-version := "0.9.12-fa6f43"
+version := "0.9.13-cb5f1c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "firebase__app" % "0.8.2-7aa751",
-  "org.scalablytyped" %%% "firebase__app-check-interop-types" % "0.1.0-491896",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.8.0-e8c69b",
-  "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.6-5c8a80",
-  "org.scalablytyped" %%% "firebase__component" % "0.5.20-f485f2",
-  "org.scalablytyped" %%% "firebase__logger" % "0.3.3-947469",
-  "org.scalablytyped" %%% "firebase__util" % "1.7.2-341bcd",
+  "org.scalablytyped" %%% "firebase__app" % "0.8.3-0f86ba",
+  "org.scalablytyped" %%% "firebase__app-check-interop-types" % "0.1.1-e847c1",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.8.1-6f6d8a",
+  "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.7-732ba6",
+  "org.scalablytyped" %%% "firebase__component" % "0.5.21-2f926f",
+  "org.scalablytyped" %%% "firebase__logger" % "0.3.4-2113bf",
+  "org.scalablytyped" %%% "firebase__util" % "1.7.3-d8aaca",
   "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-385072",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "node-fetch" % "3.2.10-178c8a",

@@ -21,7 +21,7 @@ trait KeyboardEvent[T]
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
     */
-  def getModifierState(key: String): Boolean
+  def getModifierState(key: ModifierKey): Boolean
   
   /**
     * See the [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#named-key-attribute-values). for possible values
@@ -57,7 +57,7 @@ object KeyboardEvent {
     defaultPrevented: Boolean,
     detail: Double,
     eventPhase: Double,
-    getModifierState: String => Boolean,
+    getModifierState: ModifierKey => Boolean,
     isDefaultPrevented: () => Boolean,
     isPropagationStopped: () => Boolean,
     isTrusted: Boolean,
@@ -93,7 +93,7 @@ object KeyboardEvent {
     
     inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
-    inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+    inline def setGetModifierState(value: ModifierKey => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

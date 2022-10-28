@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd-mobile"
-version := "5.24.2-03017e"
+version := "5.24.2-9f192f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,12 +8,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "dayjs" % "1.11.6-153a22",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "rc-field-form" % "1.27.2-4570a6",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
-  "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221024Z-bf50fa",
+  "org.scalablytyped" %%% "rc-field-form" % "1.27.2-e38ff5",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221027Z-34f203",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "use-gesture__react" % "10.2.20-fde39c")
+  "org.scalablytyped" %%% "use-gesture__react" % "10.2.20-7a42b5")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -5,6 +5,8 @@ import typings.sentryBrowser.anon.Email
 import typings.sentryBrowser.anon.Mechanism
 import typings.sentryTypes.typesDsnMod.DsnLike
 import typings.sentryTypes.typesWrappedfunctionMod.WrappedFunction
+import typings.sentryUtils.typesWorldwideMod.InternalGlobal
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +16,10 @@ object typesHelpersMod {
   @JSImport("@sentry/browser/types/helpers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@sentry/browser/types/helpers", "WINDOW")
+  @js.native
+  val WINDOW: InternalGlobal & Window = js.native
   
   inline def ignoreNextOnError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreNextOnError")().asInstanceOf[Unit]
   

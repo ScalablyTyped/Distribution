@@ -951,6 +951,10 @@ object babelCoreStrings {
   inline def TSRestType: TSRestType = "TSRestType".asInstanceOf[TSRestType]
   
   @js.native
+  sealed trait TSSatisfiesExpression extends StObject
+  inline def TSSatisfiesExpression: TSSatisfiesExpression = "TSSatisfiesExpression".asInstanceOf[TSSatisfiesExpression]
+  
+  @js.native
   sealed trait TSStringKeyword extends StObject
   inline def TSStringKeyword: TSStringKeyword = "TSStringKeyword".asInstanceOf[TSStringKeyword]
   
@@ -1285,6 +1289,10 @@ object babelCoreStrings {
   @js.native
   sealed trait `upward-optional` extends StObject
   inline def `upward-optional`: `upward-optional` = "upward-optional".asInstanceOf[`upward-optional`]
+  
+  @js.native
+  sealed trait `using` extends StObject
+  inline def `using`: `using` = "using".asInstanceOf[`using`]
   
   @js.native
   sealed trait `var` extends StObject

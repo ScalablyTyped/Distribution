@@ -1,6 +1,7 @@
 package typings.reactTypesShared.srcEventsMod
 
 import typings.react.mod.AbstractView
+import typings.react.mod.ModifierKey
 import typings.react.mod.NativeKeyboardEvent
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
@@ -36,7 +37,7 @@ trait KeyboardEvent extends StObject {
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
     */
-  def getModifierState(key: String): Boolean
+  def getModifierState(key: ModifierKey): Boolean
   
   def isDefaultPrevented(): Boolean
   
@@ -95,7 +96,7 @@ object KeyboardEvent {
     defaultPrevented: Boolean,
     detail: Double,
     eventPhase: Double,
-    getModifierState: String => Boolean,
+    getModifierState: ModifierKey => Boolean,
     isDefaultPrevented: () => Boolean,
     isPropagationStopped: () => Boolean,
     isTrusted: Boolean,
@@ -145,7 +146,7 @@ object KeyboardEvent {
     
     inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
-    inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+    inline def setGetModifierState(value: ModifierKey => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

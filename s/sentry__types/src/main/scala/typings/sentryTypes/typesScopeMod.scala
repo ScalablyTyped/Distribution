@@ -137,6 +137,11 @@ object typesScopeMod {
     def setRequestSession(requestSession: RequestSession): this.type = js.native
     
     /**
+      * Add data which will be accessible during event processing but won't get sent to Sentry
+      */
+    def setSDKProcessingMetadata(newData: StringDictionary[Any]): this.type = js.native
+    
+    /**
       * Sets the `Session` on the scope
       */
     def setSession(): this.type = js.native

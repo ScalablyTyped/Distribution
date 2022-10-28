@@ -1,5 +1,6 @@
 package typings.relayRuntime.libStoreRelayStoreTypesMod
 
+import typings.relayRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,4 +21,6 @@ trait RecordSourceSelectorProxy[T]
   ] = js.native
   
   def invalidateStore(): Unit = js.native
+  
+  def readUpdatableFragment_EXPERIMENTAL[TKey /* <: HasUpdatableSpread[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): UpdatableData[TKey, Any] = js.native
 }

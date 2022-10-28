@@ -1,24 +1,24 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TSTypeOperator
+import typings.babelTraverse.babelTraverseStrings.ThisTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `51` extends StObject {
   
-  var `type`: TSTypeOperator
+  var `type`: ThisTypeAnnotation
 }
 object `51` {
   
   inline def apply(): `51` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("TSTypeOperator")
+    __obj.updateDynamic("type")("ThisTypeAnnotation")
     __obj.asInstanceOf[`51`]
   }
   
   extension [Self <: `51`](x: Self) {
     
-    inline def setType(value: TSTypeOperator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ThisTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

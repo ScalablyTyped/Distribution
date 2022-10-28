@@ -14,6 +14,8 @@ object typesTransportsUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def clearCachedFetchImplementation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCachedFetchImplementation")().asInstanceOf[Unit]
+  
   inline def getNativeFetchImplementation(): FetchImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("getNativeFetchImplementation")().asInstanceOf[FetchImpl]
   
   @js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/sha256-tree-hash" : "3.197.0"
+      "@aws-sdk/sha256-tree-hash" : "3.198.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/sha256-tree-hash" : "3.197.0"
+      "@aws-sdk/sha256-tree-hash" : "3.198.0"
     }
   ],
   "compile-devDependencies" : [

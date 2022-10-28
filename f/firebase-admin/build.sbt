@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "firebase-admin"
-version := "11.2.0-50cbbf"
+version := "11.2.0-803278"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.8.0-e8c69b",
-  "org.scalablytyped" %%% "firebase__database-types" % "0.9.16-1e7729",
-  "org.scalablytyped" %%% "firebase__logger" % "0.3.3-947469",
-  "org.scalablytyped" %%% "firebase__util" % "1.7.2-341bcd",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.8.1-6f6d8a",
+  "org.scalablytyped" %%% "firebase__database-types" % "0.9.17-db3818",
+  "org.scalablytyped" %%% "firebase__logger" % "0.3.4-2113bf",
+  "org.scalablytyped" %%% "firebase__util" % "1.7.3-d8aaca",
   "org.scalablytyped" %%% "gaxios" % "5.0.2-3344b7",
   "org.scalablytyped" %%% "google-auth-library" % "8.6.0-03cda1",
   "org.scalablytyped" %%% "google-cloud__firestore" % "6.4.0-c38648",

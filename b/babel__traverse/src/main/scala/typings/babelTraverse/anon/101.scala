@@ -1,24 +1,24 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TopicReference
+import typings.babelTraverse.babelTraverseStrings.TSStringKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `101` extends StObject {
   
-  var `type`: TopicReference
+  var `type`: TSStringKeyword
 }
 object `101` {
   
   inline def apply(): `101` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("TopicReference")
+    __obj.updateDynamic("type")("TSStringKeyword")
     __obj.asInstanceOf[`101`]
   }
   
   extension [Self <: `101`](x: Self) {
     
-    inline def setType(value: TopicReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSStringKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

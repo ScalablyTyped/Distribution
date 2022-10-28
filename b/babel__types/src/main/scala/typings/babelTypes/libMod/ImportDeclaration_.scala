@@ -21,6 +21,8 @@ trait ImportDeclaration_
   
   var importKind: js.UndefOr[`type` | typeof | value | Null] = js.undefined
   
+  var module: js.UndefOr[Boolean | Null] = js.undefined
+  
   var source: StringLiteral_
   
   var specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_]
@@ -54,6 +56,12 @@ object ImportDeclaration_ {
     inline def setImportKindNull: Self = StObject.set(x, "importKind", null)
     
     inline def setImportKindUndefined: Self = StObject.set(x, "importKind", js.undefined)
+    
+    inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    
+    inline def setModuleNull: Self = StObject.set(x, "module", null)
+    
+    inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
     inline def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

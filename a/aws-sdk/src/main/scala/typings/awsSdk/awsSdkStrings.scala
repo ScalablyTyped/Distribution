@@ -3914,6 +3914,7 @@ import typings.awsSdk.clientsWafv2Mod._FilterBehavior
 import typings.awsSdk.clientsWafv2Mod._FilterRequirement
 import typings.awsSdk.clientsWafv2Mod._ForwardedIPPosition
 import typings.awsSdk.clientsWafv2Mod._IPAddressVersion
+import typings.awsSdk.clientsWafv2Mod._InspectionLevel
 import typings.awsSdk.clientsWafv2Mod._JsonMatchScope
 import typings.awsSdk.clientsWafv2Mod._LabelMatchScope
 import typings.awsSdk.clientsWafv2Mod._MapMatchScope
@@ -4670,7 +4671,6 @@ object awsSdkStrings {
   sealed trait `2016-08-20`
     extends StObject
        with typings.awsSdk.clientsCloudfrontMod._apiVersion
-  inline def `2016-08-20`: `2016-08-20` = "2016-08-20".asInstanceOf[`2016-08-20`]
   
   @js.native
   sealed trait `2016-09-07`
@@ -15151,6 +15151,12 @@ object awsSdkStrings {
   inline def CHA: CHA = "CHA".asInstanceOf[CHA]
   
   @js.native
+  sealed trait CHALLENGE
+    extends StObject
+       with _ActionValue
+  inline def CHALLENGE: CHALLENGE = "CHALLENGE".asInstanceOf[CHALLENGE]
+  
+  @js.native
   sealed trait CHANGED
     extends StObject
        with typings.awsSdk.clientsFsxMod._EventType
@@ -16080,6 +16086,7 @@ object awsSdkStrings {
   sealed trait COMMON
     extends StObject
        with _AuthenticationScheme
+       with _InspectionLevel
   inline def COMMON: COMMON = "COMMON".asInstanceOf[COMMON]
   
   @js.native
@@ -29087,7 +29094,6 @@ object awsSdkStrings {
   sealed trait FLUSH_IN_PROGRESS
     extends StObject
        with _CacheClusterStatus
-  inline def FLUSH_IN_PROGRESS: FLUSH_IN_PROGRESS = "FLUSH_IN_PROGRESS".asInstanceOf[FLUSH_IN_PROGRESS]
   
   @js.native
   sealed trait FM
@@ -39351,7 +39357,6 @@ object awsSdkStrings {
   sealed trait LambdaFunctionCompleted
     extends StObject
        with typings.awsSdk.clientsSwfMod._EventType
-  inline def LambdaFunctionCompleted: LambdaFunctionCompleted = "LambdaFunctionCompleted".asInstanceOf[LambdaFunctionCompleted]
   
   @js.native
   sealed trait LambdaFunctionFailed
@@ -47792,7 +47797,6 @@ object awsSdkStrings {
   sealed trait PENDING_REMOVAL_BY_COLLABORATOR
     extends StObject
        with _ManagedCredentialsStatus
-  inline def PENDING_REMOVAL_BY_COLLABORATOR: PENDING_REMOVAL_BY_COLLABORATOR = "PENDING_REMOVAL_BY_COLLABORATOR".asInstanceOf[PENDING_REMOVAL_BY_COLLABORATOR]
   
   @js.native
   sealed trait PENDING_REMOVAL_BY_OWNER
@@ -61636,6 +61640,12 @@ object awsSdkStrings {
        with _ConnectorConfigProvider
   
   @js.native
+  sealed trait TARGETED
+    extends StObject
+       with _InspectionLevel
+  inline def TARGETED: TARGETED = "TARGETED".asInstanceOf[TARGETED]
+  
+  @js.native
   sealed trait TARGET_ACCOUNT
     extends StObject
        with typings.awsSdk.clientsDrsMod._InitiatedBy
@@ -62843,10 +62853,22 @@ object awsSdkStrings {
   inline def TOKEN: TOKEN = "TOKEN".asInstanceOf[TOKEN]
   
   @js.native
+  sealed trait TOKEN_DOMAIN_MISMATCH
+    extends StObject
+       with typings.awsSdk.clientsWafv2Mod._FailureReason
+  inline def TOKEN_DOMAIN_MISMATCH: TOKEN_DOMAIN_MISMATCH = "TOKEN_DOMAIN_MISMATCH".asInstanceOf[TOKEN_DOMAIN_MISMATCH]
+  
+  @js.native
   sealed trait TOKEN_EXPIRED
     extends StObject
        with typings.awsSdk.clientsWafv2Mod._FailureReason
   inline def TOKEN_EXPIRED: TOKEN_EXPIRED = "TOKEN_EXPIRED".asInstanceOf[TOKEN_EXPIRED]
+  
+  @js.native
+  sealed trait TOKEN_INVALID
+    extends StObject
+       with typings.awsSdk.clientsWafv2Mod._FailureReason
+  inline def TOKEN_INVALID: TOKEN_INVALID = "TOKEN_INVALID".asInstanceOf[TOKEN_INVALID]
   
   @js.native
   sealed trait TOKEN_MISSING
@@ -85071,10 +85093,10 @@ object awsSdkStrings {
   inline def target_ : target_ = "target".asInstanceOf[target_]
   
   @js.native
-  sealed trait targeted
+  sealed trait targeted_
     extends StObject
        with _InstanceMatchCriteria
-  inline def targeted: targeted = "targeted".asInstanceOf[targeted]
+  inline def targeted_ : targeted_ = "targeted".asInstanceOf[targeted_]
   
   @js.native
   sealed trait `task-lifecycle`

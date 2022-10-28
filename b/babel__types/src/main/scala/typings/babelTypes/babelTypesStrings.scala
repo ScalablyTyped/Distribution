@@ -1855,6 +1855,13 @@ object babelTypesStrings {
   inline def TSRestType: TSRestType = "TSRestType".asInstanceOf[TSRestType]
   
   @js.native
+  sealed trait TSSatisfiesExpression
+    extends StObject
+       with NodeTypes
+       with NodeTypesWithoutComment
+  inline def TSSatisfiesExpression: TSSatisfiesExpression = "TSSatisfiesExpression".asInstanceOf[TSSatisfiesExpression]
+  
+  @js.native
   sealed trait TSStringKeyword
     extends StObject
        with NodeTypes
@@ -2424,6 +2431,10 @@ object babelTypesStrings {
   @js.native
   sealed trait undefined extends StObject
   inline def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
+  @js.native
+  sealed trait `using` extends StObject
+  inline def `using`: `using` = "using".asInstanceOf[`using`]
   
   @js.native
   sealed trait value extends StObject

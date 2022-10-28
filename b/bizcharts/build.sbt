@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bizcharts"
-version := "4.1.20-52b453"
+version := "4.1.20-db25b0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -32,8 +32,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "offscreencanvas" % "2019.7-dt-20220526Z-6cf76a",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "rbush" % "3.0-dt-20220819Z-334310",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
-  "org.scalablytyped" %%% "react-error-boundary" % "3.1.4-4ea2d2",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react-error-boundary" % "3.1.4-fc2389",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -1,24 +1,24 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.TypeParameterDeclaration
+import typings.babelTraverse.babelTraverseStrings.TupleTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `14` extends StObject {
   
-  var `type`: TypeParameterDeclaration
+  var `type`: TupleTypeAnnotation
 }
 object `14` {
   
   inline def apply(): `14` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("TypeParameterDeclaration")
+    __obj.updateDynamic("type")("TupleTypeAnnotation")
     __obj.asInstanceOf[`14`]
   }
   
   extension [Self <: `14`](x: Self) {
     
-    inline def setType(value: TypeParameterDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TupleTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

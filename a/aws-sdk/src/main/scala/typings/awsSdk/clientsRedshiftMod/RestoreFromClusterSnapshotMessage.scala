@@ -62,7 +62,7 @@ trait RestoreFromClusterSnapshotMessage extends StObject {
   var DefaultIamRoleArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The elastic IP (EIP) address for the cluster.
+    * The Elastic IP (EIP) address for the cluster. Don't specify the Elastic IP address for a publicly accessible cluster with availability zone relocation turned on.
     */
   var ElasticIp: js.UndefOr[String] = js.undefined
   

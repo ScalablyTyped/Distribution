@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "brotli-size" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "brotli-size" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

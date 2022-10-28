@@ -12,6 +12,16 @@ trait AlgorithmSpecification extends StObject {
   var AlgorithmName: js.UndefOr[ArnOrName] = js.undefined
   
   /**
+    * The arguments for a container used to run a training job. See How Amazon SageMaker Runs Your Training Image for additional information.
+    */
+  var ContainerArguments: js.UndefOr[TrainingContainerArguments] = js.undefined
+  
+  /**
+    * The entrypoint script for a Docker container used to run a training job. This script takes precedence over the default train processing instructions. See How Amazon SageMaker Runs Your Training Image for more information.
+    */
+  var ContainerEntrypoint: js.UndefOr[TrainingContainerEntrypoint] = js.undefined
+  
+  /**
     * To generate and save time-series metrics during training, set to true. The default is false and time-series metrics aren't generated except in the following cases:   You use one of the SageMaker built-in algorithms   You use one of the following Prebuilt SageMaker Docker Images:   Tensorflow (version &gt;= 1.15)   MXNet (version &gt;= 1.6)   PyTorch (version &gt;= 1.3)     You specify at least one MetricDefinition   
     */
   var EnableSageMakerMetricsTimeSeries: js.UndefOr[Boolean] = js.undefined
@@ -40,6 +50,18 @@ object AlgorithmSpecification {
     inline def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
     
     inline def setAlgorithmNameUndefined: Self = StObject.set(x, "AlgorithmName", js.undefined)
+    
+    inline def setContainerArguments(value: TrainingContainerArguments): Self = StObject.set(x, "ContainerArguments", value.asInstanceOf[js.Any])
+    
+    inline def setContainerArgumentsUndefined: Self = StObject.set(x, "ContainerArguments", js.undefined)
+    
+    inline def setContainerArgumentsVarargs(value: TrainingContainerArgument*): Self = StObject.set(x, "ContainerArguments", js.Array(value*))
+    
+    inline def setContainerEntrypoint(value: TrainingContainerEntrypoint): Self = StObject.set(x, "ContainerEntrypoint", value.asInstanceOf[js.Any])
+    
+    inline def setContainerEntrypointUndefined: Self = StObject.set(x, "ContainerEntrypoint", js.undefined)
+    
+    inline def setContainerEntrypointVarargs(value: TrainingContainerEntrypointString*): Self = StObject.set(x, "ContainerEntrypoint", js.Array(value*))
     
     inline def setEnableSageMakerMetricsTimeSeries(value: Boolean): Self = StObject.set(x, "EnableSageMakerMetricsTimeSeries", value.asInstanceOf[js.Any])
     

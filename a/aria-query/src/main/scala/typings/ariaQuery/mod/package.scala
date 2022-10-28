@@ -12,11 +12,11 @@ inline def aria: MapLike[ARIAProperty, ARIAPropertyDefinition] = ^.asInstanceOf[
 
 inline def dom: MapLike[String, DOMDefinition] = ^.asInstanceOf[js.Dynamic].selectDynamic("dom").asInstanceOf[MapLike[String, DOMDefinition]]
 
-inline def elementRoles: MapLike[ARIARoleRelationConcept, Set[ARIARoleDefintionKey]] = ^.asInstanceOf[js.Dynamic].selectDynamic("elementRoles").asInstanceOf[MapLike[ARIARoleRelationConcept, Set[ARIARoleDefintionKey]]]
+inline def elementRoles: MapLike[ARIARoleRelationConcept, Set[ARIARoleDefinitionKey]] = ^.asInstanceOf[js.Dynamic].selectDynamic("elementRoles").asInstanceOf[MapLike[ARIARoleRelationConcept, Set[ARIARoleDefinitionKey]]]
 
-inline def roleElements: MapLike[ARIARoleDefintionKey, Set[ARIARoleRelationConcept]] = ^.asInstanceOf[js.Dynamic].selectDynamic("roleElements").asInstanceOf[MapLike[ARIARoleDefintionKey, Set[ARIARoleRelationConcept]]]
+inline def roleElements: MapLike[ARIARoleDefinitionKey, Set[ARIARoleRelationConcept]] = ^.asInstanceOf[js.Dynamic].selectDynamic("roleElements").asInstanceOf[MapLike[ARIARoleDefinitionKey, Set[ARIARoleRelationConcept]]]
 
-inline def roles: MapLike[ARIARoleDefintionKey, ARIARoleDefinition] = ^.asInstanceOf[js.Dynamic].selectDynamic("roles").asInstanceOf[MapLike[ARIARoleDefintionKey, ARIARoleDefinition]]
+inline def roles: MapLike[ARIARoleDefinitionKey, ARIARoleDefinition] = ^.asInstanceOf[js.Dynamic].selectDynamic("roles").asInstanceOf[MapLike[ARIARoleDefinitionKey, ARIARoleDefinition]]
 
 /* Rewritten from type alias, can be one of: 
   - typings.ariaQuery.mod.ARIAWidgetRole
@@ -34,6 +34,6 @@ type ARIARole = _ARIARole | ARIAUncategorizedRole
   - typings.ariaQuery.mod.ARIARole
   - typings.ariaQuery.mod.ARIADPubRole
 */
-type ARIARoleDefintionKey = _ARIARoleDefintionKey | ARIAUncategorizedRole
+type ARIARoleDefinitionKey = _ARIARoleDefinitionKey | ARIAUncategorizedRole
 
 type ARIAUncategorizedRole = code

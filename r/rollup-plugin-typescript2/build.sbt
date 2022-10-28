@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-typescript2"
-version := "0.34.0-cb3094"
+version := "0.34.1-6d401e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/app-check" : "0.5.15"
+      "@firebase/app-check" : "0.5.16"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/app-check" : "0.5.15"
+      "@firebase/app-check" : "0.5.16"
     }
   ],
   "compile-devDependencies" : [

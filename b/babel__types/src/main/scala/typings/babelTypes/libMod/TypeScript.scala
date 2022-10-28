@@ -57,6 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.libMod.TSTypeAliasDeclaration__
   - typings.babelTypes.libMod.TSInstantiationExpression__
   - typings.babelTypes.libMod.TSAsExpression__
+  - typings.babelTypes.libMod.TSSatisfiesExpression__
   - typings.babelTypes.libMod.TSTypeAssertion__
   - typings.babelTypes.libMod.TSEnumDeclaration__
   - typings.babelTypes.libMod.TSEnumMember__
@@ -352,6 +353,12 @@ object TypeScript {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSRestType")
     __obj.asInstanceOf[typings.babelTypes.libMod.TSRestType__]
+  }
+  
+  inline def TSSatisfiesExpression__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSSatisfiesExpression__ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSSatisfiesExpression")
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSSatisfiesExpression__]
   }
   
   inline def TSStringKeyword__(): typings.babelTypes.libMod.TSStringKeyword__ = {

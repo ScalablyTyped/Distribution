@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__signature-v4-crt"
-version := "3.197.0-67b145"
+version := "3.198.0-b86660"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "aws-crt" % "1.14.5-ca243d",
-  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.197.0-8e5b78",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.197.0-ef10cd",
+  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.198.0-270c7e",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.198.0-a78f65",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

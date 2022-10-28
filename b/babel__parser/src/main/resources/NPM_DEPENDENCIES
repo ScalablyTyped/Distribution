@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@babel/parser" : "7.19.6"
+      "@babel/parser" : "7.20.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@babel/parser" : "7.19.6"
+      "@babel/parser" : "7.20.0"
     }
   ],
   "compile-devDependencies" : [

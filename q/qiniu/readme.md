@@ -1,7 +1,7 @@
 
 # Scala.js typings for qiniu
 
-Typings are for version 7.7.0
+Typings are for version 7.8.0
 
 ## Library description:
 Node wrapper for Qiniu Resource (Cloud) Storage API

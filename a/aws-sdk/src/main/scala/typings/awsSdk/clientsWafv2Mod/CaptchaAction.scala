@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptchaAction extends StObject {
   
   /**
-    * Defines custom handling for the web request. For information about customizing web requests and responses, see Customizing web requests and responses in WAF in the WAF Developer Guide. 
+    * Defines custom handling for the web request, used when the CAPTCHA inspection determines that the request's token is valid and unexpired. For information about customizing web requests and responses, see Customizing web requests and responses in WAF in the WAF Developer Guide. 
     */
   var CustomRequestHandling: js.UndefOr[typings.awsSdk.clientsWafv2Mod.CustomRequestHandling] = js.undefined
 }

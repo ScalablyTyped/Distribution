@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-sso"
-version := "3.197.0-5b2e15"
+version := "3.198.0-969a45"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.197.0-59c277",
-  "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.197.0-19d02c",
-  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.197.0-55f5a5",
-  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.197.0-13f715",
-  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.197.0-0afe85",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.197.0-ef10cd",
-  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.197.0-7b13bb",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.198.0-14192e",
+  "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.198.0-79b2ed",
+  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.198.0-81fc84",
+  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.198.0-c1c5a3",
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.198.0-e2ca71",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.198.0-a78f65",
+  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.198.0-bc39e6",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

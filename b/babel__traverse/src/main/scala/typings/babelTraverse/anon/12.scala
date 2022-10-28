@@ -1,24 +1,24 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.ObjectTypeCallProperty
+import typings.babelTraverse.babelTraverseStrings.YieldExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `12` extends StObject {
   
-  var `type`: ObjectTypeCallProperty
+  var `type`: YieldExpression
 }
 object `12` {
   
   inline def apply(): `12` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("ObjectTypeCallProperty")
+    __obj.updateDynamic("type")("YieldExpression")
     __obj.asInstanceOf[`12`]
   }
   
   extension [Self <: `12`](x: Self) {
     
-    inline def setType(value: ObjectTypeCallProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: YieldExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

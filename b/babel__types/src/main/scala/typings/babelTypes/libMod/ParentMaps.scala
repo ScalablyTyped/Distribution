@@ -10,29 +10,29 @@ trait ParentMaps extends StObject {
   
   var ArgumentPlaceholder: CallExpression_ | NewExpression_ | OptionalCallExpression_
   
-  var ArrayExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var ArrayExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var ArrayPattern: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | AssignmentPattern_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__ | VariableDeclarator_
   
   var ArrayTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var ArrowFunctionExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var ArrowFunctionExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var AssignmentExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var AssignmentExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var AssignmentPattern: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__ | TSParameterProperty__ | VariableDeclarator_
   
-  var AwaitExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var AwaitExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var BigIntLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var BigIntLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var BinaryExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var BinaryExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var BindExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var BindExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var BlockStatement: ArrowFunctionExpression_ | BlockStatement_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | DeclareModule_ | DoExpression_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | FunctionDeclaration_ | FunctionExpression_ | IfStatement_ | LabeledStatement_ | ObjectMethod_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | TryStatement_ | WhileStatement_ | WithStatement_
   
-  var BooleanLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var BooleanLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var BooleanLiteralTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
@@ -40,7 +40,7 @@ trait ParentMaps extends StObject {
   
   var BreakStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var CallExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var CallExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var CatchClause: TryStatement_
   
@@ -50,7 +50,7 @@ trait ParentMaps extends StObject {
   
   var ClassDeclaration: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var ClassExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var ClassExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var ClassImplements: ClassDeclaration_ | ClassExpression_ | DeclareClass_ | DeclareExportDeclaration_ | DeclareInterface_ | DeclaredPredicate_ | InterfaceDeclaration_
   
@@ -66,13 +66,13 @@ trait ParentMaps extends StObject {
   
   var CommentLine: File_
   
-  var ConditionalExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var ConditionalExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var ContinueStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var DebuggerStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DecimalLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var DecimalLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var DeclareClass: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
@@ -102,7 +102,7 @@ trait ParentMaps extends StObject {
   
   var DirectiveLiteral: Directive_
   
-  var DoExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var DoExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var DoWhileStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
@@ -154,7 +154,7 @@ trait ParentMaps extends StObject {
   
   var FunctionDeclaration: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var FunctionExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var FunctionExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var FunctionTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
@@ -162,11 +162,11 @@ trait ParentMaps extends StObject {
   
   var GenericTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var Identifier: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 123, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+  var Identifier: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 124, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
   
   var IfStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var Import: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var Import: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var ImportAttribute: ExportAllDeclaration_ | ExportNamedDeclaration_ | ImportDeclaration_
   
@@ -198,13 +198,13 @@ trait ParentMaps extends StObject {
   
   var JSXClosingFragment: JSXFragment__
   
-  var JSXElement: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var JSXElement: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var JSXEmptyExpression: JSXExpressionContainer__
   
   var JSXExpressionContainer: JSXAttribute__ | JSXElement__ | JSXFragment__
   
-  var JSXFragment: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var JSXFragment: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var JSXIdentifier: JSXAttribute__ | JSXClosingElement__ | JSXMemberExpression__ | JSXNamespacedName__ | JSXOpeningElement__
   
@@ -224,21 +224,21 @@ trait ParentMaps extends StObject {
   
   var LabeledStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var LogicalExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var LogicalExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var MemberExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+  var MemberExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
   
-  var MetaProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var MetaProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var MixedTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var ModuleExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var ModuleExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var NewExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var NewExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var Noop: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__
   
-  var NullLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var NullLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var NullLiteralTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
@@ -250,9 +250,9 @@ trait ParentMaps extends StObject {
   
   var NumberTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var NumericLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var NumericLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var ObjectExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var ObjectExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var ObjectMethod: ObjectExpression_
   
@@ -274,19 +274,19 @@ trait ParentMaps extends StObject {
   
   var OpaqueType: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var OptionalCallExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var OptionalCallExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var OptionalIndexedAccessType: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var OptionalMemberExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var OptionalMemberExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var ParenthesizedExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var ParenthesizedExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var PipelineBareFunction: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var PipelineBareFunction: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var PipelinePrimaryTopicReference: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var PipelinePrimaryTopicReference: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var PipelineTopicExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var PipelineTopicExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var Placeholder: Node
   
@@ -296,9 +296,9 @@ trait ParentMaps extends StObject {
   
   var QualifiedTypeIdentifier: DeclareExportDeclaration_ | DeclaredPredicate_ | GenericTypeAnnotation_ | InterfaceExtends_ | QualifiedTypeIdentifier_
   
-  var RecordExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var RecordExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var RegExpLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var RegExpLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var RegexLiteral: Null
   
@@ -308,7 +308,7 @@ trait ParentMaps extends StObject {
   
   var ReturnStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var SequenceExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var SequenceExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var SpreadElement: ArrayExpression_ | CallExpression_ | NewExpression_ | ObjectExpression_ | OptionalCallExpression_ | RecordExpression_ | TupleExpression_
   
@@ -316,13 +316,13 @@ trait ParentMaps extends StObject {
   
   var StaticBlock: ClassBody_
   
-  var StringLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var StringLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 79, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var StringLiteralTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
   var StringTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var Super: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var Super: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var SwitchCase: SwitchStatement_
   
@@ -330,23 +330,23 @@ trait ParentMaps extends StObject {
   
   var SymbolTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var TSAnyKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSAnyKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSArrayType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSArrayType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSAsExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+  var TSAsExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
   
-  var TSBigIntKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSBigIntKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSBooleanKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSBooleanKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSCallSignatureDeclaration: TSInterfaceBody__ | TSTypeLiteral__
   
-  var TSConditionalType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSConditionalType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSConstructSignatureDeclaration: TSInterfaceBody__ | TSTypeLiteral__
   
-  var TSConstructorType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSConstructorType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSDeclareFunction: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
@@ -358,35 +358,35 @@ trait ParentMaps extends StObject {
   
   var TSExportAssignment: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSExpressionWithTypeArguments: ClassDeclaration_ | ClassExpression_ | TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSInterfaceDeclaration__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSExpressionWithTypeArguments: ClassDeclaration_ | ClassExpression_ | TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSInterfaceDeclaration__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSExternalModuleReference: TSImportEqualsDeclaration__
   
-  var TSFunctionType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSFunctionType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSImportEqualsDeclaration: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSImportType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypeQuery__ | TSUnionType__ | TemplateLiteral_
+  var TSImportType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypeQuery__ | TSUnionType__ | TemplateLiteral_
   
   var TSIndexSignature: ClassBody_ | TSInterfaceBody__ | TSTypeLiteral__
   
-  var TSIndexedAccessType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSIndexedAccessType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSInferType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSInferType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSInstantiationExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var TSInstantiationExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var TSInterfaceBody: TSInterfaceDeclaration__
   
   var TSInterfaceDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSIntersectionType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSIntersectionType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSIntrinsicKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSIntrinsicKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSLiteralType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSLiteralType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSMappedType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSMappedType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSMethodSignature: TSInterfaceBody__ | TSTypeLiteral__
   
@@ -398,45 +398,47 @@ trait ParentMaps extends StObject {
   
   var TSNamespaceExportDeclaration: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSNeverKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSNeverKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSNonNullExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+  var TSNonNullExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
   
-  var TSNullKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSNullKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSNumberKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSNumberKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSObjectKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSObjectKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSOptionalType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSOptionalType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSParameterProperty: ArrayPattern_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | RestElement_ | TSDeclareMethod__ | VariableDeclarator_
   
-  var TSParenthesizedType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSParenthesizedType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSPropertySignature: TSInterfaceBody__ | TSTypeLiteral__
   
   var TSQualifiedName: TSExpressionWithTypeArguments__ | TSImportEqualsDeclaration__ | TSImportType__ | TSQualifiedName__ | TSTypeQuery__ | TSTypeReference__
   
-  var TSRestType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSRestType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSStringKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSSatisfiesExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
   
-  var TSSymbolKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSStringKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSThisType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypePredicate__ | TSUnionType__ | TemplateLiteral_
+  var TSSymbolKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTupleType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSThisType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypePredicate__ | TSUnionType__ | TemplateLiteral_
+  
+  var TSTupleType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSTypeAliasDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var TSTypeAnnotation: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSCallSignatureDeclaration__ | TSConstructSignatureDeclaration__ | TSConstructorType__ | TSDeclareFunction__ | TSDeclareMethod__ | TSFunctionType__ | TSIndexSignature__ | TSMethodSignature__ | TSPropertySignature__ | TSTypePredicate__
   
-  var TSTypeAssertion: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+  var TSTypeAssertion: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
   
-  var TSTypeLiteral: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSTypeLiteral: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTypeOperator: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSTypeOperator: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSTypeParameter: TSInferType__ | TSMappedType__ | TSTypeParameterDeclaration__
   
@@ -444,37 +446,37 @@ trait ParentMaps extends StObject {
   
   var TSTypeParameterInstantiation: CallExpression_ | ClassDeclaration_ | ClassExpression_ | JSXOpeningElement__ | NewExpression_ | OptionalCallExpression_ | TSExpressionWithTypeArguments__ | TSImportType__ | TSInstantiationExpression__ | TSTypeQuery__ | TSTypeReference__ | TaggedTemplateExpression_
   
-  var TSTypePredicate: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSTypePredicate: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTypeQuery: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSTypeQuery: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTypeReference: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSTypeReference: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSUndefinedKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSUndefinedKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSUnionType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSUnionType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSUnknownKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSUnknownKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSVoidKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+  var TSVoidKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TaggedTemplateExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var TaggedTemplateExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var TemplateElement: TemplateLiteral_
   
-  var TemplateLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var TemplateLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var ThisExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var ThisExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var ThisTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
   var ThrowStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TopicReference: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var TopicReference: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var TryStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TupleExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var TupleExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var TupleTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
@@ -482,7 +484,7 @@ trait ParentMaps extends StObject {
   
   var TypeAnnotation: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | DeclareExportDeclaration_ | DeclareModuleExports_ | DeclaredPredicate_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TypeCastExpression_ | TypeParameter_
   
-  var TypeCastExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var TypeCastExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var TypeParameter: DeclareExportDeclaration_ | DeclaredPredicate_ | TypeParameterDeclaration_
   
@@ -492,11 +494,11 @@ trait ParentMaps extends StObject {
   
   var TypeofTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var UnaryExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var UnaryExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var UnionTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var UpdateExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var UpdateExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
   var V8IntrinsicIdentifier: CallExpression_ | NewExpression_
   
@@ -512,7 +514,7 @@ trait ParentMaps extends StObject {
   
   var WithStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var YieldExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+  var YieldExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
 }
 object ParentMaps {
   
@@ -525,7 +527,7 @@ object ParentMaps {
     inline def setArgumentPlaceholder(value: CallExpression_ | NewExpression_ | OptionalCallExpression_): Self = StObject.set(x, "ArgumentPlaceholder", value.asInstanceOf[js.Any])
     
     inline def setArrayExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
     
     inline def setArrayPattern(
@@ -537,11 +539,11 @@ object ParentMaps {
     ): Self = StObject.set(x, "ArrayTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setArrowFunctionExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
     
     inline def setAssignmentExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
     
     inline def setAssignmentPattern(
@@ -549,19 +551,19 @@ object ParentMaps {
     ): Self = StObject.set(x, "AssignmentPattern", value.asInstanceOf[js.Any])
     
     inline def setAwaitExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
     
     inline def setBigIntLiteral(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "BigIntLiteral", value.asInstanceOf[js.Any])
     
     inline def setBinaryExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
     
     inline def setBindExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "BindExpression", value.asInstanceOf[js.Any])
     
     inline def setBlockStatement(
@@ -569,7 +571,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "BlockStatement", value.asInstanceOf[js.Any])
     
     inline def setBooleanLiteral(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "BooleanLiteral", value.asInstanceOf[js.Any])
     
     inline def setBooleanLiteralTypeAnnotation(
@@ -585,7 +587,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "BreakStatement", value.asInstanceOf[js.Any])
     
     inline def setCallExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "CallExpression", value.asInstanceOf[js.Any])
     
     inline def setCatchClause(value: TryStatement_): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
@@ -599,7 +601,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
     
     inline def setClassExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
     
     inline def setClassImplements(
@@ -619,7 +621,7 @@ object ParentMaps {
     inline def setCommentLine(value: File_): Self = StObject.set(x, "CommentLine", value.asInstanceOf[js.Any])
     
     inline def setConditionalExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
     
     inline def setContinueStatement(
@@ -631,7 +633,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
     
     inline def setDecimalLiteral(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "DecimalLiteral", value.asInstanceOf[js.Any])
     
     inline def setDeclareClass(
@@ -687,7 +689,7 @@ object ParentMaps {
     inline def setDirectiveLiteral(value: Directive_): Self = StObject.set(x, "DirectiveLiteral", value.asInstanceOf[js.Any])
     
     inline def setDoExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "DoExpression", value.asInstanceOf[js.Any])
     
     inline def setDoWhileStatement(
@@ -767,7 +769,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
     
     inline def setFunctionExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
     
     inline def setFunctionTypeAnnotation(
@@ -781,7 +783,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "GenericTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setIdentifier(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 123, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 124, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
     ): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     inline def setIfStatement(
@@ -789,7 +791,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
     
     inline def setImport(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "Import", value.asInstanceOf[js.Any])
     
     inline def setImportAttribute(value: ExportAllDeclaration_ | ExportNamedDeclaration_ | ImportDeclaration_): Self = StObject.set(x, "ImportAttribute", value.asInstanceOf[js.Any])
@@ -837,7 +839,7 @@ object ParentMaps {
     inline def setJSXClosingFragment(value: JSXFragment__): Self = StObject.set(x, "JSXClosingFragment", value.asInstanceOf[js.Any])
     
     inline def setJSXElement(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
     
     inline def setJSXEmptyExpression(value: JSXExpressionContainer__): Self = StObject.set(x, "JSXEmptyExpression", value.asInstanceOf[js.Any])
@@ -845,7 +847,7 @@ object ParentMaps {
     inline def setJSXExpressionContainer(value: JSXAttribute__ | JSXElement__ | JSXFragment__): Self = StObject.set(x, "JSXExpressionContainer", value.asInstanceOf[js.Any])
     
     inline def setJSXFragment(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "JSXFragment", value.asInstanceOf[js.Any])
     
     inline def setJSXIdentifier(
@@ -873,15 +875,15 @@ object ParentMaps {
     ): Self = StObject.set(x, "LabeledStatement", value.asInstanceOf[js.Any])
     
     inline def setLogicalExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
     
     inline def setMemberExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
     ): Self = StObject.set(x, "MemberExpression", value.asInstanceOf[js.Any])
     
     inline def setMetaProperty(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
     
     inline def setMixedTypeAnnotation(
@@ -889,11 +891,11 @@ object ParentMaps {
     ): Self = StObject.set(x, "MixedTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setModuleExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "ModuleExpression", value.asInstanceOf[js.Any])
     
     inline def setNewExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "NewExpression", value.asInstanceOf[js.Any])
     
     inline def setNoop(
@@ -901,7 +903,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "Noop", value.asInstanceOf[js.Any])
     
     inline def setNullLiteral(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "NullLiteral", value.asInstanceOf[js.Any])
     
     inline def setNullLiteralTypeAnnotation(
@@ -923,11 +925,11 @@ object ParentMaps {
     ): Self = StObject.set(x, "NumberTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setNumericLiteral(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "NumericLiteral", value.asInstanceOf[js.Any])
     
     inline def setObjectExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
     
     inline def setObjectMethod(value: ObjectExpression_): Self = StObject.set(x, "ObjectMethod", value.asInstanceOf[js.Any])
@@ -957,7 +959,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "OpaqueType", value.asInstanceOf[js.Any])
     
     inline def setOptionalCallExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "OptionalCallExpression", value.asInstanceOf[js.Any])
     
     inline def setOptionalIndexedAccessType(
@@ -965,23 +967,23 @@ object ParentMaps {
     ): Self = StObject.set(x, "OptionalIndexedAccessType", value.asInstanceOf[js.Any])
     
     inline def setOptionalMemberExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "OptionalMemberExpression", value.asInstanceOf[js.Any])
     
     inline def setParenthesizedExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "ParenthesizedExpression", value.asInstanceOf[js.Any])
     
     inline def setPipelineBareFunction(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "PipelineBareFunction", value.asInstanceOf[js.Any])
     
     inline def setPipelinePrimaryTopicReference(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "PipelinePrimaryTopicReference", value.asInstanceOf[js.Any])
     
     inline def setPipelineTopicExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "PipelineTopicExpression", value.asInstanceOf[js.Any])
     
     inline def setPlaceholder(value: Node): Self = StObject.set(x, "Placeholder", value.asInstanceOf[js.Any])
@@ -997,11 +999,11 @@ object ParentMaps {
     ): Self = StObject.set(x, "QualifiedTypeIdentifier", value.asInstanceOf[js.Any])
     
     inline def setRecordExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "RecordExpression", value.asInstanceOf[js.Any])
     
     inline def setRegExpLiteral(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "RegExpLiteral", value.asInstanceOf[js.Any])
     
     inline def setRegexLiteral(value: Null): Self = StObject.set(x, "RegexLiteral", value.asInstanceOf[js.Any])
@@ -1017,7 +1019,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "ReturnStatement", value.asInstanceOf[js.Any])
     
     inline def setSequenceExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
     
     inline def setSpreadElement(
@@ -1029,7 +1031,7 @@ object ParentMaps {
     inline def setStaticBlock(value: ClassBody_): Self = StObject.set(x, "StaticBlock", value.asInstanceOf[js.Any])
     
     inline def setStringLiteral(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 79, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "StringLiteral", value.asInstanceOf[js.Any])
     
     inline def setStringLiteralTypeAnnotation(
@@ -1041,7 +1043,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "StringTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setSuper(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
     
     inline def setSwitchCase(value: SwitchStatement_): Self = StObject.set(x, "SwitchCase", value.asInstanceOf[js.Any])
@@ -1055,35 +1057,35 @@ object ParentMaps {
     ): Self = StObject.set(x, "SymbolTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setTSAnyKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSAnyKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSArrayType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSArrayType", value.asInstanceOf[js.Any])
     
     inline def setTSAsExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
     ): Self = StObject.set(x, "TSAsExpression", value.asInstanceOf[js.Any])
     
     inline def setTSBigIntKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSBigIntKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSBooleanKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSBooleanKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSCallSignatureDeclaration(value: TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSCallSignatureDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSConditionalType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSConditionalType", value.asInstanceOf[js.Any])
     
     inline def setTSConstructSignatureDeclaration(value: TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSConstructSignatureDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSConstructorType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSConstructorType", value.asInstanceOf[js.Any])
     
     inline def setTSDeclareFunction(
@@ -1103,13 +1105,13 @@ object ParentMaps {
     ): Self = StObject.set(x, "TSExportAssignment", value.asInstanceOf[js.Any])
     
     inline def setTSExpressionWithTypeArguments(
-      value: ClassDeclaration_ | ClassExpression_ | TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSInterfaceDeclaration__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: ClassDeclaration_ | ClassExpression_ | TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSInterfaceDeclaration__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSExpressionWithTypeArguments", value.asInstanceOf[js.Any])
     
     inline def setTSExternalModuleReference(value: TSImportEqualsDeclaration__): Self = StObject.set(x, "TSExternalModuleReference", value.asInstanceOf[js.Any])
     
     inline def setTSFunctionType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSFunctionType", value.asInstanceOf[js.Any])
     
     inline def setTSImportEqualsDeclaration(
@@ -1117,21 +1119,21 @@ object ParentMaps {
     ): Self = StObject.set(x, "TSImportEqualsDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSImportType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypeQuery__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypeQuery__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSImportType", value.asInstanceOf[js.Any])
     
     inline def setTSIndexSignature(value: ClassBody_ | TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSIndexSignature", value.asInstanceOf[js.Any])
     
     inline def setTSIndexedAccessType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSIndexedAccessType", value.asInstanceOf[js.Any])
     
     inline def setTSInferType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSInferType", value.asInstanceOf[js.Any])
     
     inline def setTSInstantiationExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "TSInstantiationExpression", value.asInstanceOf[js.Any])
     
     inline def setTSInterfaceBody(value: TSInterfaceDeclaration__): Self = StObject.set(x, "TSInterfaceBody", value.asInstanceOf[js.Any])
@@ -1141,19 +1143,19 @@ object ParentMaps {
     ): Self = StObject.set(x, "TSInterfaceDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSIntersectionType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSIntersectionType", value.asInstanceOf[js.Any])
     
     inline def setTSIntrinsicKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSIntrinsicKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSLiteralType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSLiteralType", value.asInstanceOf[js.Any])
     
     inline def setTSMappedType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSMappedType", value.asInstanceOf[js.Any])
     
     inline def setTSMethodSignature(value: TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSMethodSignature", value.asInstanceOf[js.Any])
@@ -1171,27 +1173,27 @@ object ParentMaps {
     ): Self = StObject.set(x, "TSNamespaceExportDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSNeverKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSNeverKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSNonNullExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
     ): Self = StObject.set(x, "TSNonNullExpression", value.asInstanceOf[js.Any])
     
     inline def setTSNullKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSNullKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSNumberKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSNumberKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSObjectKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSObjectKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSOptionalType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSOptionalType", value.asInstanceOf[js.Any])
     
     inline def setTSParameterProperty(
@@ -1199,7 +1201,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "TSParameterProperty", value.asInstanceOf[js.Any])
     
     inline def setTSParenthesizedType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSParenthesizedType", value.asInstanceOf[js.Any])
     
     inline def setTSPropertySignature(value: TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSPropertySignature", value.asInstanceOf[js.Any])
@@ -1209,23 +1211,27 @@ object ParentMaps {
     ): Self = StObject.set(x, "TSQualifiedName", value.asInstanceOf[js.Any])
     
     inline def setTSRestType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSRestType", value.asInstanceOf[js.Any])
     
+    inline def setTSSatisfiesExpression(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+    ): Self = StObject.set(x, "TSSatisfiesExpression", value.asInstanceOf[js.Any])
+    
     inline def setTSStringKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSStringKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSSymbolKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSSymbolKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSThisType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypePredicate__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypePredicate__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSThisType", value.asInstanceOf[js.Any])
     
     inline def setTSTupleType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTupleType", value.asInstanceOf[js.Any])
     
     inline def setTSTypeAliasDeclaration(
@@ -1237,15 +1243,15 @@ object ParentMaps {
     ): Self = StObject.set(x, "TSTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setTSTypeAssertion(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrayPattern_, typings.babelTypes.libMod.ArrowFunctionExpression_ */ Any
     ): Self = StObject.set(x, "TSTypeAssertion", value.asInstanceOf[js.Any])
     
     inline def setTSTypeLiteral(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypeLiteral", value.asInstanceOf[js.Any])
     
     inline def setTSTypeOperator(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypeOperator", value.asInstanceOf[js.Any])
     
     inline def setTSTypeParameter(value: TSInferType__ | TSMappedType__ | TSTypeParameterDeclaration__): Self = StObject.set(x, "TSTypeParameter", value.asInstanceOf[js.Any])
@@ -1259,45 +1265,45 @@ object ParentMaps {
     ): Self = StObject.set(x, "TSTypeParameterInstantiation", value.asInstanceOf[js.Any])
     
     inline def setTSTypePredicate(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypePredicate", value.asInstanceOf[js.Any])
     
     inline def setTSTypeQuery(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypeQuery", value.asInstanceOf[js.Any])
     
     inline def setTSTypeReference(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypeReference", value.asInstanceOf[js.Any])
     
     inline def setTSUndefinedKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSUndefinedKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSUnionType(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSUnionType", value.asInstanceOf[js.Any])
     
     inline def setTSUnknownKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSUnknownKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSVoidKeyword(
-      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSSatisfiesExpression__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSVoidKeyword", value.asInstanceOf[js.Any])
     
     inline def setTaggedTemplateExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
     
     inline def setTemplateElement(value: TemplateLiteral_): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
     
     inline def setTemplateLiteral(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
     
     inline def setThisExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
     
     inline def setThisTypeAnnotation(
@@ -1309,7 +1315,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
     
     inline def setTopicReference(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "TopicReference", value.asInstanceOf[js.Any])
     
     inline def setTryStatement(
@@ -1317,7 +1323,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
     
     inline def setTupleExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "TupleExpression", value.asInstanceOf[js.Any])
     
     inline def setTupleTypeAnnotation(
@@ -1333,7 +1339,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "TypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setTypeCastExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "TypeCastExpression", value.asInstanceOf[js.Any])
     
     inline def setTypeParameter(value: DeclareExportDeclaration_ | DeclaredPredicate_ | TypeParameterDeclaration_): Self = StObject.set(x, "TypeParameter", value.asInstanceOf[js.Any])
@@ -1351,7 +1357,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "TypeofTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setUnaryExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
     
     inline def setUnionTypeAnnotation(
@@ -1359,7 +1365,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "UnionTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setUpdateExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
     
     inline def setV8IntrinsicIdentifier(value: CallExpression_ | NewExpression_): Self = StObject.set(x, "V8IntrinsicIdentifier", value.asInstanceOf[js.Any])
@@ -1387,7 +1393,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
     
     inline def setYieldExpression(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
     ): Self = StObject.set(x, "YieldExpression", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@babel/types" : "7.19.4"
+      "@babel/types" : "7.20.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@babel/types" : "7.19.4"
+      "@babel/types" : "7.20.0"
     }
   ],
   "compile-devDependencies" : [

@@ -102,6 +102,7 @@ import typings.babelTypes.mod.TSInterfaceDeclaration_
 import typings.babelTypes.mod.TSModuleDeclaration_
 import typings.babelTypes.mod.TSNamespaceExportDeclaration_
 import typings.babelTypes.mod.TSNonNullExpression_
+import typings.babelTypes.mod.TSSatisfiesExpression_
 import typings.babelTypes.mod.TSTypeAliasDeclaration_
 import typings.babelTypes.mod.TSTypeAssertion_
 import typings.babelTypes.mod.TaggedTemplateExpression_
@@ -352,6 +353,8 @@ object linkerBabelSrcAstBabelAstFactoryMod {
     def setSourceMapRange(node: TSNamespaceExportDeclaration_, sourceMapRange: SourceMapRange): TSNamespaceExportDeclaration_ = js.native
     def setSourceMapRange(node: TSNonNullExpression_): TSNonNullExpression_ = js.native
     def setSourceMapRange(node: TSNonNullExpression_, sourceMapRange: SourceMapRange): TSNonNullExpression_ = js.native
+    def setSourceMapRange(node: TSSatisfiesExpression_): TSSatisfiesExpression_ = js.native
+    def setSourceMapRange(node: TSSatisfiesExpression_, sourceMapRange: SourceMapRange): TSSatisfiesExpression_ = js.native
     def setSourceMapRange(node: TSTypeAliasDeclaration_): TSTypeAliasDeclaration_ = js.native
     def setSourceMapRange(node: TSTypeAliasDeclaration_, sourceMapRange: SourceMapRange): TSTypeAliasDeclaration_ = js.native
     def setSourceMapRange(node: TSTypeAssertion_): TSTypeAssertion_ = js.native

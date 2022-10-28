@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-bodyparser"
-version := "4.3-dt-20220908Z-3c5741"
+version := "4.3-dt-20221028Z-a417f8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

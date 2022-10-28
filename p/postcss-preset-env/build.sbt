@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "postcss-preset-env"
-version := "7.7-dt-20220621Z-2e9d42"
+version := "7.7-dt-20220621Z-5513ec"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "autoprefixer" % "10.4.12-e1696c",
+  "org.scalablytyped" %%% "autoprefixer" % "10.4.13-cdaef3",
   "org.scalablytyped" %%% "browserslist" % "4.21.4-9ee0e5",
   "org.scalablytyped" %%% "postcss" % "8.4.18-a78a45",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-fbe867",

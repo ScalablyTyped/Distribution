@@ -28,6 +28,8 @@ trait ColorBgCollapsedButton extends StObject {
   
   var colorTextMenuActive: String
   
+  var colorTextMenuItemHover: String
+  
   var colorTextMenuSecondary: String
   
   var colorTextMenuSelected: String
@@ -57,6 +59,7 @@ object ColorBgCollapsedButton {
     colorTextCollapsedButtonHover: String,
     colorTextMenu: String,
     colorTextMenuActive: String,
+    colorTextMenuItemHover: String,
     colorTextMenuSecondary: String,
     colorTextMenuSelected: String,
     colorTextMenuTitle: String,
@@ -64,7 +67,7 @@ object ColorBgCollapsedButton {
     paddingBlockLayoutMenu: Double,
     paddingInlineLayoutMenu: Double
   ): ColorBgCollapsedButton = {
-    val __obj = js.Dynamic.literal(colorBgCollapsedButton = colorBgCollapsedButton.asInstanceOf[js.Any], colorBgMenuItemCollapsedHover = colorBgMenuItemCollapsedHover.asInstanceOf[js.Any], colorBgMenuItemCollapsedSelected = colorBgMenuItemCollapsedSelected.asInstanceOf[js.Any], colorBgMenuItemHover = colorBgMenuItemHover.asInstanceOf[js.Any], colorBgMenuItemSelected = colorBgMenuItemSelected.asInstanceOf[js.Any], colorMenuBackground = colorMenuBackground.asInstanceOf[js.Any], colorMenuItemDivider = colorMenuItemDivider.asInstanceOf[js.Any], colorTextCollapsedButton = colorTextCollapsedButton.asInstanceOf[js.Any], colorTextCollapsedButtonHover = colorTextCollapsedButtonHover.asInstanceOf[js.Any], colorTextMenu = colorTextMenu.asInstanceOf[js.Any], colorTextMenuActive = colorTextMenuActive.asInstanceOf[js.Any], colorTextMenuSecondary = colorTextMenuSecondary.asInstanceOf[js.Any], colorTextMenuSelected = colorTextMenuSelected.asInstanceOf[js.Any], colorTextMenuTitle = colorTextMenuTitle.asInstanceOf[js.Any], colorTextSubMenuSelected = colorTextSubMenuSelected.asInstanceOf[js.Any], paddingBlockLayoutMenu = paddingBlockLayoutMenu.asInstanceOf[js.Any], paddingInlineLayoutMenu = paddingInlineLayoutMenu.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colorBgCollapsedButton = colorBgCollapsedButton.asInstanceOf[js.Any], colorBgMenuItemCollapsedHover = colorBgMenuItemCollapsedHover.asInstanceOf[js.Any], colorBgMenuItemCollapsedSelected = colorBgMenuItemCollapsedSelected.asInstanceOf[js.Any], colorBgMenuItemHover = colorBgMenuItemHover.asInstanceOf[js.Any], colorBgMenuItemSelected = colorBgMenuItemSelected.asInstanceOf[js.Any], colorMenuBackground = colorMenuBackground.asInstanceOf[js.Any], colorMenuItemDivider = colorMenuItemDivider.asInstanceOf[js.Any], colorTextCollapsedButton = colorTextCollapsedButton.asInstanceOf[js.Any], colorTextCollapsedButtonHover = colorTextCollapsedButtonHover.asInstanceOf[js.Any], colorTextMenu = colorTextMenu.asInstanceOf[js.Any], colorTextMenuActive = colorTextMenuActive.asInstanceOf[js.Any], colorTextMenuItemHover = colorTextMenuItemHover.asInstanceOf[js.Any], colorTextMenuSecondary = colorTextMenuSecondary.asInstanceOf[js.Any], colorTextMenuSelected = colorTextMenuSelected.asInstanceOf[js.Any], colorTextMenuTitle = colorTextMenuTitle.asInstanceOf[js.Any], colorTextSubMenuSelected = colorTextSubMenuSelected.asInstanceOf[js.Any], paddingBlockLayoutMenu = paddingBlockLayoutMenu.asInstanceOf[js.Any], paddingInlineLayoutMenu = paddingInlineLayoutMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorBgCollapsedButton]
   }
   
@@ -91,6 +94,8 @@ object ColorBgCollapsedButton {
     inline def setColorTextMenu(value: String): Self = StObject.set(x, "colorTextMenu", value.asInstanceOf[js.Any])
     
     inline def setColorTextMenuActive(value: String): Self = StObject.set(x, "colorTextMenuActive", value.asInstanceOf[js.Any])
+    
+    inline def setColorTextMenuItemHover(value: String): Self = StObject.set(x, "colorTextMenuItemHover", value.asInstanceOf[js.Any])
     
     inline def setColorTextMenuSecondary(value: String): Self = StObject.set(x, "colorTextMenuSecondary", value.asInstanceOf[js.Any])
     

@@ -227,12 +227,12 @@ trait WAFV2 extends Service {
   ): Request[DisassociateWebACLResponse, AWSError] = js.native
   
   /**
-    * Generates a presigned download URL for the specified release of the mobile SDK. The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage Security Token Service (STS) security tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
+    * Generates a presigned download URL for the specified release of the mobile SDK. The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage WAF tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
     */
   def generateMobileSdkReleaseUrl(): Request[GenerateMobileSdkReleaseUrlResponse, AWSError] = js.native
   def generateMobileSdkReleaseUrl(callback: js.Function2[/* err */ AWSError, /* data */ GenerateMobileSdkReleaseUrlResponse, Unit]): Request[GenerateMobileSdkReleaseUrlResponse, AWSError] = js.native
   /**
-    * Generates a presigned download URL for the specified release of the mobile SDK. The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage Security Token Service (STS) security tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
+    * Generates a presigned download URL for the specified release of the mobile SDK. The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage WAF tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
     */
   def generateMobileSdkReleaseUrl(params: GenerateMobileSdkReleaseUrlRequest): Request[GenerateMobileSdkReleaseUrlResponse, AWSError] = js.native
   def generateMobileSdkReleaseUrl(
@@ -283,12 +283,12 @@ trait WAFV2 extends Service {
   ): Request[GetManagedRuleSetResponse, AWSError] = js.native
   
   /**
-    * Retrieves information for the specified mobile SDK release, including release notes and tags. The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage Security Token Service (STS) security tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
+    * Retrieves information for the specified mobile SDK release, including release notes and tags. The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage WAF tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
     */
   def getMobileSdkRelease(): Request[GetMobileSdkReleaseResponse, AWSError] = js.native
   def getMobileSdkRelease(callback: js.Function2[/* err */ AWSError, /* data */ GetMobileSdkReleaseResponse, Unit]): Request[GetMobileSdkReleaseResponse, AWSError] = js.native
   /**
-    * Retrieves information for the specified mobile SDK release, including release notes and tags. The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage Security Token Service (STS) security tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
+    * Retrieves information for the specified mobile SDK release, including release notes and tags. The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage WAF tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
     */
   def getMobileSdkRelease(params: GetMobileSdkReleaseRequest): Request[GetMobileSdkReleaseResponse, AWSError] = js.native
   def getMobileSdkRelease(
@@ -471,12 +471,12 @@ trait WAFV2 extends Service {
   ): Request[ListManagedRuleSetsResponse, AWSError] = js.native
   
   /**
-    * Retrieves a list of the available releases for the mobile SDK and the specified device platform.  The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage Security Token Service (STS) security tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
+    * Retrieves a list of the available releases for the mobile SDK and the specified device platform.  The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage WAF tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
     */
   def listMobileSdkReleases(): Request[ListMobileSdkReleasesResponse, AWSError] = js.native
   def listMobileSdkReleases(callback: js.Function2[/* err */ AWSError, /* data */ ListMobileSdkReleasesResponse, Unit]): Request[ListMobileSdkReleasesResponse, AWSError] = js.native
   /**
-    * Retrieves a list of the available releases for the mobile SDK and the specified device platform.  The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage Security Token Service (STS) security tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
+    * Retrieves a list of the available releases for the mobile SDK and the specified device platform.  The mobile SDK is not generally available. Customers who have access to the mobile SDK can use it to establish and manage WAF tokens for use in HTTP(S) requests from a mobile device to WAF. For more information, see WAF client application integration in the WAF Developer Guide.
     */
   def listMobileSdkReleases(params: ListMobileSdkReleasesRequest): Request[ListMobileSdkReleasesResponse, AWSError] = js.native
   def listMobileSdkReleases(

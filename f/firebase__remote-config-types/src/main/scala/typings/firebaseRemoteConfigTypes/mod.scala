@@ -50,7 +50,7 @@ object mod {
     def activate(): js.Promise[Boolean]
     
     /**
-      * Object containing default values for conigs.
+      * Object containing default values for configs.
       */
     var defaultConfig: StringDictionary[String | Double | Boolean]
     

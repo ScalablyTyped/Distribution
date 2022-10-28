@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular__localize"
-version := "14.2.7-258ec9"
+version := "14.2.7-882941"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,13 +9,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-598faf",
   "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-82a4d7",
   "org.scalablytyped" %%% "angular__compiler" % "14.2.8-b9651c",
-  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-d7305c",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-580652",
-  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-602e3f",
-  "org.scalablytyped" %%% "babel__parser" % "7.19.6-1f26d3",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-c402ef",
-  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-1aedc0",
-  "org.scalablytyped" %%% "babel__types" % "7.19.4-ea0dd0",
+  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-52a080",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-043aa4",
+  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-bf895e",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.0-6157ab",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-1a1261",
+  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-aa17f1",
+  "org.scalablytyped" %%% "babel__types" % "7.20.0-d18d74",
   "org.scalablytyped" %%% "convert-source-map" % "1.5-dt-20211202Z-ed3b05",
   "org.scalablytyped" %%% "dependency-graph" % "0.11.0-efd2dc",
   "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-09f6eb",

@@ -22,6 +22,16 @@ trait CsvClassifier extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * Enables the custom datatype to be configured.
+    */
+  var CustomDatatypeConfigured: js.UndefOr[NullableBoolean] = js.undefined
+  
+  /**
+    * A list of custom datatypes including "BINARY", "BOOLEAN", "DATE", "DECIMAL", "DOUBLE", "FLOAT", "INT", "LONG", "SHORT", "STRING", "TIMESTAMP".
+    */
+  var CustomDatatypes: js.UndefOr[typings.awsSdk.clientsGlueMod.CustomDatatypes] = js.undefined
+  
+  /**
     * A custom symbol to denote what separates each column entry in the row.
     */
   var Delimiter: js.UndefOr[CsvColumnDelimiter] = js.undefined
@@ -76,6 +86,16 @@ object CsvClassifier {
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    
+    inline def setCustomDatatypeConfigured(value: NullableBoolean): Self = StObject.set(x, "CustomDatatypeConfigured", value.asInstanceOf[js.Any])
+    
+    inline def setCustomDatatypeConfiguredUndefined: Self = StObject.set(x, "CustomDatatypeConfigured", js.undefined)
+    
+    inline def setCustomDatatypes(value: CustomDatatypes): Self = StObject.set(x, "CustomDatatypes", value.asInstanceOf[js.Any])
+    
+    inline def setCustomDatatypesUndefined: Self = StObject.set(x, "CustomDatatypes", js.undefined)
+    
+    inline def setCustomDatatypesVarargs(value: NameString*): Self = StObject.set(x, "CustomDatatypes", js.Array(value*))
     
     inline def setDelimiter(value: CsvColumnDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     

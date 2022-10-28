@@ -14,8 +14,8 @@ trait Cn extends StObject {
   
   var databaseId: Any = js.native
   
-  var ignoreUndefinedProperties: Any = js.native
+  /** Creates a new top-level parse context. */ def dt(t: Any, e: Any, n: Any): kn = js.native
+  def dt(t: Any, e: Any, n: Any, r: Boolean): kn = js.native
   
-  /** Creates a new top-level parse context. */ def wt(t: Any, e: Any, n: Any): kn = js.native
-  def wt(t: Any, e: Any, n: Any, r: Boolean): kn = js.native
+  var ignoreUndefinedProperties: Any = js.native
 }

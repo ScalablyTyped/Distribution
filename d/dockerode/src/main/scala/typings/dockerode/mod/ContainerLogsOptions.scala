@@ -13,7 +13,7 @@ trait ContainerLogsOptions extends StObject {
   
   var follow: js.UndefOr[Boolean] = js.undefined
   
-  var since: js.UndefOr[Double] = js.undefined
+  var since: js.UndefOr[Double | String] = js.undefined
   
   var stderr: js.UndefOr[Boolean] = js.undefined
   
@@ -22,6 +22,8 @@ trait ContainerLogsOptions extends StObject {
   var tail: js.UndefOr[Double] = js.undefined
   
   var timestamps: js.UndefOr[Boolean] = js.undefined
+  
+  var until: js.UndefOr[Double | String] = js.undefined
 }
 object ContainerLogsOptions {
   
@@ -44,7 +46,7 @@ object ContainerLogsOptions {
     
     inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
-    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: Double | String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
@@ -63,5 +65,9 @@ object ContainerLogsOptions {
     inline def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
     inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+    
+    inline def setUntil(value: Double | String): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+    
+    inline def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
   }
 }

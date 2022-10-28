@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__line"
-version := "0.80.0-f77897"
+version := "0.80.0-0406ab"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,14 +11,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-scale" % "4.0-dt-20220624Z-729417",
   "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20220624Z-f5f0fe",
   "org.scalablytyped" %%% "d3-time" % "3.0-dt-20211202Z-7d17be",
-  "org.scalablytyped" %%% "nivo__axes" % "0.80.0-93b04c",
-  "org.scalablytyped" %%% "nivo__colors" % "0.80.0-b07d29",
-  "org.scalablytyped" %%% "nivo__core" % "0.80.0-e973ce",
-  "org.scalablytyped" %%% "nivo__legends" % "0.80.0-573e59",
+  "org.scalablytyped" %%% "nivo__axes" % "0.80.0-65bb4f",
+  "org.scalablytyped" %%% "nivo__colors" % "0.80.0-315dbd",
+  "org.scalablytyped" %%% "nivo__core" % "0.80.0-d160d5",
+  "org.scalablytyped" %%% "nivo__legends" % "0.80.0-94ee14",
   "org.scalablytyped" %%% "nivo__scales" % "0.80.0-69b4b2",
-  "org.scalablytyped" %%% "nivo__tooltip" % "0.80.0-6ebba6",
+  "org.scalablytyped" %%% "nivo__tooltip" % "0.80.0-88ea48",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

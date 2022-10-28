@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "wix-ui-test-utils"
-version := "1.0.191-388ee1"
+version := "1.0.191-d203a1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "blocking-proxy" % "1.0.1-f518e7",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-3c844b",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-a99f73",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "protractor" % "7.0.0-34b549",
   "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-96a756",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
-  "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221024Z-bf50fa",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221027Z-34f203",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221018Z-c4ad2a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",

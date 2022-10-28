@@ -225,6 +225,32 @@ object libPlatformWebSessionManagerSessionManagerMod {
     
     /* private */ var options: Any = js.native
     
+    /* private */ var optionsPingFailure: Any = js.native
+    
+    /* private */ var optionsPingRequest: Any = js.native
+    
+    /**
+      * Periodically send OPTIONS pings and disconnect when a ping fails.
+      * @param requestURI - Request URI to target
+      * @param fromURI - From URI
+      * @param toURI - To URI
+      */
+    /* private */ var optionsPingRun: Any = js.native
+    
+    /* private */ var optionsPingRunning: Any = js.native
+    
+    /**
+      * Start sending OPTIONS pings.
+      */
+    /* private */ var optionsPingStart: Any = js.native
+    
+    /**
+      * Stop sending OPTIONS pings.
+      */
+    /* private */ var optionsPingStop: Any = js.native
+    
+    /* private */ var optionsPingTimeout: Any = js.native
+    
     /**
       * Start receiving incoming calls.
       * @remarks

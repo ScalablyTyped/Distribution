@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-guard"
-version := "2.3-dt-20220623Z-5ba4ff"
+version := "2.3-dt-20220623Z-8ba319"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "history" % "5.3.0-95787a",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
-  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20211202Z-618ccd",
-  "org.scalablytyped" %%% "react-router" % "6.4.2-a03018",
-  "org.scalablytyped" %%% "react-router-dom" % "6.4.2-7db53c",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20211202Z-fce401",
+  "org.scalablytyped" %%% "react-router" % "6.4.2-6442a2",
+  "org.scalablytyped" %%% "react-router-dom" % "6.4.2-75f7fc",
   "org.scalablytyped" %%% "remix-run__router" % "1.0.2-119df3",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

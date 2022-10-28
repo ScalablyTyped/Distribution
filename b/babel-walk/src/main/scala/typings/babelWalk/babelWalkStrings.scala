@@ -979,6 +979,10 @@ object babelWalkStrings {
   inline def TSRestType: TSRestType = "TSRestType".asInstanceOf[TSRestType]
   
   @js.native
+  sealed trait TSSatisfiesExpression extends StObject
+  inline def TSSatisfiesExpression: TSSatisfiesExpression = "TSSatisfiesExpression".asInstanceOf[TSSatisfiesExpression]
+  
+  @js.native
   sealed trait TSStringKeyword extends StObject
   inline def TSStringKeyword: TSStringKeyword = "TSStringKeyword".asInstanceOf[TSStringKeyword]
   

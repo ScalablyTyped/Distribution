@@ -800,6 +800,9 @@ object mod {
     
     /**
       * Use gtag 'config' command to set 'screen_name'.
+      *
+      * @deprecated Use {@link logEvent} with `eventName` as 'screen_view' and add relevant `eventParams`.
+      * See {@link https://firebase.google.com/docs/analytics/screenviews | Track Screenviews}.
       */
     def setCurrentScreen(screenName: String): Unit = js.native
     def setCurrentScreen(screenName: String, options: AnalyticsCallOptions): Unit = js.native

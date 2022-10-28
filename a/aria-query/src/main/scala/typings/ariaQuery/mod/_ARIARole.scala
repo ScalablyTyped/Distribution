@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait _ARIARole
   extends StObject
-     with _ARIARoleDefintionKey
+     with _ARIARoleDefinitionKey

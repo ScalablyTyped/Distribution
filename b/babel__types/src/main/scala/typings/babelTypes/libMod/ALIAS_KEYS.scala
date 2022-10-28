@@ -1264,6 +1264,11 @@ object ALIAS_KEYS {
   def TSRestType: js.UndefOr[js.Array[String]] = js.native
   inline def TSRestType_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TSRestType")(x.asInstanceOf[js.Any])
   
+  @JSImport("@babel/types/lib", "ALIAS_KEYS.TSSatisfiesExpression")
+  @js.native
+  def TSSatisfiesExpression: js.UndefOr[js.Array[String]] = js.native
+  inline def TSSatisfiesExpression_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TSSatisfiesExpression")(x.asInstanceOf[js.Any])
+  
   @JSImport("@babel/types/lib", "ALIAS_KEYS.TSStringKeyword")
   @js.native
   def TSStringKeyword: js.UndefOr[js.Array[String]] = js.native

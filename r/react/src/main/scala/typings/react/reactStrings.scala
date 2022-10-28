@@ -1,6 +1,7 @@
 package typings.react
 
 import typings.react.mod.HTMLAttributeReferrerPolicy
+import typings.react.mod.ModifierKey
 import typings.react.mod.SuspenseListRevealOrder
 import typings.react.mod.SuspenseListTailMode
 import typings.react.mod._AriaRole
@@ -21,8 +22,92 @@ object reactStrings {
   inline def A: A = "A".asInstanceOf[A]
   
   @js.native
+  sealed trait Alt
+    extends StObject
+       with ModifierKey
+  inline def Alt: Alt = "Alt".asInstanceOf[Alt]
+  
+  @js.native
+  sealed trait AltGraph
+    extends StObject
+       with ModifierKey
+  inline def AltGraph: AltGraph = "AltGraph".asInstanceOf[AltGraph]
+  
+  @js.native
+  sealed trait CapsLock
+    extends StObject
+       with ModifierKey
+  inline def CapsLock: CapsLock = "CapsLock".asInstanceOf[CapsLock]
+  
+  @js.native
+  sealed trait Control
+    extends StObject
+       with ModifierKey
+  inline def Control: Control = "Control".asInstanceOf[Control]
+  
+  @js.native
+  sealed trait Fn
+    extends StObject
+       with ModifierKey
+  inline def Fn: Fn = "Fn".asInstanceOf[Fn]
+  
+  @js.native
+  sealed trait FnLock
+    extends StObject
+       with ModifierKey
+  inline def FnLock: FnLock = "FnLock".asInstanceOf[FnLock]
+  
+  @js.native
+  sealed trait Hyper
+    extends StObject
+       with ModifierKey
+  inline def Hyper: Hyper = "Hyper".asInstanceOf[Hyper]
+  
+  @js.native
   sealed trait I extends StObject
   inline def I: I = "I".asInstanceOf[I]
+  
+  @js.native
+  sealed trait Meta
+    extends StObject
+       with ModifierKey
+  inline def Meta: Meta = "Meta".asInstanceOf[Meta]
+  
+  @js.native
+  sealed trait NumLock
+    extends StObject
+       with ModifierKey
+  inline def NumLock: NumLock = "NumLock".asInstanceOf[NumLock]
+  
+  @js.native
+  sealed trait ScrollLock
+    extends StObject
+       with ModifierKey
+  inline def ScrollLock: ScrollLock = "ScrollLock".asInstanceOf[ScrollLock]
+  
+  @js.native
+  sealed trait Shift
+    extends StObject
+       with ModifierKey
+  inline def Shift: Shift = "Shift".asInstanceOf[Shift]
+  
+  @js.native
+  sealed trait Super
+    extends StObject
+       with ModifierKey
+  inline def Super: Super = "Super".asInstanceOf[Super]
+  
+  @js.native
+  sealed trait Symbol
+    extends StObject
+       with ModifierKey
+  inline def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
+  
+  @js.native
+  sealed trait SymbolLock
+    extends StObject
+       with ModifierKey
+  inline def SymbolLock: SymbolLock = "SymbolLock".asInstanceOf[SymbolLock]
   
   @js.native
   sealed trait _blank
@@ -920,8 +1005,8 @@ object reactStrings {
   inline def menuitemradio: menuitemradio = "menuitemradio".asInstanceOf[menuitemradio]
   
   @js.native
-  sealed trait meta extends StObject
-  inline def meta: meta = "meta".asInstanceOf[meta]
+  sealed trait meta_ extends StObject
+  inline def meta_ : meta_ = "meta".asInstanceOf[meta_]
   
   @js.native
   sealed trait metadata extends StObject
@@ -1420,8 +1505,8 @@ object reactStrings {
   inline def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
-  sealed trait symbol extends StObject
-  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  sealed trait symbol_ extends StObject
+  inline def symbol_ : symbol_ = "symbol".asInstanceOf[symbol_]
   
   @js.native
   sealed trait sync extends StObject

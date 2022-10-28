@@ -47,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait ARIADPubRole
   extends StObject
-     with _ARIARoleDefintionKey
+     with _ARIARoleDefinitionKey
 object ARIADPubRole {
   
   inline def `doc-abstract`: typings.ariaQuery.ariaQueryStrings.`doc-abstract` = "doc-abstract".asInstanceOf[typings.ariaQuery.ariaQueryStrings.`doc-abstract`]

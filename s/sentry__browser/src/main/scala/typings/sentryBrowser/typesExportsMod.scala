@@ -42,8 +42,10 @@ import typings.sentryTypes.typesTransportMod.Transport
 import typings.sentryTypes.typesTransportMod.TransportRequestExecutor
 import typings.sentryTypes.typesUserMod.User
 import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
+import typings.sentryUtils.typesWorldwideMod.InternalGlobal
 import typings.std.PromiseLike
 import typings.std.ReturnType
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -248,7 +250,7 @@ object typesExportsMod {
   
   @JSImport("@sentry/browser/types/exports", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.16.0" */ String = js.native
+  val SDK_VERSION: /* "7.17.1" */ String = js.native
   
   @JSImport("@sentry/browser/types/exports", "Scope")
   @js.native
@@ -308,6 +310,10 @@ object typesExportsMod {
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("@sentry/browser/types/exports", "WINDOW")
+  @js.native
+  val WINDOW: InternalGlobal & Window = js.native
   
   inline def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("addBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
   

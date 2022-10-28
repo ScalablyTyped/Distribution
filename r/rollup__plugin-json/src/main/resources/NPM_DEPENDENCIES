@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@rollup/plugin-json" : "4.1.0"
+      "@rollup/plugin-json" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@rollup/plugin-json" : "4.1.0"
+      "@rollup/plugin-json" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

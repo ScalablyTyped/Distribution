@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-xray-node"
-version := "0.1.0-preview.2-e1b9f8"
+version := "0.1.0-preview.2-76bd5d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.197.0-ef10cd",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.198.0-a78f65",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

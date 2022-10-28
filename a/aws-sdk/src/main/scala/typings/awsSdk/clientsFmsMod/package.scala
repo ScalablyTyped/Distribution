@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsFmsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.DROP_TO_ALERT
 import typings.awsSdk.awsSdkStrings.PALO_ALTO_NETWORKS_CLOUD_NGFW
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -111,6 +112,8 @@ type MemberAccounts = js.Array[AWSAccountId]
 type NetworkFirewallAction = String
 
 type NetworkFirewallActionList = js.Array[NetworkFirewallAction]
+
+type NetworkFirewallOverrideAction = DROP_TO_ALERT | String
 
 type NetworkFirewallResourceName = String
 

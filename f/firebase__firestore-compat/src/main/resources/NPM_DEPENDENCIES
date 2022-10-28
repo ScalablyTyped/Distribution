@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/firestore-compat" : "0.2.1"
+      "@firebase/firestore-compat" : "0.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/firestore-compat" : "0.2.1"
+      "@firebase/firestore-compat" : "0.2.2"
     }
   ],
   "compile-devDependencies" : [

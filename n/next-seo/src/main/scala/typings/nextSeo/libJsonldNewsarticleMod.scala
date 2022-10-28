@@ -32,6 +32,8 @@ object libJsonldNewsarticleMod {
     
     var images: js.Array[String]
     
+    var isAccessibleForFree: js.UndefOr[Boolean] = js.undefined
+    
     var keywords: String
     
     var publisherLogo: String
@@ -85,6 +87,10 @@ object libJsonldNewsarticleMod {
       inline def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value*))
+      
+      inline def setIsAccessibleForFree(value: Boolean): Self = StObject.set(x, "isAccessibleForFree", value.asInstanceOf[js.Any])
+      
+      inline def setIsAccessibleForFreeUndefined: Self = StObject.set(x, "isAccessibleForFree", js.undefined)
       
       inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       

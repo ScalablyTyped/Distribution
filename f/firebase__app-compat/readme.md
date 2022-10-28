@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__app-compat
 
-Typings are for version 0.1.37
+Typings are for version 0.1.38
 
 ## Library description:
 The primary entrypoint to the Firebase JS SDK

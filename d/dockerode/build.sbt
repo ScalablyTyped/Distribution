@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dockerode"
-version := "3.3-dt-20220930Z-25d855"
+version := "3.3-dt-20221027Z-5ef9a0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

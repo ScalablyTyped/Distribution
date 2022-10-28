@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__analytics-compat
 
-Typings are for version 0.1.16
+Typings are for version 0.1.17
 
 ## Library description:
 This is the compatibility layer for the Firebase Analytics component of the Firebase JS SDK.

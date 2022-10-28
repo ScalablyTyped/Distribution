@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__app-check-interop-types"
-version := "0.1.0-491896"
+version := "0.1.1-e847c1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

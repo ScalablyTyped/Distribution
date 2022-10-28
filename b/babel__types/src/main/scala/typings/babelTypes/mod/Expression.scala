@@ -86,6 +86,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.mod.PipelinePrimaryTopicReference_
   - typings.babelTypes.mod.TSInstantiationExpression_
   - typings.babelTypes.mod.TSAsExpression_
+  - typings.babelTypes.mod.TSSatisfiesExpression_
   - typings.babelTypes.mod.TSTypeAssertion_
   - typings.babelTypes.mod.TSNonNullExpression_
 */
@@ -379,6 +380,12 @@ object Expression {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSNonNullExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.TSNonNullExpression_]
+  }
+  
+  inline def TSSatisfiesExpression_(expression: Expression, typeAnnotation: TSType): typings.babelTypes.mod.TSSatisfiesExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSSatisfiesExpression")
+    __obj.asInstanceOf[typings.babelTypes.mod.TSSatisfiesExpression_]
   }
   
   inline def TSTypeAssertion_(expression: Expression, typeAnnotation: TSType): typings.babelTypes.mod.TSTypeAssertion_ = {

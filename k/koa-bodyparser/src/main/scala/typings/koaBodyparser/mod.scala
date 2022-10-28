@@ -5,7 +5,6 @@ import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import typings.koaBodyparser.anon.Form
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,8 +129,8 @@ object mod {
     
     trait Request extends StObject {
       
-      // any declaration breaks types intellisense and type safety, keep it at least Record<string, unknown>
-      var body: js.UndefOr[Record[String, Any]] = js.undefined
+      // Fix #62921
+      var body: js.UndefOr[Any] = js.undefined
       
       var rawBody: String
     }
@@ -144,7 +143,7 @@ object mod {
       
       extension [Self <: Request](x: Self) {
         
-        inline def setBody(value: Record[String, Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
         inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         

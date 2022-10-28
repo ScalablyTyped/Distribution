@@ -21,7 +21,12 @@ trait Configuration extends StObject {
   @JSName("get")
   def get_string(key: String, coerce: string): String | Null = js.native
   
-  def observe[T](key: String, callback: js.Function2[/* newValue */ T, /* oldValue */ T, Unit]): Disposable = js.native
+  def observe[T, K](key: String, callback: js.ThisFunction2[/* this */ K, /* newValue */ T, /* oldValue */ T, Unit]): Disposable = js.native
+  def observe[T, K](
+    key: String,
+    callback: js.ThisFunction2[/* this */ K, /* newValue */ T, /* oldValue */ T, Unit],
+    thisValue: K
+  ): Disposable = js.native
   
   def onDidChange[T](key: String, callback: js.Function2[/* newValue */ T, /* oldValue */ T, Unit]): Disposable = js.native
   

@@ -1467,6 +1467,12 @@ object babelTraverseStrings {
   inline def TSRestType: TSRestType = "TSRestType".asInstanceOf[TSRestType]
   
   @js.native
+  sealed trait TSSatisfiesExpression
+    extends StObject
+       with NodeType
+  inline def TSSatisfiesExpression: TSSatisfiesExpression = "TSSatisfiesExpression".asInstanceOf[TSSatisfiesExpression]
+  
+  @js.native
   sealed trait TSStringKeyword
     extends StObject
        with NodeType

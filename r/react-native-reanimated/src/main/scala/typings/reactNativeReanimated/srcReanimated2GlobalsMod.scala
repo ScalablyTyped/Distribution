@@ -3,6 +3,7 @@ package typings.reactNativeReanimated
 import typings.reactNativeReanimated.anon.Configs
 import typings.reactNativeReanimated.anon.Now
 import typings.reactNativeReanimated.anon.Value
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object srcReanimated2GlobalsMod {
   
   object global {
+    
+    object LayoutAnimationRepository {
+      
+      @JSGlobal("LayoutAnimationRepository")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("LayoutAnimationRepository.configs")
+      @js.native
+      def configs: Record[String, Any] = js.native
+      inline def configs_=(x: Record[String, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configs")(x.asInstanceOf[js.Any])
+      
+      inline def registerConfig(tag: Double, config: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerConfig")(tag.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def removeConfig(tag: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConfig")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def startAnimationForTag(tag: Double, `type`: String, yogaValues: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startAnimationForTag")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], yogaValues.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    }
     
     object ReanimatedDataMock {
       
@@ -36,11 +55,26 @@ object srcReanimated2GlobalsMod {
     
     @JSGlobal("_frameTimestamp")
     @js.native
-    val frameTimestamp: Double = js.native
+    val frameTimestamp: Double | Null = js.native
     
     inline def getCurrentTime(): Double = js.Dynamic.global.applyDynamic("_getCurrentTime")().asInstanceOf[Double]
     
-    inline def measure(viewTag: Double): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MeasuredDimensions */ Any) | Null = js.Dynamic.global.applyDynamic("_measure")(viewTag.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MeasuredDimensions */ Any) | Null]
+    inline def log(s: String): Unit = js.Dynamic.global.applyDynamic("_log")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def measure(viewTag: Double): Any = js.Dynamic.global.applyDynamic("_measure")(viewTag.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    object performance {
+      
+      @JSGlobal("performance")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+    }
+    
+    @JSGlobal("__reanimatedModuleProxy")
+    @js.native
+    val reanimatedModuleProxy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NativeReanimated */ Any = js.native
     
     inline def scrollTo(viewTag: Double, x: Double, y: Double, animated: Boolean): Unit = (js.Dynamic.global.applyDynamic("_scrollTo")(viewTag.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animated.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -70,28 +104,38 @@ object srcReanimated2GlobalsMod {
         
         var ReanimatedDataMock: Now = js.native
         
+        var _IS_FABRIC: Boolean = js.native
+        
         var _WORKLET: Boolean = js.native
         
         var __reanimatedModuleProxy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NativeReanimated */ Any = js.native
         
         def _chronoNow(): Double = js.native
         
+        var _eventTimestamp: Double = js.native
+        
         var _frameCallbackRegistry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FrameCallbackRegistryUI */ Any = js.native
         
         var _frameTimestamp: Double | Null = js.native
         
+        def _getCurrentTime(): Double = js.native
+        
         def _log(s: String): Unit = js.native
         
-        def _measure(): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MeasuredDimensions */ Any) | Null = js.native
+        def _measure(viewTag: Double): Any = js.native
         
-        def _scrollTo(): Unit = js.native
+        def _scrollTo(viewTag: Double, x: Double, y: Double, animated: Boolean): Unit = js.native
         
-        def _setGestureState(): Unit = js.native
+        def _setGestureState(handlerTag: Double, newState: Double): Unit = js.native
         
         def _setGlobalConsole(): Unit = js.native
         def _setGlobalConsole(
           console: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReanimatedConsole */ Any
         ): Unit = js.native
+        
+        def _startObservingProgress(tag: Double, flag: Value): Unit = js.native
+        
+        def _stopObservingProgress(tag: Double, flag: Boolean): Unit = js.native
         
         var performance: Now = js.native
       }

@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "material-ui__icons"
-version := "4.11.3-ff0ba0"
+version := "4.11.3-add2a0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-3c844b",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-a99f73",
   "org.scalablytyped" %%% "jss" % "10.9.2-430df5",
-  "org.scalablytyped" %%% "material-ui__core" % "4.12.4-0495c2",
-  "org.scalablytyped" %%% "material-ui__styles" % "4.11.5-bbf66c",
-  "org.scalablytyped" %%% "material-ui__system" % "4.12.2-da4f24",
-  "org.scalablytyped" %%% "material-ui__types" % "5.1.0-97e1ba",
+  "org.scalablytyped" %%% "material-ui__core" % "4.12.4-d4b663",
+  "org.scalablytyped" %%% "material-ui__styles" % "4.11.5-f3f879",
+  "org.scalablytyped" %%% "material-ui__system" % "4.12.2-e7ad33",
+  "org.scalablytyped" %%% "material-ui__types" % "5.1.0-b93cae",
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.1-833116",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

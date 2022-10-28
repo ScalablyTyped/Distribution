@@ -34,19 +34,19 @@ object mod extends Shortcut {
   @js.native
   trait MousetrapInstance extends StObject {
     
-    def bind(keys: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Any]): this.type = js.native
+    def bind(keys: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit]): this.type = js.native
     def bind(
       keys: String,
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Any],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit],
       action: String
     ): this.type = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Any]
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit]
     ): this.type = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Any],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit],
       action: String
     ): this.type = js.native
     
@@ -80,19 +80,19 @@ object mod extends Shortcut {
     
     def addKeycodes(keycodes: NumberDictionary[String]): Unit = js.native
     
-    def bind(keys: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Any]): MousetrapInstance = js.native
+    def bind(keys: String, callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit]): MousetrapInstance = js.native
     def bind(
       keys: String,
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Any],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit],
       action: String
     ): MousetrapInstance = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Any]
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit]
     ): MousetrapInstance = js.native
     def bind(
       keys: js.Array[String],
-      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Any],
+      callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ String, Unit],
       action: String
     ): MousetrapInstance = js.native
     

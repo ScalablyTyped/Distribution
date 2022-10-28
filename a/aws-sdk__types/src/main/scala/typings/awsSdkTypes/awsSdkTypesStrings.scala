@@ -55,6 +55,12 @@ object awsSdkTypesStrings {
   inline def client: client = "client".asInstanceOf[client]
   
   @js.native
+  sealed trait debug
+    extends StObject
+       with LogLevel
+  inline def debug: debug = "debug".asInstanceOf[debug]
+  
+  @js.native
   sealed trait deserialize
     extends StObject
        with Step
@@ -155,6 +161,12 @@ object awsSdkTypesStrings {
   @js.native
   sealed trait timestamp extends StObject
   inline def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
+  
+  @js.native
+  sealed trait trace
+    extends StObject
+       with LogLevel
+  inline def trace: trace = "trace".asInstanceOf[trace]
   
   @js.native
   sealed trait utf8 extends StObject

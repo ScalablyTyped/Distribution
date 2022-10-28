@@ -8,6 +8,8 @@ object distTypesLoggerMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkTypes.awsSdkTypesStrings.all
+    - typings.awsSdkTypes.awsSdkTypesStrings.trace
+    - typings.awsSdkTypes.awsSdkTypesStrings.debug
     - typings.awsSdkTypes.awsSdkTypesStrings.log
     - typings.awsSdkTypes.awsSdkTypesStrings.info
     - typings.awsSdkTypes.awsSdkTypesStrings.warn
@@ -19,6 +21,8 @@ object distTypesLoggerMod {
     
     inline def all: typings.awsSdkTypes.awsSdkTypesStrings.all = "all".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.all]
     
+    inline def debug: typings.awsSdkTypes.awsSdkTypesStrings.debug = "debug".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.debug]
+    
     inline def error: typings.awsSdkTypes.awsSdkTypesStrings.error = "error".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.error]
     
     inline def info: typings.awsSdkTypes.awsSdkTypesStrings.info = "info".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.info]
@@ -26,6 +30,8 @@ object distTypesLoggerMod {
     inline def log: typings.awsSdkTypes.awsSdkTypesStrings.log = "log".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.log]
     
     inline def off: typings.awsSdkTypes.awsSdkTypesStrings.off = "off".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.off]
+    
+    inline def trace: typings.awsSdkTypes.awsSdkTypesStrings.trace = "trace".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.trace]
     
     inline def warn: typings.awsSdkTypes.awsSdkTypesStrings.warn = "warn".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.warn]
   }
@@ -37,6 +43,8 @@ object distTypesLoggerMod {
     def error(content: Any*): Unit
     
     def info(content: Any*): Unit
+    
+    var trace: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     def warn(content: Any*): Unit
   }
@@ -59,6 +67,10 @@ object distTypesLoggerMod {
       inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setInfo(value: /* repeated */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      
+      inline def setTrace(value: /* repeated */ Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      
+      inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
       
       inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }

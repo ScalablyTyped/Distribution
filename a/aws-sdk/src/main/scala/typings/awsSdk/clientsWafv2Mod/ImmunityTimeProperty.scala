@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImmunityTimeProperty extends StObject {
   
   /**
-    * The amount of time, in seconds, that a CAPTCHA token is valid. The default setting is 300.
+    * The amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by WAF. The default setting is 300.  For the Challenge action, the minimum setting is 300. 
     */
   var ImmunityTime: TimeWindowSecond
 }

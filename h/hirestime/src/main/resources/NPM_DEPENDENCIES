@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hirestime" : "7.0.1"
+      "hirestime" : "7.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "hirestime" : "7.0.1"
+      "hirestime" : "7.0.3"
     }
   ],
   "compile-devDependencies" : [

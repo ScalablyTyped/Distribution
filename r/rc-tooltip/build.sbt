@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "rc-tooltip"
-version := "5.2.2-35f9e0"
+version := "5.2.2-9f1990"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "rc-motion" % "2.6.2-01019c",
-  "org.scalablytyped" %%% "rc-trigger" % "5.3.1-b8cbe0",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
+  "org.scalablytyped" %%% "rc-motion" % "2.6.2-206876",
+  "org.scalablytyped" %%% "rc-trigger" % "5.3.1-b6b286",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

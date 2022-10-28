@@ -12,12 +12,12 @@ trait zn
   
   def isEqual(t: Any): Boolean
   
-  var yt: Any
+  var wt: Any
 }
 object zn {
   
-  inline def apply(_methodName: Any, _toFieldTransform: Any => Pe, isEqual: Any => Boolean, yt: Any): zn = {
-    val __obj = js.Dynamic.literal(_methodName = _methodName.asInstanceOf[js.Any], _toFieldTransform = js.Any.fromFunction1(_toFieldTransform), isEqual = js.Any.fromFunction1(isEqual), yt = yt.asInstanceOf[js.Any])
+  inline def apply(_methodName: Any, _toFieldTransform: Any => Pe, isEqual: Any => Boolean, wt: Any): zn = {
+    val __obj = js.Dynamic.literal(_methodName = _methodName.asInstanceOf[js.Any], _toFieldTransform = js.Any.fromFunction1(_toFieldTransform), isEqual = js.Any.fromFunction1(isEqual), wt = wt.asInstanceOf[js.Any])
     __obj.asInstanceOf[zn]
   }
   
@@ -25,7 +25,7 @@ object zn {
     
     inline def setIsEqual(value: Any => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    inline def setYt(value: Any): Self = StObject.set(x, "yt", value.asInstanceOf[js.Any])
+    inline def setWt(value: Any): Self = StObject.set(x, "wt", value.asInstanceOf[js.Any])
     
     inline def set_toFieldTransform(value: Any => Pe): Self = StObject.set(x, "_toFieldTransform", js.Any.fromFunction1(value))
   }

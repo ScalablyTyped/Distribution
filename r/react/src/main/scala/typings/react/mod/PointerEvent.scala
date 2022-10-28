@@ -47,7 +47,7 @@ object PointerEvent {
     defaultPrevented: Boolean,
     detail: Double,
     eventPhase: Double,
-    getModifierState: String => Boolean,
+    getModifierState: ModifierKey => Boolean,
     height: Double,
     isDefaultPrevented: () => Boolean,
     isPrimary: Boolean,

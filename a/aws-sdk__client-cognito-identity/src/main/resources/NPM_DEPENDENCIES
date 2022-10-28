@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/client-cognito-identity" : "3.197.0"
+      "@aws-sdk/client-cognito-identity" : "3.198.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/client-cognito-identity" : "3.197.0"
+      "@aws-sdk/client-cognito-identity" : "3.198.0"
     }
   ],
   "compile-devDependencies" : [

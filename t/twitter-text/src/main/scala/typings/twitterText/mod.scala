@@ -32,6 +32,9 @@ object mod {
   inline def autoLinkUsernamesOrLists(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUsernamesOrLists")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def autoLinkUsernamesOrLists(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUsernamesOrLists")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  inline def autoLinkWithJSON(text: String, json: StringDictionary[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkWithJSON")(text.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def autoLinkWithJSON(text: String, json: StringDictionary[Any], options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkWithJSON")(text.asInstanceOf[js.Any], json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   inline def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnicodeIndices")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices], indicesInUTF16: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnicodeIndices")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any], indicesInUTF16.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -44,6 +47,8 @@ object mod {
   inline def extractHashtags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHashtags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def extractHashtagsWithIndices(text: String): js.Array[HashtagWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHashtagsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[HashtagWithIndices]]
+  
+  inline def extractHtmlAttrsFromOptions(options: HtmlAttributes): HtmlAttributes = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHtmlAttrsFromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[HtmlAttributes]
   
   inline def extractMentions(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentions")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
@@ -72,15 +77,46 @@ object mod {
   
   inline def htmlEscape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlEscape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def isInvalidTweet(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isInvalidTweet")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def isInvalidTweet(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInvalidTweet")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInvalidTweet(text: String, options: ParseTweetOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInvalidTweet")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isValidHashtag(hashtag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHashtag")(hashtag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isValidList(usernameList: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidList")(usernameList.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def isValidTweet(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidTweet")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidTweet(text: String, options: ParseTweetOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidTweet")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def isValidUrl(url: String, unicodeDomains: Boolean, requireProtocol: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidUrl")(url.asInstanceOf[js.Any], unicodeDomains.asInstanceOf[js.Any], requireProtocol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isValidUsername(username: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUsername")(username.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def linkTextWithEntity(entity: UrlEntity): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkTextWithEntity")(entity.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def linkTextWithEntity(entity: UrlEntity, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkTextWithEntity")(entity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def linkToCashtag(entity: EntityWithIndices, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToCashtag")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def linkToCashtag(entity: EntityWithIndices, text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToCashtag")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def linkToHashtag(entity: EntityWithIndices, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToHashtag")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def linkToHashtag(entity: EntityWithIndices, text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToHashtag")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def linkToMentionAndList(entity: EntityWithIndices, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToMentionAndList")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def linkToMentionAndList(entity: EntityWithIndices, text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToMentionAndList")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def linkToText(entity: EntityWithIndices, text: String, attributes: HtmlAttributes): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToText")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def linkToText(entity: EntityWithIndices, text: String, attributes: HtmlAttributes, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToText")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def linkToTextWithSymbol(entity: EntityWithIndices, symbol: String, text: String, attributes: HtmlAttributes): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToTextWithSymbol")(entity.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def linkToTextWithSymbol(
+    entity: EntityWithIndices,
+    symbol: String,
+    text: String,
+    attributes: HtmlAttributes,
+    options: AutoLinkOptions
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToTextWithSymbol")(entity.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def linkToUrl(entity: EntityWithIndices, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToUrl")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def linkToUrl(entity: EntityWithIndices, text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("linkToUrl")(entity.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def modifyIndicesFromUTF16ToUnicode(text: String, entities: js.Array[EntityWithIndices]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUTF16ToUnicode")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -488,9 +524,13 @@ object mod {
     inline def validateUrlUserinfo_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUserinfo")(x.asInstanceOf[js.Any])
   }
   
+  inline def removeOverlappingEntities(entities: js.Array[EntityWithIndices]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlappingEntities")(entities.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def splitTags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitTags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def standardizeIndices(text: String, startIndex: Double, endIndex: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeIndices")(text.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  
+  inline def tagAttrs(attributes: HtmlAttributes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tagAttrs")(attributes.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Attributes = StringDictionary[String | Null]
   
@@ -704,6 +744,8 @@ object mod {
       inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     }
   }
+  
+  type HtmlAttributes = StringDictionary[Any]
   
   trait Indices extends StObject {
     

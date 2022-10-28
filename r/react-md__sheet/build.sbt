@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-md__sheet"
-version := "5.1.3-ef2d00"
+version := "5.1.3-c6694f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
-  "org.scalablytyped" %%% "react-md__dialog" % "5.1.3-b1c73b",
-  "org.scalablytyped" %%% "react-md__portal" % "5.1.0-b16c78",
-  "org.scalablytyped" %%% "react-md__transition" % "5.1.3-2c2017",
-  "org.scalablytyped" %%% "react-md__utils" % "5.1.3-99b824",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react-md__dialog" % "5.1.3-3d6295",
+  "org.scalablytyped" %%% "react-md__portal" % "5.1.0-49e029",
+  "org.scalablytyped" %%% "react-md__transition" % "5.1.3-aca32f",
+  "org.scalablytyped" %%% "react-md__utils" % "5.1.3-1a5486",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

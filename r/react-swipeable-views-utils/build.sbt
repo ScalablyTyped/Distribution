@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-swipeable-views-utils"
-version := "0.13-dt-20220923Z-e504a6"
+version := "0.13-dt-20220923Z-aa9d9d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "material-ui__types" % "5.1.0-97e1ba",
+  "org.scalablytyped" %%% "material-ui__types" % "5.1.0-b93cae",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221025Z-ca420a",
-  "org.scalablytyped" %%% "react-swipeable-views" % "0.13-dt-20211202Z-954039",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react-swipeable-views" % "0.13-dt-20211202Z-3364e6",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

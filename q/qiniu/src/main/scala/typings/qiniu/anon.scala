@@ -1,11 +1,173 @@
 package typings.qiniu
 
+import typings.qiniu.mod.rs.BucketEventName
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Accesskey extends StObject {
+    
+    var access_key: js.UndefOr[String] = js.undefined
+    
+    var callbackUrl: String | js.Array[String]
+    
+    var event: BucketEventName | js.Array[BucketEventName]
+    
+    var host: js.UndefOr[String] = js.undefined
+    
+    var name: String
+    
+    var prefix: js.UndefOr[String] = js.undefined
+    
+    var suffix: js.UndefOr[String] = js.undefined
+  }
+  object Accesskey {
+    
+    inline def apply(
+      callbackUrl: String | js.Array[String],
+      event: BucketEventName | js.Array[BucketEventName],
+      name: String
+    ): Accesskey = {
+      val __obj = js.Dynamic.literal(callbackUrl = callbackUrl.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Accesskey]
+    }
+    
+    extension [Self <: Accesskey](x: Self) {
+      
+      inline def setAccess_key(value: String): Self = StObject.set(x, "access_key", value.asInstanceOf[js.Any])
+      
+      inline def setAccess_keyUndefined: Self = StObject.set(x, "access_key", js.undefined)
+      
+      inline def setCallbackUrl(value: String | js.Array[String]): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackUrlVarargs(value: String*): Self = StObject.set(x, "callbackUrl", js.Array(value*))
+      
+      inline def setEvent(value: BucketEventName | js.Array[BucketEventName]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setEventVarargs(value: BucketEventName*): Self = StObject.set(x, "event", js.Array(value*))
+      
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    }
+  }
+  
+  trait Allowedheader extends StObject {
+    
+    var allowed_header: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var allowed_method: js.Array[String]
+    
+    var allowed_origin: js.Array[String]
+    
+    var exposed_header: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var max_age: js.UndefOr[Double] = js.undefined
+  }
+  object Allowedheader {
+    
+    inline def apply(allowed_method: js.Array[String], allowed_origin: js.Array[String]): Allowedheader = {
+      val __obj = js.Dynamic.literal(allowed_method = allowed_method.asInstanceOf[js.Any], allowed_origin = allowed_origin.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Allowedheader]
+    }
+    
+    extension [Self <: Allowedheader](x: Self) {
+      
+      inline def setAllowed_header(value: js.Array[String]): Self = StObject.set(x, "allowed_header", value.asInstanceOf[js.Any])
+      
+      inline def setAllowed_headerUndefined: Self = StObject.set(x, "allowed_header", js.undefined)
+      
+      inline def setAllowed_headerVarargs(value: String*): Self = StObject.set(x, "allowed_header", js.Array(value*))
+      
+      inline def setAllowed_method(value: js.Array[String]): Self = StObject.set(x, "allowed_method", value.asInstanceOf[js.Any])
+      
+      inline def setAllowed_methodVarargs(value: String*): Self = StObject.set(x, "allowed_method", js.Array(value*))
+      
+      inline def setAllowed_origin(value: js.Array[String]): Self = StObject.set(x, "allowed_origin", value.asInstanceOf[js.Any])
+      
+      inline def setAllowed_originVarargs(value: String*): Self = StObject.set(x, "allowed_origin", js.Array(value*))
+      
+      inline def setExposed_header(value: js.Array[String]): Self = StObject.set(x, "exposed_header", value.asInstanceOf[js.Any])
+      
+      inline def setExposed_headerUndefined: Self = StObject.set(x, "exposed_header", js.undefined)
+      
+      inline def setExposed_headerVarargs(value: String*): Self = StObject.set(x, "exposed_header", js.Array(value*))
+      
+      inline def setMax_age(value: Double): Self = StObject.set(x, "max_age", value.asInstanceOf[js.Any])
+      
+      inline def setMax_ageUndefined: Self = StObject.set(x, "max_age", js.undefined)
+    }
+  }
+  
+  trait CallbackUrl extends StObject {
+    
+    var access_key: js.UndefOr[String] = js.undefined
+    
+    var callbackUrl: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var event: js.UndefOr[BucketEventName | js.Array[BucketEventName]] = js.undefined
+    
+    var host: js.UndefOr[String] = js.undefined
+    
+    var name: String
+    
+    var prefix: js.UndefOr[String] = js.undefined
+    
+    var suffix: js.UndefOr[String] = js.undefined
+  }
+  object CallbackUrl {
+    
+    inline def apply(name: String): CallbackUrl = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CallbackUrl]
+    }
+    
+    extension [Self <: CallbackUrl](x: Self) {
+      
+      inline def setAccess_key(value: String): Self = StObject.set(x, "access_key", value.asInstanceOf[js.Any])
+      
+      inline def setAccess_keyUndefined: Self = StObject.set(x, "access_key", js.undefined)
+      
+      inline def setCallbackUrl(value: String | js.Array[String]): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
+      
+      inline def setCallbackUrlVarargs(value: String*): Self = StObject.set(x, "callbackUrl", js.Array(value*))
+      
+      inline def setEvent(value: BucketEventName | js.Array[BucketEventName]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      
+      inline def setEventVarargs(value: BucketEventName*): Self = StObject.set(x, "event", js.Array(value*))
+      
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    }
+  }
   
   trait Cond extends StObject {
     

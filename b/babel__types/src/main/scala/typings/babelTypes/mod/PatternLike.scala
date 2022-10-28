@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.mod.ArrayPattern_
   - typings.babelTypes.mod.ObjectPattern_
   - typings.babelTypes.mod.TSAsExpression_
+  - typings.babelTypes.mod.TSSatisfiesExpression_
   - typings.babelTypes.mod.TSTypeAssertion_
   - typings.babelTypes.mod.TSNonNullExpression_
 */
@@ -26,7 +27,7 @@ object PatternLike {
   }
   
   inline def AssignmentPattern_(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSTypeAssertion_ | TSNonNullExpression_,
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSSatisfiesExpression_ | TSTypeAssertion_ | TSNonNullExpression_,
     right: Expression
   ): typings.babelTypes.mod.AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
@@ -62,6 +63,12 @@ object PatternLike {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSNonNullExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.TSNonNullExpression_]
+  }
+  
+  inline def TSSatisfiesExpression_(expression: Expression, typeAnnotation: TSType): typings.babelTypes.mod.TSSatisfiesExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSSatisfiesExpression")
+    __obj.asInstanceOf[typings.babelTypes.mod.TSSatisfiesExpression_]
   }
   
   inline def TSTypeAssertion_(expression: Expression, typeAnnotation: TSType): typings.babelTypes.mod.TSTypeAssertion_ = {

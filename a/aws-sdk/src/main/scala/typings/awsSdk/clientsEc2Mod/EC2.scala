@@ -1342,12 +1342,12 @@ trait EC2 extends Service {
   ): Request[CreatePublicIpv4PoolResult, AWSError] = js.native
   
   /**
-    * Creates a root volume replacement task for an Amazon EC2 instance. The root volume can either be restored to its initial launch state, or it can be restored using a specific snapshot. For more information, see Replace a root volume in the Amazon Elastic Compute Cloud User Guide.
+    * Replaces the EBS-backed root volume for a running instance with a new volume that is restored to the original root volume's launch state, that is restored to a specific snapshot taken from the original root volume, or that is restored from an AMI that has the same key characteristics as that of the instance. For more information, see Replace a root volume in the Amazon Elastic Compute Cloud User Guide.
     */
   def createReplaceRootVolumeTask(): Request[CreateReplaceRootVolumeTaskResult, AWSError] = js.native
   def createReplaceRootVolumeTask(callback: js.Function2[/* err */ AWSError, /* data */ CreateReplaceRootVolumeTaskResult, Unit]): Request[CreateReplaceRootVolumeTaskResult, AWSError] = js.native
   /**
-    * Creates a root volume replacement task for an Amazon EC2 instance. The root volume can either be restored to its initial launch state, or it can be restored using a specific snapshot. For more information, see Replace a root volume in the Amazon Elastic Compute Cloud User Guide.
+    * Replaces the EBS-backed root volume for a running instance with a new volume that is restored to the original root volume's launch state, that is restored to a specific snapshot taken from the original root volume, or that is restored from an AMI that has the same key characteristics as that of the instance. For more information, see Replace a root volume in the Amazon Elastic Compute Cloud User Guide.
     */
   def createReplaceRootVolumeTask(params: CreateReplaceRootVolumeTaskRequest): Request[CreateReplaceRootVolumeTaskResult, AWSError] = js.native
   def createReplaceRootVolumeTask(
