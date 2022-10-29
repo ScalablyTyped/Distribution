@@ -1,7 +1,7 @@
 
 # Scala.js typings for gl
 
-Typings are for version 4.1
+Typings are for version 6.0
 
 ## Library description:
 Creates a WebGL context without a window

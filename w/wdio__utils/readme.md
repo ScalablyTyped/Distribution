@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__utils
 
-Typings are for version 7.25.1
+Typings are for version 7.25.4
 
 ## Library description:
 A WDIO helper utility to provide several utility functions used across the project.

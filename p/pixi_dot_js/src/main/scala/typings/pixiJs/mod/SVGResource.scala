@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiCore.mod.ISVGResourceOptions
+import typings.pixiCore.libTexturesResourcesSvgresourceMod.ISVGResourceOptions
 import typings.pixiMath.mod.ISize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

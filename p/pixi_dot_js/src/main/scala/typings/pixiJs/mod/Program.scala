@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.pixiCore.libShaderProgramMod.IProgramExtraData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param vertexSrc - The source of the vertex shader.
   * @param fragmentSrc - The source of the fragment shader.
   * @param name - Name for shader
+  * @param extra - Extra data for shader
   */
 open class Program ()
   extends typings.pixiCore.mod.Program {
@@ -20,6 +22,14 @@ open class Program ()
   def this(vertexSrc: String, fragmentSrc: Unit, name: String) = this()
   def this(vertexSrc: Unit, fragmentSrc: String, name: String) = this()
   def this(vertexSrc: Unit, fragmentSrc: Unit, name: String) = this()
+  def this(vertexSrc: String, fragmentSrc: String, name: String, extra: IProgramExtraData) = this()
+  def this(vertexSrc: String, fragmentSrc: String, name: Unit, extra: IProgramExtraData) = this()
+  def this(vertexSrc: String, fragmentSrc: Unit, name: String, extra: IProgramExtraData) = this()
+  def this(vertexSrc: String, fragmentSrc: Unit, name: Unit, extra: IProgramExtraData) = this()
+  def this(vertexSrc: Unit, fragmentSrc: String, name: String, extra: IProgramExtraData) = this()
+  def this(vertexSrc: Unit, fragmentSrc: String, name: Unit, extra: IProgramExtraData) = this()
+  def this(vertexSrc: Unit, fragmentSrc: Unit, name: String, extra: IProgramExtraData) = this()
+  def this(vertexSrc: Unit, fragmentSrc: Unit, name: Unit, extra: IProgramExtraData) = this()
 }
 /* static members */
 object Program {
@@ -37,12 +47,12 @@ object Program {
     * @param name - Name for shader
     * @returns A shiny new PixiJS shader program!
     */
-  inline def from(): typings.pixiCore.mod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.pixiCore.mod.Program]
-  inline def from(vertexSrc: String): typings.pixiCore.mod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.Program]
-  inline def from(vertexSrc: String, fragmentSrc: String): typings.pixiCore.mod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Program]
-  inline def from(vertexSrc: String, fragmentSrc: String, name: String): typings.pixiCore.mod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Program]
-  inline def from(vertexSrc: String, fragmentSrc: Unit, name: String): typings.pixiCore.mod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Program]
-  inline def from(vertexSrc: Unit, fragmentSrc: String): typings.pixiCore.mod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Program]
-  inline def from(vertexSrc: Unit, fragmentSrc: String, name: String): typings.pixiCore.mod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Program]
-  inline def from(vertexSrc: Unit, fragmentSrc: Unit, name: String): typings.pixiCore.mod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Program]
+  inline def from(): typings.pixiCore.libShaderProgramMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.pixiCore.libShaderProgramMod.Program]
+  inline def from(vertexSrc: String): typings.pixiCore.libShaderProgramMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.libShaderProgramMod.Program]
+  inline def from(vertexSrc: String, fragmentSrc: String): typings.pixiCore.libShaderProgramMod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderProgramMod.Program]
+  inline def from(vertexSrc: String, fragmentSrc: String, name: String): typings.pixiCore.libShaderProgramMod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderProgramMod.Program]
+  inline def from(vertexSrc: String, fragmentSrc: Unit, name: String): typings.pixiCore.libShaderProgramMod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderProgramMod.Program]
+  inline def from(vertexSrc: Unit, fragmentSrc: String): typings.pixiCore.libShaderProgramMod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderProgramMod.Program]
+  inline def from(vertexSrc: Unit, fragmentSrc: String, name: String): typings.pixiCore.libShaderProgramMod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderProgramMod.Program]
+  inline def from(vertexSrc: Unit, fragmentSrc: Unit, name: String): typings.pixiCore.libShaderProgramMod.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderProgramMod.Program]
 }

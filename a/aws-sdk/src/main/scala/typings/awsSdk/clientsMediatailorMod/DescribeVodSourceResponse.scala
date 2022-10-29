@@ -9,7 +9,7 @@ trait DescribeVodSourceResponse extends StObject {
   /**
     * The ARN of the VOD source.
     */
-  var Arn: js.UndefOr[string] = js.undefined
+  var Arn: js.UndefOr[_String] = js.undefined
   
   /**
     * The timestamp that indicates when the VOD source was created.
@@ -29,7 +29,7 @@ trait DescribeVodSourceResponse extends StObject {
   /**
     * The name of the source location associated with the VOD source.
     */
-  var SourceLocationName: js.UndefOr[string] = js.undefined
+  var SourceLocationName: js.UndefOr[_String] = js.undefined
   
   /**
     * The tags assigned to the VOD source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -39,7 +39,7 @@ trait DescribeVodSourceResponse extends StObject {
   /**
     * The name of the VOD source.
     */
-  var VodSourceName: js.UndefOr[string] = js.undefined
+  var VodSourceName: js.UndefOr[_String] = js.undefined
 }
 object DescribeVodSourceResponse {
   
@@ -50,7 +50,7 @@ object DescribeVodSourceResponse {
   
   extension [Self <: DescribeVodSourceResponse](x: Self) {
     
-    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
@@ -68,7 +68,7 @@ object DescribeVodSourceResponse {
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setSourceLocationNameUndefined: Self = StObject.set(x, "SourceLocationName", js.undefined)
     
@@ -76,7 +76,7 @@ object DescribeVodSourceResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setVodSourceName(value: string): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
+    inline def setVodSourceName(value: _String): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
     
     inline def setVodSourceNameUndefined: Self = StObject.set(x, "VodSourceName", js.undefined)
   }

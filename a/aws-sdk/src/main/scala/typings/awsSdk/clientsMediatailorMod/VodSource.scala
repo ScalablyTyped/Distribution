@@ -9,7 +9,7 @@ trait VodSource extends StObject {
   /**
     * The ARN for the VOD source.
     */
-  var Arn: string
+  var Arn: _String
   
   /**
     * The timestamp that indicates when the VOD source was created.
@@ -29,7 +29,7 @@ trait VodSource extends StObject {
   /**
     * The name of the source location that the VOD source is associated with.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
   
   /**
     * The tags assigned to the VOD source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -39,15 +39,15 @@ trait VodSource extends StObject {
   /**
     * The name of the VOD source.
     */
-  var VodSourceName: string
+  var VodSourceName: _String
 }
 object VodSource {
   
   inline def apply(
-    Arn: string,
+    Arn: _String,
     HttpPackageConfigurations: HttpPackageConfigurations,
-    SourceLocationName: string,
-    VodSourceName: string
+    SourceLocationName: _String,
+    VodSourceName: _String
   ): VodSource = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], HttpPackageConfigurations = HttpPackageConfigurations.asInstanceOf[js.Any], SourceLocationName = SourceLocationName.asInstanceOf[js.Any], VodSourceName = VodSourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VodSource]
@@ -55,7 +55,7 @@ object VodSource {
   
   extension [Self <: VodSource](x: Self) {
     
-    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
@@ -69,12 +69,12 @@ object VodSource {
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setVodSourceName(value: string): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
+    inline def setVodSourceName(value: _String): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
   }
 }

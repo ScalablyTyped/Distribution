@@ -12,7 +12,7 @@ trait ListStackInstancesInput extends StObject {
   var CallAs: js.UndefOr[typings.awsSdk.clientsCloudformationMod.CallAs] = js.undefined
   
   /**
-    * The status that stack instances are filtered by.
+    * The filter to apply to stack instances
     */
   var Filters: js.UndefOr[StackInstanceFilters] = js.undefined
   

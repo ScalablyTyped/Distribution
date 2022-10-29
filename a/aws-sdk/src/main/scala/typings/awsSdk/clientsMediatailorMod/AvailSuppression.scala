@@ -14,7 +14,7 @@ trait AvailSuppression extends StObject {
   /**
     * A live edge offset time in HH:MM:SS. MediaTailor won't fill ad breaks on or behind this time in the manifest lookback window. If Value is set to 00:00:00, it is in sync with the live edge, and MediaTailor won't fill any ad breaks on or behind the live edge. If you set a Value time, MediaTailor won't fill any ad breaks on or behind this time in the manifest lookback window. For example, if you set 00:45:00, then MediaTailor will fill ad breaks that occur within 45 minutes behind the live edge, but won't fill ad breaks on or behind 45 minutes behind the live edge.
     */
-  var Value: js.UndefOr[string] = js.undefined
+  var Value: js.UndefOr[_String] = js.undefined
 }
 object AvailSuppression {
   
@@ -29,7 +29,7 @@ object AvailSuppression {
     
     inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    inline def setValue(value: string): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: _String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }

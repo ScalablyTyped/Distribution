@@ -22,6 +22,11 @@ trait StackInstance extends StObject {
   var LastDriftCheckTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The last unique ID of a StackSet operation performed on a stack instance.
+    */
+  var LastOperationId: js.UndefOr[ClientRequestToken] = js.undefined
+  
+  /**
     * [Service-managed permissions] The organization root ID or organizational unit (OU) IDs that you specified for DeploymentTargets.
     */
   var OrganizationalUnitId: js.UndefOr[typings.awsSdk.clientsCloudformationMod.OrganizationalUnitId] = js.undefined
@@ -81,6 +86,10 @@ object StackInstance {
     inline def setLastDriftCheckTimestamp(value: js.Date): Self = StObject.set(x, "LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastDriftCheckTimestampUndefined: Self = StObject.set(x, "LastDriftCheckTimestamp", js.undefined)
+    
+    inline def setLastOperationId(value: ClientRequestToken): Self = StObject.set(x, "LastOperationId", value.asInstanceOf[js.Any])
+    
+    inline def setLastOperationIdUndefined: Self = StObject.set(x, "LastOperationId", js.undefined)
     
     inline def setOrganizationalUnitId(value: OrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
     

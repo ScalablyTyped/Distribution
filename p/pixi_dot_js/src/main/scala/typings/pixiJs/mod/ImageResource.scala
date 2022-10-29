@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiCore.mod.IImageResourceOptions
+import typings.pixiCore.libTexturesResourcesImageResourceMod.IImageResourceOptions
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +34,7 @@ object ImageResource {
   /**
     * Used to auto-detect the type of resource.
     * @param {*} source - The source object
-    * @returns {boolean} `true` if source is string or HTMLImageElement
+    * @returns {boolean} `true` if current environment support HTMLImageElement, and source is string or HTMLImageElement
     */
   inline def test(source: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mongodb-memory-server-core"
-version := "8.9.3-a5e02a"
+version := "8.9.4-29eb27"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

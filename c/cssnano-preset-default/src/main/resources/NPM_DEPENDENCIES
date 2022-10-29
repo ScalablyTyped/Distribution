@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cssnano-preset-default" : "5.2.12"
+      "cssnano-preset-default" : "5.2.13"
     }
   ],
   "test-dependencies" : [
     {
-      "cssnano-preset-default" : "5.2.12"
+      "cssnano-preset-default" : "5.2.13"
     }
   ],
   "compile-devDependencies" : [

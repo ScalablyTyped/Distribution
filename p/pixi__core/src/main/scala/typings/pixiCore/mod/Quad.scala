@@ -6,4 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@pixi/core", "Quad")
 @js.native
-open class Quad () extends Geometry
+open class Quad ()
+  extends typings.pixiCore.libUtilsQuadMod.Quad

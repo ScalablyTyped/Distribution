@@ -70,7 +70,7 @@ object buildCommandsElementGetPropertyMod {
   
   inline def default(property: String): js.Promise[
     js.UndefOr[
-      String | Double | Boolean | HTMLElement | Element | EventTarget | ChildNode | ParentNode | (js.Function0[js.Array[String] | Boolean | DOMRect | DOMRectList | ElementInternals | Unit]) | Document | (js.Function1[
+      String | Double | Boolean | HTMLElement | Element | ChildNode | ParentNode | (js.Function0[js.Array[String] | Boolean | DOMRect | DOMRectList | ElementInternals | Unit]) | Document | (js.Function1[
         js.UndefOr[
           (/* attr */ Attr) | Boolean | (/* pointerId */ Double) | (/* event */ Event) | FocusOptions | FullscreenOptions | GetAnimationsOptions | GetRootNodeOptions | (/* node */ Node) | Null | ScrollIntoViewOptions | (/* init */ ShadowRootInit) | (/* qualifiedName */ String)
         ], 
@@ -89,7 +89,7 @@ object buildCommandsElementGetPropertyMod {
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(property.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
     js.UndefOr[
-      String | Double | Boolean | HTMLElement | Element | EventTarget | ChildNode | ParentNode | (js.Function0[js.Array[String] | Boolean | DOMRect | DOMRectList | ElementInternals | Unit]) | Document | (js.Function1[
+      String | Double | Boolean | HTMLElement | Element | ChildNode | ParentNode | (js.Function0[js.Array[String] | Boolean | DOMRect | DOMRectList | ElementInternals | Unit]) | Document | (js.Function1[
         js.UndefOr[
           (/* attr */ Attr) | Boolean | (/* pointerId */ Double) | (/* event */ Event) | FocusOptions | FullscreenOptions | GetAnimationsOptions | GetRootNodeOptions | (/* node */ Node) | Null | ScrollIntoViewOptions | (/* init */ ShadowRootInit) | (/* qualifiedName */ String)
         ], 

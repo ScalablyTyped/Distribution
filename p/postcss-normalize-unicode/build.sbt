@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postcss-normalize-unicode"
-version := "5.1.0-ddf4a8"
+version := "5.1.1-a853d0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

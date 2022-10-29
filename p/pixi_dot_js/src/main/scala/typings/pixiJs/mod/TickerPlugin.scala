@@ -1,7 +1,6 @@
 package typings.pixiJs.mod
 
 import typings.pixiExtensions.mod.ExtensionMetadata
-import typings.pixiTicker.GlobalMixins.IApplicationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "TickerPlugin")
 @js.native
 open class TickerPlugin ()
-  extends typings.pixiTicker.mod.TickerPlugin
+  extends typings.pixiCore.mod.TickerPlugin
 /* static members */
 object TickerPlugin {
   
@@ -19,8 +18,8 @@ object TickerPlugin {
   
   @JSImport("pixi.js", "TickerPlugin._ticker")
   @js.native
-  def _ticker: typings.pixiTicker.mod.Ticker = js.native
-  inline def _ticker_=(x: typings.pixiTicker.mod.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ticker")(x.asInstanceOf[js.Any])
+  def _ticker: typings.pixiTicker.libTickerMod.Ticker = js.native
+  inline def _ticker_=(x: typings.pixiTicker.libTickerMod.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ticker")(x.asInstanceOf[js.Any])
   
   /**
     * Clean up the ticker, scoped to application.
@@ -41,7 +40,9 @@ object TickerPlugin {
     * @param {object} [options] - See application options
     */
   inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-  inline def init(options: IApplicationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.IApplicationOptions */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
   
@@ -49,6 +50,6 @@ object TickerPlugin {
   
   @JSImport("pixi.js", "TickerPlugin.ticker")
   @js.native
-  def ticker: typings.pixiTicker.mod.Ticker = js.native
-  inline def ticker_=(x: typings.pixiTicker.mod.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ticker")(x.asInstanceOf[js.Any])
+  def ticker: typings.pixiTicker.libTickerMod.Ticker = js.native
+  inline def ticker_=(x: typings.pixiTicker.libTickerMod.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ticker")(x.asInstanceOf[js.Any])
 }

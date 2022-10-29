@@ -15,5 +15,8 @@ open class GLProgram protected ()
     * @param program - webgl program
     * @param uniformData - uniforms
     */
-  def this(program: WebGLProgram, uniformData: StringDictionary[typings.pixiCore.mod.IGLUniformData]) = this()
+  def this(
+    program: WebGLProgram,
+    uniformData: StringDictionary[typings.pixiCore.libShaderGlprogramMod.IGLUniformData]
+  ) = this()
 }

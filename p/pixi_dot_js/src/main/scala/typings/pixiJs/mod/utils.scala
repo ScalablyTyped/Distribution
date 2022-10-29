@@ -13,20 +13,20 @@ import typings.pixiJs.pixiJsStrings.Int32Array
 import typings.pixiJs.pixiJsStrings.Uint16Array
 import typings.pixiJs.pixiJsStrings.Uint32Array
 import typings.pixiJs.pixiJsStrings.Uint8Array
-import typings.pixiSettings.mod.isMobileResult
+import typings.pixiSettings.libIcanvasMod.ICanvas
+import typings.pixiSettings.libUtilsIsMobileMod.isMobileResult
 import typings.pixiUtils.anon.Data
-import typings.pixiUtils.mod.DecomposedDataUri
-import typings.pixiUtils.mod.FormatFunction
-import typings.pixiUtils.mod.PackedArray
-import typings.pixiUtils.mod.ParseFunction
-import typings.pixiUtils.mod.Path_
-import typings.pixiUtils.mod.ResolveFunction
-import typings.pixiUtils.mod.URLFormatOptions
-import typings.pixiUtils.mod.UrlObject
-import typings.pixiUtils.mod.UrlWithParsedQuery
-import typings.pixiUtils.mod.UrlWithStringQuery
-import typings.pixiUtils.mod.Url_
-import typings.std.HTMLCanvasElement
+import typings.pixiUtils.libDataInterleaveTypedArraysMod.PackedArray
+import typings.pixiUtils.libNetworkDecomposeDataUriMod.DecomposedDataUri
+import typings.pixiUtils.libPathMod.Path_
+import typings.pixiUtils.libUrlMod.FormatFunction
+import typings.pixiUtils.libUrlMod.ParseFunction
+import typings.pixiUtils.libUrlMod.ResolveFunction
+import typings.pixiUtils.libUrlMod.URLFormatOptions
+import typings.pixiUtils.libUrlMod.UrlObject
+import typings.pixiUtils.libUrlMod.UrlWithParsedQuery
+import typings.pixiUtils.libUrlMod.UrlWithStringQuery
+import typings.pixiUtils.libUrlMod.Url_
 import typings.std.Location
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
@@ -42,7 +42,7 @@ object utils {
   @JSImport("pixi.js", "utils.CanvasRenderTarget")
   @js.native
   open class CanvasRenderTarget protected ()
-    extends typings.pixiUtils.mod.CanvasRenderTarget {
+    extends typings.pixiCore.mod.utils.CanvasRenderTarget {
     /**
       * @param width - the width for the newly created canvas
       * @param height - the height for the newly created canvas
@@ -59,7 +59,7 @@ object utils {
   @JSImport("pixi.js", "utils.EventEmitter")
   @js.native
   open class EventEmitter[EventTypes /* <: ValidEventTypes */, Context /* <: Any */] ()
-    extends typings.pixiUtils.mod.EventEmitter[EventTypes, Context]
+    extends typings.pixiCore.mod.utils.EventEmitter[EventTypes, Context]
   object EventEmitter extends Shortcut {
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -172,7 +172,7 @@ object utils {
   inline def rgb2hex(rgb: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def rgb2hex(rgb: js.typedarray.Float32Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def sayHello(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sayHello")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sayHello(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sayHello")().asInstanceOf[Unit]
   
   inline def sign(n: Double): `-1` | `0` | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[`-1` | `0` | `1`]
   
@@ -180,7 +180,7 @@ object utils {
   
   inline def string2hex(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("string2hex")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def trimCanvas(canvas: HTMLCanvasElement): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("trimCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[Data]
+  inline def trimCanvas(canvas: ICanvas): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("trimCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[Data]
   
   inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   

@@ -13,15 +13,18 @@ open class SimplePlane protected ()
     * @param verticesX - The number of vertices in the x-axis
     * @param verticesY - The number of vertices in the y-axis
     */
-  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource]) = this()
-  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource], verticesX: Double) = this()
+  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource]) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
+    verticesX: Double
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     verticesX: Double,
     verticesY: Double
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     verticesX: Unit,
     verticesY: Double
   ) = this()

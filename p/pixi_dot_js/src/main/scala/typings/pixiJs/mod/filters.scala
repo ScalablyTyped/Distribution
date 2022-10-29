@@ -2,7 +2,7 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.pixiCore.mod.ISpriteMaskTarget
+import typings.pixiCore.libFiltersSpriteMaskSpriteMaskFilterMod.ISpriteMaskTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

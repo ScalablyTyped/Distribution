@@ -9,12 +9,12 @@ trait Bumper extends StObject {
   /**
     * The URL for the end bumper asset.
     */
-  var EndUrl: js.UndefOr[string] = js.undefined
+  var EndUrl: js.UndefOr[_String] = js.undefined
   
   /**
     * The URL for the start bumper asset.
     */
-  var StartUrl: js.UndefOr[string] = js.undefined
+  var StartUrl: js.UndefOr[_String] = js.undefined
 }
 object Bumper {
   
@@ -25,11 +25,11 @@ object Bumper {
   
   extension [Self <: Bumper](x: Self) {
     
-    inline def setEndUrl(value: string): Self = StObject.set(x, "EndUrl", value.asInstanceOf[js.Any])
+    inline def setEndUrl(value: _String): Self = StObject.set(x, "EndUrl", value.asInstanceOf[js.Any])
     
     inline def setEndUrlUndefined: Self = StObject.set(x, "EndUrl", js.undefined)
     
-    inline def setStartUrl(value: string): Self = StObject.set(x, "StartUrl", value.asInstanceOf[js.Any])
+    inline def setStartUrl(value: _String): Self = StObject.set(x, "StartUrl", value.asInstanceOf[js.Any])
     
     inline def setStartUrlUndefined: Self = StObject.set(x, "StartUrl", js.undefined)
   }

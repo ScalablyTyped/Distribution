@@ -12,6 +12,9 @@ open class TextureMatrix protected ()
     * @param texture - observed texture
     * @param clampMargin - Changes frame clamping, 0.5 by default. Use -0.5 for extra border.
     */
-  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource]) = this()
-  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource], clampMargin: Double) = this()
+  def this(texture: typings.pixiCore.libTexturesTextureMod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource]) = this()
+  def this(
+    texture: typings.pixiCore.libTexturesTextureMod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
+    clampMargin: Double
+  ) = this()
 }

@@ -15,58 +15,67 @@ object mod {
   @js.native
   object ExtensionType extends StObject {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[ExtensionType & String] = js.native
-    
     @js.native
     sealed trait Application
       extends StObject
          with ExtensionType
-    /* "application" */ val Application: typings.pixiExtensions.mod.ExtensionType.Application & String = js.native
+    
+    @js.native
+    sealed trait Asset
+      extends StObject
+         with ExtensionType
     
     @js.native
     sealed trait CacheParser
       extends StObject
          with ExtensionType
-    /* "cache-parser" */ val CacheParser: typings.pixiExtensions.mod.ExtensionType.CacheParser & String = js.native
     
     @js.native
     sealed trait CanvasRendererPlugin
       extends StObject
          with ExtensionType
-    /* "renderer-canvas-plugin" */ val CanvasRendererPlugin: typings.pixiExtensions.mod.ExtensionType.CanvasRendererPlugin & String = js.native
+    
+    @js.native
+    sealed trait CanvasRendererSystem
+      extends StObject
+         with ExtensionType
     
     @js.native
     sealed trait DetectionParser
       extends StObject
          with ExtensionType
-    /* "detection-parser" */ val DetectionParser: typings.pixiExtensions.mod.ExtensionType.DetectionParser & String = js.native
     
     @js.native
     sealed trait LoadParser
       extends StObject
          with ExtensionType
-    /* "load-parser" */ val LoadParser: typings.pixiExtensions.mod.ExtensionType.LoadParser & String = js.native
     
     @js.native
-    sealed trait Loader
+    sealed trait Renderer
       extends StObject
          with ExtensionType
-    /* "loader" */ val Loader: typings.pixiExtensions.mod.ExtensionType.Loader & String = js.native
     
     @js.native
     sealed trait RendererPlugin
       extends StObject
          with ExtensionType
-    /* "renderer-webgl-plugin" */ val RendererPlugin: typings.pixiExtensions.mod.ExtensionType.RendererPlugin & String = js.native
+    
+    @js.native
+    sealed trait RendererSystem
+      extends StObject
+         with ExtensionType
     
     @js.native
     sealed trait ResolveParser
       extends StObject
          with ExtensionType
-    /* "resolve-parser" */ val ResolveParser: typings.pixiExtensions.mod.ExtensionType.ResolveParser & String = js.native
   }
   
+  /**
+    * Global registration of all PixiJS extensions. One-stop-shop for extensibility.
+    * @memberof PIXI
+    * @namespace extensions
+    */
   object extensions {
     
     @JSImport("@pixi/extensions", "extensions")
@@ -134,6 +143,10 @@ object mod {
     inline def removeHandlers_=(x: Record[ExtensionType, ExtensionHandler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_removeHandlers")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * Strict extension format that is used internally for registrations.
+    * @memberof PIXI
+    */
   trait ExtensionFormat
     extends StObject
        with ExtensionFormatLoose {
@@ -158,10 +171,19 @@ object mod {
     }
   }
   
+  /**
+    * Format when registering an extension. Generally, the extension
+    * should have these values as `extension` static property,
+    * but you can override name or type by providing an object.
+    * @memberof PIXI
+    */
   trait ExtensionFormatLoose extends StObject {
     
     /** Optional. Some plugins provide an API name/property, such as Renderer plugins */
     var name: js.UndefOr[String] = js.undefined
+    
+    /** Optional, used for sorting the plugins in a particular order */
+    var priority: js.UndefOr[Double] = js.undefined
     
     /** Reference to the plugin object/class */
     var ref: Any
@@ -182,6 +204,10 @@ object mod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
       inline def setRef(value: Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -205,6 +231,8 @@ object mod {
     
     var name: js.UndefOr[String] = js.undefined
     
+    var priority: js.UndefOr[Double] = js.undefined
+    
     var `type`: ExtensionType | js.Array[ExtensionType]
   }
   object ExtensionMetadataDetails {
@@ -220,6 +248,10 @@ object mod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
       inline def setType(value: ExtensionType | js.Array[ExtensionType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

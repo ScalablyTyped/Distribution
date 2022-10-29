@@ -1,7 +1,7 @@
 
 # Scala.js typings for stylehacks
 
-Typings are for version 5.1.0
+Typings are for version 5.1.1
 
 ## Library description:
 Detect/remove browser hacks from CSS files.

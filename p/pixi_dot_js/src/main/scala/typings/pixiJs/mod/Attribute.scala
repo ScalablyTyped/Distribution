@@ -43,44 +43,44 @@ object Attribute {
     * @param [stride=0] - How far apart, in bytes, the start of each value is. (used for interleaving data)
     * @returns - A new {@link PIXI.Attribute} based on the information provided
     */
-  inline def from(buffer: Double): typings.pixiCore.mod.Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Double): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Double, normalized: Boolean): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Double, normalized: Boolean, `type`: Unit, stride: Double): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Double, normalized: Boolean, `type`: typings.pixiConstants.mod.TYPES): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
+  inline def from(buffer: Double): typings.pixiCore.libGeometryAttributeMod.Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Double): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Double, normalized: Boolean): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Double, normalized: Boolean, `type`: Unit, stride: Double): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Double, normalized: Boolean, `type`: typings.pixiConstants.mod.TYPES): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
   inline def from(
     buffer: Double,
     size: Double,
     normalized: Boolean,
     `type`: typings.pixiConstants.mod.TYPES,
     stride: Double
-  ): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Double, normalized: Unit, `type`: Unit, stride: Double): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Double, normalized: Unit, `type`: typings.pixiConstants.mod.TYPES): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
+  ): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Double, normalized: Unit, `type`: Unit, stride: Double): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Double, normalized: Unit, `type`: typings.pixiConstants.mod.TYPES): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
   inline def from(
     buffer: Double,
     size: Double,
     normalized: Unit,
     `type`: typings.pixiConstants.mod.TYPES,
     stride: Double
-  ): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Unit, normalized: Boolean): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Unit, normalized: Boolean, `type`: Unit, stride: Double): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Unit, normalized: Boolean, `type`: typings.pixiConstants.mod.TYPES): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
+  ): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Unit, normalized: Boolean): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Unit, normalized: Boolean, `type`: Unit, stride: Double): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Unit, normalized: Boolean, `type`: typings.pixiConstants.mod.TYPES): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
   inline def from(
     buffer: Double,
     size: Unit,
     normalized: Boolean,
     `type`: typings.pixiConstants.mod.TYPES,
     stride: Double
-  ): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Unit, normalized: Unit, `type`: Unit, stride: Double): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
-  inline def from(buffer: Double, size: Unit, normalized: Unit, `type`: typings.pixiConstants.mod.TYPES): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
+  ): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Unit, normalized: Unit, `type`: Unit, stride: Double): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  inline def from(buffer: Double, size: Unit, normalized: Unit, `type`: typings.pixiConstants.mod.TYPES): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
   inline def from(
     buffer: Double,
     size: Unit,
     normalized: Unit,
     `type`: typings.pixiConstants.mod.TYPES,
     stride: Double
-  ): typings.pixiCore.mod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Attribute]
+  ): typings.pixiCore.libGeometryAttributeMod.Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libGeometryAttributeMod.Attribute]
 }

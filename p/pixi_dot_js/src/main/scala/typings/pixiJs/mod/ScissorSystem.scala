@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.pixiExtensions.mod.ExtensionMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ open class ScissorSystem protected ()
   /**
     * @param {PIXI.Renderer} renderer - The renderer this System works for.
     */
-  def this(renderer: typings.pixiCore.mod.Renderer) = this()
+  def this(renderer: typings.pixiCore.libRendererMod.Renderer) = this()
 }
 /* static members */
 object ScissorSystem {
@@ -19,6 +20,11 @@ object ScissorSystem {
   @JSImport("pixi.js", "ScissorSystem")
   @js.native
   val ^ : js.Any = js.native
+  
+  /** @ignore */
+  @JSImport("pixi.js", "ScissorSystem.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
   
   @JSImport("pixi.js", "ScissorSystem.isMatrixRotated")
   @js.native

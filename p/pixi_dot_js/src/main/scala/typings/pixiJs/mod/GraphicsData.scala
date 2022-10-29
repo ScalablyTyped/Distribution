@@ -16,30 +16,30 @@ open class GraphicsData protected ()
     * @param matrix - Transform matrix
     */
   def this(shape: IShape) = this()
-  def this(shape: IShape, fillStyle: typings.pixiGraphics.mod.FillStyle) = this()
-  def this(shape: IShape, fillStyle: Unit, lineStyle: typings.pixiGraphics.mod.LineStyle) = this()
+  def this(shape: IShape, fillStyle: typings.pixiGraphics.libStylesFillStyleMod.FillStyle) = this()
+  def this(shape: IShape, fillStyle: Unit, lineStyle: typings.pixiGraphics.libStylesLineStyleMod.LineStyle) = this()
   def this(
     shape: IShape,
-    fillStyle: typings.pixiGraphics.mod.FillStyle,
-    lineStyle: typings.pixiGraphics.mod.LineStyle
+    fillStyle: typings.pixiGraphics.libStylesFillStyleMod.FillStyle,
+    lineStyle: typings.pixiGraphics.libStylesLineStyleMod.LineStyle
   ) = this()
-  def this(shape: IShape, fillStyle: Unit, lineStyle: Unit, matrix: typings.pixiMath.mod.Matrix) = this()
+  def this(shape: IShape, fillStyle: Unit, lineStyle: Unit, matrix: typings.pixiCore.mod.Matrix) = this()
   def this(
     shape: IShape,
     fillStyle: Unit,
-    lineStyle: typings.pixiGraphics.mod.LineStyle,
-    matrix: typings.pixiMath.mod.Matrix
+    lineStyle: typings.pixiGraphics.libStylesLineStyleMod.LineStyle,
+    matrix: typings.pixiCore.mod.Matrix
   ) = this()
   def this(
     shape: IShape,
-    fillStyle: typings.pixiGraphics.mod.FillStyle,
+    fillStyle: typings.pixiGraphics.libStylesFillStyleMod.FillStyle,
     lineStyle: Unit,
-    matrix: typings.pixiMath.mod.Matrix
+    matrix: typings.pixiCore.mod.Matrix
   ) = this()
   def this(
     shape: IShape,
-    fillStyle: typings.pixiGraphics.mod.FillStyle,
-    lineStyle: typings.pixiGraphics.mod.LineStyle,
-    matrix: typings.pixiMath.mod.Matrix
+    fillStyle: typings.pixiGraphics.libStylesFillStyleMod.FillStyle,
+    lineStyle: typings.pixiGraphics.libStylesLineStyleMod.LineStyle,
+    matrix: typings.pixiCore.mod.Matrix
   ) = this()
 }

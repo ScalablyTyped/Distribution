@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {number} [y=0] - position of the point on the y axis
   */
 open class Point ()
-  extends typings.pixiMath.mod.Point {
+  extends typings.pixiCore.mod.Point {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()

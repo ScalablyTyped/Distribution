@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postcss-merge-longhand"
-version := "5.1.6-feae57"
+version := "5.1.7-5d17d2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

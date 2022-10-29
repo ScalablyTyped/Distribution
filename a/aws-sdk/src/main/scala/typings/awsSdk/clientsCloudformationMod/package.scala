@@ -1,7 +1,7 @@
 package typings.awsSdk.clientsCloudformationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.awsSdkStrings.DETAILED_STATUS
+import typings.awsSdk.awsSdkStrings.OPERATION_RESULT_STATUS
 import typings.awsSdk.awsSdkStrings.PRE_PROVISION
 import typings.awsSdk.awsSdkStrings.RESOURCE
 import typings.awsSdk.awsSdkStrings.Resource_
@@ -348,6 +348,12 @@ type NotificationARNs = js.Array[NotificationARN]
 */
 type OnFailure = _OnFailure | String
 
+type OperationResultFilterName = OPERATION_RESULT_STATUS | String
+
+type OperationResultFilterValues = String
+
+type OperationResultFilters = js.Array[OperationResultFilter]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -613,7 +619,12 @@ type StackIdsUrl = String
 */
 type StackInstanceDetailedStatus = _StackInstanceDetailedStatus | String
 
-type StackInstanceFilterName = DETAILED_STATUS | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DETAILED_STATUS
+  - typings.awsSdk.awsSdkStrings.LAST_OPERATION_ID
+  - java.lang.String
+*/
+type StackInstanceFilterName = _StackInstanceFilterName | String
 
 type StackInstanceFilterValues = String
 

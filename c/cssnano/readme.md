@@ -1,7 +1,7 @@
 
 # Scala.js typings for cssnano
 
-Typings are for version 5.1.13
+Typings are for version 5.1.14
 
 ## Library description:
 A modular minifier, built on top of the PostCSS ecosystem.

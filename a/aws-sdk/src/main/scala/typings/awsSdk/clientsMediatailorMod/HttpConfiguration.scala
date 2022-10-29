@@ -9,17 +9,17 @@ trait HttpConfiguration extends StObject {
   /**
     * The base URL for the source location host server. This string must include the protocol, such as https://.
     */
-  var BaseUrl: string
+  var BaseUrl: _String
 }
 object HttpConfiguration {
   
-  inline def apply(BaseUrl: string): HttpConfiguration = {
+  inline def apply(BaseUrl: _String): HttpConfiguration = {
     val __obj = js.Dynamic.literal(BaseUrl = BaseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpConfiguration]
   }
   
   extension [Self <: HttpConfiguration](x: Self) {
     
-    inline def setBaseUrl(value: string): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: _String): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
   }
 }

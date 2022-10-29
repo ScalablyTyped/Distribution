@@ -1,7 +1,7 @@
 
 # Scala.js typings for cssnano-preset-default
 
-Typings are for version 5.2.12
+Typings are for version 5.2.13
 
 ## Library description:
 Safe defaults for cssnano which require minimal configuration.

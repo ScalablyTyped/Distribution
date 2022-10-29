@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postcss-reduce-initial"
-version := "5.1.0-e65db1"
+version := "5.1.1-607433"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

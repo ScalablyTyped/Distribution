@@ -5,8 +5,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.alpinejs.anon.During
 import typings.alpinejs.anon.InitialValue
 import typings.alpinejs.anon.Name
+import typings.std.HTMLElement
 import typings.std.Node
 import typings.std.Record
+import typings.std.ThisType
 import typings.vueReactivity.mod.ReactiveEffect
 import typings.vueReactivity.mod.ReactiveEffectOptions
 import typings.vueReactivity.mod.UnwrapNestedRefs
@@ -43,7 +45,7 @@ object mod extends Shortcut {
       * @param name the id of the x-data context
       * @param callback the initializer of the x-data context
       */
-    def data(name: String, callback: js.Function1[/* repeated */ Any, XDataContext]): Unit = js.native
+    def data(name: String, callback: js.Function1[/* repeated */ Any, AlpineComponent[Record[String, Any]]]): Unit = js.native
     
     def debounce[A /* <: js.Array[Any] */, R](func: js.Function1[/* args */ A, R]): js.Function1[/* args */ A, R] = js.native
     def debounce[A /* <: js.Array[Any] */, R](func: js.Function1[/* args */ A, R], wait: Double): js.Function1[/* args */ A, R] = js.native
@@ -269,6 +271,79 @@ object mod extends Shortcut {
       * Version of Alpine.js
       */
     var version: String = js.native
+  }
+  
+  type AlpineComponent[T] = T & XDataContext & (ThisType[T & XDataContext & AlpineMagics[T]])
+  
+  @js.native
+  trait AlpineMagics[T] extends StObject {
+    
+    /**
+      * Access to current Alpine data.
+      */
+    @JSName("$data")
+    var $data: T = js.native
+    
+    /**
+      * Dispatch browser events.
+      *
+      * @param event the event name
+      * @param data an event-dependent value associated with the event, the value is then available to the handler using the CustomEvent.detail property
+      */
+    @JSName("$dispatch")
+    def $dispatch(event: String): Unit = js.native
+    @JSName("$dispatch")
+    def $dispatch(event: String, data: Any): Unit = js.native
+    
+    /**
+      * Retrieve the current DOM node.
+      */
+    @JSName("$el")
+    var $el: HTMLElement = js.native
+    
+    /**
+      * Generate an element's ID and ensure that it won't conflict with other IDs of the same name on the same page.
+      *
+      * @param name the name of the id
+      * @param key suffix on the end of the generated ID, usually helpful for the purpose of identifying id in a loop
+      */
+    @JSName("$id")
+    def $id(name: String): String = js.native
+    @JSName("$id")
+    def $id(name: String, key: String): String = js.native
+    @JSName("$id")
+    def $id(name: String, key: Double): String = js.native
+    
+    /**
+      * Execute a given expression AFTER Alpine has made its reactive DOM updates.
+      *
+      * @param callback a callback that will be fired after Alpine finishes updating the DOM
+      */
+    @JSName("$nextTick")
+    def $nextTick(): js.Promise[Unit] = js.native
+    @JSName("$nextTick")
+    def $nextTick(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+    
+    /**
+      * Retrieve DOM elements marked with x-ref inside the component.
+      */
+    @JSName("$refs")
+    var $refs: Record[String, HTMLElement] = js.native
+    
+    /**
+      * Access registered global Alpine stores.
+      */
+    @JSName("$store")
+    var $store: XData = js.native
+    
+    /**
+      * Fire the given callback when the value in the property is changed.
+      *
+      * @param property the component property
+      * @param callback a callback that will fire when a given property is changed
+      */
+    @JSName("$watch")
+    def $watch[V /* <: /* import warning: importer.ImportType#apply Failed type conversion: string extends keyof T ? T[string] : any */ js.Any */](property: String, callback: js.Function2[/* newValue */ V, /* oldValue */ V, Unit]): Unit = js.native
   }
   
   type AttributeTransformer[T] = js.Function1[/* args */ Name[T], Name[T]]

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/filter-fxaa" : "6.5.8"
+      "@pixi/filter-fxaa" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/filter-fxaa" : "6.5.8"
+      "@pixi/filter-fxaa" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

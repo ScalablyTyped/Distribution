@@ -9,24 +9,24 @@ trait DeletePrefetchScheduleRequest extends StObject {
   /**
     * The name of the prefetch schedule. If the action is successful, the service sends back an HTTP 204 response with an empty HTTP body.
     */
-  var Name: string
+  var Name: _String
   
   /**
     * The name of the playback configuration for this prefetch schedule.
     */
-  var PlaybackConfigurationName: string
+  var PlaybackConfigurationName: _String
 }
 object DeletePrefetchScheduleRequest {
   
-  inline def apply(Name: string, PlaybackConfigurationName: string): DeletePrefetchScheduleRequest = {
+  inline def apply(Name: _String, PlaybackConfigurationName: _String): DeletePrefetchScheduleRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], PlaybackConfigurationName = PlaybackConfigurationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePrefetchScheduleRequest]
   }
   
   extension [Self <: DeletePrefetchScheduleRequest](x: Self) {
     
-    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: _String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setPlaybackConfigurationName(value: string): Self = StObject.set(x, "PlaybackConfigurationName", value.asInstanceOf[js.Any])
+    inline def setPlaybackConfigurationName(value: _String): Self = StObject.set(x, "PlaybackConfigurationName", value.asInstanceOf[js.Any])
   }
 }

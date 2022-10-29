@@ -19,7 +19,7 @@ trait Transition extends StObject {
   /**
     * The name of the program that this program will be inserted next to, as defined by RelativePosition.
     */
-  var RelativeProgram: js.UndefOr[string] = js.undefined
+  var RelativeProgram: js.UndefOr[_String] = js.undefined
   
   /**
     * The date and time that the program is scheduled to start, in epoch milliseconds.
@@ -29,11 +29,11 @@ trait Transition extends StObject {
   /**
     * Defines when the program plays in the schedule. You can set the value to ABSOLUTE or RELATIVE.  ABSOLUTE - The program plays at a specific wall clock time. This setting can only be used for channels using the LINEAR PlaybackMode. Note the following considerations when using ABSOLUTE transitions: If the preceding program in the schedule has a duration that extends past the wall clock time, MediaTailor truncates the preceding program on a common segment boundary. If there are gaps in playback, MediaTailor plays the FillerSlate you configured for your linear channel.  RELATIVE - The program is inserted into the schedule either before or after a program that you specify via RelativePosition.
     */
-  var Type: string
+  var Type: _String
 }
 object Transition {
   
-  inline def apply(RelativePosition: RelativePosition, Type: string): Transition = {
+  inline def apply(RelativePosition: RelativePosition, Type: _String): Transition = {
     val __obj = js.Dynamic.literal(RelativePosition = RelativePosition.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transition]
   }
@@ -46,7 +46,7 @@ object Transition {
     
     inline def setRelativePosition(value: RelativePosition): Self = StObject.set(x, "RelativePosition", value.asInstanceOf[js.Any])
     
-    inline def setRelativeProgram(value: string): Self = StObject.set(x, "RelativeProgram", value.asInstanceOf[js.Any])
+    inline def setRelativeProgram(value: _String): Self = StObject.set(x, "RelativeProgram", value.asInstanceOf[js.Any])
     
     inline def setRelativeProgramUndefined: Self = StObject.set(x, "RelativeProgram", js.undefined)
     
@@ -54,6 +54,6 @@ object Transition {
     
     inline def setScheduledStartTimeMillisUndefined: Self = StObject.set(x, "ScheduledStartTimeMillis", js.undefined)
     
-    inline def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: _String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

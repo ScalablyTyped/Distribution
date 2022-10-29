@@ -29,11 +29,11 @@ trait UpdateSourceLocationRequest extends StObject {
   /**
     * The name of the source location.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
 }
 object UpdateSourceLocationRequest {
   
-  inline def apply(HttpConfiguration: HttpConfiguration, SourceLocationName: string): UpdateSourceLocationRequest = {
+  inline def apply(HttpConfiguration: HttpConfiguration, SourceLocationName: _String): UpdateSourceLocationRequest = {
     val __obj = js.Dynamic.literal(HttpConfiguration = HttpConfiguration.asInstanceOf[js.Any], SourceLocationName = SourceLocationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSourceLocationRequest]
   }
@@ -56,6 +56,6 @@ object UpdateSourceLocationRequest {
     
     inline def setSegmentDeliveryConfigurationsVarargs(value: SegmentDeliveryConfiguration*): Self = StObject.set(x, "SegmentDeliveryConfigurations", js.Array(value*))
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "json-to-csv-export" : "2.0.2"
+      "json-to-csv-export" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "json-to-csv-export" : "2.0.2"
+      "json-to-csv-export" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

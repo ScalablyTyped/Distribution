@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param halfHeight - The half height of this ellipse
   */
 open class Ellipse ()
-  extends typings.pixiMath.mod.Ellipse {
+  extends typings.pixiCore.mod.Ellipse {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()

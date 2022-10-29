@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postcss-minify-params"
-version := "5.1.3-ce7170"
+version := "5.1.4-69c5b0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

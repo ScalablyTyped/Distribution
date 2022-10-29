@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wdio__repl"
-version := "7.25.1-318317"
+version := "7.25.4-4e8292"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

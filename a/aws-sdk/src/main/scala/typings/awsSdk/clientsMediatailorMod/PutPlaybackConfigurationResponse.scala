@@ -9,7 +9,7 @@ trait PutPlaybackConfigurationResponse extends StObject {
   /**
     * The URL for the ad decision server (ADS). This includes the specification of static parameters and placeholders for dynamic parameters. AWS Elemental MediaTailor substitutes player-specific and session-specific parameters as needed when calling the ADS. Alternately, for testing you can provide a static VAST URL. The maximum length is 25,000 characters.
     */
-  var AdDecisionServerUrl: js.UndefOr[string] = js.undefined
+  var AdDecisionServerUrl: js.UndefOr[_String] = js.undefined
   
   /**
     * The configuration for avail suppression, also known as ad suppression. For more information about ad suppression, see Ad Suppression.
@@ -59,7 +59,7 @@ trait PutPlaybackConfigurationResponse extends StObject {
   /**
     * The identifier for the playback configuration.
     */
-  var Name: js.UndefOr[string] = js.undefined
+  var Name: js.UndefOr[_String] = js.undefined
   
   /**
     * Defines the maximum duration of underfilled ad time (in seconds) allowed in an ad break. If the duration of underfilled ad time exceeds the personalization threshold, then the personalization of the ad break is abandoned and the underlying content is shown. This feature applies to ad replacement in live and VOD streams, rather than ad insertion, because it relies on an underlying content stream. For more information about ad break behavior, including ad replacement and insertion, see Ad Behavior in AWS Elemental MediaTailor.
@@ -69,22 +69,22 @@ trait PutPlaybackConfigurationResponse extends StObject {
   /**
     * The Amazon Resource Name (ARN) associated with the playback configuration.
     */
-  var PlaybackConfigurationArn: js.UndefOr[string] = js.undefined
+  var PlaybackConfigurationArn: js.UndefOr[_String] = js.undefined
   
   /**
     * The playback endpoint prefix associated with the playback configuration.
     */
-  var PlaybackEndpointPrefix: js.UndefOr[string] = js.undefined
+  var PlaybackEndpointPrefix: js.UndefOr[_String] = js.undefined
   
   /**
     * The session initialization endpoint prefix associated with the playback configuration.
     */
-  var SessionInitializationEndpointPrefix: js.UndefOr[string] = js.undefined
+  var SessionInitializationEndpointPrefix: js.UndefOr[_String] = js.undefined
   
   /**
     * The URL for a high-quality video asset to transcode and use to fill in time that's not used by ads. AWS Elemental MediaTailor shows the slate to fill in gaps in media content. Configuring the slate is optional for non-VPAID configurations. For VPAID, the slate is required because MediaTailor provides it in the slots that are designated for dynamic ad content. The slate must be a high-quality asset that contains both audio and video.
     */
-  var SlateAdUrl: js.UndefOr[string] = js.undefined
+  var SlateAdUrl: js.UndefOr[_String] = js.undefined
   
   /**
     * The tags to assign to the playback configuration. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -94,12 +94,12 @@ trait PutPlaybackConfigurationResponse extends StObject {
   /**
     * The name that is used to associate this playback configuration with a custom transcode profile. This overrides the dynamic transcoding defaults of MediaTailor. Use this only if you have already set up custom profiles with the help of AWS Support.
     */
-  var TranscodeProfileName: js.UndefOr[string] = js.undefined
+  var TranscodeProfileName: js.UndefOr[_String] = js.undefined
   
   /**
     * The URL prefix for the parent manifest for the stream, minus the asset ID. The maximum length is 512 characters.
     */
-  var VideoContentSourceUrl: js.UndefOr[string] = js.undefined
+  var VideoContentSourceUrl: js.UndefOr[_String] = js.undefined
 }
 object PutPlaybackConfigurationResponse {
   
@@ -110,7 +110,7 @@ object PutPlaybackConfigurationResponse {
   
   extension [Self <: PutPlaybackConfigurationResponse](x: Self) {
     
-    inline def setAdDecisionServerUrl(value: string): Self = StObject.set(x, "AdDecisionServerUrl", value.asInstanceOf[js.Any])
+    inline def setAdDecisionServerUrl(value: _String): Self = StObject.set(x, "AdDecisionServerUrl", value.asInstanceOf[js.Any])
     
     inline def setAdDecisionServerUrlUndefined: Self = StObject.set(x, "AdDecisionServerUrl", js.undefined)
     
@@ -150,7 +150,7 @@ object PutPlaybackConfigurationResponse {
     
     inline def setManifestProcessingRulesUndefined: Self = StObject.set(x, "ManifestProcessingRules", js.undefined)
     
-    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: _String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
@@ -158,19 +158,19 @@ object PutPlaybackConfigurationResponse {
     
     inline def setPersonalizationThresholdSecondsUndefined: Self = StObject.set(x, "PersonalizationThresholdSeconds", js.undefined)
     
-    inline def setPlaybackConfigurationArn(value: string): Self = StObject.set(x, "PlaybackConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setPlaybackConfigurationArn(value: _String): Self = StObject.set(x, "PlaybackConfigurationArn", value.asInstanceOf[js.Any])
     
     inline def setPlaybackConfigurationArnUndefined: Self = StObject.set(x, "PlaybackConfigurationArn", js.undefined)
     
-    inline def setPlaybackEndpointPrefix(value: string): Self = StObject.set(x, "PlaybackEndpointPrefix", value.asInstanceOf[js.Any])
+    inline def setPlaybackEndpointPrefix(value: _String): Self = StObject.set(x, "PlaybackEndpointPrefix", value.asInstanceOf[js.Any])
     
     inline def setPlaybackEndpointPrefixUndefined: Self = StObject.set(x, "PlaybackEndpointPrefix", js.undefined)
     
-    inline def setSessionInitializationEndpointPrefix(value: string): Self = StObject.set(x, "SessionInitializationEndpointPrefix", value.asInstanceOf[js.Any])
+    inline def setSessionInitializationEndpointPrefix(value: _String): Self = StObject.set(x, "SessionInitializationEndpointPrefix", value.asInstanceOf[js.Any])
     
     inline def setSessionInitializationEndpointPrefixUndefined: Self = StObject.set(x, "SessionInitializationEndpointPrefix", js.undefined)
     
-    inline def setSlateAdUrl(value: string): Self = StObject.set(x, "SlateAdUrl", value.asInstanceOf[js.Any])
+    inline def setSlateAdUrl(value: _String): Self = StObject.set(x, "SlateAdUrl", value.asInstanceOf[js.Any])
     
     inline def setSlateAdUrlUndefined: Self = StObject.set(x, "SlateAdUrl", js.undefined)
     
@@ -178,11 +178,11 @@ object PutPlaybackConfigurationResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTranscodeProfileName(value: string): Self = StObject.set(x, "TranscodeProfileName", value.asInstanceOf[js.Any])
+    inline def setTranscodeProfileName(value: _String): Self = StObject.set(x, "TranscodeProfileName", value.asInstanceOf[js.Any])
     
     inline def setTranscodeProfileNameUndefined: Self = StObject.set(x, "TranscodeProfileName", js.undefined)
     
-    inline def setVideoContentSourceUrl(value: string): Self = StObject.set(x, "VideoContentSourceUrl", value.asInstanceOf[js.Any])
+    inline def setVideoContentSourceUrl(value: _String): Self = StObject.set(x, "VideoContentSourceUrl", value.asInstanceOf[js.Any])
     
     inline def setVideoContentSourceUrlUndefined: Self = StObject.set(x, "VideoContentSourceUrl", js.undefined)
   }

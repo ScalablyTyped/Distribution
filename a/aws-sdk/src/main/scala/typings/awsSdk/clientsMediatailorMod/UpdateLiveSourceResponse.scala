@@ -9,7 +9,7 @@ trait UpdateLiveSourceResponse extends StObject {
   /**
     * The Amazon Resource Name (ARN) associated with this live source.
     */
-  var Arn: js.UndefOr[string] = js.undefined
+  var Arn: js.UndefOr[_String] = js.undefined
   
   /**
     * The timestamp that indicates when the live source was created.
@@ -29,12 +29,12 @@ trait UpdateLiveSourceResponse extends StObject {
   /**
     * The name of the live source.
     */
-  var LiveSourceName: js.UndefOr[string] = js.undefined
+  var LiveSourceName: js.UndefOr[_String] = js.undefined
   
   /**
     * The name of the source location associated with the live source.
     */
-  var SourceLocationName: js.UndefOr[string] = js.undefined
+  var SourceLocationName: js.UndefOr[_String] = js.undefined
   
   /**
     * The tags to assign to the live source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -50,7 +50,7 @@ object UpdateLiveSourceResponse {
   
   extension [Self <: UpdateLiveSourceResponse](x: Self) {
     
-    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
@@ -68,11 +68,11 @@ object UpdateLiveSourceResponse {
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    inline def setLiveSourceName(value: string): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
+    inline def setLiveSourceName(value: _String): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
     
     inline def setLiveSourceNameUndefined: Self = StObject.set(x, "LiveSourceName", js.undefined)
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setSourceLocationNameUndefined: Self = StObject.set(x, "SourceLocationName", js.undefined)
     

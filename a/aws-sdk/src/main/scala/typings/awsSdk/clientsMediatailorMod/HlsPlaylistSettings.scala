@@ -9,7 +9,7 @@ trait HlsPlaylistSettings extends StObject {
   /**
     * The total duration (in seconds) of each manifest. Minimum value: 30 seconds. Maximum value: 3600 seconds.
     */
-  var ManifestWindowSeconds: js.UndefOr[integer] = js.undefined
+  var ManifestWindowSeconds: js.UndefOr[_Integer] = js.undefined
 }
 object HlsPlaylistSettings {
   
@@ -20,7 +20,7 @@ object HlsPlaylistSettings {
   
   extension [Self <: HlsPlaylistSettings](x: Self) {
     
-    inline def setManifestWindowSeconds(value: integer): Self = StObject.set(x, "ManifestWindowSeconds", value.asInstanceOf[js.Any])
+    inline def setManifestWindowSeconds(value: _Integer): Self = StObject.set(x, "ManifestWindowSeconds", value.asInstanceOf[js.Any])
     
     inline def setManifestWindowSecondsUndefined: Self = StObject.set(x, "ManifestWindowSeconds", js.undefined)
   }

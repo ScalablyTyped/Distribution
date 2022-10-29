@@ -150,6 +150,7 @@ import typings.devtoolsProtocol.mod.Protocol.Security.SecurityState
 import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.ServiceWorkerVersionRunningStatus
 import typings.devtoolsProtocol.mod.Protocol.ServiceWorker.ServiceWorkerVersionStatus
 import typings.devtoolsProtocol.mod.Protocol.Storage.InterestGroupAccessType
+import typings.devtoolsProtocol.mod.Protocol.Storage.SharedStorageAccessType
 import typings.devtoolsProtocol.mod.Protocol.Storage.StorageType
 import typings.devtoolsProtocol.mod.Protocol.SystemInfo.ImageType
 import typings.devtoolsProtocol.mod.Protocol.SystemInfo.SubsamplingFormat
@@ -4217,6 +4218,12 @@ object devtoolsProtocolStrings {
   inline def compliant: compliant = "compliant".asInstanceOf[compliant]
   
   @js.native
+  sealed trait `compute-pressure`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `compute-pressure`: `compute-pressure` = "compute-pressure".asInstanceOf[`compute-pressure`]
+  
+  @js.native
   sealed trait computedString
     extends StObject
        with AXValueType
@@ -4575,8 +4582,50 @@ object devtoolsProtocolStrings {
   inline def `document-domain`: `document-domain` = "document-domain".asInstanceOf[`document-domain`]
   
   @js.native
+  sealed trait documentAddModule
+    extends StObject
+       with SharedStorageAccessType
+  inline def documentAddModule: documentAddModule = "documentAddModule".asInstanceOf[documentAddModule]
+  
+  @js.native
+  sealed trait documentAppend
+    extends StObject
+       with SharedStorageAccessType
+  inline def documentAppend: documentAppend = "documentAppend".asInstanceOf[documentAppend]
+  
+  @js.native
+  sealed trait documentClear
+    extends StObject
+       with SharedStorageAccessType
+  inline def documentClear: documentClear = "documentClear".asInstanceOf[documentClear]
+  
+  @js.native
+  sealed trait documentDelete
+    extends StObject
+       with SharedStorageAccessType
+  inline def documentDelete: documentDelete = "documentDelete".asInstanceOf[documentDelete]
+  
+  @js.native
   sealed trait documentOpened extends StObject
   inline def documentOpened: documentOpened = "documentOpened".asInstanceOf[documentOpened]
+  
+  @js.native
+  sealed trait documentRun
+    extends StObject
+       with SharedStorageAccessType
+  inline def documentRun: documentRun = "documentRun".asInstanceOf[documentRun]
+  
+  @js.native
+  sealed trait documentSelectURL
+    extends StObject
+       with SharedStorageAccessType
+  inline def documentSelectURL: documentSelectURL = "documentSelectURL".asInstanceOf[documentSelectURL]
+  
+  @js.native
+  sealed trait documentSet
+    extends StObject
+       with SharedStorageAccessType
+  inline def documentSet: documentSet = "documentSet".asInstanceOf[documentSet]
   
   @js.native
   sealed trait documentUpdated extends StObject
@@ -6728,6 +6777,10 @@ object devtoolsProtocolStrings {
   inline def `shared-storage`: `shared-storage` = "shared-storage".asInstanceOf[`shared-storage`]
   
   @js.native
+  sealed trait sharedStorageAccessed extends StObject
+  inline def sharedStorageAccessed: sharedStorageAccessed = "sharedStorageAccessed".asInstanceOf[sharedStorageAccessed]
+  
+  @js.native
   sealed trait shared_storage
     extends StObject
        with StorageType
@@ -7448,6 +7501,60 @@ object devtoolsProtocolStrings {
        with ConsoleMessageSource
        with LogEntrySource
   inline def worker_ : worker_ = "worker".asInstanceOf[worker_]
+  
+  @js.native
+  sealed trait workletAppend
+    extends StObject
+       with SharedStorageAccessType
+  inline def workletAppend: workletAppend = "workletAppend".asInstanceOf[workletAppend]
+  
+  @js.native
+  sealed trait workletClear
+    extends StObject
+       with SharedStorageAccessType
+  inline def workletClear: workletClear = "workletClear".asInstanceOf[workletClear]
+  
+  @js.native
+  sealed trait workletDelete
+    extends StObject
+       with SharedStorageAccessType
+  inline def workletDelete: workletDelete = "workletDelete".asInstanceOf[workletDelete]
+  
+  @js.native
+  sealed trait workletEntries
+    extends StObject
+       with SharedStorageAccessType
+  inline def workletEntries: workletEntries = "workletEntries".asInstanceOf[workletEntries]
+  
+  @js.native
+  sealed trait workletGet
+    extends StObject
+       with SharedStorageAccessType
+  inline def workletGet: workletGet = "workletGet".asInstanceOf[workletGet]
+  
+  @js.native
+  sealed trait workletKeys
+    extends StObject
+       with SharedStorageAccessType
+  inline def workletKeys: workletKeys = "workletKeys".asInstanceOf[workletKeys]
+  
+  @js.native
+  sealed trait workletLength
+    extends StObject
+       with SharedStorageAccessType
+  inline def workletLength: workletLength = "workletLength".asInstanceOf[workletLength]
+  
+  @js.native
+  sealed trait workletRemainingBudget
+    extends StObject
+       with SharedStorageAccessType
+  inline def workletRemainingBudget: workletRemainingBudget = "workletRemainingBudget".asInstanceOf[workletRemainingBudget]
+  
+  @js.native
+  sealed trait workletSet
+    extends StObject
+       with SharedStorageAccessType
+  inline def workletSet: workletSet = "workletSet".asInstanceOf[workletSet]
   
   @js.native
   sealed trait xml

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__node-http-handler"
-version := "3.198.0-81fc84"
+version := "3.199.0-8dac0c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

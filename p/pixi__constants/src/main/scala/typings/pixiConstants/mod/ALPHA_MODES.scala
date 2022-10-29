@@ -38,12 +38,6 @@ object ALPHA_MODES extends StObject {
   /* 2 */ val PREMULTIPLIED_ALPHA: typings.pixiConstants.mod.ALPHA_MODES.PREMULTIPLIED_ALPHA & Double = js.native
   
   @js.native
-  sealed trait PREMULTIPLY_ALPHA
-    extends StObject
-       with ALPHA_MODES
-  /* 2 */ val PREMULTIPLY_ALPHA: typings.pixiConstants.mod.ALPHA_MODES.PREMULTIPLY_ALPHA & Double = js.native
-  
-  @js.native
   sealed trait PREMULTIPLY_ON_UPLOAD
     extends StObject
        with ALPHA_MODES

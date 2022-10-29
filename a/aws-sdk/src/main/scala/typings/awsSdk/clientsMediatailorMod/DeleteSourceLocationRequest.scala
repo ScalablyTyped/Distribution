@@ -9,17 +9,17 @@ trait DeleteSourceLocationRequest extends StObject {
   /**
     * The name of the source location.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
 }
 object DeleteSourceLocationRequest {
   
-  inline def apply(SourceLocationName: string): DeleteSourceLocationRequest = {
+  inline def apply(SourceLocationName: _String): DeleteSourceLocationRequest = {
     val __obj = js.Dynamic.literal(SourceLocationName = SourceLocationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSourceLocationRequest]
   }
   
   extension [Self <: DeleteSourceLocationRequest](x: Self) {
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
   }
 }

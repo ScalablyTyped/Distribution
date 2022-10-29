@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-providers"
-version := "3.192.0-a4536c"
+version := "3.192.0-7e1099"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity" % "3.198.0-32cded",
-  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.198.0-969a45",
-  "org.scalablytyped" %%% "aws-sdk__client-sts" % "3.198.0-dc972f",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-cognito-identity" % "3.198.0-445387",
+  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity" % "3.199.0-99c0ab",
+  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.199.0-9a67a8",
+  "org.scalablytyped" %%% "aws-sdk__client-sts" % "3.199.0-30efbf",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-cognito-identity" % "3.199.0-7bf92a",
   "org.scalablytyped" %%% "aws-sdk__credential-provider-imds" % "3.198.0-680517",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-ini" % "3.198.0-1061f8",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-node" % "3.198.0-5a56e0",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-ini" % "3.199.0-694bc0",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-node" % "3.199.0-58d9fc",
   "org.scalablytyped" %%% "aws-sdk__credential-provider-process" % "3.198.0-a48a80",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-sso" % "3.198.0-28afcb",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-sso" % "3.199.0-a0f92d",
   "org.scalablytyped" %%% "aws-sdk__credential-provider-web-identity" % "3.198.0-591abc",
-  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.198.0-14192e",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.199.0-790c51",
   "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.198.0-79b2ed",
   "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.198.0-d577da",
-  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.198.0-81fc84",
+  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.199.0-8dac0c",
   "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.198.0-c1c5a3",
   "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.198.0-bca63a",
   "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.198.0-270c7e",

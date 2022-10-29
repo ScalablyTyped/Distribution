@@ -90,7 +90,7 @@ object buildScriptsGetPropertyMod {
     element: HTMLElement,
     property: accessKey | accessKeyLabel | autocapitalize | dir | draggable | hidden | inert | innerText | lang | offsetHeight | offsetLeft | offsetParent | offsetTop | offsetWidth | outerText | spellcheck | title | translate
   ): js.UndefOr[
-    String | Double | Boolean | HTMLElement | Element | EventTarget | ChildNode | ParentNode | (js.Function0[js.Array[String] | Boolean | DOMRect | DOMRectList | ElementInternals | Unit]) | Document | (js.Function1[
+    String | Double | Boolean | HTMLElement | Element | ChildNode | ParentNode | (js.Function0[js.Array[String] | Boolean | DOMRect | DOMRectList | ElementInternals | Unit]) | Document | (js.Function1[
       js.UndefOr[
         (/* attr */ Attr) | Boolean | (/* pointerId */ Double) | (/* event */ Event) | FocusOptions | FullscreenOptions | GetAnimationsOptions | GetRootNodeOptions | (/* node */ Node) | Null | ScrollIntoViewOptions | (/* init */ ShadowRootInit) | (/* qualifiedName */ String)
       ], 
@@ -107,7 +107,7 @@ object buildScriptsGetPropertyMod {
       Animation | Attr | Boolean | Element | Node | Null | String | Unit
     ]) | FnCallQualifiedName | FnCallNamespaceURILocalName | FnCallXY | (js.Function3[/* namespace */ String | Null, /* qualifiedName */ String, /* value */ String, Unit]) | NodeListOf[ChildNode] | HTMLCollection | FnCallSelectors | Fn2 | HTMLSlotElement | CSSStyleDeclaration | DOMStringMap
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-    String | Double | Boolean | HTMLElement | Element | EventTarget | ChildNode | ParentNode | (js.Function0[js.Array[String] | Boolean | DOMRect | DOMRectList | ElementInternals | Unit]) | Document | (js.Function1[
+    String | Double | Boolean | HTMLElement | Element | ChildNode | ParentNode | (js.Function0[js.Array[String] | Boolean | DOMRect | DOMRectList | ElementInternals | Unit]) | Document | (js.Function1[
       js.UndefOr[
         (/* attr */ Attr) | Boolean | (/* pointerId */ Double) | (/* event */ Event) | FocusOptions | FullscreenOptions | GetAnimationsOptions | GetRootNodeOptions | (/* node */ Node) | Null | ScrollIntoViewOptions | (/* init */ ShadowRootInit) | (/* qualifiedName */ String)
       ], 

@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiCore.mod.ImageSource
+import typings.pixiCore.libTexturesBaseTextureMod.ImageSource
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class BaseImageResource protected ()
   extends typings.pixiCore.mod.BaseImageResource {
   /**
-    * @param {HTMLImageElement|HTMLCanvasElement|HTMLVideoElement|SVGElement} source
+    * @param {HTMLImageElement|HTMLVideoElement|ImageBitmap|PIXI.ICanvas} source
     */
   def this(source: ImageSource) = this()
 }

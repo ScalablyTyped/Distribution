@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__s3-request-presigner"
-version := "3.198.0-005086"
+version := "3.199.0-88bf16"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

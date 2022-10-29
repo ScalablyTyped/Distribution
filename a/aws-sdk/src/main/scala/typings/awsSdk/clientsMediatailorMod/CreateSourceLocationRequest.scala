@@ -29,7 +29,7 @@ trait CreateSourceLocationRequest extends StObject {
   /**
     * The name associated with the source location.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
   
   /**
     * The tags to assign to the source location. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -38,7 +38,7 @@ trait CreateSourceLocationRequest extends StObject {
 }
 object CreateSourceLocationRequest {
   
-  inline def apply(HttpConfiguration: HttpConfiguration, SourceLocationName: string): CreateSourceLocationRequest = {
+  inline def apply(HttpConfiguration: HttpConfiguration, SourceLocationName: _String): CreateSourceLocationRequest = {
     val __obj = js.Dynamic.literal(HttpConfiguration = HttpConfiguration.asInstanceOf[js.Any], SourceLocationName = SourceLocationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSourceLocationRequest]
   }
@@ -61,7 +61,7 @@ object CreateSourceLocationRequest {
     
     inline def setSegmentDeliveryConfigurationsVarargs(value: SegmentDeliveryConfiguration*): Self = StObject.set(x, "SegmentDeliveryConfigurations", js.Array(value*))
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

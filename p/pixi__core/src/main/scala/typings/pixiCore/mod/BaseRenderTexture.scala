@@ -1,5 +1,6 @@
 package typings.pixiCore.mod
 
+import typings.pixiCore.libTexturesBaseTextureMod.IBaseTextureOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,24 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {PIXI.MSAA_QUALITY} [options.multisample=PIXI.MSAA_QUALITY.NONE] - The number of samples of the frame buffer.
   */
 open class BaseRenderTexture ()
-  extends BaseTexture[Resource, IAutoDetectOptions]
-     with typings.pixiCore.GlobalMixins.BaseRenderTexture {
+  extends typings.pixiCore.libRenderTextureBaseRenderTextureMod.BaseRenderTexture {
   def this(options: IBaseTextureOptions[Any]) = this()
-  
-  var clearColor: js.Array[Double] = js.native
-  
-  /** The data structure for the filters. */
-  var filterStack: js.Array[Any] = js.native
-  
-  var framebuffer: Framebuffer = js.native
-  
-  /** The data structure for the stencil masks. */
-  var maskStack: js.Array[MaskData] = js.native
-  
-  /**
-    * Resizes the BaseRenderTexture.
-    * @param desiredWidth - The desired width to resize to.
-    * @param desiredHeight - The desired height to resize to.
-    */
-  def resize(desiredWidth: Double, desiredHeight: Double): Unit = js.native
 }

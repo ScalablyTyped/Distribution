@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TEXT_GRADIENT extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiText.mod.TEXT_GRADIENT & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiText.libConstMod.TEXT_GRADIENT & Double] = js.native
   
-  /* 1 */ val LINEAR_HORIZONTAL: typings.pixiText.mod.TEXT_GRADIENT.LINEAR_HORIZONTAL & Double = js.native
+  /* 1 */ val LINEAR_HORIZONTAL: typings.pixiText.libConstMod.TEXT_GRADIENT.LINEAR_HORIZONTAL & Double = js.native
   
-  /* 0 */ val LINEAR_VERTICAL: typings.pixiText.mod.TEXT_GRADIENT.LINEAR_VERTICAL & Double = js.native
+  /* 0 */ val LINEAR_VERTICAL: typings.pixiText.libConstMod.TEXT_GRADIENT.LINEAR_VERTICAL & Double = js.native
 }

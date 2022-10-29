@@ -9,7 +9,7 @@ trait GetChannelPolicyResponse extends StObject {
   /**
     * The IAM policy for the channel. IAM policies are used to control access to your channel.
     */
-  var Policy: js.UndefOr[string] = js.undefined
+  var Policy: js.UndefOr[_String] = js.undefined
 }
 object GetChannelPolicyResponse {
   
@@ -20,7 +20,7 @@ object GetChannelPolicyResponse {
   
   extension [Self <: GetChannelPolicyResponse](x: Self) {
     
-    inline def setPolicy(value: string): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: _String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }

@@ -7,7 +7,7 @@ import typings.pixiLoaders.mod.LoaderResource.OnProgressSignal
 import typings.pixiLoaders.mod.LoaderResource.OnStartSignal
 import typings.pixiLoaders.mod.LoaderResource.TYPE
 import typings.pixiLoaders.mod.LoaderResource.XHR_RESPONSE_TYPE
-import typings.pixiUtils.mod.Dict
+import typings.pixiUtils.libTypesMod.Dict
 import typings.std.Blob
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject

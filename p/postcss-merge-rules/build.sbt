@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postcss-merge-rules"
-version := "5.1.2-7f59dc"
+version := "5.1.3-a24387"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

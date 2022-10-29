@@ -1,8 +1,8 @@
 package typings.pixiJs.mod
 
-import typings.pixiCore.mod.IVideoResourceOptions
-import typings.pixiCore.mod.IVideoResourceOptionsElement
-import typings.pixiUtils.mod.Dict
+import typings.pixiCore.libTexturesResourcesVideoResourceMod.IVideoResourceOptions
+import typings.pixiCore.libTexturesResourcesVideoResourceMod.IVideoResourceOptionsElement
+import typings.pixiUtils.libTypesMod.Dict
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

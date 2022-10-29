@@ -3223,6 +3223,10 @@ object puppeteerStrings {
   inline def StorageDotsetInterestGroupTracking: StorageDotsetInterestGroupTracking = "Storage.setInterestGroupTracking".asInstanceOf[StorageDotsetInterestGroupTracking]
   
   @js.native
+  sealed trait StorageDotsetSharedStorageTracking extends StObject
+  inline def StorageDotsetSharedStorageTracking: StorageDotsetSharedStorageTracking = "Storage.setSharedStorageTracking".asInstanceOf[StorageDotsetSharedStorageTracking]
+  
+  @js.native
   sealed trait StorageDottrackCacheStorageForOrigin extends StObject
   inline def StorageDottrackCacheStorageForOrigin: StorageDottrackCacheStorageForOrigin = "Storage.trackCacheStorageForOrigin".asInstanceOf[StorageDottrackCacheStorageForOrigin]
   

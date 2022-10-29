@@ -1,5 +1,6 @@
 package typings.pixiCore.mod
 
+import typings.pixiCore.libTexturesBaseTextureMod.ImageSource
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
@@ -8,33 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@pixi/core", "BaseImageResource")
 @js.native
-open class BaseImageResource protected () extends Resource {
+open class BaseImageResource protected ()
+  extends typings.pixiCore.libTexturesResourcesMod.BaseImageResource {
   /**
-    * @param {HTMLImageElement|HTMLCanvasElement|HTMLVideoElement|SVGElement} source
+    * @param {HTMLImageElement|HTMLVideoElement|ImageBitmap|PIXI.ICanvas} source
     */
   def this(source: ImageSource) = this()
-  
-  /**
-    * If set to `true`, will force `texImage2D` over `texSubImage2D` for uploading.
-    * Certain types of media (e.g. video) using `texImage2D` is more performant.
-    * @default false
-    * @private
-    */
-  var noSubImage: Boolean = js.native
-  
-  /**
-    * The source element.
-    * @member {HTMLImageElement|HTMLCanvasElement|HTMLVideoElement|SVGElement}
-    * @readonly
-    */
-  var source: ImageSource = js.native
-  
-  def upload(
-    renderer: Renderer,
-    baseTexture: BaseTexture[Resource, IAutoDetectOptions],
-    glTexture: GLTexture,
-    source: ImageSource
-  ): Boolean = js.native
 }
 /* static members */
 object BaseImageResource {

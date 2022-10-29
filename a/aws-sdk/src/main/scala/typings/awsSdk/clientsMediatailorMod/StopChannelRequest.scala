@@ -9,17 +9,17 @@ trait StopChannelRequest extends StObject {
   /**
     * The name of the channel.
     */
-  var ChannelName: string
+  var ChannelName: _String
 }
 object StopChannelRequest {
   
-  inline def apply(ChannelName: string): StopChannelRequest = {
+  inline def apply(ChannelName: _String): StopChannelRequest = {
     val __obj = js.Dynamic.literal(ChannelName = ChannelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopChannelRequest]
   }
   
   extension [Self <: StopChannelRequest](x: Self) {
     
-    inline def setChannelName(value: string): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: _String): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
   }
 }

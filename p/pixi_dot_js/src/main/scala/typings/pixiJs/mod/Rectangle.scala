@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Rectangle")
 @js.native
 open class Rectangle protected ()
-  extends typings.pixiMath.mod.Rectangle {
+  extends typings.pixiCore.mod.Rectangle {
   /**
     * @param x - The X coordinate of the upper-left corner of the rectangle
     * @param y - The Y coordinate of the upper-left corner of the rectangle

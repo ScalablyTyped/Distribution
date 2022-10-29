@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Ticker")
 @js.native
 open class Ticker ()
-  extends typings.pixiTicker.mod.Ticker
+  extends typings.pixiCore.mod.Ticker
 /* static members */
 object Ticker {
   

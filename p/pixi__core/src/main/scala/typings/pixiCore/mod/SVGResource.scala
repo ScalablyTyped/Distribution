@@ -1,5 +1,6 @@
 package typings.pixiCore.mod
 
+import typings.pixiCore.libTexturesResourcesSvgresourceMod.ISVGResourceOptions
 import typings.pixiMath.mod.ISize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@pixi/core", "SVGResource")
 @js.native
-open class SVGResource protected () extends BaseImageResource {
+open class SVGResource protected ()
+  extends typings.pixiCore.libTexturesResourcesMod.SVGResource {
   /**
     * @param sourceBase64 - Base64 encoded SVG element or URL for SVG file.
     * @param {object} [options] - Options to use
@@ -18,30 +20,6 @@ open class SVGResource protected () extends BaseImageResource {
     */
   def this(sourceBase64: String) = this()
   def this(sourceBase64: String, options: ISVGResourceOptions) = this()
-  
-  /** Cross origin value to use */
-  /* private */ var _crossorigin: Any = js.native
-  
-  /** Promise when loading */
-  /* private */ var _load: Any = js.native
-  
-  /** Loads an SVG image from `imageUrl` or `data URL`. */
-  /* private */ var _loadSvg: Any = js.native
-  
-  /** A height override for rasterization on load. */
-  val _overrideHeight: Double = js.native
-  
-  /** A width override for rasterization on load. */
-  val _overrideWidth: Double = js.native
-  
-  /** Call when completely loaded. */
-  /* private */ var _resolve: Any = js.native
-  
-  /** The source scale to apply when rasterizing on load. */
-  val scale: Double = js.native
-  
-  /** Base64 encoded SVG element or URL for SVG file. */
-  val svg: String = js.native
 }
 /* static members */
 object SVGResource {

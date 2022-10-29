@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiParticleContainer.mod.IParticleProperties
+import typings.pixiParticleContainer.libParticleContainerMod.IParticleProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

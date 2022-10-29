@@ -5,6 +5,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.cacheStorageListUpdated
 import typings.devtoolsProtocol.devtoolsProtocolStrings.indexedDBContentUpdated
 import typings.devtoolsProtocol.devtoolsProtocolStrings.indexedDBListUpdated
 import typings.devtoolsProtocol.devtoolsProtocolStrings.interestGroupAccessed
+import typings.devtoolsProtocol.devtoolsProtocolStrings.sharedStorageAccessed
 import typings.devtoolsProtocol.mod.Protocol.Storage.CacheStorageContentUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.CacheStorageListUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.ClearCookiesRequest
@@ -31,6 +32,8 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.InterestGroupAccessedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.OverrideQuotaForOriginRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetCookiesRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.SetInterestGroupTrackingRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.SetSharedStorageTrackingRequest
+import typings.devtoolsProtocol.mod.Protocol.Storage.SharedStorageAccessedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.TrackCacheStorageForOriginRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.TrackIndexedDBForOriginRequest
 import typings.devtoolsProtocol.mod.Protocol.Storage.TrackIndexedDBForStorageKeyRequest
@@ -138,6 +141,15 @@ trait StorageApi extends StObject {
     event: interestGroupAccessed,
     listener: js.Function1[/* params */ InterestGroupAccessedEvent, Unit]
   ): Unit = js.native
+  /**
+    * Shared storage was accessed by the associated page.
+    * The following parameters are included in all events.
+    */
+  @JSName("on")
+  def on_sharedStorageAccessed(
+    event: sharedStorageAccessed,
+    listener: js.Function1[/* params */ SharedStorageAccessedEvent, Unit]
+  ): Unit = js.native
   
   /**
     * Override quota for the specified origin
@@ -153,6 +165,11 @@ trait StorageApi extends StObject {
     * Enables/Disables issuing of interestGroupAccessed events.
     */
   def setInterestGroupTracking(params: SetInterestGroupTrackingRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Enables/disables issuing of sharedStorageAccessed events.
+    */
+  def setSharedStorageTracking(params: SetSharedStorageTrackingRequest): js.Promise[Unit] = js.native
   
   /**
     * Registers origin to be notified when an update occurs to its cache storage list.

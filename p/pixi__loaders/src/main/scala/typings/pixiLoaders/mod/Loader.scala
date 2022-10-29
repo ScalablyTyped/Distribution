@@ -6,7 +6,7 @@ import typings.pixiLoaders.mod.Loader.OnLoadSignal
 import typings.pixiLoaders.mod.Loader.OnProgressSignal
 import typings.pixiLoaders.mod.Loader.OnStartSignal
 import typings.pixiLoaders.mod.LoaderResource.OnCompleteSignal
-import typings.pixiUtils.mod.Dict
+import typings.pixiUtils.libTypesMod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

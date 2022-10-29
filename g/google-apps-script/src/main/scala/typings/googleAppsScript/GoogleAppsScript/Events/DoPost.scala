@@ -18,10 +18,11 @@ object DoPost {
     contextPath: String,
     parameter: StringDictionary[String],
     parameters: StringDictionary[js.Array[String]],
+    pathInfo: String,
     postData: AppsScriptHttpRequestEventPostData,
     queryString: String
   ): DoPost = {
-    val __obj = js.Dynamic.literal(contentLength = contentLength.asInstanceOf[js.Any], contextPath = contextPath.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], postData = postData.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentLength = contentLength.asInstanceOf[js.Any], contextPath = contextPath.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], pathInfo = pathInfo.asInstanceOf[js.Any], postData = postData.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoPost]
   }
   

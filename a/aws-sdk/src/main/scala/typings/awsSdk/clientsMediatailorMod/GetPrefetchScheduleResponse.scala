@@ -9,7 +9,7 @@ trait GetPrefetchScheduleResponse extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the prefetch schedule.
     */
-  var Arn: js.UndefOr[string] = js.undefined
+  var Arn: js.UndefOr[_String] = js.undefined
   
   /**
     * Consumption settings determine how, and when, MediaTailor places the prefetched ads into ad breaks. Ad consumption occurs within a span of time that you define, called a consumption window. You can designate which ad breaks that MediaTailor fills with prefetch ads by setting avail matching criteria.
@@ -19,12 +19,12 @@ trait GetPrefetchScheduleResponse extends StObject {
   /**
     * The name of the prefetch schedule. The name must be unique among all prefetch schedules that are associated with the specified playback configuration.
     */
-  var Name: js.UndefOr[string] = js.undefined
+  var Name: js.UndefOr[_String] = js.undefined
   
   /**
     * The name of the playback configuration to create the prefetch schedule for.
     */
-  var PlaybackConfigurationName: js.UndefOr[string] = js.undefined
+  var PlaybackConfigurationName: js.UndefOr[_String] = js.undefined
   
   /**
     * A complex type that contains settings for prefetch retrieval from the ad decision server (ADS).
@@ -34,7 +34,7 @@ trait GetPrefetchScheduleResponse extends StObject {
   /**
     * An optional stream identifier that you can specify in order to prefetch for multiple streams that use the same playback configuration.
     */
-  var StreamId: js.UndefOr[string] = js.undefined
+  var StreamId: js.UndefOr[_String] = js.undefined
 }
 object GetPrefetchScheduleResponse {
   
@@ -45,7 +45,7 @@ object GetPrefetchScheduleResponse {
   
   extension [Self <: GetPrefetchScheduleResponse](x: Self) {
     
-    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
@@ -53,11 +53,11 @@ object GetPrefetchScheduleResponse {
     
     inline def setConsumptionUndefined: Self = StObject.set(x, "Consumption", js.undefined)
     
-    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: _String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setPlaybackConfigurationName(value: string): Self = StObject.set(x, "PlaybackConfigurationName", value.asInstanceOf[js.Any])
+    inline def setPlaybackConfigurationName(value: _String): Self = StObject.set(x, "PlaybackConfigurationName", value.asInstanceOf[js.Any])
     
     inline def setPlaybackConfigurationNameUndefined: Self = StObject.set(x, "PlaybackConfigurationName", js.undefined)
     
@@ -65,7 +65,7 @@ object GetPrefetchScheduleResponse {
     
     inline def setRetrievalUndefined: Self = StObject.set(x, "Retrieval", js.undefined)
     
-    inline def setStreamId(value: string): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: _String): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
     
     inline def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
   }

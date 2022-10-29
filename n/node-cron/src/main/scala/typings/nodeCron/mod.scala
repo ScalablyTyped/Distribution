@@ -1,5 +1,6 @@
 package typings.nodeCron
 
+import typings.nodeCron.nodeCronStrings.manual
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,8 +16,13 @@ object mod {
   
   inline def schedule(cronExpression: String, func: String): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
   inline def schedule(cronExpression: String, func: String, options: ScheduleOptions): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
-  inline def schedule(cronExpression: String, func: js.Function1[/* now */ js.Date, Unit]): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
-  inline def schedule(cronExpression: String, func: js.Function1[/* now */ js.Date, Unit], options: ScheduleOptions): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  
+  inline def schedule_manual(cronExpression: String, func: js.Function1[/* now */ js.Date | manual, Unit]): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  inline def schedule_manual(
+    cronExpression: String,
+    func: js.Function1[/* now */ js.Date | manual, Unit],
+    options: ScheduleOptions
+  ): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
   
   inline def validate(cronExpression: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(cronExpression.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -77,8 +83,11 @@ object mod {
   trait ScheduledTask
     extends typings.node.eventsMod.^ {
     
-    def start(): this.type = js.native
+    def now(): Unit = js.native
+    def now(now: js.Date): Unit = js.native
     
-    def stop(): this.type = js.native
+    def start(): Unit = js.native
+    
+    def stop(): Unit = js.native
   }
 }

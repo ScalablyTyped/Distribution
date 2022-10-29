@@ -19,16 +19,16 @@ trait RequestOutputItem extends StObject {
   /**
     * The name of the manifest for the channel. The name appears in the PlaybackUrl.
     */
-  var ManifestName: string
+  var ManifestName: _String
   
   /**
     * A string used to match which HttpPackageConfiguration is used for each VodSource.
     */
-  var SourceGroup: string
+  var SourceGroup: _String
 }
 object RequestOutputItem {
   
-  inline def apply(ManifestName: string, SourceGroup: string): RequestOutputItem = {
+  inline def apply(ManifestName: _String, SourceGroup: _String): RequestOutputItem = {
     val __obj = js.Dynamic.literal(ManifestName = ManifestName.asInstanceOf[js.Any], SourceGroup = SourceGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOutputItem]
   }
@@ -43,8 +43,8 @@ object RequestOutputItem {
     
     inline def setHlsPlaylistSettingsUndefined: Self = StObject.set(x, "HlsPlaylistSettings", js.undefined)
     
-    inline def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
+    inline def setManifestName(value: _String): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
     
-    inline def setSourceGroup(value: string): Self = StObject.set(x, "SourceGroup", value.asInstanceOf[js.Any])
+    inline def setSourceGroup(value: _String): Self = StObject.set(x, "SourceGroup", value.asInstanceOf[js.Any])
   }
 }

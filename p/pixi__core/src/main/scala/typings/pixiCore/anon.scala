@@ -1,17 +1,62 @@
 package typings.pixiCore
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.pixiCore.mod.AbstractBatchRenderer
-import typings.pixiCore.mod.BatchDrawCall
-import typings.pixiCore.mod.BatchTextureArray
-import typings.pixiCore.mod.Renderer
-import typings.pixiCore.mod.UBOElement
-import typings.pixiCore.mod.UniformsSyncCallback
+import typings.pixiCore.libShaderUtilsGenerateUniformBufferSyncMod.UBOElement
+import typings.pixiCore.libShaderUtilsGenerateUniformBufferSyncMod.UniformsSyncCallback
+import typings.pixiCore.pixiCoreStrings.interleaved
+import typings.pixiCore.pixiCoreStrings.separate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait BufferMode extends StObject {
+    
+    var bufferMode: separate | interleaved
+    
+    var names: js.Array[String]
+  }
+  object BufferMode {
+    
+    inline def apply(bufferMode: separate | interleaved, names: js.Array[String]): BufferMode = {
+      val __obj = js.Dynamic.literal(bufferMode = bufferMode.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BufferMode]
+    }
+    
+    extension [Self <: BufferMode](x: Self) {
+      
+      inline def setBufferMode(value: separate | interleaved): Self = StObject.set(x, "bufferMode", value.asInstanceOf[js.Any])
+      
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
+    }
+  }
+  
+  trait Fragment extends StObject {
+    
+    var fragment: js.UndefOr[String] = js.undefined
+    
+    var vertex: js.UndefOr[String] = js.undefined
+  }
+  object Fragment {
+    
+    inline def apply(): Fragment = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Fragment]
+    }
+    
+    extension [Self <: Fragment](x: Self) {
+      
+      inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      
+      inline def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
+      
+      inline def setVertex(value: String): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
+      
+      inline def setVertexUndefined: Self = StObject.set(x, "vertex", js.undefined)
+    }
+  }
   
   trait Height extends StObject {
     
@@ -86,31 +131,5 @@ object anon {
       
       inline def setSyncFunc(value: UniformsSyncCallback): Self = StObject.set(x, "syncFunc", value.asInstanceOf[js.Any])
     }
-  }
-  
-  @js.native
-  trait TypeofAbstractBatchRender
-    extends StObject
-       with Instantiable1[/* renderer */ Renderer, AbstractBatchRenderer] {
-    
-    /**
-      * Pool of `BatchDrawCall` objects that `flush` used
-      * to create "batches" of the objects being rendered.
-      *
-      * These are never re-allocated again.
-      * Shared between all batch renderers because it can be only one "flush" working at the moment.
-      * @member {PIXI.BatchDrawCall[]}
-      */
-    var _drawCallPool: js.Array[BatchDrawCall] = js.native
-    
-    /**
-      * Pool of `BatchDrawCall` objects that `flush` used
-      * to create "batches" of the objects being rendered.
-      *
-      * These are never re-allocated again.
-      * Shared between all batch renderers because it can be only one "flush" working at the moment.
-      * @member {PIXI.BatchTextureArray[]}
-      */
-    var _textureArrayPool: js.Array[BatchTextureArray] = js.native
   }
 }

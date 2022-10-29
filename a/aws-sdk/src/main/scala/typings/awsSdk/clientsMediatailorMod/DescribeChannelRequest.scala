@@ -9,17 +9,17 @@ trait DescribeChannelRequest extends StObject {
   /**
     * The name of the channel.
     */
-  var ChannelName: string
+  var ChannelName: _String
 }
 object DescribeChannelRequest {
   
-  inline def apply(ChannelName: string): DescribeChannelRequest = {
+  inline def apply(ChannelName: _String): DescribeChannelRequest = {
     val __obj = js.Dynamic.literal(ChannelName = ChannelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChannelRequest]
   }
   
   extension [Self <: DescribeChannelRequest](x: Self) {
     
-    inline def setChannelName(value: string): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: _String): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
   }
 }

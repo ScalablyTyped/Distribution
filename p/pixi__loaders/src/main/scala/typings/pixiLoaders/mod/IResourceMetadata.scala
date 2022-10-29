@@ -1,6 +1,6 @@
 package typings.pixiLoaders.mod
 
-import typings.pixiCore.mod.IBaseTextureOptions
+import typings.pixiCore.libTexturesBaseTextureMod.IBaseTextureOptions
 import typings.std.HTMLAudioElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement

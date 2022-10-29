@@ -1,7 +1,6 @@
 package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pixiCore.mod.Buffer2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Geometry ()
   extends typings.pixiCore.mod.Geometry {
-  def this(buffers: js.Array[Buffer2]) = this()
-  def this(buffers: js.Array[Buffer2], attributes: StringDictionary[typings.pixiCore.mod.Attribute]) = this()
-  def this(buffers: Unit, attributes: StringDictionary[typings.pixiCore.mod.Attribute]) = this()
+  def this(buffers: js.Array[typings.pixiCore.libGeometryBufferMod.Buffer]) = this()
+  def this(
+    buffers: js.Array[typings.pixiCore.libGeometryBufferMod.Buffer],
+    attributes: StringDictionary[typings.pixiCore.libGeometryAttributeMod.Attribute]
+  ) = this()
+  def this(buffers: Unit, attributes: StringDictionary[typings.pixiCore.libGeometryAttributeMod.Attribute]) = this()
 }
 /* static members */
 object Geometry {
@@ -32,5 +34,5 @@ object Geometry {
     * @param geometries - array of geometries to merge
     * @returns - Shiny new geometry!
     */
-  inline def merge(geometries: js.Array[typings.pixiCore.mod.Geometry]): typings.pixiCore.mod.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometries.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.Geometry]
+  inline def merge(geometries: js.Array[typings.pixiCore.libGeometryGeometryMod.Geometry]): typings.pixiCore.libGeometryGeometryMod.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometries.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.libGeometryGeometryMod.Geometry]
 }

@@ -26,10 +26,17 @@ trait StackSetOperationSummary extends StObject {
     */
   var OperationId: js.UndefOr[ClientRequestToken] = js.undefined
   
+  var OperationPreferences: js.UndefOr[StackSetOperationPreferences] = js.undefined
+  
   /**
     * The overall status of the operation.    FAILED: The operation exceeded the specified failure tolerance. The failure tolerance value that you've set for an operation is applied for each Region during stack create and update operations. If the number of failed stacks within a Region exceeds the failure tolerance, the status of the operation in the Region is set to FAILED. This in turn sets the status of the operation as a whole to FAILED, and CloudFormation cancels the operation in any remaining Regions.    QUEUED: [Service-managed permissions] For automatic deployments that require a sequence of operations, the operation is queued to be performed. For more information, see the stack set operation status codes in the CloudFormation User Guide.    RUNNING: The operation is currently being performed.    STOPPED: The user has canceled the operation.    STOPPING: The operation is in the process of stopping, at user request.    SUCCEEDED: The operation completed creating or updating all the specified stacks without exceeding the failure tolerance for the operation.  
     */
   var Status: js.UndefOr[StackSetOperationStatus] = js.undefined
+  
+  /**
+    * Detailed information about the stack set operation.
+    */
+  var StatusDetails: js.UndefOr[StackSetOperationStatusDetails] = js.undefined
   
   /**
     * The status of the operation in details.
@@ -61,7 +68,15 @@ object StackSetOperationSummary {
     
     inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
     
+    inline def setOperationPreferences(value: StackSetOperationPreferences): Self = StObject.set(x, "OperationPreferences", value.asInstanceOf[js.Any])
+    
+    inline def setOperationPreferencesUndefined: Self = StObject.set(x, "OperationPreferences", js.undefined)
+    
     inline def setStatus(value: StackSetOperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusDetails(value: StackSetOperationStatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
+    
+    inline def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
     
     inline def setStatusReason(value: StackSetOperationStatusReason): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     

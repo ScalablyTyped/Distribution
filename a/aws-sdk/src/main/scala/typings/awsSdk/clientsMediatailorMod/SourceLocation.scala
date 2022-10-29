@@ -14,7 +14,7 @@ trait SourceLocation extends StObject {
   /**
     * The ARN of the SourceLocation.
     */
-  var Arn: string
+  var Arn: _String
   
   /**
     * The timestamp that indicates when the source location was created.
@@ -44,7 +44,7 @@ trait SourceLocation extends StObject {
   /**
     * The name of the source location.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
   
   /**
     * The tags assigned to the source location. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -53,7 +53,7 @@ trait SourceLocation extends StObject {
 }
 object SourceLocation {
   
-  inline def apply(Arn: string, HttpConfiguration: HttpConfiguration, SourceLocationName: string): SourceLocation = {
+  inline def apply(Arn: _String, HttpConfiguration: HttpConfiguration, SourceLocationName: _String): SourceLocation = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], HttpConfiguration = HttpConfiguration.asInstanceOf[js.Any], SourceLocationName = SourceLocationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceLocation]
   }
@@ -64,7 +64,7 @@ object SourceLocation {
     
     inline def setAccessConfigurationUndefined: Self = StObject.set(x, "AccessConfiguration", js.undefined)
     
-    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
@@ -86,7 +86,7 @@ object SourceLocation {
     
     inline def setSegmentDeliveryConfigurationsVarargs(value: SegmentDeliveryConfiguration*): Self = StObject.set(x, "SegmentDeliveryConfigurations", js.Array(value*))
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

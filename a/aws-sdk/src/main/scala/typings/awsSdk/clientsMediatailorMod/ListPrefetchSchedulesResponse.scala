@@ -14,7 +14,7 @@ trait ListPrefetchSchedulesResponse extends StObject {
   /**
     * Pagination token returned by the list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.undefined
+  var NextToken: js.UndefOr[_String] = js.undefined
 }
 object ListPrefetchSchedulesResponse {
   
@@ -31,7 +31,7 @@ object ListPrefetchSchedulesResponse {
     
     inline def setItemsVarargs(value: PrefetchSchedule*): Self = StObject.set(x, "Items", js.Array(value*))
     
-    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: _String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }

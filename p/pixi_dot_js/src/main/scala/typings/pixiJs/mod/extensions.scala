@@ -8,6 +8,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Global registration of all PixiJS extensions. One-stop-shop for extensibility.
+  * @memberof PIXI
+  * @namespace extensions
+  */
 object extensions {
   
   @JSImport("pixi.js", "extensions")

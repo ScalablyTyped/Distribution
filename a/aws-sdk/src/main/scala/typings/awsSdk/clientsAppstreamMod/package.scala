@@ -60,6 +60,7 @@ type ArnList = js.Array[Arn]
   - typings.awsSdk.awsSdkStrings.API
   - typings.awsSdk.awsSdkStrings.SAML
   - typings.awsSdk.awsSdkStrings.USERPOOL
+  - typings.awsSdk.awsSdkStrings.AWS_AD
   - java.lang.String
 */
 type AuthenticationType = _AuthenticationType | java.lang.String
@@ -71,6 +72,14 @@ type AwsAccountIdList = js.Array[AwsAccountId]
 type Boolean = scala.Boolean
 
 type BooleanObject = scala.Boolean
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED_NO_DIRECTORY_LOGIN_FALLBACK
+  - java.lang.String
+*/
+type CertificateBasedAuthStatus = _CertificateBasedAuthStatus | java.lang.String
 
 type DescribeImagesMaxResults = Double
 

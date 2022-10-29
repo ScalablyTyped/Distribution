@@ -14,21 +14,21 @@ trait ListPrefetchSchedulesRequest extends StObject {
   /**
     * (Optional) If the playback configuration has more than MaxResults prefetch schedules, use NextToken to get the second and subsequent pages of results.  For the first ListPrefetchSchedulesRequest request, omit this value.  For the second and subsequent requests, get the value of NextToken from the previous response and specify that value for NextToken in the request.  If the previous response didn't include a NextToken element, there are no more prefetch schedules to get.
     */
-  var NextToken: js.UndefOr[string] = js.undefined
+  var NextToken: js.UndefOr[_String] = js.undefined
   
   /**
     * Retrieves the prefetch schedule(s) for a specific playback configuration.
     */
-  var PlaybackConfigurationName: string
+  var PlaybackConfigurationName: _String
   
   /**
     * An optional filtering parameter whereby MediaTailor filters the prefetch schedules to include only specific streams.
     */
-  var StreamId: js.UndefOr[string] = js.undefined
+  var StreamId: js.UndefOr[_String] = js.undefined
 }
 object ListPrefetchSchedulesRequest {
   
-  inline def apply(PlaybackConfigurationName: string): ListPrefetchSchedulesRequest = {
+  inline def apply(PlaybackConfigurationName: _String): ListPrefetchSchedulesRequest = {
     val __obj = js.Dynamic.literal(PlaybackConfigurationName = PlaybackConfigurationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPrefetchSchedulesRequest]
   }
@@ -39,13 +39,13 @@ object ListPrefetchSchedulesRequest {
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: _String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setPlaybackConfigurationName(value: string): Self = StObject.set(x, "PlaybackConfigurationName", value.asInstanceOf[js.Any])
+    inline def setPlaybackConfigurationName(value: _String): Self = StObject.set(x, "PlaybackConfigurationName", value.asInstanceOf[js.Any])
     
-    inline def setStreamId(value: string): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: _String): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
     
     inline def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
   }

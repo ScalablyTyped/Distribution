@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.pixiExtensions.mod.ExtensionMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,4 +35,9 @@ object StateSystem {
   @js.native
   def checkPolygonOffset: Any = js.native
   inline def checkPolygonOffset_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkPolygonOffset")(x.asInstanceOf[js.Any])
+  
+  /** @ignore */
+  @JSImport("pixi.js", "StateSystem.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
 }

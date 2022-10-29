@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-convert-values
 
-Typings are for version 5.1.2
+Typings are for version 5.1.3
 
 ## Library description:
 Convert values with PostCSS (e.g. ms -> s)

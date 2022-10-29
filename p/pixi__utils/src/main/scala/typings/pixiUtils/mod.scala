@@ -1,13 +1,22 @@
 package typings.pixiUtils
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.StringDictionary
 import typings.eventemitter3.mod.EventEmitterStatic
 import typings.eventemitter3.mod.ValidEventTypes
-import typings.pixiSettings.mod.isMobileResult
-import typings.pixiUtils.anon.Base
+import typings.pixiSettings.libIcanvasMod.ICanvas
+import typings.pixiSettings.libUtilsIsMobileMod.isMobileResult
 import typings.pixiUtils.anon.Data
-import typings.pixiUtils.anon.Length
+import typings.pixiUtils.libDataInterleaveTypedArraysMod.PackedArray
+import typings.pixiUtils.libNetworkDecomposeDataUriMod.DecomposedDataUri
+import typings.pixiUtils.libPathMod.Path_
+import typings.pixiUtils.libUrlMod.FormatFunction
+import typings.pixiUtils.libUrlMod.ParseFunction
+import typings.pixiUtils.libUrlMod.ResolveFunction
+import typings.pixiUtils.libUrlMod.URLFormatOptions
+import typings.pixiUtils.libUrlMod.UrlObject
+import typings.pixiUtils.libUrlMod.UrlWithParsedQuery
+import typings.pixiUtils.libUrlMod.UrlWithStringQuery
+import typings.pixiUtils.libUrlMod.Url_
 import typings.pixiUtils.pixiUtilsBooleans.`false`
 import typings.pixiUtils.pixiUtilsBooleans.`true`
 import typings.pixiUtils.pixiUtilsInts.`-1`
@@ -18,8 +27,6 @@ import typings.pixiUtils.pixiUtilsStrings.Int32Array
 import typings.pixiUtils.pixiUtilsStrings.Uint16Array
 import typings.pixiUtils.pixiUtilsStrings.Uint32Array
 import typings.pixiUtils.pixiUtilsStrings.Uint8Array
-import typings.std.CanvasRenderingContext2D
-import typings.std.HTMLCanvasElement
 import typings.std.Location
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
@@ -34,7 +41,8 @@ object mod {
   
   @JSImport("@pixi/utils", "CanvasRenderTarget")
   @js.native
-  open class CanvasRenderTarget protected () extends StObject {
+  open class CanvasRenderTarget protected ()
+    extends typings.pixiUtils.libMediaCanvasRenderTargetMod.CanvasRenderTarget {
     /**
       * @param width - the width for the newly created canvas
       * @param height - the height for the newly created canvas
@@ -42,48 +50,6 @@ object mod {
       */
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, resolution: Double) = this()
-    
-    /** The Canvas object that belongs to this CanvasRenderTarget. */
-    var canvas: HTMLCanvasElement = js.native
-    
-    /**
-      * Clears the canvas that was created by the CanvasRenderTarget class.
-      * @private
-      */
-    def clear(): Unit = js.native
-    
-    /** A CanvasRenderingContext2D object representing a two-dimensional rendering context. */
-    var context: CanvasRenderingContext2D = js.native
-    
-    /** Destroys this canvas. */
-    def destroy(): Unit = js.native
-    
-    /**
-      * The height of the canvas buffer in pixels.
-      * @member {number}
-      */
-    def height: Double = js.native
-    def height_=(`val`: Double): Unit = js.native
-    
-    /**
-      * Resizes the canvas to the specified width and height.
-      * @param desiredWidth - the desired width of the canvas
-      * @param desiredHeight - the desired height of the canvas
-      */
-    def resize(desiredWidth: Double, desiredHeight: Double): Unit = js.native
-    
-    /**
-      * The resolution / device pixel ratio of the canvas
-      * @default 1
-      */
-    var resolution: Double = js.native
-    
-    /**
-      * The width of the canvas buffer in pixels.
-      * @member {number}
-      */
-    def width: Double = js.native
-    def width_=(`val`: Double): Unit = js.native
   }
   
   @JSImport("@pixi/utils", "DATA_URI")
@@ -206,7 +172,7 @@ object mod {
   inline def rgb2hex(rgb: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def rgb2hex(rgb: js.typedarray.Float32Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def sayHello(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sayHello")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sayHello(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sayHello")().asInstanceOf[Unit]
   
   inline def sign(n: Double): `-1` | `0` | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[`-1` | `0` | `1`]
   
@@ -214,7 +180,7 @@ object mod {
   
   inline def string2hex(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("string2hex")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def trimCanvas(canvas: HTMLCanvasElement): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("trimCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[Data]
+  inline def trimCanvas(canvas: ICanvas): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("trimCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[Data]
   
   inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   
@@ -253,328 +219,5 @@ object mod {
     def resolve: ResolveFunction = js.native
     inline def resolve(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def resolve_=(x: ResolveFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolve")(x.asInstanceOf[js.Any])
-  }
-  
-  type ArrayFixed[T, L /* <: Double */] = Array[T] & Length[L]
-  
-  trait DecomposedDataUri extends StObject {
-    
-    var charset: String
-    
-    var data: String
-    
-    var encoding: String
-    
-    var mediaType: String
-    
-    var subType: String
-  }
-  object DecomposedDataUri {
-    
-    inline def apply(charset: String, data: String, encoding: String, mediaType: String, subType: String): DecomposedDataUri = {
-      val __obj = js.Dynamic.literal(charset = charset.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], subType = subType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DecomposedDataUri]
-    }
-    
-    extension [Self <: DecomposedDataUri](x: Self) {
-      
-      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
-      
-      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
-      
-      inline def setSubType(value: String): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type Dict[T] = StringDictionary[T]
-  
-  @js.native
-  trait FormatFunction extends StObject {
-    
-    def apply(URL: URL): String = js.native
-    def apply(URL: URL, options: URLFormatOptions): String = js.native
-    def apply(urlObject: String): String = js.native
-    def apply(urlObject: UrlObject): String = js.native
-  }
-  
-  type PackedArray = js.typedarray.Float32Array | js.typedarray.Uint32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array
-  
-  @js.native
-  trait ParseFunction extends StObject {
-    
-    def apply(urlStr: String): UrlWithStringQuery = js.native
-    def apply(urlStr: String, parseQueryString: Boolean): Url_ = js.native
-    def apply(urlStr: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Url_ = js.native
-    def apply(urlStr: String, parseQueryString: Unit, slashesDenoteHost: Boolean): UrlWithStringQuery = js.native
-    def apply(urlStr: String, parseQueryString: `false`): UrlWithStringQuery = js.native
-    def apply(urlStr: String, parseQueryString: `false`, slashesDenoteHost: Boolean): UrlWithStringQuery = js.native
-    def apply(urlStr: String, parseQueryString: `true`): UrlWithParsedQuery = js.native
-    def apply(urlStr: String, parseQueryString: `true`, slashesDenoteHost: Boolean): UrlWithParsedQuery = js.native
-  }
-  
-  /**
-    * This file contains redeclared types for Node `url` and `querystring` modules. These modules
-    * don't provide their own typings but instead are a part of the full Node typings. The purpose of
-    * this file is to redeclare the required types to avoid having the whole Node types as a
-    * dependency.
-    */
-  type ParsedUrlQuery = StringDictionary[String | js.Array[String]]
-  
-  type ParsedUrlQueryInput = StringDictionary[Any]
-  
-  @js.native
-  trait Path_ extends StObject {
-    
-    def basename(path: String): String = js.native
-    def basename(path: String, ext: String): String = js.native
-    
-    var delimiter: String = js.native
-    
-    def dirname(path: String): String = js.native
-    
-    def extname(path: String): String = js.native
-    
-    def getProtocol(path: String): String = js.native
-    
-    def hasProtocol(path: String): Boolean = js.native
-    
-    def isAbsolute(path: String): Boolean = js.native
-    
-    def isDataUrl(path: String): Boolean = js.native
-    
-    def isUrl(path: String): Boolean = js.native
-    
-    def join(paths: String*): String = js.native
-    
-    def normalize(path: String): String = js.native
-    
-    def parse(path: String): Base = js.native
-    
-    def rootname(path: String): String = js.native
-    
-    var sep: String = js.native
-    
-    def toAbsolute(url: String): String = js.native
-    def toAbsolute(url: String, baseUrl: String): String = js.native
-    def toAbsolute(url: String, baseUrl: String, rootUrl: String): String = js.native
-    def toAbsolute(url: String, baseUrl: Unit, rootUrl: String): String = js.native
-    
-    def toPosix(path: String): String = js.native
-  }
-  
-  type ResolveFunction = js.Function2[/* from */ String, /* to */ String, String]
-  
-  trait URLFormatOptions extends StObject {
-    
-    var auth: js.UndefOr[Boolean] = js.undefined
-    
-    var fragment: js.UndefOr[Boolean] = js.undefined
-    
-    var search: js.UndefOr[Boolean] = js.undefined
-    
-    var unicode: js.UndefOr[Boolean] = js.undefined
-  }
-  object URLFormatOptions {
-    
-    inline def apply(): URLFormatOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[URLFormatOptions]
-    }
-    
-    extension [Self <: URLFormatOptions](x: Self) {
-      
-      inline def setAuth(value: Boolean): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-      
-      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-      
-      inline def setFragment(value: Boolean): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
-      
-      inline def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
-      
-      inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
-      
-      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
-      
-      inline def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
-      
-      inline def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
-    }
-  }
-  
-  trait UrlObject
-    extends StObject
-       with UrlObjectCommon {
-    
-    var port: js.UndefOr[String | Double] = js.undefined
-    
-    var query: js.UndefOr[String | Null | ParsedUrlQueryInput] = js.undefined
-  }
-  object UrlObject {
-    
-    inline def apply(): UrlObject = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[UrlObject]
-    }
-    
-    extension [Self <: UrlObject](x: Self) {
-      
-      inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
-      
-      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
-      
-      inline def setQuery(value: String | ParsedUrlQueryInput): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-      
-      inline def setQueryNull: Self = StObject.set(x, "query", null)
-      
-      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
-    }
-  }
-  
-  trait UrlObjectCommon extends StObject {
-    
-    var auth: js.UndefOr[String] = js.undefined
-    
-    var hash: js.UndefOr[String] = js.undefined
-    
-    var host: js.UndefOr[String] = js.undefined
-    
-    var hostname: js.UndefOr[String] = js.undefined
-    
-    var href: js.UndefOr[String] = js.undefined
-    
-    var path: js.UndefOr[String] = js.undefined
-    
-    var pathname: js.UndefOr[String] = js.undefined
-    
-    var protocol: js.UndefOr[String] = js.undefined
-    
-    var search: js.UndefOr[String] = js.undefined
-    
-    var slashes: js.UndefOr[Boolean] = js.undefined
-  }
-  object UrlObjectCommon {
-    
-    inline def apply(): UrlObjectCommon = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[UrlObjectCommon]
-    }
-    
-    extension [Self <: UrlObjectCommon](x: Self) {
-      
-      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-      
-      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-      
-      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
-      
-      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
-      
-      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
-      
-      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
-      
-      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
-      
-      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
-      
-      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
-      
-      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
-      
-      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
-      
-      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
-      
-      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
-      
-      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
-      
-      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
-      
-      inline def setSlashes(value: Boolean): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
-      
-      inline def setSlashesUndefined: Self = StObject.set(x, "slashes", js.undefined)
-    }
-  }
-  
-  trait UrlWithParsedQuery
-    extends StObject
-       with Url_ {
-    
-    @JSName("query")
-    var query_UrlWithParsedQuery: ParsedUrlQuery
-  }
-  object UrlWithParsedQuery {
-    
-    inline def apply(query: ParsedUrlQuery): UrlWithParsedQuery = {
-      val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
-      __obj.asInstanceOf[UrlWithParsedQuery]
-    }
-    
-    extension [Self <: UrlWithParsedQuery](x: Self) {
-      
-      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait UrlWithStringQuery
-    extends StObject
-       with Url_ {
-    
-    @JSName("query")
-    var query_UrlWithStringQuery: String | Null
-  }
-  object UrlWithStringQuery {
-    
-    inline def apply(): UrlWithStringQuery = {
-      val __obj = js.Dynamic.literal(query = null)
-      __obj.asInstanceOf[UrlWithStringQuery]
-    }
-    
-    extension [Self <: UrlWithStringQuery](x: Self) {
-      
-      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-      
-      inline def setQueryNull: Self = StObject.set(x, "query", null)
-    }
-  }
-  
-  trait Url_
-    extends StObject
-       with UrlObjectCommon {
-    
-    var port: js.UndefOr[String] = js.undefined
-    
-    var query: js.UndefOr[String | Null | ParsedUrlQuery] = js.undefined
-  }
-  object Url_ {
-    
-    inline def apply(): Url_ = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Url_]
-    }
-    
-    extension [Self <: Url_](x: Self) {
-      
-      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
-      
-      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
-      
-      inline def setQuery(value: String | ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-      
-      inline def setQueryNull: Self = StObject.set(x, "query", null)
-      
-      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
-    }
   }
 }

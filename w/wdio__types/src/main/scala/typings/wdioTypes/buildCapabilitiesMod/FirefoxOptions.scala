@@ -15,7 +15,7 @@ trait FirefoxOptions extends StObject {
   
   var log: js.UndefOr[FirefoxLogObject] = js.undefined
   
-  var prefs: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
+  var prefs: js.UndefOr[StringDictionary[js.Array[String] | String | Double | Boolean]] = js.undefined
   
   var profile: js.UndefOr[String] = js.undefined
 }
@@ -46,7 +46,7 @@ object FirefoxOptions {
     
     inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    inline def setPrefs(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+    inline def setPrefs(value: StringDictionary[js.Array[String] | String | Double | Boolean]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
     
     inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     

@@ -14,19 +14,19 @@ trait UpdateLiveSourceRequest extends StObject {
   /**
     * The name of the live source.
     */
-  var LiveSourceName: string
+  var LiveSourceName: _String
   
   /**
     * The name of the source location associated with this Live Source.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
 }
 object UpdateLiveSourceRequest {
   
   inline def apply(
     HttpPackageConfigurations: HttpPackageConfigurations,
-    LiveSourceName: string,
-    SourceLocationName: string
+    LiveSourceName: _String,
+    SourceLocationName: _String
   ): UpdateLiveSourceRequest = {
     val __obj = js.Dynamic.literal(HttpPackageConfigurations = HttpPackageConfigurations.asInstanceOf[js.Any], LiveSourceName = LiveSourceName.asInstanceOf[js.Any], SourceLocationName = SourceLocationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLiveSourceRequest]
@@ -38,8 +38,8 @@ object UpdateLiveSourceRequest {
     
     inline def setHttpPackageConfigurationsVarargs(value: HttpPackageConfiguration*): Self = StObject.set(x, "HttpPackageConfigurations", js.Array(value*))
     
-    inline def setLiveSourceName(value: string): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
+    inline def setLiveSourceName(value: _String): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
   }
 }

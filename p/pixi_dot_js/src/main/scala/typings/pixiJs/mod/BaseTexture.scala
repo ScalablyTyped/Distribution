@@ -1,8 +1,8 @@
 package typings.pixiJs.mod
 
-import typings.pixiCore.mod.IAutoDetectOptions
-import typings.pixiCore.mod.IBaseTextureOptions
-import typings.pixiCore.mod.ImageSource
+import typings.pixiCore.libTexturesBaseTextureMod.IBaseTextureOptions
+import typings.pixiCore.libTexturesBaseTextureMod.ImageSource
+import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IAutoDetectOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "BaseTexture")
 @js.native
 /**
-  * @param {PIXI.Resource|string|HTMLImageElement|HTMLCanvasElement|HTMLVideoElement} [resource=null] -
+  * @param {PIXI.Resource|HTMLImageElement|HTMLVideoElement|ImageBitmap|ICanvas|string} [resource=null] -
   *        The current resource to use, for things that aren't Resource objects, will be converted
   *        into a Resource.
   * @param options - Collection of options
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {object} [options.resourceOptions] - Optional resource options,
   *        see {@link PIXI.autoDetectResource autoDetectResource}
   */
-open class BaseTexture[R /* <: typings.pixiCore.mod.Resource */, RO] ()
+open class BaseTexture[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO] ()
   extends typings.pixiCore.mod.BaseTexture[R, RO] {
   def this(resource: Any | R) = this()
   def this(resource: String) = this()
@@ -57,35 +57,35 @@ object BaseTexture {
     * @param {string} id - The id that the BaseTexture will be stored against.
     */
   inline def addToCache(
-    baseTexture: typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions],
+    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[typings.pixiCore.libTexturesResourcesResourceMod.Resource, IAutoDetectOptions],
     id: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToCache")(baseTexture.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: String): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: String, options: Unit, strict: Boolean): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: String, options: IBaseTextureOptions[RO]): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: String, options: IBaseTextureOptions[RO], strict: Boolean): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: js.Array[String]): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: js.Array[String], options: Unit, strict: Boolean): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: js.Array[String], options: IBaseTextureOptions[RO]): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: js.Array[String], options: IBaseTextureOptions[RO], strict: Boolean): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: String): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: String, options: Unit, strict: Boolean): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: String, options: IBaseTextureOptions[RO]): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: String, options: IBaseTextureOptions[RO], strict: Boolean): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: js.Array[String]): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: js.Array[String], options: Unit, strict: Boolean): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: js.Array[String], options: IBaseTextureOptions[RO]): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: js.Array[String], options: IBaseTextureOptions[RO], strict: Boolean): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
   /**
     * Helper function that creates a base texture based on the source you provide.
     * The source can be - image url, image element, canvas element. If the
     * source is an image url or an image element and not in the base texture
     * cache, it will be created and loaded.
     * @static
-    * @param {string|string[]|HTMLImageElement|HTMLCanvasElement|SVGElement|HTMLVideoElement} source - The
+    * @param {HTMLImageElement|HTMLVideoElement|ImageBitmap|PIXI.ICanvas|string|string[]} source - The
     *        source to create base texture from.
     * @param options - See {@link PIXI.BaseTexture}'s constructor for options.
     * @param {string} [options.pixiIdPrefix=pixiid] - If a source has no id, this is the prefix of the generated id
     * @param {boolean} [strict] - Enforce strict-mode, see {@link PIXI.settings.STRICT_TEXTURE_CACHE}.
     * @returns {PIXI.BaseTexture} The new base texture.
     */
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: ImageSource): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: ImageSource, options: Unit, strict: Boolean): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: ImageSource, options: IBaseTextureOptions[RO]): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
-  inline def from[R /* <: typings.pixiCore.mod.Resource */, RO](source: ImageSource, options: IBaseTextureOptions[RO], strict: Boolean): typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: ImageSource): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: ImageSource, options: Unit, strict: Boolean): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: ImageSource, options: IBaseTextureOptions[RO]): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
+  inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: ImageSource, options: IBaseTextureOptions[RO], strict: Boolean): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
   
   /**
     * Create a new BaseTexture with a BufferResource from a Float32Array.
@@ -101,21 +101,47 @@ object BaseTexture {
     * @param {PIXI.SCALE_MODES} [options.scaleMode=PIXI.SCALE_MODES.NEAREST] - Scale mode, pixelating by default
     * @returns - The resulting new BaseTexture
     */
-  inline def fromBuffer(buffer: js.typedarray.Float32Array, width: Double, height: Double): typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.BufferResource, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.BufferResource, IAutoDetectOptions]]
+  inline def fromBuffer(buffer: js.typedarray.Float32Array, width: Double, height: Double): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[
+    typings.pixiCore.libTexturesResourcesBufferResourceMod.BufferResource, 
+    IAutoDetectOptions
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[
+    typings.pixiCore.libTexturesResourcesBufferResourceMod.BufferResource, 
+    IAutoDetectOptions
+  ]]
   inline def fromBuffer(
     buffer: js.typedarray.Float32Array,
     width: Double,
     height: Double,
     options: IBaseTextureOptions[Any]
-  ): typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.BufferResource, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.BufferResource, IAutoDetectOptions]]
-  inline def fromBuffer(buffer: js.typedarray.Uint8Array, width: Double, height: Double): typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.BufferResource, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.BufferResource, IAutoDetectOptions]]
-  inline def fromBuffer(buffer: js.typedarray.Uint8Array, width: Double, height: Double, options: IBaseTextureOptions[Any]): typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.BufferResource, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.BufferResource, IAutoDetectOptions]]
+  ): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[
+    typings.pixiCore.libTexturesResourcesBufferResourceMod.BufferResource, 
+    IAutoDetectOptions
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[
+    typings.pixiCore.libTexturesResourcesBufferResourceMod.BufferResource, 
+    IAutoDetectOptions
+  ]]
+  inline def fromBuffer(buffer: js.typedarray.Uint8Array, width: Double, height: Double): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[
+    typings.pixiCore.libTexturesResourcesBufferResourceMod.BufferResource, 
+    IAutoDetectOptions
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[
+    typings.pixiCore.libTexturesResourcesBufferResourceMod.BufferResource, 
+    IAutoDetectOptions
+  ]]
+  inline def fromBuffer(buffer: js.typedarray.Uint8Array, width: Double, height: Double, options: IBaseTextureOptions[Any]): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[
+    typings.pixiCore.libTexturesResourcesBufferResourceMod.BufferResource, 
+    IAutoDetectOptions
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[
+    typings.pixiCore.libTexturesResourcesBufferResourceMod.BufferResource, 
+    IAutoDetectOptions
+  ]]
   
   /**
     * Remove a BaseTexture from the global BaseTextureCache.
     * @param {string|PIXI.BaseTexture} baseTexture - id of a BaseTexture to be removed, or a BaseTexture instance itself.
     * @returns {PIXI.BaseTexture|null} The BaseTexture that was removed.
     */
-  inline def removeFromCache(baseTexture: String): (typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(baseTexture.asInstanceOf[js.Any]).asInstanceOf[(typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions]) | Null]
-  inline def removeFromCache(baseTexture: typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions]): (typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(baseTexture.asInstanceOf[js.Any]).asInstanceOf[(typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions]) | Null]
+  inline def removeFromCache(baseTexture: String): (typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[typings.pixiCore.libTexturesResourcesResourceMod.Resource, IAutoDetectOptions]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(baseTexture.asInstanceOf[js.Any]).asInstanceOf[(typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[typings.pixiCore.libTexturesResourcesResourceMod.Resource, IAutoDetectOptions]) | Null]
+  inline def removeFromCache(
+    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[typings.pixiCore.libTexturesResourcesResourceMod.Resource, IAutoDetectOptions]
+  ): (typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[typings.pixiCore.libTexturesResourcesResourceMod.Resource, IAutoDetectOptions]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(baseTexture.asInstanceOf[js.Any]).asInstanceOf[(typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[typings.pixiCore.libTexturesResourcesResourceMod.Resource, IAutoDetectOptions]) | Null]
 }

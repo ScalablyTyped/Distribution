@@ -1,7 +1,7 @@
 
 # Scala.js typings for devtools
 
-Typings are for version 7.25.1
+Typings are for version 7.25.4
 
 ## Library description:
 A Chrome DevTools protocol binding that maps WebDriver commands into Chrome DevTools commands using Puppeteer

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/text" : "6.5.8"
+      "@pixi/text" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/text" : "6.5.8"
+      "@pixi/text" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

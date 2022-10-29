@@ -14,7 +14,7 @@ trait UpdateSourceLocationResponse extends StObject {
   /**
     * The Amazon Resource Name (ARN) associated with the source location.
     */
-  var Arn: js.UndefOr[string] = js.undefined
+  var Arn: js.UndefOr[_String] = js.undefined
   
   /**
     * The timestamp that indicates when the source location was created.
@@ -44,7 +44,7 @@ trait UpdateSourceLocationResponse extends StObject {
   /**
     * The name of the source location.
     */
-  var SourceLocationName: js.UndefOr[string] = js.undefined
+  var SourceLocationName: js.UndefOr[_String] = js.undefined
   
   /**
     * The tags to assign to the source location. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -64,7 +64,7 @@ object UpdateSourceLocationResponse {
     
     inline def setAccessConfigurationUndefined: Self = StObject.set(x, "AccessConfiguration", js.undefined)
     
-    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
@@ -90,7 +90,7 @@ object UpdateSourceLocationResponse {
     
     inline def setSegmentDeliveryConfigurationsVarargs(value: SegmentDeliveryConfiguration*): Self = StObject.set(x, "SegmentDeliveryConfigurations", js.Array(value*))
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setSourceLocationNameUndefined: Self = StObject.set(x, "SourceLocationName", js.undefined)
     

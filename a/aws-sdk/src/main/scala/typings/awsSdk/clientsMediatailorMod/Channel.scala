@@ -9,17 +9,17 @@ trait Channel extends StObject {
   /**
     * The ARN of the channel.
     */
-  var Arn: string
+  var Arn: _String
   
   /**
     * The name of the channel.
     */
-  var ChannelName: string
+  var ChannelName: _String
   
   /**
     * Returns the state whether the channel is running or not.
     */
-  var ChannelState: string
+  var ChannelState: _String
   
   /**
     * The timestamp of when the channel was created.
@@ -44,7 +44,7 @@ trait Channel extends StObject {
   /**
     * The type of playback mode for this channel.  LINEAR - Programs play back-to-back only once.  LOOP - Programs play back-to-back in an endless loop. When the last program in the schedule plays, playback loops back to the first program in the schedule.
     */
-  var PlaybackMode: string
+  var PlaybackMode: _String
   
   /**
     * The tags to assign to the channel. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -54,17 +54,17 @@ trait Channel extends StObject {
   /**
     * The tier for this channel. STANDARD tier channels can contain live programs.
     */
-  var Tier: string
+  var Tier: _String
 }
 object Channel {
   
   inline def apply(
-    Arn: string,
-    ChannelName: string,
-    ChannelState: string,
+    Arn: _String,
+    ChannelName: _String,
+    ChannelState: _String,
     Outputs: ResponseOutputs,
-    PlaybackMode: string,
-    Tier: string
+    PlaybackMode: _String,
+    Tier: _String
   ): Channel = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], ChannelName = ChannelName.asInstanceOf[js.Any], ChannelState = ChannelState.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any], PlaybackMode = PlaybackMode.asInstanceOf[js.Any], Tier = Tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
@@ -72,11 +72,11 @@ object Channel {
   
   extension [Self <: Channel](x: Self) {
     
-    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    inline def setChannelName(value: string): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: _String): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     
-    inline def setChannelState(value: string): Self = StObject.set(x, "ChannelState", value.asInstanceOf[js.Any])
+    inline def setChannelState(value: _String): Self = StObject.set(x, "ChannelState", value.asInstanceOf[js.Any])
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
@@ -94,12 +94,12 @@ object Channel {
     
     inline def setOutputsVarargs(value: ResponseOutputItem*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
-    inline def setPlaybackMode(value: string): Self = StObject.set(x, "PlaybackMode", value.asInstanceOf[js.Any])
+    inline def setPlaybackMode(value: _String): Self = StObject.set(x, "PlaybackMode", value.asInstanceOf[js.Any])
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTier(value: string): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: _String): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
   }
 }

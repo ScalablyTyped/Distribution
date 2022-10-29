@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Graphics ()
   extends typings.pixiGraphics.mod.Graphics {
-  def this(geometry: typings.pixiGraphics.mod.GraphicsGeometry) = this()
+  def this(geometry: typings.pixiGraphics.libGraphicsGeometryMod.GraphicsGeometry) = this()
 }
 /* static members */
 object Graphics {
@@ -26,15 +26,6 @@ object Graphics {
     */
   @JSImport("pixi.js", "Graphics._TEMP_POINT")
   @js.native
-  def _TEMP_POINT: typings.pixiMath.mod.Point = js.native
-  inline def _TEMP_POINT_=(x: typings.pixiMath.mod.Point): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TEMP_POINT")(x.asInstanceOf[js.Any])
-  
-  /**
-    * New rendering behavior for rounded rectangles: circular arcs instead of quadratic bezier curves.
-    * In the next major release, we'll enable this by default.
-    */
-  @JSImport("pixi.js", "Graphics.nextRoundedRectBehavior")
-  @js.native
-  def nextRoundedRectBehavior: Boolean = js.native
-  inline def nextRoundedRectBehavior_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextRoundedRectBehavior")(x.asInstanceOf[js.Any])
+  def _TEMP_POINT: typings.pixiCore.mod.Point = js.native
+  inline def _TEMP_POINT_=(x: typings.pixiCore.mod.Point): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TEMP_POINT")(x.asInstanceOf[js.Any])
 }

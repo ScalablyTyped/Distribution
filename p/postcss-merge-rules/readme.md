@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-merge-rules
 
-Typings are for version 5.1.2
+Typings are for version 5.1.3
 
 ## Library description:
 Merge CSS rules with PostCSS.

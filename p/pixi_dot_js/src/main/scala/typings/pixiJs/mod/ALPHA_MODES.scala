@@ -19,8 +19,6 @@ object ALPHA_MODES extends StObject {
   
   /* 2 */ val PREMULTIPLIED_ALPHA: typings.pixiConstants.mod.ALPHA_MODES.PREMULTIPLIED_ALPHA & Double = js.native
   
-  /* 2 */ val PREMULTIPLY_ALPHA: typings.pixiConstants.mod.ALPHA_MODES.PREMULTIPLY_ALPHA & Double = js.native
-  
   /* 1 */ val PREMULTIPLY_ON_UPLOAD: typings.pixiConstants.mod.ALPHA_MODES.PREMULTIPLY_ON_UPLOAD & Double = js.native
   
   /* 1 */ val UNPACK: typings.pixiConstants.mod.ALPHA_MODES.UNPACK & Double = js.native

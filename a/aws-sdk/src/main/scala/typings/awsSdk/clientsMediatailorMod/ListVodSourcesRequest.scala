@@ -14,16 +14,16 @@ trait ListVodSourcesRequest extends StObject {
   /**
     * Pagination token returned by the list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.undefined
+  var NextToken: js.UndefOr[_String] = js.undefined
   
   /**
     * The name of the source location associated with this VOD Source list.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
 }
 object ListVodSourcesRequest {
   
-  inline def apply(SourceLocationName: string): ListVodSourcesRequest = {
+  inline def apply(SourceLocationName: _String): ListVodSourcesRequest = {
     val __obj = js.Dynamic.literal(SourceLocationName = SourceLocationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVodSourcesRequest]
   }
@@ -34,10 +34,10 @@ object ListVodSourcesRequest {
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: _String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
   }
 }

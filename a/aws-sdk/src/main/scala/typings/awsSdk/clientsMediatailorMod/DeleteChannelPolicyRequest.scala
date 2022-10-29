@@ -9,17 +9,17 @@ trait DeleteChannelPolicyRequest extends StObject {
   /**
     * The name of the channel associated with this channel policy.
     */
-  var ChannelName: string
+  var ChannelName: _String
 }
 object DeleteChannelPolicyRequest {
   
-  inline def apply(ChannelName: string): DeleteChannelPolicyRequest = {
+  inline def apply(ChannelName: _String): DeleteChannelPolicyRequest = {
     val __obj = js.Dynamic.literal(ChannelName = ChannelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteChannelPolicyRequest]
   }
   
   extension [Self <: DeleteChannelPolicyRequest](x: Self) {
     
-    inline def setChannelName(value: string): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: _String): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
   }
 }

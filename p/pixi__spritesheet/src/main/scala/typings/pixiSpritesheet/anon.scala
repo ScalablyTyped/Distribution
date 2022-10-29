@@ -35,6 +35,35 @@ object anon {
     }
   }
   
+  trait Image extends StObject {
+    
+    var image: String
+    
+    var related_multi_packs: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var scale: String
+  }
+  object Image {
+    
+    inline def apply(image: String, scale: String): Image = {
+      val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Image]
+    }
+    
+    extension [Self <: Image](x: Self) {
+      
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setRelated_multi_packs(value: js.Array[String]): Self = StObject.set(x, "related_multi_packs", value.asInstanceOf[js.Any])
+      
+      inline def setRelated_multi_packsUndefined: Self = StObject.set(x, "related_multi_packs", js.undefined)
+      
+      inline def setRelated_multi_packsVarargs(value: String*): Self = StObject.set(x, "related_multi_packs", js.Array(value*))
+      
+      inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Relatedmultipacks extends StObject {
     
     var related_multi_packs: js.UndefOr[js.Array[String]] = js.undefined

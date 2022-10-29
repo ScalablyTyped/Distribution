@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-to-csv-export"
-version := "2.0.2-90ccea"
+version := "2.1.0-729cd6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

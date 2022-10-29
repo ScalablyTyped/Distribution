@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.pixiCore.libIrendererMod.IRenderer
 import typings.pixiExtensions.mod.ExtensionMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,8 +13,7 @@ open class AccessibilityManager protected ()
   /**
     * @param {PIXI.CanvasRenderer|PIXI.Renderer} renderer - A reference to the current renderer
     */
-  def this(renderer: typings.pixiCore.mod.AbstractRenderer) = this()
-  def this(renderer: typings.pixiCore.mod.Renderer) = this()
+  def this(renderer: IRenderer) = this()
 }
 /* static members */
 object AccessibilityManager {

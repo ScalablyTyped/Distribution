@@ -1,13 +1,20 @@
 package typings.pixiGraphics
 
-import typings.pixiGraphics.mod.IArcLikeShape
+import org.scalablytyped.runtime.Instantiable0
+import typings.pixiGraphics.libUtilsArcUtilsMod.IArcLikeShape
+import typings.pixiGraphics.libUtilsMod.ArcUtils
+import typings.pixiGraphics.libUtilsMod.BezierUtils
+import typings.pixiGraphics.libUtilsMod.QuadraticUtils
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait TypeofArcUtils extends StObject {
+  @js.native
+  trait TypeofArcUtils
+    extends StObject
+       with Instantiable0[ArcUtils] {
     
     /**
       * The arc method creates an arc/curve (used to create circles, or parts of circles).
@@ -25,7 +32,6 @@ object anon {
       *  indicates counter-clockwise.
       * @param points - Collection of points to add to
       */
-    /* static member */
     def arc(
       _startX: Double,
       _startY: Double,
@@ -36,7 +42,7 @@ object anon {
       endAngle: Double,
       _anticlockwise: Boolean,
       points: js.Array[Double]
-    ): Unit
+    ): Unit = js.native
     
     /**
       * The arcTo() method creates an arc/curve between two tangents on the canvas.
@@ -51,28 +57,13 @@ object anon {
       * @param points -
       * @returns - If the arc length is valid, return center of circle, radius and other info otherwise `null`.
       */
-    /* static member */
-    def curveTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double, points: js.Array[Double]): IArcLikeShape
-  }
-  object TypeofArcUtils {
-    
-    inline def apply(
-      arc: (Double, Double, Double, Double, Double, Double, Double, Boolean, js.Array[Double]) => Unit,
-      curveTo: (Double, Double, Double, Double, Double, js.Array[Double]) => IArcLikeShape
-    ): TypeofArcUtils = {
-      val __obj = js.Dynamic.literal(arc = js.Any.fromFunction9(arc), curveTo = js.Any.fromFunction6(curveTo))
-      __obj.asInstanceOf[TypeofArcUtils]
-    }
-    
-    extension [Self <: TypeofArcUtils](x: Self) {
-      
-      inline def setArc(value: (Double, Double, Double, Double, Double, Double, Double, Boolean, js.Array[Double]) => Unit): Self = StObject.set(x, "arc", js.Any.fromFunction9(value))
-      
-      inline def setCurveTo(value: (Double, Double, Double, Double, Double, js.Array[Double]) => IArcLikeShape): Self = StObject.set(x, "curveTo", js.Any.fromFunction6(value))
-    }
+    def curveTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double, points: js.Array[Double]): IArcLikeShape = js.native
   }
   
-  trait TypeofBezierUtils extends StObject {
+  @js.native
+  trait TypeofBezierUtils
+    extends StObject
+       with Instantiable0[BezierUtils] {
     
     /**
       * Calculate length of bezier curve.
@@ -89,7 +80,6 @@ object anon {
       * @param toY - Destination point y
       * @returns - Length of bezier curve
       */
-    /* static member */
     def curveLength(
       fromX: Double,
       fromY: Double,
@@ -99,7 +89,7 @@ object anon {
       cpY2: Double,
       toX: Double,
       toY: Double
-    ): Double
+    ): Double = js.native
     
     /**
       * Calculate the points for a bezier curve and then draws it.
@@ -114,7 +104,6 @@ object anon {
       * @param toY - Destination point y
       * @param points - Path array to push points into
       */
-    /* static member */
     def curveTo(
       cpX: Double,
       cpY: Double,
@@ -123,27 +112,13 @@ object anon {
       toX: Double,
       toY: Double,
       points: js.Array[Double]
-    ): Unit
-  }
-  object TypeofBezierUtils {
-    
-    inline def apply(
-      curveLength: (Double, Double, Double, Double, Double, Double, Double, Double) => Double,
-      curveTo: (Double, Double, Double, Double, Double, Double, js.Array[Double]) => Unit
-    ): TypeofBezierUtils = {
-      val __obj = js.Dynamic.literal(curveLength = js.Any.fromFunction8(curveLength), curveTo = js.Any.fromFunction7(curveTo))
-      __obj.asInstanceOf[TypeofBezierUtils]
-    }
-    
-    extension [Self <: TypeofBezierUtils](x: Self) {
-      
-      inline def setCurveLength(value: (Double, Double, Double, Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "curveLength", js.Any.fromFunction8(value))
-      
-      inline def setCurveTo(value: (Double, Double, Double, Double, Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "curveTo", js.Any.fromFunction7(value))
-    }
+    ): Unit = js.native
   }
   
-  trait TypeofQuadraticUtils extends StObject {
+  @js.native
+  trait TypeofQuadraticUtils
+    extends StObject
+       with Instantiable0[QuadraticUtils] {
     
     /**
       * Calculate length of quadratic curve
@@ -158,8 +133,7 @@ object anon {
       * @param toY - y-coordinate of curve end point
       * @returns - Length of quadratic curve
       */
-    /* static member */
-    def curveLength(fromX: Double, fromY: Double, cpX: Double, cpY: Double, toX: Double, toY: Double): Double
+    def curveLength(fromX: Double, fromY: Double, cpX: Double, cpY: Double, toX: Double, toY: Double): Double = js.native
     
     /**
       * Calculate the points for a quadratic bezier curve and then draws it.
@@ -171,24 +145,6 @@ object anon {
       * @param toY - Destination point y
       * @param points - Points to add segments to.
       */
-    /* static member */
-    def curveTo(cpX: Double, cpY: Double, toX: Double, toY: Double, points: js.Array[Double]): Unit
-  }
-  object TypeofQuadraticUtils {
-    
-    inline def apply(
-      curveLength: (Double, Double, Double, Double, Double, Double) => Double,
-      curveTo: (Double, Double, Double, Double, js.Array[Double]) => Unit
-    ): TypeofQuadraticUtils = {
-      val __obj = js.Dynamic.literal(curveLength = js.Any.fromFunction6(curveLength), curveTo = js.Any.fromFunction5(curveTo))
-      __obj.asInstanceOf[TypeofQuadraticUtils]
-    }
-    
-    extension [Self <: TypeofQuadraticUtils](x: Self) {
-      
-      inline def setCurveLength(value: (Double, Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "curveLength", js.Any.fromFunction6(value))
-      
-      inline def setCurveTo(value: (Double, Double, Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "curveTo", js.Any.fromFunction5(value))
-    }
+    def curveTo(cpX: Double, cpY: Double, toX: Double, toY: Double, points: js.Array[Double]): Unit = js.native
   }
 }

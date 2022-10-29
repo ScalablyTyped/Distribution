@@ -1,7 +1,8 @@
 package typings.pixiCore.mod
 
+import typings.pixiCore.libTexturesResourcesCubeResourceMod.ICubeResourceOptions
 import typings.pixiCore.pixiCoreInts.`6`
-import typings.pixiUtils.mod.ArrayFixed
+import typings.pixiUtils.libTypesMod.ArrayFixed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,21 +19,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {number} [options.linkBaseTexture=true] - In case BaseTextures are supplied,
   *   whether to copy them or use
   */
-open class CubeResource () extends AbstractMultiResource {
-  def this(source: ArrayFixed[String | Resource, `6`]) = this()
+open class CubeResource ()
+  extends typings.pixiCore.libTexturesResourcesMod.CubeResource {
+  def this(source: ArrayFixed[String | typings.pixiCore.libTexturesResourcesResourceMod.Resource, `6`]) = this()
   def this(source: Unit, options: ICubeResourceOptions) = this()
-  def this(source: ArrayFixed[String | Resource, `6`], options: ICubeResourceOptions) = this()
-  
-  def addBaseTextureAt(baseTexture: BaseTexture[Resource, IAutoDetectOptions], index: Double, linkBaseTexture: Boolean): this.type = js.native
-  
-  @JSName("items")
-  var items_CubeResource: ArrayFixed[BaseTexture[Resource, IAutoDetectOptions], `6`] = js.native
-  
-  /**
-    * In case BaseTextures are supplied, whether to use same resource or bind baseTexture itself.
-    * @protected
-    */
-  var linkBaseTexture: Boolean = js.native
+  def this(
+    source: ArrayFixed[String | typings.pixiCore.libTexturesResourcesResourceMod.Resource, `6`],
+    options: ICubeResourceOptions
+  ) = this()
 }
 /* static members */
 object CubeResource {
@@ -52,5 +46,5 @@ object CubeResource {
     * @param {*} source - The source object
     * @returns {boolean} `true` if source is an array of 6 elements
     */
-  inline def test(source: Any): /* is @pixi/utils.@pixi/utils.ArrayFixed<string | @pixi/core.@pixi/core.Resource, 6> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[/* is @pixi/utils.@pixi/utils.ArrayFixed<string | @pixi/core.@pixi/core.Resource, 6> */ Boolean]
+  inline def test(source: Any): /* is @pixi/utils.@pixi/utils/lib/types.ArrayFixed<string | @pixi/core.@pixi/core/lib/textures/resources/Resource.Resource, 6> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[/* is @pixi/utils.@pixi/utils/lib/types.ArrayFixed<string | @pixi/core.@pixi/core/lib/textures/resources/Resource.Resource, 6> */ Boolean]
 }

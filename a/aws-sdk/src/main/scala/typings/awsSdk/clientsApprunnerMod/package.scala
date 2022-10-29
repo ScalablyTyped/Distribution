@@ -175,6 +175,10 @@ type RoleArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.CORRETTO_8
   - typings.awsSdk.awsSdkStrings.CORRETTO_11
   - typings.awsSdk.awsSdkStrings.NODEJS_16
+  - typings.awsSdk.awsSdkStrings.GO_1
+  - typings.awsSdk.awsSdkStrings.DOTNET_6
+  - typings.awsSdk.awsSdkStrings.PHP_81
+  - typings.awsSdk.awsSdkStrings.RUBY_31
   - java.lang.String
 */
 type Runtime = _Runtime | java.lang.String

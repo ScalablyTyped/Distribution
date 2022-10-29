@@ -160,12 +160,12 @@ trait AppStream extends Service {
   ): Request[CreateEntitlementResult, AWSError] = js.native
   
   /**
-    * Creates a fleet. A fleet consists of streaming instances that run a specified image when using Always-On or On-Demand.
+    * Creates a fleet. A fleet consists of streaming instances that your users access for their applications and desktops.
     */
   def createFleet(): Request[CreateFleetResult, AWSError] = js.native
   def createFleet(callback: js.Function2[/* err */ AWSError, /* data */ CreateFleetResult, Unit]): Request[CreateFleetResult, AWSError] = js.native
   /**
-    * Creates a fleet. A fleet consists of streaming instances that run a specified image when using Always-On or On-Demand.
+    * Creates a fleet. A fleet consists of streaming instances that your users access for their applications and desktops.
     */
   def createFleet(params: CreateFleetRequest): Request[CreateFleetResult, AWSError] = js.native
   def createFleet(

@@ -14,12 +14,12 @@ trait DescribeProgramResponse extends StObject {
   /**
     * The ARN of the program.
     */
-  var Arn: js.UndefOr[string] = js.undefined
+  var Arn: js.UndefOr[_String] = js.undefined
   
   /**
     * The name of the channel that the program belongs to.
     */
-  var ChannelName: js.UndefOr[string] = js.undefined
+  var ChannelName: js.UndefOr[_String] = js.undefined
   
   /**
     * The timestamp of when the program was created.
@@ -29,12 +29,12 @@ trait DescribeProgramResponse extends StObject {
   /**
     * The name of the LiveSource for this Program.
     */
-  var LiveSourceName: js.UndefOr[string] = js.undefined
+  var LiveSourceName: js.UndefOr[_String] = js.undefined
   
   /**
     * The name of the program.
     */
-  var ProgramName: js.UndefOr[string] = js.undefined
+  var ProgramName: js.UndefOr[_String] = js.undefined
   
   /**
     * The date and time that the program is scheduled to start in ISO 8601 format and Coordinated Universal Time (UTC). For example, the value 2021-03-27T17:48:16.751Z represents March 27, 2021 at 17:48:16.751 UTC.
@@ -44,12 +44,12 @@ trait DescribeProgramResponse extends StObject {
   /**
     * The source location name.
     */
-  var SourceLocationName: js.UndefOr[string] = js.undefined
+  var SourceLocationName: js.UndefOr[_String] = js.undefined
   
   /**
     * The name that's used to refer to a VOD source.
     */
-  var VodSourceName: js.UndefOr[string] = js.undefined
+  var VodSourceName: js.UndefOr[_String] = js.undefined
 }
 object DescribeProgramResponse {
   
@@ -66,11 +66,11 @@ object DescribeProgramResponse {
     
     inline def setAdBreaksVarargs(value: AdBreak*): Self = StObject.set(x, "AdBreaks", js.Array(value*))
     
-    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setChannelName(value: string): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: _String): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     
     inline def setChannelNameUndefined: Self = StObject.set(x, "ChannelName", js.undefined)
     
@@ -78,11 +78,11 @@ object DescribeProgramResponse {
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    inline def setLiveSourceName(value: string): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
+    inline def setLiveSourceName(value: _String): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
     
     inline def setLiveSourceNameUndefined: Self = StObject.set(x, "LiveSourceName", js.undefined)
     
-    inline def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
+    inline def setProgramName(value: _String): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
     
     inline def setProgramNameUndefined: Self = StObject.set(x, "ProgramName", js.undefined)
     
@@ -90,11 +90,11 @@ object DescribeProgramResponse {
     
     inline def setScheduledStartTimeUndefined: Self = StObject.set(x, "ScheduledStartTime", js.undefined)
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setSourceLocationNameUndefined: Self = StObject.set(x, "SourceLocationName", js.undefined)
     
-    inline def setVodSourceName(value: string): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
+    inline def setVodSourceName(value: _String): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
     
     inline def setVodSourceNameUndefined: Self = StObject.set(x, "VodSourceName", js.undefined)
   }

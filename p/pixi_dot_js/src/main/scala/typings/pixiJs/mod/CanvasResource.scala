@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.std.HTMLCanvasElement
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ open class CanvasResource protected ()
   /**
     * @param source - Canvas element to use
     */
-  def this(source: HTMLCanvasElement) = this()
+  def this(source: ICanvas) = this()
 }
 /* static members */
 object CanvasResource {

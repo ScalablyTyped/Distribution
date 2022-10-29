@@ -21,7 +21,7 @@ object XMLFormat {
     * @param xml
     * @returns - Data to use for BitmapFont
     */
-  inline def parse(xml: XMLDocument): typings.pixiTextBitmap.mod.BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[typings.pixiTextBitmap.mod.BitmapFontData]
+  inline def parse(xml: XMLDocument): typings.pixiTextBitmap.libBitmapFontDataMod.BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[typings.pixiTextBitmap.libBitmapFontDataMod.BitmapFontData]
   
   /**
     * Check if resource refers to xml font data.

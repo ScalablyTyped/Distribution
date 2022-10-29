@@ -17,10 +17,15 @@ object FormatterModule {
   
   inline def apply(
     add: (String, js.Function3[/* value */ Any, /* lng */ js.UndefOr[String], /* options */ Any, String]) => Unit,
+    addCached: (String, js.Function2[
+      /* lng */ js.UndefOr[String], 
+      /* options */ Any, 
+      js.Function1[/* value */ Any, String]
+    ]) => Unit,
     format: (/* value */ Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptions & StringMap]) => String,
     init: (Services, InitOptions) => Unit
   ): FormatterModule = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), format = js.Any.fromFunction4(format), init = js.Any.fromFunction2(init))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), addCached = js.Any.fromFunction2(addCached), format = js.Any.fromFunction4(format), init = js.Any.fromFunction2(init))
     __obj.updateDynamic("type")("formatter")
     __obj.asInstanceOf[FormatterModule]
   }

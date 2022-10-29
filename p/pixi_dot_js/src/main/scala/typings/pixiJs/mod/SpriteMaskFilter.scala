@@ -1,7 +1,7 @@
 package typings.pixiJs.mod
 
-import typings.pixiCore.mod.IMaskTarget
-import typings.pixiUtils.mod.Dict
+import typings.pixiCore.libMaskMaskDataMod.IMaskTarget
+import typings.pixiUtils.libTypesMod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

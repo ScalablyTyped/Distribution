@@ -25,6 +25,11 @@ trait AdBreak extends StObject {
     * This defines the SCTE-35 splice_insert() message inserted around the ad. For information about using splice_insert(), see the SCTE-35 specficiaiton, section 9.7.3.1.
     */
   var SpliceInsertMessage: js.UndefOr[typings.awsSdk.clientsMediatailorMod.SpliceInsertMessage] = js.undefined
+  
+  /**
+    * Defines the SCTE-35 time_signal message inserted around the ad. Programs on a channel's schedule can be configured with one or more ad breaks. You can attach a splice_insert SCTE-35 message to the ad break. This message provides basic metadata about the ad break. See section 9.7.4 of the 2022 SCTE-35 specification for more information.
+    */
+  var TimeSignalMessage: js.UndefOr[typings.awsSdk.clientsMediatailorMod.TimeSignalMessage] = js.undefined
 }
 object AdBreak {
   
@@ -50,5 +55,9 @@ object AdBreak {
     inline def setSpliceInsertMessage(value: SpliceInsertMessage): Self = StObject.set(x, "SpliceInsertMessage", value.asInstanceOf[js.Any])
     
     inline def setSpliceInsertMessageUndefined: Self = StObject.set(x, "SpliceInsertMessage", js.undefined)
+    
+    inline def setTimeSignalMessage(value: TimeSignalMessage): Self = StObject.set(x, "TimeSignalMessage", value.asInstanceOf[js.Any])
+    
+    inline def setTimeSignalMessageUndefined: Self = StObject.set(x, "TimeSignalMessage", js.undefined)
   }
 }

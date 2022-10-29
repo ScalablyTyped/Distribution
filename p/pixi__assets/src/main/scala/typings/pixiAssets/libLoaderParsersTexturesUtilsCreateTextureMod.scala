@@ -1,0 +1,19 @@
+package typings.pixiAssets
+
+import typings.pixiAssets.libLoaderLoaderMod.Loader
+import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IAutoDetectOptions
+import typings.pixiCore.libTexturesResourcesResourceMod.Resource
+import typings.pixiCore.mod.BaseTexture
+import typings.pixiCore.mod.Texture
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object libLoaderParsersTexturesUtilsCreateTextureMod {
+  
+  @JSImport("@pixi/assets/lib/loader/parsers/textures/utils/createTexture", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def createTexture(base: BaseTexture[Resource, IAutoDetectOptions], loader: Loader, url: String): Texture[typings.pixiCore.mod.Resource] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTexture")(base.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Texture[typings.pixiCore.mod.Resource]]
+}

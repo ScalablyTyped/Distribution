@@ -59,7 +59,11 @@ object distributionCoreConstantsMod {
   @js.native
   val supportsFormData: Boolean = js.native
   
-  @JSImport("ky/distribution/core/constants", "supportsStreams")
+  @JSImport("ky/distribution/core/constants", "supportsRequestStreams")
   @js.native
-  val supportsStreams: Boolean = js.native
+  val supportsRequestStreams: Boolean = js.native
+  
+  @JSImport("ky/distribution/core/constants", "supportsResponseStreams")
+  @js.native
+  val supportsResponseStreams: Boolean = js.native
 }

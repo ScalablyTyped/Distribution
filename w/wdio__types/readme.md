@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__types
 
-Typings are for version 7.25.1
+Typings are for version 7.25.4
 
 ## Library description:
 Utility package providing type information for a variety of WebdriverIO interfaces

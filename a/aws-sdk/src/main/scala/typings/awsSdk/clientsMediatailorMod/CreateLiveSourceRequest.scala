@@ -14,12 +14,12 @@ trait CreateLiveSourceRequest extends StObject {
   /**
     * The name of the live source.
     */
-  var LiveSourceName: string
+  var LiveSourceName: _String
   
   /**
     * The name of the source location.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
   
   /**
     * The tags to assign to the live source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -30,8 +30,8 @@ object CreateLiveSourceRequest {
   
   inline def apply(
     HttpPackageConfigurations: HttpPackageConfigurations,
-    LiveSourceName: string,
-    SourceLocationName: string
+    LiveSourceName: _String,
+    SourceLocationName: _String
   ): CreateLiveSourceRequest = {
     val __obj = js.Dynamic.literal(HttpPackageConfigurations = HttpPackageConfigurations.asInstanceOf[js.Any], LiveSourceName = LiveSourceName.asInstanceOf[js.Any], SourceLocationName = SourceLocationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLiveSourceRequest]
@@ -43,9 +43,9 @@ object CreateLiveSourceRequest {
     
     inline def setHttpPackageConfigurationsVarargs(value: HttpPackageConfiguration*): Self = StObject.set(x, "HttpPackageConfigurations", js.Array(value*))
     
-    inline def setLiveSourceName(value: string): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
+    inline def setLiveSourceName(value: _String): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

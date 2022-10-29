@@ -1,6 +1,6 @@
 package typings.pixiAccessibility
 
-import typings.pixiAccessibility.mod.PointerEvents
+import typings.pixiAccessibility.libAccessibleTargetMod.PointerEvents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

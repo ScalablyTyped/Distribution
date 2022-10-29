@@ -9,7 +9,7 @@ trait TagResourceRequest extends StObject {
   /**
     * The Amazon Resource Name (ARN) associated with the resource.
     */
-  var ResourceArn: string
+  var ResourceArn: _String
   
   /**
     * The tags to assign to the resource. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -18,14 +18,14 @@ trait TagResourceRequest extends StObject {
 }
 object TagResourceRequest {
   
-  inline def apply(ResourceArn: string, Tags: mapOfString): TagResourceRequest = {
+  inline def apply(ResourceArn: _String, Tags: mapOfString): TagResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagResourceRequest]
   }
   
   extension [Self <: TagResourceRequest](x: Self) {
     
-    inline def setResourceArn(value: string): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: _String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
   }

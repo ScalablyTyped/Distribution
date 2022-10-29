@@ -14,7 +14,7 @@ trait CreateVodSourceRequest extends StObject {
   /**
     * The name of the source location for this VOD source.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
   
   /**
     * The tags to assign to the VOD source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -24,14 +24,14 @@ trait CreateVodSourceRequest extends StObject {
   /**
     * The name associated with the VOD source.&gt;
     */
-  var VodSourceName: string
+  var VodSourceName: _String
 }
 object CreateVodSourceRequest {
   
   inline def apply(
     HttpPackageConfigurations: HttpPackageConfigurations,
-    SourceLocationName: string,
-    VodSourceName: string
+    SourceLocationName: _String,
+    VodSourceName: _String
   ): CreateVodSourceRequest = {
     val __obj = js.Dynamic.literal(HttpPackageConfigurations = HttpPackageConfigurations.asInstanceOf[js.Any], SourceLocationName = SourceLocationName.asInstanceOf[js.Any], VodSourceName = VodSourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVodSourceRequest]
@@ -43,12 +43,12 @@ object CreateVodSourceRequest {
     
     inline def setHttpPackageConfigurationsVarargs(value: HttpPackageConfiguration*): Self = StObject.set(x, "HttpPackageConfigurations", js.Array(value*))
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setVodSourceName(value: string): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
+    inline def setVodSourceName(value: _String): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
   }
 }

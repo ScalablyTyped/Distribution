@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "ObservablePoint")
 @js.native
 open class ObservablePoint[T] protected ()
-  extends typings.pixiMath.mod.ObservablePoint[T] {
+  extends typings.pixiCore.mod.ObservablePoint[T] {
   /**
     * Creates a new `ObservablePoint`
     * @param cb - callback function triggered when `x` and/or `y` are changed

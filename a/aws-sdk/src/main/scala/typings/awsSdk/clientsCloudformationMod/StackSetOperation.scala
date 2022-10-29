@@ -67,6 +67,11 @@ trait StackSetOperation extends StObject {
   var Status: js.UndefOr[StackSetOperationStatus] = js.undefined
   
   /**
+    * Detailed information about the StackSet operation.
+    */
+  var StatusDetails: js.UndefOr[StackSetOperationStatusDetails] = js.undefined
+  
+  /**
     * The status of the operation in details.
     */
   var StatusReason: js.UndefOr[StackSetOperationStatusReason] = js.undefined
@@ -125,6 +130,10 @@ object StackSetOperation {
     inline def setStackSetIdUndefined: Self = StObject.set(x, "StackSetId", js.undefined)
     
     inline def setStatus(value: StackSetOperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusDetails(value: StackSetOperationStatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
+    
+    inline def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
     
     inline def setStatusReason(value: StackSetOperationStatusReason): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     

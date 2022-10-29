@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiMath.mod.GD8Symmetry
+import typings.pixiMath.libGroupD8Mod.GD8Symmetry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -212,10 +212,10 @@ object groupD8 {
     * @param {number} tx - sprite anchoring
     * @param {number} ty - sprite anchoring
     */
-  inline def matrixAppendRotationInv(matrix: typings.pixiMath.mod.Matrix, rotation: GD8Symmetry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matrixAppendRotationInv")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def matrixAppendRotationInv(matrix: typings.pixiMath.mod.Matrix, rotation: GD8Symmetry, tx: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matrixAppendRotationInv")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], tx.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def matrixAppendRotationInv(matrix: typings.pixiMath.mod.Matrix, rotation: GD8Symmetry, tx: Double, ty: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matrixAppendRotationInv")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], ty.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def matrixAppendRotationInv(matrix: typings.pixiMath.mod.Matrix, rotation: GD8Symmetry, tx: Unit, ty: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matrixAppendRotationInv")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], ty.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def matrixAppendRotationInv(matrix: typings.pixiMath.libMatrixMod.Matrix, rotation: GD8Symmetry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matrixAppendRotationInv")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def matrixAppendRotationInv(matrix: typings.pixiMath.libMatrixMod.Matrix, rotation: GD8Symmetry, tx: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matrixAppendRotationInv")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], tx.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def matrixAppendRotationInv(matrix: typings.pixiMath.libMatrixMod.Matrix, rotation: GD8Symmetry, tx: Double, ty: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matrixAppendRotationInv")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], ty.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def matrixAppendRotationInv(matrix: typings.pixiMath.libMatrixMod.Matrix, rotation: GD8Symmetry, tx: Unit, ty: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matrixAppendRotationInv")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], tx.asInstanceOf[js.Any], ty.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds 180 degrees to rotation, which is a commutative

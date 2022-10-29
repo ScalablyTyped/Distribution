@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postcss-convert-values"
-version := "5.1.2-7df771"
+version := "5.1.3-b354ab"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__client-sts
 
-Typings are for version 3.198.0
+Typings are for version 3.199.0
 
 ## Library description:
 AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native

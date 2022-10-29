@@ -1,7 +1,7 @@
 package typings.pixiJs.mod
 
-import typings.pixiApp.mod.IApplicationOptions
-import typings.pixiApp.mod.ResizeableRenderer
+import typings.pixiApp.libApplicationMod.IApplicationOptions
+import typings.pixiApp.libResizePluginMod.ResizeableRenderer
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.std.HTMLElement
 import typings.std.Window
@@ -57,6 +57,8 @@ object ResizePlugin {
   inline def init(options: IApplicationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def queueResize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queueResize")().asInstanceOf[Unit]
+  
+  inline def render(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")().asInstanceOf[Unit]
   
   @JSImport("pixi.js", "ResizePlugin.renderer")
   @js.native

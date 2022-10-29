@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@pixi/core", "ArrayResource")
 @js.native
-open class ArrayResource protected () extends AbstractMultiResource {
+open class ArrayResource protected ()
+  extends typings.pixiCore.libTexturesResourcesMod.ArrayResource {
   def this(source: js.Array[Any]) = this()
   /**
     * @param source - Number of items in array or the collection

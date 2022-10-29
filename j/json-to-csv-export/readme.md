@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-to-csv-export
 
-Typings are for version 2.0.2
+Typings are for version 2.1.0
 
 ## Library description:
 Easily generate csv downloads of your json data.

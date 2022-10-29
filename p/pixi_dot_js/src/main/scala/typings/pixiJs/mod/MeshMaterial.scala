@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiMesh.mod.IMeshMaterialOptions
+import typings.pixiMesh.libMeshMaterialMod.IMeshMaterialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +18,9 @@ open class MeshMaterial protected ()
     * @param {PIXI.Program} [options.program=0xFFFFFF] - Custom program.
     * @param {object} [options.uniforms] - Custom uniforms.
     */
-  def this(uSampler: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource]) = this()
+  def this(uSampler: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource]) = this()
   def this(
-    uSampler: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    uSampler: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     options: IMeshMaterialOptions
   ) = this()
 }

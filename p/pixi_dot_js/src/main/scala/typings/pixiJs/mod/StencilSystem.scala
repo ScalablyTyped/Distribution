@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import typings.pixiExtensions.mod.ExtensionMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +12,13 @@ open class StencilSystem protected ()
   /**
     * @param renderer - The renderer this System works for.
     */
-  def this(renderer: typings.pixiCore.mod.Renderer) = this()
+  def this(renderer: typings.pixiCore.libRendererMod.Renderer) = this()
+}
+/* static members */
+object StencilSystem {
+  
+  /** @ignore */
+  @JSImport("pixi.js", "StencilSystem.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
 }

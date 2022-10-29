@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "alpinejs__focus"
-version := "3.10-dt-20221017Z-49e515"
+version := "3.10-dt-20221017Z-51682e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "alpinejs" % "3.7-dt-20220113Z-ca6135",
+  "org.scalablytyped" %%% "alpinejs" % "3.7-dt-20221028Z-88840b",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "vue__reactivity" % "3.2.41-d09629",
   "org.scalablytyped" %%% "vue__shared" % "3.2.41-a50cde")

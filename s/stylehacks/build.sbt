@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stylehacks"
-version := "5.1.0-d59a5d"
+version := "5.1.1-a425fb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

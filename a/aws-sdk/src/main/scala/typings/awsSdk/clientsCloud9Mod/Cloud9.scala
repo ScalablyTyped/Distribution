@@ -57,12 +57,12 @@ trait Cloud9 extends Service {
   ): Request[DeleteEnvironmentResult, AWSError] = js.native
   
   /**
-    * Deletes an environment member from an Cloud9 development environment.
+    * Deletes an environment member from a development environment.
     */
   def deleteEnvironmentMembership(): Request[DeleteEnvironmentMembershipResult, AWSError] = js.native
   def deleteEnvironmentMembership(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEnvironmentMembershipResult, Unit]): Request[DeleteEnvironmentMembershipResult, AWSError] = js.native
   /**
-    * Deletes an environment member from an Cloud9 development environment.
+    * Deletes an environment member from a development environment.
     */
   def deleteEnvironmentMembership(params: DeleteEnvironmentMembershipRequest): Request[DeleteEnvironmentMembershipResult, AWSError] = js.native
   def deleteEnvironmentMembership(

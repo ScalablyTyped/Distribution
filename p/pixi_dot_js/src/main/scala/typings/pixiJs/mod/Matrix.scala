@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Matrix")
 @js.native
 open class Matrix protected ()
-  extends typings.pixiMath.mod.Matrix {
+  extends typings.pixiCore.mod.Matrix {
   /**
     * @param a - x scale
     * @param b - y skew

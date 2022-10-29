@@ -1,7 +1,7 @@
 package typings.pixiJs.mod
 
-import typings.pixiCore.mod.IAutoDetectOptions
-import typings.pixiSpritesheet.mod.ISpritesheetData
+import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IAutoDetectOptions
+import typings.pixiSpritesheet.libSpritesheetMod.ISpritesheetData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,17 +18,20 @@ open class Spritesheet protected ()
     *        be used on the BaseTexture.
     */
   def this(
-    texture: typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions],
+    texture: typings.pixiCore.mod.BaseTexture[typings.pixiCore.libTexturesResourcesResourceMod.Resource, IAutoDetectOptions],
     data: ISpritesheetData
   ) = this()
-  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource], data: ISpritesheetData) = this()
   def this(
-    texture: typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
+    data: ISpritesheetData
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.BaseTexture[typings.pixiCore.libTexturesResourcesResourceMod.Resource, IAutoDetectOptions],
     data: ISpritesheetData,
     resolutionFilename: String
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     data: ISpritesheetData,
     resolutionFilename: String
   ) = this()

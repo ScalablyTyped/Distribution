@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prosemirror-markdown" : "1.10.0"
+      "prosemirror-markdown" : "1.10.1"
     }
   ],
   "test-dependencies" : [
     {
-      "prosemirror-markdown" : "1.10.0"
+      "prosemirror-markdown" : "1.10.1"
     }
   ],
   "compile-devDependencies" : [

@@ -19,21 +19,21 @@ trait ResponseOutputItem extends StObject {
   /**
     * The name of the manifest for the channel that will appear in the channel output's playback URL.
     */
-  var ManifestName: string
+  var ManifestName: _String
   
   /**
     * The URL used for playback by content players.
     */
-  var PlaybackUrl: string
+  var PlaybackUrl: _String
   
   /**
     * A string used to associate a package configuration source group with a channel output.
     */
-  var SourceGroup: string
+  var SourceGroup: _String
 }
 object ResponseOutputItem {
   
-  inline def apply(ManifestName: string, PlaybackUrl: string, SourceGroup: string): ResponseOutputItem = {
+  inline def apply(ManifestName: _String, PlaybackUrl: _String, SourceGroup: _String): ResponseOutputItem = {
     val __obj = js.Dynamic.literal(ManifestName = ManifestName.asInstanceOf[js.Any], PlaybackUrl = PlaybackUrl.asInstanceOf[js.Any], SourceGroup = SourceGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseOutputItem]
   }
@@ -48,10 +48,10 @@ object ResponseOutputItem {
     
     inline def setHlsPlaylistSettingsUndefined: Self = StObject.set(x, "HlsPlaylistSettings", js.undefined)
     
-    inline def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
+    inline def setManifestName(value: _String): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
     
-    inline def setPlaybackUrl(value: string): Self = StObject.set(x, "PlaybackUrl", value.asInstanceOf[js.Any])
+    inline def setPlaybackUrl(value: _String): Self = StObject.set(x, "PlaybackUrl", value.asInstanceOf[js.Any])
     
-    inline def setSourceGroup(value: string): Self = StObject.set(x, "SourceGroup", value.asInstanceOf[js.Any])
+    inline def setSourceGroup(value: _String): Self = StObject.set(x, "SourceGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -9,12 +9,12 @@ trait HttpPackageConfiguration extends StObject {
   /**
     * The relative path to the URL for this VOD source. This is combined with SourceLocation::HttpConfiguration::BaseUrl to form a valid URL.
     */
-  var Path: string
+  var Path: _String
   
   /**
     * The name of the source group. This has to match one of the Channel::Outputs::SourceGroup.
     */
-  var SourceGroup: string
+  var SourceGroup: _String
   
   /**
     * The streaming protocol for this package configuration. Supported values are HLS and DASH.
@@ -23,16 +23,16 @@ trait HttpPackageConfiguration extends StObject {
 }
 object HttpPackageConfiguration {
   
-  inline def apply(Path: string, SourceGroup: string, Type: Type): HttpPackageConfiguration = {
+  inline def apply(Path: _String, SourceGroup: _String, Type: Type): HttpPackageConfiguration = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any], SourceGroup = SourceGroup.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpPackageConfiguration]
   }
   
   extension [Self <: HttpPackageConfiguration](x: Self) {
     
-    inline def setPath(value: string): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: _String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    inline def setSourceGroup(value: string): Self = StObject.set(x, "SourceGroup", value.asInstanceOf[js.Any])
+    inline def setSourceGroup(value: _String): Self = StObject.set(x, "SourceGroup", value.asInstanceOf[js.Any])
     
     inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

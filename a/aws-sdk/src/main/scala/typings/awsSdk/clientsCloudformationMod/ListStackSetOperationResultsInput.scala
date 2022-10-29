@@ -12,6 +12,11 @@ trait ListStackSetOperationResultsInput extends StObject {
   var CallAs: js.UndefOr[typings.awsSdk.clientsCloudformationMod.CallAs] = js.undefined
   
   /**
+    * The filter to apply to operation results.
+    */
+  var Filters: js.UndefOr[OperationResultFilters] = js.undefined
+  
+  /**
     * The maximum number of results to be returned with a single call. If the number of available results exceeds this maximum, the response includes a NextToken value that you can assign to the NextToken request parameter to get the next set of results.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsCloudformationMod.MaxResults] = js.undefined
@@ -43,6 +48,12 @@ object ListStackSetOperationResultsInput {
     inline def setCallAs(value: CallAs): Self = StObject.set(x, "CallAs", value.asInstanceOf[js.Any])
     
     inline def setCallAsUndefined: Self = StObject.set(x, "CallAs", js.undefined)
+    
+    inline def setFilters(value: OperationResultFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    
+    inline def setFiltersVarargs(value: OperationResultFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -8,55 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait CopyWithin extends StObject {
-    
-    var copyWithin: Boolean
-    
-    var entries: Boolean
-    
-    var fill: Boolean
-    
-    var find: Boolean
-    
-    var findIndex: Boolean
-    
-    var keys: Boolean
-    
-    var values: Boolean
-  }
-  object CopyWithin {
-    
-    inline def apply(
-      copyWithin: Boolean,
-      entries: Boolean,
-      fill: Boolean,
-      find: Boolean,
-      findIndex: Boolean,
-      keys: Boolean,
-      values: Boolean
-    ): CopyWithin = {
-      val __obj = js.Dynamic.literal(copyWithin = copyWithin.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], findIndex = findIndex.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CopyWithin]
-    }
-    
-    extension [Self <: CopyWithin](x: Self) {
-      
-      inline def setCopyWithin(value: Boolean): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
-      
-      inline def setEntries(value: Boolean): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
-      
-      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
-      
-      inline def setFind(value: Boolean): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
-      
-      inline def setFindIndex(value: Boolean): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
-      
-      inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
-      
-      inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Explode extends StObject {
     
     def explode(rule: Rule_): Unit
@@ -113,6 +64,27 @@ object anon {
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait Typeofborders extends StObject {
+    
+    def explode(rule: Rule_): Unit
+    
+    def merge(rule: Rule_): Unit
+  }
+  object Typeofborders {
+    
+    inline def apply(explode: Rule_ => Unit, merge: Rule_ => Unit): Typeofborders = {
+      val __obj = js.Dynamic.literal(explode = js.Any.fromFunction1(explode), merge = js.Any.fromFunction1(merge))
+      __obj.asInstanceOf[Typeofborders]
+    }
+    
+    extension [Self <: Typeofborders](x: Self) {
+      
+      inline def setExplode(value: Rule_ => Unit): Self = StObject.set(x, "explode", js.Any.fromFunction1(value))
+      
+      inline def setMerge(value: Rule_ => Unit): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
     }
   }
 }

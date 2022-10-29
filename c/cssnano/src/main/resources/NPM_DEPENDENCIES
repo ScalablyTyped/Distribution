@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cssnano" : "5.1.13"
+      "cssnano" : "5.1.14"
     }
   ],
   "test-dependencies" : [
     {
-      "cssnano" : "5.1.13"
+      "cssnano" : "5.1.14"
     }
   ],
   "compile-devDependencies" : [

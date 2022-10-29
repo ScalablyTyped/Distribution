@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prosemirror-markdown"
-version := "1.10.0-eb3493"
+version := "1.10.1-6a668d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wix-style-react"
-version := "10.59.1-2388b1"
+version := "10.59.1-e2cb75"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "date-fns" % "2.29.3-92a2d5",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-6dfedf",
-  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1063652-cd4b27",
+  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1064701-d7bce2",
   "org.scalablytyped" %%% "dnd-core" % "16.0.1-2a3c56",
   "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-a99f73",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20220928Z-3598f3",
@@ -24,8 +24,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "pretty-format" % "29.2.1-d73ee0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "protractor" % "7.0.0-34b549",
-  "org.scalablytyped" %%% "puppeteer" % "19.2.0-333a35",
-  "org.scalablytyped" %%% "puppeteer-core" % "19.2.0-0bad0e",
+  "org.scalablytyped" %%% "puppeteer" % "19.2.0-557acd",
+  "org.scalablytyped" %%% "puppeteer-core" % "19.2.0-1ece2f",
   "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-96a756",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221027Z-34f203",

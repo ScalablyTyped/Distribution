@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stylehacks" : "5.1.0"
+      "stylehacks" : "5.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "stylehacks" : "5.1.0"
+      "stylehacks" : "5.1.1"
     }
   ],
   "compile-devDependencies" : [

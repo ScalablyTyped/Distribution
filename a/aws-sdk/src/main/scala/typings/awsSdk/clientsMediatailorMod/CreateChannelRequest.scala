@@ -9,7 +9,7 @@ trait CreateChannelRequest extends StObject {
   /**
     * The name of the channel.
     */
-  var ChannelName: string
+  var ChannelName: _String
   
   /**
     * The slate used to fill gaps between programs in the schedule. You must configure filler slate if your channel uses the LINEAR PlaybackMode. MediaTailor doesn't support filler slate for channels using the LOOP PlaybackMode.
@@ -38,14 +38,14 @@ trait CreateChannelRequest extends StObject {
 }
 object CreateChannelRequest {
   
-  inline def apply(ChannelName: string, Outputs: RequestOutputs, PlaybackMode: PlaybackMode): CreateChannelRequest = {
+  inline def apply(ChannelName: _String, Outputs: RequestOutputs, PlaybackMode: PlaybackMode): CreateChannelRequest = {
     val __obj = js.Dynamic.literal(ChannelName = ChannelName.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any], PlaybackMode = PlaybackMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateChannelRequest]
   }
   
   extension [Self <: CreateChannelRequest](x: Self) {
     
-    inline def setChannelName(value: string): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: _String): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     
     inline def setFillerSlate(value: SlateSource): Self = StObject.set(x, "FillerSlate", value.asInstanceOf[js.Any])
     

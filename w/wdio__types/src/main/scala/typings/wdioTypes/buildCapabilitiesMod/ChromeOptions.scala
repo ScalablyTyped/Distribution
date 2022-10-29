@@ -77,7 +77,7 @@ trait ChromeOptions extends StObject {
     * These preferences are only applied to the user profile in use. See the 'Preferences'
     * file in Chrome's user data directory for examples.
     */
-  var prefs: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
+  var prefs: js.UndefOr[StringDictionary[js.Array[String] | String | Double | Boolean]] = js.undefined
   
   /**
     * A list of window types that will appear in the list of window handles. For access
@@ -140,7 +140,7 @@ object ChromeOptions {
     
     inline def setPerfLoggingPrefsUndefined: Self = StObject.set(x, "perfLoggingPrefs", js.undefined)
     
-    inline def setPrefs(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+    inline def setPrefs(value: StringDictionary[js.Array[String] | String | Double | Boolean]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
     
     inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     

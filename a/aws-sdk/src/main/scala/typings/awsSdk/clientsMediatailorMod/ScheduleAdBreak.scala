@@ -19,12 +19,12 @@ trait ScheduleAdBreak extends StObject {
   /**
     * The name of the source location containing the VOD source used for the ad break.
     */
-  var SourceLocationName: js.UndefOr[string] = js.undefined
+  var SourceLocationName: js.UndefOr[_String] = js.undefined
   
   /**
     * The name of the VOD source used for the ad break.
     */
-  var VodSourceName: js.UndefOr[string] = js.undefined
+  var VodSourceName: js.UndefOr[_String] = js.undefined
 }
 object ScheduleAdBreak {
   
@@ -43,11 +43,11 @@ object ScheduleAdBreak {
     
     inline def setApproximateStartTimeUndefined: Self = StObject.set(x, "ApproximateStartTime", js.undefined)
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setSourceLocationNameUndefined: Self = StObject.set(x, "SourceLocationName", js.undefined)
     
-    inline def setVodSourceName(value: string): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
+    inline def setVodSourceName(value: _String): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
     
     inline def setVodSourceNameUndefined: Self = StObject.set(x, "VodSourceName", js.undefined)
   }

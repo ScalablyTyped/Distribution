@@ -179,6 +179,7 @@ import typings.awsSdk.clientsApprunnerMod._Runtime
 import typings.awsSdk.clientsApprunnerMod._VpcConnectorStatus
 import typings.awsSdk.clientsAppstreamMod._AppVisibility
 import typings.awsSdk.clientsAppstreamMod._ApplicationAttribute
+import typings.awsSdk.clientsAppstreamMod._CertificateBasedAuthStatus
 import typings.awsSdk.clientsAppstreamMod._FleetAttribute
 import typings.awsSdk.clientsAppstreamMod._FleetErrorCode
 import typings.awsSdk.clientsAppstreamMod._FleetState
@@ -383,6 +384,7 @@ import typings.awsSdk.clientsCloudformationMod._ResourceSignalStatus
 import typings.awsSdk.clientsCloudformationMod._StackDriftDetectionStatus
 import typings.awsSdk.clientsCloudformationMod._StackDriftStatus
 import typings.awsSdk.clientsCloudformationMod._StackInstanceDetailedStatus
+import typings.awsSdk.clientsCloudformationMod._StackInstanceFilterName
 import typings.awsSdk.clientsCloudformationMod._StackResourceDriftStatus
 import typings.awsSdk.clientsCloudformationMod._StackSetDriftDetectionStatus
 import typings.awsSdk.clientsCloudformationMod._StackSetDriftStatus
@@ -10798,6 +10800,12 @@ object awsSdkStrings {
     extends StObject
        with _TrustAnchorType
   inline def AWS_ACM_PCA: AWS_ACM_PCA = "AWS_ACM_PCA".asInstanceOf[AWS_ACM_PCA]
+  
+  @js.native
+  sealed trait AWS_AD
+    extends StObject
+       with typings.awsSdk.clientsAppstreamMod._AuthenticationType
+  inline def AWS_AD: AWS_AD = "AWS_AD".asInstanceOf[AWS_AD]
   
   @js.native
   sealed trait AWS_API_CALL extends StObject
@@ -21781,7 +21789,9 @@ object awsSdkStrings {
   inline def DETACHING: DETACHING = "DETACHING".asInstanceOf[DETACHING]
   
   @js.native
-  sealed trait DETAILED_STATUS extends StObject
+  sealed trait DETAILED_STATUS
+    extends StObject
+       with _StackInstanceFilterName
   inline def DETAILED_STATUS: DETAILED_STATUS = "DETAILED_STATUS".asInstanceOf[DETAILED_STATUS]
   
   @js.native
@@ -22116,6 +22126,7 @@ object awsSdkStrings {
        with _CEState
        with _CatalogEncryptionMode
        with _CertificateAuthorityStatus
+       with _CertificateBasedAuthStatus
        with _CertificateTransparencyLoggingPreference
        with typings.awsSdk.clientsGameliftMod._CertificateType
        with _CloudWatchEncryptionMode
@@ -23138,6 +23149,12 @@ object awsSdkStrings {
     extends StObject
        with _LanguageType
   inline def DOTNET: DOTNET = "DOTNET".asInstanceOf[DOTNET]
+  
+  @js.native
+  sealed trait DOTNET_6
+    extends StObject
+       with _Runtime
+  inline def DOTNET_6: DOTNET_6 = "DOTNET_6".asInstanceOf[DOTNET_6]
   
   @js.native
   sealed trait DOT_NET_CORE
@@ -24970,7 +24987,6 @@ object awsSdkStrings {
   sealed trait ECR_PUBLIC
     extends StObject
        with _ImageRepositoryType
-  inline def ECR_PUBLIC: ECR_PUBLIC = "ECR_PUBLIC".asInstanceOf[ECR_PUBLIC]
   
   @js.native
   sealed trait ECR_REPOSITORY_NAME
@@ -25460,6 +25476,7 @@ object awsSdkStrings {
        with _BlackoutSlateState
        with _BurnInSubtitleStylePassthrough
        with _CEState
+       with _CertificateBasedAuthStatus
        with _CertificateTransparencyLoggingPreference
        with _CmafClientCache
        with _CmafWriteDASHManifest
@@ -25639,6 +25656,11 @@ object awsSdkStrings {
     extends StObject
        with _ManagedCredentialsStatus
   inline def ENABLED_BY_OWNER: ENABLED_BY_OWNER = "ENABLED_BY_OWNER".asInstanceOf[ENABLED_BY_OWNER]
+  
+  @js.native
+  sealed trait ENABLED_NO_DIRECTORY_LOGIN_FALLBACK
+    extends StObject
+       with _CertificateBasedAuthStatus
   
   @js.native
   sealed trait ENABLED_ON_CREATE
@@ -30828,6 +30850,12 @@ object awsSdkStrings {
        with _S3ObjectLockMode
        with _S3ObjectLockRetentionMode
   inline def GOVERNANCE: GOVERNANCE = "GOVERNANCE".asInstanceOf[GOVERNANCE]
+  
+  @js.native
+  sealed trait GO_1
+    extends StObject
+       with _Runtime
+  inline def GO_1: GO_1 = "GO_1".asInstanceOf[GO_1]
   
   @js.native
   sealed trait GP
@@ -38056,6 +38084,12 @@ object awsSdkStrings {
   inline def LAST_OBSERVED_AT: LAST_OBSERVED_AT = "LAST_OBSERVED_AT".asInstanceOf[LAST_OBSERVED_AT]
   
   @js.native
+  sealed trait LAST_OPERATION_ID
+    extends StObject
+       with _StackInstanceFilterName
+  inline def LAST_OPERATION_ID: LAST_OPERATION_ID = "LAST_OPERATION_ID".asInstanceOf[LAST_OPERATION_ID]
+  
+  @js.native
   sealed trait LAST_SNAPSHOT_JOB_FAILED
     extends StObject
        with _DataReplicationErrorString
@@ -42735,7 +42769,6 @@ object awsSdkStrings {
   sealed trait MobileAssetTracking
     extends StObject
        with _PricingPlan
-  inline def MobileAssetTracking: MobileAssetTracking = "MobileAssetTracking".asInstanceOf[MobileAssetTracking]
   
   @js.native
   sealed trait Mode
@@ -45873,6 +45906,10 @@ object awsSdkStrings {
   inline def OPERATION_NOT_PERMITTED: OPERATION_NOT_PERMITTED = "OPERATION_NOT_PERMITTED".asInstanceOf[OPERATION_NOT_PERMITTED]
   
   @js.native
+  sealed trait OPERATION_RESULT_STATUS extends StObject
+  inline def OPERATION_RESULT_STATUS: OPERATION_RESULT_STATUS = "OPERATION_RESULT_STATUS".asInstanceOf[OPERATION_RESULT_STATUS]
+  
+  @js.native
   sealed trait OPERATOR
     extends StObject
        with _MetricsLevel
@@ -48116,6 +48153,12 @@ object awsSdkStrings {
   inline def PHP: PHP = "PHP".asInstanceOf[PHP]
   
   @js.native
+  sealed trait PHP_81
+    extends StObject
+       with _Runtime
+  inline def PHP_81: PHP_81 = "PHP_81".asInstanceOf[PHP_81]
+  
+  @js.native
   sealed trait PICKED
     extends StObject
        with _StatementStatusString
@@ -48768,7 +48811,6 @@ object awsSdkStrings {
   sealed trait PRINCIPAL
     extends StObject
        with _ResourceShareAssociationType
-  inline def PRINCIPAL: PRINCIPAL = "PRINCIPAL".asInstanceOf[PRINCIPAL]
   
   @js.native
   sealed trait PRINCIPAL_ID
@@ -53448,6 +53490,12 @@ object awsSdkStrings {
   inline def RUBY: RUBY = "RUBY".asInstanceOf[RUBY]
   
   @js.native
+  sealed trait RUBY_31
+    extends StObject
+       with _Runtime
+  inline def RUBY_31: RUBY_31 = "RUBY_31".asInstanceOf[RUBY_31]
+  
+  @js.native
   sealed trait RULES_EVALUATION
     extends StObject
        with _UseCaseType
@@ -57859,6 +57907,7 @@ object awsSdkStrings {
   sealed trait SPLICE_INSERT
     extends StObject
        with _AdTriggersElement
+       with typings.awsSdk.clientsMediatailorMod._MessageType
   inline def SPLICE_INSERT: SPLICE_INSERT = "SPLICE_INSERT".asInstanceOf[SPLICE_INSERT]
   
   @js.native
@@ -61480,7 +61529,6 @@ object awsSdkStrings {
   sealed trait System_Controls_Mapping
     extends StObject
        with _SourceSetUpOption
-  inline def System_Controls_Mapping: System_Controls_Mapping = "System_Controls_Mapping".asInstanceOf[System_Controls_Mapping]
   
   @js.native
   sealed trait T100
@@ -62203,7 +62251,6 @@ object awsSdkStrings {
   sealed trait TEXT_SPAM
     extends StObject
        with _EventType
-  inline def TEXT_SPAM: TEXT_SPAM = "TEXT_SPAM".asInstanceOf[TEXT_SPAM]
   
   @js.native
   sealed trait TEXT_SUCCESSFUL
@@ -62594,6 +62641,12 @@ object awsSdkStrings {
     extends StObject
        with _DataQualityMetricType
   inline def TIME_SERIES_COUNT: TIME_SERIES_COUNT = "TIME_SERIES_COUNT".asInstanceOf[TIME_SERIES_COUNT]
+  
+  @js.native
+  sealed trait TIME_SIGNAL
+    extends StObject
+       with typings.awsSdk.clientsMediatailorMod._MessageType
+  inline def TIME_SIGNAL: TIME_SIGNAL = "TIME_SIGNAL".asInstanceOf[TIME_SIGNAL]
   
   @js.native
   sealed trait TIME_STAMPING
@@ -66092,7 +66145,6 @@ object awsSdkStrings {
   sealed trait UpdateContainerService
     extends StObject
        with typings.awsSdk.clientsLightsailMod._OperationType
-  inline def UpdateContainerService: UpdateContainerService = "UpdateContainerService".asInstanceOf[UpdateContainerService]
   
   @js.native
   sealed trait UpdateDistribution
@@ -71060,7 +71112,6 @@ object awsSdkStrings {
   sealed trait c6gdDotxlarge
     extends StObject
        with typings.awsSdk.clientsEc2Mod._InstanceType
-  inline def c6gdDotxlarge: c6gdDotxlarge = "c6gd.xlarge".asInstanceOf[c6gdDotxlarge]
   
   @js.native
   sealed trait c6gnDot12xlarge
@@ -77129,7 +77180,6 @@ object awsSdkStrings {
     extends StObject
        with _ClarifyTextLanguage
        with _LayerType
-  inline def lb_ : lb_ = "lb".asInstanceOf[lb_]
   
   @js.native
   sealed trait le_

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "safe-regex"
-version := "1.1-dt-20211202Z-3bd6d2"
+version := "1.1-dt-20221028Z-3bd6d2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

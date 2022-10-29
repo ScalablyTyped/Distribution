@@ -1,0 +1,36 @@
+package typings.awsSdk.clientsAppstreamMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait CertificateBasedAuthProperties extends StObject {
+  
+  /**
+    * The ARN of the AWS Certificate Manager Private CA resource.
+    */
+  var CertificateAuthorityArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * The status of the certificate-based authentication properties.
+    */
+  var Status: js.UndefOr[CertificateBasedAuthStatus] = js.undefined
+}
+object CertificateBasedAuthProperties {
+  
+  inline def apply(): CertificateBasedAuthProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[CertificateBasedAuthProperties]
+  }
+  
+  extension [Self <: CertificateBasedAuthProperties](x: Self) {
+    
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
+    
+    inline def setStatus(value: CertificateBasedAuthStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+  }
+}

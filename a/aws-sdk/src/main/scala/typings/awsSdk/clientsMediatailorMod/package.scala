@@ -2,7 +2,6 @@ package typings.awsSdk.clientsMediatailorMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.EQUALS
-import typings.awsSdk.awsSdkStrings.SPLICE_INSERT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.SECRETS_MANAGER_ACCESS_TOKEN
   - java.lang.String
 */
-type AccessType = _AccessType | String
+type AccessType = _AccessType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RUNNING
   - typings.awsSdk.awsSdkStrings.STOPPED
   - java.lang.String
 */
-type ChannelState = _ChannelState | String
+type ChannelState = _ChannelState | java.lang.String
 
 type ConfigurationAliasesRequest = StringDictionary[mapOfString]
 
@@ -28,39 +27,46 @@ type ConfigurationAliasesResponse = StringDictionary[mapOfString]
 
 type HttpPackageConfigurations = js.Array[HttpPackageConfiguration]
 
+type Integer = Double
+
 type MaxResults = Double
 
-type MessageType = SPLICE_INSERT | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SPLICE_INSERT
+  - typings.awsSdk.awsSdkStrings.TIME_SIGNAL
+  - java.lang.String
+*/
+type MessageType = _MessageType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
   - typings.awsSdk.awsSdkStrings.BEHIND_LIVE_EDGE
   - java.lang.String
 */
-type Mode = _Mode | String
+type Mode = _Mode | java.lang.String
 
-type Operator = EQUALS | String
+type Operator = EQUALS | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SINGLE_PERIOD
   - typings.awsSdk.awsSdkStrings.MULTI_PERIOD
   - java.lang.String
 */
-type OriginManifestType = _OriginManifestType | String
+type OriginManifestType = _OriginManifestType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LOOP
   - typings.awsSdk.awsSdkStrings.LINEAR
   - java.lang.String
 */
-type PlaybackMode = _PlaybackMode | String
+type PlaybackMode = _PlaybackMode | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BEFORE_PROGRAM
   - typings.awsSdk.awsSdkStrings.AFTER_PROGRAM
   - java.lang.String
 */
-type RelativePosition = _RelativePosition | String
+type RelativePosition = _RelativePosition | java.lang.String
 
 type RequestOutputs = js.Array[RequestOutputItem]
 
@@ -71,32 +77,38 @@ type ResponseOutputs = js.Array[ResponseOutputItem]
   - typings.awsSdk.awsSdkStrings.FILLER_SLATE
   - java.lang.String
 */
-type ScheduleEntryType = _ScheduleEntryType | String
+type ScheduleEntryType = _ScheduleEntryType | java.lang.String
+
+type SegmentationDescriptorList = js.Array[SegmentationDescriptor]
+
+type String = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BASIC
   - typings.awsSdk.awsSdkStrings.STANDARD
   - java.lang.String
 */
-type Tier = _Tier | String
+type Tier = _Tier | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DASH
   - typings.awsSdk.awsSdkStrings.HLS
   - java.lang.String
 */
-type Type = _Type | String
+type Type = _Type | java.lang.String
+
+type _Integer = Double
+
+type _String = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-04-23`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = _apiVersion | String
+type apiVersion = _apiVersion | java.lang.String
 
 type boolean = Boolean
-
-type integer = Double
 
 type integerMin1 = Double
 
@@ -124,14 +136,12 @@ type listOfSegmentDeliveryConfiguration = js.Array[SegmentDeliveryConfiguration]
 
 type listOfSourceLocation = js.Array[SourceLocation]
 
-type listOfString = js.Array[string]
+type listOfString = js.Array[_String]
 
 type listOfVodSource = js.Array[VodSource]
 
 type long = Double
 
-type mapOfString = StringDictionary[string]
-
-type string = String
+type mapOfString = StringDictionary[_String]
 
 type timestampUnix = js.Date

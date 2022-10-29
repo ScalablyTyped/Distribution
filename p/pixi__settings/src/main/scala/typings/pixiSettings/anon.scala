@@ -109,6 +109,31 @@ object anon {
     }
   }
   
+  trait Quality extends StObject {
+    
+    var quality: js.UndefOr[Double] = js.undefined
+    
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object Quality {
+    
+    inline def apply(): Quality = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Quality]
+    }
+    
+    extension [Self <: Quality](x: Self) {
+      
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
   trait TypeofWebGLRenderingConte extends StObject {
     
     /* standard dom */

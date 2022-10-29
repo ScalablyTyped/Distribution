@@ -9,12 +9,12 @@ trait Alert extends StObject {
   /**
     * The code for the alert. For example, NOT_PROCESSED.
     */
-  var AlertCode: string
+  var AlertCode: _String
   
   /**
     * If an alert is generated for a resource, an explanation of the reason for the alert.
     */
-  var AlertMessage: string
+  var AlertMessage: _String
   
   /**
     * The timestamp when the alert was last modified.
@@ -29,16 +29,16 @@ trait Alert extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: string
+  var ResourceArn: _String
 }
 object Alert {
   
   inline def apply(
-    AlertCode: string,
-    AlertMessage: string,
+    AlertCode: _String,
+    AlertMessage: _String,
     LastModifiedTime: js.Date,
     RelatedResourceArns: listOfString,
-    ResourceArn: string
+    ResourceArn: _String
   ): Alert = {
     val __obj = js.Dynamic.literal(AlertCode = AlertCode.asInstanceOf[js.Any], AlertMessage = AlertMessage.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], RelatedResourceArns = RelatedResourceArns.asInstanceOf[js.Any], ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alert]
@@ -46,16 +46,16 @@ object Alert {
   
   extension [Self <: Alert](x: Self) {
     
-    inline def setAlertCode(value: string): Self = StObject.set(x, "AlertCode", value.asInstanceOf[js.Any])
+    inline def setAlertCode(value: _String): Self = StObject.set(x, "AlertCode", value.asInstanceOf[js.Any])
     
-    inline def setAlertMessage(value: string): Self = StObject.set(x, "AlertMessage", value.asInstanceOf[js.Any])
+    inline def setAlertMessage(value: _String): Self = StObject.set(x, "AlertMessage", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setRelatedResourceArns(value: listOfString): Self = StObject.set(x, "RelatedResourceArns", value.asInstanceOf[js.Any])
     
-    inline def setRelatedResourceArnsVarargs(value: string*): Self = StObject.set(x, "RelatedResourceArns", js.Array(value*))
+    inline def setRelatedResourceArnsVarargs(value: _String*): Self = StObject.set(x, "RelatedResourceArns", js.Array(value*))
     
-    inline def setResourceArn(value: string): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: _String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

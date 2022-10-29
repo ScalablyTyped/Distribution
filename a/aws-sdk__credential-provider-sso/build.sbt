@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-provider-sso"
-version := "3.198.0-28afcb"
+version := "3.199.0-a0f92d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.198.0-969a45",
-  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.198.0-14192e",
+  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.199.0-9a67a8",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.199.0-790c51",
   "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.198.0-79b2ed",
-  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.198.0-81fc84",
+  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.199.0-8dac0c",
   "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.198.0-c1c5a3",
   "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.198.0-bca63a",
   "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.198.0-e2ca71",

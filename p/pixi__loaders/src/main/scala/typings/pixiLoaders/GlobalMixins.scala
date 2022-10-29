@@ -1,6 +1,5 @@
 package typings.pixiLoaders
 
-import typings.pixiCore.GlobalMixins.Texture
 import typings.pixiLoaders.mod.Loader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,7 +54,9 @@ object GlobalMixins {
   trait LoaderResource extends StObject {
     
     /** Texture reference for loading images and other textures. */
-    var texture: js.UndefOr[Texture] = js.undefined
+    var texture: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Texture */ Any
+      ] = js.undefined
   }
   object LoaderResource {
     
@@ -66,7 +67,9 @@ object GlobalMixins {
     
     extension [Self <: LoaderResource](x: Self) {
       
-      inline def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+      inline def setTexture(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Texture */ Any
+      ): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
       
       inline def setTextureUndefined: Self = StObject.set(x, "texture", js.undefined)
     }

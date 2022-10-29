@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("pixi.js", "Container")
 @js.native
-open class Container[T /* <: typings.pixiDisplay.anon.DisplayObject */] ()
+open class Container[T /* <: typings.pixiDisplay.libDisplayObjectMod.DisplayObject */] ()
   extends typings.pixiDisplay.mod.Container[T]

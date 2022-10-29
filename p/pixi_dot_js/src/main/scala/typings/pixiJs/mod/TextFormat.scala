@@ -20,7 +20,7 @@ object TextFormat {
     * @param txt - Raw string data to be converted
     * @returns - Parsed font data
     */
-  inline def parse(txt: String): typings.pixiTextBitmap.mod.BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(txt.asInstanceOf[js.Any]).asInstanceOf[typings.pixiTextBitmap.mod.BitmapFontData]
+  inline def parse(txt: String): typings.pixiTextBitmap.libBitmapFontDataMod.BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(txt.asInstanceOf[js.Any]).asInstanceOf[typings.pixiTextBitmap.libBitmapFontDataMod.BitmapFontData]
   
   /**
     * Check if resource refers to txt font data.

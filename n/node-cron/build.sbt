@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-cron"
-version := "3.0-dt-20220906Z-cf22ca"
+version := "3.0-dt-20221028Z-b297f7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

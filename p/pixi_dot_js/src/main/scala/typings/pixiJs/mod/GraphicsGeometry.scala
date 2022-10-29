@@ -18,7 +18,7 @@ object GraphicsGeometry {
   /**
     * The maximum number of points to consider an object "batchable",
     * able to be batched by the renderer's batch system.
-    \
+  \
     */
   @JSImport("pixi.js", "GraphicsGeometry.BATCHABLE_SIZE")
   @js.native

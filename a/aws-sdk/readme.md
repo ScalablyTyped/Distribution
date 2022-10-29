@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk
 
-Typings are for version 2.1242.0
+Typings are for version 2.1243.0
 
 ## Library description:
 AWS SDK for JavaScript

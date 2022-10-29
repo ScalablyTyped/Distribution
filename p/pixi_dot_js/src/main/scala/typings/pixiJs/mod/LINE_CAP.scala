@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LINE_CAP extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.pixiGraphics.mod.LINE_CAP & String] = js.native
+  def apply(value: String): js.UndefOr[typings.pixiGraphics.libConstMod.LINE_CAP & String] = js.native
   
-  /* "butt" */ val BUTT: typings.pixiGraphics.mod.LINE_CAP.BUTT & String = js.native
+  /* "butt" */ val BUTT: typings.pixiGraphics.libConstMod.LINE_CAP.BUTT & String = js.native
   
-  /* "round" */ val ROUND: typings.pixiGraphics.mod.LINE_CAP.ROUND & String = js.native
+  /* "round" */ val ROUND: typings.pixiGraphics.libConstMod.LINE_CAP.ROUND & String = js.native
   
-  /* "square" */ val SQUARE: typings.pixiGraphics.mod.LINE_CAP.SQUARE & String = js.native
+  /* "square" */ val SQUARE: typings.pixiGraphics.libConstMod.LINE_CAP.SQUARE & String = js.native
 }

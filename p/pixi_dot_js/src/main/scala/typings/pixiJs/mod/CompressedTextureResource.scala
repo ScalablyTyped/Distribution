@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiCompressedTextures.mod.ICompressedTextureResourceOptions
+import typings.pixiCompressedTextures.libResourcesCompressedTextureResourceMod.ICompressedTextureResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

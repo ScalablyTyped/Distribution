@@ -1,9 +1,22 @@
 package typings.pixiJs.mod
 
+import typings.pixiExtensions.mod.ExtensionMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("pixi.js", "BatchRenderer")
+@js.native
+open class BatchRenderer protected ()
+  extends typings.pixiCore.mod.BatchRenderer {
+  /**
+    * This will hook onto the renderer's `contextChange`
+    * and `prerender` signals.
+    * @param {PIXI.Renderer} renderer - The renderer this works for.
+    */
+  def this(renderer: typings.pixiCore.libRendererMod.Renderer) = this()
+}
+/* static members */
 object BatchRenderer {
   
   @JSImport("pixi.js", "BatchRenderer")
@@ -20,9 +33,8 @@ object BatchRenderer {
     */
   @JSImport("pixi.js", "BatchRenderer._drawCallPool")
   @js.native
-  def drawCallPool: js.Array[typings.pixiCore.mod.BatchDrawCall] = js.native
-  
-  inline def drawCallPool_=(x: js.Array[typings.pixiCore.mod.BatchDrawCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_drawCallPool")(x.asInstanceOf[js.Any])
+  def _drawCallPool: js.Array[typings.pixiCore.libBatchBatchDrawCallMod.BatchDrawCall] = js.native
+  inline def _drawCallPool_=(x: js.Array[typings.pixiCore.libBatchBatchDrawCallMod.BatchDrawCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_drawCallPool")(x.asInstanceOf[js.Any])
   
   /**
     * Pool of `BatchDrawCall` objects that `flush` used
@@ -34,7 +46,11 @@ object BatchRenderer {
     */
   @JSImport("pixi.js", "BatchRenderer._textureArrayPool")
   @js.native
-  def textureArrayPool: js.Array[typings.pixiCore.mod.BatchTextureArray] = js.native
+  def _textureArrayPool: js.Array[typings.pixiCore.libBatchBatchTextureArrayMod.BatchTextureArray] = js.native
+  inline def _textureArrayPool_=(x: js.Array[typings.pixiCore.libBatchBatchTextureArrayMod.BatchTextureArray]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_textureArrayPool")(x.asInstanceOf[js.Any])
   
-  inline def textureArrayPool_=(x: js.Array[typings.pixiCore.mod.BatchTextureArray]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_textureArrayPool")(x.asInstanceOf[js.Any])
+  /** @ignore */
+  @JSImport("pixi.js", "BatchRenderer.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
 }

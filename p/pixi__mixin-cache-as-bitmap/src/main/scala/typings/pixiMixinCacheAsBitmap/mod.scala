@@ -1,13 +1,13 @@
 package typings.pixiMixinCacheAsBitmap
 
-import typings.pixiCore.mod.AbstractRenderer
+import typings.pixiCore.libIrendererMod.IRenderer
 import typings.pixiCore.mod.MaskData
+import typings.pixiCore.mod.Rectangle
 import typings.pixiCore.mod.Renderer
-import typings.pixiDisplay.anon.DisplayObject
+import typings.pixiDisplay.libDisplayObjectMod.DisplayObject
+import typings.pixiDisplay.libDisplayObjectMod.IDestroyOptions
 import typings.pixiDisplay.mod.Container
-import typings.pixiDisplay.mod.IDestroyOptions
-import typings.pixiMath.mod.IPointData
-import typings.pixiMath.mod.Rectangle
+import typings.pixiMath.libIpointdataMod.IPointData
 import typings.pixiSprite.mod.Sprite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,7 +36,7 @@ object mod {
     
     def originalRender(renderer: Renderer): Unit = js.native
     
-    def originalRenderCanvas(renderer: AbstractRenderer): Unit = js.native
+    def originalRenderCanvas(renderer: IRenderer): Unit = js.native
     
     def originalUpdateTransform(): Unit = js.native
     

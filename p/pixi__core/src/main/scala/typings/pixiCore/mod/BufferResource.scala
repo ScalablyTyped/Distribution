@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@pixi/core", "BufferResource")
 @js.native
-open class BufferResource protected () extends Resource {
+open class BufferResource protected ()
+  extends typings.pixiCore.libTexturesResourcesMod.BufferResource {
   /**
     * @param source - Source buffer
     * @param options - Options
@@ -19,9 +20,6 @@ open class BufferResource protected () extends Resource {
   def this(source: js.typedarray.Uint16Array, options: ISize) = this()
   def this(source: js.typedarray.Uint32Array, options: ISize) = this()
   def this(source: js.typedarray.Uint8Array, options: ISize) = this()
-  
-  /** Source array Cannot be {@code ClampedUint8Array} because it cant be uploaded to WebGL */
-  var data: js.typedarray.Float32Array | js.typedarray.Uint8Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array = js.native
 }
 /* static members */
 object BufferResource {

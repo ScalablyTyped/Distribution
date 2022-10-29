@@ -1,13 +1,12 @@
 package typings.pixiInteraction
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.pixiCore.mod.AbstractRenderer
 import typings.pixiDisplay.mod.DisplayObject
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.pixiInteraction.anon.ReadonlyInteractionTracki
-import typings.pixiMath.mod.IPointData
+import typings.pixiMath.libIpointdataMod.IPointData
 import typings.pixiMath.mod.Point
-import typings.pixiUtils.mod.Dict
+import typings.pixiUtils.libTypesMod.Dict
 import typings.pixiUtils.mod.EventEmitter
 import typings.std.CSSStyleDeclaration
 import typings.std.HTMLElement
@@ -211,8 +210,11 @@ object mod {
       * @param {number} [options.interactionFrequency=10] - Maximum frequency (ms) at pointer over/out states will be checked.
       * @param {number} [options.useSystemTicker=true] - Whether to add {@link tickerUpdate} to {@link PIXI.Ticker.system}.
       */
-    def this(renderer: AbstractRenderer) = this()
-    def this(renderer: AbstractRenderer, options: InteractionManagerOptions) = this()
+    def this(renderer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbstractRenderer */ Any) = this()
+    def this(
+      renderer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbstractRenderer */ Any,
+      options: InteractionManagerOptions
+    ) = this()
     
     /* private */ var _deltaTime: Any = js.native
     
@@ -506,7 +508,7 @@ object mod {
     /* private */ var removeTickerListener: Any = js.native
     
     /** The renderer this interaction manager works for. */
-    var renderer: AbstractRenderer = js.native
+    var renderer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbstractRenderer */ Any = js.native
     
     /**
       * The current resolution / device pixel ratio.

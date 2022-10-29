@@ -15,5 +15,5 @@ object State {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def for2d(): typings.pixiCore.mod.State = ^.asInstanceOf[js.Dynamic].applyDynamic("for2d")().asInstanceOf[typings.pixiCore.mod.State]
+  inline def for2d(): typings.pixiCore.libStateStateMod.State = ^.asInstanceOf[js.Dynamic].applyDynamic("for2d")().asInstanceOf[typings.pixiCore.libStateStateMod.State]
 }

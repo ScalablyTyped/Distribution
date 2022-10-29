@@ -1,14 +1,14 @@
 package typings.pixiTextBitmap
 
-import typings.pixiText.mod.TEXT_GRADIENT
-import typings.pixiText.mod.TextStyleAlign
-import typings.pixiText.mod.TextStyleFill
-import typings.pixiText.mod.TextStyleFontStyle
-import typings.pixiText.mod.TextStyleFontVariant
-import typings.pixiText.mod.TextStyleFontWeight
-import typings.pixiText.mod.TextStyleLineJoin
-import typings.pixiText.mod.TextStyleTextBaseline
-import typings.pixiText.mod.TextStyleWhiteSpace
+import typings.pixiText.libConstMod.TEXT_GRADIENT
+import typings.pixiText.libTextStyleMod.TextStyleAlign
+import typings.pixiText.libTextStyleMod.TextStyleFill
+import typings.pixiText.libTextStyleMod.TextStyleFontStyle
+import typings.pixiText.libTextStyleMod.TextStyleFontVariant
+import typings.pixiText.libTextStyleMod.TextStyleFontWeight
+import typings.pixiText.libTextStyleMod.TextStyleLineJoin
+import typings.pixiText.libTextStyleMod.TextStyleTextBaseline
+import typings.pixiText.libTextStyleMod.TextStyleWhiteSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -196,7 +196,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@pixi/text-bitmap.@pixi/text-bitmap.IBitmapTextStyle> */
+  /* Inlined std.Partial<@pixi/text-bitmap.@pixi/text-bitmap/lib/BitmapTextStyle.IBitmapTextStyle> */
   trait PartialIBitmapTextStyle extends StObject {
     
     var align: js.UndefOr[TextStyleAlign] = js.undefined

@@ -1,17 +1,18 @@
 package typings.pixiCore.mod
 
-import typings.std.HTMLCanvasElement
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pixi/core", "CanvasResource")
 @js.native
-open class CanvasResource protected () extends BaseImageResource {
+open class CanvasResource protected ()
+  extends typings.pixiCore.libTexturesResourcesMod.CanvasResource {
   /**
     * @param source - Canvas element to use
     */
-  def this(source: HTMLCanvasElement) = this()
+  def this(source: ICanvas) = this()
 }
 /* static members */
 object CanvasResource {

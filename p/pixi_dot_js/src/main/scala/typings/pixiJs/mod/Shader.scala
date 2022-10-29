@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiUtils.mod.Dict
+import typings.pixiUtils.libTypesMod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +13,8 @@ open class Shader protected ()
     * @param program - The program the shader will use.
     * @param uniforms - Custom uniforms to use to augment the built-in ones.
     */
-  def this(program: typings.pixiCore.mod.Program) = this()
-  def this(program: typings.pixiCore.mod.Program, uniforms: Dict[Any]) = this()
+  def this(program: typings.pixiCore.libShaderProgramMod.Program) = this()
+  def this(program: typings.pixiCore.libShaderProgramMod.Program, uniforms: Dict[Any]) = this()
 }
 /* static members */
 object Shader {
@@ -30,12 +30,12 @@ object Shader {
     * @param uniforms - Custom uniforms to use to augment the built-in ones.
     * @returns A shiny new PixiJS shader!
     */
-  inline def from(): typings.pixiCore.mod.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.pixiCore.mod.Shader]
-  inline def from(vertexSrc: String): typings.pixiCore.mod.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.Shader]
-  inline def from(vertexSrc: String, fragmentSrc: String): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
-  inline def from(vertexSrc: String, fragmentSrc: String, uniforms: Dict[Any]): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
-  inline def from(vertexSrc: String, fragmentSrc: Unit, uniforms: Dict[Any]): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
-  inline def from(vertexSrc: Unit, fragmentSrc: String): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
-  inline def from(vertexSrc: Unit, fragmentSrc: String, uniforms: Dict[Any]): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
-  inline def from(vertexSrc: Unit, fragmentSrc: Unit, uniforms: Dict[Any]): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
+  inline def from(): typings.pixiCore.libShaderShaderMod.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.pixiCore.libShaderShaderMod.Shader]
+  inline def from(vertexSrc: String): typings.pixiCore.libShaderShaderMod.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.libShaderShaderMod.Shader]
+  inline def from(vertexSrc: String, fragmentSrc: String): typings.pixiCore.libShaderShaderMod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderShaderMod.Shader]
+  inline def from(vertexSrc: String, fragmentSrc: String, uniforms: Dict[Any]): typings.pixiCore.libShaderShaderMod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderShaderMod.Shader]
+  inline def from(vertexSrc: String, fragmentSrc: Unit, uniforms: Dict[Any]): typings.pixiCore.libShaderShaderMod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderShaderMod.Shader]
+  inline def from(vertexSrc: Unit, fragmentSrc: String): typings.pixiCore.libShaderShaderMod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderShaderMod.Shader]
+  inline def from(vertexSrc: Unit, fragmentSrc: String, uniforms: Dict[Any]): typings.pixiCore.libShaderShaderMod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderShaderMod.Shader]
+  inline def from(vertexSrc: Unit, fragmentSrc: Unit, uniforms: Dict[Any]): typings.pixiCore.libShaderShaderMod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libShaderShaderMod.Shader]
 }

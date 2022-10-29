@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__querystring-builder"
-version := "3.198.0-d5fd3c"
+version := "3.199.0-64ff13"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

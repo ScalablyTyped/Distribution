@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mongodb-memory-server"
-version := "8.9.3-bb4bf7"
+version := "8.9.4-fc383f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bson" % "4.7.0-8f1d87",
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
   "org.scalablytyped" %%% "mongodb" % "4.11.0-e656e8",
-  "org.scalablytyped" %%% "mongodb-memory-server-core" % "8.9.3-a5e02a",
+  "org.scalablytyped" %%% "mongodb-memory-server-core" % "8.9.4-29eb27",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tmp" % "0.2-dt-20220624Z-459410")

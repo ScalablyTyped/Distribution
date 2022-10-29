@@ -14,12 +14,12 @@ trait CreatePrefetchScheduleRequest extends StObject {
   /**
     * The name to assign to the schedule request.
     */
-  var Name: string
+  var Name: _String
   
   /**
     * The name to assign to the playback configuration.
     */
-  var PlaybackConfigurationName: string
+  var PlaybackConfigurationName: _String
   
   /**
     * The configuration settings for retrieval of prefetched ads from the ad decision server. Only one set of prefetched ads will be retrieved and subsequently consumed for each ad break.
@@ -29,14 +29,14 @@ trait CreatePrefetchScheduleRequest extends StObject {
   /**
     * An optional stream identifier that MediaTailor uses to prefetch ads for multiple streams that use the same playback configuration. If StreamId is specified, MediaTailor returns all of the prefetch schedules with an exact match on StreamId. If not specified, MediaTailor returns all of the prefetch schedules for the playback configuration, regardless of StreamId.
     */
-  var StreamId: js.UndefOr[string] = js.undefined
+  var StreamId: js.UndefOr[_String] = js.undefined
 }
 object CreatePrefetchScheduleRequest {
   
   inline def apply(
     Consumption: PrefetchConsumption,
-    Name: string,
-    PlaybackConfigurationName: string,
+    Name: _String,
+    PlaybackConfigurationName: _String,
     Retrieval: PrefetchRetrieval
   ): CreatePrefetchScheduleRequest = {
     val __obj = js.Dynamic.literal(Consumption = Consumption.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PlaybackConfigurationName = PlaybackConfigurationName.asInstanceOf[js.Any], Retrieval = Retrieval.asInstanceOf[js.Any])
@@ -47,13 +47,13 @@ object CreatePrefetchScheduleRequest {
     
     inline def setConsumption(value: PrefetchConsumption): Self = StObject.set(x, "Consumption", value.asInstanceOf[js.Any])
     
-    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: _String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setPlaybackConfigurationName(value: string): Self = StObject.set(x, "PlaybackConfigurationName", value.asInstanceOf[js.Any])
+    inline def setPlaybackConfigurationName(value: _String): Self = StObject.set(x, "PlaybackConfigurationName", value.asInstanceOf[js.Any])
     
     inline def setRetrieval(value: PrefetchRetrieval): Self = StObject.set(x, "Retrieval", value.asInstanceOf[js.Any])
     
-    inline def setStreamId(value: string): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: _String): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
     
     inline def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
   }

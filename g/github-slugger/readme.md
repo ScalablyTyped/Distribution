@@ -1,7 +1,7 @@
 
 # Scala.js typings for github-slugger
 
-Typings are for version 1.3
+Typings are for version 2.0.0
 
 ## Library description:
 Generate a slug just like GitHub does for markdown headings.
@@ -24,7 +24,7 @@ Generate a slug just like GitHub does for markdown headings.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

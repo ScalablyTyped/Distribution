@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Runner")
 @js.native
 open class Runner protected ()
-  extends typings.pixiRunner.mod.Runner {
+  extends typings.pixiCore.mod.Runner {
   /**
     * @param name - The function name that will be executed on the listeners added to this Runner.
     */

@@ -9,24 +9,24 @@ trait DescribeVodSourceRequest extends StObject {
   /**
     * The name of the source location associated with this VOD Source.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
   
   /**
     * The name of the VOD Source.
     */
-  var VodSourceName: string
+  var VodSourceName: _String
 }
 object DescribeVodSourceRequest {
   
-  inline def apply(SourceLocationName: string, VodSourceName: string): DescribeVodSourceRequest = {
+  inline def apply(SourceLocationName: _String, VodSourceName: _String): DescribeVodSourceRequest = {
     val __obj = js.Dynamic.literal(SourceLocationName = SourceLocationName.asInstanceOf[js.Any], VodSourceName = VodSourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVodSourceRequest]
   }
   
   extension [Self <: DescribeVodSourceRequest](x: Self) {
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
-    inline def setVodSourceName(value: string): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
+    inline def setVodSourceName(value: _String): Self = StObject.set(x, "VodSourceName", value.asInstanceOf[js.Any])
   }
 }

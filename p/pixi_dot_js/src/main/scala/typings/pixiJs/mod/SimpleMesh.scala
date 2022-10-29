@@ -1,6 +1,6 @@
 package typings.pixiJs.mod
 
-import typings.pixiCore.mod.IArrayBuffer
+import typings.pixiCore.libGeometryBufferMod.IArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,18 +16,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class SimpleMesh ()
   extends typings.pixiMeshExtras.mod.SimpleMesh {
-  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource]) = this()
+  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource]) = this()
   def this(texture: Unit, vertices: IArrayBuffer) = this()
-  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource], vertices: IArrayBuffer) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
+    vertices: IArrayBuffer
+  ) = this()
   def this(texture: Unit, vertices: Unit, uvs: IArrayBuffer) = this()
   def this(texture: Unit, vertices: IArrayBuffer, uvs: IArrayBuffer) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: Unit,
     uvs: IArrayBuffer
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: IArrayBuffer,
     uvs: IArrayBuffer
   ) = this()
@@ -36,25 +39,25 @@ open class SimpleMesh ()
   def this(texture: Unit, vertices: IArrayBuffer, uvs: Unit, indices: IArrayBuffer) = this()
   def this(texture: Unit, vertices: IArrayBuffer, uvs: IArrayBuffer, indices: IArrayBuffer) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: Unit,
     uvs: Unit,
     indices: IArrayBuffer
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: Unit,
     uvs: IArrayBuffer,
     indices: IArrayBuffer
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: IArrayBuffer,
     uvs: Unit,
     indices: IArrayBuffer
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: IArrayBuffer,
     uvs: IArrayBuffer,
     indices: IArrayBuffer
@@ -116,56 +119,56 @@ open class SimpleMesh ()
     drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: Unit,
     uvs: Unit,
     indices: Unit,
     drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: Unit,
     uvs: Unit,
     indices: IArrayBuffer,
     drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: Unit,
     uvs: IArrayBuffer,
     indices: Unit,
     drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: Unit,
     uvs: IArrayBuffer,
     indices: IArrayBuffer,
     drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: IArrayBuffer,
     uvs: Unit,
     indices: Unit,
     drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: IArrayBuffer,
     uvs: Unit,
     indices: IArrayBuffer,
     drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: IArrayBuffer,
     uvs: IArrayBuffer,
     indices: Unit,
     drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.libTexturesResourcesResourceMod.Resource],
     vertices: IArrayBuffer,
     uvs: IArrayBuffer,
     indices: IArrayBuffer,

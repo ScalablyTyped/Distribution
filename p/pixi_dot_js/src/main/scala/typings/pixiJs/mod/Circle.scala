@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param radius - The radius of the circle
   */
 open class Circle ()
-  extends typings.pixiMath.mod.Circle {
+  extends typings.pixiCore.mod.Circle {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()

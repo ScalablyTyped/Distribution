@@ -15,6 +15,8 @@ trait AppsScriptHttpRequestEvent extends StObject {
   
   var parameters: StringDictionary[js.Array[String]]
   
+  var pathInfo: String
+  
   var queryString: String
 }
 object AppsScriptHttpRequestEvent {
@@ -24,9 +26,10 @@ object AppsScriptHttpRequestEvent {
     contextPath: String,
     parameter: StringDictionary[String],
     parameters: StringDictionary[js.Array[String]],
+    pathInfo: String,
     queryString: String
   ): AppsScriptHttpRequestEvent = {
-    val __obj = js.Dynamic.literal(contentLength = contentLength.asInstanceOf[js.Any], contextPath = contextPath.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentLength = contentLength.asInstanceOf[js.Any], contextPath = contextPath.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], pathInfo = pathInfo.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsScriptHttpRequestEvent]
   }
   
@@ -39,6 +42,8 @@ object AppsScriptHttpRequestEvent {
     inline def setParameter(value: StringDictionary[String]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     inline def setParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setPathInfo(value: String): Self = StObject.set(x, "pathInfo", value.asInstanceOf[js.Any])
     
     inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
   }

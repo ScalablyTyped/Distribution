@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param radius - Controls the radius of the rounded corners
   */
 open class RoundedRectangle ()
-  extends typings.pixiMath.mod.RoundedRectangle {
+  extends typings.pixiCore.mod.RoundedRectangle {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()

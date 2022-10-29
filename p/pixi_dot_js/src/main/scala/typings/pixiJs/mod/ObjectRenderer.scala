@@ -11,5 +11,5 @@ open class ObjectRenderer protected ()
   /**
     * @param renderer - The renderer this manager works for.
     */
-  def this(renderer: typings.pixiCore.mod.Renderer) = this()
+  def this(renderer: typings.pixiCore.libRendererMod.Renderer) = this()
 }

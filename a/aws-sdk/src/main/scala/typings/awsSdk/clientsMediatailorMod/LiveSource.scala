@@ -9,7 +9,7 @@ trait LiveSource extends StObject {
   /**
     * The ARN for the live source.
     */
-  var Arn: string
+  var Arn: _String
   
   /**
     * The timestamp that indicates when the live source was created.
@@ -29,12 +29,12 @@ trait LiveSource extends StObject {
   /**
     * The name that's used to refer to a live source.
     */
-  var LiveSourceName: string
+  var LiveSourceName: _String
   
   /**
     * The name of the source location.
     */
-  var SourceLocationName: string
+  var SourceLocationName: _String
   
   /**
     * The tags assigned to the live source. Tags are key-value pairs that you can associate with Amazon resources to help with organization, access control, and cost tracking. For more information, see Tagging AWS Elemental MediaTailor Resources.
@@ -44,10 +44,10 @@ trait LiveSource extends StObject {
 object LiveSource {
   
   inline def apply(
-    Arn: string,
+    Arn: _String,
     HttpPackageConfigurations: HttpPackageConfigurations,
-    LiveSourceName: string,
-    SourceLocationName: string
+    LiveSourceName: _String,
+    SourceLocationName: _String
   ): LiveSource = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], HttpPackageConfigurations = HttpPackageConfigurations.asInstanceOf[js.Any], LiveSourceName = LiveSourceName.asInstanceOf[js.Any], SourceLocationName = SourceLocationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveSource]
@@ -55,7 +55,7 @@ object LiveSource {
   
   extension [Self <: LiveSource](x: Self) {
     
-    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
@@ -69,9 +69,9 @@ object LiveSource {
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    inline def setLiveSourceName(value: string): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
+    inline def setLiveSourceName(value: _String): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
     
-    inline def setSourceLocationName(value: string): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
+    inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

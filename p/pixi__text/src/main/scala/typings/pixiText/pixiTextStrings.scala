@@ -1,12 +1,12 @@
 package typings.pixiText
 
-import typings.pixiText.mod.TextStyleAlign
-import typings.pixiText.mod.TextStyleFontStyle
-import typings.pixiText.mod.TextStyleFontVariant
-import typings.pixiText.mod.TextStyleFontWeight
-import typings.pixiText.mod.TextStyleLineJoin
-import typings.pixiText.mod.TextStyleTextBaseline
-import typings.pixiText.mod.TextStyleWhiteSpace
+import typings.pixiText.libTextStyleMod.TextStyleAlign
+import typings.pixiText.libTextStyleMod.TextStyleFontStyle
+import typings.pixiText.libTextStyleMod.TextStyleFontVariant
+import typings.pixiText.libTextStyleMod.TextStyleFontWeight
+import typings.pixiText.libTextStyleMod.TextStyleLineJoin
+import typings.pixiText.libTextStyleMod.TextStyleTextBaseline
+import typings.pixiText.libTextStyleMod.TextStyleWhiteSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

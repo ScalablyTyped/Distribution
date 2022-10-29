@@ -37,6 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-width`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`clipboard-read`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`clipboard-write`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`compute-pressure`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`cross-origin-isolated`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`direct-sockets`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`display-capture`
@@ -145,6 +146,8 @@ object PermissionsPolicyFeature {
   inline def `clipboard-read`: typings.devtoolsProtocol.devtoolsProtocolStrings.`clipboard-read` = "clipboard-read".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`clipboard-read`]
   
   inline def `clipboard-write`: typings.devtoolsProtocol.devtoolsProtocolStrings.`clipboard-write` = "clipboard-write".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`clipboard-write`]
+  
+  inline def `compute-pressure`: typings.devtoolsProtocol.devtoolsProtocolStrings.`compute-pressure` = "compute-pressure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`compute-pressure`]
   
   inline def `cross-origin-isolated`: typings.devtoolsProtocol.devtoolsProtocolStrings.`cross-origin-isolated` = "cross-origin-isolated".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`cross-origin-isolated`]
   
