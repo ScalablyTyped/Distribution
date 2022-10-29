@@ -2571,7 +2571,6 @@
 | 0.0 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 0.0 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.0 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute
-| 0.0 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.0 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 0.0 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express
 | 0.0 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
@@ -3357,7 +3356,6 @@
 | 0.0 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 0.0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
 | 0.0 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
-| 0.0 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.0 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio
 | 0.0 | [grommet](./g/grommet) | focus on the essential experience
 | 0.0 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps.
@@ -3675,7 +3673,6 @@
 | 0.0 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler.
 | 0.0 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com
 | 0.0 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir
-| 0.0 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.0 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io
 | 0.0 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st
 | 0.0 | [hookrouter](./h/hookrouter) | A hook based router for React
@@ -3886,7 +3883,6 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
-| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -4914,7 +4910,6 @@
 | 0.0 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware
 | 0.0 | [koa-logger](./k/koa-logger) | Logging middleware for koa
 | 0.0 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
-| 0.0 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.0 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa
 | 0.0 | [koa-mount](./k/koa-mount) | Mounting middleware for koa
 | 0.0 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko
@@ -6170,7 +6165,6 @@
 | 0.0 | [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri
 | 0.0 | [microtime](./m/microtime) | Get the current time in microseconds
 | 0.0 | [midi](./m/midi) | MIDI hardware IO
-| 0.0 | [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node
 | 0.0 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js.
 | 0.0 | [millisecond](./m/millisecond) | Convert time strings to milliseconds
 | 0.0 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t
@@ -6294,11 +6288,8 @@
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
 | 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
-| 0.0 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
-| 0.0 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
-| 0.0 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
@@ -6508,7 +6499,6 @@
 | 0.0 | [ng-grid](./n/ng-grid) | __Contributors:__
 | 0.0 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne
 | 0.0 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi
-| 0.0 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.0 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS
 | 0.0 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS
 | 0.0 | [ng-table](./n/ng-table) | Table + AngularJS ================= 
@@ -6532,7 +6522,6 @@
 | 0.0 | [ngsijs](./n/ngsijs) | JavaScript library for the FIWARE Context Broker s
 | 0.0 | [ngstorage](./n/ngstorage) | ngStorage =========
 | 0.0 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp
-| 0.0 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.0 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises
 | 0.0 | [nib](./n/nib) | Stylus mixins and utilities
 | 0.0 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js
@@ -6640,7 +6629,6 @@
 | 0.0 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server
 | 0.0 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and
 | 0.0 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin
-| 0.0 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.0 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 0.0 | [node-netstat](./n/node-netstat) | programmatic netstat utility
 | 0.0 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays
@@ -9248,7 +9236,6 @@
 | 0.0 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg
 | 0.0 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly
 | 0.0 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support
-| 0.0 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.0 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server
 | 0.0 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.0 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli
@@ -9542,7 +9529,6 @@
 | 0.0 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic
 | 0.0 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0.0 | [simperium](./s/simperium) | A simperium client for node.js
-| 0.0 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v
 | 0.0 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign
 | 0.0 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 0.0 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab
