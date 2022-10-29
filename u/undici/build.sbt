@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "undici"
-version := "5.11.0-25563e"
+version := "5.12.0-da0e05"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

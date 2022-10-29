@@ -15,6 +15,7 @@ import typings.undici.undiciStrings.UND_ERR_INVALID_RETURN_VALUE
 import typings.undici.undiciStrings.UND_ERR_NOT_SUPPORTED
 import typings.undici.undiciStrings.UND_ERR_REQ_CONTENT_LENGTH_MISMATCH
 import typings.undici.undiciStrings.UND_ERR_RESPONSE_STATUS_CODE
+import typings.undici.undiciStrings.UND_ERR_RES_EXCEEDED_MAX_SIZE
 import typings.undici.undiciStrings.UND_ERR_SOCKET
 import typings.undici.undiciStrings.UND_ERR_SOCKET_TIMEOUT
 import org.scalablytyped.runtime.StObject
@@ -121,6 +122,16 @@ object typesErrorsMod {
     
     @JSName("name")
     var name_RequestContentLengthMismatchError: typings.undici.undiciStrings.RequestContentLengthMismatchError = js.native
+  }
+  
+  @JSImport("undici/types/errors", "ResponseExceededMaxSizeError")
+  @js.native
+  open class ResponseExceededMaxSizeError () extends UndiciError {
+    
+    var code: UND_ERR_RES_EXCEEDED_MAX_SIZE = js.native
+    
+    @JSName("name")
+    var name_ResponseExceededMaxSizeError: typings.undici.undiciStrings.ResponseExceededMaxSizeError = js.native
   }
   
   @JSImport("undici/types/errors", "ResponseStatusCodeError")

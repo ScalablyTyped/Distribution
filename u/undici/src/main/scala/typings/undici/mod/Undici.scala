@@ -65,6 +65,8 @@ object Undici {
     
     type RequestContentLengthMismatchError = typings.undici.typesErrorsMod.RequestContentLengthMismatchError
     
+    type ResponseExceededMaxSizeError = typings.undici.typesErrorsMod.ResponseExceededMaxSizeError
+    
     type ResponseStatusCodeError = typings.undici.typesErrorsMod.ResponseStatusCodeError
     
     type SocketError = typings.undici.typesErrorsMod.SocketError

@@ -20,11 +20,16 @@ object typesProxyAgentMod {
     extends StObject
        with typings.undici.typesAgentMod.Options {
     
+    /**
+      * @deprecated use opts.token
+      */
     var auth: js.UndefOr[String] = js.undefined
     
     var proxyTls: js.UndefOr[TlsOptionsservernamestrin] = js.undefined
     
     var requestTls: js.UndefOr[TlsOptionsservernamestrin] = js.undefined
+    
+    var token: js.UndefOr[String] = js.undefined
     
     var uri: String
   }
@@ -48,6 +53,10 @@ object typesProxyAgentMod {
       inline def setRequestTls(value: TlsOptionsservernamestrin): Self = StObject.set(x, "requestTls", value.asInstanceOf[js.Any])
       
       inline def setRequestTlsUndefined: Self = StObject.set(x, "requestTls", js.undefined)
+      
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }

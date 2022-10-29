@@ -10,6 +10,7 @@ import typings.std.Blob
 import typings.std.IteratorResult
 import typings.std.Record
 import typings.undici.typesFormdataMod.FormData
+import typings.undici.undiciStrings.half
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,6 +76,8 @@ object typesFetchMod {
     val credentials: RequestCredentials = js.native
     
     val destination: RequestDestination = js.native
+    
+    val duplex: RequestDuplex = js.native
     
     /* CompleteClass */
     override def formData(): js.Promise[FormData] = js.native
@@ -353,6 +356,8 @@ object typesFetchMod {
     inline def xslt: typings.undici.undiciStrings.xslt = "xslt".asInstanceOf[typings.undici.undiciStrings.xslt]
   }
   
+  type RequestDuplex = half
+  
   type RequestInfo = String | URL_ | Request
   
   trait RequestInit extends StObject {
@@ -362,6 +367,8 @@ object typesFetchMod {
     var credentials: js.UndefOr[RequestCredentials] = js.undefined
     
     var dispatcher: js.UndefOr[typings.undici.typesDispatcherMod.^] = js.undefined
+    
+    var duplex: js.UndefOr[RequestDuplex] = js.undefined
     
     var headers: js.UndefOr[HeadersInit] = js.undefined
     
@@ -405,6 +412,10 @@ object typesFetchMod {
       inline def setDispatcher(value: typings.undici.typesDispatcherMod.^): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
       
       inline def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
+      
+      inline def setDuplex(value: RequestDuplex): Self = StObject.set(x, "duplex", value.asInstanceOf[js.Any])
+      
+      inline def setDuplexUndefined: Self = StObject.set(x, "duplex", js.undefined)
       
       inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

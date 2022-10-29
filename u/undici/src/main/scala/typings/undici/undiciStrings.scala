@@ -115,6 +115,10 @@ object undiciStrings {
   inline def RequestContentLengthMismatchError: RequestContentLengthMismatchError = "RequestContentLengthMismatchError".asInstanceOf[RequestContentLengthMismatchError]
   
   @js.native
+  sealed trait ResponseExceededMaxSizeError extends StObject
+  inline def ResponseExceededMaxSizeError: ResponseExceededMaxSizeError = "ResponseExceededMaxSizeError".asInstanceOf[ResponseExceededMaxSizeError]
+  
+  @js.native
   sealed trait ResponseStatusCodeError extends StObject
   inline def ResponseStatusCodeError: ResponseStatusCodeError = "ResponseStatusCodeError".asInstanceOf[ResponseStatusCodeError]
   
@@ -175,6 +179,10 @@ object undiciStrings {
   @js.native
   sealed trait UND_ERR_RESPONSE_STATUS_CODE extends StObject
   inline def UND_ERR_RESPONSE_STATUS_CODE: UND_ERR_RESPONSE_STATUS_CODE = "UND_ERR_RESPONSE_STATUS_CODE".asInstanceOf[UND_ERR_RESPONSE_STATUS_CODE]
+  
+  @js.native
+  sealed trait UND_ERR_RES_EXCEEDED_MAX_SIZE extends StObject
+  inline def UND_ERR_RES_EXCEEDED_MAX_SIZE: UND_ERR_RES_EXCEEDED_MAX_SIZE = "UND_ERR_RES_EXCEEDED_MAX_SIZE".asInstanceOf[UND_ERR_RES_EXCEEDED_MAX_SIZE]
   
   @js.native
   sealed trait UND_ERR_SOCKET extends StObject
@@ -272,6 +280,10 @@ object undiciStrings {
     extends StObject
        with RequestCache
   inline def `force-cache`: `force-cache` = "force-cache".asInstanceOf[`force-cache`]
+  
+  @js.native
+  sealed trait half extends StObject
+  inline def half: half = "half".asInstanceOf[half]
   
   @js.native
   sealed trait image

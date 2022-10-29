@@ -56,6 +56,11 @@ object errors {
   open class RequestContentLengthMismatchError ()
     extends typings.undici.typesErrorsMod.RequestContentLengthMismatchError
   
+  @JSImport("undici", "errors.ResponseExceededMaxSizeError")
+  @js.native
+  open class ResponseExceededMaxSizeError ()
+    extends typings.undici.typesErrorsMod.ResponseExceededMaxSizeError
+  
   @JSImport("undici", "errors.ResponseStatusCodeError")
   @js.native
   open class ResponseStatusCodeError ()

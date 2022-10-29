@@ -66,6 +66,9 @@ object typesClientMod {
     /** */
     var maxRequestsPerClient: js.UndefOr[Double] = js.undefined
     
+    /** Max response body size in bytes, -1 is disabled */
+    var maxResponseSize: js.UndefOr[Double | Null] = js.undefined
+    
     /** The amount of concurrent requests to be sent over the single TCP/TLS connection according to [RFC7230](https://tools.ietf.org/html/rfc7230#section-6.3.2). Default: `1`. */
     var pipelining: js.UndefOr[Double | Null] = js.undefined
     
@@ -137,6 +140,12 @@ object typesClientMod {
       inline def setMaxRequestsPerClient(value: Double): Self = StObject.set(x, "maxRequestsPerClient", value.asInstanceOf[js.Any])
       
       inline def setMaxRequestsPerClientUndefined: Self = StObject.set(x, "maxRequestsPerClient", js.undefined)
+      
+      inline def setMaxResponseSize(value: Double): Self = StObject.set(x, "maxResponseSize", value.asInstanceOf[js.Any])
+      
+      inline def setMaxResponseSizeNull: Self = StObject.set(x, "maxResponseSize", null)
+      
+      inline def setMaxResponseSizeUndefined: Self = StObject.set(x, "maxResponseSize", js.undefined)
       
       inline def setPipelining(value: Double): Self = StObject.set(x, "pipelining", value.asInstanceOf[js.Any])
       
