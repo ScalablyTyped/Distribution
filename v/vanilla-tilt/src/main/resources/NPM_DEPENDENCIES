@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vanilla-tilt" : "1.7.2"
+      "vanilla-tilt" : "1.7.3"
     }
   ],
   "test-dependencies" : [
     {
-      "vanilla-tilt" : "1.7.2"
+      "vanilla-tilt" : "1.7.3"
     }
   ],
   "compile-devDependencies" : [

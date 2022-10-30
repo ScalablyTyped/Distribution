@@ -17,6 +17,8 @@ object typesSrcDisplayOptionalContentConfigMod {
     
     def getGroups(): Any = js.native
     
+    def getHash(): String = js.native
+    
     def getOrder(): Any = js.native
     
     def hasInitialVisibility: Boolean = js.native

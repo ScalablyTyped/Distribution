@@ -35,8 +35,6 @@ object typesSrcDisplayTextLayerMod {
     
     var _document: Any = js.native
     
-    var _enhanceTextSelection: Boolean = js.native
-    
     var _fontInspectorEnabled: Boolean = js.native
     
     /**
@@ -84,12 +82,6 @@ object typesSrcDisplayTextLayerMod {
     def cancel(): Unit = js.native
     
     /**
-      * @param {boolean} [expandDivs]
-      */
-    def expandTextDivs(): Unit = js.native
-    def expandTextDivs(expandDivs: Boolean): Unit = js.native
-    
-    /**
       * Promise for textLayer rendering task completion.
       * @type {Promise<void>}
       */
@@ -105,12 +97,6 @@ object typesSrcDisplayTextLayerMod {
       * will contain the text runs.
       */
     var container: DocumentFragment | HTMLElement
-    
-    /**
-      * - Whether to turn on the text
-      * selection enhancement.
-      */
-    var enhanceTextSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * - Text content to
@@ -160,10 +146,6 @@ object typesSrcDisplayTextLayerMod {
     extension [Self <: TextLayerRenderParameters](x: Self) {
       
       inline def setContainer(value: DocumentFragment | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
-      
-      inline def setEnhanceTextSelection(value: Boolean): Self = StObject.set(x, "enhanceTextSelection", value.asInstanceOf[js.Any])
-      
-      inline def setEnhanceTextSelectionUndefined: Self = StObject.set(x, "enhanceTextSelection", js.undefined)
       
       inline def setTextContent(value: TextContent): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
       

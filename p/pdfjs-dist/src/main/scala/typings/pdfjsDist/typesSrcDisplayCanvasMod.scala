@@ -18,7 +18,6 @@ object typesSrcDisplayCanvasMod {
       commonObjs: Any,
       objs: Any,
       canvasFactory: Any,
-      imageLayer: Any,
       optionalContentConfig: Any,
       annotationCanvasMap: Any,
       pageColors: Any
@@ -150,8 +149,6 @@ object typesSrcDisplayCanvasMod {
     var groupLevel: Double = js.native
     
     var groupStack: js.Array[Any] = js.native
-    
-    var imageLayer: Any = js.native
     
     def inSMaskMode: Boolean = js.native
     

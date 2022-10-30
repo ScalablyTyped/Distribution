@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "vega-canvas"
-version := "1.2.6-119060"
+version := "1.2.6-baf582"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "canvas" % "2.10.1-afa41c",
+  "org.scalablytyped" %%% "canvas" % "2.10.2-88ae40",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

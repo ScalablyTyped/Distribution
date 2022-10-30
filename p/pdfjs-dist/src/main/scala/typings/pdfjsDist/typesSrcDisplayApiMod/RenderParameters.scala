@@ -57,12 +57,6 @@ trait RenderParameters extends StObject {
   var canvasFactory: js.UndefOr[js.Object] = js.undefined
   
   /**
-    * - An object that has `beginLayout`,
-    * `endLayout` and `appendImage` functions.
-    */
-  var imageLayer: js.UndefOr[js.Object] = js.undefined
-  
-  /**
     * - Rendering intent, can be 'display', 'print',
     * or 'any'. The default value is 'display'.
     */
@@ -123,10 +117,6 @@ object RenderParameters {
     inline def setCanvasFactory(value: js.Object): Self = StObject.set(x, "canvasFactory", value.asInstanceOf[js.Any])
     
     inline def setCanvasFactoryUndefined: Self = StObject.set(x, "canvasFactory", js.undefined)
-    
-    inline def setImageLayer(value: js.Object): Self = StObject.set(x, "imageLayer", value.asInstanceOf[js.Any])
-    
-    inline def setImageLayerUndefined: Self = StObject.set(x, "imageLayer", js.undefined)
     
     inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

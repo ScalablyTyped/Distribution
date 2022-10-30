@@ -77,7 +77,7 @@ open class PDFDocumentProxy protected () extends StObject {
   
   /**
     * @returns {Promise<Uint8Array>} A promise that is resolved with a
-    *   {Uint8Array} that has the raw data from the PDF.
+    *   {Uint8Array} containing the raw data of the PDF document.
     */
   def getData(): js.Promise[js.typedarray.Uint8Array] = js.native
   

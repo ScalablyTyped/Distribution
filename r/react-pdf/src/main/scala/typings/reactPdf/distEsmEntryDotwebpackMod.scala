@@ -144,15 +144,15 @@ object distEsmEntryDotwebpackMod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def `__Numbersign26@NumbersignappendElement`(element: Any, id: Any, div: Any, accessibilityManager: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#26@#appendElement")(element.asInstanceOf[js.Any], id.asInstanceOf[js.Any], div.asInstanceOf[js.Any], accessibilityManager.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def `__Numbersign28@NumbersignappendElement`(element: Any, id: Any, div: Any, accessibilityManager: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#28@#appendElement")(element.asInstanceOf[js.Any], id.asInstanceOf[js.Any], div.asInstanceOf[js.Any], accessibilityManager.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      inline def `__Numbersign26@NumbersignsetAnnotationCanvasMap`(div: Any, annotationCanvasMap: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#26@#setAnnotationCanvasMap")(div.asInstanceOf[js.Any], annotationCanvasMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def `__Numbersign28@NumbersignsetAnnotationCanvasMap`(div: Any, annotationCanvasMap: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#28@#setAnnotationCanvasMap")(div.asInstanceOf[js.Any], annotationCanvasMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * @param {HTMLDivElement} div
         * @param {PageViewport} viewport
         */
-      inline def `__Numbersign26@NumbersignsetDimensions`(div: HTMLDivElement, param1: PageViewport): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#26@#setDimensions")(div.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def `__Numbersign28@NumbersignsetDimensions`(div: HTMLDivElement, param1: PageViewport): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__#28@#setDimensions")(div.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Render a new annotation layer with all annotation elements.
@@ -201,10 +201,6 @@ object distEsmEntryDotwebpackMod {
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.CMapCompressionType.NONE_2")
       @js.native
       val NONE_2: Double = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.CMapCompressionType.STREAM")
-      @js.native
-      val STREAM: Double = js.native
     }
     
     @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.GlobalWorkerOptions")
@@ -218,11 +214,6 @@ object distEsmEntryDotwebpackMod {
       def this(msg: Any) = this()
     }
     
-    @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.LoopbackPort")
-    @js.native
-    open class LoopbackPort ()
-      extends typings.reactPdf.distPdfjsDistMod.default.LoopbackPort
-    
     @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.MissingPDFException")
     @js.native
     open class MissingPDFException protected ()
@@ -235,10 +226,6 @@ object distEsmEntryDotwebpackMod {
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.OPS.beginAnnotation")
       @js.native
       val beginAnnotation: Double = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.OPS.beginAnnotations")
-      @js.native
-      val beginAnnotations: Double = js.native
       
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.OPS.beginCompat")
       @js.native
@@ -311,10 +298,6 @@ object distEsmEntryDotwebpackMod {
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.OPS.endAnnotation")
       @js.native
       val endAnnotation: Double = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.OPS.endAnnotations")
-      @js.native
-      val endAnnotations: Double = js.native
       
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.OPS.endCompat")
       @js.native
@@ -427,10 +410,6 @@ object distEsmEntryDotwebpackMod {
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.OPS.paintInlineImageXObjectGroup")
       @js.native
       val paintInlineImageXObjectGroup: Double = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.OPS.paintJpegXObject")
-      @js.native
-      val paintJpegXObject: Double = js.native
       
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.OPS.paintSolidColorImageMask")
       @js.native
@@ -823,10 +802,6 @@ object distEsmEntryDotwebpackMod {
       @js.native
       val errorXObject: String = js.native
       
-      @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.UNSUPPORTED_FEATURES.font")
-      @js.native
-      val font: String = js.native
-      
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.UNSUPPORTED_FEATURES.forms")
       @js.native
       val forms: String = js.native
@@ -846,10 +821,6 @@ object distEsmEntryDotwebpackMod {
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.UNSUPPORTED_FEATURES.smask")
       @js.native
       val smask: String = js.native
-      
-      @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.UNSUPPORTED_FEATURES.unknown")
-      @js.native
-      val unknown: String = js.native
     }
     
     @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.UnexpectedResponseException")
@@ -869,8 +840,6 @@ object distEsmEntryDotwebpackMod {
       @JSImport("react-pdf/dist/esm/entry.webpack", "pdfjs.Util")
       @js.native
       val ^ : js.Any = js.native
-      
-      inline def apply3dTransform(m: Any, v: Any): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply3dTransform")(m.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
       
       inline def applyInverseTransform(p: Any, m: Any): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyInverseTransform")(p.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
       

@@ -98,7 +98,7 @@ object mod {
   trait TiltOptions extends StObject {
     
     /**
-      * What axis should be disabled. Can be X or Y.
+      * What axis should be enabled. Can be "x" or "y".
       */
     var axis: js.UndefOr[Null | x | y] = js.undefined
     

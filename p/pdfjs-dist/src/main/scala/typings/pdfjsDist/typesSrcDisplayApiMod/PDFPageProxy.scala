@@ -164,7 +164,7 @@ open class PDFPageProxy protected () extends StObject {
     * @returns {RenderTask} An object that contains a promise that is
     *   resolved when the page finishes rendering.
     */
-  def render(param0: RenderParameters, args: Any*): RenderTask = js.native
+  def render(param0: RenderParameters): RenderTask = js.native
   
   /**
     * @type {number} The number of degrees the page is rotated clockwise.

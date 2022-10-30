@@ -1449,7 +1449,7 @@ object Mixins {
     var lineGap: js.UndefOr[Double] = js.undefined
     
     /** A URL to link this text to (shortcut to create an annotation) */
-    var link: js.UndefOr[String] = js.undefined
+    var link: js.UndefOr[String | Null] = js.undefined
     
     /** Sets a list as unordered, ordered or lettered */
     var listType: js.UndefOr[bullet | numbered | lettered] = js.undefined
@@ -1560,6 +1560,8 @@ object Mixins {
       inline def setLineGapUndefined: Self = StObject.set(x, "lineGap", js.undefined)
       
       inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      
+      inline def setLinkNull: Self = StObject.set(x, "link", null)
       
       inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       

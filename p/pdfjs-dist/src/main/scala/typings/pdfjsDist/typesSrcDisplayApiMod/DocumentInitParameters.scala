@@ -121,6 +121,14 @@ trait DocumentInitParameters
   var isEvalSupported: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * - Determines if we can use
+    * `OffscreenCanvas` in the worker. Primarily used to improve performance of
+    * image conversion/rendering.
+    * The default value is `true` in web environments and `false` in Node.js.
+    */
+  var isOffscreenCanvasSupported: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * - The PDF file length. It's used for progress
     * reports and range requests operations.
     */
@@ -284,6 +292,10 @@ object DocumentInitParameters {
     inline def setIsEvalSupported(value: Boolean): Self = StObject.set(x, "isEvalSupported", value.asInstanceOf[js.Any])
     
     inline def setIsEvalSupportedUndefined: Self = StObject.set(x, "isEvalSupported", js.undefined)
+    
+    inline def setIsOffscreenCanvasSupported(value: Boolean): Self = StObject.set(x, "isOffscreenCanvasSupported", value.asInstanceOf[js.Any])
+    
+    inline def setIsOffscreenCanvasSupportedUndefined: Self = StObject.set(x, "isOffscreenCanvasSupported", js.undefined)
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

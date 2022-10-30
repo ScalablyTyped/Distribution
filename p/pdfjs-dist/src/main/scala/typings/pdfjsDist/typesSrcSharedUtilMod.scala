@@ -473,10 +473,6 @@ object typesSrcSharedUtilMod {
     @JSImport("pdfjs-dist/types/src/shared/util", "CMapCompressionType.NONE_2")
     @js.native
     val NONE_2: Double = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "CMapCompressionType.STREAM")
-    @js.native
-    val STREAM: Double = js.native
   }
   
   object DocumentActionEventType {
@@ -621,10 +617,6 @@ object typesSrcSharedUtilMod {
     @js.native
     val beginAnnotation: Double = js.native
     
-    @JSImport("pdfjs-dist/types/src/shared/util", "OPS.beginAnnotations")
-    @js.native
-    val beginAnnotations: Double = js.native
-    
     @JSImport("pdfjs-dist/types/src/shared/util", "OPS.beginCompat")
     @js.native
     val beginCompat: Double = js.native
@@ -696,10 +688,6 @@ object typesSrcSharedUtilMod {
     @JSImport("pdfjs-dist/types/src/shared/util", "OPS.endAnnotation")
     @js.native
     val endAnnotation: Double = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "OPS.endAnnotations")
-    @js.native
-    val endAnnotations: Double = js.native
     
     @JSImport("pdfjs-dist/types/src/shared/util", "OPS.endCompat")
     @js.native
@@ -812,10 +800,6 @@ object typesSrcSharedUtilMod {
     @JSImport("pdfjs-dist/types/src/shared/util", "OPS.paintInlineImageXObjectGroup")
     @js.native
     val paintInlineImageXObjectGroup: Double = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "OPS.paintJpegXObject")
-    @js.native
-    val paintJpegXObject: Double = js.native
     
     @JSImport("pdfjs-dist/types/src/shared/util", "OPS.paintSolidColorImageMask")
     @js.native
@@ -1229,10 +1213,6 @@ object typesSrcSharedUtilMod {
     @js.native
     val errorXObject: String = js.native
     
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.font")
-    @js.native
-    val font: String = js.native
-    
     @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.forms")
     @js.native
     val forms: String = js.native
@@ -1252,10 +1232,6 @@ object typesSrcSharedUtilMod {
     @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.smask")
     @js.native
     val smask: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.unknown")
-    @js.native
-    val unknown: String = js.native
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -1289,8 +1265,6 @@ object typesSrcSharedUtilMod {
     @JSImport("pdfjs-dist/types/src/shared/util", "Util")
     @js.native
     val ^ : js.Any = js.native
-    
-    inline def apply3dTransform(m: Any, v: Any): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply3dTransform")(m.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     inline def applyInverseTransform(p: Any, m: Any): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyInverseTransform")(p.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     

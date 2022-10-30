@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__react-native"
-version := "5.3.25-d2f07e"
+version := "5.3.27-86338e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

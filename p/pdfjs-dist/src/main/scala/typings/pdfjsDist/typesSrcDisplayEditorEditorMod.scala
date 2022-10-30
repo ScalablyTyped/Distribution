@@ -61,6 +61,8 @@ object typesSrcDisplayEditorEditorMod {
       */
     def enableEditing(): Unit = js.native
     
+    def fixDims(): Unit = js.native
+    
     /**
       * onfocus callback.
       */

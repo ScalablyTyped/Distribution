@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "canvas" : "2.10.1"
+      "canvas" : "2.10.2"
     }
   ],
   "test-dependencies" : [
     {
-      "canvas" : "2.10.1"
+      "canvas" : "2.10.2"
     }
   ],
   "compile-devDependencies" : [

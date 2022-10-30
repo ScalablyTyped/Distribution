@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pdfjs-dist"
-version := "2.16.105-dbe85b"
+version := "3.0.279-ae547d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

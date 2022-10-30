@@ -2,6 +2,7 @@ package typings.pdfjsDist
 
 import typings.pdfjsDist.anon.Cmd
 import typings.pdfjsDist.anon.PageNumber
+import typings.std.ClipboardEvent
 import typings.std.KeyboardEvent
 import typings.std.Map
 import typings.std.Set
@@ -38,15 +39,19 @@ object typesSrcDisplayEditorToolsMod {
       */
     def addLayer(layer: AnnotationEditorLayer): Unit = js.native
     
-    /**
-      * Copy the selected editor.
-      */
-    def copy(): Unit = js.native
+    def commitOrRemove(): Unit = js.native
     
     /**
-      * Cut the selected editor.
+      * Copy callback.
+      * @param {ClipboardEvent} event
       */
-    def cut(): Unit = js.native
+    def copy(event: ClipboardEvent): Unit = js.native
+    
+    /**
+      * Cut callback.
+      * @param {ClipboardEvent} event
+      */
+    def cut(event: ClipboardEvent): Unit = js.native
     
     /**
       * Delete the current editor or all.
@@ -121,10 +126,10 @@ object typesSrcDisplayEditorToolsMod {
     def onPageChanging(param0: PageNumber): Unit = js.native
     
     /**
-      * Paste a previously copied editor.
-      * @returns {undefined}
+      * Paste callback.
+      * @param {ClipboardEvent} event
       */
-    def paste(): Unit = js.native
+    def paste(event: ClipboardEvent): Unit = js.native
     
     /* private */ var `private`: Any = js.native
     

@@ -8,8 +8,6 @@ trait Container extends StObject {
   
   var container: Any
   
-  var enhanceTextSelection: Any
-  
   var textContent: Any
   
   var textContentItemsStr: Any
@@ -24,22 +22,19 @@ object Container {
   
   inline def apply(
     container: Any,
-    enhanceTextSelection: Any,
     textContent: Any,
     textContentItemsStr: Any,
     textContentStream: Any,
     textDivs: Any,
     viewport: Any
   ): Container = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], enhanceTextSelection = enhanceTextSelection.asInstanceOf[js.Any], textContent = textContent.asInstanceOf[js.Any], textContentItemsStr = textContentItemsStr.asInstanceOf[js.Any], textContentStream = textContentStream.asInstanceOf[js.Any], textDivs = textDivs.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], textContent = textContent.asInstanceOf[js.Any], textContentItemsStr = textContentItemsStr.asInstanceOf[js.Any], textContentStream = textContentStream.asInstanceOf[js.Any], textDivs = textDivs.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
   
   extension [Self <: Container](x: Self) {
     
     inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
-    
-    inline def setEnhanceTextSelection(value: Any): Self = StObject.set(x, "enhanceTextSelection", value.asInstanceOf[js.Any])
     
     inline def setTextContent(value: Any): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     

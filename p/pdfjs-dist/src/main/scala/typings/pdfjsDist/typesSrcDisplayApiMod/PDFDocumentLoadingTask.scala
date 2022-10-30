@@ -66,7 +66,7 @@ open class PDFDocumentLoadingTask () extends StObject {
 /* static members */
 object PDFDocumentLoadingTask {
   
-  @JSImport("pdfjs-dist/types/src/display/api", "PDFDocumentLoadingTask.__#16@#docId")
+  @JSImport("pdfjs-dist/types/src/display/api", "PDFDocumentLoadingTask.__#15@#docId")
   @js.native
-  val `__Numbersign16@NumbersigndocId`: Double = js.native
+  val `__Numbersign15@NumbersigndocId`: Double = js.native
 }

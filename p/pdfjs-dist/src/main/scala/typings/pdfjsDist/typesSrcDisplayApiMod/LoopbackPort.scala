@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class LoopbackPort () extends StObject {
   
-  var _deferred: js.Promise[Unit] = js.native
-  
-  var _listeners: js.Array[Any] = js.native
-  
   def addEventListener(name: Any, listener: Any): Unit = js.native
   
   def postMessage(obj: Any, transfers: Any): Unit = js.native
+  
+  /* private */ var `private`: Any = js.native
   
   def removeEventListener(name: Any, listener: Any): Unit = js.native
   

@@ -28,6 +28,8 @@ object typesSrcDisplayEditorFreetextMod {
     
     def editorDivFocus(event: Any): Unit = js.native
     
+    def editorDivInput(event: Any): Unit = js.native
+    
     def editorDivKeydown(event: Any): Unit = js.native
     
     /**
