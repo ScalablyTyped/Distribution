@@ -5387,6 +5387,10 @@ object iconsMod {
   @js.native
   val siMozilla: I = js.native
   
+  @JSImport("simple-icons/icons", "siMqtt")
+  @js.native
+  val siMqtt: I = js.native
+  
   @JSImport("simple-icons/icons", "siMsi")
   @js.native
   val siMsi: I = js.native
@@ -6850,6 +6854,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siRaspberrypi")
   @js.native
   val siRaspberrypi: I = js.native
+  
+  @JSImport("simple-icons/icons", "siRavelry")
+  @js.native
+  val siRavelry: I = js.native
   
   @JSImport("simple-icons/icons", "siRay")
   @js.native

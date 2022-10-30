@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "simple-icons" : "7.17.0"
+      "simple-icons" : "7.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "simple-icons" : "7.17.0"
+      "simple-icons" : "7.18.0"
     }
   ],
   "compile-devDependencies" : [

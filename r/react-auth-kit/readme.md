@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-auth-kit
 
-Typings are for version 2.6.2
+Typings are for version 2.7.0
 
 ## Library description:
 Authentication Library for React, which makes Token based auth very easy
