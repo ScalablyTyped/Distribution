@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "checkpoint-stream"
-version := "0.1.2-10a67c"
+version := "0.1.2-783571"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20220624Z-f953a8",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
-  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20211202Z-a90843",
+  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20220624Z-4b715b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20211202Z-1e4a1e",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

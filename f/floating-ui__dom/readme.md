@@ -1,7 +1,7 @@
 
 # Scala.js typings for floating-ui__dom
 
-Typings are for version 1.0.3
+Typings are for version 1.0.4
 
 ## Library description:
 Floating UI for the web

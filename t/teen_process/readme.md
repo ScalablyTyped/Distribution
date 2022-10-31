@@ -1,7 +1,7 @@
 
 # Scala.js typings for teen_process
 
-Typings are for version 1.16
+Typings are for version 2.0
 
 ## Library description:
 A grown up version of Node's spawn/exec

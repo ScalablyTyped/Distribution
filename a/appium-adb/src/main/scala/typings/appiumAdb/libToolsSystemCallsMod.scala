@@ -14,8 +14,8 @@ import typings.appiumAdb.appiumAdbStrings.undefined
 import typings.node.bufferMod.global.Buffer
 import typings.semver.mod.SemVer
 import typings.std.Record
-import typings.teenProcess.mod.ExecOptions
 import typings.teenProcess.mod.SubProcess
+import typings.teenProcess.mod.TeenProcessExecOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +38,7 @@ object libToolsSystemCallsMod {
   
   trait AdbExecOptions
     extends StObject
-       with ExecOptions {
+       with TeenProcessExecOptions {
     
     var exclusive: js.UndefOr[Boolean] = js.undefined
     
@@ -315,7 +315,7 @@ object libToolsSystemCallsMod {
   
   trait ShellExecOptions
     extends StObject
-       with ExecOptions {
+       with TeenProcessExecOptions {
     
     /** @default [falsy] Whether to keep root mode after command execution is completed. */
     var keepPrivileged: js.UndefOr[Boolean] = js.undefined

@@ -8,6 +8,7 @@ import typings.validator.libIsFQDNMod.IsFQDNOptions
 import typings.validator.libIsURLMod.IsURLOptions
 import typings.validator.mod.validator.AlphaLocale
 import typings.validator.mod.validator.AlphanumericLocale
+import typings.validator.mod.validator.ContainsOptions
 import typings.validator.mod.validator.FloatLocale
 import typings.validator.mod.validator.HashAlgorithm
 import typings.validator.mod.validator.IPVersion
@@ -57,15 +58,13 @@ object global {
       */
     inline def blacklist(input: String, chars: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("blacklist")(input.asInstanceOf[js.Any], chars.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    /******************
-      *** Validators ***
-      ******************/
     /**
       * Check if the string contains the seed.
       *
       * @param seed - Seed
       */
     inline def contains(str: String, seed: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(str.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains(str: String, seed: Any, options: ContainsOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(str.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Check if the string matches the comparison.

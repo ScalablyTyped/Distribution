@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sc-framework-health-check"
-version := "2.0-dt-20211202Z-9a3634"
+version := "2.0-dt-20211202Z-988ccc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,26 +12,26 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "async-stream-emitter" % "4.0-dt-20220215Z-e302a4",
   "org.scalablytyped" %%% "consumable-stream" % "2.0-dt-20220215Z-2d64d4",
   "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20211202Z-11c16b",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-7a82fe",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-87e3cc",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-faf4dd",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-ed8fc0",
   "org.scalablytyped" %%% "fleximap" % "0.9-dt-20211202Z-ead772",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-561f21",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-17d348",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "ncom" % "1.0-dt-20211202Z-ebf988",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "ncom" % "1.0-dt-20211202Z-36f9ea",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
-  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20211202Z-3bd15f",
-  "org.scalablytyped" %%% "sc-broker" % "8.0-dt-20211202Z-2ce056",
-  "org.scalablytyped" %%% "sc-broker-cluster" % "9.0-dt-20211202Z-52ca14",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20211202Z-c47aac",
+  "org.scalablytyped" %%% "sc-broker" % "8.0-dt-20211202Z-b72bd4",
+  "org.scalablytyped" %%% "sc-broker-cluster" % "9.0-dt-20211202Z-aa4017",
   "org.scalablytyped" %%% "sc-channel" % "2.0-dt-20211202Z-fcf6b5",
   "org.scalablytyped" %%% "sc-errors" % "1.4-dt-20211202Z-b05182",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-5e7139",
-  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20211202Z-660c24",
-  "org.scalablytyped" %%% "socketcluster-server" % "16.1-dt-20220215Z-d640c0",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-f95ba3",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20211202Z-e32f01",
+  "org.scalablytyped" %%% "socketcluster-server" % "16.1-dt-20220215Z-97f61b",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "stream-demux" % "8.0-dt-20220215Z-940a56",
   "org.scalablytyped" %%% "writable-consumable-stream" % "2.0-dt-20220215Z-7cb43e",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-2ad085")
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-cacb98")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

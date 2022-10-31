@@ -7,7 +7,7 @@ import typings.node.bufferMod.global.BufferEncoding
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
 import typings.node.urlMod.URL_
-import typings.teenProcess.anon.Debug
+import typings.teenProcess.mod.TeenProcessLogger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,14 +54,16 @@ trait AdbExecOptionsoutputForma extends StObject {
     * Allows stdout and stderr to be sent to a particular logger, as it it received.
     * This is overridden by the `ignoreOutput` option.
     */
-  var logger: js.UndefOr[Debug] = js.undefined
+  var logger: js.UndefOr[TeenProcessLogger] = js.undefined
   
   /**
+    * Maximum size of `stderr` buffer
     * @default 100 * 1024 * 1024 // 100 MB
     */
   var maxStderrBufferSize: js.UndefOr[Double] = js.undefined
   
   /**
+    * Maximum size of `stdout` buffer
     * @default 100 * 1024 * 1024 // 100 MB
     */
   var maxStdoutBufferSize: js.UndefOr[Double] = js.undefined
@@ -119,7 +121,7 @@ object AdbExecOptionsoutputForma {
     
     inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
     
-    inline def setLogger(value: Debug): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: TeenProcessLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     

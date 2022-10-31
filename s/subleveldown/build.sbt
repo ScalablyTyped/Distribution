@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "subleveldown"
-version := "4.1-dt-20220317Z-206934"
+version := "4.1-dt-20220317Z-517679"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "abstract-leveldown" % "7.2-dt-20220329Z-08c022",
   "org.scalablytyped" %%% "level-codec" % "9.0-dt-20211202Z-c490f9",
   "org.scalablytyped" %%% "level-errors" % "3.0-dt-20211202Z-24d7d8",
-  "org.scalablytyped" %%% "levelup" % "5.1-dt-20220717Z-ae04d6",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "levelup" % "5.1-dt-20220717Z-a4b945",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

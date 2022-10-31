@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "jest-resolve"
-version := "29.2.2-68e3a8"
+version := "29.2.2-cc8c14"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20211202Z-1dda3c",
+  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20211202Z-a4b63d",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-32acec",
   "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-242218",
   "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-a4bec8",
-  "org.scalablytyped" %%% "jest-haste-map" % "29.2.1-e028c2",
+  "org.scalablytyped" %%% "jest-haste-map" % "29.2.1-6aa102",
   "org.scalablytyped" %%% "jest__schemas" % "29.0.0-db208b",
-  "org.scalablytyped" %%% "jest__types" % "29.2.1-044d4c",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "jest__types" % "29.2.1-37d167",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "sinclair__typebox" % "0.24.42-8e6dfd",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

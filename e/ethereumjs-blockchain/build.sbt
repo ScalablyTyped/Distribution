@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "ethereumjs-blockchain"
-version := "4.0.4-e2fd37"
+version := "4.0.4-af502b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bn_dot_js" % "5.1-dt-20220829Z-ff2541",
+  "org.scalablytyped" %%% "bn_dot_js" % "5.1-dt-20220829Z-c04395",
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
   "org.scalablytyped" %%% "ethereumjs-common" % "1.5.2-2f6b6a",
-  "org.scalablytyped" %%% "ethereumjs-util" % "7.1.5-e2d141",
+  "org.scalablytyped" %%% "ethereumjs-util" % "7.1.5-f3f9fa",
   "org.scalablytyped" %%% "lru-cache" % "7.14.0-c21024",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "rlp" % "3.0.0-ae3433",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

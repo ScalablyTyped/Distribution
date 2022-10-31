@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "umzug"
-version := "v2.3.0-dt-20220818Z-3410bc"
+version := "v2.3.0-dt-20220818Z-aafe9a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,13 +8,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220923Z-5a7a5b",
   "org.scalablytyped" %%% "bson" % "4.7.0-8f1d87",
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
-  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20211223Z-29805d",
+  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20211223Z-c3f49d",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20220928Z-3598f3",
-  "org.scalablytyped" %%% "mongodb" % "4.11.0-e656e8",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
-  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20220819Z-b167ce",
+  "org.scalablytyped" %%% "mongodb" % "4.11.0-19c2b1",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20220819Z-beb739",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "validator" % "13.7-dt-20221022Z-c6669d")
+  "org.scalablytyped" %%% "validator" % "13.7-dt-20221030Z-1cab63")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

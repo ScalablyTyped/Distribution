@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libp2p__pubsub"
-version := "5.0.0-eb86de"
+version := "5.0.0-30961e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,15 +9,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "eventemitter3" % "4.0.7-30a4f9",
   "org.scalablytyped" %%% "it-pushable" % "3.1.0-52a3a3",
   "org.scalablytyped" %%% "it-stream-types" % "1.0.4-43f797",
-  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-7c4942",
+  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-31ced4",
   "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-22c095",
-  "org.scalablytyped" %%% "libp2p__interface-pubsub" % "3.0.0-419879",
-  "org.scalablytyped" %%% "libp2p__interface-registrar" % "2.0.3-44aafe",
+  "org.scalablytyped" %%% "libp2p__interface-pubsub" % "3.0.0-7c3762",
+  "org.scalablytyped" %%% "libp2p__interface-registrar" % "2.0.3-677084",
   "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-5a062f",
   "org.scalablytyped" %%% "libp2p__peer-collections" % "2.2.0-60b1eb",
   "org.scalablytyped" %%% "multiformats" % "10.0.2-cc7cca",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-d92aed",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-93ee03",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "p-queue" % "7.3.0-6d7a04",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-bed8fc")

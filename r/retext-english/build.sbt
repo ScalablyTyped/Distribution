@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "retext-english"
-version := "4.1.0-5df57a"
+version := "4.1.0-2ff909"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "nlcst" % "1.0-dt-20220624Z-663cf3",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "unified" % "10.1.2-7914ae",
+  "org.scalablytyped" %%% "unified" % "10.1.2-8d062e",
   "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-ecc657",
-  "org.scalablytyped" %%% "vfile" % "5.3.5-41ce54",
+  "org.scalablytyped" %%% "vfile" % "5.3.5-e10c4f",
   "org.scalablytyped" %%% "vfile-message" % "3.1.2-369ede")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

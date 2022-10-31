@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "achingbrain__nat-port-mapper"
-version := "1.0.7-91a02c"
+version := "1.0.7-e1bbaa"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "achingbrain__ssdp" % "4.0.1-792fde",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "achingbrain__ssdp" % "4.0.1-66a595",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "p-defer" % "4.0.0-de11a3",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

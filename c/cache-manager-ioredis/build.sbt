@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "cache-manager-ioredis"
-version := "2.0-dt-20221026Z-d1443d"
+version := "2.0-dt-20221026Z-e3ec8f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "cache-manager" % "5.1.1-9b4134",
   "org.scalablytyped" %%% "denque" % "2.1.0-758dab",
-  "org.scalablytyped" %%% "ioredis" % "5.2.3-69c807",
+  "org.scalablytyped" %%% "ioredis" % "5.2.3-3cf722",
   "org.scalablytyped" %%% "lru-cache" % "7.14.0-c21024",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "redis-errors" % "1.2-dt-20211202Z-181495",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

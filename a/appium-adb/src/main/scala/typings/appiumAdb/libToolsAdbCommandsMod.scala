@@ -5,8 +5,8 @@ import typings.appiumAdb.anon.Data
 import typings.appiumAdb.libLogcatMod.Log
 import typings.appiumAdb.libLogcatMod.LogcatOpts
 import typings.std.RegExpExecArray
-import typings.teenProcess.mod.ExecOptions
 import typings.teenProcess.mod.SubProcess
+import typings.teenProcess.mod.TeenProcessExecOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -660,7 +660,7 @@ object libToolsAdbCommandsMod extends Shortcut {
       *                        options.
       */
     def pull(remotePath: String, localPath: String): js.Promise[Unit] = js.native
-    def pull(remotePath: String, localPath: String, opts: ExecOptions): js.Promise[Unit] = js.native
+    def pull(remotePath: String, localPath: String, opts: TeenProcessExecOptions): js.Promise[Unit] = js.native
     
     /**
       * Send a file to the device under test.
@@ -673,7 +673,7 @@ object libToolsAdbCommandsMod extends Shortcut {
       *                        options.
       */
     def push(localPath: String, remotePath: String): js.Promise[Unit] = js.native
-    def push(localPath: String, remotePath: String, opts: ExecOptions): js.Promise[Unit] = js.native
+    def push(localPath: String, remotePath: String, opts: TeenProcessExecOptions): js.Promise[Unit] = js.native
     
     /**
       * Removes the previously set callback for the logcat output event.

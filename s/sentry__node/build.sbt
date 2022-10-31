@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sentry__node"
-version := "7.15.0-6bb50a"
+version := "7.15.0-2fc8ca"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "sentry__core" % "7.17.2-ab51cb",
   "org.scalablytyped" %%% "sentry__types" % "7.17.2-221632",
   "org.scalablytyped" %%% "sentry__utils" % "7.17.2-608c1c",

@@ -1,7 +1,7 @@
 
 # Scala.js typings for urllib
 
-Typings are for version 3.4.0
+Typings are for version 3.5.0
 
 ## Library description:
 Help in opening URLs (mostly HTTP) in a complex world — basic and digest authentication, redirections, cookies and more. Base undici fetch API.

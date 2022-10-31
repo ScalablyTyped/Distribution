@@ -130,6 +130,11 @@ object srcEsmRequestMod {
     var retryDelay: js.UndefOr[Double] = js.undefined
     
     /**
+      * unix domain socket file path
+      */
+    var socketPath: js.UndefOr[String | Null] = js.undefined
+    
+    /**
       * @deprecated
       * Stream to be pipe to the remote. If set, data and content will be ignored.
       * Alias to `content = Readable`
@@ -270,6 +275,12 @@ object srcEsmRequestMod {
       inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
       inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      
+      inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+      
+      inline def setSocketPathNull: Self = StObject.set(x, "socketPath", null)
+      
+      inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
       
       inline def setStream(value: Readable): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       

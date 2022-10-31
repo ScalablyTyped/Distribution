@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "google-cloud__tasks"
-version := "0.2-dt-20220624Z-87d99c"
+version := "0.2-dt-20220624Z-34fe32"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "gaxios" % "5.0.2-3344b7",
-  "org.scalablytyped" %%% "google-auth-library" % "8.6.0-03cda1",
-  "org.scalablytyped" %%% "google-gax" % "3.5.2-5a32cf",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-dc5f79",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-fb68dc",
-  "org.scalablytyped" %%% "gtoken" % "6.1.2-00bc8d",
+  "org.scalablytyped" %%% "gaxios" % "5.0.2-3bcd2f",
+  "org.scalablytyped" %%% "google-auth-library" % "8.6.0-44d246",
+  "org.scalablytyped" %%% "google-gax" % "3.5.2-d83407",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-47c97e",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-98b742",
+  "org.scalablytyped" %%% "gtoken" % "6.1.2-0ea18f",
   "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
-  "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-a7c7d5",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-bdc80f",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-fe2613",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

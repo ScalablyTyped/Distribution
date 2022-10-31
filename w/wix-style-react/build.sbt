@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "wix-style-react"
-version := "10.59.1-e2cb75"
+version := "10.59.1-5a8d3e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "aria-query" % "5.0-dt-20221027Z-378656",
-  "org.scalablytyped" %%% "blocking-proxy" % "1.0.1-f518e7",
+  "org.scalablytyped" %%% "blocking-proxy" % "1.0.1-448708",
   "org.scalablytyped" %%% "color" % "3.0-dt-20220819Z-b8ff90",
   "org.scalablytyped" %%% "color-convert" % "2.0-dt-20211202Z-7c7c1a",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20211202Z-135be1",
@@ -19,30 +19,30 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-a99f73",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20220928Z-3598f3",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.1-833116",
   "org.scalablytyped" %%% "pretty-format" % "29.2.1-d73ee0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "protractor" % "7.0.0-34b549",
-  "org.scalablytyped" %%% "puppeteer" % "19.2.0-557acd",
-  "org.scalablytyped" %%% "puppeteer-core" % "19.2.0-1ece2f",
+  "org.scalablytyped" %%% "protractor" % "7.0.0-eae279",
+  "org.scalablytyped" %%% "puppeteer" % "19.2.0-a679a9",
+  "org.scalablytyped" %%% "puppeteer-core" % "19.2.0-c5ac75",
   "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-96a756",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221027Z-34f203",
   "org.scalablytyped" %%% "react-types__shared" % "3.15.0-e6d7fc",
   "org.scalablytyped" %%% "redux" % "4.2.0-6b25b9",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221018Z-c4ad2a",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221018Z-7d374b",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "testing-library__dom" % "8.19.0-72033b",
   "org.scalablytyped" %%% "testing-library__react" % "13.4.0-98cb5e",
   "org.scalablytyped" %%% "unidriver__core" % "1.3.0-540a8e",
   "org.scalablytyped" %%% "unidriver__jsdom-react" % "1.7.0-226add",
-  "org.scalablytyped" %%% "webdriver-js-extender" % "2.2.0-14b76b",
+  "org.scalablytyped" %%% "webdriver-js-extender" % "2.2.0-7c4666",
   "org.scalablytyped" %%% "wix-design-systems-locale-utils" % "1.70.0-a5cec3",
   "org.scalablytyped" %%% "wix-design-systems-providers" % "1.15.1-9399d2",
-  "org.scalablytyped" %%% "wix-ui-test-utils" % "1.0.191-d203a1",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-2ad085")
+  "org.scalablytyped" %%% "wix-ui-test-utils" % "1.0.191-419f73",
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-cacb98")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "terser-webpack-plugin"
-version := "5.3.6-2979f9"
+version := "5.3.6-432341"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-fcbdcb",
-  "org.scalablytyped" %%% "jest-worker" % "29.2.1-6f86bd",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-8684db",
+  "org.scalablytyped" %%% "jest-worker" % "29.2.1-8d1d70",
   "org.scalablytyped" %%% "jridgewell__gen-mapping" % "0.3.2-ae4999",
   "org.scalablytyped" %%% "jridgewell__trace-mapping" % "0.3.17-81dbd7",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
-  "org.scalablytyped" %%% "re2" % "1.17.7-18b669",
-  "org.scalablytyped" %%% "schema-utils" % "4.0.0-9310ee",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "re2" % "1.17.7-7aac79",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-d57fbb",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "terser" % "5.15.1-0f2329",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092")

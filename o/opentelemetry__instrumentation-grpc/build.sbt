@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "opentelemetry__instrumentation-grpc"
-version := "0.33.0-142261"
+version := "0.33.0-497967"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "grpc" % "1.24.11-3f1cec",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-dc5f79",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-fb68dc",
+  "org.scalablytyped" %%% "grpc" % "1.24.11-e6b1fb",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-47c97e",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-98b742",
   "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "opentelemetry__api" % "1.2.0-48496a",
   "org.scalablytyped" %%% "opentelemetry__api-metrics" % "0.33.0-d8420b",
   "org.scalablytyped" %%% "opentelemetry__instrumentation" % "0.33.0-dd1b4d",

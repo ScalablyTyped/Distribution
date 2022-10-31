@@ -9,7 +9,7 @@ import typings.appiumAdb.appiumAdbStrings.notInstalled
 import typings.appiumAdb.appiumAdbStrings.olderVersionInstalled
 import typings.appiumAdb.appiumAdbStrings.sameVersionInstalled
 import typings.appiumAdb.appiumAdbStrings.unknown
-import typings.teenProcess.mod.ExecOptions
+import typings.teenProcess.mod.TeenProcessExecOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -190,7 +190,7 @@ object libToolsApkUtilsMod extends Shortcut {
       * @throws If there was a failure during application install.
       */
     def installFromDevicePath(apkPathOnDevice: String): js.Promise[Unit] = js.native
-    def installFromDevicePath(apkPathOnDevice: String, opts: ExecOptions): js.Promise[Unit] = js.native
+    def installFromDevicePath(apkPathOnDevice: String, opts: TeenProcessExecOptions): js.Promise[Unit] = js.native
     
     /**
       * Install the package from the local file system or upgrade it if an older

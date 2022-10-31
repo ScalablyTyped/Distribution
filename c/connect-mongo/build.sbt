@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "connect-mongo"
-version := "4.6.0-78f867"
+version := "4.6.0-6dde53"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "bson" % "4.7.0-8f1d87",
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-7a82fe",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-87e3cc",
-  "org.scalablytyped" %%% "express-session" % "1.17-dt-20220707Z-c8fb06",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-faf4dd",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-ed8fc0",
+  "org.scalablytyped" %%% "express-session" % "1.17-dt-20220707Z-3825c8",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "mongodb" % "4.11.0-e656e8",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "mongodb" % "4.11.0-19c2b1",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-5e7139",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-f95ba3",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "fast-csv"
-version := "4.3.6-06d1f4"
+version := "4.3.6-024b36"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "fast-csv__format" % "4.3.5-282f73",
-  "org.scalablytyped" %%% "fast-csv__parse" % "4.3.6-86ad2d",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "fast-csv__format" % "4.3.5-bb4825",
+  "org.scalablytyped" %%% "fast-csv__parse" % "4.3.6-39833f",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

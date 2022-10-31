@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "bull-board"
-version := "2.1.3-3b4eae"
+version := "2.1.3-521af4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bull" % "4.10.1-2e3d91",
+  "org.scalablytyped" %%% "bull" % "4.10.1-d448a6",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "denque" % "2.1.0-758dab",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-7a82fe",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-87e3cc",
-  "org.scalablytyped" %%% "ioredis" % "5.2.3-69c807",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-faf4dd",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-ed8fc0",
+  "org.scalablytyped" %%% "ioredis" % "5.2.3-3cf722",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "redis-errors" % "1.2-dt-20211202Z-181495",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-5e7139",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-f95ba3",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

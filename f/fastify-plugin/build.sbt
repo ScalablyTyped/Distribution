@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "fastify-plugin"
-version := "4.2.1-bafdb8"
+version := "4.2.1-46c0d1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-fcbdcb",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-8684db",
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
-  "org.scalablytyped" %%% "fast-json-stringify" % "5.4.0-ad23da",
-  "org.scalablytyped" %%% "fastify" % "4.9.2-45777f",
-  "org.scalablytyped" %%% "fastify__ajv-compiler" % "3.3.1-6f920d",
+  "org.scalablytyped" %%% "fast-json-stringify" % "5.4.0-7f4c1c",
+  "org.scalablytyped" %%% "fastify" % "4.9.2-b21735",
+  "org.scalablytyped" %%% "fastify__ajv-compiler" % "3.3.1-bff41b",
   "org.scalablytyped" %%% "fastify__error" % "3.0.0-7d417f",
-  "org.scalablytyped" %%% "fastify__fast-json-stringify-compiler" % "4.1.0-af7d11",
-  "org.scalablytyped" %%% "find-my-way" % "7.3.1-84a718",
-  "org.scalablytyped" %%% "light-my-request" % "5.6.1-7d51c6",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
-  "org.scalablytyped" %%% "pino" % "8.7.0-1e72c0",
-  "org.scalablytyped" %%% "pino-std-serializers" % "6.0.0-e4959c",
-  "org.scalablytyped" %%% "re2" % "1.17.7-18b669",
-  "org.scalablytyped" %%% "sonic-boom" % "3.2.0-d1def4",
+  "org.scalablytyped" %%% "fastify__fast-json-stringify-compiler" % "4.1.0-661a25",
+  "org.scalablytyped" %%% "find-my-way" % "7.3.1-974379",
+  "org.scalablytyped" %%% "light-my-request" % "5.6.1-c4cdab",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "pino" % "8.7.0-86695b",
+  "org.scalablytyped" %%% "pino-std-serializers" % "6.0.0-b3b936",
+  "org.scalablytyped" %%% "re2" % "1.17.7-7aac79",
+  "org.scalablytyped" %%% "sonic-boom" % "3.2.0-5a7802",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092")
 publishArtifact in packageDoc := false

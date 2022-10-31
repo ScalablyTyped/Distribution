@@ -15,8 +15,7 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
 import typings.node.urlMod.URL_
 import typings.std.Error
-import typings.teenProcess.anon.Debug
-import typings.teenProcess.anon.ExecOptionsisBuffertrue
+import typings.teenProcess.anon.TeenProcessExecOptionsisB
 import typings.teenProcess.teenProcessStrings.`lines-stderr`
 import typings.teenProcess.teenProcessStrings.`lines-stdout`
 import typings.teenProcess.teenProcessStrings.`stream-line`
@@ -201,12 +200,12 @@ object mod {
     def stop(signal: Signals, timeout: Double): js.Promise[Double] = js.native
   }
   
-  inline def exec(cmd: String): js.Promise[ExecResult[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExecResult[String]]]
-  inline def exec(cmd: String, args: js.Array[String]): js.Promise[ExecResult[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExecResult[String]]]
-  inline def exec(cmd: String, args: js.Array[String], opts: ExecOptionsisBuffertrue): js.Promise[ExecResult[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExecResult[Buffer]]]
-  inline def exec(cmd: String, args: js.Array[String], opts: ExecOptions): js.Promise[ExecResult[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExecResult[String]]]
-  inline def exec(cmd: String, args: Unit, opts: ExecOptionsisBuffertrue): js.Promise[ExecResult[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExecResult[Buffer]]]
-  inline def exec(cmd: String, args: Unit, opts: ExecOptions): js.Promise[ExecResult[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExecResult[String]]]
+  inline def exec(cmd: String): js.Promise[TeenProcessExecResult[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TeenProcessExecResult[String]]]
+  inline def exec(cmd: String, args: js.Array[String]): js.Promise[TeenProcessExecResult[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TeenProcessExecResult[String]]]
+  inline def exec(cmd: String, args: js.Array[String], opts: TeenProcessExecOptionsisB): js.Promise[TeenProcessExecResult[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TeenProcessExecResult[Buffer]]]
+  inline def exec(cmd: String, args: js.Array[String], opts: TeenProcessExecOptions): js.Promise[TeenProcessExecResult[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TeenProcessExecResult[String]]]
+  inline def exec(cmd: String, args: Unit, opts: TeenProcessExecOptionsisB): js.Promise[TeenProcessExecResult[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TeenProcessExecResult[Buffer]]]
+  inline def exec(cmd: String, args: Unit, opts: TeenProcessExecOptions): js.Promise[TeenProcessExecResult[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TeenProcessExecResult[String]]]
   
   // overloads of spawn with 'args'
   inline def spawn(command: String): ChildProcessWithoutNullStreams = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any]).asInstanceOf[ChildProcessWithoutNullStreams]
@@ -255,8 +254,29 @@ object mod {
     }
   }
   
+  trait SubProcessOptions
+    extends StObject
+       with SpawnOptions {
+    
+    var encoding: js.UndefOr[String] = js.undefined
+  }
+  object SubProcessOptions {
+    
+    inline def apply(): SubProcessOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SubProcessOptions]
+    }
+    
+    extension [Self <: SubProcessOptions](x: Self) {
+      
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    }
+  }
+  
   /* Inlined parent std.Pick<node.child_process.SpawnOptions, 'cwd' | 'env' | 'shell'> */
-  trait ExecOptions extends StObject {
+  trait TeenProcessExecOptions extends StObject {
     
     var cwd: js.UndefOr[String | URL_] = js.undefined
     
@@ -295,14 +315,16 @@ object mod {
       * Allows stdout and stderr to be sent to a particular logger, as it it received.
       * This is overridden by the `ignoreOutput` option.
       */
-    var logger: js.UndefOr[Debug] = js.undefined
+    var logger: js.UndefOr[TeenProcessLogger] = js.undefined
     
     /**
+      * Maximum size of `stderr` buffer
       * @default 100 * 1024 * 1024 // 100 MB
       */
     var maxStderrBufferSize: js.UndefOr[Double] = js.undefined
     
     /**
+      * Maximum size of `stdout` buffer
       * @default 100 * 1024 * 1024 // 100 MB
       */
     var maxStdoutBufferSize: js.UndefOr[Double] = js.undefined
@@ -321,14 +343,14 @@ object mod {
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
-  object ExecOptions {
+  object TeenProcessExecOptions {
     
-    inline def apply(): ExecOptions = {
+    inline def apply(): TeenProcessExecOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ExecOptions]
+      __obj.asInstanceOf[TeenProcessExecOptions]
     }
     
-    extension [Self <: ExecOptions](x: Self) {
+    extension [Self <: TeenProcessExecOptions](x: Self) {
       
       inline def setCwd(value: String | URL_): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -354,7 +376,7 @@ object mod {
       
       inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
       
-      inline def setLogger(value: Debug): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: TeenProcessLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
@@ -380,22 +402,25 @@ object mod {
     }
   }
   
-  trait ExecResult[T /* <: String | Buffer */] extends StObject {
+  trait TeenProcessExecResult[T /* <: String | Buffer */] extends StObject {
     
+    /** Exit code */
     var code: Double
     
+    /** Stderr */
     var stderr: T
     
+    /** Stdout */
     var stdout: T
   }
-  object ExecResult {
+  object TeenProcessExecResult {
     
-    inline def apply[T /* <: String | Buffer */](code: Double, stderr: T, stdout: T): ExecResult[T] = {
+    inline def apply[T /* <: String | Buffer */](code: Double, stderr: T, stdout: T): TeenProcessExecResult[T] = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ExecResult[T]]
+      __obj.asInstanceOf[TeenProcessExecResult[T]]
     }
     
-    extension [Self <: ExecResult[?], T /* <: String | Buffer */](x: Self & ExecResult[T]) {
+    extension [Self <: TeenProcessExecResult[?], T /* <: String | Buffer */](x: Self & TeenProcessExecResult[T]) {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -405,24 +430,20 @@ object mod {
     }
   }
   
-  trait SubProcessOptions
-    extends StObject
-       with SpawnOptions {
+  trait TeenProcessLogger extends StObject {
     
-    var encoding: js.UndefOr[String] = js.undefined
+    def debug(args: Any*): Unit
   }
-  object SubProcessOptions {
+  object TeenProcessLogger {
     
-    inline def apply(): SubProcessOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SubProcessOptions]
+    inline def apply(debug: /* repeated */ Any => Unit): TeenProcessLogger = {
+      val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug))
+      __obj.asInstanceOf[TeenProcessLogger]
     }
     
-    extension [Self <: SubProcessOptions](x: Self) {
+    extension [Self <: TeenProcessLogger](x: Self) {
       
-      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     }
   }
 }

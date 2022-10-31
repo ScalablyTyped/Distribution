@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "libp2p__webrtc-star-protocol"
-version := "2.0.1-8d8974"
+version := "2.0.1-42dc3e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "engine_dot_io-client" % "6.2.3-12aae3",
+  "org.scalablytyped" %%% "engine_dot_io-client" % "6.2.3-b97f63",
   "org.scalablytyped" %%% "engine_dot_io-parser" % "5.0.4-984bad",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
-  "org.scalablytyped" %%% "socket_dot_io-client" % "4.5.3-773142",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "socket_dot_io-client" % "4.5.3-8590ff",
   "org.scalablytyped" %%% "socket_dot_io-parser" % "4.2.1-fda131",
   "org.scalablytyped" %%% "socket_dot_io__component-emitter" % "3.1.0-a999fd",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

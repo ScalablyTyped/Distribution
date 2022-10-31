@@ -4,6 +4,7 @@ import typings.node.bufferMod.global.BufferEncoding
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
 import typings.node.urlMod.URL_
+import typings.teenProcess.mod.TeenProcessLogger
 import typings.teenProcess.teenProcessBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,25 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Debug extends StObject {
-    
-    def debug(chunk: String): Unit
-  }
-  object Debug {
-    
-    inline def apply(debug: String => Unit): Debug = {
-      val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug))
-      __obj.asInstanceOf[Debug]
-    }
-    
-    extension [Self <: Debug](x: Self) {
-      
-      inline def setDebug(value: String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
-    }
-  }
-  
-  /* Inlined teen_process.teen_process.ExecOptions & {  isBuffer :true} */
-  trait ExecOptionsisBuffertrue extends StObject {
+  /* Inlined teen_process.teen_process.TeenProcessExecOptions & {  isBuffer :true} */
+  trait TeenProcessExecOptionsisB extends StObject {
     
     var cwd: js.UndefOr[String | URL_] = js.undefined
     
@@ -68,14 +52,16 @@ object anon {
       * Allows stdout and stderr to be sent to a particular logger, as it it received.
       * This is overridden by the `ignoreOutput` option.
       */
-    var logger: js.UndefOr[Debug] = js.undefined
+    var logger: js.UndefOr[TeenProcessLogger] = js.undefined
     
     /**
+      * Maximum size of `stderr` buffer
       * @default 100 * 1024 * 1024 // 100 MB
       */
     var maxStderrBufferSize: js.UndefOr[Double] = js.undefined
     
     /**
+      * Maximum size of `stdout` buffer
       * @default 100 * 1024 * 1024 // 100 MB
       */
     var maxStdoutBufferSize: js.UndefOr[Double] = js.undefined
@@ -94,14 +80,14 @@ object anon {
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
-  object ExecOptionsisBuffertrue {
+  object TeenProcessExecOptionsisB {
     
-    inline def apply(isBuffer: js.UndefOr[Boolean] & `true`): ExecOptionsisBuffertrue = {
+    inline def apply(isBuffer: js.UndefOr[Boolean] & `true`): TeenProcessExecOptionsisB = {
       val __obj = js.Dynamic.literal(isBuffer = isBuffer.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ExecOptionsisBuffertrue]
+      __obj.asInstanceOf[TeenProcessExecOptionsisB]
     }
     
-    extension [Self <: ExecOptionsisBuffertrue](x: Self) {
+    extension [Self <: TeenProcessExecOptionsisB](x: Self) {
       
       inline def setCwd(value: String | URL_): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -125,7 +111,7 @@ object anon {
       
       inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
       
-      inline def setLogger(value: Debug): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: TeenProcessLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       

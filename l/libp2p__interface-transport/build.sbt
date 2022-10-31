@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "libp2p__interface-transport"
-version := "2.0.0-a80625"
+version := "2.0.0-f7ea95"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-011631",
   "org.scalablytyped" %%% "it-stream-types" % "1.0.4-43f797",
-  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-7c4942",
+  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-31ced4",
   "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-22c095",
-  "org.scalablytyped" %%% "libp2p__interface-stream-muxer" % "3.0.0-6767d5",
+  "org.scalablytyped" %%% "libp2p__interface-stream-muxer" % "3.0.0-8e1eaf",
   "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-5a062f",
   "org.scalablytyped" %%% "multiformats" % "10.0.2-cc7cca",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-d92aed",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221026Z-107efe",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-93ee03",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-bed8fc")
 publishArtifact in packageDoc := false
