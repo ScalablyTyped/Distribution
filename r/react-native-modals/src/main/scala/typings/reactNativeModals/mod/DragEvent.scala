@@ -12,7 +12,7 @@ trait DragEvent extends StObject {
   
   var layout: Height
   
-  var swipeDirection: String | Null
+  var swipeDirection: SwipeDirection | Null
 }
 object DragEvent {
   
@@ -27,7 +27,7 @@ object DragEvent {
     
     inline def setLayout(value: Height): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    inline def setSwipeDirection(value: String): Self = StObject.set(x, "swipeDirection", value.asInstanceOf[js.Any])
+    inline def setSwipeDirection(value: SwipeDirection): Self = StObject.set(x, "swipeDirection", value.asInstanceOf[js.Any])
     
     inline def setSwipeDirectionNull: Self = StObject.set(x, "swipeDirection", null)
   }

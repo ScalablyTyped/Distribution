@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-dialog
 
-Typings are for version 9.2.2
+Typings are for version 9.3.0
 
 ## Library description:
 A flexible react-native dialog

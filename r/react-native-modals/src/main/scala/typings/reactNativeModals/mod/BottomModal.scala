@@ -1,12 +1,14 @@
 package typings.reactNativeModals.mod
 
+import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-modals", JSImport.Default)
+@JSImport("react-native-modals", "BottomModal")
 @js.native
-open class default protected () extends Modal {
+open class BottomModal protected ()
+  extends Component[ModalProps, js.Object, Any] {
   def this(props: ModalProps) = this()
   /**
     * @deprecated

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "barnard59-core"
-version := "1.0-dt-20220624Z-83b4b1"
+version := "1.0-dt-20220624Z-5c207d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "rdf-loaders-registry" % "0.3-dt-20220624Z-55ffce",
   "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-7612eb",
-  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20220717Z-b0378a",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20221031Z-b0378a",
   "org.scalablytyped" %%% "safe-buffer" % "5.2.1-14a7cf",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "winston" % "3.8.2-34f3c6",

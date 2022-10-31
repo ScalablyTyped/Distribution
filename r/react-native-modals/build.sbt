@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-modals"
-version := "0.19-dt-20211202Z-dfbfea"
+version := "0.22-dt-20221031Z-efb4b9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

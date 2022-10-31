@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-progress"
-version := "3.4.0-c2a39e"
+version := "3.4.1-e640db"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

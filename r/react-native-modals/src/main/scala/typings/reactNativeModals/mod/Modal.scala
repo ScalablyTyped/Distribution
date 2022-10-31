@@ -1,22 +1,18 @@
 package typings.reactNativeModals.mod
 
 import typings.react.mod.Component
-import typings.reactNativeModals.anon.Width
-import typings.reactNativeModals.reactNativeModalsStrings.auto
-import typings.reactNativeModals.reactNativeModalsStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("react-native-modals", "Modal")
 @js.native
-trait Modal
+open class Modal protected ()
   extends Component[ModalProps, js.Object, Any] {
-  
-  def dismiss(): Unit = js.native
-  
-  var modalSize: Width = js.native
-  
-  var pointerEvents: auto | none = js.native
-  
-  def show(): Unit = js.native
+  def this(props: ModalProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: ModalProps, context: Any) = this()
 }

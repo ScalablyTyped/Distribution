@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-modals
 
-Typings are for version 0.19
+Typings are for version 0.22
 
 ## Library description:
 React Native Modals Library for IOS & Android.

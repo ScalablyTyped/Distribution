@@ -59,14 +59,14 @@ trait ModalProps extends StObject {
   
   var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   
-  var visible: Boolean
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
 object ModalProps {
   
-  inline def apply(visible: Boolean): ModalProps = {
-    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+  inline def apply(): ModalProps = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalProps]
   }
   
@@ -179,6 +179,8 @@ object ModalProps {
     inline def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

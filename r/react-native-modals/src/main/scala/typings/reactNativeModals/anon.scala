@@ -11,7 +11,7 @@ object anon {
     
     var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var toValue: js.UndefOr[Double] = js.undefined
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   }
   object AnimationDuration {
     
@@ -26,9 +26,9 @@ object anon {
       
       inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      inline def setToValue(value: Double): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       
-      inline def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
+      inline def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
     }
   }
   
@@ -63,9 +63,11 @@ object anon {
   
   trait SlideFrom extends StObject {
     
+    var animationDuration: js.UndefOr[Double] = js.undefined
+    
     var slideFrom: js.UndefOr[SlideFromTypes] = js.undefined
     
-    var toValue: js.UndefOr[Double] = js.undefined
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   }
   object SlideFrom {
     
@@ -76,34 +78,17 @@ object anon {
     
     extension [Self <: SlideFrom](x: Self) {
       
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      
       inline def setSlideFrom(value: SlideFromTypes): Self = StObject.set(x, "slideFrom", value.asInstanceOf[js.Any])
       
       inline def setSlideFromUndefined: Self = StObject.set(x, "slideFrom", js.undefined)
       
-      inline def setToValue(value: Double): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       
-      inline def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
-    }
-  }
-  
-  trait Width extends StObject {
-    
-    var height: Double
-    
-    var width: Double
-  }
-  object Width {
-    
-    inline def apply(height: Double, width: Double): Width = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Width]
-    }
-    
-    extension [Self <: Width](x: Self) {
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
     }
   }
   

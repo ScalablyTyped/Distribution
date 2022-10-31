@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-progress
 
-Typings are for version 3.4.0
+Typings are for version 3.4.1
 
 ## Library description:
 progress ui component for react

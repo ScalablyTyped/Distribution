@@ -7,6 +7,7 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextInput
 import typings.reactNative.mod.TextInputProps
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,6 +26,8 @@ object libInputMod extends Shortcut {
     var label: js.UndefOr[ReactNode] = js.undefined
     
     var textInputRef: js.UndefOr[LegacyRef[TextInput]] = js.undefined
+    
+    var unstableLabelStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
@@ -48,6 +51,12 @@ object libInputMod extends Shortcut {
       inline def setTextInputRefNull: Self = StObject.set(x, "textInputRef", null)
       
       inline def setTextInputRefUndefined: Self = StObject.set(x, "textInputRef", js.undefined)
+      
+      inline def setUnstableLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "unstableLabelStyle", value.asInstanceOf[js.Any])
+      
+      inline def setUnstableLabelStyleNull: Self = StObject.set(x, "unstableLabelStyle", null)
+      
+      inline def setUnstableLabelStyleUndefined: Self = StObject.set(x, "unstableLabelStyle", js.undefined)
       
       inline def setWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
       
