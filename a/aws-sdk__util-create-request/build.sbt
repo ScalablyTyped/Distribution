@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__util-create-request"
-version := "3.198.0-4ff716"
+version := "3.200.0-4d764a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.198.0-c1c5a3",
-  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.198.0-e2ca71",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.198.0-a78f65",
+  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.200.0-afe384",
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.200.0-20abb3",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.200.0-ba75f2",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

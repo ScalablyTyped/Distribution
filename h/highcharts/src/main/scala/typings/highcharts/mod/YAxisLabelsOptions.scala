@@ -104,7 +104,7 @@ trait YAxisLabelsOptions extends StObject {
     * By default it `"justify"` labels inside the chart area. If there is room
     * to move it, it will be aligned to the edge, else it will be removed.
     */
-  var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
+  var overflow: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Gantt) The pixel padding for axis labels, to ensure white
@@ -131,7 +131,7 @@ trait YAxisLabelsOptions extends StObject {
     * orthogonal to the axis. This is very similar to `'flap'`, but prevents
     * skewing the labels (X and Y scaling are still present).
     */
-  var position3d: js.UndefOr[OptionsPosition3dValue] = js.undefined
+  var position3d: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Gantt) Whether to reserve space for the labels. By default,
@@ -280,7 +280,7 @@ object YAxisLabelsOptions {
     
     inline def setLevelsVarargs(value: YAxisLabelsLevelsOptions*): Self = StObject.set(x, "levels", js.Array(value*))
     
-    inline def setOverflow(value: OptionsOverflowValue): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
@@ -288,7 +288,7 @@ object YAxisLabelsOptions {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPosition3d(value: OptionsPosition3dValue): Self = StObject.set(x, "position3d", value.asInstanceOf[js.Any])
+    inline def setPosition3d(value: String): Self = StObject.set(x, "position3d", value.asInstanceOf[js.Any])
     
     inline def setPosition3dUndefined: Self = StObject.set(x, "position3d", js.undefined)
     

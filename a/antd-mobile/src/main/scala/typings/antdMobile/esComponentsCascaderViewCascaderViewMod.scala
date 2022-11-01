@@ -114,7 +114,7 @@ object esComponentsCascaderViewCascaderViewMod {
     }
   }
   
-  /* Inlined {  options :std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderOption>,   value :std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValue> | undefined,   defaultValue :std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValue> | undefined,   onChange :(value : std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValue>, extend : antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValueExtend): void | undefined,   placeholder :string | undefined,   onTabsChange :(index : number): void | undefined,   activeIcon :react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--height'> */
+  /* Inlined {  options :std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderOption>,   value :std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValue> | undefined,   defaultValue :std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValue> | undefined,   onChange :(value : std.Array<antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValue>, extend : antd-mobile.antd-mobile/es/components/cascader-view/cascader-view.CascaderValueExtend): void | undefined,   placeholder :string | (index : number): string | undefined,   onTabsChange :(index : number): void | undefined,   activeIcon :react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--height'> */
   trait CascaderViewProps extends StObject {
     
     var activeIcon: js.UndefOr[ReactNode] = js.undefined
@@ -365,7 +365,7 @@ object esComponentsCascaderViewCascaderViewMod {
     
     var options: js.Array[CascaderOption]
     
-    var placeholder: js.UndefOr[String] = js.undefined
+    var placeholder: js.UndefOr[String | (js.Function1[/* index */ Double, String])] = js.undefined
     
     var style: js.UndefOr[CSSPropertiesPartialRecorAlignTracks] = js.undefined
     
@@ -602,7 +602,9 @@ object esComponentsCascaderViewCascaderViewMod {
       
       inline def setOptionsVarargs(value: CascaderOption*): Self = StObject.set(x, "options", js.Array(value*))
       
-      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String | (js.Function1[/* index */ Double, String])): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      
+      inline def setPlaceholderFunction1(value: /* index */ Double => String): Self = StObject.set(x, "placeholder", js.Any.fromFunction1(value))
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       

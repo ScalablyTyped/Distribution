@@ -5,6 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * InfoWindow
+  */
 @JSGlobal("naver.maps.InfoWindow")
 @js.native
 open class InfoWindow protected ()

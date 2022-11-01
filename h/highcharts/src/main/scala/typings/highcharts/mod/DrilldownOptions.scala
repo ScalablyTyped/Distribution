@@ -1,6 +1,5 @@
 package typings.highcharts.mod
 
-import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +50,7 @@ trait DrilldownOptions extends StObject {
     * - `easing`: A string reference to an easing function set on the `Math`
     * object. See the easing demo.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   
   /**
     * (Highcharts) Options for the breadcrumbs, the navigation at the top
@@ -88,7 +87,7 @@ object DrilldownOptions {
     
     inline def setAllowPointDrilldownUndefined: Self = StObject.set(x, "allowPointDrilldown", js.undefined)
     
-    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | AnimationOptionsObject): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     

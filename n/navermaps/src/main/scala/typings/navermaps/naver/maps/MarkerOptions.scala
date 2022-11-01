@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * MarkerOptions
+  */
 trait MarkerOptions extends StObject {
   
   var animation: js.UndefOr[Animation] = js.undefined
@@ -16,7 +19,7 @@ trait MarkerOptions extends StObject {
   
   var icon: js.UndefOr[String | ImageIcon | SymbolIcon | HtmlIcon] = js.undefined
   
-  var map: Map
+  var map: js.UndefOr[Map] = js.undefined
   
   var position: Coord | CoordLiteral
   
@@ -30,8 +33,8 @@ trait MarkerOptions extends StObject {
 }
 object MarkerOptions {
   
-  inline def apply(map: Map, position: Coord | CoordLiteral): MarkerOptions = {
-    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+  inline def apply(position: Coord | CoordLiteral): MarkerOptions = {
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
   
@@ -58,6 +61,8 @@ object MarkerOptions {
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     inline def setPosition(value: Coord | CoordLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

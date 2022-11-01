@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-editext"
-version := "5.0.2-89040d"
+version := "5.1.0-207986"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

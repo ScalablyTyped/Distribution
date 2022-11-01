@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlotErrorbarDragDropGuideBoxOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock) Style options for the guide box default state.
+    * (Highcharts) Style options for the guide box default state.
     */
   var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }

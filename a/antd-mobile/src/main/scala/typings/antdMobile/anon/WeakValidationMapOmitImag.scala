@@ -28,7 +28,7 @@ trait WeakValidationMapOmitImag extends StObject {
   ] = js.undefined
   
   var maxZoom: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : undefined extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : react.react.Validator<number | undefined | undefined> */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends number | 'auto' | undefined | undefined ? react.react.Validator<number | 'auto' | undefined | undefined | null | undefined> : undefined extends number | 'auto' | undefined | undefined ? react.react.Validator<number | 'auto' | undefined | undefined | null | undefined> : react.react.Validator<number | 'auto' | undefined | undefined> */ js.Any
   ] = js.undefined
   
   var onClose: js.UndefOr[
@@ -91,7 +91,7 @@ object WeakValidationMapOmitImag {
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setMaxZoom(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : undefined extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : react.react.Validator<number | undefined | undefined> */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends number | 'auto' | undefined | undefined ? react.react.Validator<number | 'auto' | undefined | undefined | null | undefined> : undefined extends number | 'auto' | undefined | undefined ? react.react.Validator<number | 'auto' | undefined | undefined | null | undefined> : react.react.Validator<number | 'auto' | undefined | undefined> */ js.Any
     ): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)

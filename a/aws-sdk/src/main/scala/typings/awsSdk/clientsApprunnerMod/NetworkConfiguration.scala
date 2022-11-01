@@ -10,6 +10,11 @@ trait NetworkConfiguration extends StObject {
     * Network configuration settings for outbound message traffic.
     */
   var EgressConfiguration: js.UndefOr[typings.awsSdk.clientsApprunnerMod.EgressConfiguration] = js.undefined
+  
+  /**
+    * Network configuration settings for inbound message traffic.
+    */
+  var IngressConfiguration: js.UndefOr[typings.awsSdk.clientsApprunnerMod.IngressConfiguration] = js.undefined
 }
 object NetworkConfiguration {
   
@@ -23,5 +28,9 @@ object NetworkConfiguration {
     inline def setEgressConfiguration(value: EgressConfiguration): Self = StObject.set(x, "EgressConfiguration", value.asInstanceOf[js.Any])
     
     inline def setEgressConfigurationUndefined: Self = StObject.set(x, "EgressConfiguration", js.undefined)
+    
+    inline def setIngressConfiguration(value: IngressConfiguration): Self = StObject.set(x, "IngressConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setIngressConfigurationUndefined: Self = StObject.set(x, "IngressConfiguration", js.undefined)
   }
 }

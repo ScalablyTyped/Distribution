@@ -7,6 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * GroundOverlay
+  */
 @JSGlobal("naver.maps.GroundOverlay")
 @js.native
 open class GroundOverlay protected ()

@@ -57,6 +57,12 @@ object mod {
   
   type ArchOption = TargetArch | all
   
+  type FinalizePackageTargetsHookFunction = js.Function2[
+    /* targets */ js.Array[TargetDefinition], 
+    /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit], 
+    Unit
+  ]
+  
   /**
     * A function that is called on the completion of a packaging stage.
     *
@@ -94,7 +100,8 @@ object mod {
   type HookFunction = /**
     * @param buildPath - For [[afterExtract]], the path to the temporary folder where the prebuilt
     * Electron binary has been extracted to. For [[afterCopy]] and [[afterPrune]], the path to the
-    * folder where the Electron app has been copied to.
+    * folder where the Electron app has been copied to. For [[afterComplete]], the final directory
+    * of the packaged application.
     * @param electronVersion - the version of Electron that is being bundled with the application.
     * @param platform - The target platform you are packaging for.
     * @param arch - The target architecture you are packaging for.
@@ -207,14 +214,35 @@ object mod {
   trait Options extends StObject {
     
     /**
+      * Functions to be called after your app directory has been packaged into an .asar file.
+      *
+      * **Note**: `afterAsar` will only be called if the [[asar]] option is set.
+      */
+    var afterAsar: js.UndefOr[js.Array[HookFunction]] = js.undefined
+    
+    /** Functions to be called after the packaged application has been moved to the final directory. */
+    var afterComplete: js.UndefOr[js.Array[HookFunction]] = js.undefined
+    
+    /**
       * Functions to be called after your app directory has been copied to a temporary directory.
       *
       * **Note**: `afterCopy` will not be called if the [[prebuiltAsar]] option is set.
       */
     var afterCopy: js.UndefOr[js.Array[HookFunction]] = js.undefined
     
+    /**
+      * Functions to be called after the files specified in the [[extraResource]] option have been copied.
+      **/
+    var afterCopyExtraResources: js.UndefOr[js.Array[HookFunction]] = js.undefined
+    
     /** Functions to be called after the prebuilt Electron binary has been extracted to a temporary directory. */
     var afterExtract: js.UndefOr[js.Array[HookFunction]] = js.undefined
+    
+    /**
+      * Functions to be called after the final matrix of platform/arch combination is determined.  Use this to
+      * learn what archs/platforms packager is targetting when you pass "all" as a value.
+      */
+    var afterFinalizePackageTargets: js.UndefOr[js.Array[FinalizePackageTargetsHookFunction]] = js.undefined
     
     /**
       * Functions to be called after Node module pruning has been applied to the application.
@@ -311,6 +339,25 @@ object mod {
       * **Note:** `asar` will have no effect if the [[prebuiltAsar]] option is set.
       */
     var asar: js.UndefOr[Boolean | CreateOptions] = js.undefined
+    
+    /**
+      * Functions to be called before your app directory is packaged into an .asar file.
+      *
+      * **Note**: `beforeAsar` will only be called if the [[asar]] option is set.
+      */
+    var beforeAsar: js.UndefOr[js.Array[HookFunction]] = js.undefined
+    
+    /**
+      * Functions to be called before your app directory is copied to a temporary directory.
+      *
+      * **Note**: `beforeCopy` will not be called if the [[prebuiltAsar]] option is set.
+      */
+    var beforeCopy: js.UndefOr[js.Array[HookFunction]] = js.undefined
+    
+    /**
+      * Functions to be called before the files specified in the [[extraResource]] option are copied.
+      **/
+    var beforeCopyExtraResources: js.UndefOr[js.Array[HookFunction]] = js.undefined
     
     /**
       * The build version of the application. Defaults to the value of the [[appVersion]] option.
@@ -487,7 +534,7 @@ object mod {
     
     /**
       * If present, notarizes macOS target apps when the host platform is macOS and XCode is installed.
-      * See [`electron-notarize`](https://github.com/electron/electron-notarize#method-notarizeopts-promisevoid)
+      * See [`@electron/notarize`](https://github.com/electron/notarize#method-notarizeopts-promisevoid)
       * for option descriptions, such as how to use `appleIdPassword` safely or obtain an API key.
       *
       * **Requires the [[osxSign]] option to be set.**
@@ -637,7 +684,25 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
+      inline def setAfterAsar(value: js.Array[HookFunction]): Self = StObject.set(x, "afterAsar", value.asInstanceOf[js.Any])
+      
+      inline def setAfterAsarUndefined: Self = StObject.set(x, "afterAsar", js.undefined)
+      
+      inline def setAfterAsarVarargs(value: HookFunction*): Self = StObject.set(x, "afterAsar", js.Array(value*))
+      
+      inline def setAfterComplete(value: js.Array[HookFunction]): Self = StObject.set(x, "afterComplete", value.asInstanceOf[js.Any])
+      
+      inline def setAfterCompleteUndefined: Self = StObject.set(x, "afterComplete", js.undefined)
+      
+      inline def setAfterCompleteVarargs(value: HookFunction*): Self = StObject.set(x, "afterComplete", js.Array(value*))
+      
       inline def setAfterCopy(value: js.Array[HookFunction]): Self = StObject.set(x, "afterCopy", value.asInstanceOf[js.Any])
+      
+      inline def setAfterCopyExtraResources(value: js.Array[HookFunction]): Self = StObject.set(x, "afterCopyExtraResources", value.asInstanceOf[js.Any])
+      
+      inline def setAfterCopyExtraResourcesUndefined: Self = StObject.set(x, "afterCopyExtraResources", js.undefined)
+      
+      inline def setAfterCopyExtraResourcesVarargs(value: HookFunction*): Self = StObject.set(x, "afterCopyExtraResources", js.Array(value*))
       
       inline def setAfterCopyUndefined: Self = StObject.set(x, "afterCopy", js.undefined)
       
@@ -648,6 +713,12 @@ object mod {
       inline def setAfterExtractUndefined: Self = StObject.set(x, "afterExtract", js.undefined)
       
       inline def setAfterExtractVarargs(value: HookFunction*): Self = StObject.set(x, "afterExtract", js.Array(value*))
+      
+      inline def setAfterFinalizePackageTargets(value: js.Array[FinalizePackageTargetsHookFunction]): Self = StObject.set(x, "afterFinalizePackageTargets", value.asInstanceOf[js.Any])
+      
+      inline def setAfterFinalizePackageTargetsUndefined: Self = StObject.set(x, "afterFinalizePackageTargets", js.undefined)
+      
+      inline def setAfterFinalizePackageTargetsVarargs(value: FinalizePackageTargetsHookFunction*): Self = StObject.set(x, "afterFinalizePackageTargets", js.Array(value*))
       
       inline def setAfterPrune(value: js.Array[HookFunction]): Self = StObject.set(x, "afterPrune", value.asInstanceOf[js.Any])
       
@@ -684,6 +755,24 @@ object mod {
       inline def setAsar(value: Boolean | CreateOptions): Self = StObject.set(x, "asar", value.asInstanceOf[js.Any])
       
       inline def setAsarUndefined: Self = StObject.set(x, "asar", js.undefined)
+      
+      inline def setBeforeAsar(value: js.Array[HookFunction]): Self = StObject.set(x, "beforeAsar", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeAsarUndefined: Self = StObject.set(x, "beforeAsar", js.undefined)
+      
+      inline def setBeforeAsarVarargs(value: HookFunction*): Self = StObject.set(x, "beforeAsar", js.Array(value*))
+      
+      inline def setBeforeCopy(value: js.Array[HookFunction]): Self = StObject.set(x, "beforeCopy", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeCopyExtraResources(value: js.Array[HookFunction]): Self = StObject.set(x, "beforeCopyExtraResources", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeCopyExtraResourcesUndefined: Self = StObject.set(x, "beforeCopyExtraResources", js.undefined)
+      
+      inline def setBeforeCopyExtraResourcesVarargs(value: HookFunction*): Self = StObject.set(x, "beforeCopyExtraResources", js.Array(value*))
+      
+      inline def setBeforeCopyUndefined: Self = StObject.set(x, "beforeCopy", js.undefined)
+      
+      inline def setBeforeCopyVarargs(value: HookFunction*): Self = StObject.set(x, "beforeCopy", js.Array(value*))
       
       inline def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
       
@@ -814,7 +903,7 @@ object mod {
   }
   
   /**
-    * See the documentation for [`electron-notarize`](https://npm.im/electron-notarize#method-notarizeopts-promisevoid)
+    * See the documentation for [`@electron/notarize`](https://npm.im/@electron/notarize#method-notarizeopts-promisevoid)
     * for details.
     */
   type OsxNotarizeOptions = (Tool & NotarizeLegacyOptions) | (`0` & NotaryToolCredentials)
@@ -907,6 +996,27 @@ object mod {
   type PlatformOption = TargetPlatform | all
   
   type TargetArch = OfficialArch | String
+  
+  trait TargetDefinition extends StObject {
+    
+    var arch: TargetArch
+    
+    var platform: TargetPlatform
+  }
+  object TargetDefinition {
+    
+    inline def apply(arch: TargetArch, platform: TargetPlatform): TargetDefinition = {
+      val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TargetDefinition]
+    }
+    
+    extension [Self <: TargetDefinition](x: Self) {
+      
+      inline def setArch(value: TargetArch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      
+      inline def setPlatform(value: TargetPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    }
+  }
   
   type TargetPlatform = OfficialPlatform | String
   

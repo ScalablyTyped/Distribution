@@ -1,5 +1,7 @@
 package typings.next.anon
 
+import typings.next.nextStrings.app
+import typings.next.nextStrings.pages
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,6 +16,8 @@ trait IsDev extends StObject {
   var page: js.UndefOr[String] = js.undefined
   
   var pageFilePath: String
+  
+  var pageType: js.UndefOr[pages | app] = js.undefined
 }
 object IsDev {
   
@@ -33,6 +37,10 @@ object IsDev {
     inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     inline def setPageFilePath(value: String): Self = StObject.set(x, "pageFilePath", value.asInstanceOf[js.Any])
+    
+    inline def setPageType(value: pages | app): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
+    
+    inline def setPageTypeUndefined: Self = StObject.set(x, "pageType", js.undefined)
     
     inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }

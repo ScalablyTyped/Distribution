@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChartIsInsideOptionsObject extends StObject {
   
+  var axis: js.UndefOr[Axis] = js.undefined
+  
   var ignoreX: js.UndefOr[Boolean] = js.undefined
   
   var ignoreY: js.UndefOr[Boolean] = js.undefined
@@ -26,6 +28,10 @@ object ChartIsInsideOptionsObject {
   }
   
   extension [Self <: ChartIsInsideOptionsObject](x: Self) {
+    
+    inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     inline def setIgnoreX(value: Boolean): Self = StObject.set(x, "ignoreX", value.asInstanceOf[js.Any])
     

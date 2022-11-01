@@ -12,7 +12,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  shared :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.GenericOptions,   enabled :boolean | undefined,   eventOptions :std.AddEventListenerOptions | undefined,   from :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | (state : @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchState & {  event :std.PointerEvent | std.TouchEvent | std.WheelEvent | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.WebKitGestureEvent}): @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | undefined,   threshold :number | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | undefined,   preventDefault :boolean | undefined,   triggerAllEvents :boolean | undefined,   rubberband :number | boolean | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | undefined,   transform :(v : @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2): @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | undefined,   pointer :{  touch :boolean | undefined} | undefined,   scaleBounds :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchBounds | (state : @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchState & {  event :std.PointerEvent | std.TouchEvent | std.WheelEvent | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.WebKitGestureEvent} | undefined): @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchBounds | undefined,   angleBounds :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchBounds | (state : @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchState & {  event :std.PointerEvent | std.TouchEvent | std.WheelEvent | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.WebKitGestureEvent} | undefined): @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchBounds | undefined,   axis :'lock' | undefined,   modifierKey :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.ModifierKey | undefined} & @use-gesture/core.@use-gesture/core/dist/declarations/src/types.GenericOptions */
+/* Inlined {  shared :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.GenericOptions,   enabled :boolean | undefined,   eventOptions :std.AddEventListenerOptions | undefined,   from :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | (state : @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchState & {  event :std.PointerEvent | std.TouchEvent | std.WheelEvent | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.WebKitGestureEvent}): @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | undefined,   threshold :number | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | undefined,   preventDefault :boolean | undefined,   triggerAllEvents :boolean | undefined,   rubberband :number | boolean | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | undefined,   transform :(v : @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2): @use-gesture/core.@use-gesture/core/dist/declarations/src/types.Vector2 | undefined,   pointer :{  touch :boolean | undefined} | undefined,   scaleBounds :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchBounds | (state : @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchState & {  event :std.PointerEvent | std.TouchEvent | std.WheelEvent | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.WebKitGestureEvent} | undefined): @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchBounds | undefined,   angleBounds :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchBounds | (state : @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchState & {  event :std.PointerEvent | std.TouchEvent | std.WheelEvent | @use-gesture/core.@use-gesture/core/dist/declarations/src/types.WebKitGestureEvent} | undefined): @use-gesture/core.@use-gesture/core/dist/declarations/src/types.PinchBounds | undefined,   axis :'lock' | undefined,   modifierKey :@use-gesture/core.@use-gesture/core/dist/declarations/src/types.ModifierKey | undefined,   pinchOnWheel :boolean | undefined} & @use-gesture/core.@use-gesture/core/dist/declarations/src/types.GenericOptions */
 trait sharedGenericOptionsenabl extends StObject {
   
   var angleBounds: js.UndefOr[
@@ -34,6 +34,8 @@ trait sharedGenericOptionsenabl extends StObject {
   var from: js.UndefOr[Vector2 | (js.Function1[/* state */ PinchStateeventPointerEve, Vector2])] = js.undefined
   
   var modifierKey: js.UndefOr[ModifierKey] = js.undefined
+  
+  var pinchOnWheel: js.UndefOr[Boolean] = js.undefined
   
   var pointer: js.UndefOr[Touch] = js.undefined
   
@@ -109,6 +111,10 @@ object sharedGenericOptionsenabl {
     inline def setModifierKeyNull: Self = StObject.set(x, "modifierKey", null)
     
     inline def setModifierKeyUndefined: Self = StObject.set(x, "modifierKey", js.undefined)
+    
+    inline def setPinchOnWheel(value: Boolean): Self = StObject.set(x, "pinchOnWheel", value.asInstanceOf[js.Any])
+    
+    inline def setPinchOnWheelUndefined: Self = StObject.set(x, "pinchOnWheel", js.undefined)
     
     inline def setPointer(value: Touch): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     

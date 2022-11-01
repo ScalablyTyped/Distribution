@@ -20,5 +20,5 @@ object distServerConfigMod {
   
   inline def normalizeConfig(phase: String, config: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(phase.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def setHttpClientAndAgentOptions(options: NextConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHttpClientAndAgentOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setHttpClientAndAgentOptions(config: NextConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHttpClientAndAgentOptions")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

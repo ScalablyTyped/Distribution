@@ -1,12 +1,15 @@
 package typings.navermaps.naver.maps
 
-import typings.navermaps.naver.maps.drawing.DrawingEvent
 import typings.navermaps.naver.maps.drawing.DrawingMode
 import typings.navermaps.naver.maps.drawing.DrawingOverlay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Submodule - visualization
+  * See https://navermaps.github.io/maps.js.ncp/docs/tutorial-visualization.html
+  */
 object visualization {
   
   @js.native
@@ -76,23 +79,26 @@ object visualization {
     extends StObject
        with KVO {
     
+    // if key is undefiend, return DotMapOptions
     def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode): Unit = js.native
     def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode, id: String): Unit = js.native
     
-    def addListener(eventName: DrawingEvent, listener: js.Function1[/* overlay */ DrawingOverlay, Unit]): MapEventListener = js.native
-    
-    def destroy(): Unit = js.native
-    
-    def getDrawing(id: String): DrawingOverlay = js.native
-    
-    def getDrawings(): Any = js.native
+    def getData(): js.Array[LatLng | PointArrayLiteral] = js.native
     
     def getMap(): Map | Null = js.native
+    
+    def getOptions(): Any = js.native
+    def getOptions(key: String): Any = js.native
+    
+    def redraw(): Unit = js.native
+    
+    def setData(data: js.Array[LatLng | PointArrayLiteral]): Unit = js.native
     
     def setMap(): Unit = js.native
     def setMap(map: Map): Unit = js.native
     
-    def toGeoJson(): Any = js.native
+    def setOptions(key: String, value: Any): Unit = js.native
+    def setOptions(options: DotMapOptions): Unit = js.native
   }
   
   trait DotMapOptions extends StObject {
@@ -101,7 +107,7 @@ object visualization {
     
     var fillColor: js.UndefOr[String] = js.undefined
     
-    var map: Map
+    var map: js.UndefOr[Map] = js.undefined
     
     var opacity: js.UndefOr[Double] = js.undefined
     
@@ -109,16 +115,16 @@ object visualization {
     
     var strokeColor: js.UndefOr[String] = js.undefined
     
-    var strokeLineCap: js.UndefOr[strokeLineCapType] = js.undefined
+    var strokeLineCap: js.UndefOr[StrokeLineCapType] = js.undefined
     
-    var strokeLineJoin: js.UndefOr[strokeLineJoinType] = js.undefined
+    var strokeLineJoin: js.UndefOr[StrokeLineJoinType] = js.undefined
     
     var strokeWeight: js.UndefOr[Double] = js.undefined
   }
   object DotMapOptions {
     
-    inline def apply(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation], map: Map): DotMapOptions = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
+    inline def apply(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): DotMapOptions = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[DotMapOptions]
     }
     
@@ -134,6 +140,8 @@ object visualization {
       
       inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -146,11 +154,11 @@ object visualization {
       
       inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      inline def setStrokeLineCap(value: strokeLineCapType): Self = StObject.set(x, "strokeLineCap", value.asInstanceOf[js.Any])
+      inline def setStrokeLineCap(value: StrokeLineCapType): Self = StObject.set(x, "strokeLineCap", value.asInstanceOf[js.Any])
       
       inline def setStrokeLineCapUndefined: Self = StObject.set(x, "strokeLineCap", js.undefined)
       
-      inline def setStrokeLineJoin(value: strokeLineJoinType): Self = StObject.set(x, "strokeLineJoin", value.asInstanceOf[js.Any])
+      inline def setStrokeLineJoin(value: StrokeLineJoinType): Self = StObject.set(x, "strokeLineJoin", value.asInstanceOf[js.Any])
       
       inline def setStrokeLineJoinUndefined: Self = StObject.set(x, "strokeLineJoin", js.undefined)
       
@@ -161,22 +169,25 @@ object visualization {
   }
   
   @js.native
-  trait HeatMap extends StObject {
+  trait HeatMap
+    extends StObject
+       with KVO {
     
     def getColorMap(): SpectrumStyle = js.native
     
-    def getData(): js.Array[LatLng | PointArrayLiteral | WeightedLocation] = js.native
+    def getData(): js.Array[LatLng | PointArrayLiteral] = js.native
     
     def getMap(): Map | Null = js.native
     
-    def getOptions(): HeatMapOptions = js.native
-    def getOptions(key: String): HeatMapOptions = js.native
+    def getOptions(): Any = js.native
+    def getOptions(key: String): Any = js.native
     
+    // if key is undefiend, return HeatMapOptions
     def redraw(): Unit = js.native
     
     def setColorMap(colormap: SpectrumStyle, inReverse: Boolean): Unit = js.native
     
-    def setData(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): Unit = js.native
+    def setData(data: js.Array[LatLng | PointArrayLiteral]): Unit = js.native
     
     def setMap(): Unit = js.native
     def setMap(map: Map): Unit = js.native
@@ -191,7 +202,7 @@ object visualization {
     
     var data: js.Array[LatLng | PointArrayLiteral | WeightedLocation]
     
-    var map: Map
+    var map: js.UndefOr[Map] = js.undefined
     
     var opacity: js.UndefOr[Double] = js.undefined
     
@@ -199,8 +210,8 @@ object visualization {
   }
   object HeatMapOptions {
     
-    inline def apply(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation], map: Map): HeatMapOptions = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
+    inline def apply(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): HeatMapOptions = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeatMapOptions]
     }
     
@@ -215,6 +226,8 @@ object visualization {
       inline def setDataVarargs(value: (LatLng | PointArrayLiteral | WeightedLocation)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

@@ -48,6 +48,17 @@ trait PointOptionsObject extends StObject {
   var close: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts) Options used for button, which toggles the collapse status
+    * of the node.
+    */
+  var collapseButton: js.UndefOr[js.Object] = js.undefined
+  
+  /**
+    * (Highcharts) If point's children should be initially hidden
+    */
+  var collapsed: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Gantt) Individual color for the point. By default
     * the color is pulled from the global `colors` array.
     *
@@ -60,7 +71,7 @@ trait PointOptionsObject extends StObject {
     * (Highcharts, Gantt) A specific color index to use for the point, so its
     * graphic representations are given the class name `highcharts-color-{n}`.
     * In styled mode this will change the color of the graphic. In non-styled
-    * mode, the color by is set by the `fill` attribute, so the change in class
+    * mode, the color is set by the `fill` attribute, so the change in class
     * name won't have a visual effect by default.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
@@ -105,8 +116,8 @@ trait PointOptionsObject extends StObject {
     * options are the same as the ones for plotOptions.series.dataLabels.
     */
   var dataLabels: js.UndefOr[
-    DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesPieDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | (js.Array[
-      DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject
+    DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesPieDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | SeriesTreegraphDataLabelsOptionsObject | (js.Array[
+      DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | SeriesTreegraphDataLabelsOptionsObject
     ])
   ] = js.undefined
   
@@ -164,9 +175,10 @@ trait PointOptionsObject extends StObject {
   
   /**
     * (Highcharts) The inner radius of an individual point in a solid gauge.
-    * Can be given as a number (pixels) or percentage string.
+    * Can be given only in percentage, either as a number or a string like
+    * `"50%"`.
     */
-  var innerRadius: js.UndefOr[Double | String] = js.undefined
+  var innerRadius: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) When this property is true, the points acts as a summary
@@ -279,9 +291,10 @@ trait PointOptionsObject extends StObject {
   
   /**
     * (Highcharts) The outer radius of an individual point in a solid gauge.
-    * Can be given as a number (pixels) or percentage string.
+    * Can be given only in percentage, either as a number or a string like
+    * `"100%"`.
     */
-  var radius: js.UndefOr[Double | String] = js.undefined
+  var radius: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether the data point is selected
@@ -415,6 +428,14 @@ object PointOptionsObject {
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
+    inline def setCollapseButton(value: js.Object): Self = StObject.set(x, "collapseButton", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseButtonUndefined: Self = StObject.set(x, "collapseButton", js.undefined)
+    
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorIndex(value: Double): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
@@ -444,15 +465,15 @@ object PointOptionsObject {
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     inline def setDataLabels(
-      value: DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesPieDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | (js.Array[
-          DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject
+      value: DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesPieDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | SeriesTreegraphDataLabelsOptionsObject | (js.Array[
+          DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | SeriesTreegraphDataLabelsOptionsObject
         ])
     ): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
     inline def setDataLabelsVarargs(
-      value: (DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject)*
+      value: (DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | SeriesTreegraphDataLabelsOptionsObject)*
     ): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
@@ -491,7 +512,7 @@ object PointOptionsObject {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInnerRadius(value: Double | String): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+    inline def setInnerRadius(value: String): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
     inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
@@ -567,7 +588,7 @@ object PointOptionsObject {
     
     inline def setQ3Undefined: Self = StObject.set(x, "q3", js.undefined)
     
-    inline def setRadius(value: Double | String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     

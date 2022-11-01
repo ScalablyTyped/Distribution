@@ -1,6 +1,6 @@
 package typings.standardVersion
 
-import typings.conventionalChangelogConfigSpec.versions2Dot1Dot0SchemaDotjsonMod.Config
+import typings.conventionalChangelogConfigSpec.versions2Dot2Dot0SchemaDotjsonMod.Config
 import typings.node.bufferMod.global.Buffer
 import typings.standardVersion.mod.Options.Scripts
 import typings.standardVersion.mod.Options.Skip

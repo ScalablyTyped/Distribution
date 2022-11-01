@@ -64,9 +64,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var nodes: js.UndefOr[js.Array[SeriesNetworkgraphNodesOptions]] = js.undefined
   
   /**
-    * Not available
+    * (Highcharts, Highstock) This option allows grouping series in a stacked
+    * chart. The stack option can be a string or anything else, as long as the
+    * grouped series' stack options match each other after conversion into a
+    * string.
     */
-  var stack: js.UndefOr[Double | String | Unit]
+  var stack: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
@@ -76,14 +79,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `type`: String | networkgraph
   
   /**
-    * Not available
+    * (Highcharts, Highstock) When using dual or multiple x axes, this number
+    * defines which xAxis the particular series is connected to. It refers to
+    * either the axis id or the index of the axis in the xAxis array, with 0
+    * being the first.
     */
-  var xAxis: js.UndefOr[Double | String | Unit]
+  var xAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * Not available
+    * (Highcharts, Highstock) When using dual or multiple y axes, this number
+    * defines which yAxis the particular series is connected to. It refers to
+    * either the axis id or the index of the axis in the yAxis array, with 0
+    * being the first.
     */
-  var yAxis: js.UndefOr[Double | String | Unit]
+  var yAxis: js.UndefOr[Double | String] = js.undefined
 }
 object SeriesNetworkgraphOptions {
   
@@ -129,17 +138,17 @@ object SeriesNetworkgraphOptions {
     
     inline def setNodesVarargs(value: SeriesNetworkgraphNodesOptions*): Self = StObject.set(x, "nodes", js.Array(value*))
     
-    inline def setStack(value: Double | String | Unit): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     inline def setType(value: String | networkgraph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setXAxis(value: Double | String | Unit): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    inline def setYAxis(value: Double | String | Unit): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double | String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }

@@ -75,6 +75,12 @@ trait SeriesLabelOptionsObject extends StObject {
     * defaults to the series color, or a contrast color if `onArea`.
     */
   var style: js.UndefOr[CSSObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) Whether to use HTML to render the series
+    * label.
+    */
+  var useHTML: js.UndefOr[Boolean] = js.undefined
 }
 object SeriesLabelOptionsObject {
   
@@ -132,5 +138,9 @@ object SeriesLabelOptionsObject {
     inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
+    
+    inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
   }
 }

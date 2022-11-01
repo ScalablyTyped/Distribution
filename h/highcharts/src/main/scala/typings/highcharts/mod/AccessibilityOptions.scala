@@ -83,7 +83,7 @@ trait AccessibilityOptions extends StObject {
     *
     * - `disabled`: No landmarks are added.
     */
-  var landmarkVerbosity: js.UndefOr[OptionsLandmarkVerbosityValue] = js.undefined
+  var landmarkVerbosity: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Link the chart to an HTML
@@ -179,7 +179,7 @@ object AccessibilityOptions {
     
     inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
     
-    inline def setLandmarkVerbosity(value: OptionsLandmarkVerbosityValue): Self = StObject.set(x, "landmarkVerbosity", value.asInstanceOf[js.Any])
+    inline def setLandmarkVerbosity(value: String): Self = StObject.set(x, "landmarkVerbosity", value.asInstanceOf[js.Any])
     
     inline def setLandmarkVerbosityUndefined: Self = StObject.set(x, "landmarkVerbosity", js.undefined)
     

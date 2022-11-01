@@ -31,7 +31,6 @@ object distTypesCircularProgressBarCircularProgressBarDotdriverMod {
       getSize: () => CircularProgressBarSize,
       getTooltipErrorMessage: () => String,
       getValue: () => js.UndefOr[String | Null],
-      hasError: () => Boolean,
       hasSkin: CircularProgressBarSkin => Boolean,
       isCompleted: () => Boolean,
       isErrorIconDisplayed: () => Boolean,
@@ -41,7 +40,7 @@ object distTypesCircularProgressBarCircularProgressBarDotdriverMod {
       isSuccessIconDisplayed: () => Boolean,
       isSuccessIconShown: () => Boolean
     ): CircularProgressBarDriver = {
-      val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), getLabelTextContent = js.Any.fromFunction0(getLabelTextContent), getSize = js.Any.fromFunction0(getSize), getTooltipErrorMessage = js.Any.fromFunction0(getTooltipErrorMessage), getValue = js.Any.fromFunction0(getValue), hasError = js.Any.fromFunction0(hasError), hasSkin = js.Any.fromFunction1(hasSkin), isCompleted = js.Any.fromFunction0(isCompleted), isErrorIconDisplayed = js.Any.fromFunction0(isErrorIconDisplayed), isErrorIconShown = js.Any.fromFunction0(isErrorIconShown), isLabelDisplayed = js.Any.fromFunction0(isLabelDisplayed), isPercentagesProgressDisplayed = js.Any.fromFunction0(isPercentagesProgressDisplayed), isSuccessIconDisplayed = js.Any.fromFunction0(isSuccessIconDisplayed), isSuccessIconShown = js.Any.fromFunction0(isSuccessIconShown))
+      val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), getLabelTextContent = js.Any.fromFunction0(getLabelTextContent), getSize = js.Any.fromFunction0(getSize), getTooltipErrorMessage = js.Any.fromFunction0(getTooltipErrorMessage), getValue = js.Any.fromFunction0(getValue), hasSkin = js.Any.fromFunction1(hasSkin), isCompleted = js.Any.fromFunction0(isCompleted), isErrorIconDisplayed = js.Any.fromFunction0(isErrorIconDisplayed), isErrorIconShown = js.Any.fromFunction0(isErrorIconShown), isLabelDisplayed = js.Any.fromFunction0(isLabelDisplayed), isPercentagesProgressDisplayed = js.Any.fromFunction0(isPercentagesProgressDisplayed), isSuccessIconDisplayed = js.Any.fromFunction0(isSuccessIconDisplayed), isSuccessIconShown = js.Any.fromFunction0(isSuccessIconShown))
       __obj.asInstanceOf[CircularProgressBarDriver]
     }
     

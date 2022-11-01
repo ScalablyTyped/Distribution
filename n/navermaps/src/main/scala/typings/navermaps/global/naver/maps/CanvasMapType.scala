@@ -8,7 +8,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Map.MapType
+/**
+  * CanvasMapType
+  */
 @JSGlobal("naver.maps.CanvasMapType")
 @js.native
 open class CanvasMapType protected ()
@@ -29,7 +31,7 @@ open class CanvasMapType protected ()
   override def getName(): String = js.native
   
   /* CompleteClass */
-  override def getTile(x: Double, y: Double, z: Double): HTMLElement | typings.navermaps.naver.maps.Tile = js.native
+  override def getTile(x: Double, y: Double, z: Double): HTMLElement | typings.navermaps.naver.maps.CanvasTile | typings.navermaps.naver.maps.ImageTile | typings.navermaps.naver.maps.Tile = js.native
   
   /* CompleteClass */
   override def getTileData(x: Double, y: Double, z: Double): ImageData = js.native

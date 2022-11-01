@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Layer
+/**
+  * Layer
+  */
 @js.native
 trait Layer
   extends StObject
@@ -20,6 +22,8 @@ trait Layer
   def getOpacity(): Double = js.native
   
   def getPaneElement(): HTMLElement = js.native
+  
+  var name: String = js.native
   
   def refresh(): Unit = js.native
   def refresh(noEffect: Boolean): Unit = js.native

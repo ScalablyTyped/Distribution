@@ -5,33 +5,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Submodule - Drawing
+  * See https://navermaps.github.io/maps.js.ncp/docs/tutorial-Drawing.html
+  */
 object drawing {
-  
-  // Sub module: drawing
-  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  
-  @JSGlobal("naver.maps.drawing")
-  @js.native
-  val ^ : js.Any = js.native
   
   @JSGlobal("naver.maps.drawing.DrawingEvent")
   @js.native
   object DrawingEvent extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.drawing.DrawingEvent & Double] = js.native
+    def apply(value: String): js.UndefOr[typings.navermaps.naver.maps.drawing.DrawingEvent & String] = js.native
     
-    /* 0 */ val ADD: typings.navermaps.naver.maps.drawing.DrawingEvent.ADD & Double = js.native
+    /* "drawing_added" */ val ADD: typings.navermaps.naver.maps.drawing.DrawingEvent.ADD & String = js.native
     
-    /* 3 */ val Added: typings.navermaps.naver.maps.drawing.DrawingEvent.Added & Double = js.native
+    /* "drawing_cancled" */ val CANCLE: typings.navermaps.naver.maps.drawing.DrawingEvent.CANCLE & String = js.native
     
-    /* 1 */ val REMOVE: typings.navermaps.naver.maps.drawing.DrawingEvent.REMOVE & Double = js.native
+    /* "drawing_removed" */ val REMOVE: typings.navermaps.naver.maps.drawing.DrawingEvent.REMOVE & String = js.native
     
-    /* 4 */ val Removed: typings.navermaps.naver.maps.drawing.DrawingEvent.Removed & Double = js.native
+    /* "drawing_selected" */ val SELECT: typings.navermaps.naver.maps.drawing.DrawingEvent.SELECT & String = js.native
     
-    /* 2 */ val SELECT: typings.navermaps.naver.maps.drawing.DrawingEvent.SELECT & Double = js.native
-    
-    /* 5 */ val Selected: typings.navermaps.naver.maps.drawing.DrawingEvent.Selected & Double = js.native
+    /* "drawing_start" */ val START: typings.navermaps.naver.maps.drawing.DrawingEvent.START & String = js.native
   }
   
   @JSGlobal("naver.maps.drawing.DrawingManager")

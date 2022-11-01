@@ -53,6 +53,8 @@ object libUiJsDiff2htmlUiBaseMod {
     
     def smartSelection(): Unit = js.native
     
+    def stickyFileHeaders(): Unit = js.native
+    
     def synchronisedScroll(): Unit = js.native
     
     val targetElement: HTMLElement = js.native
@@ -141,6 +143,11 @@ object libUiJsDiff2htmlUiBaseMod {
     def smartSelection: Boolean = js.native
     inline def smartSelection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartSelection")(x.asInstanceOf[js.Any])
     
+    @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.stickyFileHeaders")
+    @js.native
+    def stickyFileHeaders: Boolean = js.native
+    inline def stickyFileHeaders_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stickyFileHeaders")(x.asInstanceOf[js.Any])
+    
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.synchronisedScroll")
     @js.native
     def synchronisedScroll: Boolean = js.native
@@ -162,6 +169,8 @@ object libUiJsDiff2htmlUiBaseMod {
     var highlightLanguages: js.UndefOr[Map[String, String]] = js.undefined
     
     var smartSelection: js.UndefOr[Boolean] = js.undefined
+    
+    var stickyFileHeaders: js.UndefOr[Boolean] = js.undefined
     
     var synchronisedScroll: js.UndefOr[Boolean] = js.undefined
   }
@@ -197,6 +206,10 @@ object libUiJsDiff2htmlUiBaseMod {
       inline def setSmartSelection(value: Boolean): Self = StObject.set(x, "smartSelection", value.asInstanceOf[js.Any])
       
       inline def setSmartSelectionUndefined: Self = StObject.set(x, "smartSelection", js.undefined)
+      
+      inline def setStickyFileHeaders(value: Boolean): Self = StObject.set(x, "stickyFileHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setStickyFileHeadersUndefined: Self = StObject.set(x, "stickyFileHeaders", js.undefined)
       
       inline def setSynchronisedScroll(value: Boolean): Self = StObject.set(x, "synchronisedScroll", value.asInstanceOf[js.Any])
       

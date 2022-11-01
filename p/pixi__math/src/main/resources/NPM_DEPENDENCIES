@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/math" : "7.0.0"
+      "@pixi/math" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/math" : "7.0.0"
+      "@pixi/math" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

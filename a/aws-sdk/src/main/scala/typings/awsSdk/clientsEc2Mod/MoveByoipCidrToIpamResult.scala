@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MoveByoipCidrToIpamResult extends StObject {
   
+  /**
+    * The BYOIP CIDR.
+    */
   var ByoipCidr: js.UndefOr[typings.awsSdk.clientsEc2Mod.ByoipCidr] = js.undefined
 }
 object MoveByoipCidrToIpamResult {

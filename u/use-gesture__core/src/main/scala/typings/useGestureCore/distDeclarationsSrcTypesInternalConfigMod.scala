@@ -423,6 +423,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
     var lockDirection: Boolean
     
     var modifierKey: ModifierKey
+    
+    var pinchOnWheel: Boolean
   }
   object InternalPinchOptions {
     
@@ -439,13 +441,14 @@ object distDeclarationsSrcTypesInternalConfigMod {
         ]),
       hasCustomTransform: Boolean,
       lockDirection: Boolean,
+      pinchOnWheel: Boolean,
       preventDefault: Boolean,
       rubberband: Vector2,
       threshold: Vector2,
       transform: Vector2 => Vector2,
       triggerAllEvents: Boolean
     ): InternalPinchOptions = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], eventOptions = eventOptions.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], hasCustomTransform = hasCustomTransform.asInstanceOf[js.Any], lockDirection = lockDirection.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], rubberband = rubberband.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform), triggerAllEvents = triggerAllEvents.asInstanceOf[js.Any], modifierKey = null)
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], eventOptions = eventOptions.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], hasCustomTransform = hasCustomTransform.asInstanceOf[js.Any], lockDirection = lockDirection.asInstanceOf[js.Any], pinchOnWheel = pinchOnWheel.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], rubberband = rubberband.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform), triggerAllEvents = triggerAllEvents.asInstanceOf[js.Any], modifierKey = null)
       __obj.asInstanceOf[InternalPinchOptions]
     }
     
@@ -460,6 +463,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
       inline def setModifierKey(value: ModifierKey): Self = StObject.set(x, "modifierKey", value.asInstanceOf[js.Any])
       
       inline def setModifierKeyNull: Self = StObject.set(x, "modifierKey", null)
+      
+      inline def setPinchOnWheel(value: Boolean): Self = StObject.set(x, "pinchOnWheel", value.asInstanceOf[js.Any])
     }
   }
   

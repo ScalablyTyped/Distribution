@@ -1,5 +1,6 @@
 package typings.antdMobile.anon
 
+import typings.antdMobile.antdMobileStrings.auto
 import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -18,7 +19,7 @@ trait OmitMultiImageViewerProps extends StObject {
   
   var images: js.UndefOr[js.Array[String]] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.undefined
+  var maxZoom: js.UndefOr[Double | auto] = js.undefined
   
   var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -57,7 +58,7 @@ object OmitMultiImageViewerProps {
     
     inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value*))
     
-    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double | auto): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     

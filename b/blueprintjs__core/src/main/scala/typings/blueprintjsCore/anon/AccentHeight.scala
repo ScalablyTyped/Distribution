@@ -135,7 +135,7 @@ trait AccentHeight extends StObject {
   
   var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[list | none | `inline` | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | list | `inline` | both] = js.undefined
   
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   
@@ -149,7 +149,7 @@ trait AccentHeight extends StObject {
   
   var `aria-controls`: js.UndefOr[String] = js.undefined
   
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+  var `aria-current`: js.UndefOr[Boolean | time | location | page | step | date] = js.undefined
   
   var `aria-describedby`: js.UndefOr[String] = js.undefined
   
@@ -157,7 +157,7 @@ trait AccentHeight extends StObject {
   
   var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[link | none | copy | execute | move | popup] = js.undefined
+  var `aria-dropeffect`: js.UndefOr[none | link | move | copy | execute | popup] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
@@ -167,7 +167,7 @@ trait AccentHeight extends StObject {
   
   var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Boolean | dialog | grid | listbox | menu | tree] = js.undefined
+  var `aria-haspopup`: js.UndefOr[Boolean | grid | menu | tree | dialog | listbox] = js.undefined
   
   var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
   
@@ -921,9 +921,9 @@ trait AccentHeight extends StObject {
   
   var strokeDashoffset: js.UndefOr[String | Double] = js.undefined
   
-  var strokeLinecap: js.UndefOr[inherit | round | butt | square] = js.undefined
+  var strokeLinecap: js.UndefOr[square | round | inherit | butt] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[inherit | round | bevel | miter] = js.undefined
+  var strokeLinejoin: js.UndefOr[round | inherit | bevel | miter] = js.undefined
   
   var strokeMiterlimit: js.UndefOr[String | Double] = js.undefined
   
@@ -1110,7 +1110,7 @@ object AccentHeight {
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
-    inline def `setAria-autocomplete`(value: list | none | `inline` | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `setAria-autocomplete`(value: none | list | `inline` | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
@@ -1138,7 +1138,7 @@ object AccentHeight {
     
     inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
     
-    inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+    inline def `setAria-current`(value: Boolean | time | location | page | step | date): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
     
     inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
     
@@ -1154,7 +1154,7 @@ object AccentHeight {
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
-    inline def `setAria-dropeffect`(value: link | none | copy | execute | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `setAria-dropeffect`(value: none | link | move | copy | execute | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
     
@@ -1174,7 +1174,7 @@ object AccentHeight {
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
-    inline def `setAria-haspopup`(value: Boolean | dialog | grid | listbox | menu | tree): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `setAria-haspopup`(value: Boolean | grid | menu | tree | dialog | listbox): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
@@ -2670,11 +2670,11 @@ object AccentHeight {
     
     inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
     
-    inline def setStrokeLinecap(value: inherit | round | butt | square): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+    inline def setStrokeLinecap(value: square | round | inherit | butt): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
     inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
-    inline def setStrokeLinejoin(value: inherit | round | bevel | miter): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+    inline def setStrokeLinejoin(value: round | inherit | bevel | miter): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
     
     inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
     

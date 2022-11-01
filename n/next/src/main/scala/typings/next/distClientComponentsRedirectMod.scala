@@ -14,5 +14,5 @@ object distClientComponentsRedirectMod {
   @js.native
   val REDIRECT_ERROR_CODE: /* "NEXT_REDIRECT" */ String = js.native
   
-  inline def redirect(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def redirect(url: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 }

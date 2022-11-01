@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__assets
 
-Typings are for version 7.0.0
+Typings are for version 7.0.2
 
 
 

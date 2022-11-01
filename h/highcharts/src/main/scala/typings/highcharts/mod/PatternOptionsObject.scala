@@ -11,22 +11,22 @@ trait PatternOptionsObject extends StObject {
     * to set an aspect ratio. The image will be zoomed to fill the bounding
     * box, maintaining the aspect ratio defined.
     */
-  var aspectRatio: Double
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Background color for the pattern if a `path` is set (not images).
     */
-  var backgroundColor: ColorString
+  var backgroundColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * Pattern color, used as default path stroke.
     */
-  var color: ColorString
+  var color: js.UndefOr[ColorString] = js.undefined
   
   /**
     * Analogous to pattern.width.
     */
-  var height: Double
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * ID to assign to the pattern. This is automatically computed if not added,
@@ -38,12 +38,12 @@ trait PatternOptionsObject extends StObject {
   /**
     * URL to an image to use as the pattern.
     */
-  var image: String
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * Opacity of the pattern as a float value from 0 to 1.
     */
-  var opacity: Double
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Either an SVG path as string, or an object. As an object, supply the path
@@ -51,12 +51,12 @@ trait PatternOptionsObject extends StObject {
     * SVG attributes like `path.stroke` and `path.fill`. If a path is supplied
     * for the pattern, the `image` property is ignored.
     */
-  var path: String | SVGAttributes
+  var path: js.UndefOr[String | SVGAttributes] = js.undefined
   
   /**
     * SVG `patternTransform` to apply to the entire pattern.
     */
-  var patternTransform: String
+  var patternTransform: js.UndefOr[String] = js.undefined
   
   /**
     * Width of the pattern. For images this is automatically set to the width
@@ -65,7 +65,7 @@ trait PatternOptionsObject extends StObject {
     * bounding box dynamically is only supported for patterns with an
     * automatically calculated ID.
     */
-  var width: Double
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * Horizontal offset of the pattern. Defaults to 0.
@@ -79,18 +79,8 @@ trait PatternOptionsObject extends StObject {
 }
 object PatternOptionsObject {
   
-  inline def apply(
-    aspectRatio: Double,
-    backgroundColor: ColorString,
-    color: ColorString,
-    height: Double,
-    image: String,
-    opacity: Double,
-    path: String | SVGAttributes,
-    patternTransform: String,
-    width: Double
-  ): PatternOptionsObject = {
-    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], patternTransform = patternTransform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  inline def apply(): PatternOptionsObject = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatternOptionsObject]
   }
   
@@ -98,11 +88,19 @@ object PatternOptionsObject {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    
     inline def setBackgroundColor(value: ColorString): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -110,13 +108,23 @@ object PatternOptionsObject {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     inline def setPath(value: String | SVGAttributes): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
     inline def setPatternTransform(value: String): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
     
+    inline def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
+    
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

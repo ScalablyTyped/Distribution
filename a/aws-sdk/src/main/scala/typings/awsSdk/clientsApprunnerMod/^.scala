@@ -57,12 +57,6 @@ open class ^ ()
   var ServiceName: typings.awsSdk.clientsApprunnerMod.ServiceName = js.native
   
   /**
-    * A subdomain URL that App Runner generated for this service. You can use this URL to access your service web application.
-    */
-  /* CompleteClass */
-  var ServiceUrl: String = js.native
-  
-  /**
     * The source deployed to the App Runner service. It can be a code or an image repository.
     */
   /* CompleteClass */

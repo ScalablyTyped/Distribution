@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-editext
 
-Typings are for version 5.0.2
+Typings are for version 5.1.0
 
 ## Library description:
 Editable Text Component for React Applications

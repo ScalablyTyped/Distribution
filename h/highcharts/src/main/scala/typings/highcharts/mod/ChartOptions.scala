@@ -234,7 +234,7 @@ trait ChartOptions extends StObject {
     * key properties of the click event argument (`event.altKey`,
     * `event.ctrlKey`, `event.metaKey` and `event.shiftKey`).
     */
-  var panKey: js.UndefOr[OptionsPanKeyValue] = js.undefined
+  var panKey: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allow panning in a chart. Best
@@ -327,6 +327,14 @@ trait ChartOptions extends StObject {
     * needed.
     */
   var renderTo: js.UndefOr[String | HTMLDOMElement] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The button that appears after a
+    * selection zoom, allowing the user to reset zoom.
+    *
+    * @deprecated 10.2.1
+    */
+  var resetZoomButton: js.UndefOr[ChartResetZoomButtonOptions] = js.undefined
   
   /**
     * (Highcharts, Gantt) Options for a scrollable plot area. This feature
@@ -553,7 +561,7 @@ object ChartOptions {
     
     inline def setOptions3dUndefined: Self = StObject.set(x, "options3d", js.undefined)
     
-    inline def setPanKey(value: OptionsPanKeyValue): Self = StObject.set(x, "panKey", value.asInstanceOf[js.Any])
+    inline def setPanKey(value: String): Self = StObject.set(x, "panKey", value.asInstanceOf[js.Any])
     
     inline def setPanKeyUndefined: Self = StObject.set(x, "panKey", js.undefined)
     
@@ -606,6 +614,10 @@ object ChartOptions {
     inline def setRenderTo(value: String | HTMLDOMElement): Self = StObject.set(x, "renderTo", value.asInstanceOf[js.Any])
     
     inline def setRenderToUndefined: Self = StObject.set(x, "renderTo", js.undefined)
+    
+    inline def setResetZoomButton(value: ChartResetZoomButtonOptions): Self = StObject.set(x, "resetZoomButton", value.asInstanceOf[js.Any])
+    
+    inline def setResetZoomButtonUndefined: Self = StObject.set(x, "resetZoomButton", js.undefined)
     
     inline def setScrollablePlotArea(value: ChartScrollablePlotAreaOptions): Self = StObject.set(x, "scrollablePlotArea", value.asInstanceOf[js.Any])
     

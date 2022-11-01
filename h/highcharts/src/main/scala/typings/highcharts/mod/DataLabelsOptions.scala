@@ -33,7 +33,7 @@ trait DataLabelsOptions extends StObject {
     * - `defer`: The animation delay time in milliseconds.
     */
   var animation: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with scala.Boolean, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesArearangeDataDataLabelsAnimationOptions */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 58, starting with scala.Boolean, typings.highcharts.mod.SeriesArcdiagramDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions */ Any
   ] = js.undefined
   
   /**
@@ -70,15 +70,20 @@ trait DataLabelsOptions extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) The text color for the data labels.
-    * Defaults to `undefined`. For certain series types, like column or map,
-    * the data labels can be drawn inside the points. In this case the data
-    * label will be drawn with maximum contrast by default. Additionally, it
-    * will be given a `text-outline` style with the opposite color, to further
-    * increase the contrast. This can be overridden by setting the
-    * `text-outline` style to `none` in the `dataLabels.style` option.
+    * (Highcharts, Highstock, Gantt) This options is deprecated. Use
+    * style.color instead.
+    *
+    * The text color for the data labels. Defaults to `undefined`. For certain
+    * series types, like column or map, the data labels can be drawn inside the
+    * points. In this case the data label will be drawn with maximum contrast
+    * by default. Additionally, it will be given a `text-outline` style with
+    * the opposite color, to further increase the contrast. This can be
+    * overridden by setting the `text-outline` style to `none` in the
+    * `dataLabels.style` option.
+    *
+    * @deprecated 10.3.0
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to hide data labels that are
@@ -135,15 +140,19 @@ trait DataLabelsOptions extends StObject {
   /**
     * (Highcharts, Highstock, Gantt) Format for points with the value of null.
     * Works analogously to format. `nullFormat` can be applied only to series
-    * which support displaying null points.
+    * which support displaying null points i.e `heatmap` or `tilemap`. Does not
+    * work with series that don't display null points, like `line`, `column`,
+    * `bar` or `pie`.
     */
   var nullFormat: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Callback JavaScript function that defines
     * formatting for points with the value of null. Works analogously to
-    * formatter. `nullPointFormatter` can be applied only to series which
-    * support displaying null points.
+    * formatter. `nullFormatter` can be applied only to series which support
+    * displaying null points i.e `heatmap` or `tilemap`. Does not work with
+    * series that don't display null points, like `line`, `column`, `bar` or
+    * `pie`.
     */
   var nullFormatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.undefined
   
@@ -300,7 +309,7 @@ object DataLabelsOptions {
     inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
     
     inline def setAnimation(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with scala.Boolean, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesArearangeDataDataLabelsAnimationOptions */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 58, starting with scala.Boolean, typings.highcharts.mod.SeriesArcdiagramDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions */ Any
     ): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
@@ -325,7 +334,7 @@ object DataLabelsOptions {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     

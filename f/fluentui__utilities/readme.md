@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__utilities
 
-Typings are for version 8.13.1
+Typings are for version 8.13.2
 
 ## Library description:
 Fluent UI React utilities for building components.

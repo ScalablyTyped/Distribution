@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsSesv2Mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.VDM
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,6 +15,8 @@ type AdditionalContactEmailAddresses = js.Array[AdditionalContactEmailAddress]
 type AmazonResourceName = String
 
 type AttributesData = String
+
+type BatchGetMetricDataQueries = js.Array[BatchGetMetricDataQuery]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USE_DEFAULT_VALUE
@@ -83,6 +86,8 @@ type ContactListImportAction = _ContactListImportAction | String
 
 type ContactListName = String
 
+type Counter = Double
+
 type CustomRedirectDomain = String
 
 type CustomVerificationEmailTemplatesList = js.Array[CustomVerificationEmailTemplateMetadata]
@@ -130,6 +135,8 @@ type DimensionName = String
   - java.lang.String
 */
 type DimensionValueSource = _DimensionValueSource | String
+
+type Dimensions = StringDictionary[MetricDimensionValue]
 
 type DisplayName = String
 
@@ -222,6 +229,13 @@ type FailedRecordsS3Url = String
 
 type FailureRedirectionURL = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type FeatureStatus = _FeatureStatus | String
+
 type FeedbackId = String
 
 type GeneralEnforcementStatus = String
@@ -278,6 +292,19 @@ type ListOfContacts = js.Array[Contact]
 
 type ListOfDedicatedIpPools = js.Array[PoolName]
 
+type ListRecommendationFilterValue = String
+
+type ListRecommendationsFilter = StringDictionary[ListRecommendationFilterValue]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TYPE
+  - typings.awsSdk.awsSdkStrings.IMPACT
+  - typings.awsSdk.awsSdkStrings.STATUS
+  - typings.awsSdk.awsSdkStrings.RESOURCE_ARN
+  - java.lang.String
+*/
+type ListRecommendationsFilterKey = _ListRecommendationsFilterKey | String
+
 type MailFromDomainName = String
 
 /* Rewritten from type alias, can be one of: 
@@ -312,6 +339,39 @@ type MessageTagName = String
 
 type MessageTagValue = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SEND
+  - typings.awsSdk.awsSdkStrings.COMPLAINT
+  - typings.awsSdk.awsSdkStrings.PERMANENT_BOUNCE
+  - typings.awsSdk.awsSdkStrings.TRANSIENT_BOUNCE
+  - typings.awsSdk.awsSdkStrings.OPEN
+  - typings.awsSdk.awsSdkStrings.CLICK
+  - typings.awsSdk.awsSdkStrings.DELIVERY
+  - typings.awsSdk.awsSdkStrings.DELIVERY_OPEN
+  - typings.awsSdk.awsSdkStrings.DELIVERY_CLICK
+  - typings.awsSdk.awsSdkStrings.DELIVERY_COMPLAINT
+  - java.lang.String
+*/
+type Metric = _Metric | String
+
+type MetricDataErrorList = js.Array[MetricDataError]
+
+type MetricDataResultList = js.Array[MetricDataResult]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EMAIL_IDENTITY
+  - typings.awsSdk.awsSdkStrings.CONFIGURATION_SET
+  - typings.awsSdk.awsSdkStrings.ISP
+  - java.lang.String
+*/
+type MetricDimensionName = _MetricDimensionName | String
+
+type MetricDimensionValue = String
+
+type MetricNamespace = VDM | String
+
+type MetricValueList = js.Array[Counter]
+
 type NextToken = String
 
 type OutboundMessageId = String
@@ -332,9 +392,46 @@ type PrivateKey = String
 
 type ProcessedRecordsCount = Double
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INTERNAL_FAILURE
+  - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
+  - java.lang.String
+*/
+type QueryErrorCode = _QueryErrorCode | String
+
+type QueryErrorMessage = String
+
+type QueryIdentifier = String
+
 type RawMessageData = Buffer | js.typedarray.Uint8Array | Blob | String
 
 type RblName = String
+
+type RecommendationDescription = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - java.lang.String
+*/
+type RecommendationImpact = _RecommendationImpact | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OPEN
+  - typings.awsSdk.awsSdkStrings.FIXED
+  - java.lang.String
+*/
+type RecommendationStatus = _RecommendationStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DKIM
+  - typings.awsSdk.awsSdkStrings.DMARC
+  - typings.awsSdk.awsSdkStrings.SPF
+  - java.lang.String
+*/
+type RecommendationType = _RecommendationType | String
+
+type RecommendationsList = js.Array[Recommendation]
 
 type RenderedEmailTemplate = String
 
@@ -406,6 +503,8 @@ type TagValue = String
 type TemplateContent = String
 
 type Timestamp = js.Date
+
+type TimestampList = js.Array[js.Date]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REQUIRE

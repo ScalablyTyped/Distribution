@@ -79,9 +79,6 @@ trait EdgeRuntime extends StObject {
   @JSName("process.env.__NEXT_OPTIMIZE_FONTS")
   var processDotenvDot__NEXT_OPTIMIZE_FONTS: String
   
-  @JSName("process.env.__NEXT_REACT_ROOT")
-  var processDotenvDot__NEXT_REACT_ROOT: String
-  
   @JSName("process.env.__NEXT_ROUTER_BASEPATH")
   var processDotenvDot__NEXT_ROUTER_BASEPATH: String
   
@@ -93,6 +90,9 @@ trait EdgeRuntime extends StObject {
   
   @JSName("process.env.__NEXT_STRICT_MODE")
   var processDotenvDot__NEXT_STRICT_MODE: String
+  
+  @JSName("process.env.__NEXT_STRICT_MODE_APP")
+  var processDotenvDot__NEXT_STRICT_MODE_APP: String
   
   @JSName("process.env.__NEXT_TEST_MODE")
   var processDotenvDot__NEXT_TEST_MODE: String
@@ -127,11 +127,11 @@ object EdgeRuntime {
     processDotenvDot__NEXT_OPTIMISTIC_CLIENT_CACHE: String,
     processDotenvDot__NEXT_OPTIMIZE_CSS: String,
     processDotenvDot__NEXT_OPTIMIZE_FONTS: String,
-    processDotenvDot__NEXT_REACT_ROOT: String,
     processDotenvDot__NEXT_ROUTER_BASEPATH: String,
     processDotenvDot__NEXT_SCRIPT_WORKERS: String,
     processDotenvDot__NEXT_SCROLL_RESTORATION: String,
     processDotenvDot__NEXT_STRICT_MODE: String,
+    processDotenvDot__NEXT_STRICT_MODE_APP: String,
     processDotenvDot__NEXT_TEST_MODE: String,
     processDotenvDot__NEXT_TRAILING_SLASH: String,
     processDotenvDot__NEXT_WEB_VITALS_ATTRIBUTION: String
@@ -157,11 +157,11 @@ object EdgeRuntime {
     __obj.updateDynamic("process.env.__NEXT_OPTIMISTIC_CLIENT_CACHE")(processDotenvDot__NEXT_OPTIMISTIC_CLIENT_CACHE.asInstanceOf[js.Any])
     __obj.updateDynamic("process.env.__NEXT_OPTIMIZE_CSS")(processDotenvDot__NEXT_OPTIMIZE_CSS.asInstanceOf[js.Any])
     __obj.updateDynamic("process.env.__NEXT_OPTIMIZE_FONTS")(processDotenvDot__NEXT_OPTIMIZE_FONTS.asInstanceOf[js.Any])
-    __obj.updateDynamic("process.env.__NEXT_REACT_ROOT")(processDotenvDot__NEXT_REACT_ROOT.asInstanceOf[js.Any])
     __obj.updateDynamic("process.env.__NEXT_ROUTER_BASEPATH")(processDotenvDot__NEXT_ROUTER_BASEPATH.asInstanceOf[js.Any])
     __obj.updateDynamic("process.env.__NEXT_SCRIPT_WORKERS")(processDotenvDot__NEXT_SCRIPT_WORKERS.asInstanceOf[js.Any])
     __obj.updateDynamic("process.env.__NEXT_SCROLL_RESTORATION")(processDotenvDot__NEXT_SCROLL_RESTORATION.asInstanceOf[js.Any])
     __obj.updateDynamic("process.env.__NEXT_STRICT_MODE")(processDotenvDot__NEXT_STRICT_MODE.asInstanceOf[js.Any])
+    __obj.updateDynamic("process.env.__NEXT_STRICT_MODE_APP")(processDotenvDot__NEXT_STRICT_MODE_APP.asInstanceOf[js.Any])
     __obj.updateDynamic("process.env.__NEXT_TEST_MODE")(processDotenvDot__NEXT_TEST_MODE.asInstanceOf[js.Any])
     __obj.updateDynamic("process.env.__NEXT_TRAILING_SLASH")(processDotenvDot__NEXT_TRAILING_SLASH.asInstanceOf[js.Any])
     __obj.updateDynamic("process.env.__NEXT_WEB_VITALS_ATTRIBUTION")(processDotenvDot__NEXT_WEB_VITALS_ATTRIBUTION.asInstanceOf[js.Any])
@@ -224,8 +224,6 @@ object EdgeRuntime {
     
     inline def setProcessDotenvDot__NEXT_OPTIMIZE_FONTS(value: String): Self = StObject.set(x, "process.env.__NEXT_OPTIMIZE_FONTS", value.asInstanceOf[js.Any])
     
-    inline def setProcessDotenvDot__NEXT_REACT_ROOT(value: String): Self = StObject.set(x, "process.env.__NEXT_REACT_ROOT", value.asInstanceOf[js.Any])
-    
     inline def setProcessDotenvDot__NEXT_ROUTER_BASEPATH(value: String): Self = StObject.set(x, "process.env.__NEXT_ROUTER_BASEPATH", value.asInstanceOf[js.Any])
     
     inline def setProcessDotenvDot__NEXT_SCRIPT_WORKERS(value: String): Self = StObject.set(x, "process.env.__NEXT_SCRIPT_WORKERS", value.asInstanceOf[js.Any])
@@ -233,6 +231,8 @@ object EdgeRuntime {
     inline def setProcessDotenvDot__NEXT_SCROLL_RESTORATION(value: String): Self = StObject.set(x, "process.env.__NEXT_SCROLL_RESTORATION", value.asInstanceOf[js.Any])
     
     inline def setProcessDotenvDot__NEXT_STRICT_MODE(value: String): Self = StObject.set(x, "process.env.__NEXT_STRICT_MODE", value.asInstanceOf[js.Any])
+    
+    inline def setProcessDotenvDot__NEXT_STRICT_MODE_APP(value: String): Self = StObject.set(x, "process.env.__NEXT_STRICT_MODE_APP", value.asInstanceOf[js.Any])
     
     inline def setProcessDotenvDot__NEXT_TEST_MODE(value: String): Self = StObject.set(x, "process.env.__NEXT_TEST_MODE", value.asInstanceOf[js.Any])
     

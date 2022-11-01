@@ -360,7 +360,7 @@ object highchartsMoreMod {
     open class Pointer protected ()
       extends typings.highcharts.mod.Pointer {
       /**
-        * The mouse and touch tracker object. Each Chart item has one assosiated
+        * The mouse and touch tracker object. Each Chart item has one associated
         * Pointer item that can be accessed from the Chart.pointer property.
         *
         * @param chart
@@ -704,25 +704,25 @@ object highchartsMoreMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/highcharts-more", "Highcharts.Time")
     @js.native
-    open class Time protected () extends Time_ {
-      /**
-        * The Time class. Time settings are applied in general for each page using
-        * `Highcharts.setOptions`, or individually for each Chart item through the
-        * time options set.
-        *
-        * The Time object is available from Highcharts.Chart#time, which refers to
-        * `Highcharts.time` if no individual time settings are applied.
-        *
-        * @param options
-        *        Time options as defined in chart.options.time.
-        */
+    /**
+      * The Time class. Time settings are applied in general for each page using
+      * `Highcharts.setOptions`, or individually for each Chart item through the
+      * time options set.
+      *
+      * The Time object is available from Highcharts.Chart#time, which refers to
+      * `Highcharts.time` if no individual time settings are applied.
+      *
+      * @param options
+      *        Time options as defined in chart.options.time.
+      */
+    open class Time () extends Time_ {
       def this(options: TimeOptions) = this()
     }
     @JSImport("highcharts/highcharts-more", "Highcharts.Time")
     @js.native
-    def Time_ : Instantiable1[/* options */ TimeOptions, typings.highcharts.mod.Time_] = js.native
+    def Time_ : Instantiable1[/* options */ js.UndefOr[TimeOptions], typings.highcharts.mod.Time_] = js.native
     
-    inline def Time__=(x: Instantiable1[/* options */ TimeOptions, Time_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
+    inline def Time__=(x: Instantiable1[/* options */ js.UndefOr[TimeOptions], Time_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/highcharts-more", "Highcharts.Tooltip")
@@ -1055,11 +1055,6 @@ object highchartsMoreMod {
     inline def onSeriesLegendItemClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSeriesLegendItemClick")().asInstanceOf[Unit]
     
     /**
-      * Find the center position of the label based on the distance option.
-      */
-    inline def onTickAfterGetLabelPosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onTickAfterGetLabelPosition")().asInstanceOf[Unit]
-    
-    /**
       * Add special cases within the Tick class' methods for radial axes.
       */
     inline def onTickAfterGetPosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onTickAfterGetPosition")().asInstanceOf[Unit]
@@ -1164,11 +1159,6 @@ object highchartsMoreMod {
     inline def useSerialIds(mode: Boolean): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSerialIds")(mode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
     
     inline def wrap(obj: Any, method: String, func: WrapProceedFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(obj.asInstanceOf[js.Any], method.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    /**
-      * Wrap the getMarkPath function to return the path of the radial marker.
-      */
-    inline def wrapTickGetMarkPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapTickGetMarkPath")().asInstanceOf[Unit]
   }
   
   inline def factory(highcharts: TypeofHighchartsAST): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1235,11 +1225,6 @@ object highchartsMoreMod {
     inline def onSeriesLegendItemClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSeriesLegendItemClick")().asInstanceOf[Unit]
     
     /**
-      * Find the center position of the label based on the distance option.
-      */
-    inline def onTickAfterGetLabelPosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onTickAfterGetLabelPosition")().asInstanceOf[Unit]
-    
-    /**
       * Add special cases within the Tick class' methods for radial axes.
       */
     inline def onTickAfterGetPosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onTickAfterGetPosition")().asInstanceOf[Unit]
@@ -1257,11 +1242,6 @@ object highchartsMoreMod {
       *        The new custom chart options.
       */
     inline def setOptions(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    /**
-      * Wrap the getMarkPath function to return the path of the radial marker.
-      */
-    inline def wrapTickGetMarkPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapTickGetMarkPath")().asInstanceOf[Unit]
     
     trait Point extends StObject {
       

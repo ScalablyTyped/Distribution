@@ -64,7 +64,7 @@ trait Service extends StObject {
   /**
     * A subdomain URL that App Runner generated for this service. You can use this URL to access your service web application.
     */
-  var ServiceUrl: String
+  var ServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The source deployed to the App Runner service. It can be a code or an image repository.
@@ -91,12 +91,11 @@ object Service {
     ServiceArn: AppRunnerResourceArn,
     ServiceId: ServiceId,
     ServiceName: ServiceName,
-    ServiceUrl: String,
     SourceConfiguration: SourceConfiguration,
     Status: ServiceStatus,
     UpdatedAt: js.Date
   ): Service = {
-    val __obj = js.Dynamic.literal(AutoScalingConfigurationSummary = AutoScalingConfigurationSummary.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], InstanceConfiguration = InstanceConfiguration.asInstanceOf[js.Any], NetworkConfiguration = NetworkConfiguration.asInstanceOf[js.Any], ServiceArn = ServiceArn.asInstanceOf[js.Any], ServiceId = ServiceId.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], ServiceUrl = ServiceUrl.asInstanceOf[js.Any], SourceConfiguration = SourceConfiguration.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AutoScalingConfigurationSummary = AutoScalingConfigurationSummary.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], InstanceConfiguration = InstanceConfiguration.asInstanceOf[js.Any], NetworkConfiguration = NetworkConfiguration.asInstanceOf[js.Any], ServiceArn = ServiceArn.asInstanceOf[js.Any], ServiceId = ServiceId.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], SourceConfiguration = SourceConfiguration.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
   
@@ -133,6 +132,8 @@ object Service {
     inline def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     inline def setServiceUrl(value: String): Self = StObject.set(x, "ServiceUrl", value.asInstanceOf[js.Any])
+    
+    inline def setServiceUrlUndefined: Self = StObject.set(x, "ServiceUrl", js.undefined)
     
     inline def setSourceConfiguration(value: SourceConfiguration): Self = StObject.set(x, "SourceConfiguration", value.asInstanceOf[js.Any])
     

@@ -15,12 +15,14 @@ trait OmitEventCliSessionStarte extends StObject {
   
   var isSrcDir: js.UndefOr[Boolean | Null] = js.undefined
   
+  var turboFlag: Boolean
+  
   var webpackVersion: js.UndefOr[Double | Null] = js.undefined
 }
 object OmitEventCliSessionStarte {
   
-  inline def apply(cliCommand: String, hasNowJson: Boolean): OmitEventCliSessionStarte = {
-    val __obj = js.Dynamic.literal(cliCommand = cliCommand.asInstanceOf[js.Any], hasNowJson = hasNowJson.asInstanceOf[js.Any])
+  inline def apply(cliCommand: String, hasNowJson: Boolean, turboFlag: Boolean): OmitEventCliSessionStarte = {
+    val __obj = js.Dynamic.literal(cliCommand = cliCommand.asInstanceOf[js.Any], hasNowJson = hasNowJson.asInstanceOf[js.Any], turboFlag = turboFlag.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitEventCliSessionStarte]
   }
   
@@ -41,6 +43,8 @@ object OmitEventCliSessionStarte {
     inline def setIsSrcDirNull: Self = StObject.set(x, "isSrcDir", null)
     
     inline def setIsSrcDirUndefined: Self = StObject.set(x, "isSrcDir", js.undefined)
+    
+    inline def setTurboFlag(value: Boolean): Self = StObject.set(x, "turboFlag", value.asInstanceOf[js.Any])
     
     inline def setWebpackVersion(value: Double): Self = StObject.set(x, "webpackVersion", value.asInstanceOf[js.Any])
     

@@ -5,6 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * InfoWindow
+  */
 @js.native
 trait InfoWindow
   extends StObject
@@ -14,13 +17,15 @@ trait InfoWindow
   
   def getContent(): HTMLElement = js.native
   
-  def getOptions(): InfoWindowOptions = js.native
-  def getOptions(key: String): InfoWindowOptions = js.native
+  def getOptions(): Any = js.native
+  def getOptions(key: String): Any = js.native
   
+  // if key is undefined, return InfoWindowOptions
   def getPosition(): Coord = js.native
   
   def getZIndex(): Double = js.native
   
+  def open(map: Map): Unit = js.native
   def open(map: Map, anchor: Coord): Unit = js.native
   def open(map: Map, anchor: CoordLiteral): Unit = js.native
   def open(map: Map, anchor: Marker): Unit = js.native

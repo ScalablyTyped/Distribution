@@ -63,6 +63,8 @@ object anon {
     
     var smartSelection: Boolean
     
+    var stickyFileHeaders: Boolean
+    
     var synchronisedScroll: Boolean
   }
   object DiffStyle {
@@ -83,9 +85,10 @@ object anon {
       outputFormat: OutputFormatType,
       renderNothingWhenEmpty: Boolean,
       smartSelection: Boolean,
+      stickyFileHeaders: Boolean,
       synchronisedScroll: Boolean
     ): DiffStyle = {
-      val __obj = js.Dynamic.literal(diffStyle = diffStyle.asInstanceOf[js.Any], drawFileList = drawFileList.asInstanceOf[js.Any], fileContentToggle = fileContentToggle.asInstanceOf[js.Any], fileListStartVisible = fileListStartVisible.asInstanceOf[js.Any], fileListToggle = fileListToggle.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], highlightLanguages = highlightLanguages.asInstanceOf[js.Any], matchWordsThreshold = matchWordsThreshold.asInstanceOf[js.Any], matching = matching.asInstanceOf[js.Any], matchingMaxComparisons = matchingMaxComparisons.asInstanceOf[js.Any], maxLineLengthHighlight = maxLineLengthHighlight.asInstanceOf[js.Any], maxLineSizeInBlockForComparison = maxLineSizeInBlockForComparison.asInstanceOf[js.Any], outputFormat = outputFormat.asInstanceOf[js.Any], renderNothingWhenEmpty = renderNothingWhenEmpty.asInstanceOf[js.Any], smartSelection = smartSelection.asInstanceOf[js.Any], synchronisedScroll = synchronisedScroll.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(diffStyle = diffStyle.asInstanceOf[js.Any], drawFileList = drawFileList.asInstanceOf[js.Any], fileContentToggle = fileContentToggle.asInstanceOf[js.Any], fileListStartVisible = fileListStartVisible.asInstanceOf[js.Any], fileListToggle = fileListToggle.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], highlightLanguages = highlightLanguages.asInstanceOf[js.Any], matchWordsThreshold = matchWordsThreshold.asInstanceOf[js.Any], matching = matching.asInstanceOf[js.Any], matchingMaxComparisons = matchingMaxComparisons.asInstanceOf[js.Any], maxLineLengthHighlight = maxLineLengthHighlight.asInstanceOf[js.Any], maxLineSizeInBlockForComparison = maxLineSizeInBlockForComparison.asInstanceOf[js.Any], outputFormat = outputFormat.asInstanceOf[js.Any], renderNothingWhenEmpty = renderNothingWhenEmpty.asInstanceOf[js.Any], smartSelection = smartSelection.asInstanceOf[js.Any], stickyFileHeaders = stickyFileHeaders.asInstanceOf[js.Any], synchronisedScroll = synchronisedScroll.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffStyle]
     }
     
@@ -120,6 +123,8 @@ object anon {
       inline def setRenderNothingWhenEmpty(value: Boolean): Self = StObject.set(x, "renderNothingWhenEmpty", value.asInstanceOf[js.Any])
       
       inline def setSmartSelection(value: Boolean): Self = StObject.set(x, "smartSelection", value.asInstanceOf[js.Any])
+      
+      inline def setStickyFileHeaders(value: Boolean): Self = StObject.set(x, "stickyFileHeaders", value.asInstanceOf[js.Any])
       
       inline def setSynchronisedScroll(value: Boolean): Self = StObject.set(x, "synchronisedScroll", value.asInstanceOf[js.Any])
     }

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait PointingIcon extends StObject
+/**
+  * PointingIcon
+  */
 @JSGlobal("naver.maps.PointingIcon")
 @js.native
 object PointingIcon extends StObject {

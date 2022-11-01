@@ -1,6 +1,5 @@
 package typings.highcharts.mod
 
-import typings.highcharts.highchartsStrings.brightness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait PlotTreemapLevelsColorVariationOptions extends StObject {
     * (Highcharts) The key of a color variation. Currently supports
     * `brightness` only.
     */
-  var key: js.UndefOr[brightness] = js.undefined
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The ending value of a color variation. The last sibling will
@@ -28,7 +27,7 @@ object PlotTreemapLevelsColorVariationOptions {
   
   extension [Self <: PlotTreemapLevelsColorVariationOptions](x: Self) {
     
-    inline def setKey(value: brightness): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     

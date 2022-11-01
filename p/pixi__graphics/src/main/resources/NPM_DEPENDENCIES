@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/graphics" : "7.0.0"
+      "@pixi/graphics" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/graphics" : "7.0.0"
+      "@pixi/graphics" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

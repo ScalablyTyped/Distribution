@@ -18,7 +18,7 @@ trait PlotSunburstLevelSizeOptions extends StObject {
     * distributes it accross all "weighted" levels. The value relative to the
     * sum of all weights determines the width.
     */
-  var unit: js.UndefOr[OptionsUnitValue] = js.undefined
+  var unit: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The value used for calculating the width of the ring. Its'
@@ -35,7 +35,7 @@ object PlotSunburstLevelSizeOptions {
   
   extension [Self <: PlotSunburstLevelSizeOptions](x: Self) {
     
-    inline def setUnit(value: OptionsUnitValue): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     

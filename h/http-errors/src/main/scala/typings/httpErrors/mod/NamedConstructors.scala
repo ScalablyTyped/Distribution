@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  HttpError :http-errors.http-errors.HttpErrorConstructor<number>} & std.Record<'BadRequest' | '400', http-errors.http-errors.HttpErrorConstructor<400>> & std.Record<'Unauthorized' | '401', http-errors.http-errors.HttpErrorConstructor<401>> & std.Record<'PaymentRequired' | '402', http-errors.http-errors.HttpErrorConstructor<402>> & std.Record<'Forbidden' | '403', http-errors.http-errors.HttpErrorConstructor<403>> & std.Record<'NotFound' | '404', http-errors.http-errors.HttpErrorConstructor<404>> & std.Record<'MethodNotAllowed' | '405', http-errors.http-errors.HttpErrorConstructor<405>> & std.Record<'NotAcceptable' | '406', http-errors.http-errors.HttpErrorConstructor<406>> & std.Record<'ProxyAuthenticationRequired' | '407', http-errors.http-errors.HttpErrorConstructor<407>> & std.Record<'RequestTimeout' | '408', http-errors.http-errors.HttpErrorConstructor<408>> & std.Record<'Conflict' | '409', http-errors.http-errors.HttpErrorConstructor<409>> & std.Record<'Gone' | '410', http-errors.http-errors.HttpErrorConstructor<410>> & std.Record<'LengthRequired' | '411', http-errors.http-errors.HttpErrorConstructor<411>> & std.Record<'PreconditionFailed' | '412', http-errors.http-errors.HttpErrorConstructor<412>> & std.Record<'PayloadTooLarge' | '413', http-errors.http-errors.HttpErrorConstructor<413>> & std.Record<'URITooLong' | '414', http-errors.http-errors.HttpErrorConstructor<414>> & std.Record<'UnsupportedMediaType' | '415', http-errors.http-errors.HttpErrorConstructor<415>> & std.Record<'RangeNotSatisfiable' | '416', http-errors.http-errors.HttpErrorConstructor<416>> & std.Record<'ExpectationFailed' | '417', http-errors.http-errors.HttpErrorConstructor<417>> & std.Record<'ImATeapot' | '418', http-errors.http-errors.HttpErrorConstructor<418>> & std.Record<'MisdirectedRequest' | '421', http-errors.http-errors.HttpErrorConstructor<421>> & std.Record<'UnprocessableEntity' | '422', http-errors.http-errors.HttpErrorConstructor<422>> & std.Record<'Locked' | '423', http-errors.http-errors.HttpErrorConstructor<423>> & std.Record<'FailedDependency' | '424', http-errors.http-errors.HttpErrorConstructor<424>> & std.Record<'TooEarly' | '425', http-errors.http-errors.HttpErrorConstructor<425>> & std.Record<'UpgradeRequired' | '426', http-errors.http-errors.HttpErrorConstructor<426>> & std.Record<'PreconditionRequired' | '428', http-errors.http-errors.HttpErrorConstructor<428>> & std.Record<'TooManyRequests' | '429', http-errors.http-errors.HttpErrorConstructor<429>> & std.Record<'RequestHeaderFieldsTooLarge' | '431', http-errors.http-errors.HttpErrorConstructor<431>> & std.Record<'UnavailableForLegalReasons' | '451', http-errors.http-errors.HttpErrorConstructor<451>> & std.Record<'InternalServerError' | '500', http-errors.http-errors.HttpErrorConstructor<500>> & std.Record<'NotImplemented' | '501', http-errors.http-errors.HttpErrorConstructor<501>> & std.Record<'BadGateway' | '502', http-errors.http-errors.HttpErrorConstructor<502>> & std.Record<'ServiceUnavailable' | '503', http-errors.http-errors.HttpErrorConstructor<500>> & std.Record<'GatewayTimeout' | '504', http-errors.http-errors.HttpErrorConstructor<504>> & std.Record<'HTTPVersionNotSupported' | '505', http-errors.http-errors.HttpErrorConstructor<505>> & std.Record<'VariantAlsoNegotiates' | '506', http-errors.http-errors.HttpErrorConstructor<506>> & std.Record<'InsufficientStorage' | '507', http-errors.http-errors.HttpErrorConstructor<507>> & std.Record<'LoopDetected' | '508', http-errors.http-errors.HttpErrorConstructor<508>> & std.Record<'BandwidthLimitExceeded' | '509', http-errors.http-errors.HttpErrorConstructor<509>> & std.Record<'NotExtended' | '510', http-errors.http-errors.HttpErrorConstructor<510>> & std.Record<'NetworkAuthenticationRequire' | '511', http-errors.http-errors.HttpErrorConstructor<511>> */
+/* Inlined {  HttpError :http-errors.http-errors.HttpErrorConstructor<number>} & std.Record<'BadRequest' | '400', http-errors.http-errors.HttpErrorConstructor<400>> & std.Record<'Unauthorized' | '401', http-errors.http-errors.HttpErrorConstructor<401>> & std.Record<'PaymentRequired' | '402', http-errors.http-errors.HttpErrorConstructor<402>> & std.Record<'Forbidden' | '403', http-errors.http-errors.HttpErrorConstructor<403>> & std.Record<'NotFound' | '404', http-errors.http-errors.HttpErrorConstructor<404>> & std.Record<'MethodNotAllowed' | '405', http-errors.http-errors.HttpErrorConstructor<405>> & std.Record<'NotAcceptable' | '406', http-errors.http-errors.HttpErrorConstructor<406>> & std.Record<'ProxyAuthenticationRequired' | '407', http-errors.http-errors.HttpErrorConstructor<407>> & std.Record<'RequestTimeout' | '408', http-errors.http-errors.HttpErrorConstructor<408>> & std.Record<'Conflict' | '409', http-errors.http-errors.HttpErrorConstructor<409>> & std.Record<'Gone' | '410', http-errors.http-errors.HttpErrorConstructor<410>> & std.Record<'LengthRequired' | '411', http-errors.http-errors.HttpErrorConstructor<411>> & std.Record<'PreconditionFailed' | '412', http-errors.http-errors.HttpErrorConstructor<412>> & std.Record<'PayloadTooLarge' | '413', http-errors.http-errors.HttpErrorConstructor<413>> & std.Record<'URITooLong' | '414', http-errors.http-errors.HttpErrorConstructor<414>> & std.Record<'UnsupportedMediaType' | '415', http-errors.http-errors.HttpErrorConstructor<415>> & std.Record<'RangeNotSatisfiable' | '416', http-errors.http-errors.HttpErrorConstructor<416>> & std.Record<'ExpectationFailed' | '417', http-errors.http-errors.HttpErrorConstructor<417>> & std.Record<'ImATeapot' | '418', http-errors.http-errors.HttpErrorConstructor<418>> & std.Record<'MisdirectedRequest' | '421', http-errors.http-errors.HttpErrorConstructor<421>> & std.Record<'UnprocessableEntity' | '422', http-errors.http-errors.HttpErrorConstructor<422>> & std.Record<'Locked' | '423', http-errors.http-errors.HttpErrorConstructor<423>> & std.Record<'FailedDependency' | '424', http-errors.http-errors.HttpErrorConstructor<424>> & std.Record<'TooEarly' | '425', http-errors.http-errors.HttpErrorConstructor<425>> & std.Record<'UpgradeRequired' | '426', http-errors.http-errors.HttpErrorConstructor<426>> & std.Record<'PreconditionRequired' | '428', http-errors.http-errors.HttpErrorConstructor<428>> & std.Record<'TooManyRequests' | '429', http-errors.http-errors.HttpErrorConstructor<429>> & std.Record<'RequestHeaderFieldsTooLarge' | '431', http-errors.http-errors.HttpErrorConstructor<431>> & std.Record<'UnavailableForLegalReasons' | '451', http-errors.http-errors.HttpErrorConstructor<451>> & std.Record<'InternalServerError' | '500', http-errors.http-errors.HttpErrorConstructor<500>> & std.Record<'NotImplemented' | '501', http-errors.http-errors.HttpErrorConstructor<501>> & std.Record<'BadGateway' | '502', http-errors.http-errors.HttpErrorConstructor<502>> & std.Record<'ServiceUnavailable' | '503', http-errors.http-errors.HttpErrorConstructor<503>> & std.Record<'GatewayTimeout' | '504', http-errors.http-errors.HttpErrorConstructor<504>> & std.Record<'HTTPVersionNotSupported' | '505', http-errors.http-errors.HttpErrorConstructor<505>> & std.Record<'VariantAlsoNegotiates' | '506', http-errors.http-errors.HttpErrorConstructor<506>> & std.Record<'InsufficientStorage' | '507', http-errors.http-errors.HttpErrorConstructor<507>> & std.Record<'LoopDetected' | '508', http-errors.http-errors.HttpErrorConstructor<508>> & std.Record<'BandwidthLimitExceeded' | '509', http-errors.http-errors.HttpErrorConstructor<509>> & std.Record<'NotExtended' | '510', http-errors.http-errors.HttpErrorConstructor<510>> & std.Record<'NetworkAuthenticationRequire' | '511', http-errors.http-errors.HttpErrorConstructor<511>> */
 trait NamedConstructors extends StObject {
   
   def `400`(): HttpError[typings.httpErrors.httpErrorsInts.`400`]
@@ -167,10 +167,10 @@ trait NamedConstructors extends StObject {
   @JSName("502")
   var `502_Original`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`]
   
-  def `503`(): HttpError[typings.httpErrors.httpErrorsInts.`500`]
-  def `503`(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`500`]
+  def `503`(): HttpError[typings.httpErrors.httpErrorsInts.`503`]
+  def `503`(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`503`]
   @JSName("503")
-  var `503_Original`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]
+  var `503_Original`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`]
   
   def `504`(): HttpError[typings.httpErrors.httpErrorsInts.`504`]
   def `504`(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`504`]
@@ -372,10 +372,10 @@ trait NamedConstructors extends StObject {
   @JSName("RequestTimeout")
   var RequestTimeout_Original: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`]
   
-  def ServiceUnavailable(): HttpError[typings.httpErrors.httpErrorsInts.`500`]
-  def ServiceUnavailable(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`500`]
+  def ServiceUnavailable(): HttpError[typings.httpErrors.httpErrorsInts.`503`]
+  def ServiceUnavailable(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`503`]
   @JSName("ServiceUnavailable")
-  var ServiceUnavailable_Original: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]
+  var ServiceUnavailable_Original: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`]
   
   def TooEarly(): HttpError[typings.httpErrors.httpErrorsInts.`425`]
   def TooEarly(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`425`]
@@ -457,7 +457,7 @@ object NamedConstructors {
     `500`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`],
     `501`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`501`],
     `502`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`],
-    `503`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`],
+    `503`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`],
     `504`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`],
     `505`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`505`],
     `506`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`506`],
@@ -498,7 +498,7 @@ object NamedConstructors {
     RangeNotSatisfiable: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`416`],
     RequestHeaderFieldsTooLarge: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`431`],
     RequestTimeout: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`],
-    ServiceUnavailable: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`],
+    ServiceUnavailable: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`],
     TooEarly: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`],
     TooManyRequests: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`429`],
     URITooLong: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`414`],
@@ -620,7 +620,7 @@ object NamedConstructors {
     
     inline def set502(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`]): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
     
-    inline def set503(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+    inline def set503(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`]): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
     
     inline def set504(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`]): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
     
@@ -702,7 +702,7 @@ object NamedConstructors {
     
     inline def setRequestTimeout(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`]): Self = StObject.set(x, "RequestTimeout", value.asInstanceOf[js.Any])
     
-    inline def setServiceUnavailable(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]): Self = StObject.set(x, "ServiceUnavailable", value.asInstanceOf[js.Any])
+    inline def setServiceUnavailable(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`]): Self = StObject.set(x, "ServiceUnavailable", value.asInstanceOf[js.Any])
     
     inline def setTooEarly(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`]): Self = StObject.set(x, "TooEarly", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,7 @@ trait WeakValidationMapImageVie extends StObject {
   ] = js.undefined
   
   var maxZoom: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : undefined extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : react.react.Validator<number | undefined> */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends number | 'auto' | undefined ? react.react.Validator<number | 'auto' | undefined | null | undefined> : undefined extends number | 'auto' | undefined ? react.react.Validator<number | 'auto' | undefined | null | undefined> : react.react.Validator<number | 'auto' | undefined> */ js.Any
   ] = js.undefined
   
   var onClose: js.UndefOr[
@@ -63,7 +63,7 @@ object WeakValidationMapImageVie {
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     inline def setMaxZoom(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : undefined extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : react.react.Validator<number | undefined> */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends number | 'auto' | undefined ? react.react.Validator<number | 'auto' | undefined | null | undefined> : undefined extends number | 'auto' | undefined ? react.react.Validator<number | 'auto' | undefined | null | undefined> : react.react.Validator<number | 'auto' | undefined> */ js.Any
     ): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)

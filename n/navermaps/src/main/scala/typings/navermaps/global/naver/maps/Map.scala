@@ -6,7 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Map
+/**
+  * Map
+  */
 @JSGlobal("naver.maps.Map")
 @js.native
 open class Map protected ()

@@ -59,6 +59,11 @@ object libEsmIconNamesMod {
     
     inline def ADD__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADD")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.AIMPOINTS_TARGET")
+    @js.native
+    def AIMPOINTS_TARGET: BlueprintIcons16Id = js.native
+    inline def AIMPOINTS_TARGET_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AIMPOINTS_TARGET")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.AIRPLANE")
     @js.native
     def AIRPLANE_ : BlueprintIcons16Id = js.native
@@ -309,6 +314,11 @@ object libEsmIconNamesMod {
     inline def AddToFolder_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddToFolder")(x.asInstanceOf[js.Any])
     
     inline def Add_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Add")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.AimpointsTarget")
+    @js.native
+    def AimpointsTarget: BlueprintIcons16Id = js.native
+    inline def AimpointsTarget_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AimpointsTarget")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.Airplane")
     @js.native

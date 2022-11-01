@@ -12,6 +12,10 @@ object constantsMod {
   @js.native
   val APP_BUILD_MANIFEST: /* "app-build-manifest.json" */ String = js.native
   
+  @JSImport("next/constants", "APP_CLIENT_INTERNALS")
+  @js.native
+  val APP_CLIENT_INTERNALS: /* "app-client-internals" */ String = js.native
+  
   @JSImport("next/constants", "APP_PATHS_MANIFEST")
   @js.native
   val APP_PATHS_MANIFEST: /* "app-paths-manifest.json" */ String = js.native

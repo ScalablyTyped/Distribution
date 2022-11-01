@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * ZoomControl
+  */
 @JSGlobal("naver.maps.ZoomControl")
 @js.native
 open class ZoomControl protected ()

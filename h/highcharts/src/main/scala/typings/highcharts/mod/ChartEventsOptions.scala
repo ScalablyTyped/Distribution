@@ -153,11 +153,11 @@ object ChartEventsOptions {
     
     inline def setAddSeriesUndefined: Self = StObject.set(x, "addSeries", js.undefined)
     
-    inline def setAfterPrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "afterPrint", js.Any.fromFunction2(value))
+    inline def setAfterPrint(value: ExportingAfterPrintCallbackFunction): Self = StObject.set(x, "afterPrint", value.asInstanceOf[js.Any])
     
     inline def setAfterPrintUndefined: Self = StObject.set(x, "afterPrint", js.undefined)
     
-    inline def setBeforePrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "beforePrint", js.Any.fromFunction2(value))
+    inline def setBeforePrint(value: ExportingBeforePrintCallbackFunction): Self = StObject.set(x, "beforePrint", value.asInstanceOf[js.Any])
     
     inline def setBeforePrintUndefined: Self = StObject.set(x, "beforePrint", js.undefined)
     

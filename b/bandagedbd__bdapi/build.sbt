@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "bandagedbd__bdapi"
-version := "0.3-dt-20220301Z-dafefc"
+version := "0.3-dt-20220301Z-744de2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20220928Z-3598f3",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221027Z-34f203",

@@ -12,6 +12,12 @@ trait GanttPointOptionsObject extends StObject {
   var accessibility: js.UndefOr[PointAccessibilityOptionsObject] = js.undefined
   
   /**
+    * (Highcharts, Gantt) An additional, individual class name for the data
+    * point's graphic representation.
+    */
+  var className: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Gantt) Whether the grid node belonging to this point should start as
     * collapsed. Used in axes of type treegrid.
     */
@@ -30,7 +36,7 @@ trait GanttPointOptionsObject extends StObject {
     * (Highcharts, Gantt) A specific color index to use for the point, so its
     * graphic representations are given the class name `highcharts-color-{n}`.
     * In styled mode this will change the color of the graphic. In non-styled
-    * mode, the color by is set by the `fill` attribute, so the change in class
+    * mode, the color is set by the `fill` attribute, so the change in class
     * name won't have a visual effect by default.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
@@ -42,11 +48,26 @@ trait GanttPointOptionsObject extends StObject {
   var completed: js.UndefOr[Double | XrangePointPartialFillOptionsObject] = js.undefined
   
   /**
+    * (Gantt) Connect to a point. This option can be either a string, referring
+    * to the ID of another point, or an object, or an array of either. If the
+    * option is an array, each element defines a connection.
+    */
+  var connect: js.UndefOr[
+    String | XrangePointConnectorsOptionsObject | (js.Array[String | XrangePointConnectorsOptionsObject])
+  ] = js.undefined
+  
+  /**
     * (Gantt) A reserved subspace to store options and values for customized
     * functionality. Here you can add additional data for your own event
     * callbacks and formatter callbacks.
     */
   var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) Individual data label for each point. The
+    * options are the same as the ones for plotOptions.series.dataLabels.
+    */
+  var dataLabels: js.UndefOr[DataLabelsOptions | js.Array[DataLabelsOptions]] = js.undefined
   
   /**
     * (Gantt) The ID of the point (task) that this point depends on in Gantt
@@ -80,6 +101,11 @@ trait GanttPointOptionsObject extends StObject {
     * (Gantt) The end time of a task.
     */
   var end: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) The individual point events.
+    */
+  var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An id for the point. This can be used
@@ -120,9 +146,32 @@ trait GanttPointOptionsObject extends StObject {
   var parent: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Gantt) A partial fill for each point, typically
+    * used to visualize how much of a task is performed. The partial fill
+    * object can be set either on series or point level.
+    */
+  var partialFill: js.UndefOr[XrangePointPartialFillOptionsObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) Whether the data point is selected
+    * initially.
+    */
+  var selected: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Gantt) The start time of a task.
     */
   var start: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) The starting X value of the range point.
+    */
+  var x: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) The ending X value of the range point.
+    */
+  var x2: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) The Y value of a task.
@@ -142,6 +191,10 @@ object GanttPointOptionsObject {
     
     inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
@@ -158,9 +211,23 @@ object GanttPointOptionsObject {
     
     inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
+    inline def setConnect(
+      value: String | XrangePointConnectorsOptionsObject | (js.Array[String | XrangePointConnectorsOptionsObject])
+    ): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+    
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+    
+    inline def setConnectVarargs(value: (String | XrangePointConnectorsOptionsObject)*): Self = StObject.set(x, "connect", js.Array(value*))
+    
     inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDataLabels(value: DataLabelsOptions | js.Array[DataLabelsOptions]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    
+    inline def setDataLabelsVarargs(value: DataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDependency(
       value: String | XrangePointConnectorsOptionsObject | (js.Array[String | XrangePointConnectorsOptionsObject])
@@ -186,6 +253,10 @@ object GanttPointOptionsObject {
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
+    inline def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -210,9 +281,25 @@ object GanttPointOptionsObject {
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
+    inline def setPartialFill(value: XrangePointPartialFillOptionsObject): Self = StObject.set(x, "partialFill", value.asInstanceOf[js.Any])
+    
+    inline def setPartialFillUndefined: Self = StObject.set(x, "partialFill", js.undefined)
+    
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
     inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    
+    inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     

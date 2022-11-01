@@ -13,6 +13,8 @@ trait DefaultSeoProps extends StObject {
   
   var canonical: js.UndefOr[String] = js.undefined
   
+  var children: js.UndefOr[scala.Nothing] = js.undefined
+  
   var dangerouslySetAllPagesToNoFollow: js.UndefOr[Boolean] = js.undefined
   
   var dangerouslySetAllPagesToNoIndex: js.UndefOr[Boolean] = js.undefined

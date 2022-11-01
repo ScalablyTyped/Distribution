@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Classes
+  * KVO
   */
-// KVO
 @JSGlobal("naver.maps.KVO")
 @js.native
 open class KVO ()

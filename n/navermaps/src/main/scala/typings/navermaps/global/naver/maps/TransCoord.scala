@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TransCoord {
   
-  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  
   @JSGlobal("naver.maps.TransCoord")
   @js.native
   val ^ : js.Any = js.native

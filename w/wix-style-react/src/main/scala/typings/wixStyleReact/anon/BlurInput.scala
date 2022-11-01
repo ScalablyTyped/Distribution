@@ -65,9 +65,6 @@ trait BlurInput extends StObject {
   /** Returns the total amount of pages displayed in "input" mode */
   def getTotalPagesField(): js.UndefOr[typings.std.Element | Null] = js.native
   
-  /** Checks if the input has an error */
-  def inputHasError(): Boolean = js.native
-  
   /** Returns the root element*/
   var root: js.UndefOr[typings.std.Element] = js.native
   

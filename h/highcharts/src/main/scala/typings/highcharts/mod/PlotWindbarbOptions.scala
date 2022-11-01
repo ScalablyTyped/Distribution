@@ -1,8 +1,5 @@
 package typings.highcharts.mod
 
-import typings.highcharts.anon.PartialAnimationOptionsOb
-import typings.highcharts.highchartsInts.`0`
-import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,24 +40,50 @@ trait PlotWindbarbOptions extends StObject {
     *
     * - `defer`: The animation delay time in milliseconds.
     *
-    * - `duration`: The duration of the animation in milliseconds.
+    * - `duration`: The duration of the animation in milliseconds. (Defaults to
+    * `1000`)
     *
     * - `easing`: Can be a string reference to an easing function set on the
     * `Math` object or a function. See the _Custom easing function_ demo below.
+    * (Defaults to `easeInOutSine`)
     *
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | PlotWindbarbAnimationOptions | PartialAnimationOptionsOb] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) For some series, there is a limit that shuts down
-    * initial animation by default when the total number of points in the chart
-    * is too high. For example, for a column chart and its derivatives,
-    * animation does not run if there is more than 250 points totally. To
-    * disable this cap, set `animationLimit` to `Infinity`.
+    * animation by default when the total number of points in the chart is too
+    * high. For example, for a column chart and its derivatives, animation does
+    * not run if there is more than 250 points totally. To disable this cap,
+    * set `animationLimit` to `Infinity`. This option works if animation is
+    * fired on individual points, not on a group of points like e.g. during the
+    * initial animation.
     */
   var animationLimit: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Sets the color blending in the boost module.
+    */
+  var boostBlending: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Set the point threshold for when a series should
+    * enter boost mode.
+    *
+    * Setting it to e.g. 2000 will cause the series to enter boost mode when
+    * there are 2000 or more points in the series.
+    *
+    * To disable boosting on the series, set the `boostThreshold` to 0. Setting
+    * it to 1 will force boosting.
+    *
+    * Note that the cropThreshold also affects this setting. When zooming in on
+    * a series that has fewer points than the `cropThreshold`, all points are
+    * rendered although outside the visible plot area, and the `boostThreshold`
+    * won't take effect.
+    */
+  var boostThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The color of the border surrounding each
@@ -178,13 +201,13 @@ trait PlotWindbarbOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
+  var compare: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
+  var compareBase: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -196,6 +219,19 @@ trait PlotWindbarbOptions extends StObject {
     * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts) Polar charts only. Whether to connect the ends of a line
+    * series plot across the extremes.
+    */
+  var connectEnds: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Whether to connect a graph line across null
+    * points, or render a gap between the two points on either side of the
+    * null.
+    */
+  var connectNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
@@ -212,6 +248,18 @@ trait PlotWindbarbOptions extends StObject {
     * column is rendered blurry.
     */
   var crisp: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) When the series contains less points than
+    * the crop threshold, all points are drawn, event if the points fall
+    * outside the visible plot area at the current zoom. The advantage of
+    * drawing all points (including markers and columns), is that animation is
+    * performed on updates. On the other hand, when the series contains more
+    * points than the crop threshold, the series data is cropped to only
+    * contain points that fall within the plot area. The advantage of cropping
+    * away invisible points is to increase performance on large series.
+    */
+  var cropThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Cumulative Sum feature replaces points' values with the
@@ -238,6 +286,15 @@ trait PlotWindbarbOptions extends StObject {
     * own event callbacks and formatter callbacks.
     */
   var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Name of the dash style to use for the graph, or
+    * for some series types the outline of each shape.
+    *
+    * In styled mode, the stroke dash-array can be set with the same classes as
+    * listed under series.color.
+    */
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highcharts, Highstock) Indicates data is structured as columns instead
@@ -282,6 +339,14 @@ trait PlotWindbarbOptions extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highcharts, Highstock) The draggable-points module allows points to be
+    * moved around or modified in the chart. In addition to the options
+    * mentioned under the `dragDrop` API structure, the module fires three
+    * events, point.dragStart, point.drag and point.drop.
+    */
+  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
+  
+  /**
     * (Highcharts) 3D columns only. The color of the edges. Similar to
     * `borderColor`, except it defaults to the same color as the column.
     */
@@ -316,7 +381,38 @@ trait PlotWindbarbOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
+  var findNearestPointBy: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highstock) Defines when to display a gap in the graph, together with the
+    * gapUnit option.
+    *
+    * In case when `dataGrouping` is enabled, points can be grouped into a
+    * larger time span. This can make the grouped points to have a greater
+    * distance than the absolute value of `gapSize` property, which will result
+    * in disappearing graph completely. To prevent this situation the mentioned
+    * distance between grouped points is used instead of previously defined
+    * `gapSize`.
+    *
+    * In practice, this option is most often used to visualize gaps in time
+    * series. In a stock chart, intraday data is available for daytime hours,
+    * while gaps will appear in nights and weekends.
+    */
+  var gapSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highstock) Together with gapSize, this option defines where to draw gaps
+    * in the graph.
+    *
+    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
+    * if the distance between two points is greater than 5 times that of the
+    * two closest points, the graph will be broken.
+    *
+    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
+    * values, which on a datetime axis is milliseconds. This also applies to
+    * the navigator series that inherits gap options from the base series.
+    */
+  var gapUnit: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -405,6 +501,13 @@ trait PlotWindbarbOptions extends StObject {
   var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
+    * `stroke-linejoin` of a line graph. Round means that lines are rounded in
+    * the ends and bends.
+    */
+  var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
@@ -415,6 +518,18 @@ trait PlotWindbarbOptions extends StObject {
     * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Options for the point markers of line-like
+    * series. Properties like `fillColor`, `lineColor` and `lineWidth` define
+    * the visual appearance of the markers. Other series types, like column
+    * series, don't have markers, but have visual options on the series level
+    * instead.
+    *
+    * In styled mode, the markers can be styled with the `.highcharts-point`,
+    * `.highcharts-point-hover` and `.highcharts-point-select` class names.
+    */
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The maximum allowed pixel width for a
@@ -511,7 +626,7 @@ trait PlotWindbarbOptions extends StObject {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.undefined
+  var pointIntervalUnit: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Padding between each column or bar, in x
@@ -601,6 +716,13 @@ trait PlotWindbarbOptions extends StObject {
   var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts, Highstock) Whether to apply a drop shadow to the graph line.
+    * Since 2.3 the shadow can be an object configuration containing `color`,
+    * `offsetX`, `offsetY`, `opacity` and `width`.
+    */
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
+  
+  /**
     * (Highcharts, Highstock) If true, a checkbox is displayed next to the
     * legend item to allow selecting the series. The state of the checkbox is
     * determined by the `selected` option.
@@ -638,7 +760,26 @@ trait PlotWindbarbOptions extends StObject {
     */
   var softThreshold: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * (Highcharts, Highstock) Whether to stack the values of each series on top
+    * of each other. Possible values are `undefined` to disable, `"normal"` to
+    * stack by value or `"percent"`.
+    *
+    * When stacking is enabled, data must be sorted in ascending X order.
+    *
+    * Some stacking options are related to specific series types. In the
+    * streamgraph series type, the stacking option is set to `"stream"`. The
+    * second one is `"overlap"`, which only applies to waterfall series.
+    */
+  var stacking: js.UndefOr[String] = js.undefined
+  
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Whether to apply steps to the line. Possible
+    * values are `left`, `center` and `right`.
+    */
+  var step: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) Sticky tracking of mouse events. When true, the
@@ -681,6 +822,12 @@ trait PlotWindbarbOptions extends StObject {
     * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highstock) The parameter allows setting line series type and use OHLC
+    * indicators. Data in OHLC format is required.
+    */
+  var useOhlcData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Pixel length of the stems.
@@ -750,13 +897,21 @@ object PlotWindbarbOptions {
     
     inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
     
-    inline def setAnimation(value: Boolean | PlotWindbarbAnimationOptions | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | AnimationOptionsObject): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationLimit(value: Double): Self = StObject.set(x, "animationLimit", value.asInstanceOf[js.Any])
     
     inline def setAnimationLimitUndefined: Self = StObject.set(x, "animationLimit", js.undefined)
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
+    
+    inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
+    
+    inline def setBoostThreshold(value: Double): Self = StObject.set(x, "boostThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setBoostThresholdUndefined: Self = StObject.set(x, "boostThreshold", js.undefined)
     
     inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
@@ -808,9 +963,9 @@ object PlotWindbarbOptions {
     
     inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
     
@@ -820,6 +975,14 @@ object PlotWindbarbOptions {
     
     inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
+    inline def setConnectEnds(value: Boolean): Self = StObject.set(x, "connectEnds", value.asInstanceOf[js.Any])
+    
+    inline def setConnectEndsUndefined: Self = StObject.set(x, "connectEnds", js.undefined)
+    
+    inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
+    
+    inline def setConnectNullsUndefined: Self = StObject.set(x, "connectNulls", js.undefined)
+    
     inline def setConnectors(value: SeriesConnectorsOptionsObject): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
     
     inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
@@ -827,6 +990,10 @@ object PlotWindbarbOptions {
     inline def setCrisp(value: Boolean): Self = StObject.set(x, "crisp", value.asInstanceOf[js.Any])
     
     inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
+    
+    inline def setCropThreshold(value: Double): Self = StObject.set(x, "cropThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setCropThresholdUndefined: Self = StObject.set(x, "cropThreshold", js.undefined)
     
     inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
@@ -839,6 +1006,10 @@ object PlotWindbarbOptions {
     inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
     
@@ -866,6 +1037,10 @@ object PlotWindbarbOptions {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setDragDrop(value: SeriesDragDropOptionsObject): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
+    
+    inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
+    
     inline def setEdgeColor(value: ColorString): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
     
     inline def setEdgeColorUndefined: Self = StObject.set(x, "edgeColor", js.undefined)
@@ -882,9 +1057,17 @@ object PlotWindbarbOptions {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
     
     inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
+    
+    inline def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
+    
+    inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
+    
+    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
+    
+    inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
     inline def setGetExtremesFromAll(value: Boolean): Self = StObject.set(x, "getExtremesFromAll", value.asInstanceOf[js.Any])
     
@@ -934,9 +1117,17 @@ object PlotWindbarbOptions {
     
     inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
+    inline def setLinecap(value: SeriesLinecapValue): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
+    
+    inline def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
+    
     inline def setLinkedTo(value: String): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
     
     inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
+    
+    inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     inline def setMaxPointWidth(value: Double): Self = StObject.set(x, "maxPointWidth", value.asInstanceOf[js.Any])
     
@@ -978,7 +1169,7 @@ object PlotWindbarbOptions {
     
     inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
     
-    inline def setPointIntervalUnit(value: OptionsPointIntervalUnitValue): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
     
     inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
     
@@ -1014,6 +1205,10 @@ object PlotWindbarbOptions {
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
+    inline def setShadow(value: Boolean | ShadowOptionsObject): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    
     inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
     
     inline def setShowCheckboxUndefined: Self = StObject.set(x, "showCheckbox", js.undefined)
@@ -1034,9 +1229,17 @@ object PlotWindbarbOptions {
     
     inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
     
+    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    
+    inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
+    
     inline def setStates(value: SeriesStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    
+    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
     
@@ -1055,6 +1258,10 @@ object PlotWindbarbOptions {
     inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
     
     inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
+    
+    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
+    
+    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     inline def setVectorLength(value: Double): Self = StObject.set(x, "vectorLength", value.asInstanceOf[js.Any])
     

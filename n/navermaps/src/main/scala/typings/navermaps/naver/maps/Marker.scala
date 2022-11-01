@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Marker
+  */
 @js.native
 trait Marker
   extends StObject
@@ -21,9 +24,10 @@ trait Marker
   
   def getIcon(): ImageIcon | SymbolIcon | HtmlIcon = js.native
   
-  def getOptions(): MarkerOptions = js.native
-  def getOptions(key: String): MarkerOptions = js.native
+  def getOptions(): Any = js.native
+  def getOptions(key: String): Any = js.native
   
+  // if key is undefined, return MarkerOptions
   def getPosition(): Coord = js.native
   
   def getShape(): MarkerShape = js.native

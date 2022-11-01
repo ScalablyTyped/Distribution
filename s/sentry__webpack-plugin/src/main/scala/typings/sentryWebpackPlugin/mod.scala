@@ -28,6 +28,12 @@ object mod {
     /* CompleteClass */
     var options: SentryCliPluginOptions = js.native
   }
+  @JSImport("@sentry/webpack-plugin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def cliBinaryExists(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cliBinaryExists")().asInstanceOf[String]
   
   trait SentryCliPlugin
     extends StObject

@@ -983,6 +983,7 @@
 | 0.0 | [buffer-equal](./b/buffer-equal) | return whether two buffers are equal
 | 0.0 | [buffer-from](./b/buffer-from) | A 
 | 0.0 | [buffer-json](./b/buffer-json) | JSON.stringify & JSON.parse which can encode/decod
+| 0.0 | [buffer-json-encoding](./b/buffer-json-encoding) | An abstract-encoding compatible JSON encoder/decod
 | 0.0 | [buffer-reader](./b/buffer-reader) | a reader for nodejs buffer
 | 0.0 | [buffer-split](./b/buffer-split) | split a buffer by another buffer. think String.spl
 | 0.0 | [buffer-to-stream](./b/buffer-to-stream) | convert buffer to readable stream
@@ -2057,6 +2058,7 @@
 | 0.0 | [dnd-multi-backend](./d/dnd-multi-backend) | Multi Backend system compatible with DnD Core / Re
 | 0.0 | [dns-over-http-resolver](./d/dns-over-http-resolver) | DNS over HTTP resolver
 | 0.0 | [dns-packet](./d/dns-packet) | An abstract-encoding compliant module for encoding
+| 0.0 | [dns-txt](./d/dns-txt) | Encode/decode DNS-SD TXT record RDATA fields
 | 0.0 | [dns2](./d/dns2) | A DNS Server and Client Implementation in Pure Jav
 | 0.0 | [dnssd](./d/dnssd) | Bonjour/Avahi-like service discovery in pure JavaS
 | 0.0 | [do-not-zip](./d/do-not-zip) | Do not zip. Just store.
@@ -2755,6 +2757,7 @@
 | 0.0 | [feedparser](./f/feedparser) | Robust RSS Atom and RDF feed parsing using sax js
 | 0.0 | [feedsub](./f/feedsub) | Reads online RSS/Atom/JSON feeds notifying on new 
 | 0.0 | [feflow__cli](./f/feflow__cli) | A front-end flow tool.
+| 0.0 | [fernet](./f/fernet) | Javascript implementation of Fernet symmetric encr
 | 0.0 | [fetch-blob](./f/fetch-blob) | Blob & File implementation in Node.js, originally 
 | 0.0 | [fetch-headers](./f/fetch-headers) | fetch Headers
 | 0.0 | [fetch-jsonp](./f/fetch-jsonp) | Fetch JSONP like a boss using Fetch API
@@ -3035,6 +3038,7 @@
 | 0.0 | [foundation-sites](./f/foundation-sites) | The most advanced responsive front-end framework i
 | 0.0 | [fp-ts](./f/fp-ts) | Functional programming in TypeScript
 | 0.0 | [fparser](./f/fparser) | A Math Formula parser library for JavaScript
+| 0.0 | [fps](./f/fps) | Tiny module for measuring FPS
 | 0.0 | [fpsmeter](./f/fpsmeter) | Sexy, fast, and themable FPS meter.
 | 0.0 | [frac](./f/frac) | Rational approximation with bounded denominator
 | 0.0 | [fraction_dot_js](./f/fraction_dot_js) | A rational number library
@@ -3741,6 +3745,7 @@
 | 0.0 | [http-cookie-agent](./h/http-cookie-agent) | Allows cookies with every Node.js HTTP clients.
 | 0.0 | [http-errors](./h/http-errors) | Create HTTP error objects
 | 0.0 | [http-graceful-shutdown](./h/http-graceful-shutdown) | gracefully shuts downs http server
+| 0.0 | [http-headers](./h/http-headers) | Parse http headers
 | 0.0 | [http-link-header](./h/http-link-header) | Parse & format HTTP link headers according to RFC 
 | 0.0 | [http-parser-js](./h/http-parser-js) | A pure JS HTTP parser for node.
 | 0.0 | [http-proxy](./h/http-proxy) | HTTP proxying for the masses
@@ -4000,6 +4005,7 @@
 | 0.0 | [ip](./i/ip) | -
 | 0.0 | [ip-address](./i/ip-address) | A library for parsing IPv4 and IPv6 IP addresses i
 | 0.0 | [ip-cidr](./i/ip-cidr) | Module for working with CIDR (v4, v6)
+| 0.0 | [ip-packet](./i/ip-packet) | Encode/decode raw ip packets
 | 0.0 | [ip-regex](./i/ip-regex) | Regular expression for matching IP addresses (IPv4
 | 0.0 | [ip-subnet-calculator](./i/ip-subnet-calculator) | Calculate optimal subnet masks for standard and no
 | 0.0 | [ip1sms__is-disposable-pho](./i/ip1sms__is-disposable-phone-number) | Determine if a phone number is a disposable phone 
@@ -4066,6 +4072,7 @@
 | 0.0 | [is-dotdir](./i/is-dotdir) | Returns true if a path is a dot-directory.
 | 0.0 | [is-dotfile](./i/is-dotfile) | Return true if a file path is (or has) a dotfile. 
 | 0.0 | [is-electron](./i/is-electron) | Detect if running in Electron.
+| 0.0 | [is-electron-renderer](./i/is-electron-renderer) | Check if code is running in Electron renderer proc
 | 0.0 | [is-elevated](./i/is-elevated) | Check if the process is running with elevated priv
 | 0.0 | [is-empty](./i/is-empty) | Check whether a value is "empty".
 | 0.0 | [is-empty-object](./i/is-empty-object) | Check if an object is empty.
@@ -6973,6 +6980,7 @@
 | 0.0 | [org-regex](./o/org-regex) | Regular expression for matching npm organization n
 | 0.0 | [orientjs](./o/orientjs) | Official node.js driver for OrientDB. Fast, lightw
 | 0.0 | [original](./o/original) | Generate the origin from an URL or check if two UR
+| 0.0 | [original-url](./o/original-url) | Reconstruct the original URL used in an HTTP reque
 | 0.0 | [os-homedir](./o/os-homedir) | Node.js 4 os.homedir() ponyfill
 | 0.0 | [os-locale](./o/os-locale) | Get the system locale
 | 0.0 | [os-name](./o/os-name) | Get the name of the current operating system. Exam
@@ -10124,6 +10132,7 @@
 | 0.0 | [swe-validation](./s/swe-validation) | Validation for Swedish Social Security number and 
 | 0.0 | [sweet-pubsub](./s/sweet-pubsub) | Simple publish && subscribe communication interfac
 | 0.0 | [sweetalert](./s/sweetalert) | A beautiful replacement for JavaScript's "alert"
+| 0.0 | [swell-js](./s/swell-js) | Swell JS library for client-side stores
 | 0.0 | [swfobject](./s/swfobject) | SWFObject is an easy-to-use and standards-friendly
 | 0.0 | [swiftclick](./s/swiftclick) | Eliminates the 300ms click event delay on touch de
 | 0.0 | [swig](./s/swig) | A simple, powerful, and extendable templating engi

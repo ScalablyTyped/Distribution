@@ -65,6 +65,8 @@ trait LangAccessibilityOptions extends StObject {
     */
   var rangeSelector: js.UndefOr[LangAccessibilityRangeSelectorOptions] = js.undefined
   
+  var resetZoomButton: js.UndefOr[js.Object] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Language options for the screen
     * reader information sections added before and after the charts.
@@ -175,6 +177,10 @@ object LangAccessibilityOptions {
     inline def setRangeSelector(value: LangAccessibilityRangeSelectorOptions): Self = StObject.set(x, "rangeSelector", value.asInstanceOf[js.Any])
     
     inline def setRangeSelectorUndefined: Self = StObject.set(x, "rangeSelector", js.undefined)
+    
+    inline def setResetZoomButton(value: js.Object): Self = StObject.set(x, "resetZoomButton", value.asInstanceOf[js.Any])
+    
+    inline def setResetZoomButtonUndefined: Self = StObject.set(x, "resetZoomButton", js.undefined)
     
     inline def setScreenReaderSection(value: LangAccessibilityScreenReaderSectionOptions): Self = StObject.set(x, "screenReaderSection", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait ZoomControlStyle extends StObject
+/**
+  * ZoomControlStyle
+  */
 @JSGlobal("naver.maps.ZoomControlStyle")
 @js.native
 object ZoomControlStyle extends StObject {

@@ -71,6 +71,12 @@ object libEsmIconCodepointsMod {
     
     inline def add_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.aimpoints-target")
+    @js.native
+    def aimpointsTarget: String = js.native
+    
+    inline def aimpointsTarget_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aimpoints-target")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.airplane")
     @js.native
     def airplane: String = js.native

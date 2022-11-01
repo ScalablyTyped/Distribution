@@ -304,6 +304,8 @@ object mod {
     
     var minTime: js.UndefOr[js.Date] = js.native
     
+    var monthAriaLabelPrefix: js.UndefOr[String] = js.native
+    
     var monthClassName: js.UndefOr[js.Function1[/* date */ js.Date, String | Null]] = js.native
     
     var monthsShown: js.UndefOr[Double] = js.native

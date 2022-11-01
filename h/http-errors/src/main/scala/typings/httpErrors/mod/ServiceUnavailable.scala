@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ServiceUnavailable ()
   extends StObject
-     with HttpError[typings.httpErrors.httpErrorsInts.`500`] {
+     with HttpError[typings.httpErrors.httpErrorsInts.`503`] {
   def this(msg: String) = this()
   
   /* CompleteClass */
@@ -24,17 +24,17 @@ open class ServiceUnavailable ()
   var name: String = js.native
   
   /* CompleteClass */
-  var status: typings.httpErrors.httpErrorsInts.`500` = js.native
+  var status: typings.httpErrors.httpErrorsInts.`503` = js.native
   
   /* CompleteClass */
-  var statusCode: typings.httpErrors.httpErrorsInts.`500` = js.native
+  var statusCode: typings.httpErrors.httpErrorsInts.`503` = js.native
 }
 object ServiceUnavailable {
   
   @JSImport("http-errors", "ServiceUnavailable")
   @js.native
-  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`500`] = js.native
+  def apply(): HttpError[typings.httpErrors.httpErrorsInts.`503`] = js.native
   @JSImport("http-errors", "ServiceUnavailable")
   @js.native
-  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`500`] = js.native
+  def apply(msg: String): HttpError[typings.httpErrors.httpErrorsInts.`503`] = js.native
 }

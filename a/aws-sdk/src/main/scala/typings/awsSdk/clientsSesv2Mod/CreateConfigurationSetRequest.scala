@@ -37,6 +37,11 @@ trait CreateConfigurationSetRequest extends StObject {
     * An object that defines the open and click tracking options for emails that you send using the configuration set.
     */
   var TrackingOptions: js.UndefOr[typings.awsSdk.clientsSesv2Mod.TrackingOptions] = js.undefined
+  
+  /**
+    * An object that defines the VDM options for emails that you send using the configuration set.
+    */
+  var VdmOptions: js.UndefOr[typings.awsSdk.clientsSesv2Mod.VdmOptions] = js.undefined
 }
 object CreateConfigurationSetRequest {
   
@@ -74,5 +79,9 @@ object CreateConfigurationSetRequest {
     inline def setTrackingOptions(value: TrackingOptions): Self = StObject.set(x, "TrackingOptions", value.asInstanceOf[js.Any])
     
     inline def setTrackingOptionsUndefined: Self = StObject.set(x, "TrackingOptions", js.undefined)
+    
+    inline def setVdmOptions(value: VdmOptions): Self = StObject.set(x, "VdmOptions", value.asInstanceOf[js.Any])
+    
+    inline def setVdmOptionsUndefined: Self = StObject.set(x, "VdmOptions", js.undefined)
   }
 }

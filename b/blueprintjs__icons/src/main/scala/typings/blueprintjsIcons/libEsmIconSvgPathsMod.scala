@@ -50,6 +50,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val AddToFolder: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.AimpointsTarget")
+    @js.native
+    val AimpointsTarget: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Airplane")
     @js.native
     val Airplane: js.Array[String] = js.native
@@ -2308,6 +2312,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.AddToFolder")
     @js.native
     val AddToFolder: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.AimpointsTarget")
+    @js.native
+    val AimpointsTarget: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Airplane")
     @js.native

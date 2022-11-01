@@ -6,14 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Submodule - visualization
+  * See https://navermaps.github.io/maps.js.ncp/docs/tutorial-visualization.html
+  */
 object visualization {
-  
-  // Sub module: visualization
-  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  
-  @JSGlobal("naver.maps.visualization")
-  @js.native
-  val ^ : js.Any = js.native
   
   @JSGlobal("naver.maps.visualization.DotMap")
   @js.native
@@ -36,29 +33,29 @@ object visualization {
   object SpectrumStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.navermaps.naver.maps.visualization.SpectrumStyle & Double] = js.native
+    def apply(value: String): js.UndefOr[typings.navermaps.naver.maps.visualization.SpectrumStyle & String] = js.native
     
-    /* 3 */ val COOL: typings.navermaps.naver.maps.visualization.SpectrumStyle.COOL & Double = js.native
+    /* "cool" */ val COOL: typings.navermaps.naver.maps.visualization.SpectrumStyle.COOL & String = js.native
     
-    /* 4 */ val GREYS: typings.navermaps.naver.maps.visualization.SpectrumStyle.GREYS & Double = js.native
+    /* "greys" */ val GREYS: typings.navermaps.naver.maps.visualization.SpectrumStyle.GREYS & String = js.native
     
-    /* 2 */ val HOT: typings.navermaps.naver.maps.visualization.SpectrumStyle.HOT & Double = js.native
+    /* "hot" */ val HOT: typings.navermaps.naver.maps.visualization.SpectrumStyle.HOT & String = js.native
     
-    /* 1 */ val HSV: typings.navermaps.naver.maps.visualization.SpectrumStyle.HSV & Double = js.native
+    /* "hsv" */ val HSV: typings.navermaps.naver.maps.visualization.SpectrumStyle.HSV & String = js.native
     
-    /* 0 */ val JET: typings.navermaps.naver.maps.visualization.SpectrumStyle.JET & Double = js.native
+    /* "jet" */ val JET: typings.navermaps.naver.maps.visualization.SpectrumStyle.JET & String = js.native
     
-    /* 10 */ val OXYGEN: typings.navermaps.naver.maps.visualization.SpectrumStyle.OXYGEN & Double = js.native
+    /* "oxygen" */ val OXYGEN: typings.navermaps.naver.maps.visualization.SpectrumStyle.OXYGEN & String = js.native
     
-    /* 9 */ val PORTLAND: typings.navermaps.naver.maps.visualization.SpectrumStyle.PORTLAND & Double = js.native
+    /* "portland" */ val PORTLAND: typings.navermaps.naver.maps.visualization.SpectrumStyle.PORTLAND & String = js.native
     
-    /* 8 */ val RAINBOW: typings.navermaps.naver.maps.visualization.SpectrumStyle.RAINBOW & Double = js.native
+    /* "rainbow" */ val RAINBOW: typings.navermaps.naver.maps.visualization.SpectrumStyle.RAINBOW & String = js.native
     
-    /* 7 */ val RdBu: typings.navermaps.naver.maps.visualization.SpectrumStyle.RdBu & Double = js.native
+    /* "RdBu" */ val RdBu: typings.navermaps.naver.maps.visualization.SpectrumStyle.RdBu & String = js.native
     
-    /* 5 */ val YIGnBu: typings.navermaps.naver.maps.visualization.SpectrumStyle.YIGnBu & Double = js.native
+    /* "YIGnBu" */ val YIGnBu: typings.navermaps.naver.maps.visualization.SpectrumStyle.YIGnBu & String = js.native
     
-    /* 6 */ val YIOrRd: typings.navermaps.naver.maps.visualization.SpectrumStyle.YIOrRd & Double = js.native
+    /* "YIOrRd" */ val YIOrRd: typings.navermaps.naver.maps.visualization.SpectrumStyle.YIOrRd & String = js.native
   }
   
   @JSGlobal("naver.maps.visualization.WeightedLocation")

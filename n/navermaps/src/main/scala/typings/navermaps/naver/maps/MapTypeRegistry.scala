@@ -4,10 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * MapTypeRegistry
+  */
 @js.native
 trait MapTypeRegistry
   extends StObject
      with KVO {
+  
+  var VENDOR: js.UndefOr[String] = js.native
   
   def getPreviousTypeId(): String = js.native
   
@@ -20,4 +25,6 @@ trait MapTypeRegistry
   def set(mapTypeId: String, mapType: MapType): Unit = js.native
   
   def setSelectedTypeId(mapTypeId: String): Unit = js.native
+  
+  var uid: js.UndefOr[String] = js.native
 }

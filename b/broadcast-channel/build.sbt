@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "broadcast-channel"
-version := "4.18.0-3549be"
+version := "4.18.1-f29f22"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/filter-noise" : "7.0.0"
+      "@pixi/filter-noise" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/filter-noise" : "7.0.0"
+      "@pixi/filter-noise" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

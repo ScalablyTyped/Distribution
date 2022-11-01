@@ -1,5 +1,6 @@
 package typings.navermaps.naver.maps
 
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ trait Panorama
   extends StObject
      with KVO {
   
-  var aroundControl: AroundControl | Null = js.native
-  
-  var controls: js.Array[KVOArray] = js.native
+  def getElement(): HTMLElement = js.native
   
   def getLocation(): PanoramaLocation = js.native
   
@@ -22,6 +21,9 @@ trait Panorama
   def getMinScale(): Double = js.native
   
   def getMinZoom(): Double = js.native
+  
+  def getOptions(): Any = js.native
+  def getOptions(key: String): Any = js.native
   
   def getPanoId(): String = js.native
   

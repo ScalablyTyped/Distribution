@@ -17,6 +17,11 @@ trait AxisLabelsFormatterContextObject extends StObject {
   var chart: Chart_
   
   /**
+    * Default formatting of date/time labels.
+    */
+  var dateTimeLabelFormat: js.UndefOr[String] = js.undefined
+  
+  /**
     * Whether the label belongs to the first tick on the axis.
     */
   var isFirst: Boolean
@@ -39,7 +44,7 @@ trait AxisLabelsFormatterContextObject extends StObject {
     * language-specific comma separators, thousands separators and numeric
     * symbols like `k` or `M`.
     */
-  var text: String
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * The Tick instance.
@@ -59,11 +64,10 @@ object AxisLabelsFormatterContextObject {
     isFirst: Boolean,
     isLast: Boolean,
     pos: Double,
-    text: String,
     tick: Tick,
     value: Double | String
   ): AxisLabelsFormatterContextObject = {
-    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], isFirst = isFirst.asInstanceOf[js.Any], isLast = isLast.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], isFirst = isFirst.asInstanceOf[js.Any], isLast = isLast.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisLabelsFormatterContextObject]
   }
   
@@ -73,6 +77,10 @@ object AxisLabelsFormatterContextObject {
     
     inline def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
+    inline def setDateTimeLabelFormat(value: String): Self = StObject.set(x, "dateTimeLabelFormat", value.asInstanceOf[js.Any])
+    
+    inline def setDateTimeLabelFormatUndefined: Self = StObject.set(x, "dateTimeLabelFormat", js.undefined)
+    
     inline def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
     
     inline def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
@@ -80,6 +88,8 @@ object AxisLabelsFormatterContextObject {
     inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     inline def setTick(value: Tick): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     

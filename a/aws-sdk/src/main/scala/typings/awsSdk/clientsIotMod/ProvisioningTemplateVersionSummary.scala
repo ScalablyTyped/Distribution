@@ -17,7 +17,7 @@ trait ProvisioningTemplateVersionSummary extends StObject {
   var isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined
   
   /**
-    * The ID of the fleet privisioning template version.
+    * The ID of the fleet provisioning template version.
     */
   var versionId: js.UndefOr[TemplateVersionId] = js.undefined
 }

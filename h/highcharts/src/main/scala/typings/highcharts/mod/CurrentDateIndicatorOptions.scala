@@ -34,7 +34,7 @@ trait CurrentDateIndicatorOptions extends StObject {
     * properties are `click`, `mouseover`, `mouseout`, `mousemove`.
     */
   var events: js.UndefOr[
-    ColorAxisCurrentDateIndicatorEventsOptions | NavigatorXAxisCurrentDateIndicatorEventsOptions | XAxisCurrentDateIndicatorEventsOptions | ZAxisCurrentDateIndicatorEventsOptions
+    ChartParallelAxesCurrentDateIndicatorEventsOptions | ColorAxisCurrentDateIndicatorEventsOptions | NavigatorXAxisCurrentDateIndicatorEventsOptions | NavigatorYAxisCurrentDateIndicatorEventsOptions | XAxisCurrentDateIndicatorEventsOptions | YAxisCurrentDateIndicatorEventsOptions | ZAxisCurrentDateIndicatorEventsOptions
   ] = js.undefined
   
   /**
@@ -46,8 +46,13 @@ trait CurrentDateIndicatorOptions extends StObject {
     * (Gantt) Text labels for the plot bands
     */
   var label: js.UndefOr[
-    ColorAxisCurrentDateIndicatorLabelOptions | NavigatorXAxisCurrentDateIndicatorLabelOptions | XAxisCurrentDateIndicatorLabelOptions | ZAxisCurrentDateIndicatorLabelOptions
+    ChartParallelAxesCurrentDateIndicatorLabelOptions | ColorAxisCurrentDateIndicatorLabelOptions | NavigatorXAxisCurrentDateIndicatorLabelOptions | NavigatorYAxisCurrentDateIndicatorLabelOptions | XAxisCurrentDateIndicatorLabelOptions | YAxisCurrentDateIndicatorLabelOptions | ZAxisCurrentDateIndicatorLabelOptions
   ] = js.undefined
+  
+  /**
+    * (Gantt) The position of the line in axis units.
+    */
+  var value: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) The width or thickness of the plot line.
@@ -85,7 +90,7 @@ object CurrentDateIndicatorOptions {
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     inline def setEvents(
-      value: ColorAxisCurrentDateIndicatorEventsOptions | NavigatorXAxisCurrentDateIndicatorEventsOptions | XAxisCurrentDateIndicatorEventsOptions | ZAxisCurrentDateIndicatorEventsOptions
+      value: ChartParallelAxesCurrentDateIndicatorEventsOptions | ColorAxisCurrentDateIndicatorEventsOptions | NavigatorXAxisCurrentDateIndicatorEventsOptions | NavigatorYAxisCurrentDateIndicatorEventsOptions | XAxisCurrentDateIndicatorEventsOptions | YAxisCurrentDateIndicatorEventsOptions | ZAxisCurrentDateIndicatorEventsOptions
     ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -95,10 +100,14 @@ object CurrentDateIndicatorOptions {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setLabel(
-      value: ColorAxisCurrentDateIndicatorLabelOptions | NavigatorXAxisCurrentDateIndicatorLabelOptions | XAxisCurrentDateIndicatorLabelOptions | ZAxisCurrentDateIndicatorLabelOptions
+      value: ChartParallelAxesCurrentDateIndicatorLabelOptions | ColorAxisCurrentDateIndicatorLabelOptions | NavigatorXAxisCurrentDateIndicatorLabelOptions | NavigatorYAxisCurrentDateIndicatorLabelOptions | XAxisCurrentDateIndicatorLabelOptions | YAxisCurrentDateIndicatorLabelOptions | ZAxisCurrentDateIndicatorLabelOptions
     ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

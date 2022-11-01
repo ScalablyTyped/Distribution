@@ -14,5 +14,5 @@ object distClientComponentsNotFoundMod {
   @js.native
   val NOT_FOUND_ERROR_CODE: /* "NEXT_NOT_FOUND" */ String = js.native
   
-  inline def notFound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")().asInstanceOf[Unit]
+  inline def notFound(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")().asInstanceOf[scala.Nothing]
 }

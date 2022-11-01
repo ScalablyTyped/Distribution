@@ -5,6 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Ellipse
+  */
 @JSGlobal("naver.maps.Ellipse")
 @js.native
 open class Ellipse ()

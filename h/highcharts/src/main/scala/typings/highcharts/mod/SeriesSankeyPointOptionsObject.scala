@@ -29,7 +29,7 @@ trait SeriesSankeyPointOptionsObject extends StObject {
     * (Highcharts, Gantt) A specific color index to use for the point, so its
     * graphic representations are given the class name `highcharts-color-{n}`.
     * In styled mode this will change the color of the graphic. In non-styled
-    * mode, the color by is set by the `fill` attribute, so the change in class
+    * mode, the color is set by the `fill` attribute, so the change in class
     * name won't have a visual effect by default.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
@@ -58,6 +58,18 @@ trait SeriesSankeyPointOptionsObject extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highcharts) Point specific options for the draggable-points module.
+    * Overrides options on `series.dragDrop`.
+    */
+  var dragDrop: js.UndefOr[SeriesLineDataDragDropOptions] = js.undefined
+  
+  /**
+    * (Highcharts) The `id` of a series in the drilldown.series array to use
+    * for a drilldown for this point.
+    */
+  var drilldown: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Gantt) The individual point events.
     */
   var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
@@ -80,6 +92,12 @@ trait SeriesSankeyPointOptionsObject extends StObject {
     * `labelrank` will be drawn.
     */
   var labelrank: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Options for the point markers of line-like
+    * series.
+    */
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts) The name of the point as shown in the legend, tooltip,
@@ -107,6 +125,17 @@ trait SeriesSankeyPointOptionsObject extends StObject {
     * (Highcharts) The weight of the link.
     */
   var weight: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The x value of the point. For datetime axes, the
+    * X value is the timestamp in milliseconds since 1970.
+    */
+  var x: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The y value of the point.
+    */
+  var y: js.UndefOr[Double | Null] = js.undefined
 }
 object SeriesSankeyPointOptionsObject {
   
@@ -153,6 +182,14 @@ object SeriesSankeyPointOptionsObject {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setDragDrop(value: SeriesLineDataDragDropOptions): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
+    
+    inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
+    
+    inline def setDrilldown(value: String): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
+    
+    inline def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
+    
     inline def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -168,6 +205,10 @@ object SeriesSankeyPointOptionsObject {
     inline def setLabelrank(value: Double): Self = StObject.set(x, "labelrank", value.asInstanceOf[js.Any])
     
     inline def setLabelrankUndefined: Self = StObject.set(x, "labelrank", js.undefined)
+    
+    inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -190,5 +231,15 @@ object SeriesSankeyPointOptionsObject {
     inline def setWeightNull: Self = StObject.set(x, "weight", null)
     
     inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYNull: Self = StObject.set(x, "y", null)
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

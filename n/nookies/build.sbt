@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nookies"
-version := "2.5.2-ff0846"
+version := "2.5.2-cc00ad"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,10 +12,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-faf4dd",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-ed8fc0",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20220928Z-3598f3",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "next" % "13.0.0-543477",
-  "org.scalablytyped" %%% "next__env" % "13.0.0-82ab96",
+  "org.scalablytyped" %%% "next" % "13.0.1-090f7e",
+  "org.scalablytyped" %%% "next__env" % "13.0.1-76b77c",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "postcss" % "8.4.18-a78a45",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",

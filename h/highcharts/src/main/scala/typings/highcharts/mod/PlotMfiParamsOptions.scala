@@ -11,6 +11,11 @@ trait PlotMfiParamsOptions extends StObject {
     */
   var decimals: js.UndefOr[Double] = js.undefined
   
+  /**
+    * (Highstock) The point index which indicator calculations will base. For
+    * example using OHLC data, index=2 means the indicator will be calculated
+    * using Low values.
+    */
   var index: js.UndefOr[String] = js.undefined
   
   /**

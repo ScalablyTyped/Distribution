@@ -177,6 +177,7 @@ import typings.awsSdk.clientsApprunnerMod._ImageRepositoryType
 import typings.awsSdk.clientsApprunnerMod._ObservabilityConfigurationStatus
 import typings.awsSdk.clientsApprunnerMod._Runtime
 import typings.awsSdk.clientsApprunnerMod._VpcConnectorStatus
+import typings.awsSdk.clientsApprunnerMod._VpcIngressConnectionStatus
 import typings.awsSdk.clientsAppstreamMod._AppVisibility
 import typings.awsSdk.clientsAppstreamMod._ApplicationAttribute
 import typings.awsSdk.clientsAppstreamMod._CertificateBasedAuthStatus
@@ -1010,6 +1011,7 @@ import typings.awsSdk.clientsEc2Mod._AcceleratorType
 import typings.awsSdk.clientsEc2Mod._AccountAttributeName
 import typings.awsSdk.clientsEc2Mod._ActivityStatus
 import typings.awsSdk.clientsEc2Mod._AddressFamily
+import typings.awsSdk.clientsEc2Mod._AddressTransferStatus
 import typings.awsSdk.clientsEc2Mod._Affinity
 import typings.awsSdk.clientsEc2Mod._AllocationState
 import typings.awsSdk.clientsEc2Mod._AllocationStrategy
@@ -3270,7 +3272,6 @@ import typings.awsSdk.clientsResiliencehubMod._TemplateFormat
 import typings.awsSdk.clientsResiliencehubMod._TestRisk
 import typings.awsSdk.clientsResourcegroupsMod._GroupConfigurationStatus
 import typings.awsSdk.clientsResourcegroupsMod._GroupFilterName
-import typings.awsSdk.clientsResourcegroupsMod._QueryErrorCode
 import typings.awsSdk.clientsResourcegroupsMod._QueryType
 import typings.awsSdk.clientsResourcegroupstaggingapiMod._GroupByAttribute
 import typings.awsSdk.clientsResourcegroupstaggingapiMod._TargetIdType
@@ -3664,7 +3665,13 @@ import typings.awsSdk.clientsSesv2Mod._ContactListImportAction
 import typings.awsSdk.clientsSesv2Mod._DkimSigningAttributesOrigin
 import typings.awsSdk.clientsSesv2Mod._DkimSigningKeyLength
 import typings.awsSdk.clientsSesv2Mod._ImportDestinationType
+import typings.awsSdk.clientsSesv2Mod._ListRecommendationsFilterKey
 import typings.awsSdk.clientsSesv2Mod._MailType
+import typings.awsSdk.clientsSesv2Mod._MetricDimensionName
+import typings.awsSdk.clientsSesv2Mod._QueryErrorCode
+import typings.awsSdk.clientsSesv2Mod._RecommendationImpact
+import typings.awsSdk.clientsSesv2Mod._RecommendationStatus
+import typings.awsSdk.clientsSesv2Mod._RecommendationType
 import typings.awsSdk.clientsSesv2Mod._ScalingMode
 import typings.awsSdk.clientsSesv2Mod._SubscriptionStatus
 import typings.awsSdk.clientsSesv2Mod._SuppressionListImportAction
@@ -6058,6 +6065,7 @@ object awsSdkStrings {
        with _FreeTrialInfoErrorCode
        with _GatewayResponseType
        with _PrivateConnectionProvisioningFailureCause
+       with _QueryErrorCode
        with _ResolverQueryLogConfigAssociationError
        with _ScanStatusReason
        with _StreamingImageStatusCode
@@ -9514,6 +9522,7 @@ object awsSdkStrings {
        with _TransitGatewayConnectPeerAssociationState
        with _TransitGatewayRegistrationState
        with _VolumeLifecycle
+       with _VpcIngressConnectionStatus
        with _VpcLinkStatus
        with typings.awsSdk.clientsApigatewayMod._VpcLinkStatus
        with _WorkgroupStatus
@@ -9978,7 +9987,6 @@ object awsSdkStrings {
   sealed trait AWSColonColonEC2ColonColonLaunchTemplate
     extends StObject
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
-  inline def AWSColonColonEC2ColonColonLaunchTemplate: AWSColonColonEC2ColonColonLaunchTemplate = "AWS::EC2::LaunchTemplate".asInstanceOf[AWSColonColonEC2ColonColonLaunchTemplate]
   
   @js.native
   sealed trait AWSColonColonEC2ColonColonNatGateway
@@ -13175,7 +13183,6 @@ object awsSdkStrings {
     extends StObject
        with _Unit
        with typings.awsSdk.clientsEmrMod._Unit
-  inline def BITS: BITS = "BITS".asInstanceOf[BITS]
   
   @js.native
   sealed trait BITS_PER_SECOND
@@ -15460,6 +15467,7 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsPinpointemailMod._EventType
        with typings.awsSdk.clientsSesv2Mod._EventType
+       with typings.awsSdk.clientsSesv2Mod._Metric
   inline def CLICK: CLICK = "CLICK".asInstanceOf[CLICK]
   
   @js.native
@@ -15574,13 +15582,13 @@ object awsSdkStrings {
   @js.native
   sealed trait CLOUDFORMATION_STACK_INACTIVE
     extends StObject
-       with _QueryErrorCode
+       with typings.awsSdk.clientsResourcegroupsMod._QueryErrorCode
   inline def CLOUDFORMATION_STACK_INACTIVE: CLOUDFORMATION_STACK_INACTIVE = "CLOUDFORMATION_STACK_INACTIVE".asInstanceOf[CLOUDFORMATION_STACK_INACTIVE]
   
   @js.native
   sealed trait CLOUDFORMATION_STACK_NOT_EXISTING
     extends StObject
-       with _QueryErrorCode
+       with typings.awsSdk.clientsResourcegroupsMod._QueryErrorCode
   inline def CLOUDFORMATION_STACK_NOT_EXISTING: CLOUDFORMATION_STACK_NOT_EXISTING = "CLOUDFORMATION_STACK_NOT_EXISTING".asInstanceOf[CLOUDFORMATION_STACK_NOT_EXISTING]
   
   @js.native
@@ -16121,6 +16129,7 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsPinpointemailMod._EventType
        with typings.awsSdk.clientsSesv2Mod._EventType
+       with typings.awsSdk.clientsSesv2Mod._Metric
        with _SuppressionListReason
   inline def COMPLAINT: COMPLAINT = "COMPLAINT".asInstanceOf[COMPLAINT]
   
@@ -16324,7 +16333,6 @@ object awsSdkStrings {
   sealed trait COMPLETE_VOLUME_MAPPING
     extends StObject
        with _RecoveryInstanceDataReplicationInitiationStepName
-  inline def COMPLETE_VOLUME_MAPPING: COMPLETE_VOLUME_MAPPING = "COMPLETE_VOLUME_MAPPING".asInstanceOf[COMPLETE_VOLUME_MAPPING]
   
   @js.native
   sealed trait COMPLETING
@@ -16475,6 +16483,12 @@ object awsSdkStrings {
        with _AppLaunchStatus
        with _AppReplicationStatus
   inline def CONFIGURATION_IN_PROGRESS: CONFIGURATION_IN_PROGRESS = "CONFIGURATION_IN_PROGRESS".asInstanceOf[CONFIGURATION_IN_PROGRESS]
+  
+  @js.native
+  sealed trait CONFIGURATION_SET
+    extends StObject
+       with _MetricDimensionName
+  inline def CONFIGURATION_SET: CONFIGURATION_SET = "CONFIGURATION_SET".asInstanceOf[CONFIGURATION_SET]
   
   @js.native
   sealed trait CONFIGURATION_SETS
@@ -17121,7 +17135,6 @@ object awsSdkStrings {
   sealed trait COPY_JOB_FAILED
     extends StObject
        with _BackupVaultEvent
-  inline def COPY_JOB_FAILED: COPY_JOB_FAILED = "COPY_JOB_FAILED".asInstanceOf[COPY_JOB_FAILED]
   
   @js.native
   sealed trait COPY_JOB_STARTED
@@ -20938,6 +20951,7 @@ object awsSdkStrings {
        with _VirtualNodeStatusCode
        with _VirtualRouterStatusCode
        with _VirtualServiceStatusCode
+       with _VpcIngressConnectionStatus
   
   @js.native
   sealed trait DELETED_IN_TARGET
@@ -21380,14 +21394,32 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsPinpointemailMod._EventType
        with typings.awsSdk.clientsSesv2Mod._EventType
+       with typings.awsSdk.clientsSesv2Mod._Metric
        with typings.awsSdk.clientsPinpointMod._Mode
   inline def DELIVERY: DELIVERY = "DELIVERY".asInstanceOf[DELIVERY]
+  
+  @js.native
+  sealed trait DELIVERY_CLICK
+    extends StObject
+       with typings.awsSdk.clientsSesv2Mod._Metric
+  inline def DELIVERY_CLICK: DELIVERY_CLICK = "DELIVERY_CLICK".asInstanceOf[DELIVERY_CLICK]
+  
+  @js.native
+  sealed trait DELIVERY_COMPLAINT
+    extends StObject
+       with typings.awsSdk.clientsSesv2Mod._Metric
+  inline def DELIVERY_COMPLAINT: DELIVERY_COMPLAINT = "DELIVERY_COMPLAINT".asInstanceOf[DELIVERY_COMPLAINT]
   
   @js.native
   sealed trait DELIVERY_DELAY
     extends StObject
        with typings.awsSdk.clientsSesv2Mod._EventType
   inline def DELIVERY_DELAY: DELIVERY_DELAY = "DELIVERY_DELAY".asInstanceOf[DELIVERY_DELAY]
+  
+  @js.native
+  sealed trait DELIVERY_OPEN
+    extends StObject
+       with typings.awsSdk.clientsSesv2Mod._Metric
   
   @js.native
   sealed trait DELTA_LAUNCH_FAILED
@@ -22187,6 +22219,7 @@ object awsSdkStrings {
        with _FeatureActivationsInputPrepareScheduleActions
        with typings.awsSdk.clientsPiMod._FeatureStatus
        with typings.awsSdk.clientsSagemakerMod._FeatureStatus
+       with typings.awsSdk.clientsSesv2Mod._FeatureStatus
        with _FileSourceConvert608To708
        with _FirewallFailOpenStatus
        with _ForwardingConfigState
@@ -22740,6 +22773,12 @@ object awsSdkStrings {
   inline def DK: DK = "DK".asInstanceOf[DK]
   
   @js.native
+  sealed trait DKIM
+    extends StObject
+       with _RecommendationType
+  inline def DKIM: DKIM = "DKIM".asInstanceOf[DKIM]
+  
+  @js.native
   sealed trait DM
     extends StObject
        with typings.awsSdk.clientsWafv2Mod._CountryCode
@@ -22748,6 +22787,12 @@ object awsSdkStrings {
        with typings.awsSdk.clientsWafregionalMod._GeoMatchConstraintValue
        with _PhoneNumberCountryCode
   inline def DM: DM = "DM".asInstanceOf[DM]
+  
+  @js.native
+  sealed trait DMARC
+    extends StObject
+       with _RecommendationType
+  inline def DMARC: DMARC = "DMARC".asInstanceOf[DMARC]
   
   @js.native
   sealed trait DML
@@ -25349,6 +25394,12 @@ object awsSdkStrings {
   inline def EMAIL_HEADER: EMAIL_HEADER = "EMAIL_HEADER".asInstanceOf[EMAIL_HEADER]
   
   @js.native
+  sealed trait EMAIL_IDENTITY
+    extends StObject
+       with _MetricDimensionName
+  inline def EMAIL_IDENTITY: EMAIL_IDENTITY = "EMAIL_IDENTITY".asInstanceOf[EMAIL_IDENTITY]
+  
+  @js.native
   sealed trait EMAIL_PROTECTION
     extends StObject
        with _ExtendedKeyUsageName
@@ -25528,6 +25579,7 @@ object awsSdkStrings {
        with _FeatureActivationsInputPrepareScheduleActions
        with typings.awsSdk.clientsPiMod._FeatureStatus
        with typings.awsSdk.clientsSagemakerMod._FeatureStatus
+       with typings.awsSdk.clientsSesv2Mod._FeatureStatus
        with _FirewallFailOpenStatus
        with _ForwardingConfigState
        with _GettablePolicyStateValues
@@ -28070,11 +28122,13 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsFinspaceMod._EnvironmentStatus
        with _IpAddressStatus
+       with _VpcIngressConnectionStatus
   
   @js.native
   sealed trait FAILED_DELETION
     extends StObject
        with typings.awsSdk.clientsFinspaceMod._EnvironmentStatus
+       with _VpcIngressConnectionStatus
   inline def FAILED_DELETION: FAILED_DELETION = "FAILED_DELETION".asInstanceOf[FAILED_DELETION]
   
   @js.native
@@ -28247,6 +28301,12 @@ object awsSdkStrings {
     extends StObject
        with _DataReplicationErrorString
        with typings.awsSdk.clientsDrsMod._DataReplicationErrorString
+  
+  @js.native
+  sealed trait FAILED_UPDATE
+    extends StObject
+       with _VpcIngressConnectionStatus
+  inline def FAILED_UPDATE: FAILED_UPDATE = "FAILED_UPDATE".asInstanceOf[FAILED_UPDATE]
   
   @js.native
   sealed trait FAILED_WITHDRAW
@@ -28802,6 +28862,7 @@ object awsSdkStrings {
        with _DvbSubDestinationTeletextGridControl
        with _H264SubGopLength
        with _Mpeg2SubGopLength
+       with _RecommendationStatus
        with _Scte35InputMode
   inline def FIXED: FIXED = "FIXED".asInstanceOf[FIXED]
   
@@ -31175,7 +31236,6 @@ object awsSdkStrings {
        with _GeoMatchConstraintValue
        with typings.awsSdk.clientsWafregionalMod._GeoMatchConstraintValue
        with _PhoneNumberCountryCode
-  inline def GW: GW = "GW".asInstanceOf[GW]
   
   @js.native
   sealed trait GWYNETH
@@ -32184,6 +32244,7 @@ object awsSdkStrings {
        with _PackageSortBy
        with _PatchComplianceLevel
        with _QualityFilter
+       with _RecommendationImpact
        with _RelevanceLevel
        with _RepositorySortBy
        with _Risk
@@ -33370,6 +33431,12 @@ object awsSdkStrings {
   inline def IMMUTABLE: IMMUTABLE = "IMMUTABLE".asInstanceOf[IMMUTABLE]
   
   @js.native
+  sealed trait IMPACT
+    extends StObject
+       with _ListRecommendationsFilterKey
+  inline def IMPACT: IMPACT = "IMPACT".asInstanceOf[IMPACT]
+  
+  @js.native
   sealed trait IMPACTED_ACCOUNT
     extends StObject
        with _SsmTargetAccount
@@ -33501,7 +33568,6 @@ object awsSdkStrings {
        with typings.awsSdk.clientsDiscoveryMod._ImportStatus
        with typings.awsSdk.clientsCloudformationMod._ResourceStatus
        with _StackStatus
-  inline def IMPORT_IN_PROGRESS: IMPORT_IN_PROGRESS = "IMPORT_IN_PROGRESS".asInstanceOf[IMPORT_IN_PROGRESS]
   
   @js.native
   sealed trait IMPORT_LABELS
@@ -34191,7 +34257,6 @@ object awsSdkStrings {
   sealed trait INSTALL_ERROR
     extends StObject
        with _DeviceReportedStatus
-  inline def INSTALL_ERROR: INSTALL_ERROR = "INSTALL_ERROR".asInstanceOf[INSTALL_ERROR]
   
   @js.native
   sealed trait INSTALL_IN_PROGRESS
@@ -34563,6 +34628,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsIotsitewiseMod._ErrorCode
        with _InstanceOnboardingJobFailureCode
        with _MonitorErrorCode
+       with _QueryErrorCode
        with _ServiceActionAssociationErrorCode
        with _TemplateErrorType
   inline def INTERNAL_FAILURE: INTERNAL_FAILURE = "INTERNAL_FAILURE".asInstanceOf[INTERNAL_FAILURE]
@@ -34943,7 +35009,6 @@ object awsSdkStrings {
   sealed trait INVALID_ROWS_COMPLIANCE
     extends StObject
        with _DataQualityMetricType
-  inline def INVALID_ROWS_COMPLIANCE: INVALID_ROWS_COMPLIANCE = "INVALID_ROWS_COMPLIANCE".asInstanceOf[INVALID_ROWS_COMPLIANCE]
   
   @js.native
   sealed trait INVALID_SENDING_POOL_NAME
@@ -35528,6 +35593,12 @@ object awsSdkStrings {
     extends StObject
        with _ComputeAssetState
   inline def ISOLATED: ISOLATED = "ISOLATED".asInstanceOf[ISOLATED]
+  
+  @js.native
+  sealed trait ISP
+    extends StObject
+       with _MetricDimensionName
+  inline def ISP: ISP = "ISP".asInstanceOf[ISP]
   
   @js.native
   sealed trait ISSUED
@@ -39141,6 +39212,7 @@ object awsSdkStrings {
        with _ObjectiveSensitivity
        with _PatchComplianceLevel
        with _QualityFilter
+       with _RecommendationImpact
        with _RelevanceLevel
        with _ScheduledAutoTuneSeverityType
        with typings.awsSdk.clientsEsMod._ScheduledAutoTuneSeverityType
@@ -41646,7 +41718,6 @@ object awsSdkStrings {
   sealed trait MP4
     extends StObject
        with _ContainerType
-  inline def MP4: MP4 = "MP4".asInstanceOf[MP4]
   
   @js.native
   sealed trait MP4_FILE
@@ -45755,8 +45826,10 @@ object awsSdkStrings {
        with typings.awsSdk.clientsSwfMod._ExecutionStatus
        with _HandshakeState
        with _IncidentRecordStatus
+       with typings.awsSdk.clientsSesv2Mod._Metric
        with _NetworkSecurityType
        with _PullRequestStatusEnum
+       with _RecommendationStatus
        with _TunnelStatus
   inline def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
   
@@ -47709,6 +47782,12 @@ object awsSdkStrings {
   inline def PENDING_CONFIGURATION: PENDING_CONFIGURATION = "PENDING_CONFIGURATION".asInstanceOf[PENDING_CONFIGURATION]
   
   @js.native
+  sealed trait PENDING_CREATION
+    extends StObject
+       with _VpcIngressConnectionStatus
+  inline def PENDING_CREATION: PENDING_CREATION = "PENDING_CREATION".asInstanceOf[PENDING_CREATION]
+  
+  @js.native
   sealed trait PENDING_DELETE
     extends StObject
        with _GrantStatus
@@ -47726,6 +47805,7 @@ object awsSdkStrings {
        with _EventDataStoreStatus
        with typings.awsSdk.clientsRoute53recoverycontrolconfigMod._Status
        with _TrafficDistributionGroupStatus
+       with _VpcIngressConnectionStatus
   inline def PENDING_DELETION: PENDING_DELETION = "PENDING_DELETION".asInstanceOf[PENDING_DELETION]
   
   @js.native
@@ -47893,6 +47973,7 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsOpensearchMod._DeploymentStatus
        with typings.awsSdk.clientsEsMod._DeploymentStatus
+       with _VpcIngressConnectionStatus
   
   @js.native
   sealed trait PENDING_VALIDATION
@@ -47972,6 +48053,12 @@ object awsSdkStrings {
     extends StObject
        with _RetentionAction
   inline def PERMANENTLY_DELETE: PERMANENTLY_DELETE = "PERMANENTLY_DELETE".asInstanceOf[PERMANENTLY_DELETE]
+  
+  @js.native
+  sealed trait PERMANENT_BOUNCE
+    extends StObject
+       with typings.awsSdk.clientsSesv2Mod._Metric
+  inline def PERMANENT_BOUNCE: PERMANENT_BOUNCE = "PERMANENT_BOUNCE".asInstanceOf[PERMANENT_BOUNCE]
   
   @js.native
   sealed trait PERMANENT_FAILURE
@@ -52368,6 +52455,7 @@ object awsSdkStrings {
   sealed trait RESOURCE_ARN
     extends StObject
        with _FieldNameString
+       with _ListRecommendationsFilterKey
   inline def RESOURCE_ARN: RESOURCE_ARN = "RESOURCE_ARN".asInstanceOf[RESOURCE_ARN]
   
   @js.native
@@ -56211,6 +56299,7 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsPinpointemailMod._EventType
        with typings.awsSdk.clientsSesv2Mod._EventType
+       with typings.awsSdk.clientsSesv2Mod._Metric
        with _SmoothGroupStreamManifestBehavior
   inline def SEND: SEND = "SEND".asInstanceOf[SEND]
   
@@ -57889,6 +57978,7 @@ object awsSdkStrings {
   sealed trait SPF
     extends StObject
        with _RRType
+       with _RecommendationType
   inline def SPF: SPF = "SPF".asInstanceOf[SPF]
   
   @js.native
@@ -58691,6 +58781,7 @@ object awsSdkStrings {
        with _DeviceIdentifierFilterKeys
        with _ImportTaskFilterName
        with _ListEdgePackagingJobsSortBy
+       with _ListRecommendationsFilterKey
        with _NetworkResourceFilterKeys
        with _OperationFilterName
        with _OrderFilterKeys
@@ -62812,7 +62903,6 @@ object awsSdkStrings {
     extends StObject
        with _MinimumProtocolVersion
        with _SslProtocol
-  inline def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
   
   @js.native
   sealed trait TLSv1Dot1
@@ -63211,6 +63301,12 @@ object awsSdkStrings {
   inline def TRANSFORM_TYPE: TRANSFORM_TYPE = "TRANSFORM_TYPE".asInstanceOf[TRANSFORM_TYPE]
   
   @js.native
+  sealed trait TRANSIENT_BOUNCE
+    extends StObject
+       with typings.awsSdk.clientsSesv2Mod._Metric
+  inline def TRANSIENT_BOUNCE: TRANSIENT_BOUNCE = "TRANSIENT_BOUNCE".asInstanceOf[TRANSIENT_BOUNCE]
+  
+  @js.native
   sealed trait TRANSIENT_FAILURE
     extends StObject
        with _BulkEmailStatus
@@ -63484,6 +63580,7 @@ object awsSdkStrings {
   @js.native
   sealed trait TYPE
     extends StObject
+       with _ListRecommendationsFilterKey
        with _NamespaceFilterName
        with _OperationFilterName
   inline def TYPE: TYPE = "TYPE".asInstanceOf[TYPE]
@@ -66901,6 +66998,10 @@ object awsSdkStrings {
   inline def VCPU: VCPU = "VCPU".asInstanceOf[VCPU]
   
   @js.native
+  sealed trait VDM extends StObject
+  inline def VDM: VDM = "VDM".asInstanceOf[VDM]
+  
+  @js.native
   sealed trait VE
     extends StObject
        with typings.awsSdk.clientsWafv2Mod._CountryCode
@@ -69251,6 +69352,7 @@ object awsSdkStrings {
   @js.native
   sealed trait accepted__
     extends StObject
+       with _AddressTransferStatus
        with _DirectConnectGatewayAssociationProposalState
   inline def accepted__ : accepted__ = "accepted".asInstanceOf[accepted__]
   
@@ -73162,6 +73264,7 @@ object awsSdkStrings {
   @js.native
   sealed trait disabled__
     extends StObject
+       with _AddressTransferStatus
        with _AquaConfigurationStatus
        with _AquaStatus
        with _AutomaticFailoverStatus
@@ -74611,7 +74714,6 @@ object awsSdkStrings {
   
   @js.native
   sealed trait functionUpdated extends StObject
-  inline def functionUpdated: functionUpdated = "functionUpdated".asInstanceOf[functionUpdated]
   
   @js.native
   sealed trait functionUpdatedV2 extends StObject
@@ -78545,7 +78647,6 @@ object awsSdkStrings {
   sealed trait `match-viewer`
     extends StObject
        with _OriginProtocolPolicy
-  inline def `match-viewer`: `match-viewer` = "match-viewer".asInstanceOf[`match-viewer`]
   
   @js.native
   sealed trait `matching-event-types`
@@ -80064,7 +80165,6 @@ object awsSdkStrings {
   sealed trait mongodb_cr
     extends StObject
        with _AuthMechanismValue
-  inline def mongodb_cr: mongodb_cr = "mongodb_cr".asInstanceOf[mongodb_cr]
   
   @js.native
   sealed trait `monitoring-master`
@@ -81228,6 +81328,7 @@ object awsSdkStrings {
   @js.native
   sealed trait pending__
     extends StObject
+       with _AddressTransferStatus
        with _AllocationState
        with _BGPPeerState
        with _BundleTaskState

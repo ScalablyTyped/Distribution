@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModifyIpamResourceCidrResult extends StObject {
   
+  /**
+    * The CIDR of the resource.
+    */
   var IpamResourceCidr: js.UndefOr[typings.awsSdk.clientsEc2Mod.IpamResourceCidr] = js.undefined
 }
 object ModifyIpamResourceCidrResult {

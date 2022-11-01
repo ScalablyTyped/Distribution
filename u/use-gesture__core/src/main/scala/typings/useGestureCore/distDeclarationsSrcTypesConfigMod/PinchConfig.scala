@@ -29,6 +29,11 @@ trait PinchConfig
     */
   var modifierKey: js.UndefOr[ModifierKey] = js.undefined
   
+  /**
+    * Whether wheel should trigger a pinch at all.
+    */
+  var pinchOnWheel: js.UndefOr[Boolean] = js.undefined
+  
   var pointer: js.UndefOr[Touch] = js.undefined
   
   /**
@@ -64,6 +69,10 @@ object PinchConfig {
     inline def setModifierKeyNull: Self = StObject.set(x, "modifierKey", null)
     
     inline def setModifierKeyUndefined: Self = StObject.set(x, "modifierKey", js.undefined)
+    
+    inline def setPinchOnWheel(value: Boolean): Self = StObject.set(x, "pinchOnWheel", value.asInstanceOf[js.Any])
+    
+    inline def setPinchOnWheelUndefined: Self = StObject.set(x, "pinchOnWheel", js.undefined)
     
     inline def setPointer(value: Touch): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     

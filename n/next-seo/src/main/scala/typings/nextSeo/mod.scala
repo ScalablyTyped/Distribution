@@ -27,7 +27,8 @@ import typings.nextSeo.libJsonldSoftwareAppMod.SoftwareAppJsonLdProps
 import typings.nextSeo.libJsonldVideoGameMod.VideoGameJsonLdProps
 import typings.nextSeo.libJsonldVideoMod.VideoJsonLdProps
 import typings.nextSeo.libJsonldWebPageMod.WebPageJsonLdProps
-import typings.nextSeo.libMetaDefaultSEOMod.default
+import typings.nextSeo.libTypesMod.DefaultSeoProps
+import typings.nextSeo.libTypesMod.NextSeoProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,9 +56,7 @@ object mod {
   
   inline def DatasetJsonLd(param0: DatasetJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DatasetJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("next-seo", "DefaultSeo")
-  @js.native
-  open class DefaultSeo () extends default
+  inline def DefaultSeo(param0: DefaultSeoProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultSeo")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def EventJsonLd(param0: EventJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("EventJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -75,10 +74,7 @@ object mod {
   
   inline def NewsArticleJsonLd(param0: NewsArticleJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NewsArticleJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("next-seo", "NextSeo")
-  @js.native
-  open class NextSeo ()
-    extends typings.nextSeo.libMetaNextSEOMod.default
+  inline def NextSeo(param0: NextSeoProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NextSeo")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def OrganizationJsonLd(param0: OrganizationJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("OrganizationJsonLd")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   

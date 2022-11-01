@@ -4,24 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object SymbolStyle {
+/**
+  * SymbolStyle
+  */
+@JSGlobal("naver.maps.SymbolStyle")
+@js.native
+object SymbolStyle extends StObject {
   
-  @JSGlobal("naver.maps.SymbolStyle")
-  @js.native
-  val ^ : js.Any = js.native
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[typings.navermaps.naver.maps.SymbolStyle & String] = js.native
   
-  @JSGlobal("naver.maps.SymbolStyle.CIRCLE")
-  @js.native
-  def CIRCLE: String = js.native
-  inline def CIRCLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCLE")(x.asInstanceOf[js.Any])
+  /* "circle" */ val CIRCLE: typings.navermaps.naver.maps.SymbolStyle.CIRCLE & String = js.native
   
-  @JSGlobal("naver.maps.SymbolStyle.CLOSED_PATH")
-  @js.native
-  def CLOSED_PATH: String = js.native
-  inline def CLOSED_PATH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_PATH")(x.asInstanceOf[js.Any])
+  /* "closedPath" */ val CLOSED_PATH: typings.navermaps.naver.maps.SymbolStyle.CLOSED_PATH & String = js.native
   
-  @JSGlobal("naver.maps.SymbolStyle.PATH")
-  @js.native
-  def PATH: String = js.native
-  inline def PATH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PATH")(x.asInstanceOf[js.Any])
+  /* "path" */ val PATH: typings.navermaps.naver.maps.SymbolStyle.PATH & String = js.native
 }

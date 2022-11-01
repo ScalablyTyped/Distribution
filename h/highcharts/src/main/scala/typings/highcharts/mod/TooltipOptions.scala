@@ -186,7 +186,7 @@ trait TooltipOptions extends StObject {
     * `Highcharts.SVGRenderer.prototype.symbols` the same way as for
     * series.marker.symbol.
     */
-  var headerShape: js.UndefOr[OptionsHeaderShapeValue] = js.undefined
+  var headerShape: js.UndefOr[TooltipShapeValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The number of milliseconds to
@@ -443,7 +443,7 @@ object TooltipOptions {
     
     inline def setHeaderFormatUndefined: Self = StObject.set(x, "headerFormat", js.undefined)
     
-    inline def setHeaderShape(value: OptionsHeaderShapeValue): Self = StObject.set(x, "headerShape", value.asInstanceOf[js.Any])
+    inline def setHeaderShape(value: TooltipShapeValue): Self = StObject.set(x, "headerShape", value.asInstanceOf[js.Any])
     
     inline def setHeaderShapeUndefined: Self = StObject.set(x, "headerShape", js.undefined)
     

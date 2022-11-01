@@ -6,7 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Map.MapType
+/**
+  * CanvasMapType
+  */
 trait CanvasMapType
   extends StObject
      with MapType {
@@ -30,7 +32,7 @@ object CanvasMapType {
     getMaxZoom: () => Double,
     getMinZoom: () => Double,
     getName: () => String,
-    getTile: (Double, Double, Double) => HTMLElement | Tile,
+    getTile: (Double, Double, Double) => HTMLElement | CanvasTile | ImageTile | Tile,
     getTileData: (Double, Double, Double) => ImageData,
     maxZoom: Double,
     minZoom: Double,

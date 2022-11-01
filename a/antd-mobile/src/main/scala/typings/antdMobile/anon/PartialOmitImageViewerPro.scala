@@ -1,5 +1,6 @@
 package typings.antdMobile.anon
 
+import typings.antdMobile.antdMobileStrings.auto
 import typings.antdMobile.esComponentsImageViewerSlidesMod.SlidesRef
 import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.react.mod.Key
@@ -23,7 +24,7 @@ trait PartialOmitImageViewerPro extends StObject {
   
   var key: js.UndefOr[Key | Null] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.undefined
+  var maxZoom: js.UndefOr[Double | auto] = js.undefined
   
   var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -72,7 +73,7 @@ object PartialOmitImageViewerPro {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double | auto): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     

@@ -72,6 +72,12 @@ object mod {
     
     inline def add_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconCodepoints.aimpoints-target")
+    @js.native
+    def aimpointsTarget: String = js.native
+    
+    inline def aimpointsTarget_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aimpoints-target")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconCodepoints.airplane")
     @js.native
     def airplane: String = js.native
@@ -3248,6 +3254,11 @@ object mod {
     
     inline def ADD__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADD")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.AIMPOINTS_TARGET")
+    @js.native
+    def AIMPOINTS_TARGET: BlueprintIcons16Id = js.native
+    inline def AIMPOINTS_TARGET_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AIMPOINTS_TARGET")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.AIRPLANE")
     @js.native
     def AIRPLANE_ : BlueprintIcons16Id = js.native
@@ -3498,6 +3509,11 @@ object mod {
     inline def AddToFolder_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddToFolder")(x.asInstanceOf[js.Any])
     
     inline def Add_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Add")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.AimpointsTarget")
+    @js.native
+    def AimpointsTarget: BlueprintIcons16Id = js.native
+    inline def AimpointsTarget_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AimpointsTarget")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.Airplane")
     @js.native
@@ -9169,6 +9185,10 @@ object mod {
     @js.native
     val AddToFolder: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.AimpointsTarget")
+    @js.native
+    val AimpointsTarget: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Airplane")
     @js.native
     val Airplane: js.Array[String] = js.native
@@ -11427,6 +11447,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.AddToFolder")
     @js.native
     val AddToFolder: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.AimpointsTarget")
+    @js.native
+    val AimpointsTarget: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Airplane")
     @js.native

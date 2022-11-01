@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ng-packagr"
-version := "14.2.1-3c0948"
+version := "14.2.1-1f8d23"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "magic-string" % "0.26.7-deb100",
   "org.scalablytyped" %%% "minimatch" % "5.1-dt-20220831Z-19e0f3",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
-  "org.scalablytyped" %%% "rollup" % "3.2.3-c92d63",
+  "org.scalablytyped" %%% "rollup" % "3.2.5-600601",
   "org.scalablytyped" %%% "rxjs" % "7.5.7-6ed253",
   "org.scalablytyped" %%% "semver" % "7.3-dt-20221026Z-e709b4",
   "org.scalablytyped" %%% "std" % "4.8-837c43",

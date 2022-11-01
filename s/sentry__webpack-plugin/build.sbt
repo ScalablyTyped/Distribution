@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sentry__webpack-plugin"
-version := "1.19.1-29b8a9"
+version := "1.20.0-d677a8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "re2" % "1.17.7-7aac79",
   "org.scalablytyped" %%% "schema-utils" % "4.0.0-d57fbb",
-  "org.scalablytyped" %%% "sentry__cli" % "2.7.0-b2a650",
+  "org.scalablytyped" %%% "sentry__cli" % "2.8.1-01af71",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tapable" % "2.2.1-52b605",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092",

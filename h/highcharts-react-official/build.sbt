@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "highcharts-react-official"
-version := "3.1.0-9012cf"
+version := "3.1.0-05eab5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "highcharts" % "10.2.1-7d4dbd",
+  "org.scalablytyped" %%% "highcharts" % "10.3.1-0351fd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",

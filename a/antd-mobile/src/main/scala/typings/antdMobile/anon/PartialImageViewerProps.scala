@@ -1,5 +1,6 @@
 package typings.antdMobile.anon
 
+import typings.antdMobile.antdMobileStrings.auto
 import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -16,7 +17,7 @@ trait PartialImageViewerProps extends StObject {
   
   var image: js.UndefOr[String] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.undefined
+  var maxZoom: js.UndefOr[Double | auto] = js.undefined
   
   var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -49,7 +50,7 @@ object PartialImageViewerProps {
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double | auto): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     

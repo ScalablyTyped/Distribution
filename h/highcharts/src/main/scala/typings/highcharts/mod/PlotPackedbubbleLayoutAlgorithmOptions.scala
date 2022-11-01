@@ -1,6 +1,5 @@
 package typings.highcharts.mod
 
-import typings.highcharts.highchartsStrings.`reingold-fruchterman`
 import typings.highcharts.highchartsStrings.circle
 import typings.highcharts.highchartsStrings.random
 import org.scalablytyped.runtime.StObject
@@ -8,6 +7,31 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PlotPackedbubbleLayoutAlgorithmOptions extends StObject {
+  
+  /**
+    * (Highcharts) Approximation used to calculate repulsive forces affecting
+    * nodes. By default, when calculateing net force, nodes are compared
+    * against each other, which gives O(N^2) complexity. Using Barnes-Hut
+    * approximation, we decrease this to O(N log N), but the resulting graph
+    * will have different layout. Barnes-Hut approximation divides space into
+    * rectangles via quad tree, where forces exerted on nodes are calculated
+    * directly for nearby cells, and for all others, cells are treated as a
+    * separate node with center of mass.
+    */
+  var approximation: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts) Attraction force applied on a node which is conected to
+    * another node by a link. Passed are two arguments:
+    *
+    * - `d` - which is current distance between two nodes
+    *
+    * - `k` - which is desired distance between two nodes
+    *
+    * In `verlet` integration, defaults to: `function (d, k) { return (k - d) /
+    * d; }`
+    */
+  var attractiveForce: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts) The distance between two bubbles, when the algorithm starts
@@ -68,7 +92,7 @@ trait PlotPackedbubbleLayoutAlgorithmOptions extends StObject {
     *
     * In Highcharts v7.0.x only `'euler'` integration was supported.
     */
-  var integration: js.UndefOr[OptionsIntegrationValue] = js.undefined
+  var integration: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Ideal length (px) of the link between two nodes. When not
@@ -109,6 +133,18 @@ trait PlotPackedbubbleLayoutAlgorithmOptions extends StObject {
   var parentNodeOptions: js.UndefOr[PlotPackedbubbleLayoutAlgorithmParentNodeOptions] = js.undefined
   
   /**
+    * (Highcharts) Repulsive force applied on a node. Passed are two arguments:
+    *
+    * - `d` - which is current distance between two nodes
+    *
+    * - `k` - which is desired distance between two nodes
+    *
+    * In `verlet` integration, defaults to: `function (d, k) { return (k - d) /
+    * d * (k > d ? 1 : 0) }`
+    */
+  var repulsiveForce: js.UndefOr[js.Function] = js.undefined
+  
+  /**
     * (Highcharts) Whether series should interact with each other or not. When
     * `parentNodeLimit` is set to true, thi option should be set to false to
     * avoid sticking points in wrong series parentNode.
@@ -122,9 +158,18 @@ trait PlotPackedbubbleLayoutAlgorithmOptions extends StObject {
   var splitSeries: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts) Barnes-Hut approximation only. Deteremines when distance
+    * between cell and node is small enough to caculate forces. Value of
+    * `theta` is compared directly with quotient `s / d`, where `s` is the size
+    * of the cell, and `d` is distance between center of cell's mass and
+    * currently compared node.
+    */
+  var theta: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highcharts) Type of the algorithm used when positioning nodes.
     */
-  var `type`: js.UndefOr[`reingold-fruchterman`] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PlotPackedbubbleLayoutAlgorithmOptions {
   
@@ -134,6 +179,14 @@ object PlotPackedbubbleLayoutAlgorithmOptions {
   }
   
   extension [Self <: PlotPackedbubbleLayoutAlgorithmOptions](x: Self) {
+    
+    inline def setApproximation(value: String): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
+    
+    inline def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
+    
+    inline def setAttractiveForce(value: js.Function): Self = StObject.set(x, "attractiveForce", value.asInstanceOf[js.Any])
+    
+    inline def setAttractiveForceUndefined: Self = StObject.set(x, "attractiveForce", js.undefined)
     
     inline def setBubblePadding(value: Double): Self = StObject.set(x, "bubblePadding", value.asInstanceOf[js.Any])
     
@@ -163,7 +216,7 @@ object PlotPackedbubbleLayoutAlgorithmOptions {
     
     inline def setInitialPositionsUndefined: Self = StObject.set(x, "initialPositions", js.undefined)
     
-    inline def setIntegration(value: OptionsIntegrationValue): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
+    inline def setIntegration(value: String): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
     
     inline def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
     
@@ -187,6 +240,10 @@ object PlotPackedbubbleLayoutAlgorithmOptions {
     
     inline def setParentNodeOptionsUndefined: Self = StObject.set(x, "parentNodeOptions", js.undefined)
     
+    inline def setRepulsiveForce(value: js.Function): Self = StObject.set(x, "repulsiveForce", value.asInstanceOf[js.Any])
+    
+    inline def setRepulsiveForceUndefined: Self = StObject.set(x, "repulsiveForce", js.undefined)
+    
     inline def setSeriesInteraction(value: Boolean): Self = StObject.set(x, "seriesInteraction", value.asInstanceOf[js.Any])
     
     inline def setSeriesInteractionUndefined: Self = StObject.set(x, "seriesInteraction", js.undefined)
@@ -195,7 +252,11 @@ object PlotPackedbubbleLayoutAlgorithmOptions {
     
     inline def setSplitSeriesUndefined: Self = StObject.set(x, "splitSeries", js.undefined)
     
-    inline def setType(value: `reingold-fruchterman`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
+    
+    inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

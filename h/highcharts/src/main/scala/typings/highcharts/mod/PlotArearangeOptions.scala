@@ -1,8 +1,5 @@
 package typings.highcharts.mod
 
-import typings.highcharts.anon.PartialAnimationOptionsOb
-import typings.highcharts.highchartsInts.`0`
-import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,29 +40,33 @@ trait PlotArearangeOptions extends StObject {
     *
     * - `defer`: The animation delay time in milliseconds.
     *
-    * - `duration`: The duration of the animation in milliseconds.
+    * - `duration`: The duration of the animation in milliseconds. (Defaults to
+    * `1000`)
     *
     * - `easing`: Can be a string reference to an easing function set on the
     * `Math` object or a function. See the _Custom easing function_ demo below.
+    * (Defaults to `easeInOutSine`)
     *
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | PlotArearangeAnimationOptions | PartialAnimationOptionsOb] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) For some series, there is a limit that shuts down
-    * initial animation by default when the total number of points in the chart
-    * is too high. For example, for a column chart and its derivatives,
-    * animation does not run if there is more than 250 points totally. To
-    * disable this cap, set `animationLimit` to `Infinity`.
+    * animation by default when the total number of points in the chart is too
+    * high. For example, for a column chart and its derivatives, animation does
+    * not run if there is more than 250 points totally. To disable this cap,
+    * set `animationLimit` to `Infinity`. This option works if animation is
+    * fired on individual points, not on a group of points like e.g. during the
+    * initial animation.
     */
   var animationLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Sets the color blending in the boost module.
     */
-  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
+  var boostBlending: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) Set the point threshold for when a series should
@@ -164,13 +165,13 @@ trait PlotArearangeOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
+  var compare: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
+  var compareBase: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -355,7 +356,7 @@ trait PlotArearangeOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
+  var findNearestPointBy: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
@@ -386,7 +387,7 @@ trait PlotArearangeOptions extends StObject {
     * values, which on a datetime axis is milliseconds. This also applies to
     * the navigator series that inherits gap options from the base series.
     */
-  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
+  var gapUnit: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -577,7 +578,7 @@ trait PlotArearangeOptions extends StObject {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.undefined
+  var pointIntervalUnit: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Possible values: `"on"`, `"between"`,
@@ -692,13 +693,26 @@ trait PlotArearangeOptions extends StObject {
     */
   var softThreshold: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * (Highcharts, Highstock) Whether to stack the values of each series on top
+    * of each other. Possible values are `undefined` to disable, `"normal"` to
+    * stack by value or `"percent"`.
+    *
+    * When stacking is enabled, data must be sorted in ascending X order.
+    *
+    * Some stacking options are related to specific series types. In the
+    * streamgraph series type, the stacking option is set to `"stream"`. The
+    * second one is `"overlap"`, which only applies to waterfall series.
+    */
+  var stacking: js.UndefOr[String] = js.undefined
+  
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
     */
-  var step: js.UndefOr[OptionsStepValue] = js.undefined
+  var step: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) Sticky tracking of mouse events. When true, the
@@ -757,6 +771,12 @@ trait PlotArearangeOptions extends StObject {
   var turboThreshold: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highstock) The parameter allows setting line series type and use OHLC
+    * indicators. Data in OHLC format is required.
+    */
+  var useOhlcData: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock) Set the initial visibility of the series.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -804,7 +824,7 @@ object PlotArearangeOptions {
     
     inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
     
-    inline def setAnimation(value: Boolean | PlotArearangeAnimationOptions | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | AnimationOptionsObject): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationLimit(value: Double): Self = StObject.set(x, "animationLimit", value.asInstanceOf[js.Any])
     
@@ -812,7 +832,7 @@ object PlotArearangeOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setBoostBlending(value: OptionsBoostBlendingValue): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
+    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
     
     inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
     
@@ -852,9 +872,9 @@ object PlotArearangeOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
     
@@ -942,7 +962,7 @@ object PlotArearangeOptions {
     
     inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    inline def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
     
     inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
     
@@ -950,7 +970,7 @@ object PlotArearangeOptions {
     
     inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
     
-    inline def setGapUnit(value: OptionsGapUnitValue): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
+    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
     
     inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
@@ -1036,7 +1056,7 @@ object PlotArearangeOptions {
     
     inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
     
-    inline def setPointIntervalUnit(value: OptionsPointIntervalUnitValue): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
     
     inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
     
@@ -1086,11 +1106,15 @@ object PlotArearangeOptions {
     
     inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
     
+    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    
+    inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
+    
     inline def setStates(value: SeriesStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    inline def setStep(value: OptionsStepValue): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
@@ -1115,6 +1139,10 @@ object PlotArearangeOptions {
     inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
     
     inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
+    
+    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
+    
+    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

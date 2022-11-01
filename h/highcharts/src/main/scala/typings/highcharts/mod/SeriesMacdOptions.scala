@@ -11,16 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with PlotMacdOptions {
   
   /**
-    * Not available
-    */
-  var dataParser: Unit
-  
-  /**
-    * Not available
-    */
-  var dataURL: Unit
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -81,17 +71,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesMacdOptions {
   
-  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | macd): SeriesMacdOptions = {
-    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
+  inline def apply(`type`: String | macd): SeriesMacdOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesMacdOptions]
   }
   
   extension [Self <: SeriesMacdOptions](x: Self) {
-    
-    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
-    
-    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

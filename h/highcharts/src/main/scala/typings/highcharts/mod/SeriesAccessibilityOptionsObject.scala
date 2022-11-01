@@ -33,7 +33,7 @@ trait SeriesAccessibilityOptionsObject extends StObject {
     * (Highstock) Point accessibility options for a series.
     */
   var point: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.highcharts.mod.PlotAbandsAccessibilityPointOptions, typings.highcharts.mod.PlotAdAccessibilityPointOptions, typings.highcharts.mod.PlotAoAccessibilityPointOptions */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.highcharts.mod.PlotAbandsAccessibilityPointOptions, typings.highcharts.mod.PlotAdAccessibilityPointOptions, typings.highcharts.mod.PlotAoAccessibilityPointOptions */ Any
   ] = js.undefined
 }
 object SeriesAccessibilityOptionsObject {
@@ -62,7 +62,7 @@ object SeriesAccessibilityOptionsObject {
     inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
     
     inline def setPoint(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.highcharts.mod.PlotAbandsAccessibilityPointOptions, typings.highcharts.mod.PlotAdAccessibilityPointOptions, typings.highcharts.mod.PlotAoAccessibilityPointOptions */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.highcharts.mod.PlotAbandsAccessibilityPointOptions, typings.highcharts.mod.PlotAdAccessibilityPointOptions, typings.highcharts.mod.PlotAoAccessibilityPointOptions */ Any
     ): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)

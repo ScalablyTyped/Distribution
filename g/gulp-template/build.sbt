@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gulp-template"
-version := "5.0-dt-20220624Z-9fb574"
+version := "5.0-dt-20220624Z-ac1681"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20220928Z-3598f3",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -69,15 +69,20 @@ trait PlotErrorbarDataLabelsOptions extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The text color for the data
-    * labels. Defaults to `undefined`. For certain series types, like column or
-    * map, the data labels can be drawn inside the points. In this case the
-    * data label will be drawn with maximum contrast by default. Additionally,
-    * it will be given a `text-outline` style with the opposite color, to
-    * further increase the contrast. This can be overridden by setting the
-    * `text-outline` style to `none` in the `dataLabels.style` option.
+    * (Highcharts, Highstock, Highmaps, Gantt) This options is deprecated. Use
+    * style.color instead.
+    *
+    * The text color for the data labels. Defaults to `undefined`. For certain
+    * series types, like column or map, the data labels can be drawn inside the
+    * points. In this case the data label will be drawn with maximum contrast
+    * by default. Additionally, it will be given a `text-outline` style with
+    * the opposite color, to further increase the contrast. This can be
+    * overridden by setting the `text-outline` style to `none` in the
+    * `dataLabels.style` option.
+    *
+    * @deprecated 10.3.0
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to hide data labels that
@@ -135,15 +140,19 @@ trait PlotErrorbarDataLabelsOptions extends StObject {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for points with the value
     * of null. Works analogously to format. `nullFormat` can be applied only to
-    * series which support displaying null points.
+    * series which support displaying null points i.e `heatmap` or `tilemap`.
+    * Does not work with series that don't display null points, like `line`,
+    * `column`, `bar` or `pie`.
     */
   var nullFormat: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback JavaScript function
     * that defines formatting for points with the value of null. Works
-    * analogously to formatter. `nullPointFormatter` can be applied only to
-    * series which support displaying null points.
+    * analogously to formatter. `nullFormatter` can be applied only to series
+    * which support displaying null points i.e `heatmap` or `tilemap`. Does not
+    * work with series that don't display null points, like `line`, `column`,
+    * `bar` or `pie`.
     */
   var nullFormatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.undefined
   
@@ -298,7 +307,7 @@ object PlotErrorbarDataLabelsOptions {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     

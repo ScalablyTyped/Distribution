@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * PointBounds
+  */
 @js.native
 trait PointBounds
   extends StObject
@@ -37,6 +40,8 @@ trait PointBounds
   def minX(): Double = js.native
   
   def minY(): Double = js.native
+  
+  def toArray(): PointBoundsArrayLiteral = js.native
   
   def union(bounds: Bounds): PointBounds = js.native
   def union(bounds: PointBoundsLiteral): PointBounds = js.native

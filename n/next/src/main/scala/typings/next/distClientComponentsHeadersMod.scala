@@ -1,7 +1,7 @@
 package typings.next
 
-import typings.next.distServerWebSpecExtensionCookiesMod.NextCookies
-import typings.std.Headers
+import typings.next.distServerAppRenderMod.ReadonlyHeaders
+import typings.next.distServerAppRenderMod.ReadonlyRequestCookies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +12,9 @@ object distClientComponentsHeadersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def cookies(): NextCookies = ^.asInstanceOf[js.Dynamic].applyDynamic("cookies")().asInstanceOf[NextCookies]
+  inline def cookies(): ReadonlyRequestCookies = ^.asInstanceOf[js.Dynamic].applyDynamic("cookies")().asInstanceOf[ReadonlyRequestCookies]
   
-  inline def headers(): Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("headers")().asInstanceOf[Headers]
+  inline def headers(): ReadonlyHeaders = ^.asInstanceOf[js.Dynamic].applyDynamic("headers")().asInstanceOf[ReadonlyHeaders]
   
   inline def previewData(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("previewData")().asInstanceOf[Any]
 }

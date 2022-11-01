@@ -30,6 +30,7 @@ import typings.appiumAdb.appiumAdbStrings.pin
 import typings.appiumAdb.libLogcatMod.Log
 import typings.appiumAdb.libLogcatMod.LogcatOpts
 import typings.appiumAdb.libToolsAabUtilsMod.ApkCreationOptions
+import typings.appiumAdb.libToolsAdbCommandsMod.ResolveActivityOptions
 import typings.appiumAdb.libToolsAdbCommandsMod.ScreenrecordOptions
 import typings.appiumAdb.libToolsAdbCommandsMod.SetPropOptions
 import typings.appiumAdb.libToolsAdbEmuCommandsMod.EmuVersionInfo
@@ -111,6 +112,16 @@ object libAdbMod {
     var POWER_AC_STATES: POWERACOFF = js.native
     
     var SENSORS: ACCELERATION = js.native
+    
+    /**
+      * Activates the given application or launches it if necessary.
+      * The action literally simulates
+      * clicking the corresponding application icon on the dashboard.
+      *
+      * @param appId - Application package identifier
+      * @throws {Error} If the app cannot be activated
+      */
+    def activateApp(appId: String): js.Promise[Unit] = js.native
     
     /**
       * Execute the given adb command.
@@ -1644,6 +1655,14 @@ object libAdbMod {
     def pull(remotePath: String, localPath: String): js.Promise[Unit] = js.native
     def pull(remotePath: String, localPath: String, opts: TeenProcessExecOptions): js.Promise[Unit] = js.native
     
+    /**
+      * Fetches base.apk of the given package to the local file system
+      *
+      * @param pkg The package identifier (must be already installed on the device)
+      * @param tmpDir The destination folder path
+      * @returns Full path to the downloaded file
+      * @throws {Error} If there was an error while fetching the .apk
+      */
     def pullApk(pkg: String, tmpDir: String): js.Promise[String] = js.native
     
     /**
@@ -1746,6 +1765,21 @@ object libAdbMod {
       * @returns If token reset was successful.
       */
     def resetTelnetAuthToken(): js.Promise[Boolean] = js.native
+    
+    /**
+      * Fetches the fully qualified name of the launchable activity for the
+      * given package. It is expected the package is already installed on
+      * the device under test.
+      *
+      * ! This method only works since Android 7 (API level 24)
+      *
+      * @param pkg - The target package identifier
+      * @param opts
+      * @return Fully qualified name of the launchable activity
+      * @throws {Error} If there was an error while resolving the activity name
+      */
+    def resolveLaunchableActivity(pkg: String): js.Promise[String] = js.native
+    def resolveLaunchableActivity(pkg: String, opts: ResolveActivityOptions): js.Promise[String] = js.native
     
     /**
       * Restart the device under test using adb commands.

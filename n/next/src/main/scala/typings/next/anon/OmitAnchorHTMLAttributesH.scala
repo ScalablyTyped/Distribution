@@ -269,7 +269,7 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   
   /**
     * Enable legacy link behaviour.
-    * @defaultValue `true`
+    * @defaultValue `false`
     * @see https://github.com/vercel/next.js/commit/489e65ed98544e69b0afd7e0cfc3f9f6c2b803b7
     */
   var legacyBehavior: js.UndefOr[Boolean] = js.undefined
@@ -305,7 +305,7 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   var onChange: js.UndefOr[FormEventHandler[HTMLAnchorElement]] = js.undefined
   
   /**
-    * requires experimental.newNextLinkBehavior
+    * Optional event handler for when Link is clicked.
     */
   var onClick: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
   
@@ -372,7 +372,7 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   var onMouseDown: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
   
   /**
-    * requires experimental.newNextLinkBehavior
+    * Optional event handler for when the mouse pointer is moved onto Link
     */
   var onMouseEnter: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
   
@@ -439,7 +439,7 @@ trait OmitAnchorHTMLAttributesH extends StObject {
   var onTouchMove: js.UndefOr[TouchEventHandler[HTMLAnchorElement]] = js.undefined
   
   /**
-    * requires experimental.newNextLinkBehavior
+    * Optional event handler for when Link is touched.
     */
   var onTouchStart: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
   

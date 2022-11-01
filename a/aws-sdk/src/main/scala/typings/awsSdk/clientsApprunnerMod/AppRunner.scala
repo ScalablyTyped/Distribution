@@ -103,6 +103,20 @@ trait AppRunner
   ): Request[CreateVpcConnectorResponse, AWSError] = js.native
   
   /**
+    * Create an App Runner VPC Ingress Connection resource. App Runner requires this resource when you want to associate your App Runner service with an Amazon VPC endpoint.
+    */
+  def createVpcIngressConnection(): Request[CreateVpcIngressConnectionResponse, AWSError] = js.native
+  def createVpcIngressConnection(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcIngressConnectionResponse, Unit]): Request[CreateVpcIngressConnectionResponse, AWSError] = js.native
+  /**
+    * Create an App Runner VPC Ingress Connection resource. App Runner requires this resource when you want to associate your App Runner service with an Amazon VPC endpoint.
+    */
+  def createVpcIngressConnection(params: CreateVpcIngressConnectionRequest): Request[CreateVpcIngressConnectionResponse, AWSError] = js.native
+  def createVpcIngressConnection(
+    params: CreateVpcIngressConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcIngressConnectionResponse, Unit]
+  ): Request[CreateVpcIngressConnectionResponse, AWSError] = js.native
+  
+  /**
     * Delete an App Runner automatic scaling configuration resource. You can delete a specific revision or the latest active revision. You can't delete a configuration that's used by one or more App Runner services.
     */
   def deleteAutoScalingConfiguration(): Request[DeleteAutoScalingConfigurationResponse, AWSError] = js.native
@@ -149,12 +163,12 @@ trait AppRunner
   ): Request[DeleteObservabilityConfigurationResponse, AWSError] = js.native
   
   /**
-    * Delete an App Runner service. This is an asynchronous operation. On a successful call, you can use the returned OperationId and the ListOperations call to track the operation's progress.
+    * Delete an App Runner service. This is an asynchronous operation. On a successful call, you can use the returned OperationId and the ListOperations call to track the operation's progress.  Make sure that you don't have any active VPCIngressConnections associated with the service you want to delete.  
     */
   def deleteService(): Request[DeleteServiceResponse, AWSError] = js.native
   def deleteService(callback: js.Function2[/* err */ AWSError, /* data */ DeleteServiceResponse, Unit]): Request[DeleteServiceResponse, AWSError] = js.native
   /**
-    * Delete an App Runner service. This is an asynchronous operation. On a successful call, you can use the returned OperationId and the ListOperations call to track the operation's progress.
+    * Delete an App Runner service. This is an asynchronous operation. On a successful call, you can use the returned OperationId and the ListOperations call to track the operation's progress.  Make sure that you don't have any active VPCIngressConnections associated with the service you want to delete.  
     */
   def deleteService(params: DeleteServiceRequest): Request[DeleteServiceResponse, AWSError] = js.native
   def deleteService(
@@ -175,6 +189,20 @@ trait AppRunner
     params: DeleteVpcConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcConnectorResponse, Unit]
   ): Request[DeleteVpcConnectorResponse, AWSError] = js.native
+  
+  /**
+    * Delete an App Runner VPC Ingress Connection resource that's associated with an App Runner service. The VPC Ingress Connection must be in one of the following states to be deleted:     AVAILABLE     FAILED_CREATION     FAILED_UPDATE     FAILED_DELETION   
+    */
+  def deleteVpcIngressConnection(): Request[DeleteVpcIngressConnectionResponse, AWSError] = js.native
+  def deleteVpcIngressConnection(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcIngressConnectionResponse, Unit]): Request[DeleteVpcIngressConnectionResponse, AWSError] = js.native
+  /**
+    * Delete an App Runner VPC Ingress Connection resource that's associated with an App Runner service. The VPC Ingress Connection must be in one of the following states to be deleted:     AVAILABLE     FAILED_CREATION     FAILED_UPDATE     FAILED_DELETION   
+    */
+  def deleteVpcIngressConnection(params: DeleteVpcIngressConnectionRequest): Request[DeleteVpcIngressConnectionResponse, AWSError] = js.native
+  def deleteVpcIngressConnection(
+    params: DeleteVpcIngressConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcIngressConnectionResponse, Unit]
+  ): Request[DeleteVpcIngressConnectionResponse, AWSError] = js.native
   
   /**
     * Return a full description of an App Runner automatic scaling configuration resource.
@@ -249,6 +277,20 @@ trait AppRunner
     params: DescribeVpcConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcConnectorResponse, Unit]
   ): Request[DescribeVpcConnectorResponse, AWSError] = js.native
+  
+  /**
+    * Return a full description of an App Runner VPC Ingress Connection resource.
+    */
+  def describeVpcIngressConnection(): Request[DescribeVpcIngressConnectionResponse, AWSError] = js.native
+  def describeVpcIngressConnection(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcIngressConnectionResponse, Unit]): Request[DescribeVpcIngressConnectionResponse, AWSError] = js.native
+  /**
+    * Return a full description of an App Runner VPC Ingress Connection resource.
+    */
+  def describeVpcIngressConnection(params: DescribeVpcIngressConnectionRequest): Request[DescribeVpcIngressConnectionResponse, AWSError] = js.native
+  def describeVpcIngressConnection(
+    params: DescribeVpcIngressConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcIngressConnectionResponse, Unit]
+  ): Request[DescribeVpcIngressConnectionResponse, AWSError] = js.native
   
   /**
     * Disassociate a custom domain name from an App Runner service. Certificates tracking domain validity are associated with a custom domain and are stored in AWS Certificate Manager (ACM). These certificates aren't deleted as part of this action. App Runner delays certificate deletion for 30 days after a domain is disassociated from your service.
@@ -365,6 +407,20 @@ trait AppRunner
   ): Request[ListVpcConnectorsResponse, AWSError] = js.native
   
   /**
+    * Return a list of App Runner VPC Ingress Connections in your Amazon Web Services account.
+    */
+  def listVpcIngressConnections(): Request[ListVpcIngressConnectionsResponse, AWSError] = js.native
+  def listVpcIngressConnections(callback: js.Function2[/* err */ AWSError, /* data */ ListVpcIngressConnectionsResponse, Unit]): Request[ListVpcIngressConnectionsResponse, AWSError] = js.native
+  /**
+    * Return a list of App Runner VPC Ingress Connections in your Amazon Web Services account.
+    */
+  def listVpcIngressConnections(params: ListVpcIngressConnectionsRequest): Request[ListVpcIngressConnectionsResponse, AWSError] = js.native
+  def listVpcIngressConnections(
+    params: ListVpcIngressConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVpcIngressConnectionsResponse, Unit]
+  ): Request[ListVpcIngressConnectionsResponse, AWSError] = js.native
+  
+  /**
     * Pause an active App Runner service. App Runner reduces compute capacity for the service to zero and loses state (for example, ephemeral storage is removed). This is an asynchronous operation. On a successful call, you can use the returned OperationId and the ListOperations call to track the operation's progress.
     */
   def pauseService(): Request[PauseServiceResponse, AWSError] = js.native
@@ -447,4 +503,18 @@ trait AppRunner
     params: UpdateServiceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceResponse, Unit]
   ): Request[UpdateServiceResponse, AWSError] = js.native
+  
+  /**
+    * Update an existing App Runner VPC Ingress Connection resource. The VPC Ingress Connection must be in one of the following states to be updated:    AVAILABLE     FAILED_CREATION     FAILED_UPDATE   
+    */
+  def updateVpcIngressConnection(): Request[UpdateVpcIngressConnectionResponse, AWSError] = js.native
+  def updateVpcIngressConnection(callback: js.Function2[/* err */ AWSError, /* data */ UpdateVpcIngressConnectionResponse, Unit]): Request[UpdateVpcIngressConnectionResponse, AWSError] = js.native
+  /**
+    * Update an existing App Runner VPC Ingress Connection resource. The VPC Ingress Connection must be in one of the following states to be updated:    AVAILABLE     FAILED_CREATION     FAILED_UPDATE   
+    */
+  def updateVpcIngressConnection(params: UpdateVpcIngressConnectionRequest): Request[UpdateVpcIngressConnectionResponse, AWSError] = js.native
+  def updateVpcIngressConnection(
+    params: UpdateVpcIngressConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateVpcIngressConnectionResponse, Unit]
+  ): Request[UpdateVpcIngressConnectionResponse, AWSError] = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__styling
 
-Typings are for version 7.25.0
+Typings are for version 7.25.1
 
 ## Library description:
 Styling helpers for Fluent UI React.

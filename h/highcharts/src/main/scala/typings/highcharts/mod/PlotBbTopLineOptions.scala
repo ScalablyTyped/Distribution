@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlotBbTopLineOptions extends StObject {
   
   /**
-    * (Highstock) Styles for a bottom line.
+    * (Highstock) Styles for the top line.
     */
   var styles: js.UndefOr[PlotBbTopLineStylesOptions] = js.undefined
 }

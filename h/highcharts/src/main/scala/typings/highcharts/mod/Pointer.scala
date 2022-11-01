@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Pointer protected () extends StObject {
   /**
-    * The mouse and touch tracker object. Each Chart item has one assosiated
+    * The mouse and touch tracker object. Each Chart item has one associated
     * Pointer item that can be accessed from the Chart.pointer property.
     *
     * @param chart
@@ -68,7 +68,7 @@ open class Pointer protected () extends StObject {
   
   /**
     * Utility to detect whether an element has, or has a parent with, a
-    * specificclass name. Used on detection of tracker objects and on deciding
+    * specific class name. Used on detection of tracker objects and on deciding
     * whether hovering the tooltip should cause the active series to mouse out.
     *
     * @param element

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/react-window-provider" : "2.2.2"
+      "@fluentui/react-window-provider" : "2.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/react-window-provider" : "2.2.2"
+      "@fluentui/react-window-provider" : "2.2.3"
     }
   ],
   "compile-devDependencies" : [

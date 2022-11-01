@@ -8,6 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeriesPieDataLabelsOptionsObject extends StObject {
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The alignment of the data label
+    * compared to the point. If `right`, the right side of the label should be
+    * touching the point. For points with an extent, like columns, the
+    * alignments also dictates how to align it inside the box, as given with
+    * the inside option. Can be one of `left`, `center` or `right`.
+    */
+  var align: js.UndefOr[AlignValue | Null] = js.undefined
+  
+  /**
     * (Highcharts, Highmaps) Alignment method for data labels. Possible values
     * are:
     *
@@ -19,6 +28,13 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * area.
     */
   var alignTo: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Whether to allow data labels to
+    * overlap. To make the labels less sensitive for overlapping, the
+    * dataLabels.padding can be set to 0.
+    */
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the initial
@@ -68,15 +84,20 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The text color for the data
-    * labels. Defaults to `undefined`. For certain series types, like column or
-    * map, the data labels can be drawn inside the points. In this case the
-    * data label will be drawn with maximum contrast by default. Additionally,
-    * it will be given a `text-outline` style with the opposite color, to
-    * further increase the contrast. This can be overridden by setting the
-    * `text-outline` style to `none` in the `dataLabels.style` option.
+    * (Highcharts, Highstock, Highmaps, Gantt) This options is deprecated. Use
+    * style.color instead.
+    *
+    * The text color for the data labels. Defaults to `undefined`. For certain
+    * series types, like column or map, the data labels can be drawn inside the
+    * points. In this case the data label will be drawn with maximum contrast
+    * by default. Additionally, it will be given a `text-outline` style with
+    * the opposite color, to further increase the contrast. This can be
+    * overridden by setting the `text-outline` style to `none` in the
+    * `dataLabels.style` option.
+    *
+    * @deprecated 10.3.0
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts, Highmaps) The color of the line connecting the data label to
@@ -192,17 +213,29 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   var formatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) For points with an extent, like
+    * columns or map areas, whether to align the data label inside the box or
+    * to the actual value point. Defaults to `false` in most cases, `true` in
+    * stacked columns.
+    */
+  var inside: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for points with the value
     * of null. Works analogously to format. `nullFormat` can be applied only to
-    * series which support displaying null points.
+    * series which support displaying null points i.e `heatmap` or `tilemap`.
+    * Does not work with series that don't display null points, like `line`,
+    * `column`, `bar` or `pie`.
     */
   var nullFormat: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback JavaScript function
     * that defines formatting for points with the value of null. Works
-    * analogously to formatter. `nullPointFormatter` can be applied only to
-    * series which support displaying null points.
+    * analogously to formatter. `nullFormatter` can be applied only to series
+    * which support displaying null points i.e `heatmap` or `tilemap`. Does not
+    * work with series that don't display null points, like `line`, `column`,
+    * `bar` or `pie`.
     */
   var nullFormatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.undefined
   
@@ -332,9 +365,19 @@ object SeriesPieDataLabelsOptionsObject {
   
   extension [Self <: SeriesPieDataLabelsOptionsObject](x: Self) {
     
+    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignNull: Self = StObject.set(x, "align", null)
+    
     inline def setAlignTo(value: String): Self = StObject.set(x, "alignTo", value.asInstanceOf[js.Any])
     
     inline def setAlignToUndefined: Self = StObject.set(x, "alignTo", js.undefined)
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
+    
+    inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
     
     inline def setAnimation(
       value: Boolean | PlotFunnelDataLabelsAnimationOptions | PlotItemDataLabelsAnimationOptions | PlotPieDataLabelsAnimationOptions | PlotPyramidDataLabelsAnimationOptions | PlotVariablepieDataLabelsAnimationOptions | PartialAnimationOptionsOb
@@ -362,7 +405,7 @@ object SeriesPieDataLabelsOptionsObject {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -413,6 +456,10 @@ object SeriesPieDataLabelsOptionsObject {
     inline def setFormatter(value: DataLabelsFormatterCallbackFunction): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    
+    inline def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
+    
+    inline def setInsideUndefined: Self = StObject.set(x, "inside", js.undefined)
     
     inline def setNullFormat(value: Boolean | String): Self = StObject.set(x, "nullFormat", value.asInstanceOf[js.Any])
     

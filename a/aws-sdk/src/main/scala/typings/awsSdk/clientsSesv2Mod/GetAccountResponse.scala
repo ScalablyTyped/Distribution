@@ -40,6 +40,11 @@ trait GetAccountResponse extends StObject {
     * An object that contains information about the email address suppression preferences for your account in the current Amazon Web Services Region.
     */
   var SuppressionAttributes: js.UndefOr[typings.awsSdk.clientsSesv2Mod.SuppressionAttributes] = js.undefined
+  
+  /**
+    * The VDM attributes that apply to your Amazon SES account.
+    */
+  var VdmAttributes: js.UndefOr[typings.awsSdk.clientsSesv2Mod.VdmAttributes] = js.undefined
 }
 object GetAccountResponse {
   
@@ -77,5 +82,9 @@ object GetAccountResponse {
     inline def setSuppressionAttributes(value: SuppressionAttributes): Self = StObject.set(x, "SuppressionAttributes", value.asInstanceOf[js.Any])
     
     inline def setSuppressionAttributesUndefined: Self = StObject.set(x, "SuppressionAttributes", js.undefined)
+    
+    inline def setVdmAttributes(value: VdmAttributes): Self = StObject.set(x, "VdmAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setVdmAttributesUndefined: Self = StObject.set(x, "VdmAttributes", js.undefined)
   }
 }

@@ -68,6 +68,12 @@ object BlueprintIcons20 extends StObject {
   /* "add-to-folder" */ val AddToFolder: typings.blueprintjsIcons.libEsmGenerated20pxBlueprintIcons20Mod.BlueprintIcons20.AddToFolder & String = js.native
   
   @js.native
+  sealed trait AimpointsTarget
+    extends StObject
+       with BlueprintIcons20
+  /* "aimpoints-target" */ val AimpointsTarget: typings.blueprintjsIcons.libEsmGenerated20pxBlueprintIcons20Mod.BlueprintIcons20.AimpointsTarget & String = js.native
+  
+  @js.native
   sealed trait Airplane
     extends StObject
        with BlueprintIcons20

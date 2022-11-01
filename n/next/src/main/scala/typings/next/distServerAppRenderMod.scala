@@ -1,6 +1,8 @@
 package typings.next
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.next.anon.FnCall
+import typings.next.anon.Headers
 import typings.next.distBuildWebpackPluginsFlightManifestPluginMod.FlightCSSManifest
 import typings.next.distBuildWebpackPluginsFlightManifestPluginMod.FlightManifest
 import typings.next.distBuildWebpackPluginsFontLoaderManifestPluginMod.FontLoaderManifest
@@ -9,15 +11,18 @@ import typings.next.distServerLoadComponentsMod.LoadComponentsReturnType
 import typings.next.distServerLoadComponentsMod.ReactLoadableManifest
 import typings.next.distServerRenderResultMod.default
 import typings.next.distServerRequestMetaMod.NextParsedUrlQuery
+import typings.next.distServerWebSpecExtensionCookiesTypesMod.RequestCookie
 import typings.next.distSharedLibUtilsMod.AppType
 import typings.next.distSharedLibUtilsMod.DocumentType
 import typings.next.distSharedLibUtilsMod.NextComponentType
 import typings.next.distSharedLibUtilsMod.NextPageContext
 import typings.next.nextStrings.refetch
 import typings.next.typesMod.PageConfig
+import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.react.mod.ReactNode
+import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,6 +32,60 @@ object distServerAppRenderMod {
   @JSImport("next/dist/server/app-render", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("next/dist/server/app-render", "ReadonlyHeaders")
+  @js.native
+  open class ReadonlyHeaders protected () extends StObject {
+    def this(headers: IncomingHttpHeaders) = this()
+    
+    def append(): Unit = js.native
+    
+    def delete(): Unit = js.native
+    
+    var entries: js.Function0[IterableIterator[js.Tuple2[String, String]]] = js.native
+    
+    var forEach: FnCall = js.native
+    
+    var get: js.Function1[/* name */ String, String | Null] = js.native
+    
+    var has: js.Function1[/* name */ String, Boolean] = js.native
+    
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[js.Tuple2[String, String]]] = js.native
+    
+    var keys: js.Function0[IterableIterator[String]] = js.native
+    
+    def set(): Unit = js.native
+    
+    var values: js.Function0[IterableIterator[String]] = js.native
+  }
+  
+  @JSImport("next/dist/server/app-render", "ReadonlyRequestCookies")
+  @js.native
+  open class ReadonlyRequestCookies protected () extends StObject {
+    def this(request: Headers) = this()
+    
+    def clear(): Unit = js.native
+    
+    def delete(): Unit = js.native
+    
+    var get: js.Function1[
+        /* args */ js.Array[RequestCookie | (/* name */ String)], 
+        js.UndefOr[RequestCookie]
+      ] = js.native
+    
+    var getAll: js.Function1[
+        /* args */ js.Array[Any | RequestCookie | (/* name */ String)], 
+        js.Array[RequestCookie]
+      ] = js.native
+    
+    var has: js.Function1[/* name */ String, Boolean] = js.native
+    
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[Any] = js.native
+    
+    def set(): Unit = js.native
+  }
   
   inline def renderToHTMLOrFlight(
     req: IncomingMessage,

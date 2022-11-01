@@ -42,6 +42,10 @@ object libEsmGenerated20pxPathsMod {
   @js.native
   val AddToFolder: js.Array[String] = js.native
   
+  @JSImport("@blueprintjs/icons/lib/esm/generated/20px/paths", "AimpointsTarget")
+  @js.native
+  val AimpointsTarget: js.Array[String] = js.native
+  
   @JSImport("@blueprintjs/icons/lib/esm/generated/20px/paths", "Airplane")
   @js.native
   val Airplane: js.Array[String] = js.native

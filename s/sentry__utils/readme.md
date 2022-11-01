@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentry__utils
 
-Typings are for version 7.17.2
+Typings are for version 7.17.3
 
 ## Library description:
 Utilities for all Sentry JavaScript SDKs

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExpenseDocument extends StObject {
   
   /**
+    * This is a block object, the same as reported when DetectDocumentText is run on a document. It provides word level recognition of text.
+    */
+  var Blocks: js.UndefOr[BlockList] = js.undefined
+  
+  /**
     * Denotes which invoice or receipt in the document the information is coming from. First document will be 1, the second 2, and so on.
     */
   var ExpenseIndex: js.UndefOr[UInteger] = js.undefined
@@ -29,6 +34,12 @@ object ExpenseDocument {
   }
   
   extension [Self <: ExpenseDocument](x: Self) {
+    
+    inline def setBlocks(value: BlockList): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
+    
+    inline def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
+    
+    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value*))
     
     inline def setExpenseIndex(value: UInteger): Self = StObject.set(x, "ExpenseIndex", value.asInstanceOf[js.Any])
     

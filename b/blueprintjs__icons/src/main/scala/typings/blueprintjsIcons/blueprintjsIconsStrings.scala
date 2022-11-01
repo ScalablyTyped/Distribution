@@ -149,6 +149,13 @@ object blueprintjsIconsStrings {
   inline def AddToFolder: AddToFolder = "AddToFolder".asInstanceOf[AddToFolder]
   
   @js.native
+  sealed trait AimpointsTarget
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def AimpointsTarget: AimpointsTarget = "AimpointsTarget".asInstanceOf[AimpointsTarget]
+  
+  @js.native
   sealed trait Airplane
     extends StObject
        with BlueprintIcons16Key
@@ -4257,6 +4264,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def add_ : add_ = "add".asInstanceOf[add_]
+  
+  @js.native
+  sealed trait `aimpoints-target`
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def `aimpoints-target`: `aimpoints-target` = "aimpoints-target".asInstanceOf[`aimpoints-target`]
   
   @js.native
   sealed trait airplane_

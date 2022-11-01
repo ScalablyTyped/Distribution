@@ -25,11 +25,21 @@ trait DescribeCustomDomainsResponse extends StObject {
     * The Amazon Resource Name (ARN) of the App Runner service whose associated custom domain names you want to describe.
     */
   var ServiceArn: AppRunnerResourceArn
+  
+  /**
+    * DNS Target records for the custom domains of this Amazon VPC. 
+    */
+  var VpcDNSTargets: VpcDNSTargetList
 }
 object DescribeCustomDomainsResponse {
   
-  inline def apply(CustomDomains: CustomDomainList, DNSTarget: String, ServiceArn: AppRunnerResourceArn): DescribeCustomDomainsResponse = {
-    val __obj = js.Dynamic.literal(CustomDomains = CustomDomains.asInstanceOf[js.Any], DNSTarget = DNSTarget.asInstanceOf[js.Any], ServiceArn = ServiceArn.asInstanceOf[js.Any])
+  inline def apply(
+    CustomDomains: CustomDomainList,
+    DNSTarget: String,
+    ServiceArn: AppRunnerResourceArn,
+    VpcDNSTargets: VpcDNSTargetList
+  ): DescribeCustomDomainsResponse = {
+    val __obj = js.Dynamic.literal(CustomDomains = CustomDomains.asInstanceOf[js.Any], DNSTarget = DNSTarget.asInstanceOf[js.Any], ServiceArn = ServiceArn.asInstanceOf[js.Any], VpcDNSTargets = VpcDNSTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCustomDomainsResponse]
   }
   
@@ -46,5 +56,9 @@ object DescribeCustomDomainsResponse {
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     inline def setServiceArn(value: AppRunnerResourceArn): Self = StObject.set(x, "ServiceArn", value.asInstanceOf[js.Any])
+    
+    inline def setVpcDNSTargets(value: VpcDNSTargetList): Self = StObject.set(x, "VpcDNSTargets", value.asInstanceOf[js.Any])
+    
+    inline def setVpcDNSTargetsVarargs(value: VpcDNSTarget*): Self = StObject.set(x, "VpcDNSTargets", js.Array(value*))
   }
 }

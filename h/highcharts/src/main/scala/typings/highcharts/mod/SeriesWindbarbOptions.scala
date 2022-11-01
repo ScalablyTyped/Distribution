@@ -27,16 +27,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var data: js.UndefOr[js.Array[(js.Tuple3[Double | String, Double, Double]) | PointOptionsObject]] = js.undefined
   
   /**
-    * Not available
-    */
-  var dataParser: Unit
-  
-  /**
-    * Not available
-    */
-  var dataURL: Unit
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -103,8 +93,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesWindbarbOptions {
   
-  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | windbarb): SeriesWindbarbOptions = {
-    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
+  inline def apply(`type`: String | windbarb): SeriesWindbarbOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesWindbarbOptions]
   }
@@ -112,10 +102,6 @@ object SeriesWindbarbOptions {
   extension [Self <: SeriesWindbarbOptions](x: Self) {
     
     inline def setData(value: js.Array[(js.Tuple3[Double | String, Double, Double]) | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
-    
-    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

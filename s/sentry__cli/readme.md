@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentry__cli
 
-Typings are for version 2.7.0
+Typings are for version 2.8.1
 
 ## Library description:
 A command line utility to work with Sentry. https://docs.sentry.io/hosted/learn/cli/

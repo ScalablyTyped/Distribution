@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ipfs-utils"
-version := "9.0.7-d8a74f"
+version := "9.0.7-c47b37"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "electron" % "21.2.0-596764",
-  "org.scalablytyped" %%% "electron-fetch" % "1.7.4-2ed01f",
+  "org.scalablytyped" %%% "electron" % "21.2.1-038b38",
+  "org.scalablytyped" %%% "electron-fetch" % "1.7.4-e617ea",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

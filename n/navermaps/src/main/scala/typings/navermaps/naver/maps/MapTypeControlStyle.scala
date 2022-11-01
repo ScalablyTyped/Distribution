@@ -6,8 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait MapTypeControlStyle extends StObject
+// --------------------------------------------------------------------------
+//  Enums
+// --------------------------------------------------------------------------
 /**
-  * Enums
+  * MapTypeControlStyle
   */
 @JSGlobal("naver.maps.MapTypeControlStyle")
 @js.native

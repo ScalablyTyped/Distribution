@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<@sentry/types.@sentry/types/types/span.SpanContext, std.Exclude<keyof @sentry/types.@sentry/types/types/span.SpanContext, 'spanId' | 'sampled' | 'traceId' | 'parentSpanId'>> */
+/* Inlined std.Pick<@sentry/types.@sentry/types/types/span.SpanContext, std.Exclude<keyof @sentry/types.@sentry/types/types/span.SpanContext, 'sampled' | 'traceId' | 'parentSpanId'>> */
 trait PickSpanContextExcludekey extends StObject {
   
   var data: js.UndefOr[StringDictionary[Any]] = js.undefined
@@ -16,6 +16,8 @@ trait PickSpanContextExcludekey extends StObject {
   var endTimestamp: js.UndefOr[Double] = js.undefined
   
   var op: js.UndefOr[String] = js.undefined
+  
+  var spanId: js.UndefOr[String] = js.undefined
   
   var startTimestamp: js.UndefOr[Double] = js.undefined
   
@@ -47,6 +49,10 @@ object PickSpanContextExcludekey {
     inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    
+    inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+    
+    inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
     
     inline def setStartTimestamp(value: Double): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
     

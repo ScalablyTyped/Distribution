@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GeocodeResponse extends StObject {
   
+  // Deprecated!! https://navermaps.github.io/maps.js.ncp/docs/naver.maps.Service.html#toc28__anchor
   var result: Items
   
   var v2: Addresses

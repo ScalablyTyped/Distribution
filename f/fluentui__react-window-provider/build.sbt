@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluentui__react-window-provider"
-version := "2.2.2-7bc2b7"
+version := "2.2.3-4ad3bf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

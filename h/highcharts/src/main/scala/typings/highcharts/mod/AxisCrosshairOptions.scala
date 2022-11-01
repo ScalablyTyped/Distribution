@@ -7,22 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AxisCrosshairOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) A class name for the crosshair,
-    * especially as a hook for styling.
+    * (Highcharts) A class name for the crosshair, especially as a hook for
+    * styling.
     */
   var className: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The color of the crosshair.
-    * Defaults to `#cccccc` for numeric and datetime axes, and
-    * `rgba(204,214,235,0.25)` for category axes, where the crosshair by
-    * default highlights the whole category.
+    * (Highcharts) The color of the crosshair. Defaults to `#cccccc` for
+    * numeric and datetime axes, and `rgba(204,214,235,0.25)` for category
+    * axes, where the crosshair by default highlights the whole category.
     */
   var color: js.UndefOr[ColorType] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The dash style for the
-    * crosshair. See plotOptions.series.dashStyle for possible values.
+    * (Highcharts) The dash style for the crosshair. See
+    * plotOptions.series.dashStyle for possible values.
     */
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
@@ -35,22 +34,20 @@ trait AxisCrosshairOptions extends StObject {
   var label: js.UndefOr[AxisCrosshairLabelOptions] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Whether the crosshair should
-    * snap to the point or follow the pointer independent of points.
+    * (Highcharts) Whether the crosshair should snap to the point or follow the
+    * pointer independent of points.
     */
   var snap: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the
-    * crosshair. Defaults to 1 for numeric or datetime axes, and for one
-    * category width for category axes.
+    * (Highcharts) The pixel width of the crosshair. Defaults to 1 for numeric
+    * or datetime axes, and for one category width for category axes.
     */
   var width: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The Z index of the crosshair.
-    * Higher Z indices allow drawing the crosshair on top of the series or
-    * behind the grid lines.
+    * (Highcharts) The Z index of the crosshair. Higher Z indices allow drawing
+    * the crosshair on top of the series or behind the grid lines.
     */
   var zIndex: js.UndefOr[Double] = js.undefined
 }

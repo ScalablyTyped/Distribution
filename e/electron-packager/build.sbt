@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "electron-packager"
-version := "17.0.0-ac95b8"
+version := "17.1.0-07bff7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-6dfedf",
-  "org.scalablytyped" %%% "electron-notarize" % "1.2.1-e0558d",
   "org.scalablytyped" %%% "electron__asar" % "3.2.1-f4109a",
+  "org.scalablytyped" %%% "electron__notarize" % "1.2.3-18d5c8",
   "org.scalablytyped" %%% "electron__osx-sign" % "1.0.1-c0879d",
   "org.scalablytyped" %%% "glob" % "8.0-dt-20220830Z-3c7466",
   "org.scalablytyped" %%% "minimatch" % "5.1-dt-20220831Z-19e0f3",

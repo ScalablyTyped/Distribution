@@ -60,7 +60,7 @@ trait RangeSelectorOptions extends StObject {
     *
     * - `never`: Never collapse
     */
-  var dropdown: js.UndefOr[OptionsDropdownValue] = js.undefined
+  var dropdown: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) Enable or disable the range selector. Default to
@@ -213,7 +213,7 @@ object RangeSelectorOptions {
     
     inline def setButtonsVarargs(value: RangeSelectorButtonsOptions*): Self = StObject.set(x, "buttons", js.Array(value*))
     
-    inline def setDropdown(value: OptionsDropdownValue): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    inline def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
     inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
     

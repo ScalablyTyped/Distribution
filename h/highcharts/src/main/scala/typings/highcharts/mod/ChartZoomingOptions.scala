@@ -11,7 +11,7 @@ trait ChartZoomingOptions extends StObject {
     * to zoom the chart. This is useful to avoid zooming while moving points.
     * Should be set different than chart.panKey.
     */
-  var key: js.UndefOr[OptionsKeyValue] = js.undefined
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Equivalent to type, but for multitouch
@@ -21,7 +21,7 @@ trait ChartZoomingOptions extends StObject {
     * is enabled. When tooltip.followTouchMove is true, pinchType only applies
     * to two-finger touches.
     */
-  var pinchType: js.UndefOr[OptionsPinchTypeValue] = js.undefined
+  var pinchType: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The button that appears after a
@@ -44,7 +44,7 @@ trait ChartZoomingOptions extends StObject {
     * (Highcharts, Highstock, Gantt) Decides in what dimensions the user can
     * zoom by dragging the mouse. Can be one of `x`, `y` or `xy`.
     */
-  var `type`: js.UndefOr[OptionsTypeValue] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ChartZoomingOptions {
   
@@ -55,11 +55,11 @@ object ChartZoomingOptions {
   
   extension [Self <: ChartZoomingOptions](x: Self) {
     
-    inline def setKey(value: OptionsKeyValue): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setPinchType(value: OptionsPinchTypeValue): Self = StObject.set(x, "pinchType", value.asInstanceOf[js.Any])
+    inline def setPinchType(value: String): Self = StObject.set(x, "pinchType", value.asInstanceOf[js.Any])
     
     inline def setPinchTypeUndefined: Self = StObject.set(x, "pinchType", js.undefined)
     
@@ -71,7 +71,7 @@ object ChartZoomingOptions {
     
     inline def setSingleTouchUndefined: Self = StObject.set(x, "singleTouch", js.undefined)
     
-    inline def setType(value: OptionsTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

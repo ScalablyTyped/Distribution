@@ -137,7 +137,7 @@ object distTypesSerdeMod {
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately. 
     * TS definition: {{{
-    {[ key in keyof T ]: T[key] extends T[StreamKey]? @aws-sdk/types.@aws-sdk/types/dist-types/serde.SdkStream<T[StreamKey]> : T[key]}
+    {[ key in keyof T ]: key extends StreamKey? @aws-sdk/types.@aws-sdk/types/dist-types/serde.SdkStream<T[StreamKey]> : T[key]}
     }}}
     */
   @js.native

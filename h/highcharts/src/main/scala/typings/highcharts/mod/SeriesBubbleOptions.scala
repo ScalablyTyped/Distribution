@@ -34,16 +34,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ] = js.undefined
   
   /**
-    * Not available
-    */
-  var dataParser: Unit
-  
-  /**
-    * Not available
-    */
-  var dataURL: Unit
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -78,9 +68,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Not available
+    * (Highcharts, Highstock) This option allows grouping series in a stacked
+    * chart. The stack option can be a string or anything else, as long as the
+    * grouped series' stack options match each other after conversion into a
+    * string.
     */
-  var stack: js.UndefOr[Double | String | Unit]
+  var stack: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
@@ -107,8 +100,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesBubbleOptions {
   
-  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | bubble): SeriesBubbleOptions = {
-    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
+  inline def apply(`type`: String | bubble): SeriesBubbleOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesBubbleOptions]
   }
@@ -120,10 +113,6 @@ object SeriesBubbleOptions {
           (js.Tuple2[Double | String, Double]) | (js.Tuple3[Double | String, Double, Double]) | PointOptionsObject
         ]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
-    
-    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -153,7 +142,7 @@ object SeriesBubbleOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setStack(value: Double | String | Unit): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     

@@ -1,8 +1,7 @@
 package typings.next
 
 import typings.next.anon.BundlePath
-import typings.next.anon.Compilation
-import typings.next.anon.Layer
+import typings.next.anon.ClientEntryDependencyMap
 import typings.next.distBuildWebpackLoadersNextFlightClientEntryLoaderMod.ClientComponentImports
 import typings.next.distBuildWebpackLoadersNextFlightClientEntryLoaderMod.CssImports
 import typings.next.distCompiledWebpackWebpackMod.webpack.Compiler
@@ -18,12 +17,19 @@ object distBuildWebpackPluginsFlightClientEntryPluginMod {
   open class FlightClientEntryPlugin protected () extends StObject {
     def this(options: Options) = this()
     
-    def addEntry(compilation: Any, context: String, entry: Any, options: Layer): js.Promise[Any] = js.native
+    def addEntry(
+      compilation: Any,
+      context: String,
+      dependency: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Dependency */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.EntryOptions */ Any
+    ): js.Promise[Any] = js.native
+    
+    var appDir: String = js.native
     
     @JSName("apply")
     def apply(compiler: Compiler): Unit = js.native
     
-    def collectClientComponentsAndCSSForDependency(param0: Compilation): js.Tuple2[ClientComponentImports, CssImports] = js.native
+    def collectClientComponentsAndCSSForDependency(param0: ClientEntryDependencyMap): js.Tuple2[ClientComponentImports, CssImports] = js.native
     
     def createClientEntries(compiler: Any, compilation: Any): js.Promise[Unit] = js.native
     
@@ -48,18 +54,22 @@ object distBuildWebpackPluginsFlightClientEntryPluginMod {
   
   trait Options extends StObject {
     
+    var appDir: String
+    
     var dev: Boolean
     
     var isEdgeServer: Boolean
   }
   object Options {
     
-    inline def apply(dev: Boolean, isEdgeServer: Boolean): Options = {
-      val __obj = js.Dynamic.literal(dev = dev.asInstanceOf[js.Any], isEdgeServer = isEdgeServer.asInstanceOf[js.Any])
+    inline def apply(appDir: String, dev: Boolean, isEdgeServer: Boolean): Options = {
+      val __obj = js.Dynamic.literal(appDir = appDir.asInstanceOf[js.Any], dev = dev.asInstanceOf[js.Any], isEdgeServer = isEdgeServer.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setAppDir(value: String): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
       
       inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       

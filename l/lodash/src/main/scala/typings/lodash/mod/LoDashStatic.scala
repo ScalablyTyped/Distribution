@@ -2693,6 +2693,13 @@ trait LoDashStatic extends StObject {
     * @see _.get
     */
   @JSName("get")
+  def get_TObjectTPathTDefault_Union[TObject, TPath /* <: java.lang.String */, TDefault](data: TObject, path: TPath): (GetFieldType[TObject, TPath]) | TDefault = js.native
+  @JSName("get")
+  def get_TObjectTPathTDefault_Union[TObject, TPath /* <: java.lang.String */, TDefault](data: TObject, path: TPath, defaultValue: TDefault): (GetFieldType[TObject, TPath]) | TDefault = js.native
+  /**
+    * @see _.get
+    */
+  @JSName("get")
   def get_T_T[T](`object`: NumericDictionary[T], path: Double): T = js.native
   
   /**

@@ -7,10 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SelectEventObject extends StObject {
   
+  /**
+    * The related browser event.
+    */
   var originalEvent: Event
   
+  /**
+    * Indicates a reset event to restore default state.
+    */
+  var resetSelection: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Arrays containing the axes of each dimension and each axis' min and max
+    * values.
+    */
   var xAxis: js.Array[SelectDataObject]
   
+  /**
+    * Arrays containing the axes of each dimension and each axis' min and max
+    * values.
+    */
   var yAxis: js.Array[SelectDataObject]
 }
 object SelectEventObject {
@@ -23,6 +39,10 @@ object SelectEventObject {
   extension [Self <: SelectEventObject](x: Self) {
     
     inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    
+    inline def setResetSelection(value: Boolean): Self = StObject.set(x, "resetSelection", value.asInstanceOf[js.Any])
+    
+    inline def setResetSelectionUndefined: Self = StObject.set(x, "resetSelection", js.undefined)
     
     inline def setXAxis(value: js.Array[SelectDataObject]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

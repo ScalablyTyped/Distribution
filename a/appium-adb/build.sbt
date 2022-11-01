@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "appium-adb"
-version := "9.4-dt-20221030Z-c192f4"
+version := "9.10-dt-20221031Z-f3d0f9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

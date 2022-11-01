@@ -16,9 +16,13 @@ trait ContextDirectory extends StObject {
   
   var contextDirectory: js.UndefOr[String] = js.undefined
   
+  var logAll: js.UndefOr[Boolean] = js.undefined
+  
   var logDetail: js.UndefOr[Boolean] = js.undefined
   
   var logLevel: js.UndefOr[bug | fatal | error | warning | hint | note | suggestions | info] = js.undefined
+  
+  var maxFiles: js.UndefOr[Double] = js.undefined
   
   var processCwd: js.UndefOr[String] = js.undefined
 }
@@ -35,6 +39,10 @@ object ContextDirectory {
     
     inline def setContextDirectoryUndefined: Self = StObject.set(x, "contextDirectory", js.undefined)
     
+    inline def setLogAll(value: Boolean): Self = StObject.set(x, "logAll", value.asInstanceOf[js.Any])
+    
+    inline def setLogAllUndefined: Self = StObject.set(x, "logAll", js.undefined)
+    
     inline def setLogDetail(value: Boolean): Self = StObject.set(x, "logDetail", value.asInstanceOf[js.Any])
     
     inline def setLogDetailUndefined: Self = StObject.set(x, "logDetail", js.undefined)
@@ -42,6 +50,10 @@ object ContextDirectory {
     inline def setLogLevel(value: bug | fatal | error | warning | hint | note | suggestions | info): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    
+    inline def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
+    
+    inline def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
     
     inline def setProcessCwd(value: String): Self = StObject.set(x, "processCwd", value.asInstanceOf[js.Any])
     

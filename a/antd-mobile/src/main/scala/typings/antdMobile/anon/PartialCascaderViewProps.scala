@@ -164,7 +164,7 @@ trait PartialCascaderViewProps extends StObject {
   
   var options: js.UndefOr[js.Array[CascaderOption]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.undefined
+  var placeholder: js.UndefOr[String | (js.Function1[/* index */ Double, String])] = js.undefined
   
   var style: js.UndefOr[CSSPropertiesPartialRecorAlignTracks] = js.undefined
   
@@ -403,7 +403,9 @@ object PartialCascaderViewProps {
     
     inline def setOptionsVarargs(value: CascaderOption*): Self = StObject.set(x, "options", js.Array(value*))
     
-    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String | (js.Function1[/* index */ Double, String])): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderFunction1(value: /* index */ Double => String): Self = StObject.set(x, "placeholder", js.Any.fromFunction1(value))
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     

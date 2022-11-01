@@ -573,6 +573,8 @@ object libMongoMemoryServerMod {
     
     var keyfileLocation: js.UndefOr[NonNullable[js.UndefOr[String]]] = js.undefined
     
+    var launchTimeout: js.UndefOr[NonNullable[js.UndefOr[Double]]] = js.undefined
+    
     var port: NonNullable[js.UndefOr[Double]]
     
     var replSet: js.UndefOr[NonNullable[js.UndefOr[String]]] = js.undefined
@@ -606,6 +608,10 @@ object libMongoMemoryServerMod {
       inline def setKeyfileLocation(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "keyfileLocation", value.asInstanceOf[js.Any])
       
       inline def setKeyfileLocationUndefined: Self = StObject.set(x, "keyfileLocation", js.undefined)
+      
+      inline def setLaunchTimeout(value: NonNullable[js.UndefOr[Double]]): Self = StObject.set(x, "launchTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setLaunchTimeoutUndefined: Self = StObject.set(x, "launchTimeout", js.undefined)
       
       inline def setPort(value: NonNullable[js.UndefOr[Double]]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/filter-color-matrix" : "7.0.0"
+      "@pixi/filter-color-matrix" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/filter-color-matrix" : "7.0.0"
+      "@pixi/filter-color-matrix" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

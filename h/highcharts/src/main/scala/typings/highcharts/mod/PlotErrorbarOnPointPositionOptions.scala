@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlotErrorbarOnPointPositionOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock) Series center offset from the original x
-    * position. If defined, the connector line is drawn connecting original
-    * position with new position.
+    * (Highcharts) Series center offset from the original x position. If
+    * defined, the connector line is drawn connecting original position with
+    * new position.
     */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Series center offset from the original y
-    * position. If defined, the connector line is drawn from original position
-    * to a new position.
+    * (Highcharts) Series center offset from the original y position. If
+    * defined, the connector line is drawn from original position to a new
+    * position.
     */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock) X position of the series center. By default, the
-    * series is displayed on the point that it is connected to.
+    * (Highcharts) X position of the series center. By default, the series is
+    * displayed on the point that it is connected to.
     */
   var x: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Y position of the series center. By default, the
-    * series is displayed on the point that it is connected to.
+    * (Highcharts) Y position of the series center. By default, the series is
+    * displayed on the point that it is connected to.
     */
   var y: js.UndefOr[Double] = js.undefined
 }

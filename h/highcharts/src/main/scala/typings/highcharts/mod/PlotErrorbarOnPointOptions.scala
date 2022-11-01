@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlotErrorbarOnPointOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock) Options for the connector in the _Series on
-    * point_ feature.
+    * (Highcharts) Options for the connector in the _Series on point_ feature.
     *
     * In styled mode, the connector can be styled with the
     * `.highcharts-connector-seriesonpoint` class name.
@@ -16,15 +15,14 @@ trait PlotErrorbarOnPointOptions extends StObject {
   var connectorOptions: js.UndefOr[PlotErrorbarOnPointConnectorOptions | SVGAttributes] = js.undefined
   
   /**
-    * (Highcharts, Highstock) The `id` of the point that we connect the series
-    * to. Only points with a given `plotX` and `plotY` values and map points
-    * are valid.
+    * (Highcharts) The `id` of the point that we connect the series to. Only
+    * points with a given `plotX` and `plotY` values and map points are valid.
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Options allowing to set a position and an offset
-    * of the series in the _Series on point_ feature.
+    * (Highcharts) Options allowing to set a position and an offset of the
+    * series in the _Series on point_ feature.
     */
   var position: js.UndefOr[js.Object | PlotErrorbarOnPointPositionOptions] = js.undefined
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-steps"
-version := "5.0.0-alpha.0-810f6c"
+version := "5.0.0-alpha.2-1fe11b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

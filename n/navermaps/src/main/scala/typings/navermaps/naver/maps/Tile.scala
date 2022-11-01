@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Map.Tile
+/**
+  * Tile
+  */
 @js.native
 trait Tile
   extends StObject
@@ -17,8 +19,10 @@ trait Tile
   
   def destroy(): Unit = js.native
   
-  def fadeIn(callback: js.Function0[Any]): Unit = js.native
-  def fadeIn(callback: js.Function0[Any], startOpacity: Double): Unit = js.native
+  def fadeIn(callback: js.Function0[Unit]): Unit = js.native
+  def fadeIn(callback: js.Function0[Unit], startOpacity: Double): Unit = js.native
+  
+  def getDuration(): Double = js.native
   
   def getElement(): HTMLElement = js.native
   
@@ -35,7 +39,9 @@ trait Tile
   def hide(): Unit = js.native
   
   def load(): Unit = js.native
+  def load(tileOptions: Unit, loaded: js.Function0[Unit]): Unit = js.native
   def load(tileOptions: TileOptions): Unit = js.native
+  def load(tileOptions: TileOptions, loaded: js.Function0[Unit]): Unit = js.native
   
   def remove(): Unit = js.native
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServiceOptions extends StObject {
   
-  var orders: js.UndefOr[OrderType | String] = js.undefined
+  var orders: js.UndefOr[String] = js.undefined
   
   var sourcecrs: js.UndefOr[CoordinatesType] = js.undefined
   
@@ -21,7 +21,7 @@ object ServiceOptions {
   
   extension [Self <: ServiceOptions](x: Self) {
     
-    inline def setOrders(value: OrderType | String): Self = StObject.set(x, "orders", value.asInstanceOf[js.Any])
+    inline def setOrders(value: String): Self = StObject.set(x, "orders", value.asInstanceOf[js.Any])
     
     inline def setOrdersUndefined: Self = StObject.set(x, "orders", js.undefined)
     

@@ -39,6 +39,9 @@ object distDeclarationsSrcConfigPinchConfigResolverMod {
     
     inline def modifierKey(value: ModifierKey): ModifierKey = ^.asInstanceOf[js.Dynamic].applyDynamic("modifierKey")(value.asInstanceOf[js.Any]).asInstanceOf[ModifierKey]
     
+    inline def pinchOnWheel(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pinchOnWheel")().asInstanceOf[Boolean]
+    inline def pinchOnWheel(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pinchOnWheel")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
     inline def preventDefault(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefault")().asInstanceOf[Boolean]
     inline def preventDefault(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefault")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     

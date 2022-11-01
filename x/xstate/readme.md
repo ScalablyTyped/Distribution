@@ -1,7 +1,7 @@
 
 # Scala.js typings for xstate
 
-Typings are for version 4.33.6
+Typings are for version 4.34.0
 
 ## Library description:
 Finite State Machines and Statecharts for the Modern Web.

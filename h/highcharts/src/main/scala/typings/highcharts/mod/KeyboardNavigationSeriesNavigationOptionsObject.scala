@@ -18,7 +18,7 @@ trait KeyboardNavigationSeriesNavigationOptionsObject extends StObject {
     * like left/right. This can be useful for unifying navigation behavior
     * with/without screen readers enabled.
     */
-  var mode: js.UndefOr[OptionsModeValue] = js.undefined
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When a series contains more
@@ -50,7 +50,7 @@ object KeyboardNavigationSeriesNavigationOptionsObject {
   
   extension [Self <: KeyboardNavigationSeriesNavigationOptionsObject](x: Self) {
     
-    inline def setMode(value: OptionsModeValue): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

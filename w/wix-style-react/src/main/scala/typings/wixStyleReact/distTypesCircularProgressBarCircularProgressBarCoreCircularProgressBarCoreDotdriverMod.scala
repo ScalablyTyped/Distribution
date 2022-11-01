@@ -22,9 +22,6 @@ object distTypesCircularProgressBarCircularProgressBarCoreCircularProgressBarCor
     /** Get the progress percentages value */
     def getValue(): js.UndefOr[String | Null]
     
-    /** Returms true if has error */
-    def hasError(): Boolean
-    
     /** Returms true if has progress completed (value is 100) */
     def isCompleted(): Boolean
     
@@ -46,14 +43,13 @@ object distTypesCircularProgressBarCircularProgressBarCoreCircularProgressBarCor
       exists: () => Boolean,
       getLabelTextContent: () => js.UndefOr[String | Null],
       getValue: () => js.UndefOr[String | Null],
-      hasError: () => Boolean,
       isCompleted: () => Boolean,
       isErrorIconDisplayed: () => Boolean,
       isLabelDisplayed: () => Boolean,
       isPercentagesProgressDisplayed: () => Boolean,
       isSuccessIconDisplayed: () => Boolean
     ): CircularProgressBarCoreDriver = {
-      val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), getLabelTextContent = js.Any.fromFunction0(getLabelTextContent), getValue = js.Any.fromFunction0(getValue), hasError = js.Any.fromFunction0(hasError), isCompleted = js.Any.fromFunction0(isCompleted), isErrorIconDisplayed = js.Any.fromFunction0(isErrorIconDisplayed), isLabelDisplayed = js.Any.fromFunction0(isLabelDisplayed), isPercentagesProgressDisplayed = js.Any.fromFunction0(isPercentagesProgressDisplayed), isSuccessIconDisplayed = js.Any.fromFunction0(isSuccessIconDisplayed))
+      val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), getLabelTextContent = js.Any.fromFunction0(getLabelTextContent), getValue = js.Any.fromFunction0(getValue), isCompleted = js.Any.fromFunction0(isCompleted), isErrorIconDisplayed = js.Any.fromFunction0(isErrorIconDisplayed), isLabelDisplayed = js.Any.fromFunction0(isLabelDisplayed), isPercentagesProgressDisplayed = js.Any.fromFunction0(isPercentagesProgressDisplayed), isSuccessIconDisplayed = js.Any.fromFunction0(isSuccessIconDisplayed))
       __obj.asInstanceOf[CircularProgressBarCoreDriver]
     }
     
@@ -62,8 +58,6 @@ object distTypesCircularProgressBarCircularProgressBarCoreCircularProgressBarCor
       inline def setGetLabelTextContent(value: () => js.UndefOr[String | Null]): Self = StObject.set(x, "getLabelTextContent", js.Any.fromFunction0(value))
       
       inline def setGetValue(value: () => js.UndefOr[String | Null]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
-      
-      inline def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
       
       inline def setIsCompleted(value: () => Boolean): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
       

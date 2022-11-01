@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PanoramaPov extends StObject {
   
-  var fov: Double
+  var fov: js.UndefOr[Double] = js.undefined
   
-  var pan: Double
+  var pan: js.UndefOr[Double] = js.undefined
   
-  var tilt: Double
+  var tilt: js.UndefOr[Double] = js.undefined
 }
 object PanoramaPov {
   
-  inline def apply(fov: Double, pan: Double, tilt: Double): PanoramaPov = {
-    val __obj = js.Dynamic.literal(fov = fov.asInstanceOf[js.Any], pan = pan.asInstanceOf[js.Any], tilt = tilt.asInstanceOf[js.Any])
+  inline def apply(): PanoramaPov = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PanoramaPov]
   }
   
@@ -23,8 +23,14 @@ object PanoramaPov {
     
     inline def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     
+    inline def setFovUndefined: Self = StObject.set(x, "fov", js.undefined)
+    
     inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+    
     inline def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
+    
+    inline def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
   }
 }

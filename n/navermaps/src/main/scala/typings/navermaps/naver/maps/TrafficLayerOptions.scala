@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TrafficLayerOptions extends StObject {
   
-  var interval: Double
+  var interval: js.UndefOr[Double] = js.undefined
   
   var overlayMap: js.UndefOr[Boolean] = js.undefined
   
@@ -14,14 +14,16 @@ trait TrafficLayerOptions extends StObject {
 }
 object TrafficLayerOptions {
   
-  inline def apply(interval: Double): TrafficLayerOptions = {
-    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
+  inline def apply(): TrafficLayerOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficLayerOptions]
   }
   
   extension [Self <: TrafficLayerOptions](x: Self) {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     inline def setOverlayMap(value: Boolean): Self = StObject.set(x, "overlayMap", value.asInstanceOf[js.Any])
     

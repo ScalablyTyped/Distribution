@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "amazon-dax-client"
-version := "1.2-dt-20220419Z-57fcde"
+version := "1.2-dt-20220419Z-650d2b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1243.0-278cf4",
+  "org.scalablytyped" %%% "aws-sdk" % "2.1244.0-000da4",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

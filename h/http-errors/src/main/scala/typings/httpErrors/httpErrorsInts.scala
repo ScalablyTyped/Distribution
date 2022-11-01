@@ -135,6 +135,10 @@ object httpErrorsInts {
   inline def `502`: `502` = 502.asInstanceOf[`502`]
   
   @js.native
+  sealed trait `503` extends StObject
+  inline def `503`: `503` = 503.asInstanceOf[`503`]
+  
+  @js.native
   sealed trait `504` extends StObject
   inline def `504`: `504` = 504.asInstanceOf[`504`]
   

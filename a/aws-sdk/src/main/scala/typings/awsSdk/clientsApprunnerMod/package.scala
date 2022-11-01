@@ -78,6 +78,8 @@ type CustomDomainAssociationStatus = _CustomDomainAssociationStatus | java.lang.
 
 type CustomDomainList = js.Array[CustomDomain]
 
+type CustomerAccountId = java.lang.String
+
 type DescribeCustomDomainsMaxResults = Double
 
 type DomainName = java.lang.String
@@ -240,6 +242,25 @@ type VpcConnectorName = java.lang.String
 type VpcConnectorStatus = _VpcConnectorStatus | java.lang.String
 
 type VpcConnectors = js.Array[VpcConnector]
+
+type VpcDNSTargetList = js.Array[VpcDNSTarget]
+
+type VpcIngressConnectionName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.PENDING_CREATION
+  - typings.awsSdk.awsSdkStrings.PENDING_UPDATE
+  - typings.awsSdk.awsSdkStrings.PENDING_DELETION
+  - typings.awsSdk.awsSdkStrings.FAILED_CREATION
+  - typings.awsSdk.awsSdkStrings.FAILED_UPDATE
+  - typings.awsSdk.awsSdkStrings.FAILED_DELETION
+  - typings.awsSdk.awsSdkStrings.DELETED
+  - java.lang.String
+*/
+type VpcIngressConnectionStatus = _VpcIngressConnectionStatus | java.lang.String
+
+type VpcIngressConnectionSummaryList = js.Array[VpcIngressConnectionSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2020-05-15`

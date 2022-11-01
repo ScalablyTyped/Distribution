@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "4.23.6-9bcc13"
+version := "4.23.6-36cef1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-component__portal" % "1.0.0-9-8e01d0",
   "org.scalablytyped" %%% "rc-dialog" % "9.0.0-8ecf09",
   "org.scalablytyped" %%% "rc-drawer" % "6.0.0-238e8e",
-  "org.scalablytyped" %%% "rc-field-form" % "1.27.2-e38ff5",
+  "org.scalablytyped" %%% "rc-field-form" % "1.27.3-d4ab56",
   "org.scalablytyped" %%% "rc-image" % "5.9.0-503c4a",
   "org.scalablytyped" %%% "rc-input" % "0.1.2-c110c4",
   "org.scalablytyped" %%% "rc-input-number" % "7.3.9-6b1bd6",
@@ -31,7 +31,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-segmented" % "2.1.0-07807c",
   "org.scalablytyped" %%% "rc-select" % "14.1.13-85dc4d",
   "org.scalablytyped" %%% "rc-slider" % "10.0.1-da8fb8",
-  "org.scalablytyped" %%% "rc-steps" % "5.0.0-alpha.0-810f6c",
+  "org.scalablytyped" %%% "rc-steps" % "5.0.0-alpha.2-1fe11b",
   "org.scalablytyped" %%% "rc-table" % "7.27.2-c20e82",
   "org.scalablytyped" %%% "rc-tabs" % "12.2.1-859442",
   "org.scalablytyped" %%% "rc-textarea" % "0.4.5-9037bd",

@@ -509,6 +509,13 @@ trait ObjectChain[T]
   def get_TKey_ExpChain[TKey /* <: /* keyof T */ java.lang.String */](path: TKey): ExpChain[
     /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
   ] = js.native
+  /**
+    * @see _.get
+    */
+  @JSName("get")
+  def get_TPathTDefault_ExpChain[TPath /* <: java.lang.String */, TDefault](path: TPath): ExpChain[(GetFieldType[T, TPath]) | TDefault] = js.native
+  @JSName("get")
+  def get_TPathTDefault_ExpChain[TPath /* <: java.lang.String */, TDefault](path: TPath, defaultValue: TDefault): ExpChain[(GetFieldType[T, TPath]) | TDefault] = js.native
   
   /**
     * @see _.groupBy

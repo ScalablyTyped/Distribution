@@ -46,6 +46,9 @@ trait GetIpamResourceCidrsRequest extends StObject {
     */
   var ResourceOwner: js.UndefOr[String] = js.undefined
   
+  /**
+    * The resource tag.
+    */
   var ResourceTag: js.UndefOr[RequestIpamResourceTag] = js.undefined
   
   /**

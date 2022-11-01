@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ProvisionPublicIpv4PoolCidrResult extends StObject {
   
+  /**
+    * Information about the address range of the public IPv4 pool.
+    */
   var PoolAddressRange: js.UndefOr[PublicIpv4PoolRange] = js.undefined
   
   /**

@@ -1,16 +1,21 @@
 package typings.navermaps.global.naver.maps
 
 import typings.navermaps.naver.maps.Coord
+import typings.navermaps.naver.maps.LatLngBoundsLiteral
 import typings.navermaps.naver.maps.LatLngLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * LatLngBounds
+  */
 @JSGlobal("naver.maps.LatLngBounds")
 @js.native
 open class LatLngBounds protected ()
   extends StObject
      with typings.navermaps.naver.maps.LatLngBounds {
+  def this(literal: LatLngBoundsLiteral) = this()
   def this(sw: typings.navermaps.naver.maps.LatLng, ne: typings.navermaps.naver.maps.LatLng) = this()
 }
 object LatLngBounds {

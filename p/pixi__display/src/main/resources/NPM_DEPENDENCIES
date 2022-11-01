@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/display" : "7.0.0"
+      "@pixi/display" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/display" : "7.0.0"
+      "@pixi/display" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

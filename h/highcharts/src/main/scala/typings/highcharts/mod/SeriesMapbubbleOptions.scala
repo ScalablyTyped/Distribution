@@ -26,16 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var data: js.UndefOr[js.Array[Double | Null | SeriesMapbubbleDataOptions]] = js.undefined
   
   /**
-    * Not available
-    */
-  var dataParser: Unit
-  
-  /**
-    * Not available
-    */
-  var dataURL: Unit
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -102,8 +92,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesMapbubbleOptions {
   
-  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | mapbubble): SeriesMapbubbleOptions = {
-    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
+  inline def apply(`type`: String | mapbubble): SeriesMapbubbleOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesMapbubbleOptions]
   }
@@ -111,10 +101,6 @@ object SeriesMapbubbleOptions {
   extension [Self <: SeriesMapbubbleOptions](x: Self) {
     
     inline def setData(value: js.Array[Double | Null | SeriesMapbubbleDataOptions]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
-    
-    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

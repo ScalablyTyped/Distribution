@@ -10,6 +10,8 @@ trait ConversationAttributes extends StObject {
   
   var inboundTimeout: js.UndefOr[Double] = js.undefined
   
+  var method: js.UndefOr[String] = js.undefined
+  
   var record: js.UndefOr[ConversationRecord] = js.undefined
   
   var recordingStatusCallback: js.UndefOr[String] = js.undefined
@@ -29,6 +31,8 @@ trait ConversationAttributes extends StObject {
   var statusCallbackMethod: js.UndefOr[String] = js.undefined
   
   var trim: js.UndefOr[ConversationTrim] = js.undefined
+  
+  var url: js.UndefOr[String] = js.undefined
 }
 object ConversationAttributes {
   
@@ -46,6 +50,10 @@ object ConversationAttributes {
     inline def setInboundTimeout(value: Double): Self = StObject.set(x, "inboundTimeout", value.asInstanceOf[js.Any])
     
     inline def setInboundTimeoutUndefined: Self = StObject.set(x, "inboundTimeout", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     inline def setRecord(value: ConversationRecord): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
     
@@ -90,5 +98,9 @@ object ConversationAttributes {
     inline def setTrim(value: ConversationTrim): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
     inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

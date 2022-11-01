@@ -979,6 +979,20 @@ trait Connect extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Dismisses contacts from an agent’s CCP and returns the agent to an available state, which allows the agent to receive a new routed contact. Contacts can only be dismissed if they are in a MISSED, ERROR, ENDED, or REJECTED state in the Agent Event Stream.
+    */
+  def dismissUserContact(): Request[DismissUserContactResponse, AWSError] = js.native
+  def dismissUserContact(callback: js.Function2[/* err */ AWSError, /* data */ DismissUserContactResponse, scala.Unit]): Request[DismissUserContactResponse, AWSError] = js.native
+  /**
+    * Dismisses contacts from an agent’s CCP and returns the agent to an available state, which allows the agent to receive a new routed contact. Contacts can only be dismissed if they are in a MISSED, ERROR, ENDED, or REJECTED state in the Agent Event Stream.
+    */
+  def dismissUserContact(params: DismissUserContactRequest): Request[DismissUserContactResponse, AWSError] = js.native
+  def dismissUserContact(
+    params: DismissUserContactRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DismissUserContactResponse, scala.Unit]
+  ): Request[DismissUserContactResponse, AWSError] = js.native
+  
+  /**
     * Retrieves the contact attributes for the specified contact.
     */
   def getContactAttributes(): Request[GetContactAttributesResponse, AWSError] = js.native
@@ -2201,14 +2215,14 @@ trait Connect extends Service {
   ): Request[UpdateTaskTemplateResponse, AWSError] = js.native
   
   /**
-    * Updates the traffic distribution for a given traffic distribution group. For more information about updating a traffic distribution group see Update telephony traffic distribution across Amazon Web Services Regions  in the Amazon Connect Administrator Guide. 
+    * Updates the traffic distribution for a given traffic distribution group.  For more information about updating a traffic distribution group, see Update telephony traffic distribution across Amazon Web Services Regions  in the Amazon Connect Administrator Guide. 
     */
   def updateTrafficDistribution(): Request[UpdateTrafficDistributionResponse, AWSError] = js.native
   def updateTrafficDistribution(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTrafficDistributionResponse, scala.Unit]
   ): Request[UpdateTrafficDistributionResponse, AWSError] = js.native
   /**
-    * Updates the traffic distribution for a given traffic distribution group. For more information about updating a traffic distribution group see Update telephony traffic distribution across Amazon Web Services Regions  in the Amazon Connect Administrator Guide. 
+    * Updates the traffic distribution for a given traffic distribution group.  For more information about updating a traffic distribution group, see Update telephony traffic distribution across Amazon Web Services Regions  in the Amazon Connect Administrator Guide. 
     */
   def updateTrafficDistribution(params: UpdateTrafficDistributionRequest): Request[UpdateTrafficDistributionResponse, AWSError] = js.native
   def updateTrafficDistribution(

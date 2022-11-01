@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__utilities
 
-Typings are for version 7.38.1
+Typings are for version 7.38.2
 
 ## Library description:
 Fluent UI React utilities for building components.

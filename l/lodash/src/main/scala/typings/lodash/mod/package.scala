@@ -6,6 +6,7 @@ import typings.lodash.GlobalFunction
 import typings.lodash.GlobalPartial
 import typings.std.ArrayLike
 import typings.std.Exclude
+import typings.std.Extract
 import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -56,6 +57,8 @@ type DictionaryIterator[T, TResult] = ObjectIterator[Dictionary[T], TResult]
 
 type DictionaryIteratorTypeGuard[T, S /* <: T */] = ObjectIteratorTypeGuard[Dictionary[T], S]
 
+type FieldWithPossiblyUndefined[T, Key] = (GetFieldType[Exclude[T, Unit], Key]) | (Extract[T, Unit])
+
 type Function0[R] = js.Function0[R]
 
 type Function1[T1, R] = js.Function1[/* t1 */ T1, R]
@@ -67,6 +70,8 @@ type Function3[T1, T2, T3, R] = js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ 
 type Function4[T1, T2, T3, T4, R] = js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]
 
 type FunctionBase = GlobalFunction
+
+type IndexedFieldWithPossiblyUndefined[T, Key] = (GetIndexedField[Exclude[T, Unit], Key]) | (Extract[T, Unit])
 
 type IsEqualCustomizer = js.Function6[
 /* value */ Any, 

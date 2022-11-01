@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "use-gesture__react"
-version := "10.2.20-7a42b5"
+version := "10.2.21-32d323"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

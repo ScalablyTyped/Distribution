@@ -1,11 +1,14 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Map
+/**
+  * Map
+  */
 @js.native
 trait Map
   extends StObject
@@ -14,14 +17,20 @@ trait Map
   def addPane(name: String, elementOrIndex: Double): Unit = js.native
   def addPane(name: String, elementOrIndex: HTMLElement): Unit = js.native
   
-  var controls: Any = js.native
+  def autoResize(): Unit = js.native
   
-  var data: Any = js.native
+  var controls: KVOArray[Position] = js.native
+  
+  var data: Data = js.native
   
   def destroy(): Unit = js.native
   
-  def fitBounds(bounds: Any): Unit = js.native
-  def fitBounds(bounds: Any, margin: Any): Unit = js.native
+  def fitBounds(bounds: ArrayOfCoords | ArrayOfCoordsLiteral): Unit = js.native
+  def fitBounds(bounds: ArrayOfCoords | ArrayOfCoordsLiteral, fitBoundsOptions: FitBoundsOptions): Unit = js.native
+  def fitBounds(bounds: Bounds): Unit = js.native
+  def fitBounds(bounds: BoundsLiteral): Unit = js.native
+  def fitBounds(bounds: BoundsLiteral, fitBoundsOptions: FitBoundsOptions): Unit = js.native
+  def fitBounds(bounds: Bounds, fitBoundsOptions: FitBoundsOptions): Unit = js.native
   
   def getBounds(): Bounds = js.native
   
@@ -32,6 +41,10 @@ trait Map
   def getElement(): HTMLElement = js.native
   
   def getMapTypeId(): String = js.native
+  
+  def getMaxZoom(): Double = js.native
+  
+  def getMinZoom(): Double = js.native
   
   def getOptions(): Any = js.native
   def getOptions(key: String): Any = js.native
@@ -46,11 +59,11 @@ trait Map
   
   def getZoom(): Double = js.native
   
-  var layers: Any = js.native
+  var layers: LayerRegistry = js.native
   
-  var mapSystemProjection: Any = js.native
+  var mapSystemProjection: MapSystemProjection = js.native
   
-  var mapTypes: Any = js.native
+  var mapTypes: MapTypeRegistry = js.native
   
   def morph(coord: Coord): Unit = js.native
   def morph(coord: CoordLiteral): Unit = js.native
@@ -64,11 +77,17 @@ trait Map
   def panBy(offset: Point): Unit = js.native
   def panBy(offset: PointLiteral): Unit = js.native
   
+  def panTo(coord: Coord): Unit = js.native
+  def panTo(coord: CoordLiteral): Unit = js.native
   def panTo(coord: CoordLiteral, transitionOptions: TransitionOptions): Unit = js.native
   def panTo(coord: Coord, transitionOptions: TransitionOptions): Unit = js.native
   
+  def panToBounds(bounds: Bounds): Unit = js.native
+  def panToBounds(bounds: BoundsLiteral): Unit = js.native
+  def panToBounds(bounds: BoundsLiteral, transitionOptions: Unit, margin: Margin): Unit = js.native
   def panToBounds(bounds: BoundsLiteral, transitionOptions: TransitionOptions): Unit = js.native
   def panToBounds(bounds: BoundsLiteral, transitionOptions: TransitionOptions, margin: Margin): Unit = js.native
+  def panToBounds(bounds: Bounds, transitionOptions: Unit, margin: Margin): Unit = js.native
   def panToBounds(bounds: Bounds, transitionOptions: TransitionOptions): Unit = js.native
   def panToBounds(bounds: Bounds, transitionOptions: TransitionOptions, margin: Margin): Unit = js.native
   
@@ -85,8 +104,10 @@ trait Map
   
   def setMapTypeId(mapTypeId: String): Unit = js.native
   
-  def setOptions(newOptionsOrKey: Any): Unit = js.native
-  def setOptions(newOptionsOrKey: Any, value: Any): Unit = js.native
+  def setOptions(newOptionsOrKey: String): Unit = js.native
+  def setOptions(newOptionsOrKey: String, value: Any): Unit = js.native
+  def setOptions(newOptionsOrKey: StringDictionary[Any]): Unit = js.native
+  def setOptions(newOptionsOrKey: StringDictionary[Any], value: Any): Unit = js.native
   
   def setSize(size: Size): Unit = js.native
   def setSize(size: SizeLiteral): Unit = js.native

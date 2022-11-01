@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluentui__style-utilities"
-version := "8.8.0-c6e740"
+version := "8.8.1-86467a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-a99f73",
   "org.scalablytyped" %%% "fluentui__dom-utilities" % "2.2.2-5950e4",
   "org.scalablytyped" %%% "fluentui__merge-styles" % "8.5.3-17abf1",
-  "org.scalablytyped" %%% "fluentui__theme" % "2.6.16-3e5e9b",
-  "org.scalablytyped" %%% "fluentui__utilities" % "8.13.1-845120",
+  "org.scalablytyped" %%% "fluentui__theme" % "2.6.17-5389d9",
+  "org.scalablytyped" %%% "fluentui__utilities" % "8.13.2-a0495c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-4acc51",

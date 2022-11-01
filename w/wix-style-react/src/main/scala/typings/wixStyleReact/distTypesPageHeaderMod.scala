@@ -7,6 +7,8 @@ import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
 import typings.wixStyleReact.anon.HasBackgroundImage
+import typings.wixStyleReact.wixStyleReactStrings.dark
+import typings.wixStyleReact.wixStyleReactStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,6 +45,8 @@ object distTypesPageHeaderMod {
     var onBackClicked: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
     var showBackButton: js.UndefOr[Boolean] = js.undefined
+    
+    var skin: js.UndefOr[light | dark] = js.undefined
     
     var subtitle: js.UndefOr[ReactNode] = js.undefined
     
@@ -96,6 +100,10 @@ object distTypesPageHeaderMod {
       inline def setShowBackButton(value: Boolean): Self = StObject.set(x, "showBackButton", value.asInstanceOf[js.Any])
       
       inline def setShowBackButtonUndefined: Self = StObject.set(x, "showBackButton", js.undefined)
+      
+      inline def setSkin(value: light | dark): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
       inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       

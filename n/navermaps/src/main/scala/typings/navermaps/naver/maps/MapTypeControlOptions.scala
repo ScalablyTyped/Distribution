@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapTypeControlOptions extends StObject {
+trait MapTypeControlOptions
+  extends StObject
+     with ControlOptions {
   
   var mapTypeIds: js.Array[MapTypeId] | Null
-  
-  var position: Position
   
   var style: MapTypeControlStyle
 }
@@ -26,8 +26,6 @@ object MapTypeControlOptions {
     inline def setMapTypeIdsNull: Self = StObject.set(x, "mapTypeIds", null)
     
     inline def setMapTypeIdsVarargs(value: MapTypeId*): Self = StObject.set(x, "mapTypeIds", js.Array(value*))
-    
-    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setStyle(value: MapTypeControlStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

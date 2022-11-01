@@ -6,12 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SeriesConnectorsOptionsObject extends StObject {
   
+  /**
+    * (Gantt) Set the default pathfinder margin to use, in pixels. Some
+    * Pathfinder algorithms attempt to avoid obstacles, such as other points in
+    * the chart. These algorithms use this margin to determine how close lines
+    * can be to an obstacle. The default is to compute this automatically from
+    * the size of the obstacles in the chart.
+    *
+    * To draw connecting lines close to existing points, set this to a low
+    * number. For more space around existing points, set this number higher.
+    */
+  var algorithmMargin: js.UndefOr[Double] = js.undefined
+  
   var animation: js.UndefOr[ConnectorsAnimationOptionsObject] = js.undefined
   
   /**
     * (Gantt) Set the default dash style for this chart's connecting lines.
     */
   var dashStyle: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Gantt) Enable connectors for this chart. Requires Highcharts Gantt.
+    */
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Marker options specific to the end markers for this chart's
@@ -77,6 +94,10 @@ object SeriesConnectorsOptionsObject {
   
   extension [Self <: SeriesConnectorsOptionsObject](x: Self) {
     
+    inline def setAlgorithmMargin(value: Double): Self = StObject.set(x, "algorithmMargin", value.asInstanceOf[js.Any])
+    
+    inline def setAlgorithmMarginUndefined: Self = StObject.set(x, "algorithmMargin", js.undefined)
+    
     inline def setAnimation(value: ConnectorsAnimationOptionsObject): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
@@ -84,6 +105,10 @@ object SeriesConnectorsOptionsObject {
     inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     inline def setEndMarker(value: ConnectorsEndMarkerOptions): Self = StObject.set(x, "endMarker", value.asInstanceOf[js.Any])
     

@@ -11,21 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with PlotSupertrendOptions {
   
   /**
-    * Not available
-    */
-  var data: Unit
-  
-  /**
-    * Not available
-    */
-  var dataParser: Unit
-  
-  /**
-    * Not available
-    */
-  var dataURL: Unit
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -86,19 +71,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesSupertrendOptions {
   
-  inline def apply(data: Unit, dataParser: Unit, dataURL: Unit, `type`: String | supertrend): SeriesSupertrendOptions = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
+  inline def apply(`type`: String | supertrend): SeriesSupertrendOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSupertrendOptions]
   }
   
   extension [Self <: SeriesSupertrendOptions](x: Self) {
-    
-    inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
-    
-    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,5 @@
 package typings.highcharts.mod
 
-import typings.highcharts.highchartsInts.`0`
-import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,12 +34,23 @@ trait PlotHeatmapOptions extends StObject {
     * (Highcharts, Highmaps) Animation is disabled by default on the heatmap
     * series.
     */
-  var animation: js.UndefOr[Boolean | PlotHeatmapAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) For some series, there is a limit that shuts down
+    * animation by default when the total number of points in the chart is too
+    * high. For example, for a column chart and its derivatives, animation does
+    * not run if there is more than 250 points totally. To disable this cap,
+    * set `animationLimit` to `Infinity`. This option works if animation is
+    * fired on individual points, not on a group of points like e.g. during the
+    * initial animation.
+    */
+  var animationLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Sets the color blending in the boost module.
     */
-  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
+  var boostBlending: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Set the point threshold for when a series should
@@ -95,6 +104,20 @@ trait PlotHeatmapOptions extends StObject {
   var clip: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts, Highmaps) Options for marker clusters, the concept of
+    * sampling the data values into larger blocks in order to ease readability
+    * and increase performance of the JavaScript charts.
+    *
+    * Note: marker clusters module is not working with `boost` and
+    * `draggable-points` modules.
+    *
+    * The marker clusters feature requires the marker-clusters.js file to be
+    * loaded, found in the modules directory of the download package, or online
+    * at code.highcharts.com/modules/marker-clusters.js.
+    */
+  var cluster: js.UndefOr[PlotHeatmapClusterOptions] = js.undefined
+  
+  /**
     * (Highcharts) The main color of the series. In heat maps this color is
     * rarely used, as we mostly use the color to denote the value of each
     * point. Unless options are set in the colorAxis, the default value is
@@ -143,13 +166,13 @@ trait PlotHeatmapOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
+  var compare: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
+  var compareBase: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -161,6 +184,19 @@ trait PlotHeatmapOptions extends StObject {
     * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts) Polar charts only. Whether to connect the ends of a line
+    * series plot across the extremes.
+    */
+  var connectEnds: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Whether to connect a graph line across null
+    * points, or render a gap between the two points on either side of the
+    * null.
+    */
+  var connectNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
@@ -177,6 +213,18 @@ trait PlotHeatmapOptions extends StObject {
     * column is rendered blurry.
     */
   var crisp: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When the series contains less points than the
+    * crop threshold, all points are drawn, even if the points fall outside the
+    * visible plot area at the current zoom. The advantage of drawing all
+    * points (including markers and columns), is that animation is performed on
+    * updates. On the other hand, when the series contains more points than the
+    * crop threshold, the series data is cropped to only contain points that
+    * fall within the plot area. The advantage of cropping away invisible
+    * points is to increase performance on large series.
+    */
+  var cropThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Cumulative Sum feature replaces points' values with the
@@ -203,6 +251,15 @@ trait PlotHeatmapOptions extends StObject {
     * own event callbacks and formatter callbacks.
     */
   var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) Name of the dash style to use for the graph, or
+    * for some series types the outline of each shape.
+    *
+    * In styled mode, the stroke dash-array can be set with the same classes as
+    * listed under series.color.
+    */
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Indicates data is structured as columns instead of
@@ -273,6 +330,18 @@ trait PlotHeatmapOptions extends StObject {
   var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   
   /**
+    * (Highcharts, Highmaps) Determines whether the series should look for the
+    * nearest point in both dimensions or just the x-dimension when hovering
+    * the series. Defaults to `'xy'` for scatter series and `'x'` for most
+    * other series. If the data has duplicate x-values, it is recommended to
+    * set this to `'xy'` to allow hovering over all points.
+    *
+    * Applies only to series types using nearest neighbor search (not direct
+    * hover) for tooltip.
+    */
+  var findNearestPointBy: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
     *
@@ -301,7 +370,15 @@ trait PlotHeatmapOptions extends StObject {
     * values, which on a datetime axis is milliseconds. This also applies to
     * the navigator series that inherits gap options from the base series.
     */
-  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
+  var gapUnit: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
+    * chart width or only the zoomed area when zooming in on parts of the X
+    * axis. By default, the Y axis adjusts to the min and max of the visible
+    * data. Cartesian series only.
+    */
+  var getExtremesFromAll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highmaps) When set to `false` will prevent the series data
@@ -311,6 +388,22 @@ trait PlotHeatmapOptions extends StObject {
     * `includeInCSVExport`.
     */
   var includeInDataExport: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Apply a jitter effect for the rendered markers.
+    * When plotting discrete values, a little random noise may help telling the
+    * points apart. The jitter setting applies a random displacement of up to
+    * `n` axis units in either direction. So for example on a horizontal X
+    * axis, setting the `jitter.x` to 0.24 will render the point in a random
+    * position between 0.24 units to the left and 0.24 units to the right of
+    * the true axis position. On a category axis, setting it to 0.5 will fill
+    * up the bin and make the data appear continuous.
+    *
+    * When rendered on top of a box plot or a column series, a jitter value of
+    * 0.24 will correspond to the underlying series' default groupPadding and
+    * pointPadding settings.
+    */
+  var jitter: js.UndefOr[PlotHeatmapJitterOptions] = js.undefined
   
   /**
     * (Highmaps) What property to join the `mapData` to the value data. For
@@ -357,6 +450,18 @@ trait PlotHeatmapOptions extends StObject {
     * (Highstock) The line marks the last price from visible range of points.
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The width of the line connecting the data points.
+    */
+  var lineWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
+    * `stroke-linejoin` of a line graph. Round means that lines are rounded in
+    * the ends and bends.
+    */
+  var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
@@ -429,9 +534,89 @@ trait PlotHeatmapOptions extends StObject {
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Gantt) If no x values are given for the points in
+    * a series, `pointInterval` defines the interval of the x values. For
+    * example, if a series contains one value every decade starting from year
+    * 0, set `pointInterval` to `10`. In true `datetime` axes, the
+    * `pointInterval` is set in milliseconds.
+    *
+    * It can be also be combined with `pointIntervalUnit` to draw irregular
+    * time intervals.
+    *
+    * If combined with `relativeXValue`, an x value can be set on each point,
+    * and the `pointInterval` is added x times to the `pointStart` setting.
+    *
+    * Please note that this options applies to the _series data_, not the
+    * interval of the axis ticks, which is independent.
+    */
+  var pointInterval: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) On datetime series, this allows for
+    * setting the pointInterval to irregular time units, `day`, `month` and
+    * `year`. A day is usually the same as 24 hours, but `pointIntervalUnit`
+    * also takes the DST crossover into consideration when dealing with local
+    * time. Combine this option with `pointInterval` to draw weeks, quarters, 6
+    * months, 10 years etc.
+    *
+    * Please note that this options applies to the _series data_, not the
+    * interval of the axis ticks, which is independent.
+    */
+  var pointIntervalUnit: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highcharts, Highmaps) Padding between the points in the heatmap.
     */
   var pointPadding: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) Possible values: `"on"`, `"between"`,
+    * `number`.
+    *
+    * In a column chart, when pointPlacement is `"on"`, the point will not
+    * create any padding of the X axis. In a polar column chart this means that
+    * the first column points directly north. If the pointPlacement is
+    * `"between"`, the columns will be laid out between ticks. This is useful
+    * for example for visualising an amount between two points in time or in a
+    * certain sector of a polar chart.
+    *
+    * Since Highcharts 3.0.2, the point placement can also be numeric, where 0
+    * is on the axis value, -0.5 is between this value and the previous, and
+    * 0.5 is between this value and the next. Unlike the textual options,
+    * numeric point placement options won't affect axis padding.
+    *
+    * Note that pointPlacement needs a pointRange to work. For column series
+    * this is computed, but for line-type series it needs to be set.
+    *
+    * For the `xrange` series type and gantt charts, if the Y axis is a
+    * category axis, the `pointPlacement` applies to the Y axis rather than the
+    * (typically datetime) X axis.
+    *
+    * Defaults to `undefined` in cartesian charts, `"between"` in polar charts.
+    */
+  var pointPlacement: js.UndefOr[Double | String] = js.undefined
+  
+  /**
+    * (Highstock) The width of each point on the x axis. For example in a
+    * column chart with one value each day, the pointRange would be 1 day (= 24
+    * * 3600
+    *
+    * * 1000 milliseconds). This is normally computed automatically, but this
+    * option can be used to override the automatic value.
+    */
+  var pointRange: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) If no x values are given for the points in
+    * a series, pointStart defines on what value to start. For example, if a
+    * series contains one yearly value starting from 1945, set pointStart to
+    * 1945.
+    *
+    * If combined with `relativeXValue`, an x value can be set on each point.
+    * The x value from the point options is multiplied by `pointInterval` and
+    * added to `pointStart` to produce a modified x value.
+    */
+  var pointStart: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) When true, X values in the data set are relative
@@ -457,6 +642,13 @@ trait PlotHeatmapOptions extends StObject {
     * legend will be checked for a selected series.
     */
   var selected: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) Whether to apply a drop shadow to the graph line.
+    * Since 2.3 the shadow can be an object configuration containing `color`,
+    * `offsetX`, `offsetY`, `opacity` and `width`.
+    */
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highmaps) If true, a checkbox is displayed next to the
@@ -485,7 +677,37 @@ trait PlotHeatmapOptions extends StObject {
     */
   var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * (Highcharts, Highstock) When this is true, the series will not cause the
+    * Y axis to cross the zero plane (or threshold option) unless the data
+    * actually crosses the plane.
+    *
+    * For example, if `softThreshold` is `false`, a series of 0, 1, 2, 3 will
+    * make the Y axis show negative values according to the `minPadding`
+    * option. If `softThreshold` is `true`, the Y axis starts at 0.
+    */
+  var softThreshold: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Whether to stack the values of each series on top
+    * of each other. Possible values are `undefined` to disable, `"normal"` to
+    * stack by value or `"percent"`.
+    *
+    * When stacking is enabled, data must be sorted in ascending X order.
+    *
+    * Some stacking options are related to specific series types. In the
+    * streamgraph series type, the stacking option is set to `"stream"`. The
+    * second one is `"overlap"`, which only applies to waterfall series.
+    */
+  var stacking: js.UndefOr[String] = js.undefined
+  
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Whether to apply steps to the line. Possible
+    * values are `left`, `center` and `right`.
+    */
+  var step: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Sticky tracking of mouse events. When
@@ -497,6 +719,13 @@ trait PlotHeatmapOptions extends StObject {
     * be hidden when moving the mouse between series.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The threshold, also called zero level or base
+    * level. For line type series this is only used in conjunction with
+    * negativeColor.
+    */
+  var threshold: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) A configuration object for the tooltip
@@ -520,6 +749,12 @@ trait PlotHeatmapOptions extends StObject {
     * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highstock) The parameter allows setting line series type and use OHLC
+    * indicators. Data in OHLC format is required.
+    */
+  var useOhlcData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Set the initial visibility of the series.
@@ -569,11 +804,15 @@ object PlotHeatmapOptions {
     
     inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
     
-    inline def setAnimation(value: Boolean | PlotHeatmapAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationLimit(value: Double): Self = StObject.set(x, "animationLimit", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationLimitUndefined: Self = StObject.set(x, "animationLimit", js.undefined)
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setBoostBlending(value: OptionsBoostBlendingValue): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
+    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
     
     inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
     
@@ -601,6 +840,10 @@ object PlotHeatmapOptions {
     
     inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
+    inline def setCluster(value: PlotHeatmapClusterOptions): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorAxis(value: Boolean | Double | String): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
@@ -621,9 +864,9 @@ object PlotHeatmapOptions {
     
     inline def setColsizeUndefined: Self = StObject.set(x, "colsize", js.undefined)
     
-    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
     
@@ -633,6 +876,14 @@ object PlotHeatmapOptions {
     
     inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
+    inline def setConnectEnds(value: Boolean): Self = StObject.set(x, "connectEnds", value.asInstanceOf[js.Any])
+    
+    inline def setConnectEndsUndefined: Self = StObject.set(x, "connectEnds", js.undefined)
+    
+    inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
+    
+    inline def setConnectNullsUndefined: Self = StObject.set(x, "connectNulls", js.undefined)
+    
     inline def setConnectors(value: SeriesConnectorsOptionsObject): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
     
     inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
@@ -640,6 +891,10 @@ object PlotHeatmapOptions {
     inline def setCrisp(value: Boolean): Self = StObject.set(x, "crisp", value.asInstanceOf[js.Any])
     
     inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
+    
+    inline def setCropThreshold(value: Double): Self = StObject.set(x, "cropThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setCropThresholdUndefined: Self = StObject.set(x, "cropThreshold", js.undefined)
     
     inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
@@ -652,6 +907,10 @@ object PlotHeatmapOptions {
     inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
     
@@ -687,17 +946,29 @@ object PlotHeatmapOptions {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
+    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    
+    inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
+    
     inline def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
     
     inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
     
-    inline def setGapUnit(value: OptionsGapUnitValue): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
+    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
     
     inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
+    
+    inline def setGetExtremesFromAll(value: Boolean): Self = StObject.set(x, "getExtremesFromAll", value.asInstanceOf[js.Any])
+    
+    inline def setGetExtremesFromAllUndefined: Self = StObject.set(x, "getExtremesFromAll", js.undefined)
     
     inline def setIncludeInDataExport(value: Boolean): Self = StObject.set(x, "includeInDataExport", value.asInstanceOf[js.Any])
     
     inline def setIncludeInDataExportUndefined: Self = StObject.set(x, "includeInDataExport", js.undefined)
+    
+    inline def setJitter(value: PlotHeatmapJitterOptions): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+    
+    inline def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
     
     inline def setJoinBy(value: String | js.Array[String]): Self = StObject.set(x, "joinBy", value.asInstanceOf[js.Any])
     
@@ -722,6 +993,14 @@ object PlotHeatmapOptions {
     inline def setLastVisiblePrice(value: SeriesLastVisiblePriceOptionsObject): Self = StObject.set(x, "lastVisiblePrice", value.asInstanceOf[js.Any])
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setLinecap(value: SeriesLinecapValue): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
+    
+    inline def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
     
     inline def setLinkedTo(value: String): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
     
@@ -757,9 +1036,29 @@ object PlotHeatmapOptions {
     
     inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
     
+    inline def setPointInterval(value: Double): Self = StObject.set(x, "pointInterval", value.asInstanceOf[js.Any])
+    
+    inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
+    
+    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    
+    inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
+    
     inline def setPointPadding(value: Double): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
     
     inline def setPointPaddingUndefined: Self = StObject.set(x, "pointPadding", js.undefined)
+    
+    inline def setPointPlacement(value: Double | String): Self = StObject.set(x, "pointPlacement", value.asInstanceOf[js.Any])
+    
+    inline def setPointPlacementUndefined: Self = StObject.set(x, "pointPlacement", js.undefined)
+    
+    inline def setPointRange(value: Double): Self = StObject.set(x, "pointRange", value.asInstanceOf[js.Any])
+    
+    inline def setPointRangeUndefined: Self = StObject.set(x, "pointRange", js.undefined)
+    
+    inline def setPointStart(value: Double): Self = StObject.set(x, "pointStart", value.asInstanceOf[js.Any])
+    
+    inline def setPointStartUndefined: Self = StObject.set(x, "pointStart", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
@@ -774,6 +1073,10 @@ object PlotHeatmapOptions {
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setShadow(value: Boolean | ShadowOptionsObject): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
     
@@ -791,13 +1094,31 @@ object PlotHeatmapOptions {
     
     inline def setSkipKeyboardNavigationUndefined: Self = StObject.set(x, "skipKeyboardNavigation", js.undefined)
     
+    inline def setSoftThreshold(value: Boolean): Self = StObject.set(x, "softThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
+    
+    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    
+    inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
+    
     inline def setStates(value: SeriesStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
+    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
     inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
     
     inline def setStickyTrackingUndefined: Self = StObject.set(x, "stickyTracking", js.undefined)
+    
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdNull: Self = StObject.set(x, "threshold", null)
+    
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     inline def setTooltip(value: SeriesTooltipOptionsObject): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
@@ -806,6 +1127,10 @@ object PlotHeatmapOptions {
     inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
     
     inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
+    
+    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
+    
+    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

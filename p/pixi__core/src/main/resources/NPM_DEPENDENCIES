@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/core" : "7.0.0"
+      "@pixi/core" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/core" : "7.0.0"
+      "@pixi/core" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

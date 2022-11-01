@@ -1,6 +1,7 @@
 package typings.sentryCli
 
 import typings.sentryCli.anon.Projects
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -238,6 +239,12 @@ object mod {
     var dsn: js.UndefOr[String] = js.undefined
     
     /**
+      * Headers added to every outgoing network request.
+      * This value does not set any env variable, and is overridden by `customHeader`.
+      */
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
+    
+    /**
       * Organization slug.
       * This value will update `SENTRY_ORG` env variable.
       */
@@ -291,6 +298,10 @@ object mod {
       inline def setDsn(value: String): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
       
       inline def setDsnUndefined: Self = StObject.set(x, "dsn", js.undefined)
+      
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
       

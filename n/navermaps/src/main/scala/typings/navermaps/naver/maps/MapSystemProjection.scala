@@ -4,11 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * MapSystemProjection
+  */
 @js.native
 trait MapSystemProjection
   extends StObject
      with KVO {
   
+  // See https://navermaps.github.io/maps.js.ncp/docs/tutorial-Projection.html
   def factor(zoom: Double): Double = js.native
   
   def fromCoordToOffset(coord: Coord): Point = js.native

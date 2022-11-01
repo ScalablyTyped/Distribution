@@ -130,13 +130,17 @@ object anon {
   /* Inlined std.Partial<highcharts.highcharts.AnnotationControlPointOptionsObject> */
   trait PartialAnnotationControlP extends StObject {
     
+    var events: js.UndefOr[Dictionary[js.Function]] = js.undefined
+    
     var height: js.UndefOr[Double] = js.undefined
     
     var positioner: js.UndefOr[AnnotationControlPointPositionerFunction] = js.undefined
     
     var style: js.UndefOr[
-        AnnotationsControlPointStyleOptions | NavigationAnnotationsControlPointStyleOptions
+        AnnotationsControlPointStyleOptions | NavigationAnnotationsControlPointStyleOptions | SVGAttributes
       ] = js.undefined
+    
+    var symbol: js.UndefOr[String] = js.undefined
     
     var visible: js.UndefOr[Boolean] = js.undefined
     
@@ -151,6 +155,10 @@ object anon {
     
     extension [Self <: PartialAnnotationControlP](x: Self) {
       
+      inline def setEvents(value: Dictionary[js.Function]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -159,9 +167,15 @@ object anon {
       
       inline def setPositionerUndefined: Self = StObject.set(x, "positioner", js.undefined)
       
-      inline def setStyle(value: AnnotationsControlPointStyleOptions | NavigationAnnotationsControlPointStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(
+        value: AnnotationsControlPointStyleOptions | NavigationAnnotationsControlPointStyleOptions | SVGAttributes
+      ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -632,7 +646,7 @@ object anon {
         typings.highcharts.mod.Tick
       ] = js.native
     
-    var Time: Instantiable1[/* options */ TimeOptions, Time_] = js.native
+    var Time: Instantiable1[/* options */ js.UndefOr[TimeOptions], Time_] = js.native
     
     var Tooltip: Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip] = js.native
     
@@ -1036,7 +1050,7 @@ object anon {
         typings.highcharts.mod.Tick
       ] = js.native
     
-    var Time: Instantiable1[/* options */ TimeOptions, Time_] = js.native
+    var Time: Instantiable1[/* options */ js.UndefOr[TimeOptions], Time_] = js.native
     
     var Tooltip: Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip] = js.native
     
@@ -1341,11 +1355,6 @@ object anon {
     def onSeriesLegendItemClick(): Unit = js.native
     
     /**
-      * Find the center position of the label based on the distance option.
-      */
-    def onTickAfterGetLabelPosition(): Unit = js.native
-    
-    /**
       * Add special cases within the Tick class' methods for radial axes.
       */
     def onTickAfterGetPosition(): Unit = js.native
@@ -1433,11 +1442,6 @@ object anon {
     def useSerialIds(mode: Boolean): js.UndefOr[Boolean] = js.native
     
     def wrap(obj: Any, method: String, func: WrapProceedFunction): Unit = js.native
-    
-    /**
-      * Wrap the getMarkPath function to return the path of the radial marker.
-      */
-    def wrapTickGetMarkPath(): Unit = js.native
   }
   
   @js.native
@@ -1509,7 +1513,7 @@ object anon {
         typings.highcharts.mod.Tick
       ] = js.native
     
-    var Time: Instantiable1[/* options */ TimeOptions, Time_] = js.native
+    var Time: Instantiable1[/* options */ js.UndefOr[TimeOptions], Time_] = js.native
     
     var Tooltip: Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip] = js.native
     

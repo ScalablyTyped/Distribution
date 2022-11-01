@@ -9,6 +9,7 @@ import typings.appiumAdb.appiumAdbStrings.Dotapk
 import typings.appiumAdb.appiumAdbStrings.Dotapks
 import typings.appiumAdb.libToolsApkUtilsMod.StartAppOptions
 import typings.std.Record
+import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,6 +75,8 @@ object libHelpersMod {
   
   inline def getJavaHome(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJavaHome")().asInstanceOf[js.Promise[String]]
   
+  inline def getModuleRoot(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleRoot")().asInstanceOf[String]
+  
   inline def getOpenSslForOs(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpenSslForOs")().asInstanceOf[js.Promise[String]]
   
   inline def getSdkRootFromEnv(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSdkRootFromEnv")().asInstanceOf[js.UndefOr[String]]
@@ -88,20 +91,20 @@ object libHelpersMod {
   
   inline def isShowingLockscreen(dumpsys: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShowingLockscreen")(dumpsys.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def matchComponentName(classString: String): RegExpExecArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchComponentName")(classString.asInstanceOf[js.Any]).asInstanceOf[RegExpExecArray | Null]
+  
   inline def parseAapt2Strings(rawOutput: String, configMarker: String): Record[String, String | js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAapt2Strings")(rawOutput.asInstanceOf[js.Any], configMarker.asInstanceOf[js.Any])).asInstanceOf[Record[String, String | js.Array[String]]]
   
   inline def parseAaptStrings(rawOutput: String, configMarker: String): Record[String, String | js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAaptStrings")(rawOutput.asInstanceOf[js.Any], configMarker.asInstanceOf[js.Any])).asInstanceOf[Record[String, String | js.Array[String]]]
   
   inline def parseJsonData(output: String, entityName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsonData")(output.asInstanceOf[js.Any], entityName.asInstanceOf[js.Any])).asInstanceOf[Any]
   
+  inline def parseLaunchableActivityNames(dumpsys: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLaunchableActivityNames")(dumpsys.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
   inline def parseManifest(manifest: js.Object): ManifestInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parseManifest")(manifest.asInstanceOf[js.Any]).asInstanceOf[ManifestInfo]
   
   inline def requireSdkRoot(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requireSdkRoot")().asInstanceOf[js.Promise[String]]
   inline def requireSdkRoot(customRoot: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requireSdkRoot")(customRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  
-  @JSImport("appium-adb/lib/helpers", "rootDir")
-  @js.native
-  val rootDir: String = js.native
   
   inline def toAvdLocaleArgs(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toAvdLocaleArgs")().asInstanceOf[js.Array[String]]
   inline def toAvdLocaleArgs(language: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toAvdLocaleArgs")(language.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]

@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SelectDataObject extends StObject {
   
+  /**
+    * The selected Axis.
+    */
   var axis: Axis
   
+  /**
+    * The maximum axis value, either automatic or set manually.
+    */
   var max: Double
   
+  /**
+    * The minimum axis value, either automatic or set manually.
+    */
   var min: Double
 }
 object SelectDataObject {

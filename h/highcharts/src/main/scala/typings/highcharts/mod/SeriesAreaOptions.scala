@@ -36,16 +36,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ] = js.undefined
   
   /**
-    * Not available
-    */
-  var dataParser: Unit
-  
-  /**
-    * Not available
-    */
-  var dataURL: Unit
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -95,11 +85,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `type`: String | area
   
   /**
-    * Not available
-    */
-  var useOhlcData: Unit
-  
-  /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
     * defines which xAxis the particular series is connected to. It refers to
     * either the axis id or the index of the axis in the xAxis array, with 0
@@ -117,8 +102,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesAreaOptions {
   
-  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | area, useOhlcData: Unit): SeriesAreaOptions = {
-    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any], useOhlcData = useOhlcData.asInstanceOf[js.Any])
+  inline def apply(`type`: String | area): SeriesAreaOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesAreaOptions]
   }
@@ -126,10 +111,6 @@ object SeriesAreaOptions {
   extension [Self <: SeriesAreaOptions](x: Self) {
     
     inline def setData(value: js.Array[Double | (js.Tuple2[Double | String, Double | Null]) | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
-    
-    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -162,8 +143,6 @@ object SeriesAreaOptions {
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     inline def setType(value: String | area): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setUseOhlcData(value: Unit): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
     
     inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

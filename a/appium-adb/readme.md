@@ -1,7 +1,7 @@
 
 # Scala.js typings for appium-adb
 
-Typings are for version 9.4
+Typings are for version 9.10
 
 ## Library description:
 Android Debug Bridge interface

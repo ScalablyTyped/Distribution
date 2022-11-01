@@ -5,6 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Polygon
+  */
 @JSGlobal("naver.maps.Polygon")
 @js.native
 open class Polygon ()

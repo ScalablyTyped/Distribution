@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__hash-stream-node"
-version := "3.198.0-27f085"
+version := "3.200.0-1da123"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.198.0-a78f65",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.200.0-ba75f2",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-middleware
 
-Typings are for version 3.198.0
+Typings are for version 3.200.0
 
 ## Library description:
 Shared utilities for to be used in middleware packages.

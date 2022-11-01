@@ -40,6 +40,8 @@ trait NextSeoProps extends StObject {
   var titleTemplate: js.UndefOr[String] = js.undefined
   
   var twitter: js.UndefOr[Twitter] = js.undefined
+  
+  var useAppDir: js.UndefOr[Boolean] = js.undefined
 }
 object NextSeoProps {
   
@@ -119,5 +121,9 @@ object NextSeoProps {
     inline def setTwitter(value: Twitter): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
     
     inline def setTwitterUndefined: Self = StObject.set(x, "twitter", js.undefined)
+    
+    inline def setUseAppDir(value: Boolean): Self = StObject.set(x, "useAppDir", value.asInstanceOf[js.Any])
+    
+    inline def setUseAppDirUndefined: Self = StObject.set(x, "useAppDir", js.undefined)
   }
 }

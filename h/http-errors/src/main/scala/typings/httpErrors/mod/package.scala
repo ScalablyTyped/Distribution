@@ -74,7 +74,7 @@ inline def `501_Fmod`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`5
 
 inline def `502_Fmod`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`] = ^.asInstanceOf[js.Dynamic].selectDynamic("502").asInstanceOf[HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`]]
 
-inline def `503_Fmod`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`] = ^.asInstanceOf[js.Dynamic].selectDynamic("503").asInstanceOf[HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]]
+inline def `503_Fmod`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`] = ^.asInstanceOf[js.Dynamic].selectDynamic("503").asInstanceOf[HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`]]
 
 inline def `504_Fmod`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`] = ^.asInstanceOf[js.Dynamic].selectDynamic("504").asInstanceOf[HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`]]
 
@@ -188,8 +188,8 @@ inline def RequestHeaderFieldsTooLarge_Fmod_=(x: HttpErrorConstructor[typings.ht
 inline def RequestTimeout_Fmod: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`] = ^.asInstanceOf[js.Dynamic].selectDynamic("RequestTimeout").asInstanceOf[HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`]]
 inline def RequestTimeout_Fmod_=(x: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RequestTimeout")(x.asInstanceOf[js.Any])
 
-inline def ServiceUnavailable_Fmod: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`] = ^.asInstanceOf[js.Dynamic].selectDynamic("ServiceUnavailable").asInstanceOf[HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]]
-inline def ServiceUnavailable_Fmod_=(x: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceUnavailable")(x.asInstanceOf[js.Any])
+inline def ServiceUnavailable_Fmod: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`] = ^.asInstanceOf[js.Dynamic].selectDynamic("ServiceUnavailable").asInstanceOf[HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`]]
+inline def ServiceUnavailable_Fmod_=(x: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`503`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceUnavailable")(x.asInstanceOf[js.Any])
 
 inline def TooEarly_Fmod: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`] = ^.asInstanceOf[js.Dynamic].selectDynamic("TooEarly").asInstanceOf[HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`]]
 inline def TooEarly_Fmod_=(x: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TooEarly")(x.asInstanceOf[js.Any])

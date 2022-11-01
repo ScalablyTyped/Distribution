@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/credential-provider-web-identity" : "3.198.0"
+      "@aws-sdk/credential-provider-web-identity" : "3.200.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/credential-provider-web-identity" : "3.198.0"
+      "@aws-sdk/credential-provider-web-identity" : "3.200.0"
     }
   ],
   "compile-devDependencies" : [

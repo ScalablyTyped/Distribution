@@ -36,7 +36,6 @@ import typings.highcharts.mod.SVGRenderer
 import typings.highcharts.mod.Series
 import typings.highcharts.mod.SeriesOptionsType
 import typings.highcharts.mod.TimeFormatCallbackFunction
-import typings.highcharts.mod.TimeOptions
 import typings.highcharts.mod.Time_
 import typings.highcharts.mod.TooltipOptions
 import typings.highcharts.mod.WrapProceedFunction
@@ -165,7 +164,7 @@ object anon {
     
     var Tick: Instantiable2[/* axis */ Axis, /* pos */ Double, typings.highcharts.mod.Tick] = js.native
     
-    var Time: Instantiable1[/* options */ TimeOptions, Time_] = js.native
+    var Time: Instantiable0[Time_] = js.native
     
     var Tooltip: Instantiable2[/* chart */ Chart_, /* options */ TooltipOptions, typings.highcharts.mod.Tooltip] = js.native
     

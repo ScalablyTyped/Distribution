@@ -57,6 +57,13 @@ trait YAxisScrollbarOptions extends StObject {
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highstock) The height of the scrollbar. The height also applies to the
+    * width of the scroll arrows so that they are always squares. Defaults to
+    * 20 for touch devices and 14 for mouse devices.
+    */
+  var height: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highstock) Whether to redraw the main chart as the scrollbar or the
     * navigator zoomed window is moved. Defaults to `true` for modern browsers
     * and `false` for legacy IE browsers as well as mobile devices.
@@ -175,6 +182,10 @@ object YAxisScrollbarOptions {
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setLiveRedraw(value: Boolean): Self = StObject.set(x, "liveRedraw", value.asInstanceOf[js.Any])
     

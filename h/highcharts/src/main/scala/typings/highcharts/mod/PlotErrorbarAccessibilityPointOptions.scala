@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlotErrorbarAccessibilityPointOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock) Date format to use for points on datetime axes
-    * when describing them to screen reader users.
+    * (Highcharts) Date format to use for points on datetime axes when
+    * describing them to screen reader users.
     *
     * Defaults to the same format as in tooltip.
     *
@@ -17,24 +17,23 @@ trait PlotErrorbarAccessibilityPointOptions extends StObject {
   var dateFormat: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Formatter function to determine the date/time
-    * format used with points on datetime axes when describing them to screen
-    * reader users. Receives one argument, `point`, referring to the point to
-    * describe. Should return a date format string compatible with dateFormat.
+    * (Highcharts) Formatter function to determine the date/time format used
+    * with points on datetime axes when describing them to screen reader users.
+    * Receives one argument, `point`, referring to the point to describe.
+    * Should return a date format string compatible with dateFormat.
     */
   var dateFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Whether or not to describe points with the value
-    * `null` to assistive technology, such as screen readers.
+    * (Highcharts) Whether or not to describe points with the value `null` to
+    * assistive technology, such as screen readers.
     */
   var describeNull: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Formatter function to use instead of the default
-    * for point descriptions. Same as
-    * `accessibility.point.descriptionFormatter`, but applies to a series
-    * instead of the whole chart.
+    * (Highcharts) Formatter function to use instead of the default for point
+    * descriptions. Same as `accessibility.point.descriptionFormatter`, but
+    * applies to a series instead of the whole chart.
     *
     * Note: Prefer using accessibility.point.valueDescriptionFormat instead if
     * possible, as default functionality such as describing annotations will be
@@ -43,15 +42,15 @@ trait PlotErrorbarAccessibilityPointOptions extends StObject {
   var descriptionFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Point]] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Decimals to use for the values in the point
-    * descriptions. Uses tooltip.valueDecimals if not defined.
+    * (Highcharts) Decimals to use for the values in the point descriptions.
+    * Uses tooltip.valueDecimals if not defined.
     */
   var valueDecimals: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Format to use for describing the values of data
-    * points to assistive technology - including screen readers. The point
-    * context is available as `{point}`.
+    * (Highcharts) Format to use for describing the values of data points to
+    * assistive technology - including screen readers. The point context is
+    * available as `{point}`.
     *
     * Other available context variables include `{index}`, `{value}`, and
     * `{xDescription}`.
@@ -63,14 +62,14 @@ trait PlotErrorbarAccessibilityPointOptions extends StObject {
   var valueDescriptionFormat: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Prefix to add to the values in the point
-    * descriptions. Uses tooltip.valuePrefix if not defined.
+    * (Highcharts) Prefix to add to the values in the point descriptions. Uses
+    * tooltip.valuePrefix if not defined.
     */
   var valuePrefix: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Suffix to add to the values in the point
-    * descriptions. Uses tooltip.valueSuffix if not defined.
+    * (Highcharts) Suffix to add to the values in the point descriptions. Uses
+    * tooltip.valueSuffix if not defined.
     */
   var valueSuffix: js.UndefOr[String] = js.undefined
 }

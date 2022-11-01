@@ -33,5 +33,5 @@ open class PlotLineOrBand protected () extends StObject {
   /**
     * SVG element of the plot line or band.
     */
-  var svgElement: SVGElement = js.native
+  var svgElem: SVGElement = js.native
 }

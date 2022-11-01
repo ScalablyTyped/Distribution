@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AnnotationsVerticalLineOptions extends StObject {
   
+  var controlPointOptions: js.UndefOr[AnnotationsVerticalLineControlPointOptions] = js.undefined
+  
   /**
     * (Highstock) Options for annotation's labels. Each label inherits options
     * from the labelOptions object. An option from the labelOptions can be
@@ -33,6 +35,10 @@ object AnnotationsVerticalLineOptions {
   }
   
   extension [Self <: AnnotationsVerticalLineOptions](x: Self) {
+    
+    inline def setControlPointOptions(value: AnnotationsVerticalLineControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
+    
+    inline def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
     
     inline def setLabelOptions(value: AnnotationsVerticalLineLabelOptions): Self = StObject.set(x, "labelOptions", value.asInstanceOf[js.Any])
     

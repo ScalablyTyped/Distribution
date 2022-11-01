@@ -17,6 +17,8 @@ trait JsonLdPropsscriptKeystrin
   var scriptKey: String
   
   var `type`: js.UndefOr[String] = js.undefined
+  
+  var useAppDir: js.UndefOr[Boolean] = js.undefined
 }
 object JsonLdPropsscriptKeystrin {
   
@@ -42,5 +44,9 @@ object JsonLdPropsscriptKeystrin {
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUseAppDir(value: Boolean): Self = StObject.set(x, "useAppDir", value.asInstanceOf[js.Any])
+    
+    inline def setUseAppDirUndefined: Self = StObject.set(x, "useAppDir", js.undefined)
   }
 }

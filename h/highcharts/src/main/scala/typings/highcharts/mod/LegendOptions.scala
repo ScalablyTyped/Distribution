@@ -163,7 +163,7 @@ trait LegendOptions extends StObject {
     * graphs they're representing, except in inverted charts or when the legend
     * position doesn't allow it.
     */
-  var layout: js.UndefOr[OptionsLayoutValue] = js.undefined
+  var layout: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) If the plot area sized is
@@ -261,6 +261,19 @@ trait LegendOptions extends StObject {
     * Prior to 4.1.7, when using HTML, legend.navigation was disabled.
     */
   var useHTML: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) For a color axis with data classes, how many
+    * decimals to render in the legend. The default preserves the decimals of
+    * the range numbers.
+    */
+  var valueDecimals: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) For a color axis with data classes, a suffix for
+    * the range numbers in the legend.
+    */
+  var valueSuffix: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical alignment of the
@@ -395,7 +408,7 @@ object LegendOptions {
     
     inline def setLabelFormatterUndefined: Self = StObject.set(x, "labelFormatter", js.undefined)
     
-    inline def setLayout(value: OptionsLayoutValue): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
@@ -454,6 +467,14 @@ object LegendOptions {
     inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
     
     inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
+    
+    inline def setValueDecimals(value: Double): Self = StObject.set(x, "valueDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setValueDecimalsUndefined: Self = StObject.set(x, "valueDecimals", js.undefined)
+    
+    inline def setValueSuffix(value: String): Self = StObject.set(x, "valueSuffix", value.asInstanceOf[js.Any])
+    
+    inline def setValueSuffixUndefined: Self = StObject.set(x, "valueSuffix", js.undefined)
     
     inline def setVerticalAlign(value: VerticalAlignValue): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait Position extends StObject
+/**
+  * Position
+  */
 @JSGlobal("naver.maps.Position")
 @js.native
 object Position extends StObject {

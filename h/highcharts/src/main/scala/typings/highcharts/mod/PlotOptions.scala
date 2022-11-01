@@ -658,9 +658,9 @@ trait PlotOptions extends StObject {
   var ema: js.UndefOr[PlotEmaOptions] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Error bars are a graphical representation of the
-    * variability of data and are used on graphs to indicate the error, or
-    * uncertainty in a reported measurement.
+    * (Highcharts) Error bars are a graphical representation of the variability
+    * of data and are used on graphs to indicate the error, or uncertainty in a
+    * reported measurement.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1835,6 +1835,29 @@ trait PlotOptions extends StObject {
   var timeline: js.UndefOr[PlotTimelineOptions] = js.undefined
   
   /**
+    * (Highcharts) A treegraph series is a diagram, which shows a relation
+    * between ancestors and descendants with a clear parent - child relation.
+    * The best examples of the dataStructures, which best reflect this chart
+    * are e.g. genealogy tree or directory structure.
+    *
+    * TODO change back the demo path
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `treegraph` series are defined in
+    * plotOptions.treegraph.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var treegraph: js.UndefOr[PlotTreegraphOptions] = js.undefined
+  
+  /**
     * (Highcharts) A treemap displays hierarchical data using nested
     * rectangles. The data can be laid out in varying ways depending on
     * options.
@@ -2527,6 +2550,10 @@ object PlotOptions {
     inline def setTimeline(value: PlotTimelineOptions): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     
     inline def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
+    
+    inline def setTreegraph(value: PlotTreegraphOptions): Self = StObject.set(x, "treegraph", value.asInstanceOf[js.Any])
+    
+    inline def setTreegraphUndefined: Self = StObject.set(x, "treegraph", js.undefined)
     
     inline def setTreemap(value: PlotTreemapOptions): Self = StObject.set(x, "treemap", value.asInstanceOf[js.Any])
     

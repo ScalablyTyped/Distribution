@@ -5,11 +5,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Layer
+/**
+  * Layer
+  */
 @JSGlobal("naver.maps.Layer")
 @js.native
 open class Layer protected ()
   extends StObject
      with typings.navermaps.naver.maps.Layer {
+  def this(name: String, MapTypeRegistry: typings.navermaps.naver.maps.MapTypeRegistry) = this()
   def this(name: String, MapTypeRegistry: typings.navermaps.naver.maps.MapTypeRegistry, options: LayerOptions) = this()
 }

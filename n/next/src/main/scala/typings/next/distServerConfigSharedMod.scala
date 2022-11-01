@@ -671,7 +671,7 @@ object distServerConfigSharedMod {
       *
       * @see [React Strict Mode](https://nextjs.org/docs/api-reference/next.config.js/react-strict-mode)
       */
-    var reactStrictMode: js.UndefOr[Boolean] = js.undefined
+    var reactStrictMode: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Redirects allow you to redirect an incoming request path to a different destination path.
@@ -872,6 +872,8 @@ object distServerConfigSharedMod {
       inline def setPublicRuntimeConfigUndefined: Self = StObject.set(x, "publicRuntimeConfig", js.undefined)
       
       inline def setReactStrictMode(value: Boolean): Self = StObject.set(x, "reactStrictMode", value.asInstanceOf[js.Any])
+      
+      inline def setReactStrictModeNull: Self = StObject.set(x, "reactStrictMode", null)
       
       inline def setReactStrictModeUndefined: Self = StObject.set(x, "reactStrictMode", js.undefined)
       

@@ -6,7 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Map.Tile
+/**
+  * Tile
+  */
 @JSGlobal("naver.maps.Tile")
 @js.native
 open class Tile protected ()

@@ -1,7 +1,7 @@
 
 # Scala.js typings for navermaps
 
-Typings are for version 3.0
+Typings are for version 3.6
 
 
 

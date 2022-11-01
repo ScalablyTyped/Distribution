@@ -4,19 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * ImageMapTypeOptions
+  */
 trait ImageMapTypeOptions extends StObject {
   
   var darktheme: js.UndefOr[Boolean] = js.undefined
   
-  var getTileUrl: js.UndefOr[js.Function0[Any]] = js.undefined
+  var getTileUrl: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, js.Array[String]]] = js.undefined
   
-  var maxZoom: Double
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: Double
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var name: String
+  var name: js.UndefOr[String] = js.undefined
   
-  var projection: Projection
+  var projection: js.UndefOr[Projection] = js.undefined
   
   var provider: js.UndefOr[js.Array[MapDataProvider]] = js.undefined
   
@@ -32,8 +35,8 @@ trait ImageMapTypeOptions extends StObject {
 }
 object ImageMapTypeOptions {
   
-  inline def apply(maxZoom: Double, minZoom: Double, name: String, projection: Projection): ImageMapTypeOptions = {
-    val __obj = js.Dynamic.literal(maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any])
+  inline def apply(): ImageMapTypeOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageMapTypeOptions]
   }
   
@@ -43,17 +46,25 @@ object ImageMapTypeOptions {
     
     inline def setDarkthemeUndefined: Self = StObject.set(x, "darktheme", js.undefined)
     
-    inline def setGetTileUrl(value: () => Any): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction0(value))
+    inline def setGetTileUrl(value: (/* x */ Double, /* y */ Double, /* z */ Double) => js.Array[String]): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction3(value))
     
     inline def setGetTileUrlUndefined: Self = StObject.set(x, "getTileUrl", js.undefined)
     
     inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
     inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     inline def setProvider(value: js.Array[MapDataProvider]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

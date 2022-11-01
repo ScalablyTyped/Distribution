@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lmdb"
-version := "2.6.8-71674f"
+version := "2.6.9-d3d6f3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -11,21 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with PlotAroonoscillatorOptions {
   
   /**
-    * Not available
-    */
-  var aroonDown: Unit
-  
-  /**
-    * Not available
-    */
-  var dataParser: Unit
-  
-  /**
-    * Not available
-    */
-  var dataURL: Unit
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -86,19 +71,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesAroonoscillatorOptions {
   
-  inline def apply(aroonDown: Unit, dataParser: Unit, dataURL: Unit, `type`: String | aroonoscillator): SeriesAroonoscillatorOptions = {
-    val __obj = js.Dynamic.literal(aroonDown = aroonDown.asInstanceOf[js.Any], dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
+  inline def apply(`type`: String | aroonoscillator): SeriesAroonoscillatorOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesAroonoscillatorOptions]
   }
   
   extension [Self <: SeriesAroonoscillatorOptions](x: Self) {
-    
-    inline def setAroonDown(value: Unit): Self = StObject.set(x, "aroonDown", value.asInstanceOf[js.Any])
-    
-    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
-    
-    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

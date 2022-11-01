@@ -19,6 +19,12 @@ trait SeriesMaplineDataOptions extends StObject {
   var dataLabels: js.UndefOr[DataLabelsOptions] = js.undefined
   
   /**
+    * (Highmaps) The `id` of a series in the drilldown.series array to use for
+    * a drilldown for this point.
+    */
+  var drilldown: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highmaps) Individual point events
     */
   var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
@@ -105,6 +111,10 @@ object SeriesMaplineDataOptions {
     inline def setDataLabels(value: DataLabelsOptions): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    
+    inline def setDrilldown(value: String): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
+    
+    inline def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
     
     inline def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/mixin-get-child-by-name" : "7.0.0"
+      "@pixi/mixin-get-child-by-name" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/mixin-get-child-by-name" : "7.0.0"
+      "@pixi/mixin-get-child-by-name" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

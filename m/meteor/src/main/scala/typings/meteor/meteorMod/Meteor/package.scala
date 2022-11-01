@@ -34,11 +34,18 @@ inline def apply[Result /* <: EJSONable | (js.Array[EJSONable | EJSONablePropert
 inline def bindEnvironment[TFunc /* <: js.Function */](func: TFunc): TFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("bindEnvironment")(func.asInstanceOf[js.Any]).asInstanceOf[TFunc]
 
 /**
-  * Invokes a method passing any number of arguments.
+  * Invokes a method with a sync stub, passing any number of arguments.
   * @param name Name of method to invoke
   * @param args Optional method arguments
   */
 inline def call(name: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(scala.List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+
+/**
+  * Invokes a method with an async stub, passing any number of arguments.
+  * @param name Name of method to invoke
+  * @param args Optional method arguments
+  */
+inline def callAsync(name: String, args: Any*): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("callAsync")(scala.List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[Any]]
 
 /**
   * Cancel a repeating function call scheduled by `Meteor.setInterval`.

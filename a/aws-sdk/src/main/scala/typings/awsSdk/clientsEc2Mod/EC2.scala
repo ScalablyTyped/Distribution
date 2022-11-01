@@ -66,6 +66,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EC2 extends Service {
   
   /**
+    * Accepts an Elastic IP address transfer. For more information, see Accept a transferred Elastic IP address in the Amazon Virtual Private Cloud User Guide.
+    */
+  def acceptAddressTransfer(): Request[AcceptAddressTransferResult, AWSError] = js.native
+  def acceptAddressTransfer(callback: js.Function2[/* err */ AWSError, /* data */ AcceptAddressTransferResult, Unit]): Request[AcceptAddressTransferResult, AWSError] = js.native
+  /**
+    * Accepts an Elastic IP address transfer. For more information, see Accept a transferred Elastic IP address in the Amazon Virtual Private Cloud User Guide.
+    */
+  def acceptAddressTransfer(params: AcceptAddressTransferRequest): Request[AcceptAddressTransferResult, AWSError] = js.native
+  def acceptAddressTransfer(
+    params: AcceptAddressTransferRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptAddressTransferResult, Unit]
+  ): Request[AcceptAddressTransferResult, AWSError] = js.native
+  
+  /**
     * Accepts the Convertible Reserved Instance exchange quote described in the GetReservedInstancesExchangeQuote call.
     */
   def acceptReservedInstancesExchangeQuote(): Request[AcceptReservedInstancesExchangeQuoteResult, AWSError] = js.native
@@ -3009,6 +3023,20 @@ trait EC2 extends Service {
   ): Request[DescribeAccountAttributesResult, AWSError] = js.native
   
   /**
+    * Describes an Elastic IP address transfer. For more information, see Transfer Elastic IP addresses in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeAddressTransfers(): Request[DescribeAddressTransfersResult, AWSError] = js.native
+  def describeAddressTransfers(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAddressTransfersResult, Unit]): Request[DescribeAddressTransfersResult, AWSError] = js.native
+  /**
+    * Describes an Elastic IP address transfer. For more information, see Transfer Elastic IP addresses in the Amazon Virtual Private Cloud User Guide.
+    */
+  def describeAddressTransfers(params: DescribeAddressTransfersRequest): Request[DescribeAddressTransfersResult, AWSError] = js.native
+  def describeAddressTransfers(
+    params: DescribeAddressTransfersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAddressTransfersResult, Unit]
+  ): Request[DescribeAddressTransfersResult, AWSError] = js.native
+  
+  /**
     * Describes the specified Elastic IP addresses or all of your Elastic IP addresses. An Elastic IP address is for use in either the EC2-Classic platform or in a VPC. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
     */
   def describeAddresses(): Request[DescribeAddressesResult, AWSError] = js.native
@@ -5079,6 +5107,20 @@ trait EC2 extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Disables Elastic IP address transfer. For more information, see Transfer Elastic IP addresses in the Amazon Virtual Private Cloud User Guide.
+    */
+  def disableAddressTransfer(): Request[DisableAddressTransferResult, AWSError] = js.native
+  def disableAddressTransfer(callback: js.Function2[/* err */ AWSError, /* data */ DisableAddressTransferResult, Unit]): Request[DisableAddressTransferResult, AWSError] = js.native
+  /**
+    * Disables Elastic IP address transfer. For more information, see Transfer Elastic IP addresses in the Amazon Virtual Private Cloud User Guide.
+    */
+  def disableAddressTransfer(params: DisableAddressTransferRequest): Request[DisableAddressTransferResult, AWSError] = js.native
+  def disableAddressTransfer(
+    params: DisableAddressTransferRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableAddressTransferResult, Unit]
+  ): Request[DisableAddressTransferResult, AWSError] = js.native
+  
+  /**
     * Disables EBS encryption by default for your account in the current Region. After you disable encryption by default, you can still create encrypted volumes by enabling encryption when you create each volume. Disabling encryption by default does not change the encryption status of your existing volumes. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
     */
   def disableEbsEncryptionByDefault(): Request[DisableEbsEncryptionByDefaultResult, AWSError] = js.native
@@ -5407,6 +5449,20 @@ trait EC2 extends Service {
     params: DisassociateVpcCidrBlockRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateVpcCidrBlockResult, Unit]
   ): Request[DisassociateVpcCidrBlockResult, AWSError] = js.native
+  
+  /**
+    * Enables Elastic IP address transfer. For more information, see Transfer Elastic IP addresses in the Amazon Virtual Private Cloud User Guide.
+    */
+  def enableAddressTransfer(): Request[EnableAddressTransferResult, AWSError] = js.native
+  def enableAddressTransfer(callback: js.Function2[/* err */ AWSError, /* data */ EnableAddressTransferResult, Unit]): Request[EnableAddressTransferResult, AWSError] = js.native
+  /**
+    * Enables Elastic IP address transfer. For more information, see Transfer Elastic IP addresses in the Amazon Virtual Private Cloud User Guide.
+    */
+  def enableAddressTransfer(params: EnableAddressTransferRequest): Request[EnableAddressTransferResult, AWSError] = js.native
+  def enableAddressTransfer(
+    params: EnableAddressTransferRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableAddressTransferResult, Unit]
+  ): Request[EnableAddressTransferResult, AWSError] = js.native
   
   /**
     * Enables EBS encryption by default for your account in the current Region. After you enable encryption by default, the EBS volumes that you create are always encrypted, either using the default KMS key or the KMS key that you specified when you created each volume. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. You can specify the default KMS key for encryption by default using ModifyEbsDefaultKmsKeyId or ResetEbsDefaultKmsKeyId. Enabling encryption by default has no effect on the encryption status of your existing volumes. After you enable encryption by default, you can no longer launch instances using instance types that do not support encryption. For more information, see Supported instance types.

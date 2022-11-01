@@ -125,6 +125,16 @@ type AddressMaxResults = scala.Double
 
 type AddressSet = js.Array[AddressAttribute]
 
+type AddressTransferList = js.Array[AddressTransfer]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.pending__
+  - typings.awsSdk.awsSdkStrings.disabled__
+  - typings.awsSdk.awsSdkStrings.accepted__
+  - java.lang.String
+*/
+type AddressTransferStatus = _AddressTransferStatus | java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.default__
   - typings.awsSdk.awsSdkStrings.host__
@@ -762,6 +772,8 @@ type DeleteQueuedReservedInstancesErrorCode = _DeleteQueuedReservedInstancesErro
 type DeleteQueuedReservedInstancesIdList = js.Array[ReservationId]
 
 type DeprovisionedAddressSet = js.Array[String]
+
+type DescribeAddressTransfersMaxResults = scala.Double
 
 type DescribeByoipCidrsMaxResults = scala.Double
 

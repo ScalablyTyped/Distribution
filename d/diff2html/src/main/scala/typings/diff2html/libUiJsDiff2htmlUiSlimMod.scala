@@ -108,6 +108,11 @@ object libUiJsDiff2htmlUiSlimMod {
     def smartSelection: Boolean = js.native
     inline def smartSelection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartSelection")(x.asInstanceOf[js.Any])
     
+    @JSImport("diff2html/lib/ui/js/diff2html-ui-slim", "defaultDiff2HtmlUIConfig.stickyFileHeaders")
+    @js.native
+    def stickyFileHeaders: Boolean = js.native
+    inline def stickyFileHeaders_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stickyFileHeaders")(x.asInstanceOf[js.Any])
+    
     @JSImport("diff2html/lib/ui/js/diff2html-ui-slim", "defaultDiff2HtmlUIConfig.synchronisedScroll")
     @js.native
     def synchronisedScroll: Boolean = js.native

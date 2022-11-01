@@ -171,6 +171,11 @@ open class Series protected () extends StObject {
   var chart: Chart_ = js.native
   
   /**
+    * Series color as used by the legend and some series types.
+    */
+  var color: js.UndefOr[ColorType] = js.native
+  
+  /**
     * Read only. An array containing those values converted to points. In case
     * the series data length exceeds the `cropThreshold`, or if the data is
     * grouped, `series.data` doesn't contain all the points. Also, in case a
@@ -258,6 +263,82 @@ open class Series protected () extends StObject {
   var graph: js.UndefOr[SVGElement] = js.native
   
   /**
+    * (Highstock) Highcharts Stock only. Takes parallel arrays of x and y
+    * data and groups the data into intervals defined by groupPositions, a
+    * collection of starting x values for each group.
+    *
+    * @param xData
+    *        Parallel array of x data.
+    *
+    * @param yData
+    *        Parallel array of y data.
+    *
+    * @param groupPositions
+    *        Group positions.
+    *
+    * @param approximation
+    *        Approximation to use.
+    *
+    * @return Mapped groups.
+    */
+  def groupData(
+    xData: js.Array[Double],
+    yData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]],
+    groupPositions: js.Array[Double]
+  ): typings.highcharts.modulesStockMod.highchartsAugmentingMod.DataGroupingResultObject = js.native
+  def groupData(
+    xData: js.Array[Double],
+    yData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]],
+    groupPositions: js.Array[Double],
+    approximation: String
+  ): typings.highcharts.modulesStockMod.highchartsAugmentingMod.DataGroupingResultObject = js.native
+  def groupData(
+    xData: js.Array[Double],
+    yData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]],
+    groupPositions: js.Array[Double],
+    approximation: js.Function
+  ): typings.highcharts.modulesStockMod.highchartsAugmentingMod.DataGroupingResultObject = js.native
+  /**
+    * (Highstock) Highcharts Stock only. Takes parallel arrays of x and y
+    * data and groups the data into intervals defined by groupPositions, a
+    * collection of starting x values for each group.
+    *
+    * @param xData
+    *        Parallel array of x data.
+    *
+    * @param yData
+    *        Parallel array of y data.
+    *
+    * @param groupPositions
+    *        Group positions.
+    *
+    * @param approximation
+    *        Approximation to use.
+    *
+    * @return Mapped groups.
+    */
+  @JSName("groupData")
+  def groupData_DataGroupingResultObject(
+    xData: js.Array[Double],
+    yData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]],
+    groupPositions: js.Array[Double]
+  ): typings.highcharts.modulesDatagroupingMod.highchartsAugmentingMod.DataGroupingResultObject = js.native
+  @JSName("groupData")
+  def groupData_DataGroupingResultObject(
+    xData: js.Array[Double],
+    yData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]],
+    groupPositions: js.Array[Double],
+    approximation: String
+  ): typings.highcharts.modulesDatagroupingMod.highchartsAugmentingMod.DataGroupingResultObject = js.native
+  @JSName("groupData")
+  def groupData_DataGroupingResultObject(
+    xData: js.Array[Double],
+    yData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]],
+    groupPositions: js.Array[Double],
+    approximation: js.Function
+  ): typings.highcharts.modulesDatagroupingMod.highchartsAugmentingMod.DataGroupingResultObject = js.native
+  
+  /**
     * Hide the series if visible. If the chart.ignoreHiddenSeries option is
     * true, the chart is redrawn without this series.
     *
@@ -281,6 +362,11 @@ open class Series protected () extends StObject {
     * @return True if this item is or inherits from the given type.
     */
   def is(`type`: String): Boolean = js.native
+  
+  /**
+    * Legend data for the series.
+    */
+  var legendItem: js.UndefOr[LegendItemObject] = js.native
   
   /**
     * Get non-presentational attributes for a point. Used internally for

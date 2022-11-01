@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentry__browser
 
-Typings are for version 7.17.2
+Typings are for version 7.17.3
 
 ## Library description:
 Official Sentry SDK for browsers

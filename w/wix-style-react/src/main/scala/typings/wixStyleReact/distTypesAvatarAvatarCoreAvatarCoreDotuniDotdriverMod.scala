@@ -30,16 +30,12 @@ object distTypesAvatarAvatarCoreAvatarCoreDotuniDotdriverMod {
     /** Get the property value */
     def getProperty(propName: String): js.Promise[String | Null] = js.native
     
-    def getStyleState(state: String): js.Promise[String | Boolean | Null] = js.native
-    
     /** Get the text content (generated initials) */
     def getTextContent(): js.Promise[String] = js.native
     def getTextContent(dataHook: String): js.Promise[String] = js.native
     
     def hasClass(className: String): js.Promise[Boolean] = js.native
     def hasClass(className: String, dataHook: String): js.Promise[Boolean] = js.native
-    
-    def hasStyleState(state: String): js.Promise[Boolean] = js.native
     
     /** Wether the image wass loaded */
     def isImageLoaded(): js.Promise[Boolean] = js.native

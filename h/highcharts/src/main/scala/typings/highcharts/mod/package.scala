@@ -396,7 +396,7 @@ type ChartRedrawCallbackFunction = js.ThisFunction1[/* this */ Chart_, /* event 
 
 type ChartRenderCallbackFunction = js.ThisFunction1[/* this */ Chart_, /* event */ Event, Unit]
 
-type ChartSelectionCallbackFunction = js.ThisFunction1[/* this */ Chart_, /* event */ ChartSelectionContextObject, js.UndefOr[Boolean]]
+type ChartSelectionCallbackFunction = js.ThisFunction1[/* this */ Chart_, /* event */ SelectEventObject, js.UndefOr[Boolean]]
 
 type ClipRectElement = SVGElement
 
@@ -444,9 +444,9 @@ Boolean | Unit]
 
 type ExportDataCallbackFunction = js.ThisFunction1[/* this */ Chart_, /* event */ ExportDataEventObject, Unit]
 
-type ExportingAfterPrintCallbackFunction = js.Function2[/* chart */ Chart_, /* event */ Event, Unit]
+type ExportingAfterPrintCallbackFunction = js.ThisFunction1[/* this */ Chart_, /* event */ Event, Unit]
 
-type ExportingBeforePrintCallbackFunction = js.Function2[/* chart */ Chart_, /* event */ Event, Unit]
+type ExportingBeforePrintCallbackFunction = js.ThisFunction1[/* this */ Chart_, /* event */ Event, Unit]
 
 type ExportingErrorCallbackFunction = js.Function2[/* options */ ExportingOptions, /* err */ js.Error, Unit]
 

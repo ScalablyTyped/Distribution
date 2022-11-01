@@ -337,7 +337,7 @@ object highchartsGanttMod {
   open class Pointer protected ()
     extends typings.highcharts.mod.Pointer {
     /**
-      * The mouse and touch tracker object. Each Chart item has one assosiated
+      * The mouse and touch tracker object. Each Chart item has one associated
       * Pointer item that can be accessed from the Chart.pointer property.
       *
       * @param chart
@@ -646,19 +646,19 @@ object highchartsGanttMod {
   
   @JSImport("highcharts/highcharts-gantt", "Time")
   @js.native
-  open class Time_ protected ()
+  /**
+    * The Time class. Time settings are applied in general for each page using
+    * `Highcharts.setOptions`, or individually for each Chart item through the
+    * time options set.
+    *
+    * The Time object is available from Highcharts.Chart#time, which refers to
+    * `Highcharts.time` if no individual time settings are applied.
+    *
+    * @param options
+    *        Time options as defined in chart.options.time.
+    */
+  open class Time_ ()
     extends typings.highcharts.mod.Time_ {
-    /**
-      * The Time class. Time settings are applied in general for each page using
-      * `Highcharts.setOptions`, or individually for each Chart item through the
-      * time options set.
-      *
-      * The Time object is available from Highcharts.Chart#time, which refers to
-      * `Highcharts.time` if no individual time settings are applied.
-      *
-      * @param options
-      *        Time options as defined in chart.options.time.
-      */
     def this(options: TimeOptions) = this()
   }
   

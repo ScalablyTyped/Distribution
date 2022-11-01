@@ -77,6 +77,11 @@ trait Action extends StObject {
   var lambda: js.UndefOr[LambdaAction] = js.undefined
   
   /**
+    * The Amazon Location Service rule action sends device location updates from an MQTT message to an Amazon Location tracker resource.
+    */
+  var location: js.UndefOr[LocationAction] = js.undefined
+  
+  /**
     * Write data to an Amazon OpenSearch Service domain.
     */
   var openSearch: js.UndefOr[OpenSearchAction] = js.undefined
@@ -180,6 +185,10 @@ object Action {
     inline def setLambda(value: LambdaAction): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
     inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+    
+    inline def setLocation(value: LocationAction): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setOpenSearch(value: OpenSearchAction): Self = StObject.set(x, "openSearch", value.asInstanceOf[js.Any])
     

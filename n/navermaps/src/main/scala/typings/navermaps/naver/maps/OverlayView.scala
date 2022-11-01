@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// Overlay
+/**
+  * OverlayView
+  */
 @js.native
 trait OverlayView
   extends StObject
@@ -20,9 +22,9 @@ trait OverlayView
   
   def getProjection(): MapSystemProjection = js.native
   
-  def onAdd(): Any = js.native
+  def onAdd(): Unit = js.native
   
-  def onRemove(): Any = js.native
+  def onRemove(): Unit = js.native
   
   def setMap(): Unit = js.native
   def setMap(map: Map): Unit = js.native

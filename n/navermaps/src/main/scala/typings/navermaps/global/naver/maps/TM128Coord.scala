@@ -7,13 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object TM128Coord {
   
-  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  
   @JSGlobal("naver.maps.TM128Coord")
   @js.native
   val ^ : js.Any = js.native
   
-  // extends UTMK
   inline def fromCoordToLatLng(tm128: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.LatLng = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCoordToLatLng")(tm128.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.LatLng]
   
   inline def fromCoordToPoint(tm128: typings.navermaps.naver.maps.Point): typings.navermaps.naver.maps.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCoordToPoint")(tm128.asInstanceOf[js.Any]).asInstanceOf[typings.navermaps.naver.maps.Point]

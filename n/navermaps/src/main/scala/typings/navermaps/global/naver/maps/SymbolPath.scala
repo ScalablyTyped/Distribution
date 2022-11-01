@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * SymbolPath
+  */
 @JSGlobal("naver.maps.SymbolPath")
 @js.native
 object SymbolPath extends StObject {

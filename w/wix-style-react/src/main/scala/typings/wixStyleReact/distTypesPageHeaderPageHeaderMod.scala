@@ -68,6 +68,10 @@ object distTypesPageHeaderPageHeaderMod {
       @js.native
       val showBackButton: Requireable[Boolean] = js.native
       
+      @JSImport("wix-style-react/dist/types/PageHeader/PageHeader", "default.propTypes.skin")
+      @js.native
+      val skin: Requireable[String] = js.native
+      
       @JSImport("wix-style-react/dist/types/PageHeader/PageHeader", "default.propTypes.subtitle")
       @js.native
       val subtitle: Requireable[ReactNodeLike] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetBehaviorModelTrainingSummariesRequest extends StObject {
   
   /**
-    *  The maximum number of results to return at one time. The default is 25. 
+    *  The maximum number of results to return at one time. The default is 10. 
     */
   var maxResults: js.UndefOr[TinyMaxResults] = js.undefined
   

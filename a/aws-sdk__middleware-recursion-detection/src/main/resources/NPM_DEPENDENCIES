@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/middleware-recursion-detection" : "3.198.0"
+      "@aws-sdk/middleware-recursion-detection" : "3.200.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/middleware-recursion-detection" : "3.198.0"
+      "@aws-sdk/middleware-recursion-detection" : "3.200.0"
     }
   ],
   "compile-devDependencies" : [

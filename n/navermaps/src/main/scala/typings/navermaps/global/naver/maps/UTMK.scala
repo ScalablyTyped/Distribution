@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object UTMK {
   
-  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  
   @JSGlobal("naver.maps.UTMK")
   @js.native
   val ^ : js.Any = js.native
@@ -38,11 +36,9 @@ object UTMK {
   
   @JSGlobal("naver.maps.UTMK.name")
   @js.native
-  def name: String = js.native
-  inline def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+  val name: String = js.native
   
   @JSGlobal("naver.maps.UTMK.pointPerMeter")
   @js.native
-  def pointPerMeter: Double = js.native
-  inline def pointPerMeter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pointPerMeter")(x.asInstanceOf[js.Any])
+  val pointPerMeter: Double = js.native
 }

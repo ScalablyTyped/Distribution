@@ -8,6 +8,7 @@ trait TransitionOptions extends StObject {
   
   var duration: js.UndefOr[Double] = js.undefined
   
+  // default 500
   var easing: js.UndefOr[String] = js.undefined
 }
 object TransitionOptions {

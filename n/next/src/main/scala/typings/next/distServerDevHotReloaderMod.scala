@@ -74,8 +74,6 @@ object distServerDevHotReloaderMod {
     
     /* private */ var getWebpackConfig: Any = js.native
     
-    var hasReactRoot: Boolean = js.native
-    
     var hasServerComponents: Boolean = js.native
     
     /* private */ var hotReloaderSpan: Any = js.native

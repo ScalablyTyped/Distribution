@@ -120,14 +120,14 @@ object anon {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1128, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1130, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     
     var size: js.UndefOr[standard | large] = js.undefined
   }
   object Icon {
     
     inline def apply(
-      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1128, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1130, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     ): Icon = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[Icon]
@@ -140,7 +140,7 @@ object anon {
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setIcon(
-        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1128, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1130, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setSize(value: standard | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
@@ -370,6 +370,8 @@ object anon {
     
     var ADD_TO_FOLDER: BlueprintIcons16Id
     
+    var AIMPOINTS_TARGET: BlueprintIcons16Id
+    
     var AIRPLANE: BlueprintIcons16Id
     
     var ALIGNMENT_BOTTOM: BlueprintIcons16Id
@@ -465,6 +467,8 @@ object anon {
     var AddToArtifact: BlueprintIcons16Id
     
     var AddToFolder: BlueprintIcons16Id
+    
+    var AimpointsTarget: BlueprintIcons16Id
     
     var Airplane: BlueprintIcons16Id
     
@@ -2630,6 +2634,8 @@ object anon {
       
       inline def setADD_TO_FOLDER(value: BlueprintIcons16Id): Self = StObject.set(x, "ADD_TO_FOLDER", value.asInstanceOf[js.Any])
       
+      inline def setAIMPOINTS_TARGET(value: BlueprintIcons16Id): Self = StObject.set(x, "AIMPOINTS_TARGET", value.asInstanceOf[js.Any])
+      
       inline def setAIRPLANE(value: BlueprintIcons16Id): Self = StObject.set(x, "AIRPLANE", value.asInstanceOf[js.Any])
       
       inline def setALIGNMENT_BOTTOM(value: BlueprintIcons16Id): Self = StObject.set(x, "ALIGNMENT_BOTTOM", value.asInstanceOf[js.Any])
@@ -2723,6 +2729,8 @@ object anon {
       inline def setAddToArtifact(value: BlueprintIcons16Id): Self = StObject.set(x, "AddToArtifact", value.asInstanceOf[js.Any])
       
       inline def setAddToFolder(value: BlueprintIcons16Id): Self = StObject.set(x, "AddToFolder", value.asInstanceOf[js.Any])
+      
+      inline def setAimpointsTarget(value: BlueprintIcons16Id): Self = StObject.set(x, "AimpointsTarget", value.asInstanceOf[js.Any])
       
       inline def setAlignCenter(value: BlueprintIcons16Id): Self = StObject.set(x, "AlignCenter", value.asInstanceOf[js.Any])
       

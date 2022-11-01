@@ -142,8 +142,8 @@ trait MenuItemConstructorOptions extends StObject {
     * `selectAll`, `reload`, `forceReload`, `toggleDevTools`, `resetZoom`, `zoomIn`,
     * `zoomOut`, `toggleSpellChecker`, `togglefullscreen`, `window`, `minimize`,
     * `close`, `help`, `about`, `services`, `hide`, `hideOthers`, `unhide`, `quit`,
-    * 'showSubstitutions', 'toggleSmartQuotes', 'toggleSmartDashes',
-    * 'toggleTextReplacement', `startSpeaking`, `stopSpeaking`, `zoom`, `front`,
+    * `showSubstitutions`, `toggleSmartQuotes`, `toggleSmartDashes`,
+    * `toggleTextReplacement`, `startSpeaking`, `stopSpeaking`, `zoom`, `front`,
     * `appMenu`, `fileMenu`, `editMenu`, `viewMenu`, `shareMenu`, `recentDocuments`,
     * `toggleTabBar`, `selectNextTab`, `selectPreviousTab`, `mergeAllWindows`,
     * `clearRecentDocuments`, `moveTabToNewWindow` or `windowMenu` - Define the action

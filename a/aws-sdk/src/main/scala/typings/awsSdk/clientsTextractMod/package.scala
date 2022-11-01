@@ -54,6 +54,8 @@ type ExpenseDocumentList = js.Array[ExpenseDocument]
 
 type ExpenseFieldList = js.Array[ExpenseField]
 
+type ExpenseGroupPropertyList = js.Array[ExpenseGroupProperty]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TABLES
   - typings.awsSdk.awsSdkStrings.FORMS
@@ -158,6 +160,8 @@ type SelectionStatus = _SelectionStatus | java.lang.String
 type StatusMessage = java.lang.String
 
 type String = java.lang.String
+
+type StringList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HANDWRITING

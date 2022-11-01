@@ -24,6 +24,15 @@ object libJsonldOrganizationMod {
         ])
       ] = js.undefined
     
+    var contactPoint: js.UndefOr[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ContactPoint */ Any
+        ]
+      ] = js.undefined
+    
+    /**
+      * @deprecated please use contactPoint instead. contactPoints will continue to work until next major release.
+      */
     var contactPoints: js.UndefOr[
         js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ContactPoint */ Any
@@ -67,6 +76,18 @@ object libJsonldOrganizationMod {
       inline def setAddressVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any)*
       ): Self = StObject.set(x, "address", js.Array(value*))
+      
+      inline def setContactPoint(
+        value: js.Array[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ContactPoint */ Any
+            ]
+      ): Self = StObject.set(x, "contactPoint", value.asInstanceOf[js.Any])
+      
+      inline def setContactPointUndefined: Self = StObject.set(x, "contactPoint", js.undefined)
+      
+      inline def setContactPointVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ContactPoint */ Any)*
+      ): Self = StObject.set(x, "contactPoint", js.Array(value*))
       
       inline def setContactPoints(
         value: js.Array[

@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * LatLng
+  */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.navermaps.naver.maps.Coord because Already inherited */ @js.native
 trait LatLng
@@ -12,8 +15,7 @@ trait LatLng
   
   def destinationPoint(angle: Double, meter: Double): LatLng = js.native
   
-  def equals(point: Coord): Boolean = js.native
-  def equals(point: LatLngLiteral): Boolean = js.native
+  def isEmpty(): Boolean = js.native
   
   def lat(): Double = js.native
   

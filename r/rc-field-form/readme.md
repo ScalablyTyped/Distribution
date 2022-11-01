@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-field-form
 
-Typings are for version 1.27.2
+Typings are for version 1.27.3
 
 ## Library description:
 React Form Component

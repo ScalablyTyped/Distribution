@@ -154,7 +154,7 @@ trait NavigatorXAxisOptions extends StObject {
     * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
     * for X axis (inverted polar).
     */
-  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
+  var gridLineInterpolation: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) The width of the grid lines extending the ticks across
@@ -221,6 +221,15 @@ trait NavigatorXAxisOptions extends StObject {
   var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Gantt) Index of another axis that this axis is
+    * linked to. When an axis is linked to a master axis, it will take the same
+    * extremes as the master, but as assigned by min or max or by setExtremes.
+    * It can be used to show additional info, or to ease reading the chart by
+    * duplicating the scales.
+    */
+  var linkedTo: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highstock, Gantt) If there are multiple axes on the same side of the
     * chart, the pixel margin between the axes. Defaults to 0 on vertical axes,
     * 15 on horizontal axes.
@@ -250,6 +259,12 @@ trait NavigatorXAxisOptions extends StObject {
   var maxPadding: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highstock, Gantt) Maximum range which can be set using the navigator's
+    * handles. Opposite of xAxis.minRange.
+    */
+  var maxRange: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highstock, Gantt) The minimum value of the axis. If `null` the min value
     * is automatically calculated.
     *
@@ -271,6 +286,24 @@ trait NavigatorXAxisOptions extends StObject {
     * ignored.
     */
   var minPadding: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highstock, Gantt) The minimum range to display on this axis. The entire
+    * axis will not be allowed to span over a smaller interval than this. For
+    * example, for a datetime axis the main unit is milliseconds. If minRange
+    * is set to 3600000, you can't zoom in more than to one hour.
+    *
+    * The default minRange for the x axis is five times the smallest interval
+    * between any of the data points.
+    *
+    * On a logarithmic axis, the unit for the minimum range is the power. So a
+    * minRange of 1 means that the axis can be zoomed to 10-100, 100-1000,
+    * 1000-10000 etc.
+    *
+    * **Note**: The `minPadding`, `maxPadding`, `startOnTick` and `endOnTick`
+    * settings also affect how the extremes of the axis are computed.
+    */
+  var minRange: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The minimum tick interval allowed in axis values. For
@@ -332,7 +365,7 @@ trait NavigatorXAxisOptions extends StObject {
     * (Highstock, Gantt) The position of the minor tick marks relative to the
     * axis line. Can be one of `inside` and `outside`.
     */
-  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.undefined
+  var minorTickPosition: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) The pixel width of the minor tick mark.
@@ -361,6 +394,14 @@ trait NavigatorXAxisOptions extends StObject {
     * setting offset explicitly.
     */
   var offset: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highstock, Gantt) Whether to display the axis on the opposite side of
+    * the normal. The normal is on the left side for vertical axes and bottom
+    * for horizontal, so the opposite sides will be right and top respectively.
+    * This is typically used with dual or multiple axes.
+    */
+  var opposite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) In an ordinal axis, the points are equally spaced in the
@@ -418,6 +459,13 @@ trait NavigatorXAxisOptions extends StObject {
   var plotLines: js.UndefOr[js.Array[NavigatorXAxisPlotLinesOptions]] = js.undefined
   
   /**
+    * (Highstock) The zoomed range to display when only defining one or none of
+    * `min` or `max`. For example, to show the latest month, a range of one
+    * month can be set.
+    */
+  var range: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highstock, Gantt) Whether to reverse the axis so that the highest number
     * is closest to the origin. If the chart is inverted, the x axis is
     * reversed by default.
@@ -431,6 +479,23 @@ trait NavigatorXAxisOptions extends StObject {
     * non-reversed xAxis enable this option.
     */
   var reversedStacks: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highstock) An optional scrollbar to display on the X axis in response to
+    * limiting the minimum and maximum of the axis values.
+    *
+    * In styled mode, all the presentational options for the scrollbar are
+    * replaced by the classes `.highcharts-scrollbar-thumb`,
+    * `.highcharts-scrollbar-arrow`, `.highcharts-scrollbar-button`,
+    * `.highcharts-scrollbar-rifles` and `.highcharts-scrollbar-track`.
+    */
+  var scrollbar: js.UndefOr[NavigatorXAxisScrollbarOptions] = js.undefined
+  
+  /**
+    * (Highstock, Gantt) Whether to show the axis line and title when the axis
+    * has no data.
+    */
+  var showEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Whether to show the first tick label.
@@ -529,7 +594,7 @@ trait NavigatorXAxisOptions extends StObject {
     * (Highstock, Gantt) The position of the major tick marks relative to the
     * axis line. Can be one of `inside` and `outside`.
     */
-  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.undefined
+  var tickPosition: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) A callback function returning array defining where the
@@ -563,7 +628,7 @@ trait NavigatorXAxisOptions extends StObject {
     * placed between categories. The default is `between` if the `tickInterval`
     * is 1, else `on`.
     */
-  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.undefined
+  var tickmarkPlacement: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) The axis title, showing next to the axis line.
@@ -719,7 +784,7 @@ object NavigatorXAxisOptions {
     
     inline def setGridLineDashStyleUndefined: Self = StObject.set(x, "gridLineDashStyle", js.undefined)
     
-    inline def setGridLineInterpolation(value: OptionsGridLineInterpolationValue): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
+    inline def setGridLineInterpolation(value: String): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
     
     inline def setGridLineInterpolationUndefined: Self = StObject.set(x, "gridLineInterpolation", js.undefined)
     
@@ -757,6 +822,10 @@ object NavigatorXAxisOptions {
     
     inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
+    inline def setLinkedTo(value: Double): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
+    
+    inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
+    
     inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
@@ -769,6 +838,10 @@ object NavigatorXAxisOptions {
     
     inline def setMaxPaddingUndefined: Self = StObject.set(x, "maxPadding", js.undefined)
     
+    inline def setMaxRange(value: Double): Self = StObject.set(x, "maxRange", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRangeUndefined: Self = StObject.set(x, "maxRange", js.undefined)
+    
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
@@ -778,6 +851,10 @@ object NavigatorXAxisOptions {
     inline def setMinPadding(value: Double): Self = StObject.set(x, "minPadding", value.asInstanceOf[js.Any])
     
     inline def setMinPaddingUndefined: Self = StObject.set(x, "minPadding", js.undefined)
+    
+    inline def setMinRange(value: Double): Self = StObject.set(x, "minRange", value.asInstanceOf[js.Any])
+    
+    inline def setMinRangeUndefined: Self = StObject.set(x, "minRange", js.undefined)
     
     inline def setMinTickInterval(value: Double): Self = StObject.set(x, "minTickInterval", value.asInstanceOf[js.Any])
     
@@ -811,7 +888,7 @@ object NavigatorXAxisOptions {
     
     inline def setMinorTickLengthUndefined: Self = StObject.set(x, "minorTickLength", js.undefined)
     
-    inline def setMinorTickPosition(value: OptionsMinorTickPositionValue): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
+    inline def setMinorTickPosition(value: String): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
     
     inline def setMinorTickPositionUndefined: Self = StObject.set(x, "minorTickPosition", js.undefined)
     
@@ -826,6 +903,10 @@ object NavigatorXAxisOptions {
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOpposite(value: Boolean): Self = StObject.set(x, "opposite", value.asInstanceOf[js.Any])
+    
+    inline def setOppositeUndefined: Self = StObject.set(x, "opposite", js.undefined)
     
     inline def setOrdinal(value: Boolean): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
@@ -855,6 +936,10 @@ object NavigatorXAxisOptions {
     
     inline def setPlotLinesVarargs(value: NavigatorXAxisPlotLinesOptions*): Self = StObject.set(x, "plotLines", js.Array(value*))
     
+    inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
     inline def setReversedStacks(value: Boolean): Self = StObject.set(x, "reversedStacks", value.asInstanceOf[js.Any])
@@ -862,6 +947,14 @@ object NavigatorXAxisOptions {
     inline def setReversedStacksUndefined: Self = StObject.set(x, "reversedStacks", js.undefined)
     
     inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    
+    inline def setScrollbar(value: NavigatorXAxisScrollbarOptions): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
+    
+    inline def setScrollbarUndefined: Self = StObject.set(x, "scrollbar", js.undefined)
+    
+    inline def setShowEmpty(value: Boolean): Self = StObject.set(x, "showEmpty", value.asInstanceOf[js.Any])
+    
+    inline def setShowEmptyUndefined: Self = StObject.set(x, "showEmpty", js.undefined)
     
     inline def setShowFirstLabel(value: Boolean): Self = StObject.set(x, "showFirstLabel", value.asInstanceOf[js.Any])
     
@@ -907,7 +1000,7 @@ object NavigatorXAxisOptions {
     
     inline def setTickPixelIntervalUndefined: Self = StObject.set(x, "tickPixelInterval", js.undefined)
     
-    inline def setTickPosition(value: OptionsTickPositionValue): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
+    inline def setTickPosition(value: String): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
     
     inline def setTickPositionUndefined: Self = StObject.set(x, "tickPosition", js.undefined)
     
@@ -925,7 +1018,7 @@ object NavigatorXAxisOptions {
     
     inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
     
-    inline def setTickmarkPlacement(value: OptionsTickmarkPlacementValue): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
+    inline def setTickmarkPlacement(value: String): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
     
     inline def setTickmarkPlacementUndefined: Self = StObject.set(x, "tickmarkPlacement", js.undefined)
     

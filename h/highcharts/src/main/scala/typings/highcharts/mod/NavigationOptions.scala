@@ -46,6 +46,13 @@ trait NavigationOptions extends StObject {
     */
   var breadcrumbs: js.UndefOr[NavigationBreadcrumbsOptions] = js.undefined
   
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) A collection of options for
+    * buttons appearing in the exporting module.
+    *
+    * In styled mode, the buttons are styled with the
+    * `.highcharts-contextbutton` and `.highcharts-button-symbol` classes.
+    */
   var buttonOptions: js.UndefOr[NavigationButtonOptions] = js.undefined
   
   /**
@@ -59,6 +66,28 @@ trait NavigationOptions extends StObject {
     * for icons. Change this to use icons from a different server.
     */
   var iconsURL: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the hover state
+    * of the individual items within the popup menu appearing by default when
+    * the export icon is clicked. The menu items are rendered in HTML.
+    */
+  var menuItemHoverStyle: js.UndefOr[CSSObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the individual
+    * items within the popup menu appearing by default when the export icon is
+    * clicked. The menu items are rendered in HTML. Font size defaults to
+    * `11px` on desktop and `14px` on touch devices.
+    */
+  var menuItemStyle: js.UndefOr[CSSObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the popup menu
+    * appearing by default when the export icon is clicked. This menu is
+    * rendered in HTML.
+    */
+  var menuStyle: js.UndefOr[CSSObject] = js.undefined
 }
 object NavigationOptions {
   
@@ -96,5 +125,17 @@ object NavigationOptions {
     inline def setIconsURL(value: String): Self = StObject.set(x, "iconsURL", value.asInstanceOf[js.Any])
     
     inline def setIconsURLUndefined: Self = StObject.set(x, "iconsURL", js.undefined)
+    
+    inline def setMenuItemHoverStyle(value: CSSObject): Self = StObject.set(x, "menuItemHoverStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMenuItemHoverStyleUndefined: Self = StObject.set(x, "menuItemHoverStyle", js.undefined)
+    
+    inline def setMenuItemStyle(value: CSSObject): Self = StObject.set(x, "menuItemStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMenuItemStyleUndefined: Self = StObject.set(x, "menuItemStyle", js.undefined)
+    
+    inline def setMenuStyle(value: CSSObject): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
   }
 }

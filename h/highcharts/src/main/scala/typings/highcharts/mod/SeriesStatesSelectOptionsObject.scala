@@ -24,6 +24,12 @@ trait SeriesStatesSelectOptionsObject extends StObject {
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highmaps) The relative brightness of the point when hovered, relative to
+    * the normal point color.
+    */
+  var brightness: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highmaps) The color of the shape in this state.
     */
   var color: js.UndefOr[String | ColorString | GradientColorObject | PatternObject] = js.undefined
@@ -79,6 +85,10 @@ object SeriesStatesSelectOptionsObject {
     inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
+    inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+    
+    inline def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
     
     inline def setColor(value: String | ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -19,9 +19,9 @@ object navigationMod {
   @js.native
   val ServerInsertedHTMLContext: Context[ServerInsertedHTMLHook | Null] = js.native
   
-  inline def notFound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")().asInstanceOf[Unit]
+  inline def notFound(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("notFound")().asInstanceOf[scala.Nothing]
   
-  inline def redirect(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def redirect(url: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
   inline def usePathname(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("usePathname")().asInstanceOf[String]
   

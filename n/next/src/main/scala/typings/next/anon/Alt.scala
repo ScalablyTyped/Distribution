@@ -22,9 +22,35 @@ trait Alt extends StObject {
   
   var height: js.UndefOr[SafeNumber] = js.undefined
   
+  /**
+    * @deprecated Use `fill` prop instead of `layout="fill"` or change import to `next/legacy/image`.
+    * @see https://nextjs.org/docs/api-reference/next/legacy/image
+    */
+  var layout: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @deprecated This prop does not do anything.
+    */
+  var lazyBoundary: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @deprecated This prop does not do anything.
+    */
+  var lazyRoot: js.UndefOr[String] = js.undefined
+  
   var loader: js.UndefOr[ImageLoader] = js.undefined
   
   var loading: js.UndefOr[LoadingValue] = js.undefined
+  
+  /**
+    * @deprecated Use `style` prop instead.
+    */
+  var objectFit: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @deprecated Use `style` prop instead.
+    */
+  var objectPosition: js.UndefOr[String] = js.undefined
   
   var onLoadingComplete: js.UndefOr[OnLoadingComplete] = js.undefined
   
@@ -63,6 +89,18 @@ object Alt {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setLazyBoundary(value: String): Self = StObject.set(x, "lazyBoundary", value.asInstanceOf[js.Any])
+    
+    inline def setLazyBoundaryUndefined: Self = StObject.set(x, "lazyBoundary", js.undefined)
+    
+    inline def setLazyRoot(value: String): Self = StObject.set(x, "lazyRoot", value.asInstanceOf[js.Any])
+    
+    inline def setLazyRootUndefined: Self = StObject.set(x, "lazyRoot", js.undefined)
+    
     inline def setLoader(value: /* p */ ImageLoaderProps => String): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
     
     inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
@@ -70,6 +108,14 @@ object Alt {
     inline def setLoading(value: LoadingValue): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    
+    inline def setObjectFit(value: String): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
+    
+    inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
+    
+    inline def setObjectPosition(value: String): Self = StObject.set(x, "objectPosition", value.asInstanceOf[js.Any])
+    
+    inline def setObjectPositionUndefined: Self = StObject.set(x, "objectPosition", js.undefined)
     
     inline def setOnLoadingComplete(value: /* img */ HTMLImageElement => Unit): Self = StObject.set(x, "onLoadingComplete", js.Any.fromFunction1(value))
     

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait SymbolPath extends StObject
+/**
+  * SymbolPath
+  */
 @JSGlobal("naver.maps.SymbolPath")
 @js.native
 object SymbolPath extends StObject {

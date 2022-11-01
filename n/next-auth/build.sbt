@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "next-auth"
-version := "4.15.0-1a40cd"
+version := "4.15.0-12639c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,9 +11,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
   "org.scalablytyped" %%% "jose" % "4.10.3-22251e",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20220928Z-3598f3",
-  "org.scalablytyped" %%% "next" % "13.0.0-543477",
-  "org.scalablytyped" %%% "next__env" % "13.0.0-82ab96",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
+  "org.scalablytyped" %%% "next" % "13.0.1-090f7e",
+  "org.scalablytyped" %%% "next__env" % "13.0.1-76b77c",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20220912Z-6cdddf",
   "org.scalablytyped" %%% "oauth" % "0.9-dt-20211202Z-3318b6",

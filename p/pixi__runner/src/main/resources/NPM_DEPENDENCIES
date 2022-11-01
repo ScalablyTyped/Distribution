@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/runner" : "7.0.0"
+      "@pixi/runner" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/runner" : "7.0.0"
+      "@pixi/runner" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

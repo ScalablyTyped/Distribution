@@ -644,6 +644,11 @@ object distTypesBaseModalLayoutLayoutBlocksHeaderModalHeadingModalHeadingMod {
       def moveBy: js.UndefOr[Validator[js.UndefOr[Partialxnumberynumber | Null]]] = js.native
       inline def moveBy_=(x: js.UndefOr[Validator[js.UndefOr[Partialxnumberynumber | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moveBy")(x.asInstanceOf[js.Any])
       
+      @JSImport("wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header/ModalHeading/ModalHeading", "default.propTypes.nonce")
+      @js.native
+      def nonce: js.UndefOr[Validator[js.UndefOr[String | Null]]] = js.native
+      inline def nonce_=(x: js.UndefOr[Validator[js.UndefOr[String | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nonce")(x.asInstanceOf[js.Any])
+      
       @JSImport("wix-style-react/dist/types/BaseModalLayout/LayoutBlocks/Header/ModalHeading/ModalHeading", "default.propTypes.onAbort")
       @js.native
       def onAbort: js.UndefOr[Validator[js.UndefOr[ReactEventHandler[HTMLHeadingElement] | Null]]] = js.native

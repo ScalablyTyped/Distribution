@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AccessPolicy = String
 
+type AmazonResourceName = String
+
 type Arn = String
 
 type Days = Double
@@ -222,6 +224,8 @@ type SubscriptionFilters = js.Array[SubscriptionFilter]
 type Success = Boolean
 
 type TagKey = String
+
+type TagKeyList = js.Array[TagKey]
 
 type TagList = js.Array[TagKey]
 

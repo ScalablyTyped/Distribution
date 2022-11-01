@@ -17,6 +17,11 @@ trait PutDestinationRequest extends StObject {
   var roleArn: RoleArn
   
   /**
+    * An optional list of key-value pairs to associate with the resource. For more information about tagging, see Tagging Amazon Web Services resources 
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
+  
+  /**
     * The ARN of an Amazon Kinesis stream to which to deliver matching log events.
     */
   var targetArn: TargetArn
@@ -33,6 +38,10 @@ object PutDestinationRequest {
     inline def setDestinationName(value: DestinationName): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     inline def setTargetArn(value: TargetArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
   }

@@ -1,0 +1,45 @@
+package typings.awsSdk.clientsApprunnerMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ListVpcIngressConnectionsRequest extends StObject {
+  
+  /**
+    * The VPC Ingress Connections to be listed based on either the Service Arn or Vpc Endpoint Id, or both.
+    */
+  var Filter: js.UndefOr[ListVpcIngressConnectionsFilter] = js.undefined
+  
+  /**
+    * The maximum number of results to include in each response (result page). It's used for a paginated request. If you don't specify MaxResults, the request retrieves all available results in a single response.
+    */
+  var MaxResults: js.UndefOr[typings.awsSdk.clientsApprunnerMod.MaxResults] = js.undefined
+  
+  /**
+    * A token from a previous result page. It's used for a paginated request. The request retrieves the next result page. All other parameter values must be identical to the ones that are specified in the initial request. If you don't specify NextToken, the request retrieves the first result page.
+    */
+  var NextToken: js.UndefOr[typings.awsSdk.clientsApprunnerMod.NextToken] = js.undefined
+}
+object ListVpcIngressConnectionsRequest {
+  
+  inline def apply(): ListVpcIngressConnectionsRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ListVpcIngressConnectionsRequest]
+  }
+  
+  extension [Self <: ListVpcIngressConnectionsRequest](x: Self) {
+    
+    inline def setFilter(value: ListVpcIngressConnectionsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+  }
+}

@@ -461,6 +461,13 @@ trait Object[T]
     */
   @JSName("get")
   def get_TKey_Any[TKey /* <: /* keyof T */ java.lang.String */](path: TKey): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any = js.native
+  /**
+    * @see _.get
+    */
+  @JSName("get")
+  def get_TPathTDefault_Union[TPath /* <: java.lang.String */, TDefault](path: TPath): (GetFieldType[T, TPath]) | TDefault = js.native
+  @JSName("get")
+  def get_TPathTDefault_Union[TPath /* <: java.lang.String */, TDefault](path: TPath, defaultValue: TDefault): (GetFieldType[T, TPath]) | TDefault = js.native
   
   /**
     * @see _.groupBy

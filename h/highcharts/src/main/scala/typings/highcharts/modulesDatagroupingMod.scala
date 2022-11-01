@@ -361,7 +361,7 @@ object modulesDatagroupingMod {
     open class Pointer protected ()
       extends typings.highcharts.mod.Pointer {
       /**
-        * The mouse and touch tracker object. Each Chart item has one assosiated
+        * The mouse and touch tracker object. Each Chart item has one associated
         * Pointer item that can be accessed from the Chart.pointer property.
         *
         * @param chart
@@ -705,25 +705,25 @@ object modulesDatagroupingMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/datagrouping", "Highcharts.Time")
     @js.native
-    open class Time protected () extends Time_ {
-      /**
-        * The Time class. Time settings are applied in general for each page using
-        * `Highcharts.setOptions`, or individually for each Chart item through the
-        * time options set.
-        *
-        * The Time object is available from Highcharts.Chart#time, which refers to
-        * `Highcharts.time` if no individual time settings are applied.
-        *
-        * @param options
-        *        Time options as defined in chart.options.time.
-        */
+    /**
+      * The Time class. Time settings are applied in general for each page using
+      * `Highcharts.setOptions`, or individually for each Chart item through the
+      * time options set.
+      *
+      * The Time object is available from Highcharts.Chart#time, which refers to
+      * `Highcharts.time` if no individual time settings are applied.
+      *
+      * @param options
+      *        Time options as defined in chart.options.time.
+      */
+    open class Time () extends Time_ {
       def this(options: TimeOptions) = this()
     }
     @JSImport("highcharts/modules/datagrouping", "Highcharts.Time")
     @js.native
-    def Time_ : Instantiable1[/* options */ TimeOptions, typings.highcharts.mod.Time_] = js.native
+    def Time_ : Instantiable1[/* options */ js.UndefOr[TimeOptions], typings.highcharts.mod.Time_] = js.native
     
-    inline def Time__=(x: Instantiable1[/* options */ TimeOptions, Time_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
+    inline def Time__=(x: Instantiable1[/* options */ js.UndefOr[TimeOptions], Time_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("highcharts/modules/datagrouping", "Highcharts.Tooltip")
@@ -1155,6 +1155,44 @@ object modulesDatagroupingMod {
       }
     }
     
+    /**
+      * (Highstock) Highcharts Stock only.
+      */
+    trait DataGroupingResultObject extends StObject {
+      
+      var groupMap: js.Array[DataGroupingInfoObject]
+      
+      var groupedXData: js.Array[Double]
+      
+      var groupedYData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]]
+    }
+    object DataGroupingResultObject {
+      
+      inline def apply(
+        groupMap: js.Array[DataGroupingInfoObject],
+        groupedXData: js.Array[Double],
+        groupedYData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]]
+      ): DataGroupingResultObject = {
+        val __obj = js.Dynamic.literal(groupMap = groupMap.asInstanceOf[js.Any], groupedXData = groupedXData.asInstanceOf[js.Any], groupedYData = groupedYData.asInstanceOf[js.Any])
+        __obj.asInstanceOf[DataGroupingResultObject]
+      }
+      
+      extension [Self <: DataGroupingResultObject](x: Self) {
+        
+        inline def setGroupMap(value: js.Array[DataGroupingInfoObject]): Self = StObject.set(x, "groupMap", value.asInstanceOf[js.Any])
+        
+        inline def setGroupMapVarargs(value: DataGroupingInfoObject*): Self = StObject.set(x, "groupMap", js.Array(value*))
+        
+        inline def setGroupedXData(value: js.Array[Double]): Self = StObject.set(x, "groupedXData", value.asInstanceOf[js.Any])
+        
+        inline def setGroupedXDataVarargs(value: Double*): Self = StObject.set(x, "groupedXData", js.Array(value*))
+        
+        inline def setGroupedYData(value: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]]): Self = StObject.set(x, "groupedYData", value.asInstanceOf[js.Any])
+        
+        inline def setGroupedYDataVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null])*): Self = StObject.set(x, "groupedYData", js.Array(value*))
+      }
+    }
+    
     trait Point extends StObject {
       
       /**
@@ -1183,6 +1221,47 @@ object modulesDatagroupingMod {
         
         inline def setDataGroupUndefined: Self = StObject.set(x, "dataGroup", js.undefined)
       }
+    }
+    
+    @js.native
+    trait Series extends StObject {
+      
+      /**
+        * (Highstock) Highcharts Stock only. Takes parallel arrays of x and y
+        * data and groups the data into intervals defined by groupPositions, a
+        * collection of starting x values for each group.
+        *
+        * @param xData
+        *        Parallel array of x data.
+        *
+        * @param yData
+        *        Parallel array of y data.
+        *
+        * @param groupPositions
+        *        Group positions.
+        *
+        * @param approximation
+        *        Approximation to use.
+        *
+        * @return Mapped groups.
+        */
+      def groupData(
+        xData: js.Array[Double],
+        yData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]],
+        groupPositions: js.Array[Double]
+      ): DataGroupingResultObject = js.native
+      def groupData(
+        xData: js.Array[Double],
+        yData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]],
+        groupPositions: js.Array[Double],
+        approximation: String
+      ): DataGroupingResultObject = js.native
+      def groupData(
+        xData: js.Array[Double],
+        yData: js.Array[js.UndefOr[(js.Array[js.UndefOr[Double | Null]]) | Double | Null]],
+        groupPositions: js.Array[Double],
+        approximation: js.Function
+      ): DataGroupingResultObject = js.native
     }
   }
 }

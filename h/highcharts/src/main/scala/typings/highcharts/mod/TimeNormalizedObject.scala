@@ -9,7 +9,7 @@ trait TimeNormalizedObject extends StObject {
   /**
     * The count.
     */
-  var count: Double
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * The interval in axis values (ms).
@@ -18,14 +18,16 @@ trait TimeNormalizedObject extends StObject {
 }
 object TimeNormalizedObject {
   
-  inline def apply(count: Double, unitRange: Double): TimeNormalizedObject = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], unitRange = unitRange.asInstanceOf[js.Any])
+  inline def apply(unitRange: Double): TimeNormalizedObject = {
+    val __obj = js.Dynamic.literal(unitRange = unitRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeNormalizedObject]
   }
   
   extension [Self <: TimeNormalizedObject](x: Self) {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     inline def setUnitRange(value: Double): Self = StObject.set(x, "unitRange", value.asInstanceOf[js.Any])
   }

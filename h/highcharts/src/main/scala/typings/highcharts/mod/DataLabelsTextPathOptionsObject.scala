@@ -9,7 +9,7 @@ trait DataLabelsTextPathOptionsObject extends StObject {
   /**
     * (Highcharts, Highstock, Gantt) Presentation attributes for the text path.
     */
-  var attributes: js.UndefOr[SVGAttributes] = js.undefined
+  var attributes: js.UndefOr[PlotDependencywheelDataLabelsTextPathAttributesOptions | SVGAttributes] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Enable or disable `textPath` option for
@@ -26,7 +26,7 @@ object DataLabelsTextPathOptionsObject {
   
   extension [Self <: DataLabelsTextPathOptionsObject](x: Self) {
     
-    inline def setAttributes(value: SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: PlotDependencywheelDataLabelsTextPathAttributesOptions | SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     

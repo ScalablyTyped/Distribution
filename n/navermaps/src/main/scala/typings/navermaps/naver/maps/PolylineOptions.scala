@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * PolylineOptions
+  */
 trait PolylineOptions extends StObject {
   
   var clickable: js.UndefOr[Boolean] = js.undefined
@@ -22,13 +25,13 @@ trait PolylineOptions extends StObject {
   
   var strokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeLineCap: js.UndefOr[strokeLineCapType] = js.undefined
+  var strokeLineCap: js.UndefOr[StrokeLineCapType] = js.undefined
   
-  var strokeLineJoin: js.UndefOr[strokeLineJoinType] = js.undefined
+  var strokeLineJoin: js.UndefOr[StrokeLineJoinType] = js.undefined
   
   var strokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var strokeStyle: js.UndefOr[strokeStyleType] = js.undefined
+  var strokeStyle: js.UndefOr[StrokeStyleType] = js.undefined
   
   var strokeWeight: js.UndefOr[Double] = js.undefined
   
@@ -77,11 +80,11 @@ object PolylineOptions {
     
     inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    inline def setStrokeLineCap(value: strokeLineCapType): Self = StObject.set(x, "strokeLineCap", value.asInstanceOf[js.Any])
+    inline def setStrokeLineCap(value: StrokeLineCapType): Self = StObject.set(x, "strokeLineCap", value.asInstanceOf[js.Any])
     
     inline def setStrokeLineCapUndefined: Self = StObject.set(x, "strokeLineCap", js.undefined)
     
-    inline def setStrokeLineJoin(value: strokeLineJoinType): Self = StObject.set(x, "strokeLineJoin", value.asInstanceOf[js.Any])
+    inline def setStrokeLineJoin(value: StrokeLineJoinType): Self = StObject.set(x, "strokeLineJoin", value.asInstanceOf[js.Any])
     
     inline def setStrokeLineJoinUndefined: Self = StObject.set(x, "strokeLineJoin", js.undefined)
     
@@ -89,7 +92,7 @@ object PolylineOptions {
     
     inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
-    inline def setStrokeStyle(value: strokeStyleType): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+    inline def setStrokeStyle(value: StrokeStyleType): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
     inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
     

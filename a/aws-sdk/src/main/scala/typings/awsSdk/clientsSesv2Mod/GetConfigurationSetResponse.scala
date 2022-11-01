@@ -40,6 +40,11 @@ trait GetConfigurationSetResponse extends StObject {
     * An object that defines the open and click tracking options for emails that you send using the configuration set.
     */
   var TrackingOptions: js.UndefOr[typings.awsSdk.clientsSesv2Mod.TrackingOptions] = js.undefined
+  
+  /**
+    * An object that contains information about the VDM preferences for your configuration set.
+    */
+  var VdmOptions: js.UndefOr[typings.awsSdk.clientsSesv2Mod.VdmOptions] = js.undefined
 }
 object GetConfigurationSetResponse {
   
@@ -79,5 +84,9 @@ object GetConfigurationSetResponse {
     inline def setTrackingOptions(value: TrackingOptions): Self = StObject.set(x, "TrackingOptions", value.asInstanceOf[js.Any])
     
     inline def setTrackingOptionsUndefined: Self = StObject.set(x, "TrackingOptions", js.undefined)
+    
+    inline def setVdmOptions(value: VdmOptions): Self = StObject.set(x, "VdmOptions", value.asInstanceOf[js.Any])
+    
+    inline def setVdmOptionsUndefined: Self = StObject.set(x, "VdmOptions", js.undefined)
   }
 }

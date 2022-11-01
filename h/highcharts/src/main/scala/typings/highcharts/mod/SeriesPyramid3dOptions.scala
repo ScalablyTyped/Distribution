@@ -11,54 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with PlotPyramid3dOptions {
   
   /**
-    * Not available
-    */
-  var allAreas: Unit
-  
-  /**
-    * Not available
-    */
-  var boostThreshold: Unit
-  
-  /**
     * (Highcharts, Highmaps) The center of the series. By default, it is
     * centered in the middle of the plot area, so it fills the plot area
     * height.
     */
   var center: js.UndefOr[js.Array[Double | String]] = js.undefined
-  
-  /**
-    * Not available
-    */
-  var colorAxis: Unit
-  
-  /**
-    * Not available
-    */
-  var compare: Unit
-  
-  /**
-    * Not available
-    */
-  var compareBase: Unit
-  
-  /**
-    * (Highcharts) Polar charts only. Whether to connect the ends of a line
-    * series plot across the extremes.
-    */
-  var connectEnds: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Whether to connect a graph line across null
-    * points, or render a gap between the two points on either side of the
-    * null.
-    */
-  var connectNulls: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Not available
-    */
-  var dataSorting: Unit
   
   /**
     * (Highcharts, Highmaps) The end angle of the pie in degrees where 0 is top
@@ -72,37 +29,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * of that circle. Use pie.borderWidth to set the border thickness.
     */
   var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
-  
-  /**
-    * (Highstock) Defines when to display a gap in the graph, together with the
-    * gapUnit option.
-    *
-    * In case when `dataGrouping` is enabled, points can be grouped into a
-    * larger time span. This can make the grouped points to have a greater
-    * distance than the absolute value of `gapSize` property, which will result
-    * in disappearing graph completely. To prevent this situation the mentioned
-    * distance between grouped points is used instead of previously defined
-    * `gapSize`.
-    *
-    * In practice, this option is most often used to visualize gaps in time
-    * series. In a stock chart, intraday data is available for daytime hours,
-    * while gaps will appear in nights and weekends.
-    */
-  var gapSize: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highstock) Together with gapSize, this option defines where to draw gaps
-    * in the graph.
-    *
-    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
-    * if the distance between two points is greater than 5 times that of the
-    * two closest points, the graph will be broken.
-    *
-    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
-    * values, which on a datetime axis is milliseconds. This also applies to
-    * the navigator series that inherits gap options from the base series.
-    */
-  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
@@ -128,21 +54,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var index: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts, Highmaps) The size of the inner diameter for the pie. A size
+    * greater than 0 renders a donut chart. Can be a percentage or pixel value.
+    * Percentages are relative to the pie size. Pixel values are given as
+    * integers. Setting overridden by thickness.
+    *
+    * Note: in Highcharts < 4.1.2, the percentage was relative to the plot
+    * area, not the pie size.
+    */
+  var innerSize: js.UndefOr[Double | String] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
     * series in the legend.
     */
   var legendIndex: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Pixel width of the graph line.
-    */
-  var lineWidth: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) The line cap used for line ends and line joins on
-    * the graph.
-    */
-  var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
   
   /**
     * (Highmaps) An array of objects containing a `geometry` or `path`
@@ -151,17 +77,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * passed directly into `mapData`.
     */
   var mapData: js.UndefOr[GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]] = js.undefined
-  
-  /**
-    * (Highcharts) Options for the point markers of line-like series.
-    * Properties like `fillColor`, `lineColor` and `lineWidth` define the
-    * visual appearance of the markers. Other series types, like column series,
-    * don't have markers, but have visual options on the series level instead.
-    *
-    * In styled mode, the markers can be styled with the `.highcharts-point`,
-    * `.highcharts-point-hover` and `.highcharts-point-select` class names.
-    */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highmaps) The minimum size for a pie in response to auto
@@ -175,6 +90,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * in the legend, tooltip etc.
     */
   var name: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) The diameter of the pie relative to the plot area.
+    * Can be a percentage or pixel value. Pixel values are given as integers.
+    * The default behaviour (as of 3.0) is to scale to the plot area and give
+    * room for data labels within the plot area. slicedOffset is also included
+    * in the default size calculation. As a consequence, the size of the pie
+    * may vary when points are updated and data labels more around. In that
+    * case it is best to set a fixed value, for example `"75%"`.
+    */
+  var size: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
     * (Highcharts, Highmaps) If a point is sliced, moved out from the center,
@@ -197,12 +123,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var startAngle: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Whether to apply steps to the line. Possible
-    * values are `left`, `center` and `right`.
-    */
-  var step: js.UndefOr[OptionsStepValue] = js.undefined
-  
-  /**
     * (Highcharts) Thickness describing the ring size for a donut type chart,
     * overriding innerSize.
     */
@@ -214,12 +134,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * unknown sources.
     */
   var `type`: String | pyramid3d
-  
-  /**
-    * (Highstock) The parameter allows setting line series type and use OHLC
-    * indicators. Data in OHLC format is required.
-    */
-  var useOhlcData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
@@ -239,47 +153,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesPyramid3dOptions {
   
-  inline def apply(
-    allAreas: Unit,
-    boostThreshold: Unit,
-    colorAxis: Unit,
-    compare: Unit,
-    compareBase: Unit,
-    dataSorting: Unit,
-    `type`: String | pyramid3d
-  ): SeriesPyramid3dOptions = {
-    val __obj = js.Dynamic.literal(allAreas = allAreas.asInstanceOf[js.Any], boostThreshold = boostThreshold.asInstanceOf[js.Any], colorAxis = colorAxis.asInstanceOf[js.Any], compare = compare.asInstanceOf[js.Any], compareBase = compareBase.asInstanceOf[js.Any], dataSorting = dataSorting.asInstanceOf[js.Any])
+  inline def apply(`type`: String | pyramid3d): SeriesPyramid3dOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPyramid3dOptions]
   }
   
   extension [Self <: SeriesPyramid3dOptions](x: Self) {
     
-    inline def setAllAreas(value: Unit): Self = StObject.set(x, "allAreas", value.asInstanceOf[js.Any])
-    
-    inline def setBoostThreshold(value: Unit): Self = StObject.set(x, "boostThreshold", value.asInstanceOf[js.Any])
-    
     inline def setCenter(value: js.Array[Double | String]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     inline def setCenterVarargs(value: (Double | String)*): Self = StObject.set(x, "center", js.Array(value*))
-    
-    inline def setColorAxis(value: Unit): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
-    
-    inline def setCompare(value: Unit): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
-    
-    inline def setCompareBase(value: Unit): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
-    
-    inline def setConnectEnds(value: Boolean): Self = StObject.set(x, "connectEnds", value.asInstanceOf[js.Any])
-    
-    inline def setConnectEndsUndefined: Self = StObject.set(x, "connectEnds", js.undefined)
-    
-    inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
-    
-    inline def setConnectNullsUndefined: Self = StObject.set(x, "connectNulls", js.undefined)
-    
-    inline def setDataSorting(value: Unit): Self = StObject.set(x, "dataSorting", value.asInstanceOf[js.Any])
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
@@ -288,14 +174,6 @@ object SeriesPyramid3dOptions {
     inline def setFillColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
-    
-    inline def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
-    
-    inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
-    
-    inline def setGapUnit(value: OptionsGapUnitValue): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
-    
-    inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -309,27 +187,19 @@ object SeriesPyramid3dOptions {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
+    inline def setInnerSize(value: Double | String): Self = StObject.set(x, "innerSize", value.asInstanceOf[js.Any])
+    
+    inline def setInnerSizeUndefined: Self = StObject.set(x, "innerSize", js.undefined)
+    
     inline def setLegendIndex(value: Double): Self = StObject.set(x, "legendIndex", value.asInstanceOf[js.Any])
     
     inline def setLegendIndexUndefined: Self = StObject.set(x, "legendIndex", js.undefined)
-    
-    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
-    
-    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
-    
-    inline def setLinecap(value: SeriesLinecapValue): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
-    
-    inline def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
     
     inline def setMapData(value: GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
     
     inline def setMapDataUndefined: Self = StObject.set(x, "mapData", js.undefined)
     
     inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value*))
-    
-    inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
-    
-    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     inline def setMinSize(value: Double | String): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
@@ -338,6 +208,12 @@ object SeriesPyramid3dOptions {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeNull: Self = StObject.set(x, "size", null)
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSlicedOffset(value: Double): Self = StObject.set(x, "slicedOffset", value.asInstanceOf[js.Any])
     
@@ -351,19 +227,11 @@ object SeriesPyramid3dOptions {
     
     inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
-    inline def setStep(value: OptionsStepValue): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
-    
-    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
-    
     inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
     inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     inline def setType(value: String | pyramid3d): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
-    
-    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

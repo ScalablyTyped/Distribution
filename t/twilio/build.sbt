@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twilio"
-version := "3.83.0-5d97ba"
+version := "3.83.1-3cc723"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

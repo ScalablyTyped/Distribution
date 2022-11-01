@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * StyleOptions
+  */
 trait StyleOptions extends StObject {
   
   var clickable: js.UndefOr[Boolean] = js.undefined

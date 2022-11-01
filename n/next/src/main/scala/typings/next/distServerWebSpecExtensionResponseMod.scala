@@ -2,7 +2,7 @@ package typings.next
 
 import typings.next.anon.TrailingSlash
 import typings.next.distServerWebNextUrlMod.NextURL
-import typings.next.distServerWebSpecExtensionCookiesMod.NextCookies
+import typings.next.distServerWebSpecExtensionCookiesMod.ResponseCookies
 import typings.std.Blob
 import typings.std.BodyInit
 import typings.std.FormData
@@ -43,7 +43,7 @@ object distServerWebSpecExtensionResponseMod {
     /* CompleteClass */
     override val bodyUsed: Boolean = js.native
     
-    def cookies: NextCookies = js.native
+    def cookies: ResponseCookies = js.native
     
     /* standard dom */
     /* CompleteClass */

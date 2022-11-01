@@ -915,6 +915,7 @@
 | 0.8045844350941316 | [aws-sdk__util-format-url](./a/aws-sdk__util-format-url) | -
 | 0.8045798053568527 | [is-object](./i/is-object) | Checks whether a value is an object
 | 0.8045549388391775 | [throttle-debounce](./t/throttle-debounce) | Throttle and debounce functions.
+| 0.8043740250958555 | [dns-txt](./d/dns-txt) | Encode/decode DNS-SD TXT record RDATA fields
 | 0.8043193328972622 | [parse-filepath](./p/parse-filepath) | Pollyfill for node.js path.parse, parses a filepat
 | 0.8041370456856186 | [expo__config-plugins](./e/expo__config-plugins) | A library for Expo config plugins
 | 0.8041367382811804 | [assert](./a/assert) | The assert module from Node.js, for the browser.
@@ -1980,6 +1981,7 @@
 | 0.7502181141696336 | [firebase__remote-config-t](./f/firebase__remote-config-types) | @firebase/remote-config Types
 | 0.7501683192374426 | [plugin-error](./p/plugin-error) | Error handling for Vinyl plugins.
 | 0.7501562591436477 | [firebase__performance-typ](./f/firebase__performance-types) | @firebase/performance Types
+| 0.7501367252927489 | [http-headers](./h/http-headers) | Parse http headers
 | 0.750106815253358 | [window-size](./w/window-size) | Reliable way to get the height and width of termin
 | 0.7498732675964742 | [is-builtin-module](./i/is-builtin-module) | Check if a string matches the name of a Node.js bu
 | 0.7498569047813345 | [pkg-up](./p/pkg-up) | Find the closest package.json file
@@ -2472,6 +2474,7 @@
 | 0.7286757944973303 | [xss-filters](./x/xss-filters) | Secure XSS Filters - Just sufficient output filter
 | 0.7286741484635176 | [idb](./i/idb) | A small wrapper that makes IndexedDB usable
 | 0.7286433735299976 | [lodash_dot_isnil](./l/lodash_dot_isnil) | The lodash method _.isNil exported as a module.
+| 0.7286018439116696 | [original-url](./o/original-url) | Reconstruct the original URL used in an HTTP reque
 | 0.7285800858992573 | [jquery_dot_fancytree](./j/jquery_dot_fancytree) | JavaScript tree view / tree grid plugin with suppo
 | 0.7284584088301865 | [react-movable](./r/react-movable) | Drag and drop lists.
 | 0.728429402854734 | [gulp-less](./g/gulp-less) | Less for Gulp
@@ -5156,6 +5159,7 @@
 | 0.6597465716372752 | [ghost-storage-base](./g/ghost-storage-base) | Base storage adapter.
 | 0.6596814236335335 | [victory-group](./v/victory-group) | Group Layout Component for Victory
 | 0.6596800928072634 | [victory-stack](./v/victory-stack) | Stack Layout Component for Victory
+| 0.6596621664494059 | [ip-packet](./i/ip-packet) | Encode/decode raw ip packets
 | 0.659644681052409 | [feedme](./f/feedme) | RSS/Atom/JSON feed parser
 | 0.6595861712352533 | [pinyin-engine](./p/pinyin-engine) | 小巧高效的拼音匹配引擎
 | 0.6595541591507764 | [exenv](./e/exenv) | React's ExecutionEnvironment module extracted for 
@@ -5669,6 +5673,7 @@
 | 0.646882898942545 | [react-csv](./r/react-csv) | Build CSV files on the fly basing on Array/literal
 | 0.6468653309429016 | [lodash_dot_isarraylikeobj](./l/lodash_dot_isarraylikeobject) | The lodash method _.isArrayLikeObject exported as 
 | 0.6468626143784914 | [smartystreets-javascript-](./s/smartystreets-javascript-sdk) | Quick and easy Smarty address validation.
+| 0.6468016354281335 | [is-electron-renderer](./i/is-electron-renderer) | Check if code is running in Electron renderer proc
 | 0.6467986105115606 | [webpack-blocks__postcss](./w/webpack-blocks__postcss) | Webpack block for PostCSS.
 | 0.6467093573405442 | [fastify__fast-json-string](./f/fastify__fast-json-stringify-compiler) | Build and manage the fast-json-stringify instances
 | 0.6466743182204042 | [express-form-data](./e/express-form-data) | Module to parse multipart/form data
@@ -6181,6 +6186,7 @@
 | 0.6317697543880033 | [typopo](./t/typopo) | Fix frequent microtypography errors in multiple la
 | 0.6317443536658951 | [hcaptcha__vue-hcaptcha](./h/hcaptcha__vue-hcaptcha) | hCaptcha Component Library for Vue.js. Compatible 
 | 0.6317436520771436 | [rn-host-detect](./r/rn-host-detect) | Get correctly localhost on Android emulator for Re
+| 0.6316835727657332 | [swell-js](./s/swell-js) | Swell JS library for client-side stores
 | 0.6316171076268065 | [trayballoon](./t/trayballoon) | Create a trayballoon on Windows
 | 0.6315535287080538 | [arbiter](./a/arbiter) | A Salesforce ORM powered by jsforce
 | 0.6315403177905691 | [aspnet-identity-pw](./a/aspnet-identity-pw) | Utility for hashing and validating passwords using
@@ -8813,6 +8819,7 @@
 | 0.49458210950056336 | [cryptex](./c/cryptex) | Secure secret storage and cryptographic key retrie
 | 0.49453039315843456 | [java](./j/java) | Bridge API to connect with existing Java APIs.
 | 0.494482927081605 | [hiredis](./h/hiredis) | Wrapper for reply processing code in hiredis
+| 0.49445366101098104 | [fps](./f/fps) | Tiny module for measuring FPS
 | 0.494427332048337 | [karma-nyan-reporter](./k/karma-nyan-reporter) | Karma reporter with Nyan Cat style logging.
 | 0.4944097795513992 | [react-app](./r/react-app) | Boilerplate and tooling for JavaScript application
 | 0.4944039767960241 | [textr](./t/textr) | Tiny and extendable text transforming framework
@@ -10406,6 +10413,7 @@
 | 0.3577945202866475 | [react-native-confetti](./r/react-native-confetti) | Raining confetti made with react native animations
 | 0.35776033424499876 | [csw-aas-js](./c/csw-aas-js) | This library is a javascript adapter for csw-aas. 
 | 0.3574313535564614 | [express-myconnection](./e/express-myconnection) | Connect/Express middleware that auto provides mysq
+| 0.35733627183901506 | [fernet](./f/fernet) | Javascript implementation of Fernet symmetric encr
 | 0.3571611690897243 | [geojson2osm](./g/geojson2osm) | Convert geojson to osm
 | 0.3570302757408753 | [binary-file](./b/binary-file) | Read and write binary types in files
 | 0.3566149958991379 | [satnav](./s/satnav) | A micro front-end router
@@ -10820,6 +10828,7 @@
 | 0.2663958533152918 | [firebase__auth-interop-ty](./f/firebase__auth-interop-types) | @firebase/auth interop Types
 | 0.26624511278226615 | [get-emoji](./g/get-emoji) | you give emoji name, we give you an emoji
 | 0.2659977446619852 | [ace](./a/ace) | ace
+| 0.26562841928380077 | [buffer-json-encoding](./b/buffer-json-encoding) | An abstract-encoding compatible JSON encoder/decod
 | 0.2655709630403511 | [fromjs](./f/fromjs) | Powerful LINQ engine for JavaScript
 | 0.26520189080527223 | [tokey__imports-parser](./t/tokey__imports-parser) | parser for esm like imports
 | 0.26507254923530227 | [poker-evaluator](./p/poker-evaluator) | A library to evaluate 3, 5, 6 or 7 card poker hand

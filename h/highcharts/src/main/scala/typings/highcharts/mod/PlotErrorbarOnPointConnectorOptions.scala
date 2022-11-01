@@ -7,19 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlotErrorbarOnPointConnectorOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock) A name for the dash style to use for the
-    * connector.
+    * (Highcharts) A name for the dash style to use for the connector.
     */
   var dashstyle: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Color of the connector line. By default it's the
-    * series' color.
+    * (Highcharts) Color of the connector line. By default it's the series'
+    * color.
     */
   var stroke: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Pixel width of the connector line.
+    * (Highcharts) Pixel width of the connector line.
     */
   var width: js.UndefOr[Double] = js.undefined
 }

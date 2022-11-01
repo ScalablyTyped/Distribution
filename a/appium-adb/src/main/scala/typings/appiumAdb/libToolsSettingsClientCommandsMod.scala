@@ -44,6 +44,13 @@ object libToolsSettingsClientCommandsMod extends Shortcut {
   trait SettingsAppStartupOptions extends StObject {
     
     /**
+      * Whether to restore
+      * the activity which was the current one before Settings startup
+      * @default false
+      */
+    var shouldRestoreCurrentApp: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The maximum number of milliseconds
       * to wait until the app has started
       * @default 5000
@@ -58,6 +65,10 @@ object libToolsSettingsClientCommandsMod extends Shortcut {
     }
     
     extension [Self <: SettingsAppStartupOptions](x: Self) {
+      
+      inline def setShouldRestoreCurrentApp(value: Boolean): Self = StObject.set(x, "shouldRestoreCurrentApp", value.asInstanceOf[js.Any])
+      
+      inline def setShouldRestoreCurrentAppUndefined: Self = StObject.set(x, "shouldRestoreCurrentApp", js.undefined)
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

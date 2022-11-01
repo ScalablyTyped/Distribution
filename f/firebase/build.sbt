@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase"
-version := "9.13.0-8a81f4"
+version := "9.13.0-4a8795"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,8 +14,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.7-732ba6",
   "org.scalablytyped" %%% "firebase__component" % "0.5.21-2f926f",
   "org.scalablytyped" %%% "firebase__database" % "0.13.10-5f71e4",
-  "org.scalablytyped" %%% "firebase__firestore" % "3.7.2-7d023e",
-  "org.scalablytyped" %%% "firebase__firestore-compat" % "0.2.2-e06491",
+  "org.scalablytyped" %%% "firebase__firestore" % "3.7.2-4931c0",
+  "org.scalablytyped" %%% "firebase__firestore-compat" % "0.2.2-6633b5",
   "org.scalablytyped" %%% "firebase__firestore-types" % "2.5.1-1be088",
   "org.scalablytyped" %%% "firebase__functions" % "0.8.8-117ec2",
   "org.scalablytyped" %%% "firebase__installations" % "0.5.16-a6be5f",
@@ -34,7 +34,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "node-fetch" % "3.2.10-2f020e",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-fe2613",
-  "org.scalablytyped" %%% "rollup" % "3.2.3-c92d63",
+  "org.scalablytyped" %%% "rollup" % "3.2.5-600601",
   "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221018Z-7d374b",
   "org.scalablytyped" %%% "sinon" % "10.0-dt-20220720Z-556da5",
   "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-7adbb2",

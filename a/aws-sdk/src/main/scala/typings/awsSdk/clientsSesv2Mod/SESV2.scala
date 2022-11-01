@@ -11,6 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SESV2 extends Service {
   
+  /**
+    * Retrieves batches of metric data collected based on your sending activity. You can execute this operation no more than 16 times per second, and with at most 160 queries from the batches per second (cumulative).
+    */
+  def batchGetMetricData(): Request[BatchGetMetricDataResponse, AWSError] = js.native
+  def batchGetMetricData(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetMetricDataResponse, Unit]): Request[BatchGetMetricDataResponse, AWSError] = js.native
+  /**
+    * Retrieves batches of metric data collected based on your sending activity. You can execute this operation no more than 16 times per second, and with at most 160 queries from the batches per second (cumulative).
+    */
+  def batchGetMetricData(params: BatchGetMetricDataRequest): Request[BatchGetMetricDataResponse, AWSError] = js.native
+  def batchGetMetricData(
+    params: BatchGetMetricDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetMetricDataResponse, Unit]
+  ): Request[BatchGetMetricDataResponse, AWSError] = js.native
+  
   @JSName("config")
   var config_SESV2: ConfigBase & ClientConfiguration = js.native
   
@@ -737,6 +751,20 @@ trait SESV2 extends Service {
   ): Request[ListImportJobsResponse, AWSError] = js.native
   
   /**
+    * Lists the recommendations present in your Amazon SES account in the current Amazon Web Services Region. You can execute this operation no more than once per second.
+    */
+  def listRecommendations(): Request[ListRecommendationsResponse, AWSError] = js.native
+  def listRecommendations(callback: js.Function2[/* err */ AWSError, /* data */ ListRecommendationsResponse, Unit]): Request[ListRecommendationsResponse, AWSError] = js.native
+  /**
+    * Lists the recommendations present in your Amazon SES account in the current Amazon Web Services Region. You can execute this operation no more than once per second.
+    */
+  def listRecommendations(params: ListRecommendationsRequest): Request[ListRecommendationsResponse, AWSError] = js.native
+  def listRecommendations(
+    params: ListRecommendationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRecommendationsResponse, Unit]
+  ): Request[ListRecommendationsResponse, AWSError] = js.native
+  
+  /**
     * Retrieves a list of email addresses that are on the suppression list for your account.
     */
   def listSuppressedDestinations(): Request[ListSuppressedDestinationsResponse, AWSError] = js.native
@@ -825,6 +853,20 @@ trait SESV2 extends Service {
   ): Request[PutAccountSuppressionAttributesResponse, AWSError] = js.native
   
   /**
+    * Update your Amazon SES account VDM attributes. You can execute this operation no more than once per second.
+    */
+  def putAccountVdmAttributes(): Request[PutAccountVdmAttributesResponse, AWSError] = js.native
+  def putAccountVdmAttributes(callback: js.Function2[/* err */ AWSError, /* data */ PutAccountVdmAttributesResponse, Unit]): Request[PutAccountVdmAttributesResponse, AWSError] = js.native
+  /**
+    * Update your Amazon SES account VDM attributes. You can execute this operation no more than once per second.
+    */
+  def putAccountVdmAttributes(params: PutAccountVdmAttributesRequest): Request[PutAccountVdmAttributesResponse, AWSError] = js.native
+  def putAccountVdmAttributes(
+    params: PutAccountVdmAttributesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAccountVdmAttributesResponse, Unit]
+  ): Request[PutAccountVdmAttributesResponse, AWSError] = js.native
+  
+  /**
     * Associate a configuration set with a dedicated IP pool. You can use dedicated IP pools to create groups of dedicated IP addresses for sending specific types of email.
     */
   def putConfigurationSetDeliveryOptions(): Request[PutConfigurationSetDeliveryOptionsResponse, AWSError] = js.native
@@ -903,6 +945,20 @@ trait SESV2 extends Service {
     params: PutConfigurationSetTrackingOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutConfigurationSetTrackingOptionsResponse, Unit]
   ): Request[PutConfigurationSetTrackingOptionsResponse, AWSError] = js.native
+  
+  /**
+    * Specify VDM preferences for email that you send using the configuration set. You can execute this operation no more than once per second.
+    */
+  def putConfigurationSetVdmOptions(): Request[PutConfigurationSetVdmOptionsResponse, AWSError] = js.native
+  def putConfigurationSetVdmOptions(callback: js.Function2[/* err */ AWSError, /* data */ PutConfigurationSetVdmOptionsResponse, Unit]): Request[PutConfigurationSetVdmOptionsResponse, AWSError] = js.native
+  /**
+    * Specify VDM preferences for email that you send using the configuration set. You can execute this operation no more than once per second.
+    */
+  def putConfigurationSetVdmOptions(params: PutConfigurationSetVdmOptionsRequest): Request[PutConfigurationSetVdmOptionsResponse, AWSError] = js.native
+  def putConfigurationSetVdmOptions(
+    params: PutConfigurationSetVdmOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutConfigurationSetVdmOptionsResponse, Unit]
+  ): Request[PutConfigurationSetVdmOptionsResponse, AWSError] = js.native
   
   /**
     * Move a dedicated IP address to an existing dedicated IP pool.  The dedicated IP address that you specify must already exist, and must be associated with your Amazon Web Services account.  The dedicated IP pool you specify must already exist. You can create a new pool by using the CreateDedicatedIpPool operation. 

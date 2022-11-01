@@ -96,6 +96,12 @@ trait YAxisOptions
   var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.undefined
   
   /**
+    * (Gantt) Show an indicator on the axis for the current date and time. Can
+    * be a boolean or a configuration object similar to xAxis.plotLines.
+    */
+  var currentDateIndicator: js.UndefOr[Boolean | CurrentDateIndicatorOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Gantt) For a datetime axis, the scale will
     * automatically adjust to the appropriate unit. This member gives the
     * default string representations used for each unit. For intermediate
@@ -154,7 +160,7 @@ trait YAxisOptions
     * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
     * for X axis (inverted polar).
     */
-  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
+  var gridLineInterpolation: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The width of the grid lines
@@ -405,7 +411,7 @@ trait YAxisOptions
     * (Highcharts, Highstock, Highmaps, Gantt) The position of the minor tick
     * marks relative to the axis line. Can be one of `inside` and `outside`.
     */
-  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.undefined
+  var minorTickPosition: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the minor
@@ -443,6 +449,30 @@ trait YAxisOptions
     * top respectively. This is typically used with dual or multiple axes.
     */
   var opposite: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highstock) In an ordinal axis, the points are equally spaced in the
+    * chart regardless of the actual time or x distance between them. This
+    * means that missing data periods (e.g. nights or weekends for a stock
+    * chart) will not take up space in the chart. Having `ordinal: false` will
+    * show any gaps created by the `gapSize` setting proportionate to their
+    * duration.
+    *
+    * In stock charts the X axis is ordinal by default, unless the boost module
+    * is used and at least one of the series' data length exceeds the
+    * boostThreshold.
+    *
+    * For an ordinal axis, `minPadding` and `maxPadding` are ignored. Use
+    * overscroll instead.
+    */
+  var ordinal: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highstock) Additional range on the right side of the xAxis. Works
+    * similar to `xAxis.maxPadding`, but value is set in milliseconds. Can be
+    * set for both main `xAxis` and the navigator's `xAxis`.
+    */
+  var overscroll: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Refers to the index in the panes array. Used for circular
@@ -527,9 +557,8 @@ trait YAxisOptions
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to show the last tick label.
-    * Defaults to `true` on cartesian charts, and `false` on polar charts.
     */
-  var showLastLabel: js.UndefOr[Boolean] = js.undefined
+  var showLastLabel: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A soft maximum for the axis. If the series
@@ -657,7 +686,7 @@ trait YAxisOptions
     * (Highcharts, Highstock, Highmaps, Gantt) The position of the major tick
     * marks relative to the axis line. Can be one of `inside` and `outside`.
     */
-  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.undefined
+  var tickPosition: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function returning
@@ -686,7 +715,7 @@ trait YAxisOptions
     * placed between categories. The default is `between` if the `tickInterval`
     * is 1, else `on`.
     */
-  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.undefined
+  var tickmarkPlacement: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The axis title, showing next to
@@ -833,6 +862,10 @@ object YAxisOptions {
     
     inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
     
+    inline def setCurrentDateIndicator(value: Boolean | CurrentDateIndicatorOptions): Self = StObject.set(x, "currentDateIndicator", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentDateIndicatorUndefined: Self = StObject.set(x, "currentDateIndicator", js.undefined)
+    
     inline def setDateTimeLabelFormats(value: AxisDateTimeLabelFormatsOptions): Self = StObject.set(x, "dateTimeLabelFormats", value.asInstanceOf[js.Any])
     
     inline def setDateTimeLabelFormatsUndefined: Self = StObject.set(x, "dateTimeLabelFormats", js.undefined)
@@ -859,7 +892,7 @@ object YAxisOptions {
     
     inline def setGridLineDashStyleUndefined: Self = StObject.set(x, "gridLineDashStyle", js.undefined)
     
-    inline def setGridLineInterpolation(value: OptionsGridLineInterpolationValue): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
+    inline def setGridLineInterpolation(value: String): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
     
     inline def setGridLineInterpolationUndefined: Self = StObject.set(x, "gridLineInterpolation", js.undefined)
     
@@ -979,7 +1012,7 @@ object YAxisOptions {
     
     inline def setMinorTickLengthUndefined: Self = StObject.set(x, "minorTickLength", js.undefined)
     
-    inline def setMinorTickPosition(value: OptionsMinorTickPositionValue): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
+    inline def setMinorTickPosition(value: String): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
     
     inline def setMinorTickPositionUndefined: Self = StObject.set(x, "minorTickPosition", js.undefined)
     
@@ -998,6 +1031,14 @@ object YAxisOptions {
     inline def setOpposite(value: Boolean): Self = StObject.set(x, "opposite", value.asInstanceOf[js.Any])
     
     inline def setOppositeUndefined: Self = StObject.set(x, "opposite", js.undefined)
+    
+    inline def setOrdinal(value: Boolean): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    
+    inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+    
+    inline def setOverscroll(value: Double): Self = StObject.set(x, "overscroll", value.asInstanceOf[js.Any])
+    
+    inline def setOverscrollUndefined: Self = StObject.set(x, "overscroll", js.undefined)
     
     inline def setPane(value: Double): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
@@ -1047,7 +1088,7 @@ object YAxisOptions {
     
     inline def setShowFirstLabelUndefined: Self = StObject.set(x, "showFirstLabel", js.undefined)
     
-    inline def setShowLastLabel(value: Boolean): Self = StObject.set(x, "showLastLabel", value.asInstanceOf[js.Any])
+    inline def setShowLastLabel(value: String): Self = StObject.set(x, "showLastLabel", value.asInstanceOf[js.Any])
     
     inline def setShowLastLabelUndefined: Self = StObject.set(x, "showLastLabel", js.undefined)
     
@@ -1101,7 +1142,7 @@ object YAxisOptions {
     
     inline def setTickPixelIntervalUndefined: Self = StObject.set(x, "tickPixelInterval", js.undefined)
     
-    inline def setTickPosition(value: OptionsTickPositionValue): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
+    inline def setTickPosition(value: String): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
     
     inline def setTickPositionUndefined: Self = StObject.set(x, "tickPosition", js.undefined)
     
@@ -1119,7 +1160,7 @@ object YAxisOptions {
     
     inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
     
-    inline def setTickmarkPlacement(value: OptionsTickmarkPlacementValue): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
+    inline def setTickmarkPlacement(value: String): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
     
     inline def setTickmarkPlacementUndefined: Self = StObject.set(x, "tickmarkPlacement", js.undefined)
     

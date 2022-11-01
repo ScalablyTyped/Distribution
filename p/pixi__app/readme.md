@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__app
 
-Typings are for version 7.0.0
+Typings are for version 7.0.2
 
 ## Library description:
 Convenience class to create a new PixiJS application

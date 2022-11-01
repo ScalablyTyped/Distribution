@@ -26,16 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var data: js.UndefOr[js.Array[Double | Null | PointOptionsObject]] = js.undefined
   
   /**
-    * Not available
-    */
-  var dataParser: Unit
-  
-  /**
-    * Not available
-    */
-  var dataURL: Unit
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -70,9 +60,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Not available
+    * (Highcharts, Highstock) This option allows grouping series in a stacked
+    * chart. The stack option can be a string or anything else, as long as the
+    * grouped series' stack options match each other after conversion into a
+    * string.
     */
-  var stack: js.UndefOr[Double | String | Unit]
+  var stack: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
@@ -82,19 +75,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `type`: String | pyramid
   
   /**
-    * Not available
+    * (Highcharts, Highstock) When using dual or multiple x axes, this number
+    * defines which xAxis the particular series is connected to. It refers to
+    * either the axis id or the index of the axis in the xAxis array, with 0
+    * being the first.
     */
-  var xAxis: js.UndefOr[Double | String | Unit]
+  var xAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * Not available
+    * (Highcharts, Highstock) When using dual or multiple y axes, this number
+    * defines which yAxis the particular series is connected to. It refers to
+    * either the axis id or the index of the axis in the yAxis array, with 0
+    * being the first.
     */
-  var yAxis: js.UndefOr[Double | String | Unit]
+  var yAxis: js.UndefOr[Double | String] = js.undefined
 }
 object SeriesPyramidOptions {
   
-  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | pyramid): SeriesPyramidOptions = {
-    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
+  inline def apply(`type`: String | pyramid): SeriesPyramidOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPyramidOptions]
   }
@@ -102,10 +101,6 @@ object SeriesPyramidOptions {
   extension [Self <: SeriesPyramidOptions](x: Self) {
     
     inline def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
-    
-    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -133,17 +128,17 @@ object SeriesPyramidOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setStack(value: Double | String | Unit): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     inline def setType(value: String | pyramid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setXAxis(value: Double | String | Unit): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    inline def setYAxis(value: Double | String | Unit): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double | String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }

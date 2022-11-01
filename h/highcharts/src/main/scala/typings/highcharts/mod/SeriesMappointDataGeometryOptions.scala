@@ -15,7 +15,7 @@ trait SeriesMappointDataGeometryOptions extends StObject {
     * (Highmaps) The geometry type, which in case of the `mappoint` series is
     * always `Point`.
     */
-  var `type`: js.UndefOr[typings.highcharts.highchartsStrings.Point] = js.undefined
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SeriesMappointDataGeometryOptions {
   
@@ -32,7 +32,7 @@ object SeriesMappointDataGeometryOptions {
     
     inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value*))
     
-    inline def setType(value: typings.highcharts.highchartsStrings.Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -53,6 +53,13 @@ trait ZAxisOptions
   var angle: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Gantt) An array defining breaks in the axis, the
+    * sections defined will be left out and all the points shifted closer to
+    * each other.
+    */
+  var breaks: js.UndefOr[js.Array[ZAxisBreaksOptions]] = js.undefined
+  
+  /**
     * (Highcharts, Gantt) If categories are present for the xAxis, names are
     * used instead of numbers for that axis.
     *
@@ -76,6 +83,15 @@ trait ZAxisOptions
     * elements for the grid, axis elements and labels.
     */
   var className: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts) Configure a crosshair that follows either the mouse pointer
+    * or the hovered point.
+    *
+    * In styled mode, the crosshairs are styled in the `.highcharts-crosshair`,
+    * `.highcharts-crosshair-thin` or `.highcharts-xaxis-category` classes.
+    */
+  var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.undefined
   
   /**
     * (Gantt) Show an indicator on the axis for the current date and time. Can
@@ -139,7 +155,7 @@ trait ZAxisOptions
     * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
     * for X axis (inverted polar).
     */
-  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
+  var gridLineInterpolation: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The width of the grid lines extending the ticks across the
@@ -157,6 +173,15 @@ trait ZAxisOptions
   var gridZIndex: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts, Highstock) The height as the vertical axis. If it's a
+    * number, it is interpreted as pixels.
+    *
+    * Since Highcharts 2: If it's a percentage string, it is interpreted as
+    * percentages of the total plot height.
+    */
+  var height: js.UndefOr[Double | String] = js.undefined
+  
+  /**
     * (Highcharts) An id for the axis. This can be used after render time to
     * get a pointer to the axis object through `chart.get()`.
     */
@@ -169,6 +194,31 @@ trait ZAxisOptions
     * data if `tickInterval` and `step` is set to 1.
     */
   var labels: js.UndefOr[ZAxisLabelsOptions] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The left position as the horizontal axis. If it's
+    * a number, it is interpreted as pixel position relative to the chart.
+    *
+    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
+    * as percentages of the plot width, offset from plot area left.
+    */
+  var left: js.UndefOr[Double | String] = js.undefined
+  
+  /**
+    * (Highcharts) The color of the line marking the axis itself.
+    *
+    * In styled mode, the line stroke is given in the `.highcharts-axis-line`
+    * or `.highcharts-xaxis-line` class.
+    */
+  var lineColor: js.UndefOr[ColorType] = js.undefined
+  
+  /**
+    * (Highcharts) The width of the line marking the axis itself.
+    *
+    * In styled mode, the stroke width is given in the `.highcharts-axis-line`
+    * or `.highcharts-xaxis-line` class.
+    */
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Index of another axis that this axis is
@@ -315,7 +365,7 @@ trait ZAxisOptions
     * (Highcharts) The position of the minor tick marks relative to the axis
     * line. Can be one of `inside` and `outside`.
     */
-  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.undefined
+  var minorTickPosition: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The pixel width of the minor tick mark.
@@ -441,6 +491,12 @@ trait ZAxisOptions
   var scrollbar: js.UndefOr[ZAxisScrollbarOptions] = js.undefined
   
   /**
+    * (Highcharts) Whether to show the axis line and title when the axis has no
+    * data.
+    */
+  var showEmpty: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts) Whether to show the first tick label.
     */
   var showFirstLabel: js.UndefOr[Boolean] = js.undefined
@@ -536,7 +592,7 @@ trait ZAxisOptions
     * (Highcharts) The position of the major tick marks relative to the axis
     * line. Can be one of `inside` and `outside`.
     */
-  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.undefined
+  var tickPosition: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) A callback function returning array defining where the ticks
@@ -570,12 +626,21 @@ trait ZAxisOptions
     * placed between categories. The default is `between` if the `tickInterval`
     * is 1, else `on`.
     */
-  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.undefined
+  var tickmarkPlacement: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The axis title, showing next to the axis line.
     */
   var title: js.UndefOr[ZAxisTitleOptions] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The top position as the vertical axis. If it's a
+    * number, it is interpreted as pixel position relative to the chart.
+    *
+    * Since Highcharts 2: If it's a percentage string, it is interpreted as
+    * percentages of the plot height, offset from plot area top.
+    */
+  var top: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Gantt) The type of axis. Can be one of `linear`,
@@ -613,6 +678,15 @@ trait ZAxisOptions
     * ticks and labels, should be visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The width as the horizontal axis. If it's a
+    * number, it is interpreted as pixels.
+    *
+    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
+    * as percentages of the total plot width.
+    */
+  var width: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The Z index for the axis group.
@@ -654,6 +728,12 @@ object ZAxisOptions {
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
+    inline def setBreaks(value: js.Array[ZAxisBreaksOptions]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+    
+    inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+    
+    inline def setBreaksVarargs(value: ZAxisBreaksOptions*): Self = StObject.set(x, "breaks", js.Array(value*))
+    
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
@@ -667,6 +747,10 @@ object ZAxisOptions {
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setCrosshair(value: Boolean | AxisCrosshairOptions): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
+    
+    inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
     
     inline def setCurrentDateIndicator(value: Boolean | CurrentDateIndicatorOptions): Self = StObject.set(x, "currentDateIndicator", value.asInstanceOf[js.Any])
     
@@ -698,7 +782,7 @@ object ZAxisOptions {
     
     inline def setGridLineDashStyleUndefined: Self = StObject.set(x, "gridLineDashStyle", js.undefined)
     
-    inline def setGridLineInterpolation(value: OptionsGridLineInterpolationValue): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
+    inline def setGridLineInterpolation(value: String): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
     
     inline def setGridLineInterpolationUndefined: Self = StObject.set(x, "gridLineInterpolation", js.undefined)
     
@@ -712,6 +796,10 @@ object ZAxisOptions {
     
     inline def setGridZIndexUndefined: Self = StObject.set(x, "gridZIndex", js.undefined)
     
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -719,6 +807,18 @@ object ZAxisOptions {
     inline def setLabels(value: ZAxisLabelsOptions): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLineColor(value: ColorType): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     inline def setLinkedTo(value: Double): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
     
@@ -786,7 +886,7 @@ object ZAxisOptions {
     
     inline def setMinorTickLengthUndefined: Self = StObject.set(x, "minorTickLength", js.undefined)
     
-    inline def setMinorTickPosition(value: OptionsMinorTickPositionValue): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
+    inline def setMinorTickPosition(value: String): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
     
     inline def setMinorTickPositionUndefined: Self = StObject.set(x, "minorTickPosition", js.undefined)
     
@@ -850,6 +950,10 @@ object ZAxisOptions {
     
     inline def setScrollbarUndefined: Self = StObject.set(x, "scrollbar", js.undefined)
     
+    inline def setShowEmpty(value: Boolean): Self = StObject.set(x, "showEmpty", value.asInstanceOf[js.Any])
+    
+    inline def setShowEmptyUndefined: Self = StObject.set(x, "showEmpty", js.undefined)
+    
     inline def setShowFirstLabel(value: Boolean): Self = StObject.set(x, "showFirstLabel", value.asInstanceOf[js.Any])
     
     inline def setShowFirstLabelUndefined: Self = StObject.set(x, "showFirstLabel", js.undefined)
@@ -894,7 +998,7 @@ object ZAxisOptions {
     
     inline def setTickPixelIntervalUndefined: Self = StObject.set(x, "tickPixelInterval", js.undefined)
     
-    inline def setTickPosition(value: OptionsTickPositionValue): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
+    inline def setTickPosition(value: String): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
     
     inline def setTickPositionUndefined: Self = StObject.set(x, "tickPosition", js.undefined)
     
@@ -912,13 +1016,17 @@ object ZAxisOptions {
     
     inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
     
-    inline def setTickmarkPlacement(value: OptionsTickmarkPlacementValue): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
+    inline def setTickmarkPlacement(value: String): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
     
     inline def setTickmarkPlacementUndefined: Self = StObject.set(x, "tickmarkPlacement", js.undefined)
     
     inline def setTitle(value: ZAxisTitleOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     inline def setType(value: AxisTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
@@ -937,6 +1045,10 @@ object ZAxisOptions {
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     

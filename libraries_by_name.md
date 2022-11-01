@@ -1139,6 +1139,7 @@
 | [buffer-equal](./b/buffer-equal) | return whether two buffers are equal | buffer, equal |
 | [buffer-from](./b/buffer-from) | A  | buffer, buffer from |
 | [buffer-json](./b/buffer-json) | JSON.stringify & JSON.parse which can encode/decod | JSON, parse, stringify, buffer, reviver, replacer, base64 |
+| [buffer-json-encoding](./b/buffer-json-encoding) | An abstract-encoding compatible JSON encoder/decod | json, json-buffer, buffer, abstract-encoding, encode, decode |
 | [buffer-reader](./b/buffer-reader) | a reader for nodejs buffer | - |
 | [buffer-split](./b/buffer-split) | split a buffer by another buffer. think String.spl | buffer, split, chunks, binary |
 | [buffer-to-stream](./b/buffer-to-stream) | convert buffer to readable stream | buffer, stream |
@@ -2252,6 +2253,7 @@
 | [dnd-multi-backend](./d/dnd-multi-backend) | Multi Backend system compatible with DnD Core / Re | agnostic, dnd, drag, drop, backend, multi |
 | [dns-over-http-resolver](./d/dns-over-http-resolver) | DNS over HTTP resolver | dns, doh, http |
 | [dns-packet](./d/dns-packet) | An abstract-encoding compliant module for encoding | dns, packet, encodings, encoding, encoder, abstract-encoding |
+| [dns-txt](./d/dns-txt) | Encode/decode DNS-SD TXT record RDATA fields | rfc6763, 6763, rfc6762, 6762, dns, mdns, multicast, txt, rdata, dns-sd, encode, decode, parse, encoder, decoder, parser, service, discovery |
 | [dns2](./d/dns2) | A DNS Server and Client Implementation in Pure Jav | dns |
 | [dnssd](./d/dnssd) | Bonjour/Avahi-like service discovery in pure JavaS | bonjour, avahi, mdns, zeroconf |
 | [do-not-zip](./d/do-not-zip) | Do not zip. Just store. | browser, zip, archive |
@@ -2495,6 +2497,7 @@
 | [electron-window-state](./e/electron-window-state) | Simple module that helps to save and restore size  | electron |
 | [electron-winstaller](./e/electron-winstaller) | Module to generate Windows installers for Electron | - |
 | [electron__asar](./e/electron__asar) | - | - |
+| [electron__notarize](./e/electron__notarize) | - | - |
 | [electron__osx-sign](./e/electron__osx-sign) | Codesign Electron macOS apps | - |
 | [electron__universal](./e/electron__universal) | Utility for creating Universal macOS applications  | electron, apple silicon, universal |
 | [elegant-spinner](./e/elegant-spinner) | Elegant spinner for interactive CLI apps | ansi, terminal, console, cli, string, log, logging, spinner, busy, indicator, loading, loader, progress, elegant, loiter, interactive |
@@ -2999,6 +3002,7 @@
 | [feedparser](./f/feedparser) | Robust RSS Atom and RDF feed parsing using sax js | rss, feed, atom, rdf, xml, syndication, rsscloud, pubsubhubbub |
 | [feedsub](./f/feedsub) | Reads online RSS/Atom/JSON feeds notifying on new  | feed, rss, atom, json, subscribe |
 | [feflow__cli](./f/feflow__cli) | A front-end flow tool. | feflow, front-end, flow |
+| [fernet](./f/fernet) | Javascript implementation of Fernet symmetric encr | encryption, symmetric, key |
 | [fetch-blob](./f/fetch-blob) | Blob & File implementation in Node.js, originally  | blob, file, node-fetch |
 | [fetch-headers](./f/fetch-headers) | fetch Headers | Headers, fetch, spec, whatwg |
 | [fetch-jsonp](./f/fetch-jsonp) | Fetch JSONP like a boss using Fetch API | fetch, jsonp, github fetch, ajax |
@@ -3288,6 +3292,7 @@
 | [foundation-sites](./f/foundation-sites) | The most advanced responsive front-end framework i | css, scss, sass, js, responsive, mobile-first, framework, eyeglass-module, handlebars-helper-rel, handlebars-helper-slugify |
 | [fp-ts](./f/fp-ts) | Functional programming in TypeScript | typescript, algebraic-data-types, functional-programming |
 | [fparser](./f/fparser) | A Math Formula parser library for JavaScript | javascript, formula, parser, formula, parser, mathematical, formula, parser |
+| [fps](./f/fps) | Tiny module for measuring FPS | fps, frames, per, second, tick, measure |
 | [fpsmeter](./f/fpsmeter) | Sexy, fast, and themable FPS meter. | - |
 | [frac](./f/frac) | Rational approximation with bounded denominator | math, fraction, rational, approximation |
 | [fraction_dot_js](./f/fraction_dot_js) | A rational number library | math, fraction, rational, rationals, number, parser, rational numbers |
@@ -4674,6 +4679,7 @@
 | [http-cookie-agent](./h/http-cookie-agent) | Allows cookies with every Node.js HTTP clients. | agent, axios, cookies, fetch, got, http, https, needle, node-fetch, phin, request, superagent, tough-cookie, urllib, undici |
 | [http-errors](./h/http-errors) | Create HTTP error objects | http, error |
 | [http-graceful-shutdown](./h/http-graceful-shutdown) | gracefully shuts downs http server | http, https, koa, express, fastify, shutdown, graceful, force, graceful-shutdown, http-shutdown, http-terminate, shutdown, kubernetes, prometheus, backend |
+| [http-headers](./h/http-headers) | Parse http headers | http, https, header, headers, parse, parsing, ServerResponse, response |
 | [http-link-header](./h/http-link-header) | Parse & format HTTP link headers according to RFC  | rfc5988, rfc8288, rfc, 5988, 8288, http, link, header |
 | [http-parser-js](./h/http-parser-js) | A pure JS HTTP parser for node. | http |
 | [http-proxy](./h/http-proxy) | HTTP proxying for the masses | - |
@@ -4946,6 +4952,7 @@
 | [ip](./i/ip) | - | - |
 | [ip-address](./i/ip-address) | A library for parsing IPv4 and IPv6 IP addresses i | ipv6, ipv4, browser, validation |
 | [ip-cidr](./i/ip-cidr) | Module for working with CIDR (v4, v6) | ip, cidr, range, from, to, array |
+| [ip-packet](./i/ip-packet) | Encode/decode raw ip packets | - |
 | [ip-regex](./i/ip-regex) | Regular expression for matching IP addresses (IPv4 | ip, ipv6, ipv4, regex, regexp, re, match, test, find, text, pattern, internet, protocol, address, validate |
 | [ip-subnet-calculator](./i/ip-subnet-calculator) | Calculate optimal subnet masks for standard and no | ip, subnet, network, netmask, calculator, mask |
 | [ip1sms__is-disposable-pho](./i/ip1sms__is-disposable-phone-number) | Determine if a phone number is a disposable phone  | disposable, phonenumbers, signup |
@@ -5012,6 +5019,7 @@
 | [is-dotdir](./i/is-dotdir) | Returns true if a path is a dot-directory. | dotdir, is |
 | [is-dotfile](./i/is-dotfile) | Return true if a file path is (or has) a dotfile.  | detect, dot, dotfile, expression, file, filepath, find, fs, is, match, path, regex, regexp, regular |
 | [is-electron](./i/is-electron) | Detect if running in Electron. | atom, electron, renderer, process |
+| [is-electron-renderer](./i/is-electron-renderer) | Check if code is running in Electron renderer proc | electron, electron-component, atom, renderer, process |
 | [is-elevated](./i/is-elevated) | Check if the process is running with elevated priv | admin, administrator, win32, windows, process, running, cmd, shell, command-line, check, detect, is, root, sudo, elevate, elevated, privileges |
 | [is-empty](./i/is-empty) | Check whether a value is "empty". | array, check, empty, file, is, map, object, set, value |
 | [is-empty-object](./i/is-empty-object) | Check if an object is empty. | object, empty |
@@ -8076,6 +8084,7 @@
 | [org-regex](./o/org-regex) | Regular expression for matching npm organization n | scoped, npm, package, organization, name, regex, regexp, regular, expression |
 | [orientjs](./o/orientjs) | Official node.js driver for OrientDB. Fast, lightw | orientdb, orient, driver, graph, database, db, graphdb, node, node.js |
 | [original](./o/original) | Generate the origin from an URL or check if two UR | origin, url, parse |
+| [original-url](./o/original-url) | Reconstruct the original URL used in an HTTP reque | http, https, url, original, resolve, parse, reconstruct, forward, proxy, rewrite, host, forwarded, x-forwarded-proto, X-forwarded-protocol, x-url-scheme, front-end-https, x-forwarded-ssl, x-forwarded-host, x-forwarded-port |
 | [os-homedir](./o/os-homedir) | Node.js 4 os.homedir() ponyfill | builtin, core, ponyfill, polyfill, shim, os, homedir, home, dir, directory, folder, user, path |
 | [os-locale](./o/os-locale) | Get the system locale | locale, language, system, os, string, user, country, id, identifier, region |
 | [os-name](./o/os-name) | Get the name of the current operating system. Exam | os, operating, system, platform, name, title, release, version, macos, windows, linux |
@@ -11292,6 +11301,7 @@
 | [swe-validation](./s/swe-validation) | Validation for Swedish Social Security number and  | validate, swedish, personnummer, organisationnummer, ssn, social, security, number, social security number, corporate identity |
 | [sweet-pubsub](./s/sweet-pubsub) | Simple publish && subscribe communication interfac | pub, sub, pubsub, emit, modules |
 | [sweetalert](./s/sweetalert) | A beautiful replacement for JavaScript's "alert" | sweetalert, alert, modal, popup |
+| [swell-js](./s/swell-js) | Swell JS library for client-side stores | - |
 | [swfobject](./s/swfobject) | SWFObject is an easy-to-use and standards-friendly | SWFObject, swf, object, flash, embed, content |
 | [swiftclick](./s/swiftclick) | Eliminates the 300ms click event delay on touch de | swiftclick, fastclick, mobile, tap, touch, click, delay |
 | [swig](./s/swig) | A simple, powerful, and extendable templating engi | template, templating, html, django, jinja, twig, express, block |

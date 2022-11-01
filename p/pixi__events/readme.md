@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__events
 
-Typings are for version 7.0.0
+Typings are for version 7.0.2
 
 ## Library description:
 UI events for scene graphs

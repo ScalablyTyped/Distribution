@@ -5,9 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * MapType
+  */
 trait MapType extends StObject {
   
-  def getTile(x: Double, y: Double, z: Double): HTMLElement | Tile
+  def getTile(x: Double, y: Double, z: Double): HTMLElement | CanvasTile | ImageTile | Tile
   
   var maxZoom: Double
   
@@ -22,7 +25,7 @@ trait MapType extends StObject {
 object MapType {
   
   inline def apply(
-    getTile: (Double, Double, Double) => HTMLElement | Tile,
+    getTile: (Double, Double, Double) => HTMLElement | CanvasTile | ImageTile | Tile,
     maxZoom: Double,
     minZoom: Double,
     name: String,
@@ -35,7 +38,7 @@ object MapType {
   
   extension [Self <: MapType](x: Self) {
     
-    inline def setGetTile(value: (Double, Double, Double) => HTMLElement | Tile): Self = StObject.set(x, "getTile", js.Any.fromFunction3(value))
+    inline def setGetTile(value: (Double, Double, Double) => HTMLElement | CanvasTile | ImageTile | Tile): Self = StObject.set(x, "getTile", js.Any.fromFunction3(value))
     
     inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for next-seo
 
-Typings are for version 5.11.1
+Typings are for version 5.13.0
 
 ## Library description:
 SEO plugin for Next.js projects

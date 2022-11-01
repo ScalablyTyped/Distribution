@@ -4,7 +4,7 @@ import typings.next.anon.City
 import typings.next.anon.Country
 import typings.next.anon.I18n
 import typings.next.distServerWebNextUrlMod.NextURL
-import typings.next.distServerWebSpecExtensionCookiesMod.NextCookies
+import typings.next.distServerWebSpecExtensionCookiesMod.RequestCookies
 import typings.std.AbortSignal
 import typings.std.Blob
 import typings.std.FormData
@@ -60,7 +60,7 @@ object distServerWebSpecExtensionRequestMod {
     /* CompleteClass */
     override val cache: RequestCache = js.native
     
-    def cookies: NextCookies = js.native
+    def cookies: RequestCookies = js.native
     
     /** Returns the credentials mode associated with request, which is a string indicating whether credentials will be sent with the request always, never, or only when sent to a same-origin URL. */
     /* standard dom */

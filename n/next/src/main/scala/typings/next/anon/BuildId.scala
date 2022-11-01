@@ -23,8 +23,6 @@ trait BuildId extends StObject {
   
   var entrypoints: EntryObject
   
-  var hasReactRoot: Boolean
-  
   var isDevFallback: js.UndefOr[Boolean] = js.undefined
   
   var middlewareMatchers: js.UndefOr[js.Array[MiddlewareMatcher]] = js.undefined
@@ -46,11 +44,10 @@ object BuildId {
     compilerType: CompilerNameValues,
     config: NextConfigComplete,
     entrypoints: EntryObject,
-    hasReactRoot: Boolean,
     rewrites: AfterFiles,
     runWebpackSpan: Span
   ): BuildId = {
-    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], compilerType = compilerType.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], entrypoints = entrypoints.asInstanceOf[js.Any], hasReactRoot = hasReactRoot.asInstanceOf[js.Any], rewrites = rewrites.asInstanceOf[js.Any], runWebpackSpan = runWebpackSpan.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], compilerType = compilerType.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], entrypoints = entrypoints.asInstanceOf[js.Any], rewrites = rewrites.asInstanceOf[js.Any], runWebpackSpan = runWebpackSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildId]
   }
   
@@ -71,8 +68,6 @@ object BuildId {
     inline def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
     
     inline def setEntrypoints(value: EntryObject): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
-    
-    inline def setHasReactRoot(value: Boolean): Self = StObject.set(x, "hasReactRoot", value.asInstanceOf[js.Any])
     
     inline def setIsDevFallback(value: Boolean): Self = StObject.set(x, "isDevFallback", value.asInstanceOf[js.Any])
     

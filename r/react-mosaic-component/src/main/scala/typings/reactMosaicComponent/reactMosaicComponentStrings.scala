@@ -47,6 +47,10 @@ object reactMosaicComponentStrings {
   inline def ADD_TO_FOLDER: ADD_TO_FOLDER = "ADD_TO_FOLDER".asInstanceOf[ADD_TO_FOLDER]
   
   @js.native
+  sealed trait AIMPOINTS_TARGET extends StObject
+  inline def AIMPOINTS_TARGET: AIMPOINTS_TARGET = "AIMPOINTS_TARGET".asInstanceOf[AIMPOINTS_TARGET]
+  
+  @js.native
   sealed trait AIRPLANE extends StObject
   inline def AIRPLANE: AIRPLANE = "AIRPLANE".asInstanceOf[AIRPLANE]
   
@@ -237,6 +241,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait Add_ extends StObject
   inline def Add_ : Add_ = "Add".asInstanceOf[Add_]
+  
+  @js.native
+  sealed trait AimpointsTarget extends StObject
+  inline def AimpointsTarget: AimpointsTarget = "AimpointsTarget".asInstanceOf[AimpointsTarget]
   
   @js.native
   sealed trait Airplane_ extends StObject

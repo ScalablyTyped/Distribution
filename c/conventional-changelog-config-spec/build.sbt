@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "conventional-changelog-config-spec"
-version := "2.1-dt-20220329Z-9d8dd1"
+version := "2.1-dt-20221101Z-980852"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

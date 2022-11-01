@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-steps" : "5.0.0-alpha.0"
+      "rc-steps" : "5.0.0-alpha.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-steps" : "5.0.0-alpha.0"
+      "rc-steps" : "5.0.0-alpha.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/mesh" : "7.0.0"
+      "@pixi/mesh" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/mesh" : "7.0.0"
+      "@pixi/mesh" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

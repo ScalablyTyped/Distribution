@@ -1,5 +1,6 @@
 package typings.antdMobile
 
+import typings.antdMobile.antdMobileStrings.auto
 import typings.react.mod.FC
 import typings.react.mod.MutableRefObject
 import org.scalablytyped.runtime.StObject
@@ -18,7 +19,7 @@ object esComponentsImageViewerSlideMod {
     
     var image: String
     
-    var maxZoom: Double
+    var maxZoom: Double | auto
     
     def onTap(): Unit
     
@@ -26,7 +27,7 @@ object esComponentsImageViewerSlideMod {
   }
   object Props {
     
-    inline def apply(image: String, maxZoom: Double, onTap: () => Unit): Props = {
+    inline def apply(image: String, maxZoom: Double | auto, onTap: () => Unit): Props = {
       val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], onTap = js.Any.fromFunction0(onTap))
       __obj.asInstanceOf[Props]
     }
@@ -39,7 +40,7 @@ object esComponentsImageViewerSlideMod {
       
       inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double | auto): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
       inline def setOnTap(value: () => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction0(value))
       

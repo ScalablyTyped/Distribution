@@ -4,18 +4,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ZoomControlOptions extends StObject {
+trait ZoomControlOptions
+  extends StObject
+     with ControlOptions {
   
-  var legendDisabled: Boolean
+  var legendDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var position: Position
-  
-  var style: ZoomControlStyle
+  var style: js.UndefOr[ZoomControlStyle] = js.undefined
 }
 object ZoomControlOptions {
   
-  inline def apply(legendDisabled: Boolean, position: Position, style: ZoomControlStyle): ZoomControlOptions = {
-    val __obj = js.Dynamic.literal(legendDisabled = legendDisabled.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+  inline def apply(position: Position): ZoomControlOptions = {
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomControlOptions]
   }
   
@@ -23,8 +23,10 @@ object ZoomControlOptions {
     
     inline def setLegendDisabled(value: Boolean): Self = StObject.set(x, "legendDisabled", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setLegendDisabledUndefined: Self = StObject.set(x, "legendDisabled", js.undefined)
     
     inline def setStyle(value: ZoomControlStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * SymbolIcon
+  */
 trait SymbolIcon extends StObject {
   
   var anchor: js.UndefOr[Point | PointLiteral | Position] = js.undefined
@@ -19,6 +22,8 @@ trait SymbolIcon extends StObject {
   var strokeColor: js.UndefOr[String] = js.undefined
   
   var strokeOpacity: js.UndefOr[Double] = js.undefined
+  
+  var strokeStyle: js.UndefOr[StrokeStyleType] = js.undefined
   
   var strokeWeight: js.UndefOr[Double] = js.undefined
   
@@ -60,6 +65,10 @@ object SymbolIcon {
     inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    
+    inline def setStrokeStyle(value: StrokeStyleType): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
     
     inline def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
     

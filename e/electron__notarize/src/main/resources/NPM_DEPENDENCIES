@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@electron/notarize" : "1.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@electron/notarize" : "1.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

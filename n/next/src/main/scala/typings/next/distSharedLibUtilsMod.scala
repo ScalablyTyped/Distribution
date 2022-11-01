@@ -159,11 +159,6 @@ object distSharedLibUtilsMod {
   
   inline def normalizeRepeatedSlashes(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRepeatedSlashes")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("next/dist/shared/lib/utils", "warnOnce")
-  @js.native
-  def warnOnce: js.Function1[/* _ */ String, Unit] = js.native
-  inline def warnOnce_=(x: js.Function1[/* _ */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warnOnce")(x.asInstanceOf[js.Any])
-  
   trait AppContextType[R /* <: NextRouter */] extends StObject {
     
     var AppTree: AppTreeType

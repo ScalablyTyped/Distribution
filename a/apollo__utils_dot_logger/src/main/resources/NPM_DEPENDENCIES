@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@apollo/utils.logger" : "1.0.0"
+      "@apollo/utils.logger" : "1.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@apollo/utils.logger" : "1.0.0"
+      "@apollo/utils.logger" : "1.0.1"
     }
   ],
   "compile-devDependencies" : [

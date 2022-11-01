@@ -255,6 +255,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`add-to-artifact`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`add-to-folder`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.add_
+  - typings.blueprintjsIcons.blueprintjsIconsStrings.`aimpoints-target`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.airplane_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`align-center`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`align-justify`
@@ -831,6 +832,8 @@ object BlueprintIcons20Id {
   inline def `add-to-artifact`: typings.blueprintjsIcons.blueprintjsIconsStrings.`add-to-artifact` = "add-to-artifact".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`add-to-artifact`]
   
   inline def `add-to-folder`: typings.blueprintjsIcons.blueprintjsIconsStrings.`add-to-folder` = "add-to-folder".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`add-to-folder`]
+  
+  inline def `aimpoints-target`: typings.blueprintjsIcons.blueprintjsIconsStrings.`aimpoints-target` = "aimpoints-target".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`aimpoints-target`]
   
   inline def airplane: airplane_ = "airplane".asInstanceOf[airplane_]
   

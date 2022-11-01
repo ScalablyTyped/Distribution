@@ -1,8 +1,5 @@
 package typings.highcharts.mod
 
-import typings.highcharts.anon.PartialAnimationOptionsOb
-import typings.highcharts.highchartsInts.`0`
-import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,24 +39,50 @@ trait PlotBellcurveOptions extends StObject {
     *
     * - `defer`: The animation delay time in milliseconds.
     *
-    * - `duration`: The duration of the animation in milliseconds.
+    * - `duration`: The duration of the animation in milliseconds. (Defaults to
+    * `1000`)
     *
     * - `easing`: Can be a string reference to an easing function set on the
     * `Math` object or a function. See the _Custom easing function_ demo below.
+    * (Defaults to `easeInOutSine`)
     *
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | PlotBellcurveAnimationOptions | PartialAnimationOptionsOb] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   
   /**
-    * (Highcharts) For some series, there is a limit that shuts down initial
-    * animation by default when the total number of points in the chart is too
-    * high. For example, for a column chart and its derivatives, animation does
-    * not run if there is more than 250 points totally. To disable this cap,
-    * set `animationLimit` to `Infinity`.
+    * (Highcharts) For some series, there is a limit that shuts down animation
+    * by default when the total number of points in the chart is too high. For
+    * example, for a column chart and its derivatives, animation does not run
+    * if there is more than 250 points totally. To disable this cap, set
+    * `animationLimit` to `Infinity`. This option works if animation is fired
+    * on individual points, not on a group of points like e.g. during the
+    * initial animation.
     */
   var animationLimit: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts) Sets the color blending in the boost module.
+    */
+  var boostBlending: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts) Set the point threshold for when a series should enter boost
+    * mode.
+    *
+    * Setting it to e.g. 2000 will cause the series to enter boost mode when
+    * there are 2000 or more points in the series.
+    *
+    * To disable boosting on the series, set the `boostThreshold` to 0. Setting
+    * it to 1 will force boosting.
+    *
+    * Note that the cropThreshold also affects this setting. When zooming in on
+    * a series that has fewer points than the `cropThreshold`, all points are
+    * rendered although outside the visible plot area, and the `boostThreshold`
+    * won't take effect.
+    */
+  var boostThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) The border color of the map areas.
@@ -141,13 +164,13 @@ trait PlotBellcurveOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
+  var compare: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
+  var compareBase: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -165,6 +188,13 @@ trait PlotBellcurveOptions extends StObject {
     * series plot across the extremes.
     */
   var connectEnds: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Whether to connect a graph line across null
+    * points, or render a gap between the two points on either side of the
+    * null.
+    */
+  var connectNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
@@ -275,6 +305,14 @@ trait PlotBellcurveOptions extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highcharts) The draggable-points module allows points to be moved around
+    * or modified in the chart. In addition to the options mentioned under the
+    * `dragDrop` API structure, the module fires three events, point.dragStart,
+    * point.drag and point.drop.
+    */
+  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
+  
+  /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
     * large datasets it improves performance.
@@ -319,7 +357,7 @@ trait PlotBellcurveOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
+  var findNearestPointBy: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
@@ -350,7 +388,7 @@ trait PlotBellcurveOptions extends StObject {
     * values, which on a datetime axis is milliseconds. This also applies to
     * the navigator series that inherits gap options from the base series.
     */
-  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
+  var gapUnit: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -517,6 +555,37 @@ trait PlotBellcurveOptions extends StObject {
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Gantt) If no x values are given for the points in
+    * a series, `pointInterval` defines the interval of the x values. For
+    * example, if a series contains one value every decade starting from year
+    * 0, set `pointInterval` to `10`. In true `datetime` axes, the
+    * `pointInterval` is set in milliseconds.
+    *
+    * It can be also be combined with `pointIntervalUnit` to draw irregular
+    * time intervals.
+    *
+    * If combined with `relativeXValue`, an x value can be set on each point,
+    * and the `pointInterval` is added x times to the `pointStart` setting.
+    *
+    * Please note that this options applies to the _series data_, not the
+    * interval of the axis ticks, which is independent.
+    */
+  var pointInterval: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) On datetime series, this allows for
+    * setting the pointInterval to irregular time units, `day`, `month` and
+    * `year`. A day is usually the same as 24 hours, but `pointIntervalUnit`
+    * also takes the DST crossover into consideration when dealing with local
+    * time. Combine this option with `pointInterval` to draw weeks, quarters, 6
+    * months, 10 years etc.
+    *
+    * Please note that this options applies to the _series data_, not the
+    * interval of the axis ticks, which is independent.
+    */
+  var pointIntervalUnit: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Gantt) Possible values: `"on"`, `"between"`,
     * `number`.
     *
@@ -635,7 +704,26 @@ trait PlotBellcurveOptions extends StObject {
     */
   var softThreshold: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * (Highcharts, Highstock) Whether to stack the values of each series on top
+    * of each other. Possible values are `undefined` to disable, `"normal"` to
+    * stack by value or `"percent"`.
+    *
+    * When stacking is enabled, data must be sorted in ascending X order.
+    *
+    * Some stacking options are related to specific series types. In the
+    * streamgraph series type, the stacking option is set to `"stream"`. The
+    * second one is `"overlap"`, which only applies to waterfall series.
+    */
+  var stacking: js.UndefOr[String] = js.undefined
+  
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Whether to apply steps to the line. Possible
+    * values are `left`, `center` and `right`.
+    */
+  var step: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
@@ -694,6 +782,12 @@ trait PlotBellcurveOptions extends StObject {
   var turboThreshold: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highstock) The parameter allows setting line series type and use OHLC
+    * indicators. Data in OHLC format is required.
+    */
+  var useOhlcData: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts) Set the initial visibility of the series.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -741,13 +835,21 @@ object PlotBellcurveOptions {
     
     inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
     
-    inline def setAnimation(value: Boolean | PlotBellcurveAnimationOptions | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | AnimationOptionsObject): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationLimit(value: Double): Self = StObject.set(x, "animationLimit", value.asInstanceOf[js.Any])
     
     inline def setAnimationLimitUndefined: Self = StObject.set(x, "animationLimit", js.undefined)
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
+    
+    inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
+    
+    inline def setBoostThreshold(value: Double): Self = StObject.set(x, "boostThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setBoostThresholdUndefined: Self = StObject.set(x, "boostThreshold", js.undefined)
     
     inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
@@ -781,9 +883,9 @@ object PlotBellcurveOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
     
@@ -796,6 +898,10 @@ object PlotBellcurveOptions {
     inline def setConnectEnds(value: Boolean): Self = StObject.set(x, "connectEnds", value.asInstanceOf[js.Any])
     
     inline def setConnectEndsUndefined: Self = StObject.set(x, "connectEnds", js.undefined)
+    
+    inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
+    
+    inline def setConnectNullsUndefined: Self = StObject.set(x, "connectNulls", js.undefined)
     
     inline def setConnectors(value: SeriesConnectorsOptionsObject): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
     
@@ -847,6 +953,10 @@ object PlotBellcurveOptions {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setDragDrop(value: SeriesDragDropOptionsObject): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
+    
+    inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
+    
     inline def setEnableMouseTracking(value: Boolean): Self = StObject.set(x, "enableMouseTracking", value.asInstanceOf[js.Any])
     
     inline def setEnableMouseTrackingUndefined: Self = StObject.set(x, "enableMouseTracking", js.undefined)
@@ -863,7 +973,7 @@ object PlotBellcurveOptions {
     
     inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    inline def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
     
     inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
     
@@ -871,7 +981,7 @@ object PlotBellcurveOptions {
     
     inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
     
-    inline def setGapUnit(value: OptionsGapUnitValue): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
+    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
     
     inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
@@ -957,6 +1067,14 @@ object PlotBellcurveOptions {
     
     inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
     
+    inline def setPointInterval(value: Double): Self = StObject.set(x, "pointInterval", value.asInstanceOf[js.Any])
+    
+    inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
+    
+    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    
+    inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
+    
     inline def setPointPlacement(value: Double | String): Self = StObject.set(x, "pointPlacement", value.asInstanceOf[js.Any])
     
     inline def setPointPlacementUndefined: Self = StObject.set(x, "pointPlacement", js.undefined)
@@ -1007,9 +1125,17 @@ object PlotBellcurveOptions {
     
     inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
     
+    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    
+    inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
+    
     inline def setStates(value: SeriesStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    
+    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
     
@@ -1032,6 +1158,10 @@ object PlotBellcurveOptions {
     inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
     
     inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
+    
+    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
+    
+    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

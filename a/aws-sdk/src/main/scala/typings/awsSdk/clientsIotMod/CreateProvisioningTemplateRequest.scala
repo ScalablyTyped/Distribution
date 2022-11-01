@@ -17,7 +17,7 @@ trait CreateProvisioningTemplateRequest extends StObject {
   var enabled: js.UndefOr[Enabled] = js.undefined
   
   /**
-    * Creates a pre-provisioning hook template.
+    * Creates a pre-provisioning hook template. Only supports template of type FLEET_PROVISIONING. For more information about provisioning template types, see type.
     */
   var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.undefined
   

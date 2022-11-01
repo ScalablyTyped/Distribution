@@ -92,7 +92,7 @@ trait AnnotationsLabelsOptions extends StObject {
     * label that flow outside the plot area. The justify option aligns the
     * label inside the plot area.
     */
-  var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
+  var overflow: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When either the borderWidth or
@@ -220,7 +220,7 @@ object AnnotationsLabelsOptions {
     
     inline def setIncludeInDataExportUndefined: Self = StObject.set(x, "includeInDataExport", js.undefined)
     
-    inline def setOverflow(value: OptionsOverflowValue): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     

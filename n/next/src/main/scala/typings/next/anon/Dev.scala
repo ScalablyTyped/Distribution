@@ -14,8 +14,6 @@ trait Dev extends StObject {
   
   var distDir: String
   
-  var hasReactRoot: js.UndefOr[Boolean] = js.undefined
-  
   var hasRewrites: js.UndefOr[Boolean] = js.undefined
   
   var isClient: js.UndefOr[Boolean] = js.undefined
@@ -42,10 +40,6 @@ object Dev {
     inline def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
     
     inline def setDistDir(value: String): Self = StObject.set(x, "distDir", value.asInstanceOf[js.Any])
-    
-    inline def setHasReactRoot(value: Boolean): Self = StObject.set(x, "hasReactRoot", value.asInstanceOf[js.Any])
-    
-    inline def setHasReactRootUndefined: Self = StObject.set(x, "hasReactRoot", js.undefined)
     
     inline def setHasRewrites(value: Boolean): Self = StObject.set(x, "hasRewrites", value.asInstanceOf[js.Any])
     

@@ -71,6 +71,16 @@ object libToolsApkUtilsMod extends Shortcut {
     var APP_INSTALL_STATE: NEWERVERSIONINSTALLED = js.native
     
     /**
+      * Activates the given application or launches it if necessary.
+      * The action literally simulates
+      * clicking the corresponding application icon on the dashboard.
+      *
+      * @param appId - Application package identifier
+      * @throws {Error} If the app cannot be activated
+      */
+    def activateApp(appId: String): js.Promise[Unit] = js.native
+    
+    /**
       * Caches the given APK at a remote location to speed up further APK deployments.
       *
       * @param apkPath - Full path to the apk on the local FS
@@ -217,6 +227,14 @@ object libToolsApkUtilsMod extends Shortcut {
       */
     def isAppInstalled(pkg: String): js.Promise[Boolean] = js.native
     
+    /**
+      * Fetches base.apk of the given package to the local file system
+      *
+      * @param pkg The package identifier (must be already installed on the device)
+      * @param tmpDir The destination folder path
+      * @returns Full path to the downloaded file
+      * @throws {Error} If there was an error while fetching the .apk
+      */
     def pullApk(pkg: String, tmpDir: String): js.Promise[String] = js.native
     
     /**

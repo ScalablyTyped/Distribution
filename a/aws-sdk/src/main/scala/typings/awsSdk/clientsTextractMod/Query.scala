@@ -12,7 +12,7 @@ trait Query extends StObject {
   var Alias: js.UndefOr[QueryInput] = js.undefined
   
   /**
-    * List of pages associated with the query. The following is a list of rules for using this parameter.   If a page is not specified, it is set to ["1"] by default.   The following characters are allowed in the parameter's string: 0 1 2 3 4 5 6 7 8 9 - *. No whitespace is allowed.   When using * to indicate all pages, it must be the only element in the string.   You can use page intervals, such as [“1-3”, “1-1”, “4-*”]. Where * indicates last page of document.   Specified pages must be greater than 0 and less than or equal to the number of pages in the document.  
+    * Pages is a parameter that the user inputs to specify which pages to apply a query to. The following is a list of rules for using this parameter.   If a page is not specified, it is set to ["1"] by default.   The following characters are allowed in the parameter's string: 0 1 2 3 4 5 6 7 8 9 - *. No whitespace is allowed.   When using * to indicate all pages, it must be the only element in the list.   You can use page intervals, such as [“1-3”, “1-1”, “4-*”]. Where * indicates last page of document.   Specified pages must be greater than 0 and less than or equal to the number of pages in the document.  
     */
   var Pages: js.UndefOr[QueryPages] = js.undefined
   

@@ -7,9 +7,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// --------------------------------------------------------------------------
+//  static objects
+// --------------------------------------------------------------------------
 object Event {
-  
-  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
   
   @JSGlobal("naver.maps.Event")
   @js.native

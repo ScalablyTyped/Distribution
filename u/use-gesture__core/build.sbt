@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "use-gesture__core"
-version := "10.2.20-7c15ec"
+version := "10.2.21-6b954e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

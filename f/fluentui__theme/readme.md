@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__theme
 
-Typings are for version 2.6.16
+Typings are for version 2.6.17
 
 ## Library description:
 Basic building blocks for Fluent UI React Component themes

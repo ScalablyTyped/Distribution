@@ -824,6 +824,11 @@ object Navigation {
       * ID of the selected stage in business process instance.
       */
     var selectedStageId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Sets the focus on the tab of the form.
+      */
+    var tabName: js.UndefOr[String] = js.undefined
   }
   object PageInputEntityRecord {
     
@@ -877,6 +882,10 @@ object Navigation {
       inline def setSelectedStageId(value: String): Self = StObject.set(x, "selectedStageId", value.asInstanceOf[js.Any])
       
       inline def setSelectedStageIdUndefined: Self = StObject.set(x, "selectedStageId", js.undefined)
+      
+      inline def setTabName(value: String): Self = StObject.set(x, "tabName", value.asInstanceOf[js.Any])
+      
+      inline def setTabNameUndefined: Self = StObject.set(x, "tabName", js.undefined)
     }
   }
   

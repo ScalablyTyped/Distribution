@@ -224,7 +224,7 @@ trait WeakValidationMapCascader extends StObject {
   ] = js.undefined
   
   var placeholder: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | (index : number): string | undefined ? react.react.Validator<string | (index : number): string | undefined | null | undefined> : undefined extends string | (index : number): string | undefined ? react.react.Validator<string | (index : number): string | undefined | null | undefined> : react.react.Validator<string | (index : number): string | undefined> */ js.Any
   ] = js.undefined
   
   var style: js.UndefOr[
@@ -578,7 +578,7 @@ object WeakValidationMapCascader {
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     inline def setPlaceholder(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | (index : number): string | undefined ? react.react.Validator<string | (index : number): string | undefined | null | undefined> : undefined extends string | (index : number): string | undefined ? react.react.Validator<string | (index : number): string | undefined | null | undefined> : react.react.Validator<string | (index : number): string | undefined> */ js.Any
     ): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)

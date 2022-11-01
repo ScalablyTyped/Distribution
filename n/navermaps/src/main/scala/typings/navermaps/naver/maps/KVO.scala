@@ -1,22 +1,24 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Classes
+  * KVO
   */
-// KVO
 @js.native
 trait KVO extends StObject {
   
-  def addListener(eventName: Any, listener: js.Function0[Any]): MapEventListener = js.native
+  def addListener(eventName: String, listener: js.Function0[Any]): MapEventListener = js.native
   
-  def addListenerOnce(eventName: Any, listener: js.Function0[Any]): MapEventListener = js.native
+  def addListenerOnce(eventName: String, listener: js.Function0[Any]): MapEventListener = js.native
   
   def bindTo(key: String, target: KVO): Unit = js.native
   def bindTo(key: String, target: KVO, targetKey: String): Unit = js.native
+  def bindTo(key: js.Array[String], target: KVO): Unit = js.native
+  def bindTo(key: js.Array[String], target: KVO, targetKey: String): Unit = js.native
   
   def clearListeners(eventName: String): Unit = js.native
   
@@ -30,7 +32,7 @@ trait KVO extends StObject {
   def set(key: String, value: Any): Unit = js.native
   def set(key: String, value: Any, silently: Boolean): Unit = js.native
   
-  def setValues(properties: Any): Unit = js.native
+  def setValues(properties: StringDictionary[Any]): Unit = js.native
   
   def trigger(eventName: String): Unit = js.native
   def trigger(eventName: String, eventObject: Any): Unit = js.native

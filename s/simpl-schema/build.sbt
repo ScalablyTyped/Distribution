@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simpl-schema"
-version := "1.12-dt-20220913Z-cec95b"
+version := "1.12-dt-20220913Z-6514f7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-2e00c2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-9d6f35",
-  "org.scalablytyped" %%% "meteor" % "2.7-dt-20220624Z-0e3e04",
+  "org.scalablytyped" %%% "meteor" % "2.8-dt-20221031Z-b86ec4",
   "org.scalablytyped" %%% "mongodb" % "4.11.0-19c2b1",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
