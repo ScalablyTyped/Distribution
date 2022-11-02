@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stemmer" : "2.0.0"
+      "stemmer" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "stemmer" : "2.0.0"
+      "stemmer" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

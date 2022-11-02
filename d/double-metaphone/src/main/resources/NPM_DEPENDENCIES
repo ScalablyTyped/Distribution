@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "double-metaphone" : "2.0.0"
+      "double-metaphone" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "double-metaphone" : "2.0.0"
+      "double-metaphone" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

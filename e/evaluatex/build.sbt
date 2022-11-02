@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "evaluatex"
-version := "2.2-dt-20220616Z-a40bbd"
+version := "2.2-dt-20221102Z-f0fec1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

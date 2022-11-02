@@ -58,6 +58,7 @@
 | 0.0 | [af-utils__react-virtual-h](./a/af-utils__react-virtual-headless) | React components for rendering large scrollable da
 | 0.0 | [af-utils__react-virtual-l](./a/af-utils__react-virtual-list) | React components for rendering large scrollable da
 | 0.0 | [aframe](./a/aframe) | A web framework for building virtual reality exper
+| 0.0 | [after-all-results](./a/after-all-results) | Bundle results of async functions calls into one c
 | 0.0 | [ag-auth](./a/ag-auth) | Auth module for Asyngular
 | 0.0 | [ag-channel](./a/ag-channel) | Channel object for Asyngular
 | 0.0 | [ag-simple-broker](./a/ag-simple-broker) | Simple broker engine for Asyngular
@@ -730,6 +731,7 @@
 | 0.0 | [base62](./b/base62) | JavaScript Base62 encode/decoder
 | 0.0 | [base64-arraybuffer](./b/base64-arraybuffer) | Encode/decode base64 data into ArrayBuffers
 | 0.0 | [base64-async](./b/base64-async) | Non-blocking chunked Base64 encoding
+| 0.0 | [base64-emoji](./b/base64-emoji) | Like base64 but encoding into emojis
 | 0.0 | [base64-js](./b/base64-js) | Base64 encoding/decoding in pure JS
 | 0.0 | [base64-stream](./b/base64-stream) | Contains new Node.js v0.10 style stream classes fo
 | 0.0 | [base64-url](./b/base64-url) | Base64 encode, decode, escape and unescape for URL
@@ -824,6 +826,7 @@
 | 0.0 | [bitcoinjs-lib](./b/bitcoinjs-lib) | Client-side Bitcoin JavaScript library
 | 0.0 | [bitcore-lib](./b/bitcore-lib) | A pure and powerful JavaScript Bitcoin library.
 | 0.0 | [bitcore-lib-cash](./b/bitcore-lib-cash) | A pure and powerful JavaScript Bitcoin Cash librar
+| 0.0 | [bitfield-rle](./b/bitfield-rle) | A run-length-encoder that compresses bitfields.
 | 0.0 | [bittorrent-protocol](./b/bittorrent-protocol) | Simple, robust, BitTorrent peer wire protocol impl
 | 0.0 | [bitwise](./b/bitwise) | Manipulates bits, nibbles, bytes, and buffers.
 | 0.0 | [bitwise-xor](./b/bitwise-xor) | Bitwise XOR between two Buffers or Strings, return
@@ -2578,6 +2581,7 @@
 | 0.0 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 0.0 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.0 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute
+| 0.0 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.0 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 0.0 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express
 | 0.0 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
@@ -2668,6 +2672,7 @@
 | 0.0 | [fabric](./f/fabric) | Object model for HTML5 canvas, and SVG-to-canvas p
 | 0.0 | [facebook-js-sdk](./f/facebook-js-sdk) | Simple JavaScript SDK to interact with Facebook AP
 | 0.0 | [facebook-locales](./f/facebook-locales) | Maps locales to Facebook locales
+| 0.0 | [facebook-nodejs-business-](./f/facebook-nodejs-business-sdk) | SDK for the Facebook Ads API in Javascript and Nod
 | 0.0 | [facepaint](./f/facepaint) | Responsive style values for css-in-js.
 | 0.0 | [factory-girl](./f/factory-girl) | A factory library for Node.js and JavaScript inspi
 | 0.0 | [fail-on-errors-webpack-pl](./f/fail-on-errors-webpack-plugin) | Webpack plugin that makes the process return an er
@@ -3368,6 +3373,7 @@
 | 0.0 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 0.0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
 | 0.0 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
+| 0.0 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.0 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio
 | 0.0 | [grommet](./g/grommet) | focus on the essential experience
 | 0.0 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps.
@@ -3898,6 +3904,7 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
+| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -4042,6 +4049,7 @@
 | 0.0 | [ipns](./i/ipns) | ipns record definitions
 | 0.0 | [ipp](./i/ipp) | Internet Printing Protocol (IPP) for nodejs
 | 0.0 | [iput](./i/iput) | an IP input component like windows
+| 0.0 | [ipv4-peers](./i/ipv4-peers) | An abstract-encoding compliant encoder for encodin
 | 0.0 | [irc](./i/irc) | An IRC client library for node
 | 0.0 | [iri](./i/iri) | IRI parsing and IRI-URI conversion utilities
 | 0.0 | [iron](./i/iron) | Encapsulated tokens (encrypted and mac'ed objects)
@@ -4110,6 +4118,7 @@
 | 0.0 | [is-ip](./i/is-ip) | Check if a string is an IP address
 | 0.0 | [is-ipfs](./i/is-ipfs) | A set of utilities to help identify IPFS resources
 | 0.0 | [is-iterable](./i/is-iterable) | Checks if a given object is iterable
+| 0.0 | [is-lambda](./i/is-lambda) | Detect if your code is running on an AWS Lambda se
 | 0.0 | [is-lite](./i/is-lite) | A tiny javascript type testing tool
 | 0.0 | [is-loopback-addr](./i/is-loopback-addr) | Check if a IP address is a loopback address
 | 0.0 | [is-lower-case](./i/is-lower-case) | Returns true if the string is lower case only
@@ -4134,6 +4143,7 @@
 | 0.0 | [is-plain-object](./i/is-plain-object) | Returns true if an object was created by the Objec
 | 0.0 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image
 | 0.0 | [is-port-reachable](./i/is-port-reachable) | Check if a local or remote port is reachable
+| 0.0 | [is-pr](./i/is-pr) | Detect if the current environment is a CI server c
 | 0.0 | [is-progressive](./i/is-progressive) | Check if JPEG images are progressive
 | 0.0 | [is-promise](./i/is-promise) | Test whether an object looks like a promises-a+ pr
 | 0.0 | [is-reachable](./i/is-reachable) | Check if servers are reachable
@@ -4927,6 +4937,7 @@
 | 0.0 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware
 | 0.0 | [koa-logger](./k/koa-logger) | Logging middleware for koa
 | 0.0 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
+| 0.0 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.0 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa
 | 0.0 | [koa-mount](./k/koa-mount) | Mounting middleware for koa
 | 0.0 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko
@@ -6059,6 +6070,7 @@
 | 0.0 | [memory-cache](./m/memory-cache) | A simple in-memory cache. put(), get() and del()
 | 0.0 | [memory-fs](./m/memory-fs) | A simple in-memory filesystem. Holds data in a jav
 | 0.0 | [memory-pager](./m/memory-pager) | Access memory using small fixed sized buffers
+| 0.0 | [memory-usage](./m/memory-usage) | A readable stream that samples and emits memory us
 | 0.0 | [memorystream](./m/memorystream) | This is lightweight memory stream module for node.
 | 0.0 | [memwatch-next](./m/memwatch-next) | Keep an eye on your memory usage, and discover and
 | 0.0 | [mendixmodelsdk](./m/mendixmodelsdk) | Mendix Model SDK
@@ -6184,6 +6196,7 @@
 | 0.0 | [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri
 | 0.0 | [microtime](./m/microtime) | Get the current time in microseconds
 | 0.0 | [midi](./m/midi) | MIDI hardware IO
+| 0.0 | [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node
 | 0.0 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js.
 | 0.0 | [millisecond](./m/millisecond) | Convert time strings to milliseconds
 | 0.0 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t
@@ -6307,8 +6320,11 @@
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
 | 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
+| 0.0 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
+| 0.0 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
+| 0.0 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
@@ -6650,6 +6666,7 @@
 | 0.0 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server
 | 0.0 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and
 | 0.0 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin
+| 0.0 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.0 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 0.0 | [node-netstat](./n/node-netstat) | programmatic netstat utility
 | 0.0 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays
@@ -10638,6 +10655,7 @@
 | 0.0 | [uinput](./u/uinput) | Linux uinput module
 | 0.0 | [uint32](./u/uint32) | a javascript library for dealing with (bitwise) ui
 | 0.0 | [uint48be](./u/uint48be) | Encode / decode big endian unsigned 48 bit integer
+| 0.0 | [uint64be](./u/uint64be) | Encode / decode big endian unsigned 64 bit integer
 | 0.0 | [uint8array-tools](./u/uint8array-tools) | A library for dealing with Uint8Arrays.
 | 0.0 | [uint8arraylist](./u/uint8arraylist) | Append and consume bytes using only no-copy operat
 | 0.0 | [uint8arrays](./u/uint8arrays) | Utility functions to make dealing with Uint8Arrays

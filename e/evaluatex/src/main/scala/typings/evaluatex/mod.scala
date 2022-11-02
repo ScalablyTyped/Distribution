@@ -1,9 +1,7 @@
 package typings.evaluatex
 
 import org.scalablytyped.runtime.Shortcut
-import typings.evaluatex.anon.Latex
 import typings.evaluatex.anon.Name
-import typings.evaluatex.distEvaluatexMod.Constant
 import typings.evaluatex.evaluatexStrings.COMMAND
 import typings.evaluatex.evaluatexStrings.DIVIDE
 import typings.evaluatex.evaluatexStrings.INVERSE
@@ -27,8 +25,8 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Function3[
     /* expression */ String, 
-    /* constants */ js.UndefOr[Record[String, Constant]], 
-    /* options */ js.UndefOr[Latex], 
+    /* constants */ js.UndefOr[Constants], 
+    /* options */ js.UndefOr[Options], 
     EvaluatexResult
   ] = js.native
   
@@ -42,30 +40,43 @@ object mod extends Shortcut {
     
     inline def typeFUNCTIONvaluenamekeyo(
       children: js.Array[AbstractSyntaxTreeNode],
+      evaluate: () => Double,
       name: (String | Null) & (Null | String),
+      simplify: () => AbstractSyntaxTreeNode,
       value: Name & (js.Function1[/* repeated */ Any, Double])
     ): typings.evaluatex.anon.typeFUNCTIONvaluenamekeyo = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], evaluate = js.Any.fromFunction0(evaluate), name = name.asInstanceOf[js.Any], simplify = js.Any.fromFunction0(simplify), value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("FUNCTION")
       __obj.asInstanceOf[typings.evaluatex.anon.typeFUNCTIONvaluenamekeyo]
     }
     
-    inline def typeNUMBERvaluenumberchil(children: js.Array[AbstractSyntaxTreeNode], value: Double): typings.evaluatex.anon.typeNUMBERvaluenumberchil = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], name = null)
+    inline def typeNUMBERvaluenumberchil(
+      children: js.Array[AbstractSyntaxTreeNode],
+      evaluate: () => Double,
+      simplify: () => AbstractSyntaxTreeNode,
+      value: Double
+    ): typings.evaluatex.anon.typeNUMBERvaluenumberchil = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], evaluate = js.Any.fromFunction0(evaluate), simplify = js.Any.fromFunction0(simplify), value = value.asInstanceOf[js.Any], name = null)
       __obj.updateDynamic("type")("NUMBER")
       __obj.asInstanceOf[typings.evaluatex.anon.typeNUMBERvaluenumberchil]
     }
     
     inline def typeSYMBOLPRODUCTSUMINVER(
       children: js.Array[AbstractSyntaxTreeNode],
+      evaluate: () => Double,
+      simplify: () => AbstractSyntaxTreeNode,
       `type`: SYMBOL | PRODUCT | SUM | INVERSE | NEGATE | POWER,
       value: String
     ): typings.evaluatex.anon.typeSYMBOLPRODUCTSUMINVER = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], name = null)
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], evaluate = js.Any.fromFunction0(evaluate), simplify = js.Any.fromFunction0(simplify), value = value.asInstanceOf[js.Any], name = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.evaluatex.anon.typeSYMBOLPRODUCTSUMINVER]
     }
   }
+  
+  type Constant = Double | (js.Function1[/* repeated */ Double, Double])
+  
+  type Constants = Record[String, Constant]
   
   @js.native
   trait EvaluatexResult extends StObject {
@@ -75,7 +86,7 @@ object mod extends Shortcut {
       * @returns the numerical result of the calculation.
       */
     def apply(): Double = js.native
-    def apply(variables: Record[String, Variable]): Double = js.native
+    def apply(variables: Variables): Double = js.native
     
     var ast: AbstractSyntaxTreeNode = js.native
     
@@ -88,6 +99,25 @@ object mod extends Shortcut {
     T, 
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (_ : any): any? K : never}[keyof T] */ js.Any
   ]
+  
+  trait Options extends StObject {
+    
+    var latex: js.UndefOr[Boolean] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setLatex(value: Boolean): Self = StObject.set(x, "latex", value.asInstanceOf[js.Any])
+      
+      inline def setLatexUndefined: Self = StObject.set(x, "latex", js.undefined)
+    }
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.evaluatex.anon.Type
@@ -118,18 +148,20 @@ object mod extends Shortcut {
   
   type Variable = Double
   
+  type Variables = Record[String, Variable]
+  
   type _To = js.Function3[
     /* expression */ String, 
-    /* constants */ js.UndefOr[Record[String, Constant]], 
-    /* options */ js.UndefOr[Latex], 
+    /* constants */ js.UndefOr[Constants], 
+    /* options */ js.UndefOr[Options], 
     EvaluatexResult
   ]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: js.Function3[
     /* expression */ String, 
-    /* constants */ js.UndefOr[Record[String, Constant]], 
-    /* options */ js.UndefOr[Latex], 
+    /* constants */ js.UndefOr[Constants], 
+    /* options */ js.UndefOr[Options], 
     EvaluatexResult
   ] = ^
 }

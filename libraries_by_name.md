@@ -101,6 +101,7 @@
 | [af-utils__react-virtual-h](./a/af-utils__react-virtual-headless) | React components for rendering large scrollable da | react, reactjs, virtual, table, list, recycle, dom-recycle, dynamic-size, scroll, scrolling, infinite, virtualized, virtual, virtualization, sortable, windowing |
 | [af-utils__react-virtual-l](./a/af-utils__react-virtual-list) | React components for rendering large scrollable da | react, reactjs, virtual, table, list, recycle, dom-recycle, dynamic-size, scroll, scrolling, infinite, virtualized, virtual, virtualization, sortable, windowing |
 | [aframe](./a/aframe) | A web framework for building virtual reality exper | 3d, aframe, cardboard, components, oculus, three, three.js, rift, vive, vr, web-components, webvr |
+| [after-all-results](./a/after-all-results) | Bundle results of async functions calls into one c | parallel, callback, async, done |
 | [ag-auth](./a/ag-auth) | Auth module for Asyngular | asyngular, auth, jwt, socketcluster |
 | [ag-channel](./a/ag-channel) | Channel object for Asyngular | channel, asyngular, socketcluster, pubsub, publish, subscribe |
 | [ag-simple-broker](./a/ag-simple-broker) | Simple broker engine for Asyngular | asyngular, broker, socketcluster, pubsub |
@@ -878,6 +879,7 @@
 | [base62](./b/base62) | JavaScript Base62 encode/decoder | base-62, encoder, decoder |
 | [base64-arraybuffer](./b/base64-arraybuffer) | Encode/decode base64 data into ArrayBuffers | - |
 | [base64-async](./b/base64-async) | Non-blocking chunked Base64 encoding | async, asynchronous, non-blocking, base64, encode, decode |
+| [base64-emoji](./b/base64-emoji) | Like base64 but encoding into emojis | emoji, emojicon, emojicons, base, base64, encode, encoding, decode, decoding, data |
 | [base64-js](./b/base64-js) | Base64 encoding/decoding in pure JS | base64 |
 | [base64-stream](./b/base64-stream) | Contains new Node.js v0.10 style stream classes fo | Base64, stream, streaming, piping, node, node.js, encode, decode |
 | [base64-url](./b/base64-url) | Base64 encode, decode, escape and unescape for URL | base64, base64url |
@@ -975,6 +977,7 @@
 | [bitcoinjs-lib](./b/bitcoinjs-lib) | Client-side Bitcoin JavaScript library | bitcoinjs, bitcoin, browserify, javascript, bitcoinjs |
 | [bitcore-lib](./b/bitcore-lib) | A pure and powerful JavaScript Bitcoin library. | bitcoin, transaction, address, p2p, ecies, cryptocurrency, blockchain, payment, bip21, bip32, bip37, bip69, bip70, multisig |
 | [bitcore-lib-cash](./b/bitcore-lib-cash) | A pure and powerful JavaScript Bitcoin Cash librar | bitcoin, transaction, address, p2p, ecies, cryptocurrency, blockchain, payment, bip21, bip32, bip37, bip69, bip70, multisig |
+| [bitfield-rle](./b/bitfield-rle) | A run-length-encoder that compresses bitfields. | - |
 | [bittorrent-protocol](./b/bittorrent-protocol) | Simple, robust, BitTorrent peer wire protocol impl | bittorrent, p2p, peer, peer-to-peer, protocol, stream, torrent, wire |
 | [bitwise](./b/bitwise) | Manipulates bits, nibbles, bytes, and buffers. | and, binary, bit, bits, bitwise, buffer, buffers, change, flip, manipulate, nand, nibble, nibbles, nor, not, or, read, toggle, write, xnor, xor |
 | [bitwise-xor](./b/bitwise-xor) | Bitwise XOR between two Buffers or Strings, return | bitwise, xor, buffer, string |
@@ -2817,6 +2820,7 @@
 | [express-boom](./e/express-boom) | Boom response objects in Express | Hapi, Boom, Express, response |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute | express, brute, memcached, store |
+| [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. | - |
 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute | express, brute, redis |
 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express | express, logger, bunyan |
 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser | busboy, express, body-parser |
@@ -2909,6 +2913,7 @@
 | [facebook-instant-games](./f/facebook-instant-games) | - | - |
 | [facebook-js-sdk](./f/facebook-js-sdk) | Simple JavaScript SDK to interact with Facebook AP | - |
 | [facebook-locales](./f/facebook-locales) | Maps locales to Facebook locales | i18n, facebook, locales, locale |
+| [facebook-nodejs-business-](./f/facebook-nodejs-business-sdk) | SDK for the Facebook Ads API in Javascript and Nod | facebook, ads, sdk, api, javascript, es6, es2015, isomorphic, nodejs, amd, requirejs, umd, promises |
 | [facebook-pixel](./f/facebook-pixel) | - | - |
 | [facepaint](./f/facepaint) | Responsive style values for css-in-js. | styles, emotion, react, css, css-in-js |
 | [factory-girl](./f/factory-girl) | A factory library for Node.js and JavaScript inspi | factory, test, bdd, tdd, fixture |
@@ -4290,6 +4295,7 @@
 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser | grid, grid-layout, template, parser |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
+| [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
 | [grommet](./g/grommet) | focus on the essential experience | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps. | - |
@@ -4840,6 +4846,7 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
+| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
@@ -4989,6 +4996,7 @@
 | [ipns](./i/ipns) | ipns record definitions | ipfs, ipns |
 | [ipp](./i/ipp) | Internet Printing Protocol (IPP) for nodejs | ipp, print, printing |
 | [iput](./i/iput) | an IP input component like windows | react, react-component, react, input, ip |
+| [ipv4-peers](./i/ipv4-peers) | An abstract-encoding compliant encoder for encodin | - |
 | [irc](./i/irc) | An IRC client library for node | - |
 | [iri](./i/iri) | IRI parsing and IRI-URI conversion utilities | IRI |
 | [iron](./i/iron) | Encapsulated tokens (encrypted and mac'ed objects) | authentication, encryption, data integrity |
@@ -5058,6 +5066,7 @@
 | [is-ip](./i/is-ip) | Check if a string is an IP address | ip, ipv6, ipv4, regex, regexp, match, test, find, text, pattern, internet, protocol, address, validate, detect, check, is, string |
 | [is-ipfs](./i/is-ipfs) | A set of utilities to help identify IPFS resources | dnslink, gateway, ipfs, ipns, js-ipfs |
 | [is-iterable](./i/is-iterable) | Checks if a given object is iterable | es6, check, iterable |
+| [is-lambda](./i/is-lambda) | Detect if your code is running on an AWS Lambda se | aws, hosting, hosted, lambda, detect |
 | [is-lite](./i/is-lite) | A tiny javascript type testing tool | type, check, assertion, validation, test, typeguard, typeof, instanceof |
 | [is-loopback-addr](./i/is-loopback-addr) | Check if a IP address is a loopback address | - |
 | [is-lower-case](./i/is-lower-case) | Returns true if the string is lower case only | is, lower, case, check, boolean |
@@ -5082,6 +5091,7 @@
 | [is-plain-object](./i/is-plain-object) | Returns true if an object was created by the Objec | check, is, is-object, isobject, javascript, kind, kind-of, object, plain, type, typeof, value |
 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image | png, portable, network, graphics, image, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array |
 | [is-port-reachable](./i/is-port-reachable) | Check if a local or remote port is reachable | port, reachable, local, remote, host, ip, localhost, address, connect, connectable, online, socket, tcp, is, check |
+| [is-pr](./i/is-pr) | Detect if the current environment is a CI server c | ci, continuous, integration, pr, pullrequest, pull-request, github, test, detect |
 | [is-progressive](./i/is-progressive) | Check if JPEG images are progressive | jpg, jpeg, progressive, file, image, img, picture, photo, detect, check, is, exif, buffer, stream, fs |
 | [is-promise](./i/is-promise) | Test whether an object looks like a promises-a+ pr | - |
 | [is-reachable](./i/is-reachable) | Check if servers are reachable | browser, online, offline, network, connected, connectivity, internet, is, has, detect, reachable, reachability, server, host, accessible, socket |
@@ -5963,6 +5973,7 @@
 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware | log4js, Koa, logger |
 | [koa-logger](./k/koa-logger) | Logging middleware for koa | koa, middleware, logger, log |
 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa | logging, koa, winston, async |
+| [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo | koa, mongo, mongodb |
 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa | logger, morgan |
 | [koa-mount](./k/koa-mount) | Mounting middleware for koa | koa, middleware, mount, mounting |
 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko | form, post, multipart, form-data, formdata, koa, middleware |
@@ -7114,6 +7125,7 @@
 | [memory-cache](./m/memory-cache) | A simple in-memory cache. put(), get() and del() | cache, ram, simple, storage |
 | [memory-fs](./m/memory-fs) | A simple in-memory filesystem. Holds data in a jav | fs, memory |
 | [memory-pager](./m/memory-pager) | Access memory using small fixed sized buffers | - |
+| [memory-usage](./m/memory-usage) | A readable stream that samples and emits memory us | mem, memory, usage, sample, log |
 | [memorystream](./m/memorystream) | This is lightweight memory stream module for node. | memory, test, stream, tools, streams, buffer |
 | [memwatch-next](./m/memwatch-next) | Keep an eye on your memory usage, and discover and | - |
 | [mendixmodelsdk](./m/mendixmodelsdk) | Mendix Model SDK | - |
@@ -7171,9 +7183,17 @@
 | [metascraper-youtube](./m/metascraper-youtube) | Metascraper integration with YouTube | metascraper, video, youtube |
 | [meteor](./m/meteor) | Install Meteor | - |
 | [meteor-accounts-phone](./m/meteor-accounts-phone) | - | - |
+| [meteor-astronomy](./m/meteor-astronomy) | - | - |
 | [meteor-collection-hooks](./m/meteor-collection-hooks) | - | - |
+| [meteor-dburles-collection](./m/meteor-dburles-collection-helpers) | - | - |
 | [meteor-jboulhous-dev](./m/meteor-jboulhous-dev) | - | - |
+| [meteor-mdg-validated-meth](./m/meteor-mdg-validated-method) | - | - |
+| [meteor-mdg-validation-err](./m/meteor-mdg-validation-error) | - | - |
 | [meteor-percolate-migratio](./m/meteor-percolate-migrations) | - | - |
+| [meteor-persistent-session](./m/meteor-persistent-session) | - | - |
+| [meteor-prime8consulting-o](./m/meteor-prime8consulting-oauth2) | - | - |
+| [meteor-publish-composite](./m/meteor-publish-composite) | - | - |
+| [meteor-roles](./m/meteor-roles) | - | - |
 | [meteor-sjobs](./m/meteor-sjobs) | - | - |
 | [meteor-synced-cron](./m/meteor-synced-cron) | Since I'm no longer actively developing an app tha | - |
 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor | - |
@@ -7251,6 +7271,7 @@
 | [microsoftteams](./m/microsoftteams) | - | - |
 | [microtime](./m/microtime) | Get the current time in microseconds | microtime, microseconds, gettimeofday |
 | [midi](./m/midi) | MIDI hardware IO | - |
+| [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node | migrate mongo mongodb migrations database |
 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js. | milkcocoa, realtime |
 | [millisecond](./m/millisecond) | Convert time strings to milliseconds | ms, millisecond, milisecond, mili, milli, second, parse, time, string |
 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t | time, conversion, milliseconds |
@@ -7381,8 +7402,11 @@
 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR | password, prompt, tty |
 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without  | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
+| [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB. | mongodb, queue |
 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs. | mongodb, uri, url, parser, formatter, mongoose |
 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily | MongoDB, Mongoose, seeder |
+| [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM. | mongo, mongodb, odm |
+| [mongration](./m/mongration) | Node.js mongodb migration framework | mongration, mongodb, migration, database, node mongodb migration framework |
 | [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript | typescript, functional-programming, optics, lens, fp-ts |
 | [month-days](./m/month-days) | Get the number of days in a month | month, days, year, date, utc, number, count |
@@ -7737,6 +7761,7 @@
 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server | rtmp, flv, server |
 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and | - |
 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin | microphone, alsa, mic, record, audio, sox, capture, node-microphone, arecord, input |
+| [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures | mongodb, fixtures, loader, tests, unit-tests, unloader, schema |
 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m | node-mysql-wrapper, node-mysql, mysql, mysql-wrapper |
 | [node-netstat](./n/node-netstat) | programmatic netstat utility | netstat, utility |
 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays | hash, object, hash-object, object-hash, es6, crypto |
@@ -11820,6 +11845,7 @@
 | [uinput](./u/uinput) | Linux uinput module | uinput, linux, user, input |
 | [uint32](./u/uint32) | a javascript library for dealing with (bitwise) ui | uint32, bitwise, binary, shift, rotate |
 | [uint48be](./u/uint48be) | Encode / decode big endian unsigned 48 bit integer | - |
+| [uint64be](./u/uint64be) | Encode / decode big endian unsigned 64 bit integer | - |
 | [uint8-varint](./u/uint8-varint) | - | - |
 | [uint8array-tools](./u/uint8array-tools) | A library for dealing with Uint8Arrays. | uint8array, hex, tools |
 | [uint8arraylist](./u/uint8arraylist) | Append and consume bytes using only no-copy operat | - |

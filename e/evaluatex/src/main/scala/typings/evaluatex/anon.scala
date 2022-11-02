@@ -20,25 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Latex extends StObject {
-    
-    var latex: js.UndefOr[Boolean] = js.undefined
-  }
-  object Latex {
-    
-    inline def apply(): Latex = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Latex]
-    }
-    
-    extension [Self <: Latex](x: Self) {
-      
-      inline def setLatex(value: Boolean): Self = StObject.set(x, "latex", value.asInstanceOf[js.Any])
-      
-      inline def setLatexUndefined: Self = StObject.set(x, "latex", js.undefined)
-    }
-  }
-  
   trait Name extends StObject {
     
     var name: js.UndefOr[/* keyof evaluatex.evaluatex.IncludeMethods<std.Math> */ String] = js.undefined
@@ -146,14 +127,18 @@ object anon {
     }
   }
   
-  /* Inlined {  type :'FUNCTION',   value :{  name :keyof evaluatex.evaluatex.IncludeMethods<std.Math> | undefined} & (args : ...unknown): number,   name :string | null} & {  children :std.Array<evaluatex.evaluatex.AbstractSyntaxTreeNode>,   name :null | string} */
+  /* Inlined {  type :'FUNCTION',   value :{  name :keyof evaluatex.evaluatex.IncludeMethods<std.Math> | undefined} & (args : ...unknown): number,   name :string | null} & {  children :std.Array<evaluatex.evaluatex.AbstractSyntaxTreeNode>,   name :null | string, evaluate (): number, simplify (): evaluatex.evaluatex.AbstractSyntaxTreeNode} */
   trait typeFUNCTIONvaluenamekeyo
     extends StObject
        with AbstractSyntaxTreeNode {
     
     var children: js.Array[AbstractSyntaxTreeNode]
     
+    def evaluate(): Double
+    
     var name: (String | Null) & (Null | String)
+    
+    def simplify(): AbstractSyntaxTreeNode
     
     var `type`: FUNCTION
     
@@ -165,10 +150,12 @@ object anon {
     
     inline def apply(
       children: js.Array[AbstractSyntaxTreeNode],
+      evaluate: () => Double,
       name: (String | Null) & (Null | String),
+      simplify: () => AbstractSyntaxTreeNode,
       value: Name & (js.Function1[/* repeated */ Any, Double])
     ): typeFUNCTIONvaluenamekeyo = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], evaluate = js.Any.fromFunction0(evaluate), name = name.asInstanceOf[js.Any], simplify = js.Any.fromFunction0(simplify), value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("FUNCTION")
       __obj.asInstanceOf[typeFUNCTIONvaluenamekeyo]
     }
@@ -179,7 +166,11 @@ object anon {
       
       inline def setChildrenVarargs(value: AbstractSyntaxTreeNode*): Self = StObject.set(x, "children", js.Array(value*))
       
+      inline def setEvaluate(value: () => Double): Self = StObject.set(x, "evaluate", js.Any.fromFunction0(value))
+      
       inline def setName(value: (String | Null) & (Null | String)): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setSimplify(value: () => AbstractSyntaxTreeNode): Self = StObject.set(x, "simplify", js.Any.fromFunction0(value))
       
       inline def setType(value: FUNCTION): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -187,14 +178,18 @@ object anon {
     }
   }
   
-  /* Inlined {  type :'NUMBER',   value :number} & {  children :std.Array<evaluatex.evaluatex.AbstractSyntaxTreeNode>,   name :null | string} */
+  /* Inlined {  type :'NUMBER',   value :number} & {  children :std.Array<evaluatex.evaluatex.AbstractSyntaxTreeNode>,   name :null | string, evaluate (): number, simplify (): evaluatex.evaluatex.AbstractSyntaxTreeNode} */
   trait typeNUMBERvaluenumberchil
     extends StObject
        with AbstractSyntaxTreeNode {
     
     var children: js.Array[AbstractSyntaxTreeNode]
     
+    def evaluate(): Double
+    
     var name: Null | String
+    
+    def simplify(): AbstractSyntaxTreeNode
     
     var `type`: NUMBER
     
@@ -202,8 +197,13 @@ object anon {
   }
   object typeNUMBERvaluenumberchil {
     
-    inline def apply(children: js.Array[AbstractSyntaxTreeNode], value: Double): typeNUMBERvaluenumberchil = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], name = null)
+    inline def apply(
+      children: js.Array[AbstractSyntaxTreeNode],
+      evaluate: () => Double,
+      simplify: () => AbstractSyntaxTreeNode,
+      value: Double
+    ): typeNUMBERvaluenumberchil = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], evaluate = js.Any.fromFunction0(evaluate), simplify = js.Any.fromFunction0(simplify), value = value.asInstanceOf[js.Any], name = null)
       __obj.updateDynamic("type")("NUMBER")
       __obj.asInstanceOf[typeNUMBERvaluenumberchil]
     }
@@ -214,9 +214,13 @@ object anon {
       
       inline def setChildrenVarargs(value: AbstractSyntaxTreeNode*): Self = StObject.set(x, "children", js.Array(value*))
       
+      inline def setEvaluate(value: () => Double): Self = StObject.set(x, "evaluate", js.Any.fromFunction0(value))
+      
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameNull: Self = StObject.set(x, "name", null)
+      
+      inline def setSimplify(value: () => AbstractSyntaxTreeNode): Self = StObject.set(x, "simplify", js.Any.fromFunction0(value))
       
       inline def setType(value: NUMBER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -224,14 +228,18 @@ object anon {
     }
   }
   
-  /* Inlined {  type :'SYMBOL' | 'PRODUCT' | 'SUM' | 'INVERSE' | 'NEGATE' | 'POWER',   value :string} & {  children :std.Array<evaluatex.evaluatex.AbstractSyntaxTreeNode>,   name :null | string} */
+  /* Inlined {  type :'SYMBOL' | 'PRODUCT' | 'SUM' | 'INVERSE' | 'NEGATE' | 'POWER',   value :string} & {  children :std.Array<evaluatex.evaluatex.AbstractSyntaxTreeNode>,   name :null | string, evaluate (): number, simplify (): evaluatex.evaluatex.AbstractSyntaxTreeNode} */
   trait typeSYMBOLPRODUCTSUMINVER
     extends StObject
        with AbstractSyntaxTreeNode {
     
     var children: js.Array[AbstractSyntaxTreeNode]
     
+    def evaluate(): Double
+    
     var name: Null | String
+    
+    def simplify(): AbstractSyntaxTreeNode
     
     var `type`: SYMBOL | PRODUCT | SUM | INVERSE | NEGATE | POWER
     
@@ -241,10 +249,12 @@ object anon {
     
     inline def apply(
       children: js.Array[AbstractSyntaxTreeNode],
+      evaluate: () => Double,
+      simplify: () => AbstractSyntaxTreeNode,
       `type`: SYMBOL | PRODUCT | SUM | INVERSE | NEGATE | POWER,
       value: String
     ): typeSYMBOLPRODUCTSUMINVER = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], name = null)
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], evaluate = js.Any.fromFunction0(evaluate), simplify = js.Any.fromFunction0(simplify), value = value.asInstanceOf[js.Any], name = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typeSYMBOLPRODUCTSUMINVER]
     }
@@ -255,9 +265,13 @@ object anon {
       
       inline def setChildrenVarargs(value: AbstractSyntaxTreeNode*): Self = StObject.set(x, "children", js.Array(value*))
       
+      inline def setEvaluate(value: () => Double): Self = StObject.set(x, "evaluate", js.Any.fromFunction0(value))
+      
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameNull: Self = StObject.set(x, "name", null)
+      
+      inline def setSimplify(value: () => AbstractSyntaxTreeNode): Self = StObject.set(x, "simplify", js.Any.fromFunction0(value))
       
       inline def setType(value: SYMBOL | PRODUCT | SUM | INVERSE | NEGATE | POWER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

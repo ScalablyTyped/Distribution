@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "levenshtein-edit-distance"
-version := "3.0.0-7dfb95"
+version := "3.0.1-143dc3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
