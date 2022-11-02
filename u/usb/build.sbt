@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "usb"
-version := "2.5.2-b163e7"
+version := "2.5.2-6d8957"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "w3c-web-usb" % "1.0-dt-20220315Z-636456")
 publishArtifact in packageDoc := false

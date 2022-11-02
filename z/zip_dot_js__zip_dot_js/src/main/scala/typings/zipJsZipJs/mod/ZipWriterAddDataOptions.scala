@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the options passed to `ZipWriter#add()`.
+  * Represents the options passed to {@link ZipWriter#add}.
   */
 trait ZipWriterAddDataOptions
   extends StObject

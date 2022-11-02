@@ -1,22 +1,23 @@
 package typings.rcComponentPortal
 
+import org.scalablytyped.runtime.Shortcut
 import typings.rcComponentPortal.rcComponentPortalBooleans.`false`
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.RefAttributes
 import typings.std.DocumentFragment
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esPortalMod {
+object esPortalMod extends Shortcut {
   
-  @JSImport("@rc-component/portal/es/Portal", JSImport.Namespace)
+  @JSImport("@rc-component/portal/es/Portal", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
+  val default: ForwardRefExoticComponent[PortalProps & RefAttributes[Any]] = js.native
   
-  inline def default(props: PortalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-  
-  type ContainerType = typings.std.Element | DocumentFragment
+  type ContainerType = Element | DocumentFragment
   
   type GetContainer = String | ContainerType | js.Function0[ContainerType] | `false`
   
@@ -75,4 +76,9 @@ object esPortalMod {
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     }
   }
+  
+  type _To = ForwardRefExoticComponent[PortalProps & RefAttributes[Any]]
+  
+  /* This means you don't have to write `default`, but can instead just say `esPortalMod.foo` */
+  override def _to: ForwardRefExoticComponent[PortalProps & RefAttributes[Any]] = default
 }

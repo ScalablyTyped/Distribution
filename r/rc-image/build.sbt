@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rc-image"
-version := "5.9.0-503c4a"
+version := "5.9.0-fa9b54"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "rc-dialog" % "9.0.0-8ecf09",
+  "org.scalablytyped" %%% "rc-dialog" % "9.0.2-6c55b0",
   "org.scalablytyped" %%% "rc-util" % "5.24.4-bae706",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221027Z-34f203",

@@ -7,8 +7,8 @@ import typings.surveyKnockout.anon.Cell
 import typings.surveyKnockout.anon.CheckboxControlLabel
 import typings.surveyKnockout.anon.ChoiceCell
 import typings.surveyKnockout.anon.ChooseFile
+import typings.surveyKnockout.anon.CleanButtonIconId
 import typings.surveyKnockout.anon.CleanButtonSvg
-import typings.surveyKnockout.anon.CleanItemButton
 import typings.surveyKnockout.anon.Complete
 import typings.surveyKnockout.anon.Container
 import typings.surveyKnockout.anon.ControlLabel
@@ -84,8 +84,8 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.dropdown")
   @js.native
-  def dropdown: CleanButtonSvg = js.native
-  inline def dropdown_=(x: CleanButtonSvg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
+  def dropdown: CleanButtonIconId = js.native
+  inline def dropdown_=(x: CleanButtonIconId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.error")
   @js.native
@@ -321,8 +321,8 @@ object defaultStandardCss {
   
   @JSImport("survey-knockout", "defaultStandardCss.tagbox")
   @js.native
-  def tagbox: CleanItemButton = js.native
-  inline def tagbox_=(x: CleanItemButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
+  def tagbox: CleanButtonSvg = js.native
+  inline def tagbox_=(x: CleanButtonSvg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultStandardCss.text")
   @js.native

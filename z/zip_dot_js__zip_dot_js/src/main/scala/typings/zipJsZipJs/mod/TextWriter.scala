@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@zip.js/zip.js", "TextWriter")
 @js.native
 /**
-  * Creates the `TextWriter` instance
+  * Creates the {@link TextWriter} instance
   * 
   * @param encoding The encoding of the text.
   */

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents options passed to the constructor of `ZipReader` and `Entry#getData()`.
+  * Represents options passed to the constructor of {@link ZipReader} and {@link Entry#getData}.
   */
 trait ZipReaderOptions extends StObject {
   
@@ -23,7 +23,7 @@ trait ZipReaderOptions extends StObject {
   var password: js.UndefOr[String] = js.undefined
   
   /**
-    * `true` to prevent closing of `Writer#writable` when calling `Entry#getData()`.
+    * `true` to prevent closing of {@link Writer#writable} when calling {@link Entry#getData}.
     * 
     * @defaultValue false
     */

@@ -14,11 +14,8 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
     */
   var allowClear: Boolean = js.native
   
-  /*
-    * An [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) attribute value for the underlying `<input>` element.
-    */
-  def autoComplete: String = js.native
-  def autoComplete_=(`val`: String): Unit = js.native
+  def autocomplete: String = js.native
+  def autocomplete_=(`val`: String): Unit = js.native
   
   var choicesLazyLoadEnabled: Boolean = js.native
   
@@ -74,6 +71,8 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   def inputFieldComponentName: String = js.native
   
   var inputHasValue: Boolean = js.native
+  
+  var lastSelectedItemValue: ItemValue = js.native
   
   def locClearCaption: LocalizableString = js.native
   

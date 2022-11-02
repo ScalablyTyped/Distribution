@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-environment-vscode-extension"
-version := "0.0-dt-20220624Z-28246b"
+version := "0.0-dt-20221101Z-5aa0c9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/util-middleware" : "3.200.0"
+      "@aws-sdk/util-middleware" : "3.201.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/util-middleware" : "3.200.0"
+      "@aws-sdk/util-middleware" : "3.201.0"
     }
   ],
   "compile-devDependencies" : [

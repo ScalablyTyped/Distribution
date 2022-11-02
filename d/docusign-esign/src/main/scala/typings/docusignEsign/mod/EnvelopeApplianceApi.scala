@@ -11,4 +11,9 @@ open class EnvelopeApplianceApi () extends StObject {
   
   def getApplianceInfo(accountId: String, envelopeId: String): js.Promise[DisplayApplianceInfo] = js.native
   def getApplianceInfo(accountId: String, envelopeId: String, callback: js.Function0[Unit]): js.Promise[DisplayApplianceInfo] = js.native
+  def getApplianceInfo(
+    accountId: String,
+    envelopeId: String,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[DisplayApplianceInfo] = js.native
 }

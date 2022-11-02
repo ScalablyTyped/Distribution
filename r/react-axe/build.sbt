@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-axe"
-version := "3.5.4-2879c6"
+version := "3.5.4-bec554"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "axe-core" % "4.5.0-960a33",
+  "org.scalablytyped" %%% "axe-core" % "4.5.1-85d40c",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",

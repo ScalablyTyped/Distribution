@@ -1,9 +1,11 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.CSSProperties
-import typings.react.mod.FC
-import typings.react.mod.ReactNode
+import typings.antd.libConfigProviderContextMod.DirectionType
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.RefAttributes
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,59 +14,71 @@ object libTypographyTypographyMod extends Shortcut {
   
   @JSImport("antd/lib/typography/Typography", JSImport.Default)
   @js.native
-  val default: FC[TypographyProps] = js.native
+  val default: ForwardRefExoticComponent[
+    (InternalTypographyProps[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+    ]) & RefAttributes[HTMLElement]
+  ] = js.native
   
-  trait TypographyProps extends StObject {
+  trait InternalTypographyProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */]
+    extends StObject
+       with TypographyProps[C] {
     
-    var `aria-label`: js.UndefOr[String] = js.undefined
+    /** @deprecated Use `ref` directly if using React 16 */
+    var setContentRef: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
+  }
+  object InternalTypographyProps {
     
-    var children: js.UndefOr[ReactNode] = js.undefined
+    inline def apply[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](): InternalTypographyProps[C] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InternalTypographyProps[C]]
+    }
     
-    var className: js.UndefOr[String] = js.undefined
+    extension [Self <: InternalTypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](x: Self & InternalTypographyProps[C]) {
+      
+      inline def setSetContentRef(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "setContentRef", js.Any.fromFunction1(value))
+      
+      inline def setSetContentRefUndefined: Self = StObject.set(x, "setContentRef", js.undefined)
+    }
+  }
+  
+  trait TypographyProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */]
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
-    var id: js.UndefOr[String] = js.undefined
+    var direction: js.UndefOr[DirectionType] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
-    
-    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TypographyProps {
     
-    inline def apply(): TypographyProps = {
+    inline def apply[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](): TypographyProps[C] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TypographyProps]
+      __obj.asInstanceOf[TypographyProps[C]]
     }
     
-    extension [Self <: TypographyProps](x: Self) {
+    extension [Self <: TypographyProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](x: Self & TypographyProps[C]) {
       
-      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
-      
-      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
-  type _To = FC[TypographyProps]
+  type _To = ForwardRefExoticComponent[
+    (InternalTypographyProps[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+    ]) & RefAttributes[HTMLElement]
+  ]
   
   /* This means you don't have to write `default`, but can instead just say `libTypographyTypographyMod.foo` */
-  override def _to: FC[TypographyProps] = default
+  override def _to: ForwardRefExoticComponent[
+    (InternalTypographyProps[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+    ]) & RefAttributes[HTMLElement]
+  ] = default
 }

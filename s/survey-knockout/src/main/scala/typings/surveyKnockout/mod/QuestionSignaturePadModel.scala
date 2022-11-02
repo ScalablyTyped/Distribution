@@ -10,27 +10,31 @@ open class QuestionSignaturePadModel protected () extends Question {
   def this(name: String) = this()
   
   /*
-    * Use it to clear content of the signature pad.
+    * Specifies whether to display a button that clears the signature area.
+    * 
+    * Default value: `true`
     */
   def allowClear: Boolean = js.native
   def allowClear_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Use it to set background color for the signature pad.
+    * Specifies a color for the signature area background.  Accepts hexadecimal colors (`"#FF0000"`), RGB colors (`"rgb(255,0,0)"`), or color names (`"red"`).
     */
   def backgroundColor: String = js.native
   def backgroundColor_=(`val`: String): Unit = js.native
   
   def canShowClearButton: Boolean = js.native
   
-  /*
-    * The clear signature button caption.
-    */
   def clearButtonCaption: String = js.native
   
   /*
-    * Use it to set the specific dataFormat for the signature pad image data.
-    * formats: "" (default) - png, "image/jpeg" - jpeg, "image/svg+xml" - svg
+    * Specifies the format in which to store the signature image.
+    * 
+    * Possible values:
+    * 
+    * - `""` (default) - PNG
+    * - `"image/jpeg"` - JPEG
+    * - `"image/svg+xml"` - SVG
     */
   var dataFormat: String = js.native
   
@@ -46,7 +50,7 @@ open class QuestionSignaturePadModel protected () extends Question {
   def needShowPlaceholder(): Boolean = js.native
   
   /*
-    * Use it to set pen color for the signature pad.
+    * Specifies a color for the pen. Accepts hexadecimal colors (`"#FF0000"`), RGB colors (`"rgb(255,0,0)"`), or color names (`"red"`).
     */
   def penColor: String = js.native
   def penColor_=(`val`: String): Unit = js.native
@@ -54,13 +58,13 @@ open class QuestionSignaturePadModel protected () extends Question {
   def placeHolderText: String = js.native
   
   /*
-    * Use it to set the specific height for the signature pad.
+    * Specifies the height of the signature area. Accepts positive integer numbers.
     */
   def signatureHeight: Double = js.native
   def signatureHeight_=(`val`: Double): Unit = js.native
   
   /*
-    * Use it to set the specific width for the signature pad.
+    * Specifies the width of the signature area. Accepts positive integer numbers.
     */
   def signatureWidth: Double = js.native
   def signatureWidth_=(`val`: Double): Unit = js.native

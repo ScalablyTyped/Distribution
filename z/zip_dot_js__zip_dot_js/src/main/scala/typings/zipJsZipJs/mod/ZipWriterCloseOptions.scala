@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the options passed to `ZipWriter#close()`.
+  * Represents the options passed to  {@link ZipWriter#close}.
   */
 trait ZipWriterCloseOptions
   extends StObject
      with EntryOnprogressOptions {
   
   /**
-    * `true` to prevent closing of `Writer#writable`.
+    * `true` to prevent closing of {@link WritableWriter#writable}.
     * 
     * @defaultValue false
     */

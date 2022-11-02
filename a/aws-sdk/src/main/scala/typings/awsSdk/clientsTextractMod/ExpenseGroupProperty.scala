@@ -12,7 +12,7 @@ trait ExpenseGroupProperty extends StObject {
   var Id: js.UndefOr[String] = js.undefined
   
   /**
-    * Informs you on the kind of label associated with the group
+    * Informs you on whether the expense group is a name or an address.
     */
   var Types: js.UndefOr[StringList] = js.undefined
 }

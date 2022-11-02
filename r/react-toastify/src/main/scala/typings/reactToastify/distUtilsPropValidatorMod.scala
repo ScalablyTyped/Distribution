@@ -1,6 +1,5 @@
 package typings.reactToastify
 
-import typings.reactToastify.distTypesMod.Id
 import typings.reactToastify.reactToastifyBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,16 +24,11 @@ object distUtilsPropValidatorMod {
   inline def getAutoCloseDelay_false(toastAutoClose: `false`, containerAutoClose: Double): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
   inline def getAutoCloseDelay_false(toastAutoClose: `false`, containerAutoClose: `false`): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
   
-  inline def isBool(v: Any): /* is std.Boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBool")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Boolean */ Boolean]
-  
   inline def isFn(v: Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFn")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
   inline def isNum(v: Any): /* is std.Number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNum")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Number */ Boolean]
   
   inline def isStr(v: Any): /* is std.String */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStr")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.String */ Boolean]
-  
-  inline def isToastIdValid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isToastIdValid")().asInstanceOf[Boolean]
-  inline def isToastIdValid(toastId: Id): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isToastIdValid")(toastId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def parseClassName(v: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseClassName")(v.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

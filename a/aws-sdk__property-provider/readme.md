@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__property-provider
 
-Typings are for version 3.200.0
+Typings are for version 3.201.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/property-provider/latest.svg)](https://www.npmjs.com/package/@aws-sdk/property-provider) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/property-provider.svg)](https://www.npmjs.com/package/@

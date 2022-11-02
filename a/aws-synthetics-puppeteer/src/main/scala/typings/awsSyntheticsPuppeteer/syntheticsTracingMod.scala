@@ -1,8 +1,6 @@
 package typings.awsSyntheticsPuppeteer
 
 import org.scalablytyped.runtime.Shortcut
-import typings.awsSdk.mod.Service
-import typings.awsSyntheticsPuppeteer.anon.TypeofAWS
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
 import typings.std.Map
@@ -68,7 +66,7 @@ object syntheticsTracingMod extends Shortcut {
       * @returns awssdk that was passed in
       * @see https://github.com/aws/aws-sdk-js
       */
-    def captureAWS(awssdk: TypeofAWS): TypeofAWS = js.native
+    def captureAWS[AWS](awssdk: AWS): AWS = js.native
     
     /**
       * Configures the AWS SDK client for the service specified
@@ -76,7 +74,7 @@ object syntheticsTracingMod extends Shortcut {
       * @param service - An instance of an AWS.Service to wrap.
       * @returns instrumented service that was passed in
       */
-    def captureAWSClient(service: Service): Service = js.native
+    def captureAWSClient[AWSClient](service: AWSClient): AWSClient = js.native
     
     /**
       * Wraps the http/https.request() and .get() calls to automatically capture information for the segment.

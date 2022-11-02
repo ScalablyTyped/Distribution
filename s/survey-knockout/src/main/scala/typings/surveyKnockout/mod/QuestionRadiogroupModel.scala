@@ -14,12 +14,14 @@ open class QuestionRadiogroupModel protected () extends QuestionCheckboxBase {
   def clearButtonCaption: String = js.native
   
   /*
-    * Return the selected item in the radio group. Returns null if the value is empty
+    * Returns the selected choice item. If no item is selected, returns `null`.
     */
   def selectedItem: ItemValue = js.native
   
   /*
-    * Show "clear button" flag.
+    * Specifies whether to display a button that clears the question value.
+    * 
+    * Default value: `false`
     */
   def showClearButton: Boolean = js.native
   

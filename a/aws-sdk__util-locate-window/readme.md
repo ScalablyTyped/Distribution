@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-locate-window
 
-Typings are for version 3.188.0
+Typings are for version 3.201.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/util-locate-window/latest.svg)](https://www.npmjs.com/package/@aws-sdk/util-locate-window) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/util-locate-window.svg)](https://www.npmjs.com/packag

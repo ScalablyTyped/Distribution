@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "framebus" : "5.1.2"
+      "framebus" : "5.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "framebus" : "5.1.2"
+      "framebus" : "5.2.0"
     }
   ],
   "compile-devDependencies" : [

@@ -9,33 +9,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class FS_ () extends ZipDirectoryEntry {
   
   /**
-    * Returns a `ZipEntry` instance from its full filename
+    * Returns a {@link ZipEntry} instance from its full filename
     * 
     * @param fullname The full filename.
-    * @returns The `ZipEntry` instance.
+    * @returns The {@link ZipEntry} instance.
     */
   def find(fullname: String): js.UndefOr[ZipEntry] = js.native
   
   /**
-    * Returns a `ZipEntry` instance from the value of `ZipEntry#id`
+    * Returns a {@link ZipEntry} instance from the value of {@link ZipEntry#id}
     * 
-    * @param id The id of the `ZipEntry` instance.
-    * @returns The `ZipEntry` instance.
+    * @param id The id of the {@link ZipEntry} instance.
+    * @returns The {@link ZipEntry} instance.
     */
   def getById(id: Double): js.UndefOr[ZipEntry] = js.native
   
   /**
-    * Moves a `ZipEntry` instance and its children into a `ZipDirectoryEntry` instance
+    * Moves a {@link ZipEntry} instance and its children into a {@link ZipDirectoryEntry} instance
     * 
-    * @param entry The `ZipEntry` instance to move.
-    * @param destination The `ZipDirectoryEntry` instance.
+    * @param entry The {@link ZipEntry} instance to move.
+    * @param destination The {@link ZipDirectoryEntry} instance.
     */
   def move(entry: ZipEntry, destination: ZipDirectoryEntry): Unit = js.native
   
   /**
-    * Removes a `ZipEntry` instance and its children
+    * Removes a {@link ZipEntry} instance and its children
     * 
-    * @param entry The `ZipEntry` instance to remove.
+    * @param entry The {@link ZipEntry} instance to remove.
     */
   def remove(entry: ZipEntry): Unit = js.native
   

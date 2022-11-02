@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ipfs-core-utils"
-version := "0.17.0-ba007c"
+version := "0.17.0-cac778"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,8 +13,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ipfs-unixfs-importer" % "11.0.1-5b1b82",
   "org.scalablytyped" %%% "ipld__dag-pb" % "3.0.0-035d7d",
   "org.scalablytyped" %%% "multiformats" % "10.0.2-cc7cca",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-93ee03",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-752b57",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

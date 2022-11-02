@@ -17,6 +17,13 @@ trait FullOptions extends StObject {
   var success: js.UndefOr[js.Function] = js.undefined
   
   var useMasterKey: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * logIn will default to POST instead of GET method since
+    * version 3.0.0 for security reasons.
+    * If you need to use GET set this to `false`.
+    */
+  var usePost: js.UndefOr[Boolean] = js.undefined
 }
 object FullOptions {
   
@@ -50,5 +57,9 @@ object FullOptions {
     inline def setUseMasterKey(value: Boolean): Self = StObject.set(x, "useMasterKey", value.asInstanceOf[js.Any])
     
     inline def setUseMasterKeyUndefined: Self = StObject.set(x, "useMasterKey", js.undefined)
+    
+    inline def setUsePost(value: Boolean): Self = StObject.set(x, "usePost", value.asInstanceOf[js.Any])
+    
+    inline def setUsePostUndefined: Self = StObject.set(x, "usePost", js.undefined)
   }
 }

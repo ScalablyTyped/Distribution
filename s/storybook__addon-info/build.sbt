@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-info"
-version := "5.2-dt-20220726Z-85b4f9"
+version := "5.2-dt-20220726Z-f10de7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "storybook__addons" % "6.5.13-fb936c",
+  "org.scalablytyped" %%% "storybook__addons" % "6.5.13-79ca18",
   "org.scalablytyped" %%% "storybook__api" % "6.5.13-d07efb",
   "org.scalablytyped" %%% "storybook__channels" % "6.5.13-52db1d",
   "org.scalablytyped" %%% "storybook__router" % "6.5.13-594799",

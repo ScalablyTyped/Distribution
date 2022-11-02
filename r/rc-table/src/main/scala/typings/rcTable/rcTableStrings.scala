@@ -1,7 +1,10 @@
 package typings.rcTable
 
 import typings.rcTable.libInterfaceMod.AlignType
+import typings.rcTable.libInterfaceMod.ColScopeType
 import typings.rcTable.libInterfaceMod.ExpandableType
+import typings.rcTable.libInterfaceMod.RowScopeType
+import typings.rcTable.libInterfaceMod.ScopeType
 import typings.rcTable.libInterfaceMod.TableLayout
 import typings.rcTable.libInterfaceMod._Component
 import typings.rcTable.libInterfaceMod._FixedType
@@ -150,12 +153,16 @@ object rcTableStrings {
   @js.native
   sealed trait col
     extends StObject
+       with ColScopeType
+       with ScopeType
        with _Component[Any]
   inline def col: col = "col".asInstanceOf[col]
   
   @js.native
   sealed trait colgroup
     extends StObject
+       with ColScopeType
+       with ScopeType
        with _Component[Any]
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
@@ -547,7 +554,16 @@ object rcTableStrings {
   sealed trait row
     extends StObject
        with ExpandableType
+       with RowScopeType
+       with ScopeType
   inline def row: row = "row".asInstanceOf[row]
+  
+  @js.native
+  sealed trait rowgroup
+    extends StObject
+       with RowScopeType
+       with ScopeType
+  inline def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
   
   @js.native
   sealed trait rp

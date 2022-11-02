@@ -12,33 +12,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureStyleOptions extends StObject {
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * Hex RGB string (like &quot;#00FF00&quot; for green). Only applies to
     * polygon geometries.
     */
   var fillColor: js.UndefOr[String] = js.undefined
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * The fill opacity between 0.0 and 1.0. Only applies to polygon geometries.
     */
   var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * Hex RGB string (like &quot;#00FF00&quot; for green).
     */
   var strokeColor: js.UndefOr[String] = js.undefined
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * The stroke opacity between 0.0 and 1.0. Only applies to line and polygon
     * geometries.
     */
   var strokeOpacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * The stroke width in pixels. Only applies to line and polygon geometries.
     */
   var strokeWeight: js.UndefOr[Double] = js.undefined

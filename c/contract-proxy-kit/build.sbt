@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "contract-proxy-kit"
-version := "1.0-dt-20220624Z-f28348"
+version := "1.0-dt-20220624Z-2166f9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ethers" % "5.7.2-4f8eb4",
+  "org.scalablytyped" %%% "ethers" % "5.7.2-181596",
   "org.scalablytyped" %%% "ethersproject__abi" % "5.7.0-0bd149",
   "org.scalablytyped" %%% "ethersproject__abstract-provider" % "5.7.0-701210",
   "org.scalablytyped" %%% "ethersproject__abstract-signer" % "5.7.0-bbe582",
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ethersproject__logger" % "5.7.0-97442f",
   "org.scalablytyped" %%% "ethersproject__networks" % "5.7.1-5d0f32",
   "org.scalablytyped" %%% "ethersproject__properties" % "5.7.0-b849d8",
-  "org.scalablytyped" %%% "ethersproject__providers" % "5.7.2-ee2d91",
+  "org.scalablytyped" %%% "ethersproject__providers" % "5.7.2-2d917b",
   "org.scalablytyped" %%% "ethersproject__sha2" % "5.7.0-8cc297",
   "org.scalablytyped" %%% "ethersproject__signing-key" % "5.7.0-3eb740",
   "org.scalablytyped" %%% "ethersproject__strings" % "5.7.0-080329",
@@ -28,9 +28,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ethersproject__wallet" % "5.7.0-2f9b42",
   "org.scalablytyped" %%% "ethersproject__web" % "5.7.1-7bd670",
   "org.scalablytyped" %%% "ethersproject__wordlists" % "5.7.0-eb3713",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-cacb98")
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-370f29")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

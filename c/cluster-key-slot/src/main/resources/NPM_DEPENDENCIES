@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cluster-key-slot" : "1.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cluster-key-slot" : "1.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

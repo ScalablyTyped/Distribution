@@ -6,6 +6,7 @@ import typings.antd.antdStrings.click
 import typings.antd.antdStrings.contextMenu
 import typings.antd.antdStrings.hover
 import typings.antd.libDropdownDropdownButtonMod.DropdownButtonInterface
+import typings.antd.libMenuMod.MenuProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
@@ -119,9 +120,13 @@ object libDropdownDropdownMod extends Shortcut {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    var dropdownRender: js.UndefOr[js.Function1[/* originNode */ ReactNode, ReactNode]] = js.undefined
+    
     var forceRender: js.UndefOr[Boolean] = js.undefined
     
     var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
+    
+    var menu: js.UndefOr[MenuProps] = js.undefined
     
     var mouseEnterDelay: js.UndefOr[Double] = js.undefined
     
@@ -129,17 +134,15 @@ object libDropdownDropdownMod extends Shortcut {
     
     var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
-    /**
-      * @deprecated `onVisibleChange` is deprecated which will be removed in next major version. Please
-      *   use `onOpenChange` instead.
-      */
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    /** @deprecated Please use `onOpenChange` instead */
+    var onVisibleChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
     var open: js.UndefOr[Boolean] = js.undefined
     
     var openClassName: js.UndefOr[String] = js.undefined
     
-    var overlay: ReactElement | OverlayFunc
+    /** @deprecated Please use `menu` instead */
+    var overlay: js.UndefOr[ReactElement | OverlayFunc] = js.undefined
     
     var overlayClassName: js.UndefOr[String] = js.undefined
     
@@ -153,16 +156,13 @@ object libDropdownDropdownMod extends Shortcut {
     
     var trigger: js.UndefOr[js.Array[click | hover | contextMenu]] = js.undefined
     
-    /**
-      * @deprecated `visible` is deprecated which will be removed in next major version. Please use
-      *   `open` instead.
-      */
+    /** @deprecated Please use `open` instead */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
   object DropdownProps {
     
-    inline def apply(overlay: ReactElement | OverlayFunc): DropdownProps = {
-      val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    inline def apply(): DropdownProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropdownProps]
     }
     
@@ -196,6 +196,10 @@ object libDropdownDropdownMod extends Shortcut {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
+      inline def setDropdownRender(value: /* originNode */ ReactNode => ReactNode): Self = StObject.set(x, "dropdownRender", js.Any.fromFunction1(value))
+      
+      inline def setDropdownRenderUndefined: Self = StObject.set(x, "dropdownRender", js.undefined)
+      
       inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
       
       inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
@@ -203,6 +207,10 @@ object libDropdownDropdownMod extends Shortcut {
       inline def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
       inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      
+      inline def setMenu(value: MenuProps): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
       inline def setMouseEnterDelay(value: Double): Self = StObject.set(x, "mouseEnterDelay", value.asInstanceOf[js.Any])
       
@@ -216,7 +224,7 @@ object libDropdownDropdownMod extends Shortcut {
       
       inline def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
       
-      inline def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
+      inline def setOnVisibleChange(value: /* open */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
@@ -239,6 +247,8 @@ object libDropdownDropdownMod extends Shortcut {
       inline def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       
       inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+      
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       

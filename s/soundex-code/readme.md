@@ -1,7 +1,7 @@
 
 # Scala.js typings for soundex-code
 
-Typings are for version 2.0.0
+Typings are for version 2.0.1
 
 ## Library description:
 Soundex phonetic algorithm

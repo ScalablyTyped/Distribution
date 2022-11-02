@@ -1,5 +1,6 @@
 package typings.redisGraph
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.redisClient.distLibCommandsMod.RedisCommandArgument
 import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import typings.redisGraph.anon.TypeofCONFIGGET
@@ -9,7 +10,7 @@ import typings.redisGraph.anon.TypeofEXPLAIN
 import typings.redisGraph.anon.TypeofLIST
 import typings.redisGraph.anon.TypeofPROFILE
 import typings.redisGraph.anon.TypeofQUERY
-import typings.redisGraph.anon.TypeofQUERYRO
+import typings.redisGraph.anon.TypeofROQUERY
 import typings.redisGraph.anon.TypeofSLOWLOG
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -65,12 +66,12 @@ object distCommandsMod {
     @js.native
     def QUERY_ : TypeofQUERY = js.native
     
-    @JSImport("@redis/graph/dist/commands", "default.QUERY_RO")
-    @js.native
-    def QUERY_RO: TypeofQUERYRO = js.native
-    inline def QUERY_RO_=(x: TypeofQUERYRO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUERY_RO")(x.asInstanceOf[js.Any])
-    
     inline def QUERY__=(x: TypeofQUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUERY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/graph/dist/commands", "default.RO_QUERY")
+    @js.native
+    def RO_QUERY: TypeofROQUERY = js.native
+    inline def RO_QUERY_=(x: TypeofROQUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RO_QUERY")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/graph/dist/commands", "default.SLOWLOG")
     @js.native
@@ -111,13 +112,12 @@ object distCommandsMod {
     @JSImport("@redis/graph/dist/commands", "default.query")
     @js.native
     def query: TypeofQUERY = js.native
-    
-    @JSImport("@redis/graph/dist/commands", "default.queryRo")
-    @js.native
-    def queryRo: TypeofQUERYRO = js.native
-    inline def queryRo_=(x: TypeofQUERYRO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryRo")(x.asInstanceOf[js.Any])
-    
     inline def query_=(x: TypeofQUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("query")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/graph/dist/commands", "default.roQuery")
+    @js.native
+    def roQuery: TypeofROQUERY = js.native
+    inline def roQuery_=(x: TypeofROQUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roQuery")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/graph/dist/commands", "default.slowLog")
     @js.native
@@ -130,6 +130,60 @@ object distCommandsMod {
     args: RedisCommandArguments,
     graph: RedisCommandArgument,
     query: RedisCommandArgument,
-    timeout: Double
-  ): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushQueryArguments")(args.asInstanceOf[js.Any], graph.asInstanceOf[js.Any], query.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
+    options: Unit,
+    compact: Boolean
+  ): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushQueryArguments")(args.asInstanceOf[js.Any], graph.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any], compact.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
+  inline def pushQueryArguments(
+    args: RedisCommandArguments,
+    graph: RedisCommandArgument,
+    query: RedisCommandArgument,
+    options: QueryOptionsBackwardCompatible
+  ): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushQueryArguments")(args.asInstanceOf[js.Any], graph.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
+  inline def pushQueryArguments(
+    args: RedisCommandArguments,
+    graph: RedisCommandArgument,
+    query: RedisCommandArgument,
+    options: QueryOptionsBackwardCompatible,
+    compact: Boolean
+  ): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("pushQueryArguments")(args.asInstanceOf[js.Any], graph.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any], compact.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
+  
+  trait QueryOptions extends StObject {
+    
+    var TIMEOUT: js.UndefOr[Double] = js.undefined
+    
+    var params: js.UndefOr[QueryParams] = js.undefined
+  }
+  object QueryOptions {
+    
+    inline def apply(): QueryOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QueryOptions]
+    }
+    
+    extension [Self <: QueryOptions](x: Self) {
+      
+      inline def setParams(value: QueryParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      
+      inline def setTIMEOUT(value: Double): Self = StObject.set(x, "TIMEOUT", value.asInstanceOf[js.Any])
+      
+      inline def setTIMEOUTUndefined: Self = StObject.set(x, "TIMEOUT", js.undefined)
+    }
+  }
+  
+  type QueryOptionsBackwardCompatible = QueryOptions | Double
+  
+  type QueryParam = Null | String | Double | Boolean | QueryParams | js.Array[Any]
+  
+  trait QueryParams
+    extends StObject
+       with /* key */ StringDictionary[QueryParam]
+  object QueryParams {
+    
+    inline def apply(): QueryParams = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QueryParams]
+    }
+  }
 }

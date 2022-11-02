@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.invityApi.invityApiStrings.IdentityCard
   - typings.invityApi.invityApiStrings.DrivingLicence
   - typings.invityApi.invityApiStrings.Selfie
+  - typings.invityApi.invityApiStrings.ResidencePermit
   - typings.invityApi.invityApiStrings.WalletVerification
 */
 trait SavingsTradeUserKYCStartDocumentType extends StObject
@@ -19,6 +20,8 @@ object SavingsTradeUserKYCStartDocumentType {
   inline def IdentityCard: typings.invityApi.invityApiStrings.IdentityCard = "IdentityCard".asInstanceOf[typings.invityApi.invityApiStrings.IdentityCard]
   
   inline def Passport: typings.invityApi.invityApiStrings.Passport = "Passport".asInstanceOf[typings.invityApi.invityApiStrings.Passport]
+  
+  inline def ResidencePermit: typings.invityApi.invityApiStrings.ResidencePermit = "ResidencePermit".asInstanceOf[typings.invityApi.invityApiStrings.ResidencePermit]
   
   inline def Selfie: typings.invityApi.invityApiStrings.Selfie = "Selfie".asInstanceOf[typings.invityApi.invityApiStrings.Selfie]
   

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Features extends StObject {
   
+  val audit: js.UndefOr[Boolean] = js.undefined
+  
   val imageEditor: js.UndefOr[Boolean] = js.undefined
   
   val preview: js.UndefOr[Boolean] = js.undefined
@@ -24,6 +26,10 @@ object Features {
   }
   
   extension [Self <: Features](x: Self) {
+    
+    inline def setAudit(value: Boolean): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
+    
+    inline def setAuditUndefined: Self = StObject.set(x, "audit", js.undefined)
     
     inline def setImageEditor(value: Boolean): Self = StObject.set(x, "imageEditor", value.asInstanceOf[js.Any])
     

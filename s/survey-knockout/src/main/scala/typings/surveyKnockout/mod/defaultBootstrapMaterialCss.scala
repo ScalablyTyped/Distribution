@@ -6,7 +6,6 @@ import typings.surveyKnockout.anon.ButtonRemove
 import typings.surveyKnockout.anon.CellResponsiveTitle
 import typings.surveyKnockout.anon.CheckedPath
 import typings.surveyKnockout.anon.CleanButton
-import typings.surveyKnockout.anon.CleanButtonIconId
 import typings.surveyKnockout.anon.Complete
 import typings.surveyKnockout.anon.Container
 import typings.surveyKnockout.anon.Content
@@ -325,8 +324,8 @@ object defaultBootstrapMaterialCss {
   
   @JSImport("survey-knockout", "defaultBootstrapMaterialCss.tagbox")
   @js.native
-  def tagbox: CleanButtonIconId = js.native
-  inline def tagbox_=(x: CleanButtonIconId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
+  def tagbox: CleanButton = js.native
+  inline def tagbox_=(x: CleanButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultBootstrapMaterialCss.text")
   @js.native

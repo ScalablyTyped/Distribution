@@ -3,6 +3,7 @@ package typings.redisBloom
 import typings.redisBloom.anon.ADDNX
 import typings.redisBloom.anon.ADD_
 import typings.redisBloom.anon.Add
+import typings.redisBloom.anon.COUNT_
 import typings.redisBloom.anon.INCRBY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,9 +32,14 @@ object mod {
     def cms: INCRBY = js.native
     inline def cms_=(x: INCRBY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cms")(x.asInstanceOf[js.Any])
     
+    @JSImport("@redis/bloom", "default.tDigest")
+    @js.native
+    def tDigest: Add = js.native
+    inline def tDigest_=(x: Add): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tDigest")(x.asInstanceOf[js.Any])
+    
     @JSImport("@redis/bloom", "default.topK")
     @js.native
-    def topK: Add = js.native
-    inline def topK_=(x: Add): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topK")(x.asInstanceOf[js.Any])
+    def topK: COUNT_ = js.native
+    inline def topK_=(x: COUNT_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topK")(x.asInstanceOf[js.Any])
   }
 }

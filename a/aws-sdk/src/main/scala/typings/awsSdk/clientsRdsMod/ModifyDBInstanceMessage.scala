@@ -222,7 +222,12 @@ trait ModifyDBInstanceMessage extends StObject {
   var ResumeFullAutomationModeMinutes: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Specifies the storage type to be associated with the DB instance. If you specify Provisioned IOPS (io1), you must also include a value for the Iops parameter. If you choose to migrate your DB instance from using standard storage to using Provisioned IOPS, or from using Provisioned IOPS to using standard storage, the process can take time. The duration of the migration depends on several factors such as database load, storage size, storage type (standard or Provisioned IOPS), amount of IOPS provisioned (if any), and the number of prior scale storage operations. Typical migration times are under 24 hours, but the process can take up to several days in some cases. During the migration, the DB instance is available for use, but might experience performance degradation. While the migration takes place, nightly backups for the instance are suspended. No other Amazon RDS operations can take place for the instance, including modifying the instance, rebooting the instance, deleting the instance, creating a read replica for the instance, and creating a DB snapshot of the instance. Valid values: standard | gp2 | io1  Default: io1 if the Iops parameter is specified, otherwise gp2 
+    * Specifies the storage throughput value for the DB instance. This setting doesn't apply to RDS Custom or Amazon Aurora.
+    */
+  var StorageThroughput: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * Specifies the storage type to be associated with the DB instance. If you specify Provisioned IOPS (io1), you must also include a value for the Iops parameter. If you choose to migrate your DB instance from using standard storage to using Provisioned IOPS, or from using Provisioned IOPS to using standard storage, the process can take time. The duration of the migration depends on several factors such as database load, storage size, storage type (standard or Provisioned IOPS), amount of IOPS provisioned (if any), and the number of prior scale storage operations. Typical migration times are under 24 hours, but the process can take up to several days in some cases. During the migration, the DB instance is available for use, but might experience performance degradation. While the migration takes place, nightly backups for the instance are suspended. No other Amazon RDS operations can take place for the instance, including modifying the instance, rebooting the instance, deleting the instance, creating a read replica for the instance, and creating a DB snapshot of the instance. Valid values: gp2 | gp3 | io1 | standard  Default: io1 if the Iops parameter is specified, otherwise gp2 
     */
   var StorageType: js.UndefOr[String] = js.undefined
   
@@ -428,6 +433,10 @@ object ModifyDBInstanceMessage {
     inline def setResumeFullAutomationModeMinutes(value: IntegerOptional): Self = StObject.set(x, "ResumeFullAutomationModeMinutes", value.asInstanceOf[js.Any])
     
     inline def setResumeFullAutomationModeMinutesUndefined: Self = StObject.set(x, "ResumeFullAutomationModeMinutes", js.undefined)
+    
+    inline def setStorageThroughput(value: IntegerOptional): Self = StObject.set(x, "StorageThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setStorageThroughputUndefined: Self = StObject.set(x, "StorageThroughput", js.undefined)
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

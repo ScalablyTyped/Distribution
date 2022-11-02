@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 type Using = js.Function2[
 /* params */ Mocks[StringDictionary[String]], 
 /* closure */ js.Function1[
-  /* import warning: importer.ImportType#apply Failed type conversion: {[ filename in keyof {[filename: string] : string} ]: vscode.vscode.Uri} */ /* mapFileToUri */ js.Any, 
+  /* import warning: importer.ImportType#apply Failed type conversion: {[ filename in keyof {[filename: string] : string} ]: vscode.vscode.TextDocument} */ /* mapFileToDoc */ js.Any, 
   js.Promise[Unit]
 ], 
 js.Promise[Unit]]

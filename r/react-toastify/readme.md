@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-toastify
 
-Typings are for version 9.0.8
+Typings are for version 9.1.0
 
 ## Library description:
 React notification made easy

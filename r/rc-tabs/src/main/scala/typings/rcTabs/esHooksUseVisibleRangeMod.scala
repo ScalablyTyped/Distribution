@@ -1,7 +1,6 @@
 package typings.rcTabs
 
 import typings.rcTabs.anon.tabsArrayTabTabNavListPro
-import typings.rcTabs.esInterfaceMod.SizeInfo
 import typings.rcTabs.esInterfaceMod.TabOffsetMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,20 +14,13 @@ object esHooksUseVisibleRangeMod {
   
   inline def default(
     tabOffsets: TabOffsetMap,
-    containerSizeInfo: ContainerSizeInfo,
-    tabContentNodeSizeInfo: SizeInfo,
-    addNodeSizeInfo: SizeInfo,
-    operationNodeSizeInfo: SizeInfo,
-    param5: tabsArrayTabTabNavListPro
-  ): js.Tuple3[
-    /* visibleStart */ Double, 
-    /* visibleEnd */ Double, 
-    /* visibleTabContentSize */ Double
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tabOffsets.asInstanceOf[js.Any], containerSizeInfo.asInstanceOf[js.Any], tabContentNodeSizeInfo.asInstanceOf[js.Any], addNodeSizeInfo.asInstanceOf[js.Any], operationNodeSizeInfo.asInstanceOf[js.Any], param5.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[
-    /* visibleStart */ Double, 
-    /* visibleEnd */ Double, 
-    /* visibleTabContentSize */ Double
-  ]]
+    visibleTabContentValue: Double,
+    transform: Double,
+    tabContentSizeValue: Double,
+    addNodeSizeValue: Double,
+    operationNodeSizeValue: Double,
+    param6: tabsArrayTabTabNavListPro
+  ): js.Tuple2[/* visibleStart */ Double, /* visibleEnd */ Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tabOffsets.asInstanceOf[js.Any], visibleTabContentValue.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], tabContentSizeValue.asInstanceOf[js.Any], addNodeSizeValue.asInstanceOf[js.Any], operationNodeSizeValue.asInstanceOf[js.Any], param6.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[/* visibleStart */ Double, /* visibleEnd */ Double]]
   
   type ContainerSizeInfo = js.Tuple4[/* width */ Double, /* height */ Double, /* left */ Double, /* top */ Double]
 }

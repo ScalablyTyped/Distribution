@@ -14,7 +14,7 @@ object fs {
   /**
     * The Filesystem constructor.
     * 
-    * @defaultValue `FS`
+    * @defaultValue {@link FS}
     */
   @JSImport("@zip.js/zip.js", "fs.FS")
   @js.native
@@ -23,7 +23,7 @@ object fs {
   /**
     * The Filesystem constructor.
     * 
-    * @defaultValue `FS`
+    * @defaultValue {@link FS}
     */
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@zip.js/zip.js", "fs.FS")
@@ -33,18 +33,18 @@ object fs {
   inline def FS_=(x: Instantiable0[FS_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FS")(x.asInstanceOf[js.Any])
   
   /**
-    * The `ZipDirectoryEntry` constructor.
+    * The {@link ZipDirectoryEntry} constructor.
     * 
-    * @defaultValue `ZipDirectoryEntry`
+    * @defaultValue {@link ZipDirectoryEntry}
     */
   @JSImport("@zip.js/zip.js", "fs.ZipDirectoryEntry")
   @js.native
   def ZipDirectoryEntry: Instantiable0[typings.zipJsZipJs.mod.ZipDirectoryEntry] = js.native
   
   /**
-    * The `ZipDirectoryEntry` constructor.
+    * The {@link ZipDirectoryEntry} constructor.
     * 
-    * @defaultValue `ZipDirectoryEntry`
+    * @defaultValue {@link ZipDirectoryEntry}
     */
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@zip.js/zip.js", "fs.ZipDirectoryEntry")
@@ -54,18 +54,18 @@ object fs {
   inline def ZipDirectoryEntry_=(x: Instantiable0[ZipDirectoryEntry]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZipDirectoryEntry")(x.asInstanceOf[js.Any])
   
   /**
-    * The `ZipFileEntry` constructor.
+    * The {@link ZipFileEntry} constructor.
     * 
-    * @defaultValue `ZipFileEntry`
+    * @defaultValue {@link ZipFileEntry}
     */
   @JSImport("@zip.js/zip.js", "fs.ZipFileEntry")
   @js.native
   def ZipFileEntry: Instantiable0[typings.zipJsZipJs.mod.ZipFileEntry[js.Object, js.Object]] = js.native
   
   /**
-    * The `ZipFileEntry` constructor.
+    * The {@link ZipFileEntry} constructor.
     * 
-    * @defaultValue `ZipFileEntry`
+    * @defaultValue {@link ZipFileEntry}
     */
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@zip.js/zip.js", "fs.ZipFileEntry")

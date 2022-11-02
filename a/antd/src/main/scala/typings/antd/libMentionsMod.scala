@@ -8,7 +8,6 @@ import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object libMentionsMod extends Shortcut {
   @js.native
   trait CompoundedComponent
     extends StObject
-       with ForwardRefExoticComponent[MentionProps & RefAttributes[HTMLElement]] {
+       with ForwardRefExoticComponent[MentionProps & RefAttributes[MentionsRef]] {
     
     var Option: FC[typings.rcSelect.libOptionMod.OptionProps] = js.native
     
@@ -137,6 +136,8 @@ object libMentionsMod extends Shortcut {
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
+  
+  type MentionsRef = typings.rcMentions.esMentionsMod.MentionsRef
   
   trait OptionProps
     extends StObject

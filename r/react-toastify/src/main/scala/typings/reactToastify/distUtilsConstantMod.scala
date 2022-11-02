@@ -7,6 +7,11 @@ import typings.reactToastify.reactToastifyInts.`50`
 import typings.reactToastify.reactToastifyInts.`80`
 import typings.reactToastify.reactToastifyStrings.Toastify
 import typings.reactToastify.reactToastifyStrings.d
+import typings.reactToastify.reactToastifyStrings.default_
+import typings.reactToastify.reactToastifyStrings.error_
+import typings.reactToastify.reactToastifyStrings.info_
+import typings.reactToastify.reactToastifyStrings.success_
+import typings.reactToastify.reactToastifyStrings.warning_
 import typings.reactToastify.reactToastifyStrings.x
 import typings.reactToastify.reactToastifyStrings.y
 import org.scalablytyped.runtime.StObject
@@ -54,7 +59,7 @@ object distUtilsConstantMod {
   }
   
   /* Inlined {[ key in react-toastify.react-toastify/dist/utils/constant.KeyOfType ]: react-toastify.react-toastify/dist/types.TypeOptions} */
-  object TYPE {
+  object TYPE_ {
     
     @JSImport("react-toastify/dist/utils/constant", "TYPE")
     @js.native
@@ -166,4 +171,25 @@ object distUtilsConstantMod {
     inline def ENTRANCE_ANIMATION_END: d = "d".asInstanceOf[d]
   }
   type SyntheticEvent = d
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactToastify.reactToastifyStrings.info_
+    - typings.reactToastify.reactToastifyStrings.success_
+    - typings.reactToastify.reactToastifyStrings.warning_
+    - typings.reactToastify.reactToastifyStrings.error_
+    - typings.reactToastify.reactToastifyStrings.default_
+  */
+  trait Type extends StObject
+  object Type {
+    
+    inline def DEFAULT: default_ = "default".asInstanceOf[default_]
+    
+    inline def ERROR: error_ = "error".asInstanceOf[error_]
+    
+    inline def INFO: info_ = "info".asInstanceOf[info_]
+    
+    inline def SUCCESS: success_ = "success".asInstanceOf[success_]
+    
+    inline def WARNING: warning_ = "warning".asInstanceOf[warning_]
+  }
 }

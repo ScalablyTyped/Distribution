@@ -1,6 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.antdStrings.icon_
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
@@ -100,6 +101,7 @@ object libCollapseCollapsePanelMod extends Shortcut {
   
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.header
+    - typings.antd.antdStrings.icon_
     - typings.antd.antdStrings.disabled
   */
   trait CollapsibleType extends StObject
@@ -108,6 +110,8 @@ object libCollapseCollapsePanelMod extends Shortcut {
     inline def disabled: typings.antd.antdStrings.disabled = "disabled".asInstanceOf[typings.antd.antdStrings.disabled]
     
     inline def header: typings.antd.antdStrings.header = "header".asInstanceOf[typings.antd.antdStrings.header]
+    
+    inline def icon: icon_ = "icon".asInstanceOf[icon_]
   }
   
   type _To = FC[CollapsePanelProps]

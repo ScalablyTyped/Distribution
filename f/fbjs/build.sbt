@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "fbjs"
-version := "3.0-dt-20220915Z-fe3278"
+version := "3.0-dt-20220915Z-db98bb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20220723Z-2f87be",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20220723Z-2e55e0",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "parse5" % "7.1.1-c1050b",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-337987")

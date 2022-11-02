@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__util-buffer-from"
-version := "3.188.0-83c454"
+version := "3.201.0-7e231d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

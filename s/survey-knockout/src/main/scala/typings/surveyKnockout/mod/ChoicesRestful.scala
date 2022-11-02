@@ -70,7 +70,7 @@ open class ChoicesRestful () extends Base {
   /* protected */ def parseResponse(response: Any): Any = js.native
   
   /*
-    * Path to the array of choices.
+    * Path to the array of choices. The following path separators are allowed: semicolon `;`, comma `,`.
     * 
     * Specify this property only if the array of choices is nested within the object returned by the service. For example, the service returns the following object:
     * 

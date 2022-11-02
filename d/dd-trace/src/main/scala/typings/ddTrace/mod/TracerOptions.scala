@@ -16,7 +16,6 @@ import typings.ddTrace.ddTraceStrings.sync
 import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
-import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,7 +129,7 @@ trait TracerOptions extends StObject {
     * and controls the ingestion rate limit between the agent and the backend.
     * Defaults to deferring the decision to the agent.
     */
-  var rateLimit: js.UndefOr[Number] = js.undefined
+  var rateLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to report the hostname of the service host. This is used when the agent is deployed on a different host and cannot determine the hostname automatically.
@@ -279,7 +278,7 @@ object TracerOptions {
     
     inline def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
     
-    inline def setRateLimit(value: Number): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+    inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
     
     inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
     

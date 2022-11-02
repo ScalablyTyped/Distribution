@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents options passed to `ZipReader#getEntries()`, `ZipReader#getEntriesGenerator()`, and `ZipWriter#close()`.
+  * Represents options passed to {@link ZipReader#getEntries}, {@link ZipReader#getEntriesGenerator}, and {@link ZipWriter#close}.
   */
 trait EntryOnprogressOptions extends StObject {
   
@@ -21,7 +21,7 @@ trait EntryOnprogressOptions extends StObject {
     js.Function3[
       /* progress */ Double, 
       /* total */ Double, 
-      /* entry */ Entry, 
+      /* entry */ EntryMetaData, 
       js.UndefOr[js.Promise[Unit]]
     ]
   ] = js.undefined
@@ -36,7 +36,7 @@ object EntryOnprogressOptions {
   extension [Self <: EntryOnprogressOptions](x: Self) {
     
     inline def setOnprogress(
-      value: (/* progress */ Double, /* total */ Double, /* entry */ Entry) => js.UndefOr[js.Promise[Unit]]
+      value: (/* progress */ Double, /* total */ Double, /* entry */ EntryMetaData) => js.UndefOr[js.Promise[Unit]]
     ): Self = StObject.set(x, "onprogress", js.Any.fromFunction3(value))
     
     inline def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)

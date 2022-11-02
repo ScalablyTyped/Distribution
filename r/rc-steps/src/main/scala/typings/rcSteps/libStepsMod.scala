@@ -7,6 +7,7 @@ import typings.rcSteps.anon.Index
 import typings.rcSteps.libInterfaceMod.Icons
 import typings.rcSteps.libInterfaceMod.Status
 import typings.rcSteps.libStepMod.StepProps
+import typings.rcSteps.rcStepsStrings.`inline`
 import typings.rcSteps.rcStepsStrings.horizontal
 import typings.rcSteps.rcStepsStrings.navigation
 import typings.rcSteps.rcStepsStrings.small
@@ -68,6 +69,8 @@ object libStepsMod {
     
     var initial: js.UndefOr[Double] = js.undefined
     
+    var itemRender: js.UndefOr[js.Function2[/* item */ StepProps, /* stepItem */ ReactNode, ReactNode]] = js.undefined
+    
     var items: js.UndefOr[js.Array[StepProps]] = js.undefined
     
     var labelPlacement: js.UndefOr[horizontal | vertical] = js.undefined
@@ -86,7 +89,7 @@ object libStepsMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[typings.rcSteps.rcStepsStrings.default | navigation] = js.undefined
+    var `type`: js.UndefOr[typings.rcSteps.rcStepsStrings.default | navigation | `inline`] = js.undefined
   }
   object StepsProps {
     
@@ -124,6 +127,10 @@ object libStepsMod {
       inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
       inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+      
+      inline def setItemRender(value: (/* item */ StepProps, /* stepItem */ ReactNode) => ReactNode): Self = StObject.set(x, "itemRender", js.Any.fromFunction2(value))
+      
+      inline def setItemRenderUndefined: Self = StObject.set(x, "itemRender", js.undefined)
       
       inline def setItems(value: js.Array[StepProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -165,7 +172,7 @@ object libStepsMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: typings.rcSteps.rcStepsStrings.default | navigation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.rcSteps.rcStepsStrings.default | navigation | `inline`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

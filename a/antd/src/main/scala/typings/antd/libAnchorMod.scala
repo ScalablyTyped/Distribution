@@ -1,44 +1,32 @@
 package typings.antd
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.TypeofAnchorLink
-import typings.antd.libAnchorAnchorLinkMod.default
-import typings.antd.libAnchorAnchorMod.Anchor
+import typings.antd.libAnchorAnchorLinkMod.AnchorLinkProps
 import typings.antd.libAnchorAnchorMod.AnchorProps
-import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.RefAttributes
+import typings.react.mod.FC
+import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object libAnchorMod {
+object libAnchorMod extends Shortcut {
   
-  object default extends Shortcut {
-    
-    @JSImport("antd/lib/anchor", JSImport.Default)
-    @js.native
-    val ^ : AnchorInterface = js.native
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("antd/lib/anchor", "default.Link")
-    @js.native
-    open class Link ()
-      extends typings.antd.libAnchorAnchorLinkMod.default
-    
-    type _To = AnchorInterface
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: AnchorInterface = ^
-  }
+  @JSImport("antd/lib/anchor", JSImport.Default)
+  @js.native
+  val default: AnchorInterface = js.native
   
   @js.native
   trait AnchorInterface
     extends StObject
-       with ForwardRefExoticComponent[AnchorProps & RefAttributes[Anchor]] {
+       with FunctionComponent[AnchorProps] {
     
-    var Link: Instantiable0[default] & TypeofAnchorLink = js.native
+    var Link: FC[AnchorLinkProps] = js.native
   }
   
-  type InternalAnchorType = ForwardRefExoticComponent[AnchorProps & RefAttributes[Anchor]]
+  type InternalAnchorType = FC[AnchorProps]
+  
+  type _To = AnchorInterface
+  
+  /* This means you don't have to write `default`, but can instead just say `libAnchorMod.foo` */
+  override def _to: AnchorInterface = default
 }

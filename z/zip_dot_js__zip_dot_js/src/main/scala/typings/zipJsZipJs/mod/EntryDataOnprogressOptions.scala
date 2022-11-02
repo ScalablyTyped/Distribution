@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents options passed to `Entry#getData`, `ZipWriter.add()` and `ZipDirectory.export*()`.
+  * Represents options passed to {@link Entry#getData}, {@link ZipWriter.add} and `{@link ZipDirectory}.export*`.
   */
 trait EntryDataOnprogressOptions extends StObject {
   

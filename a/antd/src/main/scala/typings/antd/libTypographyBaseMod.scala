@@ -24,7 +24,11 @@ object libTypographyBaseMod extends Shortcut {
   
   @JSImport("antd/lib/typography/Base", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[InternalBlockProps & RefAttributes[Any]] = js.native
+  val default: ForwardRefExoticComponent[
+    (BlockProps[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+    ]) & RefAttributes[HTMLElement]
+  ] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.secondary
@@ -44,9 +48,9 @@ object libTypographyBaseMod extends Shortcut {
     inline def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
   }
   
-  trait BlockProps
+  trait BlockProps[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */]
     extends StObject
-       with TypographyProps {
+       with TypographyProps[C] {
     
     var code: js.UndefOr[Boolean] = js.undefined
     
@@ -68,20 +72,18 @@ object libTypographyBaseMod extends Shortcut {
     
     var strong: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.undefined
-    
     var `type`: js.UndefOr[BaseType] = js.undefined
     
     var underline: js.UndefOr[Boolean] = js.undefined
   }
   object BlockProps {
     
-    inline def apply(): BlockProps = {
+    inline def apply[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](): BlockProps[C] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BlockProps]
+      __obj.asInstanceOf[BlockProps[C]]
     }
     
-    extension [Self <: BlockProps](x: Self) {
+    extension [Self <: BlockProps[?], C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any */](x: Self & BlockProps[C]) {
       
       inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -122,10 +124,6 @@ object libTypographyBaseMod extends Shortcut {
       inline def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
       inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
-      
-      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-      
-      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setType(value: BaseType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -202,6 +200,8 @@ object libTypographyBaseMod extends Shortcut {
     
     var onStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    var text: js.UndefOr[String] = js.undefined
+    
     var tooltip: js.UndefOr[Boolean | ReactNode] = js.undefined
     
     var triggerType: js.UndefOr[js.Array[icon_ | text_]] = js.undefined
@@ -250,6 +250,10 @@ object libTypographyBaseMod extends Shortcut {
       inline def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
       inline def setTooltip(value: Boolean | ReactNode): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
@@ -318,27 +322,16 @@ object libTypographyBaseMod extends Shortcut {
     }
   }
   
-  trait InternalBlockProps
-    extends StObject
-       with BlockProps {
-    
-    var component: String
-  }
-  object InternalBlockProps {
-    
-    inline def apply(component: String): InternalBlockProps = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-      __obj.asInstanceOf[InternalBlockProps]
-    }
-    
-    extension [Self <: InternalBlockProps](x: Self) {
-      
-      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type _To = ForwardRefExoticComponent[InternalBlockProps & RefAttributes[Any]]
+  type _To = ForwardRefExoticComponent[
+    (BlockProps[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+    ]) & RefAttributes[HTMLElement]
+  ]
   
   /* This means you don't have to write `default`, but can instead just say `libTypographyBaseMod.foo` */
-  override def _to: ForwardRefExoticComponent[InternalBlockProps & RefAttributes[Any]] = default
+  override def _to: ForwardRefExoticComponent[
+    (BlockProps[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+    ]) & RefAttributes[HTMLElement]
+  ] = default
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class BlobReader protected () extends Reader[Blob] {
   /**
-    * Creates the `Reader` instance
+    * Creates the {@link Reader} instance
     * 
     * @param value The data to read.
     */

@@ -15,9 +15,9 @@ trait ZipEntry extends StObject {
   var children: js.Array[ZipEntry]
   
   /**
-    * The underlying `Entry` instance.
+    * The underlying {@link EntryMetaData} instance.
     */
-  var data: js.UndefOr[Entry] = js.undefined
+  var data: js.UndefOr[EntryMetaData] = js.undefined
   
   /**
     * Returns the full filename of the entry
@@ -35,9 +35,9 @@ trait ZipEntry extends StObject {
   var id: Double
   
   /**
-    * Tests if a `ZipDirectoryEntry` instance is an ancestor of the entry
+    * Tests if a {@link ZipDirectoryEntry} instance is an ancestor of the entry
     * 
-    * @param ancestor The `ZipDirectoryEntry` instance.
+    * @param ancestor The {@link ZipDirectoryEntry} instance.
     */
   def isDescendantOf(ancestor: ZipDirectoryEntry): Boolean
   
@@ -77,7 +77,7 @@ object ZipEntry {
     
     inline def setChildrenVarargs(value: ZipEntry*): Self = StObject.set(x, "children", js.Array(value*))
     
-    inline def setData(value: Entry): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: EntryMetaData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

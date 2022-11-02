@@ -1,26 +1,26 @@
 organization := "org.scalablytyped"
 name := "node-red"
-version := "1.2-dt-20220329Z-ae64d5"
+version := "1.2-dt-20220329Z-be2756"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20220818Z-b6e31c",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20211202Z-d7d941",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-faf4dd",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-ed8fc0",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20211202Z-534f18",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
   "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-9d6f35",
   "org.scalablytyped" %%% "jsonata" % "1.8.6-575176",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
-  "org.scalablytyped" %%% "node-red__editor-api" % "1.1-dt-20211202Z-8f7bab",
-  "org.scalablytyped" %%% "node-red__editor-client" % "1.1-dt-20220914Z-7c5c80",
-  "org.scalablytyped" %%% "node-red__registry" % "1.2-dt-20220912Z-f7e2f4",
-  "org.scalablytyped" %%% "node-red__runtime" % "1.2-dt-20211202Z-56855f",
-  "org.scalablytyped" %%% "node-red__util" % "1.2-dt-20220624Z-0380ef",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20220912Z-5547e4",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
+  "org.scalablytyped" %%% "node-red__editor-api" % "1.1-dt-20211202Z-4312ef",
+  "org.scalablytyped" %%% "node-red__editor-client" % "1.1-dt-20220914Z-ffd1a0",
+  "org.scalablytyped" %%% "node-red__registry" % "1.2-dt-20220912Z-214964",
+  "org.scalablytyped" %%% "node-red__runtime" % "1.2-dt-20211202Z-88ddb9",
+  "org.scalablytyped" %%% "node-red__util" % "1.2-dt-20220624Z-c56c73",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20220912Z-7dc09b",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-f95ba3",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-3b575f",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-cfd9ff",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

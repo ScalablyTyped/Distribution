@@ -16,7 +16,7 @@ trait PathElevationRequest extends StObject {
   /**
     * The path along which to collect elevation values.
     */
-  var path: js.UndefOr[(js.Array[LatLng | LatLngLiteral]) | Null] = js.undefined
+  var path: js.UndefOr[Null | (js.Array[LatLng | LatLngLiteral])] = js.undefined
   
   /**
     * Required. The number of equidistant points along the given path for which

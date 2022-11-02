@@ -12,6 +12,7 @@ import typings.invityApi.mod.OnlineStatus
 import typings.invityApi.mod.PaymentFrequency
 import typings.invityApi.mod.SavingsAMLStatus
 import typings.invityApi.mod.SavingsKYCStatus
+import typings.invityApi.mod.SavingsPaymentMethod
 import typings.invityApi.mod.SavingsSetupStatus
 import typings.invityApi.mod.SavingsStatus
 import typings.invityApi.mod.SavingsTradeItemStatus
@@ -139,6 +140,7 @@ object invityApiStrings {
   @js.native
   sealed trait Completed
     extends StObject
+       with SavingsKYCStatus
        with SavingsTradeItemStatus
   inline def Completed: Completed = "Completed".asInstanceOf[Completed]
   
@@ -420,6 +422,12 @@ object invityApiStrings {
   inline def Refunded_ : Refunded_ = "Refunded".asInstanceOf[Refunded_]
   
   @js.native
+  sealed trait ResidencePermit
+    extends StObject
+       with SavingsTradeUserKYCStartDocumentType
+  inline def ResidencePermit: ResidencePermit = "ResidencePermit".asInstanceOf[ResidencePermit]
+  
+  @js.native
   sealed trait ReturnUrlRequired extends StObject
   inline def ReturnUrlRequired: ReturnUrlRequired = "ReturnUrlRequired".asInstanceOf[ReturnUrlRequired]
   
@@ -577,6 +585,12 @@ object invityApiStrings {
   inline def _self: _self = "_self".asInstanceOf[_self]
   
   @js.native
+  sealed trait ach
+    extends StObject
+       with SavingsPaymentMethod
+  inline def ach: ach = "ach".asInstanceOf[ach]
+  
+  @js.native
   sealed trait alternativeCurrency
     extends StObject
        with BuyTradeTag
@@ -605,6 +619,7 @@ object invityApiStrings {
   sealed trait bankTransfer
     extends StObject
        with BuyCryptoPaymentMethod
+       with SavingsPaymentMethod
        with SellCryptoPaymentMethod
   inline def bankTransfer: bankTransfer = "bankTransfer".asInstanceOf[bankTransfer]
   

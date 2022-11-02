@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/md5-js" : "3.200.0"
+      "@aws-sdk/md5-js" : "3.201.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/md5-js" : "3.200.0"
+      "@aws-sdk/md5-js" : "3.201.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__auth"
-version := "0.20.11-1aef21"
+version := "0.20.11-a10706"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,10 +11,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__component" % "0.5.21-2f926f",
   "org.scalablytyped" %%% "firebase__logger" % "0.3.4-2113bf",
   "org.scalablytyped" %%% "firebase__util" % "1.7.3-d8aaca",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221018Z-7d374b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221101Z-107dc9",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-cacb98")
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-370f29")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

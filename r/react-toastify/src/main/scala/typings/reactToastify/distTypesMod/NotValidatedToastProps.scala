@@ -49,9 +49,7 @@ trait NotValidatedToastProps extends StObject {
   
   var hideProgressBar: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[
-    Boolean | (js.Function1[/* props */ IconProps, ReactNode]) | ReactElement | String | Double | ReactNode
-  ] = js.undefined
+  var icon: js.UndefOr[ToastIcon] = js.undefined
   
   var iconOut: js.UndefOr[ReactNode] = js.undefined
   
@@ -178,9 +176,7 @@ object NotValidatedToastProps {
     
     inline def setHideProgressBarUndefined: Self = StObject.set(x, "hideProgressBar", js.undefined)
     
-    inline def setIcon(
-      value: Boolean | (js.Function1[/* props */ IconProps, ReactNode]) | ReactElement | String | Double | ReactNode
-    ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ToastIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconFunction1(value: /* props */ IconProps => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
     

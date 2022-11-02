@@ -362,7 +362,12 @@ trait DBInstance extends StObject {
   var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the storage type associated with DB instance.
+    * Specifies the storage throughput for the DB instance.
+    */
+  var StorageThroughput: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * Specifies the storage type associated with the DB instance.
     */
   var StorageType: js.UndefOr[String] = js.undefined
   
@@ -697,6 +702,10 @@ object DBInstance {
     inline def setStorageEncrypted(value: Boolean): Self = StObject.set(x, "StorageEncrypted", value.asInstanceOf[js.Any])
     
     inline def setStorageEncryptedUndefined: Self = StObject.set(x, "StorageEncrypted", js.undefined)
+    
+    inline def setStorageThroughput(value: IntegerOptional): Self = StObject.set(x, "StorageThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setStorageThroughputUndefined: Self = StObject.set(x, "StorageThroughput", js.undefined)
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

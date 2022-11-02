@@ -5,12 +5,10 @@ import typings.antd.libTypographyLinkMod.LinkProps
 import typings.antd.libTypographyParagraphMod.ParagraphProps
 import typings.antd.libTypographyTextMod.TextProps
 import typings.antd.libTypographyTitleMod.TitleProps
+import typings.antd.libTypographyTypographyMod.InternalTypographyProps
 import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.FunctionComponent
 import typings.react.mod.RefAttributes
-import typings.std.HTMLDivElement
 import typings.std.HTMLElement
-import typings.std.HTMLHeadingElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,15 +23,19 @@ object libTypographyMod extends Shortcut {
   @js.native
   trait TypographyProps
     extends StObject
-       with FunctionComponent[typings.antd.libTypographyTypographyMod.TypographyProps] {
+       with ForwardRefExoticComponent[
+          (InternalTypographyProps[
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.antd.antdStrings.a, typings.antd.antdStrings.abbr, typings.antd.antdStrings.address */ Any
+          ]) & RefAttributes[HTMLElement]
+        ] {
     
     var Link: ForwardRefExoticComponent[LinkProps & RefAttributes[HTMLElement]] = js.native
     
-    var Paragraph: ForwardRefExoticComponent[ParagraphProps & RefAttributes[HTMLDivElement]] = js.native
+    var Paragraph: ForwardRefExoticComponent[ParagraphProps & RefAttributes[HTMLElement]] = js.native
     
     var Text: ForwardRefExoticComponent[TextProps & RefAttributes[HTMLSpanElement]] = js.native
     
-    var Title: ForwardRefExoticComponent[TitleProps & RefAttributes[HTMLHeadingElement]] = js.native
+    var Title: ForwardRefExoticComponent[TitleProps & RefAttributes[HTMLElement]] = js.native
   }
   
   type _To = TypographyProps

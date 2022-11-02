@@ -60,7 +60,7 @@ object distCoreEventManagerMod {
     var emitQueue: Map[Event, js.Array[TimeoutId]] = js.native
     
     @JSName("emit")
-    def emit_0(event: `0`, content: ReactNode, options: NotValidatedToastProps): Unit = js.native
+    def emit_0[TData](event: `0`, content: ReactNode | ToastContent[TData], options: NotValidatedToastProps): Unit = js.native
     @JSName("emit")
     def emit_1(event: `1`): Unit = js.native
     @JSName("emit")

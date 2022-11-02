@@ -20,10 +20,34 @@ open class FoldersApi () extends StObject {
   def moveEnvelopes(accountId: String, folderId: String): js.Promise[FoldersResponse] = js.native
   def moveEnvelopes(accountId: String, folderId: String, optsOrCallback: Any): js.Promise[FoldersResponse] = js.native
   def moveEnvelopes(accountId: String, folderId: String, optsOrCallback: Any, callback: js.Function0[Unit]): js.Promise[FoldersResponse] = js.native
+  def moveEnvelopes(
+    accountId: String,
+    folderId: String,
+    optsOrCallback: Any,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[FoldersResponse] = js.native
   def moveEnvelopes(accountId: String, folderId: String, optsOrCallback: Unit, callback: js.Function0[Unit]): js.Promise[FoldersResponse] = js.native
+  def moveEnvelopes(
+    accountId: String,
+    folderId: String,
+    optsOrCallback: Unit,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[FoldersResponse] = js.native
   
   def search(accountId: String, searchFolderId: String): js.Promise[FolderItemResponse] = js.native
   def search(accountId: String, searchFolderId: String, optsOrCallback: Any): js.Promise[FolderItemResponse] = js.native
   def search(accountId: String, searchFolderId: String, optsOrCallback: Any, callback: js.Function0[Unit]): js.Promise[FolderItemResponse] = js.native
+  def search(
+    accountId: String,
+    searchFolderId: String,
+    optsOrCallback: Any,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[FolderItemResponse] = js.native
   def search(accountId: String, searchFolderId: String, optsOrCallback: Unit, callback: js.Function0[Unit]): js.Promise[FolderItemResponse] = js.native
+  def search(
+    accountId: String,
+    searchFolderId: String,
+    optsOrCallback: Unit,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[FolderItemResponse] = js.native
 }

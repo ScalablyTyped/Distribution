@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase-admin"
-version := "11.2.0-605f84"
+version := "11.2.0-e788e7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,21 +9,21 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__database-types" % "0.9.17-db3818",
   "org.scalablytyped" %%% "firebase__logger" % "0.3.4-2113bf",
   "org.scalablytyped" %%% "firebase__util" % "1.7.3-d8aaca",
-  "org.scalablytyped" %%% "gaxios" % "5.0.2-3bcd2f",
-  "org.scalablytyped" %%% "google-auth-library" % "8.6.0-44d246",
-  "org.scalablytyped" %%% "google-cloud__firestore" % "6.4.0-43daca",
-  "org.scalablytyped" %%% "google-cloud__storage" % "6.6.0-63fced",
-  "org.scalablytyped" %%% "google-gax" % "3.5.2-d83407",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-47c97e",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-98b742",
-  "org.scalablytyped" %%% "gtoken" % "6.1.2-0ea18f",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-17d348",
+  "org.scalablytyped" %%% "gaxios" % "5.0.2-39d462",
+  "org.scalablytyped" %%% "google-auth-library" % "8.6.0-565255",
+  "org.scalablytyped" %%% "google-cloud__firestore" % "6.4.0-f4c58b",
+  "org.scalablytyped" %%% "google-cloud__storage" % "6.6.0-b47b70",
+  "org.scalablytyped" %%% "google-gax" % "3.5.2-2c408c",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-913a7a",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-cc4119",
+  "org.scalablytyped" %%% "gtoken" % "6.1.2-7c92aa",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-23291f",
   "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
-  "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-bdc80f",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
+  "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-dcab71",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-fe2613",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "teeny-request" % "8.0.2-0e55da")
+  "org.scalablytyped" %%% "teeny-request" % "8.0.2-440767")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -14,7 +14,7 @@ trait DirectionsWaypoint extends StObject {
     * Waypoint location. Can be an address string, a <code>LatLng</code>, or a
     * <code>Place</code>. Optional.
     */
-  var location: js.UndefOr[String | LatLng | Place] = js.undefined
+  var location: js.UndefOr[String | LatLng | LatLngLiteral | Place] = js.undefined
   
   /**
     * If <code>true</code>, indicates that this waypoint is a stop between the
@@ -36,7 +36,7 @@ object DirectionsWaypoint {
   
   extension [Self <: DirectionsWaypoint](x: Self) {
     
-    inline def setLocation(value: String | LatLng | Place): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String | LatLng | LatLngLiteral | Place): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     

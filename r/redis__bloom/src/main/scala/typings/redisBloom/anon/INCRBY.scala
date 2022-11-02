@@ -14,7 +14,7 @@ trait INCRBY extends StObject {
   
   var INITBYPROB: TypeofimportedINITBYPROB
   
-  var MERGE: TypeofimportedMERGE
+  var MERGE: FIRSTKEYINDEXTransformArgumentsTransformReply
   
   var QUERY: FIRSTKEYINDEXISREADONLYTransformArguments
   
@@ -26,7 +26,7 @@ trait INCRBY extends StObject {
   
   var initByProb: TypeofimportedINITBYPROB
   
-  var merge: TypeofimportedMERGE
+  var merge: FIRSTKEYINDEXTransformArgumentsTransformReply
   
   var query: FIRSTKEYINDEXISREADONLYTransformArguments
 }
@@ -37,13 +37,13 @@ object INCRBY {
     INFO: TransformArguments,
     INITBYDIM: TypeofimportedINITBYDIM,
     INITBYPROB: TypeofimportedINITBYPROB,
-    MERGE: TypeofimportedMERGE,
+    MERGE: FIRSTKEYINDEXTransformArgumentsTransformReply,
     QUERY: FIRSTKEYINDEXISREADONLYTransformArguments,
     incrBy: TransformArgumentsTransformReply,
     info: TransformArguments,
     initByDim: TypeofimportedINITBYDIM,
     initByProb: TypeofimportedINITBYPROB,
-    merge: TypeofimportedMERGE,
+    merge: FIRSTKEYINDEXTransformArgumentsTransformReply,
     query: FIRSTKEYINDEXISREADONLYTransformArguments
   ): INCRBY = {
     val __obj = js.Dynamic.literal(INCRBY = INCRBY.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], INITBYDIM = INITBYDIM.asInstanceOf[js.Any], INITBYPROB = INITBYPROB.asInstanceOf[js.Any], MERGE = MERGE.asInstanceOf[js.Any], QUERY = QUERY.asInstanceOf[js.Any], incrBy = incrBy.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], initByDim = initByDim.asInstanceOf[js.Any], initByProb = initByProb.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
@@ -60,7 +60,7 @@ object INCRBY {
     
     inline def setINITBYPROB(value: TypeofimportedINITBYPROB): Self = StObject.set(x, "INITBYPROB", value.asInstanceOf[js.Any])
     
-    inline def setMERGE(value: TypeofimportedMERGE): Self = StObject.set(x, "MERGE", value.asInstanceOf[js.Any])
+    inline def setMERGE(value: FIRSTKEYINDEXTransformArgumentsTransformReply): Self = StObject.set(x, "MERGE", value.asInstanceOf[js.Any])
     
     inline def setQUERY(value: FIRSTKEYINDEXISREADONLYTransformArguments): Self = StObject.set(x, "QUERY", value.asInstanceOf[js.Any])
   }

@@ -5,6 +5,7 @@ import typings.redis.anon.ADD_
 import typings.redis.anon.AGGREGATE
 import typings.redis.anon.ARRAPPEND
 import typings.redis.anon.Add
+import typings.redis.anon.BYRANK
 import typings.redis.anon.CONFIGGET
 import typings.redis.anon.COUNT
 import typings.redis.anon.INCRBY
@@ -15,6 +16,7 @@ import typings.redisClient.distLibCommandsMod.RedisModules
 import typings.redisClient.distLibCommandsMod.RedisScripts
 import typings.redisClient.distLibLuaScriptMod.RedisScriptConfig
 import typings.redisClient.distLibLuaScriptMod.SHA1
+import typings.redisGraph.distGraphMod.GraphClientType
 import typings.redisTimeSeries.anon.TypeofADD
 import typings.redisTimeSeries.anon.TypeofALTER
 import typings.redisTimeSeries.anon.TypeofCREATE
@@ -378,6 +380,13 @@ object mod {
     /* "WITHHASH" */ val HASH: typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith.HASH & String = js.native
   }
   
+  @JSImport("redis", "Graph")
+  @js.native
+  open class Graph protected ()
+    extends typings.redisGraph.mod.Graph {
+    def this(client: GraphClientType, name: String) = this()
+  }
+  
   @JSImport("redis", "ReconnectStrategyError")
   @js.native
   open class ReconnectStrategyError protected ()
@@ -545,6 +554,8 @@ object mod {
     
     var json: ARRAPPEND
     
+    var tDigest: BYRANK
+    
     var topK: COUNT
     
     var ts: ADD_
@@ -558,10 +569,11 @@ object mod {
       ft: AGGREGATE,
       graph: CONFIGGET,
       json: ARRAPPEND,
+      tDigest: BYRANK,
       topK: COUNT,
       ts: ADD_
     ): RedisDefaultModules = {
-      val __obj = js.Dynamic.literal(bf = bf.asInstanceOf[js.Any], cf = cf.asInstanceOf[js.Any], cms = cms.asInstanceOf[js.Any], ft = ft.asInstanceOf[js.Any], graph = graph.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], topK = topK.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bf = bf.asInstanceOf[js.Any], cf = cf.asInstanceOf[js.Any], cms = cms.asInstanceOf[js.Any], ft = ft.asInstanceOf[js.Any], graph = graph.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], tDigest = tDigest.asInstanceOf[js.Any], topK = topK.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedisDefaultModules]
     }
     
@@ -578,6 +590,8 @@ object mod {
       inline def setGraph(value: CONFIGGET): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
       inline def setJson(value: ARRAPPEND): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      
+      inline def setTDigest(value: BYRANK): Self = StObject.set(x, "tDigest", value.asInstanceOf[js.Any])
       
       inline def setTopK(value: COUNT): Self = StObject.set(x, "topK", value.asInstanceOf[js.Any])
       

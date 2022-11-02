@@ -208,6 +208,7 @@ object primereactStrings {
        with DockPositionType
        with GalleriaPositionType
        with SidebarPositionType
+       with TimelineAlignType
        with ToastPositionType
        with TooltipPositionType
        with TreeTablePaginatorPositionType
@@ -1074,6 +1075,7 @@ object primereactStrings {
        with DockPositionType
        with GalleriaPositionType
        with SidebarPositionType
+       with TimelineAlignType
        with ToastPositionType
        with TooltipPositionType
        with TreeTablePaginatorPositionType

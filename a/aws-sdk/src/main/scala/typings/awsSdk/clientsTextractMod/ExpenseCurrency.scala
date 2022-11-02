@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExpenseCurrency extends StObject {
   
   /**
-    * Currency code for detected currency.
+    * Currency code for detected currency. the current supported codes are:   USD   EUR   GBP   CAD   INR   JPY   CHF   AUD   CNY   BZR   SEK   HKD  
     */
   var Code: js.UndefOr[String] = js.undefined
   

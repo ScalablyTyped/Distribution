@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "baseui"
-version := "12.2.0-9e0d6c"
+version := "12.2.0-23bd77"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "axe-core" % "4.5.0-960a33",
+  "org.scalablytyped" %%% "axe-core" % "4.5.1-85d40c",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.1-833116",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",

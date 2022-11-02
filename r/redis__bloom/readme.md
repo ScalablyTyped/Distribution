@@ -1,7 +1,7 @@
 
 # Scala.js typings for redis__bloom
 
-Typings are for version 1.0.2
+Typings are for version 1.1.0
 
 ## Library description:
 This package provides support for the [RedisBloom](https://redisbloom.io) module, which adds additional probabilistic data structures to Redis.  It extends the [Node Redis client](https://github.com/redis/node-redis) to include functions for each of the R

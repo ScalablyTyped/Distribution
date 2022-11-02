@@ -51,6 +51,7 @@ import typings.rcPicker.esInterfaceMod.CustomFormat
 import typings.rcPicker.esInterfaceMod.DisabledTimes
 import typings.rcPicker.esInterfaceMod.OnPanelChange
 import typings.rcPicker.esInterfaceMod.PanelMode
+import typings.rcPicker.esInterfaceMod.PresetDate
 import typings.rcPicker.esPanelsDatePanelDateBodyMod.DateRender
 import typings.rcPicker.esPanelsMonthPanelMonthBodyMod.MonthCellRender
 import typings.rcPicker.esPickerMod.PickerRefConfig
@@ -288,6 +289,8 @@ trait OmitPickerTimePropsMoment extends StObject {
   var popupStyle: js.UndefOr[CSSProperties] = js.undefined
   
   var prefixCls: js.UndefOr[String] = js.undefined
+  
+  var presets: js.UndefOr[js.Array[PresetDate[Moment]]] = js.undefined
   
   var prevIcon: js.UndefOr[ReactNode] = js.undefined
   
@@ -749,6 +752,12 @@ object OmitPickerTimePropsMoment {
     inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+    
+    inline def setPresets(value: js.Array[PresetDate[Moment]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+    
+    inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+    
+    inline def setPresetsVarargs(value: PresetDate[Moment]*): Self = StObject.set(x, "presets", js.Array(value*))
     
     inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
     

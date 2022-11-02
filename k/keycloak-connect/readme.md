@@ -1,7 +1,7 @@
 
 # Scala.js typings for keycloak-connect
 
-Typings are for version 19.0.3
+Typings are for version 20.0.0
 
 ## Library description:
 Keycloak Connect Middleware

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-email-editor"
-version := "1.5-dt-20221020Z-ed5a57"
+version := "1.5-dt-20221101Z-9de7b7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

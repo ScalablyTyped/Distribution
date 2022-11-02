@@ -1,7 +1,7 @@
 
 # Scala.js typings for framebus
 
-Typings are for version 5.1.2
+Typings are for version 5.2.0
 
 ## Library description:
 Framebus allows you to easily send messages across frames (and iframes) with a simple bus.

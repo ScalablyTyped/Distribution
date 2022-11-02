@@ -10,15 +10,15 @@ open class QuestionTextModel protected () extends QuestionTextBase {
   def this(name: String) = this()
   
   /*
-    * Text auto complete
+    * A value passed on to the [`autocomplete`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) attribute of the underlying `<input>` element.
     */
-  def autoComplete: String = js.native
-  def autoComplete_=(`val`: String): Unit = js.native
+  def autocomplete: String = js.native
+  def autocomplete_=(`val`: String): Unit = js.native
   
   /* protected */ def correctValueType(newValue: Any): Any = js.native
   
   /*
-    * The list of recommended options available to choose.
+    * An array of predefined options from which users can select. This property configures an HTML [`<datalist>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) element and associates it with the underlying `input` element.
     */
   def dataList: Any = js.native
   
@@ -31,7 +31,7 @@ open class QuestionTextModel protected () extends QuestionTextBase {
   def inputStyle: Any = js.native
   
   /*
-    * Use this property to change the default input type.
+    * A value passed on to the [`type`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) attribute of the underlying `<input>` element.
     */
   def inputType: String = js.native
   def inputType_=(`val`: String): Unit = js.native
@@ -39,7 +39,7 @@ open class QuestionTextModel protected () extends QuestionTextBase {
   def inputWidth: String = js.native
   
   /*
-    * Readonly property that returns true if the current inputType allows to set min and max properties
+    * Returns `true` if the specified `inputType` supports the `min` and `max` properties.
     */
   def isMinMaxType: Boolean = js.native
   
@@ -54,18 +54,18 @@ open class QuestionTextModel protected () extends QuestionTextBase {
   def locMinErrorText: LocalizableString = js.native
   
   /*
-    * The maximum value
+    * A value passed on to the [`max`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/max) attribute of the underlying `<input>` element.
     */
   def max: String = js.native
   
   /*
-    * The text that shows when value is greater than man property.
+    * An error message to display when the question value exceeds the maximum accepted value.
     */
   def maxErrorText: String = js.native
   def maxErrorText_=(`val`: String): Unit = js.native
   
   /*
-    * The maximum value that you can setup as expression, for example today(1) = tomorrow;
+    * The maximum value specified as an expression. For example, `"maxValueExpression": "today(1)"` sets the maximum value to tomorrow.
     */
   def maxValueExpression: String = js.native
   def maxValueExpression_=(`val`: String): Unit = js.native
@@ -75,18 +75,18 @@ open class QuestionTextModel protected () extends QuestionTextBase {
   def max_=(`val`: String): Unit = js.native
   
   /*
-    * The minimum value
+    * A value passed on to the [`min`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/min) attribute of the underlying `<input>` element.
     */
   def min: String = js.native
   
   /*
-    * The text that shows when value is less than min property.
+    * An error message to display when the question value is less than the minimum accepted value.
     */
   def minErrorText: String = js.native
   def minErrorText_=(`val`: String): Unit = js.native
   
   /*
-    * The minimum value that you can setup as expression, for example today(-1) = yesterday;
+    * The minimum value specified as an expression. For example, `"minValueExpression": "today(-1)"` sets the minimum value to yesterday.
     */
   def minValueExpression: String = js.native
   def minValueExpression_=(`val`: String): Unit = js.native
@@ -104,13 +104,13 @@ open class QuestionTextModel protected () extends QuestionTextBase {
   def renderedStep: String = js.native
   
   /*
-    * The text input size
+    * A value passed on to the [`size`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/size) attribute of the underlying `<input>` element.
     */
   def size: Double = js.native
   def size_=(`val`: Double): Unit = js.native
   
   /*
-    * The step value
+    * A value passed on to the [`step`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/step) attribute of the underlying `<input>` element.
     */
   def step: String = js.native
   def step_=(`val`: String): Unit = js.native

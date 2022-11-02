@@ -1,28 +1,38 @@
 package typings.antd
 
-import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.Cancel
 import typings.antd.libConfigProviderContextMod.ConfigConsumerProps
 import typings.react.mod.Component
-import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.Context
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactFragment
 import typings.react.mod.ReactNode
-import typings.react.mod.RefAttributes
 import typings.std.AnimationEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object libUtilWaveMod extends Shortcut {
+object libUtilWaveMod {
   
   @JSImport("antd/lib/_util/wave", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[WaveProps & RefAttributes[InternalWave]] = js.native
+  open class default () extends Wave
+  object default {
+    
+    @JSImport("antd/lib/_util/wave", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("antd/lib/_util/wave", "default.contextType")
+    @js.native
+    def contextType: Context[ConfigConsumerProps] = js.native
+    inline def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
-  trait InternalWave
+  trait Wave
     extends Component[WaveProps, js.Object, Any] {
     
     /* private */ var animationStart: Any = js.native
@@ -34,15 +44,15 @@ object libUtilWaveMod extends Shortcut {
     /* private */ var clickWaveTimeoutId: Any = js.native
     
     @JSName("componentDidMount")
-    def componentDidMount_MInternalWave(): Unit = js.native
+    def componentDidMount_MWave(): Unit = js.native
     
     @JSName("componentWillUnmount")
-    def componentWillUnmount_MInternalWave(): Unit = js.native
+    def componentWillUnmount_MWave(): Unit = js.native
     
     /* private */ var containerRef: Any = js.native
     
     @JSName("context")
-    var context_InternalWave: ConfigConsumerProps = js.native
+    var context_Wave: ConfigConsumerProps = js.native
     
     /* private */ var csp: Any = js.native
     
@@ -95,9 +105,4 @@ object libUtilWaveMod extends Shortcut {
       inline def setInsertExtraNodeUndefined: Self = StObject.set(x, "insertExtraNode", js.undefined)
     }
   }
-  
-  type _To = ForwardRefExoticComponent[WaveProps & RefAttributes[InternalWave]]
-  
-  /* This means you don't have to write `default`, but can instead just say `libUtilWaveMod.foo` */
-  override def _to: ForwardRefExoticComponent[WaveProps & RefAttributes[InternalWave]] = default
 }

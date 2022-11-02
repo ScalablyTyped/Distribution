@@ -78,11 +78,12 @@ trait CommonOptions extends StObject {
     * Used to display a custom icon. Set it to `false` to prevent
     * the icons from being displayed
     */
-  var icon: js.UndefOr[
-    Boolean | (js.Function1[/* props */ IconProps, ReactNode]) | ReactElement | String | Double | ReactNode
-  ] = js.undefined
+  var icon: js.UndefOr[ToastIcon] = js.undefined
   
   /**
+    * @deprecated
+    * ⚠️ Will be removed in the next major release. You can pass a react component with you handler instead.
+    *
     * Fired when clicking inside toaster
     */
   var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
@@ -194,9 +195,7 @@ object CommonOptions {
     
     inline def setHideProgressBarUndefined: Self = StObject.set(x, "hideProgressBar", js.undefined)
     
-    inline def setIcon(
-      value: Boolean | (js.Function1[/* props */ IconProps, ReactNode]) | ReactElement | String | Double | ReactNode
-    ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ToastIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconFunction1(value: /* props */ IconProps => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
     

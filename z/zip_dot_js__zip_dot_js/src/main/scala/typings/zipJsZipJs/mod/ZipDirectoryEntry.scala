@@ -20,7 +20,7 @@ open class ZipDirectoryEntry ()
     * 
     * @param name The relative filename of the entry.
     * @param blob The `Blob` instance. 
-    * @returns A `ZipFileEntry` instance.
+    * @returns A {@link ZipFileEntry} instance.
     */
   def addBlob(name: String, blob: Blob): ZipFileEntry[Blob, Blob] = js.native
   
@@ -29,7 +29,7 @@ open class ZipDirectoryEntry ()
     * 
     * @param name The relative filename of the entry.
     * @param dataURI The Data URI `string` encoded in Base64.
-    * @returns A `ZipFileEntry` instance.
+    * @returns A {@link ZipFileEntry} instance.
     */
   def addData64URI(name: String, dataURI: String): ZipFileEntry[String, String] = js.native
   
@@ -37,7 +37,7 @@ open class ZipDirectoryEntry ()
     * Adds a directory
     * 
     * @param name The relative filename of the directory
-    * @returns A `ZipDirectoryEntry` instance.
+    * @returns A {@link ZipDirectoryEntry} instance.
     */
   def addDirectory(name: String): ZipDirectoryEntry = js.native
   
@@ -45,7 +45,7 @@ open class ZipDirectoryEntry ()
     * Adds an entry with content provided via a `FileSystemEntry` instance
     * 
     * @param fileSystemEntry The `FileSystemEntry` instance. 
-    * @returns A promise resolving to a `ZipFileEntry` or a `ZipDirectoryEntry` instance.
+    * @returns A promise resolving to a {@link ZipFileEntry} or a {@link ZipDirectoryEntry} instance.
     */
   def addFileSystemEntry(fileSystemEntry: FileSystemEntry): js.Promise[ZipEntry] = js.native
   
@@ -55,7 +55,7 @@ open class ZipDirectoryEntry ()
     * @param name The relative filename of the entry.
     * @param url The URL.
     * @param options The options. 
-    * @returns A `ZipFileEntry` instance.
+    * @returns A {@link ZipFileEntry} instance.
     */
   def addHttpContent(name: String, url: String): ZipFileEntry[String, Unit] = js.native
   def addHttpContent(name: String, url: String, options: HttpOptions): ZipFileEntry[String, Unit] = js.native
@@ -65,7 +65,7 @@ open class ZipDirectoryEntry ()
     * 
     * @param name The relative filename of the entry.
     * @param readable The `ReadableStream` instance. 
-    * @returns A `ZipFileEntry` instance.
+    * @returns A {@link ZipFileEntry} instance.
     */
   def addReadable(name: String, readable: ReadableStream[Any]): ZipFileEntry[ReadableStream[Any], Unit] = js.native
   
@@ -74,7 +74,7 @@ open class ZipDirectoryEntry ()
     * 
     * @param name The relative filename of the entry.
     * @param text The text. 
-    * @returns A `ZipFileEntry` instance.
+    * @returns A {@link ZipFileEntry} instance.
     */
   def addText(name: String, text: String): ZipFileEntry[String, String] = js.native
   
@@ -83,7 +83,7 @@ open class ZipDirectoryEntry ()
     * 
     * @param name The relative filename of the entry.
     * @param array The `Uint8Array` instance. 
-    * @returns A `ZipFileEntry` instance.
+    * @returns A {@link ZipFileEntry} instance.
     */
   def addUint8Array(name: String, array: js.typedarray.Uint8Array): ZipFileEntry[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = js.native
   
@@ -94,7 +94,7 @@ open class ZipDirectoryEntry ()
   var children: js.Array[ZipEntry] = js.native
   
   /**
-    * `true` for `ZipDirectoryEntry` instances.
+    * `true` for  {@link ZipDirectoryEntry} instances.
     */
   var directory: `true` = js.native
   
@@ -138,10 +138,10 @@ open class ZipDirectoryEntry ()
   def exportWritable(writable: WritableStream[Any], options: ZipDirectoryEntryExportOptions): js.Promise[WritableStream[Any]] = js.native
   
   /**
-    * Gets a `ZipEntry` child instance from its relative filename
+    * Gets a {@link ZipEntry} child instance from its relative filename
     * 
     * @param name The relative filename.
-    * @returns A `ZipFileEntry` or a `ZipDirectoryEntry` instance (use the `directory` property to differentiate entries).
+    * @returns A {@link ZipFileEntry} or a {@link ZipDirectoryEntry} instance (use the {@link ZipFileEntry#directory} and {@link ZipDirectoryEntry#directory} properties to differentiate entries).
     */
   def getChildByName(name: String): js.UndefOr[ZipEntry] = js.native
   
@@ -209,9 +209,9 @@ open class ZipDirectoryEntry ()
   def importUint8Array(array: js.typedarray.Uint8Array, options: ZipReaderConstructorOptions): js.Promise[Unit] = js.native
   
   /**
-    * Tests if a `ZipDirectoryEntry` instance is an ancestor of the entry
+    * Tests if a {@link ZipDirectoryEntry} instance is an ancestor of the entry
     * 
-    * @param ancestor The `ZipDirectoryEntry` instance.
+    * @param ancestor The {@link ZipDirectoryEntry} instance.
     */
   /* CompleteClass */
   override def isDescendantOf(ancestor: ZipDirectoryEntry): Boolean = js.native

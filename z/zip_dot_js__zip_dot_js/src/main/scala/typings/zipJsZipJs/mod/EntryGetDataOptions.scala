@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the options passed to `Entry#getData()` and `ZipFileEntry.get*()`.
+  * Represents the options passed to {@link Entry#getData} and `{@link ZipFileEntry}.get*`.
   */
 trait EntryGetDataOptions
   extends StObject

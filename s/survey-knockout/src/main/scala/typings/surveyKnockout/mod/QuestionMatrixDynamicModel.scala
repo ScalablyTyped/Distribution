@@ -15,14 +15,21 @@ open class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdow
   def addRow(): Unit = js.native
   
   /*
-    * By default the 'Add Row' button is shown on bottom if columnLayout is horizontal and on top if columnLayout is vertical.
-    * You may set it to "top", "bottom" or "topBottom" (to show on top and bottom).
+    * Specifies the location of the Add Row button.
+    * 
+    * Possible values:
+    * 
+    * - `"top"` - Displays the Add Row button at the top of the matrix.
+    * - `"bottom"` - Displays the Add Row button at the bottom of the matrix.
+    * - `"topBottom"` - Displays the Add Row button at the top and bottom of the matrix.
+    * 
+    * Default value: `"top"` if `columnLayout` is `vertical`; `"bottom"` if `columnLayout` is `"horizontal"` or the matrix is in compact mode.
     */
   def addRowLocation: String = js.native
   def addRowLocation_=(`val`: String): Unit = js.native
   
   /*
-    * Use this property to change the default value of add row button text.
+    * A caption for the Add Row button.
     */
   def addRowText: String = js.native
   def addRowText_=(`val`: String): Unit = js.native
@@ -33,19 +40,25 @@ open class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdow
   def addRowUI(): Unit = js.native
   
   /*
-    * Set this property to false to disable ability to add new rows. "Add new Row" button becomes invsible in UI
+    * Specifies whether users are allowed to add new rows.
+    * 
+    * Default value: `true`
     */
   def allowAddRows: Boolean = js.native
   def allowAddRows_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Set this property to false to disable ability to remove rows. "Remove" row buttons become invsible in UI
+    * Specifies whether users are allowed to delete rows.
+    * 
+    * Default value: `true`
     */
   def allowRemoveRows: Boolean = js.native
   def allowRemoveRows_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Set this property to true, to allow rows drag and drop.
+    * Specifies whether users can drag and drop matrix rows to reorder them.
+    * 
+    * Default value: `false`
     */
   def allowRowsDragAndDrop: Boolean = js.native
   def allowRowsDragAndDrop_=(`val`: Boolean): Unit = js.native
@@ -53,12 +66,12 @@ open class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdow
   def canRemoveRowsCallback(allow: Boolean): Boolean = js.native
   
   /*
-    * Set it to true, to show a confirmation dialog on removing a row
+    * Specifies whether to display a confirmation dialog when a respondent wants to delete a row.
     */
   def confirmDelete: Boolean = js.native
   
   /*
-    * Use this property to change the default text showing in the confirmation delete dialog on removing a row.
+    * A message displayed in a confirmation dialog that appears when a respondent wants to delete a row.
     */
   def confirmDeleteText: String = js.native
   def confirmDeleteText_=(`val`: String): Unit = js.native
@@ -74,14 +87,15 @@ open class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdow
   def defaultRowValue_=(`val`: Any): Unit = js.native
   
   /*
-    * Set it to true to copy the value into new added row from the last row. If defaultRowValue is set and this property equals to true,
-    * then the value for new added row is merging.
+    * Specifies whether default values for a new row/column should be copied from the last row/column.
+    * 
+    * If you also specify `defaultValue`, it will be merged with the copied values.
     */
   def defaultValueFromLastRow: Boolean = js.native
   def defaultValueFromLastRow_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Set this property to true to show detail panel immediately on adding a new row.
+    * Specifies whether to expand the detail section immediately when a respondent adds a new row.
     */
   def detailPanelShowOnAdding: Boolean = js.native
   def detailPanelShowOnAdding_=(`val`: Boolean): Unit = js.native
@@ -91,7 +105,7 @@ open class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdow
   var draggedRow: MatrixDropdownRowModelBase = js.native
   
   /*
-    * Use this property to change the default value of remove row button text.
+    * A message displayed when the matrix does not contain any rows. Applies only if `hideColumnsIfEmpty` is enabled.
     */
   def emptyRowsText: String = js.native
   def emptyRowsText_=(`val`: String): Unit = js.native
@@ -102,7 +116,9 @@ open class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdow
   def getRemoveRowButtonCss(): String = js.native
   
   /*
-    * Set this property to true to hide matrix columns when there is no any row.
+    * Specifies whether to hide columns when the matrix does not contain any rows. If you enable this property, the matrix displays the `emptyRowsText` message and the Add Row button.
+    * 
+    * Default value: `false`
     */
   def hideColumnsIfEmpty: Boolean = js.native
   def hideColumnsIfEmpty_=(`val`: Boolean): Unit = js.native
@@ -114,7 +130,7 @@ open class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdow
   def isRequireConfirmOnRowDelete(index: Double): Boolean = js.native
   
   /*
-    * Set it to a column name and the library shows duplication error, if there are same values in different rows in the column.
+    * Specifies a key column. Set this property to a column name, and the question will display `keyDuplicationError` if a user tries to enter a duplicate value in this column.
     */
   def keyName: String = js.native
   def keyName_=(`val`: String): Unit = js.native
@@ -128,13 +144,17 @@ open class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdow
   def locRemoveRowText: LocalizableString = js.native
   
   /*
-    * The maximum row count. A user could not add a row if the rowCount equals to maxRowCount
+    * A maximum number of rows in the matrix. Users cannot add new rows if `rowCount` equals `maxRowCount`.
+    * 
+    * Default value: 1000 (inherited from [`settings.matrixMaximumRowCount`](https://surveyjs.io/form-library/documentation/settings#matrixMaximumRowCount))
     */
   def maxRowCount: Double = js.native
   def maxRowCount_=(`val`: Double): Unit = js.native
   
   /*
-    * The minimum row count. A user could not delete a row if the rowCount equals to minRowCount
+    * A minimum number of rows in the matrix. Users cannot delete rows if `rowCount` equals `minRowCount`.
+    * 
+    * Default value: 0
     */
   def minRowCount: Double = js.native
   def minRowCount_=(`val`: Double): Unit = js.native

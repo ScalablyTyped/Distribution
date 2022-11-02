@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@zip.js/zip.js", "BlobWriter")
 @js.native
 /**
-  * Creates the `BlobWriter` instance
+  * Creates the {@link BlobWriter} instance
   * 
   * @param mimeString The MIME type of the content.
   */

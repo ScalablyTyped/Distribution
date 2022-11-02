@@ -122,6 +122,11 @@ trait DBInstanceAutomatedBackup extends StObject {
   var Status: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies the storage throughput for the automated backup.
+    */
+  var StorageThroughput: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
     * Specifies the storage type associated with the automated backup.
     */
   var StorageType: js.UndefOr[String] = js.undefined
@@ -137,7 +142,7 @@ trait DBInstanceAutomatedBackup extends StObject {
   var Timezone: js.UndefOr[String] = js.undefined
   
   /**
-    * Provides the VPC ID associated with the DB instance
+    * Provides the VPC ID associated with the DB instance.
     */
   var VpcId: js.UndefOr[String] = js.undefined
 }
@@ -243,6 +248,10 @@ object DBInstanceAutomatedBackup {
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setStorageThroughput(value: IntegerOptional): Self = StObject.set(x, "StorageThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setStorageThroughputUndefined: Self = StObject.set(x, "StorageThroughput", js.undefined)
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

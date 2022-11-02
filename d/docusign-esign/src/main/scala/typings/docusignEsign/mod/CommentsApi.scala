@@ -12,10 +12,34 @@ open class CommentsApi () extends StObject {
   def createEnvelopeComments(accountId: String, envelopeId: String): js.Promise[CommentHistoryResult] = js.native
   def createEnvelopeComments(accountId: String, envelopeId: String, optsOrCallback: Any): js.Promise[CommentHistoryResult] = js.native
   def createEnvelopeComments(accountId: String, envelopeId: String, optsOrCallback: Any, callback: js.Function0[Unit]): js.Promise[CommentHistoryResult] = js.native
+  def createEnvelopeComments(
+    accountId: String,
+    envelopeId: String,
+    optsOrCallback: Any,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[CommentHistoryResult] = js.native
   def createEnvelopeComments(accountId: String, envelopeId: String, optsOrCallback: Unit, callback: js.Function0[Unit]): js.Promise[CommentHistoryResult] = js.native
+  def createEnvelopeComments(
+    accountId: String,
+    envelopeId: String,
+    optsOrCallback: Unit,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[CommentHistoryResult] = js.native
   
   def getCommentsTranscript(accountId: String, envelopeId: String): js.Promise[js.Object] = js.native
   def getCommentsTranscript(accountId: String, envelopeId: String, optsOrCallback: Any): js.Promise[js.Object] = js.native
   def getCommentsTranscript(accountId: String, envelopeId: String, optsOrCallback: Any, callback: js.Function0[Unit]): js.Promise[js.Object] = js.native
+  def getCommentsTranscript(
+    accountId: String,
+    envelopeId: String,
+    optsOrCallback: Any,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[js.Object] = js.native
   def getCommentsTranscript(accountId: String, envelopeId: String, optsOrCallback: Unit, callback: js.Function0[Unit]): js.Promise[js.Object] = js.native
+  def getCommentsTranscript(
+    accountId: String,
+    envelopeId: String,
+    optsOrCallback: Unit,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[js.Object] = js.native
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-input"
-version := "0.1.2-c110c4"
+version := "0.1.4-55b38f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

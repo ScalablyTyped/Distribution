@@ -233,6 +233,10 @@ object rcPickerStrings {
   inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
+  sealed trait presets extends StObject
+  inline def presets: presets = "presets".asInstanceOf[presets]
+  
+  @js.native
   sealed trait quarter
     extends StObject
        with PanelMode

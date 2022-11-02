@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@zip.js/zip.js", "Data64URIWriter")
 @js.native
 /**
-  * Creates the `Data64URIWriter` instance
+  * Creates the {@link Data64URIWriter} instance
   * 
   * @param mimeString The MIME type of the content.
   */

@@ -14,7 +14,7 @@ trait LocationElevationRequest extends StObject {
   /**
     * The discrete locations for which to retrieve elevations.
     */
-  var locations: js.UndefOr[(js.Array[LatLng | LatLngLiteral]) | Null] = js.undefined
+  var locations: js.UndefOr[Null | (js.Array[LatLng | LatLngLiteral])] = js.undefined
 }
 object LocationElevationRequest {
   

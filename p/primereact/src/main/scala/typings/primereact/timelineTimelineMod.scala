@@ -112,6 +112,8 @@ object timelineTimelineMod {
   /* Rewritten from type alias, can be one of: 
     - typings.primereact.primereactStrings.left
     - typings.primereact.primereactStrings.right
+    - typings.primereact.primereactStrings.top
+    - typings.primereact.primereactStrings.bottom
     - typings.primereact.primereactStrings.alternate
   */
   trait TimelineAlignType extends StObject
@@ -119,9 +121,13 @@ object timelineTimelineMod {
     
     inline def alternate: typings.primereact.primereactStrings.alternate = "alternate".asInstanceOf[typings.primereact.primereactStrings.alternate]
     
+    inline def bottom: typings.primereact.primereactStrings.bottom = "bottom".asInstanceOf[typings.primereact.primereactStrings.bottom]
+    
     inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
     
     inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
+    
+    inline def top: typings.primereact.primereactStrings.top = "top".asInstanceOf[typings.primereact.primereactStrings.top]
   }
   
   /* Rewritten from type alias, can be one of: 

@@ -20,13 +20,15 @@ open class QuestionMultipleTextModel protected () extends Question {
   def addElement_Unit(element: IElement, index: Double): Unit = js.native
   
   /*
-    * Add a new text item.
+    * Adds a new input item.
     */
   def addItem(name: String): MultipleTextItemModel = js.native
   def addItem(name: String, title: String): MultipleTextItemModel = js.native
   
   /*
-    * The number of columns. Items are rendred in one line if the value is 0.
+    * The number of columns used to arrange input items. Accepts the following values: 1, 2, 3, 4, 5.
+    * 
+    * Default value: 1
     */
   def colCount: Double = js.native
   
@@ -66,9 +68,6 @@ open class QuestionMultipleTextModel protected () extends Question {
   
   def getQuestionTitleLocation(): String = js.native
   
-  /*
-    * Returns the list of rendered rows.
-    */
   def getRows(): js.Array[Any] = js.native
   
   def getTextProcessor(): ITextProcessor = js.native
@@ -78,13 +77,13 @@ open class QuestionMultipleTextModel protected () extends Question {
   var isMultipleItemValueChanging: Boolean = js.native
   
   /*
-    * The default text input size.
+    * A value passed on to the [`size`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/size) attribute of the underlying `<input>` elements.
     */
   def itemSize: Double = js.native
   def itemSize_=(`val`: Double): Unit = js.native
   
   /*
-    * The list of input items.
+    * An array of `MultipleTextItemModel` objects that represent input items.
     */
   def items: Any = js.native
   def items_=(`val`: Any): Unit = js.native

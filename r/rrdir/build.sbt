@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "rrdir"
-version := "8.2-dt-20211202Z-cd9b8d"
+version := "8.2-dt-20211202Z-abc45c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "picomatch" % "2.3-dt-20211202Z-ac6288",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

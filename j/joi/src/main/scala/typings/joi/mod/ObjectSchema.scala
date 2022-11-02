@@ -16,7 +16,7 @@ trait ObjectSchema[TSchema]
     *
     * Optional settings must be the last argument.
     */
-  def and(peers: (String | HierarchySeparatorOptions)*): this.type = js.native
+  def and(peers: (String | DependencyOptions)*): this.type = js.native
   
   /**
     * Appends the allowed object keys. If schema is null, undefined, or {}, no changes will be applied.
@@ -76,21 +76,21 @@ trait ObjectSchema[TSchema]
     *
     * Optional settings must be the last argument.
     */
-  def nand(peers: (String | HierarchySeparatorOptions)*): this.type = js.native
+  def nand(peers: (String | DependencyOptions)*): this.type = js.native
   
   /**
     * Defines a relationship between keys where one of the peers is required (and more than one is allowed).
     *
     * Optional settings must be the last argument.
     */
-  def or(peers: (String | HierarchySeparatorOptions)*): this.type = js.native
+  def or(peers: (String | DependencyOptions)*): this.type = js.native
   
   /**
     * Defines an exclusive relationship between a set of keys where only one is allowed but none are required.
     *
     * Optional settings must be the last argument.
     */
-  def oxor(peers: (String | HierarchySeparatorOptions)*): this.type = js.native
+  def oxor(peers: (String | DependencyOptions)*): this.type = js.native
   
   /**
     * Specify validation rules for unknown keys matching a pattern.
@@ -137,22 +137,22 @@ trait ObjectSchema[TSchema]
     * Requires the presence of other keys whenever the specified key is present.
     */
   def `with`(key: String, peers: String): this.type = js.native
-  def `with`(key: String, peers: String, options: HierarchySeparatorOptions): this.type = js.native
+  def `with`(key: String, peers: String, options: DependencyOptions): this.type = js.native
   def `with`(key: String, peers: js.Array[String]): this.type = js.native
-  def `with`(key: String, peers: js.Array[String], options: HierarchySeparatorOptions): this.type = js.native
+  def `with`(key: String, peers: js.Array[String], options: DependencyOptions): this.type = js.native
   
   /**
     * Forbids the presence of other keys whenever the specified is present.
     */
   def without(key: String, peers: String): this.type = js.native
-  def without(key: String, peers: String, options: HierarchySeparatorOptions): this.type = js.native
+  def without(key: String, peers: String, options: DependencyOptions): this.type = js.native
   def without(key: String, peers: js.Array[String]): this.type = js.native
-  def without(key: String, peers: js.Array[String], options: HierarchySeparatorOptions): this.type = js.native
+  def without(key: String, peers: js.Array[String], options: DependencyOptions): this.type = js.native
   
   /**
     * Defines an exclusive relationship between a set of keys. one of them is required but not at the same time.
     *
     * Optional settings must be the last argument.
     */
-  def xor(peers: (String | HierarchySeparatorOptions)*): this.type = js.native
+  def xor(peers: (String | DependencyOptions)*): this.type = js.native
 }

@@ -23,6 +23,12 @@ object marker {
       * Adds the given listener function to the given event name.
       */
     def addListener(eventName: String, handler: js.Function): MapsEventListener
+    
+    /**
+      * See {@link google.maps.marker.AdvancedMarkerViewOptions.position}.
+      */
+    @JSName("position")
+    var position_AdvancedMarkerView: js.UndefOr[LatLng | Null | LatLngLiteral | LatLngAltitudeLiteral] = js.undefined
   }
   object AdvancedMarkerView {
     
@@ -34,6 +40,12 @@ object marker {
     extension [Self <: AdvancedMarkerView](x: Self) {
       
       inline def setAddListener(value: (String, js.Function) => MapsEventListener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      
+      inline def setPosition(value: LatLng | LatLngLiteral | LatLngAltitudeLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      
+      inline def setPositionNull: Self = StObject.set(x, "position", null)
+      
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   
@@ -97,7 +109,7 @@ object marker {
       * <code>AdvancedMarkerView</code> with altitude is only supported on vector
       * maps.
       */
-    var position: js.UndefOr[LatLng | Null | LatLngLiteral | LatLngAltitude | LatLngAltitudeLiteral] = js.undefined
+    var position: js.UndefOr[LatLng | Null | LatLngLiteral] = js.undefined
     
     /**
       * Rollover text. If provided, an accessibility text (e.g. for use with
@@ -159,7 +171,7 @@ object marker {
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      inline def setPosition(value: LatLng | LatLngLiteral | LatLngAltitude | LatLngAltitudeLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: LatLng | LatLngLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionNull: Self = StObject.set(x, "position", null)
       

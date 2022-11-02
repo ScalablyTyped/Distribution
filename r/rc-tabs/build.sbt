@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-tabs"
-version := "12.2.1-859442"
+version := "12.2.2-26d686"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

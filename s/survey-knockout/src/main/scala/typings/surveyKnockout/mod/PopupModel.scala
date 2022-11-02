@@ -49,19 +49,19 @@ open class PopupModel[T] protected () extends Base {
   
   var onHide: Any = js.native
   
-  var onShow: Any = js.native
+  var onRecalculatePosition: EventBase[Base] = js.native
   
-  var onTargetModified: EventBase[Base] = js.native
+  var onShow: Any = js.native
   
   var onVisibilityChanged: EventBase[PopupModel[Any]] = js.native
   
   var positionMode: Any = js.native
   
+  def recalculatePosition(isResetHeight: Boolean): Unit = js.native
+  
   var setWidthByTarget: Boolean = js.native
   
   var showPointer: Boolean = js.native
-  
-  def targetModified(): Unit = js.native
   
   var title: String = js.native
   

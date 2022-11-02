@@ -48,11 +48,31 @@ open class ApiClient () extends StObject {
     returnType: Any,
     callback: js.Function0[Unit]
   ): js.Promise[Any] = js.native
+  def callApi(
+    path: String,
+    httpMethod: String,
+    pathParams: js.Object,
+    queryParams: js.Object,
+    headerParams: js.Object,
+    formParams: js.Object,
+    bodyParam: js.Object,
+    authNames: js.Array[String],
+    contentTypes: js.Array[String],
+    accepts: js.Array[String],
+    returnType: Any,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[Any] = js.native
   
   def deserialize(response: js.Object, returnType: Any): Any = js.native
   
   def generateAccessToken(clientId: String, clientSecret: String, code: String): js.Promise[Any] = js.native
   def generateAccessToken(clientId: String, clientSecret: String, code: String, callback: js.Function0[Unit]): js.Promise[Any] = js.native
+  def generateAccessToken(
+    clientId: String,
+    clientSecret: String,
+    code: String,
+    callback: js.Function2[/* error */ Any, /* response */ Any, Unit]
+  ): js.Promise[Any] = js.native
   
   def getAuthorizationUri(
     clientId: String,
@@ -70,6 +90,7 @@ open class ApiClient () extends StObject {
   
   def getUserInfo(accessToken: String): js.Promise[Any] = js.native
   def getUserInfo(accessToken: String, callback: js.Function0[Unit]): js.Promise[Any] = js.native
+  def getUserInfo(accessToken: String, callback: js.Function2[/* error */ Any, /* response */ Any, Unit]): js.Promise[Any] = js.native
   
   def hasNoInvalidScopes(scopes: js.Array[String]): Boolean = js.native
   
@@ -91,6 +112,13 @@ open class ApiClient () extends StObject {
     expiresIn: Double,
     callback: js.Function0[Unit]
   ): js.Promise[Any] = js.native
+  def requestJWTApplicationToken(
+    clientId: String,
+    scopes: js.Array[String],
+    rsaPrivateKey: Buffer,
+    expiresIn: Double,
+    callback: js.Function2[/* error */ Any, /* response */ Any, Unit]
+  ): js.Promise[Any] = js.native
   
   def requestJWTUserToken(
     clientId: String,
@@ -106,6 +134,14 @@ open class ApiClient () extends StObject {
     rsaPrivateKey: Buffer,
     expiresIn: Double,
     callback: js.Function0[Unit]
+  ): js.Promise[Any] = js.native
+  def requestJWTUserToken(
+    clientId: String,
+    userId: String,
+    scopes: js.Array[String],
+    rsaPrivateKey: Buffer,
+    expiresIn: Double,
+    callback: js.Function2[/* error */ Any, /* response */ Any, Unit]
   ): js.Promise[Any] = js.native
   
   def setBasePath(basePath: String): Unit = js.native

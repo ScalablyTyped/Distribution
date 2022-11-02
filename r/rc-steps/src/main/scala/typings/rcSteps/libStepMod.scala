@@ -56,6 +56,8 @@ object libStepMod {
     
     var progressDot: js.UndefOr[ProgressDotRender | Boolean] = js.undefined
     
+    var render: js.UndefOr[js.Function1[/* stepItem */ ReactNode, ReactNode]] = js.undefined
+    
     var status: js.UndefOr[Status] = js.undefined
     
     var stepIcon: js.UndefOr[StepIconRender] = js.undefined
@@ -128,6 +130,10 @@ object libStepMod {
       inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Description) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
       
       inline def setProgressDotUndefined: Self = StObject.set(x, "progressDot", js.undefined)
+      
+      inline def setRender(value: /* stepItem */ ReactNode => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
       inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       

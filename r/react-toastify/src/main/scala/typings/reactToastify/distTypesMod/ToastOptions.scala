@@ -25,11 +25,17 @@ trait ToastOptions[Data]
   var isLoading: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * @deprecated
+    * ⚠️ Will be removed in the next major release. You can rely on `toast.onChange` instead.
+    *
     * Called when toast is unmounted.
     */
   var onClose: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.undefined
   
   /**
+    * @deprecated
+    * ⚠️ Will be removed in the next major release. You can rely on `toast.onChange` instead.
+    *
     * Called when toast is mounted.
     */
   var onOpen: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.undefined

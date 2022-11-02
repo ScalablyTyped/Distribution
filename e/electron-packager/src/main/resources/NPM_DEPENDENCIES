@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-packager" : "17.1.0"
+      "electron-packager" : "17.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-packager" : "17.1.0"
+      "electron-packager" : "17.1.1"
     }
   ],
   "compile-devDependencies" : [

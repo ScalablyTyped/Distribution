@@ -9,6 +9,7 @@ import typings.reactToastify.distUtilsConstantMod.Default
 import typings.reactToastify.distUtilsConstantMod.Direction
 import typings.reactToastify.distUtilsConstantMod.KeyOfPosition
 import typings.reactToastify.distUtilsConstantMod.KeyOfType
+import typings.reactToastify.distUtilsConstantMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,18 +131,21 @@ object reactToastifyStrings {
   @js.native
   sealed trait default_
     extends StObject
+       with Type
        with TypeOptions
   inline def default_ : default_ = "default".asInstanceOf[default_]
   
   @js.native
   sealed trait error_
     extends StObject
+       with Type
        with TypeOptions
   inline def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
   sealed trait info_
     extends StObject
+       with Type
        with TypeOptions
   inline def info_ : info_ = "info".asInstanceOf[info_]
   
@@ -160,6 +164,7 @@ object reactToastifyStrings {
   @js.native
   sealed trait success_
     extends StObject
+       with Type
        with TypeOptions
   inline def success_ : success_ = "success".asInstanceOf[success_]
   
@@ -190,6 +195,7 @@ object reactToastifyStrings {
   @js.native
   sealed trait warning_
     extends StObject
+       with Type
        with TypeOptions
   inline def warning_ : warning_ = "warning".asInstanceOf[warning_]
   

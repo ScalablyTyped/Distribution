@@ -19,7 +19,7 @@ trait ElevationResult extends StObject {
   /**
     * The location of this elevation result.
     */
-  var location: LatLng | Null
+  var location: Null | LatLng
   
   /**
     * The distance, in meters, between sample points from which the elevation

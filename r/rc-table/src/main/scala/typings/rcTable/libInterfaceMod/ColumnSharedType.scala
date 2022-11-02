@@ -25,6 +25,8 @@ trait ColumnSharedType[RecordType] extends StObject {
     ]
   ] = js.undefined
   
+  var rowScope: js.UndefOr[RowScopeType] = js.undefined
+  
   var title: js.UndefOr[ReactNode] = js.undefined
 }
 object ColumnSharedType {
@@ -61,6 +63,10 @@ object ColumnSharedType {
     ): Self = StObject.set(x, "onHeaderCell", js.Any.fromFunction2(value))
     
     inline def setOnHeaderCellUndefined: Self = StObject.set(x, "onHeaderCell", js.undefined)
+    
+    inline def setRowScope(value: RowScopeType): Self = StObject.set(x, "rowScope", value.asInstanceOf[js.Any])
+    
+    inline def setRowScopeUndefined: Self = StObject.set(x, "rowScope", js.undefined)
     
     inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,7 @@ trait RestoreDBInstanceFromS3Message extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The amount of Provisioned IOPS (input/output operations per second) to allocate initially for the DB instance. For information about valid Iops values, see Amazon RDS Provisioned IOPS Storage to Improve Performance in the Amazon RDS User Guide. 
+    * The amount of Provisioned IOPS (input/output operations per second) to allocate initially for the DB instance. For information about valid IOPS values, see Amazon RDS Provisioned IOPS storage in the Amazon RDS User Guide. 
     */
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -212,7 +212,12 @@ trait RestoreDBInstanceFromS3Message extends StObject {
   var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * Specifies the storage type to be associated with the DB instance. Valid values: standard | gp2 | io1  If you specify io1, you must also include a value for the Iops parameter. Default: io1 if the Iops parameter is specified; otherwise gp2 
+    * Specifies the storage throughput value for the DB instance. This setting doesn't apply to RDS Custom or Amazon Aurora.
+    */
+  var StorageThroughput: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * Specifies the storage type to be associated with the DB instance. Valid values: gp2 | gp3 | io1 | standard  If you specify io1 or gp3, you must also include a value for the Iops parameter. Default: io1 if the Iops parameter is specified; otherwise gp2 
     */
   var StorageType: js.UndefOr[String] = js.undefined
   
@@ -403,6 +408,10 @@ object RestoreDBInstanceFromS3Message {
     inline def setStorageEncrypted(value: BooleanOptional): Self = StObject.set(x, "StorageEncrypted", value.asInstanceOf[js.Any])
     
     inline def setStorageEncryptedUndefined: Self = StObject.set(x, "StorageEncrypted", js.undefined)
+    
+    inline def setStorageThroughput(value: IntegerOptional): Self = StObject.set(x, "StorageThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setStorageThroughputUndefined: Self = StObject.set(x, "StorageThroughput", js.undefined)
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

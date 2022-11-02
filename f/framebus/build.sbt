@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "framebus"
-version := "5.1.2-8caaa2"
+version := "5.2.0-2dacc3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

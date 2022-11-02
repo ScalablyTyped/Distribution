@@ -9,8 +9,10 @@ import typings.antd.antdStrings.horizontal
 import typings.antd.antdStrings.start
 import typings.antd.antdStrings.vertical
 import typings.antd.libConfigProviderSizeContextMod.SizeType
+import typings.antd.libSpaceCompactMod.SpaceCompactProps
 import typings.react.mod.Context
 import typings.react.mod.FC
+import typings.react.mod.FunctionComponent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
@@ -22,11 +24,19 @@ object libSpaceMod extends Shortcut {
   
   @JSImport("antd/lib/space", JSImport.Default)
   @js.native
-  val default: FC[SpaceProps] = js.native
+  val default: CompoundedComponent = js.native
   
   @JSImport("antd/lib/space", "SpaceContext")
   @js.native
   val SpaceContext: Context[HorizontalSize] = js.native
+  
+  @js.native
+  trait CompoundedComponent
+    extends StObject
+       with FunctionComponent[SpaceProps] {
+    
+    var Compact: FC[SpaceCompactProps] = js.native
+  }
   
   trait SpaceProps
     extends StObject
@@ -81,8 +91,8 @@ object libSpaceMod extends Shortcut {
   
   type SpaceSize = SizeType | Double
   
-  type _To = FC[SpaceProps]
+  type _To = CompoundedComponent
   
   /* This means you don't have to write `default`, but can instead just say `libSpaceMod.foo` */
-  override def _to: FC[SpaceProps] = default
+  override def _to: CompoundedComponent = default
 }

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "octokit__request"
-version := "6.2.2-3615bb"
+version := "6.2.2-3b4112"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-385072",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
-  "org.scalablytyped" %%% "node-fetch" % "3.2.10-2f020e",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
+  "org.scalablytyped" %%% "node-fetch" % "3.2.10-9bbd2c",
   "org.scalablytyped" %%% "octokit__openapi-types" % "14.0.0-2cc2d3",
   "org.scalablytyped" %%% "octokit__types" % "8.0.0-848637",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

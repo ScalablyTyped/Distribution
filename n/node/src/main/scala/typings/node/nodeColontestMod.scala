@@ -64,6 +64,54 @@ object nodeColontestMod {
   inline def default(options: TestOptions, fn: TestFn): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
+    * This function is used to create a hook running after running a suite.
+    * @param fn The hook function. If the hook uses callbacks, the callback function is passed as
+    *    the second argument. Default: A no-op function.
+    * @param options Configuration options for the hook.
+    * @since v18.8.0
+    */
+  inline def after(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("after")().asInstanceOf[Unit]
+  inline def after(fn: Unit, options: HookOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def after(fn: HookFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("after")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def after(fn: HookFn, options: HookOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * This function is used to create a hook running after each subtest of the current test.
+    * @param fn The hook function. If the hook uses callbacks, the callback function is passed as
+    *    the second argument. Default: A no-op function.
+    * @param options Configuration options for the hook.
+    * @since v18.8.0
+    */
+  inline def afterEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")().asInstanceOf[Unit]
+  inline def afterEach(fn: Unit, options: HookOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterEach(fn: HookFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterEach(fn: HookFn, options: HookOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * This function is used to create a hook running before running a suite.
+    * @param fn The hook function. If the hook uses callbacks, the callback function is passed as
+    *    the second argument. Default: A no-op function.
+    * @param options Configuration options for the hook.
+    * @since v18.8.0
+    */
+  inline def before(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("before")().asInstanceOf[Unit]
+  inline def before(fn: Unit, options: HookOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def before(fn: HookFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("before")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def before(fn: HookFn, options: HookOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("before")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * This function is used to create a hook running before each subtest of the current suite.
+    * @param fn The hook function. If the hook uses callbacks, the callback function is passed as
+    *    the second argument. Default: A no-op function.
+    * @param options Configuration options for the hook.
+    * @since v18.8.0
+    */
+  inline def beforeEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")().asInstanceOf[Unit]
+  inline def beforeEach(fn: Unit, options: HookOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeEach(fn: HookFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeEach(fn: HookFn, options: HookOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
     * @since v18.6.0
     * @param name The name of the suite, which is displayed when reporting suite results.
     *    Default: The `name` property of fn, or `'<anonymous>'` if `fn` does not have a name.
@@ -162,6 +210,49 @@ object nodeColontestMod {
   inline def test(options: Unit, fn: TestFn): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def test(options: TestOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def test(options: TestOptions, fn: TestFn): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  /**
+    * The hook function. If the hook uses callbacks, the callback function is passed as the
+    * second argument.
+    */
+  type HookFn = js.Function1[/* done */ js.Function1[/* result */ js.UndefOr[Any], Unit], Any]
+  
+  /**
+    * Configuration options for hooks.
+    * @since v18.8.0
+    */
+  trait HookOptions extends StObject {
+    
+    /**
+      * Allows aborting an in-progress hook.
+      */
+    var signal: js.UndefOr[AbortSignal] = js.undefined
+    
+    /**
+      * A number of milliseconds the hook will fail after. If unspecified, subtests inherit this
+      * value from their parent.
+      * @default Infinity
+      */
+    var timeout: js.UndefOr[Double] = js.undefined
+  }
+  object HookOptions {
+    
+    inline def apply(): HookOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HookOptions]
+    }
+    
+    extension [Self <: HookOptions](x: Self) {
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    }
+  }
   
   /**
     * The type of a function under test.

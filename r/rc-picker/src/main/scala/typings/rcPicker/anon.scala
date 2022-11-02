@@ -9,6 +9,7 @@ import typings.rcPicker.esInterfaceMod.RangeValue
 import typings.rcPicker.rcPickerStrings.time
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
+import typings.react.mod.ReactNode
 import typings.std.EventTarget
 import typings.std.HTMLInputElement
 import typings.std.Omit
@@ -371,7 +372,7 @@ object anon {
   
   trait Label extends StObject {
     
-    var label: String
+    var label: ReactNode
     
     def onClick(): Unit
     
@@ -381,14 +382,16 @@ object anon {
   }
   object Label {
     
-    inline def apply(label: String, onClick: () => Unit, onMouseEnter: () => Unit, onMouseLeave: () => Unit): Label = {
-      val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave))
+    inline def apply(onClick: () => Unit, onMouseEnter: () => Unit, onMouseLeave: () => Unit): Label = {
+      val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), onMouseEnter = js.Any.fromFunction0(onMouseEnter), onMouseLeave = js.Any.fromFunction0(onMouseLeave))
       __obj.asInstanceOf[Label]
     }
     
     extension [Self <: Label](x: Self) {
       
-      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       

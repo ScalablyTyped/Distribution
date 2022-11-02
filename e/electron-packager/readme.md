@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-packager
 
-Typings are for version 17.1.0
+Typings are for version 17.1.1
 
 ## Library description:
 Customize and package your Electron app with OS-specific bundles (.app, .exe, etc.) via JS or CLI

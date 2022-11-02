@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents options passed to the constructor of `HttpRangeReader` and `HttpReader`.
+  * Represents options passed to the constructor of {@link HttpRangeReader} and {@link HttpReader}.
   */
 trait HttpRangeOptions extends StObject {
   

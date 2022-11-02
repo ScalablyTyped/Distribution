@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "soundex-code" : "2.0.0"
+      "soundex-code" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "soundex-code" : "2.0.0"
+      "soundex-code" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

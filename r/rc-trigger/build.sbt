@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-trigger"
-version := "5.3.1-b6b286"
+version := "5.3.3-d86c9a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

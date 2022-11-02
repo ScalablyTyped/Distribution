@@ -18,7 +18,6 @@ trait FeatureMouseEvent
      with MapMouseEvent {
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * The <code>Feature</code>s at this mouse event.
     */
   var features: js.Array[Feature]

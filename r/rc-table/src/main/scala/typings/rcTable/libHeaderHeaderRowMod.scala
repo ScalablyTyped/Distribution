@@ -43,6 +43,8 @@ object libHeaderHeaderRowMod {
     var rowComponent: CustomizeComponent
     
     var stickyOffsets: StickyOffsets
+    
+    var tdCellComponent: CustomizeComponent
   }
   object RowProps {
     
@@ -53,9 +55,10 @@ object libHeaderHeaderRowMod {
       index: Double,
       onHeaderRow: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any],
       rowComponent: CustomizeComponent,
-      stickyOffsets: StickyOffsets
+      stickyOffsets: StickyOffsets,
+      tdCellComponent: CustomizeComponent
     ): RowProps[RecordType] = {
-      val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], cells = cells.asInstanceOf[js.Any], flattenColumns = flattenColumns.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], onHeaderRow = js.Any.fromFunction2(onHeaderRow), rowComponent = rowComponent.asInstanceOf[js.Any], stickyOffsets = stickyOffsets.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], cells = cells.asInstanceOf[js.Any], flattenColumns = flattenColumns.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], onHeaderRow = js.Any.fromFunction2(onHeaderRow), rowComponent = rowComponent.asInstanceOf[js.Any], stickyOffsets = stickyOffsets.asInstanceOf[js.Any], tdCellComponent = tdCellComponent.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowProps[RecordType]]
     }
     
@@ -80,6 +83,8 @@ object libHeaderHeaderRowMod {
       inline def setRowComponent(value: CustomizeComponent): Self = StObject.set(x, "rowComponent", value.asInstanceOf[js.Any])
       
       inline def setStickyOffsets(value: StickyOffsets): Self = StObject.set(x, "stickyOffsets", value.asInstanceOf[js.Any])
+      
+      inline def setTdCellComponent(value: CustomizeComponent): Self = StObject.set(x, "tdCellComponent", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the options passed to the constructor of `HttpReader`.
+  * Represents the options passed to the constructor of {@link HttpReader}.
   */
 trait HttpOptions
   extends StObject

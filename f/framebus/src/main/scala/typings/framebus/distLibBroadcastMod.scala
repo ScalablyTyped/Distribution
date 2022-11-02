@@ -11,5 +11,26 @@ object distLibBroadcastMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def broadcast(frame: Window, payload: String, origin: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(frame.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def broadcast(payload: String, options: BroadcastOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait BroadcastOptions extends StObject {
+    
+    var frame: Window
+    
+    var origin: String
+  }
+  object BroadcastOptions {
+    
+    inline def apply(frame: Window, origin: String): BroadcastOptions = {
+      val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BroadcastOptions]
+    }
+    
+    extension [Self <: BroadcastOptions](x: Self) {
+      
+      inline def setFrame(value: Window): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    }
+  }
 }

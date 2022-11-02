@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "table" : "6.8.0"
+      "table" : "6.8.1"
     }
   ],
   "test-dependencies" : [
     {
-      "table" : "6.8.0"
+      "table" : "6.8.1"
     }
   ],
   "compile-devDependencies" : [

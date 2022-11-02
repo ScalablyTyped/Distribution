@@ -12,6 +12,7 @@ import typings.redisClient.distLibCommandsMod.RedisModules
 import typings.redisClient.distLibCommandsMod.RedisScripts
 import typings.redisClient.distLibLuaScriptMod.RedisScriptConfig
 import typings.redisClient.distLibLuaScriptMod.SHA1
+import typings.redisGraph.distGraphMod.GraphClientType
 import typings.redisTimeSeries.anon.TypeofADD
 import typings.redisTimeSeries.anon.TypeofALTER
 import typings.redisTimeSeries.anon.TypeofCREATE
@@ -624,6 +625,13 @@ object mod {
       /* "WITHDIST" */ val DISTANCE: typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith.DISTANCE & String = js.native
       
       /* "WITHHASH" */ val HASH: typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith.HASH & String = js.native
+    }
+    
+    @JSImport("kue", "redisClientFactory.Graph")
+    @js.native
+    open class Graph protected ()
+      extends typings.redis.mod.Graph {
+      def this(client: GraphClientType, name: String) = this()
     }
     
     @JSImport("kue", "redisClientFactory.ReconnectStrategyError")

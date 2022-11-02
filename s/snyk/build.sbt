@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "snyk"
-version := "1.1008.0-67f877"
+version := "1.1008.0-831ab2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "chalk" % "5.1.2-70b91c",
   "org.scalablytyped" %%% "cli-spinners" % "2.7.0-475712",
-  "org.scalablytyped" %%% "needle" % "2.5-dt-20220201Z-b03830",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
-  "org.scalablytyped" %%% "ora" % "6.1.2-e8f45b",
+  "org.scalablytyped" %%% "needle" % "2.5-dt-20220201Z-770858",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
+  "org.scalablytyped" %%% "ora" % "6.1.2-ac9ed3",
   "org.scalablytyped" %%% "sarif" % "2.1-dt-20211202Z-6bdef8",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

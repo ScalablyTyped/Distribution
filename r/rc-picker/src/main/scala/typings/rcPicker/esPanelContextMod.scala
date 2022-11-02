@@ -9,8 +9,6 @@ import typings.rcPicker.rcPickerStrings.submit
 import typings.react.mod.Context
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MutableRefObject
-import typings.react.mod.Ref
-import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -72,8 +70,6 @@ object esPanelContextMod extends Shortcut {
     var open: js.UndefOr[Boolean] = js.undefined
     
     var operationRef: js.UndefOr[MutableRefObject[ContextOperationRefProps | Null]] = js.undefined
-    
-    var panelRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   }
   object PanelContextProps {
     
@@ -127,14 +123,6 @@ object esPanelContextMod extends Shortcut {
       inline def setOperationRef(value: MutableRefObject[ContextOperationRefProps | Null]): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
       
       inline def setOperationRefUndefined: Self = StObject.set(x, "operationRef", js.undefined)
-      
-      inline def setPanelRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "panelRef", value.asInstanceOf[js.Any])
-      
-      inline def setPanelRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "panelRef", js.Any.fromFunction1(value))
-      
-      inline def setPanelRefNull: Self = StObject.set(x, "panelRef", null)
-      
-      inline def setPanelRefUndefined: Self = StObject.set(x, "panelRef", js.undefined)
     }
   }
   

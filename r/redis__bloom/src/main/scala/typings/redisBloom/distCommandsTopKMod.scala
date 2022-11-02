@@ -1,9 +1,9 @@
 package typings.redisBloom
 
-import typings.redisBloom.anon.TypeofADDFIRSTKEYINDEX
+import typings.redisBloom.anon.TypeofADDTransformArguments
 import typings.redisBloom.anon.TypeofCOUNTFIRSTKEYINDEX
 import typings.redisBloom.anon.TypeofINCRBYFIRSTKEYINDEX
-import typings.redisBloom.anon.TypeofINFOTransformArguments
+import typings.redisBloom.anon.TypeofINFOTransformReply
 import typings.redisBloom.anon.TypeofLIST
 import typings.redisBloom.anon.TypeofLISTWITHCOUNT
 import typings.redisBloom.anon.TypeofQUERY
@@ -22,9 +22,9 @@ object distCommandsTopKMod {
     
     @JSImport("@redis/bloom/dist/commands/top-k", "default.ADD")
     @js.native
-    def ADD_ : TypeofADDFIRSTKEYINDEX = js.native
+    def ADD_ : TypeofADDTransformArguments = js.native
     
-    inline def ADD__=(x: TypeofADDFIRSTKEYINDEX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADD")(x.asInstanceOf[js.Any])
+    inline def ADD__=(x: TypeofADDTransformArguments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADD")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/bloom/dist/commands/top-k", "default.COUNT")
     @js.native
@@ -40,9 +40,9 @@ object distCommandsTopKMod {
     
     @JSImport("@redis/bloom/dist/commands/top-k", "default.INFO")
     @js.native
-    def INFO_ : TypeofINFOTransformArguments = js.native
+    def INFO_ : TypeofINFOTransformReply = js.native
     
-    inline def INFO__=(x: TypeofINFOTransformArguments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
+    inline def INFO__=(x: TypeofINFOTransformReply): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/bloom/dist/commands/top-k", "default.LIST")
     @js.native
@@ -69,8 +69,8 @@ object distCommandsTopKMod {
     
     @JSImport("@redis/bloom/dist/commands/top-k", "default.add")
     @js.native
-    def add: TypeofADDFIRSTKEYINDEX = js.native
-    inline def add_=(x: TypeofADDFIRSTKEYINDEX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
+    def add: TypeofADDTransformArguments = js.native
+    inline def add_=(x: TypeofADDTransformArguments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/bloom/dist/commands/top-k", "default.count")
     @js.native
@@ -84,8 +84,8 @@ object distCommandsTopKMod {
     
     @JSImport("@redis/bloom/dist/commands/top-k", "default.info")
     @js.native
-    def info: TypeofINFOTransformArguments = js.native
-    inline def info_=(x: TypeofINFOTransformArguments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
+    def info: TypeofINFOTransformReply = js.native
+    inline def info_=(x: TypeofINFOTransformReply): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/bloom/dist/commands/top-k", "default.list")
     @js.native

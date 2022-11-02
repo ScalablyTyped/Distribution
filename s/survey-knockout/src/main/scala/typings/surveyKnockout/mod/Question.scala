@@ -325,8 +325,8 @@ open class Question protected ()
     * 
     * Pass an object with the `includeEmpty` property set to `false` if you want to skip empty answers.
     */
-  def getPlainData(): Any = js.native
-  def getPlainData(options: Any): Any = js.native
+  def getPlainData(): IQuestionPlainData = js.native
+  def getPlainData(options: Any): IQuestionPlainData = js.native
   
   /* CompleteClass */
   override def getProcessedText(text: String): String = js.native
@@ -823,14 +823,22 @@ open class Question protected ()
   def updateValueWithDefaults_Unit(): Unit = js.native
   
   /*
-    * Specifies whether to use display names for question values interpolated in the title. To interpolate question values, use curly brackets (`{}`).
-    * 
-    * This property is useful when interpolated question values have both the `value` and `text` properties.
+    * Specifies whether to use display names for question values in placeholders.
     * 
     * Default value: `true`
+    * 
+    * This property applies to questions whose values are defined as objects with the `value` and `text` properties (for example, [choice items](https://surveyjs.io/form-library/documentation/questionradiogroupmodel#choices) in Radiogroup, Checkbox, and Dropdown questions).
+    * 
+    * You can use question values as placeholders in the following places:
+    * 
+    * - Survey element titles and descriptions
+    * - The [`expression`](https://surveyjs.io/form-library/documentation/questionexpressionmodel#expression) property of the [Expression](https://surveyjs.io/form-library/documentation/questionexpressionmodel) question
+    * - The [`html`](https://surveyjs.io/form-library/documentation/questionhtmlmodel#html) property of the [HTML](https://surveyjs.io/form-library/documentation/questionhtmlmodel) question
+    * 
+    * To use a question value as a placeholder, specify the question `name` in curly brackets: `{questionName}`. Refer to the following help topic for more information: [Dynamic Texts - Question Values](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#question-values).
     */
-  def useDisplayValuesInTitle: Boolean = js.native
-  def useDisplayValuesInTitle_=(`val`: Boolean): Unit = js.native
+  def useDisplayValuesInDynamicTexts: Boolean = js.native
+  def useDisplayValuesInDynamicTexts_=(`val`: Boolean): Unit = js.native
   
   var validateValueCallback: Any = js.native
   

@@ -82,6 +82,11 @@ object defaultListCss {
   def itemsContainer: String = js.native
   inline def itemsContainer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("itemsContainer")(x.asInstanceOf[js.Any])
   
+  @JSImport("survey-knockout", "defaultListCss.loadingIndicator")
+  @js.native
+  def loadingIndicator: String = js.native
+  inline def loadingIndicator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadingIndicator")(x.asInstanceOf[js.Any])
+  
   @JSImport("survey-knockout", "defaultListCss.root")
   @js.native
   def root: String = js.native

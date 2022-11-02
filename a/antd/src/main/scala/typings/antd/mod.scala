@@ -1,8 +1,8 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.Children
-import typings.antd.anon.DataSource
 import typings.antd.anon.DisplayName
 import typings.antd.anon.DropdownClassName
 import typings.antd.anon.OmitPickerDatePropsMoment
@@ -18,7 +18,7 @@ import typings.antd.anon.SourceSelectedKeys
 import typings.antd.anon.WeakValidationMapConfigPr
 import typings.antd.anon.`1`
 import typings.antd.anon.`2`
-import typings.antd.antdStrings.`4Dot23Dot6`
+import typings.antd.antdStrings.`4Dot24Dot0`
 import typings.antd.libAffixMod.AffixProps
 import typings.antd.libAlertErrorBoundaryMod.default
 import typings.antd.libAlertMod.AlertInterface
@@ -71,7 +71,6 @@ import typings.antd.libSelectMod.SelectProps
 import typings.antd.libSkeletonSkeletonMod.SkeletonProps
 import typings.antd.libSliderMod.SliderRangeProps
 import typings.antd.libSliderMod.SliderSingleProps
-import typings.antd.libSpaceMod.SpaceProps
 import typings.antd.libSpinMod.SpinFCType
 import typings.antd.libStatisticStatisticMod.StatisticComponent
 import typings.antd.libStatisticStatisticMod.StatisticProps
@@ -143,23 +142,9 @@ object mod {
     override def _to: AlertInterface = ^
   }
   
-  object Anchor extends Shortcut {
-    
-    @JSImport("antd", "Anchor")
-    @js.native
-    val ^ : AnchorInterface = js.native
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("antd", "Anchor.Link")
-    @js.native
-    open class Link ()
-      extends typings.antd.libAnchorAnchorLinkMod.default
-    
-    type _To = AnchorInterface
-    
-    /* This means you don't have to write `^`, but can instead just say `Anchor.foo` */
-    override def _to: AnchorInterface = ^
-  }
+  @JSImport("antd", "Anchor")
+  @js.native
+  val Anchor: AnchorInterface = js.native
   
   @JSImport("antd", "AutoComplete")
   @js.native
@@ -591,7 +576,7 @@ object mod {
   
   @JSImport("antd", "Space")
   @js.native
-  val Space: FC[SpaceProps] = js.native
+  val Space: typings.antd.libSpaceMod.CompoundedComponent = js.native
   
   @JSImport("antd", "Spin")
   @js.native
@@ -664,17 +649,18 @@ object mod {
     }
     /* static member */
     /* was `typeof List` */
-    object List {
-      
-      @JSImport("antd", "Transfer.List")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("antd", "Transfer.List.defaultProps")
-      @js.native
-      def defaultProps: DataSource = js.native
-      inline def defaultProps_=(x: DataSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-    }
+    @JSImport("antd", "Transfer.List")
+    @js.native
+    def List: Instantiable1[
+        /* props */ TransferListProps[/* import warning: RewrittenClass.unapply cls was tparam RecordType */ Any], 
+        typings.antd.libTransferListMod.default[KeyWiseTransferItem]
+      ] = js.native
+    inline def List_=(
+      x: Instantiable1[
+          /* props */ TransferListProps[/* import warning: RewrittenClass.unapply cls was tparam RecordType */ Any], 
+          typings.antd.libTransferListMod.default[KeyWiseTransferItem]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("List")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("antd", "Transfer.Operation")
@@ -688,26 +674,6 @@ object mod {
     @js.native
     def Search: js.Function1[/* props */ TransferSearchProps, Element] = js.native
     inline def Search_=(x: js.Function1[/* props */ TransferSearchProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Search")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    object defaultProps {
-      
-      @JSImport("antd", "Transfer.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("antd", "Transfer.defaultProps.dataSource")
-      @js.native
-      def dataSource: js.Array[scala.Nothing] = js.native
-      inline def dataSource_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataSource")(x.asInstanceOf[js.Any])
-      
-      inline def listStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listStyle")().asInstanceOf[Unit]
-      
-      @JSImport("antd", "Transfer.defaultProps.showSearch")
-      @js.native
-      def showSearch: Boolean = js.native
-      inline def showSearch_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showSearch")(x.asInstanceOf[js.Any])
-    }
     
     /* static member */
     inline def getDerivedStateFromProps[T](param0: TransferProps[T]): SourceSelectedKeys | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(param0.asInstanceOf[js.Any]).asInstanceOf[SourceSelectedKeys | Null]
@@ -743,5 +709,5 @@ object mod {
   
   @JSImport("antd", "version")
   @js.native
-  val version: `4Dot23Dot6` = js.native
+  val version: `4Dot24Dot0` = js.native
 }

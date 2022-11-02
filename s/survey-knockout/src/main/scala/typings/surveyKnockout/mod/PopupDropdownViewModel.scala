@@ -19,4 +19,7 @@ open class PopupDropdownViewModel protected () extends PopupBaseViewModel {
   var scrollEventCallBack: Any = js.native
   
   var targetElement: Any = js.native
+  
+  def updatePosition(isResetHeight: Boolean): Unit = js.native
+  def updatePosition(isResetHeight: Boolean, isDelayUpdating: Boolean): Unit = js.native
 }

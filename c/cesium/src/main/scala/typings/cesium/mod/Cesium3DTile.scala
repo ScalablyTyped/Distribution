@@ -52,6 +52,11 @@ open class Cesium3DTile () extends StObject {
   val geometricError: Double = js.native
   
   /**
+    * Gets the I3S Node for the tile.
+    */
+  var i3sNode: String = js.native
+  
+  /**
     * This tile's parent or <code>undefined</code> if this tile is the root.
     * <p>
     * When a tile's content points to an external tileset JSON file, the external tileset's

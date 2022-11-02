@@ -1488,6 +1488,7 @@
 | [clsx](./c/clsx) | A tiny (228B) utility for constructing className s | classes, classname, classnames |
 | [clui](./c/clui) | A Node.js toolkit for drawing nice command line ta | command line interface, CLI, sparkline, progress bar, spinner, gauge, line, console, buffer |
 | [cluster-hub](./c/cluster-hub) | Interaction between cluster processes (messaging,  | cluster, messaging, communication, interaction |
+| [cluster-key-slot](./c/cluster-key-slot) | Generates CRC hashes for strings - for use by node | redis, hash, crc, slot, calc, javascript, node, node_redis, ioredis |
 | [clusterize_dot_js](./c/clusterize_dot_js) | Tiny vanilla JS plugin to display large data sets  | large, vanillajs, table, grid, list, scroll, cluster |
 | [clusterize_dot_js-paging](./c/clusterize_dot_js-paging) | Paging for clusterize.js | clusterize.js, clusterize, paging |
 | [cmd-shim](./c/cmd-shim) | Used in npm for command line application support | - |
@@ -1894,6 +1895,7 @@
 | [csv-parse](./c/csv-parse) | CSV parsing implementing the Node.js stream.Transf | csv, parse, parser, convert, tsv, stream |
 | [csv-parser](./c/csv-parser) | Streaming CSV parser that aims for maximum speed a | csv, parser, fast, json |
 | [csv-stringify](./c/csv-stringify) | CSV stringifier implementing the Node.js stream.Tr | csv, stringify, stringifier |
+| [csv-write-stream](./c/csv-write-stream) | A CSV encoder stream that produces properly escape | - |
 | [csv2json](./c/csv2json) | Stream and CLI to convert CSV to JSON | csv, json, csv2json, csvtojson, stream |
 | [csvrow](./c/csvrow) | parse a CSV row string | csv, parse |
 | [csvtojson](./c/csvtojson) | A tool concentrating on converting csv data to JSO | csv, csv parser, parse csv, csvtojson, json, csv to json, csv convert, tojson, convert csv to json, csv-json |
@@ -2959,6 +2961,7 @@
 | [fastbitset](./f/fastbitset) | Speed-optimized BitSet implementation for modern b | bitmap, bitset, performance |
 | [fastclick](./f/fastclick) | Polyfill to remove click delays on browsers with t | fastclick, mobile, touch, tap, click, delay |
 | [fastest-levenshtein](./f/fastest-levenshtein) | Fastest Levenshtein distance implementation in JS. | levenshtein, distance, fast, fastest, edit, string, similarity, algorithm, match, comparison, fuzzy, search, string, matching, similar, node, difference |
+| [fastestsmallesttextencode](./f/fastestsmallesttextencoderdecoder) | The fastest smallest Javascript polyfill for the e | utf-8, encoding, decoding, encoder, decoder, javascript, polyfill, js, utf8, compact, cross-browser, utf8-string, pure-javascript, nodejs, node-js, node-module, nodejs-modules, performance, tiny, small |
 | [fastify](./f/fastify) | Fast and low overhead web framework, for Node.js | web, framework, json, schema, open, api |
 | [fastify-error](./f/fastify-error) | fastify-error@1.2.0 has been deprecated. Please us | fastify, error, utility, plugin |
 | [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests | fastify, plugin, favicon |
@@ -4029,6 +4032,7 @@
 | [gaxios](./g/gaxios) | A simple common HTTP client specifically for Googl | google |
 | [gaze](./g/gaze) | A globbing fs.watch wrapper built from the best pa | watch, glob |
 | [gbk_dot_js](./g/gbk_dot_js) | 一个小而快的GBK库,支持浏览器 | gbk, gb2312, iconv |
+| [gc-profiler](./g/gc-profiler) | Allows you to profile when the garbage collector r | gc, garbage, profile, performance |
 | [gc-stats](./g/gc-stats) | Exposes node v8 garbage collection stats | - |
 | [gcp-metadata](./g/gcp-metadata) | Get the metadata from a Google Cloud Platform envi | google cloud platform, google cloud, google, app engine, compute engine, metadata server, metadata |
 | [gdal](./g/gdal) | Bindings to GDAL (Geospatial Data Abstraction Libr | gdal, libgdal, ogr, gis, geo, geos, geography, geospatial, raster, vector, gtiff, geojson, mapping |
@@ -4131,6 +4135,7 @@
 | [git-revision-webpack-plug](./g/git-revision-webpack-plugin) | - | - |
 | [git-root-dir](./g/git-root-dir) | Find the root directory of a git repository | .git, dir, directory, entry, file, find-up, find, findup, folder, git, look-up, look, match, parent, parents, path, resolve, root, search, up, walk, walking |
 | [git-semver-tags](./g/git-semver-tags) | Get all git semver tags of your repository in reve | git-semver-tags, order, semver, tag, git-tag, git |
+| [git-state](./g/git-state) | Get the current state of any git repository | git, status, state, branch, repo, repository, ahead, dirty, untracked |
 | [git-up](./g/git-up) | A low level git url parser. | git, url, parser, parsing |
 | [git-url-parse](./g/git-url-parse) | A high level git url parser for common git provide | parse, git, url |
 | [git-user-email](./g/git-user-email) | Get the email address of the current user from git | config, email, git, github, user |
@@ -4822,6 +4827,7 @@
 | [import-from](./i/import-from) | Import a module like with require() but from a giv | require, resolve, path, module, from, like, import, path |
 | [import-in-the-middle](./i/import-in-the-middle) | Intercept imports in Node.js | import, ritm, iitm, loader, hook, hooks |
 | [import-lazy](./i/import-lazy) | Import a module lazily | import, require, load, module, modules, lazy, lazily, defer, deferred, proxy, proxies |
+| [import-local](./i/import-local) | Let a globally installed package use a locally ins | import, local, require, resolve, global, version, prefer, cli |
 | [import-meta-resolve](./i/import-meta-resolve) | Resolve things like Node.js — ponyfill for import. | resolve, node, esm, module |
 | [impress](./i/impress) | Enterprise application server for Node.js | application, server, isolation, enterprise, security, lightweight, scalable, api, rpc, soa, service, stateful, rest, restful, web, framework, router, routing, cluster, private, cloud, http, https, websocket, websockets, interactive, app, backend, fullstack |
 | [imsi-grok](./i/imsi-grok) | Analyze IMSI (international mobile subscriber iden | IMSI |
@@ -6010,6 +6016,7 @@
 | [kube-probe](./k/kube-probe) | connect.js middleware that sets up generic livenes | connect, connect.js, express, express.js, middleware, kubernetes, openshift, liveness, readiness |
 | [kue](./k/kue) | Feature rich priority job queue backed by redis | job, queue, worker, redis |
 | [kue-ui-client](./k/kue-ui-client) | Small description for client goes here | - |
+| [kuler](./k/kuler) | Color your terminal using CSS/hex color codes | kuler, ansi, color, colour, chalk, css, hex, rgb, rgv |
 | [kurento-client](./k/kurento-client) | JavaScript Client API for Kurento Media Server | kurento, mcu, sfu, rpc, mediaserver, pipe, audio, video, media, recording, stream, streaming, videoconference, broadcast, multicast, client, server, browser, chrome, edge, firefox, safari, webrtc, datachannel, sdp, ice, stun, turn, h264, h.264, opus, vp8, rtp, srtp, rtsp |
 | [kurento-utils](./k/kurento-utils) | Kurento JavaScript Utilities | kurento, mcu, sfu, rpc, mediaserver, pipe, audio, video, media, recording, stream, streaming, videoconference, broadcast, multicast, client, server, browser, chrome, edge, firefox, safari, webrtc, datachannel, sdp, ice, stun, turn, h264, h.264, opus, vp8, rtp, srtp, rtsp |
 | [kuromoji](./k/kuromoji) | JavaScript implementation of Japanese morphologica | japanese, morphological analyzer, nlp, pos, pos tagger, tokenizer |
@@ -8692,6 +8699,7 @@
 | [power-radix](./p/power-radix) | Library for converting numbers from one radix repr | arithmetic, base conversion, base convert, base, base10, base58 decode, base58 encode, base58, base64 decode, base64 encode, base64, conversion, convert, decode, encode, hex, math, power, radix conversion, radix convert, radix |
 | [powerapps-component-frame](./p/powerapps-component-framework) | - | - |
 | [powerbi-visuals-tools](./p/powerbi-visuals-tools) | Command line tool for creating and publishing visu | - |
+| [pprof-format](./p/pprof-format) | - | - |
 | [pre-suf](./p/pre-suf) | Manipulate strings with prefixes and suffixes. | pre-suf, prefix, suffix, string, replace, leading, ending, remove, ensure |
 | [preact](./p/preact) | Fast 3kb React-compatible Virtual DOM library. | preact, react, ui, user interface, virtual dom, vdom, components, dom diff, front-end, framework |
 | [preact-custom-element](./p/preact-custom-element) | Wrap your component up as a custom element | preact, web, components, custom, element |
@@ -11811,6 +11819,7 @@
 | [uikit](./u/uikit) | UIkit is a lightweight and modular front-end frame | - |
 | [uinput](./u/uinput) | Linux uinput module | uinput, linux, user, input |
 | [uint32](./u/uint32) | a javascript library for dealing with (bitwise) ui | uint32, bitwise, binary, shift, rotate |
+| [uint48be](./u/uint48be) | Encode / decode big endian unsigned 48 bit integer | - |
 | [uint8-varint](./u/uint8-varint) | - | - |
 | [uint8array-tools](./u/uint8array-tools) | A library for dealing with Uint8Arrays. | uint8array, hex, tools |
 | [uint8arraylist](./u/uint8arraylist) | Append and consume bytes using only no-copy operat | - |

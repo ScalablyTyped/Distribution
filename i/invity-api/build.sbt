@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "invity-api"
-version := "1.0-dt-20221004Z-ac950a"
+version := "1.0-dt-20221101Z-6df42f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

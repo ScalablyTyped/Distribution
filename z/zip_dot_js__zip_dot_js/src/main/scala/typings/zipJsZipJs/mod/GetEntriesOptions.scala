@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents options passed to the constructor of `ZipReader`, `ZipReader#getEntries()` and `ZipReader#getEntriesGenerator()`.
+  * Represents options passed to the constructor of {@link ZipReader}, {@link ZipReader#getEntries} and {@link ZipReader#getEntriesGenerator}.
   */
 trait GetEntriesOptions extends StObject {
   

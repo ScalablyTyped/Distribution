@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "csw-aas-js"
-version := "2.0.1-SNAPSHOT.1-523cb6"
+version := "2.0.1-SNAPSHOT.1-56e2b0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "keycloak-js" % "19.0.3-281bb9",
+  "org.scalablytyped" %%% "keycloak-js" % "20.0.0-eaa0ab",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",

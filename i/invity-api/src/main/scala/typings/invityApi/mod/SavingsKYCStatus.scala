@@ -8,12 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.invityApi.invityApiStrings.Open
   - typings.invityApi.invityApiStrings.InProgress
+  - typings.invityApi.invityApiStrings.Completed
   - typings.invityApi.invityApiStrings.Verified
   - typings.invityApi.invityApiStrings.Failed
   - typings.invityApi.invityApiStrings.Error_
 */
 trait SavingsKYCStatus extends StObject
 object SavingsKYCStatus {
+  
+  inline def Completed: typings.invityApi.invityApiStrings.Completed = "Completed".asInstanceOf[typings.invityApi.invityApiStrings.Completed]
   
   inline def Error: Error_ = "Error".asInstanceOf[Error_]
   

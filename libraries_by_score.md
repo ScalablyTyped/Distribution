@@ -824,6 +824,7 @@
 | 0.8095104242664384 | [source-list-map](./s/source-list-map) | Fast line to line SourceMap generator.
 | 0.8094471884651042 | [workbox-google-analytics](./w/workbox-google-analytics) | Queues failed requests and uses the Background Syn
 | 0.8094206564920263 | [redis-parser](./r/redis-parser) | Javascript Redis protocol (RESP) parser
+| 0.8093654656532755 | [import-local](./i/import-local) | Let a globally installed package use a locally ins
 | 0.8093484094554622 | [workbox-expiration](./w/workbox-expiration) | A service worker helper library that expires cache
 | 0.8092146012412533 | [gtoken](./g/gtoken) | Node.js Google Authentication Service Account Toke
 | 0.8092074912036111 | [expo-font](./e/expo-font) | Load fonts at runtime and use them in React Native
@@ -1329,6 +1330,7 @@
 | 0.7796956901861933 | [peek-readable](./p/peek-readable) | Read and peek from a readable stream
 | 0.7796839103155653 | [multimatch](./m/multimatch) | Extends minimatch.match() with support for multipl
 | 0.7796769995153099 | [lodash_dot_toarray](./l/lodash_dot_toarray) | The lodash method _.toArray exported as a module.
+| 0.7796068411318499 | [cluster-key-slot](./c/cluster-key-slot) | Generates CRC hashes for strings - for use by node
 | 0.7796004508527514 | [triple-beam](./t/triple-beam) | Definitions of levels for logging purposes & share
 | 0.7795786674309924 | [static-eval](./s/static-eval) | evaluate statically-analyzable expressions
 | 0.7794298540616826 | [google-libphonenumber](./g/google-libphonenumber) | The up-to-date and reliable Google's libphonenumbe
@@ -1537,6 +1539,7 @@
 | 0.7699190769065668 | [is-path-cwd](./i/is-path-cwd) | Check if a path is the current working directory
 | 0.7698797564015969 | [web3-core-helpers](./w/web3-core-helpers) | Web3 core tools helper for sub packages. This is a
 | 0.7698301378812655 | [reactcss](./r/reactcss) | Bringing Classes to Inline Styles
+| 0.7697912179221853 | [kuler](./k/kuler) | Color your terminal using CSS/hex color codes
 | 0.769680881803184 | [storybook__addon-options](./s/storybook__addon-options) | Options addon for storybook
 | 0.7696241887383766 | [use-sidecar](./u/use-sidecar) | Sidecar code splitting utils
 | 0.7695756756405163 | [rsvp](./r/rsvp) | A lightweight library that provides tools for orga
@@ -2826,6 +2829,7 @@
 | 0.7180046365463704 | [json-merge-patch](./j/json-merge-patch) | Implementation of JSON Merge Patch (RFC 7396)
 | 0.7179928155861298 | [i2c-bus](./i/i2c-bus) | I2C serial bus access with Node.js
 | 0.7179610839261779 | [formidable](./f/formidable) | A node.js module for parsing form data, especially
+| 0.7179303492174275 | [fastestsmallesttextencode](./f/fastestsmallesttextencoderdecoder) | The fastest smallest Javascript polyfill for the e
 | 0.7179053311998235 | [lodash_dot_rangeright](./l/lodash_dot_rangeright) | The lodash method _.rangeRight exported as a modul
 | 0.7178939321457132 | [subleveldown](./s/subleveldown) | Split a levelup database into sublevels with their
 | 0.7178920622668665 | [rc-slider](./r/rc-slider) | Slider UI component for React
@@ -4291,6 +4295,7 @@
 | 0.6790134764296993 | [find-remove](./f/find-remove) | recursively finds files and/or directories by filt
 | 0.6789370075532487 | [gulp-copy](./g/gulp-copy) | Plugin copying files to a new destination and usin
 | 0.6789166042700991 | [lodash_dot_isregexp](./l/lodash_dot_isregexp) | The lodash method _.isRegExp exported as a module.
+| 0.6789089107915517 | [git-state](./g/git-state) | Get the current state of any git repository
 | 0.678870410571116 | [wheel](./w/wheel) | Mouse wheel event unified for all browsers
 | 0.6788555539167122 | [streamtest](./s/streamtest) | Streams test library
 | 0.6788434022202665 | [format-number](./f/format-number) | Formats numbers with separators every 3 digits and
@@ -5389,6 +5394,7 @@
 | 0.6542674295546114 | [libp2p__interface-peer-id](./l/libp2p__interface-peer-id) | Peer Identifier interface for libp2p
 | 0.6542668379728669 | [react-native-gesture-hand](./r/react-native-gesture-handler) | Experimental implementation of a new declarative A
 | 0.6542438899253309 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
+| 0.6542313040730501 | [uint48be](./u/uint48be) | Encode / decode big endian unsigned 48 bit integer
 | 0.6541752729174091 | [koa-pino-logger](./k/koa-pino-logger) | pino logging koa middleware
 | 0.6541227866389123 | [wordpress__rich-text](./w/wordpress__rich-text) | Rich text value and manipulation API.
 | 0.6541086463260926 | [muxml](./m/muxml) | Streaming XML parser and formatter
@@ -8496,6 +8502,7 @@
 | 0.5137749160636823 | [jest-resolve](./j/jest-resolve) | -
 | 0.5137236967885079 | [react-native-community__v](./r/react-native-community__viewpager) | React Native wrapper for Android and iOS ViewPager
 | 0.5136836792890924 | [crelt](./c/crelt) | Tiny DOM-element-creation utility
+| 0.5136550488894978 | [csv-write-stream](./c/csv-write-stream) | A CSV encoder stream that produces properly escape
 | 0.5135388323443935 | [cordova-sqlite-storage](./c/cordova-sqlite-storage) | Native interface to SQLite for PhoneGap / Cordova 
 | 0.5135350196344239 | [detect-character-encoding](./d/detect-character-encoding) | Detect character encoding using ICU
 | 0.5133318460550669 | [react-native-tags](./r/react-native-tags) | Tag input component for React Native
@@ -8709,6 +8716,7 @@
 | 0.5012257848976228 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi
 | 0.5011937906917155 | [cradle](./c/cradle) | the high-level, caching, CouchDB library
 | 0.5010778273738806 | [tedious-connection-pool](./t/tedious-connection-pool) | Connection Pool for tedious.
+| 0.5009885840083972 | [gc-profiler](./g/gc-profiler) | Allows you to profile when the garbage collector r
 | 0.5009504486281414 | [countdown](./c/countdown) | A simple JavaScript API for producing an accurate,
 | 0.5008476227521386 | [truncate-middle](./t/truncate-middle) | Truncates in the middle.
 | 0.500820739607657 | [gulp-tslint](./g/gulp-tslint) | TypeScript linter Gulp plugin

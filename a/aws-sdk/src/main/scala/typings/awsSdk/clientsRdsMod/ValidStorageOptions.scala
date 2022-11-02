@@ -12,17 +12,27 @@ trait ValidStorageOptions extends StObject {
   var IopsToStorageRatio: js.UndefOr[DoubleRangeList] = js.undefined
   
   /**
-    * The valid range of provisioned IOPS. For example, 1000-20000.
+    * The valid range of provisioned IOPS. For example, 1000-256,000.
     */
   var ProvisionedIops: js.UndefOr[RangeList] = js.undefined
   
   /**
-    * The valid range of storage in gibibytes (GiB). For example, 100 to 16384.
+    * The valid range of provisioned storage throughput. For example, 500-4,000 mebibytes per second (MiBps).
+    */
+  var ProvisionedStorageThroughput: js.UndefOr[RangeList] = js.undefined
+  
+  /**
+    * The valid range of storage in gibibytes (GiB). For example, 100 to 16,384.
     */
   var StorageSize: js.UndefOr[RangeList] = js.undefined
   
   /**
-    * The valid storage types for your DB instance. For example, gp2, io1.
+    * The valid range of storage throughput to provisioned IOPS ratios. For example, 0-0.25.
+    */
+  var StorageThroughputToIopsRatio: js.UndefOr[DoubleRangeList] = js.undefined
+  
+  /**
+    * The valid storage types for your DB instance. For example: gp2, gp3, io1.
     */
   var StorageType: js.UndefOr[String] = js.undefined
   
@@ -52,11 +62,23 @@ object ValidStorageOptions {
     
     inline def setProvisionedIopsVarargs(value: Range*): Self = StObject.set(x, "ProvisionedIops", js.Array(value*))
     
+    inline def setProvisionedStorageThroughput(value: RangeList): Self = StObject.set(x, "ProvisionedStorageThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setProvisionedStorageThroughputUndefined: Self = StObject.set(x, "ProvisionedStorageThroughput", js.undefined)
+    
+    inline def setProvisionedStorageThroughputVarargs(value: Range*): Self = StObject.set(x, "ProvisionedStorageThroughput", js.Array(value*))
+    
     inline def setStorageSize(value: RangeList): Self = StObject.set(x, "StorageSize", value.asInstanceOf[js.Any])
     
     inline def setStorageSizeUndefined: Self = StObject.set(x, "StorageSize", js.undefined)
     
     inline def setStorageSizeVarargs(value: Range*): Self = StObject.set(x, "StorageSize", js.Array(value*))
+    
+    inline def setStorageThroughputToIopsRatio(value: DoubleRangeList): Self = StObject.set(x, "StorageThroughputToIopsRatio", value.asInstanceOf[js.Any])
+    
+    inline def setStorageThroughputToIopsRatioUndefined: Self = StObject.set(x, "StorageThroughputToIopsRatio", js.undefined)
+    
+    inline def setStorageThroughputToIopsRatioVarargs(value: DoubleRange*): Self = StObject.set(x, "StorageThroughputToIopsRatio", js.Array(value*))
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

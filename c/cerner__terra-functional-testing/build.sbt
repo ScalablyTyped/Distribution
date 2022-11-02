@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "cerner__terra-functional-testing"
-version := "2.5-dt-20211202Z-12701d"
+version := "2.5-dt-20211202Z-7ef595"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "axe-core" % "4.5.0-960a33",
+  "org.scalablytyped" %%% "axe-core" % "4.5.1-85d40c",
   "org.scalablytyped" %%% "mocha" % "10.0-dt-20220928Z-9e55e4",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -82,19 +82,16 @@ open class QuestionMatrixModel protected ()
   
   def hasCellText: Boolean = js.native
   
-  /*
-    * Returns true, if there is at least one row.
-    */
   def hasRows: Boolean = js.native
   
   /*
-    * Set this property to true to hide the question if there is no visible rows in the matrix.
+    * Specifies whether to hide the question when the matrix has no visible rows.
     */
   def hideIfRowsEmpty: Boolean = js.native
   def hideIfRowsEmpty_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Set this property to true, if you want a user to answer all rows.
+    * Specifies whether each row requires an answer. If a respondent skips a row, the question displays a validation error.
     */
   def isAllRowRequired: Boolean = js.native
   def isAllRowRequired_=(`val`: Boolean): Unit = js.native
@@ -115,7 +112,12 @@ open class QuestionMatrixModel protected ()
   override def onSurveyLoad(): Unit & Any = js.native
   
   /*
-    * Use this property to render items in a specific order: "random" or "initial". Default is "initial".
+    * Specifies a sort order for matrix rows.
+    * 
+    * Possible values:
+    * 
+    * - "initial" (default) - Preserves the original order of the `rows` array.
+    * - "random" - Arranges matrix rows in random order each time the question is displayed.
     */
   def rowsOrder: String = js.native
   def rowsOrder_=(`val`: String): Unit = js.native

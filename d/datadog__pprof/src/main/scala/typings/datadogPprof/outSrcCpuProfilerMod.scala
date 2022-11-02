@@ -1,5 +1,6 @@
 package typings.datadogPprof
 
+import typings.pprofFormat.mod.Profile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,36 +14,24 @@ object outSrcCpuProfilerMod {
        with CpuProfiler {
     
     /* CompleteClass */
-    override def profile(): js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ] = js.native
+    override def profile(): js.UndefOr[Profile] = js.native
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ trait CpuProfiler extends StObject {
     
-    def profile(): js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-      ]
+    def profile(): js.UndefOr[Profile]
   }
   object CpuProfiler {
     
-    inline def apply(
-      profile: () => js.UndefOr[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-        ]
-    ): CpuProfiler = {
+    inline def apply(profile: () => js.UndefOr[Profile]): CpuProfiler = {
       val __obj = js.Dynamic.literal(profile = js.Any.fromFunction0(profile))
       __obj.asInstanceOf[CpuProfiler]
     }
     
     extension [Self <: CpuProfiler](x: Self) {
       
-      inline def setProfile(
-        value: () => js.UndefOr[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profile.perftools.profiles.IProfile */ Any
-            ]
-      ): Self = StObject.set(x, "profile", js.Any.fromFunction0(value))
+      inline def setProfile(value: () => js.UndefOr[Profile]): Self = StObject.set(x, "profile", js.Any.fromFunction0(value))
     }
   }
 }

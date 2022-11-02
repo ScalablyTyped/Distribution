@@ -1304,12 +1304,12 @@ object accordionAccordionMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: Double
+    var tabIndex: js.UndefOr[Double] = js.undefined
   }
   object AccordionTabProps {
     
-    inline def apply(tabIndex: Double): AccordionTabProps = {
-      val __obj = js.Dynamic.literal(tabIndex = tabIndex.asInstanceOf[js.Any])
+    inline def apply(): AccordionTabProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionTabProps]
     }
     
@@ -1358,6 +1358,8 @@ object accordionAccordionMod {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     }
   }
 }

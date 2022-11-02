@@ -45,9 +45,7 @@ trait UpdateOptions[T] extends StObject {
   
   var hideProgressBar: js.UndefOr[Boolean | Null] = js.undefined
   
-  var icon: js.UndefOr[
-    Boolean | (js.Function1[/* props */ IconProps, ReactNode]) | ReactElement | String | Double | ReactNode | Null
-  ] = js.undefined
+  var icon: js.UndefOr[ToastIcon | Null] = js.undefined
   
   var isLoading: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -184,9 +182,7 @@ object UpdateOptions {
     
     inline def setHideProgressBarUndefined: Self = StObject.set(x, "hideProgressBar", js.undefined)
     
-    inline def setIcon(
-      value: Boolean | (js.Function1[/* props */ IconProps, ReactNode]) | ReactElement | String | Double | ReactNode
-    ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ToastIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconFunction1(value: /* props */ IconProps => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
     

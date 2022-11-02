@@ -1,7 +1,7 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.antd.anon.DataSource
 import typings.antd.anon.Direction
 import typings.antd.anon.ItemUnit
 import typings.antd.anon.Key
@@ -53,17 +53,18 @@ object libTransferMod {
     }
     /* static member */
     /* was `typeof List` */
-    object List {
-      
-      @JSImport("antd/lib/transfer", "default.List")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("antd/lib/transfer", "default.List.defaultProps")
-      @js.native
-      def defaultProps: DataSource = js.native
-      inline def defaultProps_=(x: DataSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-    }
+    @JSImport("antd/lib/transfer", "default.List")
+    @js.native
+    def List: Instantiable1[
+        /* props */ TransferListProps[/* import warning: RewrittenClass.unapply cls was tparam RecordType */ Any], 
+        typings.antd.libTransferListMod.default[KeyWiseTransferItem]
+      ] = js.native
+    inline def List_=(
+      x: Instantiable1[
+          /* props */ TransferListProps[/* import warning: RewrittenClass.unapply cls was tparam RecordType */ Any], 
+          typings.antd.libTransferListMod.default[KeyWiseTransferItem]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("List")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("antd/lib/transfer", "default.Operation")
@@ -77,26 +78,6 @@ object libTransferMod {
     @js.native
     def Search: js.Function1[/* props */ TransferSearchProps, Element] = js.native
     inline def Search_=(x: js.Function1[/* props */ TransferSearchProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Search")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    object defaultProps {
-      
-      @JSImport("antd/lib/transfer", "default.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("antd/lib/transfer", "default.defaultProps.dataSource")
-      @js.native
-      def dataSource: js.Array[scala.Nothing] = js.native
-      inline def dataSource_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataSource")(x.asInstanceOf[js.Any])
-      
-      inline def listStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listStyle")().asInstanceOf[Unit]
-      
-      @JSImport("antd/lib/transfer", "default.defaultProps.showSearch")
-      @js.native
-      def showSearch: Boolean = js.native
-      inline def showSearch_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showSearch")(x.asInstanceOf[js.Any])
-    }
     
     /* static member */
     inline def getDerivedStateFromProps[T](param0: TransferProps[T]): SourceSelectedKeys | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(param0.asInstanceOf[js.Any]).asInstanceOf[SourceSelectedKeys | Null]
@@ -380,7 +361,7 @@ object libTransferMod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var dataSource: js.Array[RecordType]
+    var dataSource: js.UndefOr[js.Array[RecordType]] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -457,8 +438,8 @@ object libTransferMod {
   }
   object TransferProps {
     
-    inline def apply[RecordType](dataSource: js.Array[RecordType]): TransferProps[RecordType] = {
-      val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
+    inline def apply[RecordType](): TransferProps[RecordType] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransferProps[RecordType]]
     }
     
@@ -473,6 +454,8 @@ object libTransferMod {
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setDataSource(value: js.Array[RecordType]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      
+      inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
       inline def setDataSourceVarargs(value: RecordType*): Self = StObject.set(x, "dataSource", js.Array(value*))
       

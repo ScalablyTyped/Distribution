@@ -42,14 +42,16 @@ open class KmlTour protected () extends StObject {
     */
   var name: String = js.native
   
+  def play(widget: CesiumWidget): Unit = js.native
+  def play(widget: CesiumWidget, cameraOptions: Any): Unit = js.native
   /**
     * Play this tour.
-    * @param viewer - viewer widget.
+    * @param widget - The widget.
     * @param [cameraOptions] - these options will be merged with {@link Camera#flyTo}
     * options for FlyTo playlist entries.
     */
-  def play(viewer: Viewer): Unit = js.native
-  def play(viewer: Viewer, cameraOptions: Any): Unit = js.native
+  def play(widget: Viewer): Unit = js.native
+  def play(widget: Viewer, cameraOptions: Any): Unit = js.native
   
   /**
     * Array of playlist entries

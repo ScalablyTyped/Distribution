@@ -13,9 +13,9 @@ open class ZipReader[Type] protected () extends StObject {
   def this(reader: ReadableStream[Any]) = this()
   def this(reader: ReadableReader) = this()
   /**
-    * Creates the `ZipReader` instance
+    * Creates the instance
     * 
-    * @param reader The `Reader` instance used to read data.
+    * @param reader The {@link Reader} instance used to read data.
     * @param options The options.
     */
   def this(reader: Reader[Type]) = this()
@@ -46,7 +46,7 @@ open class ZipReader[Type] protected () extends StObject {
     * Returns all the entries in the zip file
     * 
     * @param options The options.
-    * @returns A promise resolving to an `array` of `Entry` instances.
+    * @returns A promise resolving to an `array` of {@link Entry} instances.
     */
   def getEntries(): js.Promise[js.Array[Entry]] = js.native
   def getEntries(options: ZipReaderGetEntriesOptions): js.Promise[js.Array[Entry]] = js.native
@@ -55,7 +55,7 @@ open class ZipReader[Type] protected () extends StObject {
     * Returns a generator used to iterate on all the entries in the zip file
     * 
     * @param options The options.
-    * @returns An asynchrounous generator of `Entry` instances.
+    * @returns An asynchrounous generator of {@link Entry} instances.
     */
   def getEntriesGenerator(): AsyncGenerator[Entry, Boolean, Any] = js.native
   def getEntriesGenerator(options: ZipReaderGetEntriesOptions): AsyncGenerator[Entry, Boolean, Any] = js.native

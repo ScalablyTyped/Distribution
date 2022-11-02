@@ -142,6 +142,11 @@ trait DBSnapshot extends StObject {
   var Status: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies the storage throughput for the DB snapshot.
+    */
+  var StorageThroughput: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
     * Specifies the storage type associated with DB snapshot.
     */
   var StorageType: js.UndefOr[String] = js.undefined
@@ -281,6 +286,10 @@ object DBSnapshot {
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setStorageThroughput(value: IntegerOptional): Self = StObject.set(x, "StorageThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setStorageThroughputUndefined: Self = StObject.set(x, "StorageThroughput", js.undefined)
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

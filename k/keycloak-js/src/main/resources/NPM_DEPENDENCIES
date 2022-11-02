@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "keycloak-js" : "19.0.3"
+      "keycloak-js" : "20.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "keycloak-js" : "19.0.3"
+      "keycloak-js" : "20.0.0"
     }
   ],
   "compile-devDependencies" : [

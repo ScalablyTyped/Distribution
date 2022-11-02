@@ -79,6 +79,12 @@ open class ListModel protected () extends ActionContainer[Action] {
   
   var listContainerHtmlElement: Any = js.native
   
+  def loadingIndicator: Action = js.native
+  
+  var loadingIndicatorValue: Action = js.native
+  
+  def loadingText: String = js.native
+  
   def onItemClick(itemValue: Action): Unit = js.native
   
   def onKeyDown(event: Any): Unit = js.native

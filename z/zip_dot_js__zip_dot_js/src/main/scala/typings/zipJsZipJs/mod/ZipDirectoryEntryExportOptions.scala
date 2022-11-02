@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the options passed to `ZipDirectoryEntry#export*()`.
+  * Represents the options passed to `{@link ZipDirectoryEntry}#export*()`.
   */
 trait ZipDirectoryEntryExportOptions
   extends StObject

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "token-types"
-version := "5.0.1-a2a768"
+version := "5.0.1-039828"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tokenizer__token" % "0.3.0-b0cd93")
 publishArtifact in packageDoc := false

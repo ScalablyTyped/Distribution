@@ -11,4 +11,9 @@ open class DataFeedApi () extends StObject {
   
   def getDataFeedElement(accountId: String, dataFeedElementId: String): js.Promise[Unit] = js.native
   def getDataFeedElement(accountId: String, dataFeedElementId: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def getDataFeedElement(
+    accountId: String,
+    dataFeedElementId: String,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[Unit] = js.native
 }

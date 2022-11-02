@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@zip.js/zip.js", "SplitZipReader")
 @js.native
-open class SplitZipReader protected ()
-  extends Reader[js.Array[ReadableReader | ReadableStream[Any] | Reader[Any]]] {
+open class SplitZipReader protected () extends SplitDataReader {
   /**
-    * Creates the `Reader` instance
+    * Creates the {@link Reader} instance
     * 
     * @param value The data to read.
     */

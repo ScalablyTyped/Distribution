@@ -103,6 +103,8 @@ trait Client extends EventEmitter {
   def exop(name: String, value: Buffer, controls: js.Array[Control], callback: ExopCallback): Unit = js.native
   def exop(name: String, value: Buffer, controls: Control, callback: ExopCallback): Unit = js.native
   
+  var host: String = js.native
+  
   def modify(name: String, change: js.Array[Change], callback: ErrorCallback): Unit = js.native
   def modify(name: String, change: js.Array[Change], controls: js.Array[Control], callback: ErrorCallback): Unit = js.native
   def modify(name: String, change: js.Array[Change], controls: Control, callback: ErrorCallback): Unit = js.native
@@ -136,6 +138,9 @@ trait Client extends EventEmitter {
   def modifyDN(name: String, newName: String, callback: ErrorCallback): Unit = js.native
   def modifyDN(name: String, newName: String, controls: js.Array[Control], callback: ErrorCallback): Unit = js.native
   def modifyDN(name: String, newName: String, controls: Control, callback: ErrorCallback): Unit = js.native
+  
+  // URL["hostname"]
+  var port: String = js.native
   
   /**
     * Performs an LDAP search against the server.
@@ -174,6 +179,9 @@ trait Client extends EventEmitter {
     callback: SearchCallBack,
     _bypass: Boolean
   ): Unit = js.native
+  
+  // URL["port"]
+  var secure: Boolean = js.native
   
   def starttls(options: js.Object, controls: js.Array[Control], callback: CallBack): Unit = js.native
   def starttls(options: js.Object, controls: js.Array[Control], callback: CallBack, _bypass: Boolean): Unit = js.native

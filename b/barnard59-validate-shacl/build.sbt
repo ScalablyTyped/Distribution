@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "barnard59-validate-shacl"
-version := "0.3-dt-20220117Z-d326bc"
+version := "0.3-dt-20220117Z-d05e20"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "barnard59-core" % "1.0-dt-20220624Z-5c207d",
-  "org.scalablytyped" %%% "clownface" % "1.5-dt-20220824Z-b12a02",
+  "org.scalablytyped" %%% "barnard59-core" % "1.0-dt-20220624Z-d02d84",
+  "org.scalablytyped" %%% "clownface" % "1.5-dt-20220824Z-5b8b46",
   "org.scalablytyped" %%% "logform" % "2.4.2-2366c7",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
-  "org.scalablytyped" %%% "rdf-loaders-registry" % "0.3-dt-20220624Z-55ffce",
-  "org.scalablytyped" %%% "rdf-validate-shacl" % "0.4-dt-20211202Z-21b71f",
-  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-7612eb",
-  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20221031Z-b0378a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
+  "org.scalablytyped" %%% "rdf-loaders-registry" % "0.3-dt-20220624Z-f4e437",
+  "org.scalablytyped" %%% "rdf-validate-shacl" % "0.4-dt-20211202Z-e01d3c",
+  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-ffba73",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20221031Z-36021b",
   "org.scalablytyped" %%% "safe-buffer" % "5.2.1-14a7cf",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "winston" % "3.8.2-34f3c6",
-  "org.scalablytyped" %%% "winston-transport" % "4.5.0-0994d3")
+  "org.scalablytyped" %%% "winston" % "3.8.2-b6a8d9",
+  "org.scalablytyped" %%% "winston-transport" % "4.5.0-ef3cd5")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

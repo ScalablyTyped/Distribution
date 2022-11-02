@@ -11,7 +11,17 @@ open class OrganizationsApi () extends StObject {
   
   def deleteReport(organizationId: String, reportCorrelationId: String): js.Promise[Unit] = js.native
   def deleteReport(organizationId: String, reportCorrelationId: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def deleteReport(
+    organizationId: String,
+    reportCorrelationId: String,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[Unit] = js.native
   
   def getReport(organizationId: String, reportCorrelationId: String): js.Promise[Unit] = js.native
   def getReport(organizationId: String, reportCorrelationId: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def getReport(
+    organizationId: String,
+    reportCorrelationId: String,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[Unit] = js.native
 }

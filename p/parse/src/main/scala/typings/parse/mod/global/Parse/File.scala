@@ -62,6 +62,7 @@ open class File protected ()
   def cancel(): Unit = js.native
   
   def destroy(): js.Promise[File] = js.native
+  def destroy(options: FullOptions): js.Promise[File] = js.native
   
   def equals(other: File): Boolean = js.native
   

@@ -600,8 +600,8 @@ open class SurveyModel ()
     * 
     * If you want to skip empty answers, pass an object with the `includeEmpty` property set to `false`.
     */
-  def getPlainData(): Any = js.native
-  def getPlainData(options: Any): Any = js.native
+  def getPlainData(): js.Array[IQuestionPlainData] = js.native
+  def getPlainData(options: Any): js.Array[IQuestionPlainData] = js.native
   
   /* CompleteClass */
   override def getProcessedText(text: String): String = js.native

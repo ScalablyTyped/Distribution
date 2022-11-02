@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ibm-cloud-sdk-core"
-version := "3.1.0-8d2794"
+version := "3.1.0-921581"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "axios" % "1.1.3-e4dd04",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-6dfedf",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-337987")
 publishArtifact in packageDoc := false

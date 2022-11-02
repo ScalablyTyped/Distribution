@@ -833,6 +833,7 @@ object Query {
     extends StObject
        with SuccessFailureOptions
        with ScopeOptions
+       with RawJSONOptions
   object FindOptions {
     
     inline def apply(): FindOptions = {
@@ -845,6 +846,7 @@ object Query {
     extends StObject
        with SuccessFailureOptions
        with ScopeOptions
+       with RawJSONOptions
   object FirstOptions {
     
     inline def apply(): FirstOptions = {
@@ -889,6 +891,7 @@ object Query {
     extends StObject
        with SuccessFailureOptions
        with ScopeOptions
+       with RawJSONOptions
   object GetOptions {
     
     inline def apply(): GetOptions = {

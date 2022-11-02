@@ -28,6 +28,10 @@ object rcStepsStrings {
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @js.native
   sealed trait navigation extends StObject
   inline def navigation: navigation = "navigation".asInstanceOf[navigation]
   

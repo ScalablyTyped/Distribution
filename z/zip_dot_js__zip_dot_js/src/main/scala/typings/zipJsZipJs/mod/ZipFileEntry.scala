@@ -20,7 +20,7 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   var children: js.Array[ZipEntry] = js.native
   
   /**
-    * `void` for `ZipFileEntry` instances.
+    * `void` for {@link ZipFileEntry} instances.
     */
   var directory: Unit = js.native
   
@@ -37,11 +37,11 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   def getBlob(mimeType: Unit, options: EntryGetDataOptions): js.Promise[Blob] = js.native
   
   /**
-    * Retrieves the content of the entry via a `Writer` instance
+    * Retrieves the content of the entry via a {@link Writer} instance
     * 
-    * @param writer The `Writer` instance.
+    * @param writer The {@link Writer} instance.
     * @param options The options.
-    * @returns A promise resolving to data associated to the `Writer` instance.
+    * @returns A promise resolving to data associated to the {@link Writer} instance.
     */
   def getData(writer: Writer[WriterType]): js.Promise[WriterType] = js.native
   def getData(writer: Writer[WriterType], options: EntryGetDataOptions): js.Promise[WriterType] = js.native
@@ -110,9 +110,9 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   var id: Double = js.native
   
   /**
-    * Tests if a `ZipDirectoryEntry` instance is an ancestor of the entry
+    * Tests if a {@link ZipDirectoryEntry} instance is an ancestor of the entry
     * 
-    * @param ancestor The `ZipDirectoryEntry` instance.
+    * @param ancestor The {@link ZipDirectoryEntry} instance.
     */
   /* CompleteClass */
   override def isDescendantOf(ancestor: ZipDirectoryEntry): Boolean = js.native
@@ -124,7 +124,7 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   var name: String = js.native
   
   /**
-    * The `Reader` instance used to read the content of the entry.
+    * The {@link Reader} instance used to read the content of the entry.
     */
   var reader: Reader[ReaderType] | ReadableReader = js.native
   
@@ -170,7 +170,7 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   var uncompressedSize: Double = js.native
   
   /**
-    * The `Writer` instance used to write the content of the entry.
+    * The {@link Writer} instance used to write the content of the entry.
     */
   var writer: Writer[WriterType] | WritableWriter = js.native
 }

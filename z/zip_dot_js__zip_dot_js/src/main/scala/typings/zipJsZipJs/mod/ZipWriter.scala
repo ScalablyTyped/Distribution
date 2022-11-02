@@ -12,12 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ZipWriter[Type] protected () extends StObject {
   def this(writer: AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Boolean, Any]) = this()
   def this(writer: WritableStream[Any]) = this()
-  def this(writer: SplitZipWriter) = this()
   def this(writer: WritableWriter) = this()
   /**
-    * Creates the `ZipWriter` instance
+    * Creates the {@link ZipWriter} instance
     * 
-    * @param writer The `Writer` instance where the zip content will be written.
+    * @param writer The {@link Writer} instance where the zip content will be written.
     * @param options The options.
     */
   def this(writer: Writer[Type]) = this()
@@ -26,7 +25,6 @@ open class ZipWriter[Type] protected () extends StObject {
     options: ZipWriterConstructorOptions
   ) = this()
   def this(writer: WritableStream[Any], options: ZipWriterConstructorOptions) = this()
-  def this(writer: SplitZipWriter, options: ZipWriterConstructorOptions) = this()
   def this(writer: WritableWriter, options: ZipWriterConstructorOptions) = this()
   def this(writer: Writer[Type], options: ZipWriterConstructorOptions) = this()
   
@@ -34,18 +32,24 @@ open class ZipWriter[Type] protected () extends StObject {
     * Adds an entry into the zip file
     * 
     * @param filename The filename of the entry.
-    * @param reader The `Reader` instance used to read the content of the entry.
+    * @param reader The  {@link Reader} instance used to read the content of the entry.
     * @param options The options.
-    * @returns A promise resolving to an `Entry` instance.
+    * @returns A promise resolving to an {@link EntryMetaData} instance.
     */
-  def add[ReaderType](filename: String): js.Promise[Entry] = js.native
-  def add[ReaderType](filename: String, reader: Unit, options: ZipWriterAddDataOptions): js.Promise[Entry] = js.native
-  def add[ReaderType](filename: String, reader: ReadableStream[Any]): js.Promise[Entry] = js.native
-  def add[ReaderType](filename: String, reader: ReadableStream[Any], options: ZipWriterAddDataOptions): js.Promise[Entry] = js.native
-  def add[ReaderType](filename: String, reader: ReadableReader): js.Promise[Entry] = js.native
-  def add[ReaderType](filename: String, reader: ReadableReader, options: ZipWriterAddDataOptions): js.Promise[Entry] = js.native
-  def add[ReaderType](filename: String, reader: Reader[ReaderType]): js.Promise[Entry] = js.native
-  def add[ReaderType](filename: String, reader: Reader[ReaderType], options: ZipWriterAddDataOptions): js.Promise[Entry] = js.native
+  def add[ReaderType](filename: String): js.Promise[EntryMetaData] = js.native
+  def add[ReaderType](filename: String, reader: js.Array[ReadableReader | ReadableStream[Any] | Reader[Any]]): js.Promise[EntryMetaData] = js.native
+  def add[ReaderType](
+    filename: String,
+    reader: js.Array[ReadableReader | ReadableStream[Any] | Reader[Any]],
+    options: ZipWriterAddDataOptions
+  ): js.Promise[EntryMetaData] = js.native
+  def add[ReaderType](filename: String, reader: Unit, options: ZipWriterAddDataOptions): js.Promise[EntryMetaData] = js.native
+  def add[ReaderType](filename: String, reader: ReadableStream[Any]): js.Promise[EntryMetaData] = js.native
+  def add[ReaderType](filename: String, reader: ReadableStream[Any], options: ZipWriterAddDataOptions): js.Promise[EntryMetaData] = js.native
+  def add[ReaderType](filename: String, reader: ReadableReader): js.Promise[EntryMetaData] = js.native
+  def add[ReaderType](filename: String, reader: ReadableReader, options: ZipWriterAddDataOptions): js.Promise[EntryMetaData] = js.native
+  def add[ReaderType](filename: String, reader: Reader[ReaderType]): js.Promise[EntryMetaData] = js.native
+  def add[ReaderType](filename: String, reader: Reader[ReaderType], options: ZipWriterAddDataOptions): js.Promise[EntryMetaData] = js.native
   
   /**
     * Writes the entries directory, writes the global comment, and returns the content of the zip file

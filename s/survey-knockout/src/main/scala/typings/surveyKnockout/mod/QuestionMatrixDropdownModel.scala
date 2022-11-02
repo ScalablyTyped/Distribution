@@ -12,7 +12,7 @@ open class QuestionMatrixDropdownModel protected () extends QuestionMatrixDropdo
   /* protected */ def createMatrixRow(item: ItemValue, value: Any): MatrixDropdownRowModel = js.native
   
   /*
-    * Set this property to true to hide the question if there is no visible rows in the matrix.
+    * Specifies whether to hide the question when the matrix has no visible rows.
     */
   def hideIfRowsEmpty: Boolean = js.native
   def hideIfRowsEmpty_=(`val`: Boolean): Unit = js.native
@@ -20,13 +20,13 @@ open class QuestionMatrixDropdownModel protected () extends QuestionMatrixDropdo
   def locTotalText: LocalizableString = js.native
   
   /*
-    * The column width for the first column, row title column.
+    * A width for the column that displays row titles (first column). Accepts CSS values.
     */
   def rowTitleWidth: String = js.native
   def rowTitleWidth_=(`val`: String): Unit = js.native
   
   /*
-    * Set this property to show it on the first column for the total row.
+    * A title for the total row. Applies if at least one column displays total values.
     */
   def totalText: String = js.native
   def totalText_=(`val`: String): Unit = js.native

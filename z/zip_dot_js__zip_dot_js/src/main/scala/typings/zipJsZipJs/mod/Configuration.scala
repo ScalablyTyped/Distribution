@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the configuration passed to `configure()`.
+  * Represents the configuration passed to {@link configure}.
   */
 trait Configuration
   extends StObject
@@ -16,28 +16,28 @@ trait Configuration
   /**
     * The stream implementation used to compress data when `useCompressionStream` is set to `false`.
     * 
-    * @defaultValue `CodecStream`
+    * @defaultValue {@link CodecStream}
     */
   var CompressionStream: js.UndefOr[Instantiable0[GenericTransformStream]] = js.undefined
   
   /**
     * The stream implementation used to decompress data when `useCompressionStream` is set to `false`.
     * 
-    * @defaultValue `CodecStream`
+    * @defaultValue {@link CodecStream}
     */
   var DecompressionStream: js.UndefOr[Instantiable0[GenericTransformStream]] = js.undefined
   
   /**
     * The codec implementation used to compress data.
     * 
-    * @defaultValue `ZipDeflate`
+    * @defaultValue {@link ZipDeflate}
     */
   var Deflate: js.UndefOr[Instantiable0[ZipDeflate]] = js.undefined
   
   /**
     * The codec implementation used to decompress data.
     * 
-    * @defaultValue `ZipInflate`
+    * @defaultValue {@link ZipInflate}
     */
   var Inflate: js.UndefOr[Instantiable0[ZipInflate]] = js.undefined
   

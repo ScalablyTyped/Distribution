@@ -11,4 +11,8 @@ open class TrustServiceProvidersApi () extends StObject {
   
   def getSealProviders(accountId: String): js.Promise[AccountSeals] = js.native
   def getSealProviders(accountId: String, callback: js.Function0[Unit]): js.Promise[AccountSeals] = js.native
+  def getSealProviders(
+    accountId: String,
+    callback: js.Function3[/* error */ Any, /* data */ Any, /* response */ Any, Unit]
+  ): js.Promise[AccountSeals] = js.native
 }

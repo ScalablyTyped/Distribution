@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-toastify" : "9.0.8"
+      "react-toastify" : "9.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-toastify" : "9.0.8"
+      "react-toastify" : "9.1.0"
     }
   ],
   "compile-devDependencies" : [

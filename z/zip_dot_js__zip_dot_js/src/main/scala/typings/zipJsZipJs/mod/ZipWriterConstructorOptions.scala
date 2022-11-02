@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents options passed to the constructor of `ZipWriter`, `ZipWriter#add()` and `ZipDirectoryEntry#export*()`.
+  * Represents options passed to the constructor of {@link ZipWriter}, {@link ZipWriter#add} and `{@link ZipDirectoryEntry}#export*`.
   */
 trait ZipWriterConstructorOptions extends StObject {
   
@@ -25,7 +25,7 @@ trait ZipWriterConstructorOptions extends StObject {
   /**
     * The creation date.
     * 
-    * This option is ignored if the `extendedTimestamp` option is set to `false`.
+    * This option is ignored if the {@link ZipWriterConstructorOptions#extendedTimestamp} option is set to `false`.
     * 
     * @defaultValue The current date.
     */
@@ -34,7 +34,7 @@ trait ZipWriterConstructorOptions extends StObject {
   /**
     * `true` to to add a data descriptor.
     * 
-    * When set to `false`, the `bufferedWrite` option  will automatically be set to `true`.
+    * When set to `false`, the {@link ZipWriterConstructorOptions#bufferedWrite} option  will automatically be set to `true`.
     * 
     * @defaultValue true
     */
@@ -90,7 +90,7 @@ trait ZipWriterConstructorOptions extends StObject {
   /**
     * The last access date.
     * 
-    * This option is ignored if the `extendedTimestamp` option is set to `false`.
+    * This option is ignored if the {@link ZipWriterConstructorOptions#extendedTimestamp} option is set to `false`.
     * 
     * @defaultValue The current date.
     */
@@ -113,7 +113,7 @@ trait ZipWriterConstructorOptions extends StObject {
   var level: js.UndefOr[Double] = js.undefined
   
   /**
-    * `true` to write `externalFileAttribute` in MS-DOS format for folder entries.
+    * `true` to write {@link EntryMetaData#externalFileAttribute} in MS-DOS format for folder entries.
     * 
     * @defaultValue true
     */
@@ -123,6 +123,13 @@ trait ZipWriterConstructorOptions extends StObject {
     * The password used to encrypt the content of the entry.
     */
   var password: js.UndefOr[String] = js.undefined
+  
+  /**
+    * `true` to prevent closing of {@link WritableWriter#writable}.
+    * 
+    * @defaultValue false
+    */
+  var preventClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The `AbortSignal` instance used to cancel the compression.
@@ -223,6 +230,10 @@ object ZipWriterConstructorOptions {
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setPreventClose(value: Boolean): Self = StObject.set(x, "preventClose", value.asInstanceOf[js.Any])
+    
+    inline def setPreventCloseUndefined: Self = StObject.set(x, "preventClose", js.undefined)
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

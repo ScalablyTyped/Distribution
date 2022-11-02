@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libp2p__kad-dht"
-version := "5.0.1-7d8b6a"
+version := "5.0.1-38c4a2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,24 +10,24 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "interface-datastore" % "7.0.1-ee1118",
   "org.scalablytyped" %%% "interface-store" % "3.0.1-28bc3a",
   "org.scalablytyped" %%% "it-stream-types" % "1.0.4-43f797",
-  "org.scalablytyped" %%% "libp2p__interface-address-manager" % "2.0.0-029cc6",
-  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-31ced4",
-  "org.scalablytyped" %%% "libp2p__interface-connection-manager" % "1.3.0-32cfa2",
-  "org.scalablytyped" %%% "libp2p__interface-dht" % "1.0.2-64e25f",
+  "org.scalablytyped" %%% "libp2p__interface-address-manager" % "2.0.0-a1875d",
+  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-0e1a61",
+  "org.scalablytyped" %%% "libp2p__interface-connection-manager" % "1.3.0-5ada6e",
+  "org.scalablytyped" %%% "libp2p__interface-dht" % "1.0.2-203d0d",
   "org.scalablytyped" %%% "libp2p__interface-metrics" % "3.0.0-6e4cf0",
-  "org.scalablytyped" %%% "libp2p__interface-peer-discovery" % "1.0.1-f67941",
+  "org.scalablytyped" %%% "libp2p__interface-peer-discovery" % "1.0.1-ff8fc4",
   "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-22c095",
-  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-dfe155",
-  "org.scalablytyped" %%% "libp2p__interface-peer-store" % "1.2.2-8598bd",
+  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-988e61",
+  "org.scalablytyped" %%% "libp2p__interface-peer-store" % "1.2.2-8a6282",
   "org.scalablytyped" %%% "libp2p__interface-record" % "2.0.1-9c1936",
-  "org.scalablytyped" %%% "libp2p__interface-registrar" % "2.0.3-677084",
+  "org.scalablytyped" %%% "libp2p__interface-registrar" % "2.0.3-9fe5ef",
   "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-5a062f",
   "org.scalablytyped" %%% "libp2p__logger" % "2.0.2-29e220",
   "org.scalablytyped" %%% "libp2p__peer-collections" % "2.2.0-60b1eb",
-  "org.scalablytyped" %%% "libp2p__record" % "2.0.3-c0294b",
+  "org.scalablytyped" %%% "libp2p__record" % "2.0.3-d6fc4f",
   "org.scalablytyped" %%% "multiformats" % "10.0.2-cc7cca",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-93ee03",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-752b57",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "p-queue" % "7.3.0-6d7a04",
   "org.scalablytyped" %%% "protons-runtime" % "4.0.1-0cf32a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",

@@ -36,6 +36,9 @@ trait User[T /* <: Attributes */]
   
   def isCurrent(): Boolean = js.native
   
+  /** Since version 3.0.0, Returns true if `current` would return this user */
+  def isCurrentAsync(): js.Promise[Boolean] = js.native
+  
   def linkWith(provider: String, options: typings.parse.anon.AuthData): js.Promise[this.type] = js.native
   def linkWith(provider: String, options: typings.parse.anon.AuthData, saveOpts: FullOptions): js.Promise[this.type] = js.native
   def linkWith(provider: AuthProvider, options: typings.parse.anon.AuthData): js.Promise[this.type] = js.native

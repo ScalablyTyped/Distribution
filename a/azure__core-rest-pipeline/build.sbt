@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "azure__core-rest-pipeline"
-version := "1.9.2-76fcf5"
+version := "1.9.2-d16f50"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "azure__core-auth" % "1.4.0-0f0fa6",
   "org.scalablytyped" %%% "azure__core-tracing" % "1.0.1-30b6c4",
   "org.scalablytyped" %%% "azure__logger" % "1.0.3-d8efb6",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

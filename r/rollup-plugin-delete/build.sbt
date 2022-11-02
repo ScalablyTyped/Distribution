@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-delete"
-version := "2.0.0-613060"
+version := "2.0.0-6a607e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "del" % "7.0.0-d7022e",
-  "org.scalablytyped" %%% "fast-glob" % "3.2.12-d2404a",
-  "org.scalablytyped" %%% "globby" % "13.1.2-657797",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
-  "org.scalablytyped" %%% "nodelib__fs_dot_scandir" % "2.1.5-44f93b",
-  "org.scalablytyped" %%% "nodelib__fs_dot_stat" % "2.0.5-70b2e5",
-  "org.scalablytyped" %%% "nodelib__fs_dot_walk" % "1.2.8-a19fbd",
+  "org.scalablytyped" %%% "del" % "7.0.0-1dd6d6",
+  "org.scalablytyped" %%% "fast-glob" % "3.2.12-3ca05d",
+  "org.scalablytyped" %%% "globby" % "13.1.2-dc596d",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
+  "org.scalablytyped" %%% "nodelib__fs_dot_scandir" % "2.1.5-3163b4",
+  "org.scalablytyped" %%% "nodelib__fs_dot_stat" % "2.0.5-4ce761",
+  "org.scalablytyped" %%% "nodelib__fs_dot_walk" % "1.2.8-574007",
   "org.scalablytyped" %%% "rollup" % "3.2.5-600601",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

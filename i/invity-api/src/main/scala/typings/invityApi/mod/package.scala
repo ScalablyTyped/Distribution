@@ -2,7 +2,6 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.invityApi.invityApiStrings.NONE
-import typings.invityApi.invityApiStrings.bankTransfer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,8 +33,6 @@ type ExchangeMaximum = Double | NONE
 type ExchangeTradeQuoteResponse = js.Array[ExchangeTrade]
 
 type Id = String
-
-type SavingsPaymentMethod = bankTransfer
 
 type SavingsStepAML = SavingsStepEnabled
 

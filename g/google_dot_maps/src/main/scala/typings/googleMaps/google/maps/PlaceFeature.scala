@@ -22,13 +22,11 @@ trait PlaceFeature
      with Feature {
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * The display name.
     */
   var displayName: String
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * The {@link google.maps.places.PlaceResult.place_id}.
     */
   var placeId: String

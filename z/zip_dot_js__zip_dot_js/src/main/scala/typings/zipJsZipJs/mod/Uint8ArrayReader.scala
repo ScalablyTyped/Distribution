@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Uint8ArrayReader protected ()
   extends Reader[js.typedarray.Uint8Array] {
   /**
-    * Creates the `Reader` instance
+    * Creates the {@link Reader} instance
     * 
     * @param value The data to read.
     */

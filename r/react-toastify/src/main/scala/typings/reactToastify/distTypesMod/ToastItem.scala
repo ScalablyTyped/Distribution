@@ -1,7 +1,7 @@
 package typings.reactToastify.distTypesMod
 
 import typings.react.mod.ReactNode
-import typings.reactToastify.reactToastifyBooleans.`false`
+import typings.reactToastify.distComponentsIconsMod.IconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +10,11 @@ trait ToastItem[Data] extends StObject {
   
   var containerId: js.UndefOr[Id] = js.undefined
   
-  var content: ReactNode
+  var content: ToastContent[Data]
   
   var data: Data
   
-  var icon: js.UndefOr[ReactNode | `false`] = js.undefined
+  var icon: js.UndefOr[ToastIcon] = js.undefined
   
   var id: Id
   
@@ -39,13 +39,17 @@ object ToastItem {
     
     inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ToastContent[Data]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentFunction1(value: /* props */ ToastContentProps[Data] => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setIcon(value: ReactNode | `false`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ToastIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconFunction1(value: /* props */ IconProps => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     

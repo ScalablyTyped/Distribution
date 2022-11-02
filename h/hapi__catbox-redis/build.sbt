@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "hapi__catbox-redis"
-version := "5.0-dt-20221026Z-2ec56a"
+version := "5.0-dt-20221026Z-acfd4e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "denque" % "2.1.0-758dab",
   "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20211202Z-5bffc2",
-  "org.scalablytyped" %%% "ioredis" % "5.2.3-3cf722",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "ioredis" % "5.2.3-4f6339",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "redis-errors" % "1.2-dt-20211202Z-181495",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

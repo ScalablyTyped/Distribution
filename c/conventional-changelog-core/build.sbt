@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "conventional-changelog-core"
-version := "4.2-dt-20211216Z-db8b46"
+version := "4.2-dt-20211216Z-690e46"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "conventional-changelog-writer" % "4.0-dt-20220624Z-7a77cf",
-  "org.scalablytyped" %%% "conventional-commits-parser" % "3.0-dt-20211202Z-83600c",
-  "org.scalablytyped" %%% "conventional-recommended-bump" % "6.1-dt-20220624Z-23d431",
-  "org.scalablytyped" %%% "git-raw-commits" % "2.0-dt-20220624Z-3dda69",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "conventional-changelog-writer" % "4.0-dt-20220624Z-5b01ac",
+  "org.scalablytyped" %%% "conventional-commits-parser" % "3.0-dt-20211202Z-5b0ccd",
+  "org.scalablytyped" %%% "conventional-recommended-bump" % "6.1-dt-20220624Z-74f483",
+  "org.scalablytyped" %%% "git-raw-commits" % "2.0-dt-20220624Z-1faa2b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20211202Z-066477",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

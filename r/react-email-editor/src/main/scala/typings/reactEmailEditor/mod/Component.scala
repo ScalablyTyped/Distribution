@@ -13,6 +13,9 @@ trait Component
   def addEventListener(`type`: String, callback: EventCallback): Unit = js.native
   
   def exportHtml(callback: ExportHtmlCallback): Unit = js.native
+  def exportHtml(callback: ExportHtmlCallback, `type`: HtmlOptions): Unit = js.native
+  
+  def loadBlank(`type`: js.Object): Unit = js.native
   
   def loadDesign(design: Design): Unit = js.native
   

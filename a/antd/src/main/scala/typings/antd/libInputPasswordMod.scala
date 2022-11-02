@@ -26,7 +26,7 @@ object libInputPasswordMod extends Shortcut {
     
     val inputPrefixCls: js.UndefOr[String] = js.undefined
     
-    var visibilityToggle: js.UndefOr[Boolean] = js.undefined
+    var visibilityToggle: js.UndefOr[Boolean | VisibilityToggle] = js.undefined
   }
   object PasswordProps {
     
@@ -49,9 +49,34 @@ object libInputPasswordMod extends Shortcut {
       
       inline def setInputPrefixClsUndefined: Self = StObject.set(x, "inputPrefixCls", js.undefined)
       
-      inline def setVisibilityToggle(value: Boolean): Self = StObject.set(x, "visibilityToggle", value.asInstanceOf[js.Any])
+      inline def setVisibilityToggle(value: Boolean | VisibilityToggle): Self = StObject.set(x, "visibilityToggle", value.asInstanceOf[js.Any])
       
       inline def setVisibilityToggleUndefined: Self = StObject.set(x, "visibilityToggle", js.undefined)
+    }
+  }
+  
+  trait VisibilityToggle extends StObject {
+    
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    
+    var visible: js.UndefOr[Boolean] = js.undefined
+  }
+  object VisibilityToggle {
+    
+    inline def apply(): VisibilityToggle = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[VisibilityToggle]
+    }
+    
+    extension [Self <: VisibilityToggle](x: Self) {
+      
+      inline def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
+      
+      inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   

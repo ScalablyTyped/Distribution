@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "babel-plugin-tester"
-version := "9.0-dt-20220512Z-286ca0"
+version := "9.0-dt-20220512Z-5108e6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-043aa4",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-b67249",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-bf895e",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.0-6157ab",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-1a1261",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.1-1ab1d1",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-114ca7",
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-aa17f1",
   "org.scalablytyped" %%% "babel__types" % "7.20.0-d18d74",
   "org.scalablytyped" %%% "prettier" % "2.7-dt-20220924Z-2df734",

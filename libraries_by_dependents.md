@@ -1317,6 +1317,7 @@
 | 0.0 | [clsx](./c/clsx) | A tiny (228B) utility for constructing className s
 | 0.0 | [clui](./c/clui) | A Node.js toolkit for drawing nice command line ta
 | 0.0 | [cluster-hub](./c/cluster-hub) | Interaction between cluster processes (messaging, 
+| 0.0 | [cluster-key-slot](./c/cluster-key-slot) | Generates CRC hashes for strings - for use by node
 | 0.0 | [clusterize_dot_js](./c/clusterize_dot_js) | Tiny vanilla JS plugin to display large data sets 
 | 0.0 | [clusterize_dot_js-paging](./c/clusterize_dot_js-paging) | Paging for clusterize.js
 | 0.0 | [cmd-shim](./c/cmd-shim) | Used in npm for command line application support
@@ -1713,6 +1714,7 @@
 | 0.0 | [csv-parse](./c/csv-parse) | CSV parsing implementing the Node.js stream.Transf
 | 0.0 | [csv-parser](./c/csv-parser) | Streaming CSV parser that aims for maximum speed a
 | 0.0 | [csv-stringify](./c/csv-stringify) | CSV stringifier implementing the Node.js stream.Tr
+| 0.0 | [csv-write-stream](./c/csv-write-stream) | A CSV encoder stream that produces properly escape
 | 0.0 | [csv2json](./c/csv2json) | Stream and CLI to convert CSV to JSON
 | 0.0 | [csvrow](./c/csvrow) | parse a CSV row string
 | 0.0 | [csvtojson](./c/csvtojson) | A tool concentrating on converting csv data to JSO
@@ -2715,6 +2717,7 @@
 | 0.0 | [fastbitset](./f/fastbitset) | Speed-optimized BitSet implementation for modern b
 | 0.0 | [fastclick](./f/fastclick) | Polyfill to remove click delays on browsers with t
 | 0.0 | [fastest-levenshtein](./f/fastest-levenshtein) | Fastest Levenshtein distance implementation in JS.
+| 0.0 | [fastestsmallesttextencode](./f/fastestsmallesttextencoderdecoder) | The fastest smallest Javascript polyfill for the e
 | 0.0 | [fastify](./f/fastify) | Fast and low overhead web framework, for Node.js
 | 0.0 | [fastify-error](./f/fastify-error) | fastify-error@1.2.0 has been deprecated. Please us
 | 0.0 | [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests
@@ -3128,6 +3131,7 @@
 | 0.0 | [gaxios](./g/gaxios) | A simple common HTTP client specifically for Googl
 | 0.0 | [gaze](./g/gaze) | A globbing fs.watch wrapper built from the best pa
 | 0.0 | [gbk_dot_js](./g/gbk_dot_js) | 一个小而快的GBK库,支持浏览器
+| 0.0 | [gc-profiler](./g/gc-profiler) | Allows you to profile when the garbage collector r
 | 0.0 | [gc-stats](./g/gc-stats) | Exposes node v8 garbage collection stats
 | 0.0 | [gcp-metadata](./g/gcp-metadata) | Get the metadata from a Google Cloud Platform envi
 | 0.0 | [gdal](./g/gdal) | Bindings to GDAL (Geospatial Data Abstraction Libr
@@ -3229,6 +3233,7 @@
 | 0.0 | [git-revision-webpack-plug](./g/git-revision-webpack-plugin) | -
 | 0.0 | [git-root-dir](./g/git-root-dir) | Find the root directory of a git repository
 | 0.0 | [git-semver-tags](./g/git-semver-tags) | Get all git semver tags of your repository in reve
+| 0.0 | [git-state](./g/git-state) | Get the current state of any git repository
 | 0.0 | [git-up](./g/git-up) | A low level git url parser.
 | 0.0 | [git-url-parse](./g/git-url-parse) | A high level git url parser for common git provide
 | 0.0 | [git-user-email](./g/git-user-email) | Get the email address of the current user from git
@@ -3881,6 +3886,7 @@
 | 0.0 | [import-from](./i/import-from) | Import a module like with require() but from a giv
 | 0.0 | [import-in-the-middle](./i/import-in-the-middle) | Intercept imports in Node.js
 | 0.0 | [import-lazy](./i/import-lazy) | Import a module lazily
+| 0.0 | [import-local](./i/import-local) | Let a globally installed package use a locally ins
 | 0.0 | [import-meta-resolve](./i/import-meta-resolve) | Resolve things like Node.js — ponyfill for import.
 | 0.0 | [impress](./i/impress) | Enterprise application server for Node.js
 | 0.0 | [imsi-grok](./i/imsi-grok) | Analyze IMSI (international mobile subscriber iden
@@ -4973,6 +4979,7 @@
 | 0.0 | [kube-probe](./k/kube-probe) | connect.js middleware that sets up generic livenes
 | 0.0 | [kue](./k/kue) | Feature rich priority job queue backed by redis
 | 0.0 | [kue-ui-client](./k/kue-ui-client) | Small description for client goes here
+| 0.0 | [kuler](./k/kuler) | Color your terminal using CSS/hex color codes
 | 0.0 | [kurento-client](./k/kurento-client) | JavaScript Client API for Kurento Media Server
 | 0.0 | [kurento-utils](./k/kurento-utils) | Kurento JavaScript Utilities
 | 0.0 | [kuromoji](./k/kuromoji) | JavaScript implementation of Japanese morphologica
@@ -10630,6 +10637,7 @@
 | 0.0 | [uikit](./u/uikit) | UIkit is a lightweight and modular front-end frame
 | 0.0 | [uinput](./u/uinput) | Linux uinput module
 | 0.0 | [uint32](./u/uint32) | a javascript library for dealing with (bitwise) ui
+| 0.0 | [uint48be](./u/uint48be) | Encode / decode big endian unsigned 48 bit integer
 | 0.0 | [uint8array-tools](./u/uint8array-tools) | A library for dealing with Uint8Arrays.
 | 0.0 | [uint8arraylist](./u/uint8arraylist) | Append and consume bytes using only no-copy operat
 | 0.0 | [uint8arrays](./u/uint8arrays) | Utility functions to make dealing with Uint8Arrays

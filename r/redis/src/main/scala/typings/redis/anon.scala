@@ -16,6 +16,8 @@ object anon {
   
   trait Add extends StObject
   
+  trait BYRANK extends StObject
+  
   trait CONFIGGET extends StObject
   
   trait COUNT extends StObject

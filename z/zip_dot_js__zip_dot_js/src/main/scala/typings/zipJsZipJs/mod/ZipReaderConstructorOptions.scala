@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the options passed to the constructor of `ZipReader`, and `ZipDirectoryEntry#import*()`.
+  * Represents the options passed to the constructor of {@link ZipReader}, and `{@link ZipDirectory}#import*`.
   */
 trait ZipReaderConstructorOptions
   extends StObject
@@ -14,14 +14,14 @@ trait ZipReaderConstructorOptions
      with WorkerConfiguration {
   
   /**
-    * `true` to extract the appended data into `ZipReader#appendedData`.
+    * `true` to extract the appended data into {@link ZipReader#appendedData}.
     * 
     * @defaultValue false
     */
   var extractAppendedData: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * `true` to extract the prepended data into `ZipReader#prependedData`.
+    * `true` to extract the prepended data into {@link ZipReader#prependedData}.
     * 
     * @defaultValue false
     */

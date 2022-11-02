@@ -78,7 +78,7 @@ trait DirectionsStep extends StObject {
     * @deprecated Please use {@link
     *     google.maps.DirectionsStep.encoded_lat_lngs}.
     */
-  var polyline: js.UndefOr[js.Array[DirectionsStep]] = js.undefined
+  var polyline: js.UndefOr[DirectionsPolyline] = js.undefined
   
   /**
     * The starting location of this step.
@@ -160,11 +160,9 @@ object DirectionsStep {
     
     inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setPolyline(value: js.Array[DirectionsStep]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+    inline def setPolyline(value: DirectionsPolyline): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
     inline def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
-    
-    inline def setPolylineVarargs(value: DirectionsStep*): Self = StObject.set(x, "polyline", js.Array(value*))
     
     inline def setStart_location(value: LatLng): Self = StObject.set(x, "start_location", value.asInstanceOf[js.Any])
     

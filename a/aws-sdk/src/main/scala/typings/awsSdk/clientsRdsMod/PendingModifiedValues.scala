@@ -89,6 +89,11 @@ trait PendingModifiedValues extends StObject {
   var ResumeFullAutomationModeTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The storage throughput of the DB instance.
+    */
+  var StorageThroughput: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
     * The storage type of the DB instance.
     */
   var StorageType: js.UndefOr[String] = js.undefined
@@ -171,6 +176,10 @@ object PendingModifiedValues {
     inline def setResumeFullAutomationModeTime(value: js.Date): Self = StObject.set(x, "ResumeFullAutomationModeTime", value.asInstanceOf[js.Any])
     
     inline def setResumeFullAutomationModeTimeUndefined: Self = StObject.set(x, "ResumeFullAutomationModeTime", js.undefined)
+    
+    inline def setStorageThroughput(value: IntegerOptional): Self = StObject.set(x, "StorageThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setStorageThroughputUndefined: Self = StObject.set(x, "StorageThroughput", js.undefined)
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,7 @@ object libUtilReactNodeMod {
   inline def cloneElement(element: ReactNode): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   inline def cloneElement(element: ReactNode, props: RenderProps): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  inline def isFragment(child: ReactElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(child.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFragment(child: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(child.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isValidElement[P](): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")().asInstanceOf[/* is react.react.ReactElement */ Boolean]
   inline def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]

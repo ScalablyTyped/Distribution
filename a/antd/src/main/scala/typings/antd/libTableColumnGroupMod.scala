@@ -20,6 +20,7 @@ import typings.rcTable.libInterfaceMod.FixedType
 import typings.rcTable.libInterfaceMod.GetComponentProps
 import typings.rcTable.libInterfaceMod.Key
 import typings.rcTable.libInterfaceMod.RenderedCell
+import typings.rcTable.libInterfaceMod.RowScopeType
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -115,6 +116,8 @@ object libTableColumnGroupMod {
       ] = js.undefined
     
     var responsive: js.UndefOr[js.Array[Breakpoint]] = js.undefined
+    
+    var rowScope: js.UndefOr[RowScopeType] = js.undefined
     
     var rowSpan: js.UndefOr[Double] = js.undefined
     
@@ -282,6 +285,10 @@ object libTableColumnGroupMod {
       inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
       inline def setResponsiveVarargs(value: Breakpoint*): Self = StObject.set(x, "responsive", js.Array(value*))
+      
+      inline def setRowScope(value: RowScopeType): Self = StObject.set(x, "rowScope", value.asInstanceOf[js.Any])
+      
+      inline def setRowScopeUndefined: Self = StObject.set(x, "rowScope", js.undefined)
       
       inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       

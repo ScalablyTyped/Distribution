@@ -8,6 +8,7 @@ import typings.rcPicker.esInterfaceMod.EventValue
 import typings.rcPicker.esInterfaceMod.Locale
 import typings.rcPicker.esInterfaceMod.PanelMode
 import typings.rcPicker.esInterfaceMod.PickerMode
+import typings.rcPicker.esInterfaceMod.PresetDate
 import typings.rcPicker.esInterfaceMod.RangeValue
 import typings.rcPicker.esPanelsMonthPanelMonthBodyMod.MonthCellRender
 import typings.rcPicker.esPickerMod.PickerRefConfig
@@ -60,6 +61,7 @@ import typings.rcPicker.rcPickerStrings.pickerValue
 import typings.rcPicker.rcPickerStrings.placeholder
 import typings.rcPicker.rcPickerStrings.polite
 import typings.rcPicker.rcPickerStrings.popup
+import typings.rcPicker.rcPickerStrings.presets
 import typings.rcPicker.rcPickerStrings.removals
 import typings.rcPicker.rcPickerStrings.rtl
 import typings.rcPicker.rcPickerStrings.showTime
@@ -104,7 +106,7 @@ object esRangePickerMod {
   
   type OmitPickerProps[Props] = Omit[
     Props, 
-    value | defaultValue | defaultPickerValue | placeholder | disabled | disabledTime | showToday | showTime | mode | onChange | onSelect | onPanelChange | pickerValue | onPickerValueChange | onOk | dateRender
+    value | defaultValue | defaultPickerValue | placeholder | disabled | disabledTime | showToday | showTime | mode | onChange | onSelect | onPanelChange | pickerValue | onPickerValueChange | onOk | dateRender | presets
   ]
   
   type RangeDateRender[DateType] = js.Function3[/* currentDate */ DateType, /* today */ DateType, /* info */ RangeInfo, ReactNode]
@@ -364,8 +366,11 @@ object esRangePickerMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
+    var presets: js.UndefOr[js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]] = js.undefined
+    
     var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
+    /** @deprecated Please use `presets` instead */
     var ranges: js.UndefOr[
         Record[
           String, 
@@ -800,6 +805,12 @@ object esRangePickerMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
+      inline def setPresets(value: js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      
+      inline def setPresetsVarargs(value: (PresetDate[Exclude[RangeValue[DateType], Null]])*): Self = StObject.set(x, "presets", js.Array(value*))
+      
       inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
       
       inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
@@ -1084,8 +1095,11 @@ object esRangePickerMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
+    var presets: js.UndefOr[js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]] = js.undefined
+    
     var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
+    /** @deprecated Please use `presets` instead */
     var ranges: js.UndefOr[
         Record[
           String, 
@@ -1526,6 +1540,12 @@ object esRangePickerMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
+      inline def setPresets(value: js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      
+      inline def setPresetsVarargs(value: (PresetDate[Exclude[RangeValue[DateType], Null]])*): Self = StObject.set(x, "presets", js.Array(value*))
+      
       inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
       
       inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
@@ -1683,6 +1703,9 @@ object esRangePickerMod {
     
     var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
+    var presets: js.UndefOr[js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]] = js.undefined
+    
+    /** @deprecated Please use `presets` instead */
     var ranges: js.UndefOr[
         Record[
           String, 
@@ -1802,6 +1825,12 @@ object esRangePickerMod {
       inline def setPlaceholder(value: js.Tuple2[String, String]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
+      inline def setPresets(value: js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      
+      inline def setPresetsVarargs(value: (PresetDate[Exclude[RangeValue[DateType], Null]])*): Self = StObject.set(x, "presets", js.Array(value*))
       
       inline def setRanges(
         value: Record[
@@ -2067,8 +2096,11 @@ object esRangePickerMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
+    var presets: js.UndefOr[js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]] = js.undefined
+    
     var prevIcon: js.UndefOr[ReactNode] = js.undefined
     
+    /** @deprecated Please use `presets` instead */
     var ranges: js.UndefOr[
         Record[
           String, 
@@ -2546,6 +2578,12 @@ object esRangePickerMod {
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      
+      inline def setPresets(value: js.Array[PresetDate[Exclude[RangeValue[DateType], Null]]]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      
+      inline def setPresetsVarargs(value: (PresetDate[Exclude[RangeValue[DateType], Null]])*): Self = StObject.set(x, "presets", js.Array(value*))
       
       inline def setPrevIcon(value: ReactNode): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
       

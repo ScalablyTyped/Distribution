@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayer extends StObject {
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * Adds the given listener function to the given event name. Returns an
     * identifier for this listener that can be used with {@link
     * google.maps.event.removeListener}.
@@ -23,14 +22,12 @@ trait FeatureLayer extends StObject {
   def addListener(eventName: String, handler: js.Function): MapsEventListener
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * The <code>FeatureType</code> associated with this
     * <code>FeatureLayer</code>.
     */
   var featureType: FeatureType
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * Whether this <code>FeatureLayer</code> is available, meaning whether
     * Data-driven styling is available for this map (there is a map ID using
     * vector tiles with this <code>FeatureLayer</code> enabled in the Google
@@ -41,7 +38,6 @@ trait FeatureLayer extends StObject {
   var isAvailable: Boolean
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * The style of <code>Feature</code>s in the <code>FeatureLayer</code>. The
     * style is applied when style is set. If your style function updates, you
     * must set the style property again. A <code>FeatureStyleFunction</code>

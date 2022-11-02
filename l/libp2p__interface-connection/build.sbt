@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libp2p__interface-connection"
-version := "3.0.2-31ced4"
+version := "3.0.2-0e1a61"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-22c095",
   "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-5a062f",
   "org.scalablytyped" %%% "multiformats" % "10.0.2-cc7cca",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-93ee03",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.5-752b57",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-bed8fc")
 publishArtifact in packageDoc := false

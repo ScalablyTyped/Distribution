@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "antd-mobile" : "5.25.0"
+      "antd-mobile" : "5.25.1"
     }
   ],
   "test-dependencies" : [
     {
-      "antd-mobile" : "5.25.0"
+      "antd-mobile" : "5.25.1"
     }
   ],
   "compile-devDependencies" : [

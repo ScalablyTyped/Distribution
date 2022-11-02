@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "otplib"
-version := "12.0.1-3cbf62"
+version := "12.0.1-09ce9a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "otplib__core" % "12.0.1-9b2225",
-  "org.scalablytyped" %%% "otplib__preset-v11" % "12.0.1-43e1cd",
+  "org.scalablytyped" %%% "otplib__preset-v11" % "12.0.1-cc0bbb",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

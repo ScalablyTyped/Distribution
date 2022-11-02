@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "swiper"
-version := "8.4.4-b5494d"
+version := "8.4.4-55a951"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-8684db",
-  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-92792f",
-  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-1aa4c3",
-  "org.scalablytyped" %%% "angular__common" % "14.2.8-14adc8",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-6482f2",
+  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-8f5b27",
+  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-27a8c8",
+  "org.scalablytyped" %%% "angular__common" % "14.2.8-67ad9f",
   "org.scalablytyped" %%% "angular__compiler" % "14.2.8-b9651c",
-  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-3054f0",
-  "org.scalablytyped" %%% "angular__core" % "14.2.8-aa226d",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-043aa4",
+  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-0cbe90",
+  "org.scalablytyped" %%% "angular__core" % "14.2.8-281c00",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-b67249",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-bf895e",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.0-6157ab",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-1a1261",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.1-1ab1d1",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-114ca7",
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-aa17f1",
   "org.scalablytyped" %%% "babel__types" % "7.20.0-d18d74",
   "org.scalablytyped" %%% "convert-source-map" % "1.5-dt-20211202Z-ed3b05",
@@ -24,11 +24,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dom7" % "4.0.4-d29633",
   "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-09f6eb",
   "org.scalablytyped" %%% "magic-string" % "0.26.7-deb100",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "re2" % "1.17.7-7aac79",
+  "org.scalablytyped" %%% "re2" % "1.17.7-a226e5",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
-  "org.scalablytyped" %%% "rxjs" % "7.5.7-6ed253",
+  "org.scalablytyped" %%% "rxjs" % "7.5.7-6ac0e4",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "semver" % "7.3-dt-20221026Z-e709b4",
   "org.scalablytyped" %%% "source-map" % "0.7.4-01a3bb",

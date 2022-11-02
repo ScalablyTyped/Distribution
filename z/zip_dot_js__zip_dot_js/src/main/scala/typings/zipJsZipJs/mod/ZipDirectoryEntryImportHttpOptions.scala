@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the options passed to `ZipDirectoryEntry#importHttpContent()`.
+  * Represents the options passed to {@link ZipDirectoryEntry#importHttpContent}.
   */
 trait ZipDirectoryEntryImportHttpOptions
   extends StObject

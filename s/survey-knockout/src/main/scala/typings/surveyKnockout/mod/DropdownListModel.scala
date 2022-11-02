@@ -26,11 +26,17 @@ open class DropdownListModel protected () extends Base {
   
   def inputReadOnly: Boolean = js.native
   
+  var isRunningLoadQuestionChoices: Boolean = js.native
+  
   var itemsSettings: Any = js.native
   
   def keyHandler(event: Any): Unit = js.native
   
   /* protected */ var listModel: ListModel = js.native
+  
+  var loadingItemHeight: Any = js.native
+  
+  var minPageSize: Any = js.native
   
   def onBlur(event: Any): Unit = js.native
   
@@ -48,6 +54,8 @@ open class DropdownListModel protected () extends Base {
   
   def popupModel: Any = js.native
   
+  /* protected */ def popupRecalculatePosition(isResetHeight: Boolean): Unit = js.native
+  
   /* protected */ def resetFilterString(): Unit = js.native
   
   def scrollToFocusedItem(): Unit = js.native
@@ -57,6 +65,8 @@ open class DropdownListModel protected () extends Base {
   def setInputHasValue(newValue: Boolean): Unit = js.native
   
   def setSearchEnabled(newValue: Boolean): Unit = js.native
+  
+  /* protected */ def updateAfterListModelCreated(model: ListModel): Unit = js.native
   
   def updateItems(): Unit = js.native
 }

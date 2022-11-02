@@ -11,10 +11,10 @@ object libAnchorContextMod extends Shortcut {
   
   @JSImport("antd/lib/anchor/context", JSImport.Default)
   @js.native
-  val default: Context[AntAnchor] = js.native
+  val default: Context[js.UndefOr[AntAnchor]] = js.native
   
-  type _To = Context[AntAnchor]
+  type _To = Context[js.UndefOr[AntAnchor]]
   
   /* This means you don't have to write `default`, but can instead just say `libAnchorContextMod.foo` */
-  override def _to: Context[AntAnchor] = default
+  override def _to: Context[js.UndefOr[AntAnchor]] = default
 }

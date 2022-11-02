@@ -12,30 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distComponentsProgressBarMod {
   
-  object ProgressBar {
-    
-    inline def apply(param0: ProgressBarProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    @JSImport("react-toastify/dist/components/ProgressBar", "ProgressBar")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object defaultProps {
-      
-      @JSImport("react-toastify/dist/components/ProgressBar", "ProgressBar.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("react-toastify/dist/components/ProgressBar", "ProgressBar.defaultProps.hide")
-      @js.native
-      def hide: Boolean = js.native
-      inline def hide_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hide")(x.asInstanceOf[js.Any])
-      
-      @JSImport("react-toastify/dist/components/ProgressBar", "ProgressBar.defaultProps.type")
-      @js.native
-      val `type`: TypeOptions = js.native
-    }
-  }
+  @JSImport("react-toastify/dist/components/ProgressBar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def ProgressBar(param0: ProgressBarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ProgressBarProps extends StObject {
     

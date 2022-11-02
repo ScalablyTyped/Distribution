@@ -7,6 +7,7 @@ import typings.rcTable.libInterfaceMod.CustomizeComponent
 import typings.rcTable.libInterfaceMod.DataIndex
 import typings.rcTable.libInterfaceMod.DefaultRecordType
 import typings.rcTable.libInterfaceMod.RenderedCell
+import typings.rcTable.libInterfaceMod.ScopeType
 import typings.rcTable.rcTableBooleans.`false`
 import typings.rcTable.rcTableStrings.body
 import typings.rcTable.rcTableStrings.footer
@@ -88,6 +89,8 @@ object libCellMod extends Shortcut {
     var rowSpan: js.UndefOr[Double] = js.undefined
     
     var rowType: js.UndefOr[header | body | footer] = js.undefined
+    
+    var scope: js.UndefOr[ScopeType] = js.undefined
     
     var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.undefined
   }
@@ -208,6 +211,10 @@ object libCellMod extends Shortcut {
       
       inline def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
       
+      inline def setScope(value: ScopeType): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      
       inline def setShouldCellUpdate(value: (/* record */ RecordType, /* prevRecord */ RecordType) => Boolean): Self = StObject.set(x, "shouldCellUpdate", js.Any.fromFunction2(value))
       
       inline def setShouldCellUpdateUndefined: Self = StObject.set(x, "shouldCellUpdate", js.undefined)
@@ -281,6 +288,8 @@ object libCellMod extends Shortcut {
     var rowSpan: js.UndefOr[Double] = js.undefined
     
     var rowType: js.UndefOr[header | body | footer] = js.undefined
+    
+    var scope: js.UndefOr[ScopeType] = js.undefined
     
     var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.undefined
   }
@@ -402,6 +411,10 @@ object libCellMod extends Shortcut {
       inline def setRowType(value: header | body | footer): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
       
       inline def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
+      
+      inline def setScope(value: ScopeType): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
       inline def setShouldCellUpdate(value: (/* record */ RecordType, /* prevRecord */ RecordType) => Boolean): Self = StObject.set(x, "shouldCellUpdate", js.Any.fromFunction2(value))
       

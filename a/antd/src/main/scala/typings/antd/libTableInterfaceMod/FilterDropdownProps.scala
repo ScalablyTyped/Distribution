@@ -9,6 +9,13 @@ trait FilterDropdownProps extends StObject {
   
   var clearFilters: js.UndefOr[js.Function0[Unit]] = js.native
   
+  /** Only close filterDropdown */
+  def close(): Unit = js.native
+  
+  /**
+    * Confirm filter value, if you want to close dropdown before commit, you can call with
+    * {closeDropdown: true}
+    */
   def confirm(): Unit = js.native
   def confirm(param: FilterConfirmProps): Unit = js.native
   

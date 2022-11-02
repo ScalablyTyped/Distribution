@@ -56,8 +56,6 @@ inline def binarySearch(array: js.Array[Any], itemToFind: Any, comparator: binar
 
 inline def buildModuleUrl(relativeUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildModuleUrl")(relativeUrl.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def cancelAnimationFrame(requestID: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAnimationFrame")(requestID.asInstanceOf[js.Any]).asInstanceOf[Unit]
-
 inline def clone_(`object`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
 inline def clone_(`object`: Any, deep: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[Any]
 
@@ -146,8 +144,6 @@ inline def queryToObject(queryString: String): Any = ^.asInstanceOf[js.Dynamic].
 
 inline def removeExtension(gltf: Any, `extension`: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeExtension")(gltf.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def requestAnimationFrame(callback: requestAnimationFrameCallback): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
-
 inline def sampleTerrain(terrainProvider: TerrainProvider, level: Double, positions: js.Array[Cartographic]): js.Promise[js.Array[Cartographic]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleTerrain")(terrainProvider.asInstanceOf[js.Any], level.asInstanceOf[js.Any], positions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Cartographic]]]
 
 inline def sampleTerrainMostDetailed(terrainProvider: TerrainProvider, positions: js.Array[Cartographic]): js.Promise[js.Array[Cartographic]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleTerrainMostDetailed")(terrainProvider.asInstanceOf[js.Any], positions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Cartographic]]]
@@ -174,5 +170,3 @@ type binarySearchComparator = js.Function2[/* a */ Any, /* b */ Any, Double]
 type exportKmlModelCallback = js.Function3[/* model */ ModelGraphics, /* time */ JulianDate, /* externalFiles */ Any, String]
 
 type mergeSortComparator = js.Function3[/* a */ Any, /* b */ Any, /* userDefinedObject */ js.UndefOr[Any], Double]
-
-type requestAnimationFrameCallback = js.Function1[/* timestamp */ Double, Unit]

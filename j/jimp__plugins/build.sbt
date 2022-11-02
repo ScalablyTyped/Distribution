@@ -1,33 +1,33 @@
 organization := "org.scalablytyped"
 name := "jimp__plugins"
-version := "0.16.2-6bf053"
+version := "0.16.2-e817b7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jimp__core" % "0.16.2-75b22e",
-  "org.scalablytyped" %%% "jimp__plugin-blit" % "0.16.2-6c278b",
-  "org.scalablytyped" %%% "jimp__plugin-blur" % "0.16.2-2fb3b5",
-  "org.scalablytyped" %%% "jimp__plugin-circle" % "0.16.2-4941f8",
-  "org.scalablytyped" %%% "jimp__plugin-color" % "0.16.2-71db4f",
-  "org.scalablytyped" %%% "jimp__plugin-contain" % "0.16.2-e3388e",
-  "org.scalablytyped" %%% "jimp__plugin-cover" % "0.16.2-450873",
-  "org.scalablytyped" %%% "jimp__plugin-crop" % "0.16.2-d51494",
-  "org.scalablytyped" %%% "jimp__plugin-displace" % "0.16.2-d6ab2a",
-  "org.scalablytyped" %%% "jimp__plugin-dither" % "0.16.2-071426",
-  "org.scalablytyped" %%% "jimp__plugin-fisheye" % "0.16.2-1d7797",
-  "org.scalablytyped" %%% "jimp__plugin-flip" % "0.16.2-4befc2",
-  "org.scalablytyped" %%% "jimp__plugin-gaussian" % "0.16.2-0e266b",
-  "org.scalablytyped" %%% "jimp__plugin-invert" % "0.16.2-f7493c",
-  "org.scalablytyped" %%% "jimp__plugin-mask" % "0.16.2-652eb0",
-  "org.scalablytyped" %%% "jimp__plugin-normalize" % "0.16.2-0d29f8",
-  "org.scalablytyped" %%% "jimp__plugin-print" % "0.16.2-0cc71e",
-  "org.scalablytyped" %%% "jimp__plugin-resize" % "0.16.2-81d006",
-  "org.scalablytyped" %%% "jimp__plugin-rotate" % "0.16.2-b63f78",
-  "org.scalablytyped" %%% "jimp__plugin-scale" % "0.16.2-01eade",
-  "org.scalablytyped" %%% "jimp__plugin-shadow" % "0.16.2-62951a",
-  "org.scalablytyped" %%% "jimp__plugin-threshold" % "0.16.2-e045a2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221030Z-57fc1b",
+  "org.scalablytyped" %%% "jimp__core" % "0.16.2-8d6812",
+  "org.scalablytyped" %%% "jimp__plugin-blit" % "0.16.2-677d7b",
+  "org.scalablytyped" %%% "jimp__plugin-blur" % "0.16.2-88aee8",
+  "org.scalablytyped" %%% "jimp__plugin-circle" % "0.16.2-3b5fb5",
+  "org.scalablytyped" %%% "jimp__plugin-color" % "0.16.2-a88e61",
+  "org.scalablytyped" %%% "jimp__plugin-contain" % "0.16.2-6c575d",
+  "org.scalablytyped" %%% "jimp__plugin-cover" % "0.16.2-b7ca52",
+  "org.scalablytyped" %%% "jimp__plugin-crop" % "0.16.2-a4788d",
+  "org.scalablytyped" %%% "jimp__plugin-displace" % "0.16.2-b3da6f",
+  "org.scalablytyped" %%% "jimp__plugin-dither" % "0.16.2-329a81",
+  "org.scalablytyped" %%% "jimp__plugin-fisheye" % "0.16.2-7bdf37",
+  "org.scalablytyped" %%% "jimp__plugin-flip" % "0.16.2-7d4f2d",
+  "org.scalablytyped" %%% "jimp__plugin-gaussian" % "0.16.2-f082ee",
+  "org.scalablytyped" %%% "jimp__plugin-invert" % "0.16.2-d9fe4e",
+  "org.scalablytyped" %%% "jimp__plugin-mask" % "0.16.2-a5118a",
+  "org.scalablytyped" %%% "jimp__plugin-normalize" % "0.16.2-c9342f",
+  "org.scalablytyped" %%% "jimp__plugin-print" % "0.16.2-d41373",
+  "org.scalablytyped" %%% "jimp__plugin-resize" % "0.16.2-28a081",
+  "org.scalablytyped" %%% "jimp__plugin-rotate" % "0.16.2-0c4c8b",
+  "org.scalablytyped" %%% "jimp__plugin-scale" % "0.16.2-6fb893",
+  "org.scalablytyped" %%% "jimp__plugin-shadow" % "0.16.2-0bbe6d",
+  "org.scalablytyped" %%% "jimp__plugin-threshold" % "0.16.2-3334e0",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

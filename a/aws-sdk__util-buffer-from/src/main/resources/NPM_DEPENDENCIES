@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/util-buffer-from" : "3.188.0"
+      "@aws-sdk/util-buffer-from" : "3.201.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/util-buffer-from" : "3.188.0"
+      "@aws-sdk/util-buffer-from" : "3.201.0"
     }
   ],
   "compile-devDependencies" : [

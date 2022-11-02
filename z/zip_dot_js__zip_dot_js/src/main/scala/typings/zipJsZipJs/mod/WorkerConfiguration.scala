@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents configuration passed to `configure()`, the constructor of `ZipReader`, `ZipReader#getData()`, the constructor of `ZipWriter`, and `ZipWriter#add()`.
+  * Represents configuration passed to {@link configure}, the constructor of {@link ZipReader}, {@link Entry#getData}, the constructor of {@link ZipWriter}, and {@link ZipWriter#add}.
   */
 trait WorkerConfiguration extends StObject {
   
   /**
-    * `true` to use the API `CompressionStream`/`DecompressionStream` to compress/decompress data.
+    * `true` to use the native API `CompressionStream`/`DecompressionStream` to compress/decompress data.
     * 
     * @defaultValue true
     */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-tabs
 
-Typings are for version 12.2.1
+Typings are for version 12.2.2
 
 ## Library description:
 tabs ui component for react

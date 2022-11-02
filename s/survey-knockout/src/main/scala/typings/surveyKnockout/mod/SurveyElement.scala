@@ -92,7 +92,7 @@ open class SurveyElement[E] protected ()
   /* InferMemberOverrides */
   override def getType(): String = js.native
   
-  /* protected */ def getUseDisplayValuesInTitle(): Boolean = js.native
+  /* protected */ def getUseDisplayValuesInDynamicTexts(): Boolean = js.native
   
   /* protected */ def getValidName(name: String): String = js.native
   

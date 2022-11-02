@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class QuestionMatrixDropdownRenderedTable protected () extends Base {
   def this(matrix: QuestionMatrixDropdownModelBase) = this()
   
+  def allowRowsDragAndDrop: Boolean = js.native
+  
   /* protected */ def build(): Unit = js.native
   
   /* protected */ def buildFooter(): Unit = js.native

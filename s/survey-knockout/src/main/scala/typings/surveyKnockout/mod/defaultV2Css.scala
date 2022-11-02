@@ -10,7 +10,7 @@ import typings.surveyKnockout.anon.CellRequiredText
 import typings.surveyKnockout.anon.CellText
 import typings.surveyKnockout.anon.CheckboxItem
 import typings.surveyKnockout.anon.ChooseFileAsIcon
-import typings.surveyKnockout.anon.CleanItemButtonIconId
+import typings.surveyKnockout.anon.CleanItemButton
 import typings.surveyKnockout.anon.ClearButtonIconId
 import typings.surveyKnockout.anon.Collapsed
 import typings.surveyKnockout.anon.Complete
@@ -372,8 +372,8 @@ object defaultV2Css {
   
   @JSImport("survey-knockout", "defaultV2Css.tagbox")
   @js.native
-  def tagbox: CleanItemButtonIconId = js.native
-  inline def tagbox_=(x: CleanItemButtonIconId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
+  def tagbox: CleanItemButton = js.native
+  inline def tagbox_=(x: CleanItemButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultV2Css.text")
   @js.native

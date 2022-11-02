@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-textarea
 
-Typings are for version 0.4.5
+Typings are for version 0.4.6
 
 ## Library description:
 Pretty Textarea react component used in used in ant.design

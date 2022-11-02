@@ -11,7 +11,6 @@ import typings.reactToastify.distComponentsProgressBarMod.ProgressBarProps
 import typings.reactToastify.distTypesMod.ToastContainerProps
 import typings.reactToastify.distTypesMod.ToastProps
 import typings.reactToastify.distTypesMod.ToastTransitionProps
-import typings.reactToastify.distTypesMod.TypeOptions
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -61,30 +60,7 @@ object distComponentsMod {
     inline def warning_=(x: js.Function1[/* props */ BuiltInIconProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
-  object ProgressBar {
-    
-    inline def apply(param0: ProgressBarProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    @JSImport("react-toastify/dist/components", "ProgressBar")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object defaultProps {
-      
-      @JSImport("react-toastify/dist/components", "ProgressBar.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("react-toastify/dist/components", "ProgressBar.defaultProps.hide")
-      @js.native
-      def hide: Boolean = js.native
-      inline def hide_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hide")(x.asInstanceOf[js.Any])
-      
-      @JSImport("react-toastify/dist/components", "ProgressBar.defaultProps.type")
-      @js.native
-      val `type`: TypeOptions = js.native
-    }
-  }
+  inline def ProgressBar(param0: ProgressBarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Slide(param0: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Slide")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   

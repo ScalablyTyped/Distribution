@@ -12,7 +12,7 @@ open class Reader[Type] protected ()
      with Initializable
      with ReadableReader {
   /**
-    * Creates the `Reader` instance
+    * Creates the {@link Reader} instance
     * 
     * @param value The data to read.
     */

@@ -1,6 +1,7 @@
 package typings.redisBloom.anon
 
-import typings.redisBloom.distCommandsBloomInsertMod.InsertOptions
+import typings.redisBloom.distCommandsCuckooMod.InsertOptions
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
 import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,19 +13,20 @@ trait TransformReply extends StObject {
   val FIRST_KEY_INDEX: /* 1 */ Double = js.native
   
   def transformArguments(key: String, items: String): RedisCommandArguments = js.native
-  def transformArguments(key: String, items: String, options: InsertOptions): js.Array[String] = js.native
-  def transformArguments(key: String, items: String, options: typings.redisBloom.distCommandsCuckooMod.InsertOptions): RedisCommandArguments = js.native
-  def transformArguments(key: String, items: js.Array[String]): RedisCommandArguments = js.native
-  def transformArguments(key: String, items: js.Array[String], options: InsertOptions): js.Array[String] = js.native
+  def transformArguments(key: String, items: String, options: InsertOptions): RedisCommandArguments = js.native
+  def transformArguments(key: String, items: js.Array[RedisCommandArgument | String]): RedisCommandArguments = js.native
   def transformArguments(
     key: String,
-    items: js.Array[String],
-    options: typings.redisBloom.distCommandsCuckooMod.InsertOptions
+    items: js.Array[RedisCommandArgument],
+    options: typings.redisBloom.distCommandsBloomInsertMod.InsertOptions
   ): RedisCommandArguments = js.native
-  @JSName("transformArguments")
-  def transformArguments_Array(key: String, items: String): js.Array[String] = js.native
-  @JSName("transformArguments")
-  def transformArguments_Array(key: String, items: js.Array[String]): js.Array[String] = js.native
+  def transformArguments(key: String, items: js.Array[String], options: InsertOptions): RedisCommandArguments = js.native
+  def transformArguments(key: String, items: RedisCommandArgument): RedisCommandArguments = js.native
+  def transformArguments(
+    key: String,
+    items: RedisCommandArgument,
+    options: typings.redisBloom.distCommandsBloomInsertMod.InsertOptions
+  ): RedisCommandArguments = js.native
   
   def transformReply(reply: js.Array[Double]): js.Array[Boolean] = js.native
 }

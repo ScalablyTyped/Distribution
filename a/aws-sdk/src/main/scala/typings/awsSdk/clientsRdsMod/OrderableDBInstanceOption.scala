@@ -57,6 +57,16 @@ trait OrderableDBInstanceOption extends StObject {
   var MaxStorageSize: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
+    * Maximum storage throughput for a DB instance.
+    */
+  var MaxStorageThroughputPerDbInstance: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * Maximum storage throughput to provisioned IOPS ratio for a DB instance.
+    */
+  var MaxStorageThroughputPerIops: js.UndefOr[DoubleOptional] = js.undefined
+  
+  /**
     * Minimum total provisioned IOPS for a DB instance.
     */
   var MinIopsPerDbInstance: js.UndefOr[IntegerOptional] = js.undefined
@@ -70,6 +80,16 @@ trait OrderableDBInstanceOption extends StObject {
     * Minimum storage size for a DB instance.
     */
   var MinStorageSize: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * Minimum storage throughput for a DB instance.
+    */
+  var MinStorageThroughputPerDbInstance: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * Minimum storage throughput to provisioned IOPS ratio for a DB instance.
+    */
+  var MinStorageThroughputPerIops: js.UndefOr[DoubleOptional] = js.undefined
   
   /**
     * Indicates whether a DB instance is Multi-AZ capable.
@@ -152,6 +172,11 @@ trait OrderableDBInstanceOption extends StObject {
   var SupportsStorageEncryption: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Indicates whether a DB instance supports storage throughput.
+    */
+  var SupportsStorageThroughput: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Indicates whether a DB instance is in a VPC.
     */
   var Vpc: js.UndefOr[Boolean] = js.undefined
@@ -209,6 +234,14 @@ object OrderableDBInstanceOption {
     
     inline def setMaxStorageSizeUndefined: Self = StObject.set(x, "MaxStorageSize", js.undefined)
     
+    inline def setMaxStorageThroughputPerDbInstance(value: IntegerOptional): Self = StObject.set(x, "MaxStorageThroughputPerDbInstance", value.asInstanceOf[js.Any])
+    
+    inline def setMaxStorageThroughputPerDbInstanceUndefined: Self = StObject.set(x, "MaxStorageThroughputPerDbInstance", js.undefined)
+    
+    inline def setMaxStorageThroughputPerIops(value: DoubleOptional): Self = StObject.set(x, "MaxStorageThroughputPerIops", value.asInstanceOf[js.Any])
+    
+    inline def setMaxStorageThroughputPerIopsUndefined: Self = StObject.set(x, "MaxStorageThroughputPerIops", js.undefined)
+    
     inline def setMinIopsPerDbInstance(value: IntegerOptional): Self = StObject.set(x, "MinIopsPerDbInstance", value.asInstanceOf[js.Any])
     
     inline def setMinIopsPerDbInstanceUndefined: Self = StObject.set(x, "MinIopsPerDbInstance", js.undefined)
@@ -220,6 +253,14 @@ object OrderableDBInstanceOption {
     inline def setMinStorageSize(value: IntegerOptional): Self = StObject.set(x, "MinStorageSize", value.asInstanceOf[js.Any])
     
     inline def setMinStorageSizeUndefined: Self = StObject.set(x, "MinStorageSize", js.undefined)
+    
+    inline def setMinStorageThroughputPerDbInstance(value: IntegerOptional): Self = StObject.set(x, "MinStorageThroughputPerDbInstance", value.asInstanceOf[js.Any])
+    
+    inline def setMinStorageThroughputPerDbInstanceUndefined: Self = StObject.set(x, "MinStorageThroughputPerDbInstance", js.undefined)
+    
+    inline def setMinStorageThroughputPerIops(value: DoubleOptional): Self = StObject.set(x, "MinStorageThroughputPerIops", value.asInstanceOf[js.Any])
+    
+    inline def setMinStorageThroughputPerIopsUndefined: Self = StObject.set(x, "MinStorageThroughputPerIops", js.undefined)
     
     inline def setMultiAZCapable(value: Boolean): Self = StObject.set(x, "MultiAZCapable", value.asInstanceOf[js.Any])
     
@@ -290,6 +331,10 @@ object OrderableDBInstanceOption {
     inline def setSupportsStorageEncryption(value: Boolean): Self = StObject.set(x, "SupportsStorageEncryption", value.asInstanceOf[js.Any])
     
     inline def setSupportsStorageEncryptionUndefined: Self = StObject.set(x, "SupportsStorageEncryption", js.undefined)
+    
+    inline def setSupportsStorageThroughput(value: Boolean): Self = StObject.set(x, "SupportsStorageThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsStorageThroughputUndefined: Self = StObject.set(x, "SupportsStorageThroughput", js.undefined)
     
     inline def setVpc(value: Boolean): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
     

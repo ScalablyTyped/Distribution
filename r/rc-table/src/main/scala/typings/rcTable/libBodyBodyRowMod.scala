@@ -60,6 +60,8 @@ object libBodyBodyRowMod {
     
     var rowKey: typings.react.mod.Key
     
+    var scopeCellComponent: CustomizeComponent
+    
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object BodyRowProps {
@@ -76,9 +78,10 @@ object libBodyBodyRowMod {
       renderIndex: Double,
       rowComponent: CustomizeComponent,
       rowExpandable: RecordType => Boolean,
-      rowKey: typings.react.mod.Key
+      rowKey: typings.react.mod.Key,
+      scopeCellComponent: CustomizeComponent
     ): BodyRowProps[RecordType] = {
-      val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], childrenColumnName = childrenColumnName.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], getRowKey = js.Any.fromFunction2(getRowKey), index = index.asInstanceOf[js.Any], onRow = js.Any.fromFunction2(onRow), record = record.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any], renderIndex = renderIndex.asInstanceOf[js.Any], rowComponent = rowComponent.asInstanceOf[js.Any], rowExpandable = js.Any.fromFunction1(rowExpandable), rowKey = rowKey.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], childrenColumnName = childrenColumnName.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], getRowKey = js.Any.fromFunction2(getRowKey), index = index.asInstanceOf[js.Any], onRow = js.Any.fromFunction2(onRow), record = record.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any], renderIndex = renderIndex.asInstanceOf[js.Any], rowComponent = rowComponent.asInstanceOf[js.Any], rowExpandable = js.Any.fromFunction1(rowExpandable), rowKey = rowKey.asInstanceOf[js.Any], scopeCellComponent = scopeCellComponent.asInstanceOf[js.Any])
       __obj.asInstanceOf[BodyRowProps[RecordType]]
     }
     
@@ -115,6 +118,8 @@ object libBodyBodyRowMod {
       inline def setRowExpandable(value: RecordType => Boolean): Self = StObject.set(x, "rowExpandable", js.Any.fromFunction1(value))
       
       inline def setRowKey(value: typings.react.mod.Key): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+      
+      inline def setScopeCellComponent(value: CustomizeComponent): Self = StObject.set(x, "scopeCellComponent", value.asInstanceOf[js.Any])
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

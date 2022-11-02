@@ -109,6 +109,8 @@ object libStepsMod extends Shortcut {
     
     var initial: js.UndefOr[Double] = js.undefined
     
+    var items: js.UndefOr[js.Array[StepProps]] = js.undefined
+    
     var labelPlacement: js.UndefOr[horizontal | vertical] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.undefined
@@ -161,6 +163,12 @@ object libStepsMod extends Shortcut {
       inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
       inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+      
+      inline def setItems(value: js.Array[StepProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      
+      inline def setItemsVarargs(value: StepProps*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLabelPlacement(value: horizontal | vertical): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
       

@@ -68,6 +68,10 @@ trait Object[T /* <: Attributes */] extends StObject {
   def destroy(): js.Promise[this.type] = js.native
   def destroy(options: DestroyOptions): js.Promise[this.type] = js.native
   
+  /** EventuallyQueue API; added in version 3.0.0 */
+  def destroyEventually(): js.Promise[this.type] = js.native
+  def destroyEventually(options: DestroyOptions): js.Promise[this.type] = js.native
+  
   def dirty(): Boolean = js.native
   def dirty(attr: Extract[/* keyof T */ String, String]): Boolean = js.native
   
@@ -145,6 +149,10 @@ trait Object[T /* <: Attributes */] extends StObject {
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends undefined ? never : T[K] */ js.Any,
     options: SaveOptions
   ): js.Promise[this.type] = js.native
+  
+  /** EventuallyQueue API; added in version 3.0.0 */
+  def saveEventually(): js.Promise[this.type] = js.native
+  def saveEventually(options: SaveOptions): js.Promise[this.type] = js.native
   
   def set[K /* <: Extract[/* keyof T */ String, String] */](attrs: (Pick[T, K]) | T): this.type | `false` = js.native
   def set[K /* <: Extract[/* keyof T */ String, String] */](attrs: (Pick[T, K]) | T, options: SetOptions): this.type | `false` = js.native

@@ -11,14 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait MapCapabilities extends StObject {
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    */
   var isAdvancedMarkersAvailable: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    */
   var isDataDrivenStylingAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object MapCapabilities {

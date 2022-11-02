@@ -3,6 +3,7 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.libDropdownDropdownMod.DropdownProps
 import typings.antd.libDropdownDropdownMod.OverlayFunc
+import typings.antd.libMenuMod.MenuProps
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -39,8 +40,11 @@ object libBreadcrumbBreadcrumbItemMod extends Shortcut {
     
     var href: js.UndefOr[String] = js.undefined
     
+    var menu: js.UndefOr[MenuProps] = js.undefined
+    
     var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement | HTMLSpanElement]] = js.undefined
     
+    /** @deprecated Please use `menu` instead */
     var overlay: js.UndefOr[ReactElement | OverlayFunc] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
@@ -71,6 +75,10 @@ object libBreadcrumbBreadcrumbItemMod extends Shortcut {
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
       inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      
+      inline def setMenu(value: MenuProps): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
       inline def setOnClick(value: MouseEvent[HTMLAnchorElement | HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       

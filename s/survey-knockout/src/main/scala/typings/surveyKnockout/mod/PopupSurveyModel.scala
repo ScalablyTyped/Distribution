@@ -68,6 +68,8 @@ open class PopupSurveyModel protected () extends Base {
   
   /* protected */ def onSurveyComplete(): Unit = js.native
   
+  def renderedWidth: String = js.native
+  
   /*
     * Show the popup window
     */
@@ -89,6 +91,8 @@ open class PopupSurveyModel protected () extends Base {
     */
   def title: String = js.native
   def title_=(`val`: String): Unit = js.native
+  
+  var width: String = js.native
   
   var windowElement: Any = js.native
 }

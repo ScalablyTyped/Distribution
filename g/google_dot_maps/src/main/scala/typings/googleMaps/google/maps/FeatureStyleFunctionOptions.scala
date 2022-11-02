@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureStyleFunctionOptions extends StObject {
   
   /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
     * <code>Feature</code> passed into the <code>FeatureStyleFunction</code>
     * for styling.
     */

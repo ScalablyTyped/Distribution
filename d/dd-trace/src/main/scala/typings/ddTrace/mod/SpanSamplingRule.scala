@@ -1,6 +1,5 @@
 package typings.ddTrace.mod
 
-import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait SpanSamplingRule extends StObject {
   /**
     * Maximum number of spans matching a span sampling rule to be allowed per second.
     */
-  var maxPerSecond: js.UndefOr[Number] = js.undefined
+  var maxPerSecond: js.UndefOr[Double] = js.undefined
   
   /**
     * Operation name or pattern on which to apply this rule. The rule will apply to all operation names if not provided.
@@ -20,7 +19,7 @@ trait SpanSamplingRule extends StObject {
   /**
     * Sampling rate for this rule. Will default to 1.0 (always) if not provided.
     */
-  var sampleRate: js.UndefOr[Number] = js.undefined
+  var sampleRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Service name or pattern on which to apply this rule. The rule will apply to all services if not provided.
@@ -36,7 +35,7 @@ object SpanSamplingRule {
   
   extension [Self <: SpanSamplingRule](x: Self) {
     
-    inline def setMaxPerSecond(value: Number): Self = StObject.set(x, "maxPerSecond", value.asInstanceOf[js.Any])
+    inline def setMaxPerSecond(value: Double): Self = StObject.set(x, "maxPerSecond", value.asInstanceOf[js.Any])
     
     inline def setMaxPerSecondUndefined: Self = StObject.set(x, "maxPerSecond", js.undefined)
     
@@ -44,7 +43,7 @@ object SpanSamplingRule {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setSampleRate(value: Number): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
     inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     

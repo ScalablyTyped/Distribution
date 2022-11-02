@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cesium"
-version := "1.98.1-5c5e94"
+version := "1.99.0-92bb6b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

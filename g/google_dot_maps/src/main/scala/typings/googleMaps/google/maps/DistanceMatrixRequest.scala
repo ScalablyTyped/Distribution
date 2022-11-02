@@ -50,7 +50,7 @@ trait DistanceMatrixRequest extends StObject {
     * href="https://developers.google.com/maps/faq#languagesupport">list of
     * supported languages</a>.
     */
-  var language: js.UndefOr[String | Null] = js.undefined
+  var language: js.UndefOr[Null | String] = js.undefined
   
   /**
     * An array containing origin address strings, or <code>LatLng</code>, or
@@ -70,7 +70,7 @@ trait DistanceMatrixRequest extends StObject {
     * (technically for the entity of &quot;The United Kingdom of Great Britain
     * and Northern Ireland&quot;).
     */
-  var region: js.UndefOr[String | Null] = js.undefined
+  var region: js.UndefOr[Null | String] = js.undefined
   
   /**
     * Settings that apply only to requests where <code>travelMode</code> is

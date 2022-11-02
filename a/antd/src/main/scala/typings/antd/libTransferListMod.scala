@@ -1,7 +1,6 @@
 package typings.antd
 
 import typings.antd.anon.BodyContent
-import typings.antd.anon.DataSource
 import typings.antd.anon.Direction
 import typings.antd.anon.Disabled
 import typings.antd.anon.FilteredItems
@@ -37,18 +36,6 @@ object libTransferListMod {
   @js.native
   open class default[RecordType /* <: KeyWiseTransferItem */] protected () extends TransferList[RecordType] {
     def this(props: TransferListProps[RecordType]) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("antd/lib/transfer/list", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd/lib/transfer/list", "default.defaultProps")
-    @js.native
-    def defaultProps: DataSource = js.native
-    inline def defaultProps_=(x: DataSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type RenderListFunction[T] = js.Function1[/* props */ TransferListBodyProps[T], ReactNode]

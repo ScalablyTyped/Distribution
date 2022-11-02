@@ -7,8 +7,10 @@ import typings.redisGraph.anon.TypeofEXPLAIN
 import typings.redisGraph.anon.TypeofLIST
 import typings.redisGraph.anon.TypeofPROFILE
 import typings.redisGraph.anon.TypeofQUERY
-import typings.redisGraph.anon.TypeofQUERYRO
+import typings.redisGraph.anon.TypeofROQUERY
 import typings.redisGraph.anon.TypeofSLOWLOG
+import typings.redisGraph.distGraphMod.GraphClientType
+import typings.redisGraph.distGraphMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,12 +61,12 @@ object mod {
     @js.native
     def QUERY_ : TypeofQUERY = js.native
     
-    @JSImport("@redis/graph", "default.QUERY_RO")
-    @js.native
-    def QUERY_RO: TypeofQUERYRO = js.native
-    inline def QUERY_RO_=(x: TypeofQUERYRO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUERY_RO")(x.asInstanceOf[js.Any])
-    
     inline def QUERY__=(x: TypeofQUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUERY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/graph", "default.RO_QUERY")
+    @js.native
+    def RO_QUERY: TypeofROQUERY = js.native
+    inline def RO_QUERY_=(x: TypeofROQUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RO_QUERY")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/graph", "default.SLOWLOG")
     @js.native
@@ -105,17 +107,22 @@ object mod {
     @JSImport("@redis/graph", "default.query")
     @js.native
     def query: TypeofQUERY = js.native
-    
-    @JSImport("@redis/graph", "default.queryRo")
-    @js.native
-    def queryRo: TypeofQUERYRO = js.native
-    inline def queryRo_=(x: TypeofQUERYRO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryRo")(x.asInstanceOf[js.Any])
-    
     inline def query_=(x: TypeofQUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("query")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/graph", "default.roQuery")
+    @js.native
+    def roQuery: TypeofROQUERY = js.native
+    inline def roQuery_=(x: TypeofROQUERY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roQuery")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/graph", "default.slowLog")
     @js.native
     def slowLog: TypeofSLOWLOG = js.native
     inline def slowLog_=(x: TypeofSLOWLOG): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slowLog")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@redis/graph", "Graph")
+  @js.native
+  open class Graph protected () extends default {
+    def this(client: GraphClientType, name: String) = this()
   }
 }

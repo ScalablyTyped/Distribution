@@ -45,7 +45,11 @@ open class QuestionRankingModel protected () extends QuestionCheckboxModel {
   var localeChanged_FQuestionRankingModel: Any = js.native
   
   /*
-    * For mobile devices. Set this property to false, to disable the "long tap" before drag start. Default is true.
+    * Specifies whether to use a long tap (press and hold) gesture to start dragging.
+    * 
+    * Default value: `true`
+    * 
+    * Disable this property if you want to start dragging when users perform a scroll gesture.
     */
   def longTap: Boolean = js.native
   def longTap_=(`val`: Boolean): Unit = js.native

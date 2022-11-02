@@ -8,31 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@zip.js/zip.js", "SplitZipWriter")
 @js.native
-open class SplitZipWriter protected ()
-  extends StObject
-     with Initializable
-     with WritableWriter {
+open class SplitZipWriter protected () extends SplitDataWriter {
   /**
-    * Creates the `SplitZipWriter` instance
+    * Creates the {@link SplitDataWriter} instance
     * 
     * @param writerGenerator The MIME type of the content.
-    * @param maxSize The maximum size of the data written into `Writer` instances (default: 4GB).
+    * @param maxSize The maximum size of the data written into {@link Writer} instances (default: 4GB).
     */
   def this(writerGenerator: AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Boolean, Any]) = this()
   def this(
     writerGenerator: AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Boolean, Any],
     maxSize: Double
   ) = this()
-  
-  /**
-    * Initializes the instance asynchronously
-    */
-  @JSName("init")
-  def init_MSplitZipWriter(): js.Promise[Unit] = js.native
-  
-  /**
-    * The `WritableStream` instance.
-    */
-  /* CompleteClass */
-  var writable: WritableStream[Any] = js.native
 }

@@ -4,6 +4,7 @@ import typings.framebus.distLibTypesMod.FramebusOnHandler
 import typings.framebus.distLibTypesMod.FramebusReplyHandler
 import typings.framebus.distLibTypesMod.FramebusSubscriberArg
 import typings.framebus.distLibTypesMod.global.Window
+import typings.std.HTMLIFrameElement
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,6 +16,9 @@ object distFramebusMod {
   @js.native
   open class Framebus () extends StObject {
     def this(options: FramebusOptions) = this()
+    
+    def addTargetFrame(frame: Window): Unit = js.native
+    def addTargetFrame(frame: HTMLIFrameElement): Unit = js.native
     
     var channel: String = js.native
     
@@ -30,9 +34,15 @@ object distFramebusMod {
     def emitAsPromise[T](eventName: String): js.Promise[T] = js.native
     def emitAsPromise[T](eventName: String, data: FramebusSubscriberArg): js.Promise[T] = js.native
     
+    /* private */ var hasAdditionalChecksForOnListeners: Any = js.native
+    
+    /* private */ var hasMatchingTargetFrame: Any = js.native
+    
     def include(childWindow: Window): Boolean = js.native
     
     /* private */ var isDestroyed: Any = js.native
+    
+    /* private */ var limitBroadcastToFramesArray: Any = js.native
     
     /* private */ var listeners: Any = js.native
     
@@ -44,8 +54,14 @@ object distFramebusMod {
     
     var origin: String = js.native
     
+    /* private */ var passesVerifyDomainCheck: Any = js.native
+    
     def target(): Framebus = js.native
     def target(options: FramebusOptions): Framebus = js.native
+    
+    var targetFrames: IFrameOrWindowList = js.native
+    
+    /* private */ var targetFramesAsWindows: Any = js.native
     
     def teardown(): Unit = js.native
     
@@ -75,6 +91,8 @@ object distFramebusMod {
     
     var origin: js.UndefOr[String] = js.undefined
     
+    var targetFrames: js.UndefOr[IFrameOrWindowList] = js.undefined
+    
     var verifyDomain: js.UndefOr[VerifyDomainMethod] = js.undefined
   }
   object FramebusOptions {
@@ -94,11 +112,19 @@ object distFramebusMod {
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
+      inline def setTargetFrames(value: IFrameOrWindowList): Self = StObject.set(x, "targetFrames", value.asInstanceOf[js.Any])
+      
+      inline def setTargetFramesUndefined: Self = StObject.set(x, "targetFrames", js.undefined)
+      
+      inline def setTargetFramesVarargs(value: (HTMLIFrameElement | Window)*): Self = StObject.set(x, "targetFrames", js.Array(value*))
+      
       inline def setVerifyDomain(value: /* domain */ String => Boolean): Self = StObject.set(x, "verifyDomain", js.Any.fromFunction1(value))
       
       inline def setVerifyDomainUndefined: Self = StObject.set(x, "verifyDomain", js.undefined)
     }
   }
+  
+  type IFrameOrWindowList = js.Array[HTMLIFrameElement | Window]
   
   type VerifyDomainMethod = js.Function1[/* domain */ String, Boolean]
 }

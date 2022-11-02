@@ -1,7 +1,7 @@
 
 # Scala.js typings for docusign-esign
 
-Typings are for version 5.6
+Typings are for version 5.19
 
 ## Library description:
 DocuSign Node.js API client.

@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WritableWriter extends StObject {
   
   /**
+    * The maximum size of split data when creating a {@link ZipWriter} instance or when calling {@link Entry#getData} with a generator of {@link WritableWriter} instances.
+    */
+  var maxSize: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The `WritableStream` instance.
     */
   var writable: WritableStream[Any]
@@ -23,6 +28,10 @@ object WritableWriter {
   }
   
   extension [Self <: WritableWriter](x: Self) {
+    
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     inline def setWritable(value: WritableStream[Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }

@@ -9,6 +9,8 @@ trait IRoutePanel extends StObject {
   
   def getRoute(): MultiRoute
   
+  def getRouteAsync(): js.Promise[MultiRoute]
+  
   var options: IOptionManager
   
   var state: IDataManager
@@ -17,14 +19,22 @@ trait IRoutePanel extends StObject {
 }
 object IRoutePanel {
   
-  inline def apply(getRoute: () => MultiRoute, options: IOptionManager, state: IDataManager, switchPoints: () => Unit): IRoutePanel = {
-    val __obj = js.Dynamic.literal(getRoute = js.Any.fromFunction0(getRoute), options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], switchPoints = js.Any.fromFunction0(switchPoints))
+  inline def apply(
+    getRoute: () => MultiRoute,
+    getRouteAsync: () => js.Promise[MultiRoute],
+    options: IOptionManager,
+    state: IDataManager,
+    switchPoints: () => Unit
+  ): IRoutePanel = {
+    val __obj = js.Dynamic.literal(getRoute = js.Any.fromFunction0(getRoute), getRouteAsync = js.Any.fromFunction0(getRouteAsync), options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], switchPoints = js.Any.fromFunction0(switchPoints))
     __obj.asInstanceOf[IRoutePanel]
   }
   
   extension [Self <: IRoutePanel](x: Self) {
     
     inline def setGetRoute(value: () => MultiRoute): Self = StObject.set(x, "getRoute", js.Any.fromFunction0(value))
+    
+    inline def setGetRouteAsync(value: () => js.Promise[MultiRoute]): Self = StObject.set(x, "getRouteAsync", js.Any.fromFunction0(value))
     
     inline def setOptions(value: IOptionManager): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-input
 
-Typings are for version 0.1.2
+Typings are for version 0.1.4
 
 ## Library description:
 React input component

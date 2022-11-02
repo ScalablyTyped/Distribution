@@ -5,7 +5,7 @@ import typings.surveyKnockout.anon.ButtonPrevDisabled
 import typings.surveyKnockout.anon.CellTextDisabled
 import typings.surveyKnockout.anon.CheckboxItemChecked
 import typings.surveyKnockout.anon.ChoiceCell
-import typings.surveyKnockout.anon.CleanItemButton
+import typings.surveyKnockout.anon.CleanButtonSvg
 import typings.surveyKnockout.anon.Complete
 import typings.surveyKnockout.anon.ContentLeft
 import typings.surveyKnockout.anon.ControlInputFieldComponent
@@ -328,8 +328,8 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.tagbox")
   @js.native
-  def tagbox: CleanItemButton = js.native
-  inline def tagbox_=(x: CleanItemButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
+  def tagbox: CleanButtonSvg = js.native
+  inline def tagbox_=(x: CleanButtonSvg): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.text")
   @js.native

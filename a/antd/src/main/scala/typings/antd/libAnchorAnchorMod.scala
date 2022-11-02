@@ -1,19 +1,13 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.ActiveLink
 import typings.antd.anon.Href
-import typings.antd.libConfigProviderContextMod.ConfigConsumerProps
-import typings.memoizeOne.mod.MemoizedFn
 import typings.react.mod.CSSProperties
-import typings.react.mod.Component
-import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
-import typings.std.HTMLSpanElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,72 +17,7 @@ object libAnchorAnchorMod extends Shortcut {
   
   @JSImport("antd/lib/anchor/Anchor", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[AnchorProps & RefAttributes[Anchor]] = js.native
-  
-  @js.native
-  trait Anchor extends Component[InternalAnchorProps, AnchorState, ConfigConsumerProps] {
-    
-    /* private */ var animating: Any = js.native
-    
-    @JSName("componentDidMount")
-    def componentDidMount_MAnchor(): Unit = js.native
-    
-    @JSName("componentDidUpdate")
-    def componentDidUpdate_MAnchor(): Unit = js.native
-    
-    @JSName("componentWillUnmount")
-    def componentWillUnmount_MAnchor(): Unit = js.native
-    
-    @JSName("context")
-    var context_Anchor: ConfigConsumerProps = js.native
-    
-    def getContainer(): AnchorContainer = js.native
-    
-    def getCurrentAnchor(): String = js.native
-    def getCurrentAnchor(offsetTop: Double): String = js.native
-    def getCurrentAnchor(offsetTop: Double, bounds: Double): String = js.native
-    def getCurrentAnchor(offsetTop: Unit, bounds: Double): String = js.native
-    
-    var getMemoizedContextValue: MemoizedFn[
-        js.Function2[
-          /* link */ String | Null, 
-          /* onClickFn */ js.UndefOr[
-            js.Function2[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Href, Unit]
-          ], 
-          AntAnchor
-        ]
-      ] = js.native
-    
-    def handleScroll(): Unit = js.native
-    
-    def handleScrollTo(link: String): Unit = js.native
-    
-    /* private */ var inkNode: Any = js.native
-    
-    /* private */ var links: Any = js.native
-    
-    /* private */ var prefixCls: Any = js.native
-    
-    def registerLink(link: String): Unit = js.native
-    
-    def saveInkNode(node: HTMLSpanElement): Unit = js.native
-    
-    /* private */ var scrollContainer: Any = js.native
-    
-    /* private */ var scrollEvent: Any = js.native
-    
-    def setCurrentActiveLink(link: String): Unit = js.native
-    def setCurrentActiveLink(link: String, triggerChange: Boolean): Unit = js.native
-    
-    @JSName("state")
-    var state_Anchor: ActiveLink = js.native
-    
-    def unregisterLink(link: String): Unit = js.native
-    
-    def updateInk(): Unit = js.native
-    
-    /* private */ var wrapperRef: Any = js.native
-  }
+  val default: FC[AnchorProps] = js.native
   
   type AnchorContainer = HTMLElement | Window
   
@@ -281,29 +210,8 @@ object libAnchorAnchorMod extends Shortcut {
     }
   }
   
-  type InternalAnchorClass = Anchor
-  
-  trait InternalAnchorProps
-    extends StObject
-       with AnchorProps {
-    
-    var anchorPrefixCls: String
-  }
-  object InternalAnchorProps {
-    
-    inline def apply(anchorPrefixCls: String): InternalAnchorProps = {
-      val __obj = js.Dynamic.literal(anchorPrefixCls = anchorPrefixCls.asInstanceOf[js.Any])
-      __obj.asInstanceOf[InternalAnchorProps]
-    }
-    
-    extension [Self <: InternalAnchorProps](x: Self) {
-      
-      inline def setAnchorPrefixCls(value: String): Self = StObject.set(x, "anchorPrefixCls", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type _To = ForwardRefExoticComponent[AnchorProps & RefAttributes[Anchor]]
+  type _To = FC[AnchorProps]
   
   /* This means you don't have to write `default`, but can instead just say `libAnchorAnchorMod.foo` */
-  override def _to: ForwardRefExoticComponent[AnchorProps & RefAttributes[Anchor]] = default
+  override def _to: FC[AnchorProps] = default
 }

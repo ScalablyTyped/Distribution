@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-tree-select" : "5.5.0"
+      "rc-tree-select" : "5.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-tree-select" : "5.5.0"
+      "rc-tree-select" : "5.5.3"
     }
   ],
   "compile-devDependencies" : [

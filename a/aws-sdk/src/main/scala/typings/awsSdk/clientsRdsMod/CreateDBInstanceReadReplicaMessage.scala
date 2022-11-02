@@ -162,7 +162,12 @@ trait CreateDBInstanceReadReplicaMessage extends StObject {
   var SourceRegion: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the storage type to be associated with the read replica. Valid values: standard | gp2 | io1  If you specify io1, you must also include a value for the Iops parameter. Default: io1 if the Iops parameter is specified, otherwise gp2 
+    * Specifies the storage throughput value for the read replica. This setting doesn't apply to RDS Custom or Amazon Aurora.
+    */
+  var StorageThroughput: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * Specifies the storage type to be associated with the read replica. Valid values: gp2 | gp3 | io1 | standard  If you specify io1 or gp3, you must also include a value for the Iops parameter. Default: io1 if the Iops parameter is specified, otherwise gp2 
     */
   var StorageType: js.UndefOr[String] = js.undefined
   
@@ -310,6 +315,10 @@ object CreateDBInstanceReadReplicaMessage {
     inline def setSourceRegion(value: String): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
     
     inline def setSourceRegionUndefined: Self = StObject.set(x, "SourceRegion", js.undefined)
+    
+    inline def setStorageThroughput(value: IntegerOptional): Self = StObject.set(x, "StorageThroughput", value.asInstanceOf[js.Any])
+    
+    inline def setStorageThroughputUndefined: Self = StObject.set(x, "StorageThroughput", js.undefined)
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
