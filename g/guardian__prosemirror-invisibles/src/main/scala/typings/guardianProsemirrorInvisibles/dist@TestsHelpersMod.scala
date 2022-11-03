@@ -13,7 +13,11 @@ object `dist@TestsHelpersMod` {
   val ^ : js.Any = js.native
   
   inline def createEditor(): EditorView = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")().asInstanceOf[EditorView]
-  inline def createEditor(docNode: Unit, isActive: Boolean): EditorView = (^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")(docNode.asInstanceOf[js.Any], isActive.asInstanceOf[js.Any])).asInstanceOf[EditorView]
+  inline def createEditor(docNode: Unit, shouldShowInvisibles: Boolean): EditorView = (^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")(docNode.asInstanceOf[js.Any], shouldShowInvisibles.asInstanceOf[js.Any])).asInstanceOf[EditorView]
+  inline def createEditor(docNode: Unit, shouldShowInvisibles: Boolean, displayLineEndSelection: Boolean): EditorView = (^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")(docNode.asInstanceOf[js.Any], shouldShowInvisibles.asInstanceOf[js.Any], displayLineEndSelection.asInstanceOf[js.Any])).asInstanceOf[EditorView]
+  inline def createEditor(docNode: Unit, shouldShowInvisibles: Unit, displayLineEndSelection: Boolean): EditorView = (^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")(docNode.asInstanceOf[js.Any], shouldShowInvisibles.asInstanceOf[js.Any], displayLineEndSelection.asInstanceOf[js.Any])).asInstanceOf[EditorView]
   inline def createEditor(docNode: Node): EditorView = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")(docNode.asInstanceOf[js.Any]).asInstanceOf[EditorView]
-  inline def createEditor(docNode: Node, isActive: Boolean): EditorView = (^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")(docNode.asInstanceOf[js.Any], isActive.asInstanceOf[js.Any])).asInstanceOf[EditorView]
+  inline def createEditor(docNode: Node, shouldShowInvisibles: Boolean): EditorView = (^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")(docNode.asInstanceOf[js.Any], shouldShowInvisibles.asInstanceOf[js.Any])).asInstanceOf[EditorView]
+  inline def createEditor(docNode: Node, shouldShowInvisibles: Boolean, displayLineEndSelection: Boolean): EditorView = (^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")(docNode.asInstanceOf[js.Any], shouldShowInvisibles.asInstanceOf[js.Any], displayLineEndSelection.asInstanceOf[js.Any])).asInstanceOf[EditorView]
+  inline def createEditor(docNode: Node, shouldShowInvisibles: Unit, displayLineEndSelection: Boolean): EditorView = (^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")(docNode.asInstanceOf[js.Any], shouldShowInvisibles.asInstanceOf[js.Any], displayLineEndSelection.asInstanceOf[js.Any])).asInstanceOf[EditorView]
 }

@@ -240,6 +240,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Multiply two matrices
+      * A.multiply(B) means apply B to A so result is B x A
       * @param other defines the second operand
       * @returns a new matrix set with the multiplication result of the current Matrix and the given one
       */
@@ -265,6 +266,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Sets the given matrix "result" with the multiplication result of the current Matrix and the given one
+      * A.multiplyToRef(B, R) means apply B to A and store in R and R = B x A
       * @param other defines the second operand
       * @param result defines the matrix where to store the multiplication
       * @returns result input

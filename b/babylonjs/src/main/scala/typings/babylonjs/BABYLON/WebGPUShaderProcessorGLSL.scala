@@ -12,11 +12,15 @@ trait WebGPUShaderProcessorGLSL
   
   /* private */ var _applyTextureArrayProcessing: Any = js.native
   
+  /* protected */ var _fragmentIsGLES3: Boolean = js.native
+  
   /* protected */ var _missingVaryings: js.Array[String] = js.native
   
   /* protected */ var _preProcessors: org.scalablytyped.runtime.StringDictionary[String] = js.native
   
   /* protected */ var _textureArrayProcessing: js.Array[String] = js.native
+  
+  /* protected */ var _vertexIsGLES3: Boolean = js.native
   
   @JSName("attributeProcessor")
   def attributeProcessor_MWebGPUShaderProcessorGLSL(attribute: String, preProcessors: org.scalablytyped.runtime.StringDictionary[String]): String = js.native
@@ -26,6 +30,9 @@ trait WebGPUShaderProcessorGLSL
   
   @JSName("initializeShaders")
   def initializeShaders_MWebGPUShaderProcessorGLSL(processingContext: Nullable[ShaderProcessingContext]): Unit = js.native
+  
+  @JSName("parseGLES3")
+  var parseGLES3_WebGPUShaderProcessorGLSL: Boolean = js.native
   
   @JSName("postProcessor")
   def postProcessor_MWebGPUShaderProcessorGLSL(

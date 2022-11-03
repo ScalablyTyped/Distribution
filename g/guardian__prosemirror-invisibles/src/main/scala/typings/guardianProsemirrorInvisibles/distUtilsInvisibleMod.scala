@@ -32,7 +32,23 @@ object distUtilsInvisibleMod {
   trait AddDecorationsForInvisible extends StObject {
     
     def createDecorations(from: Double, to: Double, doc: Node, decos: DecorationSet): DecorationSet = js.native
+    def createDecorations(
+      from: Double,
+      to: Double,
+      doc: Node,
+      decos: DecorationSet,
+      selection: Unit,
+      displayLineEndSelection: Boolean
+    ): DecorationSet = js.native
     def createDecorations(from: Double, to: Double, doc: Node, decos: DecorationSet, selection: Selection): DecorationSet = js.native
+    def createDecorations(
+      from: Double,
+      to: Double,
+      doc: Node,
+      decos: DecorationSet,
+      selection: Selection,
+      displayLineEndSelection: Boolean
+    ): DecorationSet = js.native
     
     var `type`: BuilderTypes = js.native
   }

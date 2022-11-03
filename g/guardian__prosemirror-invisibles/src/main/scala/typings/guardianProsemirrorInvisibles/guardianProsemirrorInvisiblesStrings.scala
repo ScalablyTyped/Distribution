@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object guardianProsemirrorInvisiblesStrings {
   
   @js.native
+  sealed trait BLUR_DOCUMENT extends StObject
+  inline def BLUR_DOCUMENT: BLUR_DOCUMENT = "BLUR_DOCUMENT".asInstanceOf[BLUR_DOCUMENT]
+  
+  @js.native
   sealed trait CHAR
     extends StObject
        with BuilderTypes
@@ -18,4 +22,8 @@ object guardianProsemirrorInvisiblesStrings {
     extends StObject
        with BuilderTypes
   inline def NODE: NODE = "NODE".asInstanceOf[NODE]
+  
+  @js.native
+  sealed trait SET_SHOW_INVISIBLES_STATE extends StObject
+  inline def SET_SHOW_INVISIBLES_STATE: SET_SHOW_INVISIBLES_STATE = "SET_SHOW_INVISIBLES_STATE".asInstanceOf[SET_SHOW_INVISIBLES_STATE]
 }

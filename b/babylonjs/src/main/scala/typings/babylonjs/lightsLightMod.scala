@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.lightsLightConstantsMod.ISortableLight
 import typings.babylonjs.lightsShadowsShadowGeneratorMod.IShadowGenerator
 import typings.babylonjs.materialsEffectMod.Effect
@@ -10,6 +11,7 @@ import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,10 +119,10 @@ object lightsLightMod {
     /* private */ var _shadowEnabled: Any = js.native
     
     /**
-      * Shadow generator associated to the light.
+      * Shadow generators associated to the light.
       * @internal Internal use only.
       */
-    var _shadowGenerator: Nullable[IShadowGenerator] = js.native
+    var _shadowGenerators: Nullable[Map[Nullable[Camera], IShadowGenerator]] = js.native
     
     /**
       * The current light uniform buffer.
@@ -193,9 +195,17 @@ object lightsLightMod {
     
     /**
       * Returns the Light associated shadow generator if any.
+      * @param camera Camera for which the shadow generator should be retrieved (default: null). If null, retrieves the default shadow generator
       * @returns the associated shadow generator.
       */
     def getShadowGenerator(): Nullable[IShadowGenerator] = js.native
+    def getShadowGenerator(camera: Nullable[Camera]): Nullable[IShadowGenerator] = js.native
+    
+    /**
+      * Returns all the shadow generators associated to this light
+      * @returns
+      */
+    def getShadowGenerators(): Nullable[Map[Nullable[Camera], IShadowGenerator]] = js.native
     
     /**
       * Returns the light type ID (integer).

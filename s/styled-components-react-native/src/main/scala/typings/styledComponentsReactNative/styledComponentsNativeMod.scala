@@ -85,16 +85,6 @@ object styledComponentsNativeMod extends Shortcut {
         T
       ] = js.native
     
-    var Picker: ReactNativeThemedStyledFunction[
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ReactNative.Picker */ Any, 
-        T
-      ] = js.native
-    
-    var PickerIOS: ReactNativeThemedStyledFunction[
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ReactNative.PickerIOS */ Any, 
-        T
-      ] = js.native
-    
     var Pressable: ReactNativeThemedStyledFunction[ForwardRefExoticComponent[PressableProps & RefAttributes[View]], T] = js.native
     
     var ProgressBarAndroid: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.ProgressBarAndroid], T] = js.native
@@ -114,11 +104,6 @@ object styledComponentsNativeMod extends Shortcut {
           /* props */ ReadonlySectionListPropsa, 
           typings.reactNative.mod.SectionList[js.Object, js.Object]
         ], 
-        T
-      ] = js.native
-    
-    var SegmentedControlIOS: ReactNativeThemedStyledFunction[
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ReactNative.SegmentedControlIOS */ Any, 
         T
       ] = js.native
     

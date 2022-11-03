@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CancelEditable[RecordType] extends StObject {
   
-  def actionRender(key: RecordKey): js.Array[Element | Null | ReactNode] = js.native
-  def actionRender(key: RecordKey, config: ActionTypeText[RecordType]): js.Array[Element | Null | ReactNode] = js.native
+  def actionRender(key: RecordKey): js.Array[js.UndefOr[Element | ReactNode]] = js.native
+  def actionRender(key: RecordKey, config: ActionTypeText[RecordType]): js.Array[js.UndefOr[Element | ReactNode]] = js.native
   
   def cancelEditable(recordKey: RecordKey): Boolean = js.native
   

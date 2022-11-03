@@ -14,6 +14,8 @@ trait PerturbNormalBlock
     */
   def TBN: NodeMaterialConnectionPoint = js.native
   
+  /* private */ var _tangentCorrectionFactorName: Any = js.native
+  
   /* private */ var _tangentSpaceParameterName: Any = js.native
   
   /** Gets or sets a boolean indicating that normal should be inverted on X axis */

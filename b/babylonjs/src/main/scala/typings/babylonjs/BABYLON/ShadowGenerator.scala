@@ -31,6 +31,8 @@ trait ShadowGenerator
   
   /* protected */ var _cachedPosition: Vector3 = js.native
   
+  /* protected */ var _camera: Nullable[Camera] = js.native
+  
   /* protected */ var _contactHardeningLightSizeUVRatio: Double = js.native
   
   /* protected */ def _createTargetRenderTexture(): Unit = js.native
@@ -58,6 +60,8 @@ trait ShadowGenerator
   /* protected */ var _filter: Double = js.native
   
   /* protected */ var _filteringQuality: Double = js.native
+  
+  /* protected */ def _getCamera(): Nullable[Camera] = js.native
   
   /* protected */ def _initializeBlurRTTAndPostProcesses(): Unit = js.native
   

@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyLegacyMod
 
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +17,25 @@ open class CascadedShadowGenerator protected ()
     * @param mapSize The size of the texture what stores the shadows. Example : 1024.
     * @param light The directional light object generating the shadows.
     * @param usefulFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
+    * @param camera Camera associated with this shadow generator (default: null). If null, takes the scene active camera at the time we need to access it
     */
   def this(mapSize: Double, light: typings.babylonjs.lightsDirectionalLightMod.DirectionalLight) = this()
   def this(
     mapSize: Double,
     light: typings.babylonjs.lightsDirectionalLightMod.DirectionalLight,
     usefulFloatFirst: Boolean
+  ) = this()
+  def this(
+    mapSize: Double,
+    light: typings.babylonjs.lightsDirectionalLightMod.DirectionalLight,
+    usefulFloatFirst: Boolean,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]
+  ) = this()
+  def this(
+    mapSize: Double,
+    light: typings.babylonjs.lightsDirectionalLightMod.DirectionalLight,
+    usefulFloatFirst: Unit,
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
 }
 /* static members */

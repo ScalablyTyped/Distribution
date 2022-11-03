@@ -1,7 +1,7 @@
 
 # Scala.js typings for wix-design-systems-providers
 
-Typings are for version 1.16.1
+Typings are for version 1.16.3
 
 ## Library description:
 A common providers library used within the `wix-design-systems` packages.

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ActionRender[RecordType] extends StObject {
   
-  def actionRender(row: RecordType & Index): js.Array[Element | Null | ReactNode] = js.native
+  def actionRender(row: RecordType & Index): js.Array[js.UndefOr[Element | ReactNode]] = js.native
   
   def addEditRecord(row: RecordType): Boolean = js.native
   def addEditRecord(row: RecordType, options: AddLineOptions): Boolean = js.native
@@ -31,6 +31,9 @@ trait ActionRender[RecordType] extends StObject {
   def onValuesChange(value: RecordType, values: RecordType): Unit = js.native
   
   var preEditableKeys: js.UndefOr[js.Array[Key]] = js.native
+  
+  def saveEditable(recordKey: RecordKey): js.Promise[Boolean] = js.native
+  def saveEditable(recordKey: RecordKey, needReTry: Boolean): js.Promise[Boolean] = js.native
   
   def setEditableRowKeys(updater: js.Array[Key]): Unit = js.native
   def setEditableRowKeys(updater: js.Array[Key], ignoreDestroy: Boolean): Unit = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__pro-utils
 
-Typings are for version 2.2.12
+Typings are for version 2.3.0
 
 ## Library description:
 @ant-design/pro-utils

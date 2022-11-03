@@ -1,6 +1,8 @@
 package typings.guardianProsemirrorInvisibles
 
+import typings.guardianProsemirrorInvisibles.guardianProsemirrorInvisiblesStrings.BLUR_DOCUMENT
 import typings.guardianProsemirrorInvisibles.guardianProsemirrorInvisiblesStrings.NODE
+import typings.guardianProsemirrorInvisibles.guardianProsemirrorInvisiblesStrings.SET_SHOW_INVISIBLES_STATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,42 +30,81 @@ object anon {
     }
   }
   
-  trait IsActive extends StObject {
+  trait IsFocused extends StObject {
     
-    var isActive: Boolean
+    var isFocused: Boolean
   }
-  object IsActive {
+  object IsFocused {
     
-    inline def apply(isActive: Boolean): IsActive = {
-      val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IsActive]
+    inline def apply(isFocused: Boolean): IsFocused = {
+      val __obj = js.Dynamic.literal(isFocused = isFocused.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IsFocused]
     }
     
-    extension [Self <: IsActive](x: Self) {
+    extension [Self <: IsFocused](x: Self) {
       
-      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     }
   }
   
   trait Payload extends StObject {
     
-    var payload: IsActive
+    var payload: ShouldShowInvisibles
     
-    var `type`: String
+    var `type`: SET_SHOW_INVISIBLES_STATE
   }
   object Payload {
     
-    inline def apply(payload: IsActive, `type`: String): Payload = {
+    inline def apply(payload: ShouldShowInvisibles): Payload = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("SET_SHOW_INVISIBLES_STATE")
       __obj.asInstanceOf[Payload]
     }
     
     extension [Self <: Payload](x: Self) {
       
-      inline def setPayload(value: IsActive): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: ShouldShowInvisibles): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SET_SHOW_INVISIBLES_STATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ShouldShowInvisibles extends StObject {
+    
+    var shouldShowInvisibles: Boolean
+  }
+  object ShouldShowInvisibles {
+    
+    inline def apply(shouldShowInvisibles: Boolean): ShouldShowInvisibles = {
+      val __obj = js.Dynamic.literal(shouldShowInvisibles = shouldShowInvisibles.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ShouldShowInvisibles]
+    }
+    
+    extension [Self <: ShouldShowInvisibles](x: Self) {
+      
+      inline def setShouldShowInvisibles(value: Boolean): Self = StObject.set(x, "shouldShowInvisibles", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Type extends StObject {
+    
+    var payload: IsFocused
+    
+    var `type`: BLUR_DOCUMENT
+  }
+  object Type {
+    
+    inline def apply(payload: IsFocused): Type = {
+      val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("BLUR_DOCUMENT")
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setPayload(value: IsFocused): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: BLUR_DOCUMENT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

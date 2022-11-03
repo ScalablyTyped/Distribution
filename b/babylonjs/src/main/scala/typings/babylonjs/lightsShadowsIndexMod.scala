@@ -1,8 +1,10 @@
 package typings.babylonjs
 
+import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.lightsDirectionalLightMod.DirectionalLight
 import typings.babylonjs.lightsShadowLightMod.IShadowLight
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +23,12 @@ object lightsShadowsIndexMod {
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The directional light object generating the shadows.
       * @param usefulFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
+      * @param camera Camera associated with this shadow generator (default: null). If null, takes the scene active camera at the time we need to access it
       */
     def this(mapSize: Double, light: DirectionalLight) = this()
     def this(mapSize: Double, light: DirectionalLight, usefulFloatFirst: Boolean) = this()
+    def this(mapSize: Double, light: DirectionalLight, usefulFloatFirst: Boolean, camera: Nullable[Camera]) = this()
+    def this(mapSize: Double, light: DirectionalLight, usefulFloatFirst: Unit, camera: Nullable[Camera]) = this()
   }
   /* static members */
   object CascadedShadowGenerator {
@@ -91,9 +96,12 @@ object lightsShadowsIndexMod {
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The light object generating the shadows.
       * @param usefullFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
+      * @param camera Camera associated with this shadow generator (default: null). If null, takes the scene active camera at the time we need to access it
       */
     def this(mapSize: Double, light: IShadowLight) = this()
     def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Boolean) = this()
+    def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Boolean, camera: Nullable[Camera]) = this()
+    def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Unit, camera: Nullable[Camera]) = this()
   }
   /* static members */
   object ShadowGenerator {
@@ -196,7 +204,12 @@ object lightsShadowsIndexMod {
     inline def Parse(
       parsedShadowGenerator: Any,
       scene: Scene,
-      constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
+      constr: js.Function3[
+          /* mapSize */ Double, 
+          /* light */ IShadowLight, 
+          /* camera */ Nullable[Camera], 
+          this.type
+        ]
     ): typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator]
     
     /**

@@ -16,6 +16,8 @@ trait AnisotropyBlock
   
   /* private */ var _generateTBNSpace: Any = js.native
   
+  /* private */ var _tangentCorrectionFactorName: Any = js.native
+  
   /**
     * Gets the anisotropy object output component
     */

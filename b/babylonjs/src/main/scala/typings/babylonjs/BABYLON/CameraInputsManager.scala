@@ -11,8 +11,8 @@ trait CameraInputsManager[TCamera /* <: Camera */] extends StObject {
   
   /**
     * Add an input method to a camera
-    * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
-    * @param input camera input method
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/customizingCameraInputs
+    * @param input Camera input method
     */
   def add(input: ICameraInput[TCamera]): Unit = js.native
   

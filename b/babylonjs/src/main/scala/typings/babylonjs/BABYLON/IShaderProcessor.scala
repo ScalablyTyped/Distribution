@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IShaderProcessor extends StObject {
   
+  var attributeKeywordName: js.UndefOr[String] = js.undefined
+  
   var attributeProcessor: js.UndefOr[
     js.Function3[
       /* attribute */ String, 
@@ -46,6 +48,8 @@ trait IShaderProcessor extends StObject {
   ] = js.undefined
   
   var noPrecision: js.UndefOr[Boolean] = js.undefined
+  
+  var parseGLES3: js.UndefOr[Boolean] = js.undefined
   
   var postProcessor: js.UndefOr[
     js.Function5[
@@ -107,6 +111,8 @@ trait IShaderProcessor extends StObject {
   
   var uniformRegexp: js.UndefOr[js.RegExp] = js.undefined
   
+  var varyingFragmentKeywordName: js.UndefOr[String] = js.undefined
+  
   var varyingProcessor: js.UndefOr[
     js.Function4[
       /* varying */ String, 
@@ -116,6 +122,8 @@ trait IShaderProcessor extends StObject {
       String
     ]
   ] = js.undefined
+  
+  var varyingVertexKeywordName: js.UndefOr[String] = js.undefined
 }
 object IShaderProcessor {
   
@@ -125,6 +133,10 @@ object IShaderProcessor {
   }
   
   extension [Self <: IShaderProcessor](x: Self) {
+    
+    inline def setAttributeKeywordName(value: String): Self = StObject.set(x, "attributeKeywordName", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeKeywordNameUndefined: Self = StObject.set(x, "attributeKeywordName", js.undefined)
     
     inline def setAttributeProcessor(
       value: (/* attribute */ String, /* preProcessors */ org.scalablytyped.runtime.StringDictionary[String], /* processingContext */ Nullable[ShaderProcessingContext]) => String
@@ -157,6 +169,10 @@ object IShaderProcessor {
     inline def setNoPrecision(value: Boolean): Self = StObject.set(x, "noPrecision", value.asInstanceOf[js.Any])
     
     inline def setNoPrecisionUndefined: Self = StObject.set(x, "noPrecision", js.undefined)
+    
+    inline def setParseGLES3(value: Boolean): Self = StObject.set(x, "parseGLES3", value.asInstanceOf[js.Any])
+    
+    inline def setParseGLES3Undefined: Self = StObject.set(x, "parseGLES3", js.undefined)
     
     inline def setPostProcessor(
       value: (/* code */ String, /* defines */ js.Array[String], /* isFragment */ Boolean, /* processingContext */ Nullable[ShaderProcessingContext], /* engine */ ThinEngine) => String
@@ -206,10 +222,18 @@ object IShaderProcessor {
     
     inline def setUniformRegexpUndefined: Self = StObject.set(x, "uniformRegexp", js.undefined)
     
+    inline def setVaryingFragmentKeywordName(value: String): Self = StObject.set(x, "varyingFragmentKeywordName", value.asInstanceOf[js.Any])
+    
+    inline def setVaryingFragmentKeywordNameUndefined: Self = StObject.set(x, "varyingFragmentKeywordName", js.undefined)
+    
     inline def setVaryingProcessor(
       value: (/* varying */ String, /* isFragment */ Boolean, /* preProcessors */ org.scalablytyped.runtime.StringDictionary[String], /* processingContext */ Nullable[ShaderProcessingContext]) => String
     ): Self = StObject.set(x, "varyingProcessor", js.Any.fromFunction4(value))
     
     inline def setVaryingProcessorUndefined: Self = StObject.set(x, "varyingProcessor", js.undefined)
+    
+    inline def setVaryingVertexKeywordName(value: String): Self = StObject.set(x, "varyingVertexKeywordName", value.asInstanceOf[js.Any])
+    
+    inline def setVaryingVertexKeywordNameUndefined: Self = StObject.set(x, "varyingVertexKeywordName", js.undefined)
   }
 }

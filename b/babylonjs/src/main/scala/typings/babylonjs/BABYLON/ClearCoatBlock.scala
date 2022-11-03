@@ -18,6 +18,8 @@ trait ClearCoatBlock
   
   /* private */ var _scene: Any = js.native
   
+  /* private */ var _tangentCorrectionFactorName: Any = js.native
+  
   def autoConfigure(): Unit = js.native
   
   /**

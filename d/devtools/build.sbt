@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "devtools"
-version := "7.25.4-5a0ec8"
+version := "7.25.4-0d69f9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "loglevel" % "1.8.0-8a2d46",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "puppeteer-core" % "19.2.1-9ee1a2",
+  "org.scalablytyped" %%% "puppeteer-core" % "19.2.2-1b6be1",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",
   "org.scalablytyped" %%% "wdio__logger" % "7.19.0-f888c4",

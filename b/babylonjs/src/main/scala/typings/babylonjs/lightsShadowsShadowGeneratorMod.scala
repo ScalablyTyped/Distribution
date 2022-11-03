@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.anon.PartialuseInstancesboolea
+import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.lightsShadowLightMod.IShadowLight
 import typings.babylonjs.materialsEffectMod.Effect
 import typings.babylonjs.materialsMaterialDefinesMod.MaterialDefines
@@ -35,9 +36,12 @@ object lightsShadowsShadowGeneratorMod {
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The light object generating the shadows.
       * @param usefullFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
+      * @param camera Camera associated with this shadow generator (default: null). If null, takes the scene active camera at the time we need to access it
       */
     def this(mapSize: Double, light: IShadowLight) = this()
     def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Boolean) = this()
+    def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Boolean, camera: Nullable[Camera]) = this()
+    def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Unit, camera: Nullable[Camera]) = this()
     
     /* protected */ def _applyFilterValues(): Unit = js.native
     
@@ -60,6 +64,8 @@ object lightsShadowsShadowGeneratorMod {
     /* protected */ var _cachedDirection: Vector3 = js.native
     
     /* protected */ var _cachedPosition: Vector3 = js.native
+    
+    /* protected */ var _camera: Nullable[Camera] = js.native
     
     /* protected */ var _contactHardeningLightSizeUVRatio: Double = js.native
     
@@ -88,6 +94,8 @@ object lightsShadowsShadowGeneratorMod {
     /* protected */ var _filter: Double = js.native
     
     /* protected */ var _filteringQuality: Double = js.native
+    
+    /* protected */ def _getCamera(): Nullable[Camera] = js.native
     
     /* protected */ def _initializeBlurRTTAndPostProcesses(): Unit = js.native
     
@@ -563,7 +571,12 @@ object lightsShadowsShadowGeneratorMod {
     inline def Parse(
       parsedShadowGenerator: Any,
       scene: Scene,
-      constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
+      constr: js.Function3[
+          /* mapSize */ Double, 
+          /* light */ IShadowLight, 
+          /* camera */ Nullable[Camera], 
+          this.type
+        ]
     ): ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[ShadowGenerator]
     
     /**

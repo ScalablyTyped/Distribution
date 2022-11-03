@@ -18,11 +18,15 @@ object enginesWebGPUWebgpuShaderProcessorsGLSLMod {
     
     /* private */ var _applyTextureArrayProcessing: Any = js.native
     
+    /* protected */ var _fragmentIsGLES3: Boolean = js.native
+    
     /* protected */ var _missingVaryings: js.Array[String] = js.native
     
     /* protected */ var _preProcessors: StringDictionary[String] = js.native
     
     /* protected */ var _textureArrayProcessing: js.Array[String] = js.native
+    
+    /* protected */ var _vertexIsGLES3: Boolean = js.native
     
     @JSName("attributeProcessor")
     def attributeProcessor_MWebGPUShaderProcessorGLSL(attribute: String, preProcessors: StringDictionary[String]): String = js.native
@@ -32,6 +36,9 @@ object enginesWebGPUWebgpuShaderProcessorsGLSLMod {
     
     @JSName("initializeShaders")
     def initializeShaders_MWebGPUShaderProcessorGLSL(processingContext: Nullable[ShaderProcessingContext]): Unit = js.native
+    
+    @JSName("parseGLES3")
+    var parseGLES3_WebGPUShaderProcessorGLSL: Boolean = js.native
     
     @JSName("postProcessor")
     def postProcessor_MWebGPUShaderProcessorGLSL(

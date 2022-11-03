@@ -7,6 +7,7 @@ import typings.antDesignProUtils.anon.DataSource
 import typings.antDesignProUtils.anon.Delete
 import typings.antDesignProUtils.anon.FormRef
 import typings.antDesignProUtils.anon.Row
+import typings.antDesignProUtils.anon.Save
 import typings.antDesignProUtils.anon.`0`
 import typings.antDesignProUtils.antDesignProUtilsStrings.Array
 import typings.antDesignProUtils.antDesignProUtilsStrings.Map
@@ -23,7 +24,9 @@ import typings.rcFieldForm.esInterfaceMod.NamePath
 import typings.react.mod.FC
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
+import typings.std.NonNullable
 import typings.std.Omit
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -40,9 +43,9 @@ object esUseEditableArrayMod {
   @js.native
   val DeleteEditableAction: FC[ActionRenderConfiganyNewL] = js.native
   
-  inline def SaveEditableAction[T](param0: (ActionRenderConfig[T, NewLineConfig[T]]) & Row): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SaveEditableAction")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SaveEditableAction[T](param0: (ActionRenderConfig[T, NewLineConfig[T]]) & Row, ref: Ref[SaveEditableActionRef[T]]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SaveEditableAction")(param0.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  inline def defaultActionRender[T](row: T, config: ActionRenderConfig[T, NewLineConfig[T]]): js.Array[Element | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultActionRender")(row.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element | Null]]
+  inline def defaultActionRender[T](row: T, config: ActionRenderConfig[T, NewLineConfig[T]]): Save[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultActionRender")(row.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Save[T]]
   
   inline def editableRowByKey[RecordType](keyProps: ChildrenColumnName[RecordType], action: update | top | delete): js.Array[RecordType] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableRowByKey")(keyProps.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Array[RecordType]]
   
@@ -455,6 +458,68 @@ object esUseEditableArrayMod {
     inline def multiple: typings.antDesignProUtils.antDesignProUtilsStrings.multiple = "multiple".asInstanceOf[typings.antDesignProUtils.antDesignProUtilsStrings.multiple]
     
     inline def single: typings.antDesignProUtils.antDesignProUtilsStrings.single = "single".asInstanceOf[typings.antDesignProUtils.antDesignProUtilsStrings.single]
+  }
+  
+  trait SaveEditableActionRef[T] extends StObject {
+    
+    /**
+      * 直接触发保存动作
+      *
+      * @throws 如果校验失败，会抛出异常
+      *  */
+    def save(): (ReturnType[
+        NonNullable[
+          js.UndefOr[
+            js.Function4[
+              /* key */ RecordKey, 
+              /* record */ T & `0`, 
+              /* originRow */ T & `0`, 
+              /* newLineConfig */ js.UndefOr[NewLineConfig[T]], 
+              js.Promise[Any | Unit]
+            ]
+          ]
+        ]
+      ]) | js.Promise[Unit]
+  }
+  object SaveEditableActionRef {
+    
+    inline def apply[T](
+      save: () => (ReturnType[
+          NonNullable[
+            js.UndefOr[
+              js.Function4[
+                /* key */ RecordKey, 
+                /* record */ T & `0`, 
+                /* originRow */ T & `0`, 
+                /* newLineConfig */ js.UndefOr[NewLineConfig[T]], 
+                js.Promise[Any | Unit]
+              ]
+            ]
+          ]
+        ]) | js.Promise[Unit]
+    ): SaveEditableActionRef[T] = {
+      val __obj = js.Dynamic.literal(save = js.Any.fromFunction0(save))
+      __obj.asInstanceOf[SaveEditableActionRef[T]]
+    }
+    
+    extension [Self <: SaveEditableActionRef[?], T](x: Self & SaveEditableActionRef[T]) {
+      
+      inline def setSave(
+        value: () => (ReturnType[
+              NonNullable[
+                js.UndefOr[
+                  js.Function4[
+                    /* key */ RecordKey, 
+                    /* record */ T & `0`, 
+                    /* originRow */ T & `0`, 
+                    /* newLineConfig */ js.UndefOr[NewLineConfig[T]], 
+                    js.Promise[Any | Unit]
+                  ]
+                ]
+              ]
+            ]) | js.Promise[Unit]
+      ): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+    }
   }
   
   @js.native

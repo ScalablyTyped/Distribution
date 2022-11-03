@@ -15,6 +15,8 @@ import typings.antDesignProUtils.anon.DataSource
 import typings.antDesignProUtils.anon.DateFormat
 import typings.antDesignProUtils.anon.Ellipsis
 import typings.antDesignProUtils.anon.Id
+import typings.antDesignProUtils.anon.OnOpenChange
+import typings.antDesignProUtils.anon.OnVisibleChange
 import typings.antDesignProUtils.anon.Params
 import typings.antDesignProUtils.anon.ProFormInstanceTypeanyfor
 import typings.antDesignProUtils.anon.SetDataSource
@@ -28,12 +30,12 @@ import typings.antDesignProUtils.esComponentsFilterDropdownMod.DropdownProps
 import typings.antDesignProUtils.esComponentsInlineErrorFormItemMod.InlineErrorFormItemProps
 import typings.antDesignProUtils.esConversionMomentValueMod.DateFormatter
 import typings.antDesignProUtils.esDateArrayFormatterMod.FormatType
+import typings.antDesignProUtils.esOmitUndefinedMod.OmitUndefined_
 import typings.antDesignProUtils.esParseValueToMomentMod.DateValue
 import typings.antDesignProUtils.esTransformKeySubmitValueMod.DataFormatMapType
 import typings.antDesignProUtils.esTypingMod.SearchTransformKeyFn
 import typings.antDesignProUtils.esUseEditableArrayMod.RecordKey
 import typings.antDesignProUtils.esUseEditableArrayMod.RowEditableConfig
-import typings.antDesignProUtils.esUseSafeStateMod.SetState
 import typings.antd.libFormHooksUseFormMod.FormInstance
 import typings.dayjs.mod.Dayjs
 import typings.rcFieldForm.esInterfaceMod.NamePath
@@ -239,9 +241,14 @@ object mod {
   inline def omitBoolean[T](obj: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("omitBoolean")(obj.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   inline def omitBoolean[T](obj: Boolean): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("omitBoolean")(obj.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
-  inline def omitUndefined[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("omitUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def omitUndefined[T](obj: T): OmitUndefined_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("omitUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[OmitUndefined_[T]]
   
   inline def omitUndefinedAndEmptyArr[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("omitUndefinedAndEmptyArr")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def openVisibleCompatible(): OnOpenChange | OnVisibleChange = ^.asInstanceOf[js.Dynamic].applyDynamic("openVisibleCompatible")().asInstanceOf[OnOpenChange | OnVisibleChange]
+  inline def openVisibleCompatible(open: Boolean): OnOpenChange | OnVisibleChange = ^.asInstanceOf[js.Dynamic].applyDynamic("openVisibleCompatible")(open.asInstanceOf[js.Any]).asInstanceOf[OnOpenChange | OnVisibleChange]
+  inline def openVisibleCompatible(open: Boolean, onOpenChange: Any): OnOpenChange | OnVisibleChange = (^.asInstanceOf[js.Dynamic].applyDynamic("openVisibleCompatible")(open.asInstanceOf[js.Any], onOpenChange.asInstanceOf[js.Any])).asInstanceOf[OnOpenChange | OnVisibleChange]
+  inline def openVisibleCompatible(open: Unit, onOpenChange: Any): OnOpenChange | OnVisibleChange = (^.asInstanceOf[js.Dynamic].applyDynamic("openVisibleCompatible")(open.asInstanceOf[js.Any], onOpenChange.asInstanceOf[js.Any])).asInstanceOf[OnOpenChange | OnVisibleChange]
   
   inline def operationUnit(token: ProAliasToken): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("operationUnit")(token.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
   
@@ -311,10 +318,6 @@ object mod {
   inline def usePrevious[T](state: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePrevious")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
   inline def useRefFunction[T /* <: js.Function1[/* args */ Any, Any] */](reFunction: T): js.Function1[/* rest */ Parameters[T], ReturnType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefFunction")(reFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* rest */ Parameters[T], ReturnType[T]]]
-  
-  inline def useSafeState[T](): js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeState")().asInstanceOf[js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]]]
-  inline def useSafeState[T](defaultValue: T): js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeState")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]]]
-  inline def useSafeState[T](defaultValue: js.Function0[T]): js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeState")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]]]
   
   inline def useStyle(componentName: String, styleFn: js.Function1[/* token */ ProAliasToken, CSSInterpolation]): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(componentName.asInstanceOf[js.Any], styleFn.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
 }

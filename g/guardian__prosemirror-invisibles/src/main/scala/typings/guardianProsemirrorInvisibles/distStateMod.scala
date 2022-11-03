@@ -1,6 +1,7 @@
 package typings.guardianProsemirrorInvisibles
 
 import typings.guardianProsemirrorInvisibles.anon.Payload
+import typings.guardianProsemirrorInvisibles.anon.Type
 import typings.prosemirrorState.mod.EditorState
 import typings.prosemirrorState.mod.PluginKey
 import typings.prosemirrorState.mod.Transaction
@@ -22,7 +23,9 @@ object distStateMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def setActiveState(isActive: Boolean): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("setActiveState")(isActive.asInstanceOf[js.Any]).asInstanceOf[Command]
+    inline def setActiveState(shouldShowInvisibles: Boolean): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("setActiveState")(shouldShowInvisibles.asInstanceOf[js.Any]).asInstanceOf[Command]
+    
+    inline def setFocusedState(isFocused: Boolean): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("setFocusedState")(isFocused.asInstanceOf[js.Any]).asInstanceOf[Command]
     
     inline def toggleActiveState(): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleActiveState")().asInstanceOf[Command]
   }
@@ -38,7 +41,7 @@ object distStateMod {
   
   inline def selectActiveState(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("selectActiveState")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  type Actions = ReturnType[js.Function1[/* isActive */ Boolean, Payload]]
+  type Actions = ReturnType[js.Function1[/* shouldShowInvisibles */ Boolean, Payload | Type]]
   
   /**
     * Commands
@@ -53,12 +56,18 @@ object distStateMod {
     
     var decorations: DecorationSet
     
-    var isActive: Boolean
+    var shouldShowInvisibles: Boolean
+    
+    var shouldShowLineEndSelectionDecorations: Boolean
   }
   object PluginState {
     
-    inline def apply(decorations: DecorationSet, isActive: Boolean): PluginState = {
-      val __obj = js.Dynamic.literal(decorations = decorations.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any])
+    inline def apply(
+      decorations: DecorationSet,
+      shouldShowInvisibles: Boolean,
+      shouldShowLineEndSelectionDecorations: Boolean
+    ): PluginState = {
+      val __obj = js.Dynamic.literal(decorations = decorations.asInstanceOf[js.Any], shouldShowInvisibles = shouldShowInvisibles.asInstanceOf[js.Any], shouldShowLineEndSelectionDecorations = shouldShowLineEndSelectionDecorations.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginState]
     }
     
@@ -66,7 +75,9 @@ object distStateMod {
       
       inline def setDecorations(value: DecorationSet): Self = StObject.set(x, "decorations", value.asInstanceOf[js.Any])
       
-      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setShouldShowInvisibles(value: Boolean): Self = StObject.set(x, "shouldShowInvisibles", value.asInstanceOf[js.Any])
+      
+      inline def setShouldShowLineEndSelectionDecorations(value: Boolean): Self = StObject.set(x, "shouldShowLineEndSelectionDecorations", value.asInstanceOf[js.Any])
     }
   }
 }

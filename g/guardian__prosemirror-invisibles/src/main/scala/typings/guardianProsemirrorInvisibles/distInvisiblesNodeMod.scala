@@ -17,10 +17,4 @@ object distInvisiblesNodeMod {
     toPosition: js.Function2[/* node */ Node, /* pos */ Double, Double],
     predicate: js.Function1[/* node */ Node, Boolean]
   ): AddDecorationsForInvisible = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvisibleDecosForNode")(`type`.asInstanceOf[js.Any], toPosition.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[AddDecorationsForInvisible]
-  inline def createInvisibleDecosForNode(
-    `type`: String,
-    toPosition: js.Function2[/* node */ Node, /* pos */ Double, Double],
-    predicate: js.Function1[/* node */ Node, Boolean],
-    shouldMarkAsSelected: Boolean
-  ): AddDecorationsForInvisible = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvisibleDecosForNode")(`type`.asInstanceOf[js.Any], toPosition.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], shouldMarkAsSelected.asInstanceOf[js.Any])).asInstanceOf[AddDecorationsForInvisible]
 }

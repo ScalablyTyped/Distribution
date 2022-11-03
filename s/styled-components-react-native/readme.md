@@ -1,7 +1,7 @@
 
 # Scala.js typings for styled-components-react-native
 
-Typings are for version 5.1
+Typings are for version 5.2
 
 ## Library description:
 `@types/styled-components-react-native` contains the types for `styled-components/native`. This repository exists in order to reserve the `styled-components-react-native` npm package so that no one tries to use it for a real package. See https://github.co

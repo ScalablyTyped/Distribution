@@ -74,6 +74,8 @@ object esComponentsPageContainerMod {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    var childrenContentStyle: js.UndefOr[CSSProperties] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var content: js.UndefOr[ReactNode] = js.undefined
@@ -181,6 +183,10 @@ object esComponentsPageContainerMod {
       inline def setBreadcrumbUndefined: Self = StObject.set(x, "breadcrumb", js.undefined)
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenContentStyle(value: CSSProperties): Self = StObject.set(x, "childrenContentStyle", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenContentStyleUndefined: Self = StObject.set(x, "childrenContentStyle", js.undefined)
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

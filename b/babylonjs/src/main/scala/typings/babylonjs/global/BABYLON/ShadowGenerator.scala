@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IShadowLight
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,22 @@ open class ShadowGenerator protected ()
     * @param mapSize The size of the texture what stores the shadows. Example : 1024.
     * @param light The light object generating the shadows.
     * @param usefullFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
+    * @param camera Camera associated with this shadow generator (default: null). If null, takes the scene active camera at the time we need to access it
     */
   def this(mapSize: Double, light: IShadowLight) = this()
   def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Boolean) = this()
+  def this(
+    mapSize: Double,
+    light: IShadowLight,
+    usefullFloatFirst: Boolean,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera]
+  ) = this()
+  def this(
+    mapSize: Double,
+    light: IShadowLight,
+    usefullFloatFirst: Unit,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera]
+  ) = this()
 }
 /* static members */
 object ShadowGenerator {
@@ -123,7 +137,12 @@ object ShadowGenerator {
   inline def Parse(
     parsedShadowGenerator: Any,
     scene: typings.babylonjs.BABYLON.Scene,
-    constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
+    constr: js.Function3[
+      /* mapSize */ Double, 
+      /* light */ IShadowLight, 
+      /* camera */ Nullable[typings.babylonjs.BABYLON.Camera], 
+      this.type
+    ]
   ): typings.babylonjs.BABYLON.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ShadowGenerator]
   
   /**

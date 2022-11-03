@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "axe-core__puppeteer"
-version := "4.4.5-54812d"
+version := "4.4.5-bccfec"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "devtools-protocol" % "0.0.1066334-143d2b",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "puppeteer" % "19.2.1-70b4ee",
-  "org.scalablytyped" %%% "puppeteer-core" % "19.2.1-9ee1a2",
+  "org.scalablytyped" %%% "puppeteer" % "19.2.1-4026e6",
+  "org.scalablytyped" %%% "puppeteer-core" % "19.2.2-1b6be1",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-370f29")
 publishArtifact in packageDoc := false

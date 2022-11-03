@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wix-style-react"
-version := "10.60.1-d08d7c"
+version := "10.60.3-8d6842"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -24,8 +24,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "pretty-format" % "29.2.1-d73ee0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "protractor" % "7.0.0-f97e00",
-  "org.scalablytyped" %%% "puppeteer" % "19.2.1-70b4ee",
-  "org.scalablytyped" %%% "puppeteer-core" % "19.2.1-9ee1a2",
+  "org.scalablytyped" %%% "puppeteer" % "19.2.1-4026e6",
+  "org.scalablytyped" %%% "puppeteer-core" % "19.2.2-1b6be1",
   "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-96a756",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
   "org.scalablytyped" %%% "react-dom" % "18.0-dt-20221027Z-34f203",
@@ -40,7 +40,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "unidriver__jsdom-react" % "1.7.0-226add",
   "org.scalablytyped" %%% "webdriver-js-extender" % "2.2.0-52d2fd",
   "org.scalablytyped" %%% "wix-design-systems-locale-utils" % "1.71.0-79b4d6",
-  "org.scalablytyped" %%% "wix-design-systems-providers" % "1.16.1-a849d1",
+  "org.scalablytyped" %%% "wix-design-systems-providers" % "1.16.3-22b32c",
   "org.scalablytyped" %%% "wix-ui-test-utils" % "1.0.191-77691a",
   "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-370f29")
 publishArtifact in packageDoc := false

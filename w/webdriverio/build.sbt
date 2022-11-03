@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "webdriverio"
-version := "7.25.4-5f86aa"
+version := "7.25.4-ec79b7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-6dfedf",
-  "org.scalablytyped" %%% "devtools" % "7.25.4-5a0ec8",
+  "org.scalablytyped" %%% "devtools" % "7.25.4-0d69f9",
   "org.scalablytyped" %%% "devtools-protocol" % "0.0.1066334-143d2b",
   "org.scalablytyped" %%% "loglevel" % "1.8.0-8a2d46",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "puppeteer-core" % "19.2.1-9ee1a2",
+  "org.scalablytyped" %%% "puppeteer-core" % "19.2.2-1b6be1",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",
   "org.scalablytyped" %%% "wdio__logger" % "7.19.0-f888c4",

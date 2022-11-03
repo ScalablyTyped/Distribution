@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.cullingBoundingInfoMod.BoundingInfo
 import typings.babylonjs.lightsDirectionalLightMod.DirectionalLight
 import typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator
@@ -27,9 +28,12 @@ object lightsShadowsCascadedShadowGeneratorMod {
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The directional light object generating the shadows.
       * @param usefulFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
+      * @param camera Camera associated with this shadow generator (default: null). If null, takes the scene active camera at the time we need to access it
       */
     def this(mapSize: Double, light: DirectionalLight) = this()
     def this(mapSize: Double, light: DirectionalLight, usefulFloatFirst: Boolean) = this()
+    def this(mapSize: Double, light: DirectionalLight, usefulFloatFirst: Boolean, camera: Nullable[Camera]) = this()
+    def this(mapSize: Double, light: DirectionalLight, usefulFloatFirst: Unit, camera: Nullable[Camera]) = this()
     
     /* private */ var _autoCalcDepthBounds: Any = js.native
     

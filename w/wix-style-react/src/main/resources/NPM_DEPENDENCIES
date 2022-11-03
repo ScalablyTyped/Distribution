@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "wix-style-react" : "10.60.1"
+      "wix-style-react" : "10.60.3"
     }
   ],
   "test-dependencies" : [
     {
-      "wix-style-react" : "10.60.1"
+      "wix-style-react" : "10.60.3"
     }
   ],
   "compile-devDependencies" : [
