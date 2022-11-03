@@ -6,6 +6,7 @@ import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreCalendarTypeMod.CalendarType
 import typings.openui5.sapUiCoreControlMod.ControlSettings
+import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.std.Record
@@ -671,6 +672,18 @@ object sapUiUnifiedCalendarMod {
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
+      * @SINCE 1.108.0
+      *
+      * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
+      *
+      * @returns Value of property `calendarWeekNumbering`
+      */
+    def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
+    
+    /**
       * @SINCE 1.38.0
       *
       * Gets content of aggregation {@link #getDisabledDates disabledDates}.
@@ -687,8 +700,9 @@ object sapUiUnifiedCalendarMod {
       *
       * Gets current value of property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
-      * If set, the first day of the displayed week is this day. Valid values are 0 to 6. If not a valid value
-      * is set, the default of the used locale is used.
+      * If the property is set, this day marks the start of the displayed week. Valid values are 0 to 6. If no
+      * valid property is set, the current locale's default is applied. Note: This property should not be used
+      * with the calendarWeekNumbering property.
       *
       * Default value is `-1`.
       *
@@ -1125,12 +1139,39 @@ object sapUiUnifiedCalendarMod {
     ): typings.openui5.sapUiUnifiedDateTypeRangeMod.default | Null = js.native
     
     /**
+      * @SINCE 1.108.0
+      *
+      * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setCalendarWeekNumbering(): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
+    ): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: CalendarWeekNumbering
+    ): this.type = js.native
+    
+    /**
       * @SINCE 1.28.9
       *
       * Sets a new value for property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
-      * If set, the first day of the displayed week is this day. Valid values are 0 to 6. If not a valid value
-      * is set, the default of the used locale is used.
+      * If the property is set, this day marks the start of the displayed week. Valid values are 0 to 6. If no
+      * valid property is set, the current locale's default is applied. Note: This property should not be used
+      * with the calendarWeekNumbering property.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1377,6 +1418,16 @@ object sapUiUnifiedCalendarMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
+      * @SINCE 1.108.0
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
+      */
+    var calendarWeekNumbering: js.UndefOr[
+        CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * Date selection was cancelled
       */
     var cancel: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
@@ -1396,8 +1447,9 @@ object sapUiUnifiedCalendarMod {
     /**
       * @SINCE 1.28.9
       *
-      * If set, the first day of the displayed week is this day. Valid values are 0 to 6. If not a valid value
-      * is set, the default of the used locale is used.
+      * If the property is set, this day marks the start of the displayed week. Valid values are 0 to 6. If no
+      * valid property is set, the current locale's default is applied. Note: This property should not be used
+      * with the calendarWeekNumbering property.
       */
     var firstDayOfWeek: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
@@ -1599,6 +1651,12 @@ object sapUiUnifiedCalendarMod {
       inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
+      
+      inline def setCalendarWeekNumbering(
+        value: CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "calendarWeekNumbering", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
       
       inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       

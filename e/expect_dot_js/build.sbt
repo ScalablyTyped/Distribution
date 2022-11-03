@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expect_dot_js"
-version := "0.3.1-dt-20220818Z-bcd431"
+version := "0.3.1-dt-20221103Z-bcd431"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

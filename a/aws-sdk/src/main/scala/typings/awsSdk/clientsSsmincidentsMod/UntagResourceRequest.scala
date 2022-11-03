@@ -12,7 +12,7 @@ trait UntagResourceRequest extends StObject {
   var resourceArn: String
   
   /**
-    * The name of the tag you're removing from the response plan.
+    * The name of the tag to remove from the response plan.
     */
   var tagKeys: TagKeyList
 }

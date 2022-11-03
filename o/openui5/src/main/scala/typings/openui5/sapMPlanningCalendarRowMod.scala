@@ -141,7 +141,8 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67)
+      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Adds some headerContent to the aggregation {@link #getHeaderContent headerContent}.
       *
@@ -479,7 +480,8 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67)
+      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Destroys all the headerContent in the aggregation {@link #getHeaderContent headerContent}.
       *
@@ -774,7 +776,8 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67)
+      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Gets content of aggregation {@link #getHeaderContent headerContent}.
       *
@@ -913,7 +916,8 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67)
+      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Checks for the provided `sap.ui.core.Control` in the aggregation {@link #getHeaderContent headerContent}.
       * and returns its index if found or -1 otherwise.
@@ -975,7 +979,8 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67)
+      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Inserts a headerContent into the aggregation {@link #getHeaderContent headerContent}.
       *
@@ -1043,7 +1048,8 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67)
+      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Removes all the controls from the aggregation {@link #getHeaderContent headerContent}.
       *
@@ -1099,7 +1105,8 @@ object sapMPlanningCalendarRowMod {
     vHeaderContent: String): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
       * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67)
+      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Removes a headerContent from the aggregation {@link #getHeaderContent headerContent}.
       *
@@ -1543,7 +1550,8 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67)
+      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Holds the header content of the row.
       *

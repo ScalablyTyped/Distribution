@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "colorbrewer"
-version := "v1.0.0-dt-20220818Z-5b1bd3"
+version := "v1.0.0-dt-20221103Z-5b1bd3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

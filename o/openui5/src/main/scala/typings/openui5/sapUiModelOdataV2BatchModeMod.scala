@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapUiModelOdataV2BatchModeMod {
   
   /**
-    * @deprecated - Use {@link sap.ui.model.odata.CountMode} to specify how the count of collections is retrieved.
-    * Use the `useBatch` parameter of the {@link sap.ui.model.odata.v2.ODataModel} constructor to specify whether
-    * requests are sent in $batch.
+    * @deprecated (since 1.74.0) - Use {@link sap.ui.model.odata.CountMode} to specify how the count of collections
+    * is retrieved. Use the `useBatch` parameter of the {@link sap.ui.model.odata.v2.ODataModel} constructor
+    * to specify whether requests are sent in $batch.
     *
     * Different modes for retrieving the count of collections.
     */
@@ -28,9 +28,9 @@ object sapUiModelOdataV2BatchModeMod {
   @js.native
   sealed trait BatchMode extends StObject
   /**
-    * @deprecated - Use {@link sap.ui.model.odata.CountMode} to specify how the count of collections is retrieved.
-    * Use the `useBatch` parameter of the {@link sap.ui.model.odata.v2.ODataModel} constructor to specify whether
-    * requests are sent in $batch.
+    * @deprecated (since 1.74.0) - Use {@link sap.ui.model.odata.CountMode} to specify how the count of collections
+    * is retrieved. Use the `useBatch` parameter of the {@link sap.ui.model.odata.v2.ODataModel} constructor
+    * to specify whether requests are sent in $batch.
     *
     * Different modes for retrieving the count of collections.
     */

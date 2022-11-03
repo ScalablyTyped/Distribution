@@ -1,6 +1,6 @@
 package typings.reactNativeSvg
 
-import typings.reactNativeSvg.anon.ObjectmatrixArraynumberunConstructor
+import typings.reactNativeSvg.anon.ObjectmatrixColumnMajorTrConstructor
 import typings.reactNativeSvg.libTypescriptLibExtractExtractTextMod.TextChild
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.CommonPathProps
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.FontProps
@@ -32,7 +32,7 @@ object libTypescriptElementsTspanMod {
   trait TSpan
     extends typings.reactNativeSvg.libTypescriptElementsShapeMod.default[TSpanProps] {
     
-    def setNativeProps(props: ObjectmatrixArraynumberunConstructor): Unit = js.native
+    def setNativeProps(props: ObjectmatrixColumnMajorTrConstructor): Unit = js.native
   }
   
   trait TSpanProps

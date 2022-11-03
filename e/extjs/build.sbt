@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "extjs"
-version := "4.2.1-dt-20220818Z-b79f5b"
+version := "4.2.1-dt-20221103Z-b79f5b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

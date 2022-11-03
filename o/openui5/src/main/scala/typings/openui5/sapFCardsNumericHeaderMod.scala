@@ -325,7 +325,8 @@ object sapFCardsNumericHeaderMod {
     def getSideIndicatorsAlignment(): NumericHeaderSideIndicatorsAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cards.NumericHeaderSideIndicatorsAlignment * / any */ String) = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64)
+      * @EXPERIMENTAL (since 1.64) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getState state}.
       *
@@ -562,7 +563,8 @@ object sapFCardsNumericHeaderMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64)
+      * @EXPERIMENTAL (since 1.64) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getState state}.
       *
@@ -757,7 +759,8 @@ object sapFCardsNumericHeaderMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.64)
+      * @EXPERIMENTAL (since 1.64) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * The semantic color which represents the state of the main number indicator.
       */

@@ -282,7 +282,8 @@ object sapUiTableTreeTableMod {
     mParameters: RowIndex): this.type = js.native
     
     /**
-      * @deprecated (since 1.76) - replaced by the `collapseRecursive` binding parameter
+      * @deprecated (since 1.76) - replaced by the `collapseRecursive` binding parameter. May not work with all
+      * bindings.
       *
       * Gets current value of property {@link #getCollapseRecursive collapseRecursive}.
       *
@@ -311,7 +312,8 @@ object sapUiTableTreeTableMod {
     def getCollapseRecursive(): Boolean = js.native
     
     /**
-      * @deprecated (since 1.46.3) - replaced by the `numberOfExpandedLevels` binding parameter
+      * @deprecated (since 1.46.3) - replaced by the `numberOfExpandedLevels` binding parameter. May not work
+      * with all bindings.
       *
       * Gets current value of property {@link #getExpandFirstLevel expandFirstLevel}.
       *
@@ -349,7 +351,7 @@ object sapUiTableTreeTableMod {
     def getGroupHeaderProperty(): String = js.native
     
     /**
-      * @deprecated (since 1.76) - replaced by the `rootLevel` binding parameter
+      * @deprecated (since 1.76) - replaced by the `rootLevel` binding parameter. May not work with all bindings.
       *
       * Gets current value of property {@link #getRootLevel rootLevel}.
       *
@@ -399,7 +401,8 @@ object sapUiTableTreeTableMod {
     iRowIndex: int): Boolean = js.native
     
     /**
-      * @deprecated (since 1.76) - replaced by the `collapseRecursive` binding parameter
+      * @deprecated (since 1.76) - replaced by the `collapseRecursive` binding parameter. May not work with all
+      * bindings.
       *
       * Sets a new value for property {@link #getCollapseRecursive collapseRecursive}.
       *
@@ -434,7 +437,8 @@ object sapUiTableTreeTableMod {
     bCollapseRecursive: Boolean): this.type = js.native
     
     /**
-      * @deprecated (since 1.46.3) - replaced by the `numberOfExpandedLevels` binding parameter
+      * @deprecated (since 1.46.3) - replaced by the `numberOfExpandedLevels` binding parameter. May not work
+      * with all bindings.
       *
       * Sets a new value for property {@link #getExpandFirstLevel expandFirstLevel}.
       *
@@ -484,7 +488,7 @@ object sapUiTableTreeTableMod {
     sGroupHeaderProperty: String): this.type = js.native
     
     /**
-      * @deprecated (since 1.76) - replaced by the `rootLevel` binding parameter
+      * @deprecated (since 1.76) - replaced by the `rootLevel` binding parameter. May not work with all bindings.
       *
       * Sets a new value for property {@link #getRootLevel rootLevel}.
       *
@@ -559,7 +563,8 @@ object sapUiTableTreeTableMod {
        with TableSettings {
     
     /**
-      * @deprecated (since 1.76) - replaced by the `collapseRecursive` binding parameter
+      * @deprecated (since 1.76) - replaced by the `collapseRecursive` binding parameter. May not work with all
+      * bindings.
       *
       * Setting collapseRecursive to true means, that when collapsing a node all subsequent child nodes will
       * also be collapsed. This property is only supported with sap.ui.model.odata.v2.ODataModel. **Note:** collapseRecursive
@@ -583,7 +588,8 @@ object sapUiTableTreeTableMod {
       ] = js.undefined
     
     /**
-      * @deprecated (since 1.46.3) - replaced by the `numberOfExpandedLevels` binding parameter
+      * @deprecated (since 1.46.3) - replaced by the `numberOfExpandedLevels` binding parameter. May not work
+      * with all bindings.
       *
       * Specifies whether the first level is expanded.
       *
@@ -612,7 +618,7 @@ object sapUiTableTreeTableMod {
     var groupHeaderProperty: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @deprecated (since 1.76) - replaced by the `rootLevel` binding parameter
+      * @deprecated (since 1.76) - replaced by the `rootLevel` binding parameter. May not work with all bindings.
       *
       * The root level is the level of the topmost tree nodes, which will be used as an entry point for OData
       * services. This property is only supported when the TreeTable uses an underlying odata services with hierarchy

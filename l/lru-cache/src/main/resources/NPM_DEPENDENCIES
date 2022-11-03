@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lru-cache" : "7.14.0"
+      "lru-cache" : "7.14.1"
     }
   ],
   "test-dependencies" : [
     {
-      "lru-cache" : "7.14.0"
+      "lru-cache" : "7.14.1"
     }
   ],
   "compile-devDependencies" : [

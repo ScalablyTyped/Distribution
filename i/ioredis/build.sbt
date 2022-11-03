@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ioredis"
-version := "5.2.3-4f6339"
+version := "5.2.4-211d4e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

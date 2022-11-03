@@ -27,7 +27,7 @@ trait LifecycleRule extends StObject {
   var ID: js.UndefOr[typings.awsSdk.clientsS3controlMod.ID] = js.undefined
   
   /**
-    * The noncurrent version expiration of the lifecycle rule.  This is not supported by Amazon S3 on Outposts buckets. 
+    * The noncurrent version expiration of the lifecycle rule.
     */
   var NoncurrentVersionExpiration: js.UndefOr[typings.awsSdk.clientsS3controlMod.NoncurrentVersionExpiration] = js.undefined
   

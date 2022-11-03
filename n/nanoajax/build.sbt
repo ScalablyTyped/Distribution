@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nanoajax"
-version := "v0.2.4-dt-20220818Z-3992ac"
+version := "v0.2.4-dt-20221103Z-3992ac"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

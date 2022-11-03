@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "statsd-client"
-version := "v0.4.7-dt-20220818Z-80cdfb"
+version := "v0.4.7-dt-20221103Z-80cdfb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

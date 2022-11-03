@@ -1,7 +1,7 @@
 
 # Scala.js typings for ioredis
 
-Typings are for version 5.2.3
+Typings are for version 5.2.4
 
 ## Library description:
 A robust, performance-focused and full-featured Redis client for Node.js.

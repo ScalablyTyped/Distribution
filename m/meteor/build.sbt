@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "meteor"
-version := "2.8-dt-20221031Z-8afc90"
+version := "2.8-dt-20221103Z-3f9406"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-d67c0f",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-9d6f35",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-9d6f35",
   "org.scalablytyped" %%% "mongodb" % "4.11.0-c9f522",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",

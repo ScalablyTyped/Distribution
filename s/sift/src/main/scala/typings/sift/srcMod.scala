@@ -1,6 +1,7 @@
 package typings.sift
 
 import typings.sift.anon.PartialOptionsCompare
+import typings.sift.libCoreMod.NopeOperation
 import typings.sift.libCoreMod.QueryOperation
 import typings.sift.libUtilsMod.Key
 import typings.sift.srcCoreMod.Operation
@@ -33,13 +34,17 @@ object srcMod {
   @js.native
   open class $Size protected ()
     extends typings.sift.srcOperationsMod.$Size {
+    def this(params: Any, owneryQuery: Any, options: Options) = this()
     def this(params: Any, owneryQuery: Any, options: Options, name: String) = this()
   }
   
   @JSImport("sift/src", "EqualsOperation")
   @js.native
-  open class EqualsOperation[TParam] ()
-    extends typings.sift.srcCoreMod.EqualsOperation[TParam]
+  open class EqualsOperation[TParam] protected ()
+    extends typings.sift.srcCoreMod.EqualsOperation[TParam] {
+    def this(params: TParam, owneryQuery: Any, options: Options) = this()
+    def this(params: TParam, owneryQuery: Any, options: Options, name: String) = this()
+  }
   
   inline def all(params: js.Array[Query[Any]], ownerQuery: Query[Any], options: Options, name: String): $All = (^.asInstanceOf[js.Dynamic].applyDynamic("$all")(params.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$All]
   
@@ -96,15 +101,15 @@ object srcMod {
   
   inline def exists(params: Boolean, owneryQuery: Query[Any], options: Options, name: String): $Exists = (^.asInstanceOf[js.Dynamic].applyDynamic("$exists")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$Exists]
   
-  inline def gt(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$gt")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any]]
+  inline def gt(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] | NopeOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$gt")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any] | NopeOperation[Any]]
   
-  inline def gte(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$gte")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any]]
+  inline def gte(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] | NopeOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$gte")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any] | NopeOperation[Any]]
   
   inline def in(params: Any, owneryQuery: Query[Any], options: Options, name: String): $In = (^.asInstanceOf[js.Dynamic].applyDynamic("$in")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$In]
   
-  inline def lt(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$lt")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any]]
+  inline def lt(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] | NopeOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$lt")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any] | NopeOperation[Any]]
   
-  inline def lte(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$lte")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any]]
+  inline def lte(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] | NopeOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$lte")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any] | NopeOperation[Any]]
   
   inline def mod(param0: js.Array[Double], owneryQuery: Query[Any], options: Options): typings.sift.srcCoreMod.EqualsOperation[js.Function1[/* b */ Any, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$mod")(param0.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.sift.srcCoreMod.EqualsOperation[js.Function1[/* b */ Any, Boolean]]]
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "event-stream"
-version := "v4.0-dt-20220818Z-9a7532"
+version := "v4.0-dt-20221103Z-9a7532"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

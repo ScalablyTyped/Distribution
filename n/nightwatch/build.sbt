@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "nightwatch"
-version := "2.3-dt-20220929Z-6d3d26"
+version := "2.3-dt-20220929Z-d914ad"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1064701-d7bce2",
+  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1066334-143d2b",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221101Z-107dc9",
   "org.scalablytyped" %%% "std" % "4.8-837c43",

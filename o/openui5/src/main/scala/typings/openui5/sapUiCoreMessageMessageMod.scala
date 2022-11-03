@@ -183,7 +183,7 @@ object sapUiCoreMessageMessageMod {
     def getPersistent(): Boolean = js.native
     
     /**
-      * @deprecated - As a message may have multiple targets, use {@link #getTargets} instead
+      * @deprecated (since 1.79.0) - As a message may have multiple targets, use {@link #getTargets} instead
       *
       * Returns the message target or the first target if the message has multiple targets.
       *
@@ -293,7 +293,7 @@ object sapUiCoreMessageMessageMod {
     ): Unit = js.native
     
     /**
-      * @deprecated - As a message may have multiple targets, use {@link #setTargets} instead
+      * @deprecated (since 1.79.0) - As a message may have multiple targets, use {@link #setTargets} instead
       *
       * Sets the message target; in case the message has multiple targets, sets the first target of the message.
       * The syntax is MessageProcessor dependent. See the documentation of the respective MessageProcessor.

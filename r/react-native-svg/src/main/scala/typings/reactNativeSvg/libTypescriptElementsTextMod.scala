@@ -1,7 +1,7 @@
 package typings.reactNativeSvg
 
 import typings.react.mod.ReactNode
-import typings.reactNativeSvg.anon.ObjectmatrixArraynumberunConstructor
+import typings.reactNativeSvg.anon.ObjectmatrixColumnMajorTrConstructor
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.TextSpecificProps
@@ -31,7 +31,7 @@ object libTypescriptElementsTextMod {
   trait Text
     extends typings.reactNativeSvg.libTypescriptElementsShapeMod.default[TextProps] {
     
-    def setNativeProps(props: ObjectmatrixArraynumberunConstructor): Unit = js.native
+    def setNativeProps(props: ObjectmatrixColumnMajorTrConstructor): Unit = js.native
   }
   
   trait TextProps

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angulartics"
-version := "1.4-dt-20211202Z-a48180"
+version := "1.4-dt-20221103Z-a48180"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

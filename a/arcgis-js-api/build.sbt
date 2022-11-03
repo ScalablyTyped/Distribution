@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "arcgis-js-api"
-version := "4.24-dt-20220623Z-e1ea56"
+version := "4.24-dt-20221103Z-e1ea56"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

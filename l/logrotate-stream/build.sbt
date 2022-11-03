@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "logrotate-stream"
-version := "0.2.8-dt-20220818Z-18cd33"
+version := "0.2.8-dt-20221103Z-18cd33"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

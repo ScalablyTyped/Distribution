@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rtree"
-version := "1.4.0-dt-20220818Z-a35795"
+version := "1.4.0-dt-20221103Z-a35795"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

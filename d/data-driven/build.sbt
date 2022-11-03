@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "data-driven"
-version := "0.0-unknown-dt-20220818Z-a917b7"
+version := "0.0-unknown-dt-20221103Z-a917b7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

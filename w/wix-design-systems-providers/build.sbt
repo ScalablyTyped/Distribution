@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wix-design-systems-providers"
-version := "1.16.0-e56986"
+version := "1.16.1-a849d1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

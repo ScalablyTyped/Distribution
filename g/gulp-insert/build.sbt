@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-insert"
-version := "0.5.0-dt-20220818Z-a390b6"
+version := "0.5.0-dt-20221103Z-a390b6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

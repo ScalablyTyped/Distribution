@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "paralleljs"
-version := "0.0-unknown-dt-20220818Z-eafa27"
+version := "0.0-unknown-dt-20221103Z-eafa27"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

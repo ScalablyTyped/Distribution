@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-less"
-version := "0.1-dt-20220818Z-d1824d"
+version := "0.1-dt-20221103Z-d1824d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

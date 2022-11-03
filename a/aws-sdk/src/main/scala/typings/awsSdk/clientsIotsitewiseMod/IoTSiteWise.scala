@@ -141,12 +141,12 @@ trait IoTSiteWise extends Service {
   var config_IoTSiteWise: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates an access policy that grants the specified identity (Amazon Web Services SSO user, Amazon Web Services SSO group, or IAM user) access to the specified IoT SiteWise Monitor portal or project resource.
+    * Creates an access policy that grants the specified identity (IAM Identity Center user, IAM Identity Center group, or IAM user) access to the specified IoT SiteWise Monitor portal or project resource.
     */
   def createAccessPolicy(): Request[CreateAccessPolicyResponse, AWSError] = js.native
   def createAccessPolicy(callback: js.Function2[/* err */ AWSError, /* data */ CreateAccessPolicyResponse, Unit]): Request[CreateAccessPolicyResponse, AWSError] = js.native
   /**
-    * Creates an access policy that grants the specified identity (Amazon Web Services SSO user, Amazon Web Services SSO group, or IAM user) access to the specified IoT SiteWise Monitor portal or project resource.
+    * Creates an access policy that grants the specified identity (IAM Identity Center user, IAM Identity Center group, or IAM user) access to the specified IoT SiteWise Monitor portal or project resource.
     */
   def createAccessPolicy(params: CreateAccessPolicyRequest): Request[CreateAccessPolicyResponse, AWSError] = js.native
   def createAccessPolicy(
@@ -225,12 +225,12 @@ trait IoTSiteWise extends Service {
   ): Request[CreateGatewayResponse, AWSError] = js.native
   
   /**
-    * Creates a portal, which can contain projects and dashboards. IoT SiteWise Monitor uses Amazon Web Services SSO or IAM to authenticate portal users and manage user permissions.  Before you can sign in to a new portal, you must add at least one identity to that portal. For more information, see Adding or removing portal administrators in the IoT SiteWise User Guide. 
+    * Creates a portal, which can contain projects and dashboards. IoT SiteWise Monitor uses IAM Identity Center or IAM to authenticate portal users and manage user permissions.  Before you can sign in to a new portal, you must add at least one identity to that portal. For more information, see Adding or removing portal administrators in the IoT SiteWise User Guide. 
     */
   def createPortal(): Request[CreatePortalResponse, AWSError] = js.native
   def createPortal(callback: js.Function2[/* err */ AWSError, /* data */ CreatePortalResponse, Unit]): Request[CreatePortalResponse, AWSError] = js.native
   /**
-    * Creates a portal, which can contain projects and dashboards. IoT SiteWise Monitor uses Amazon Web Services SSO or IAM to authenticate portal users and manage user permissions.  Before you can sign in to a new portal, you must add at least one identity to that portal. For more information, see Adding or removing portal administrators in the IoT SiteWise User Guide. 
+    * Creates a portal, which can contain projects and dashboards. IoT SiteWise Monitor uses IAM Identity Center or IAM to authenticate portal users and manage user permissions.  Before you can sign in to a new portal, you must add at least one identity to that portal. For more information, see Adding or removing portal administrators in the IoT SiteWise User Guide. 
     */
   def createPortal(params: CreatePortalRequest): Request[CreatePortalResponse, AWSError] = js.native
   def createPortal(
@@ -651,18 +651,32 @@ trait IoTSiteWise extends Service {
   ): Request[GetInterpolatedAssetPropertyValuesResponse, AWSError] = js.native
   
   /**
-    * Retrieves a paginated list of access policies for an identity (an Amazon Web Services SSO user, an Amazon Web Services SSO group, or an IAM user) or an IoT SiteWise Monitor resource (a portal or project).
+    * Retrieves a paginated list of access policies for an identity (an IAM Identity Center user, an IAM Identity Center group, or an IAM user) or an IoT SiteWise Monitor resource (a portal or project).
     */
   def listAccessPolicies(): Request[ListAccessPoliciesResponse, AWSError] = js.native
   def listAccessPolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListAccessPoliciesResponse, Unit]): Request[ListAccessPoliciesResponse, AWSError] = js.native
   /**
-    * Retrieves a paginated list of access policies for an identity (an Amazon Web Services SSO user, an Amazon Web Services SSO group, or an IAM user) or an IoT SiteWise Monitor resource (a portal or project).
+    * Retrieves a paginated list of access policies for an identity (an IAM Identity Center user, an IAM Identity Center group, or an IAM user) or an IoT SiteWise Monitor resource (a portal or project).
     */
   def listAccessPolicies(params: ListAccessPoliciesRequest): Request[ListAccessPoliciesResponse, AWSError] = js.native
   def listAccessPolicies(
     params: ListAccessPoliciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAccessPoliciesResponse, Unit]
   ): Request[ListAccessPoliciesResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves a paginated list of properties associated with an asset model. If you update properties associated with the model before you finish listing all the properties, you need to start all over again.
+    */
+  def listAssetModelProperties(): Request[ListAssetModelPropertiesResponse, AWSError] = js.native
+  def listAssetModelProperties(callback: js.Function2[/* err */ AWSError, /* data */ ListAssetModelPropertiesResponse, Unit]): Request[ListAssetModelPropertiesResponse, AWSError] = js.native
+  /**
+    * Retrieves a paginated list of properties associated with an asset model. If you update properties associated with the model before you finish listing all the properties, you need to start all over again.
+    */
+  def listAssetModelProperties(params: ListAssetModelPropertiesRequest): Request[ListAssetModelPropertiesResponse, AWSError] = js.native
+  def listAssetModelProperties(
+    params: ListAssetModelPropertiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAssetModelPropertiesResponse, Unit]
+  ): Request[ListAssetModelPropertiesResponse, AWSError] = js.native
   
   /**
     * Retrieves a paginated list of summaries of all asset models.
@@ -677,6 +691,20 @@ trait IoTSiteWise extends Service {
     params: ListAssetModelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAssetModelsResponse, Unit]
   ): Request[ListAssetModelsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves a paginated list of properties associated with an asset. If you update properties associated with the model before you finish listing all the properties, you need to start all over again.
+    */
+  def listAssetProperties(): Request[ListAssetPropertiesResponse, AWSError] = js.native
+  def listAssetProperties(callback: js.Function2[/* err */ AWSError, /* data */ ListAssetPropertiesResponse, Unit]): Request[ListAssetPropertiesResponse, AWSError] = js.native
+  /**
+    * Retrieves a paginated list of properties associated with an asset. If you update properties associated with the model before you finish listing all the properties, you need to start all over again.
+    */
+  def listAssetProperties(params: ListAssetPropertiesRequest): Request[ListAssetPropertiesResponse, AWSError] = js.native
+  def listAssetProperties(
+    params: ListAssetPropertiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAssetPropertiesResponse, Unit]
+  ): Request[ListAssetPropertiesResponse, AWSError] = js.native
   
   /**
     * Retrieves a paginated list of asset relationships for an asset. You can use this operation to identify an asset's root asset and all associated assets between that asset and its root.

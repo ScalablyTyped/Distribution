@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "hexo"
-version := "3.8-dt-20220910Z-44bc77"
+version := "3.8-dt-20220910Z-158f51"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220923Z-5a7a5b",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-5a7a5b",
   "org.scalablytyped" %%% "bunyan" % "1.8-dt-20211202Z-83d84c",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-d67c0f",
   "org.scalablytyped" %%% "hexo-util" % "0.6-dt-20220911Z-8b9a6f",

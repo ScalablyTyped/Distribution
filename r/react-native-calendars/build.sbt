@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-calendars"
-version := "1.1264-dt-20211202Z-19e4df"
+version := "1.1264-dt-20211202Z-dc80c3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-ebe936",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "xdate" % "0.8-dt-20211202Z-ca4ecd")
+  "org.scalablytyped" %%% "xdate" % "0.8-dt-20221103Z-ca4ecd")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

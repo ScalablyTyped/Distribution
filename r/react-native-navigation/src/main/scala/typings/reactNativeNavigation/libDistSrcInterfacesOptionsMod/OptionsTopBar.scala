@@ -86,6 +86,8 @@ trait OptionsTopBar extends StObject {
     */
   var largeTitle: js.UndefOr[OptionsTopBarLargeTitle] = js.undefined
   
+  var leftButtonBackgroundColor: js.UndefOr[Color] = js.undefined
+  
   /**
     * Change button colors in the top bar
     */
@@ -104,6 +106,8 @@ trait OptionsTopBar extends StObject {
     * @default false
     */
   var noBorder: js.UndefOr[Boolean] = js.undefined
+  
+  var rightButtonBackgroundColor: js.UndefOr[Color] = js.undefined
   
   var rightButtonColor: js.UndefOr[Color] = js.undefined
   
@@ -242,6 +246,12 @@ object OptionsTopBar {
     
     inline def setLargeTitleUndefined: Self = StObject.set(x, "largeTitle", js.undefined)
     
+    inline def setLeftButtonBackgroundColor(value: Color): Self = StObject.set(x, "leftButtonBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setLeftButtonBackgroundColorNull: Self = StObject.set(x, "leftButtonBackgroundColor", null)
+    
+    inline def setLeftButtonBackgroundColorUndefined: Self = StObject.set(x, "leftButtonBackgroundColor", js.undefined)
+    
     inline def setLeftButtonColor(value: Color): Self = StObject.set(x, "leftButtonColor", value.asInstanceOf[js.Any])
     
     inline def setLeftButtonColorNull: Self = StObject.set(x, "leftButtonColor", null)
@@ -263,6 +273,12 @@ object OptionsTopBar {
     inline def setNoBorder(value: Boolean): Self = StObject.set(x, "noBorder", value.asInstanceOf[js.Any])
     
     inline def setNoBorderUndefined: Self = StObject.set(x, "noBorder", js.undefined)
+    
+    inline def setRightButtonBackgroundColor(value: Color): Self = StObject.set(x, "rightButtonBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setRightButtonBackgroundColorNull: Self = StObject.set(x, "rightButtonBackgroundColor", null)
+    
+    inline def setRightButtonBackgroundColorUndefined: Self = StObject.set(x, "rightButtonBackgroundColor", js.undefined)
     
     inline def setRightButtonColor(value: Color): Self = StObject.set(x, "rightButtonColor", value.asInstanceOf[js.Any])
     

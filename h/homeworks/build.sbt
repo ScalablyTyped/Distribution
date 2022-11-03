@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "homeworks"
-version := "1.0.50-525917"
+version := "1.0.50-7de6ab"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__types" % "7.20.0-d18d74",
   "org.scalablytyped" %%% "convert-source-map" % "1.5-dt-20211202Z-ed3b05",
   "org.scalablytyped" %%% "dependency-graph" % "0.11.0-efd2dc",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-9d6f35",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-9d6f35",
   "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-09f6eb",
   "org.scalablytyped" %%% "magic-string" % "0.26.7-deb100",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",

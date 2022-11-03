@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "netmask"
-version := "1.0.5-dt-20220818Z-630e90"
+version := "1.0.5-dt-20221103Z-630e90"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

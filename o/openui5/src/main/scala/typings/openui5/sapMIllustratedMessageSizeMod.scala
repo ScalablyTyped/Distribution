@@ -24,6 +24,8 @@ object sapMIllustratedMessageSizeMod {
     
     /* "Dialog" */ val Dialog: typings.openui5.sapMIllustratedMessageSizeMod.IllustratedMessageSize.Dialog & String = js.native
     
+    /* "Dot" */ val Dot: typings.openui5.sapMIllustratedMessageSizeMod.IllustratedMessageSize.Dot & String = js.native
+    
     /* "Scene" */ val Scene: typings.openui5.sapMIllustratedMessageSizeMod.IllustratedMessageSize.Scene & String = js.native
     
     /* "Spot" */ val Spot: typings.openui5.sapMIllustratedMessageSizeMod.IllustratedMessageSize.Spot & String = js.native
@@ -54,7 +56,7 @@ object sapMIllustratedMessageSizeMod {
          with IllustratedMessageSize
     
     /**
-      * Base `Illustration` size (XS breakpoint). Suitable for cards (two columns).
+      * Base `Illustration` size. Suitable for cards (two columns).
       *
       * **Note:** When `Base` is in use, no illustration is displayed.
       */
@@ -68,6 +70,16 @@ object sapMIllustratedMessageSizeMod {
       */
     @js.native
     sealed trait Dialog
+      extends StObject
+         with IllustratedMessageSize
+    
+    /**
+      * @SINCE 1.108
+      *
+      * Dot `Illustration` size (XS breakpoint). Suitable for spaces with little vertical space.
+      */
+    @js.native
+    sealed trait Dot
       extends StObject
          with IllustratedMessageSize
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "backbone_dot_localstorage"
-version := "1.0-dt-20211202Z-1b048d"
+version := "1.0-dt-20221103Z-1b048d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

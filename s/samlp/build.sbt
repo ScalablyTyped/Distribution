@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "samlp"
-version := "1.0.0-dt-20220818Z-2eb619"
+version := "1.0.0-dt-20221103Z-2eb619"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

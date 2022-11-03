@@ -460,7 +460,7 @@ object sapMAvatarMod {
     /**
       * Gets current value of property {@link #getInitials initials}.
       *
-      * Defines the displayed initials.
+      * Defines the displayed initials. They should consist of only 1,2 or 3 latin letters.
       *
       * @returns Value of property `initials`
       */
@@ -805,7 +805,7 @@ object sapMAvatarMod {
     /**
       * Sets a new value for property {@link #getInitials initials}.
       *
-      * Defines the displayed initials.
+      * Defines the displayed initials. They should consist of only 1,2 or 3 latin letters.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -987,7 +987,7 @@ object sapMAvatarMod {
       ] = js.undefined
     
     /**
-      * Defines the displayed initials.
+      * Defines the displayed initials. They should consist of only 1,2 or 3 latin letters.
       */
     var initials: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     

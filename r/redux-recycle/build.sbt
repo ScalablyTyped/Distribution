@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-recycle"
-version := "1.2-dt-20211202Z-5df472"
+version := "1.2-dt-20221103Z-5df472"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

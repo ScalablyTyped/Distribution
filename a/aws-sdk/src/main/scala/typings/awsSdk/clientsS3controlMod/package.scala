@@ -272,6 +272,8 @@ type NonEmptyMaxLength256String = String
 
 type NonEmptyMaxLength64String = String
 
+type NoncurrentVersionCount = Double
+
 type NoncurrentVersionTransitionList = js.Array[NoncurrentVersionTransition]
 
 type ObjectCreationTime = js.Date
@@ -311,6 +313,10 @@ type ObjectLambdaTransformationConfigurationActionsList = js.Array[ObjectLambdaT
 type ObjectLambdaTransformationConfigurationsList = js.Array[ObjectLambdaTransformationConfiguration]
 
 type ObjectLockEnabledForBucket = scala.Boolean
+
+type ObjectSizeGreaterThanBytes = Double
+
+type ObjectSizeLessThanBytes = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LambdaInvoke

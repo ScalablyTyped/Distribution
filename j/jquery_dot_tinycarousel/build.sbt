@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_tinycarousel"
-version := "1.9-dt-20211202Z-39b323"
+version := "1.9-dt-20221103Z-39b323"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

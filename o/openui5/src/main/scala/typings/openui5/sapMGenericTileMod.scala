@@ -400,7 +400,7 @@ object sapMGenericTileMod {
     def getBackgroundImage(): URI = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.44.1)
+      * @EXPERIMENTAL (since 1.44.1) - This method's implementation is subject to change
       *
       * Provides an interface to the tile's layout information consistent in all modes and content densities.
       *

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flightplan"
-version := "v0.6.9-dt-20220818Z-c237b1"
+version := "v0.6.9-dt-20221103Z-c237b1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

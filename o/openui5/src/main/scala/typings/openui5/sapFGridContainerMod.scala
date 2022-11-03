@@ -414,7 +414,8 @@ object sapFGridContainerMod {
     def destroyLayoutXL(): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.71)
+      * @EXPERIMENTAL (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Destroys the layoutXS in the aggregation {@link #getLayoutXS layoutXS}.
       *
@@ -530,7 +531,7 @@ object sapFGridContainerMod {
     mParameters: Layout): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81)
+      * @EXPERIMENTAL (since 1.81) - Behavior might change.
       *
       * Focuses the item on the given index. Should be called after successful drop operation.
       *
@@ -556,7 +557,7 @@ object sapFGridContainerMod {
     iColumn: int
     ): Unit = js.native
     /**
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Behavior might change.
       *
       * Focuses an item in the given direction - up, down, left or right, from the starting position specified
       * by row and column.
@@ -592,7 +593,8 @@ object sapFGridContainerMod {
     def getActiveLayoutSettings(): typings.openui5.sapFGridContainerSettingsMod.default = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.66)
+      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getAllowDenseFill allowDenseFill}.
       *
@@ -632,7 +634,8 @@ object sapFGridContainerMod {
     def getContainerQuery(): Boolean = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.66)
+      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getInlineBlockLayout inlineBlockLayout}.
       *
@@ -697,7 +700,8 @@ object sapFGridContainerMod {
     def getLayoutXL(): typings.openui5.sapFGridContainerSettingsMod.default = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.71)
+      * @EXPERIMENTAL (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets content of aggregation {@link #getLayoutXS layoutXS}.
       *
@@ -706,7 +710,8 @@ object sapFGridContainerMod {
     def getLayoutXS(): typings.openui5.sapFGridContainerSettingsMod.default = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81)
+      * @EXPERIMENTAL (since 1.81) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release.
       *
       * Gets current value of property {@link #getMinHeight minHeight}.
       *
@@ -857,7 +862,8 @@ object sapFGridContainerMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.66)
+      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getAllowDenseFill allowDenseFill}.
       *
@@ -897,7 +903,8 @@ object sapFGridContainerMod {
     bContainerQuery: Boolean): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.66)
+      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getInlineBlockLayout inlineBlockLayout}.
       *
@@ -970,7 +977,8 @@ object sapFGridContainerMod {
     oLayoutXL: typings.openui5.sapFGridContainerSettingsMod.default): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.71)
+      * @EXPERIMENTAL (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Sets the aggregated {@link #getLayoutXS layoutXS}.
       *
@@ -982,7 +990,8 @@ object sapFGridContainerMod {
     oLayoutXS: typings.openui5.sapFGridContainerSettingsMod.default): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81)
+      * @EXPERIMENTAL (since 1.81) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release.
       *
       * Sets a new value for property {@link #getMinHeight minHeight}.
       *
@@ -1044,7 +1053,8 @@ object sapFGridContainerMod {
        with ControlSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.66)
+      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Increases the density when arranging the items. Smaller items will take up all of the available space,
       * ignoring their order.
@@ -1084,7 +1094,8 @@ object sapFGridContainerMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.66)
+      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Makes the grid items act like an inline-block elements. They will be arranged in rows with height equal
       * to the highest item in the row.
@@ -1140,14 +1151,16 @@ object sapFGridContainerMod {
     var layoutXL: js.UndefOr[typings.openui5.sapFGridContainerSettingsMod.default] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.71)
+      * @EXPERIMENTAL (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * The sap.f.GridContainerSettings applied for size "XS". Range: up to 374px.
       */
     var layoutXS: js.UndefOr[typings.openui5.sapFGridContainerSettingsMod.default] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.81)
+      * @EXPERIMENTAL (since 1.81) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release.
       *
       * Defines the minimum height of the grid.
       *

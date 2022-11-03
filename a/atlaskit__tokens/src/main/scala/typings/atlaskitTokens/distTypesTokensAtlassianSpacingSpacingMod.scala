@@ -1,6 +1,6 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.anon.Container
+import typings.atlaskitTokens.anon.Ccc
 import typings.atlaskitTokens.atlaskitTokensStrings.attributes
 import typings.atlaskitTokens.distTypesTypesMod.OmitDistributive
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object distTypesTokensAtlassianSpacingSpacingMod {
     
     @JSImport("@atlaskit/tokens/dist/types/tokens/atlassian-spacing/spacing", "default.spacing")
     @js.native
-    def spacing: OmitDistributive[Container, attributes] = js.native
-    inline def spacing_=(x: OmitDistributive[Container, attributes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing")(x.asInstanceOf[js.Any])
+    def spacing: OmitDistributive[Ccc, attributes] = js.native
+    inline def spacing_=(x: OmitDistributive[Ccc, attributes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simple-url-cache"
-version := "0.0-unknown-dt-20220818Z-948b06"
+version := "0.0-unknown-dt-20221103Z-948b06"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

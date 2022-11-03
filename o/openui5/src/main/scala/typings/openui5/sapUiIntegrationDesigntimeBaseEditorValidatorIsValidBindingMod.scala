@@ -14,7 +14,7 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsValidBindingMod extends Sh
   
   /**
     * @SINCE 1.81
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - 1.81
     *
     * Validates if the provided value is a valid binding.
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsend"
-version := "1.0.2-dt-20220818Z-66568b"
+version := "1.0.2-dt-20221103Z-66568b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

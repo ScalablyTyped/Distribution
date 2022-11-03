@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mandrill-api"
-version := "1.x-dt-20211202Z-1ca9fb"
+version := "1.x-dt-20221103Z-1ca9fb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

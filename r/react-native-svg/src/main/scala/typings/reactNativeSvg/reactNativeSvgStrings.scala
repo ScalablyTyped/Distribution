@@ -196,10 +196,26 @@ object reactNativeSvgStrings {
   inline def central: central = "central".asInstanceOf[central]
   
   @js.native
+  sealed trait circle extends StObject
+  inline def circle: circle = "circle".asInstanceOf[circle]
+  
+  @js.native
+  sealed trait clipPath extends StObject
+  inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
+  
+  @js.native
   sealed trait condensed
     extends StObject
        with FontStretch
   inline def condensed: condensed = "condensed".asInstanceOf[condensed]
+  
+  @js.native
+  sealed trait defs extends StObject
+  inline def defs: defs = "defs".asInstanceOf[defs]
+  
+  @js.native
+  sealed trait ellipse extends StObject
+  inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
   sealed trait end
@@ -238,6 +254,14 @@ object reactNativeSvgStrings {
   inline def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
   
   @js.native
+  sealed trait foreignObject extends StObject
+  inline def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
+  
+  @js.native
+  sealed trait g extends StObject
+  inline def g: g = "g".asInstanceOf[g]
+  
+  @js.native
   sealed trait hanging
     extends StObject
        with AlignmentBaseline
@@ -248,6 +272,10 @@ object reactNativeSvgStrings {
     extends StObject
        with AlignmentBaseline
   inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  
+  @js.native
+  sealed trait image extends StObject
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
   sealed trait inherit
@@ -268,10 +296,26 @@ object reactNativeSvgStrings {
   inline def lighter: lighter = "lighter".asInstanceOf[lighter]
   
   @js.native
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
+  
+  @js.native
   sealed trait `line-through`
     extends StObject
        with TextDecoration
   inline def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
+  
+  @js.native
+  sealed trait linearGradient extends StObject
+  inline def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
+  
+  @js.native
+  sealed trait marker extends StObject
+  inline def marker: marker = "marker".asInstanceOf[marker]
+  
+  @js.native
+  sealed trait mask extends StObject
+  inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
   sealed trait mathematical
@@ -362,8 +406,32 @@ object reactNativeSvgStrings {
   inline def overline: overline = "overline".asInstanceOf[overline]
   
   @js.native
+  sealed trait path extends StObject
+  inline def path: path = "path".asInstanceOf[path]
+  
+  @js.native
+  sealed trait pattern extends StObject
+  inline def pattern: pattern = "pattern".asInstanceOf[pattern]
+  
+  @js.native
   sealed trait polite extends StObject
   inline def polite: polite = "polite".asInstanceOf[polite]
+  
+  @js.native
+  sealed trait polygon extends StObject
+  inline def polygon: polygon = "polygon".asInstanceOf[polygon]
+  
+  @js.native
+  sealed trait polyline extends StObject
+  inline def polyline: polyline = "polyline".asInstanceOf[polyline]
+  
+  @js.native
+  sealed trait radialGradient extends StObject
+  inline def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
+  
+  @js.native
+  sealed trait rect extends StObject
+  inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
   sealed trait round
@@ -427,6 +495,10 @@ object reactNativeSvgStrings {
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
+  sealed trait stop extends StObject
+  inline def stop: stop = "stop".asInstanceOf[stop]
+  
+  @js.native
   sealed trait stretch
     extends StObject
        with TextPathMethod
@@ -449,6 +521,18 @@ object reactNativeSvgStrings {
     extends StObject
        with _BaselineShift
   inline def `super`: `super` = "super".asInstanceOf[`super`]
+  
+  @js.native
+  sealed trait svg extends StObject
+  inline def svg: svg = "svg".asInstanceOf[svg]
+  
+  @js.native
+  sealed trait symbol extends StObject
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait `text-after-edge`
@@ -475,10 +559,18 @@ object reactNativeSvgStrings {
   inline def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
   
   @js.native
+  sealed trait textPath extends StObject
+  inline def textPath: textPath = "textPath".asInstanceOf[textPath]
+  
+  @js.native
   sealed trait top
     extends StObject
        with AlignmentBaseline
   inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
+  sealed trait tspan extends StObject
+  inline def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
   sealed trait `ultra-condensed`
@@ -503,6 +595,10 @@ object reactNativeSvgStrings {
     extends StObject
        with VectorEffect
   inline def uri: uri = "uri".asInstanceOf[uri]
+  
+  @js.native
+  sealed trait use extends StObject
+  inline def use: use = "use".asInstanceOf[use]
   
   @js.native
   sealed trait userSpaceOnUse

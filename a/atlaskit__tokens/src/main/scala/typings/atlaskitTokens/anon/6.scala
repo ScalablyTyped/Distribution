@@ -1,24 +1,23 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesTypesMod.PaintToken
+import typings.atlaskitTokens.atlaskitTokensStrings.Space200
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `6`[BaseToken] extends StObject {
+trait `6` extends StObject {
   
-  var `[default]`: PaintToken[BaseToken]
+  var value: Space200
 }
 object `6` {
   
-  inline def apply[BaseToken](`[default]`: PaintToken[BaseToken]): `6`[BaseToken] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`6`[BaseToken]]
+  inline def apply(): `6` = {
+    val __obj = js.Dynamic.literal(value = "Space200")
+    __obj.asInstanceOf[`6`]
   }
   
-  extension [Self <: `6`[?], BaseToken](x: Self & `6`[BaseToken]) {
+  extension [Self <: `6`](x: Self) {
     
-    inline def `set[default]`(value: PaintToken[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
+    inline def setValue(value: Space200): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

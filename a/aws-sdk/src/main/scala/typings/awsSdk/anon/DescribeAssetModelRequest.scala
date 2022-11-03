@@ -1,5 +1,6 @@
 package typings.awsSdk.anon
 
+import typings.awsSdk.clientsIotsitewiseMod.ExcludeProperties
 import typings.awsSdk.clientsIotsitewiseMod.ID
 import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
@@ -16,6 +17,11 @@ trait DescribeAssetModelRequest extends StObject {
     * The ID of the asset model.
     */
   var assetModelId: ID
+  
+  /**
+    *  Whether or not to exclude asset model properties from the response. 
+    */
+  var excludeProperties: js.UndefOr[ExcludeProperties] = js.undefined
 }
 object DescribeAssetModelRequest {
   
@@ -31,5 +37,9 @@ object DescribeAssetModelRequest {
     inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeProperties(value: ExcludeProperties): Self = StObject.set(x, "excludeProperties", value.asInstanceOf[js.Any])
+    
+    inline def setExcludePropertiesUndefined: Self = StObject.set(x, "excludeProperties", js.undefined)
   }
 }

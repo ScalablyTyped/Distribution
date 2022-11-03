@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "microsoft-sdk-soap"
-version := "0.0-unknown-dt-20220818Z-417283"
+version := "0.0-unknown-dt-20221103Z-417283"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

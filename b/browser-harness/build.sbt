@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "browser-harness"
-version := "0.0-unknown-dt-20220818Z-5d5e49"
+version := "0.0-unknown-dt-20221103Z-5d5e49"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

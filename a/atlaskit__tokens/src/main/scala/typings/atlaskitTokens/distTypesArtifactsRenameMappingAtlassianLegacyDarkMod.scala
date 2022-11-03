@@ -40,7 +40,6 @@ object distTypesArtifactsRenameMappingAtlassianLegacyDarkMod extends Shortcut {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcontainerDotgutter
     - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleDot0
     - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleDot100
     - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleDot150
@@ -53,6 +52,70 @@ object distTypesArtifactsRenameMappingAtlassianLegacyDarkMod extends Shortcut {
     - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleDot025
     - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleDot050
     - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleDot075
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot0
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot100
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot200
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot300
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot400
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot500
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot600
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot700
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot800
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot900
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotscaleLinearDot1100
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot0
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot2
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot4
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot6
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot8
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot12
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot16
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot20
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot24
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot32
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot40
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotpixelDot48
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotnone
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotxxxxSmall
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotxxxSmall
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotxxSmall
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotxsmall
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotsmall
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotmedium
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotlarge
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotxlarge
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotxxlarge
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotxxxlarge
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotsizeDotxxxxlarge
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotelementDot2
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotelementDot4
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotelementDot6
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotelementDot8
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotcontainerDot12
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotcontainerDot16
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotcontainerDot20
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotcontainerDot24
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotlayoutDot32
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotlayoutDot40
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDoteclDotlayoutDot64
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcomponentDot2
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcomponentDot4
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcomponentDot6
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcomponentDot8
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcontentDot12
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcontentDot16
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcontentDot20
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcontentDot24
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcontainerDot32
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcontainerDot40
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotcccDotcontainerDot48
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotgapDot100
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotgapDot200
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotgapDot300
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotinsetDot100
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotinsetDot200
+    - typings.atlaskitTokens.atlaskitTokensStrings.spacingDotinsetDot300
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDottextDotaccentDotblue
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDottextDotaccentDotblueDotbolder
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDottextDotaccentDotred

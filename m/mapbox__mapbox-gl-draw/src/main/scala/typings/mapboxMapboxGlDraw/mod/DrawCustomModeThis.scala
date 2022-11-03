@@ -2,6 +2,7 @@ package typings.mapboxMapboxGlDraw.mod
 
 import typings.geojson.mod.BBox
 import typings.geojson.mod.GeoJSON
+import typings.mapboxGl.mod.Map
 import typings.mapboxMapboxGlDraw.anon.Coordpath
 import typings.mapboxMapboxGlDraw.mapboxMapboxGlDrawStrings.click
 import typings.mapboxMapboxGlDraw.mapboxMapboxGlDrawStrings.tap
@@ -45,6 +46,8 @@ trait DrawCustomModeThis extends StObject {
   def isInstanceOf(`type`: String, feature: js.Object): Boolean = js.native
   
   def isSelected(id: String): Boolean = js.native
+  
+  var map: Map = js.native
   
   def newFeature(geojson: GeoJSON): DrawFeature = js.native
   

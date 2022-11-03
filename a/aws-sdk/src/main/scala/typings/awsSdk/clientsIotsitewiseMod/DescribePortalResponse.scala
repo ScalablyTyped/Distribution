@@ -27,7 +27,7 @@ trait DescribePortalResponse extends StObject {
   var portalAuthMode: js.UndefOr[AuthMode] = js.undefined
   
   /**
-    * The Amazon Web Services SSO application generated client ID (used with Amazon Web Services SSO APIs). IoT SiteWise includes portalClientId for only portals that use Amazon Web Services SSO to authenticate users.
+    * The IAM Identity Center application generated client ID (used with IAM Identity Center APIs). IoT SiteWise includes portalClientId for only portals that use IAM Identity Center to authenticate users.
     */
   var portalClientId: PortalClientId
   
@@ -67,7 +67,7 @@ trait DescribePortalResponse extends StObject {
   var portalName: Name
   
   /**
-    * The URL for the IoT SiteWise Monitor portal. You can use this URL to access portals that use Amazon Web Services SSO for authentication. For portals that use IAM for authentication, you must use the IoT SiteWise console to get a URL that you can use to access the portal.
+    * The URL for the IoT SiteWise Monitor portal. You can use this URL to access portals that use IAM Identity Center for authentication. For portals that use IAM for authentication, you must use the IoT SiteWise console to get a URL that you can use to access the portal.
     */
   var portalStartUrl: Url
   

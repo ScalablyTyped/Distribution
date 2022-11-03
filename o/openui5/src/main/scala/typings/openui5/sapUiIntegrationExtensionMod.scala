@@ -125,7 +125,8 @@ object sapUiIntegrationExtensionMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.Extension`.
       *
@@ -153,7 +154,8 @@ object sapUiIntegrationExtensionMod {
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.Extension`.
       *
@@ -192,7 +194,8 @@ object sapUiIntegrationExtensionMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Detaches event handler `fnFunction` from the {@link #event:action action} event of this `sap.ui.integration.Extension`.
       *
@@ -218,7 +221,8 @@ object sapUiIntegrationExtensionMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Fires event {@link #event:action action} to attached listeners.
       *
@@ -235,7 +239,8 @@ object sapUiIntegrationExtensionMod {
     
     /**
       * @deprecated (since 1.85) - This property is replaced by the `actions` aggregation of the card;
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getActions actions}.
       *
@@ -264,6 +269,16 @@ object sapUiIntegrationExtensionMod {
     def getFormatters(): js.Object = js.native
     
     /**
+      * @EXPERIMENTAL (since 1.108)
+      *
+      * Override this method to lazy load dependencies for the extension.
+      *
+      * @returns Returns a promise. The card will wait for this promise to be resolved before continuing with
+      * the initialization.
+      */
+    def loadDependencies(): js.Promise[Any] = js.native
+    
+    /**
       * Called when the card is ready.
       */
     def onCardReady(): Unit = js.native
@@ -274,7 +289,8 @@ object sapUiIntegrationExtensionMod {
        with ManagedObjectSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Fired when an action is triggered in the card.
       */
@@ -282,7 +298,8 @@ object sapUiIntegrationExtensionMod {
     
     /**
       * @deprecated (since 1.85) - This property is replaced by the `actions` aggregation of the card;
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * The actions configuration.
       */

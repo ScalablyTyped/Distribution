@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xsockets"
-version := "3.0-dt-20211202Z-442402"
+version := "3.0-dt-20221103Z-442402"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

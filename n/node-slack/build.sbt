@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-slack"
-version := "0.0-unknown-dt-20220818Z-49015d"
+version := "0.0-unknown-dt-20221103Z-49015d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

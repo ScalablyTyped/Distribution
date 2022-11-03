@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webfontloader"
-version := "1.6.28-dt-20220926Z-4066f9"
+version := "1.6.28-dt-20221103Z-4066f9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

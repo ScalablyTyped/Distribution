@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "recursive-readdir"
-version := "2.2-dt-20220819Z-e51639"
+version := "2.2-dt-20221103Z-e51639"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

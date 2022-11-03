@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postal"
-version := "v1.0.8-dt-20220819Z-cbf05f"
+version := "v1.0.8-dt-20221103Z-cbf05f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

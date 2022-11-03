@@ -13,7 +13,7 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsUniqueListMod extends Shor
   
   /**
     * @SINCE 1.81
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - 1.81
     *
     * Validates if the provided list contains no duplicates.
     */

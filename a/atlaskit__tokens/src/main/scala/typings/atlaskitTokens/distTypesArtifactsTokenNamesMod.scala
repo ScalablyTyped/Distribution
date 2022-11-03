@@ -201,7 +201,31 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-card`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-container-gutter`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-2`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-4`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-6`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-8`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-32`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-40`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-48`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-12`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-16`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-20`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-24`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-12`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-16`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-20`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-24`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-2`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-4`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-6`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-8`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-32`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-40`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-64`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-300`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-blue`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-gray`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-green`
@@ -228,6 +252,9 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-discovery`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-300`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-inverse-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-inverse-pressed`
@@ -239,6 +266,18 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-opacity-loading`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-hover`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-12`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-16`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-20`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-24`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-2`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-32`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-40`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-48`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-4`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-6`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-8`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-025`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-050`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-075`
@@ -251,9 +290,33 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-300`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-400`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-500`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-1000`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-1100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-700`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-800`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-900`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overlay`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-raised`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-large`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-medium`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-none`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-small`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xlarge`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xsmall`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxSmall`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxlarge`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxSmall`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxlarge`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxxSmall`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxxlarge`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-skeleton-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-skeleton`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-surface-hovered`
@@ -1468,9 +1531,165 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val shadowOverlay: `--ds-overlay` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.container.gutter")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.component.2")
     @js.native
-    val spacingContainerGutter: `--ds-container-gutter` = js.native
+    val spacingCccComponent2: `--ds-ccc-component-2` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.component.4")
+    @js.native
+    val spacingCccComponent4: `--ds-ccc-component-4` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.component.6")
+    @js.native
+    val spacingCccComponent6: `--ds-ccc-component-6` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.component.8")
+    @js.native
+    val spacingCccComponent8: `--ds-ccc-component-8` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.container.32")
+    @js.native
+    val spacingCccContainer32: `--ds-ccc-container-32` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.container.40")
+    @js.native
+    val spacingCccContainer40: `--ds-ccc-container-40` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.container.48")
+    @js.native
+    val spacingCccContainer48: `--ds-ccc-container-48` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.content.12")
+    @js.native
+    val spacingCccContent12: `--ds-ccc-content-12` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.content.16")
+    @js.native
+    val spacingCccContent16: `--ds-ccc-content-16` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.content.20")
+    @js.native
+    val spacingCccContent20: `--ds-ccc-content-20` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.content.24")
+    @js.native
+    val spacingCccContent24: `--ds-ccc-content-24` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.container.12")
+    @js.native
+    val spacingEclContainer12: `--ds-ecl-container-12` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.container.16")
+    @js.native
+    val spacingEclContainer16: `--ds-ecl-container-16` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.container.20")
+    @js.native
+    val spacingEclContainer20: `--ds-ecl-container-20` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.container.24")
+    @js.native
+    val spacingEclContainer24: `--ds-ecl-container-24` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.element.2")
+    @js.native
+    val spacingEclElement2: `--ds-ecl-element-2` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.element.4")
+    @js.native
+    val spacingEclElement4: `--ds-ecl-element-4` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.element.6")
+    @js.native
+    val spacingEclElement6: `--ds-ecl-element-6` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.element.8")
+    @js.native
+    val spacingEclElement8: `--ds-ecl-element-8` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.layout.32")
+    @js.native
+    val spacingEclLayout32: `--ds-ecl-layout-32` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.layout.40")
+    @js.native
+    val spacingEclLayout40: `--ds-ecl-layout-40` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.layout.64")
+    @js.native
+    val spacingEclLayout64: `--ds-ecl-layout-64` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.gap.100")
+    @js.native
+    val spacingGap100: `--ds-gap-100` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.gap.200")
+    @js.native
+    val spacingGap200: `--ds-gap-200` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.gap.300")
+    @js.native
+    val spacingGap300: `--ds-gap-300` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.inset.100")
+    @js.native
+    val spacingInset100: `--ds-inset-100` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.inset.200")
+    @js.native
+    val spacingInset200: `--ds-inset-200` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.inset.300")
+    @js.native
+    val spacingInset300: `--ds-inset-300` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.0")
+    @js.native
+    val spacingPixel0: `--ds-pixel-0` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.12")
+    @js.native
+    val spacingPixel12: `--ds-pixel-12` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.16")
+    @js.native
+    val spacingPixel16: `--ds-pixel-16` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.2")
+    @js.native
+    val spacingPixel2: `--ds-pixel-2` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.20")
+    @js.native
+    val spacingPixel20: `--ds-pixel-20` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.24")
+    @js.native
+    val spacingPixel24: `--ds-pixel-24` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.32")
+    @js.native
+    val spacingPixel32: `--ds-pixel-32` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.4")
+    @js.native
+    val spacingPixel4: `--ds-pixel-4` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.40")
+    @js.native
+    val spacingPixel40: `--ds-pixel-40` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.48")
+    @js.native
+    val spacingPixel48: `--ds-pixel-48` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.6")
+    @js.native
+    val spacingPixel6: `--ds-pixel-6` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.8")
+    @js.native
+    val spacingPixel8: `--ds-pixel-8` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.0")
     @js.native
@@ -1519,6 +1738,102 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.600")
     @js.native
     val spacingScale600: `--ds-scale-600` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.0")
+    @js.native
+    val spacingScaleLinear0: `--ds-scaleLinear-0` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.100")
+    @js.native
+    val spacingScaleLinear100: `--ds-scaleLinear-100` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.1000")
+    @js.native
+    val spacingScaleLinear1000: `--ds-scaleLinear-1000` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.1100")
+    @js.native
+    val spacingScaleLinear1100: `--ds-scaleLinear-1100` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.200")
+    @js.native
+    val spacingScaleLinear200: `--ds-scaleLinear-200` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.300")
+    @js.native
+    val spacingScaleLinear300: `--ds-scaleLinear-300` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.400")
+    @js.native
+    val spacingScaleLinear400: `--ds-scaleLinear-400` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.500")
+    @js.native
+    val spacingScaleLinear500: `--ds-scaleLinear-500` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.600")
+    @js.native
+    val spacingScaleLinear600: `--ds-scaleLinear-600` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.700")
+    @js.native
+    val spacingScaleLinear700: `--ds-scaleLinear-700` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.800")
+    @js.native
+    val spacingScaleLinear800: `--ds-scaleLinear-800` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.900")
+    @js.native
+    val spacingScaleLinear900: `--ds-scaleLinear-900` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.large")
+    @js.native
+    val spacingSizeLarge: `--ds-size-large` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.medium")
+    @js.native
+    val spacingSizeMedium: `--ds-size-medium` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.none")
+    @js.native
+    val spacingSizeNone: `--ds-size-none` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.small")
+    @js.native
+    val spacingSizeSmall: `--ds-size-small` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xlarge")
+    @js.native
+    val spacingSizeXlarge: `--ds-size-xlarge` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xsmall")
+    @js.native
+    val spacingSizeXsmall: `--ds-size-xsmall` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxSmall")
+    @js.native
+    val spacingSizeXxSmall: `--ds-size-xxSmall` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxlarge")
+    @js.native
+    val spacingSizeXxlarge: `--ds-size-xxlarge` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxxSmall")
+    @js.native
+    val spacingSizeXxxSmall: `--ds-size-xxxSmall` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxxlarge")
+    @js.native
+    val spacingSizeXxxlarge: `--ds-size-xxxlarge` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxxxSmall")
+    @js.native
+    val spacingSizeXxxxSmall: `--ds-size-xxxxSmall` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxxxlarge")
+    @js.native
+    val spacingSizeXxxxlarge: `--ds-size-xxxxlarge` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.utility.UNSAFE_util.MISSING_TOKEN")
     @js.native
@@ -1933,7 +2248,55 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-cardRightparenthesis`: /* var(--ds-card) */ String = "var(--ds-card)".asInstanceOf[/* var(--ds-card) */ String]
     
-    inline def `varLeftparenthesis--ds-container-gutterRightparenthesis`: /* var(--ds-container-gutter) */ String = "var(--ds-container-gutter)".asInstanceOf[/* var(--ds-container-gutter) */ String]
+    inline def `varLeftparenthesis--ds-ccc-component-2Rightparenthesis`: /* var(--ds-ccc-component-2) */ String = "var(--ds-ccc-component-2)".asInstanceOf[/* var(--ds-ccc-component-2) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-component-4Rightparenthesis`: /* var(--ds-ccc-component-4) */ String = "var(--ds-ccc-component-4)".asInstanceOf[/* var(--ds-ccc-component-4) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-component-6Rightparenthesis`: /* var(--ds-ccc-component-6) */ String = "var(--ds-ccc-component-6)".asInstanceOf[/* var(--ds-ccc-component-6) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-component-8Rightparenthesis`: /* var(--ds-ccc-component-8) */ String = "var(--ds-ccc-component-8)".asInstanceOf[/* var(--ds-ccc-component-8) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-container-32Rightparenthesis`: /* var(--ds-ccc-container-32) */ String = "var(--ds-ccc-container-32)".asInstanceOf[/* var(--ds-ccc-container-32) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-container-40Rightparenthesis`: /* var(--ds-ccc-container-40) */ String = "var(--ds-ccc-container-40)".asInstanceOf[/* var(--ds-ccc-container-40) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-container-48Rightparenthesis`: /* var(--ds-ccc-container-48) */ String = "var(--ds-ccc-container-48)".asInstanceOf[/* var(--ds-ccc-container-48) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-content-12Rightparenthesis`: /* var(--ds-ccc-content-12) */ String = "var(--ds-ccc-content-12)".asInstanceOf[/* var(--ds-ccc-content-12) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-content-16Rightparenthesis`: /* var(--ds-ccc-content-16) */ String = "var(--ds-ccc-content-16)".asInstanceOf[/* var(--ds-ccc-content-16) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-content-20Rightparenthesis`: /* var(--ds-ccc-content-20) */ String = "var(--ds-ccc-content-20)".asInstanceOf[/* var(--ds-ccc-content-20) */ String]
+    
+    inline def `varLeftparenthesis--ds-ccc-content-24Rightparenthesis`: /* var(--ds-ccc-content-24) */ String = "var(--ds-ccc-content-24)".asInstanceOf[/* var(--ds-ccc-content-24) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-container-12Rightparenthesis`: /* var(--ds-ecl-container-12) */ String = "var(--ds-ecl-container-12)".asInstanceOf[/* var(--ds-ecl-container-12) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-container-16Rightparenthesis`: /* var(--ds-ecl-container-16) */ String = "var(--ds-ecl-container-16)".asInstanceOf[/* var(--ds-ecl-container-16) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-container-20Rightparenthesis`: /* var(--ds-ecl-container-20) */ String = "var(--ds-ecl-container-20)".asInstanceOf[/* var(--ds-ecl-container-20) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-container-24Rightparenthesis`: /* var(--ds-ecl-container-24) */ String = "var(--ds-ecl-container-24)".asInstanceOf[/* var(--ds-ecl-container-24) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-element-2Rightparenthesis`: /* var(--ds-ecl-element-2) */ String = "var(--ds-ecl-element-2)".asInstanceOf[/* var(--ds-ecl-element-2) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-element-4Rightparenthesis`: /* var(--ds-ecl-element-4) */ String = "var(--ds-ecl-element-4)".asInstanceOf[/* var(--ds-ecl-element-4) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-element-6Rightparenthesis`: /* var(--ds-ecl-element-6) */ String = "var(--ds-ecl-element-6)".asInstanceOf[/* var(--ds-ecl-element-6) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-element-8Rightparenthesis`: /* var(--ds-ecl-element-8) */ String = "var(--ds-ecl-element-8)".asInstanceOf[/* var(--ds-ecl-element-8) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-layout-32Rightparenthesis`: /* var(--ds-ecl-layout-32) */ String = "var(--ds-ecl-layout-32)".asInstanceOf[/* var(--ds-ecl-layout-32) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-layout-40Rightparenthesis`: /* var(--ds-ecl-layout-40) */ String = "var(--ds-ecl-layout-40)".asInstanceOf[/* var(--ds-ecl-layout-40) */ String]
+    
+    inline def `varLeftparenthesis--ds-ecl-layout-64Rightparenthesis`: /* var(--ds-ecl-layout-64) */ String = "var(--ds-ecl-layout-64)".asInstanceOf[/* var(--ds-ecl-layout-64) */ String]
+    
+    inline def `varLeftparenthesis--ds-gap-100Rightparenthesis`: /* var(--ds-gap-100) */ String = "var(--ds-gap-100)".asInstanceOf[/* var(--ds-gap-100) */ String]
+    
+    inline def `varLeftparenthesis--ds-gap-200Rightparenthesis`: /* var(--ds-gap-200) */ String = "var(--ds-gap-200)".asInstanceOf[/* var(--ds-gap-200) */ String]
+    
+    inline def `varLeftparenthesis--ds-gap-300Rightparenthesis`: /* var(--ds-gap-300) */ String = "var(--ds-gap-300)".asInstanceOf[/* var(--ds-gap-300) */ String]
     
     inline def `varLeftparenthesis--ds-icon-accent-blueRightparenthesis`: /* var(--ds-icon-accent-blue) */ String = "var(--ds-icon-accent-blue)".asInstanceOf[/* var(--ds-icon-accent-blue) */ String]
     
@@ -1987,6 +2350,12 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-iconRightparenthesis`: /* var(--ds-icon) */ String = "var(--ds-icon)".asInstanceOf[/* var(--ds-icon) */ String]
     
+    inline def `varLeftparenthesis--ds-inset-100Rightparenthesis`: /* var(--ds-inset-100) */ String = "var(--ds-inset-100)".asInstanceOf[/* var(--ds-inset-100) */ String]
+    
+    inline def `varLeftparenthesis--ds-inset-200Rightparenthesis`: /* var(--ds-inset-200) */ String = "var(--ds-inset-200)".asInstanceOf[/* var(--ds-inset-200) */ String]
+    
+    inline def `varLeftparenthesis--ds-inset-300Rightparenthesis`: /* var(--ds-inset-300) */ String = "var(--ds-inset-300)".asInstanceOf[/* var(--ds-inset-300) */ String]
+    
     inline def `varLeftparenthesis--ds-interaction-hoveredRightparenthesis`: /* var(--ds-interaction-hovered) */ String = "var(--ds-interaction-hovered)".asInstanceOf[/* var(--ds-interaction-hovered) */ String]
     
     inline def `varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis`: /* var(--ds-interaction-inverse-hovered) */ String = "var(--ds-interaction-inverse-hovered)".asInstanceOf[/* var(--ds-interaction-inverse-hovered) */ String]
@@ -2008,6 +2377,30 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-overlay-pressedRightparenthesis`: /* var(--ds-overlay-pressed) */ String = "var(--ds-overlay-pressed)".asInstanceOf[/* var(--ds-overlay-pressed) */ String]
     
     inline def `varLeftparenthesis--ds-overlayRightparenthesis`: /* var(--ds-overlay) */ String = "var(--ds-overlay)".asInstanceOf[/* var(--ds-overlay) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-0Rightparenthesis`: /* var(--ds-pixel-0) */ String = "var(--ds-pixel-0)".asInstanceOf[/* var(--ds-pixel-0) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-12Rightparenthesis`: /* var(--ds-pixel-12) */ String = "var(--ds-pixel-12)".asInstanceOf[/* var(--ds-pixel-12) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-16Rightparenthesis`: /* var(--ds-pixel-16) */ String = "var(--ds-pixel-16)".asInstanceOf[/* var(--ds-pixel-16) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-20Rightparenthesis`: /* var(--ds-pixel-20) */ String = "var(--ds-pixel-20)".asInstanceOf[/* var(--ds-pixel-20) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-24Rightparenthesis`: /* var(--ds-pixel-24) */ String = "var(--ds-pixel-24)".asInstanceOf[/* var(--ds-pixel-24) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-2Rightparenthesis`: /* var(--ds-pixel-2) */ String = "var(--ds-pixel-2)".asInstanceOf[/* var(--ds-pixel-2) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-32Rightparenthesis`: /* var(--ds-pixel-32) */ String = "var(--ds-pixel-32)".asInstanceOf[/* var(--ds-pixel-32) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-40Rightparenthesis`: /* var(--ds-pixel-40) */ String = "var(--ds-pixel-40)".asInstanceOf[/* var(--ds-pixel-40) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-48Rightparenthesis`: /* var(--ds-pixel-48) */ String = "var(--ds-pixel-48)".asInstanceOf[/* var(--ds-pixel-48) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-4Rightparenthesis`: /* var(--ds-pixel-4) */ String = "var(--ds-pixel-4)".asInstanceOf[/* var(--ds-pixel-4) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-6Rightparenthesis`: /* var(--ds-pixel-6) */ String = "var(--ds-pixel-6)".asInstanceOf[/* var(--ds-pixel-6) */ String]
+    
+    inline def `varLeftparenthesis--ds-pixel-8Rightparenthesis`: /* var(--ds-pixel-8) */ String = "var(--ds-pixel-8)".asInstanceOf[/* var(--ds-pixel-8) */ String]
     
     inline def `varLeftparenthesis--ds-scale-025Rightparenthesis`: /* var(--ds-scale-025) */ String = "var(--ds-scale-025)".asInstanceOf[/* var(--ds-scale-025) */ String]
     
@@ -2033,11 +2426,59 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-scale-600Rightparenthesis`: /* var(--ds-scale-600) */ String = "var(--ds-scale-600)".asInstanceOf[/* var(--ds-scale-600) */ String]
     
+    inline def `varLeftparenthesis--ds-scaleLinear-0Rightparenthesis`: /* var(--ds-scaleLinear-0) */ String = "var(--ds-scaleLinear-0)".asInstanceOf[/* var(--ds-scaleLinear-0) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-1000Rightparenthesis`: /* var(--ds-scaleLinear-1000) */ String = "var(--ds-scaleLinear-1000)".asInstanceOf[/* var(--ds-scaleLinear-1000) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-100Rightparenthesis`: /* var(--ds-scaleLinear-100) */ String = "var(--ds-scaleLinear-100)".asInstanceOf[/* var(--ds-scaleLinear-100) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-1100Rightparenthesis`: /* var(--ds-scaleLinear-1100) */ String = "var(--ds-scaleLinear-1100)".asInstanceOf[/* var(--ds-scaleLinear-1100) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-200Rightparenthesis`: /* var(--ds-scaleLinear-200) */ String = "var(--ds-scaleLinear-200)".asInstanceOf[/* var(--ds-scaleLinear-200) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-300Rightparenthesis`: /* var(--ds-scaleLinear-300) */ String = "var(--ds-scaleLinear-300)".asInstanceOf[/* var(--ds-scaleLinear-300) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-400Rightparenthesis`: /* var(--ds-scaleLinear-400) */ String = "var(--ds-scaleLinear-400)".asInstanceOf[/* var(--ds-scaleLinear-400) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-500Rightparenthesis`: /* var(--ds-scaleLinear-500) */ String = "var(--ds-scaleLinear-500)".asInstanceOf[/* var(--ds-scaleLinear-500) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-600Rightparenthesis`: /* var(--ds-scaleLinear-600) */ String = "var(--ds-scaleLinear-600)".asInstanceOf[/* var(--ds-scaleLinear-600) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-700Rightparenthesis`: /* var(--ds-scaleLinear-700) */ String = "var(--ds-scaleLinear-700)".asInstanceOf[/* var(--ds-scaleLinear-700) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-800Rightparenthesis`: /* var(--ds-scaleLinear-800) */ String = "var(--ds-scaleLinear-800)".asInstanceOf[/* var(--ds-scaleLinear-800) */ String]
+    
+    inline def `varLeftparenthesis--ds-scaleLinear-900Rightparenthesis`: /* var(--ds-scaleLinear-900) */ String = "var(--ds-scaleLinear-900)".asInstanceOf[/* var(--ds-scaleLinear-900) */ String]
+    
     inline def `varLeftparenthesis--ds-shadow-overflowRightparenthesis`: /* var(--ds-shadow-overflow) */ String = "var(--ds-shadow-overflow)".asInstanceOf[/* var(--ds-shadow-overflow) */ String]
     
     inline def `varLeftparenthesis--ds-shadow-overlayRightparenthesis`: /* var(--ds-shadow-overlay) */ String = "var(--ds-shadow-overlay)".asInstanceOf[/* var(--ds-shadow-overlay) */ String]
     
     inline def `varLeftparenthesis--ds-shadow-raisedRightparenthesis`: /* var(--ds-shadow-raised) */ String = "var(--ds-shadow-raised)".asInstanceOf[/* var(--ds-shadow-raised) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-largeRightparenthesis`: /* var(--ds-size-large) */ String = "var(--ds-size-large)".asInstanceOf[/* var(--ds-size-large) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-mediumRightparenthesis`: /* var(--ds-size-medium) */ String = "var(--ds-size-medium)".asInstanceOf[/* var(--ds-size-medium) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-noneRightparenthesis`: /* var(--ds-size-none) */ String = "var(--ds-size-none)".asInstanceOf[/* var(--ds-size-none) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-smallRightparenthesis`: /* var(--ds-size-small) */ String = "var(--ds-size-small)".asInstanceOf[/* var(--ds-size-small) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-xlargeRightparenthesis`: /* var(--ds-size-xlarge) */ String = "var(--ds-size-xlarge)".asInstanceOf[/* var(--ds-size-xlarge) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-xsmallRightparenthesis`: /* var(--ds-size-xsmall) */ String = "var(--ds-size-xsmall)".asInstanceOf[/* var(--ds-size-xsmall) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-xxSmallRightparenthesis`: /* var(--ds-size-xxSmall) */ String = "var(--ds-size-xxSmall)".asInstanceOf[/* var(--ds-size-xxSmall) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-xxlargeRightparenthesis`: /* var(--ds-size-xxlarge) */ String = "var(--ds-size-xxlarge)".asInstanceOf[/* var(--ds-size-xxlarge) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-xxxSmallRightparenthesis`: /* var(--ds-size-xxxSmall) */ String = "var(--ds-size-xxxSmall)".asInstanceOf[/* var(--ds-size-xxxSmall) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-xxxlargeRightparenthesis`: /* var(--ds-size-xxxlarge) */ String = "var(--ds-size-xxxlarge)".asInstanceOf[/* var(--ds-size-xxxlarge) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-xxxxSmallRightparenthesis`: /* var(--ds-size-xxxxSmall) */ String = "var(--ds-size-xxxxSmall)".asInstanceOf[/* var(--ds-size-xxxxSmall) */ String]
+    
+    inline def `varLeftparenthesis--ds-size-xxxxlargeRightparenthesis`: /* var(--ds-size-xxxxlarge) */ String = "var(--ds-size-xxxxlarge)".asInstanceOf[/* var(--ds-size-xxxxlarge) */ String]
     
     inline def `varLeftparenthesis--ds-skeleton-subtleRightparenthesis`: /* var(--ds-skeleton-subtle) */ String = "var(--ds-skeleton-subtle)".asInstanceOf[/* var(--ds-skeleton-subtle) */ String]
     
@@ -2140,7 +2581,7 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-textRightparenthesis`: /* var(--ds-text) */ String = "var(--ds-text)".asInstanceOf[/* var(--ds-text) */ String]
   }
   /* Inlined @atlaskit/tokens.@atlaskit/tokens/dist/types/artifacts/token-names.CSSTokenMap[keyof @atlaskit/tokens.@atlaskit/tokens/dist/types/artifacts/token-names.CSSTokenMap] */
-  type CSSToken = /* var(--ds-border-accent-gray) */ String
+  type CSSToken = /* var(--ds-ecl-layout-32) */ String
   
   trait CSSTokenMap
     extends StObject

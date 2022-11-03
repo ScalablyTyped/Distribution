@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "bull-board"
-version := "2.1.3-58cf15"
+version := "2.1.3-800549"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bull" % "4.10.1-6a9979",
+  "org.scalablytyped" %%% "bull" % "4.10.1-1ed8b5",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "denque" % "2.1.0-758dab",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
-  "org.scalablytyped" %%% "ioredis" % "5.2.3-4f6339",
+  "org.scalablytyped" %%% "ioredis" % "5.2.4-211d4e",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",

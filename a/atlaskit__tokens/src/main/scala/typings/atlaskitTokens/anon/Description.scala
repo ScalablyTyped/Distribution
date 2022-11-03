@@ -12,14 +12,23 @@ trait Description extends StObject {
   
   var introduced: String
   
-  var replacement: String
+  var replacement: Unit
   
   var state: String
+  
+  var suggest: Unit
 }
 object Description {
   
-  inline def apply(description: String, group: String, introduced: String, replacement: String, state: String): Description = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], introduced = introduced.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+  inline def apply(
+    description: String,
+    group: String,
+    introduced: String,
+    replacement: Unit,
+    state: String,
+    suggest: Unit
+  ): Description = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], introduced = introduced.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], suggest = suggest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Description]
   }
   
@@ -31,8 +40,10 @@ object Description {
     
     inline def setIntroduced(value: String): Self = StObject.set(x, "introduced", value.asInstanceOf[js.Any])
     
-    inline def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+    inline def setReplacement(value: Unit): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setSuggest(value: Unit): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
   }
 }

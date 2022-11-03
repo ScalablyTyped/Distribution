@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inflection"
-version := "1.13.0-dt-20220818Z-026a0e"
+version := "1.13.0-dt-20221103Z-026a0e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

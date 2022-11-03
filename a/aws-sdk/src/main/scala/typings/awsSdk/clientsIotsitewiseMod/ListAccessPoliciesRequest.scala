@@ -17,7 +17,7 @@ trait ListAccessPoliciesRequest extends StObject {
   var identityId: js.UndefOr[IdentityId] = js.undefined
   
   /**
-    * The type of identity (Amazon Web Services SSO user, Amazon Web Services SSO group, or IAM user). This parameter is required if you specify identityId.
+    * The type of identity (IAM Identity Center user, IAM Identity Center group, or IAM user). This parameter is required if you specify identityId.
     */
   var identityType: js.UndefOr[IdentityType] = js.undefined
   

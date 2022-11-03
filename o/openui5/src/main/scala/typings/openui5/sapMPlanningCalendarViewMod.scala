@@ -147,7 +147,8 @@ object sapMPlanningCalendarViewMod {
     
     /**
       * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * the API might be changed in future.
       *
       * Gets current value of property {@link #getIntervalLabelFormatter intervalLabelFormatter}.
       *
@@ -159,7 +160,8 @@ object sapMPlanningCalendarViewMod {
     
     /**
       * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * the API might be changed in future.
       *
       * Gets current value of property {@link #getIntervalSize intervalSize}.
       *
@@ -232,7 +234,8 @@ object sapMPlanningCalendarViewMod {
     
     /**
       * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * the API might be changed in future.
       *
       * Gets current value of property {@link #getRelative relative}.
       *
@@ -304,7 +307,8 @@ object sapMPlanningCalendarViewMod {
     
     /**
       * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * the API might be changed in future.
       *
       * Sets a new value for property {@link #getIntervalLabelFormatter intervalLabelFormatter}.
       *
@@ -321,7 +325,8 @@ object sapMPlanningCalendarViewMod {
     
     /**
       * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * the API might be changed in future.
       *
       * Sets a new value for property {@link #getIntervalSize intervalSize}.
       *
@@ -430,7 +435,8 @@ object sapMPlanningCalendarViewMod {
     
     /**
       * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * the API might be changed in future.
       *
       * Sets a new value for property {@link #getRelative relative}.
       *
@@ -492,7 +498,8 @@ object sapMPlanningCalendarViewMod {
     
     /**
       * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * the API might be changed in future.
       *
       * A function that formats the interval.
       */
@@ -502,7 +509,8 @@ object sapMPlanningCalendarViewMod {
     
     /**
       * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * the API might be changed in future.
       *
       * An integer that defines the period size.
       */
@@ -543,7 +551,8 @@ object sapMPlanningCalendarViewMod {
     
     /**
       * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * the API might be changed in future.
       *
       * Defines if the view will be relative. NOTE: Relative views, can be only used with intervalType - Day
       * and when used they need intervalSize and intervalLabelFormatter defined.

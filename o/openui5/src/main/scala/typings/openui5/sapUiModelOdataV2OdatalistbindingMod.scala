@@ -945,6 +945,10 @@ object sapUiModelOdataV2OdatalistbindingMod {
       *
       * Note: This method requires that the model metadata has been loaded; see {@link sap.ui.model.odata.v2.ODataModel#metadataLoaded}.
       *
+      * Since 1.108.0, this method supports deep create, which means it may be called if this binding's context
+      * is transient. The restrictions specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} regarding
+      * deep create apply.
+      *
       * @returns The context representing the created entity
       */
     def create(
@@ -956,8 +960,9 @@ object sapUiModelOdataV2OdatalistbindingMod {
       */
     bAtEnd: Boolean,
       /**
-      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} where only
-      * the following subset of these is supported.
+      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry}, where only
+      * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
+      * must be set.
       */
     mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
@@ -970,13 +975,18 @@ object sapUiModelOdataV2OdatalistbindingMod {
       * Entities documentation} for comprehensive information on the topic.
       *
       * Note: This method requires that the model metadata has been loaded; see {@link sap.ui.model.odata.v2.ODataModel#metadataLoaded}.
+      *
+      * Since 1.108.0, this method supports deep create, which means it may be called if this binding's context
+      * is transient. The restrictions specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} regarding
+      * deep create apply.
       *
       * @returns The context representing the created entity
       */
     def create(
       /**
-      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} where only
-      * the following subset of these is supported.
+      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry}, where only
+      * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
+      * must be set.
       */
     mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
@@ -989,6 +999,10 @@ object sapUiModelOdataV2OdatalistbindingMod {
       * Entities documentation} for comprehensive information on the topic.
       *
       * Note: This method requires that the model metadata has been loaded; see {@link sap.ui.model.odata.v2.ODataModel#metadataLoaded}.
+      *
+      * Since 1.108.0, this method supports deep create, which means it may be called if this binding's context
+      * is transient. The restrictions specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} regarding
+      * deep create apply.
       *
       * @returns The context representing the created entity
       */
@@ -1005,8 +1019,9 @@ object sapUiModelOdataV2OdatalistbindingMod {
       */
     bAtEnd: Boolean,
       /**
-      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} where only
-      * the following subset of these is supported.
+      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry}, where only
+      * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
+      * must be set.
       */
     mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
@@ -1020,6 +1035,10 @@ object sapUiModelOdataV2OdatalistbindingMod {
       *
       * Note: This method requires that the model metadata has been loaded; see {@link sap.ui.model.odata.v2.ODataModel#metadataLoaded}.
       *
+      * Since 1.108.0, this method supports deep create, which means it may be called if this binding's context
+      * is transient. The restrictions specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} regarding
+      * deep create apply.
+      *
       * @returns The context representing the created entity
       */
     def create(
@@ -1028,8 +1047,9 @@ object sapUiModelOdataV2OdatalistbindingMod {
       */
     oInitialData: js.Object,
       /**
-      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry} where only
-      * the following subset of these is supported.
+      * A map of parameters as specified for {@link sap.ui.model.odata.v2.ODataModel#createEntry}, where only
+      * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
+      * must be set.
       */
     mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native

@@ -13,7 +13,7 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsStringListMod extends Shor
   
   /**
     * @SINCE 1.81
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - 1.81
     *
     * Validates if none of the provided values is an invalid binding.
     */

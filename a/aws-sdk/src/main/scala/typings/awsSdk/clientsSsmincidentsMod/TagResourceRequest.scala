@@ -12,7 +12,7 @@ trait TagResourceRequest extends StObject {
   var resourceArn: String
   
   /**
-    * A list of tags that you are adding to the response plan.
+    * A list of tags to add to the response plan.
     */
   var tags: TagMap
 }

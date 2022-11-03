@@ -284,12 +284,12 @@ trait SSMIncidents extends Service {
   ): Request[ListTimelineEventsOutput, AWSError] = js.native
   
   /**
-    * Adds a resource policy to the specified response plan. The resource policy is used to share the response plan using Resource Access Manager (RAM). For more information about cross-account sharing, see Setting up cross-account functionality.
+    * Adds a resource policy to the specified response plan. The resource policy is used to share the response plan using Resource Access Manager (RAM). For more information about cross-account sharing, see Cross-Region and cross-account incident management.
     */
   def putResourcePolicy(): Request[PutResourcePolicyOutput, AWSError] = js.native
   def putResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyOutput, Unit]): Request[PutResourcePolicyOutput, AWSError] = js.native
   /**
-    * Adds a resource policy to the specified response plan. The resource policy is used to share the response plan using Resource Access Manager (RAM). For more information about cross-account sharing, see Setting up cross-account functionality.
+    * Adds a resource policy to the specified response plan. The resource policy is used to share the response plan using Resource Access Manager (RAM). For more information about cross-account sharing, see Cross-Region and cross-account incident management.
     */
   def putResourcePolicy(params: PutResourcePolicyInput): Request[PutResourcePolicyOutput, AWSError] = js.native
   def putResourcePolicy(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/a11y" : "3.20.0"
+      "@wordpress/a11y" : "3.21.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/a11y" : "3.20.0"
+      "@wordpress/a11y" : "3.21.0"
     }
   ],
   "compile-devDependencies" : [

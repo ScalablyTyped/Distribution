@@ -5,7 +5,6 @@ import typings.openui5.sapMLibraryMod.PopinDisplay
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
-import typings.openui5.sapUiCoreLibraryMod.IColumnHeaderMenu
 import typings.openui5.sapUiCoreLibraryMod.Priority
 import typings.openui5.sapUiCoreLibraryMod.SortOrder
 import typings.openui5.sapUiCoreLibraryMod.TextAlign
@@ -167,14 +166,6 @@ object sapMColumnMod {
       * @returns Value of property `autoPopinWidth`
       */
     def getAutoPopinWidth(): float = js.native
-    
-    /**
-      * @SINCE 1.98.0
-      *
-      * Returns the `sap.ui.core.IColumnHeaderMenu<\code>, which is the current target of the association headerMenu`,
-      * or null.
-      */
-    def getColumnHeaderMenu(): IColumnHeaderMenu = js.native
     
     /**
       * Returns CSS alignment according to column hAlign setting or given parameter for Begin/End values checks

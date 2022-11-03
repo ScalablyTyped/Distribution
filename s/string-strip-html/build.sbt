@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "string-strip-html"
-version := "11.6.18-4782ea"
+version := "11.6.19-2d6e43"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ranges-push" % "6.2.5-8ac34b",
+  "org.scalablytyped" %%% "ranges-push" % "6.2.6-dbb1a4",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

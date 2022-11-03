@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "windows-1251"
-version := "v0.1.2-dt-20220818Z-11a37f"
+version := "v0.1.2-dt-20221103Z-11a37f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

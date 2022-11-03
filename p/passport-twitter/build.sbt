@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-twitter"
-version := "1.0.4-dt-20220818Z-1539d0"
+version := "1.0.4-dt-20221103Z-1539d0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

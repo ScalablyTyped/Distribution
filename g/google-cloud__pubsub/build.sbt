@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__pubsub"
-version := "3.2.0-c121c9"
+version := "3.2.0-55d00c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,11 +9,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "google-auth-library" % "8.6.0-565255",
   "org.scalablytyped" %%% "google-cloud__precise-date" % "3.0.1-8034d7",
   "org.scalablytyped" %%% "google-cloud__promisify" % "3.0.1-539ab0",
-  "org.scalablytyped" %%% "google-gax" % "3.5.2-2c408c",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-913a7a",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-cc4119",
+  "org.scalablytyped" %%% "google-gax" % "3.5.2-22462b",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-4bcc1f",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-b32195",
   "org.scalablytyped" %%% "gtoken" % "6.1.2-7c92aa",
-  "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
+  "org.scalablytyped" %%% "long" % "5.2.1-0ea128",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "opentelemetry__api" % "1.2.0-48496a",
   "org.scalablytyped" %%% "p-defer" % "4.0.0-de11a3",

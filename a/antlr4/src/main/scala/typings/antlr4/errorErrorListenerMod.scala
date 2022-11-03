@@ -1,53 +1,127 @@
 package typings.antlr4
 
-import typings.antlr4.recognizerMod.Recognizer
-import typings.antlr4.tokenMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorErrorListenerMod {
   
-  @JSImport("antlr4/error/ErrorListener", "ConsoleErrorListener")
+  @JSImport("antlr4/error/ErrorListener", JSImport.Default)
   @js.native
-  open class ConsoleErrorListener () extends ErrorListener
-  
-  @JSImport("antlr4/error/ErrorListener", "ErrorListener")
-  @js.native
-  open class ErrorListener () extends StObject {
+  open class default ()
+    extends StObject
+       with ErrorListener {
     
-    def reportAmbiguity(
-      recognizer: Recognizer,
-      dfa: Any,
+    /* CompleteClass */
+    override def reportAmbiguity(
+      recognizer: typings.antlr4.recognizerMod.default,
+      dfa: typings.antlr4.dfaDfaMod.default,
       startIndex: Double,
       stopIndex: Double,
-      exact: Any,
-      ambigAlts: Any,
-      configs: Any
+      exact: Boolean,
+      ambigAlts: typings.antlr4.miscBitSetMod.default,
+      configs: typings.antlr4.atnAtnconfigsetMod.default
     ): Unit = js.native
     
-    def reportAttemptingFullContext(
-      recognizer: Recognizer,
-      dfa: Any,
+    /* CompleteClass */
+    override def reportAttemptingFullContext(
+      recognizer: typings.antlr4.recognizerMod.default,
+      dfa: typings.antlr4.dfaDfaMod.default,
+      startIndex: Double,
+      stopIndex: Double,
+      conflictingAlts: typings.antlr4.miscBitSetMod.default,
+      configs: typings.antlr4.atnAtnconfigsetMod.default
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    override def reportContextSensitivity(
+      recognizer: typings.antlr4.recognizerMod.default,
+      dfa: typings.antlr4.dfaDfaMod.default,
       startIndex: Double,
       stopIndex: Double,
       conflictingAlts: Any,
-      configs: Any
+      configs: typings.antlr4.atnAtnconfigsetMod.default
     ): Unit = js.native
     
-    def reportContextSensitivity(
-      recognizer: Recognizer,
-      dfa: Any,
-      startIndex: Double,
-      stopIndex: Double,
-      conflictingAlts: Any,
-      configs: Any
+    /* CompleteClass */
+    override def syntaxError(
+      recognizer: typings.antlr4.recognizerMod.default,
+      offendingSymbol: typings.antlr4.tokenMod.default,
+      line: Double,
+      column: Double,
+      msg: String,
+      e: typings.antlr4.errorRecognitionExceptionMod.default
     ): Unit = js.native
-    
-    def syntaxError(recognizer: Recognizer, offendingSymbol: Token, line: Double, column: Double, msg: String, e: Any): Unit = js.native
   }
   
-  @JSImport("antlr4/error/ErrorListener", "ProxyErrorListener")
-  @js.native
-  open class ProxyErrorListener () extends ErrorListener
+  trait ErrorListener extends StObject {
+    
+    def reportAmbiguity(
+      recognizer: typings.antlr4.recognizerMod.default,
+      dfa: typings.antlr4.dfaDfaMod.default,
+      startIndex: Double,
+      stopIndex: Double,
+      exact: Boolean,
+      ambigAlts: typings.antlr4.miscBitSetMod.default,
+      configs: typings.antlr4.atnAtnconfigsetMod.default
+    ): Unit
+    
+    def reportAttemptingFullContext(
+      recognizer: typings.antlr4.recognizerMod.default,
+      dfa: typings.antlr4.dfaDfaMod.default,
+      startIndex: Double,
+      stopIndex: Double,
+      conflictingAlts: typings.antlr4.miscBitSetMod.default,
+      configs: typings.antlr4.atnAtnconfigsetMod.default
+    ): Unit
+    
+    def reportContextSensitivity(
+      recognizer: typings.antlr4.recognizerMod.default,
+      dfa: typings.antlr4.dfaDfaMod.default,
+      startIndex: Double,
+      stopIndex: Double,
+      conflictingAlts: Any,
+      configs: typings.antlr4.atnAtnconfigsetMod.default
+    ): Unit
+    
+    def syntaxError(
+      recognizer: typings.antlr4.recognizerMod.default,
+      offendingSymbol: typings.antlr4.tokenMod.default,
+      line: Double,
+      column: Double,
+      msg: String,
+      e: typings.antlr4.errorRecognitionExceptionMod.default
+    ): Unit
+  }
+  object ErrorListener {
+    
+    inline def apply(
+      reportAmbiguity: (typings.antlr4.recognizerMod.default, typings.antlr4.dfaDfaMod.default, Double, Double, Boolean, typings.antlr4.miscBitSetMod.default, typings.antlr4.atnAtnconfigsetMod.default) => Unit,
+      reportAttemptingFullContext: (typings.antlr4.recognizerMod.default, typings.antlr4.dfaDfaMod.default, Double, Double, typings.antlr4.miscBitSetMod.default, typings.antlr4.atnAtnconfigsetMod.default) => Unit,
+      reportContextSensitivity: (typings.antlr4.recognizerMod.default, typings.antlr4.dfaDfaMod.default, Double, Double, Any, typings.antlr4.atnAtnconfigsetMod.default) => Unit,
+      syntaxError: (typings.antlr4.recognizerMod.default, typings.antlr4.tokenMod.default, Double, Double, String, typings.antlr4.errorRecognitionExceptionMod.default) => Unit
+    ): ErrorListener = {
+      val __obj = js.Dynamic.literal(reportAmbiguity = js.Any.fromFunction7(reportAmbiguity), reportAttemptingFullContext = js.Any.fromFunction6(reportAttemptingFullContext), reportContextSensitivity = js.Any.fromFunction6(reportContextSensitivity), syntaxError = js.Any.fromFunction6(syntaxError))
+      __obj.asInstanceOf[ErrorListener]
+    }
+    
+    extension [Self <: ErrorListener](x: Self) {
+      
+      inline def setReportAmbiguity(
+        value: (typings.antlr4.recognizerMod.default, typings.antlr4.dfaDfaMod.default, Double, Double, Boolean, typings.antlr4.miscBitSetMod.default, typings.antlr4.atnAtnconfigsetMod.default) => Unit
+      ): Self = StObject.set(x, "reportAmbiguity", js.Any.fromFunction7(value))
+      
+      inline def setReportAttemptingFullContext(
+        value: (typings.antlr4.recognizerMod.default, typings.antlr4.dfaDfaMod.default, Double, Double, typings.antlr4.miscBitSetMod.default, typings.antlr4.atnAtnconfigsetMod.default) => Unit
+      ): Self = StObject.set(x, "reportAttemptingFullContext", js.Any.fromFunction6(value))
+      
+      inline def setReportContextSensitivity(
+        value: (typings.antlr4.recognizerMod.default, typings.antlr4.dfaDfaMod.default, Double, Double, Any, typings.antlr4.atnAtnconfigsetMod.default) => Unit
+      ): Self = StObject.set(x, "reportContextSensitivity", js.Any.fromFunction6(value))
+      
+      inline def setSyntaxError(
+        value: (typings.antlr4.recognizerMod.default, typings.antlr4.tokenMod.default, Double, Double, String, typings.antlr4.errorRecognitionExceptionMod.default) => Unit
+      ): Self = StObject.set(x, "syntaxError", js.Any.fromFunction6(value))
+    }
+  }
 }

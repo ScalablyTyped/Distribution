@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "easy-session"
-version := "0.0-unknown-dt-20220818Z-824414"
+version := "0.0-unknown-dt-20221103Z-824414"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

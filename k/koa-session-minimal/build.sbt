@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-session-minimal"
-version := "v3.x-dt-20220818Z-6f8a7d"
+version := "v3.x-dt-20221103Z-6f8a7d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

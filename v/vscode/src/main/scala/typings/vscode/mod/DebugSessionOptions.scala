@@ -38,6 +38,26 @@ trait DebugSessionOptions extends StObject {
     * "parent" debug session.
     */
   var parentSession: js.UndefOr[DebugSession] = js.undefined
+  
+  /**
+    * When true, the window statusbar color will not be changed for this session.
+    */
+  var suppressDebugStatusbar: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When true, the debug toolbar will not be shown for this session.
+    */
+  var suppressDebugToolbar: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When true, the debug viewlet will not be automatically revealed for this session.
+    */
+  var suppressDebugView: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When true, a save will not be triggered for open editors when starting a debug session, regardless of the value of the `debug.saveBeforeStart` setting.
+    */
+  var suppressSaveBeforeStart: js.UndefOr[Boolean] = js.undefined
 }
 object DebugSessionOptions {
   
@@ -67,5 +87,21 @@ object DebugSessionOptions {
     inline def setParentSession(value: DebugSession): Self = StObject.set(x, "parentSession", value.asInstanceOf[js.Any])
     
     inline def setParentSessionUndefined: Self = StObject.set(x, "parentSession", js.undefined)
+    
+    inline def setSuppressDebugStatusbar(value: Boolean): Self = StObject.set(x, "suppressDebugStatusbar", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressDebugStatusbarUndefined: Self = StObject.set(x, "suppressDebugStatusbar", js.undefined)
+    
+    inline def setSuppressDebugToolbar(value: Boolean): Self = StObject.set(x, "suppressDebugToolbar", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressDebugToolbarUndefined: Self = StObject.set(x, "suppressDebugToolbar", js.undefined)
+    
+    inline def setSuppressDebugView(value: Boolean): Self = StObject.set(x, "suppressDebugView", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressDebugViewUndefined: Self = StObject.set(x, "suppressDebugView", js.undefined)
+    
+    inline def setSuppressSaveBeforeStart(value: Boolean): Self = StObject.set(x, "suppressSaveBeforeStart", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressSaveBeforeStartUndefined: Self = StObject.set(x, "suppressSaveBeforeStart", js.undefined)
   }
 }

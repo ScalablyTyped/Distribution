@@ -9,6 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mapboxMapboxGlDrawStrings {
   
   @js.native
+  sealed trait LineString extends StObject
+  inline def LineString: LineString = "LineString".asInstanceOf[LineString]
+  
+  @js.native
+  sealed trait MultiLineString extends StObject
+  inline def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
+  
+  @js.native
+  sealed trait MultiPoint extends StObject
+  inline def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
+  
+  @js.native
+  sealed trait MultiPolygon extends StObject
+  inline def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
+  
+  @js.native
+  sealed trait Point extends StObject
+  inline def Point: Point = "Point".asInstanceOf[Point]
+  
+  @js.native
+  sealed trait Polygon extends StObject
+  inline def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
+  
+  @js.native
   sealed trait click extends StObject
   inline def click: click = "click".asInstanceOf[click]
   

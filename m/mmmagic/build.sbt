@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mmmagic"
-version := "v0.4.1-dt-20220818Z-40b185"
+version := "v0.4.1-dt-20221103Z-40b185"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

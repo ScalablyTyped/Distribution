@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-permission"
-version := "2.3.6-dt-20220818Z-9e2a2d"
+version := "2.3.6-dt-20221103Z-9e2a2d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -48,7 +48,9 @@ object libTypescriptElementsRadialGradientMod {
     
     var fy: js.UndefOr[NumberProp] = js.undefined
     
-    var gradientTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
+    var gradientTransform: js.UndefOr[
+        ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ] = js.undefined
     
     var gradientUnits: js.UndefOr[Units] = js.undefined
     
@@ -91,7 +93,9 @@ object libTypescriptElementsRadialGradientMod {
       
       inline def setFyUndefined: Self = StObject.set(x, "fy", js.undefined)
       
-      inline def setGradientTransform(value: ColumnMajorTransformMatrix | String): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+      inline def setGradientTransform(
+        value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
       
       inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
       

@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.CalendarType
-import typings.openui5.anon.FirstDayOfWeek
+import typings.openui5.anon.CalendarWeekNumbering
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,12 +103,12 @@ object sapUiCoreFormatDateFormatMod {
     inline def getDateTimeWithTimezoneInstance(/**
       * An object which defines the format options
       */
-    oFormatOptions: FirstDayOfWeek): DateTimeWithTimezone = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateTimeWithTimezoneInstance")(oFormatOptions.asInstanceOf[js.Any]).asInstanceOf[DateTimeWithTimezone]
+    oFormatOptions: CalendarWeekNumbering): DateTimeWithTimezone = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateTimeWithTimezoneInstance")(oFormatOptions.asInstanceOf[js.Any]).asInstanceOf[DateTimeWithTimezone]
     inline def getDateTimeWithTimezoneInstance(
       /**
       * An object which defines the format options
       */
-    oFormatOptions: FirstDayOfWeek,
+    oFormatOptions: CalendarWeekNumbering,
       /**
       * Locale to ask for locale-specific texts/settings
       */

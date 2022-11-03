@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "barcode"
-version := "0.0-unknown-dt-20220818Z-a22fbb"
+version := "0.0-unknown-dt-20221103Z-a22fbb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

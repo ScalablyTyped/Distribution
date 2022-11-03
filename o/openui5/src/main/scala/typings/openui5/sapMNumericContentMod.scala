@@ -227,7 +227,8 @@ object sapMNumericContentMod {
     
     /**
       * @SINCE 1.73
-      * @EXPERIMENTAL (since 1.73)
+      * @EXPERIMENTAL (since 1.73) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getAdaptiveFontSize adaptiveFontSize}.
       *
@@ -394,7 +395,8 @@ object sapMNumericContentMod {
     
     /**
       * @SINCE 1.73
-      * @EXPERIMENTAL (since 1.73)
+      * @EXPERIMENTAL (since 1.73) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getAdaptiveFontSize adaptiveFontSize}.
       *
@@ -679,7 +681,8 @@ object sapMNumericContentMod {
     
     /**
       * @SINCE 1.73
-      * @EXPERIMENTAL (since 1.73)
+      * @EXPERIMENTAL (since 1.73) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * If set to its default value true this property applies the appropriate font style class based on the
       * language. When set to false the font size will always be large

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babelify"
-version := "v7.3.0-dt-20220913Z-473072"
+version := "v7.3.0-dt-20221103Z-473072"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

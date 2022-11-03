@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ethereumjs-blockchain"
-version := "4.0.4-01bd55"
+version := "4.0.4-dd464d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
   "org.scalablytyped" %%% "ethereumjs-common" % "1.5.2-2f6b6a",
   "org.scalablytyped" %%% "ethereumjs-util" % "7.1.5-cb605b",
-  "org.scalablytyped" %%% "lru-cache" % "7.14.0-c21024",
+  "org.scalablytyped" %%% "lru-cache" % "7.14.1-5473ac",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "rlp" % "3.0.0-ae3433",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

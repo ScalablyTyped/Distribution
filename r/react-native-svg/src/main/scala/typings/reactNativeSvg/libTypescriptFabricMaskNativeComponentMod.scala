@@ -164,8 +164,6 @@ object libTypescriptFabricMaskNativeComponentMod extends Shortcut {
     
     var maskContentUnits: js.UndefOr[Int32] = js.undefined
     
-    var maskTransform: js.UndefOr[js.Array[Float]] = js.undefined
-    
     var maskUnits: js.UndefOr[Int32] = js.undefined
     
     var width: js.UndefOr[String] = js.undefined
@@ -190,12 +188,6 @@ object libTypescriptFabricMaskNativeComponentMod extends Shortcut {
       inline def setMaskContentUnits(value: Int32): Self = StObject.set(x, "maskContentUnits", value.asInstanceOf[js.Any])
       
       inline def setMaskContentUnitsUndefined: Self = StObject.set(x, "maskContentUnits", js.undefined)
-      
-      inline def setMaskTransform(value: js.Array[Float]): Self = StObject.set(x, "maskTransform", value.asInstanceOf[js.Any])
-      
-      inline def setMaskTransformUndefined: Self = StObject.set(x, "maskTransform", js.undefined)
-      
-      inline def setMaskTransformVarargs(value: Float*): Self = StObject.set(x, "maskTransform", js.Array(value*))
       
       inline def setMaskUnits(value: Int32): Self = StObject.set(x, "maskUnits", value.asInstanceOf[js.Any])
       

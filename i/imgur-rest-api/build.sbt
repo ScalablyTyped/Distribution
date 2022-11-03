@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "imgur-rest-api"
-version := "3.0-dt-20211202Z-f32e49"
+version := "3.0-dt-20221103Z-f32e49"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

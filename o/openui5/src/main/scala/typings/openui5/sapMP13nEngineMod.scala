@@ -14,7 +14,7 @@ object sapMP13nEngineMod extends Shortcut {
   
   /**
     * @SINCE 1.104
-    * @EXPERIMENTAL (since 1.104)
+    * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
     *
     * The `Engine` entity offers personalization capabilities by registering a control instance for modification,
     * such as:
@@ -49,7 +49,7 @@ object sapMP13nEngineMod extends Shortcut {
   trait Engine extends StObject {
     
     /**
-      * @EXPERIMENTAL (since 1.104)
+      * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
       *
       * Applies a state to a control by passing an object that contains the registered controller key and an
       * object matching the inner subcontroller logic.
@@ -72,7 +72,7 @@ object sapMP13nEngineMod extends Shortcut {
     ): js.Promise[Any] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.104)
+      * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
       *
       * Attaches an event handler to the `StateHandlerRegistry` class. The event handler is fired every time
       * a user triggers a personalization change for a control instance during runtime.
@@ -85,7 +85,7 @@ object sapMP13nEngineMod extends Shortcut {
     fnStateEventHandler: js.Function): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.104)
+      * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
       *
       * Unregisters a registered control. By unregistering a control the control is removed from the `Engine`
       * registry, and all instance-specific submodules, such as the registered controllers, are destroyed.
@@ -96,7 +96,7 @@ object sapMP13nEngineMod extends Shortcut {
     oControl: typings.openui5.sapUiCoreControlMod.default): Unit = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.104)
+      * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
       *
       * Removes a previously attached state change event handler from the `StateHandlerRegistry` class. The passed
       * parameters must match those used for registration with {@link sap.m.p13n.Engine#attachStateChange} beforehand.
@@ -169,7 +169,7 @@ object sapMP13nEngineMod extends Shortcut {
     def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.104)
+      * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
       *
       * This method can be used to trigger a reset to the provided control instance.
       *
@@ -187,7 +187,7 @@ object sapMP13nEngineMod extends Shortcut {
     ): js.Promise[Any] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.104)
+      * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
       *
       * Retrieves the state for a given control instance after all necessary changes have been applied (e.g.
       * modification handler appliance). After the returned `Promise` has been resolved, the returned state is
@@ -203,7 +203,7 @@ object sapMP13nEngineMod extends Shortcut {
     ): js.Promise[Any] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.104)
+      * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
       *
       * Opens the personalization dialog.
       *

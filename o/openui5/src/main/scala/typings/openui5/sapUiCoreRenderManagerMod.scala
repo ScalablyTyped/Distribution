@@ -862,7 +862,7 @@ object sapUiCoreRenderManagerMod {
       * of IDs for the ARIA attributes `aria-describedby` and `aria-labelledby`.
       *
       * Label controls that reference the given element in their `labelFor` relation are automatically added
-      * to the `aria-labelledby` attributes.
+      * to the `aria-labelledby` attribute.
       *
       * Note: This function is only a heuristic of a control property to ARIA attribute mapping. Control developers
       * have to check whether it fulfills their requirements. In case of problems (for example the `RadioButton`

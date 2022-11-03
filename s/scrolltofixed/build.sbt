@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scrolltofixed"
-version := "0.0-unknown-dt-20220818Z-79fec7"
+version := "0.0-unknown-dt-20221103Z-79fec7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

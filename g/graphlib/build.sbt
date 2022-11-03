@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphlib"
-version := "2.1.1-dt-20220818Z-b1e8f5"
+version := "2.1.1-dt-20221103Z-b1e8f5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-sortable"
-version := "v0.9.12-dt-20220818Z-1e3821"
+version := "v0.9.12-dt-20221103Z-1e3821"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

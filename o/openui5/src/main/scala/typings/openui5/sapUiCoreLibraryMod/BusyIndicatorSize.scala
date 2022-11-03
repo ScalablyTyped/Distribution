@@ -41,6 +41,15 @@ object BusyIndicatorSize extends StObject {
   /* "Medium" */ val Medium: typings.openui5.sapUiCoreLibraryMod.BusyIndicatorSize.Medium & String = js.native
   
   /**
+    * Type: Medium size, specifically if the BusyIndicator is displayed over a page section
+    */
+  @js.native
+  sealed trait Section
+    extends StObject
+       with BusyIndicatorSize
+  /* "Section" */ val Section: typings.openui5.sapUiCoreLibraryMod.BusyIndicatorSize.Section & String = js.native
+  
+  /**
     * Type: small size
     */
   @js.native

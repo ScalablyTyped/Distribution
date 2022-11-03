@@ -1,7 +1,7 @@
 
 # Scala.js typings for antlr4
 
-Typings are for version 4.7
+Typings are for version 4.11
 
 ## Library description:
 JavaScript runtime for ANTLR4

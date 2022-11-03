@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "contextjs"
-version := "2.1.1-dt-20220913Z-b879a5"
+version := "2.1.1-dt-20221103Z-b879a5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

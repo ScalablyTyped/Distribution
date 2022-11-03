@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectLambdaTransformationConfiguration extends StObject {
   
   /**
-    * A container for the action of an Object Lambda Access Point configuration. Valid input is GetObject.
+    * A container for the action of an Object Lambda Access Point configuration. Valid inputs are GetObject, ListObjects, HeadObject, and ListObjectsV2.
     */
   var Actions: ObjectLambdaTransformationConfigurationActionsList
   

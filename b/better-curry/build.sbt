@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "better-curry"
-version := "0.0-unknown-dt-20220818Z-59ed6f"
+version := "0.0-unknown-dt-20221103Z-59ed6f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

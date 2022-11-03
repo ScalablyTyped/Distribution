@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prelude-ls"
-version := "1.1.1-dt-20220913Z-8c720e"
+version := "1.1.1-dt-20221103Z-8c720e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

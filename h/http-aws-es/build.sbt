@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "http-aws-es"
-version := "6.0-dt-20220419Z-bd89c2"
+version := "6.0-dt-20220419Z-34ee1b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1245.0-49acd8",
+  "org.scalablytyped" %%% "aws-sdk" % "2.1246.0-3f5567",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

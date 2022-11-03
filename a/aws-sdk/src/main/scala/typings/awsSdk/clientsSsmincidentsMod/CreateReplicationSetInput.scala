@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateReplicationSetInput extends StObject {
   
   /**
-    * A token ensuring that the operation is called only once with the specified details.
+    * A token that ensures that the operation is called only once with the specified details.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
@@ -15,6 +15,11 @@ trait CreateReplicationSetInput extends StObject {
     * The Regions that Incident Manager replicates your data to. You can have up to three Regions in your replication set.
     */
   var regions: RegionMapInput
+  
+  /**
+    * A list of tags to add to the replication set.
+    */
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateReplicationSetInput {
   
@@ -30,5 +35,9 @@ object CreateReplicationSetInput {
     inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     inline def setRegions(value: RegionMapInput): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

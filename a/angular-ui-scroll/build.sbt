@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-ui-scroll"
-version := "1.3.1-dt-20220818Z-9b0251"
+version := "1.3.1-dt-20221103Z-9b0251"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

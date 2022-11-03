@@ -10,6 +10,11 @@ trait DescribeAssetRequest extends StObject {
     * The ID of the asset.
     */
   var assetId: ID
+  
+  /**
+    *  Whether or not to exclude asset properties from the response. 
+    */
+  var excludeProperties: js.UndefOr[ExcludeProperties] = js.undefined
 }
 object DescribeAssetRequest {
   
@@ -21,5 +26,9 @@ object DescribeAssetRequest {
   extension [Self <: DescribeAssetRequest](x: Self) {
     
     inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeProperties(value: ExcludeProperties): Self = StObject.set(x, "excludeProperties", value.asInstanceOf[js.Any])
+    
+    inline def setExcludePropertiesUndefined: Self = StObject.set(x, "excludeProperties", js.undefined)
   }
 }

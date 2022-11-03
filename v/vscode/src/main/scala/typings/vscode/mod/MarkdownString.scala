@@ -1,5 +1,6 @@
 package typings.vscode.mod
 
+import typings.vscode.anon.EnabledCommands
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,8 +62,12 @@ open class MarkdownString () extends StObject {
   /**
     * Indicates that this markdown string is from a trusted source. Only *trusted*
     * markdown supports links that execute commands, e.g. `[Run it](command:myCommandId)`.
+    *
+    * Defaults to `false` (commands are disabled).
+    *
+    * If this is an object, only the set of commands listed in `enabledCommands` are allowed.
     */
-  var isTrusted: js.UndefOr[Boolean] = js.native
+  var isTrusted: js.UndefOr[Boolean | EnabledCommands] = js.native
   
   /**
     * Indicates that this markdown string can contain raw html tags. Defaults to `false`.

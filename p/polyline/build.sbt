@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "polyline"
-version := "0.1.0-dt-20220818Z-a2e2b1"
+version := "0.1.0-dt-20221103Z-a2e2b1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

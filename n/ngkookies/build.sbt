@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ngkookies"
-version := "0.2.0-dt-20220818Z-b4cd22"
+version := "0.2.0-dt-20221103Z-b4cd22"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

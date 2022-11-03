@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tv4"
-version := "1.2.5-dt-20220818Z-ba05cf"
+version := "1.2.5-dt-20221103Z-ba05cf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

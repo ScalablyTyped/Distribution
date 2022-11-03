@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "msnodesql"
-version := "0.2.1-dt-20220818Z-74fe98"
+version := "0.2.1-dt-20221103Z-74fe98"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,7 +13,7 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsDateMod extends Shortcut {
   
   /**
     * @SINCE 1.81
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - 1.81
     *
     * Validates if the provided value can be parsed to a valid date.
     */

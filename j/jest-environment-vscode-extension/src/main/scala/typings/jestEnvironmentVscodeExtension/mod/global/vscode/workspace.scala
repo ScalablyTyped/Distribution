@@ -28,6 +28,7 @@ import typings.vscode.mod.TextDocumentChangeEvent
 import typings.vscode.mod.TextDocumentContentProvider
 import typings.vscode.mod.TextDocumentWillSaveEvent
 import typings.vscode.mod.WorkspaceConfiguration
+import typings.vscode.mod.WorkspaceEditMetadata
 import typings.vscode.mod.WorkspaceFolder
 import typings.vscode.mod.WorkspaceFoldersChangeEvent
 import org.scalablytyped.runtime.StObject
@@ -41,6 +42,7 @@ object workspace {
   val ^ : js.Any = js.native
   
   inline def applyEdit(edit: typings.vscode.mod.WorkspaceEdit): Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyEdit")(edit.asInstanceOf[js.Any]).asInstanceOf[Thenable[Boolean]]
+  inline def applyEdit(edit: typings.vscode.mod.WorkspaceEdit, metadata: WorkspaceEditMetadata): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyEdit")(edit.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
   
   inline def asRelativePath(pathOrUri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asRelativePath")(pathOrUri.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def asRelativePath(pathOrUri: String, includeWorkspaceFolder: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asRelativePath")(pathOrUri.asInstanceOf[js.Any], includeWorkspaceFolder.asInstanceOf[js.Any])).asInstanceOf[String]

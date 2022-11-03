@@ -9,8 +9,9 @@ trait Aggregate extends StObject {
   /**
     * A map from aggregatable property names or aliases to objects containing the following details:
     * 	 `grandTotal`: An optional boolean that tells whether a grand total for this aggregatable property is
-    * needed (since 1.59.0); filtering by any aggregatable property is not supported in this case (since 1.89.0)
-    * as is "$search" (since 1.93.0) or the `vGroup` parameter of {@link sap.ui.model.Sorter} (since 1.107.0)
+    * needed (since 1.59.0); not supported in this case are:
+    * 	 filtering by any aggregatable property (since 1.89.0),  "$search" (since 1.93.0),  the `vGroup`
+    * parameter of {@link sap.ui.model.Sorter} (since 1.107.0),  shared requests (since 1.108.0).
     *  `subtotals`: An optional boolean that tells whether subtotals for this aggregatable property are
     * needed  `with`: An optional string that provides the name of the method (for example "sum") used
     * for aggregation of this aggregatable property; see "3.1.2 Keyword with".  `name`: An optional string
@@ -46,8 +47,9 @@ trait Aggregate extends StObject {
   
   /**
     * A list of groupable property names used to determine group levels. They may, but don't need to, be repeated
-    * in `oAggregation.group`. Group levels cannot be combined with filtering for aggregated properties or
-    * (since 1.93.0) with "$search" or (since 1.107.0) the `vGroup` parameter of {@link sap.ui.model.Sorter}.
+    * in `oAggregation.group`. Group levels cannot be combined with:
+    * 	 filtering for aggregated properties,  "$search" (since 1.93.0),  the `vGroup` parameter of
+    * {@link sap.ui.model.Sorter} (since 1.107.0),  shared requests (since 1.108.0).
     */
   var groupLevels: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -55,8 +57,9 @@ trait Aggregate extends StObject {
     * The qualifier for the pair of "Org.OData.Aggregation.V1.RecursiveHierarchy" and "com.sap.vocabularies.Hierarchy.v1.RecursiveHierarchy"
     * annotations at this binding's entity type (@experimental as of version 1.105.0). If present, a recursive
     * hierarchy without data aggregation is defined, and the only other supported properties are `expandTo`
-    * and `search`. A recursive hierarchy cannot be combined with "$search" or (since 1.107.0) the `vGroup`
-    * parameter of {@link sap.ui.model.Sorter}.
+    * and `search`. A recursive hierarchy cannot be combined with:
+    * 	 "$search",  the `vGroup` parameter of {@link sap.ui.model.Sorter} (since 1.107.0),  shared
+    * requests (since 1.108.0).
     */
   var hierarchyQualifier: js.UndefOr[String] = js.undefined
   

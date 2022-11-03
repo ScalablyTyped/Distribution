@@ -2,14 +2,25 @@ package typings.reactNativeSvg.anon
 
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
+import typings.reactNative.mod.MatrixTransform
+import typings.reactNative.mod.PerpectiveTransform
+import typings.reactNative.mod.RotateTransform
+import typings.reactNative.mod.RotateXTransform
+import typings.reactNative.mod.RotateYTransform
+import typings.reactNative.mod.RotateZTransform
+import typings.reactNative.mod.ScaleTransform
+import typings.reactNative.mod.ScaleXTransform
+import typings.reactNative.mod.ScaleYTransform
+import typings.reactNative.mod.SkewXTransform
+import typings.reactNative.mod.SkewYTransform
+import typings.reactNative.mod.TranslateXTransform
+import typings.reactNative.mod.TranslateYTransform
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.FillRule
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.Linecap
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.Linejoin
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
-import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.TransformObject
-import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.TransformProps
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.VectorEffect
 import typings.reactNativeSvg.reactNativeSvgStrings.`box-none`
 import typings.reactNativeSvg.reactNativeSvgStrings.`box-only`
@@ -19,7 +30,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  id :string | undefined,   mask :string | undefined,   marker :string | undefined,   markerStart :string | undefined,   markerMid :string | undefined,   markerEnd :string | undefined,   clipPath :string | undefined,   display :string | undefined,   opacity :react-native-svg.react-native-svg/lib/typescript/lib/extract/types.NumberProp | undefined,   onLayout :(): void | undefined,   transform :std.Array<number> | string | react-native-svg.react-native-svg/lib/typescript/lib/extract/types.TransformProps | undefined} & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.TransformProps & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.ResponderProps & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.StrokeProps & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.FillProps & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.ClipProps */
+/* Inlined {  id :string | undefined,   mask :string | undefined,   marker :string | undefined,   markerStart :string | undefined,   markerMid :string | undefined,   markerEnd :string | undefined,   clipPath :string | undefined,   display :string | undefined,   opacity :react-native-svg.react-native-svg/lib/typescript/lib/extract/types.NumberProp | undefined,   onLayout :(): void | undefined} & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.TransformProps & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.ResponderProps & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.StrokeProps & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.FillProps & react-native-svg.react-native-svg/lib/typescript/lib/extract/types.ClipProps */
 trait idstringundefinedmaskstri extends StObject {
   
   var clipPath: js.UndefOr[String] = js.undefined
@@ -176,7 +187,11 @@ trait idstringundefinedmaskstri extends StObject {
   
   var strokeWidth: js.UndefOr[NumberProp] = js.undefined
   
-  var transform: (js.UndefOr[js.Array[Double] | String | TransformProps]) & (js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject])
+  var transform: js.UndefOr[
+    ColumnMajorTransformMatrix | String | (js.Array[
+      PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform
+    ])
+  ] = js.undefined
   
   var translate: js.UndefOr[NumberArray] = js.undefined
   
@@ -192,10 +207,8 @@ trait idstringundefinedmaskstri extends StObject {
 }
 object idstringundefinedmaskstri {
   
-  inline def apply(
-    transform: (js.UndefOr[js.Array[Double] | String | TransformProps]) & (js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject])
-  ): idstringundefinedmaskstri = {
-    val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
+  inline def apply(): idstringundefinedmaskstri = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[idstringundefinedmaskstri]
   }
   
@@ -390,8 +403,16 @@ object idstringundefinedmaskstri {
     inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     inline def setTransform(
-      value: (js.UndefOr[js.Array[Double] | String | TransformProps]) & (js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject])
+      value: ColumnMajorTransformMatrix | String | (js.Array[
+          PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform
+        ])
     ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    inline def setTransformVarargs(
+      value: (PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform)*
+    ): Self = StObject.set(x, "transform", js.Array(value*))
     
     inline def setTranslate(value: NumberArray): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     

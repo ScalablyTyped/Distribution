@@ -151,8 +151,7 @@ object sapMCarouselMod {
       * otherwise it will be bound to this `sap.m.Carousel` itself.
       *
       * This event is fired before a carousel swipe has been completed. It is triggered both by physical swipe
-      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePageId'
-      * functions.
+      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePage' functions.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -180,8 +179,7 @@ object sapMCarouselMod {
       * otherwise it will be bound to this `sap.m.Carousel` itself.
       *
       * This event is fired before a carousel swipe has been completed. It is triggered both by physical swipe
-      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePageId'
-      * functions.
+      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePage' functions.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -286,8 +284,7 @@ object sapMCarouselMod {
       * otherwise it will be bound to this `sap.m.Carousel` itself.
       *
       * This event is fired after a carousel swipe has been completed. It is triggered both by physical swipe
-      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePageId'
-      * functions.
+      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePage' functions.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -314,8 +311,7 @@ object sapMCarouselMod {
       * otherwise it will be bound to this `sap.m.Carousel` itself.
       *
       * This event is fired after a carousel swipe has been completed. It is triggered both by physical swipe
-      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePageId'
-      * functions.
+      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePage' functions.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -721,13 +717,16 @@ object sapMCarouselMod {
     ): this.type = js.native
     
     /**
-      * Call this method to display the next page (corresponds to a swipe right). Returns 'this' for method chaining.
+      * Call this method to display the next page (corresponds to a swipe right).
+      *
+      * @returns Reference to `this` in order to allow method chaining
       */
     def next(): this.type = js.native
     
     /**
-      * Call this method to display the previous page (corresponds to a swipe left). Returns 'this' for method
-      * chaining.
+      * Call this method to display the previous page (corresponds to a swipe left).
+      *
+      * @returns Reference to `this` in order to allow method chaining
       */
     def previous(): this.type = js.native
     
@@ -958,8 +957,7 @@ object sapMCarouselMod {
     
     /**
       * This event is fired before a carousel swipe has been completed. It is triggered both by physical swipe
-      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePageId'
-      * functions.
+      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePage' functions.
       */
     var beforePageChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
@@ -997,8 +995,7 @@ object sapMCarouselMod {
     
     /**
       * This event is fired after a carousel swipe has been completed. It is triggered both by physical swipe
-      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePageId'
-      * functions.
+      * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePage' functions.
       */
     var pageChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     

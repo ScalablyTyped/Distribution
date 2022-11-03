@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-util"
-version := "3.0-dt-20211202Z-fc5b5f"
+version := "3.0-dt-20211202Z-1c9fd3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "chalk" % "5.1.2-70b91c",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "through2" % "2.0-dt-20220819Z-c63f98",
+  "org.scalablytyped" %%% "through2" % "2.0-dt-20221103Z-c63f98",
   "org.scalablytyped" %%% "vinyl" % "2.0-dt-20220819Z-1f7813")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

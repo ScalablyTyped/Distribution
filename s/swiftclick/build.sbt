@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swiftclick"
-version := "v1.2.0-dt-20220818Z-773f6e"
+version := "v1.2.0-dt-20221103Z-773f6e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ioredis" : "5.2.3"
+      "ioredis" : "5.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "ioredis" : "5.2.3"
+      "ioredis" : "5.2.4"
     }
   ],
   "compile-devDependencies" : [

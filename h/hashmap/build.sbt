@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hashmap"
-version := "2.3-dt-20220819Z-e33bc2"
+version := "2.3-dt-20221103Z-e33bc2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

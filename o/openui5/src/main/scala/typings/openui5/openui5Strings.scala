@@ -2427,12 +2427,24 @@ object openui5Strings {
   inline def sapSlashuiSlashcoreSlashXMLComposite: sapSlashuiSlashcoreSlashXMLComposite = "sap/ui/core/XMLComposite".asInstanceOf[sapSlashuiSlashcoreSlashXMLComposite]
   
   @js.native
+  sealed trait sapSlashuiSlashcoreSlash_UrlResolver extends StObject
+  inline def sapSlashuiSlashcoreSlash_UrlResolver: sapSlashuiSlashcoreSlash_UrlResolver = "sap/ui/core/_UrlResolver".asInstanceOf[sapSlashuiSlashcoreSlash_UrlResolver]
+  
+  @js.native
   sealed trait sapSlashuiSlashcoreSlashcacheSlashCacheManager extends StObject
   inline def sapSlashuiSlashcoreSlashcacheSlashCacheManager: sapSlashuiSlashcoreSlashcacheSlashCacheManager = "sap/ui/core/cache/CacheManager".asInstanceOf[sapSlashuiSlashcoreSlashcacheSlashCacheManager]
   
   @js.native
   sealed trait sapSlashuiSlashcoreSlashcacheSlashLRUPersistentCache extends StObject
   inline def sapSlashuiSlashcoreSlashcacheSlashLRUPersistentCache: sapSlashuiSlashcoreSlashcacheSlashLRUPersistentCache = "sap/ui/core/cache/LRUPersistentCache".asInstanceOf[sapSlashuiSlashcoreSlashcacheSlashLRUPersistentCache]
+  
+  @js.native
+  sealed trait sapSlashuiSlashcoreSlashdateSlashCalendarUtils extends StObject
+  inline def sapSlashuiSlashcoreSlashdateSlashCalendarUtils: sapSlashuiSlashcoreSlashdateSlashCalendarUtils = "sap/ui/core/date/CalendarUtils".asInstanceOf[sapSlashuiSlashcoreSlashdateSlashCalendarUtils]
+  
+  @js.native
+  sealed trait sapSlashuiSlashcoreSlashdateSlashCalendarWeekNumbering extends StObject
+  inline def sapSlashuiSlashcoreSlashdateSlashCalendarWeekNumbering: sapSlashuiSlashcoreSlashdateSlashCalendarWeekNumbering = "sap/ui/core/date/CalendarWeekNumbering".asInstanceOf[sapSlashuiSlashcoreSlashdateSlashCalendarWeekNumbering]
   
   @js.native
   sealed trait sapSlashuiSlashcoreSlashdateSlashUniversalDate extends StObject

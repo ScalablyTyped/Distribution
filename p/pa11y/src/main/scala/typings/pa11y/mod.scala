@@ -2,6 +2,7 @@ package typings.pa11y
 
 import typings.puppeteer.mod.Browser
 import typings.puppeteer.mod.Page
+import typings.puppeteer.mod.Viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -137,9 +138,7 @@ object mod {
     
     var userAgent: js.UndefOr[String] = js.undefined
     
-    var viewport: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Viewport */ Any
-      ] = js.undefined
+    var viewport: js.UndefOr[Viewport] = js.undefined
     
     @JSName("wait")
     var wait_FOptions: js.UndefOr[Double] = js.undefined
@@ -259,9 +258,7 @@ object mod {
       
       inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
       
-      inline def setViewport(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Viewport */ Any
-      ): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+      inline def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
       
       inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
       

@@ -749,11 +749,10 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     /**
       * @SINCE 1.39.0
       *
-      * Returns `true` if this binding or its dependent bindings have pending property changes or created entities
-      * which have not been sent successfully to the server. This function does not take into account the deletion
-      * of entities (see {@link sap.ui.model.odata.v4.Context#delete}) and the execution of OData operations
-      * (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}). Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} contexts are ignored.
+      * Returns `true` if this binding or its dependent bindings have property changes, created entities, or
+      * entity deletions which have not been sent successfully to the server. This function does not take the
+      * execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}) into account.
+      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts are ignored.
       *
       * Note: If this binding is relative, its data is cached separately for each parent context path. This method
       * returns `true` if there are pending changes for the current parent context path of this binding. If this
@@ -767,10 +766,11 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * Whether to ignore changes which will not be lost by APIs like {@link sap.ui.model.odata.v4.ODataListBinding#changeParameters
       * changeParameters}, {@link sap.ui.model.odata.v4.ODataListBinding#filter filter}, {@link sap.ui.model.odata.v4.ODataListBinding#refresh
       * refresh} (since 1.100.0), {@link sap.ui.model.odata.v4.ODataListBinding#sort sort}, or {@link sap.ui.model.odata.v4.ODataListBinding#suspend
-      * suspend} because they relate to a {@link sap.ui.model.odata.v4.Context#isKeepAlive kept-alive} context
-      * of this binding (since 1.97.0). Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isTransient transient}
-      * contexts of a {@link #getRootBinding root binding} are treated as kept-alive by this flag. Since 1.99.0,
-      * the same happens for bindings using the `$$ownRequest` parameter (see {@link sap.ui.model.odata.v4.ODataModel#bindList}).
+      * suspend} because they relate to a {@link sap.ui.model.odata.v4.Context#isKeepAlive kept-alive} (since
+      * 1.97.0) or {@link sap.ui.model.odata.v4.Context#delete deleted} (since 1.108.0) context of this binding.
+      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isTransient transient} contexts of a {@link #getRootBinding
+      * root binding} are treated as kept-alive by this flag. Since 1.99.0, the same happens for bindings using
+      * the `$$ownRequest` parameter (see {@link sap.ui.model.odata.v4.ODataModel#bindList}).
       */
     bIgnoreKeptAlive: Boolean
     ): Boolean = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reveal_dot_js"
-version := "4.3-dt-20221006Z-db7ec2"
+version := "4.3-dt-20221103Z-db7ec2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,8 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def diceCoefficient(value: String, alternative: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diceCoefficient")(value.asInstanceOf[js.Any], alternative.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def diceCoefficient(value: String, alternative: js.Array[String]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diceCoefficient")(value.asInstanceOf[js.Any], alternative.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def diceCoefficient(value: js.Array[String], alternative: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diceCoefficient")(value.asInstanceOf[js.Any], alternative.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def diceCoefficient(value: js.Array[String], alternative: js.Array[String]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diceCoefficient")(value.asInstanceOf[js.Any], alternative.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def diceCoefficient(value: String, other: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diceCoefficient")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def diceCoefficient(value: String, other: js.Array[String]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diceCoefficient")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def diceCoefficient(value: js.Array[String], other: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diceCoefficient")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def diceCoefficient(value: js.Array[String], other: js.Array[String]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diceCoefficient")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

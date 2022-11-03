@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "openui5"
-version := "1.107-dt-20221004Z-2f4b66"
+version := "1.108-dt-20221102Z-34d621"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-9d6f35",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-9d6f35",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-cfd9ff",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

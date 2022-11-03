@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-closure-compiler"
-version := "0.0-unknown-dt-20220818Z-5e455b"
+version := "0.0-unknown-dt-20221103Z-5e455b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

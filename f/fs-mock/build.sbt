@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fs-mock"
-version := "1.1.3-dt-20220818Z-9b3372"
+version := "1.1.3-dt-20221103Z-9b3372"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

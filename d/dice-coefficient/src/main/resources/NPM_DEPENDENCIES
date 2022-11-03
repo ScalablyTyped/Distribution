@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dice-coefficient" : "2.1.0"
+      "dice-coefficient" : "2.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "dice-coefficient" : "2.1.0"
+      "dice-coefficient" : "2.1.1"
     }
   ],
   "compile-devDependencies" : [

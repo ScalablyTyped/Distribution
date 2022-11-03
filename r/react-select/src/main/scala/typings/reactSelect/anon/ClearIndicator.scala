@@ -30,18 +30,6 @@ trait ClearIndicator extends StObject {
   
   def ClearIndicator[Option_1, IsMulti_1 /* <: Boolean */, Group_1 /* <: GroupBase[Option_1] */](props: ClearIndicatorProps[Option_1, IsMulti_1, Group_1]): Element
   
-  /**
-    * If `true`, close the select menu when the user scrolls the document/body.
-    *
-    * If a function, takes a standard javascript `ScrollEvent` you return a boolean:
-    *
-    * `true` => The menu closes
-    *
-    * `false` => The menu stays open
-    *
-    * This is useful when you have a scrollable modal and want to portal the menu out,
-    * but want to avoid graphical issues.
-    */
   def Control[Option_2, IsMulti_2 /* <: Boolean */, Group_2 /* <: GroupBase[Option_2] */](props: ControlProps[Option_2, IsMulti_2, Group_2]): Element
   
   def CrossIcon(props: CrossIconProps): Element

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swfobject"
-version := "v2.2-dt-20220818Z-df791d"
+version := "v2.2-dt-20221103Z-df791d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

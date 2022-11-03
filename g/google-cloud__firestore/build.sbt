@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "google-cloud__firestore"
-version := "6.4.0-f4c58b"
+version := "6.4.0-56559d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "gaxios" % "5.0.2-39d462",
   "org.scalablytyped" %%% "google-auth-library" % "8.6.0-565255",
-  "org.scalablytyped" %%% "google-gax" % "3.5.2-2c408c",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-913a7a",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-cc4119",
+  "org.scalablytyped" %%% "google-gax" % "3.5.2-22462b",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-4bcc1f",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-b32195",
   "org.scalablytyped" %%% "gtoken" % "6.1.2-7c92aa",
-  "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
+  "org.scalablytyped" %%% "long" % "5.2.1-0ea128",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-dcab71",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-fe2613",

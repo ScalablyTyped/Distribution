@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "koa-html-minifier"
-version := "1.0-dt-20211202Z-7d7210"
+version := "1.0-dt-20211202Z-e1fb7e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20211202Z-6edf5c",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20220921Z-080db0",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20221103Z-080db0",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-d67c0f",
   "org.scalablytyped" %%% "content-disposition" % "0.5-dt-20220505Z-baf750",
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20211202Z-a7929e",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
-  "org.scalablytyped" %%% "html-minifier" % "4.0-dt-20220913Z-893ba3",
+  "org.scalablytyped" %%% "html-minifier" % "4.0-dt-20221103Z-38bf8e",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20211202Z-ff8589",
   "org.scalablytyped" %%% "koa" % "2.13.1-dt-20220818Z-a193a1",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",

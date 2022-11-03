@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grunt"
-version := "0.4.x-dt-20220818Z-e18e41"
+version := "0.4.x-dt-20221103Z-e18e41"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

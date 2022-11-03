@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__pro-layout"
-version := "7.1.15-9b989b"
+version := "7.1.15-9e15d3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ant-design__icons-svg" % "4.2.1-58696f",
   "org.scalablytyped" %%% "ant-design__pro-provider" % "2.0.12-067f14",
   "org.scalablytyped" %%% "ant-design__react-slick" % "0.29.2-4f9b25",
-  "org.scalablytyped" %%% "antd" % "4.24.0-1a6945",
+  "org.scalablytyped" %%% "antd" % "4.24.0-74e7c9",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "dayjs" % "1.11.6-153a22",
   "org.scalablytyped" %%% "history" % "5.3.0-95787a",
@@ -35,7 +35,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-segmented" % "2.1.0-07807c",
   "org.scalablytyped" %%% "rc-select" % "14.1.13-a3fe66",
   "org.scalablytyped" %%% "rc-slider" % "10.0.1-da8fb8",
-  "org.scalablytyped" %%% "rc-steps" % "6.0.0-alpha.0-24b3d2",
+  "org.scalablytyped" %%% "rc-steps" % "6.0.0-alpha.1-bdf1ab",
   "org.scalablytyped" %%% "rc-table" % "7.28.1-6bfdce",
   "org.scalablytyped" %%% "rc-tabs" % "12.2.2-26d686",
   "org.scalablytyped" %%% "rc-textarea" % "0.4.6-aff720",

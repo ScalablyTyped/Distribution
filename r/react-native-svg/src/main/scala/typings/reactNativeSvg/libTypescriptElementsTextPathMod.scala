@@ -1,6 +1,6 @@
 package typings.reactNativeSvg
 
-import typings.reactNativeSvg.anon.ObjectmatrixArraynumberunConstructor
+import typings.reactNativeSvg.anon.ObjectmatrixColumnMajorTrConstructor
 import typings.reactNativeSvg.libTypescriptLibExtractExtractTextMod.TextChild
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.TextPathMethod
@@ -33,7 +33,7 @@ object libTypescriptElementsTextPathMod {
   trait TextPath
     extends typings.reactNativeSvg.libTypescriptElementsShapeMod.default[TextPathProps] {
     
-    def setNativeProps(props: ObjectmatrixArraynumberunConstructor): Unit = js.native
+    def setNativeProps(props: ObjectmatrixColumnMajorTrConstructor): Unit = js.native
   }
   
   trait TextPathProps

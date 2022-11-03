@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "amqp-connection-manager"
-version := "4.1.9-ee17cc"
+version := "4.1.9-42e5ea"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "amqplib" % "0.8-dt-20211202Z-4d3cf1",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220923Z-5a7a5b",
+  "org.scalablytyped" %%% "amqplib" % "0.8-dt-20211202Z-2db556",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-5a7a5b",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "promise-breaker" % "6.0.0-3effa9",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

@@ -149,7 +149,7 @@ object sapFGridContainerItemLayoutDataMod {
     def getMinRows(): int = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65)
+      * @EXPERIMENTAL (since 1.65) - this property may soon be removed, use minRows instead
       *
       * Gets current value of property {@link #getRows rows}.
       *
@@ -196,7 +196,7 @@ object sapFGridContainerItemLayoutDataMod {
     iMinRows: int): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65)
+      * @EXPERIMENTAL (since 1.65) - this property may soon be removed, use minRows instead
       *
       * Sets a new value for property {@link #getRows rows}.
       *
@@ -232,7 +232,7 @@ object sapFGridContainerItemLayoutDataMod {
     var minRows: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.65)
+      * @EXPERIMENTAL (since 1.65) - this property may soon be removed, use minRows instead
       *
       * Specifies the number of rows, which the item should take.
       */

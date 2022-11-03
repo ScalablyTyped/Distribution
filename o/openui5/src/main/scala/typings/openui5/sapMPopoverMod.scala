@@ -885,7 +885,7 @@ object sapMPopoverMod {
     
     /**
       * @SINCE 1.36.4
-      * @EXPERIMENTAL (since 1.36.4)
+      * @EXPERIMENTAL (since 1.36.4) - Do not use directly on Popover while in experimental mode!
       *
       * Gets current value of property {@link #getResizable resizable}.
       *
@@ -1427,7 +1427,7 @@ object sapMPopoverMod {
     
     /**
       * @SINCE 1.36.4
-      * @EXPERIMENTAL (since 1.36.4)
+      * @EXPERIMENTAL (since 1.36.4) - Do not use directly on Popover while in experimental mode!
       *
       * Sets a new value for property {@link #getResizable resizable}.
       *
@@ -1777,7 +1777,7 @@ object sapMPopoverMod {
     
     /**
       * @SINCE 1.36.4
-      * @EXPERIMENTAL (since 1.36.4)
+      * @EXPERIMENTAL (since 1.36.4) - Do not use directly on Popover while in experimental mode!
       *
       * Whether resize option is enabled. *Note:* This property is effective only on Desktop
       */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "snapsvg"
-version := "0.5.1-dt-20220818Z-214316"
+version := "0.5.1-dt-20221103Z-214316"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

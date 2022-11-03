@@ -46,7 +46,7 @@ object libTypescriptElementsImageMod {
     
     var height: js.UndefOr[NumberProp] = js.undefined
     
-    var href: js.UndefOr[ImageSourcePropType] = js.undefined
+    var href: js.UndefOr[ImageSourcePropType | String] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -58,7 +58,7 @@ object libTypescriptElementsImageMod {
     
     var x: js.UndefOr[NumberProp] = js.undefined
     
-    var xlinkHref: js.UndefOr[ImageSourcePropType] = js.undefined
+    var xlinkHref: js.UndefOr[ImageSourcePropType | String] = js.undefined
     
     var y: js.UndefOr[NumberProp] = js.undefined
   }
@@ -75,7 +75,7 @@ object libTypescriptElementsImageMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHref(value: ImageSourcePropType): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: ImageSourcePropType | String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
       inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
@@ -101,7 +101,7 @@ object libTypescriptElementsImageMod {
       
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setXlinkHref(value: ImageSourcePropType): Self = StObject.set(x, "xlinkHref", value.asInstanceOf[js.Any])
+      inline def setXlinkHref(value: ImageSourcePropType | String): Self = StObject.set(x, "xlinkHref", value.asInstanceOf[js.Any])
       
       inline def setXlinkHrefUndefined: Self = StObject.set(x, "xlinkHref", js.undefined)
       

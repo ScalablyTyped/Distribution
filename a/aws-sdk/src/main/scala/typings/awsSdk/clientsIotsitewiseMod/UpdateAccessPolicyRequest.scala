@@ -12,7 +12,7 @@ trait UpdateAccessPolicyRequest extends StObject {
   var accessPolicyId: ID
   
   /**
-    * The identity for this access policy. Choose an Amazon Web Services SSO user, an Amazon Web Services SSO group, or an IAM user.
+    * The identity for this access policy. Choose an IAM Identity Center user, an IAM Identity Center group, or an IAM user.
     */
   var accessPolicyIdentity: Identity
   

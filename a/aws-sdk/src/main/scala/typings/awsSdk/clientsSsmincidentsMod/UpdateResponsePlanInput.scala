@@ -32,7 +32,7 @@ trait UpdateResponsePlanInput extends StObject {
   var displayName: js.UndefOr[ResponsePlanDisplayName] = js.undefined
   
   /**
-    * The contacts and escalation plans that Incident Manager engages at the start of the incident.
+    * The Amazon Resource Name (ARN) for the contacts and escalation plans that the response plan engages during an incident.
     */
   var engagements: js.UndefOr[EngagementSet] = js.undefined
   
@@ -57,7 +57,7 @@ trait UpdateResponsePlanInput extends StObject {
   var incidentTemplateSummary: js.UndefOr[IncidentSummary] = js.undefined
   
   /**
-    * Tags to apply to an incident when calling the StartIncident API action. To call this action, you must also have permission to call the TagResource API action for the incident record resource.
+    * Tags to assign to the template. When the StartIncident API action is called, Incident Manager assigns the tags specified in the template to the incident. To call this action, you must also have permission to call the TagResource API action for the incident record resource.
     */
   var incidentTemplateTags: js.UndefOr[TagMapUpdate] = js.undefined
   

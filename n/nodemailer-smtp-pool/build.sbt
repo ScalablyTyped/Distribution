@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nodemailer-smtp-pool"
-version := "1.0.1-dt-20220818Z-dd52c7"
+version := "1.0.1-dt-20221103Z-dd52c7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

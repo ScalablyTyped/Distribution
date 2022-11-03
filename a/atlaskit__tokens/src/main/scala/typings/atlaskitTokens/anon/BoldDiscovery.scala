@@ -25,17 +25,17 @@ trait BoldDiscovery[BaseToken] extends StObject {
   
   var boldWarning: PressedPaintTokenRestingPaintToken[BaseToken]
   
-  var brand: `7`[BaseToken]
+  var brand: `11`[BaseToken]
   
   var card: PaintToken[BaseToken]
   
-  var inverse: `6`[BaseToken]
+  var inverse: `10`[BaseToken]
   
   var overlay: PaintToken[BaseToken]
   
   var selected: HoverPaintTokenRestingPaintToken[BaseToken]
   
-  var subtleBorderedNeutral: `9`[BaseToken]
+  var subtleBorderedNeutral: `14`[BaseToken]
   
   var subtleBrand: PressedPaintTokenRestingPaintToken[BaseToken]
   
@@ -51,7 +51,7 @@ trait BoldDiscovery[BaseToken] extends StObject {
   
   var sunken: PaintToken[BaseToken]
   
-  var transparentNeutral: `8`[BaseToken]
+  var transparentNeutral: `13`[BaseToken]
 }
 object BoldDiscovery {
   
@@ -64,13 +64,13 @@ object BoldDiscovery {
     boldNeutral: PressedPaintTokenRestingPaintToken[BaseToken],
     boldSuccess: PressedPaintTokenRestingPaintToken[BaseToken],
     boldWarning: PressedPaintTokenRestingPaintToken[BaseToken],
-    brand: `7`[BaseToken],
+    brand: `11`[BaseToken],
     card: PaintToken[BaseToken],
     default: PaintToken[BaseToken],
-    inverse: `6`[BaseToken],
+    inverse: `10`[BaseToken],
     overlay: PaintToken[BaseToken],
     selected: HoverPaintTokenRestingPaintToken[BaseToken],
-    subtleBorderedNeutral: `9`[BaseToken],
+    subtleBorderedNeutral: `14`[BaseToken],
     subtleBrand: PressedPaintTokenRestingPaintToken[BaseToken],
     subtleDanger: PressedPaintTokenRestingPaintToken[BaseToken],
     subtleDiscovery: PressedPaintTokenRestingPaintToken[BaseToken],
@@ -78,7 +78,7 @@ object BoldDiscovery {
     subtleSuccess: PressedPaintTokenRestingPaintToken[BaseToken],
     subtleWarning: PressedPaintTokenRestingPaintToken[BaseToken],
     sunken: PaintToken[BaseToken],
-    transparentNeutral: `8`[BaseToken]
+    transparentNeutral: `13`[BaseToken]
   ): BoldDiscovery[BaseToken] = {
     val __obj = js.Dynamic.literal(accent = accent.asInstanceOf[js.Any], blanket = blanket.asInstanceOf[js.Any], boldBrand = boldBrand.asInstanceOf[js.Any], boldDanger = boldDanger.asInstanceOf[js.Any], boldDiscovery = boldDiscovery.asInstanceOf[js.Any], boldNeutral = boldNeutral.asInstanceOf[js.Any], boldSuccess = boldSuccess.asInstanceOf[js.Any], boldWarning = boldWarning.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], card = card.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], subtleBorderedNeutral = subtleBorderedNeutral.asInstanceOf[js.Any], subtleBrand = subtleBrand.asInstanceOf[js.Any], subtleDanger = subtleDanger.asInstanceOf[js.Any], subtleDiscovery = subtleDiscovery.asInstanceOf[js.Any], subtleNeutral = subtleNeutral.asInstanceOf[js.Any], subtleSuccess = subtleSuccess.asInstanceOf[js.Any], subtleWarning = subtleWarning.asInstanceOf[js.Any], sunken = sunken.asInstanceOf[js.Any], transparentNeutral = transparentNeutral.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoldDiscovery[BaseToken]]
@@ -102,19 +102,19 @@ object BoldDiscovery {
     
     inline def setBoldWarning(value: PressedPaintTokenRestingPaintToken[BaseToken]): Self = StObject.set(x, "boldWarning", value.asInstanceOf[js.Any])
     
-    inline def setBrand(value: `7`[BaseToken]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: `11`[BaseToken]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     inline def setCard(value: PaintToken[BaseToken]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     inline def setDefault(value: PaintToken[BaseToken]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setInverse(value: `6`[BaseToken]): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setInverse(value: `10`[BaseToken]): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
     inline def setOverlay(value: PaintToken[BaseToken]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     inline def setSelected(value: HoverPaintTokenRestingPaintToken[BaseToken]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    inline def setSubtleBorderedNeutral(value: `9`[BaseToken]): Self = StObject.set(x, "subtleBorderedNeutral", value.asInstanceOf[js.Any])
+    inline def setSubtleBorderedNeutral(value: `14`[BaseToken]): Self = StObject.set(x, "subtleBorderedNeutral", value.asInstanceOf[js.Any])
     
     inline def setSubtleBrand(value: PressedPaintTokenRestingPaintToken[BaseToken]): Self = StObject.set(x, "subtleBrand", value.asInstanceOf[js.Any])
     
@@ -130,6 +130,6 @@ object BoldDiscovery {
     
     inline def setSunken(value: PaintToken[BaseToken]): Self = StObject.set(x, "sunken", value.asInstanceOf[js.Any])
     
-    inline def setTransparentNeutral(value: `8`[BaseToken]): Self = StObject.set(x, "transparentNeutral", value.asInstanceOf[js.Any])
+    inline def setTransparentNeutral(value: `13`[BaseToken]): Self = StObject.set(x, "transparentNeutral", value.asInstanceOf[js.Any])
   }
 }

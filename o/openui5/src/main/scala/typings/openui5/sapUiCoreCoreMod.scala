@@ -1337,7 +1337,8 @@ object sapUiCoreCoreMod extends Shortcut {
     def getTemplate(sId: String): typings.openui5.sapUiCoreComponentMod.default = js.native
     
     /**
-      * @deprecated (since 1.107) - use {@link sap.ui.core.UIArea.registry#get UIArea.registry#get} instead!
+      * @deprecated (since 1.107) - use {@link sap.ui.core.UIArea.registry#get UIArea.registry#get} instead,
+      * but note that `UIArea.registry.get` only accepts the ID of the UIArea as argument.
       *
       * Returns the {@link sap.ui.core.UIArea UIArea} with the given ID or that belongs to the given DOM element.
       *

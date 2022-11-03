@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "popoto"
-version := "3.0-dt-20211202Z-8b8fbb"
+version := "3.0-dt-20211202Z-8df8ee"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "d3" % "7.4-dt-20220913Z-200207",
+  "org.scalablytyped" %%% "d3" % "7.4-dt-20221103Z-200207",
   "org.scalablytyped" %%% "d3-array" % "3.0-dt-20220624Z-39c0e7",
   "org.scalablytyped" %%% "d3-axis" % "3.0-dt-20220624Z-64dcdf",
   "org.scalablytyped" %%% "d3-brush" % "3.0-dt-20211202Z-c01e38",

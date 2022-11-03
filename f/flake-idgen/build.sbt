@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flake-idgen"
-version := "0.1.4-dt-20220818Z-5b0b60"
+version := "0.1.4-dt-20221103Z-5b0b60"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

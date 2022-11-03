@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-ui-tree"
-version := "v2.8.0-dt-20220818Z-e72d39"
+version := "v2.8.0-dt-20221103Z-e72d39"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

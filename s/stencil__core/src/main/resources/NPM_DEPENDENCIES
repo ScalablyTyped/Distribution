@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@stencil/core" : "2.19.1"
+      "@stencil/core" : "2.19.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@stencil/core" : "2.19.1"
+      "@stencil/core" : "2.19.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,23 +1,23 @@
 package typings.atlaskitTokens.anon
 
+import typings.atlaskitTokens.atlaskitTokensStrings.Space300
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `7`[BaseToken] extends StObject {
+trait `7` extends StObject {
   
-  var `[default]`: DefaultHoveredPressed[BaseToken]
+  var value: Space300
 }
 object `7` {
   
-  inline def apply[BaseToken](`[default]`: DefaultHoveredPressed[BaseToken]): `7`[BaseToken] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`7`[BaseToken]]
+  inline def apply(): `7` = {
+    val __obj = js.Dynamic.literal(value = "Space300")
+    __obj.asInstanceOf[`7`]
   }
   
-  extension [Self <: `7`[?], BaseToken](x: Self & `7`[BaseToken]) {
+  extension [Self <: `7`](x: Self) {
     
-    inline def `set[default]`(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
+    inline def setValue(value: Space300): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

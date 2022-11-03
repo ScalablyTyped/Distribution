@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg_dot_js"
-version := "0.0.1-dt-20220818Z-e5e882"
+version := "0.0.1-dt-20221103Z-e5e882"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

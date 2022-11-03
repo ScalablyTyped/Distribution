@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "node-red__editor-api"
-version := "1.1-dt-20211202Z-4312ef"
+version := "1.1-dt-20211202Z-83205d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20211202Z-534f18",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20221103Z-534f18",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
   "org.scalablytyped" %%% "jsonata" % "1.8.6-575176",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "node-red__registry" % "1.2-dt-20220912Z-214964",
-  "org.scalablytyped" %%% "node-red__runtime" % "1.2-dt-20211202Z-88ddb9",
+  "org.scalablytyped" %%% "node-red__runtime" % "1.2-dt-20211202Z-26afe9",
   "org.scalablytyped" %%% "node-red__util" % "1.2-dt-20220624Z-c56c73",
   "org.scalablytyped" %%% "passport" % "1.0-dt-20220912Z-7dc09b",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",

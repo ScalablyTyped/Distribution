@@ -11,5 +11,5 @@ object distTypesUtilsEvaluateTemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def evaluateTemplate(template: String, options: EvaluateOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateTemplate")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def evaluateTemplate(template: String, options: EvaluateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateTemplate")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

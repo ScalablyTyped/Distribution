@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-easy-chart"
-version := "v0.1.12-dt-20220818Z-7479ef"
+version := "v0.1.12-dt-20221103Z-7479ef"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

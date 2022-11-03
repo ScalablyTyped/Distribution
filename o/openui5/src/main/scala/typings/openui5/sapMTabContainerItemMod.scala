@@ -245,7 +245,8 @@ object sapMTabContainerItemMod {
     mParameters: ItemChanged): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63)
+      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getAdditionalText additionalText}.
       *
@@ -265,7 +266,8 @@ object sapMTabContainerItemMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63)
+      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getIcon icon}.
       *
@@ -277,7 +279,8 @@ object sapMTabContainerItemMod {
     def getIcon(): URI = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63)
+      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getIconTooltip iconTooltip}.
       *
@@ -380,7 +383,8 @@ object sapMTabContainerItemMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63)
+      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getAdditionalText additionalText}.
       *
@@ -409,7 +413,8 @@ object sapMTabContainerItemMod {
     sIcon: URI): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63)
+      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getIconTooltip iconTooltip}.
       *
@@ -529,7 +534,8 @@ object sapMTabContainerItemMod {
        with ElementSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.63)
+      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Determines additional text to be displayed for the item.
       */
@@ -543,7 +549,8 @@ object sapMTabContainerItemMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.63)
+      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Defines the icon to be displayed as graphical element within the `TabContainerItem`. It can be an image
       * or an icon from the icon font.
@@ -551,7 +558,8 @@ object sapMTabContainerItemMod {
     var icon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.63)
+      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Determines the tooltip text of the `TabContainerItem`'s icon.
       */

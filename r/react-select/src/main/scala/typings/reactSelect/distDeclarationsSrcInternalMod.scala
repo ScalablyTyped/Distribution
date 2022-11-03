@@ -2,9 +2,11 @@ package typings.reactSelect
 
 import typings.emotionReact.mod.jsx.JSX.Element
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.FunctionComponent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.InputHTMLAttributes
 import typings.reactSelect.anon.InnerRef
+import typings.reactSelect.anon.Name
 import typings.reactSelect.distDeclarationsSrcInternalScrollManagerMod.Props
 import typings.std.HTMLInputElement
 import typings.std.HTMLSpanElement
@@ -21,6 +23,10 @@ object distDeclarationsSrcInternalMod {
   inline def A11yText(props: DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("A11yText")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def DummyInput(param0: (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]) & InnerRef): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DummyInput")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("react-select/dist/declarations/src/internal", "RequiredInput")
+  @js.native
+  val RequiredInput: FunctionComponent[Name] = js.native
   
   inline def ScrollManager(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollManager")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

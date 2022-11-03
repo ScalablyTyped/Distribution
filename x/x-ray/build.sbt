@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "x-ray"
-version := "2.3-dt-20211202Z-82a1d7"
+version := "2.3-dt-20211202Z-501a16"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20211202Z-6edf5c",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220923Z-5a7a5b",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-5a7a5b",
   "org.scalablytyped" %%% "http-context" % "1.1-dt-20211202Z-fd0684",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43",

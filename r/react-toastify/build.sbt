@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-toastify"
-version := "9.1.0-a8c806"
+version := "9.1.1-b192cc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

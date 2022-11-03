@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "fs-extra-promise"
-version := "1.0-dt-20211202Z-df8008"
+version := "1.0-dt-20211202Z-167e7a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220923Z-5a7a5b",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-5a7a5b",
   "org.scalablytyped" %%% "fs-extra" % "9.0-dt-20211202Z-5a2afc",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

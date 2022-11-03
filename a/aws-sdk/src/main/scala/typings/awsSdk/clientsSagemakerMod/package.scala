@@ -1778,6 +1778,8 @@ type ModelPackageArnList = js.Array[ModelPackageArn]
 
 type ModelPackageContainerDefinitionList = js.Array[ModelPackageContainerDefinition]
 
+type ModelPackageFrameworkVersion = java.lang.String
+
 type ModelPackageGroupArn = java.lang.String
 
 /* Rewritten from type alias, can be one of: 

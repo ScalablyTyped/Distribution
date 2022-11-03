@@ -32,7 +32,7 @@ trait MapboxDraw
   ): this.type = js.native
   def changeMode[T /* <: String */](
     mode: T & (/* import warning: importer.ImportType#apply Failed type conversion: T extends @mapbox/mapbox-gl-draw.@mapbox/mapbox-gl-draw.DrawMode ? never : T */ js.Any),
-    options: Any
+    options: js.Object
   ): this.type = js.native
   @JSName("changeMode")
   def changeMode_directselect(mode: direct_select, options: FeatureId): this.type = js.native
@@ -61,7 +61,7 @@ trait MapboxDraw
   
   def getFeatureIdsAt(point: X): js.Array[String] = js.native
   
-  def getMode(): DrawMode = js.native
+  def getMode(): (DrawMode & js.Object) | String = js.native
   
   def getSelected(): FeatureCollection[Geometry, GeoJsonProperties] = js.native
   

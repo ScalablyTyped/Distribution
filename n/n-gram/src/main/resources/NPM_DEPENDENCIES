@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "n-gram" : "2.0.1"
+      "n-gram" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "n-gram" : "2.0.1"
+      "n-gram" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

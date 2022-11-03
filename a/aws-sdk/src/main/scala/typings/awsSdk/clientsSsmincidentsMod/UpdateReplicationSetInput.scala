@@ -17,7 +17,7 @@ trait UpdateReplicationSetInput extends StObject {
   var arn: Arn
   
   /**
-    * A token ensuring that the operation is called only once with the specified details.
+    * A token that ensures that the operation is called only once with the specified details.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
 }

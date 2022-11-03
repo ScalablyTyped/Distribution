@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "connect-flash"
-version := "0.0-unknown-dt-20220818Z-c7d3db"
+version := "0.0-unknown-dt-20221103Z-c7d3db"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

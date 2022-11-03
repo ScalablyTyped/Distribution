@@ -243,7 +243,7 @@ object sapFCardsHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81)
+      * @EXPERIMENTAL (since 1.81) - this feature is experimental and the API may change.
       *
       * Gets current value of property {@link #getIconAlt iconAlt}.
       *
@@ -256,7 +256,7 @@ object sapFCardsHeaderMod {
     def getIconAlt(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83)
+      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
       *
       * Gets current value of property {@link #getIconBackgroundColor iconBackgroundColor}.
       *
@@ -300,6 +300,19 @@ object sapFCardsHeaderMod {
       * @returns Value of property `iconSrc`
       */
     def getIconSrc(): URI = js.native
+    
+    /**
+      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
+      *
+      * Gets current value of property {@link #getIconVisible iconVisible}.
+      *
+      * Defines whether the card icon is visible.
+      *
+      * Default value is `true`.
+      *
+      * @returns Value of property `iconVisible`
+      */
+    def getIconVisible(): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getStatusText statusText}.
@@ -361,7 +374,7 @@ object sapFCardsHeaderMod {
     def getTitleMaxLines(): int = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81)
+      * @EXPERIMENTAL (since 1.81) - this feature is experimental and the API may change.
       *
       * Sets a new value for property {@link #getIconAlt iconAlt}.
       *
@@ -380,7 +393,7 @@ object sapFCardsHeaderMod {
     sIconAlt: String): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83)
+      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
       *
       * Sets a new value for property {@link #getIconBackgroundColor iconBackgroundColor}.
       *
@@ -460,6 +473,25 @@ object sapFCardsHeaderMod {
       * New value for property `iconSrc`
       */
     sIconSrc: URI): this.type = js.native
+    
+    /**
+      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
+      *
+      * Sets a new value for property {@link #getIconVisible iconVisible}.
+      *
+      * Defines whether the card icon is visible.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `true`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setIconVisible(): this.type = js.native
+    def setIconVisible(/**
+      * New value for property `iconVisible`
+      */
+    bIconVisible: Boolean): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getStatusText statusText}.
@@ -556,14 +588,14 @@ object sapFCardsHeaderMod {
        with BaseHeaderSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.81)
+      * @EXPERIMENTAL (since 1.81) - this feature is experimental and the API may change.
       *
       * Defines an alt text for the avatar or icon.
       */
     var iconAlt: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.83)
+      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
       *
       * Defines a background color for the avatar or icon.
       */
@@ -587,6 +619,15 @@ object sapFCardsHeaderMod {
       * Defines the icon source.
       */
     var iconSrc: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
+    
+    /**
+      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
+      *
+      * Defines whether the card icon is visible.
+      */
+    var iconVisible: js.UndefOr[
+        Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
     
     /**
       * Fires when the user presses the control.
@@ -654,6 +695,10 @@ object sapFCardsHeaderMod {
       inline def setIconSrc(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "iconSrc", value.asInstanceOf[js.Any])
       
       inline def setIconSrcUndefined: Self = StObject.set(x, "iconSrc", js.undefined)
+      
+      inline def setIconVisible(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "iconVisible", value.asInstanceOf[js.Any])
+      
+      inline def setIconVisibleUndefined: Self = StObject.set(x, "iconVisible", js.undefined)
       
       inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       

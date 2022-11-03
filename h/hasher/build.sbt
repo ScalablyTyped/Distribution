@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hasher"
-version := "0.0-unknown-dt-20220818Z-1fb1c2"
+version := "0.0-unknown-dt-20221103Z-1fb1c2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

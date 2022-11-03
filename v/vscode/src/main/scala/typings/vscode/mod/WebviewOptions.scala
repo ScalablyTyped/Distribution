@@ -9,9 +9,11 @@ trait WebviewOptions extends StObject {
   /**
     * Controls whether command uris are enabled in webview content or not.
     *
-    * Defaults to false.
+    * Defaults to `false` (command uris are disabled).
+    *
+    * If you pass in an array, only the commands in the array are allowed.
     */
-  val enableCommandUris: js.UndefOr[Boolean] = js.undefined
+  val enableCommandUris: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
   /**
     * Controls whether forms are enabled in the webview content or not.
@@ -61,9 +63,11 @@ object WebviewOptions {
   
   extension [Self <: WebviewOptions](x: Self) {
     
-    inline def setEnableCommandUris(value: Boolean): Self = StObject.set(x, "enableCommandUris", value.asInstanceOf[js.Any])
+    inline def setEnableCommandUris(value: Boolean | js.Array[String]): Self = StObject.set(x, "enableCommandUris", value.asInstanceOf[js.Any])
     
     inline def setEnableCommandUrisUndefined: Self = StObject.set(x, "enableCommandUris", js.undefined)
+    
+    inline def setEnableCommandUrisVarargs(value: String*): Self = StObject.set(x, "enableCommandUris", js.Array(value*))
     
     inline def setEnableForms(value: Boolean): Self = StObject.set(x, "enableForms", value.asInstanceOf[js.Any])
     

@@ -2225,7 +2225,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1404, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2237,7 +2237,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1404, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2253,7 +2253,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1404, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2265,7 +2265,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1404, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2514,7 +2514,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1404, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2531,7 +2531,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1404, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2552,7 +2552,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1404, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2569,7 +2569,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1404, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -3951,7 +3951,7 @@ object global {
                 
                 /**
                   * @SINCE 1.81
-                  * @EXPERIMENTAL
+                  * @EXPERIMENTAL - 1.81
                   *
                   * Validates if the provided value belongs to the icon pool.
                   */
@@ -4791,7 +4791,7 @@ object global {
           val ^ : js.Any = js.native
           
           /**
-            * @EXPERIMENTAL
+            * @EXPERIMENTAL - This module is only for experimental use!
             *
             * If called on an instance of an (v1/v2) ODataModel it will enrich it with analytics capabilities.
             */
@@ -4808,7 +4808,7 @@ object global {
           val ^ : js.Any = js.native
           
           /**
-            * @EXPERIMENTAL
+            * @EXPERIMENTAL - This module is only for experimental and internal use!
             *
             * Adapter for TreeBindings to add the ListBinding functionality and use the tree structure in list based
             * controls. Only usable with the sap.ui.table.TreeTable control. The functions defined here are only available
@@ -4933,15 +4933,21 @@ object global {
           */
         fnErrback: js.Function
         ): js.UndefOr[Any] = (^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any], fnErrback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Any]]
-        inline def apply(/**
-          * Dependency (dependencies) to resolve
-          */
-        vDependencies: js.Array[String]): js.UndefOr[Any] = ^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Any]]
         inline def apply(
           /**
           * Dependency (dependencies) to resolve
           */
-        vDependencies: js.Array[String],
+        vDependencies: js.Array[
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                ]
+        ): js.UndefOr[Any] = ^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Any]]
+        inline def apply(
+          /**
+          * Dependency (dependencies) to resolve
+          */
+        vDependencies: js.Array[
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                ],
           /**
           * Callback function to execute after resolving an array of dependencies
           */
@@ -4951,7 +4957,9 @@ object global {
           /**
           * Dependency (dependencies) to resolve
           */
-        vDependencies: js.Array[String],
+        vDependencies: js.Array[
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                ],
           /**
           * Callback function to execute after resolving an array of dependencies
           */
@@ -4967,7 +4975,9 @@ object global {
           /**
           * Dependency (dependencies) to resolve
           */
-        vDependencies: js.Array[String],
+        vDependencies: js.Array[
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                ],
           /**
           * Callback function to execute after resolving an array of dependencies
           */

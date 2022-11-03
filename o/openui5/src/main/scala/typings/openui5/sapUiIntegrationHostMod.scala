@@ -127,7 +127,8 @@ object sapUiIntegrationHostMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.Host`.
       *
@@ -155,7 +156,8 @@ object sapUiIntegrationHostMod {
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.Host`.
       *
@@ -429,7 +431,8 @@ object sapUiIntegrationHostMod {
     ): Unit = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Detaches event handler `fnFunction` from the {@link #event:action action} event of this `sap.ui.integration.Host`.
       *
@@ -535,7 +538,8 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Fires event {@link #event:action action} to attached listeners.
       *
@@ -590,7 +594,8 @@ object sapUiIntegrationHostMod {
     mParameters: Data): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getActions actions}.
       *
@@ -694,7 +699,8 @@ object sapUiIntegrationHostMod {
     def getResolveDestination(): js.Function = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getActions actions}.
       *
@@ -737,14 +743,16 @@ object sapUiIntegrationHostMod {
        with ElementSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Fired when an action is triggered.
       */
     var action: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.75)
+      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * The actions configuration.
       */

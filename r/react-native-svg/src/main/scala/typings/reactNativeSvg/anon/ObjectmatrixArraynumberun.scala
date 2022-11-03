@@ -1,9 +1,21 @@
 package typings.reactNativeSvg.anon
 
+import typings.reactNative.mod.MatrixTransform
+import typings.reactNative.mod.PerpectiveTransform
+import typings.reactNative.mod.RotateTransform
+import typings.reactNative.mod.RotateXTransform
+import typings.reactNative.mod.RotateYTransform
+import typings.reactNative.mod.RotateZTransform
+import typings.reactNative.mod.ScaleTransform
+import typings.reactNative.mod.ScaleXTransform
+import typings.reactNative.mod.ScaleYTransform
+import typings.reactNative.mod.SkewXTransform
+import typings.reactNative.mod.SkewYTransform
+import typings.reactNative.mod.TranslateXTransform
+import typings.reactNative.mod.TranslateYTransform
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
-import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.TransformObject
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -52,7 +64,11 @@ trait ObjectmatrixArraynumberun extends StObject {
   
   var skewY: js.UndefOr[NumberProp] = js.undefined
   
-  var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject] = js.undefined
+  var transform: js.UndefOr[
+    ColumnMajorTransformMatrix | String | (js.Array[
+      PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform
+    ])
+  ] = js.undefined
   
   var translate: js.UndefOr[NumberArray] = js.undefined
   
@@ -135,9 +151,17 @@ object ObjectmatrixArraynumberun {
     
     inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
     
-    inline def setTransform(value: ColumnMajorTransformMatrix | String | TransformObject): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(
+      value: ColumnMajorTransformMatrix | String | (js.Array[
+          PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform
+        ])
+    ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    inline def setTransformVarargs(
+      value: (PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform | MatrixTransform)*
+    ): Self = StObject.set(x, "transform", js.Array(value*))
     
     inline def setTranslate(value: NumberArray): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     

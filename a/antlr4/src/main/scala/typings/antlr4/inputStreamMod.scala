@@ -1,16 +1,23 @@
 package typings.antlr4
 
+import typings.antlr4.antlr4Ints.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputStreamMod {
   
-  @JSImport("antlr4/InputStream", "InputStream")
+  @JSImport("antlr4/InputStream", JSImport.Default)
   @js.native
-  open class InputStream protected () extends StObject {
+  open class default protected ()
+    extends StObject
+       with InputStream {
     def this(data: String) = this()
     def this(data: String, decodeToUnicodeCodePoints: Boolean) = this()
+  }
+  
+  @js.native
+  trait InputStream extends StObject {
     
     def LA(offset: Double): Double = js.native
     
@@ -20,16 +27,27 @@ object inputStreamMod {
     
     def getText(start: Double, stop: Double): String = js.native
     
-    val index: Double = js.native
+    def index: Double = js.native
     
-    def mark(): Double = js.native
+    /**
+      * noop: we have entire buffer
+      */
+    def mark(): `-1` = js.native
     
-    def release(marker: Any): Double = js.native
+    /**
+      * noop: we have entire buffer
+      */
+    def release(marker: Double): Unit = js.native
     
+    /**
+      * Reset the stream so that it's in the same state it was
+      * when the object was created *except* the data array is not
+      * touched.
+      */
     def reset(): Unit = js.native
     
-    def seek(index: Double): Unit = js.native
+    def seek(_index: Double): Unit = js.native
     
-    val size: Double = js.native
+    def size: Double = js.native
   }
 }

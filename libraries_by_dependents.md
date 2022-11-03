@@ -776,6 +776,7 @@
 | 0.0 | [bencode](./b/bencode) | Bencode de/encoder
 | 0.0 | [bent](./b/bent) | Functional HTTP client for Node.js w/ async/await.
 | 0.0 | [bero](./b/bero) | A simple utility function inspired by classnames t
+| 0.0 | [bessel](./b/bessel) | Pure-JS Bessel Functions
 | 0.0 | [better-bem](./b/better-bem) | Chainable BEM classname generator with CSS Modules
 | 0.0 | [better-curry](./b/better-curry) | Forget Function.bind and func.apply(context, argum
 | 0.0 | [better-queue](./b/better-queue) | Better Queue for NodeJS
@@ -2524,6 +2525,7 @@
 | 0.0 | [events_dot_once](./e/events_dot_once) | Polyfill for Node core events.once
 | 0.0 | [eventsource](./e/eventsource) | W3C compliant EventSource client for Node.js and b
 | 0.0 | [evernote](./e/evernote) | Evernote JavaScript SDK
+| 0.0 | [ewma](./e/ewma) | Exponentially Weighted Moving Average
 | 0.0 | [ex-react-native-i18n](./e/ex-react-native-i18n) | Exponentisation of => React Native and I18n.js int
 | 0.0 | [exaroton](./e/exaroton) | exaroton API client
 | 0.0 | [excel-column-name](./e/excel-column-name) | Converts One based index to Excel Column name and 
@@ -2581,7 +2583,6 @@
 | 0.0 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 0.0 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.0 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute
-| 0.0 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.0 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 0.0 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express
 | 0.0 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
@@ -3373,7 +3374,6 @@
 | 0.0 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 0.0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
 | 0.0 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
-| 0.0 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.0 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio
 | 0.0 | [grommet](./g/grommet) | focus on the essential experience
 | 0.0 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps.
@@ -3649,6 +3649,7 @@
 | 0.0 | [hermes-profile-transforme](./h/hermes-profile-transformer) | The Hermes runtime, used by React Native for Andro
 | 0.0 | [heroku-client](./h/heroku-client) | A wrapper for the Heroku v3 API
 | 0.0 | [heroku-logger](./h/heroku-logger) | A dead simple logger, designed to be perfect for H
+| 0.0 | [hex-array](./h/hex-array) | Create Uint8Array buffers from hexadecimal strings
 | 0.0 | [hex-color-regex](./h/hex-color-regex) | The best regular expression (regex) for matching h
 | 0.0 | [hex-rgb](./h/hex-rgb) | Convert HEX color to RGBA
 | 0.0 | [hex-rgba](./h/hex-rgba) | Convert HEX to RGBA
@@ -3904,7 +3905,6 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
-| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -4937,7 +4937,6 @@
 | 0.0 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware
 | 0.0 | [koa-logger](./k/koa-logger) | Logging middleware for koa
 | 0.0 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
-| 0.0 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.0 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa
 | 0.0 | [koa-mount](./k/koa-mount) | Mounting middleware for koa
 | 0.0 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko
@@ -6196,7 +6195,6 @@
 | 0.0 | [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri
 | 0.0 | [microtime](./m/microtime) | Get the current time in microseconds
 | 0.0 | [midi](./m/midi) | MIDI hardware IO
-| 0.0 | [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node
 | 0.0 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js.
 | 0.0 | [millisecond](./m/millisecond) | Convert time strings to milliseconds
 | 0.0 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t
@@ -6320,11 +6318,8 @@
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
 | 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
-| 0.0 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
-| 0.0 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
-| 0.0 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
@@ -6666,7 +6661,6 @@
 | 0.0 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server
 | 0.0 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and
 | 0.0 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin
-| 0.0 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.0 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 0.0 | [node-netstat](./n/node-netstat) | programmatic netstat utility
 | 0.0 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays
@@ -11406,6 +11400,7 @@
 | 0.0 | [xdg-basedir](./x/xdg-basedir) | Get XDG Base Directory paths
 | 0.0 | [xdg-trashdir](./x/xdg-trashdir) | Get the correct trash path on Linux
 | 0.0 | [xdomain](./x/xdomain) | A pure JavaScript CORS alternative
+| 0.0 | [xhook](./x/xhook) | Easily intercept and modify XHR request and respon
 | 0.0 | [xhr](./x/xhr) | small xhr abstraction
 | 0.0 | [xhr-mock](./x/xhr-mock) | Utility for mocking XMLHttpRequest.
 | 0.0 | [xlsx](./x/xlsx) | SheetJS Spreadsheet data parser and writer
@@ -11486,7 +11481,6 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
-| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman

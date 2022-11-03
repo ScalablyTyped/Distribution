@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ydn-db"
-version := "1.0-dt-20211202Z-286f21"
+version := "1.0-dt-20221103Z-286f21"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "peer-dial"
-version := "0.0-dt-20211202Z-a49d55"
+version := "0.0-dt-20211202Z-c19913"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "node-uuid" % "0.0-unknown-dt-20220818Z-758622",
+  "org.scalablytyped" %%% "node-uuid" % "0.0-unknown-dt-20221103Z-758622",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
   "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-3b575f",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

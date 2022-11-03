@@ -132,7 +132,7 @@ object sapFCardsBaseHeaderMod {
     def destroyToolbar(): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.89)
+      * @EXPERIMENTAL (since 1.89) - this feature is experimental and the API may change.
       *
       * Gets current value of property {@link #getDataTimestamp dataTimestamp}.
       *
@@ -178,7 +178,7 @@ object sapFCardsBaseHeaderMod {
        with ControlSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.89)
+      * @EXPERIMENTAL (since 1.89) - this feature is experimental and the API may change.
       *
       * Defines the timestamp of the oldest data in the card. Use this to show to the end user how fresh the
       * information in the card is.

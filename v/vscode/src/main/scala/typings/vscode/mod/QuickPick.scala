@@ -119,7 +119,7 @@ trait QuickPick[T /* <: QuickPickItem */]
   ): Disposable = js.native
   
   /**
-    * Optional placeholder in the filter text.
+    * Optional placeholder shown in the filter textbox when no filter has been entered.
     */
   var placeholder: js.UndefOr[String] = js.native
   

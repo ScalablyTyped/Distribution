@@ -40,7 +40,9 @@ object libTypescriptElementsLinearGradientMod {
     
     var children: js.UndefOr[js.Array[ReactElement]] = js.undefined
     
-    var gradientTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
+    var gradientTransform: js.UndefOr[
+        ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ] = js.undefined
     
     var gradientUnits: js.UndefOr[Units] = js.undefined
     
@@ -69,7 +71,9 @@ object libTypescriptElementsLinearGradientMod {
       
       inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
-      inline def setGradientTransform(value: ColumnMajorTransformMatrix | String): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+      inline def setGradientTransform(
+        value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
       
       inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
       

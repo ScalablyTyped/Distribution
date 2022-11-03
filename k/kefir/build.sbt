@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kefir"
-version := "3.8.1-dt-20220818Z-b121eb"
+version := "3.8.1-dt-20221103Z-b121eb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

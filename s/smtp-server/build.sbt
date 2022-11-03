@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smtp-server"
-version := "3.5-dt-20220819Z-6480a2"
+version := "3.5-dt-20221103Z-6480a2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

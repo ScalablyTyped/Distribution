@@ -278,7 +278,7 @@ object sapFGridListMod {
     iColumn: int
     ): Unit = js.native
     /**
-      * @EXPERIMENTAL (since 1.87)
+      * @EXPERIMENTAL (since 1.87) - Behavior might change.
       *
       * Focuses an item in the given direction - up, down, left or right, from the starting position specified
       * by row and column.

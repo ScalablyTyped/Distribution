@@ -27,7 +27,7 @@ trait CreateResponsePlanInput extends StObject {
   var displayName: js.UndefOr[ResponsePlanDisplayName] = js.undefined
   
   /**
-    * The contacts and escalation plans that the response plan engages during an incident.
+    * The Amazon Resource Name (ARN) for the contacts and escalation plans that the response plan engages during an incident.
     */
   var engagements: js.UndefOr[EngagementSet] = js.undefined
   

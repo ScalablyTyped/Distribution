@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DangerDisabled[BaseToken] extends StObject {
   
-  var brand: `4`[BaseToken]
+  var brand: `8`[BaseToken]
   
   var danger: DefaultDefaultHoveredPressed[BaseToken]
   
@@ -32,7 +32,7 @@ trait DangerDisabled[BaseToken] extends StObject {
 object DangerDisabled {
   
   inline def apply[BaseToken](
-    brand: `4`[BaseToken],
+    brand: `8`[BaseToken],
     danger: DefaultDefaultHoveredPressed[BaseToken],
     disabled: PaintToken[BaseToken],
     discovery: DefaultDefaultHoveredPressed[BaseToken],
@@ -50,7 +50,7 @@ object DangerDisabled {
   
   extension [Self <: DangerDisabled[?], BaseToken](x: Self & DangerDisabled[BaseToken]) {
     
-    inline def setBrand(value: `4`[BaseToken]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: `8`[BaseToken]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     inline def setDanger(value: DefaultDefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
     

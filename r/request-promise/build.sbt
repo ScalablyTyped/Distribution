@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "request-promise"
-version := "4.1-dt-20211202Z-b14329"
+version := "4.1-dt-20211202Z-e2171a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220923Z-5a7a5b",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-5a7a5b",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20220624Z-d571e9",
   "org.scalablytyped" %%% "form-data" % "4.0.0-7ba683",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",

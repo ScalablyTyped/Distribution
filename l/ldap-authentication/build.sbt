@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ldap-authentication"
-version := "2.2-dt-20220713Z-3139a5"
+version := "2.2-dt-20220713Z-a4e3de"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ldapjs" % "2.2-dt-20221101Z-afa704",
+  "org.scalablytyped" %%% "ldapjs" % "2.2-dt-20221103Z-afa704",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -1716,7 +1716,8 @@ object sapUiModelOdataV2OdatamodelMod {
       * topic:6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating Entities documentation}
       * for comprehensive information on the topic.
       *
-      * Please note that deep creates are not supported and may not work.
+      * **Note:** This function does not support a "deep create" scenario. Use {@link #createEntry} or {@link
+      * sap.ui.model.odata.v2.ODataListBinding#create} instead.
       *
       * @returns An object which has an `abort` function to abort the current request.
       */
@@ -2024,9 +2025,14 @@ object sapUiModelOdataV2OdatamodelMod {
       * for example if the server requires a unit for an amount. This also applies if this property has a default
       * value.
       *
-      * Note: A deep create (including data defined by navigation properties) is not supported. The dependent
-      * entity has to be created using a second list binding, after this entity has been saved successfully in
-      * the back-end system.
+      * Note: Deep create is only supported since 1.108.0, where "deep create" means creation of a sub-entity
+      * for a navigation property of a transient, not yet persisted root entity. Before 1.108.0, the sub-entity
+      * had to be created after the transient entity had been saved successfully in the back-end system. Since
+      * 1.108.0, a deep create is triggered when the `sPath` parameter is a navigation property for the entity
+      * type associated with the transient context given in `mParameters.context`. The payload of the OData request
+      * to create the root entity then contains its sub-entities. On creation of a sub-entity, only the `sPath`,
+      * `mParameters.context` and `mParameters.properties` method parameters are allowed; the context given in
+      * `mParameters.context` must not be inactive.
       *
       * @returns An OData V2 context object that points to the newly created entry; or `undefined` if the service
       * metadata are not yet loaded or if a `created` callback parameter is given

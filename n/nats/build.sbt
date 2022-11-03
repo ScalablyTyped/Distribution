@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nats"
-version := "2.8.0-a43f28"
+version := "2.9.0-613f7c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

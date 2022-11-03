@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-ratelimit"
-version := "5.0-dt-20221026Z-4ef0c6"
+version := "5.0-dt-20221026Z-fb7cd4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "denque" % "2.1.0-758dab",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
-  "org.scalablytyped" %%% "ioredis" % "5.2.3-4f6339",
+  "org.scalablytyped" %%% "ioredis" % "5.2.4-211d4e",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20211202Z-ff8589",
   "org.scalablytyped" %%% "koa" % "2.13.1-dt-20220818Z-a193a1",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",

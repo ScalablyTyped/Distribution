@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fibjs"
-version := "0.26-dt-20211202Z-cabb6c"
+version := "0.26-dt-20221103Z-cabb6c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

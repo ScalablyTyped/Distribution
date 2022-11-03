@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "traverse"
-version := "0.6.7-dt-20220818Z-bac882"
+version := "0.6.7-dt-20221103Z-bac882"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

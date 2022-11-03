@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResourcePoliciesInput extends StObject {
   
   /**
-    * The maximum number of resource policies to display per page of results.
+    * The maximum number of resource policies to display for each page of results.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   

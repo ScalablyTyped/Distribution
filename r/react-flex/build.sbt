@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-flex"
-version := "v2.2.7-dt-20220818Z-2e42a2"
+version := "v2.2.7-dt-20221103Z-2e42a2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

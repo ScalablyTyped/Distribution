@@ -1,7 +1,7 @@
 
 # Scala.js typings for long
 
-Typings are for version 5.2.0
+Typings are for version 5.2.1
 
 ## Library description:
 A Long class for representing a 64-bit two's-complement integer value.

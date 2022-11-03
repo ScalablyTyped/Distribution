@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IgnoreIfNotExists extends StObject {
   
-  var ignoreIfNotExists: js.UndefOr[Boolean] = js.undefined
+  val ignoreIfNotExists: js.UndefOr[Boolean] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.undefined
+  val recursive: js.UndefOr[Boolean] = js.undefined
 }
 object IgnoreIfNotExists {
   

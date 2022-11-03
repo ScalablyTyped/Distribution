@@ -4,6 +4,7 @@ import typings.openui5.anon.NotVisible
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCoreCalendarTypeMod.CalendarType
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.std.Record
@@ -462,6 +463,18 @@ object sapUiUnifiedCalendarTimesRowMod {
     def getLegend(): ID = js.native
     
     /**
+      * @SINCE 1.108.0
+      *
+      * Gets current value of property {@link #getPrimaryCalendarType primaryCalendarType}.
+      *
+      * If set, the calendar type is used for display. If not set, the calendar type of the global configuration
+      * is used.
+      *
+      * @returns Value of property `primaryCalendarType`
+      */
+    def getPrimaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
+    
+    /**
       * Gets content of aggregation {@link #getSelectedDates selectedDates}.
       *
       * Date ranges for selected dates. If `singleSelection` is set, only the first entry is used.
@@ -753,6 +766,30 @@ object sapUiUnifiedCalendarTimesRowMod {
     ): this.type = js.native
     
     /**
+      * @SINCE 1.108.0
+      *
+      * Sets a new value for property {@link #getPrimaryCalendarType primaryCalendarType}.
+      *
+      * If set, the calendar type is used for display. If not set, the calendar type of the global configuration
+      * is used.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setPrimaryCalendarType(): this.type = js.native
+    def setPrimaryCalendarType(
+      /**
+      * New value for property `primaryCalendarType`
+      */
+    sPrimaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
+    ): this.type = js.native
+    def setPrimaryCalendarType(/**
+      * New value for property `primaryCalendarType`
+      */
+    sPrimaryCalendarType: CalendarType): this.type = js.native
+    
+    /**
       * Sets a new value for property {@link #getShowHeader showHeader}.
       *
       * If set, a header with the years is shown to visualize what month belongs to what year.
@@ -860,6 +897,16 @@ object sapUiUnifiedCalendarTimesRowMod {
     var legend: js.UndefOr[typings.openui5.sapUiUnifiedCalendarLegendMod.default | String] = js.undefined
     
     /**
+      * @SINCE 1.108.0
+      *
+      * If set, the calendar type is used for display. If not set, the calendar type of the global configuration
+      * is used.
+      */
+    var primaryCalendarType: js.UndefOr[
+        CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * Time selection changed
       */
     var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
@@ -940,6 +987,12 @@ object sapUiUnifiedCalendarTimesRowMod {
       inline def setLegend(value: typings.openui5.sapUiUnifiedCalendarLegendMod.default | String): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
       inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+      
+      inline def setPrimaryCalendarType(
+        value: CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "primaryCalendarType", value.asInstanceOf[js.Any])
+      
+      inline def setPrimaryCalendarTypeUndefined: Self = StObject.set(x, "primaryCalendarType", js.undefined)
       
       inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       

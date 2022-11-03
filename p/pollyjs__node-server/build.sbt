@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "pollyjs__node-server"
-version := "6.0.1-0199b5"
+version := "6.0.1-13de2f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20211202Z-534f18",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20221103Z-534f18",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",

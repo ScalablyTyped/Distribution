@@ -3,7 +3,7 @@ package typings.reactNativeSvg
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.reactNative.mod.NativeMethods
-import typings.reactNativeSvg.anon.Objectmatrixnumbernumbern
+import typings.reactNativeSvg.anon.ObjectmatrixColumnMajorTr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -289,6 +289,6 @@ object libTypescriptElementsShapeMod {
     
     var root: (Shape[P] & NativeMethods) | Null = js.native
     
-    def setNativeProps(props: Objectmatrixnumbernumbern): Unit = js.native
+    def setNativeProps(props: ObjectmatrixColumnMajorTr): Unit = js.native
   }
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDeletionProtectionInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the replication set you're updating.
+    * The Amazon Resource Name (ARN) of the replication set to update.
     */
   var arn: Arn
   
   /**
-    * A token ensuring that the operation is called only once with the specified details.
+    * A token that ensures that the operation is called only once with the specified details.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * Details if deletion protection is enabled or disabled in your account.
+    * Specifies if deletion protection is turned on or off in your account. 
     */
   var deletionProtected: Boolean
 }

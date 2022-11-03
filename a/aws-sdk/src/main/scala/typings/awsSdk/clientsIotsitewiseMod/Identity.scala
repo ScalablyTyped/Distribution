@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Identity extends StObject {
   
   /**
-    * An Amazon Web Services SSO group identity.
+    * An IAM Identity Center group identity.
     */
   var group: js.UndefOr[GroupIdentity] = js.undefined
   
@@ -22,7 +22,7 @@ trait Identity extends StObject {
   var iamUser: js.UndefOr[IAMUserIdentity] = js.undefined
   
   /**
-    * An Amazon Web Services SSO user identity.
+    * An IAM Identity Center user identity.
     */
   var user: js.UndefOr[UserIdentity] = js.undefined
 }

@@ -12,6 +12,11 @@ trait AssetModelCompositeModel extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
+    *  The ID of the asset model composite model. 
+    */
+  var id: js.UndefOr[ID] = js.undefined
+  
+  /**
     * The name of the composite model.
     */
   var name: Name
@@ -39,6 +44,10 @@ object AssetModelCompositeModel {
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

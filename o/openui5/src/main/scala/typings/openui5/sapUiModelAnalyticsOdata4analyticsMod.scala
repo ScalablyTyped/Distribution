@@ -1911,7 +1911,7 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
   override def _to: odata4analytics = default
   
   /**
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - This module is only for experimental use!
     *
     * The OData4Analytics API is purely experimental, not yet functionally complete and not meant for productive
     * usage. At present, its only purpose is to demonstrate how easy analytical extensions of OData4SAP can

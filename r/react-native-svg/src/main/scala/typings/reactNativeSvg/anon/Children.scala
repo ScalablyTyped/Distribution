@@ -1,6 +1,7 @@
 package typings.reactNativeSvg.anon
 
 import typings.react.mod.ReactElement
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait Children extends StObject {
   
   var gradient: js.Array[Double]
   
-  var gradientTransform: js.Array[Double] | Null
+  var gradientTransform: ColumnMajorTransformMatrix | Null
   
   var gradientUnits: Double
   
@@ -32,11 +33,9 @@ object Children {
     
     inline def setGradient(value: js.Array[Double]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    inline def setGradientTransform(value: js.Array[Double]): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+    inline def setGradientTransform(value: ColumnMajorTransformMatrix): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
     
     inline def setGradientTransformNull: Self = StObject.set(x, "gradientTransform", null)
-    
-    inline def setGradientTransformVarargs(value: Double*): Self = StObject.set(x, "gradientTransform", js.Array(value*))
     
     inline def setGradientUnits(value: Double): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
     

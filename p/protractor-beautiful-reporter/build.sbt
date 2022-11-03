@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "protractor-beautiful-reporter"
-version := "1.3-dt-20220831Z-b2ab31"
+version := "1.3-dt-20220831Z-f6d65c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jasmine" % "4.3-dt-20220823Z-6c26a4",
+  "org.scalablytyped" %%% "jasmine" % "4.3-dt-20221103Z-6c26a4",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221101Z-107dc9",
   "org.scalablytyped" %%% "std" % "4.8-837c43",

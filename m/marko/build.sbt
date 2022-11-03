@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "marko"
-version := "4.6-dt-20211202Z-9bef5f"
+version := "4.6-dt-20211202Z-85b59c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "async-writer" % "1.4.1-dt-20220913Z-713224",
+  "org.scalablytyped" %%% "async-writer" % "1.4.1-dt-20221103Z-713224",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",

@@ -1,5 +1,8 @@
 package typings.reactNativeSvg.anon
 
+import typings.react.mod.MutableRefObject
+import typings.react.mod.RefCallback
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
 import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.BlurEvent
@@ -7,6 +10,7 @@ import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.EdgeInsetsPro
 import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.FocusEvent
 import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.LayoutEvent
 import typings.reactNativeSvg.libTypescriptReactNativeSVGDotwebMod.PressEvent
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,6 +46,12 @@ trait BasePropsxNumberPropundef extends StObject {
   
   var fontWeight: js.UndefOr[NumberProp] = js.undefined
   
+  var forwardedRef: js.UndefOr[RefCallback[SVGElement] | (MutableRefObject[SVGElement | Null])] = js.undefined
+  
+  var gradientTransform: js.UndefOr[
+    ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+  ] = js.undefined
+  
   var hitSlop: js.UndefOr[EdgeInsetsProp] = js.undefined
   
   var nativeID: js.UndefOr[String] = js.undefined
@@ -62,31 +72,45 @@ trait BasePropsxNumberPropundef extends StObject {
   
   var onPressOut: js.UndefOr[js.Function1[/* event */ PressEvent, js.Object]] = js.undefined
   
-  var originX: NumberProp
+  var origin: js.UndefOr[NumberArray] = js.undefined
   
-  var originY: NumberProp
+  var originX: js.UndefOr[NumberProp] = js.undefined
+  
+  var originY: js.UndefOr[NumberProp] = js.undefined
+  
+  var patternTransform: js.UndefOr[
+    ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+  ] = js.undefined
   
   var pressRetentionOffset: js.UndefOr[EdgeInsetsProp] = js.undefined
   
   var rejectResponderTermination: js.UndefOr[Boolean] = js.undefined
   
-  var rotation: NumberArray
+  var rotation: js.UndefOr[NumberProp] = js.undefined
   
-  var scale: NumberArray
+  var scale: js.UndefOr[NumberArray] = js.undefined
   
-  var skewX: NumberProp
+  var scaleX: js.UndefOr[NumberProp] = js.undefined
   
-  var skewY: NumberProp
+  var scaleY: js.UndefOr[NumberProp] = js.undefined
+  
+  var skewX: js.UndefOr[NumberProp] = js.undefined
+  
+  var skewY: js.UndefOr[NumberProp] = js.undefined
   
   var style: js.Iterable[js.Object]
   
   var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var translate: NumberArray & js.UndefOr[String]
+  var transform: js.UndefOr[
+    ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+  ] = js.undefined
   
-  var translateX: NumberProp
+  var translate: js.UndefOr[NumberArray] & js.UndefOr[String]
   
-  var translateY: NumberProp
+  var translateX: js.UndefOr[NumberProp] = js.undefined
+  
+  var translateY: js.UndefOr[NumberProp] = js.undefined
   
   var x: js.UndefOr[NumberProp] = js.undefined
   
@@ -94,19 +118,8 @@ trait BasePropsxNumberPropundef extends StObject {
 }
 object BasePropsxNumberPropundef {
   
-  inline def apply(
-    originX: NumberProp,
-    originY: NumberProp,
-    rotation: NumberArray,
-    scale: NumberArray,
-    skewX: NumberProp,
-    skewY: NumberProp,
-    style: js.Iterable[js.Object],
-    translate: NumberArray & js.UndefOr[String],
-    translateX: NumberProp,
-    translateY: NumberProp
-  ): BasePropsxNumberPropundef = {
-    val __obj = js.Dynamic.literal(originX = originX.asInstanceOf[js.Any], originY = originY.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], skewX = skewX.asInstanceOf[js.Any], skewY = skewY.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any], translateX = translateX.asInstanceOf[js.Any], translateY = translateY.asInstanceOf[js.Any])
+  inline def apply(style: js.Iterable[js.Object], translate: js.UndefOr[NumberArray] & js.UndefOr[String]): BasePropsxNumberPropundef = {
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePropsxNumberPropundef]
   }
   
@@ -168,6 +181,18 @@ object BasePropsxNumberPropundef {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
+    inline def setForwardedRef(value: RefCallback[SVGElement] | (MutableRefObject[SVGElement | Null])): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
+    
+    inline def setForwardedRefFunction1(value: /* instance */ SVGElement | Null => Unit): Self = StObject.set(x, "forwardedRef", js.Any.fromFunction1(value))
+    
+    inline def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
+    
+    inline def setGradientTransform(
+      value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+    ): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+    
+    inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
+    
     inline def setHitSlop(value: EdgeInsetsProp): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
@@ -208,9 +233,25 @@ object BasePropsxNumberPropundef {
     
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
+    inline def setOrigin(value: NumberArray): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
+    inline def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value*))
+    
     inline def setOriginX(value: NumberProp): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
     
+    inline def setOriginXUndefined: Self = StObject.set(x, "originX", js.undefined)
+    
     inline def setOriginY(value: NumberProp): Self = StObject.set(x, "originY", value.asInstanceOf[js.Any])
+    
+    inline def setOriginYUndefined: Self = StObject.set(x, "originY", js.undefined)
+    
+    inline def setPatternTransform(
+      value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+    ): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
+    
+    inline def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
     
     inline def setPressRetentionOffset(value: EdgeInsetsProp): Self = StObject.set(x, "pressRetentionOffset", value.asInstanceOf[js.Any])
     
@@ -220,17 +261,31 @@ object BasePropsxNumberPropundef {
     
     inline def setRejectResponderTerminationUndefined: Self = StObject.set(x, "rejectResponderTermination", js.undefined)
     
-    inline def setRotation(value: NumberArray): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: NumberProp): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    inline def setRotationVarargs(value: NumberProp*): Self = StObject.set(x, "rotation", js.Array(value*))
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     inline def setScale(value: NumberArray): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
     inline def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value*))
+    
+    inline def setScaleX(value: NumberProp): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    
+    inline def setScaleY(value: NumberProp): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    
+    inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
     inline def setSkewX(value: NumberProp): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
     
+    inline def setSkewXUndefined: Self = StObject.set(x, "skewX", js.undefined)
+    
     inline def setSkewY(value: NumberProp): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
+    
+    inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
     
     inline def setStyle(value: js.Iterable[js.Object]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -238,11 +293,21 @@ object BasePropsxNumberPropundef {
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     
-    inline def setTranslate(value: NumberArray & js.UndefOr[String]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTransform(
+      value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+    ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    inline def setTranslate(value: js.UndefOr[NumberArray] & js.UndefOr[String]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setTranslateX(value: NumberProp): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
+    inline def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
+    
     inline def setTranslateY(value: NumberProp): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+    
+    inline def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
     
     inline def setX(value: NumberProp): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

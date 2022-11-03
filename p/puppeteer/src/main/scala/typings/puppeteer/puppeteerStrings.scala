@@ -3461,6 +3461,10 @@ object puppeteerStrings {
   inline def WebAuthnDotsetAutomaticPresenceSimulation: WebAuthnDotsetAutomaticPresenceSimulation = "WebAuthn.setAutomaticPresenceSimulation".asInstanceOf[WebAuthnDotsetAutomaticPresenceSimulation]
   
   @js.native
+  sealed trait WebAuthnDotsetResponseOverrideBits extends StObject
+  inline def WebAuthnDotsetResponseOverrideBits: WebAuthnDotsetResponseOverrideBits = "WebAuthn.setResponseOverrideBits".asInstanceOf[WebAuthnDotsetResponseOverrideBits]
+  
+  @js.native
   sealed trait WebAuthnDotsetUserVerified extends StObject
   inline def WebAuthnDotsetUserVerified: WebAuthnDotsetUserVerified = "WebAuthn.setUserVerified".asInstanceOf[WebAuthnDotsetUserVerified]
   

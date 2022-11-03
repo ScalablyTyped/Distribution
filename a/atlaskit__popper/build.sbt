@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__popper"
-version := "5.2.9-ca96b5"
+version := "5.2.10-a6240d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

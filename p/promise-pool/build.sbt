@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "promise-pool"
-version := "0.0-unknown-dt-20220818Z-b2de0f"
+version := "0.0-unknown-dt-20221103Z-b2de0f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

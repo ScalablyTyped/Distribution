@@ -201,7 +201,31 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-card`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-container-gutter`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-2`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-4`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-6`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-8`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-32`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-40`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-48`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-12`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-16`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-20`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-24`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-12`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-16`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-20`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-24`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-2`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-4`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-6`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-8`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-32`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-40`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-64`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-300`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-blue`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-gray`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-green`
@@ -228,6 +252,9 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-discovery`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-300`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-inverse-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-inverse-pressed`
@@ -239,6 +266,18 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-opacity-loading`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-hover`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-12`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-16`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-20`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-24`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-2`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-32`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-40`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-48`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-4`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-6`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-8`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-025`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-050`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-075`
@@ -251,9 +290,33 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-300`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-400`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-500`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-1000`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-1100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-700`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-800`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-900`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overlay`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-raised`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-large`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-medium`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-none`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-small`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xlarge`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xsmall`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxSmall`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxlarge`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxSmall`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxlarge`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxxSmall`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxxlarge`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-skeleton-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-skeleton`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-surface-hovered`
@@ -1177,8 +1240,125 @@ trait ColoraccentboldBlue extends StObject {
   @JSName("shadow.overlay")
   val shadowDotoverlay: `--ds-overlay`
   
-  @JSName("spacing.container.gutter")
-  val spacingDotcontainerDotgutter: `--ds-container-gutter`
+  @JSName("spacing.ccc.component.2")
+  val spacingDotcccDotcomponentDot2: `--ds-ccc-component-2`
+  
+  @JSName("spacing.ccc.component.4")
+  val spacingDotcccDotcomponentDot4: `--ds-ccc-component-4`
+  
+  @JSName("spacing.ccc.component.6")
+  val spacingDotcccDotcomponentDot6: `--ds-ccc-component-6`
+  
+  @JSName("spacing.ccc.component.8")
+  val spacingDotcccDotcomponentDot8: `--ds-ccc-component-8`
+  
+  @JSName("spacing.ccc.container.32")
+  val spacingDotcccDotcontainerDot32: `--ds-ccc-container-32`
+  
+  @JSName("spacing.ccc.container.40")
+  val spacingDotcccDotcontainerDot40: `--ds-ccc-container-40`
+  
+  @JSName("spacing.ccc.container.48")
+  val spacingDotcccDotcontainerDot48: `--ds-ccc-container-48`
+  
+  @JSName("spacing.ccc.content.12")
+  val spacingDotcccDotcontentDot12: `--ds-ccc-content-12`
+  
+  @JSName("spacing.ccc.content.16")
+  val spacingDotcccDotcontentDot16: `--ds-ccc-content-16`
+  
+  @JSName("spacing.ccc.content.20")
+  val spacingDotcccDotcontentDot20: `--ds-ccc-content-20`
+  
+  @JSName("spacing.ccc.content.24")
+  val spacingDotcccDotcontentDot24: `--ds-ccc-content-24`
+  
+  @JSName("spacing.ecl.container.12")
+  val spacingDoteclDotcontainerDot12: `--ds-ecl-container-12`
+  
+  @JSName("spacing.ecl.container.16")
+  val spacingDoteclDotcontainerDot16: `--ds-ecl-container-16`
+  
+  @JSName("spacing.ecl.container.20")
+  val spacingDoteclDotcontainerDot20: `--ds-ecl-container-20`
+  
+  @JSName("spacing.ecl.container.24")
+  val spacingDoteclDotcontainerDot24: `--ds-ecl-container-24`
+  
+  @JSName("spacing.ecl.element.2")
+  val spacingDoteclDotelementDot2: `--ds-ecl-element-2`
+  
+  @JSName("spacing.ecl.element.4")
+  val spacingDoteclDotelementDot4: `--ds-ecl-element-4`
+  
+  @JSName("spacing.ecl.element.6")
+  val spacingDoteclDotelementDot6: `--ds-ecl-element-6`
+  
+  @JSName("spacing.ecl.element.8")
+  val spacingDoteclDotelementDot8: `--ds-ecl-element-8`
+  
+  @JSName("spacing.ecl.layout.32")
+  val spacingDoteclDotlayoutDot32: `--ds-ecl-layout-32`
+  
+  @JSName("spacing.ecl.layout.40")
+  val spacingDoteclDotlayoutDot40: `--ds-ecl-layout-40`
+  
+  @JSName("spacing.ecl.layout.64")
+  val spacingDoteclDotlayoutDot64: `--ds-ecl-layout-64`
+  
+  @JSName("spacing.gap.100")
+  val spacingDotgapDot100: `--ds-gap-100`
+  
+  @JSName("spacing.gap.200")
+  val spacingDotgapDot200: `--ds-gap-200`
+  
+  @JSName("spacing.gap.300")
+  val spacingDotgapDot300: `--ds-gap-300`
+  
+  @JSName("spacing.inset.100")
+  val spacingDotinsetDot100: `--ds-inset-100`
+  
+  @JSName("spacing.inset.200")
+  val spacingDotinsetDot200: `--ds-inset-200`
+  
+  @JSName("spacing.inset.300")
+  val spacingDotinsetDot300: `--ds-inset-300`
+  
+  @JSName("spacing.pixel.0")
+  val spacingDotpixelDot0: `--ds-pixel-0`
+  
+  @JSName("spacing.pixel.12")
+  val spacingDotpixelDot12: `--ds-pixel-12`
+  
+  @JSName("spacing.pixel.16")
+  val spacingDotpixelDot16: `--ds-pixel-16`
+  
+  @JSName("spacing.pixel.2")
+  val spacingDotpixelDot2: `--ds-pixel-2`
+  
+  @JSName("spacing.pixel.20")
+  val spacingDotpixelDot20: `--ds-pixel-20`
+  
+  @JSName("spacing.pixel.24")
+  val spacingDotpixelDot24: `--ds-pixel-24`
+  
+  @JSName("spacing.pixel.32")
+  val spacingDotpixelDot32: `--ds-pixel-32`
+  
+  @JSName("spacing.pixel.4")
+  val spacingDotpixelDot4: `--ds-pixel-4`
+  
+  @JSName("spacing.pixel.40")
+  val spacingDotpixelDot40: `--ds-pixel-40`
+  
+  @JSName("spacing.pixel.48")
+  val spacingDotpixelDot48: `--ds-pixel-48`
+  
+  @JSName("spacing.pixel.6")
+  val spacingDotpixelDot6: `--ds-pixel-6`
+  
+  @JSName("spacing.pixel.8")
+  val spacingDotpixelDot8: `--ds-pixel-8`
   
   @JSName("spacing.scale.0")
   val spacingDotscaleDot0: `--ds-scale-0`
@@ -1215,6 +1395,78 @@ trait ColoraccentboldBlue extends StObject {
   
   @JSName("spacing.scale.600")
   val spacingDotscaleDot600: `--ds-scale-600`
+  
+  @JSName("spacing.scaleLinear.0")
+  val spacingDotscaleLinearDot0: `--ds-scaleLinear-0`
+  
+  @JSName("spacing.scaleLinear.100")
+  val spacingDotscaleLinearDot100: `--ds-scaleLinear-100`
+  
+  @JSName("spacing.scaleLinear.1000")
+  val spacingDotscaleLinearDot1000: `--ds-scaleLinear-1000`
+  
+  @JSName("spacing.scaleLinear.1100")
+  val spacingDotscaleLinearDot1100: `--ds-scaleLinear-1100`
+  
+  @JSName("spacing.scaleLinear.200")
+  val spacingDotscaleLinearDot200: `--ds-scaleLinear-200`
+  
+  @JSName("spacing.scaleLinear.300")
+  val spacingDotscaleLinearDot300: `--ds-scaleLinear-300`
+  
+  @JSName("spacing.scaleLinear.400")
+  val spacingDotscaleLinearDot400: `--ds-scaleLinear-400`
+  
+  @JSName("spacing.scaleLinear.500")
+  val spacingDotscaleLinearDot500: `--ds-scaleLinear-500`
+  
+  @JSName("spacing.scaleLinear.600")
+  val spacingDotscaleLinearDot600: `--ds-scaleLinear-600`
+  
+  @JSName("spacing.scaleLinear.700")
+  val spacingDotscaleLinearDot700: `--ds-scaleLinear-700`
+  
+  @JSName("spacing.scaleLinear.800")
+  val spacingDotscaleLinearDot800: `--ds-scaleLinear-800`
+  
+  @JSName("spacing.scaleLinear.900")
+  val spacingDotscaleLinearDot900: `--ds-scaleLinear-900`
+  
+  @JSName("spacing.size.large")
+  val spacingDotsizeDotlarge: `--ds-size-large`
+  
+  @JSName("spacing.size.medium")
+  val spacingDotsizeDotmedium: `--ds-size-medium`
+  
+  @JSName("spacing.size.none")
+  val spacingDotsizeDotnone: `--ds-size-none`
+  
+  @JSName("spacing.size.small")
+  val spacingDotsizeDotsmall: `--ds-size-small`
+  
+  @JSName("spacing.size.xlarge")
+  val spacingDotsizeDotxlarge: `--ds-size-xlarge`
+  
+  @JSName("spacing.size.xsmall")
+  val spacingDotsizeDotxsmall: `--ds-size-xsmall`
+  
+  @JSName("spacing.size.xxSmall")
+  val spacingDotsizeDotxxSmall: `--ds-size-xxSmall`
+  
+  @JSName("spacing.size.xxlarge")
+  val spacingDotsizeDotxxlarge: `--ds-size-xxlarge`
+  
+  @JSName("spacing.size.xxxSmall")
+  val spacingDotsizeDotxxxSmall: `--ds-size-xxxSmall`
+  
+  @JSName("spacing.size.xxxlarge")
+  val spacingDotsizeDotxxxlarge: `--ds-size-xxxlarge`
+  
+  @JSName("spacing.size.xxxxSmall")
+  val spacingDotsizeDotxxxxSmall: `--ds-size-xxxxSmall`
+  
+  @JSName("spacing.size.xxxxlarge")
+  val spacingDotsizeDotxxxxlarge: `--ds-size-xxxxlarge`
   
   @JSName("utility.UNSAFE_util.MISSING_TOKEN")
   val utilityDotUNSAFE_utilDotMISSING_TOKEN: `--ds-UNSAFE_util-MISSING_TOKEN`
@@ -2063,7 +2315,85 @@ object ColoraccentboldBlue {
     
     inline def setShadowDotoverlay(value: `--ds-overlay`): Self = StObject.set(x, "shadow.overlay", value.asInstanceOf[js.Any])
     
-    inline def setSpacingDotcontainerDotgutter(value: `--ds-container-gutter`): Self = StObject.set(x, "spacing.container.gutter", value.asInstanceOf[js.Any])
+    inline def setSpacingDotcccDotcomponentDot2(value: `--ds-ccc-component-2`): Self = StObject.set(x, "spacing.ccc.component.2", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcomponentDot4(value: `--ds-ccc-component-4`): Self = StObject.set(x, "spacing.ccc.component.4", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcomponentDot6(value: `--ds-ccc-component-6`): Self = StObject.set(x, "spacing.ccc.component.6", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcomponentDot8(value: `--ds-ccc-component-8`): Self = StObject.set(x, "spacing.ccc.component.8", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcontainerDot32(value: `--ds-ccc-container-32`): Self = StObject.set(x, "spacing.ccc.container.32", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcontainerDot40(value: `--ds-ccc-container-40`): Self = StObject.set(x, "spacing.ccc.container.40", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcontainerDot48(value: `--ds-ccc-container-48`): Self = StObject.set(x, "spacing.ccc.container.48", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcontentDot12(value: `--ds-ccc-content-12`): Self = StObject.set(x, "spacing.ccc.content.12", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcontentDot16(value: `--ds-ccc-content-16`): Self = StObject.set(x, "spacing.ccc.content.16", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcontentDot20(value: `--ds-ccc-content-20`): Self = StObject.set(x, "spacing.ccc.content.20", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcccDotcontentDot24(value: `--ds-ccc-content-24`): Self = StObject.set(x, "spacing.ccc.content.24", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotcontainerDot12(value: `--ds-ecl-container-12`): Self = StObject.set(x, "spacing.ecl.container.12", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotcontainerDot16(value: `--ds-ecl-container-16`): Self = StObject.set(x, "spacing.ecl.container.16", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotcontainerDot20(value: `--ds-ecl-container-20`): Self = StObject.set(x, "spacing.ecl.container.20", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotcontainerDot24(value: `--ds-ecl-container-24`): Self = StObject.set(x, "spacing.ecl.container.24", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotelementDot2(value: `--ds-ecl-element-2`): Self = StObject.set(x, "spacing.ecl.element.2", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotelementDot4(value: `--ds-ecl-element-4`): Self = StObject.set(x, "spacing.ecl.element.4", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotelementDot6(value: `--ds-ecl-element-6`): Self = StObject.set(x, "spacing.ecl.element.6", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotelementDot8(value: `--ds-ecl-element-8`): Self = StObject.set(x, "spacing.ecl.element.8", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotlayoutDot32(value: `--ds-ecl-layout-32`): Self = StObject.set(x, "spacing.ecl.layout.32", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotlayoutDot40(value: `--ds-ecl-layout-40`): Self = StObject.set(x, "spacing.ecl.layout.40", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDoteclDotlayoutDot64(value: `--ds-ecl-layout-64`): Self = StObject.set(x, "spacing.ecl.layout.64", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotgapDot100(value: `--ds-gap-100`): Self = StObject.set(x, "spacing.gap.100", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotgapDot200(value: `--ds-gap-200`): Self = StObject.set(x, "spacing.gap.200", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotgapDot300(value: `--ds-gap-300`): Self = StObject.set(x, "spacing.gap.300", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotinsetDot100(value: `--ds-inset-100`): Self = StObject.set(x, "spacing.inset.100", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotinsetDot200(value: `--ds-inset-200`): Self = StObject.set(x, "spacing.inset.200", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotinsetDot300(value: `--ds-inset-300`): Self = StObject.set(x, "spacing.inset.300", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot0(value: `--ds-pixel-0`): Self = StObject.set(x, "spacing.pixel.0", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot12(value: `--ds-pixel-12`): Self = StObject.set(x, "spacing.pixel.12", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot16(value: `--ds-pixel-16`): Self = StObject.set(x, "spacing.pixel.16", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot2(value: `--ds-pixel-2`): Self = StObject.set(x, "spacing.pixel.2", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot20(value: `--ds-pixel-20`): Self = StObject.set(x, "spacing.pixel.20", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot24(value: `--ds-pixel-24`): Self = StObject.set(x, "spacing.pixel.24", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot32(value: `--ds-pixel-32`): Self = StObject.set(x, "spacing.pixel.32", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot4(value: `--ds-pixel-4`): Self = StObject.set(x, "spacing.pixel.4", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot40(value: `--ds-pixel-40`): Self = StObject.set(x, "spacing.pixel.40", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot48(value: `--ds-pixel-48`): Self = StObject.set(x, "spacing.pixel.48", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot6(value: `--ds-pixel-6`): Self = StObject.set(x, "spacing.pixel.6", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotpixelDot8(value: `--ds-pixel-8`): Self = StObject.set(x, "spacing.pixel.8", value.asInstanceOf[js.Any])
     
     inline def setSpacingDotscaleDot0(value: `--ds-scale-0`): Self = StObject.set(x, "spacing.scale.0", value.asInstanceOf[js.Any])
     
@@ -2088,6 +2418,54 @@ object ColoraccentboldBlue {
     inline def setSpacingDotscaleDot500(value: `--ds-scale-500`): Self = StObject.set(x, "spacing.scale.500", value.asInstanceOf[js.Any])
     
     inline def setSpacingDotscaleDot600(value: `--ds-scale-600`): Self = StObject.set(x, "spacing.scale.600", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot0(value: `--ds-scaleLinear-0`): Self = StObject.set(x, "spacing.scaleLinear.0", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot100(value: `--ds-scaleLinear-100`): Self = StObject.set(x, "spacing.scaleLinear.100", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot1000(value: `--ds-scaleLinear-1000`): Self = StObject.set(x, "spacing.scaleLinear.1000", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot1100(value: `--ds-scaleLinear-1100`): Self = StObject.set(x, "spacing.scaleLinear.1100", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot200(value: `--ds-scaleLinear-200`): Self = StObject.set(x, "spacing.scaleLinear.200", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot300(value: `--ds-scaleLinear-300`): Self = StObject.set(x, "spacing.scaleLinear.300", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot400(value: `--ds-scaleLinear-400`): Self = StObject.set(x, "spacing.scaleLinear.400", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot500(value: `--ds-scaleLinear-500`): Self = StObject.set(x, "spacing.scaleLinear.500", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot600(value: `--ds-scaleLinear-600`): Self = StObject.set(x, "spacing.scaleLinear.600", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot700(value: `--ds-scaleLinear-700`): Self = StObject.set(x, "spacing.scaleLinear.700", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot800(value: `--ds-scaleLinear-800`): Self = StObject.set(x, "spacing.scaleLinear.800", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleLinearDot900(value: `--ds-scaleLinear-900`): Self = StObject.set(x, "spacing.scaleLinear.900", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotlarge(value: `--ds-size-large`): Self = StObject.set(x, "spacing.size.large", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotmedium(value: `--ds-size-medium`): Self = StObject.set(x, "spacing.size.medium", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotnone(value: `--ds-size-none`): Self = StObject.set(x, "spacing.size.none", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotsmall(value: `--ds-size-small`): Self = StObject.set(x, "spacing.size.small", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotxlarge(value: `--ds-size-xlarge`): Self = StObject.set(x, "spacing.size.xlarge", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotxsmall(value: `--ds-size-xsmall`): Self = StObject.set(x, "spacing.size.xsmall", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotxxSmall(value: `--ds-size-xxSmall`): Self = StObject.set(x, "spacing.size.xxSmall", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotxxlarge(value: `--ds-size-xxlarge`): Self = StObject.set(x, "spacing.size.xxlarge", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotxxxSmall(value: `--ds-size-xxxSmall`): Self = StObject.set(x, "spacing.size.xxxSmall", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotxxxlarge(value: `--ds-size-xxxlarge`): Self = StObject.set(x, "spacing.size.xxxlarge", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotxxxxSmall(value: `--ds-size-xxxxSmall`): Self = StObject.set(x, "spacing.size.xxxxSmall", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotsizeDotxxxxlarge(value: `--ds-size-xxxxlarge`): Self = StObject.set(x, "spacing.size.xxxxlarge", value.asInstanceOf[js.Any])
     
     inline def setUtilityDotUNSAFE_utilDotMISSING_TOKEN(value: `--ds-UNSAFE_util-MISSING_TOKEN`): Self = StObject.set(x, "utility.UNSAFE_util.MISSING_TOKEN", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress__components"
-version := "19.10-dt-20220829Z-935d1b"
+version := "19.10-dt-20220829Z-014396"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20211202Z-d3d306",
-  "org.scalablytyped" %%% "wordpress__element" % "4.18.0-b7a3c6",
+  "org.scalablytyped" %%% "wordpress__element" % "4.19.0-fe3504",
   "org.scalablytyped" %%% "wordpress__notices" % "3.5-dt-20220601Z-e83925",
   "org.scalablytyped" %%% "wordpress__rich-text" % "3.4-dt-20211202Z-63f67e")
 publishArtifact in packageDoc := false

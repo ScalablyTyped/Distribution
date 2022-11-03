@@ -5,10 +5,13 @@ import typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTy
 import typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesMod.ActiveTokens
 import typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
 import typings.atlaskitTokens.distTypesPalettesSpacingScaleMod.ScaleValues
+import typings.atlaskitTokens.distTypesThemeConfigMod.Palettes
+import typings.atlaskitTokens.distTypesThemeConfigMod.ThemeColorModes
+import typings.atlaskitTokens.distTypesThemeConfigMod.ThemeIds
+import typings.atlaskitTokens.distTypesThemeConfigMod.ThemeKinds
+import typings.atlaskitTokens.distTypesThemeConfigMod.Themes
 import typings.atlaskitTokens.distTypesTypesMod.Groups
 import typings.atlaskitTokens.distTypesTypesMod.PaletteCategory
-import typings.atlaskitTokens.distTypesTypesMod.Themes
-import typings.atlaskitTokens.distTypesTypesMod.ThemesLongName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -820,8 +823,104 @@ object atlaskitTokensStrings {
   inline def `--ds-card`: `--ds-card` = "--ds-card".asInstanceOf[`--ds-card`]
   
   @js.native
-  sealed trait `--ds-container-gutter` extends StObject
-  inline def `--ds-container-gutter`: `--ds-container-gutter` = "--ds-container-gutter".asInstanceOf[`--ds-container-gutter`]
+  sealed trait `--ds-ccc-component-2` extends StObject
+  inline def `--ds-ccc-component-2`: `--ds-ccc-component-2` = "--ds-ccc-component-2".asInstanceOf[`--ds-ccc-component-2`]
+  
+  @js.native
+  sealed trait `--ds-ccc-component-4` extends StObject
+  inline def `--ds-ccc-component-4`: `--ds-ccc-component-4` = "--ds-ccc-component-4".asInstanceOf[`--ds-ccc-component-4`]
+  
+  @js.native
+  sealed trait `--ds-ccc-component-6` extends StObject
+  inline def `--ds-ccc-component-6`: `--ds-ccc-component-6` = "--ds-ccc-component-6".asInstanceOf[`--ds-ccc-component-6`]
+  
+  @js.native
+  sealed trait `--ds-ccc-component-8` extends StObject
+  inline def `--ds-ccc-component-8`: `--ds-ccc-component-8` = "--ds-ccc-component-8".asInstanceOf[`--ds-ccc-component-8`]
+  
+  @js.native
+  sealed trait `--ds-ccc-container-32` extends StObject
+  inline def `--ds-ccc-container-32`: `--ds-ccc-container-32` = "--ds-ccc-container-32".asInstanceOf[`--ds-ccc-container-32`]
+  
+  @js.native
+  sealed trait `--ds-ccc-container-40` extends StObject
+  inline def `--ds-ccc-container-40`: `--ds-ccc-container-40` = "--ds-ccc-container-40".asInstanceOf[`--ds-ccc-container-40`]
+  
+  @js.native
+  sealed trait `--ds-ccc-container-48` extends StObject
+  inline def `--ds-ccc-container-48`: `--ds-ccc-container-48` = "--ds-ccc-container-48".asInstanceOf[`--ds-ccc-container-48`]
+  
+  @js.native
+  sealed trait `--ds-ccc-content-12` extends StObject
+  inline def `--ds-ccc-content-12`: `--ds-ccc-content-12` = "--ds-ccc-content-12".asInstanceOf[`--ds-ccc-content-12`]
+  
+  @js.native
+  sealed trait `--ds-ccc-content-16` extends StObject
+  inline def `--ds-ccc-content-16`: `--ds-ccc-content-16` = "--ds-ccc-content-16".asInstanceOf[`--ds-ccc-content-16`]
+  
+  @js.native
+  sealed trait `--ds-ccc-content-20` extends StObject
+  inline def `--ds-ccc-content-20`: `--ds-ccc-content-20` = "--ds-ccc-content-20".asInstanceOf[`--ds-ccc-content-20`]
+  
+  @js.native
+  sealed trait `--ds-ccc-content-24` extends StObject
+  inline def `--ds-ccc-content-24`: `--ds-ccc-content-24` = "--ds-ccc-content-24".asInstanceOf[`--ds-ccc-content-24`]
+  
+  @js.native
+  sealed trait `--ds-ecl-container-12` extends StObject
+  inline def `--ds-ecl-container-12`: `--ds-ecl-container-12` = "--ds-ecl-container-12".asInstanceOf[`--ds-ecl-container-12`]
+  
+  @js.native
+  sealed trait `--ds-ecl-container-16` extends StObject
+  inline def `--ds-ecl-container-16`: `--ds-ecl-container-16` = "--ds-ecl-container-16".asInstanceOf[`--ds-ecl-container-16`]
+  
+  @js.native
+  sealed trait `--ds-ecl-container-20` extends StObject
+  inline def `--ds-ecl-container-20`: `--ds-ecl-container-20` = "--ds-ecl-container-20".asInstanceOf[`--ds-ecl-container-20`]
+  
+  @js.native
+  sealed trait `--ds-ecl-container-24` extends StObject
+  inline def `--ds-ecl-container-24`: `--ds-ecl-container-24` = "--ds-ecl-container-24".asInstanceOf[`--ds-ecl-container-24`]
+  
+  @js.native
+  sealed trait `--ds-ecl-element-2` extends StObject
+  inline def `--ds-ecl-element-2`: `--ds-ecl-element-2` = "--ds-ecl-element-2".asInstanceOf[`--ds-ecl-element-2`]
+  
+  @js.native
+  sealed trait `--ds-ecl-element-4` extends StObject
+  inline def `--ds-ecl-element-4`: `--ds-ecl-element-4` = "--ds-ecl-element-4".asInstanceOf[`--ds-ecl-element-4`]
+  
+  @js.native
+  sealed trait `--ds-ecl-element-6` extends StObject
+  inline def `--ds-ecl-element-6`: `--ds-ecl-element-6` = "--ds-ecl-element-6".asInstanceOf[`--ds-ecl-element-6`]
+  
+  @js.native
+  sealed trait `--ds-ecl-element-8` extends StObject
+  inline def `--ds-ecl-element-8`: `--ds-ecl-element-8` = "--ds-ecl-element-8".asInstanceOf[`--ds-ecl-element-8`]
+  
+  @js.native
+  sealed trait `--ds-ecl-layout-32` extends StObject
+  inline def `--ds-ecl-layout-32`: `--ds-ecl-layout-32` = "--ds-ecl-layout-32".asInstanceOf[`--ds-ecl-layout-32`]
+  
+  @js.native
+  sealed trait `--ds-ecl-layout-40` extends StObject
+  inline def `--ds-ecl-layout-40`: `--ds-ecl-layout-40` = "--ds-ecl-layout-40".asInstanceOf[`--ds-ecl-layout-40`]
+  
+  @js.native
+  sealed trait `--ds-ecl-layout-64` extends StObject
+  inline def `--ds-ecl-layout-64`: `--ds-ecl-layout-64` = "--ds-ecl-layout-64".asInstanceOf[`--ds-ecl-layout-64`]
+  
+  @js.native
+  sealed trait `--ds-gap-100` extends StObject
+  inline def `--ds-gap-100`: `--ds-gap-100` = "--ds-gap-100".asInstanceOf[`--ds-gap-100`]
+  
+  @js.native
+  sealed trait `--ds-gap-200` extends StObject
+  inline def `--ds-gap-200`: `--ds-gap-200` = "--ds-gap-200".asInstanceOf[`--ds-gap-200`]
+  
+  @js.native
+  sealed trait `--ds-gap-300` extends StObject
+  inline def `--ds-gap-300`: `--ds-gap-300` = "--ds-gap-300".asInstanceOf[`--ds-gap-300`]
   
   @js.native
   sealed trait `--ds-icon` extends StObject
@@ -928,6 +1027,18 @@ object atlaskitTokensStrings {
   inline def `--ds-iconBorder-warning`: `--ds-iconBorder-warning` = "--ds-iconBorder-warning".asInstanceOf[`--ds-iconBorder-warning`]
   
   @js.native
+  sealed trait `--ds-inset-100` extends StObject
+  inline def `--ds-inset-100`: `--ds-inset-100` = "--ds-inset-100".asInstanceOf[`--ds-inset-100`]
+  
+  @js.native
+  sealed trait `--ds-inset-200` extends StObject
+  inline def `--ds-inset-200`: `--ds-inset-200` = "--ds-inset-200".asInstanceOf[`--ds-inset-200`]
+  
+  @js.native
+  sealed trait `--ds-inset-300` extends StObject
+  inline def `--ds-inset-300`: `--ds-inset-300` = "--ds-inset-300".asInstanceOf[`--ds-inset-300`]
+  
+  @js.native
   sealed trait `--ds-interaction-hovered` extends StObject
   inline def `--ds-interaction-hovered`: `--ds-interaction-hovered` = "--ds-interaction-hovered".asInstanceOf[`--ds-interaction-hovered`]
   
@@ -970,6 +1081,54 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait `--ds-overlay-pressed` extends StObject
   inline def `--ds-overlay-pressed`: `--ds-overlay-pressed` = "--ds-overlay-pressed".asInstanceOf[`--ds-overlay-pressed`]
+  
+  @js.native
+  sealed trait `--ds-pixel-0` extends StObject
+  inline def `--ds-pixel-0`: `--ds-pixel-0` = "--ds-pixel-0".asInstanceOf[`--ds-pixel-0`]
+  
+  @js.native
+  sealed trait `--ds-pixel-12` extends StObject
+  inline def `--ds-pixel-12`: `--ds-pixel-12` = "--ds-pixel-12".asInstanceOf[`--ds-pixel-12`]
+  
+  @js.native
+  sealed trait `--ds-pixel-16` extends StObject
+  inline def `--ds-pixel-16`: `--ds-pixel-16` = "--ds-pixel-16".asInstanceOf[`--ds-pixel-16`]
+  
+  @js.native
+  sealed trait `--ds-pixel-2` extends StObject
+  inline def `--ds-pixel-2`: `--ds-pixel-2` = "--ds-pixel-2".asInstanceOf[`--ds-pixel-2`]
+  
+  @js.native
+  sealed trait `--ds-pixel-20` extends StObject
+  inline def `--ds-pixel-20`: `--ds-pixel-20` = "--ds-pixel-20".asInstanceOf[`--ds-pixel-20`]
+  
+  @js.native
+  sealed trait `--ds-pixel-24` extends StObject
+  inline def `--ds-pixel-24`: `--ds-pixel-24` = "--ds-pixel-24".asInstanceOf[`--ds-pixel-24`]
+  
+  @js.native
+  sealed trait `--ds-pixel-32` extends StObject
+  inline def `--ds-pixel-32`: `--ds-pixel-32` = "--ds-pixel-32".asInstanceOf[`--ds-pixel-32`]
+  
+  @js.native
+  sealed trait `--ds-pixel-4` extends StObject
+  inline def `--ds-pixel-4`: `--ds-pixel-4` = "--ds-pixel-4".asInstanceOf[`--ds-pixel-4`]
+  
+  @js.native
+  sealed trait `--ds-pixel-40` extends StObject
+  inline def `--ds-pixel-40`: `--ds-pixel-40` = "--ds-pixel-40".asInstanceOf[`--ds-pixel-40`]
+  
+  @js.native
+  sealed trait `--ds-pixel-48` extends StObject
+  inline def `--ds-pixel-48`: `--ds-pixel-48` = "--ds-pixel-48".asInstanceOf[`--ds-pixel-48`]
+  
+  @js.native
+  sealed trait `--ds-pixel-6` extends StObject
+  inline def `--ds-pixel-6`: `--ds-pixel-6` = "--ds-pixel-6".asInstanceOf[`--ds-pixel-6`]
+  
+  @js.native
+  sealed trait `--ds-pixel-8` extends StObject
+  inline def `--ds-pixel-8`: `--ds-pixel-8` = "--ds-pixel-8".asInstanceOf[`--ds-pixel-8`]
   
   @js.native
   sealed trait `--ds-scale-0` extends StObject
@@ -1020,6 +1179,54 @@ object atlaskitTokensStrings {
   inline def `--ds-scale-600`: `--ds-scale-600` = "--ds-scale-600".asInstanceOf[`--ds-scale-600`]
   
   @js.native
+  sealed trait `--ds-scaleLinear-0` extends StObject
+  inline def `--ds-scaleLinear-0`: `--ds-scaleLinear-0` = "--ds-scaleLinear-0".asInstanceOf[`--ds-scaleLinear-0`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-100` extends StObject
+  inline def `--ds-scaleLinear-100`: `--ds-scaleLinear-100` = "--ds-scaleLinear-100".asInstanceOf[`--ds-scaleLinear-100`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-1000` extends StObject
+  inline def `--ds-scaleLinear-1000`: `--ds-scaleLinear-1000` = "--ds-scaleLinear-1000".asInstanceOf[`--ds-scaleLinear-1000`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-1100` extends StObject
+  inline def `--ds-scaleLinear-1100`: `--ds-scaleLinear-1100` = "--ds-scaleLinear-1100".asInstanceOf[`--ds-scaleLinear-1100`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-200` extends StObject
+  inline def `--ds-scaleLinear-200`: `--ds-scaleLinear-200` = "--ds-scaleLinear-200".asInstanceOf[`--ds-scaleLinear-200`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-300` extends StObject
+  inline def `--ds-scaleLinear-300`: `--ds-scaleLinear-300` = "--ds-scaleLinear-300".asInstanceOf[`--ds-scaleLinear-300`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-400` extends StObject
+  inline def `--ds-scaleLinear-400`: `--ds-scaleLinear-400` = "--ds-scaleLinear-400".asInstanceOf[`--ds-scaleLinear-400`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-500` extends StObject
+  inline def `--ds-scaleLinear-500`: `--ds-scaleLinear-500` = "--ds-scaleLinear-500".asInstanceOf[`--ds-scaleLinear-500`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-600` extends StObject
+  inline def `--ds-scaleLinear-600`: `--ds-scaleLinear-600` = "--ds-scaleLinear-600".asInstanceOf[`--ds-scaleLinear-600`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-700` extends StObject
+  inline def `--ds-scaleLinear-700`: `--ds-scaleLinear-700` = "--ds-scaleLinear-700".asInstanceOf[`--ds-scaleLinear-700`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-800` extends StObject
+  inline def `--ds-scaleLinear-800`: `--ds-scaleLinear-800` = "--ds-scaleLinear-800".asInstanceOf[`--ds-scaleLinear-800`]
+  
+  @js.native
+  sealed trait `--ds-scaleLinear-900` extends StObject
+  inline def `--ds-scaleLinear-900`: `--ds-scaleLinear-900` = "--ds-scaleLinear-900".asInstanceOf[`--ds-scaleLinear-900`]
+  
+  @js.native
   sealed trait `--ds-shadow-overflow` extends StObject
   inline def `--ds-shadow-overflow`: `--ds-shadow-overflow` = "--ds-shadow-overflow".asInstanceOf[`--ds-shadow-overflow`]
   
@@ -1030,6 +1237,54 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait `--ds-shadow-raised` extends StObject
   inline def `--ds-shadow-raised`: `--ds-shadow-raised` = "--ds-shadow-raised".asInstanceOf[`--ds-shadow-raised`]
+  
+  @js.native
+  sealed trait `--ds-size-large` extends StObject
+  inline def `--ds-size-large`: `--ds-size-large` = "--ds-size-large".asInstanceOf[`--ds-size-large`]
+  
+  @js.native
+  sealed trait `--ds-size-medium` extends StObject
+  inline def `--ds-size-medium`: `--ds-size-medium` = "--ds-size-medium".asInstanceOf[`--ds-size-medium`]
+  
+  @js.native
+  sealed trait `--ds-size-none` extends StObject
+  inline def `--ds-size-none`: `--ds-size-none` = "--ds-size-none".asInstanceOf[`--ds-size-none`]
+  
+  @js.native
+  sealed trait `--ds-size-small` extends StObject
+  inline def `--ds-size-small`: `--ds-size-small` = "--ds-size-small".asInstanceOf[`--ds-size-small`]
+  
+  @js.native
+  sealed trait `--ds-size-xlarge` extends StObject
+  inline def `--ds-size-xlarge`: `--ds-size-xlarge` = "--ds-size-xlarge".asInstanceOf[`--ds-size-xlarge`]
+  
+  @js.native
+  sealed trait `--ds-size-xsmall` extends StObject
+  inline def `--ds-size-xsmall`: `--ds-size-xsmall` = "--ds-size-xsmall".asInstanceOf[`--ds-size-xsmall`]
+  
+  @js.native
+  sealed trait `--ds-size-xxSmall` extends StObject
+  inline def `--ds-size-xxSmall`: `--ds-size-xxSmall` = "--ds-size-xxSmall".asInstanceOf[`--ds-size-xxSmall`]
+  
+  @js.native
+  sealed trait `--ds-size-xxlarge` extends StObject
+  inline def `--ds-size-xxlarge`: `--ds-size-xxlarge` = "--ds-size-xxlarge".asInstanceOf[`--ds-size-xxlarge`]
+  
+  @js.native
+  sealed trait `--ds-size-xxxSmall` extends StObject
+  inline def `--ds-size-xxxSmall`: `--ds-size-xxxSmall` = "--ds-size-xxxSmall".asInstanceOf[`--ds-size-xxxSmall`]
+  
+  @js.native
+  sealed trait `--ds-size-xxxlarge` extends StObject
+  inline def `--ds-size-xxxlarge`: `--ds-size-xxxlarge` = "--ds-size-xxxlarge".asInstanceOf[`--ds-size-xxxlarge`]
+  
+  @js.native
+  sealed trait `--ds-size-xxxxSmall` extends StObject
+  inline def `--ds-size-xxxxSmall`: `--ds-size-xxxxSmall` = "--ds-size-xxxxSmall".asInstanceOf[`--ds-size-xxxxSmall`]
+  
+  @js.native
+  sealed trait `--ds-size-xxxxlarge` extends StObject
+  inline def `--ds-size-xxxxlarge`: `--ds-size-xxxxlarge` = "--ds-size-xxxxlarge".asInstanceOf[`--ds-size-xxxxlarge`]
   
   @js.native
   sealed trait `--ds-skeleton` extends StObject
@@ -1232,16 +1487,16 @@ object atlaskitTokensStrings {
   inline def `--ds-text-warning-inverse`: `--ds-text-warning-inverse` = "--ds-text-warning-inverse".asInstanceOf[`--ds-text-warning-inverse`]
   
   @js.native
-  sealed trait `0` extends StObject
-  inline def `0`: `0` = "0".asInstanceOf[`0`]
-  
-  @js.native
   sealed trait `0Dot2` extends StObject
   inline def `0Dot2`: `0Dot2` = "0.2".asInstanceOf[`0Dot2`]
   
   @js.native
   sealed trait `0Dot4` extends StObject
   inline def `0Dot4`: `0Dot4` = "0.4".asInstanceOf[`0Dot4`]
+  
+  @js.native
+  sealed trait `0px` extends StObject
+  inline def `0px`: `0px` = "0px".asInstanceOf[`0px`]
   
   @js.native
   sealed trait `0px 1px 1px Numbersign091E4240Comma 0px 0px 1px Numbersign091E424F` extends StObject
@@ -3118,31 +3373,31 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait `atlassian-dark`
     extends StObject
-       with ThemesLongName
+       with Themes
   inline def `atlassian-dark`: `atlassian-dark` = "atlassian-dark".asInstanceOf[`atlassian-dark`]
   
   @js.native
   sealed trait `atlassian-legacy-dark`
     extends StObject
-       with ThemesLongName
+       with Themes
   inline def `atlassian-legacy-dark`: `atlassian-legacy-dark` = "atlassian-legacy-dark".asInstanceOf[`atlassian-legacy-dark`]
   
   @js.native
   sealed trait `atlassian-legacy-light`
     extends StObject
-       with ThemesLongName
+       with Themes
   inline def `atlassian-legacy-light`: `atlassian-legacy-light` = "atlassian-legacy-light".asInstanceOf[`atlassian-legacy-light`]
   
   @js.native
   sealed trait `atlassian-light`
     extends StObject
-       with ThemesLongName
+       with Themes
   inline def `atlassian-light`: `atlassian-light` = "atlassian-light".asInstanceOf[`atlassian-light`]
   
   @js.native
   sealed trait `atlassian-spacing`
     extends StObject
-       with ThemesLongName
+       with Themes
   inline def `atlassian-spacing`: `atlassian-spacing` = "atlassian-spacing".asInstanceOf[`atlassian-spacing`]
   
   @js.native
@@ -3154,6 +3409,12 @@ object atlaskitTokensStrings {
     extends StObject
        with PaletteCategory
   inline def blue: blue = "blue".asInstanceOf[blue]
+  
+  @js.native
+  sealed trait color
+    extends StObject
+       with ThemeKinds
+  inline def color: color = "color".asInstanceOf[color]
   
   @js.native
   sealed trait colorDotaccentDotboldBlue
@@ -7515,7 +7776,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait dark
     extends StObject
-       with Themes
+       with ThemeColorModes
+       with ThemeIds
   inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
@@ -7523,6 +7785,12 @@ object atlaskitTokensStrings {
     extends StObject
        with PaletteCategory
   inline def `dark mode neutral`: `dark mode neutral` = ("dark mode neutral").asInstanceOf[`dark mode neutral`]
+  
+  @js.native
+  sealed trait defaultPalette
+    extends StObject
+       with Palettes
+  inline def defaultPalette: defaultPalette = "defaultPalette".asInstanceOf[defaultPalette]
   
   @js.native
   sealed trait deleted extends StObject
@@ -7804,19 +8072,26 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait `legacy-dark`
     extends StObject
-       with Themes
+       with ThemeIds
   inline def `legacy-dark`: `legacy-dark` = "legacy-dark".asInstanceOf[`legacy-dark`]
   
   @js.native
   sealed trait `legacy-light`
     extends StObject
-       with Themes
+       with ThemeIds
   inline def `legacy-light`: `legacy-light` = "legacy-light".asInstanceOf[`legacy-light`]
+  
+  @js.native
+  sealed trait legacyPalette
+    extends StObject
+       with Palettes
+  inline def legacyPalette: legacyPalette = "legacyPalette".asInstanceOf[legacyPalette]
   
   @js.native
   sealed trait light
     extends StObject
-       with Themes
+       with ThemeColorModes
+       with ThemeIds
   inline def light: light = "light".asInstanceOf[light]
   
   @js.native
@@ -7945,22 +8220,415 @@ object atlaskitTokensStrings {
   sealed trait spacing
     extends StObject
        with Groups
-       with Themes
+       with ThemeIds
+       with ThemeKinds
   inline def spacing: spacing = "spacing".asInstanceOf[spacing]
   
   @js.native
-  sealed trait spacingDotcontainerDotgutter
+  sealed trait spacingDotcccDotcomponentDot2
     extends StObject
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
-  inline def spacingDotcontainerDotgutter: spacingDotcontainerDotgutter = "spacing.container.gutter".asInstanceOf[spacingDotcontainerDotgutter]
+  inline def spacingDotcccDotcomponentDot2: spacingDotcccDotcomponentDot2 = "spacing.ccc.component.2".asInstanceOf[spacingDotcccDotcomponentDot2]
+  
+  @js.native
+  sealed trait spacingDotcccDotcomponentDot4
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcomponentDot4: spacingDotcccDotcomponentDot4 = "spacing.ccc.component.4".asInstanceOf[spacingDotcccDotcomponentDot4]
+  
+  @js.native
+  sealed trait spacingDotcccDotcomponentDot6
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcomponentDot6: spacingDotcccDotcomponentDot6 = "spacing.ccc.component.6".asInstanceOf[spacingDotcccDotcomponentDot6]
+  
+  @js.native
+  sealed trait spacingDotcccDotcomponentDot8
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcomponentDot8: spacingDotcccDotcomponentDot8 = "spacing.ccc.component.8".asInstanceOf[spacingDotcccDotcomponentDot8]
+  
+  @js.native
+  sealed trait spacingDotcccDotcontainerDot32
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcontainerDot32: spacingDotcccDotcontainerDot32 = "spacing.ccc.container.32".asInstanceOf[spacingDotcccDotcontainerDot32]
+  
+  @js.native
+  sealed trait spacingDotcccDotcontainerDot40
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcontainerDot40: spacingDotcccDotcontainerDot40 = "spacing.ccc.container.40".asInstanceOf[spacingDotcccDotcontainerDot40]
+  
+  @js.native
+  sealed trait spacingDotcccDotcontainerDot48
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcontainerDot48: spacingDotcccDotcontainerDot48 = "spacing.ccc.container.48".asInstanceOf[spacingDotcccDotcontainerDot48]
+  
+  @js.native
+  sealed trait spacingDotcccDotcontentDot12
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcontentDot12: spacingDotcccDotcontentDot12 = "spacing.ccc.content.12".asInstanceOf[spacingDotcccDotcontentDot12]
+  
+  @js.native
+  sealed trait spacingDotcccDotcontentDot16
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcontentDot16: spacingDotcccDotcontentDot16 = "spacing.ccc.content.16".asInstanceOf[spacingDotcccDotcontentDot16]
+  
+  @js.native
+  sealed trait spacingDotcccDotcontentDot20
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcontentDot20: spacingDotcccDotcontentDot20 = "spacing.ccc.content.20".asInstanceOf[spacingDotcccDotcontentDot20]
+  
+  @js.native
+  sealed trait spacingDotcccDotcontentDot24
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcccDotcontentDot24: spacingDotcccDotcontentDot24 = "spacing.ccc.content.24".asInstanceOf[spacingDotcccDotcontentDot24]
+  
+  @js.native
+  sealed trait spacingDoteclDotcontainerDot12
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotcontainerDot12: spacingDoteclDotcontainerDot12 = "spacing.ecl.container.12".asInstanceOf[spacingDoteclDotcontainerDot12]
+  
+  @js.native
+  sealed trait spacingDoteclDotcontainerDot16
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotcontainerDot16: spacingDoteclDotcontainerDot16 = "spacing.ecl.container.16".asInstanceOf[spacingDoteclDotcontainerDot16]
+  
+  @js.native
+  sealed trait spacingDoteclDotcontainerDot20
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotcontainerDot20: spacingDoteclDotcontainerDot20 = "spacing.ecl.container.20".asInstanceOf[spacingDoteclDotcontainerDot20]
+  
+  @js.native
+  sealed trait spacingDoteclDotcontainerDot24
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotcontainerDot24: spacingDoteclDotcontainerDot24 = "spacing.ecl.container.24".asInstanceOf[spacingDoteclDotcontainerDot24]
+  
+  @js.native
+  sealed trait spacingDoteclDotelementDot2
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotelementDot2: spacingDoteclDotelementDot2 = "spacing.ecl.element.2".asInstanceOf[spacingDoteclDotelementDot2]
+  
+  @js.native
+  sealed trait spacingDoteclDotelementDot4
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotelementDot4: spacingDoteclDotelementDot4 = "spacing.ecl.element.4".asInstanceOf[spacingDoteclDotelementDot4]
+  
+  @js.native
+  sealed trait spacingDoteclDotelementDot6
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotelementDot6: spacingDoteclDotelementDot6 = "spacing.ecl.element.6".asInstanceOf[spacingDoteclDotelementDot6]
+  
+  @js.native
+  sealed trait spacingDoteclDotelementDot8
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotelementDot8: spacingDoteclDotelementDot8 = "spacing.ecl.element.8".asInstanceOf[spacingDoteclDotelementDot8]
+  
+  @js.native
+  sealed trait spacingDoteclDotlayoutDot32
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotlayoutDot32: spacingDoteclDotlayoutDot32 = "spacing.ecl.layout.32".asInstanceOf[spacingDoteclDotlayoutDot32]
+  
+  @js.native
+  sealed trait spacingDoteclDotlayoutDot40
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotlayoutDot40: spacingDoteclDotlayoutDot40 = "spacing.ecl.layout.40".asInstanceOf[spacingDoteclDotlayoutDot40]
+  
+  @js.native
+  sealed trait spacingDoteclDotlayoutDot64
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDoteclDotlayoutDot64: spacingDoteclDotlayoutDot64 = "spacing.ecl.layout.64".asInstanceOf[spacingDoteclDotlayoutDot64]
+  
+  @js.native
+  sealed trait spacingDotgapDot100
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotgapDot100: spacingDotgapDot100 = "spacing.gap.100".asInstanceOf[spacingDotgapDot100]
+  
+  @js.native
+  sealed trait spacingDotgapDot200
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotgapDot200: spacingDotgapDot200 = "spacing.gap.200".asInstanceOf[spacingDotgapDot200]
+  
+  @js.native
+  sealed trait spacingDotgapDot300
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotgapDot300: spacingDotgapDot300 = "spacing.gap.300".asInstanceOf[spacingDotgapDot300]
+  
+  @js.native
+  sealed trait spacingDotinsetDot100
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotinsetDot100: spacingDotinsetDot100 = "spacing.inset.100".asInstanceOf[spacingDotinsetDot100]
+  
+  @js.native
+  sealed trait spacingDotinsetDot200
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotinsetDot200: spacingDotinsetDot200 = "spacing.inset.200".asInstanceOf[spacingDotinsetDot200]
+  
+  @js.native
+  sealed trait spacingDotinsetDot300
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotinsetDot300: spacingDotinsetDot300 = "spacing.inset.300".asInstanceOf[spacingDotinsetDot300]
+  
+  @js.native
+  sealed trait spacingDotpixelDot0
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot0: spacingDotpixelDot0 = "spacing.pixel.0".asInstanceOf[spacingDotpixelDot0]
+  
+  @js.native
+  sealed trait spacingDotpixelDot12
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot12: spacingDotpixelDot12 = "spacing.pixel.12".asInstanceOf[spacingDotpixelDot12]
+  
+  @js.native
+  sealed trait spacingDotpixelDot16
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot16: spacingDotpixelDot16 = "spacing.pixel.16".asInstanceOf[spacingDotpixelDot16]
+  
+  @js.native
+  sealed trait spacingDotpixelDot2
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot2: spacingDotpixelDot2 = "spacing.pixel.2".asInstanceOf[spacingDotpixelDot2]
+  
+  @js.native
+  sealed trait spacingDotpixelDot20
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot20: spacingDotpixelDot20 = "spacing.pixel.20".asInstanceOf[spacingDotpixelDot20]
+  
+  @js.native
+  sealed trait spacingDotpixelDot24
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot24: spacingDotpixelDot24 = "spacing.pixel.24".asInstanceOf[spacingDotpixelDot24]
+  
+  @js.native
+  sealed trait spacingDotpixelDot32
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot32: spacingDotpixelDot32 = "spacing.pixel.32".asInstanceOf[spacingDotpixelDot32]
+  
+  @js.native
+  sealed trait spacingDotpixelDot4
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot4: spacingDotpixelDot4 = "spacing.pixel.4".asInstanceOf[spacingDotpixelDot4]
+  
+  @js.native
+  sealed trait spacingDotpixelDot40
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot40: spacingDotpixelDot40 = "spacing.pixel.40".asInstanceOf[spacingDotpixelDot40]
+  
+  @js.native
+  sealed trait spacingDotpixelDot48
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot48: spacingDotpixelDot48 = "spacing.pixel.48".asInstanceOf[spacingDotpixelDot48]
+  
+  @js.native
+  sealed trait spacingDotpixelDot6
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot6: spacingDotpixelDot6 = "spacing.pixel.6".asInstanceOf[spacingDotpixelDot6]
+  
+  @js.native
+  sealed trait spacingDotpixelDot8
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotpixelDot8: spacingDotpixelDot8 = "spacing.pixel.8".asInstanceOf[spacingDotpixelDot8]
   
   @js.native
   sealed trait spacingDotscaleDot0
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -7971,6 +8639,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot025
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -7981,6 +8651,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot050
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -7991,6 +8663,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot075
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -8001,6 +8675,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot100
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -8011,6 +8687,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot150
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -8021,6 +8699,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot200
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -8031,6 +8711,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot250
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -8041,6 +8723,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot300
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -8051,6 +8735,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot400
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -8061,6 +8747,8 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot500
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
@@ -8071,12 +8759,260 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait spacingDotscaleDot600
     extends StObject
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTypesInternalMod.InternalTokenIds
        with _Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
        with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def spacingDotscaleDot600: spacingDotscaleDot600 = "spacing.scale.600".asInstanceOf[spacingDotscaleDot600]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot0
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot0: spacingDotscaleLinearDot0 = "spacing.scaleLinear.0".asInstanceOf[spacingDotscaleLinearDot0]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot100
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot100: spacingDotscaleLinearDot100 = "spacing.scaleLinear.100".asInstanceOf[spacingDotscaleLinearDot100]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot1000
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot1000: spacingDotscaleLinearDot1000 = "spacing.scaleLinear.1000".asInstanceOf[spacingDotscaleLinearDot1000]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot1100
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot1100: spacingDotscaleLinearDot1100 = "spacing.scaleLinear.1100".asInstanceOf[spacingDotscaleLinearDot1100]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot200
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot200: spacingDotscaleLinearDot200 = "spacing.scaleLinear.200".asInstanceOf[spacingDotscaleLinearDot200]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot300
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot300: spacingDotscaleLinearDot300 = "spacing.scaleLinear.300".asInstanceOf[spacingDotscaleLinearDot300]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot400
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot400: spacingDotscaleLinearDot400 = "spacing.scaleLinear.400".asInstanceOf[spacingDotscaleLinearDot400]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot500
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot500: spacingDotscaleLinearDot500 = "spacing.scaleLinear.500".asInstanceOf[spacingDotscaleLinearDot500]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot600
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot600: spacingDotscaleLinearDot600 = "spacing.scaleLinear.600".asInstanceOf[spacingDotscaleLinearDot600]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot700
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot700: spacingDotscaleLinearDot700 = "spacing.scaleLinear.700".asInstanceOf[spacingDotscaleLinearDot700]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot800
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot800: spacingDotscaleLinearDot800 = "spacing.scaleLinear.800".asInstanceOf[spacingDotscaleLinearDot800]
+  
+  @js.native
+  sealed trait spacingDotscaleLinearDot900
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleLinearDot900: spacingDotscaleLinearDot900 = "spacing.scaleLinear.900".asInstanceOf[spacingDotscaleLinearDot900]
+  
+  @js.native
+  sealed trait spacingDotsizeDotlarge
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotlarge: spacingDotsizeDotlarge = "spacing.size.large".asInstanceOf[spacingDotsizeDotlarge]
+  
+  @js.native
+  sealed trait spacingDotsizeDotmedium
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotmedium: spacingDotsizeDotmedium = "spacing.size.medium".asInstanceOf[spacingDotsizeDotmedium]
+  
+  @js.native
+  sealed trait spacingDotsizeDotnone
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotnone: spacingDotsizeDotnone = "spacing.size.none".asInstanceOf[spacingDotsizeDotnone]
+  
+  @js.native
+  sealed trait spacingDotsizeDotsmall
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotsmall: spacingDotsizeDotsmall = "spacing.size.small".asInstanceOf[spacingDotsizeDotsmall]
+  
+  @js.native
+  sealed trait spacingDotsizeDotxlarge
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotxlarge: spacingDotsizeDotxlarge = "spacing.size.xlarge".asInstanceOf[spacingDotsizeDotxlarge]
+  
+  @js.native
+  sealed trait spacingDotsizeDotxsmall
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotxsmall: spacingDotsizeDotxsmall = "spacing.size.xsmall".asInstanceOf[spacingDotsizeDotxsmall]
+  
+  @js.native
+  sealed trait spacingDotsizeDotxxSmall
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotxxSmall: spacingDotsizeDotxxSmall = "spacing.size.xxSmall".asInstanceOf[spacingDotsizeDotxxSmall]
+  
+  @js.native
+  sealed trait spacingDotsizeDotxxlarge
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotxxlarge: spacingDotsizeDotxxlarge = "spacing.size.xxlarge".asInstanceOf[spacingDotsizeDotxxlarge]
+  
+  @js.native
+  sealed trait spacingDotsizeDotxxxSmall
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotxxxSmall: spacingDotsizeDotxxxSmall = "spacing.size.xxxSmall".asInstanceOf[spacingDotsizeDotxxxSmall]
+  
+  @js.native
+  sealed trait spacingDotsizeDotxxxlarge
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotxxxlarge: spacingDotsizeDotxxxlarge = "spacing.size.xxxlarge".asInstanceOf[spacingDotsizeDotxxxlarge]
+  
+  @js.native
+  sealed trait spacingDotsizeDotxxxxSmall
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotxxxxSmall: spacingDotsizeDotxxxxSmall = "spacing.size.xxxxSmall".asInstanceOf[spacingDotsizeDotxxxxSmall]
+  
+  @js.native
+  sealed trait spacingDotsizeDotxxxxlarge
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotsizeDotxxxxlarge: spacingDotsizeDotxxxxlarge = "spacing.size.xxxxlarge".asInstanceOf[spacingDotsizeDotxxxxlarge]
+  
+  @js.native
+  sealed trait spacingScale
+    extends StObject
+       with Palettes
+  inline def spacingScale: spacingScale = "spacingScale".asInstanceOf[spacingScale]
   
   @js.native
   sealed trait teal

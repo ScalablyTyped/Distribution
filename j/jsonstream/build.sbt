@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonstream"
-version := "v0.8.0-dt-20220818Z-b7a192"
+version := "v0.8.0-dt-20221103Z-b7a192"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

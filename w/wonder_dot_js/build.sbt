@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wonder_dot_js"
-version := "0.1.0-dt-20220818Z-b5c06f"
+version := "0.1.0-dt-20221103Z-b5c06f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

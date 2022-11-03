@@ -119,15 +119,19 @@ trait Aggregation extends StObject {
     * Whether multiple bindings for the same resource path share the data, so that it is requested only once;
     * only the value `true` is allowed. This parameter can be inherited from the model's parameter "sharedRequests",
     * see {@link sap.ui.model.odata.v4.ODataModel#constructor}. Supported since 1.80.0 **Note:** These bindings
-    * are read-only, so they may be especially useful for value lists; the following APIs are **not** allowed
-    *
+    * are read-only, so they may be especially useful for value lists; state messages (since 1.108.0) and the
+    * following APIs are **not** allowed
     * 	 for the list binding itself:
-    * 	 {@link sap.ui.model.odata.v4.ODataListBinding#create}   for the {@link sap.ui.model.odata.v4.ODataListBinding#getHeaderContext
-    * header context} of a list binding:
+    * 	 {@link sap.ui.model.odata.v4.ODataListBinding#create}  {@link sap.ui.model.odata.v4.ODataListBinding#getKeepAliveContext}
+    * or {@link #getKeepAliveContext} as far as it affects such a list binding  {@link sap.ui.model.odata.v4.ODataListBinding#resetChanges}
+    *   for the {@link sap.ui.model.odata.v4.ODataListBinding#getHeaderContext header context} of
+    * a list binding:
     * 	 {@link sap.ui.model.odata.v4.Context#requestSideEffects}   for the context of a list binding
     * representing a single entity:
     * 	 {@link sap.ui.model.odata.v4.Context#delete}  {@link sap.ui.model.odata.v4.Context#refresh}
-    * {@link sap.ui.model.odata.v4.Context#requestSideEffects}  {@link sap.ui.model.odata.v4.Context#setProperty}
+    * {@link sap.ui.model.odata.v4.Context#replaceWith}  {@link sap.ui.model.odata.v4.Context#requestSideEffects}
+    *  {@link sap.ui.model.odata.v4.Context#setKeepAlive}  {@link sap.ui.model.odata.v4.Context#setProperty}
+    *  executing a bound operation using `bReplaceWithRVC`, see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}
     *   for a dependent property binding of the list binding:
     * 	 {@link sap.ui.model.odata.v4.ODataPropertyBinding#setValue}
     */

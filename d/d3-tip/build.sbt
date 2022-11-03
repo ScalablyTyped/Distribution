@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-tip"
-version := "v3.5.5-dt-20220818Z-42561c"
+version := "v3.5.5-dt-20221103Z-42561c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

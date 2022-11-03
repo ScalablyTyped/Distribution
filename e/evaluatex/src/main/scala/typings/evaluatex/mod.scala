@@ -1,18 +1,12 @@
 package typings.evaluatex
 
 import org.scalablytyped.runtime.Shortcut
-import typings.evaluatex.anon.Name
 import typings.evaluatex.evaluatexStrings.COMMAND
 import typings.evaluatex.evaluatexStrings.DIVIDE
-import typings.evaluatex.evaluatexStrings.INVERSE
 import typings.evaluatex.evaluatexStrings.LPAREN
-import typings.evaluatex.evaluatexStrings.NEGATE
 import typings.evaluatex.evaluatexStrings.NUMBER
 import typings.evaluatex.evaluatexStrings.POWER
-import typings.evaluatex.evaluatexStrings.PRODUCT
 import typings.evaluatex.evaluatexStrings.RPAREN
-import typings.evaluatex.evaluatexStrings.SUM
-import typings.evaluatex.evaluatexStrings.SYMBOL
 import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -36,43 +30,6 @@ object mod extends Shortcut {
     - typings.evaluatex.anon.typeNUMBERvaluenumberchil
   */
   trait AbstractSyntaxTreeNode extends StObject
-  object AbstractSyntaxTreeNode {
-    
-    inline def typeFUNCTIONvaluenamekeyo(
-      children: js.Array[AbstractSyntaxTreeNode],
-      evaluate: () => Double,
-      name: (String | Null) & (Null | String),
-      simplify: () => AbstractSyntaxTreeNode,
-      value: Name & (js.Function1[/* repeated */ Any, Double])
-    ): typings.evaluatex.anon.typeFUNCTIONvaluenamekeyo = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], evaluate = js.Any.fromFunction0(evaluate), name = name.asInstanceOf[js.Any], simplify = js.Any.fromFunction0(simplify), value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("FUNCTION")
-      __obj.asInstanceOf[typings.evaluatex.anon.typeFUNCTIONvaluenamekeyo]
-    }
-    
-    inline def typeNUMBERvaluenumberchil(
-      children: js.Array[AbstractSyntaxTreeNode],
-      evaluate: () => Double,
-      simplify: () => AbstractSyntaxTreeNode,
-      value: Double
-    ): typings.evaluatex.anon.typeNUMBERvaluenumberchil = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], evaluate = js.Any.fromFunction0(evaluate), simplify = js.Any.fromFunction0(simplify), value = value.asInstanceOf[js.Any], name = null)
-      __obj.updateDynamic("type")("NUMBER")
-      __obj.asInstanceOf[typings.evaluatex.anon.typeNUMBERvaluenumberchil]
-    }
-    
-    inline def typeSYMBOLPRODUCTSUMINVER(
-      children: js.Array[AbstractSyntaxTreeNode],
-      evaluate: () => Double,
-      simplify: () => AbstractSyntaxTreeNode,
-      `type`: SYMBOL | PRODUCT | SUM | INVERSE | NEGATE | POWER,
-      value: String
-    ): typings.evaluatex.anon.typeSYMBOLPRODUCTSUMINVER = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], evaluate = js.Any.fromFunction0(evaluate), simplify = js.Any.fromFunction0(simplify), value = value.asInstanceOf[js.Any], name = null)
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.evaluatex.anon.typeSYMBOLPRODUCTSUMINVER]
-    }
-  }
   
   type Constant = Double | (js.Function1[/* repeated */ Double, Double])
   

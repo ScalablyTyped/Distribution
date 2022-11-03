@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simple-mock"
-version := "v0.8.0-dt-20220818Z-eefc30"
+version := "v0.8.0-dt-20221103Z-eefc30"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

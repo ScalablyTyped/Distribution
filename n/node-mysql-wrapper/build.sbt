@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "node-mysql-wrapper"
-version := "0.0-unknown-dt-20220818Z-2b3435"
+version := "0.0-unknown-dt-20220818Z-5c0fd0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220923Z-5a7a5b",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-5a7a5b",
   "org.scalablytyped" %%% "mysql" % "2.15-dt-20220705Z-d16d88",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

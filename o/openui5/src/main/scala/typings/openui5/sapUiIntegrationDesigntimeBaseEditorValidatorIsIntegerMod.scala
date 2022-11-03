@@ -13,7 +13,7 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsIntegerMod extends Shortcu
   
   /**
     * @SINCE 1.81
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - 1.81
     *
     * Validates if the provided value is an integer or binding string.
     */

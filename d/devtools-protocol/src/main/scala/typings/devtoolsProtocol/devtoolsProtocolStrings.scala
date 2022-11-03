@@ -2482,12 +2482,6 @@ object devtoolsProtocolStrings {
   inline def RequestedMIDIPermission: RequestedMIDIPermission = "RequestedMIDIPermission".asInstanceOf[RequestedMIDIPermission]
   
   @js.native
-  sealed trait RequestedNotificationsPermission
-    extends StObject
-       with BackForwardCacheNotRestoredReason
-  inline def RequestedNotificationsPermission: RequestedNotificationsPermission = "RequestedNotificationsPermission".asInstanceOf[RequestedNotificationsPermission]
-  
-  @js.native
   sealed trait RequestedStorageAccessGrant
     extends StObject
        with BackForwardCacheNotRestoredReason

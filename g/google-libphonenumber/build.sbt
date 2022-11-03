@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-libphonenumber"
-version := "v7.4.3-dt-20220818Z-3fa91d"
+version := "v7.4.3-dt-20221103Z-3fa91d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

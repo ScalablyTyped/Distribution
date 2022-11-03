@@ -58,7 +58,7 @@ trait InputBoxOptions extends StObject {
   /**
     * Selection of the pre-filled {@linkcode InputBoxOptions.value value}. Defined as tuple of two number where the
     * first is the inclusive start index and the second the exclusive end index. When `undefined` the whole
-    * word will be selected, when empty (start equals end) only the cursor will be set,
+    * pre-filled value will be selected, when empty (start equals end) only the cursor will be set,
     * otherwise the defined range will be selected.
     */
   var valueSelection: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined

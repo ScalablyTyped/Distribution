@@ -357,6 +357,7 @@ import typings.devtoolsProtocol.anon.`240`
 import typings.devtoolsProtocol.anon.`241`
 import typings.devtoolsProtocol.anon.`242`
 import typings.devtoolsProtocol.anon.`243`
+import typings.devtoolsProtocol.anon.`244`
 import typings.devtoolsProtocol.anon.`24`
 import typings.devtoolsProtocol.anon.`25`
 import typings.devtoolsProtocol.anon.`26`
@@ -3821,7 +3822,7 @@ object typesProtocolMappingMod {
         * Adds the credential to the specified authenticator.
         */
       @JSName("WebAuthn.addCredential")
-      var WebAuthnDotaddCredential: `239`
+      var WebAuthnDotaddCredential: `240`
       
       /**
         * Creates and adds a virtual authenticator.
@@ -3833,7 +3834,7 @@ object typesProtocolMappingMod {
         * Clears all the credentials from the specified device.
         */
       @JSName("WebAuthn.clearCredentials")
-      var WebAuthnDotclearCredentials: `241`
+      var WebAuthnDotclearCredentials: `242`
       
       /**
         * Disable the WebAuthn domain.
@@ -3865,27 +3866,33 @@ object typesProtocolMappingMod {
         * Removes a credential from the authenticator.
         */
       @JSName("WebAuthn.removeCredential")
-      var WebAuthnDotremoveCredential: `240`
+      var WebAuthnDotremoveCredential: `241`
       
       /**
         * Removes the given authenticator.
         */
       @JSName("WebAuthn.removeVirtualAuthenticator")
-      var WebAuthnDotremoveVirtualAuthenticator: `238`
+      var WebAuthnDotremoveVirtualAuthenticator: `239`
       
       /**
         * Sets whether tests of user presence will succeed immediately (if true) or fail to resolve (if false) for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setAutomaticPresenceSimulation")
-      var WebAuthnDotsetAutomaticPresenceSimulation: `243`
+      var WebAuthnDotsetAutomaticPresenceSimulation: `244`
+      
+      /**
+        * Resets parameters isBogusSignature, isBadUV, isBadUP to false if they are not present.
+        */
+      @JSName("WebAuthn.setResponseOverrideBits")
+      var WebAuthnDotsetResponseOverrideBits: `238`
       
       /**
         * Sets whether User Verification succeeds or fails for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setUserVerified")
-      var WebAuthnDotsetUserVerified: `242`
+      var WebAuthnDotsetUserVerified: `243`
     }
     object Commands {
       
@@ -5457,11 +5464,11 @@ object typesProtocolMappingMod {
         
         inline def setWebAudioDotgetRealtimeData(value: ReturnTypeGetRealtimeDataResponse): Self = StObject.set(x, "WebAudio.getRealtimeData", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotaddCredential(value: `239`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotaddCredential(value: `240`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotaddVirtualAuthenticator(value: ReturnTypeAddVirtualAuthenticatorResponse): Self = StObject.set(x, "WebAuthn.addVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotclearCredentials(value: `241`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotclearCredentials(value: `242`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotdisable(value: ParamsType): Self = StObject.set(x, "WebAuthn.disable", value.asInstanceOf[js.Any])
         
@@ -5471,13 +5478,15 @@ object typesProtocolMappingMod {
         
         inline def setWebAuthnDotgetCredentials(value: ReturnTypeGetCredentialsResponse): Self = StObject.set(x, "WebAuthn.getCredentials", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotremoveCredential(value: `240`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveCredential(value: `241`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotremoveVirtualAuthenticator(value: `238`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveVirtualAuthenticator(value: `239`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetAutomaticPresenceSimulation(value: `243`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetAutomaticPresenceSimulation(value: `244`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetUserVerified(value: `242`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetResponseOverrideBits(value: `238`): Self = StObject.set(x, "WebAuthn.setResponseOverrideBits", value.asInstanceOf[js.Any])
+        
+        inline def setWebAuthnDotsetUserVerified(value: `243`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
       }
     }
     

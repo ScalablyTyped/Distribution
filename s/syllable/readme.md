@@ -1,7 +1,7 @@
 
 # Scala.js typings for syllable
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Count syllables in English words

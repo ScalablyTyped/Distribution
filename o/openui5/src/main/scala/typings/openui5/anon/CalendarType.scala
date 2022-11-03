@@ -21,6 +21,14 @@ trait CalendarType extends StObject {
   ] = js.undefined
   
   /**
+    * @since 1.108.0 specifies the calendar week numbering. If specified, this overwrites `oFormatOptions.firstDayOfWeek`
+    * and `oFormatOptions.minimalDaysInFirstWeek`.
+    */
+  var calendarWeekNumbering: js.UndefOr[
+    typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String)
+  ] = js.undefined
+  
+  /**
     * @since 1.105.0 specifies the first day of the week starting with `0` (which is Sunday); if not defined,
     * the value taken from the locale is used
     */
@@ -55,7 +63,7 @@ trait CalendarType extends StObject {
   
   /**
     * if true, the date is formatted relatively to todays date if it is within the given day range, e.g. "today",
-    * "yesterday", "in 5 days"
+    * "1 day ago", "in 5 days"
     */
   var relative: js.UndefOr[Boolean] = js.undefined
   
@@ -109,6 +117,12 @@ object CalendarType {
     ): Self = StObject.set(x, "calendarType", value.asInstanceOf[js.Any])
     
     inline def setCalendarTypeUndefined: Self = StObject.set(x, "calendarType", js.undefined)
+    
+    inline def setCalendarWeekNumbering(
+      value: typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String)
+    ): Self = StObject.set(x, "calendarWeekNumbering", value.asInstanceOf[js.Any])
+    
+    inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
     
     inline def setFirstDayOfWeek(value: int): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
     

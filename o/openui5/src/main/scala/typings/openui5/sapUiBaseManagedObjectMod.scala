@@ -1993,13 +1993,13 @@ object sapUiBaseManagedObjectMod {
       * 	 - string literals `"null"` or `"undefined"`  Omitting the model name (or using the value `undefined`)
       * 			is explicitly allowed and refers to the default model.
       *
-      * @returns oModel
+      * @returns oModel or undefined when there is no such model
       */
-    def getModel(): typings.openui5.sapUiModelModelMod.default = js.native
+    def getModel(): js.UndefOr[typings.openui5.sapUiModelModelMod.default] = js.native
     def getModel(/**
       * name of the model to be retrieved
       */
-    sModelName: String): typings.openui5.sapUiModelModelMod.default = js.native
+    sModelName: String): js.UndefOr[typings.openui5.sapUiModelModelMod.default] = js.native
     
     /**
       * Get the object binding object for a specific model.

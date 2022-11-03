@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-mentions"
-version := "4.1-dt-20221015Z-b9cff6"
+version := "4.1-dt-20221102Z-ea79ca"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

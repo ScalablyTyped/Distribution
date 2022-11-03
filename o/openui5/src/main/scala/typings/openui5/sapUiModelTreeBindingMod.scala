@@ -1045,6 +1045,20 @@ object sapUiModelTreeBindingMod {
     oContext: js.Object): int = js.native
     
     /**
+      * @SINCE 1.108.0
+      *
+      * Returns the count of entries in the tree, or `undefined` if it is unknown. If the tree is filtered, the
+      * count of all entries matching the filter conditions is returned. The entries required only for the tree
+      * structure are not counted.
+      *
+      * **Note:** The default implementation returns `undefined` and has to be overwritten by subclasses.
+      *
+      * @returns The count of entries in the tree, or `undefined` if it is unknown, for example because the binding
+      * is not resolved or because this feature is not supported.
+      */
+    def getCount(): js.UndefOr[Double] = js.native
+    
+    /**
       * Returns the current value of the bound target
       *
       * @returns the array of child contexts for the given node

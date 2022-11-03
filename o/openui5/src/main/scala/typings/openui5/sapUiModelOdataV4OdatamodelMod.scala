@@ -1256,9 +1256,10 @@ object sapUiModelOdataV4OdatamodelMod {
     /**
       * @SINCE 1.39.0
       *
-      * Returns `true` if there are pending changes, meaning updates or created entities (see {@link sap.ui.model.odata.v4.ODataListBinding#create})
-      * that have not yet been successfully sent to the server. Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} contexts are ignored.
+      * Returns `true` if there are pending changes, which can be updates, created entities (see {@link sap.ui.model.odata.v4.ODataListBinding#create})
+      * or entity deletions (see {@link sap.ui.model.odata.v4.Context#delete}) that have not yet been successfully
+      * sent to the server. Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts
+      * are ignored.
       *
       * @returns `true` if there are pending changes
       */
@@ -1307,7 +1308,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * Requests the metadata for the given meta path and calculates the key predicate by taking the key properties
       * from the given entity instance.
       * See:
-      * 	#getKeyPredicates
+      * 	#getKeyPredicate
       *
       * @returns A promise that gets resolved with the proper URI-encoded key predicate, for example "(Sector='A%2FB%26C',ID='42')"
       * or "('42')", or `undefined` if at least one key property is undefined. It gets rejected if the metadata
@@ -1327,10 +1328,9 @@ object sapUiModelOdataV4OdatamodelMod {
     /**
       * @SINCE 1.39.0
       *
-      * Resets all property changes and created entities associated with the given group ID which have not been
-      * successfully submitted via {@link #submitBatch}. Resets also invalid user input for the same group ID.
-      * This function does not reset the deletion of entities (see {@link sap.ui.model.odata.v4.Context#delete})
-      * and the execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}).
+      * Resets all property changes, created entities, and entity deletions associated with the given group ID
+      * which have not been successfully submitted via {@link #submitBatch}. Resets also invalid user input for
+      * the same group ID. This function does not reset the execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}).
       * See:
       * 	sap.ui.model.odata.v4.ODataModel#constructor.
       */

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "h2o2"
-version := "8.1-dt-20211202Z-8a8b15"
+version := "8.1-dt-20211202Z-a0a190"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "boom" % "7.3-dt-20220913Z-f2e8e0",
+  "org.scalablytyped" %%% "boom" % "7.3-dt-20221103Z-f2e8e0",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20211202Z-24c331",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20220819Z-cbd349",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20221103Z-516936",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20211202Z-60a73f",
   "org.scalablytyped" %%% "joi" % "17.7.0-5e6a43",
   "org.scalablytyped" %%% "mime-db" % "1.43-dt-20211202Z-0ac956",

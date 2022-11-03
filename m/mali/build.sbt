@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mali"
-version := "0.47.1-42cc39"
+version := "0.47.1-a1ce23"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-913a7a",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-cc4119",
-  "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-4bcc1f",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-b32195",
+  "org.scalablytyped" %%% "long" % "5.2.1-0ea128",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-fe2613",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kakao-js-sdk"
-version := "1.39-dt-20211202Z-ef3cc7"
+version := "1.39-dt-20221102Z-ef3cc7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

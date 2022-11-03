@@ -213,7 +213,7 @@ trait JQuery_[TElement]
   /**
     * Sets the text selection in the first element of the collection.
     *
-    * <b>Note</b>: This feature is only supported for input element’s type of text, search, url, tel and password.
+    * <b>Note</b>: This feature is only supported for input element's type of text, search, url, tel and password.
     */
   def selectText(
     /**

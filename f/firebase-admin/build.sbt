@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase-admin"
-version := "11.2.0-e788e7"
+version := "11.2.0-688a6f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,14 +11,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__util" % "1.7.3-d8aaca",
   "org.scalablytyped" %%% "gaxios" % "5.0.2-39d462",
   "org.scalablytyped" %%% "google-auth-library" % "8.6.0-565255",
-  "org.scalablytyped" %%% "google-cloud__firestore" % "6.4.0-f4c58b",
+  "org.scalablytyped" %%% "google-cloud__firestore" % "6.4.0-56559d",
   "org.scalablytyped" %%% "google-cloud__storage" % "6.6.0-b47b70",
-  "org.scalablytyped" %%% "google-gax" % "3.5.2-2c408c",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-913a7a",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-cc4119",
+  "org.scalablytyped" %%% "google-gax" % "3.5.2-22462b",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-4bcc1f",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-b32195",
   "org.scalablytyped" %%% "gtoken" % "6.1.2-7c92aa",
   "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-23291f",
-  "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
+  "org.scalablytyped" %%% "long" % "5.2.1-0ea128",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-dcab71",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-fe2613",

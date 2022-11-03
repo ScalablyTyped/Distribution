@@ -6,6 +6,7 @@ import typings.openui5.sapMDateTimeFieldMod.DateTimeFieldSettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreCalendarTypeMod.CalendarType
+import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.std.HTMLElement
 import typings.std.Record
@@ -481,6 +482,18 @@ object sapMDatePickerMod {
     mParameters: AfterPopupOpened): this.type = js.native
     
     /**
+      * @SINCE 1.108.0
+      *
+      * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      *
+      * @returns Value of property `calendarWeekNumbering`
+      */
+    def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
+    
+    /**
       * @SINCE 1.28.6
       *
       * Gets current value of property {@link #getDisplayFormatType displayFormatType}.
@@ -703,6 +716,32 @@ object sapMDatePickerMod {
     ): typings.openui5.sapUiUnifiedDateTypeRangeMod.default | Null = js.native
     
     /**
+      * @SINCE 1.108.0
+      *
+      * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setCalendarWeekNumbering(): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
+    ): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: CalendarWeekNumbering
+    ): this.type = js.native
+    
+    /**
       * @SINCE 1.28.6
       *
       * Sets a new value for property {@link #getDisplayFormatType displayFormatType}.
@@ -889,6 +928,16 @@ object sapMDatePickerMod {
     var afterValueHelpOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
     /**
+      * @SINCE 1.108.0
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      */
+    var calendarWeekNumbering: js.UndefOr[
+        CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * @SINCE 1.28.6
       *
       * Displays date in this given type in input field. Default value is taken from locale settings. Accepted
@@ -1018,6 +1067,12 @@ object sapMDatePickerMod {
       inline def setAfterValueHelpOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterValueHelpOpen", js.Any.fromFunction1(value))
       
       inline def setAfterValueHelpOpenUndefined: Self = StObject.set(x, "afterValueHelpOpen", js.undefined)
+      
+      inline def setCalendarWeekNumbering(
+        value: CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "calendarWeekNumbering", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
       
       inline def setDisplayFormatType(value: String | PropertyBindingInfo): Self = StObject.set(x, "displayFormatType", value.asInstanceOf[js.Any])
       

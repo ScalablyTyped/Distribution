@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectLambdaConfiguration extends StObject {
   
   /**
-    * A container for allowed features. Valid inputs are GetObject-Range and GetObject-PartNumber.
+    * A container for allowed features. Valid inputs are GetObject-Range, GetObject-PartNumber, HeadObject-Range, and HeadObject-PartNumber.
     */
   var AllowedFeatures: js.UndefOr[ObjectLambdaAllowedFeaturesList] = js.undefined
   

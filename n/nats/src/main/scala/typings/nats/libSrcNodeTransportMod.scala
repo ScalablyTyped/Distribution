@@ -29,6 +29,8 @@ object libSrcNodeTransportMod {
     def close(): js.Promise[Unit] = js.native
     def close(err: js.Error): js.Promise[Unit] = js.native
     
+    var closeError: js.UndefOr[js.Error] = js.native
+    
     def closed(): js.Promise[Unit | js.Error] = js.native
     
     var closedNotification: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Deferred<void | Error> */ Any = js.native

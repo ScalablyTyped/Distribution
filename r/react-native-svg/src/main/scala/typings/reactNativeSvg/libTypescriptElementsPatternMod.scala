@@ -37,7 +37,9 @@ object libTypescriptElementsPatternMod {
   trait Pattern
     extends typings.reactNativeSvg.libTypescriptElementsShapeMod.default[PatternProps]
   
-  trait PatternProps extends StObject {
+  trait PatternProps
+    extends StObject
+       with TransformProps {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -47,21 +49,23 @@ object libTypescriptElementsPatternMod {
     
     var patternContentUnits: js.UndefOr[Units] = js.undefined
     
-    var patternTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
+    var patternTransform: js.UndefOr[
+        ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ] = js.undefined
     
     var patternUnits: js.UndefOr[Units] = js.undefined
     
     var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformProps] = js.undefined
-    
     var viewBox: js.UndefOr[String] = js.undefined
     
     var width: js.UndefOr[NumberProp] = js.undefined
     
-    var x: js.UndefOr[NumberProp] = js.undefined
+    @JSName("x")
+    var x_PatternProps: js.UndefOr[NumberProp] = js.undefined
     
-    var y: js.UndefOr[NumberProp] = js.undefined
+    @JSName("y")
+    var y_PatternProps: js.UndefOr[NumberProp] = js.undefined
   }
   object PatternProps {
     
@@ -88,7 +92,9 @@ object libTypescriptElementsPatternMod {
       
       inline def setPatternContentUnitsUndefined: Self = StObject.set(x, "patternContentUnits", js.undefined)
       
-      inline def setPatternTransform(value: ColumnMajorTransformMatrix | String): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
+      inline def setPatternTransform(
+        value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
       
       inline def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
       
@@ -99,10 +105,6 @@ object libTypescriptElementsPatternMod {
       inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
       
       inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
-      
-      inline def setTransform(value: ColumnMajorTransformMatrix | String | TransformProps): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
-      
-      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
       inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
       

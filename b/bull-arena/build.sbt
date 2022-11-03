@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bull-arena"
-version := "3.0-dt-20221026Z-dbe255"
+version := "3.0-dt-20221026Z-6ead0c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "denque" % "2.1.0-758dab",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
-  "org.scalablytyped" %%% "ioredis" % "5.2.3-4f6339",
+  "org.scalablytyped" %%% "ioredis" % "5.2.4-211d4e",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",

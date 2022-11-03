@@ -18,44 +18,47 @@ object srcCoreMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /* note: abstract class */ @JSImport("sift/src/core", "BaseOperation")
+  @js.native
+  open class BaseOperation[TParams, TItem] protected ()
+    extends StObject
+       with Operation[TItem] {
+    def this(params: TParams, owneryQuery: Any, options: Options) = this()
+    def this(params: TParams, owneryQuery: Any, options: Options, name: String) = this()
+    
+    /* protected */ def init(): Unit = js.native
+    
+    val name: js.UndefOr[String] = js.native
+    
+    val options: Options = js.native
+    
+    val owneryQuery: Any = js.native
+    
+    val params: TParams = js.native
+  }
+  
   @JSImport("sift/src/core", "EqualsOperation")
   @js.native
-  open class EqualsOperation[TParam] ()
-    extends StObject
-       with BaseOperation[TParam, Any] {
+  open class EqualsOperation[TParam] protected () extends BaseOperation[TParam, Any] {
+    def this(params: TParam, owneryQuery: Any, options: Options) = this()
+    def this(params: TParam, owneryQuery: Any, options: Options, name: String) = this()
     
     /* private */ var _test: Any = js.native
   }
   
-  /* note: abstract class */ @JSImport("sift/src/core", "NamedBaseOperation")
+  /* note: abstract class */ /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.sift.srcCoreMod.NamedOperation because var conflicts: name. Inlined  */ @JSImport("sift/src/core", "NamedGroupOperation")
   @js.native
-  open class NamedBaseOperation[TParams, TItem] protected ()
-    extends StObject
-       with BaseOperation[TParams, TItem]
-       with NamedOperation {
-    def this(params: TParams, owneryQuery: Any, options: Options, name: String) = this()
-    
-    /* CompleteClass */
-    var name: String = js.native
-  }
-  
-  /* note: abstract class */ @JSImport("sift/src/core", "NamedGroupOperation")
-  @js.native
-  open class NamedGroupOperation protected ()
-    extends StObject
-       with GroupOperation
-       with NamedOperation {
+  open class NamedGroupOperation protected () extends GroupOperation {
     def this(params: Any, owneryQuery: Any, options: Options, children: js.Array[Operation[Any]], name: String) = this()
     
-    /* CompleteClass */
-    var name: String = js.native
+    @JSName("name")
+    val name_NamedGroupOperation: String = js.native
   }
   
   @JSImport("sift/src/core", "NestedOperation")
   @js.native
-  open class NestedOperation protected ()
-    extends StObject
-       with GroupOperation {
+  open class NestedOperation protected () extends GroupOperation {
     def this(
       keyPath: js.Array[Key],
       params: Any,
@@ -73,18 +76,16 @@ object srcCoreMod {
   
   @JSImport("sift/src/core", "NopeOperation")
   @js.native
-  open class NopeOperation[TParam] ()
-    extends StObject
-       with BaseOperation[TParam, Any] {
+  open class NopeOperation[TParam] protected () extends BaseOperation[TParam, Any] {
+    def this(params: TParam, owneryQuery: Any, options: Options) = this()
+    def this(params: TParam, owneryQuery: Any, options: Options, name: String) = this()
     
     def next(): Unit = js.native
   }
   
   @JSImport("sift/src/core", "QueryOperation")
   @js.native
-  open class QueryOperation[TItem] ()
-    extends StObject
-       with GroupOperation
+  open class QueryOperation[TItem] () extends GroupOperation
   
   inline def containsOperation(query: Any, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsOperation")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -107,13 +108,13 @@ object srcCoreMod {
     /* owneryQuery */ Any, 
     /* options */ Options, 
     /* name */ String, 
-    Operation[Any]
+    Operation[Any] | NopeOperation[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("numericalOperation")(createTester.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
     /* params */ Any, 
     /* owneryQuery */ Any, 
     /* options */ Options, 
     /* name */ String, 
-    Operation[Any]
+    Operation[Any] | NopeOperation[Any]
   ]]
   
   inline def numericalOperationCreator(createNumericalOperation: OperationCreator[Any]): js.Function4[
@@ -121,13 +122,13 @@ object srcCoreMod {
     /* owneryQuery */ Any, 
     /* options */ Options, 
     /* name */ String, 
-    Operation[Any]
+    Operation[Any] | NopeOperation[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("numericalOperationCreator")(createNumericalOperation.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
     /* params */ Any, 
     /* owneryQuery */ Any, 
     /* options */ Options, 
     /* name */ String, 
-    Operation[Any]
+    Operation[Any] | NopeOperation[Any]
   ]]
   
   trait ArrayValueQuery[TValue]
@@ -150,20 +151,6 @@ object srcCoreMod {
       
       inline def set$elemMatchUndefined: Self = StObject.set(x, "$elemMatch", js.undefined)
     }
-  }
-  
-  @js.native
-  trait BaseOperation[TParams, TItem]
-    extends StObject
-       with Operation[TItem] {
-    
-    /* protected */ def init(): Unit = js.native
-    
-    val options: Options = js.native
-    
-    val owneryQuery: Any = js.native
-    
-    val params: TParams = js.native
   }
   
   trait BasicValueQuery[TValue] extends StObject {
@@ -332,15 +319,13 @@ object srcCoreMod {
   }
   
   @js.native
-  trait GroupOperation
-    extends StObject
-       with BaseOperation[Any, Any] {
+  trait GroupOperation extends BaseOperation[Any, Any] {
     
     val children: js.Array[Operation[Any]] = js.native
     
     /**
       */
-    /* protected */ def childrenNext(item: Any, key: Key, owner: Any): Unit = js.native
+    /* protected */ def childrenNext(item: Any, key: Key, owner: Any, root: Boolean): Unit = js.native
   }
   
   trait NamedOperation extends StObject {
@@ -373,8 +358,12 @@ object srcCoreMod {
     
     def next(item: TItem): Any = js.native
     def next(item: TItem, key: Unit, owner: Any): Any = js.native
+    def next(item: TItem, key: Unit, owner: Any, root: Boolean): Any = js.native
+    def next(item: TItem, key: Unit, owner: Unit, root: Boolean): Any = js.native
     def next(item: TItem, key: Key): Any = js.native
     def next(item: TItem, key: Key, owner: Any): Any = js.native
+    def next(item: TItem, key: Key, owner: Any, root: Boolean): Any = js.native
+    def next(item: TItem, key: Key, owner: Unit, root: Boolean): Any = js.native
     
     var propop: Boolean = js.native
     
@@ -412,6 +401,8 @@ object srcCoreMod {
   
   type Query[TItemSchema] = TItemSchema | js.RegExp | NestedQuery[TItemSchema]
   
+  type QueryOperators[TValue] = /* keyof sift.sift/src/core.ValueQuery<TValue> */ String
+  
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately. 
@@ -422,7 +413,13 @@ object srcCoreMod {
   @js.native
   trait ShapeQuery[TItemSchema] extends StObject
   
-  type Tester = js.Function3[/* item */ Any, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean]
+  type Tester = js.Function4[
+    /* item */ Any, 
+    /* key */ js.UndefOr[Key], 
+    /* owner */ js.UndefOr[Any], 
+    /* root */ js.UndefOr[Boolean], 
+    Boolean
+  ]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

@@ -740,7 +740,7 @@ object sapMResponsivePopoverMod {
     
     /**
       * @SINCE 1.36.4
-      * @EXPERIMENTAL (since 1.36.4)
+      * @EXPERIMENTAL (since 1.36.4) - Do not use directly on ResponsivePopover while in experimental mode!
       *
       * Gets current value of property {@link #getResizable resizable}.
       *
@@ -1165,7 +1165,7 @@ object sapMResponsivePopoverMod {
     
     /**
       * @SINCE 1.36.4
-      * @EXPERIMENTAL (since 1.36.4)
+      * @EXPERIMENTAL (since 1.36.4) - Do not use directly on ResponsivePopover while in experimental mode!
       *
       * Sets a new value for property {@link #getResizable resizable}.
       *
@@ -1423,7 +1423,7 @@ object sapMResponsivePopoverMod {
     
     /**
       * @SINCE 1.36.4
-      * @EXPERIMENTAL (since 1.36.4)
+      * @EXPERIMENTAL (since 1.36.4) - Do not use directly on ResponsivePopover while in experimental mode!
       *
       * Whether resize option is enabled.
       */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "microsoft-live-connect"
-version := "v5.0-dt-20220818Z-a6e851"
+version := "v5.0-dt-20221103Z-a6e851"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

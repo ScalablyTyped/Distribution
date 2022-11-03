@@ -70,7 +70,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.DedicatedWorkerOrWorklet
   - typings.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestOthers
   - typings.devtoolsProtocol.devtoolsProtocolStrings.OutstandingIndexedDBTransaction
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedNotificationsPermission
   - typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedMIDIPermission
   - typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedAudioCapturePermission
   - typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedVideoCapturePermission
@@ -311,8 +310,6 @@ object BackForwardCacheNotRestoredReason {
   inline def RequestedBackgroundWorkPermission: typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedBackgroundWorkPermission = "RequestedBackgroundWorkPermission".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedBackgroundWorkPermission]
   
   inline def RequestedMIDIPermission: typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedMIDIPermission = "RequestedMIDIPermission".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedMIDIPermission]
-  
-  inline def RequestedNotificationsPermission: typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedNotificationsPermission = "RequestedNotificationsPermission".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedNotificationsPermission]
   
   inline def RequestedStorageAccessGrant: typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedStorageAccessGrant = "RequestedStorageAccessGrant".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RequestedStorageAccessGrant]
   

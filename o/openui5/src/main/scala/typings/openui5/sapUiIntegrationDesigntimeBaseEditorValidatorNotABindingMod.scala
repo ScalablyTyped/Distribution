@@ -13,7 +13,7 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorNotABindingMod extends Short
   
   /**
     * @SINCE 1.81
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - 1.81
     *
     * Validates if the provided value doesn't contain a binding.
     */

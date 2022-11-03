@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "clui"
-version := "0.3-dt-20211202Z-e2b0f8"
+version := "0.3-dt-20211202Z-cf4167"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cli-color" % "2.0-dt-20211223Z-4c72c4",
+  "org.scalablytyped" %%% "cli-color" % "2.0-dt-20221103Z-4c72c4",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

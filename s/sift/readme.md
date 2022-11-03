@@ -1,7 +1,7 @@
 
 # Scala.js typings for sift
 
-Typings are for version 16.0.0
+Typings are for version 16.0.1
 
 ## Library description:
 MongoDB query filtering in JavaScript

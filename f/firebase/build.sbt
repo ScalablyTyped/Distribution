@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase"
-version := "9.13.0-cc7369"
+version := "9.13.0-5affa6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,8 +14,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.7-732ba6",
   "org.scalablytyped" %%% "firebase__component" % "0.5.21-2f926f",
   "org.scalablytyped" %%% "firebase__database" % "0.13.10-5f71e4",
-  "org.scalablytyped" %%% "firebase__firestore" % "3.7.2-0817b8",
-  "org.scalablytyped" %%% "firebase__firestore-compat" % "0.2.2-da9d69",
+  "org.scalablytyped" %%% "firebase__firestore" % "3.7.2-ce6972",
+  "org.scalablytyped" %%% "firebase__firestore-compat" % "0.2.2-a903fe",
   "org.scalablytyped" %%% "firebase__firestore-types" % "2.5.1-1be088",
   "org.scalablytyped" %%% "firebase__functions" % "0.8.8-117ec2",
   "org.scalablytyped" %%% "firebase__installations" % "0.5.16-a6be5f",
@@ -28,9 +28,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__storage" % "0.9.13-3afef0",
   "org.scalablytyped" %%% "firebase__util" % "1.7.3-d8aaca",
   "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-385072",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-913a7a",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-cc4119",
-  "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-4bcc1f",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-b32195",
+  "org.scalablytyped" %%% "long" % "5.2.1-0ea128",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "node-fetch" % "3.2.10-9bbd2c",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-fe2613",

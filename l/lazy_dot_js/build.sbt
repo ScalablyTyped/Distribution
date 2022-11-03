@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lazy_dot_js"
-version := "0.5.1-dt-20220818Z-136284"
+version := "0.5.1-dt-20221103Z-136284"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

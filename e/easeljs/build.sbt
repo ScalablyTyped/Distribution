@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "easeljs"
-version := "1.0.0-dt-20220818Z-70481e"
+version := "1.0.0-dt-20221103Z-70481e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

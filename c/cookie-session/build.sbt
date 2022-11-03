@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cookie-session"
-version := "2.0-dt-20211223Z-f5a69d"
+version := "2.0-dt-20221103Z-f5a69d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

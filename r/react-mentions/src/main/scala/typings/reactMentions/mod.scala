@@ -126,27 +126,34 @@ object mod {
   
   trait MentionItem extends StObject {
     
+    var childIndex: Double
+    
     var display: String
     
     var id: String
     
-    var `type`: Null
+    var index: Double
+    
+    var plainTextIndex: Double
   }
   object MentionItem {
     
-    inline def apply(display: String, id: String, `type`: Null): MentionItem = {
-      val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def apply(childIndex: Double, display: String, id: String, index: Double, plainTextIndex: Double): MentionItem = {
+      val __obj = js.Dynamic.literal(childIndex = childIndex.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], plainTextIndex = plainTextIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[MentionItem]
     }
     
     extension [Self <: MentionItem](x: Self) {
       
+      inline def setChildIndex(value: Double): Self = StObject.set(x, "childIndex", value.asInstanceOf[js.Any])
+      
       inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setType(value: Null): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setPlainTextIndex(value: Double): Self = StObject.set(x, "plainTextIndex", value.asInstanceOf[js.Any])
     }
   }
   

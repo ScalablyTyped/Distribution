@@ -485,18 +485,6 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
     def getAnalyticalQueryResult(): QueryResult = js.native
     
     /**
-      * @SINCE 1.92.0
-      *
-      * Gets the total number of leaves or `undefined` if this is unknown.
-      * See:
-      * 	sap.ui.model.odata.v4.ODataListBinding#getCount
-      *
-      * @returns The total number of leaves, or `undefined` if the number is not yet known or if the `provideTotalResultSize`
-      * binding parameter is set to `false`
-      */
-    def getCount(): js.UndefOr[Double] = js.native
-    
-    /**
       * Gets details about the dimension properties included in the bound OData entity set.
       *
       * @returns details for every dimension property addressed by its name. The details object provides these

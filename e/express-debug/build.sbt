@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-debug"
-version := "1.1.1-dt-20220818Z-c84632"
+version := "1.1.1-dt-20221103Z-c84632"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

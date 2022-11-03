@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jshamcrest"
-version := "0.7.0-dt-20220818Z-cd1a9c"
+version := "0.7.0-dt-20221103Z-cd1a9c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

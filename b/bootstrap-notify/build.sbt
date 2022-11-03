@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "bootstrap-notify"
-version := "v3.1.3-dt-20220818Z-b19f6e"
+version := "v3.1.3-dt-20220818Z-f485f5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-9d6f35",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-9d6f35",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-cfd9ff",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

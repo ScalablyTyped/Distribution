@@ -673,6 +673,9 @@ object distDeclarationsSrcSelectMod {
     /** Placeholder for the select value */
     var placeholder: ReactNode
     
+    /** Marks the value-holding input as required for form validation */
+    var required: js.UndefOr[Boolean] = js.undefined
+    
     /** Status to relay to screen readers */
     def screenReaderStatus(obj: Count): String
     
@@ -930,6 +933,10 @@ object distDeclarationsSrcSelectMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      
       inline def setScreenReaderStatus(value: Count => String): Self = StObject.set(x, "screenReaderStatus", js.Any.fromFunction1(value))
       
       inline def setStyles(value: StylesConfig[Option, IsMulti, Group]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
@@ -1146,6 +1153,8 @@ object distDeclarationsSrcSelectMod {
     def onTouchMove(param0: TouchEvent): Unit = js.native
     
     def onTouchStart(param0: TouchEvent): Unit = js.native
+    
+    var onValueInputFocus: FocusEventHandler[Element] = js.native
     
     var openAfterFocus: Boolean = js.native
     

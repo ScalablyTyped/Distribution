@@ -1767,11 +1767,20 @@ object sap {
     @JSName("sap/ui/core/XMLComposite")
     var sapSlashuiSlashcoreSlashXMLComposite: Unit
     
+    @JSName("sap/ui/core/_UrlResolver")
+    var sapSlashuiSlashcoreSlash_UrlResolver: Unit
+    
     @JSName("sap/ui/core/cache/CacheManager")
     var sapSlashuiSlashcoreSlashcacheSlashCacheManager: Unit
     
     @JSName("sap/ui/core/cache/LRUPersistentCache")
     var sapSlashuiSlashcoreSlashcacheSlashLRUPersistentCache: Unit
+    
+    @JSName("sap/ui/core/date/CalendarUtils")
+    var sapSlashuiSlashcoreSlashdateSlashCalendarUtils: Unit
+    
+    @JSName("sap/ui/core/date/CalendarWeekNumbering")
+    var sapSlashuiSlashcoreSlashdateSlashCalendarWeekNumbering: Unit
     
     @JSName("sap/ui/core/date/UniversalDate")
     var sapSlashuiSlashcoreSlashdateSlashUniversalDate: Unit
@@ -6084,9 +6093,15 @@ object sap {
       
       inline def setSapSlashuiSlashcoreSlashXMLComposite(value: Unit): Self = StObject.set(x, "sap/ui/core/XMLComposite", value.asInstanceOf[js.Any])
       
+      inline def setSapSlashuiSlashcoreSlash_UrlResolver(value: Unit): Self = StObject.set(x, "sap/ui/core/_UrlResolver", value.asInstanceOf[js.Any])
+      
       inline def setSapSlashuiSlashcoreSlashcacheSlashCacheManager(value: Unit): Self = StObject.set(x, "sap/ui/core/cache/CacheManager", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashcoreSlashcacheSlashLRUPersistentCache(value: Unit): Self = StObject.set(x, "sap/ui/core/cache/LRUPersistentCache", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashcoreSlashdateSlashCalendarUtils(value: Unit): Self = StObject.set(x, "sap/ui/core/date/CalendarUtils", value.asInstanceOf[js.Any])
+      
+      inline def setSapSlashuiSlashcoreSlashdateSlashCalendarWeekNumbering(value: Unit): Self = StObject.set(x, "sap/ui/core/date/CalendarWeekNumbering", value.asInstanceOf[js.Any])
       
       inline def setSapSlashuiSlashcoreSlashdateSlashUniversalDate(value: Unit): Self = StObject.set(x, "sap/ui/core/date/UniversalDate", value.asInstanceOf[js.Any])
       

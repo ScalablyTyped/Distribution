@@ -135,7 +135,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Adds some actionDefinition to the aggregation {@link #getActionDefinitions actionDefinitions}.
       *
@@ -149,7 +150,8 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64)
+      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.widgets.Card`.
       *
@@ -177,7 +179,8 @@ object sapUiIntegrationWidgetsCardMod {
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.64)
+      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.widgets.Card`.
       *
@@ -495,7 +498,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Destroys all the actionDefinitions in the aggregation {@link #getActionDefinitions actionDefinitions}.
       *
@@ -504,7 +508,8 @@ object sapUiIntegrationWidgetsCardMod {
     def destroyActionDefinitions(): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64)
+      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Detaches event handler `fnFunction` from the {@link #event:action action} event of this `sap.ui.integration.widgets.Card`.
       *
@@ -635,7 +640,8 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64)
+      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Fires event {@link #event:action action} to attached listeners.
       *
@@ -702,7 +708,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Gets content of aggregation {@link #getActionDefinitions actionDefinitions}.
       *
@@ -776,7 +783,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.76
-      * @EXPERIMENTAL (since 1.76)
+      * @EXPERIMENTAL (since 1.76) - This API might be removed when a permanent solution for flexibility changes
+      * is implemented.
       *
       * Gets current value of property {@link #getManifestChanges manifestChanges}.
       *
@@ -848,7 +856,7 @@ object sapUiIntegrationWidgetsCardMod {
     def getReferenceId(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83)
+      * @EXPERIMENTAL (since 1.83) - The API might change.
       *
       * Gets translated text from the i18n properties files configured for this card.
       *
@@ -932,7 +940,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Checks for the provided `sap.ui.integration.ActionDefinition` in the aggregation {@link #getActionDefinitions
       * actionDefinitions}. and returns its index if found or -1 otherwise.
@@ -948,7 +957,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Inserts a actionDefinition into the aggregation {@link #getActionDefinitions actionDefinitions}.
       *
@@ -968,7 +978,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65)
+      * @EXPERIMENTAL (since 1.65) - The API might change.
       *
       *
       * @returns If the card is ready or not.
@@ -990,7 +1000,7 @@ object sapUiIntegrationWidgetsCardMod {
     def loadDesigntime(): js.Promise[Any] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65)
+      * @EXPERIMENTAL (since 1.65) - The API might change.
       *
       * Refreshes the card by re-applying the manifest settings and triggering all data requests.
       */
@@ -1009,7 +1019,8 @@ object sapUiIntegrationWidgetsCardMod {
     vActionDefinition: String): typings.openui5.sapUiIntegrationActionDefinitionMod.default | Null = js.native
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Removes a actionDefinition from the aggregation {@link #getActionDefinitions actionDefinitions}.
       *
@@ -1028,7 +1039,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Removes all the controls from the aggregation {@link #getActionDefinitions actionDefinitions}.
       *
@@ -1087,7 +1099,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     /**
       * @SINCE 1.65
-      * @EXPERIMENTAL (since 1.65)
+      * @EXPERIMENTAL (since 1.65) - API might change.
       *
       * Sets a new value for the `dataMode` property.
       *
@@ -1137,7 +1149,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.76
-      * @EXPERIMENTAL (since 1.76)
+      * @EXPERIMENTAL (since 1.76) - This API might be removed when a permanent solution for flexibility changes
+      * is implemented.
       *
       * Sets a new value for property {@link #getManifestChanges manifestChanges}.
       *
@@ -1294,7 +1307,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Adds some actionDefinition to the aggregation {@link #getActionDefinitions actionDefinitions}.
       *
@@ -1350,7 +1364,7 @@ object sapUiIntegrationWidgetsCardMod {
     sPath: String): js.Object = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65)
+      * @EXPERIMENTAL (since 1.65) - This property might be changed in future.
       *
       * Gets current value of property {@link #getParameters parameters}.
       *
@@ -1362,7 +1376,7 @@ object sapUiIntegrationWidgetsCardMod {
     def getParameters(): js.Object = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83)
+      * @EXPERIMENTAL (since 1.83) - The API might change.
       *
       * Gets translated text from the i18n properties files configured for this card.
       *
@@ -1446,7 +1460,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Checks for the provided `sap.ui.integration.ActionDefinition` in the aggregation {@link #getActionDefinitions
       * actionDefinitions}. and returns its index if found or -1 otherwise.
@@ -1462,7 +1477,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Inserts a actionDefinition into the aggregation {@link #getActionDefinitions actionDefinitions}.
       *
@@ -1482,7 +1498,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65)
+      * @EXPERIMENTAL (since 1.65) - The API might change.
       *
       * Refreshes the card by re-applying the manifest settings and triggering all data requests.
       */
@@ -1501,7 +1517,8 @@ object sapUiIntegrationWidgetsCardMod {
     vActionDefinition: String): typings.openui5.sapUiIntegrationActionDefinitionMod.default | Null = js.native
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Removes a actionDefinition from the aggregation {@link #getActionDefinitions actionDefinitions}.
       *
@@ -1627,7 +1644,8 @@ object sapUiIntegrationWidgetsCardMod {
        with CardBaseSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.64)
+      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * be done before its official public release. Use at your own discretion.
       *
       * Fired when an action is triggered on the card.
       */
@@ -1635,7 +1653,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85)
+      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * may be done before its official public release. Use at your own discretion.
       *
       * Actions definitions from which actions in the header menu of the card are created. **Note**: This aggregation
       * is destroyed when the property `manifest` changes.
@@ -1691,7 +1710,8 @@ object sapUiIntegrationWidgetsCardMod {
     
     /**
       * @SINCE 1.76
-      * @EXPERIMENTAL (since 1.76)
+      * @EXPERIMENTAL (since 1.76) - This API might be removed when a permanent solution for flexibility changes
+      * is implemented.
       *
       * Defines a list of configuration settings, which will be merged into the original manifest.
       *
@@ -1741,7 +1761,7 @@ object sapUiIntegrationWidgetsCardMod {
     var manifestReady: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.65)
+      * @EXPERIMENTAL (since 1.65) - This property might be changed in future.
       *
       * Overrides the default values of the parameters, which are defined in the manifest. The value is an object
       * containing parameters in format `{parameterKey: parameterValue}`.

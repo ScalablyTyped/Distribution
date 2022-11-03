@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "imagemagick-native"
-version := "1.7.0-dt-20220818Z-ee4765"
+version := "1.7.0-dt-20221103Z-ee4765"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

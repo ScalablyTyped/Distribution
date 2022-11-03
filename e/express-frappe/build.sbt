@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "express-frappe"
-version := "2.1.3-96a519"
+version := "2.1.3-4721bf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "body-parser" % "1.19-dt-20211202Z-a8bfa1",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-d67c0f",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20211202Z-534f18",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20221103Z-534f18",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-routers" % "1.0.1-3d38cc",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",

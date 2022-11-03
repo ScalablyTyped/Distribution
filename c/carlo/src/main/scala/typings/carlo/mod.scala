@@ -5,8 +5,8 @@ import typings.carlo.anon.Height
 import typings.carlo.anon.Path
 import typings.carlo.carloStrings.close
 import typings.node.bufferMod.global.Buffer
-import typings.puppeteerCore.mod.Browser
-import typings.puppeteerCore.mod.Page
+import typings.puppeteer.mod.Browser
+import typings.puppeteer.mod.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

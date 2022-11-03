@@ -12,6 +12,7 @@ import typings.devtoolsProtocol.mod.Protocol.WebAuthn.GetCredentialsResponse
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.RemoveCredentialRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.RemoveVirtualAuthenticatorRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.SetAutomaticPresenceSimulationRequest
+import typings.devtoolsProtocol.mod.Protocol.WebAuthn.SetResponseOverrideBitsRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.SetUserVerifiedRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -73,6 +74,11 @@ trait WebAuthnApi extends StObject {
   def setAutomaticPresenceSimulation(params: SetAutomaticPresenceSimulationRequest): js.Promise[Unit]
   
   /**
+    * Resets parameters isBogusSignature, isBadUV, isBadUP to false if they are not present.
+    */
+  def setResponseOverrideBits(params: SetResponseOverrideBitsRequest): js.Promise[Unit]
+  
+  /**
     * Sets whether User Verification succeeds or fails for an authenticator.
     * The default is true.
     */
@@ -91,9 +97,10 @@ object WebAuthnApi {
     removeCredential: RemoveCredentialRequest => js.Promise[Unit],
     removeVirtualAuthenticator: RemoveVirtualAuthenticatorRequest => js.Promise[Unit],
     setAutomaticPresenceSimulation: SetAutomaticPresenceSimulationRequest => js.Promise[Unit],
+    setResponseOverrideBits: SetResponseOverrideBitsRequest => js.Promise[Unit],
     setUserVerified: SetUserVerifiedRequest => js.Promise[Unit]
   ): WebAuthnApi = {
-    val __obj = js.Dynamic.literal(addCredential = js.Any.fromFunction1(addCredential), addVirtualAuthenticator = js.Any.fromFunction1(addVirtualAuthenticator), clearCredentials = js.Any.fromFunction1(clearCredentials), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction1(enable), getCredential = js.Any.fromFunction1(getCredential), getCredentials = js.Any.fromFunction1(getCredentials), removeCredential = js.Any.fromFunction1(removeCredential), removeVirtualAuthenticator = js.Any.fromFunction1(removeVirtualAuthenticator), setAutomaticPresenceSimulation = js.Any.fromFunction1(setAutomaticPresenceSimulation), setUserVerified = js.Any.fromFunction1(setUserVerified))
+    val __obj = js.Dynamic.literal(addCredential = js.Any.fromFunction1(addCredential), addVirtualAuthenticator = js.Any.fromFunction1(addVirtualAuthenticator), clearCredentials = js.Any.fromFunction1(clearCredentials), disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction1(enable), getCredential = js.Any.fromFunction1(getCredential), getCredentials = js.Any.fromFunction1(getCredentials), removeCredential = js.Any.fromFunction1(removeCredential), removeVirtualAuthenticator = js.Any.fromFunction1(removeVirtualAuthenticator), setAutomaticPresenceSimulation = js.Any.fromFunction1(setAutomaticPresenceSimulation), setResponseOverrideBits = js.Any.fromFunction1(setResponseOverrideBits), setUserVerified = js.Any.fromFunction1(setUserVerified))
     __obj.asInstanceOf[WebAuthnApi]
   }
   
@@ -118,6 +125,8 @@ object WebAuthnApi {
     inline def setRemoveVirtualAuthenticator(value: RemoveVirtualAuthenticatorRequest => js.Promise[Unit]): Self = StObject.set(x, "removeVirtualAuthenticator", js.Any.fromFunction1(value))
     
     inline def setSetAutomaticPresenceSimulation(value: SetAutomaticPresenceSimulationRequest => js.Promise[Unit]): Self = StObject.set(x, "setAutomaticPresenceSimulation", js.Any.fromFunction1(value))
+    
+    inline def setSetResponseOverrideBits(value: SetResponseOverrideBitsRequest => js.Promise[Unit]): Self = StObject.set(x, "setResponseOverrideBits", js.Any.fromFunction1(value))
     
     inline def setSetUserVerified(value: SetUserVerifiedRequest => js.Promise[Unit]): Self = StObject.set(x, "setUserVerified", js.Any.fromFunction1(value))
   }

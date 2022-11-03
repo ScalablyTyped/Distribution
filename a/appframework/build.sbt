@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "appframework"
-version := "2.0-dt-20211202Z-12975f"
+version := "2.0-dt-20221103Z-12975f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

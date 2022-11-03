@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stencil__core"
-version := "2.19.1-95bfb7"
+version := "2.19.2-15f609"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

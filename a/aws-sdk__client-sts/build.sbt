@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-sts"
-version := "3.201.0-1827c5"
+version := "3.202.0-4144fe"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.201.0-e72523",
   "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.201.0-10c32c",
   "org.scalablytyped" %%% "aws-sdk__types" % "3.201.0-360262",
-  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.201.0-86f177",
+  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.202.0-8ce900",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "main-bower-files"
-version := "0.0-unknown-dt-20220818Z-cea7b5"
+version := "0.0-unknown-dt-20221103Z-cea7b5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1832,6 +1832,8 @@ import typings.awsSdk.clientsIotsitewiseMod._ComputeLocation
 import typings.awsSdk.clientsIotsitewiseMod._DetailedErrorCode
 import typings.awsSdk.clientsIotsitewiseMod._DisassociatedDataStorageState
 import typings.awsSdk.clientsIotsitewiseMod._ForwardingConfigState
+import typings.awsSdk.clientsIotsitewiseMod._ListAssetModelPropertiesFilter
+import typings.awsSdk.clientsIotsitewiseMod._ListAssetPropertiesFilter
 import typings.awsSdk.clientsIotsitewiseMod._ListAssetsFilter
 import typings.awsSdk.clientsIotsitewiseMod._ListBulkImportJobsFilter
 import typings.awsSdk.clientsIotsitewiseMod._ListTimeSeriesType
@@ -7444,6 +7446,8 @@ object awsSdkStrings {
        with _JobExecutionFailureType
        with _JsonMatchScope
        with _LensStatusType
+       with _ListAssetModelPropertiesFilter
+       with _ListAssetPropertiesFilter
        with _ListAssetsFilter
        with _ListBulkImportJobsFilter
        with _LogLevel
@@ -12766,6 +12770,8 @@ object awsSdkStrings {
   sealed trait BASE
     extends StObject
        with _LanguageType
+       with _ListAssetModelPropertiesFilter
+       with _ListAssetPropertiesFilter
   
   @js.native
   sealed trait BASE64_DECODE

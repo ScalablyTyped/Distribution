@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "meshblu"
-version := "1.30.1-dt-20220818Z-51f19d"
+version := "1.30.1-dt-20221103Z-51f19d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

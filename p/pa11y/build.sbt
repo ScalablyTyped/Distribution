@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "pa11y"
-version := "5.3-dt-20211223Z-0a42b4"
+version := "5.3-dt-20221102Z-2f7c76"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-6dfedf",
-  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1064701-d7bce2",
+  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1066334-143d2b",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "puppeteer" % "19.2.0-0d8dda",
-  "org.scalablytyped" %%% "puppeteer-core" % "19.2.0-b3f377",
+  "org.scalablytyped" %%% "puppeteer" % "19.2.1-70b4ee",
+  "org.scalablytyped" %%% "puppeteer-core" % "19.2.1-9ee1a2",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-370f29")
 publishArtifact in packageDoc := false

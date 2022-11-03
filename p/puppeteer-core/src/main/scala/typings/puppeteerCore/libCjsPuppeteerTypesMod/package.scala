@@ -105,7 +105,7 @@ inline def isString(obj: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynam
 
 inline def isTargetClosedError(err: js.Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTargetClosedError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def packageVersion: /* "19.2.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("packageVersion").asInstanceOf[/* "19.2.0" */ String]
+inline def packageVersion: /* "19.2.1" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("packageVersion").asInstanceOf[/* "19.2.1" */ String]
 
 inline def pageBindingDeliverErrorString(name: String, seq: Double, message: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pageBindingDeliverErrorString")(name.asInstanceOf[js.Any], seq.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[String]
 inline def pageBindingDeliverErrorString(name: String, seq: Double, message: String, stack: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pageBindingDeliverErrorString")(name.asInstanceOf[js.Any], seq.asInstanceOf[js.Any], message.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[String]

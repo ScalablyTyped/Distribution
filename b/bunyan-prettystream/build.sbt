@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bunyan-prettystream"
-version := "0.1.3-dt-20220818Z-9981d9"
+version := "0.1.3-dt-20221103Z-9981d9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

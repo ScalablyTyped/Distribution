@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sequelize"
-version := "4.28.0-dt-20220819Z-71a274"
+version := "4.28.0-dt-20220819Z-d4267d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220923Z-5a7a5b",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-5a7a5b",
   "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20211223Z-9f7a21",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",

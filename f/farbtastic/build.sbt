@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "farbtastic"
-version := "2.0-dt-20220525Z-db7940"
+version := "2.0-dt-20221103Z-db7940"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

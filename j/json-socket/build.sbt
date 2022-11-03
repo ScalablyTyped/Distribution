@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-socket"
-version := "v0.1.2-dt-20220818Z-7f7f67"
+version := "v0.1.2-dt-20221103Z-7f7f67"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

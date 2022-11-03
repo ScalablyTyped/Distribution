@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amqp-rpc"
-version := "v0.0.8-dt-20220818Z-a90b9e"
+version := "v0.0.8-dt-20221103Z-a90b9e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

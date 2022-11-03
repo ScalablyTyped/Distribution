@@ -75,6 +75,9 @@ object sapBaseSecurityUrllistvalidatorMod extends Shortcut {
       *
       * Note: Adding the first entry to the list of allowed entries will disallow all URLs but the ones matching
       * the newly added entry.
+      *
+      * **Note**: It is strongly recommended to set a path only in combination with an origin (never set a path
+      * alone). There's almost no case where checking only the path of a URL would allow to ensure its validity.
       */
     def add(): Unit = js.native
     def add(
@@ -341,7 +344,13 @@ object sapBaseSecurityUrllistvalidatorMod extends Shortcut {
     /**
       * Validates a URL. Check if it's not a script or other security issue.
       *
-      * Split URL into components and check for allowed characters according to RFC 3986:
+      * **Note**: It is strongly recommended to validate only absolute URLs. There's almost no case where checking
+      * only the path of a URL would allow to ensure its validity. For compatibility reasons, this API cannot
+      * automatically resolve URLs relative to `document.baseURI`, but callers should do so. In that case, and
+      * when the allow list is not empty, an entry for the origin of `document.baseURI` must be added to the
+      * allow list.
+      *
+      * Details: Splits the given URL into components and checks for allowed characters according to RFC 3986:
       *
       *
       * ```javascript

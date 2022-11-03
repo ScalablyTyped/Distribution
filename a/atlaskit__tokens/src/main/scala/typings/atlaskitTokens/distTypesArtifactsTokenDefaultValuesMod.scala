@@ -88,10 +88,10 @@ import typings.atlaskitTokens.atlaskitTokensStrings.NumbersignFFFFFF
 import typings.atlaskitTokens.atlaskitTokensStrings.NumbersignFFFFFF29
 import typings.atlaskitTokens.atlaskitTokensStrings.`0Dot2`
 import typings.atlaskitTokens.atlaskitTokensStrings.`0Dot4`
-import typings.atlaskitTokens.atlaskitTokensStrings.`0`
 import typings.atlaskitTokens.atlaskitTokensStrings.`0px 1px 1px Numbersign091E4240Comma 0px 0px 1px Numbersign091E424F`
 import typings.atlaskitTokens.atlaskitTokensStrings.`0px 8px 12px Numbersign091E4226Comma 0px 0px 1px Numbersign091E424F`
 import typings.atlaskitTokens.atlaskitTokensStrings.`0px 8px 8px Numbersign091E4214Comma 0px 0px 1px Numbersign091E421F`
+import typings.atlaskitTokens.atlaskitTokensStrings.`0px`
 import typings.atlaskitTokens.atlaskitTokensStrings.`12px`
 import typings.atlaskitTokens.atlaskitTokensStrings.`16px`
 import typings.atlaskitTokens.atlaskitTokensStrings.`20px`
@@ -1850,15 +1850,249 @@ object distTypesArtifactsTokenDefaultValuesMod {
     
     inline def shadowOverlay_=(x: `0px 8px 12px Numbersign091E4226Comma 0px 0px 1px Numbersign091E424F`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shadow.overlay")(x.asInstanceOf[js.Any])
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.container.gutter")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.component.2")
     @js.native
-    def spacingContainerGutter: `8px` = js.native
+    def spacingCccComponent2: `2px` = js.native
     
-    inline def spacingContainerGutter_=(x: `8px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.container.gutter")(x.asInstanceOf[js.Any])
+    inline def spacingCccComponent2_=(x: `2px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.component.2")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.component.4")
+    @js.native
+    def spacingCccComponent4: `4px` = js.native
+    
+    inline def spacingCccComponent4_=(x: `4px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.component.4")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.component.6")
+    @js.native
+    def spacingCccComponent6: `6px` = js.native
+    
+    inline def spacingCccComponent6_=(x: `6px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.component.6")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.component.8")
+    @js.native
+    def spacingCccComponent8: `8px` = js.native
+    
+    inline def spacingCccComponent8_=(x: `8px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.component.8")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.container.32")
+    @js.native
+    def spacingCccContainer32: `32px` = js.native
+    
+    inline def spacingCccContainer32_=(x: `32px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.container.32")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.container.40")
+    @js.native
+    def spacingCccContainer40: `40px` = js.native
+    
+    inline def spacingCccContainer40_=(x: `40px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.container.40")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.container.48")
+    @js.native
+    def spacingCccContainer48: `48px` = js.native
+    
+    inline def spacingCccContainer48_=(x: `48px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.container.48")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.content.12")
+    @js.native
+    def spacingCccContent12: `12px` = js.native
+    
+    inline def spacingCccContent12_=(x: `12px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.content.12")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.content.16")
+    @js.native
+    def spacingCccContent16: `16px` = js.native
+    
+    inline def spacingCccContent16_=(x: `16px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.content.16")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.content.20")
+    @js.native
+    def spacingCccContent20: `20px` = js.native
+    
+    inline def spacingCccContent20_=(x: `20px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.content.20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ccc.content.24")
+    @js.native
+    def spacingCccContent24: `24px` = js.native
+    
+    inline def spacingCccContent24_=(x: `24px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ccc.content.24")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.container.12")
+    @js.native
+    def spacingEclContainer12: `12px` = js.native
+    
+    inline def spacingEclContainer12_=(x: `12px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.container.12")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.container.16")
+    @js.native
+    def spacingEclContainer16: `16px` = js.native
+    
+    inline def spacingEclContainer16_=(x: `16px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.container.16")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.container.20")
+    @js.native
+    def spacingEclContainer20: `20px` = js.native
+    
+    inline def spacingEclContainer20_=(x: `20px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.container.20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.container.24")
+    @js.native
+    def spacingEclContainer24: `24px` = js.native
+    
+    inline def spacingEclContainer24_=(x: `24px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.container.24")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.element.2")
+    @js.native
+    def spacingEclElement2: `2px` = js.native
+    
+    inline def spacingEclElement2_=(x: `2px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.element.2")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.element.4")
+    @js.native
+    def spacingEclElement4: `4px` = js.native
+    
+    inline def spacingEclElement4_=(x: `4px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.element.4")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.element.6")
+    @js.native
+    def spacingEclElement6: `6px` = js.native
+    
+    inline def spacingEclElement6_=(x: `6px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.element.6")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.element.8")
+    @js.native
+    def spacingEclElement8: `8px` = js.native
+    
+    inline def spacingEclElement8_=(x: `8px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.element.8")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.layout.32")
+    @js.native
+    def spacingEclLayout32: `32px` = js.native
+    
+    inline def spacingEclLayout32_=(x: `32px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.layout.32")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.layout.40")
+    @js.native
+    def spacingEclLayout40: `40px` = js.native
+    
+    inline def spacingEclLayout40_=(x: `40px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.layout.40")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.ecl.layout.64")
+    @js.native
+    def spacingEclLayout64: `48px` = js.native
+    
+    inline def spacingEclLayout64_=(x: `48px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.ecl.layout.64")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.gap.100")
+    @js.native
+    def spacingGap100: `8px` = js.native
+    
+    inline def spacingGap100_=(x: `8px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.gap.100")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.gap.200")
+    @js.native
+    def spacingGap200: `16px` = js.native
+    
+    inline def spacingGap200_=(x: `16px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.gap.200")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.gap.300")
+    @js.native
+    def spacingGap300: `24px` = js.native
+    
+    inline def spacingGap300_=(x: `24px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.gap.300")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.inset.100")
+    @js.native
+    def spacingInset100: `8px` = js.native
+    
+    inline def spacingInset100_=(x: `8px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.inset.100")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.inset.200")
+    @js.native
+    def spacingInset200: `16px` = js.native
+    
+    inline def spacingInset200_=(x: `16px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.inset.200")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.inset.300")
+    @js.native
+    def spacingInset300: `24px` = js.native
+    
+    inline def spacingInset300_=(x: `24px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.inset.300")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.0")
+    @js.native
+    def spacingPixel0: `0px` = js.native
+    
+    inline def spacingPixel0_=(x: `0px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.0")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.12")
+    @js.native
+    def spacingPixel12: `12px` = js.native
+    
+    inline def spacingPixel12_=(x: `12px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.12")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.16")
+    @js.native
+    def spacingPixel16: `16px` = js.native
+    
+    inline def spacingPixel16_=(x: `16px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.16")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.2")
+    @js.native
+    def spacingPixel2: `2px` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.20")
+    @js.native
+    def spacingPixel20: `20px` = js.native
+    
+    inline def spacingPixel20_=(x: `20px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.24")
+    @js.native
+    def spacingPixel24: `24px` = js.native
+    
+    inline def spacingPixel24_=(x: `24px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.24")(x.asInstanceOf[js.Any])
+    
+    inline def spacingPixel2_=(x: `2px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.2")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.32")
+    @js.native
+    def spacingPixel32: `32px` = js.native
+    
+    inline def spacingPixel32_=(x: `32px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.32")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.4")
+    @js.native
+    def spacingPixel4: `4px` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.40")
+    @js.native
+    def spacingPixel40: `40px` = js.native
+    
+    inline def spacingPixel40_=(x: `40px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.40")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.48")
+    @js.native
+    def spacingPixel48: `48px` = js.native
+    
+    inline def spacingPixel48_=(x: `48px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.48")(x.asInstanceOf[js.Any])
+    
+    inline def spacingPixel4_=(x: `4px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.4")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.6")
+    @js.native
+    def spacingPixel6: `6px` = js.native
+    
+    inline def spacingPixel6_=(x: `6px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.6")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.pixel.8")
+    @js.native
+    def spacingPixel8: `8px` = js.native
+    
+    inline def spacingPixel8_=(x: `8px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.pixel.8")(x.asInstanceOf[js.Any])
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scale.0")
     @js.native
-    def spacingScale0: `0` = js.native
+    def spacingScale0: `0px` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scale.025")
     @js.native
@@ -1878,7 +2112,7 @@ object distTypesArtifactsTokenDefaultValuesMod {
     
     inline def spacingScale075_=(x: `6px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scale.075")(x.asInstanceOf[js.Any])
     
-    inline def spacingScale0_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scale.0")(x.asInstanceOf[js.Any])
+    inline def spacingScale0_=(x: `0px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scale.0")(x.asInstanceOf[js.Any])
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scale.100")
     @js.native
@@ -1927,6 +2161,150 @@ object distTypesArtifactsTokenDefaultValuesMod {
     def spacingScale600: `48px` = js.native
     
     inline def spacingScale600_=(x: `48px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scale.600")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.0")
+    @js.native
+    def spacingScaleLinear0: `0px` = js.native
+    
+    inline def spacingScaleLinear0_=(x: `0px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.0")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.100")
+    @js.native
+    def spacingScaleLinear100: `2px` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.1000")
+    @js.native
+    def spacingScaleLinear1000: `40px` = js.native
+    
+    inline def spacingScaleLinear1000_=(x: `40px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.1000")(x.asInstanceOf[js.Any])
+    
+    inline def spacingScaleLinear100_=(x: `2px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.100")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.1100")
+    @js.native
+    def spacingScaleLinear1100: `48px` = js.native
+    
+    inline def spacingScaleLinear1100_=(x: `48px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.1100")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.200")
+    @js.native
+    def spacingScaleLinear200: `4px` = js.native
+    
+    inline def spacingScaleLinear200_=(x: `4px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.200")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.300")
+    @js.native
+    def spacingScaleLinear300: `6px` = js.native
+    
+    inline def spacingScaleLinear300_=(x: `6px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.300")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.400")
+    @js.native
+    def spacingScaleLinear400: `8px` = js.native
+    
+    inline def spacingScaleLinear400_=(x: `8px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.400")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.500")
+    @js.native
+    def spacingScaleLinear500: `12px` = js.native
+    
+    inline def spacingScaleLinear500_=(x: `12px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.500")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.600")
+    @js.native
+    def spacingScaleLinear600: `16px` = js.native
+    
+    inline def spacingScaleLinear600_=(x: `16px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.600")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.700")
+    @js.native
+    def spacingScaleLinear700: `20px` = js.native
+    
+    inline def spacingScaleLinear700_=(x: `20px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.700")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.800")
+    @js.native
+    def spacingScaleLinear800: `24px` = js.native
+    
+    inline def spacingScaleLinear800_=(x: `24px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.800")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.scaleLinear.900")
+    @js.native
+    def spacingScaleLinear900: `32px` = js.native
+    
+    inline def spacingScaleLinear900_=(x: `32px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.scaleLinear.900")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.large")
+    @js.native
+    def spacingSizeLarge: `20px` = js.native
+    
+    inline def spacingSizeLarge_=(x: `20px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.large")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.medium")
+    @js.native
+    def spacingSizeMedium: `16px` = js.native
+    
+    inline def spacingSizeMedium_=(x: `16px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.medium")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.none")
+    @js.native
+    def spacingSizeNone: `0px` = js.native
+    
+    inline def spacingSizeNone_=(x: `0px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.none")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.small")
+    @js.native
+    def spacingSizeSmall: `12px` = js.native
+    
+    inline def spacingSizeSmall_=(x: `12px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.small")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.xlarge")
+    @js.native
+    def spacingSizeXlarge: `24px` = js.native
+    
+    inline def spacingSizeXlarge_=(x: `24px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.xlarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.xsmall")
+    @js.native
+    def spacingSizeXsmall: `8px` = js.native
+    
+    inline def spacingSizeXsmall_=(x: `8px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.xsmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.xxSmall")
+    @js.native
+    def spacingSizeXxSmall: `6px` = js.native
+    
+    inline def spacingSizeXxSmall_=(x: `6px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.xxSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.xxlarge")
+    @js.native
+    def spacingSizeXxlarge: `32px` = js.native
+    
+    inline def spacingSizeXxlarge_=(x: `32px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.xxlarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.xxxSmall")
+    @js.native
+    def spacingSizeXxxSmall: `4px` = js.native
+    
+    inline def spacingSizeXxxSmall_=(x: `4px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.xxxSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.xxxlarge")
+    @js.native
+    def spacingSizeXxxlarge: `40px` = js.native
+    
+    inline def spacingSizeXxxlarge_=(x: `40px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.xxxlarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.xxxxSmall")
+    @js.native
+    def spacingSizeXxxxSmall: `2px` = js.native
+    
+    inline def spacingSizeXxxxSmall_=(x: `2px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.xxxxSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.spacing.size.xxxxlarge")
+    @js.native
+    def spacingSizeXxxxlarge: `48px` = js.native
+    
+    inline def spacingSizeXxxxlarge_=(x: `48px`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing.size.xxxxlarge")(x.asInstanceOf[js.Any])
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-default-values", "default.utility.UNSAFE_util.MISSING_TOKEN")
     @js.native

@@ -14,7 +14,7 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsSelectedKeyMod extends Sho
   
   /**
     * @SINCE 1.81
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - 1.81
     *
     * Validates if the provided value is one of the given keys.
     */

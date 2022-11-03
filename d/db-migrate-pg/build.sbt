@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "db-migrate-pg"
-version := "0.0-unknown-dt-20220818Z-70805a"
+version := "0.0-unknown-dt-20220818Z-9b49b6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20220923Z-5a7a5b",
-  "org.scalablytyped" %%% "db-migrate-base" % "0.0-unknown-dt-20220818Z-39562d",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20221103Z-5a7a5b",
+  "org.scalablytyped" %%% "db-migrate-base" % "0.0-unknown-dt-20220818Z-e74907",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "pg" % "8.6-dt-20220307Z-bc3914",
   "org.scalablytyped" %%% "pg-protocol" % "1.5.0-ba274d",

@@ -1,23 +1,27 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.atlaskitTokensStrings.scale
+import typings.atlaskitTokens.distTypesTypesMod.PaintToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `13` extends StObject {
+trait `13`[BaseToken] extends StObject {
   
-  var group: scale
+  var hover: PaintToken[BaseToken]
+  
+  var pressed: PaintToken[BaseToken]
 }
 object `13` {
   
-  inline def apply(): `13` = {
-    val __obj = js.Dynamic.literal(group = "scale")
-    __obj.asInstanceOf[`13`]
+  inline def apply[BaseToken](hover: PaintToken[BaseToken], pressed: PaintToken[BaseToken]): `13`[BaseToken] = {
+    val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`13`[BaseToken]]
   }
   
-  extension [Self <: `13`](x: Self) {
+  extension [Self <: `13`[?], BaseToken](x: Self & `13`[BaseToken]) {
     
-    inline def setGroup(value: scale): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setHover(value: PaintToken[BaseToken]): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    
+    inline def setPressed(value: PaintToken[BaseToken]): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tspromise"
-version := "0.0.4-dt-20220818Z-f49e00"
+version := "0.0.4-dt-20221103Z-f49e00"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UserIdentity extends StObject {
   
   /**
-    * The Amazon Web Services SSO ID of the user.
+    * The IAM Identity Center ID of the user.
     */
   var id: IdentityId
 }

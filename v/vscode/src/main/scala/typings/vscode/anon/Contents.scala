@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Contents extends StObject {
   
-  var contents: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+  val contents: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   
-  var ignoreIfExists: js.UndefOr[Boolean] = js.undefined
+  val ignoreIfExists: js.UndefOr[Boolean] = js.undefined
   
-  var overwrite: js.UndefOr[Boolean] = js.undefined
+  val overwrite: js.UndefOr[Boolean] = js.undefined
 }
 object Contents {
   

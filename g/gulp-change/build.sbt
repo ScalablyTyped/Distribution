@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gulp-change"
-version := "1.0-dt-20220624Z-9c2821"
+version := "1.0-dt-20220624Z-a5a177"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "event-stream" % "v4.0-dt-20220818Z-9a7532",
+  "org.scalablytyped" %%% "event-stream" % "v4.0-dt-20221103Z-9a7532",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "loader-runner"
-version := "v2.2.0-dt-20220818Z-184e46"
+version := "v2.2.0-dt-20221103Z-184e46"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

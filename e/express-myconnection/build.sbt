@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-myconnection"
-version := "v1.0.4-dt-20220818Z-a064d5"
+version := "v1.0.4-dt-20221103Z-a064d5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

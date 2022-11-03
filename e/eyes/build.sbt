@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "eyes"
-version := "0.1.8-dt-20220818Z-5e576b"
+version := "0.1.8-dt-20221103Z-5e576b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

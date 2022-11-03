@@ -7,6 +7,7 @@ import typings.openui5.anon.StartDate
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCoreCalendarTypeMod.CalendarType
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ID
@@ -1052,6 +1053,18 @@ object sapMPlanningCalendarMod {
     def getNoDataText(): String = js.native
     
     /**
+      * @SINCE 1.108.0
+      *
+      * Gets current value of property {@link #getPrimaryCalendarType primaryCalendarType}.
+      *
+      * If set, the calendar type is used for display. If not set, the calendar type of the global configuration
+      * is used.
+      *
+      * @returns Value of property `primaryCalendarType`
+      */
+    def getPrimaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
+    
+    /**
       * Gets content of aggregation {@link #getRows rows}.
       *
       * Rows of the `PlanningCalendar`.
@@ -1852,6 +1865,24 @@ object sapMPlanningCalendarMod {
       */
     sNoDataText: String): this.type = js.native
     
+    def setPrimaryCalendarType(
+      /**
+      * the `sap.ui.core.CalendarType` to set as `sap.m.PlanningCalendar` `primaryCalendarType`.
+      */
+    sPrimaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
+    ): this.type = js.native
+    /**
+      * Sets the primaryCalendarType. If not set, the calendar type of the global configuration is used.
+      *
+      * @returns `this` to allow method chaining
+      */
+    def setPrimaryCalendarType(
+      /**
+      * the `sap.ui.core.CalendarType` to set as `sap.m.PlanningCalendar` `primaryCalendarType`.
+      */
+    sPrimaryCalendarType: CalendarType
+    ): this.type = js.native
+    
     /**
       * @SINCE 1.50
       *
@@ -2188,6 +2219,16 @@ object sapMPlanningCalendarMod {
     var noDataText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
+      * @SINCE 1.108.0
+      *
+      * If set, the calendar type is used for display. If not set, the calendar type of the global configuration
+      * is used.
+      */
+    var primaryCalendarType: js.UndefOr[
+        CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * @SINCE 1.46.0
       *
       * Fires when a row header is clicked.
@@ -2438,6 +2479,12 @@ object sapMPlanningCalendarMod {
       inline def setNoDataText(value: String | PropertyBindingInfo): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
       
       inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
+      
+      inline def setPrimaryCalendarType(
+        value: CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "primaryCalendarType", value.asInstanceOf[js.Any])
+      
+      inline def setPrimaryCalendarTypeUndefined: Self = StObject.set(x, "primaryCalendarType", js.undefined)
       
       inline def setRowHeaderClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "rowHeaderClick", js.Any.fromFunction1(value))
       

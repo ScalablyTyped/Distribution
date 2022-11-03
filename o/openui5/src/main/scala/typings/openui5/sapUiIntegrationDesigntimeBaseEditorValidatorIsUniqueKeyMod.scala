@@ -14,7 +14,7 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsUniqueKeyMod extends Short
   
   /**
     * @SINCE 1.81
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - 1.81
     *
     * Validates if the provided key is unique in a list of given keys.
     */

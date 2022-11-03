@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "revalidator"
-version := "0.3.1-dt-20220818Z-01b67d"
+version := "0.3.1-dt-20221103Z-01b67d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

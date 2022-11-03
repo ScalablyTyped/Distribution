@@ -1,6 +1,6 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.distTypesTypesMod.Themes
+import typings.atlaskitTokens.distTypesThemeConfigMod.ThemeIds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +11,6 @@ object distTypesSetGlobalThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(theme: Themes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(themeId: ThemeIds): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(themeId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(themeId: ThemeIds, shouldMatchSystem: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(themeId.asInstanceOf[js.Any], shouldMatchSystem.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

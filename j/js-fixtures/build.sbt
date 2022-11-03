@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-fixtures"
-version := "1.2.0-dt-20220818Z-aec851"
+version := "1.2.0-dt-20221103Z-aec851"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

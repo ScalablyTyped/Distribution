@@ -1,6 +1,7 @@
 package typings.mapboxGl.anon
 
 import typings.mapboxGl.mod.PositionOptions
+import typings.std.Geolocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FitBoundsOptions extends StObject {
   
   var fitBoundsOptions: js.UndefOr[typings.mapboxGl.mod.FitBoundsOptions] = js.undefined
+  
+  var geolocation: js.UndefOr[Geolocation] = js.undefined
   
   var positionOptions: js.UndefOr[PositionOptions] = js.undefined
   
@@ -31,6 +34,10 @@ object FitBoundsOptions {
     inline def setFitBoundsOptions(value: typings.mapboxGl.mod.FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
     
     inline def setFitBoundsOptionsUndefined: Self = StObject.set(x, "fitBoundsOptions", js.undefined)
+    
+    inline def setGeolocation(value: Geolocation): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
+    
+    inline def setGeolocationUndefined: Self = StObject.set(x, "geolocation", js.undefined)
     
     inline def setPositionOptions(value: PositionOptions): Self = StObject.set(x, "positionOptions", value.asInstanceOf[js.Any])
     

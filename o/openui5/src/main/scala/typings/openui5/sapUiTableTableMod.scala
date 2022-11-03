@@ -1380,7 +1380,8 @@ object sapUiTableTableMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL
+      * @EXPERIMENTAL - Experimental! Presently implemented to only work with a very limited set of controls
+      * (e.g. sap.m.Text).
       *
       * Triggers automatic resizing of a column to the widest content.
       */
@@ -1942,7 +1943,8 @@ object sapUiTableTableMod {
     
     /**
       * @deprecated (since 1.56) - replaced by the `sap.ui.export` library.
-      * @EXPERIMENTAL
+      * @EXPERIMENTAL - Experimental because the property for the column/cell definitions (sortProperty) could
+      * change in future.
       *
       * Creates a new {@link sap.ui.core.util.Export} object and fills row/column information from the table
       * if not provided. For the cell content, the column's "sortProperty" will be used (experimental!)
@@ -2396,7 +2398,7 @@ object sapUiTableTableMod {
     def getEnableCustomFilter(): Boolean = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.28)
+      * @EXPERIMENTAL (since 1.28) - This feature has a limited functionality.
       *
       * Gets current value of property {@link #getEnableGrouping enableGrouping}.
       *
@@ -2512,7 +2514,7 @@ object sapUiTableTableMod {
     def getFooter(): typings.openui5.sapUiCoreControlMod.default | String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.28)
+      * @EXPERIMENTAL (since 1.28) - This feature has a limited functionality.
       *
       * ID of the element which is the current target of the association {@link #getGroupBy groupBy}, or `null`.
       */
@@ -3314,7 +3316,7 @@ object sapUiTableTableMod {
     bEnableCustomFilter: Boolean): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.28)
+      * @EXPERIMENTAL (since 1.28) - This feature has a limited functionality.
       *
       * Sets a new value for property {@link #getEnableGrouping enableGrouping}.
       *
@@ -3465,7 +3467,7 @@ object sapUiTableTableMod {
     vFooter: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.28)
+      * @EXPERIMENTAL (since 1.28) - This feature has a limited functionality.
       *
       * Sets the associated {@link #getGroupBy groupBy}.
       *
@@ -4109,7 +4111,7 @@ object sapUiTableTableMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.28)
+      * @EXPERIMENTAL (since 1.28) - This feature has a limited functionality.
       *
       * Enables or disables grouping. If grouping is enabled, the table is grouped by the column which is defined
       * in the `groupBy` association.
@@ -4212,7 +4214,7 @@ object sapUiTableTableMod {
     var group: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.28)
+      * @EXPERIMENTAL (since 1.28) - This feature has a limited functionality.
       *
       * The column by which the table is grouped. Grouping will only be performed if `enableGrouping` is set
       * to `true`. Setting `groupBy` in the view does not work and throws an error. It can only be set if the

@@ -2,7 +2,6 @@ package typings.reactNativeSvg
 
 import typings.react.mod.ReactNode
 import typings.reactNativeSvg.anon.Height
-import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.CommonPathProps
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
 import org.scalablytyped.runtime.StObject
@@ -46,8 +45,6 @@ object libTypescriptElementsMaskMod {
     
     var maskContentUnits: js.UndefOr[TMaskUnits] = js.undefined
     
-    var maskTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
-    
     var maskUnits: js.UndefOr[TMaskUnits] = js.undefined
     
     var width: js.UndefOr[NumberProp] = js.undefined
@@ -78,10 +75,6 @@ object libTypescriptElementsMaskMod {
       inline def setMaskContentUnits(value: TMaskUnits): Self = StObject.set(x, "maskContentUnits", value.asInstanceOf[js.Any])
       
       inline def setMaskContentUnitsUndefined: Self = StObject.set(x, "maskContentUnits", js.undefined)
-      
-      inline def setMaskTransform(value: ColumnMajorTransformMatrix | String): Self = StObject.set(x, "maskTransform", value.asInstanceOf[js.Any])
-      
-      inline def setMaskTransformUndefined: Self = StObject.set(x, "maskTransform", js.undefined)
       
       inline def setMaskUnits(value: TMaskUnits): Self = StObject.set(x, "maskUnits", value.asInstanceOf[js.Any])
       

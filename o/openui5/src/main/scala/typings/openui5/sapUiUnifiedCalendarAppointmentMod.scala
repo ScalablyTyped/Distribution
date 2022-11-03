@@ -125,7 +125,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     
     /**
       * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Adds some customContent to the aggregation {@link #getCustomContent customContent}.
       *
@@ -140,7 +141,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     
     /**
       * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Destroys all the customContent in the aggregation {@link #getCustomContent customContent}.
       *
@@ -150,7 +152,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     
     /**
       * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Gets content of aggregation {@link #getCustomContent customContent}.
       *
@@ -240,7 +243,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     
     /**
       * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Checks for the provided `sap.ui.core.Control` in the aggregation {@link #getCustomContent customContent}.
       * and returns its index if found or -1 otherwise.
@@ -256,7 +260,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     
     /**
       * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Inserts a customContent into the aggregation {@link #getCustomContent customContent}.
       *
@@ -277,7 +282,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     
     /**
       * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Removes all the controls from the aggregation {@link #getCustomContent customContent}.
       *
@@ -293,7 +299,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     vCustomContent: String): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
       * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Removes a customContent from the aggregation {@link #getCustomContent customContent}.
       *
@@ -427,7 +434,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     
     /**
       * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93)
+      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * the future.
       *
       * Holds the content of the appointment.
       *

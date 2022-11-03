@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-drive-realtime-api"
-version := "0.0-unknown-dt-20220818Z-f6b613"
+version := "0.0-unknown-dt-20221103Z-f6b613"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

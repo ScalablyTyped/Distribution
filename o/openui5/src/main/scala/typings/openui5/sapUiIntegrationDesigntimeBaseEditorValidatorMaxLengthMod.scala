@@ -13,7 +13,7 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorMaxLengthMod extends Shortcu
   
   /**
     * @SINCE 1.81
-    * @EXPERIMENTAL
+    * @EXPERIMENTAL - 1.81
     *
     * Validates if the provided value doesn't exceed the maximum length.
     */

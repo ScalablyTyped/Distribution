@@ -1,8 +1,6 @@
 package typings.antlr4Autosuggest
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.antlr4.mod.Lexer
-import typings.antlr4.mod.Parser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +11,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def autosuggester(lexerCtr: Constructor[Lexer], parserCtr: Constructor[Parser]): AutoSuggester_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autosuggester")(lexerCtr.asInstanceOf[js.Any], parserCtr.asInstanceOf[js.Any])).asInstanceOf[AutoSuggester_]
-  inline def autosuggester(lexerCtr: Constructor[Lexer], parserCtr: Constructor[Parser], casePref: CasePreference): AutoSuggester_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autosuggester")(lexerCtr.asInstanceOf[js.Any], parserCtr.asInstanceOf[js.Any], casePref.asInstanceOf[js.Any])).asInstanceOf[AutoSuggester_]
+  inline def autosuggester(
+    lexerCtr: Constructor[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify antlr4.Lexer */ Any
+    ],
+    parserCtr: Constructor[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify antlr4.Parser */ Any
+    ]
+  ): AutoSuggester_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autosuggester")(lexerCtr.asInstanceOf[js.Any], parserCtr.asInstanceOf[js.Any])).asInstanceOf[AutoSuggester_]
+  inline def autosuggester(
+    lexerCtr: Constructor[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify antlr4.Lexer */ Any
+    ],
+    parserCtr: Constructor[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify antlr4.Parser */ Any
+    ],
+    casePref: CasePreference
+  ): AutoSuggester_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autosuggester")(lexerCtr.asInstanceOf[js.Any], parserCtr.asInstanceOf[js.Any], casePref.asInstanceOf[js.Any])).asInstanceOf[AutoSuggester_]
   
   trait AutoSuggester_ extends StObject {
     

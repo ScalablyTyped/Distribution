@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "history_dot_js"
-version := "1.8.0-dt-20220818Z-c6e699"
+version := "1.8.0-dt-20221103Z-c6e699"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oboe"
-version := "2.1-dt-20220818Z-e6da3d"
+version := "2.1-dt-20221103Z-e6da3d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

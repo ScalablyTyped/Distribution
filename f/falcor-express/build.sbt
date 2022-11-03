@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "falcor-express"
-version := "0.1.2-dt-20220818Z-6045ff"
+version := "0.1.2-dt-20221103Z-77101c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
-  "org.scalablytyped" %%% "falcor" % "2.0-dt-20211202Z-8c0d4f",
-  "org.scalablytyped" %%% "falcor-http-datasource" % "0.1.3-dt-20220818Z-32836e",
-  "org.scalablytyped" %%% "falcor-json-graph" % "1.1.7-dt-20220913Z-e6d948",
+  "org.scalablytyped" %%% "falcor" % "2.0-dt-20211202Z-ff759f",
+  "org.scalablytyped" %%% "falcor-http-datasource" % "0.1.3-dt-20221103Z-32836e",
+  "org.scalablytyped" %%% "falcor-json-graph" % "1.1.7-dt-20221103Z-e6d948",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",

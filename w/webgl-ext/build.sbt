@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webgl-ext"
-version := "0.0-unknown-dt-20220818Z-7f9a0e"
+version := "0.0-unknown-dt-20221103Z-7f9a0e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

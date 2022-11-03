@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-minify"
-version := "v0.1.6-dt-20220818Z-b8280b"
+version := "v0.1.6-dt-20221103Z-b8280b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "devtools-protocol" : "0.0.1064701"
+      "devtools-protocol" : "0.0.1066334"
     }
   ],
   "test-dependencies" : [
     {
-      "devtools-protocol" : "0.0.1064701"
+      "devtools-protocol" : "0.0.1066334"
     }
   ],
   "compile-devDependencies" : [

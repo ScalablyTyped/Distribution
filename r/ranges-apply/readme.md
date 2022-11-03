@@ -1,7 +1,7 @@
 
 # Scala.js typings for ranges-apply
 
-Typings are for version 6.2.10
+Typings are for version 6.2.11
 
 ## Library description:
 Take an array of string index ranges, delete/replace the string according to them

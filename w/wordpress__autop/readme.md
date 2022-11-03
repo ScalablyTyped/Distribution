@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__autop
 
-Typings are for version 3.20.0
+Typings are for version 3.21.0
 
 ## Library description:
 WordPress's automatic paragraph functions `autop` and `removep`.

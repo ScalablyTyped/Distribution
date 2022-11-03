@@ -2,10 +2,41 @@ package typings.reactNativeSvg
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
+import typings.react.mod.ElementType
+import typings.react.mod.MutableRefObject
+import typings.react.mod.RefCallback
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNativeSvg.anon.BasePropsxNumberPropundef
+import typings.reactNativeSvg.anon.Style
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
 import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
+import typings.reactNativeSvg.reactNativeSvgStrings.circle
+import typings.reactNativeSvg.reactNativeSvgStrings.clipPath
+import typings.reactNativeSvg.reactNativeSvgStrings.defs
+import typings.reactNativeSvg.reactNativeSvgStrings.ellipse
+import typings.reactNativeSvg.reactNativeSvgStrings.foreignObject
+import typings.reactNativeSvg.reactNativeSvgStrings.g
+import typings.reactNativeSvg.reactNativeSvgStrings.image
+import typings.reactNativeSvg.reactNativeSvgStrings.line
+import typings.reactNativeSvg.reactNativeSvgStrings.linearGradient
+import typings.reactNativeSvg.reactNativeSvgStrings.marker
+import typings.reactNativeSvg.reactNativeSvgStrings.mask
+import typings.reactNativeSvg.reactNativeSvgStrings.path
+import typings.reactNativeSvg.reactNativeSvgStrings.pattern
+import typings.reactNativeSvg.reactNativeSvgStrings.polygon
+import typings.reactNativeSvg.reactNativeSvgStrings.polyline
+import typings.reactNativeSvg.reactNativeSvgStrings.radialGradient
+import typings.reactNativeSvg.reactNativeSvgStrings.rect
+import typings.reactNativeSvg.reactNativeSvgStrings.stop
+import typings.reactNativeSvg.reactNativeSvgStrings.svg
+import typings.reactNativeSvg.reactNativeSvgStrings.symbol
+import typings.reactNativeSvg.reactNativeSvgStrings.text
+import typings.reactNativeSvg.reactNativeSvgStrings.textPath
+import typings.reactNativeSvg.reactNativeSvgStrings.tspan
+import typings.reactNativeSvg.reactNativeSvgStrings.use
+import typings.std.Partial
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +54,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Circle protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Circle: circle = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "ClipPath")
@@ -30,6 +64,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class ClipPath protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_ClipPath: clipPath = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Defs")
@@ -37,6 +74,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Defs protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Defs: defs = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Ellipse")
@@ -44,6 +84,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Ellipse protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Ellipse: ellipse = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "ForeignObject")
@@ -51,6 +94,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class ForeignObject protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_ForeignObject: foreignObject = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "G")
@@ -58,6 +104,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class G protected ()
     extends WebShape[BasePropsxNumberPropundef, js.Object] {
     def this(props: BasePropsxNumberPropundef, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_G: g = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Image")
@@ -65,6 +114,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Image protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Image: image = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Line")
@@ -72,6 +124,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Line protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Line: line = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "LinearGradient")
@@ -79,6 +134,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class LinearGradient protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_LinearGradient: linearGradient = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Marker")
@@ -86,6 +144,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Marker protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Marker: marker = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Mask")
@@ -93,6 +154,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Mask protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Mask: mask = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Path")
@@ -100,6 +164,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Path protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Path: path = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Pattern")
@@ -107,6 +174,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Pattern protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Pattern: pattern = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Polygon")
@@ -114,6 +184,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Polygon protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Polygon: polygon = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Polyline")
@@ -121,6 +194,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Polyline protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Polyline: polyline = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "RadialGradient")
@@ -128,6 +204,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class RadialGradient protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_RadialGradient: radialGradient = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Rect")
@@ -135,6 +214,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Rect protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Rect: rect = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Stop")
@@ -142,6 +224,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Stop protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Stop: stop = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Svg")
@@ -149,6 +234,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Svg protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Svg: svg = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Symbol")
@@ -156,6 +244,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Symbol protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Symbol: symbol = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "TSpan")
@@ -163,6 +254,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class TSpan protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_TSpan: tspan = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Text")
@@ -170,6 +264,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Text protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Text: text = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "TextPath")
@@ -177,6 +274,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class TextPath protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_TextPath: textPath = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "Use")
@@ -184,6 +284,9 @@ object libTypescriptReactNativeSVGDotwebMod {
   open class Use protected ()
     extends WebShape[BaseProps, js.Object] {
     def this(props: BaseProps, context: js.Object) = this()
+    
+    @JSName("tag")
+    var tag_Use: use = js.native
   }
   
   @JSImport("react-native-svg/lib/typescript/ReactNativeSVG.web", "WebShape")
@@ -194,6 +297,19 @@ object libTypescriptReactNativeSVGDotwebMod {
     def this(props: P, context: C) = this()
     
     def _remeasureMetricsOnActivation(): Unit = js.native
+    
+    var elementRef: MutableRefObject[SVGElement | Null] = js.native
+    
+    var lastMergedProps: Partial[P] = js.native
+    
+    /* protected */ def prepareProps(props: P): P = js.native
+    
+    /**
+      * disclaimer: I am not sure why the props are wrapped in a `style` attribute here, but that's how reanimated calls it
+      */
+    def setNativeProps(props: Style[P]): Unit = js.native
+    
+    /* protected */ var tag: js.UndefOr[ElementType[Any]] = js.native
     
     var touchableHandleResponderGrant: js.UndefOr[js.Function1[/* e */ GestureResponderEvent, Unit]] = js.native
     
@@ -238,6 +354,12 @@ object libTypescriptReactNativeSVGDotwebMod {
     
     var fontWeight: js.UndefOr[NumberProp] = js.undefined
     
+    var forwardedRef: js.UndefOr[RefCallback[SVGElement] | (MutableRefObject[SVGElement | Null])] = js.undefined
+    
+    var gradientTransform: js.UndefOr[
+        ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ] = js.undefined
+    
     var hitSlop: js.UndefOr[EdgeInsetsProp] = js.undefined
     
     var nativeID: js.UndefOr[String] = js.undefined
@@ -258,47 +380,50 @@ object libTypescriptReactNativeSVGDotwebMod {
     
     var onPressOut: js.UndefOr[js.Function1[/* event */ PressEvent, js.Object]] = js.undefined
     
-    var originX: NumberProp
+    var origin: js.UndefOr[NumberArray] = js.undefined
     
-    var originY: NumberProp
+    var originX: js.UndefOr[NumberProp] = js.undefined
+    
+    var originY: js.UndefOr[NumberProp] = js.undefined
+    
+    var patternTransform: js.UndefOr[
+        ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ] = js.undefined
     
     var pressRetentionOffset: js.UndefOr[EdgeInsetsProp] = js.undefined
     
     var rejectResponderTermination: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: NumberArray
+    var rotation: js.UndefOr[NumberProp] = js.undefined
     
-    var scale: NumberArray
+    var scale: js.UndefOr[NumberArray] = js.undefined
     
-    var skewX: NumberProp
+    var scaleX: js.UndefOr[NumberProp] = js.undefined
     
-    var skewY: NumberProp
+    var scaleY: js.UndefOr[NumberProp] = js.undefined
+    
+    var skewX: js.UndefOr[NumberProp] = js.undefined
+    
+    var skewY: js.UndefOr[NumberProp] = js.undefined
     
     var style: js.Iterable[js.Object]
     
     var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var translate: NumberArray
+    var transform: js.UndefOr[
+        ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ] = js.undefined
     
-    var translateX: NumberProp
+    var translate: js.UndefOr[NumberArray] = js.undefined
     
-    var translateY: NumberProp
+    var translateX: js.UndefOr[NumberProp] = js.undefined
+    
+    var translateY: js.UndefOr[NumberProp] = js.undefined
   }
   object BaseProps {
     
-    inline def apply(
-      originX: NumberProp,
-      originY: NumberProp,
-      rotation: NumberArray,
-      scale: NumberArray,
-      skewX: NumberProp,
-      skewY: NumberProp,
-      style: js.Iterable[js.Object],
-      translate: NumberArray,
-      translateX: NumberProp,
-      translateY: NumberProp
-    ): BaseProps = {
-      val __obj = js.Dynamic.literal(originX = originX.asInstanceOf[js.Any], originY = originY.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], skewX = skewX.asInstanceOf[js.Any], skewY = skewY.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any], translateX = translateX.asInstanceOf[js.Any], translateY = translateY.asInstanceOf[js.Any])
+    inline def apply(style: js.Iterable[js.Object]): BaseProps = {
+      val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseProps]
     }
     
@@ -360,6 +485,18 @@ object libTypescriptReactNativeSVGDotwebMod {
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
+      inline def setForwardedRef(value: RefCallback[SVGElement] | (MutableRefObject[SVGElement | Null])): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
+      
+      inline def setForwardedRefFunction1(value: /* instance */ SVGElement | Null => Unit): Self = StObject.set(x, "forwardedRef", js.Any.fromFunction1(value))
+      
+      inline def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
+      
+      inline def setGradientTransform(
+        value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+      
+      inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
+      
       inline def setHitSlop(value: EdgeInsetsProp): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
       
       inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
@@ -400,9 +537,25 @@ object libTypescriptReactNativeSVGDotwebMod {
       
       inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
+      inline def setOrigin(value: NumberArray): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      
+      inline def setOriginVarargs(value: NumberProp*): Self = StObject.set(x, "origin", js.Array(value*))
+      
       inline def setOriginX(value: NumberProp): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
       
+      inline def setOriginXUndefined: Self = StObject.set(x, "originX", js.undefined)
+      
       inline def setOriginY(value: NumberProp): Self = StObject.set(x, "originY", value.asInstanceOf[js.Any])
+      
+      inline def setOriginYUndefined: Self = StObject.set(x, "originY", js.undefined)
+      
+      inline def setPatternTransform(
+        value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
+      
+      inline def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
       
       inline def setPressRetentionOffset(value: EdgeInsetsProp): Self = StObject.set(x, "pressRetentionOffset", value.asInstanceOf[js.Any])
       
@@ -412,17 +565,31 @@ object libTypescriptReactNativeSVGDotwebMod {
       
       inline def setRejectResponderTerminationUndefined: Self = StObject.set(x, "rejectResponderTermination", js.undefined)
       
-      inline def setRotation(value: NumberArray): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: NumberProp): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      inline def setRotationVarargs(value: NumberProp*): Self = StObject.set(x, "rotation", js.Array(value*))
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
       inline def setScale(value: NumberArray): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      
       inline def setScaleVarargs(value: NumberProp*): Self = StObject.set(x, "scale", js.Array(value*))
+      
+      inline def setScaleX(value: NumberProp): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      
+      inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+      
+      inline def setScaleY(value: NumberProp): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+      
+      inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
       
       inline def setSkewX(value: NumberProp): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
       
+      inline def setSkewXUndefined: Self = StObject.set(x, "skewX", js.undefined)
+      
       inline def setSkewY(value: NumberProp): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
+      
+      inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
       
       inline def setStyle(value: js.Iterable[js.Object]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -430,13 +597,25 @@ object libTypescriptReactNativeSVGDotwebMod {
       
       inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
       
+      inline def setTransform(
+        value: ColumnMajorTransformMatrix | String | (/* import warning: importer.ImportType#apply Failed type conversion: react-native.react-native.TransformsStyle['transform'] */ js.Any)
+      ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      
       inline def setTranslate(value: NumberArray): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
       inline def setTranslateVarargs(value: NumberProp*): Self = StObject.set(x, "translate", js.Array(value*))
       
       inline def setTranslateX(value: NumberProp): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
       
+      inline def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
+      
       inline def setTranslateY(value: NumberProp): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+      
+      inline def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
     }
   }
   

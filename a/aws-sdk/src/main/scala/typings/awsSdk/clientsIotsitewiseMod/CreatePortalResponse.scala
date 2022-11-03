@@ -17,7 +17,7 @@ trait CreatePortalResponse extends StObject {
   var portalId: ID
   
   /**
-    * The URL for the IoT SiteWise Monitor portal. You can use this URL to access portals that use Amazon Web Services SSO for authentication. For portals that use IAM for authentication, you must use the IoT SiteWise console to get a URL that you can use to access the portal.
+    * The URL for the IoT SiteWise Monitor portal. You can use this URL to access portals that use IAM Identity Center for authentication. For portals that use IAM for authentication, you must use the IoT SiteWise console to get a URL that you can use to access the portal.
     */
   var portalStartUrl: Url
   
@@ -27,7 +27,7 @@ trait CreatePortalResponse extends StObject {
   var portalStatus: PortalStatus
   
   /**
-    * The associated Amazon Web Services SSO application ID, if the portal uses Amazon Web Services SSO.
+    * The associated IAM Identity Center application ID, if the portal uses IAM Identity Center.
     */
   var ssoApplicationId: SSOApplicationId
 }

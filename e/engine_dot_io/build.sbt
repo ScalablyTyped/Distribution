@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "engine_dot_io"
-version := "6.2.0-4c88eb"
+version := "6.2.0-d632cb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20211202Z-534f18",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20221103Z-534f18",
   "org.scalablytyped" %%% "engine_dot_io-parser" % "5.0.4-984bad",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

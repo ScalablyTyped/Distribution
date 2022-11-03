@@ -121,17 +121,16 @@ object sapUiModelOdataV4ContextMod {
       * Deletes the OData entity this context points to. The context is removed from the binding immediately,
       * even if {@link sap.ui.model.odata.v4.SubmitMode.API} is used, and the request is only sent later when
       * {@link sap.ui.model.odata.v4.ODataModel#submitBatch} is called. As long as the context is deleted on
-      * the client, but not yet on the server, {@link #isDeleted} returns `true`. The context must not be used,
-      * e.g. as a binding context, while {@link #isDeleted} returns `true`.
+      * the client, but not yet on the server, {@link #isDeleted} returns `true` and the context must not be
+      * used anymore (except for checking {@link #isDeleted}), especially not as a binding context. The application
+      * has to take care that the context is no longer used.
       *
       * Since 1.105 such a pending deletion is a pending change. It causes `hasPendingChanges` to return `true`
       * for the context, the binding containing it, and the model. `resetChanges` in binding or model cancels
       * the deletion and restores the context.
       *
-      * The usage of a group ID with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible since 1.105 - this
-      * is an experimental API.
-      *
-      * The context must not be used anymore after successful deletion.
+      * If the DELETE request succeeds, the context is destroyed and must not be used anymore. If it fails, the
+      * context is restored, reinserted into the list, and fully functional again.
       * See:
       * 	#hasPendingChanges
       * 	sap.ui.model.odata.v4.ODataContextBinding#hasPendingChanges
@@ -157,7 +156,8 @@ object sapUiModelOdataV4ContextMod {
       * binding is used, see {@link #getUpdateGroupId}. Since 1.81, if this context is transient (see {@link
       * #isTransient}), no group ID needs to be specified. Since 1.98.0, you can use `null` to prevent the DELETE
       * request in case of a kept-alive context that is not in the collection and of which you know that it does
-      * not exist on the server anymore (for example, a draft after activation).
+      * not exist on the server anymore (for example, a draft after activation). Since 1.108.0 the usage of a
+      * group ID with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible.
       */
     sGroupId: String
     ): js.Promise[Any] = js.native
@@ -167,7 +167,8 @@ object sapUiModelOdataV4ContextMod {
       * binding is used, see {@link #getUpdateGroupId}. Since 1.81, if this context is transient (see {@link
       * #isTransient}), no group ID needs to be specified. Since 1.98.0, you can use `null` to prevent the DELETE
       * request in case of a kept-alive context that is not in the collection and of which you know that it does
-      * not exist on the server anymore (for example, a draft after activation).
+      * not exist on the server anymore (for example, a draft after activation). Since 1.108.0 the usage of a
+      * group ID with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible.
       */
     sGroupId: String,
       /**
@@ -183,7 +184,8 @@ object sapUiModelOdataV4ContextMod {
       * binding is used, see {@link #getUpdateGroupId}. Since 1.81, if this context is transient (see {@link
       * #isTransient}), no group ID needs to be specified. Since 1.98.0, you can use `null` to prevent the DELETE
       * request in case of a kept-alive context that is not in the collection and of which you know that it does
-      * not exist on the server anymore (for example, a draft after activation).
+      * not exist on the server anymore (for example, a draft after activation). Since 1.108.0 the usage of a
+      * group ID with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible.
       */
     sGroupId: Unit,
       /**
@@ -592,6 +594,9 @@ object sapUiModelOdataV4ContextMod {
       * Use it to set fields affected by side effects to read-only before {@link #requestSideEffects} and make
       * them editable again when the promise resolves; in the error handler, you can repeat the loading of side
       * effects.
+      *  The promise is rejected if the call wants to refresh a whole list binding (via header context or an
+      * absolute path), but the deletion of a row context (see {@link #delete}) is pending with a different group
+      * ID.
       */
     def requestSideEffects(
       /**

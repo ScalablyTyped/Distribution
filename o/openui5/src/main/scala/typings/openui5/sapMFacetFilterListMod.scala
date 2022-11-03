@@ -546,7 +546,7 @@ object sapMFacetFilterListMod {
       *
       * @returns Object with the selected keys
       */
-    def getSelectedKeys(): Record[String, String] = js.native
+    def getSelectedKeys(): Record[String, String | Null] = js.native
     
     /**
       * Gets current value of property {@link #getSequence sequence}.
@@ -770,7 +770,7 @@ object sapMFacetFilterListMod {
       * or FacetFilter summary bar is displayed. If no property value is set then the property key is used for
       * the text.
       */
-    oKeys: Record[String, String]
+    oKeys: Record[String, String | Null]
     ): Unit = js.native
     
     /**

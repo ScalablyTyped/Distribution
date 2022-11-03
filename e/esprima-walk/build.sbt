@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "esprima-walk"
-version := "v0.1.0-dt-20220818Z-03fcb8"
+version := "v0.1.0-dt-20221103Z-03fcb8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

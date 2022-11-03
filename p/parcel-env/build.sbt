@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parcel-env"
-version := "0.0-unknown-dt-20220818Z-59f35f"
+version := "0.0-unknown-dt-20221103Z-59f35f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

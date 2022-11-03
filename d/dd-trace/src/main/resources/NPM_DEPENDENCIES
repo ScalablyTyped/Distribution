@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dd-trace" : "3.7.0"
+      "dd-trace" : "3.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "dd-trace" : "3.7.0"
+      "dd-trace" : "3.7.1"
     }
   ],
   "compile-devDependencies" : [

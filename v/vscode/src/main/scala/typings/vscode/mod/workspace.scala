@@ -15,6 +15,7 @@ object workspace {
   val ^ : js.Any = js.native
   
   inline def applyEdit(edit: WorkspaceEdit): Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyEdit")(edit.asInstanceOf[js.Any]).asInstanceOf[Thenable[Boolean]]
+  inline def applyEdit(edit: WorkspaceEdit, metadata: WorkspaceEditMetadata): Thenable[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyEdit")(edit.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Thenable[Boolean]]
   
   inline def asRelativePath(pathOrUri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asRelativePath")(pathOrUri.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def asRelativePath(pathOrUri: String, includeWorkspaceFolder: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asRelativePath")(pathOrUri.asInstanceOf[js.Any], includeWorkspaceFolder.asInstanceOf[js.Any])).asInstanceOf[String]

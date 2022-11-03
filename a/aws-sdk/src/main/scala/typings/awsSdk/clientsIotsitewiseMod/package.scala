@@ -56,6 +56,8 @@ type AssetModelProperties = js.Array[AssetModelProperty]
 
 type AssetModelPropertyDefinitions = js.Array[AssetModelPropertyDefinition]
 
+type AssetModelPropertySummaries = js.Array[AssetModelPropertySummary]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -72,6 +74,8 @@ type AssetModelSummaries = js.Array[AssetModelSummary]
 type AssetProperties = js.Array[AssetProperty]
 
 type AssetPropertyAlias = java.lang.String
+
+type AssetPropertySummaries = js.Array[AssetPropertySummary]
 
 type AssetPropertyValueHistory = js.Array[AssetPropertyValue]
 
@@ -278,6 +282,8 @@ type ErrorCode = _ErrorCode | java.lang.String
 
 type ErrorMessage = java.lang.String
 
+type ExcludeProperties = Boolean
+
 type Expression = java.lang.String
 
 type ExpressionVariables = js.Array[ExpressionVariable]
@@ -337,6 +343,20 @@ type JobStatus = _JobStatus | java.lang.String
 type JobSummaries = js.Array[JobSummary]
 
 type KmsKeyId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.BASE
+  - java.lang.String
+*/
+type ListAssetModelPropertiesFilter = _ListAssetModelPropertiesFilter | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.BASE
+  - java.lang.String
+*/
+type ListAssetPropertiesFilter = _ListAssetPropertiesFilter | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL

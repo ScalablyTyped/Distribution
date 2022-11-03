@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "documentdb-server"
-version := "0.0-unknown-dt-20220818Z-f546a9"
+version := "0.0-unknown-dt-20221103Z-f546a9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

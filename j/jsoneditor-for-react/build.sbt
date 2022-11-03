@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jsoneditor-for-react"
-version := "0.0-dt-20211202Z-e9b990"
+version := "0.0-dt-20211202Z-e9edf3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20220818Z-b6e31c",
+  "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20221103Z-b6e31c",
   "org.scalablytyped" %%% "ajv" % "8.11.0-6482f2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "jsoneditor" % "9.9-dt-20220912Z-12be73",
+  "org.scalablytyped" %%% "jsoneditor" % "9.9-dt-20220912Z-3a1864",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "re2" % "1.17.7-a226e5",

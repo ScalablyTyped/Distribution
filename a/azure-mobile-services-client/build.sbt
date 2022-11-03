@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "azure-mobile-services-client"
-version := "1.0.0-dt-20220818Z-ea668a"
+version := "1.0.0-dt-20221103Z-ea668a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

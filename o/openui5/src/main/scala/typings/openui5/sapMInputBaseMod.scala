@@ -304,7 +304,8 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.78
-      * @EXPERIMENTAL (since 1.78)
+      * @EXPERIMENTAL (since 1.78) - This aggregation is experimental and provides only limited functionality.
+      * Also the API might be changed in future.
       *
       * Destroys the formattedValueStateText in the aggregation {@link #getFormattedValueStateText formattedValueStateText}.
       *
@@ -420,7 +421,8 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.78
-      * @EXPERIMENTAL (since 1.78)
+      * @EXPERIMENTAL (since 1.78) - This aggregation is experimental and provides only limited functionality.
+      * Also the API might be changed in future.
       *
       * Gets content of aggregation {@link #getFormattedValueStateText formattedValueStateText}.
       *
@@ -764,7 +766,8 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.78
-      * @EXPERIMENTAL (since 1.78)
+      * @EXPERIMENTAL (since 1.78) - This aggregation is experimental and provides only limited functionality.
+      * Also the API might be changed in future.
       *
       * Sets the aggregated {@link #getFormattedValueStateText formattedValueStateText}.
       *
@@ -1039,7 +1042,8 @@ object sapMInputBaseMod {
     
     /**
       * @SINCE 1.78
-      * @EXPERIMENTAL (since 1.78)
+      * @EXPERIMENTAL (since 1.78) - This aggregation is experimental and provides only limited functionality.
+      * Also the API might be changed in future.
       *
       * Defines the formatted text that appears in the value state message pop-up. It can include links. If both
       * `valueStateText` and `formattedValueStateText` are set - the latter is shown.

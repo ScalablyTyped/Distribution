@@ -24,7 +24,7 @@ trait ModelPackageContainerDefinition extends StObject {
   /**
     * The framework version of the Model Package Container Image.
     */
-  var FrameworkVersion: js.UndefOr[typings.awsSdk.clientsSagemakerMod.FrameworkVersion] = js.undefined
+  var FrameworkVersion: js.UndefOr[ModelPackageFrameworkVersion] = js.undefined
   
   /**
     * The Amazon EC2 Container Registry (Amazon ECR) path where inference code is stored. If you are using your own custom algorithm instead of an algorithm provided by SageMaker, the inference code must meet SageMaker requirements. SageMaker supports both registry/repository[:tag] and registry/repository[@digest] image path formats. For more information, see Using Your Own Algorithms with Amazon SageMaker.
@@ -77,7 +77,7 @@ object ModelPackageContainerDefinition {
     
     inline def setFrameworkUndefined: Self = StObject.set(x, "Framework", js.undefined)
     
-    inline def setFrameworkVersion(value: FrameworkVersion): Self = StObject.set(x, "FrameworkVersion", value.asInstanceOf[js.Any])
+    inline def setFrameworkVersion(value: ModelPackageFrameworkVersion): Self = StObject.set(x, "FrameworkVersion", value.asInstanceOf[js.Any])
     
     inline def setFrameworkVersionUndefined: Self = StObject.set(x, "FrameworkVersion", js.undefined)
     

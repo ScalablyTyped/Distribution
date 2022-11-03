@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "cassandra-store"
-version := "5.0-dt-20211223Z-cd52fb"
+version := "5.0-dt-20211223Z-91e32e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cassandra-driver" % "4.6.4-5c50f3",
+  "org.scalablytyped" %%% "cassandra-driver" % "4.6.4-1a092b",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
   "org.scalablytyped" %%% "express-session" % "1.17-dt-20220707Z-ff1f20",
-  "org.scalablytyped" %%% "long" % "5.2.0-0a8d47",
+  "org.scalablytyped" %%% "long" % "5.2.1-0ea128",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",

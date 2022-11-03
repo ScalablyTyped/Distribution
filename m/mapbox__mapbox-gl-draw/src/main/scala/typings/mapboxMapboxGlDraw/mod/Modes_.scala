@@ -1,13 +1,10 @@
 package typings.mapboxMapboxGlDraw.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Modes_
-  extends StObject
-     with /* modeKey */ StringDictionary[DrawCustomMode[Any, Any]] {
+trait Modes_ extends StObject {
   
   var direct_select: DrawCustomMode[Any, Any]
   
@@ -18,8 +15,6 @@ trait Modes_
   var draw_polygon: DrawCustomMode[Any, Any]
   
   var simple_select: DrawCustomMode[Any, Any]
-  
-  var static: DrawCustomMode[Any, Any]
 }
 object Modes_ {
   
@@ -28,10 +23,9 @@ object Modes_ {
     draw_line_string: DrawCustomMode[Any, Any],
     draw_point: DrawCustomMode[Any, Any],
     draw_polygon: DrawCustomMode[Any, Any],
-    simple_select: DrawCustomMode[Any, Any],
-    static: DrawCustomMode[Any, Any]
+    simple_select: DrawCustomMode[Any, Any]
   ): Modes_ = {
-    val __obj = js.Dynamic.literal(direct_select = direct_select.asInstanceOf[js.Any], draw_line_string = draw_line_string.asInstanceOf[js.Any], draw_point = draw_point.asInstanceOf[js.Any], draw_polygon = draw_polygon.asInstanceOf[js.Any], simple_select = simple_select.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(direct_select = direct_select.asInstanceOf[js.Any], draw_line_string = draw_line_string.asInstanceOf[js.Any], draw_point = draw_point.asInstanceOf[js.Any], draw_polygon = draw_polygon.asInstanceOf[js.Any], simple_select = simple_select.asInstanceOf[js.Any])
     __obj.asInstanceOf[Modes_]
   }
   
@@ -46,7 +40,5 @@ object Modes_ {
     inline def setDraw_polygon(value: DrawCustomMode[Any, Any]): Self = StObject.set(x, "draw_polygon", value.asInstanceOf[js.Any])
     
     inline def setSimple_select(value: DrawCustomMode[Any, Any]): Self = StObject.set(x, "simple_select", value.asInstanceOf[js.Any])
-    
-    inline def setStatic(value: DrawCustomMode[Any, Any]): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
   }
 }

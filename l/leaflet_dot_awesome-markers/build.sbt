@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "leaflet_dot_awesome-markers"
-version := "2.0-dt-20211202Z-a65942"
+version := "2.0-dt-20221103Z-a65942"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

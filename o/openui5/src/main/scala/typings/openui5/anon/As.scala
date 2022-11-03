@@ -25,13 +25,15 @@ trait As extends StObject {
   
   /**
     * Measures only: Whether the maximum value (ignoring currencies or units of measure) for this measure is
-    * needed (since 1.55.0); filtering and sorting is supported in this case (since 1.58.0)
+    * needed (since 1.55.0); filtering and sorting is supported in this case (since 1.58.0), but shared requests
+    * are not (since 1.108.0)
     */
   var max: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Measures only: Whether the minimum value (ignoring currencies or units of measure) for this measure is
-    * needed (since 1.55.0); filtering and sorting is supported in this case (since 1.58.0)
+    * needed (since 1.55.0); filtering and sorting is supported in this case (since 1.58.0), but shared requests
+    * are not (since 1.108.0)
     */
   var min: js.UndefOr[Boolean] = js.undefined
   
