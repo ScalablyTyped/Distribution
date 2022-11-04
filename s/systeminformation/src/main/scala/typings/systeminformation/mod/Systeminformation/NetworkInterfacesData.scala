@@ -35,11 +35,11 @@ trait NetworkInterfacesData extends StObject {
   
   var mac: String
   
-  var mtu: Double
+  var mtu: Double | Null
   
   var operstate: String
   
-  var speed: Double
+  var speed: Double | Null
   
   var `type`: String
   
@@ -62,13 +62,11 @@ object NetworkInterfacesData {
     ip6: String,
     ip6subnet: String,
     mac: String,
-    mtu: Double,
     operstate: String,
-    speed: Double,
     `type`: String,
     virtual: Boolean
   ): NetworkInterfacesData = {
-    val __obj = js.Dynamic.literal(carrierChanges = carrierChanges.asInstanceOf[js.Any], dhcp = dhcp.asInstanceOf[js.Any], dnsSuffix = dnsSuffix.asInstanceOf[js.Any], duplex = duplex.asInstanceOf[js.Any], ieee8021xAuth = ieee8021xAuth.asInstanceOf[js.Any], ieee8021xState = ieee8021xState.asInstanceOf[js.Any], iface = iface.asInstanceOf[js.Any], ifaceName = ifaceName.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], ip4 = ip4.asInstanceOf[js.Any], ip4subnet = ip4subnet.asInstanceOf[js.Any], ip6 = ip6.asInstanceOf[js.Any], ip6subnet = ip6subnet.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], mtu = mtu.asInstanceOf[js.Any], operstate = operstate.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], virtual = virtual.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(carrierChanges = carrierChanges.asInstanceOf[js.Any], dhcp = dhcp.asInstanceOf[js.Any], dnsSuffix = dnsSuffix.asInstanceOf[js.Any], duplex = duplex.asInstanceOf[js.Any], ieee8021xAuth = ieee8021xAuth.asInstanceOf[js.Any], ieee8021xState = ieee8021xState.asInstanceOf[js.Any], iface = iface.asInstanceOf[js.Any], ifaceName = ifaceName.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], ip4 = ip4.asInstanceOf[js.Any], ip4subnet = ip4subnet.asInstanceOf[js.Any], ip6 = ip6.asInstanceOf[js.Any], ip6subnet = ip6subnet.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], operstate = operstate.asInstanceOf[js.Any], virtual = virtual.asInstanceOf[js.Any], mtu = null, speed = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfacesData]
   }
@@ -105,9 +103,13 @@ object NetworkInterfacesData {
     
     inline def setMtu(value: Double): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
     
+    inline def setMtuNull: Self = StObject.set(x, "mtu", null)
+    
     inline def setOperstate(value: String): Self = StObject.set(x, "operstate", value.asInstanceOf[js.Any])
     
     inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedNull: Self = StObject.set(x, "speed", null)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

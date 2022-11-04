@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ranges-push" : "6.2.6"
+      "ranges-push" : "6.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "ranges-push" : "6.2.6"
+      "ranges-push" : "6.2.7"
     }
   ],
   "compile-devDependencies" : [

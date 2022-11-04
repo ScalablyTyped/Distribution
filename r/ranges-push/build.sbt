@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ranges-push"
-version := "6.2.6-dbb1a4"
+version := "6.2.7-d3e37b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

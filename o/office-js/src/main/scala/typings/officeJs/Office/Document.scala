@@ -793,31 +793,31 @@ trait Document extends StObject {
     *   </tr>
     *   <tr>
     *     <td><code>Office.CoercionType.Html</code></td>
-    *     <td>Word</td>
+    *     <td>- Word</td>
     *   </tr>
     *   <tr>
     *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
-    *     <td>Excel and Word</td>
+    *     <td>- Excel<br>- Word</td>
     *   </tr>
     *   <tr>
     *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
-    *     <td>Word</td>
+    *     <td>- Word</td>
     *   </tr>
     *   <tr>
     *     <td><code>Office.CoercionType.SlideRange</code></td>
-    *     <td>PowerPoint on the web and Windows</td>
+    *     <td>- PowerPoint on the web and on Windows</td>
     *   </tr>
     *   <tr>
     *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
-    *     <td>Excel and Word</td>
+    *     <td>- Excel<br>- Word</td>
     *   </tr>
     *   <tr>
     *     <td><code>Office.CoercionType.Text</code> (string)</td>
-    *     <td>Excel, PowerPoint, Project, and Word</td>
+    *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
     *   </tr>
     *   <tr>
     *     <td><code>Office.CoercionType.XmlSvg</code></td>
-    *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
+    *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
     *   </tr>
     * </table>
     *

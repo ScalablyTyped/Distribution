@@ -28,6 +28,8 @@ import typings.elasticElasticsearch.libApiTypesMod.IndicesDeleteTemplateRequest
 import typings.elasticElasticsearch.libApiTypesMod.IndicesDeleteTemplateResponse
 import typings.elasticElasticsearch.libApiTypesMod.IndicesDiskUsageRequest
 import typings.elasticElasticsearch.libApiTypesMod.IndicesDiskUsageResponse
+import typings.elasticElasticsearch.libApiTypesMod.IndicesDownsampleRequest
+import typings.elasticElasticsearch.libApiTypesMod.IndicesDownsampleResponse
 import typings.elasticElasticsearch.libApiTypesMod.IndicesExistsAliasRequest
 import typings.elasticElasticsearch.libApiTypesMod.IndicesExistsAliasResponse
 import typings.elasticElasticsearch.libApiTypesMod.IndicesExistsIndexTemplateRequest
@@ -391,6 +393,24 @@ object libApiApiIndicesMod {
       params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IndicesDiskUsageRequest,
       options: TransportRequestOptionsWithOutMeta
     ): js.Promise[IndicesDiskUsageResponse] = js.native
+    
+    def downsample(params: IndicesDownsampleRequest): js.Promise[IndicesDownsampleResponse] = js.native
+    def downsample(params: IndicesDownsampleRequest, options: TransportRequestOptions): js.Promise[IndicesDownsampleResponse] = js.native
+    def downsample(params: IndicesDownsampleRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[IndicesDownsampleResponse, Any]] = js.native
+    def downsample(params: IndicesDownsampleRequest, options: TransportRequestOptionsWithOutMeta): js.Promise[IndicesDownsampleResponse] = js.native
+    def downsample(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IndicesDownsampleRequest): js.Promise[IndicesDownsampleResponse] = js.native
+    def downsample(
+      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IndicesDownsampleRequest,
+      options: TransportRequestOptions
+    ): js.Promise[IndicesDownsampleResponse] = js.native
+    def downsample(
+      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IndicesDownsampleRequest,
+      options: TransportRequestOptionsWithMeta
+    ): js.Promise[TransportResult[IndicesDownsampleResponse, Any]] = js.native
+    def downsample(
+      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IndicesDownsampleRequest,
+      options: TransportRequestOptionsWithOutMeta
+    ): js.Promise[IndicesDownsampleResponse] = js.native
     
     def exists(params: IndicesExistsRequest): js.Promise[IndicesExistsResponse] = js.native
     def exists(params: IndicesExistsRequest, options: TransportRequestOptions): js.Promise[IndicesExistsResponse] = js.native

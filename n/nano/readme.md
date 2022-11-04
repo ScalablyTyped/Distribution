@@ -1,7 +1,7 @@
 
 # Scala.js typings for nano
 
-Typings are for version 10.0.0
+Typings are for version 10.1.0
 
 ## Library description:
 The official CouchDB client for Node.js

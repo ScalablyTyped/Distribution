@@ -178,6 +178,8 @@ object distServerConfigSharedMod {
     
     var manualClientBasePath: js.UndefOr[Boolean] = js.undefined
     
+    var mdxRs: js.UndefOr[Boolean] = js.undefined
+    
     var modularizeImports: js.UndefOr[Record[String, PreventFullImport]] = js.undefined
     
     var newNextLinkBehavior: js.UndefOr[Boolean] = js.undefined
@@ -340,6 +342,10 @@ object distServerConfigSharedMod {
       inline def setManualClientBasePath(value: Boolean): Self = StObject.set(x, "manualClientBasePath", value.asInstanceOf[js.Any])
       
       inline def setManualClientBasePathUndefined: Self = StObject.set(x, "manualClientBasePath", js.undefined)
+      
+      inline def setMdxRs(value: Boolean): Self = StObject.set(x, "mdxRs", value.asInstanceOf[js.Any])
+      
+      inline def setMdxRsUndefined: Self = StObject.set(x, "mdxRs", js.undefined)
       
       inline def setModularizeImports(value: Record[String, PreventFullImport]): Self = StObject.set(x, "modularizeImports", value.asInstanceOf[js.Any])
       

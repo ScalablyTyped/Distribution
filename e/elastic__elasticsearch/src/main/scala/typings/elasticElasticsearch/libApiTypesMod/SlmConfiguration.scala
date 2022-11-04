@@ -12,7 +12,7 @@ trait SlmConfiguration extends StObject {
   
   var include_global_state: js.UndefOr[Boolean] = js.undefined
   
-  var indices: Indices
+  var indices: js.UndefOr[Indices] = js.undefined
   
   var metadata: js.UndefOr[Metadata] = js.undefined
   
@@ -20,8 +20,8 @@ trait SlmConfiguration extends StObject {
 }
 object SlmConfiguration {
   
-  inline def apply(indices: Indices): SlmConfiguration = {
-    val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any])
+  inline def apply(): SlmConfiguration = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlmConfiguration]
   }
   
@@ -42,6 +42,8 @@ object SlmConfiguration {
     inline def setInclude_global_stateUndefined: Self = StObject.set(x, "include_global_state", js.undefined)
     
     inline def setIndices(value: Indices): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
     inline def setIndicesVarargs(value: IndexName*): Self = StObject.set(x, "indices", js.Array(value*))
     

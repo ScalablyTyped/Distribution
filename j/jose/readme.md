@@ -1,7 +1,7 @@
 
 # Scala.js typings for jose
 
-Typings are for version 4.10.3
+Typings are for version 4.10.4
 
 ## Library description:
 'JSON Web Almost Everything' - JWA, JWS, JWE, JWT, JWK, JWKS with no dependencies using runtime's native crypto

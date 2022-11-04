@@ -12,7 +12,7 @@ trait FieldCapsRequest
   
   var expand_wildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var fields: Fields
+  var fields: js.UndefOr[Fields] = js.undefined
   
   var filters: js.UndefOr[String] = js.undefined
   
@@ -30,8 +30,8 @@ trait FieldCapsRequest
 }
 object FieldCapsRequest {
   
-  inline def apply(fields: Fields): FieldCapsRequest = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+  inline def apply(): FieldCapsRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldCapsRequest]
   }
   
@@ -48,6 +48,8 @@ object FieldCapsRequest {
     inline def setExpand_wildcardsVarargs(value: ExpandWildcard*): Self = StObject.set(x, "expand_wildcards", js.Array(value*))
     
     inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     

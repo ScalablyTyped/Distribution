@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.PointLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,10 +29,5 @@ open class Curve protected ()
   /** 
     * Creates a new curve object.
     */
-  def this(
-    point1: typings.paper.paper.Point,
-    handle1: typings.paper.paper.Point,
-    handle2: typings.paper.paper.Point,
-    point2: typings.paper.paper.Point
-  ) = this()
+  def this(point1: PointLike, handle1: PointLike, handle2: PointLike, point2: PointLike) = this()
 }

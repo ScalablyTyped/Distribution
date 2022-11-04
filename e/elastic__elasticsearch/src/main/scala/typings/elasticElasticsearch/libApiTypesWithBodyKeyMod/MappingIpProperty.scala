@@ -18,6 +18,12 @@ trait MappingIpProperty
   
   var null_value: js.UndefOr[String] = js.undefined
   
+  var on_script_error: js.UndefOr[MappingOnScriptError] = js.undefined
+  
+  var script: js.UndefOr[Script] = js.undefined
+  
+  var time_series_dimension: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: ip
 }
 object MappingIpProperty {
@@ -45,6 +51,18 @@ object MappingIpProperty {
     inline def setNull_value(value: String): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     
     inline def setNull_valueUndefined: Self = StObject.set(x, "null_value", js.undefined)
+    
+    inline def setOn_script_error(value: MappingOnScriptError): Self = StObject.set(x, "on_script_error", value.asInstanceOf[js.Any])
+    
+    inline def setOn_script_errorUndefined: Self = StObject.set(x, "on_script_error", js.undefined)
+    
+    inline def setScript(value: Script): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    
+    inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    
+    inline def setTime_series_dimension(value: Boolean): Self = StObject.set(x, "time_series_dimension", value.asInstanceOf[js.Any])
+    
+    inline def setTime_series_dimensionUndefined: Self = StObject.set(x, "time_series_dimension", js.undefined)
     
     inline def setType(value: ip): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

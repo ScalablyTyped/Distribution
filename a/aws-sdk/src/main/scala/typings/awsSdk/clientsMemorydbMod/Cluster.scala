@@ -32,6 +32,11 @@ trait Cluster extends StObject {
   var ClusterEndpoint: js.UndefOr[Endpoint] = js.undefined
   
   /**
+    * Enables data tiering. Data tiering is only supported for clusters using the r6gd node type. This parameter must be set when using r6gd nodes. For more information, see Data tiering.
+    */
+  var DataTiering: js.UndefOr[DataTieringStatus] = js.undefined
+  
+  /**
     * A description of the cluster
     */
   var Description: js.UndefOr[String] = js.undefined
@@ -159,6 +164,10 @@ object Cluster {
     inline def setClusterEndpoint(value: Endpoint): Self = StObject.set(x, "ClusterEndpoint", value.asInstanceOf[js.Any])
     
     inline def setClusterEndpointUndefined: Self = StObject.set(x, "ClusterEndpoint", js.undefined)
+    
+    inline def setDataTiering(value: DataTieringStatus): Self = StObject.set(x, "DataTiering", value.asInstanceOf[js.Any])
+    
+    inline def setDataTieringUndefined: Self = StObject.set(x, "DataTiering", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

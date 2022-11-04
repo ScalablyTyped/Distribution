@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IndicesSettingsSimilarityBm25 extends StObject {
   
-  var b: integer
+  var b: double
   
   var discount_overlaps: Boolean
   
@@ -17,7 +17,7 @@ trait IndicesSettingsSimilarityBm25 extends StObject {
 }
 object IndicesSettingsSimilarityBm25 {
   
-  inline def apply(b: integer, discount_overlaps: Boolean, k1: double): IndicesSettingsSimilarityBm25 = {
+  inline def apply(b: double, discount_overlaps: Boolean, k1: double): IndicesSettingsSimilarityBm25 = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], discount_overlaps = discount_overlaps.asInstanceOf[js.Any], k1 = k1.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BM25")
     __obj.asInstanceOf[IndicesSettingsSimilarityBm25]
@@ -25,7 +25,7 @@ object IndicesSettingsSimilarityBm25 {
   
   extension [Self <: IndicesSettingsSimilarityBm25](x: Self) {
     
-    inline def setB(value: integer): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     inline def setDiscount_overlaps(value: Boolean): Self = StObject.set(x, "discount_overlaps", value.asInstanceOf[js.Any])
     

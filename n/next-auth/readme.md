@@ -1,7 +1,7 @@
 
 # Scala.js typings for next-auth
 
-Typings are for version 4.15.0
+Typings are for version 4.15.1
 
 ## Library description:
 Authentication for Next.js

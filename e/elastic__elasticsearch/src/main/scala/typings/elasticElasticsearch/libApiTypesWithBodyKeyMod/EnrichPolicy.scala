@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EnrichPolicy extends StObject {
   
+  var elasticsearch_version: js.UndefOr[String] = js.undefined
+  
   var enrich_fields: Fields
   
   var indices: Indices
@@ -24,6 +26,10 @@ object EnrichPolicy {
   }
   
   extension [Self <: EnrichPolicy](x: Self) {
+    
+    inline def setElasticsearch_version(value: String): Self = StObject.set(x, "elasticsearch_version", value.asInstanceOf[js.Any])
+    
+    inline def setElasticsearch_versionUndefined: Self = StObject.set(x, "elasticsearch_version", js.undefined)
     
     inline def setEnrich_fields(value: Fields): Self = StObject.set(x, "enrich_fields", value.asInstanceOf[js.Any])
     

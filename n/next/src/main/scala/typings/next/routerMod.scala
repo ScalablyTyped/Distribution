@@ -9,6 +9,7 @@ import typings.next.distSharedLibMittMod.MittEmitter
 import typings.next.distSharedLibRouterRouterMod.NextRouter
 import typings.next.distSharedLibUtilsMod.BaseContext
 import typings.next.distSharedLibUtilsMod.NextComponentType
+import typings.next.nextBooleans.`true`
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -49,6 +50,8 @@ object routerMod {
   }
   
   inline def useRouter(): NextRouter = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")().asInstanceOf[NextRouter]
+  
+  inline def useRouter_true(throwOnMissing: `true`): NextRouter = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")(throwOnMissing.asInstanceOf[js.Any]).asInstanceOf[NextRouter]
   
   inline def withRouter[P /* <: WithRouterProps */, C /* <: BaseContext */](ComposedComponent: NextComponentType[C, Any, P]): ComponentType[ExcludeRouterProps[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRouter")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[ExcludeRouterProps[P]]]
 }

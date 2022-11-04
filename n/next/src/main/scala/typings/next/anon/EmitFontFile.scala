@@ -19,6 +19,8 @@ trait EmitFontFile extends StObject {
   var isServer: Boolean
   
   def resolve(src: String): String
+  
+  var variableName: String
 }
 object EmitFontFile {
   
@@ -29,9 +31,10 @@ object EmitFontFile {
     fs: Any,
     functionName: String,
     isServer: Boolean,
-    resolve: String => String
+    resolve: String => String,
+    variableName: String
   ): EmitFontFile = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], emitFontFile = js.Any.fromFunction3(emitFontFile), fs = fs.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], resolve = js.Any.fromFunction1(resolve))
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], emitFontFile = js.Any.fromFunction3(emitFontFile), fs = fs.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], resolve = js.Any.fromFunction1(resolve), variableName = variableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitFontFile]
   }
   
@@ -52,5 +55,7 @@ object EmitFontFile {
     inline def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
     
     inline def setResolve(value: String => String): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    
+    inline def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
   }
 }

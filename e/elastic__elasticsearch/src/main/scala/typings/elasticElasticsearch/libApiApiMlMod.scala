@@ -1,5 +1,7 @@
 package typings.elasticElasticsearch
 
+import typings.elasticElasticsearch.libApiTypesMod.MlClearTrainedModelDeploymentCacheRequest
+import typings.elasticElasticsearch.libApiTypesMod.MlClearTrainedModelDeploymentCacheResponse
 import typings.elasticElasticsearch.libApiTypesMod.MlCloseJobRequest
 import typings.elasticElasticsearch.libApiTypesMod.MlCloseJobResponse
 import typings.elasticElasticsearch.libApiTypesMod.MlDeleteCalendarEventRequest
@@ -163,6 +165,26 @@ object libApiApiMlMod {
   
   @js.native
   trait Ml extends StObject {
+    
+    def clearTrainedModelDeploymentCache(params: MlClearTrainedModelDeploymentCacheRequest): js.Promise[MlClearTrainedModelDeploymentCacheResponse] = js.native
+    def clearTrainedModelDeploymentCache(params: MlClearTrainedModelDeploymentCacheRequest, options: TransportRequestOptions): js.Promise[MlClearTrainedModelDeploymentCacheResponse] = js.native
+    def clearTrainedModelDeploymentCache(params: MlClearTrainedModelDeploymentCacheRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[MlClearTrainedModelDeploymentCacheResponse, Any]] = js.native
+    def clearTrainedModelDeploymentCache(params: MlClearTrainedModelDeploymentCacheRequest, options: TransportRequestOptionsWithOutMeta): js.Promise[MlClearTrainedModelDeploymentCacheResponse] = js.native
+    def clearTrainedModelDeploymentCache(
+      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MlClearTrainedModelDeploymentCacheRequest
+    ): js.Promise[MlClearTrainedModelDeploymentCacheResponse] = js.native
+    def clearTrainedModelDeploymentCache(
+      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MlClearTrainedModelDeploymentCacheRequest,
+      options: TransportRequestOptions
+    ): js.Promise[MlClearTrainedModelDeploymentCacheResponse] = js.native
+    def clearTrainedModelDeploymentCache(
+      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MlClearTrainedModelDeploymentCacheRequest,
+      options: TransportRequestOptionsWithMeta
+    ): js.Promise[TransportResult[MlClearTrainedModelDeploymentCacheResponse, Any]] = js.native
+    def clearTrainedModelDeploymentCache(
+      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MlClearTrainedModelDeploymentCacheRequest,
+      options: TransportRequestOptionsWithOutMeta
+    ): js.Promise[MlClearTrainedModelDeploymentCacheResponse] = js.native
     
     def closeJob(params: MlCloseJobRequest): js.Promise[MlCloseJobResponse] = js.native
     def closeJob(params: MlCloseJobRequest, options: TransportRequestOptions): js.Promise[MlCloseJobResponse] = js.native

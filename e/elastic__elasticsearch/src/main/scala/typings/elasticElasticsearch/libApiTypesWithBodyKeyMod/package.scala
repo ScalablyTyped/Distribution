@@ -16,8 +16,6 @@ type AggregateName = String
 
 type AggregationsAdjacencyMatrixAggregate = AggregationsMultiBucketAggregateBase[AggregationsAdjacencyMatrixBucket]
 
-type AggregationsAdjacencyMatrixBucketKeys = AggregationsMultiBucketBase
-
 /* Rewritten from type alias, can be one of: 
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsCardinalityAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsHdrPercentilesAggregate
@@ -64,10 +62,12 @@ type AggregationsAdjacencyMatrixBucketKeys = AggregationsMultiBucketBase
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsUnmappedSamplerAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsGeoHashGridAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsGeoTileGridAggregate
+  - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsGeoHexGridAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsRangeAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsDateRangeAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsGeoDistanceAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsIpRangeAggregate
+  - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsIpPrefixAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsFiltersAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsAdjacencyMatrixAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsSignificantLongTermsAggregate
@@ -86,7 +86,7 @@ type AggregationsAdjacencyMatrixBucketKeys = AggregationsMultiBucketBase
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsMatrixStatsAggregate
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsGeoLineAggregate
 */
-type AggregationsAggregate = _AggregationsAggregate | AggregationsHdrPercentilesAggregate | AggregationsHdrPercentileRanksAggregate | AggregationsTDigestPercentilesAggregate | AggregationsTDigestPercentileRanksAggregate | AggregationsPercentilesBucketAggregate | AggregationsMedianAbsoluteDeviationAggregate | AggregationsMinAggregate | AggregationsMaxAggregate | AggregationsSumAggregate | AggregationsAvgAggregate | AggregationsWeightedAvgAggregate | AggregationsValueCountAggregate | AggregationsSimpleValueAggregate | AggregationsStatsBucketAggregate | AggregationsExtendedStatsBucketAggregate | AggregationsHistogramAggregate | AggregationsDateHistogramAggregate | AggregationsVariableWidthHistogramAggregate | AggregationsStringTermsAggregate | AggregationsLongTermsAggregate | AggregationsDoubleTermsAggregate | AggregationsUnmappedTermsAggregate | AggregationsLongRareTermsAggregate | AggregationsStringRareTermsAggregate | AggregationsUnmappedRareTermsAggregate | AggregationsMultiTermsAggregate | AggregationsGeoHashGridAggregate | AggregationsGeoTileGridAggregate | AggregationsRangeAggregate | AggregationsDateRangeAggregate | AggregationsGeoDistanceAggregate | AggregationsIpRangeAggregate | AggregationsFiltersAggregate | AggregationsAdjacencyMatrixAggregate | AggregationsSignificantLongTermsAggregate | AggregationsSignificantStringTermsAggregate | AggregationsUnmappedSignificantTermsAggregate
+type AggregationsAggregate = _AggregationsAggregate | AggregationsHdrPercentilesAggregate | AggregationsHdrPercentileRanksAggregate | AggregationsTDigestPercentilesAggregate | AggregationsTDigestPercentileRanksAggregate | AggregationsPercentilesBucketAggregate | AggregationsMedianAbsoluteDeviationAggregate | AggregationsMinAggregate | AggregationsMaxAggregate | AggregationsSumAggregate | AggregationsAvgAggregate | AggregationsWeightedAvgAggregate | AggregationsValueCountAggregate | AggregationsSimpleValueAggregate | AggregationsStatsBucketAggregate | AggregationsExtendedStatsBucketAggregate | AggregationsHistogramAggregate | AggregationsDateHistogramAggregate | AggregationsVariableWidthHistogramAggregate | AggregationsStringTermsAggregate | AggregationsLongTermsAggregate | AggregationsDoubleTermsAggregate | AggregationsUnmappedTermsAggregate | AggregationsLongRareTermsAggregate | AggregationsStringRareTermsAggregate | AggregationsUnmappedRareTermsAggregate | AggregationsMultiTermsAggregate | AggregationsGeoHashGridAggregate | AggregationsGeoTileGridAggregate | AggregationsGeoHexGridAggregate | AggregationsRangeAggregate | AggregationsDateRangeAggregate | AggregationsGeoDistanceAggregate | AggregationsIpRangeAggregate | AggregationsIpPrefixAggregate | AggregationsFiltersAggregate | AggregationsAdjacencyMatrixAggregate | AggregationsSignificantLongTermsAggregate | AggregationsSignificantStringTermsAggregate | AggregationsUnmappedSignificantTermsAggregate
 
 type AggregationsAggregateOrder = (Partial[Record[Field, SortOrder]]) | (js.Array[Partial[Record[Field, SortOrder]]])
 
@@ -105,6 +105,8 @@ type AggregationsBucketsPath = String | js.Array[String] | (Record[String, Strin
 type AggregationsCategorizeTextAnalyzer = String | AggregationsCustomCategorizeTextAnalyzer
 
 type AggregationsChildrenAggregateKeys = AggregationsSingleBucketAggregateBase
+
+type AggregationsCompositeAggregateKey = Record[Field, FieldValue]
 
 type AggregationsCumulativeCardinalityAggregation = AggregationsPipelineAggregationBase
 
@@ -132,6 +134,8 @@ type AggregationsGeoDistanceAggregate = AggregationsRangeAggregate
 
 type AggregationsGeoHashGridAggregate = AggregationsMultiBucketAggregateBase[AggregationsGeoHashGridBucket]
 
+type AggregationsGeoHexGridAggregate = AggregationsMultiBucketAggregateBase[AggregationsGeoHexGridBucket]
+
 type AggregationsGeoTileGridAggregate = AggregationsMultiBucketAggregateBase[AggregationsGeoTileGridBucket]
 
 type AggregationsGlobalAggregateKeys = AggregationsSingleBucketAggregateBase
@@ -143,6 +147,8 @@ type AggregationsHdrPercentileRanksAggregate = AggregationsPercentilesAggregateB
 type AggregationsHdrPercentilesAggregate = AggregationsPercentilesAggregateBase
 
 type AggregationsHistogramAggregate = AggregationsMultiBucketAggregateBase[AggregationsHistogramBucket]
+
+type AggregationsIpPrefixAggregate = AggregationsMultiBucketAggregateBase[AggregationsIpPrefixBucket]
 
 type AggregationsIpRangeAggregate = AggregationsMultiBucketAggregateBase[AggregationsIpRangeBucket]
 
@@ -186,9 +192,9 @@ type AggregationsReverseNestedAggregateKeys = AggregationsSingleBucketAggregateB
 
 type AggregationsSamplerAggregateKeys = AggregationsSingleBucketAggregateBase
 
-type AggregationsSignificantLongTermsAggregate = AggregationsMultiBucketAggregateBase[AggregationsSignificantLongTermsBucket]
+type AggregationsSignificantLongTermsAggregate = AggregationsSignificantTermsAggregateBase[AggregationsSignificantLongTermsBucket]
 
-type AggregationsSignificantStringTermsAggregate = AggregationsMultiBucketAggregateBase[AggregationsSignificantStringTermsBucket]
+type AggregationsSignificantStringTermsAggregate = AggregationsSignificantTermsAggregateBase[AggregationsSignificantStringTermsBucket]
 
 type AggregationsSimpleValueAggregate = AggregationsSingleMetricAggregateBase
 
@@ -220,7 +226,7 @@ type AggregationsUnmappedRareTermsAggregate = AggregationsMultiBucketAggregateBa
 
 type AggregationsUnmappedSamplerAggregateKeys = AggregationsSingleBucketAggregateBase
 
-type AggregationsUnmappedSignificantTermsAggregate = AggregationsMultiBucketAggregateBase[Unit]
+type AggregationsUnmappedSignificantTermsAggregate = AggregationsSignificantTermsAggregateBase[Unit]
 
 type AggregationsUnmappedTermsAggregate = AggregationsTermsAggregateBase[Unit]
 
@@ -437,7 +443,7 @@ type FeaturesResetFeaturesRequest = RequestBase
 
 type Field = String
 
-type FieldValue = long | double | String | Boolean
+type FieldValue = long | double | String | Boolean | Null | Any
 
 type Fields = Field | js.Array[Field]
 
@@ -448,6 +454,8 @@ type Fuzziness = String | integer
 type GeoHash = String
 
 type GeoHashPrecision = Double | String
+
+type GeoHexCell = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.LatLonGeoLocation
@@ -527,6 +535,8 @@ type IndicesDeleteTemplateResponse = AcknowledgedResponseBase
 
 type IndicesDiskUsageResponse = Any
 
+type IndicesDownsampleResponse = Any
+
 type IndicesExistsAliasResponse = Boolean
 
 type IndicesExistsIndexTemplateResponse = Boolean
@@ -539,7 +549,7 @@ type IndicesFieldUsageStatsResponse = IndicesFieldUsageStatsFieldsUsageBody
 
 type IndicesFlushResponse = ShardsOperationResponseBase
 
-type IndicesForcemergeResponse = ShardsOperationResponseBase
+type IndicesForcemergeResponse = IndicesForcemergeForceMergeResponseBody
 
 type IndicesGetAliasResponse = Record[IndexName, IndicesGetAliasIndexAliases]
 
@@ -764,8 +774,6 @@ type RollupGetRollupIndexCapsResponse = Record[IndexName, RollupGetRollupIndexCa
 
 type RollupPutJobResponse = AcknowledgedResponseBase
 
-type RollupRollupResponse = Any
-
 type Routing = String
 
 /* Rewritten from type alias, can be one of: 
@@ -844,8 +852,6 @@ type SecurityGetRoleResponse = Record[String, SecurityGetRoleRole]
 
 type SecurityGetServiceAccountsResponse = Record[String, SecurityGetServiceAccountsRoleDescriptorWrapper]
 
-type SecurityGetUserProfileResponse = Record[String, SecurityUserProfileWithMetadata]
-
 type SecurityGetUserResponse = Record[String, SecurityUser]
 
 type SecurityHasPrivilegesApplicationsPrivileges = Record[Name, SecurityHasPrivilegesResourcePrivileges]
@@ -863,13 +869,14 @@ type SecurityIndicesPrivilegesQuery = _SecurityIndicesPrivilegesQuery | String
 
 type SecurityPutPrivilegesResponse = Record[String, Record[String, SecurityCreatedStatus]]
 
+type SecurityRoleTemplateInlineQuery = String | QueryDslQueryContainer
+
 /* Rewritten from type alias, can be one of: 
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.SecurityRoleTemplateInlineScript
-  - java.lang.String
-  - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.QueryDslQueryContainer
+  - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.SecurityRoleTemplateInlineQuery
   - typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.StoredScriptId
 */
-type SecurityRoleTemplateScript = _SecurityRoleTemplateScript | String
+type SecurityRoleTemplateScript = _SecurityRoleTemplateScript | SecurityRoleTemplateInlineQuery
 
 type SecuritySamlCompleteLogoutResponse = Boolean
 
@@ -925,7 +932,7 @@ type Sort = SortCombinations | js.Array[SortCombinations]
 
 type SortCombinations = Field | SortOptions
 
-type SortResults = js.Array[long | double | String | Null]
+type SortResults = js.Array[FieldValue]
 
 type SpecUtilsStringified[T] = T | String
 

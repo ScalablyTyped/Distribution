@@ -17,6 +17,11 @@ trait Snapshot extends StObject {
   var ClusterConfiguration: js.UndefOr[typings.awsSdk.clientsMemorydbMod.ClusterConfiguration] = js.undefined
   
   /**
+    * Enables data tiering. Data tiering is only supported for clusters using the r6gd node type. This parameter must be set when using r6gd nodes. For more information, see Data tiering.
+    */
+  var DataTiering: js.UndefOr[DataTieringStatus] = js.undefined
+  
+  /**
     * The ID of the KMS key used to encrypt the snapshot.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
@@ -52,6 +57,10 @@ object Snapshot {
     inline def setClusterConfiguration(value: ClusterConfiguration): Self = StObject.set(x, "ClusterConfiguration", value.asInstanceOf[js.Any])
     
     inline def setClusterConfigurationUndefined: Self = StObject.set(x, "ClusterConfiguration", js.undefined)
+    
+    inline def setDataTiering(value: DataTieringStatus): Self = StObject.set(x, "DataTiering", value.asInstanceOf[js.Any])
+    
+    inline def setDataTieringUndefined: Self = StObject.set(x, "DataTiering", js.undefined)
     
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

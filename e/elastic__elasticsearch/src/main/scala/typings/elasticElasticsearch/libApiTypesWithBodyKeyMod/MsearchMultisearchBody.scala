@@ -170,7 +170,7 @@ object MsearchMultisearchBody {
     
     inline def setSearch_afterUndefined: Self = StObject.set(x, "search_after", js.undefined)
     
-    inline def setSearch_afterVarargs(value: (long | double | String | Null)*): Self = StObject.set(x, "search_after", js.Array(value*))
+    inline def setSearch_afterVarargs(value: FieldValue*): Self = StObject.set(x, "search_after", js.Array(value*))
     
     inline def setSeq_no_primary_term(value: Boolean): Self = StObject.set(x, "seq_no_primary_term", value.asInstanceOf[js.Any])
     

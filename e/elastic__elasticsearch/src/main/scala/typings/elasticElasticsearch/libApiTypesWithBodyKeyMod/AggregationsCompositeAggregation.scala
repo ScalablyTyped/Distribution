@@ -9,7 +9,7 @@ trait AggregationsCompositeAggregation
   extends StObject
      with AggregationsAggregation {
   
-  var after: js.UndefOr[Record[String, String | float | Null]] = js.undefined
+  var after: js.UndefOr[AggregationsCompositeAggregateKey] = js.undefined
   
   var size: js.UndefOr[integer] = js.undefined
   
@@ -24,7 +24,7 @@ object AggregationsCompositeAggregation {
   
   extension [Self <: AggregationsCompositeAggregation](x: Self) {
     
-    inline def setAfter(value: Record[String, String | float | Null]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: AggregationsCompositeAggregateKey): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     

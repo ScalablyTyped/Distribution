@@ -15,6 +15,8 @@ trait TransformSettings extends StObject {
   var docs_per_second: js.UndefOr[float] = js.undefined
   
   var max_page_search_size: js.UndefOr[integer] = js.undefined
+  
+  var unattended: js.UndefOr[Boolean] = js.undefined
 }
 object TransformSettings {
   
@@ -44,5 +46,9 @@ object TransformSettings {
     inline def setMax_page_search_size(value: integer): Self = StObject.set(x, "max_page_search_size", value.asInstanceOf[js.Any])
     
     inline def setMax_page_search_sizeUndefined: Self = StObject.set(x, "max_page_search_size", js.undefined)
+    
+    inline def setUnattended(value: Boolean): Self = StObject.set(x, "unattended", value.asInstanceOf[js.Any])
+    
+    inline def setUnattendedUndefined: Self = StObject.set(x, "unattended", js.undefined)
   }
 }

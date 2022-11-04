@@ -8,6 +8,8 @@ trait SearchHighlightField
   extends StObject
      with SearchHighlightBase {
   
+  var analyzer: js.UndefOr[AnalysisAnalyzer] = js.undefined
+  
   var fragment_offset: js.UndefOr[integer] = js.undefined
   
   var matched_fields: js.UndefOr[Fields] = js.undefined
@@ -20,6 +22,10 @@ object SearchHighlightField {
   }
   
   extension [Self <: SearchHighlightField](x: Self) {
+    
+    inline def setAnalyzer(value: AnalysisAnalyzer): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyzerUndefined: Self = StObject.set(x, "analyzer", js.undefined)
     
     inline def setFragment_offset(value: integer): Self = StObject.set(x, "fragment_offset", value.asInstanceOf[js.Any])
     

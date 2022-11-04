@@ -116,7 +116,7 @@ trait Matrix extends StObject {
     * 
     * @param point - the point to be transformed
     */
-  def inverseTransform(point: Point): Point = js.native
+  def inverseTransform(point: PointLike): Point = js.native
   
   /** 
     * Inverts the matrix, causing it to perform the opposite transformation.
@@ -193,7 +193,7 @@ trait Matrix extends StObject {
     * 
     * @return this affine transform
     */
-  def rotate(angle: Double, center: Point): Matrix = js.native
+  def rotate(angle: Double, center: PointLike): Matrix = js.native
   /** 
     * Concatenates this matrix with a rotation transformation around an
     * anchor point.
@@ -223,7 +223,7 @@ trait Matrix extends StObject {
     * @return this affine transform
     */
   def scale(hor: Double, ver: Double): Matrix = js.native
-  def scale(hor: Double, ver: Double, center: Point): Matrix = js.native
+  def scale(hor: Double, ver: Double, center: PointLike): Matrix = js.native
   /** 
     * Concatenates this matrix with a scaling transformation.
     * 
@@ -233,7 +233,7 @@ trait Matrix extends StObject {
     * @return this affine transform
     */
   def scale(scale: Double): Matrix = js.native
-  def scale(scale: Double, center: Point): Matrix = js.native
+  def scale(scale: Double, center: PointLike): Matrix = js.native
   
   /** 
     * The scaling values of the matrix, if it can be decomposed.
@@ -259,7 +259,7 @@ trait Matrix extends StObject {
     * @return this affine transform
     */
   def shear(hor: Double, ver: Double): Matrix = js.native
-  def shear(hor: Double, ver: Double, center: Point): Matrix = js.native
+  def shear(hor: Double, ver: Double, center: PointLike): Matrix = js.native
   /** 
     * Concatenates this matrix with a shear transformation.
     * 
@@ -268,8 +268,8 @@ trait Matrix extends StObject {
     * 
     * @return this affine transform
     */
-  def shear(shear: Point): Matrix = js.native
-  def shear(shear: Point, center: Point): Matrix = js.native
+  def shear(shear: PointLike): Matrix = js.native
+  def shear(shear: PointLike, center: PointLike): Matrix = js.native
   
   /** 
     * Concatenates this matrix with a skew transformation.
@@ -281,7 +281,7 @@ trait Matrix extends StObject {
     * @return this affine transform
     */
   def skew(hor: Double, ver: Double): Matrix = js.native
-  def skew(hor: Double, ver: Double, center: Point): Matrix = js.native
+  def skew(hor: Double, ver: Double, center: PointLike): Matrix = js.native
   /** 
     * Concatenates this matrix with a skew transformation.
     * 
@@ -290,8 +290,8 @@ trait Matrix extends StObject {
     * 
     * @return this affine transform
     */
-  def skew(skew: Point): Matrix = js.native
-  def skew(skew: Point, center: Point): Matrix = js.native
+  def skew(skew: PointLike): Matrix = js.native
+  def skew(skew: PointLike, center: PointLike): Matrix = js.native
   
   /** 
     * Transforms a point and returns the result.
@@ -300,7 +300,7 @@ trait Matrix extends StObject {
     * 
     * @return the transformed point
     */
-  def transform(point: Point): Point = js.native
+  def transform(point: PointLike): Point = js.native
   /** 
     * Transforms an array of coordinates by this matrix and stores the results
     * into the destination array, which is also returned.
@@ -331,7 +331,7 @@ trait Matrix extends StObject {
     * 
     * @return this affine transform
     */
-  def translate(point: Point): Matrix = js.native
+  def translate(point: PointLike): Matrix = js.native
   
   /** 
     * The translation of the matrix as a vector.

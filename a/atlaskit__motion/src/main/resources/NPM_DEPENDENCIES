@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@atlaskit/motion" : "1.2.3"
+      "@atlaskit/motion" : "1.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@atlaskit/motion" : "1.2.3"
+      "@atlaskit/motion" : "1.2.4"
     }
   ],
   "compile-devDependencies" : [

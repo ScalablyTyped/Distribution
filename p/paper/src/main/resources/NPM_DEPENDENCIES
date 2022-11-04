@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "paper" : "0.12.16"
+      "paper" : "0.12.17"
     }
   ],
   "test-dependencies" : [
     {
-      "paper" : "0.12.16"
+      "paper" : "0.12.17"
     }
   ],
   "compile-devDependencies" : [

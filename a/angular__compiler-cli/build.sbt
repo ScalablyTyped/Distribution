@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular__compiler-cli"
-version := "14.2.7-0cbe90"
+version := "14.2.7-581d84"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "angular__compiler" % "14.2.8-b9651c",
+  "org.scalablytyped" %%% "angular__compiler" % "14.2.9-c4304c",
   "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-b67249",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-bf895e",
   "org.scalablytyped" %%% "babel__parser" % "7.20.1-1ab1d1",

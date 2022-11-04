@@ -2,6 +2,7 @@ package typings.chartist
 
 import typings.chartist.anon.Bar
 import typings.chartist.anon.PartialChartPadding
+import typings.chartist.chartistStrings.`accumulate-relative`
 import typings.chartist.chartistStrings.accumulate
 import typings.chartist.chartistStrings.bar
 import typings.chartist.chartistStrings.labelInterpolationFnc
@@ -80,10 +81,11 @@ object distChartsBarChartBarChartDottypesMod {
     var stackBars: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * If set to 'overlap' this property will force the stacked bars to draw from the zero line.
+      * If set to true this property will force the stacked bars to draw from the zero line.
       * If set to 'accumulate' this property will form a total for each series point. This will also influence the y-axis and the overall bounds of the chart. In stacked mode the seriesBarDistance property will have no effect.
+      * If set to 'accumulate-relative' positive and negative values will be handled separately.
       */
-    var stackMode: js.UndefOr[accumulate | Boolean] = js.undefined
+    var stackMode: js.UndefOr[accumulate | `accumulate-relative` | Boolean] = js.undefined
   }
   object BarChartOptions {
     
@@ -122,7 +124,7 @@ object distChartsBarChartBarChartDottypesMod {
       
       inline def setStackBarsUndefined: Self = StObject.set(x, "stackBars", js.undefined)
       
-      inline def setStackMode(value: accumulate | Boolean): Self = StObject.set(x, "stackMode", value.asInstanceOf[js.Any])
+      inline def setStackMode(value: accumulate | `accumulate-relative` | Boolean): Self = StObject.set(x, "stackMode", value.asInstanceOf[js.Any])
       
       inline def setStackModeUndefined: Self = StObject.set(x, "stackMode", js.undefined)
     }
@@ -224,10 +226,11 @@ object distChartsBarChartBarChartDottypesMod {
     var stackBars: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * If set to 'overlap' this property will force the stacked bars to draw from the zero line.
+      * If set to true this property will force the stacked bars to draw from the zero line.
       * If set to 'accumulate' this property will form a total for each series point. This will also influence the y-axis and the overall bounds of the chart. In stacked mode the seriesBarDistance property will have no effect.
+      * If set to 'accumulate-relative' positive and negative values will be handled separately.
       */
-    var stackMode: (js.UndefOr[accumulate | Boolean]) & (accumulate | Boolean)
+    var stackMode: (js.UndefOr[accumulate | `accumulate-relative` | Boolean]) & (accumulate | `accumulate-relative` | Boolean)
     
     /**
       * Specify a fixed width for the chart as a string (i.e. '100px' or '50%')
@@ -263,7 +266,7 @@ object distChartsBarChartBarChartDottypesMod {
       classNames: js.UndefOr[Bar] & Bar & Required[js.UndefOr[Bar]],
       referenceValue: js.UndefOr[Double] & Double,
       seriesBarDistance: js.UndefOr[Double] & Double,
-      stackMode: (js.UndefOr[accumulate | Boolean]) & (accumulate | Boolean)
+      stackMode: (js.UndefOr[accumulate | `accumulate-relative` | Boolean]) & (accumulate | `accumulate-relative` | Boolean)
     ): BarChartOptionsWithDefaults = {
       val __obj = js.Dynamic.literal(axisX = axisX.asInstanceOf[js.Any], axisY = axisY.asInstanceOf[js.Any], chartPadding = chartPadding.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], referenceValue = referenceValue.asInstanceOf[js.Any], seriesBarDistance = seriesBarDistance.asInstanceOf[js.Any], stackMode = stackMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[BarChartOptionsWithDefaults]
@@ -345,7 +348,9 @@ object distChartsBarChartBarChartDottypesMod {
       
       inline def setStackBarsUndefined: Self = StObject.set(x, "stackBars", js.undefined)
       
-      inline def setStackMode(value: (js.UndefOr[accumulate | Boolean]) & (accumulate | Boolean)): Self = StObject.set(x, "stackMode", value.asInstanceOf[js.Any])
+      inline def setStackMode(
+        value: (js.UndefOr[accumulate | `accumulate-relative` | Boolean]) & (accumulate | `accumulate-relative` | Boolean)
+      ): Self = StObject.set(x, "stackMode", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

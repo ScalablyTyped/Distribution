@@ -12,6 +12,7 @@ import typings.next.distSharedLibRouterRouterMod.TransitionOptions
 import typings.next.distSharedLibRouterRouterMod.Url
 import typings.next.distSharedLibUtilsMod.BaseContext
 import typings.next.distSharedLibUtilsMod.NextComponentType
+import typings.next.nextBooleans.`true`
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,6 +54,8 @@ object distClientRouterMod {
   
   inline def useRouter(): NextRouter = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")().asInstanceOf[NextRouter]
   
+  inline def useRouter_true(throwOnMissing: `true`): NextRouter = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")(throwOnMissing.asInstanceOf[js.Any]).asInstanceOf[NextRouter]
+  
   inline def withRouter[P /* <: WithRouterProps */, C /* <: BaseContext */](ComposedComponent: NextComponentType[C, Any, P]): ComponentType[ExcludeRouterProps[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRouter")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[ExcludeRouterProps[P]]]
   
   /* Rewritten from type alias, can be one of: 
@@ -81,6 +84,8 @@ object distClientRouterMod {
     var domainLocales: js.UndefOr[js.Array[DomainLocale]] = js.undefined
     
     var events: MittEmitter[RouterEvent]
+    
+    var forward: js.Function0[Unit]
     
     var isFallback: js.Function0[Boolean]
     
@@ -137,6 +142,7 @@ object distClientRouterMod {
       basePath: String,
       beforePopState: /* cb */ BeforePopStateCallback => Unit,
       events: MittEmitter[RouterEvent],
+      forward: () => Unit,
       isFallback: () => Boolean,
       isLocaleDomain: Boolean,
       isPreview: () => Boolean,
@@ -151,7 +157,7 @@ object distClientRouterMod {
       replace: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[TransitionOptions]) => js.Promise[Boolean],
       route: String
     ): SingletonRouter = {
-      val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], back = js.Any.fromFunction0(back), basePath = basePath.asInstanceOf[js.Any], beforePopState = js.Any.fromFunction1(beforePopState), events = events.asInstanceOf[js.Any], isFallback = js.Any.fromFunction0(isFallback), isLocaleDomain = isLocaleDomain.asInstanceOf[js.Any], isPreview = js.Any.fromFunction0(isPreview), isReady = isReady.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], prefetch = js.Any.fromFunction3(prefetch), push = js.Any.fromFunction3(push), query = query.asInstanceOf[js.Any], ready = js.Any.fromFunction1(ready), readyCallbacks = readyCallbacks.asInstanceOf[js.Any], reload = js.Any.fromFunction0(reload), replace = js.Any.fromFunction3(replace), route = route.asInstanceOf[js.Any], router = null)
+      val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], back = js.Any.fromFunction0(back), basePath = basePath.asInstanceOf[js.Any], beforePopState = js.Any.fromFunction1(beforePopState), events = events.asInstanceOf[js.Any], forward = js.Any.fromFunction0(forward), isFallback = js.Any.fromFunction0(isFallback), isLocaleDomain = isLocaleDomain.asInstanceOf[js.Any], isPreview = js.Any.fromFunction0(isPreview), isReady = isReady.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], prefetch = js.Any.fromFunction3(prefetch), push = js.Any.fromFunction3(push), query = query.asInstanceOf[js.Any], ready = js.Any.fromFunction1(ready), readyCallbacks = readyCallbacks.asInstanceOf[js.Any], reload = js.Any.fromFunction0(reload), replace = js.Any.fromFunction3(replace), route = route.asInstanceOf[js.Any], router = null)
       __obj.asInstanceOf[SingletonRouter]
     }
     
@@ -176,6 +182,8 @@ object distClientRouterMod {
       inline def setDomainLocalesVarargs(value: DomainLocale*): Self = StObject.set(x, "domainLocales", js.Array(value*))
       
       inline def setEvents(value: MittEmitter[RouterEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      
+      inline def setForward(value: () => Unit): Self = StObject.set(x, "forward", js.Any.fromFunction0(value))
       
       inline def setIsFallback(value: () => Boolean): Self = StObject.set(x, "isFallback", js.Any.fromFunction0(value))
       

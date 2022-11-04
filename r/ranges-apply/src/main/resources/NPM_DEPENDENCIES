@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ranges-apply" : "6.2.11"
+      "ranges-apply" : "6.2.12"
     }
   ],
   "test-dependencies" : [
     {
-      "ranges-apply" : "6.2.11"
+      "ranges-apply" : "6.2.12"
     }
   ],
   "compile-devDependencies" : [

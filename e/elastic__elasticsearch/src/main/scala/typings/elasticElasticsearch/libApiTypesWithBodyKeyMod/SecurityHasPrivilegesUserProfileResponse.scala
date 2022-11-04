@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SecurityHasPrivilegesUserProfileResponse extends StObject {
   
-  var error_uids: js.UndefOr[js.Array[SecurityUserProfileId]] = js.undefined
+  var errors: js.UndefOr[SecurityHasPrivilegesUserProfileHasPrivilegesUserProfileErrors] = js.undefined
   
   var has_privilege_uids: js.Array[SecurityUserProfileId]
 }
@@ -19,11 +19,9 @@ object SecurityHasPrivilegesUserProfileResponse {
   
   extension [Self <: SecurityHasPrivilegesUserProfileResponse](x: Self) {
     
-    inline def setError_uids(value: js.Array[SecurityUserProfileId]): Self = StObject.set(x, "error_uids", value.asInstanceOf[js.Any])
+    inline def setErrors(value: SecurityHasPrivilegesUserProfileHasPrivilegesUserProfileErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setError_uidsUndefined: Self = StObject.set(x, "error_uids", js.undefined)
-    
-    inline def setError_uidsVarargs(value: SecurityUserProfileId*): Self = StObject.set(x, "error_uids", js.Array(value*))
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     inline def setHas_privilege_uids(value: js.Array[SecurityUserProfileId]): Self = StObject.set(x, "has_privilege_uids", value.asInstanceOf[js.Any])
     

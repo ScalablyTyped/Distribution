@@ -145,7 +145,7 @@ trait Curve extends StObject {
     * 
     * @return the curve location of the specified point
     */
-  def getLocationOf(point: Point): CurveLocation = js.native
+  def getLocationOf(point: PointLike): CurveLocation = js.native
   
   /** 
     * Returns the nearest location on the curve to the specified point.
@@ -155,7 +155,7 @@ trait Curve extends StObject {
     * @return the location on the curve that's the closest to
     * the specified point
     */
-  def getNearestLocation(point: Point): CurveLocation = js.native
+  def getNearestLocation(point: PointLike): CurveLocation = js.native
   
   /** 
     * Returns the nearest point on the curve to the specified point.
@@ -165,7 +165,7 @@ trait Curve extends StObject {
     * @return the point on the curve that's the closest to the
     * specified point
     */
-  def getNearestPoint(point: Point): Point = js.native
+  def getNearestPoint(point: PointLike): Point = js.native
   
   /** 
     * Calculates the normal vector of the curve at the given location.
@@ -205,7 +205,7 @@ trait Curve extends StObject {
     * 
     * @return the length of the path up to the specified point
     */
-  def getOffsetOf(point: Point): Double = js.native
+  def getOffsetOf(point: PointLike): Double = js.native
   
   /** 
     * Creates a new curve as a sub-curve from this curve, its range defined by
@@ -290,7 +290,7 @@ trait Curve extends StObject {
     * 
     * @return the curve-time parameter of the specified point
     */
-  def getTimeOf(point: Point): Double = js.native
+  def getTimeOf(point: PointLike): Double = js.native
   
   /** 
     * Calculates the curve-time parameters where the curve is tangential to
@@ -301,7 +301,7 @@ trait Curve extends StObject {
     * @return at most two curve-time parameters, where the curve is
     * tangential to the given tangent
     */
-  def getTimesWithTangent(tangent: Point): js.Array[Double] = js.native
+  def getTimesWithTangent(tangent: PointLike): js.Array[Double] = js.native
   
   /** 
     * Calculates the weighted normal vector of the curve at the given location,

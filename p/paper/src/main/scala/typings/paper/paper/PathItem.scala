@@ -23,7 +23,7 @@ trait PathItem
     * @param through - the vector where the arc should pass through
     * @param to - the vector where the arc should end
     */
-  def arcBy(through: Point, to: Point): Unit = js.native
+  def arcBy(through: PointLike, to: PointLike): Unit = js.native
   /** 
     * Adds an arc from the position of the last segment in the path to the `to`
     * vector specified relatively to it, by adding one or more segments to the
@@ -33,8 +33,8 @@ trait PathItem
     * @param clockwise - specifies whether the arc should be
     *     drawn in clockwise direction
     */
-  def arcBy(to: Point): Unit = js.native
-  def arcBy(to: Point, clockwise: Boolean): Unit = js.native
+  def arcBy(to: PointLike): Unit = js.native
+  def arcBy(to: PointLike, clockwise: Boolean): Unit = js.native
   
   /** 
     * Adds an arc from the position of the last segment in the path, passing
@@ -44,7 +44,7 @@ trait PathItem
     * @param through - the point where the arc should pass through
     * @param to - the point where the arc should end
     */
-  def arcTo(through: Point, to: Point): Unit = js.native
+  def arcTo(through: PointLike, to: PointLike): Unit = js.native
   /** 
     * Adds an arc from the position of the last segment in the path to
     * the specified point, by adding one or more segments to the path.
@@ -53,8 +53,8 @@ trait PathItem
     * @param clockwise - specifies whether the arc should be
     *     drawn in clockwise direction
     */
-  def arcTo(to: Point): Unit = js.native
-  def arcTo(to: Point, clockwise: Boolean): Unit = js.native
+  def arcTo(to: PointLike): Unit = js.native
+  def arcTo(to: PointLike, clockwise: Boolean): Unit = js.native
   
   /** 
     * Specifies whether the path as a whole is oriented clock-wise, by looking
@@ -101,7 +101,7 @@ trait PathItem
     *     added curve
     * @param to - the destination point of the newly added curve
     */
-  def cubicCurveBy(handle1: Point, handle2: Point, to: Point): Unit = js.native
+  def cubicCurveBy(handle1: PointLike, handle2: PointLike, to: PointLike): Unit = js.native
   
   /** 
     * Adds a cubic bezier curve to the path, from the last segment to the
@@ -116,7 +116,7 @@ trait PathItem
     *     for {@link Segment#handleIn} of its second segment are calculated
     * @param to - the destination point of the newly added curve
     */
-  def cubicCurveTo(handle1: Point, handle2: Point, to: Point): Unit = js.native
+  def cubicCurveTo(handle1: PointLike, handle2: PointLike, to: PointLike): Unit = js.native
   
   /** 
     * Adds a curve from the last segment in the path through the specified
@@ -128,8 +128,8 @@ trait PathItem
     * @param time - the curve-time parameter at which the
     *     `through` point is to be located
     */
-  def curveBy(through: Point, to: Point): Unit = js.native
-  def curveBy(through: Point, to: Point, time: Double): Unit = js.native
+  def curveBy(through: PointLike, to: PointLike): Unit = js.native
+  def curveBy(through: PointLike, to: PointLike, time: Double): Unit = js.native
   
   /** 
     * Adds a curve from the last segment in the path through the specified
@@ -141,8 +141,8 @@ trait PathItem
     * @param time - the curve-time parameter at which the
     *     `through` point is to be located
     */
-  def curveTo(through: Point, to: Point): Unit = js.native
-  def curveTo(through: Point, to: Point, time: Double): Unit = js.native
+  def curveTo(through: PointLike, to: PointLike): Unit = js.native
+  def curveTo(through: PointLike, to: PointLike, time: Double): Unit = js.native
   
   /** 
     * Splits the geometry of this path along the geometry of the specified
@@ -233,7 +233,7 @@ trait PathItem
     * @return the location on the path that's the closest to
     * the specified point
     */
-  def getNearestLocation(point: Point): CurveLocation = js.native
+  def getNearestLocation(point: PointLike): CurveLocation = js.native
   
   /** 
     * Returns the nearest point on the path item to the specified point.
@@ -243,7 +243,7 @@ trait PathItem
     * @return the point on the path that's the closest to the specified
     * point
     */
-  def getNearestPoint(point: Point): Point = js.native
+  def getNearestPoint(point: PointLike): Point = js.native
   
   /** 
     * Returns a point that is guaranteed to be inside the path.
@@ -292,7 +292,7 @@ trait PathItem
     * @param point - the vector describing the destination of the newly
     *     added straight curve
     */
-  def lineBy(point: Point): Unit = js.native
+  def lineBy(point: PointLike): Unit = js.native
   
   /** 
     * Adds a straight curve to the path, from the the last segment in the path
@@ -301,14 +301,14 @@ trait PathItem
     * @param point - the destination point of the newly added straight
     *     curve
     */
-  def lineTo(point: Point): Unit = js.native
+  def lineTo(point: PointLike): Unit = js.native
   
   /** 
     * If called on a {@link CompoundPath}, a new {@link Path} is created as a
     * child and a point is added as its first segment relative to the position
     * of the last segment of the current path.
     */
-  def moveBy(to: Point): Unit = js.native
+  def moveBy(to: PointLike): Unit = js.native
   
   /** 
     * On a normal empty {@link Path}, the point is simply added as the path's
@@ -317,7 +317,7 @@ trait PathItem
     * 
     * @param point - the point in which to start the path
     */
-  def moveTo(point: Point): Unit = js.native
+  def moveTo(point: PointLike): Unit = js.native
   
   /** 
     * The path's geometry, formatted as SVG style path data.
@@ -338,7 +338,7 @@ trait PathItem
     *     second segment are calculated
     * @param to - the destination point of the newly added curve
     */
-  def quadraticCurveBy(handle: Point, to: Point): Unit = js.native
+  def quadraticCurveBy(handle: PointLike, to: PointLike): Unit = js.native
   
   /** 
     * Adds a quadratic bezier curve to the path, from the last segment to the
@@ -355,7 +355,7 @@ trait PathItem
     *     calculated
     * @param to - the destination point of the newly added curve
     */
-  def quadraticCurveTo(handle: Point, to: Point): Unit = js.native
+  def quadraticCurveTo(handle: PointLike, to: PointLike): Unit = js.native
   
   /** 
     * Fixes the orientation of the sub-paths of a compound-path, assuming

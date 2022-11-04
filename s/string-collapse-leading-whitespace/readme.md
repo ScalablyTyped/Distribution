@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-collapse-leading-whitespace
 
-Typings are for version 6.1.6
+Typings are for version 6.1.7
 
 ## Library description:
 Collapse the leading and trailing whitespace of a string

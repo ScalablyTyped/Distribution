@@ -1,7 +1,7 @@
 
 # Scala.js typings for sass
 
-Typings are for version 1.55.0
+Typings are for version 1.56.0
 
 ## Library description:
 A pure JavaScript implementation of Sass.

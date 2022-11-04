@@ -59,7 +59,7 @@ trait PaperScope extends StObject {
   var CurveLocation: Instantiable3[
     /* curve */ Curve, 
     /* time */ Double, 
-    /* point */ js.UndefOr[Point], 
+    /* point */ js.UndefOr[PointLike], 
     typings.paper.paper.CurveLocation
   ] = js.native
   
@@ -99,22 +99,22 @@ trait PaperScope extends StObject {
   
   var Point: TypeofPoint & (Instantiable2[/* x */ Double, /* y */ Double, typings.paper.paper.Point]) = js.native
   
-  var PointText: Instantiable1[/* point */ Point, typings.paper.paper.PointText] = js.native
+  var PointText: Instantiable1[/* point */ PointLike, typings.paper.paper.PointText] = js.native
   
-  var Project: Instantiable1[/* element */ HTMLCanvasElement | String | Size, typings.paper.paper.Project] = js.native
+  var Project: Instantiable1[/* element */ HTMLCanvasElement | String | SizeLike, typings.paper.paper.Project] = js.native
   
   var Raster: Instantiable2[
     /* source */ js.UndefOr[HTMLImageElement | HTMLCanvasElement | String], 
-    /* position */ js.UndefOr[Point], 
+    /* position */ js.UndefOr[PointLike], 
     typings.paper.paper.Raster
   ] = js.native
   
-  var Rectangle: Instantiable2[/* point */ Point, /* size */ Size, typings.paper.paper.Rectangle] = js.native
+  var Rectangle: Instantiable2[/* point */ PointLike, /* size */ SizeLike, typings.paper.paper.Rectangle] = js.native
   
   var Segment: Instantiable3[
-    /* point */ js.UndefOr[Point], 
-    /* handleIn */ js.UndefOr[Point], 
-    /* handleOut */ js.UndefOr[Point], 
+    /* point */ js.UndefOr[PointLike], 
+    /* handleIn */ js.UndefOr[PointLike], 
+    /* handleOut */ js.UndefOr[PointLike], 
     typings.paper.paper.Segment
   ] = js.native
   
@@ -132,7 +132,7 @@ trait PaperScope extends StObject {
   
   var SymbolItem: Instantiable2[
     /* definition */ SymbolDefinition | Item, 
-    /* point */ js.UndefOr[Point], 
+    /* point */ js.UndefOr[PointLike], 
     typings.paper.paper.SymbolItem
   ] = js.native
   
@@ -218,7 +218,7 @@ trait PaperScope extends StObject {
   var settings: Any = js.native
   
   def setup(element: String): Unit = js.native
-  def setup(element: Size): Unit = js.native
+  def setup(element: SizeLike): Unit = js.native
   /** 
     * Sets up an empty project for us. If a canvas is provided, it also creates
     * a {@link View} for it, both linked to this scope.

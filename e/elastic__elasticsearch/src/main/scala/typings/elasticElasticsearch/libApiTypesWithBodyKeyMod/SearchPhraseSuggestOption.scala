@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchPhraseSuggestOption extends StObject {
   
-  var highlighted: String
+  var collate_match: js.UndefOr[Boolean] = js.undefined
+  
+  var highlighted: js.UndefOr[String] = js.undefined
   
   var score: double
   
@@ -14,14 +16,20 @@ trait SearchPhraseSuggestOption extends StObject {
 }
 object SearchPhraseSuggestOption {
   
-  inline def apply(highlighted: String, score: double, text: String): SearchPhraseSuggestOption = {
-    val __obj = js.Dynamic.literal(highlighted = highlighted.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(score: double, text: String): SearchPhraseSuggestOption = {
+    val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPhraseSuggestOption]
   }
   
   extension [Self <: SearchPhraseSuggestOption](x: Self) {
     
+    inline def setCollate_match(value: Boolean): Self = StObject.set(x, "collate_match", value.asInstanceOf[js.Any])
+    
+    inline def setCollate_matchUndefined: Self = StObject.set(x, "collate_match", js.undefined)
+    
     inline def setHighlighted(value: String): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
     
     inline def setScore(value: double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

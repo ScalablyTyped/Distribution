@@ -141,8 +141,8 @@ object AnalysisTokenFilterDefinition {
     __obj.asInstanceOf[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AnalysisIcuTokenizer]
   }
   
-  inline def AnalysisIcuTransformTokenFilter(dir: AnalysisIcuTransformDirection, id: String): typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AnalysisIcuTransformTokenFilter = {
-    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  inline def AnalysisIcuTransformTokenFilter(id: String): typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AnalysisIcuTransformTokenFilter = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("icu_transform")
     __obj.asInstanceOf[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AnalysisIcuTransformTokenFilter]
   }

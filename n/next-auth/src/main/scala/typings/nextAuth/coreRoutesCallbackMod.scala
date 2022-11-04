@@ -1,6 +1,6 @@
 package typings.nextAuth
 
-import typings.nextAuth.anon.Method
+import typings.nextAuth.anon.Headers
 import typings.nextAuth.coreMod.OutgoingResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,5 +12,5 @@ object coreRoutesCallbackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(params: Method): js.Promise[OutgoingResponse[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OutgoingResponse[Any]]]
+  inline def default(params: Headers): js.Promise[OutgoingResponse[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OutgoingResponse[Any]]]
 }

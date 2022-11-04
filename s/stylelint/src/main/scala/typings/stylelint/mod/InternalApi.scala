@@ -9,32 +9,41 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InternalApi extends StObject {
   
-  def _createStylelintResult(postcssResult: PostcssResult): js.Promise[LintResult] = js.native
-  def _createStylelintResult(postcssResult: PostcssResult, filePath: String): js.Promise[LintResult] = js.native
+  var _extendExplorer: ReturnType[FnCall]
   
-  var _extendExplorer: ReturnType[FnCall] = js.native
+  var _fileCache: FileCache
   
-  var _fileCache: FileCache = js.native
+  var _options: LinterOptionscwdstring
   
-  def _getPostcssResult(): js.Promise[Result] = js.native
-  def _getPostcssResult(options: GetPostcssOptions): js.Promise[Result] = js.native
+  var _postcssResultCache: Map[String, Result]
   
-  def _lintSource(options: GetLintSourceOptions): js.Promise[PostcssResult] = js.native
+  var _specifiedConfigCache: Map[Config, js.Promise[CosmiconfigResult]]
+}
+object InternalApi {
   
-  var _options: LinterOptionscwdstring = js.native
+  inline def apply(
+    _extendExplorer: ReturnType[FnCall],
+    _fileCache: FileCache,
+    _options: LinterOptionscwdstring,
+    _postcssResultCache: Map[String, Result],
+    _specifiedConfigCache: Map[Config, js.Promise[CosmiconfigResult]]
+  ): InternalApi = {
+    val __obj = js.Dynamic.literal(_extendExplorer = _extendExplorer.asInstanceOf[js.Any], _fileCache = _fileCache.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _postcssResultCache = _postcssResultCache.asInstanceOf[js.Any], _specifiedConfigCache = _specifiedConfigCache.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InternalApi]
+  }
   
-  var _postcssResultCache: Map[String, Result] = js.native
-  
-  var _specifiedConfigCache: Map[Config, js.Promise[CosmiconfigResult]] = js.native
-  
-  def getConfigForFile(): js.Promise[CosmiconfigResult] = js.native
-  def getConfigForFile(searchPath: String): js.Promise[CosmiconfigResult] = js.native
-  def getConfigForFile(searchPath: String, filePath: String): js.Promise[CosmiconfigResult] = js.native
-  def getConfigForFile(searchPath: Unit, filePath: String): js.Promise[CosmiconfigResult] = js.native
-  
-  def isPathIgnored(): js.Promise[Boolean] = js.native
-  def isPathIgnored(s: String): js.Promise[Boolean] = js.native
+  extension [Self <: InternalApi](x: Self) {
+    
+    inline def set_extendExplorer(value: ReturnType[FnCall]): Self = StObject.set(x, "_extendExplorer", value.asInstanceOf[js.Any])
+    
+    inline def set_fileCache(value: FileCache): Self = StObject.set(x, "_fileCache", value.asInstanceOf[js.Any])
+    
+    inline def set_options(value: LinterOptionscwdstring): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+    
+    inline def set_postcssResultCache(value: Map[String, Result]): Self = StObject.set(x, "_postcssResultCache", value.asInstanceOf[js.Any])
+    
+    inline def set_specifiedConfigCache(value: Map[Config, js.Promise[CosmiconfigResult]]): Self = StObject.set(x, "_specifiedConfigCache", value.asInstanceOf[js.Any])
+  }
 }

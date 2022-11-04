@@ -23,14 +23,14 @@ object navigationMod {
   
   inline def redirect(url: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  inline def usePathname(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("usePathname")().asInstanceOf[String]
+  inline def usePathname(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("usePathname")().asInstanceOf[String | Null]
   
   inline def useRouter(): AppRouterInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")().asInstanceOf[AppRouterInstance]
   
   inline def useSearchParams(): ReadonlyURLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("useSearchParams")().asInstanceOf[ReadonlyURLSearchParams]
   
-  inline def useSelectedLayoutSegment(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelectedLayoutSegment")().asInstanceOf[String]
-  inline def useSelectedLayoutSegment(parallelRouteKey: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelectedLayoutSegment")(parallelRouteKey.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def useSelectedLayoutSegment(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelectedLayoutSegment")().asInstanceOf[String | Null]
+  inline def useSelectedLayoutSegment(parallelRouteKey: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelectedLayoutSegment")(parallelRouteKey.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   inline def useSelectedLayoutSegments(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelectedLayoutSegments")().asInstanceOf[js.Array[String]]
   inline def useSelectedLayoutSegments(parallelRouteKey: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelectedLayoutSegments")(parallelRouteKey.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]

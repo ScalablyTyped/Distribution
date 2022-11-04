@@ -1,5 +1,7 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.PointLike
+import typings.paper.paper.SizeLike
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
@@ -26,14 +28,6 @@ open class Raster ()
   extends StObject
      with typings.paper.paper.Raster {
   /** 
-    * Creates a new raster from an object description, and places it in the
-    * active layer.
-    * 
-    * @param object - an object containing properties to be set on the
-    *     raster
-    */
-  def this(`object`: js.Object) = this()
-  /** 
     * Creates a new empty raster of the given size, and places it in the
     * active layer.
     * 
@@ -41,13 +35,20 @@ open class Raster ()
     * @param position - the center position at which the raster item is
     *     placed
     */
-  def this(size: typings.paper.paper.Size) = this()
+  /** 
+    * Creates a new raster from an object description, and places it in the
+    * active layer.
+    * 
+    * @param object - an object containing properties to be set on the
+    *     raster
+    */
+  def this(size: js.Object | SizeLike) = this()
   def this(source: String) = this()
   def this(source: HTMLCanvasElement) = this()
   def this(source: HTMLImageElement) = this()
-  def this(size: typings.paper.paper.Size, position: typings.paper.paper.Point) = this()
-  def this(source: String, position: typings.paper.paper.Point) = this()
-  def this(source: Unit, position: typings.paper.paper.Point) = this()
-  def this(source: HTMLCanvasElement, position: typings.paper.paper.Point) = this()
-  def this(source: HTMLImageElement, position: typings.paper.paper.Point) = this()
+  def this(size: SizeLike, position: PointLike) = this()
+  def this(source: String, position: PointLike) = this()
+  def this(source: Unit, position: PointLike) = this()
+  def this(source: HTMLCanvasElement, position: PointLike) = this()
+  def this(source: HTMLImageElement, position: PointLike) = this()
 }

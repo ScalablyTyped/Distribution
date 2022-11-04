@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.PointLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ open class CurveLocation protected ()
     * Creates a new CurveLocation object.
     */
   def this(curve: typings.paper.paper.Curve, time: Double) = this()
-  def this(curve: typings.paper.paper.Curve, time: Double, point: typings.paper.paper.Point) = this()
+  def this(curve: typings.paper.paper.Curve, time: Double, point: PointLike) = this()
   
   /** 
     * The curvature of the {@link #curve} at the given location.

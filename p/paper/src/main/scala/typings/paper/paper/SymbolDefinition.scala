@@ -32,7 +32,7 @@ trait SymbolDefinition extends StObject {
     * @param position - the position of the placed symbol
     */
   def place(): SymbolItem = js.native
-  def place(position: Point): SymbolItem = js.native
+  def place(position: PointLike): SymbolItem = js.native
   
   /** 
     * The project that this symbol belongs to.

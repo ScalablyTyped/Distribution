@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * vector objects.
   */
 @js.native
-trait Point extends StObject {
+trait Point
+  extends StObject
+     with _PointLike {
   
   /** 
     * Returns a new point with the absolute values of the specified {@link #x}
@@ -37,7 +39,7 @@ trait Point extends StObject {
     * 
     * @return the addition of the two points as a new point
     */
-  def add(point: Point): Point = js.native
+  def add(point: PointLike): Point = js.native
   
   /** 
     * The vector's angle in degrees, measured from the x-axis to the vector.
@@ -61,7 +63,7 @@ trait Point extends StObject {
     * 
     * @return the cross product of the two points
     */
-  def cross(point: Point): Double = js.native
+  def cross(point: PointLike): Double = js.native
   
   /** 
     * Returns the division of the supplied value to both coordinates of
@@ -82,14 +84,14 @@ trait Point extends StObject {
     * 
     * @return the division of the two points as a new point
     */
-  def divide(point: Point): Point = js.native
+  def divide(point: PointLike): Point = js.native
   
   /** 
     * Returns the dot product of the point and another point.
     * 
     * @return the dot product of the two points
     */
-  def dot(point: Point): Double = js.native
+  def dot(point: PointLike): Double = js.native
   
   /** 
     * Checks whether the coordinates of the point are equal to that of the
@@ -97,7 +99,7 @@ trait Point extends StObject {
     * 
     * @return true if the points are equal
     */
-  def equals(point: Point): Boolean = js.native
+  def equals(point: PointLike): Boolean = js.native
   
   /** 
     * Returns a new point with the nearest smaller non-fractional values to the
@@ -112,7 +114,7 @@ trait Point extends StObject {
     * 
     * @return the angle in degrees
     */
-  def getAngle(point: Point): Double = js.native
+  def getAngle(point: PointLike): Double = js.native
   
   /** 
     * Returns the smaller angle between two vectors in radians. The angle is
@@ -120,7 +122,7 @@ trait Point extends StObject {
     * 
     * @return the angle in radians
     */
-  def getAngleInRadians(point: Point): Double = js.native
+  def getAngleInRadians(point: PointLike): Double = js.native
   
   /** 
     * Returns the angle between two vectors. The angle is directional and
@@ -131,7 +133,7 @@ trait Point extends StObject {
     * 
     * @return the angle between the two vectors
     */
-  def getDirectedAngle(point: Point): Double = js.native
+  def getDirectedAngle(point: PointLike): Double = js.native
   
   /** 
     * Returns the distance between the point and another point.
@@ -139,8 +141,8 @@ trait Point extends StObject {
     * @param squared - Controls whether the distance should
     * remain squared, or its square root should be calculated
     */
-  def getDistance(point: Point): Double = js.native
-  def getDistance(point: Point, squared: Boolean): Double = js.native
+  def getDistance(point: PointLike): Double = js.native
+  def getDistance(point: PointLike, squared: Boolean): Double = js.native
   
   /** 
     * Checks if the point is within a given distance of another point.
@@ -150,7 +152,7 @@ trait Point extends StObject {
     * 
     * @return true if it is within the given distance
     */
-  def isClose(point: Point, tolerance: Double): Boolean = js.native
+  def isClose(point: PointLike, tolerance: Double): Boolean = js.native
   
   /** 
     * Checks if the vector represented by this point is collinear (parallel) to
@@ -160,7 +162,7 @@ trait Point extends StObject {
     * 
     * @return true it is collinear
     */
-  def isCollinear(point: Point): Boolean = js.native
+  def isCollinear(point: PointLike): Boolean = js.native
   
   /** 
     * Checks if the vector is within the specified quadrant. Note that if the
@@ -182,7 +184,7 @@ trait Point extends StObject {
     * 
     * @return true if the point is inside the rectangle
     */
-  def isInside(rect: Rectangle): Boolean = js.native
+  def isInside(rect: RectangleLike): Boolean = js.native
   
   /** 
     * Checks if this point has an undefined value for at least one of its
@@ -200,7 +202,7 @@ trait Point extends StObject {
     * 
     * @return true it is orthogonal
     */
-  def isOrthogonal(point: Point): Boolean = js.native
+  def isOrthogonal(point: PointLike): Boolean = js.native
   
   /** 
     * Checks if this point has both the x and y coordinate set to 0.
@@ -224,7 +226,7 @@ trait Point extends StObject {
     * @return the integer remainders of dividing the points by each
     * other as a new point
     */
-  def modulo(point: Point): Point = js.native
+  def modulo(point: PointLike): Point = js.native
   /** 
     * The modulo operator returns the integer remainders of dividing the point
     * by the supplied value as a new point.
@@ -254,7 +256,7 @@ trait Point extends StObject {
     * 
     * @return the multiplication of the two points as a new point
     */
-  def multiply(point: Point): Point = js.native
+  def multiply(point: PointLike): Point = js.native
   
   /** 
     * Normalize modifies the {@link #length} of the vector to `1` without
@@ -276,7 +278,7 @@ trait Point extends StObject {
     * 
     * @return the projection of the point onto another point
     */
-  def project(point: Point): Point = js.native
+  def project(point: PointLike): Point = js.native
   
   /** 
     * The quadrant of the {@link #angle} of the point.
@@ -300,7 +302,7 @@ trait Point extends StObject {
     * 
     * @return the rotated point
     */
-  def rotate(angle: Double, center: Point): Point = js.native
+  def rotate(angle: Double, center: PointLike): Point = js.native
   
   /** 
     * Returns a new point with rounded {@link #x} and {@link #y} values. The
@@ -349,7 +351,7 @@ trait Point extends StObject {
     * 
     * @return the subtraction of the two points as a new point
     */
-  def subtract(point: Point): Point = js.native
+  def subtract(point: PointLike): Point = js.native
   
   /** 
     * Transforms the point by the matrix as a new point. The object itself is

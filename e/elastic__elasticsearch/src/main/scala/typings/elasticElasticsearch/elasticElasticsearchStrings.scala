@@ -50,6 +50,7 @@ import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.DFRAfterEffect
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.DFRBasicModel
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.DistanceUnit
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.EnrichExecutePolicyEnrichPolicyPhase
+import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.EnrichPolicyType
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.EqlSearchResultPosition
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.ExpandWildcard
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.FieldSortNumericType
@@ -73,6 +74,7 @@ import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IndicesStatsShardR
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IndicesStorageType
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IndicesTranslogDurability
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IngestConvertType
+import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IngestJsonProcessorConflictStrategy
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IngestShapeType
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IngestUserAgentProperty
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Level
@@ -86,6 +88,7 @@ import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MappingIndexOption
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MappingMatchType
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MappingOnScriptError
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MappingRuntimeFieldType
+import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MappingSourceFieldMode
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MappingTermVectorOption
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MappingTimeSeriesMetricType
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MigrationDeprecationsDeprecationLevel
@@ -165,6 +168,7 @@ import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.WatcherAcknowledge
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.WatcherActionExecutionMode
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.WatcherActionStatusOptions
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.WatcherActionType
+import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.WatcherConditionOp
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.WatcherConditionType
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.WatcherConnectionScheme
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.WatcherDataAttachmentFormat
@@ -2690,6 +2694,8 @@ object elasticElasticsearchStrings {
     extends StObject
        with IndicesNumericFielddataFormat
        with typings.elasticElasticsearch.libApiTypesMod.IndicesNumericFielddataFormat
+       with MappingSourceFieldMode
+       with typings.elasticElasticsearch.libApiTypesMod.MappingSourceFieldMode
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
@@ -2913,6 +2919,8 @@ object elasticElasticsearchStrings {
     extends StObject
        with SearchTotalHitsRelation
        with typings.elasticElasticsearch.libApiTypesMod.SearchTotalHitsRelation
+       with WatcherConditionOp
+       with typings.elasticElasticsearch.libApiTypesMod.WatcherConditionOp
   inline def eq: eq = "eq".asInstanceOf[eq]
   
   @js.native
@@ -3508,6 +3516,13 @@ object elasticElasticsearchStrings {
   inline def generic: generic = "generic".asInstanceOf[generic]
   
   @js.native
+  sealed trait geo_match
+    extends StObject
+       with EnrichPolicyType
+       with typings.elasticElasticsearch.libApiTypesMod.EnrichPolicyType
+  inline def geo_match: geo_match = "geo_match".asInstanceOf[geo_match]
+  
+  @js.native
   sealed trait geo_point
     extends StObject
        with AggregationsValueType
@@ -3608,6 +3623,8 @@ object elasticElasticsearchStrings {
     extends StObject
        with MlConditionOperator
        with typings.elasticElasticsearch.libApiTypesMod.MlConditionOperator
+       with WatcherConditionOp
+       with typings.elasticElasticsearch.libApiTypesMod.WatcherConditionOp
   inline def gt: gt = "gt".asInstanceOf[gt]
   
   @js.native
@@ -3617,6 +3634,8 @@ object elasticElasticsearchStrings {
        with typings.elasticElasticsearch.libApiTypesMod.MlConditionOperator
        with SearchTotalHitsRelation
        with typings.elasticElasticsearch.libApiTypesMod.SearchTotalHitsRelation
+       with WatcherConditionOp
+       with typings.elasticElasticsearch.libApiTypesMod.WatcherConditionOp
   inline def gte: gte = "gte".asInstanceOf[gte]
   
   @js.native
@@ -4286,6 +4305,13 @@ object elasticElasticsearchStrings {
   inline def keep_types: keep_types = "keep_types".asInstanceOf[keep_types]
   
   @js.native
+  sealed trait keep_values
+    extends StObject
+       with AggregationsGapPolicy
+       with typings.elasticElasticsearch.libApiTypesMod.AggregationsGapPolicy
+  inline def keep_values: keep_values = "keep_values".asInstanceOf[keep_values]
+  
+  @js.native
   sealed trait keyword
     extends StObject
        with MappingFieldType
@@ -4559,6 +4585,8 @@ object elasticElasticsearchStrings {
     extends StObject
        with MlConditionOperator
        with typings.elasticElasticsearch.libApiTypesMod.MlConditionOperator
+       with WatcherConditionOp
+       with typings.elasticElasticsearch.libApiTypesMod.WatcherConditionOp
   inline def lt: lt = "lt".asInstanceOf[lt]
   
   @js.native
@@ -4566,6 +4594,8 @@ object elasticElasticsearchStrings {
     extends StObject
        with MlConditionOperator
        with typings.elasticElasticsearch.libApiTypesMod.MlConditionOperator
+       with WatcherConditionOp
+       with typings.elasticElasticsearch.libApiTypesMod.WatcherConditionOp
   inline def lte: lte = "lte".asInstanceOf[lte]
   
   @js.native
@@ -4791,6 +4821,13 @@ object elasticElasticsearchStrings {
   inline def master: master = "master".asInstanceOf[master]
   
   @js.native
+  sealed trait `match`
+    extends StObject
+       with EnrichPolicyType
+       with typings.elasticElasticsearch.libApiTypesMod.EnrichPolicyType
+  inline def `match`: `match` = "match".asInstanceOf[`match`]
+  
+  @js.native
   sealed trait match_only_text
     extends StObject
        with MappingFieldType
@@ -4910,6 +4947,13 @@ object elasticElasticsearchStrings {
        with QueryDslGeoExecution
        with typings.elasticElasticsearch.libApiTypesMod.QueryDslGeoExecution
   inline def memory: memory = "memory".asInstanceOf[memory]
+  
+  @js.native
+  sealed trait merge
+    extends StObject
+       with IngestJsonProcessorConflictStrategy
+       with typings.elasticElasticsearch.libApiTypesMod.IngestJsonProcessorConflictStrategy
+  inline def merge: merge = "merge".asInstanceOf[merge]
   
   @js.native
   sealed trait metadata
@@ -5772,6 +5816,13 @@ object elasticElasticsearchStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
+  sealed trait not_eq
+    extends StObject
+       with WatcherConditionOp
+       with typings.elasticElasticsearch.libApiTypesMod.WatcherConditionOp
+  inline def not_eq: not_eq = "not_eq".asInstanceOf[not_eq]
+  
+  @js.native
   sealed trait not_executed_already_queued
     extends StObject
        with WatcherExecutionStatus
@@ -6263,6 +6314,13 @@ object elasticElasticsearchStrings {
   inline def r: r = "r".asInstanceOf[r]
   
   @js.native
+  sealed trait range
+    extends StObject
+       with EnrichPolicyType
+       with typings.elasticElasticsearch.libApiTypesMod.EnrichPolicyType
+  inline def range: range = "range".asInstanceOf[range]
+  
+  @js.native
   sealed trait rank_feature
     extends StObject
        with MappingFieldType
@@ -6401,6 +6459,8 @@ object elasticElasticsearchStrings {
   @js.native
   sealed trait replace
     extends StObject
+       with IngestJsonProcessorConflictStrategy
+       with typings.elasticElasticsearch.libApiTypesMod.IngestJsonProcessorConflictStrategy
        with QueryDslFunctionBoostMode
        with typings.elasticElasticsearch.libApiTypesMod.QueryDslFunctionBoostMode
        with ShutdownType
@@ -7121,6 +7181,13 @@ object elasticElasticsearchStrings {
   inline def stopping_ : stopping_ = "stopping".asInstanceOf[stopping_]
   
   @js.native
+  sealed trait stored
+    extends StObject
+       with MappingSourceFieldMode
+       with typings.elasticElasticsearch.libApiTypesMod.MappingSourceFieldMode
+  inline def stored: stored = "stored".asInstanceOf[stored]
+  
+  @js.native
   sealed trait strict
     extends StObject
        with QueryDslGeoValidationMethod
@@ -7200,6 +7267,13 @@ object elasticElasticsearchStrings {
   @js.native
   sealed trait synonym_graph extends StObject
   inline def synonym_graph: synonym_graph = "synonym_graph".asInstanceOf[synonym_graph]
+  
+  @js.native
+  sealed trait synthetic
+    extends StObject
+       with MappingSourceFieldMode
+       with typings.elasticElasticsearch.libApiTypesMod.MappingSourceFieldMode
+  inline def synthetic: synthetic = "synthetic".asInstanceOf[synthetic]
   
   @js.native
   sealed trait t
@@ -7484,6 +7558,8 @@ object elasticElasticsearchStrings {
        with typings.elasticElasticsearch.libApiTypesMod.CatCatTrainedModelsColumn
        with CatCatTransformColumn
        with typings.elasticElasticsearch.libApiTypesMod.CatCatTransformColumn
+       with ScriptSortType
+       with typings.elasticElasticsearch.libApiTypesMod.ScriptSortType
   inline def version: version = "version".asInstanceOf[version]
   
   @js.native

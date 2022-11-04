@@ -2,7 +2,7 @@ package typings.elasticElasticsearch.anon
 
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsAggregationContainer
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Field
-import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields
+import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.FieldValue
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.IndexName
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MappingRuntimeFields
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.QueryDslFieldAndFormat
@@ -79,7 +79,7 @@ trait Aggs extends StObject {
   
   var stats: js.UndefOr[js.Array[String]] = js.undefined
   
-  var stored_fields: js.UndefOr[Fields] = js.undefined
+  var stored_fields: js.UndefOr[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields] = js.undefined
   
   var suggest: js.UndefOr[SearchSuggester] = js.undefined
   
@@ -186,7 +186,7 @@ object Aggs {
     
     inline def setSearch_afterUndefined: Self = StObject.set(x, "search_after", js.undefined)
     
-    inline def setSearch_afterVarargs(value: (long | double | String | Null)*): Self = StObject.set(x, "search_after", js.Array(value*))
+    inline def setSearch_afterVarargs(value: FieldValue*): Self = StObject.set(x, "search_after", js.Array(value*))
     
     inline def setSeq_no_primary_term(value: Boolean): Self = StObject.set(x, "seq_no_primary_term", value.asInstanceOf[js.Any])
     
@@ -212,7 +212,7 @@ object Aggs {
     
     inline def setStatsVarargs(value: String*): Self = StObject.set(x, "stats", js.Array(value*))
     
-    inline def setStored_fields(value: Fields): Self = StObject.set(x, "stored_fields", value.asInstanceOf[js.Any])
+    inline def setStored_fields(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields): Self = StObject.set(x, "stored_fields", value.asInstanceOf[js.Any])
     
     inline def setStored_fieldsUndefined: Self = StObject.set(x, "stored_fields", js.undefined)
     

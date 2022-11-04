@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IngestProcessorBase extends StObject {
   
+  var description: js.UndefOr[String] = js.undefined
+  
   var `if`: js.UndefOr[String] = js.undefined
   
   var ignore_failure: js.UndefOr[Boolean] = js.undefined
@@ -22,6 +24,10 @@ object IngestProcessorBase {
   }
   
   extension [Self <: IngestProcessorBase](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setIf(value: String): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
     

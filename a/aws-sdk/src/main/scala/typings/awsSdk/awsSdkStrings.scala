@@ -74429,6 +74429,7 @@ object awsSdkStrings {
   @js.native
   sealed trait false__
     extends StObject
+       with typings.awsSdk.clientsMemorydbMod._DataTieringStatus
        with _FindingsFound
   
   @js.native
@@ -80064,6 +80065,17 @@ object awsSdkStrings {
   inline def mlDott3Dotxlarge: mlDott3Dotxlarge = "ml.t3.xlarge".asInstanceOf[mlDott3Dotxlarge]
   
   @js.native
+  sealed trait mlDottrn1Dot2xlarge
+    extends StObject
+       with _TrainingInstanceType
+  
+  @js.native
+  sealed trait mlDottrn1Dot32xlarge
+    extends StObject
+       with _TrainingInstanceType
+  inline def mlDottrn1Dot32xlarge: mlDottrn1Dot32xlarge = "ml.trn1.32xlarge".asInstanceOf[mlDottrn1Dot32xlarge]
+  
+  @js.native
   sealed trait ml_
     extends StObject
        with _ClarifyTextLanguage
@@ -85627,6 +85639,7 @@ object awsSdkStrings {
   @js.native
   sealed trait true__
     extends StObject
+       with typings.awsSdk.clientsMemorydbMod._DataTieringStatus
        with _FindingsFound
   
   @js.native
@@ -85781,7 +85794,6 @@ object awsSdkStrings {
     extends StObject
        with _OpenSearchPartitionInstanceType
        with _OpenSearchWarmPartitionInstanceType
-  inline def ultrawarm1DotmediumDotsearch: ultrawarm1DotmediumDotsearch = "ultrawarm1.medium.search".asInstanceOf[ultrawarm1DotmediumDotsearch]
   
   @js.native
   sealed trait ultrawarm1DotxlargeDotsearch

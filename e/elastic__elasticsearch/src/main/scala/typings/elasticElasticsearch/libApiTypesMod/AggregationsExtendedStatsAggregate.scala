@@ -17,6 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var std_deviation_bounds_as_string: js.UndefOr[AggregationsStandardDeviationBoundsAsString] = js.undefined
   
+  var std_deviation_population: double | Null
+  
+  var std_deviation_sampling: double | Null
+  
   var sum_of_squares: double | Null
   
   var sum_of_squares_as_string: js.UndefOr[String] = js.undefined
@@ -36,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AggregationsExtendedStatsAggregate {
   
   inline def apply(count: long, sum: double): AggregationsExtendedStatsAggregate = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], avg = null, max = null, min = null, std_deviation = null, sum_of_squares = null, variance = null, variance_population = null, variance_sampling = null)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], avg = null, max = null, min = null, std_deviation = null, std_deviation_population = null, std_deviation_sampling = null, sum_of_squares = null, variance = null, variance_population = null, variance_sampling = null)
     __obj.asInstanceOf[AggregationsExtendedStatsAggregate]
   }
   
@@ -57,6 +61,14 @@ object AggregationsExtendedStatsAggregate {
     inline def setStd_deviation_bounds_as_string(value: AggregationsStandardDeviationBoundsAsString): Self = StObject.set(x, "std_deviation_bounds_as_string", value.asInstanceOf[js.Any])
     
     inline def setStd_deviation_bounds_as_stringUndefined: Self = StObject.set(x, "std_deviation_bounds_as_string", js.undefined)
+    
+    inline def setStd_deviation_population(value: double): Self = StObject.set(x, "std_deviation_population", value.asInstanceOf[js.Any])
+    
+    inline def setStd_deviation_populationNull: Self = StObject.set(x, "std_deviation_population", null)
+    
+    inline def setStd_deviation_sampling(value: double): Self = StObject.set(x, "std_deviation_sampling", value.asInstanceOf[js.Any])
+    
+    inline def setStd_deviation_samplingNull: Self = StObject.set(x, "std_deviation_sampling", null)
     
     inline def setSum_of_squares(value: double): Self = StObject.set(x, "sum_of_squares", value.asInstanceOf[js.Any])
     

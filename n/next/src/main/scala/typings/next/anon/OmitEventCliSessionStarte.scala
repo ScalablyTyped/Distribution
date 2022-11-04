@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Omit<next.next/dist/telemetry/events/version.EventCliSessionStarted, 'nextVersion' | 'nodeVersion' | 'hasNextConfig' | 'buildTarget' | 'hasWebpackConfig' | 'hasBabelConfig' | 'basePathEnabled' | 'i18nEnabled' | 'imageEnabled' | 'imageFutureEnabled' | 'locales' | 'localeDomainsCount' | 'localeDetectionEnabled' | 'imageDomainsCount' | 'imageRemotePatternsCount' | 'imageSizes' | 'imageLoader' | 'imageFormats' | 'trailingSlashEnabled' | 'reactStrictMode'> */
 trait OmitEventCliSessionStarte extends StObject {
   
+  var appDir: js.UndefOr[Boolean | Null] = js.undefined
+  
   var cliCommand: String
   
   var hasNowJson: Boolean
@@ -14,6 +16,8 @@ trait OmitEventCliSessionStarte extends StObject {
   var isCustomServer: js.UndefOr[Boolean | Null] = js.undefined
   
   var isSrcDir: js.UndefOr[Boolean | Null] = js.undefined
+  
+  var pagesDir: js.UndefOr[Boolean | Null] = js.undefined
   
   var turboFlag: Boolean
   
@@ -27,6 +31,12 @@ object OmitEventCliSessionStarte {
   }
   
   extension [Self <: OmitEventCliSessionStarte](x: Self) {
+    
+    inline def setAppDir(value: Boolean): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
+    
+    inline def setAppDirNull: Self = StObject.set(x, "appDir", null)
+    
+    inline def setAppDirUndefined: Self = StObject.set(x, "appDir", js.undefined)
     
     inline def setCliCommand(value: String): Self = StObject.set(x, "cliCommand", value.asInstanceOf[js.Any])
     
@@ -43,6 +53,12 @@ object OmitEventCliSessionStarte {
     inline def setIsSrcDirNull: Self = StObject.set(x, "isSrcDir", null)
     
     inline def setIsSrcDirUndefined: Self = StObject.set(x, "isSrcDir", js.undefined)
+    
+    inline def setPagesDir(value: Boolean): Self = StObject.set(x, "pagesDir", value.asInstanceOf[js.Any])
+    
+    inline def setPagesDirNull: Self = StObject.set(x, "pagesDir", null)
+    
+    inline def setPagesDirUndefined: Self = StObject.set(x, "pagesDir", js.undefined)
     
     inline def setTurboFlag(value: Boolean): Self = StObject.set(x, "turboFlag", value.asInstanceOf[js.Any])
     

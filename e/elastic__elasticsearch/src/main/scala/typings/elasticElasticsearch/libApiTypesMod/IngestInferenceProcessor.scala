@@ -15,12 +15,12 @@ trait IngestInferenceProcessor
   
   var model_id: Id
   
-  var target_field: Field
+  var target_field: js.UndefOr[Field] = js.undefined
 }
 object IngestInferenceProcessor {
   
-  inline def apply(model_id: Id, target_field: Field): IngestInferenceProcessor = {
-    val __obj = js.Dynamic.literal(model_id = model_id.asInstanceOf[js.Any], target_field = target_field.asInstanceOf[js.Any])
+  inline def apply(model_id: Id): IngestInferenceProcessor = {
+    val __obj = js.Dynamic.literal(model_id = model_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestInferenceProcessor]
   }
   
@@ -37,5 +37,7 @@ object IngestInferenceProcessor {
     inline def setModel_id(value: Id): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
     inline def setTarget_field(value: Field): Self = StObject.set(x, "target_field", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_fieldUndefined: Self = StObject.set(x, "target_field", js.undefined)
   }
 }

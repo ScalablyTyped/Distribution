@@ -10,8 +10,6 @@ trait MappingScaledFloatNumberProperty
      with MappingNumberPropertyBase
      with MappingProperty {
   
-  var coerce: js.UndefOr[Boolean] = js.undefined
-  
   var null_value: js.UndefOr[double] = js.undefined
   
   var scaling_factor: js.UndefOr[double] = js.undefined
@@ -27,10 +25,6 @@ object MappingScaledFloatNumberProperty {
   }
   
   extension [Self <: MappingScaledFloatNumberProperty](x: Self) {
-    
-    inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
-    
-    inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
     
     inline def setNull_value(value: double): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

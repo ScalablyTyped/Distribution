@@ -9,6 +9,8 @@ trait SecurityGetUserRequest
      with SpecUtilsCommonQueryParameters {
   
   var username: js.UndefOr[Username | js.Array[Username]] = js.undefined
+  
+  var with_profile_uid: js.UndefOr[Boolean] = js.undefined
 }
 object SecurityGetUserRequest {
   
@@ -24,5 +26,9 @@ object SecurityGetUserRequest {
     inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     inline def setUsernameVarargs(value: Username*): Self = StObject.set(x, "username", js.Array(value*))
+    
+    inline def setWith_profile_uid(value: Boolean): Self = StObject.set(x, "with_profile_uid", value.asInstanceOf[js.Any])
+    
+    inline def setWith_profile_uidUndefined: Self = StObject.set(x, "with_profile_uid", js.undefined)
   }
 }

@@ -10,7 +10,7 @@ trait IndicesAnalyzeAnalyzeToken extends StObject {
   
   var position: long
   
-  var position_length: js.UndefOr[long] = js.undefined
+  var positionLength: js.UndefOr[long] = js.undefined
   
   var start_offset: long
   
@@ -32,9 +32,9 @@ object IndicesAnalyzeAnalyzeToken {
     
     inline def setPosition(value: long): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    inline def setPosition_length(value: long): Self = StObject.set(x, "position_length", value.asInstanceOf[js.Any])
+    inline def setPositionLength(value: long): Self = StObject.set(x, "positionLength", value.asInstanceOf[js.Any])
     
-    inline def setPosition_lengthUndefined: Self = StObject.set(x, "position_length", js.undefined)
+    inline def setPositionLengthUndefined: Self = StObject.set(x, "positionLength", js.undefined)
     
     inline def setStart_offset(value: long): Self = StObject.set(x, "start_offset", value.asInstanceOf[js.Any])
     

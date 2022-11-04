@@ -14,6 +14,8 @@ trait MappingAggregateMetricDoubleProperty
   
   var metrics: js.Array[String]
   
+  var time_series_metric: js.UndefOr[MappingTimeSeriesMetricType] = js.undefined
+  
   var `type`: aggregate_metric_double
 }
 object MappingAggregateMetricDoubleProperty {
@@ -31,6 +33,10 @@ object MappingAggregateMetricDoubleProperty {
     inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value*))
+    
+    inline def setTime_series_metric(value: MappingTimeSeriesMetricType): Self = StObject.set(x, "time_series_metric", value.asInstanceOf[js.Any])
+    
+    inline def setTime_series_metricUndefined: Self = StObject.set(x, "time_series_metric", js.undefined)
     
     inline def setType(value: aggregate_metric_double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

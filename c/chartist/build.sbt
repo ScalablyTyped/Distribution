@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chartist"
-version := "1.2.1-622a4f"
+version := "1.3.0-cfc849"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

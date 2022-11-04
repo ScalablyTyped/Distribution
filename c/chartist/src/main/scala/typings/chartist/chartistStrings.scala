@@ -32,6 +32,10 @@ object chartistStrings {
   inline def accumulate: accumulate = "accumulate".asInstanceOf[accumulate]
   
   @js.native
+  sealed trait `accumulate-relative` extends StObject
+  inline def `accumulate-relative`: `accumulate-relative` = "accumulate-relative".asInstanceOf[`accumulate-relative`]
+  
+  @js.native
   sealed trait addClass
     extends StObject
        with SvgMethods

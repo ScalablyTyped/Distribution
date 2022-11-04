@@ -11,6 +11,8 @@ trait MappingJoinProperty
      with MappingPropertyBase
      with MappingProperty {
   
+  var eager_global_ordinals: js.UndefOr[Boolean] = js.undefined
+  
   var relations: js.UndefOr[Record[RelationName, RelationName | js.Array[RelationName]]] = js.undefined
   
   var `type`: join
@@ -24,6 +26,10 @@ object MappingJoinProperty {
   }
   
   extension [Self <: MappingJoinProperty](x: Self) {
+    
+    inline def setEager_global_ordinals(value: Boolean): Self = StObject.set(x, "eager_global_ordinals", value.asInstanceOf[js.Any])
+    
+    inline def setEager_global_ordinalsUndefined: Self = StObject.set(x, "eager_global_ordinals", js.undefined)
     
     inline def setRelations(value: Record[RelationName, RelationName | js.Array[RelationName]]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     

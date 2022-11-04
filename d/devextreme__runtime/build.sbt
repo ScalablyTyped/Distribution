@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "devextreme__runtime"
-version := "3.0.11-5ddd92"
+version := "3.0.11-3646e3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ajv" % "8.11.0-6482f2",
   "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-8f5b27",
   "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-27a8c8",
-  "org.scalablytyped" %%% "angular__compiler" % "14.2.8-b9651c",
-  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-0cbe90",
-  "org.scalablytyped" %%% "angular__core" % "14.2.8-281c00",
+  "org.scalablytyped" %%% "angular__compiler" % "14.2.9-c4304c",
+  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-581d84",
+  "org.scalablytyped" %%% "angular__core" % "14.2.9-aa6a93",
   "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-b67249",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-bf895e",
   "org.scalablytyped" %%% "babel__parser" % "7.20.1-1ab1d1",

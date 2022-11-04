@@ -25,8 +25,6 @@ object distServerNodeWebStreamsHelperMod {
   
   inline def createDeferredSuffixStream(suffix: String): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredSuffixStream")(suffix.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
   
-  inline def createHeadInjectionTransformStream(inject: js.Function0[js.Promise[String]]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHeadInjectionTransformStream")(inject.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
-  
   inline def createInlineDataStream(dataStream: ReadableStream[js.typedarray.Uint8Array]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInlineDataStream")(dataStream.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
   
   inline def createInsertedHTMLStream(getServerInsertedHTML: js.Function0[js.Promise[String]]): TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsertedHTMLStream")(getServerInsertedHTML.asInstanceOf[js.Any]).asInstanceOf[TransformStream[js.typedarray.Uint8Array, js.typedarray.Uint8Array]]

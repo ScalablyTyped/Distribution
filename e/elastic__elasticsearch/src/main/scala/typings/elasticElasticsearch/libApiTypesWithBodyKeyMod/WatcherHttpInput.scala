@@ -8,8 +8,6 @@ trait WatcherHttpInput extends StObject {
   
   var extract: js.UndefOr[js.Array[String]] = js.undefined
   
-  var http: js.UndefOr[WatcherHttpInput] = js.undefined
-  
   var request: js.UndefOr[WatcherHttpInputRequestDefinition] = js.undefined
   
   var response_content_type: js.UndefOr[WatcherResponseContentType] = js.undefined
@@ -28,10 +26,6 @@ object WatcherHttpInput {
     inline def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
     
     inline def setExtractVarargs(value: String*): Self = StObject.set(x, "extract", js.Array(value*))
-    
-    inline def setHttp(value: WatcherHttpInput): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
-    
-    inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
     inline def setRequest(value: WatcherHttpInputRequestDefinition): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stylelint-webpack-plugin"
-version := "3.3.0-1809b1"
+version := "3.3.0-28d824"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "schema-utils" % "4.0.0-3da904",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-fbe867",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "stylelint" % "14.14.0-d0237e",
+  "org.scalablytyped" %%% "stylelint" % "14.14.1-7168bc",
   "org.scalablytyped" %%% "tapable" % "2.2.1-52b605",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092",
   "org.scalablytyped" %%% "webpack" % "5.74.0-3f97e9")

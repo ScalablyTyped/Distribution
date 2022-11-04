@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-virtual-modules"
-version := "0.4.5-7504cb"
+version := "0.4.6-5cbcd6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ng-packagr"
-version := "14.2.1-131ed1"
+version := "14.2.1-090faa"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "angular__compiler" % "14.2.8-b9651c",
-  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-0cbe90",
+  "org.scalablytyped" %%% "angular__compiler" % "14.2.9-c4304c",
+  "org.scalablytyped" %%% "angular__compiler-cli" % "14.2.7-581d84",
   "org.scalablytyped" %%% "ansi-colors" % "4.1.3-b3eb08",
   "org.scalablytyped" %%% "anymatch" % "3.1.2-63e35b",
   "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-b67249",

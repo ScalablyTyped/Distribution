@@ -7,19 +7,14 @@ import typings.reselect.esDefaultMemoizeMod.DefaultMemoizeOptions
 import typings.reselect.esTypesMod.DropFirst
 import typings.reselect.esTypesMod.EqualityFn
 import typings.reselect.esTypesMod.Expand
-import typings.reselect.esTypesMod.ExtractParams
 import typings.reselect.esTypesMod.GetParamsFromSelectors
 import typings.reselect.esTypesMod.Head
-import typings.reselect.esTypesMod.LastOf
-import typings.reselect.esTypesMod.LongestArray
-import typings.reselect.esTypesMod.MergeParameters
 import typings.reselect.esTypesMod.OutputSelector
 import typings.reselect.esTypesMod.Selector
 import typings.reselect.esTypesMod.SelectorArray
 import typings.reselect.esTypesMod.SelectorResultArray
 import typings.reselect.esTypesMod.Tail
-import typings.reselect.esTypesMod.Transpose
-import typings.reselect.esTypesMod.TuplifyUnion
+import typings.reselect.esVersionedTypesTs47MergeParametersMod.MergeParameters
 import typings.std.Parameters
 import typings.std.Pick
 import typings.std.ReturnType
@@ -87,28 +82,7 @@ object mod {
         Selectors, 
         Result, 
         js.Function1[/* args */ SelectorResultArray[Selectors], Result & Keys], 
-        GetParamsFromSelectors[
-          Selectors, 
-          Tail[
-            MergeParameters[
-              Selectors, 
-              ExtractParams[Selectors], 
-              Transpose[ExtractParams[Selectors]], 
-              TuplifyUnion[
-                Transpose[ExtractParams[Selectors]], 
-                LastOf[Transpose[ExtractParams[Selectors]]], 
-                /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
-              ], 
-              LongestArray[
-                TuplifyUnion[
-                  Transpose[ExtractParams[Selectors]], 
-                  LastOf[Transpose[ExtractParams[Selectors]]], 
-                  /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
-                ]
-              ]
-            ]
-          ]
-        ]
+        GetParamsFromSelectors[Selectors, Tail[MergeParameters[Selectors]]]
       ]) & Keys = js.native
     /** Input selectors as a separate array */
     def apply[Selectors /* <: SelectorArray */, Result](
@@ -118,28 +92,7 @@ object mod {
         Selectors, 
         Result, 
         js.Function1[/* args */ SelectorResultArray[Selectors], Result & Keys], 
-        GetParamsFromSelectors[
-          Selectors, 
-          Tail[
-            MergeParameters[
-              Selectors, 
-              ExtractParams[Selectors], 
-              Transpose[ExtractParams[Selectors]], 
-              TuplifyUnion[
-                Transpose[ExtractParams[Selectors]], 
-                LastOf[Transpose[ExtractParams[Selectors]]], 
-                /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
-              ], 
-              LongestArray[
-                TuplifyUnion[
-                  Transpose[ExtractParams[Selectors]], 
-                  LastOf[Transpose[ExtractParams[Selectors]]], 
-                  /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
-                ]
-              ]
-            ]
-          ]
-        ]
+        GetParamsFromSelectors[Selectors, Tail[MergeParameters[Selectors]]]
       ]) & Keys = js.native
     def apply[Selectors /* <: SelectorArray */, Result](
       selectors: /* import warning: importer.ImportType#apply c repeated non-array type: Selectors */ js.Array[Selectors],
@@ -149,28 +102,7 @@ object mod {
         Selectors, 
         Result, 
         js.Function1[/* args */ SelectorResultArray[Selectors], Result & Keys], 
-        GetParamsFromSelectors[
-          Selectors, 
-          Tail[
-            MergeParameters[
-              Selectors, 
-              ExtractParams[Selectors], 
-              Transpose[ExtractParams[Selectors]], 
-              TuplifyUnion[
-                Transpose[ExtractParams[Selectors]], 
-                LastOf[Transpose[ExtractParams[Selectors]]], 
-                /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
-              ], 
-              LongestArray[
-                TuplifyUnion[
-                  Transpose[ExtractParams[Selectors]], 
-                  LastOf[Transpose[ExtractParams[Selectors]]], 
-                  /* import warning: importer.ImportType#apply Failed type conversion: [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<Selectors>>] extends [never] ? true : false */ js.Any
-                ]
-              ]
-            ]
-          ]
-        ]
+        GetParamsFromSelectors[Selectors, Tail[MergeParameters[Selectors]]]
       ]) & Keys = js.native
   }
   

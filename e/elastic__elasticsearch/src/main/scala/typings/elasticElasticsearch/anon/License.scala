@@ -9,12 +9,12 @@ trait License extends StObject {
   
   var license: js.UndefOr[LicenseLicense] = js.undefined
   
-  var licenses: js.Array[LicenseLicense]
+  var licenses: js.UndefOr[js.Array[LicenseLicense]] = js.undefined
 }
 object License {
   
-  inline def apply(licenses: js.Array[LicenseLicense]): License = {
-    val __obj = js.Dynamic.literal(licenses = licenses.asInstanceOf[js.Any])
+  inline def apply(): License = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[License]
   }
   
@@ -25,6 +25,8 @@ object License {
     inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
     
     inline def setLicenses(value: js.Array[LicenseLicense]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+    
+    inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
     inline def setLicensesVarargs(value: LicenseLicense*): Self = StObject.set(x, "licenses", js.Array(value*))
   }

@@ -17,6 +17,8 @@ object distTelemetryEventsVersionMod {
   
   trait EventCliSessionStarted extends StObject {
     
+    var appDir: Boolean | Null
+    
     var basePathEnabled: Boolean
     
     var buildTarget: String
@@ -61,6 +63,8 @@ object distTelemetryEventsVersionMod {
     
     var nodeVersion: String
     
+    var pagesDir: Boolean | Null
+    
     var reactStrictMode: Boolean
     
     var trailingSlashEnabled: Boolean
@@ -88,11 +92,15 @@ object distTelemetryEventsVersionMod {
       trailingSlashEnabled: Boolean,
       turboFlag: Boolean
     ): EventCliSessionStarted = {
-      val __obj = js.Dynamic.literal(basePathEnabled = basePathEnabled.asInstanceOf[js.Any], buildTarget = buildTarget.asInstanceOf[js.Any], cliCommand = cliCommand.asInstanceOf[js.Any], hasBabelConfig = hasBabelConfig.asInstanceOf[js.Any], hasNextConfig = hasNextConfig.asInstanceOf[js.Any], hasNowJson = hasNowJson.asInstanceOf[js.Any], hasWebpackConfig = hasWebpackConfig.asInstanceOf[js.Any], i18nEnabled = i18nEnabled.asInstanceOf[js.Any], imageEnabled = imageEnabled.asInstanceOf[js.Any], imageFutureEnabled = imageFutureEnabled.asInstanceOf[js.Any], nextVersion = nextVersion.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], reactStrictMode = reactStrictMode.asInstanceOf[js.Any], trailingSlashEnabled = trailingSlashEnabled.asInstanceOf[js.Any], turboFlag = turboFlag.asInstanceOf[js.Any], imageDomainsCount = null, imageFormats = null, imageLoader = null, imageRemotePatternsCount = null, imageSizes = null, isCustomServer = null, isSrcDir = null, localeDetectionEnabled = null, localeDomainsCount = null, locales = null, webpackVersion = null)
+      val __obj = js.Dynamic.literal(basePathEnabled = basePathEnabled.asInstanceOf[js.Any], buildTarget = buildTarget.asInstanceOf[js.Any], cliCommand = cliCommand.asInstanceOf[js.Any], hasBabelConfig = hasBabelConfig.asInstanceOf[js.Any], hasNextConfig = hasNextConfig.asInstanceOf[js.Any], hasNowJson = hasNowJson.asInstanceOf[js.Any], hasWebpackConfig = hasWebpackConfig.asInstanceOf[js.Any], i18nEnabled = i18nEnabled.asInstanceOf[js.Any], imageEnabled = imageEnabled.asInstanceOf[js.Any], imageFutureEnabled = imageFutureEnabled.asInstanceOf[js.Any], nextVersion = nextVersion.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], reactStrictMode = reactStrictMode.asInstanceOf[js.Any], trailingSlashEnabled = trailingSlashEnabled.asInstanceOf[js.Any], turboFlag = turboFlag.asInstanceOf[js.Any], appDir = null, imageDomainsCount = null, imageFormats = null, imageLoader = null, imageRemotePatternsCount = null, imageSizes = null, isCustomServer = null, isSrcDir = null, localeDetectionEnabled = null, localeDomainsCount = null, locales = null, pagesDir = null, webpackVersion = null)
       __obj.asInstanceOf[EventCliSessionStarted]
     }
     
     extension [Self <: EventCliSessionStarted](x: Self) {
+      
+      inline def setAppDir(value: Boolean): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
+      
+      inline def setAppDirNull: Self = StObject.set(x, "appDir", null)
       
       inline def setBasePathEnabled(value: Boolean): Self = StObject.set(x, "basePathEnabled", value.asInstanceOf[js.Any])
       
@@ -157,6 +165,10 @@ object distTelemetryEventsVersionMod {
       inline def setNextVersion(value: String): Self = StObject.set(x, "nextVersion", value.asInstanceOf[js.Any])
       
       inline def setNodeVersion(value: String): Self = StObject.set(x, "nodeVersion", value.asInstanceOf[js.Any])
+      
+      inline def setPagesDir(value: Boolean): Self = StObject.set(x, "pagesDir", value.asInstanceOf[js.Any])
+      
+      inline def setPagesDirNull: Self = StObject.set(x, "pagesDir", null)
       
       inline def setReactStrictMode(value: Boolean): Self = StObject.set(x, "reactStrictMode", value.asInstanceOf[js.Any])
       

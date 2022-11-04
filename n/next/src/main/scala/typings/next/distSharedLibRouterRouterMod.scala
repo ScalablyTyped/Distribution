@@ -363,7 +363,7 @@ object distSharedLibRouterRouterMod {
     }
   }
   
-  /* Inlined next.next/dist/shared/lib/router/router.BaseRouter & std.Pick<next.next/dist/shared/lib/router/router.Router, 'push' | 'replace' | 'reload' | 'back' | 'prefetch' | 'beforePopState' | 'events' | 'isFallback' | 'isReady' | 'isPreview'> */
+  /* Inlined next.next/dist/shared/lib/router/router.BaseRouter & std.Pick<next.next/dist/shared/lib/router/router.Router, 'push' | 'replace' | 'reload' | 'back' | 'forward' | 'prefetch' | 'beforePopState' | 'events' | 'isFallback' | 'isReady' | 'isPreview'> */
   trait NextRouter extends StObject {
     
     var asPath: String
@@ -379,6 +379,8 @@ object distSharedLibRouterRouterMod {
     var domainLocales: js.UndefOr[js.Array[DomainLocale]] = js.undefined
     
     var events: MittEmitter[RouterEvent]
+    
+    var forward: js.Function0[Unit]
     
     var isFallback: js.Function0[Boolean]
     
@@ -429,6 +431,7 @@ object distSharedLibRouterRouterMod {
       basePath: String,
       beforePopState: /* cb */ BeforePopStateCallback => Unit,
       events: MittEmitter[RouterEvent],
+      forward: () => Unit,
       isFallback: () => Boolean,
       isLocaleDomain: Boolean,
       isPreview: () => Boolean,
@@ -441,7 +444,7 @@ object distSharedLibRouterRouterMod {
       replace: (/* url */ Url, /* as */ js.UndefOr[Url], /* options */ js.UndefOr[TransitionOptions]) => js.Promise[Boolean],
       route: String
     ): NextRouter = {
-      val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], back = js.Any.fromFunction0(back), basePath = basePath.asInstanceOf[js.Any], beforePopState = js.Any.fromFunction1(beforePopState), events = events.asInstanceOf[js.Any], isFallback = js.Any.fromFunction0(isFallback), isLocaleDomain = isLocaleDomain.asInstanceOf[js.Any], isPreview = js.Any.fromFunction0(isPreview), isReady = isReady.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], prefetch = js.Any.fromFunction3(prefetch), push = js.Any.fromFunction3(push), query = query.asInstanceOf[js.Any], reload = js.Any.fromFunction0(reload), replace = js.Any.fromFunction3(replace), route = route.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], back = js.Any.fromFunction0(back), basePath = basePath.asInstanceOf[js.Any], beforePopState = js.Any.fromFunction1(beforePopState), events = events.asInstanceOf[js.Any], forward = js.Any.fromFunction0(forward), isFallback = js.Any.fromFunction0(isFallback), isLocaleDomain = isLocaleDomain.asInstanceOf[js.Any], isPreview = js.Any.fromFunction0(isPreview), isReady = isReady.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], prefetch = js.Any.fromFunction3(prefetch), push = js.Any.fromFunction3(push), query = query.asInstanceOf[js.Any], reload = js.Any.fromFunction0(reload), replace = js.Any.fromFunction3(replace), route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[NextRouter]
     }
     
@@ -466,6 +469,8 @@ object distSharedLibRouterRouterMod {
       inline def setDomainLocalesVarargs(value: DomainLocale*): Self = StObject.set(x, "domainLocales", js.Array(value*))
       
       inline def setEvents(value: MittEmitter[RouterEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      
+      inline def setForward(value: () => Unit): Self = StObject.set(x, "forward", js.Any.fromFunction0(value))
       
       inline def setIsFallback(value: () => Boolean): Self = StObject.set(x, "isFallback", js.Any.fromFunction0(value))
       
@@ -625,6 +630,11 @@ object distSharedLibRouterRouterMod {
     var events: MittEmitter[RouterEvent] = js.native
     
     def fetchComponent(route: String): js.Promise[GoodPageCache] = js.native
+    
+    /**
+      * Go forward in history
+      */
+    def forward(): Unit = js.native
     
     def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[Any] = js.native
     

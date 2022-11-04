@@ -1,7 +1,7 @@
 package typings.nextAuth
 
 import typings.nextAuth.anon.BodyOptions
-import typings.nextAuth.anon.Method
+import typings.nextAuth.anon.Headers
 import typings.nextAuth.anon.SessionStore
 import typings.nextAuth.coreMod.OutgoingResponse
 import typings.nextAuth.coreRoutesProvidersMod.PublicProvider
@@ -18,7 +18,7 @@ object coreRoutesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def callback(params: Method): js.Promise[OutgoingResponse[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("callback")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OutgoingResponse[Any]]]
+  inline def callback(params: Headers): js.Promise[OutgoingResponse[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("callback")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OutgoingResponse[Any]]]
   
   inline def providers(
     providers: js.Array[

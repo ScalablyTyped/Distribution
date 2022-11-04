@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "known-css-properties" : "0.25.0"
+      "known-css-properties" : "0.26.0"
     }
   ],
   "test-dependencies" : [
     {
-      "known-css-properties" : "0.25.0"
+      "known-css-properties" : "0.26.0"
     }
   ],
   "compile-devDependencies" : [

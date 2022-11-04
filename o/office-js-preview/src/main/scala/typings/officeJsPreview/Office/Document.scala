@@ -805,7 +805,7 @@ trait Document extends StObject {
     *   </tr>
     *   <tr>
     *     <td><code>Office.CoercionType.SlideRange</code></td>
-    *     <td>- PowerPoint on the web and Windows</td>
+    *     <td>- PowerPoint on the web and on Windows</td>
     *   </tr>
     *   <tr>
     *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>

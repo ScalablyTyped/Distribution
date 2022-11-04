@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sass"
-version := "1.55.0-0bcea0"
+version := "1.56.0-8f36a2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

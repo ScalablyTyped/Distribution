@@ -116,8 +116,8 @@ trait DocumentScope[D] extends StObject {
   
   /** Fetch document meta data, useful for fetching a document's current revision.
     * @see Docs: {@link http://docs.couchdb.org/en/latest/api/document/common.html#head--db-docid} */
-  def head(docname: String): js.Promise[Any] = js.native
-  def head(docname: String, callback: Callback[Any]): js.Promise[Any] = js.native
+  def head(docname: String): js.Promise[DocumentHeadResponseHeaders] = js.native
+  def head(docname: String, callback: Callback[DocumentHeadResponseHeaders]): js.Promise[DocumentHeadResponseHeaders] = js.native
   
   /** Get database info
     * @see Docs: {@link http://docs.couchdb.org/en/latest/api/database/common.html#get--db} */

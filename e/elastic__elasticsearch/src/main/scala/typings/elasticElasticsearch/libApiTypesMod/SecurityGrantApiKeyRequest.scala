@@ -16,6 +16,8 @@ trait SecurityGrantApiKeyRequest
   
   var password: js.UndefOr[Password] = js.undefined
   
+  var run_as: js.UndefOr[Username] = js.undefined
+  
   var username: js.UndefOr[Username] = js.undefined
 }
 object SecurityGrantApiKeyRequest {
@@ -38,6 +40,10 @@ object SecurityGrantApiKeyRequest {
     inline def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setRun_as(value: Username): Self = StObject.set(x, "run_as", value.asInstanceOf[js.Any])
+    
+    inline def setRun_asUndefined: Self = StObject.set(x, "run_as", js.undefined)
     
     inline def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     

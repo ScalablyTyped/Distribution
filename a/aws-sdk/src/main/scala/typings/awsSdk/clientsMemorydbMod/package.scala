@@ -39,6 +39,13 @@ type ClusterList = js.Array[Cluster]
 
 type ClusterNameList = js.Array[String]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.true__
+  - typings.awsSdk.awsSdkStrings.false__
+  - java.lang.String
+*/
+type DataTieringStatus = _DataTieringStatus | java.lang.String
+
 type Double = scala.Double
 
 type EngineVersionInfoList = js.Array[EngineVersionInfo]

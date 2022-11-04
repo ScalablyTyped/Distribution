@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AggregationsStringTermsBucket
   extends StObject
      with AggregationsStringTermsBucketKeys
-     with /* property */ StringDictionary[AggregationsAggregate | String | long]
+     with /* property */ StringDictionary[AggregationsAggregate | FieldValue | long]
 object AggregationsStringTermsBucket {
   
-  inline def apply(doc_count: long, key: String): AggregationsStringTermsBucket = {
-    val __obj = js.Dynamic.literal(doc_count = doc_count.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+  inline def apply(doc_count: long): AggregationsStringTermsBucket = {
+    val __obj = js.Dynamic.literal(doc_count = doc_count.asInstanceOf[js.Any], key = null)
     __obj.asInstanceOf[AggregationsStringTermsBucket]
   }
 }

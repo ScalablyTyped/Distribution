@@ -79,6 +79,8 @@ trait AggregationsAggregationContainer extends StObject {
   
   var inference: js.UndefOr[AggregationsInferenceAggregation] = js.undefined
   
+  var ip_prefix: js.UndefOr[AggregationsIpPrefixAggregation] = js.undefined
+  
   var ip_range: js.UndefOr[AggregationsIpRangeAggregation] = js.undefined
   
   var line: js.UndefOr[AggregationsGeoLineAggregation] = js.undefined
@@ -313,6 +315,10 @@ object AggregationsAggregationContainer {
     inline def setInference(value: AggregationsInferenceAggregation): Self = StObject.set(x, "inference", value.asInstanceOf[js.Any])
     
     inline def setInferenceUndefined: Self = StObject.set(x, "inference", js.undefined)
+    
+    inline def setIp_prefix(value: AggregationsIpPrefixAggregation): Self = StObject.set(x, "ip_prefix", value.asInstanceOf[js.Any])
+    
+    inline def setIp_prefixUndefined: Self = StObject.set(x, "ip_prefix", js.undefined)
     
     inline def setIp_range(value: AggregationsIpRangeAggregation): Self = StObject.set(x, "ip_range", value.asInstanceOf[js.Any])
     

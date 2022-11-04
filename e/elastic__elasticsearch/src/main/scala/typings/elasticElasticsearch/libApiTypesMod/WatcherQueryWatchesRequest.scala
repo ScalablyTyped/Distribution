@@ -39,7 +39,7 @@ object WatcherQueryWatchesRequest {
     
     inline def setSearch_afterUndefined: Self = StObject.set(x, "search_after", js.undefined)
     
-    inline def setSearch_afterVarargs(value: (long | double | String | Null)*): Self = StObject.set(x, "search_after", js.Array(value*))
+    inline def setSearch_afterVarargs(value: FieldValue*): Self = StObject.set(x, "search_after", js.Array(value*))
     
     inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "known-css-properties"
-version := "0.25.0-212721"
+version := "0.26.0-09a034"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

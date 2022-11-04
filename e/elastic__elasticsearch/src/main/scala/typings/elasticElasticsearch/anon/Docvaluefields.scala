@@ -1,7 +1,6 @@
 package typings.elasticElasticsearch.anon
 
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Field
-import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.KnnSearchQuery
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.QueryDslFieldAndFormat
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.QueryDslQueryContainer
@@ -16,13 +15,13 @@ trait Docvaluefields extends StObject {
   
   var docvalue_fields: js.UndefOr[js.Array[QueryDslFieldAndFormat | Field]] = js.undefined
   
-  var fields: js.UndefOr[Fields] = js.undefined
+  var fields: js.UndefOr[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields] = js.undefined
   
   var filter: js.UndefOr[QueryDslQueryContainer | js.Array[QueryDslQueryContainer]] = js.undefined
   
   var knn: KnnSearchQuery
   
-  var stored_fields: js.UndefOr[Fields] = js.undefined
+  var stored_fields: js.UndefOr[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields] = js.undefined
 }
 object Docvaluefields {
   
@@ -39,7 +38,7 @@ object Docvaluefields {
     
     inline def setDocvalue_fieldsVarargs(value: (QueryDslFieldAndFormat | Field)*): Self = StObject.set(x, "docvalue_fields", js.Array(value*))
     
-    inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
@@ -53,7 +52,7 @@ object Docvaluefields {
     
     inline def setKnn(value: KnnSearchQuery): Self = StObject.set(x, "knn", value.asInstanceOf[js.Any])
     
-    inline def setStored_fields(value: Fields): Self = StObject.set(x, "stored_fields", value.asInstanceOf[js.Any])
+    inline def setStored_fields(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields): Self = StObject.set(x, "stored_fields", value.asInstanceOf[js.Any])
     
     inline def setStored_fieldsUndefined: Self = StObject.set(x, "stored_fields", js.undefined)
     

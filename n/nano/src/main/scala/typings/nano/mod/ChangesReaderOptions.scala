@@ -23,7 +23,7 @@ trait ChangesReaderOptions extends StObject {
   var selector: js.UndefOr[MangoSelector] = js.undefined
   
   /** where to begin the changes feed: 0, now or a sequence token */
-  var since: js.UndefOr[String] = js.undefined
+  var since: js.UndefOr[String | Double] = js.undefined
   
   /** number of milliseconds when the longpoll request will timeout */
   var timeout: js.UndefOr[Double] = js.undefined
@@ -61,7 +61,7 @@ object ChangesReaderOptions {
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String | Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     

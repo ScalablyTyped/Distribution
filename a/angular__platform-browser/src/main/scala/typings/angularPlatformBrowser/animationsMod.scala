@@ -124,6 +124,13 @@ object animationsMod {
       delegate: Renderer2,
       engine: ɵAnimationEngine
     ) = this()
+    def this(
+      factory: ɵAnimationRendererFactory,
+      namespaceId: String,
+      delegate: Renderer2,
+      engine: ɵAnimationEngine,
+      onDestroy: js.Function0[Unit]
+    ) = this()
     
     var factory: ɵAnimationRendererFactory = js.native
     
@@ -253,6 +260,8 @@ object animationsMod {
   
   @js.native
   trait BaseAnimationRenderer extends Renderer2 {
+    
+    /* private */ var _onDestroy: Any = js.native
     
     var delegate: Renderer2 = js.native
     

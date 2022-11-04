@@ -210,8 +210,8 @@ trait Project extends StObject {
     * @return a hit result object that contains more information
     *     about what exactly was hit or `null` if nothing was hit
     */
-  def hitTest(point: Point): HitResult = js.native
-  def hitTest(point: Point, options: js.Object): HitResult = js.native
+  def hitTest(point: PointLike): HitResult = js.native
+  def hitTest(point: PointLike, options: js.Object): HitResult = js.native
   
   /** 
     * Performs a hit-test on the item and its children (if it is a {@link
@@ -228,8 +228,8 @@ trait Project extends StObject {
     * @return hit result objects for all hits, describing what
     *     exactly was hit or `null` if nothing was hit
     */
-  def hitTestAll(point: Point): js.Array[HitResult] = js.native
-  def hitTestAll(point: Point, options: js.Object): js.Array[HitResult] = js.native
+  def hitTestAll(point: PointLike): js.Array[HitResult] = js.native
+  def hitTestAll(point: PointLike, options: js.Object): js.Array[HitResult] = js.native
   
   /** 
     * Imports (deserializes) the stored JSON data into the project.

@@ -17,6 +17,8 @@ trait SecurityGetApiKeyRequest
   var realm_name: js.UndefOr[Name] = js.undefined
   
   var username: js.UndefOr[Username] = js.undefined
+  
+  var with_limited_by: js.UndefOr[Boolean] = js.undefined
 }
 object SecurityGetApiKeyRequest {
   
@@ -46,5 +48,9 @@ object SecurityGetApiKeyRequest {
     inline def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    
+    inline def setWith_limited_by(value: Boolean): Self = StObject.set(x, "with_limited_by", value.asInstanceOf[js.Any])
+    
+    inline def setWith_limited_byUndefined: Self = StObject.set(x, "with_limited_by", js.undefined)
   }
 }

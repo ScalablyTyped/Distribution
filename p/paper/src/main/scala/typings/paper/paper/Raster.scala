@@ -35,7 +35,7 @@ trait Raster
     */
   var context: CanvasRenderingContext2D = js.native
   
-  def createImageData(size: Size): ImageData = js.native
+  def createImageData(size: SizeLike): ImageData = js.native
   
   /** 
     * The crossOrigin value to be used when loading the image resource, in
@@ -51,8 +51,9 @@ trait Raster
     * @param point - the offset of the image as a point in pixel
     * coordinates
     */
-  def drawImage(image: CanvasImageSource, point: Point): Unit = js.native
+  def drawImage(image: CanvasImageSource, point: PointLike): Unit = js.native
   
+  def getAverageColor(`object`: PointLike | RectangleLike): Color = js.native
   /** 
     * Calculates the average color of the image within the given path,
     * rectangle or point. This can be used for creating raster image
@@ -62,10 +63,8 @@ trait Raster
     * specified path, rectangle or point
     */
   def getAverageColor(`object`: Path): Color = js.native
-  def getAverageColor(`object`: Point): Color = js.native
-  def getAverageColor(`object`: Rectangle): Color = js.native
   
-  def getImageData(rect: Rectangle): ImageData = js.native
+  def getImageData(rect: RectangleLike): ImageData = js.native
   
   /** 
     * Gets the color of a pixel in the raster.
@@ -75,7 +74,7 @@ trait Raster
     * 
     * @return the color of the pixel
     */
-  def getPixel(point: Point): Color = js.native
+  def getPixel(point: PointLike): Color = js.native
   /** 
     * Gets the color of a pixel in the raster.
     * 
@@ -95,7 +94,7 @@ trait Raster
     * 
     * @return the sub image as a Canvas object
     */
-  def getSubCanvas(rect: Rectangle): HTMLCanvasElement = js.native
+  def getSubCanvas(rect: RectangleLike): HTMLCanvasElement = js.native
   
   /** 
     * Extracts a part of the raster item's content as a new raster item, placed
@@ -106,7 +105,7 @@ trait Raster
     * 
     * @return the sub raster as a newly created raster item
     */
-  def getSubRaster(rect: Rectangle): Raster = js.native
+  def getSubRaster(rect: RectangleLike): Raster = js.native
   
   /** 
     * The height of the raster in pixels.
@@ -141,7 +140,7 @@ trait Raster
     */
   var onLoad: js.Function | Null = js.native
   
-  def putImageData(data: ImageData, point: Point): Unit = js.native
+  def putImageData(data: ImageData, point: PointLike): Unit = js.native
   
   /** 
     * The resolution of the raster at its current size, in PPI (pixels per
@@ -158,7 +157,7 @@ trait Raster
     *     coordinates
     * @param color - the color that the pixel will be set to
     */
-  def setPixel(point: Point, color: Color): Unit = js.native
+  def setPixel(point: PointLike, color: Color): Unit = js.native
   /** 
     * Sets the color of the specified pixel to the specified color.
     * 

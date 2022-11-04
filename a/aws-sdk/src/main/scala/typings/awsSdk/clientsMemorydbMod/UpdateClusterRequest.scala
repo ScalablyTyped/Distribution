@@ -27,7 +27,7 @@ trait UpdateClusterRequest extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The maintenance window to update
+    * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are:    sun     mon     tue     wed     thu     fri     sat    Example: sun:23:00-mon:01:30 
     */
   var MaintenanceWindow: js.UndefOr[String] = js.undefined
   

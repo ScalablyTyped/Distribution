@@ -1,5 +1,8 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.PointLike
+import typings.paper.paper.RectangleLike
+import typings.paper.paper.SizeLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,16 +18,21 @@ open class Rectangle protected ()
   extends StObject
      with typings.paper.paper.Rectangle {
   /** 
+    * Creates a new rectangle object from the passed rectangle object.
+    */
+  /** 
     * Creates a Rectangle object.
     * 
     * @param object - an object containing properties to be set on the
     * rectangle
     */
-  def this(`object`: js.Object) = this()
+  def this(rectangle: js.Object | RectangleLike) = this()
   /** 
-    * Creates a new rectangle object from the passed rectangle object.
+    * Creates a Rectangle object.
+    * 
+    * @param point - the top-left point of the rectangle
+    * @param size - the size of the rectangle
     */
-  def this(rectangle: typings.paper.paper.Rectangle) = this()
   /** 
     * Creates a rectangle object from the passed points. These do not
     * necessarily need to be the top left and bottom right corners, the
@@ -33,14 +41,7 @@ open class Rectangle protected ()
     * @param from - the first point defining the rectangle
     * @param to - the second point defining the rectangle
     */
-  def this(from: typings.paper.paper.Point, to: typings.paper.paper.Point) = this()
-  /** 
-    * Creates a Rectangle object.
-    * 
-    * @param point - the top-left point of the rectangle
-    * @param size - the size of the rectangle
-    */
-  def this(point: typings.paper.paper.Point, size: typings.paper.paper.Size) = this()
+  def this(point: PointLike, size: PointLike | SizeLike) = this()
   /** 
     * Creates a rectangle object.
     * 

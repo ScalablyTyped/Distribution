@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ranges-sort" : "5.1.5"
+      "ranges-sort" : "5.1.6"
     }
   ],
   "test-dependencies" : [
     {
-      "ranges-sort" : "5.1.5"
+      "ranges-sort" : "5.1.6"
     }
   ],
   "compile-devDependencies" : [

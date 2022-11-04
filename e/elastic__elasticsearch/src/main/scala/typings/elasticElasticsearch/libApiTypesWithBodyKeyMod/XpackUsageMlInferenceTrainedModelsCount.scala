@@ -12,6 +12,8 @@ trait XpackUsageMlInferenceTrainedModelsCount extends StObject {
   
   var other: long
   
+  var pass_through: js.UndefOr[long] = js.undefined
+  
   var prepackaged: long
   
   var regression: js.UndefOr[long] = js.undefined
@@ -36,6 +38,10 @@ object XpackUsageMlInferenceTrainedModelsCount {
     inline def setNerUndefined: Self = StObject.set(x, "ner", js.undefined)
     
     inline def setOther(value: long): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    
+    inline def setPass_through(value: long): Self = StObject.set(x, "pass_through", value.asInstanceOf[js.Any])
+    
+    inline def setPass_throughUndefined: Self = StObject.set(x, "pass_through", js.undefined)
     
     inline def setPrepackaged(value: long): Self = StObject.set(x, "prepackaged", value.asInstanceOf[js.Any])
     

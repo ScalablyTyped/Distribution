@@ -14,14 +14,16 @@ trait AggregationsInferenceTopClassEntry extends StObject {
 }
 object AggregationsInferenceTopClassEntry {
   
-  inline def apply(class_name: FieldValue, class_probability: double, class_score: double): AggregationsInferenceTopClassEntry = {
-    val __obj = js.Dynamic.literal(class_name = class_name.asInstanceOf[js.Any], class_probability = class_probability.asInstanceOf[js.Any], class_score = class_score.asInstanceOf[js.Any])
+  inline def apply(class_probability: double, class_score: double): AggregationsInferenceTopClassEntry = {
+    val __obj = js.Dynamic.literal(class_probability = class_probability.asInstanceOf[js.Any], class_score = class_score.asInstanceOf[js.Any], class_name = null)
     __obj.asInstanceOf[AggregationsInferenceTopClassEntry]
   }
   
   extension [Self <: AggregationsInferenceTopClassEntry](x: Self) {
     
     inline def setClass_name(value: FieldValue): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
+    
+    inline def setClass_nameNull: Self = StObject.set(x, "class_name", null)
     
     inline def setClass_probability(value: double): Self = StObject.set(x, "class_probability", value.asInstanceOf[js.Any])
     

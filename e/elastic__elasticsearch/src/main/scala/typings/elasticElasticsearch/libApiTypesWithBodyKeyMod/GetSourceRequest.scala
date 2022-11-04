@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetSourceRequest extends StObject {
+trait GetSourceRequest
+  extends StObject
+     with SpecUtilsCommonQueryParameters {
   
   var _source: js.UndefOr[SearchSourceConfigParam] = js.undefined
   

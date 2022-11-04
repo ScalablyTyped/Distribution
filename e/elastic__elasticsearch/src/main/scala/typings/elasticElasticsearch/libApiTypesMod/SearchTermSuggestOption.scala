@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchTermSuggestOption extends StObject {
   
+  var collate_match: js.UndefOr[Boolean] = js.undefined
+  
   var freq: long
+  
+  var highlighted: js.UndefOr[String] = js.undefined
   
   var score: double
   
@@ -21,7 +25,15 @@ object SearchTermSuggestOption {
   
   extension [Self <: SearchTermSuggestOption](x: Self) {
     
+    inline def setCollate_match(value: Boolean): Self = StObject.set(x, "collate_match", value.asInstanceOf[js.Any])
+    
+    inline def setCollate_matchUndefined: Self = StObject.set(x, "collate_match", js.undefined)
+    
     inline def setFreq(value: long): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+    
+    inline def setHighlighted(value: String): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
     
     inline def setScore(value: double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

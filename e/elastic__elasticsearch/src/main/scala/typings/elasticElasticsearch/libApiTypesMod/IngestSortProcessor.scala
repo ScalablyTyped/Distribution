@@ -10,14 +10,14 @@ trait IngestSortProcessor
   
   var field: Field
   
-  var order: SortOrder
+  var order: js.UndefOr[SortOrder] = js.undefined
   
-  var target_field: Field
+  var target_field: js.UndefOr[Field] = js.undefined
 }
 object IngestSortProcessor {
   
-  inline def apply(field: Field, order: SortOrder, target_field: Field): IngestSortProcessor = {
-    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], target_field = target_field.asInstanceOf[js.Any])
+  inline def apply(field: Field): IngestSortProcessor = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestSortProcessor]
   }
   
@@ -27,6 +27,10 @@ object IngestSortProcessor {
     
     inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
     inline def setTarget_field(value: Field): Self = StObject.set(x, "target_field", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_fieldUndefined: Self = StObject.set(x, "target_field", js.undefined)
   }
 }

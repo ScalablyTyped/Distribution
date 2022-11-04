@@ -10,7 +10,7 @@ trait AnalysisIcuTransformTokenFilter
      with AnalysisTokenFilterBase
      with AnalysisTokenFilterDefinition {
   
-  var dir: AnalysisIcuTransformDirection
+  var dir: js.UndefOr[AnalysisIcuTransformDirection] = js.undefined
   
   var id: String
   
@@ -18,8 +18,8 @@ trait AnalysisIcuTransformTokenFilter
 }
 object AnalysisIcuTransformTokenFilter {
   
-  inline def apply(dir: AnalysisIcuTransformDirection, id: String): AnalysisIcuTransformTokenFilter = {
-    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  inline def apply(id: String): AnalysisIcuTransformTokenFilter = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("icu_transform")
     __obj.asInstanceOf[AnalysisIcuTransformTokenFilter]
   }
@@ -27,6 +27,8 @@ object AnalysisIcuTransformTokenFilter {
   extension [Self <: AnalysisIcuTransformTokenFilter](x: Self) {
     
     inline def setDir(value: AnalysisIcuTransformDirection): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

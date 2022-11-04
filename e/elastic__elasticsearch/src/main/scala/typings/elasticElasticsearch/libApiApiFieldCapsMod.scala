@@ -14,6 +14,8 @@ object libApiApiFieldCapsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(): js.Promise[FieldCapsResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[FieldCapsResponse]]
+  inline def default(params: Unit, options: TransportRequestOptions): js.Promise[FieldCapsResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FieldCapsResponse]]
   inline def default(params: FieldCapsRequest): js.Promise[FieldCapsResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FieldCapsResponse]]
   inline def default(params: FieldCapsRequest, options: TransportRequestOptions): js.Promise[FieldCapsResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FieldCapsResponse]]
   inline def default(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.FieldCapsRequest): js.Promise[FieldCapsResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FieldCapsResponse]]

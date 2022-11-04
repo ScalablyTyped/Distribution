@@ -14,6 +14,8 @@ trait SslCertificatesCertificateInformation extends StObject {
   
   var has_private_key: Boolean
   
+  var issuer: js.UndefOr[String] = js.undefined
+  
   var path: String
   
   var serial_number: String
@@ -45,6 +47,10 @@ object SslCertificatesCertificateInformation {
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setHas_private_key(value: Boolean): Self = StObject.set(x, "has_private_key", value.asInstanceOf[js.Any])
+    
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

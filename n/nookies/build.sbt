@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nookies"
-version := "2.5.2-6550a7"
+version := "2.5.2-eb6308"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,8 +14,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "next" % "13.0.1-4122db",
-  "org.scalablytyped" %%% "next__env" % "13.0.1-76b77c",
+  "org.scalablytyped" %%% "next" % "13.0.2-5f35f3",
+  "org.scalablytyped" %%% "next__env" % "13.0.2-cb900f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "postcss" % "8.4.18-a78a45",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",

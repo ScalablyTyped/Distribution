@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * rectangular path, it is not an item.
   */
 @js.native
-trait Rectangle extends StObject {
+trait Rectangle
+  extends StObject
+     with _RectangleLike {
   
   /** 
     * The area of the rectangle.
@@ -50,7 +52,6 @@ trait Rectangle extends StObject {
     * 
     * @return true if the point is inside the rectangle's boundary
     */
-  def contains(point: Point): Boolean = js.native
   /** 
     * Tests if the interior of the rectangle entirely contains the specified
     * rectangle.
@@ -60,7 +61,7 @@ trait Rectangle extends StObject {
     * @return true if the rectangle entirely contains the specified
     * rectangle
     */
-  def contains(rect: Rectangle): Boolean = js.native
+  def contains(point: PointLike | RectangleLike): Boolean = js.native
   
   /** 
     * Checks whether the coordinates and size of the rectangle are equal to
@@ -68,8 +69,9 @@ trait Rectangle extends StObject {
     * 
     * @return true if the rectangles are equal
     */
-  def equals(rect: Rectangle): Boolean = js.native
+  def equals(rect: RectangleLike): Boolean = js.native
   
+  def expand(amount: PointLike | SizeLike): Rectangle = js.native
   /** 
     * Returns a new rectangle expanded by the specified amount in horizontal
     * and vertical directions.
@@ -80,8 +82,6 @@ trait Rectangle extends StObject {
     * @return the expanded rectangle
     */
   def expand(amount: Double): Rectangle = js.native
-  def expand(amount: Point): Rectangle = js.native
-  def expand(amount: Size): Rectangle = js.native
   /** 
     * Returns a new rectangle expanded by the specified amounts in horizontal
     * and vertical directions.
@@ -115,7 +115,7 @@ trait Rectangle extends StObject {
     * @return the smallest rectangle that contains both the
     * original rectangle and the specified point
     */
-  def include(point: Point): Rectangle = js.native
+  def include(point: PointLike): Rectangle = js.native
   
   /** 
     * Returns a new rectangle representing the intersection of this rectangle
@@ -127,7 +127,7 @@ trait Rectangle extends StObject {
     * @return the largest rectangle contained in both the specified
     * rectangle and in this rectangle
     */
-  def intersect(rect: Rectangle): Rectangle = js.native
+  def intersect(rect: RectangleLike): Rectangle = js.native
   
   /** 
     * Tests if the interior of this rectangle intersects the interior of
@@ -142,8 +142,8 @@ trait Rectangle extends StObject {
     * @return true if the rectangle and the specified rectangle
     *     intersect each other
     */
-  def intersects(rect: Rectangle): Boolean = js.native
-  def intersects(rect: Rectangle, epsilon: Double): Boolean = js.native
+  def intersects(rect: RectangleLike): Boolean = js.native
+  def intersects(rect: RectangleLike, epsilon: Double): Boolean = js.native
   
   /** 
     * @return true if the rectangle is empty
@@ -242,7 +242,7 @@ trait Rectangle extends StObject {
     * @return the smallest rectangle containing both the specified
     * rectangle and this rectangle
     */
-  def unite(rect: Rectangle): Rectangle = js.native
+  def unite(rect: RectangleLike): Rectangle = js.native
   
   /** 
     * The width of the rectangle.

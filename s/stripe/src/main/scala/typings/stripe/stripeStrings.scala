@@ -13385,8 +13385,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.TaxBehavior
        with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.SubscriptionItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.SubscriptionItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.InvoiceItem.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.InvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.LineItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.TaxBehavior
@@ -13408,7 +13410,9 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Price.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.AddInvoiceItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceItemCreateParams.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemCreateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.TaxBehavior
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.FixedAmount.CurrencyOptions.TaxBehavior
@@ -15404,8 +15408,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.TaxBehavior
        with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.SubscriptionItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.SubscriptionItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.InvoiceItem.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.InvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.LineItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.TaxBehavior
@@ -15427,7 +15433,9 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Price.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.AddInvoiceItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceItemCreateParams.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemCreateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.TaxBehavior
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.FixedAmount.CurrencyOptions.TaxBehavior
@@ -24273,8 +24281,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.TaxBehavior
        with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.SubscriptionItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.SubscriptionItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.InvoiceItem.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.InvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.LineItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.TaxBehavior
@@ -24296,7 +24306,9 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Price.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.AddInvoiceItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceItemCreateParams.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemCreateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.TaxBehavior
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.FixedAmount.CurrencyOptions.TaxBehavior

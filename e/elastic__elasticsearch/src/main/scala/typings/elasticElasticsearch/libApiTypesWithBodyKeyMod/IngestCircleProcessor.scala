@@ -12,22 +12,16 @@ trait IngestCircleProcessor
   
   var field: Field
   
-  var ignore_missing: Boolean
+  var ignore_missing: js.UndefOr[Boolean] = js.undefined
   
   var shape_type: IngestShapeType
   
-  var target_field: Field
+  var target_field: js.UndefOr[Field] = js.undefined
 }
 object IngestCircleProcessor {
   
-  inline def apply(
-    error_distance: double,
-    field: Field,
-    ignore_missing: Boolean,
-    shape_type: IngestShapeType,
-    target_field: Field
-  ): IngestCircleProcessor = {
-    val __obj = js.Dynamic.literal(error_distance = error_distance.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], ignore_missing = ignore_missing.asInstanceOf[js.Any], shape_type = shape_type.asInstanceOf[js.Any], target_field = target_field.asInstanceOf[js.Any])
+  inline def apply(error_distance: double, field: Field, shape_type: IngestShapeType): IngestCircleProcessor = {
+    val __obj = js.Dynamic.literal(error_distance = error_distance.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], shape_type = shape_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestCircleProcessor]
   }
   
@@ -39,8 +33,12 @@ object IngestCircleProcessor {
     
     inline def setIgnore_missing(value: Boolean): Self = StObject.set(x, "ignore_missing", value.asInstanceOf[js.Any])
     
+    inline def setIgnore_missingUndefined: Self = StObject.set(x, "ignore_missing", js.undefined)
+    
     inline def setShape_type(value: IngestShapeType): Self = StObject.set(x, "shape_type", value.asInstanceOf[js.Any])
     
     inline def setTarget_field(value: Field): Self = StObject.set(x, "target_field", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_fieldUndefined: Self = StObject.set(x, "target_field", js.undefined)
   }
 }

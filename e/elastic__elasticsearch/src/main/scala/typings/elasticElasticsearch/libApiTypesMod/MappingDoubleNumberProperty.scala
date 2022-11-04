@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MappingDoubleNumberProperty
   extends StObject
-     with MappingStandardNumberProperty
+     with MappingNumberPropertyBase
      with MappingProperty {
   
   var null_value: js.UndefOr[double] = js.undefined

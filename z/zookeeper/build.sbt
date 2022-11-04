@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zookeeper"
-version := "5.5.1-dc74d2"
+version := "5.6.0-7738f9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

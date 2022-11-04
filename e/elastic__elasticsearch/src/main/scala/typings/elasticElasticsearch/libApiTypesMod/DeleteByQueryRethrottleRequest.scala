@@ -10,11 +10,11 @@ trait DeleteByQueryRethrottleRequest
   
   var requests_per_second: js.UndefOr[float] = js.undefined
   
-  var task_id: Id
+  var task_id: TaskId
 }
 object DeleteByQueryRethrottleRequest {
   
-  inline def apply(task_id: Id): DeleteByQueryRethrottleRequest = {
+  inline def apply(task_id: TaskId): DeleteByQueryRethrottleRequest = {
     val __obj = js.Dynamic.literal(task_id = task_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteByQueryRethrottleRequest]
   }
@@ -25,6 +25,6 @@ object DeleteByQueryRethrottleRequest {
     
     inline def setRequests_per_secondUndefined: Self = StObject.set(x, "requests_per_second", js.undefined)
     
-    inline def setTask_id(value: Id): Self = StObject.set(x, "task_id", value.asInstanceOf[js.Any])
+    inline def setTask_id(value: TaskId): Self = StObject.set(x, "task_id", value.asInstanceOf[js.Any])
   }
 }

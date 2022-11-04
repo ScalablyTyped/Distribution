@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sass" : "1.55.0"
+      "sass" : "1.56.0"
     }
   ],
   "test-dependencies" : [
     {
-      "sass" : "1.55.0"
+      "sass" : "1.56.0"
     }
   ],
   "compile-devDependencies" : [

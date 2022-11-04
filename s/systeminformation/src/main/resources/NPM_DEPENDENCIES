@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "systeminformation" : "5.12.11"
+      "systeminformation" : "5.12.12"
     }
   ],
   "test-dependencies" : [
     {
-      "systeminformation" : "5.12.11"
+      "systeminformation" : "5.12.12"
     }
   ],
   "compile-devDependencies" : [

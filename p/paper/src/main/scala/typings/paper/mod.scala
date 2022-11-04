@@ -1,6 +1,8 @@
 package typings.paper
 
 import org.scalablytyped.runtime.Shortcut
+import typings.paper.paper.PointLike
+import typings.paper.paper.SizeLike
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
@@ -73,7 +75,7 @@ object mod extends Shortcut {
       * Creates a new CurveLocation object.
       */
     def this(curve: typings.paper.paper.Curve, time: Double) = this()
-    def this(curve: typings.paper.paper.Curve, time: Double, point: typings.paper.paper.Point) = this()
+    def this(curve: typings.paper.paper.Curve, time: Double, point: PointLike) = this()
     
     /** 
       * The curvature of the {@link #curve} at the given location.
@@ -643,7 +645,7 @@ object mod extends Shortcut {
       * 
       * @param point - the position where the text will start
       */
-    def this(point: typings.paper.paper.Point) = this()
+    def this(point: PointLike) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -653,7 +655,7 @@ object mod extends Shortcut {
     extends StObject
        with typings.paper.paper.Project {
     def this(element: String) = this()
-    def this(element: typings.paper.paper.Size) = this()
+    def this(element: SizeLike) = this()
     /** 
       * Creates a Paper.js project containing one empty {@link Layer}, referenced
       * by {@link Project#activeLayer}.
@@ -689,10 +691,10 @@ object mod extends Shortcut {
     def this(source: String) = this()
     def this(source: HTMLCanvasElement) = this()
     def this(source: HTMLImageElement) = this()
-    def this(source: String, position: typings.paper.paper.Point) = this()
-    def this(source: Unit, position: typings.paper.paper.Point) = this()
-    def this(source: HTMLCanvasElement, position: typings.paper.paper.Point) = this()
-    def this(source: HTMLImageElement, position: typings.paper.paper.Point) = this()
+    def this(source: String, position: PointLike) = this()
+    def this(source: Unit, position: PointLike) = this()
+    def this(source: HTMLCanvasElement, position: PointLike) = this()
+    def this(source: HTMLImageElement, position: PointLike) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -707,7 +709,7 @@ object mod extends Shortcut {
       * @param point - the top-left point of the rectangle
       * @param size - the size of the rectangle
       */
-    def this(point: typings.paper.paper.Point, size: typings.paper.paper.Size) = this()
+    def this(point: PointLike, size: SizeLike) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -727,17 +729,13 @@ object mod extends Shortcut {
   open class Segment ()
     extends StObject
        with typings.paper.paper.Segment {
-    def this(point: typings.paper.paper.Point) = this()
-    def this(point: Unit, handleIn: typings.paper.paper.Point) = this()
-    def this(point: typings.paper.paper.Point, handleIn: typings.paper.paper.Point) = this()
-    def this(point: Unit, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
-    def this(point: Unit, handleIn: typings.paper.paper.Point, handleOut: typings.paper.paper.Point) = this()
-    def this(point: typings.paper.paper.Point, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
-    def this(
-      point: typings.paper.paper.Point,
-      handleIn: typings.paper.paper.Point,
-      handleOut: typings.paper.paper.Point
-    ) = this()
+    def this(point: PointLike) = this()
+    def this(point: Unit, handleIn: PointLike) = this()
+    def this(point: PointLike, handleIn: PointLike) = this()
+    def this(point: Unit, handleIn: Unit, handleOut: PointLike) = this()
+    def this(point: Unit, handleIn: PointLike, handleOut: PointLike) = this()
+    def this(point: PointLike, handleIn: Unit, handleOut: PointLike) = this()
+    def this(point: PointLike, handleIn: PointLike, handleOut: PointLike) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -938,8 +936,8 @@ object mod extends Shortcut {
       * @param point - the center point of the placed symbol
       */
     def this(definition: typings.paper.paper.SymbolDefinition) = this()
-    def this(definition: typings.paper.paper.Item, point: typings.paper.paper.Point) = this()
-    def this(definition: typings.paper.paper.SymbolDefinition, point: typings.paper.paper.Point) = this()
+    def this(definition: typings.paper.paper.Item, point: PointLike) = this()
+    def this(definition: typings.paper.paper.SymbolDefinition, point: PointLike) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

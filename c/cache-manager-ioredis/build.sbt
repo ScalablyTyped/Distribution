@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "cache-manager-ioredis"
-version := "2.0-dt-20221026Z-19b5af"
+version := "2.0-dt-20221026Z-c1edea"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cache-manager" % "5.1.1-e3bbf5",
+  "org.scalablytyped" %%% "cache-manager" % "5.1.3-3d0c4c",
   "org.scalablytyped" %%% "denque" % "2.1.0-758dab",
   "org.scalablytyped" %%% "ioredis" % "5.2.4-211d4e",
   "org.scalablytyped" %%% "lru-cache" % "7.14.1-5473ac",

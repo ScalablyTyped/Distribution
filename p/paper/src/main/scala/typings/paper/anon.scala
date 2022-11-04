@@ -12,17 +12,93 @@ import typings.paper.paper.Path.Arc
 import typings.paper.paper.Path.Circle
 import typings.paper.paper.Path.Ellipse
 import typings.paper.paper.Path.Line
+import typings.paper.paper.Path.Rectangle
 import typings.paper.paper.Path.RegularPolygon
 import typings.paper.paper.Path.Star
 import typings.paper.paper.Point
-import typings.paper.paper.Rectangle
+import typings.paper.paper.PointLike
+import typings.paper.paper.RectangleLike
 import typings.paper.paper.Size
+import typings.paper.paper.SizeLike
+import typings.paper.paper._PointLike
+import typings.paper.paper._RectangleLike
+import typings.paper.paper._SizeLike
 import typings.std.HTMLScriptElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Angle
+    extends StObject
+       with _PointLike {
+    
+    var angle: Double
+    
+    var length: Double
+  }
+  object Angle {
+    
+    inline def apply(angle: Double, length: Double): Angle = {
+      val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Angle]
+    }
+    
+    extension [Self <: Angle](x: Self) {
+      
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait From
+    extends StObject
+       with _RectangleLike {
+    
+    var from: PointLike
+    
+    var to: PointLike
+  }
+  object From {
+    
+    inline def apply(from: PointLike, to: PointLike): From = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+      __obj.asInstanceOf[From]
+    }
+    
+    extension [Self <: From](x: Self) {
+      
+      inline def setFrom(value: PointLike): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setTo(value: PointLike): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Height
+    extends StObject
+       with _PointLike
+       with _SizeLike {
+    
+    var height: Double
+    
+    var width: Double
+  }
+  object Height {
+    
+    inline def apply(height: Double, width: Double): Height = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Height]
+    }
+    
+    extension [Self <: Height](x: Self) {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait TypeofColor extends StObject {
     
@@ -188,29 +264,34 @@ object anon {
   
   trait TypeofPath extends StObject {
     
-    var Arc: Instantiable3[/* from */ Point, /* through */ Point, /* to */ Point, typings.paper.paper.Path.Arc]
+    var Arc: Instantiable3[
+        /* from */ PointLike, 
+        /* through */ PointLike, 
+        /* to */ PointLike, 
+        typings.paper.paper.Path.Arc
+      ]
     
-    var Circle: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Path.Circle]
+    var Circle: Instantiable2[/* center */ PointLike, /* radius */ Double, typings.paper.paper.Path.Circle]
     
-    var Ellipse: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Path.Ellipse]
+    var Ellipse: Instantiable1[/* rectangle */ RectangleLike, typings.paper.paper.Path.Ellipse]
     
-    var Line: Instantiable2[/* from */ Point, /* to */ Point, typings.paper.paper.Path.Line]
+    var Line: Instantiable2[/* from */ PointLike, /* to */ PointLike, typings.paper.paper.Path.Line]
     
     var Rectangle: Instantiable2[
-        /* rectangle */ typings.paper.paper.Rectangle, 
-        /* radius */ js.UndefOr[Size], 
+        /* rectangle */ RectangleLike, 
+        /* radius */ js.UndefOr[SizeLike], 
         typings.paper.paper.Path.Rectangle
       ]
     
     var RegularPolygon: Instantiable3[
-        /* center */ Point, 
+        /* center */ PointLike, 
         /* sides */ Double, 
         /* radius */ Double, 
         typings.paper.paper.Path.RegularPolygon
       ]
     
     var Star: Instantiable4[
-        /* center */ Point, 
+        /* center */ PointLike, 
         /* points */ Double, 
         /* radius1 */ Double, 
         /* radius2 */ Double, 
@@ -220,18 +301,14 @@ object anon {
   object TypeofPath {
     
     inline def apply(
-      Arc: Instantiable3[/* from */ Point, /* through */ Point, /* to */ Point, Arc],
-      Circle: Instantiable2[/* center */ Point, /* radius */ Double, Circle],
-      Ellipse: Instantiable1[/* rectangle */ Rectangle, Ellipse],
-      Line: Instantiable2[/* from */ Point, /* to */ Point, Line],
-      Rectangle: Instantiable2[
-          /* rectangle */ Rectangle, 
-          /* radius */ js.UndefOr[Size], 
-          typings.paper.paper.Path.Rectangle
-        ],
-      RegularPolygon: Instantiable3[/* center */ Point, /* sides */ Double, /* radius */ Double, RegularPolygon],
+      Arc: Instantiable3[/* from */ PointLike, /* through */ PointLike, /* to */ PointLike, Arc],
+      Circle: Instantiable2[/* center */ PointLike, /* radius */ Double, Circle],
+      Ellipse: Instantiable1[/* rectangle */ RectangleLike, Ellipse],
+      Line: Instantiable2[/* from */ PointLike, /* to */ PointLike, Line],
+      Rectangle: Instantiable2[/* rectangle */ RectangleLike, /* radius */ js.UndefOr[SizeLike], Rectangle],
+      RegularPolygon: Instantiable3[/* center */ PointLike, /* sides */ Double, /* radius */ Double, RegularPolygon],
       Star: Instantiable4[
-          /* center */ Point, 
+          /* center */ PointLike, 
           /* points */ Double, 
           /* radius1 */ Double, 
           /* radius2 */ Double, 
@@ -244,27 +321,23 @@ object anon {
     
     extension [Self <: TypeofPath](x: Self) {
       
-      inline def setArc(value: Instantiable3[/* from */ Point, /* through */ Point, /* to */ Point, Arc]): Self = StObject.set(x, "Arc", value.asInstanceOf[js.Any])
+      inline def setArc(value: Instantiable3[/* from */ PointLike, /* through */ PointLike, /* to */ PointLike, Arc]): Self = StObject.set(x, "Arc", value.asInstanceOf[js.Any])
       
-      inline def setCircle(value: Instantiable2[/* center */ Point, /* radius */ Double, Circle]): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: Instantiable2[/* center */ PointLike, /* radius */ Double, Circle]): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
       
-      inline def setEllipse(value: Instantiable1[/* rectangle */ Rectangle, Ellipse]): Self = StObject.set(x, "Ellipse", value.asInstanceOf[js.Any])
+      inline def setEllipse(value: Instantiable1[/* rectangle */ RectangleLike, Ellipse]): Self = StObject.set(x, "Ellipse", value.asInstanceOf[js.Any])
       
-      inline def setLine(value: Instantiable2[/* from */ Point, /* to */ Point, Line]): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Instantiable2[/* from */ PointLike, /* to */ PointLike, Line]): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
       
-      inline def setRectangle(
-        value: Instantiable2[
-              /* rectangle */ Rectangle, 
-              /* radius */ js.UndefOr[Size], 
-              typings.paper.paper.Path.Rectangle
-            ]
-      ): Self = StObject.set(x, "Rectangle", value.asInstanceOf[js.Any])
+      inline def setRectangle(value: Instantiable2[/* rectangle */ RectangleLike, /* radius */ js.UndefOr[SizeLike], Rectangle]): Self = StObject.set(x, "Rectangle", value.asInstanceOf[js.Any])
       
-      inline def setRegularPolygon(value: Instantiable3[/* center */ Point, /* sides */ Double, /* radius */ Double, RegularPolygon]): Self = StObject.set(x, "RegularPolygon", value.asInstanceOf[js.Any])
+      inline def setRegularPolygon(
+        value: Instantiable3[/* center */ PointLike, /* sides */ Double, /* radius */ Double, RegularPolygon]
+      ): Self = StObject.set(x, "RegularPolygon", value.asInstanceOf[js.Any])
       
       inline def setStar(
         value: Instantiable4[
-              /* center */ Point, 
+              /* center */ PointLike, 
               /* points */ Double, 
               /* radius1 */ Double, 
               /* radius2 */ Double, 
@@ -322,7 +395,7 @@ object anon {
       * @return the newly created point object
       */
     /* static member */
-    def max(point1: Point, point2: Point): Point
+    def max(point1: PointLike, point2: PointLike): Point
     
     /** 
       * Returns a new point object with the smallest {@link #x} and
@@ -331,7 +404,7 @@ object anon {
       * @return the newly created point object
       */
     /* static member */
-    def min(point1: Point, point2: Point): Point
+    def min(point1: PointLike, point2: PointLike): Point
     
     /** 
       * Returns a point object with random {@link #x} and {@link #y} values
@@ -344,16 +417,16 @@ object anon {
   }
   object TypeofPoint {
     
-    inline def apply(max: (Point, Point) => Point, min: (Point, Point) => Point, random: () => Point): TypeofPoint = {
+    inline def apply(max: (PointLike, PointLike) => Point, min: (PointLike, PointLike) => Point, random: () => Point): TypeofPoint = {
       val __obj = js.Dynamic.literal(max = js.Any.fromFunction2(max), min = js.Any.fromFunction2(min), random = js.Any.fromFunction0(random))
       __obj.asInstanceOf[TypeofPoint]
     }
     
     extension [Self <: TypeofPoint](x: Self) {
       
-      inline def setMax(value: (Point, Point) => Point): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+      inline def setMax(value: (PointLike, PointLike) => Point): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
       
-      inline def setMin(value: (Point, Point) => Point): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+      inline def setMin(value: (PointLike, PointLike) => Point): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
       
       inline def setRandom(value: () => Point): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
     }
@@ -361,24 +434,24 @@ object anon {
   
   trait TypeofShape extends StObject {
     
-    var Circle: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Shape.Circle]
+    var Circle: Instantiable2[/* center */ PointLike, /* radius */ Double, typings.paper.paper.Shape.Circle]
     
-    var Ellipse: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Shape.Ellipse]
+    var Ellipse: Instantiable1[/* rectangle */ RectangleLike, typings.paper.paper.Shape.Ellipse]
     
     var Rectangle: Instantiable2[
-        /* rectangle */ typings.paper.paper.Rectangle, 
-        /* radius */ js.UndefOr[Size], 
+        /* rectangle */ RectangleLike, 
+        /* radius */ js.UndefOr[SizeLike], 
         typings.paper.paper.Shape.Rectangle
       ]
   }
   object TypeofShape {
     
     inline def apply(
-      Circle: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Shape.Circle],
-      Ellipse: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Shape.Ellipse],
+      Circle: Instantiable2[/* center */ PointLike, /* radius */ Double, typings.paper.paper.Shape.Circle],
+      Ellipse: Instantiable1[/* rectangle */ RectangleLike, typings.paper.paper.Shape.Ellipse],
       Rectangle: Instantiable2[
-          /* rectangle */ Rectangle, 
-          /* radius */ js.UndefOr[Size], 
+          /* rectangle */ RectangleLike, 
+          /* radius */ js.UndefOr[SizeLike], 
           typings.paper.paper.Shape.Rectangle
         ]
     ): TypeofShape = {
@@ -388,14 +461,16 @@ object anon {
     
     extension [Self <: TypeofShape](x: Self) {
       
-      inline def setCircle(value: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Shape.Circle]): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
+      inline def setCircle(
+        value: Instantiable2[/* center */ PointLike, /* radius */ Double, typings.paper.paper.Shape.Circle]
+      ): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
       
-      inline def setEllipse(value: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Shape.Ellipse]): Self = StObject.set(x, "Ellipse", value.asInstanceOf[js.Any])
+      inline def setEllipse(value: Instantiable1[/* rectangle */ RectangleLike, typings.paper.paper.Shape.Ellipse]): Self = StObject.set(x, "Ellipse", value.asInstanceOf[js.Any])
       
       inline def setRectangle(
         value: Instantiable2[
-              /* rectangle */ Rectangle, 
-              /* radius */ js.UndefOr[Size], 
+              /* rectangle */ RectangleLike, 
+              /* radius */ js.UndefOr[SizeLike], 
               typings.paper.paper.Shape.Rectangle
             ]
       ): Self = StObject.set(x, "Rectangle", value.asInstanceOf[js.Any])
@@ -411,7 +486,7 @@ object anon {
       * @return the newly created size object
       */
     /* static member */
-    def max(size1: Size, size2: Size): Size
+    def max(size1: SizeLike, size2: SizeLike): Size
     
     /** 
       * Returns a new size object with the smallest {@link #width} and
@@ -420,7 +495,7 @@ object anon {
       * @return the newly created size object
       */
     /* static member */
-    def min(size1: Size, size2: Size): Size
+    def min(size1: SizeLike, size2: SizeLike): Size
     
     /** 
       * Returns a size object with random {@link #width} and {@link #height}
@@ -433,18 +508,73 @@ object anon {
   }
   object TypeofSize {
     
-    inline def apply(max: (Size, Size) => Size, min: (Size, Size) => Size, random: () => Size): TypeofSize = {
+    inline def apply(max: (SizeLike, SizeLike) => Size, min: (SizeLike, SizeLike) => Size, random: () => Size): TypeofSize = {
       val __obj = js.Dynamic.literal(max = js.Any.fromFunction2(max), min = js.Any.fromFunction2(min), random = js.Any.fromFunction0(random))
       __obj.asInstanceOf[TypeofSize]
     }
     
     extension [Self <: TypeofSize](x: Self) {
       
-      inline def setMax(value: (Size, Size) => Size): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+      inline def setMax(value: (SizeLike, SizeLike) => Size): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
       
-      inline def setMin(value: (Size, Size) => Size): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+      inline def setMin(value: (SizeLike, SizeLike) => Size): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
       
       inline def setRandom(value: () => Size): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait Width
+    extends StObject
+       with _RectangleLike {
+    
+    var height: Double
+    
+    var width: Double
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object Width {
+    
+    inline def apply(height: Double, width: Double, x: Double, y: Double): Width = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Width]
+    }
+    
+    extension [Self <: Width](x: Self) {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait X
+    extends StObject
+       with _PointLike
+       with _SizeLike {
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object X {
+    
+    inline def apply(x: Double, y: Double): X = {
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[X]
+    }
+    
+    extension [Self <: X](x: Self) {
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * something, through its {@link #width} and {@link #height} properties.
   */
 @js.native
-trait Size extends StObject {
+trait Size
+  extends StObject
+     with _SizeLike {
   
   /** 
     * Returns a new size with the absolute values of the specified
@@ -35,7 +37,7 @@ trait Size extends StObject {
     * 
     * @return the addition of the two sizes as a new size
     */
-  def add(size: Size): Size = js.native
+  def add(size: SizeLike): Size = js.native
   
   /** 
     * Returns a new size with the nearest greater non-fractional values to the
@@ -61,7 +63,7 @@ trait Size extends StObject {
     * 
     * @return the division of the two sizes as a new size
     */
-  def divide(size: Size): Size = js.native
+  def divide(size: SizeLike): Size = js.native
   
   /** 
     * Checks whether the width and height of the size are equal to those of the
@@ -69,7 +71,7 @@ trait Size extends StObject {
     * 
     * @param size - the size to compare to
     */
-  def equals(size: Size): Boolean = js.native
+  def equals(size: SizeLike): Boolean = js.native
   
   /** 
     * Returns a new size with the nearest smaller non-fractional values to the
@@ -104,7 +106,7 @@ trait Size extends StObject {
     * @return the integer remainders of dividing the sizes by each
     * other as a new size
     */
-  def modulo(size: Size): Size = js.native
+  def modulo(size: SizeLike): Size = js.native
   /** 
     * The modulo operator returns the integer remainders of dividing the size
     * by the supplied value as a new size.
@@ -131,7 +133,7 @@ trait Size extends StObject {
     * 
     * @return the multiplication of the two sizes as a new size
     */
-  def multiply(size: Size): Size = js.native
+  def multiply(size: SizeLike): Size = js.native
   
   /** 
     * Returns a new size with rounded {@link #width} and {@link #height}
@@ -164,7 +166,7 @@ trait Size extends StObject {
     * 
     * @return the subtraction of the two sizes as a new size
     */
-  def subtract(size: Size): Size = js.native
+  def subtract(size: SizeLike): Size = js.native
   
   /** 
     * The width of the size

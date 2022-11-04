@@ -1,7 +1,7 @@
 
 # Scala.js typings for elastic__elasticsearch
 
-Typings are for version 8.4.0
+Typings are for version 8.5.0
 
 ## Library description:
 The official Elasticsearch client for Node.js

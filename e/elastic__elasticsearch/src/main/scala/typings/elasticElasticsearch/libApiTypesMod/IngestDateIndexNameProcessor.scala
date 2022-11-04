@@ -14,26 +14,18 @@ trait IngestDateIndexNameProcessor
   
   var field: Field
   
-  var index_name_format: String
+  var index_name_format: js.UndefOr[String] = js.undefined
   
-  var index_name_prefix: String
+  var index_name_prefix: js.UndefOr[String] = js.undefined
   
-  var locale: String
+  var locale: js.UndefOr[String] = js.undefined
   
-  var timezone: String
+  var timezone: js.UndefOr[String] = js.undefined
 }
 object IngestDateIndexNameProcessor {
   
-  inline def apply(
-    date_formats: js.Array[String],
-    date_rounding: String,
-    field: Field,
-    index_name_format: String,
-    index_name_prefix: String,
-    locale: String,
-    timezone: String
-  ): IngestDateIndexNameProcessor = {
-    val __obj = js.Dynamic.literal(date_formats = date_formats.asInstanceOf[js.Any], date_rounding = date_rounding.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], index_name_format = index_name_format.asInstanceOf[js.Any], index_name_prefix = index_name_prefix.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
+  inline def apply(date_formats: js.Array[String], date_rounding: String, field: Field): IngestDateIndexNameProcessor = {
+    val __obj = js.Dynamic.literal(date_formats = date_formats.asInstanceOf[js.Any], date_rounding = date_rounding.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestDateIndexNameProcessor]
   }
   
@@ -49,10 +41,18 @@ object IngestDateIndexNameProcessor {
     
     inline def setIndex_name_format(value: String): Self = StObject.set(x, "index_name_format", value.asInstanceOf[js.Any])
     
+    inline def setIndex_name_formatUndefined: Self = StObject.set(x, "index_name_format", js.undefined)
+    
     inline def setIndex_name_prefix(value: String): Self = StObject.set(x, "index_name_prefix", value.asInstanceOf[js.Any])
+    
+    inline def setIndex_name_prefixUndefined: Self = StObject.set(x, "index_name_prefix", js.undefined)
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
     inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

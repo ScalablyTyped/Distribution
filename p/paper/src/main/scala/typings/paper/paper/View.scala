@@ -271,7 +271,7 @@ trait View extends StObject {
     * 
     * @return the point converted into view coordinates
     */
-  def projectToView(point: Point): Point = js.native
+  def projectToView(point: PointLike): Point = js.native
   
   /** 
     * Removes this view from the project and frees the associated element.
@@ -315,7 +315,7 @@ trait View extends StObject {
     * @param angle - the rotation angle
     */
   def rotate(angle: Double): Unit = js.native
-  def rotate(angle: Double, center: Point): Unit = js.native
+  def rotate(angle: Double, center: PointLike): Unit = js.native
   
   /** 
     * The current rotation angle of the view, as described by its
@@ -331,7 +331,7 @@ trait View extends StObject {
     * @param ver - the vertical scale factor
     */
   def scale(hor: Double, ver: Double): Unit = js.native
-  def scale(hor: Double, ver: Double, center: Point): Unit = js.native
+  def scale(hor: Double, ver: Double, center: PointLike): Unit = js.native
   /** 
     * Scales the view by the given value from its center point, or optionally
     * from a supplied point.
@@ -339,7 +339,7 @@ trait View extends StObject {
     * @param scale - the scale factor
     */
   def scale(scale: Double): Unit = js.native
-  def scale(scale: Double, center: Point): Unit = js.native
+  def scale(scale: Double, center: PointLike): Unit = js.native
   
   /** 
     * The current scale factor of the view, as described by its
@@ -359,7 +359,7 @@ trait View extends StObject {
     * @param ver - the vertical shear factor
     */
   def shear(hor: Double, ver: Double): Unit = js.native
-  def shear(hor: Double, ver: Double, center: Point): Unit = js.native
+  def shear(hor: Double, ver: Double, center: PointLike): Unit = js.native
   /** 
     * Shears the view by the given value from its center point, or optionally
     * by a supplied point.
@@ -368,8 +368,8 @@ trait View extends StObject {
     * 
     * @param shear - the horizontal and vertical shear factors as a point
     */
-  def shear(shear: Point): Unit = js.native
-  def shear(shear: Point, center: Point): Unit = js.native
+  def shear(shear: PointLike): Unit = js.native
+  def shear(shear: PointLike, center: PointLike): Unit = js.native
   
   /** 
     * The size of the visible area in project coordinates.
@@ -386,7 +386,7 @@ trait View extends StObject {
     * @param ver - the vertical sskew angle in degrees
     */
   def skew(hor: Double, ver: Double): Unit = js.native
-  def skew(hor: Double, ver: Double, center: Point): Unit = js.native
+  def skew(hor: Double, ver: Double, center: PointLike): Unit = js.native
   /** 
     * Skews the view by the given angles from its center point, or optionally
     * by a supplied point.
@@ -395,8 +395,8 @@ trait View extends StObject {
     * 
     * @param skew - the horizontal and vertical skew angles in degrees
     */
-  def skew(skew: Point): Unit = js.native
-  def skew(skew: Point, center: Point): Unit = js.native
+  def skew(skew: PointLike): Unit = js.native
+  def skew(skew: PointLike, center: PointLike): Unit = js.native
   
   /** 
     * Transform the view.
@@ -410,7 +410,7 @@ trait View extends StObject {
     * 
     * @param delta - the offset to translate the view by
     */
-  def translate(delta: Point): Unit = js.native
+  def translate(delta: PointLike): Unit = js.native
   
   /** 
     * Updates the view if there are changes. Note that when using built-in
@@ -435,7 +435,7 @@ trait View extends StObject {
     * 
     * @return the point converted into project coordinates
     */
-  def viewToProject(point: Point): Point = js.native
+  def viewToProject(point: PointLike): Point = js.native
   
   /** 
     * The view's zoom factor by which the project coordinates are magnified.

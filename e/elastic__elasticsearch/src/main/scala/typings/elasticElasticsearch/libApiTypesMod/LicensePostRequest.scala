@@ -12,12 +12,12 @@ trait LicensePostRequest
   
   var license: js.UndefOr[LicenseLicense] = js.undefined
   
-  var licenses: js.Array[LicenseLicense]
+  var licenses: js.UndefOr[js.Array[LicenseLicense]] = js.undefined
 }
 object LicensePostRequest {
   
-  inline def apply(licenses: js.Array[LicenseLicense]): LicensePostRequest = {
-    val __obj = js.Dynamic.literal(licenses = licenses.asInstanceOf[js.Any])
+  inline def apply(): LicensePostRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicensePostRequest]
   }
   
@@ -32,6 +32,8 @@ object LicensePostRequest {
     inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
     
     inline def setLicenses(value: js.Array[LicenseLicense]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+    
+    inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
     inline def setLicensesVarargs(value: LicenseLicense*): Self = StObject.set(x, "licenses", js.Array(value*))
   }

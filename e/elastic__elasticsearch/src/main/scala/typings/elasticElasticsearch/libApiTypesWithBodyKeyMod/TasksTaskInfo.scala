@@ -11,6 +11,8 @@ trait TasksTaskInfo extends StObject {
   
   var cancellable: Boolean
   
+  var cancelled: js.UndefOr[Boolean] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
   
   var headers: Record[String, String]
@@ -53,6 +55,10 @@ object TasksTaskInfo {
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
+    
+    inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
+    
+    inline def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

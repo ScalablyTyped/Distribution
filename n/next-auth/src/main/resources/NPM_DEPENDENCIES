@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "next-auth" : "4.15.0"
+      "next-auth" : "4.15.1"
     }
   ],
   "test-dependencies" : [
     {
-      "next-auth" : "4.15.0"
+      "next-auth" : "4.15.1"
     }
   ],
   "compile-devDependencies" : [

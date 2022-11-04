@@ -10,5 +10,5 @@ object distSharedLibRouterContextMod {
   
   @JSImport("next/dist/shared/lib/router-context", "RouterContext")
   @js.native
-  val RouterContext: Context[NextRouter] = js.native
+  val RouterContext: Context[NextRouter | Null] = js.native
 }

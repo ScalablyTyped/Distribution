@@ -33,7 +33,7 @@ object distClientLinkMod extends Shortcut {
     var href: Url
     
     /**
-      * Enable legacy link behaviour.
+      * Enable legacy link behavior.
       * @defaultValue `false`
       * @see https://github.com/vercel/next.js/commit/489e65ed98544e69b0afd7e0cfc3f9f6c2b803b7
       */

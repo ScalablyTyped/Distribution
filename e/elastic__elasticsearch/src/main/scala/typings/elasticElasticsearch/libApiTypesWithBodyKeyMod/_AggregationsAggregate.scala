@@ -48,7 +48,7 @@ object _AggregationsAggregate {
   }
   
   inline def AggregationsExtendedStatsAggregate(count: long, sum: double): typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsExtendedStatsAggregate = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], avg = null, max = null, min = null, std_deviation = null, sum_of_squares = null, variance = null, variance_population = null, variance_sampling = null)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], avg = null, max = null, min = null, std_deviation = null, std_deviation_population = null, std_deviation_sampling = null, sum_of_squares = null, variance = null, variance_population = null, variance_sampling = null)
     __obj.asInstanceOf[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsExtendedStatsAggregate]
   }
   
@@ -67,8 +67,8 @@ object _AggregationsAggregate {
     __obj.asInstanceOf[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsGeoCentroidAggregate]
   }
   
-  inline def AggregationsGeoLineAggregate(geometry: GeoLine, `type`: String): typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsGeoLineAggregate = {
-    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
+  inline def AggregationsGeoLineAggregate(geometry: GeoLine, properties: Any, `type`: String): typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsGeoLineAggregate = {
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsGeoLineAggregate]
   }

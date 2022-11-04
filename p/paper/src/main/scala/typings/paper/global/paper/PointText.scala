@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.PointLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,17 +16,16 @@ open class PointText protected ()
   extends StObject
      with typings.paper.paper.PointText {
   /** 
+    * Creates a point text item
+    * 
+    * @param point - the position where the text will start
+    */
+  /** 
     * Creates a point text item from the properties described by an object
     * literal.
     * 
     * @param object - an object containing properties describing the
     *     path's attributes
     */
-  def this(`object`: js.Object) = this()
-  /** 
-    * Creates a point text item
-    * 
-    * @param point - the position where the text will start
-    */
-  def this(point: typings.paper.paper.Point) = this()
+  def this(point: js.Object | PointLike) = this()
 }

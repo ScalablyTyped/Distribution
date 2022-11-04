@@ -165,6 +165,24 @@ object libApiApiSecurityMod {
       options: TransportRequestOptionsWithOutMeta
     ): js.Promise[SecurityAuthenticateResponse] = js.native
     
+    def bulkUpdateApiKeys(): js.Promise[TODO] = js.native
+    def bulkUpdateApiKeys(params: TODO | typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.TODO): js.Promise[TODO] = js.native
+    def bulkUpdateApiKeys(
+      params: TODO | typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.TODO,
+      options: TransportRequestOptions
+    ): js.Promise[TODO] = js.native
+    def bulkUpdateApiKeys(
+      params: TODO | typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.TODO,
+      options: TransportRequestOptionsWithMeta
+    ): js.Promise[TransportResult[TODO, Any]] = js.native
+    def bulkUpdateApiKeys(
+      params: TODO | typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.TODO,
+      options: TransportRequestOptionsWithOutMeta
+    ): js.Promise[TODO] = js.native
+    def bulkUpdateApiKeys(params: Unit, options: TransportRequestOptions): js.Promise[TODO] = js.native
+    def bulkUpdateApiKeys(params: Unit, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[TODO, Any]] = js.native
+    def bulkUpdateApiKeys(params: Unit, options: TransportRequestOptionsWithOutMeta): js.Promise[TODO] = js.native
+    
     def changePassword(): js.Promise[SecurityChangePasswordResponse] = js.native
     def changePassword(params: Unit, options: TransportRequestOptions): js.Promise[SecurityChangePasswordResponse] = js.native
     def changePassword(params: Unit, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[SecurityChangePasswordResponse, Any]] = js.native

@@ -1,6 +1,5 @@
 package typings.elasticElasticsearch.libApiTypesWithBodyKeyMod
 
-import typings.elasticElasticsearch.anon.Indexfilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,9 @@ trait FieldCapsRequest
   var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
   /** @deprecated The use of the 'body' key has been deprecated, move the nested keys to the top level object. */
-  var body: js.UndefOr[Indexfilter] = js.undefined
+  var body: js.UndefOr[typings.elasticElasticsearch.anon.Fields] = js.undefined
   
   var expand_wildcards: js.UndefOr[ExpandWildcards] = js.undefined
-  
-  var fields: Fields
   
   var filters: js.UndefOr[String] = js.undefined
   
@@ -30,8 +27,8 @@ trait FieldCapsRequest
 }
 object FieldCapsRequest {
   
-  inline def apply(fields: Fields): FieldCapsRequest = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+  inline def apply(): FieldCapsRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldCapsRequest]
   }
   
@@ -41,7 +38,7 @@ object FieldCapsRequest {
     
     inline def setAllow_no_indicesUndefined: Self = StObject.set(x, "allow_no_indices", js.undefined)
     
-    inline def setBody(value: Indexfilter): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: typings.elasticElasticsearch.anon.Fields): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -50,10 +47,6 @@ object FieldCapsRequest {
     inline def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
     inline def setExpand_wildcardsVarargs(value: ExpandWildcard*): Self = StObject.set(x, "expand_wildcards", js.Array(value*))
-    
-    inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
-    
-    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

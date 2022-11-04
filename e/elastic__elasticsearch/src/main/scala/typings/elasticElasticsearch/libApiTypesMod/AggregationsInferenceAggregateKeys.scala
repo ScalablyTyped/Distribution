@@ -39,6 +39,8 @@ object AggregationsInferenceAggregateKeys {
     
     inline def setValue(value: FieldValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])

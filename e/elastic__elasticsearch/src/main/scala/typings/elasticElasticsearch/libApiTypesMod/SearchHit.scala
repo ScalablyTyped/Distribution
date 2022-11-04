@@ -80,7 +80,7 @@ object SearchHit {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSortVarargs(value: (long | double | String | Null)*): Self = StObject.set(x, "sort", js.Array(value*))
+    inline def setSortVarargs(value: FieldValue*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def set_explanation(value: ExplainExplanation): Self = StObject.set(x, "_explanation", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,7 @@ trait Path
     * the same object, e.g. if the segment to be added already belongs to
     * another path.
     */
-  def add(segment: (Segment | Point | js.Array[Double])*): Segment | js.Array[Segment] = js.native
+  def add(segment: (Segment | PointLike | js.Array[Double])*): Segment | js.Array[Segment] = js.native
   
   /** 
     * Adds an array of segments (or types that can be converted to segments)
@@ -120,7 +120,7 @@ trait Path
     * 
     * @return the curve location of the specified point
     */
-  def getLocationOf(point: Point): CurveLocation = js.native
+  def getLocationOf(point: PointLike): CurveLocation = js.native
   
   /** 
     * Calculates the normal vector of the path at the given offset.
@@ -140,7 +140,7 @@ trait Path
     * 
     * @return the length of the path up to the specified point
     */
-  def getOffsetOf(point: Point): Double = js.native
+  def getOffsetOf(point: PointLike): Double = js.native
   
   /** 
     * Calculates path offsets where the path is tangential to the provided
@@ -153,7 +153,7 @@ trait Path
     * @return path offsets where the path is tangential to the
     * provided tangent
     */
-  def getOffsetsWithTangent(tangent: Point): js.Array[Double] = js.native
+  def getOffsetsWithTangent(tangent: PointLike): js.Array[Double] = js.native
   
   /** 
     * Calculates the point on the path at the given offset.
@@ -205,7 +205,7 @@ trait Path
     */
   def hasHandles(): Boolean = js.native
   
-  def insert(index: Double, segment: Point): Segment = js.native
+  def insert(index: Double, segment: PointLike): Segment = js.native
   /** 
     * Inserts one or more segments at a given index in the list of this path's
     * segments.

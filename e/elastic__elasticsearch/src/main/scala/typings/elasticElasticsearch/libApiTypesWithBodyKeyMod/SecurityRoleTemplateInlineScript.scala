@@ -14,11 +14,11 @@ trait SecurityRoleTemplateInlineScript
   
   var options: js.UndefOr[Record[String, String]] = js.undefined
   
-  var source: String | QueryDslQueryContainer
+  var source: SecurityRoleTemplateInlineQuery
 }
 object SecurityRoleTemplateInlineScript {
   
-  inline def apply(source: String | QueryDslQueryContainer): SecurityRoleTemplateInlineScript = {
+  inline def apply(source: SecurityRoleTemplateInlineQuery): SecurityRoleTemplateInlineScript = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityRoleTemplateInlineScript]
   }
@@ -33,6 +33,6 @@ object SecurityRoleTemplateInlineScript {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setSource(value: String | QueryDslQueryContainer): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SecurityRoleTemplateInlineQuery): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,8 @@ trait CreateBucketRequest extends StObject {
   
   var archive: js.UndefOr[Boolean] = js.undefined
   
+  var autoclass: js.UndefOr[AutoclassConfig] = js.undefined
+  
   var coldline: js.UndefOr[Boolean] = js.undefined
   
   var cors: js.UndefOr[js.Array[Cors]] = js.undefined
@@ -50,6 +52,10 @@ object CreateBucketRequest {
     inline def setArchive(value: Boolean): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
     
     inline def setArchiveUndefined: Self = StObject.set(x, "archive", js.undefined)
+    
+    inline def setAutoclass(value: AutoclassConfig): Self = StObject.set(x, "autoclass", value.asInstanceOf[js.Any])
+    
+    inline def setAutoclassUndefined: Self = StObject.set(x, "autoclass", js.undefined)
     
     inline def setColdline(value: Boolean): Self = StObject.set(x, "coldline", value.asInstanceOf[js.Any])
     

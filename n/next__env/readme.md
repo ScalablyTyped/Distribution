@@ -1,7 +1,7 @@
 
 # Scala.js typings for next__env
 
-Typings are for version 13.0.1
+Typings are for version 13.0.2
 
 ## Library description:
 Next.js dotenv file loading

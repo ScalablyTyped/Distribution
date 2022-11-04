@@ -10,11 +10,11 @@ trait SecurityGetUserProfileRequest
   
   var data: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var uid: SecurityUserProfileId
+  var uid: SecurityUserProfileId | js.Array[SecurityUserProfileId]
 }
 object SecurityGetUserProfileRequest {
   
-  inline def apply(uid: SecurityUserProfileId): SecurityGetUserProfileRequest = {
+  inline def apply(uid: SecurityUserProfileId | js.Array[SecurityUserProfileId]): SecurityGetUserProfileRequest = {
     val __obj = js.Dynamic.literal(uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityGetUserProfileRequest]
   }
@@ -27,6 +27,8 @@ object SecurityGetUserProfileRequest {
     
     inline def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setUid(value: SecurityUserProfileId): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: SecurityUserProfileId | js.Array[SecurityUserProfileId]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    
+    inline def setUidVarargs(value: SecurityUserProfileId*): Self = StObject.set(x, "uid", js.Array(value*))
   }
 }

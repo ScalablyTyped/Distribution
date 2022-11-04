@@ -8,6 +8,8 @@ trait IngestPipelineProcessor
   extends StObject
      with IngestProcessorBase {
   
+  var ignore_missing_pipeline: js.UndefOr[Boolean] = js.undefined
+  
   var name: Name
 }
 object IngestPipelineProcessor {
@@ -18,6 +20,10 @@ object IngestPipelineProcessor {
   }
   
   extension [Self <: IngestPipelineProcessor](x: Self) {
+    
+    inline def setIgnore_missing_pipeline(value: Boolean): Self = StObject.set(x, "ignore_missing_pipeline", value.asInstanceOf[js.Any])
+    
+    inline def setIgnore_missing_pipelineUndefined: Self = StObject.set(x, "ignore_missing_pipeline", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

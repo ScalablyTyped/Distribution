@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.PointLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,11 +75,7 @@ open class Color protected ()
   /** 
     * Creates a gradient Color object.
     */
-  def this(
-    gradient: typings.paper.paper.Gradient,
-    origin: typings.paper.paper.Point,
-    destination: typings.paper.paper.Point
-  ) = this()
+  def this(gradient: typings.paper.paper.Gradient, origin: PointLike, destination: PointLike) = this()
   /** 
     * Creates a RGB Color object.
     * 
@@ -94,9 +91,9 @@ open class Color protected ()
   def this(red: Double, green: Double, blue: Double) = this()
   def this(
     gradient: typings.paper.paper.Gradient,
-    origin: typings.paper.paper.Point,
-    destination: typings.paper.paper.Point,
-    highlight: typings.paper.paper.Point
+    origin: PointLike,
+    destination: PointLike,
+    highlight: PointLike
   ) = this()
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
 }

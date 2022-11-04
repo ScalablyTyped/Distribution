@@ -1,7 +1,7 @@
 
 # Scala.js typings for zookeeper
 
-Typings are for version 5.5.1
+Typings are for version 5.6.0
 
 ## Library description:
 apache zookeeper client (zookeeper async API v3.5.x - v3.8.x)

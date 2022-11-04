@@ -8,9 +8,7 @@ trait IngestCsvProcessor
   extends StObject
      with IngestProcessorBase {
   
-  var description: js.UndefOr[String] = js.undefined
-  
-  var empty_value: Any
+  var empty_value: js.UndefOr[Any] = js.undefined
   
   var field: Field
   
@@ -22,22 +20,20 @@ trait IngestCsvProcessor
   
   var target_fields: Fields
   
-  var trim: Boolean
+  var trim: js.UndefOr[Boolean] = js.undefined
 }
 object IngestCsvProcessor {
   
-  inline def apply(empty_value: Any, field: Field, target_fields: Fields, trim: Boolean): IngestCsvProcessor = {
-    val __obj = js.Dynamic.literal(empty_value = empty_value.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], target_fields = target_fields.asInstanceOf[js.Any], trim = trim.asInstanceOf[js.Any])
+  inline def apply(field: Field, target_fields: Fields): IngestCsvProcessor = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], target_fields = target_fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestCsvProcessor]
   }
   
   extension [Self <: IngestCsvProcessor](x: Self) {
     
-    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
-    
-    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
-    
     inline def setEmpty_value(value: Any): Self = StObject.set(x, "empty_value", value.asInstanceOf[js.Any])
+    
+    inline def setEmpty_valueUndefined: Self = StObject.set(x, "empty_value", js.undefined)
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
@@ -58,5 +54,7 @@ object IngestCsvProcessor {
     inline def setTarget_fieldsVarargs(value: Field*): Self = StObject.set(x, "target_fields", js.Array(value*))
     
     inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+    
+    inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
   }
 }

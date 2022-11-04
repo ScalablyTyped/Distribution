@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "puppeteer-lottie"
-version := "1.1-dt-20221102Z-7d76c3"
+version := "1.1-dt-20221102Z-19f688"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lottie-web" % "5.9.6-712c74",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "puppeteer" % "19.2.1-4026e6",
+  "org.scalablytyped" %%% "puppeteer" % "19.2.2-1fd326",
   "org.scalablytyped" %%% "puppeteer-core" % "19.2.2-1b6be1",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-370f29")

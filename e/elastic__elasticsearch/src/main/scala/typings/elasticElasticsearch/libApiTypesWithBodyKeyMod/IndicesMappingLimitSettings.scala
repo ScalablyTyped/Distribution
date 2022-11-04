@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IndicesMappingLimitSettings extends StObject {
   
+  var coerce: js.UndefOr[Boolean] = js.undefined
+  
   var depth: js.UndefOr[IndicesMappingLimitSettingsDepth] = js.undefined
   
   var dimension_fields: js.UndefOr[IndicesMappingLimitSettingsDimensionFields] = js.undefined
@@ -28,6 +30,10 @@ object IndicesMappingLimitSettings {
   }
   
   extension [Self <: IndicesMappingLimitSettings](x: Self) {
+    
+    inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+    
+    inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
     
     inline def setDepth(value: IndicesMappingLimitSettingsDepth): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

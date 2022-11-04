@@ -13,7 +13,7 @@ trait IngestGrokProcessor
   
   var ignore_missing: js.UndefOr[Boolean] = js.undefined
   
-  var pattern_definitions: Record[String, String]
+  var pattern_definitions: js.UndefOr[Record[String, String]] = js.undefined
   
   var patterns: js.Array[String]
   
@@ -21,8 +21,8 @@ trait IngestGrokProcessor
 }
 object IngestGrokProcessor {
   
-  inline def apply(field: Field, pattern_definitions: Record[String, String], patterns: js.Array[String]): IngestGrokProcessor = {
-    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], pattern_definitions = pattern_definitions.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
+  inline def apply(field: Field, patterns: js.Array[String]): IngestGrokProcessor = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestGrokProcessor]
   }
   
@@ -35,6 +35,8 @@ object IngestGrokProcessor {
     inline def setIgnore_missingUndefined: Self = StObject.set(x, "ignore_missing", js.undefined)
     
     inline def setPattern_definitions(value: Record[String, String]): Self = StObject.set(x, "pattern_definitions", value.asInstanceOf[js.Any])
+    
+    inline def setPattern_definitionsUndefined: Self = StObject.set(x, "pattern_definitions", js.undefined)
     
     inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     

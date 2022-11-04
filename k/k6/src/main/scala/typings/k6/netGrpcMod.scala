@@ -93,6 +93,10 @@ object netGrpcMod {
   
   trait ConnectParams extends StObject {
     
+    var maxReceiveSize: js.UndefOr[Double] = js.undefined
+    
+    var maxSendSize: js.UndefOr[Double] = js.undefined
+    
     var plaintext: js.UndefOr[Boolean] = js.undefined
     
     var reflect: js.UndefOr[Boolean] = js.undefined
@@ -107,6 +111,14 @@ object netGrpcMod {
     }
     
     extension [Self <: ConnectParams](x: Self) {
+      
+      inline def setMaxReceiveSize(value: Double): Self = StObject.set(x, "maxReceiveSize", value.asInstanceOf[js.Any])
+      
+      inline def setMaxReceiveSizeUndefined: Self = StObject.set(x, "maxReceiveSize", js.undefined)
+      
+      inline def setMaxSendSize(value: Double): Self = StObject.set(x, "maxSendSize", value.asInstanceOf[js.Any])
+      
+      inline def setMaxSendSizeUndefined: Self = StObject.set(x, "maxSendSize", js.undefined)
       
       inline def setPlaintext(value: Boolean): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
       
@@ -221,6 +233,9 @@ object netGrpcMod {
       
       /** Loads and parses the protocol buffer descriptors. */
       def load(importPaths: js.Array[String], protoFiles: String*): Unit = js.native
+      
+      /** Loads a protoset and parses the protocol buffer descriptors */
+      def loadProtoset(protosetPath: String): Unit = js.native
     }
   }
 }

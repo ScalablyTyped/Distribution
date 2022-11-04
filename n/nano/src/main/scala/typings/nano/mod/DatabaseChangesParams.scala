@@ -87,7 +87,7 @@ trait DatabaseChangesParams extends StObject {
     * Can be valid update sequence or now value.
     *
     * @default 0 */
-  var since: js.UndefOr[Double] = js.undefined
+  var since: js.UndefOr[String | Double] = js.undefined
   
   /** Specifies how many revisions are returned in the changes array.
     * 
@@ -162,7 +162,7 @@ object DatabaseChangesParams {
     
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String | Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     

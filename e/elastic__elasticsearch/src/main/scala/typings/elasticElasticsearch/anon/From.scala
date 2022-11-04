@@ -1,12 +1,11 @@
 package typings.elasticElasticsearch.anon
 
+import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.FieldValue
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.QueryDslQueryContainer
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Sort
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.SortCombinations
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.SortResults
-import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.double
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.integer
-import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.long
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,7 @@ object From {
     
     inline def setSearch_afterUndefined: Self = StObject.set(x, "search_after", js.undefined)
     
-    inline def setSearch_afterVarargs(value: (long | double | String | Null)*): Self = StObject.set(x, "search_after", js.Array(value*))
+    inline def setSearch_afterVarargs(value: FieldValue*): Self = StObject.set(x, "search_after", js.Array(value*))
     
     inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

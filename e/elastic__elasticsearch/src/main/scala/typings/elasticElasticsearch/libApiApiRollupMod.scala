@@ -10,8 +10,6 @@ import typings.elasticElasticsearch.libApiTypesMod.RollupGetRollupIndexCapsReque
 import typings.elasticElasticsearch.libApiTypesMod.RollupGetRollupIndexCapsResponse
 import typings.elasticElasticsearch.libApiTypesMod.RollupPutJobRequest
 import typings.elasticElasticsearch.libApiTypesMod.RollupPutJobResponse
-import typings.elasticElasticsearch.libApiTypesMod.RollupRollupRequest
-import typings.elasticElasticsearch.libApiTypesMod.RollupRollupResponse
 import typings.elasticElasticsearch.libApiTypesMod.RollupRollupSearchRequest
 import typings.elasticElasticsearch.libApiTypesMod.RollupRollupSearchResponse
 import typings.elasticElasticsearch.libApiTypesMod.RollupStartJobRequest
@@ -137,24 +135,6 @@ object libApiApiRollupMod {
       params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.RollupPutJobRequest,
       options: TransportRequestOptionsWithOutMeta
     ): js.Promise[RollupPutJobResponse] = js.native
-    
-    def rollup(params: RollupRollupRequest): js.Promise[RollupRollupResponse] = js.native
-    def rollup(params: RollupRollupRequest, options: TransportRequestOptions): js.Promise[RollupRollupResponse] = js.native
-    def rollup(params: RollupRollupRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[RollupRollupResponse, Any]] = js.native
-    def rollup(params: RollupRollupRequest, options: TransportRequestOptionsWithOutMeta): js.Promise[RollupRollupResponse] = js.native
-    def rollup(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.RollupRollupRequest): js.Promise[RollupRollupResponse] = js.native
-    def rollup(
-      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.RollupRollupRequest,
-      options: TransportRequestOptions
-    ): js.Promise[RollupRollupResponse] = js.native
-    def rollup(
-      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.RollupRollupRequest,
-      options: TransportRequestOptionsWithMeta
-    ): js.Promise[TransportResult[RollupRollupResponse, Any]] = js.native
-    def rollup(
-      params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.RollupRollupRequest,
-      options: TransportRequestOptionsWithOutMeta
-    ): js.Promise[RollupRollupResponse] = js.native
     
     def rollupSearch[TDocument, TAggregations](params: RollupRollupSearchRequest): js.Promise[RollupRollupSearchResponse[TDocument, TAggregations]] = js.native
     def rollupSearch[TDocument, TAggregations](params: RollupRollupSearchRequest, options: TransportRequestOptions): js.Promise[RollupRollupSearchResponse[TDocument, TAggregations]] = js.native

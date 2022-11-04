@@ -18,7 +18,7 @@ object distSharedLibAppRouterContextMod {
   
   @JSImport("next/dist/shared/lib/app-router-context", "AppRouterContext")
   @js.native
-  val AppRouterContext: Context[AppRouterInstance] = js.native
+  val AppRouterContext: Context[AppRouterInstance | Null] = js.native
   
   @JSImport("next/dist/shared/lib/app-router-context", "GlobalLayoutRouterContext")
   @js.native

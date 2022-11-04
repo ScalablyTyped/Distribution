@@ -131,10 +131,14 @@ object mod {
     def d3AlphaMin(): Double = js.native
     def d3AlphaMin(alphaMin: Double): ChainableInstance = js.native
     
-    def d3Force(forceName: link | charge | center): js.UndefOr[ForceFn] = js.native
+    def d3Force(forceName: link | charge | center): ChainableInstance = js.native
     def d3Force(forceName: link | charge | center, forceFn: ForceFn): ChainableInstance = js.native
-    def d3Force(forceName: String): js.UndefOr[ForceFn] = js.native
+    def d3Force(forceName: String): ChainableInstance = js.native
     def d3Force(forceName: String, forceFn: ForceFn): ChainableInstance = js.native
+    @JSName("d3Force")
+    def d3Force_Union(forceName: link | charge | center): js.UndefOr[ForceFn] = js.native
+    @JSName("d3Force")
+    def d3Force_Union(forceName: String): js.UndefOr[ForceFn] = js.native
     
     def d3ReheatSimulation(): ChainableInstance = js.native
     
@@ -144,9 +148,11 @@ object mod {
     def dagLevelDistance(): Double | Null = js.native
     def dagLevelDistance(distance: Double): ChainableInstance = js.native
     
-    // Force engine (d3-force) configuration
-    def dagMode(): DagMode = js.native
+    def dagMode(): ChainableInstance = js.native
     def dagMode(mode: DagMode): ChainableInstance = js.native
+    // Force engine (d3-force) configuration
+    @JSName("dagMode")
+    def dagMode_Union(): DagMode | Null = js.native
     
     def dagNodeFilter(): js.Function1[/* node */ NodeObject, Boolean] = js.native
     def dagNodeFilter(filterFn: js.Function1[/* node */ NodeObject, Boolean]): ChainableInstance = js.native

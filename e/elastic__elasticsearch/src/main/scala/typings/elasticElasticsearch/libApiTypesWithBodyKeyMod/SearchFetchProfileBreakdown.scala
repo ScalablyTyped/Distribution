@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchFetchProfileBreakdown extends StObject {
   
+  var load_source: js.UndefOr[integer] = js.undefined
+  
+  var load_source_count: js.UndefOr[integer] = js.undefined
+  
   var load_stored_fields: js.UndefOr[integer] = js.undefined
   
   var load_stored_fields_count: js.UndefOr[integer] = js.undefined
@@ -26,6 +30,14 @@ object SearchFetchProfileBreakdown {
   }
   
   extension [Self <: SearchFetchProfileBreakdown](x: Self) {
+    
+    inline def setLoad_source(value: integer): Self = StObject.set(x, "load_source", value.asInstanceOf[js.Any])
+    
+    inline def setLoad_sourceUndefined: Self = StObject.set(x, "load_source", js.undefined)
+    
+    inline def setLoad_source_count(value: integer): Self = StObject.set(x, "load_source_count", value.asInstanceOf[js.Any])
+    
+    inline def setLoad_source_countUndefined: Self = StObject.set(x, "load_source_count", js.undefined)
     
     inline def setLoad_stored_fields(value: integer): Self = StObject.set(x, "load_stored_fields", value.asInstanceOf[js.Any])
     

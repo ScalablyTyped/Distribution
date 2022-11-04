@@ -20,7 +20,7 @@ trait FleetMsearchRequest
   
   var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: IndexName | IndexAlias
+  var index: js.UndefOr[IndexName | IndexAlias] = js.undefined
   
   var max_concurrent_searches: js.UndefOr[long] = js.undefined
   
@@ -40,8 +40,8 @@ trait FleetMsearchRequest
 }
 object FleetMsearchRequest {
   
-  inline def apply(index: IndexName | IndexAlias): FleetMsearchRequest = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+  inline def apply(): FleetMsearchRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetMsearchRequest]
   }
   
@@ -74,6 +74,8 @@ object FleetMsearchRequest {
     inline def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
     
     inline def setIndex(value: IndexName | IndexAlias): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     inline def setMax_concurrent_searches(value: long): Self = StObject.set(x, "max_concurrent_searches", value.asInstanceOf[js.Any])
     

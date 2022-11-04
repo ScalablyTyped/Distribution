@@ -12,7 +12,7 @@ trait SecurityGetUserPrivilegesResponse extends StObject {
   
   var global: js.Array[SecurityGlobalPrivilege]
   
-  var indices: js.Array[SecurityIndicesPrivileges]
+  var indices: js.Array[SecurityUserIndicesPrivileges]
   
   var run_as: js.Array[String]
 }
@@ -22,7 +22,7 @@ object SecurityGetUserPrivilegesResponse {
     applications: js.Array[SecurityApplicationPrivileges],
     cluster: js.Array[String],
     global: js.Array[SecurityGlobalPrivilege],
-    indices: js.Array[SecurityIndicesPrivileges],
+    indices: js.Array[SecurityUserIndicesPrivileges],
     run_as: js.Array[String]
   ): SecurityGetUserPrivilegesResponse = {
     val __obj = js.Dynamic.literal(applications = applications.asInstanceOf[js.Any], cluster = cluster.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], run_as = run_as.asInstanceOf[js.Any])
@@ -43,9 +43,9 @@ object SecurityGetUserPrivilegesResponse {
     
     inline def setGlobalVarargs(value: SecurityGlobalPrivilege*): Self = StObject.set(x, "global", js.Array(value*))
     
-    inline def setIndices(value: js.Array[SecurityIndicesPrivileges]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Array[SecurityUserIndicesPrivileges]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    inline def setIndicesVarargs(value: SecurityIndicesPrivileges*): Self = StObject.set(x, "indices", js.Array(value*))
+    inline def setIndicesVarargs(value: SecurityUserIndicesPrivileges*): Self = StObject.set(x, "indices", js.Array(value*))
     
     inline def setRun_as(value: js.Array[String]): Self = StObject.set(x, "run_as", value.asInstanceOf[js.Any])
     

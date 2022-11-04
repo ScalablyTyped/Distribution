@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IndicesIndexVersioning extends StObject {
   
   var created: js.UndefOr[VersionString] = js.undefined
+  
+  var created_string: js.UndefOr[String] = js.undefined
 }
 object IndicesIndexVersioning {
   
@@ -20,5 +22,9 @@ object IndicesIndexVersioning {
     inline def setCreated(value: VersionString): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    
+    inline def setCreated_string(value: String): Self = StObject.set(x, "created_string", value.asInstanceOf[js.Any])
+    
+    inline def setCreated_stringUndefined: Self = StObject.set(x, "created_string", js.undefined)
   }
 }

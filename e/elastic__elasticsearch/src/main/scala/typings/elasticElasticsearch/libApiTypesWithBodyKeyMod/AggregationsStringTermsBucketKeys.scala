@@ -8,17 +8,19 @@ trait AggregationsStringTermsBucketKeys
   extends StObject
      with AggregationsTermsBucketBase {
   
-  var key: String
+  var key: FieldValue
 }
 object AggregationsStringTermsBucketKeys {
   
-  inline def apply(doc_count: long, key: String): AggregationsStringTermsBucketKeys = {
-    val __obj = js.Dynamic.literal(doc_count = doc_count.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+  inline def apply(doc_count: long): AggregationsStringTermsBucketKeys = {
+    val __obj = js.Dynamic.literal(doc_count = doc_count.asInstanceOf[js.Any], key = null)
     __obj.asInstanceOf[AggregationsStringTermsBucketKeys]
   }
   
   extension [Self <: AggregationsStringTermsBucketKeys](x: Self) {
     
-    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: FieldValue): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
   }
 }

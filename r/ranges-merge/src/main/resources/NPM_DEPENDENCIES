@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ranges-merge" : "8.2.6"
+      "ranges-merge" : "8.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "ranges-merge" : "8.2.6"
+      "ranges-merge" : "8.2.7"
     }
   ],
   "compile-devDependencies" : [

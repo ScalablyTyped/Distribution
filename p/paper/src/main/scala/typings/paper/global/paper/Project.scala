@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.SizeLike
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +30,7 @@ open class Project protected ()
   extends StObject
      with typings.paper.paper.Project {
   def this(element: String) = this()
-  def this(element: typings.paper.paper.Size) = this()
+  def this(element: SizeLike) = this()
   /** 
     * Creates a Paper.js project containing one empty {@link Layer}, referenced
     * by {@link Project#activeLayer}.

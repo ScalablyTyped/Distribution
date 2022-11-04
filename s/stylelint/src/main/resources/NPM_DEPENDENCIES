@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stylelint" : "14.14.0"
+      "stylelint" : "14.14.1"
     }
   ],
   "test-dependencies" : [
     {
-      "stylelint" : "14.14.0"
+      "stylelint" : "14.14.1"
     }
   ],
   "compile-devDependencies" : [

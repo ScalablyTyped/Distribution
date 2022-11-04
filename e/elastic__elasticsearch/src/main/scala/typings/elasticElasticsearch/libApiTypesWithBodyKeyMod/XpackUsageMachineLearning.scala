@@ -15,7 +15,7 @@ trait XpackUsageMachineLearning
   
   var inference: XpackUsageMlInference
   
-  var jobs: XpackUsageJobs
+  var jobs: Record[String, XpackUsageJobUsage]
   
   var node_count: integer
 }
@@ -27,7 +27,7 @@ object XpackUsageMachineLearning {
     datafeeds: Record[String, XpackUsageDatafeed],
     enabled: Boolean,
     inference: XpackUsageMlInference,
-    jobs: XpackUsageJobs,
+    jobs: Record[String, XpackUsageJobUsage],
     node_count: integer
   ): XpackUsageMachineLearning = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], data_frame_analytics_jobs = data_frame_analytics_jobs.asInstanceOf[js.Any], datafeeds = datafeeds.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], inference = inference.asInstanceOf[js.Any], jobs = jobs.asInstanceOf[js.Any], node_count = node_count.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object XpackUsageMachineLearning {
     
     inline def setInference(value: XpackUsageMlInference): Self = StObject.set(x, "inference", value.asInstanceOf[js.Any])
     
-    inline def setJobs(value: XpackUsageJobs): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: Record[String, XpackUsageJobUsage]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
     inline def setNode_count(value: integer): Self = StObject.set(x, "node_count", value.asInstanceOf[js.Any])
   }

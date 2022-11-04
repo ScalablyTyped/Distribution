@@ -12,14 +12,14 @@ trait IngestConvertProcessor
   
   var ignore_missing: js.UndefOr[Boolean] = js.undefined
   
-  var target_field: Field
+  var target_field: js.UndefOr[Field] = js.undefined
   
   var `type`: IngestConvertType
 }
 object IngestConvertProcessor {
   
-  inline def apply(field: Field, target_field: Field, `type`: IngestConvertType): IngestConvertProcessor = {
-    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], target_field = target_field.asInstanceOf[js.Any])
+  inline def apply(field: Field, `type`: IngestConvertType): IngestConvertProcessor = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestConvertProcessor]
   }
@@ -33,6 +33,8 @@ object IngestConvertProcessor {
     inline def setIgnore_missingUndefined: Self = StObject.set(x, "ignore_missing", js.undefined)
     
     inline def setTarget_field(value: Field): Self = StObject.set(x, "target_field", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_fieldUndefined: Self = StObject.set(x, "target_field", js.undefined)
     
     inline def setType(value: IngestConvertType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

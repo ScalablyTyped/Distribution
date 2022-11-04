@@ -120,6 +120,8 @@ object MappingDynamicProperty {
     
     inline def setNull_value(value: FieldValue): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     
+    inline def setNull_valueNull: Self = StObject.set(x, "null_value", null)
+    
     inline def setNull_valueUndefined: Self = StObject.set(x, "null_value", js.undefined)
     
     inline def setOn_script_error(value: MappingOnScriptError): Self = StObject.set(x, "on_script_error", value.asInstanceOf[js.Any])

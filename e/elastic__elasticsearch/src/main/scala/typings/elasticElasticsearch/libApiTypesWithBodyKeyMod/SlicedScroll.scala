@@ -8,13 +8,13 @@ trait SlicedScroll extends StObject {
   
   var field: js.UndefOr[Field] = js.undefined
   
-  var id: integer
+  var id: Id
   
   var max: integer
 }
 object SlicedScroll {
   
-  inline def apply(id: integer, max: integer): SlicedScroll = {
+  inline def apply(id: Id, max: integer): SlicedScroll = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlicedScroll]
   }
@@ -25,7 +25,7 @@ object SlicedScroll {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setMax(value: integer): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }

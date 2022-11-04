@@ -11,12 +11,14 @@ trait AggregationsGeoLineAggregate
   
   var geometry: GeoLine
   
+  var properties: Any
+  
   var `type`: String
 }
 object AggregationsGeoLineAggregate {
   
-  inline def apply(geometry: GeoLine, `type`: String): AggregationsGeoLineAggregate = {
-    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
+  inline def apply(geometry: GeoLine, properties: Any, `type`: String): AggregationsGeoLineAggregate = {
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregationsGeoLineAggregate]
   }
@@ -24,6 +26,8 @@ object AggregationsGeoLineAggregate {
   extension [Self <: AggregationsGeoLineAggregate](x: Self) {
     
     inline def setGeometry(value: GeoLine): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

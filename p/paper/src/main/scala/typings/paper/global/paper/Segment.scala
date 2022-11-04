@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.PointLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,16 +37,11 @@ open class Segment ()
     * @param object - an object containing properties to be set on the
     *     segment
     */
-  def this(`object`: js.Object) = this()
-  def this(point: typings.paper.paper.Point) = this()
-  def this(point: Unit, handleIn: typings.paper.paper.Point) = this()
-  def this(point: typings.paper.paper.Point, handleIn: typings.paper.paper.Point) = this()
-  def this(point: Unit, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
-  def this(point: Unit, handleIn: typings.paper.paper.Point, handleOut: typings.paper.paper.Point) = this()
-  def this(point: typings.paper.paper.Point, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
-  def this(
-    point: typings.paper.paper.Point,
-    handleIn: typings.paper.paper.Point,
-    handleOut: typings.paper.paper.Point
-  ) = this()
+  def this(point: js.Object | PointLike) = this()
+  def this(point: Unit, handleIn: PointLike) = this()
+  def this(point: PointLike, handleIn: PointLike) = this()
+  def this(point: Unit, handleIn: Unit, handleOut: PointLike) = this()
+  def this(point: Unit, handleIn: PointLike, handleOut: PointLike) = this()
+  def this(point: PointLike, handleIn: Unit, handleOut: PointLike) = this()
+  def this(point: PointLike, handleIn: PointLike, handleOut: PointLike) = this()
 }

@@ -8,6 +8,8 @@ trait SecurityGrantApiKeyResponse extends StObject {
   
   var api_key: String
   
+  var encoded: String
+  
   var expiration: js.UndefOr[EpochTime[UnitMillis]] = js.undefined
   
   var id: Id
@@ -16,14 +18,16 @@ trait SecurityGrantApiKeyResponse extends StObject {
 }
 object SecurityGrantApiKeyResponse {
   
-  inline def apply(api_key: String, id: Id, name: Name): SecurityGrantApiKeyResponse = {
-    val __obj = js.Dynamic.literal(api_key = api_key.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(api_key: String, encoded: String, id: Id, name: Name): SecurityGrantApiKeyResponse = {
+    val __obj = js.Dynamic.literal(api_key = api_key.asInstanceOf[js.Any], encoded = encoded.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityGrantApiKeyResponse]
   }
   
   extension [Self <: SecurityGrantApiKeyResponse](x: Self) {
     
     inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
+    
+    inline def setEncoded(value: String): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
     
     inline def setExpiration(value: EpochTime[UnitMillis]): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     

@@ -14,8 +14,8 @@ trait QueryDslTermQuery
 }
 object QueryDslTermQuery {
   
-  inline def apply(value: FieldValue): QueryDslTermQuery = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(): QueryDslTermQuery = {
+    val __obj = js.Dynamic.literal(value = null)
     __obj.asInstanceOf[QueryDslTermQuery]
   }
   
@@ -26,5 +26,7 @@ object QueryDslTermQuery {
     inline def setCase_insensitiveUndefined: Self = StObject.set(x, "case_insensitive", js.undefined)
     
     inline def setValue(value: FieldValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

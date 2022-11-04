@@ -15,6 +15,8 @@ trait MappingSourceField extends StObject {
   var excludes: js.UndefOr[js.Array[String]] = js.undefined
   
   var includes: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var mode: js.UndefOr[MappingSourceFieldMode] = js.undefined
 }
 object MappingSourceField {
   
@@ -48,5 +50,9 @@ object MappingSourceField {
     inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
     
     inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value*))
+    
+    inline def setMode(value: MappingSourceFieldMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

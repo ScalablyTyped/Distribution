@@ -17,6 +17,8 @@ trait SecurityQueryApiKeysRequest
   var size: js.UndefOr[integer] = js.undefined
   
   var sort: js.UndefOr[Sort] = js.undefined
+  
+  var with_limited_by: js.UndefOr[Boolean] = js.undefined
 }
 object SecurityQueryApiKeysRequest {
   
@@ -39,7 +41,7 @@ object SecurityQueryApiKeysRequest {
     
     inline def setSearch_afterUndefined: Self = StObject.set(x, "search_after", js.undefined)
     
-    inline def setSearch_afterVarargs(value: (long | double | String | Null)*): Self = StObject.set(x, "search_after", js.Array(value*))
+    inline def setSearch_afterVarargs(value: FieldValue*): Self = StObject.set(x, "search_after", js.Array(value*))
     
     inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
@@ -50,5 +52,9 @@ object SecurityQueryApiKeysRequest {
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     inline def setSortVarargs(value: SortCombinations*): Self = StObject.set(x, "sort", js.Array(value*))
+    
+    inline def setWith_limited_by(value: Boolean): Self = StObject.set(x, "with_limited_by", value.asInstanceOf[js.Any])
+    
+    inline def setWith_limited_byUndefined: Self = StObject.set(x, "with_limited_by", js.undefined)
   }
 }

@@ -22,6 +22,11 @@ trait CreateClusterRequest extends StObject {
   var ClusterName: String
   
   /**
+    * Enables data tiering. Data tiering is only supported for clusters using the r6gd node type. This parameter must be set when using r6gd nodes. For more information, see Data tiering.
+    */
+  var DataTiering: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * An optional description of the cluster.
     */
   var Description: js.UndefOr[String] = js.undefined
@@ -37,7 +42,7 @@ trait CreateClusterRequest extends StObject {
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period.
+    * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are:    sun     mon     tue     wed     thu     fri     sat    Example: sun:23:00-mon:01:30 
     */
   var MaintenanceWindow: js.UndefOr[String] = js.undefined
   
@@ -127,6 +132,10 @@ object CreateClusterRequest {
     inline def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "AutoMinorVersionUpgrade", js.undefined)
     
     inline def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
+    
+    inline def setDataTiering(value: BooleanOptional): Self = StObject.set(x, "DataTiering", value.asInstanceOf[js.Any])
+    
+    inline def setDataTieringUndefined: Self = StObject.set(x, "DataTiering", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

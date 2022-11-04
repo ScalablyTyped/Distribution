@@ -111,7 +111,7 @@ trait Item extends StObject {
     * 
     * @param point - the point to check for
     */
-  def contains(point: Point): Boolean = js.native
+  def contains(point: PointLike): Boolean = js.native
   
   /** 
     * Copies all attributes of the specified item over to this item. This
@@ -241,8 +241,8 @@ trait Item extends StObject {
     * Transform the item so that its {@link #bounds} fit within the specified
     * rectangle, without changing its aspect ratio.
     */
-  def fitBounds(rectangle: Rectangle): Unit = js.native
-  def fitBounds(rectangle: Rectangle, fill: Boolean): Unit = js.native
+  def fitBounds(rectangle: RectangleLike): Unit = js.native
+  def fitBounds(rectangle: RectangleLike, fill: Boolean): Unit = js.native
   
   def getItem(options: js.Function): Item = js.native
   /** 
@@ -317,7 +317,7 @@ trait Item extends StObject {
     * 
     * @return the transformed point as a new instance
     */
-  def globalToLocal(point: Point): Point = js.native
+  def globalToLocal(point: PointLike): Point = js.native
   
   /** 
     * The bounding rectangle of the item including handles.
@@ -397,8 +397,8 @@ trait Item extends StObject {
     * @return a hit result object describing what exactly was hit
     *     or `null` if nothing was hit
     */
-  def hitTest(point: Point): HitResult = js.native
-  def hitTest(point: Point, options: js.Object): HitResult = js.native
+  def hitTest(point: PointLike): HitResult = js.native
+  def hitTest(point: PointLike, options: js.Object): HitResult = js.native
   
   /** 
     * Performs a hit-test on the item and its children (if it is a {@link
@@ -416,8 +416,8 @@ trait Item extends StObject {
     * @return hit result objects for all hits, describing what
     *     exactly was hit or `null` if nothing was hit
     */
-  def hitTestAll(point: Point): js.Array[HitResult] = js.native
-  def hitTestAll(point: Point, options: js.Object): js.Array[HitResult] = js.native
+  def hitTestAll(point: PointLike): js.Array[HitResult] = js.native
+  def hitTestAll(point: PointLike, options: js.Object): js.Array[HitResult] = js.native
   
   /** 
     * The unique id of the item.
@@ -623,7 +623,7 @@ trait Item extends StObject {
   /** 
     * @param rect - the rectangle to check against
     */
-  def isInside(rect: Rectangle): Boolean = js.native
+  def isInside(rect: RectangleLike): Boolean = js.native
   
   /** 
     * Checks whether the specified item is the parent of the item.
@@ -662,7 +662,7 @@ trait Item extends StObject {
     * 
     * @return the transformed point as a new instance
     */
-  def localToGlobal(point: Point): Point = js.native
+  def localToGlobal(point: PointLike): Point = js.native
   
   /** 
     * Converts the specified point from the item's own local coordinate space
@@ -672,7 +672,7 @@ trait Item extends StObject {
     * 
     * @return the transformed point as a new instance
     */
-  def localToParent(point: Point): Point = js.native
+  def localToParent(point: PointLike): Point = js.native
   
   /** 
     * Specifies whether the item is locked. When set to `true`, item
@@ -921,7 +921,7 @@ trait Item extends StObject {
     * 
     * @return the transformed point as a new instance
     */
-  def parentToLocal(point: Point): Point = js.native
+  def parentToLocal(point: PointLike): Point = js.native
   
   /** 
     * The item's pivot point specified in the item coordinate system, defining
@@ -1079,7 +1079,7 @@ trait Item extends StObject {
     * @param angle - the rotation angle
     */
   def rotate(angle: Double): Unit = js.native
-  def rotate(angle: Double, center: Point): Unit = js.native
+  def rotate(angle: Double, center: PointLike): Unit = js.native
   
   /** 
     * The current rotation angle of the item, as described by its
@@ -1098,7 +1098,7 @@ trait Item extends StObject {
     * @param ver - the vertical scale factor
     */
   def scale(hor: Double, ver: Double): Unit = js.native
-  def scale(hor: Double, ver: Double, center: Point): Unit = js.native
+  def scale(hor: Double, ver: Double, center: PointLike): Unit = js.native
   /** 
     * Scales the item by the given value from its center point, or optionally
     * from a supplied point.
@@ -1106,7 +1106,7 @@ trait Item extends StObject {
     * @param scale - the scale factor
     */
   def scale(scale: Double): Unit = js.native
-  def scale(scale: Double, center: Point): Unit = js.native
+  def scale(scale: Double, center: PointLike): Unit = js.native
   
   /** 
     * The current scale factor of the item, as described by its
@@ -1179,7 +1179,7 @@ trait Item extends StObject {
     * @param ver - the vertical shear factor
     */
   def shear(hor: Double, ver: Double): Unit = js.native
-  def shear(hor: Double, ver: Double, center: Point): Unit = js.native
+  def shear(hor: Double, ver: Double, center: PointLike): Unit = js.native
   /** 
     * Shears the item by the given value from its center point, or optionally
     * by a supplied point.
@@ -1188,8 +1188,8 @@ trait Item extends StObject {
     * 
     * @param shear - the horizontal and vertical shear factors as a point
     */
-  def shear(shear: Point): Unit = js.native
-  def shear(shear: Point, center: Point): Unit = js.native
+  def shear(shear: PointLike): Unit = js.native
+  def shear(shear: PointLike, center: PointLike): Unit = js.native
   
   /** 
     * Skews the item by the given angles from its center point, or optionally
@@ -1201,7 +1201,7 @@ trait Item extends StObject {
     * @param ver - the vertical sskew angle in degrees
     */
   def skew(hor: Double, ver: Double): Unit = js.native
-  def skew(hor: Double, ver: Double, center: Point): Unit = js.native
+  def skew(hor: Double, ver: Double, center: PointLike): Unit = js.native
   /** 
     * Skews the item by the given angles from its center point, or optionally
     * by a supplied point.
@@ -1210,8 +1210,8 @@ trait Item extends StObject {
     * 
     * @param skew - the horizontal and vertical skew angles in degrees
     */
-  def skew(skew: Point): Unit = js.native
-  def skew(skew: Point, center: Point): Unit = js.native
+  def skew(skew: PointLike): Unit = js.native
+  def skew(skew: PointLike, center: PointLike): Unit = js.native
   
   /** 
     * The bounding rectangle of the item including stroke width.
@@ -1264,7 +1264,7 @@ trait Item extends StObject {
     * 
     * @param delta - the offset to translate the item by
     */
-  def translate(delta: Point): Unit = js.native
+  def translate(delta: PointLike): Unit = js.native
   
   /** 
     * Tween item between two states.

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryDslQueryContainer
   extends StObject
-     with _SecurityIndicesPrivilegesQuery
-     with _SecurityRoleTemplateScript {
+     with _SecurityIndicesPrivilegesQuery {
   
   var bool: js.UndefOr[QueryDslBoolQuery] = js.undefined
   

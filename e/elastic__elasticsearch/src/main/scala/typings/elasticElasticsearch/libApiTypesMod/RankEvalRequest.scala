@@ -14,7 +14,7 @@ trait RankEvalRequest
   
   var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: Indices
+  var index: js.UndefOr[Indices] = js.undefined
   
   var metric: js.UndefOr[RankEvalRankEvalMetric] = js.undefined
   
@@ -24,8 +24,8 @@ trait RankEvalRequest
 }
 object RankEvalRequest {
   
-  inline def apply(index: Indices, requests: js.Array[RankEvalRankEvalRequestItem]): RankEvalRequest = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any])
+  inline def apply(requests: js.Array[RankEvalRankEvalRequestItem]): RankEvalRequest = {
+    val __obj = js.Dynamic.literal(requests = requests.asInstanceOf[js.Any])
     __obj.asInstanceOf[RankEvalRequest]
   }
   
@@ -46,6 +46,8 @@ object RankEvalRequest {
     inline def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
     
     inline def setIndex(value: Indices): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     inline def setIndexVarargs(value: IndexName*): Self = StObject.set(x, "index", js.Array(value*))
     

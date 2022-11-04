@@ -2,7 +2,7 @@ package typings.nextAuth
 
 import typings.cookie.mod.CookieSerializeOptions
 import typings.nextAuth.anon.Encode
-import typings.nextAuth.anon.Headers
+import typings.nextAuth.anon.PartialcookiesNextRequest
 import typings.nextAuth.coreTypesMod.CookieOption
 import typings.nextAuth.coreTypesMod.CookiesOptions
 import typings.nextAuth.coreTypesMod.SessionStrategy
@@ -22,8 +22,8 @@ object coreLibCookieMod {
   @JSImport("next-auth/core/lib/cookie", "SessionStore")
   @js.native
   open class SessionStore protected () extends StObject {
-    def this(option: CookieOption, req: Headers, logger: LoggerInstance) = this()
-    def this(option: CookieOption, req: Headers, logger: Console) = this()
+    def this(option: CookieOption, req: PartialcookiesNextRequest, logger: LoggerInstance) = this()
+    def this(option: CookieOption, req: PartialcookiesNextRequest, logger: Console) = this()
     
     /**
       * Given a cookie value, return new cookies, chunked, to fit the allowed cookie size.

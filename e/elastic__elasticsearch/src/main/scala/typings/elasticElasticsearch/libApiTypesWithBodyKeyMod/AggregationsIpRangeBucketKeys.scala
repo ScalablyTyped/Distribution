@@ -10,6 +10,8 @@ trait AggregationsIpRangeBucketKeys
   
   var from: js.UndefOr[String] = js.undefined
   
+  var key: js.UndefOr[String] = js.undefined
+  
   var to: js.UndefOr[String] = js.undefined
 }
 object AggregationsIpRangeBucketKeys {
@@ -24,6 +26,10 @@ object AggregationsIpRangeBucketKeys {
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,9 @@ trait NodeAttributes extends StObject {
   
   var ephemeral_id: Id
   
-  var id: js.UndefOr[Id] = js.undefined
+  var external_id: String
+  
+  var id: js.UndefOr[NodeId] = js.undefined
   
   var name: NodeName
   
@@ -24,10 +26,11 @@ object NodeAttributes {
   inline def apply(
     attributes: Record[String, String],
     ephemeral_id: Id,
+    external_id: String,
     name: NodeName,
     transport_address: TransportAddress
   ): NodeAttributes = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], ephemeral_id = ephemeral_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], transport_address = transport_address.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], ephemeral_id = ephemeral_id.asInstanceOf[js.Any], external_id = external_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], transport_address = transport_address.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeAttributes]
   }
   
@@ -37,7 +40,9 @@ object NodeAttributes {
     
     inline def setEphemeral_id(value: Id): Self = StObject.set(x, "ephemeral_id", value.asInstanceOf[js.Any])
     
-    inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: NodeId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     

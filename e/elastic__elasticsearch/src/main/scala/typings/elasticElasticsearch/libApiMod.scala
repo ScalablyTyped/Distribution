@@ -317,6 +317,8 @@ object libApiMod {
     
     var features: typings.elasticElasticsearch.libApiApiFeaturesMod.default = js.native
     
+    def fieldCaps(): js.Promise[FieldCapsResponse] = js.native
+    def fieldCaps(params: Unit, options: TransportRequestOptions): js.Promise[FieldCapsResponse] = js.native
     def fieldCaps(params: FieldCapsRequest): js.Promise[FieldCapsResponse] = js.native
     def fieldCaps(params: FieldCapsRequest, options: TransportRequestOptions): js.Promise[FieldCapsResponse] = js.native
     def fieldCaps(params: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.FieldCapsRequest): js.Promise[FieldCapsResponse] = js.native
@@ -327,7 +329,9 @@ object libApiMod {
     @JSName("fieldCaps")
     var fieldCaps_Original: js.ThisFunction2[
         /* this */ typings.elasticElasticsearch.libApiApiFieldCapsMod.That, 
-        /* params */ FieldCapsRequest | typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.FieldCapsRequest, 
+        /* params */ js.UndefOr[
+          FieldCapsRequest | typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.FieldCapsRequest
+        ], 
         /* options */ js.UndefOr[TransportRequestOptions], 
         js.Promise[FieldCapsResponse]
       ] = js.native

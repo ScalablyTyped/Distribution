@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "next-auth"
-version := "4.15.0-13af32"
+version := "4.15.1-4e6af7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,15 +9,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cookie" % "0.5-dt-20220420Z-04375f",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
-  "org.scalablytyped" %%% "jose" % "4.10.3-22251e",
+  "org.scalablytyped" %%% "jose" % "4.10.4-e34551",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
-  "org.scalablytyped" %%% "next" % "13.0.1-4122db",
-  "org.scalablytyped" %%% "next__env" % "13.0.1-76b77c",
+  "org.scalablytyped" %%% "next" % "13.0.2-5f35f3",
+  "org.scalablytyped" %%% "next__env" % "13.0.2-cb900f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20220912Z-0195ba",
   "org.scalablytyped" %%% "oauth" % "0.9-dt-20211202Z-2fa8f9",
-  "org.scalablytyped" %%% "openid-client" % "5.2.1-315612",
+  "org.scalablytyped" %%% "openid-client" % "5.2.1-3677b9",
   "org.scalablytyped" %%% "postcss" % "8.4.18-a78a45",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "re2" % "1.17.7-a226e5",

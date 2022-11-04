@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.PointLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +23,6 @@ open class SymbolItem protected ()
     * @param point - the center point of the placed symbol
     */
   def this(definition: typings.paper.paper.SymbolDefinition) = this()
-  def this(definition: typings.paper.paper.Item, point: typings.paper.paper.Point) = this()
-  def this(definition: typings.paper.paper.SymbolDefinition, point: typings.paper.paper.Point) = this()
+  def this(definition: typings.paper.paper.Item, point: PointLike) = this()
+  def this(definition: typings.paper.paper.SymbolDefinition, point: PointLike) = this()
 }

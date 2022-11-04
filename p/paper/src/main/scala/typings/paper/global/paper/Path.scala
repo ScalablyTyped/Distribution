@@ -1,5 +1,8 @@
 package typings.paper.global.paper
 
+import typings.paper.paper.PointLike
+import typings.paper.paper.RectangleLike
+import typings.paper.paper.SizeLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +61,7 @@ object Path {
       * @param through - the point the arc passes through
       * @param to - the end point of the arc
       */
-    def this(from: typings.paper.paper.Point, through: typings.paper.paper.Point, to: typings.paper.paper.Point) = this()
+    def this(from: PointLike, through: PointLike, to: PointLike) = this()
   }
   
   @JSGlobal("paper.Path.Circle")
@@ -80,7 +83,7 @@ object Path {
       * @param center - the center point of the circle
       * @param radius - the radius of the circle
       */
-    def this(center: typings.paper.paper.Point, radius: Double) = this()
+    def this(center: PointLike, radius: Double) = this()
   }
   
   @JSGlobal("paper.Path.Ellipse")
@@ -89,19 +92,18 @@ object Path {
     extends StObject
        with typings.paper.paper.Path {
     /** 
+      * Creates an elliptical path item.
+      * 
+      * @param rectangle - the rectangle circumscribing the ellipse
+      */
+    /** 
       * Creates an elliptical path item from the properties described by an
       * object literal.
       * 
       * @param object - an object containing properties describing the
       *     path's attributes
       */
-    def this(`object`: js.Object) = this()
-    /** 
-      * Creates an elliptical path item.
-      * 
-      * @param rectangle - the rectangle circumscribing the ellipse
-      */
-    def this(rectangle: typings.paper.paper.Rectangle) = this()
+    def this(rectangle: js.Object | RectangleLike) = this()
   }
   
   @JSGlobal("paper.Path.Line")
@@ -123,7 +125,7 @@ object Path {
       * @param from - the line's starting point
       * @param to - the line's ending point
       */
-    def this(from: typings.paper.paper.Point, to: typings.paper.paper.Point) = this()
+    def this(from: PointLike, to: PointLike) = this()
   }
   
   @JSGlobal("paper.Path.Rectangle")
@@ -132,21 +134,26 @@ object Path {
     extends StObject
        with typings.paper.paper.Path {
     /** 
-      * Creates a rectangular path item from the properties described by an
-      * object literal.
-      * 
-      * @param object - an object containing properties describing the
-      *     path's attributes
-      */
-    def this(`object`: js.Object) = this()
-    /** 
       * Creates a rectangular path item, with optionally rounded corners.
       * 
       * @param rectangle - the rectangle object describing the
       * geometry of the rectangular path to be created
       * @param radius - the size of the rounded corners
       */
-    def this(rectangle: typings.paper.paper.Rectangle) = this()
+    /** 
+      * Creates a rectangular path item from the properties described by an
+      * object literal.
+      * 
+      * @param object - an object containing properties describing the
+      *     path's attributes
+      */
+    def this(rectangle: js.Object | RectangleLike) = this()
+    /** 
+      * Creates a rectangular path item from a point and a size object.
+      * 
+      * @param point - the rectangle's top-left corner.
+      * @param size - the rectangle's size.
+      */
     /** 
       * Creates a rectangular path item from the passed points. These do not
       * necessarily need to be the top left and bottom right corners, the
@@ -155,15 +162,7 @@ object Path {
       * @param from - the first point defining the rectangle
       * @param to - the second point defining the rectangle
       */
-    def this(from: typings.paper.paper.Point, to: typings.paper.paper.Point) = this()
-    /** 
-      * Creates a rectangular path item from a point and a size object.
-      * 
-      * @param point - the rectangle's top-left corner.
-      * @param size - the rectangle's size.
-      */
-    def this(point: typings.paper.paper.Point, size: typings.paper.paper.Size) = this()
-    def this(rectangle: typings.paper.paper.Rectangle, radius: typings.paper.paper.Size) = this()
+    def this(rectangle: PointLike | RectangleLike, radius: PointLike | SizeLike) = this()
   }
   
   @JSGlobal("paper.Path.RegularPolygon")
@@ -186,7 +185,7 @@ object Path {
       * @param sides - the number of sides of the polygon
       * @param radius - the radius of the polygon
       */
-    def this(center: typings.paper.paper.Point, sides: Double, radius: Double) = this()
+    def this(center: PointLike, sides: Double, radius: Double) = this()
   }
   
   @JSGlobal("paper.Path.Star")
@@ -212,6 +211,6 @@ object Path {
       * @param center - the center point of the star
       * @param points - the number of points of the star
       */
-    def this(center: typings.paper.paper.Point, points: Double, radius1: Double, radius2: Double) = this()
+    def this(center: PointLike, points: Double, radius1: Double, radius2: Double) = this()
   }
 }

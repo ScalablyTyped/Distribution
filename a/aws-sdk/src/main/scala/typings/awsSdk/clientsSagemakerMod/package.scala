@@ -3148,6 +3148,8 @@ type TrainingInstanceCount = Double
   - typings.awsSdk.awsSdkStrings.mlDotg5Dot12xlarge
   - typings.awsSdk.awsSdkStrings.mlDotg5Dot24xlarge
   - typings.awsSdk.awsSdkStrings.mlDotg5Dot48xlarge
+  - typings.awsSdk.awsSdkStrings.mlDottrn1Dot2xlarge
+  - typings.awsSdk.awsSdkStrings.mlDottrn1Dot32xlarge
   - java.lang.String
 */
 type TrainingInstanceType = _TrainingInstanceType | java.lang.String

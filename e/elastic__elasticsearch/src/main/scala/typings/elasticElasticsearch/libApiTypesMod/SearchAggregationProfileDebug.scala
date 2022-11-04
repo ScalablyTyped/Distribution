@@ -32,6 +32,8 @@ trait SearchAggregationProfileDebug extends StObject {
   
   var has_filter: js.UndefOr[Boolean] = js.undefined
   
+  var map_reducer: js.UndefOr[String] = js.undefined
+  
   var numeric_collectors_used: js.UndefOr[integer] = js.undefined
   
   var ordinals_collectors_overhead_too_high: js.UndefOr[integer] = js.undefined
@@ -124,6 +126,10 @@ object SearchAggregationProfileDebug {
     inline def setHas_filter(value: Boolean): Self = StObject.set(x, "has_filter", value.asInstanceOf[js.Any])
     
     inline def setHas_filterUndefined: Self = StObject.set(x, "has_filter", js.undefined)
+    
+    inline def setMap_reducer(value: String): Self = StObject.set(x, "map_reducer", value.asInstanceOf[js.Any])
+    
+    inline def setMap_reducerUndefined: Self = StObject.set(x, "map_reducer", js.undefined)
     
     inline def setNumeric_collectors_used(value: integer): Self = StObject.set(x, "numeric_collectors_used", value.asInstanceOf[js.Any])
     

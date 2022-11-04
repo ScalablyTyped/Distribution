@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SecurityGrantApiKeyGrantApiKey extends StObject {
   
-  var expiration: js.UndefOr[Duration] = js.undefined
+  var expiration: js.UndefOr[DurationLarge] = js.undefined
+  
+  var metadata: js.UndefOr[Metadata] = js.undefined
   
   var name: Name
   
-  var role_descriptors: js.UndefOr[js.Array[Record[String, Any]]] = js.undefined
+  var role_descriptors: js.UndefOr[
+    (Record[String, SecurityRoleDescriptor]) | (js.Array[Record[String, SecurityRoleDescriptor]])
+  ] = js.undefined
 }
 object SecurityGrantApiKeyGrantApiKey {
   
@@ -22,16 +26,22 @@ object SecurityGrantApiKeyGrantApiKey {
   
   extension [Self <: SecurityGrantApiKeyGrantApiKey](x: Self) {
     
-    inline def setExpiration(value: Duration): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: DurationLarge): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setRole_descriptors(value: js.Array[Record[String, Any]]): Self = StObject.set(x, "role_descriptors", value.asInstanceOf[js.Any])
+    inline def setRole_descriptors(
+      value: (Record[String, SecurityRoleDescriptor]) | (js.Array[Record[String, SecurityRoleDescriptor]])
+    ): Self = StObject.set(x, "role_descriptors", value.asInstanceOf[js.Any])
     
     inline def setRole_descriptorsUndefined: Self = StObject.set(x, "role_descriptors", js.undefined)
     
-    inline def setRole_descriptorsVarargs(value: (Record[String, Any])*): Self = StObject.set(x, "role_descriptors", js.Array(value*))
+    inline def setRole_descriptorsVarargs(value: (Record[String, SecurityRoleDescriptor])*): Self = StObject.set(x, "role_descriptors", js.Array(value*))
   }
 }

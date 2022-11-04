@@ -14,6 +14,8 @@ trait SecurityUser extends StObject {
   
   var metadata: Metadata
   
+  var profile_uid: js.UndefOr[SecurityUserProfileId] = js.undefined
+  
   var roles: js.Array[String]
   
   var username: Username
@@ -42,6 +44,10 @@ object SecurityUser {
     inline def setFull_nameUndefined: Self = StObject.set(x, "full_name", js.undefined)
     
     inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setProfile_uid(value: SecurityUserProfileId): Self = StObject.set(x, "profile_uid", value.asInstanceOf[js.Any])
+    
+    inline def setProfile_uidUndefined: Self = StObject.set(x, "profile_uid", js.undefined)
     
     inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     

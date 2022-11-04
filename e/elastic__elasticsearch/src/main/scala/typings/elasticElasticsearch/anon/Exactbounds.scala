@@ -2,7 +2,6 @@ package typings.elasticElasticsearch.anon
 
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.AggregationsAggregationContainer
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Field
-import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.MappingRuntimeFields
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.QueryDslQueryContainer
 import typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.SearchMvtGridType
@@ -23,7 +22,7 @@ trait Exactbounds extends StObject {
   
   var extent: js.UndefOr[integer] = js.undefined
   
-  var fields: js.UndefOr[Fields] = js.undefined
+  var fields: js.UndefOr[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields] = js.undefined
   
   var grid_precision: js.UndefOr[integer] = js.undefined
   
@@ -60,7 +59,7 @@ object Exactbounds {
     
     inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     

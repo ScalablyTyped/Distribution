@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-virtual-modules
 
-Typings are for version 0.4.5
+Typings are for version 0.4.6
 
 ## Library description:
 Webpack Virtual Modules

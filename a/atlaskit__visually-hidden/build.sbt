@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__visually-hidden"
-version := "1.1.1-8b3938"
+version := "1.1.2-9a38d2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

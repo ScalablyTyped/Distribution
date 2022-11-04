@@ -14,6 +14,8 @@ import typings.paper.anon.TypeofPathItem
 import typings.paper.anon.TypeofPoint
 import typings.paper.anon.TypeofShape
 import typings.paper.anon.TypeofSize
+import typings.paper.paper.PointLike
+import typings.paper.paper.SizeLike
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
@@ -116,7 +118,7 @@ object distPaperCoreMod {
       * Creates a new CurveLocation object.
       */
     def this(curve: typings.paper.paper.Curve, time: Double) = this()
-    def this(curve: typings.paper.paper.Curve, time: Double, point: typings.paper.paper.Point) = this()
+    def this(curve: typings.paper.paper.Curve, time: Double, point: PointLike) = this()
     
     /** 
       * The curvature of the {@link #curve} at the given location.
@@ -260,14 +262,14 @@ object distPaperCoreMod {
   def CurveLocation: Instantiable3[
     /* curve */ typings.paper.paper.Curve, 
     /* time */ Double, 
-    /* point */ js.UndefOr[typings.paper.paper.Point], 
+    /* point */ js.UndefOr[PointLike], 
     typings.paper.paper.CurveLocation
   ] = js.native
   inline def CurveLocation_=(
     x: Instantiable3[
       /* curve */ typings.paper.paper.Curve, 
       /* time */ Double, 
-      /* point */ js.UndefOr[typings.paper.paper.Point], 
+      /* point */ js.UndefOr[PointLike], 
       typings.paper.paper.CurveLocation
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CurveLocation")(x.asInstanceOf[js.Any])
@@ -799,12 +801,12 @@ object distPaperCoreMod {
       * 
       * @param point - the position where the text will start
       */
-    def this(point: typings.paper.paper.Point) = this()
+    def this(point: PointLike) = this()
   }
   @JSImport("paper/dist/paper-core", "PointText")
   @js.native
-  def PointText: Instantiable1[/* point */ typings.paper.paper.Point, typings.paper.paper.PointText] = js.native
-  inline def PointText_=(x: Instantiable1[/* point */ typings.paper.paper.Point, typings.paper.paper.PointText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PointText")(x.asInstanceOf[js.Any])
+  def PointText: Instantiable1[/* point */ PointLike, typings.paper.paper.PointText] = js.native
+  inline def PointText_=(x: Instantiable1[/* point */ PointLike, typings.paper.paper.PointText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PointText")(x.asInstanceOf[js.Any])
   
   inline def Point_=(x: TypeofPoint & (Instantiable2[/* x */ Double, /* y */ Double, typings.paper.paper.Point])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Point")(x.asInstanceOf[js.Any])
   
@@ -815,7 +817,7 @@ object distPaperCoreMod {
     extends StObject
        with typings.paper.paper.Project {
     def this(element: String) = this()
-    def this(element: typings.paper.paper.Size) = this()
+    def this(element: SizeLike) = this()
     /** 
       * Creates a Paper.js project containing one empty {@link Layer}, referenced
       * by {@link Project#activeLayer}.
@@ -832,17 +834,9 @@ object distPaperCoreMod {
   }
   @JSImport("paper/dist/paper-core", "Project")
   @js.native
-  def Project_ : Instantiable1[
-    /* element */ HTMLCanvasElement | String | typings.paper.paper.Size, 
-    typings.paper.paper.Project
-  ] = js.native
+  def Project_ : Instantiable1[/* element */ HTMLCanvasElement | String | SizeLike, typings.paper.paper.Project] = js.native
   
-  inline def Project__=(
-    x: Instantiable1[
-      /* element */ HTMLCanvasElement | String | typings.paper.paper.Size, 
-      typings.paper.paper.Project
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Project")(x.asInstanceOf[js.Any])
+  inline def Project__=(x: Instantiable1[/* element */ HTMLCanvasElement | String | SizeLike, typings.paper.paper.Project]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Project")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Raster")
@@ -864,22 +858,22 @@ object distPaperCoreMod {
     def this(source: String) = this()
     def this(source: HTMLCanvasElement) = this()
     def this(source: HTMLImageElement) = this()
-    def this(source: String, position: typings.paper.paper.Point) = this()
-    def this(source: Unit, position: typings.paper.paper.Point) = this()
-    def this(source: HTMLCanvasElement, position: typings.paper.paper.Point) = this()
-    def this(source: HTMLImageElement, position: typings.paper.paper.Point) = this()
+    def this(source: String, position: PointLike) = this()
+    def this(source: Unit, position: PointLike) = this()
+    def this(source: HTMLCanvasElement, position: PointLike) = this()
+    def this(source: HTMLImageElement, position: PointLike) = this()
   }
   @JSImport("paper/dist/paper-core", "Raster")
   @js.native
   def Raster: Instantiable2[
     /* source */ js.UndefOr[HTMLImageElement | HTMLCanvasElement | String], 
-    /* position */ js.UndefOr[typings.paper.paper.Point], 
+    /* position */ js.UndefOr[PointLike], 
     typings.paper.paper.Raster
   ] = js.native
   inline def Raster_=(
     x: Instantiable2[
       /* source */ js.UndefOr[HTMLImageElement | HTMLCanvasElement | String], 
-      /* position */ js.UndefOr[typings.paper.paper.Point], 
+      /* position */ js.UndefOr[PointLike], 
       typings.paper.paper.Raster
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Raster")(x.asInstanceOf[js.Any])
@@ -896,22 +890,12 @@ object distPaperCoreMod {
       * @param point - the top-left point of the rectangle
       * @param size - the size of the rectangle
       */
-    def this(point: typings.paper.paper.Point, size: typings.paper.paper.Size) = this()
+    def this(point: PointLike, size: SizeLike) = this()
   }
   @JSImport("paper/dist/paper-core", "Rectangle")
   @js.native
-  def Rectangle: Instantiable2[
-    /* point */ typings.paper.paper.Point, 
-    /* size */ typings.paper.paper.Size, 
-    typings.paper.paper.Rectangle
-  ] = js.native
-  inline def Rectangle_=(
-    x: Instantiable2[
-      /* point */ typings.paper.paper.Point, 
-      /* size */ typings.paper.paper.Size, 
-      typings.paper.paper.Rectangle
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rectangle")(x.asInstanceOf[js.Any])
+  def Rectangle: Instantiable2[/* point */ PointLike, /* size */ SizeLike, typings.paper.paper.Rectangle] = js.native
+  inline def Rectangle_=(x: Instantiable2[/* point */ PointLike, /* size */ SizeLike, typings.paper.paper.Rectangle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rectangle")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Segment")
@@ -930,31 +914,27 @@ object distPaperCoreMod {
   open class Segment ()
     extends StObject
        with typings.paper.paper.Segment {
-    def this(point: typings.paper.paper.Point) = this()
-    def this(point: Unit, handleIn: typings.paper.paper.Point) = this()
-    def this(point: typings.paper.paper.Point, handleIn: typings.paper.paper.Point) = this()
-    def this(point: Unit, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
-    def this(point: Unit, handleIn: typings.paper.paper.Point, handleOut: typings.paper.paper.Point) = this()
-    def this(point: typings.paper.paper.Point, handleIn: Unit, handleOut: typings.paper.paper.Point) = this()
-    def this(
-      point: typings.paper.paper.Point,
-      handleIn: typings.paper.paper.Point,
-      handleOut: typings.paper.paper.Point
-    ) = this()
+    def this(point: PointLike) = this()
+    def this(point: Unit, handleIn: PointLike) = this()
+    def this(point: PointLike, handleIn: PointLike) = this()
+    def this(point: Unit, handleIn: Unit, handleOut: PointLike) = this()
+    def this(point: Unit, handleIn: PointLike, handleOut: PointLike) = this()
+    def this(point: PointLike, handleIn: Unit, handleOut: PointLike) = this()
+    def this(point: PointLike, handleIn: PointLike, handleOut: PointLike) = this()
   }
   @JSImport("paper/dist/paper-core", "Segment")
   @js.native
   def Segment: Instantiable3[
-    /* point */ js.UndefOr[typings.paper.paper.Point], 
-    /* handleIn */ js.UndefOr[typings.paper.paper.Point], 
-    /* handleOut */ js.UndefOr[typings.paper.paper.Point], 
+    /* point */ js.UndefOr[PointLike], 
+    /* handleIn */ js.UndefOr[PointLike], 
+    /* handleOut */ js.UndefOr[PointLike], 
     typings.paper.paper.Segment
   ] = js.native
   inline def Segment_=(
     x: Instantiable3[
-      /* point */ js.UndefOr[typings.paper.paper.Point], 
-      /* handleIn */ js.UndefOr[typings.paper.paper.Point], 
-      /* handleOut */ js.UndefOr[typings.paper.paper.Point], 
+      /* point */ js.UndefOr[PointLike], 
+      /* handleIn */ js.UndefOr[PointLike], 
+      /* handleOut */ js.UndefOr[PointLike], 
       typings.paper.paper.Segment
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Segment")(x.asInstanceOf[js.Any])
@@ -1183,20 +1163,20 @@ object distPaperCoreMod {
       * @param point - the center point of the placed symbol
       */
     def this(definition: typings.paper.paper.SymbolDefinition) = this()
-    def this(definition: typings.paper.paper.Item, point: typings.paper.paper.Point) = this()
-    def this(definition: typings.paper.paper.SymbolDefinition, point: typings.paper.paper.Point) = this()
+    def this(definition: typings.paper.paper.Item, point: PointLike) = this()
+    def this(definition: typings.paper.paper.SymbolDefinition, point: PointLike) = this()
   }
   @JSImport("paper/dist/paper-core", "SymbolItem")
   @js.native
   def SymbolItem: Instantiable2[
     /* definition */ typings.paper.paper.SymbolDefinition | typings.paper.paper.Item, 
-    /* point */ js.UndefOr[typings.paper.paper.Point], 
+    /* point */ js.UndefOr[PointLike], 
     typings.paper.paper.SymbolItem
   ] = js.native
   inline def SymbolItem_=(
     x: Instantiable2[
       /* definition */ typings.paper.paper.SymbolDefinition | typings.paper.paper.Item, 
-      /* point */ js.UndefOr[typings.paper.paper.Point], 
+      /* point */ js.UndefOr[PointLike], 
       typings.paper.paper.SymbolItem
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymbolItem")(x.asInstanceOf[js.Any])
@@ -1481,11 +1461,11 @@ object distPaperCoreMod {
   
   @JSImport("paper/dist/paper-core", "setup")
   @js.native
-  def setup: js.Function1[/* element */ HTMLCanvasElement | String | typings.paper.paper.Size, Unit] = js.native
+  def setup: js.Function1[/* element */ HTMLCanvasElement | String | SizeLike, Unit] = js.native
   inline def setup(element: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def setup(element: typings.paper.paper.Size): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup(element: SizeLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setup(element: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def setup_=(x: js.Function1[/* element */ HTMLCanvasElement | String | typings.paper.paper.Size, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setup")(x.asInstanceOf[js.Any])
+  inline def setup_=(x: js.Function1[/* element */ HTMLCanvasElement | String | SizeLike, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setup")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "tool")
   @js.native

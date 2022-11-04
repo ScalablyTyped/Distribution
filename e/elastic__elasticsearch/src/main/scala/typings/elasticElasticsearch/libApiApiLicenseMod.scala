@@ -124,6 +124,10 @@ object libApiApiLicenseMod {
       options: TransportRequestOptionsWithOutMeta
     ): js.Promise[LicenseGetTrialStatusResponse] = js.native
     
+    def post(): js.Promise[LicensePostResponse] = js.native
+    def post(params: Unit, options: TransportRequestOptions): js.Promise[LicensePostResponse] = js.native
+    def post(params: Unit, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[LicensePostResponse, Any]] = js.native
+    def post(params: Unit, options: TransportRequestOptionsWithOutMeta): js.Promise[LicensePostResponse] = js.native
     def post(params: LicensePostRequest): js.Promise[LicensePostResponse] = js.native
     def post(params: LicensePostRequest, options: TransportRequestOptions): js.Promise[LicensePostResponse] = js.native
     def post(params: LicensePostRequest, options: TransportRequestOptionsWithMeta): js.Promise[TransportResult[LicensePostResponse, Any]] = js.native

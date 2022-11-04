@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "next-redux-wrapper"
-version := "8.0.0-b0c251"
+version := "8.0.0-c3e7ec"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
-  "org.scalablytyped" %%% "next" % "13.0.1-4122db",
-  "org.scalablytyped" %%% "next__env" % "13.0.1-76b77c",
+  "org.scalablytyped" %%% "next" % "13.0.2-5f35f3",
+  "org.scalablytyped" %%% "next__env" % "13.0.2-cb900f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "postcss" % "8.4.18-a78a45",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
