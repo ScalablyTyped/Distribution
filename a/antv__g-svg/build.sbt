@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "antv__g-svg"
-version := "1.8.14-ee7033"
+version := "1.8.14-bc5eea"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-408962",
-  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-cdeb2e",
-  "org.scalablytyped" %%% "antv__g-plugin-svg-picker" % "1.7.17-10bb22",
-  "org.scalablytyped" %%% "antv__g-plugin-svg-renderer" % "1.8.14-18eea9",
-  "org.scalablytyped" %%% "antv__util" % "3.3.0-3dd382",
+  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-4af5fe",
+  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-b47439",
+  "org.scalablytyped" %%% "antv__g-plugin-svg-picker" % "1.7.17-b8e670",
+  "org.scalablytyped" %%% "antv__g-plugin-svg-renderer" % "1.8.14-dee6c1",
+  "org.scalablytyped" %%% "antv__util" % "3.3.1-3945ec",
   "org.scalablytyped" %%% "eventemitter3" % "4.0.7-30a4f9",
   "org.scalablytyped" %%% "gl-matrix" % "3.4.3-9a54c5",
   "org.scalablytyped" %%% "inversify" % "6.0.1-60a540",

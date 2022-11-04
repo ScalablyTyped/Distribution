@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design-pro"
-version := "2.3.2-2b5acb"
+version := "2.3.2-275712"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,19 +15,19 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "antv__coord" % "0.4.4-39c44f",
   "org.scalablytyped" %%% "antv__event-emitter" % "0.1.3-e78575",
   "org.scalablytyped" %%% "antv__g-base" % "0.5.11-988ebf",
-  "org.scalablytyped" %%% "antv__g-canvas" % "1.9.5-562816",
-  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-408962",
-  "org.scalablytyped" %%% "antv__g-plugin-canvas-path-generator" % "1.1.17-57e9fa",
-  "org.scalablytyped" %%% "antv__g-plugin-canvas-picker" % "1.8.14-de375f",
-  "org.scalablytyped" %%% "antv__g-plugin-canvas-renderer" % "1.7.20-8fc8a6",
-  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-cdeb2e",
-  "org.scalablytyped" %%% "antv__g-plugin-html-renderer" % "1.7.17-378d13",
-  "org.scalablytyped" %%% "antv__g-plugin-image-loader" % "1.1.18-1e7adc",
+  "org.scalablytyped" %%% "antv__g-canvas" % "1.9.5-888e5d",
+  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-4af5fe",
+  "org.scalablytyped" %%% "antv__g-plugin-canvas-path-generator" % "1.1.17-4ca43c",
+  "org.scalablytyped" %%% "antv__g-plugin-canvas-picker" % "1.8.14-6b5de8",
+  "org.scalablytyped" %%% "antv__g-plugin-canvas-renderer" % "1.7.20-74a93d",
+  "org.scalablytyped" %%% "antv__g-plugin-dom-interaction" % "1.7.17-b47439",
+  "org.scalablytyped" %%% "antv__g-plugin-html-renderer" % "1.7.17-48b214",
+  "org.scalablytyped" %%% "antv__g-plugin-image-loader" % "1.1.18-38495c",
   "org.scalablytyped" %%% "antv__g2" % "4.2.8-82dcc3",
   "org.scalablytyped" %%% "antv__g2plot" % "2.4.20-448412",
   "org.scalablytyped" %%% "antv__scale" % "0.4.11-bf370a",
-  "org.scalablytyped" %%% "antv__util" % "3.3.0-3dd382",
-  "org.scalablytyped" %%% "bizcharts" % "4.1.20-db25b0",
+  "org.scalablytyped" %%% "antv__util" % "3.3.1-3945ec",
+  "org.scalablytyped" %%% "bizcharts" % "4.1.20-b7c2f3",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "d3-timer" % "3.0-dt-20211202Z-14b69b",
   "org.scalablytyped" %%% "dayjs" % "1.11.6-153a22",

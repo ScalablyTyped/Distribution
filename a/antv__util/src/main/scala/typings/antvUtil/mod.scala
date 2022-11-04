@@ -39,6 +39,19 @@ object mod {
   inline def angleTo(v1: js.Tuple2[Double, Double], v2: js.Tuple2[Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleTo")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def angleTo(v1: js.Tuple2[Double, Double], v2: js.Tuple2[Double, Double], direct: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleTo")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], direct.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  inline def arcToCubic(
+    X1: Double,
+    Y1: Double,
+    RX: Double,
+    RY: Double,
+    angle: Double,
+    LAF: Double,
+    SF: Double,
+    X2: Double,
+    Y2: Double,
+    recursive: js.Array[Double]
+  ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("arcToCubic")(X1.asInstanceOf[js.Any], Y1.asInstanceOf[js.Any], RX.asInstanceOf[js.Any], RY.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], LAF.asInstanceOf[js.Any], SF.asInstanceOf[js.Any], X2.asInstanceOf[js.Any], Y2.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  
   inline def assign[Base, A, B, C](dist: Base & A & B & C): Base & A & B & C = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any]).asInstanceOf[Base & A & B & C]
   inline def assign[Base, A, B, C](dist: Base & A & B & C, src1: A): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
   inline def assign[Base, A, B, C](dist: Base & A & B & C, src1: A, src2: B): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]

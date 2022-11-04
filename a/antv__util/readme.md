@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__util
 
-Typings are for version 3.3.0
+Typings are for version 3.3.1
 
 ## Library description:
 > AntV 底层依赖的工具库，不建议在自己业务中使用。

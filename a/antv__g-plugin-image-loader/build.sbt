@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "antv__g-plugin-image-loader"
-version := "1.1.18-1e7adc"
+version := "1.1.18-38495c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-408962",
-  "org.scalablytyped" %%% "antv__util" % "3.3.0-3dd382",
+  "org.scalablytyped" %%% "antv__g-lite" % "1.0.6-4af5fe",
+  "org.scalablytyped" %%% "antv__util" % "3.3.1-3945ec",
   "org.scalablytyped" %%% "eventemitter3" % "4.0.7-30a4f9",
   "org.scalablytyped" %%% "gl-matrix" % "3.4.3-9a54c5",
   "org.scalablytyped" %%% "inversify" % "6.0.1-60a540",
