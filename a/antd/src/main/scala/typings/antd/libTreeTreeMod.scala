@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.antd.anon.Checked
 import typings.antd.anon.DirectoryTree
 import typings.antd.anon.ShowLeafIcon
-import typings.antd.anon.`4`
+import typings.antd.anon.`6`
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.check
 import typings.antd.antdStrings.select_
@@ -467,7 +467,7 @@ object libTreeTreeMod extends Shortcut {
     }
   }
   
-  type CompoundedComponent = (js.Function1[/* props */ PropsWithChildren[TreeProps[DataNode]] & `4`, ReactElement]) & DirectoryTree
+  type CompoundedComponent = (js.Function1[/* props */ PropsWithChildren[TreeProps[DataNode]] & `6`, ReactElement]) & DirectoryTree
   
   trait DraggableConfig extends StObject {
     

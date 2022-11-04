@@ -1,8 +1,8 @@
 package typings.antd
 
 import typings.antd.anon.DropdownClassName
-import typings.antd.anon.OmitPickerDatePropsMoment
-import typings.antd.anon.OmitPickerTimePropsMoment
+import typings.antd.anon.OmitlocalePickerLocaleund
+import typings.antd.anon.PopupClassName
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
@@ -35,6 +35,7 @@ import typings.antd.antdStrings.none
 import typings.antd.antdStrings.off
 import typings.antd.antdStrings.other
 import typings.antd.antdStrings.page
+import typings.antd.antdStrings.picker
 import typings.antd.antdStrings.polite
 import typings.antd.antdStrings.popup
 import typings.antd.antdStrings.removals
@@ -85,6 +86,7 @@ import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import typings.std.Omit
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -95,11 +97,11 @@ object libDatePickerMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("antd/lib/date-picker", JSImport.Default)
   @js.native
-  open class default protected () extends Component[PickerProps[Moment] & DropdownClassName, Any, Any] {
-    def this(props: PickerProps[Moment] & DropdownClassName) = this()
-    def this(props: PickerProps[Moment] & DropdownClassName, context: Any) = this()
+  open class default protected () extends Component[PickerProps[Moment] & PopupClassName, Any, Any] {
+    def this(props: PickerProps[Moment] & PopupClassName) = this()
+    def this(props: PickerProps[Moment] & PopupClassName, context: Any) = this()
   }
-  /* Inlined antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<antd.antd/lib/date-picker/generatePicker.PickerProps<moment.moment.Moment> & {  status :'' | 'warning' | 'error' | undefined,   dropdownClassName :string | undefined,   popupClassName :string | undefined}, unknown> & {  WeekPicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<antd.antd/lib/date-picker/generatePicker.PickerDateProps<moment.moment.Moment>, 'picker'>, unknown>,   MonthPicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<antd.antd/lib/date-picker/generatePicker.PickerDateProps<moment.moment.Moment>, 'picker'>, unknown>,   YearPicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<antd.antd/lib/date-picker/generatePicker.PickerDateProps<moment.moment.Moment>, 'picker'>, unknown>,   RangePicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<antd.antd/lib/date-picker/generatePicker.RangePickerProps<moment.moment.Moment>, unknown>,   TimePicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<antd.antd/lib/date-picker/generatePicker.PickerTimeProps<moment.moment.Moment>, 'picker'>, unknown>,   QuarterPicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<antd.antd/lib/date-picker/generatePicker.PickerTimeProps<moment.moment.Moment>, 'picker'>, unknown>} */
+  /* Inlined antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<antd.antd/lib/date-picker/generatePicker.PickerProps<moment.moment.Moment> & {  status :'' | 'warning' | 'error' | undefined,   dropdownClassName :string | undefined,   popupClassName :string | undefined}, unknown> & {  WeekPicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<antd.antd/lib/date-picker/generatePicker.PickerProps<moment.moment.Moment> & {  status :'' | 'warning' | 'error' | undefined,   dropdownClassName :string | undefined,   popupClassName :string | undefined}, 'picker'>, unknown>,   MonthPicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<antd.antd/lib/date-picker/generatePicker.PickerProps<moment.moment.Moment> & {  status :'' | 'warning' | 'error' | undefined,   dropdownClassName :string | undefined,   popupClassName :string | undefined}, 'picker'>, unknown>,   YearPicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<antd.antd/lib/date-picker/generatePicker.PickerProps<moment.moment.Moment> & {  status :'' | 'warning' | 'error' | undefined,   dropdownClassName :string | undefined,   popupClassName :string | undefined}, 'picker'>, unknown>,   RangePicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<antd.antd/lib/date-picker/generatePicker.RangePickerProps<moment.moment.Moment> & {  dropdownClassName :string | undefined,   popupClassName :string | undefined}, unknown>,   TimePicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<{  locale :antd.antd/lib/date-picker/generatePicker.PickerLocale | undefined,   size :antd.antd/lib/button.ButtonSize | undefined,   placement :'bottomLeft' | 'bottomRight' | 'topLeft' | 'topRight' | undefined,   bordered :boolean | undefined,   status :'' | 'warning' | 'error' | undefined,   dropdownClassName :string | undefined,   popupClassName :string | undefined} & std.Omit<rc-picker.rc-picker/es/Picker.PickerTimeProps<moment.moment.Moment>, 'locale' | 'generateConfig' | 'hideHeader' | 'components'>, 'picker'>, unknown>,   QuarterPicker :antd.antd/lib/date-picker/generatePicker/interface.PickerComponentClass<std.Omit<{  locale :antd.antd/lib/date-picker/generatePicker.PickerLocale | undefined,   size :antd.antd/lib/button.ButtonSize | undefined,   placement :'bottomLeft' | 'bottomRight' | 'topLeft' | 'topRight' | undefined,   bordered :boolean | undefined,   status :'' | 'warning' | 'error' | undefined,   dropdownClassName :string | undefined,   popupClassName :string | undefined} & std.Omit<rc-picker.rc-picker/es/Picker.PickerTimeProps<moment.moment.Moment>, 'locale' | 'generateConfig' | 'hideHeader' | 'components'>, 'picker'>, unknown>} */
   object default {
     
     @JSImport("antd/lib/date-picker", JSImport.Default)
@@ -109,75 +111,90 @@ object libDatePickerMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/date-picker", "default.MonthPicker")
     @js.native
-    open class MonthPicker protected () extends Component[OmitPickerDatePropsMoment, Any, Any] {
-      def this(props: OmitPickerDatePropsMoment) = this()
-      def this(props: OmitPickerDatePropsMoment, context: Any) = this()
+    open class MonthPicker protected () extends Component[Omit[PickerProps[Moment] & PopupClassName, picker], Any, Any] {
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker]) = this()
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker], context: Any) = this()
     }
     @JSImport("antd/lib/date-picker", "default.MonthPicker")
     @js.native
-    def MonthPicker: PickerComponentClass[OmitPickerDatePropsMoment, Any] = js.native
-    inline def MonthPicker_=(x: PickerComponentClass[OmitPickerDatePropsMoment, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthPicker")(x.asInstanceOf[js.Any])
+    def MonthPicker: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any] = js.native
+    inline def MonthPicker_=(x: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthPicker")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/date-picker", "default.QuarterPicker")
     @js.native
-    open class QuarterPicker protected () extends Component[OmitPickerTimePropsMoment, Any, Any] {
-      def this(props: OmitPickerTimePropsMoment) = this()
-      def this(props: OmitPickerTimePropsMoment, context: Any) = this()
+    open class QuarterPicker protected () extends Component[OmitlocalePickerLocaleund, Any, Any] {
+      def this(props: OmitlocalePickerLocaleund) = this()
+      def this(props: OmitlocalePickerLocaleund, context: Any) = this()
     }
     @JSImport("antd/lib/date-picker", "default.QuarterPicker")
     @js.native
-    def QuarterPicker: PickerComponentClass[OmitPickerTimePropsMoment, Any] = js.native
-    inline def QuarterPicker_=(x: PickerComponentClass[OmitPickerTimePropsMoment, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QuarterPicker")(x.asInstanceOf[js.Any])
+    def QuarterPicker: PickerComponentClass[OmitlocalePickerLocaleund, Any] = js.native
+    inline def QuarterPicker_=(x: PickerComponentClass[OmitlocalePickerLocaleund, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QuarterPicker")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/date-picker", "default.RangePicker")
     @js.native
     open class RangePicker protected ()
-      extends Component[typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment], Any, Any] {
-      def this(props: typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment]) = this()
-      def this(props: typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment], context: Any) = this()
+      extends Component[
+              typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment] & DropdownClassName, 
+              Any, 
+              Any
+            ] {
+      def this(props: typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment] & DropdownClassName) = this()
+      def this(
+        props: typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment] & DropdownClassName,
+        context: Any
+      ) = this()
     }
     @JSImport("antd/lib/date-picker", "default.RangePicker")
     @js.native
-    def RangePicker: PickerComponentClass[typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment], Any] = js.native
-    inline def RangePicker_=(x: PickerComponentClass[typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RangePicker")(x.asInstanceOf[js.Any])
+    def RangePicker: PickerComponentClass[
+        typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment] & DropdownClassName, 
+        Any
+      ] = js.native
+    inline def RangePicker_=(
+      x: PickerComponentClass[
+          typings.antd.libDatePickerGeneratePickerMod.RangePickerProps[Moment] & DropdownClassName, 
+          Any
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RangePicker")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/date-picker", "default.TimePicker")
     @js.native
-    open class TimePicker protected () extends Component[OmitPickerTimePropsMoment, Any, Any] {
-      def this(props: OmitPickerTimePropsMoment) = this()
-      def this(props: OmitPickerTimePropsMoment, context: Any) = this()
+    open class TimePicker protected () extends Component[OmitlocalePickerLocaleund, Any, Any] {
+      def this(props: OmitlocalePickerLocaleund) = this()
+      def this(props: OmitlocalePickerLocaleund, context: Any) = this()
     }
     @JSImport("antd/lib/date-picker", "default.TimePicker")
     @js.native
-    def TimePicker: PickerComponentClass[OmitPickerTimePropsMoment, Any] = js.native
-    inline def TimePicker_=(x: PickerComponentClass[OmitPickerTimePropsMoment, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimePicker")(x.asInstanceOf[js.Any])
+    def TimePicker: PickerComponentClass[OmitlocalePickerLocaleund, Any] = js.native
+    inline def TimePicker_=(x: PickerComponentClass[OmitlocalePickerLocaleund, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimePicker")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/date-picker", "default.WeekPicker")
     @js.native
-    open class WeekPicker protected () extends Component[OmitPickerDatePropsMoment, Any, Any] {
-      def this(props: OmitPickerDatePropsMoment) = this()
-      def this(props: OmitPickerDatePropsMoment, context: Any) = this()
+    open class WeekPicker protected () extends Component[Omit[PickerProps[Moment] & PopupClassName, picker], Any, Any] {
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker]) = this()
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker], context: Any) = this()
     }
     @JSImport("antd/lib/date-picker", "default.WeekPicker")
     @js.native
-    def WeekPicker: PickerComponentClass[OmitPickerDatePropsMoment, Any] = js.native
-    inline def WeekPicker_=(x: PickerComponentClass[OmitPickerDatePropsMoment, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeekPicker")(x.asInstanceOf[js.Any])
+    def WeekPicker: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any] = js.native
+    inline def WeekPicker_=(x: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeekPicker")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/date-picker", "default.YearPicker")
     @js.native
-    open class YearPicker protected () extends Component[OmitPickerDatePropsMoment, Any, Any] {
-      def this(props: OmitPickerDatePropsMoment) = this()
-      def this(props: OmitPickerDatePropsMoment, context: Any) = this()
+    open class YearPicker protected () extends Component[Omit[PickerProps[Moment] & PopupClassName, picker], Any, Any] {
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker]) = this()
+      def this(props: Omit[PickerProps[Moment] & PopupClassName, picker], context: Any) = this()
     }
     @JSImport("antd/lib/date-picker", "default.YearPicker")
     @js.native
-    def YearPicker: PickerComponentClass[OmitPickerDatePropsMoment, Any] = js.native
-    inline def YearPicker_=(x: PickerComponentClass[OmitPickerDatePropsMoment, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YearPicker")(x.asInstanceOf[js.Any])
+    def YearPicker: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any] = js.native
+    inline def YearPicker_=(x: PickerComponentClass[Omit[PickerProps[Moment] & PopupClassName, picker], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YearPicker")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/date-picker", "default.childContextTypes")
     @js.native
@@ -196,8 +213,8 @@ object libDatePickerMod {
     
     @JSImport("antd/lib/date-picker", "default.defaultProps")
     @js.native
-    def defaultProps: js.UndefOr[Partial[PickerProps[Moment] & DropdownClassName]] = js.native
-    inline def defaultProps_=(x: js.UndefOr[Partial[PickerProps[Moment] & DropdownClassName]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: js.UndefOr[Partial[PickerProps[Moment] & PopupClassName]] = js.native
+    inline def defaultProps_=(x: js.UndefOr[Partial[PickerProps[Moment] & PopupClassName]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/date-picker", "default.displayName")
     @js.native
@@ -206,18 +223,18 @@ object libDatePickerMod {
     
     @JSImport("antd/lib/date-picker", "default.getDerivedStateFromError")
     @js.native
-    def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[PickerProps[Moment] & DropdownClassName, Any]] = js.native
-    inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[PickerProps[Moment] & DropdownClassName, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+    def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[PickerProps[Moment] & PopupClassName, Any]] = js.native
+    inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[PickerProps[Moment] & PopupClassName, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/date-picker", "default.getDerivedStateFromProps")
     @js.native
-    def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[PickerProps[Moment] & DropdownClassName, Any]] = js.native
-    inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[PickerProps[Moment] & DropdownClassName, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+    def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[PickerProps[Moment] & PopupClassName, Any]] = js.native
+    inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[PickerProps[Moment] & PopupClassName, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/date-picker", "default.propTypes")
     @js.native
-    def propTypes: js.UndefOr[WeakValidationMap[PickerProps[Moment] & DropdownClassName]] = js.native
-    inline def propTypes_=(x: js.UndefOr[WeakValidationMap[PickerProps[Moment] & DropdownClassName]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    def propTypes: js.UndefOr[WeakValidationMap[PickerProps[Moment] & PopupClassName]] = js.native
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMap[PickerProps[Moment] & PopupClassName]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   type DatePickerProps = PickerProps[Moment]

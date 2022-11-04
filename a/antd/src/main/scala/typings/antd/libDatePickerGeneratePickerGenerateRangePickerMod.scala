@@ -1,5 +1,6 @@
 package typings.antd
 
+import typings.antd.anon.DropdownClassName
 import typings.antd.libDatePickerGeneratePickerInterfaceMod.PickerComponentClass
 import typings.antd.libDatePickerGeneratePickerMod.RangePickerProps
 import typings.rcPicker.esGenerateMod.GenerateConfig
@@ -13,5 +14,5 @@ object libDatePickerGeneratePickerGenerateRangePickerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[DateType](generateConfig: GenerateConfig[DateType]): PickerComponentClass[RangePickerProps[DateType], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[PickerComponentClass[RangePickerProps[DateType], Any]]
+  inline def default[DateType](generateConfig: GenerateConfig[DateType]): PickerComponentClass[RangePickerProps[DateType] & DropdownClassName, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[PickerComponentClass[RangePickerProps[DateType] & DropdownClassName, Any]]
 }

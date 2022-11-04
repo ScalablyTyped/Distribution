@@ -239,7 +239,7 @@ object libMessageMod {
     def apply(): Unit = js.native
   }
   
-  /* keyof antd.anon.Loading */ /* Rewritten from type alias, can be one of: 
+  /* keyof antd.anon.Info */ /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.info
     - typings.antd.antdStrings.success
     - typings.antd.antdStrings.error

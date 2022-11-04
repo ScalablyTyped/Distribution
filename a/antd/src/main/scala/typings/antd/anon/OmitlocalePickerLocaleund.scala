@@ -1,5 +1,6 @@
 package typings.antd.anon
 
+import typings.antd.antdStrings._empty
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
@@ -12,10 +13,13 @@ import typings.antd.antdStrings.all
 import typings.antd.antdStrings.ascending
 import typings.antd.antdStrings.assertive
 import typings.antd.antdStrings.both
+import typings.antd.antdStrings.bottomLeft
+import typings.antd.antdStrings.bottomRight
 import typings.antd.antdStrings.copy
 import typings.antd.antdStrings.date
 import typings.antd.antdStrings.descending
 import typings.antd.antdStrings.dialog
+import typings.antd.antdStrings.error
 import typings.antd.antdStrings.execute
 import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
@@ -40,12 +44,13 @@ import typings.antd.antdStrings.spelling
 import typings.antd.antdStrings.step
 import typings.antd.antdStrings.text_
 import typings.antd.antdStrings.time
+import typings.antd.antdStrings.topLeft
+import typings.antd.antdStrings.topRight
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
+import typings.antd.antdStrings.warning
 import typings.antd.libConfigProviderSizeContextMod.SizeType
-import typings.antd.libDatePickerGeneratePickerMod.DataPickerPlacement
 import typings.antd.libDatePickerGeneratePickerMod.PickerLocale
-import typings.antd.libUtilStatusUtilsMod.InputStatus
 import typings.moment.mod.Moment
 import typings.rcPicker.esInterfaceMod.CustomFormat
 import typings.rcPicker.esInterfaceMod.DisabledTimes
@@ -75,8 +80,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<antd.antd/lib/date-picker/generatePicker.PickerTimeProps<moment.moment.Moment>, 'picker'> */
-trait OmitPickerTimePropsMoment extends StObject {
+/* Inlined std.Omit<{  locale :antd.antd/lib/date-picker/generatePicker.PickerLocale | undefined,   size :antd.antd/lib/button.ButtonSize | undefined,   placement :'bottomLeft' | 'bottomRight' | 'topLeft' | 'topRight' | undefined,   bordered :boolean | undefined,   status :'' | 'warning' | 'error' | undefined,   dropdownClassName :string | undefined,   popupClassName :string | undefined} & std.Omit<rc-picker.rc-picker/es/Picker.PickerTimeProps<moment.moment.Moment>, 'locale' | 'generateConfig' | 'hideHeader' | 'components'>, 'picker'> */
+trait OmitlocalePickerLocaleund extends StObject {
   
   var allowClear: js.UndefOr[Boolean] = js.undefined
   
@@ -284,7 +289,9 @@ trait OmitPickerTimePropsMoment extends StObject {
   
   var placeholder: js.UndefOr[String] = js.undefined
   
-  var placement: js.UndefOr[DataPickerPlacement] = js.undefined
+  var placement: js.UndefOr[bottomLeft | bottomRight | topLeft | topRight] = js.undefined
+  
+  var popupClassName: js.UndefOr[String] = js.undefined
   
   var popupStyle: js.UndefOr[CSSProperties] = js.undefined
   
@@ -310,7 +317,7 @@ trait OmitPickerTimePropsMoment extends StObject {
   
   var size: js.UndefOr[SizeType] = js.undefined
   
-  var status: js.UndefOr[InputStatus] = js.undefined
+  var status: js.UndefOr[_empty | warning | error] = js.undefined
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
@@ -328,14 +335,14 @@ trait OmitPickerTimePropsMoment extends StObject {
   
   var value: js.UndefOr[Moment | Null] = js.undefined
 }
-object OmitPickerTimePropsMoment {
+object OmitlocalePickerLocaleund {
   
-  inline def apply(): OmitPickerTimePropsMoment = {
+  inline def apply(): OmitlocalePickerLocaleund = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[OmitPickerTimePropsMoment]
+    __obj.asInstanceOf[OmitlocalePickerLocaleund]
   }
   
-  extension [Self <: OmitPickerTimePropsMoment](x: Self) {
+  extension [Self <: OmitlocalePickerLocaleund](x: Self) {
     
     inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
     
@@ -741,9 +748,13 @@ object OmitPickerTimePropsMoment {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setPlacement(value: DataPickerPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: bottomLeft | bottomRight | topLeft | topRight): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
+    inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
+    
+    inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
     
     inline def setPopupStyle(value: CSSProperties): Self = StObject.set(x, "popupStyle", value.asInstanceOf[js.Any])
     
@@ -795,7 +806,7 @@ object OmitPickerTimePropsMoment {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: _empty | warning | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     

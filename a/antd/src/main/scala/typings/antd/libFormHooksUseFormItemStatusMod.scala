@@ -1,7 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.Status
+import typings.antd.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object libFormHooksUseFormItemStatusMod extends Shortcut {
   @js.native
   val default: UseFormItemStatus = js.native
   
-  type UseFormItemStatus = js.Function0[Status]
+  type UseFormItemStatus = js.Function0[`2`]
   
   type _To = UseFormItemStatus
   

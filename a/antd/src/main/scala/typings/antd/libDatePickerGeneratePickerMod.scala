@@ -1,11 +1,11 @@
 package typings.antd
 
 import typings.antd.anon.DefaultValue
-import typings.antd.anon.DropdownClassName
 import typings.antd.anon.Format
 import typings.antd.anon.MonthPicker
-import typings.antd.anon.Placement
+import typings.antd.anon.PopupClassName
 import typings.antd.anon.ShowTime
+import typings.antd.anon.Status
 import typings.antd.antdInts.`0`
 import typings.antd.antdInts.`1`
 import typings.antd.antdStrings.`additions removals`
@@ -109,7 +109,7 @@ object libDatePickerGeneratePickerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[DateType](generateConfig: GenerateConfig[DateType]): (PickerComponentClass[PickerProps[DateType] & DropdownClassName, Any]) & MonthPicker[DateType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[(PickerComponentClass[PickerProps[DateType] & DropdownClassName, Any]) & MonthPicker[DateType]]
+  inline def default[DateType](generateConfig: GenerateConfig[DateType]): (PickerComponentClass[PickerProps[DateType] & PopupClassName, Any]) & MonthPicker[DateType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[(PickerComponentClass[PickerProps[DateType] & PopupClassName, Any]) & MonthPicker[DateType]]
   
   object Components {
     
@@ -246,7 +246,7 @@ object libDatePickerGeneratePickerMod {
   */
   trait DataPickerPlacement extends StObject
   
-  type InjectDefaultProps[Props] = (Omit[Props, locale | generateConfig | hideHeader | components]) & Placement
+  type InjectDefaultProps[Props] = (Omit[Props, locale | generateConfig | hideHeader | components]) & Status
   
   /* Inlined antd.antd/lib/date-picker/generatePicker.InjectDefaultProps<rc-picker.rc-picker/es/Picker.PickerBaseProps<DateType>> */
   trait PickerBaseProps[DateType]

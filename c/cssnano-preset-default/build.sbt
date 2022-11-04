@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cssnano-preset-default"
-version := "5.2.13-438966"
+version := "5.2.13-893f4a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

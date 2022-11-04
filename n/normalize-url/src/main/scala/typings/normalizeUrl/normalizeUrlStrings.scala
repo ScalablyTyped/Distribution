@@ -1,14 +1,10 @@
-package typings.cssnanoPresetDefault
+package typings.normalizeUrl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object cssnanoPresetDefaultStrings {
-  
-  @js.native
-  sealed trait double extends StObject
-  inline def double: double = "double".asInstanceOf[double]
+object normalizeUrlStrings {
   
   @js.native
   sealed trait http extends StObject
@@ -17,8 +13,4 @@ object cssnanoPresetDefaultStrings {
   @js.native
   sealed trait https extends StObject
   inline def https: https = "https".asInstanceOf[https]
-  
-  @js.native
-  sealed trait single extends StObject
-  inline def single: single = "single".asInstanceOf[single]
 }

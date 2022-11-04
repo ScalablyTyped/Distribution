@@ -4,6 +4,8 @@ import typings.browserslist.mod.Stats
 import typings.cssnanoPresetDefault.cssnanoPresetDefaultBooleans.`false`
 import typings.cssnanoPresetDefault.cssnanoPresetDefaultBooleans.`true`
 import typings.cssnanoPresetDefault.cssnanoPresetDefaultStrings.double
+import typings.cssnanoPresetDefault.cssnanoPresetDefaultStrings.http
+import typings.cssnanoPresetDefault.cssnanoPresetDefaultStrings.https
 import typings.cssnanoPresetDefault.cssnanoPresetDefaultStrings.single
 import typings.postcss.mod.PluginCreator
 import typings.std.Record
@@ -216,15 +218,14 @@ object anon {
   trait OptionsexcludetrueundefinDefaultProtocol extends StObject {
     
     /**
-    	@default 'http:'
-    	Values: `'https:' | 'http:'`
+    	@default 'http'
     	*/
-    val defaultProtocol: js.UndefOr[String] = js.undefined
+    val defaultProtocol: js.UndefOr[https | http] = js.undefined
     
     var exclude: js.UndefOr[`true`] = js.undefined
     
     /**
-    	Normalizes `https:` URLs to `http:`.
+    	Normalizes HTTPS URLs to HTTP.
     	@default false
     	@example
     	```
@@ -237,8 +238,8 @@ object anon {
     val forceHttp: js.UndefOr[Boolean] = js.undefined
     
     /**
-    	Normalizes `http:` URLs to `https:`.
-    	This option can't be used with the `forceHttp` option at the same time.
+    	Normalizes HTTP URLs to HTTPS.
+    	This option cannot be used with the `forceHttp` option at the same time.
     	@default false
     	@example
     	```
@@ -264,7 +265,6 @@ object anon {
     	*/
     val keepQueryParameters: js.UndefOr[js.Array[js.RegExp | String]] = js.undefined
     
-    // TODO: Make this `'https:' | 'http:'` in the next major version.
     /**
     	Prepends `defaultProtocol` to the URL if it's protocol-relative.
     	@default true
@@ -455,7 +455,7 @@ object anon {
     
     extension [Self <: OptionsexcludetrueundefinDefaultProtocol](x: Self) {
       
-      inline def setDefaultProtocol(value: String): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
+      inline def setDefaultProtocol(value: https | http): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
       
       inline def setDefaultProtocolUndefined: Self = StObject.set(x, "defaultProtocol", js.undefined)
       

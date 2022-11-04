@@ -11,10 +11,10 @@ object mod {
   val ^ : js.Any = js.native
   
   /**
-  	Get a [standard locale identifier](https://en.wikipedia.org/wiki/Locale_(computer_software)) from a [Windows locale identifier (LCID)](http://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms).
+  	Get a [standard locale identifier](https://en.wikipedia.org/wiki/Locale_(computer_software)) from a [Windows locale identifier (LCID)](https://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms).
   	@example
   	```
-  	import lcid = require('lcid');
+  	import lcid from 'lcid';
   	lcid.from(1044);
   	//=> 'nb_NO'
   	```
@@ -25,7 +25,7 @@ object mod {
   	Get a [Windows locale identifier (LCID)](https://en.wikipedia.org/wiki/Locale#Specifics_for_Microsoft_platforms) from a [standard locale identifier](https://en.wikipedia.org/wiki/Locale_(computer_software)).
   	@example
   	```
-  	import lcid = require('lcid');
+  	import lcid from 'lcid';
   	lcid.to('nb_NO');
   	//=> 1044
   	```

@@ -1,12 +1,13 @@
 package typings.antd.anon
 
+import typings.antd.libFormFormItemMod.ValidateStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `2` extends StObject {
   
-  var displayName: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[ValidateStatus] = js.undefined
 }
 object `2` {
   
@@ -17,8 +18,8 @@ object `2` {
   
   extension [Self <: `2`](x: Self) {
     
-    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ValidateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-community__cli-platform-ios
 
-Typings are for version 9.2.1
+Typings are for version 9.3.0
 
 
 

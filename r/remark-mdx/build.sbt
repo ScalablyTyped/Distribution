@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "remark-mdx"
-version := "2.1.3-d5a35f"
+version := "2.1.5-d215e5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

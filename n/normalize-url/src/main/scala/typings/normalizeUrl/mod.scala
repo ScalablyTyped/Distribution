@@ -1,5 +1,7 @@
 package typings.normalizeUrl
 
+import typings.normalizeUrl.normalizeUrlStrings.http
+import typings.normalizeUrl.normalizeUrlStrings.https
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +18,12 @@ object mod {
   trait Options extends StObject {
     
     /**
-    	@default 'http:'
-    	Values: `'https:' | 'http:'`
+    	@default 'http'
     	*/
-    val defaultProtocol: js.UndefOr[String] = js.undefined
+    val defaultProtocol: js.UndefOr[https | http] = js.undefined
     
     /**
-    	Normalizes `https:` URLs to `http:`.
+    	Normalizes HTTPS URLs to HTTP.
     	@default false
     	@example
     	```
@@ -35,8 +36,8 @@ object mod {
     val forceHttp: js.UndefOr[Boolean] = js.undefined
     
     /**
-    	Normalizes `http:` URLs to `https:`.
-    	This option can't be used with the `forceHttp` option at the same time.
+    	Normalizes HTTP URLs to HTTPS.
+    	This option cannot be used with the `forceHttp` option at the same time.
     	@default false
     	@example
     	```
@@ -62,7 +63,6 @@ object mod {
     	*/
     val keepQueryParameters: js.UndefOr[js.Array[js.RegExp | String]] = js.undefined
     
-    // TODO: Make this `'https:' | 'http:'` in the next major version.
     /**
     	Prepends `defaultProtocol` to the URL if it's protocol-relative.
     	@default true
@@ -253,7 +253,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setDefaultProtocol(value: String): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
+      inline def setDefaultProtocol(value: https | http): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
       
       inline def setDefaultProtocolUndefined: Self = StObject.set(x, "defaultProtocol", js.undefined)
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for remark-mdx
 
-Typings are for version 2.1.3
+Typings are for version 2.1.5
 
 ## Library description:
 remark plugin to support MDX syntax
