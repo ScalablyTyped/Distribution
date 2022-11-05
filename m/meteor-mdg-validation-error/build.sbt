@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "meteor-mdg-validation-error"
-version := "0.5-dt-20220624Z-d74117"
+version := "0.5-dt-20220624Z-7df767"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,11 +10,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-d67c0f",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-9d6f35",
-  "org.scalablytyped" %%% "meteor" % "2.8-dt-20221103Z-3f9406",
+  "org.scalablytyped" %%% "meteor" % "2.8-dt-20221103Z-24a2b6",
   "org.scalablytyped" %%% "mongodb" % "4.11.0-c9f522",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-cfd9ff",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
