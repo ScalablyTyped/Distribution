@@ -13,5 +13,7 @@ object distSrcGetCssMod {
   val ^ : js.Any = js.native
   
   inline def default(propertyInfo: PropertyInfo, value: String): EnhancedProp | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(propertyInfo.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[EnhancedProp | Null]
+  inline def default(propertyInfo: PropertyInfo, value: String, selector: String): EnhancedProp | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(propertyInfo.asInstanceOf[js.Any], value.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[EnhancedProp | Null]
   inline def default(propertyInfo: PropertyInfo, value: Double): EnhancedProp | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(propertyInfo.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[EnhancedProp | Null]
+  inline def default(propertyInfo: PropertyInfo, value: Double, selector: String): EnhancedProp | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(propertyInfo.asInstanceOf[js.Any], value.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[EnhancedProp | Null]
 }

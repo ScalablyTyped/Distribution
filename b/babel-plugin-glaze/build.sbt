@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "babel-plugin-glaze"
-version := "0.5-dt-20211202Z-dbf6c2"
+version := "0.5-dt-20211202Z-a88f8e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-6dfedf",
-  "org.scalablytyped" %%% "glaze" % "0.5.1-3b9d05",
+  "org.scalablytyped" %%% "glaze" % "0.5.1-e3703a",
   "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-bb1d3f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "treat" % "2.0.4-a83fcc",

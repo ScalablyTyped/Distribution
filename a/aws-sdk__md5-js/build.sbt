@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__md5-js"
-version := "3.201.0-d97940"
+version := "3.204.0-abe1cd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

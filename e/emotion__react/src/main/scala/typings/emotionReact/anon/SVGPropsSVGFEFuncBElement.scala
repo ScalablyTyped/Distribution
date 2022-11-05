@@ -766,6 +766,8 @@ trait SVGPropsSVGFEFuncBElement extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGFEFuncBElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGFEFuncBElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGFEFuncBElement]] = js.undefined
   
@@ -2060,6 +2062,10 @@ object SVGPropsSVGFEFuncBElement {
     inline def setOnReset(value: FormEvent[SVGFEFuncBElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGFEFuncBElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGFEFuncBElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

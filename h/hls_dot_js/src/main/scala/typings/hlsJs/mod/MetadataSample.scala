@@ -10,6 +10,8 @@ trait MetadataSample extends StObject {
   
   var dts: Double
   
+  var duration: Double
+  
   var len: js.UndefOr[Double] = js.undefined
   
   var pts: Double
@@ -18,8 +20,8 @@ trait MetadataSample extends StObject {
 }
 object MetadataSample {
   
-  inline def apply(data: js.typedarray.Uint8Array, dts: Double, pts: Double, `type`: MetadataSchema): MetadataSample = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dts = dts.asInstanceOf[js.Any], pts = pts.asInstanceOf[js.Any])
+  inline def apply(data: js.typedarray.Uint8Array, dts: Double, duration: Double, pts: Double, `type`: MetadataSchema): MetadataSample = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dts = dts.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], pts = pts.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataSample]
   }
@@ -29,6 +31,8 @@ object MetadataSample {
     inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDts(value: Double): Self = StObject.set(x, "dts", value.asInstanceOf[js.Any])
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     

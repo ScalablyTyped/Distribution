@@ -93,7 +93,7 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
   - scala.AnyRef because Inheritance from two classes. Inlined 
-  - typings.react.mod.DOMAttributes because var conflicts: children, onChange, onClick, onMouseDown, onMouseUp. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, onCanPlayThrough, onLoad, onLoadedMetadata, onSeeked, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
+  - typings.react.mod.DOMAttributes because var conflicts: children, onChange, onClick, onMouseDown, onMouseUp. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, onResize, onCanPlayThrough, onLoad, onLoadedMetadata, onSeeked, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
   - js.Any because Inheritance from two classes. Inlined 
   - typings.react.mod.HTMLAttributes because var conflicts: children, className, defaultChecked, id, onChange, onClick, onMouseDown, onMouseUp, tabIndex. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, slot, autoCapitalize, placeholder, radioGroup, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, unselectable, role, datatype, itemProp, title, autoCorrect, results
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
@@ -403,6 +403,8 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
     // UI Events
     var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
@@ -984,6 +986,10 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
       inline def setOnReset(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-sso"
-version := "3.202.0-390491"
+version := "3.204.0-3f0894"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.201.0-5cf045",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.204.0-207ee5",
   "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.201.0-ddb507",
   "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.201.0-ae6d59",
   "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.201.0-152889",

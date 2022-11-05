@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "react-md__tree"
-version := "5.1.4-9b2fa4"
+version := "5.1.4-7a0d34"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
-  "org.scalablytyped" %%% "react-md__icon" % "5.1.3-9d3507",
-  "org.scalablytyped" %%% "react-md__list" % "5.1.3-cb41e4",
-  "org.scalablytyped" %%% "react-md__portal" % "5.1.0-49e029",
-  "org.scalablytyped" %%% "react-md__states" % "5.1.3-01f67c",
-  "org.scalablytyped" %%% "react-md__transition" % "5.1.3-aca32f",
-  "org.scalablytyped" %%% "react-md__utils" % "5.1.3-1a5486",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
+  "org.scalablytyped" %%% "react-md__icon" % "5.1.3-6ede53",
+  "org.scalablytyped" %%% "react-md__list" % "5.1.3-7a8a4c",
+  "org.scalablytyped" %%% "react-md__portal" % "5.1.0-243518",
+  "org.scalablytyped" %%% "react-md__states" % "5.1.3-4d8627",
+  "org.scalablytyped" %%% "react-md__transition" % "5.1.3-0fd866",
+  "org.scalablytyped" %%% "react-md__utils" % "5.1.3-6d873f",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

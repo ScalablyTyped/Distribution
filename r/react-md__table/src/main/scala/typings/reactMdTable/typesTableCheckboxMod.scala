@@ -454,6 +454,8 @@ object typesTableCheckboxMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLTableCellElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLTableCellElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLTableCellElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLTableCellElement]] = js.undefined
@@ -1168,6 +1170,10 @@ object typesTableCheckboxMod {
       inline def setOnReset(value: FormEvent[HTMLTableCellElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLTableCellElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLTableCellElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

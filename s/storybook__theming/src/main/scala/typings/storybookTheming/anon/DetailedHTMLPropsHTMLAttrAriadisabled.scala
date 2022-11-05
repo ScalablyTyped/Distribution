@@ -545,6 +545,8 @@ trait DetailedHTMLPropsHTMLAttrAriadisabled extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLBRElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLBRElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLBRElement]] = js.undefined
   
@@ -1207,6 +1209,10 @@ object DetailedHTMLPropsHTMLAttrAriadisabled {
     inline def setOnReset(value: FormEvent[HTMLBRElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLBRElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLBRElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

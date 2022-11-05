@@ -606,6 +606,8 @@ trait typeradioswitchindetermin
   
   var onReset: js.UndefOr[FormEventHandler[HTMLLIElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLLIElement]] = js.undefined
   
@@ -1310,6 +1312,10 @@ object typeradioswitchindetermin {
     inline def setOnReset(value: FormEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLLIElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

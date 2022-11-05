@@ -165,6 +165,14 @@ object srcDurationMod {
     def reconfigure(opts: DurationOptions): Duration = js.native
     
     /**
+      * Rescale units to its largest representation.
+      *
+      * @example
+      * Duration.fromObject({ milliseconds: 90000 }).rescale().toObject() //=> { minutes: 1, seconds: 30 }
+      */
+    def rescale(): Duration = js.native
+    
+    /**
       * Get the seconds.
       */
     def seconds: Double = js.native
@@ -188,6 +196,12 @@ object srcDurationMod {
       * Duration.fromObject({ hours: 1, seconds: 30 }).shiftTo('minutes', 'milliseconds').toObject() //=> { minutes: 60, milliseconds: 30000 }
       */
     def shiftTo(units: DurationUnit*): Duration = js.native
+    
+    /**
+      * Shift this Duration to all available units.
+      * Same as shiftTo("years", "months", "weeks", "days", "hours", "minutes", "seconds", "milliseconds")
+      */
+    def shiftToAll(): Duration = js.native
     
     /**
       * Returns a string representation of this Duration formatted according to the specified format string. You may use these tokens:

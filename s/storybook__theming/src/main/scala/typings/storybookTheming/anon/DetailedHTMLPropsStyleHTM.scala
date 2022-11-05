@@ -547,6 +547,8 @@ trait DetailedHTMLPropsStyleHTM extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLStyleElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLStyleElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLStyleElement]] = js.undefined
   
@@ -1217,6 +1219,10 @@ object DetailedHTMLPropsStyleHTM {
     inline def setOnReset(value: FormEvent[HTMLStyleElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLStyleElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLStyleElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

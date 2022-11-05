@@ -6,6 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Node
+import typings.strange.anon.ValueOf
 import typings.strange.strangeInts.`-1`
 import typings.strange.strangeInts.`0`
 import typings.strange.strangeInts.`1`
@@ -84,7 +85,7 @@ object mod extends Shortcut {
   }
   type Bounds = (/* () */ String) | `[]`
   
-  type Endpoint = js.Date | Double | String
+  type Endpoint = js.Date | Double | String | ValueOf
   
   @js.native
   trait Range[T /* <: Endpoint */] extends StObject {

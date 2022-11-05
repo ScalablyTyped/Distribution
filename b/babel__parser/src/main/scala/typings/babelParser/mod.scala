@@ -1,19 +1,23 @@
 package typings.babelParser
 
+import typings.babelParser.anon.ClassFeatures
 import typings.babelParser.anon.Errors
 import typings.babelParser.anon.ParseResultFile
+import typings.babelParser.anon.Version
 import typings.babelParser.babelParserStrings.Numbersign
 import typings.babelParser.babelParserStrings.Percentsign
 import typings.babelParser.babelParserStrings.`@@`
 import typings.babelParser.babelParserStrings.`^^`
 import typings.babelParser.babelParserStrings.bar
 import typings.babelParser.babelParserStrings.decorators
+import typings.babelParser.babelParserStrings.estree
 import typings.babelParser.babelParserStrings.flow
 import typings.babelParser.babelParserStrings.fsharp
 import typings.babelParser.babelParserStrings.hack
 import typings.babelParser.babelParserStrings.hash
 import typings.babelParser.babelParserStrings.minimal
 import typings.babelParser.babelParserStrings.module
+import typings.babelParser.babelParserStrings.moduleAttributes
 import typings.babelParser.babelParserStrings.pipelineOperator
 import typings.babelParser.babelParserStrings.recordAndTuple
 import typings.babelParser.babelParserStrings.script
@@ -31,13 +35,27 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  // Type definitions for @babel/parser
+  // Project: https://github.com/babel/babel/tree/main/packages/babel-parser
+  // Definitions by: Troy Gerwien <https://github.com/yortus>
+  //                 Marvin Hagemeister <https://github.com/marvinhagemeister>
+  //                 Avi Vahl <https://github.com/AviVahl>
+  // TypeScript Version: 2.9
+  /**
+    * Parse the provided code as an entire ECMAScript program.
+    */
   inline def parse(input: String): ParseResultFile = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[ParseResultFile]
   inline def parse(input: String, options: ParserOptions): ParseResultFile = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResultFile]
   
+  /**
+    * Parse the provided code as a single expression.
+    */
   inline def parseExpression(input: String): ParseResult[Expression] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any]).asInstanceOf[ParseResult[Expression]]
   inline def parseExpression(input: String, options: ParserOptions): ParseResult[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResult[Expression]]
   
   trait DecoratorsPluginOptions extends StObject {
+    
+    var allowCallParenthesized: js.UndefOr[Boolean] = js.undefined
     
     var decoratorsBeforeExport: js.UndefOr[Boolean] = js.undefined
   }
@@ -49,6 +67,10 @@ object mod {
     }
     
     extension [Self <: DecoratorsPluginOptions](x: Self) {
+      
+      inline def setAllowCallParenthesized(value: Boolean): Self = StObject.set(x, "allowCallParenthesized", value.asInstanceOf[js.Any])
+      
+      inline def setAllowCallParenthesizedUndefined: Self = StObject.set(x, "allowCallParenthesized", js.undefined)
       
       inline def setDecoratorsBeforeExport(value: Boolean): Self = StObject.set(x, "decoratorsBeforeExport", value.asInstanceOf[js.Any])
       
@@ -285,56 +307,11 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.babelParser.babelParserStrings.asyncDoExpressions
-    - typings.babelParser.babelParserStrings.asyncGenerators
-    - typings.babelParser.babelParserStrings.bigInt
-    - typings.babelParser.babelParserStrings.classPrivateMethods
-    - typings.babelParser.babelParserStrings.classPrivateProperties
-    - typings.babelParser.babelParserStrings.classProperties
-    - typings.babelParser.babelParserStrings.classStaticBlock
-    - typings.babelParser.babelParserStrings.decimal
-    - typings.babelParser.babelParserStrings.decorators
-    - typings.babelParser.babelParserStrings.`decorators-legacy`
-    - typings.babelParser.babelParserStrings.decoratorAutoAccessors
-    - typings.babelParser.babelParserStrings.destructuringPrivate
-    - typings.babelParser.babelParserStrings.doExpressions
-    - typings.babelParser.babelParserStrings.dynamicImport
-    - typings.babelParser.babelParserStrings.estree
-    - typings.babelParser.babelParserStrings.exportDefaultFrom
-    - typings.babelParser.babelParserStrings.exportNamespaceFrom
-    - typings.babelParser.babelParserStrings.flow
-    - typings.babelParser.babelParserStrings.flowComments
-    - typings.babelParser.babelParserStrings.functionBind
-    - typings.babelParser.babelParserStrings.functionSent
-    - typings.babelParser.babelParserStrings.importMeta
-    - typings.babelParser.babelParserStrings.jsx
-    - typings.babelParser.babelParserStrings.logicalAssignment
-    - typings.babelParser.babelParserStrings.importAssertions
-    - typings.babelParser.babelParserStrings.moduleBlocks
-    - typings.babelParser.babelParserStrings.moduleStringNames
-    - typings.babelParser.babelParserStrings.nullishCoalescingOperator
-    - typings.babelParser.babelParserStrings.numericSeparator
-    - typings.babelParser.babelParserStrings.objectRestSpread
-    - typings.babelParser.babelParserStrings.optionalCatchBinding
-    - typings.babelParser.babelParserStrings.optionalChaining
-    - typings.babelParser.babelParserStrings.partialApplication
-    - typings.babelParser.babelParserStrings.pipelineOperator
-    - typings.babelParser.babelParserStrings.placeholders
-    - typings.babelParser.babelParserStrings.privateIn
-    - typings.babelParser.babelParserStrings.recordAndTuple
-    - typings.babelParser.babelParserStrings.regexpUnicodeSets
-    - typings.babelParser.babelParserStrings.throwExpressions
-    - typings.babelParser.babelParserStrings.topLevelAwait
-    - typings.babelParser.babelParserStrings.typescript
-    - typings.babelParser.babelParserStrings.v8intrinsic
-    - typings.babelParser.mod.ParserPluginWithOptions
-  */
-  type ParserPlugin = _ParserPlugin | ParserPluginWithOptions
+  type ParserPlugin = PluginConfig
   
   type ParserPluginWithOptions = js.Tuple2[
-    decorators | pipelineOperator | recordAndTuple | flow | typescript, 
-    DecoratorsPluginOptions | FlowPluginOptions | PipelineOperatorPluginOptions | RecordAndTuplePluginOptions | TypeScriptPluginOptions
+    decorators | estree | moduleAttributes | pipelineOperator | recordAndTuple | flow | typescript, 
+    ClassFeatures | DecoratorsPluginOptions | FlowPluginOptions | PipelineOperatorPluginOptions | RecordAndTuplePluginOptions | TypeScriptPluginOptions | Version
   ]
   
   trait PipelineOperatorPluginOptions extends StObject {
@@ -362,22 +339,66 @@ object mod {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.babelParser.babelParserStrings.asyncDoExpressions
+    - typings.babelParser.babelParserStrings.asyncGenerators
+    - typings.babelParser.babelParserStrings.bigInt
+    - typings.babelParser.babelParserStrings.classPrivateMethods
+    - typings.babelParser.babelParserStrings.classPrivateProperties
+    - typings.babelParser.babelParserStrings.classProperties
+    - typings.babelParser.babelParserStrings.classStaticBlock
+    - typings.babelParser.babelParserStrings.decimal
+    - typings.babelParser.babelParserStrings.`decorators-legacy`
+    - typings.babelParser.babelParserStrings.decoratorAutoAccessors
+    - typings.babelParser.babelParserStrings.destructuringPrivate
+    - typings.babelParser.babelParserStrings.doExpressions
+    - typings.babelParser.babelParserStrings.dynamicImport
+    - typings.babelParser.babelParserStrings.explicitResourceManagement
+    - typings.babelParser.babelParserStrings.exportDefaultFrom
+    - typings.babelParser.babelParserStrings.exportNamespaceFrom
+    - typings.babelParser.babelParserStrings.flow
+    - typings.babelParser.babelParserStrings.flowComments
+    - typings.babelParser.babelParserStrings.functionBind
+    - typings.babelParser.babelParserStrings.functionSent
+    - typings.babelParser.babelParserStrings.importMeta
+    - typings.babelParser.babelParserStrings.jsx
+    - typings.babelParser.babelParserStrings.logicalAssignment
+    - typings.babelParser.babelParserStrings.importAssertions
+    - typings.babelParser.babelParserStrings.importReflection
+    - typings.babelParser.babelParserStrings.moduleBlocks
+    - typings.babelParser.babelParserStrings.moduleStringNames
+    - typings.babelParser.babelParserStrings.nullishCoalescingOperator
+    - typings.babelParser.babelParserStrings.numericSeparator
+    - typings.babelParser.babelParserStrings.objectRestSpread
+    - typings.babelParser.babelParserStrings.optionalCatchBinding
+    - typings.babelParser.babelParserStrings.optionalChaining
+    - typings.babelParser.babelParserStrings.partialApplication
+    - typings.babelParser.babelParserStrings.placeholders
+    - typings.babelParser.babelParserStrings.privateIn
+    - typings.babelParser.babelParserStrings.regexpUnicodeSets
+    - typings.babelParser.babelParserStrings.throwExpressions
+    - typings.babelParser.babelParserStrings.topLevelAwait
+    - typings.babelParser.babelParserStrings.v8intrinsic
+    - / * import warning: importer.ImportType#apply Failed type conversion: @babel/parser.@babel/parser.ParserPluginWithOptions[0] * / js.Any
+  */
+  type Plugin = _Plugin | (/* import warning: importer.ImportType#apply Failed type conversion: @babel/parser.@babel/parser.ParserPluginWithOptions[0] */ js.Any)
+  
+  type PluginConfig = Plugin | ParserPluginWithOptions
+  
   trait RecordAndTuplePluginOptions extends StObject {
     
-    var syntaxType: js.UndefOr[bar | hash] = js.undefined
+    var syntaxType: bar | hash
   }
   object RecordAndTuplePluginOptions {
     
-    inline def apply(): RecordAndTuplePluginOptions = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(syntaxType: bar | hash): RecordAndTuplePluginOptions = {
+      val __obj = js.Dynamic.literal(syntaxType = syntaxType.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordAndTuplePluginOptions]
     }
     
     extension [Self <: RecordAndTuplePluginOptions](x: Self) {
       
       inline def setSyntaxType(value: bar | hash): Self = StObject.set(x, "syntaxType", value.asInstanceOf[js.Any])
-      
-      inline def setSyntaxTypeUndefined: Self = StObject.set(x, "syntaxType", js.undefined)
     }
   }
   
@@ -406,5 +427,5 @@ object mod {
     }
   }
   
-  trait _ParserPlugin extends StObject
+  trait _Plugin extends StObject
 }

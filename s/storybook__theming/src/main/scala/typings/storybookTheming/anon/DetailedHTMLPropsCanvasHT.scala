@@ -547,6 +547,8 @@ trait DetailedHTMLPropsCanvasHT extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLCanvasElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLCanvasElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLCanvasElement]] = js.undefined
   
@@ -1215,6 +1217,10 @@ object DetailedHTMLPropsCanvasHT {
     inline def setOnReset(value: FormEvent[HTMLCanvasElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLCanvasElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLCanvasElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

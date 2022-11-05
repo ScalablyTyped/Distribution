@@ -547,6 +547,8 @@ trait DetailedHTMLPropsParamHTM extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLParamElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLParamElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLParamElement]] = js.undefined
   
@@ -1215,6 +1217,10 @@ object DetailedHTMLPropsParamHTM {
     inline def setOnReset(value: FormEvent[HTMLParamElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLParamElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLParamElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

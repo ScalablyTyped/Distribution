@@ -1,7 +1,7 @@
 
 # Scala.js typings for hls_dot_js
 
-Typings are for version 1.2.4
+Typings are for version 1.2.5
 
 ## Library description:
 JavaScript HLS client using MediaSourceExtension

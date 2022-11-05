@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-community__cli-platform-android"
-version := "9.3.0-ba03b7"
+version := "9.3.1-f82181"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

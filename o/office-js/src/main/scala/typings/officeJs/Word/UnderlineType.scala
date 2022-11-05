@@ -73,8 +73,8 @@ object UnderlineType extends StObject {
        with UnderlineType
   
   /**
-    * @deprecated DotLine is no longer supported.
     * Warning: dotLine has been deprecated.
+    * @deprecated DotLine is no longer supported.
     * @remarks
     * [Api set: WordApi 1.1]
     */
@@ -113,8 +113,8 @@ object UnderlineType extends StObject {
        with UnderlineType
   
   /**
-    * @deprecated Hidden is no longer supported.
     * Warning: hidden has been deprecated.
+    * @deprecated Hidden is no longer supported.
     * @remarks
     * [Api set: WordApi 1.1]
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsoneditor-for-react"
-version := "0.0-dt-20211202Z-e9edf3"
+version := "0.0-dt-20211202Z-dd7867"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "re2" % "1.17.7-a226e5",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092")

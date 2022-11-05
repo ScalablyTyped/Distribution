@@ -545,6 +545,8 @@ trait DetailedHTMLPropsHTMLAttrAriadropeffect extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLUListElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLUListElement]] = js.undefined
   
@@ -1207,6 +1209,10 @@ object DetailedHTMLPropsHTMLAttrAriadropeffect {
     inline def setOnReset(value: FormEvent[HTMLUListElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLUListElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

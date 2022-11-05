@@ -766,6 +766,8 @@ trait SVGPropsSVGFEMergeElement extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGFEMergeElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGFEMergeElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGFEMergeElement]] = js.undefined
   
@@ -2060,6 +2062,10 @@ object SVGPropsSVGFEMergeElement {
     inline def setOnReset(value: FormEvent[SVGFEMergeElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGFEMergeElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGFEMergeElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

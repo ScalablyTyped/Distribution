@@ -685,6 +685,8 @@ object typesSelectListboxMod {
     
     var onReset: js.UndefOr[FormEventHandler[ListElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[ListElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[ListElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[ListElement]] = js.undefined
@@ -1440,6 +1442,10 @@ object typesSelectListboxMod {
       inline def setOnReset(value: FormEvent[ListElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[ListElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[ListElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

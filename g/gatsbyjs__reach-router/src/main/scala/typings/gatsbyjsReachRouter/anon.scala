@@ -580,6 +580,8 @@ object anon {
     
     val onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    val onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    
     val onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
     val onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -1584,6 +1586,10 @@ object anon {
       inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

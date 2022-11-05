@@ -766,6 +766,8 @@ trait SVGPropsSVGFESpecularLigh extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGFESpecularLightingElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGFESpecularLightingElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGFESpecularLightingElement]] = js.undefined
   
@@ -2060,6 +2062,10 @@ object SVGPropsSVGFESpecularLigh {
     inline def setOnReset(value: FormEvent[SVGFESpecularLightingElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGFESpecularLightingElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGFESpecularLightingElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

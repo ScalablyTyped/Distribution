@@ -549,6 +549,8 @@ trait DetailedHTMLPropsFieldset extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLFieldSetElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLFieldSetElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLFieldSetElement]] = js.undefined
   
@@ -1221,6 +1223,10 @@ object DetailedHTMLPropsFieldset {
     inline def setOnReset(value: FormEvent[HTMLFieldSetElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLFieldSetElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLFieldSetElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

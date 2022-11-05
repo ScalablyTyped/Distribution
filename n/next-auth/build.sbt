@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "next-auth"
-version := "4.15.1-4e6af7"
+version := "4.15.1-379504"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
   "org.scalablytyped" %%% "jose" % "4.10.4-e34551",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
-  "org.scalablytyped" %%% "next" % "13.0.2-5f35f3",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221104Z-577aac",
+  "org.scalablytyped" %%% "next" % "13.0.2-d61cad",
   "org.scalablytyped" %%% "next__env" % "13.0.2-cb900f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20220912Z-0195ba",
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "postcss" % "8.4.18-a78a45",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "re2" % "1.17.7-a226e5",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "schema-utils" % "4.0.0-3da904",
   "org.scalablytyped" %%% "source-map" % "0.7.4-01a3bb",

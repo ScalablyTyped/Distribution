@@ -454,6 +454,8 @@ object distTypesMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -1197,6 +1199,10 @@ object distTypesMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1701,6 +1707,8 @@ object distTypesMod {
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
@@ -2332,6 +2340,10 @@ object distTypesMod {
       inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

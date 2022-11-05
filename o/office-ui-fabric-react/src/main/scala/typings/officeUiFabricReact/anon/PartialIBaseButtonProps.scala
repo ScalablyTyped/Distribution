@@ -872,6 +872,12 @@ trait PartialIBaseButtonProps extends StObject {
     ]
   ] = js.undefined
   
+  var onResize: js.UndefOr[
+    ReactEventHandler[
+      HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement
+    ]
+  ] = js.undefined
+  
   var onScroll: js.UndefOr[
     UIEventHandler[
       HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement
@@ -2391,6 +2397,15 @@ object PartialIBaseButtonProps {
     ): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(
+      value: SyntheticEvent[
+          HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement, 
+          Event
+        ] => scala.Unit
+    ): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(
       value: UIEvent[

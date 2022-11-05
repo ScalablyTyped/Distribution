@@ -462,6 +462,8 @@ object formControlLabelFormControlLabelMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLLabelElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLLabelElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLLabelElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLLabelElement]] = js.undefined
@@ -1155,6 +1157,10 @@ object formControlLabelFormControlLabelMod {
       inline def setOnReset(value: FormEvent[HTMLLabelElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLLabelElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLLabelElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

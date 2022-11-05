@@ -423,6 +423,8 @@ trait FormMessagePropsPartialFo extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  
   var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -1114,6 +1116,10 @@ object FormMessagePropsPartialFo {
     inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

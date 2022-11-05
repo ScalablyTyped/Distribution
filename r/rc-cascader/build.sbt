@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-cascader"
-version := "3.7.0-348d11"
+version := "3.7.0-897924"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,12 +8,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "rc-motion" % "2.6.2-206876",
-  "org.scalablytyped" %%% "rc-select" % "14.1.13-a3fe66",
-  "org.scalablytyped" %%% "rc-tree" % "5.7.0-575e23",
-  "org.scalablytyped" %%% "rc-trigger" % "5.3.3-d86c9a",
-  "org.scalablytyped" %%% "rc-virtual-list" % "3.4.8-2cf663",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "rc-motion" % "2.6.2-f2ccaa",
+  "org.scalablytyped" %%% "rc-select" % "14.1.13-979ea4",
+  "org.scalablytyped" %%% "rc-tree" % "5.7.0-d92d06",
+  "org.scalablytyped" %%% "rc-trigger" % "5.3.3-6868b7",
+  "org.scalablytyped" %%% "rc-virtual-list" % "3.4.8-698704",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -12,7 +12,7 @@ trait DescribeDestinationsRequest extends StObject {
   var DestinationNamePrefix: js.UndefOr[DestinationName] = js.undefined
   
   /**
-    * The maximum number of items returned. If you don't specify a value, the default is up to 50 items.
+    * The maximum number of items returned. If you don't specify a value, the default maximum value of 50 items is used.
     */
   var limit: js.UndefOr[DescribeLimit] = js.undefined
   

@@ -547,6 +547,8 @@ trait DetailedHTMLPropsMapHTMLA extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLMapElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLMapElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLMapElement]] = js.undefined
   
@@ -1213,6 +1215,10 @@ object DetailedHTMLPropsMapHTMLA {
     inline def setOnReset(value: FormEvent[HTMLMapElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLMapElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLMapElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

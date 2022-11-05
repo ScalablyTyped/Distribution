@@ -19,6 +19,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+// Type definitions for @babel/parser
+// Project: https://github.com/babel/babel/tree/main/packages/babel-parser
+// Definitions by: Troy Gerwien <https://github.com/yortus>
+//                 Marvin Hagemeister <https://github.com/marvinhagemeister>
+//                 Avi Vahl <https://github.com/AviVahl>
+// TypeScript Version: 2.9
+/**
+  * Parse the provided code as an entire ECMAScript program.
+  */
 inline def babelParse(input: String): ParseResultFile = ^.asInstanceOf[js.Dynamic].applyDynamic("babelParse")(input.asInstanceOf[js.Any]).asInstanceOf[ParseResultFile]
 inline def babelParse(input: String, options: ParserOptions): ParseResultFile = (^.asInstanceOf[js.Dynamic].applyDynamic("babelParse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResultFile]
 

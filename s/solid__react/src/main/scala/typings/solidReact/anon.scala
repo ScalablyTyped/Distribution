@@ -599,6 +599,8 @@ object anon {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLAnchorElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLAnchorElement]] = js.undefined
+    
     // UI Events
     var onScroll: js.UndefOr[UIEventHandler[HTMLAnchorElement]] = js.undefined
     
@@ -1248,6 +1250,10 @@ object anon {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLAnchorElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1835,6 +1841,8 @@ object anon {
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
     // UI Events
     var onScroll: js.UndefOr[UIEventHandler[HTMLImageElement]] = js.undefined
@@ -2488,6 +2496,10 @@ object anon {
       inline def setOnReset(value: FormEvent[HTMLImageElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLImageElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

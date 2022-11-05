@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-sankey
 
-Typings are for version 0.11
+Typings are for version 0.12
 
 ## Library description:
 Visualize flow between nodes in a directed acyclic network.

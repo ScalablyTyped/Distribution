@@ -579,6 +579,10 @@ trait WeakValidationMapLayoutGr extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.FormEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.FormEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : undefined extends react.react.FormEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.FormEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : react.react.Validator<react.react.FormEventHandler<std.HTMLAnchorElement> | undefined> */ js.Any
   ] = js.undefined
   
+  var onResize: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : undefined extends react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : react.react.Validator<react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined> */ js.Any
+  ] = js.undefined
+  
   var onScroll: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.UIEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.UIEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : undefined extends react.react.UIEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.UIEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : react.react.Validator<react.react.UIEventHandler<std.HTMLAnchorElement> | undefined> */ js.Any
   ] = js.undefined
@@ -1589,6 +1593,12 @@ object WeakValidationMapLayoutGr {
     ): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : undefined extends react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : react.react.Validator<react.react.ReactEventHandler<std.HTMLAnchorElement> | undefined> */ js.Any
+    ): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.UIEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.UIEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : undefined extends react.react.UIEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.UIEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : react.react.Validator<react.react.UIEventHandler<std.HTMLAnchorElement> | undefined> */ js.Any

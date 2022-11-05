@@ -654,6 +654,8 @@ object libImageMod extends Shortcut {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLImageElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
@@ -1344,6 +1346,10 @@ object libImageMod extends Shortcut {
       inline def setOnReset(value: FormEvent[HTMLImageElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLImageElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

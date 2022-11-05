@@ -944,6 +944,10 @@ object antDesignProLayoutStrings {
   inline def onReset: onReset = "onReset".asInstanceOf[onReset]
   
   @js.native
+  sealed trait onResize extends StObject
+  inline def onResize: onResize = "onResize".asInstanceOf[onResize]
+  
+  @js.native
   sealed trait onScroll extends StObject
   inline def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
   

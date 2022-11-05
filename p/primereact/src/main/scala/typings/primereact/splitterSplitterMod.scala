@@ -464,6 +464,8 @@ object splitterSplitterMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    
     var onResizeEnd: js.UndefOr[js.Function1[/* e */ SplitterResizeEndParams, Unit]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
@@ -1123,9 +1125,13 @@ object splitterSplitterMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
       inline def setOnResizeEnd(value: /* e */ SplitterResizeEndParams => Unit): Self = StObject.set(x, "onResizeEnd", js.Any.fromFunction1(value))
       
       inline def setOnResizeEndUndefined: Self = StObject.set(x, "onResizeEnd", js.undefined)
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

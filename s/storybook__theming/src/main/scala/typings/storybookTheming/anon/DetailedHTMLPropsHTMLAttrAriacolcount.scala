@@ -545,6 +545,8 @@ trait DetailedHTMLPropsHTMLAttrAriacolcount extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLHeadElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLHeadElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLHeadElement]] = js.undefined
   
@@ -1207,6 +1209,10 @@ object DetailedHTMLPropsHTMLAttrAriacolcount {
     inline def setOnReset(value: FormEvent[HTMLHeadElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLHeadElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLHeadElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

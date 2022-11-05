@@ -60,7 +60,7 @@ object esComponentsSiderMenuSiderMenuMod {
   type SiderMenuProps = ActionsRender & (Pick[
     BaseMenuProps, 
     Exclude[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 235, starting with typings.antDesignProLayout.antDesignProLayoutStrings.className, typings.antDesignProLayout.antDesignProLayoutStrings.defaultCollapsed, typings.antDesignProLayout.antDesignProLayoutStrings.collapsed */ Any, 
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 236, starting with typings.antDesignProLayout.antDesignProLayoutStrings.className, typings.antDesignProLayout.antDesignProLayoutStrings.defaultCollapsed, typings.antDesignProLayout.antDesignProLayoutStrings.collapsed */ Any, 
       js.Array[onCollapse]
     ]
   ])

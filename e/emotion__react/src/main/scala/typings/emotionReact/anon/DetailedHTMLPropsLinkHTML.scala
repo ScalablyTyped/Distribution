@@ -562,6 +562,8 @@ trait DetailedHTMLPropsLinkHTML extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLLinkElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLLinkElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLLinkElement]] = js.undefined
   
@@ -1266,6 +1268,10 @@ object DetailedHTMLPropsLinkHTML {
     inline def setOnReset(value: FormEvent[HTMLLinkElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLLinkElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLLinkElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

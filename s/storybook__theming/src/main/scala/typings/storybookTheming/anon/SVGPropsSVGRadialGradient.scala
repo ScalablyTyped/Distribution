@@ -768,6 +768,8 @@ trait SVGPropsSVGRadialGradient extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGRadialGradientElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGRadialGradientElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGRadialGradientElement]] = js.undefined
   
@@ -2064,6 +2066,10 @@ object SVGPropsSVGRadialGradient {
     inline def setOnReset(value: FormEvent[SVGRadialGradientElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGRadialGradientElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGRadialGradientElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

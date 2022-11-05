@@ -613,6 +613,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLVideoElement]] = js.native
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLVideoElement]] = js.native
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLVideoElement]] = js.native
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLVideoElement]] = js.native

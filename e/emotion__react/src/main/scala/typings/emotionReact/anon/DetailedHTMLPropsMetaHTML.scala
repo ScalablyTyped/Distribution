@@ -553,6 +553,8 @@ trait DetailedHTMLPropsMetaHTML extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLMetaElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLMetaElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLMetaElement]] = js.undefined
   
@@ -1233,6 +1235,10 @@ object DetailedHTMLPropsMetaHTML {
     inline def setOnReset(value: FormEvent[HTMLMetaElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLMetaElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLMetaElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

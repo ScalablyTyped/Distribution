@@ -673,6 +673,8 @@ trait IPersonaPropsValidationSt extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[PersonaBase | PersonaCoinBase | HTMLDivElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[PersonaBase | PersonaCoinBase | HTMLDivElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[PersonaBase | PersonaCoinBase | HTMLDivElement]] = js.undefined
   
@@ -1520,6 +1522,10 @@ object IPersonaPropsValidationSt {
     inline def setOnReset(value: FormEvent[PersonaBase | PersonaCoinBase | HTMLDivElement] => scala.Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, Event] => scala.Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[PersonaBase | PersonaCoinBase | HTMLDivElement, NativeUIEvent] => scala.Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

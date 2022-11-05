@@ -416,6 +416,8 @@ object libButtonButtonMod {
     
     var onReset: js.UndefOr[FormEventHandler[Any]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[Any]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[Any]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[Any]] = js.undefined
@@ -1117,6 +1119,10 @@ object libButtonButtonMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[Any, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[Any, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1706,6 +1712,8 @@ object libButtonButtonMod {
     var onRateChange: js.UndefOr[ReactEventHandler[Any]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[Any]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[Any]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[Any]] = js.undefined
     
@@ -2440,6 +2448,10 @@ object libButtonButtonMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[Any, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[Any, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -2965,6 +2977,8 @@ object libButtonButtonMod {
     var onRateChange: js.UndefOr[ReactEventHandler[Any]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[Any]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[Any]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[Any]] = js.undefined
     
@@ -3679,6 +3693,10 @@ object libButtonButtonMod {
       inline def setOnReset(value: FormEvent[Any] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[Any, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[Any, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

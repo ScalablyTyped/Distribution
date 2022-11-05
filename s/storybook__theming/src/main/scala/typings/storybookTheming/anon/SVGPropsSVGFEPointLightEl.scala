@@ -768,6 +768,8 @@ trait SVGPropsSVGFEPointLightEl extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGFEPointLightElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGFEPointLightElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGFEPointLightElement]] = js.undefined
   
@@ -2064,6 +2066,10 @@ object SVGPropsSVGFEPointLightEl {
     inline def setOnReset(value: FormEvent[SVGFEPointLightElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGFEPointLightElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGFEPointLightElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

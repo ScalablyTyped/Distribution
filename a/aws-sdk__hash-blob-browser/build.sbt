@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__hash-blob-browser"
-version := "3.201.0-9354dc"
+version := "3.204.0-a7e0e2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

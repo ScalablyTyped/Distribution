@@ -78,11 +78,21 @@ type JobRunStates = js.Array[JobRunState]
 
 type JobRuns = js.Array[JobRun]
 
+type JobTemplateArn = String
+
+type JobTemplates = js.Array[JobTemplate]
+
+type KmsKeyArn = String
+
 type KubernetesNamespace = String
 
 type LogGroupName = String
 
 type NextToken = String
+
+type ParametricIAMRoleArn = String
+
+type ParametricReleaseLabel = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
@@ -111,6 +121,8 @@ type String1024 = String
 
 type String128 = String
 
+type String2048 = String
+
 type String256 = String
 
 type StringEmpty256 = String
@@ -120,6 +132,21 @@ type SubnetIds = js.Array[String256]
 type TagKeyList = js.Array[String128]
 
 type TagMap = StringDictionary[StringEmpty256]
+
+type TemplateParameter = String
+
+type TemplateParameterConfigurationMap = StringDictionary[TemplateParameterConfiguration]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NUMBER
+  - typings.awsSdk.awsSdkStrings.STRING
+  - java.lang.String
+*/
+type TemplateParameterDataType = _TemplateParameterDataType | String
+
+type TemplateParameterInputMap = StringDictionary[String1024]
+
+type TemplateParameterName = String
 
 type UriString = String
 

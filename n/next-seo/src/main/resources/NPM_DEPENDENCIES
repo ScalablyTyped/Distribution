@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "next-seo" : "5.13.0"
+      "next-seo" : "5.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "next-seo" : "5.13.0"
+      "next-seo" : "5.14.0"
     }
   ],
   "compile-devDependencies" : [

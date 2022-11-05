@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-community/slider" : "4.3.2"
+      "@react-native-community/slider" : "4.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-community/slider" : "4.3.2"
+      "@react-native-community/slider" : "4.3.3"
     }
   ],
   "compile-devDependencies" : [

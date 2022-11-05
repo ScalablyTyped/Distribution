@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "dynamodb-lock-client"
-version := "0.7-dt-20211202Z-0d6ec5"
+version := "0.7-dt-20211202Z-19e0b3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1247.0-dc2d87",
+  "org.scalablytyped" %%% "aws-sdk" % "2.1248.0-bdad9b",
   "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-4cfc23",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

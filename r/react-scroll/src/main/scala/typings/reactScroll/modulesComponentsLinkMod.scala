@@ -71,7 +71,7 @@ object modulesComponentsLinkMod {
   type Link = Component[LinkProps, js.Object, Any]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.DOMAttributes because var conflicts: onClick. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onMouseUp, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onMouseDown, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, children, onCanPlayThrough, onLoad, onLoadedMetadata, onSeeked, onChange, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
+  - typings.react.mod.DOMAttributes because var conflicts: onClick. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onMouseUp, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onMouseDown, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, children, onResize, onCanPlayThrough, onLoad, onLoadedMetadata, onSeeked, onChange, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
   - typings.react.mod.HTMLAttributes because var conflicts: onClick. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, className, unselectable, role, datatype, itemProp, title, autoCorrect, results
   - typings.react.mod.AllHTMLAttributes because var conflicts: onClick. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, content, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, rel, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, label, readOnly, challenge, poster, name, disabled, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, autoFocus, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
   - typings.react.mod.HTMLProps because var conflicts: onClick. Inlined  */ trait LinkProps
@@ -421,6 +421,8 @@ object modulesComponentsLinkMod {
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLButtonElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
     // UI Events
     var onScroll: js.UndefOr[UIEventHandler[HTMLButtonElement]] = js.undefined
@@ -1214,6 +1216,10 @@ object modulesComponentsLinkMod {
       inline def setOnReset(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLButtonElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

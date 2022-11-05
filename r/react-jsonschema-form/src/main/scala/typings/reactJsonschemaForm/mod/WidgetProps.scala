@@ -379,6 +379,8 @@ trait WidgetProps extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  
   var onScroll: js.UndefOr[UIEventHandler[HTMLElement]] = js.native
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native

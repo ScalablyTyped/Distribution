@@ -389,6 +389,8 @@ trait PartialSideNavListItemPro extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[Element]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[Element]] = js.undefined
+  
   var onScroll: js.UndefOr[UIEventHandler[Element]] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[Element]] = js.undefined
@@ -1061,6 +1063,10 @@ object PartialSideNavListItemPro {
     inline def setOnReset(value: FormEvent[Element] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[Element, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

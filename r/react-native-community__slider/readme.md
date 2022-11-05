@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-community__slider
 
-Typings are for version 4.3.2
+Typings are for version 4.3.3
 
 ## Library description:
 React Native component used to select a single value from a range of values.

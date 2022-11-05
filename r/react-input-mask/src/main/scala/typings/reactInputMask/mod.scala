@@ -120,6 +120,8 @@ object mod {
     /**
       * Character to cover unfilled editable parts of mask. Default character is "_". If set to null, unfilled parts will be empty, like in ordinary input.
       */
+    var maskChar: js.UndefOr[String | Null] = js.undefined
+    
     var maskPlaceholder: js.UndefOr[String | Null] = js.undefined
   }
   object Props {
@@ -148,6 +150,12 @@ object mod {
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
       inline def setMask(value: String | (js.Array[String | js.RegExp])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      inline def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
+      
+      inline def setMaskCharNull: Self = StObject.set(x, "maskChar", null)
+      
+      inline def setMaskCharUndefined: Self = StObject.set(x, "maskChar", js.undefined)
       
       inline def setMaskPlaceholder(value: String): Self = StObject.set(x, "maskPlaceholder", value.asInstanceOf[js.Any])
       

@@ -31,6 +31,16 @@ object mod {
   
   type FullName = /* template literal string: ${string}:${string} */ String
   
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ FullName in / * template literal string: ${Type}:${string} * / string ]: boolean | undefined}
+    }}}
+    */
+  @js.native
+  trait KnownForTypeResult[Type /* <: String */] extends StObject
+  
   @js.native
   trait Owner extends StObject {
     
@@ -97,6 +107,47 @@ object mod {
       inline def setSingleton(value: Boolean): Self = StObject.set(x, "singleton", value.asInstanceOf[js.Any])
       
       inline def setSingletonUndefined: Self = StObject.set(x, "singleton", js.undefined)
+    }
+  }
+  
+  trait Resolver extends StObject {
+    
+    var knownForType: js.UndefOr[js.Function1[/* type */ String, KnownForTypeResult[String]]] = js.undefined
+    
+    var lookupDescription: js.UndefOr[js.Function1[/* fullName */ FullName, String]] = js.undefined
+    
+    var makeToString: js.UndefOr[js.Function2[/* factory */ Factory[js.Object], /* fullName */ FullName, String]] = js.undefined
+    
+    var normalize: js.UndefOr[js.Function1[/* fullName */ FullName, String]] = js.undefined
+    
+    def resolve(name: String): js.UndefOr[Factory[js.Object] | js.Object]
+  }
+  object Resolver {
+    
+    inline def apply(resolve: String => js.UndefOr[Factory[js.Object] | js.Object]): Resolver = {
+      val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction1(resolve))
+      __obj.asInstanceOf[Resolver]
+    }
+    
+    extension [Self <: Resolver](x: Self) {
+      
+      inline def setKnownForType(value: /* type */ String => KnownForTypeResult[String]): Self = StObject.set(x, "knownForType", js.Any.fromFunction1(value))
+      
+      inline def setKnownForTypeUndefined: Self = StObject.set(x, "knownForType", js.undefined)
+      
+      inline def setLookupDescription(value: /* fullName */ FullName => String): Self = StObject.set(x, "lookupDescription", js.Any.fromFunction1(value))
+      
+      inline def setLookupDescriptionUndefined: Self = StObject.set(x, "lookupDescription", js.undefined)
+      
+      inline def setMakeToString(value: (/* factory */ Factory[js.Object], /* fullName */ FullName) => String): Self = StObject.set(x, "makeToString", js.Any.fromFunction2(value))
+      
+      inline def setMakeToStringUndefined: Self = StObject.set(x, "makeToString", js.undefined)
+      
+      inline def setNormalize(value: /* fullName */ FullName => String): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+      
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      
+      inline def setResolve(value: String => js.UndefOr[Factory[js.Object] | js.Object]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
 }

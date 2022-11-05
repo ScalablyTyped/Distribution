@@ -3,6 +3,7 @@ package typings.reactAlbus
 import typings.history.mod.History
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
+import typings.reactAlbus.anon.Basename
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -131,40 +132,5 @@ object mod {
     }
   }
   
-  trait WizardProps extends StObject {
-    
-    var basename: js.UndefOr[String] = js.undefined
-    
-    var history: js.UndefOr[History] = js.undefined
-    
-    var onNext: js.UndefOr[js.Function1[/* wizard */ WizardContext, Unit]] = js.undefined
-    
-    var render: js.UndefOr[js.Function1[/* wizard */ WizardContext, ReactNode]] = js.undefined
-  }
-  object WizardProps {
-    
-    inline def apply(): WizardProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[WizardProps]
-    }
-    
-    extension [Self <: WizardProps](x: Self) {
-      
-      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
-      
-      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
-      
-      inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
-      
-      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
-      
-      inline def setOnNext(value: /* wizard */ WizardContext => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
-      
-      inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
-      
-      inline def setRender(value: /* wizard */ WizardContext => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
-      
-      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
-    }
-  }
+  type WizardProps = Basename & WizardContextRenderProps
 }

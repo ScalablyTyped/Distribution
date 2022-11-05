@@ -529,6 +529,8 @@ object mod {
     
     val onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    val onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+    
     val onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
     val onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -1512,6 +1514,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -2327,7 +2333,7 @@ object mod {
     
     val onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    var onResize: js.UndefOr[HandlerCallback] = js.undefined
+    var onResize: js.UndefOr[HandlerCallback] & js.UndefOr[ReactEventHandler[HTMLDivElement]]
     
     var onResized: js.UndefOr[HandlerCallback] = js.undefined
     
@@ -2521,9 +2527,10 @@ object mod {
     
     inline def apply(
       onChange: js.UndefOr[HandlerCallback] & js.UndefOr[FormEventHandler[HTMLDivElement]],
-      onDrag: js.UndefOr[HandlerCallback] & js.UndefOr[DragEventHandler[HTMLDivElement]]
+      onDrag: js.UndefOr[HandlerCallback] & js.UndefOr[DragEventHandler[HTMLDivElement]],
+      onResize: js.UndefOr[HandlerCallback] & js.UndefOr[ReactEventHandler[HTMLDivElement]]
     ): OwlCarouselProps = {
-      val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any], onDrag = onDrag.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(onChange = onChange.asInstanceOf[js.Any], onDrag = onDrag.asInstanceOf[js.Any], onResize = onResize.asInstanceOf[js.Any])
       __obj.asInstanceOf[OwlCarouselProps]
     }
     
@@ -3565,9 +3572,7 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      inline def setOnResize(value: HandlerCallback): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
-      
-      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResize(value: js.UndefOr[HandlerCallback] & js.UndefOr[ReactEventHandler[HTMLDivElement]]): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
       
       inline def setOnResized(value: HandlerCallback): Self = StObject.set(x, "onResized", value.asInstanceOf[js.Any])
       

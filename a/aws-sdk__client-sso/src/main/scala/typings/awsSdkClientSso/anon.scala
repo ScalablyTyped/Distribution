@@ -279,6 +279,14 @@ object anon {
     
     var apiVersion: String = js.native
     
+    def base64Decoder(input: String): js.typedarray.Uint8Array = js.native
+    @JSName("base64Decoder")
+    var base64Decoder_Original: Decoder = js.native
+    
+    def base64Encoder(input: js.typedarray.Uint8Array): String = js.native
+    @JSName("base64Encoder")
+    var base64Encoder_Original: Encoder = js.native
+    
     var disableHostPrefix: Boolean = js.native
     
     def endpointProvider(endpointParams: EndpointParameters): EndpointV2 = js.native

@@ -99,6 +99,19 @@ object mod {
     def iterations(iterations: Double): this.type = js.native
     
     /**
+      * Returns the link comparison function which defaults to undefined.
+      */
+    def linkSort(): js.UndefOr[js.Function2[/* a */ SankeyLink[N, L], /* b */ SankeyLink[N, L], Double]] = js.native
+    /**
+      * Set the link comparison function and return this Sankey layout generator.
+      *
+      * @param compare Link comparison function.
+      */
+    def linkSort(
+      compare: js.Function2[/* a */ SankeyLink[N, L], /* b */ SankeyLink[N, L], js.UndefOr[Double | Null]]
+    ): this.type = js.native
+    
+    /**
       * Return the current links accessor function, which defaults to a function returning the "links" property of the
       * first argument it is invoked with.
       */
@@ -167,7 +180,9 @@ object mod {
       *
       * @param compare Node comparison function.
       */
-    def nodeSort(compare: js.Function2[/* a */ SankeyNode[N, L], /* b */ SankeyNode[N, L], Double]): this.type = js.native
+    def nodeSort(
+      compare: js.Function2[/* a */ SankeyNode[N, L], /* b */ SankeyNode[N, L], js.UndefOr[Double | Null]]
+    ): this.type = js.native
     
     /**
       * Return the current node width, which defaults to 24.

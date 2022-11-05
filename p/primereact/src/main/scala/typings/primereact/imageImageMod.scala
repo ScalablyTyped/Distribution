@@ -413,6 +413,8 @@ object imageImageMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLSpanElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
@@ -1093,6 +1095,10 @@ object imageImageMod {
       inline def setOnReset(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLSpanElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

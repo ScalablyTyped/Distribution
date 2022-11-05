@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "urllib-next"
-version := "3.3.0-b4cf31"
+version := "3.5.0-858bc8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

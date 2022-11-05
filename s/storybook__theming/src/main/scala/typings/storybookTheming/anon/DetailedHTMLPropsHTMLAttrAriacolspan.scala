@@ -545,6 +545,8 @@ trait DetailedHTMLPropsHTMLAttrAriacolspan extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLBodyElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLBodyElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLBodyElement]] = js.undefined
   
@@ -1207,6 +1209,10 @@ object DetailedHTMLPropsHTMLAttrAriacolspan {
     inline def setOnReset(value: FormEvent[HTMLBodyElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLBodyElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLBodyElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

@@ -555,6 +555,8 @@ trait DetailedHTMLPropsAnchorHT extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLAnchorElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLAnchorElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLAnchorElement]] = js.undefined
   
@@ -1243,6 +1245,10 @@ object DetailedHTMLPropsAnchorHT {
     inline def setOnReset(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLAnchorElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

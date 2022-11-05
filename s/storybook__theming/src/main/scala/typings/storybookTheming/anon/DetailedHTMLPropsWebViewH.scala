@@ -567,6 +567,8 @@ trait DetailedHTMLPropsWebViewH extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLWebViewElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLWebViewElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLWebViewElement]] = js.undefined
   
@@ -1285,6 +1287,10 @@ object DetailedHTMLPropsWebViewH {
     inline def setOnReset(value: FormEvent[HTMLWebViewElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLWebViewElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLWebViewElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

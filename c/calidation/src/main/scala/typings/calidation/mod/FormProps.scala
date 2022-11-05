@@ -394,6 +394,8 @@ trait FormProps[T /* <: js.Object */] extends StObject {
   
   var onReset: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
+  
   var onScroll: js.UndefOr[UIEventHandler[HTMLFormElement]] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLFormElement]] = js.undefined
@@ -1074,6 +1076,10 @@ object FormProps {
     inline def setOnReset(value: () => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLFormElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLFormElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

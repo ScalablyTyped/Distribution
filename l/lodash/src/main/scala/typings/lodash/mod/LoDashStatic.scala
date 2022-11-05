@@ -2693,9 +2693,12 @@ trait LoDashStatic extends StObject {
     * @see _.get
     */
   @JSName("get")
-  def get_TObjectTPathTDefault_Union[TObject, TPath /* <: java.lang.String */, TDefault](data: TObject, path: TPath): (GetFieldType[TObject, TPath]) | TDefault = js.native
+  def get_TObjectTPathTDefault_Union[TObject, TPath /* <: java.lang.String */, TDefault](data: TObject, path: TPath, defaultValue: TDefault): (Exclude[GetFieldType[TObject, TPath], js.UndefOr[Null]]) | TDefault = js.native
+  /**
+    * @see _.get
+    */
   @JSName("get")
-  def get_TObjectTPathTDefault_Union[TObject, TPath /* <: java.lang.String */, TDefault](data: TObject, path: TPath, defaultValue: TDefault): (GetFieldType[TObject, TPath]) | TDefault = js.native
+  def get_TObjectTPath_Any[TObject, TPath /* <: java.lang.String */](data: TObject, path: TPath): /* import warning: importer.ImportType#apply Failed type conversion: string extends TPath ? any : lodash.lodash.GetFieldType<TObject, TPath> */ js.Any = js.native
   /**
     * @see _.get
     */

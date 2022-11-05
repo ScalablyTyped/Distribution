@@ -112,7 +112,7 @@ object typesFileInputFileInputMod {
   val FileInput: ForwardRefExoticComponent[FileInputProps & RefAttributes[HTMLInputElement]] = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactMdForm.typesFileInputFileInputMod.InputAttributes because var conflicts: className, disabled. Inlined checked, translate, inlist, formAction, `aria-activedescendant`, onMouseEnter, max, onLoadedData, unselectable, placeholder, `aria-multiselectable`, title, slot, pattern, onClick, width, onTouchStart, onDrop, `aria-grabbed`, children, onDragOver, autoSave, onAnimationIteration, spellCheck, role, `aria-multiline`, about, dir, onPlaying, `aria-current`, height, itemType, `aria-relevant`, `aria-placeholder`, autoCorrect, onPointerMove, `aria-label`, `aria-rowcount`, onPaste, `aria-busy`, resource, onSeeked, tabIndex, onError, onTimeUpdate, `aria-roledescription`, color, onEnded, onPointerCancel, autoCapitalize, inputMode, onCompositionUpdate, onMouseMove, size, onSelect, onStalled, onPointerOut, onAuxClick, `aria-autocomplete`, onCopy, `aria-live`, `aria-keyshortcuts`, onDurationChange, `aria-orientation`, onVolumeChange, lang, `aria-owns`, `aria-atomic`, `aria-dropeffect`, min, property, style, is, onLoadedMetadata, `aria-labelledby`, formMethod, onTransitionEnd, onMouseOver, onChange, datatype, onDragStart, onSeeking, `aria-flowto`, onAnimationEnd, onCanPlay, `aria-readonly`, onMouseOut, onKeyDown, `aria-pressed`, onMouseLeave, contextMenu, accept, onProgress, `aria-level`, contentEditable, autoComplete, enterKeyHint, onPointerLeave, onMouseUp, multiple, onInput, itemRef, autoFocus, capture, results, accessKey, `aria-haspopup`, `aria-posinset`, step, onInvalid, `aria-required`, vocab, `aria-describedby`, onSuspend, formEncType, onLoad, onTouchCancel, formNoValidate, onAnimationStart, onTouchMove, onPointerEnter, src, `aria-controls`, `aria-modal`, onDragEnter, formTarget, onPointerOver, required, onWaiting, onReset, `aria-selected`, onPlay, onKeyUp, onMouseDown, radioGroup, onSubmit, onBeforeInput, readOnly, nonce, `aria-disabled`, `aria-sort`, onCompositionStart, itemProp, security, `aria-valuemin`, dangerouslySetInnerHTML, `aria-colcount`, onFocus, onCanPlayThrough, `aria-invalid`, onBlur, onDoubleClick, `aria-valuemax`, `aria-details`, onContextMenu, maxLength, suppressHydrationWarning, `aria-setsize`, onDragLeave, onTouchEnd, onPause, `aria-checked`, defaultChecked, `aria-valuetext`, prefix, onEmptied, name, form, list, onPointerUp, onCompositionEnd, `aria-colspan`, hidden, `aria-errormessage`, onScroll, crossOrigin, onPointerDown, `aria-colindex`, onCut, alt, suppressContentEditableWarning, `aria-hidden`, onAbort, onDragExit, `aria-valuenow`, id, onWheel, typeof, onDrag, `aria-expanded`, minLength, draggable, onEncrypted, onDragEnd, `aria-rowindex`, itemScope, onRateChange, onKeyPress, onLoadStart, itemID, `aria-rowspan` */ trait FileInputProps
+  - typings.reactMdForm.typesFileInputFileInputMod.InputAttributes because var conflicts: className, disabled. Inlined checked, translate, inlist, formAction, `aria-activedescendant`, onMouseEnter, max, onLoadedData, unselectable, placeholder, `aria-multiselectable`, title, slot, pattern, onClick, width, onTouchStart, onDrop, `aria-grabbed`, children, onDragOver, autoSave, onAnimationIteration, spellCheck, role, `aria-multiline`, about, dir, onPlaying, `aria-current`, height, itemType, `aria-relevant`, `aria-placeholder`, autoCorrect, onPointerMove, `aria-label`, `aria-rowcount`, onPaste, `aria-busy`, resource, onSeeked, tabIndex, onError, onTimeUpdate, `aria-roledescription`, color, onEnded, onPointerCancel, autoCapitalize, inputMode, onCompositionUpdate, onMouseMove, size, onSelect, onStalled, onPointerOut, onAuxClick, `aria-autocomplete`, onCopy, `aria-live`, `aria-keyshortcuts`, onDurationChange, `aria-orientation`, onVolumeChange, lang, `aria-owns`, `aria-atomic`, `aria-dropeffect`, min, property, style, is, onLoadedMetadata, `aria-labelledby`, formMethod, onTransitionEnd, onMouseOver, onChange, datatype, onDragStart, onSeeking, `aria-flowto`, onAnimationEnd, onCanPlay, `aria-readonly`, onMouseOut, onKeyDown, `aria-pressed`, onMouseLeave, contextMenu, accept, onProgress, `aria-level`, contentEditable, autoComplete, enterKeyHint, onPointerLeave, onMouseUp, multiple, onInput, itemRef, autoFocus, capture, results, accessKey, `aria-haspopup`, `aria-posinset`, step, onInvalid, `aria-required`, vocab, `aria-describedby`, onSuspend, formEncType, onLoad, onTouchCancel, formNoValidate, onAnimationStart, onTouchMove, onPointerEnter, src, `aria-controls`, `aria-modal`, onDragEnter, formTarget, onPointerOver, required, onWaiting, onReset, `aria-selected`, onPlay, onKeyUp, onMouseDown, radioGroup, onSubmit, onBeforeInput, readOnly, nonce, `aria-disabled`, `aria-sort`, onCompositionStart, itemProp, security, `aria-valuemin`, dangerouslySetInnerHTML, `aria-colcount`, onFocus, onCanPlayThrough, `aria-invalid`, onBlur, onDoubleClick, `aria-valuemax`, `aria-details`, onContextMenu, maxLength, suppressHydrationWarning, `aria-setsize`, onDragLeave, onTouchEnd, onPause, `aria-checked`, defaultChecked, `aria-valuetext`, prefix, onEmptied, name, form, list, onPointerUp, onCompositionEnd, `aria-colspan`, hidden, `aria-errormessage`, onScroll, crossOrigin, onPointerDown, `aria-colindex`, onCut, alt, suppressContentEditableWarning, `aria-hidden`, onAbort, onDragExit, `aria-valuenow`, id, onWheel, typeof, onDrag, `aria-expanded`, minLength, onResize, draggable, onEncrypted, onDragEnd, `aria-rowindex`, itemScope, onRateChange, onKeyPress, onLoadStart, itemID, `aria-rowspan` */ trait FileInputProps
     extends StObject
        with ButtonThemeProps {
     
@@ -478,6 +478,8 @@ object typesFileInputFileInputMod {
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
     
@@ -1226,6 +1228,10 @@ object typesFileInputFileInputMod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -1722,6 +1728,8 @@ object typesFileInputFileInputMod {
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
     
@@ -2461,6 +2469,10 @@ object typesFileInputFileInputMod {
       inline def setOnReset(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

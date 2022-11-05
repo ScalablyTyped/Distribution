@@ -461,6 +461,8 @@ trait ReadonlyIPanelProps extends StObject {
   
   val onReset: js.UndefOr[FormEventHandler[PanelBase]] = js.undefined
   
+  val onResize: js.UndefOr[ReactEventHandler[PanelBase]] = js.undefined
+  
   val onScroll: js.UndefOr[UIEventHandler[PanelBase]] = js.undefined
   
   val onSeeked: js.UndefOr[ReactEventHandler[PanelBase]] = js.undefined
@@ -1259,6 +1261,10 @@ object ReadonlyIPanelProps {
     inline def setOnReset(value: FormEvent[PanelBase] => scala.Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[PanelBase, Event] => scala.Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[PanelBase, NativeUIEvent] => scala.Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

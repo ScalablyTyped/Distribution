@@ -27,8 +27,8 @@ object BreakType extends StObject {
        with BreakType
   
   /**
-    * @deprecated Use sectionNext instead.
     * Warning: next has been deprecated. Use sectionNext instead.
+    * @deprecated Use sectionNext instead.
     * @remarks
     * [Api set: WordApi 1.1]
     */

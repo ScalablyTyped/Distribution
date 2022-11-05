@@ -2999,6 +2999,7 @@
 | 0.0 | [fontmin](./f/fontmin) | Minify font seamlessly, font subsetter, webfont (e
 | 0.0 | [force-graph](./f/force-graph) | 2D force-directed graph rendered on HTML5 canvas
 | 0.0 | [foreach](./f/foreach) | foreach component + npm package
+| 0.0 | [foreground-child](./f/foreground-child) | Run a child as if it's the foreground process.  Gi
 | 0.0 | [forest-express-sequelize](./f/forest-express-sequelize) | Official Express/Sequelize Liana for Forest
 | 0.0 | [forever-agent](./f/forever-agent) | HTTP Agent that keeps socket connections alive bet
 | 0.0 | [forever-monitor](./f/forever-monitor) | Core forever process monitor
@@ -3081,6 +3082,7 @@
 | 0.0 | [fs-finder](./f/fs-finder) | -
 | 0.0 | [fs-jetpack](./f/fs-jetpack) | Better file system API
 | 0.0 | [fs-merger](./f/fs-merger) | Reads files from a real location
+| 0.0 | [fs-minipass](./f/fs-minipass) | fs read and write streams based on minipass
 | 0.0 | [fs-mock](./f/fs-mock) | -
 | 0.0 | [fs-plus](./f/fs-plus) | node's fs with more helpers
 | 0.0 | [fs-promise](./f/fs-promise) | -
@@ -3582,6 +3584,7 @@
 | 0.0 | [harmony-reflect](./h/harmony-reflect) | ES5 shim for ES6 (ECMAScript 6) Reflect and Proxy 
 | 0.0 | [has](./h/has) | Object.prototype.hasOwnProperty.call shortcut
 | 0.0 | [has-ansi](./h/has-ansi) | Check if a string has ANSI escape codes
+| 0.0 | [has-bigints](./h/has-bigints) | Determine if the JS environment has BigInt support
 | 0.0 | [has-emoji](./h/has-emoji) | Check whether a string has any emoji
 | 0.0 | [has-flag](./h/has-flag) | Check if argv has a specific flag
 | 0.0 | [has-own-prop](./h/has-own-prop) | A safer .hasOwnProperty()
@@ -4164,6 +4167,7 @@
 | 0.0 | [is-stream-ended](./i/is-stream-ended) | Check if a stream has ended
 | 0.0 | [is-string](./i/is-string) | Is this value a JS String object or primitive? Thi
 | 0.0 | [is-svg](./i/is-svg) | Check if a string or buffer is SVG
+| 0.0 | [is-symbol](./i/is-symbol) | Determine if a value is an ES6 Symbol or not.
 | 0.0 | [is-text-path](./i/is-text-path) | Check if a file path is a text file
 | 0.0 | [is-touch-device](./i/is-touch-device) | Is the current JS environment a touch device?
 | 0.0 | [is-trademarked](./i/is-trademarked) | Check if a word is trademarked.
@@ -7226,6 +7230,7 @@
 | 0.0 | [passport-vkontakte](./p/passport-vkontakte) | VK.com authentication strategy for Passport.
 | 0.0 | [passport-windowsauth](./p/passport-windowsauth) | Passport strategy for Windows Integrated Authentic
 | 0.0 | [passport_dot_socketio](./p/passport_dot_socketio) | access passport.js authenticated user information 
+| 0.0 | [passthrough-encoding](./p/passthrough-encoding) | An encoder that encodes buffers/strings to a buffe
 | 0.0 | [passwd-user](./p/passwd-user) | Get the passwd user entry from a username or user 
 | 0.0 | [password](./p/password) | Memorable passwords generator
 | 0.0 | [password-hash](./p/password-hash) | Password hashing and verification for node.js
@@ -7661,6 +7666,7 @@
 | 0.0 | [promise-breaker](./p/promise-breaker) | Library to help write libraries that accept both p
 | 0.0 | [promise-dag](./p/promise-dag) | Chain promises declaratively using high-level grap
 | 0.0 | [promise-debounce](./p/promise-debounce) | Debounce any promise-returning function so that at
+| 0.0 | [promise-deferred](./p/promise-deferred) | A lightweight Deferred implementation, on top of P
 | 0.0 | [promise-fn-retry](./p/promise-fn-retry) | A simple retry to be used in integrations with Nod
 | 0.0 | [promise-fs](./p/promise-fs) | Wraps FS methods using Promise
 | 0.0 | [promise-ftp](./p/promise-ftp) | a promise-based ftp client for node.js
@@ -10093,6 +10099,7 @@
 | 0.0 | [suspend-react](./s/suspend-react) | Integrate React Suspense into your apps
 | 0.0 | [svelte](./s/svelte) | Cybernetically enhanced web apps
 | 0.0 | [svelte-leafletjs](./s/svelte-leafletjs) | Svelte component for leaflet
+| 0.0 | [svelte-range-slider-pips](./s/svelte-range-slider-pips) | Multi-Thumb, Accessible, Beautiful Range Slider wi
 | 0.0 | [svg-arc-to-cubic-bezier](./s/svg-arc-to-cubic-bezier) | A function that takes an SVG arc curve as input, a
 | 0.0 | [svg-baker-runtime](./s/svg-baker-runtime) | -
 | 0.0 | [svg-injector](./s/svg-injector) | Fast, caching, dynamic inline SVG DOM injection li
@@ -10136,7 +10143,6 @@
 | 0.0 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 0.0 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects
 | 0.0 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
-| 0.0 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.0 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg
 | 0.0 | [swagger-ui](./s/swagger-ui) | -
 | 0.0 | [swagger-ui-dist](./s/swagger-ui-dist) | -
@@ -10291,7 +10297,6 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
-| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
@@ -10666,7 +10671,7 @@
 | 0.0 | [umijs__ssr-darkreader](./u/umijs__ssr-darkreader) | Dark mode for every website
 | 0.0 | [umijs__use-params](./u/umijs__use-params) | -
 | 0.0 | [umtrack-wx](./u/umtrack-wx) | 微信小程序友盟统计SDK
-| 0.0 | [umzug](./u/umzug) | Framework-agnostic migration tool for Node
+| 0.0 | [unbox-primitive](./u/unbox-primitive) | Unbox a boxed JS primitive value.
 | 0.0 | [unbzip2-stream](./u/unbzip2-stream) | streaming unbzip2 implementation in pure javascrip
 | 0.0 | [unc-path-regex](./u/unc-path-regex) | Regular expression for testing if a file path is a
 | 0.0 | [uncontrollable](./u/uncontrollable) | Wrap a controlled react component, to allow specif
@@ -11231,6 +11236,7 @@
 | 0.0 | [when-dom-ready](./w/when-dom-ready) | $(document).ready() for the 21st century
 | 0.0 | [wherearewe](./w/wherearewe) | Detect the current environment
 | 0.0 | [which](./w/which) | Like which(1) unix command. Find the first instanc
+| 0.0 | [which-boxed-primitive](./w/which-boxed-primitive) | Which kind of boxed JS primitive is this?
 | 0.0 | [which-pm](./w/which-pm) | Detects what package manager was used for installa
 | 0.0 | [which-pm-runs](./w/which-pm-runs) | Detects what package manager executes the process
 | 0.0 | [which-polygon](./w/which-polygon) | Index for matching points against a set of GeoJSON
@@ -11440,6 +11446,7 @@
 | 0.0 | [xregexp](./x/xregexp) | Extended regular expressions
 | 0.0 | [xrm](./x/xrm) | -
 | 0.0 | [xsalsa20](./x/xsalsa20) | XSalsa20 implemented in Javascript and WebAssembly
+| 0.0 | [xsalsa20-encoding](./x/xsalsa20-encoding) | XSalsa20 codec that implements tha abstract-encodi
 | 0.0 | [xsd-schema-validator](./x/xsd-schema-validator) | A (XSD) schema validator for nodejs
 | 0.0 | [xsockets](./x/xsockets) | a socket optimized for cross-domain use for the we
 | 0.0 | [xss](./x/xss) | Sanitize untrusted HTML (to prevent XSS) with a co
@@ -11481,7 +11488,6 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
-| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman

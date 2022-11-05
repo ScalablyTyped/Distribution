@@ -11,6 +11,7 @@ object distSrcGetClassNameMod {
   val ^ : js.Any = js.native
   
   inline def default(propertyInfo: PropertyInfo, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(propertyInfo.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(propertyInfo: PropertyInfo, value: String, selector: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(propertyInfo.asInstanceOf[js.Any], value.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getClassNamePrefix(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNamePrefix")().asInstanceOf[String]
   

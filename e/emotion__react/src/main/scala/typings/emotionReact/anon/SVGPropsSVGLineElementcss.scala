@@ -766,6 +766,8 @@ trait SVGPropsSVGLineElementcss extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGLineElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGLineElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGLineElement]] = js.undefined
   
@@ -2060,6 +2062,10 @@ object SVGPropsSVGLineElementcss {
     inline def setOnReset(value: FormEvent[SVGLineElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGLineElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGLineElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

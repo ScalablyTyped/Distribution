@@ -1059,6 +1059,10 @@ object uiBoxStrings {
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
+  sealed trait selectors extends StObject
+  inline def selectors: selectors = "selectors".asInstanceOf[selectors]
+  
+  @js.native
   sealed trait slot extends StObject
   inline def slot: slot = "slot".asInstanceOf[slot]
   

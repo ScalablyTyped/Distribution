@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "atlaskit__tokens"
-version := "0.10.30-7b24a8"
+version := "0.10.30-b09aa9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-aa17f1",
-  "org.scalablytyped" %%% "babel__types" % "7.20.0-d18d74",
+  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-b54012",
+  "org.scalablytyped" %%% "babel__types" % "7.20.2-5a1686",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

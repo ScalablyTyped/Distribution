@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "expo__metro-config"
-version := "0.4.0-ce3937"
+version := "0.4.0-1352c0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "babel__code-frame" % "7.0-dt-20211202Z-b23fc5",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-b67249",
-  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-bf895e",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.1-1ab1d1",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-114ca7",
-  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-aa17f1",
-  "org.scalablytyped" %%% "babel__types" % "7.20.0-d18d74",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-a9564c",
+  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-412870",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.2-663c13",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-3ac905",
+  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-b54012",
+  "org.scalablytyped" %%% "babel__types" % "7.20.2-5a1686",
   "org.scalablytyped" %%% "metro" % "0.66-dt-20220106Z-0b98d8",
   "org.scalablytyped" %%% "metro-babel-transformer" % "0.66-dt-20211202Z-9a2f2c",
   "org.scalablytyped" %%% "metro-cache" % "0.66-dt-20211202Z-a2617e",

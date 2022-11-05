@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-provider-node"
-version := "3.202.0-f07ddc"
+version := "3.204.0-22e4cc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.202.0-390491",
+  "org.scalablytyped" %%% "aws-sdk__client-sso" % "3.204.0-3f0894",
   "org.scalablytyped" %%% "aws-sdk__credential-provider-imds" % "3.201.0-da94ca",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-ini" % "3.202.0-2803ef",
-  "org.scalablytyped" %%% "aws-sdk__credential-provider-sso" % "3.202.0-67d9f9",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-ini" % "3.204.0-5b935f",
+  "org.scalablytyped" %%% "aws-sdk__credential-provider-sso" % "3.204.0-8161d2",
   "org.scalablytyped" %%% "aws-sdk__credential-provider-web-identity" % "3.201.0-7fc635",
-  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.201.0-5cf045",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.204.0-207ee5",
   "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.201.0-ddb507",
   "org.scalablytyped" %%% "aws-sdk__node-config-provider" % "3.201.0-3b3c90",
   "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.201.0-ae6d59",

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/util-base64" : "3.202.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/util-base64" : "3.202.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

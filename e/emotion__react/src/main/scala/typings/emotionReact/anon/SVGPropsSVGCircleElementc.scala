@@ -766,6 +766,8 @@ trait SVGPropsSVGCircleElementc extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGCircleElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGCircleElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGCircleElement]] = js.undefined
   
@@ -2060,6 +2062,10 @@ object SVGPropsSVGCircleElementc {
     inline def setOnReset(value: FormEvent[SVGCircleElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGCircleElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGCircleElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

@@ -9,4 +9,8 @@ object jsonFilePlusStrings {
   @js.native
   sealed trait Charactertabulation extends StObject
   inline def Charactertabulation: Charactertabulation = "\t".asInstanceOf[Charactertabulation]
+  
+  @js.native
+  sealed trait Space extends StObject
+  inline def Space: Space = (" ").asInstanceOf[Space]
 }

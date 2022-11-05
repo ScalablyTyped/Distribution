@@ -16,11 +16,14 @@ object distSrcCacheMod {
   inline def entries(): js.Array[js.Tuple2[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")().asInstanceOf[js.Array[js.Tuple2[String, String]]]
   
   inline def get(property: String, value: CacheValue): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def get(property: String, value: CacheValue, selectorHead: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   inline def hydrate(newEntries: js.Array[CacheEntry]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrate")(newEntries.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def set(property: String, value: js.Object, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(property: String, value: js.Object, className: String, selectorHead: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], className.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def set(property: String, value: CacheValue, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(property: String, value: CacheValue, className: String, selectorHead: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], className.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type CacheEntry = js.Tuple2[String, String]
   

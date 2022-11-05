@@ -1369,6 +1369,7 @@ import typings.awsSdk.clientsEmrMod._StepState
 import typings.awsSdk.clientsEmrcontainersMod._EndpointState
 import typings.awsSdk.clientsEmrcontainersMod._JobRunState
 import typings.awsSdk.clientsEmrcontainersMod._PersistentAppUI
+import typings.awsSdk.clientsEmrcontainersMod._TemplateParameterDataType
 import typings.awsSdk.clientsEmrcontainersMod._VirtualClusterState
 import typings.awsSdk.clientsEsMod._ESPartitionInstanceType
 import typings.awsSdk.clientsEsMod._ESWarmPartitionInstanceType
@@ -44711,6 +44712,7 @@ object awsSdkStrings {
        with _Format
        with _ReferenceType
        with _TaskTemplateFieldType
+       with _TemplateParameterDataType
   
   @js.native
   sealed trait NUMBER_COMPARISON
@@ -59362,6 +59364,7 @@ object awsSdkStrings {
        with _PortType
        with _PropertyDataType
        with _ReferenceType
+       with _TemplateParameterDataType
        with typings.awsSdk.clientsIottwinmakerMod._Type
        with _VariationValueType
   

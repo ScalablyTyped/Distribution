@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "victory-area"
-version := "36.6.8-443d6a"
+version := "36.6.8-f15957"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,10 +11,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20220624Z-f5f0fe",
   "org.scalablytyped" %%% "d3-time" % "3.0-dt-20211202Z-7d17be",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "victory-core" % "36.6.8-d36762")
+  "org.scalablytyped" %%% "victory-core" % "36.6.8-598aa0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

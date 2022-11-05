@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__ui-components"
-version := "3.5.0-883b91"
+version := "3.5.0-81c83b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lumino__virtualdom" % "1.14.2-f88614",
   "org.scalablytyped" %%% "lumino__widgets" % "1.34.1-c32c29",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "typestyle" % "2.4.0-b099cb")

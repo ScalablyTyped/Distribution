@@ -557,6 +557,8 @@ trait DetailedHTMLPropsKeygenHT extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLElement]] = js.undefined
   
@@ -1245,6 +1247,10 @@ object DetailedHTMLPropsKeygenHT {
     inline def setOnReset(value: FormEvent[HTMLElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

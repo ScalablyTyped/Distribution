@@ -37,7 +37,7 @@ trait CreateExportTaskRequest extends StObject {
   var taskName: js.UndefOr[ExportTaskName] = js.undefined
   
   /**
-    * The end time of the range for the request, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp later than this time are not exported.
+    * The end time of the range for the request, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp later than this time are not exported. You must specify a time that is not earlier than when this log group was created.
     */
   var to: Timestamp
 }

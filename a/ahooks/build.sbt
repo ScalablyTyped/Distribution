@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ahooks"
-version := "3.7.2-4670d7"
+version := "3.7.2-c3a2c1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "dayjs" % "1.11.6-153a22",
   "org.scalablytyped" %%% "js-cookie" % "3.0-dt-20220422Z-2ce48f",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221104Z-577aac",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "babel__template"
-version := "7.4-dt-20211202Z-114ca7"
+version := "7.4-dt-20211202Z-3ac905"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.1-1ab1d1",
-  "org.scalablytyped" %%% "babel__types" % "7.20.0-d18d74",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.2-663c13",
+  "org.scalablytyped" %%% "babel__types" % "7.20.2-5a1686",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

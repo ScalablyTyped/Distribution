@@ -766,6 +766,8 @@ trait SVGPropsSVGFEGaussianBlur extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGFEGaussianBlurElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGFEGaussianBlurElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGFEGaussianBlurElement]] = js.undefined
   
@@ -2060,6 +2062,10 @@ object SVGPropsSVGFEGaussianBlur {
     inline def setOnReset(value: FormEvent[SVGFEGaussianBlurElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGFEGaussianBlurElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGFEGaussianBlurElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

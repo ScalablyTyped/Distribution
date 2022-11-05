@@ -19,12 +19,22 @@ trait StartJobRunRequest extends StObject {
   /**
     * The execution role ARN for the job run.
     */
-  var executionRoleArn: IAMRoleArn
+  var executionRoleArn: js.UndefOr[IAMRoleArn] = js.undefined
   
   /**
     * The job driver for the job run.
     */
-  var jobDriver: JobDriver
+  var jobDriver: js.UndefOr[JobDriver] = js.undefined
+  
+  /**
+    * The job template ID to be used to start the job run.
+    */
+  var jobTemplateId: js.UndefOr[ResourceIdString] = js.undefined
+  
+  /**
+    * The values of job template parameters to start a job run.
+    */
+  var jobTemplateParameters: js.UndefOr[TemplateParameterInputMap] = js.undefined
   
   /**
     * The name of the job run.
@@ -34,7 +44,7 @@ trait StartJobRunRequest extends StObject {
   /**
     * The Amazon EMR release version to use for the job run.
     */
-  var releaseLabel: ReleaseLabel
+  var releaseLabel: js.UndefOr[ReleaseLabel] = js.undefined
   
   /**
     * The tags assigned to job runs.
@@ -48,14 +58,8 @@ trait StartJobRunRequest extends StObject {
 }
 object StartJobRunRequest {
   
-  inline def apply(
-    clientToken: ClientToken,
-    executionRoleArn: IAMRoleArn,
-    jobDriver: JobDriver,
-    releaseLabel: ReleaseLabel,
-    virtualClusterId: ResourceIdString
-  ): StartJobRunRequest = {
-    val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], executionRoleArn = executionRoleArn.asInstanceOf[js.Any], jobDriver = jobDriver.asInstanceOf[js.Any], releaseLabel = releaseLabel.asInstanceOf[js.Any], virtualClusterId = virtualClusterId.asInstanceOf[js.Any])
+  inline def apply(clientToken: ClientToken, virtualClusterId: ResourceIdString): StartJobRunRequest = {
+    val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], virtualClusterId = virtualClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartJobRunRequest]
   }
   
@@ -69,13 +73,27 @@ object StartJobRunRequest {
     
     inline def setExecutionRoleArn(value: IAMRoleArn): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
     
+    inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
+    
     inline def setJobDriver(value: JobDriver): Self = StObject.set(x, "jobDriver", value.asInstanceOf[js.Any])
+    
+    inline def setJobDriverUndefined: Self = StObject.set(x, "jobDriver", js.undefined)
+    
+    inline def setJobTemplateId(value: ResourceIdString): Self = StObject.set(x, "jobTemplateId", value.asInstanceOf[js.Any])
+    
+    inline def setJobTemplateIdUndefined: Self = StObject.set(x, "jobTemplateId", js.undefined)
+    
+    inline def setJobTemplateParameters(value: TemplateParameterInputMap): Self = StObject.set(x, "jobTemplateParameters", value.asInstanceOf[js.Any])
+    
+    inline def setJobTemplateParametersUndefined: Self = StObject.set(x, "jobTemplateParameters", js.undefined)
     
     inline def setName(value: ResourceNameString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setReleaseLabel(value: ReleaseLabel): Self = StObject.set(x, "releaseLabel", value.asInstanceOf[js.Any])
+    
+    inline def setReleaseLabelUndefined: Self = StObject.set(x, "releaseLabel", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

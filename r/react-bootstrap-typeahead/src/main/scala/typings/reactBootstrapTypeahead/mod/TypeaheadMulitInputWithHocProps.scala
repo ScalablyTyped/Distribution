@@ -440,6 +440,8 @@ trait TypeaheadMulitInputWithHocProps[T /* <: TypeaheadModel */] extends StObjec
   
   var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
+  
   var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -1219,6 +1221,10 @@ object TypeaheadMulitInputWithHocProps {
     inline def setOnReset(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

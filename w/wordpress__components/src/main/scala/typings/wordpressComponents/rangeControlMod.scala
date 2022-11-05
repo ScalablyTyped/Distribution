@@ -580,6 +580,8 @@ object rangeControlMod {
       
       var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
       
+      var onResize: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+      
       var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.native
       
       var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native

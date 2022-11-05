@@ -8667,6 +8667,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[ReactSVGElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[ReactSVGElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[ReactSVGElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[ReactSVGElement]] = js.undefined
@@ -9956,6 +9958,10 @@ object mod {
       inline def setOnReset(value: FormEvent[ReactSVGElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[ReactSVGElement, typings.std.Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[ReactSVGElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

@@ -513,9 +513,12 @@ trait ObjectChain[T]
     * @see _.get
     */
   @JSName("get")
-  def get_TPathTDefault_ExpChain[TPath /* <: java.lang.String */, TDefault](path: TPath): ExpChain[(GetFieldType[T, TPath]) | TDefault] = js.native
+  def get_TPathTDefault_ExpChain[TPath /* <: java.lang.String */, TDefault](path: TPath, defaultValue: TDefault): ExpChain[(Exclude[GetFieldType[T, TPath], js.UndefOr[Null]]) | TDefault] = js.native
+  /**
+    * @see _.get
+    */
   @JSName("get")
-  def get_TPathTDefault_ExpChain[TPath /* <: java.lang.String */, TDefault](path: TPath, defaultValue: TDefault): ExpChain[(GetFieldType[T, TPath]) | TDefault] = js.native
+  def get_TPath_Any[TPath /* <: java.lang.String */](path: TPath): /* import warning: importer.ImportType#apply Failed type conversion: string extends TPath ? lodash.lodash.LoDashExplicitWrapper<any> : lodash.lodash.ExpChain<lodash.lodash.GetFieldType<T, TPath>> */ js.Any = js.native
   
   /**
     * @see _.groupBy

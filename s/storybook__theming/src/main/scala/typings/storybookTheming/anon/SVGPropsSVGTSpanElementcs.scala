@@ -768,6 +768,8 @@ trait SVGPropsSVGTSpanElementcs extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGTSpanElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGTSpanElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGTSpanElement]] = js.undefined
   
@@ -2064,6 +2066,10 @@ object SVGPropsSVGTSpanElementcs {
     inline def setOnReset(value: FormEvent[SVGTSpanElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGTSpanElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGTSpanElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

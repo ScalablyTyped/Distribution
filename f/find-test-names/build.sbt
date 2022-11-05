@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "find-test-names"
-version := "1.17-dt-20220416Z-4e26f7"
+version := "1.21-dt-20221104Z-c2c887"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

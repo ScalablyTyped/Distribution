@@ -556,6 +556,8 @@ object typesTableBodyMod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLTableSectionElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLTableSectionElement]] = js.undefined
+    
     // UI Events
     var onScroll: js.UndefOr[UIEventHandler[HTMLTableSectionElement]] = js.undefined
     
@@ -1220,6 +1222,10 @@ object typesTableBodyMod {
       inline def setOnReset(value: FormEvent[HTMLTableSectionElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLTableSectionElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLTableSectionElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

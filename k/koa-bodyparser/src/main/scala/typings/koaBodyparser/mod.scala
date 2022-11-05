@@ -129,7 +129,6 @@ object mod {
     
     trait Request extends StObject {
       
-      // Fix #62921
       var body: js.UndefOr[Any] = js.undefined
       
       var rawBody: String

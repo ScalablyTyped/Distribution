@@ -766,6 +766,8 @@ trait SVGPropsSVGFETurbulenceEl extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGFETurbulenceElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGFETurbulenceElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGFETurbulenceElement]] = js.undefined
   
@@ -2060,6 +2062,10 @@ object SVGPropsSVGFETurbulenceEl {
     inline def setOnReset(value: FormEvent[SVGFETurbulenceElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGFETurbulenceElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGFETurbulenceElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

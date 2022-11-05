@@ -781,6 +781,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[SVGGElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[SVGGElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[SVGGElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[SVGGElement]] = js.undefined
@@ -2066,6 +2068,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[SVGGElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[SVGGElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -3156,6 +3162,8 @@ object mod {
     var onRateChange: js.UndefOr[ReactEventHandler[SVGPathElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[SVGPathElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[SVGPathElement]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[SVGPathElement]] = js.undefined
     
@@ -4444,6 +4452,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[SVGPathElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[SVGPathElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -5563,6 +5575,8 @@ object mod {
     var onRateChange: js.UndefOr[ReactEventHandler[SVGPathElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[SVGPathElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[SVGPathElement]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[SVGPathElement]] = js.undefined
     
@@ -6862,6 +6876,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[SVGPathElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[SVGPathElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -7956,6 +7974,8 @@ object mod {
     var onRateChange: js.UndefOr[ReactEventHandler[SVGPathElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[SVGPathElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[SVGPathElement]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[SVGPathElement]] = js.undefined
     
@@ -9243,6 +9263,10 @@ object mod {
       inline def setOnReset(value: FormEvent[SVGPathElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[SVGPathElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[SVGPathElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

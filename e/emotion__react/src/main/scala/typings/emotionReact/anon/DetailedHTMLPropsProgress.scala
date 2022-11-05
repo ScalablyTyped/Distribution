@@ -545,6 +545,8 @@ trait DetailedHTMLPropsProgress extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLProgressElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLProgressElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLProgressElement]] = js.undefined
   
@@ -1211,6 +1213,10 @@ object DetailedHTMLPropsProgress {
     inline def setOnReset(value: FormEvent[HTMLProgressElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLProgressElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLProgressElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

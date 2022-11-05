@@ -768,6 +768,8 @@ trait SVGPropsSVGMaskElementcss extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGMaskElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGMaskElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGMaskElement]] = js.undefined
   
@@ -2064,6 +2066,10 @@ object SVGPropsSVGMaskElementcss {
     inline def setOnReset(value: FormEvent[SVGMaskElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGMaskElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGMaskElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

@@ -256,6 +256,7 @@
 | 0.8537910322146964 | [aws-sdk__middleware-stack](./a/aws-sdk__middleware-stack) | Provides a means for composing multiple middleware
 | 0.8536556836854902 | [stylis](./s/stylis) | A Light–weight CSS Preprocessor
 | 0.8535427477805744 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-ini) | AWS credential provider that sources credentials f
+| 0.8534447841748323 | [has-bigints](./h/has-bigints) | Determine if the JS environment has BigInt support
 | 0.8533800859658389 | [symbol-tree](./s/symbol-tree) | Turn any collection of objects into its own effici
 | 0.8531836706527973 | [helmet](./h/helmet) | help secure Express/Connect apps with various HTTP
 | 0.8531020719444882 | [shebang-command](./s/shebang-command) | Get the command from a shebang
@@ -285,6 +286,7 @@
 | 0.8518655653296262 | [aws-sdk__is-array-buffer](./a/aws-sdk__is-array-buffer) | Provides a function for detecting if an argument i
 | 0.8518529747534027 | [react-colorful](./r/react-colorful) | 🎨 A tiny (2,8 KB) color picker component for Reac
 | 0.8518467968404999 | [strip-json-comments](./s/strip-json-comments) | Strip comments from JSON. Lets you use comments in
+| 0.8518420339251018 | [which-boxed-primitive](./w/which-boxed-primitive) | Which kind of boxed JS primitive is this?
 | 0.8517975127658814 | [get-caller-file](./g/get-caller-file) | -
 | 0.8517050400077095 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-env) | AWS credential provider that sources credentials f
 | 0.8516391904811014 | [szmarczak__http-timer](./s/szmarczak__http-timer) | Timings for HTTP requests
@@ -292,6 +294,7 @@
 | 0.8515084078909706 | [lower-case](./l/lower-case) | Transforms the string to lower case
 | 0.8514932965634392 | [internal-slot](./i/internal-slot) | ES spec-like internal slots
 | 0.8514046470772222 | [normalize-url](./n/normalize-url) | Normalize a URL
+| 0.8514024506329527 | [unbox-primitive](./u/unbox-primitive) | Unbox a boxed JS primitive value.
 | 0.8514002543846266 | [vfile](./v/vfile) | Virtual file format for text processing
 | 0.8513730364098286 | [webpack-sources](./w/webpack-sources) | Source code handling classes for webpack
 | 0.8512204805695416 | [aws-sdk__signature-v4](./a/aws-sdk__signature-v4) | A standalone implementation of the AWS Signature V
@@ -355,6 +358,7 @@
 | 0.8468597939690251 | [storybook__csf-tools](./s/storybook__csf-tools) | An experimental library to read, analyze, transfor
 | 0.8468194418675594 | [arg](./a/arg) | Unopinionated, no-frills CLI argument parser
 | 0.8467895455557927 | [slash](./s/slash) | Convert Windows backslash paths to slash paths
+| 0.8467799585697843 | [is-symbol](./i/is-symbol) | Determine if a value is an ES6 Symbol or not.
 | 0.8467132273669797 | [sinonjs__commons](./s/sinonjs__commons) | Simple functions shared among the sinon end user l
 | 0.8465735332148683 | [is-date-object](./i/is-date-object) | Is this value a JS Date object? This module works 
 | 0.8464949440152277 | [sentence-case](./s/sentence-case) | Transform into a lower case with spaces between wo
@@ -817,6 +821,7 @@
 | 0.809928285140134 | [react-responsive](./r/react-responsive) | Media queries in react for responsive design
 | 0.8098607202228657 | [fast-safe-stringify](./f/fast-safe-stringify) | Safely and quickly serialize JavaScript objects
 | 0.8098380751499659 | [workbox-cacheable-respons](./w/workbox-cacheable-response) | This library takes a Response object and determine
+| 0.8098133222486712 | [fs-minipass](./f/fs-minipass) | fs read and write streams based on minipass
 | 0.8097754590536825 | [cropperjs](./c/cropperjs) | JavaScript image cropper.
 | 0.8096206974139727 | [cli-truncate](./c/cli-truncate) | Truncate a string to a specific width in the termi
 | 0.8095684954658993 | [workbox-navigation-preloa](./w/workbox-navigation-preload) | This library allows developers to opt-in to using 
@@ -881,6 +886,7 @@
 | 0.8066497036035136 | [get-stdin](./g/get-stdin) | Get stdin as a string or buffer
 | 0.8066228483647192 | [change-case](./c/change-case) | Transform a string between camelCase, PascalCase, 
 | 0.8065579921773669 | [postcss-ordered-values](./p/postcss-ordered-values) | Ensure values are ordered consistently in your CSS
+| 0.8065508346871091 | [foreground-child](./f/foreground-child) | Run a child as if it's the foreground process.  Gi
 | 0.8065426161050717 | [keygrip](./k/keygrip) | Key signing and verification for rotated credentia
 | 0.8065273478180021 | [domexception](./d/domexception) | An implementation of the DOMException class from b
 | 0.8063840918523371 | [fault](./f/fault) | Functional errors with formatted output
@@ -1058,7 +1064,6 @@
 | 0.7953347878386411 | [stack-generator](./s/stack-generator) | Generate artificial backtrace by walking arguments
 | 0.7952394428611238 | [ts-loader](./t/ts-loader) | TypeScript loader for webpack
 | 0.7950396467035569 | [es6-weak-map](./e/es6-weak-map) | ECMAScript6 WeakMap polyfill
-| 0.7949218612985449 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.7949194505276331 | [csstools__postcss-is-pseu](./c/csstools__postcss-is-pseudo-class) | A pseudo-class for matching elements in a selector
 | 0.7947344538866984 | [file-uri-to-path](./f/file-uri-to-path) | Convert a file: URI to a file path
 | 0.7947137852135296 | [set-value](./s/set-value) | Set nested properties on an object using dot notat
@@ -2084,7 +2089,6 @@
 | 0.7452057012694997 | [micromark-extension-gfm-s](./m/micromark-extension-gfm-strikethrough) | micromark extension to support GFM strikethrough
 | 0.7450268545075153 | [bricks_dot_js](./b/bricks_dot_js) | A blazing fast masonry layout generator for fixed 
 | 0.7448829864346865 | [parse-link-header](./p/parse-link-header) | Parses a link header and returns paging informatio
-| 0.7447895465557295 | [umzug](./u/umzug) | Framework-agnostic migration tool for Node
 | 0.7447752075066613 | [feathersjs__rest-client](./f/feathersjs__rest-client) | REST client services for different Ajax libraries
 | 0.7447198222447582 | [pkg-conf](./p/pkg-conf) | Get namespaced config from the closest package.jso
 | 0.7447166751808663 | [file-selector](./f/file-selector) | Convert DataTransfer object to a list of File obje
@@ -3852,6 +3856,7 @@
 | 0.6896036779361763 | [vxna__mini-html-webpack-t](./v/vxna__mini-html-webpack-template) | Minimum viable template for mini-html-webpack-plug
 | 0.6895888959365913 | [bpmn-moddle](./b/bpmn-moddle) | A moddle wrapper for BPMN 2.0
 | 0.6895815929902737 | [cpu-features](./c/cpu-features) | A simple binding to Google's cpu_features library 
+| 0.6895568944937204 | [promise-deferred](./p/promise-deferred) | A lightweight Deferred implementation, on top of P
 | 0.6895455320286228 | [openapi-schema-validator](./o/openapi-schema-validator) | A validator for OpenAPI documents.
 | 0.6895101776030749 | [lodash_dot_noop](./l/lodash_dot_noop) | The lodash method _.noop exported as a module.
 | 0.6894877220002877 | [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat
@@ -4669,6 +4674,7 @@
 | 0.6705956131476913 | [github-label-sync](./g/github-label-sync) | Synchronise your GitHub labels with as few destruc
 | 0.6705895869270146 | [intl-locales-supported](./i/intl-locales-supported) | Utility to help you polyfill the Node.js runtime w
 | 0.6705589871054718 | [rc-tree-select](./r/rc-tree-select) | tree-select ui component for react
+| 0.670521947540484 | [svelte-range-slider-pips](./s/svelte-range-slider-pips) | Multi-Thumb, Accessible, Beautiful Range Slider wi
 | 0.6704990172555305 | [url-assembler](./u/url-assembler) | Assemble urls from route-like templates (/path/:pa
 | 0.6704981145180967 | [lodash_dot_iserror](./l/lodash_dot_iserror) | The lodash method _.isError exported as a module.
 | 0.670471195247094 | [burns](./b/burns) | Manage application events without writing spaghett
@@ -5616,6 +5622,7 @@
 | 0.6492553343094345 | [use-isomorphic-layout-eff](./u/use-isomorphic-layout-effect) | A React helper hook for scheduling a layout effect
 | 0.6491285213194222 | [parse-prefer-header](./p/parse-prefer-header) | parses an http prefer header, aka rfc7240
 | 0.6491160935186215 | [inquirer-npm-name](./i/inquirer-npm-name) | Helper function using inquirer to validate a value
+| 0.6491055212183259 | [passthrough-encoding](./p/passthrough-encoding) | An encoder that encodes buffers/strings to a buffe
 | 0.6490796464820013 | [handsontable](./h/handsontable) | Handsontable is a JavaScript Spreadsheet Component
 | 0.6490155583241988 | [webpack-blocks](./w/webpack-blocks) | Convenience package that includes all the most com
 | 0.6489803884142964 | [http-rx](./h/http-rx) | A reactive http client based on Observable and Req
@@ -6604,7 +6611,6 @@
 | 0.6153603940379252 | [randexp](./r/randexp) | Create random strings that match a given regular e
 | 0.6153560379623948 | [gsheets](./g/gsheets) | Get public Google Spreadsheets as plain JavaScript
 | 0.6153290679396893 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
-| 0.6152816327284444 | [yazl](./y/yazl) | yet another zip library for node
 | 0.6152394529489089 | [utf8](./u/utf8) | A well-tested UTF-8 encoder/decoder written in Jav
 | 0.6152362174951483 | [barnard59-core](./b/barnard59-core) | Core component of Barnard59 Linked Data pipelines
 | 0.6151520405779876 | [csscolorparser-ts](./c/csscolorparser-ts) | Parser for CSS color strings written in TypeScript
@@ -7552,7 +7558,6 @@
 | 0.5661223702179665 | [aes-js](./a/aes-js) | A pure JavaScript implementation of the AES block 
 | 0.5661218605470969 | [toml](./t/toml) | TOML parser for Node.js (parses TOML spec v0.4.0)
 | 0.5660394793225917 | [angular-hotkeys](./a/angular-hotkeys) | Automatic keyboard shortcuts for your Angular Apps
-| 0.5659194096566684 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.5659078784332887 | [angular-toastr](./a/angular-toastr) | -
 | 0.565847461708324 | [xmpp__time](./x/xmpp__time) | XMPP Date and Time Profiles for JavaScript
 | 0.5658260634338363 | [jest-each](./j/jest-each) | Parameterised tests for Jest
@@ -10941,6 +10946,7 @@
 | 0.24618862266899155 | [xtuc__long](./x/xtuc__long) | A Long class for representing a 64-bit two's-compl
 | 0.24612618831763095 | [react-addons-test-utils](./r/react-addons-test-utils) | This package provides the React TestUtils add-on.
 | 0.2459468755600706 | [mediapipe__face_detection](./m/mediapipe__face_detection) | Mediapipe Face Detection Solution
+| 0.24534065588584947 | [xsalsa20-encoding](./x/xsalsa20-encoding) | XSalsa20 codec that implements tha abstract-encodi
 | 0.24491055661942002 | [popmotion__easing](./p/popmotion__easing) | Easing functions, modifiers and generators compati
 | 0.2444090821238438 | [jquery_dot_ui_dot_layout](./j/jquery_dot_ui_dot_layout) | Jquery UI Layout package
 | 0.24421022865910097 | [umtrack-wx](./u/umtrack-wx) | 微信小程序友盟统计SDK

@@ -140,6 +140,7 @@ import typings.csstype.mod.Property.WordBreak
 import typings.csstype.mod.Property.WordWrap
 import typings.csstype.mod.Property.ZIndex
 import typings.propTypes.mod.Validator
+import typings.uiBox.anon.BoxCssPropsCssProps
 import typings.uiBox.uiBoxBooleans.`false`
 import typings.uiBox.uiBoxInts.`0`
 import org.scalablytyped.runtime.StObject
@@ -1023,7 +1024,7 @@ object distSrcTypesEnhancersMod {
     }
   }
   
-  /* Inlined ui-box.ui-box/dist/src/types/enhancers.BoxCssProps<ui-box.ui-box/dist/src/types/enhancers.CssProps> & {  marginX :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   marginY :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   paddingX :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   paddingY :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   clearfix :boolean | undefined} */
+  /* Inlined ui-box.ui-box/dist/src/types/enhancers.BoxCssProps<ui-box.ui-box/dist/src/types/enhancers.CssProps> & {  marginX :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   marginY :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   paddingX :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   paddingY :ui-box.ui-box/dist/src/types/enhancers.BoxPropValue | undefined,   clearfix :boolean | undefined,   selectors :{[selector: string] : ui-box.ui-box/dist/src/types/enhancers.BoxCssProps<ui-box.ui-box/dist/src/types/enhancers.CssProps>} | undefined} */
   trait EnhancerProps extends StObject {
     
     var alignContent: js.UndefOr[AlignContent | Double | `false` | Null] = js.undefined
@@ -1269,6 +1270,8 @@ object distSrcTypesEnhancersMod {
     var right: js.UndefOr[(Right[String | `0`]) | Double | `false` | Null] = js.undefined
     
     var rowGap: js.UndefOr[(RowGap[String | `0`]) | Double | `false` | Null] = js.undefined
+    
+    var selectors: js.UndefOr[StringDictionary[BoxCssPropsCssProps]] = js.undefined
     
     var textAlign: js.UndefOr[TextAlign | Double | `false` | Null] = js.undefined
     
@@ -2051,6 +2054,10 @@ object distSrcTypesEnhancersMod {
       
       inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
       
+      inline def setSelectors(value: StringDictionary[BoxCssPropsCssProps]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+      
       inline def setTextAlign(value: TextAlign | Double | `false`): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
       inline def setTextAlignNull: Self = StObject.set(x, "textAlign", null)
@@ -2183,7 +2190,9 @@ object distSrcTypesEnhancersMod {
   
   type PropEnhancerValueType = String | Double
   
-  type PropEnhancers = StringDictionary[js.Function1[/* value */ Any, EnhancedProp | Null]]
+  type PropEnhancers = StringDictionary[
+    js.Function2[/* value */ PropEnhancerValueType, /* selector */ String, EnhancedProp | Null]
+  ]
   
   type PropTypesMapping = StringDictionary[Validator[Any]]
   

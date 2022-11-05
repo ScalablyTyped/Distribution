@@ -1,7 +1,7 @@
 
 # Scala.js typings for lost
 
-Typings are for version 8.3
+Typings are for version 9.0
 
 ## Library description:
 LostGrid is a powerful grid system built in PostCSS that works with any preprocessor and even vanilla CSS.

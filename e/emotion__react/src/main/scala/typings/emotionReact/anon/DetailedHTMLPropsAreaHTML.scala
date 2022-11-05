@@ -556,6 +556,8 @@ trait DetailedHTMLPropsAreaHTML extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLAreaElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLAreaElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLAreaElement]] = js.undefined
   
@@ -1248,6 +1250,10 @@ object DetailedHTMLPropsAreaHTML {
     inline def setOnReset(value: FormEvent[HTMLAreaElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLAreaElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLAreaElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

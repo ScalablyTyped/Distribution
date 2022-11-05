@@ -465,9 +465,12 @@ trait Object[T]
     * @see _.get
     */
   @JSName("get")
-  def get_TPathTDefault_Union[TPath /* <: java.lang.String */, TDefault](path: TPath): (GetFieldType[T, TPath]) | TDefault = js.native
+  def get_TPathTDefault_Union[TPath /* <: java.lang.String */, TDefault](path: TPath, defaultValue: TDefault): (Exclude[GetFieldType[T, TPath], js.UndefOr[Null]]) | TDefault = js.native
+  /**
+    * @see _.get
+    */
   @JSName("get")
-  def get_TPathTDefault_Union[TPath /* <: java.lang.String */, TDefault](path: TPath, defaultValue: TDefault): (GetFieldType[T, TPath]) | TDefault = js.native
+  def get_TPath_Any[TPath /* <: java.lang.String */](path: TPath): /* import warning: importer.ImportType#apply Failed type conversion: string extends TPath ? any : lodash.lodash.GetFieldType<T, TPath> */ js.Any = js.native
   
   /**
     * @see _.groupBy

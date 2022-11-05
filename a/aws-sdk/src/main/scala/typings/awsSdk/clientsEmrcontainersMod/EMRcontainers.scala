@@ -29,6 +29,20 @@ trait EMRcontainers extends Service {
   var config_EMRcontainers: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Creates a job template. Job template stores values of StartJobRun API request in a template and can be used to start a job run. Job template allows two use cases: avoid repeating recurring StartJobRun API request values, enforcing certain values in StartJobRun API request.
+    */
+  def createJobTemplate(): Request[CreateJobTemplateResponse, AWSError] = js.native
+  def createJobTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateJobTemplateResponse, Unit]): Request[CreateJobTemplateResponse, AWSError] = js.native
+  /**
+    * Creates a job template. Job template stores values of StartJobRun API request in a template and can be used to start a job run. Job template allows two use cases: avoid repeating recurring StartJobRun API request values, enforcing certain values in StartJobRun API request.
+    */
+  def createJobTemplate(params: CreateJobTemplateRequest): Request[CreateJobTemplateResponse, AWSError] = js.native
+  def createJobTemplate(
+    params: CreateJobTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateJobTemplateResponse, Unit]
+  ): Request[CreateJobTemplateResponse, AWSError] = js.native
+  
+  /**
     * Creates a managed endpoint. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
     */
   def createManagedEndpoint(): Request[CreateManagedEndpointResponse, AWSError] = js.native
@@ -55,6 +69,20 @@ trait EMRcontainers extends Service {
     params: CreateVirtualClusterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVirtualClusterResponse, Unit]
   ): Request[CreateVirtualClusterResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a job template. Job template stores values of StartJobRun API request in a template and can be used to start a job run. Job template allows two use cases: avoid repeating recurring StartJobRun API request values, enforcing certain values in StartJobRun API request.
+    */
+  def deleteJobTemplate(): Request[DeleteJobTemplateResponse, AWSError] = js.native
+  def deleteJobTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteJobTemplateResponse, Unit]): Request[DeleteJobTemplateResponse, AWSError] = js.native
+  /**
+    * Deletes a job template. Job template stores values of StartJobRun API request in a template and can be used to start a job run. Job template allows two use cases: avoid repeating recurring StartJobRun API request values, enforcing certain values in StartJobRun API request.
+    */
+  def deleteJobTemplate(params: DeleteJobTemplateRequest): Request[DeleteJobTemplateResponse, AWSError] = js.native
+  def deleteJobTemplate(
+    params: DeleteJobTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteJobTemplateResponse, Unit]
+  ): Request[DeleteJobTemplateResponse, AWSError] = js.native
   
   /**
     * Deletes a managed endpoint. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
@@ -99,6 +127,20 @@ trait EMRcontainers extends Service {
   ): Request[DescribeJobRunResponse, AWSError] = js.native
   
   /**
+    * Displays detailed information about a specified job template. Job template stores values of StartJobRun API request in a template and can be used to start a job run. Job template allows two use cases: avoid repeating recurring StartJobRun API request values, enforcing certain values in StartJobRun API request.
+    */
+  def describeJobTemplate(): Request[DescribeJobTemplateResponse, AWSError] = js.native
+  def describeJobTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobTemplateResponse, Unit]): Request[DescribeJobTemplateResponse, AWSError] = js.native
+  /**
+    * Displays detailed information about a specified job template. Job template stores values of StartJobRun API request in a template and can be used to start a job run. Job template allows two use cases: avoid repeating recurring StartJobRun API request values, enforcing certain values in StartJobRun API request.
+    */
+  def describeJobTemplate(params: DescribeJobTemplateRequest): Request[DescribeJobTemplateResponse, AWSError] = js.native
+  def describeJobTemplate(
+    params: DescribeJobTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobTemplateResponse, Unit]
+  ): Request[DescribeJobTemplateResponse, AWSError] = js.native
+  
+  /**
     * Displays detailed information about a managed endpoint. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.
     */
   def describeManagedEndpoint(): Request[DescribeManagedEndpointResponse, AWSError] = js.native
@@ -139,6 +181,20 @@ trait EMRcontainers extends Service {
     params: ListJobRunsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobRunsResponse, Unit]
   ): Request[ListJobRunsResponse, AWSError] = js.native
+  
+  /**
+    * Lists job templates based on a set of parameters. Job template stores values of StartJobRun API request in a template and can be used to start a job run. Job template allows two use cases: avoid repeating recurring StartJobRun API request values, enforcing certain values in StartJobRun API request.
+    */
+  def listJobTemplates(): Request[ListJobTemplatesResponse, AWSError] = js.native
+  def listJobTemplates(callback: js.Function2[/* err */ AWSError, /* data */ ListJobTemplatesResponse, Unit]): Request[ListJobTemplatesResponse, AWSError] = js.native
+  /**
+    * Lists job templates based on a set of parameters. Job template stores values of StartJobRun API request in a template and can be used to start a job run. Job template allows two use cases: avoid repeating recurring StartJobRun API request values, enforcing certain values in StartJobRun API request.
+    */
+  def listJobTemplates(params: ListJobTemplatesRequest): Request[ListJobTemplatesResponse, AWSError] = js.native
+  def listJobTemplates(
+    params: ListJobTemplatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListJobTemplatesResponse, Unit]
+  ): Request[ListJobTemplatesResponse, AWSError] = js.native
   
   /**
     * Lists managed endpoints based on a set of parameters. A managed endpoint is a gateway that connects EMR Studio to Amazon EMR on EKS so that EMR Studio can communicate with your virtual cluster.

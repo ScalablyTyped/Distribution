@@ -733,6 +733,7 @@
 | [aws-sdk__url-parser-node](./a/aws-sdk__url-parser-node) | - | - |
 | [aws-sdk__url-parser-unive](./a/aws-sdk__url-parser-universal) | - | - |
 | [aws-sdk__util-arn-parser](./a/aws-sdk__util-arn-parser) | A parser to Amazon Resource Names | - |
+| [aws-sdk__util-base64](./a/aws-sdk__util-base64) | - | - |
 | [aws-sdk__util-base64-brow](./a/aws-sdk__util-base64-browser) | A pure JS Base64  UInt8Array converter | - |
 | [aws-sdk__util-base64-node](./a/aws-sdk__util-base64-node) | A Node.JS Base64  UInt8Array converter | - |
 | [aws-sdk__util-base64-univ](./a/aws-sdk__util-base64-universal) | A cross-platform Base64  UInt8Array converter | - |
@@ -3252,6 +3253,7 @@
 | [fontoxml](./f/fontoxml) | - | - |
 | [force-graph](./f/force-graph) | 2D force-directed graph rendered on HTML5 canvas | 2d, force, simulation, graph, canvas, d3 |
 | [foreach](./f/foreach) | foreach component + npm package | shim, Array.prototype.forEach, forEach, Array#forEach, each |
+| [foreground-child](./f/foreground-child) | Run a child as if it's the foreground process.  Gi | - |
 | [forest-express-sequelize](./f/forest-express-sequelize) | Official Express/Sequelize Liana for Forest | forest, admin, panel, interface, sequelize |
 | [forever-agent](./f/forever-agent) | HTTP Agent that keeps socket connections alive bet | - |
 | [forever-monitor](./f/forever-monitor) | Core forever process monitor | fault tolerant, sysadmin, tools |
@@ -3336,6 +3338,7 @@
 | [fs-finder](./f/fs-finder) | - | file, fs, finder, recursive, walk |
 | [fs-jetpack](./f/fs-jetpack) | Better file system API | fs, file system |
 | [fs-merger](./f/fs-merger) | Reads files from a real location | - |
+| [fs-minipass](./f/fs-minipass) | fs read and write streams based on minipass | - |
 | [fs-mock](./f/fs-mock) | - | fs, file system, posix, linux, windows, testing, mock |
 | [fs-plus](./f/fs-plus) | node's fs with more helpers | fs, filesystem |
 | [fs-promise](./f/fs-promise) | - | promise, fs, file, file system |
@@ -4510,6 +4513,7 @@
 | [harmony-reflect](./h/harmony-reflect) | ES5 shim for ES6 (ECMAScript 6) Reflect and Proxy  | reflection, proxies, proxy, reflect, harmony, es6 |
 | [has](./h/has) | Object.prototype.hasOwnProperty.call shortcut | - |
 | [has-ansi](./h/has-ansi) | Check if a string has ANSI escape codes | ansi, styles, color, colour, colors, terminal, console, string, tty, escape, shell, xterm, command-line, text, regex, regexp, match, test, find, pattern, has |
+| [has-bigints](./h/has-bigints) | Determine if the JS environment has BigInt support | BigInt, bigints, typeof, ES2020 |
 | [has-emoji](./h/has-emoji) | Check whether a string has any emoji | emoji, emojis, string, text, has, contains, includes, detect, is |
 | [has-flag](./h/has-flag) | Check if argv has a specific flag | has, check, detect, contains, find, flag, cli, command-line, argv, process, arg, args, argument, arguments, getopt, minimist, optimist |
 | [has-own-prop](./h/has-own-prop) | A safer .hasOwnProperty() | object, has, own, property |
@@ -5112,6 +5116,7 @@
 | [is-stream-ended](./i/is-stream-ended) | Check if a stream has ended | stream, end, ended, consumed, complete |
 | [is-string](./i/is-string) | Is this value a JS String object or primitive? Thi | String, string, ES6, toStringTag, @@toStringTag, String object |
 | [is-svg](./i/is-svg) | Check if a string or buffer is SVG | svg, vector, graphics, image, img, pic, picture, type, detect, check, is, string, str, buffer |
+| [is-symbol](./i/is-symbol) | Determine if a value is an ES6 Symbol or not. | symbol, es6, is, Symbol |
 | [is-text-path](./i/is-text-path) | Check if a file path is a text file | text, extensions, extension, file, path, check, detect, is |
 | [is-touch-device](./i/is-touch-device) | Is the current JS environment a touch device? | touch, is, documenttouch, maxtouchpoints, msmaxtouchpoints, touchpoints, ontouchstart |
 | [is-trademarked](./i/is-trademarked) | Check if a word is trademarked. | trademarked |
@@ -8331,6 +8336,7 @@
 | [passport-vkontakte](./p/passport-vkontakte) | VK.com authentication strategy for Passport. | passport, vkontakte, vk, вконтакте, auth, authn, authentication, identity |
 | [passport-windowsauth](./p/passport-windowsauth) | Passport strategy for Windows Integrated Authentic | passport, windows, auth, ntlm |
 | [passport_dot_socketio](./p/passport_dot_socketio) | access passport.js authenticated user information  | socket, socket.io, passport |
+| [passthrough-encoding](./p/passthrough-encoding) | An encoder that encodes buffers/strings to a buffe | - |
 | [passwd-user](./p/passwd-user) | Get the passwd user entry from a username or user  | passwd, linux, macos, osx, uid, gid, pw, getpwuid, posix, unix, shell, home, dir, username, user, etc, password, passwords, identifier |
 | [password](./p/password) | Memorable passwords generator | password, generator |
 | [password-hash](./p/password-hash) | Password hashing and verification for node.js | password, hash, utilities, cli |
@@ -8779,6 +8785,7 @@
 | [promise-breaker](./p/promise-breaker) | Library to help write libraries that accept both p | promise, callback, library |
 | [promise-dag](./p/promise-dag) | Chain promises declaratively using high-level grap | promise, async, graph, dag |
 | [promise-debounce](./p/promise-debounce) | Debounce any promise-returning function so that at | promise, debounce, async |
+| [promise-deferred](./p/promise-deferred) | A lightweight Deferred implementation, on top of P | promise, promises, deferred, deferreds, reject, resolve, async |
 | [promise-fn-retry](./p/promise-fn-retry) | A simple retry to be used in integrations with Nod | fetch, integration, node, request, retry, promise |
 | [promise-fs](./p/promise-fs) | Wraps FS methods using Promise | promise, promisify, fs |
 | [promise-ftp](./p/promise-ftp) | a promise-based ftp client for node.js | ftp, client, promise, node |
@@ -10406,6 +10413,7 @@
 | [safe-identifier](./s/safe-identifier) | Sanitize strings for use as JavaScript identifiers | es3, es5, esnext, reserved, words, code, generation, identifier, property |
 | [safe-json-stringify](./s/safe-json-stringify) | Prevent defined property getters from throwing err | - |
 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg | catastrophic, exponential, regex, safe, sandbox |
+| [safe-regex-test](./s/safe-regex-test) | - | - |
 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly | stable, stringify, JSON, JSON.stringify, safe, serialize, deterministic, circular, object, predicable, repeatable, fast, bigint |
 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns | - |
@@ -11258,6 +11266,7 @@
 | [suspend-react](./s/suspend-react) | Integrate React Suspense into your apps | react, suspense, resource, asset |
 | [svelte](./s/svelte) | Cybernetically enhanced web apps | UI, framework, templates, templating |
 | [svelte-leafletjs](./s/svelte-leafletjs) | Svelte component for leaflet | svelte, leaflet |
+| [svelte-range-slider-pips](./s/svelte-range-slider-pips) | Multi-Thumb, Accessible, Beautiful Range Slider wi | svelte, component, ui, input, range, slider, thumb, handle, min, max, accessible, pretty, pip, pips, notch, notches, simey, simon |
 | [svg-arc-to-cubic-bezier](./s/svg-arc-to-cubic-bezier) | A function that takes an SVG arc curve as input, a | arc, bezier, convert, cubic, curve, path, svg |
 | [svg-baker-runtime](./s/svg-baker-runtime) | - | - |
 | [svg-injector](./s/svg-injector) | Fast, caching, dynamic inline SVG DOM injection li | SVG, Scalable Vector Graphics, SVG injector, images, img, html, DOM |
@@ -11304,7 +11313,6 @@
 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify | swagger, api, apis, restify |
 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects | swagger, api, apis, sails |
 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema | swagger, schema, api |
-| [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor | api, observability, telemetry, node, express, koa, hapi, fastify, rest, statistics, monitoring, alerting, swagger, openapi, schema, prometheus, metrics, elasticsearch, kibana, grafana |
 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg | api, connect, middleware, swagger |
 | [swagger-ui](./s/swagger-ui) | - | - |
 | [swagger-ui-dist](./s/swagger-ui-dist) | - | - |
@@ -11465,7 +11473,6 @@
 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin. | testcafe, reporter, plugin |
 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets | - |
 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y | chrome, version |
-| [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut | testing, cypress, ui, dom, integration, functional, end-to-end, e2e |
 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements | testing, dom, jasmine, matchers, jsdom |
 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
@@ -11850,7 +11857,7 @@
 | [umijs__ssr-darkreader](./u/umijs__ssr-darkreader) | Dark mode for every website | dark-theme, dark-mode, night-mode, darkmode, nightmode, accessibility, eye-care |
 | [umijs__use-params](./u/umijs__use-params) | - | react, react-hooks, urlsearchparams, url-query, url, state |
 | [umtrack-wx](./u/umtrack-wx) | 微信小程序友盟统计SDK | umeng, weixin, wx |
-| [umzug](./u/umzug) | Framework-agnostic migration tool for Node | migrate, migration, migrations, sequelize, database |
+| [unbox-primitive](./u/unbox-primitive) | Unbox a boxed JS primitive value. | unbox, boxed, primitive, object, javascript, ecmascript |
 | [unbzip2-stream](./u/unbzip2-stream) | streaming unbzip2 implementation in pure javascrip | bzip, bzip2, bz2, stream, streaming, decompress, through |
 | [unc-path-regex](./u/unc-path-regex) | Regular expression for testing if a file path is a | absolute, expression, file, filepath, match, matching, path, regex, regexp, regular, unc, win, windows |
 | [uncontrollable](./u/uncontrollable) | Wrap a controlled react component, to allow specif | uncontrolled-component, react-component, input, controlled, uncontrolled, form |
@@ -12448,6 +12455,7 @@
 | [when-dom-ready](./w/when-dom-ready) | $(document).ready() for the 21st century | check, dom, loaded, ready, promise, async, asynchronous, pure |
 | [wherearewe](./w/wherearewe) | Detect the current environment | - |
 | [which](./w/which) | Like which(1) unix command. Find the first instanc | - |
+| [which-boxed-primitive](./w/which-boxed-primitive) | Which kind of boxed JS primitive is this? | boxed, primitive, object, ecmascript, javascript, which |
 | [which-pm](./w/which-pm) | Detects what package manager was used for installa | npm, pnpm, yarn |
 | [which-pm-runs](./w/which-pm-runs) | Detects what package manager executes the process | npm, pnpm, yarn, cnpm |
 | [which-polygon](./w/which-polygon) | Index for matching points against a set of GeoJSON | index, polygon, geojson, query |
@@ -12675,6 +12683,7 @@
 | [xregexp](./x/xregexp) | Extended regular expressions | regex, regexp, regular expression, unicode |
 | [xrm](./x/xrm) | - | - |
 | [xsalsa20](./x/xsalsa20) | XSalsa20 implemented in Javascript and WebAssembly | - |
+| [xsalsa20-encoding](./x/xsalsa20-encoding) | XSalsa20 codec that implements tha abstract-encodi | xsalsa20, codec, value, encoding |
 | [xsd-schema-validator](./x/xsd-schema-validator) | A (XSD) schema validator for nodejs | xsd, xml, schema, validator, validation |
 | [xsockets](./x/xsockets) | a socket optimized for cross-domain use for the we | cross-domain, cors, socket, sockets |
 | [xss](./x/xss) | Sanitize untrusted HTML (to prevent XSS) with a co | sanitization, xss, sanitize, sanitisation, input, security, escape, encode, filter, validator, html, injection, whitelist |
@@ -12718,7 +12727,6 @@
 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises | yauzl, unzip, zip, promise, async, await |
 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling | yaml |
 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
-| [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
 | [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |

@@ -66,7 +66,8 @@ object mod {
     
     var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] = js.undefined
     
-    var onResize: js.UndefOr[js.Function1[/* size */ Height, Unit]] = js.undefined
+    @JSName("onResize")
+    var onResize_TextAreaProps: js.UndefOr[js.Function1[/* size */ Height, Unit]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
   }

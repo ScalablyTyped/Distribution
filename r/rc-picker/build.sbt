@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-picker"
-version := "3.0.0-4-26ce4b"
+version := "3.0.0-4-f0e9a7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,9 +9,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dayjs" % "1.11.6-153a22",
   "org.scalablytyped" %%% "moment" % "2.29.4-dbaff2",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "rc-motion" % "2.6.2-206876",
-  "org.scalablytyped" %%% "rc-trigger" % "5.3.3-d86c9a",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "rc-motion" % "2.6.2-f2ccaa",
+  "org.scalablytyped" %%% "rc-trigger" % "5.3.3-6868b7",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

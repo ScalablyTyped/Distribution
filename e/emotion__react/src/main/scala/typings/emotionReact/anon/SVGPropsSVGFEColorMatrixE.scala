@@ -766,6 +766,8 @@ trait SVGPropsSVGFEColorMatrixE extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGFEColorMatrixElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGFEColorMatrixElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGFEColorMatrixElement]] = js.undefined
   
@@ -2060,6 +2062,10 @@ object SVGPropsSVGFEColorMatrixE {
     inline def setOnReset(value: FormEvent[SVGFEColorMatrixElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGFEColorMatrixElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGFEColorMatrixElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

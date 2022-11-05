@@ -14,7 +14,8 @@ object distSrcEnhancePropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(rawProps: EnhancerProps & ComponentPropsWithoutRef[Any]): EnhancedPropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawProps.asInstanceOf[js.Any]).asInstanceOf[EnhancedPropsResult]
+  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any]): EnhancedPropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[EnhancedPropsResult]
+  inline def default(props: EnhancerProps & ComponentPropsWithoutRef[Any], selectorHead: String): EnhancedPropsResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], selectorHead.asInstanceOf[js.Any])).asInstanceOf[EnhancedPropsResult]
   
   trait EnhancedPropsResult extends StObject {
     
@@ -39,6 +40,6 @@ object distSrcEnhancePropsMod {
   
   type PreservedProps = Without[
     ComponentProps[Any], 
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 144, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
   ]
 }

@@ -6,6 +6,7 @@ import typings.findTestNames.findTestNamesBooleans.`true`
 import typings.findTestNames.findTestNamesStrings.suite
 import typings.findTestNames.findTestNamesStrings.test
 import typings.std.Record
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +23,10 @@ object mod {
   
   inline def filterByEffectiveTags(structure: String, tags: js.Array[String]): js.Array[Test] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterByEffectiveTags")(structure.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Array[Test]]
   inline def filterByEffectiveTags(structure: Structure, tags: js.Array[String]): js.Array[Test] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterByEffectiveTags")(structure.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Array[Test]]
+  
+  inline def findEffectiveTestTags(source: String): Record[String, Tags] = ^.asInstanceOf[js.Dynamic].applyDynamic("findEffectiveTestTags")(source.asInstanceOf[js.Any]).asInstanceOf[Record[String, Tags]]
+  
+  inline def findEffectiveTestTagsIn(specFilename: String): ReturnType[js.Function1[/* source */ String, Record[String, Tags]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findEffectiveTestTagsIn")(specFilename.asInstanceOf[js.Any]).asInstanceOf[ReturnType[js.Function1[/* source */ String, Record[String, Tags]]]]
   
   inline def formatTestList(tests: js.Array[Test | Suite]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTestList")(tests.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def formatTestList(tests: js.Array[Test | Suite], indent: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTestList")(tests.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]

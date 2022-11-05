@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nookies"
-version := "2.5.2-eb6308"
+version := "2.5.2-42cef7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,16 +12,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221101Z-8725a4",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20221104Z-577aac",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",
-  "org.scalablytyped" %%% "next" % "13.0.2-5f35f3",
+  "org.scalablytyped" %%% "next" % "13.0.2-d61cad",
   "org.scalablytyped" %%% "next__env" % "13.0.2-cb900f",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "postcss" % "8.4.18-a78a45",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-33ed42",
   "org.scalablytyped" %%% "re2" % "1.17.7-a226e5",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "schema-utils" % "4.0.0-3da904",
   "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-3b575f",

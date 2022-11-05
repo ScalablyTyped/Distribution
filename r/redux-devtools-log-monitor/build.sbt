@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-devtools-log-monitor"
-version := "2.1.0-5dee60"
+version := "2.1.0-044eae"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "base16" % "1.0.0-dt-20220818Z-2271fe",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "redux" % "4.2.0-6b25b9",
-  "org.scalablytyped" %%% "redux-devtools" % "3.7.0-b4dfcd",
-  "org.scalablytyped" %%% "redux-devtools-dock-monitor" % "1.2.0-89fd61",
+  "org.scalablytyped" %%% "redux-devtools" % "3.7.0-dc84cd",
+  "org.scalablytyped" %%% "redux-devtools-dock-monitor" % "1.2.0-2a3298",
   "org.scalablytyped" %%% "redux-devtools-instrument" % "1.10.0-3dd19b",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

@@ -674,6 +674,20 @@ trait EC2 extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Removes your Amazon Web Services account from the launch permissions for the specified AMI. For more information, see Cancel sharing an AMI with your Amazon Web Services account in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def cancelImageLaunchPermission(): Request[CancelImageLaunchPermissionResult, AWSError] = js.native
+  def cancelImageLaunchPermission(callback: js.Function2[/* err */ AWSError, /* data */ CancelImageLaunchPermissionResult, Unit]): Request[CancelImageLaunchPermissionResult, AWSError] = js.native
+  /**
+    * Removes your Amazon Web Services account from the launch permissions for the specified AMI. For more information, see Cancel sharing an AMI with your Amazon Web Services account in the Amazon Elastic Compute Cloud User Guide.
+    */
+  def cancelImageLaunchPermission(params: CancelImageLaunchPermissionRequest): Request[CancelImageLaunchPermissionResult, AWSError] = js.native
+  def cancelImageLaunchPermission(
+    params: CancelImageLaunchPermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelImageLaunchPermissionResult, Unit]
+  ): Request[CancelImageLaunchPermissionResult, AWSError] = js.native
+  
+  /**
     * Cancels an in-process import virtual machine or import snapshot task.
     */
   def cancelImportTask(): Request[CancelImportTaskResult, AWSError] = js.native

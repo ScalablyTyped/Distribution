@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__fetch-http-handler
 
-Typings are for version 3.201.0
+Typings are for version 3.204.0
 
 ## Library description:
 Provides a way to make requests

@@ -543,6 +543,8 @@ trait DetailedHTMLPropsHTMLAttrAriaautocomplete extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLPreElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLPreElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLPreElement]] = js.undefined
   
@@ -1203,6 +1205,10 @@ object DetailedHTMLPropsHTMLAttrAriaautocomplete {
     inline def setOnReset(value: FormEvent[HTMLPreElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLPreElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLPreElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

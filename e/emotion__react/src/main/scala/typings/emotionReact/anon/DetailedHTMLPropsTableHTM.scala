@@ -561,6 +561,8 @@ trait DetailedHTMLPropsTableHTM extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLTableElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLTableElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLTableElement]] = js.undefined
   
@@ -1251,6 +1253,10 @@ object DetailedHTMLPropsTableHTM {
     inline def setOnReset(value: FormEvent[HTMLTableElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLTableElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLTableElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

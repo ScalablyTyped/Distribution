@@ -487,6 +487,8 @@ object distCommonjsCollectionsFormFormButtonMod extends Shortcut {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLButtonElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLButtonElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
@@ -1267,6 +1269,10 @@ object distCommonjsCollectionsFormFormButtonMod extends Shortcut {
       inline def setOnReset(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLButtonElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

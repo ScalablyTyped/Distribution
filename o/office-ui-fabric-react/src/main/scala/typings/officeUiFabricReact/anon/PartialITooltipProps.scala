@@ -404,6 +404,8 @@ trait PartialITooltipProps extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLDivElement | TooltipBase]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement | TooltipBase]] = js.undefined
+  
   var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement | TooltipBase]] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement | TooltipBase]] = js.undefined
@@ -1088,6 +1090,10 @@ object PartialITooltipProps {
     inline def setOnReset(value: FormEvent[HTMLDivElement | TooltipBase] => scala.Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLDivElement | TooltipBase, Event] => scala.Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLDivElement | TooltipBase, NativeUIEvent] => scala.Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

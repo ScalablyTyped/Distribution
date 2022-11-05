@@ -394,6 +394,8 @@ trait PickIIconPropsExcludekeyo extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
+  
   var onScroll: js.UndefOr[UIEventHandler[HTMLElement]] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
@@ -1058,6 +1060,10 @@ object PickIIconPropsExcludekeyo {
     inline def setOnReset(value: FormEvent[HTMLElement] => scala.Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLElement, Event] => scala.Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLElement, NativeUIEvent] => scala.Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

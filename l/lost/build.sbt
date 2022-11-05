@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lost"
-version := "8.3-dt-20220512Z-4e0b99"
+version := "9.0-dt-20221104Z-4ea298"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -22,6 +22,11 @@ object anon {
       * An 'error' event is emitted if verification fails.Default: true.
       */
     var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * sockePath string | null (optional) - Default: null - An IPC endpoint, either Unix domain socket or Windows named pipe
+      */
+    var socketPath: js.UndefOr[String | Null] = js.undefined
   }
   object Cert {
     
@@ -43,6 +48,12 @@ object anon {
       inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
       inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      
+      inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+      
+      inline def setSocketPathNull: Self = StObject.set(x, "socketPath", null)
+      
+      inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     }
   }
 }

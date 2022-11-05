@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-sankey"
-version := "0.11-dt-20211202Z-3b186e"
+version := "0.12-dt-20221104Z-e21e46"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

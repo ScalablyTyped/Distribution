@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__react-native"
-version := "5.0.2-e3ff01"
+version := "5.0.2-c0a43c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,13 +8,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "hammerjs" % "2.0.8-dt-20220819Z-1822f7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-ebe936",
-  "org.scalablytyped" %%% "react-native-collapsible" % "1.6.0-83919f",
-  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.8.0-c43c7e",
-  "org.scalablytyped" %%% "react-native-modal-popover" % "2.1.0-9744e6",
-  "org.scalablytyped" %%% "react-native-picker__picker" % "2.4.7-b6f15a",
-  "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-4acc51",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-3962e1",
+  "org.scalablytyped" %%% "react-native-collapsible" % "1.6.0-62d2a1",
+  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.8.0-c61c01",
+  "org.scalablytyped" %%% "react-native-modal-popover" % "2.1.0-3e037f",
+  "org.scalablytyped" %%% "react-native-picker__picker" % "2.4.7-4aa735",
+  "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-4af8b1",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

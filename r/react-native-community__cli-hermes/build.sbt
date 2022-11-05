@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-community__cli-hermes"
-version := "9.3.0-6983cd"
+version := "9.3.1-0fa063"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

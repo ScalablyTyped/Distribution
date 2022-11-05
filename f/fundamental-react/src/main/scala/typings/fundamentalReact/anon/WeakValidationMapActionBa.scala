@@ -599,6 +599,10 @@ trait WeakValidationMapActionBa extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.FormEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.FormEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : undefined extends react.react.FormEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.FormEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : react.react.Validator<react.react.FormEventHandler<std.HTMLDivElement> | undefined | undefined> */ js.Any
   ] = js.undefined
   
+  var onResize: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : undefined extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
   var onScroll: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : undefined extends react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : react.react.Validator<react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined> */ js.Any
   ] = js.undefined
@@ -1639,6 +1643,12 @@ object WeakValidationMapActionBa {
     ): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : undefined extends react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : react.react.Validator<react.react.ReactEventHandler<std.HTMLDivElement> | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : undefined extends react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined ? react.react.Validator<react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined | null | undefined> : react.react.Validator<react.react.UIEventHandler<std.HTMLDivElement> | undefined | undefined> */ js.Any

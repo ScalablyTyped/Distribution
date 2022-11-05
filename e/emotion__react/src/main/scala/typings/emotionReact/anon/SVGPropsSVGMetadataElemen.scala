@@ -766,6 +766,8 @@ trait SVGPropsSVGMetadataElemen extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[SVGMetadataElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[SVGMetadataElement]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[UIEventHandler[SVGMetadataElement]] = js.undefined
   
@@ -2060,6 +2062,10 @@ object SVGPropsSVGMetadataElemen {
     inline def setOnReset(value: FormEvent[SVGMetadataElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[SVGMetadataElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[SVGMetadataElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

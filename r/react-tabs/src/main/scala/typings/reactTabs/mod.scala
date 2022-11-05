@@ -551,6 +551,8 @@ object mod {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLUListElement]] = js.undefined
     
+    var onResize: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
+    
     var onScroll: js.UndefOr[UIEventHandler[HTMLUListElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
@@ -1544,6 +1546,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLUListElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLUListElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -2262,6 +2268,8 @@ object mod {
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
@@ -3262,6 +3270,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -3984,6 +3996,8 @@ object mod {
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLLIElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLLIElement]] = js.undefined
     
@@ -4984,6 +4998,10 @@ object mod {
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
+      inline def setOnResize(value: SyntheticEvent[HTMLLIElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      
       inline def setOnScroll(value: UIEvent[HTMLLIElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -5722,6 +5740,8 @@ object mod {
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
@@ -6757,6 +6777,10 @@ object mod {
       inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

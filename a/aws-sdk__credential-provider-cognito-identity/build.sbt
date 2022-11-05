@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-provider-cognito-identity"
-version := "3.202.0-7a946b"
+version := "3.204.0-17f9c3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity" % "3.202.0-6d6df3",
-  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.201.0-5cf045",
+  "org.scalablytyped" %%% "aws-sdk__client-cognito-identity" % "3.204.0-f8e40d",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.204.0-207ee5",
   "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.201.0-ddb507",
   "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.201.0-ae6d59",
   "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.201.0-152889",

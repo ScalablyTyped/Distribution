@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "expo-font"
-version := "10.2.1-50414b"
+version := "10.2.1-51fbd2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "expo-asset" % "8.6.1-e5ada7",
-  "org.scalablytyped" %%% "expo-constants" % "13.2.4-a18b81",
-  "org.scalablytyped" %%% "expo-modules-core" % "0.11.8-d17e57",
+  "org.scalablytyped" %%% "expo-asset" % "8.6.1-16c6f0",
+  "org.scalablytyped" %%% "expo-constants" % "13.2.4-8f27e9",
+  "org.scalablytyped" %%% "expo-modules-core" % "0.11.8-170620",
   "org.scalablytyped" %%% "expo__config-types" % "46.0.2-adb196",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-ebe936",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-3962e1",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

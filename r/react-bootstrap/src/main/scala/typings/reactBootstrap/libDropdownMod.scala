@@ -183,7 +183,7 @@ object libDropdownMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.DOMAttributes because var conflicts: onSelect. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onMouseUp, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onMouseDown, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, children, onCanPlayThrough, onClick, onLoad, onLoadedMetadata, onSeeked, onChange, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
+  - typings.react.mod.DOMAttributes because var conflicts: onSelect. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onMouseUp, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onMouseDown, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, children, onResize, onCanPlayThrough, onClick, onLoad, onLoadedMetadata, onSeeked, onChange, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
   - typings.react.mod.HTMLAttributes because var conflicts: id, onSelect, role. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, className, unselectable, datatype, itemProp, title, autoCorrect, results
   - typings.react.mod.AllHTMLAttributes because var conflicts: disabled, id, onSelect, open, role. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, content, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, rel, maxLength, manifest, colSpan, data, formEncType, pattern, form, accept, step, defer, shape, value, cite, minLength, cellSpacing, label, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, autoFocus, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
   - typings.react.mod.HTMLProps because var conflicts: disabled, id, onSelect, open, role. Inlined  */ trait DropdownProps
@@ -531,6 +531,8 @@ object libDropdownMod {
     var onRateChange: js.UndefOr[ReactEventHandler[Dropdown]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[Dropdown]] = js.undefined
+    
+    var onResize: js.UndefOr[ReactEventHandler[Dropdown]] = js.undefined
     
     // UI Events
     var onScroll: js.UndefOr[UIEventHandler[Dropdown]] = js.undefined
@@ -1311,6 +1313,10 @@ object libDropdownMod {
       inline def setOnReset(value: FormEvent[Dropdown] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnResize(value: SyntheticEvent[Dropdown, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnScroll(value: UIEvent[Dropdown, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

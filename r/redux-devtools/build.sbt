@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "redux-devtools"
-version := "3.7.0-b4dfcd"
+version := "3.7.0-dc84cd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "redux" % "4.2.0-6b25b9",
   "org.scalablytyped" %%% "redux-devtools-instrument" % "1.10.0-3dd19b",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__fetch-http-handler"
-version := "3.201.0-5cf045"
+version := "3.204.0-207ee5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

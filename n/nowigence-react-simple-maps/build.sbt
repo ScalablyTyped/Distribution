@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nowigence-react-simple-maps"
-version := "1.0-dt-20220713Z-aad9c4"
+version := "1.0-dt-20220713Z-477dc1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-zoom" % "3.0-dt-20220624Z-8ced9f",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20220713Z-c7b900",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

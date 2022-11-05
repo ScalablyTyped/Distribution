@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__annotations"
-version := "0.80.0-9b6990"
+version := "0.80.0-cb4822"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
   "org.scalablytyped" %%% "d3-path" % "3.0-dt-20220310Z-d2c2a8",
   "org.scalablytyped" %%% "d3-shape" % "3.1-dt-20220624Z-f5f0fe",
-  "org.scalablytyped" %%% "nivo__core" % "0.80.0-d160d5",
+  "org.scalablytyped" %%% "nivo__core" % "0.80.0-825d26",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221027Z-1a0a13",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

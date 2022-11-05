@@ -379,6 +379,8 @@ trait PartialMenuProps extends StObject {
   
   var onReset: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
   
+  var onResize: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
+  
   var onScroll: js.UndefOr[UIEventHandler[HTMLElement]] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
@@ -1025,6 +1027,10 @@ object PartialMenuProps {
     inline def setOnReset(value: FormEvent[HTMLElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+    
+    inline def setOnResize(value: SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     inline def setOnScroll(value: UIEvent[HTMLElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

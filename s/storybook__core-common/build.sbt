@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "storybook__core-common"
-version := "6.5.13-627d50"
+version := "6.5.13-2ddf2d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "ajv" % "8.11.0-6482f2",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-b67249",
-  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-bf895e",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.1-1ab1d1",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-114ca7",
-  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-aa17f1",
-  "org.scalablytyped" %%% "babel__types" % "7.20.0-d18d74",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-a9564c",
+  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-412870",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.2-663c13",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-3ac905",
+  "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-b54012",
+  "org.scalablytyped" %%% "babel__types" % "7.20.2-5a1686",
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6f817a",
   "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-4cfc23",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
