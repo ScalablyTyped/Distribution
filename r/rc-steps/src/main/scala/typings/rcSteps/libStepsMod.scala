@@ -1,57 +1,41 @@
 package typings.rcSteps
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.rcSteps.anon.Current
 import typings.rcSteps.anon.Description
 import typings.rcSteps.anon.Index
 import typings.rcSteps.libInterfaceMod.Icons
 import typings.rcSteps.libInterfaceMod.Status
 import typings.rcSteps.libStepMod.StepProps
 import typings.rcSteps.rcStepsStrings.`inline`
+import typings.rcSteps.rcStepsStrings.default
 import typings.rcSteps.rcStepsStrings.horizontal
 import typings.rcSteps.rcStepsStrings.navigation
 import typings.rcSteps.rcStepsStrings.small
 import typings.rcSteps.rcStepsStrings.vertical
 import typings.react.mod.CSSProperties
-import typings.react.mod.Component
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libStepsMod {
   
-  @JSImport("rc-steps/lib/Steps", JSImport.Default)
-  @js.native
-  open class default () extends Steps
-  /* static members */
   object default {
+    
+    inline def apply(props: StepsProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("rc-steps/lib/Steps", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("rc-steps/lib/Steps", "default.Step")
-    @js.native
-    def Step: Instantiable0[typings.rcSteps.libStepMod.default] = js.native
-    inline def Step_=(x: Instantiable0[typings.rcSteps.libStepMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
-    
-    @JSImport("rc-steps/lib/Steps", "default.defaultProps")
-    @js.native
-    def defaultProps: Current = js.native
-    inline def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    /* was `typeof imported_Step.default` */
+    inline def Step(props: StepProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Step")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   }
   
   type ProgressDotRender = js.Function2[/* iconDot */ Any, /* info */ Description, ReactNode]
   
   type StepIconRender = js.Function1[/* info */ Index, ReactNode]
-  
-  @js.native
-  trait Steps
-    extends Component[StepsProps, js.Object, Any] {
-    
-    def onStepClick(next: Double): Unit = js.native
-  }
   
   trait StepsProps extends StObject {
     
@@ -81,7 +65,7 @@ object libStepsMod {
     
     var progressDot: js.UndefOr[ProgressDotRender | Boolean] = js.undefined
     
-    var size: js.UndefOr[typings.rcSteps.rcStepsStrings.default | small] = js.undefined
+    var size: js.UndefOr[default | small] = js.undefined
     
     var status: js.UndefOr[Status] = js.undefined
     
@@ -89,7 +73,7 @@ object libStepsMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[typings.rcSteps.rcStepsStrings.default | navigation | `inline`] = js.undefined
+    var `type`: js.UndefOr[default | navigation | `inline`] = js.undefined
   }
   object StepsProps {
     
@@ -156,7 +140,7 @@ object libStepsMod {
       
       inline def setProgressDotUndefined: Self = StObject.set(x, "progressDot", js.undefined)
       
-      inline def setSize(value: typings.rcSteps.rcStepsStrings.default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -172,7 +156,7 @@ object libStepsMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: typings.rcSteps.rcStepsStrings.default | navigation | `inline`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: default | navigation | `inline`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

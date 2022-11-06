@@ -1242,14 +1242,14 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<wouter.wouter.RouterProps> & {  children :react.react.ReactNode} */
+  /* Inlined std.Partial<wouter.wouter.RouterProps> & {  children :wouter.wouter.ReactNode} */
   trait PartialRouterPropschildre extends StObject {
     
     var base: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
       ] = js.undefined
     
-    var children: ReactNode
+    var children: typings.wouter.mod.ReactNode
     
     var hook: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any
@@ -1274,7 +1274,9 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: typings.wouter.mod.ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

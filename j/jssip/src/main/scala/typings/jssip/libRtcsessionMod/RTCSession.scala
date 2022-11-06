@@ -1,6 +1,7 @@
 package typings.jssip.libRtcsessionMod
 
 import typings.events.mod.EventEmitter
+import typings.events.mod.Listener
 import typings.jssip.jssipStrings.accepted
 import typings.jssip.jssipStrings.confirmed
 import typings.jssip.jssipStrings.connecting
@@ -90,7 +91,7 @@ open class RTCSession () extends EventEmitter {
   @JSName("on")
   def on_failed(`type`: failed, listener: EndListener): this.type = js.native
   @JSName("on")
-  def on_getusermediafailed(`type`: getusermediafailed, listener: AnyListener): this.type = js.native
+  def on_getusermediafailed(`type`: getusermediafailed, listener: Listener): this.type = js.native
   @JSName("on")
   def on_hold(`type`: hold, listener: HoldListener): this.type = js.native
   @JSName("on")
@@ -104,13 +105,13 @@ open class RTCSession () extends EventEmitter {
   @JSName("on")
   def on_peerconnection(`type`: peerconnection, listener: PeerConnectionListener): this.type = js.native
   @JSName("on")
-  def on_peerconnectioncreateanswerfailed(`type`: peerconnectionColoncreateanswerfailed, listener: AnyListener): this.type = js.native
+  def on_peerconnectioncreateanswerfailed(`type`: peerconnectionColoncreateanswerfailed, listener: Listener): this.type = js.native
   @JSName("on")
-  def on_peerconnectioncreateofferfailed(`type`: peerconnectionColoncreateofferfailed, listener: AnyListener): this.type = js.native
+  def on_peerconnectioncreateofferfailed(`type`: peerconnectionColoncreateofferfailed, listener: Listener): this.type = js.native
   @JSName("on")
-  def on_peerconnectionsetlocaldescriptionfailed(`type`: peerconnectionColonsetlocaldescriptionfailed, listener: AnyListener): this.type = js.native
+  def on_peerconnectionsetlocaldescriptionfailed(`type`: peerconnectionColonsetlocaldescriptionfailed, listener: Listener): this.type = js.native
   @JSName("on")
-  def on_peerconnectionsetremotedescriptionfailed(`type`: peerconnectionColonsetremotedescriptionfailed, listener: AnyListener): this.type = js.native
+  def on_peerconnectionsetremotedescriptionfailed(`type`: peerconnectionColonsetremotedescriptionfailed, listener: Listener): this.type = js.native
   @JSName("on")
   def on_progress(`type`: progress, listener: CallListener): this.type = js.native
   @JSName("on")

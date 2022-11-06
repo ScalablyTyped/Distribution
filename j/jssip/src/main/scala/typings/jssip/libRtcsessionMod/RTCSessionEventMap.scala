@@ -1,5 +1,6 @@
 package typings.jssip.libRtcsessionMod
 
+import typings.events.mod.Listener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ trait RTCSessionEventMap extends StObject {
   
   def getusermediafailed(args: Any*): Unit
   @JSName("getusermediafailed")
-  var getusermediafailed_Original: AnyListener
+  var getusermediafailed_Original: Listener
   
   def hold(event: HoldEvent): Unit
   @JSName("hold")
@@ -47,22 +48,22 @@ trait RTCSessionEventMap extends StObject {
   @JSName("peerconnection:createanswerfailed")
   def peerconnectionColoncreateanswerfailed(args: Any*): Unit
   @JSName("peerconnection:createanswerfailed")
-  var peerconnectionColoncreateanswerfailed_Original: AnyListener
+  var peerconnectionColoncreateanswerfailed_Original: Listener
   
   @JSName("peerconnection:createofferfailed")
   def peerconnectionColoncreateofferfailed(args: Any*): Unit
   @JSName("peerconnection:createofferfailed")
-  var peerconnectionColoncreateofferfailed_Original: AnyListener
+  var peerconnectionColoncreateofferfailed_Original: Listener
   
   @JSName("peerconnection:setlocaldescriptionfailed")
   def peerconnectionColonsetlocaldescriptionfailed(args: Any*): Unit
   @JSName("peerconnection:setlocaldescriptionfailed")
-  var peerconnectionColonsetlocaldescriptionfailed_Original: AnyListener
+  var peerconnectionColonsetlocaldescriptionfailed_Original: Listener
   
   @JSName("peerconnection:setremotedescriptionfailed")
   def peerconnectionColonsetremotedescriptionfailed(args: Any*): Unit
   @JSName("peerconnection:setremotedescriptionfailed")
-  var peerconnectionColonsetremotedescriptionfailed_Original: AnyListener
+  var peerconnectionColonsetremotedescriptionfailed_Original: Listener
   
   @JSName("peerconnection")
   var peerconnection_Original: PeerConnectionListener
@@ -109,17 +110,17 @@ object RTCSessionEventMap {
     connecting: /* event */ ConnectingEvent => Unit,
     ended: /* event */ EndEvent => Unit,
     failed: /* event */ EndEvent => Unit,
-    getusermediafailed: AnyListener,
+    getusermediafailed: Listener,
     hold: /* event */ HoldEvent => Unit,
     icecandidate: /* event */ IceCandidateEvent => Unit,
     muted: /* event */ MediaConstraints => Unit,
     newDTMF: (/* event */ IncomingDTMFEvent) | (/* event */ OutgoingDTMFEvent) => Unit,
     newInfo: (/* event */ IncomingInfoEvent) | (/* event */ OutgoingInfoEvent) => Unit,
     peerconnection: /* event */ PeerConnectionEvent => Unit,
-    peerconnectionColoncreateanswerfailed: AnyListener,
-    peerconnectionColoncreateofferfailed: AnyListener,
-    peerconnectionColonsetlocaldescriptionfailed: AnyListener,
-    peerconnectionColonsetremotedescriptionfailed: AnyListener,
+    peerconnectionColoncreateanswerfailed: Listener,
+    peerconnectionColoncreateofferfailed: Listener,
+    peerconnectionColonsetlocaldescriptionfailed: Listener,
+    peerconnectionColonsetremotedescriptionfailed: Listener,
     progress: (/* event */ IncomingEvent) | (/* event */ OutgoingEvent) => Unit,
     refer: /* event */ ReferEvent => Unit,
     reinvite: /* event */ ReInviteEvent => Unit,
@@ -150,7 +151,7 @@ object RTCSessionEventMap {
     
     inline def setFailed(value: /* event */ EndEvent => Unit): Self = StObject.set(x, "failed", js.Any.fromFunction1(value))
     
-    inline def setGetusermediafailed(value: AnyListener): Self = StObject.set(x, "getusermediafailed", value.asInstanceOf[js.Any])
+    inline def setGetusermediafailed(value: Listener): Self = StObject.set(x, "getusermediafailed", value.asInstanceOf[js.Any])
     
     inline def setHold(value: /* event */ HoldEvent => Unit): Self = StObject.set(x, "hold", js.Any.fromFunction1(value))
     
@@ -164,13 +165,13 @@ object RTCSessionEventMap {
     
     inline def setPeerconnection(value: /* event */ PeerConnectionEvent => Unit): Self = StObject.set(x, "peerconnection", js.Any.fromFunction1(value))
     
-    inline def setPeerconnectionColoncreateanswerfailed(value: AnyListener): Self = StObject.set(x, "peerconnection:createanswerfailed", value.asInstanceOf[js.Any])
+    inline def setPeerconnectionColoncreateanswerfailed(value: Listener): Self = StObject.set(x, "peerconnection:createanswerfailed", value.asInstanceOf[js.Any])
     
-    inline def setPeerconnectionColoncreateofferfailed(value: AnyListener): Self = StObject.set(x, "peerconnection:createofferfailed", value.asInstanceOf[js.Any])
+    inline def setPeerconnectionColoncreateofferfailed(value: Listener): Self = StObject.set(x, "peerconnection:createofferfailed", value.asInstanceOf[js.Any])
     
-    inline def setPeerconnectionColonsetlocaldescriptionfailed(value: AnyListener): Self = StObject.set(x, "peerconnection:setlocaldescriptionfailed", value.asInstanceOf[js.Any])
+    inline def setPeerconnectionColonsetlocaldescriptionfailed(value: Listener): Self = StObject.set(x, "peerconnection:setlocaldescriptionfailed", value.asInstanceOf[js.Any])
     
-    inline def setPeerconnectionColonsetremotedescriptionfailed(value: AnyListener): Self = StObject.set(x, "peerconnection:setremotedescriptionfailed", value.asInstanceOf[js.Any])
+    inline def setPeerconnectionColonsetremotedescriptionfailed(value: Listener): Self = StObject.set(x, "peerconnection:setremotedescriptionfailed", value.asInstanceOf[js.Any])
     
     inline def setProgress(value: (/* event */ IncomingEvent) | (/* event */ OutgoingEvent) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     

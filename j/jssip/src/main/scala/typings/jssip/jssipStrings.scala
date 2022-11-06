@@ -55,6 +55,10 @@ object jssipStrings {
   inline def ended: ended = "ended".asInstanceOf[ended]
   
   @js.native
+  sealed trait extra_headers extends StObject
+  inline def extra_headers: extra_headers = "extra_headers".asInstanceOf[extra_headers]
+  
+  @js.native
   sealed trait failed extends StObject
   inline def failed: failed = "failed".asInstanceOf[failed]
   
@@ -93,6 +97,10 @@ object jssipStrings {
   @js.native
   sealed trait newMessage extends StObject
   inline def newMessage: newMessage = "newMessage".asInstanceOf[newMessage]
+  
+  @js.native
+  sealed trait newOptions extends StObject
+  inline def newOptions: newOptions = "newOptions".asInstanceOf[newOptions]
   
   @js.native
   sealed trait newRTCSession extends StObject

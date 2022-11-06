@@ -21,6 +21,8 @@ trait UAConfiguration extends StObject {
   
   var display_name: js.UndefOr[String] = js.undefined
   
+  var extra_headers: js.UndefOr[js.Array[String]] = js.undefined
+  
   var ha1: js.UndefOr[String] = js.undefined
   
   var instance_id: js.UndefOr[String] = js.undefined
@@ -84,6 +86,12 @@ object UAConfiguration {
     inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
     inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
+    
+    inline def setExtra_headers(value: js.Array[String]): Self = StObject.set(x, "extra_headers", value.asInstanceOf[js.Any])
+    
+    inline def setExtra_headersUndefined: Self = StObject.set(x, "extra_headers", js.undefined)
+    
+    inline def setExtra_headersVarargs(value: String*): Self = StObject.set(x, "extra_headers", js.Array(value*))
     
     inline def setHa1(value: String): Self = StObject.set(x, "ha1", value.asInstanceOf[js.Any])
     

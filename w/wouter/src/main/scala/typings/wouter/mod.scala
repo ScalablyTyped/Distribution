@@ -3,8 +3,9 @@ package typings.wouter
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
 import typings.react.mod.PropsWithChildren
+import typings.react.mod.ReactChild
 import typings.react.mod.ReactElement
-import typings.react.mod.ReactNode
+import typings.react.mod.ReactPortal
 import typings.wouter.anon.Children
 import typings.wouter.anon.Href
 import typings.wouter.anon.OmitAnchorHTMLAttributesH
@@ -47,6 +48,11 @@ object mod {
   type LinkProps[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */] = OmitAnchorHTMLAttributesH & NavigationalProps[H]
   
   type NavigationalProps[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */] = (Href & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HookNavigationOptions<H> */ Any)) | (To & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HookNavigationOptions<H> */ Any))
+  
+  // React <18 only: fixes incorrect `ReactNode` declaration that had `{}` in the union.
+  // This issue has been fixed in React 18 type declaration.
+  // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/56210
+  type ReactNode = js.UndefOr[ReactChild | js.Iterable[Any] | ReactPortal | Boolean | Null]
   
   type RedirectProps[H /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BaseLocationHook */ Any */] = NavigationalProps[H] & Children
   
@@ -102,6 +108,8 @@ object mod {
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Params<T> */ /* params */ Any => ReactNode
       ): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
+      
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setComponent(value: ComponentType[RouteComponentProps[T]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
@@ -153,22 +161,24 @@ object mod {
   
   trait SwitchProps extends StObject {
     
-    var children: js.Array[ReactElement]
+    var children: ReactNode
     
     var location: js.UndefOr[String] = js.undefined
   }
   object SwitchProps {
     
-    inline def apply(children: js.Array[ReactElement]): SwitchProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): SwitchProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwitchProps]
     }
     
     extension [Self <: SwitchProps](x: Self) {
       
-      inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

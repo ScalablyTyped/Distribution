@@ -13,11 +13,17 @@ type DisconnectedListener = js.Function1[/* event */ DisconnectEvent, Unit]
 
 type IncomingMessageListener = js.Function1[/* event */ IncomingMessageEvent, Unit]
 
+type IncomingOptionsListener = js.Function1[/* event */ IncomingOptionsEvent, Unit]
+
 type IncomingRTCSessionListener = js.Function1[/* event */ IncomingRTCSessionEvent, Unit]
 
 type MessageListener = IncomingMessageListener | OutgoingMessageListener
 
+type OptionsListener = IncomingOptionsListener | OutgoingOptionsListener
+
 type OutgoingMessageListener = js.Function1[/* event */ OutgoingMessageEvent, Unit]
+
+type OutgoingOptionsListener = js.Function1[/* event */ OutgoingOptionsEvent, Unit]
 
 type OutgoingRTCSessionListener = js.Function1[/* event */ OutgoingRTCSessionEvent, Unit]
 

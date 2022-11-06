@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.parse.anon.As
 import typings.parse.anon.ConnectFromField
 import typings.parse.anon.From
+import typings.parse.anon.IncludeArrayIndex
 import typings.parse.anon.ObjectId
 import typings.parse.anon.SizeNumber
 import typings.parse.mod.global.Parse.Query.AggregationOptions
@@ -728,6 +729,9 @@ object Query {
     
     // Sort documentation https://docs.mongodb.com/v3.2/reference/operator/aggregation/sort/#pipe._S_sort
     var sort: js.UndefOr[Record[String, `1` | `-1`]] = js.undefined
+    
+    // Unwind documentation: https://www.mongodb.com/docs/manual/reference/operator/aggregation/unwind/
+    var unwind: js.UndefOr[IncludeArrayIndex | String] = js.undefined
   }
   object AggregationOptions {
     
@@ -781,6 +785,10 @@ object Query {
       inline def setSort(value: Record[String, `1` | `-1`]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      
+      inline def setUnwind(value: IncludeArrayIndex | String): Self = StObject.set(x, "unwind", value.asInstanceOf[js.Any])
+      
+      inline def setUnwindUndefined: Self = StObject.set(x, "unwind", js.undefined)
     }
   }
   

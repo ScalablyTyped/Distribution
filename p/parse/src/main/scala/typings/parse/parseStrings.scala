@@ -98,6 +98,10 @@ object parseStrings {
   inline def enter: enter = "enter".asInstanceOf[enter]
   
   @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
   sealed trait leave extends StObject
   inline def leave: leave = "leave".asInstanceOf[leave]
   

@@ -1,8 +1,8 @@
 package typings.jssip
 
+import typings.events.mod.Listener
 import typings.jssip.libMessageMod.MessageFailedEvent
 import typings.jssip.libMessageMod.MessageFailedListener
-import typings.jssip.libRtcsessionMod.AnyListener
 import typings.jssip.libRtcsessionMod.CallListener
 import typings.jssip.libRtcsessionMod.ConfirmedListener
 import typings.jssip.libRtcsessionMod.ConnectingEvent
@@ -104,7 +104,7 @@ object anon {
     
     var failed: js.UndefOr[EndListener] = js.undefined
     
-    var getusermediafailed: js.UndefOr[AnyListener] = js.undefined
+    var getusermediafailed: js.UndefOr[Listener] = js.undefined
     
     var hold: js.UndefOr[HoldListener] = js.undefined
     
@@ -119,16 +119,16 @@ object anon {
     var peerconnection: js.UndefOr[PeerConnectionListener] = js.undefined
     
     @JSName("peerconnection:createanswerfailed")
-    var peerconnectionColoncreateanswerfailed: js.UndefOr[AnyListener] = js.undefined
+    var peerconnectionColoncreateanswerfailed: js.UndefOr[Listener] = js.undefined
     
     @JSName("peerconnection:createofferfailed")
-    var peerconnectionColoncreateofferfailed: js.UndefOr[AnyListener] = js.undefined
+    var peerconnectionColoncreateofferfailed: js.UndefOr[Listener] = js.undefined
     
     @JSName("peerconnection:setlocaldescriptionfailed")
-    var peerconnectionColonsetlocaldescriptionfailed: js.UndefOr[AnyListener] = js.undefined
+    var peerconnectionColonsetlocaldescriptionfailed: js.UndefOr[Listener] = js.undefined
     
     @JSName("peerconnection:setremotedescriptionfailed")
-    var peerconnectionColonsetremotedescriptionfailed: js.UndefOr[AnyListener] = js.undefined
+    var peerconnectionColonsetremotedescriptionfailed: js.UndefOr[Listener] = js.undefined
     
     var progress: js.UndefOr[CallListener] = js.undefined
     
@@ -177,7 +177,7 @@ object anon {
       
       inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
       
-      inline def setGetusermediafailed(value: AnyListener): Self = StObject.set(x, "getusermediafailed", value.asInstanceOf[js.Any])
+      inline def setGetusermediafailed(value: Listener): Self = StObject.set(x, "getusermediafailed", value.asInstanceOf[js.Any])
       
       inline def setGetusermediafailedUndefined: Self = StObject.set(x, "getusermediafailed", js.undefined)
       
@@ -203,19 +203,19 @@ object anon {
       
       inline def setPeerconnection(value: /* event */ PeerConnectionEvent => Unit): Self = StObject.set(x, "peerconnection", js.Any.fromFunction1(value))
       
-      inline def setPeerconnectionColoncreateanswerfailed(value: AnyListener): Self = StObject.set(x, "peerconnection:createanswerfailed", value.asInstanceOf[js.Any])
+      inline def setPeerconnectionColoncreateanswerfailed(value: Listener): Self = StObject.set(x, "peerconnection:createanswerfailed", value.asInstanceOf[js.Any])
       
       inline def setPeerconnectionColoncreateanswerfailedUndefined: Self = StObject.set(x, "peerconnection:createanswerfailed", js.undefined)
       
-      inline def setPeerconnectionColoncreateofferfailed(value: AnyListener): Self = StObject.set(x, "peerconnection:createofferfailed", value.asInstanceOf[js.Any])
+      inline def setPeerconnectionColoncreateofferfailed(value: Listener): Self = StObject.set(x, "peerconnection:createofferfailed", value.asInstanceOf[js.Any])
       
       inline def setPeerconnectionColoncreateofferfailedUndefined: Self = StObject.set(x, "peerconnection:createofferfailed", js.undefined)
       
-      inline def setPeerconnectionColonsetlocaldescriptionfailed(value: AnyListener): Self = StObject.set(x, "peerconnection:setlocaldescriptionfailed", value.asInstanceOf[js.Any])
+      inline def setPeerconnectionColonsetlocaldescriptionfailed(value: Listener): Self = StObject.set(x, "peerconnection:setlocaldescriptionfailed", value.asInstanceOf[js.Any])
       
       inline def setPeerconnectionColonsetlocaldescriptionfailedUndefined: Self = StObject.set(x, "peerconnection:setlocaldescriptionfailed", js.undefined)
       
-      inline def setPeerconnectionColonsetremotedescriptionfailed(value: AnyListener): Self = StObject.set(x, "peerconnection:setremotedescriptionfailed", value.asInstanceOf[js.Any])
+      inline def setPeerconnectionColonsetremotedescriptionfailed(value: Listener): Self = StObject.set(x, "peerconnection:setremotedescriptionfailed", value.asInstanceOf[js.Any])
       
       inline def setPeerconnectionColonsetremotedescriptionfailedUndefined: Self = StObject.set(x, "peerconnection:setremotedescriptionfailed", js.undefined)
       

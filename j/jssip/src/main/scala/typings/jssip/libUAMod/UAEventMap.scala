@@ -1,7 +1,7 @@
 package typings.jssip.libUAMod
 
+import typings.events.mod.Listener
 import typings.jssip.anon.Event
-import typings.jssip.libRtcsessionMod.AnyListener
 import typings.jssip.libWebSocketInterfaceMod.DisconnectEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,6 +23,8 @@ trait UAEventMap extends StObject {
   
   var newMessage: MessageListener
   
+  var newOptions: OptionsListener
+  
   var newRTCSession: RTCSessionListener
   
   def registered(event: RegisteredEvent): Unit
@@ -31,7 +33,7 @@ trait UAEventMap extends StObject {
   
   def registrationExpiring(args: Any*): Unit
   @JSName("registrationExpiring")
-  var registrationExpiring_Original: AnyListener
+  var registrationExpiring_Original: Listener
   
   def registrationFailed(event: UnRegisteredEvent): Unit
   @JSName("registrationFailed")
@@ -52,14 +54,15 @@ object UAEventMap {
     connecting: /* event */ UAConnectingEvent => Unit,
     disconnected: /* event */ DisconnectEvent => Unit,
     newMessage: (/* event */ IncomingMessageEvent) | (/* event */ OutgoingMessageEvent) => Unit,
+    newOptions: (/* event */ IncomingOptionsEvent) | (/* event */ OutgoingOptionsEvent) => Unit,
     newRTCSession: (/* event */ IncomingRTCSessionEvent) | (/* event */ OutgoingRTCSessionEvent) => Unit,
     registered: /* event */ RegisteredEvent => Unit,
-    registrationExpiring: AnyListener,
+    registrationExpiring: Listener,
     registrationFailed: /* event */ UnRegisteredEvent => Unit,
     sipEvent: /* event */ Event[Any] => Unit,
     unregistered: /* event */ UnRegisteredEvent => Unit
   ): UAEventMap = {
-    val __obj = js.Dynamic.literal(connected = js.Any.fromFunction1(connected), connecting = js.Any.fromFunction1(connecting), disconnected = js.Any.fromFunction1(disconnected), newMessage = js.Any.fromFunction1(newMessage), newRTCSession = js.Any.fromFunction1(newRTCSession), registered = js.Any.fromFunction1(registered), registrationExpiring = registrationExpiring.asInstanceOf[js.Any], registrationFailed = js.Any.fromFunction1(registrationFailed), sipEvent = js.Any.fromFunction1(sipEvent), unregistered = js.Any.fromFunction1(unregistered))
+    val __obj = js.Dynamic.literal(connected = js.Any.fromFunction1(connected), connecting = js.Any.fromFunction1(connecting), disconnected = js.Any.fromFunction1(disconnected), newMessage = js.Any.fromFunction1(newMessage), newOptions = js.Any.fromFunction1(newOptions), newRTCSession = js.Any.fromFunction1(newRTCSession), registered = js.Any.fromFunction1(registered), registrationExpiring = registrationExpiring.asInstanceOf[js.Any], registrationFailed = js.Any.fromFunction1(registrationFailed), sipEvent = js.Any.fromFunction1(sipEvent), unregistered = js.Any.fromFunction1(unregistered))
     __obj.asInstanceOf[UAEventMap]
   }
   
@@ -73,11 +76,13 @@ object UAEventMap {
     
     inline def setNewMessage(value: (/* event */ IncomingMessageEvent) | (/* event */ OutgoingMessageEvent) => Unit): Self = StObject.set(x, "newMessage", js.Any.fromFunction1(value))
     
+    inline def setNewOptions(value: (/* event */ IncomingOptionsEvent) | (/* event */ OutgoingOptionsEvent) => Unit): Self = StObject.set(x, "newOptions", js.Any.fromFunction1(value))
+    
     inline def setNewRTCSession(value: (/* event */ IncomingRTCSessionEvent) | (/* event */ OutgoingRTCSessionEvent) => Unit): Self = StObject.set(x, "newRTCSession", js.Any.fromFunction1(value))
     
     inline def setRegistered(value: /* event */ RegisteredEvent => Unit): Self = StObject.set(x, "registered", js.Any.fromFunction1(value))
     
-    inline def setRegistrationExpiring(value: AnyListener): Self = StObject.set(x, "registrationExpiring", value.asInstanceOf[js.Any])
+    inline def setRegistrationExpiring(value: Listener): Self = StObject.set(x, "registrationExpiring", value.asInstanceOf[js.Any])
     
     inline def setRegistrationFailed(value: /* event */ UnRegisteredEvent => Unit): Self = StObject.set(x, "registrationFailed", js.Any.fromFunction1(value))
     

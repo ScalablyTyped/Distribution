@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "next-auth"
-version := "4.15.1-379504"
+version := "4.16.0-a78a70"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

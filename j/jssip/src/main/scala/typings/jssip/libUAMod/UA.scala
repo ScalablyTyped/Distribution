@@ -1,6 +1,7 @@
 package typings.jssip.libUAMod
 
 import typings.events.mod.EventEmitter
+import typings.events.mod.Listener
 import typings.jssip.jssipStrings.authorization_jwt
 import typings.jssip.jssipStrings.authorization_user
 import typings.jssip.jssipStrings.connected
@@ -10,9 +11,11 @@ import typings.jssip.jssipStrings.connection_recovery_min_interval
 import typings.jssip.jssipStrings.contact_uri
 import typings.jssip.jssipStrings.disconnected
 import typings.jssip.jssipStrings.display_name
+import typings.jssip.jssipStrings.extra_headers
 import typings.jssip.jssipStrings.ha1
 import typings.jssip.jssipStrings.instance_id
 import typings.jssip.jssipStrings.newMessage
+import typings.jssip.jssipStrings.newOptions
 import typings.jssip.jssipStrings.newRTCSession
 import typings.jssip.jssipStrings.no_answer_timeout
 import typings.jssip.jssipStrings.password
@@ -35,7 +38,6 @@ import typings.jssip.jssipStrings.user_agent
 import typings.jssip.libMessageMod.Message
 import typings.jssip.libMessageMod.SendMessageOptions
 import typings.jssip.libRegistratorMod.Registrator
-import typings.jssip.libRtcsessionMod.AnyListener
 import typings.jssip.libRtcsessionMod.RTCSession
 import typings.jssip.libRtcsessionMod.TerminateOptions
 import typings.jssip.libUriMod.URI
@@ -69,6 +71,8 @@ open class UA protected () extends EventEmitter {
   def get_contacturi(parameter: contact_uri): js.UndefOr[String] = js.native
   @JSName("get")
   def get_displayname(parameter: display_name): js.UndefOr[String] = js.native
+  @JSName("get")
+  def get_extraheaders(parameter: extra_headers): js.UndefOr[js.Array[String]] = js.native
   @JSName("get")
   def get_ha1(parameter: ha1): js.UndefOr[String] = js.native
   @JSName("get")
@@ -113,11 +117,13 @@ open class UA protected () extends EventEmitter {
   @JSName("on")
   def on_newMessage(`type`: newMessage, listener: MessageListener): this.type = js.native
   @JSName("on")
+  def on_newOptions(`type`: newOptions, listener: OptionsListener): this.type = js.native
+  @JSName("on")
   def on_newRTCSession(`type`: newRTCSession, listener: RTCSessionListener): this.type = js.native
   @JSName("on")
   def on_registered(`type`: registered, listener: RegisteredListener): this.type = js.native
   @JSName("on")
-  def on_registrationExpiring(`type`: registrationExpiring, listener: AnyListener): this.type = js.native
+  def on_registrationExpiring(`type`: registrationExpiring, listener: Listener): this.type = js.native
   @JSName("on")
   def on_registrationFailed(`type`: registrationFailed, listener: RegistrationFailedListener): this.type = js.native
   @JSName("on")
@@ -158,6 +164,10 @@ open class UA protected () extends EventEmitter {
   def set_displayname(parameter: display_name): Boolean = js.native
   @JSName("set")
   def set_displayname(parameter: display_name, value: String): Boolean = js.native
+  @JSName("set")
+  def set_extraheaders(parameter: extra_headers): Boolean = js.native
+  @JSName("set")
+  def set_extraheaders(parameter: extra_headers, value: js.Array[String]): Boolean = js.native
   @JSName("set")
   def set_ha1(parameter: ha1): Boolean = js.native
   @JSName("set")

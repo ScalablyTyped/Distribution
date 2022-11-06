@@ -16,6 +16,7 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -219,7 +220,7 @@ object libStepsMod extends Shortcut {
     extends StObject
        with FunctionComponent[StepsProps] {
     
-    var Step: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RcSteps.Step */ Any = js.native
+    var Step: js.Function1[/* props */ typings.rcSteps.libStepMod.StepProps, ReactElement] = js.native
   }
   
   type _To = StepsType

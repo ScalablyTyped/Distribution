@@ -1,7 +1,7 @@
 
 # Scala.js typings for jssip
 
-Typings are for version 3.9.1
+Typings are for version 3.10.0
 
 ## Library description:
 the Javascript SIP library

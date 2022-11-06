@@ -7,10 +7,10 @@ import typings.rcSteps.libInterfaceMod.Status
 import typings.rcSteps.libStepsMod.ProgressDotRender
 import typings.rcSteps.libStepsMod.StepIconRender
 import typings.react.mod.CSSProperties
-import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -19,18 +19,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libStepMod {
   
-  @JSImport("rc-steps/lib/Step", JSImport.Default)
+  @JSImport("rc-steps/lib/Step", JSImport.Namespace)
   @js.native
-  open class default () extends Step
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Step
-    extends Component[StepProps, js.Object, Any] {
-    
-    var onClick: MouseEventHandler[HTMLDivElement] = js.native
-    
-    def renderIconNode(): Any = js.native
-  }
+  inline def default(props: StepProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait StepProps extends StObject {
     

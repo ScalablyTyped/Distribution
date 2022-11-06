@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "4.24.1-41869d"
+version := "4.24.1-4b57d0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -31,7 +31,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-segmented" % "2.1.0-68942b",
   "org.scalablytyped" %%% "rc-select" % "14.1.13-979ea4",
   "org.scalablytyped" %%% "rc-slider" % "10.0.1-ea04d5",
-  "org.scalablytyped" %%% "rc-steps" % "6.0.0-alpha.1-fe101f",
+  "org.scalablytyped" %%% "rc-steps" % "6.0.0-alpha.2-c87fbc",
   "org.scalablytyped" %%% "rc-table" % "7.28.1-cf87ef",
   "org.scalablytyped" %%% "rc-tabs" % "12.2.2-610af7",
   "org.scalablytyped" %%% "rc-textarea" % "0.4.6-075714",
