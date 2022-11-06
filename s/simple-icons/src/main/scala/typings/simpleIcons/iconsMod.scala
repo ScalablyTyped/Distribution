@@ -371,6 +371,10 @@ object iconsMod {
   @js.native
   val siAltiumdesigner: I = js.native
   
+  @JSImport("simple-icons/icons", "siAlwaysdata")
+  @js.native
+  val siAlwaysdata: I = js.native
+  
   @JSImport("simple-icons/icons", "siAmazon")
   @js.native
   val siAmazon: I = js.native
@@ -9058,6 +9062,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siWalmart")
   @js.native
   val siWalmart: I = js.native
+  
+  @JSImport("simple-icons/icons", "siWantedly")
+  @js.native
+  val siWantedly: I = js.native
   
   @JSImport("simple-icons/icons", "siWappalyzer")
   @js.native

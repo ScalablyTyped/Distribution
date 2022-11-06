@@ -1,7 +1,7 @@
 
 # Scala.js typings for simple-icons
 
-Typings are for version 7.18.0
+Typings are for version 7.19.0
 
 ## Library description:
 SVG icons for popular brands https://simpleicons.org

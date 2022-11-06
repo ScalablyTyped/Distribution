@@ -5,9 +5,11 @@ import typings.std.CustomEvent
 import typings.std.FullscreenOptions
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import typings.std.Number
 import typings.std.PointerEvent
 import typings.std.TouchEvent
 import typings.std.WheelEvent
+import typings.viewerjs.Viewer.Pivot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,9 +71,13 @@ trait Viewer extends StObject {
   
   def zoom(ratio: Double): Viewer = js.native
   def zoom(ratio: Double, hasTooltip: Boolean): Viewer = js.native
+  def zoom(ratio: Double, hasTooltip: Boolean, pivot: Pivot): Viewer = js.native
+  def zoom(ratio: Double, hasTooltip: Unit, pivot: Pivot): Viewer = js.native
   
   def zoomTo(ratio: Double): Viewer = js.native
   def zoomTo(ratio: Double, hasTooltip: Boolean): Viewer = js.native
+  def zoomTo(ratio: Double, hasTooltip: Boolean, pivot: Pivot): Viewer = js.native
+  def zoomTo(ratio: Double, hasTooltip: Unit, pivot: Pivot): Viewer = js.native
 }
 object Viewer {
   
@@ -149,6 +155,8 @@ object Viewer {
     var hide: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
     var inheritedAttributes: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var initialCoverage: js.UndefOr[Double] = js.undefined
     
     var initialViewIndex: js.UndefOr[Double] = js.undefined
     
@@ -284,6 +292,10 @@ object Viewer {
       inline def setInheritedAttributesUndefined: Self = StObject.set(x, "inheritedAttributes", js.undefined)
       
       inline def setInheritedAttributesVarargs(value: String*): Self = StObject.set(x, "inheritedAttributes", js.Array(value*))
+      
+      inline def setInitialCoverage(value: Double): Self = StObject.set(x, "initialCoverage", value.asInstanceOf[js.Any])
+      
+      inline def setInitialCoverageUndefined: Self = StObject.set(x, "initialCoverage", js.undefined)
       
       inline def setInitialViewIndex(value: Double): Self = StObject.set(x, "initialViewIndex", value.asInstanceOf[js.Any])
       
@@ -452,6 +464,27 @@ object Viewer {
       inline def setZoomed(value: /* event */ ZoomedEvent => Unit): Self = StObject.set(x, "zoomed", js.Any.fromFunction1(value))
       
       inline def setZoomedUndefined: Self = StObject.set(x, "zoomed", js.undefined)
+    }
+  }
+  
+  trait Pivot extends StObject {
+    
+    var x: Number
+    
+    var y: Number
+  }
+  object Pivot {
+    
+    inline def apply(x: Number, y: Number): Pivot = {
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Pivot]
+    }
+    
+    extension [Self <: Pivot](x: Self) {
+      
+      inline def setX(value: Number): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Number): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
