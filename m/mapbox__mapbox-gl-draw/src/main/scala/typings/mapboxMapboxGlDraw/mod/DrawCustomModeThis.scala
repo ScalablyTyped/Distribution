@@ -35,6 +35,8 @@ trait DrawCustomModeThis extends StObject {
   
   def doRender(id: String): Unit = js.native
   
+  var drawConfig: MapboxDrawOptions = js.native
+  
   def featuresAt(event: Event, bbox: BBox, bufferType: click | tap): js.Array[DrawFeature] = js.native
   
   def getFeature(id: String): DrawFeature = js.native

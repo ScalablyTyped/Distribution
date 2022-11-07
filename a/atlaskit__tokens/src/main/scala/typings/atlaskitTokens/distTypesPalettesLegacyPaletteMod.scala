@@ -30,6 +30,7 @@ object distTypesPalettesLegacyPaletteMod extends Shortcut {
     - typings.atlaskitTokens.atlaskitTokensStrings.Y300
     - typings.atlaskitTokens.atlaskitTokensStrings.Y400
     - typings.atlaskitTokens.atlaskitTokensStrings.Y500
+    - typings.atlaskitTokens.atlaskitTokensStrings.O800
     - typings.atlaskitTokens.atlaskitTokensStrings.G50
     - typings.atlaskitTokens.atlaskitTokensStrings.G75
     - typings.atlaskitTokens.atlaskitTokensStrings.G100
@@ -305,6 +306,8 @@ object distTypesPalettesLegacyPaletteMod extends Shortcut {
     inline def N900: typings.atlaskitTokens.atlaskitTokensStrings.N900 = "N900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N900]
     
     inline def N90A: typings.atlaskitTokens.atlaskitTokensStrings.N90A = "N90A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N90A]
+    
+    inline def O800: typings.atlaskitTokens.atlaskitTokensStrings.O800 = "O800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O800]
     
     inline def P100: typings.atlaskitTokens.atlaskitTokensStrings.P100 = "P100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P100]
     

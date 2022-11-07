@@ -1,13 +1,12 @@
-package typings.cuss
+package typings.mysql2
 
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esMod {
+object mysql2Booleans {
   
-  @JSImport("cuss/es", "cuss")
   @js.native
-  val cuss: Record[String, Double] = js.native
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

@@ -1,6 +1,7 @@
 
 # Scala.js typings for chai-dom
 
+Typings are for version 1.11
 
 ## Library description:
 DOM assertions for the Chai assertion library using vanilla JavaScript

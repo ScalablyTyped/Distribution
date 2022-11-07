@@ -1,6 +1,7 @@
 package typings.mysql2
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mysql2.mysql2Booleans.`true`
 import typings.mysql2.mysql2Strings.connection
 import typings.mysql2.typingsMysqlLibConnectionMod.ConnectionOptions
 import typings.mysql2.typingsMysqlLibProtocolPacketsFieldPacketMod.FieldPacket
@@ -31,7 +32,7 @@ object typingsMysqlLibPoolMod {
     
     def getConnection(
       callback: js.Function2[
-          /* err */ ErrnoException | Null, 
+          /* err */ ErrnoException, 
           /* connection */ typings.mysql2.typingsMysqlLibPoolConnectionMod.^, 
           Any
         ]
@@ -43,9 +44,6 @@ object typingsMysqlLibPoolMod {
       event: connection,
       listener: js.Function1[/* connection */ typings.mysql2.typingsMysqlLibPoolConnectionMod.^, Any]
     ): this.type = js.native
-    
-    def promise(): Any = js.native
-    def promise(promiseImpl: Any): Any = js.native
     
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
@@ -119,7 +117,7 @@ object typingsMysqlLibPoolMod {
       * Enable keep-alive on the socket.  It's disabled by default, but the
       * user can enable it and supply an initial delay.
       */
-    var enableKeepAlive: js.UndefOr[Boolean] = js.undefined
+    var enableKeepAlive: js.UndefOr[`true`] = js.undefined
     
     /**
       * If keep-alive is enabled users can supply an initial delay.
@@ -156,7 +154,7 @@ object typingsMysqlLibPoolMod {
       
       inline def setConnectionLimitUndefined: Self = StObject.set(x, "connectionLimit", js.undefined)
       
-      inline def setEnableKeepAlive(value: Boolean): Self = StObject.set(x, "enableKeepAlive", value.asInstanceOf[js.Any])
+      inline def setEnableKeepAlive(value: `true`): Self = StObject.set(x, "enableKeepAlive", value.asInstanceOf[js.Any])
       
       inline def setEnableKeepAliveUndefined: Self = StObject.set(x, "enableKeepAlive", js.undefined)
       

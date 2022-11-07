@@ -1,6 +1,5 @@
 package typings.mathjs.mod
 
-import typings.std.TransferFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class FunctionNodeCls[TFn, TArgs /* <: js.Array[MathNode] */] protected ()
   extends StObject
-     with FunctionNode[TransferFunction, TArgs] {
-  def this(fn: TFn, args: SymbolNode) = this()
+     with FunctionNode[TFn, TArgs] {
+  def this(fn: TFn, args: TArgs) = this()
 }

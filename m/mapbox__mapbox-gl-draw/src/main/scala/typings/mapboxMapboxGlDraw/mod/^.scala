@@ -1,7 +1,6 @@
 package typings.mapboxMapboxGlDraw.mod
 
 import typings.mapboxGl.mod.Map
-import typings.mapboxMapboxGlDraw.anon.BoxSelect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ^ ()
   extends StObject
      with MapboxDraw {
-  def this(options: BoxSelect) = this()
+  def this(options: MapboxDrawOptions) = this()
   
   /* CompleteClass */
   override def onAdd(map: Map): HTMLElement = js.native

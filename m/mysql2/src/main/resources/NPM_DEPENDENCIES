@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mysql2" : "3.0.0-rc.1"
+      "mysql2" : "2.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "mysql2" : "3.0.0-rc.1"
+      "mysql2" : "2.3.3"
     }
   ],
   "compile-devDependencies" : [

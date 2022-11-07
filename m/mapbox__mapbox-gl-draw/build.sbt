@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mapbox__mapbox-gl-draw"
-version := "1.3-dt-20221102Z-b9af03"
+version := "1.3-dt-20221107Z-7b0c11"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

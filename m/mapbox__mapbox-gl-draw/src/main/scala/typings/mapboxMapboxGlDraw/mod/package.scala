@@ -20,5 +20,3 @@ inline def modes_=(x: Modes_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("
 typings.mapboxMapboxGlDraw.mapboxMapboxGlDrawStrings.MultiPoint | typings.mapboxMapboxGlDraw.mapboxMapboxGlDrawStrings.MultiLineString | typings.mapboxMapboxGlDraw.mapboxMapboxGlDrawStrings.MultiPolygon]
 */
 type DrawFeature = _DrawFeature | (DrawMultiFeature[MultiPoint | MultiLineString | MultiPolygon])
-
-type MapboxDrawOptions = /* import warning: importer.ImportType#apply Failed type conversion: std.ConstructorParameters<new (options : @mapbox/mapbox-gl-draw.anon.BoxSelect | undefined): @mapbox/mapbox-gl-draw.@mapbox/mapbox-gl-draw.MapboxDraw>[0] */ js.Any

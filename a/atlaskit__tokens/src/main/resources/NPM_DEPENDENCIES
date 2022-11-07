@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@atlaskit/tokens" : "0.10.30"
+      "@atlaskit/tokens" : "0.10.31"
     }
   ],
   "test-dependencies" : [
     {
-      "@atlaskit/tokens" : "0.10.30"
+      "@atlaskit/tokens" : "0.10.31"
     }
   ],
   "compile-devDependencies" : [

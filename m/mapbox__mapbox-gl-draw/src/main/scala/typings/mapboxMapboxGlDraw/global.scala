@@ -1,6 +1,6 @@
 package typings.mapboxMapboxGlDraw
 
-import typings.mapboxMapboxGlDraw.anon.BoxSelect
+import typings.mapboxMapboxGlDraw.mod.MapboxDrawOptions
 import typings.mapboxMapboxGlDraw.mod.Modes_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ object global {
     @js.native
     open class ^ ()
       extends typings.mapboxMapboxGlDraw.mod.^ {
-      def this(options: BoxSelect) = this()
+      def this(options: MapboxDrawOptions) = this()
     }
     
     @JSGlobal("MapboxDraw")

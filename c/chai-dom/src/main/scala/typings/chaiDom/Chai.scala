@@ -19,6 +19,7 @@ object Chai {
     var checked: Assertion = js.native
     
     def `class`(className: String): Assertion = js.native
+    def `class`(className: js.RegExp): Assertion = js.native
     
     // exist, length, and contain are already defined in @types/chai and have the
     // same type or a more general type, so don't need to be re-declared even though

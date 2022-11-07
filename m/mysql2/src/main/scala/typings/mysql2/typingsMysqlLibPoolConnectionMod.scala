@@ -14,8 +14,6 @@ object typingsMysqlLibPoolConnectionMod {
   trait PoolConnection
     extends typings.mysql2.typingsMysqlLibConnectionMod.^ {
     
-    var connection: typings.mysql2.typingsMysqlLibConnectionMod.^ = js.native
-    
     def release(): Unit = js.native
   }
 }

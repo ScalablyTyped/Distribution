@@ -1,6 +1,8 @@
 package typings.lesgo
 
 import typings.lesgo.servicesPaginationPaginatorMod.PaginatorObject
+import typings.mysql2.typingsMysqlLibProtocolPacketsFieldPacketMod.FieldPacket
+import typings.mysql2.typingsMysqlMod.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,19 +20,13 @@ object servicesAuroraDbRDSProxyServiceMod {
   @js.native
   trait AuroraDbRDSProxyService extends StObject {
     
-    /* protected */ var conn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Connection */ Any = js.native
+    /* protected */ var conn: Connection = js.native
     
-    def connect(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Connection */ Any
-      ] = js.native
-    def connect(opts: AuroraDbRDSProxyServiceParams): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Connection */ Any
-      ] = js.native
+    def connect(): js.Promise[Connection] = js.native
+    def connect(opts: AuroraDbRDSProxyServiceParams): js.Promise[Connection] = js.native
     
     def end(): Unit = js.native
-    def end(
-      conn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Connection */ Any
-    ): Unit = js.native
+    def end(conn: Connection): Unit = js.native
     
     def insert(sql: String): js.Promise[Double] = js.native
     def insert(sql: String, sqlParams: Any): js.Promise[Double] = js.native
@@ -316,35 +312,22 @@ object servicesAuroraDbRDSProxyServiceMod {
   
   trait AuroraDbRDSProxyServiceResponse extends StObject {
     
-    var fields: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FieldPacket */ Any
-      ]
+    var fields: js.Array[FieldPacket]
     
     var results: AuroraDbRDSProxyServiceResult
   }
   object AuroraDbRDSProxyServiceResponse {
     
-    inline def apply(
-      fields: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FieldPacket */ Any
-        ],
-      results: AuroraDbRDSProxyServiceResult
-    ): AuroraDbRDSProxyServiceResponse = {
+    inline def apply(fields: js.Array[FieldPacket], results: AuroraDbRDSProxyServiceResult): AuroraDbRDSProxyServiceResponse = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuroraDbRDSProxyServiceResponse]
     }
     
     extension [Self <: AuroraDbRDSProxyServiceResponse](x: Self) {
       
-      inline def setFields(
-        value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FieldPacket */ Any
-            ]
-      ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[FieldPacket]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FieldPacket */ Any)*
-      ): Self = StObject.set(x, "fields", js.Array(value*))
+      inline def setFieldsVarargs(value: FieldPacket*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setResults(value: AuroraDbRDSProxyServiceResult): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       

@@ -2823,6 +2823,12 @@ object atlaskitTokensStrings {
   inline def NumbersignFFFFFF29: NumbersignFFFFFF29 = "#FFFFFF29".asInstanceOf[NumbersignFFFFFF29]
   
   @js.native
+  sealed trait O800
+    extends StObject
+       with PaletteValues
+  inline def O800: O800 = "O800".asInstanceOf[O800]
+  
+  @js.native
   sealed trait Orange100
     extends StObject
        with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues

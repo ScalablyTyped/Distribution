@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lesgo"
-version := "0.7-dt-20220817Z-6e5f0d"
+version := "0.7-dt-20220817Z-204275"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,6 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hpagent" % "1.0.0-2fd429",
   "org.scalablytyped" %%% "jsonwebtoken" % "8.5-dt-20220824Z-23291f",
   "org.scalablytyped" %%% "memcached" % "2.2-dt-20211202Z-f675dd",
+  "org.scalablytyped" %%% "mysql2" % "2.3.3-046cdc",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "undici" % "5.12.0-94fc18")

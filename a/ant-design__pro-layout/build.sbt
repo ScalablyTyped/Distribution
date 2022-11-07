@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__pro-layout"
-version := "7.1.16-b233a9"
+version := "7.2.0-89f19b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ant-design__cssinjs" % "0.0.0-alpha.54-00cf7e",
   "org.scalablytyped" %%% "ant-design__icons" % "4.7.0-7f4c11",
   "org.scalablytyped" %%% "ant-design__icons-svg" % "4.2.1-58696f",
-  "org.scalablytyped" %%% "ant-design__pro-provider" % "2.0.13-fd3da7",
+  "org.scalablytyped" %%% "ant-design__pro-provider" % "2.0.14-9076bf",
   "org.scalablytyped" %%% "ant-design__react-slick" % "0.29.2-a24011",
   "org.scalablytyped" %%% "antd" % "4.24.1-4b57d0",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",

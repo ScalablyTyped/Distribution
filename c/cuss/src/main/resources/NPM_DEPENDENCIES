@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cuss" : "2.0.0"
+      "cuss" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cuss" : "2.0.0"
+      "cuss" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

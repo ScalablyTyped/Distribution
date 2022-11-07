@@ -9,6 +9,8 @@ trait Color extends StObject {
   var color: String
   
   var key: String
+  
+  var title: js.UndefOr[String] = js.undefined
 }
 object Color {
   
@@ -22,5 +24,9 @@ object Color {
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

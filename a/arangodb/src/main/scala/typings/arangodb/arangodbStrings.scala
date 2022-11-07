@@ -2228,6 +2228,12 @@ object arangodbStrings {
   inline def outbound: outbound = "outbound".asInstanceOf[outbound]
   
   @js.native
+  sealed trait padded
+    extends StObject
+       with KeyGeneratorType
+  inline def padded: padded = "padded".asInstanceOf[padded]
+  
+  @js.native
   sealed trait `partial content`
     extends StObject
        with _HttpStatus
@@ -2452,6 +2458,12 @@ object arangodbStrings {
     extends StObject
        with _HttpStatus
   inline def `use proxy`: `use proxy` = ("use proxy").asInstanceOf[`use proxy`]
+  
+  @js.native
+  sealed trait uuid
+    extends StObject
+       with KeyGeneratorType
+  inline def uuid: uuid = "uuid".asInstanceOf[uuid]
   
   @js.native
   sealed trait `variant also negotiates`

@@ -1,7 +1,7 @@
 
 # Scala.js typings for mathjs
 
-Typings are for version 11.3.2
+Typings are for version 11.3.3
 
 ## Library description:
 Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with dif
