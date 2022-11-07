@@ -8,6 +8,7 @@ import typings.pixiDisplay.libDisplayObjectMod.DisplayObject
 import typings.pixiDisplay.libDisplayObjectMod.IDestroyOptions
 import typings.pixiDisplay.mod.Container
 import typings.pixiMath.libIpointdataMod.IPointData
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import typings.pixiSprite.mod.Sprite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,7 +37,7 @@ object mod {
     
     def originalRender(renderer: Renderer): Unit = js.native
     
-    def originalRenderCanvas(renderer: IRenderer): Unit = js.native
+    def originalRenderCanvas(renderer: IRenderer[ICanvas]): Unit = js.native
     
     def originalUpdateTransform(): Unit = js.native
     

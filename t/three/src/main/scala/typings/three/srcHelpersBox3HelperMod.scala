@@ -23,5 +23,7 @@ object srcHelpersBox3HelperMod {
     def this(box: Box3, color: Color) = this()
     
     var box: Box3 = js.native
+    
+    def dispose(): Unit = js.native
   }
 }

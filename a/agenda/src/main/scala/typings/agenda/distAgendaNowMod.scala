@@ -12,5 +12,5 @@ object distAgendaNowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def now(name: String, data: Any): js.Promise[Job[JobAttributesData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Job[JobAttributesData]]]
+  inline def now[T /* <: JobAttributesData */](name: String, data: T): js.Promise[Job[JobAttributesData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("now")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Job[JobAttributesData]]]
 }

@@ -197,6 +197,11 @@ object MathNode {
   def RADIANS: typings.three.threeStrings.radians = js.native
   inline def RADIANS_=(x: typings.three.threeStrings.radians): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RADIANS")(x.asInstanceOf[js.Any])
   
+  @JSImport("three/examples/jsm/nodes/Nodes", "MathNode.RECIPROCAL")
+  @js.native
+  def RECIPROCAL: typings.three.threeStrings.reciprocal = js.native
+  inline def RECIPROCAL_=(x: typings.three.threeStrings.reciprocal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECIPROCAL")(x.asInstanceOf[js.Any])
+  
   @JSImport("three/examples/jsm/nodes/Nodes", "MathNode.REFLECT")
   @js.native
   def REFLECT: typings.three.threeStrings.reflect = js.native
@@ -211,11 +216,6 @@ object MathNode {
   @js.native
   def ROUND: typings.three.threeStrings.round = js.native
   inline def ROUND_=(x: typings.three.threeStrings.round): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROUND")(x.asInstanceOf[js.Any])
-  
-  @JSImport("three/examples/jsm/nodes/Nodes", "MathNode.SATURATE")
-  @js.native
-  def SATURATE: typings.three.threeStrings.saturate = js.native
-  inline def SATURATE_=(x: typings.three.threeStrings.saturate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SATURATE")(x.asInstanceOf[js.Any])
   
   @JSImport("three/examples/jsm/nodes/Nodes", "MathNode.SIGN")
   @js.native

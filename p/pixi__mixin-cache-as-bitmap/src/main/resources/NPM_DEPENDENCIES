@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/mixin-cache-as-bitmap" : "7.0.2"
+      "@pixi/mixin-cache-as-bitmap" : "7.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/mixin-cache-as-bitmap" : "7.0.2"
+      "@pixi/mixin-cache-as-bitmap" : "7.0.3"
     }
   ],
   "compile-devDependencies" : [

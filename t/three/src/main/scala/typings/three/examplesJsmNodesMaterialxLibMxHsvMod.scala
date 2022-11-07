@@ -7,9 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object examplesJsmNodesMaterialxFunctionsLibMxHsvMod {
+object examplesJsmNodesMaterialxLibMxHsvMod {
   
-  @JSImport("three/examples/jsm/nodes/materialx/functions/lib/mx_hsv", JSImport.Namespace)
+  @JSImport("three/examples/jsm/nodes/materialx/lib/mx_hsv", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

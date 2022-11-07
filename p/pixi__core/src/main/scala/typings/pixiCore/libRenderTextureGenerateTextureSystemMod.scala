@@ -8,6 +8,7 @@ import typings.pixiCore.libRenderTextureRenderTextureMod.RenderTexture
 import typings.pixiCore.libSystemIsystemMod.ISystem
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.pixiMath.mod.Rectangle
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ object libRenderTextureGenerateTextureSystemMod {
   open class GenerateTextureSystem protected ()
     extends StObject
        with ISystem[Null, Null] {
-    def this(renderer: IRenderer) = this()
+    def this(renderer: IRenderer[ICanvas]) = this()
     
     /* private */ val _tempMatrix: Any = js.native
     
@@ -36,7 +37,7 @@ object libRenderTextureGenerateTextureSystemMod {
     def generateTexture(displayObject: IRenderableObject): RenderTexture = js.native
     def generateTexture(displayObject: IRenderableObject, options: IGenerateTextureOptions): RenderTexture = js.native
     
-    var renderer: IRenderer = js.native
+    var renderer: IRenderer[ICanvas] = js.native
   }
   /* static members */
   object GenerateTextureSystem {

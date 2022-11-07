@@ -39,6 +39,8 @@ object srcHelpersArrowHelperMod {
       */
     var cone: Mesh[BufferGeometry, Material | js.Array[Material]] = js.native
     
+    def dispose(): Unit = js.native
+    
     /**
       * Contains the line part of the arrowHelper.
       */

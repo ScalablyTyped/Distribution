@@ -1,7 +1,6 @@
 package typings.agenda
 
 import typings.agenda.distJobMod.Job
-import typings.agenda.distJobMod.JobAttributesData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,10 +51,10 @@ object distAgendaDefineMod {
     /* 0 */ val normal: typings.agenda.distAgendaDefineMod.JobPriority.normal & Double = js.native
   }
   
-  inline def define(name: String, options: DefineOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def define(name: String, options: DefineOptions, processor: Processor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], processor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def define(name: String, options: Processor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def define(name: String, options: Processor, processor: Processor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], processor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define[T](name: String, options: DefineOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define[T](name: String, options: DefineOptions, processor: Processor[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], processor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define[T](name: String, options: Processor[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define[T](name: String, options: Processor[T], processor: Processor[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], processor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait DefineOptions extends StObject {
     
@@ -117,5 +116,5 @@ object distAgendaDefineMod {
     }
   }
   
-  type Processor = (js.Function1[/* job */ Job[JobAttributesData], js.Promise[Unit]]) | (js.Function2[/* job */ Job[JobAttributesData], /* done */ js.Function0[Unit], Unit])
+  type Processor[T] = (js.Function1[/* job */ Job[T], js.Promise[Unit]]) | (js.Function2[/* job */ Job[T], /* done */ js.Function0[Unit], Unit])
 }

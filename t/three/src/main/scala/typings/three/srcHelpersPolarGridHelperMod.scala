@@ -30,5 +30,7 @@ object srcHelpersPolarGridHelperMod {
       color1: js.UndefOr[ColorRepresentation],
       color2: js.UndefOr[ColorRepresentation]
     ) = this()
+    
+    def dispose(): Unit = js.native
   }
 }

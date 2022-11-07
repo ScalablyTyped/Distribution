@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-day-picker
 
-Typings are for version 8.3.5
+Typings are for version 8.3.6
 
 ## Library description:
 Customizable Date Picker for React

@@ -5,7 +5,6 @@ import typings.mysql2.mysql2Strings.FieldPacket
 import typings.mysql2.mysql2Strings.OkPacket
 import typings.mysql2.mysql2Strings.ResultSetHeader
 import typings.mysql2.mysql2Strings.RowDataPacket
-import typings.mysql2.typingsMysqlMod.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,27 +79,6 @@ object anon {
     }
   }
   
-  trait Command extends StObject {
-    
-    var command: String
-    
-    var connection: Connection
-  }
-  object Command {
-    
-    inline def apply(command: String, connection: Connection): Command = {
-      val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Command]
-    }
-    
-    extension [Self <: Command](x: Self) {
-      
-      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
-      
-      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Name extends StObject {
     
     var name: Field
@@ -115,6 +93,23 @@ object anon {
     extension [Self <: Name](x: Self) {
       
       inline def setName(value: Field): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ToSqlString extends StObject {
+    
+    def toSqlString(): String
+  }
+  object ToSqlString {
+    
+    inline def apply(toSqlString: () => String): ToSqlString = {
+      val __obj = js.Dynamic.literal(toSqlString = js.Any.fromFunction0(toSqlString))
+      __obj.asInstanceOf[ToSqlString]
+    }
+    
+    extension [Self <: ToSqlString](x: Self) {
+      
+      inline def setToSqlString(value: () => String): Self = StObject.set(x, "toSqlString", js.Any.fromFunction0(value))
     }
   }
 }

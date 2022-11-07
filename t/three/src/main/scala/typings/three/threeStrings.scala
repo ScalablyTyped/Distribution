@@ -10,6 +10,7 @@ import typings.three.examplesJsmNodesMathOperatorNodeMod.OperatorNodeOp
 import typings.three.examplesJsmWebxrXrhandmodelfactoryMod.XRHandModelHandedness
 import typings.three.srcConstantsMod.BuiltinShaderAttributeName
 import typings.three.srcConstantsMod.PixelFormatGPU
+import typings.three.srcMathEulerMod.EulerOrder
 import typings.three.srcRenderersWebxrWebXRControllerMod._XRControllerEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -600,7 +601,9 @@ object threeStrings {
   inline def XY: XY = "XY".asInstanceOf[XY]
   
   @js.native
-  sealed trait XYZ extends StObject
+  sealed trait XYZ
+    extends StObject
+       with EulerOrder
   inline def XYZ: XYZ = "XYZ".asInstanceOf[XYZ]
   
   @js.native
@@ -612,16 +615,46 @@ object threeStrings {
   inline def XZ: XZ = "XZ".asInstanceOf[XZ]
   
   @js.native
+  sealed trait XZY
+    extends StObject
+       with EulerOrder
+  inline def XZY: XZY = "XZY".asInstanceOf[XZY]
+  
+  @js.native
   sealed trait Y extends StObject
   inline def Y: Y = "Y".asInstanceOf[Y]
+  
+  @js.native
+  sealed trait YXZ
+    extends StObject
+       with EulerOrder
+  inline def YXZ: YXZ = "YXZ".asInstanceOf[YXZ]
   
   @js.native
   sealed trait YZ extends StObject
   inline def YZ: YZ = "YZ".asInstanceOf[YZ]
   
   @js.native
+  sealed trait YZX
+    extends StObject
+       with EulerOrder
+  inline def YZX: YZX = "YZX".asInstanceOf[YZX]
+  
+  @js.native
   sealed trait Z extends StObject
   inline def Z: Z = "Z".asInstanceOf[Z]
+  
+  @js.native
+  sealed trait ZXY
+    extends StObject
+       with EulerOrder
+  inline def ZXY: ZXY = "ZXY".asInstanceOf[ZXY]
+  
+  @js.native
+  sealed trait ZYX
+    extends StObject
+       with EulerOrder
+  inline def ZYX: ZYX = "ZYX".asInstanceOf[ZYX]
   
   @js.native
   sealed trait `^^`
@@ -688,6 +721,10 @@ object threeStrings {
   @js.native
   sealed trait boxes extends StObject
   inline def boxes: boxes = "boxes".asInstanceOf[boxes]
+  
+  @js.native
+  sealed trait burn extends StObject
+  inline def burn: burn = "burn".asInstanceOf[burn]
   
   @js.native
   sealed trait bvec2
@@ -785,6 +822,10 @@ object threeStrings {
   @js.native
   sealed trait distance extends StObject
   inline def distance: distance = "distance".asInstanceOf[distance]
+  
+  @js.native
+  sealed trait dodge extends StObject
+  inline def dodge: dodge = "dodge".asInstanceOf[dodge]
   
   @js.native
   sealed trait dot extends StObject
@@ -1095,6 +1136,10 @@ object threeStrings {
   inline def opacity: opacity = "opacity".asInstanceOf[opacity]
   
   @js.native
+  sealed trait overlay extends StObject
+  inline def overlay: overlay = "overlay".asInstanceOf[overlay]
+  
+  @js.native
   sealed trait position
     extends StObject
        with BuiltinShaderAttributeName
@@ -1117,6 +1162,10 @@ object threeStrings {
   @js.native
   sealed trait radians extends StObject
   inline def radians: radians = "radians".asInstanceOf[radians]
+  
+  @js.native
+  sealed trait reciprocal extends StObject
+  inline def reciprocal: reciprocal = "reciprocal".asInstanceOf[reciprocal]
   
   @js.native
   sealed trait reflect extends StObject
@@ -1163,10 +1212,6 @@ object threeStrings {
   inline def sampler: sampler = "sampler".asInstanceOf[sampler]
   
   @js.native
-  sealed trait saturate extends StObject
-  inline def saturate: saturate = "saturate".asInstanceOf[saturate]
-  
-  @js.native
   sealed trait saturation extends StObject
   inline def saturation: saturation = "saturation".asInstanceOf[saturation]
   
@@ -1177,6 +1222,10 @@ object threeStrings {
   @js.native
   sealed trait scale extends StObject
   inline def scale: scale = "scale".asInstanceOf[scale]
+  
+  @js.native
+  sealed trait screen extends StObject
+  inline def screen: screen = "screen".asInstanceOf[screen]
   
   @js.native
   sealed trait sign extends StObject
@@ -1357,6 +1406,10 @@ object threeStrings {
   @js.native
   sealed trait world extends StObject
   inline def world: world = "world".asInstanceOf[world]
+  
+  @js.native
+  sealed trait worldDirection extends StObject
+  inline def worldDirection: worldDirection = "worldDirection".asInstanceOf[worldDirection]
   
   @js.native
   sealed trait worldMatrix extends StObject

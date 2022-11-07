@@ -18,14 +18,11 @@ object srcScenesSceneMod {
   open class Scene () extends Object3D[Event] {
     
     /**
-      * @default true
-      */
-    var autoUpdate: Boolean = js.native
-    
-    /**
       * @default null
       */
     var background: Null | Color | Texture = js.native
+    
+    var backgroundBlurriness: Double = js.native
     
     /**
       * @default null

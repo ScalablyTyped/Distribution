@@ -15,5 +15,7 @@ trait TypeofObject3D
   
   var DefaultMatrixAutoUpdate: Boolean = js.native
   
+  var DefaultMatrixWorldAutoUpdate: Boolean = js.native
+  
   var DefaultUp: Vector3 = js.native
 }

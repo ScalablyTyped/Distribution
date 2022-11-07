@@ -5,6 +5,7 @@ import typings.three.threeStrings.local
 import typings.three.threeStrings.view
 import typings.three.threeStrings.viewDirection
 import typings.three.threeStrings.world
+import typings.three.threeStrings.worldDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,6 +48,11 @@ object examplesJsmNodesAccessorsPositionNodeMod {
     @js.native
     def WORLD: world = js.native
     inline def WORLD_=(x: world): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORLD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("three/examples/jsm/nodes/accessors/PositionNode", "default.WORLD_DIRECTION")
+    @js.native
+    def WORLD_DIRECTION: worldDirection = js.native
+    inline def WORLD_DIRECTION_=(x: worldDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORLD_DIRECTION")(x.asInstanceOf[js.Any])
   }
   
   @js.native

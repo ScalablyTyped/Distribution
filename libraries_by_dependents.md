@@ -7400,7 +7400,6 @@
 | 0.0 | [pixi__constants](./p/pixi__constants) | Constants used across PixiJS
 | 0.0 | [pixi__core](./p/pixi__core) | Core PixiJS
 | 0.0 | [pixi__display](./p/pixi__display) | Core display functionality
-| 0.0 | [pixi__events](./p/pixi__events) | UI events for scene graphs
 | 0.0 | [pixi__extract](./p/pixi__extract) | Extract raw graphics data from renderer
 | 0.0 | [pixi__filter-alpha](./p/pixi__filter-alpha) | Filter that applies alpha evenly across the entire
 | 0.0 | [pixi__filter-blur](./p/pixi__filter-blur) | Filter that blurs the display object
@@ -7430,7 +7429,6 @@
 | 0.0 | [pixi__text-bitmap](./p/pixi__text-bitmap) | Text via bitmap fonts
 | 0.0 | [pixi__ticker](./p/pixi__ticker) | Tickers are control the timings within PixiJS
 | 0.0 | [pixi__utils](./p/pixi__utils) | Collection of utilities used by PixiJS
-| 0.0 | [pixi_dot_js](./p/pixi_dot_js) | PixiJS without the CanvasRenderer fallback, modern
 | 0.0 | [pixl-xml](./p/pixl-xml) | A simple module for parsing and composing XML.
 | 0.0 | [pizzicato](./p/pizzicato) | A web-audio library to simplify using and manipula
 | 0.0 | [pizzip](./p/pizzip) | Create, read and edit .zip files synchronously wit
@@ -9135,6 +9133,7 @@
 | 0.0 | [rivets](./r/rivets) | Declarative data binding + templating solution.
 | 0.0 | [rjsf__core](./r/rjsf__core) | A simple React component capable of building HTML 
 | 0.0 | [rlp](./r/rlp) | Recursive Length Prefix Encoding Module
+| 0.0 | [rlp-encoding](./r/rlp-encoding) | Abstract-encoding interface for RLP
 | 0.0 | [rmc-calendar](./r/rmc-calendar) | React Mobile Calendar Component(web and react-nati
 | 0.0 | [rmc-cascader](./r/rmc-cascader) | m-cascader ui component for react
 | 0.0 | [rmc-date-picker](./r/rmc-date-picker) | React Mobile DatePicker Component for web and reac

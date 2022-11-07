@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "agenda"
-version := "4.4.0-807730"
+version := "5.0.0-ed325f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

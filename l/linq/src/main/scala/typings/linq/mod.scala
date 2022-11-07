@@ -1,6 +1,5 @@
 package typings.linq
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.linq.anon.Dictx
 import typings.linq.anon.DictxLength
 import typings.linq.anon.DictxNumberT
@@ -59,11 +58,11 @@ object mod {
     inline def from(obj: String): IEnumerable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[String]]
     inline def from(obj: Boolean): IEnumerable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Boolean]]
     inline def from(obj: Double): IEnumerable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Double]]
-    inline def from[T](obj: (Record[PropertyKey, T]) | StringDictionary[T]): IEnumerable[Value[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Value[T]]]
     inline def from[T](obj: js.Array[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
     inline def from[T](obj: js.Iterator[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
     inline def from[T](obj: DictxNumberT[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
     inline def from[T](obj: IEnumerable[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
+    inline def from[K /* <: PropertyKey */, T](obj: Record[K, T]): IEnumerable[Value[K, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[Value[K, T]]]
     
     inline def generate[T](func: js.Function0[T]): IEnumerable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(func.asInstanceOf[js.Any]).asInstanceOf[IEnumerable[T]]
     inline def generate[T](func: js.Function0[T], count: Double): IEnumerable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(func.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IEnumerable[T]]
@@ -381,6 +380,46 @@ object mod {
       def lastOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean], defaultValue: T): js.UndefOr[T] = js.native
       def lastOrDefault(predicate: Unit, defaultValue: T): js.UndefOr[T] = js.native
       
+      def leftJoin[TInner, TKey, TResult](
+        inner: js.Array[TInner],
+        outerKeySelector: js.Function1[/* outer */ T, TKey],
+        innerKeySelector: js.Function1[/* inner */ TInner, TKey],
+        resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult]
+      ): IEnumerable[TResult] = js.native
+      def leftJoin[TInner, TKey, TResult](
+        inner: js.Array[TInner],
+        outerKeySelector: js.Function1[/* outer */ T, TKey],
+        innerKeySelector: js.Function1[/* inner */ TInner, TKey],
+        resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult],
+        compareSelector: js.Function1[/* obj */ T, TKey]
+      ): IEnumerable[TResult] = js.native
+      def leftJoin[TInner, TKey, TResult](
+        inner: DictxNumberTInner[TInner],
+        outerKeySelector: js.Function1[/* outer */ T, TKey],
+        innerKeySelector: js.Function1[/* inner */ TInner, TKey],
+        resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult]
+      ): IEnumerable[TResult] = js.native
+      def leftJoin[TInner, TKey, TResult](
+        inner: DictxNumberTInner[TInner],
+        outerKeySelector: js.Function1[/* outer */ T, TKey],
+        innerKeySelector: js.Function1[/* inner */ TInner, TKey],
+        resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult],
+        compareSelector: js.Function1[/* obj */ T, TKey]
+      ): IEnumerable[TResult] = js.native
+      def leftJoin[TInner, TKey, TResult](
+        inner: IEnumerable[TInner],
+        outerKeySelector: js.Function1[/* outer */ T, TKey],
+        innerKeySelector: js.Function1[/* inner */ TInner, TKey],
+        resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult]
+      ): IEnumerable[TResult] = js.native
+      def leftJoin[TInner, TKey, TResult](
+        inner: IEnumerable[TInner],
+        outerKeySelector: js.Function1[/* outer */ T, TKey],
+        innerKeySelector: js.Function1[/* inner */ TInner, TKey],
+        resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult],
+        compareSelector: js.Function1[/* obj */ T, TKey]
+      ): IEnumerable[TResult] = js.native
+      
       def letBind[TResult](
         func: js.Function1[
               /* source */ IEnumerable[T], 
@@ -568,13 +607,6 @@ object mod {
       def weightedSample(weightSelector: js.Function1[/* element */ T, Double]): IEnumerable[T] = js.native
       
       def where(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): IEnumerable[T] = js.native
-      
-      def write(): Unit = js.native
-      def write(separator: String): Unit = js.native
-      def write[TResult](separator: String, selector: js.Function1[/* element */ T, TResult]): Unit = js.native
-      
-      def writeLine(): Unit = js.native
-      def writeLine[TResult](selector: js.Function1[/* element */ T, TResult]): Unit = js.native
       
       def zip[TResult](params: Any*): IEnumerable[TResult] = js.native
       def zip[U, TResult](

@@ -12,5 +12,5 @@ object distAgendaCreateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(name: String, data: Any): Job[JobAttributesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Job[JobAttributesData]]
+  inline def create[T /* <: JobAttributesData */](name: String, data: T): Job[JobAttributesData] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Job[JobAttributesData]]
 }

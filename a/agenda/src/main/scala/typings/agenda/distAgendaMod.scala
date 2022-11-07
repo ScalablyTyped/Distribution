@@ -2,6 +2,10 @@ package typings.agenda
 
 import typings.agenda.anon.Address
 import typings.agenda.anon.FnCall
+import typings.agenda.anon.FnCallThisIntervalNamesDataOptions
+import typings.agenda.anon.FnCallThisNameData
+import typings.agenda.anon.FnCallThisNameOptionsProcessor
+import typings.agenda.anon.FnCallThisWhenNamesData
 import typings.agenda.anon.Force
 import typings.agenda.distAgendaDefineMod.DefineOptions
 import typings.agenda.distAgendaDefineMod.Processor
@@ -122,9 +126,9 @@ object distAgendaMod {
     @JSName("close")
     var close_Original: js.ThisFunction1[/* this */ this.type, /* option */ js.UndefOr[Force], js.Promise[this.type]] = js.native
     
-    def create(name: String, data: Any): Job[JobAttributesData] = js.native
+    def create[T /* <: JobAttributesData */](name: String, data: T): Job[JobAttributesData] = js.native
     @JSName("create")
-    var create_Original: js.ThisFunction2[/* this */ this.type, /* name */ String, /* data */ Any, Job[JobAttributesData]] = js.native
+    var create_Original: FnCall = js.native
     
     def database(url: String): this.type | Unit = js.native
     def database(url: String, collection: String): this.type | Unit = js.native
@@ -198,18 +202,12 @@ object distAgendaMod {
     @JSName("defaultLockLimit")
     var defaultLockLimit_Original: js.ThisFunction1[/* this */ this.type, /* times */ Double, this.type] = js.native
     
-    def define(name: String, options: DefineOptions): Unit = js.native
-    def define(name: String, options: DefineOptions, processor: Processor): Unit = js.native
-    def define(name: String, options: Processor): Unit = js.native
-    def define(name: String, options: Processor, processor: Processor): Unit = js.native
+    def define[T](name: String, options: DefineOptions): Unit = js.native
+    def define[T](name: String, options: DefineOptions, processor: Processor[T]): Unit = js.native
+    def define[T](name: String, options: Processor[T]): Unit = js.native
+    def define[T](name: String, options: Processor[T], processor: Processor[T]): Unit = js.native
     @JSName("define")
-    var define_Original: js.ThisFunction3[
-        /* this */ this.type, 
-        /* name */ String, 
-        /* options */ DefineOptions | Processor, 
-        /* processor */ js.UndefOr[Processor], 
-        Unit
-      ] = js.native
+    var define_Original: FnCallThisNameOptionsProcessor = js.native
     
     def disable(): js.Promise[Double] = js.native
     def disable(query: Filter[Any]): js.Promise[Double] = js.native
@@ -225,23 +223,16 @@ object distAgendaMod {
     @JSName("enable")
     var enable_Original: js.ThisFunction1[/* this */ this.type, /* query */ js.UndefOr[Filter[Any]], js.Promise[Double]] = js.native
     
-    def every(interval: String, names: String): js.Promise[Any] = js.native
-    def every(interval: String, names: String, data: Any): js.Promise[Any] = js.native
-    def every(interval: String, names: String, data: Any, options: JobOptions): js.Promise[Any] = js.native
-    def every(interval: String, names: String, data: Unit, options: JobOptions): js.Promise[Any] = js.native
-    def every(interval: String, names: js.Array[String]): js.Promise[Any] = js.native
-    def every(interval: String, names: js.Array[String], data: Any): js.Promise[Any] = js.native
-    def every(interval: String, names: js.Array[String], data: Any, options: JobOptions): js.Promise[Any] = js.native
-    def every(interval: String, names: js.Array[String], data: Unit, options: JobOptions): js.Promise[Any] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: String): js.Promise[Any] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: String, data: T): js.Promise[Any] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: String, data: T, options: JobOptions): js.Promise[Any] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: String, data: Unit, options: JobOptions): js.Promise[Any] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String]): js.Promise[Any] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: T): js.Promise[Any] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: T, options: JobOptions): js.Promise[Any] = js.native
+    def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: Unit, options: JobOptions): js.Promise[Any] = js.native
     @JSName("every")
-    var every_Original: js.ThisFunction4[
-        /* this */ this.type, 
-        /* interval */ String, 
-        /* names */ String | js.Array[String], 
-        /* data */ js.UndefOr[Any], 
-        /* options */ js.UndefOr[JobOptions], 
-        js.Promise[Any]
-      ] = js.native
+    var every_Original: FnCallThisIntervalNamesDataOptions = js.native
     
     def jobs(): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
     def jobs(query: Unit, sort: js.Object): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
@@ -304,14 +295,9 @@ object distAgendaMod {
     @JSName("name")
     var name_Original: js.ThisFunction1[/* this */ this.type, /* name */ String, this.type] = js.native
     
-    def now(name: String, data: Any): js.Promise[Job[JobAttributesData]] = js.native
+    def now[T /* <: JobAttributesData */](name: String, data: T): js.Promise[Job[JobAttributesData]] = js.native
     @JSName("now")
-    var now_Original: js.ThisFunction2[
-        /* this */ this.type, 
-        /* name */ String, 
-        /* data */ Any, 
-        js.Promise[Job[JobAttributesData]]
-      ] = js.native
+    var now_Original: FnCallThisNameData = js.native
     
     def processEvery(time: String): this.type = js.native
     @JSName("processEvery")
@@ -329,12 +315,12 @@ object distAgendaMod {
         js.Promise[Job[JobAttributesData]]
       ] = js.native
     
-    def schedule(when: String, names: String, data: Any): js.Promise[Job[JobAttributesData]] = js.native
-    def schedule(when: String, names: js.Array[String], data: Any): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
-    def schedule(when: js.Date, names: String, data: Any): js.Promise[Job[JobAttributesData]] = js.native
-    def schedule(when: js.Date, names: js.Array[String], data: Any): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
+    def schedule[T /* <: JobAttributesData */](when: String, names: String, data: T): js.Promise[Job[JobAttributesData]] = js.native
+    def schedule[T /* <: JobAttributesData */](when: String, names: js.Array[String], data: T): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
+    def schedule[T /* <: JobAttributesData */](when: js.Date, names: String, data: T): js.Promise[Job[JobAttributesData]] = js.native
+    def schedule[T /* <: JobAttributesData */](when: js.Date, names: js.Array[String], data: T): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
     @JSName("schedule")
-    var schedule_Original: FnCall = js.native
+    var schedule_Original: FnCallThisWhenNamesData = js.native
     
     def sort(query: Any): this.type = js.native
     @JSName("sort")

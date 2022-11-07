@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__sprite-animated
 
-Typings are for version 7.0.2
+Typings are for version 7.0.3
 
 ## Library description:
 Sprite Animations as depicted by playing a series of Textures

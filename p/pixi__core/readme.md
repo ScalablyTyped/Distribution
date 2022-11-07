@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__core
 
-Typings are for version 7.0.2
+Typings are for version 7.0.3
 
 ## Library description:
 Core PixiJS

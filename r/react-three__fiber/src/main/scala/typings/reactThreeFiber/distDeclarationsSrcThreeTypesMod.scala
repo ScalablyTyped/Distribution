@@ -44,14 +44,12 @@ import typings.reactThreeFiber.distDeclarationsSrcCoreRendererMod.Instance
 import typings.std.ArrayLike
 import typings.std.BufferSource
 import typings.std.ConstructorParameters
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
-import typings.std.ImageBitmap
 import typings.std.ImageData
 import typings.std.Omit
 import typings.std.Parameters
 import typings.std.Partial
+import typings.std.TexImageSource
 import typings.three.mod.AmbientLight
 import typings.three.mod.AmbientLightProbe
 import typings.three.mod.ArrayCamera
@@ -190,6 +188,7 @@ import typings.three.srcMathBox3Mod.Box3
 import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcMathVector2Mod.Vector
 import typings.three.srcRenderersWebGLCubeRenderTargetMod.WebGLCubeRenderTarget
+import typings.three.srcTexturesTextureMod.OffscreenCanvas
 import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -261,7 +260,7 @@ object distDeclarationsSrcThreeTypesMod {
   type CanvasTextureProps = Node[
     CanvasTexture, 
     Instantiable9[
-      /* canvas */ HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap, 
+      /* canvas */ TexImageSource | OffscreenCanvas, 
       /* mapping */ js.UndefOr[Mapping], 
       /* wrapS */ js.UndefOr[Wrapping], 
       /* wrapT */ js.UndefOr[Wrapping], 

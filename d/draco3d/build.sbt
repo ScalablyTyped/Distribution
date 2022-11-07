@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "draco3d"
-version := "1.4-dt-20211202Z-954e04"
+version := "1.4-dt-20221106Z-f9f01a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

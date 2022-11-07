@@ -4,6 +4,7 @@ import typings.pixiApp.libApplicationMod.IApplicationOptions
 import typings.pixiApp.libApplicationMod.IApplicationPlugin
 import typings.pixiApp.libResizePluginMod.ResizeableRenderer
 import typings.pixiExtensions.mod.ExtensionMetadata
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
@@ -49,8 +50,8 @@ object mod {
     * @param {Window|HTMLElement} [options.resizeTo] - Element to automatically resize stage to.
     * @param {boolean} [options.hello=false] - Logs renderer type and version.
     */
-  open class Application ()
-    extends typings.pixiApp.libApplicationMod.Application {
+  open class Application[VIEW /* <: ICanvas */] ()
+    extends typings.pixiApp.libApplicationMod.Application[VIEW] {
     def this(options: IApplicationOptions) = this()
   }
   /* static members */

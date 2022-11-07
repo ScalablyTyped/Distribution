@@ -12,13 +12,13 @@ object NodeShaderStage {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeShaderStage.Fragment")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeShaderStage.FRAGMENT")
   @js.native
-  def Fragment: fragment = js.native
-  inline def Fragment_=(x: fragment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Fragment")(x.asInstanceOf[js.Any])
+  def FRAGMENT: fragment = js.native
+  inline def FRAGMENT_=(x: fragment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAGMENT")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeShaderStage.Vertex")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeShaderStage.VERTEX")
   @js.native
-  def Vertex: vertex = js.native
-  inline def Vertex_=(x: vertex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertex")(x.asInstanceOf[js.Any])
+  def VERTEX: vertex = js.native
+  inline def VERTEX_=(x: vertex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX")(x.asInstanceOf[js.Any])
 }

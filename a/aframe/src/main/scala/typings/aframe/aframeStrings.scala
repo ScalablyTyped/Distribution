@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object aframeStrings {
   
   @js.native
+  sealed trait XYZ extends StObject
+  inline def XYZ: XYZ = "XYZ".asInstanceOf[XYZ]
+  
+  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   

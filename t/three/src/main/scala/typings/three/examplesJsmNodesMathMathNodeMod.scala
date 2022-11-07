@@ -31,10 +31,10 @@ import typings.three.threeStrings.negate
 import typings.three.threeStrings.normalize
 import typings.three.threeStrings.pow
 import typings.three.threeStrings.radians
+import typings.three.threeStrings.reciprocal
 import typings.three.threeStrings.reflect
 import typings.three.threeStrings.refract
 import typings.three.threeStrings.round
-import typings.three.threeStrings.saturate
 import typings.three.threeStrings.sign
 import typings.three.threeStrings.sin
 import typings.three.threeStrings.smoothstep
@@ -237,6 +237,11 @@ object examplesJsmNodesMathMathNodeMod {
     def RADIANS: radians = js.native
     inline def RADIANS_=(x: radians): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RADIANS")(x.asInstanceOf[js.Any])
     
+    @JSImport("three/examples/jsm/nodes/math/MathNode", "default.RECIPROCAL")
+    @js.native
+    def RECIPROCAL: reciprocal = js.native
+    inline def RECIPROCAL_=(x: reciprocal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECIPROCAL")(x.asInstanceOf[js.Any])
+    
     @JSImport("three/examples/jsm/nodes/math/MathNode", "default.REFLECT")
     @js.native
     def REFLECT: reflect = js.native
@@ -251,11 +256,6 @@ object examplesJsmNodesMathMathNodeMod {
     @js.native
     def ROUND: round = js.native
     inline def ROUND_=(x: round): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROUND")(x.asInstanceOf[js.Any])
-    
-    @JSImport("three/examples/jsm/nodes/math/MathNode", "default.SATURATE")
-    @js.native
-    def SATURATE: saturate = js.native
-    inline def SATURATE_=(x: saturate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SATURATE")(x.asInstanceOf[js.Any])
     
     @JSImport("three/examples/jsm/nodes/math/MathNode", "default.SIGN")
     @js.native

@@ -76,7 +76,7 @@ object libRendererMod {
     * the render. defaults to false.
     * @param {boolean} [options.hello=false] - Logs renderer type and version.
     */
-  open class Renderer () extends IRenderer {
+  open class Renderer () extends IRenderer[ICanvas] {
     def this(options: IRendererOptions) = this()
     
     /** Unique UID assigned to the renderer's WebGL context. */

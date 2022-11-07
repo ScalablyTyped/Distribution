@@ -10,6 +10,7 @@ import typings.pixiCore.libShaderUtilsUniformParsersMod.IUniformParser
 import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IResourcePlugin
 import typings.pixiCore.mod.^
 import typings.pixiSettings.libAdapterMod.IAdapter
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import typings.pixiSettings.libSettingsMod.ISettings
 import typings.pixiSettings.libUtilsIsMobileMod.isMobileResult
 import typings.pixiUtils.libTypesMod.Dict
@@ -32,8 +33,8 @@ inline def RAD_TO_DEG: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("RAD_TO
 
 inline def VERSION: /* "$_VERSION" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[/* "$_VERSION" */ String]
 
-inline def autoDetectRenderer(): IRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")().asInstanceOf[IRenderer]
-inline def autoDetectRenderer(options: IRendererOptionsAuto): IRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[IRenderer]
+inline def autoDetectRenderer[VIEW /* <: ICanvas */](): IRenderer[VIEW] = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")().asInstanceOf[IRenderer[VIEW]]
+inline def autoDetectRenderer[VIEW /* <: ICanvas */](options: IRendererOptionsAuto): IRenderer[VIEW] = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[IRenderer[VIEW]]
 
 inline def autoDetectResource[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: Any): R = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any]).asInstanceOf[R]
 inline def autoDetectResource[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: Any, options: RO): R = (^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[R]

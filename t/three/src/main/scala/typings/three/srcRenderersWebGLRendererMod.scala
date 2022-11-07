@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.std.EventTarget
 import typings.std.HTMLCanvasElement
 import typings.std.WebGL2RenderingContext
 import typings.std.WebGLRenderingContext
@@ -31,6 +30,7 @@ import typings.three.srcRenderersWebxrWebXRManagerMod.WebXRManager
 import typings.three.srcScenesSceneMod.Scene
 import typings.three.srcTexturesData3DTextureMod.Data3DTexture
 import typings.three.srcTexturesDataArrayTextureMod.DataArrayTexture
+import typings.three.srcTexturesTextureMod.OffscreenCanvas
 import typings.three.srcTexturesTextureMod.Texture
 import typings.three.srcUtilsMod.ColorRepresentation
 import typings.webxr.XRFrameRequestCallback
@@ -499,8 +499,6 @@ object srcRenderersWebGLRendererMod {
     
     var xr: WebXRManager = js.native
   }
-  
-  type OffscreenCanvas = EventTarget
   
   @js.native
   trait Renderer extends StObject {

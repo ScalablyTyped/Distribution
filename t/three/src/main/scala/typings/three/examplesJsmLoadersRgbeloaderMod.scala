@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcConstantsMod.PixelFormat
 import typings.three.srcConstantsMod.TextureDataType
 import typings.three.srcThreeMod.DataTextureLoader
 import typings.three.srcThreeMod.LoadingManager
@@ -28,8 +27,6 @@ object examplesJsmLoadersRgbeloaderMod {
     
     var exposure: Double
     
-    var format: PixelFormat
-    
     var gamma: Double
     
     var header: String
@@ -45,14 +42,13 @@ object examplesJsmLoadersRgbeloaderMod {
     inline def apply(
       data: js.typedarray.Float32Array | js.typedarray.Uint8Array,
       exposure: Double,
-      format: PixelFormat,
       gamma: Double,
       header: String,
       height: Double,
       `type`: TextureDataType,
       width: Double
     ): RGBE = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], exposure = exposure.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], gamma = gamma.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], exposure = exposure.asInstanceOf[js.Any], gamma = gamma.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGBE]
     }
@@ -62,8 +58,6 @@ object examplesJsmLoadersRgbeloaderMod {
       inline def setData(value: js.typedarray.Float32Array | js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setExposure(value: Double): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
-      
-      inline def setFormat(value: PixelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
       

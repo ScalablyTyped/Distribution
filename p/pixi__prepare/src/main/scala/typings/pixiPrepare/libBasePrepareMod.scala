@@ -8,6 +8,7 @@ import typings.pixiCore.mod.Texture
 import typings.pixiDisplay.libDisplayObjectMod.DisplayObject
 import typings.pixiDisplay.mod.Container
 import typings.pixiPrepare.anon.PartialTextStyle
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import typings.pixiText.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ object libBasePrepareMod {
     /**
       * @param {PIXI.IRenderer} renderer - A reference to the current renderer
       */
-    def this(renderer: IRenderer) = this()
+    def this(renderer: IRenderer[ICanvas]) = this()
     
     def add(item: BaseTexture[Resource, IAutoDetectOptions]): this.type = js.native
     def add(item: Texture[Resource]): this.type = js.native
@@ -88,7 +89,7 @@ object libBasePrepareMod {
     def registerUploadHook(uploadHook: IUploadHook): this.type = js.native
     
     /** Reference to the renderer. */
-    /* protected */ var renderer: IRenderer = js.native
+    /* protected */ var renderer: IRenderer[ICanvas] = js.native
     
     /**
       * Handle tick update
@@ -141,5 +142,9 @@ object libBasePrepareMod {
   
   type IFindHook = js.Function2[/* item */ Any, /* queue */ js.Array[Any], Boolean]
   
-  type IUploadHook = js.Function2[/* helper */ IRenderer | BasePrepare, /* item */ IDisplayObjectExtended, Boolean]
+  type IUploadHook = js.Function2[
+    /* helper */ IRenderer[ICanvas] | BasePrepare, 
+    /* item */ IDisplayObjectExtended, 
+    Boolean
+  ]
 }

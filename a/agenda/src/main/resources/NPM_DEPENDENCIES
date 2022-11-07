@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "agenda" : "4.4.0"
+      "agenda" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "agenda" : "4.4.0"
+      "agenda" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

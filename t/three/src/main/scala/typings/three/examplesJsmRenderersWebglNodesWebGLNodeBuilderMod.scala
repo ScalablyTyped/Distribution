@@ -17,7 +17,8 @@ object examplesJsmRenderersWebglNodesWebGLNodeBuilderMod {
   open class WebGLNodeBuilder protected () extends default {
     def this(`object`: Object3D[Event], renderer: Renderer, shader: FragmentShader) = this()
     
-    def addCodeAfterCode(shaderStage: String, snippet: String, code: String): String = js.native
+    def addCode(shaderStage: String, source: String, code: String): String = js.native
+    def addCode(shaderStage: String, source: String, code: String, scope: this.type): String = js.native
     
     def addCodeAfterInclude(shaderStage: String, snippet: String, code: String): String = js.native
     
@@ -57,5 +58,6 @@ object examplesJsmRenderersWebglNodesWebGLNodeBuilderMod {
     def parseInclude(shaderStage: String, includes: String*): Unit = js.native
     
     def replaceCode(shaderStage: String, source: String, target: String): Unit = js.native
+    def replaceCode(shaderStage: String, source: String, target: String, scope: this.type): Unit = js.native
   }
 }

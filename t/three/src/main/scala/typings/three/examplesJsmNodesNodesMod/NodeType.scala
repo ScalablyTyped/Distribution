@@ -10,43 +10,43 @@ object NodeType {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.Boolean")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.BOOLEAN")
   @js.native
-  def Boolean: typings.three.threeStrings.bool = js.native
-  inline def Boolean_=(x: typings.three.threeStrings.bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+  def BOOLEAN: typings.three.threeStrings.bool = js.native
+  inline def BOOLEAN_=(x: typings.three.threeStrings.bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOOLEAN")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.Float")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.FLOAT")
   @js.native
-  def Float: typings.three.threeStrings.float = js.native
-  inline def Float_=(x: typings.three.threeStrings.float): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
+  def FLOAT: typings.three.threeStrings.float = js.native
+  inline def FLOAT_=(x: typings.three.threeStrings.float): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLOAT")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.Integer")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.INTEGER")
   @js.native
-  def Integer: typings.three.threeStrings.int = js.native
-  inline def Integer_=(x: typings.three.threeStrings.int): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
+  def INTEGER: typings.three.threeStrings.int = js.native
+  inline def INTEGER_=(x: typings.three.threeStrings.int): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTEGER")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.Matrix3")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.MATRIX3")
   @js.native
-  def Matrix3: typings.three.threeStrings.mat3 = js.native
-  inline def Matrix3_=(x: typings.three.threeStrings.mat3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matrix3")(x.asInstanceOf[js.Any])
+  def MATRIX3: typings.three.threeStrings.mat3 = js.native
+  inline def MATRIX3_=(x: typings.three.threeStrings.mat3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MATRIX3")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.Matrix4")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.MATRIX4")
   @js.native
-  def Matrix4: typings.three.threeStrings.mat4 = js.native
-  inline def Matrix4_=(x: typings.three.threeStrings.mat4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matrix4")(x.asInstanceOf[js.Any])
+  def MATRIX4: typings.three.threeStrings.mat4 = js.native
+  inline def MATRIX4_=(x: typings.three.threeStrings.mat4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MATRIX4")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.Vector2")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.VECTOR2")
   @js.native
-  def Vector2: typings.three.threeStrings.vec2 = js.native
-  inline def Vector2_=(x: typings.three.threeStrings.vec2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector2")(x.asInstanceOf[js.Any])
+  def VECTOR2: typings.three.threeStrings.vec2 = js.native
+  inline def VECTOR2_=(x: typings.three.threeStrings.vec2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VECTOR2")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.Vector3")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.VECTOR3")
   @js.native
-  def Vector3: typings.three.threeStrings.vec3 = js.native
-  inline def Vector3_=(x: typings.three.threeStrings.vec3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector3")(x.asInstanceOf[js.Any])
+  def VECTOR3: typings.three.threeStrings.vec3 = js.native
+  inline def VECTOR3_=(x: typings.three.threeStrings.vec3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VECTOR3")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.Vector4")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeType.VECTOR4")
   @js.native
-  def Vector4: typings.three.threeStrings.vec4 = js.native
-  inline def Vector4_=(x: typings.three.threeStrings.vec4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector4")(x.asInstanceOf[js.Any])
+  def VECTOR4: typings.three.threeStrings.vec4 = js.native
+  inline def VECTOR4_=(x: typings.three.threeStrings.vec4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VECTOR4")(x.asInstanceOf[js.Any])
 }

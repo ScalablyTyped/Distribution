@@ -51,7 +51,7 @@ object libApplicationMod {
     * @param {Window|HTMLElement} [options.resizeTo] - Element to automatically resize stage to.
     * @param {boolean} [options.hello=false] - Logs renderer type and version.
     */
-  open class Application () extends StObject {
+  open class Application[VIEW /* <: ICanvas */] () extends StObject {
     def this(options: IApplicationOptions) = this()
     
     /**
@@ -80,7 +80,7 @@ object libApplicationMod {
       * WebGL renderer if available, otherwise CanvasRenderer.
       * @member {PIXI.Renderer|PIXI.CanvasRenderer}
       */
-    var renderer: IRenderer = js.native
+    var renderer: IRenderer[VIEW] = js.native
     
     /**
       * Reference to the renderer's screen rectangle. Its safe to use as `filterArea` or `hitArea` for the whole screen.
@@ -100,7 +100,7 @@ object libApplicationMod {
       * @member {PIXI.ICanvas}
       * @readonly
       */
-    def view: ICanvas = js.native
+    def view: VIEW = js.native
   }
   /* static members */
   object Application {

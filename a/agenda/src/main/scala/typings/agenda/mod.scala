@@ -1,8 +1,10 @@
 package typings.agenda
 
+import typings.agenda.anon.Id
 import typings.agenda.distAgendaMod.AgendaConfig
 import typings.agenda.distJobMod.JobAttributes
 import typings.agenda.distJobMod.JobAttributesData
+import typings.agenda.distJobMod.Modify
 import typings.mongodb.mod.AnyError
 import typings.mongodb.mod.Collection
 import org.scalablytyped.runtime.StObject
@@ -103,7 +105,7 @@ object mod {
   @js.native
   open class Job[T /* <: JobAttributesData */] protected ()
     extends typings.agenda.distJobMod.Job[T] {
-    def this(options: JobAttributes[T]) = this()
+    def this(options: Modify[JobAttributes[T], Id]) = this()
   }
   
   @JSImport("agenda", "JobPriority")

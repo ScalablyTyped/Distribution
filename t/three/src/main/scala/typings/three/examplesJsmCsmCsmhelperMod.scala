@@ -32,6 +32,8 @@ object examplesJsmCsmCsmhelperMod {
     
     var displayShadowBounds: Boolean = js.native
     
+    def dispose(): Unit = js.native
+    
     var frustumLines: LineSegments[BufferGeometry, LineBasicMaterial] = js.native
     
     var shadowLines: js.Array[Box3Helper] = js.native

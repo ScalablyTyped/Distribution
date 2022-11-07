@@ -466,51 +466,74 @@ object libDisplayObjectMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.DisplayObjectEvents * / any */ trait DisplayObjectEvents extends StObject {
     
-    var added: js.Array[Container[DisplayObject]]
+    var added: js.Array[/* container */ Container[DisplayObject]]
     
-    var childAdded: js.Tuple3[DisplayObject, Container[DisplayObject], Double]
+    var childAdded: js.Tuple3[
+        /* child */ DisplayObject, 
+        /* container */ Container[DisplayObject], 
+        /* index */ Double
+      ]
     
-    var childRemoved: js.Tuple3[DisplayObject, Container[DisplayObject], Double]
+    var childRemoved: js.Tuple3[
+        /* child */ DisplayObject, 
+        /* container */ Container[DisplayObject], 
+        /* index */ Double
+      ]
     
     var destroyed: js.Array[Any]
     
-    var removed: js.Array[Container[DisplayObject]]
-    
-    var removedFrom: js.Tuple3[DisplayObject, Container[DisplayObject], Double]
+    var removed: js.Array[/* container */ Container[DisplayObject]]
   }
   object DisplayObjectEvents {
     
     inline def apply(
-      added: js.Array[Container[DisplayObject]],
-      childAdded: js.Tuple3[DisplayObject, Container[DisplayObject], Double],
-      childRemoved: js.Tuple3[DisplayObject, Container[DisplayObject], Double],
+      added: js.Array[/* container */ Container[DisplayObject]],
+      childAdded: js.Tuple3[
+          /* child */ DisplayObject, 
+          /* container */ Container[DisplayObject], 
+          /* index */ Double
+        ],
+      childRemoved: js.Tuple3[
+          /* child */ DisplayObject, 
+          /* container */ Container[DisplayObject], 
+          /* index */ Double
+        ],
       destroyed: js.Array[Any],
-      removed: js.Array[Container[DisplayObject]],
-      removedFrom: js.Tuple3[DisplayObject, Container[DisplayObject], Double]
+      removed: js.Array[/* container */ Container[DisplayObject]]
     ): DisplayObjectEvents = {
-      val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], childAdded = childAdded.asInstanceOf[js.Any], childRemoved = childRemoved.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], removedFrom = removedFrom.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], childAdded = childAdded.asInstanceOf[js.Any], childRemoved = childRemoved.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayObjectEvents]
     }
     
     extension [Self <: DisplayObjectEvents](x: Self) {
       
-      inline def setAdded(value: js.Array[Container[DisplayObject]]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+      inline def setAdded(value: js.Array[/* container */ Container[DisplayObject]]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
-      inline def setAddedVarargs(value: Container[DisplayObject]*): Self = StObject.set(x, "added", js.Array(value*))
+      inline def setAddedVarargs(value: (/* container */ Container[DisplayObject])*): Self = StObject.set(x, "added", js.Array(value*))
       
-      inline def setChildAdded(value: js.Tuple3[DisplayObject, Container[DisplayObject], Double]): Self = StObject.set(x, "childAdded", value.asInstanceOf[js.Any])
+      inline def setChildAdded(
+        value: js.Tuple3[
+              /* child */ DisplayObject, 
+              /* container */ Container[DisplayObject], 
+              /* index */ Double
+            ]
+      ): Self = StObject.set(x, "childAdded", value.asInstanceOf[js.Any])
       
-      inline def setChildRemoved(value: js.Tuple3[DisplayObject, Container[DisplayObject], Double]): Self = StObject.set(x, "childRemoved", value.asInstanceOf[js.Any])
+      inline def setChildRemoved(
+        value: js.Tuple3[
+              /* child */ DisplayObject, 
+              /* container */ Container[DisplayObject], 
+              /* index */ Double
+            ]
+      ): Self = StObject.set(x, "childRemoved", value.asInstanceOf[js.Any])
       
       inline def setDestroyed(value: js.Array[Any]): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
       inline def setDestroyedVarargs(value: Any*): Self = StObject.set(x, "destroyed", js.Array(value*))
       
-      inline def setRemoved(value: js.Array[Container[DisplayObject]]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: js.Array[/* container */ Container[DisplayObject]]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      inline def setRemovedFrom(value: js.Tuple3[DisplayObject, Container[DisplayObject], Double]): Self = StObject.set(x, "removedFrom", value.asInstanceOf[js.Any])
-      
-      inline def setRemovedVarargs(value: Container[DisplayObject]*): Self = StObject.set(x, "removed", js.Array(value*))
+      inline def setRemovedVarargs(value: (/* container */ Container[DisplayObject])*): Self = StObject.set(x, "removed", js.Array(value*))
     }
   }
   

@@ -13,18 +13,18 @@ object NodeUpdateType {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeUpdateType.Frame")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeUpdateType.FRAME")
   @js.native
-  def Frame: frame = js.native
-  inline def Frame_=(x: frame): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Frame")(x.asInstanceOf[js.Any])
+  def FRAME: frame = js.native
+  inline def FRAME_=(x: frame): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAME")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeUpdateType.None")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeUpdateType.NONE")
   @js.native
-  def None: none = js.native
-  inline def None_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  def NONE: none = js.native
+  inline def NONE_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
   
-  @JSImport("three/examples/jsm/nodes/Nodes", "NodeUpdateType.Object")
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeUpdateType.OBJECT")
   @js.native
-  def Object: `object` = js.native
-  inline def Object_=(x: `object`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
+  def OBJECT: `object` = js.native
+  inline def OBJECT_=(x: `object`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OBJECT")(x.asInstanceOf[js.Any])
 }

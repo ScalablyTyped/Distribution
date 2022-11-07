@@ -7,6 +7,7 @@ import typings.pixiCore.libPluginPluginSystemMod.IRendererPlugins
 import typings.pixiCore.libSystemIsystemMod.ISystem
 import typings.pixiCore.libViewViewSystemMod.ViewOptions
 import typings.pixiExtensions.mod.ExtensionMetadata
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,12 +19,12 @@ object libStartupStartupSystemMod {
   open class StartupSystem protected ()
     extends StObject
        with ISystem[Null, Null] {
-    def this(renderer: IRenderer) = this()
+    def this(renderer: IRenderer[ICanvas]) = this()
     
     @JSName("destroy")
     def destroy_MStartupSystem(): Unit = js.native
     
-    val renderer: IRenderer = js.native
+    val renderer: IRenderer[ICanvas] = js.native
     
     /**
       * It all starts here! This initiates every system, passing in the options for any system by name.

@@ -55,11 +55,6 @@ object srcMaterialsMeshLambertMaterialMod {
     var combine: Combine = js.native
     
     /**
-      * @default 1
-      */
-    var dispalcementScale: Double = js.native
-    
-    /**
       * @default 0
       */
     var displacementBias: Double = js.native
@@ -68,6 +63,11 @@ object srcMaterialsMeshLambertMaterialMod {
       * @default null
       */
     var displacementMap: Texture | Null = js.native
+    
+    /**
+      * @default 1
+      */
+    var displacementScale: Double = js.native
     
     /**
       * @default new THREE.Color( 0x000000 )

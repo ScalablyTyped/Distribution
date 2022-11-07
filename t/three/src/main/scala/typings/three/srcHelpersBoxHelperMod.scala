@@ -23,6 +23,8 @@ object srcHelpersBoxHelperMod {
     def this(`object`: Object3D[Event]) = this()
     def this(`object`: Object3D[Event], color: ColorRepresentation) = this()
     
+    def dispose(): Unit = js.native
+    
     def setFromObject(`object`: Object3D[Event]): this.type = js.native
     
     def update(): Unit = js.native

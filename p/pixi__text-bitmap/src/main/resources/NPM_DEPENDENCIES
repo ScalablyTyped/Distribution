@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/text-bitmap" : "7.0.2"
+      "@pixi/text-bitmap" : "7.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/text-bitmap" : "7.0.2"
+      "@pixi/text-bitmap" : "7.0.3"
     }
   ],
   "compile-devDependencies" : [

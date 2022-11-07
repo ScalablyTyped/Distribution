@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pixiCore.libIrendererMod.IRenderer
 import typings.pixiCore.libSystemIsystemMod.ISystem
 import typings.pixiExtensions.mod.ExtensionMetadata
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ object libPluginPluginSystemMod {
   open class PluginSystem protected ()
     extends StObject
        with ISystem[IRendererPlugins, Null] {
-    def this(renderer: IRenderer) = this()
+    def this(renderer: IRenderer[ICanvas]) = this()
     
     @JSName("destroy")
     def destroy_MPluginSystem(): Unit = js.native

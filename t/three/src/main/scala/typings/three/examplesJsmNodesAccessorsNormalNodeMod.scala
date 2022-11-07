@@ -3,7 +3,6 @@ package typings.three
 import typings.three.threeStrings.geometry
 import typings.three.threeStrings.local
 import typings.three.threeStrings.view
-import typings.three.threeStrings.world
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,11 +35,6 @@ object examplesJsmNodesAccessorsNormalNodeMod {
     @js.native
     def VIEW: view = js.native
     inline def VIEW_=(x: view): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEW")(x.asInstanceOf[js.Any])
-    
-    @JSImport("three/examples/jsm/nodes/accessors/NormalNode", "default.WORLD")
-    @js.native
-    def WORLD: world = js.native
-    inline def WORLD_=(x: world): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WORLD")(x.asInstanceOf[js.Any])
   }
   
   @js.native

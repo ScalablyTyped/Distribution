@@ -1,8 +1,11 @@
 package typings.agenda
 
+import typings.agenda.distAgendaDefineMod.DefineOptions
+import typings.agenda.distAgendaDefineMod.Processor
 import typings.agenda.distAgendaMod.Agenda
 import typings.agenda.distJobMod.Job
 import typings.agenda.distJobMod.JobAttributesData
+import typings.agenda.distJobRepeatEveryMod.JobOptions
 import typings.bson.mod.ObjectId
 import typings.mongodb.mod.MongoClientOptions
 import org.scalablytyped.runtime.StObject
@@ -43,10 +46,44 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(when: String, names: String, data: Any): js.Promise[Job[JobAttributesData]] = js.native
-    def apply(when: String, names: js.Array[String], data: Any): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
-    def apply(when: js.Date, names: String, data: Any): js.Promise[Job[JobAttributesData]] = js.native
-    def apply(when: js.Date, names: js.Array[String], data: Any): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
+    def apply[T /* <: JobAttributesData */](name: String, data: T): Job[JobAttributesData] = js.native
+  }
+  
+  @js.native
+  trait FnCallThisIntervalNamesDataOptions extends StObject {
+    
+    def apply[T /* <: JobAttributesData */](interval: String, names: String): js.Promise[Any] = js.native
+    def apply[T /* <: JobAttributesData */](interval: String, names: String, data: T): js.Promise[Any] = js.native
+    def apply[T /* <: JobAttributesData */](interval: String, names: String, data: T, options: JobOptions): js.Promise[Any] = js.native
+    def apply[T /* <: JobAttributesData */](interval: String, names: String, data: Unit, options: JobOptions): js.Promise[Any] = js.native
+    def apply[T /* <: JobAttributesData */](interval: String, names: js.Array[String]): js.Promise[Any] = js.native
+    def apply[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: T): js.Promise[Any] = js.native
+    def apply[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: T, options: JobOptions): js.Promise[Any] = js.native
+    def apply[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: Unit, options: JobOptions): js.Promise[Any] = js.native
+  }
+  
+  @js.native
+  trait FnCallThisNameData extends StObject {
+    
+    def apply[T /* <: JobAttributesData */](name: String, data: T): js.Promise[Job[JobAttributesData]] = js.native
+  }
+  
+  @js.native
+  trait FnCallThisNameOptionsProcessor extends StObject {
+    
+    def apply[T](name: String, options: DefineOptions): Unit = js.native
+    def apply[T](name: String, options: DefineOptions, processor: Processor[T]): Unit = js.native
+    def apply[T](name: String, options: Processor[T]): Unit = js.native
+    def apply[T](name: String, options: Processor[T], processor: Processor[T]): Unit = js.native
+  }
+  
+  @js.native
+  trait FnCallThisWhenNamesData extends StObject {
+    
+    def apply[T /* <: JobAttributesData */](when: String, names: String, data: T): js.Promise[Job[JobAttributesData]] = js.native
+    def apply[T /* <: JobAttributesData */](when: String, names: js.Array[String], data: T): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
+    def apply[T /* <: JobAttributesData */](when: js.Date, names: String, data: T): js.Promise[Job[JobAttributesData]] = js.native
+    def apply[T /* <: JobAttributesData */](when: js.Date, names: js.Array[String], data: T): js.Promise[js.Array[Job[JobAttributesData]]] = js.native
   }
   
   trait Force extends StObject {
@@ -63,6 +100,25 @@ object anon {
     extension [Self <: Force](x: Self) {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Id extends StObject {
+    
+    var _id: js.UndefOr[ObjectId] = js.undefined
+  }
+  object Id {
+    
+    inline def apply(): Id = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Id]
+    }
+    
+    extension [Self <: Id](x: Self) {
+      
+      inline def set_id(value: ObjectId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      
+      inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
     }
   }
   

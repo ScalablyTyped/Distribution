@@ -52,6 +52,8 @@ object libIcanvasMod {
     inline def webgl2: typings.pixiSettings.pixiSettingsStrings.webgl2 = "webgl2".asInstanceOf[typings.pixiSettings.pixiSettingsStrings.webgl2]
   }
   
+  type ContextSettings = ICanvasRenderingContext2DSettings | ImageBitmapRenderingContextSettings | WebGLContextAttributes
+  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.ICanvas * / any
   - Dropped {[ P in keyof std.EventTarget ]:? std.EventTarget[P]} */ @js.native
@@ -113,11 +115,11 @@ object libIcanvasMod {
       contextId: `experimental-webgl` | `experimental-webgl2` | webgl | webgl2,
       options: WebGLContextAttributes
     ): WebGLRenderingContext | Null = js.native
-    def getContext(contextId: ContextIds, options: Any): RenderingContext | Null = js.native
+    def getContext(contextId: ContextIds, options: ContextSettings): RenderingContext | Null = js.native
     /**
       * Get rendering context of the canvas.
       * @param {ContextIds} contextId - The identifier of the type of context to create.
-      * @param {any} options - The options for creating context.
+      * @param {ContextSettings} options - The options for creating context.
       * @returns {RenderingContext | null} The created context, or null if contextId is not supported.
       */
     @JSName("getContext")

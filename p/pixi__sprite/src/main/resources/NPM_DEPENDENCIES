@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/sprite" : "7.0.2"
+      "@pixi/sprite" : "7.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/sprite" : "7.0.2"
+      "@pixi/sprite" : "7.0.3"
     }
   ],
   "compile-devDependencies" : [

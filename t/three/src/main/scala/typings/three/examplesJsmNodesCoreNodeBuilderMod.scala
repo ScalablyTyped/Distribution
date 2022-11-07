@@ -134,6 +134,7 @@ object examplesJsmNodesCoreNodeBuilderMod {
     def getComponentType(`type`: NodeTypeOption): NodeTypeOption = js.native
     
     // @TODO: rename to .generateConst()
+    def getConst(`type`: NodeTypeOption): typings.three.examplesJsmNodesCoreNodeMod.default = js.native
     def getConst(`type`: NodeTypeOption, value: Any): typings.three.examplesJsmNodesCoreNodeMod.default = js.native
     
     def getContext(): NodeBuilderContext = js.native
@@ -197,13 +198,15 @@ object examplesJsmNodesCoreNodeBuilderMod {
     
     def getVars(shaderStage: NodeShaderStageOption): String = js.native
     
-    def getVaryFromNode(node: typings.three.examplesJsmNodesCoreNodeMod.default, `type`: NodeTypeOption): typings.three.examplesJsmNodesCoreNodeVaryMod.default = js.native
+    def getVaryFromNode(node: typings.three.examplesJsmNodesCoreNodeMod.default, `type`: NodeTypeOption): typings.three.examplesJsmNodesCoreNodeVaryingMod.default = js.native
     
     def getVarys(shaderStage: NodeShaderStageOption): String = js.native
     
     def getVectorFromMatrix(`type`: NodeTypeOption): NodeTypeOption = js.native
     
     def getVectorType(`type`: NodeTypeOption): NodeTypeOption = js.native
+    
+    def hasGeometryAttribute(name: String): Boolean = js.native
     
     var hashNodes: StringDictionary[typings.three.examplesJsmNodesCoreNodeMod.default] = js.native
     

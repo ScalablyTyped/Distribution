@@ -116,7 +116,7 @@ object srcCoreObject3DMod {
       */
     def getObjectByName(name: String): js.UndefOr[Object3D[Event]] = js.native
     
-    def getObjectByProperty(name: String, value: String): js.UndefOr[Object3D[Event]] = js.native
+    def getObjectByProperty(name: String, value: Any): js.UndefOr[Object3D[Event]] = js.native
     
     def getWorldDirection(target: Vector3): Vector3 = js.native
     
@@ -175,6 +175,13 @@ object srcCoreObject3DMod {
       * @default new THREE.Matrix4()
       */
     var matrixWorld: Matrix4 = js.native
+    
+    /**
+      * When this is set, the renderer checks every frame if the object and its children need matrix updates.
+      * Otherwise, you have to maintain all matrices in the object and its children yourself.
+      * @default THREE.Object3D.DefaultMatrixWorldAutoUpdate
+      */
+    var matrixWorldAutoUpdate: Boolean = js.native
     
     /**
       * When this is set, it calculates the matrixWorld in that frame and resets this property to false.
@@ -432,6 +439,11 @@ object srcCoreObject3DMod {
     @js.native
     def DefaultMatrixAutoUpdate: Boolean = js.native
     inline def DefaultMatrixAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixAutoUpdate")(x.asInstanceOf[js.Any])
+    
+    @JSImport("three/src/core/Object3D", "Object3D.DefaultMatrixWorldAutoUpdate")
+    @js.native
+    def DefaultMatrixWorldAutoUpdate: Boolean = js.native
+    inline def DefaultMatrixWorldAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixWorldAutoUpdate")(x.asInstanceOf[js.Any])
     
     @JSImport("three/src/core/Object3D", "Object3D.DefaultUp")
     @js.native

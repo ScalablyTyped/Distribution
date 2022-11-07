@@ -27,6 +27,8 @@ object examplesJsmPostprocessingPassMod {
     
     var clear: Boolean = js.native
     
+    def dispose(): Unit = js.native
+    
     var enabled: Boolean = js.native
     
     var needsSwap: Boolean = js.native

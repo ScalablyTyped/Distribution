@@ -1,7 +1,9 @@
 package typings.reactThreeFiber.anon
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.reactThreeFiber.reactThreeFiberStrings.XYZ
 import typings.three.mod.Euler
+import typings.three.srcMathEulerMod.EulerOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +13,7 @@ trait TypeofEuler
   extends StObject
      with Instantiable0[Euler] {
   
-  var DefaultOrder: String = js.native
+  var DefaultOrder: XYZ = js.native
   
-  var RotationOrders: js.Array[String] = js.native
+  var RotationOrders: js.Array[EulerOrder] = js.native
 }

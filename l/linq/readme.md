@@ -1,7 +1,7 @@
 
 # Scala.js typings for linq
 
-Typings are for version 4.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 linq.js - LINQ for JavaScript

@@ -38,5 +38,5 @@ trait TypeofQuaternion
     src1: js.Array[Double],
     stcOffset1: Double,
     t: Double
-  ): typings.three.srcMathQuaternionMod.Quaternion = js.native
+  ): Unit = js.native
 }

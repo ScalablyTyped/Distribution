@@ -1,9 +1,7 @@
 package typings.three.srcThreeMod
 
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
-import typings.std.HTMLVideoElement
-import typings.std.ImageBitmap
+import typings.std.TexImageSource
+import typings.three.srcTexturesTextureMod.OffscreenCanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +23,7 @@ open class CanvasTexture protected ()
     * @param [encoding=THREE.LinearEncoding]
     */
   def this(
-    canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap,
+    canvas: TexImageSource | OffscreenCanvas,
     mapping: js.UndefOr[typings.three.srcConstantsMod.Mapping],
     wrapS: js.UndefOr[typings.three.srcConstantsMod.Wrapping],
     wrapT: js.UndefOr[typings.three.srcConstantsMod.Wrapping],

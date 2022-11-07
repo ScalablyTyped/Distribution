@@ -43,7 +43,7 @@ object examplesJsmLoadersPcdloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
-    def parse(data: String, url: String): Points[BufferGeometry, Material | js.Array[Material]] = js.native
-    def parse(data: js.typedarray.ArrayBuffer, url: String): Points[BufferGeometry, Material | js.Array[Material]] = js.native
+    def parse(data: String): Points[BufferGeometry, Material | js.Array[Material]] = js.native
+    def parse(data: js.typedarray.ArrayBuffer): Points[BufferGeometry, Material | js.Array[Material]] = js.native
   }
 }

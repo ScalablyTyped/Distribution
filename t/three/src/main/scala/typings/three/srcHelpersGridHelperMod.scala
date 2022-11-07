@@ -36,12 +36,6 @@ object srcHelpersGridHelperMod {
     def this(size: Unit, divisions: Unit, color1: Unit, color2: ColorRepresentation) = this()
     def this(size: Unit, divisions: Unit, color1: ColorRepresentation, color2: ColorRepresentation) = this()
     
-    /**
-      * @deprecated Colors should be specified in the constructor.
-      */
-    def setColors(): Unit = js.native
-    def setColors(color1: Unit, color2: ColorRepresentation): Unit = js.native
-    def setColors(color1: ColorRepresentation): Unit = js.native
-    def setColors(color1: ColorRepresentation, color2: ColorRepresentation): Unit = js.native
+    def dispose(): Unit = js.native
   }
 }

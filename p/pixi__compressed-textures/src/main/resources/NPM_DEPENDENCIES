@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/compressed-textures" : "7.0.2"
+      "@pixi/compressed-textures" : "7.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/compressed-textures" : "7.0.2"
+      "@pixi/compressed-textures" : "7.0.3"
     }
   ],
   "compile-devDependencies" : [

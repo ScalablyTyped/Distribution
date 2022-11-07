@@ -2,6 +2,8 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.std.Generator
+import typings.three.srcCoreBufferAttributeMod.BufferAttribute
+import typings.three.srcCoreInterleavedBufferAttributeMod.InterleavedBufferAttribute
 import typings.three.srcMathEulerMod.Euler
 import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathVector3Mod.Vector3
@@ -63,6 +65,14 @@ object srcMathQuaternionMod {
     def fromArray(array: js.Array[Double], offset: Double): this.type = js.native
     def fromArray(array: ArrayLike[Double]): this.type = js.native
     def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
+    
+    /**
+      * Sets x, y, z, w properties of this quaternion from the attribute.
+      * @param attribute the source attribute.
+      * @param index index in the attribute.
+      */
+    def fromBufferAttribute(attribute: BufferAttribute, index: Double): Quaternion = js.native
+    def fromBufferAttribute(attribute: InterleavedBufferAttribute, index: Double): Quaternion = js.native
     
     def identity(): Quaternion = js.native
     
@@ -207,6 +217,6 @@ object srcMathQuaternionMod {
       src1: js.Array[Double],
       stcOffset1: Double,
       t: Double
-    ): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("slerpFlat")(dst.asInstanceOf[js.Any], dstOffset.asInstanceOf[js.Any], src0.asInstanceOf[js.Any], srcOffset.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], stcOffset1.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("slerpFlat")(dst.asInstanceOf[js.Any], dstOffset.asInstanceOf[js.Any], src0.asInstanceOf[js.Any], srcOffset.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], stcOffset1.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

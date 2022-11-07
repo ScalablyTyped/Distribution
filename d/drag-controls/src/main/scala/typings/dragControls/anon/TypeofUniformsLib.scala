@@ -3,11 +3,11 @@ package typings.dragControls.anon
 import typings.three.anon.AlphaMap
 import typings.three.anon.AmbientLightColor
 import typings.three.anon.AoMap
+import typings.three.anon.BackgroundBlurriness
 import typings.three.anon.BumpMap
 import typings.three.anon.Diffuse
 import typings.three.anon.DisplacementBias
 import typings.three.anon.EmissiveMap
-import typings.three.anon.EnvMap
 import typings.three.anon.FogColor
 import typings.three.anon.GradientMap
 import typings.three.anon.LightMap
@@ -31,7 +31,7 @@ trait TypeofUniformsLib extends StObject {
   
   var emissivemap: EmissiveMap
   
-  var envmap: EnvMap
+  var envmap: BackgroundBlurriness
   
   var fog: FogColor
   
@@ -59,7 +59,7 @@ object TypeofUniformsLib {
     common: AlphaMap,
     displacementmap: DisplacementBias,
     emissivemap: EmissiveMap,
-    envmap: EnvMap,
+    envmap: BackgroundBlurriness,
     fog: FogColor,
     gradientmap: GradientMap,
     lightmap: LightMap,
@@ -86,7 +86,7 @@ object TypeofUniformsLib {
     
     inline def setEmissivemap(value: EmissiveMap): Self = StObject.set(x, "emissivemap", value.asInstanceOf[js.Any])
     
-    inline def setEnvmap(value: EnvMap): Self = StObject.set(x, "envmap", value.asInstanceOf[js.Any])
+    inline def setEnvmap(value: BackgroundBlurriness): Self = StObject.set(x, "envmap", value.asInstanceOf[js.Any])
     
     inline def setFog(value: FogColor): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
     

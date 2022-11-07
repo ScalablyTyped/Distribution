@@ -60,6 +60,7 @@ object typingsMysqlLibProtocolSequencesQueryMod {
       *
       * @param options The options for the stream.
       */
+    def stream(): Readable = js.native
     def stream(options: StreamOptions): Readable = js.native
   }
   
@@ -125,6 +126,16 @@ object typingsMysqlLibProtocolSequencesQueryMod {
   trait QueryOptions extends StObject {
     
     /**
+      * By specifying a function that returns a readable stream, an arbitrary stream can be sent when sending a local fs file.
+      */
+    var infileStreamFactory: js.UndefOr[js.Function1[/* path */ String, Readable]] = js.undefined
+    
+    /**
+      * This overrides the namedPlaceholders option set at the connection level.
+      */
+    var namedPlaceholders: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Either a boolean or string. If true, tables will be nested objects. If string (e.g. '_'), tables will be
       * nested as tableName_fieldName
       */
@@ -132,7 +143,7 @@ object typingsMysqlLibProtocolSequencesQueryMod {
     
     /**
       * This overrides the same option set at the connection level.
-      * 
+      *
       */
     var rowsAsArray: js.UndefOr[Boolean] = js.undefined
     
@@ -184,6 +195,14 @@ object typingsMysqlLibProtocolSequencesQueryMod {
     }
     
     extension [Self <: QueryOptions](x: Self) {
+      
+      inline def setInfileStreamFactory(value: /* path */ String => Readable): Self = StObject.set(x, "infileStreamFactory", js.Any.fromFunction1(value))
+      
+      inline def setInfileStreamFactoryUndefined: Self = StObject.set(x, "infileStreamFactory", js.undefined)
+      
+      inline def setNamedPlaceholders(value: Boolean): Self = StObject.set(x, "namedPlaceholders", value.asInstanceOf[js.Any])
+      
+      inline def setNamedPlaceholdersUndefined: Self = StObject.set(x, "namedPlaceholders", js.undefined)
       
       inline def setNestTables(value: Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
       

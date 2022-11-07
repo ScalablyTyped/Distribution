@@ -17,6 +17,7 @@ object srcLoadersDataTextureLoaderMod {
   open class DataTextureLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
+    def load(url: String): DataTexture = js.native
     def load(url: String, onLoad: js.Function2[/* dataTexture */ DataTexture, /* texData */ js.Object, Unit]): DataTexture = js.native
     def load(
       url: String,
@@ -35,5 +36,13 @@ object srcLoadersDataTextureLoaderMod {
       onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): DataTexture = js.native
+    def load(url: String, onLoad: Unit, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): DataTexture = js.native
+    def load(
+      url: String,
+      onLoad: Unit,
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): DataTexture = js.native
+    def load(url: String, onLoad: Unit, onProgress: Unit, onError: js.Function1[/* event */ ErrorEvent, Unit]): DataTexture = js.native
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__utils
 
-Typings are for version 7.0.2
+Typings are for version 7.0.3
 
 ## Library description:
 Collection of utilities used by PixiJS

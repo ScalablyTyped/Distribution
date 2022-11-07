@@ -1,6 +1,7 @@
 package typings.linq
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -142,22 +143,22 @@ object anon {
     }
   }
   
-  trait Value[T] extends StObject {
+  trait Value[K /* <: PropertyKey */, T] extends StObject {
     
-    var key: String
+    var key: K
     
     var value: T
   }
   object Value {
     
-    inline def apply[T](key: String, value: T): Value[T] = {
+    inline def apply[K /* <: PropertyKey */, T](key: K, value: T): Value[K, T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Value[T]]
+      __obj.asInstanceOf[Value[K, T]]
     }
     
-    extension [Self <: Value[?], T](x: Self & Value[T]) {
+    extension [Self <: Value[?, ?], K /* <: PropertyKey */, T](x: Self & (Value[K, T])) {
       
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

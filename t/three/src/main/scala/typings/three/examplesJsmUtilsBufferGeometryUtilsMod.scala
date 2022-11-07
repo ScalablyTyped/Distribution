@@ -40,6 +40,8 @@ object examplesJsmUtilsBufferGeometryUtilsMod {
     ]
   ): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMorphedAttributes")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
+  inline def deepCloneAttribute(attribute: BufferAttribute): BufferAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCloneAttribute")(attribute.asInstanceOf[js.Any]).asInstanceOf[BufferAttribute]
+  
   inline def deinterleaveAttribute(geometry: BufferGeometry): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deinterleaveAttribute")(geometry.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def deinterleaveGeometry(geometry: BufferGeometry): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deinterleaveGeometry")(geometry.asInstanceOf[js.Any]).asInstanceOf[Unit]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-three__fiber"
-version := "8.7.4-4bd2a9"
+version := "8.7.4-cf2cc1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react-use-measure" % "2.1.1-f1aa45",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "three" % "0.144-dt-20220902Z-3c5177",
+  "org.scalablytyped" %%% "three" % "0.146-dt-20221106Z-a88ac4",
   "org.scalablytyped" %%% "webxr" % "0.5-dt-20220721Z-ef4a6b",
   "org.scalablytyped" %%% "zustand" % "4.1.1-24b00b")
 publishArtifact in packageDoc := false

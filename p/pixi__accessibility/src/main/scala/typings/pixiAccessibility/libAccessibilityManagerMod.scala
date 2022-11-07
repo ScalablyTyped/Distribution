@@ -4,6 +4,7 @@ import typings.pixiAccessibility.libAccessibleTargetMod.IAccessibleHTMLElement
 import typings.pixiCore.libIrendererMod.IRenderer
 import typings.pixiCore.mod.Rectangle
 import typings.pixiExtensions.mod.ExtensionMetadata
+import typings.pixiSettings.libIcanvasMod.ICanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object libAccessibilityManagerMod {
     /**
       * @param {PIXI.CanvasRenderer|PIXI.Renderer} renderer - A reference to the current renderer
       */
-    def this(renderer: IRenderer) = this()
+    def this(renderer: IRenderer[ICanvas]) = this()
     
     /**
       * Dispatch events with the EventSystem.
@@ -151,7 +152,7 @@ object libAccessibilityManagerMod {
       * The renderer this accessibility manager works for.
       * @type {PIXI.CanvasRenderer|PIXI.Renderer}
       */
-    var renderer: IRenderer = js.native
+    var renderer: IRenderer[ICanvas] = js.native
     
     /**
       * Before each render this function will ensure that all divs are mapped correctly to their DisplayObjects.

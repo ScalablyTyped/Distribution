@@ -9,6 +9,7 @@ import typings.three.examplesJsmNodesCoreConstantsMod.NodeValueOption
 import typings.three.examplesJsmNodesCoreFunctionNodeMod.FunctionNodeArguments
 import typings.three.examplesJsmNodesCoreNodeBuilderMod.NodeBuilderContext
 import typings.three.examplesJsmNodesCoreNodeMod.default
+import typings.three.examplesJsmNodesNodesMod.BitangentNode
 import typings.three.examplesJsmNodesNodesMod.BufferNode
 import typings.three.examplesJsmNodesNodesMod.BypassNode
 import typings.three.examplesJsmNodesNodesMod.CameraNode
@@ -32,6 +33,7 @@ import typings.three.examplesJsmNodesNodesMod.PointUVNode
 import typings.three.examplesJsmNodesNodesMod.PositionNode
 import typings.three.examplesJsmNodesNodesMod.PropertyNode
 import typings.three.examplesJsmNodesNodesMod.ReferenceNode
+import typings.three.examplesJsmNodesNodesMod.TangentNode
 import typings.three.examplesJsmNodesNodesMod.UVNode
 import typings.three.examplesJsmNodesNodesMod.UserDataNode
 import typings.three.examplesJsmNodesNodesMod.VarNode
@@ -78,6 +80,10 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
     extends typings.three.examplesJsmNodesShadernodeShaderNodeMod.ShaderNode[T, R] {
     def this(jsFunc: js.Function2[/* inputs */ NodeObjects_[T], /* builder */ NodeBuilder, NodeRepresentation[Node]]) = this()
   }
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "TBNViewMatrix")
+  @js.native
+  val TBNViewMatrix: Swizzable[MathNode] = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "abs")
   @js.native
@@ -128,6 +134,22 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "bitXor")
   @js.native
   val bitXor: Operator = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "bitangentGeometry")
+  @js.native
+  val bitangentGeometry: Swizzable[BitangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "bitangentLocal")
+  @js.native
+  val bitangentLocal: Swizzable[BitangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "bitangentView")
+  @js.native
+  val bitangentView: Swizzable[BitangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "bitangentWorld")
+  @js.native
+  val bitangentWorld: Swizzable[BitangentNode] = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "bmat3")
   @js.native
@@ -207,6 +229,8 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   
   inline def context(node: NodeRepresentation[Node], context: NodeBuilderContext): Swizzable[ContextNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("context")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Swizzable[ContextNode]]
   
+  inline def convert(node: NodeRepresentation[Node], types: NodeTypeOption): Swizzable[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(node.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Swizzable[Node]]
+  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "cos")
   @js.native
   val cos: Unary = js.native
@@ -226,6 +250,10 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "degrees")
   @js.native
   val degrees: Unary = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "difference")
+  @js.native
+  val difference: Binary = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "diffuseColor")
   @js.native
@@ -362,6 +390,14 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "log2")
   @js.native
   val log2: Unary = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "lumaCoeffs")
+  @js.native
+  val lumaCoeffs: Swizzable[MathNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "luminance")
+  @js.native
+  val luminance: Binary = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "mat3")
   @js.native
@@ -531,6 +567,10 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   @js.native
   val positionWorld: Swizzable[PositionNode] = js.native
   
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "positionWorldDirection")
+  @js.native
+  val positionWorldDirection: Swizzable[PositionNode] = js.native
+  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "pow")
   @js.native
   val pow: Binary = js.native
@@ -553,6 +593,10 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "radians")
   @js.native
   val radians: Unary = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "reciprocal")
+  @js.native
+  val reciprocal: Unary = js.native
   
   inline def reference[T](name: String, nodeOrType: NodeOrType, `object`: T): Swizzable[ReferenceNode[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(name.asInstanceOf[js.Any], nodeOrType.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Swizzable[ReferenceNode[T]]]
   
@@ -578,10 +622,6 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   
   inline def sampler(texture: typings.three.examplesJsmNodesAccessorsTextureNodeMod.default): Swizzable[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("sampler")(texture.asInstanceOf[js.Any]).asInstanceOf[Swizzable[Node]]
   inline def sampler(texture: Texture): Swizzable[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("sampler")(texture.asInstanceOf[js.Any]).asInstanceOf[Swizzable[Node]]
-  
-  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "saturate")
-  @js.native
-  val saturate: Unary = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "shiftLeft")
   @js.native
@@ -625,6 +665,22 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   @js.native
   val tan: Unary = js.native
   
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "tangentGeometry")
+  @js.native
+  val tangentGeometry: Swizzable[TangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "tangentLocal")
+  @js.native
+  val tangentLocal: Swizzable[TangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "tangentView")
+  @js.native
+  val tangentView: Swizzable[TangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "tangentWorld")
+  @js.native
+  val tangentWorld: Swizzable[TangentNode] = js.native
+  
   inline def temp(node: NodeRepresentation[Node]): Swizzable[VarNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("temp")(node.asInstanceOf[js.Any]).asInstanceOf[Swizzable[VarNode]]
   inline def temp(node: NodeRepresentation[Node], name: String): Swizzable[VarNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("temp")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Swizzable[VarNode]]
   
@@ -637,13 +693,25 @@ object examplesJsmNodesShadernodeShaderNodeBaseElementsMod {
   @js.native
   val transformDirection: Binary = js.native
   
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "transformedBitangentView")
+  @js.native
+  val transformedBitangentView: Swizzable[MathNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "transformedBitangentWorld")
+  @js.native
+  val transformedBitangentWorld: Swizzable[MathNode] = js.native
+  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "transformedNormalView")
   @js.native
   val transformedNormalView: Swizzable[VarNode] = js.native
   
-  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "transformedNormalWorld")
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "transformedTangentView")
   @js.native
-  val transformedNormalWorld: Swizzable[MathNode] = js.native
+  val transformedTangentView: Swizzable[MathNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "transformedTangentWorld")
+  @js.native
+  val transformedTangentWorld: Swizzable[MathNode] = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeBaseElements", "uint")
   @js.native

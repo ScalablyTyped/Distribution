@@ -18,11 +18,9 @@ import typings.dragControls.dragControlsInts.`4`
 import typings.std.ArrayLike
 import typings.std.AudioNode
 import typings.std.BufferSource
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
-import typings.std.ImageBitmap
 import typings.std.ImageData
+import typings.std.TexImageSource
 import typings.std.WebGLBuffer
 import typings.std.WebGLRenderingContext
 import typings.std.WebGLShader
@@ -49,6 +47,7 @@ import typings.three.mod.CanvasTexture
 import typings.three.mod.CatmullRomCurve3
 import typings.three.mod.Clock
 import typings.three.mod.ColorKeyframeTrack
+import typings.three.mod.CompressedArrayTexture
 import typings.three.mod.CompressedTexture
 import typings.three.mod.CompressedTextureLoader
 import typings.three.mod.CubeCamera
@@ -275,6 +274,7 @@ import typings.three.srcRenderersWebglWebGLObjectsMod.WebGLObjects
 import typings.three.srcRenderersWebglWebGLPropertiesMod.WebGLProperties
 import typings.three.srcRenderersWebglWebGLStateMod.WebGLState
 import typings.three.srcRenderersWebglWebGLUtilsMod.WebGLUtils
+import typings.three.srcTexturesTextureMod.OffscreenCanvas
 import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -398,7 +398,7 @@ trait TypeofTHREE extends StObject {
   var CameraHelper: Instantiable1[/* camera */ Camera, typings.three.mod.CameraHelper]
   
   var CanvasTexture: Instantiable9[
-    /* canvas */ HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap, 
+    /* canvas */ TexImageSource | OffscreenCanvas, 
     /* mapping */ js.UndefOr[Mapping], 
     /* wrapS */ js.UndefOr[Wrapping], 
     /* wrapT */ js.UndefOr[Wrapping], 
@@ -429,6 +429,16 @@ trait TypeofTHREE extends StObject {
     /* times */ js.Array[Any], 
     /* values */ js.Array[Any], 
     typings.three.mod.ColorKeyframeTrack
+  ]
+  
+  val ColorManagement: TypeofColorManagement
+  
+  var CompressedArrayTexture: Instantiable4[
+    /* mipmaps */ js.Array[ImageData], 
+    /* width */ Double, 
+    /* height */ Double, 
+    /* depth */ Double, 
+    typings.three.mod.CompressedArrayTexture
   ]
   
   var CompressedTexture: Instantiable12[
@@ -1366,19 +1376,9 @@ trait TypeofTHREE extends StObject {
   
   var WebGL1Renderer: Instantiable0[typings.three.mod.WebGL1Renderer]
   
-  var WebGL3DRenderTarget: Instantiable3[
-    /* width */ Double, 
-    /* height */ Double, 
-    /* depth */ Double, 
-    typings.three.mod.WebGL3DRenderTarget
-  ]
+  var WebGL3DRenderTarget: Instantiable0[typings.three.mod.WebGL3DRenderTarget]
   
-  var WebGLArrayRenderTarget: Instantiable3[
-    /* width */ Double, 
-    /* height */ Double, 
-    /* depth */ Double, 
-    typings.three.mod.WebGLArrayRenderTarget
-  ]
+  var WebGLArrayRenderTarget: Instantiable0[typings.three.mod.WebGLArrayRenderTarget]
   
   var WebGLBufferRenderer: Instantiable4[
     /* gl */ WebGLRenderingContext, 
@@ -1399,7 +1399,7 @@ trait TypeofTHREE extends StObject {
   
   var WebGLColorBuffer: Instantiable0[typings.three.mod.WebGLColorBuffer]
   
-  var WebGLCubeRenderTarget: Instantiable1[/* size */ Double, typings.three.mod.WebGLCubeRenderTarget]
+  var WebGLCubeRenderTarget: Instantiable0[typings.three.mod.WebGLCubeRenderTarget]
   
   var WebGLCubeUVMaps: Instantiable1[
     /* renderer */ typings.three.srcThreeMod.WebGLRenderer, 
@@ -1433,18 +1433,9 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.WebGLLights
   ]
   
-  var WebGLMultipleRenderTargets: Instantiable3[
-    /* width */ Double, 
-    /* height */ Double, 
-    /* count */ Double, 
-    typings.three.mod.WebGLMultipleRenderTargets
-  ]
+  var WebGLMultipleRenderTargets: Instantiable0[typings.three.mod.WebGLMultipleRenderTargets]
   
-  var WebGLMultisampleRenderTarget: Instantiable2[
-    /* width */ Double, 
-    /* height */ Double, 
-    typings.three.mod.WebGLMultisampleRenderTarget
-  ]
+  var WebGLMultisampleRenderTarget: Instantiable0[typings.three.mod.WebGLMultisampleRenderTarget]
   
   var WebGLObjects: Instantiable4[
     /* gl */ WebGLRenderingContext, 
@@ -1477,7 +1468,7 @@ trait TypeofTHREE extends StObject {
   
   var WebGLRenderLists: Instantiable1[/* properties */ WebGLProperties, typings.three.mod.WebGLRenderLists]
   
-  var WebGLRenderTarget: Instantiable2[/* width */ Double, /* height */ Double, typings.three.mod.WebGLRenderTarget]
+  var WebGLRenderTarget: Instantiable0[typings.three.mod.WebGLRenderTarget]
   
   var WebGLRenderer: Instantiable0[typings.three.mod.WebGLRenderer]
   
@@ -1627,7 +1618,7 @@ object TypeofTHREE {
     Camera: Instantiable0[typings.three.mod.Camera],
     CameraHelper: Instantiable1[/* camera */ Camera, CameraHelper],
     CanvasTexture: Instantiable9[
-      /* canvas */ HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap, 
+      /* canvas */ TexImageSource | OffscreenCanvas, 
       /* mapping */ js.UndefOr[Mapping], 
       /* wrapS */ js.UndefOr[Wrapping], 
       /* wrapT */ js.UndefOr[Wrapping], 
@@ -1650,6 +1641,14 @@ object TypeofTHREE {
       /* times */ js.Array[Any], 
       /* values */ js.Array[Any], 
       ColorKeyframeTrack
+    ],
+    ColorManagement: TypeofColorManagement,
+    CompressedArrayTexture: Instantiable4[
+      /* mipmaps */ js.Array[ImageData], 
+      /* width */ Double, 
+      /* height */ Double, 
+      /* depth */ Double, 
+      CompressedArrayTexture
     ],
     CompressedTexture: Instantiable12[
       /* mipmaps */ js.Array[ImageData], 
@@ -1996,11 +1995,9 @@ object TypeofTHREE {
     PlaneGeometry: TypeofPlaneGeometry,
     PlaneHelper: Instantiable1[/* plane */ Plane, PlaneHelper],
     PointLight: Instantiable0[typings.three.mod.PointLight],
-    PointLightHelper: Instantiable1[/* light */ PointLight, PointLightHelper],
-    PointLightShadow: Instantiable1[/* camera */ Camera, PointLightShadow],
-    Points: Instantiable0[Points[BufferGeometry, Material | js.Array[Material]]]
+    PointLightHelper: Instantiable1[/* light */ PointLight, PointLightHelper]
   ): TypeofTHREE = {
-    val __obj = js.Dynamic.literal(ACESFilmicToneMapping = ACESFilmicToneMapping.asInstanceOf[js.Any], AddEquation = AddEquation.asInstanceOf[js.Any], AddOperation = AddOperation.asInstanceOf[js.Any], AdditiveAnimationBlendMode = AdditiveAnimationBlendMode.asInstanceOf[js.Any], AdditiveBlending = AdditiveBlending.asInstanceOf[js.Any], AlphaFormat = AlphaFormat.asInstanceOf[js.Any], AlwaysDepth = AlwaysDepth.asInstanceOf[js.Any], AlwaysStencilFunc = AlwaysStencilFunc.asInstanceOf[js.Any], AmbientLight = AmbientLight.asInstanceOf[js.Any], AmbientLightProbe = AmbientLightProbe.asInstanceOf[js.Any], AnimationAction = AnimationAction.asInstanceOf[js.Any], AnimationClip = AnimationClip.asInstanceOf[js.Any], AnimationLoader = AnimationLoader.asInstanceOf[js.Any], AnimationMixer = AnimationMixer.asInstanceOf[js.Any], AnimationObjectGroup = AnimationObjectGroup.asInstanceOf[js.Any], AnimationUtils = AnimationUtils.asInstanceOf[js.Any], ArcCurve = ArcCurve.asInstanceOf[js.Any], ArrayCamera = ArrayCamera.asInstanceOf[js.Any], ArrowHelper = ArrowHelper.asInstanceOf[js.Any], Audio = Audio.asInstanceOf[js.Any], AudioAnalyser = AudioAnalyser.asInstanceOf[js.Any], AudioContext = AudioContext.asInstanceOf[js.Any], AudioListener = AudioListener.asInstanceOf[js.Any], AudioLoader = AudioLoader.asInstanceOf[js.Any], AxesHelper = AxesHelper.asInstanceOf[js.Any], BackSide = BackSide.asInstanceOf[js.Any], BasicDepthPacking = BasicDepthPacking.asInstanceOf[js.Any], BasicShadowMap = BasicShadowMap.asInstanceOf[js.Any], Bone = Bone.asInstanceOf[js.Any], BooleanKeyframeTrack = BooleanKeyframeTrack.asInstanceOf[js.Any], Box2 = Box2.asInstanceOf[js.Any], Box3 = Box3.asInstanceOf[js.Any], Box3Helper = Box3Helper.asInstanceOf[js.Any], BoxGeometry = BoxGeometry.asInstanceOf[js.Any], BoxHelper = BoxHelper.asInstanceOf[js.Any], BufferAttribute = BufferAttribute.asInstanceOf[js.Any], BufferGeometry = BufferGeometry.asInstanceOf[js.Any], BufferGeometryLoader = BufferGeometryLoader.asInstanceOf[js.Any], BufferGeometryUtils = BufferGeometryUtils.asInstanceOf[js.Any], ByteType = ByteType.asInstanceOf[js.Any], Cache = Cache.asInstanceOf[js.Any], Camera = Camera.asInstanceOf[js.Any], CameraHelper = CameraHelper.asInstanceOf[js.Any], CanvasTexture = CanvasTexture.asInstanceOf[js.Any], CapsuleGeometry = CapsuleGeometry.asInstanceOf[js.Any], CatmullRomCurve3 = CatmullRomCurve3.asInstanceOf[js.Any], CineonToneMapping = CineonToneMapping.asInstanceOf[js.Any], CircleGeometry = CircleGeometry.asInstanceOf[js.Any], ClampToEdgeWrapping = ClampToEdgeWrapping.asInstanceOf[js.Any], Clock = Clock.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], ColorKeyframeTrack = ColorKeyframeTrack.asInstanceOf[js.Any], CompressedTexture = CompressedTexture.asInstanceOf[js.Any], CompressedTextureLoader = CompressedTextureLoader.asInstanceOf[js.Any], ConeGeometry = ConeGeometry.asInstanceOf[js.Any], CubeCamera = CubeCamera.asInstanceOf[js.Any], CubeReflectionMapping = CubeReflectionMapping.asInstanceOf[js.Any], CubeRefractionMapping = CubeRefractionMapping.asInstanceOf[js.Any], CubeTexture = CubeTexture.asInstanceOf[js.Any], CubeTextureLoader = CubeTextureLoader.asInstanceOf[js.Any], CubeUVReflectionMapping = CubeUVReflectionMapping.asInstanceOf[js.Any], CubicBezierCurve = CubicBezierCurve.asInstanceOf[js.Any], CubicBezierCurve3 = CubicBezierCurve3.asInstanceOf[js.Any], CubicInterpolant = CubicInterpolant.asInstanceOf[js.Any], CullFaceBack = CullFaceBack.asInstanceOf[js.Any], CullFaceFront = CullFaceFront.asInstanceOf[js.Any], CullFaceFrontBack = CullFaceFrontBack.asInstanceOf[js.Any], CullFaceNone = CullFaceNone.asInstanceOf[js.Any], Curve = Curve.asInstanceOf[js.Any], CurvePath = CurvePath.asInstanceOf[js.Any], CurveUtils = CurveUtils.asInstanceOf[js.Any], CustomBlending = CustomBlending.asInstanceOf[js.Any], CustomToneMapping = CustomToneMapping.asInstanceOf[js.Any], CylinderGeometry = CylinderGeometry.asInstanceOf[js.Any], Cylindrical = Cylindrical.asInstanceOf[js.Any], Data3DTexture = Data3DTexture.asInstanceOf[js.Any], DataArrayTexture = DataArrayTexture.asInstanceOf[js.Any], DataTexture = DataTexture.asInstanceOf[js.Any], DataTexture2DArray = DataTexture2DArray.asInstanceOf[js.Any], DataTexture3D = DataTexture3D.asInstanceOf[js.Any], DataTextureLoader = DataTextureLoader.asInstanceOf[js.Any], DecrementStencilOp = DecrementStencilOp.asInstanceOf[js.Any], DecrementWrapStencilOp = DecrementWrapStencilOp.asInstanceOf[js.Any], DefaultLoadingManager = DefaultLoadingManager.asInstanceOf[js.Any], DepthFormat = DepthFormat.asInstanceOf[js.Any], DepthStencilFormat = DepthStencilFormat.asInstanceOf[js.Any], DepthTexture = DepthTexture.asInstanceOf[js.Any], DirectionalLight = DirectionalLight.asInstanceOf[js.Any], DirectionalLightHelper = DirectionalLightHelper.asInstanceOf[js.Any], DirectionalLightShadow = DirectionalLightShadow.asInstanceOf[js.Any], DiscreteInterpolant = DiscreteInterpolant.asInstanceOf[js.Any], DodecahedronGeometry = DodecahedronGeometry.asInstanceOf[js.Any], DoubleSide = DoubleSide.asInstanceOf[js.Any], DstAlphaFactor = DstAlphaFactor.asInstanceOf[js.Any], DstColorFactor = DstColorFactor.asInstanceOf[js.Any], DynamicCopyUsage = DynamicCopyUsage.asInstanceOf[js.Any], DynamicDrawUsage = DynamicDrawUsage.asInstanceOf[js.Any], DynamicReadUsage = DynamicReadUsage.asInstanceOf[js.Any], Earcut = Earcut.asInstanceOf[js.Any], EdgesGeometry = EdgesGeometry.asInstanceOf[js.Any], EllipseCurve = EllipseCurve.asInstanceOf[js.Any], EqualDepth = EqualDepth.asInstanceOf[js.Any], EqualStencilFunc = EqualStencilFunc.asInstanceOf[js.Any], EquirectangularReflectionMapping = EquirectangularReflectionMapping.asInstanceOf[js.Any], EquirectangularRefractionMapping = EquirectangularRefractionMapping.asInstanceOf[js.Any], Euler = Euler.asInstanceOf[js.Any], EventDispatcher = EventDispatcher.asInstanceOf[js.Any], ExtrudeGeometry = ExtrudeGeometry.asInstanceOf[js.Any], FileLoader = FileLoader.asInstanceOf[js.Any], Float16BufferAttribute = Float16BufferAttribute.asInstanceOf[js.Any], Float32Attribute = Float32Attribute.asInstanceOf[js.Any], Float32BufferAttribute = Float32BufferAttribute.asInstanceOf[js.Any], Float64Attribute = Float64Attribute.asInstanceOf[js.Any], Float64BufferAttribute = Float64BufferAttribute.asInstanceOf[js.Any], FloatType = FloatType.asInstanceOf[js.Any], Fog = Fog.asInstanceOf[js.Any], FogExp2 = FogExp2.asInstanceOf[js.Any], FramebufferTexture = FramebufferTexture.asInstanceOf[js.Any], FrontSide = FrontSide.asInstanceOf[js.Any], Frustum = Frustum.asInstanceOf[js.Any], GLBufferAttribute = GLBufferAttribute.asInstanceOf[js.Any], GLSL1 = GLSL1.asInstanceOf[js.Any], GLSL3 = GLSL3.asInstanceOf[js.Any], GeometryUtils = GeometryUtils.asInstanceOf[js.Any], GreaterDepth = GreaterDepth.asInstanceOf[js.Any], GreaterEqualDepth = GreaterEqualDepth.asInstanceOf[js.Any], GreaterEqualStencilFunc = GreaterEqualStencilFunc.asInstanceOf[js.Any], GreaterStencilFunc = GreaterStencilFunc.asInstanceOf[js.Any], GridHelper = GridHelper.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], HalfFloatType = HalfFloatType.asInstanceOf[js.Any], HemisphereLight = HemisphereLight.asInstanceOf[js.Any], HemisphereLightHelper = HemisphereLightHelper.asInstanceOf[js.Any], HemisphereLightProbe = HemisphereLightProbe.asInstanceOf[js.Any], IcosahedronGeometry = IcosahedronGeometry.asInstanceOf[js.Any], ImageBitmapLoader = ImageBitmapLoader.asInstanceOf[js.Any], ImageLoader = ImageLoader.asInstanceOf[js.Any], ImageUtils = ImageUtils.asInstanceOf[js.Any], IncrementStencilOp = IncrementStencilOp.asInstanceOf[js.Any], IncrementWrapStencilOp = IncrementWrapStencilOp.asInstanceOf[js.Any], InstancedBufferAttribute = InstancedBufferAttribute.asInstanceOf[js.Any], InstancedBufferGeometry = InstancedBufferGeometry.asInstanceOf[js.Any], InstancedInterleavedBuffer = InstancedInterleavedBuffer.asInstanceOf[js.Any], InstancedMesh = InstancedMesh.asInstanceOf[js.Any], Int16Attribute = Int16Attribute.asInstanceOf[js.Any], Int16BufferAttribute = Int16BufferAttribute.asInstanceOf[js.Any], Int32Attribute = Int32Attribute.asInstanceOf[js.Any], Int32BufferAttribute = Int32BufferAttribute.asInstanceOf[js.Any], Int8Attribute = Int8Attribute.asInstanceOf[js.Any], Int8BufferAttribute = Int8BufferAttribute.asInstanceOf[js.Any], IntType = IntType.asInstanceOf[js.Any], InterleavedBuffer = InterleavedBuffer.asInstanceOf[js.Any], InterleavedBufferAttribute = InterleavedBufferAttribute.asInstanceOf[js.Any], Interpolant = Interpolant.asInstanceOf[js.Any], InterpolateDiscrete = InterpolateDiscrete.asInstanceOf[js.Any], InterpolateLinear = InterpolateLinear.asInstanceOf[js.Any], InterpolateSmooth = InterpolateSmooth.asInstanceOf[js.Any], InvertStencilOp = InvertStencilOp.asInstanceOf[js.Any], KeepStencilOp = KeepStencilOp.asInstanceOf[js.Any], KeyframeTrack = KeyframeTrack.asInstanceOf[js.Any], LOD = LOD.asInstanceOf[js.Any], LatheGeometry = LatheGeometry.asInstanceOf[js.Any], Layers = Layers.asInstanceOf[js.Any], LessDepth = LessDepth.asInstanceOf[js.Any], LessEqualDepth = LessEqualDepth.asInstanceOf[js.Any], LessEqualStencilFunc = LessEqualStencilFunc.asInstanceOf[js.Any], LessStencilFunc = LessStencilFunc.asInstanceOf[js.Any], Light = Light.asInstanceOf[js.Any], LightProbe = LightProbe.asInstanceOf[js.Any], LightShadow = LightShadow.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Line3 = Line3.asInstanceOf[js.Any], LineBasicMaterial = LineBasicMaterial.asInstanceOf[js.Any], LineCurve = LineCurve.asInstanceOf[js.Any], LineCurve3 = LineCurve3.asInstanceOf[js.Any], LineDashedMaterial = LineDashedMaterial.asInstanceOf[js.Any], LineLoop = LineLoop.asInstanceOf[js.Any], LinePieces = LinePieces.asInstanceOf[js.Any], LineSegments = LineSegments.asInstanceOf[js.Any], LineStrip = LineStrip.asInstanceOf[js.Any], LinearEncoding = LinearEncoding.asInstanceOf[js.Any], LinearFilter = LinearFilter.asInstanceOf[js.Any], LinearInterpolant = LinearInterpolant.asInstanceOf[js.Any], LinearMipMapLinearFilter = LinearMipMapLinearFilter.asInstanceOf[js.Any], LinearMipMapNearestFilter = LinearMipMapNearestFilter.asInstanceOf[js.Any], LinearMipmapLinearFilter = LinearMipmapLinearFilter.asInstanceOf[js.Any], LinearMipmapNearestFilter = LinearMipmapNearestFilter.asInstanceOf[js.Any], LinearToneMapping = LinearToneMapping.asInstanceOf[js.Any], Loader = Loader.asInstanceOf[js.Any], LoaderUtils = LoaderUtils.asInstanceOf[js.Any], LoadingManager = LoadingManager.asInstanceOf[js.Any], LoopOnce = LoopOnce.asInstanceOf[js.Any], LoopPingPong = LoopPingPong.asInstanceOf[js.Any], LoopRepeat = LoopRepeat.asInstanceOf[js.Any], LuminanceAlphaFormat = LuminanceAlphaFormat.asInstanceOf[js.Any], LuminanceFormat = LuminanceFormat.asInstanceOf[js.Any], Material = Material.asInstanceOf[js.Any], MaterialLoader = MaterialLoader.asInstanceOf[js.Any], MathUtils = MathUtils.asInstanceOf[js.Any], Matrix3 = Matrix3.asInstanceOf[js.Any], Matrix4 = Matrix4.asInstanceOf[js.Any], MaxEquation = MaxEquation.asInstanceOf[js.Any], Mesh = Mesh.asInstanceOf[js.Any], MeshBasicMaterial = MeshBasicMaterial.asInstanceOf[js.Any], MeshDepthMaterial = MeshDepthMaterial.asInstanceOf[js.Any], MeshDistanceMaterial = MeshDistanceMaterial.asInstanceOf[js.Any], MeshLambertMaterial = MeshLambertMaterial.asInstanceOf[js.Any], MeshMatcapMaterial = MeshMatcapMaterial.asInstanceOf[js.Any], MeshNormalMaterial = MeshNormalMaterial.asInstanceOf[js.Any], MeshPhongMaterial = MeshPhongMaterial.asInstanceOf[js.Any], MeshPhysicalMaterial = MeshPhysicalMaterial.asInstanceOf[js.Any], MeshStandardMaterial = MeshStandardMaterial.asInstanceOf[js.Any], MeshToonMaterial = MeshToonMaterial.asInstanceOf[js.Any], MinEquation = MinEquation.asInstanceOf[js.Any], MirroredRepeatWrapping = MirroredRepeatWrapping.asInstanceOf[js.Any], MixOperation = MixOperation.asInstanceOf[js.Any], MultiplyBlending = MultiplyBlending.asInstanceOf[js.Any], MultiplyOperation = MultiplyOperation.asInstanceOf[js.Any], NearestFilter = NearestFilter.asInstanceOf[js.Any], NearestMipMapLinearFilter = NearestMipMapLinearFilter.asInstanceOf[js.Any], NearestMipMapNearestFilter = NearestMipMapNearestFilter.asInstanceOf[js.Any], NearestMipmapLinearFilter = NearestMipmapLinearFilter.asInstanceOf[js.Any], NearestMipmapNearestFilter = NearestMipmapNearestFilter.asInstanceOf[js.Any], NeverDepth = NeverDepth.asInstanceOf[js.Any], NeverStencilFunc = NeverStencilFunc.asInstanceOf[js.Any], NoBlending = NoBlending.asInstanceOf[js.Any], NoToneMapping = NoToneMapping.asInstanceOf[js.Any], NormalAnimationBlendMode = NormalAnimationBlendMode.asInstanceOf[js.Any], NormalBlending = NormalBlending.asInstanceOf[js.Any], NotEqualDepth = NotEqualDepth.asInstanceOf[js.Any], NotEqualStencilFunc = NotEqualStencilFunc.asInstanceOf[js.Any], NumberKeyframeTrack = NumberKeyframeTrack.asInstanceOf[js.Any], Object3D = Object3D.asInstanceOf[js.Any], ObjectLoader = ObjectLoader.asInstanceOf[js.Any], ObjectSpaceNormalMap = ObjectSpaceNormalMap.asInstanceOf[js.Any], OctahedronGeometry = OctahedronGeometry.asInstanceOf[js.Any], OneFactor = OneFactor.asInstanceOf[js.Any], OneMinusDstAlphaFactor = OneMinusDstAlphaFactor.asInstanceOf[js.Any], OneMinusDstColorFactor = OneMinusDstColorFactor.asInstanceOf[js.Any], OneMinusSrcAlphaFactor = OneMinusSrcAlphaFactor.asInstanceOf[js.Any], OneMinusSrcColorFactor = OneMinusSrcColorFactor.asInstanceOf[js.Any], OrthographicCamera = OrthographicCamera.asInstanceOf[js.Any], PCFShadowMap = PCFShadowMap.asInstanceOf[js.Any], PCFSoftShadowMap = PCFSoftShadowMap.asInstanceOf[js.Any], PMREMGenerator = PMREMGenerator.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], PerspectiveCamera = PerspectiveCamera.asInstanceOf[js.Any], Plane = Plane.asInstanceOf[js.Any], PlaneGeometry = PlaneGeometry.asInstanceOf[js.Any], PlaneHelper = PlaneHelper.asInstanceOf[js.Any], PointLight = PointLight.asInstanceOf[js.Any], PointLightHelper = PointLightHelper.asInstanceOf[js.Any], PointLightShadow = PointLightShadow.asInstanceOf[js.Any], Points = Points.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ACESFilmicToneMapping = ACESFilmicToneMapping.asInstanceOf[js.Any], AddEquation = AddEquation.asInstanceOf[js.Any], AddOperation = AddOperation.asInstanceOf[js.Any], AdditiveAnimationBlendMode = AdditiveAnimationBlendMode.asInstanceOf[js.Any], AdditiveBlending = AdditiveBlending.asInstanceOf[js.Any], AlphaFormat = AlphaFormat.asInstanceOf[js.Any], AlwaysDepth = AlwaysDepth.asInstanceOf[js.Any], AlwaysStencilFunc = AlwaysStencilFunc.asInstanceOf[js.Any], AmbientLight = AmbientLight.asInstanceOf[js.Any], AmbientLightProbe = AmbientLightProbe.asInstanceOf[js.Any], AnimationAction = AnimationAction.asInstanceOf[js.Any], AnimationClip = AnimationClip.asInstanceOf[js.Any], AnimationLoader = AnimationLoader.asInstanceOf[js.Any], AnimationMixer = AnimationMixer.asInstanceOf[js.Any], AnimationObjectGroup = AnimationObjectGroup.asInstanceOf[js.Any], AnimationUtils = AnimationUtils.asInstanceOf[js.Any], ArcCurve = ArcCurve.asInstanceOf[js.Any], ArrayCamera = ArrayCamera.asInstanceOf[js.Any], ArrowHelper = ArrowHelper.asInstanceOf[js.Any], Audio = Audio.asInstanceOf[js.Any], AudioAnalyser = AudioAnalyser.asInstanceOf[js.Any], AudioContext = AudioContext.asInstanceOf[js.Any], AudioListener = AudioListener.asInstanceOf[js.Any], AudioLoader = AudioLoader.asInstanceOf[js.Any], AxesHelper = AxesHelper.asInstanceOf[js.Any], BackSide = BackSide.asInstanceOf[js.Any], BasicDepthPacking = BasicDepthPacking.asInstanceOf[js.Any], BasicShadowMap = BasicShadowMap.asInstanceOf[js.Any], Bone = Bone.asInstanceOf[js.Any], BooleanKeyframeTrack = BooleanKeyframeTrack.asInstanceOf[js.Any], Box2 = Box2.asInstanceOf[js.Any], Box3 = Box3.asInstanceOf[js.Any], Box3Helper = Box3Helper.asInstanceOf[js.Any], BoxGeometry = BoxGeometry.asInstanceOf[js.Any], BoxHelper = BoxHelper.asInstanceOf[js.Any], BufferAttribute = BufferAttribute.asInstanceOf[js.Any], BufferGeometry = BufferGeometry.asInstanceOf[js.Any], BufferGeometryLoader = BufferGeometryLoader.asInstanceOf[js.Any], BufferGeometryUtils = BufferGeometryUtils.asInstanceOf[js.Any], ByteType = ByteType.asInstanceOf[js.Any], Cache = Cache.asInstanceOf[js.Any], Camera = Camera.asInstanceOf[js.Any], CameraHelper = CameraHelper.asInstanceOf[js.Any], CanvasTexture = CanvasTexture.asInstanceOf[js.Any], CapsuleGeometry = CapsuleGeometry.asInstanceOf[js.Any], CatmullRomCurve3 = CatmullRomCurve3.asInstanceOf[js.Any], CineonToneMapping = CineonToneMapping.asInstanceOf[js.Any], CircleGeometry = CircleGeometry.asInstanceOf[js.Any], ClampToEdgeWrapping = ClampToEdgeWrapping.asInstanceOf[js.Any], Clock = Clock.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], ColorKeyframeTrack = ColorKeyframeTrack.asInstanceOf[js.Any], ColorManagement = ColorManagement.asInstanceOf[js.Any], CompressedArrayTexture = CompressedArrayTexture.asInstanceOf[js.Any], CompressedTexture = CompressedTexture.asInstanceOf[js.Any], CompressedTextureLoader = CompressedTextureLoader.asInstanceOf[js.Any], ConeGeometry = ConeGeometry.asInstanceOf[js.Any], CubeCamera = CubeCamera.asInstanceOf[js.Any], CubeReflectionMapping = CubeReflectionMapping.asInstanceOf[js.Any], CubeRefractionMapping = CubeRefractionMapping.asInstanceOf[js.Any], CubeTexture = CubeTexture.asInstanceOf[js.Any], CubeTextureLoader = CubeTextureLoader.asInstanceOf[js.Any], CubeUVReflectionMapping = CubeUVReflectionMapping.asInstanceOf[js.Any], CubicBezierCurve = CubicBezierCurve.asInstanceOf[js.Any], CubicBezierCurve3 = CubicBezierCurve3.asInstanceOf[js.Any], CubicInterpolant = CubicInterpolant.asInstanceOf[js.Any], CullFaceBack = CullFaceBack.asInstanceOf[js.Any], CullFaceFront = CullFaceFront.asInstanceOf[js.Any], CullFaceFrontBack = CullFaceFrontBack.asInstanceOf[js.Any], CullFaceNone = CullFaceNone.asInstanceOf[js.Any], Curve = Curve.asInstanceOf[js.Any], CurvePath = CurvePath.asInstanceOf[js.Any], CurveUtils = CurveUtils.asInstanceOf[js.Any], CustomBlending = CustomBlending.asInstanceOf[js.Any], CustomToneMapping = CustomToneMapping.asInstanceOf[js.Any], CylinderGeometry = CylinderGeometry.asInstanceOf[js.Any], Cylindrical = Cylindrical.asInstanceOf[js.Any], Data3DTexture = Data3DTexture.asInstanceOf[js.Any], DataArrayTexture = DataArrayTexture.asInstanceOf[js.Any], DataTexture = DataTexture.asInstanceOf[js.Any], DataTexture2DArray = DataTexture2DArray.asInstanceOf[js.Any], DataTexture3D = DataTexture3D.asInstanceOf[js.Any], DataTextureLoader = DataTextureLoader.asInstanceOf[js.Any], DecrementStencilOp = DecrementStencilOp.asInstanceOf[js.Any], DecrementWrapStencilOp = DecrementWrapStencilOp.asInstanceOf[js.Any], DefaultLoadingManager = DefaultLoadingManager.asInstanceOf[js.Any], DepthFormat = DepthFormat.asInstanceOf[js.Any], DepthStencilFormat = DepthStencilFormat.asInstanceOf[js.Any], DepthTexture = DepthTexture.asInstanceOf[js.Any], DirectionalLight = DirectionalLight.asInstanceOf[js.Any], DirectionalLightHelper = DirectionalLightHelper.asInstanceOf[js.Any], DirectionalLightShadow = DirectionalLightShadow.asInstanceOf[js.Any], DiscreteInterpolant = DiscreteInterpolant.asInstanceOf[js.Any], DodecahedronGeometry = DodecahedronGeometry.asInstanceOf[js.Any], DoubleSide = DoubleSide.asInstanceOf[js.Any], DstAlphaFactor = DstAlphaFactor.asInstanceOf[js.Any], DstColorFactor = DstColorFactor.asInstanceOf[js.Any], DynamicCopyUsage = DynamicCopyUsage.asInstanceOf[js.Any], DynamicDrawUsage = DynamicDrawUsage.asInstanceOf[js.Any], DynamicReadUsage = DynamicReadUsage.asInstanceOf[js.Any], Earcut = Earcut.asInstanceOf[js.Any], EdgesGeometry = EdgesGeometry.asInstanceOf[js.Any], EllipseCurve = EllipseCurve.asInstanceOf[js.Any], EqualDepth = EqualDepth.asInstanceOf[js.Any], EqualStencilFunc = EqualStencilFunc.asInstanceOf[js.Any], EquirectangularReflectionMapping = EquirectangularReflectionMapping.asInstanceOf[js.Any], EquirectangularRefractionMapping = EquirectangularRefractionMapping.asInstanceOf[js.Any], Euler = Euler.asInstanceOf[js.Any], EventDispatcher = EventDispatcher.asInstanceOf[js.Any], ExtrudeGeometry = ExtrudeGeometry.asInstanceOf[js.Any], FileLoader = FileLoader.asInstanceOf[js.Any], Float16BufferAttribute = Float16BufferAttribute.asInstanceOf[js.Any], Float32Attribute = Float32Attribute.asInstanceOf[js.Any], Float32BufferAttribute = Float32BufferAttribute.asInstanceOf[js.Any], Float64Attribute = Float64Attribute.asInstanceOf[js.Any], Float64BufferAttribute = Float64BufferAttribute.asInstanceOf[js.Any], FloatType = FloatType.asInstanceOf[js.Any], Fog = Fog.asInstanceOf[js.Any], FogExp2 = FogExp2.asInstanceOf[js.Any], FramebufferTexture = FramebufferTexture.asInstanceOf[js.Any], FrontSide = FrontSide.asInstanceOf[js.Any], Frustum = Frustum.asInstanceOf[js.Any], GLBufferAttribute = GLBufferAttribute.asInstanceOf[js.Any], GLSL1 = GLSL1.asInstanceOf[js.Any], GLSL3 = GLSL3.asInstanceOf[js.Any], GeometryUtils = GeometryUtils.asInstanceOf[js.Any], GreaterDepth = GreaterDepth.asInstanceOf[js.Any], GreaterEqualDepth = GreaterEqualDepth.asInstanceOf[js.Any], GreaterEqualStencilFunc = GreaterEqualStencilFunc.asInstanceOf[js.Any], GreaterStencilFunc = GreaterStencilFunc.asInstanceOf[js.Any], GridHelper = GridHelper.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], HalfFloatType = HalfFloatType.asInstanceOf[js.Any], HemisphereLight = HemisphereLight.asInstanceOf[js.Any], HemisphereLightHelper = HemisphereLightHelper.asInstanceOf[js.Any], HemisphereLightProbe = HemisphereLightProbe.asInstanceOf[js.Any], IcosahedronGeometry = IcosahedronGeometry.asInstanceOf[js.Any], ImageBitmapLoader = ImageBitmapLoader.asInstanceOf[js.Any], ImageLoader = ImageLoader.asInstanceOf[js.Any], ImageUtils = ImageUtils.asInstanceOf[js.Any], IncrementStencilOp = IncrementStencilOp.asInstanceOf[js.Any], IncrementWrapStencilOp = IncrementWrapStencilOp.asInstanceOf[js.Any], InstancedBufferAttribute = InstancedBufferAttribute.asInstanceOf[js.Any], InstancedBufferGeometry = InstancedBufferGeometry.asInstanceOf[js.Any], InstancedInterleavedBuffer = InstancedInterleavedBuffer.asInstanceOf[js.Any], InstancedMesh = InstancedMesh.asInstanceOf[js.Any], Int16Attribute = Int16Attribute.asInstanceOf[js.Any], Int16BufferAttribute = Int16BufferAttribute.asInstanceOf[js.Any], Int32Attribute = Int32Attribute.asInstanceOf[js.Any], Int32BufferAttribute = Int32BufferAttribute.asInstanceOf[js.Any], Int8Attribute = Int8Attribute.asInstanceOf[js.Any], Int8BufferAttribute = Int8BufferAttribute.asInstanceOf[js.Any], IntType = IntType.asInstanceOf[js.Any], InterleavedBuffer = InterleavedBuffer.asInstanceOf[js.Any], InterleavedBufferAttribute = InterleavedBufferAttribute.asInstanceOf[js.Any], Interpolant = Interpolant.asInstanceOf[js.Any], InterpolateDiscrete = InterpolateDiscrete.asInstanceOf[js.Any], InterpolateLinear = InterpolateLinear.asInstanceOf[js.Any], InterpolateSmooth = InterpolateSmooth.asInstanceOf[js.Any], InvertStencilOp = InvertStencilOp.asInstanceOf[js.Any], KeepStencilOp = KeepStencilOp.asInstanceOf[js.Any], KeyframeTrack = KeyframeTrack.asInstanceOf[js.Any], LOD = LOD.asInstanceOf[js.Any], LatheGeometry = LatheGeometry.asInstanceOf[js.Any], Layers = Layers.asInstanceOf[js.Any], LessDepth = LessDepth.asInstanceOf[js.Any], LessEqualDepth = LessEqualDepth.asInstanceOf[js.Any], LessEqualStencilFunc = LessEqualStencilFunc.asInstanceOf[js.Any], LessStencilFunc = LessStencilFunc.asInstanceOf[js.Any], Light = Light.asInstanceOf[js.Any], LightProbe = LightProbe.asInstanceOf[js.Any], LightShadow = LightShadow.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Line3 = Line3.asInstanceOf[js.Any], LineBasicMaterial = LineBasicMaterial.asInstanceOf[js.Any], LineCurve = LineCurve.asInstanceOf[js.Any], LineCurve3 = LineCurve3.asInstanceOf[js.Any], LineDashedMaterial = LineDashedMaterial.asInstanceOf[js.Any], LineLoop = LineLoop.asInstanceOf[js.Any], LinePieces = LinePieces.asInstanceOf[js.Any], LineSegments = LineSegments.asInstanceOf[js.Any], LineStrip = LineStrip.asInstanceOf[js.Any], LinearEncoding = LinearEncoding.asInstanceOf[js.Any], LinearFilter = LinearFilter.asInstanceOf[js.Any], LinearInterpolant = LinearInterpolant.asInstanceOf[js.Any], LinearMipMapLinearFilter = LinearMipMapLinearFilter.asInstanceOf[js.Any], LinearMipMapNearestFilter = LinearMipMapNearestFilter.asInstanceOf[js.Any], LinearMipmapLinearFilter = LinearMipmapLinearFilter.asInstanceOf[js.Any], LinearMipmapNearestFilter = LinearMipmapNearestFilter.asInstanceOf[js.Any], LinearToneMapping = LinearToneMapping.asInstanceOf[js.Any], Loader = Loader.asInstanceOf[js.Any], LoaderUtils = LoaderUtils.asInstanceOf[js.Any], LoadingManager = LoadingManager.asInstanceOf[js.Any], LoopOnce = LoopOnce.asInstanceOf[js.Any], LoopPingPong = LoopPingPong.asInstanceOf[js.Any], LoopRepeat = LoopRepeat.asInstanceOf[js.Any], LuminanceAlphaFormat = LuminanceAlphaFormat.asInstanceOf[js.Any], LuminanceFormat = LuminanceFormat.asInstanceOf[js.Any], Material = Material.asInstanceOf[js.Any], MaterialLoader = MaterialLoader.asInstanceOf[js.Any], MathUtils = MathUtils.asInstanceOf[js.Any], Matrix3 = Matrix3.asInstanceOf[js.Any], Matrix4 = Matrix4.asInstanceOf[js.Any], MaxEquation = MaxEquation.asInstanceOf[js.Any], Mesh = Mesh.asInstanceOf[js.Any], MeshBasicMaterial = MeshBasicMaterial.asInstanceOf[js.Any], MeshDepthMaterial = MeshDepthMaterial.asInstanceOf[js.Any], MeshDistanceMaterial = MeshDistanceMaterial.asInstanceOf[js.Any], MeshLambertMaterial = MeshLambertMaterial.asInstanceOf[js.Any], MeshMatcapMaterial = MeshMatcapMaterial.asInstanceOf[js.Any], MeshNormalMaterial = MeshNormalMaterial.asInstanceOf[js.Any], MeshPhongMaterial = MeshPhongMaterial.asInstanceOf[js.Any], MeshPhysicalMaterial = MeshPhysicalMaterial.asInstanceOf[js.Any], MeshStandardMaterial = MeshStandardMaterial.asInstanceOf[js.Any], MeshToonMaterial = MeshToonMaterial.asInstanceOf[js.Any], MinEquation = MinEquation.asInstanceOf[js.Any], MirroredRepeatWrapping = MirroredRepeatWrapping.asInstanceOf[js.Any], MixOperation = MixOperation.asInstanceOf[js.Any], MultiplyBlending = MultiplyBlending.asInstanceOf[js.Any], MultiplyOperation = MultiplyOperation.asInstanceOf[js.Any], NearestFilter = NearestFilter.asInstanceOf[js.Any], NearestMipMapLinearFilter = NearestMipMapLinearFilter.asInstanceOf[js.Any], NearestMipMapNearestFilter = NearestMipMapNearestFilter.asInstanceOf[js.Any], NearestMipmapLinearFilter = NearestMipmapLinearFilter.asInstanceOf[js.Any], NearestMipmapNearestFilter = NearestMipmapNearestFilter.asInstanceOf[js.Any], NeverDepth = NeverDepth.asInstanceOf[js.Any], NeverStencilFunc = NeverStencilFunc.asInstanceOf[js.Any], NoBlending = NoBlending.asInstanceOf[js.Any], NoToneMapping = NoToneMapping.asInstanceOf[js.Any], NormalAnimationBlendMode = NormalAnimationBlendMode.asInstanceOf[js.Any], NormalBlending = NormalBlending.asInstanceOf[js.Any], NotEqualDepth = NotEqualDepth.asInstanceOf[js.Any], NotEqualStencilFunc = NotEqualStencilFunc.asInstanceOf[js.Any], NumberKeyframeTrack = NumberKeyframeTrack.asInstanceOf[js.Any], Object3D = Object3D.asInstanceOf[js.Any], ObjectLoader = ObjectLoader.asInstanceOf[js.Any], ObjectSpaceNormalMap = ObjectSpaceNormalMap.asInstanceOf[js.Any], OctahedronGeometry = OctahedronGeometry.asInstanceOf[js.Any], OneFactor = OneFactor.asInstanceOf[js.Any], OneMinusDstAlphaFactor = OneMinusDstAlphaFactor.asInstanceOf[js.Any], OneMinusDstColorFactor = OneMinusDstColorFactor.asInstanceOf[js.Any], OneMinusSrcAlphaFactor = OneMinusSrcAlphaFactor.asInstanceOf[js.Any], OneMinusSrcColorFactor = OneMinusSrcColorFactor.asInstanceOf[js.Any], OrthographicCamera = OrthographicCamera.asInstanceOf[js.Any], PCFShadowMap = PCFShadowMap.asInstanceOf[js.Any], PCFSoftShadowMap = PCFSoftShadowMap.asInstanceOf[js.Any], PMREMGenerator = PMREMGenerator.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], PerspectiveCamera = PerspectiveCamera.asInstanceOf[js.Any], Plane = Plane.asInstanceOf[js.Any], PlaneGeometry = PlaneGeometry.asInstanceOf[js.Any], PlaneHelper = PlaneHelper.asInstanceOf[js.Any], PointLight = PointLight.asInstanceOf[js.Any], PointLightHelper = PointLightHelper.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTHREE]
   }
   
@@ -2121,7 +2118,7 @@ object TypeofTHREE {
     
     inline def setCanvasTexture(
       value: Instantiable9[
-          /* canvas */ HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap, 
+          /* canvas */ TexImageSource | OffscreenCanvas, 
           /* mapping */ js.UndefOr[Mapping], 
           /* wrapS */ js.UndefOr[Wrapping], 
           /* wrapT */ js.UndefOr[Wrapping], 
@@ -2160,6 +2157,18 @@ object TypeofTHREE {
           ColorKeyframeTrack
         ]
     ): Self = StObject.set(x, "ColorKeyframeTrack", value.asInstanceOf[js.Any])
+    
+    inline def setColorManagement(value: TypeofColorManagement): Self = StObject.set(x, "ColorManagement", value.asInstanceOf[js.Any])
+    
+    inline def setCompressedArrayTexture(
+      value: Instantiable4[
+          /* mipmaps */ js.Array[ImageData], 
+          /* width */ Double, 
+          /* height */ Double, 
+          /* depth */ Double, 
+          CompressedArrayTexture
+        ]
+    ): Self = StObject.set(x, "CompressedArrayTexture", value.asInstanceOf[js.Any])
     
     inline def setCompressedTexture(
       value: Instantiable12[
@@ -3094,13 +3103,9 @@ object TypeofTHREE {
     
     inline def setWebGL1Renderer(value: Instantiable0[WebGL1Renderer]): Self = StObject.set(x, "WebGL1Renderer", value.asInstanceOf[js.Any])
     
-    inline def setWebGL3DRenderTarget(
-      value: Instantiable3[/* width */ Double, /* height */ Double, /* depth */ Double, WebGL3DRenderTarget]
-    ): Self = StObject.set(x, "WebGL3DRenderTarget", value.asInstanceOf[js.Any])
+    inline def setWebGL3DRenderTarget(value: Instantiable0[WebGL3DRenderTarget]): Self = StObject.set(x, "WebGL3DRenderTarget", value.asInstanceOf[js.Any])
     
-    inline def setWebGLArrayRenderTarget(
-      value: Instantiable3[/* width */ Double, /* height */ Double, /* depth */ Double, WebGLArrayRenderTarget]
-    ): Self = StObject.set(x, "WebGLArrayRenderTarget", value.asInstanceOf[js.Any])
+    inline def setWebGLArrayRenderTarget(value: Instantiable0[WebGLArrayRenderTarget]): Self = StObject.set(x, "WebGLArrayRenderTarget", value.asInstanceOf[js.Any])
     
     inline def setWebGLBufferRenderer(
       value: Instantiable4[
@@ -3125,7 +3130,7 @@ object TypeofTHREE {
     
     inline def setWebGLColorBuffer(value: Instantiable0[WebGLColorBuffer]): Self = StObject.set(x, "WebGLColorBuffer", value.asInstanceOf[js.Any])
     
-    inline def setWebGLCubeRenderTarget(value: Instantiable1[/* size */ Double, typings.three.mod.WebGLCubeRenderTarget]): Self = StObject.set(x, "WebGLCubeRenderTarget", value.asInstanceOf[js.Any])
+    inline def setWebGLCubeRenderTarget(value: Instantiable0[typings.three.mod.WebGLCubeRenderTarget]): Self = StObject.set(x, "WebGLCubeRenderTarget", value.asInstanceOf[js.Any])
     
     inline def setWebGLCubeUVMaps(value: Instantiable1[/* renderer */ typings.three.srcThreeMod.WebGLRenderer, WebGLCubeUVMaps]): Self = StObject.set(x, "WebGLCubeUVMaps", value.asInstanceOf[js.Any])
     
@@ -3158,16 +3163,9 @@ object TypeofTHREE {
       value: Instantiable2[/* extensions */ WebGLExtensions, /* capabilities */ WebGLCapabilities, WebGLLights]
     ): Self = StObject.set(x, "WebGLLights", value.asInstanceOf[js.Any])
     
-    inline def setWebGLMultipleRenderTargets(
-      value: Instantiable3[
-          /* width */ Double, 
-          /* height */ Double, 
-          /* count */ Double, 
-          WebGLMultipleRenderTargets
-        ]
-    ): Self = StObject.set(x, "WebGLMultipleRenderTargets", value.asInstanceOf[js.Any])
+    inline def setWebGLMultipleRenderTargets(value: Instantiable0[WebGLMultipleRenderTargets]): Self = StObject.set(x, "WebGLMultipleRenderTargets", value.asInstanceOf[js.Any])
     
-    inline def setWebGLMultisampleRenderTarget(value: Instantiable2[/* width */ Double, /* height */ Double, WebGLMultisampleRenderTarget]): Self = StObject.set(x, "WebGLMultisampleRenderTarget", value.asInstanceOf[js.Any])
+    inline def setWebGLMultisampleRenderTarget(value: Instantiable0[WebGLMultisampleRenderTarget]): Self = StObject.set(x, "WebGLMultisampleRenderTarget", value.asInstanceOf[js.Any])
     
     inline def setWebGLObjects(
       value: Instantiable4[
@@ -3206,7 +3204,7 @@ object TypeofTHREE {
     
     inline def setWebGLRenderLists(value: Instantiable1[/* properties */ WebGLProperties, WebGLRenderLists]): Self = StObject.set(x, "WebGLRenderLists", value.asInstanceOf[js.Any])
     
-    inline def setWebGLRenderTarget(value: Instantiable2[/* width */ Double, /* height */ Double, WebGLRenderTarget]): Self = StObject.set(x, "WebGLRenderTarget", value.asInstanceOf[js.Any])
+    inline def setWebGLRenderTarget(value: Instantiable0[WebGLRenderTarget]): Self = StObject.set(x, "WebGLRenderTarget", value.asInstanceOf[js.Any])
     
     inline def setWebGLRenderer(value: Instantiable0[typings.three.mod.WebGLRenderer]): Self = StObject.set(x, "WebGLRenderer", value.asInstanceOf[js.Any])
     

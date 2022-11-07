@@ -28,8 +28,6 @@ object examplesJsmPostprocessingUnrealBloomPassMod {
     
     var copyUniforms: js.Object = js.native
     
-    def dispose(): Unit = js.native
-    
     var fsQuad: js.Object = js.native
     
     def getCompositeMaterial(): ShaderMaterial = js.native

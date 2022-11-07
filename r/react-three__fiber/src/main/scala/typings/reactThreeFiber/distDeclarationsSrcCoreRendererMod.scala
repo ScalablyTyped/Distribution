@@ -57,6 +57,8 @@ object distDeclarationsSrcCoreRendererMod {
     
     var DefaultMatrixAutoUpdate: js.UndefOr[Any] = js.undefined
     
+    var DefaultMatrixWorldAutoUpdate: js.UndefOr[Any] = js.undefined
+    
     var DefaultUp: js.UndefOr[Any] = js.undefined
     
     var __r3f: LocalState
@@ -96,7 +98,7 @@ object distDeclarationsSrcCoreRendererMod {
     
     var getObjectByName: js.Function1[/* name */ String, js.UndefOr[Object3D[Event]]]
     
-    var getObjectByProperty: js.Function2[/* name */ String, /* value */ String, js.UndefOr[Object3D[Event]]]
+    var getObjectByProperty: js.Function2[/* name */ String, /* value */ Any, js.UndefOr[Object3D[Event]]]
     
     var getWorldDirection: js.Function1[/* target */ Vector3, Vector3]
     
@@ -123,6 +125,8 @@ object distDeclarationsSrcCoreRendererMod {
     var matrixAutoUpdate: Boolean
     
     var matrixWorld: Matrix4
+    
+    var matrixWorldAutoUpdate: Boolean
     
     var matrixWorldNeedsUpdate: Boolean
     
@@ -253,7 +257,7 @@ object distDeclarationsSrcCoreRendererMod {
       frustumCulled: Boolean,
       getObjectById: /* id */ Double => js.UndefOr[Object3D[Event]],
       getObjectByName: /* name */ String => js.UndefOr[Object3D[Event]],
-      getObjectByProperty: (/* name */ String, /* value */ String) => js.UndefOr[Object3D[Event]],
+      getObjectByProperty: (/* name */ String, /* value */ Any) => js.UndefOr[Object3D[Event]],
       getWorldDirection: /* target */ Vector3 => Vector3,
       getWorldPosition: /* target */ Vector3 => Vector3,
       getWorldQuaternion: /* target */ Quaternion => Quaternion,
@@ -266,6 +270,7 @@ object distDeclarationsSrcCoreRendererMod {
       matrix: Matrix4,
       matrixAutoUpdate: Boolean,
       matrixWorld: Matrix4,
+      matrixWorldAutoUpdate: Boolean,
       matrixWorldNeedsUpdate: Boolean,
       modelViewMatrix: Matrix4,
       name: String,
@@ -308,7 +313,7 @@ object distDeclarationsSrcCoreRendererMod {
       visible: Boolean,
       worldToLocal: /* vector */ Vector3 => Vector3
     ): BaseInstance = {
-      val __obj = js.Dynamic.literal(__r3f = __r3f.asInstanceOf[js.Any], add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction2(addEventListener), animations = animations.asInstanceOf[js.Any], applyMatrix4 = js.Any.fromFunction1(applyMatrix4), applyQuaternion = js.Any.fromFunction1(applyQuaternion), castShadow = castShadow.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), constructor = js.Any.fromFunction0(constructor), copy = js.Any.fromFunction1(copy), customDepthMaterial = customDepthMaterial.asInstanceOf[js.Any], customDistanceMaterial = customDistanceMaterial.asInstanceOf[js.Any], dispatchEvent = js.Any.fromFunction1(dispatchEvent), frustumCulled = frustumCulled.asInstanceOf[js.Any], getObjectById = js.Any.fromFunction1(getObjectById), getObjectByName = js.Any.fromFunction1(getObjectByName), getObjectByProperty = js.Any.fromFunction2(getObjectByProperty), getWorldDirection = js.Any.fromFunction1(getWorldDirection), getWorldPosition = js.Any.fromFunction1(getWorldPosition), getWorldQuaternion = js.Any.fromFunction1(getWorldQuaternion), getWorldScale = js.Any.fromFunction1(getWorldScale), hasEventListener = js.Any.fromFunction2(hasEventListener), id = id.asInstanceOf[js.Any], isObject3D = true, layers = layers.asInstanceOf[js.Any], localToWorld = js.Any.fromFunction1(localToWorld), lookAt = js.Any.fromFunction1(lookAt), matrix = matrix.asInstanceOf[js.Any], matrixAutoUpdate = matrixAutoUpdate.asInstanceOf[js.Any], matrixWorld = matrixWorld.asInstanceOf[js.Any], matrixWorldNeedsUpdate = matrixWorldNeedsUpdate.asInstanceOf[js.Any], modelViewMatrix = modelViewMatrix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], normalMatrix = normalMatrix.asInstanceOf[js.Any], onAfterRender = js.Any.fromFunction6(onAfterRender), onBeforeRender = js.Any.fromFunction6(onBeforeRender), position = position.asInstanceOf[js.Any], quaternion = quaternion.asInstanceOf[js.Any], receiveShadow = receiveShadow.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction2(removeEventListener), removeFromParent = js.Any.fromFunction0(removeFromParent), renderOrder = renderOrder.asInstanceOf[js.Any], rotateOnAxis = js.Any.fromFunction2(rotateOnAxis), rotateOnWorldAxis = js.Any.fromFunction2(rotateOnWorldAxis), rotateX = js.Any.fromFunction1(rotateX), rotateY = js.Any.fromFunction1(rotateY), rotateZ = js.Any.fromFunction1(rotateZ), rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setRotationFromAxisAngle = js.Any.fromFunction2(setRotationFromAxisAngle), setRotationFromEuler = js.Any.fromFunction1(setRotationFromEuler), setRotationFromMatrix = js.Any.fromFunction1(setRotationFromMatrix), setRotationFromQuaternion = js.Any.fromFunction1(setRotationFromQuaternion), toJSON = js.Any.fromFunction0(toJSON), translateOnAxis = js.Any.fromFunction2(translateOnAxis), translateX = js.Any.fromFunction1(translateX), translateY = js.Any.fromFunction1(translateY), translateZ = js.Any.fromFunction1(translateZ), traverse = js.Any.fromFunction1(traverse), traverseAncestors = js.Any.fromFunction1(traverseAncestors), traverseVisible = js.Any.fromFunction1(traverseVisible), up = up.asInstanceOf[js.Any], updateMatrix = js.Any.fromFunction0(updateMatrix), updateMatrixWorld = js.Any.fromFunction0(updateMatrixWorld), updateWorldMatrix = js.Any.fromFunction2(updateWorldMatrix), userData = userData.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], worldToLocal = js.Any.fromFunction1(worldToLocal))
+      val __obj = js.Dynamic.literal(__r3f = __r3f.asInstanceOf[js.Any], add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction2(addEventListener), animations = animations.asInstanceOf[js.Any], applyMatrix4 = js.Any.fromFunction1(applyMatrix4), applyQuaternion = js.Any.fromFunction1(applyQuaternion), castShadow = castShadow.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), constructor = js.Any.fromFunction0(constructor), copy = js.Any.fromFunction1(copy), customDepthMaterial = customDepthMaterial.asInstanceOf[js.Any], customDistanceMaterial = customDistanceMaterial.asInstanceOf[js.Any], dispatchEvent = js.Any.fromFunction1(dispatchEvent), frustumCulled = frustumCulled.asInstanceOf[js.Any], getObjectById = js.Any.fromFunction1(getObjectById), getObjectByName = js.Any.fromFunction1(getObjectByName), getObjectByProperty = js.Any.fromFunction2(getObjectByProperty), getWorldDirection = js.Any.fromFunction1(getWorldDirection), getWorldPosition = js.Any.fromFunction1(getWorldPosition), getWorldQuaternion = js.Any.fromFunction1(getWorldQuaternion), getWorldScale = js.Any.fromFunction1(getWorldScale), hasEventListener = js.Any.fromFunction2(hasEventListener), id = id.asInstanceOf[js.Any], isObject3D = true, layers = layers.asInstanceOf[js.Any], localToWorld = js.Any.fromFunction1(localToWorld), lookAt = js.Any.fromFunction1(lookAt), matrix = matrix.asInstanceOf[js.Any], matrixAutoUpdate = matrixAutoUpdate.asInstanceOf[js.Any], matrixWorld = matrixWorld.asInstanceOf[js.Any], matrixWorldAutoUpdate = matrixWorldAutoUpdate.asInstanceOf[js.Any], matrixWorldNeedsUpdate = matrixWorldNeedsUpdate.asInstanceOf[js.Any], modelViewMatrix = modelViewMatrix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], normalMatrix = normalMatrix.asInstanceOf[js.Any], onAfterRender = js.Any.fromFunction6(onAfterRender), onBeforeRender = js.Any.fromFunction6(onBeforeRender), position = position.asInstanceOf[js.Any], quaternion = quaternion.asInstanceOf[js.Any], receiveShadow = receiveShadow.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction2(removeEventListener), removeFromParent = js.Any.fromFunction0(removeFromParent), renderOrder = renderOrder.asInstanceOf[js.Any], rotateOnAxis = js.Any.fromFunction2(rotateOnAxis), rotateOnWorldAxis = js.Any.fromFunction2(rotateOnWorldAxis), rotateX = js.Any.fromFunction1(rotateX), rotateY = js.Any.fromFunction1(rotateY), rotateZ = js.Any.fromFunction1(rotateZ), rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setRotationFromAxisAngle = js.Any.fromFunction2(setRotationFromAxisAngle), setRotationFromEuler = js.Any.fromFunction1(setRotationFromEuler), setRotationFromMatrix = js.Any.fromFunction1(setRotationFromMatrix), setRotationFromQuaternion = js.Any.fromFunction1(setRotationFromQuaternion), toJSON = js.Any.fromFunction0(toJSON), translateOnAxis = js.Any.fromFunction2(translateOnAxis), translateX = js.Any.fromFunction1(translateX), translateY = js.Any.fromFunction1(translateY), translateZ = js.Any.fromFunction1(translateZ), traverse = js.Any.fromFunction1(traverse), traverseAncestors = js.Any.fromFunction1(traverseAncestors), traverseVisible = js.Any.fromFunction1(traverseVisible), up = up.asInstanceOf[js.Any], updateMatrix = js.Any.fromFunction0(updateMatrix), updateMatrixWorld = js.Any.fromFunction0(updateMatrixWorld), updateWorldMatrix = js.Any.fromFunction2(updateWorldMatrix), userData = userData.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], worldToLocal = js.Any.fromFunction1(worldToLocal))
       __obj.updateDynamic("clone")(js.Any.fromFunction0(clone_))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseInstance]
@@ -350,6 +355,10 @@ object distDeclarationsSrcCoreRendererMod {
       
       inline def setDefaultMatrixAutoUpdateUndefined: Self = StObject.set(x, "DefaultMatrixAutoUpdate", js.undefined)
       
+      inline def setDefaultMatrixWorldAutoUpdate(value: Any): Self = StObject.set(x, "DefaultMatrixWorldAutoUpdate", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultMatrixWorldAutoUpdateUndefined: Self = StObject.set(x, "DefaultMatrixWorldAutoUpdate", js.undefined)
+      
       inline def setDefaultUp(value: Any): Self = StObject.set(x, "DefaultUp", value.asInstanceOf[js.Any])
       
       inline def setDefaultUpUndefined: Self = StObject.set(x, "DefaultUp", js.undefined)
@@ -362,7 +371,7 @@ object distDeclarationsSrcCoreRendererMod {
       
       inline def setGetObjectByName(value: /* name */ String => js.UndefOr[Object3D[Event]]): Self = StObject.set(x, "getObjectByName", js.Any.fromFunction1(value))
       
-      inline def setGetObjectByProperty(value: (/* name */ String, /* value */ String) => js.UndefOr[Object3D[Event]]): Self = StObject.set(x, "getObjectByProperty", js.Any.fromFunction2(value))
+      inline def setGetObjectByProperty(value: (/* name */ String, /* value */ Any) => js.UndefOr[Object3D[Event]]): Self = StObject.set(x, "getObjectByProperty", js.Any.fromFunction2(value))
       
       inline def setGetWorldDirection(value: /* target */ Vector3 => Vector3): Self = StObject.set(x, "getWorldDirection", js.Any.fromFunction1(value))
       
@@ -389,6 +398,8 @@ object distDeclarationsSrcCoreRendererMod {
       inline def setMatrixAutoUpdate(value: Boolean): Self = StObject.set(x, "matrixAutoUpdate", value.asInstanceOf[js.Any])
       
       inline def setMatrixWorld(value: Matrix4): Self = StObject.set(x, "matrixWorld", value.asInstanceOf[js.Any])
+      
+      inline def setMatrixWorldAutoUpdate(value: Boolean): Self = StObject.set(x, "matrixWorldAutoUpdate", value.asInstanceOf[js.Any])
       
       inline def setMatrixWorldNeedsUpdate(value: Boolean): Self = StObject.set(x, "matrixWorldNeedsUpdate", value.asInstanceOf[js.Any])
       
@@ -499,6 +510,8 @@ object distDeclarationsSrcCoreRendererMod {
     
     var DefaultMatrixAutoUpdate: js.UndefOr[Any] = js.undefined
     
+    var DefaultMatrixWorldAutoUpdate: js.UndefOr[Any] = js.undefined
+    
     var DefaultUp: js.UndefOr[Any] = js.undefined
     
     var __r3f: LocalState
@@ -538,7 +551,7 @@ object distDeclarationsSrcCoreRendererMod {
     
     var getObjectByName: js.Function1[/* name */ String, js.UndefOr[Object3D[Event]]]
     
-    var getObjectByProperty: js.Function2[/* name */ String, /* value */ String, js.UndefOr[Object3D[Event]]]
+    var getObjectByProperty: js.Function2[/* name */ String, /* value */ Any, js.UndefOr[Object3D[Event]]]
     
     var getWorldDirection: js.Function1[/* target */ Vector3, Vector3]
     
@@ -565,6 +578,8 @@ object distDeclarationsSrcCoreRendererMod {
     var matrixAutoUpdate: Boolean
     
     var matrixWorld: Matrix4
+    
+    var matrixWorldAutoUpdate: Boolean
     
     var matrixWorldNeedsUpdate: Boolean
     
@@ -695,7 +710,7 @@ object distDeclarationsSrcCoreRendererMod {
       frustumCulled: Boolean,
       getObjectById: /* id */ Double => js.UndefOr[Object3D[Event]],
       getObjectByName: /* name */ String => js.UndefOr[Object3D[Event]],
-      getObjectByProperty: (/* name */ String, /* value */ String) => js.UndefOr[Object3D[Event]],
+      getObjectByProperty: (/* name */ String, /* value */ Any) => js.UndefOr[Object3D[Event]],
       getWorldDirection: /* target */ Vector3 => Vector3,
       getWorldPosition: /* target */ Vector3 => Vector3,
       getWorldQuaternion: /* target */ Quaternion => Quaternion,
@@ -708,6 +723,7 @@ object distDeclarationsSrcCoreRendererMod {
       matrix: Matrix4,
       matrixAutoUpdate: Boolean,
       matrixWorld: Matrix4,
+      matrixWorldAutoUpdate: Boolean,
       matrixWorldNeedsUpdate: Boolean,
       modelViewMatrix: Matrix4,
       name: String,
@@ -750,7 +766,7 @@ object distDeclarationsSrcCoreRendererMod {
       visible: Boolean,
       worldToLocal: /* vector */ Vector3 => Vector3
     ): Instance = {
-      val __obj = js.Dynamic.literal(__r3f = __r3f.asInstanceOf[js.Any], add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction2(addEventListener), animations = animations.asInstanceOf[js.Any], applyMatrix4 = js.Any.fromFunction1(applyMatrix4), applyQuaternion = js.Any.fromFunction1(applyQuaternion), castShadow = castShadow.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), constructor = js.Any.fromFunction0(constructor), copy = js.Any.fromFunction1(copy), customDepthMaterial = customDepthMaterial.asInstanceOf[js.Any], customDistanceMaterial = customDistanceMaterial.asInstanceOf[js.Any], dispatchEvent = js.Any.fromFunction1(dispatchEvent), frustumCulled = frustumCulled.asInstanceOf[js.Any], getObjectById = js.Any.fromFunction1(getObjectById), getObjectByName = js.Any.fromFunction1(getObjectByName), getObjectByProperty = js.Any.fromFunction2(getObjectByProperty), getWorldDirection = js.Any.fromFunction1(getWorldDirection), getWorldPosition = js.Any.fromFunction1(getWorldPosition), getWorldQuaternion = js.Any.fromFunction1(getWorldQuaternion), getWorldScale = js.Any.fromFunction1(getWorldScale), hasEventListener = js.Any.fromFunction2(hasEventListener), id = id.asInstanceOf[js.Any], isObject3D = true, layers = layers.asInstanceOf[js.Any], localToWorld = js.Any.fromFunction1(localToWorld), lookAt = js.Any.fromFunction1(lookAt), matrix = matrix.asInstanceOf[js.Any], matrixAutoUpdate = matrixAutoUpdate.asInstanceOf[js.Any], matrixWorld = matrixWorld.asInstanceOf[js.Any], matrixWorldNeedsUpdate = matrixWorldNeedsUpdate.asInstanceOf[js.Any], modelViewMatrix = modelViewMatrix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], normalMatrix = normalMatrix.asInstanceOf[js.Any], onAfterRender = js.Any.fromFunction6(onAfterRender), onBeforeRender = js.Any.fromFunction6(onBeforeRender), position = position.asInstanceOf[js.Any], quaternion = quaternion.asInstanceOf[js.Any], receiveShadow = receiveShadow.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction2(removeEventListener), removeFromParent = js.Any.fromFunction0(removeFromParent), renderOrder = renderOrder.asInstanceOf[js.Any], rotateOnAxis = js.Any.fromFunction2(rotateOnAxis), rotateOnWorldAxis = js.Any.fromFunction2(rotateOnWorldAxis), rotateX = js.Any.fromFunction1(rotateX), rotateY = js.Any.fromFunction1(rotateY), rotateZ = js.Any.fromFunction1(rotateZ), rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setRotationFromAxisAngle = js.Any.fromFunction2(setRotationFromAxisAngle), setRotationFromEuler = js.Any.fromFunction1(setRotationFromEuler), setRotationFromMatrix = js.Any.fromFunction1(setRotationFromMatrix), setRotationFromQuaternion = js.Any.fromFunction1(setRotationFromQuaternion), toJSON = js.Any.fromFunction0(toJSON), translateOnAxis = js.Any.fromFunction2(translateOnAxis), translateX = js.Any.fromFunction1(translateX), translateY = js.Any.fromFunction1(translateY), translateZ = js.Any.fromFunction1(translateZ), traverse = js.Any.fromFunction1(traverse), traverseAncestors = js.Any.fromFunction1(traverseAncestors), traverseVisible = js.Any.fromFunction1(traverseVisible), up = up.asInstanceOf[js.Any], updateMatrix = js.Any.fromFunction0(updateMatrix), updateMatrixWorld = js.Any.fromFunction0(updateMatrixWorld), updateWorldMatrix = js.Any.fromFunction2(updateWorldMatrix), userData = userData.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], worldToLocal = js.Any.fromFunction1(worldToLocal))
+      val __obj = js.Dynamic.literal(__r3f = __r3f.asInstanceOf[js.Any], add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction2(addEventListener), animations = animations.asInstanceOf[js.Any], applyMatrix4 = js.Any.fromFunction1(applyMatrix4), applyQuaternion = js.Any.fromFunction1(applyQuaternion), castShadow = castShadow.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), constructor = js.Any.fromFunction0(constructor), copy = js.Any.fromFunction1(copy), customDepthMaterial = customDepthMaterial.asInstanceOf[js.Any], customDistanceMaterial = customDistanceMaterial.asInstanceOf[js.Any], dispatchEvent = js.Any.fromFunction1(dispatchEvent), frustumCulled = frustumCulled.asInstanceOf[js.Any], getObjectById = js.Any.fromFunction1(getObjectById), getObjectByName = js.Any.fromFunction1(getObjectByName), getObjectByProperty = js.Any.fromFunction2(getObjectByProperty), getWorldDirection = js.Any.fromFunction1(getWorldDirection), getWorldPosition = js.Any.fromFunction1(getWorldPosition), getWorldQuaternion = js.Any.fromFunction1(getWorldQuaternion), getWorldScale = js.Any.fromFunction1(getWorldScale), hasEventListener = js.Any.fromFunction2(hasEventListener), id = id.asInstanceOf[js.Any], isObject3D = true, layers = layers.asInstanceOf[js.Any], localToWorld = js.Any.fromFunction1(localToWorld), lookAt = js.Any.fromFunction1(lookAt), matrix = matrix.asInstanceOf[js.Any], matrixAutoUpdate = matrixAutoUpdate.asInstanceOf[js.Any], matrixWorld = matrixWorld.asInstanceOf[js.Any], matrixWorldAutoUpdate = matrixWorldAutoUpdate.asInstanceOf[js.Any], matrixWorldNeedsUpdate = matrixWorldNeedsUpdate.asInstanceOf[js.Any], modelViewMatrix = modelViewMatrix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], normalMatrix = normalMatrix.asInstanceOf[js.Any], onAfterRender = js.Any.fromFunction6(onAfterRender), onBeforeRender = js.Any.fromFunction6(onBeforeRender), position = position.asInstanceOf[js.Any], quaternion = quaternion.asInstanceOf[js.Any], receiveShadow = receiveShadow.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction2(removeEventListener), removeFromParent = js.Any.fromFunction0(removeFromParent), renderOrder = renderOrder.asInstanceOf[js.Any], rotateOnAxis = js.Any.fromFunction2(rotateOnAxis), rotateOnWorldAxis = js.Any.fromFunction2(rotateOnWorldAxis), rotateX = js.Any.fromFunction1(rotateX), rotateY = js.Any.fromFunction1(rotateY), rotateZ = js.Any.fromFunction1(rotateZ), rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setRotationFromAxisAngle = js.Any.fromFunction2(setRotationFromAxisAngle), setRotationFromEuler = js.Any.fromFunction1(setRotationFromEuler), setRotationFromMatrix = js.Any.fromFunction1(setRotationFromMatrix), setRotationFromQuaternion = js.Any.fromFunction1(setRotationFromQuaternion), toJSON = js.Any.fromFunction0(toJSON), translateOnAxis = js.Any.fromFunction2(translateOnAxis), translateX = js.Any.fromFunction1(translateX), translateY = js.Any.fromFunction1(translateY), translateZ = js.Any.fromFunction1(translateZ), traverse = js.Any.fromFunction1(traverse), traverseAncestors = js.Any.fromFunction1(traverseAncestors), traverseVisible = js.Any.fromFunction1(traverseVisible), up = up.asInstanceOf[js.Any], updateMatrix = js.Any.fromFunction0(updateMatrix), updateMatrixWorld = js.Any.fromFunction0(updateMatrixWorld), updateWorldMatrix = js.Any.fromFunction2(updateWorldMatrix), userData = userData.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], worldToLocal = js.Any.fromFunction1(worldToLocal))
       __obj.updateDynamic("clone")(js.Any.fromFunction0(clone_))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Instance]
@@ -792,6 +808,10 @@ object distDeclarationsSrcCoreRendererMod {
       
       inline def setDefaultMatrixAutoUpdateUndefined: Self = StObject.set(x, "DefaultMatrixAutoUpdate", js.undefined)
       
+      inline def setDefaultMatrixWorldAutoUpdate(value: Any): Self = StObject.set(x, "DefaultMatrixWorldAutoUpdate", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultMatrixWorldAutoUpdateUndefined: Self = StObject.set(x, "DefaultMatrixWorldAutoUpdate", js.undefined)
+      
       inline def setDefaultUp(value: Any): Self = StObject.set(x, "DefaultUp", value.asInstanceOf[js.Any])
       
       inline def setDefaultUpUndefined: Self = StObject.set(x, "DefaultUp", js.undefined)
@@ -804,7 +824,7 @@ object distDeclarationsSrcCoreRendererMod {
       
       inline def setGetObjectByName(value: /* name */ String => js.UndefOr[Object3D[Event]]): Self = StObject.set(x, "getObjectByName", js.Any.fromFunction1(value))
       
-      inline def setGetObjectByProperty(value: (/* name */ String, /* value */ String) => js.UndefOr[Object3D[Event]]): Self = StObject.set(x, "getObjectByProperty", js.Any.fromFunction2(value))
+      inline def setGetObjectByProperty(value: (/* name */ String, /* value */ Any) => js.UndefOr[Object3D[Event]]): Self = StObject.set(x, "getObjectByProperty", js.Any.fromFunction2(value))
       
       inline def setGetWorldDirection(value: /* target */ Vector3 => Vector3): Self = StObject.set(x, "getWorldDirection", js.Any.fromFunction1(value))
       
@@ -831,6 +851,8 @@ object distDeclarationsSrcCoreRendererMod {
       inline def setMatrixAutoUpdate(value: Boolean): Self = StObject.set(x, "matrixAutoUpdate", value.asInstanceOf[js.Any])
       
       inline def setMatrixWorld(value: Matrix4): Self = StObject.set(x, "matrixWorld", value.asInstanceOf[js.Any])
+      
+      inline def setMatrixWorldAutoUpdate(value: Boolean): Self = StObject.set(x, "matrixWorldAutoUpdate", value.asInstanceOf[js.Any])
       
       inline def setMatrixWorldNeedsUpdate(value: Boolean): Self = StObject.set(x, "matrixWorldNeedsUpdate", value.asInstanceOf[js.Any])
       

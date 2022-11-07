@@ -22,6 +22,8 @@ import typings.three.examplesJsmNodesCoreNodeBuilderMod.NodeBuilderContext
 import typings.three.examplesJsmNodesCoreNodeMod.default
 import typings.three.examplesJsmNodesGeometryRangeNodeMod.RangeModeBound
 import typings.three.examplesJsmNodesLightingLightingContextNodeMod.LightingModelNode
+import typings.three.examplesJsmNodesNodesMod.BitangentNode
+import typings.three.examplesJsmNodesNodesMod.BlendModeNode
 import typings.three.examplesJsmNodesNodesMod.BufferNode
 import typings.three.examplesJsmNodesNodesMod.BypassNode
 import typings.three.examplesJsmNodesNodesMod.CameraNode
@@ -32,6 +34,7 @@ import typings.three.examplesJsmNodesNodesMod.ColorSpaceNode
 import typings.three.examplesJsmNodesNodesMod.ComputeNode
 import typings.three.examplesJsmNodesNodesMod.ContextNode
 import typings.three.examplesJsmNodesNodesMod.CubeTextureNode
+import typings.three.examplesJsmNodesNodesMod.EquirectUVNode
 import typings.three.examplesJsmNodesNodesMod.ExpressionNode
 import typings.three.examplesJsmNodesNodesMod.FogNode
 import typings.three.examplesJsmNodesNodesMod.FogRangeNode
@@ -55,14 +58,18 @@ import typings.three.examplesJsmNodesNodesMod.NormalNode
 import typings.three.examplesJsmNodesNodesMod.OscNode
 import typings.three.examplesJsmNodesNodesMod.PointUVNode
 import typings.three.examplesJsmNodesNodesMod.PositionNode
+import typings.three.examplesJsmNodesNodesMod.PosterizeNode
 import typings.three.examplesJsmNodesNodesMod.PropertyNode
 import typings.three.examplesJsmNodesNodesMod.ReferenceNode
 import typings.three.examplesJsmNodesNodesMod.ReflectVectorNode
+import typings.three.examplesJsmNodesNodesMod.RemapNode
 import typings.three.examplesJsmNodesNodesMod.RotateUVNode
 import typings.three.examplesJsmNodesNodesMod.SkinningNode
 import typings.three.examplesJsmNodesNodesMod.SpriteSheetUVNode
+import typings.three.examplesJsmNodesNodesMod.TangentNode
 import typings.three.examplesJsmNodesNodesMod.TimerNode
 import typings.three.examplesJsmNodesNodesMod.ToneMappingNode
+import typings.three.examplesJsmNodesNodesMod.TriplanarTexturesNode
 import typings.three.examplesJsmNodesNodesMod.UVNode
 import typings.three.examplesJsmNodesNodesMod.UserDataNode
 import typings.three.examplesJsmNodesNodesMod.VarNode
@@ -176,6 +183,10 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
     def this(jsFunc: js.Function2[/* inputs */ NodeObjects_[T], /* builder */ NodeBuilder, NodeRepresentation[Node]]) = this()
   }
   
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "TBNViewMatrix")
+  @js.native
+  val TBNViewMatrix: Swizzable[MathNode] = js.native
+  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "V_GGX_SmithCorrelated")
   @js.native
   val VGGXSmithCorrelated: typings.three.examplesJsmNodesShadernodeShaderNodeBaseElementsMod.ShaderNode[DotNL, Node] = js.native
@@ -230,6 +241,22 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @js.native
   val bitXor: Operator = js.native
   
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "bitangentGeometry")
+  @js.native
+  val bitangentGeometry: Swizzable[BitangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "bitangentLocal")
+  @js.native
+  val bitangentLocal: Swizzable[BitangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "bitangentView")
+  @js.native
+  val bitangentView: Swizzable[BitangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "bitangentWorld")
+  @js.native
+  val bitangentWorld: Swizzable[BitangentNode] = js.native
+  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "bmat3")
   @js.native
   val bmat3: ConvertType = js.native
@@ -243,6 +270,9 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   val bool: ConvertType = js.native
   
   inline def buffer(value: ArrayLike[Double], nodeOrType: NodeOrType, count: Double): Swizzable[BufferNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(value.asInstanceOf[js.Any], nodeOrType.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Swizzable[BufferNode]]
+  
+  inline def burn(baseNode: NodeRepresentation[Node]): Swizzable[BlendModeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("burn")(baseNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[BlendModeNode]]
+  inline def burn(baseNode: NodeRepresentation[Node], blendNode: NodeRepresentation[Node]): Swizzable[BlendModeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("burn")(baseNode.asInstanceOf[js.Any], blendNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[BlendModeNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "bvec2")
   @js.native
@@ -313,6 +343,8 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   
   inline def context(node: NodeRepresentation[Node], context: NodeBuilderContext): Swizzable[ContextNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("context")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Swizzable[ContextNode]]
   
+  inline def convert(node: NodeRepresentation[Node], types: NodeTypeOption): Swizzable[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(node.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Swizzable[Node]]
+  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "cos")
   @js.native
   val cos: Unary = js.native
@@ -338,6 +370,10 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @js.native
   val degrees: Unary = js.native
   
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "difference")
+  @js.native
+  val difference: Binary = js.native
+  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "diffuseColor")
   @js.native
   val diffuseColor: Swizzable[PropertyNode] = js.native
@@ -349,6 +385,9 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "div")
   @js.native
   val div: Operator = js.native
+  
+  inline def dodge(baseNode: NodeRepresentation[Node]): Swizzable[BlendModeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("dodge")(baseNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[BlendModeNode]]
+  inline def dodge(baseNode: NodeRepresentation[Node], blendNode: NodeRepresentation[Node]): Swizzable[BlendModeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("dodge")(baseNode.asInstanceOf[js.Any], blendNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[BlendModeNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "dot")
   @js.native
@@ -363,6 +402,10 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "equal")
   @js.native
   val equal: Operator = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "equirectUV")
+  @js.native
+  val equirectUV: Swizzable[EquirectUVNode] = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "exp")
   @js.native
@@ -401,6 +444,10 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "fract")
   @js.native
   val fract: Unary = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "frameId")
+  @js.native
+  val frameId: Swizzable[TimerNode] = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "frontFacing")
   @js.native
@@ -497,6 +544,14 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "log2")
   @js.native
   val log2: Unary = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "lumaCoeffs")
+  @js.native
+  val lumaCoeffs: Swizzable[MathNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "luminance")
+  @js.native
+  val luminance: Binary = js.native
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "mat3")
   @js.native
@@ -663,6 +718,9 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   inline def oscTriangle(): Swizzable[OscNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("oscTriangle")().asInstanceOf[Swizzable[OscNode]]
   inline def oscTriangle(timeNode: NodeRepresentation[Node]): Swizzable[OscNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("oscTriangle")(timeNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[OscNode]]
   
+  inline def overlay(baseNode: NodeRepresentation[Node]): Swizzable[BlendModeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(baseNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[BlendModeNode]]
+  inline def overlay(baseNode: NodeRepresentation[Node], blendNode: NodeRepresentation[Node]): Swizzable[BlendModeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("overlay")(baseNode.asInstanceOf[js.Any], blendNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[BlendModeNode]]
+  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "pointUV")
   @js.native
   val pointUV: Swizzable[PointUVNode] = js.native
@@ -686,6 +744,12 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "positionWorld")
   @js.native
   val positionWorld: Swizzable[PositionNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "positionWorldDirection")
+  @js.native
+  val positionWorldDirection: Swizzable[PositionNode] = js.native
+  
+  inline def posterize(sourceNode: NodeRepresentation[Node], stepsNode: NodeRepresentation[Node]): Swizzable[PosterizeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("posterize")(sourceNode.asInstanceOf[js.Any], stepsNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[PosterizeNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "pow")
   @js.native
@@ -714,6 +778,10 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   
   inline def rangeFog(colorNode: default, nearNode: default, farNode: default): Swizzable[FogRangeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeFog")(colorNode.asInstanceOf[js.Any], nearNode.asInstanceOf[js.Any], farNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[FogRangeNode]]
   
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "reciprocal")
+  @js.native
+  val reciprocal: Unary = js.native
+  
   inline def reference[T](name: String, nodeOrType: NodeOrType, `object`: T): Swizzable[ReferenceNode[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reference")(name.asInstanceOf[js.Any], nodeOrType.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Swizzable[ReferenceNode[T]]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "reflect")
@@ -732,6 +800,10 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @js.native
   val remainder: Operator = js.native
   
+  inline def remap(node: default, inLowNode: default): Swizzable[RemapNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("remap")(node.asInstanceOf[js.Any], inLowNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[RemapNode]]
+  
+  inline def remapClamp(node: default, inLowNode: default): Swizzable[RemapNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("remapClamp")(node.asInstanceOf[js.Any], inLowNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[RemapNode]]
+  
   inline def rotateUV(uvNode: default, rotationNode: default): Swizzable[RotateUVNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateUV")(uvNode.asInstanceOf[js.Any], rotationNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[RotateUVNode]]
   inline def rotateUV(uvNode: default, rotationNode: default, centerNode: default): Swizzable[RotateUVNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateUV")(uvNode.asInstanceOf[js.Any], rotationNode.asInstanceOf[js.Any], centerNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[RotateUVNode]]
   
@@ -746,12 +818,11 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   inline def sampler(texture: typings.three.examplesJsmNodesAccessorsTextureNodeMod.default): Swizzable[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("sampler")(texture.asInstanceOf[js.Any]).asInstanceOf[Swizzable[Node]]
   inline def sampler(texture: Texture): Swizzable[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("sampler")(texture.asInstanceOf[js.Any]).asInstanceOf[Swizzable[Node]]
   
-  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "saturate")
-  @js.native
-  val saturate: Unary = js.native
-  
   inline def saturation(colorNode: NodeRepresentation[Node]): Swizzable[ColorAdjustmentNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("saturation")(colorNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[ColorAdjustmentNode]]
   inline def saturation(colorNode: NodeRepresentation[Node], adjustmentNode: NodeRepresentation[Node]): Swizzable[ColorAdjustmentNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("saturation")(colorNode.asInstanceOf[js.Any], adjustmentNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[ColorAdjustmentNode]]
+  
+  inline def screen(baseNode: NodeRepresentation[Node]): Swizzable[BlendModeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("screen")(baseNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[BlendModeNode]]
+  inline def screen(baseNode: NodeRepresentation[Node], blendNode: NodeRepresentation[Node]): Swizzable[BlendModeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("screen")(baseNode.asInstanceOf[js.Any], blendNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[BlendModeNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "shiftLeft")
   @js.native
@@ -806,6 +877,22 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @js.native
   val tan: Unary = js.native
   
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "tangentGeometry")
+  @js.native
+  val tangentGeometry: Swizzable[TangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "tangentLocal")
+  @js.native
+  val tangentLocal: Swizzable[TangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "tangentView")
+  @js.native
+  val tangentView: Swizzable[TangentNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "tangentWorld")
+  @js.native
+  val tangentWorld: Swizzable[TangentNode] = js.native
+  
   inline def temp(node: NodeRepresentation[Node]): Swizzable[VarNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("temp")(node.asInstanceOf[js.Any]).asInstanceOf[Swizzable[VarNode]]
   inline def temp(node: NodeRepresentation[Node], name: String): Swizzable[VarNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("temp")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Swizzable[VarNode]]
   
@@ -829,13 +916,244 @@ object examplesJsmNodesShadernodeShaderNodeElementsMod {
   @js.native
   val transformDirection: Binary = js.native
   
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "transformedBitangentView")
+  @js.native
+  val transformedBitangentView: Swizzable[MathNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "transformedBitangentWorld")
+  @js.native
+  val transformedBitangentWorld: Swizzable[MathNode] = js.native
+  
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "transformedNormalView")
   @js.native
   val transformedNormalView: Swizzable[VarNode] = js.native
   
-  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "transformedNormalWorld")
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "transformedTangentView")
   @js.native
-  val transformedNormalWorld: Swizzable[MathNode] = js.native
+  val transformedTangentView: Swizzable[MathNode] = js.native
+  
+  @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "transformedTangentWorld")
+  @js.native
+  val transformedTangentWorld: Swizzable[MathNode] = js.native
+  
+  inline def triplanarTexture(texture: NodeRepresentation[Node], params: NodeRepresentation[Node]*): Swizzable[TriplanarTexturesNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTexture")(scala.List(texture.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  
+  inline def triplanarTextures(textureXNode: NodeRepresentation[Node]): Swizzable[TriplanarTexturesNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any]).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: Unit,
+    scaleNode: Unit,
+    positionNode: Unit,
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: Unit,
+    scaleNode: Unit,
+    positionNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: Unit,
+    scaleNode: Unit,
+    positionNode: NodeRepresentation[Node],
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: Unit,
+    scaleNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: Unit,
+    scaleNode: NodeRepresentation[Node],
+    positionNode: Unit,
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: Unit,
+    scaleNode: NodeRepresentation[Node],
+    positionNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: Unit,
+    scaleNode: NodeRepresentation[Node],
+    positionNode: NodeRepresentation[Node],
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(textureXNode: NodeRepresentation[Node], textureYNode: Unit, textureZNode: NodeRepresentation[Node]): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: Unit,
+    positionNode: Unit,
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: Unit,
+    positionNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: Unit,
+    positionNode: NodeRepresentation[Node],
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: NodeRepresentation[Node],
+    positionNode: Unit,
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: NodeRepresentation[Node],
+    positionNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: Unit,
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: NodeRepresentation[Node],
+    positionNode: NodeRepresentation[Node],
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(textureXNode: NodeRepresentation[Node], textureYNode: NodeRepresentation[Node]): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: Unit,
+    scaleNode: Unit,
+    positionNode: Unit,
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: Unit,
+    scaleNode: Unit,
+    positionNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: Unit,
+    scaleNode: Unit,
+    positionNode: NodeRepresentation[Node],
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: Unit,
+    scaleNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: Unit,
+    scaleNode: NodeRepresentation[Node],
+    positionNode: Unit,
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: Unit,
+    scaleNode: NodeRepresentation[Node],
+    positionNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: Unit,
+    scaleNode: NodeRepresentation[Node],
+    positionNode: NodeRepresentation[Node],
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: Unit,
+    positionNode: Unit,
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: Unit,
+    positionNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: Unit,
+    positionNode: NodeRepresentation[Node],
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: NodeRepresentation[Node],
+    positionNode: Unit,
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: NodeRepresentation[Node],
+    positionNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
+  inline def triplanarTextures(
+    textureXNode: NodeRepresentation[Node],
+    textureYNode: NodeRepresentation[Node],
+    textureZNode: NodeRepresentation[Node],
+    scaleNode: NodeRepresentation[Node],
+    positionNode: NodeRepresentation[Node],
+    normalNode: NodeRepresentation[Node]
+  ): Swizzable[TriplanarTexturesNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("triplanarTextures")(textureXNode.asInstanceOf[js.Any], textureYNode.asInstanceOf[js.Any], textureZNode.asInstanceOf[js.Any], scaleNode.asInstanceOf[js.Any], positionNode.asInstanceOf[js.Any], normalNode.asInstanceOf[js.Any])).asInstanceOf[Swizzable[TriplanarTexturesNode]]
   
   @JSImport("three/examples/jsm/nodes/shadernode/ShaderNodeElements", "uint")
   @js.native

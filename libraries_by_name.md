@@ -8520,7 +8520,6 @@
 | [pixi__constants](./p/pixi__constants) | Constants used across PixiJS | - |
 | [pixi__core](./p/pixi__core) | Core PixiJS | - |
 | [pixi__display](./p/pixi__display) | Core display functionality | - |
-| [pixi__events](./p/pixi__events) | UI events for scene graphs | interaction, UI, events, pointer, mouse, touch |
 | [pixi__extensions](./p/pixi__extensions) | - | - |
 | [pixi__extract](./p/pixi__extract) | Extract raw graphics data from renderer | - |
 | [pixi__filter-alpha](./p/pixi__filter-alpha) | Filter that applies alpha evenly across the entire | - |
@@ -8551,7 +8550,6 @@
 | [pixi__text-bitmap](./p/pixi__text-bitmap) | Text via bitmap fonts | - |
 | [pixi__ticker](./p/pixi__ticker) | Tickers are control the timings within PixiJS | - |
 | [pixi__utils](./p/pixi__utils) | Collection of utilities used by PixiJS | - |
-| [pixi_dot_js](./p/pixi_dot_js) | PixiJS without the CanvasRenderer fallback, modern | - |
 | [pixl-xml](./p/pixl-xml) | A simple module for parsing and composing XML. | xml |
 | [pizzicato](./p/pizzicato) | A web-audio library to simplify using and manipula | audio, sound, web audio, sound effects |
 | [pizzip](./p/pizzip) | Create, read and edit .zip files synchronously wit | zip, deflate, inflate |
@@ -10280,6 +10278,7 @@
 | [rjsf__core](./r/rjsf__core) | A simple React component capable of building HTML  | react, form, json-schema |
 | [rjsf__utils](./r/rjsf__utils) | - | - |
 | [rlp](./r/rlp) | Recursive Length Prefix Encoding Module | rlp, ethereum |
+| [rlp-encoding](./r/rlp-encoding) | Abstract-encoding interface for RLP | ethereum, rlp |
 | [rmc-calendar](./r/rmc-calendar) | React Mobile Calendar Component(web and react-nati | react, react-component, react-m-calendar, m-calendar |
 | [rmc-cascader](./r/rmc-cascader) | m-cascader ui component for react | react, react-component, react-m-cascader, m-cascader |
 | [rmc-date-picker](./r/rmc-date-picker) | React Mobile DatePicker Component for web and reac | react, react-component, react-mobile-date-picker, date-picker |

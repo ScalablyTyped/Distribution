@@ -1,8 +1,7 @@
 package typings.three
 
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
-import typings.std.HTMLVideoElement
+import typings.std.EventTarget
+import typings.std.TexImageSource
 import typings.three.srcConstantsMod.Mapping
 import typings.three.srcConstantsMod.PixelFormat
 import typings.three.srcConstantsMod.PixelFormatGPU
@@ -38,7 +37,7 @@ object srcTexturesTextureMod {
       * @param [encoding=THREE.LinearEncoding]
       */
     def this(
-      image: js.UndefOr[HTMLImageElement | HTMLCanvasElement | HTMLVideoElement],
+      image: js.UndefOr[TexImageSource | OffscreenCanvas],
       mapping: js.UndefOr[Mapping],
       wrapS: js.UndefOr[Wrapping],
       wrapT: js.UndefOr[Wrapping],
@@ -243,4 +242,6 @@ object srcTexturesTextureMod {
     def DEFAULT_MAPPING: Any = js.native
     inline def DEFAULT_MAPPING_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAPPING")(x.asInstanceOf[js.Any])
   }
+  
+  type OffscreenCanvas = EventTarget
 }

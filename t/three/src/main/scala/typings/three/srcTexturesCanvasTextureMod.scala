@@ -1,14 +1,12 @@
 package typings.three
 
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
-import typings.std.HTMLVideoElement
-import typings.std.ImageBitmap
+import typings.std.TexImageSource
 import typings.three.srcConstantsMod.Mapping
 import typings.three.srcConstantsMod.PixelFormat
 import typings.three.srcConstantsMod.TextureDataType
 import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
+import typings.three.srcTexturesTextureMod.OffscreenCanvas
 import typings.three.srcTexturesTextureMod.Texture
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -33,7 +31,7 @@ object srcTexturesCanvasTextureMod {
       * @param [encoding=THREE.LinearEncoding]
       */
     def this(
-      canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap,
+      canvas: TexImageSource | OffscreenCanvas,
       mapping: js.UndefOr[Mapping],
       wrapS: js.UndefOr[Wrapping],
       wrapT: js.UndefOr[Wrapping],

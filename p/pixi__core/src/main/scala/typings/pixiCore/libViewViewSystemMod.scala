@@ -16,7 +16,7 @@ object libViewViewSystemMod {
   open class ViewSystem protected ()
     extends StObject
        with ISystem[ViewOptions, Boolean] {
-    def this(renderer: IRenderer) = this()
+    def this(renderer: IRenderer[ICanvas]) = this()
     
     /**
       * Whether CSS dimensions of canvas view should be resized to screen dimensions automatically.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__datetime"
-version := "4.4.6-bd45ff"
+version := "4.4.6-c5bbfe"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "popperjs__core" % "2.11.6-735837",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
-  "org.scalablytyped" %%% "react-day-picker" % "8.3.5-9159fa",
+  "org.scalablytyped" %%% "react-day-picker" % "8.3.6-4e1415",
   "org.scalablytyped" %%% "react-popper" % "2.3.0-e7a606",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

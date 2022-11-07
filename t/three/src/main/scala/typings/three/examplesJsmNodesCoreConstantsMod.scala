@@ -27,15 +27,15 @@ object examplesJsmNodesCoreConstantsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeShaderStage.Fragment")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeShaderStage.FRAGMENT")
     @js.native
-    def Fragment: fragment = js.native
-    inline def Fragment_=(x: fragment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Fragment")(x.asInstanceOf[js.Any])
+    def FRAGMENT: fragment = js.native
+    inline def FRAGMENT_=(x: fragment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAGMENT")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeShaderStage.Vertex")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeShaderStage.VERTEX")
     @js.native
-    def Vertex: vertex = js.native
-    inline def Vertex_=(x: vertex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertex")(x.asInstanceOf[js.Any])
+    def VERTEX: vertex = js.native
+    inline def VERTEX_=(x: vertex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX")(x.asInstanceOf[js.Any])
   }
   
   object NodeType {
@@ -44,45 +44,45 @@ object examplesJsmNodesCoreConstantsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.Boolean")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.BOOLEAN")
     @js.native
-    def Boolean: bool = js.native
-    inline def Boolean_=(x: bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+    def BOOLEAN: bool = js.native
+    inline def BOOLEAN_=(x: bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOOLEAN")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.Float")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.FLOAT")
     @js.native
-    def Float: float = js.native
-    inline def Float_=(x: float): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
+    def FLOAT: float = js.native
+    inline def FLOAT_=(x: float): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLOAT")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.Integer")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.INTEGER")
     @js.native
-    def Integer: int = js.native
-    inline def Integer_=(x: int): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
+    def INTEGER: int = js.native
+    inline def INTEGER_=(x: int): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTEGER")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.Matrix3")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.MATRIX3")
     @js.native
-    def Matrix3: mat3 = js.native
-    inline def Matrix3_=(x: mat3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matrix3")(x.asInstanceOf[js.Any])
+    def MATRIX3: mat3 = js.native
+    inline def MATRIX3_=(x: mat3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MATRIX3")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.Matrix4")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.MATRIX4")
     @js.native
-    def Matrix4: mat4 = js.native
-    inline def Matrix4_=(x: mat4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matrix4")(x.asInstanceOf[js.Any])
+    def MATRIX4: mat4 = js.native
+    inline def MATRIX4_=(x: mat4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MATRIX4")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.Vector2")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.VECTOR2")
     @js.native
-    def Vector2: vec2 = js.native
-    inline def Vector2_=(x: vec2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector2")(x.asInstanceOf[js.Any])
+    def VECTOR2: vec2 = js.native
+    inline def VECTOR2_=(x: vec2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VECTOR2")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.Vector3")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.VECTOR3")
     @js.native
-    def Vector3: vec3 = js.native
-    inline def Vector3_=(x: vec3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector3")(x.asInstanceOf[js.Any])
+    def VECTOR3: vec3 = js.native
+    inline def VECTOR3_=(x: vec3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VECTOR3")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.Vector4")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeType.VECTOR4")
     @js.native
-    def Vector4: vec4 = js.native
-    inline def Vector4_=(x: vec4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector4")(x.asInstanceOf[js.Any])
+    def VECTOR4: vec4 = js.native
+    inline def VECTOR4_=(x: vec4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VECTOR4")(x.asInstanceOf[js.Any])
   }
   
   object NodeUpdateType {
@@ -91,20 +91,20 @@ object examplesJsmNodesCoreConstantsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeUpdateType.Frame")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeUpdateType.FRAME")
     @js.native
-    def Frame: frame = js.native
-    inline def Frame_=(x: frame): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Frame")(x.asInstanceOf[js.Any])
+    def FRAME: frame = js.native
+    inline def FRAME_=(x: frame): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAME")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeUpdateType.None")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeUpdateType.NONE")
     @js.native
-    def None: none = js.native
-    inline def None_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+    def NONE: none = js.native
+    inline def NONE_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/examples/jsm/nodes/core/constants", "NodeUpdateType.Object")
+    @JSImport("three/examples/jsm/nodes/core/constants", "NodeUpdateType.OBJECT")
     @js.native
-    def Object: `object` = js.native
-    inline def Object_=(x: `object`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
+    def OBJECT: `object` = js.native
+    inline def OBJECT_=(x: `object`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OBJECT")(x.asInstanceOf[js.Any])
   }
   
   type AnyJson = Any

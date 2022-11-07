@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-day-picker"
-version := "8.3.5-9159fa"
+version := "8.3.6-4e1415"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

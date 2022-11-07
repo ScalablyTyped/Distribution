@@ -6,14 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.WebGL3DRenderTarget")
 @js.native
-open class WebGL3DRenderTarget protected ()
+/**
+  * Creates a new WebGL3DRenderTarget.
+  *
+  * @param width the width of the render target, in pixels.
+  * @param height the height of the render target, in pixels.
+  * @param depth the depth of the render target.
+  */
+open class WebGL3DRenderTarget ()
   extends typings.three.mod.WebGL3DRenderTarget {
-  /**
-    * Creates a new WebGL3DRenderTarget.
-    *
-    * @param width the width of the render target, in pixels.
-    * @param height the height of the render target, in pixels.
-    * @param depth the depth of the render target.
-    */
+  def this(width: Double) = this()
+  def this(width: Double, height: Double) = this()
+  def this(width: Unit, height: Double) = this()
   def this(width: Double, height: Double, depth: Double) = this()
+  def this(width: Double, height: Unit, depth: Double) = this()
+  def this(width: Unit, height: Double, depth: Double) = this()
+  def this(width: Unit, height: Unit, depth: Double) = this()
 }

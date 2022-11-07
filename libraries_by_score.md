@@ -948,7 +948,6 @@
 | 0.8031524720680094 | [google-cloud__firestore](./g/google-cloud__firestore) | Firestore Client Library for Node.js
 | 0.8030671375860265 | [should](./s/should) | test framework agnostic BDD-style assertions
 | 0.8030640915337797 | [file-type](./f/file-type) | Detect the file type of a Buffer/Uint8Array/ArrayB
-| 0.8029115372709894 | [pixi_dot_js](./p/pixi_dot_js) | PixiJS without the CanvasRenderer fallback, modern
 | 0.802839851896624 | [p-event](./p/p-event) | Promisify an event by waiting for it to be emitted
 | 0.802795848357815 | [unist-util-remove](./u/unist-util-remove) | unist utility to remove nodes from a tree
 | 0.8027625692452396 | [arch](./a/arch) | Better os.arch() for node and the browser -- detec
@@ -2693,7 +2692,6 @@
 | 0.7220257027560626 | [aws-sdk__chunked-stream-r](./a/aws-sdk__chunked-stream-reader-node) | -
 | 0.7220182089642555 | [node-7z](./n/node-7z) | A Node.js wrapper for 7-Zip with platform binaries
 | 0.7219808149752196 | [lodash_dot_spread](./l/lodash_dot_spread) | The lodash method _.spread exported as a module.
-| 0.7219700886545217 | [pixi__events](./p/pixi__events) | UI events for scene graphs
 | 0.7219560443360173 | [gulp-sass](./g/gulp-sass) | Gulp plugin for sass
 | 0.7219202513733988 | [it-peekable](./i/it-peekable) | Allows peeking/pushing an iterable
 | 0.7219179821293202 | [timestring](./t/timestring) | Parse a human readable time string into a time bas
@@ -5334,6 +5332,7 @@
 | 0.6559867177365257 | [chai-quantifiers](./c/chai-quantifiers) | Array quantifier assertions for chai assertion lib
 | 0.6559632636707091 | [semver-sort](./s/semver-sort) | Sort array of semver string even which is exist in
 | 0.6559309548775392 | [bianco_dot_dom-to-array](./b/bianco_dot_dom-to-array) | Converts any DOM node/s to a loopable array
+| 0.6559206217438034 | [rlp-encoding](./r/rlp-encoding) | Abstract-encoding interface for RLP
 | 0.6558888601843729 | [jira2slack](./j/jira2slack) | Library to convert between JIRA markup and Slack m
 | 0.6558817481685784 | [rc-tooltip](./r/rc-tooltip) | React Tooltip
 | 0.6558746532803271 | [koa-bouncer](./k/koa-bouncer) | A parameter validation library for Koa routes

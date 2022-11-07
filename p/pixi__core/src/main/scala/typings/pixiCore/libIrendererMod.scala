@@ -47,7 +47,7 @@ object libIrendererMod {
     var parent: IRenderableContainer
     
     /** Render object directly */
-    def render(renderer: IRenderer): Unit
+    def render(renderer: IRenderer[ICanvas]): Unit
     
     /** Object must have a transform */
     var transform: Transform
@@ -61,7 +61,7 @@ object libIrendererMod {
       disableTempParent: IRenderableContainer => Unit,
       enableTempParent: () => IRenderableContainer,
       parent: IRenderableContainer,
-      render: IRenderer => Unit,
+      render: IRenderer[ICanvas] => Unit,
       transform: Transform,
       updateTransform: () => Unit
     ): IRenderableObject = {
@@ -77,7 +77,7 @@ object libIrendererMod {
       
       inline def setParent(value: IRenderableContainer): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      inline def setRender(value: IRenderer => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: IRenderer[ICanvas] => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
@@ -87,7 +87,7 @@ object libIrendererMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.IRenderer * / any */ @js.native
-  trait IRenderer extends SystemManager[IRenderer] {
+  trait IRenderer[VIEW /* <: ICanvas */] extends SystemManager[IRenderer[ICanvas]] {
     
     def clear(): Unit = js.native
     
@@ -134,7 +134,7 @@ object libIrendererMod {
     val `type`: RENDERER_TYPE = js.native
     
     /** The canvas element that everything is drawn to.*/
-    val view: ICanvas = js.native
+    val view: VIEW = js.native
     
     /** the width of the screen */
     val width: Double = js.native

@@ -24,8 +24,6 @@ object examplesJsmPostprocessingAdaptiveToneMappingPassMod {
     
     var currentLuminanceRT: WebGLRenderTarget = js.native
     
-    def dispose(): Unit = js.native
-    
     var fsQuad: js.Object = js.native
     
     var luminanceRT: WebGLRenderTarget = js.native

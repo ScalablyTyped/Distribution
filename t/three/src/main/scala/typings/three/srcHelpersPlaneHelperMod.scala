@@ -24,6 +24,8 @@ object srcHelpersPlaneHelperMod {
     def this(plane: Plane, size: Double, hex: Double) = this()
     def this(plane: Plane, size: Unit, hex: Double) = this()
     
+    def dispose(): Unit = js.native
+    
     var plane: Plane = js.native
     
     /**

@@ -21,6 +21,11 @@ object Object3D {
   def DefaultMatrixAutoUpdate: Boolean = js.native
   inline def DefaultMatrixAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixAutoUpdate")(x.asInstanceOf[js.Any])
   
+  @JSGlobal("THREE.Object3D.DefaultMatrixWorldAutoUpdate")
+  @js.native
+  def DefaultMatrixWorldAutoUpdate: Boolean = js.native
+  inline def DefaultMatrixWorldAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixWorldAutoUpdate")(x.asInstanceOf[js.Any])
+  
   @JSGlobal("THREE.Object3D.DefaultUp")
   @js.native
   def DefaultUp: typings.three.srcMathVector3Mod.Vector3 = js.native

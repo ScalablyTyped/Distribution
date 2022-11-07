@@ -23,6 +23,8 @@ object examplesJsmPostprocessingEffectComposerMod {
     
     var copyPass: ShaderPass = js.native
     
+    def dispose(): Unit = js.native
+    
     def insertPass(pass: typings.three.examplesJsmPostprocessingPassMod.Pass, index: Double): Unit = js.native
     
     def isLastEnabledPass(passIndex: Double): Boolean = js.native

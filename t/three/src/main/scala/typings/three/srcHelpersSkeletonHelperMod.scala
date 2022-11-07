@@ -21,6 +21,8 @@ object srcHelpersSkeletonHelperMod {
     
     var bones: js.Array[Bone] = js.native
     
+    def dispose(): Unit = js.native
+    
     def getBoneList(`object`: Object3D[Event]): js.Array[Bone] = js.native
     
     val isSkeletonHelper: `true` = js.native

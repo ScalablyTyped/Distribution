@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactThreeFiberStrings {
   
   @js.native
+  sealed trait XYZ extends StObject
+  inline def XYZ: XYZ = "XYZ".asInstanceOf[XYZ]
+  
+  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   

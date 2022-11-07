@@ -15,7 +15,16 @@ object examplesJsmAnimationCcdiksolverMod {
   @JSImport("three/examples/jsm/animation/CCDIKSolver", "CCDIKHelper")
   @js.native
   open class CCDIKHelper protected () extends Object3D[Event] {
+    def this(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) = this()
     def this(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]], iks: js.Array[IKS]) = this()
+    def this(
+      mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      iks: js.Array[IKS],
+      sphereSize: Double
+    ) = this()
+    def this(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]], iks: Unit, sphereSize: Double) = this()
+    
+    def dispose(): Unit = js.native
   }
   
   @JSImport("three/examples/jsm/animation/CCDIKSolver", "CCDIKSolver")

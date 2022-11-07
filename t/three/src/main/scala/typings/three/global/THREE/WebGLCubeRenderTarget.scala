@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.WebGLCubeRenderTarget")
 @js.native
-open class WebGLCubeRenderTarget protected ()
+open class WebGLCubeRenderTarget ()
   extends typings.three.mod.WebGLCubeRenderTarget {
   def this(size: Double) = this()
   def this(size: Double, options: WebGLRenderTargetOptions) = this()
+  def this(size: Unit, options: WebGLRenderTargetOptions) = this()
 }

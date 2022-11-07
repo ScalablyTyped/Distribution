@@ -45,8 +45,6 @@ object examplesJsmPostprocessingSsrpassMod {
     
     var depthRenderMaterial: ShaderMaterial = js.native
     
-    def dispose(): Unit = js.native
-    
     var fsQuad: FullScreenQuad = js.native
     
     var groundReflector: ReflectorForSSRPass[BufferGeometry] | Null = js.native

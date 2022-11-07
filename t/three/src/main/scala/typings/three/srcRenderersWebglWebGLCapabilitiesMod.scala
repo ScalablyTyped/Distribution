@@ -30,6 +30,8 @@ object srcRenderersWebglWebGLCapabilitiesMod {
     
     var maxFragmentUniforms: Double = js.native
     
+    var maxSamples: Double = js.native
+    
     var maxTextureSize: Double = js.native
     
     var maxTextures: Double = js.native

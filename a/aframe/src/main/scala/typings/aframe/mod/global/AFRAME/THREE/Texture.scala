@@ -1,14 +1,13 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
-import typings.std.HTMLVideoElement
+import typings.std.TexImageSource
 import typings.three.srcConstantsMod.Mapping
 import typings.three.srcConstantsMod.PixelFormat
 import typings.three.srcConstantsMod.TextureDataType
 import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
+import typings.three.srcTexturesTextureMod.OffscreenCanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ open class Texture protected ()
     * @param [encoding=THREE.LinearEncoding]
     */
   def this(
-    image: js.UndefOr[HTMLImageElement | HTMLCanvasElement | HTMLVideoElement],
+    image: js.UndefOr[TexImageSource | OffscreenCanvas],
     mapping: js.UndefOr[Mapping],
     wrapS: js.UndefOr[Wrapping],
     wrapT: js.UndefOr[Wrapping],

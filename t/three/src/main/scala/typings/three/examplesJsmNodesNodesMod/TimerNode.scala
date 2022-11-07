@@ -3,6 +3,7 @@ package typings.three.examplesJsmNodesNodesMod
 import typings.three.examplesJsmNodesUtilsTimerNodeMod.TimerNodeScope
 import typings.three.examplesJsmNodesUtilsTimerNodeMod.default
 import typings.three.threeStrings.delta
+import typings.three.threeStrings.frame
 import typings.three.threeStrings.global
 import typings.three.threeStrings.local
 import org.scalablytyped.runtime.StObject
@@ -31,6 +32,11 @@ object TimerNode {
   @js.native
   def DELTA: delta = js.native
   inline def DELTA_=(x: delta): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELTA")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three/examples/jsm/nodes/Nodes", "TimerNode.FRAME")
+  @js.native
+  def FRAME: frame = js.native
+  inline def FRAME_=(x: frame): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAME")(x.asInstanceOf[js.Any])
   
   @JSImport("three/examples/jsm/nodes/Nodes", "TimerNode.GLOBAL")
   @js.native

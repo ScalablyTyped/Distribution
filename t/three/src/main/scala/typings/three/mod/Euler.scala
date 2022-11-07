@@ -1,5 +1,7 @@
 package typings.three.mod
 
+import typings.three.srcMathEulerMod.EulerOrder
+import typings.three.threeStrings.XYZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,14 +17,14 @@ open class Euler ()
   def this(x: Double, y: Unit, z: Double) = this()
   def this(x: Unit, y: Double, z: Double) = this()
   def this(x: Unit, y: Unit, z: Double) = this()
-  def this(x: Double, y: Double, z: Double, order: String) = this()
-  def this(x: Double, y: Double, z: Unit, order: String) = this()
-  def this(x: Double, y: Unit, z: Double, order: String) = this()
-  def this(x: Double, y: Unit, z: Unit, order: String) = this()
-  def this(x: Unit, y: Double, z: Double, order: String) = this()
-  def this(x: Unit, y: Double, z: Unit, order: String) = this()
-  def this(x: Unit, y: Unit, z: Double, order: String) = this()
-  def this(x: Unit, y: Unit, z: Unit, order: String) = this()
+  def this(x: Double, y: Double, z: Double, order: EulerOrder) = this()
+  def this(x: Double, y: Double, z: Unit, order: EulerOrder) = this()
+  def this(x: Double, y: Unit, z: Double, order: EulerOrder) = this()
+  def this(x: Double, y: Unit, z: Unit, order: EulerOrder) = this()
+  def this(x: Unit, y: Double, z: Double, order: EulerOrder) = this()
+  def this(x: Unit, y: Double, z: Unit, order: EulerOrder) = this()
+  def this(x: Unit, y: Unit, z: Double, order: EulerOrder) = this()
+  def this(x: Unit, y: Unit, z: Unit, order: EulerOrder) = this()
 }
 /* static members */
 object Euler {
@@ -33,11 +35,11 @@ object Euler {
   
   @JSImport("three", "Euler.DefaultOrder")
   @js.native
-  def DefaultOrder: String = js.native
-  inline def DefaultOrder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
+  def DefaultOrder: XYZ = js.native
+  inline def DefaultOrder_=(x: XYZ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "Euler.RotationOrders")
   @js.native
-  def RotationOrders: js.Array[String] = js.native
-  inline def RotationOrders_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
+  def RotationOrders: js.Array[EulerOrder] = js.native
+  inline def RotationOrders_=(x: js.Array[EulerOrder]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
 }

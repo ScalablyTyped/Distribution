@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__text-bitmap
 
-Typings are for version 7.0.2
+Typings are for version 7.0.3
 
 ## Library description:
 Text via bitmap fonts

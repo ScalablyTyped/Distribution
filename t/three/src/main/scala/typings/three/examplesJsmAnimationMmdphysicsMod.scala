@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.mod.MeshBasicMaterial
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
@@ -95,7 +96,20 @@ object examplesJsmAnimationMmdphysicsMod {
   
   @JSImport("three/examples/jsm/animation/MMDPhysics", "MMDPhysicsHelper")
   @js.native
-  open class MMDPhysicsHelper () extends Object3D[Event]
+  open class MMDPhysicsHelper protected () extends Object3D[Event] {
+    def this(
+      mesh: typings.three.mod.SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      physics: MMDPhysics
+    ) = this()
+    
+    def dispose(): Unit = js.native
+    
+    var materials: js.Tuple3[MeshBasicMaterial, MeshBasicMaterial, MeshBasicMaterial] = js.native
+    
+    var mesh: typings.three.mod.SkinnedMesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    
+    var physics: MMDPhysics = js.native
+  }
   
   @JSImport("three/examples/jsm/animation/MMDPhysics", "ResourceManager")
   @js.native

@@ -45,11 +45,7 @@ object examplesJsmPostprocessingBokehPassMod {
     
     var focus: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.undefined
-    
     var maxblur: js.UndefOr[Double] = js.undefined
-    
-    var width: js.UndefOr[Double] = js.undefined
   }
   object BokehPassParamters {
     
@@ -72,17 +68,9 @@ object examplesJsmPostprocessingBokehPassMod {
       
       inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
       inline def setMaxblur(value: Double): Self = StObject.set(x, "maxblur", value.asInstanceOf[js.Any])
       
       inline def setMaxblurUndefined: Self = StObject.set(x, "maxblur", js.undefined)
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

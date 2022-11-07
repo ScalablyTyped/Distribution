@@ -1,11 +1,13 @@
 package typings.agenda
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.agenda.anon.Id
 import typings.agenda.anon.InsertOnly
 import typings.agenda.anon.PartialJobAttributesJobAt
 import typings.agenda.distAgendaMod.Agenda
 import typings.agenda.distJobRepeatEveryMod.JobOptions
 import typings.bson.mod.ObjectId
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +23,7 @@ object distJobMod {
   @JSImport("agenda/dist/job", "Job")
   @js.native
   open class Job[T /* <: JobAttributesData */] protected () extends StObject {
-    def this(options: JobAttributes[T]) = this()
+    def this(options: Modify[JobAttributes[T], Id]) = this()
     
     /**
       * The agenda that created the job.
@@ -129,14 +131,14 @@ object distJobMod {
     /**
       * The record identity.
       */
-    var _id: js.UndefOr[ObjectId] = js.undefined
+    var _id: ObjectId
     
     var agenda: Agenda
     
     /**
       * The job details.
       */
-    var data: js.UndefOr[T] = js.undefined
+    var data: T
     
     /**
       * Job's state
@@ -232,8 +234,8 @@ object distJobMod {
   }
   object JobAttributes {
     
-    inline def apply[T /* <: JobAttributesData */](agenda: Agenda, name: String, priority: Double | String, `type`: String): JobAttributes[T] = {
-      val __obj = js.Dynamic.literal(agenda = agenda.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
+    inline def apply[T /* <: JobAttributesData */](_id: ObjectId, agenda: Agenda, data: T, name: String, priority: Double | String, `type`: String): JobAttributes[T] = {
+      val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], agenda = agenda.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[JobAttributes[T]]
     }
@@ -243,8 +245,6 @@ object distJobMod {
       inline def setAgenda(value: Agenda): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -341,10 +341,10 @@ object distJobMod {
       inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
       
       inline def set_id(value: ObjectId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
-      
-      inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
     }
   }
   
   type JobAttributesData = StringDictionary[Any]
+  
+  type Modify[T, R] = (Omit[T, /* keyof R */ String]) & R
 }

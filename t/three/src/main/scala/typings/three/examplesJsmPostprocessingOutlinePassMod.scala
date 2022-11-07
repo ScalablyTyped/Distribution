@@ -33,8 +33,6 @@ object examplesJsmPostprocessingOutlinePassMod {
     
     var depthMaterial: MeshDepthMaterial = js.native
     
-    def dispose(): Unit = js.native
-    
     var downSampleRatio: Double = js.native
     
     var edgeDetectionMaterial: ShaderMaterial = js.native

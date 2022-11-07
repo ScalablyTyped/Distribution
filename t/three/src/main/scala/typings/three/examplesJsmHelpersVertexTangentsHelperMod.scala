@@ -20,6 +20,8 @@ object examplesJsmHelpersVertexTangentsHelperMod {
     def this(`object`: Object3D[Event], size: Double, hex: Double) = this()
     def this(`object`: Object3D[Event], size: Unit, hex: Double) = this()
     
+    def dispose(): Unit = js.native
+    
     var `object`: Object3D[Event] = js.native
     
     var size: Double = js.native

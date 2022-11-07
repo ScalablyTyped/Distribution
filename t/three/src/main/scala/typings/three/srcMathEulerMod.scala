@@ -5,6 +5,7 @@ import typings.three.srcMathMatrix4Mod.Matrix4
 import typings.three.srcMathQuaternionMod.Quaternion
 import typings.three.srcMathVector3Mod.Vector3
 import typings.three.threeBooleans.`true`
+import typings.three.threeStrings.XYZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,14 +22,14 @@ object srcMathEulerMod {
     def this(x: Double, y: Unit, z: Double) = this()
     def this(x: Unit, y: Double, z: Double) = this()
     def this(x: Unit, y: Unit, z: Double) = this()
-    def this(x: Double, y: Double, z: Double, order: String) = this()
-    def this(x: Double, y: Double, z: Unit, order: String) = this()
-    def this(x: Double, y: Unit, z: Double, order: String) = this()
-    def this(x: Double, y: Unit, z: Unit, order: String) = this()
-    def this(x: Unit, y: Double, z: Double, order: String) = this()
-    def this(x: Unit, y: Double, z: Unit, order: String) = this()
-    def this(x: Unit, y: Unit, z: Double, order: String) = this()
-    def this(x: Unit, y: Unit, z: Unit, order: String) = this()
+    def this(x: Double, y: Double, z: Double, order: EulerOrder) = this()
+    def this(x: Double, y: Double, z: Unit, order: EulerOrder) = this()
+    def this(x: Double, y: Unit, z: Double, order: EulerOrder) = this()
+    def this(x: Double, y: Unit, z: Unit, order: EulerOrder) = this()
+    def this(x: Unit, y: Double, z: Double, order: EulerOrder) = this()
+    def this(x: Unit, y: Double, z: Unit, order: EulerOrder) = this()
+    def this(x: Unit, y: Unit, z: Double, order: EulerOrder) = this()
+    def this(x: Unit, y: Unit, z: Unit, order: EulerOrder) = this()
     
     def _onChange(callback: js.Function0[Unit]): this.type = js.native
     
@@ -38,7 +39,7 @@ object srcMathEulerMod {
     
     def equals(euler: Euler): Boolean = js.native
     
-    def fromArray(xyzo: js.Array[Any]): Euler = js.native
+    def fromArray(xyzo: Array[js.UndefOr[Double | EulerOrder | Any]]): Euler = js.native
     
     val isEuler: `true` = js.native
     
@@ -48,30 +49,30 @@ object srcMathEulerMod {
     /**
       * @default THREE.Euler.DefaultOrder
       */
-    var order: String = js.native
+    var order: EulerOrder = js.native
     
-    def reorder(newOrder: String): Euler = js.native
+    def reorder(newOrder: EulerOrder): Euler = js.native
     
     def set(x: Double, y: Double, z: Double): Euler = js.native
-    def set(x: Double, y: Double, z: Double, order: String): Euler = js.native
+    def set(x: Double, y: Double, z: Double, order: EulerOrder): Euler = js.native
     
     def setFromQuaternion(q: Quaternion): Euler = js.native
-    def setFromQuaternion(q: Quaternion, order: String): Euler = js.native
-    def setFromQuaternion(q: Quaternion, order: String, update: Boolean): Euler = js.native
     def setFromQuaternion(q: Quaternion, order: Unit, update: Boolean): Euler = js.native
+    def setFromQuaternion(q: Quaternion, order: EulerOrder): Euler = js.native
+    def setFromQuaternion(q: Quaternion, order: EulerOrder, update: Boolean): Euler = js.native
     
     def setFromRotationMatrix(m: Matrix4): Euler = js.native
-    def setFromRotationMatrix(m: Matrix4, order: String): Euler = js.native
-    def setFromRotationMatrix(m: Matrix4, order: String, update: Boolean): Euler = js.native
     def setFromRotationMatrix(m: Matrix4, order: Unit, update: Boolean): Euler = js.native
+    def setFromRotationMatrix(m: Matrix4, order: EulerOrder): Euler = js.native
+    def setFromRotationMatrix(m: Matrix4, order: EulerOrder, update: Boolean): Euler = js.native
     
     def setFromVector3(v: Vector3): Euler = js.native
-    def setFromVector3(v: Vector3, order: String): Euler = js.native
+    def setFromVector3(v: Vector3, order: EulerOrder): Euler = js.native
     
-    def toArray(): js.Array[Double] = js.native
-    def toArray(array: js.Array[Double]): js.Array[Double] = js.native
-    def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
-    def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
+    def toArray(): js.Array[js.UndefOr[Double | String]] = js.native
+    def toArray(array: js.Array[js.UndefOr[Double | String]]): js.Array[js.UndefOr[Double | String]] = js.native
+    def toArray(array: js.Array[js.UndefOr[Double | String]], offset: Double): js.Array[js.UndefOr[Double | String]] = js.native
+    def toArray(array: Unit, offset: Double): js.Array[js.UndefOr[Double | String]] = js.native
     
     /**
       * @default 0
@@ -97,12 +98,36 @@ object srcMathEulerMod {
     
     @JSImport("three/src/math/Euler", "Euler.DefaultOrder")
     @js.native
-    def DefaultOrder: String = js.native
-    inline def DefaultOrder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
+    def DefaultOrder: XYZ = js.native
+    inline def DefaultOrder_=(x: XYZ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
     
     @JSImport("three/src/math/Euler", "Euler.RotationOrders")
     @js.native
-    def RotationOrders: js.Array[String] = js.native
-    inline def RotationOrders_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
+    def RotationOrders: js.Array[EulerOrder] = js.native
+    inline def RotationOrders_=(x: js.Array[EulerOrder]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.three.threeStrings.XYZ
+    - typings.three.threeStrings.YXZ
+    - typings.three.threeStrings.ZXY
+    - typings.three.threeStrings.ZYX
+    - typings.three.threeStrings.YZX
+    - typings.three.threeStrings.XZY
+  */
+  trait EulerOrder extends StObject
+  object EulerOrder {
+    
+    inline def XYZ: typings.three.threeStrings.XYZ = "XYZ".asInstanceOf[typings.three.threeStrings.XYZ]
+    
+    inline def XZY: typings.three.threeStrings.XZY = "XZY".asInstanceOf[typings.three.threeStrings.XZY]
+    
+    inline def YXZ: typings.three.threeStrings.YXZ = "YXZ".asInstanceOf[typings.three.threeStrings.YXZ]
+    
+    inline def YZX: typings.three.threeStrings.YZX = "YZX".asInstanceOf[typings.three.threeStrings.YZX]
+    
+    inline def ZXY: typings.three.threeStrings.ZXY = "ZXY".asInstanceOf[typings.three.threeStrings.ZXY]
+    
+    inline def ZYX: typings.three.threeStrings.ZYX = "ZYX".asInstanceOf[typings.three.threeStrings.ZYX]
   }
 }

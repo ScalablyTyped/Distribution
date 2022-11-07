@@ -19,6 +19,8 @@ object examplesJsmHelpersOctreeHelperMod {
     
     var color: ColorRepresentation = js.native
     
+    def dispose(): Unit = js.native
+    
     var octree: Octree = js.native
     
     /**
@@ -26,5 +28,7 @@ object examplesJsmHelpersOctreeHelperMod {
       */
     @JSName("type")
     var type_OctreeHelper: typings.three.threeStrings.OctreeHelper | String = js.native
+    
+    def update(): Unit = js.native
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pixi__math"
-version := "7.0.2-2a3b8b"
+version := "7.0.3-b317be"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

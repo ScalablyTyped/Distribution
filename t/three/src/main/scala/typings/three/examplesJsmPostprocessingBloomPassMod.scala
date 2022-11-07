@@ -19,14 +19,6 @@ object examplesJsmPostprocessingBloomPassMod {
     def this(strength: Double, kernelSize: Unit, sigma: Double) = this()
     def this(strength: Unit, kernelSize: Double, sigma: Double) = this()
     def this(strength: Unit, kernelSize: Unit, sigma: Double) = this()
-    def this(strength: Double, kernelSize: Double, sigma: Double, resolution: Double) = this()
-    def this(strength: Double, kernelSize: Double, sigma: Unit, resolution: Double) = this()
-    def this(strength: Double, kernelSize: Unit, sigma: Double, resolution: Double) = this()
-    def this(strength: Double, kernelSize: Unit, sigma: Unit, resolution: Double) = this()
-    def this(strength: Unit, kernelSize: Double, sigma: Double, resolution: Double) = this()
-    def this(strength: Unit, kernelSize: Double, sigma: Unit, resolution: Double) = this()
-    def this(strength: Unit, kernelSize: Unit, sigma: Double, resolution: Double) = this()
-    def this(strength: Unit, kernelSize: Unit, sigma: Unit, resolution: Double) = this()
     
     var convolutionUniforms: js.Object = js.native
     

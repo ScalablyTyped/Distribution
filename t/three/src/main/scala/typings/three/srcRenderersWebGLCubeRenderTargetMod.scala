@@ -13,9 +13,10 @@ object srcRenderersWebGLCubeRenderTargetMod {
   
   @JSImport("three/src/renderers/WebGLCubeRenderTarget", "WebGLCubeRenderTarget")
   @js.native
-  open class WebGLCubeRenderTarget protected () extends WebGLRenderTarget {
+  open class WebGLCubeRenderTarget () extends WebGLRenderTarget {
     def this(size: Double) = this()
     def this(size: Double, options: WebGLRenderTargetOptions) = this()
+    def this(size: Unit, options: WebGLRenderTargetOptions) = this()
     
     def clear(renderer: WebGLRenderer, color: Boolean, depth: Boolean, stencil: Boolean): Unit = js.native
     

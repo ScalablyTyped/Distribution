@@ -3,11 +3,11 @@ package typings.three.global.THREE
 import typings.three.anon.AlphaMap
 import typings.three.anon.AmbientLightColor
 import typings.three.anon.AoMap
+import typings.three.anon.BackgroundBlurriness
 import typings.three.anon.BumpMap
 import typings.three.anon.Diffuse
 import typings.three.anon.DisplacementBias
 import typings.three.anon.EmissiveMap
-import typings.three.anon.EnvMap
 import typings.three.anon.FogColor
 import typings.three.anon.GradientMap
 import typings.three.anon.LightMap
@@ -52,8 +52,8 @@ object UniformsLib {
   
   @JSGlobal("THREE.UniformsLib.envmap")
   @js.native
-  def envmap: EnvMap = js.native
-  inline def envmap_=(x: EnvMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("envmap")(x.asInstanceOf[js.Any])
+  def envmap: BackgroundBlurriness = js.native
+  inline def envmap_=(x: BackgroundBlurriness): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("envmap")(x.asInstanceOf[js.Any])
   
   @JSGlobal("THREE.UniformsLib.fog")
   @js.native

@@ -7,7 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.WebGLRenderTarget")
 @js.native
-open class WebGLRenderTarget protected ()
-  extends typings.three.mod.WebGLRenderTarget {
-  def this(width: Double, height: Double) = this()
-}
+open class WebGLRenderTarget ()
+  extends typings.three.mod.WebGLRenderTarget

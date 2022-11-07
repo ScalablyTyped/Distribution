@@ -7,9 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object examplesJsmNodesMaterialxFunctionsLibMxNoiseMod {
+object examplesJsmNodesMaterialxLibMxNoiseMod {
   
-  @JSImport("three/examples/jsm/nodes/materialx/functions/lib/mx_noise", JSImport.Namespace)
+  @JSImport("three/examples/jsm/nodes/materialx/lib/mx_noise", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
