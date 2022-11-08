@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pkcs11js"
-version := "1.3.0-030c93"
+version := "1.3.1-488927"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

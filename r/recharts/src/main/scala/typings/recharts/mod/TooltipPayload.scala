@@ -19,6 +19,12 @@ trait TooltipPayload extends StObject {
   
   var payload: js.UndefOr[Any] = js.undefined
   
+  var stroke: js.UndefOr[String] = js.undefined
+  
+  var strokeDasharray: js.UndefOr[String | Double] = js.undefined
+  
+  var strokeWidth: js.UndefOr[Double | String] = js.undefined
+  
   var unit: js.UndefOr[String] = js.undefined
   
   var value: String | Double | (js.Array[String | Double])
@@ -57,6 +63,18 @@ object TooltipPayload {
     inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeDasharray(value: String | Double): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setStrokeWidth(value: Double | String): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

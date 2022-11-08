@@ -1,7 +1,7 @@
 
 # Scala.js typings for pkcs11js
 
-Typings are for version 1.3.0
+Typings are for version 1.3.1
 
 ## Library description:
 A Node.js implementation of the PKCS#11 2.30 interface
