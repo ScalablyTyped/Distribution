@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wix-style-react"
-version := "10.60.3-d11f4e"
+version := "10.60.3-0616d7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -23,7 +23,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.1-833116",
   "org.scalablytyped" %%% "pretty-format" % "29.2.1-d73ee0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
-  "org.scalablytyped" %%% "protractor" % "7.0.0-36261d",
+  "org.scalablytyped" %%% "protractor" % "7.0.0-19a556",
   "org.scalablytyped" %%% "puppeteer" % "19.2.2-1fd326",
   "org.scalablytyped" %%% "puppeteer-core" % "19.2.2-1b6be1",
   "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-96a756",
@@ -32,16 +32,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react-types__shared" % "3.15.0-58418f",
   "org.scalablytyped" %%% "redux" % "4.2.0-6b25b9",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221104Z-fa1745",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.1-dt-20221108Z-f2b639",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
   "org.scalablytyped" %%% "testing-library__dom" % "8.19.0-72033b",
   "org.scalablytyped" %%% "testing-library__react" % "13.4.0-49b367",
   "org.scalablytyped" %%% "unidriver__core" % "1.3.0-540a8e",
   "org.scalablytyped" %%% "unidriver__jsdom-react" % "1.7.0-226add",
-  "org.scalablytyped" %%% "webdriver-js-extender" % "2.2.0-83e27b",
+  "org.scalablytyped" %%% "webdriver-js-extender" % "2.2.0-dca343",
   "org.scalablytyped" %%% "wix-design-systems-locale-utils" % "1.71.0-79b4d6",
   "org.scalablytyped" %%% "wix-design-systems-providers" % "1.16.3-dba349",
-  "org.scalablytyped" %%% "wix-ui-test-utils" % "1.0.191-d5cdbb",
+  "org.scalablytyped" %%% "wix-ui-test-utils" % "1.0.191-90fdb6",
   "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-370f29")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

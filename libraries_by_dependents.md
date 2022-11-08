@@ -21,6 +21,7 @@
 | 0.0 | [accessibility](./a/accessibility) | add accessibility to your website
 | 0.0 | [accessor-fn](./a/accessor-fn) | A wrapper function for object accessor properties
 | 0.0 | [accounting](./a/accounting) | number, money and currency formatting library
+| 0.0 | [accumulator-hash](./a/accumulator-hash) | Generate unique references
 | 0.0 | [accurate-interval](./a/accurate-interval) | Create an accurate interval that does not skew ove
 | 0.0 | [ace](./a/ace) | ace
 | 0.0 | [ace-builds](./a/ace-builds) | Ace (Ajax.org Cloud9 Editor)
@@ -674,6 +675,7 @@
 | 0.0 | [azure__msal-node](./a/azure__msal-node) | Microsoft Authentication Library for Node
 | 0.0 | [b-spline](./b/b-spline) | B-spline interpolation
 | 0.0 | [b2a](./b/b2a) | btoa and atob (ie base64/base64url encoding and de
+| 0.0 | [b4a](./b/b4a) | Bridging the gap between buffers and typed arrays
 | 0.0 | [b64-lite](./b/b64-lite) | isomorphic base64 library in 152 bytes
 | 0.0 | [b_](./b/b_) | BEM class name generator
 | 0.0 | [babar](./b/babar) | CLI bar charts
@@ -800,6 +802,8 @@
 | 0.0 | [bignum](./b/bignum) | Arbitrary-precision integer arithmetic using OpenS
 | 0.0 | [bignumber_dot_js](./b/bignumber_dot_js) | A library for arbitrary-precision decimal and non-
 | 0.0 | [bigscreen](./b/bigscreen) | A simple library for using the JavaScript Fullscre
+| 0.0 | [biguintbe](./b/biguintbe) | Encode / decode unsigned BigInt as big endian
+| 0.0 | [biguintle](./b/biguintle) | Encode / decode unsigned BigInt as little endian
 | 0.0 | [bin-pack](./b/bin-pack) | A packing algorithm for 2D bin packing. Largely ba
 | 0.0 | [bin-version](./b/bin-version) | Get the version of a binary in semver format
 | 0.0 | [binary-extensions](./b/binary-extensions) | List of binary file extensions
@@ -837,6 +841,7 @@
 | 0.0 | [blacklist](./b/blacklist) | Returns a shallow copy of an object without blackl
 | 0.0 | [blake2](./b/blake2) | All four BLAKE2 variants (blake2b, blake2bp, blake
 | 0.0 | [blake2b](./b/blake2b) | Blake2b (64-bit version) in pure Javascript
+| 0.0 | [blake2b-wasm](./b/blake2b-wasm) | Blake2b implemented in WASM
 | 0.0 | [blake2s-js](./b/blake2s-js) | Pure JavaScript implementation of BLAKE2s cryptogr
 | 0.0 | [blakejs](./b/blakejs) | Pure Javascript implementation of the BLAKE2b and 
 | 0.0 | [blazy](./b/blazy) | A fast lightweight pure JavaScript script for lazy
@@ -1133,6 +1138,7 @@
 | 0.0 | [cfenv](./c/cfenv) | easy access to your Cloud Foundry application envi
 | 0.0 | [cfn-response](./c/cfn-response) | A module for sending responses from lambda-funcito
 | 0.0 | [cfn-response-promise](./c/cfn-response-promise) | wrap cfn-response in promise to support await/asyn
+| 0.0 | [chacha20-universal](./c/chacha20-universal) | chacha20 in pure javascript
 | 0.0 | [chai](./c/chai) | BDD/TDD assertion library for node.js and the brow
 | 0.0 | [chai-almost](./c/chai-almost) | Extends chai with assertions that allow for floati
 | 0.0 | [chai-arrays](./c/chai-arrays) | a simple chai plugin for better array assertions
@@ -3286,6 +3292,7 @@
 | 0.0 | [glob-to-regexp](./g/glob-to-regexp) | Convert globs to regular expressions
 | 0.0 | [glob-watcher](./g/glob-watcher) | Watch globs and execute a function upon change, wi
 | 0.0 | [global-agent](./g/global-agent) | Global HTTP/HTTPS proxy configurable using environ
+| 0.0 | [global-cache](./g/global-cache) | Sometimes you have to do horrible things, like use
 | 0.0 | [global-dirs](./g/global-dirs) | Get the directory of globally installed packages a
 | 0.0 | [global-modules](./g/global-modules) | The directory used by npm for globally installed n
 | 0.0 | [global-modules-path](./g/global-modules-path) | Returns path to globally installed package
@@ -3504,6 +3511,7 @@
 | 0.0 | [gulp-useref](./g/gulp-useref) | Parse build blocks in HTML files to replace refere
 | 0.0 | [gulp-util](./g/gulp-util) | Utility functions for gulp plugins
 | 0.0 | [gulp-zip](./g/gulp-zip) | ZIP compress files
+| 0.0 | [gulp_dot_spritesmith](./g/gulp_dot_spritesmith) | Convert a set of images into a spritesheet and CSS
 | 0.0 | [gun](./g/gun) | A realtime, decentralized, offline-first, graph da
 | 0.0 | [gunzip-maybe](./g/gunzip-maybe) | Transform stream that gunzips its input if it is g
 | 0.0 | [gyronorm](./g/gyronorm) | Accesses the gyroscope and accelerometer data from
@@ -3959,6 +3967,7 @@
 | 0.0 | [insight](./i/insight) | Understand how your tool is being used by anonymou
 | 0.0 | [inspectlet-es](./i/inspectlet-es) | ES module for Inspectlet.
 | 0.0 | [instabug-reactnative](./i/instabug-reactnative) | React Native plugin for integrating the Instabug S
+| 0.0 | [int53](./i/int53) | silly 53bit integer buffer serialization
 | 0.0 | [integer](./i/integer) | Native 64-bit integers with overflow protection.
 | 0.0 | [integrate-adaptive-simpso](./i/integrate-adaptive-simpson) | Integrate a system of ODEs using the Second Order 
 | 0.0 | [interactjs](./i/interactjs) | Drag and drop, resizing and multi-touch gestures w
@@ -6327,8 +6336,11 @@
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
 | 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
+| 0.0 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
+| 0.0 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
+| 0.0 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
@@ -6670,6 +6682,7 @@
 | 0.0 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server
 | 0.0 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and
 | 0.0 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin
+| 0.0 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.0 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 0.0 | [node-netstat](./n/node-netstat) | programmatic netstat utility
 | 0.0 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays
@@ -6762,6 +6775,9 @@
 | 0.0 | [nodes7](./n/nodes7) | Routine to communicate with Siemens S7 PLCs
 | 0.0 | [nodeunit](./n/nodeunit) | Easy unit testing for node.js and the browser.
 | 0.0 | [nofilter](./n/nofilter) | Read and write a growable buffer as a stream
+| 0.0 | [noise-curve-ed](./n/noise-curve-ed) | Ed25519 elliptic curve operations for 
+| 0.0 | [noise-curve-secp](./n/noise-curve-secp) | secp256k1 elliptic curve operations for use with 
+| 0.0 | [noise-handshake](./n/noise-handshake) | -
 | 0.0 | [noisejs](./n/noisejs) | Perlin noise implementation
 | 0.0 | [noloopfor](./n/noloopfor) | Pacote para fazer loops sem o uso de for
 | 0.0 | [nomnom](./n/nomnom) | Option parser with generated usage and commands
@@ -7646,11 +7662,13 @@
 | 0.0 | [private-ip](./p/private-ip) | Check if IP address is private.
 | 0.0 | [probability-distributions](./p/probability-distributions) | Generate random variables from a variety of probab
 | 0.0 | [probe-image-size](./p/probe-image-size) | Get image size without full download (JPG, GIF, PN
+| 0.0 | [proc-log](./p/proc-log) | just emit 'log' events on the process object
 | 0.0 | [process-exists](./p/process-exists) | Check if a process is running
 | 0.0 | [process-warning](./p/process-warning) | A small utility for creating warnings and emitting
 | 0.0 | [procfs-stats](./p/procfs-stats) | get detailed information (more than ps, top etc) a
 | 0.0 | [proclaim](./p/proclaim) | A simple assertion library for server and client s
 | 0.0 | [procurios_dot_resizesenso](./p/procurios_dot_resizesensor) | Performance friendly element resize detection
+| 0.0 | [proggy](./p/proggy) | Progress bar updates at a distance
 | 0.0 | [progress](./p/progress) | Flexible ascii progress bar
 | 0.0 | [progress-bar-webpack-plug](./p/progress-bar-webpack-plugin) | A progress bar for Webpack.
 | 0.0 | [progress-stream](./p/progress-stream) | Read the progress of a stream
@@ -8609,6 +8627,7 @@
 | 0.0 | [react-pdf](./r/react-pdf) | Display PDFs in your React app as easily as if the
 | 0.0 | [react-phone-number-input](./r/react-phone-number-input) | Telephone number input React component
 | 0.0 | [react-photoswipe](./r/react-photoswipe) | PhotoSwipe, PhotoSwipeGallery component for ReactJ
+| 0.0 | [react-pie-menu](./r/react-pie-menu) | A configurable radial context menu for React
 | 0.0 | [react-places-autocomplete](./r/react-places-autocomplete) | A React component for Google Maps Places Autocompl
 | 0.0 | [react-plaid-link](./r/react-plaid-link) | A React component for Plaid Link
 | 0.0 | [react-player](./r/react-player) | A React component for playing a variety of URLs, i
@@ -9118,6 +9137,7 @@
 | 0.0 | [rijndael-js](./r/rijndael-js) | Rijndael in Pure Javascript
 | 0.0 | [rimraf](./r/rimraf) | A deep deletion module for node (like rm -rf)
 | 0.0 | [ringbufferjs](./r/ringbufferjs) | a simple ring buffer data structure
+| 0.0 | [riot](./r/riot) | Simple and elegant component-based UI library
 | 0.0 | [riot-api-nodejs](./r/riot-api-nodejs) | A NodeJS Library for Riot Games API
 | 0.0 | [riot-route](./r/riot-route) | Simple isomorphic router
 | 0.0 | [riotcontrol](./r/riotcontrol) | Event Controller / Dispatcher For RiotJS, Inspired
@@ -9386,6 +9406,8 @@
 | 0.0 | [seatsio](./s/seatsio) | Official JavaScript and Node.JS client library for
 | 0.0 | [secp256k1](./s/secp256k1) | This module provides native bindings to ecdsa secp
 | 0.0 | [secret-blob](./s/secret-blob) | Tiny module for easy encryption of Buffers
+| 0.0 | [secret-box](./s/secret-box) | Encrypt and decrypt secrets.
+| 0.0 | [secretbox-encoding](./s/secretbox-encoding) | XSalsa20 Poly1305 codec that implements the abstra
 | 0.0 | [secure-json-parse](./s/secure-json-parse) | JSON parse with prototype poisoning protection
 | 0.0 | [secure-password](./s/secure-password) | Making Password storage safer for all
 | 0.0 | [secure-random](./s/secure-random) | Normalize the creation of cryptographically strong
@@ -9509,7 +9531,9 @@
 | 0.0 | [sha1](./s/sha1) | native js function for hashing messages with SHA-1
 | 0.0 | [sha256](./s/sha256) | Compute SHA256 of bytes or strings.
 | 0.0 | [sha256-file](./s/sha256-file) | return an sha256sum of a given file
+| 0.0 | [sha256-universal](./s/sha256-universal) | Sha256 hashing algorithm in both WASM and pure JS
 | 0.0 | [sha3](./s/sha3) | The Keccak family of hashing algorithms.
+| 0.0 | [sha512-universal](./s/sha512-universal) | Sha512 implemented in both WASM and pure JS
 | 0.0 | [sha_dot_js](./s/sha_dot_js) | Streamable SHA hashes in pure javascript
 | 0.0 | [shade-blend-color](./s/shade-blend-color) | This will take a HEX or RGB web color, shade it da
 | 0.0 | [shakacode__recompose](./s/shakacode__recompose) | A React utility belt for function components and h
@@ -10147,7 +10171,6 @@
 | 0.0 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 0.0 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects
 | 0.0 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
-| 0.0 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.0 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg
 | 0.0 | [swagger-ui](./s/swagger-ui) | -
 | 0.0 | [swagger-ui-dist](./s/swagger-ui-dist) | -
@@ -10302,7 +10325,6 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
-| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
@@ -10444,6 +10466,7 @@
 | 0.0 | [tocktimer](./t/tocktimer) | timer object/class. kickass
 | 0.0 | [toidentifier](./t/toidentifier) | Convert a string of words to a JavaScript identifi
 | 0.0 | [token-introspection](./t/token-introspection) | Library to introspect tokens of services following
+| 0.0 | [token-stream](./t/token-stream) | Take an array of token and produce a more useful A
 | 0.0 | [token-types](./t/token-types) | Common token types for decoding and encoding numer
 | 0.0 | [tokenizer__token](./t/tokenizer__token) | TypeScript definition for strtok3 token
 | 0.0 | [tokenizr](./t/tokenizr) | String Tokenization Library for JavaScript
@@ -10677,7 +10700,6 @@
 | 0.0 | [umijs__ssr-darkreader](./u/umijs__ssr-darkreader) | Dark mode for every website
 | 0.0 | [umijs__use-params](./u/umijs__use-params) | -
 | 0.0 | [umtrack-wx](./u/umtrack-wx) | 微信小程序友盟统计SDK
-| 0.0 | [umzug](./u/umzug) | Framework-agnostic migration tool for Node
 | 0.0 | [unbox-primitive](./u/unbox-primitive) | Unbox a boxed JS primitive value.
 | 0.0 | [unbzip2-stream](./u/unbzip2-stream) | streaming unbzip2 implementation in pure javascrip
 | 0.0 | [unc-path-regex](./u/unc-path-regex) | Regular expression for testing if a file path is a
@@ -10885,6 +10907,7 @@
 | 0.0 | [vanillajs-datepicker](./v/vanillajs-datepicker) | A vanilla JavaScript remake of bootstrap-datepicke
 | 0.0 | [vara](./v/vara) | Vara can create realistic text drawing animations 
 | 0.0 | [varint](./v/varint) | protobuf-style varint bytes - use msb to create in
+| 0.0 | [varstruct](./v/varstruct) | encode/decode variable binary structures
 | 0.0 | [varuint-bitcoin](./v/varuint-bitcoin) | encode/decode number as bitcoin variable length in
 | 0.0 | [vary](./v/vary) | Manipulate the HTTP Vary header
 | 0.0 | [vascosantos__moving-avera](./v/vascosantos__moving-average) | Exponential Moving Average
@@ -11495,7 +11518,6 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
-| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman

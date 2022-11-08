@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "omelette"
-version := "0.4-dt-20211216Z-ae2f86"
+version := "0.4-dt-20221107Z-c91bde"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

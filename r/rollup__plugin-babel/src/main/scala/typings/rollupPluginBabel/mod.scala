@@ -224,6 +224,8 @@ object mod {
   /* Inlined parent std.Omit<@babel/core.@babel/core.TransformOptions, 'include' | 'exclude'> */
   trait RollupBabelInputPluginOptions extends StObject {
     
+    var assumptions: js.UndefOr[StringDictionary[Boolean] | Null] = js.undefined
+    
     var ast: js.UndefOr[Boolean | Null] = js.undefined
     
     var auxiliaryCommentAfter: js.UndefOr[String | Null] = js.undefined
@@ -366,6 +368,12 @@ object mod {
     }
     
     extension [Self <: RollupBabelInputPluginOptions](x: Self) {
+      
+      inline def setAssumptions(value: StringDictionary[Boolean]): Self = StObject.set(x, "assumptions", value.asInstanceOf[js.Any])
+      
+      inline def setAssumptionsNull: Self = StObject.set(x, "assumptions", null)
+      
+      inline def setAssumptionsUndefined: Self = StObject.set(x, "assumptions", js.undefined)
       
       inline def setAst(value: Boolean): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
@@ -680,6 +688,8 @@ object mod {
       */
     var allowAllFormats: js.UndefOr[Boolean] = js.undefined
     
+    var assumptions: js.UndefOr[StringDictionary[Boolean] | Null] = js.undefined
+    
     var ast: js.UndefOr[Boolean | Null] = js.undefined
     
     var auxiliaryCommentAfter: js.UndefOr[String | Null] = js.undefined
@@ -785,6 +795,12 @@ object mod {
       inline def setAllowAllFormats(value: Boolean): Self = StObject.set(x, "allowAllFormats", value.asInstanceOf[js.Any])
       
       inline def setAllowAllFormatsUndefined: Self = StObject.set(x, "allowAllFormats", js.undefined)
+      
+      inline def setAssumptions(value: StringDictionary[Boolean]): Self = StObject.set(x, "assumptions", value.asInstanceOf[js.Any])
+      
+      inline def setAssumptionsNull: Self = StObject.set(x, "assumptions", null)
+      
+      inline def setAssumptionsUndefined: Self = StObject.set(x, "assumptions", js.undefined)
       
       inline def setAst(value: Boolean): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,7 @@ trait InstancesDistribution extends StObject {
   var SpotInstancePools: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.SpotInstancePools] = js.undefined
   
   /**
-    * The maximum price per unit hour that you are willing to pay for a Spot Instance. If you keep the value at its default (unspecified), Amazon EC2 Auto Scaling uses the On-Demand price as the maximum Spot price. To remove a value that you previously set, include the property but specify an empty string ("") for the value.  If your maximum price is lower than the Spot price for the instance types that you selected, your Spot Instances are not launched.  Valid Range: Minimum value of 0.001
+    * The maximum price per unit hour that you are willing to pay for a Spot Instance. If your maximum price is lower than the Spot price for the instance types that you selected, your Spot Instances are not launched. We do not recommend specifying a maximum price because it can lead to increased interruptions. When Spot Instances launch, you pay the current Spot price. To remove a maximum price that you previously set, include the property but specify an empty string ("") for the value.  If you specify a maximum price, your instances will be interrupted more frequently than if you do not specify one.  Valid Range: Minimum value of 0.001
     */
   var SpotMaxPrice: js.UndefOr[MixedInstanceSpotPrice] = js.undefined
 }

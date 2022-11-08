@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../resources/loader.js').ResourceLoader} ResourceLoader */
+/** @typedef {import('../../framework/handlers/loader.js').ResourceLoader} ResourceLoader */
 /**
   * Callback used by {@link AssetRegistry#filter} to filter assets.
   *

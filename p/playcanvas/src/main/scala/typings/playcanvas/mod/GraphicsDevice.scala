@@ -40,6 +40,8 @@ open class GraphicsDevice protected () extends EventHandler {
     */
   def _isBrowserInterface(texture: Any): Boolean = js.native
   
+  def _isImageBrowserInterface(texture: Any): Boolean = js.native
+  
   var _maxPixelRatio: Double = js.native
   
   var _primsPerFrame: js.Array[Double] = js.native
@@ -113,14 +115,6 @@ open class GraphicsDevice protected () extends EventHandler {
   def getBoneLimit(): Double = js.native
   
   /**
-    * Retrieves the program library assigned to the specified graphics device.
-    *
-    * @returns {ProgramLibrary} The program library assigned to the device.
-    * @ignore
-    */
-  def getProgramLibrary(): ProgramLibrary = js.native
-  
-  /**
     * Queries the currently set render target on the device.
     *
     * @returns {RenderTarget} The current render target.
@@ -188,6 +182,8 @@ open class GraphicsDevice protected () extends EventHandler {
     */
   var maxVolumeSize: Double = js.native
   
+  def onDestroyShader(shader: Any): Unit = js.native
+  
   def postDestroy(): Unit = js.native
   
   /**
@@ -197,8 +193,6 @@ open class GraphicsDevice protected () extends EventHandler {
     * @type {string}
     */
   var precision: String = js.native
-  
-  var programLib: ProgramLibrary = js.native
   
   /**
     * Currently active render target.
@@ -245,17 +239,6 @@ open class GraphicsDevice protected () extends EventHandler {
     * @param {IndexBuffer} indexBuffer - The index buffer to assign to the device.
     */
   def setIndexBuffer(indexBuffer: IndexBuffer): Unit = js.native
-  
-  /**
-    * Assigns a program library to the specified device. By default, a graphics device is created
-    * with a program library that manages all of the programs that are used to render any
-    * graphical primitives. However, this function allows the user to replace the existing program
-    * library with a new one.
-    *
-    * @param {ProgramLibrary} programLib - The program library to assign to the device.
-    * @ignore
-    */
-  def setProgramLibrary(programLib: ProgramLibrary): Unit = js.native
   
   /**
     * Sets the specified render target on the device. If null is passed as a parameter, the back

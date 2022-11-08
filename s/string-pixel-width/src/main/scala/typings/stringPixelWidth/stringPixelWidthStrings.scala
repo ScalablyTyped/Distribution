@@ -35,12 +35,20 @@ object stringPixelWidthStrings {
   inline def georgia: georgia = "georgia".asInstanceOf[georgia]
   
   @js.native
+  sealed trait helvetica extends StObject
+  inline def helvetica: helvetica = "helvetica".asInstanceOf[helvetica]
+  
+  @js.native
   sealed trait impact extends StObject
   inline def impact: impact = "impact".asInstanceOf[impact]
   
   @js.native
   sealed trait `open sans` extends StObject
   inline def `open sans`: `open sans` = ("open sans").asInstanceOf[`open sans`]
+  
+  @js.native
+  sealed trait quantify extends StObject
+  inline def quantify: quantify = "quantify".asInstanceOf[quantify]
   
   @js.native
   sealed trait tahoma extends StObject

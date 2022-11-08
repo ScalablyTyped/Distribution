@@ -4,6 +4,7 @@ import typings.snowflakeSdk.mod.Bind
 import typings.snowflakeSdk.mod.SnowflakeError
 import typings.snowflakeSdk.mod.Statement
 import typings.snowflakeSdk.snowflakeSdkStrings.Boolean
+import typings.snowflakeSdk.snowflakeSdkStrings.Buffer
 import typings.snowflakeSdk.snowflakeSdkStrings.Date
 import typings.snowflakeSdk.snowflakeSdkStrings.JSON
 import typings.snowflakeSdk.snowflakeSdkStrings.Number
@@ -31,7 +32,7 @@ object anon {
       * ### Related Docs
       * - {@link https://docs.snowflake.com/en/user-guide/nodejs-driver-use.html#fetching-data-types-as-strings Fetching Data Types As Strings}
       */
-    var fetchAsString: js.UndefOr[js.Array[String | Boolean | Number | Date | JSON]] = js.undefined
+    var fetchAsString: js.UndefOr[js.Array[String | Boolean | Number | Date | JSON | Buffer]] = js.undefined
     
     var sqlText: java.lang.String
     
@@ -62,11 +63,11 @@ object anon {
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      inline def setFetchAsString(value: js.Array[String | Boolean | Number | Date | JSON]): Self = StObject.set(x, "fetchAsString", value.asInstanceOf[js.Any])
+      inline def setFetchAsString(value: js.Array[String | Boolean | Number | Date | JSON | Buffer]): Self = StObject.set(x, "fetchAsString", value.asInstanceOf[js.Any])
       
       inline def setFetchAsStringUndefined: Self = StObject.set(x, "fetchAsString", js.undefined)
       
-      inline def setFetchAsStringVarargs(value: (String | Boolean | Number | Date | JSON)*): Self = StObject.set(x, "fetchAsString", js.Array(value*))
+      inline def setFetchAsStringVarargs(value: (String | Boolean | Number | Date | JSON | Buffer)*): Self = StObject.set(x, "fetchAsString", js.Array(value*))
       
       inline def setSqlText(value: java.lang.String): Self = StObject.set(x, "sqlText", value.asInstanceOf[js.Any])
       

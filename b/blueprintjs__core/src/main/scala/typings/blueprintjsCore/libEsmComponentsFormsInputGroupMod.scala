@@ -755,6 +755,15 @@ object libEsmComponentsFormsInputGroupMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Name of the HTML tag that contains the input group.
+      *
+      * @default "div"
+      */
+    var tagName: js.UndefOr[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+      ] = js.undefined
+    
     var title: js.UndefOr[String] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -1629,6 +1638,12 @@ object libEsmComponentsFormsInputGroupMod {
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      
+      inline def setTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+      ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

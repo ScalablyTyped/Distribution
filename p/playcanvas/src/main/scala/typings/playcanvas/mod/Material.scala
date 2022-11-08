@@ -207,7 +207,7 @@ open class Material () extends StObject {
     sortedLights: Any,
     viewUniformFormat: Any,
     viewBindGroupFormat: Any
-  ): Any = js.native
+  ): Shader = js.native
   
   var greenWrite: Boolean = js.native
   

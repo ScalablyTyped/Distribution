@@ -12,9 +12,9 @@ trait Eac3Settings extends StObject {
   var AttenuationControl: js.UndefOr[Eac3AttenuationControl] = js.undefined
   
   /**
-    * Specify the average bitrate in bits per second. Valid bitrates depend on the coding mode.
+    * Specify the average bitrate in bits per second. The bitrate that you specify must be a multiple of 8000 within the allowed minimum and maximum values.  Leave blank to use the default bitrate for the coding mode you select according ETSI TS 102 366. Valid bitrates for coding mode 1/0: Default: 96000. Minimum: 32000. Maximum: 3024000. Valid bitrates for coding mode 2/0: Default: 192000. Minimum: 96000. Maximum: 3024000. Valid bitrates for coding mode 3/2: Default: 384000. Minimum: 192000. Maximum: 3024000.
     */
-  var Bitrate: js.UndefOr[integerMin64000Max640000] = js.undefined
+  var Bitrate: js.UndefOr[integerMin32000Max3024000] = js.undefined
   
   /**
     * Specify the bitstream mode for the E-AC-3 stream that the encoder emits. For more information about the EAC3 bitstream mode, see ATSC A/52-2012 (Annex E).
@@ -124,7 +124,7 @@ object Eac3Settings {
     
     inline def setAttenuationControlUndefined: Self = StObject.set(x, "AttenuationControl", js.undefined)
     
-    inline def setBitrate(value: integerMin64000Max640000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: integerMin32000Max3024000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
     inline def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     

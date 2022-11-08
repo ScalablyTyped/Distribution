@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('./system.js').ScriptComponentSystem} ScriptComponentSystem */
+/** @typedef {import('../../script/script-type.js').ScriptType} ScriptType */
 /**
   * The ScriptComponent allows you to extend the functionality of an Entity by attaching your own
   * Script Types defined in JavaScript files to be executed with access to the Entity. For more
@@ -16,8 +17,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @augments Component
   */
+@JSImport("playcanvas", "ScriptComponent")
 @js.native
-trait ScriptComponent extends Component {
+open class ScriptComponent protected () extends Component {
+  /**
+    * Create a new ScriptComponent instance.
+    *
+    * @param {ScriptComponentSystem} system - The ComponentSystem that created this Component.
+    * @param {Entity} entity - The Entity that this Component is attached to.
+    */
+  def this(system: ScriptComponentSystem, entity: Entity) = this()
   
   def _beginLooping(): Boolean = js.native
   

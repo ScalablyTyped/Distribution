@@ -3,13 +3,12 @@ package typings.blueprintjsSelect
 import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.mod.AbstractPureComponent2
 import typings.blueprintjsSelect.anon.Disabled
-import typings.blueprintjsSelect.anon.PartialTagInputProps
+import typings.blueprintjsSelect.anon.PartialOmitTagInputPropsv
 import typings.blueprintjsSelect.libEsmCommonListItemsPropsMod.ListItemsProps
 import typings.blueprintjsSelect.libEsmCommonSelectPopoverPropsMod.SelectPopoverProps
 import typings.blueprintjsSelect.libEsmComponentsQueryListQueryListMod.QueryList
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
-import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
@@ -95,7 +94,6 @@ object libEsmComponentsMultiSelectMultiSelect2Mod {
     
     /**
       * Whether the component should take up the full width of its container.
-      * This overrides `popoverProps.fill` and `tagInputProps.fill`.
       */
     var fill: js.UndefOr[Boolean] = js.native
     
@@ -141,25 +139,22 @@ object libEsmComponentsMultiSelectMultiSelect2Mod {
       */
     var placeholder: js.UndefOr[String] = js.native
     
-    /**
-      * Props to add to the `div` that wraps the TagInput
-      */
-    var popoverTargetProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
-    
     /** Controlled selected values. */
     var selectedItems: js.Array[T] = js.native
     
     /**
-      * Props to spread to `TagInput`.
-      * If you wish to control the value of the input, use `query` and `onQueryChange` instead.
+      * Props to pass to the [TagInput component](##core/components/tag-input).
+      *
+      * Some properties are unavailable:
+      * - `tagInputProps.value`: use `query` instead
+      * - `tagInputProps.onChange`: use `onQueryChange` instead
       *
       * Notes for `tagInputProps.rightElement`:
-      * - you are responsible for disabling any elements you may render here when the overall
-      *   `MultiSelect2` is disabled.
+      * - you are responsible for disabling any elements you may render here when the overall `MultiSelect2` is disabled
       * - if the `onClear` prop is defined, this element will override/replace the default rightElement,
       *   which is a "clear" button that removes all items from the current selection.
       */
-    var tagInputProps: js.UndefOr[PartialTagInputProps] = js.native
+    var tagInputProps: js.UndefOr[PartialOmitTagInputPropsv] = js.native
     
     /** Custom renderer to transform an item into tag content. */
     def tagRenderer(item: T): ReactNode = js.native

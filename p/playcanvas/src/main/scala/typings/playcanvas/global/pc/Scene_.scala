@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('../framework/entity.js').Entity} Entity */
-/** @typedef {import('../graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
-/** @typedef {import('../graphics/texture.js').Texture} Texture */
+/** @typedef {import('../platform/graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
+/** @typedef {import('../platform/graphics/texture.js').Texture} Texture */
 /** @typedef {import('./composition/layer-composition.js').LayerComposition} LayerComposition */
 /** @typedef {import('./layer.js').Layer} Layer */
 /**

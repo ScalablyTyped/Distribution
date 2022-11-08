@@ -1,7 +1,7 @@
 
 # Scala.js typings for ngx-infinite-scroll
 
-Typings are for version 14.0.0
+Typings are for version 14.0.1
 
 ## Library description:
 [![Build Status](https://travis-ci.org/orizens/ngx-infinite-scroll.svg?branch=master)](https://travis-ci.org/orizens/ngx-infinite-scroll) [![Backers on Open Collective](https://opencollective.com/ngx-infinite-scroll/backers/badge.svg)](#backers) [![Sponso

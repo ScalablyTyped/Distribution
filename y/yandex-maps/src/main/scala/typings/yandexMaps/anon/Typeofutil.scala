@@ -10,16 +10,20 @@ trait Typeofutil extends StObject {
   
   var Storage: Instantiable0[typings.yandexMaps.mod.util.Storage]
   
+  val bounds: Typeofbounds
+  
   val cursor: Typeofcursor
 }
 object Typeofutil {
   
-  inline def apply(Storage: Instantiable0[Storage], cursor: Typeofcursor): Typeofutil = {
-    val __obj = js.Dynamic.literal(Storage = Storage.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any])
+  inline def apply(Storage: Instantiable0[Storage], bounds: Typeofbounds, cursor: Typeofcursor): Typeofutil = {
+    val __obj = js.Dynamic.literal(Storage = Storage.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofutil]
   }
   
   extension [Self <: Typeofutil](x: Self) {
+    
+    inline def setBounds(value: Typeofbounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setCursor(value: Typeofcursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

@@ -112,6 +112,8 @@ trait ForwardRenderer extends StObject {
   /** @type {boolean} */
   var clustersDebugRendered: Boolean = js.native
   
+  var cubeMapRotationMatrixId: ScopeId = js.native
+  
   def cull(camera: Any, drawCalls: Any, visibleList: Any): Double = js.native
   
   /**
@@ -177,8 +179,6 @@ trait ForwardRenderer extends StObject {
   def gpuUpdate(drawCalls: Any): Unit = js.native
   
   def initViewBindGroupFormat(): Unit = js.native
-  
-  var library: ProgramLibrary = js.native
   
   var lightColorId: js.Array[Any] = js.native
   
@@ -331,7 +331,7 @@ trait ForwardRenderer extends StObject {
   /**
     * Set up the viewport and the scissor for camera rendering.
     *
-    * @param {Camera} camera - The camera containing the viewport infomation.
+    * @param {Camera} camera - The camera containing the viewport information.
     * @param {RenderTarget} [renderTarget] - The render target. NULL for the default one.
     */
   def setupViewport(camera: Camera): Unit = js.native

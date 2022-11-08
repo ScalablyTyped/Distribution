@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('../../../sound/instance.js').SoundInstance} SoundInstance */
+/** @typedef {import('../../../platform/sound/instance.js').SoundInstance} SoundInstance */
 /** @typedef {import('./system.js').SoundComponentSystem} SoundComponentSystem */
 /**
   * The Sound Component controls playback of {@link Sound}s.

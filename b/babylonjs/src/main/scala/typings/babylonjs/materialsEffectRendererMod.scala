@@ -20,13 +20,11 @@ object materialsEffectRendererMod {
   open class EffectRenderer protected () extends StObject {
     /**
       * Creates an effect renderer
-      * @param _engine the engine to use for rendering
+      * @param engine the engine to use for rendering
       * @param options defines the options of the effect renderer
       */
-    def this(_engine: ThinEngine) = this()
-    def this(_engine: ThinEngine, options: IEffectRendererOptions) = this()
-    
-    /* private */ var _engine: Any = js.native
+    def this(engine: ThinEngine) = this()
+    def this(engine: ThinEngine, options: IEffectRendererOptions) = this()
     
     /* private */ var _fullscreenViewport: Any = js.native
     
@@ -63,6 +61,11 @@ object materialsEffectRendererMod {
     def draw(): Unit = js.native
     
     /**
+      * The engine the effect renderer has been created for.
+      */
+    val engine: ThinEngine = js.native
+    
+    /**
       * renders one or more effects to a specified texture
       * @param effectWrapper the effect to renderer
       * @param outputTexture texture to draw to, if null it will render to the screen.
@@ -81,18 +84,6 @@ object materialsEffectRendererMod {
       */
     def setViewport(): Unit = js.native
     def setViewport(viewport: Viewport): Unit = js.native
-  }
-  /* static members */
-  object EffectRenderer {
-    
-    @JSImport("babylonjs/Materials/effectRenderer", "EffectRenderer")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("babylonjs/Materials/effectRenderer", "EffectRenderer._DefaultOptions")
-    @js.native
-    def _DefaultOptions: Any = js.native
-    inline def _DefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Materials/effectRenderer", "EffectWrapper")

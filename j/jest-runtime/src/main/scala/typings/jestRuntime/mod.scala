@@ -215,6 +215,8 @@ object mod {
     
     /* private */ val _cacheFS: Any = js.native
     
+    /* private */ val _cacheFSBuffer: Any = js.native
+    
     /* private */ val _cjsNamedExports: Any = js.native
     
     /* private */ val _config: Any = js.native
@@ -254,6 +256,8 @@ object mod {
     /* private */ val _globalConfig: Any = js.native
     
     /* private */ var _importCoreModule: Any = js.native
+    
+    /* private */ var _importWasmModule: Any = js.native
     
     /* private */ val _internalModuleRegistry: Any = js.native
     
@@ -375,6 +379,8 @@ object mod {
     
     /* private */ var readFile: Any = js.native
     
+    /* private */ var readFileBuffer: Any = js.native
+    
     def requireActual[T](from: String, moduleName: String): T = js.native
     
     def requireInternalModule[T](from: String): T = js.native
@@ -416,10 +422,10 @@ object mod {
     
     /* private */ var transformFileAsync: Any = js.native
     
-    def unstable_importModule(from: String): js.Promise[Unit] = js.native
-    def unstable_importModule(from: String, moduleName: String): js.Promise[Unit] = js.native
+    def unstable_importModule(from: String): js.Promise[Any | Unit] = js.native
+    def unstable_importModule(from: String, moduleName: String): js.Promise[Any | Unit] = js.native
     
-    def unstable_shouldLoadAsEsm(path: String): Boolean = js.native
+    def unstable_shouldLoadAsEsm(modulePath: String): Boolean = js.native
     
     /* private */ var wrapCodeInModuleWrapper: Any = js.native
   }

@@ -9,7 +9,7 @@ trait CancelQueryRequest extends StObject {
   /**
     * The ARN (or the ID suffix of the ARN) of an event data store on which the specified query is running.
     */
-  var EventDataStore: EventDataStoreArn
+  var EventDataStore: js.UndefOr[EventDataStoreArn] = js.undefined
   
   /**
     * The ID of the query that you want to cancel. The QueryId comes from the response of a StartQuery operation.
@@ -18,14 +18,16 @@ trait CancelQueryRequest extends StObject {
 }
 object CancelQueryRequest {
   
-  inline def apply(EventDataStore: EventDataStoreArn, QueryId: UUID): CancelQueryRequest = {
-    val __obj = js.Dynamic.literal(EventDataStore = EventDataStore.asInstanceOf[js.Any], QueryId = QueryId.asInstanceOf[js.Any])
+  inline def apply(QueryId: UUID): CancelQueryRequest = {
+    val __obj = js.Dynamic.literal(QueryId = QueryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelQueryRequest]
   }
   
   extension [Self <: CancelQueryRequest](x: Self) {
     
     inline def setEventDataStore(value: EventDataStoreArn): Self = StObject.set(x, "EventDataStore", value.asInstanceOf[js.Any])
+    
+    inline def setEventDataStoreUndefined: Self = StObject.set(x, "EventDataStore", js.undefined)
     
     inline def setQueryId(value: UUID): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
   }

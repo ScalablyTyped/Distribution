@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
-import typings.playcanvas.anon.TypeofScriptComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ open class ScriptComponentSystem protected () extends ComponentSystem {
     */
   def this(app: AppBase) = this()
   
-  var ComponentType: TypeofScriptComponent & (Instantiable2[/* system */ ScriptComponentSystem, /* entity */ Entity, ScriptComponent]) = js.native
+  var ComponentType: Instantiable2[/* system */ ScriptComponentSystem, /* entity */ Entity, ScriptComponent] = js.native
   
   var DataType: Instantiable0[ScriptComponentData] = js.native
   

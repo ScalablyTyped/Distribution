@@ -141,7 +141,7 @@ object distDocumentMod {
       * Defaults to a function that prompts the user for password.
       */
     var onPassword: js.UndefOr[
-        js.Function2[/* callback */ js.Function1[/* password */ String, Unit], /* reason */ String, Unit]
+        js.Function2[/* callback */ js.Function1[/* password */ String, Unit], /* reason */ Double, Unit]
       ] = js.undefined
     
     /**
@@ -249,7 +249,7 @@ object distDocumentMod {
       
       inline def setOnLoadSuccessUndefined: Self = StObject.set(x, "onLoadSuccess", js.undefined)
       
-      inline def setOnPassword(value: (/* callback */ js.Function1[/* password */ String, Unit], /* reason */ String) => Unit): Self = StObject.set(x, "onPassword", js.Any.fromFunction2(value))
+      inline def setOnPassword(value: (/* callback */ js.Function1[/* password */ String, Unit], /* reason */ Double) => Unit): Self = StObject.set(x, "onPassword", js.Any.fromFunction2(value))
       
       inline def setOnPasswordUndefined: Self = StObject.set(x, "onPassword", js.undefined)
       

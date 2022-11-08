@@ -3,7 +3,6 @@ package typings.blueprintjsPopover2
 import typings.blueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.blueprintjsCore.libEsmComponentsOverlayOverlayMod.IOverlayableProps
 import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
-import typings.blueprintjsPopover2.anon.PartialModifieranyobject
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.applyStyles
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.arrow
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.computeStyles
@@ -14,8 +13,12 @@ import typings.blueprintjsPopover2.blueprintjsPopover2Strings.offset
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.popperOffsets
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.preventOverflow
 import typings.popperjsCore.libEnumsMod.Boundary
+import typings.popperjsCore.libEnumsMod.ModifierPhases_
 import typings.popperjsCore.libEnumsMod.Placement
 import typings.popperjsCore.libEnumsMod.RootBoundary
+import typings.popperjsCore.libTypesMod.ModifierArguments
+import typings.popperjsCore.libTypesMod.Obj
+import typings.popperjsCore.libTypesMod.State
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
@@ -152,7 +155,7 @@ object libEsmPopover2SharedPropsMod {
       *
       * @see https://popper.js.org/docs/v2/modifiers/#custom-modifiers
       */
-    var modifiersCustom: js.UndefOr[js.Array[PartialModifieranyobject]] = js.undefined
+    var modifiersCustom: js.UndefOr[js.Array[PopperCustomModifer]] = js.undefined
     
     /**
       * Callback invoked in controlled mode when the popover open state *would*
@@ -236,9 +239,16 @@ object libEsmPopover2SharedPropsMod {
       * By default, a `<span>` tag is used so popovers appear as inline-block
       * elements and can be nested in text. Use `<div>` tag for a block element.
       *
-      * Mutually exclusive with renderTarget.
+      * If `fill` is set to `true`, this prop's default value will become `"div"`
+      * instead of `"span"`.
       *
-      * @default "span" ("div" if fill={true})
+      * Note that _not all HTML tags are supported_; you will need to make sure
+      * the tag you choose supports the HTML attributes Popover2 applies to the
+      * target element.
+      *
+      * This prop is mutually exclusive with the `renderTarget` API.
+      *
+      * @default "span" ("div" if `fill={true}`)
       */
     var targetTagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
@@ -305,11 +315,11 @@ object libEsmPopover2SharedPropsMod {
       
       inline def setModifiers(value: PopperModifierOverrides): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      inline def setModifiersCustom(value: js.Array[PartialModifieranyobject]): Self = StObject.set(x, "modifiersCustom", value.asInstanceOf[js.Any])
+      inline def setModifiersCustom(value: js.Array[PopperCustomModifer]): Self = StObject.set(x, "modifiersCustom", value.asInstanceOf[js.Any])
       
       inline def setModifiersCustomUndefined: Self = StObject.set(x, "modifiersCustom", js.undefined)
       
-      inline def setModifiersCustomVarargs(value: PartialModifieranyobject*): Self = StObject.set(x, "modifiersCustom", js.Array(value*))
+      inline def setModifiersCustomVarargs(value: PopperCustomModifer*): Self = StObject.set(x, "modifiersCustom", js.Array(value*))
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
@@ -389,6 +399,78 @@ object libEsmPopover2SharedPropsMod {
   type Popover2SharedProps[T] = IPopover2SharedProps[T]
   
   type Popover2TargetProps = IPopover2TargetProps
+  
+  /* Inlined std.Partial<@popperjs/core.@popperjs/core.Modifier<any, object>> */
+  trait PopperCustomModifer extends StObject {
+    
+    var data: js.UndefOr[Obj] = js.undefined
+    
+    var effect: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[js.Object], js.Function0[Unit] | Unit]] = js.undefined
+    
+    var enabled: js.UndefOr[Boolean] = js.undefined
+    
+    var fn: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[js.Object], State | Unit]] = js.undefined
+    
+    var name: js.UndefOr[Any] = js.undefined
+    
+    var options: js.UndefOr[Partial[js.Object]] = js.undefined
+    
+    var phase: js.UndefOr[ModifierPhases_] = js.undefined
+    
+    var requires: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var requiresIfExists: js.UndefOr[js.Array[String]] = js.undefined
+  }
+  object PopperCustomModifer {
+    
+    inline def apply(): PopperCustomModifer = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PopperCustomModifer]
+    }
+    
+    extension [Self <: PopperCustomModifer](x: Self) {
+      
+      inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setEffect(value: /* arg0 */ ModifierArguments[js.Object] => js.Function0[Unit] | Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
+      
+      inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setFn(value: /* arg0 */ ModifierArguments[js.Object] => State | Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+      
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      
+      inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setOptions(value: Partial[js.Object]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      
+      inline def setPhase(value: ModifierPhases_): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+      
+      inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
+      
+      inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      
+      inline def setRequiresIfExists(value: js.Array[String]): Self = StObject.set(x, "requiresIfExists", value.asInstanceOf[js.Any])
+      
+      inline def setRequiresIfExistsUndefined: Self = StObject.set(x, "requiresIfExists", js.undefined)
+      
+      inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value*))
+      
+      inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
+      
+      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value*))
+    }
+  }
   
   type PopperModifierOverrides = Partial[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any

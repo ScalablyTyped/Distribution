@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "strong-error-handler" : "4.0.0"
+      "strong-error-handler" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "strong-error-handler" : "4.0.0"
+      "strong-error-handler" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

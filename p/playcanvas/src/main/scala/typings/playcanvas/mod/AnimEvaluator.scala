@@ -11,8 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @ignore
   */
+@JSImport("playcanvas", "AnimEvaluator")
 @js.native
-trait AnimEvaluator extends StObject {
+open class AnimEvaluator protected () extends StObject {
+  /**
+    * Create a new animation evaluator.
+    *
+    * @param {AnimBinder} binder - interface resolves curve paths to instances of {@link AnimTarget}.
+    */
+  def this(binder: AnimBinder) = this()
   
   var _binder: AnimBinder = js.native
   

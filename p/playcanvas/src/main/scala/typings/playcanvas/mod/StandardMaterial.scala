@@ -152,12 +152,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} clearCoatBumpiness The bumpiness of the clear coat layer. This value scales
   * the assigned main clear coat normal map. It should be normally between 0 (no bump mapping) and 1
   * (full bump mapping), but can be set to e.g. 2 to give even more pronounced bump effect.
+  * @property {boolean} useIridescence Enable thin-film iridescence.
+  * @property {Texture|null} iridescenceMap The per-pixel iridescence intensity. Only used when
+  * useIridescence is enabled.
+  * @property {number} iridescenceMapUv Iridescence map UV channel.
+  * @property {Vec2} iridescenceMapTiling Controls the 2D tiling of the iridescence map.
+  * @property {Vec2} iridescenceMapOffset Controls the 2D offset of the iridescence map. Each component is
+  * between 0 and 1.
+  * @property {number} iridescenceMapRotation Controls the 2D rotation (in degrees) of the iridescence
+  * map.
+  * @property {string} iridescenceMapChannel Color channels of the iridescence map to use. Can be "r",
+  * "g", "b" or "a".
+  * @property {Texture|null} iridescenceThicknessMap The per-pixel iridescence thickness. Defines a
+  * gradient weight between iridescenceThicknessMin and iridescenceThicknessMax. Only used when
+  * useIridescence is enabled.
+  * @property {number} iridescenceThicknessMapUv Iridescence thickness map UV channel.
+  * @property {Vec2} iridescenceThicknessMapTiling Controls the 2D tiling of the iridescence
+  * thickness map.
+  * @property {Vec2} iridescenceThicknessMapOffset Controls the 2D offset of the iridescence
+  * thickness map. Each component is between 0 and 1.
+  * @property {number} iridescenceThicknessMapRotation Controls the 2D rotation (in degrees)
+  * of the iridescence map.
+  * @property {string} iridescenceThicknessMapChannel Color channels of the iridescence thickness
+  * map to use. Can be "r", "g", "b" or "a".
+  * @property {number} iridescenceThicknessMin The minimum thickness for the iridescence layer.
+  * Only used when an iridescence thickness map is used. The unit is in nm.
+  * @property {number} iridescenceThicknessMax The maximum thickness for the iridescence layer.
+  * Used as the 'base' thickness when no iridescence thickness map is defined. The unit is in nm.
+  * @property {number} iridescenceRefractionIndex The index of refraction of the iridescent
+  * thin-film. Affects the color phase shift as described here:
+  * https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_materials_iridescence
   * @property {boolean} useMetalness Use metalness properties instead of specular. When enabled,
   * diffuse colors also affect specular instead of the dedicated specular map. This can be used as
   * alternative to specular color to save space. With metaless == 0, the pixel is assumed to be
   * dielectric, and diffuse color is used as normal. With metaless == 1, the pixel is fully
   * metallic, and diffuse color is used as specular color instead.
-  * @property {boolean} useMetalnessSpecularColor When metalness is enabled, use the specular map to apply color tint to specular reflections
+  * @property {boolean} useMetalnessSpecularColor When metalness is enabled, use the
+  * specular map to apply color tint to specular reflections.
   * at direct angles.
   * @property {number} metalness Defines how much the surface is metallic. From 0 (dielectric) to 1
   * (metal).
@@ -196,12 +227,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {Texture|null} refractionMap The map of the refraction visibility.
   * @property {number} refractionMapUv Refraction map UV channel.
   * @property {Vec2} refractionMapTiling Controls the 2D tiling of the refraction map.
-  * @property {Vec2} refractionMapOffset Controls the 2D offset of the refraction map. Each component is
-  * between 0 and 1.
+  * @property {Vec2} refractionMapOffset Controls the 2D offset of the refraction map. Each component
+  * is between 0 and 1.
   * @property {number} refractionMapRotation Controls the 2D rotation (in degrees) of the emissive
   * map.
   * @property {string} refractionMapChannel Color channels of the refraction map to use. Can be "r",
   * "g", "b", "a", "rgb" or any swizzled combination.
+  * @property {boolean} refractionVertexColor Use mesh vertex colors for refraction. If
+  * refraction map is set, it will be be multiplied by vertex colors.
+  * @property {boolean} refractionVertexColorChannel Vertex color channel to use for refraction.
+  * Can be "r", "g", "b" or "a".
   * @property {number} refractionIndex Defines the index of refraction, i.e. The amount of
   * distortion. The value is calculated as (outerIor / surfaceIor), where inputs are measured
   * indices of refraction, the one around the object and the one of its own surface. In most
@@ -209,6 +244,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (1.0 / surfaceIor).
   * @property {boolean} useDynamicRefraction Enables higher quality refractions using the grab pass
   * instead of pre-computed cube maps for refractions.
+  * @property {number} thickness The thickness of the medium, only used when useDynamicRefraction
+  * is enabled. The unit is in base units, and scales with the size of the object.
+  * @property {Texture|null} thicknessMap The per-pixel thickness of the medium, only used when
+  * useDynamicRefraction is enabled.
+  * @property {number} thicknessMapUv Thickness map UV channel.
+  * @property {Vec2} thicknessMapTiling Controls the 2D tiling of the thickness map.
+  * @property {Vec2} thicknessMapOffset Controls the 2D offset of the thickness map. Each component is
+  * between 0 and 1.
+  * @property {number} thicknessMapRotation Controls the 2D rotation (in degrees) of the thickness
+  * map.
+  * @property {string} thicknessMapChannel Color channels of the thickness map to use. Can be "r",
+  * "g", "b" or "a".
+  * @property {boolean} thicknessVertexColor Use mesh vertex colors for thickness. If
+  * thickness map is set, it will be be multiplied by vertex colors.
+  * @property {Color} attenuation The attenuation color for refractive materials, only used when
+  * useDynamicRefraction is enabled.
+  * @property {number} attenuationDistance The distance defining the absorption rate of light
+  * within the medium. Only used when useDynamicRefraction is enabled.
   * @property {Color} emissive The emissive color of the material. This color value is 3-component
   * (RGB), where each component is between 0 and 1.
   * @property {boolean} emissiveTint Multiply emissive map and/or emissive vertex color by the
@@ -229,10 +282,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {string} emissiveVertexColorChannel Vertex color channels to use for emission. Can be
   * "r", "g", "b", "a", "rgb" or any swizzled combination.
   * @property {boolean} useSheen Toggle sheen specular effect on/off.
-  * @property {Color} sheen The specular color of the sheen (fabric) microfiber structure. This color value is 3-component
-  * (RGB), where each component is between 0 and 1.
-  * @property {boolean} sheenTint Multiply sheen map and/or sheen vertex color by the constant sheen value.
-  * @property {Texture|null} sheenMap The sheen microstructure color map of the material (default is null).
+  * @property {Color} sheen The specular color of the sheen (fabric) microfiber structure.
+  * This color value is 3-component (RGB), where each component is between 0 and 1.
+  * @property {boolean} sheenTint Multiply sheen map and/or sheen vertex color by the constant
+  * sheen value.
+  * @property {Texture|null} sheenMap The sheen microstructure color map of the material
+  * (default is null).
   * @property {number} sheenMapUv Sheen map UV channel.
   * @property {Vec2} sheenMapTiling Controls the 2D tiling of the sheen map.
   * @property {Vec2} sheenMapOffset Controls the 2D offset of the sheen map. Each component is
@@ -241,18 +296,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * map.
   * @property {string} sheenMapChannel Color channels of the sheen map to use. Can be "r",
   * "g", "b", "a", "rgb" or any swizzled combination.
-  * @property {number} sheenGlossiness The glossiness of the sheen (fabric) microfiber structure. This color value is 3-component
-  * (RGB), where each component is between 0 and 1.
-  * @property {boolean} sheenGlossinessTint Multiply sheen glossiness map and/or sheen glossiness vertex value by the scalar sheen glossiness value.
-  * @property {Texture|null} sheenGlossinessMap The sheen glossiness microstructure color map of the material (default is null).
-  * @property {number} sheenGlossinessMapUv Sheen map UV channel.
-  * @property {Vec2} sheenGlossinessMapTiling Controls the 2D tiling of the sheen glossiness map.
-  * @property {Vec2} sheenGlossinessMapOffset Controls the 2D offset of the sheen glossiness map. Each component is
-  * between 0 and 1.
-  * @property {number} sheenGlossinessMapRotation Controls the 2D rotation (in degrees) of the sheen glossiness
-  * map.
-  * @property {string} sheenGlossinessMapChannel Color channels of the sheen glossiness map to use. Can be "r",
-  * "g", "b", "a", "rgb" or any swizzled combination.
+  * @property {boolean} sheenVertexColor Use mesh vertex colors for sheen. If sheen map or
+  * sheen tint are set, they'll be multiplied by vertex colors.
+  * @property {number} sheenGloss The glossiness of the sheen (fabric) microfiber structure.
+  * This color value is 3-component (RGB), where each component is between 0 and 1.
+  * @property {boolean} sheenGlossTint Multiply sheen glossiness map and/or sheen glossiness vertex
+  * value by the scalar sheen glossiness value.
+  * @property {Texture|null} sheenGlossMap The sheen glossiness microstructure color map of the
+  * material (default is null).
+  * @property {number} sheenGlossMapUv Sheen map UV channel.
+  * @property {Vec2} sheenGlossMapTiling Controls the 2D tiling of the sheen glossiness map.
+  * @property {Vec2} sheenGlossMapOffset Controls the 2D offset of the sheen glossiness map.
+  * Each component is between 0 and 1.
+  * @property {number} sheenGlossMapRotation Controls the 2D rotation (in degrees) of the sheen
+  * glossiness map.
+  * @property {string} sheenGlossMapChannel Color channels of the sheen glossiness map to use.
+  * Can be "r", "g", "b", "a", "rgb" or any swizzled combination.
+  * @property {boolean} sheenGlossVertexColor Use mesh vertex colors for sheen glossiness.
+  * If sheen glossiness map or sheen glosiness tint are set, they'll be multiplied by vertex colors.
+  * @property {string} sheenGlossVertexColorChannel Vertex color channels to use for sheen glossiness.
+  * Can be "r", "g", "b" or "a".
   * @property {number} opacity The opacity of the material. This value can be between 0 and 1, where
   * 0 is fully transparent and 1 is fully opaque. If you want the material to be semi-transparent
   * you also need to set the {@link Material#blendType} to {@link BLEND_NORMAL},

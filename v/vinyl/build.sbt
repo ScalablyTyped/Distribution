@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vinyl"
-version := "2.0-dt-20220819Z-1f7813"
+version := "2.0-dt-20221107Z-1f7813"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

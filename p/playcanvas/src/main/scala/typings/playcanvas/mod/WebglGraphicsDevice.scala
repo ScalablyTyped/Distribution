@@ -520,14 +520,6 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   def readPixels(x: Double, y: Double, w: Double, h: Double, pixels: js.typedarray.ArrayBufferView): Unit = js.native
   
   /**
-    * Removes a shader from the cache.
-    *
-    * @param {Shader} shader - The shader to remove from the cache.
-    * @ignore
-    */
-  def removeShaderFromCache(shader: Shader): Unit = js.native
-  
-  /**
     * Called when the WebGL context is restored. It reinitializes all context related resources.
     *
     * @ignore

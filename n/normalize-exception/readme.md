@@ -1,7 +1,7 @@
 
 # Scala.js typings for normalize-exception
 
-Typings are for version 2.8.1
+Typings are for version 2.10.0
 
 ## Library description:
 Normalize exceptions/errors

@@ -20,6 +20,11 @@ trait Subnet extends StObject {
     * The outpost ARN of the subnet.
     */
   var SubnetOutpost: js.UndefOr[typings.awsSdk.clientsElasticacheMod.SubnetOutpost] = js.undefined
+  
+  /**
+    * Either ipv4 | ipv6 | dual_stack. IPv6 is supported for workloads using Redis engine version 6.2 onward or Memcached engine version 1.6.6 on all instances built on the Nitro system.
+    */
+  var SupportedNetworkTypes: js.UndefOr[NetworkTypeList] = js.undefined
 }
 object Subnet {
   
@@ -41,5 +46,11 @@ object Subnet {
     inline def setSubnetOutpost(value: SubnetOutpost): Self = StObject.set(x, "SubnetOutpost", value.asInstanceOf[js.Any])
     
     inline def setSubnetOutpostUndefined: Self = StObject.set(x, "SubnetOutpost", js.undefined)
+    
+    inline def setSupportedNetworkTypes(value: NetworkTypeList): Self = StObject.set(x, "SupportedNetworkTypes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedNetworkTypesUndefined: Self = StObject.set(x, "SupportedNetworkTypes", js.undefined)
+    
+    inline def setSupportedNetworkTypesVarargs(value: NetworkType*): Self = StObject.set(x, "SupportedNetworkTypes", js.Array(value*))
   }
 }

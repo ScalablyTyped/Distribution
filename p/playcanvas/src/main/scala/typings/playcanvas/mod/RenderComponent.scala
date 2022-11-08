@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('../../../scene/materials/material.js').Material} Material */
-/** @typedef {import('../../../shape/bounding-box.js').BoundingBox} BoundingBox */
+/** @typedef {import('../../../core/shape/bounding-box.js').BoundingBox} BoundingBox */
 /** @typedef {import('../../entity.js').Entity} Entity */
 /** @typedef {import('./system.js').RenderComponentSystem} RenderComponentSystem */
 /**

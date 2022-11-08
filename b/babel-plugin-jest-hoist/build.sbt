@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "babel-plugin-jest-hoist"
-version := "29.2.0-f8b3a5"
+version := "29.2.0-937500"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-a9564c",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-efd9cc",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-412870",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.2-663c13",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-3ac905",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.3-021aec",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-744489",
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-b54012",
   "org.scalablytyped" %%% "babel__types" % "7.20.2-5a1686",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

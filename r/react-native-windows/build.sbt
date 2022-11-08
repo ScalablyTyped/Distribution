@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-windows"
-version := "0.70.4-35ba2e"
+version := "0.70.5-3006ad"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for js2xmlparser
 
-Typings are for version 4.0.2
+Typings are for version 5.0.0
 
 ## Library description:
 Parses JavaScript objects into XML

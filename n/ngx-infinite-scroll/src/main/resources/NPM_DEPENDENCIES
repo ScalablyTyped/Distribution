@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ngx-infinite-scroll" : "14.0.0"
+      "ngx-infinite-scroll" : "14.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ngx-infinite-scroll" : "14.0.0"
+      "ngx-infinite-scroll" : "14.0.1"
     }
   ],
   "compile-devDependencies" : [

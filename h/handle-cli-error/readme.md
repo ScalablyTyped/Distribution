@@ -1,7 +1,7 @@
 
 # Scala.js typings for handle-cli-error
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 
 

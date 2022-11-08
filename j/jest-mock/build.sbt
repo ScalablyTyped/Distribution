@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-mock"
-version := "29.2.2-3122f1"
+version := "29.3.0-25578a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

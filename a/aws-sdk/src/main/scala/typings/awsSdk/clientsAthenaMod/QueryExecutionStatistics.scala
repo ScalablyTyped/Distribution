@@ -32,6 +32,11 @@ trait QueryExecutionStatistics extends StObject {
   var QueryQueueTimeInMillis: js.UndefOr[Long] = js.undefined
   
   /**
+    * Contains information about whether previous query results were reused for the query.
+    */
+  var ResultReuseInformation: js.UndefOr[typings.awsSdk.clientsAthenaMod.ResultReuseInformation] = js.undefined
+  
+  /**
     * The number of milliseconds that Athena took to finalize and publish the query results after the query engine finished running the query.
     */
   var ServiceProcessingTimeInMillis: js.UndefOr[Long] = js.undefined
@@ -69,6 +74,10 @@ object QueryExecutionStatistics {
     inline def setQueryQueueTimeInMillis(value: Long): Self = StObject.set(x, "QueryQueueTimeInMillis", value.asInstanceOf[js.Any])
     
     inline def setQueryQueueTimeInMillisUndefined: Self = StObject.set(x, "QueryQueueTimeInMillis", js.undefined)
+    
+    inline def setResultReuseInformation(value: ResultReuseInformation): Self = StObject.set(x, "ResultReuseInformation", value.asInstanceOf[js.Any])
+    
+    inline def setResultReuseInformationUndefined: Self = StObject.set(x, "ResultReuseInformation", js.undefined)
     
     inline def setServiceProcessingTimeInMillis(value: Long): Self = StObject.set(x, "ServiceProcessingTimeInMillis", value.asInstanceOf[js.Any])
     

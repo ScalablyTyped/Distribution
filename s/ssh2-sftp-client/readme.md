@@ -1,7 +1,7 @@
 
 # Scala.js typings for ssh2-sftp-client
 
-Typings are for version 7.1
+Typings are for version 9.0
 
 ## Library description:
 ssh2 sftp client for node

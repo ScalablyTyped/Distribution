@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "keycloak-connect" : "20.0.0"
+      "keycloak-connect" : "20.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "keycloak-connect" : "20.0.0"
+      "keycloak-connect" : "20.0.1"
     }
   ],
   "compile-devDependencies" : [

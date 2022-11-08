@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../framework/app-base.js').AppBase} AppBase */
+/** @typedef {import('../../framework/app-base.js').AppBase} AppBase */
 /** @typedef {import('./handler.js').ResourceHandler} ResourceHandler */
 /**
   * Resource handler for loading JavaScript files dynamically.  Two types of JavaScript files can be
@@ -13,10 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @implements {ResourceHandler}
   */
+@JSImport("playcanvas", "ScriptHandler")
 @js.native
-trait ScriptHandler
+open class ScriptHandler protected ()
   extends StObject
      with ResourceHandler {
+  /**
+    * Create a new ScriptHandler instance.
+    *
+    * @param {AppBase} app - The running {@link AppBase}.
+    * @hideconstructor
+    */
+  def this(app: AppBase) = this()
   
   var _app: AppBase = js.native
   

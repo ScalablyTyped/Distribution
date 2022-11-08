@@ -15,6 +15,7 @@ import typings.yandexMaps.mod.control.IListBoxParameters
 import typings.yandexMaps.mod.control.IManagerOptions
 import typings.yandexMaps.mod.control.IRouteButtonParameters
 import typings.yandexMaps.mod.control.IRouteEditorParameters
+import typings.yandexMaps.mod.control.IRoutePanelParameters
 import typings.yandexMaps.mod.control.IRulerControlParameters
 import typings.yandexMaps.mod.control.ISearchControlParameters
 import typings.yandexMaps.mod.control.ITypeSelectorParameters
@@ -24,6 +25,7 @@ import typings.yandexMaps.mod.control.ListBoxItem
 import typings.yandexMaps.mod.control.Manager
 import typings.yandexMaps.mod.control.RouteButton
 import typings.yandexMaps.mod.control.RouteEditor
+import typings.yandexMaps.mod.control.RoutePanel
 import typings.yandexMaps.mod.control.RulerControl
 import typings.yandexMaps.mod.control.SearchControl
 import typings.yandexMaps.mod.control.TypeSelector
@@ -76,6 +78,11 @@ trait Typeofcontrol extends StObject {
     typings.yandexMaps.mod.control.RouteEditor
   ]
   
+  var RoutePanel: Instantiable1[
+    /* parameters */ js.UndefOr[IRoutePanelParameters], 
+    typings.yandexMaps.mod.control.RoutePanel
+  ]
+  
   var RulerControl: Instantiable1[
     /* parameters */ js.UndefOr[IRulerControlParameters], 
     typings.yandexMaps.mod.control.RulerControl
@@ -112,12 +119,13 @@ object Typeofcontrol {
     ],
     RouteButton: Instantiable1[/* parameters */ js.UndefOr[IRouteButtonParameters], RouteButton],
     RouteEditor: Instantiable1[/* parameters */ js.UndefOr[IRouteEditorParameters], RouteEditor],
+    RoutePanel: Instantiable1[/* parameters */ js.UndefOr[IRoutePanelParameters], RoutePanel],
     RulerControl: Instantiable1[/* parameters */ js.UndefOr[IRulerControlParameters], RulerControl],
     SearchControl: Instantiable1[/* parameters */ js.UndefOr[ISearchControlParameters], SearchControl],
     TypeSelector: Instantiable1[/* parameters */ js.UndefOr[ITypeSelectorParameters], TypeSelector],
     ZoomControl: Instantiable1[/* parameters */ js.UndefOr[IZoomControlParameters], ZoomControl]
   ): Typeofcontrol = {
-    val __obj = js.Dynamic.literal(Button = Button.asInstanceOf[js.Any], FullscreenControl = FullscreenControl.asInstanceOf[js.Any], GeolocationControl = GeolocationControl.asInstanceOf[js.Any], ListBox = ListBox.asInstanceOf[js.Any], ListBoxItem = ListBoxItem.asInstanceOf[js.Any], Manager = Manager.asInstanceOf[js.Any], RouteButton = RouteButton.asInstanceOf[js.Any], RouteEditor = RouteEditor.asInstanceOf[js.Any], RulerControl = RulerControl.asInstanceOf[js.Any], SearchControl = SearchControl.asInstanceOf[js.Any], TypeSelector = TypeSelector.asInstanceOf[js.Any], ZoomControl = ZoomControl.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Button = Button.asInstanceOf[js.Any], FullscreenControl = FullscreenControl.asInstanceOf[js.Any], GeolocationControl = GeolocationControl.asInstanceOf[js.Any], ListBox = ListBox.asInstanceOf[js.Any], ListBoxItem = ListBoxItem.asInstanceOf[js.Any], Manager = Manager.asInstanceOf[js.Any], RouteButton = RouteButton.asInstanceOf[js.Any], RouteEditor = RouteEditor.asInstanceOf[js.Any], RoutePanel = RoutePanel.asInstanceOf[js.Any], RulerControl = RulerControl.asInstanceOf[js.Any], SearchControl = SearchControl.asInstanceOf[js.Any], TypeSelector = TypeSelector.asInstanceOf[js.Any], ZoomControl = ZoomControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofcontrol]
   }
   
@@ -147,6 +155,8 @@ object Typeofcontrol {
     inline def setRouteButton(value: Instantiable1[/* parameters */ js.UndefOr[IRouteButtonParameters], RouteButton]): Self = StObject.set(x, "RouteButton", value.asInstanceOf[js.Any])
     
     inline def setRouteEditor(value: Instantiable1[/* parameters */ js.UndefOr[IRouteEditorParameters], RouteEditor]): Self = StObject.set(x, "RouteEditor", value.asInstanceOf[js.Any])
+    
+    inline def setRoutePanel(value: Instantiable1[/* parameters */ js.UndefOr[IRoutePanelParameters], RoutePanel]): Self = StObject.set(x, "RoutePanel", value.asInstanceOf[js.Any])
     
     inline def setRulerControl(value: Instantiable1[/* parameters */ js.UndefOr[IRulerControlParameters], RulerControl]): Self = StObject.set(x, "RulerControl", value.asInstanceOf[js.Any])
     

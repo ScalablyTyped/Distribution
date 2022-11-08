@@ -31,6 +31,10 @@ object playcanvasStrings {
   inline def `1Dot57`: `1Dot57` = "1.57".asInstanceOf[`1Dot57`]
   
   @js.native
+  sealed trait `1Dot58` extends StObject
+  inline def `1Dot58`: `1Dot58` = "1.58".asInstanceOf[`1Dot58`]
+  
+  @js.native
   sealed trait `1d` extends StObject
   inline def `1d`: `1d` = "1d".asInstanceOf[`1d`]
   

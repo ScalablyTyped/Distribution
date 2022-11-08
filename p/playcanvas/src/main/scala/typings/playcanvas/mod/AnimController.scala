@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../core/event-handler.js').EventHandler} EventHandler */
+/** @typedef {import('../../../core/event-handler.js').EventHandler} EventHandler */
 /** @typedef {import('../evaluator/anim-evaluator.js').AnimEvaluator} AnimEvaluator */
 /**
   * The AnimController manages the animations for its entity, based on the provided state graph and

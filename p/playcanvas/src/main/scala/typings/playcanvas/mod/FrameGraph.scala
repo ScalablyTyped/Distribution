@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../graphics/render-pass.js').RenderPass} RenderPass */
-/** @typedef {import('../graphics/render-target.js').RenderTarget} RenderTarget */
-/** @typedef {import('../graphics/texture.js').Texture} Texture */
+/** @typedef {import('../platform/graphics/render-pass.js').RenderPass} RenderPass */
+/** @typedef {import('../platform/graphics/render-target.js').RenderTarget} RenderTarget */
+/** @typedef {import('../platform/graphics/texture.js').Texture} Texture */
 /**
   * A frame graph represents a single rendering frame as a sequence of render passes.
   *

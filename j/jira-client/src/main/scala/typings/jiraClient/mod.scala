@@ -896,6 +896,9 @@ object mod {
       * @param [maxResults=1000] - optional ending index number
       */
     def getIssueWorklogs(issueId: String): js.Promise[JsonResponse] = js.native
+    def getIssueWorklogs(issueId: String, startAt: Double): js.Promise[JsonResponse] = js.native
+    def getIssueWorklogs(issueId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
+    def getIssueWorklogs(issueId: String, startAt: Unit, maxResults: Double): js.Promise[JsonResponse] = js.native
     
     /**
       * Get issues for backlog

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jira-client"
-version := "7.1-dt-20220116Z-2bcffc"
+version := "7.1-dt-20221107Z-f425e2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

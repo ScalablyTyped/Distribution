@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-error-instance" : "1.1.0"
+      "is-error-instance" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-error-instance" : "1.1.0"
+      "is-error-instance" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

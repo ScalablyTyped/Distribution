@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "strong-error-handler"
-version := "4.0.0-32d61a"
+version := "4.0.1-738d51"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

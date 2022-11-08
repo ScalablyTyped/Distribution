@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/fake-timers" : "29.2.2"
+      "@jest/fake-timers" : "29.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/fake-timers" : "29.2.2"
+      "@jest/fake-timers" : "29.3.0"
     }
   ],
   "compile-devDependencies" : [

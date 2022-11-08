@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "casperjs"
-version := "1.1-dt-20211202Z-aabe42"
+version := "1.1-dt-20221107Z-aabe42"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -73,6 +73,8 @@ trait Light extends StObject {
   
   var _outerConeAngleCos: Double = js.native
   
+  var _outerConeAngleSin: Double = js.native
+  
   var _position: Vec3 = js.native
   
   var _renderData: js.Array[Any] = js.native
@@ -96,6 +98,8 @@ trait Light extends StObject {
   var _type: Double = js.native
   
   def _updateFinalColor(): Unit = js.native
+  
+  def _updateOuterAngle(angle: Any): Unit = js.native
   
   var _usePhysicalUnits: Any = js.native
   

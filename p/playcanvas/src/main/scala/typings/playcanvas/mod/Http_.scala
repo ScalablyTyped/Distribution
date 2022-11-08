@@ -27,6 +27,8 @@ trait Http_ extends StObject {
   
   def _isBinaryContentType(contentType: Any): Boolean = js.native
   
+  def _isBinaryResponseType(responseType: Any): Boolean = js.native
+  
   def _onError(method: Any, url: Any, options: Any, xhr: Any): Unit = js.native
   
   def _onReadyStateChange(method: Any, url: Any, options: Any, xhr: Any): Unit = js.native

@@ -14,6 +14,8 @@ trait Animatable extends StObject {
   
   /* private */ var _frameToSyncFromJump: Any = js.native
   
+  /* private */ var _goToFrame: Any = js.native
+  
   /* private */ var _localDelayOffset: Any = js.native
   
   /* private */ var _manualJumpDelay: Any = js.native

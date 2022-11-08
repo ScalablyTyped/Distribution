@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceRequirements extends StObject {
   
   /**
-    * The minimum and maximum number of accelerators (GPUs, FPGAs, or Amazon Web Services Inferentia chips) for an instance type. To exclude accelerator-enabled instance types, set Max to 0. Default: No minimum or maximum
+    * The minimum and maximum number of accelerators (GPUs, FPGAs, or Amazon Web Services Inferentia chips) for an instance type. To exclude accelerator-enabled instance types, set Max to 0. Default: No minimum or maximum limits
     */
   var AcceleratorCount: js.UndefOr[AcceleratorCountRequest] = js.undefined
   
@@ -22,7 +22,7 @@ trait InstanceRequirements extends StObject {
   var AcceleratorNames: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.AcceleratorNames] = js.undefined
   
   /**
-    * The minimum and maximum total memory size for the accelerators on an instance type, in MiB. Default: No minimum or maximum
+    * The minimum and maximum total memory size for the accelerators on an instance type, in MiB. Default: No minimum or maximum limits
     */
   var AcceleratorTotalMemoryMiB: js.UndefOr[AcceleratorTotalMemoryMiBRequest] = js.undefined
   
@@ -32,12 +32,17 @@ trait InstanceRequirements extends StObject {
   var AcceleratorTypes: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.AcceleratorTypes] = js.undefined
   
   /**
+    * The instance types to apply your specified attributes against. All other instance types are ignored, even if they match your specified attributes. You can use strings with one or more wild cards, represented by an asterisk (*), to allow an instance type, size, or generation. The following are examples: m5.8xlarge, c5*.*, m5a.*, r*, *3*. For example, if you specify c5*, Amazon EC2 Auto Scaling will allow the entire C5 instance family, which includes all C5a and C5n instance types. If you specify m5a.*, Amazon EC2 Auto Scaling will allow all the M5a instance types, but not the M5n instance types.  If you specify AllowedInstanceTypes, you can't specify ExcludedInstanceTypes.  Default: All instance types
+    */
+  var AllowedInstanceTypes: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.AllowedInstanceTypes] = js.undefined
+  
+  /**
     * Indicates whether bare metal instance types are included, excluded, or required. Default: excluded 
     */
   var BareMetal: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.BareMetal] = js.undefined
   
   /**
-    * The minimum and maximum baseline bandwidth performance for an instance type, in Mbps. For more information, see Amazon EBS–optimized instances in the Amazon EC2 User Guide for Linux Instances. Default: No minimum or maximum
+    * The minimum and maximum baseline bandwidth performance for an instance type, in Mbps. For more information, see Amazon EBS–optimized instances in the Amazon EC2 User Guide for Linux Instances. Default: No minimum or maximum limits
     */
   var BaselineEbsBandwidthMbps: js.UndefOr[BaselineEbsBandwidthMbpsRequest] = js.undefined
   
@@ -52,7 +57,7 @@ trait InstanceRequirements extends StObject {
   var CpuManufacturers: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.CpuManufacturers] = js.undefined
   
   /**
-    * Lists which instance types to exclude. You can use strings with one or more wild cards, represented by an asterisk (*). The following are examples: c5*, m5a.*, r*, *3*.  For example, if you specify c5*, you are excluding the entire C5 instance family, which includes all C5a and C5n instance types. If you specify m5a.*, you are excluding all the M5a instance types, but not the M5n instance types. Default: No excluded instance types
+    * The instance types to exclude. You can use strings with one or more wild cards, represented by an asterisk (*), to exclude an instance family, type, size, or generation. The following are examples: m5.8xlarge, c5*.*, m5a.*, r*, *3*.  For example, if you specify c5*, you are excluding the entire C5 instance family, which includes all C5a and C5n instance types. If you specify m5a.*, Amazon EC2 Auto Scaling will exclude all the M5a instance types, but not the M5n instance types.  If you specify ExcludedInstanceTypes, you can't specify AllowedInstanceTypes.  Default: No excluded instance types
     */
   var ExcludedInstanceTypes: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.ExcludedInstanceTypes] = js.undefined
   
@@ -72,7 +77,7 @@ trait InstanceRequirements extends StObject {
   var LocalStorageTypes: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.LocalStorageTypes] = js.undefined
   
   /**
-    * The minimum and maximum amount of memory per vCPU for an instance type, in GiB. Default: No minimum or maximum
+    * The minimum and maximum amount of memory per vCPU for an instance type, in GiB. Default: No minimum or maximum limits
     */
   var MemoryGiBPerVCpu: js.UndefOr[MemoryGiBPerVCpuRequest] = js.undefined
   
@@ -82,7 +87,12 @@ trait InstanceRequirements extends StObject {
   var MemoryMiB: MemoryMiBRequest
   
   /**
-    * The minimum and maximum number of network interfaces for an instance type. Default: No minimum or maximum
+    * The minimum and maximum amount of network bandwidth, in gigabits per second (Gbps). Default: No minimum or maximum limits
+    */
+  var NetworkBandwidthGbps: js.UndefOr[NetworkBandwidthGbpsRequest] = js.undefined
+  
+  /**
+    * The minimum and maximum number of network interfaces for an instance type. Default: No minimum or maximum limits
     */
   var NetworkInterfaceCount: js.UndefOr[NetworkInterfaceCountRequest] = js.undefined
   
@@ -102,7 +112,7 @@ trait InstanceRequirements extends StObject {
   var SpotMaxPricePercentageOverLowestPrice: js.UndefOr[NullablePositiveInteger] = js.undefined
   
   /**
-    * The minimum and maximum total local storage size for an instance type, in GB. Default: No minimum or maximum
+    * The minimum and maximum total local storage size for an instance type, in GB. Default: No minimum or maximum limits
     */
   var TotalLocalStorageGB: js.UndefOr[TotalLocalStorageGBRequest] = js.undefined
   
@@ -145,6 +155,12 @@ object InstanceRequirements {
     inline def setAcceleratorTypesUndefined: Self = StObject.set(x, "AcceleratorTypes", js.undefined)
     
     inline def setAcceleratorTypesVarargs(value: AcceleratorType*): Self = StObject.set(x, "AcceleratorTypes", js.Array(value*))
+    
+    inline def setAllowedInstanceTypes(value: AllowedInstanceTypes): Self = StObject.set(x, "AllowedInstanceTypes", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedInstanceTypesUndefined: Self = StObject.set(x, "AllowedInstanceTypes", js.undefined)
+    
+    inline def setAllowedInstanceTypesVarargs(value: AllowedInstanceType*): Self = StObject.set(x, "AllowedInstanceTypes", js.Array(value*))
     
     inline def setBareMetal(value: BareMetal): Self = StObject.set(x, "BareMetal", value.asInstanceOf[js.Any])
     
@@ -191,6 +207,10 @@ object InstanceRequirements {
     inline def setMemoryGiBPerVCpuUndefined: Self = StObject.set(x, "MemoryGiBPerVCpu", js.undefined)
     
     inline def setMemoryMiB(value: MemoryMiBRequest): Self = StObject.set(x, "MemoryMiB", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkBandwidthGbps(value: NetworkBandwidthGbpsRequest): Self = StObject.set(x, "NetworkBandwidthGbps", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkBandwidthGbpsUndefined: Self = StObject.set(x, "NetworkBandwidthGbps", js.undefined)
     
     inline def setNetworkInterfaceCount(value: NetworkInterfaceCountRequest): Self = StObject.set(x, "NetworkInterfaceCount", value.asInstanceOf[js.Any])
     

@@ -1,13 +1,12 @@
 package typings.blueprintjsSelect
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.blueprintjsCore.libEsmComponentsFormsInputGroupMod.InputGroupProps2
 import typings.blueprintjsCore.mod.AbstractPureComponent2
+import typings.blueprintjsSelect.anon.PartialOmitInputGroupProp
 import typings.blueprintjsSelect.libEsmCommonListItemsPropsMod.ListItemsProps
 import typings.blueprintjsSelect.libEsmCommonSelectPopoverPropsMod.SelectPopoverProps
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
-import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
@@ -60,6 +59,8 @@ object libEsmComponentsSelectSelect2Mod {
     /* private */ var renderQueryList: Any = js.native
     
     /* private */ var resetQuery: Any = js.native
+    
+    /* private */ var withPopoverTargetPropsHandler: Any = js.native
   }
   /* static members */
   object Select2 {
@@ -100,8 +101,7 @@ object libEsmComponentsSelectSelect2Mod {
     
     /**
       * Whether the component should take up the full width of its container.
-      * This overrides `popoverProps.fill`. You also have to ensure that the child
-      * component has `fill` set to `true` or is styled appropriately.
+      * You also have to ensure that the child component has `fill` set to `true` or is styled appropriately.
       */
     var fill: js.UndefOr[Boolean] = js.native
     
@@ -114,21 +114,18 @@ object libEsmComponentsSelectSelect2Mod {
     var filterable: js.UndefOr[Boolean] = js.native
     
     /**
-      * Props to spread to the query `InputGroup`. Use `query` and
-      * `onQueryChange` instead of `inputProps.value` and `inputProps.onChange`
-      * to control this input.
+      * Props to pass to the query [InputGroup component](#core/components/text-inputs.input-group).
+      *
+      * Some properties are unavailable:
+      * - `inputProps.value`: use `query` instead
+      * - `inputProps.onChange`: use `onQueryChange` instead
       */
-    var inputProps: js.UndefOr[InputGroupProps2] = js.native
+    var inputProps: js.UndefOr[PartialOmitInputGroupProp] = js.native
     
     /**
-      * Props to spread to the `Menu` listbox containing the selectable options.
+      * HTML attributes to add to the `Menu` listbox containing the selectable options.
       */
     var menuProps: js.UndefOr[HTMLAttributes[HTMLUListElement]] = js.native
-    
-    /**
-      * Props to add to the popover target wrapper element.
-      */
-    var popoverTargetProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
     
     /**
       * Whether the active item should be reset to the first matching item _when

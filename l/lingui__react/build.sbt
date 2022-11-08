@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "lingui__react"
-version := "3.14.0-447c24"
+version := "3.15.0-9e7d5d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "lingui__core" % "3.14.0-1ec7dc",
+  "org.scalablytyped" %%% "lingui__core" % "3.15.0-641da2",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-21791a",

@@ -99,6 +99,22 @@ trait CloudTrail extends Service {
   ): Request[DeleteTrailResponse, AWSError] = js.native
   
   /**
+    * Removes CloudTrail delegated administrator permissions from a member account in an organization.
+    */
+  def deregisterOrganizationDelegatedAdmin(): Request[DeregisterOrganizationDelegatedAdminResponse, AWSError] = js.native
+  def deregisterOrganizationDelegatedAdmin(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeregisterOrganizationDelegatedAdminResponse, Unit]
+  ): Request[DeregisterOrganizationDelegatedAdminResponse, AWSError] = js.native
+  /**
+    * Removes CloudTrail delegated administrator permissions from a member account in an organization.
+    */
+  def deregisterOrganizationDelegatedAdmin(params: DeregisterOrganizationDelegatedAdminRequest): Request[DeregisterOrganizationDelegatedAdminResponse, AWSError] = js.native
+  def deregisterOrganizationDelegatedAdmin(
+    params: DeregisterOrganizationDelegatedAdminRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeregisterOrganizationDelegatedAdminResponse, Unit]
+  ): Request[DeregisterOrganizationDelegatedAdminResponse, AWSError] = js.native
+  
+  /**
     * Returns metadata about a query, including query run time in milliseconds, number of events scanned and matched, and query status. You must specify an ARN for EventDataStore, and a value for QueryID.
     */
   def describeQuery(): Request[DescribeQueryResponse, AWSError] = js.native
@@ -127,12 +143,12 @@ trait CloudTrail extends Service {
   ): Request[DescribeTrailsResponse, AWSError] = js.native
   
   /**
-    *  Returns information about a specific channel. Amazon Web Services services create service-linked channels to get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI.. 
+    *  Returns information about a specific channel. Amazon Web Services services create service-linked channels to get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI. 
     */
   def getChannel(): Request[GetChannelResponse, AWSError] = js.native
   def getChannel(callback: js.Function2[/* err */ AWSError, /* data */ GetChannelResponse, Unit]): Request[GetChannelResponse, AWSError] = js.native
   /**
-    *  Returns information about a specific channel. Amazon Web Services services create service-linked channels to get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI.. 
+    *  Returns information about a specific channel. Amazon Web Services services create service-linked channels to get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI. 
     */
   def getChannel(params: GetChannelRequest): Request[GetChannelResponse, AWSError] = js.native
   def getChannel(
@@ -391,6 +407,22 @@ trait CloudTrail extends Service {
     params: PutInsightSelectorsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutInsightSelectorsResponse, Unit]
   ): Request[PutInsightSelectorsResponse, AWSError] = js.native
+  
+  /**
+    * Registers an organization’s member account as the CloudTrail delegated administrator.
+    */
+  def registerOrganizationDelegatedAdmin(): Request[RegisterOrganizationDelegatedAdminResponse, AWSError] = js.native
+  def registerOrganizationDelegatedAdmin(
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterOrganizationDelegatedAdminResponse, Unit]
+  ): Request[RegisterOrganizationDelegatedAdminResponse, AWSError] = js.native
+  /**
+    * Registers an organization’s member account as the CloudTrail delegated administrator.
+    */
+  def registerOrganizationDelegatedAdmin(params: RegisterOrganizationDelegatedAdminRequest): Request[RegisterOrganizationDelegatedAdminResponse, AWSError] = js.native
+  def registerOrganizationDelegatedAdmin(
+    params: RegisterOrganizationDelegatedAdminRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterOrganizationDelegatedAdminResponse, Unit]
+  ): Request[RegisterOrganizationDelegatedAdminResponse, AWSError] = js.native
   
   /**
     * Removes the specified tags from a trail or event data store.

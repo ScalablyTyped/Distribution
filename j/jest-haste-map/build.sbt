@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-haste-map"
-version := "29.2.1-76801b"
+version := "29.3.0-c79b82"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

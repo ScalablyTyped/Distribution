@@ -6,8 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('../framework/entity.js').Entity} Entity */
-/** @typedef {import('../graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
-/** @typedef {import('../graphics/texture.js').Texture} Texture */
+/** @typedef {import('../platform/graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
+/** @typedef {import('../platform/graphics/texture.js').Texture} Texture */
 /** @typedef {import('./composition/layer-composition.js').LayerComposition} LayerComposition */
 /** @typedef {import('./layer.js').Layer} Layer */
 /**
@@ -91,9 +91,9 @@ open class Scene_ protected () extends EventHandler {
   
   var _skyboxRotation: Quat = js.native
   
-  var _skyboxRotationMat3: Any = js.native
+  var _skyboxRotationMat3: Mat3 = js.native
   
-  var _skyboxRotationMat4: Any = js.native
+  var _skyboxRotationMat4: Mat4 = js.native
   
   var _stats: BakedLights = js.native
   

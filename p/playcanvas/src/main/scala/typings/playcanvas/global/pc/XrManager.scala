@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../framework/components/camera/component.js').CameraComponent} CameraComponent */
-/** @typedef {import('../framework/app-base.js').AppBase} AppBase */
-/** @typedef {import('../framework/entity.js').Entity} Entity */
+/** @typedef {import('../components/camera/component.js').CameraComponent} CameraComponent */
+/** @typedef {import('../app-base.js').AppBase} AppBase */
+/** @typedef {import('../entity.js').Entity} Entity */
 /**
   * Callback used by {@link XrManager#endXr} and {@link XrManager#startXr}.
   *

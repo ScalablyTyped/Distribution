@@ -8,6 +8,11 @@ trait CreateWorkloadInput extends StObject {
   
   var AccountIds: js.UndefOr[WorkloadAccountIds] = js.undefined
   
+  /**
+    * List of AppRegistry application ARNs associated to the workload.
+    */
+  var Applications: js.UndefOr[WorkloadApplications] = js.undefined
+  
   var ArchitecturalDesign: js.UndefOr[WorkloadArchitecturalDesign] = js.undefined
   
   var AwsRegions: js.UndefOr[WorkloadAwsRegions] = js.undefined
@@ -15,6 +20,11 @@ trait CreateWorkloadInput extends StObject {
   var ClientRequestToken: typings.awsSdk.clientsWellarchitectedMod.ClientRequestToken
   
   var Description: WorkloadDescription
+  
+  /**
+    * Well-Architected discovery configuration settings associated to the workload.
+    */
+  var DiscoveryConfig: js.UndefOr[WorkloadDiscoveryConfig] = js.undefined
   
   var Environment: WorkloadEnvironment
   
@@ -60,6 +70,12 @@ object CreateWorkloadInput {
     
     inline def setAccountIdsVarargs(value: AwsAccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
+    inline def setApplications(value: WorkloadApplications): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
+    
+    inline def setApplicationsVarargs(value: ApplicationArn*): Self = StObject.set(x, "Applications", js.Array(value*))
+    
     inline def setArchitecturalDesign(value: WorkloadArchitecturalDesign): Self = StObject.set(x, "ArchitecturalDesign", value.asInstanceOf[js.Any])
     
     inline def setArchitecturalDesignUndefined: Self = StObject.set(x, "ArchitecturalDesign", js.undefined)
@@ -73,6 +89,10 @@ object CreateWorkloadInput {
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: WorkloadDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    
+    inline def setDiscoveryConfig(value: WorkloadDiscoveryConfig): Self = StObject.set(x, "DiscoveryConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDiscoveryConfigUndefined: Self = StObject.set(x, "DiscoveryConfig", js.undefined)
     
     inline def setEnvironment(value: WorkloadEnvironment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     

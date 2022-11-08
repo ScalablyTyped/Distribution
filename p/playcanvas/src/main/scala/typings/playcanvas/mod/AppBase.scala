@@ -98,6 +98,9 @@ trait AppBase extends EventHandler {
   /** @private */
   /* private */ var _initDefaultMaterial: Any = js.native
   
+  /** @private */
+  /* private */ var _initProgramLibrary: Any = js.native
+  
   var _librariesLoaded: Boolean = js.native
   
   /**

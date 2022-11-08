@@ -1,12 +1,11 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.mod.AnimEvaluator
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../core/event-handler.js').EventHandler} EventHandler */
+/** @typedef {import('../../../core/event-handler.js').EventHandler} EventHandler */
 /** @typedef {import('../evaluator/anim-evaluator.js').AnimEvaluator} AnimEvaluator */
 /**
   * The AnimController manages the animations for its entity, based on the provided state graph and
@@ -38,7 +37,7 @@ open class AnimController protected ()
     * have been consumed by a transition.
     */
   def this(
-    animEvaluator: AnimEvaluator,
+    animEvaluator: typings.playcanvas.mod.AnimEvaluator,
     states: js.Array[js.Object],
     transitions: js.Array[js.Object],
     parameters: js.Array[js.Object],

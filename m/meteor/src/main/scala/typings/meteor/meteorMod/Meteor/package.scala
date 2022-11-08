@@ -5,6 +5,7 @@ import typings.meteor.DDP.DDPStatus
 import typings.meteor.EJSONable
 import typings.meteor.EJSONableProperty
 import typings.meteor.Mongo.Collection
+import typings.meteor.Mongo.Cursor
 import typings.meteor.anon.Fields
 import typings.meteor.anon.Isauto
 import typings.meteor.anon.LoginStyle
@@ -203,16 +204,38 @@ inline def onConnection(callback: js.Function1[/* connection */ Connection, Unit
   * @param func Function called on the server each time a client subscribes. Inside the function, `this` is the publish handler object, described below. If the client passed arguments to
   * `subscribe`, the function is called with the same arguments.
   */
-inline def publish(name: String, func: js.ThisFunction1[/* this */ Subscription, /* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def publish(
   name: String,
-  func: js.ThisFunction1[/* this */ Subscription, /* repeated */ Any, Unit],
+  func: js.ThisFunction1[
+  /* this */ Subscription, 
+  /* repeated */ Any, 
+  Unit | (Cursor[Any, Any]) | (js.Array[Cursor[Any, Any]]) | (js.Promise[Unit | (Cursor[Any, Any]) | (js.Array[Cursor[Any, Any]])])
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def publish(
+  name: String,
+  func: js.ThisFunction1[
+  /* this */ Subscription, 
+  /* repeated */ Any, 
+  Unit | (Cursor[Any, Any]) | (js.Array[Cursor[Any, Any]]) | (js.Promise[Unit | (Cursor[Any, Any]) | (js.Array[Cursor[Any, Any]])])
+],
   options: Isauto
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def publish(name: Null, func: js.ThisFunction1[/* this */ Subscription, /* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def publish(
   name: Null,
-  func: js.ThisFunction1[/* this */ Subscription, /* repeated */ Any, Unit],
+  func: js.ThisFunction1[
+  /* this */ Subscription, 
+  /* repeated */ Any, 
+  Unit | (Cursor[Any, Any]) | (js.Array[Cursor[Any, Any]]) | (js.Promise[Unit | (Cursor[Any, Any]) | (js.Array[Cursor[Any, Any]])])
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def publish(
+  name: Null,
+  func: js.ThisFunction1[
+  /* this */ Subscription, 
+  /* repeated */ Any, 
+  Unit | (Cursor[Any, Any]) | (js.Array[Cursor[Any, Any]]) | (js.Promise[Unit | (Cursor[Any, Any]) | (js.Array[Cursor[Any, Any]])])
+],
   options: Isauto
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 

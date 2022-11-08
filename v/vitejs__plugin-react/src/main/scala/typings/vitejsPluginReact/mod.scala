@@ -51,6 +51,8 @@ object mod {
   /* Inlined std.Omit<@babel/core.@babel/core.TransformOptions, 'ast' | 'filename' | 'root' | 'sourceFileName' | 'sourceMaps' | 'inputSourceMap'> */
   trait BabelOptions extends StObject {
     
+    var assumptions: js.UndefOr[StringDictionary[Boolean] | Null] = js.undefined
+    
     var auxiliaryCommentAfter: js.UndefOr[String | Null] = js.undefined
     
     var auxiliaryCommentBefore: js.UndefOr[String | Null] = js.undefined
@@ -144,6 +146,12 @@ object mod {
     }
     
     extension [Self <: BabelOptions](x: Self) {
+      
+      inline def setAssumptions(value: StringDictionary[Boolean]): Self = StObject.set(x, "assumptions", value.asInstanceOf[js.Any])
+      
+      inline def setAssumptionsNull: Self = StObject.set(x, "assumptions", null)
+      
+      inline def setAssumptionsUndefined: Self = StObject.set(x, "assumptions", js.undefined)
       
       inline def setAuxiliaryCommentAfter(value: String): Self = StObject.set(x, "auxiliaryCommentAfter", value.asInstanceOf[js.Any])
       

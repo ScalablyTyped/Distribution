@@ -226,6 +226,8 @@ object modulesConfigurationMod {
     
     var color: ButtonColorOption
     
+    var height: js.UndefOr[Double] = js.undefined
+    
     var label: ButtonLabelOption
     
     var shape: ButtonShapeOption
@@ -250,6 +252,10 @@ object modulesConfigurationMod {
     extension [Self <: ButtonStyle](x: Self) {
       
       inline def setColor(value: ButtonColorOption): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       inline def setLabel(value: ButtonLabelOption): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

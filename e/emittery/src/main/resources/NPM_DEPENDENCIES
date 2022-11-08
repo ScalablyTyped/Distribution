@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "emittery" : "1.0.0"
+      "emittery" : "1.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "emittery" : "1.0.0"
+      "emittery" : "1.0.1"
     }
   ],
   "compile-devDependencies" : [

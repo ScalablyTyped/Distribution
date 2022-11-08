@@ -82,7 +82,7 @@ trait UpdateAutoScalingGroupType extends StObject {
   var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
   
   /**
-    * An embedded object that specifies a mixed instances policy. For more information, see Auto Scaling groups with multiple instance types and purchase options in the Amazon EC2 Auto Scaling User Guide.
+    * The mixed instances policy. For more information, see Auto Scaling groups with multiple instance types and purchase options in the Amazon EC2 Auto Scaling User Guide.
     */
   var MixedInstancesPolicy: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.MixedInstancesPolicy] = js.undefined
   

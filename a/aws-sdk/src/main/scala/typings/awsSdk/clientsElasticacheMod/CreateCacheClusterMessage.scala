@@ -57,9 +57,19 @@ trait CreateCacheClusterMessage extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
+    * The network type you choose when modifying a cluster, either ipv4 | ipv6. IPv6 is supported for workloads using Redis engine version 6.2 onward or Memcached engine version 1.6.6 on all instances built on the Nitro system.
+    */
+  var IpDiscovery: js.UndefOr[typings.awsSdk.clientsElasticacheMod.IpDiscovery] = js.undefined
+  
+  /**
     * Specifies the destination, format and type of the logs. 
     */
   var LogDeliveryConfigurations: js.UndefOr[LogDeliveryConfigurationRequestList] = js.undefined
+  
+  /**
+    * Must be either ipv4 | ipv6 | dual_stack. IPv6 is supported for workloads using Redis engine version 6.2 onward or Memcached engine version 1.6.6 on all instances built on the Nitro system. 
+    */
+  var NetworkType: js.UndefOr[typings.awsSdk.clientsElasticacheMod.NetworkType] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic to which notifications are sent.  The Amazon SNS topic owner must be the same as the cluster owner. 
@@ -142,7 +152,7 @@ trait CreateCacheClusterMessage extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster.   Required: Only available when creating a cache cluster in an Amazon VPC using Memcached version 1.6.12 or later.
+    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster.  Only available when creating a cache cluster in an Amazon VPC using Memcached version 1.6.12 or later.
     */
   var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
 }
@@ -195,11 +205,19 @@ object CreateCacheClusterMessage {
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
+    inline def setIpDiscovery(value: IpDiscovery): Self = StObject.set(x, "IpDiscovery", value.asInstanceOf[js.Any])
+    
+    inline def setIpDiscoveryUndefined: Self = StObject.set(x, "IpDiscovery", js.undefined)
+    
     inline def setLogDeliveryConfigurations(value: LogDeliveryConfigurationRequestList): Self = StObject.set(x, "LogDeliveryConfigurations", value.asInstanceOf[js.Any])
     
     inline def setLogDeliveryConfigurationsUndefined: Self = StObject.set(x, "LogDeliveryConfigurations", js.undefined)
     
     inline def setLogDeliveryConfigurationsVarargs(value: LogDeliveryConfigurationRequest*): Self = StObject.set(x, "LogDeliveryConfigurations", js.Array(value*))
+    
+    inline def setNetworkType(value: NetworkType): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
     
     inline def setNotificationTopicArn(value: String): Self = StObject.set(x, "NotificationTopicArn", value.asInstanceOf[js.Any])
     

@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../framework/app-base.js').AppBase} AppBase */
-/** @typedef {import('../framework/entity.js').Entity} Entity */
+/** @typedef {import('./app-base.js').AppBase} AppBase */
+/** @typedef {import('./entity.js').Entity} Entity */
 /**
   * Create a Template resource from raw database data.
   */

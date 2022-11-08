@@ -27,6 +27,11 @@ trait CacheSubnetGroup extends StObject {
   var Subnets: js.UndefOr[SubnetList] = js.undefined
   
   /**
+    * Either ipv4 | ipv6 | dual_stack. IPv6 is supported for workloads using Redis engine version 6.2 onward or Memcached engine version 1.6.6 on all instances built on the Nitro system.
+    */
+  var SupportedNetworkTypes: js.UndefOr[NetworkTypeList] = js.undefined
+  
+  /**
     * The Amazon Virtual Private Cloud identifier (VPC ID) of the cache subnet group.
     */
   var VpcId: js.UndefOr[String] = js.undefined
@@ -57,6 +62,12 @@ object CacheSubnetGroup {
     inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
     inline def setSubnetsVarargs(value: Subnet*): Self = StObject.set(x, "Subnets", js.Array(value*))
+    
+    inline def setSupportedNetworkTypes(value: NetworkTypeList): Self = StObject.set(x, "SupportedNetworkTypes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedNetworkTypesUndefined: Self = StObject.set(x, "SupportedNetworkTypes", js.undefined)
+    
+    inline def setSupportedNetworkTypesVarargs(value: NetworkType*): Self = StObject.set(x, "SupportedNetworkTypes", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

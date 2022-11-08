@@ -37,6 +37,11 @@ trait QueryExecution extends StObject {
   var ResultConfiguration: js.UndefOr[typings.awsSdk.clientsAthenaMod.ResultConfiguration] = js.undefined
   
   /**
+    * Specifies the query result reuse behavior that was used for the query.
+    */
+  var ResultReuseConfiguration: js.UndefOr[typings.awsSdk.clientsAthenaMod.ResultReuseConfiguration] = js.undefined
+  
+  /**
     * The type of query statement that was run. DDL indicates DDL query statements. DML indicates DML (Data Manipulation Language) query statements, such as CREATE TABLE AS SELECT. UTILITY indicates query statements other than DDL and DML, such as SHOW CREATE TABLE, or DESCRIBE TABLE.
     */
   var StatementType: js.UndefOr[typings.awsSdk.clientsAthenaMod.StatementType] = js.undefined
@@ -90,6 +95,10 @@ object QueryExecution {
     inline def setResultConfiguration(value: ResultConfiguration): Self = StObject.set(x, "ResultConfiguration", value.asInstanceOf[js.Any])
     
     inline def setResultConfigurationUndefined: Self = StObject.set(x, "ResultConfiguration", js.undefined)
+    
+    inline def setResultReuseConfiguration(value: ResultReuseConfiguration): Self = StObject.set(x, "ResultReuseConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setResultReuseConfigurationUndefined: Self = StObject.set(x, "ResultReuseConfiguration", js.undefined)
     
     inline def setStatementType(value: StatementType): Self = StObject.set(x, "StatementType", value.asInstanceOf[js.Any])
     

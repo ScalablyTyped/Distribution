@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModifyInstanceEventStartTimeResult extends StObject {
   
+  /**
+    * Information about the event.
+    */
   var Event: js.UndefOr[InstanceStatusEvent] = js.undefined
 }
 object ModifyInstanceEventStartTimeResult {

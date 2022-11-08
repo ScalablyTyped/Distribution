@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../../animation/animation.js').Animation} Animation */
+/** @typedef {import('../../../scene/animation/animation.js').Animation} Animation */
 /** @typedef {import('../../../scene/model.js').Model} Model */
 /** @typedef {import('../../entity.js').Entity} Entity */
 /** @typedef {import('./system.js').AnimationComponentSystem} AnimationComponentSystem */
@@ -109,7 +109,7 @@ open class AnimationComponent protected () extends Component {
   def currentTime_=(arg: Double): Unit = js.native
   
   /**
-    * Get the duration in seconds of the current animation.
+    * Get the duration in seconds of the current animation. Returns 0 if no animation is playing.
     *
     * @type {number}
     */

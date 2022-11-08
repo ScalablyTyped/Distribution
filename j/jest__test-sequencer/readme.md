@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__test-sequencer
 
-Typings are for version 29.2.2
+Typings are for version 29.3.0
 
 
 

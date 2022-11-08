@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('./component.js').AnimComponent} AnimComponent */
-/** @typedef {import('../../../asset/asset.js').Asset} Asset */
+/** @typedef {import('../../asset/asset.js').Asset} Asset */
 /**
   * The Anim Component Layer allows managers a single layer of the animation state graph.
   */

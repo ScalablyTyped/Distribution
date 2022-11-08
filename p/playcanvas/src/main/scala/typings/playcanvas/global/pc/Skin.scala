@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
-/** @typedef {import('../math/mat4.js').Mat4} Mat4 */
+/** @typedef {import('../platform/graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
+/** @typedef {import('../core/math/mat4.js').Mat4} Mat4 */
 /**
   * A skin contains data about the bones in a hierarchy that drive a skinned mesh animation.
   * Specifically, the skin stores the bone name and inverse bind matrix and for each bone. Inverse

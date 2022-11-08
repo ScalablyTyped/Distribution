@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateShareInvitationOutput extends StObject {
   
   /**
-    * The updated workload share invitation.
+    * The updated workload or custom lens share invitation.
     */
   var ShareInvitation: js.UndefOr[typings.awsSdk.clientsWellarchitectedMod.ShareInvitation] = js.undefined
 }

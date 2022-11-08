@@ -1,10 +1,13 @@
 package typings.awsSdk.clientsWellarchitectedMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.TRUSTED_ADVISOR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+
+type AccountSummary = StringDictionary[CheckStatusCount]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HELPFUL_RESOURCE
@@ -27,11 +30,46 @@ type AnswerReason = _AnswerReason | String
 
 type AnswerSummaries = js.Array[AnswerSummary]
 
+type ApplicationArn = String
+
 type AwsAccountId = String
 
 type AwsRegion = String
 
 type Base64String = String
+
+type CheckDescription = String
+
+type CheckDetails = js.Array[CheckDetail]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASSUME_ROLE_ERROR
+  - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
+  - typings.awsSdk.awsSdkStrings.UNKNOWN_ERROR
+  - typings.awsSdk.awsSdkStrings.PREMIUM_SUPPORT_REQUIRED
+  - java.lang.String
+*/
+type CheckFailureReason = _CheckFailureReason | String
+
+type CheckId = String
+
+type CheckName = String
+
+type CheckProvider = TRUSTED_ADVISOR | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OKAY
+  - typings.awsSdk.awsSdkStrings.WARNING
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - typings.awsSdk.awsSdkStrings.NOT_AVAILABLE
+  - typings.awsSdk.awsSdkStrings.FETCH_FAILED
+  - java.lang.String
+*/
+type CheckStatus = _CheckStatus | String
+
+type CheckStatusCount = Double
+
+type CheckSummaries = js.Array[CheckSummary]
 
 type ChoiceAnswerSummaries = js.Array[ChoiceAnswerSummary]
 
@@ -86,6 +124,8 @@ type Count = Double
 type DifferenceStatus = _DifferenceStatus | String
 
 type DisplayText = String
+
+type FlaggedResources = Double
 
 type HelpfulResourceUrl = String
 
@@ -285,9 +325,18 @@ type TagValue = String
 
 type Timestamp = js.Date
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type TrustedAdvisorIntegrationStatus = _TrustedAdvisorIntegrationStatus | String
+
 type Urls = js.Array[ChoiceContent]
 
 type WorkloadAccountIds = js.Array[AwsAccountId]
+
+type WorkloadApplications = js.Array[ApplicationArn]
 
 type WorkloadArchitecturalDesign = String
 

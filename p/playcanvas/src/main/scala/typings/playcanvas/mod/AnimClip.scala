@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('./anim-track.js').AnimTrack} AnimTrack */
-/** @typedef {import('../../core/event-handler.js').EventHandler} EventHandler */
+/** @typedef {import('../../../core/event-handler.js').EventHandler} EventHandler */
 /**
   * AnimClip wraps the running state of an animation track. It contains and update the animation
   * 'cursor' and performs looping logic.
@@ -39,7 +39,7 @@ open class AnimClip protected () extends StObject {
   
   var _blendWeight: Double = js.native
   
-  var _eventCursor: Double = js.native
+  var _eventCursor: Any = js.native
   
   var _eventHandler: EventHandler = js.native
   
@@ -61,14 +61,16 @@ open class AnimClip protected () extends StObject {
   
   def activeEventsForFrame(frameStartTime: Any, frameEndTime: Any): Unit = js.native
   
+  def alignCursorToCurrentTime(): Unit = js.native
+  
   def blendOrder: Double = js.native
   def blendOrder_=(arg: Double): Unit = js.native
   
   def blendWeight: Double = js.native
   def blendWeight_=(arg: Double): Unit = js.native
   
-  def eventCursor: Double = js.native
-  def eventCursor_=(arg: Double): Unit = js.native
+  def eventCursor: Any = js.native
+  def eventCursor_=(arg: Any): Unit = js.native
   
   def loop: Boolean = js.native
   def loop_=(arg: Boolean): Unit = js.native

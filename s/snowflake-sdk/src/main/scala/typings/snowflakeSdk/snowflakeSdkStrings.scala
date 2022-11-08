@@ -11,6 +11,10 @@ object snowflakeSdkStrings {
   inline def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
   
   @js.native
+  sealed trait Buffer extends StObject
+  inline def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
+  
+  @js.native
   sealed trait DEBUG extends StObject
   inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   

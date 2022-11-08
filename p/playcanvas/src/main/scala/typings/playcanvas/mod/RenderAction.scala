@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../graphics/bind-group.js').BindGroup} BindGroup */
-/** @typedef {import('../../graphics/render-target.js').RenderTarget} RenderTarget */
+/** @typedef {import('../../platform/graphics/bind-group.js').BindGroup} BindGroup */
+/** @typedef {import('../../platform/graphics/render-target.js').RenderTarget} RenderTarget */
 /** @typedef {import('./layer-composition.js').LayerComposition} LayerComposition */
 /**
   * Class representing an entry in the final order of rendering of cameras and layers in the engine

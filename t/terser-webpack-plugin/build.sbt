@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "terser-webpack-plugin"
-version := "5.3.6-afcfed"
+version := "5.3.6-22288a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "ajv" % "8.11.0-6482f2",
-  "org.scalablytyped" %%% "jest-worker" % "29.2.1-60f9c8",
+  "org.scalablytyped" %%% "jest-worker" % "29.3.0-7bb8a9",
   "org.scalablytyped" %%% "jridgewell__gen-mapping" % "0.3.2-ae4999",
   "org.scalablytyped" %%% "jridgewell__trace-mapping" % "0.3.17-81dbd7",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-349280",

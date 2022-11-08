@@ -645,12 +645,12 @@ trait ElastiCache extends Service {
   ): Request[DisassociateGlobalReplicationGroupResult, AWSError] = js.native
   
   /**
-    * Used to failover the primary region to a selected secondary region. The selected secondary region will become primary, and all other clusters will become secondary.
+    * Used to failover the primary region to a secondary region. The secondary region will become primary, and all other clusters will become secondary.
     */
   def failoverGlobalReplicationGroup(): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
   def failoverGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ FailoverGlobalReplicationGroupResult, Unit]): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
   /**
-    * Used to failover the primary region to a selected secondary region. The selected secondary region will become primary, and all other clusters will become secondary.
+    * Used to failover the primary region to a secondary region. The secondary region will become primary, and all other clusters will become secondary.
     */
   def failoverGlobalReplicationGroup(params: FailoverGlobalReplicationGroupMessage): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
   def failoverGlobalReplicationGroup(

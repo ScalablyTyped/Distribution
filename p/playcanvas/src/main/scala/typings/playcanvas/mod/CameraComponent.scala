@@ -129,6 +129,10 @@ open class CameraComponent protected () extends Component {
     */
   /* private */ var _renderSceneDepthMap: Any = js.native
   
+  var _sceneColorMapRequested: Boolean = js.native
+  
+  var _sceneDepthMapRequested: Boolean = js.native
+  
   def addCameraToLayers(): Unit = js.native
   
   def aperture: Double = js.native
@@ -350,8 +354,10 @@ open class CameraComponent protected () extends Component {
   def removeCameraFromLayers(): Unit = js.native
   
   def renderSceneColorMap: Boolean = js.native
+  def renderSceneColorMap_=(arg: Boolean): Unit = js.native
   
   def renderSceneDepthMap: Boolean = js.native
+  def renderSceneDepthMap_=(arg: Boolean): Unit = js.native
   
   def renderTarget: Any = js.native
   /**

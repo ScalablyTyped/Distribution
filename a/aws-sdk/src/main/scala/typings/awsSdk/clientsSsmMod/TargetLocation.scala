@@ -21,6 +21,8 @@ trait TargetLocation extends StObject {
     */
   var Regions: js.UndefOr[typings.awsSdk.clientsSsmMod.Regions] = js.undefined
   
+  var TargetLocationAlarmConfiguration: js.UndefOr[AlarmConfiguration] = js.undefined
+  
   /**
     * The maximum number of Amazon Web Services Regions and Amazon Web Services accounts allowed to run the Automation concurrently.
     */
@@ -55,6 +57,10 @@ object TargetLocation {
     inline def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
     
     inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value*))
+    
+    inline def setTargetLocationAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "TargetLocationAlarmConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setTargetLocationAlarmConfigurationUndefined: Self = StObject.set(x, "TargetLocationAlarmConfiguration", js.undefined)
     
     inline def setTargetLocationMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "TargetLocationMaxConcurrency", value.asInstanceOf[js.Any])
     

@@ -133,6 +133,13 @@ type Integer = scala.Double
 
 type IntegerOptional = scala.Double
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ipv4__
+  - typings.awsSdk.awsSdkStrings.ipv6__
+  - java.lang.String
+*/
+type IpDiscovery = _IpDiscovery | java.lang.String
+
 type KeyList = js.Array[String]
 
 type LogDeliveryConfigurationList = js.Array[LogDeliveryConfiguration]
@@ -169,6 +176,16 @@ type LogType = _LogType | java.lang.String
   - java.lang.String
 */
 type MultiAZStatus = _MultiAZStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ipv4__
+  - typings.awsSdk.awsSdkStrings.ipv6__
+  - typings.awsSdk.awsSdkStrings.dual_stack_
+  - java.lang.String
+*/
+type NetworkType = _NetworkType | java.lang.String
+
+type NetworkTypeList = js.Array[NetworkType]
 
 type NodeGroupConfigurationList = js.Array[NodeGroupConfiguration]
 

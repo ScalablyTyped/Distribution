@@ -7,6 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type Age = Double
+
 type AmazonResourceName = java.lang.String
 
 type AwsAccountId = java.lang.String

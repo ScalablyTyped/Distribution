@@ -267,6 +267,15 @@ type OperatingSystemType = _OperatingSystemType | String
 
 type PaginationToken = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PCOIP
+  - typings.awsSdk.awsSdkStrings.WSP
+  - java.lang.String
+*/
+type Protocol = _Protocol | String
+
+type ProtocolList = js.Array[Protocol]
+
 type RebootWorkspaceRequests = js.Array[RebootRequest]
 
 type RebuildWorkspaceRequests = js.Array[RebuildRequest]

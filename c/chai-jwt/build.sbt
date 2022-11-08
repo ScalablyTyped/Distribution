@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "chai-jwt"
-version := "2.0-dt-20211202Z-9c16a4"
+version := "2.0-dt-20211202Z-034b01"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chai" % "4.3-dt-20220819Z-ede36e",
+  "org.scalablytyped" %%% "chai" % "4.3-dt-20221107Z-ede36e",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

@@ -83,6 +83,8 @@ open class MorphTarget protected () extends StObject {
   
   /**
     * A used flag. A morph target can be used / owned by the Morph class only one time.
+    *
+    * @type {boolean}
     */
   var used: Boolean = js.native
 }

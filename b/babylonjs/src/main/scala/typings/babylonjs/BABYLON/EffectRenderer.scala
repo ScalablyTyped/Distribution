@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EffectRenderer extends StObject {
   
-  /* private */ var _engine: Any = js.native
-  
   /* private */ var _fullscreenViewport: Any = js.native
   
   /* private */ var _indexBuffer: Any = js.native
@@ -42,6 +40,11 @@ trait EffectRenderer extends StObject {
     * Draws a full screen quad.
     */
   def draw(): Unit = js.native
+  
+  /**
+    * The engine the effect renderer has been created for.
+    */
+  val engine: ThinEngine = js.native
   
   /**
     * renders one or more effects to a specified texture

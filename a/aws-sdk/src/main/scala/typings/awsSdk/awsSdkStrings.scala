@@ -1300,9 +1300,11 @@ import typings.awsSdk.clientsElasticacheMod._AuthTokenUpdateStatus
 import typings.awsSdk.clientsElasticacheMod._AuthTokenUpdateStrategyType
 import typings.awsSdk.clientsElasticacheMod._AutomaticFailoverStatus
 import typings.awsSdk.clientsElasticacheMod._DataTieringStatus
+import typings.awsSdk.clientsElasticacheMod._IpDiscovery
 import typings.awsSdk.clientsElasticacheMod._LogDeliveryConfigurationStatus
 import typings.awsSdk.clientsElasticacheMod._LogFormat
 import typings.awsSdk.clientsElasticacheMod._MultiAZStatus
+import typings.awsSdk.clientsElasticacheMod._NetworkType
 import typings.awsSdk.clientsElasticacheMod._NodeUpdateInitiatedBy
 import typings.awsSdk.clientsElasticacheMod._NodeUpdateStatus
 import typings.awsSdk.clientsElasticacheMod._OutpostMode
@@ -3940,6 +3942,8 @@ import typings.awsSdk.clientsWafv2Mod._SensitivityLevel
 import typings.awsSdk.clientsWafv2Mod._TextTransformationType
 import typings.awsSdk.clientsWellarchitectedMod._AdditionalResourceType
 import typings.awsSdk.clientsWellarchitectedMod._AnswerReason
+import typings.awsSdk.clientsWellarchitectedMod._CheckFailureReason
+import typings.awsSdk.clientsWellarchitectedMod._CheckStatus
 import typings.awsSdk.clientsWellarchitectedMod._ChoiceReason
 import typings.awsSdk.clientsWellarchitectedMod._ChoiceStatus
 import typings.awsSdk.clientsWellarchitectedMod._DifferenceStatus
@@ -3952,6 +3956,7 @@ import typings.awsSdk.clientsWellarchitectedMod._Risk
 import typings.awsSdk.clientsWellarchitectedMod._ShareInvitationAction
 import typings.awsSdk.clientsWellarchitectedMod._ShareResourceType
 import typings.awsSdk.clientsWellarchitectedMod._ShareStatus
+import typings.awsSdk.clientsWellarchitectedMod._TrustedAdvisorIntegrationStatus
 import typings.awsSdk.clientsWellarchitectedMod._WorkloadEnvironment
 import typings.awsSdk.clientsWellarchitectedMod._WorkloadImprovementStatus
 import typings.awsSdk.clientsWisdomMod._AssistantStatus
@@ -6058,6 +6063,7 @@ object awsSdkStrings {
        with _AnalysisErrorType
        with _AssessmentRunNotificationSnsStatusCode
        with _BusinessReportFailureCode
+       with _CheckFailureReason
        with _DashboardErrorType
        with _DataSourceErrorInfoType
        with _DeliveryStatus
@@ -8912,6 +8918,12 @@ object awsSdkStrings {
   inline def ASSOCIATION_REJECTION: ASSOCIATION_REJECTION = "ASSOCIATION_REJECTION".asInstanceOf[ASSOCIATION_REJECTION]
   
   @js.native
+  sealed trait ASSUME_ROLE_ERROR
+    extends StObject
+       with _CheckFailureReason
+  inline def ASSUME_ROLE_ERROR: ASSUME_ROLE_ERROR = "ASSUME_ROLE_ERROR".asInstanceOf[ASSUME_ROLE_ERROR]
+  
+  @js.native
   sealed trait ASSUME_ROLE_FAILED extends StObject
   
   @js.native
@@ -9662,7 +9674,6 @@ object awsSdkStrings {
   sealed trait `AWS-managed`
     extends StObject
        with _DatabaseManagementPreference
-  inline def `AWS-managed`: `AWS-managed` = "AWS-managed".asInstanceOf[`AWS-managed`]
   
   @js.native
   sealed trait AWSAccount
@@ -12307,7 +12318,6 @@ object awsSdkStrings {
   sealed trait AttachedPoliciesPerRoleQuota
     extends StObject
        with _summaryKeyType
-  inline def AttachedPoliciesPerRoleQuota: AttachedPoliciesPerRoleQuota = "AttachedPoliciesPerRoleQuota".asInstanceOf[AttachedPoliciesPerRoleQuota]
   
   @js.native
   sealed trait AttachedPoliciesPerUserQuota
@@ -17458,7 +17468,6 @@ object awsSdkStrings {
        with _ListDevicesSortBy
        with _ProjectSortByType
        with _ReportGroupSortByType
-  inline def CREATED_TIME: CREATED_TIME = "CREATED_TIME".asInstanceOf[CREATED_TIME]
   
   @js.native
   sealed trait CREATE_ACTION
@@ -19296,7 +19305,6 @@ object awsSdkStrings {
   sealed trait ConfigurationError
     extends StObject
        with typings.awsSdk.clientsCodepipelineMod._FailureType
-  inline def ConfigurationError: ConfigurationError = "ConfigurationError".asInstanceOf[ConfigurationError]
   
   @js.native
   sealed trait ConfigurationItemChangeNotification
@@ -22353,6 +22361,7 @@ object awsSdkStrings {
        with typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient._TimeToLiveStatus
        with _TlsSessionResumptionMode
        with _TopicRuleDestinationStatus
+       with _TrustedAdvisorIntegrationStatus
        with _TtmlStylePassthrough
        with _UserStatus
        with _Vc3SlowPal
@@ -23488,6 +23497,12 @@ object awsSdkStrings {
        with _Vp9FramerateConversionAlgorithm
        with _XavcFramerateConversionAlgorithm
   inline def DUPLICATE_DROP: DUPLICATE_DROP = "DUPLICATE_DROP".asInstanceOf[DUPLICATE_DROP]
+  
+  @js.native
+  sealed trait DUPLICATE_INPUT
+    extends StObject
+       with typings.awsSdk.clientsLexmodelsv2Mod._ErrorCode
+  inline def DUPLICATE_INPUT: DUPLICATE_INPUT = "DUPLICATE_INPUT".asInstanceOf[DUPLICATE_INPUT]
   
   @js.native
   sealed trait DUPLICATE_RESOURCE
@@ -25697,6 +25712,7 @@ object awsSdkStrings {
        with typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient._TimeToLiveStatus
        with _TlsSessionResumptionMode
        with _TopicRuleDestinationStatus
+       with _TrustedAdvisorIntegrationStatus
        with _TtmlStylePassthrough
        with _UserStatus
        with _Vc3SlowPal
@@ -26198,6 +26214,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsEsMod._AutoTuneState
        with _BatchEntryCompletionStatus
        with _CanaryState
+       with _CheckStatus
        with _ConfigurationEventStatus
        with _ConnectionStatus
        with typings.awsSdk.clientsCodestarconnectionsMod._ConnectionStatus
@@ -28509,6 +28526,12 @@ object awsSdkStrings {
   inline def FEMALE: FEMALE = "FEMALE".asInstanceOf[FEMALE]
   
   @js.native
+  sealed trait FETCH_FAILED
+    extends StObject
+       with _CheckStatus
+  inline def FETCH_FAILED: FETCH_FAILED = "FETCH_FAILED".asInstanceOf[FETCH_FAILED]
+  
+  @js.native
   sealed trait FHD
     extends StObject
        with _CdiInputResolution
@@ -28542,7 +28565,6 @@ object awsSdkStrings {
     extends StObject
        with _FindingPublishingFrequency
        with typings.awsSdk.clientsMacie2Mod._FindingPublishingFrequency
-  inline def FIFTEEN_MINUTES: FIFTEEN_MINUTES = "FIFTEEN_MINUTES".asInstanceOf[FIFTEEN_MINUTES]
   
   @js.native
   sealed trait FIJ
@@ -28871,7 +28893,6 @@ object awsSdkStrings {
        with _Mpeg2SubGopLength
        with _RecommendationStatus
        with _Scte35InputMode
-  inline def FIXED: FIXED = "FIXED".asInstanceOf[FIXED]
   
   @js.native
   sealed trait FIXED_GRID
@@ -29442,6 +29463,18 @@ object awsSdkStrings {
     extends StObject
        with _RuleType
   inline def FORCE_INCLUDE_RENDITIONS: FORCE_INCLUDE_RENDITIONS = "FORCE_INCLUDE_RENDITIONS".asInstanceOf[FORCE_INCLUDE_RENDITIONS]
+  
+  @js.native
+  sealed trait FORCE_P3D65_SDR
+    extends StObject
+       with _ColorSpaceConversion
+  inline def FORCE_P3D65_SDR: FORCE_P3D65_SDR = "FORCE_P3D65_SDR".asInstanceOf[FORCE_P3D65_SDR]
+  
+  @js.native
+  sealed trait FORCE_P3DCI
+    extends StObject
+       with _ColorSpaceConversion
+  inline def FORCE_P3DCI: FORCE_P3DCI = "FORCE_P3DCI".asInstanceOf[FORCE_P3DCI]
   
   @js.native
   sealed trait FORCE_STOPPING
@@ -30547,7 +30580,6 @@ object awsSdkStrings {
   sealed trait GENERIC_SQL_FAILURE
     extends StObject
        with _DataSourceErrorInfoType
-  inline def GENERIC_SQL_FAILURE: GENERIC_SQL_FAILURE = "GENERIC_SQL_FAILURE".asInstanceOf[GENERIC_SQL_FAILURE]
   
   @js.native
   sealed trait GENEVE
@@ -34659,6 +34691,12 @@ object awsSdkStrings {
        with _AssociateResourceErrorReason
        with _Code
   inline def INTERNAL_SERVER_EXCEPTION: INTERNAL_SERVER_EXCEPTION = "INTERNAL_SERVER_EXCEPTION".asInstanceOf[INTERNAL_SERVER_EXCEPTION]
+  
+  @js.native
+  sealed trait INTERNAL_SERVER_FAILURE
+    extends StObject
+       with typings.awsSdk.clientsLexmodelsv2Mod._ErrorCode
+  inline def INTERNAL_SERVER_FAILURE: INTERNAL_SERVER_FAILURE = "INTERNAL_SERVER_FAILURE".asInstanceOf[INTERNAL_SERVER_FAILURE]
   
   @js.native
   sealed trait INTERNAL_SERVICE_ERROR
@@ -44055,6 +44093,7 @@ object awsSdkStrings {
     extends StObject
        with _ApplicationInstanceHealthStatus
        with _CacheClusterStatus
+       with _CheckStatus
        with typings.awsSdk.clientsSecurityhubMod._ComplianceStatus
        with _DeviceConnectionStatus
        with typings.awsSdk.clientsDevicefarmMod._InstanceStatus
@@ -45530,6 +45569,12 @@ object awsSdkStrings {
        with _StateValue
   
   @js.native
+  sealed trait OKAY
+    extends StObject
+       with _CheckStatus
+  inline def OKAY: OKAY = "OKAY".asInstanceOf[OKAY]
+  
+  @js.native
   sealed trait OLDEST_CONTACT_AGE
     extends StObject
        with _CurrentMetricName
@@ -46906,6 +46951,18 @@ object awsSdkStrings {
   inline def P256r1: P256r1 = "P256r1".asInstanceOf[P256r1]
   
   @js.native
+  sealed trait P3D65_SDR
+    extends StObject
+       with _ColorSpace
+  inline def P3D65_SDR: P3D65_SDR = "P3D65_SDR".asInstanceOf[P3D65_SDR]
+  
+  @js.native
+  sealed trait P3DCI
+    extends StObject
+       with _ColorSpace
+  inline def P3DCI: P3DCI = "P3DCI".asInstanceOf[P3DCI]
+  
+  @js.native
   sealed trait PA
     extends StObject
        with typings.awsSdk.clientsWafv2Mod._CountryCode
@@ -47453,7 +47510,6 @@ object awsSdkStrings {
   sealed trait PCA_INVALID_DURATION
     extends StObject
        with _FailureReason
-  inline def PCA_INVALID_DURATION: PCA_INVALID_DURATION = "PCA_INVALID_DURATION".asInstanceOf[PCA_INVALID_DURATION]
   
   @js.native
   sealed trait PCA_INVALID_STATE
@@ -47483,6 +47539,12 @@ object awsSdkStrings {
     extends StObject
        with _FailureReason
   inline def PCA_RESOURCE_NOT_FOUND: PCA_RESOURCE_NOT_FOUND = "PCA_RESOURCE_NOT_FOUND".asInstanceOf[PCA_RESOURCE_NOT_FOUND]
+  
+  @js.native
+  sealed trait PCOIP
+    extends StObject
+       with typings.awsSdk.clientsWorkspacesMod._Protocol
+  inline def PCOIP: PCOIP = "PCOIP".asInstanceOf[PCOIP]
   
   @js.native
   sealed trait PCR_EVERY_PES_PACKET
@@ -48691,6 +48753,12 @@ object awsSdkStrings {
   inline def PREMIUM: PREMIUM = "PREMIUM".asInstanceOf[PREMIUM]
   
   @js.native
+  sealed trait PREMIUM_SUPPORT_REQUIRED
+    extends StObject
+       with _CheckFailureReason
+  inline def PREMIUM_SUPPORT_REQUIRED: PREMIUM_SUPPORT_REQUIRED = "PREMIUM_SUPPORT_REQUIRED".asInstanceOf[PREMIUM_SUPPORT_REQUIRED]
+  
+  @js.native
   sealed trait PREPARING
     extends StObject
        with _ChangeStatus
@@ -49060,7 +49128,6 @@ object awsSdkStrings {
   sealed trait PROCESS_OWNER
     extends StObject
        with typings.awsSdk.clientsAuditmanagerMod._RoleType
-  inline def PROCESS_OWNER: PROCESS_OWNER = "PROCESS_OWNER".asInstanceOf[PROCESS_OWNER]
   
   @js.native
   sealed trait PRODUCER_TIMESTAMP
@@ -50169,7 +50236,6 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsApplicationautoscalingMod._AdjustmentType
        with _ScalingAdjustmentType
-  inline def PercentChangeInCapacity: PercentChangeInCapacity = "PercentChangeInCapacity".asInstanceOf[PercentChangeInCapacity]
   
   @js.native
   sealed trait PercentIdleInstances
@@ -52245,7 +52311,6 @@ object awsSdkStrings {
   sealed trait REQUESTS
     extends StObject
        with _Unit
-  inline def REQUESTS: REQUESTS = "REQUESTS".asInstanceOf[REQUESTS]
   
   @js.native
   sealed trait REQUEST_BODY
@@ -52460,6 +52525,12 @@ object awsSdkStrings {
   inline def RESOURCES: RESOURCES = "RESOURCES".asInstanceOf[RESOURCES]
   
   @js.native
+  sealed trait RESOURCE_ALREADY_EXISTS
+    extends StObject
+       with typings.awsSdk.clientsLexmodelsv2Mod._ErrorCode
+  inline def RESOURCE_ALREADY_EXISTS: RESOURCE_ALREADY_EXISTS = "RESOURCE_ALREADY_EXISTS".asInstanceOf[RESOURCE_ALREADY_EXISTS]
+  
+  @js.native
   sealed trait RESOURCE_ARN
     extends StObject
        with _FieldNameString
@@ -52477,6 +52548,12 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsMigrationhubrefactorspacesMod._ErrorCode
   inline def RESOURCE_DELETION_FAILURE: RESOURCE_DELETION_FAILURE = "RESOURCE_DELETION_FAILURE".asInstanceOf[RESOURCE_DELETION_FAILURE]
+  
+  @js.native
+  sealed trait RESOURCE_DOES_NOT_EXIST
+    extends StObject
+       with typings.awsSdk.clientsLexmodelsv2Mod._ErrorCode
+  inline def RESOURCE_DOES_NOT_EXIST: RESOURCE_DOES_NOT_EXIST = "RESOURCE_DOES_NOT_EXIST".asInstanceOf[RESOURCE_DOES_NOT_EXIST]
   
   @js.native
   sealed trait RESOURCE_GROUP
@@ -54249,7 +54326,6 @@ object awsSdkStrings {
   sealed trait RegisteredNotSeen
     extends StObject
        with typings.awsSdk.clientsIotwirelessMod._DeviceState
-  inline def RegisteredNotSeen: RegisteredNotSeen = "RegisteredNotSeen".asInstanceOf[RegisteredNotSeen]
   
   @js.native
   sealed trait RegisteredReachable
@@ -63344,7 +63420,6 @@ object awsSdkStrings {
   sealed trait TRANSIT_GATEWAY_ATTACHMENT
     extends StObject
        with _ErrorResourceType
-  inline def TRANSIT_GATEWAY_ATTACHMENT: TRANSIT_GATEWAY_ATTACHMENT = "TRANSIT_GATEWAY_ATTACHMENT".asInstanceOf[TRANSIT_GATEWAY_ATTACHMENT]
   
   @js.native
   sealed trait TRANSIT_GATEWAY_ATTACHMENT_ATTACH_ARN_NO_MATCH
@@ -63442,6 +63517,10 @@ object awsSdkStrings {
        with _OperatorPropertiesKeys
        with typings.awsSdk.clientsAppflowMod._OperatorPropertiesKeys
   inline def TRUNCATE_LENGTH: TRUNCATE_LENGTH = "TRUNCATE_LENGTH".asInstanceOf[TRUNCATE_LENGTH]
+  
+  @js.native
+  sealed trait TRUSTED_ADVISOR extends StObject
+  inline def TRUSTED_ADVISOR: TRUSTED_ADVISOR = "TRUSTED_ADVISOR".asInstanceOf[TRUSTED_ADVISOR]
   
   @js.native
   sealed trait TSN
@@ -64797,6 +64876,7 @@ object awsSdkStrings {
     extends StObject
        with _ActiveDirectoryStatus
        with _AllowListStatusCode
+       with _CheckFailureReason
        with _ContainerServiceStateDetailCode
        with _DeliveryStreamFailureType
        with _ErrorCode
@@ -67937,6 +68017,7 @@ object awsSdkStrings {
   sealed trait WARNING
     extends StObject
        with _AnalysisResultLevel
+       with _CheckStatus
        with typings.awsSdk.clientsSecurityhubMod._ComplianceStatus
        with typings.awsSdk.clientsMedialiveMod._LogLevel
        with _LoggingLevel
@@ -68494,6 +68575,12 @@ object awsSdkStrings {
   inline def WS: WS = "WS".asInstanceOf[WS]
   
   @js.native
+  sealed trait WSP
+    extends StObject
+       with typings.awsSdk.clientsWorkspacesMod._Protocol
+  inline def WSP: WSP = "WSP".asInstanceOf[WSP]
+  
+  @js.native
   sealed trait WSS
     extends StObject
        with _ChannelProtocol
@@ -68994,7 +69081,6 @@ object awsSdkStrings {
   sealed trait XYZ
     extends StObject
        with _Colorimetry
-  inline def XYZ: XYZ = "XYZ".asInstanceOf[XYZ]
   
   @js.native
   sealed trait XssMatch
@@ -71170,7 +71256,6 @@ object awsSdkStrings {
   sealed trait c6gDotxlargeDotsearch
     extends StObject
        with _OpenSearchPartitionInstanceType
-  inline def c6gDotxlargeDotsearch: c6gDotxlargeDotsearch = "c6g.xlarge.search".asInstanceOf[c6gDotxlargeDotsearch]
   
   @js.native
   sealed trait c6gdDot12xlarge
@@ -73508,6 +73593,12 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsMachinelearningMod._SortOrder
   inline def dsc: dsc = "dsc".asInstanceOf[dsc]
+  
+  @js.native
+  sealed trait dual_stack_
+    extends StObject
+       with _NetworkType
+  inline def dual_stack_ : dual_stack_ = "dual_stack".asInstanceOf[dual_stack_]
   
   @js.native
   sealed trait dualstack
@@ -76336,7 +76427,9 @@ object awsSdkStrings {
        with typings.awsSdk.clientsEc2Mod._IpAddressType
        with typings.awsSdk.clientsElbv2Mod._IpAddressType
        with typings.awsSdk.clientsLightsailMod._IpAddressType
+       with _IpDiscovery
        with _IpFamily
+       with _NetworkType
        with _ServiceConnectivityType
        with _TargetGroupIpAddressTypeEnum
        with _TunnelInsideIpVersion
@@ -76361,7 +76454,9 @@ object awsSdkStrings {
        with typings.awsSdk.clientsDirectconnectMod._AddressFamily
        with _DnsRecordIpType
        with typings.awsSdk.clientsEc2Mod._IpAddressType
+       with _IpDiscovery
        with _IpFamily
+       with _NetworkType
        with _ServiceConnectivityType
        with _TargetGroupIpAddressTypeEnum
        with _TunnelInsideIpVersion
@@ -86884,7 +86979,6 @@ object awsSdkStrings {
   sealed trait x86_win32
     extends StObject
        with _TargetDevice
-  inline def x86_win32: x86_win32 = "x86_win32".asInstanceOf[x86_win32]
   
   @js.native
   sealed trait x86_win64

@@ -170,6 +170,10 @@ type AllocationStrategy = _AllocationStrategy | java.lang.String
 
 type AllocationType = used | java.lang.String
 
+type AllowedInstanceType = java.lang.String
+
+type AllowedInstanceTypeSet = js.Array[AllowedInstanceType]
+
 type AllowedPrincipalSet = js.Array[AllowedPrincipal]
 
 /* Rewritten from type alias, can be one of: 

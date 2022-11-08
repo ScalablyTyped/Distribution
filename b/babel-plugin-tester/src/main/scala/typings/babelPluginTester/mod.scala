@@ -190,6 +190,8 @@ object mod {
   /* Inlined parent babel-plugin-tester.babel-plugin-tester.Omit<@babel/core.@babel/core.TransformOptions, 'code' | 'only'> */
   trait PluginTesterOptions extends StObject {
     
+    var assumptions: js.UndefOr[StringDictionary[Boolean] | Null] = js.undefined
+    
     var ast: js.UndefOr[Boolean | Null] = js.undefined
     
     var auxiliaryCommentAfter: js.UndefOr[String | Null] = js.undefined
@@ -539,6 +541,12 @@ object mod {
     }
     
     extension [Self <: PluginTesterOptions](x: Self) {
+      
+      inline def setAssumptions(value: StringDictionary[Boolean]): Self = StObject.set(x, "assumptions", value.asInstanceOf[js.Any])
+      
+      inline def setAssumptionsNull: Self = StObject.set(x, "assumptions", null)
+      
+      inline def setAssumptionsUndefined: Self = StObject.set(x, "assumptions", js.undefined)
       
       inline def setAst(value: Boolean): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

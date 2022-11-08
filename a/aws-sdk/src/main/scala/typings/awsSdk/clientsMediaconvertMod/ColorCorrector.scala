@@ -12,7 +12,7 @@ trait ColorCorrector extends StObject {
   var Brightness: js.UndefOr[integerMin1Max100] = js.undefined
   
   /**
-    * Specify the color space you want for this output. The service supports conversion between HDR formats, between SDR formats, from SDR to HDR, and from HDR to SDR. SDR to HDR conversion doesn't upgrade the dynamic range. The converted video has an HDR format, but visually appears the same as an unconverted output. HDR to SDR conversion uses Elemental tone mapping technology to approximate the outcome of manually regrading from HDR to SDR.
+    * Specify the color space you want for this output. The service supports conversion between HDR formats, between SDR formats, from SDR to HDR, and from HDR to SDR. SDR to HDR conversion doesn't upgrade the dynamic range. The converted video has an HDR format, but visually appears the same as an unconverted output. HDR to SDR conversion uses Elemental tone mapping technology to approximate the outcome of manually regrading from HDR to SDR. Select Force P3D65 (SDR) to set the output color space metadata to the following: * Color primaries: Display P3 * Transfer characteristics: SMPTE 428M * Matrix coefficients: BT.709
     */
   var ColorSpaceConversion: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.ColorSpaceConversion] = js.undefined
   
@@ -40,6 +40,11 @@ trait ColorCorrector extends StObject {
     * Saturation level.
     */
   var Saturation: js.UndefOr[integerMin1Max100] = js.undefined
+  
+  /**
+    * Specify the reference white level, in nits, for all of your SDR inputs. Use to correct brightness levels within HDR10 outputs. The following color metadata must be present in your SDR input: color primaries, transfer characteristics, and matrix coefficients. If your SDR input has missing color metadata, or if you want to correct input color metadata, manually specify a color space in the input video selector. For 1,000 nit peak brightness displays, we recommend that you set SDR reference white level to 203 (according to ITU-R BT.2408). Leave blank to use the default value of 100, or specify an integer from 100 to 1000.
+    */
+  var SdrReferenceWhiteLevel: js.UndefOr[integerMin100Max1000] = js.undefined
 }
 object ColorCorrector {
   
@@ -77,5 +82,9 @@ object ColorCorrector {
     inline def setSaturation(value: integerMin1Max100): Self = StObject.set(x, "Saturation", value.asInstanceOf[js.Any])
     
     inline def setSaturationUndefined: Self = StObject.set(x, "Saturation", js.undefined)
+    
+    inline def setSdrReferenceWhiteLevel(value: integerMin100Max1000): Self = StObject.set(x, "SdrReferenceWhiteLevel", value.asInstanceOf[js.Any])
+    
+    inline def setSdrReferenceWhiteLevelUndefined: Self = StObject.set(x, "SdrReferenceWhiteLevel", js.undefined)
   }
 }

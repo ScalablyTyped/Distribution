@@ -16,5 +16,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ProgramLibrary protected ()
   extends typings.playcanvas.mod.ProgramLibrary {
-  def this(device: Any) = this()
+  def this(device: Any, standardMaterial: Any) = this()
 }

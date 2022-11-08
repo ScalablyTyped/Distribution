@@ -29,12 +29,12 @@ trait WellArchitected extends Service {
   var config_WellArchitected: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Create a lens share. The owner of a lens can share it with other Amazon Web Services accounts and IAM users in the same Amazon Web Services Region. Shared access to a lens is not removed until the lens invitation is deleted.   Disclaimer  By sharing your custom lenses with other Amazon Web Services accounts, you acknowledge that Amazon Web Services will make your custom lenses available to those other accounts. Those other accounts may continue to access and use your shared custom lenses even if you delete the custom lenses from your own Amazon Web Services account or terminate your Amazon Web Services account. 
+    * Create a lens share. The owner of a lens can share it with other Amazon Web Services accounts, IAM users, an organization, and organizational units (OUs) in the same Amazon Web Services Region. Shared access to a lens is not removed until the lens invitation is deleted.   Disclaimer  By sharing your custom lenses with other Amazon Web Services accounts, you acknowledge that Amazon Web Services will make your custom lenses available to those other accounts. Those other accounts may continue to access and use your shared custom lenses even if you delete the custom lenses from your own Amazon Web Services account or terminate your Amazon Web Services account. 
     */
   def createLensShare(): Request[CreateLensShareOutput, AWSError] = js.native
   def createLensShare(callback: js.Function2[/* err */ AWSError, /* data */ CreateLensShareOutput, Unit]): Request[CreateLensShareOutput, AWSError] = js.native
   /**
-    * Create a lens share. The owner of a lens can share it with other Amazon Web Services accounts and IAM users in the same Amazon Web Services Region. Shared access to a lens is not removed until the lens invitation is deleted.   Disclaimer  By sharing your custom lenses with other Amazon Web Services accounts, you acknowledge that Amazon Web Services will make your custom lenses available to those other accounts. Those other accounts may continue to access and use your shared custom lenses even if you delete the custom lenses from your own Amazon Web Services account or terminate your Amazon Web Services account. 
+    * Create a lens share. The owner of a lens can share it with other Amazon Web Services accounts, IAM users, an organization, and organizational units (OUs) in the same Amazon Web Services Region. Shared access to a lens is not removed until the lens invitation is deleted.   Disclaimer  By sharing your custom lenses with other Amazon Web Services accounts, you acknowledge that Amazon Web Services will make your custom lenses available to those other accounts. Those other accounts may continue to access and use your shared custom lenses even if you delete the custom lenses from your own Amazon Web Services account or terminate your Amazon Web Services account. 
     */
   def createLensShare(params: CreateLensShareInput): Request[CreateLensShareOutput, AWSError] = js.native
   def createLensShare(
@@ -71,12 +71,12 @@ trait WellArchitected extends Service {
   ): Request[CreateMilestoneOutput, AWSError] = js.native
   
   /**
-    * Create a new workload. The owner of a workload can share the workload with other Amazon Web Services accounts and IAM users in the same Amazon Web Services Region. Only the owner of a workload can delete it. For more information, see Defining a Workload in the Well-Architected Tool User Guide.
+    * Create a new workload. The owner of a workload can share the workload with other Amazon Web Services accounts, IAM users, an organization, and organizational units (OUs) in the same Amazon Web Services Region. Only the owner of a workload can delete it. For more information, see Defining a Workload in the Well-Architected Tool User Guide.
     */
   def createWorkload(): Request[CreateWorkloadOutput, AWSError] = js.native
   def createWorkload(callback: js.Function2[/* err */ AWSError, /* data */ CreateWorkloadOutput, Unit]): Request[CreateWorkloadOutput, AWSError] = js.native
   /**
-    * Create a new workload. The owner of a workload can share the workload with other Amazon Web Services accounts and IAM users in the same Amazon Web Services Region. Only the owner of a workload can delete it. For more information, see Defining a Workload in the Well-Architected Tool User Guide.
+    * Create a new workload. The owner of a workload can share the workload with other Amazon Web Services accounts, IAM users, an organization, and organizational units (OUs) in the same Amazon Web Services Region. Only the owner of a workload can delete it. For more information, see Defining a Workload in the Well-Architected Tool User Guide.
     */
   def createWorkload(params: CreateWorkloadInput): Request[CreateWorkloadOutput, AWSError] = js.native
   def createWorkload(
@@ -110,12 +110,12 @@ trait WellArchitected extends Service {
   def deleteLens(params: DeleteLensInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   
   /**
-    * Delete a lens share. After the lens share is deleted, Amazon Web Services accounts and IAM users that you shared the lens with can continue to use it, but they will no longer be able to apply it to new workloads.   Disclaimer  By sharing your custom lenses with other Amazon Web Services accounts, you acknowledge that Amazon Web Services will make your custom lenses available to those other accounts. Those other accounts may continue to access and use your shared custom lenses even if you delete the custom lenses from your own Amazon Web Services account or terminate your Amazon Web Services account. 
+    * Delete a lens share. After the lens share is deleted, Amazon Web Services accounts, IAM users, organizations, and organizational units (OUs) that you shared the lens with can continue to use it, but they will no longer be able to apply it to new workloads.   Disclaimer  By sharing your custom lenses with other Amazon Web Services accounts, you acknowledge that Amazon Web Services will make your custom lenses available to those other accounts. Those other accounts may continue to access and use your shared custom lenses even if you delete the custom lenses from your own Amazon Web Services account or terminate your Amazon Web Services account. 
     */
   def deleteLensShare(): Request[js.Object, AWSError] = js.native
   def deleteLensShare(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Delete a lens share. After the lens share is deleted, Amazon Web Services accounts and IAM users that you shared the lens with can continue to use it, but they will no longer be able to apply it to new workloads.   Disclaimer  By sharing your custom lenses with other Amazon Web Services accounts, you acknowledge that Amazon Web Services will make your custom lenses available to those other accounts. Those other accounts may continue to access and use your shared custom lenses even if you delete the custom lenses from your own Amazon Web Services account or terminate your Amazon Web Services account. 
+    * Delete a lens share. After the lens share is deleted, Amazon Web Services accounts, IAM users, organizations, and organizational units (OUs) that you shared the lens with can continue to use it, but they will no longer be able to apply it to new workloads.   Disclaimer  By sharing your custom lenses with other Amazon Web Services accounts, you acknowledge that Amazon Web Services will make your custom lenses available to those other accounts. Those other accounts may continue to access and use your shared custom lenses even if you delete the custom lenses from your own Amazon Web Services account or terminate your Amazon Web Services account. 
     */
   def deleteLensShare(params: DeleteLensShareInput): Request[js.Object, AWSError] = js.native
   def deleteLensShare(
@@ -301,6 +301,34 @@ trait WellArchitected extends Service {
     params: ListAnswersInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAnswersOutput, Unit]
   ): Request[ListAnswersOutput, AWSError] = js.native
+  
+  /**
+    * List of Trusted Advisor check details by account related to the workload.
+    */
+  def listCheckDetails(): Request[ListCheckDetailsOutput, AWSError] = js.native
+  def listCheckDetails(callback: js.Function2[/* err */ AWSError, /* data */ ListCheckDetailsOutput, Unit]): Request[ListCheckDetailsOutput, AWSError] = js.native
+  /**
+    * List of Trusted Advisor check details by account related to the workload.
+    */
+  def listCheckDetails(params: ListCheckDetailsInput): Request[ListCheckDetailsOutput, AWSError] = js.native
+  def listCheckDetails(
+    params: ListCheckDetailsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCheckDetailsOutput, Unit]
+  ): Request[ListCheckDetailsOutput, AWSError] = js.native
+  
+  /**
+    * List of Trusted Advisor checks summarized for all accounts related to the workload.
+    */
+  def listCheckSummaries(): Request[ListCheckSummariesOutput, AWSError] = js.native
+  def listCheckSummaries(callback: js.Function2[/* err */ AWSError, /* data */ ListCheckSummariesOutput, Unit]): Request[ListCheckSummariesOutput, AWSError] = js.native
+  /**
+    * List of Trusted Advisor checks summarized for all accounts related to the workload.
+    */
+  def listCheckSummaries(params: ListCheckSummariesInput): Request[ListCheckSummariesOutput, AWSError] = js.native
+  def listCheckSummaries(
+    params: ListCheckSummariesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCheckSummariesOutput, Unit]
+  ): Request[ListCheckSummariesOutput, AWSError] = js.native
   
   /**
     * List lens review improvements.
@@ -513,12 +541,12 @@ trait WellArchitected extends Service {
   ): Request[UpdateLensReviewOutput, AWSError] = js.native
   
   /**
-    * Update a workload invitation.
+    * Update a workload or custom lens share invitation.  This API operation can be called independently of any resource. Previous documentation implied that a workload ARN must be specified. 
     */
   def updateShareInvitation(): Request[UpdateShareInvitationOutput, AWSError] = js.native
   def updateShareInvitation(callback: js.Function2[/* err */ AWSError, /* data */ UpdateShareInvitationOutput, Unit]): Request[UpdateShareInvitationOutput, AWSError] = js.native
   /**
-    * Update a workload invitation.
+    * Update a workload or custom lens share invitation.  This API operation can be called independently of any resource. Previous documentation implied that a workload ARN must be specified. 
     */
   def updateShareInvitation(params: UpdateShareInvitationInput): Request[UpdateShareInvitationOutput, AWSError] = js.native
   def updateShareInvitation(

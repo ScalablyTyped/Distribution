@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "paypal-checkout-components"
-version := "4.0-dt-20220214Z-d73460"
+version := "4.0-dt-20221108Z-b6158b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

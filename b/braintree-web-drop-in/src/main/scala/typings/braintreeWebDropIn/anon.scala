@@ -346,6 +346,8 @@ object anon {
     
     var color: js.UndefOr[ButtonColorOption] = js.undefined
     
+    var height: js.UndefOr[Double] = js.undefined
+    
     var label: js.UndefOr[ButtonLabelOption] = js.undefined
     
     var shape: js.UndefOr[ButtonShapeOption] = js.undefined
@@ -366,6 +368,10 @@ object anon {
       inline def setColor(value: ButtonColorOption): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       inline def setLabel(value: ButtonLabelOption): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

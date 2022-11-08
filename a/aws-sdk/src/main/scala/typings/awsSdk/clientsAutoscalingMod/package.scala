@@ -50,6 +50,10 @@ type AdjustmentTypes = js.Array[AdjustmentType]
 
 type Alarms = js.Array[Alarm]
 
+type AllowedInstanceType = String
+
+type AllowedInstanceTypes = js.Array[AllowedInstanceType]
+
 type AsciiStringMaxLen255 = String
 
 type AssociatePublicIpAddress = Boolean

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreatePlacementGroupResult extends StObject {
   
+  /**
+    * Information about the placement group.
+    */
   var PlacementGroup: js.UndefOr[typings.awsSdk.clientsEc2Mod.PlacementGroup] = js.undefined
 }
 object CreatePlacementGroupResult {

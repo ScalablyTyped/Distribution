@@ -22,6 +22,11 @@ trait GetEventDataStoreResponse extends StObject {
   var EventDataStoreArn: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.EventDataStoreArn] = js.undefined
   
   /**
+    * Specifies the KMS key ID that encrypts the events delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the following format.  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
+    */
+  var KmsKeyId: js.UndefOr[EventDataStoreKmsKeyId] = js.undefined
+  
+  /**
     * Indicates whether the event data store includes events from all regions, or only from the region in which it was created.
     */
   var MultiRegionEnabled: js.UndefOr[Boolean] = js.undefined
@@ -78,6 +83,10 @@ object GetEventDataStoreResponse {
     inline def setEventDataStoreArn(value: EventDataStoreArn): Self = StObject.set(x, "EventDataStoreArn", value.asInstanceOf[js.Any])
     
     inline def setEventDataStoreArnUndefined: Self = StObject.set(x, "EventDataStoreArn", js.undefined)
+    
+    inline def setKmsKeyId(value: EventDataStoreKmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     inline def setMultiRegionEnabled(value: Boolean): Self = StObject.set(x, "MultiRegionEnabled", value.asInstanceOf[js.Any])
     

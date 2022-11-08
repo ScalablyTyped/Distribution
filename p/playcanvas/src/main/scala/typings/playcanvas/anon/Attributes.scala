@@ -9,7 +9,7 @@ trait Attributes extends StObject {
   
   var attributes: StringDictionary[String]
   
-  var fshader: String
+  var fshader: js.UndefOr[String] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -19,8 +19,8 @@ trait Attributes extends StObject {
 }
 object Attributes {
   
-  inline def apply(attributes: StringDictionary[String], fshader: String, vshader: String): Attributes = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], fshader = fshader.asInstanceOf[js.Any], vshader = vshader.asInstanceOf[js.Any])
+  inline def apply(attributes: StringDictionary[String], vshader: String): Attributes = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], vshader = vshader.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
   
@@ -29,6 +29,8 @@ object Attributes {
     inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setFshader(value: String): Self = StObject.set(x, "fshader", value.asInstanceOf[js.Any])
+    
+    inline def setFshaderUndefined: Self = StObject.set(x, "fshader", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

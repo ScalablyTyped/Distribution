@@ -27,7 +27,7 @@ trait ReplicationGroup extends StObject {
   var AuthTokenLastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  If you are running Redis engine version 6.0 or later, set this parameter to yes if you want to opt-in to the next auto minor version upgrade campaign. This parameter is disabled for previous versions.  
+    *  If you are running Redis engine version 6.0 or later, set this parameter to yes if you want to opt-in to the next auto minor version upgrade campaign. This parameter is disabled for previous versions. 
     */
   var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
@@ -67,6 +67,11 @@ trait ReplicationGroup extends StObject {
   var GlobalReplicationGroupInfo: js.UndefOr[typings.awsSdk.clientsElasticacheMod.GlobalReplicationGroupInfo] = js.undefined
   
   /**
+    * The network type you choose when modifying a cluster, either ipv4 | ipv6. IPv6 is supported for workloads using Redis engine version 6.2 onward or Memcached engine version 1.6.6 on all instances built on the Nitro system.
+    */
+  var IpDiscovery: js.UndefOr[typings.awsSdk.clientsElasticacheMod.IpDiscovery] = js.undefined
+  
+  /**
     * The ID of the KMS key used to encrypt the disk in the cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
@@ -90,6 +95,11 @@ trait ReplicationGroup extends StObject {
     * A flag indicating if you have Multi-AZ enabled to enhance fault tolerance. For more information, see Minimizing Downtime: Multi-AZ 
     */
   var MultiAZ: js.UndefOr[MultiAZStatus] = js.undefined
+  
+  /**
+    * Must be either ipv4 | ipv6 | dual_stack. IPv6 is supported for workloads using Redis engine version 6.2 onward or Memcached engine version 1.6.6 on all instances built on the Nitro system.
+    */
+  var NetworkType: js.UndefOr[typings.awsSdk.clientsElasticacheMod.NetworkType] = js.undefined
   
   /**
     * A list of node groups in this replication group. For Redis (cluster mode disabled) replication groups, this is a single-element list. For Redis (cluster mode enabled) replication groups, the list contains an entry for each node group (shard).
@@ -198,6 +208,10 @@ object ReplicationGroup {
     
     inline def setGlobalReplicationGroupInfoUndefined: Self = StObject.set(x, "GlobalReplicationGroupInfo", js.undefined)
     
+    inline def setIpDiscovery(value: IpDiscovery): Self = StObject.set(x, "IpDiscovery", value.asInstanceOf[js.Any])
+    
+    inline def setIpDiscoveryUndefined: Self = StObject.set(x, "IpDiscovery", js.undefined)
+    
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
@@ -223,6 +237,10 @@ object ReplicationGroup {
     inline def setMultiAZ(value: MultiAZStatus): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
     
     inline def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
+    
+    inline def setNetworkType(value: NetworkType): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
     
     inline def setNodeGroups(value: NodeGroupList): Self = StObject.set(x, "NodeGroups", value.asInstanceOf[js.Any])
     

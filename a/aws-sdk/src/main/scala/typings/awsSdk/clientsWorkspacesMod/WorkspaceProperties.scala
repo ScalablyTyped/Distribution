@@ -12,6 +12,11 @@ trait WorkspaceProperties extends StObject {
   var ComputeTypeName: js.UndefOr[Compute] = js.undefined
   
   /**
+    * The protocol. For more information, see  Protocols for Amazon WorkSpaces.    Only available for WorkSpaces created with PCoIP bundles.   The Protocols property is case sensitive. Ensure you use PCOIP or WSP.   Unavailable for Windows 7 WorkSpaces and WorkSpaces using GPU-based bundles (Graphics, GraphicsPro, Graphics.g4dn, and GraphicsPro.g4dn).   
+    */
+  var Protocols: js.UndefOr[ProtocolList] = js.undefined
+  
+  /**
     * The size of the root volume. For important information about how to modify the size of the root and user volumes, see Modify a WorkSpace.
     */
   var RootVolumeSizeGib: js.UndefOr[typings.awsSdk.clientsWorkspacesMod.RootVolumeSizeGib] = js.undefined
@@ -43,6 +48,12 @@ object WorkspaceProperties {
     inline def setComputeTypeName(value: Compute): Self = StObject.set(x, "ComputeTypeName", value.asInstanceOf[js.Any])
     
     inline def setComputeTypeNameUndefined: Self = StObject.set(x, "ComputeTypeName", js.undefined)
+    
+    inline def setProtocols(value: ProtocolList): Self = StObject.set(x, "Protocols", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolsUndefined: Self = StObject.set(x, "Protocols", js.undefined)
+    
+    inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "Protocols", js.Array(value*))
     
     inline def setRootVolumeSizeGib(value: RootVolumeSizeGib): Self = StObject.set(x, "RootVolumeSizeGib", value.asInstanceOf[js.Any])
     

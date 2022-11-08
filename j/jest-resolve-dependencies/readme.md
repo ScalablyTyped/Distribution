@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-resolve-dependencies
 
-Typings are for version 29.2.2
+Typings are for version 29.3.0
 
 
 

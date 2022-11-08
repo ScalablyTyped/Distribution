@@ -12,6 +12,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LexModelsV2 extends Service {
   
   /**
+    * Batch create custom vocabulary item for the specified locale in the specified bot.
+    */
+  def batchCreateCustomVocabularyItem(): Request[BatchCreateCustomVocabularyItemResponse, AWSError] = js.native
+  def batchCreateCustomVocabularyItem(
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateCustomVocabularyItemResponse, Unit]
+  ): Request[BatchCreateCustomVocabularyItemResponse, AWSError] = js.native
+  /**
+    * Batch create custom vocabulary item for the specified locale in the specified bot.
+    */
+  def batchCreateCustomVocabularyItem(params: BatchCreateCustomVocabularyItemRequest): Request[BatchCreateCustomVocabularyItemResponse, AWSError] = js.native
+  def batchCreateCustomVocabularyItem(
+    params: BatchCreateCustomVocabularyItemRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateCustomVocabularyItemResponse, Unit]
+  ): Request[BatchCreateCustomVocabularyItemResponse, AWSError] = js.native
+  
+  /**
+    * Batch delete custom vocabulary item for the specified locale in the specified bot.
+    */
+  def batchDeleteCustomVocabularyItem(): Request[BatchDeleteCustomVocabularyItemResponse, AWSError] = js.native
+  def batchDeleteCustomVocabularyItem(
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteCustomVocabularyItemResponse, Unit]
+  ): Request[BatchDeleteCustomVocabularyItemResponse, AWSError] = js.native
+  /**
+    * Batch delete custom vocabulary item for the specified locale in the specified bot.
+    */
+  def batchDeleteCustomVocabularyItem(params: BatchDeleteCustomVocabularyItemRequest): Request[BatchDeleteCustomVocabularyItemResponse, AWSError] = js.native
+  def batchDeleteCustomVocabularyItem(
+    params: BatchDeleteCustomVocabularyItemRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteCustomVocabularyItemResponse, Unit]
+  ): Request[BatchDeleteCustomVocabularyItemResponse, AWSError] = js.native
+  
+  /**
+    * Batch update custom vocabulary item for the specified locale in the specified bot.
+    */
+  def batchUpdateCustomVocabularyItem(): Request[BatchUpdateCustomVocabularyItemResponse, AWSError] = js.native
+  def batchUpdateCustomVocabularyItem(
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdateCustomVocabularyItemResponse, Unit]
+  ): Request[BatchUpdateCustomVocabularyItemResponse, AWSError] = js.native
+  /**
+    * Batch update custom vocabulary item for the specified locale in the specified bot.
+    */
+  def batchUpdateCustomVocabularyItem(params: BatchUpdateCustomVocabularyItemRequest): Request[BatchUpdateCustomVocabularyItemResponse, AWSError] = js.native
+  def batchUpdateCustomVocabularyItem(
+    params: BatchUpdateCustomVocabularyItemRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdateCustomVocabularyItemResponse, Unit]
+  ): Request[BatchUpdateCustomVocabularyItemResponse, AWSError] = js.native
+  
+  /**
     * Builds a bot, its intents, and its slot types into a specific locale. A bot can be built into multiple locales. At runtime the locale is used to choose a specific build of the bot.
     */
   def buildBotLocale(): Request[BuildBotLocaleResponse, AWSError] = js.native
@@ -644,6 +692,20 @@ trait LexModelsV2 extends Service {
   ): Request[ListBuiltInSlotTypesResponse, AWSError] = js.native
   
   /**
+    * List custom vocabulary items for the specified locale in the specified bot.
+    */
+  def listCustomVocabularyItems(): Request[ListCustomVocabularyItemsResponse, AWSError] = js.native
+  def listCustomVocabularyItems(callback: js.Function2[/* err */ AWSError, /* data */ ListCustomVocabularyItemsResponse, Unit]): Request[ListCustomVocabularyItemsResponse, AWSError] = js.native
+  /**
+    * List custom vocabulary items for the specified locale in the specified bot.
+    */
+  def listCustomVocabularyItems(params: ListCustomVocabularyItemsRequest): Request[ListCustomVocabularyItemsResponse, AWSError] = js.native
+  def listCustomVocabularyItems(
+    params: ListCustomVocabularyItemsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCustomVocabularyItemsResponse, Unit]
+  ): Request[ListCustomVocabularyItemsResponse, AWSError] = js.native
+  
+  /**
     * Lists the exports for a bot, bot locale, or custom vocabulary. Exports are kept in the list for 7 days.
     */
   def listExports(): Request[ListExportsResponse, AWSError] = js.native
@@ -686,12 +748,12 @@ trait LexModelsV2 extends Service {
   ): Request[ListIntentsResponse, AWSError] = js.native
   
   /**
-    * Gets a list of recommended intents provided by the bot recommendation that you can use in your bot.
+    * Gets a list of recommended intents provided by the bot recommendation that you can use in your bot. Intents in the response are ordered by relevance.
     */
   def listRecommendedIntents(): Request[ListRecommendedIntentsResponse, AWSError] = js.native
   def listRecommendedIntents(callback: js.Function2[/* err */ AWSError, /* data */ ListRecommendedIntentsResponse, Unit]): Request[ListRecommendedIntentsResponse, AWSError] = js.native
   /**
-    * Gets a list of recommended intents provided by the bot recommendation that you can use in your bot.
+    * Gets a list of recommended intents provided by the bot recommendation that you can use in your bot. Intents in the response are ordered by relevance.
     */
   def listRecommendedIntents(params: ListRecommendedIntentsRequest): Request[ListRecommendedIntentsResponse, AWSError] = js.native
   def listRecommendedIntents(

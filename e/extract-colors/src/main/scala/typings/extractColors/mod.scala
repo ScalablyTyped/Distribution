@@ -1,5 +1,10 @@
 package typings.extractColors
 
+import typings.extractColors.extractColorsStrings._empty
+import typings.extractColors.extractColorsStrings.`use-credentials`
+import typings.extractColors.extractColorsStrings.anonymous
+import typings.std.HTMLImageElement
+import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +17,13 @@ object mod {
   
   inline def extractColors(src: String): js.Promise[js.Array[Colors]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractColors")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Colors]]]
   inline def extractColors(src: String, options: Options): js.Promise[js.Array[Colors]] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractColors")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Colors]]]
+  inline def extractColors(src: HTMLImageElement): js.Promise[js.Array[Colors]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractColors")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Colors]]]
+  inline def extractColors(src: HTMLImageElement, options: Options): js.Promise[js.Array[Colors]] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractColors")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Colors]]]
+  inline def extractColors(src: ImageData): js.Promise[js.Array[Colors]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractColors")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Colors]]]
+  inline def extractColors(src: ImageData, options: Options): js.Promise[js.Array[Colors]] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractColors")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Colors]]]
   
-  inline def extractColorsFromImageData(imageData: String): js.Array[Colors] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractColorsFromImageData")(imageData.asInstanceOf[js.Any]).asInstanceOf[js.Array[Colors]]
-  inline def extractColorsFromImageData(imageData: String, option: Options): js.Array[Colors] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractColorsFromImageData")(imageData.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Array[Colors]]
+  inline def extractColorsFromImageData(imageData: ImageData): js.Array[Colors] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractColorsFromImageData")(imageData.asInstanceOf[js.Any]).asInstanceOf[js.Array[Colors]]
+  inline def extractColorsFromImageData(imageData: ImageData, option: Options): js.Array[Colors] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractColorsFromImageData")(imageData.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Array[Colors]]
   
   inline def extractColorsFromSrc(src: String): js.Array[Colors] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractColorsFromSrc")(src.asInstanceOf[js.Any]).asInstanceOf[js.Array[Colors]]
   inline def extractColorsFromSrc(src: String, option: Options): js.Array[Colors] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractColorsFromSrc")(src.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Array[Colors]]
@@ -90,14 +99,14 @@ object mod {
       * @param alpha
       */
     var colorValidator: js.UndefOr[
-        js.Function4[/* red */ Double, /* green */ Double, /* blue */ Double, /* alpha */ Double, Unit]
+        js.Function4[/* red */ Double, /* green */ Double, /* blue */ Double, /* alpha */ Double, Boolean]
       ] = js.undefined
     
     /**
       * Only for browser, can be 'Anonymous' to avoid CORS
       * @default null
       */
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     /**
       * From 0 to 1 is the color distance to not have near colors (1 distance is between white and black)
@@ -132,11 +141,11 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setColorValidator(value: (/* red */ Double, /* green */ Double, /* blue */ Double, /* alpha */ Double) => Unit): Self = StObject.set(x, "colorValidator", js.Any.fromFunction4(value))
+      inline def setColorValidator(value: (/* red */ Double, /* green */ Double, /* blue */ Double, /* alpha */ Double) => Boolean): Self = StObject.set(x, "colorValidator", js.Any.fromFunction4(value))
       
       inline def setColorValidatorUndefined: Self = StObject.set(x, "colorValidator", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       

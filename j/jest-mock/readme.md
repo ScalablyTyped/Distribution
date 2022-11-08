@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-mock
 
-Typings are for version 29.2.2
+Typings are for version 29.3.0
 
 ## Library description:
 **Note:** More details on user side API can be found in [Jest documentation](https://jestjs.io/docs/mock-function-api).

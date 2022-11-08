@@ -112,6 +112,11 @@ trait StepExecution extends StObject {
   var TimeoutSeconds: js.UndefOr[Long] = js.undefined
   
   /**
+    * The CloudWatch alarms that were invoked by the automation.
+    */
+  var TriggeredAlarms: js.UndefOr[AlarmStateInformationList] = js.undefined
+  
+  /**
     * Strategies used when step fails, we support Continue and Abort. Abort will fail the automation when the step fails. Continue will ignore the failure of current step and allow automation to run the next step. With conditional branching, we add step:stepName to support the automation to go to another specific step.
     */
   var ValidNextSteps: js.UndefOr[ValidNextStepList] = js.undefined
@@ -210,6 +215,12 @@ object StepExecution {
     inline def setTimeoutSeconds(value: Long): Self = StObject.set(x, "TimeoutSeconds", value.asInstanceOf[js.Any])
     
     inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "TimeoutSeconds", js.undefined)
+    
+    inline def setTriggeredAlarms(value: AlarmStateInformationList): Self = StObject.set(x, "TriggeredAlarms", value.asInstanceOf[js.Any])
+    
+    inline def setTriggeredAlarmsUndefined: Self = StObject.set(x, "TriggeredAlarms", js.undefined)
+    
+    inline def setTriggeredAlarmsVarargs(value: AlarmStateInformation*): Self = StObject.set(x, "TriggeredAlarms", js.Array(value*))
     
     inline def setValidNextSteps(value: ValidNextStepList): Self = StObject.set(x, "ValidNextSteps", value.asInstanceOf[js.Any])
     

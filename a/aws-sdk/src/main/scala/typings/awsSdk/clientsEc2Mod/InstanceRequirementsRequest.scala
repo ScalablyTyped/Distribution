@@ -32,6 +32,11 @@ trait InstanceRequirementsRequest extends StObject {
   var AcceleratorTypes: js.UndefOr[AcceleratorTypeSet] = js.undefined
   
   /**
+    * The instance types to apply your specified attributes against. All other instance types are ignored, even if they match your specified attributes. You can use strings with one or more wild cards, represented by an asterisk (*), to allow an instance type, size, or generation. The following are examples: m5.8xlarge, c5*.*, m5a.*, r*, *3*. For example, if you specify c5*,Amazon EC2 will allow the entire C5 instance family, which includes all C5a and C5n instance types. If you specify m5a.*, Amazon EC2 will allow all the M5a instance types, but not the M5n instance types.  If you specify AllowedInstanceTypes, you can't specify ExcludedInstanceTypes.  Default: All instance types
+    */
+  var AllowedInstanceTypes: js.UndefOr[AllowedInstanceTypeSet] = js.undefined
+  
+  /**
     * Indicates whether bare metal instance types must be included, excluded, or required.   To include bare metal instance types, specify included.   To require only bare metal instance types, specify required.   To exclude bare metal instance types, specify excluded.   Default: excluded 
     */
   var BareMetal: js.UndefOr[typings.awsSdk.clientsEc2Mod.BareMetal] = js.undefined
@@ -52,7 +57,7 @@ trait InstanceRequirementsRequest extends StObject {
   var CpuManufacturers: js.UndefOr[CpuManufacturerSet] = js.undefined
   
   /**
-    * The instance types to exclude. You can use strings with one or more wild cards, represented by an asterisk (*), to exclude an instance family, type, size, or generation. The following are examples: m5.8xlarge, c5*.*, m5a.*, r*, *3*. For example, if you specify c5*,Amazon EC2 will exclude the entire C5 instance family, which includes all C5a and C5n instance types. If you specify m5a.*, Amazon EC2 will exclude all the M5a instance types, but not the M5n instance types. Default: No excluded instance types
+    * The instance types to exclude. You can use strings with one or more wild cards, represented by an asterisk (*), to exclude an instance family, type, size, or generation. The following are examples: m5.8xlarge, c5*.*, m5a.*, r*, *3*. For example, if you specify c5*,Amazon EC2 will exclude the entire C5 instance family, which includes all C5a and C5n instance types. If you specify m5a.*, Amazon EC2 will exclude all the M5a instance types, but not the M5n instance types.  If you specify ExcludedInstanceTypes, you can't specify AllowedInstanceTypes.  Default: No excluded instance types
     */
   var ExcludedInstanceTypes: js.UndefOr[ExcludedInstanceTypeSet] = js.undefined
   
@@ -80,6 +85,11 @@ trait InstanceRequirementsRequest extends StObject {
     * The minimum and maximum amount of memory, in MiB.
     */
   var MemoryMiB: MemoryMiBRequest
+  
+  /**
+    * The minimum and maximum amount of network bandwidth, in gigabits per second (Gbps). Default: No minimum or maximum limits
+    */
+  var NetworkBandwidthGbps: js.UndefOr[NetworkBandwidthGbpsRequest] = js.undefined
   
   /**
     * The minimum and maximum number of network interfaces. Default: No minimum or maximum limits
@@ -146,6 +156,12 @@ object InstanceRequirementsRequest {
     
     inline def setAcceleratorTypesVarargs(value: AcceleratorType*): Self = StObject.set(x, "AcceleratorTypes", js.Array(value*))
     
+    inline def setAllowedInstanceTypes(value: AllowedInstanceTypeSet): Self = StObject.set(x, "AllowedInstanceTypes", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedInstanceTypesUndefined: Self = StObject.set(x, "AllowedInstanceTypes", js.undefined)
+    
+    inline def setAllowedInstanceTypesVarargs(value: AllowedInstanceType*): Self = StObject.set(x, "AllowedInstanceTypes", js.Array(value*))
+    
     inline def setBareMetal(value: BareMetal): Self = StObject.set(x, "BareMetal", value.asInstanceOf[js.Any])
     
     inline def setBareMetalUndefined: Self = StObject.set(x, "BareMetal", js.undefined)
@@ -191,6 +207,10 @@ object InstanceRequirementsRequest {
     inline def setMemoryGiBPerVCpuUndefined: Self = StObject.set(x, "MemoryGiBPerVCpu", js.undefined)
     
     inline def setMemoryMiB(value: MemoryMiBRequest): Self = StObject.set(x, "MemoryMiB", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkBandwidthGbps(value: NetworkBandwidthGbpsRequest): Self = StObject.set(x, "NetworkBandwidthGbps", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkBandwidthGbpsUndefined: Self = StObject.set(x, "NetworkBandwidthGbps", js.undefined)
     
     inline def setNetworkInterfaceCount(value: NetworkInterfaceCountRequest): Self = StObject.set(x, "NetworkInterfaceCount", value.asInstanceOf[js.Any])
     

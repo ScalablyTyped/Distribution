@@ -9,7 +9,7 @@ trait GetQueryResultsRequest extends StObject {
   /**
     * The ARN (or ID suffix of the ARN) of the event data store against which the query was run.
     */
-  var EventDataStore: EventDataStoreArn
+  var EventDataStore: js.UndefOr[EventDataStoreArn] = js.undefined
   
   /**
     * The maximum number of query results to display on a single page.
@@ -28,14 +28,16 @@ trait GetQueryResultsRequest extends StObject {
 }
 object GetQueryResultsRequest {
   
-  inline def apply(EventDataStore: EventDataStoreArn, QueryId: UUID): GetQueryResultsRequest = {
-    val __obj = js.Dynamic.literal(EventDataStore = EventDataStore.asInstanceOf[js.Any], QueryId = QueryId.asInstanceOf[js.Any])
+  inline def apply(QueryId: UUID): GetQueryResultsRequest = {
+    val __obj = js.Dynamic.literal(QueryId = QueryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueryResultsRequest]
   }
   
   extension [Self <: GetQueryResultsRequest](x: Self) {
     
     inline def setEventDataStore(value: EventDataStoreArn): Self = StObject.set(x, "EventDataStore", value.asInstanceOf[js.Any])
+    
+    inline def setEventDataStoreUndefined: Self = StObject.set(x, "EventDataStore", js.undefined)
     
     inline def setMaxQueryResults(value: MaxQueryResults): Self = StObject.set(x, "MaxQueryResults", value.asInstanceOf[js.Any])
     

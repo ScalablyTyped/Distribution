@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-pixel-width
 
-Typings are for version 1.7
+Typings are for version 1.10
 
 ## Library description:
 String pixel width measurement on the backend in Javascript

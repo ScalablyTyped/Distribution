@@ -17,12 +17,12 @@ trait CreateLaunchConfigurationType extends StObject {
   var BlockDeviceMappings: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.BlockDeviceMappings] = js.undefined
   
   /**
-    *  EC2-Classic retires on August 15, 2022. This property is not supported after that date.  The ID of a ClassicLink-enabled VPC to link your EC2-Classic instances to. For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances.
+    * Available for backward compatibility.
     */
   var ClassicLinkVPCId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    *  EC2-Classic retires on August 15, 2022. This property is not supported after that date.  The IDs of one or more security groups for the specified ClassicLink-enabled VPC. If you specify the ClassicLinkVPCId property, you must specify ClassicLinkVPCSecurityGroups.
+    * Available for backward compatibility.
     */
   var ClassicLinkVPCSecurityGroups: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.ClassicLinkVPCSecurityGroups] = js.undefined
   

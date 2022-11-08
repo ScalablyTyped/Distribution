@@ -2,11 +2,11 @@ package typings.blueprintjsPopover2
 
 import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
-import typings.blueprintjsPopover2.anon.PartialModifieranyobject
 import typings.blueprintjsPopover2.anon.PartialTooltip2PropsHTMLP
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`hover-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.hover
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2TargetProps
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperCustomModifer
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperModifierOverrides
 import typings.popperjsCore.libEnumsMod.Boundary
 import typings.popperjsCore.libEnumsMod.Placement
@@ -129,7 +129,7 @@ object libEsmTooltip2Mod {
     
     var modifiers: js.UndefOr[PopperModifierOverrides] = js.undefined
     
-    var modifiersCustom: js.UndefOr[js.Array[PartialModifieranyobject]] = js.undefined
+    var modifiersCustom: js.UndefOr[js.Array[PopperCustomModifer]] = js.undefined
     
     var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
     
@@ -275,11 +275,11 @@ object libEsmTooltip2Mod {
       
       inline def setModifiers(value: PopperModifierOverrides): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      inline def setModifiersCustom(value: js.Array[PartialModifieranyobject]): Self = StObject.set(x, "modifiersCustom", value.asInstanceOf[js.Any])
+      inline def setModifiersCustom(value: js.Array[PopperCustomModifer]): Self = StObject.set(x, "modifiersCustom", value.asInstanceOf[js.Any])
       
       inline def setModifiersCustomUndefined: Self = StObject.set(x, "modifiersCustom", js.undefined)
       
-      inline def setModifiersCustomVarargs(value: PartialModifieranyobject*): Self = StObject.set(x, "modifiersCustom", js.Array(value*))
+      inline def setModifiersCustomVarargs(value: PopperCustomModifer*): Self = StObject.set(x, "modifiersCustom", js.Array(value*))
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       

@@ -8,6 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type AccountId = java.lang.String
+
 type AdvancedEventSelectors = js.Array[AdvancedEventSelector]
 
 type AdvancedFieldSelectors = js.Array[AdvancedFieldSelector]
@@ -58,6 +60,8 @@ type ErrorMessage = java.lang.String
 type EventCategory = insight | java.lang.String
 
 type EventDataStoreArn = java.lang.String
+
+type EventDataStoreKmsKeyId = java.lang.String
 
 type EventDataStoreName = java.lang.String
 

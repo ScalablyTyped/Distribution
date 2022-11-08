@@ -164,6 +164,18 @@ open class Camera () extends StObject {
   
   def getExposure(): Double = js.native
   
+  /**
+    * Returns an array of corners of the frustum of the camera in the local coordinate system of the camera.
+    *
+    * @param {number} [near] - Near distance for the frustum points. Defaults to the near clip distance of the camera.
+    * @param {number} [far] - Far distance for the frustum points. Defaults to the far clip distance of the camera.
+    * @returns {Vec3[]} - An array of corners, using a global storage space.
+    */
+  def getFrustumCorners(): js.Array[Vec3] = js.native
+  def getFrustumCorners(near: Double): js.Array[Vec3] = js.native
+  def getFrustumCorners(near: Double, far: Double): js.Array[Vec3] = js.native
+  def getFrustumCorners(near: Unit, far: Double): js.Array[Vec3] = js.native
+  
   def getProjectionMatrixSkybox(): Mat4 = js.native
   
   def getScreenSize(sphere: Any): Double = js.native

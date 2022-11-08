@@ -9,6 +9,7 @@ import typings.yandexMaps.mod.control.IListBoxParameters
 import typings.yandexMaps.mod.control.IManagerOptions
 import typings.yandexMaps.mod.control.IRouteButtonParameters
 import typings.yandexMaps.mod.control.IRouteEditorParameters
+import typings.yandexMaps.mod.control.IRoutePanelParameters
 import typings.yandexMaps.mod.control.IRulerControlParameters
 import typings.yandexMaps.mod.control.ISearchControlParameters
 import typings.yandexMaps.mod.control.ITypeSelectorParameters
@@ -77,6 +78,13 @@ object control {
   open class RouteEditor ()
     extends typings.yandexMaps.mod.control.RouteEditor {
     def this(parameters: IRouteEditorParameters) = this()
+  }
+  
+  @JSGlobal("ymaps.control.RoutePanel")
+  @js.native
+  open class RoutePanel ()
+    extends typings.yandexMaps.mod.control.RoutePanel {
+    def this(parameters: IRoutePanelParameters) = this()
   }
   
   @JSGlobal("ymaps.control.RulerControl")

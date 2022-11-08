@@ -14,7 +14,7 @@ trait ListWorkloadSharesInput extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.clientsWellarchitectedMod.NextToken] = js.undefined
   
   /**
-    * The Amazon Web Services account ID or IAM role with which the workload is shared.
+    * The Amazon Web Services account ID, IAM role, organization ID, or organizational unit (OU) ID with which the workload is shared.
     */
   var SharedWithPrefix: js.UndefOr[typings.awsSdk.clientsWellarchitectedMod.SharedWithPrefix] = js.undefined
   

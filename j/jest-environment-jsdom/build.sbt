@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-environment-jsdom"
-version := "29.0.3-132b98"
+version := "29.0.3-97447f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,12 +9,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-242218",
   "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-a4bec8",
   "org.scalablytyped" %%% "jest-message-util" % "29.2.1-5662a5",
-  "org.scalablytyped" %%% "jest-mock" % "29.2.2-3122f1",
-  "org.scalablytyped" %%% "jest__environment" % "29.2.2-12fee5",
-  "org.scalablytyped" %%% "jest__fake-timers" % "29.2.2-afd25c",
+  "org.scalablytyped" %%% "jest-mock" % "29.3.0-25578a",
+  "org.scalablytyped" %%% "jest__environment" % "29.3.0-a1cd7d",
+  "org.scalablytyped" %%% "jest__fake-timers" % "29.3.0-b84256",
   "org.scalablytyped" %%% "jest__schemas" % "29.0.0-db208b",
   "org.scalablytyped" %%% "jest__types" % "29.2.1-156589",
-  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20220723Z-2e55e0",
+  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20221107Z-2e55e0",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "parse5" % "7.1.1-c1050b",
   "org.scalablytyped" %%% "sinclair__typebox" % "0.24.42-8e6dfd",

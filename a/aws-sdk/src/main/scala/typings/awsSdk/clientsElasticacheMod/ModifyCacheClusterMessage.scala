@@ -62,6 +62,11 @@ trait ModifyCacheClusterMessage extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
+    * The network type you choose when modifying a cluster, either ipv4 | ipv6. IPv6 is supported for workloads using Redis engine version 6.2 onward or Memcached engine version 1.6.6 on all instances built on the Nitro system.
+    */
+  var IpDiscovery: js.UndefOr[typings.awsSdk.clientsElasticacheMod.IpDiscovery] = js.undefined
+  
+  /**
     * Specifies the destination, format and type of the logs.
     */
   var LogDeliveryConfigurations: js.UndefOr[LogDeliveryConfigurationRequestList] = js.undefined
@@ -160,6 +165,10 @@ object ModifyCacheClusterMessage {
     inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    
+    inline def setIpDiscovery(value: IpDiscovery): Self = StObject.set(x, "IpDiscovery", value.asInstanceOf[js.Any])
+    
+    inline def setIpDiscoveryUndefined: Self = StObject.set(x, "IpDiscovery", js.undefined)
     
     inline def setLogDeliveryConfigurations(value: LogDeliveryConfigurationRequestList): Self = StObject.set(x, "LogDeliveryConfigurations", value.asInstanceOf[js.Any])
     

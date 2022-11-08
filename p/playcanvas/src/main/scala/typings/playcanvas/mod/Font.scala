@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../graphics/texture.js').Texture} Texture */
+/** @typedef {import('../../platform/graphics/texture.js').Texture} Texture */
 /**
   * Represents the resource of a font asset.
   */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "snowflake-sdk"
-version := "1.6-dt-20220907Z-0281e6"
+version := "1.6-dt-20221107Z-84ec14"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

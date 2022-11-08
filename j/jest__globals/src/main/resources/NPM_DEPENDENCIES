@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/globals" : "29.2.2"
+      "@jest/globals" : "29.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/globals" : "29.2.2"
+      "@jest/globals" : "29.3.0"
     }
   ],
   "compile-devDependencies" : [

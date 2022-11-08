@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('./anim-track.js').AnimTrack} AnimTrack */
-/** @typedef {import('../../core/event-handler.js').EventHandler} EventHandler */
+/** @typedef {import('../../../core/event-handler.js').EventHandler} EventHandler */
 /**
   * AnimClip wraps the running state of an animation track. It contains and update the animation
   * 'cursor' and performs looping logic.

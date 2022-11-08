@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "storybook__telemetry"
-version := "6.5.13-82eee8"
+version := "6.5.13-5dcb82"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "ajv" % "8.11.0-6482f2",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-a9564c",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20221107Z-efd9cc",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-412870",
-  "org.scalablytyped" %%% "babel__parser" % "7.20.2-663c13",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-3ac905",
+  "org.scalablytyped" %%% "babel__parser" % "7.20.3-021aec",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-744489",
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-b54012",
   "org.scalablytyped" %%% "babel__types" % "7.20.2-5a1686",
   "org.scalablytyped" %%% "detect-package-manager" % "2.0.1-1d1e78",
@@ -27,7 +27,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "schema-utils" % "4.0.0-3da904",
   "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-3b575f",
   "org.scalablytyped" %%% "std" % "4.8-837c43",
-  "org.scalablytyped" %%% "storybook__core-common" % "6.5.13-2ddf2d",
+  "org.scalablytyped" %%% "storybook__core-common" % "6.5.13-10a3c2",
   "org.scalablytyped" %%% "tapable" % "2.2.1-52b605",
   "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092",

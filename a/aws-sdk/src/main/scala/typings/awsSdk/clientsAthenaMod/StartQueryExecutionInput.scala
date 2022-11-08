@@ -32,6 +32,11 @@ trait StartQueryExecutionInput extends StObject {
   var ResultConfiguration: js.UndefOr[typings.awsSdk.clientsAthenaMod.ResultConfiguration] = js.undefined
   
   /**
+    * Specifies the query result reuse behavior for the query.
+    */
+  var ResultReuseConfiguration: js.UndefOr[typings.awsSdk.clientsAthenaMod.ResultReuseConfiguration] = js.undefined
+  
+  /**
     * The name of the workgroup in which the query is being started.
     */
   var WorkGroup: js.UndefOr[WorkGroupName] = js.undefined
@@ -64,6 +69,10 @@ object StartQueryExecutionInput {
     inline def setResultConfiguration(value: ResultConfiguration): Self = StObject.set(x, "ResultConfiguration", value.asInstanceOf[js.Any])
     
     inline def setResultConfigurationUndefined: Self = StObject.set(x, "ResultConfiguration", js.undefined)
+    
+    inline def setResultReuseConfiguration(value: ResultReuseConfiguration): Self = StObject.set(x, "ResultReuseConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setResultReuseConfigurationUndefined: Self = StObject.set(x, "ResultReuseConfiguration", js.undefined)
     
     inline def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     

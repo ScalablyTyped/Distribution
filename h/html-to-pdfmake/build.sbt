@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "html-to-pdfmake"
-version := "2.1-dt-20220723Z-3cd070"
+version := "2.1-dt-20220723Z-d2ddf2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20220723Z-2e55e0",
+  "org.scalablytyped" %%% "jsdom" % "20.0-dt-20221107Z-2e55e0",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "parse5" % "7.1.1-c1050b",
   "org.scalablytyped" %%% "pdfkit" % "v0.12.3-dt-20221029Z-c97c70",

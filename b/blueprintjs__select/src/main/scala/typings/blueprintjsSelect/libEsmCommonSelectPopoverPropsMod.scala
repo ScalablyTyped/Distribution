@@ -6,6 +6,7 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.HTMLProps
 import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +15,17 @@ object libEsmCommonSelectPopoverPropsMod {
   
   trait SelectPopoverProps extends StObject {
     
-    /** Props to spread to `Popover2` content wrapper eleemnt. */
+    /**
+      * HTML attributes to spread to the popover content container element.
+      */
     var popoverContentProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
     
     /**
       * Props to spread to `Popover2`.
-      * Note that `content` cannot be changed aside from utilizing `popoverContentProps`.
+      *
+      * Note that `content` cannot be changed, but you may apply some props to the content wrapper element
+      * with `popoverContentProps`. Likewise, `targetProps` is no longer supported as it was in Blueprint v4, but you
+      * may use `popoverTargetProps` instead.
       */
     var popoverProps: js.UndefOr[PartialOmitPopover2PropsH] = js.undefined
     
@@ -27,7 +33,12 @@ object libEsmCommonSelectPopoverPropsMod {
       * Optional ref for the Popover2 component instance.
       * This is sometimes useful to reposition the popover.
       */
-    var popoverRef: js.UndefOr[RefObject[Popover2[HTMLProps[HTMLDivElement]]]] = js.undefined
+    var popoverRef: js.UndefOr[RefObject[Popover2[HTMLProps[Any]]]] = js.undefined
+    
+    /**
+      * HTML attributes to add to the popover target element.
+      */
+    var popoverTargetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
   }
   object SelectPopoverProps {
     
@@ -46,9 +57,13 @@ object libEsmCommonSelectPopoverPropsMod {
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       
-      inline def setPopoverRef(value: RefObject[Popover2[HTMLProps[HTMLDivElement]]]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
+      inline def setPopoverRef(value: RefObject[Popover2[HTMLProps[Any]]]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
       
       inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
+      
+      inline def setPopoverTargetProps(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "popoverTargetProps", value.asInstanceOf[js.Any])
+      
+      inline def setPopoverTargetPropsUndefined: Self = StObject.set(x, "popoverTargetProps", js.undefined)
     }
   }
 }

@@ -119,7 +119,18 @@ object mod extends Shortcut {
   
   type TemplateValue = TemplatePrimativeValue | Callback
   
-  type TreeValue = StringDictionary[Choices]
+  type TreeCallback[V] = js.Function0[V]
+  
+  trait TreeValue
+    extends StObject
+       with /* key */ StringDictionary[TreeValue | Choices | TreeCallback[Choices]]
+  object TreeValue {
+    
+    inline def apply(): TreeValue = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TreeValue]
+    }
+  }
   
   type _To = Omelette
   

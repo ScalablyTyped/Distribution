@@ -718,6 +718,8 @@ type ColorMetadata = _ColorMetadata | String
   - typings.awsSdk.awsSdkStrings.REC_709
   - typings.awsSdk.awsSdkStrings.HDR10
   - typings.awsSdk.awsSdkStrings.HLG_2020
+  - typings.awsSdk.awsSdkStrings.P3DCI
+  - typings.awsSdk.awsSdkStrings.P3D65_SDR
   - java.lang.String
 */
 type ColorSpace = _ColorSpace | String
@@ -728,6 +730,8 @@ type ColorSpace = _ColorSpace | String
   - typings.awsSdk.awsSdkStrings.FORCE_709
   - typings.awsSdk.awsSdkStrings.FORCE_HDR10
   - typings.awsSdk.awsSdkStrings.FORCE_HLG_2020
+  - typings.awsSdk.awsSdkStrings.FORCE_P3DCI
+  - typings.awsSdk.awsSdkStrings.FORCE_P3D65_SDR
   - java.lang.String
 */
 type ColorSpaceConversion = _ColorSpaceConversion | String
@@ -3394,6 +3398,8 @@ type integerMin1000Max300000000 = Double
 
 type integerMin1000Max480000000 = Double
 
+type integerMin100Max1000 = Double
+
 type integerMin10Max48 = Double
 
 type integerMin16000Max320000 = Double
@@ -3453,6 +3459,8 @@ type integerMin2Max2147483647 = Double
 type integerMin2Max4096 = Double
 
 type integerMin32000Max192000 = Double
+
+type integerMin32000Max3024000 = Double
 
 type integerMin32000Max384000 = Double
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for strong-error-handler
 
-Typings are for version 4.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Error handler for use in development and production environments.

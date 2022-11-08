@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @typedef {import('./graphics-device.js').GraphicsDevice} GraphicsDevice */
-/** @typedef {import('./shader.js').Shader} Shader */
 /**
   * This object allows you to configure and use the transform feedback feature (WebGL2 only). How to
   * use:

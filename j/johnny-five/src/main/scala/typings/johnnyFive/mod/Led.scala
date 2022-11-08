@@ -10,32 +10,61 @@ open class Led protected () extends StObject {
   def this(option: Double | String) = this()
   def this(option: LedOption) = this()
   
-  def blink(): Unit = js.native
-  def blink(ms: Double): Unit = js.native
+  var animation: Animation = js.native
   
-  def brightness(`val`: Double): Unit = js.native
+  def blink(): this.type = js.native
+  def blink(callback: js.Function0[Unit]): this.type = js.native
+  def blink(ms: Double): this.type = js.native
+  def blink(ms: Double, callback: js.Function0[Unit]): this.type = js.native
+  def blink(ms: Unit, callback: js.Function0[Unit]): this.type = js.native
   
-  def fade(brightness: Double, ms: Double): Unit = js.native
+  def brightness(`val`: Double): this.type = js.native
   
-  def fadeIn(ms: Double): Unit = js.native
+  def fade(brightness: Double): this.type = js.native
+  def fade(brightness: Double, ms: Double): this.type = js.native
+  def fade(brightness: Double, ms: Double, callback: js.Function0[Unit]): this.type = js.native
+  def fade(brightness: Double, ms: Unit, callback: js.Function0[Unit]): this.type = js.native
   
-  def fadeOut(ms: Double): Unit = js.native
+  def fadeIn(): this.type = js.native
+  def fadeIn(ms: Double): this.type = js.native
+  def fadeIn(ms: Double, callback: js.Function0[Unit]): this.type = js.native
+  def fadeIn(ms: Unit, callback: js.Function0[Unit]): this.type = js.native
+  
+  def fadeOut(): this.type = js.native
+  def fadeOut(ms: Double): this.type = js.native
+  def fadeOut(ms: Double, callback: js.Function0[Unit]): this.type = js.native
+  def fadeOut(ms: Unit, callback: js.Function0[Unit]): this.type = js.native
   
   var id: String = js.native
   
-  def off(): Unit = js.native
+  var isOn: Boolean = js.native
   
-  def on(): Unit = js.native
+  var isRunning: Boolean = js.native
+  
+  var mode: Double = js.native
+  
+  def off(): this.type = js.native
+  
+  def on(): this.type = js.native
   
   var pin: Double = js.native
   
-  def pulse(ms: Double): Unit = js.native
+  def pulse(): this.type = js.native
+  def pulse(ms: Double): this.type = js.native
+  def pulse(ms: Double, callback: js.Function0[Unit]): this.type = js.native
+  def pulse(ms: Unit, callback: js.Function0[Unit]): this.type = js.native
   
-  def stop(): Unit = js.native
+  def stop(): this.type = js.native
   
-  def strobe(ms: Double): Unit = js.native
+  def strobe(): this.type = js.native
+  def strobe(callback: js.Function0[Unit]): this.type = js.native
+  def strobe(ms: Double): this.type = js.native
+  def strobe(ms: Double, callback: js.Function0[Unit]): this.type = js.native
+  def strobe(ms: Unit, callback: js.Function0[Unit]): this.type = js.native
   
-  def toggle(): Unit = js.native
+  def toggle(): this.type = js.native
+  
+  var value: Double = js.native
 }
 object Led {
   

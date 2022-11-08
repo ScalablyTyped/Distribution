@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keycloak-connect"
-version := "20.0.0-0a1d10"
+version := "20.0.1-9cd40f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

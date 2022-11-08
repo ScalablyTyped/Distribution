@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-circus"
-version := "29.2.2-c4e243"
+version := "29.3.0-99cf4c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

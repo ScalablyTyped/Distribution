@@ -64,6 +64,7 @@ import typings.playcanvas.playcanvasStrings.TEXCOORD
 import typings.playcanvas.playcanvasStrings.`1Dot55`
 import typings.playcanvas.playcanvasStrings.`1Dot56`
 import typings.playcanvas.playcanvasStrings.`1Dot57`
+import typings.playcanvas.playcanvasStrings.`1Dot58`
 import typings.playcanvas.playcanvasStrings.`1d`
 import typings.playcanvas.playcanvasStrings.`2d-array`
 import typings.playcanvas.playcanvasStrings.`2d`
@@ -814,6 +815,8 @@ inline def CHUNKAPI_1_55: `1Dot55` = ^.asInstanceOf[js.Dynamic].selectDynamic("C
 inline def CHUNKAPI_1_56: `1Dot56` = ^.asInstanceOf[js.Dynamic].selectDynamic("CHUNKAPI_1_56").asInstanceOf[`1Dot56`]
 
 inline def CHUNKAPI_1_57: `1Dot57` = ^.asInstanceOf[js.Dynamic].selectDynamic("CHUNKAPI_1_57").asInstanceOf[`1Dot57`]
+
+inline def CHUNKAPI_1_58: `1Dot58` = ^.asInstanceOf[js.Dynamic].selectDynamic("CHUNKAPI_1_58").asInstanceOf[`1Dot58`]
 
 /**
   * Clear the color buffer.
@@ -3515,6 +3518,13 @@ inline def TRACEID_RENDER_TARGET_ALLOC: String = ^.asInstanceOf[js.Dynamic].sele
 inline def TRACEID_SHADER_ALLOC: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_SHADER_ALLOC").asInstanceOf[String]
 
 /**
+  * Logs the compilation time of shaders.
+  *
+  * @type {string}
+  */
+inline def TRACEID_SHADER_COMPILE: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_SHADER_COMPILE").asInstanceOf[String]
+
+/**
   * Logs the allocation of textures.
   *
   * @type {string}
@@ -4101,59 +4111,60 @@ inline def createMesh(device: typings.playcanvas.mod.GraphicsDevice, positions: 
 inline def createPlane(device: typings.playcanvas.mod.GraphicsDevice): typings.playcanvas.mod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("createPlane")(device.asInstanceOf[js.Any]).asInstanceOf[typings.playcanvas.mod.Mesh]
 inline def createPlane(device: typings.playcanvas.mod.GraphicsDevice, opts: HalfExtents): typings.playcanvas.mod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlane")(device.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Mesh]
 
+/** @typedef {import('../../platform/graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
 /**
   * Create a shader from named shader chunks.
   *
   * @param {GraphicsDevice} device - The graphics device.
   * @param {string} vsName - The vertex shader chunk name.
-  * @param {string} psName - The fragment shader chunk name.
+  * @param {string} fsName - The fragment shader chunk name.
   * @param {boolean} [useTransformFeedback] - Whether to use transform feedback. Defaults to false.
   * @returns {Shader} The newly created shader.
   */
-inline def createShader(device: typings.playcanvas.mod.GraphicsDevice, vsName: String, psName: String): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShader")(device.asInstanceOf[js.Any], vsName.asInstanceOf[js.Any], psName.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
+inline def createShader(device: typings.playcanvas.mod.GraphicsDevice, vsName: String, fsName: String): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShader")(device.asInstanceOf[js.Any], vsName.asInstanceOf[js.Any], fsName.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
 inline def createShader(
   device: typings.playcanvas.mod.GraphicsDevice,
   vsName: String,
-  psName: String,
+  fsName: String,
   useTransformFeedback: Boolean
-): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShader")(device.asInstanceOf[js.Any], vsName.asInstanceOf[js.Any], psName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
+): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShader")(device.asInstanceOf[js.Any], vsName.asInstanceOf[js.Any], fsName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
 
 /**
   * Create a shader from the supplied source code.
   *
   * @param {GraphicsDevice} device - The graphics device.
   * @param {string} vsCode - The vertex shader code.
-  * @param {string} psCode - The fragment shader code.
-  * @param {string} uName - Unique name for the shader.
+  * @param {string} fsCode - The fragment shader code.
+  * @param {string} uniqueName - Unique name for the shader.
   * @param {boolean} [useTransformFeedback] - Whether to use transform feedback. Defaults to false.
-  * @param {string} [psPreamble] - An optional 'preamble' string for the fragment shader. Defaults
+  * @param {string} [fragmentPreamble] - An optional 'preamble' string for the fragment shader. Defaults
   * to ''.
   * @returns {Shader} The newly created shader.
   */
-inline def createShaderFromCode(device: typings.playcanvas.mod.GraphicsDevice, vsCode: String, psCode: String, uName: String): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], psCode.asInstanceOf[js.Any], uName.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
+inline def createShaderFromCode(device: typings.playcanvas.mod.GraphicsDevice, vsCode: String, fsCode: String, uniqueName: String): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
 inline def createShaderFromCode(
   device: typings.playcanvas.mod.GraphicsDevice,
   vsCode: String,
-  psCode: String,
-  uName: String,
+  fsCode: String,
+  uniqueName: String,
   useTransformFeedback: Boolean
-): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], psCode.asInstanceOf[js.Any], uName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
+): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
 inline def createShaderFromCode(
   device: typings.playcanvas.mod.GraphicsDevice,
   vsCode: String,
-  psCode: String,
-  uName: String,
+  fsCode: String,
+  uniqueName: String,
   useTransformFeedback: Boolean,
-  psPreamble: String
-): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], psCode.asInstanceOf[js.Any], uName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any], psPreamble.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
+  fragmentPreamble: String
+): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any], fragmentPreamble.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
 inline def createShaderFromCode(
   device: typings.playcanvas.mod.GraphicsDevice,
   vsCode: String,
-  psCode: String,
-  uName: String,
+  fsCode: String,
+  uniqueName: String,
   useTransformFeedback: Unit,
-  psPreamble: String
-): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], psCode.asInstanceOf[js.Any], uName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any], psPreamble.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
+  fragmentPreamble: String
+): typings.playcanvas.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any], fragmentPreamble.asInstanceOf[js.Any])).asInstanceOf[typings.playcanvas.mod.Shader]
 
 /**
   * Creates a procedural sphere-shaped mesh.

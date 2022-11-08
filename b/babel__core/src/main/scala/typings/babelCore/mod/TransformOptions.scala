@@ -21,6 +21,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransformOptions extends StObject {
   
   /**
+    * Specify which assumptions it can make about your code, to better optimize the compilation result. **NOTE**: This replaces the various `loose` options in plugins in favor of
+    * top-level options that can apply to multiple plugins
+    *
+    * @see https://babeljs.io/docs/en/assumptions
+    */
+  var assumptions: js.UndefOr[StringDictionary[Boolean] | Null] = js.undefined
+  
+  /**
     * Include the AST in the returned object
     *
     * Default: `false`
@@ -364,6 +372,12 @@ object TransformOptions {
   }
   
   extension [Self <: TransformOptions](x: Self) {
+    
+    inline def setAssumptions(value: StringDictionary[Boolean]): Self = StObject.set(x, "assumptions", value.asInstanceOf[js.Any])
+    
+    inline def setAssumptionsNull: Self = StObject.set(x, "assumptions", null)
+    
+    inline def setAssumptionsUndefined: Self = StObject.set(x, "assumptions", js.undefined)
     
     inline def setAst(value: Boolean): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

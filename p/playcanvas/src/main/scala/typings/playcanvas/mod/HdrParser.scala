@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../texture.js').TextureParser} TextureParser */
+/** @typedef {import('../../handlers/texture.js').TextureParser} TextureParser */
 /**
   * Texture parser for hdr files.
   *

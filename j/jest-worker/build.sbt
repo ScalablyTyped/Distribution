@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-worker"
-version := "29.2.1-60f9c8"
+version := "29.3.0-7bb8a9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

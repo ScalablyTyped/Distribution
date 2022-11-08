@@ -291,6 +291,8 @@ object libOptionsMod {
       * </root>
       * ```
       *
+      * The handlers in `typeHandlers` are not applied to the value.
+      *
       * The default alias string is `"="`.
       */
     var aliasString: js.UndefOr[String] = js.undefined
@@ -328,6 +330,8 @@ object libOptionsMod {
       *     </abc>
       * </root>
       * ```
+      *
+      * The handlers in `typeHandlers` are applied to the values.
       *
       * The default attribute string is `"@"`.
       */
@@ -493,6 +497,8 @@ object libOptionsMod {
       *     jkl
       * </root>
       * ```
+      *
+      * The handlers in `typeHandlers` are applied to the value.
       *
       * The default value is `"#"`.
       */

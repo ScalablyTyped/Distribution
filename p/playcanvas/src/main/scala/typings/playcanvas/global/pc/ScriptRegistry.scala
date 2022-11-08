@@ -5,7 +5,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../framework/app-base.js').AppBase} AppBase */
+/** @typedef {import('../app-base.js').AppBase} AppBase */
+/** @typedef {import('./script-type.js').ScriptType} ScriptType */
 /**
   * Container for all {@link ScriptType}s that are available to this application. Note that
   * PlayCanvas scripts can access the Script Registry from inside the application with

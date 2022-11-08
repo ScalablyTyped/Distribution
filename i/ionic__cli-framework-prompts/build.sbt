@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ionic__cli-framework-prompts"
-version := "2.1.10-0d0d77"
+version := "2.1.10-e14a63"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "inquirer" % "9.0-dt-20220928Z-337b95",
+  "org.scalablytyped" %%% "inquirer" % "9.0-dt-20221107Z-337b95",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "rxjs" % "7.5.7-6ac0e4",
   "org.scalablytyped" %%% "std" % "4.8-837c43",

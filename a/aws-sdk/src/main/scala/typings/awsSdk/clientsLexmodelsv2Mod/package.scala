@@ -206,7 +206,11 @@ type ContextTurnsToLive = Double
 
 type Count = Double
 
+type CreateCustomVocabularyItemsList = js.Array[NewCustomVocabularyItem]
+
 type CustomPayloadValue = java.lang.String
+
+type CustomVocabularyItems = js.Array[CustomVocabularyItem]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Ready_
@@ -219,6 +223,8 @@ type CustomPayloadValue = java.lang.String
 type CustomVocabularyStatus = _CustomVocabularyStatus | java.lang.String
 
 type DTMFCharacter = java.lang.String
+
+type DeleteCustomVocabularyItemsList = js.Array[CustomVocabularyEntryId]
 
 type Description = java.lang.String
 
@@ -245,6 +251,17 @@ type DraftBotVersion = java.lang.String
 */
 type Effect = _Effect | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DUPLICATE_INPUT
+  - typings.awsSdk.awsSdkStrings.RESOURCE_DOES_NOT_EXIST
+  - typings.awsSdk.awsSdkStrings.RESOURCE_ALREADY_EXISTS
+  - typings.awsSdk.awsSdkStrings.INTERNAL_SERVER_FAILURE
+  - java.lang.String
+*/
+type ErrorCode = _ErrorCode | java.lang.String
+
+type ErrorMessage = java.lang.String
+
 type ExportFilterName = ExportResourceType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
@@ -268,6 +285,8 @@ type ExportSortAttribute = LastUpdatedDateTime | java.lang.String
 type ExportStatus = _ExportStatus | java.lang.String
 
 type ExportSummaryList = js.Array[ExportSummary]
+
+type FailedCustomVocabularyItems = js.Array[FailedCustomVocabularyItem]
 
 type FailureReason = java.lang.String
 
@@ -356,6 +375,8 @@ type IntentSortAttribute = _IntentSortAttribute | java.lang.String
 
 type IntentSummaryList = js.Array[IntentSummary]
 
+type ItemId = java.lang.String
+
 type KendraIndexArn = java.lang.String
 
 type KmsKeyArn = java.lang.String
@@ -419,6 +440,8 @@ type Operation = java.lang.String
 type OperationList = js.Array[Operation]
 
 type OutputContextsList = js.Array[OutputContext]
+
+type Phrase = java.lang.String
 
 type PlainTextMessageValue = java.lang.String
 
@@ -631,6 +654,8 @@ type Transcript = java.lang.String
 
 type TranscriptFormat = Lex_ | java.lang.String
 
+type UpdateCustomVocabularyItemsList = js.Array[CustomVocabularyItem]
+
 type Utterance = java.lang.String
 
 type Value = java.lang.String
@@ -643,6 +668,8 @@ type Value = java.lang.String
 type VoiceEngine = _VoiceEngine | java.lang.String
 
 type VoiceId = java.lang.String
+
+type Weight = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2020-08-07`

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest__environment"
-version := "29.2.2-12fee5"
+version := "29.3.0-a1cd7d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-242218",
   "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-a4bec8",
   "org.scalablytyped" %%% "jest-message-util" % "29.2.1-5662a5",
-  "org.scalablytyped" %%% "jest-mock" % "29.2.2-3122f1",
-  "org.scalablytyped" %%% "jest__fake-timers" % "29.2.2-afd25c",
+  "org.scalablytyped" %%% "jest-mock" % "29.3.0-25578a",
+  "org.scalablytyped" %%% "jest__fake-timers" % "29.3.0-b84256",
   "org.scalablytyped" %%% "jest__schemas" % "29.0.0-db208b",
   "org.scalablytyped" %%% "jest__types" % "29.2.1-156589",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",

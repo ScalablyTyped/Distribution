@@ -1,8 +1,8 @@
 package typings.blueprintjsSelect
 
-import typings.blueprintjsCore.libEsmComponentsFormsInputGroupMod.InputGroupProps2
 import typings.blueprintjsPopover2.mod.Popover2
 import typings.blueprintjsSelect.`libEsm@ExamplesFilmsMod`.Film
+import typings.blueprintjsSelect.anon.PartialOmitInputGroupProp
 import typings.blueprintjsSelect.anon.PartialOmitPopover2PropsH
 import typings.blueprintjsSelect.blueprintjsSelectStrings.first
 import typings.blueprintjsSelect.blueprintjsSelectStrings.last
@@ -20,6 +20,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
+import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
@@ -55,7 +56,7 @@ object `libEsm@ExamplesFilmSelectMod` {
     
     var initialContent: js.UndefOr[ReactNode | Null] = js.undefined
     
-    var inputProps: js.UndefOr[InputGroupProps2] = js.undefined
+    var inputProps: js.UndefOr[PartialOmitInputGroupProp] = js.undefined
     
     var itemDisabled: js.UndefOr[
         title | year | rank | (js.Function2[/* item */ Film, /* index */ Double, Boolean])
@@ -79,9 +80,9 @@ object `libEsm@ExamplesFilmSelectMod` {
     
     var popoverProps: js.UndefOr[PartialOmitPopover2PropsH] = js.undefined
     
-    var popoverRef: js.UndefOr[RefObject[Popover2[HTMLProps[HTMLDivElement]]]] = js.undefined
+    var popoverRef: js.UndefOr[RefObject[Popover2[HTMLProps[Any]]]] = js.undefined
     
-    var popoverTargetProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
+    var popoverTargetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
     var query: js.UndefOr[String] = js.undefined
     
@@ -142,7 +143,7 @@ object `libEsm@ExamplesFilmSelectMod` {
       
       inline def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
       
-      inline def setInputProps(value: InputGroupProps2): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: PartialOmitInputGroupProp): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
@@ -184,11 +185,11 @@ object `libEsm@ExamplesFilmSelectMod` {
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       
-      inline def setPopoverRef(value: RefObject[Popover2[HTMLProps[HTMLDivElement]]]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
+      inline def setPopoverRef(value: RefObject[Popover2[HTMLProps[Any]]]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
       
       inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
       
-      inline def setPopoverTargetProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "popoverTargetProps", value.asInstanceOf[js.Any])
+      inline def setPopoverTargetProps(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "popoverTargetProps", value.asInstanceOf[js.Any])
       
       inline def setPopoverTargetPropsUndefined: Self = StObject.set(x, "popoverTargetProps", js.undefined)
       

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-resolve"
-version := "29.2.2-3a9c4c"
+version := "29.3.0-156b4e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-32acec",
   "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-242218",
   "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-a4bec8",
-  "org.scalablytyped" %%% "jest-haste-map" % "29.2.1-76801b",
+  "org.scalablytyped" %%% "jest-haste-map" % "29.3.0-c79b82",
   "org.scalablytyped" %%% "jest__schemas" % "29.0.0-db208b",
   "org.scalablytyped" %%% "jest__types" % "29.2.1-156589",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",

@@ -1,6 +1,5 @@
 package typings.playcanvas.mod
 
-import typings.playcanvas.anon.ForceWebAudioApi
 import typings.std.AudioContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,24 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("playcanvas", "SoundManager")
 @js.native
-/**
-  * Create a new SoundManager instance.
-  *
-  * @param {object} [options] - Options options object.
-  * @param {boolean} [options.forceWebAudioApi] - Always use the Web Audio API, even if check
-  * indicates that it is not available.
-  */
 open class SoundManager () extends EventHandler {
-  def this(options: ForceWebAudioApi) = this()
   
-  /**
-    * Add the necessary Window EventListeners to comply with auto-play policies,
-    * and correctly unlock and resume the AudioContext.
-    * For more info, https://developers.google.com/web/updates/2018/11/web-audio-autoplay.
-    *
-    * @private
-    */
-  /* private */ var _addContextUnlockListeners: Any = js.native
+  var AudioContext: Any = js.native
   
   /**
     * The underlying AudioContext, lazy loaded in the 'context' property.
@@ -41,54 +25,19 @@ open class SoundManager () extends EventHandler {
     */
   /* private */ var _context: Any = js.native
   
-  /**
-    * @type {boolean}
-    * @private
-    */
-  /* private */ var _forceWebAudioApi: Any = js.native
+  def _registerUnlockListeners(): Unit = js.native
   
-  /**
-    * Remove all USER_INPUT_EVENTS unlock event listeners, if they're still attached.
-    *
-    * @private
-    */
-  /* private */ var _removeUserInputListeners: Any = js.native
+  def _removeUnlockListeners(): Unit = js.native
   
-  /**
-    * The function callback attached to the Window events USER_INPUT_EVENTS
-    *
-    * @type {EventListenerOrEventListenerObject}
-    * @private
-    */
-  /* private */ var _resumeContextCallback: Any = js.native
+  def _resume(): Unit = js.native
   
-  /**
-    * Set to to true when suspend() was called explitly (either manually or on visibility change),
-    * and reset to false after resume() is called.
-    * This value is not directly bound to AudioContext.state.
-    *
-    * @type {boolean}
-    * @private
-    */
-  /* private */ var _selfSuspended: Any = js.native
+  def _suspend(): Unit = js.native
   
-  /**
-    * If true, the AudioContext is in a special 'suspended' state where it needs to be resumed
-    * from a User event. In addition, some devices and browsers require that a blank sound be played.
-    *
-    * @type {boolean}
-    * @private
-    */
-  /* private */ var _unlocked: Any = js.native
+  def _unlockHandler(): Unit = js.native
   
-  /**
-    * Set after the unlock flow is triggered, but hasn't completed yet.
-    * Used to avoid starting multiple 'unlock' flows at the same time.
-    *
-    * @type {boolean}
-    * @private
-    */
-  /* private */ var _unlocking: Any = js.native
+  var _unlockHandlerFunc: Any = js.native
+  
+  var _userSuspended: Boolean = js.native
   
   var _volume: Double = js.native
   
