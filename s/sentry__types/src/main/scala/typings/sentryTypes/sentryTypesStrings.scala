@@ -5,6 +5,7 @@ import typings.sentryTypes.typesDatacategoryMod.DataCategory
 import typings.sentryTypes.typesDebugMetaMod.DebugImageType
 import typings.sentryTypes.typesDsnMod.DsnProtocol
 import typings.sentryTypes.typesEnvelopeMod.EnvelopeItemType
+import typings.sentryTypes.typesInstrumenterMod.Instrumenter
 import typings.sentryTypes.typesMeasurementMod.DurationUnit
 import typings.sentryTypes.typesMeasurementMod.FractionUnit
 import typings.sentryTypes.typesMeasurementMod.InformationUnit
@@ -274,6 +275,12 @@ object sentryTypesStrings {
   inline def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
+  sealed trait otel
+    extends StObject
+       with Instrumenter
+  inline def otel: otel = "otel".asInstanceOf[otel]
+  
+  @js.native
   sealed trait pe
     extends StObject
        with DebugImageType
@@ -336,6 +343,12 @@ object sentryTypesStrings {
     extends StObject
        with DataCategory
   inline def security: security = "security".asInstanceOf[security]
+  
+  @js.native
+  sealed trait sentry
+    extends StObject
+       with Instrumenter
+  inline def sentry: sentry = "sentry".asInstanceOf[sentry]
   
   @js.native
   sealed trait session

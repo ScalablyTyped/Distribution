@@ -14,6 +14,11 @@ object distEsmContainerTreeContainerOrderedMapMod {
     * @param container The initialization container.
     * @param cmp The compare function.
     * @param enableIndex Whether to enable iterator indexing function.
+    * @example
+    * new OrderedMap();
+    * new OrderedMap([[0, 1], [2, 1]]);
+    * new OrderedMap([[0, 1], [2, 1]], (x, y) => x - y);
+    * new OrderedMap([[0, 1], [2, 1]], (x, y) => x - y, true);
     */
   open class default[K, V] () extends OrderedMap[K, V] {
     def this(container: initContainer[js.Tuple2[K, V]]) = this()
@@ -39,21 +44,27 @@ object distEsmContainerTreeContainerOrderedMapMod {
     extends typings.jsSdsl.distEsmContainerTreeContainerBaseMod.default[K, V] {
     
     /**
-      * @description Get the _value of the element of the specified _key.
+      * @description Get the value of the element of the specified key.
+      * @example const val = container.getElementByKey(1);
       */
-    def getElementByKey(_key: K): js.UndefOr[V] = js.native
+    def getElementByKey(key: K): js.UndefOr[V] = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator_OrderedMap: js.Function0[Generator[js.Tuple2[K, V], Unit, Unit]] = js.native
     
     /**
-      * @description Insert a _key-_value pair or set _value by the given _key.
-      * @param _key The _key want to insert.
-      * @param _value The _value want to set.
+      * @description Insert a key-value pair or set value by the given key.
+      * @param key The key want to insert.
+      * @param value The value want to set.
       * @param hint You can give an iterator hint to improve insertion efficiency.
+      * @example
+      * const mp = new OrderedMap([[2, 0], [4, 0], [5, 0]]);
+      * const iter = mp.begin();
+      * mp.setElement(1, 0);
+      * mp.setElement(3, 0, iter);  // give a hint will be faster.
       */
-    def setElement(_key: K, _value: V): Unit = js.native
-    def setElement(_key: K, _value: V, hint: OrderedMapIterator[K, V]): Unit = js.native
+    def setElement(key: K, value: V): Unit = js.native
+    def setElement(key: K, value: V, hint: OrderedMapIterator[K, V]): Unit = js.native
     
     def union(other: OrderedMap[K, V]): Unit = js.native
   }

@@ -12,21 +12,29 @@ object mod {
   
   @JSImport("random", JSImport.Default)
   @js.native
-  val default: typings.random.distCjsRandomMod.Random = js.native
+  val default: typings.random.distRandomMod.Random = js.native
   
   /* note: abstract class */ @JSImport("random", "RNG")
   @js.native
   open class RNG ()
-    extends typings.random.distCjsRandomMod.RNG
+    extends typings.random.distRandomMod.RNG
   
+  /**
+    * Construct an RNG with variable inputs. Used in calls to Random constructor
+    * @param {...*} args - Distribution-specific arguments
+    * @return RNG
+    *
+    * @example
+    * new Random(RNGFactory(...args))
+    */
   inline def RNGFactory[T /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
-  ): typings.random.distCjsRngMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("RNGFactory")(args.asInstanceOf[js.Any]).asInstanceOf[typings.random.distCjsRngMod.default]
+  ): typings.random.distRngMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("RNGFactory")(args.asInstanceOf[js.Any]).asInstanceOf[typings.random.distRngMod.default]
   
   @JSImport("random", "Random")
   @js.native
   open class Random ()
-    extends typings.random.distCjsRandomMod.Random {
-    def this(rng: typings.random.distCjsRngMod.default) = this()
+    extends typings.random.distRandomMod.Random {
+    def this(rng: typings.random.distRngMod.default) = this()
   }
 }

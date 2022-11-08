@@ -14,6 +14,11 @@ object distEsmContainerTreeContainerOrderedSetMod {
     * @param container The initialization container.
     * @param cmp The compare function.
     * @param enableIndex Whether to enable iterator indexing function.
+    * @example
+    * new OrderedSet();
+    * new OrderedSet([0, 1, 2]);
+    * new OrderedSet([0, 1, 2], (x, y) => x - y);
+    * new OrderedSet([0, 1, 2], (x, y) => x - y, true);
     */
   open class default[K] () extends OrderedSet[K] {
     def this(container: initContainer[K]) = this()
@@ -36,11 +41,16 @@ object distEsmContainerTreeContainerOrderedSetMod {
     
     /**
       * @description Insert element to set.
-      * @param _key The _key want to insert.
+      * @param key The key want to insert.
       * @param hint You can give an iterator hint to improve insertion efficiency.
+      * @example
+      * const st = new OrderedSet([2, 4, 5]);
+      * const iter = st.begin();
+      * st.insert(1);
+      * st.insert(3, iter);  // give a hint will be faster.
       */
-    def insert(_key: K): Unit = js.native
-    def insert(_key: K, hint: OrderedSetIterator[K]): Unit = js.native
+    def insert(key: K): Unit = js.native
+    def insert(key: K, hint: OrderedSetIterator[K]): Unit = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator_OrderedSet: js.Function0[Generator[K, Unit, Unit]] = js.native

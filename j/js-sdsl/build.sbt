@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-sdsl"
-version := "4.1.5-7ac9fa"
+version := "4.2.0-beta.1-96cb8c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

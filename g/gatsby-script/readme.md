@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby-script
 
-Typings are for version 1.9.0
+Typings are for version 2.0.0
 
 ## Library description:
 An enhanced script component for Gatsby sites with support for various loading strategies

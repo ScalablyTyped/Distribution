@@ -9,9 +9,9 @@ object distEsmContainerTreeContainerBaseTreeNodeMod {
   @JSImport("js-sdsl/dist/esm/container/TreeContainer/Base/TreeNode", "TreeNode")
   @js.native
   open class TreeNode[K, V] () extends StObject {
-    def this(_key: K) = this()
-    def this(_key: K, _value: V) = this()
-    def this(_key: Unit, _value: V) = this()
+    def this(key: K) = this()
+    def this(key: K, value: V) = this()
+    def this(key: Unit, value: V) = this()
     
     /**
       * @description Get the next node.
@@ -26,13 +26,13 @@ object distEsmContainerTreeContainerBaseTreeNodeMod {
     def pre(): TreeNode[K, V] = js.native
     
     /**
-      * @description Rotate _left.
+      * @description Rotate left.
       * @return TreeNode about moved to original position after rotation.
       */
     def rotateLeft(): TreeNode[K, V] = js.native
     
     /**
-      * @description Rotate _right.
+      * @description Rotate right.
       * @return TreeNode about moved to original position after rotation.
       */
     def rotateRight(): TreeNode[K, V] = js.native
@@ -41,9 +41,9 @@ object distEsmContainerTreeContainerBaseTreeNodeMod {
   @JSImport("js-sdsl/dist/esm/container/TreeContainer/Base/TreeNode", "TreeNodeEnableIndex")
   @js.native
   open class TreeNodeEnableIndex[K, V] () extends TreeNode[K, V] {
-    def this(_key: K) = this()
-    def this(_key: K, _value: V) = this()
-    def this(_key: Unit, _value: V) = this()
+    def this(key: K) = this()
+    def this(key: K, value: V) = this()
+    def this(key: Unit, value: V) = this()
     
     def recount(): Unit = js.native
   }

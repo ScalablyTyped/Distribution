@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-easy-crop" : "4.6.1"
+      "react-easy-crop" : "4.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-easy-crop" : "4.6.1"
+      "react-easy-crop" : "4.6.2"
     }
   ],
   "compile-devDependencies" : [

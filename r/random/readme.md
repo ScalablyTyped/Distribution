@@ -1,7 +1,7 @@
 
 # Scala.js typings for random
 
-Typings are for version 3.0.6
+Typings are for version 4.0.2
 
 ## Library description:
 Seedable random number generator supporting many common distributions.

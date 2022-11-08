@@ -23,6 +23,9 @@ object distEsmContainerTreeContainerBaseTreeIteratorMod {
       *                Note:
       *              </strong>
       *              This function only takes effect when the specified tree container `enableIndex = true`.
+      * @example
+      * const st = new OrderedSet([1, 2, 3], true);
+      * console.log(st.begin().next().index);  // 1
       */
     def index: Double = js.native
   }

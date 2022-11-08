@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gatsby-worker"
-version := "1.24.0-ead016"
+version := "2.0.0-2c02fc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

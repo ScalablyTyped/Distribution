@@ -26,10 +26,10 @@ object distEsmContainerTreeContainerBaseMod {
     def eraseElementByIterator(iter: typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V]): typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V] = js.native
     
     /**
-      * @description Remove the element of the specified _key.
-      * @param _key The _key you want to remove.
+      * @description Remove the element of the specified key.
+      * @param key The key you want to remove.
       */
-    def eraseElementByKey(_key: K): Unit = js.native
+    def eraseElementByKey(key: K): Unit = js.native
     
     /**
       * @description Get the height of the tree.
@@ -38,22 +38,22 @@ object distEsmContainerTreeContainerBaseMod {
     def getHeight(): Double = js.native
     
     /**
-      * @param _key The given _key you want to compare.
-      * @return An iterator to the first element not less than the given _key.
+      * @param key The given key you want to compare.
+      * @return An iterator to the first element not less than the given key.
       */
-    def lowerBound(_key: K): typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V] = js.native
+    def lowerBound(key: K): typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V] = js.native
     
     /**
-      * @param _key The given _key you want to compare.
-      * @return An iterator to the first element not greater than the given _key.
+      * @param key The given key you want to compare.
+      * @return An iterator to the first element not greater than the given key.
       */
-    def reverseLowerBound(_key: K): typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V] = js.native
+    def reverseLowerBound(key: K): typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V] = js.native
     
     /**
-      * @param _key The given _key you want to compare.
-      * @return An iterator to the first element less than the given _key.
+      * @param key The given key you want to compare.
+      * @return An iterator to the first element less than the given key.
       */
-    def reverseUpperBound(_key: K): typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V] = js.native
+    def reverseUpperBound(key: K): typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V] = js.native
     
     /**
       * @description Union the other tree to self.
@@ -62,17 +62,21 @@ object distEsmContainerTreeContainerBaseMod {
     def union(other: TreeContainer[K, V]): Unit = js.native
     
     /**
-      * @description Update node's _key by iterator.
+      * @description Update node's key by iterator.
       * @param iter The iterator you want to change.
-      * @param _key The _key you want to update.
+      * @param key The key you want to update.
       * @return Boolean about if the modification is successful.
+      * @example
+      * const st = new orderedSet([1, 2, 5]);
+      * const iter = st.find(2);
+      * st.updateKeyByIterator(iter, 3); // then st will become [1, 3, 5]
       */
-    def updateKeyByIterator(iter: typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V], _key: K): Boolean = js.native
+    def updateKeyByIterator(iter: typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V], key: K): Boolean = js.native
     
     /**
-      * @param _key The given _key you want to compare.
-      * @return An iterator to the first element greater than the given _key.
+      * @param key The given key you want to compare.
+      * @return An iterator to the first element greater than the given key.
       */
-    def upperBound(_key: K): typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V] = js.native
+    def upperBound(key: K): typings.jsSdsl.distEsmContainerTreeContainerBaseTreeIteratorMod.default[K, V] = js.native
   }
 }

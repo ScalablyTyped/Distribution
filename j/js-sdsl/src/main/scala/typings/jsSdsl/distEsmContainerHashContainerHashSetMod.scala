@@ -12,23 +12,20 @@ object distEsmContainerHashContainerHashSetMod {
   @js.native
   open class default[K] () extends HashSet[K] {
     def this(container: initContainer[K]) = this()
-    def this(container: Unit, initBucketNum: Double) = this()
-    def this(container: initContainer[K], initBucketNum: Double) = this()
-    def this(container: Unit, initBucketNum: Double, _hashFunc: js.Function1[/* x */ K, Double]) = this()
-    def this(container: Unit, initBucketNum: Unit, _hashFunc: js.Function1[/* x */ K, Double]) = this()
-    def this(container: initContainer[K], initBucketNum: Double, _hashFunc: js.Function1[/* x */ K, Double]) = this()
-    def this(container: initContainer[K], initBucketNum: Unit, _hashFunc: js.Function1[/* x */ K, Double]) = this()
   }
   
   @js.native
   trait HashSet[K]
-    extends typings.jsSdsl.distEsmContainerHashContainerBaseMod.default[K] {
+    extends typings.jsSdsl.distEsmContainerHashContainerBaseMod.default[K, Unit] {
     
     /**
-      * @description Insert element to hash set.
-      * @param element The element you want to insert.
+      * @description Insert element to set.
+      * @param key The key want to insert.
+      * @param isObject Tell us if the type of inserted key is `object` to improve efficiency.<br/>
+      *                 If a `undefined` value is passed in, the type will be automatically judged.
       */
-    def insert(element: K): Unit = js.native
+    def insert(key: K): Unit = js.native
+    def insert(key: K, isObject: Boolean): Unit = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator_HashSet: js.Function0[Generator[K, Unit, Any]] = js.native

@@ -36,6 +36,10 @@ object distEsmContainerSequentialContainerLinkListMod {
     /**
       * @description Merges two sorted lists.
       * @param list The other list you want to merge (must be sorted).
+      * @example
+      * const linkA = new LinkList([1, 3, 5]);
+      * const linkB = new LinkList([2, 4, 6]);
+      * linkA.merge(linkB);  // [1, 2, 3, 4, 5];
       */
     def merge(list: LinkList[T]): Unit = js.native
     

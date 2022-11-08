@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "random" : "3.0.6"
+      "random" : "4.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "random" : "3.0.6"
+      "random" : "4.0.2"
     }
   ],
   "compile-devDependencies" : [

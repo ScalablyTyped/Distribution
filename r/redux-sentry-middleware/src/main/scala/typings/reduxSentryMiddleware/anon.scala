@@ -225,7 +225,7 @@ object anon {
     
     var LinkedErrors: TypeofLinkedErrors = js.native
     
-    val SDK_VERSION: /* "7.17.4" */ String = js.native
+    val SDK_VERSION: /* "7.18.0" */ String = js.native
     
     var Scope: TypeofScope = js.native
     

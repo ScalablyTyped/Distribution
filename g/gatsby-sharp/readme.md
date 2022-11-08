@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby-sharp
 
-Typings are for version 0.18.0
+Typings are for version 1.0.0
 
 
 

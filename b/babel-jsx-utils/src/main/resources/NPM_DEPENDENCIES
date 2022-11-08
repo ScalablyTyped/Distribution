@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "babel-jsx-utils" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "babel-jsx-utils" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}
