@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mongodb-memory-server" : "8.9.5"
+      "mongodb-memory-server" : "8.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mongodb-memory-server" : "8.9.5"
+      "mongodb-memory-server" : "8.10.0"
     }
   ],
   "compile-devDependencies" : [

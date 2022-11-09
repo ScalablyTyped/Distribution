@@ -3,6 +3,24 @@
 
 Typings are for version 11.4.0
 
+## Library description:
+Provides GLView that acts as OpenGL ES render target and gives GL context object implementing WebGL 2.0 specification.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | expo-gl |
+| Keywords           | react-native, expo, gl, glview, webgl |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 31778.666666666668 |
+| # stars            | 17981.0 |
+
+## Links
+- [Homepage](https://docs.expo.dev/versions/latest/sdk/gl-view/)
+- [Bugs](https://github.com/expo/expo/issues)
+- [Repository](https://github.com/expo/expo)
+- [Npm](https://www.npmjs.com/package/expo-gl)
+    
 
 
 ## Note
