@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribePackagesRequest extends StObject {
   
   /**
-    * Only returns packages that match the DescribePackagesFilterList values. 
+    * Only returns packages that match the DescribePackagesFilterList values.
     */
   var Filters: js.UndefOr[DescribePackagesFilterList] = js.undefined
   
   /**
-    * Limits results to a maximum number of packages.
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsOpensearchMod.MaxResults] = js.undefined
   
   /**
-    * Used for pagination. Only necessary if a previous API call includes a non-null NextToken value. If provided, returns results for the next page. 
+    * If your initial DescribePackageFilters operation returns a nextToken, you can include the returned nextToken in subsequent DescribePackageFilters operations, which returns results in the next page.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NextToken] = js.undefined
 }

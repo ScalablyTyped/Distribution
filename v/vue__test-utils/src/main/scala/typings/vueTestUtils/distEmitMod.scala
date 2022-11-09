@@ -28,7 +28,8 @@ object distEmitMod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ): js.UndefOr[js.Array[T] | (Record[String, js.Array[T]])] = ^.asInstanceOf[js.Dynamic].applyDynamic("emitted")(vm.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[T] | (Record[String, js.Array[T]])]]
   inline def emitted_false[T](
@@ -42,7 +43,8 @@ object distEmitMod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     eventName: String
   ): js.UndefOr[js.Array[T] | (Record[String, js.Array[T]])] = (^.asInstanceOf[js.Dynamic].applyDynamic("emitted")(vm.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T] | (Record[String, js.Array[T]])]]
@@ -60,7 +62,8 @@ object distEmitMod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEventHistory")(vm.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

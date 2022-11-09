@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DescribeInstanceTypeLimitsResponse extends StObject {
   
+  /**
+    * Map that contains all applicable instance type limits.data refers to data nodes.master refers to dedicated master nodes.
+    */
   var LimitsByRole: js.UndefOr[typings.awsSdk.clientsOpensearchMod.LimitsByRole] = js.undefined
 }
 object DescribeInstanceTypeLimitsResponse {

@@ -62,7 +62,8 @@ trait RouteRecordNormalized extends StObject {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        js.Object
       ]) | Null
     ]
   ]
@@ -124,7 +125,8 @@ object RouteRecordNormalized {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          js.Object
         ]) | Null
       ]
     ],
@@ -176,7 +178,8 @@ object RouteRecordNormalized {
               js.Object, 
               js.Object, 
               `false`, 
-              ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+              ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+              js.Object
             ]) | Null
           ]
         ]

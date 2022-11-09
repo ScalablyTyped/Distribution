@@ -1,7 +1,7 @@
 
 # Scala.js typings for argon2
 
-Typings are for version 0.30.1
+Typings are for version 0.30.2
 
 ## Library description:
 An Argon2 library for Node

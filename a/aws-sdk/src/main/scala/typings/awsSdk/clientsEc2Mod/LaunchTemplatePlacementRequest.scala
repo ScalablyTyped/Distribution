@@ -17,6 +17,11 @@ trait LaunchTemplatePlacementRequest extends StObject {
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
+    * The Group Id of a placement group. You must specify the Placement Group Group Id to launch an instance in a shared placement group.
+    */
+  var GroupId: js.UndefOr[PlacementGroupId] = js.undefined
+  
+  /**
     * The name of the placement group for the instance.
     */
   var GroupName: js.UndefOr[PlacementGroupName] = js.undefined
@@ -62,6 +67,10 @@ object LaunchTemplatePlacementRequest {
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    
+    inline def setGroupId(value: PlacementGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
     inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

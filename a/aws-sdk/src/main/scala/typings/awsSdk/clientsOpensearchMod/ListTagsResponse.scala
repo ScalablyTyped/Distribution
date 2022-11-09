@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsResponse extends StObject {
   
   /**
-    * List of Tag for the requested domain. 
+    * List of resource tags associated with the specified domain.
     */
   var TagList: js.UndefOr[typings.awsSdk.clientsOpensearchMod.TagList] = js.undefined
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo__package-manager"
-version := "0.0.56-bd608e"
+version := "0.0.57-f442bf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

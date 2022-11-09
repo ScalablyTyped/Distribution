@@ -11,7 +11,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */]
+trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, I /* <: ComponentInjectOptions */, II /* <: String */]
   extends StObject
      with /* key */ StringDictionary[Any] {
   
@@ -58,6 +58,7 @@ trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions 
         Props, 
         js.Object, 
         `false`, 
+        js.Object, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
@@ -87,6 +88,7 @@ trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions 
         Props, 
         js.Object, 
         `false`, 
+        js.Object, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
@@ -125,7 +127,7 @@ trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions 
   
   var filters: js.UndefOr[Record[String, js.Function]] = js.undefined
   
-  var inject: js.UndefOr[ComponentInjectOptions] = js.undefined
+  var inject: js.UndefOr[I | js.Array[II]] = js.undefined
   
   var methods: js.UndefOr[M] = js.undefined
   
@@ -147,12 +149,12 @@ trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions 
 }
 object LegacyOptions {
   
-  inline def apply[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */](): LegacyOptions[Props, D, C, M, Mixin, Extends] = {
+  inline def apply[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, I /* <: ComponentInjectOptions */, II /* <: String */](): LegacyOptions[Props, D, C, M, Mixin, Extends, I, II] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[LegacyOptions[Props, D, C, M, Mixin, Extends]]
+    __obj.asInstanceOf[LegacyOptions[Props, D, C, M, Mixin, Extends, I, II]]
   }
   
-  extension [Self <: LegacyOptions[?, ?, ?, ?, ?, ?], Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */](x: Self & (LegacyOptions[Props, D, C, M, Mixin, Extends])) {
+  extension [Self <: LegacyOptions[?, ?, ?, ?, ?, ?, ?, ?], Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, I /* <: ComponentInjectOptions */, II /* <: String */](x: Self & (LegacyOptions[Props, D, C, M, Mixin, Extends, I, II])) {
     
     inline def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
     
@@ -204,6 +206,7 @@ object LegacyOptions {
             Props, 
             js.Object, 
             `false`, 
+            js.Object, 
             IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
             (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
             (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
@@ -233,6 +236,7 @@ object LegacyOptions {
             Props, 
             js.Object, 
             `false`, 
+            js.Object, 
             IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
             (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
             (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
@@ -279,7 +283,8 @@ object LegacyOptions {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          js.Object
         ]) | Null, /* info */ String) => Boolean | Unit
     ): Self = StObject.set(x, "errorCaptured", js.Any.fromFunction3(value))
     
@@ -293,11 +298,11 @@ object LegacyOptions {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setInject(value: ComponentInjectOptions): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+    inline def setInject(value: I | js.Array[II]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
     
     inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
     
-    inline def setInjectVarargs(value: String*): Self = StObject.set(x, "inject", js.Array(value*))
+    inline def setInjectVarargs(value: II*): Self = StObject.set(x, "inject", js.Array(value*))
     
     inline def setMethods(value: M): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     

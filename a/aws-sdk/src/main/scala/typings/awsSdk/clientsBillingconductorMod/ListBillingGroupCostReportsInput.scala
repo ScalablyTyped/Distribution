@@ -22,7 +22,7 @@ trait ListBillingGroupCostReportsInput extends StObject {
   var MaxResults: js.UndefOr[MaxBillingGroupResults] = js.undefined
   
   /**
-    * The pagination token used on subsequent calls to get reports. 
+    * The pagination token that's used on subsequent calls to get reports. 
     */
   var NextToken: js.UndefOr[Token] = js.undefined
 }

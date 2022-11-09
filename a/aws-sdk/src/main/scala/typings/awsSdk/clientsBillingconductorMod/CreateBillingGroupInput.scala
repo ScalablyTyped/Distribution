@@ -22,7 +22,7 @@ trait CreateBillingGroupInput extends StObject {
   var ComputationPreference: typings.awsSdk.clientsBillingconductorMod.ComputationPreference
   
   /**
-    * The billing group description. 
+    * The description of the billing group. 
     */
   var Description: js.UndefOr[BillingGroupDescription] = js.undefined
   

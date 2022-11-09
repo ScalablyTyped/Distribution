@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDomainConfigResponse extends StObject {
   
   /**
-    * The configuration information of the domain requested in the DescribeDomainConfig request. 
+    * Container for the configuration of the OpenSearch Service domain.
     */
   var DomainConfig: typings.awsSdk.clientsOpensearchMod.DomainConfig
 }

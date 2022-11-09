@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VPCDerivedInfo extends StObject {
   
   /**
-    * The Availability Zones for the domain. Exists only if the domain was created with VPCOptions.
+    * The list of Availability Zones associated with the VPC subnets.
     */
   var AvailabilityZones: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The security groups for the VPC endpoint.
+    * The list of security group IDs associated with the VPC endpoints for the domain.
     */
   var SecurityGroupIds: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The subnets for the VPC endpoint.
+    * A list of subnet IDs associated with the VPC endpoints for the domain.
     */
   var SubnetIds: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The VPC ID for the domain. Exists only if the domain was created with VPCOptions.
+    * The ID for your VPC. Amazon VPC generates this value when you create a VPC.
     */
   var VPCId: js.UndefOr[String] = js.undefined
 }

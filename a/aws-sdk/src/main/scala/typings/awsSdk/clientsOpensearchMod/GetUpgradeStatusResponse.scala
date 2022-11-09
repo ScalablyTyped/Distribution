@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUpgradeStatusResponse extends StObject {
   
   /**
-    *  One of four statuses an upgrade have, returned as part of the  GetUpgradeStatusResponse  object. The status can take one of the following values:  In Progress Succeeded Succeeded with Issues Failed  
+    * The status of the current step that an upgrade is on.
     */
   var StepStatus: js.UndefOr[UpgradeStatus] = js.undefined
   
   /**
-    * A string that briefly describes the update.
+    * A string that describes the update.
     */
   var UpgradeName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.UpgradeName] = js.undefined
   
   /**
-    *  One of three steps an upgrade or upgrade eligibility check goes through:  PreUpgradeCheck Snapshot Upgrade  
+    * One of three steps that an upgrade or upgrade eligibility check goes through.
     */
   var UpgradeStep: js.UndefOr[typings.awsSdk.clientsOpensearchMod.UpgradeStep] = js.undefined
 }

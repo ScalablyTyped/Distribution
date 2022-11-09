@@ -12,34 +12,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FullWidth extends StObject {
   
+  /** Accepts any item as a child element. For all common cases pass a standard text string. */
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  /** Specifies a CSS class name to be appended to the component’s root element. */
   var className: js.UndefOr[String] = js.undefined
   
+  /** Applies a data-hook HTML attribute that can be used in the tests. */
   var dataHook: js.UndefOr[String] = js.undefined
   
+  /** Specifies whether user interactions are disabled. */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /** Specifies whether component handles text overflow with ellipsis. If enabled, label that exceed available space will be displayed inside of a tooltip when user hover over a button. */
   var ellipsis: js.UndefOr[Boolean] = js.undefined
   
+  /** Sets button width to fill a 100% of a parent container width. */
   var fullWidth: js.UndefOr[Boolean] = js.undefined
   
+  /** Pass an icon or a component to display at the front of a label (e.g., svg, image, etc.) */
   var prefixIcon: js.UndefOr[IconElement] = js.undefined
   
+  /** Specifies the priority of a button. */
   var priority: js.UndefOr[ButtonPriority] = js.undefined
   
+  /** Specifies whether the full button label is displayed in a tooltip when label overflows available space.
+    *
+    * Behaviour is enabled by default. Set property value to false to show ellipsis without a tooltip. */
   var showTooltip: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Size of Button content
+    * Controls the size of a button.
     * @default medium
     */
   var size: js.UndefOr[ButtonSize] = js.undefined
   
+  /** Specifies the skin of a button. */
   var skin: js.UndefOr[ButtonSkin] = js.undefined
   
+  /** Pass an icon or a component to display at the end of a label (e.g., svg, image, etc.) */
   var suffixIcon: js.UndefOr[IconElement] = js.undefined
   
+  /** Allows to pass all common tooltip props. Use it to customize a tooltip created from text ellipsis. Check `<Tooltip/>` for a full API. */
   var tooltipProps: js.UndefOr[TooltipCommonProps] = js.undefined
 }
 object FullWidth {

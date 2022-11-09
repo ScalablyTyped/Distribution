@@ -17,12 +17,12 @@ trait UpgradeStepItem extends StObject {
   var ProgressPercent: js.UndefOr[Double] = js.undefined
   
   /**
-    *  One of three steps an upgrade or upgrade eligibility check goes through:  PreUpgradeCheck Snapshot Upgrade  
+    *  One of three steps that an upgrade or upgrade eligibility check goes through:    PreUpgradeCheck   Snapshot   Upgrade  
     */
   var UpgradeStep: js.UndefOr[typings.awsSdk.clientsOpensearchMod.UpgradeStep] = js.undefined
   
   /**
-    *  The current status of the upgrade. The status can take one of the following values:  In Progress Succeeded Succeeded with Issues Failed  
+    *  The current status of the upgrade. The status can take one of the following values:    In Progress   Succeeded   Succeeded with Issues   Failed  
     */
   var UpgradeStepStatus: js.UndefOr[UpgradeStatus] = js.undefined
 }

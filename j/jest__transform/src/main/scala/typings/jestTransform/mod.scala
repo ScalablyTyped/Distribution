@@ -291,7 +291,7 @@ object mod {
     
     /* private */ val _config: Any = js.native
     
-    /* private */ var _createFolderFromCacheKey: Any = js.native
+    /* private */ var _createCachedFilename: Any = js.native
     
     /* private */ var _getCacheKey: Any = js.native
     

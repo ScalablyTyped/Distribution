@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddTagsRequest extends StObject {
   
   /**
-    * Specify the ARN of the domain you want to add tags to. 
+    * Amazon Resource Name (ARN) for the OpenSearch Service domain to which you want to attach resource tags.
     */
   var ARN: typings.awsSdk.clientsOpensearchMod.ARN
   
   /**
-    * List of Tag to add to the domain. 
+    * List of resource tags.
     */
   var TagList: typings.awsSdk.clientsOpensearchMod.TagList
 }

@@ -79,6 +79,7 @@ type CloudWatchLogsLogGroupArn = String
   - typings.awsSdk.awsSdkStrings.`us-west-2`
   - typings.awsSdk.awsSdkStrings.`ca-central-1`
   - typings.awsSdk.awsSdkStrings.`eu-central-1`
+  - typings.awsSdk.awsSdkStrings.`eu-central-2`
   - typings.awsSdk.awsSdkStrings.`eu-west-1`
   - typings.awsSdk.awsSdkStrings.`eu-west-2`
   - typings.awsSdk.awsSdkStrings.`eu-west-3`
@@ -335,6 +336,7 @@ type ResourceRecordSetMultiValueAnswer = Boolean
   - typings.awsSdk.awsSdkStrings.`eu-west-2`
   - typings.awsSdk.awsSdkStrings.`eu-west-3`
   - typings.awsSdk.awsSdkStrings.`eu-central-1`
+  - typings.awsSdk.awsSdkStrings.`eu-central-2`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-3`
@@ -347,6 +349,7 @@ type ResourceRecordSetMultiValueAnswer = Boolean
   - typings.awsSdk.awsSdkStrings.`cn-northwest-1`
   - typings.awsSdk.awsSdkStrings.`ap-east-1`
   - typings.awsSdk.awsSdkStrings.`me-south-1`
+  - typings.awsSdk.awsSdkStrings.`me-central-1`
   - typings.awsSdk.awsSdkStrings.`ap-south-1`
   - typings.awsSdk.awsSdkStrings.`af-south-1`
   - typings.awsSdk.awsSdkStrings.`eu-south-1`
@@ -466,6 +469,7 @@ type VPCId = String
   - typings.awsSdk.awsSdkStrings.`eu-west-2`
   - typings.awsSdk.awsSdkStrings.`eu-west-3`
   - typings.awsSdk.awsSdkStrings.`eu-central-1`
+  - typings.awsSdk.awsSdkStrings.`eu-central-2`
   - typings.awsSdk.awsSdkStrings.`ap-east-1`
   - typings.awsSdk.awsSdkStrings.`me-south-1`
   - typings.awsSdk.awsSdkStrings.`us-gov-west-1`

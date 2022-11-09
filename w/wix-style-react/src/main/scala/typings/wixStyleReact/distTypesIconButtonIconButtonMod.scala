@@ -65,67 +65,67 @@ object distTypesIconButtonIconButtonMod {
       @js.native
       val ^ : js.Any = js.native
       
-      /** Defines a string value that labels the button element */
+      /** Define a string value that labels the button element */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.ariaLabel")
       @js.native
       def ariaLabel: Requireable[String] = js.native
       inline def ariaLabel_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ariaLabel")(x.asInstanceOf[js.Any])
       
-      /** Identifies the element that labels the button element */
+      /** Identify the element that labels the button element */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.ariaLabelledBy")
       @js.native
       def ariaLabelledBy: Requireable[String] = js.native
       inline def ariaLabelledBy_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ariaLabelledBy")(x.asInstanceOf[js.Any])
       
-      /** render as some other component or DOM tag */
+      /** Render button as another component or a custom HTML tag */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.as")
       @js.native
       def as: Requireable[String | js.Object] = js.native
       inline def as_=(x: Requireable[String | js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("as")(x.asInstanceOf[js.Any])
       
-      /** Used for passing any wix-style-react icon. For external icon make sure to follow ux sizing guidelines */
+      /** Accept any WSR icon. In order to use external icons make sure to follow sizing guidelines and contact design system UX for approval. */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.children")
       @js.native
       def children: Requireable[ReactNodeLike] = js.native
       inline def children_=(x: Requireable[ReactNodeLike]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
-      /** Classes to be applied to the root element */
+      /** Specifies a CSS class name to be appended to the component’s root element */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.className")
       @js.native
       def className: Requireable[String] = js.native
       inline def className_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
-      /** String based data hook */
+      /** Applies a data-hook HTML attribute that can be used in the tests */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.dataHook")
       @js.native
       def dataHook: Requireable[String] = js.native
       inline def dataHook_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataHook")(x.asInstanceOf[js.Any])
       
-      /** Applies disabled styles */
+      /** Specify whether button should be disabled */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.disabled")
       @js.native
       def disabled: Requireable[Boolean] = js.native
       inline def disabled_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
       
-      /** Click event handler  */
+      /** Defines a callback function which is called whenever a button is clicked */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.onClick")
       @js.native
       def onClick: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
       inline def onClick_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClick")(x.asInstanceOf[js.Any])
       
-      /** Button priority */
+      /** Control the priority of a component */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.priority")
       @js.native
       def priority: Requireable[String] = js.native
       inline def priority_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("priority")(x.asInstanceOf[js.Any])
       
-      /** Button size */
+      /** Control the size of a component */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.size")
       @js.native
       def size: Requireable[String] = js.native
       inline def size_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
       
-      /** Button skins */
+      /** Sets the skin of a component */
       @JSImport("wix-style-react/dist/types/IconButton/IconButton", "default.propTypes.skin")
       @js.native
       def skin: Requireable[String] = js.native

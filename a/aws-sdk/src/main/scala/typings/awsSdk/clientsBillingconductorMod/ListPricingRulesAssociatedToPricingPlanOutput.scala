@@ -22,7 +22,7 @@ trait ListPricingRulesAssociatedToPricingPlanOutput extends StObject {
   var PricingPlanArn: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.PricingPlanArn] = js.undefined
   
   /**
-    *  A list containing pricing rules associated with the requested pricing plan. 
+    *  A list containing pricing rules that are associated with the requested pricing plan. 
     */
   var PricingRuleArns: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.PricingRuleArns] = js.undefined
 }

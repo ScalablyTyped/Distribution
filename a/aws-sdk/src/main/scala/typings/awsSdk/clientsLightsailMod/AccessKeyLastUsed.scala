@@ -12,12 +12,12 @@ trait AccessKeyLastUsed extends StObject {
   var lastUsedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS Region where this access key was most recently used. This value is N/A if the access key has not been used.
+    * The Amazon Web Services Region where this access key was most recently used. This value is N/A if the access key has not been used.
     */
   var region: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the AWS service with which this access key was most recently used. This value is N/A if the access key has not been used.
+    * The name of the Amazon Web Services service with which this access key was most recently used. This value is N/A if the access key has not been used.
     */
   var serviceName: js.UndefOr[String] = js.undefined
 }

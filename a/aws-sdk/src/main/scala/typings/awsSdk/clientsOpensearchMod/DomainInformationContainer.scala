@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DomainInformationContainer extends StObject {
   
+  /**
+    * Information about an Amazon OpenSearch Service domain.
+    */
   var AWSDomainInformation: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AWSDomainInformation] = js.undefined
 }
 object DomainInformationContainer {

@@ -25,6 +25,7 @@ type Arn = java.lang.String
   - typings.awsSdk.awsSdkStrings.SERVICE_LIMIT_EXCEEDED
   - typings.awsSdk.awsSdkStrings.ILLEGAL_CUSTOMLINEITEM
   - typings.awsSdk.awsSdkStrings.INTERNAL_SERVER_EXCEPTION
+  - typings.awsSdk.awsSdkStrings.INVALID_BILLING_PERIOD_RANGE
   - java.lang.String
 */
 type AssociateResourceErrorReason = _AssociateResourceErrorReason | java.lang.String
@@ -108,6 +109,8 @@ type CustomLineItemRelationship = _CustomLineItemRelationship | java.lang.String
   - java.lang.String
 */
 type CustomLineItemType = _CustomLineItemType | java.lang.String
+
+type CustomLineItemVersionList = js.Array[CustomLineItemVersionListElement]
 
 type DisassociateResourcesResponseList = js.Array[DisassociateResourceResponseElement]
 

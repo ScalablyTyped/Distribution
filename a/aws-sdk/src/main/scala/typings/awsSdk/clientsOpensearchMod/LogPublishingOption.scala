@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LogPublishingOption extends StObject {
   
+  /**
+    * The Amazon Resource Name (ARN) of the CloudWatch Logs group to publish logs to.
+    */
   var CloudWatchLogsLogGroupArn: js.UndefOr[typings.awsSdk.clientsOpensearchMod.CloudWatchLogsLogGroupArn] = js.undefined
   
   /**
-    * Whether the given log publishing option is enabled or not.
+    * Whether the log should be published.
     */
   var Enabled: js.UndefOr[Boolean] = js.undefined
 }

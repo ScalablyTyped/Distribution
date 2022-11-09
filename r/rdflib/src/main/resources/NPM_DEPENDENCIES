@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rdflib" : "2.2.20"
+      "rdflib" : "2.2.21"
     }
   ],
   "test-dependencies" : [
     {
-      "rdflib" : "2.2.20"
+      "rdflib" : "2.2.21"
     }
   ],
   "compile-devDependencies" : [

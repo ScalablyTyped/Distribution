@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateOutboundConnectionRequest extends StObject {
   
   /**
-    * The connection alias used used by the customer for this cross-cluster connection.
+    * Name of the connection.
     */
   var ConnectionAlias: typings.awsSdk.clientsOpensearchMod.ConnectionAlias
   
   /**
-    * The  AWSDomainInformation  for the local OpenSearch domain. 
+    * Name and Region of the source (local) domain.
     */
   var LocalDomainInfo: DomainInformationContainer
   
   /**
-    * The  AWSDomainInformation  for the remote OpenSearch domain. 
+    * Name and Region of the destination (remote) domain.
     */
   var RemoteDomainInfo: DomainInformationContainer
 }

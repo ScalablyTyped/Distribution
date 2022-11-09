@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "argon2"
-version := "0.30.1-eb8384"
+version := "0.30.2-0ffaf9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

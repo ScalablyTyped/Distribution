@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdatePackageRequest extends StObject {
   
   /**
-    * A commit message for the new version which is shown as part of GetPackageVersionHistoryResponse. 
+    * Commit message for the updated file, which is shown as part of GetPackageVersionHistoryResponse.
     */
   var CommitMessage: js.UndefOr[typings.awsSdk.clientsOpensearchMod.CommitMessage] = js.undefined
   
@@ -21,6 +21,9 @@ trait UpdatePackageRequest extends StObject {
     */
   var PackageID: typings.awsSdk.clientsOpensearchMod.PackageID
   
+  /**
+    * Amazon S3 bucket and key for the package.
+    */
   var PackageSource: typings.awsSdk.clientsOpensearchMod.PackageSource
 }
 object UpdatePackageRequest {

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo__config-types"
-version := "46.0.2-adb196"
+version := "47.0.0-8c10ab"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCompatibleVersionsResponse extends StObject {
   
   /**
-    *  A map of compatible OpenSearch versions returned as part of the  GetCompatibleVersions  operation. 
+    * A map of OpenSearch or Elasticsearch versions and the versions you can upgrade them to.
     */
   var CompatibleVersions: js.UndefOr[CompatibleVersionsList] = js.undefined
 }

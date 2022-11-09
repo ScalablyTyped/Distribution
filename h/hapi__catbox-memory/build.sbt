@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi__catbox-memory"
-version := "4.1-dt-20221026Z-5d910c"
+version := "4.1-dt-20221108Z-37d0c0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

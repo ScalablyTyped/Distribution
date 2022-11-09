@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainEndpointOptionsStatus extends StObject {
   
   /**
-    * Options to configure the endpoint for the domain.
+    * Options to configure the endpoint for a domain.
     */
   var Options: DomainEndpointOptions
   
   /**
-    * The status of the endpoint options for the domain. See OptionStatus for the status information that's included. 
+    * The status of the endpoint options for a domain.
     */
   var Status: OptionStatus
 }

@@ -7,67 +7,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDomainConfigRequest extends StObject {
   
   /**
-    * IAM access policy as a JSON-formatted string.
+    * Identity and Access Management (IAM) access policy as a JSON-formatted string.
     */
   var AccessPolicies: js.UndefOr[PolicyDocument] = js.undefined
   
   /**
-    * Modifies the advanced option to allow references to indices in an HTTP request body. Must be false when configuring access to individual sub-resources. By default, the value is true. See Advanced options  for more information. 
+    * Key-value pairs to specify advanced configuration options. The following key-value pairs are supported:    "rest.action.multi.allow_explicit_index": "true" | "false" - Note the use of a string rather than a boolean. Specifies whether explicit references to indexes are allowed inside the body of HTTP requests. If you want to configure access policies for domain sub-resources, such as specific indexes and domain APIs, you must disable this property. Default is true.    "indices.fielddata.cache.size": "80"  - Note the use of a string rather than a boolean. Specifies the percentage of heap space allocated to field data. Default is unbounded.    "indices.query.bool.max_clause_count": "1024" - Note the use of a string rather than a boolean. Specifies the maximum number of clauses allowed in a Lucene boolean query. Default is 1,024. Queries with more than the permitted number of clauses result in a TooManyClauses error.    "override_main_response_version": "true" | "false" - Note the use of a string rather than a boolean. Specifies whether the domain reports its version as 7.10 to allow Elasticsearch OSS clients and plugins to continue working with it. Default is false when creating a domain and true when upgrading a domain.   For more information, see Advanced cluster parameters.
     */
   var AdvancedOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AdvancedOptions] = js.undefined
   
   /**
-    * Specifies advanced security options.
+    * Options for fine-grained access control.
     */
   var AdvancedSecurityOptions: js.UndefOr[AdvancedSecurityOptionsInput] = js.undefined
   
   /**
-    * Specifies Auto-Tune options.
+    * Options for Auto-Tune.
     */
   var AutoTuneOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AutoTuneOptions] = js.undefined
   
   /**
-    * The type and number of instances to instantiate for the domain cluster.
+    * Changes that you want to make to the cluster configuration, such as the instance type and number of EC2 instances.
     */
   var ClusterConfig: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ClusterConfig] = js.undefined
   
   /**
-    * Options to specify the Cognito user and identity pools for OpenSearch Dashboards authentication. For more information, see Configuring Amazon Cognito authentication for OpenSearch Dashboards. 
+    * Key-value pairs to configure Amazon Cognito authentication for OpenSearch Dashboards.
     */
   var CognitoOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.CognitoOptions] = js.undefined
   
   /**
-    * Options to specify configuration that will be applied to the domain endpoint.
+    * Additional options for the domain endpoint, such as whether to require HTTPS for all traffic.
     */
   var DomainEndpointOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainEndpointOptions] = js.undefined
   
   /**
-    * The name of the domain you're updating.
+    * The name of the domain that you're updating.
     */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
   
   /**
-    * This flag, when set to True, specifies whether the UpdateDomain request should return the results of validation checks (DryRunResults) without actually applying the change.
+    * This flag, when set to True, specifies whether the UpdateDomain request should return the results of validation check without actually applying the change.
     */
   var DryRun: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DryRun] = js.undefined
   
   /**
-    * Specify the type and size of the EBS volume to use.
+    * The type and size of the EBS volume to attach to instances in the domain.
     */
   var EBSOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.EBSOptions] = js.undefined
   
   /**
-    * Specifies encryption of data at rest options.
+    * Encryption at rest options for the domain.
     */
   var EncryptionAtRestOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.EncryptionAtRestOptions] = js.undefined
   
   /**
-    * Map of LogType and LogPublishingOption, each containing options to publish a given type of OpenSearch log. 
+    * Options to publish OpenSearch lots to Amazon CloudWatch Logs.
     */
   var LogPublishingOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.LogPublishingOptions] = js.undefined
   
   /**
-    * Specifies node-to-node encryption options.
+    * Node-To-Node Encryption options for the domain.
     */
   var NodeToNodeEncryptionOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NodeToNodeEncryptionOptions] = js.undefined
   
@@ -77,7 +77,7 @@ trait UpdateDomainConfigRequest extends StObject {
   var SnapshotOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.SnapshotOptions] = js.undefined
   
   /**
-    * Options to specify the subnets and security groups for the VPC endpoint. For more information, see Launching your Amazon OpenSearch Service domains using a VPC . 
+    * Options to specify the subnets and security groups for a VPC endpoint. For more information, see Launching your Amazon OpenSearch Service domains using a VPC.
     */
   var VPCOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.VPCOptions] = js.undefined
 }

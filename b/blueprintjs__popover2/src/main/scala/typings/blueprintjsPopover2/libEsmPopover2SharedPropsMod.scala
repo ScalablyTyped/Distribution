@@ -19,6 +19,7 @@ import typings.popperjsCore.libEnumsMod.RootBoundary
 import typings.popperjsCore.libTypesMod.ModifierArguments
 import typings.popperjsCore.libTypesMod.Obj
 import typings.popperjsCore.libTypesMod.State
+import typings.react.mod.HTMLProps
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
@@ -36,6 +37,8 @@ object libEsmPopover2SharedPropsMod {
   @JSImport("@blueprintjs/popover2/lib/esm/popover2SharedProps", "PlacementOptions")
   @js.native
   val PlacementOptions: js.Array[Placement] = js.native
+  
+  type DefaultPopover2TargetHTMLProps = HTMLProps[HTMLElement]
   
   trait IPopover2SharedProps[TProps]
     extends StObject

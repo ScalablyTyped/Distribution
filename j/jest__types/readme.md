@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__types
 
-Typings are for version 29.2.1
+Typings are for version 29.3.1
 
 ## Library description:
 This package contains shared types of Jest's packages.

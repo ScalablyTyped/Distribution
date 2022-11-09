@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "lesgo"
-version := "0.7-dt-20220817Z-72b700"
+version := "0.7-dt-20220817Z-b5d39e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20221018Z-ca4e3c",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1249.0-651e57",
-  "org.scalablytyped" %%% "data-api-client" % "1.2-dt-20220906Z-d319b9",
+  "org.scalablytyped" %%% "aws-sdk" % "2.1250.0-82abf5",
+  "org.scalablytyped" %%% "data-api-client" % "1.2-dt-20220906Z-986a7f",
   "org.scalablytyped" %%% "elastic__elasticsearch" % "8.5.0-790f5b",
   "org.scalablytyped" %%% "elastic__transport" % "8.2.0-efbaf8",
   "org.scalablytyped" %%% "hpagent" % "1.0.0-2fd429",

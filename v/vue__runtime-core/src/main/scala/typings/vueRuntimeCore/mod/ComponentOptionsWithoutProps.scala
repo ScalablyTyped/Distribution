@@ -9,9 +9,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComponentOptionsWithoutProps[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, PE]
+trait ComponentOptionsWithoutProps[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, PE]
   extends StObject
-     with ComponentOptionsBase[PE, RawBindings, D, C, M, Mixin, Extends, E, EE, js.Object]
+     with ComponentOptionsBase[PE, RawBindings, D, C, M, Mixin, Extends, E, EE, js.Object, I, II]
      with ThisType[
       CreateComponentPublicInstance[
         PE, 
@@ -25,6 +25,7 @@ trait ComponentOptionsWithoutProps[Props, RawBindings, D, C /* <: ComputedOption
         PE, 
         js.Object, 
         `false`, 
+        I, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[PE], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[RawBindings], 
@@ -48,12 +49,12 @@ trait ComponentOptionsWithoutProps[Props, RawBindings, D, C /* <: ComputedOption
 }
 object ComponentOptionsWithoutProps {
   
-  inline def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, PE](props: Unit): ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, PE] = {
+  inline def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, PE](props: Unit): ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, PE] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, PE]]
+    __obj.asInstanceOf[ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, PE]]
   }
   
-  extension [Self <: ComponentOptionsWithoutProps[?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, PE](x: Self & (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, PE])) {
+  extension [Self <: ComponentOptionsWithoutProps[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, PE](x: Self & (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, PE])) {
     
     inline def setProps(value: Unit): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

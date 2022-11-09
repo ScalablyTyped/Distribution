@@ -6,13 +6,13 @@ import typings.std.Exclude
 import typings.std.Node
 import typings.std.Parameters
 import typings.std.Record
-import typings.vueReactivity.anon.RawSymbol
 import typings.vueReactivity.mod.ComputedGetter
 import typings.vueReactivity.mod.ComputedRef
 import typings.vueReactivity.mod.CustomRefFactory
 import typings.vueReactivity.mod.DebuggerEvent
 import typings.vueReactivity.mod.DebuggerOptions
 import typings.vueReactivity.mod.DeepReadonly
+import typings.vueReactivity.mod.Raw
 import typings.vueReactivity.mod.ReactiveEffectOptions
 import typings.vueReactivity.mod.ReactiveEffectRunner
 import typings.vueReactivity.mod.Ref_
@@ -360,7 +360,7 @@ String,
 PublicProps, 
 /* import warning: importer.ImportType#apply Failed type conversion: Props extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<Props> : Props */ js.Any, 
 ExtractDefaultPropTypes[Props]]]
-inline def defineComponent[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+inline def defineComponent[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
   options: ComponentOptionsWithArrayProps[
   PropNames, 
   RawBindings, 
@@ -371,6 +371,8 @@ inline def defineComponent[PropNames /* <: String */, RawBindings, D, C /* <: Co
   Extends, 
   E, 
   EE, 
+  I, 
+  II, 
   (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
 ]
 ): DefineComponent_[
@@ -402,7 +404,7 @@ PublicProps,
 ExtractDefaultPropTypes[
   /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any
 ]]]
-inline def defineComponent[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+inline def defineComponent[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
   options: ComponentOptionsWithObjectProps[
   PropsOptions, 
   RawBindings, 
@@ -413,6 +415,8 @@ inline def defineComponent[PropsOptions /* <: ComponentPropsOptions[Data] */, Ra
   Extends, 
   E, 
   EE, 
+  I, 
+  II, 
   ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
   ExtractDefaultPropTypes[PropsOptions]
 ]
@@ -441,8 +445,8 @@ EE,
 PublicProps, 
 /* import warning: importer.ImportType#apply Failed type conversion: PropsOptions extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<PropsOptions> : PropsOptions */ js.Any, 
 ExtractDefaultPropTypes[PropsOptions]]]
-inline def defineComponent[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
-  options: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Props & EmitsToProps[E]]
+inline def defineComponent[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+  options: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]
 ): DefineComponent_[
 Props, 
 RawBindings, 
@@ -554,12 +558,6 @@ inline def h(`type`: IsTeleport, props: RawProps & TeleportProps, children: RawC
 inline def h(`type`: IsTeleport, props: RawProps & TeleportProps, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h(`type`: Component[Any, Any, Any, ComputedOptions, MethodOptions]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h(`type`: Component[Any, Any, Any, ComputedOptions, MethodOptions], children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
-inline def h(
-  `type`: Component[Any, Any, Any, ComputedOptions, MethodOptions],
-  props: Null,
-  children: RawChildren
-): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
-inline def h(`type`: Component[Any, Any, Any, ComputedOptions, MethodOptions], props: Null, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h(`type`: Constructor[Any]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h(`type`: Constructor[Any], children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h(
@@ -633,6 +631,20 @@ inline def h[P](
 ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any], props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any], props: Unit, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+inline def h[P](
+  `type`: Component[P, Any, Any, ComputedOptions, MethodOptions],
+  props: RawProps & P,
+  children: RawChildren
+): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+inline def h[P](
+  `type`: Component[P, Any, Any, ComputedOptions, MethodOptions],
+  props: RawProps & P,
+  children: RawSlots
+): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+inline def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Null, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+inline def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Null, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+inline def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+inline def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Unit, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h[P](`type`: ConcreteComponent[js.Object | P, Any, Any, ComputedOptions, MethodOptions]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h[P](
   `type`: ConcreteComponent[js.Object | P, Any, Any, ComputedOptions, MethodOptions],
@@ -824,6 +836,8 @@ inline def h[P, E /* <: EmitsOptions */](`type`: FunctionalComponent[P, E], prop
 inline def h_P[P](`type`: String): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h_P[P](`type`: String, children: (RawProps & P) | RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h_P[P](`type`: String, props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+inline def h_P[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+inline def h_P[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h_P[P](`type`: Constructor[P]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h_P[P](`type`: Constructor[P], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 inline def h_P[P](
@@ -897,7 +911,7 @@ inline def isShallow(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDyna
 
 inline def isVNode(value: Any): /* is @vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVNode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}> */ Boolean]
 
-inline def markRaw[T /* <: js.Object */](value: T): T & RawSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("markRaw")(value.asInstanceOf[js.Any]).asInstanceOf[T & RawSymbol]
+inline def markRaw[T /* <: js.Object */](value: T): Raw[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("markRaw")(value.asInstanceOf[js.Any]).asInstanceOf[Raw[T]]
 
 inline def mergeProps(args: (Data & VNodeProps)*): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeProps")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Data]
 
@@ -1198,7 +1212,7 @@ type Component[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: Method
 
 type ComponentInjectOptions = js.Array[String] | ObjectInjectOptions
 
-type ComponentOptionsMixin = ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any]
+type ComponentOptionsMixin = ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, String]
 
 type ComponentPropsOptions[P] = ComponentObjectPropsOptions[P] | js.Array[String]
 
@@ -1207,7 +1221,7 @@ type ComponentProvideOptions = ObjectProvideOptions | js.Function
 type ComponentPublicInstance[P, // props type extracted from props option
 B, // raw bindings returned from setup()
 D, // return from data()
-C /* <: ComputedOptions */, M /* <: MethodOptions */, E /* <: EmitsOptions */, PublicProps, Defaults, MakeDefaultsOptional /* <: Boolean */, Options] = (Attrs[D, MakeDefaultsOptional, Defaults, P, PublicProps, E, Options]) & P & ShallowUnwrapRef[B] & UnwrapNestedRefs[D] & ExtractComputedReturns[C] & M & ComponentCustomProperties
+C /* <: ComputedOptions */, M /* <: MethodOptions */, E /* <: EmitsOptions */, PublicProps, Defaults, MakeDefaultsOptional /* <: Boolean */, Options, I /* <: ComponentInjectOptions */] = (Attrs[D, MakeDefaultsOptional, Defaults, P, PublicProps, E, Options]) & P & ShallowUnwrapRef[B] & UnwrapNestedRefs[D] & ExtractComputedReturns[C] & M & ComponentCustomProperties & InjectToObject[I]
 
 type ComponentWatchOptionItem = WatchOptionItem | js.Array[WatchOptionItem]
 
@@ -1222,7 +1236,7 @@ type CreateAppFunction[HostElement] = js.Function2[
 /* rootProps */ js.UndefOr[Data | Null], 
 App[HostElement]]
 
-type CreateComponentPublicInstance[P, B, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, PublicProps, Defaults, MakeDefaultsOptional /* <: Boolean */, PublicMixin, PublicP, PublicB, PublicD, PublicC /* <: ComputedOptions */, PublicM /* <: MethodOptions */, PublicDefaults] = ComponentPublicInstance[
+type CreateComponentPublicInstance[P, B, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, PublicProps, Defaults, MakeDefaultsOptional /* <: Boolean */, I /* <: ComponentInjectOptions */, PublicMixin, PublicP, PublicB, PublicD, PublicC /* <: ComputedOptions */, PublicM /* <: MethodOptions */, PublicDefaults] = ComponentPublicInstance[
 PublicP, 
 PublicB, 
 PublicD, 
@@ -1232,7 +1246,8 @@ E,
 PublicProps, 
 PublicDefaults, 
 MakeDefaultsOptional, 
-ComponentOptionsBase[P, B, D, C, M, Mixin, Extends, E, String, Defaults]]
+ComponentOptionsBase[P, B, D, C, M, Mixin, Extends, E, String, Defaults, js.Object, String], 
+I]
 
 type Data = Record[String, Any]
 
@@ -1255,6 +1270,7 @@ type DefineComponent_[PropsOrPropOptions, RawBindings, D, C /* <: ComputedOption
   PP & Props, 
   Defaults, 
   `true`, 
+  js.Object, 
   IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
   (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
   (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[RawBindings], 
@@ -1279,12 +1295,12 @@ Any,
 Any, 
 Any, 
 ComputedOptions, 
-MethodOptions]) & (ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults]) & PP
+MethodOptions]) & (ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, js.Object, String]) & PP
 
 type Directive[T, V] = (ObjectDirective[T, V]) | (FunctionDirective[T, V])
 
 type DirectiveArguments = js.Array[
-(js.Array[Directive[Any, Any]]) | (js.Tuple2[Directive[Any, Any], Any]) | (js.Tuple3[Directive[Any, Any], Any, String]) | (js.Tuple4[Directive[Any, Any], Any, String, DirectiveModifiers])]
+(js.Array[js.UndefOr[Directive[Any, Any]]]) | (js.Tuple2[js.UndefOr[Directive[Any, Any]], Any]) | (js.Tuple3[js.UndefOr[Directive[Any, Any]], Any, String]) | (js.Tuple4[js.UndefOr[Directive[Any, Any]], Any, String, DirectiveModifiers])]
 
 type DirectiveHook[T, Prev, V] = js.Function4[
 /* el */ T, 
@@ -1309,7 +1325,8 @@ type ErrorCapturedHook[TError] = js.Function3[
   js.Object, 
   js.Object, 
   `false`, 
-  ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+  ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+  js.Object
 ]) | Null, 
 /* info */ String, 
 Boolean | Unit]
@@ -1337,7 +1354,8 @@ js.Object,
 js.Object, 
 js.Object, 
 `false`, 
-ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]]) & LegacyPublicProperties
+ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+js.Object]) & LegacyPublicProperties
 
 type LifecycleHook[TFn] = js.Array[TFn] | Null
 
@@ -1434,7 +1452,7 @@ type PropConstructor[T] = Instantiable[T] | js.Function0[T] | (PropMethod[T, Any
 
 type PropType[T] = PropConstructor[T] | js.Array[PropConstructor[T]]
 
-type PropsWithDefaults[Base, Defaults] = Base & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Defaults ]: K extends keyof Base? @vue/runtime-core.@vue/runtime-core.NotUndefined<Base[K]> : never} */ js.Any)
+type PropsWithDefaults[Base, Defaults] = Base & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Defaults ]: K extends keyof Base? Defaults[K] extends undefined? Base[K] : @vue/runtime-core.@vue/runtime-core.NotUndefined<Base[K]> : never} */ js.Any)
 
 type RawChildren = String | Double | Boolean | (VNode[RendererNode, RendererElement, StringDictionary[Any]]) | VNodeArrayChildren | js.Function0[Any]
 
@@ -1517,7 +1535,8 @@ type VNodeRef = String | Ref_[Any] | (js.Function2[
   js.Object, 
   js.Object, 
   `false`, 
-  ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+  ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+  js.Object
 ]) | Null, 
 /* refs */ Record[String, Any], 
 Unit])
@@ -1536,7 +1555,9 @@ typings.vueRuntimeCore.mod.ComputedOptions,
 typings.vueRuntimeCore.mod.MethodOptions]
   - js.Symbol
   - typings.vueRuntimeCore.anon.IsFragment
+  - typings.vueRuntimeCore.anon.IsTeleport
   - typings.vueRuntimeCore.anon.Hydrate
+  - typings.vueRuntimeCore.anon.IsSuspense
   - typings.vueRuntimeCore.anon.Create
 */
 type VNodeTypes = _VNodeTypes | (VNode[RendererNode, RendererElement, StringDictionary[Any]]) | (Component[Any, Any, Any, ComputedOptions, MethodOptions]) | String | js.Symbol

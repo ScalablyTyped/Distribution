@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveTagsRequest extends StObject {
   
   /**
-    * The ARN of the domain from which you want to delete the specified tags. 
+    * The Amazon Resource Name (ARN) of the domain from which you want to delete the specified tags.
     */
   var ARN: typings.awsSdk.clientsOpensearchMod.ARN
   
   /**
-    * The TagKey list you want to remove from the domain. 
+    * The list of tag keys to remove from the domain.
     */
   var TagKeys: StringList
 }

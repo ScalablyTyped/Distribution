@@ -30,7 +30,8 @@ object distUtilsAutoUnmountMod {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        js.Object
       ]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trackInstance")(wrapper.asInstanceOf[js.Any]).asInstanceOf[Unit]

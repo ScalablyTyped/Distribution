@@ -1,6 +1,9 @@
 package typings.vueReactivityTransform
 
 import typings.babelParser.mod.ParserPlugin
+import typings.babelTypes.mod.ImportDefaultSpecifier_
+import typings.babelTypes.mod.ImportNamespaceSpecifier_
+import typings.babelTypes.mod.ImportSpecifier_
 import typings.babelTypes.mod.Program_
 import typings.magicString.mod.SourceMap
 import typings.magicString.mod.default
@@ -42,6 +45,40 @@ object mod {
     knownProps: Record[String, Default]
   ): ImportedHelpers = (^.asInstanceOf[js.Dynamic].applyDynamic("transformAST")(ast.asInstanceOf[js.Any], s.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], knownRefs.asInstanceOf[js.Any], knownProps.asInstanceOf[js.Any])).asInstanceOf[ImportedHelpers]
   inline def transformAST(ast: Program_, s: default, offset: Unit, knownRefs: Unit, knownProps: Record[String, Default]): ImportedHelpers = (^.asInstanceOf[js.Dynamic].applyDynamic("transformAST")(ast.asInstanceOf[js.Any], s.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], knownRefs.asInstanceOf[js.Any], knownProps.asInstanceOf[js.Any])).asInstanceOf[ImportedHelpers]
+  
+  trait ImportBinding extends StObject {
+    
+    var imported: String
+    
+    var local: String
+    
+    var source: String
+    
+    var specifier: ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_
+  }
+  object ImportBinding {
+    
+    inline def apply(
+      imported: String,
+      local: String,
+      source: String,
+      specifier: ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_
+    ): ImportBinding = {
+      val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], specifier = specifier.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ImportBinding]
+    }
+    
+    extension [Self <: ImportBinding](x: Self) {
+      
+      inline def setImported(value: String): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
+      
+      inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSpecifier(value: ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_): Self = StObject.set(x, "specifier", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait RefTransformOptions extends StObject {
     

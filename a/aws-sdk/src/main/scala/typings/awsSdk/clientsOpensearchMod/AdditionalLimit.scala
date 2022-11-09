@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdditionalLimit extends StObject {
   
   /**
-    *  Additional limit is specific to a given InstanceType and for each of its  InstanceRole  etc.  Attributes and their details:   MaximumNumberOfDataNodesSupported This attribute is present on the master node only to specify how much data nodes up to which given  ESPartitionInstanceType  can support as master node. MaximumNumberOfDataNodesWithoutMasterNode This attribute is present on data node only to specify how much data nodes of given  ESPartitionInstanceType  up to which you don't need any master nodes to govern them.  
+    *    MaximumNumberOfDataNodesSupported - This attribute only applies to master nodes and specifies the maximum number of data nodes of a given instance type a master node can support.    MaximumNumberOfDataNodesWithoutMasterNode - This attribute only applies to data nodes and specifies the maximum number of data nodes of a given instance type can exist without a master node governing them.  
     */
   var LimitName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.LimitName] = js.undefined
   
   /**
-    *  Value for a given  AdditionalLimit$LimitName  . 
+    *  The values of the additional instance type limits.
     */
   var LimitValues: js.UndefOr[LimitValueList] = js.undefined
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-location
 
-Typings are for version 14.3.0
+Typings are for version 15.0.1
 
 
 

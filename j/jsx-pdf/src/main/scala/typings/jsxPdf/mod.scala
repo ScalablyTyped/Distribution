@@ -162,6 +162,27 @@ object mod {
     @JSImport("jsx-pdf", "Fragment.margin")
     @js.native
     def margin: js.UndefOr[Margins] = js.native
+    
+    @JSImport("jsx-pdf", "Fragment.marginBottom")
+    @js.native
+    def marginBottom: js.UndefOr[Double] = js.native
+    inline def marginBottom_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginBottom")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.marginLeft")
+    @js.native
+    def marginLeft: js.UndefOr[Double] = js.native
+    inline def marginLeft_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginLeft")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.marginRight")
+    @js.native
+    def marginRight: js.UndefOr[Double] = js.native
+    inline def marginRight_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginRight")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jsx-pdf", "Fragment.marginTop")
+    @js.native
+    def marginTop: js.UndefOr[Double] = js.native
+    inline def marginTop_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginTop")(x.asInstanceOf[js.Any])
+    
     inline def margin_=(x: js.UndefOr[Margins]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("margin")(x.asInstanceOf[js.Any])
     
     @JSImport("jsx-pdf", "Fragment.markerColor")

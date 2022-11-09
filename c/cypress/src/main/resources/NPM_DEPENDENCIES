@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cypress" : "10.11.0"
+      "cypress" : "11.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cypress" : "10.11.0"
+      "cypress" : "11.0.0"
     }
   ],
   "compile-devDependencies" : [

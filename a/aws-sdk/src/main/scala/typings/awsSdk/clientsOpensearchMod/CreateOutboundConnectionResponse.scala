@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateOutboundConnectionResponse extends StObject {
   
   /**
-    * The connection alias provided during the create connection request.
+    * Name of the connection.
     */
   var ConnectionAlias: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ConnectionAlias] = js.undefined
   
   /**
-    * The unique ID for the created outbound connection, which is used for subsequent operations on the connection.
+    * The unique identifier for the created outbound connection, which is used for subsequent operations on the connection.
     */
   var ConnectionId: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ConnectionId] = js.undefined
   
   /**
-    * The  OutboundConnectionStatus  for the newly created connection. 
+    * The status of the connection.
     */
   var ConnectionStatus: js.UndefOr[OutboundConnectionStatus] = js.undefined
   
   /**
-    * The  AWSDomainInformation  for the local OpenSearch domain. 
+    * Information about the source (local) domain.
     */
   var LocalDomainInfo: js.UndefOr[DomainInformationContainer] = js.undefined
   
   /**
-    * The  AWSDomainInformation  for the remote OpenSearch domain. 
+    * Information about the destination (remote) domain.
     */
   var RemoteDomainInfo: js.UndefOr[DomainInformationContainer] = js.undefined
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChangeProgressDetails extends StObject {
   
   /**
-    * The unique change identifier associated with a specific domain configuration change.
+    * The ID of the configuration change.
     */
   var ChangeId: js.UndefOr[GUID] = js.undefined
   
   /**
-    * Contains an optional message associated with the domain configuration change.
+    * A message corresponding to the status of the configuration change.
     */
   var Message: js.UndefOr[typings.awsSdk.clientsOpensearchMod.Message] = js.undefined
 }

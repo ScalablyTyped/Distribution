@@ -8,6 +8,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import typings.wixStyleReact.anon.ClassNameStyle
+import typings.wixStyleReact.anon.FunctionComponentPageFoot
 import typings.wixStyleReact.distTypesCommonMod.ScrollableContainerCommonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,6 +41,11 @@ object distTypesPageMod {
     @js.native
     def FixedFooter: FC[FixedFooterProps] = js.native
     inline def FixedFooter_=(x: FC[FixedFooterProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FixedFooter")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wix-style-react/dist/types/Page", "default.Footer")
+    @js.native
+    def Footer: FunctionComponentPageFoot = js.native
+    inline def Footer_=(x: FunctionComponentPageFoot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/types/Page", "default.Header")
     @js.native

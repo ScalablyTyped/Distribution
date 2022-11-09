@@ -12,7 +12,7 @@ trait ListPricingRulesOutput extends StObject {
   var BillingPeriod: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.BillingPeriod] = js.undefined
   
   /**
-    *  The pagination token used on subsequent calls to get pricing rules. 
+    *  The pagination token that's used on subsequent calls to get pricing rules. 
     */
   var NextToken: js.UndefOr[Token] = js.undefined
   

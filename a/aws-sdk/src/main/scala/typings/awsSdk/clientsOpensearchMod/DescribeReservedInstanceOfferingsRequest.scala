@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeReservedInstanceOfferingsRequest extends StObject {
   
   /**
-    * Set this value to limit the number of results returned. If not specified, defaults to 100.
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsOpensearchMod.MaxResults] = js.undefined
   
   /**
-    * Provides an identifier to allow retrieval of paginated results. 
+    * If your initial DescribeReservedInstanceOfferings operation returns a nextToken, you can include the returned nextToken in subsequent DescribeReservedInstanceOfferings operations, which returns results in the next page.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NextToken] = js.undefined
   
   /**
-    * The offering identifier filter value. Use this parameter to show only the available offering that matches the specified reservation identifier. 
+    * The Reserved Instance identifier filter value. Use this parameter to show only the available instance types that match the specified reservation identifier.
     */
   var ReservedInstanceOfferingId: js.UndefOr[GUID] = js.undefined
 }

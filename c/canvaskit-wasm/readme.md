@@ -1,7 +1,7 @@
 
 # Scala.js typings for canvaskit-wasm
 
-Typings are for version 0.37.0
+Typings are for version 0.37.1
 
 ## Library description:
 A WASM version of Skia's Canvas API

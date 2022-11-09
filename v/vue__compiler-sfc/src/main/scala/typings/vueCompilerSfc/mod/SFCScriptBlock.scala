@@ -1,5 +1,6 @@
 package typings.vueCompilerSfc.mod
 
+import typings.babelTypes.mod.Statement
 import typings.std.Record
 import typings.vueCompilerCore.mod.BindingMetadata
 import typings.vueCompilerCore.mod.SourceLocation
@@ -17,15 +18,9 @@ trait SFCScriptBlock
   
   var imports: js.UndefOr[Record[String, ImportBinding]] = js.undefined
   
-  /**
-    * import('\@babel/types').Statement
-    */
-  var scriptAst: js.UndefOr[js.Array[Any]] = js.undefined
+  var scriptAst: js.UndefOr[js.Array[Statement]] = js.undefined
   
-  /**
-    * import('\@babel/types').Statement
-    */
-  var scriptSetupAst: js.UndefOr[js.Array[Any]] = js.undefined
+  var scriptSetupAst: js.UndefOr[js.Array[Statement]] = js.undefined
   
   var setup: js.UndefOr[String | Boolean] = js.undefined
   
@@ -50,17 +45,17 @@ object SFCScriptBlock {
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setScriptAst(value: js.Array[Any]): Self = StObject.set(x, "scriptAst", value.asInstanceOf[js.Any])
+    inline def setScriptAst(value: js.Array[Statement]): Self = StObject.set(x, "scriptAst", value.asInstanceOf[js.Any])
     
     inline def setScriptAstUndefined: Self = StObject.set(x, "scriptAst", js.undefined)
     
-    inline def setScriptAstVarargs(value: Any*): Self = StObject.set(x, "scriptAst", js.Array(value*))
+    inline def setScriptAstVarargs(value: Statement*): Self = StObject.set(x, "scriptAst", js.Array(value*))
     
-    inline def setScriptSetupAst(value: js.Array[Any]): Self = StObject.set(x, "scriptSetupAst", value.asInstanceOf[js.Any])
+    inline def setScriptSetupAst(value: js.Array[Statement]): Self = StObject.set(x, "scriptSetupAst", value.asInstanceOf[js.Any])
     
     inline def setScriptSetupAstUndefined: Self = StObject.set(x, "scriptSetupAst", js.undefined)
     
-    inline def setScriptSetupAstVarargs(value: Any*): Self = StObject.set(x, "scriptSetupAst", js.Array(value*))
+    inline def setScriptSetupAstVarargs(value: Statement*): Self = StObject.set(x, "scriptSetupAst", js.Array(value*))
     
     inline def setSetup(value: String | Boolean): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
     

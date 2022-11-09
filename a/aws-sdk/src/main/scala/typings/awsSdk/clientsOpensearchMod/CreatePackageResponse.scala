@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreatePackageResponse extends StObject {
   
   /**
-    * Information about the package. 
+    * Basic information about an OpenSearch Service package.
     */
   var PackageDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageDetails] = js.undefined
 }

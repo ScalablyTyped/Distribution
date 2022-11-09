@@ -12,7 +12,7 @@ trait AdvancedOptionsStatus extends StObject {
   var Options: AdvancedOptions
   
   /**
-    * The OptionStatus for advanced options for the specified domain. 
+    * The status of advanced options for the specified domain.
     */
   var Status: OptionStatus
 }

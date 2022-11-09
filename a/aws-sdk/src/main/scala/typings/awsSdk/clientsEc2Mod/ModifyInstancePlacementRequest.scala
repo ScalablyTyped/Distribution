@@ -12,6 +12,11 @@ trait ModifyInstancePlacementRequest extends StObject {
   var Affinity: js.UndefOr[typings.awsSdk.clientsEc2Mod.Affinity] = js.undefined
   
   /**
+    * The Group Id of a placement group. You must specify the Placement Group Group Id to launch an instance in a shared placement group.
+    */
+  var GroupId: js.UndefOr[PlacementGroupId] = js.undefined
+  
+  /**
     * The name of the placement group in which to place the instance. For spread placement groups, the instance must have a tenancy of default. For cluster and partition placement groups, the instance must have a tenancy of default or dedicated. To remove an instance from a placement group, specify an empty string ("").
     */
   var GroupName: js.UndefOr[PlacementGroupName] = js.undefined
@@ -53,6 +58,10 @@ object ModifyInstancePlacementRequest {
     inline def setAffinity(value: Affinity): Self = StObject.set(x, "Affinity", value.asInstanceOf[js.Any])
     
     inline def setAffinityUndefined: Self = StObject.set(x, "Affinity", js.undefined)
+    
+    inline def setGroupId(value: PlacementGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
     inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

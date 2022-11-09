@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo-localization"
-version := "13.1.0-37f95a"
+version := "14.0.0-7f90b2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

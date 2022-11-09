@@ -158,6 +158,8 @@ type NullableBoolean = Boolean
 
 type PassphraseBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
+type PcaArn = java.lang.String
+
 type PositiveInteger = Double
 
 type PrivateKey = java.lang.String

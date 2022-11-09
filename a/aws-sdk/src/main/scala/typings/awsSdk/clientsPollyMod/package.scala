@@ -226,6 +226,10 @@ type TextType = _TextType | String
   - typings.awsSdk.awsSdkStrings.Pedro
   - typings.awsSdk.awsSdkStrings.Kajal
   - typings.awsSdk.awsSdkStrings.Hiujin
+  - typings.awsSdk.awsSdkStrings.Laura
+  - typings.awsSdk.awsSdkStrings.Elin
+  - typings.awsSdk.awsSdkStrings.Ida
+  - typings.awsSdk.awsSdkStrings.Suvi
   - java.lang.String
 */
 type VoiceId = _VoiceId | String

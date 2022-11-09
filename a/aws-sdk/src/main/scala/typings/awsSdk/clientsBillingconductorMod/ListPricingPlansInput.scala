@@ -22,7 +22,7 @@ trait ListPricingPlansInput extends StObject {
   var MaxResults: js.UndefOr[MaxPricingPlanResults] = js.undefined
   
   /**
-    * The pagination token used on subsequent call to get pricing plans. 
+    * The pagination token that's used on subsequent call to get pricing plans. 
     */
   var NextToken: js.UndefOr[Token] = js.undefined
 }

@@ -38,11 +38,11 @@ object buildMetroDevServerMod {
     bundles: js.Array[BundleOptions]
   ): js.Promise[js.Array[BundleOutput]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundleAsync")(projectRoot.asInstanceOf[js.Any], expoConfig.asInstanceOf[js.Any], options.asInstanceOf[js.Any], bundles.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[BundleOutput]]]
   
-  inline def closeJsInspector(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJsInspector")().asInstanceOf[Unit]
+  inline def closeJsInspector(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJsInspector")().asInstanceOf[js.Promise[Unit]]
   
   inline def createDevServerMiddleware(projectRoot: String, param1: Logger): AttachToServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createDevServerMiddleware")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[AttachToServer]
   
-  inline def openJsInspector(app: MetroInspectorProxyApp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openJsInspector")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def openJsInspector(app: MetroInspectorProxyApp): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openJsInspector")(app.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def prependMiddleware(app: Server, middleware: HandleFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prependMiddleware")(app.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

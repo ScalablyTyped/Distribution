@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AWSDomainInformation extends StObject {
   
+  /**
+    * Name of the domain.
+    */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
   
+  /**
+    * The Amazon Web Services account ID of the domain owner.
+    */
   var OwnerId: js.UndefOr[typings.awsSdk.clientsOpensearchMod.OwnerId] = js.undefined
   
+  /**
+    * The Amazon Web Services Region in which the domain is located.
+    */
   var Region: js.UndefOr[typings.awsSdk.clientsOpensearchMod.Region] = js.undefined
 }
 object AWSDomainInformation {

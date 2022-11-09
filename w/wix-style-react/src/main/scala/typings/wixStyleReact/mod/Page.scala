@@ -2,6 +2,7 @@ package typings.wixStyleReact.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.FC
+import typings.wixStyleReact.anon.FunctionComponentPageFoot
 import typings.wixStyleReact.distTypesPageMod.ContentProps
 import typings.wixStyleReact.distTypesPageMod.FixedContentProps
 import typings.wixStyleReact.distTypesPageMod.FixedFooterProps
@@ -36,6 +37,11 @@ object Page {
   @js.native
   def FixedFooter: FC[FixedFooterProps] = js.native
   inline def FixedFooter_=(x: FC[FixedFooterProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FixedFooter")(x.asInstanceOf[js.Any])
+  
+  @JSImport("wix-style-react", "Page.Footer")
+  @js.native
+  def Footer: FunctionComponentPageFoot = js.native
+  inline def Footer_=(x: FunctionComponentPageFoot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Page.Header")
   @js.native

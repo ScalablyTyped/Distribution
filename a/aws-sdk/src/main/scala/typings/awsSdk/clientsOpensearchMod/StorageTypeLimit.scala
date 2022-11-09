@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StorageTypeLimit extends StObject {
   
   /**
-    *  Name of storage limits that are applicable for the given storage type. If  StorageType  is "ebs", the following storage options are applicable:  MinimumVolumeSize Minimum amount of volume size that is applicable for the given storage type. Can be empty if not applicable. MaximumVolumeSize Maximum amount of volume size that is applicable for the given storage type. Can be empty if not applicable. MaximumIops Maximum amount of Iops that is applicable for given the storage type. Can be empty if not applicable. MinimumIops Minimum amount of Iops that is applicable for given the storage type. Can be empty if not applicable. MaximumThroughput Maximum amount of Throughput that is applicable for given the storage type. Can be empty if not applicable. MinimumThroughput Minimum amount of Throughput that is applicable for given the storage type. Can be empty if not applicable.  
+    *  Name of storage limits that are applicable for the given storage type. If StorageType is ebs, the following options are available:    MinimumVolumeSize - Minimum volume size that is available for the given storage type. Can be empty if not applicable.    MaximumVolumeSize - Maximum volume size that is available for the given storage type. Can be empty if not applicable.    MaximumIops - Maximum amount of IOPS that is available for the given the storage type. Can be empty if not applicable.    MinimumIops - Minimum amount of IOPS that is available for the given the storage type. Can be empty if not applicable.    MaximumThroughput - Maximum amount of throughput that is available for the given the storage type. Can be empty if not applicable.    MinimumThroughput - Minimum amount of throughput that is available for the given the storage type. Can be empty if not applicable.  
     */
   var LimitName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.LimitName] = js.undefined
   
   /**
-    *  Values for the  StorageTypeLimit$LimitName  . 
+    * The limit values.
     */
   var LimitValues: js.UndefOr[LimitValueList] = js.undefined
 }

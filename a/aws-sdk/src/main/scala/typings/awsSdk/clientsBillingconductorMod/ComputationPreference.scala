@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComputationPreference extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) of the pricing plan used to compute the Amazon Web Services charges for a billing group. 
+    *  The Amazon Resource Name (ARN) of the pricing plan that's used to compute the Amazon Web Services charges for a billing group. 
     */
   var PricingPlanArn: PricingPlanFullArn
 }

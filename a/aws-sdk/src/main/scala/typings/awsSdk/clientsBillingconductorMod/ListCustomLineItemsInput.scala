@@ -19,10 +19,10 @@ trait ListCustomLineItemsInput extends StObject {
   /**
     *  The maximum number of billing groups to retrieve. 
     */
-  var MaxResults: js.UndefOr[MaxBillingGroupResults] = js.undefined
+  var MaxResults: js.UndefOr[MaxCustomLineItemResults] = js.undefined
   
   /**
-    *  The pagination token used on subsequent calls to get custom line items (FFLIs). 
+    *  The pagination token that's used on subsequent calls to get custom line items (FFLIs). 
     */
   var NextToken: js.UndefOr[Token] = js.undefined
 }
@@ -43,7 +43,7 @@ object ListCustomLineItemsInput {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setMaxResults(value: MaxBillingGroupResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxCustomLineItemResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     

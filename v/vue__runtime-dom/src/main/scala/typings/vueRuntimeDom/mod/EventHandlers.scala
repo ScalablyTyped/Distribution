@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
   * You'll have to cast your way around this structure, unfortunately. 
   * TS definition: {{{
-  {[ K in keyof E ]:? E[K] extends std.Function? E[K] : (payload : E[K]): void}
+  {[ K in keyof E ]:? E[K] extends (args : any): any? E[K] : (payload : E[K]): void}
   }}}
   */
 @js.native

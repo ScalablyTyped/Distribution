@@ -18,7 +18,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<@vue/test-utils.@vue/test-utils/dist/vueWrapper.VueWrapper<vue.vue.ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, @vue/runtime-core.@vue/runtime-core.ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}>>>, 'exists'> */
+/* Inlined std.Omit<@vue/test-utils.@vue/test-utils/dist/vueWrapper.VueWrapper<vue.vue.ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, @vue/runtime-core.@vue/runtime-core.ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string>, {}>>, 'exists'> */
 trait OmitVueWrapperComponentPu extends StObject {
   
   var __app: Any
@@ -52,7 +52,8 @@ trait OmitVueWrapperComponentPu extends StObject {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ], 
     /* setProps */ js.UndefOr[js.Function1[/* props */ Record[String, Any], Unit]], 
     Any
@@ -203,7 +204,8 @@ trait OmitVueWrapperComponentPu extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ]
   @JSName("vm")
   var vm_Original: js.Function0[
@@ -217,7 +219,8 @@ trait OmitVueWrapperComponentPu extends StObject {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]
   
@@ -243,7 +246,8 @@ object OmitVueWrapperComponentPu {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ], /* setProps */ js.UndefOr[js.Function1[/* props */ Record[String, Any], Unit]]) => Any,
     element: () => Element,
     emitted: () => Record[String, js.Array[Any]],
@@ -290,7 +294,8 @@ object OmitVueWrapperComponentPu {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     wrapperElement: VueNodeNode
   ): OmitVueWrapperComponentPu = {
@@ -321,7 +326,8 @@ object OmitVueWrapperComponentPu {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          js.Object
         ], /* setProps */ js.UndefOr[js.Function1[/* props */ Record[String, Any], Unit]]) => Any
     ): Self = StObject.set(x, "constructor", js.Any.fromFunction3(value))
     
@@ -403,7 +409,8 @@ object OmitVueWrapperComponentPu {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          js.Object
         ]
     ): Self = StObject.set(x, "vm", js.Any.fromFunction0(value))
     

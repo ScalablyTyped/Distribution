@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateResourceError extends StObject {
   
   /**
-    *  The reason the resource association failed. 
+    *  The reason why the resource association failed. 
     */
   var Message: js.UndefOr[String] = js.undefined
   
   /**
-    *  A static error code that used to classify the type of failure. 
+    *  A static error code that's used to classify the type of failure. 
     */
   var Reason: js.UndefOr[AssociateResourceErrorReason] = js.undefined
 }

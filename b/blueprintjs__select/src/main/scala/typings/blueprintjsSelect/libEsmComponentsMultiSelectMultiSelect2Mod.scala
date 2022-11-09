@@ -3,7 +3,7 @@ package typings.blueprintjsSelect
 import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.mod.AbstractPureComponent2
 import typings.blueprintjsSelect.anon.Disabled
-import typings.blueprintjsSelect.anon.PartialOmitTagInputPropsv
+import typings.blueprintjsSelect.anon.PartialOmitTagInputPropsi
 import typings.blueprintjsSelect.libEsmCommonListItemsPropsMod.ListItemsProps
 import typings.blueprintjsSelect.libEsmCommonSelectPopoverPropsMod.SelectPopoverProps
 import typings.blueprintjsSelect.libEsmComponentsQueryListQueryListMod.QueryList
@@ -146,15 +146,20 @@ object libEsmComponentsMultiSelectMultiSelect2Mod {
       * Props to pass to the [TagInput component](##core/components/tag-input).
       *
       * Some properties are unavailable:
-      * - `tagInputProps.value`: use `query` instead
-      * - `tagInputProps.onChange`: use `onQueryChange` instead
+      * - `tagInputProps.inputValue`: use `query` instead
+      * - `tagInputProps.onInputChange`: use `onQueryChange` instead
+      *
+      * Some properties are available, but discouraged. If you find yourself using these due to a bug in MultiSelect2
+      * or some edge case which is not handled by `onItemSelect`, `onItemsPaste`, `onRemove`, and `onClear`, please
+      * file a bug in the Blueprint repo:
+      * - `tagInputProps.onChange`
       *
       * Notes for `tagInputProps.rightElement`:
       * - you are responsible for disabling any elements you may render here when the overall `MultiSelect2` is disabled
       * - if the `onClear` prop is defined, this element will override/replace the default rightElement,
       *   which is a "clear" button that removes all items from the current selection.
       */
-    var tagInputProps: js.UndefOr[PartialOmitTagInputPropsv] = js.native
+    var tagInputProps: js.UndefOr[PartialOmitTagInputPropsi] = js.native
     
     /** Custom renderer to transform an item into tag content. */
     def tagRenderer(item: T): ReactNode = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "aws-sdk" : "2.1249.0"
+      "aws-sdk" : "2.1250.0"
     }
   ],
   "test-dependencies" : [
     {
-      "aws-sdk" : "2.1249.0"
+      "aws-sdk" : "2.1250.0"
     }
   ],
   "compile-devDependencies" : [

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoTuneStatus extends StObject {
   
   /**
-    * The timestamp of the Auto-Tune options creation date.
+    * Date and time when Auto-Tune was enabled for the domain.
     */
   var CreationDate: js.Date
   
   /**
-    * The error message while enabling or disabling Auto-Tune.
+    * Any errors that occurred while enabling or disabling Auto-Tune.
     */
   var ErrorMessage: js.UndefOr[String] = js.undefined
   
@@ -22,12 +22,12 @@ trait AutoTuneStatus extends StObject {
   var PendingDeletion: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The AutoTuneState for the domain. 
+    * The current state of Auto-Tune on the domain.
     */
   var State: AutoTuneState
   
   /**
-    * The timestamp of when the Auto-Tune options were last updated.
+    * Date and time when the Auto-Tune options were last updated for the domain.
     */
   var UpdateDate: js.Date
   

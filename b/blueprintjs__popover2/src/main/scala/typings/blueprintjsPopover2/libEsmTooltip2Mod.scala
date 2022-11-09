@@ -2,7 +2,7 @@ package typings.blueprintjsPopover2
 
 import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
-import typings.blueprintjsPopover2.anon.PartialTooltip2PropsHTMLP
+import typings.blueprintjsPopover2.anon.PartialTooltip2PropsDefau
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`hover-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.hover
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2TargetProps
@@ -50,8 +50,8 @@ object libEsmTooltip2Mod {
     
     @JSImport("@blueprintjs/popover2/lib/esm/tooltip2", "Tooltip2.defaultProps")
     @js.native
-    def defaultProps: PartialTooltip2PropsHTMLP = js.native
-    inline def defaultProps_=(x: PartialTooltip2PropsHTMLP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialTooltip2PropsDefau = js.native
+    inline def defaultProps_=(x: PartialTooltip2PropsDefau): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/popover2/lib/esm/tooltip2", "Tooltip2.displayName")
     @js.native

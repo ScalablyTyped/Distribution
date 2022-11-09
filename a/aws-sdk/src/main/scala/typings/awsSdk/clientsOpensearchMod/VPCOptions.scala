@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VPCOptions extends StObject {
   
   /**
-    * The security groups for the VPC endpoint.
+    * The list of security group IDs associated with the VPC endpoints for the domain. If you do not provide a security group ID, OpenSearch Service uses the default security group for the VPC.
     */
   var SecurityGroupIds: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The subnets for the VPC endpoint.
+    * A list of subnet IDs associated with the VPC endpoints for the domain. If your domain uses multiple Availability Zones, you need to provide two subnet IDs, one per zone. Otherwise, provide only one.
     */
   var SubnetIds: js.UndefOr[StringList] = js.undefined
 }

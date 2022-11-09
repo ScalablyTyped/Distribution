@@ -117,6 +117,14 @@ type BundleList = js.Array[Bundle]
 
 type CacheBehaviorList = js.Array[CacheBehaviorPerPath]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING_VALIDATION
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.SUCCESS
+  - java.lang.String
+*/
+type CertificateDomainValidationStatus = _CertificateDomainValidationStatus | String
+
 type CertificateName = String
 
 /* Rewritten from type alias, can be one of: 
@@ -302,6 +310,14 @@ type DistributionList = js.Array[LightsailDistribution]
   - java.lang.String
 */
 type DistributionMetricName = _DistributionMetricName | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.STARTED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type DnsRecordCreationStateCode = _DnsRecordCreationStateCode | String
 
 type DomainEntryList = js.Array[DomainEntry]
 
@@ -545,6 +561,14 @@ type LoadBalancerProtocol = _LoadBalancerProtocol | String
 type LoadBalancerState = _LoadBalancerState | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.STARTED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type LoadBalancerTlsCertificateDnsRecordCreationStateCode = _LoadBalancerTlsCertificateDnsRecordCreationStateCode | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_VALIDATION
   - typings.awsSdk.awsSdkStrings.FAILED
   - typings.awsSdk.awsSdkStrings.SUCCESS
@@ -688,6 +712,15 @@ type MetricStatisticList = js.Array[MetricStatistic]
   - java.lang.String
 */
 type MetricUnit = _MetricUnit | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.STARTED
+  - java.lang.String
+*/
+type NameServersUpdateStateCode = _NameServersUpdateStateCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.tcp_
@@ -840,6 +873,15 @@ type PortMap = StringDictionary[ContainerServiceProtocol]
   - java.lang.String
 */
 type PortState = _PortState | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.STARTED
+  - java.lang.String
+*/
+type R53HostedZoneDeletionStateCode = _R53HostedZoneDeletionStateCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Started_

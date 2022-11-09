@@ -6,12 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListInstanceTypeDetailsRequest extends StObject {
   
+  /**
+    * Name of the domain to list instance type details for.
+    */
   var DomainName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainName] = js.undefined
   
+  /**
+    * Version of OpenSearch or Elasticsearch, in the format Elasticsearch_X.Y or OpenSearch_X.Y. Defaults to the latest version of OpenSearch.
+    */
   var EngineVersion: VersionString
   
+  /**
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
+    */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsOpensearchMod.MaxResults] = js.undefined
   
+  /**
+    * If your initial ListInstanceTypeDetails operation returns a nextToken, you can include the returned nextToken in subsequent ListInstanceTypeDetails operations, which returns results in the next page.
+    */
   var NextToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NextToken] = js.undefined
 }
 object ListInstanceTypeDetailsRequest {

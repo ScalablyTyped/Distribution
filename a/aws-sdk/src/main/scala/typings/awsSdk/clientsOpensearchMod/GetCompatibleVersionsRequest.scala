@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetCompatibleVersionsRequest extends StObject {
   
+  /**
+    * The name of an existing domain. Provide this parameter to limit the results to a single domain.
+    */
   var DomainName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainName] = js.undefined
 }
 object GetCompatibleVersionsRequest {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartServiceSoftwareUpdateResponse extends StObject {
   
   /**
-    * The current status of the OpenSearch service software update.
+    * The current status of the OpenSearch Service software update.
     */
   var ServiceSoftwareOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ServiceSoftwareOptions] = js.undefined
 }

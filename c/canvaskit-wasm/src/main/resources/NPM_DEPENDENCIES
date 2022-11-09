@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "canvaskit-wasm" : "0.37.0"
+      "canvaskit-wasm" : "0.37.1"
     }
   ],
   "test-dependencies" : [
     {
-      "canvaskit-wasm" : "0.37.0"
+      "canvaskit-wasm" : "0.37.1"
     }
   ],
   "compile-devDependencies" : [

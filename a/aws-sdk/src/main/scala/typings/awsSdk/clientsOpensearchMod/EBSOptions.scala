@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EBSOptions extends StObject {
   
   /**
-    * Whether EBS-based storage is enabled.
+    * Indicates whether EBS volumes are attached to data nodes in an OpenSearch Service domain.
     */
   var EBSEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The IOPS for Provisioned IOPS And GP3 EBS volume (SSD).
+    * Specifies the baseline input/output (I/O) performance of EBS volumes attached to data nodes. Applicable only for the gp3 and provisioned IOPS EBS volume types.
     */
   var Iops: js.UndefOr[IntegerClass] = js.undefined
   
   /**
-    * The Throughput for GP3 EBS volume (SSD).
+    * Specifies the throughput (in MiB/s) of the EBS volumes attached to data nodes. Applicable only for the gp3 volume type.
     */
   var Throughput: js.UndefOr[IntegerClass] = js.undefined
   
   /**
-    * Integer to specify the size of an EBS volume.
+    * Specifies the size (in GiB) of EBS volumes attached to data nodes.
     */
   var VolumeSize: js.UndefOr[IntegerClass] = js.undefined
   
   /**
-    * The volume type for EBS-based storage.
+    * Specifies the type of EBS volumes attached to data nodes.
     */
   var VolumeType: js.UndefOr[typings.awsSdk.clientsOpensearchMod.VolumeType] = js.undefined
 }

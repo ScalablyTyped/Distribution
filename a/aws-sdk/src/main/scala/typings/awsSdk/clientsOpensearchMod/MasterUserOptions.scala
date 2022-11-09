@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MasterUserOptions extends StObject {
   
   /**
-    * ARN for the master user (if IAM is enabled).
+    * Amazon Resource Name (ARN) for the master user. Only specify if InternalUserDatabaseEnabled is false.
     */
   var MasterUserARN: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The master user's username, which is stored in the Amazon OpenSearch Service domain's internal database.
+    * User name for the master user. Only specify if InternalUserDatabaseEnabled is true.
     */
   var MasterUserName: js.UndefOr[Username] = js.undefined
   
   /**
-    * The master user's password, which is stored in the Amazon OpenSearch Service domain's internal database.
+    * Password for the master user. Only specify if InternalUserDatabaseEnabled is true.
     */
   var MasterUserPassword: js.UndefOr[Password] = js.undefined
 }

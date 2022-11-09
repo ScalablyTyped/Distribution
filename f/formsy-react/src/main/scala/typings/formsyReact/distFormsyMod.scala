@@ -79,7 +79,6 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
-import typings.react.mod.FormHTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -161,7 +160,7 @@ object distFormsyMod {
     def setInputValidationErrors(errors: Any): Unit = js.native
     
     def submit(): Unit = js.native
-    def submit(event: SyntheticEvent[Element, Event]): Unit = js.native
+    def submit(event: SyntheticEvent[HTMLFormElement, Event]): Unit = js.native
     
     /* private */ val throttledValidateForm: Any = js.native
     
@@ -1348,7 +1347,7 @@ object distFormsyMod {
       disabled: Boolean,
       onChange: (IModel, Boolean) => Unit,
       onInvalid: () => Unit,
-      onInvalidSubmit: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit,
+      onInvalidSubmit: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[HTMLFormElement, Event]) => Unit,
       onValid: () => Unit
     ): FormsyProps = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onChange = js.Any.fromFunction2(onChange), onInvalid = js.Any.fromFunction0(onInvalid), onInvalidSubmit = js.Any.fromFunction4(onInvalidSubmit), onValid = js.Any.fromFunction0(onValid), mapping = null)
@@ -1372,7 +1371,7 @@ object distFormsyMod {
       inline def setOnInvalid(value: () => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction0(value))
       
       inline def setOnInvalidSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[HTMLFormElement, Event]) => Unit
       ): Self = StObject.set(x, "onInvalidSubmit", js.Any.fromFunction4(value))
       
       inline def setOnReset(value: () => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
@@ -1380,7 +1379,7 @@ object distFormsyMod {
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
       inline def setOnSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[HTMLFormElement, Event]) => Unit
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction4(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
@@ -1388,7 +1387,7 @@ object distFormsyMod {
       inline def setOnValid(value: () => Unit): Self = StObject.set(x, "onValid", js.Any.fromFunction0(value))
       
       inline def setOnValidSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[HTMLFormElement, Event]) => Unit
       ): Self = StObject.set(x, "onValidSubmit", js.Any.fromFunction4(value))
       
       inline def setOnValidSubmitUndefined: Self = StObject.set(x, "onValidSubmit", js.undefined)
@@ -1454,7 +1453,7 @@ object distFormsyMod {
     /* model */ IModel, 
     /* resetModel */ IResetModel, 
     /* updateInputsWithError */ IUpdateInputsWithError, 
-    /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event], 
+    /* event */ SyntheticEvent[HTMLFormElement, Event], 
     Unit
   ]
 }

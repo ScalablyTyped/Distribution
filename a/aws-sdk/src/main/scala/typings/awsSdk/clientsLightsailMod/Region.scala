@@ -17,7 +17,7 @@ trait Region extends StObject {
   var continentCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The description of the AWS Region (e.g., This region is recommended to serve users in the eastern United States and eastern Canada).
+    * The description of the Amazon Web Services Region (e.g., This region is recommended to serve users in the eastern United States and eastern Canada).
     */
   var description: js.UndefOr[String] = js.undefined
   

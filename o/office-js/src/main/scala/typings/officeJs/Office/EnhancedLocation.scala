@@ -60,6 +60,9 @@ trait EnhancedLocation extends StObject {
   /**
     * Gets the set of locations associated with the appointment.
     *
+    * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
+    * added as appointment locations aren't returned by this method.
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
     *
@@ -74,6 +77,9 @@ trait EnhancedLocation extends StObject {
   def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[LocationDetails]], Unit]): Unit = js.native
   /**
     * Gets the set of locations associated with the appointment.
+    *
+    * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
+    * added as appointment locations aren't returned by this method.
     *
     * @remarks
     * [Api set: Mailbox 1.8]

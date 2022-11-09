@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDomainChangeProgressRequest extends StObject {
   
   /**
-    * The specific change ID for which you want to get progress information. This is an optional parameter. If omitted, the service returns information about the most recent configuration change. 
+    * The specific change ID for which you want to get progress information. If omitted, the request returns information about the most recent configuration change.
     */
   var ChangeId: js.UndefOr[GUID] = js.undefined
   
   /**
-    * The domain you want to get the progress information about.
+    * The name of the domain to get progress information for.
     */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
 }

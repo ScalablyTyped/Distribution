@@ -1,6 +1,7 @@
 package typings.vueTestUtils.anon
 
 import typings.std.Record
+import typings.vueRuntimeCore.mod.ComponentCustomProperties
 import typings.vueRuntimeCore.mod.ComponentOptionsBase
 import typings.vueRuntimeCore.mod.ComponentPublicInstance
 import typings.vueRuntimeCore.mod.OptionMergeFunction
@@ -28,14 +29,15 @@ trait PartialOmitAppConfigisNat extends StObject {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        js.Object
       ]) | Null, 
       /* info */ String, 
       Unit
     ]
   ] = js.undefined
   
-  var globalProperties: js.UndefOr[Record[String, Any]] = js.undefined
+  var globalProperties: js.UndefOr[ComponentCustomProperties & (Record[String, Any])] = js.undefined
   
   var isCustomElement: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.undefined
   
@@ -58,7 +60,8 @@ trait PartialOmitAppConfigisNat extends StObject {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        js.Object
       ]) | Null, 
       /* trace */ String, 
       Unit
@@ -89,13 +92,14 @@ object PartialOmitAppConfigisNat {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          js.Object
         ]) | Null, /* info */ String) => Unit
     ): Self = StObject.set(x, "errorHandler", js.Any.fromFunction3(value))
     
     inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
-    inline def setGlobalProperties(value: Record[String, Any]): Self = StObject.set(x, "globalProperties", value.asInstanceOf[js.Any])
+    inline def setGlobalProperties(value: ComponentCustomProperties & (Record[String, Any])): Self = StObject.set(x, "globalProperties", value.asInstanceOf[js.Any])
     
     inline def setGlobalPropertiesUndefined: Self = StObject.set(x, "globalProperties", js.undefined)
     
@@ -126,7 +130,8 @@ object PartialOmitAppConfigisNat {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          js.Object
         ]) | Null, /* trace */ String) => Unit
     ): Self = StObject.set(x, "warnHandler", js.Any.fromFunction3(value))
     

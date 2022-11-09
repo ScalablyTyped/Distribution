@@ -2,11 +2,12 @@ package typings.blueprintjsPopover2
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
 import typings.blueprintjsPopover2.anon.PartialState
-import typings.blueprintjsPopover2.anon.Popover2PropsHTMLPropsHTM
+import typings.blueprintjsPopover2.anon.Popover2PropsDefaultPopov
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`click-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`hover-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.click
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.hover
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.DefaultPopover2TargetHTMLProps
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.IPopover2SharedProps
 import typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind
 import typings.popperjsCore.libTypesMod.PositioningStrategy
@@ -105,7 +106,7 @@ object libEsmPopover2Mod {
     
     /* private */ var updateDarkParent: Any = js.native
     
-    /* protected */ def validateProps(props: Popover2PropsHTMLPropsHTM): Unit = js.native
+    /* protected */ def validateProps(props: Popover2PropsDefaultPopov): Unit = js.native
   }
   /* static members */
   object Popover2 {
@@ -116,8 +117,8 @@ object libEsmPopover2Mod {
     
     @JSImport("@blueprintjs/popover2/lib/esm/popover2", "Popover2.defaultProps")
     @js.native
-    def defaultProps: Popover2Props[HTMLProps[HTMLElement]] = js.native
-    inline def defaultProps_=(x: Popover2Props[HTMLProps[HTMLElement]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Popover2Props[DefaultPopover2TargetHTMLProps] = js.native
+    inline def defaultProps_=(x: Popover2Props[DefaultPopover2TargetHTMLProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/popover2/lib/esm/popover2", "Popover2.displayName")
     @js.native

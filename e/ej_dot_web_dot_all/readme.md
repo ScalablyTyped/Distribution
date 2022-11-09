@@ -1,7 +1,7 @@
 
 # Scala.js typings for ej_dot_web_dot_all
 
-Typings are for version 20.2
+Typings are for version 20.3
 
 
 

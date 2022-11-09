@@ -62,6 +62,8 @@ trait InitialProjectOptions extends StObject {
   
   var modulePaths: js.UndefOr[js.Array[String]] = js.undefined
   
+  var preset: js.UndefOr[String | Null] = js.undefined
+  
   var prettierPath: js.UndefOr[String | Null] = js.undefined
   
   var resetMocks: js.UndefOr[Boolean] = js.undefined
@@ -252,6 +254,12 @@ object InitialProjectOptions {
     inline def setModulePathsUndefined: Self = StObject.set(x, "modulePaths", js.undefined)
     
     inline def setModulePathsVarargs(value: String*): Self = StObject.set(x, "modulePaths", js.Array(value*))
+    
+    inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    
+    inline def setPresetNull: Self = StObject.set(x, "preset", null)
+    
+    inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     
     inline def setPrettierPath(value: String): Self = StObject.set(x, "prettierPath", value.asInstanceOf[js.Any])
     

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "expo-asset"
-version := "8.6.1-16c6f0"
+version := "8.6.2-4db241"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "expo-constants" % "13.2.4-8f27e9",
-  "org.scalablytyped" %%% "expo-modules-core" % "0.11.8-170620",
-  "org.scalablytyped" %%% "expo__config-types" % "46.0.2-adb196",
+  "org.scalablytyped" %%% "expo-constants" % "14.0.2-4952ef",
+  "org.scalablytyped" %%% "expo-modules-core" % "1.0.2-03fa80",
+  "org.scalablytyped" %%% "expo__config-types" % "47.0.0-8c10ab",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-3962e1",

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InboundConnectionStatus extends StObject {
   
   /**
-    * Verbose information for the inbound connection status.
+    * Information about the connection.
     */
   var Message: js.UndefOr[ConnectionStatusMessage] = js.undefined
   
   /**
-    * The state code for the inbound connection. Can be one of the following:  PENDING_ACCEPTANCE: Inbound connection is not yet accepted by the remote domain owner. APPROVED: Inbound connection is pending acceptance by the remote domain owner. PROVISIONING: Inbound connection provisioning is in progress. ACTIVE: Inbound connection is active and ready to use. REJECTING: Inbound connection rejection is in process. REJECTED: Inbound connection is rejected. DELETING: Inbound connection deletion is in progress. DELETED: Inbound connection is deleted and can no longer be used. 
+    * The status code for the connection. Can be one of the following:    PENDING_ACCEPTANCE - Inbound connection is not yet accepted by the remote domain owner.    APPROVED: Inbound connection is pending acceptance by the remote domain owner.    PROVISIONING: Inbound connection is being provisioned.    ACTIVE: Inbound connection is active and ready to use.    REJECTING: Inbound connection rejection is in process.    REJECTED: Inbound connection is rejected.    DELETING: Inbound connection deletion is in progress.    DELETED: Inbound connection is deleted and can no longer be used.  
     */
   var StatusCode: js.UndefOr[InboundConnectionStatusCode] = js.undefined
 }

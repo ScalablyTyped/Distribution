@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EncryptionAtRestOptionsStatus extends StObject {
   
   /**
-    * The Encryption At Rest options for the specified domain.
+    * Encryption at rest options for the specified domain.
     */
   var Options: EncryptionAtRestOptions
   
   /**
-    * The status of the Encryption At Rest options for the specified domain.
+    * The status of the encryption at rest options for the specified domain.
     */
   var Status: OptionStatus
 }

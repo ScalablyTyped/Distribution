@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SAMLOptionsInput extends StObject {
   
   /**
-    * True if SAML is enabled.
+    * True to enable SAML authentication for a domain.
     */
   var Enabled: js.UndefOr[Boolean] = js.undefined
   
@@ -22,7 +22,7 @@ trait SAMLOptionsInput extends StObject {
   var MasterBackendRole: js.UndefOr[BackendRole] = js.undefined
   
   /**
-    * The SAML master username, which is stored in the Amazon OpenSearch Service domain's internal database.
+    * The SAML master user name, which is stored in the domain's internal user database.
     */
   var MasterUserName: js.UndefOr[Username] = js.undefined
   
@@ -32,12 +32,12 @@ trait SAMLOptionsInput extends StObject {
   var RolesKey: js.UndefOr[String] = js.undefined
   
   /**
-    * The duration, in minutes, after which a user session becomes inactive. Acceptable values are between 1 and 1440, and the default value is 60. 
+    * The duration, in minutes, after which a user session becomes inactive. Acceptable values are between 1 and 1440, and the default value is 60.
     */
   var SessionTimeoutMinutes: js.UndefOr[IntegerClass] = js.undefined
   
   /**
-    * Element of the SAML assertion to use for username. Default is NameID.
+    * Element of the SAML assertion to use for the user name. Default is NameID.
     */
   var SubjectKey: js.UndefOr[String] = js.undefined
 }

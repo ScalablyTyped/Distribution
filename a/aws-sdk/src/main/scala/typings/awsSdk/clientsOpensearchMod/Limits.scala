@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Limits extends StObject {
   
   /**
-    *  List of additional limits that are specific to a given InstanceType and for each of its  InstanceRole  . 
+    * List of additional limits that are specific to a given instance type for each of its instance roles.
     */
   var AdditionalLimits: js.UndefOr[AdditionalLimitList] = js.undefined
   
+  /**
+    * The limits for a given instance type.
+    */
   var InstanceLimits: js.UndefOr[typings.awsSdk.clientsOpensearchMod.InstanceLimits] = js.undefined
   
   /**
-    * Storage-related types and attributes that are available for a given InstanceType. 
+    * Storage-related attributes that are available for a given instance type.
     */
   var StorageTypes: js.UndefOr[StorageTypeList] = js.undefined
 }

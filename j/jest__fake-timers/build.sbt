@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest__fake-timers"
-version := "29.3.0-b84256"
+version := "29.3.1-e24c07"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-32acec",
   "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-242218",
   "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-a4bec8",
-  "org.scalablytyped" %%% "jest-message-util" % "29.2.1-5662a5",
-  "org.scalablytyped" %%% "jest-mock" % "29.3.0-25578a",
+  "org.scalablytyped" %%% "jest-message-util" % "29.3.1-9b84b8",
+  "org.scalablytyped" %%% "jest-mock" % "29.3.1-a8eb32",
   "org.scalablytyped" %%% "jest__schemas" % "29.0.0-db208b",
-  "org.scalablytyped" %%% "jest__types" % "29.2.1-156589",
+  "org.scalablytyped" %%% "jest__types" % "29.3.1-61f653",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "sinclair__typebox" % "0.24.42-8e6dfd",
   "org.scalablytyped" %%% "stack-utils" % "2.0-dt-20211202Z-be6bc6",

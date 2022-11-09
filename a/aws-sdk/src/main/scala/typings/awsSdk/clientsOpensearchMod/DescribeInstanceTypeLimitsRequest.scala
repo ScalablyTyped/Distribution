@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeInstanceTypeLimitsRequest extends StObject {
   
   /**
-    *  The name of the domain you want to modify. Only include this value if you're querying OpenSearch  Limits  for an existing domain. 
+    * The name of the domain. Only specify if you need the limits for an existing domain.
     */
   var DomainName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainName] = js.undefined
   
   /**
-    *  Version of OpenSearch for which  Limits  are needed. 
+    * Version of OpenSearch or Elasticsearch, in the format Elasticsearch_X.Y or OpenSearch_X.Y. Defaults to the latest version of OpenSearch.
     */
   var EngineVersion: VersionString
   
   /**
-    *  The instance type for an OpenSearch cluster for which OpenSearch  Limits  are needed. 
+    * The OpenSearch Service instance type for which you need limit information.
     */
   var InstanceType: OpenSearchPartitionInstanceType
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-worker" : "29.3.0"
+      "jest-worker" : "29.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-worker" : "29.3.0"
+      "jest-worker" : "29.3.1"
     }
   ],
   "compile-devDependencies" : [

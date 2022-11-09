@@ -17,7 +17,7 @@ trait UpdateBillingGroupOutput extends StObject {
   var Description: js.UndefOr[BillingGroupDescription] = js.undefined
   
   /**
-    *  The most recent time the billing group was modified. 
+    *  The most recent time when the billing group was modified. 
     */
   var LastModifiedTime: js.UndefOr[Instant] = js.undefined
   

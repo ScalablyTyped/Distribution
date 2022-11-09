@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdvancedSecurityOptions extends StObject {
   
   /**
-    * Specifies the Anonymous Auth Disable Date when Anonymous Auth is enabled.
+    * Date and time when the migration period will be disabled. Only necessary when enabling fine-grained access control on an existing domain.
     */
   var AnonymousAuthDisableDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * True if Anonymous auth is enabled. Anonymous auth can be enabled only when AdvancedSecurity is enabled on existing domains.
+    * True if a 30-day migration period is enabled, during which administrators can create role mappings. Only necessary when enabling fine-grained access control on an existing domain.
     */
   var AnonymousAuthEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * True if advanced security is enabled.
+    * True if fine-grained access control is enabled.
     */
   var Enabled: js.UndefOr[Boolean] = js.undefined
   
@@ -27,7 +27,7 @@ trait AdvancedSecurityOptions extends StObject {
   var InternalUserDatabaseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Describes the SAML application configured for a domain.
+    * Container for information about the SAML configuration for OpenSearch Dashboards.
     */
   var SAMLOptions: js.UndefOr[SAMLOptionsOutput] = js.undefined
 }

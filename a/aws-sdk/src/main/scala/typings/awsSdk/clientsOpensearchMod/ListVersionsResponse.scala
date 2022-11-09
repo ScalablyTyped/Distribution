@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListVersionsResponse extends StObject {
   
+  /**
+    * When nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page.
+    */
   var NextToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NextToken] = js.undefined
   
+  /**
+    * A list of all versions of OpenSearch and Elasticsearch that Amazon OpenSearch Service supports.
+    */
   var Versions: js.UndefOr[VersionList] = js.undefined
 }
 object ListVersionsResponse {

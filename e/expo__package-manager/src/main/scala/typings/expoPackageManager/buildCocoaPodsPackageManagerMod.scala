@@ -3,9 +3,9 @@ package typings.expoPackageManager
 import typings.expoPackageManager.anon.Cwd
 import typings.expoPackageManager.anon.Message
 import typings.expoPackageManager.anon.NonInteractive
+import typings.expoPackageManager.anon.PickSpawnOptionscwd
 import typings.expoPackageManager.anon.ShouldUpdateRepo
 import typings.expoPackageManager.anon.Spinner
-import typings.expoPackageManager.anon.`0`
 import typings.expoPackageManager.buildPackageManagerMod.PackageManager
 import typings.expoSpawnAsync.mod.SpawnOptions
 import typings.expoSpawnAsync.mod.SpawnResult
@@ -128,7 +128,7 @@ object buildCocoaPodsPackageManagerMod {
   
   inline def extractMissingDependencyError(errorOutput: String): (js.Tuple2[String, String]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMissingDependencyError")(errorOutput.asInstanceOf[js.Any]).asInstanceOf[(js.Tuple2[String, String]) | Null]
   
-  inline def getImprovedPodInstallError(error: SpawnResult & js.Error, param1: `0`): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getImprovedPodInstallError")(error.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+  inline def getImprovedPodInstallError(error: SpawnResult & js.Error, param1: PickSpawnOptionscwd): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getImprovedPodInstallError")(error.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
   inline def getPodRepoUpdateMessage(errorOutput: String): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("getPodRepoUpdateMessage")(errorOutput.asInstanceOf[js.Any]).asInstanceOf[Message]
   

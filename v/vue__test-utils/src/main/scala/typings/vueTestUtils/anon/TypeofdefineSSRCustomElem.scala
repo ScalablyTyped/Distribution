@@ -1,5 +1,6 @@
 package typings.vueTestUtils.anon
 
+import typings.vueRuntimeCore.mod.ComponentInjectOptions
 import typings.vueRuntimeCore.mod.ComponentOptionsMixin
 import typings.vueRuntimeCore.mod.ComponentOptionsWithArrayProps
 import typings.vueRuntimeCore.mod.ComponentOptionsWithObjectProps
@@ -31,7 +32,7 @@ trait TypeofdefineSSRCustomElem extends StObject {
       RawBindings | RenderFunction
     ]
   ): VueElementConstructor[Props] = js.native
-  def apply[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+  def apply[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
     options: (ComponentOptionsWithArrayProps[
       PropNames, 
       RawBindings, 
@@ -42,15 +43,17 @@ trait TypeofdefineSSRCustomElem extends StObject {
       Extends, 
       E, 
       EE, 
+      I, 
+      II, 
       (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
     ]) & Styles
   ): VueElementConstructor[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in PropNames ]: any} */ js.Any
   ] = js.native
-  def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
-    options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Props & EmitsToProps[E]]) & Styles
+  def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+    options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]) & Styles
   ): VueElementConstructor[Props] = js.native
-  def apply[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+  def apply[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
     options: (ComponentOptionsWithObjectProps[
       PropsOptions, 
       RawBindings, 
@@ -61,6 +64,8 @@ trait TypeofdefineSSRCustomElem extends StObject {
       Extends, 
       E, 
       EE, 
+      I, 
+      II, 
       ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
       ExtractDefaultPropTypes[PropsOptions]
     ]) & Styles

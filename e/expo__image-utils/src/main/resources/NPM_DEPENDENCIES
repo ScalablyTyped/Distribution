@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/image-utils" : "0.3.22"
+      "@expo/image-utils" : "0.3.23"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/image-utils" : "0.3.22"
+      "@expo/image-utils" : "0.3.23"
     }
   ],
   "compile-devDependencies" : [

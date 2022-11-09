@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DissociatePackageResponse extends StObject {
   
   /**
-    *  DomainPackageDetails 
+    *  Information about a package that has been dissociated from the domain.
     */
   var DomainPackageDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainPackageDetails] = js.undefined
 }

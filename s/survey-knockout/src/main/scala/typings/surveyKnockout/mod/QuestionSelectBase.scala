@@ -266,6 +266,8 @@ open class QuestionSelectBase protected () extends Question {
   
   /* protected */ def isItemSelectedCore(item: ItemValue): Boolean = js.native
   
+  def isNoneSelected: Boolean = js.native
+  
   def isOtherItem(item: ItemValue): Boolean = js.native
   
   /*

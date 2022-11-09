@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CognitoOptions extends StObject {
   
   /**
-    * The option to enable Cognito for OpenSearch Dashboards authentication.
+    * Whether to enable or disable Amazon Cognito authentication for OpenSearch Dashboards.
     */
   var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Cognito identity pool ID for OpenSearch Dashboards authentication.
+    * The Amazon Cognito identity pool ID that you want OpenSearch Service to use for OpenSearch Dashboards authentication.
     */
   var IdentityPoolId: js.UndefOr[typings.awsSdk.clientsOpensearchMod.IdentityPoolId] = js.undefined
   
   /**
-    * The role ARN that provides OpenSearch permissions for accessing Cognito resources.
+    * The AmazonOpenSearchServiceCognitoAccess role that allows OpenSearch Service to configure your user pool and identity pool.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.clientsOpensearchMod.RoleArn] = js.undefined
   
   /**
-    * The Cognito user pool ID for OpenSearch Dashboards authentication.
+    * The Amazon Cognito user pool ID that you want OpenSearch Service to use for OpenSearch Dashboards authentication.
     */
   var UserPoolId: js.UndefOr[typings.awsSdk.clientsOpensearchMod.UserPoolId] = js.undefined
 }

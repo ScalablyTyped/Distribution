@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-web-browser" : "11.0.0"
+      "expo-web-browser" : "12.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-web-browser" : "11.0.0"
+      "expo-web-browser" : "12.0.0"
     }
   ],
   "compile-devDependencies" : [

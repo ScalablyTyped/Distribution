@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo__image-utils"
-version := "0.3.22-49ff03"
+version := "0.3.23-193f12"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

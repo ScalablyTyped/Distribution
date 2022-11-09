@@ -163,12 +163,12 @@ trait ACM extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Renews an eligible ACM certificate. At this time, only exported private certificates can be renewed with this operation. In order to renew your ACM Private CA certificates with ACM, you must first grant the ACM service principal permission to do so. For more information, see Testing Managed Renewal in the ACM User Guide.
+    * Renews an eligible ACM certificate. At this time, only exported private certificates can be renewed with this operation. In order to renew your Amazon Web Services Private CA certificates with ACM, you must first grant the ACM service principal permission to do so. For more information, see Testing Managed Renewal in the ACM User Guide.
     */
   def renewCertificate(): Request[js.Object, AWSError] = js.native
   def renewCertificate(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Renews an eligible ACM certificate. At this time, only exported private certificates can be renewed with this operation. In order to renew your ACM Private CA certificates with ACM, you must first grant the ACM service principal permission to do so. For more information, see Testing Managed Renewal in the ACM User Guide.
+    * Renews an eligible ACM certificate. At this time, only exported private certificates can be renewed with this operation. In order to renew your Amazon Web Services Private CA certificates with ACM, you must first grant the ACM service principal permission to do so. For more information, see Testing Managed Renewal in the ACM User Guide.
     */
   def renewCertificate(params: RenewCertificateRequest): Request[js.Object, AWSError] = js.native
   def renewCertificate(

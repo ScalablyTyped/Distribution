@@ -54,12 +54,12 @@ import typings.vueClickaway.vueClickawayStrings.toString
 import typings.vueClickaway.vueClickawayStrings.unshift
 import typings.vueClickaway.vueClickawayStrings.values
 import typings.vueCompilerCore.mod.CompilerOptions
-import typings.vueReactivity.anon.RawSymbol
 import typings.vueReactivity.mod.ComputedGetter
 import typings.vueReactivity.mod.ComputedRef
 import typings.vueReactivity.mod.CustomRefFactory
 import typings.vueReactivity.mod.DebuggerOptions
 import typings.vueReactivity.mod.DeepReadonly
+import typings.vueReactivity.mod.Raw
 import typings.vueReactivity.mod.ReactiveEffectOptions
 import typings.vueReactivity.mod.ReactiveEffectRunner
 import typings.vueReactivity.mod.Ref_
@@ -86,6 +86,7 @@ import typings.vueRuntimeCore.mod.BaseTransitionProps
 import typings.vueRuntimeCore.mod.ClassComponent
 import typings.vueRuntimeCore.mod.CompiledSlotDescriptor
 import typings.vueRuntimeCore.mod.Component
+import typings.vueRuntimeCore.mod.ComponentInjectOptions
 import typings.vueRuntimeCore.mod.ComponentInternalInstance
 import typings.vueRuntimeCore.mod.ComponentObjectPropsOptions
 import typings.vueRuntimeCore.mod.ComponentOptions
@@ -525,7 +526,7 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: Props extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<Props> : Props */ js.Any, 
         ExtractDefaultPropTypes[Props]
       ] = js.native
-    def defineComponent[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    def defineComponent[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: ComponentOptionsWithArrayProps[
           PropNames, 
           RawBindings, 
@@ -536,6 +537,8 @@ object anon {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
         ]
     ): DefineComponent_[
@@ -554,7 +557,7 @@ object anon {
           /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any
         ]
       ] = js.native
-    def defineComponent[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    def defineComponent[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: ComponentOptionsWithObjectProps[
           PropsOptions, 
           RawBindings, 
@@ -565,6 +568,8 @@ object anon {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
           ExtractDefaultPropTypes[PropsOptions]
         ]
@@ -582,8 +587,8 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: PropsOptions extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<PropsOptions> : PropsOptions */ js.Any, 
         ExtractDefaultPropTypes[PropsOptions]
       ] = js.native
-    def defineComponent[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
-      options: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Props & EmitsToProps[E]]
+    def defineComponent[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+      options: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]
     ): DefineComponent_[
         Props, 
         RawBindings, 
@@ -607,7 +612,7 @@ object anon {
           RawBindings | RenderFunction
         ]
     ): VueElementConstructor[Props] = js.native
-    def defineCustomElement[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    def defineCustomElement[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: (ComponentOptionsWithObjectProps[
           PropsOptions, 
           RawBindings, 
@@ -618,11 +623,13 @@ object anon {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
           ExtractDefaultPropTypes[PropsOptions]
         ]) & Styles
     ): VueElementConstructor[ExtractPropTypes[PropsOptions]] = js.native
-    def defineCustomElement[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    def defineCustomElement[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: (ComponentOptionsWithArrayProps[
           PropNames, 
           RawBindings, 
@@ -633,13 +640,15 @@ object anon {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
         ]) & Styles
     ): VueElementConstructor[
         /* import warning: importer.ImportType#apply Failed type conversion: {[ K in PropNames ]: any} */ js.Any
       ] = js.native
-    def defineCustomElement[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
-      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Props & EmitsToProps[E]]) & Styles
+    def defineCustomElement[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]) & Styles
     ): VueElementConstructor[Props] = js.native
     
     def defineEmits[TypeEmit](): TypeEmit = js.native
@@ -747,12 +756,6 @@ object anon {
     def h(`type`: IsTeleport, props: RawProps & TeleportProps, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h(`type`: Component[Any, Any, Any, ComputedOptions, MethodOptions]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h(`type`: Component[Any, Any, Any, ComputedOptions, MethodOptions], children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h(
-      `type`: Component[Any, Any, Any, ComputedOptions, MethodOptions],
-      props: Null,
-      children: RawChildren
-    ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
-    def h(`type`: Component[Any, Any, Any, ComputedOptions, MethodOptions], props: Null, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h(`type`: Constructor[Any]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h(`type`: Constructor[Any], children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h(
@@ -826,6 +829,20 @@ object anon {
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any], props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any], props: Unit, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](
+      `type`: Component[P, Any, Any, ComputedOptions, MethodOptions],
+      props: RawProps & P,
+      children: RawChildren
+    ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](
+      `type`: Component[P, Any, Any, ComputedOptions, MethodOptions],
+      props: RawProps & P,
+      children: RawSlots
+    ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Null, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Null, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Unit, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](`type`: ConcreteComponent[js.Object | P, Any, Any, ComputedOptions, MethodOptions]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     def h[P](
       `type`: ConcreteComponent[js.Object | P, Any, Any, ComputedOptions, MethodOptions],
@@ -1020,6 +1037,10 @@ object anon {
     @JSName("h")
     def h_P[P](`type`: String, props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     @JSName("h")
+    def h_P[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    @JSName("h")
+    def h_P[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
+    @JSName("h")
     def h_P[P](`type`: Constructor[P]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     @JSName("h")
     def h_P[P](`type`: Constructor[P], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
@@ -1103,7 +1124,7 @@ object anon {
     
     def isVNode(value: Any): /* is @vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}> */ Boolean = js.native
     
-    def markRaw[T /* <: js.Object */](value: T): T & RawSymbol = js.native
+    def markRaw[T /* <: js.Object */](value: T): Raw[T] = js.native
     
     def mergeProps(args: (Data & VNodeProps)*): Data = js.native
     
@@ -1454,7 +1475,7 @@ object anon {
           RawBindings | RenderFunction
         ]
     ): VueElementConstructor[Props] = js.native
-    def apply[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    def apply[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: (ComponentOptionsWithArrayProps[
           PropNames, 
           RawBindings, 
@@ -1465,15 +1486,17 @@ object anon {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
         ]) & Styles
     ): VueElementConstructor[
         /* import warning: importer.ImportType#apply Failed type conversion: {[ K in PropNames ]: any} */ js.Any
       ] = js.native
-    def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
-      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Props & EmitsToProps[E]]) & Styles
+    def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]) & Styles
     ): VueElementConstructor[Props] = js.native
-    def apply[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    def apply[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: (ComponentOptionsWithObjectProps[
           PropsOptions, 
           RawBindings, 
@@ -1484,6 +1507,8 @@ object anon {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
           ExtractDefaultPropTypes[PropsOptions]
         ]) & Styles

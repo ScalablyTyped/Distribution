@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDomainResponse extends StObject {
   
   /**
-    * The current status of the domain.
+    * List that contains the status of each specified OpenSearch Service domain.
     */
   var DomainStatus: typings.awsSdk.clientsOpensearchMod.DomainStatus
 }

@@ -45,7 +45,8 @@ trait App[HostElement] extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ] = js.native
   def mount(rootContainer: HostElement, isHydrate: Boolean): ComponentPublicInstance[
     js.Object, 
@@ -57,7 +58,8 @@ trait App[HostElement] extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ] = js.native
   def mount(rootContainer: HostElement, isHydrate: Boolean, isSVG: Boolean): ComponentPublicInstance[
     js.Object, 
@@ -69,7 +71,8 @@ trait App[HostElement] extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ] = js.native
   def mount(rootContainer: HostElement, isHydrate: Unit, isSVG: Boolean): ComponentPublicInstance[
     js.Object, 
@@ -81,7 +84,8 @@ trait App[HostElement] extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ] = js.native
   def mount(rootContainer: String): ComponentPublicInstance[
     js.Object, 
@@ -93,7 +97,8 @@ trait App[HostElement] extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ] = js.native
   def mount(rootContainer: String, isHydrate: Boolean): ComponentPublicInstance[
     js.Object, 
@@ -105,7 +110,8 @@ trait App[HostElement] extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ] = js.native
   def mount(rootContainer: String, isHydrate: Boolean, isSVG: Boolean): ComponentPublicInstance[
     js.Object, 
@@ -117,7 +123,8 @@ trait App[HostElement] extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ] = js.native
   def mount(rootContainer: String, isHydrate: Unit, isSVG: Boolean): ComponentPublicInstance[
     js.Object, 
@@ -129,7 +136,8 @@ trait App[HostElement] extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ] = js.native
   
   def provide[T](key: String, value: T): this.type = js.native

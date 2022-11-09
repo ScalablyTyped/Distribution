@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClusterConfigStatus extends StObject {
   
   /**
-    * The cluster configuration for the specified domain.
+    * Cluster configuration options for the specified domain.
     */
   var Options: ClusterConfig
   
   /**
-    * The cluster configuration status for the specified domain.
+    * The status of cluster configuration options for the specified domain.
     */
   var Status: OptionStatus
 }

@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChangeProgressStage extends StObject {
   
   /**
-    * The description of the progress stage.
+    * The description of the stage.
     */
   var Description: js.UndefOr[typings.awsSdk.clientsOpensearchMod.Description] = js.undefined
   
   /**
-    * The last updated timestamp of the progress stage.
+    * The most recent updated timestamp of the stage.
     */
   var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the specific progress stage.
+    * The name of the stage.
     */
   var Name: js.UndefOr[ChangeProgressStageName] = js.undefined
   
   /**
-    * The overall status of a specific progress stage.
+    * The status of the stage.
     */
   var Status: js.UndefOr[ChangeProgressStageStatus] = js.undefined
 }

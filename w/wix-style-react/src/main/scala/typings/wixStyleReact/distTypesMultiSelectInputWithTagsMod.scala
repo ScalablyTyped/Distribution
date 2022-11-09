@@ -3,7 +3,9 @@ package typings.wixStyleReact
 import typings.propTypes.mod.ReactNodeLike
 import typings.propTypes.mod.Requireable
 import typings.react.mod.Component
+import typings.react.mod.Context
 import typings.react.mod.global.JSX.Element
+import typings.wixStyleReact.anon.AriaDescribedBy_
 import typings.wixStyleReact.anon.InputHasFocus
 import typings.wixStyleReact.anon.IsPlaceholder
 import org.scalablytyped.runtime.StObject
@@ -18,6 +20,16 @@ object distTypesMultiSelectInputWithTagsMod {
     def this(props: Any) = this()
   }
   object default {
+    
+    @JSImport("wix-style-react/dist/types/MultiSelect/InputWithTags", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("wix-style-react/dist/types/MultiSelect/InputWithTags", "default.contextType")
+    @js.native
+    def contextType: Context[AriaDescribedBy_] = js.native
+    inline def contextType_=(x: Context[AriaDescribedBy_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     object defaultProps {
       
@@ -130,6 +142,12 @@ object distTypesMultiSelectInputWithTagsMod {
   
   @js.native
   trait InputWithTags extends Component[Any, Any, Any] {
+    
+    def _getRootClassName(): Any = js.native
+    
+    def _hasFocus(): Boolean = js.native
+    
+    def _isSelectMode(): Boolean = js.native
     
     def blur(): Unit = js.native
     

@@ -32,7 +32,7 @@ trait UpdateCustomLineItemOutput extends StObject {
   var Description: js.UndefOr[CustomLineItemDescription] = js.undefined
   
   /**
-    *  The most recent time the custom line item was modified. 
+    *  The most recent time when the custom line item was modified. 
     */
   var LastModifiedTime: js.UndefOr[Instant] = js.undefined
   

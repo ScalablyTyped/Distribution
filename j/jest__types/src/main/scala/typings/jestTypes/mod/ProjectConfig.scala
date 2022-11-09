@@ -60,6 +60,8 @@ trait ProjectConfig extends StObject {
   
   var modulePaths: js.UndefOr[js.Array[String]] = js.undefined
   
+  var preset: js.UndefOr[String] = js.undefined
+  
   var prettierPath: String
   
   var resetMocks: Boolean
@@ -253,6 +255,10 @@ object ProjectConfig {
     inline def setModulePathsUndefined: Self = StObject.set(x, "modulePaths", js.undefined)
     
     inline def setModulePathsVarargs(value: String*): Self = StObject.set(x, "modulePaths", js.Array(value*))
+    
+    inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    
+    inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     
     inline def setPrettierPath(value: String): Self = StObject.set(x, "prettierPath", value.asInstanceOf[js.Any])
     

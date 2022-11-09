@@ -17,7 +17,7 @@ trait PurchaseReservedInstanceOfferingRequest extends StObject {
   var ReservationName: ReservationToken
   
   /**
-    * The ID of the reserved OpenSearch instance offering to purchase.
+    * The ID of the Reserved Instance offering to purchase.
     */
   var ReservedInstanceOfferingId: GUID
 }

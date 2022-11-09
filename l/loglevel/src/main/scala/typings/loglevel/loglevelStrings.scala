@@ -1,6 +1,7 @@
 package typings.loglevel
 
 import typings.loglevel.mod.LogLevelDesc
+import typings.loglevel.mod.LogLevelNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,18 +48,21 @@ object loglevelStrings {
   sealed trait debug_
     extends StObject
        with LogLevelDesc
+       with LogLevelNames
   inline def debug_ : debug_ = "debug".asInstanceOf[debug_]
   
   @js.native
   sealed trait error_
     extends StObject
        with LogLevelDesc
+       with LogLevelNames
   inline def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
   sealed trait info_
     extends StObject
        with LogLevelDesc
+       with LogLevelNames
   inline def info_ : info_ = "info".asInstanceOf[info_]
   
   @js.native
@@ -71,11 +75,13 @@ object loglevelStrings {
   sealed trait trace_
     extends StObject
        with LogLevelDesc
+       with LogLevelNames
   inline def trace_ : trace_ = "trace".asInstanceOf[trace_]
   
   @js.native
   sealed trait warn_
     extends StObject
        with LogLevelDesc
+       with LogLevelNames
   inline def warn_ : warn_ = "warn".asInstanceOf[warn_]
 }

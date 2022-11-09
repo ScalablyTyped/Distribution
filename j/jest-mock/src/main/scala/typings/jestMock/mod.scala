@@ -517,7 +517,7 @@ object mod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately. 
     * TS definition: {{{
-    T extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.MockInstance<(args : std.ConstructorParameters<T>): std.InstanceType<T>> : T extends jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.MockInstance<(args : std.Parameters<T>): std.ReturnType<T>> : never
+    T extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.SpiedClass<T> : T extends jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.SpiedFunction<T> : never
     }}}
     */
   @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-error-recovery
 
-Typings are for version 3.2.0
+Typings are for version 4.0.1
 
 ## Library description:
 Utilities for helping you gracefully handle crashes due to fatal JavaScript errors.

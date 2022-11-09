@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/transform" : "29.3.0"
+      "@jest/transform" : "29.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/transform" : "29.3.0"
+      "@jest/transform" : "29.3.1"
     }
   ],
   "compile-devDependencies" : [

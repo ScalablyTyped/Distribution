@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-modules-autolinking
 
-Typings are for version 0.10.3
+Typings are for version 1.0.0
 
 
 

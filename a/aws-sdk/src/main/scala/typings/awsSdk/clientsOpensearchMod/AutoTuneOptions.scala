@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoTuneOptions extends StObject {
   
   /**
-    * The Auto-Tune desired state. Valid values are ENABLED and DISABLED.
+    * Whether Auto-Tune is enabled or disabled.
     */
   var DesiredState: js.UndefOr[AutoTuneDesiredState] = js.undefined
   
   /**
-    * A list of maintenance schedules. See  Auto-Tune for Amazon OpenSearch Service  for more information. 
+    * A list of maintenance schedules during which Auto-Tune can deploy changes.
     */
   var MaintenanceSchedules: js.UndefOr[AutoTuneMaintenanceScheduleList] = js.undefined
   
   /**
-    * The rollback state while disabling Auto-Tune for the domain. Valid values are NO_ROLLBACK and DEFAULT_ROLLBACK. 
+    * When disabling Auto-Tune, specify NO_ROLLBACK to retain all prior Auto-Tune settings or DEFAULT_ROLLBACK to revert to the OpenSearch Service defaults. If you specify DEFAULT_ROLLBACK, you must include a MaintenanceSchedule in the request. Otherwise, OpenSearch Service is unable to perform the rollback.
     */
   var RollbackOnDisable: js.UndefOr[typings.awsSdk.clientsOpensearchMod.RollbackOnDisable] = js.undefined
 }

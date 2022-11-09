@@ -1,7 +1,7 @@
 
 # Scala.js typings for loglevel
 
-Typings are for version 1.8.0
+Typings are for version 1.8.1
 
 ## Library description:
 Minimal lightweight logging for JavaScript, adding reliable log level methods to any available console.log methods

@@ -17,6 +17,11 @@ trait Placement extends StObject {
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
+    * The Group Id of the placement group.
+    */
+  var GroupId: js.UndefOr[PlacementGroupId] = js.undefined
+  
+  /**
     * The name of the placement group the instance is in.
     */
   var GroupName: js.UndefOr[PlacementGroupName] = js.undefined
@@ -62,6 +67,10 @@ object Placement {
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    
+    inline def setGroupId(value: PlacementGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
     inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

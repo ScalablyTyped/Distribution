@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoTuneOptionsInput extends StObject {
   
   /**
-    * The Auto-Tune desired state. Valid values are ENABLED and DISABLED.
+    * Whether Auto-Tune is enabled or disabled.
     */
   var DesiredState: js.UndefOr[AutoTuneDesiredState] = js.undefined
   
   /**
-    * A list of maintenance schedules. See  Auto-Tune for Amazon OpenSearch Service  for more information. 
+    * A list of maintenance schedules during which Auto-Tune can deploy changes. Maintenance schedules are overwrite, not append. If your request includes no schedules, the request deletes all existing schedules. To preserve existing schedules, make a call to DescribeDomainConfig first and use the MaintenanceSchedules portion of the response as the basis for this section.
     */
   var MaintenanceSchedules: js.UndefOr[AutoTuneMaintenanceScheduleList] = js.undefined
 }

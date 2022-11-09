@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "mock-aws-s3"
-version := "2.6-dt-20220418Z-dab658"
+version := "2.6-dt-20220418Z-15bc0c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1249.0-651e57",
+  "org.scalablytyped" %%% "aws-sdk" % "2.1250.0-82abf5",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false

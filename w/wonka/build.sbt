@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wonka"
-version := "6.1.0-72608e"
+version := "6.1.1-e7f9a6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

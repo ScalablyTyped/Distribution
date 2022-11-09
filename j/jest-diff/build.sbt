@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jest-diff"
-version := "29.2.1-dc17ce"
+version := "29.3.1-602a83"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "pretty-format" % "29.2.1-d73ee0",
+  "org.scalablytyped" %%% "pretty-format" % "29.3.1-ebbec4",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreatePricingRuleInput extends StObject {
   
   /**
-    *  The token that is needed to support idempotency. Idempotency isn't currently supported, but will be implemented in a future update. 
+    *  The token that's needed to support idempotency. Idempotency isn't currently supported, but will be implemented in a future update. 
     */
   var ClientToken: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.ClientToken] = js.undefined
   
@@ -17,7 +17,7 @@ trait CreatePricingRuleInput extends StObject {
   var Description: js.UndefOr[PricingRuleDescription] = js.undefined
   
   /**
-    *  A percentage modifier applied on the public pricing rates. 
+    *  A percentage modifier that's applied on the public pricing rates. 
     */
   var ModifierPercentage: typings.awsSdk.clientsBillingconductorMod.ModifierPercentage
   
@@ -27,7 +27,7 @@ trait CreatePricingRuleInput extends StObject {
   var Name: PricingRuleName
   
   /**
-    *  The scope of pricing rule that indicates if it is globally applicable, or is service-specific. 
+    *  The scope of pricing rule that indicates if it's globally applicable, or it's service-specific. 
     */
   var Scope: PricingRuleScope
   

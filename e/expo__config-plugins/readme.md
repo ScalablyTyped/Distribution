@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__config-plugins
 
-Typings are for version 5.0.1
+Typings are for version 5.0.4
 
 ## Library description:
 A library for Expo config plugins

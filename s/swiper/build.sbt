@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swiper"
-version := "8.4.4-8a1100"
+version := "8.4.4-0d2b10"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -36,9 +36,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "svelte" % "3.52.0-eadd9b",
   "org.scalablytyped" %%% "typescript" % "4.8.4-60b1be",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-37b092",
-  "org.scalablytyped" %%% "vue__reactivity" % "3.2.41-d09629",
-  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.41-066460",
-  "org.scalablytyped" %%% "vue__shared" % "3.2.41-a50cde")
+  "org.scalablytyped" %%% "vue__reactivity" % "3.2.42-e349d3",
+  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.42-07dc53",
+  "org.scalablytyped" %%% "vue__shared" % "3.2.42-ead2ce")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

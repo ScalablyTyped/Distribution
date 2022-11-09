@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__config
 
-Typings are for version 7.0.1
+Typings are for version 7.0.3
 
 ## Library description:
 A library for interacting with the app.json

@@ -12,7 +12,7 @@ trait PurchaseReservedInstanceOfferingResponse extends StObject {
   var ReservationName: js.UndefOr[ReservationToken] = js.undefined
   
   /**
-    * Details of the reserved OpenSearch instance which was purchased.
+    * The ID of the Reserved Instance offering that was purchased.
     */
   var ReservedInstanceId: js.UndefOr[GUID] = js.undefined
 }

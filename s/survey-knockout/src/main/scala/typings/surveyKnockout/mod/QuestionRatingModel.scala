@@ -123,6 +123,8 @@ open class QuestionRatingModel protected () extends Question {
   def renderedValue: Boolean = js.native
   def renderedValue_=(`val`: Boolean): Unit = js.native
   
+  def searchEnabled: Boolean = js.native
+  
   def setValueFromClick(value: Any): Unit = js.native
   
   def visibleChoices: Any = js.native

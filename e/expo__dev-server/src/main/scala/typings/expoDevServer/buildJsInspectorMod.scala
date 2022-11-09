@@ -12,9 +12,9 @@ object buildJsInspectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def closeJsInspector(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJsInspector")().asInstanceOf[Unit]
+  inline def closeJsInspector(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJsInspector")().asInstanceOf[js.Promise[Unit]]
   
-  inline def openJsInspector(app: MetroInspectorProxyApp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openJsInspector")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def openJsInspector(app: MetroInspectorProxyApp): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openJsInspector")(app.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def queryAllInspectorAppsAsync(metroServerOrigin: String): js.Promise[js.Array[MetroInspectorProxyApp]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllInspectorAppsAsync")(metroServerOrigin.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MetroInspectorProxyApp]]]
   

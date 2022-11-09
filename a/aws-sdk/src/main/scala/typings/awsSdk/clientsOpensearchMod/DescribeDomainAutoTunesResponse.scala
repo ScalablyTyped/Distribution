@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDomainAutoTunesResponse extends StObject {
   
   /**
-    * The list of setting adjustments that Auto-Tune has made to the domain. See  Auto-Tune for Amazon OpenSearch Service  for more information. 
+    * The list of setting adjustments that Auto-Tune has made to the domain.
     */
   var AutoTunes: js.UndefOr[AutoTuneList] = js.undefined
   
   /**
-    * An identifier to allow retrieval of paginated results.
+    * When nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NextToken] = js.undefined
 }

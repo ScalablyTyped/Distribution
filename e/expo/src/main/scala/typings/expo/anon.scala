@@ -1,7 +1,6 @@
 package typings.expo
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.ReactNode
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,30 +37,9 @@ object anon {
     }
   }
   
-  trait Children extends StObject {
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-  }
-  object Children {
-    
-    inline def apply(): Children = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Children]
-    }
-    
-    extension [Self <: Children](x: Self) {
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    }
-  }
-  
   trait Dictkey
     extends StObject
        with /* key */ StringDictionary[Any] {
-    
-    var errorRecovery: js.UndefOr[Any] = js.undefined
     
     var manifestString: js.UndefOr[String] = js.undefined
     
@@ -75,10 +53,6 @@ object anon {
     }
     
     extension [Self <: Dictkey](x: Self) {
-      
-      inline def setErrorRecovery(value: Any): Self = StObject.set(x, "errorRecovery", value.asInstanceOf[js.Any])
-      
-      inline def setErrorRecoveryUndefined: Self = StObject.set(x, "errorRecovery", js.undefined)
       
       inline def setManifestString(value: String): Self = StObject.set(x, "manifestString", value.asInstanceOf[js.Any])
       

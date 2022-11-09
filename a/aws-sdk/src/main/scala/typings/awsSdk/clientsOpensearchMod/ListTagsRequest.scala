@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsRequest extends StObject {
   
   /**
-    * Specify the ARN of the domain that the tags you want to view are attached to. 
+    * Amazon Resource Name (ARN) for the domain to view tags for.
     */
   var ARN: typings.awsSdk.clientsOpensearchMod.ARN
 }

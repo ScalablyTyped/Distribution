@@ -1,6 +1,5 @@
 package typings.wixStyleReact.anon
 
-import typings.std.HTMLElement
 import typings.wixStyleReact.distTypesTagTagDotdriverMod.TagDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ trait ClickOnInputWrapper extends StObject {
   
   def clickOnInputWrapper(): Unit
   
-  def customSuffixExists(): HTMLElement
+  def customSuffixExists(): Boolean
   
   def getMaxHeight(): String
   
@@ -25,21 +24,24 @@ trait ClickOnInputWrapper extends StObject {
   def numberOfTags(): Double
   
   def pressCommaKey(): Unit
+  
+  def statusIndicatorExists(): Boolean
 }
 object ClickOnInputWrapper {
   
   inline def apply(
     clickOnInputWrapper: () => Unit,
-    customSuffixExists: () => HTMLElement,
+    customSuffixExists: () => Boolean,
     getMaxHeight: () => String,
     getTagDriverByTagId: String => TagDriver,
     getTagLabelAt: Double => String,
     inputWrapperHasFocus: () => Boolean,
     inputWrapperIsDisabled: () => Boolean,
     numberOfTags: () => Double,
-    pressCommaKey: () => Unit
+    pressCommaKey: () => Unit,
+    statusIndicatorExists: () => Boolean
   ): ClickOnInputWrapper = {
-    val __obj = js.Dynamic.literal(clickOnInputWrapper = js.Any.fromFunction0(clickOnInputWrapper), customSuffixExists = js.Any.fromFunction0(customSuffixExists), getMaxHeight = js.Any.fromFunction0(getMaxHeight), getTagDriverByTagId = js.Any.fromFunction1(getTagDriverByTagId), getTagLabelAt = js.Any.fromFunction1(getTagLabelAt), inputWrapperHasFocus = js.Any.fromFunction0(inputWrapperHasFocus), inputWrapperIsDisabled = js.Any.fromFunction0(inputWrapperIsDisabled), numberOfTags = js.Any.fromFunction0(numberOfTags), pressCommaKey = js.Any.fromFunction0(pressCommaKey))
+    val __obj = js.Dynamic.literal(clickOnInputWrapper = js.Any.fromFunction0(clickOnInputWrapper), customSuffixExists = js.Any.fromFunction0(customSuffixExists), getMaxHeight = js.Any.fromFunction0(getMaxHeight), getTagDriverByTagId = js.Any.fromFunction1(getTagDriverByTagId), getTagLabelAt = js.Any.fromFunction1(getTagLabelAt), inputWrapperHasFocus = js.Any.fromFunction0(inputWrapperHasFocus), inputWrapperIsDisabled = js.Any.fromFunction0(inputWrapperIsDisabled), numberOfTags = js.Any.fromFunction0(numberOfTags), pressCommaKey = js.Any.fromFunction0(pressCommaKey), statusIndicatorExists = js.Any.fromFunction0(statusIndicatorExists))
     __obj.asInstanceOf[ClickOnInputWrapper]
   }
   
@@ -47,7 +49,7 @@ object ClickOnInputWrapper {
     
     inline def setClickOnInputWrapper(value: () => Unit): Self = StObject.set(x, "clickOnInputWrapper", js.Any.fromFunction0(value))
     
-    inline def setCustomSuffixExists(value: () => HTMLElement): Self = StObject.set(x, "customSuffixExists", js.Any.fromFunction0(value))
+    inline def setCustomSuffixExists(value: () => Boolean): Self = StObject.set(x, "customSuffixExists", js.Any.fromFunction0(value))
     
     inline def setGetMaxHeight(value: () => String): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
     
@@ -62,5 +64,7 @@ object ClickOnInputWrapper {
     inline def setNumberOfTags(value: () => Double): Self = StObject.set(x, "numberOfTags", js.Any.fromFunction0(value))
     
     inline def setPressCommaKey(value: () => Unit): Self = StObject.set(x, "pressCommaKey", js.Any.fromFunction0(value))
+    
+    inline def setStatusIndicatorExists(value: () => Boolean): Self = StObject.set(x, "statusIndicatorExists", js.Any.fromFunction0(value))
   }
 }

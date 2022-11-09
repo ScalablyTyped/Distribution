@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteInboundConnectionResponse extends StObject {
   
   /**
-    * The  InboundConnection  of the deleted inbound connection. 
+    * The deleted inbound connection.
     */
   var Connection: js.UndefOr[InboundConnection] = js.undefined
 }

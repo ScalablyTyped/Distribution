@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__prebuild-config
 
-Typings are for version 5.0.3
+Typings are for version 5.0.6
 
 ## Library description:
 Get the prebuild config

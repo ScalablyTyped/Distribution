@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/devcert" : "1.0.0"
+      "@expo/devcert" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/devcert" : "1.0.0"
+      "@expo/devcert" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

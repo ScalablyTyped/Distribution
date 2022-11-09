@@ -27,6 +27,11 @@ trait Policy extends StObject {
   var IncludeMap: js.UndefOr[CustomerPolicyScopeMap] = js.undefined
   
   /**
+    * The definition of the Network Firewall firewall policy.
+    */
+  var PolicyDescription: js.UndefOr[ResourceDescription] = js.undefined
+  
+  /**
     * The ID of the Firewall Manager policy.
     */
   var PolicyId: js.UndefOr[typings.awsSdk.clientsFmsMod.PolicyId] = js.undefined
@@ -45,6 +50,11 @@ trait Policy extends StObject {
     * Indicates if the policy should be automatically applied to new resources.
     */
   var RemediationEnabled: Boolean
+  
+  /**
+    * The unique identifiers of the resource sets used by the policy.
+    */
+  var ResourceSetIds: js.UndefOr[typings.awsSdk.clientsFmsMod.ResourceSetIds] = js.undefined
   
   /**
     * An array of ResourceTag objects.
@@ -95,6 +105,10 @@ object Policy {
     
     inline def setIncludeMapUndefined: Self = StObject.set(x, "IncludeMap", js.undefined)
     
+    inline def setPolicyDescription(value: ResourceDescription): Self = StObject.set(x, "PolicyDescription", value.asInstanceOf[js.Any])
+    
+    inline def setPolicyDescriptionUndefined: Self = StObject.set(x, "PolicyDescription", js.undefined)
+    
     inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
     inline def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
@@ -106,6 +120,12 @@ object Policy {
     inline def setPolicyUpdateTokenUndefined: Self = StObject.set(x, "PolicyUpdateToken", js.undefined)
     
     inline def setRemediationEnabled(value: Boolean): Self = StObject.set(x, "RemediationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setResourceSetIds(value: ResourceSetIds): Self = StObject.set(x, "ResourceSetIds", value.asInstanceOf[js.Any])
+    
+    inline def setResourceSetIdsUndefined: Self = StObject.set(x, "ResourceSetIds", js.undefined)
+    
+    inline def setResourceSetIdsVarargs(value: Base62Id*): Self = StObject.set(x, "ResourceSetIds", js.Array(value*))
     
     inline def setResourceTags(value: ResourceTags): Self = StObject.set(x, "ResourceTags", value.asInstanceOf[js.Any])
     

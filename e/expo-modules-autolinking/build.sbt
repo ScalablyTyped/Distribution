@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo-modules-autolinking"
-version := "0.10.3-bc1c20"
+version := "1.0.0-17cf3b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

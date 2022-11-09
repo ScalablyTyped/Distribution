@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdflib
 
-Typings are for version 2.2.20
+Typings are for version 2.2.21
 
 ## Library description:
 an RDF library for node.js. Suitable for client and server side.

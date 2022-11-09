@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__package-manager
 
-Typings are for version 0.0.56
+Typings are for version 0.0.57
 
 ## Library description:
 A library for installing and finding packages in a node project

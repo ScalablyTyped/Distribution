@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__popover2"
-version := "1.9.0-6c8a04"
+version := "1.10.0-8e2962"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

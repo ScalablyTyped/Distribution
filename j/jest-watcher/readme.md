@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-watcher
 
-Typings are for version 29.2.2
+Typings are for version 29.3.1
 
 ## Library description:
 Delightful JavaScript Testing.

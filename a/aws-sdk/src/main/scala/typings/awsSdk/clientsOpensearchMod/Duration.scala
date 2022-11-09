@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Duration extends StObject {
   
   /**
-    * The unit of a maintenance schedule duration. Valid value is HOURS. See  Auto-Tune for Amazon OpenSearch Service  for more information. 
+    * The unit of measurement for the duration of a maintenance schedule.
     */
   var Unit: js.UndefOr[TimeUnit] = js.undefined
   
   /**
-    * Integer to specify the value of a maintenance schedule duration. See  Auto-Tune for Amazon OpenSearch Service  for more information. 
+    * Integer to specify the value of a maintenance schedule duration.
     */
   var Value: js.UndefOr[DurationValue] = js.undefined
 }

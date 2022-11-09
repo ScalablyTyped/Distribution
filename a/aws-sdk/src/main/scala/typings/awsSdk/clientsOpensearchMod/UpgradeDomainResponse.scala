@@ -6,22 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpgradeDomainResponse extends StObject {
   
+  /**
+    * The advanced options configuration for the domain.
+    */
   var AdvancedOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AdvancedOptions] = js.undefined
   
+  /**
+    * Container for information about a configuration change happening on a domain.
+    */
   var ChangeProgressDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ChangeProgressDetails] = js.undefined
   
+  /**
+    * The name of the domain that was upgraded.
+    */
   var DomainName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainName] = js.undefined
   
   /**
-    *  When true, indicates that an upgrade eligibility check needs to be performed. Does not actually perform the upgrade. 
+    * When true, indicates that an upgrade eligibility check was performed.
     */
   var PerformCheckOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The version of OpenSearch that you intend to upgrade the domain to.
+    * OpenSearch or Elasticsearch version that the domain was upgraded to.
     */
   var TargetVersion: js.UndefOr[VersionString] = js.undefined
   
+  /**
+    * The unique identifier of the domain upgrade.
+    */
   var UpgradeId: js.UndefOr[String] = js.undefined
 }
 object UpgradeDomainResponse {

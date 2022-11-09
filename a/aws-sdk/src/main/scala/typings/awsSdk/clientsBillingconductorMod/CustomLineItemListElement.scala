@@ -42,7 +42,7 @@ trait CustomLineItemListElement extends StObject {
   var Description: js.UndefOr[CustomLineItemDescription] = js.undefined
   
   /**
-    *  The most recent time the custom line item was modified. 
+    *  The most recent time when the custom line item was modified. 
     */
   var LastModifiedTime: js.UndefOr[Instant] = js.undefined
   
@@ -52,7 +52,7 @@ trait CustomLineItemListElement extends StObject {
   var Name: js.UndefOr[CustomLineItemName] = js.undefined
   
   /**
-    *  The product code associated with the custom line item. 
+    *  The product code that's associated with the custom line item. 
     */
   var ProductCode: js.UndefOr[CustomLineItemProductCode] = js.undefined
 }

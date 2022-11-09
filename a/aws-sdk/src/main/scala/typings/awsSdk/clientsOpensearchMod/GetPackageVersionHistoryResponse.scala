@@ -6,12 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetPackageVersionHistoryResponse extends StObject {
   
+  /**
+    * When nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page.
+    */
   var NextToken: js.UndefOr[String] = js.undefined
   
+  /**
+    * The unique identifier of the package.
+    */
   var PackageID: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageID] = js.undefined
   
   /**
-    * List of PackageVersionHistory objects. 
+    * A list of package versions, along with their creation time and commit message.
     */
   var PackageVersionHistoryList: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageVersionHistoryList] = js.undefined
 }

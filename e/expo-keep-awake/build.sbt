@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "expo-keep-awake"
-version := "10.2.0-60cbe5"
+version := "11.0.1-9c73b1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-9ea52b",
-  "org.scalablytyped" %%% "expo-modules-core" % "0.11.8-170620",
+  "org.scalablytyped" %%% "expo-modules-core" % "1.0.2-03fa80",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-115604",
   "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-e64588",
   "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-3962e1",

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-application" : "4.2.2"
+      "expo-application" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-application" : "4.2.2"
+      "expo-application" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -29,6 +29,8 @@ object buildEventEmitterMod {
   
   trait NativeModule extends StObject {
     
+    var __expo_module_name__ : js.UndefOr[String] = js.undefined
+    
     def addListener(eventName: String): Unit
     
     def removeListeners(count: Double): Unit
@@ -57,6 +59,10 @@ object buildEventEmitterMod {
       inline def setStopObserving(value: () => Unit): Self = StObject.set(x, "stopObserving", js.Any.fromFunction0(value))
       
       inline def setStopObservingUndefined: Self = StObject.set(x, "stopObserving", js.undefined)
+      
+      inline def set__expo_module_name__(value: String): Self = StObject.set(x, "__expo_module_name__", value.asInstanceOf[js.Any])
+      
+      inline def set__expo_module_name__Undefined: Self = StObject.set(x, "__expo_module_name__", js.undefined)
     }
   }
   

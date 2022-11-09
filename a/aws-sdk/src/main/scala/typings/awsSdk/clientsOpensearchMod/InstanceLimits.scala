@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InstanceLimits extends StObject {
   
+  /**
+    * Limits on the number of instances that can be created for a given instance type.
+    */
   var InstanceCountLimits: js.UndefOr[typings.awsSdk.clientsOpensearchMod.InstanceCountLimits] = js.undefined
 }
 object InstanceLimits {

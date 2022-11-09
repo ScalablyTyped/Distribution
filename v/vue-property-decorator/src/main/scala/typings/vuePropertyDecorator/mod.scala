@@ -56,13 +56,13 @@ import typings.vuePropertyDecorator.vuePropertyDecoratorStrings.toLocaleString
 import typings.vuePropertyDecorator.vuePropertyDecoratorStrings.toString
 import typings.vuePropertyDecorator.vuePropertyDecoratorStrings.unshift
 import typings.vuePropertyDecorator.vuePropertyDecoratorStrings.values
-import typings.vueReactivity.anon.RawSymbol
 import typings.vueReactivity.mod.ComputedGetter
 import typings.vueReactivity.mod.ComputedRef
 import typings.vueReactivity.mod.CustomRefFactory
 import typings.vueReactivity.mod.DebuggerOptions
 import typings.vueReactivity.mod.DeepReadonly
 import typings.vueReactivity.mod.EffectScheduler
+import typings.vueReactivity.mod.Raw
 import typings.vueReactivity.mod.ReactiveEffectOptions
 import typings.vueReactivity.mod.ReactiveEffectRunner
 import typings.vueReactivity.mod.Ref_
@@ -86,6 +86,7 @@ import typings.vueRuntimeCore.mod.BaseTransitionProps
 import typings.vueRuntimeCore.mod.ClassComponent
 import typings.vueRuntimeCore.mod.CompiledSlotDescriptor
 import typings.vueRuntimeCore.mod.Component
+import typings.vueRuntimeCore.mod.ComponentInjectOptions
 import typings.vueRuntimeCore.mod.ComponentInternalInstance
 import typings.vueRuntimeCore.mod.ComponentObjectPropsOptions
 import typings.vueRuntimeCore.mod.ComponentOptions
@@ -944,7 +945,7 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: Props extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<Props> : Props */ js.Any, 
         ExtractDefaultPropTypes[Props]
       ]]
-    inline def defineComponent[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    inline def defineComponent[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: ComponentOptionsWithArrayProps[
           PropNames, 
           RawBindings, 
@@ -955,6 +956,8 @@ object mod {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
         ]
     ): DefineComponent_[
@@ -988,7 +991,7 @@ object mod {
           /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any
         ]
       ]]
-    inline def defineComponent[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    inline def defineComponent[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: ComponentOptionsWithObjectProps[
           PropsOptions, 
           RawBindings, 
@@ -999,6 +1002,8 @@ object mod {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
           ExtractDefaultPropTypes[PropsOptions]
         ]
@@ -1029,8 +1034,8 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: PropsOptions extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<PropsOptions> : PropsOptions */ js.Any, 
         ExtractDefaultPropTypes[PropsOptions]
       ]]
-    inline def defineComponent[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
-      options: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Props & EmitsToProps[E]]
+    inline def defineComponent[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+      options: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]
     ): DefineComponent_[
         Props, 
         RawBindings, 
@@ -1067,7 +1072,7 @@ object mod {
           RawBindings | RenderFunction
         ]
     ): VueElementConstructor[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineCustomElement")(setup.asInstanceOf[js.Any]).asInstanceOf[VueElementConstructor[Props]]
-    inline def defineCustomElement[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    inline def defineCustomElement[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: (ComponentOptionsWithObjectProps[
           PropsOptions, 
           RawBindings, 
@@ -1078,11 +1083,13 @@ object mod {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
           ExtractDefaultPropTypes[PropsOptions]
         ]) & Styles
     ): VueElementConstructor[ExtractPropTypes[PropsOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineCustomElement")(options.asInstanceOf[js.Any]).asInstanceOf[VueElementConstructor[ExtractPropTypes[PropsOptions]]]
-    inline def defineCustomElement[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    inline def defineCustomElement[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: (ComponentOptionsWithArrayProps[
           PropNames, 
           RawBindings, 
@@ -1093,6 +1100,8 @@ object mod {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
         ]) & Styles
     ): VueElementConstructor[
@@ -1100,8 +1109,8 @@ object mod {
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineCustomElement")(options.asInstanceOf[js.Any]).asInstanceOf[VueElementConstructor[
         /* import warning: importer.ImportType#apply Failed type conversion: {[ K in PropNames ]: any} */ js.Any
       ]]
-    inline def defineCustomElement[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
-      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Props & EmitsToProps[E]]) & Styles
+    inline def defineCustomElement[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]) & Styles
     ): VueElementConstructor[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineCustomElement")(options.asInstanceOf[js.Any]).asInstanceOf[VueElementConstructor[Props]]
     
     inline def defineEmits[TypeEmit](): TypeEmit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineEmits")().asInstanceOf[TypeEmit]
@@ -1129,10 +1138,10 @@ object mod {
           RawBindings | RenderFunction
         ]
     ): VueElementConstructor[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineSSRCustomElement")(setup.asInstanceOf[js.Any]).asInstanceOf[VueElementConstructor[Props]]
-    inline def defineSSRCustomElement[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
-      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Props & EmitsToProps[E]]) & Styles
+    inline def defineSSRCustomElement[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
+      options: (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props & EmitsToProps[E]]) & Styles
     ): VueElementConstructor[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineSSRCustomElement")(options.asInstanceOf[js.Any]).asInstanceOf[VueElementConstructor[Props]]
-    inline def defineSSRCustomElement[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    inline def defineSSRCustomElement[PropNames /* <: String */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: (ComponentOptionsWithArrayProps[
           PropNames, 
           RawBindings, 
@@ -1143,6 +1152,8 @@ object mod {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[E]
         ]) & Styles
     ): VueElementConstructor[
@@ -1150,7 +1161,7 @@ object mod {
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineSSRCustomElement")(options.asInstanceOf[js.Any]).asInstanceOf[VueElementConstructor[
         /* import warning: importer.ImportType#apply Failed type conversion: {[ K in PropNames ]: any} */ js.Any
       ]]
-    inline def defineSSRCustomElement[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */](
+    inline def defineSSRCustomElement[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */](
       options: (ComponentOptionsWithObjectProps[
           PropsOptions, 
           RawBindings, 
@@ -1161,6 +1172,8 @@ object mod {
           Extends, 
           E, 
           EE, 
+          I, 
+          II, 
           ExtractPropTypes[PropsOptions] & EmitsToProps[E], 
           ExtractDefaultPropTypes[PropsOptions]
         ]) & Styles
@@ -1258,12 +1271,6 @@ object mod {
     inline def h(`type`: IsTeleport, props: RawProps & TeleportProps, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h(`type`: Component[Any, Any, Any, ComputedOptions, MethodOptions]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h(`type`: Component[Any, Any, Any, ComputedOptions, MethodOptions], children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
-    inline def h(
-      `type`: Component[Any, Any, Any, ComputedOptions, MethodOptions],
-      props: Null,
-      children: RawChildren
-    ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
-    inline def h(`type`: Component[Any, Any, Any, ComputedOptions, MethodOptions], props: Null, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h(`type`: Constructor[Any]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h(`type`: Constructor[Any], children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h(
@@ -1337,6 +1344,20 @@ object mod {
     ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any], props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h[P](`type`: ComponentOptions[P, Any, Any, Any, Any, Any, Any, Any], props: Unit, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    inline def h[P](
+      `type`: Component[P, Any, Any, ComputedOptions, MethodOptions],
+      props: RawProps & P,
+      children: RawChildren
+    ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    inline def h[P](
+      `type`: Component[P, Any, Any, ComputedOptions, MethodOptions],
+      props: RawProps & P,
+      children: RawSlots
+    ): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    inline def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Null, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    inline def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Null, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    inline def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    inline def h[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: Unit, children: RawSlots): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h[P](`type`: ConcreteComponent[js.Object | P, Any, Any, ComputedOptions, MethodOptions]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h[P](
       `type`: ConcreteComponent[js.Object | P, Any, Any, ComputedOptions, MethodOptions],
@@ -1528,6 +1549,8 @@ object mod {
     inline def h_P[P](`type`: String): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h_P[P](`type`: String, children: (RawProps & P) | RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h_P[P](`type`: String, props: Unit, children: RawChildren): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    inline def h_P[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+    inline def h_P[P](`type`: Component[P, Any, Any, ComputedOptions, MethodOptions], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h_P[P](`type`: Constructor[P]): VNode[RendererNode, RendererElement, StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h_P[P](`type`: Constructor[P], props: RawProps & P): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     inline def h_P[P](
@@ -1605,7 +1628,7 @@ object mod {
     
     inline def isVNode(value: Any): /* is @vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVNode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}> */ Boolean]
     
-    inline def markRaw[T /* <: js.Object */](value: T): T & RawSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("markRaw")(value.asInstanceOf[js.Any]).asInstanceOf[T & RawSymbol]
+    inline def markRaw[T /* <: js.Object */](value: T): Raw[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("markRaw")(value.asInstanceOf[js.Any]).asInstanceOf[Raw[T]]
     
     inline def mergeProps(args: (Data & VNodeProps)*): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeProps")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Data]
     

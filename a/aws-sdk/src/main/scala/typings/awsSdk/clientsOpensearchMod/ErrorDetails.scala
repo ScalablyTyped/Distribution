@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ErrorDetails extends StObject {
   
+  /**
+    * A message describing the error.
+    */
   var ErrorMessage: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ErrorMessage] = js.undefined
   
+  /**
+    * The type of error that occurred.
+    */
   var ErrorType: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ErrorType] = js.undefined
 }
 object ErrorDetails {

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DissociatePackageRequest extends StObject {
   
   /**
-    * The name of the domain to associate the package with.
+    * Name of the domain to dissociate the package from.
     */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
   
   /**
-    * The internal ID of the package to associate with a domain. Use DescribePackages to find this value. 
+    * Internal ID of the package to dissociate from the domain. Use ListPackagesForDomain to find this value.
     */
   var PackageID: typings.awsSdk.clientsOpensearchMod.PackageID
 }

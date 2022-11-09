@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpenSearch extends Service {
   
   /**
-    * Allows the remote domain owner to accept an inbound cross-cluster connection request.
+    * Allows the destination Amazon OpenSearch Service domain owner to accept an inbound cross-cluster search connection request. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def acceptInboundConnection(): Request[AcceptInboundConnectionResponse, AWSError] = js.native
   def acceptInboundConnection(callback: js.Function2[/* err */ AWSError, /* data */ AcceptInboundConnectionResponse, Unit]): Request[AcceptInboundConnectionResponse, AWSError] = js.native
   /**
-    * Allows the remote domain owner to accept an inbound cross-cluster connection request.
+    * Allows the destination Amazon OpenSearch Service domain owner to accept an inbound cross-cluster search connection request. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def acceptInboundConnection(params: AcceptInboundConnectionRequest): Request[AcceptInboundConnectionResponse, AWSError] = js.native
   def acceptInboundConnection(
@@ -26,23 +26,23 @@ trait OpenSearch extends Service {
   ): Request[AcceptInboundConnectionResponse, AWSError] = js.native
   
   /**
-    * Attaches tags to an existing domain. Tags are a set of case-sensitive key value pairs. An domain can have up to 10 tags. See  Tagging Amazon OpenSearch Service domains for more information. 
+    * Attaches tags to an existing Amazon OpenSearch Service domain. Tags are a set of case-sensitive key-value pairs. An domain can have up to 10 tags. For more information, see  Tagging Amazon OpenSearch Service domains.
     */
   def addTags(): Request[js.Object, AWSError] = js.native
   def addTags(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Attaches tags to an existing domain. Tags are a set of case-sensitive key value pairs. An domain can have up to 10 tags. See  Tagging Amazon OpenSearch Service domains for more information. 
+    * Attaches tags to an existing Amazon OpenSearch Service domain. Tags are a set of case-sensitive key-value pairs. An domain can have up to 10 tags. For more information, see  Tagging Amazon OpenSearch Service domains.
     */
   def addTags(params: AddTagsRequest): Request[js.Object, AWSError] = js.native
   def addTags(params: AddTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   
   /**
-    * Associates a package with an Amazon OpenSearch Service domain.
+    * Associates a package with an Amazon OpenSearch Service domain. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def associatePackage(): Request[AssociatePackageResponse, AWSError] = js.native
   def associatePackage(callback: js.Function2[/* err */ AWSError, /* data */ AssociatePackageResponse, Unit]): Request[AssociatePackageResponse, AWSError] = js.native
   /**
-    * Associates a package with an Amazon OpenSearch Service domain.
+    * Associates a package with an Amazon OpenSearch Service domain. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def associatePackage(params: AssociatePackageRequest): Request[AssociatePackageResponse, AWSError] = js.native
   def associatePackage(
@@ -51,12 +51,26 @@ trait OpenSearch extends Service {
   ): Request[AssociatePackageResponse, AWSError] = js.native
   
   /**
-    * Cancels a scheduled service software update for an Amazon OpenSearch Service domain. You can only perform this operation before the AutomatedUpdateDate and when the UpdateStatus is in the PENDING_UPDATE state. 
+    * Provides access to an Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
+    */
+  def authorizeVpcEndpointAccess(): Request[AuthorizeVpcEndpointAccessResponse, AWSError] = js.native
+  def authorizeVpcEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeVpcEndpointAccessResponse, Unit]): Request[AuthorizeVpcEndpointAccessResponse, AWSError] = js.native
+  /**
+    * Provides access to an Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
+    */
+  def authorizeVpcEndpointAccess(params: AuthorizeVpcEndpointAccessRequest): Request[AuthorizeVpcEndpointAccessResponse, AWSError] = js.native
+  def authorizeVpcEndpointAccess(
+    params: AuthorizeVpcEndpointAccessRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeVpcEndpointAccessResponse, Unit]
+  ): Request[AuthorizeVpcEndpointAccessResponse, AWSError] = js.native
+  
+  /**
+    * Cancels a scheduled service software update for an Amazon OpenSearch Service domain. You can only perform this operation before the AutomatedUpdateDate and when the domain's UpdateStatus is PENDING_UPDATE. For more information, see Service software updates in Amazon OpenSearch Service.
     */
   def cancelServiceSoftwareUpdate(): Request[CancelServiceSoftwareUpdateResponse, AWSError] = js.native
   def cancelServiceSoftwareUpdate(callback: js.Function2[/* err */ AWSError, /* data */ CancelServiceSoftwareUpdateResponse, Unit]): Request[CancelServiceSoftwareUpdateResponse, AWSError] = js.native
   /**
-    * Cancels a scheduled service software update for an Amazon OpenSearch Service domain. You can only perform this operation before the AutomatedUpdateDate and when the UpdateStatus is in the PENDING_UPDATE state. 
+    * Cancels a scheduled service software update for an Amazon OpenSearch Service domain. You can only perform this operation before the AutomatedUpdateDate and when the domain's UpdateStatus is PENDING_UPDATE. For more information, see Service software updates in Amazon OpenSearch Service.
     */
   def cancelServiceSoftwareUpdate(params: CancelServiceSoftwareUpdateRequest): Request[CancelServiceSoftwareUpdateResponse, AWSError] = js.native
   def cancelServiceSoftwareUpdate(
@@ -68,12 +82,12 @@ trait OpenSearch extends Service {
   var config_OpenSearch: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a new Amazon OpenSearch Service domain. For more information, see Creating and managing Amazon OpenSearch Service domains  in the Amazon OpenSearch Service Developer Guide. 
+    * Creates an Amazon OpenSearch Service domain. For more information, see Creating and managing Amazon OpenSearch Service domains.
     */
   def createDomain(): Request[CreateDomainResponse, AWSError] = js.native
   def createDomain(callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResponse, Unit]): Request[CreateDomainResponse, AWSError] = js.native
   /**
-    * Creates a new Amazon OpenSearch Service domain. For more information, see Creating and managing Amazon OpenSearch Service domains  in the Amazon OpenSearch Service Developer Guide. 
+    * Creates an Amazon OpenSearch Service domain. For more information, see Creating and managing Amazon OpenSearch Service domains.
     */
   def createDomain(params: CreateDomainRequest): Request[CreateDomainResponse, AWSError] = js.native
   def createDomain(
@@ -82,12 +96,12 @@ trait OpenSearch extends Service {
   ): Request[CreateDomainResponse, AWSError] = js.native
   
   /**
-    * Creates a new cross-cluster connection from a local OpenSearch domain to a remote OpenSearch domain.
+    * Creates a new cross-cluster search connection from a source Amazon OpenSearch Service domain to a destination domain. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def createOutboundConnection(): Request[CreateOutboundConnectionResponse, AWSError] = js.native
   def createOutboundConnection(callback: js.Function2[/* err */ AWSError, /* data */ CreateOutboundConnectionResponse, Unit]): Request[CreateOutboundConnectionResponse, AWSError] = js.native
   /**
-    * Creates a new cross-cluster connection from a local OpenSearch domain to a remote OpenSearch domain.
+    * Creates a new cross-cluster search connection from a source Amazon OpenSearch Service domain to a destination domain. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def createOutboundConnection(params: CreateOutboundConnectionRequest): Request[CreateOutboundConnectionResponse, AWSError] = js.native
   def createOutboundConnection(
@@ -96,12 +110,12 @@ trait OpenSearch extends Service {
   ): Request[CreateOutboundConnectionResponse, AWSError] = js.native
   
   /**
-    * Create a package for use with Amazon OpenSearch Service domains.
+    * Creates a package for use with Amazon OpenSearch Service domains. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def createPackage(): Request[CreatePackageResponse, AWSError] = js.native
   def createPackage(callback: js.Function2[/* err */ AWSError, /* data */ CreatePackageResponse, Unit]): Request[CreatePackageResponse, AWSError] = js.native
   /**
-    * Create a package for use with Amazon OpenSearch Service domains.
+    * Creates a package for use with Amazon OpenSearch Service domains. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def createPackage(params: CreatePackageRequest): Request[CreatePackageResponse, AWSError] = js.native
   def createPackage(
@@ -110,12 +124,26 @@ trait OpenSearch extends Service {
   ): Request[CreatePackageResponse, AWSError] = js.native
   
   /**
-    * Permanently deletes the specified domain and all of its data. Once a domain is deleted, it cannot be recovered. 
+    * Creates an Amazon OpenSearch Service-managed VPC endpoint.
+    */
+  def createVpcEndpoint(): Request[CreateVpcEndpointResponse, AWSError] = js.native
+  def createVpcEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointResponse, Unit]): Request[CreateVpcEndpointResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon OpenSearch Service-managed VPC endpoint.
+    */
+  def createVpcEndpoint(params: CreateVpcEndpointRequest): Request[CreateVpcEndpointResponse, AWSError] = js.native
+  def createVpcEndpoint(
+    params: CreateVpcEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointResponse, Unit]
+  ): Request[CreateVpcEndpointResponse, AWSError] = js.native
+  
+  /**
+    * Deletes an Amazon OpenSearch Service domain and all of its data. You can't recover a domain after you delete it.
     */
   def deleteDomain(): Request[DeleteDomainResponse, AWSError] = js.native
   def deleteDomain(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainResponse, Unit]): Request[DeleteDomainResponse, AWSError] = js.native
   /**
-    * Permanently deletes the specified domain and all of its data. Once a domain is deleted, it cannot be recovered. 
+    * Deletes an Amazon OpenSearch Service domain and all of its data. You can't recover a domain after you delete it.
     */
   def deleteDomain(params: DeleteDomainRequest): Request[DeleteDomainResponse, AWSError] = js.native
   def deleteDomain(
@@ -124,12 +152,12 @@ trait OpenSearch extends Service {
   ): Request[DeleteDomainResponse, AWSError] = js.native
   
   /**
-    * Allows the remote domain owner to delete an existing inbound cross-cluster connection.
+    * Allows the destination Amazon OpenSearch Service domain owner to delete an existing inbound cross-cluster search connection. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def deleteInboundConnection(): Request[DeleteInboundConnectionResponse, AWSError] = js.native
   def deleteInboundConnection(callback: js.Function2[/* err */ AWSError, /* data */ DeleteInboundConnectionResponse, Unit]): Request[DeleteInboundConnectionResponse, AWSError] = js.native
   /**
-    * Allows the remote domain owner to delete an existing inbound cross-cluster connection.
+    * Allows the destination Amazon OpenSearch Service domain owner to delete an existing inbound cross-cluster search connection. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def deleteInboundConnection(params: DeleteInboundConnectionRequest): Request[DeleteInboundConnectionResponse, AWSError] = js.native
   def deleteInboundConnection(
@@ -138,12 +166,12 @@ trait OpenSearch extends Service {
   ): Request[DeleteInboundConnectionResponse, AWSError] = js.native
   
   /**
-    * Allows the local domain owner to delete an existing outbound cross-cluster connection.
+    * Allows the source Amazon OpenSearch Service domain owner to delete an existing outbound cross-cluster search connection. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def deleteOutboundConnection(): Request[DeleteOutboundConnectionResponse, AWSError] = js.native
   def deleteOutboundConnection(callback: js.Function2[/* err */ AWSError, /* data */ DeleteOutboundConnectionResponse, Unit]): Request[DeleteOutboundConnectionResponse, AWSError] = js.native
   /**
-    * Allows the local domain owner to delete an existing outbound cross-cluster connection.
+    * Allows the source Amazon OpenSearch Service domain owner to delete an existing outbound cross-cluster search connection. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def deleteOutboundConnection(params: DeleteOutboundConnectionRequest): Request[DeleteOutboundConnectionResponse, AWSError] = js.native
   def deleteOutboundConnection(
@@ -152,12 +180,12 @@ trait OpenSearch extends Service {
   ): Request[DeleteOutboundConnectionResponse, AWSError] = js.native
   
   /**
-    * Deletes the package.
+    * Deletes an Amazon OpenSearch Service package. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def deletePackage(): Request[DeletePackageResponse, AWSError] = js.native
   def deletePackage(callback: js.Function2[/* err */ AWSError, /* data */ DeletePackageResponse, Unit]): Request[DeletePackageResponse, AWSError] = js.native
   /**
-    * Deletes the package.
+    * Deletes an Amazon OpenSearch Service package. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def deletePackage(params: DeletePackageRequest): Request[DeletePackageResponse, AWSError] = js.native
   def deletePackage(
@@ -166,12 +194,26 @@ trait OpenSearch extends Service {
   ): Request[DeletePackageResponse, AWSError] = js.native
   
   /**
-    * Returns domain configuration information about the specified domain, including the domain ID, domain endpoint, and domain ARN. 
+    * Deletes an Amazon OpenSearch Service-managed interface VPC endpoint.
+    */
+  def deleteVpcEndpoint(): Request[DeleteVpcEndpointResponse, AWSError] = js.native
+  def deleteVpcEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointResponse, Unit]): Request[DeleteVpcEndpointResponse, AWSError] = js.native
+  /**
+    * Deletes an Amazon OpenSearch Service-managed interface VPC endpoint.
+    */
+  def deleteVpcEndpoint(params: DeleteVpcEndpointRequest): Request[DeleteVpcEndpointResponse, AWSError] = js.native
+  def deleteVpcEndpoint(
+    params: DeleteVpcEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointResponse, Unit]
+  ): Request[DeleteVpcEndpointResponse, AWSError] = js.native
+  
+  /**
+    * Describes the domain configuration for the specified Amazon OpenSearch Service domain, including the domain ID, domain service endpoint, and domain ARN.
     */
   def describeDomain(): Request[DescribeDomainResponse, AWSError] = js.native
   def describeDomain(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainResponse, Unit]): Request[DescribeDomainResponse, AWSError] = js.native
   /**
-    * Returns domain configuration information about the specified domain, including the domain ID, domain endpoint, and domain ARN. 
+    * Describes the domain configuration for the specified Amazon OpenSearch Service domain, including the domain ID, domain service endpoint, and domain ARN.
     */
   def describeDomain(params: DescribeDomainRequest): Request[DescribeDomainResponse, AWSError] = js.native
   def describeDomain(
@@ -180,12 +222,12 @@ trait OpenSearch extends Service {
   ): Request[DescribeDomainResponse, AWSError] = js.native
   
   /**
-    * Provides scheduled Auto-Tune action details for the domain, such as Auto-Tune action type, description, severity, and scheduled date. 
+    * Returns the list of optimizations that Auto-Tune has made to an Amazon OpenSearch Service domain. For more information, see Auto-Tune for Amazon OpenSearch Service.
     */
   def describeDomainAutoTunes(): Request[DescribeDomainAutoTunesResponse, AWSError] = js.native
   def describeDomainAutoTunes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainAutoTunesResponse, Unit]): Request[DescribeDomainAutoTunesResponse, AWSError] = js.native
   /**
-    * Provides scheduled Auto-Tune action details for the domain, such as Auto-Tune action type, description, severity, and scheduled date. 
+    * Returns the list of optimizations that Auto-Tune has made to an Amazon OpenSearch Service domain. For more information, see Auto-Tune for Amazon OpenSearch Service.
     */
   def describeDomainAutoTunes(params: DescribeDomainAutoTunesRequest): Request[DescribeDomainAutoTunesResponse, AWSError] = js.native
   def describeDomainAutoTunes(
@@ -194,12 +236,12 @@ trait OpenSearch extends Service {
   ): Request[DescribeDomainAutoTunesResponse, AWSError] = js.native
   
   /**
-    * Returns information about the current blue/green deployment happening on a domain, including a change ID, status, and progress stages.
+    * Returns information about the current blue/green deployment happening on an Amazon OpenSearch Service domain. For more information, see Making configuration changes in Amazon OpenSearch Service.
     */
   def describeDomainChangeProgress(): Request[DescribeDomainChangeProgressResponse, AWSError] = js.native
   def describeDomainChangeProgress(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainChangeProgressResponse, Unit]): Request[DescribeDomainChangeProgressResponse, AWSError] = js.native
   /**
-    * Returns information about the current blue/green deployment happening on a domain, including a change ID, status, and progress stages.
+    * Returns information about the current blue/green deployment happening on an Amazon OpenSearch Service domain. For more information, see Making configuration changes in Amazon OpenSearch Service.
     */
   def describeDomainChangeProgress(params: DescribeDomainChangeProgressRequest): Request[DescribeDomainChangeProgressResponse, AWSError] = js.native
   def describeDomainChangeProgress(
@@ -208,12 +250,12 @@ trait OpenSearch extends Service {
   ): Request[DescribeDomainChangeProgressResponse, AWSError] = js.native
   
   /**
-    * Provides cluster configuration information about the specified domain, such as the state, creation date, update version, and update date for cluster options. 
+    * Returns the configuration of an Amazon OpenSearch Service domain.
     */
   def describeDomainConfig(): Request[DescribeDomainConfigResponse, AWSError] = js.native
   def describeDomainConfig(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainConfigResponse, Unit]): Request[DescribeDomainConfigResponse, AWSError] = js.native
   /**
-    * Provides cluster configuration information about the specified domain, such as the state, creation date, update version, and update date for cluster options. 
+    * Returns the configuration of an Amazon OpenSearch Service domain.
     */
   def describeDomainConfig(params: DescribeDomainConfigRequest): Request[DescribeDomainConfigResponse, AWSError] = js.native
   def describeDomainConfig(
@@ -222,12 +264,12 @@ trait OpenSearch extends Service {
   ): Request[DescribeDomainConfigResponse, AWSError] = js.native
   
   /**
-    * Returns domain configuration information about the specified domains, including the domain ID, domain endpoint, and domain ARN. 
+    * Returns domain configuration information about the specified Amazon OpenSearch Service domains.
     */
   def describeDomains(): Request[DescribeDomainsResponse, AWSError] = js.native
   def describeDomains(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainsResponse, Unit]): Request[DescribeDomainsResponse, AWSError] = js.native
   /**
-    * Returns domain configuration information about the specified domains, including the domain ID, domain endpoint, and domain ARN. 
+    * Returns domain configuration information about the specified Amazon OpenSearch Service domains.
     */
   def describeDomains(params: DescribeDomainsRequest): Request[DescribeDomainsResponse, AWSError] = js.native
   def describeDomains(
@@ -236,12 +278,12 @@ trait OpenSearch extends Service {
   ): Request[DescribeDomainsResponse, AWSError] = js.native
   
   /**
-    * Lists all the inbound cross-cluster connections for a remote domain.
+    * Lists all the inbound cross-cluster search connections for a destination (remote) Amazon OpenSearch Service domain. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def describeInboundConnections(): Request[DescribeInboundConnectionsResponse, AWSError] = js.native
   def describeInboundConnections(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInboundConnectionsResponse, Unit]): Request[DescribeInboundConnectionsResponse, AWSError] = js.native
   /**
-    * Lists all the inbound cross-cluster connections for a remote domain.
+    * Lists all the inbound cross-cluster search connections for a destination (remote) Amazon OpenSearch Service domain. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def describeInboundConnections(params: DescribeInboundConnectionsRequest): Request[DescribeInboundConnectionsResponse, AWSError] = js.native
   def describeInboundConnections(
@@ -250,12 +292,12 @@ trait OpenSearch extends Service {
   ): Request[DescribeInboundConnectionsResponse, AWSError] = js.native
   
   /**
-    *  Describe the limits for a given instance type and OpenSearch or Elasticsearch version. When modifying an existing domain, specify the  DomainName  to see which limits you can modify. 
+    * Describes the instance count, storage, and master node limits for a given OpenSearch or Elasticsearch version and instance type.
     */
   def describeInstanceTypeLimits(): Request[DescribeInstanceTypeLimitsResponse, AWSError] = js.native
   def describeInstanceTypeLimits(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInstanceTypeLimitsResponse, Unit]): Request[DescribeInstanceTypeLimitsResponse, AWSError] = js.native
   /**
-    *  Describe the limits for a given instance type and OpenSearch or Elasticsearch version. When modifying an existing domain, specify the  DomainName  to see which limits you can modify. 
+    * Describes the instance count, storage, and master node limits for a given OpenSearch or Elasticsearch version and instance type.
     */
   def describeInstanceTypeLimits(params: DescribeInstanceTypeLimitsRequest): Request[DescribeInstanceTypeLimitsResponse, AWSError] = js.native
   def describeInstanceTypeLimits(
@@ -264,12 +306,12 @@ trait OpenSearch extends Service {
   ): Request[DescribeInstanceTypeLimitsResponse, AWSError] = js.native
   
   /**
-    * Lists all the outbound cross-cluster connections for a local domain.
+    * Lists all the outbound cross-cluster connections for a local (source) Amazon OpenSearch Service domain. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def describeOutboundConnections(): Request[DescribeOutboundConnectionsResponse, AWSError] = js.native
   def describeOutboundConnections(callback: js.Function2[/* err */ AWSError, /* data */ DescribeOutboundConnectionsResponse, Unit]): Request[DescribeOutboundConnectionsResponse, AWSError] = js.native
   /**
-    * Lists all the outbound cross-cluster connections for a local domain.
+    * Lists all the outbound cross-cluster connections for a local (source) Amazon OpenSearch Service domain. For more information, see Cross-cluster search for Amazon OpenSearch Service.
     */
   def describeOutboundConnections(params: DescribeOutboundConnectionsRequest): Request[DescribeOutboundConnectionsResponse, AWSError] = js.native
   def describeOutboundConnections(
@@ -278,12 +320,12 @@ trait OpenSearch extends Service {
   ): Request[DescribeOutboundConnectionsResponse, AWSError] = js.native
   
   /**
-    * Describes all packages available to Amazon OpenSearch Service domains. Includes options for filtering, limiting the number of results, and pagination. 
+    * Describes all packages available to OpenSearch Service. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def describePackages(): Request[DescribePackagesResponse, AWSError] = js.native
   def describePackages(callback: js.Function2[/* err */ AWSError, /* data */ DescribePackagesResponse, Unit]): Request[DescribePackagesResponse, AWSError] = js.native
   /**
-    * Describes all packages available to Amazon OpenSearch Service domains. Includes options for filtering, limiting the number of results, and pagination. 
+    * Describes all packages available to OpenSearch Service. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def describePackages(params: DescribePackagesRequest): Request[DescribePackagesResponse, AWSError] = js.native
   def describePackages(
@@ -292,14 +334,14 @@ trait OpenSearch extends Service {
   ): Request[DescribePackagesResponse, AWSError] = js.native
   
   /**
-    * Lists available reserved OpenSearch instance offerings.
+    * Describes the available Amazon OpenSearch Service Reserved Instance offerings for a given Region. For more information, see Reserved Instances in Amazon OpenSearch Service.
     */
   def describeReservedInstanceOfferings(): Request[DescribeReservedInstanceOfferingsResponse, AWSError] = js.native
   def describeReservedInstanceOfferings(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstanceOfferingsResponse, Unit]
   ): Request[DescribeReservedInstanceOfferingsResponse, AWSError] = js.native
   /**
-    * Lists available reserved OpenSearch instance offerings.
+    * Describes the available Amazon OpenSearch Service Reserved Instance offerings for a given Region. For more information, see Reserved Instances in Amazon OpenSearch Service.
     */
   def describeReservedInstanceOfferings(params: DescribeReservedInstanceOfferingsRequest): Request[DescribeReservedInstanceOfferingsResponse, AWSError] = js.native
   def describeReservedInstanceOfferings(
@@ -308,12 +350,12 @@ trait OpenSearch extends Service {
   ): Request[DescribeReservedInstanceOfferingsResponse, AWSError] = js.native
   
   /**
-    * Returns information about reserved OpenSearch instances for this account.
+    * Describes the Amazon OpenSearch Service instances that you have reserved in a given Region. For more information, see Reserved Instances in Amazon OpenSearch Service.
     */
   def describeReservedInstances(): Request[DescribeReservedInstancesResponse, AWSError] = js.native
   def describeReservedInstances(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedInstancesResponse, Unit]): Request[DescribeReservedInstancesResponse, AWSError] = js.native
   /**
-    * Returns information about reserved OpenSearch instances for this account.
+    * Describes the Amazon OpenSearch Service instances that you have reserved in a given Region. For more information, see Reserved Instances in Amazon OpenSearch Service.
     */
   def describeReservedInstances(params: DescribeReservedInstancesRequest): Request[DescribeReservedInstancesResponse, AWSError] = js.native
   def describeReservedInstances(
@@ -322,12 +364,26 @@ trait OpenSearch extends Service {
   ): Request[DescribeReservedInstancesResponse, AWSError] = js.native
   
   /**
-    * Dissociates a package from the Amazon OpenSearch Service domain.
+    * Describes one or more Amazon OpenSearch Service-managed VPC endpoints.
+    */
+  def describeVpcEndpoints(): Request[DescribeVpcEndpointsResponse, AWSError] = js.native
+  def describeVpcEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointsResponse, Unit]): Request[DescribeVpcEndpointsResponse, AWSError] = js.native
+  /**
+    * Describes one or more Amazon OpenSearch Service-managed VPC endpoints.
+    */
+  def describeVpcEndpoints(params: DescribeVpcEndpointsRequest): Request[DescribeVpcEndpointsResponse, AWSError] = js.native
+  def describeVpcEndpoints(
+    params: DescribeVpcEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointsResponse, Unit]
+  ): Request[DescribeVpcEndpointsResponse, AWSError] = js.native
+  
+  /**
+    * Removes a package from the specified Amazon OpenSearch Service domain. The package can't be in use with any OpenSearch index for the dissociation to succeed. The package is still available in OpenSearch Service for association later. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def dissociatePackage(): Request[DissociatePackageResponse, AWSError] = js.native
   def dissociatePackage(callback: js.Function2[/* err */ AWSError, /* data */ DissociatePackageResponse, Unit]): Request[DissociatePackageResponse, AWSError] = js.native
   /**
-    * Dissociates a package from the Amazon OpenSearch Service domain.
+    * Removes a package from the specified Amazon OpenSearch Service domain. The package can't be in use with any OpenSearch index for the dissociation to succeed. The package is still available in OpenSearch Service for association later. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def dissociatePackage(params: DissociatePackageRequest): Request[DissociatePackageResponse, AWSError] = js.native
   def dissociatePackage(
@@ -336,12 +392,12 @@ trait OpenSearch extends Service {
   ): Request[DissociatePackageResponse, AWSError] = js.native
   
   /**
-    *  Returns a list of upgrade-compatible versions of OpenSearch/Elasticsearch. You can optionally pass a  DomainName  to get all upgrade-compatible versions of OpenSearch/Elasticsearch for that specific domain. 
+    * Returns a map of OpenSearch or Elasticsearch versions and the versions you can upgrade them to.
     */
   def getCompatibleVersions(): Request[GetCompatibleVersionsResponse, AWSError] = js.native
   def getCompatibleVersions(callback: js.Function2[/* err */ AWSError, /* data */ GetCompatibleVersionsResponse, Unit]): Request[GetCompatibleVersionsResponse, AWSError] = js.native
   /**
-    *  Returns a list of upgrade-compatible versions of OpenSearch/Elasticsearch. You can optionally pass a  DomainName  to get all upgrade-compatible versions of OpenSearch/Elasticsearch for that specific domain. 
+    * Returns a map of OpenSearch or Elasticsearch versions and the versions you can upgrade them to.
     */
   def getCompatibleVersions(params: GetCompatibleVersionsRequest): Request[GetCompatibleVersionsResponse, AWSError] = js.native
   def getCompatibleVersions(
@@ -350,12 +406,12 @@ trait OpenSearch extends Service {
   ): Request[GetCompatibleVersionsResponse, AWSError] = js.native
   
   /**
-    * Returns a list of package versions, along with their creation time and commit message.
+    * Returns a list of Amazon OpenSearch Service package versions, along with their creation time and commit message. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def getPackageVersionHistory(): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
   def getPackageVersionHistory(callback: js.Function2[/* err */ AWSError, /* data */ GetPackageVersionHistoryResponse, Unit]): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
   /**
-    * Returns a list of package versions, along with their creation time and commit message.
+    * Returns a list of Amazon OpenSearch Service package versions, along with their creation time and commit message. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def getPackageVersionHistory(params: GetPackageVersionHistoryRequest): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
   def getPackageVersionHistory(
@@ -364,12 +420,12 @@ trait OpenSearch extends Service {
   ): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
   
   /**
-    * Retrieves the complete history of the last 10 upgrades performed on the domain.
+    * Retrieves the complete history of the last 10 upgrades performed on an Amazon OpenSearch Service domain.
     */
   def getUpgradeHistory(): Request[GetUpgradeHistoryResponse, AWSError] = js.native
   def getUpgradeHistory(callback: js.Function2[/* err */ AWSError, /* data */ GetUpgradeHistoryResponse, Unit]): Request[GetUpgradeHistoryResponse, AWSError] = js.native
   /**
-    * Retrieves the complete history of the last 10 upgrades performed on the domain.
+    * Retrieves the complete history of the last 10 upgrades performed on an Amazon OpenSearch Service domain.
     */
   def getUpgradeHistory(params: GetUpgradeHistoryRequest): Request[GetUpgradeHistoryResponse, AWSError] = js.native
   def getUpgradeHistory(
@@ -378,12 +434,12 @@ trait OpenSearch extends Service {
   ): Request[GetUpgradeHistoryResponse, AWSError] = js.native
   
   /**
-    * Retrieves the latest status of the last upgrade or upgrade eligibility check performed on the domain. 
+    * Returns the most recent status of the last upgrade or upgrade eligibility check performed on an Amazon OpenSearch Service domain.
     */
   def getUpgradeStatus(): Request[GetUpgradeStatusResponse, AWSError] = js.native
   def getUpgradeStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetUpgradeStatusResponse, Unit]): Request[GetUpgradeStatusResponse, AWSError] = js.native
   /**
-    * Retrieves the latest status of the last upgrade or upgrade eligibility check performed on the domain. 
+    * Returns the most recent status of the last upgrade or upgrade eligibility check performed on an Amazon OpenSearch Service domain.
     */
   def getUpgradeStatus(params: GetUpgradeStatusRequest): Request[GetUpgradeStatusResponse, AWSError] = js.native
   def getUpgradeStatus(
@@ -392,12 +448,12 @@ trait OpenSearch extends Service {
   ): Request[GetUpgradeStatusResponse, AWSError] = js.native
   
   /**
-    * Returns the names of all domains owned by the current user's account.
+    * Returns the names of all Amazon OpenSearch Service domains owned by the current user in the active Region.
     */
   def listDomainNames(): Request[ListDomainNamesResponse, AWSError] = js.native
   def listDomainNames(callback: js.Function2[/* err */ AWSError, /* data */ ListDomainNamesResponse, Unit]): Request[ListDomainNamesResponse, AWSError] = js.native
   /**
-    * Returns the names of all domains owned by the current user's account.
+    * Returns the names of all Amazon OpenSearch Service domains owned by the current user in the active Region.
     */
   def listDomainNames(params: ListDomainNamesRequest): Request[ListDomainNamesResponse, AWSError] = js.native
   def listDomainNames(
@@ -406,12 +462,12 @@ trait OpenSearch extends Service {
   ): Request[ListDomainNamesResponse, AWSError] = js.native
   
   /**
-    * Lists all Amazon OpenSearch Service domains associated with the package.
+    * Lists all Amazon OpenSearch Service domains associated with a given package. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def listDomainsForPackage(): Request[ListDomainsForPackageResponse, AWSError] = js.native
   def listDomainsForPackage(callback: js.Function2[/* err */ AWSError, /* data */ ListDomainsForPackageResponse, Unit]): Request[ListDomainsForPackageResponse, AWSError] = js.native
   /**
-    * Lists all Amazon OpenSearch Service domains associated with the package.
+    * Lists all Amazon OpenSearch Service domains associated with a given package. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def listDomainsForPackage(params: ListDomainsForPackageRequest): Request[ListDomainsForPackageResponse, AWSError] = js.native
   def listDomainsForPackage(
@@ -420,12 +476,12 @@ trait OpenSearch extends Service {
   ): Request[ListDomainsForPackageResponse, AWSError] = js.native
   
   /**
-    * 
+    * Lists all instance types and available features for a given OpenSearch or Elasticsearch version.
     */
   def listInstanceTypeDetails(): Request[ListInstanceTypeDetailsResponse, AWSError] = js.native
   def listInstanceTypeDetails(callback: js.Function2[/* err */ AWSError, /* data */ ListInstanceTypeDetailsResponse, Unit]): Request[ListInstanceTypeDetailsResponse, AWSError] = js.native
   /**
-    * 
+    * Lists all instance types and available features for a given OpenSearch or Elasticsearch version.
     */
   def listInstanceTypeDetails(params: ListInstanceTypeDetailsRequest): Request[ListInstanceTypeDetailsResponse, AWSError] = js.native
   def listInstanceTypeDetails(
@@ -434,12 +490,12 @@ trait OpenSearch extends Service {
   ): Request[ListInstanceTypeDetailsResponse, AWSError] = js.native
   
   /**
-    * Lists all packages associated with the Amazon OpenSearch Service domain.
+    * Lists all packages associated with an Amazon OpenSearch Service domain. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def listPackagesForDomain(): Request[ListPackagesForDomainResponse, AWSError] = js.native
   def listPackagesForDomain(callback: js.Function2[/* err */ AWSError, /* data */ ListPackagesForDomainResponse, Unit]): Request[ListPackagesForDomainResponse, AWSError] = js.native
   /**
-    * Lists all packages associated with the Amazon OpenSearch Service domain.
+    * Lists all packages associated with an Amazon OpenSearch Service domain. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def listPackagesForDomain(params: ListPackagesForDomainRequest): Request[ListPackagesForDomainResponse, AWSError] = js.native
   def listPackagesForDomain(
@@ -448,12 +504,12 @@ trait OpenSearch extends Service {
   ): Request[ListPackagesForDomainResponse, AWSError] = js.native
   
   /**
-    * Returns all tags for the given domain.
+    * Returns all resource tags for an Amazon OpenSearch Service domain. For more information, see Tagging Amazon OpenSearch Service domains.
     */
   def listTags(): Request[ListTagsResponse, AWSError] = js.native
   def listTags(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsResponse, Unit]): Request[ListTagsResponse, AWSError] = js.native
   /**
-    * Returns all tags for the given domain.
+    * Returns all resource tags for an Amazon OpenSearch Service domain. For more information, see Tagging Amazon OpenSearch Service domains.
     */
   def listTags(params: ListTagsRequest): Request[ListTagsResponse, AWSError] = js.native
   def listTags(
@@ -462,12 +518,12 @@ trait OpenSearch extends Service {
   ): Request[ListTagsResponse, AWSError] = js.native
   
   /**
-    * List all supported versions of OpenSearch and Elasticsearch.
+    * Lists all versions of OpenSearch and Elasticsearch that Amazon OpenSearch Service supports.
     */
   def listVersions(): Request[ListVersionsResponse, AWSError] = js.native
   def listVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListVersionsResponse, Unit]): Request[ListVersionsResponse, AWSError] = js.native
   /**
-    * List all supported versions of OpenSearch and Elasticsearch.
+    * Lists all versions of OpenSearch and Elasticsearch that Amazon OpenSearch Service supports.
     */
   def listVersions(params: ListVersionsRequest): Request[ListVersionsResponse, AWSError] = js.native
   def listVersions(
@@ -476,14 +532,56 @@ trait OpenSearch extends Service {
   ): Request[ListVersionsResponse, AWSError] = js.native
   
   /**
-    * Allows you to purchase reserved OpenSearch instances.
+    * Retrieves information about each Amazon Web Services principal that is allowed to access a given Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
+    */
+  def listVpcEndpointAccess(): Request[ListVpcEndpointAccessResponse, AWSError] = js.native
+  def listVpcEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointAccessResponse, Unit]): Request[ListVpcEndpointAccessResponse, AWSError] = js.native
+  /**
+    * Retrieves information about each Amazon Web Services principal that is allowed to access a given Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
+    */
+  def listVpcEndpointAccess(params: ListVpcEndpointAccessRequest): Request[ListVpcEndpointAccessResponse, AWSError] = js.native
+  def listVpcEndpointAccess(
+    params: ListVpcEndpointAccessRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointAccessResponse, Unit]
+  ): Request[ListVpcEndpointAccessResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves all Amazon OpenSearch Service-managed VPC endpoints in the current Amazon Web Services account and Region.
+    */
+  def listVpcEndpoints(): Request[ListVpcEndpointsResponse, AWSError] = js.native
+  def listVpcEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointsResponse, Unit]): Request[ListVpcEndpointsResponse, AWSError] = js.native
+  /**
+    * Retrieves all Amazon OpenSearch Service-managed VPC endpoints in the current Amazon Web Services account and Region.
+    */
+  def listVpcEndpoints(params: ListVpcEndpointsRequest): Request[ListVpcEndpointsResponse, AWSError] = js.native
+  def listVpcEndpoints(
+    params: ListVpcEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointsResponse, Unit]
+  ): Request[ListVpcEndpointsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves all Amazon OpenSearch Service-managed VPC endpoints associated with a particular domain.
+    */
+  def listVpcEndpointsForDomain(): Request[ListVpcEndpointsForDomainResponse, AWSError] = js.native
+  def listVpcEndpointsForDomain(callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointsForDomainResponse, Unit]): Request[ListVpcEndpointsForDomainResponse, AWSError] = js.native
+  /**
+    * Retrieves all Amazon OpenSearch Service-managed VPC endpoints associated with a particular domain.
+    */
+  def listVpcEndpointsForDomain(params: ListVpcEndpointsForDomainRequest): Request[ListVpcEndpointsForDomainResponse, AWSError] = js.native
+  def listVpcEndpointsForDomain(
+    params: ListVpcEndpointsForDomainRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVpcEndpointsForDomainResponse, Unit]
+  ): Request[ListVpcEndpointsForDomainResponse, AWSError] = js.native
+  
+  /**
+    * Allows you to purchase Amazon OpenSearch Service Reserved Instances.
     */
   def purchaseReservedInstanceOffering(): Request[PurchaseReservedInstanceOfferingResponse, AWSError] = js.native
   def purchaseReservedInstanceOffering(
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedInstanceOfferingResponse, Unit]
   ): Request[PurchaseReservedInstanceOfferingResponse, AWSError] = js.native
   /**
-    * Allows you to purchase reserved OpenSearch instances.
+    * Allows you to purchase Amazon OpenSearch Service Reserved Instances.
     */
   def purchaseReservedInstanceOffering(params: PurchaseReservedInstanceOfferingRequest): Request[PurchaseReservedInstanceOfferingResponse, AWSError] = js.native
   def purchaseReservedInstanceOffering(
@@ -492,12 +590,12 @@ trait OpenSearch extends Service {
   ): Request[PurchaseReservedInstanceOfferingResponse, AWSError] = js.native
   
   /**
-    * Allows the remote domain owner to reject an inbound cross-cluster connection request.
+    * Allows the remote Amazon OpenSearch Service domain owner to reject an inbound cross-cluster connection request.
     */
   def rejectInboundConnection(): Request[RejectInboundConnectionResponse, AWSError] = js.native
   def rejectInboundConnection(callback: js.Function2[/* err */ AWSError, /* data */ RejectInboundConnectionResponse, Unit]): Request[RejectInboundConnectionResponse, AWSError] = js.native
   /**
-    * Allows the remote domain owner to reject an inbound cross-cluster connection request.
+    * Allows the remote Amazon OpenSearch Service domain owner to reject an inbound cross-cluster connection request.
     */
   def rejectInboundConnection(params: RejectInboundConnectionRequest): Request[RejectInboundConnectionResponse, AWSError] = js.native
   def rejectInboundConnection(
@@ -506,23 +604,37 @@ trait OpenSearch extends Service {
   ): Request[RejectInboundConnectionResponse, AWSError] = js.native
   
   /**
-    * Removes the specified set of tags from the given domain.
+    * Removes the specified set of tags from an Amazon OpenSearch Service domain. For more information, see  Tagging Amazon OpenSearch Service domains.
     */
   def removeTags(): Request[js.Object, AWSError] = js.native
   def removeTags(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes the specified set of tags from the given domain.
+    * Removes the specified set of tags from an Amazon OpenSearch Service domain. For more information, see  Tagging Amazon OpenSearch Service domains.
     */
   def removeTags(params: RemoveTagsRequest): Request[js.Object, AWSError] = js.native
   def removeTags(params: RemoveTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   
   /**
-    * Schedules a service software update for an Amazon OpenSearch Service domain.
+    * Revokes access to an Amazon OpenSearch Service domain that was provided through an interface VPC endpoint.
+    */
+  def revokeVpcEndpointAccess(): Request[RevokeVpcEndpointAccessResponse, AWSError] = js.native
+  def revokeVpcEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ RevokeVpcEndpointAccessResponse, Unit]): Request[RevokeVpcEndpointAccessResponse, AWSError] = js.native
+  /**
+    * Revokes access to an Amazon OpenSearch Service domain that was provided through an interface VPC endpoint.
+    */
+  def revokeVpcEndpointAccess(params: RevokeVpcEndpointAccessRequest): Request[RevokeVpcEndpointAccessResponse, AWSError] = js.native
+  def revokeVpcEndpointAccess(
+    params: RevokeVpcEndpointAccessRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RevokeVpcEndpointAccessResponse, Unit]
+  ): Request[RevokeVpcEndpointAccessResponse, AWSError] = js.native
+  
+  /**
+    * Schedules a service software update for an Amazon OpenSearch Service domain. For more information, see Service software updates in Amazon OpenSearch Service.
     */
   def startServiceSoftwareUpdate(): Request[StartServiceSoftwareUpdateResponse, AWSError] = js.native
   def startServiceSoftwareUpdate(callback: js.Function2[/* err */ AWSError, /* data */ StartServiceSoftwareUpdateResponse, Unit]): Request[StartServiceSoftwareUpdateResponse, AWSError] = js.native
   /**
-    * Schedules a service software update for an Amazon OpenSearch Service domain.
+    * Schedules a service software update for an Amazon OpenSearch Service domain. For more information, see Service software updates in Amazon OpenSearch Service.
     */
   def startServiceSoftwareUpdate(params: StartServiceSoftwareUpdateRequest): Request[StartServiceSoftwareUpdateResponse, AWSError] = js.native
   def startServiceSoftwareUpdate(
@@ -531,12 +643,12 @@ trait OpenSearch extends Service {
   ): Request[StartServiceSoftwareUpdateResponse, AWSError] = js.native
   
   /**
-    * Modifies the cluster configuration of the specified domain, such as setting the instance type and the number of instances. 
+    * Modifies the cluster configuration of the specified Amazon OpenSearch Service domain.
     */
   def updateDomainConfig(): Request[UpdateDomainConfigResponse, AWSError] = js.native
   def updateDomainConfig(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainConfigResponse, Unit]): Request[UpdateDomainConfigResponse, AWSError] = js.native
   /**
-    * Modifies the cluster configuration of the specified domain, such as setting the instance type and the number of instances. 
+    * Modifies the cluster configuration of the specified Amazon OpenSearch Service domain.
     */
   def updateDomainConfig(params: UpdateDomainConfigRequest): Request[UpdateDomainConfigResponse, AWSError] = js.native
   def updateDomainConfig(
@@ -545,12 +657,12 @@ trait OpenSearch extends Service {
   ): Request[UpdateDomainConfigResponse, AWSError] = js.native
   
   /**
-    * Updates a package for use with Amazon OpenSearch Service domains.
+    * Updates a package for use with Amazon OpenSearch Service domains. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def updatePackage(): Request[UpdatePackageResponse, AWSError] = js.native
   def updatePackage(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePackageResponse, Unit]): Request[UpdatePackageResponse, AWSError] = js.native
   /**
-    * Updates a package for use with Amazon OpenSearch Service domains.
+    * Updates a package for use with Amazon OpenSearch Service domains. For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def updatePackage(params: UpdatePackageRequest): Request[UpdatePackageResponse, AWSError] = js.native
   def updatePackage(
@@ -559,12 +671,26 @@ trait OpenSearch extends Service {
   ): Request[UpdatePackageResponse, AWSError] = js.native
   
   /**
-    * Allows you to either upgrade your domain or perform an upgrade eligibility check to a compatible version of OpenSearch or Elasticsearch. 
+    * Modifies an Amazon OpenSearch Service-managed interface VPC endpoint.
+    */
+  def updateVpcEndpoint(): Request[UpdateVpcEndpointResponse, AWSError] = js.native
+  def updateVpcEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ UpdateVpcEndpointResponse, Unit]): Request[UpdateVpcEndpointResponse, AWSError] = js.native
+  /**
+    * Modifies an Amazon OpenSearch Service-managed interface VPC endpoint.
+    */
+  def updateVpcEndpoint(params: UpdateVpcEndpointRequest): Request[UpdateVpcEndpointResponse, AWSError] = js.native
+  def updateVpcEndpoint(
+    params: UpdateVpcEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateVpcEndpointResponse, Unit]
+  ): Request[UpdateVpcEndpointResponse, AWSError] = js.native
+  
+  /**
+    * Allows you to either upgrade your Amazon OpenSearch Service domain or perform an upgrade eligibility check to a compatible version of OpenSearch or Elasticsearch.
     */
   def upgradeDomain(): Request[UpgradeDomainResponse, AWSError] = js.native
   def upgradeDomain(callback: js.Function2[/* err */ AWSError, /* data */ UpgradeDomainResponse, Unit]): Request[UpgradeDomainResponse, AWSError] = js.native
   /**
-    * Allows you to either upgrade your domain or perform an upgrade eligibility check to a compatible version of OpenSearch or Elasticsearch. 
+    * Allows you to either upgrade your Amazon OpenSearch Service domain or perform an upgrade eligibility check to a compatible version of OpenSearch or Elasticsearch.
     */
   def upgradeDomain(params: UpgradeDomainRequest): Request[UpgradeDomainResponse, AWSError] = js.native
   def upgradeDomain(

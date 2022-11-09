@@ -181,12 +181,12 @@ trait Billingconductor
   ): Request[DeletePricingPlanOutput, AWSError] = js.native
   
   /**
-    *  Deletes the pricing rule identified by the input Amazon Resource Name (ARN). 
+    *  Deletes the pricing rule that's identified by the input Amazon Resource Name (ARN). 
     */
   def deletePricingRule(): Request[DeletePricingRuleOutput, AWSError] = js.native
   def deletePricingRule(callback: js.Function2[/* err */ AWSError, /* data */ DeletePricingRuleOutput, Unit]): Request[DeletePricingRuleOutput, AWSError] = js.native
   /**
-    *  Deletes the pricing rule identified by the input Amazon Resource Name (ARN). 
+    *  Deletes the pricing rule that's identified by the input Amazon Resource Name (ARN). 
     */
   def deletePricingRule(params: DeletePricingRuleInput): Request[DeletePricingRuleOutput, AWSError] = js.native
   def deletePricingRule(
@@ -223,12 +223,12 @@ trait Billingconductor
   ): Request[DisassociatePricingRulesOutput, AWSError] = js.native
   
   /**
-    *   Amazon Web Services Billing Conductor is in beta release and is subject to change. Your use of Amazon Web Services Billing Conductor is subject to the Beta Service Participation terms of the Amazon Web Services Service Terms (Section 1.10).    This is a paginated call to list linked accounts that are linked to the payer account for the specified time period. If no information is provided, the current billing period is used. The response will optionally include the billing group associated with the linked account.
+    *  This is a paginated call to list linked accounts that are linked to the payer account for the specified time period. If no information is provided, the current billing period is used. The response will optionally include the billing group that's associated with the linked account.
     */
   def listAccountAssociations(): Request[ListAccountAssociationsOutput, AWSError] = js.native
   def listAccountAssociations(callback: js.Function2[/* err */ AWSError, /* data */ ListAccountAssociationsOutput, Unit]): Request[ListAccountAssociationsOutput, AWSError] = js.native
   /**
-    *   Amazon Web Services Billing Conductor is in beta release and is subject to change. Your use of Amazon Web Services Billing Conductor is subject to the Beta Service Participation terms of the Amazon Web Services Service Terms (Section 1.10).    This is a paginated call to list linked accounts that are linked to the payer account for the specified time period. If no information is provided, the current billing period is used. The response will optionally include the billing group associated with the linked account.
+    *  This is a paginated call to list linked accounts that are linked to the payer account for the specified time period. If no information is provided, the current billing period is used. The response will optionally include the billing group that's associated with the linked account.
     */
   def listAccountAssociations(params: ListAccountAssociationsInput): Request[ListAccountAssociationsOutput, AWSError] = js.native
   def listAccountAssociations(
@@ -265,6 +265,20 @@ trait Billingconductor
   ): Request[ListBillingGroupsOutput, AWSError] = js.native
   
   /**
+    * A paginated call to get a list of all custom line item versions.
+    */
+  def listCustomLineItemVersions(): Request[ListCustomLineItemVersionsOutput, AWSError] = js.native
+  def listCustomLineItemVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListCustomLineItemVersionsOutput, Unit]): Request[ListCustomLineItemVersionsOutput, AWSError] = js.native
+  /**
+    * A paginated call to get a list of all custom line item versions.
+    */
+  def listCustomLineItemVersions(params: ListCustomLineItemVersionsInput): Request[ListCustomLineItemVersionsOutput, AWSError] = js.native
+  def listCustomLineItemVersions(
+    params: ListCustomLineItemVersionsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCustomLineItemVersionsOutput, Unit]
+  ): Request[ListCustomLineItemVersionsOutput, AWSError] = js.native
+  
+  /**
     *  A paginated call to get a list of all custom line items (FFLIs) for the given billing period. If you don't provide a billing period, the current billing period is used. 
     */
   def listCustomLineItems(): Request[ListCustomLineItemsOutput, AWSError] = js.native
@@ -293,14 +307,14 @@ trait Billingconductor
   ): Request[ListPricingPlansOutput, AWSError] = js.native
   
   /**
-    *  A list of the pricing plans associated with a pricing rule. 
+    *  A list of the pricing plans that are associated with a pricing rule. 
     */
   def listPricingPlansAssociatedWithPricingRule(): Request[ListPricingPlansAssociatedWithPricingRuleOutput, AWSError] = js.native
   def listPricingPlansAssociatedWithPricingRule(
     callback: js.Function2[/* err */ AWSError, /* data */ ListPricingPlansAssociatedWithPricingRuleOutput, Unit]
   ): Request[ListPricingPlansAssociatedWithPricingRuleOutput, AWSError] = js.native
   /**
-    *  A list of the pricing plans associated with a pricing rule. 
+    *  A list of the pricing plans that are associated with a pricing rule. 
     */
   def listPricingPlansAssociatedWithPricingRule(params: ListPricingPlansAssociatedWithPricingRuleInput): Request[ListPricingPlansAssociatedWithPricingRuleOutput, AWSError] = js.native
   def listPricingPlansAssociatedWithPricingRule(
@@ -323,14 +337,14 @@ trait Billingconductor
   ): Request[ListPricingRulesOutput, AWSError] = js.native
   
   /**
-    *  Lists the pricing rules associated with a pricing plan. 
+    *  Lists the pricing rules that are associated with a pricing plan. 
     */
   def listPricingRulesAssociatedToPricingPlan(): Request[ListPricingRulesAssociatedToPricingPlanOutput, AWSError] = js.native
   def listPricingRulesAssociatedToPricingPlan(
     callback: js.Function2[/* err */ AWSError, /* data */ ListPricingRulesAssociatedToPricingPlanOutput, Unit]
   ): Request[ListPricingRulesAssociatedToPricingPlanOutput, AWSError] = js.native
   /**
-    *  Lists the pricing rules associated with a pricing plan. 
+    *  Lists the pricing rules that are associated with a pricing plan. 
     */
   def listPricingRulesAssociatedToPricingPlan(params: ListPricingRulesAssociatedToPricingPlanInput): Request[ListPricingRulesAssociatedToPricingPlanOutput, AWSError] = js.native
   def listPricingRulesAssociatedToPricingPlan(
@@ -339,14 +353,14 @@ trait Billingconductor
   ): Request[ListPricingRulesAssociatedToPricingPlanOutput, AWSError] = js.native
   
   /**
-    *  List the resources associated to a custom line item. 
+    *  List the resources that are associated to a custom line item. 
     */
   def listResourcesAssociatedToCustomLineItem(): Request[ListResourcesAssociatedToCustomLineItemOutput, AWSError] = js.native
   def listResourcesAssociatedToCustomLineItem(
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourcesAssociatedToCustomLineItemOutput, Unit]
   ): Request[ListResourcesAssociatedToCustomLineItemOutput, AWSError] = js.native
   /**
-    *  List the resources associated to a custom line item. 
+    *  List the resources that are associated to a custom line item. 
     */
   def listResourcesAssociatedToCustomLineItem(params: ListResourcesAssociatedToCustomLineItemInput): Request[ListResourcesAssociatedToCustomLineItemOutput, AWSError] = js.native
   def listResourcesAssociatedToCustomLineItem(

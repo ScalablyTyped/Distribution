@@ -9,7 +9,7 @@ trait AssociateResourceResponseElement extends StObject {
   /**
     *  The resource ARN that was associated to the custom line item. 
     */
-  var Arn: js.UndefOr[CustomLineItemArn] = js.undefined
+  var Arn: js.UndefOr[CustomLineItemAssociationElement] = js.undefined
   
   /**
     *  An AssociateResourceError that will populate if the resource association fails. 
@@ -25,7 +25,7 @@ object AssociateResourceResponseElement {
   
   extension [Self <: AssociateResourceResponseElement](x: Self) {
     
-    inline def setArn(value: CustomLineItemArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: CustomLineItemAssociationElement): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     

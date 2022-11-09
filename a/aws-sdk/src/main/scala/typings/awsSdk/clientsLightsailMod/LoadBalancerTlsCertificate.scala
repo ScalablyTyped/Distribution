@@ -57,7 +57,7 @@ trait LoadBalancerTlsCertificate extends StObject {
   var loadBalancerName: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The AWS Region and Availability Zone where you created your certificate.
+    * The Amazon Web Services Region and Availability Zone where you created your certificate.
     */
   var location: js.UndefOr[ResourceLocation] = js.undefined
   

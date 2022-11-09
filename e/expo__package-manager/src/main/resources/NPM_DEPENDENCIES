@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/package-manager" : "0.0.56"
+      "@expo/package-manager" : "0.0.57"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/package-manager" : "0.0.56"
+      "@expo/package-manager" : "0.0.57"
     }
   ],
   "compile-devDependencies" : [

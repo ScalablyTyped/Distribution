@@ -12,7 +12,7 @@ trait ResourceLocation extends StObject {
   var availabilityZone: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS Region name.
+    * The Amazon Web Services Region name.
     */
   var regionName: js.UndefOr[RegionName] = js.undefined
 }

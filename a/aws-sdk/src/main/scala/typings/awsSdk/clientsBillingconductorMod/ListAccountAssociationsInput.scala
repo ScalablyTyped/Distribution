@@ -12,12 +12,12 @@ trait ListAccountAssociationsInput extends StObject {
   var BillingPeriod: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.BillingPeriod] = js.undefined
   
   /**
-    * The filter on the account ID of the linked account, or any of the following:  MONITORED: linked accounts that are associated to billing groups.  UNMONITORED: linked accounts that are not associated to billing groups.  Billing Group Arn: linked accounts that are associated to the provided billing group Arn. 
+    * The filter on the account ID of the linked account, or any of the following:  MONITORED: linked accounts that are associated to billing groups.  UNMONITORED: linked accounts that aren't associated to billing groups.  Billing Group Arn: linked accounts that are associated to the provided billing group Arn. 
     */
   var Filters: js.UndefOr[ListAccountAssociationsFilter] = js.undefined
   
   /**
-    *  The pagination token used on subsequent calls to retrieve accounts. 
+    *  The pagination token that's used on subsequent calls to retrieve accounts. 
     */
   var NextToken: js.UndefOr[Token] = js.undefined
 }

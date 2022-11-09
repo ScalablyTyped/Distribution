@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-modules-autolinking" : "0.10.3"
+      "expo-modules-autolinking" : "1.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-modules-autolinking" : "0.10.3"
+      "expo-modules-autolinking" : "1.0.0"
     }
   ],
   "compile-devDependencies" : [

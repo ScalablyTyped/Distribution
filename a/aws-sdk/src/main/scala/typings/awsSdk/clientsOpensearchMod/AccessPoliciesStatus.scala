@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessPoliciesStatus extends StObject {
   
   /**
-    * The access policy configured for the domain. Access policies can be resource-based, IP-based, or IAM-based. See  Configuring access policiesfor more information. 
+    * The access policy configured for the domain. Access policies can be resource-based, IP-based, or IAM-based. For more information, see Configuring access policies.
     */
   var Options: PolicyDocument
   
   /**
-    * The status of the access policy for the domain. See OptionStatus for the status information that's included. 
+    * The status of the access policy for the domain.
     */
   var Status: OptionStatus
 }

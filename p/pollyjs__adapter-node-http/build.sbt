@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "pollyjs__adapter-node-http"
-version := "6.0.5-c48e0e"
+version := "6.0.5-5b912f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "loglevel" % "1.8.0-8a2d46",
+  "org.scalablytyped" %%% "loglevel" % "1.8.1-34f6e8",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
-  "org.scalablytyped" %%% "pollyjs__adapter" % "6.0.4-314f03",
-  "org.scalablytyped" %%% "pollyjs__core" % "6.0.5-316c91",
+  "org.scalablytyped" %%% "pollyjs__adapter" % "6.0.4-eef341",
+  "org.scalablytyped" %%% "pollyjs__core" % "6.0.5-70b7e0",
   "org.scalablytyped" %%% "pollyjs__persister" % "6.0.5-d7fa1f",
   "org.scalablytyped" %%% "set-cookie-parser" % "2.4-dt-20211223Z-1295a3",
   "org.scalablytyped" %%% "std" % "4.8-837c43")

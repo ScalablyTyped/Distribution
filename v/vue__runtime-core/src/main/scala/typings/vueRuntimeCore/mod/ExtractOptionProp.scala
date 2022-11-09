@@ -15,7 +15,7 @@ any, // C
 any, // M
 any, // Mixin
 any, // Extends
-any, string, {}> ? unknown extends P ? {} : P : {}
+any, string, {}, {}, string> ? unknown extends P ? {} : P : {}
   }}}
   */
 @js.native

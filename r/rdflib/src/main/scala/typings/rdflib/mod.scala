@@ -820,6 +820,10 @@ object mod {
   
   inline def isRDFlibObject(obj: Any): /* is rdflib.rdflib/lib/types.ObjectType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRDFlibObject")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rdflib.rdflib/lib/types.ObjectType */ Boolean]
   
+  inline def isRDFlibPredicate(obj: Any): /* is rdflib.rdflib/lib/tf-types.Quad_Predicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRDFlibPredicate")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rdflib.rdflib/lib/tf-types.Quad_Predicate */ Boolean]
+  
+  inline def isRDFlibSubject(obj: Any): /* is rdflib.rdflib/lib/types.ObjectType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRDFlibSubject")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rdflib.rdflib/lib/types.ObjectType */ Boolean]
+  
   inline def isStatement(obj: Any): /* is rdflib.rdflib/lib/statement.default<rdflib.rdflib/lib/types.SubjectType, rdflib.rdflib/lib/types.PredicateType, rdflib.rdflib/lib/types.ObjectType, rdflib.rdflib/lib/types.GraphType> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatement")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rdflib.rdflib/lib/statement.default<rdflib.rdflib/lib/types.SubjectType, rdflib.rdflib/lib/types.PredicateType, rdflib.rdflib/lib/types.ObjectType, rdflib.rdflib/lib/types.GraphType> */ Boolean]
   
   inline def isStore(obj: Any): /* is rdflib.rdflib/lib/store.default */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStore")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rdflib.rdflib/lib/store.default */ Boolean]

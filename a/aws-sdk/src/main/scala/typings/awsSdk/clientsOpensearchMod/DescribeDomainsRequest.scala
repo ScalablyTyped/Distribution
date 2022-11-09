@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDomainsRequest extends StObject {
   
   /**
-    * The domains for which you want information.
+    * Array of OpenSearch Service domain names that you want information about. If you don't specify any domains, OpenSearch Service returns information about all domains owned by the account.
     */
   var DomainNames: DomainNameList
 }

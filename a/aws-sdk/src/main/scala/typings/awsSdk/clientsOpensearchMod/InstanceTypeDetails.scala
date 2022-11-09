@@ -6,18 +6,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InstanceTypeDetails extends StObject {
   
+  /**
+    * Whether fine-grained access control is supported for the instance type.
+    */
   var AdvancedSecurityEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Whether logging is supported for the instance type.
+    */
   var AppLogsEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Whether Amazon Cognito access is supported for the instance type.
+    */
   var CognitoEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Whether encryption at rest and node-to-node encryption are supported for the instance type.
+    */
   var EncryptionEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Whether the instance acts as a data node, a dedicated master node, or an UltraWarm node.
+    */
   var InstanceRole: js.UndefOr[InstanceRoleList] = js.undefined
   
+  /**
+    * The instance type.
+    */
   var InstanceType: js.UndefOr[OpenSearchPartitionInstanceType] = js.undefined
   
+  /**
+    * Whether UltraWarm is supported for the instance type.
+    */
   var WarmEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object InstanceTypeDetails {

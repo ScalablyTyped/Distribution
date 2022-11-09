@@ -73,28 +73,36 @@ object buildFontDottypesMod {
   
   trait FontResource extends StObject {
     
+    var default: js.UndefOr[String] = js.undefined
+    
     /**
-      * _Web Only._ Sets the [`font-display`](#fontdisplay) property for a given typeface in the
-      * browser.
+      * Sets the [`font-display`](#fontdisplay) property for a given typeface in the browser.
+      * @platform web
       */
     var display: js.UndefOr[FontDisplay] = js.undefined
     
-    var uri: String | Double
+    var uri: js.UndefOr[String | Double] = js.undefined
   }
   object FontResource {
     
-    inline def apply(uri: String | Double): FontResource = {
-      val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    inline def apply(): FontResource = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FontResource]
     }
     
     extension [Self <: FontResource](x: Self) {
+      
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
       inline def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
       inline def setUri(value: String | Double): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
   

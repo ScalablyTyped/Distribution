@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/config-types" : "46.0.2"
+      "@expo/config-types" : "47.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/config-types" : "46.0.2"
+      "@expo/config-types" : "47.0.0"
     }
   ],
   "compile-devDependencies" : [

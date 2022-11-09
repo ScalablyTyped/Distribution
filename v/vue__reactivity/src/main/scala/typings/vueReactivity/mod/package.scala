@@ -47,7 +47,7 @@ inline def isRef[T](r: Ref_[T]): /* is @vue/reactivity.@vue/reactivity.Ref<T> */
 
 inline def isShallow(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShallow")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def markRaw[T /* <: js.Object */](value: T): T & RawSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("markRaw")(value.asInstanceOf[js.Any]).asInstanceOf[T & RawSymbol]
+inline def markRaw[T /* <: js.Object */](value: T): Raw[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("markRaw")(value.asInstanceOf[js.Any]).asInstanceOf[Raw[T]]
 
 inline def onScopeDispose(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onScopeDispose")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
@@ -255,6 +255,8 @@ type CustomRefFactory[T] = js.Function2[/* track */ js.Function0[Unit], /* trigg
 type IterableCollections = (Map[Any, Any]) | Set[Any]
 
 type Primitive = js.UndefOr[String | Double | Boolean | js.BigInt | js.Symbol | Null]
+
+type Raw[T] = T & RawSymbol
 
 type ShallowReactive_[T] = T & ShallowReactiveMarker
 

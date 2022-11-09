@@ -35,7 +35,7 @@ trait TransitionProps
   
   var name: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[/* "transition" */ String] = js.undefined
+  var `type`: js.UndefOr[AnimationTypes] = js.undefined
 }
 object TransitionProps {
   
@@ -94,7 +94,7 @@ object TransitionProps {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setType(value: /* "transition" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AnimationTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

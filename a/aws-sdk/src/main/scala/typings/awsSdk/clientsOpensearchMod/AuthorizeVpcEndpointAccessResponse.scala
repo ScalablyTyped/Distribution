@@ -1,0 +1,25 @@
+package typings.awsSdk.clientsOpensearchMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait AuthorizeVpcEndpointAccessResponse extends StObject {
+  
+  /**
+    * Information about the Amazon Web Services account or service that was provided access to the domain.
+    */
+  var AuthorizedPrincipal: typings.awsSdk.clientsOpensearchMod.AuthorizedPrincipal
+}
+object AuthorizeVpcEndpointAccessResponse {
+  
+  inline def apply(AuthorizedPrincipal: AuthorizedPrincipal): AuthorizeVpcEndpointAccessResponse = {
+    val __obj = js.Dynamic.literal(AuthorizedPrincipal = AuthorizedPrincipal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthorizeVpcEndpointAccessResponse]
+  }
+  
+  extension [Self <: AuthorizeVpcEndpointAccessResponse](x: Self) {
+    
+    inline def setAuthorizedPrincipal(value: AuthorizedPrincipal): Self = StObject.set(x, "AuthorizedPrincipal", value.asInstanceOf[js.Any])
+  }
+}

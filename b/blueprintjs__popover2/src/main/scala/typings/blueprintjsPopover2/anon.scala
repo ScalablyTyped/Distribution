@@ -60,6 +60,7 @@ import typings.blueprintjsPopover2.blueprintjsPopover2Strings.url
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.vertical
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.yes
 import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2InteractionKind
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.DefaultPopover2TargetHTMLProps
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2TargetProps
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperCustomModifer
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperModifierOverrides
@@ -143,7 +144,7 @@ object anon {
     }
   }
   
-  /* Inlined @blueprintjs/core.@blueprintjs/core.IOverlayLifecycleProps & std.Pick<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<react.react.HTMLProps<std.HTMLElement>>, 'popoverClassName' | 'transitionDuration' | 'popoverRef' | 'rootBoundary'> */
+  /* Inlined @blueprintjs/core.@blueprintjs/core.IOverlayLifecycleProps & std.Pick<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.DefaultPopover2TargetHTMLProps>, 'popoverClassName' | 'transitionDuration' | 'popoverRef' | 'rootBoundary'> */
   trait IOverlayLifecyclePropsPic extends StObject {
     
     /**
@@ -265,7 +266,7 @@ object anon {
     
     var overflowListProps: js.UndefOr[PartialOmitOverflowListPr] = js.undefined
     
-    var popoverProps: js.UndefOr[PartialOmitPopover2PropsH] = js.undefined
+    var popoverProps: js.UndefOr[PartialOmitPopover2PropsD] = js.undefined
   }
   object PartialBreadcrumbs2Props {
     
@@ -306,7 +307,7 @@ object anon {
       
       inline def setOverflowListPropsUndefined: Self = StObject.set(x, "overflowListProps", js.undefined)
       
-      inline def setPopoverProps(value: PartialOmitPopover2PropsH): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: PartialOmitPopover2PropsD): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
     }
@@ -1464,8 +1465,8 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<std.Omit<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<react.react.HTMLProps<std.HTMLElement>>, 'content' | 'defaultIsOpen' | 'disabled' | 'fill' | 'renderTarget' | 'targetTagName'>> */
-  trait PartialOmitPopover2PropsH extends StObject {
+  /* Inlined std.Partial<std.Omit<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.DefaultPopover2TargetHTMLProps>, 'content' | 'defaultIsOpen' | 'disabled' | 'fill' | 'renderTarget' | 'targetTagName'>> */
+  trait PartialOmitPopover2PropsD extends StObject {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
@@ -1549,14 +1550,14 @@ object anon {
     
     var usePortal: js.UndefOr[Boolean] = js.undefined
   }
-  object PartialOmitPopover2PropsH {
+  object PartialOmitPopover2PropsD {
     
-    inline def apply(): PartialOmitPopover2PropsH = {
+    inline def apply(): PartialOmitPopover2PropsD = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialOmitPopover2PropsH]
+      __obj.asInstanceOf[PartialOmitPopover2PropsD]
     }
     
-    extension [Self <: PartialOmitPopover2PropsH](x: Self) {
+    extension [Self <: PartialOmitPopover2PropsD](x: Self) {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -1722,8 +1723,8 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<std.Omit<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<react.react.HTMLProps<std.HTMLElement>>, 'content' | 'minimal'>> */
-  trait PartialOmitPopover2PropsHAutoFocus extends StObject {
+  /* Inlined std.Partial<std.Omit<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.DefaultPopover2TargetHTMLProps>, 'content' | 'minimal'>> */
+  trait PartialOmitPopover2PropsDAutoFocus extends StObject {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
@@ -1803,7 +1804,9 @@ object anon {
     
     var positioningStrategy: js.UndefOr[PositioningStrategy] = js.undefined
     
-    var renderTarget: js.UndefOr[js.Function1[/* props */ Popover2TargetProps & HTMLProps[HTMLElement], Element]] = js.undefined
+    var renderTarget: js.UndefOr[
+        js.Function1[/* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps, Element]
+      ] = js.undefined
     
     var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
     
@@ -1817,14 +1820,14 @@ object anon {
     
     var usePortal: js.UndefOr[Boolean] = js.undefined
   }
-  object PartialOmitPopover2PropsHAutoFocus {
+  object PartialOmitPopover2PropsDAutoFocus {
     
-    inline def apply(): PartialOmitPopover2PropsHAutoFocus = {
+    inline def apply(): PartialOmitPopover2PropsDAutoFocus = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialOmitPopover2PropsHAutoFocus]
+      __obj.asInstanceOf[PartialOmitPopover2PropsDAutoFocus]
     }
     
-    extension [Self <: PartialOmitPopover2PropsHAutoFocus](x: Self) {
+    extension [Self <: PartialOmitPopover2PropsDAutoFocus](x: Self) {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -1980,7 +1983,7 @@ object anon {
       
       inline def setPositioningStrategyUndefined: Self = StObject.set(x, "positioningStrategy", js.undefined)
       
-      inline def setRenderTarget(value: /* props */ Popover2TargetProps & HTMLProps[HTMLElement] => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
+      inline def setRenderTarget(value: /* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
       
       inline def setRenderTargetUndefined: Self = StObject.set(x, "renderTarget", js.undefined)
       
@@ -2090,8 +2093,8 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/tooltip2.Tooltip2Props<react.react.HTMLProps<std.HTMLElement>>> */
-  trait PartialTooltip2PropsHTMLP extends StObject {
+  /* Inlined std.Partial<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/tooltip2.Tooltip2Props<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.DefaultPopover2TargetHTMLProps>> */
+  trait PartialTooltip2PropsDefau extends StObject {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
@@ -2169,7 +2172,9 @@ object anon {
     
     var position: js.UndefOr[PopoverPosition] = js.undefined
     
-    var renderTarget: js.UndefOr[js.Function1[/* props */ Popover2TargetProps & HTMLProps[HTMLElement], Element]] = js.undefined
+    var renderTarget: js.UndefOr[
+        js.Function1[/* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps, Element]
+      ] = js.undefined
     
     var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
     
@@ -2181,14 +2186,14 @@ object anon {
     
     var usePortal: js.UndefOr[Boolean] = js.undefined
   }
-  object PartialTooltip2PropsHTMLP {
+  object PartialTooltip2PropsDefau {
     
-    inline def apply(): PartialTooltip2PropsHTMLP = {
+    inline def apply(): PartialTooltip2PropsDefau = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialTooltip2PropsHTMLP]
+      __obj.asInstanceOf[PartialTooltip2PropsDefau]
     }
     
-    extension [Self <: PartialTooltip2PropsHTMLP](x: Self) {
+    extension [Self <: PartialTooltip2PropsDefau](x: Self) {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -2340,7 +2345,7 @@ object anon {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setRenderTarget(value: /* props */ Popover2TargetProps & HTMLProps[HTMLElement] => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
+      inline def setRenderTarget(value: /* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
       
       inline def setRenderTargetUndefined: Self = StObject.set(x, "renderTarget", js.undefined)
       
@@ -2364,8 +2369,8 @@ object anon {
     }
   }
   
-  /* Inlined @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<react.react.HTMLProps<std.HTMLElement>> & {  children :react.react.ReactNode | undefined} */
-  trait Popover2PropsHTMLPropsHTM extends StObject {
+  /* Inlined @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.DefaultPopover2TargetHTMLProps> & {  children :react.react.ReactNode | undefined} */
+  trait Popover2PropsDefaultPopov extends StObject {
     
     /**
       * Whether the popover/tooltip should acquire application focus when it first opens.
@@ -2679,7 +2684,9 @@ object anon {
       *
       * Mutually exclusive with `children` and `targetTagName` props.
       */
-    var renderTarget: js.UndefOr[js.Function1[/* props */ Popover2TargetProps & HTMLProps[HTMLElement], Element]] = js.undefined
+    var renderTarget: js.UndefOr[
+        js.Function1[/* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps, Element]
+      ] = js.undefined
     
     /**
       * A root boundary element supplied to the "flip" and "preventOverflow" modifiers.
@@ -2752,14 +2759,14 @@ object anon {
       */
     var usePortal: js.UndefOr[Boolean] = js.undefined
   }
-  object Popover2PropsHTMLPropsHTM {
+  object Popover2PropsDefaultPopov {
     
-    inline def apply(): Popover2PropsHTMLPropsHTM = {
+    inline def apply(): Popover2PropsDefaultPopov = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Popover2PropsHTMLPropsHTM]
+      __obj.asInstanceOf[Popover2PropsDefaultPopov]
     }
     
-    extension [Self <: Popover2PropsHTMLPropsHTM](x: Self) {
+    extension [Self <: Popover2PropsDefaultPopov](x: Self) {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -2923,7 +2930,7 @@ object anon {
       
       inline def setPositioningStrategyUndefined: Self = StObject.set(x, "positioningStrategy", js.undefined)
       
-      inline def setRenderTarget(value: /* props */ Popover2TargetProps & HTMLProps[HTMLElement] => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
+      inline def setRenderTarget(value: /* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
       
       inline def setRenderTargetUndefined: Self = StObject.set(x, "renderTarget", js.undefined)
       

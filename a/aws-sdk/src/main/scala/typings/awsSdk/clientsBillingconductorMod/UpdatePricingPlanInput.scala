@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdatePricingPlanInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the pricing plan you're updating. 
+    * The Amazon Resource Name (ARN) of the pricing plan that you're updating. 
     */
   var Arn: PricingPlanArn
   
   /**
-    * The pricing plan description. 
+    * The description of the pricing plan. 
     */
   var Description: js.UndefOr[PricingPlanDescription] = js.undefined
   

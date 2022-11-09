@@ -1,7 +1,7 @@
 package typings.blueprintjsPopover2
 
 import typings.blueprintjsPopover2.anon.PartialBreadcrumbs2Props
-import typings.blueprintjsPopover2.anon.PartialTooltip2PropsHTMLP
+import typings.blueprintjsPopover2.anon.PartialTooltip2PropsDefau
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`click-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`hover-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.click
@@ -10,13 +10,12 @@ import typings.blueprintjsPopover2.libEsmBreadcrumbs2Mod.Breadcrumbs2Props
 import typings.blueprintjsPopover2.libEsmContextMenu2Mod.ContextMenu2Props
 import typings.blueprintjsPopover2.libEsmMenuItem2Mod.MenuItem2Props
 import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2Props
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.DefaultPopover2TargetHTMLProps
 import typings.blueprintjsPopover2.libEsmResizeSensor2Mod.ResizeSensor2Props
 import typings.blueprintjsPopover2.libEsmTooltip2Mod.Tooltip2Props
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.FC
-import typings.react.mod.HTMLProps
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -210,8 +209,8 @@ object mod {
     
     @JSImport("@blueprintjs/popover2", "Popover2.defaultProps")
     @js.native
-    def defaultProps: Popover2Props[HTMLProps[HTMLElement]] = js.native
-    inline def defaultProps_=(x: Popover2Props[HTMLProps[HTMLElement]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Popover2Props[DefaultPopover2TargetHTMLProps] = js.native
+    inline def defaultProps_=(x: Popover2Props[DefaultPopover2TargetHTMLProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/popover2", "Popover2.displayName")
     @js.native
@@ -304,8 +303,8 @@ object mod {
     
     @JSImport("@blueprintjs/popover2", "Tooltip2.defaultProps")
     @js.native
-    def defaultProps: PartialTooltip2PropsHTMLP = js.native
-    inline def defaultProps_=(x: PartialTooltip2PropsHTMLP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialTooltip2PropsDefau = js.native
+    inline def defaultProps_=(x: PartialTooltip2PropsDefau): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/popover2", "Tooltip2.displayName")
     @js.native

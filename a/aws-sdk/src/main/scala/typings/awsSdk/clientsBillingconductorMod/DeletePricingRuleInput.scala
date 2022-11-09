@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePricingRuleInput extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) of the pricing rule you are deleting. 
+    *  The Amazon Resource Name (ARN) of the pricing rule that you are deleting. 
     */
   var Arn: PricingRuleArn
 }

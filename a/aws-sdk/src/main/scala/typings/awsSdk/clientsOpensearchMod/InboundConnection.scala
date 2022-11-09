@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InboundConnection extends StObject {
   
   /**
-    * The connection ID for the inbound cross-cluster connection.
+    * The unique identifier of the connection.
     */
   var ConnectionId: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ConnectionId] = js.undefined
   
   /**
-    * The  InboundConnectionStatus  for the outbound connection. 
+    * The current status of the connection.
     */
   var ConnectionStatus: js.UndefOr[InboundConnectionStatus] = js.undefined
   
   /**
-    * The  AWSDomainInformation  for the local OpenSearch domain. 
+    * Information about the source (local) domain.
     */
   var LocalDomainInfo: js.UndefOr[DomainInformationContainer] = js.undefined
   
   /**
-    * The  AWSDomainInformation  for the remote OpenSearch domain. 
+    * Information about the destination (remote) domain.
     */
   var RemoteDomainInfo: js.UndefOr[DomainInformationContainer] = js.undefined
 }

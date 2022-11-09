@@ -66,7 +66,7 @@ trait TransitionGroupProps extends StObject {
   
   var tag: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[/* "transition" */ String] = js.undefined
+  var `type`: js.UndefOr[AnimationTypes] = js.undefined
 }
 object TransitionGroupProps {
   
@@ -237,7 +237,7 @@ object TransitionGroupProps {
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    inline def setType(value: /* "transition" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AnimationTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -7,57 +7,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClusterConfig extends StObject {
   
   /**
-    * Specifies the ColdStorageOptions config for a Domain
+    * Container for cold storage configuration options.
     */
   var ColdStorageOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ColdStorageOptions] = js.undefined
   
   /**
-    * Total number of dedicated master nodes, active and on standby, for the cluster.
+    * Number of dedicated master nodes in the cluster. This number must be greater than 1, otherwise you receive a validation exception.
     */
   var DedicatedMasterCount: js.UndefOr[IntegerClass] = js.undefined
   
   /**
-    * A boolean value to indicate whether a dedicated master node is enabled. See Dedicated master nodes in Amazon OpenSearch Service  for more information. 
+    * Indicates whether dedicated master nodes are enabled for the cluster.True if the cluster will use a dedicated master node.False if the cluster will not.
     */
   var DedicatedMasterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The instance type for a dedicated master node.
+    * OpenSearch Service instance type of the dedicated master nodes in the cluster.
     */
   var DedicatedMasterType: js.UndefOr[OpenSearchPartitionInstanceType] = js.undefined
   
   /**
-    * The number of instances in the specified domain cluster.
+    * Number of dedicated master nodes in the cluster. This number must be greater than 1, otherwise you receive a validation exception.
     */
   var InstanceCount: js.UndefOr[IntegerClass] = js.undefined
   
   /**
-    * The instance type for an OpenSearch cluster. UltraWarm instance types are not supported for data instances. 
+    * Instance type of data nodes in the cluster.
     */
   var InstanceType: js.UndefOr[OpenSearchPartitionInstanceType] = js.undefined
   
   /**
-    * The number of UltraWarm nodes in the cluster.
+    * The number of warm nodes in the cluster.
     */
   var WarmCount: js.UndefOr[IntegerClass] = js.undefined
   
   /**
-    * True to enable UltraWarm storage.
+    * Whether to enable warm storage for the cluster.
     */
   var WarmEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The instance type for the OpenSearch cluster's warm nodes.
+    * The instance type for the cluster's warm nodes.
     */
   var WarmType: js.UndefOr[OpenSearchWarmPartitionInstanceType] = js.undefined
   
   /**
-    * The zone awareness configuration for a domain when zone awareness is enabled.
+    * Container for zone awareness configuration options. Only required if ZoneAwarenessEnabled is true.
     */
   var ZoneAwarenessConfig: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ZoneAwarenessConfig] = js.undefined
   
   /**
-    * A boolean value to indicate whether zone awareness is enabled. See Configuring a multi-AZ domain in Amazon OpenSearch Service  for more information. 
+    * Indicates whether multiple Availability Zones are enabled. For more information, see Configuring a multi-AZ domain in Amazon OpenSearch Service.
     */
   var ZoneAwarenessEnabled: js.UndefOr[Boolean] = js.undefined
 }

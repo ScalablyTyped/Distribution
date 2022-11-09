@@ -4429,22 +4429,22 @@ trait Chainable[Subject] extends StObject {
   def clear(options: PartialClearOptions): Chainable[Subject] = js.native
   
   /**
-    * Clear a specific browser cookie.
+    * Clear a specific browser cookie for the current superdomain or for the domain specified.
     * Cypress automatically clears all cookies before each test to prevent state from being shared across tests. You shouldn't need to use this command unless you're using it to clear a specific cookie inside a single test.
     *
     * @see https://on.cypress.io/clearcookie
     */
   def clearCookie(name: String): Chainable[Null] = js.native
-  def clearCookie(name: String, options: PartialLoggableTimeoutabl): Chainable[Null] = js.native
+  def clearCookie(name: String, options: CookieOptions): Chainable[Null] = js.native
   
   /**
-    * Clear all browser cookies.
-    * Cypress automatically clears all cookies before each test to prevent state from being shared across tests. You shouldn't need to use this command unless you're using it to clear a specific cookie inside a single test.
+    * Clear all browser cookies for the current superdomain or for the domain specified.
+    * Cypress automatically clears all cookies before each test to prevent state from being shared across tests. You shouldn't need to use this command unless you're using it to clear all cookies or specific cookies inside a single test.
     *
     * @see https://on.cypress.io/clearcookies
     */
   def clearCookies(): Chainable[Null] = js.native
-  def clearCookies(options: PartialLoggableTimeoutabl): Chainable[Null] = js.native
+  def clearCookies(options: CookieOptions): Chainable[Null] = js.native
   
   /**
     * Clear data in local storage.
@@ -7556,20 +7556,20 @@ trait Chainable[Subject] extends StObject {
   def get[S](alias: String, options: PartialLoggableTimeoutablTimeout): Chainable[S] = js.native
   
   /**
-    * Get a browser cookie by its name.
+    * Get a browser cookie by its name for the current superdomain or for the domain specified.
     *
     * @see https://on.cypress.io/getcookie
     */
   def getCookie(name: String): Chainable[Cookie | Null] = js.native
-  def getCookie(name: String, options: PartialLoggableTimeoutabl): Chainable[Cookie | Null] = js.native
+  def getCookie(name: String, options: CookieOptions): Chainable[Cookie | Null] = js.native
   
   /**
-    * Get all of the browser cookies.
+    * Get all of the browser cookies for the current superdomain or for the domain specified.
     *
     * @see https://on.cypress.io/getcookies
     */
   def getCookies(): Chainable[js.Array[Cookie]] = js.native
-  def getCookies(options: PartialLoggableTimeoutabl): Chainable[js.Array[Cookie]] = js.native
+  def getCookies(options: CookieOptions): Chainable[js.Array[Cookie]] = js.native
   
   /**
     * Get one or more DOM elements by selector.
@@ -14533,14 +14533,10 @@ trait Chainable[Subject] extends StObject {
     *
     * @see https://on.cypress.io/session
     */
-  def session(id: String): Chainable[Null] = js.native
   def session(id: String, setup: js.Function0[Unit]): Chainable[Null] = js.native
   def session(id: String, setup: js.Function0[Unit], options: SessionOptions): Chainable[Null] = js.native
-  def session(id: String, setup: Unit, options: SessionOptions): Chainable[Null] = js.native
-  def session(id: js.Object): Chainable[Null] = js.native
   def session(id: js.Object, setup: js.Function0[Unit]): Chainable[Null] = js.native
   def session(id: js.Object, setup: js.Function0[Unit], options: SessionOptions): Chainable[Null] = js.native
-  def session(id: js.Object, setup: Unit, options: SessionOptions): Chainable[Null] = js.native
   
   /**
     * Set a browser cookie.

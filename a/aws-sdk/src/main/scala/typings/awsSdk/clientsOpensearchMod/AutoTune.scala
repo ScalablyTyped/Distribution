@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoTune extends StObject {
   
   /**
-    * Specifies details about the Auto-Tune action. See  Auto-Tune for Amazon OpenSearch Service  for more information. 
+    * Details about an Auto-Tune action.
     */
   var AutoTuneDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AutoTuneDetails] = js.undefined
   
   /**
-    * Specifies the Auto-Tune type. Valid value is SCHEDULED_ACTION.
+    * The type of Auto-Tune action.
     */
   var AutoTuneType: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AutoTuneType] = js.undefined
 }

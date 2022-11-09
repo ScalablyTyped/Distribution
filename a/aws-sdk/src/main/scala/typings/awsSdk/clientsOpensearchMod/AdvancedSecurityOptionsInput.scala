@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdvancedSecurityOptionsInput extends StObject {
   
   /**
-    * True if Anonymous auth is enabled. Anonymous auth can be enabled only when AdvancedSecurity is enabled on existing domains.
+    * True to enable a 30-day migration period during which administrators can create role mappings. Only necessary when enabling fine-grained access control on an existing domain.
     */
   var AnonymousAuthEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * True if advanced security is enabled.
+    * True to enable fine-grained access control.
     */
   var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * True if the internal user database is enabled.
+    * True to enable the internal user database.
     */
   var InternalUserDatabaseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Credentials for the master user: username and password, ARN, or both.
+    * Container for information about the master user.
     */
   var MasterUserOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.MasterUserOptions] = js.undefined
   
   /**
-    * The SAML application configuration for the domain.
+    * Container for information about the SAML configuration for OpenSearch Dashboards.
     */
   var SAMLOptions: js.UndefOr[SAMLOptionsInput] = js.undefined
 }

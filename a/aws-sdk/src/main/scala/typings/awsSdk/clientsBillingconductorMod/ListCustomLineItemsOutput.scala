@@ -12,7 +12,7 @@ trait ListCustomLineItemsOutput extends StObject {
   var CustomLineItems: js.UndefOr[CustomLineItemList] = js.undefined
   
   /**
-    *  The pagination token used on subsequent calls to get custom line items (FFLIs). 
+    *  The pagination token that's used on subsequent calls to get custom line items (FFLIs). 
     */
   var NextToken: js.UndefOr[Token] = js.undefined
 }

@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDomainsForPackageResponse extends StObject {
   
   /**
-    * List of DomainPackageDetails objects. 
+    * Information about all domains associated with a package.
     */
   var DomainPackageDetailsList: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainPackageDetailsList] = js.undefined
   
+  /**
+    * When nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page.
+    */
   var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListDomainsForPackageResponse {

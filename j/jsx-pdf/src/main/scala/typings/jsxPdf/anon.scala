@@ -163,6 +163,14 @@ object anon {
     
     var margin: js.UndefOr[Margins] = js.undefined
     
+    var marginBottom: js.UndefOr[Double] = js.undefined
+    
+    var marginLeft: js.UndefOr[Double] = js.undefined
+    
+    var marginRight: js.UndefOr[Double] = js.undefined
+    
+    var marginTop: js.UndefOr[Double] = js.undefined
+    
     var markerColor: js.UndefOr[String] = js.undefined
     
     var noWrap: js.UndefOr[Boolean] = js.undefined
@@ -324,6 +332,22 @@ object anon {
       
       inline def setMargin(value: Margins): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
@@ -440,6 +464,14 @@ object anon {
     var lineHeight: js.UndefOr[Double] = js.undefined
     
     var margin: js.UndefOr[Margins] = js.undefined
+    
+    var marginBottom: js.UndefOr[Double] = js.undefined
+    
+    var marginLeft: js.UndefOr[Double] = js.undefined
+    
+    var marginRight: js.UndefOr[Double] = js.undefined
+    
+    var marginTop: js.UndefOr[Double] = js.undefined
     
     var markerColor: js.UndefOr[String] = js.undefined
     
@@ -592,6 +624,22 @@ object anon {
       
       inline def setMargin(value: Margins): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
@@ -706,6 +754,14 @@ object anon {
     var lineHeight: js.UndefOr[Double] = js.undefined
     
     var margin: js.UndefOr[Margins] = js.undefined
+    
+    var marginBottom: js.UndefOr[Double] = js.undefined
+    
+    var marginLeft: js.UndefOr[Double] = js.undefined
+    
+    var marginRight: js.UndefOr[Double] = js.undefined
+    
+    var marginTop: js.UndefOr[Double] = js.undefined
     
     var markerColor: js.UndefOr[String] = js.undefined
     
@@ -846,6 +902,22 @@ object anon {
       
       inline def setMargin(value: Margins): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
@@ -950,6 +1022,14 @@ object anon {
     var lineHeight: js.UndefOr[Double] = js.undefined
     
     var margin: js.UndefOr[Margins] = js.undefined
+    
+    var marginBottom: js.UndefOr[Double] = js.undefined
+    
+    var marginLeft: js.UndefOr[Double] = js.undefined
+    
+    var marginRight: js.UndefOr[Double] = js.undefined
+    
+    var marginTop: js.UndefOr[Double] = js.undefined
     
     var markerColor: js.UndefOr[String] = js.undefined
     
@@ -1096,6 +1176,22 @@ object anon {
       
       inline def setMargin(value: Margins): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
@@ -1216,6 +1312,14 @@ object anon {
     var lineHeight: js.UndefOr[Double] = js.undefined
     
     var margin: js.UndefOr[Margins] = js.undefined
+    
+    var marginBottom: js.UndefOr[Double] = js.undefined
+    
+    var marginLeft: js.UndefOr[Double] = js.undefined
+    
+    var marginRight: js.UndefOr[Double] = js.undefined
+    
+    var marginTop: js.UndefOr[Double] = js.undefined
     
     var markerColor: js.UndefOr[String] = js.undefined
     
@@ -1354,6 +1458,22 @@ object anon {
       
       inline def setMargin(value: Margins): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
@@ -1468,6 +1588,14 @@ object anon {
     var lineHeight: js.UndefOr[Double] = js.undefined
     
     var margin: js.UndefOr[Margins] = js.undefined
+    
+    var marginBottom: js.UndefOr[Double] = js.undefined
+    
+    var marginLeft: js.UndefOr[Double] = js.undefined
+    
+    var marginRight: js.UndefOr[Double] = js.undefined
+    
+    var marginTop: js.UndefOr[Double] = js.undefined
     
     var markerColor: js.UndefOr[String] = js.undefined
     
@@ -1632,6 +1760,22 @@ object anon {
       
       inline def setMargin(value: Margins): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
@@ -1748,6 +1892,14 @@ object anon {
     var linkToPage: js.UndefOr[Double] = js.undefined
     
     var margin: js.UndefOr[Margins] = js.undefined
+    
+    var marginBottom: js.UndefOr[Double] = js.undefined
+    
+    var marginLeft: js.UndefOr[Double] = js.undefined
+    
+    var marginRight: js.UndefOr[Double] = js.undefined
+    
+    var marginTop: js.UndefOr[Double] = js.undefined
     
     var markerColor: js.UndefOr[String] = js.undefined
     
@@ -1898,6 +2050,22 @@ object anon {
       
       inline def setMargin(value: Margins): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       inline def setMarkerColor(value: String): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
@@ -2002,6 +2170,14 @@ object anon {
     var lineHeight: js.UndefOr[Double] = js.undefined
     
     var margin: js.UndefOr[Margins] = js.undefined
+    
+    var marginBottom: js.UndefOr[Double] = js.undefined
+    
+    var marginLeft: js.UndefOr[Double] = js.undefined
+    
+    var marginRight: js.UndefOr[Double] = js.undefined
+    
+    var marginTop: js.UndefOr[Double] = js.undefined
     
     var markerColor: js.UndefOr[String] = js.undefined
     
@@ -2141,6 +2317,22 @@ object anon {
       inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
       inline def setMargin(value: Margins): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       

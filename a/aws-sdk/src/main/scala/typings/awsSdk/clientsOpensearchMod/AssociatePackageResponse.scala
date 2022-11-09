@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociatePackageResponse extends StObject {
   
   /**
-    *  DomainPackageDetails 
+    * Information about a package that is associated with a domain.
     */
   var DomainPackageDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainPackageDetails] = js.undefined
 }

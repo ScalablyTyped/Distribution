@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__config-types
 
-Typings are for version 46.0.2
+Typings are for version 47.0.0
 
 ## Library description:
 Types for the Expo config object app.config.ts

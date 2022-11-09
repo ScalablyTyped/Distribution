@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionStatus extends StObject {
   
   /**
-    * The timestamp of when the entity was created.
+    * The timestamp when the entity was created.
     */
   var CreationDate: js.Date
   
   /**
-    * Indicates whether the domain is being deleted.
+    * Indicates whether the entity is being deleted.
     */
   var PendingDeletion: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Provides the OptionState for the domain. 
+    * The state of the entity.
     */
   var State: OptionState
   

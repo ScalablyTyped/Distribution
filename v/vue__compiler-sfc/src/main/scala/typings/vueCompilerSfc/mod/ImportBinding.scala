@@ -14,12 +14,21 @@ trait ImportBinding extends StObject {
   
   var isUsedInTemplate: Boolean
   
+  var local: String
+  
   var source: String
 }
 object ImportBinding {
   
-  inline def apply(imported: String, isFromSetup: Boolean, isType: Boolean, isUsedInTemplate: Boolean, source: String): ImportBinding = {
-    val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any], isFromSetup = isFromSetup.asInstanceOf[js.Any], isType = isType.asInstanceOf[js.Any], isUsedInTemplate = isUsedInTemplate.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+  inline def apply(
+    imported: String,
+    isFromSetup: Boolean,
+    isType: Boolean,
+    isUsedInTemplate: Boolean,
+    local: String,
+    source: String
+  ): ImportBinding = {
+    val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any], isFromSetup = isFromSetup.asInstanceOf[js.Any], isType = isType.asInstanceOf[js.Any], isUsedInTemplate = isUsedInTemplate.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportBinding]
   }
   
@@ -32,6 +41,8 @@ object ImportBinding {
     inline def setIsType(value: Boolean): Self = StObject.set(x, "isType", value.asInstanceOf[js.Any])
     
     inline def setIsUsedInTemplate(value: Boolean): Self = StObject.set(x, "isUsedInTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

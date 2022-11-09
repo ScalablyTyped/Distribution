@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VersionStatus extends StObject {
   
   /**
-    * The OpenSearch version for the specified OpenSearch domain.
+    * The OpenSearch or Elasticsearch version for the specified domain.
     */
   var Options: VersionString
   
   /**
-    * The status of the OpenSearch version options for the specified OpenSearch domain.
+    * The status of the version options for the specified domain.
     */
   var Status: OptionStatus
 }

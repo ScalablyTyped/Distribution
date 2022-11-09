@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@vue/reactivity" : "3.2.41"
+      "@vue/reactivity" : "3.2.42"
     }
   ],
   "test-dependencies" : [
     {
-      "@vue/reactivity" : "3.2.41"
+      "@vue/reactivity" : "3.2.42"
     }
   ],
   "compile-devDependencies" : [

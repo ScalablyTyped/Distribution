@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComponentOptions[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */]
   extends StObject
-     with ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, String, js.Object]
+     with ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, String, js.Object, js.Object, String]
      with ThisType[
       CreateComponentPublicInstance[
         js.Object, 
@@ -25,6 +25,7 @@ trait ComponentOptions[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <
         Props, 
         js.Object, 
         `false`, 
+        js.Object, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[js.Object], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[RawBindings], 

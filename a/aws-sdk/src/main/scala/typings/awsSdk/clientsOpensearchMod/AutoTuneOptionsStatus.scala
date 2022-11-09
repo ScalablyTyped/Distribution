@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoTuneOptionsStatus extends StObject {
   
   /**
-    * Specifies Auto-Tune options for the domain.
+    * Auto-Tune settings for updating a domain.
     */
   var Options: js.UndefOr[AutoTuneOptions] = js.undefined
   
   /**
-    * The status of the Auto-Tune options for the domain.
+    * The current status of Auto-Tune for a domain.
     */
   var Status: js.UndefOr[AutoTuneStatus] = js.undefined
 }

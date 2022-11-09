@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "expect"
-version := "29.3.0-822173"
+version := "29.3.1-91e738"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jest-diff" % "29.2.1-dc17ce",
-  "org.scalablytyped" %%% "jest-matcher-utils" % "29.2.2-05aea9",
-  "org.scalablytyped" %%% "jest__expect-utils" % "29.2.2-7822b7",
-  "org.scalablytyped" %%% "pretty-format" % "29.2.1-d73ee0",
+  "org.scalablytyped" %%% "jest-diff" % "29.3.1-602a83",
+  "org.scalablytyped" %%% "jest-matcher-utils" % "29.3.1-e79c0c",
+  "org.scalablytyped" %%% "jest__expect-utils" % "29.3.1-7d3f28",
+  "org.scalablytyped" %%% "pretty-format" % "29.3.1-ebbec4",
   "org.scalablytyped" %%% "std" % "4.8-837c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DryRunResults extends StObject {
   
   /**
-    *  Specifies the way in which Amazon OpenSearch Service applies the update. Possible responses are Blue/Green (the update requires a blue/green deployment), DynamicUpdate (no blue/green required), Undetermined (the domain is undergoing an update and can't predict the deployment type; try again after the update is complete), and None (the request doesn't include any configuration changes). 
+    *  Specifies the way in which OpenSearch Service will apply an update. Possible values are:    Blue/Green - The update requires a blue/green deployment.    DynamicUpdate - No blue/green deployment required    Undetermined - The domain is in the middle of an update and can't predict the deployment type. Try again after the update is complete.    None - The request doesn't include any configuration changes.  
     */
   var DeploymentType: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DeploymentType] = js.undefined
   
   /**
-    * Contains an optional message associated with the DryRunResults.
+    * A message corresponding to the deployment type.
     */
   var Message: js.UndefOr[typings.awsSdk.clientsOpensearchMod.Message] = js.undefined
 }

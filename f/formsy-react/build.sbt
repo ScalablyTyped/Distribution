@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "formsy-react"
-version := "2.2.7-34df58"
+version := "2.3.0-f49679"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

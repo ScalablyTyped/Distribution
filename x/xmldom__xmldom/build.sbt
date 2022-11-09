@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xmldom__xmldom"
-version := "0.8.3-c13454"
+version := "0.8.6-ccb040"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

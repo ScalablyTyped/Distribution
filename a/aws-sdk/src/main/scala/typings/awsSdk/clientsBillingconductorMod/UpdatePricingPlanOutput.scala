@@ -17,7 +17,7 @@ trait UpdatePricingPlanOutput extends StObject {
   var Description: js.UndefOr[PricingPlanDescription] = js.undefined
   
   /**
-    *  The most recent time the pricing plan was modified. 
+    *  The most recent time when the pricing plan was modified. 
     */
   var LastModifiedTime: js.UndefOr[Instant] = js.undefined
   
@@ -27,7 +27,7 @@ trait UpdatePricingPlanOutput extends StObject {
   var Name: js.UndefOr[PricingPlanName] = js.undefined
   
   /**
-    *  The pricing rules count currently associated with this pricing plan list. 
+    *  The pricing rules count that's currently associated with this pricing plan list. 
     */
   var Size: js.UndefOr[NumberOfAssociatedPricingRules] = js.undefined
 }

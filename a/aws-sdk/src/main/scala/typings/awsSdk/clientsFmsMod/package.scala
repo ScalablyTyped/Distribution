@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AWSAccountId = String
 
+type AWSAccountIdList = js.Array[AWSAccountId]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.READY
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -25,6 +27,8 @@ type AppsList = js.Array[App]
 type AppsListsData = js.Array[AppsListDataSummary]
 
 type AwsEc2NetworkInterfaceViolations = js.Array[AwsEc2NetworkInterfaceViolation]
+
+type Base62Id = String
 
 type BasicInteger = Double
 
@@ -58,6 +62,8 @@ type CustomerPolicyScopeMap = StringDictionary[CustomerPolicyScopeIdList]
 */
 type DependentServiceName = _DependentServiceName | String
 
+type Description = String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IPV4
   - typings.awsSdk.awsSdkStrings.IPV6
@@ -68,6 +74,8 @@ type DestinationType = _DestinationType | String
 
 type DetailedInfo = String
 
+type DiscoveredResourceList = js.Array[DiscoveredResource]
+
 type DnsRuleGroupPriorities = js.Array[DnsRuleGroupPriority]
 
 type DnsRuleGroupPriority = Double
@@ -75,6 +83,19 @@ type DnsRuleGroupPriority = Double
 type EvaluationResults = js.Array[EvaluationResult]
 
 type ExpectedRoutes = js.Array[ExpectedRoute]
+
+type FailedItemList = js.Array[FailedItem]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NOT_VALID_ARN
+  - typings.awsSdk.awsSdkStrings.NOT_VALID_PARTITION
+  - typings.awsSdk.awsSdkStrings.NOT_VALID_REGION
+  - typings.awsSdk.awsSdkStrings.NOT_VALID_SERVICE
+  - typings.awsSdk.awsSdkStrings.NOT_VALID_RESOURCE_TYPE
+  - typings.awsSdk.awsSdkStrings.NOT_VALID_ACCOUNT_ID
+  - java.lang.String
+*/
+type FailedItemReason = _FailedItemReason | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CENTRALIZED
@@ -88,6 +109,10 @@ type FirewallPolicyId = String
 type FirewallPolicyName = String
 
 type IPPortNumber = Double
+
+type Identifier = String
+
+type IdentifierList = js.Array[Identifier]
 
 type IssueInfoMap = StringDictionary[DetailedInfo]
 
@@ -108,6 +133,8 @@ type ManagedServiceData = String
 type MarketplaceSubscriptionOnboardingStatus = _MarketplaceSubscriptionOnboardingStatus | String
 
 type MemberAccounts = js.Array[AWSAccountId]
+
+type Name = String
 
 type NetworkFirewallAction = String
 
@@ -173,11 +200,19 @@ type ResourceArn = String
 
 type ResourceCount = Double
 
+type ResourceDescription = String
+
 type ResourceId = String
 
 type ResourceIdList = js.Array[ResourceId]
 
+type ResourceList = js.Array[Resource]
+
 type ResourceName = String
+
+type ResourceSetIds = js.Array[Base62Id]
+
+type ResourceSetSummaryList = js.Array[ResourceSetSummary]
 
 type ResourceTagKey = String
 
@@ -212,6 +247,7 @@ type SecurityGroupRemediationActions = js.Array[SecurityGroupRemediationAction]
   - typings.awsSdk.awsSdkStrings.NETWORK_FIREWALL
   - typings.awsSdk.awsSdkStrings.DNS_FIREWALL
   - typings.awsSdk.awsSdkStrings.THIRD_PARTY_FIREWALL
+  - typings.awsSdk.awsSdkStrings.IMPORT_NETWORK_FIREWALL
   - java.lang.String
 */
 type SecurityServiceType = _SecurityServiceType | String

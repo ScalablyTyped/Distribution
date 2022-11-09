@@ -96,8 +96,6 @@ object mod {
   
   inline def isModelListener(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModelListener")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isNoUnitNumericStyleProp(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoUnitNumericStyleProp")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
   inline def isObject(`val`: Any): /* is std.Record<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Record<any, any> */ Boolean]
   
   inline def isOn(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOn")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -189,7 +187,7 @@ object mod {
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
     * This translation is imprecise and ignores the effect of the type mapping. 
     * TS definition: {{{
-    {[ P in string & keyof T ]: T[P]}
+    {[ P in keyof T & std.Required<T> ]: T[P]}
     }}}
     */
   type LooseRequired[T] = T

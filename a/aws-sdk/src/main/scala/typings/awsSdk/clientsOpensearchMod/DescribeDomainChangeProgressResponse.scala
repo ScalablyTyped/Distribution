@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDomainChangeProgressResponse extends StObject {
   
   /**
-    * Progress information for the configuration change that is requested in the DescribeDomainChangeProgress request. 
+    * Container for information about the stages of a configuration change happening on a domain.
     */
   var ChangeProgressStatus: js.UndefOr[ChangeProgressStatusDetails] = js.undefined
 }

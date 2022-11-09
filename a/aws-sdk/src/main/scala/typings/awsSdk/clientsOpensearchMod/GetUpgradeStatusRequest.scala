@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetUpgradeStatusRequest extends StObject {
   
+  /**
+    * The domain of the domain to get upgrade status information for.
+    */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
 }
 object GetUpgradeStatusRequest {

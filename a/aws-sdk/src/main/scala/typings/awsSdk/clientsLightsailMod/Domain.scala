@@ -32,6 +32,11 @@ trait Domain extends StObject {
   var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
+    * An object that describes the state of the Route 53 domain delegation to a Lightsail DNS zone.
+    */
+  var registeredDomainDelegationInfo: js.UndefOr[RegisteredDomainDelegationInfo] = js.undefined
+  
+  /**
     * The resource type. 
     */
   var resourceType: js.UndefOr[ResourceType] = js.undefined
@@ -76,6 +81,10 @@ object Domain {
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRegisteredDomainDelegationInfo(value: RegisteredDomainDelegationInfo): Self = StObject.set(x, "registeredDomainDelegationInfo", value.asInstanceOf[js.Any])
+    
+    inline def setRegisteredDomainDelegationInfoUndefined: Self = StObject.set(x, "registeredDomainDelegationInfo", js.undefined)
     
     inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

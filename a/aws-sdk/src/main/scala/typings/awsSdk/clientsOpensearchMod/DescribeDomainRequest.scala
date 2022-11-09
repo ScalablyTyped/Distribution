@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDomainRequest extends StObject {
   
   /**
-    * The name of the domain for which you want information.
+    * The name of the domain that you want information about.
     */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
 }

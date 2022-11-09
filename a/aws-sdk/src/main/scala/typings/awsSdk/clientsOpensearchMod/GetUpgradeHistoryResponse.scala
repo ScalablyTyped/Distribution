@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUpgradeHistoryResponse extends StObject {
   
   /**
-    * Pagination token that needs to be supplied to the next call to get the next page of results.
+    * When nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    *  A list of  UpgradeHistory  objects corresponding to each upgrade or upgrade eligibility check performed on a domain returned as part of the  GetUpgradeHistoryResponse  object. 
+    * A list of objects corresponding to each upgrade or upgrade eligibility check performed on a domain.
     */
   var UpgradeHistories: js.UndefOr[UpgradeHistoryList] = js.undefined
 }

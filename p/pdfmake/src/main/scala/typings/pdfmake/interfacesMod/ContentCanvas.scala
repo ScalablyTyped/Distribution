@@ -178,10 +178,45 @@ trait ContentCanvas
   /**
     * Margins to apply.
     *
+    * Overrides the single-side `marginXXX` properties, unless this value is inherited
+    * from a style and they are set directly on the content object.
+    *
     * Ignored for content within an inline text array
     * (`{ text: [{ ... }] }`).
     */
   var margin: js.UndefOr[Margins] = js.undefined
+  
+  /**
+    * Margin in `pt` to apply below the content.
+    *
+    * If {@link margin} is set, this value is ignored, unless the margin was inherited
+    * from a style and the value is set directly on the content object.
+    */
+  var marginBottom: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Margin in `pt` to apply to the left of the content.
+    *
+    * If {@link margin} is set, this value is ignored, unless the margin was inherited
+    * from a style and the value is set directly on the content object.
+    */
+  var marginLeft: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Margin in `pt` to apply to the right of the content.
+    *
+    * If {@link margin} is set, this value is ignored, unless the margin was inherited
+    * from a style and the value is set directly on the content object.
+    */
+  var marginRight: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Margin in `pt` to apply above the content.
+    *
+    * If {@link margin} is set, this value is ignored, unless the margin was inherited
+    * from a style and the value is set directly on the content object.
+    */
+  var marginTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Color of list markers (i.e. bullet points or numbers).
@@ -388,6 +423,22 @@ object ContentCanvas {
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     inline def setMargin(value: Margins): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    
+    inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+    
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    
+    inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    
+    inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+    
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     

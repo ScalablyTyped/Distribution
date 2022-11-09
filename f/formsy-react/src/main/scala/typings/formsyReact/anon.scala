@@ -73,7 +73,6 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
-import typings.react.mod.FormHTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -1131,7 +1130,7 @@ object anon {
       inline def setOnInvalid(value: () => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction0(value))
       
       inline def setOnInvalidSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[HTMLFormElement, Event]) => Unit
       ): Self = StObject.set(x, "onInvalidSubmit", js.Any.fromFunction4(value))
       
       inline def setOnInvalidSubmitUndefined: Self = StObject.set(x, "onInvalidSubmit", js.undefined)
@@ -1279,7 +1278,7 @@ object anon {
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
       inline def setOnSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[HTMLFormElement, Event]) => Unit
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction4(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
@@ -1315,7 +1314,7 @@ object anon {
       inline def setOnValid(value: () => Unit): Self = StObject.set(x, "onValid", js.Any.fromFunction0(value))
       
       inline def setOnValidSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[HTMLFormElement, Event]) => Unit
       ): Self = StObject.set(x, "onValidSubmit", js.Any.fromFunction4(value))
       
       inline def setOnValidSubmitUndefined: Self = StObject.set(x, "onValidSubmit", js.undefined)

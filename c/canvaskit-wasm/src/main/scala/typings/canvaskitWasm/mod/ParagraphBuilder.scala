@@ -86,24 +86,44 @@ trait ParagraphBuilder
     * paint the text to an Canvas.
     * @param bidiRegions is an array of unsigned integers that should be
     * treated as triples (starting index, ending index, direction).
-    * Direction == 0 means left-to-right, direction == 1 is right-to-left.
+    * Direction == 1 means left-to-right, direction == 0 is right-to-left. It's
+    * recommended to use `CanvasKit.TextDirection.RTL.value` or
+    * `CanvasKit.TextDirection.LTR.value` instead of hardcoding 0 or 1.
+    *
+    * The indices are expected to be relative to the UTF-16 representation of
+    * the text.
     * @param words is an array of word edges (starting or ending). You can
     * pass 2 elements (0 as a start of the entire text and text.size as the
     * end). This information only needed for a specific API method getWords.
+    *
+    * The indices are expected to be relative to the UTF-16 representation of
+    * the text.
+    *
+    * The `Intl.Segmenter` API can be used as a source for this data.
+    *
     * @param graphemes is an array of indexes in the input text that point
     * to the start of each grapheme.
-    * @param softLineBreaks is an array of indexes in the input text that
-    * point to the places of possible line breaking if needed. It should
-    * include 0 as the first element.
-    * #param hardLineBreaks is an array of indexes in the input text that
-    * point to the places of mandatory line breaking.
+    *
+    * The indices are expected to be relative to the UTF-16 representation of
+    * the text.
+    *
+    * The `Intl.Segmenter` API can be used as a source for this data.
+    *
+    * @param lineBreaks is an array of unsigned integers that should be
+    * treated as pairs (index, break type) that point to the places of possible
+    * line breaking if needed. It should include 0 as the first element.
+    * Break type == 0 means soft break, break type == 1 is a hard break.
+    *
+    * The indices are expected to be relative to the UTF-16 representation of
+    * the text.
+    *
+    * Chrome's `v8BreakIterator` API can be used as a source for this data.
     */
   def buildWithClientInfo(
     bidiRegions: js.UndefOr[InputBidiRegions | Null],
     words: js.UndefOr[InputWords | Null],
     graphemes: js.UndefOr[InputGraphemes | Null],
-    softLineBreaks: js.UndefOr[InputLineBreaks | Null],
-    hardLineBreaks: js.UndefOr[InputLineBreaks | Null]
+    lineBreaks: js.UndefOr[InputLineBreaks | Null]
   ): Paragraph = js.native
   
   /**

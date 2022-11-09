@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePricingPlanInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the pricing plan you're deleting. 
+    * The Amazon Resource Name (ARN) of the pricing plan that you're deleting. 
     */
   var Arn: PricingPlanArn
 }

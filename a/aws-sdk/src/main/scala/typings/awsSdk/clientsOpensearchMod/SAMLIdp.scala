@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SAMLIdp extends StObject {
   
   /**
-    * The unique entity ID of the application in SAML identity provider.
+    * The unique entity ID of the application in the SAML identity provider.
     */
   var EntityId: SAMLEntityId
   
   /**
-    * The metadata of the SAML application in XML format.
+    * The metadata of the SAML application, in XML format.
     */
   var MetadataContent: SAMLMetadata
 }

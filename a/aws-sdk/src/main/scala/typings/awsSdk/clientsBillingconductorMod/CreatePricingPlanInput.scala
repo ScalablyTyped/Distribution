@@ -12,12 +12,12 @@ trait CreatePricingPlanInput extends StObject {
   var ClientToken: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.ClientToken] = js.undefined
   
   /**
-    * The pricing plan description. 
+    * The description of the pricing plan. 
     */
   var Description: js.UndefOr[PricingPlanDescription] = js.undefined
   
   /**
-    * The pricing plan name. The names must be unique to each pricing plan. 
+    * The name of the pricing plan. The names must be unique to each pricing plan. 
     */
   var Name: PricingPlanName
   

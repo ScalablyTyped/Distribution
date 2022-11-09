@@ -2,9 +2,10 @@ package typings.blueprintjsSelect
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.mod.AbstractPureComponent2
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.DefaultPopover2TargetHTMLProps
 import typings.blueprintjsPopover2.mod.Popover2
 import typings.blueprintjsSelect.anon.PartialOmitInputGroupPropAbout
-import typings.blueprintjsSelect.anon.PartialOmitPopover2PropsH
+import typings.blueprintjsSelect.anon.PartialOmitPopover2PropsD
 import typings.blueprintjsSelect.anon.PartialSuggest2Propsany
 import typings.blueprintjsSelect.blueprintjsSelectStrings.first
 import typings.blueprintjsSelect.blueprintjsSelectStrings.last
@@ -16,7 +17,6 @@ import typings.blueprintjsSelect.libEsmCommonPredicateMod.ItemListPredicate
 import typings.blueprintjsSelect.libEsmCommonPredicateMod.ItemPredicate
 import typings.react.mod.ChangeEvent
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.HTMLProps
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
@@ -328,9 +328,9 @@ object libEsmComponentsSuggestSuggest2Mod {
     
     var popoverContentProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
     
-    var popoverProps: js.UndefOr[PartialOmitPopover2PropsH] = js.native
+    var popoverProps: js.UndefOr[PartialOmitPopover2PropsD] = js.native
     
-    var popoverRef: js.UndefOr[RefObject[Popover2[HTMLProps[Any]]]] = js.native
+    var popoverRef: js.UndefOr[RefObject[Popover2[DefaultPopover2TargetHTMLProps]]] = js.native
     
     /**
       * Query string passed to `itemListPredicate` or `itemPredicate` to filter items.

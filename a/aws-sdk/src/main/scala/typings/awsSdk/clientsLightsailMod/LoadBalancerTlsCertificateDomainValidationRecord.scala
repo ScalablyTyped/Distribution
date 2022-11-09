@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoadBalancerTlsCertificateDomainValidationRecord extends StObject {
   
   /**
+    * An object that describes the state of the canonical name (CNAME) records that are automatically added by Lightsail to the DNS of a domain to validate domain ownership.
+    */
+  var dnsRecordCreationState: js.UndefOr[LoadBalancerTlsCertificateDnsRecordCreationState] = js.undefined
+  
+  /**
     * The domain name against which your SSL/TLS certificate was validated.
     */
   var domainName: js.UndefOr[DomainName] = js.undefined
@@ -39,6 +44,10 @@ object LoadBalancerTlsCertificateDomainValidationRecord {
   }
   
   extension [Self <: LoadBalancerTlsCertificateDomainValidationRecord](x: Self) {
+    
+    inline def setDnsRecordCreationState(value: LoadBalancerTlsCertificateDnsRecordCreationState): Self = StObject.set(x, "dnsRecordCreationState", value.asInstanceOf[js.Any])
+    
+    inline def setDnsRecordCreationStateUndefined: Self = StObject.set(x, "dnsRecordCreationState", js.undefined)
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     

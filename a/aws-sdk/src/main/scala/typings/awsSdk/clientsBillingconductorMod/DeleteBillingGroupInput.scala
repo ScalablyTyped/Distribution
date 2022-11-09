@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteBillingGroupInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the billing group you're deleting.
+    * The Amazon Resource Name (ARN) of the billing group that you're deleting.
     */
   var Arn: BillingGroupArn
 }

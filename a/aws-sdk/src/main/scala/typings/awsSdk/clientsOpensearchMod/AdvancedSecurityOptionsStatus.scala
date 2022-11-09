@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdvancedSecurityOptionsStatus extends StObject {
   
   /**
-    * Advanced security options for the specified domain.
+    * Container for fine-grained access control settings.
     */
   var Options: AdvancedSecurityOptions
   
   /**
-    * Status of the advanced security options for the specified domain.
+    * Status of the fine-grained access control settings for a domain.
     */
   var Status: OptionStatus
 }

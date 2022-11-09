@@ -12675,6 +12675,21 @@ object stripeStrings {
   inline def effective_at: effective_at = "effective_at".asInstanceOf[effective_at]
   
   @js.native
+  sealed trait eg_tin
+    extends StObject
+       with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
+       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
+       with typings.stripe.mod.Stripe.TaxId.Type
+  inline def eg_tin: eg_tin = "eg_tin".asInstanceOf[eg_tin]
+  
+  @js.native
   sealed trait el
     extends StObject
        with Locale
@@ -19896,6 +19911,21 @@ object stripeStrings {
   inline def petroleum_and_petroleum_products: petroleum_and_petroleum_products = "petroleum_and_petroleum_products".asInstanceOf[petroleum_and_petroleum_products]
   
   @js.native
+  sealed trait ph_tin
+    extends StObject
+       with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
+       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
+       with typings.stripe.mod.Stripe.TaxId.Type
+  inline def ph_tin: ph_tin = "ph_tin".asInstanceOf[ph_tin]
+  
+  @js.native
   sealed trait phase_start
     extends StObject
        with BillingCycleAnchor
@@ -23553,6 +23583,21 @@ object stripeStrings {
   inline def tr_ : tr_ = "tr".asInstanceOf[tr_]
   
   @js.native
+  sealed trait tr_tin
+    extends StObject
+       with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
+       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
+       with typings.stripe.mod.Stripe.TaxId.Type
+  inline def tr_tin: tr_tin = "tr_tin".asInstanceOf[tr_tin]
+  
+  @js.native
   sealed trait trailer_parks_campgrounds
     extends StObject
        with _AllowedCategory
@@ -25392,6 +25437,12 @@ object stripeStrings {
   @js.native
   sealed trait webhook_endpoint extends StObject
   inline def webhook_endpoint: webhook_endpoint = "webhook_endpoint".asInstanceOf[webhook_endpoint]
+  
+  @js.native
+  sealed trait webhook_error
+    extends StObject
+       with Reason
+  inline def webhook_error: webhook_error = "webhook_error".asInstanceOf[webhook_error]
   
   @js.native
   sealed trait webhook_timeout

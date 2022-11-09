@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AutoTuneDetails extends StObject {
   
+  /**
+    * Container for details about a scheduled Auto-Tune action.
+    */
   var ScheduledAutoTuneDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ScheduledAutoTuneDetails] = js.undefined
 }
 object AutoTuneDetails {

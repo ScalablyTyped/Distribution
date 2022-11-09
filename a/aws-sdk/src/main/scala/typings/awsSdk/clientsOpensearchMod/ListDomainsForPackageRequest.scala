@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDomainsForPackageRequest extends StObject {
   
   /**
-    * Limits the results to a maximum number of domains.
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsOpensearchMod.MaxResults] = js.undefined
   
   /**
-    * Used for pagination. Only necessary if a previous API call includes a non-null NextToken value. If provided, returns results for the next page. 
+    * If your initial ListDomainsForPackage operation returns a nextToken, you can include the returned nextToken in subsequent ListDomainsForPackage operations, which returns results in the next page.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NextToken] = js.undefined
   
   /**
-    * The package for which to list associated domains.
+    * The unique identifier of the package for which to list associated domains.
     */
   var PackageID: typings.awsSdk.clientsOpensearchMod.PackageID
 }

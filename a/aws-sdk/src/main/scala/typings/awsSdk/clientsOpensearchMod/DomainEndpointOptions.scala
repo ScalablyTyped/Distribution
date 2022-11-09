@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainEndpointOptions extends StObject {
   
   /**
-    * The fully qualified domain for your custom endpoint.
+    * The fully qualified URL for the custom endpoint.
     */
   var CustomEndpoint: js.UndefOr[DomainNameFqdn] = js.undefined
   
   /**
-    * The ACM certificate ARN for your custom endpoint.
+    * The ARN for your security certificate, managed in Amazon Web Services Certificate Manager (ACM).
     */
   var CustomEndpointCertificateArn: js.UndefOr[ARN] = js.undefined
   
@@ -22,12 +22,12 @@ trait DomainEndpointOptions extends StObject {
   var CustomEndpointEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether only HTTPS endpoint should be enabled for the domain.
+    * True to require that all traffic to the domain arrive over HTTPS.
     */
   var EnforceHTTPS: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify the TLS security policy to apply to the HTTPS endpoint of the domain.  Can be one of the following values:   Policy-Min-TLS-1-0-2019-07: TLS security policy which supports TLSv1.0 and higher.   Policy-Min-TLS-1-2-2019-07: TLS security policy which supports only TLSv1.2   
+    * Specify the TLS security policy to apply to the HTTPS endpoint of the domain.  Can be one of the following values:    Policy-Min-TLS-1-0-2019-07: TLS security policy which supports TLS version 1.0 and higher.    Policy-Min-TLS-1-2-2019-07: TLS security policy which supports only TLS version 1.2   
     */
   var TLSSecurityPolicy: js.UndefOr[typings.awsSdk.clientsOpensearchMod.TLSSecurityPolicy] = js.undefined
 }

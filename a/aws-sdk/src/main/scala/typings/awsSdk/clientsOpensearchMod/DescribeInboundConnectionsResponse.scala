@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeInboundConnectionsResponse extends StObject {
   
   /**
-    * A list of  InboundConnection  matching the specified filter criteria. 
+    * List of inbound connections.
     */
   var Connections: js.UndefOr[InboundConnections] = js.undefined
   
   /**
-    * If more results are available and NextToken is present, make the next request to the same API with the received NextToken to paginate the remaining results. 
+    * When nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NextToken] = js.undefined
 }

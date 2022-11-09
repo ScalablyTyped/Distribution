@@ -126,58 +126,60 @@ object distTypesPopoverMenuPopoverMenuMod {
       @js.native
       val ^ : js.Any = js.native
       
-      /** The Popover's appendTo */
+      /** Enables calculations in relation to a DOM element */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.appendTo")
       @js.native
       def appendTo: Requireable[String | Double | Boolean | ReactElementLike | ReactNodeArray] = js.native
       inline def appendTo_=(x: Requireable[String | Double | Boolean | ReactElementLike | ReactNodeArray]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appendTo")(x.asInstanceOf[js.Any])
       
       /**
-        * `<PopoverMenu.MenuItem>` components that has these fields:
-        *  * `text` - Item text
-        *  * `onClick` - Callback to be triggered on item click
-        *  * `skin` - Item theme (standard, dark, destructive)
-        *  * `prefixIcon` - Prefix icon
-        *  * `dataHook` - Hook for testing purposes
+        * Stores Popover menu compound components:
+        * - <PopoverMenu.MenuItem />
+        * - <PopoverMenu.Divider /> (optional)
+        *
+        * `<PopoverMenu.MenuItem>` component has these fields:
+        *  * `text` - Sets a label for a Popover menu item
+        *  * `onClick` - Defines a callback function which is called when a Popover menu item is clicked on
+        *  * `skin` - Controls the appearance of a Popover menu item (one of `standard`, `dark`, `destructive`)
+        *  * `prefixIcon` - Contains an icon at the start of a Popover menu item
+        *  * `dataHook` - Applies a data-hook HTML attribute to be used in the tests
         *  * `suffixIcon` - suffix icon property
-        *  * `disabled` - Disabled
+        *  * `disabled` - Disables a Popover menu item
+        *  * `subtitle` - Sets a text for a Popover menu item subtitle\
+        *
+        * `<PopoverMenu.Divider>` component has these fields:
+        * * `dataHook` - Applies a data-hook HTML attribute to be used in the tests
         */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.children")
       @js.native
       def children: Requireable[ReactNodeLike] = js.native
       inline def children_=(x: Requireable[ReactNodeLike]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
-      /** A single CSS class name to be appended to the root element. */
+      /** Applies a CSS class to the component’s root element */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.className")
       @js.native
       def className: Requireable[String] = js.native
       inline def className_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
-      /** Applied as data-hook HTML attribute that can be used in the tests*/
+      /** Applies a data-hook HTML attribute to be used in the tests */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.dataHook")
       @js.native
       def dataHook: Requireable[String] = js.native
       inline def dataHook_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataHook")(x.asInstanceOf[js.Any])
       
-      /** Enables text ellipsis on tight containers */
+      /** Truncates menu item text that overflows component’s max Width */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.ellipsis")
       @js.native
       def ellipsis: Requireable[Boolean] = js.native
       inline def ellipsis_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ellipsis")(x.asInstanceOf[js.Any])
       
-      /**
-        * Whether to enable the fixed behaviour. This behaviour is used to keep the `<Popover/>` at it's
-        * original placement even when it's being positioned outside the boundary.
-        */
+      /** Enables the fixed behaviour. This behaviour is used to keep the overlay at its original placement even when it is being positioned outside the boundary. */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.fixed")
       @js.native
       def fixed: Requireable[Boolean] = js.native
       inline def fixed_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fixed")(x.asInstanceOf[js.Any])
       
-      /**
-        * Whether to enable the flip behaviour. This behaviour is used to flip the `<Popover/>`'s placement
-        * when it starts to overlap the target element (`<Popover.Element/>`).
-        */
+      /** Enables the flip behaviour. This behaviour is used to flip the overlay placement when it starts to overlap the trigger element. */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.flip")
       @js.native
       def flip: Requireable[Boolean] = js.native
@@ -188,43 +190,46 @@ object distTypesPopoverMenuPopoverMenuMod {
       def fluid: Requireable[Boolean] = js.native
       inline def fluid_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fluid")(x.asInstanceOf[js.Any])
       
-      /** The maximum height value applied to the list */
+      /** Sets a maximum height for a Popover menu */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.maxHeight")
       @js.native
       def maxHeight: Requireable[String | Double] = js.native
       inline def maxHeight_=(x: Requireable[String | Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxHeight")(x.asInstanceOf[js.Any])
       
-      /** The maximum width applied to the list */
+      /** Sets a maximum width for a Popover menu */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.maxWidth")
       @js.native
       def maxWidth: Requireable[Double] = js.native
       inline def maxWidth_=(x: Requireable[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxWidth")(x.asInstanceOf[js.Any])
       
-      /** The minimum width applied to the list */
+      /** Sets a minimum width for a Popover menu */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.minWidth")
       @js.native
       def minWidth: Requireable[Double] = js.native
       inline def minWidth_=(x: Requireable[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minWidth")(x.asInstanceOf[js.Any])
       
-      /** Moves popover content relative to the parent by x or y */
+      /** Moves Popover menu overlay relative to its trigger element by a defined number of px:
+        * - horizontally (on X-axis)
+        * - or vertically (on Y-axis)
+        */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.moveBy")
       @js.native
       def moveBy: Requireable[InferProps[X]] = js.native
       inline def moveBy_=(x: Requireable[InferProps[X]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moveBy")(x.asInstanceOf[js.Any])
       
-      /** Defines a callback function which is called when dropdown is closed */
+      /** Defines a callback function which is called when a Popover menu is closed */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.onHide")
       @js.native
       def onHide: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
       inline def onHide_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onHide")(x.asInstanceOf[js.Any])
       
-      /** Defines a callback function which is called when dropdown is opened */
+      /** Defines a callback function which is called when a Popover menu is opened */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.onShow")
       @js.native
       def onShow: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
       inline def onShow_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onShow")(x.asInstanceOf[js.Any])
       
-      /** The Popover's placement:
+      /** Defines the Popover menu’s overlay placement in relation to its trigger element:
         *  * auto-start
         *  * auto
         *  * auto-end
@@ -234,37 +239,37 @@ object distTypesPopoverMenuPopoverMenuMod {
         *  * right-start
         *  * right
         *  * right-end
-        *  * bottom-end
-        *  * bottom
         *  * bottom-start
-        *  * left-end
-        *  * left
+        *  * bottom
+        *  * bottom-end
         *  * left-start
+        *  * left
+        *  * left-end
         */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.placement")
       @js.native
       def placement: Requireable[String] = js.native
       inline def placement_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placement")(x.asInstanceOf[js.Any])
       
-      /** Whether to show the Popover's arrow */
+      /** Controls visibility of the pointer arrow */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.showArrow")
       @js.native
       def showArrow: Requireable[Boolean] = js.native
       inline def showArrow_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showArrow")(x.asInstanceOf[js.Any])
       
-      /** Changing text size */
+      /** Sets the size of text in Popover menu items */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.textSize")
       @js.native
       def textSize: Requireable[String] = js.native
       inline def textSize_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textSize")(x.asInstanceOf[js.Any])
       
-      /** Element to trigger the popover */
+      /** Defines a component that calls out a Popover menu (`<IconButton />`, `<Button />` or `<Text Button />`) */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.triggerElement")
       @js.native
       def triggerElement: Validator[(js.Function1[/* repeated */ Any, Any]) | ReactElementLike] = js.native
       inline def triggerElement_=(x: Validator[(js.Function1[/* repeated */ Any, Any]) | ReactElementLike]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("triggerElement")(x.asInstanceOf[js.Any])
       
-      /** Popover content z-index */
+      /** Sets the Popover z-index */
       @JSImport("wix-style-react/dist/types/PopoverMenu/PopoverMenu", "default.propTypes.zIndex")
       @js.native
       def zIndex: Requireable[Double] = js.native

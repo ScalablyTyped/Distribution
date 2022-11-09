@@ -12,17 +12,17 @@ trait CreatePackageRequest extends StObject {
   var PackageDescription: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageDescription] = js.undefined
   
   /**
-    * Unique identifier for the package.
+    * Unique name for the package.
     */
   var PackageName: typings.awsSdk.clientsOpensearchMod.PackageName
   
   /**
-    * The Amazon S3 location from which to import the package. 
+    * The Amazon S3 location from which to import the package.
     */
   var PackageSource: typings.awsSdk.clientsOpensearchMod.PackageSource
   
   /**
-    * Type of package. Currently supports only TXT-DICTIONARY.
+    * Type of package.
     */
   var PackageType: typings.awsSdk.clientsOpensearchMod.PackageType
 }

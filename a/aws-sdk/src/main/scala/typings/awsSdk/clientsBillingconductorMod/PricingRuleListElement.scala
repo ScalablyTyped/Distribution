@@ -17,7 +17,7 @@ trait PricingRuleListElement extends StObject {
   var AssociatedPricingPlanCount: js.UndefOr[NumberOfPricingPlansAssociatedWith] = js.undefined
   
   /**
-    *  The time the pricing rule was created. 
+    *  The time when the pricing rule was created. 
     */
   var CreationTime: js.UndefOr[Instant] = js.undefined
   
@@ -27,7 +27,7 @@ trait PricingRuleListElement extends StObject {
   var Description: js.UndefOr[PricingRuleDescription] = js.undefined
   
   /**
-    *  The most recent time the pricing rule was modified. 
+    *  The most recent time when the pricing rule was modified. 
     */
   var LastModifiedTime: js.UndefOr[Instant] = js.undefined
   

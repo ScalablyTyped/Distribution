@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue__shared"
-version := "3.2.41-a50cde"
+version := "3.2.42-ead2ce"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

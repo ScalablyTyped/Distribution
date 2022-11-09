@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SnapshotOptions extends StObject {
   
   /**
-    * The time, in UTC format, when the service takes a daily automated snapshot of the specified domain. Default is 0 hours. 
+    * The time, in UTC format, when OpenSearch Service takes a daily automated snapshot of the specified domain. Default is 0 hours.
     */
   var AutomatedSnapshotStartHour: js.UndefOr[IntegerClass] = js.undefined
 }

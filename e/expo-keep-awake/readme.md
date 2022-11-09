@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-keep-awake
 
-Typings are for version 10.2.0
+Typings are for version 11.0.1
 
 
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociatePackageRequest extends StObject {
   
   /**
-    * The name of the domain to associate the package with.
+    * Name of the domain to associate the package with.
     */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
   

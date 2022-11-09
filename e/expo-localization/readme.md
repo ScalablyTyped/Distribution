@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-localization
 
-Typings are for version 13.1.0
+Typings are for version 14.0.0
 
 ## Library description:
 Provides an interface for native user localization information.

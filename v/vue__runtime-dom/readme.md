@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue__runtime-dom
 
-Typings are for version 3.2.41
+Typings are for version 3.2.42
 
 ## Library description:
 @vue/runtime-dom

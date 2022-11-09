@@ -79,7 +79,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -92,7 +93,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[V /* <: js.Object */](
@@ -109,7 +111,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -122,7 +125,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[V /* <: js.Object */](originalComponent: VccOpts[V]): VueWrapper[
@@ -136,7 +140,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -149,7 +154,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[V /* <: js.Object */](originalComponent: VccOpts[V], options: (MountingOptions[Any, js.Object]) & (Record[String, Any])): VueWrapper[
@@ -163,7 +169,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -176,7 +183,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[Props /* <: js.Object */, E /* <: EmitsOptions */](originalComponent: FunctionalComponent[Props, E]): VueWrapper[
@@ -190,7 +198,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -203,7 +212,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[Props /* <: js.Object */, E /* <: EmitsOptions */](
@@ -220,7 +230,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -233,7 +244,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[V /* <: js.Object */, P](originalComponent: DefaultProps[V]): VueWrapper[
@@ -247,7 +259,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -260,7 +273,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[V /* <: js.Object */, P](
@@ -277,7 +291,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -290,7 +305,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[V /* <: js.Object */, P](originalComponent: Instantiable[V, P]): VueWrapper[
@@ -304,7 +320,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -317,7 +334,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[V /* <: js.Object */, P](
@@ -334,7 +352,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -347,7 +366,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */](
@@ -361,6 +381,8 @@ object distMountMod {
       Mixin, 
       Extends, 
       EE, 
+      js.Object, 
+      String, 
       ExtractPropTypes[PropsOptions] & EmitsToProps[Extends], 
       ExtractDefaultPropTypes[PropsOptions]
     ]
@@ -375,7 +397,8 @@ object distMountMod {
       VNodeProps & ExtractPropTypes[PropsOptions], 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(componentOptions.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -388,7 +411,8 @@ object distMountMod {
       VNodeProps & ExtractPropTypes[PropsOptions], 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */](
@@ -402,6 +426,8 @@ object distMountMod {
       Mixin, 
       Extends, 
       EE, 
+      js.Object, 
+      String, 
       ExtractPropTypes[PropsOptions] & EmitsToProps[Extends], 
       ExtractDefaultPropTypes[PropsOptions]
     ],
@@ -417,7 +443,8 @@ object distMountMod {
       VNodeProps & ExtractPropTypes[PropsOptions], 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(componentOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -430,11 +457,12 @@ object distMountMod {
       VNodeProps & ExtractPropTypes[PropsOptions], 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[Props, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */](
-    componentOptions: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, E, Mixin, Extends, EE, Props & EmitsToProps[Extends]]
+    componentOptions: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, E, Mixin, Extends, EE, js.Object, String, Props & EmitsToProps[Extends]]
   ): (VueWrapper[
     ComponentPublicInstance[
       Props, 
@@ -446,7 +474,8 @@ object distMountMod {
       VNodeProps & Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]) & (Record[String, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(componentOptions.asInstanceOf[js.Any]).asInstanceOf[(VueWrapper[
     ComponentPublicInstance[
@@ -459,11 +488,12 @@ object distMountMod {
       VNodeProps & Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]) & (Record[String, Any])]
   inline def mount[Props, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */](
-    componentOptions: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, E, Mixin, Extends, EE, Props & EmitsToProps[Extends]],
+    componentOptions: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, E, Mixin, Extends, EE, js.Object, String, Props & EmitsToProps[Extends]],
     options: MountingOptions[Props & PublicProps, D]
   ): (VueWrapper[
     ComponentPublicInstance[
@@ -476,7 +506,8 @@ object distMountMod {
       VNodeProps & Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]) & (Record[String, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(componentOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(VueWrapper[
     ComponentPublicInstance[
@@ -489,11 +520,25 @@ object distMountMod {
       VNodeProps & Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]) & (Record[String, Any])]
   inline def mount[PropNames /* <: String */, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */, Props /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any */](
-    componentOptions: ComponentOptionsWithArrayProps[PropNames, RawBindings, D, C, M, E, Mixin, Extends, EE, Props]
+    componentOptions: ComponentOptionsWithArrayProps[
+      PropNames, 
+      RawBindings, 
+      D, 
+      C, 
+      M, 
+      E, 
+      Mixin, 
+      Extends, 
+      EE, 
+      Props, 
+      String, 
+      (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[Extends]
+    ]
   ): VueWrapper[
     ComponentPublicInstance[
       Props, 
@@ -505,7 +550,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(componentOptions.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -518,11 +564,25 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[PropNames /* <: String */, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */, Props /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any */](
-    componentOptions: ComponentOptionsWithArrayProps[PropNames, RawBindings, D, C, M, E, Mixin, Extends, EE, Props],
+    componentOptions: ComponentOptionsWithArrayProps[
+      PropNames, 
+      RawBindings, 
+      D, 
+      C, 
+      M, 
+      E, 
+      Mixin, 
+      Extends, 
+      EE, 
+      Props, 
+      String, 
+      (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[Extends]
+    ],
     options: MountingOptions[Props & PublicProps, D]
   ): VueWrapper[
     ComponentPublicInstance[
@@ -535,7 +595,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(componentOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -548,7 +609,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def mount[PropsOrPropOptions, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, PP, Props, Defaults /* <: js.Object */](
@@ -615,7 +677,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -628,7 +691,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[V /* <: js.Object */](
@@ -645,7 +709,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -658,7 +723,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[V /* <: js.Object */](originalComponent: VccOpts[V]): VueWrapper[
@@ -672,7 +738,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -685,7 +752,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[V /* <: js.Object */](originalComponent: VccOpts[V], options: (MountingOptions[Any, js.Object]) & (Record[String, Any])): VueWrapper[
@@ -699,7 +767,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -712,7 +781,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[Props /* <: js.Object */, E /* <: EmitsOptions */](originalComponent: FunctionalComponent[Props, E]): VueWrapper[
@@ -726,7 +796,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -739,7 +810,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[Props /* <: js.Object */, E /* <: EmitsOptions */](
@@ -756,7 +828,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -769,7 +842,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[V /* <: js.Object */, P](originalComponent: DefaultProps[V]): VueWrapper[
@@ -783,7 +857,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -796,7 +871,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[V /* <: js.Object */, P](
@@ -813,7 +889,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -826,7 +903,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[V /* <: js.Object */, P](originalComponent: Instantiable[V, P]): VueWrapper[
@@ -840,7 +918,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -853,7 +932,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[V /* <: js.Object */, P](
@@ -870,7 +950,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(originalComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -883,7 +964,8 @@ object distMountMod {
       V, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */](
@@ -897,6 +979,8 @@ object distMountMod {
       Mixin, 
       Extends, 
       EE, 
+      js.Object, 
+      String, 
       ExtractPropTypes[PropsOptions] & EmitsToProps[Extends], 
       ExtractDefaultPropTypes[PropsOptions]
     ]
@@ -911,7 +995,8 @@ object distMountMod {
       VNodeProps & ExtractPropTypes[PropsOptions], 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(componentOptions.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -924,7 +1009,8 @@ object distMountMod {
       VNodeProps & ExtractPropTypes[PropsOptions], 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[PropsOptions /* <: ComponentPropsOptions[Data] */, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */](
@@ -938,6 +1024,8 @@ object distMountMod {
       Mixin, 
       Extends, 
       EE, 
+      js.Object, 
+      String, 
       ExtractPropTypes[PropsOptions] & EmitsToProps[Extends], 
       ExtractDefaultPropTypes[PropsOptions]
     ],
@@ -953,7 +1041,8 @@ object distMountMod {
       VNodeProps & ExtractPropTypes[PropsOptions], 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(componentOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -966,11 +1055,12 @@ object distMountMod {
       VNodeProps & ExtractPropTypes[PropsOptions], 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[Props, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */](
-    componentOptions: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, E, Mixin, Extends, EE, Props & EmitsToProps[Extends]]
+    componentOptions: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, E, Mixin, Extends, EE, js.Object, String, Props & EmitsToProps[Extends]]
   ): (VueWrapper[
     ComponentPublicInstance[
       Props, 
@@ -982,7 +1072,8 @@ object distMountMod {
       VNodeProps & Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]) & (Record[String, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(componentOptions.asInstanceOf[js.Any]).asInstanceOf[(VueWrapper[
     ComponentPublicInstance[
@@ -995,11 +1086,12 @@ object distMountMod {
       VNodeProps & Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]) & (Record[String, Any])]
   inline def shallowMount[Props, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */](
-    componentOptions: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, E, Mixin, Extends, EE, Props & EmitsToProps[Extends]],
+    componentOptions: ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, E, Mixin, Extends, EE, js.Object, String, Props & EmitsToProps[Extends]],
     options: MountingOptions[Props & PublicProps, D]
   ): (VueWrapper[
     ComponentPublicInstance[
@@ -1012,7 +1104,8 @@ object distMountMod {
       VNodeProps & Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]) & (Record[String, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(componentOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(VueWrapper[
     ComponentPublicInstance[
@@ -1025,11 +1118,25 @@ object distMountMod {
       VNodeProps & Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]) & (Record[String, Any])]
   inline def shallowMount[PropNames /* <: String */, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */, Props /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any */](
-    componentOptions: ComponentOptionsWithArrayProps[PropNames, RawBindings, D, C, M, E, Mixin, Extends, EE, Props]
+    componentOptions: ComponentOptionsWithArrayProps[
+      PropNames, 
+      RawBindings, 
+      D, 
+      C, 
+      M, 
+      E, 
+      Mixin, 
+      Extends, 
+      EE, 
+      Props, 
+      String, 
+      (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[Extends]
+    ]
   ): VueWrapper[
     ComponentPublicInstance[
       Props, 
@@ -1041,7 +1148,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(componentOptions.asInstanceOf[js.Any]).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -1054,11 +1162,25 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[PropNames /* <: String */, RawBindings, D /* <: js.Object */, C /* <: ComputedOptions */, M /* <: Record[String, js.Function] */, E /* <: EmitsOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, EE /* <: String */, Props /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any */](
-    componentOptions: ComponentOptionsWithArrayProps[PropNames, RawBindings, D, C, M, E, Mixin, Extends, EE, Props],
+    componentOptions: ComponentOptionsWithArrayProps[
+      PropNames, 
+      RawBindings, 
+      D, 
+      C, 
+      M, 
+      E, 
+      Mixin, 
+      Extends, 
+      EE, 
+      Props, 
+      String, 
+      (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any) & EmitsToProps[Extends]
+    ],
     options: MountingOptions[Props & PublicProps, D]
   ): VueWrapper[
     ComponentPublicInstance[
@@ -1071,7 +1193,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(componentOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VueWrapper[
     ComponentPublicInstance[
@@ -1084,7 +1207,8 @@ object distMountMod {
       Props, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ]
   ]]
   inline def shallowMount[PropsOrPropOptions, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, PP, Props, Defaults /* <: js.Object */](

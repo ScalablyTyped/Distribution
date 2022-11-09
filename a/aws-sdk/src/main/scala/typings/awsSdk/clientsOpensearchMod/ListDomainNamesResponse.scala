@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDomainNamesResponse extends StObject {
   
   /**
-    * List of domain names and respective engine types.
+    * The names of all OpenSearch Service domains owned by the current user and their respective engine types.
     */
   var DomainNames: js.UndefOr[DomainInfoList] = js.undefined
 }

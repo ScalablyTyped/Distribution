@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainInfo extends StObject {
   
   /**
-    * The DomainName. 
+    * Name of the domain.
     */
   var DomainName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainName] = js.undefined
   
   /**
-    *  Specifies the EngineType of the domain.
+    * The type of search engine that the domain is running.OpenSearch for an OpenSearch engine, or Elasticsearch for a legacy Elasticsearch OSS engine.
     */
   var EngineType: js.UndefOr[typings.awsSdk.clientsOpensearchMod.EngineType] = js.undefined
 }

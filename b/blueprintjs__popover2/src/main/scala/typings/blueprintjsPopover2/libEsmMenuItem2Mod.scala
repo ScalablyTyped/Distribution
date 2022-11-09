@@ -4,7 +4,7 @@ import typings.blueprintjsCore.libEsmCommonPropsMod.IActionProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.ILinkProps
 import typings.blueprintjsCore.mod.AbstractPureComponent2
 import typings.blueprintjsPopover2.anon.PartialMenuProps
-import typings.blueprintjsPopover2.anon.PartialOmitPopover2PropsHAutoFocus
+import typings.blueprintjsPopover2.anon.PartialOmitPopover2PropsDAutoFocus
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.listoption
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.menuitem
 import typings.react.mod.AnchorHTMLAttributes
@@ -101,7 +101,7 @@ object libEsmMenuItem2Mod {
       * changed and `usePortal` defaults to `false` so all submenus will live in
       * the same container.
       */
-    var popoverProps: js.UndefOr[PartialOmitPopover2PropsHAutoFocus] = js.undefined
+    var popoverProps: js.UndefOr[PartialOmitPopover2PropsDAutoFocus] = js.undefined
     
     /**
       * Changes the ARIA `role` property structure of this MenuItem to accomodate for various
@@ -202,7 +202,7 @@ object libEsmMenuItem2Mod {
       
       inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
-      inline def setPopoverProps(value: PartialOmitPopover2PropsHAutoFocus): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: PartialOmitPopover2PropsDAutoFocus): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       

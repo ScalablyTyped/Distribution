@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompatibleVersionsMap extends StObject {
   
   /**
-    * The current version of OpenSearch a domain is on.
+    * The current version that the OpenSearch Service domain is running.
     */
   var SourceVersion: js.UndefOr[VersionString] = js.undefined
   
+  /**
+    * The possible versions that you can upgrade the domain to.
+    */
   var TargetVersions: js.UndefOr[VersionList] = js.undefined
 }
 object CompatibleVersionsMap {

@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DescribePackagesResponse extends StObject {
   
+  /**
+    * When nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page.
+    */
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * List of PackageDetails objects. 
+    * Basic information about a package.
     */
   var PackageDetailsList: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageDetailsList] = js.undefined
 }

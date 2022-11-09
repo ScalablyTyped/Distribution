@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo__metro-config"
-version := "0.4.0-fbdc29"
+version := "0.5.1-1c70aa"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

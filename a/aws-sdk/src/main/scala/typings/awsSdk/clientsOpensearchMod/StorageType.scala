@@ -6,13 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StorageType extends StObject {
   
+  /**
+    * The storage sub-type, such as gp3 or io1.
+    */
   var StorageSubTypeName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.StorageSubTypeName] = js.undefined
   
   /**
-    * Limits that are applicable for the given storage type. 
+    * Limits that are applicable for the given storage type.
     */
   var StorageTypeLimits: js.UndefOr[StorageTypeLimitList] = js.undefined
   
+  /**
+    * The name of the storage type.
+    */
   var StorageTypeName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.StorageTypeName] = js.undefined
 }
 object StorageType {

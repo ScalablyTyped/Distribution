@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDomainNamesRequest extends StObject {
   
   /**
-    *  Optional parameter to filter the output by domain engine type. Acceptable values are 'Elasticsearch' and 'OpenSearch'. 
+    * Filters the output by domain engine type.
     */
   var EngineType: js.UndefOr[typings.awsSdk.clientsOpensearchMod.EngineType] = js.undefined
 }

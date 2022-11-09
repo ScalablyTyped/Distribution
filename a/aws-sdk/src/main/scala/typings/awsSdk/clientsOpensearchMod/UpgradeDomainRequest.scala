@@ -6,17 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpgradeDomainRequest extends StObject {
   
+  /**
+    * Only supports the override_main_response_version parameter and not other advanced options. You can only include this option when upgrading to an OpenSearch version. Specifies whether the domain reports its version as 7.10 so that it continues to work with Elasticsearch OSS clients and plugins.
+    */
   var AdvancedOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AdvancedOptions] = js.undefined
   
+  /**
+    * Name of the OpenSearch Service domain that you want to upgrade.
+    */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
   
   /**
-    *  When true, indicates that an upgrade eligibility check needs to be performed. Does not actually perform the upgrade. 
+    * When true, indicates that an upgrade eligibility check needs to be performed. Does not actually perform the upgrade.
     */
   var PerformCheckOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The version of OpenSearch you intend to upgrade the domain to.
+    * OpenSearch or Elasticsearch version to which you want to upgrade, in the format Opensearch_X.Y or Elasticsearch_X.Y.
     */
   var TargetVersion: VersionString
 }

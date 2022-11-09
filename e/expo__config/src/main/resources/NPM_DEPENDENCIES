@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/config" : "7.0.1"
+      "@expo/config" : "7.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/config" : "7.0.1"
+      "@expo/config" : "7.0.3"
     }
   ],
   "compile-devDependencies" : [

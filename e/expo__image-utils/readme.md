@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__image-utils
 
-Typings are for version 0.3.22
+Typings are for version 0.3.23
 
 ## Library description:
 A package used by Expo CLI for processing images

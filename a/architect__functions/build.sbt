@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "architect__functions"
-version := "3.13-dt-20220630Z-63dabb"
+version := "3.13-dt-20220630Z-0eef1e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20221018Z-ca4e3c",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1249.0-651e57",
+  "org.scalablytyped" %%% "aws-sdk" % "2.1250.0-82abf5",
   "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-944d8b",
   "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-0c6b73",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-3b1911",

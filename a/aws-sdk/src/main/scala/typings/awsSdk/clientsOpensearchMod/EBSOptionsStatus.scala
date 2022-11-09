@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EBSOptionsStatus extends StObject {
   
   /**
-    * The EBS options for the specified domain.
+    * The configured EBS options for the specified domain.
     */
   var Options: EBSOptions
   

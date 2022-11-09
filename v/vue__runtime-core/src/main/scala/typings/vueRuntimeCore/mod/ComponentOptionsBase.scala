@@ -8,9 +8,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComponentOptionsBase[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults]
+trait ComponentOptionsBase[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */]
   extends StObject
-     with LegacyOptions[Props, D, C, M, Mixin, Extends]
+     with LegacyOptions[Props, D, C, M, Mixin, Extends, I, II]
      with ComponentInternalOptions
      with ComponentCustomOptions {
   
@@ -61,12 +61,12 @@ trait ComponentOptionsBase[Props, RawBindings, D, C /* <: ComputedOptions */, M 
 }
 object ComponentOptionsBase {
   
-  inline def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults](): ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults] = {
+  inline def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */](): ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults]]
+    __obj.asInstanceOf[ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II]]
   }
   
-  extension [Self <: ComponentOptionsBase[?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults](x: Self & (ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults])) {
+  extension [Self <: ComponentOptionsBase[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */](x: Self & (ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II])) {
     
     inline def setCall(value: js.ThisFunction1[/* this */ Any, /* repeated */ Any, scala.Nothing]): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     

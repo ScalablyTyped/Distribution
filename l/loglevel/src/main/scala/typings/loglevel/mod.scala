@@ -67,7 +67,7 @@ object mod extends Shortcut {
   /**
     * Possible log level descriptors, may be string, lower or upper case, or number.
     */
-  /* Inlined loglevel.loglevel.LogLevelNumbers | 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'silent' | keyof loglevel.loglevel.LogLevel */
+  /* Inlined loglevel.loglevel.LogLevelNumbers | loglevel.loglevel.LogLevelNames | 'silent' | keyof loglevel.loglevel.LogLevel */
   /* Rewritten from type alias, can be one of: 
     - typings.loglevel.loglevelInts.`3`
     - typings.loglevel.loglevelInts.`2`
@@ -122,6 +122,27 @@ object mod extends Shortcut {
     inline def info: info_ = "info".asInstanceOf[info_]
     
     inline def silent: silent_ = "silent".asInstanceOf[silent_]
+    
+    inline def trace: trace_ = "trace".asInstanceOf[trace_]
+    
+    inline def warn: warn_ = "warn".asInstanceOf[warn_]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.loglevel.loglevelStrings.trace_
+    - typings.loglevel.loglevelStrings.debug_
+    - typings.loglevel.loglevelStrings.info_
+    - typings.loglevel.loglevelStrings.warn_
+    - typings.loglevel.loglevelStrings.error_
+  */
+  trait LogLevelNames extends StObject
+  object LogLevelNames {
+    
+    inline def debug: debug_ = "debug".asInstanceOf[debug_]
+    
+    inline def error: error_ = "error".asInstanceOf[error_]
+    
+    inline def info: info_ = "info".asInstanceOf[info_]
     
     inline def trace: trace_ = "trace".asInstanceOf[trace_]
     
@@ -227,8 +248,8 @@ object mod extends Shortcut {
       * for a logger with the given name. If you'd like to retain all the reliability and features of loglevel, it's
       * recommended that this wraps the initially provided value of log.methodFactory
       */
-    def methodFactory(methodName: String, level: LogLevelNumbers, loggerName: String): LoggingMethod = js.native
-    def methodFactory(methodName: String, level: LogLevelNumbers, loggerName: js.Symbol): LoggingMethod = js.native
+    def methodFactory(methodName: LogLevelNames, level: LogLevelNumbers, loggerName: String): LoggingMethod = js.native
+    def methodFactory(methodName: LogLevelNames, level: LogLevelNumbers, loggerName: js.Symbol): LoggingMethod = js.native
     /**
       * Plugin API entry point. This will be called for each enabled method each time the level is set
       * (including initially), and should return a MethodFactory to be used for the given log method, at the given level,
@@ -294,7 +315,7 @@ object mod extends Shortcut {
   }
   
   type MethodFactory = js.Function3[
-    /* methodName */ String, 
+    /* methodName */ LogLevelNames, 
     /* level */ LogLevelNumbers, 
     /* loggerName */ String | js.Symbol, 
     LoggingMethod

@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReservedInstance extends StObject {
   
+  /**
+    * The unique identifier of the billing subscription.
+    */
   var BillingSubscriptionId: js.UndefOr[Long] = js.undefined
   
   /**
-    * The currency code for the reserved OpenSearch instance offering.
+    * The currency code for the offering.
     */
   var CurrencyCode: js.UndefOr[String] = js.undefined
   
@@ -19,7 +22,7 @@ trait ReservedInstance extends StObject {
   var Duration: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The upfront fixed charge you will paid to purchase the specific reserved OpenSearch instance offering.
+    * The upfront fixed charge you will paid to purchase the specific Reserved Instance offering.
     */
   var FixedPrice: js.UndefOr[Double] = js.undefined
   
@@ -29,17 +32,17 @@ trait ReservedInstance extends StObject {
   var InstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The OpenSearch instance type offered by the reserved instance offering.
+    * The OpenSearch instance type offered by theReserved Instance offering.
     */
   var InstanceType: js.UndefOr[OpenSearchPartitionInstanceType] = js.undefined
   
   /**
-    * The payment option as defined in the reserved OpenSearch instance offering.
+    * The payment option as defined in the Reserved Instance offering.
     */
   var PaymentOption: js.UndefOr[ReservedInstancePaymentOption] = js.undefined
   
   /**
-    * The charge to your account regardless of whether you are creating any domains using the instance offering.
+    * The recurring charge to your account, regardless of whether you create any domains using the Reserved Instance offering.
     */
   var RecurringCharges: js.UndefOr[RecurringChargeList] = js.undefined
   
@@ -54,22 +57,22 @@ trait ReservedInstance extends StObject {
   var ReservedInstanceId: js.UndefOr[GUID] = js.undefined
   
   /**
-    * The offering identifier.
+    * The unique identifier of the Reserved Instance offering.
     */
   var ReservedInstanceOfferingId: js.UndefOr[String] = js.undefined
   
   /**
-    * The time the reservation started.
+    * The date and time when the reservation was purchased.
     */
   var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The state of the reserved OpenSearch instance.
+    * The state of the Reserved Instance.
     */
   var State: js.UndefOr[String] = js.undefined
   
   /**
-    * The rate you are charged for each hour for the domain that is using this reserved instance.
+    * The hourly rate at which you're charged for the domain using this Reserved Instance.
     */
   var UsagePrice: js.UndefOr[Double] = js.undefined
 }

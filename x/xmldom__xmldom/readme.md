@@ -1,7 +1,7 @@
 
 # Scala.js typings for xmldom__xmldom
 
-Typings are for version 0.8.3
+Typings are for version 0.8.6
 
 ## Library description:
 A pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module.

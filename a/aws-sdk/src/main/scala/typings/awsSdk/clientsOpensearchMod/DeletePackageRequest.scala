@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePackageRequest extends StObject {
   
   /**
-    * The internal ID of the package you want to delete. Use DescribePackages to find this value. 
+    * The internal ID of the package you want to delete. Use DescribePackages to find this value.
     */
   var PackageID: typings.awsSdk.clientsOpensearchMod.PackageID
 }

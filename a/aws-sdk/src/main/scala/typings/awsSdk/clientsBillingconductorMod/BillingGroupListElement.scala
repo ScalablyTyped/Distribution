@@ -14,22 +14,22 @@ trait BillingGroupListElement extends StObject {
   var ComputationPreference: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.ComputationPreference] = js.undefined
   
   /**
-    *  The time the billing group was created. 
+    *  The time when the billing group was created. 
     */
   var CreationTime: js.UndefOr[Instant] = js.undefined
   
   /**
-    * The billing group description. 
+    * The description of the billing group. 
     */
   var Description: js.UndefOr[BillingGroupDescription] = js.undefined
   
   /**
-    *  The most recent time the billing group was modified. 
+    *  The most recent time when the billing group was modified. 
     */
   var LastModifiedTime: js.UndefOr[Instant] = js.undefined
   
   /**
-    * The billing group's name. 
+    * The name of the billing group. 
     */
   var Name: js.UndefOr[BillingGroupName] = js.undefined
   

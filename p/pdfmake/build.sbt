@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pdfmake"
-version := "0.2-dt-20220731Z-fbd79a"
+version := "0.2-dt-20221108Z-d7f025"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

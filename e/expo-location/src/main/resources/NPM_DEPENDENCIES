@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-location" : "14.3.0"
+      "expo-location" : "15.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-location" : "14.3.0"
+      "expo-location" : "15.0.1"
     }
   ],
   "compile-devDependencies" : [

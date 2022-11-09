@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScheduledAutoTuneDetails extends StObject {
   
   /**
-    * The Auto-Tune action description.
+    * A description of the Auto-Tune action.
     */
   var Action: js.UndefOr[ScheduledAutoTuneDescription] = js.undefined
   
   /**
-    * The Auto-Tune action type. Valid values are JVM_HEAP_SIZE_TUNING and JVM_YOUNG_GEN_TUNING.
+    * The type of Auto-Tune action.
     */
   var ActionType: js.UndefOr[ScheduledAutoTuneActionType] = js.undefined
   
   /**
-    * The timestamp of the Auto-Tune action scheduled for the domain.
+    * The date and time when the Auto-Tune action is scheduled for the domain.
     */
   var Date: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Auto-Tune action severity. Valid values are LOW, MEDIUM, and HIGH.
+    * The severity of the Auto-Tune action. Valid values are LOW, MEDIUM, and HIGH.
     */
   var Severity: js.UndefOr[ScheduledAutoTuneSeverityType] = js.undefined
 }

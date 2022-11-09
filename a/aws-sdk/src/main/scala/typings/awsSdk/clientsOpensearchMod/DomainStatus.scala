@@ -7,104 +7,107 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainStatus extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of a domain. See IAM identifiers  in the AWS Identity and Access Management User Guide for more information. 
+    * The Amazon Resource Name (ARN) of the domain. For more information, see IAM identifiers  in the AWS Identity and Access Management User Guide.
     */
   var ARN: typings.awsSdk.clientsOpensearchMod.ARN
   
   /**
-    * IAM access policy as a JSON-formatted string.
+    * Identity and Access Management (IAM) policy document specifying the access policies for the domain.
     */
   var AccessPolicies: js.UndefOr[PolicyDocument] = js.undefined
   
   /**
-    * The status of the AdvancedOptions. 
+    * Key-value pairs that specify advanced configuration options.
     */
   var AdvancedOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AdvancedOptions] = js.undefined
   
   /**
-    * The current status of the domain's advanced security options.
+    * Settings for fine-grained access control.
     */
   var AdvancedSecurityOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.AdvancedSecurityOptions] = js.undefined
   
   /**
-    * The current status of the domain's Auto-Tune options.
+    * Auto-Tune settings for the domain.
     */
   var AutoTuneOptions: js.UndefOr[AutoTuneOptionsOutput] = js.undefined
   
   /**
-    * Specifies change details of the domain configuration change.
+    * Information about a configuration change happening on the domain.
     */
   var ChangeProgressDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ChangeProgressDetails] = js.undefined
   
   /**
-    * The type and number of instances in the domain.
+    * Container for the cluster configuration of the domain.
     */
   var ClusterConfig: typings.awsSdk.clientsOpensearchMod.ClusterConfig
   
   /**
-    * The CognitoOptions for the specified domain. For more information, see Configuring Amazon Cognito authentication for OpenSearch Dashboards. 
+    * Key-value pairs to configure Amazon Cognito authentication for OpenSearch Dashboards.
     */
   var CognitoOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.CognitoOptions] = js.undefined
   
   /**
-    * The domain creation status. True if the creation of a domain is complete.  False  if domain creation is still in progress. 
+    * Creation status of an OpenSearch Service domain. True if domain creation is complete. False if domain creation is still in progress.
     */
   var Created: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The domain deletion status. True if a delete request has been received for the domain but resource cleanup is still in progress. False if the domain has not been deleted. Once domain deletion is complete, the status of the domain is no longer returned. 
+    * Deletion status of an OpenSearch Service domain. True if domain deletion is complete. False if domain deletion is still in progress. Once deletion is complete, the status of the domain is no longer returned.
     */
   var Deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The current status of the domain's endpoint options.
+    * Additional options for the domain endpoint, such as whether to require HTTPS for all traffic.
     */
   var DomainEndpointOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainEndpointOptions] = js.undefined
   
   /**
-    * The unique identifier for the specified domain.
+    * Unique identifier for the domain.
     */
   var DomainId: typings.awsSdk.clientsOpensearchMod.DomainId
   
   /**
-    * The name of a domain. Domain names are unique across the domains owned by an account within an AWS region. Domain names start with a letter or number and can contain the following characters: a-z (lowercase), 0-9, and - (hyphen). 
+    * Name of the domain. Domain names are unique across all domains owned by the same account within an Amazon Web Services Region.
     */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
   
   /**
-    * The EBSOptions for the specified domain. 
+    * Container for EBS-based storage settings for the domain.
     */
   var EBSOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.EBSOptions] = js.undefined
   
   /**
-    * The status of the EncryptionAtRestOptions. 
+    * Encryption at rest settings for the domain.
     */
   var EncryptionAtRestOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.EncryptionAtRestOptions] = js.undefined
   
   /**
-    * The domain endpoint that you use to submit index and search requests.
+    * Domain-specific endpoint used to submit index, search, and data upload requests to the domain.
     */
   var Endpoint: js.UndefOr[ServiceUrl] = js.undefined
   
   /**
-    * Map containing the domain endpoints used to submit index and search requests. Example key, value: 'vpc','vpc-endpoint-h2dsd34efgyghrtguk5gt6j2foh4.us-east-1.es.amazonaws.com'. 
+    * The key-value pair that exists if the OpenSearch Service domain uses VPC endpoints.. Example key, value: 'vpc','vpc-endpoint-h2dsd34efgyghrtguk5gt6j2foh4.us-east-1.es.amazonaws.com'.
     */
   var Endpoints: js.UndefOr[EndpointsMap] = js.undefined
   
+  /**
+    * Version of OpenSearch or Elasticsearch that the domain is running, in the format Elasticsearch_X.Y or OpenSearch_X.Y.
+    */
   var EngineVersion: js.UndefOr[VersionString] = js.undefined
   
   /**
-    * Log publishing options for the given domain.
+    * Log publishing options for the domain.
     */
   var LogPublishingOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.LogPublishingOptions] = js.undefined
   
   /**
-    * The status of the NodeToNodeEncryptionOptions. 
+    * Whether node-to-node encryption is enabled or disabled.
     */
   var NodeToNodeEncryptionOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NodeToNodeEncryptionOptions] = js.undefined
   
   /**
-    * The status of the domain configuration. True if Amazon OpenSearch Service is processing configuration changes. False if the configuration is active. 
+    * The status of the domain configuration. True if OpenSearch Service is processing configuration changes. False if the configuration is active.
     */
   var Processing: js.UndefOr[Boolean] = js.undefined
   
@@ -114,17 +117,17 @@ trait DomainStatus extends StObject {
   var ServiceSoftwareOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ServiceSoftwareOptions] = js.undefined
   
   /**
-    * The status of the SnapshotOptions. 
+    * DEPRECATED. Container for parameters required to configure automated snapshots of domain indexes.
     */
   var SnapshotOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.SnapshotOptions] = js.undefined
   
   /**
-    * The status of a domain version upgrade. True if Amazon OpenSearch Service is undergoing a version upgrade. False if the configuration is active. 
+    * The status of a domain version upgrade to a new version of OpenSearch or Elasticsearch. True if OpenSearch Service is in the process of a version upgrade. False if the configuration is active.
     */
   var UpgradeProcessing: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The VPCOptions for the specified domain. For more information, see  Launching your Amazon OpenSearch Service domains using a VPC. 
+    * The VPC configuration for the domain.
     */
   var VPCOptions: js.UndefOr[VPCDerivedInfo] = js.undefined
 }

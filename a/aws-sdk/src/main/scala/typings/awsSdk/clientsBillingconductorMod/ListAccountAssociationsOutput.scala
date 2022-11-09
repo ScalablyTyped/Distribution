@@ -12,7 +12,7 @@ trait ListAccountAssociationsOutput extends StObject {
   var LinkedAccounts: js.UndefOr[AccountAssociationsList] = js.undefined
   
   /**
-    *  The pagination token used on subsequent calls to get accounts. 
+    *  The pagination token that's used on subsequent calls to get accounts. 
     */
   var NextToken: js.UndefOr[Token] = js.undefined
 }

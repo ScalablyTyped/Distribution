@@ -12,7 +12,7 @@ trait UpdateDomainConfigResponse extends StObject {
   var DomainConfig: typings.awsSdk.clientsOpensearchMod.DomainConfig
   
   /**
-    * Contains result of DryRun. 
+    * Results of a dry run performed in an update domain request.
     */
   var DryRunResults: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DryRunResults] = js.undefined
 }

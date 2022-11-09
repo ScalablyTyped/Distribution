@@ -7,7 +7,7 @@ import typings.propTypes.mod.Validator
 import typings.react.mod.PureComponent
 import typings.react.mod.global.JSX.Element
 import typings.wixStyleReact.anon.DisabledMessage
-import typings.wixStyleReact.anon.IsHovered
+import typings.wixStyleReact.anon.IsFocused
 import typings.wixStyleReact.anon.LabelOnClick
 import typings.wixStyleReact.anon.`3`
 import org.scalablytyped.runtime.StObject
@@ -44,11 +44,6 @@ object distTypesCardGalleryItemCardGalleryItemMod {
       @js.native
       def primaryActionProps: `3` = js.native
       inline def primaryActionProps_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryActionProps")(x.asInstanceOf[js.Any])
-      
-      @JSImport("wix-style-react/dist/types/CardGalleryItem/CardGalleryItem", "default.defaultProps.secondaryActionProps")
-      @js.native
-      def secondaryActionProps: `3` = js.native
-      inline def secondaryActionProps_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryActionProps")(x.asInstanceOf[js.Any])
       
       @JSImport("wix-style-react/dist/types/CardGalleryItem/CardGalleryItem", "default.defaultProps.size")
       @js.native
@@ -155,8 +150,8 @@ object distTypesCardGalleryItemCardGalleryItemMod {
       /** Defines properties for the secondary action button. */
       @JSImport("wix-style-react/dist/types/CardGalleryItem/CardGalleryItem", "default.propTypes.secondaryActionProps")
       @js.native
-      def secondaryActionProps: Validator[InferProps[LabelOnClick]] = js.native
-      inline def secondaryActionProps_=(x: Validator[InferProps[LabelOnClick]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryActionProps")(x.asInstanceOf[js.Any])
+      def secondaryActionProps: Requireable[InferProps[LabelOnClick]] = js.native
+      inline def secondaryActionProps_=(x: Requireable[InferProps[LabelOnClick]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryActionProps")(x.asInstanceOf[js.Any])
       
       /** Defines a popover menu to be displayed on hover at the top right corner or a card. */
       @JSImport("wix-style-react/dist/types/CardGalleryItem/CardGalleryItem", "default.propTypes.settingsMenu")
@@ -201,6 +196,10 @@ object distTypesCardGalleryItemCardGalleryItemMod {
     
     def _hasFooter(): Boolean = js.native
     
+    def _onBlur(): Unit = js.native
+    
+    def _onFocus(): Unit = js.native
+    
     def _onMouseEnter(): Unit = js.native
     
     def _onMouseLeave(): Unit = js.native
@@ -216,6 +215,6 @@ object distTypesCardGalleryItemCardGalleryItemMod {
     def _renderSettingsMenu(): Element = js.native
     
     @JSName("state")
-    var state_CardGalleryItem: IsHovered = js.native
+    var state_CardGalleryItem: IsFocused = js.native
   }
 }

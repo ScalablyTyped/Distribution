@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetUpgradeHistoryRequest extends StObject {
   
+  /**
+    * The name of an existing domain.
+    */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
   
+  /**
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
+    */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsOpensearchMod.MaxResults] = js.undefined
   
+  /**
+    * If your initial GetUpgradeHistory operation returns a nextToken, you can include the returned nextToken in subsequent GetUpgradeHistory operations, which returns results in the next page.
+    */
   var NextToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NextToken] = js.undefined
 }
 object GetUpgradeHistoryRequest {

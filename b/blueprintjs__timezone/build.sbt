@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__timezone"
-version := "4.5.8-dacdd8"
+version := "4.5.10-c092bb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

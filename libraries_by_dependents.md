@@ -1473,7 +1473,6 @@
 | 0.0 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect
 | 0.0 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
 | 0.0 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect
-| 0.0 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.0 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con
 | 0.0 | [connect-redis](./c/connect-redis) | Redis session store for Connect
 | 0.0 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i
@@ -1765,7 +1764,6 @@
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
-| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
@@ -1984,6 +1982,7 @@
 | 0.0 | [detect-character-encoding](./d/detect-character-encoding) | Detect character encoding using ICU
 | 0.0 | [detect-emoji-support](./d/detect-emoji-support) | Detect support for emoji character sets.
 | 0.0 | [detect-hover](./d/detect-hover) | JavaScript wrapper for hover and any-hover media q
+| 0.0 | [detect-inapp](./d/detect-inapp) | detect browser or in-app information for mobile
 | 0.0 | [detect-indent](./d/detect-indent) | Detect the indentation of code
 | 0.0 | [detect-it](./d/detect-it) | Detect if a device is mouse only, touch only, or h
 | 0.0 | [detect-libc](./d/detect-libc) | Node.js module to detect the C standard library (l
@@ -3919,7 +3918,6 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
-| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -4945,6 +4943,7 @@
 | 0.0 | [koa-helmet](./k/koa-helmet) | Security header middleware collection for koa
 | 0.0 | [koa-html-minifier](./k/koa-html-minifier) | minify HTML responses like some crazy guy
 | 0.0 | [koa-ignore](./k/koa-ignore) | Koa middleware to make other middleware conditiona
+| 0.0 | [koa-is-json](./k/koa-is-json) | check if a koa body should be interpreted as JSON
 | 0.0 | [koa-joi-router](./k/koa-joi-router) | Configurable, input validated routing for koa.
 | 0.0 | [koa-joi-router-docs](./k/koa-joi-router-docs) | OpenAPI(aka Swagger) API docs generator for koa-jo
 | 0.0 | [koa-json](./k/koa-json) | pretty (non-compressed) json response middleware
@@ -4954,7 +4953,6 @@
 | 0.0 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware
 | 0.0 | [koa-logger](./k/koa-logger) | Logging middleware for koa
 | 0.0 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
-| 0.0 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.0 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa
 | 0.0 | [koa-mount](./k/koa-mount) | Mounting middleware for koa
 | 0.0 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko
@@ -9296,7 +9294,6 @@
 | 0.0 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg
 | 0.0 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly
 | 0.0 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support
-| 0.0 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.0 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server
 | 0.0 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.0 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli
@@ -9529,8 +9526,10 @@
 | 0.0 | [sha256](./s/sha256) | Compute SHA256 of bytes or strings.
 | 0.0 | [sha256-file](./s/sha256-file) | return an sha256sum of a given file
 | 0.0 | [sha256-universal](./s/sha256-universal) | Sha256 hashing algorithm in both WASM and pure JS
+| 0.0 | [sha256-wasm](./s/sha256-wasm) | WebAssembly implementation of SHA-256
 | 0.0 | [sha3](./s/sha3) | The Keccak family of hashing algorithms.
 | 0.0 | [sha512-universal](./s/sha512-universal) | Sha512 implemented in both WASM and pure JS
+| 0.0 | [sha512-wasm](./s/sha512-wasm) | sha512 hashing algorithm implemented in WebAssembl
 | 0.0 | [sha_dot_js](./s/sha_dot_js) | Streamable SHA hashes in pure javascript
 | 0.0 | [shade-blend-color](./s/shade-blend-color) | This will take a HEX or RGB web color, shade it da
 | 0.0 | [shakacode__recompose](./s/shakacode__recompose) | A React utility belt for function components and h
@@ -9594,7 +9593,6 @@
 | 0.0 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic
 | 0.0 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for
 | 0.0 | [simperium](./s/simperium) | A simperium client for node.js
-| 0.0 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v
 | 0.0 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign
 | 0.0 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 0.0 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab
@@ -10168,7 +10166,6 @@
 | 0.0 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 0.0 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects
 | 0.0 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
-| 0.0 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.0 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg
 | 0.0 | [swagger-ui](./s/swagger-ui) | -
 | 0.0 | [swagger-ui-dist](./s/swagger-ui-dist) | -
@@ -10323,7 +10320,6 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
-| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
@@ -10699,7 +10695,6 @@
 | 0.0 | [umijs__ssr-darkreader](./u/umijs__ssr-darkreader) | Dark mode for every website
 | 0.0 | [umijs__use-params](./u/umijs__use-params) | -
 | 0.0 | [umtrack-wx](./u/umtrack-wx) | 微信小程序友盟统计SDK
-| 0.0 | [umzug](./u/umzug) | Framework-agnostic migration tool for Node
 | 0.0 | [unbox-primitive](./u/unbox-primitive) | Unbox a boxed JS primitive value.
 | 0.0 | [unbzip2-stream](./u/unbzip2-stream) | streaming unbzip2 implementation in pure javascrip
 | 0.0 | [unc-path-regex](./u/unc-path-regex) | Regular expression for testing if a file path is a
@@ -10710,6 +10705,7 @@
 | 0.0 | [undertaker](./u/undertaker) | Task registry that allows composition through seri
 | 0.0 | [undertaker-registry](./u/undertaker-registry) | Default registry in gulp 4.
 | 0.0 | [undici](./u/undici) | An HTTP/1.1 client, written from scratch for Node.
+| 0.0 | [unescape-js](./u/unescape-js) | Unescape JavaScript special characters
 | 0.0 | [unfetch](./u/unfetch) | Bare minimum fetch polyfill in 500 bytes
 | 0.0 | [ungap__create-content](./u/ungap__create-content) | A cross browser utility to create HTML or SVG runt
 | 0.0 | [ungap__global-this](./u/ungap__global-this) | A cross engine globalThis.
@@ -11518,7 +11514,6 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
-| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman

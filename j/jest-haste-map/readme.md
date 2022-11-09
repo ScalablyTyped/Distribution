@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-haste-map
 
-Typings are for version 29.3.0
+Typings are for version 29.3.1
 
 
 

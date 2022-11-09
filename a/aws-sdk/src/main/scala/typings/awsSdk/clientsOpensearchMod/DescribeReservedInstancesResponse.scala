@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeReservedInstancesResponse extends StObject {
   
   /**
-    * Provides an identifier to allow retrieval of paginated results.
+    * When nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * List of reserved OpenSearch instances.
+    * List of Reserved Instances in the current Region.
     */
   var ReservedInstances: js.UndefOr[ReservedInstanceList] = js.undefined
 }

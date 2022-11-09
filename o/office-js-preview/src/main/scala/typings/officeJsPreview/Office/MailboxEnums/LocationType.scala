@@ -19,7 +19,11 @@ sealed trait LocationType extends StObject
 object LocationType extends StObject {
   
   /**
-    * A custom location.
+    * A custom location. Custom locations don't have an SMTP address.
+    * 
+    * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
+    * added as appointment locations aren't returned by the
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1) | EnhancedLocation.getAsync} method.
     */
   @js.native
   sealed trait Custom
@@ -27,7 +31,7 @@ object LocationType extends StObject {
        with LocationType
   
   /**
-    * A conference room or similar resource.
+    * A conference room or similar resource that has an SMTP address.
     */
   @js.native
   sealed trait Room

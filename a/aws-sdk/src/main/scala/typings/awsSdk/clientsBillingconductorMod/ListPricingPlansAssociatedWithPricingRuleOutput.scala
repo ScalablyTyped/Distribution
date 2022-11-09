@@ -17,7 +17,7 @@ trait ListPricingPlansAssociatedWithPricingRuleOutput extends StObject {
   var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
-    *  The list containing pricing plans associated with the requested pricing rule. 
+    *  The list containing pricing plans that are associated with the requested pricing rule. 
     */
   var PricingPlanArns: js.UndefOr[typings.awsSdk.clientsBillingconductorMod.PricingPlanArns] = js.undefined
   

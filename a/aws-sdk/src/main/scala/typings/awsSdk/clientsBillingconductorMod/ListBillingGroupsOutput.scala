@@ -12,7 +12,7 @@ trait ListBillingGroupsOutput extends StObject {
   var BillingGroups: js.UndefOr[BillingGroupList] = js.undefined
   
   /**
-    * The pagination token used on subsequent calls to get billing groups. 
+    * The pagination token that's used on subsequent calls to get billing groups. 
     */
   var NextToken: js.UndefOr[Token] = js.undefined
 }

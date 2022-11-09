@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelServiceSoftwareUpdateRequest extends StObject {
   
   /**
-    * The name of the domain that you want to stop the latest service software update on.
+    * Name of the OpenSearch Service domain that you want to cancel the service software update on.
     */
   var DomainName: typings.awsSdk.clientsOpensearchMod.DomainName
 }

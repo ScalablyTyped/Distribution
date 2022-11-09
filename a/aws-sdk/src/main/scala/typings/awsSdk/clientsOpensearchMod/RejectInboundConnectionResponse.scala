@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RejectInboundConnectionResponse extends StObject {
   
   /**
-    * The  InboundConnection  of the rejected inbound connection. 
+    * Contains details about the rejected inbound connection.
     */
   var Connection: js.UndefOr[InboundConnection] = js.undefined
 }

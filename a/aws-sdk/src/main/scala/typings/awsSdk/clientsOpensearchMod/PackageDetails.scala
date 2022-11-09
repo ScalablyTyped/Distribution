@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PackageDetails extends StObject {
   
+  /**
+    * The package version.
+    */
   var AvailablePackageVersion: js.UndefOr[PackageVersion] = js.undefined
   
   /**
-    * The timestamp of when the package was created.
+    * The timestamp when the package was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -18,6 +21,9 @@ trait PackageDetails extends StObject {
     */
   var ErrorDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ErrorDetails] = js.undefined
   
+  /**
+    * Date and time when the package was last updated.
+    */
   var LastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
@@ -26,7 +32,7 @@ trait PackageDetails extends StObject {
   var PackageDescription: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageDescription] = js.undefined
   
   /**
-    * Internal ID of the package.
+    * The unique identifier of the package.
     */
   var PackageID: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageID] = js.undefined
   
@@ -36,12 +42,12 @@ trait PackageDetails extends StObject {
   var PackageName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageName] = js.undefined
   
   /**
-    * Current state of the package. Values are COPYING, COPY_FAILED, AVAILABLE, DELETING, and DELETE_FAILED.
+    * Current status of the package.
     */
   var PackageStatus: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageStatus] = js.undefined
   
   /**
-    * Currently supports only TXT-DICTIONARY.
+    * The type of package.
     */
   var PackageType: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageType] = js.undefined
 }

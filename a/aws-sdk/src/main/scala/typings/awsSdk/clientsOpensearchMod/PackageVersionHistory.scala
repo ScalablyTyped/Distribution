@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PackageVersionHistory extends StObject {
   
   /**
-    * A message associated with the package version.
+    * A message associated with the package version when it was uploaded.
     */
   var CommitMessage: js.UndefOr[typings.awsSdk.clientsOpensearchMod.CommitMessage] = js.undefined
   
   /**
-    * The timestamp of when the package was created.
+    * The date and time when the package was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   

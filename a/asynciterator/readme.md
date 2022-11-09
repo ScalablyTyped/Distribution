@@ -1,7 +1,7 @@
 
 # Scala.js typings for asynciterator
 
-Typings are for version 3.7.1
+Typings are for version 3.8.0
 
 ## Library description:
 An asynchronous iterator library for advanced object pipelines.

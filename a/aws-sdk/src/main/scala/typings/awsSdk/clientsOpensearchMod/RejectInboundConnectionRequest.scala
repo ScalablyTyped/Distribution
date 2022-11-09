@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RejectInboundConnectionRequest extends StObject {
   
   /**
-    * The ID of the inbound connection to reject.
+    * The unique identifier of the inbound connection to reject.
     */
   var ConnectionId: typings.awsSdk.clientsOpensearchMod.ConnectionId
 }

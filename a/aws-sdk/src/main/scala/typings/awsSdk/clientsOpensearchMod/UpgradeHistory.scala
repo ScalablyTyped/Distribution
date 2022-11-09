@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpgradeHistory extends StObject {
   
   /**
-    * UTC timestamp at which the upgrade API call was made in "yyyy-MM-ddTHH:mm:ssZ" format.
+    * UTC timestamp at which the upgrade API call was made, in the format yyyy-MM-ddTHH:mm:ssZ.
     */
   var StartTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  A list of  UpgradeStepItem  s representing information about each step performed as part of a specific upgrade or upgrade eligibility check. 
+    * A list of each step performed as part of a specific upgrade or upgrade eligibility check.
     */
   var StepsList: js.UndefOr[UpgradeStepsList] = js.undefined
   
   /**
-    * A string that briefly describes the upgrade.
+    * A string that describes the upgrade.
     */
   var UpgradeName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.UpgradeName] = js.undefined
   
   /**
-    *  The current status of the upgrade. The status can take one of the following values:  In Progress Succeeded Succeeded with Issues Failed  
+    *  The current status of the upgrade. The status can take one of the following values:    In Progress   Succeeded   Succeeded with Issues   Failed  
     */
   var UpgradeStatus: js.UndefOr[typings.awsSdk.clientsOpensearchMod.UpgradeStatus] = js.undefined
 }

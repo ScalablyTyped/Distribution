@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__dev-server
 
-Typings are for version 0.1.120
+Typings are for version 0.1.123
 
 ## Library description:
 Development servers for starting React Native projects

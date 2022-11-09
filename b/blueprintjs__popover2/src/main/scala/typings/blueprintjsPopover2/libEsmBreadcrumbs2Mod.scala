@@ -6,7 +6,7 @@ import typings.blueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbMod.Breadcru
 import typings.blueprintjsCore.mod.AbstractPureComponent2
 import typings.blueprintjsPopover2.anon.PartialBreadcrumbs2Props
 import typings.blueprintjsPopover2.anon.PartialOmitOverflowListPr
-import typings.blueprintjsPopover2.anon.PartialOmitPopover2PropsH
+import typings.blueprintjsPopover2.anon.PartialOmitPopover2PropsD
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -94,7 +94,7 @@ object libEsmBreadcrumbs2Mod {
     /**
       * Props to spread to the popover showing the overflow menu.
       */
-    var popoverProps: js.UndefOr[PartialOmitPopover2PropsH] = js.undefined
+    var popoverProps: js.UndefOr[PartialOmitPopover2PropsD] = js.undefined
   }
   object Breadcrumbs2Props {
     
@@ -129,7 +129,7 @@ object libEsmBreadcrumbs2Mod {
       
       inline def setOverflowListPropsUndefined: Self = StObject.set(x, "overflowListProps", js.undefined)
       
-      inline def setPopoverProps(value: PartialOmitPopover2PropsH): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: PartialOmitPopover2PropsD): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
     }

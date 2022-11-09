@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribePackagesFilter extends StObject {
   
   /**
-    * Any field from PackageDetails. 
+    * Any field from PackageDetails.
     */
   var Name: js.UndefOr[DescribePackagesFilterName] = js.undefined
   
   /**
-    * A list of values for the specified field.
+    * A list of values for the specified filter field.
     */
   var Value: js.UndefOr[DescribePackagesFilterValues] = js.undefined
 }

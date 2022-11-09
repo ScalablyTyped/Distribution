@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeOutboundConnectionsRequest extends StObject {
   
   /**
-    *  A list of filters used to match properties for outbound cross-cluster connections. Available  Filter  names for this operation are:  connection-id remote-domain-info.domain-name remote-domain-info.owner-id remote-domain-info.region local-domain-info.domain-name  
+    * List of filter names and values that you can use for requests.
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * Set this value to limit the number of results returned. If not specified, defaults to 100.
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsOpensearchMod.MaxResults] = js.undefined
   
   /**
-    * NextToken is sent in case the earlier API call results contain the NextToken parameter. Used for pagination.
+    * If your initial DescribeOutboundConnections operation returns a nextToken, you can include the returned nextToken in subsequent DescribeOutboundConnections operations, which returns results in the next page.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NextToken] = js.undefined
 }

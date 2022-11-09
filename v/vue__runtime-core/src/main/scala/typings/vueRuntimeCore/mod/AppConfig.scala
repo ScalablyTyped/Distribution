@@ -27,14 +27,15 @@ trait AppConfig extends StObject {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        js.Object
       ]) | Null, 
       /* info */ String, 
       Unit
     ]
   ] = js.undefined
   
-  var globalProperties: Record[String, Any]
+  var globalProperties: ComponentCustomProperties & (Record[String, Any])
   
   /**
     * @deprecated use config.compilerOptions.isCustomElement
@@ -66,7 +67,8 @@ trait AppConfig extends StObject {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        js.Object
       ]) | Null, 
       /* trace */ String, 
       Unit
@@ -77,7 +79,7 @@ object AppConfig {
   
   inline def apply(
     compilerOptions: RuntimeCompilerOptions,
-    globalProperties: Record[String, Any],
+    globalProperties: ComponentCustomProperties & (Record[String, Any]),
     optionMergeStrategies: Record[String, OptionMergeFunction],
     performance: Boolean
   ): AppConfig = {
@@ -100,13 +102,14 @@ object AppConfig {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          js.Object
         ]) | Null, /* info */ String) => Unit
     ): Self = StObject.set(x, "errorHandler", js.Any.fromFunction3(value))
     
     inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
-    inline def setGlobalProperties(value: Record[String, Any]): Self = StObject.set(x, "globalProperties", value.asInstanceOf[js.Any])
+    inline def setGlobalProperties(value: ComponentCustomProperties & (Record[String, Any])): Self = StObject.set(x, "globalProperties", value.asInstanceOf[js.Any])
     
     inline def setIsCustomElement(value: /* tag */ String => Boolean): Self = StObject.set(x, "isCustomElement", js.Any.fromFunction1(value))
     
@@ -135,7 +138,8 @@ object AppConfig {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          js.Object
         ]) | Null, /* trace */ String) => Unit
     ): Self = StObject.set(x, "warnHandler", js.Any.fromFunction3(value))
     

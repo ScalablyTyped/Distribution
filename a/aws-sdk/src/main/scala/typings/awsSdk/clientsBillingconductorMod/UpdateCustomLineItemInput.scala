@@ -26,7 +26,7 @@ trait UpdateCustomLineItemInput extends StObject {
   /**
     *  The new name for the custom line item. 
     */
-  var Name: js.UndefOr[BillingGroupName] = js.undefined
+  var Name: js.UndefOr[CustomLineItemName] = js.undefined
 }
 object UpdateCustomLineItemInput {
   
@@ -51,7 +51,7 @@ object UpdateCustomLineItemInput {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setName(value: BillingGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CustomLineItemName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }

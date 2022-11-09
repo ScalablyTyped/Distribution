@@ -24,7 +24,7 @@ object distTypesMultiSelectMultiSelectDotuniDotdriverMod {
     
     var element: js.Function0[js.Promise[Any]] = js.native
     
-    def exists(): js.Promise[Unit] = js.native
+    def exists(): js.Promise[Boolean] = js.native
     @JSName("exists")
     var exists_FMultiSelectUniDriver: js.Function0[js.Promise[Boolean]] = js.native
     

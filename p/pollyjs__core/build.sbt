@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "pollyjs__core"
-version := "6.0.5-316c91"
+version := "6.0.5-70b7e0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "loglevel" % "1.8.0-8a2d46",
+  "org.scalablytyped" %%% "loglevel" % "1.8.1-34f6e8",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "pollyjs__persister" % "6.0.5-d7fa1f",
   "org.scalablytyped" %%% "set-cookie-parser" % "2.4-dt-20211223Z-1295a3",

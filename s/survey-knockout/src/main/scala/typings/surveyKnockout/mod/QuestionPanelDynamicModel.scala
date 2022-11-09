@@ -25,37 +25,52 @@ open class QuestionPanelDynamicModel protected ()
   var addingNewPanelsValue: Any = js.native
   
   /*
-    * Set this property to false to hide the 'Add New' button
+    * Specifies whether users are allowed to add new panels.
+    * 
+    * Default value: `true`
     */
   def allowAddPanel: Boolean = js.native
   def allowAddPanel_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Set this property to false to hide the 'Remove' button
+    * Specifies whether users are allowed to delete panels.
+    * 
+    * Default value: `true`
     */
   def allowRemovePanel: Boolean = js.native
   def allowRemovePanel_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Returns true when an end user may add a new panel. The question is not read only and panelCount less than maxPanelCount
-    * and renderMode is "list" or the current panel doesn't have any errors
+    * Indicates whether it is possible to add a new panel.
+    * 
+    * This property returns `true` when all of the following conditions apply:
+    * 
+    * - Users are allowed to add new panels (`allowAddPanel` is `true`).
+    * - Dynamic Panel or its parent survey is not in read-only state.
+    * - `panelCount` is less than `maxPanelCount`.
     */
   def canAddPanel: Boolean = js.native
   
   /*
-    * Returns true when an end user may remove a panel. The question is not read only and panelCount is more than minPanelCount
+    * Indicates whether it is possible to delete panels.
+    * 
+    * This property returns `true` when all of the following conditions apply:
+    * 
+    * - Users are allowed to delete panels (`allowRemovePanel` is `true`).
+    * - Dynamic Panel or its parent survey is not in read-only state.
+    * - `panelCount` exceeds `minPanelCount`.
     */
   def canRemovePanel: Boolean = js.native
   
   var changingValueQuestion: Question = js.native
   
   /*
-    * Set it to true, to show a confirmation dialog on removing a panel
+    * Specifies whether to display a confirmation dialog when a respondent wants to delete a panel.
     */
   def confirmDelete: Boolean = js.native
   
   /*
-    * Use this property to change the default text showing in the confirmation delete dialog on removing a panel.
+    * A message displayed in a confirmation dialog that appears when a respondent wants to delete a panel.
     */
   def confirmDeleteText: String = js.native
   def confirmDeleteText_=(`val`: String): Unit = js.native
@@ -69,7 +84,9 @@ open class QuestionPanelDynamicModel protected ()
   /* protected */ def createNewPanelObject(): PanelModel = js.native
   
   /*
-    * The index of current active dynamical panel when the renderMode is not "list". If there is no dymamic panel (panelCount = 0) or renderMode equals "list" it returns -1, otherwise it returns a value from 0 to panelCount - 1.
+    * A zero-based index of the currently displayed panel.
+    * 
+    * When `renderMode` is `"list"` or Dynamic Panel is empty (`panelCount` is 0), this property contains -1.
     */
   def currentIndex: Double = js.native
   
@@ -80,7 +97,9 @@ open class QuestionPanelDynamicModel protected ()
   def currentIndex_=(`val`: Double): Unit = js.native
   
   /*
-    * The current active dynamical panel when the renderMode is not "list". If there is no dymamic panel (panelCount = 0) or renderMode equals "list" it returns null.
+    * A `PanelModel` object that is the currently displayed panel.
+    * 
+    * When `renderMode` is `"list"` or Dynamic Panel is empty (`panelCount` is 0), this property contains `null`.
     */
   def currentPanel: PanelModel = js.native
   
@@ -91,8 +110,9 @@ open class QuestionPanelDynamicModel protected ()
   def defaultPanelValue_=(`val`: Any): Unit = js.native
   
   /*
-    * Set it to true to copy the value into new added panel from the last panel. If defaultPanelValue is set and this property equals to true,
-    * then the value for new added panel is merging.
+    * Specifies whether default values for a new panel should be copied from the last panel.
+    * 
+    * If you also specify `defaultValue`, it will be merged with the copied values.
     */
   def defaultValueFromLastPanel: Boolean = js.native
   def defaultValueFromLastPanel_=(`val`: Boolean): Unit = js.native
@@ -147,13 +167,12 @@ open class QuestionPanelDynamicModel protected ()
   override def getType(): String = js.native
   
   /*
-    * Goes to the next panel in the PanelDynamic
-    * Returns true, if it can move to the next panel. It can return false if the renderMode is "list" or the current panel has errors.
+    * Switches Dynamic Panel to the next panel. Returns `true` in case of success, or `false` if `renderMode` is `"list"` or the current panel contains validation errors.
     */
   def goToNextPanel(): Boolean = js.native
   
   /*
-    * Goes to the previous panel in the PanelDynamic
+    * Switches Dynamic Panel to the previous panel.
     */
   def goToPrevPanel(): Unit = js.native
   
@@ -162,12 +181,12 @@ open class QuestionPanelDynamicModel protected ()
   var isNewPanelsValueChanged: Boolean = js.native
   
   /*
-    * Returns true when currentIndex is more than or equal 0 and less than panelCount - 1.
+    * Indicates whether the Next button is visible.
     */
   def isNextButtonShowing: Boolean = js.native
   
   /*
-    * Returns true when currentIndex is more than 0.
+    * Indicates whether the Previous button is visible.
     */
   def isPrevButtonShowing: Boolean = js.native
   
@@ -186,9 +205,6 @@ open class QuestionPanelDynamicModel protected ()
     */
   def isRangeShowing: Boolean = js.native
   
-  /*
-    * Returns true when renderMode equals to "list".
-    */
   def isRenderModeList: Boolean = js.native
   
   var isSetPanelItemData: Any = js.native
@@ -198,13 +214,15 @@ open class QuestionPanelDynamicModel protected ()
   /* protected */ def items: Any = js.native
   
   /*
-    * The duplication value error text. Set it to show the text different from the default.
+    * An error message displayed when users enter a duplicate value into a question that accepts only unique values (`isUnique` is set to `true` or `keyName` is specified).
+    * 
+    * A default value for this property is taken from a [localization dictionary](https://github.com/surveyjs/survey-library/tree/master/src/localization). Refer to the following help topic for more information: [Localization & Globalization](https://surveyjs.io/form-library/documentation/localization).
     */
   def keyDuplicationError: String = js.native
   def keyDuplicationError_=(`val`: String): Unit = js.native
   
   /*
-    * Set it to a question name used in the template panel and the library shows duplication error, if there are same values in different panels of this question.
+    * Specifies a key question. Set this property to the name of a question used in the template, and Dynamic Panel will display `keyDuplicationError` if a user tries to enter a duplicate value in this question.
     */
   def keyName: String = js.native
   def keyName_=(`val`: String): Unit = js.native
@@ -235,34 +253,40 @@ open class QuestionPanelDynamicModel protected ()
   def locTemplateTitle: LocalizableString = js.native
   
   /*
-    * The maximum panel count. A user could not add a panel if the panelCount equals to maxPanelCount
+    * A maximum number of panels in Dynamic Panel. Users cannot add new panels if `panelCount` equals `maxPanelCount`.
+    * 
+    * Default value: 100 (inherited from [`settings.panelMaximumPanelCount`](https://surveyjs.io/form-library/documentation/settings#panelMaximumPanelCount))
     */
   def maxPanelCount: Double = js.native
   def maxPanelCount_=(`val`: Double): Unit = js.native
   
   /*
-    * The minimum panel count. A user could not delete a panel if the panelCount equals to minPanelCount
+    * A minimum number of panels in Dynamic Panel. Users cannot delete panels if `panelCount` equals `minPanelCount`.
+    * 
+    * Default value: 0
     */
   def minPanelCount: Double = js.native
   def minPanelCount_=(`val`: Double): Unit = js.native
   
   /*
-    * A text displayed when the dynamic panel contains no entries. Applies only in the Default V2 theme.
+    * A text displayed when Dynamic Panel contains no entries. Applies only in the Default V2 theme.
     */
   def noEntriesText: String = js.native
   def noEntriesText_=(`val`: String): Unit = js.native
+  
+  var onReadyChangedCallback: Any = js.native
   
   /* InferMemberOverrides */
   override def onSurveyLoad(): Unit & Any = js.native
   
   /*
-    * Use this property to change the default value of add panel button text.
+    * A caption for the Add Panel button.
     */
   def panelAddText: String = js.native
   def panelAddText_=(`val`: String): Unit = js.native
   
   /*
-    * Use this property to get/set the number of dynamic panels.
+    * The number of panels in Dynamic Panel.
     */
   def panelCount: Double = js.native
   
@@ -271,41 +295,48 @@ open class QuestionPanelDynamicModel protected ()
   def panelCount_=(`val`: Double): Unit = js.native
   
   /*
-    * Use this property to change the default next button text. Next button shows the next panel, change the currentPanel, when the renderMode doesn't equal to "list".
+    * A caption for the Next button. Applies only if `renderMode` is different from `"list"`.
     */
   def panelNextText: String = js.native
   def panelNextText_=(`val`: String): Unit = js.native
   
   /*
-    * Use this property to change the default previous button text. Previous button shows the previous panel, change the currentPanel, when the renderMode doesn't equal to "list".
+    * A caption for the Previous button. Applies only if `renderMode` is different from `"list"`.
     */
   def panelPrevText: String = js.native
   def panelPrevText_=(`val`: String): Unit = js.native
   
   /*
-    * Use this property to change the location of the remove button relative to the panel.
-    * By default the value is "bottom". You may set it to "right" and remove button will appear to the right of the panel.
+    * Specifies the location of the Delete Panel button relative to panel content.
+    * 
+    * Possible values:
+    * 
+    * - `"bottom"` (default) - Displays the Delete Panel button below panel content.
+    * - `"right"` - Displays the Delete Panel button to the right of panel content.
     */
   def panelRemoveButtonLocation: String = js.native
   def panelRemoveButtonLocation_=(`val`: String): Unit = js.native
   
   /*
-    * Use this property to change the default value of remove panel button text.
+    * A caption for the Delete Panel button.
     */
   def panelRemoveText: String = js.native
   def panelRemoveText_=(`val`: String): Unit = js.native
   
   /*
-    * The array of dynamic panels created based on panel template
+    * An array of `PanelModel` objects created based on the template panel.
     */
   def panels: Any = js.native
   
   /*
-    * Use this property to allow the end-user to collapse/expand the panels. It works only if the renderMode property equals to "list" and templateTitle property is not empty. The following values are available:
-    * default - the default value. User can't collapse/expand panels
-    * expanded - User can collapse/expand panels and all panels are expanded by default
-    * collapsed - User can collapse/expand panels and all panels are collapsed by default
-    * firstExpanded - User can collapse/expand panels. The first panel is expanded and others are collapsed
+    * Specifies whether users can expand and collapse panels. Applies if `renderMode` is `"list"` and the `templateTitle` property is specified.
+    * 
+    * Possible values:
+    * 
+    * - `"default"` (default) - All panels are displayed in full and cannot be collapsed.
+    * - `"expanded"` - All panels are displayed in full and can be collapsed in the UI.
+    * - `"collapsed"` - All panels display only their titles and descriptions and can be expanded in the UI.
+    * - `"firstExpanded"` - Only the first panel is displayed in full; other panels are collapsed and can be expanded in the UI.
     */
   def panelsState: String = js.native
   def panelsState_=(`val`: String): Unit = js.native
@@ -315,6 +346,8 @@ open class QuestionPanelDynamicModel protected ()
   def progressText: String = js.native
   
   /* protected */ def rebuildPanels(): Unit = js.native
+  
+  def recalculateIsReadyValue(): Unit = js.native
   
   /*
     * Removes a dynamic panel from the panels array.
@@ -354,28 +387,34 @@ open class QuestionPanelDynamicModel protected ()
   def showRangeInProgress_=(`val`: Boolean): Unit = js.native
   
   /*
-    * The template Panel. This panel is used as a template on creatign dynamic panels
+    * A `PanelModel` object used as a template to create dynamic panels.
     */
   def template: PanelModel = js.native
   
   /*
-    * The template Panel description property.
+    * A description for the template panel.
     */
   def templateDescription: String = js.native
   def templateDescription_=(`val`: String): Unit = js.native
   
   /*
-    * The template Panel elements, questions and panels.
+    * An array of questions and panels included in the template panel.
     */
   def templateElements: Any = js.native
   
   /*
-    * The template Panel title property.
+    * A title for the template panel.
     */
   def templateTitle: String = js.native
   
   /*
-    * Set this property different from "default" to set the specific question title location for the template questions.
+    * Gets or sets the location of question titles within the template panel relative to their input fields.
+    * 
+    * - `"default"` (default) - Inherits the setting from the Dynamic Panel's `titleLocation` property, which in turn inherits the [`questionTitleLocation`](https://surveyjs.io/form-library/documentation/surveymodel#questionTitleLocation) property value specified for the Dynamic Panel's container (page or survey).
+    * - `"top"` - Displays question titles above input fields.
+    * - `"bottom"` - Displays question titles below input fields.
+    * - `"left"` - Displays question titles to the left of input fields.
+    * - `"hidden"` - Hides question titles.
     */
   def templateTitleLocation: String = js.native
   def templateTitleLocation_=(`val`: String): Unit = js.native

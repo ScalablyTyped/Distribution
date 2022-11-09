@@ -17,7 +17,7 @@ trait WebBrowserOpenOptions extends StObject {
   var browserPackage: js.UndefOr[String] = js.undefined
   
   /**
-    * Tint color for controls in SKSafariViewController in `#AARRGGBB` or `#RRGGBB` format.
+    * Tint color for controls in SKSafariViewController. Supports React Native [color formats](https://reactnative.dev/docs/colors).
     * @platform ios
     */
   var controlsColor: js.UndefOr[String] = js.undefined
@@ -62,7 +62,7 @@ trait WebBrowserOpenOptions extends StObject {
   var readerMode: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Color of the secondary toolbar in either `#AARRGGBB` or `#RRGGBB` format.
+    * Color of the secondary toolbar. Supports React Native [color formats](https://reactnative.dev/docs/colors).
     * @platform android
     */
   var secondaryToolbarColor: js.UndefOr[String] = js.undefined
@@ -82,7 +82,7 @@ trait WebBrowserOpenOptions extends StObject {
   var showTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Color of the toolbar in either `#AARRGGBB` or `#RRGGBB` format.
+    * Color of the toolbar. Supports React Native [color formats](https://reactnative.dev/docs/colors).
     */
   var toolbarColor: js.UndefOr[String] = js.undefined
   

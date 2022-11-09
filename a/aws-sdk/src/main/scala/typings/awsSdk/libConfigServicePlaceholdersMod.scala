@@ -512,6 +512,8 @@ object libConfigServicePlaceholdersMod {
     
     var resiliencehub: js.UndefOr[typings.awsSdk.clientsResiliencehubMod.ClientConfiguration] = js.native
     
+    var resourceexplorer2: js.UndefOr[typings.awsSdk.clientsResourceexplorer2Mod.ClientConfiguration] = js.native
+    
     var resourcegroups: js.UndefOr[typings.awsSdk.clientsResourcegroupsMod.ClientConfiguration] = js.native
     
     var resourcegroupstaggingapi: js.UndefOr[typings.awsSdk.clientsResourcegroupstaggingapiMod.ClientConfiguration] = js.native
@@ -1152,6 +1154,8 @@ object libConfigServicePlaceholdersMod {
     var rekognition: js.UndefOr[typings.awsSdk.clientsRekognitionMod.apiVersion] = js.undefined
     
     var resiliencehub: js.UndefOr[typings.awsSdk.clientsResiliencehubMod.apiVersion] = js.undefined
+    
+    var resourceexplorer2: js.UndefOr[typings.awsSdk.clientsResourceexplorer2Mod.apiVersion] = js.undefined
     
     var resourcegroups: js.UndefOr[typings.awsSdk.clientsResourcegroupsMod.apiVersion] = js.undefined
     
@@ -2299,6 +2303,10 @@ object libConfigServicePlaceholdersMod {
       inline def setResiliencehub(value: typings.awsSdk.clientsResiliencehubMod.apiVersion): Self = StObject.set(x, "resiliencehub", value.asInstanceOf[js.Any])
       
       inline def setResiliencehubUndefined: Self = StObject.set(x, "resiliencehub", js.undefined)
+      
+      inline def setResourceexplorer2(value: typings.awsSdk.clientsResourceexplorer2Mod.apiVersion): Self = StObject.set(x, "resourceexplorer2", value.asInstanceOf[js.Any])
+      
+      inline def setResourceexplorer2Undefined: Self = StObject.set(x, "resourceexplorer2", js.undefined)
       
       inline def setResourcegroups(value: typings.awsSdk.clientsResourcegroupsMod.apiVersion): Self = StObject.set(x, "resourcegroups", value.asInstanceOf[js.Any])
       

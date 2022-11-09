@@ -633,6 +633,8 @@ trait ConfigurationOptionsConfi
   
   var resiliencehub: js.UndefOr[typings.awsSdk.clientsResiliencehubMod.ClientConfiguration] = js.undefined
   
+  var resourceexplorer2: js.UndefOr[typings.awsSdk.clientsResourceexplorer2Mod.ClientConfiguration] = js.undefined
+  
   var resourcegroups: js.UndefOr[typings.awsSdk.clientsResourcegroupsMod.ClientConfiguration] = js.undefined
   
   var resourcegroupstaggingapi: js.UndefOr[typings.awsSdk.clientsResourcegroupstaggingapiMod.ClientConfiguration] = js.undefined
@@ -1959,6 +1961,10 @@ object ConfigurationOptionsConfi {
     inline def setResiliencehub(value: typings.awsSdk.clientsResiliencehubMod.ClientConfiguration): Self = StObject.set(x, "resiliencehub", value.asInstanceOf[js.Any])
     
     inline def setResiliencehubUndefined: Self = StObject.set(x, "resiliencehub", js.undefined)
+    
+    inline def setResourceexplorer2(value: typings.awsSdk.clientsResourceexplorer2Mod.ClientConfiguration): Self = StObject.set(x, "resourceexplorer2", value.asInstanceOf[js.Any])
+    
+    inline def setResourceexplorer2Undefined: Self = StObject.set(x, "resourceexplorer2", js.undefined)
     
     inline def setResourcegroups(value: typings.awsSdk.clientsResourcegroupsMod.ClientConfiguration): Self = StObject.set(x, "resourcegroups", value.asInstanceOf[js.Any])
     

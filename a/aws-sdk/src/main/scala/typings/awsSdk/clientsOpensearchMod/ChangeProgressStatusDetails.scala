@@ -17,12 +17,12 @@ trait ChangeProgressStatusDetails extends StObject {
   var ChangeProgressStages: js.UndefOr[ChangeProgressStageList] = js.undefined
   
   /**
-    * The list of properties involved in the domain configuration change that are completed.
+    * The list of properties in the domain configuration change that have completed.
     */
   var CompletedProperties: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The list of properties involved in the domain configuration change that are still in pending.
+    * The list of properties in the domain configuration change that are still pending.
     */
   var PendingProperties: js.UndefOr[StringList] = js.undefined
   
@@ -32,7 +32,7 @@ trait ChangeProgressStatusDetails extends StObject {
   var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The overall status of the domain configuration change. This field can take the following values: PENDING, PROCESSING, COMPLETED and FAILED
+    * The overall status of the domain configuration change.
     */
   var Status: js.UndefOr[OverallChangeStatus] = js.undefined
   

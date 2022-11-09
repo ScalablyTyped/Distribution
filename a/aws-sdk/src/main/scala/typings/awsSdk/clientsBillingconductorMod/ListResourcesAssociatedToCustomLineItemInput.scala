@@ -27,7 +27,7 @@ trait ListResourcesAssociatedToCustomLineItemInput extends StObject {
   var MaxResults: js.UndefOr[MaxCustomLineItemResults] = js.undefined
   
   /**
-    *  (Optional) The pagination token returned by a previous request. 
+    *  (Optional) The pagination token that's returned by a previous request. 
     */
   var NextToken: js.UndefOr[Token] = js.undefined
 }

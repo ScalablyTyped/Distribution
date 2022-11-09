@@ -37,6 +37,8 @@ open class SurveyModel ()
   /*
     * Adds a custom navigation item similar to the Previous Page, Next Page, and Complete buttons.
     * Accepts an object described in the [IAction](https://surveyjs.io/Documentation/Library?id=IAction) help section.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/survey-changenavigation/ (linkStyle))
     */
   def addNavigationItem(`val`: IAction): Action = js.native
   
@@ -334,6 +336,8 @@ open class SurveyModel ()
   
   /*
     * The zero-based index of the current page in the visible pages array.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/survey-editprevious/ (linkStyle))
     */
   def currentPageNo: Double = js.native
   def currentPageNo_=(`val`: Double): Unit = js.native
@@ -943,6 +947,8 @@ open class SurveyModel ()
     * By default all rows are rendered no matters if they are visible or not.
     * Set it true, and survey markup rows will be rendered only if they are visible in viewport.
     * This feature is experimantal and might do not support all the use cases.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/survey-lazy/ (linkStyle))
     */
   def lazyRendering: Boolean = js.native
   
@@ -1118,6 +1124,8 @@ open class SurveyModel ()
     * 
     * - `edit` (default) - make a survey editable,
     * - `display` - make a survey read-only.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/survey-displaymode/ (linkStyle))
     */
   def mode: String = js.native
   def mode_=(`val`: String): Unit = js.native
@@ -1174,6 +1182,8 @@ open class SurveyModel ()
     * - `sender` - the survey object that fires the event.
     * - `options.page` - a page object for which the event is fired. Typically the current/active page.
     * - `options.htmlElement` - an HTML element bound to the page object.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/survey-afterrender/ (linkStyle))
     */
   var onAfterRenderPage: EventBase[SurveyModel] = js.native
   
@@ -1190,6 +1200,8 @@ open class SurveyModel ()
     * - `sender` - the survey object that fires the event.
     * - `options.question` - a question object for which the event is fired.
     * - `options.htmlElement` - an HTML element bound to the question object.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/survey-afterrender/ (linkStyle))
     */
   var onAfterRenderQuestion: EventBase[SurveyModel] = js.native
   
@@ -1783,6 +1795,8 @@ open class SurveyModel ()
     * - `options.name` - a property name is going to be rendered.
     * - `options.text` - a text that is going to be rendered.
     * - `options.html` - an HTML content. It is `null` by default. Use this property to specify the HTML content rendered instead of `options.text`.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/edit-survey-questions-markdown/ (linkStyle))
     */
   var onTextMarkdown: EventBase[SurveyModel] = js.native
   
@@ -1844,6 +1858,8 @@ open class SurveyModel ()
     * - `sender` - the survey object that fires the event.
     * - `options.question` - a question for which you can change the CSS classes.
     * - `options.cssClasses` - an object with CSS classes. For example `{root: "table", button: "button"}`. You can change them to your own CSS classes.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/survey-cssclasses/ (linkStyle))
     */
   var onUpdateQuestionCssClasses: EventBase[SurveyModel] = js.native
   
@@ -2013,6 +2029,8 @@ open class SurveyModel ()
     * - `requiredQuestions`,
     * - `correctQuestions`,
     * - `buttons`
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/navigation-buttons/ (linkStyle))
     */
   def progressBarType: String = js.native
   def progressBarType_=(`val`: String): Unit = js.native
@@ -2282,6 +2300,8 @@ open class SurveyModel ()
   
   /*
     * Gets or sets whether the survey displays page numbers on pages titles.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/survey-options/ (linkStyle))
     */
   def showPageNumbers: Boolean = js.native
   def showPageNumbers_=(`val`: Boolean): Unit = js.native
@@ -2309,7 +2329,7 @@ open class SurveyModel ()
     * Set this property to "showAllQuestions" or "showAnsweredQuestions" to allow respondents to preview answers before submitting the survey results.
     * 
     * Details: [Preview State](https://surveyjs.io/Documentation/Library#states-preview)
-    * Example: [Show Preview Before Complete](https://surveyjs.io/Examples/Library?id=survey-showpreview)
+    * [View Demo](https://surveyjs.io/Examples/Library?id=survey-showpreview (linkStyle))
     */
   def showPreviewBeforeComplete: String = js.native
   def showPreviewBeforeComplete_=(`val`: String): Unit = js.native
@@ -2323,6 +2343,8 @@ open class SurveyModel ()
     * - `top` - show progress bar in the top
     * - `bottom` - show progress bar in the bottom
     * - `both` - show progress bar in both sides: top and bottom.
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/navigation-default/ (linkStyle))
     */
   def showProgressBar: String = js.native
   def showProgressBar_=(`val`: String): Unit = js.native
@@ -2335,6 +2357,8 @@ open class SurveyModel ()
     * - `on` - display question numbers
     * - `onpage` - display question numbers, start numbering on every page
     * - `off` - turn off the numbering for questions titles
+    * 
+    * [View Demo](https://surveyjs.io/form-library/examples/survey-options/ (linkStyle))
     */
   def showQuestionNumbers: String = js.native
   def showQuestionNumbers_=(`val`: String): Unit = js.native

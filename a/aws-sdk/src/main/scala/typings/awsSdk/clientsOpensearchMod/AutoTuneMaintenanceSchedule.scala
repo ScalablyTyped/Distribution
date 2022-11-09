@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoTuneMaintenanceSchedule extends StObject {
   
   /**
-    * A cron expression for a recurring maintenance schedule. See  Auto-Tune for Amazon OpenSearch Service  for more information. 
+    * A cron expression for a recurring maintenance schedule during which Auto-Tune can deploy changes.
     */
   var CronExpressionForRecurrence: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies maintenance schedule duration: duration value and duration unit. See  Auto-Tune for Amazon OpenSearch Service  for more information. 
+    * The duration of the maintenance schedule. For example, "Duration": {"Value": 2, "Unit": "HOURS"}.
     */
   var Duration: js.UndefOr[typings.awsSdk.clientsOpensearchMod.Duration] = js.undefined
   
   /**
-    * The timestamp at which the Auto-Tune maintenance schedule starts.
+    * The Epoch timestamp at which the Auto-Tune maintenance schedule starts.
     */
   var StartAt: js.UndefOr[js.Date] = js.undefined
 }

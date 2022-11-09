@@ -1,0 +1,33 @@
+package typings.awsSdk.clientsLightsailMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait RegisteredDomainDelegationInfo extends StObject {
+  
+  /**
+    * An object that describes the state of the name server records that are automatically added to the Route 53 domain by Lightsail.
+    */
+  var nameServersUpdateState: js.UndefOr[NameServersUpdateState] = js.undefined
+  
+  var r53HostedZoneDeletionState: js.UndefOr[R53HostedZoneDeletionState] = js.undefined
+}
+object RegisteredDomainDelegationInfo {
+  
+  inline def apply(): RegisteredDomainDelegationInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[RegisteredDomainDelegationInfo]
+  }
+  
+  extension [Self <: RegisteredDomainDelegationInfo](x: Self) {
+    
+    inline def setNameServersUpdateState(value: NameServersUpdateState): Self = StObject.set(x, "nameServersUpdateState", value.asInstanceOf[js.Any])
+    
+    inline def setNameServersUpdateStateUndefined: Self = StObject.set(x, "nameServersUpdateState", js.undefined)
+    
+    inline def setR53HostedZoneDeletionState(value: R53HostedZoneDeletionState): Self = StObject.set(x, "r53HostedZoneDeletionState", value.asInstanceOf[js.Any])
+    
+    inline def setR53HostedZoneDeletionStateUndefined: Self = StObject.set(x, "r53HostedZoneDeletionState", js.undefined)
+  }
+}

@@ -2,31 +2,13 @@ package typings.expoPackageManager
 
 import typings.expoPackageManager.buildPackageManagerMod.Logger
 import typings.expoSpawnAsync.mod.SpawnOptions
+import typings.node.nodeColonurlMod.URL
 import typings.ora.mod.Ora
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    var cwd: js.UndefOr[String] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-    }
-  }
   
   trait Cwd extends StObject {
     
@@ -166,6 +148,26 @@ object anon {
       inline def setSpawnOptions(value: SpawnOptions): Self = StObject.set(x, "spawnOptions", value.asInstanceOf[js.Any])
       
       inline def setSpawnOptionsUndefined: Self = StObject.set(x, "spawnOptions", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Pick<@expo/spawn-async.@expo/spawn-async.SpawnOptions, 'cwd'> */
+  trait PickSpawnOptionscwd extends StObject {
+    
+    var cwd: js.UndefOr[String | URL] = js.undefined
+  }
+  object PickSpawnOptionscwd {
+    
+    inline def apply(): PickSpawnOptionscwd = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PickSpawnOptionscwd]
+    }
+    
+    extension [Self <: PickSpawnOptionscwd](x: Self) {
+      
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     }
   }
   

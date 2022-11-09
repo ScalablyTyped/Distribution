@@ -7,77 +7,77 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainConfig extends StObject {
   
   /**
-    * IAM access policy as a JSON-formatted string.
+    * Specifies the access policies for the domain.
     */
   var AccessPolicies: js.UndefOr[AccessPoliciesStatus] = js.undefined
   
   /**
-    * The AdvancedOptions for the domain. See Advanced options  for more information. 
+    * Key-value pairs to specify advanced configuration options. For more information, see Advanced options.
     */
   var AdvancedOptions: js.UndefOr[AdvancedOptionsStatus] = js.undefined
   
   /**
-    * Specifies AdvancedSecurityOptions for the domain. 
+    * Container for fine-grained access control settings for the domain.
     */
   var AdvancedSecurityOptions: js.UndefOr[AdvancedSecurityOptionsStatus] = js.undefined
   
   /**
-    * Specifies AutoTuneOptions for the domain. 
+    * Container for Auto-Tune settings for the domain.
     */
   var AutoTuneOptions: js.UndefOr[AutoTuneOptionsStatus] = js.undefined
   
   /**
-    * Specifies change details of the domain configuration change.
+    * Container for information about the progress of an existing configuration change.
     */
   var ChangeProgressDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ChangeProgressDetails] = js.undefined
   
   /**
-    * The ClusterConfig for the domain. 
+    * Container for the cluster configuration of a the domain.
     */
   var ClusterConfig: js.UndefOr[ClusterConfigStatus] = js.undefined
   
   /**
-    * The CognitoOptions for the specified domain. For more information, see Configuring Amazon Cognito authentication for OpenSearch Dashboards. 
+    * Container for Amazon Cognito options for the domain.
     */
   var CognitoOptions: js.UndefOr[CognitoOptionsStatus] = js.undefined
   
   /**
-    * The DomainEndpointOptions for the domain. 
+    * Additional options for the domain endpoint, such as whether to require HTTPS for all traffic.
     */
   var DomainEndpointOptions: js.UndefOr[DomainEndpointOptionsStatus] = js.undefined
   
   /**
-    * The EBSOptions for the domain. 
+    * Container for EBS options configured for an OpenSearch Service domain.
     */
   var EBSOptions: js.UndefOr[EBSOptionsStatus] = js.undefined
   
   /**
-    * The EncryptionAtRestOptions for the domain. 
+    * Key-value pairs to enable encryption at rest.
     */
   var EncryptionAtRestOptions: js.UndefOr[EncryptionAtRestOptionsStatus] = js.undefined
   
   /**
-    * String of format Elasticsearch_X.Y or OpenSearch_X.Y to specify the engine version for the OpenSearch or Elasticsearch domain.
+    * The OpenSearch or Elasticsearch version that the domain is running.
     */
   var EngineVersion: js.UndefOr[VersionStatus] = js.undefined
   
   /**
-    * Log publishing options for the given domain.
+    * Key-value pairs to configure slow log publishing.
     */
   var LogPublishingOptions: js.UndefOr[LogPublishingOptionsStatus] = js.undefined
   
   /**
-    * The NodeToNodeEncryptionOptions for the domain. 
+    * Whether node-to-node encryption is enabled or disabled.
     */
   var NodeToNodeEncryptionOptions: js.UndefOr[NodeToNodeEncryptionOptionsStatus] = js.undefined
   
   /**
-    * The SnapshotOptions for the domain. 
+    * DEPRECATED. Container for parameters required to configure automated snapshots of domain indexes.
     */
   var SnapshotOptions: js.UndefOr[SnapshotOptionsStatus] = js.undefined
   
   /**
-    * The VPCOptions for the specified domain. For more information, see  Launching your Amazon OpenSearch Service domains using a VPC. 
+    * The current VPC options for the domain and the status of any updates to their configuration.
     */
   var VPCOptions: js.UndefOr[VPCDerivedInfoStatus] = js.undefined
 }

@@ -12,7 +12,7 @@ trait LogPublishingOptionsStatus extends StObject {
   var Options: js.UndefOr[LogPublishingOptions] = js.undefined
   
   /**
-    * The status of the log publishing options for the domain. See OptionStatus for the status information that's included. 
+    * The status of the log publishing options for the domain.
     */
   var Status: js.UndefOr[OptionStatus] = js.undefined
 }

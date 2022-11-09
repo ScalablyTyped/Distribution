@@ -94,7 +94,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     dir: Directive[Any, Any]
   ): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ssrGetDirectiveProps")(instance.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
@@ -109,7 +110,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     dir: Directive[Any, Any],
     value: Any
@@ -125,7 +127,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     dir: Directive[Any, Any],
     value: Any,
@@ -142,7 +145,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     dir: Directive[Any, Any],
     value: Any,
@@ -160,7 +164,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     dir: Directive[Any, Any],
     value: Any,
@@ -178,7 +183,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     dir: Directive[Any, Any],
     value: Unit,
@@ -195,7 +201,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     dir: Directive[Any, Any],
     value: Unit,
@@ -213,7 +220,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      js.Object
     ],
     dir: Directive[Any, Any],
     value: Unit,
@@ -520,8 +528,6 @@ object mod {
     extends StObject
        with /* key */ StringDictionary[Any] {
     
-    var __teleportBuffers: js.UndefOr[Record[String, SSRBuffer]] = js.undefined
-    
     var teleports: js.UndefOr[Record[String, String]] = js.undefined
   }
   object SSRContext {
@@ -536,10 +542,6 @@ object mod {
       inline def setTeleports(value: Record[String, String]): Self = StObject.set(x, "teleports", value.asInstanceOf[js.Any])
       
       inline def setTeleportsUndefined: Self = StObject.set(x, "teleports", js.undefined)
-      
-      inline def set__teleportBuffers(value: Record[String, SSRBuffer]): Self = StObject.set(x, "__teleportBuffers", value.asInstanceOf[js.Any])
-      
-      inline def set__teleportBuffersUndefined: Self = StObject.set(x, "__teleportBuffers", js.undefined)
     }
   }
   

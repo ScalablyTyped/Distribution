@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EncryptionAtRestOptions extends StObject {
   
   /**
-    * The option to enable encryption at rest.
+    * True to enable encryption at rest.
     */
   var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The KMS key ID for encryption at rest options.
+    * The KMS key ID. Takes the form 1a2a3a4-1a2a-3a4a-5a6a-1a2a3a4a5a6a.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.clientsOpensearchMod.KmsKeyId] = js.undefined
 }

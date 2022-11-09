@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainPackageDetails extends StObject {
   
   /**
-    * The name of the domain you've associated a package with.
+    * Name of the domain that the package is associated with.
     */
   var DomainName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainName] = js.undefined
   
   /**
-    * State of the association. Values are ASSOCIATING, ASSOCIATION_FAILED, ACTIVE, DISSOCIATING, and DISSOCIATION_FAILED.
+    * State of the association.
     */
   var DomainPackageStatus: js.UndefOr[typings.awsSdk.clientsOpensearchMod.DomainPackageStatus] = js.undefined
   
@@ -22,12 +22,12 @@ trait DomainPackageDetails extends StObject {
   var ErrorDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ErrorDetails] = js.undefined
   
   /**
-    * The timestamp of the most recent update to the package association status.
+    * Timestamp of the most recent update to the package association status.
     */
   var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The internal ID of the package.
+    * Internal ID of the package.
     */
   var PackageID: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageID] = js.undefined
   
@@ -37,14 +37,17 @@ trait DomainPackageDetails extends StObject {
   var PackageName: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageName] = js.undefined
   
   /**
-    * Currently supports only TXT-DICTIONARY.
+    * The type of package.
     */
   var PackageType: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageType] = js.undefined
   
+  /**
+    * The current version of the package.
+    */
   var PackageVersion: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageVersion] = js.undefined
   
   /**
-    * The relative path on Amazon OpenSearch Service nodes, which can be used as synonym_path when the package is a synonym file.
+    * Denotes the location of the package on the OpenSearch Service cluster nodes. It's the same as synonym_path for dictionary files.
     */
   var ReferencePath: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ReferencePath] = js.undefined
 }

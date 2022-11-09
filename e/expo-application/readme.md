@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-application
 
-Typings are for version 4.2.2
+Typings are for version 5.0.1
 
 ## Library description:
 A universal module that gets native application information such as its ID, app name, and build version at runtime

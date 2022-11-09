@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePackageResponse extends StObject {
   
   /**
-    *  PackageDetails 
+    *  Information about the deleted package.
     */
   var PackageDetails: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageDetails] = js.undefined
 }

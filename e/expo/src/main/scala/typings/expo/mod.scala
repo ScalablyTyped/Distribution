@@ -1,6 +1,6 @@
 package typings.expo
 
-import typings.expo.buildLaunchWithExpoRootDottypesMod.InitialProps
+import typings.expo.buildLaunchRegisterRootComponentMod.InitialProps
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

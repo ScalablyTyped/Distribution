@@ -679,6 +679,9 @@ object mod {
   inline def resolveComponentType(node: ComponentNode, context: TransformContext): String | js.Symbol | CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponentType")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String | js.Symbol | CallExpression]
   inline def resolveComponentType(node: ComponentNode, context: TransformContext, ssr: Boolean): String | js.Symbol | CallExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveComponentType")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], ssr.asInstanceOf[js.Any])).asInstanceOf[String | js.Symbol | CallExpression]
   
+  inline def stringifyExpression(exp: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyExpression")(exp.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifyExpression(exp: ExpressionNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyExpression")(exp.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def toValidAssetId(name: String, `type`: component | directive | filter): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toValidAssetId")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@vue/compiler-dom", "trackSlotScopes")

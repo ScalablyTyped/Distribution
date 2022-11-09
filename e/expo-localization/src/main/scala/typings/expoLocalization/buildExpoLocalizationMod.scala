@@ -1,6 +1,8 @@
 package typings.expoLocalization
 
-import typings.expoLocalization.buildLocalizationDottypesMod.Localization
+import typings.expoLocalization.anon.OmitLocalizationgetCalend
+import typings.expoLocalization.buildLocalizationDottypesMod.Calendar
+import typings.expoLocalization.buildLocalizationDottypesMod.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +27,11 @@ object buildExpoLocalizationMod {
     @js.native
     val digitGroupingSeparator: String = js.native
     
-    inline def getLocalizationAsync(): js.Promise[Localization] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizationAsync")().asInstanceOf[js.Promise[Localization]]
+    inline def getCalendars(): js.Array[Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCalendars")().asInstanceOf[js.Array[Calendar]]
+    
+    inline def getLocales(): js.Array[Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocales")().asInstanceOf[js.Array[Locale]]
+    
+    inline def getLocalizationAsync(): js.Promise[OmitLocalizationgetCalend] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizationAsync")().asInstanceOf[js.Promise[OmitLocalizationgetCalend]]
     
     @JSImport("expo-localization/build/ExpoLocalization", "default.isMetric")
     @js.native

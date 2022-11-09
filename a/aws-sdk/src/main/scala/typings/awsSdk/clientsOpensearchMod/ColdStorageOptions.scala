@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColdStorageOptions extends StObject {
   
   /**
-    * Enable cold storage option. Accepted values true or false
+    * Whether to enable or disable cold storage on the domain.
     */
   var Enabled: Boolean
 }

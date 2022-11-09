@@ -58,7 +58,8 @@ D, MakeDefaultsOptional /* <: Boolean */, Defaults, P, PublicProps, E /* <: Emit
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ]) | Null = js.native
   
   @JSName("$props")
@@ -78,18 +79,22 @@ D, MakeDefaultsOptional /* <: Boolean */, Defaults, P, PublicProps, E /* <: Emit
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    js.Object
   ]) | Null = js.native
   
   @JSName("$slots")
   var $slots: Slots = js.native
   
   @JSName("$watch")
-  def $watch(source: String, cb: js.Function): WatchStopHandle = js.native
+  def $watch[T /* <: String | (js.Function1[/* args */ Any, Any]) */](
+    source: T,
+    cb: /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : any): infer R ? (args : [R, R]): any : (args : any): any */ js.Any
+  ): WatchStopHandle = js.native
   @JSName("$watch")
-  def $watch(source: String, cb: js.Function, options: WatchOptions[Boolean]): WatchStopHandle = js.native
-  @JSName("$watch")
-  def $watch(source: js.Function, cb: js.Function): WatchStopHandle = js.native
-  @JSName("$watch")
-  def $watch(source: js.Function, cb: js.Function, options: WatchOptions[Boolean]): WatchStopHandle = js.native
+  def $watch[T /* <: String | (js.Function1[/* args */ Any, Any]) */](
+    source: T,
+    cb: /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : any): infer R ? (args : [R, R]): any : (args : any): any */ js.Any,
+    options: WatchOptions[Boolean]
+  ): WatchStopHandle = js.native
 }

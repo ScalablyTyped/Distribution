@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InstanceCountLimits extends StObject {
   
+  /**
+    * The minimum allowed number of instances.
+    */
   var MaximumInstanceCount: js.UndefOr[typings.awsSdk.clientsOpensearchMod.MaximumInstanceCount] = js.undefined
   
+  /**
+    * The maximum allowed number of instances.
+    */
   var MinimumInstanceCount: js.UndefOr[typings.awsSdk.clientsOpensearchMod.MinimumInstanceCount] = js.undefined
 }
 object InstanceCountLimits {

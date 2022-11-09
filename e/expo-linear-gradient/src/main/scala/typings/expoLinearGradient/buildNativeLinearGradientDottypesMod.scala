@@ -751,4 +751,14 @@ object buildNativeLinearGradientDottypesMod {
       inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
     }
   }
+  
+  type getLinearGradientBackgroundImage = js.Function6[
+    /* colors */ js.Array[Double], 
+    /* width */ js.UndefOr[Double], 
+    /* height */ js.UndefOr[Double], 
+    /* locations */ js.UndefOr[js.Array[Double] | Null], 
+    /* startPoint */ js.UndefOr[NativeLinearGradientPoint | Null], 
+    /* endPoint */ js.UndefOr[NativeLinearGradientPoint | Null], 
+    String
+  ]
 }

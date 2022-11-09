@@ -37,7 +37,7 @@ trait UpdatePricingRuleOutput extends StObject {
   var Name: js.UndefOr[PricingRuleName] = js.undefined
   
   /**
-    *  The scope of pricing rule that indicates if it is globally applicable, or is service-specific. 
+    *  The scope of pricing rule that indicates if it's globally applicable, or it's service-specific. 
     */
   var Scope: js.UndefOr[PricingRuleScope] = js.undefined
   

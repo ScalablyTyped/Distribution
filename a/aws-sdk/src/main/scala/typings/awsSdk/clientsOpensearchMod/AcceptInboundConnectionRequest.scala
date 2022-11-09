@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcceptInboundConnectionRequest extends StObject {
   
   /**
-    * The ID of the inbound connection you want to accept.
+    * The ID of the inbound connection to accept.
     */
   var ConnectionId: typings.awsSdk.clientsOpensearchMod.ConnectionId
 }

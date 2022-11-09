@@ -39,6 +39,34 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateThirdPartyFirewallResponse, Unit]
   ): Request[AssociateThirdPartyFirewallResponse, AWSError] = js.native
   
+  /**
+    * Associate resources to a Firewall Manager resource set.
+    */
+  def batchAssociateResource(): Request[BatchAssociateResourceResponse, AWSError] = js.native
+  def batchAssociateResource(callback: js.Function2[/* err */ AWSError, /* data */ BatchAssociateResourceResponse, Unit]): Request[BatchAssociateResourceResponse, AWSError] = js.native
+  /**
+    * Associate resources to a Firewall Manager resource set.
+    */
+  def batchAssociateResource(params: BatchAssociateResourceRequest): Request[BatchAssociateResourceResponse, AWSError] = js.native
+  def batchAssociateResource(
+    params: BatchAssociateResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchAssociateResourceResponse, Unit]
+  ): Request[BatchAssociateResourceResponse, AWSError] = js.native
+  
+  /**
+    * Disassociates resources from a Firewall Manager resource set.
+    */
+  def batchDisassociateResource(): Request[BatchDisassociateResourceResponse, AWSError] = js.native
+  def batchDisassociateResource(callback: js.Function2[/* err */ AWSError, /* data */ BatchDisassociateResourceResponse, Unit]): Request[BatchDisassociateResourceResponse, AWSError] = js.native
+  /**
+    * Disassociates resources from a Firewall Manager resource set.
+    */
+  def batchDisassociateResource(params: BatchDisassociateResourceRequest): Request[BatchDisassociateResourceResponse, AWSError] = js.native
+  def batchDisassociateResource(
+    params: BatchDisassociateResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchDisassociateResourceResponse, Unit]
+  ): Request[BatchDisassociateResourceResponse, AWSError] = js.native
+  
   @JSName("config")
   var config_FMS: ConfigBase & ClientConfiguration = js.native
   
@@ -95,6 +123,20 @@ trait FMS extends Service {
   def deleteProtocolsList(params: DeleteProtocolsListRequest): Request[js.Object, AWSError] = js.native
   def deleteProtocolsList(
     params: DeleteProtocolsListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified ResourceSet.
+    */
+  def deleteResourceSet(): Request[js.Object, AWSError] = js.native
+  def deleteResourceSet(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified ResourceSet.
+    */
+  def deleteResourceSet(params: DeleteResourceSetRequest): Request[js.Object, AWSError] = js.native
+  def deleteResourceSet(
+    params: DeleteResourceSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   
@@ -227,6 +269,20 @@ trait FMS extends Service {
   ): Request[GetProtocolsListResponse, AWSError] = js.native
   
   /**
+    * Gets information about a specific resource set.
+    */
+  def getResourceSet(): Request[GetResourceSetResponse, AWSError] = js.native
+  def getResourceSet(callback: js.Function2[/* err */ AWSError, /* data */ GetResourceSetResponse, Unit]): Request[GetResourceSetResponse, AWSError] = js.native
+  /**
+    * Gets information about a specific resource set.
+    */
+  def getResourceSet(params: GetResourceSetRequest): Request[GetResourceSetResponse, AWSError] = js.native
+  def getResourceSet(
+    params: GetResourceSetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResourceSetResponse, Unit]
+  ): Request[GetResourceSetResponse, AWSError] = js.native
+  
+  /**
     * The onboarding status of a Firewall Manager admin account to third-party firewall vendor tenant.
     */
   def getThirdPartyFirewallAssociationStatus(): Request[GetThirdPartyFirewallAssociationStatusResponse, AWSError] = js.native
@@ -285,6 +341,20 @@ trait FMS extends Service {
   ): Request[ListComplianceStatusResponse, AWSError] = js.native
   
   /**
+    * Returns an array of resources in the organization's accounts that are available to be associated with a resource set.
+    */
+  def listDiscoveredResources(): Request[ListDiscoveredResourcesResponse, AWSError] = js.native
+  def listDiscoveredResources(callback: js.Function2[/* err */ AWSError, /* data */ ListDiscoveredResourcesResponse, Unit]): Request[ListDiscoveredResourcesResponse, AWSError] = js.native
+  /**
+    * Returns an array of resources in the organization's accounts that are available to be associated with a resource set.
+    */
+  def listDiscoveredResources(params: ListDiscoveredResourcesRequest): Request[ListDiscoveredResourcesResponse, AWSError] = js.native
+  def listDiscoveredResources(
+    params: ListDiscoveredResourcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDiscoveredResourcesResponse, Unit]
+  ): Request[ListDiscoveredResourcesResponse, AWSError] = js.native
+  
+  /**
     * Returns a MemberAccounts object that lists the member accounts in the administrator's Amazon Web Services organization. The ListMemberAccounts must be submitted by the account that is set as the Firewall Manager administrator.
     */
   def listMemberAccounts(): Request[ListMemberAccountsResponse, AWSError] = js.native
@@ -325,6 +395,34 @@ trait FMS extends Service {
     params: ListProtocolsListsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProtocolsListsResponse, Unit]
   ): Request[ListProtocolsListsResponse, AWSError] = js.native
+  
+  /**
+    * Returns an array of resources that are currently associated to a resource set.
+    */
+  def listResourceSetResources(): Request[ListResourceSetResourcesResponse, AWSError] = js.native
+  def listResourceSetResources(callback: js.Function2[/* err */ AWSError, /* data */ ListResourceSetResourcesResponse, Unit]): Request[ListResourceSetResourcesResponse, AWSError] = js.native
+  /**
+    * Returns an array of resources that are currently associated to a resource set.
+    */
+  def listResourceSetResources(params: ListResourceSetResourcesRequest): Request[ListResourceSetResourcesResponse, AWSError] = js.native
+  def listResourceSetResources(
+    params: ListResourceSetResourcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResourceSetResourcesResponse, Unit]
+  ): Request[ListResourceSetResourcesResponse, AWSError] = js.native
+  
+  /**
+    * Returns an array of ResourceSetSummary objects.
+    */
+  def listResourceSets(): Request[ListResourceSetsResponse, AWSError] = js.native
+  def listResourceSets(callback: js.Function2[/* err */ AWSError, /* data */ ListResourceSetsResponse, Unit]): Request[ListResourceSetsResponse, AWSError] = js.native
+  /**
+    * Returns an array of ResourceSetSummary objects.
+    */
+  def listResourceSets(params: ListResourceSetsRequest): Request[ListResourceSetsResponse, AWSError] = js.native
+  def listResourceSets(
+    params: ListResourceSetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResourceSetsResponse, Unit]
+  ): Request[ListResourceSetsResponse, AWSError] = js.native
   
   /**
     * Retrieves the list of tags for the specified Amazon Web Services resource. 
@@ -411,6 +509,20 @@ trait FMS extends Service {
     params: PutProtocolsListRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutProtocolsListResponse, Unit]
   ): Request[PutProtocolsListResponse, AWSError] = js.native
+  
+  /**
+    * Creates the resource set. An Firewall Manager resource set defines the resources to import into an Firewall Manager policy from another Amazon Web Services service.
+    */
+  def putResourceSet(): Request[PutResourceSetResponse, AWSError] = js.native
+  def putResourceSet(callback: js.Function2[/* err */ AWSError, /* data */ PutResourceSetResponse, Unit]): Request[PutResourceSetResponse, AWSError] = js.native
+  /**
+    * Creates the resource set. An Firewall Manager resource set defines the resources to import into an Firewall Manager policy from another Amazon Web Services service.
+    */
+  def putResourceSet(params: PutResourceSetRequest): Request[PutResourceSetResponse, AWSError] = js.native
+  def putResourceSet(
+    params: PutResourceSetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutResourceSetResponse, Unit]
+  ): Request[PutResourceSetResponse, AWSError] = js.native
   
   /**
     * Adds one or more tags to an Amazon Web Services resource.
