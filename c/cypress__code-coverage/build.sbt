@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "cypress__code-coverage"
-version := "3.10-dt-20221005Z-8e43f9"
+version := "3.10-dt-20221005Z-961c7c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "buffer" % "6.0.3-f5a9ba",
-  "org.scalablytyped" %%% "cypress" % "10.11.0-5846b3",
+  "org.scalablytyped" %%% "cypress" % "11.0.0-d4fd98",
   "org.scalablytyped" %%% "eventemitter2" % "6.4.9-348099",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-d0f137",
   "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-7adbb2",
